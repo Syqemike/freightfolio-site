@@ -72,24 +72,30 @@ export async function onRequestPost(context) {
   }
 
   // Durable audit log of every verified event.
+  // Storage failures return 5xx so Stripe retries delivery.
+  // A 200 must never be sent for an event we failed to record.
   try {
-    if (env.EVENT_LOG) {
-      const key = `evt_${event.id || Date.now()}`;
-      await env.EVENT_LOG.put(
-        key,
-        JSON.stringify({
-          id: event.id || null,
-          type: event.type || null,
-          created: event.created || null,
-          livemode: event.livemode || false,
-          received_at: new Date().toISOString(),
-          summary: summarize(event),
-        })
-      );
+    if (!env.EVENT_LOG) {
+      throw new Error("EVENT_LOG KV binding missing");
     }
+    const key = `evt_${event.id || Date.now()}`;
+    await env.EVENT_LOG.put(
+      key,
+      JSON.stringify({
+        id: event.id || null,
+        type: event.type || null,
+        created: event.created || null,
+        livemode: event.livemode || false,
+        received_at: new Date().toISOString(),
+        summary: summarize(event),
+      })
+    );
   } catch (e) {
-    // Log failure must not fail the webhook acknowledgement.
     console.error("KV write failed", e);
+    return new Response(JSON.stringify({ received: false, error: "storage failed" }), {
+      status: 500,
+      headers: { "content-type": "application/json" },
+    });
   }
 
   return new Response(JSON.stringify({ received: true, id: event.id || null }), {
