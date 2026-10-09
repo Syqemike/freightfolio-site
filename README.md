@@ -9,3 +9,4 @@ This repo is connected to the `freightfolio` Cloudflare Pages project — every 
 - `sample-dashboard.html` — sample billing-readiness dashboard (generated from `product/src/dashboard.py`)
 - `sample-report.xlsx` — sample Excel report (generated from the pipeline)
 - `assets/` — stylesheet and logos
+
