@@ -335,26 +335,10 @@
         </a>
       </div>
 
-      <form class="contact-form" action="mailto:hello@freightfolio.net?subject=Freightfolio%20inquiry" method="post" enctype="text/plain">
-        <div class="form-row">
-          <label>Your name<input type="text" name="name" required autocomplete="name"></label>
-          <label>Company<input type="text" name="company" required autocomplete="organization"></label>
-        </div>
-        <div class="form-row">
-          <label>Work email<input type="email" name="email" required autocomplete="email"></label>
-          <label>Loads per month
-            <select name="volume">
-              <option value="under-50">Under 50</option>
-              <option value="50-150">50&ndash;150</option>
-              <option value="150-400">150&ndash;400</option>
-              <option value="400-plus">400+</option>
-            </select>
-          </label>
-        </div>
-        <label>Where does your billing packet break down?<textarea name="message" rows="5" placeholder="e.g. PODs take a week to come back, one person re-keys everything into the TMS&hellip;"></textarea></label>
-        <button class="btn btn-amber" type="submit">Send inquiry</button>
-        <p class="fineprint">This form opens your email app addressed to hello@freightfolio.net &mdash; or just email us directly.</p>
-      </form>
+      <div class="contact-form-embed">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe9p6-6ptGNuxMk5UJaDBRiNxQxEskTw23dO3D4mVg1kVS0bg/viewform?embedded=true" width="100%" height="1116" frameborder="0" marginheight="0" marginwidth="0" title="Freightfolio contact inquiry form" loading="lazy">Loading&hellip;</iframe>
+        <p class="fineprint">Prefer email? Write to <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a> directly.</p>
+      </div>
 
       <p class="founder-line">Michael McCary, Founder &mdash; Freightfolio</p>
     </div>
