@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!-- PREVIEW BUILD — not published, not deployed. Built 2026-10-07 for founder review. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freightfolio — Your loads, billed. Your money, sooner.</title>
+<meta name="description" content="Freightfolio is a done-for-you billing automation service for freight brokers, forwarders, and carriers. We turn rate confirmations, BOLs, PODs, and exception docs into checked, billing-ready packets — plus a weekly billing-readiness report. No new software.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F2A44'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23F5A623'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="Freightfolio home">
+      <!-- Logo: final wordmark (Mike's pick #4, 2026-10-08). -->
+      <span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#problem">The problem</a>
+      <a href="#how">How it works</a>
+      <a href="#packages">Packages</a>
+      <a href="#pilot">Pilot</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-amber btn-sm" href="#contact">Talk to us</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Done-for-you billing automation for freight brokers, forwarders &amp; carriers</p>
+      <h1>Your loads, billed.<br>Your money, sooner.</h1>
+      <p class="lede">Freightfolio turns your pile of rate confirmations, BOLs, PODs, and exception documents into checked, billing-ready packets — plus a weekly report showing exactly what&rsquo;s ready to invoice and what&rsquo;s holding you up. No new software. No new hires.</p>
+      <div class="cta-row">
+        <a class="btn btn-amber" href="https://buy.stripe.com/aFa6oGabx5imdFLcNnabK00" target="_blank" rel="noopener">Start a $500 pilot</a>
+        <a class="btn btn-ghost" href="/sample-report.xlsx">See a sample report</a>
+      </div>
+      <p class="hero-note">2&ndash;3 weeks on your actual paperwork. Pilot fee credited toward setup if you continue.</p>
+    </div>
+  </section>
+
+  <!-- SAMPLE PREVIEW -->
+  <section class="section section-alt" id="sample">
+    <div class="container">
+      <p class="kicker">See what you&rsquo;d get</p>
+      <h2>A real deliverable, before you pay anything.</h2>
+      <p class="section-lede">This is the actual output format from a demo batch of 40 documents (sample data): an Excel report that opens on your action list &mdash; what&rsquo;s ready to invoice, what&rsquo;s blocked and why &mdash; plus a dashboard with the same picture.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Action list first</h3>
+          <p>&ldquo;Invoice these now&rdquo; at the top, &ldquo;blocked &mdash; needs attention&rdquo; right below it, each with the plain-language reason and the recommended next step.</p>
+        </div>
+        <div class="card">
+          <h3>Every load accounted for</h3>
+          <p>Each load shows its documents, amounts, and billing-readiness status &mdash; with every row traceable back to the source file it came from.</p>
+        </div>
+        <div class="card">
+          <h3>Exceptions, not mysteries</h3>
+          <p>Missing PODs, rate mismatches, and date conflicts listed with severity &mdash; so a 15-minute chase replaces an afternoon of digging.</p>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-amber" href="/sample-report.xlsx">Open the sample Excel report</a>
+        <a class="btn btn-ghost" href="/sample-dashboard">View the sample dashboard</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section" id="problem">
+    <div class="container">
+      <p class="kicker">The problem</p>
+      <h2>The invoice is good. The paperwork isn&rsquo;t.</h2>
+      <p class="section-lede">Missing or unsigned PODs are the single most common reason a good invoice sits unbilled. Most factors won&rsquo;t fund a load without a signed POD &mdash; so the invoice waits, AR ages, cash tightens, and somebody spends the week calling drivers and digging through inboxes instead of moving freight.</p>
+
+      <div class="callout">
+        <p class="callout-label">Illustrative example &mdash; plug in your own numbers</p>
+        <p class="math">40 loads delivered per week &times; 1 in 5 PODs missing on first pass = <strong>8 chases/week</strong><br>
+        ~15 minutes per chase (call, text, email, log it) = <strong>2 hours/week</strong><br>
+        That&rsquo;s <strong>a full workday every month</strong> spent chasing paper &mdash; before counting the days each invoice sits unbilled.<br>
+        Cash view: on $500k of monthly credit sales, each extra day of DSO is roughly <strong>$16k of your cash sitting idle</strong>.</p>
+        <p class="fineprint">Illustrative figures, not promises or guarantees of results.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Invoices wait on paper</h3>
+          <p>A delivered load with an unsigned POD is an invoice that usually can&rsquo;t go out &mdash; and generally can&rsquo;t be factored. Every missing signature is days of your cash sitting still.</p>
+        </div>
+        <div class="card">
+          <h3>Re-keying eats the week</h3>
+          <p>Shipper, consignee, commodity, weight, dates &mdash; typed by hand from PDFs into spreadsheets and TMS fields. Hours per week of work a machine should do.</p>
+        </div>
+        <div class="card">
+          <h3>Exceptions hide in inboxes</h3>
+          <p>Detention, lumper, and TONU receipts arrive as email attachments with no trail. When the packet doesn&rsquo;t tie out, the invoice &mdash; and the money &mdash; stalls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-alt" id="how">
+    <div class="container">
+      <p class="kicker">How it works</p>
+      <h2>Three steps. Nothing to install.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Forward your documents</h3>
+          <p>Your team emails rate confirmations, BOLs, PODs, and receipts to your dedicated <strong>docs@</strong> address. That&rsquo;s the entire change on your side &mdash; no software to install, nothing to learn.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>We extract and check everything</h3>
+          <p>We pull the fields from every document and check every packet before it counts as billing-ready. Low-confidence extractions get flagged for review &mdash; never silently passed through.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>You invoice days earlier</h3>
+          <p>Every load becomes one complete, tied-out packet. Each week you get a billing-readiness report: what&rsquo;s ready to invoice, what&rsquo;s blocked, and exactly why.</p>
+        </div>
+      </div>
+
+      <div class="packet">
+        <h3>What&rsquo;s in a billing-ready packet</h3>
+        <ul class="checklist">
+          <li><strong>Rate confirmation</strong><span>Agreed rate on file before the truck rolls</span></li>
+          <li><strong>Bill of lading</strong><span>Signed at pickup</span></li>
+          <li><strong>Proof of delivery</strong><span>Signed at delivery &mdash; the one that goes missing</span></li>
+          <li><strong>Exception docs</strong><span>Detention, lumper, and TONU receipts matched to the load</span></li>
+          <li><strong>One load record</strong><span>All of it tied together, ready to invoice or factor</span></li>
+        </ul>
+      </div>
+
+      <div class="packet">
+        <h3>What we handle &mdash; and what stays with you</h3>
+        <ul class="checklist">
+          <li><strong>We handle</strong><span>Pulling every field from every document, checking each packet, matching exceptions to loads, and flagging anything missing or off &mdash; in a daily exception list and the weekly report.</span></li>
+          <li><strong>We don&rsquo;t</strong><span>Chase drivers or shippers for missing paperwork. The exception list tells your team exactly what&rsquo;s missing, from whom, and for which load &mdash; so a chase is a two-minute email instead of an afternoon of detective work.</span></li>
+          <li><strong>You handle</strong><span>Forwarding documents to your docs@ address, and the chase list. Invoicing decisions stay yours &mdash; we tell you what&rsquo;s ready and what&rsquo;s blocked, you send the invoice.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="section" id="packages">
+    <div class="container">
+      <p class="kicker">Packages</p>
+      <h2>One service. Three sizes.</h2>
+      <p class="section-lede">Every package is done-for-you: we build it, check it, and run it. Not a DIY tool license &mdash; a finished back-office outcome.</p>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Starter</h3>
+          <p class="plan-name">&ldquo;Billing Packet&rdquo;</p>
+          <p class="price">$299<span>/mo</span></p>
+          <p class="setup">+$750 one-time setup &middot; up to 100 docs/mo (roughly 25&ndash;35 loads)</p>
+          <ul>
+            <li>Document extraction: rate cons, BOLs, PODs, carrier invoices, lumper/detention receipts</li>
+            <li>Structured packet per load: rate con + BOL + POD + exceptions matched to one load record</li>
+            <li>Missing-document flagging as a daily exception list</li>
+            <li>Weekly billing-readiness Excel report</li>
+            <li>Email-forward intake &mdash; no new software</li>
+            <li>Every packet checked before it counts as billing-ready</li>
+          </ul>
+          <p class="for">For 1&ndash;5 person shops where the invoice packet is the bottleneck.</p>
+          <a class="btn btn-outline" href="#contact">Ask about Starter</a>
+        </div>
+
+        <div class="price-card featured">
+          <h3>Business</h3>
+          <p class="plan-name">&ldquo;Back Office&rdquo;</p>
+          <p class="price">$599<span>/mo</span></p>
+          <p class="setup">+$1,500 one-time setup &middot; up to 400 docs/mo (roughly 100&ndash;135 loads)</p>
+          <ul>
+            <li>Everything in Starter, plus:</li>
+            <li>Live AR/billing dashboard: packet status per load, aging buckets, blocked-invoice reasons</li>
+            <li>Exception workflow: detention, layover, TONU, and lumper evidence matched and totaled per load</li>
+            <li>Factor-ready packet export &mdash; missing PODs flagged, not hidden</li>
+            <li>Weekly billing-readiness report + monthly ops summary</li>
+            <li>Priority support, same-day response on business days</li>
+          </ul>
+          <p class="for">For 5&ndash;20 person brokerages and forwarders that want the whole billing pipeline visible.</p>
+          <a class="btn btn-amber" href="#contact">Ask about Business</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Premium</h3>
+          <p class="plan-name">&ldquo;Operations Partner&rdquo;</p>
+          <p class="price">$999+<span>/mo</span></p>
+          <p class="setup">+$2,500+ one-time setup &middot; up to 1,000 docs/mo (roughly 250&ndash;330 loads)</p>
+          <ul>
+            <li>Everything in Business, plus:</li>
+            <li>Custom document types: commercial invoices, packing lists, forwarder-specific forms</li>
+            <li>Multi-user access, per-customer and per-lane reporting</li>
+            <li>Scheduled report delivery to multiple stakeholders</li>
+            <li>Quarterly process review &mdash; we find the next bottleneck</li>
+            <li>Dedicated Slack/email channel</li>
+          </ul>
+          <p class="for">For forwarders and carriers with high volume, multiple locations, or custom document types.</p>
+          <a class="btn btn-outline" href="#contact">Ask about Premium</a>
+        </div>
+      </div>
+
+      <div class="pricing-notes">
+        <p><strong>$1.50 per document</strong> over your plan&rsquo;s volume &mdash; we move you to the next tier when it&rsquo;s cheaper for you, and we&rsquo;ll tell you when that is.</p>
+        <p><strong>What counts as a document:</strong> one file = one document &mdash; a 12-page PDF rate con counts the same as a one-page POD. Most loads run 3&ndash;4 documents (rate con, BOL, POD, plus any exception receipts).</p>
+        <p><strong>Annual prepay = 2 months free</strong> (~17% off). Monthly stays the default to keep the trial barrier low.</p>
+        <p class="fineprint">Add-ons: historical backfill quoted per project &middot; TMS/QuickBooks export formatting quoted per integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILOT -->
+  <section class="section pilot-band" id="pilot">
+    <div class="container">
+      <p class="kicker kicker-light">The pilot</p>
+      <h2>See it on your own paperwork first.</h2>
+      <p class="section-lede">The pilot runs on your actual loads &mdash; not a demo, not sample data. At the end you get one live billing-readiness report built from your documents, and a go/no-go decision that&rsquo;s entirely yours.</p>
+      <div class="pilot-facts">
+        <div><strong>$500</strong><span>one-time</span></div>
+        <div><strong>2&ndash;3 weeks</strong><span>start to report</span></div>
+        <div><strong>Up to 50 docs</strong><span>your real packets</span></div>
+        <div><strong>Fee credited</strong><span>toward setup if you continue</span></div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-amber" href="https://buy.stripe.com/aFa6oGabx5imdFLcNnabK00" target="_blank" rel="noopener">Start your $500 pilot</a>
+        <a class="btn btn-ghost" href="/sample-report.xlsx">See a sample report</a>
+      </div>
+      <p class="fineprint fineprint-light">No long-term commitment. If the improvement isn&rsquo;t there on your numbers, don&rsquo;t buy the monthly.<br>Sample deliverables from a demo batch (dummy data): <a href="/sample-report.xlsx" style="color:#F5A623">Excel report</a> &middot; <a href="/sample-dashboard" style="color:#F5A623">dashboard</a>.</p>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="section section-alt" id="trust">
+    <div class="container narrow">
+      <p class="kicker">Your documents</p>
+      <h2>We treat your paperwork like it&rsquo;s ours.</h2>
+      <p class="section-lede">You&rsquo;re handing us your rates, your customers, and your margins. Here&rsquo;s exactly how that works:</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Yours only</h3>
+          <p>Your documents are processed for your business and nobody else&rsquo;s. Never sold, never shared, never used to train shared models.</p>
+        </div>
+        <div class="card">
+          <h3>Kept only as long as needed</h3>
+          <p>Retention terms go in the service agreement up front. You can request deletion of your documents any time, and we confirm when it&rsquo;s done.</p>
+        </div>
+        <div class="card">
+          <h3>No portals, no logins</h3>
+          <p>Documents arrive by email to your dedicated docs@ address &mdash; nothing to install, no third-party accounts to manage, no new attack surface on your side.</p>
+        </div>
+      </div>
+      <p class="fineprint" style="text-align:center;margin-top:18px"><a href="/privacy.html">Read our privacy &amp; data-handling policy</a></p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container narrow">
+      <p class="kicker">FAQ</p>
+      <h2>Fair questions, straight answers.</h2>
+
+      <details>
+        <summary>Why not just buy Docparser for $74/month?</summary>
+        <p>You absolutely can &mdash; it&rsquo;s a solid tool. The question is who builds the templates, who checks every extraction, and who chases the missing PODs. Docparser gives you software; we give you the finished outcome &mdash; checked packets and a weekly billing-readiness report &mdash; without adding to anyone&rsquo;s plate. If you&rsquo;ve got someone with ten free hours a week to run the tool, buy the tool.</p>
+      </details>
+      <details>
+        <summary>Can we start smaller?</summary>
+        <p>That&rsquo;s what the pilot is: $500, 2&ndash;3 weeks, on your actual paperwork. It&rsquo;s credited toward setup if you continue, so it works like a deposit, not a cost.</p>
+      </details>
+      <details>
+        <summary>What if our document volume grows?</summary>
+        <p>Overage is $1.50 per document beyond your plan&rsquo;s volume, so nothing breaks. When the next tier becomes cheaper for you than overage, we move you up &mdash; and we&rsquo;ll tell you when that is.</p>
+      </details>
+      <details>
+        <summary>Is our data safe? These documents have our rates in them.</summary>
+        <p>Fair question. Your documents are processed for your business only &mdash; never used to train shared models, never sold, never shared with anyone. Retention terms go in the service agreement, and you can request deletion any time.</p>
+      </details>
+      <details>
+        <summary>What if something gets misread?</summary>
+        <p>That&rsquo;s why every packet is checked before it counts as billing-ready &mdash; low-confidence extractions get flagged for review instead of silently passed through. The pilot proves accuracy on your own documents before you pay for a month of service.</p>
+      </details>
+      <details>
+        <summary>We don&rsquo;t have time to onboard something new.</summary>
+        <p>That&rsquo;s exactly why there&rsquo;s nothing to install and no system to switch. Your team forwards documents to an email address &mdash; that&rsquo;s the whole change on your side. Onboarding takes about two hours of your time total: first findings land within 7&ndash;10 business days, and the complete pilot report is in your hands by the end of week three.</p>
+      </details>
+      <details>
+        <summary>What if it doesn&rsquo;t work &mdash; can we get out?</summary>
+        <p>Then we part ways and you keep everything: every report and all structured data we produced, exported to Excel. Monthly plans cancel any time. The pilot itself is built as the exit ramp &mdash; $500, a few weeks, and the go/no-go call is yours.</p>
+      </details>
+      <details>
+        <summary>Do you chase missing PODs for us?</summary>
+        <p>We flag them &mdash; precisely. Every morning your exception list shows exactly which documents are missing, from whom, and for which load, so the chase is a two-minute email instead of an afternoon of digging. The actual follow-up stays with your team, because only you have the driver and shipper relationships.</p>
+      </details>
+      <details>
+        <summary>Can you guarantee we&rsquo;ll invoice X days faster?</summary>
+        <p>No &mdash; and you should distrust anyone who guarantees that before seeing your paperwork. What the pilot does is measure your actual before-and-after on your own loads, so you decide with real numbers.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container narrow">
+      <p class="kicker">Contact</p>
+      <h2>Talk to us about your paperwork.</h2>
+      <p class="section-lede">Tell us where the billing packet breaks down in your shop. We&rsquo;ll tell you honestly whether the pilot is worth your money.</p>
+
+      <div class="contact-cards">
+        <a class="contact-card" href="mailto:hello@freightfolio.net">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">hello@freightfolio.net</span>
+        </a>
+      </div>
+
+      <form class="contact-form" action="mailto:hello@freightfolio.net?subject=Freightfolio%20inquiry" method="post" enctype="text/plain">
+        <div class="form-row">
+          <label>Your name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Company<input type="text" name="company" required autocomplete="organization"></label>
+        </div>
+        <div class="form-row">
+          <label>Work email<input type="email" name="email" required autocomplete="email"></label>
+          <label>Loads per month
+            <select name="volume">
+              <option value="under-50">Under 50</option>
+              <option value="50-150">50&ndash;150</option>
+              <option value="150-400">150&ndash;400</option>
+              <option value="400-plus">400+</option>
+            </select>
+          </label>
+        </div>
+        <label>Where does your billing packet break down?<textarea name="message" rows="5" placeholder="e.g. PODs take a week to come back, one person re-keys everything into the TMS&hellip;"></textarea></label>
+        <button class="btn btn-amber" type="submit">Send inquiry</button>
+        <p class="fineprint">This form opens your email app addressed to hello@freightfolio.net &mdash; or just email us directly.</p>
+      </form>
+
+      <p class="founder-line">Michael McCary, Founder &mdash; Freightfolio</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <!-- Logo: final wordmark (Mike's pick #4, 2026-10-08). -->
+      <span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>
+      <p class="tagline">Your loads, billed. Your money, sooner.</p>
+    </div>
+    <div class="footer-contact">
+      <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a>
+    </div>
+  </div>
+  <div class="container">
+    <p class="fineprint">&copy; 2026 Freightfolio. Example figures on this page are illustrative, not promises or guarantees of results.</p>
+  </div>
+</footer>
+
+</body>
+</html>

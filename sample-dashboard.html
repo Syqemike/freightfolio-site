@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freight Doc Pipeline — Dashboard</title>
+<style>
+  :root { --bg:#0f1722; --card:#182434; --ink:#e8eef5; --mut:#9fb0c3;
+           --acc:#38bdf8; --ok:#34d399; --warn:#fbbf24; --bad:#f87171; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+          background:var(--bg); color:var(--ink); }
+  header { padding:28px 32px 8px; }
+  header h1 { margin:0 0 4px; font-size:26px; }
+  header p { margin:0; color:var(--mut); font-size:13px; }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+           gap:14px; padding:20px 32px; }
+  .kpi { background:var(--card); border-radius:12px; padding:16px 18px; }
+  .kpi .v { font-size:30px; font-weight:700; }
+  .kpi .l { color:var(--mut); font-size:12px; text-transform:uppercase;
+             letter-spacing:.06em; margin-top:4px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; padding:0 32px; }
+  @media (max-width:900px) { .grid { grid-template-columns:1fr; } }
+  .card { background:var(--card); border-radius:12px; padding:18px 20px; }
+  .card h2 { margin:0 0 12px; font-size:16px; }
+  .brow { display:flex; align-items:center; gap:10px; margin:8px 0; }
+  .blabel { width:170px; font-size:13px; color:var(--mut); }
+  .btrack { flex:1; background:#0b1220; border-radius:6px; height:16px; }
+  .bfill { background:var(--acc); height:100%; border-radius:6px; min-width:2px; }
+  .bcount { width:40px; text-align:right; font-weight:600; }
+  ul.typelist { list-style:none; margin:0; padding:0; }
+  ul.typelist li { display:flex; justify-content:space-between; padding:7px 0;
+                    border-bottom:1px solid #243349; font-size:14px; }
+  ul.typelist li:last-child { border-bottom:none; }
+  section.table { margin:14px 32px 32px; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th { text-align:left; color:var(--mut); font-weight:600; padding:10px;
+        border-bottom:2px solid #243349; text-transform:uppercase;
+        font-size:11px; letter-spacing:.05em; }
+  td { padding:9px 10px; border-bottom:1px solid #1e2c42; vertical-align:top; }
+  .mono { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:12px; }
+  .sev { padding:2px 8px; border-radius:20px; font-size:11px; font-weight:700;
+          text-transform:uppercase; }
+  .sev-high { background:#3b1d1d; color:var(--bad); }
+  .sev-medium { background:#3a2f14; color:var(--warn); }
+  .sev-low { background:#1c2f45; color:var(--acc); }
+  .pill { padding:3px 10px; border-radius:20px; font-size:11px; font-weight:700; }
+  .pill.ok { background:#123b2c; color:var(--ok); }
+  .pill.no { background:#3b1d1d; color:var(--bad); }
+  footer { padding:0 32px 28px; color:var(--mut); font-size:12px; }
+</style></head>
+<body>
+<header>
+  <h1>📋 Freightfolio — Billing-Readiness Dashboard</h1>
+  <p>Generated 2026-10-09T14:10:43+00:00 from synth/samples. Sample data — figures shown are illustrative.</p>
+</header>
+<div class="kpis">
+  <div class="kpi"><div class="v">40</div><div class="l">Docs processed</div></div>
+  <div class="kpi"><div class="v">5<span style="font-size:16px;color:var(--mut)"> / 11</span></div><div class="l">Billing-ready loads</div></div>
+  <div class="kpi"><div class="v">13</div><div class="l">Exceptions</div></div>
+  <div class="kpi"><div class="v">1</div><div class="l">Missing POD signatures</div></div>
+  <div class="kpi"><div class="v">1</div><div class="l">Flagged for review</div></div>
+  <div class="kpi"><div class="v">0.97</div><div class="l">Avg confidence</div></div>
+</div>
+<div class="grid">
+  <div class="card"><h2>Extraction confidence distribution</h2><div class="brow"><span class="blabel">0.90 - 1.00</span><div class="btrack"><div class="bfill" style="width:100.0%"></div></div><span class="bcount">37</span></div>
+<div class="brow"><span class="blabel">0.75 - 0.90</span><div class="btrack"><div class="bfill" style="width:8.1%"></div></div><span class="bcount">3</span></div>
+<div class="brow"><span class="blabel">below 0.75 (review)</span><div class="btrack"><div class="bfill" style="width:0.0%"></div></div><span class="bcount">0</span></div></div>
+  <div class="card"><h2>Documents by type</h2><ul class="typelist"><li><span>Bill of Lading</span><strong>8</strong></li><li><span>Commercial Invoice</span><strong>11</strong></li><li><span>Proof of Delivery</span><strong>10</strong></li><li><span>Rate Confirmation</span><strong>10</strong></li><li><span>Unknown</span><strong>1</strong></li></ul></div>
+</div>
+<section class="table card"><h2>Exceptions</h2>
+<table><tr><th>ID</th><th>Severity</th><th>Check</th><th>Load</th><th>Message</th><th>Source</th></tr>
+<tr><td>EXC-0001</td><td><span class='sev sev-medium'>medium</span></td><td>MISSING_FIELD</td><td>LD-2026-1008</td><td>Required field &#x27;bol_number&#x27; is missing or unreadable.</td><td class='mono'>bil-L08-25.pdf<br>page 1</td></tr>
+<tr><td>EXC-0002</td><td><span class='sev sev-high'>high</span></td><td>TOTAL_INCONSISTENT</td><td>LD-2026-1004</td><td>Stated total $3,607.91 != sum of charges $3,457.91 (linehaul + fuel + accessorials).</td><td class='mono'>com-L04-15.pdf<br>page 1</td></tr>
+<tr><td>EXC-0003</td><td><span class='sev sev-medium'>medium</span></td><td>MISSING_FIELD</td><td></td><td>Required field &#x27;load_number&#x27; is missing or unreadable.</td><td class='mono'>com-L10-31.pdf<br>page 1</td></tr>
+<tr><td>EXC-0004</td><td><span class='sev sev-high'>high</span></td><td>MISSING_POD_SIGNATURE</td><td>LD-2026-1007</td><td>Proof of delivery has no signature / signed flag.</td><td class='mono'>pro-L07-23.pdf<br>page 1</td></tr>
+<tr><td>EXC-0005</td><td><span class='sev sev-high'>high</span></td><td>TOTAL_INCONSISTENT</td><td>LD-2026-1005</td><td>Stated total $3,041.95 != sum of charges $3,241.95 (linehaul + fuel + accessorials).</td><td class='mono'>rat-L05-16.pdf<br>page 1</td></tr>
+<tr><td>EXC-0006</td><td><span class='sev sev-medium'>medium</span></td><td>MISSING_FIELD</td><td>LD-2026-1011</td><td>Required field &#x27;carrier&#x27; is missing or unreadable.</td><td class='mono'>rat-L11-32.pdf<br>page 1</td></tr>
+<tr><td>EXC-0007</td><td><span class='sev sev-high'>high</span></td><td>DATE_INVERSION</td><td>LD-2026-1012</td><td>Delivery date 2026-09-20 is before ship date 2026-09-22.</td><td class='mono'>rat-L12-36.pdf<br>page 1</td></tr>
+<tr><td>EXC-0008</td><td><span class='sev sev-low'>low</span></td><td>UNKNOWN_DOC_TYPE</td><td></td><td>Document type could not be determined; routed to manual review.</td><td class='mono'>unk-UNK-40.pdf<br>page 1</td></tr>
+<tr><td>EXC-0009</td><td><span class='sev sev-medium'>medium</span></td><td>DUPLICATE_RECORD</td><td>LD-2026-1007</td><td>Duplicate commercial_invoice: key &#x27;INV-8842-7007&#x27; appears on 2 documents.</td><td class='mono'>com-L07-22.pdf<br>page 1</td></tr>
+<tr><td>EXC-0010</td><td><span class='sev sev-medium'>medium</span></td><td>DUPLICATE_RECORD</td><td>LD-2026-1007</td><td>Duplicate commercial_invoice: key &#x27;INV-8842-7007&#x27; appears on 2 documents.</td><td class='mono'>com-L07-24.pdf<br>page 1</td></tr>
+<tr><td>EXC-0011</td><td><span class='sev sev-high'>high</span></td><td>RATE_MISMATCH</td><td>LD-2026-1005</td><td>Invoiced total $3,241.95 != confirmed rate $3,041.95 (RC rat-L05-16#p1).</td><td class='mono'>com-L05-19.pdf<br>page 1</td></tr>
+<tr><td>EXC-0012</td><td><span class='sev sev-high'>high</span></td><td>RATE_MISMATCH</td><td>LD-2026-1009</td><td>Invoiced total $4,753.52 != confirmed rate $4,428.02 (RC rat-L09-27#p1).</td><td class='mono'>com-L09-30.pdf<br>page 1</td></tr>
+<tr><td>EXC-0013</td><td><span class='sev sev-high'>high</span></td><td>RATE_MISMATCH</td><td>LD-2026-1004</td><td>Invoiced total $3,607.91 != confirmed rate $3,457.91 (RC rat-L04-13#p1).</td><td class='mono'>com-L04-15.pdf<br>page 1</td></tr></table></section>
+<section class="table card"><h2>Loads &amp; billing readiness</h2>
+<table><tr><th>Load</th><th>Lane</th><th>Route</th><th>Status</th><th>Blockers</th></tr>
+<tr><td class='mono'>LD-2026-1001</td><td>Gulf Coast Paper Mill → Capital City Grocers</td><td>Dallas, TX → Memphis, TN</td><td><span class='pill ok'>READY</span></td><td></td></tr>
+<tr><td class='mono'>LD-2026-1002</td><td>Magnolia Foods Distribution → Riverbend Manufacturing</td><td>Houston, TX → Atlanta, GA</td><td><span class='pill ok'>READY</span></td><td></td></tr>
+<tr><td class='mono'>LD-2026-1003</td><td>Bayou Building Supply → Capital City Grocers</td><td>Mobile, AL → Jackson, MS</td><td><span class='pill ok'>READY</span></td><td></td></tr>
+<tr><td class='mono'>LD-2026-1004</td><td>Magnolia Foods Distribution → Lone Star Retail DC</td><td>Baton Rouge, LA → Nashville, TN</td><td><span class='pill no'>NOT READY</span></td><td>Invoice totals are inconsistent.; 2 high-severity exception(s) open.</td></tr>
+<tr><td class='mono'>LD-2026-1005</td><td>Magnolia Foods Distribution → Sunbelt Home Centers</td><td>Baton Rouge, LA → Nashville, TN</td><td><span class='pill no'>NOT READY</span></td><td>2 high-severity exception(s) open.</td></tr>
+<tr><td class='mono'>LD-2026-1006</td><td>Bayou Building Supply → Lone Star Retail DC</td><td>San Antonio, TX → Little Rock, AR</td><td><span class='pill no'>NOT READY</span></td><td>No signed proof of delivery.</td></tr>
+<tr><td class='mono'>LD-2026-1007</td><td>Crescent Chemical Co → Riverbend Manufacturing</td><td>Mobile, AL → Jackson, MS</td><td><span class='pill no'>NOT READY</span></td><td>No signed proof of delivery.; 1 high-severity exception(s) open.</td></tr>
+<tr><td class='mono'>LD-2026-1008</td><td>Crescent Chemical Co → Lone Star Retail DC</td><td>San Antonio, TX → Little Rock, AR</td><td><span class='pill ok'>READY</span></td><td></td></tr>
+<tr><td class='mono'>LD-2026-1009</td><td>Gulf Coast Paper Mill → Lone Star Retail DC</td><td>San Antonio, TX → Little Rock, AR</td><td><span class='pill no'>NOT READY</span></td><td>1 high-severity exception(s) open.</td></tr>
+<tr><td class='mono'>LD-2026-1011</td><td>Bayou Building Supply → Delta Foods Warehouse</td><td>Houston, TX → Atlanta, GA</td><td><span class='pill ok'>READY</span></td><td></td></tr>
+<tr><td class='mono'>LD-2026-1012</td><td>Pelican Plastics LLC → Capital City Grocers</td><td>New Orleans, LA → Birmingham, AL</td><td><span class='pill no'>NOT READY</span></td><td>1 high-severity exception(s) open.</td></tr></table></section>
+<footer>Prepared by Freightfolio. Every row links back to its source document in the Excel report.</footer>
+</body></html>
