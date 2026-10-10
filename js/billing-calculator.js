@@ -264,18 +264,18 @@ function showErrors(errors) {
   }
 }
 
-/* SVG stacked bar: base prep cost vs rework cost. */
-function costBarSVG(costs) {
+/* HTML/CSS stacked bar: base prep cost vs rework cost.
+   (Div-based: immune to SVG aspect-ratio distortion on narrow screens.) */
+function costBarHTML(costs) {
   var total = costs.monthlyCost;
   var baseW = total > 0 ? (costs.baseCost / total) * 100 : 0;
   var reworkW = total > 0 ? (costs.reworkCost / total) * 100 : 0;
   return '' +
-    '<svg viewBox="0 0 100 14" class="cost-bar" role="img" aria-label="Monthly cost breakdown: ' +
+    '<div class="cost-bar" role="img" aria-label="Monthly cost breakdown: ' +
     fmtUSD(costs.baseCost) + ' standard preparation, ' + fmtUSD(costs.reworkCost) + ' rework.">' +
-    '<rect x="0" y="0" width="100" height="14" rx="7" fill="#E3DED4"/>' +
-    '<rect x="0" y="0" width="' + baseW.toFixed(1) + '" height="14" rx="7" fill="#0F2A44"/>' +
-    '<rect x="' + baseW.toFixed(1) + '" y="0" width="' + reworkW.toFixed(1) + '" height="14" fill="#F5A623"/>' +
-    '</svg>';
+    '<div class="seg-base" style="width:' + baseW.toFixed(1) + '%"></div>' +
+    '<div class="seg-rework" style="width:' + reworkW.toFixed(1) + '%"></div>' +
+    '</div>';
 }
 
 /* SVG donut: released vs remaining hours. */
@@ -305,7 +305,7 @@ function renderDashboard(costs, v) {
     '<div class="split-legend">' +
     '<span><i class="sw sw-navy"></i>Standard prep: ' + fmtUSD(costs.baseCost) + ' (' + fmtHours(costs.baseHours) + ' hrs)</span>' +
     '<span><i class="sw sw-amber"></i>Rework and exceptions: ' + fmtUSD(costs.reworkCost) + ' (' + fmtHours(costs.reworkHours) + ' hrs)</span>' +
-    '</div>' + costBarSVG(costs);
+    '</div>' + costBarHTML(costs);
 }
 
 function renderScenario(costs, v, pct) {

@@ -321,7 +321,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline
 .metric-label { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; color: var(--slate); margin-bottom: 8px; }
 .metric-value { font-size: 1.7rem; font-weight: 800; color: var(--navy); }
 
-.cost-bar { width: 100%; height: 22px; margin: 10px 0 4px; }
+.cost-bar {
+  display: flex; height: 22px; border-radius: 11px; overflow: hidden;
+  background: #E3DED4; margin: 10px 0 4px;
+}
+.cost-bar .seg-base { background: var(--navy); }
+.cost-bar .seg-rework { background: var(--amber); }
 .split-legend { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: .92rem; color: #374151; margin-top: 12px; }
 .sw { display: inline-block; width: 14px; height: 14px; border-radius: 4px; margin-right: 6px; vertical-align: baseline; }
 .sw-navy { background: var(--navy); }
@@ -376,8 +381,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline
 @media (max-width: 860px) {
   .metric-grid { grid-template-columns: 1fr 1fr; }
   .scenario-grid { grid-template-columns: 1fr; }
-  .donut-wrap { max-width: 150px; }
+  .donut-wrap { max-width: 150px; margin: 0 auto; }
 }
 @media (max-width: 480px) {
-  .metric-grid { grid-template-columns: 1fr; }
+  .metric-card { padding: 14px 12px; }
+  .metric-value { font-size: 1.35rem; }
+  .metric-label { font-size: .75rem; }
 }
