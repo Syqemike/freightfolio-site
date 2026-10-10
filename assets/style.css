@@ -277,7 +277,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline
   .site-nav, .site-footer, .no-print { display: none !important; }
   #results-section { display: block !important; padding-top: 0; }
   body { background: #fff; }
-  .print-only { display: block; }
+  .print-only { display: block !important; }
   .print-brand .brand-word { color: var(--navy); }
   .result-banner { break-inside: avoid; }
 }
