@@ -143,41 +143,129 @@ function scenarioLabel(pct, isCustom) {
   return 'Custom (' + pct + '%)';
 }
 
-/* Plain-language bottom line for the modeled cost difference.
-   difference = current monthly cost - total modeled cost.
-   Positive means the model comes out cheaper than today. */
-function verdictFor(difference) {
-  if (difference >= 0) {
-    return { cls: 'diff-pos', text: fmtUSD(difference) + '/mo less than today' };
-  }
-  return { cls: 'diff-neg', text: fmtUSD(-difference) + '/mo more than today' };
+/* Service option for a monthly document volume.
+   When a published plan covers the volume, returns { kind:'plan', plan }.
+   Above 1,000 docs/mo, returns an ILLUSTRATIVE overage estimate built from
+   the published policy (Premium base + $1.50 per additional document).
+   Actual eligibility and pricing always require confirmation. */
+function serviceOptionFor(monthlyDocs) {
+  var plan = recommendPlan(monthlyDocs);
+  if (plan) return { kind: 'plan', plan: plan };
+  var premium = PLANS[PLANS.length - 1];
+  var overageDocs = Math.max(0, Math.ceil(monthlyDocs - premium.docsCap));
+  var overageCost = overageDocs * OVERAGE_PER_DOC;
+  return {
+    kind: 'overage',
+    plan: premium,
+    overageDocs: overageDocs,
+    overageCost: overageCost,
+    monthlyService: premium.monthly + overageCost
+  };
 }
 
-/* Financial comparison for every plan that fits the volume. */
-function planComparisons(costs, hourlyCost, monthlyDocs, scenarioPct) {
-  var sc = scenarioModel(costs, hourlyCost, scenarioPct);
-  var out = [];
-  for (var i = 0; i < PLANS.length; i++) {
-    var plan = PLANS[i];
-    if (monthlyDocs > plan.docsCap) continue;
-    var setupAmortized = plan.setup / 12;
-    var totalModeled = plan.monthly + setupAmortized + sc.remainingLaborCost;
-    out.push({
-      plan: plan,
-      monthlySub: plan.monthly,
-      setup: plan.setup,
+/* Before / with-service / difference model for one scenario.
+   difference = current monthly admin cost - total modeled monthly cost.
+   Positive means the model comes out cheaper than today. */
+function worthItModel(costs, hourlyCost, monthlyDocs, pct) {
+  var svc = serviceOptionFor(monthlyDocs);
+  var sc = scenarioModel(costs, hourlyCost, pct);
+  var monthlyService = svc.kind === 'plan' ? svc.plan.monthly : svc.monthlyService;
+  var setup = svc.plan.setup;
+  var setupAmortized = setup / 12;
+  var totalModeled = monthlyService + setupAmortized + sc.remainingLaborCost;
+  var difference = costs.monthlyCost - totalModeled;
+  var verdict = difference > 5 ? 'benefit'
+    : (difference < -5 ? 'additional' : 'breakeven');
+  /* Improvement % at which the service cost alone is covered by admin savings. */
+  var breakEvenPct = costs.monthlyCost > 0
+    ? ((monthlyService + setupAmortized) / costs.monthlyCost) * 100
+    : null;
+  return {
+    service: svc,
+    scenario: sc,
+    before: {
+      monthly: costs.monthlyCost,
+      hours: costs.totalHours,
+      annual: costs.annualCost
+    },
+    withService: {
+      monthlyService: monthlyService,
+      overageDocs: svc.kind === 'overage' ? svc.overageDocs : 0,
+      overageCost: svc.kind === 'overage' ? svc.overageCost : 0,
+      setup: setup,
       setupAmortized: setupAmortized,
-      remainingLaborCost: sc.remainingLaborCost,
-      totalModeled: totalModeled,
-      /* Positive = modeled monthly cost below current admin cost. */
-      difference: costs.monthlyCost - totalModeled
-    });
+      remainingLabor: sc.remainingLaborCost,
+      total: totalModeled
+    },
+    difference: difference,
+    verdict: verdict,
+    breakEvenPct: breakEvenPct
+  };
+}
+
+/* Plain-English verdict for the modeled financial difference. */
+function verdictFor(difference) {
+  if (difference > 5) {
+    return { cls: 'diff-pos', kind: 'benefit',
+      headline: 'Modeled financial benefit',
+      text: fmtUSD(difference) + '/mo less than your current cost' };
   }
-  return out;
+  if (difference < -5) {
+    return { cls: 'diff-neg', kind: 'additional',
+      headline: 'Modeled additional cost',
+      text: fmtUSD(-difference) + '/mo more than your current cost' };
+  }
+  return { cls: 'diff-even', kind: 'breakeven',
+    headline: 'Approximately break-even',
+    text: 'within ' + fmtUSD(5) + '/mo of your current cost' };
+}
+
+/* Plain-English summary paragraph for the results hero and the PDF. */
+function summaryText(costs, hourlyCost, pct, label) {
+  var s = scenarioModel(costs, hourlyCost, pct);
+  return 'Your team currently spends approximately ' + fmtHours(costs.totalHours) +
+    ' hours per month on freight billing paperwork, costing an estimated ' +
+    fmtUSD(costs.monthlyCost) + '. Under the selected ' + label +
+    ' improvement scenario, ' + fmtHours(s.hoursReleased) +
+    ' hours could potentially be redirected to other work each month. ' +
+    'This is a hypothetical illustration, not a guaranteed outcome.';
+}
+
+/* Plain-English conclusion for the PDF executive summary. */
+function buildConclusion(costs, v, wm, verdict, label) {
+  var svc = wm.service;
+  var svcDesc = svc.kind === 'plan'
+    ? 'the ' + svc.plan.name + ' plan at ' + fmtUSD(wm.withService.monthlyService) + '/mo'
+    : 'Premium with an illustrative overage estimate of ' + fmtUSD(wm.withService.monthlyService) + '/mo';
+  return 'At about ' + fmtInt(costs.monthlyDocs) + ' documents per month, ' + svcDesc +
+    ' plus ' + fmtUSD0(wm.withService.setup) + ' setup. Under the ' + label +
+    ' scenario, the modeled total is ' + fmtUSD(wm.withService.total) + '/mo, which is ' +
+    verdict.text + '. ' + fmtHours(wm.scenario.hoursReleased) +
+    ' hours per month of labor capacity could be redirected to other work. ' +
+    'That is not the same as cash savings: cash is saved only when payroll, overtime, or contractor spend actually goes down.';
+}
+
+/* Plain-English break-even explanation. */
+function breakEvenText(wm, label) {
+  var svcCost = wm.withService.monthlyService + wm.withService.setupAmortized;
+  if (wm.breakEvenPct === null) {
+    return 'Break-even cannot be calculated because your current modeled administrative cost is $0. Enter your typical volumes to see this analysis.';
+  }
+  var pctTxt = wm.breakEvenPct > 100
+    ? 'more than 100%'
+    : 'approximately ' + Math.round(wm.breakEvenPct) + '%';
+  var text = 'To offset the modeled monthly service cost of ' + fmtUSD(svcCost) +
+    ' through reduced administrative labor expenses alone, your business would need to eliminate ' +
+    pctTxt + ' of its current billing administration cost.';
+  if (wm.breakEvenPct > 100) {
+    text += ' In other words, administrative labor savings alone could not cover the modeled service cost at your current volumes.';
+  }
+  text += ' This is about actual cost reduction (lower payroll, overtime, or contractor spend), not merely freeing employee time.';
+  return text;
 }
 
 /* Rules-based recommendations from the visitor's inputs. */
-function buildRecommendations(costs, v, plan) {
+function buildRecommendations(costs, v, svc) {
   var recs = [];
   if (v.loads === 0 || costs.totalHours === 0) {
     recs.push('Enter your typical monthly load volume and processing time to see a meaningful estimate.');
@@ -191,16 +279,18 @@ function buildRecommendations(costs, v, plan) {
   } else if (v.reworkPct >= 10) {
     recs.push('About ' + Math.round(reworkShare) + '% of your billing hours go to rework. Tightening document collection up front typically cuts this faster than adding staff.');
   }
-  if (plan) {
+  if (svc.kind === 'plan') {
+    var plan = svc.plan;
     recs.push('Your estimated volume of about ' + Math.round(costs.monthlyDocs) +
-      ' documents per month fits the ' + plan.name + ' plan (' + plan.blurb + ').');
+      ' documents per month fits the ' + plan.name + ' plan (up to ' + fmtInt(plan.docsCap) + ' docs/mo).');
     if (costs.monthlyDocs > plan.docsCap * 0.85) {
       recs.push('You are near the top of the ' + plan.name + ' document range. Documents over the plan volume are billed at $' +
         OVERAGE_PER_DOC.toFixed(2) + ' each, and Freightfolio moves you to the next tier when that is cheaper.');
     }
   } else {
     recs.push('Your estimated volume of about ' + Math.round(costs.monthlyDocs) +
-      ' documents per month is above the published plan capacities. Request a free billing assessment for custom pricing.');
+      ' documents per month is above the Premium plan\'s included 1,000 docs/mo. The comparison uses an illustrative overage estimate (' +
+      fmtUSD(svc.plan.monthly) + '/mo base + ' + fmtUSD(OVERAGE_PER_DOC) + ' per additional document). Actual eligibility and pricing require confirmation.');
   }
   if (costs.costPerLoad >= 15) {
     recs.push('At ' + fmtUSD(costs.costPerLoad) + ' of admin cost per load, paperwork is a meaningful line item. The $' +
@@ -342,121 +432,195 @@ function renderScenario(costs, v, pct) {
   return sc;
 }
 
-function renderComparison(costs, v, pct, sc, label) {
-  var rows = planComparisons(costs, v.hourlyCost, costs.monthlyDocs, pct);
-  var wrap = $('plan-rows');
-  if (!rows.length) {
-    wrap.innerHTML =
-      '<div class="plan-card plan-custom">' +
-      '<h3>Custom assessment</h3>' +
-      '<p>Your estimated volume of about <strong>' + fmtInt(costs.monthlyDocs) + ' documents per month</strong> ' +
-      'is above the published plan capacities (Starter up to 100, Business up to 400, Premium up to 1,000 docs/mo). ' +
-      'Request a free billing assessment and we will scope custom pricing for your operation.</p>' +
-      '<a class="btn btn-amber" href="/#contact" data-ga="billing_calculator_contact_click">Request a free billing assessment</a>' +
-      '</div>';
-    return null;
-  }
-  var html = '';
-  for (var i = 0; i < rows.length; i++) {
-    var r = rows[i];
-    var plan = r.plan;
-    var verdict = verdictFor(r.difference);
-    html +=
-      '<div class="plan-card' + (i === 0 ? ' plan-best' : '') + '">' +
-      (i === 0 ? '<p class="plan-fit">Best fit for your volume</p>' : '') +
-      '<h3>' + plan.name + '</h3>' +
-      '<p class="plan-cap">Fits your estimated ' + fmtInt(costs.monthlyDocs) +
-      ' documents/mo (plan capacity: up to ' + fmtInt(plan.docsCap) + ' docs/mo)</p>' +
-      '<dl class="plan-figs">' +
-      '<div><dt>Your current admin cost</dt><dd>' + fmtUSD(costs.monthlyCost) + '/mo</dd></div>' +
-      '<div><dt>Freightfolio subscription</dt><dd>' + fmtUSD(plan.monthly) + '/mo' + (plan.note ? ' <span class="plan-note">(' + plan.note + ')</span>' : '') + '</dd></div>' +
-      '<div><dt>Setup, modeled monthly</dt><dd>' + fmtUSD(r.setupAmortized) + '/mo <span class="plan-note">(' + fmtUSD0(plan.setup) + ' one-time, spread over 12 months)</span></dd></div>' +
-      '<div><dt>Remaining admin labor</dt><dd>' + fmtUSD(r.remainingLaborCost) + '/mo <span class="plan-note">(at the ' + label + ' scenario)</span></dd></div>' +
-      '<div class="plan-total"><dt>Total modeled monthly cost</dt><dd>' + fmtUSD(r.totalModeled) + '/mo</dd></div>' +
-      '<div class="plan-verdict"><dt>Bottom line</dt><dd class="' + verdict.cls + '">' + verdict.text + '</dd></div>' +
-      '</dl>' +
-      '<p class="plan-fine">Illustrative model using the ' + label + ' scenario: subscription plus amortized setup plus your remaining admin labor, compared with your current estimated admin cost. Released hours are labor capacity value (time your team could redirect), not automatic payroll savings.</p>' +
-      '</div>';
-  }
-  wrap.innerHTML = html;
-  bindCtaTracking(wrap);
-  return rows[0];
+function renderSummary(costs, v, pct, label) {
+  var sc = scenarioModel(costs, v.hourlyCost, pct);
+  $('m-sum-cost').textContent = fmtUSD(costs.monthlyCost);
+  $('m-sum-hours').textContent = fmtHours(costs.totalHours);
+  $('m-sum-released').textContent = fmtHours(sc.hoursReleased);
+  $('m-sum-value').textContent = fmtUSD(sc.capacityValue);
+  $('summary-text').textContent = summaryText(costs, v.hourlyCost, pct, label);
 }
 
-function renderReport(costs, v, sc, bestPlan, label) {
+function kv(k, val, cls) {
+  return '<div' + (cls ? ' class="' + cls + '"' : '') + '><dt>' + k + '</dt><dd>' + val + '</dd></div>';
+}
+
+/* "Is Freightfolio worth the cost?" before / with / verdict. */
+function renderWorthIt(costs, v, pct, label) {
+  var wm = worthItModel(costs, v.hourlyCost, costs.monthlyDocs, pct);
+  var svc = wm.service;
+  var plan = svc.plan;
+  var w = wm.withService;
+
+  $('w-before').innerHTML =
+    kv('Monthly admin cost', fmtUSD(wm.before.monthly)) +
+    kv('Monthly admin hours', fmtHours(wm.before.hours)) +
+    kv('Annual admin cost', fmtUSD(wm.before.annual));
+
+  var withHtml;
+  var svcName = svc.kind === 'plan' ? plan.name : plan.name + ' + overage';
+  var svcDetail;
+  if (svc.kind === 'plan') {
+    svcDetail = fmtUSD(w.monthlyService) + '/mo' + (plan.note ? ' <span class="plan-note">(' + plan.note + ')</span>' : '');
+  } else {
+    svcDetail = fmtUSD(w.monthlyService) + '/mo <span class="plan-note">(' +
+      fmtUSD(plan.monthly) + ' base + ' + fmtInt(svc.overageDocs) + ' docs &times; ' +
+      fmtUSD(OVERAGE_PER_DOC) + ' overage)</span>';
+  }
+  withHtml =
+    kv('Service', svcName) +
+    kv('Monthly service', svcDetail) +
+    kv('Setup fee', fmtUSD0(w.setup) + ' one-time' + (svc.kind === 'overage' ? ' <span class="plan-note">(starting at)</span>' : '')) +
+    kv('Setup, modeled monthly', fmtUSD(w.setupAmortized) + '/mo <span class="plan-note">(spread over 12 months)</span>') +
+    kv('Remaining admin labor', fmtUSD(w.remainingLabor) + '/mo <span class="plan-note">(at the ' + label + ' scenario)</span>') +
+    kv('Total modeled monthly cost', fmtUSD(w.total) + '/mo', 'kv-total');
+  $('w-with').innerHTML = withHtml;
+
+  var note = $('w-note');
+  if (svc.kind === 'overage') {
+    note.hidden = false;
+    note.textContent = 'Illustrative estimate from the published overage policy ($1.50 per document over 1,000/mo). Actual eligibility and pricing require confirmation.';
+  } else {
+    note.hidden = true;
+    note.textContent = '';
+  }
+
+  var verdict = verdictFor(wm.difference);
+  var banner = $('w-verdict');
+  banner.className = 'verdict-banner verdict-' + verdict.kind;
+  banner.innerHTML =
+    '<p class="verdict-kicker">The financial difference</p>' +
+    '<p class="verdict-headline ' + verdict.cls + '">' + verdict.headline + '</p>' +
+    '<p class="verdict-text">' + verdict.text + '.</p>' +
+    '<p class="fine-note">Illustrative model using the ' + label +
+    ' scenario. Released hours are labor capacity value (time your team could redirect), not automatic cash savings. ' +
+    'Cash savings happen only when actual expenses are reduced.</p>';
+  return wm;
+}
+
+function renderBreakEven(costs, v, pct, label) {
+  var wm = worthItModel(costs, v.hourlyCost, costs.monthlyDocs, pct);
+  var el = $('breakeven-block');
+  if (wm.breakEvenPct === null) {
+    el.innerHTML = '<div class="breakeven-card"><p>Break-even cannot be calculated because your current modeled administrative cost is $0. Enter your typical volumes to see this analysis.</p></div>';
+    return wm;
+  }
+  var pctDisplay = wm.breakEvenPct > 100 ? '100%+' : Math.round(wm.breakEvenPct) + '%';
+  el.innerHTML =
+    '<div class="breakeven-card">' +
+    '<p class="breakeven-pct">' + pctDisplay + '</p>' +
+    '<p>' + breakEvenText(wm, label) + '</p>' +
+    '</div>';
+  return wm;
+}
+
+function renderReport(costs, v, pct, label) {
+  var wm = worthItModel(costs, v.hourlyCost, costs.monthlyDocs, pct);
+  var svc = wm.service;
+  var plan = svc.plan;
+  var w = wm.withService;
+  var sc = wm.scenario;
+  var verdict = verdictFor(wm.difference);
   var date = todayStamp();
   function row(k, val) { return '<tr><th scope="row">' + k + '</th><td>' + val + '</td></tr>'; }
+
+  /* Service description lines shared by both pages. */
+  var svcName = svc.kind === 'plan' ? plan.name : plan.name + ' + overage*';
+  var svcCostLine = svc.kind === 'plan'
+    ? fmtUSD(w.monthlyService) + '/mo' + (plan.note ? ' (' + plan.note + ')' : '')
+    : fmtUSD(w.monthlyService) + '/mo* (' + fmtUSD(plan.monthly) + ' base + ' +
+      fmtInt(svc.overageDocs) + ' docs x ' + fmtUSD(OVERAGE_PER_DOC) + ')';
+  var overageNote = svc.kind === 'overage'
+    ? '<p class="report-note">*Illustrative estimate from the published overage policy ($1.50 per document over 1,000/mo). Actual eligibility and pricing require confirmation.</p>'
+    : '';
+
+  /* ---------- PAGE 1: executive summary ---------- */
+  var exec =
+    '<section class="rpt-exec">' +
+    '<div class="rpt-brand"><span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>' +
+    '<p class="rpt-title"><strong>Freight Billing Cost &amp; ROI Assessment</strong></p>' +
+    '<p class="report-date">Generated ' + date + ' &middot; freightfolio.net/freight-billing-calculator</p></div>' +
+    '<div class="rpt-verdict rpt-' + verdict.kind + '">' +
+    '<p class="rpt-verdict-kicker">Financial verdict &middot; ' + label + ' scenario</p>' +
+    '<p class="rpt-verdict-headline">' + verdict.headline + '</p>' +
+    '<p class="rpt-verdict-text">' + verdict.text + '.</p></div>' +
+    '<table class="report-table"><tbody>' +
+    row('Monthly load volume', fmtInt(v.loads) + ' loads') +
+    row('Monthly document volume', fmtInt(costs.monthlyDocs) + ' documents') +
+    row('Current monthly cost', fmtUSD(costs.monthlyCost) + ' (' + fmtHours(costs.totalHours) + ' hrs)') +
+    row('Hours potentially released', fmtHours(sc.hoursReleased) + '/mo') +
+    row('Freightfolio service', svcName + ': ' + svcCostLine) +
+    row('Total modeled monthly cost', fmtUSD(w.total) + '/mo') +
+    '</tbody></table>' +
+    '<p class="rpt-conclusion">' + buildConclusion(costs, v, wm, verdict, label) + '</p>' +
+    overageNote +
+    '</section>';
+
+  /* ---------- PAGE 2: detailed breakdown ---------- */
   var scenRows = '';
-  var all = PRESET_SCENARIOS.slice();
-  if (state.scenarioId === 'custom') all.push({ id: 'custom', label: 'Custom', pct: state.customPct });
-  for (var i = 0; i < all.length; i++) {
-    var m = scenarioModel(costs, v.hourlyCost, all[i].pct);
-    scenRows += '<tr><td>' + all[i].label + ' (' + all[i].pct + '%)</td><td>' +
+  for (var i = 0; i < PRESET_SCENARIOS.length; i++) {
+    var m = scenarioModel(costs, v.hourlyCost, PRESET_SCENARIOS[i].pct);
+    scenRows += '<tr><td>' + PRESET_SCENARIOS[i].label + ' (' + PRESET_SCENARIOS[i].pct + '%)</td><td>' +
       fmtHours(m.hoursReleased) + '</td><td>' + fmtUSD(m.capacityValue) + '</td><td>' +
       fmtHours(m.remainingHours) + '</td></tr>';
   }
-  var recs = buildRecommendations(costs, v, bestPlan ? bestPlan.plan : null);
+  if (state.scenarioId === 'custom') {
+    var mc = scenarioModel(costs, v.hourlyCost, state.customPct);
+    scenRows += '<tr><td>Custom (' + state.customPct + '%)</td><td>' + fmtHours(mc.hoursReleased) +
+      '</td><td>' + fmtUSD(mc.capacityValue) + '</td><td>' + fmtHours(mc.remainingHours) + '</td></tr>';
+  }
+  var recs = buildRecommendations(costs, v, svc);
   var recItems = '';
   for (var j = 0; j < recs.length; j++) recItems += '<li>' + recs[j] + '</li>';
 
-  var compareRows;
-  if (bestPlan) {
-    var p = bestPlan.plan;
-    var verdict = verdictFor(bestPlan.difference);
-    compareRows =
-      row('Recommended package', p.name) +
-      row('Why it fits', 'Your estimated ' + fmtInt(costs.monthlyDocs) +
-        ' documents/mo is within the plan capacity of up to ' + fmtInt(p.docsCap) + ' docs/mo.') +
-      row('Your current monthly admin cost', fmtUSD(costs.monthlyCost)) +
-      row('Freightfolio subscription', fmtUSD(p.monthly) + '/mo' + (p.note ? ' (' + p.note + ')' : '')) +
-      row('Setup fee, modeled monthly', fmtUSD(bestPlan.setupAmortized) + '/mo (' +
-        fmtUSD0(p.setup) + ' one-time, spread over 12 months)') +
-      row('Remaining admin labor', fmtUSD(bestPlan.remainingLaborCost) + '/mo (at the ' + label + ' scenario)') +
-      row('Total modeled monthly cost', fmtUSD(bestPlan.totalModeled) + '/mo') +
-      row('Bottom line', verdict.text + ' (illustrative, not guaranteed savings)');
-  } else {
-    compareRows = row('Potentially applicable package',
-      'None: estimated volume exceeds published plan capacities. Request a free billing assessment for custom pricing.');
-  }
-
-  $('calc-report').innerHTML =
-    '<div class="print-brand">' +
-    '<span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>' +
-    '<p><strong>Freight Billing Cost Assessment</strong></p>' +
-    '<p class="report-date">Generated ' + date + ' &middot; freightfolio.net/freight-billing-calculator</p>' +
-    '</div>' +
-    '<h2>1. Business operating assumptions</h2>' +
+  var details =
+    '<section class="rpt-details">' +
+    '<h2>Operating assumptions</h2>' +
     '<table class="report-table"><tbody>' +
     row('Monthly load volume', fmtInt(v.loads) + ' loads') +
-    row('Estimated documents per load', fmtInt(v.docsPerLoad)) +
-    row('Estimated monthly document volume', fmtInt(costs.monthlyDocs) + ' documents') +
-    row('Average processing time', fmtInt(v.minutesPerLoad) + ' minutes per load') +
+    row('Documents per load', fmtInt(v.docsPerLoad)) +
+    row('Monthly document volume', fmtInt(costs.monthlyDocs) + ' documents') +
+    row('Processing time', fmtInt(v.minutesPerLoad) + ' minutes per load') +
     row('Loads requiring rework', fmtPct(v.reworkPct)) +
-    row('Additional time per rework load', fmtInt(v.reworkMinutes) + ' minutes') +
+    row('Rework time per affected load', fmtInt(v.reworkMinutes) + ' minutes') +
     row('Hourly administrative labor cost', fmtUSD(v.hourlyCost)) +
     '</tbody></table>' +
-    '<h2>2. Current cost assessment</h2>' +
+    '<h2>Current cost breakdown</h2>' +
     '<table class="report-table"><tbody>' +
-    row('Monthly processing hours', fmtHours(costs.baseHours)) +
-    row('Monthly rework hours', fmtHours(costs.reworkHours)) +
-    row('Total monthly administrative hours', fmtHours(costs.totalHours)) +
-    row('Estimated monthly labor cost', fmtUSD(costs.monthlyCost)) +
-    row('Estimated annual labor cost', fmtUSD(costs.annualCost)) +
-    row('Estimated cost per load', fmtUSD(costs.costPerLoad)) +
+    row('Standard preparation', fmtHours(costs.baseHours) + ' hrs &middot; ' + fmtUSD(costs.baseCost)) +
+    row('Rework and exceptions', fmtHours(costs.reworkHours) + ' hrs &middot; ' + fmtUSD(costs.reworkCost)) +
+    row('Total monthly hours', fmtHours(costs.totalHours)) +
+    row('Monthly labor cost', fmtUSD(costs.monthlyCost)) +
+    row('Annual labor cost', fmtUSD(costs.annualCost)) +
+    row('Cost per load', fmtUSD(costs.costPerLoad)) +
     '</tbody></table>' +
-    '<h2>3. Improvement scenarios</h2>' +
+    '<h2>Improvement scenarios</h2>' +
     '<p class="report-note">Illustrative modeling assumptions, not verified Freightfolio performance results or promised savings.</p>' +
     '<table class="report-table"><thead><tr><th>Scenario</th><th>Hours released/mo</th><th>Labor capacity value/mo</th><th>Remaining hours/mo</th></tr></thead><tbody>' +
     scenRows + '</tbody></table>' +
-    '<h2>4. Freightfolio service comparison</h2>' +
-    '<p class="report-note">Compared using the ' + label + ' scenario. All figures are illustrative estimates, not guaranteed savings.</p>' +
-    '<table class="report-table"><tbody>' + compareRows + '</tbody></table>' +
-    '<h2>5. Recommendations</h2><ul class="report-recs">' + recItems + '</ul>' +
-    '<h2>6. Disclaimer</h2>' +
+    '<h2>Freightfolio pricing comparison</h2>' +
+    '<p class="report-note">Compared using the ' + label + ' scenario. Setup fee spread over 12 months for modeling.</p>' +
+    '<table class="report-table"><tbody>' +
+    row('Current monthly admin cost', fmtUSD(wm.before.monthly)) +
+    row('Service', svcName + ': ' + svcCostLine) +
+    row('Setup fee', fmtUSD0(w.setup) + ' one-time' + (svc.kind === 'overage' ? ' (starting at)' : '')) +
+    row('Setup, modeled monthly', fmtUSD(w.setupAmortized) + '/mo') +
+    row('Remaining admin labor', fmtUSD(w.remainingLabor) + '/mo') +
+    row('Total modeled monthly cost', fmtUSD(w.total) + '/mo') +
+    row('Bottom line', verdict.headline + ': ' + verdict.text) +
+    '</tbody></table>' +
+    overageNote +
+    '<h2>Break-even analysis</h2>' +
+    '<p>' + breakEvenText(wm, label) + '</p>' +
+    '<h2>Recommendations</h2><ul class="report-recs">' + recItems + '</ul>' +
+    '<h2>Disclaimer</h2>' +
     '<p class="report-note">These calculations are estimates based on the inputs you provided and hypothetical improvement assumptions. ' +
     'They do not guarantee cost reductions, revenue improvements, or payment acceleration. Freightfolio does not eliminate all administrative labor, ' +
     'and released hours represent labor capacity value (time that could be redirected), not automatic payroll savings. ' +
-    'Cash savings occur only when actual expenses are reduced. Verify any decision with your own financial review.</p>';
+    'Cash savings occur only when actual expenses are reduced. Verify any decision with your own financial review.</p>' +
+    '</section>';
+
+  $('calc-report').innerHTML = exec + details;
 }
 
 function recalc() {
@@ -479,9 +643,11 @@ function recalc() {
   var label = scenarioLabel(pct, state.scenarioId === 'custom');
 
   renderDashboard(costs, v);
-  var sc = renderScenario(costs, v, pct);
-  var best = renderComparison(costs, v, pct, sc, label);
-  renderReport(costs, v, sc, best, label);
+  renderSummary(costs, v, pct, label);
+  renderScenario(costs, v, pct);
+  renderWorthIt(costs, v, pct, label);
+  renderBreakEven(costs, v, pct, label);
+  renderReport(costs, v, pct, label);
 
   results.hidden = false;
   empty.hidden = true;

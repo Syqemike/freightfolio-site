@@ -133,8 +133,33 @@
       </div>
 
       <div id="calc-results" hidden>
-        <!-- DASHBOARD -->
-        <h2 class="results-heading">Your current billing costs</h2>
+        <!-- SUMMARY HERO -->
+        <div class="summary-hero">
+          <p class="kicker kicker-light">Your freight billing cost summary</p>
+          <div class="metric-grid summary-metrics">
+            <div class="metric-card">
+              <p class="metric-label">Current monthly cost</p>
+              <p class="metric-value" id="m-sum-cost">$0.00</p>
+            </div>
+            <div class="metric-card">
+              <p class="metric-label">Current monthly hours</p>
+              <p class="metric-value" id="m-sum-hours">0</p>
+            </div>
+            <div class="metric-card">
+              <p class="metric-label">Hours potentially released</p>
+              <p class="metric-value" id="m-sum-released">0</p>
+            </div>
+            <div class="metric-card">
+              <p class="metric-label">Labor capacity value</p>
+              <p class="metric-value" id="m-sum-value">$0.00</p>
+            </div>
+          </div>
+          <p class="summary-lede" id="summary-text"></p>
+          <p class="fine-note fine-note-light">Modeled improvements are hypothetical illustrations based on your inputs, not verified Freightfolio results or promised savings.</p>
+        </div>
+
+        <!-- 1. CURRENT COSTS -->
+        <h2 class="results-heading">1. Your current costs</h2>
         <div class="metric-grid">
           <div class="metric-card">
             <p class="metric-label">Monthly admin hours</p>
@@ -157,9 +182,9 @@
         <h3>Where the money goes</h3>
         <div id="cost-split" aria-live="polite"></div>
 
-        <!-- SCENARIOS -->
-        <h2 class="results-heading">Explore your potential savings</h2>
-        <p class="section-lede">Switch scenarios above to model different outcomes. These scenarios are illustrative, not verified performance claims.</p>
+        <!-- 2. TIME SAVINGS -->
+        <h2 class="results-heading">2. Your potential time savings</h2>
+        <p class="section-lede">Switch scenarios in Section C above to model different outcomes. Each scenario is a hypothetical assumption, not a promised result.</p>
         <div class="scenario-grid">
           <div id="s-donut" class="donut-wrap"></div>
           <dl class="scenario-figs">
@@ -172,10 +197,24 @@
         <p class="fine-note" id="scenario-note"></p>
         <p class="fine-note"><strong>Labor capacity value vs cash savings:</strong> released hours represent time your team could redirect to other work. Cash savings happen only when you actually reduce payroll, overtime, or contractor spend.</p>
 
-        <!-- COMPARISON -->
-        <h2 class="results-heading">How does Freightfolio compare?</h2>
-        <p class="section-lede">Your estimated document volume is matched against our published plan capacities. A plan is shown only when your volume fits inside its documented limit.</p>
-        <div id="plan-rows" class="plan-grid"></div>
+        <!-- 3. WORTH IT -->
+        <h2 class="results-heading">3. Is Freightfolio worth the cost?</h2>
+        <div class="worth-grid">
+          <div class="worth-card">
+            <h3>Before Freightfolio</h3>
+            <dl class="kv" id="w-before"></dl>
+          </div>
+          <div class="worth-card">
+            <h3>With Freightfolio</h3>
+            <dl class="kv" id="w-with"></dl>
+            <p class="fine-note" id="w-note" hidden></p>
+          </div>
+        </div>
+        <div class="verdict-banner" id="w-verdict" aria-live="polite"></div>
+
+        <!-- 4. BREAK-EVEN -->
+        <h2 class="results-heading">4. Break-even analysis</h2>
+        <div id="breakeven-block"></div>
 
         <!-- REPORT -->
         <div class="report-cta">
