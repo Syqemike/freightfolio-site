@@ -22,6 +22,7 @@ var PLANS = [
 ];
 var PILOT_PRICE = 500;
 var OVERAGE_PER_DOC = 0.40;
+var MANAGED_FROM = 750; /* managed services quoted from $750/mo */
 
 var PRESET_SCENARIOS = [
   { id: 'conservative', label: 'Conservative', pct: 10 },
