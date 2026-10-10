@@ -131,6 +131,28 @@ function recommendPlan(monthlyDocs) {
   return null;
 }
 
+/* Human label for the active scenario, e.g. "Conservative (10%)". */
+function scenarioLabel(pct, isCustom) {
+  if (!isCustom) {
+    for (var i = 0; i < PRESET_SCENARIOS.length; i++) {
+      if (PRESET_SCENARIOS[i].pct === pct) {
+        return PRESET_SCENARIOS[i].label + ' (' + pct + '%)';
+      }
+    }
+  }
+  return 'Custom (' + pct + '%)';
+}
+
+/* Plain-language bottom line for the modeled cost difference.
+   difference = current monthly cost - total modeled cost.
+   Positive means the model comes out cheaper than today. */
+function verdictFor(difference) {
+  if (difference >= 0) {
+    return { cls: 'diff-pos', text: fmtUSD(difference) + '/mo less than today' };
+  }
+  return { cls: 'diff-neg', text: fmtUSD(-difference) + '/mo more than today' };
+}
+
 /* Financial comparison for every plan that fits the volume. */
 function planComparisons(costs, hourlyCost, monthlyDocs, scenarioPct) {
   var sc = scenarioModel(costs, hourlyCost, scenarioPct);
@@ -320,7 +342,7 @@ function renderScenario(costs, v, pct) {
   return sc;
 }
 
-function renderComparison(costs, v, pct, sc) {
+function renderComparison(costs, v, pct, sc, label) {
   var rows = planComparisons(costs, v.hourlyCost, costs.monthlyDocs, pct);
   var wrap = $('plan-rows');
   if (!rows.length) {
@@ -338,23 +360,22 @@ function renderComparison(costs, v, pct, sc) {
   for (var i = 0; i < rows.length; i++) {
     var r = rows[i];
     var plan = r.plan;
-    var diffClass = r.difference >= 0 ? 'diff-pos' : 'diff-neg';
-    var diffText = (r.difference >= 0 ? '' : '-') + fmtUSD(Math.abs(r.difference));
+    var verdict = verdictFor(r.difference);
     html +=
       '<div class="plan-card' + (i === 0 ? ' plan-best' : '') + '">' +
       (i === 0 ? '<p class="plan-fit">Best fit for your volume</p>' : '') +
       '<h3>' + plan.name + '</h3>' +
-      '<p class="plan-cap">' + plan.blurb + '</p>' +
+      '<p class="plan-cap">Fits your estimated ' + fmtInt(costs.monthlyDocs) +
+      ' documents/mo (plan capacity: up to ' + fmtInt(plan.docsCap) + ' docs/mo)</p>' +
       '<dl class="plan-figs">' +
-      '<div><dt>Monthly subscription</dt><dd>' + fmtUSD(plan.monthly) + '/mo' + (plan.note ? ' <span class="plan-note">(' + plan.note + ')</span>' : '') + '</dd></div>' +
-      '<div><dt>One-time setup</dt><dd>' + fmtUSD0(plan.setup) + '</dd></div>' +
-      '<div><dt>Setup amortized (12 mo)</dt><dd>' + fmtUSD(r.setupAmortized) + '/mo</dd></div>' +
-      '<div><dt>Modeled remaining admin labor</dt><dd>' + fmtUSD(r.remainingLaborCost) + '/mo</dd></div>' +
+      '<div><dt>Your current admin cost</dt><dd>' + fmtUSD(costs.monthlyCost) + '/mo</dd></div>' +
+      '<div><dt>Freightfolio subscription</dt><dd>' + fmtUSD(plan.monthly) + '/mo' + (plan.note ? ' <span class="plan-note">(' + plan.note + ')</span>' : '') + '</dd></div>' +
+      '<div><dt>Setup, modeled monthly</dt><dd>' + fmtUSD(r.setupAmortized) + '/mo <span class="plan-note">(' + fmtUSD0(plan.setup) + ' one-time, spread over 12 months)</span></dd></div>' +
+      '<div><dt>Remaining admin labor</dt><dd>' + fmtUSD(r.remainingLaborCost) + '/mo <span class="plan-note">(at the ' + label + ' scenario)</span></dd></div>' +
       '<div class="plan-total"><dt>Total modeled monthly cost</dt><dd>' + fmtUSD(r.totalModeled) + '/mo</dd></div>' +
-      '<div class="plan-diff"><dt>Modeled monthly difference vs today</dt><dd class="' + diffClass + '">' + diffText + '</dd></div>' +
+      '<div class="plan-verdict"><dt>Bottom line</dt><dd class="' + verdict.cls + '">' + verdict.text + '</dd></div>' +
       '</dl>' +
-      '<p class="plan-fine">Modeled difference compares your current estimated admin cost (' + fmtUSD(costs.monthlyCost) +
-      '/mo) with the plan cost plus modeled remaining labor. It is an illustration from your inputs, not a savings guarantee.</p>' +
+      '<p class="plan-fine">Illustrative model using the ' + label + ' scenario: subscription plus amortized setup plus your remaining admin labor, compared with your current estimated admin cost. Released hours are labor capacity value (time your team could redirect), not automatic payroll savings.</p>' +
       '</div>';
   }
   wrap.innerHTML = html;
@@ -362,7 +383,7 @@ function renderComparison(costs, v, pct, sc) {
   return rows[0];
 }
 
-function renderReport(costs, v, sc, bestPlan) {
+function renderReport(costs, v, sc, bestPlan, label) {
   var date = todayStamp();
   function row(k, val) { return '<tr><th scope="row">' + k + '</th><td>' + val + '</td></tr>'; }
   var scenRows = '';
@@ -381,13 +402,18 @@ function renderReport(costs, v, sc, bestPlan) {
   var compareRows;
   if (bestPlan) {
     var p = bestPlan.plan;
+    var verdict = verdictFor(bestPlan.difference);
     compareRows =
-      row('Potentially applicable package', p.name + ' (' + p.blurb + ')') +
-      row('Monthly subscription', fmtUSD(p.monthly) + '/mo' + (p.note ? ' (' + p.note + ')' : '')) +
-      row('One-time setup fee', fmtUSD0(p.setup)) +
-      row('Modeled remaining admin labor', fmtUSD(bestPlan.remainingLaborCost) + '/mo') +
+      row('Recommended package', p.name) +
+      row('Why it fits', 'Your estimated ' + fmtInt(costs.monthlyDocs) +
+        ' documents/mo is within the plan capacity of up to ' + fmtInt(p.docsCap) + ' docs/mo.') +
+      row('Your current monthly admin cost', fmtUSD(costs.monthlyCost)) +
+      row('Freightfolio subscription', fmtUSD(p.monthly) + '/mo' + (p.note ? ' (' + p.note + ')' : '')) +
+      row('Setup fee, modeled monthly', fmtUSD(bestPlan.setupAmortized) + '/mo (' +
+        fmtUSD0(p.setup) + ' one-time, spread over 12 months)') +
+      row('Remaining admin labor', fmtUSD(bestPlan.remainingLaborCost) + '/mo (at the ' + label + ' scenario)') +
       row('Total modeled monthly cost', fmtUSD(bestPlan.totalModeled) + '/mo') +
-      row('Modeled monthly difference vs today', (bestPlan.difference >= 0 ? '' : '-') + fmtUSD(Math.abs(bestPlan.difference)));
+      row('Bottom line', verdict.text + ' (illustrative, not guaranteed savings)');
   } else {
     compareRows = row('Potentially applicable package',
       'None: estimated volume exceeds published plan capacities. Request a free billing assessment for custom pricing.');
@@ -423,7 +449,7 @@ function renderReport(costs, v, sc, bestPlan) {
     '<table class="report-table"><thead><tr><th>Scenario</th><th>Hours released/mo</th><th>Labor capacity value/mo</th><th>Remaining hours/mo</th></tr></thead><tbody>' +
     scenRows + '</tbody></table>' +
     '<h2>4. Freightfolio service comparison</h2>' +
-    '<p class="report-note">Compared at the ' + sc.pct + '% scenario. Setup fee amortized over 12 months for modeling.</p>' +
+    '<p class="report-note">Compared using the ' + label + ' scenario. All figures are illustrative estimates, not guaranteed savings.</p>' +
     '<table class="report-table"><tbody>' + compareRows + '</tbody></table>' +
     '<h2>5. Recommendations</h2><ul class="report-recs">' + recItems + '</ul>' +
     '<h2>6. Disclaimer</h2>' +
@@ -450,11 +476,12 @@ function recalc() {
   var pct = state.scenarioId === 'custom' ? v.scenarioPct :
     PRESET_SCENARIOS.filter(function (s) { return s.id === state.scenarioId; })[0].pct;
   state.customPct = pct;
+  var label = scenarioLabel(pct, state.scenarioId === 'custom');
 
   renderDashboard(costs, v);
   var sc = renderScenario(costs, v, pct);
-  var best = renderComparison(costs, v, pct, sc);
-  renderReport(costs, v, sc, best);
+  var best = renderComparison(costs, v, pct, sc, label);
+  renderReport(costs, v, sc, best, label);
 
   results.hidden = false;
   empty.hidden = true;

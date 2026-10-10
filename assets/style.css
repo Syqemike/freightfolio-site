@@ -360,6 +360,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline
 .plan-figs .plan-diff dd { font-size: 1.15rem; font-weight: 800; }
 .diff-pos { color: #1E7E34; }
 .diff-neg { color: #B42318; }
+.plan-figs .plan-verdict {
+  background: var(--paper); border: 1px solid var(--line); border-radius: 8px;
+  padding: 12px 14px; margin-top: 10px;
+}
+.plan-figs .plan-verdict dt { font-weight: 700; color: var(--navy); }
+.plan-figs .plan-verdict dd { font-size: 1.2rem; font-weight: 800; }
 .plan-fine { font-size: .85rem; color: var(--slate); margin-top: 12px; }
 .plan-custom p { margin-bottom: 16px; }
 
