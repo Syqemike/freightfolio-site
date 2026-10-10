@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a Free Sample Report | Freightfolio</title>
+<meta name="description" content="Request a free Freightfolio sample billing-readiness report. Tell us about your paperwork and we will show you what the service looks like on loads like yours.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://freightfolio.net/request-sample">
+<meta property="og:title" content="Request a Free Sample Report | Freightfolio">
+<meta property="og:description" content="Tell us about your paperwork and we will show you what a Freightfolio billing-readiness report looks like on loads like yours.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://freightfolio.net/request-sample">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css?v=20261009c">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFGYQ0XKBV"></script>
+<script src="/js/ga.js"></script>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="/" aria-label="Freightfolio home">
+      <span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#problem">The problem</a>
+      <a href="/#how">How it works</a>
+      <a href="/#packages">Packages</a>
+      <a href="/billing-readiness-checker">Readiness checker</a>
+      <a href="/freight-billing-calculator">Cost calculator</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-amber btn-sm" href="/#contact">Talk to us</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="section">
+    <div class="container narrow">
+      <p class="kicker">Free sample</p>
+      <h1>See what a Freightfolio report looks like on paperwork like yours.</h1>
+      <p class="section-lede">Tell us where your billing packet breaks down and what you ship. We will reply with a sample billing-readiness report built for loads like yours, plus an honest read on whether the service is worth your money.</p>
+
+      <div class="packet" style="margin-bottom:28px">
+        <h3>What you get</h3>
+        <ul class="checklist">
+          <li><strong>A sample report</strong><span>The real format: what is ready to invoice, what is blocked, and why, built around your operation.</span></li>
+          <li><strong>A straight answer</strong><span>If the pilot is not worth your money for your volume and document mix, we will say so.</span></li>
+          <li><strong>No pitch deck</strong><span>A human reply from hello@freightfolio.net, usually within one business day.</span></li>
+        </ul>
+      </div>
+
+      <noscript>
+        <p class="section-lede"><strong>JavaScript is required</strong> for this form. Prefer email? Write to <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a> directly.</p>
+      </noscript>
+
+      <form id="sample-request-form" class="contact-form" novalidate>
+        <div class="form-row">
+          <label>Your name <span class="req" aria-hidden="true">*</span>
+            <input type="text" id="sr-name" name="name" autocomplete="name" maxlength="100" required>
+            <span class="field-error" id="err-sr-name" hidden></span>
+          </label>
+          <label>Business email <span class="req" aria-hidden="true">*</span>
+            <input type="email" id="sr-email" name="email" autocomplete="email" maxlength="254" placeholder="you@yourcompany.com" required>
+            <span class="field-error" id="err-sr-email" hidden></span>
+          </label>
+        </div>
+        <label>Company
+          <input type="text" id="sr-company" name="company" autocomplete="organization" maxlength="120" placeholder="Optional: helps us tailor the sample">
+          <span class="field-error" id="err-sr-company" hidden></span>
+        </label>
+        <label>What does your paperwork look like today? <span class="req" aria-hidden="true">*</span>
+          <textarea id="sr-message" name="message" rows="5" maxlength="2000" placeholder="Example: We run about 60 loads a month. PODs come back unsigned half the time and our biller spends Fridays chasing drivers." required></textarea>
+          <span class="field-error" id="err-sr-message" hidden></span>
+        </label>
+        <!-- Honeypot: real users never see or fill this. -->
+        <div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden" aria-hidden="true">
+          <label>Website (leave blank)
+            <input type="text" id="sr-website" name="website" tabindex="-1" autocomplete="off">
+          </label>
+        </div>
+        <input type="hidden" id="sr-source" name="source" value="request-sample">
+        <button type="submit" class="btn btn-amber btn-lg" id="sr-submit" data-ga="sample_request_submit">Request my free sample</button>
+        <p class="fineprint">We use your details only to reply to your request. Nothing is shared or sold. See our <a href="/privacy">privacy &amp; data-handling policy</a>. Prefer email? Write to <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a> directly.</p>
+      </form>
+
+      <div id="sr-success" class="packet" hidden>
+        <h3>Request received.</h3>
+        <p>Thanks. We will reply from <strong>hello@freightfolio.net</strong>, usually within one business day, with your sample report. While you wait, you can look at the <a href="/sample-report.xlsx">sample Excel report</a> and the <a href="/sample-dashboard">sample dashboard</a>.</p>
+      </div>
+
+      <div id="sr-error" class="packet" hidden>
+        <h3>Something went wrong.</h3>
+        <p id="sr-error-text">We could not submit your request. Please email <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a> directly and we will take it from there.</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>
+      <p class="tagline">Your loads, billed. Your money, sooner.</p>
+    </div>
+    <div class="footer-contact">
+      <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a><br>
+      <a href="/privacy">Privacy &amp; data handling</a>
+    </div>
+  </div>
+  <div class="container">
+    <p class="fineprint">&copy; 2026 Freightfolio. Example figures on this page are illustrative, not promises or guarantees of results.<br><a href="/billing-readiness-checker">Billing readiness checker</a> &middot; <a href="/freight-billing-calculator">Billing cost calculator</a> &middot; <a href="/privacy">Privacy &amp; data handling</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var form = document.getElementById("sample-request-form");
+  if (!form) return;
+
+  var success = document.getElementById("sr-success");
+  var errorBox = document.getElementById("sr-error");
+  var errorText = document.getElementById("sr-error-text");
+  var submitBtn = document.getElementById("sr-submit");
+
+  var FIELDS = [
+    { id: "sr-name", name: "name", max: 100, required: true },
+    { id: "sr-email", name: "email", max: 254, required: true, email: true },
+    { id: "sr-company", name: "company", max: 120, required: false },
+    { id: "sr-message", name: "message", max: 2000, required: true, minLen: 10 }
+  ];
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Attribute the lead to the page that sent them here (?src=...).
+  try {
+    var src = new URLSearchParams(window.location.search).get("src");
+    if (src && /^[a-z0-9-]{1,40}$/.test(src)) {
+      document.getElementById("sr-source").value = src;
+    }
+  } catch (e) {}
+
+  function setError(field, msg) {
+    var err = document.getElementById("err-" + field.id);
+    if (msg) {
+      err.textContent = msg;
+      err.hidden = false;
+      field.setAttribute("aria-invalid", "true");
+    } else {
+      err.hidden = true;
+      err.textContent = "";
+      field.removeAttribute("aria-invalid");
+    }
+  }
+
+  function validateField(field) {
+    var input = document.getElementById(field.id);
+    var value = input.value.trim();
+    if (field.required && !value) {
+      setError(input, "This field is required.");
+      return false;
+    }
+    if (value && field.email && !EMAIL_RE.test(value)) {
+      setError(input, "Please enter a valid email address.");
+      return false;
+    }
+    if (value && field.minLen && value.length < field.minLen) {
+      setError(input, "Please write a little more (at least " + field.minLen + " characters).");
+      return false;
+    }
+    if (value.length > field.max) {
+      setError(input, "Please keep this under " + field.max + " characters.");
+      return false;
+    }
+    setError(input, null);
+    return true;
+  }
+
+  FIELDS.forEach(function (f) {
+    var input = document.getElementById(f.id);
+    input.addEventListener("blur", function () { validateField(f); });
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    errorBox.hidden = true;
+
+    var valid = FIELDS.map(validateField).every(Boolean);
+    if (!valid) {
+      var firstBad = document.querySelector("#sample-request-form [aria-invalid]");
+      if (firstBad) firstBad.focus();
+      return;
+    }
+
+    var payload = {
+      name: document.getElementById("sr-name").value.trim(),
+      email: document.getElementById("sr-email").value.trim(),
+      company: document.getElementById("sr-company").value.trim(),
+      message: document.getElementById("sr-message").value.trim(),
+      website: document.getElementById("sr-website").value,
+      source: document.getElementById("sr-source").value
+    };
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    fetch("/api/sample-request", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    })
+      .then(function (res) { return res.json().catch(function () { return {}; }); })
+      .then(function (data) {
+        if (data && data.ok) {
+          form.hidden = true;
+          success.hidden = false;
+          success.scrollIntoView({ behavior: "smooth", block: "start" });
+          if (window.gtag) gtag("event", "sample_request_success", { event_category: "lead" });
+        } else {
+          var msg = (data && data.message) ||
+            (data && data.error === "service_not_configured"
+              ? "Our request form is not configured yet. Please email hello@freightfolio.net directly and we will take it from there."
+              : null) ||
+            "We could not submit your request. Please email hello@freightfolio.net directly and we will take it from there.";
+          errorText.innerHTML = "";
+          errorText.appendChild(document.createTextNode(msg.split("hello@freightfolio.net")[0]));
+          var a = document.createElement("a");
+          a.href = "mailto:hello@freightfolio.net";
+          a.textContent = "hello@freightfolio.net";
+          errorText.appendChild(a);
+          errorText.appendChild(document.createTextNode(msg.split("hello@freightfolio.net")[1] || ""));
+          errorBox.hidden = false;
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Request my free sample";
+        }
+      })
+      .catch(function () {
+        errorBox.hidden = false;
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Request my free sample";
+      });
+  });
+})();
+</script>
+
+</body>
+</html>
