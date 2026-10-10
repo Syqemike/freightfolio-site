@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freight Billing Cost &amp; ROI Calculator | Freightfolio</title>
+<meta name="description" content="Calculate how much time and money your business spends preparing freight paperwork and resolving billing exceptions. Free interactive cost and ROI calculator from Freightfolio.">
+<link rel="canonical" href="https://freightfolio.net/freight-billing-calculator">
+<meta property="og:title" content="Freight Billing Cost &amp; ROI Calculator | Freightfolio">
+<meta property="og:description" content="Find out how much time and money your business spends preparing shipment paperwork and resolving billing exceptions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://freightfolio.net/freight-billing-calculator">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFGYQ0XKBV"></script>
+<script src="/js/ga.js"></script>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="/" aria-label="Freightfolio home">
+      <span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#problem">The problem</a>
+      <a href="/#how">How it works</a>
+      <a href="/#packages">Packages</a>
+      <a href="/billing-readiness-checker">Readiness checker</a>
+      <a href="/freight-billing-calculator" aria-current="page">Cost calculator</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-amber btn-sm" href="/#contact">Talk to us</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- INTRO -->
+  <section class="section no-print" id="calc-intro">
+    <div class="container narrow">
+      <p class="kicker">Free tool</p>
+      <h1>How Much Is Freight Billing Costing Your Business?</h1>
+      <p class="section-lede">Calculate how much time and money your business spends preparing freight paperwork, correcting billing issues, and managing incomplete shipment documentation.</p>
+      <p>Discover your estimated administrative costs and explore how Freightfolio could help reduce repetitive billing work. Everything runs in your browser. Nothing you enter is stored or sent anywhere.</p>
+    </div>
+  </section>
+
+  <!-- CALCULATOR -->
+  <section class="section section-alt no-print" id="calc-section">
+    <div class="container narrow">
+      <h2>Your freight operation</h2>
+      <p class="section-lede">Enter your numbers. Results update as you type.</p>
+
+      <noscript>
+        <style>#calc-form{display:none!important}</style>
+        <p class="section-lede"><strong>JavaScript is required.</strong> The billing cost calculator runs entirely in your browser, and nothing you enter is stored or sent anywhere. Please enable JavaScript and reload this page to use it.</p>
+      </noscript>
+
+      <form id="calc-form" class="contact-form calc-form" method="get" action="/freight-billing-calculator" novalidate>
+
+        <fieldset class="calc-group">
+          <legend>Section A. Freight operations</legend>
+          <div class="form-row">
+            <label>Monthly shipment volume
+              <span class="field-hint">How many loads does your company process each month?</span>
+              <input type="number" id="loads" name="loads" value="200" min="0" max="100000" step="1" inputmode="numeric" required>
+              <span class="field-error" id="err-loads" hidden></span>
+            </label>
+            <label>Average documents per load
+              <span class="field-hint">Approximately how many documents does your team handle per shipment?</span>
+              <input type="number" id="docsPerLoad" name="docsPerLoad" value="3" min="1" max="50" step="1" inputmode="numeric" required>
+              <span class="field-error" id="err-docsPerLoad" hidden></span>
+            </label>
+          </div>
+          <label>Average billing preparation time (minutes per load)
+            <span class="field-hint">Minutes your team spends collecting, checking, organizing, and preparing paperwork for each load.</span>
+            <input type="number" id="minutesPerLoad" name="minutesPerLoad" value="15" min="0" max="480" step="1" inputmode="numeric" required>
+            <span class="field-error" id="err-minutesPerLoad" hidden></span>
+          </label>
+        </fieldset>
+
+        <fieldset class="calc-group">
+          <legend>Section B. Administrative costs</legend>
+          <label>Hourly administrative labor cost (USD)
+            <span class="field-hint">Your estimated fully burdened hourly administrative labor cost.
+              <span class="tip" tabindex="0" title="Fully burdened labor can include wages, benefits, payroll taxes, and other employment-related costs." aria-label="What does fully burdened mean? Fully burdened labor can include wages, benefits, payroll taxes, and other employment-related costs.">?</span>
+            </span>
+            <input type="number" id="hourlyCost" name="hourlyCost" value="25" min="0" max="1000" step="0.5" inputmode="decimal" required>
+            <span class="field-error" id="err-hourlyCost" hidden></span>
+          </label>
+          <div class="form-row">
+            <label>Loads requiring rework (%)
+              <span class="field-hint">Share of loads needing extra admin work for missing paperwork, incorrect information, or billing discrepancies.</span>
+              <input type="number" id="reworkPct" name="reworkPct" value="15" min="0" max="100" step="1" inputmode="decimal" required>
+              <span class="field-error" id="err-reworkPct" hidden></span>
+            </label>
+            <label>Additional time per rework load (minutes)
+              <span class="field-hint">Average extra minutes spent resolving issues on each affected load.</span>
+              <input type="number" id="reworkMinutes" name="reworkMinutes" value="20" min="0" max="480" step="1" inputmode="numeric" required>
+              <span class="field-error" id="err-reworkMinutes" hidden></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="calc-group">
+          <legend>Section C. Improvement assumptions</legend>
+          <p class="field-hint">Select a hypothetical reduction in administrative processing time. These are illustrative modeling assumptions, not verified Freightfolio performance results or promised savings.</p>
+          <div class="scenario-pills" role="group" aria-label="Improvement scenario">
+            <button type="button" class="scenario-pill" data-scenario="conservative" aria-pressed="false">Conservative<br><strong>10%</strong></button>
+            <button type="button" class="scenario-pill" data-scenario="moderate" aria-pressed="true">Moderate<br><strong>25%</strong></button>
+            <button type="button" class="scenario-pill" data-scenario="optimistic" aria-pressed="false">Optimistic<br><strong>40%</strong></button>
+            <button type="button" class="scenario-pill" data-scenario="custom" aria-pressed="false">Custom<br><strong>you set</strong></button>
+          </div>
+          <div id="custom-pct-wrap" hidden>
+            <label>Custom improvement percentage (%)
+              <input type="number" id="customPct" name="customPct" value="25" min="1" max="90" step="1" inputmode="numeric">
+              <span class="field-error" id="err-customPct" hidden></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="calc-actions">
+          <button type="button" class="btn btn-outline" id="reset-btn">Reset to defaults</button>
+        </div>
+      </form>
+
+      <div id="calc-empty" class="calc-empty" hidden>
+        <p><strong>Enter valid numbers above</strong> to see your cost estimate. Check the messages next to any highlighted field.</p>
+      </div>
+
+      <div id="calc-results" hidden>
+        <!-- DASHBOARD -->
+        <h2 class="results-heading">Your current billing costs</h2>
+        <div class="metric-grid">
+          <div class="metric-card">
+            <p class="metric-label">Monthly admin hours</p>
+            <p class="metric-value" id="m-hours">0</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-label">Monthly admin labor cost</p>
+            <p class="metric-value" id="m-monthly">$0.00</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-label">Annual admin labor cost</p>
+            <p class="metric-value" id="m-annual">$0.00</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-label">Admin cost per load</p>
+            <p class="metric-value" id="m-perload">$0.00</p>
+          </div>
+        </div>
+
+        <h3>Where the money goes</h3>
+        <div id="cost-split" aria-live="polite"></div>
+
+        <!-- SCENARIOS -->
+        <h2 class="results-heading">Explore your potential savings</h2>
+        <p class="section-lede">Switch scenarios above to model different outcomes. These scenarios are illustrative, not verified performance claims.</p>
+        <div class="scenario-grid">
+          <div id="s-donut" class="donut-wrap"></div>
+          <dl class="scenario-figs">
+            <div><dt>Potential hours released / month</dt><dd id="s-released">0</dd></div>
+            <div><dt>Potential hours released / year</dt><dd id="s-released-annual">0</dd></div>
+            <div><dt>Modeled labor capacity value / month</dt><dd id="s-value">$0.00</dd></div>
+            <div><dt>Remaining admin workload / month</dt><dd id="s-remaining">0 hrs</dd></div>
+          </dl>
+        </div>
+        <p class="fine-note" id="scenario-note"></p>
+        <p class="fine-note"><strong>Labor capacity value vs cash savings:</strong> released hours represent time your team could redirect to other work. Cash savings happen only when you actually reduce payroll, overtime, or contractor spend.</p>
+
+        <!-- COMPARISON -->
+        <h2 class="results-heading">How does Freightfolio compare?</h2>
+        <p class="section-lede">Your estimated document volume is matched against our published plan capacities. A plan is shown only when your volume fits inside its documented limit.</p>
+        <div id="plan-rows" class="plan-grid"></div>
+
+        <!-- REPORT -->
+        <div class="report-cta">
+          <button type="button" class="btn btn-amber" id="print-btn">Download my freight billing cost report</button>
+          <p class="fine-note">Generates a branded PDF report via your browser's print dialog. Nothing is uploaded.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINT-ONLY REPORT -->
+  <section id="calc-report" class="print-only" aria-hidden="true"></section>
+
+  <!-- CONVERSION -->
+  <section class="section no-print" id="calc-convert">
+    <div class="container narrow">
+      <p class="kicker">Next step</p>
+      <h2>What Could Your Team Do With Less Billing Paperwork?</h2>
+      <p class="section-lede">Freightfolio helps freight businesses organize documentation, identify missing information, and prepare billing-ready packets without requiring another complicated software platform.</p>
+      <div class="cta-row">
+        <a class="btn btn-amber" href="https://buy.stripe.com/aFa6oGabx5imdFLcNnabK00" target="_blank" rel="noopener" data-ga="billing_calculator_pilot_click">Start your $500 Freightfolio pilot</a>
+        <a class="btn btn-outline" href="/#contact" data-ga="billing_calculator_contact_click">Request a free billing assessment</a>
+      </div>
+      <p><a href="/billing-readiness-checker" data-ga="billing_calculator_checker_click">Check your billing readiness</a> with our other free tool, or <a href="/#contact" data-ga="billing_calculator_contact_click">talk to us</a> about reducing your billing workload.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>
+      <p class="tagline">Your loads, billed. Your money, sooner.</p>
+    </div>
+    <div class="footer-contact">
+      <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a>
+    </div>
+  </div>
+  <div class="container">
+    <p class="fineprint">&copy; 2026 Freightfolio. Example figures on this page are illustrative, not promises or guarantees of results.<br><a href="/freight-broker-billing-service">Freight broker billing service</a> &middot; <a href="/freight-invoice-paperwork-help">Freight invoice paperwork help</a> &middot; <a href="/privacy">Privacy &amp; data handling</a></p>
+  </div>
+</footer>
+
+<script src="/js/billing-calculator.js"></script>
+</body>
+</html>

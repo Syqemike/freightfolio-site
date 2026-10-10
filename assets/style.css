@@ -281,3 +281,103 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline
   .print-brand .brand-word { color: var(--navy); }
   .result-banner { break-inside: avoid; }
 }
+
+/* Freight Billing Cost & ROI Calculator */
+.calc-form fieldset.calc-group {
+  border: 1px solid var(--line); border-radius: 12px;
+  padding: 22px; margin-bottom: 20px; background: #fff; min-width: 0;
+}
+.calc-form fieldset.calc-group legend { font-weight: 700; color: var(--navy); padding: 0 8px; }
+.calc-form .field-hint { display: block; font-weight: 400; font-size: .88rem; color: var(--slate); margin: 2px 0 4px; }
+.calc-form label { margin-bottom: 18px; }
+.field-error { display: block; color: #B42318; font-size: .88rem; font-weight: 600; margin-top: 4px; }
+.tip {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--navy); color: #fff; font-size: .75rem; font-weight: 700;
+  cursor: help; margin-left: 4px; vertical-align: middle;
+}
+.scenario-pills { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0 6px; }
+.scenario-pill {
+  flex: 1 1 120px; padding: 12px 10px; border: 1.5px solid #C9C2B4; border-radius: 8px;
+  background: #fff; color: var(--navy); font-size: .9rem; cursor: pointer; font-family: inherit;
+}
+.scenario-pill strong { font-size: 1.15rem; }
+.scenario-pill:hover { border-color: var(--amber-dark); }
+.scenario-pill.active { border-color: var(--navy); background: var(--navy); color: #fff; }
+.scenario-pill.active strong { color: var(--amber); }
+.scenario-pill:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+#custom-pct-wrap { margin-top: 12px; }
+.calc-actions { margin-top: 8px; }
+.calc-empty { background: #FEF6E7; border: 1px solid var(--amber); border-radius: 12px; padding: 20px; margin-top: 20px; }
+
+.results-heading { margin-top: 44px; }
+.metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 18px 0 8px; }
+.metric-card {
+  background: #fff; border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 16px; text-align: left;
+}
+.metric-card:first-child { border-top: 4px solid var(--navy); }
+.metric-label { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; color: var(--slate); margin-bottom: 8px; }
+.metric-value { font-size: 1.7rem; font-weight: 800; color: var(--navy); }
+
+.cost-bar { width: 100%; height: 22px; margin: 10px 0 4px; }
+.split-legend { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: .92rem; color: #374151; margin-top: 12px; }
+.sw { display: inline-block; width: 14px; height: 14px; border-radius: 4px; margin-right: 6px; vertical-align: baseline; }
+.sw-navy { background: var(--navy); }
+.sw-amber { background: var(--amber); }
+
+.scenario-grid { display: grid; grid-template-columns: 180px 1fr; gap: 24px; align-items: center; margin: 18px 0 8px; }
+.donut-wrap { max-width: 180px; }
+.donut { width: 100%; height: auto; }
+.donut-label { font-size: 9px; font-weight: 800; fill: var(--navy); }
+.scenario-figs { display: grid; gap: 10px; }
+.scenario-figs > div { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+.scenario-figs dt { color: var(--slate); font-size: .92rem; }
+.scenario-figs dd { font-weight: 800; color: var(--navy); font-size: 1.05rem; margin: 0; }
+.fine-note { font-size: .88rem; color: var(--slate); margin-top: 10px; }
+
+.plan-grid { display: grid; gap: 16px; margin: 18px 0 8px; }
+.plan-card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 24px; }
+.plan-card.plan-best { border: 2px solid var(--amber); }
+.plan-fit {
+  display: inline-block; background: var(--amber); color: var(--navy);
+  font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .6px;
+  padding: 4px 12px; border-radius: 999px; margin-bottom: 10px;
+}
+.plan-card h3 { margin-bottom: 2px; }
+.plan-cap { color: var(--slate); font-size: .92rem; margin-bottom: 14px; }
+.plan-note { font-size: .85rem; color: var(--slate); font-weight: 400; }
+.plan-figs > div { display: flex; justify-content: space-between; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.plan-figs dt { color: var(--slate); font-size: .92rem; }
+.plan-figs dd { font-weight: 700; color: var(--navy); margin: 0; text-align: right; }
+.plan-figs .plan-total dd { font-size: 1.15rem; font-weight: 800; }
+.plan-figs .plan-diff dd { font-size: 1.15rem; font-weight: 800; }
+.diff-pos { color: #1E7E34; }
+.diff-neg { color: #B42318; }
+.plan-fine { font-size: .85rem; color: var(--slate); margin-top: 12px; }
+.plan-custom p { margin-bottom: 16px; }
+
+.report-cta { margin-top: 36px; text-align: center; }
+.report-cta .btn { font-size: 1.05rem; }
+
+/* Printable cost report */
+.report-table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: .92rem; }
+.report-table th, .report-table td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; }
+.report-table th { background: var(--paper); color: var(--navy); }
+.report-table thead th { background: var(--navy); color: #fff; }
+.report-recs { margin: 8px 0 20px 22px; }
+.report-recs li { margin-bottom: 8px; }
+.report-note { font-size: .9rem; color: var(--slate); }
+.report-date { color: var(--slate); font-size: .9rem; }
+#calc-report h2 { break-after: avoid; margin-top: 28px; }
+#calc-report table, #calc-report ul { break-inside: avoid; }
+
+@media (max-width: 860px) {
+  .metric-grid { grid-template-columns: 1fr 1fr; }
+  .scenario-grid { grid-template-columns: 1fr; }
+  .donut-wrap { max-width: 150px; }
+}
+@media (max-width: 480px) {
+  .metric-grid { grid-template-columns: 1fr; }
+}
