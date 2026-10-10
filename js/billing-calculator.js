@@ -521,13 +521,12 @@ function init() {
   }
 
   $('reset-btn').addEventListener('click', function () {
-    els.form.reset();
-    /* restore defaults after native reset */
-    setTimeout(function () {
-      setScenario('moderate');
-      showErrors({});
-      recalc();
-    }, 0);
+    /* Explicit defaults (not form.reset()) so the reset cannot fail silently. */
+    var defaults = { loads: 200, docsPerLoad: 3, minutesPerLoad: 15,
+                     hourlyCost: 25, reworkPct: 15, reworkMinutes: 20, customPct: 25 };
+    for (var k in defaults) { if (els[k]) els[k].value = defaults[k]; }
+    showErrors({});
+    setScenario('moderate'); /* also re-runs the calculation */
   });
 
   $('print-btn').addEventListener('click', function () {
