@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Freight Billing Readiness Checker | Freightfolio</title>
+<meta name="description" content="Use Freightfolio's free freight billing readiness checker to identify missing shipment paperwork, PODs, BOLs, invoices, and potential billing exceptions.">
+<link rel="canonical" href="https://freightfolio.net/billing-readiness-checker">
+<meta property="og:title" content="Free Freight Billing Readiness Checker | Freightfolio">
+<meta property="og:description" content="Check your shipment documentation in seconds. Identify missing paperwork, potential billing issues, and items that may delay invoicing.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://freightfolio.net/billing-readiness-checker">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFGYQ0XKBV"></script>
+<script src="/js/ga.js"></script>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="/" aria-label="Freightfolio home">
+      <span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#problem">The problem</a>
+      <a href="/#how">How it works</a>
+      <a href="/#packages">Packages</a>
+      <a href="/billing-readiness-checker" aria-current="page">Readiness checker</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-amber btn-sm" href="/#contact">Talk to us</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- INTRO -->
+  <section class="section" id="checker-intro">
+    <div class="container narrow">
+      <p class="kicker">Free tool</p>
+      <h1 id="checker-heading">Is Your Freight Paperwork Ready to Bill?</h1>
+      <p class="section-lede">Check your shipment documentation in seconds. Identify missing paperwork, potential billing issues, and items that may delay invoicing.</p>
+      <p>Freightfolio helps freight brokers turn scattered shipment documents into organized, billing-ready packets.</p>
+    </div>
+  </section>
+
+  <!-- CHECKER FORM -->
+  <section class="section section-alt no-print" id="checker-section">
+    <div class="container narrow">
+      <h2>Shipment information</h2>
+      <p class="section-lede">Answer for one load. Nothing here is stored or sent anywhere, and no account is needed.</p>
+
+      <form id="readiness-form" class="contact-form" action="#" method="get">
+        <div class="form-row">
+          <label>Load number <span class="field-hint" style="font-weight:400">(optional)</span>
+            <input type="text" id="load_number" name="load_number" autocomplete="off" maxlength="40">
+          </label>
+          <label>Shipment amount <span class="field-hint" style="font-weight:400">(optional)</span>
+            <input type="number" id="amount" name="amount" min="0" step="0.01" inputmode="decimal" placeholder="0.00">
+          </label>
+        </div>
+
+        <fieldset class="field-group">
+          <legend>What best describes your company? <span class="req" aria-hidden="true">*</span></legend>
+          <div class="choice-row">
+            <label class="choice"><input type="radio" name="customer_type" value="broker" required><span>Freight Broker</span></label>
+            <label class="choice"><input type="radio" name="customer_type" value="forwarder" required><span>Freight Forwarder</span></label>
+            <label class="choice"><input type="radio" name="customer_type" value="carrier" required><span>Carrier</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>Which documents do you have for this load? <span class="req" aria-hidden="true">*</span></legend>
+          <div class="doc-q">
+            <span class="doc-q-label" id="q-rc">Rate confirmation</span>
+            <div class="choice-row" role="radiogroup" aria-labelledby="q-rc">
+              <label class="choice"><input type="radio" name="rate_confirmation" value="yes" required><span>Yes</span></label>
+              <label class="choice"><input type="radio" name="rate_confirmation" value="no"><span>No</span></label>
+              <label class="choice"><input type="radio" name="rate_confirmation" value="unsure"><span>Unsure</span></label>
+            </div>
+          </div>
+          <div class="doc-q">
+            <span class="doc-q-label" id="q-bol">Bill of lading (BOL)</span>
+            <div class="choice-row" role="radiogroup" aria-labelledby="q-bol">
+              <label class="choice"><input type="radio" name="bol" value="yes" required><span>Yes</span></label>
+              <label class="choice"><input type="radio" name="bol" value="no"><span>No</span></label>
+              <label class="choice"><input type="radio" name="bol" value="unsure"><span>Unsure</span></label>
+            </div>
+          </div>
+          <div class="doc-q">
+            <span class="doc-q-label" id="q-pod">Proof of delivery (POD)</span>
+            <div class="choice-row" role="radiogroup" aria-labelledby="q-pod">
+              <label class="choice"><input type="radio" name="pod" value="yes" required><span>Yes</span></label>
+              <label class="choice"><input type="radio" name="pod" value="no"><span>No</span></label>
+              <label class="choice"><input type="radio" name="pod" value="unsure"><span>Unsure</span></label>
+            </div>
+          </div>
+          <div class="doc-q">
+            <span class="doc-q-label" id="q-ci">Carrier invoice</span>
+            <div class="choice-row" role="radiogroup" aria-labelledby="q-ci">
+              <label class="choice"><input type="radio" name="carrier_invoice" value="yes" required><span>Yes</span></label>
+              <label class="choice"><input type="radio" name="carrier_invoice" value="no"><span>No</span></label>
+              <label class="choice"><input type="radio" name="carrier_invoice" value="unsure"><span>Unsure</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>Are additional charges involved on this load? <span class="req" aria-hidden="true">*</span></legend>
+          <p class="field-hint">Detention, layover, lumper fees, or other accessorials.</p>
+          <div class="choice-row">
+            <label class="choice"><input type="radio" name="additional_charges" value="yes" required><span>Yes</span></label>
+            <label class="choice"><input type="radio" name="additional_charges" value="no"><span>No</span></label>
+            <label class="choice"><input type="radio" name="additional_charges" value="unsure"><span>Unsure</span></label>
+          </div>
+        </fieldset>
+
+        <div id="conditional-charges" hidden>
+          <fieldset class="field-group" id="accessorial-types" hidden>
+            <legend>Which accessorial charges apply? <span class="field-hint" style="font-weight:400">(select all that apply)</span></legend>
+            <div class="choice-row">
+              <label class="choice"><input type="checkbox" name="accessorials" value="detention"><span>Detention</span></label>
+              <label class="choice"><input type="checkbox" name="accessorials" value="layover"><span>Layover</span></label>
+              <label class="choice"><input type="checkbox" name="accessorials" value="lumper"><span>Lumper fees</span></label>
+              <label class="choice"><input type="checkbox" name="accessorials" value="other"><span>Other accessorials</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="field-group">
+            <legend>Are supporting receipts available for these charges? <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choice-row">
+              <label class="choice"><input type="radio" name="receipts" value="yes"><span>Yes</span></label>
+              <label class="choice"><input type="radio" name="receipts" value="no"><span>No</span></label>
+              <label class="choice"><input type="radio" name="receipts" value="na"><span>Not applicable</span></label>
+              <label class="choice"><input type="radio" name="receipts" value="unsure"><span>Unsure</span></label>
+            </div>
+          </fieldset>
+        </div>
+
+        <button type="submit" class="btn btn-amber btn-lg">Check billing readiness</button>
+        <p class="fineprint">No account needed. Nothing you enter is stored or sent anywhere. Results are preliminary.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="section" id="results-section" hidden>
+    <div class="container narrow">
+      <div class="print-only print-brand">
+        <span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>
+        <p><strong>Shipment Billing Assessment</strong></p>
+      </div>
+      <div aria-live="polite" id="results-live">
+        <p class="kicker">Shipment billing assessment</p>
+        <h2 id="results-title">Your billing readiness results</h2>
+        <p class="result-meta" id="result-meta"></p>
+        <div class="result-banner" id="result-banner" data-status="green">
+          <span class="result-icon" id="result-icon" aria-hidden="true"></span>
+          <div>
+            <p class="result-status" id="result-status"></p>
+            <p class="result-summary" id="result-summary"></p>
+          </div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-labels"><span>Readiness</span><span id="progress-pct"></span></div>
+          <div class="progress-track" role="progressbar" aria-label="Billing readiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+        </div>
+        <h3>Document checklist</h3>
+        <ul class="result-checklist" id="result-checklist"></ul>
+        <p class="result-counts" id="result-counts"></p>
+        <h3>Recommended next steps</h3>
+        <ol class="result-actions" id="result-actions"></ol>
+        <p class="fineprint" id="result-disclaimer"></p>
+        <div class="cta-row no-print">
+          <button type="button" class="btn btn-outline" id="btn-again">Check another load</button>
+          <button type="button" class="btn btn-outline" id="btn-print">Print or save results as PDF</button>
+        </div>
+        <div class="cta-row no-print">
+          <a class="btn btn-amber" id="btn-assessment" href="https://freightfolio.net/#contact">Get a free billing assessment</a>
+          <a class="btn btn-outline" id="btn-pilot" href="https://buy.stripe.com/aFa6oGabx5imdFLcNnabK00" target="_blank" rel="noopener">Start your $500 pilot</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LET FREIGHTFOLIO HANDLE IT -->
+  <section class="section section-alt no-print" id="paperwork-section">
+    <div class="container">
+      <p class="kicker">Done for you</p>
+      <h2>Let Freightfolio Handle the Paperwork</h2>
+      <p class="section-lede">Stop chasing scattered paperwork. Freightfolio organizes your freight documents, identifies missing information, and prepares billing-ready packets so your team can focus on moving freight.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Save Administrative Time</h3>
+          <p>Reduce repetitive document organization and billing preparation work. Your team stops re-keying and starts moving freight.</p>
+        </div>
+        <div class="card">
+          <h3>Identify Missing Documentation</h3>
+          <p>Spot paperwork gaps and exceptions before preparing invoices, while there is still time to chase them down.</p>
+        </div>
+        <div class="card">
+          <h3>Improve Billing Visibility</h3>
+          <p>Understand which loads need attention and what is holding up the billing process, every single week.</p>
+        </div>
+      </div>
+      <div class="cta-row" style="margin-top:28px">
+        <a class="btn btn-amber" href="https://freightfolio.net/#contact">Request a free billing assessment</a>
+        <a class="btn btn-outline" href="https://buy.stripe.com/aFa6oGabx5imdFLcNnabK00" target="_blank" rel="noopener">Start your $500 pilot</a>
+      </div>
+      <p class="fineprint">Prefer email? Write to <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a> directly.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>
+      <p class="tagline">Your loads, billed. Your money, sooner.</p>
+    </div>
+    <div class="footer-contact">
+      <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a>
+    </div>
+  </div>
+  <div class="container">
+    <p class="fineprint">&copy; 2026 Freightfolio. Example figures on this page are illustrative, not promises or guarantees of results.<br><a href="/freight-broker-billing-service">Freight broker billing service</a> &middot; <a href="/freight-invoice-paperwork-help">Freight invoice paperwork help</a> &middot; <a href="/privacy">Privacy &amp; data handling</a></p>
+  </div>
+</footer>
+
+<script src="/js/readiness-checker.js"></script>
+</body>
+</html>

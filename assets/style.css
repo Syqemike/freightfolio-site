@@ -218,3 +218,66 @@ details p { padding: 0 22px 20px; color: var(--slate); }
   .pilot-facts { grid-template-columns: 1fr; }
   .cta-row .btn { width: 100%; text-align: center; }
 }
+
+/* Billing Readiness Checker */
+.field-group { border: 1px solid var(--line); border-radius: 12px; padding: 22px; margin-bottom: 20px; background: #fff; min-width: 0; }
+.field-group legend { font-weight: 700; color: var(--navy); padding: 0 8px; }
+.field-hint { color: var(--slate); font-size: .92rem; margin-bottom: 12px; }
+.choice-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.contact-form label.choice { display: inline-flex; margin-bottom: 0; }
+.choice {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border: 1.5px solid #C9C2B4; border-radius: 8px;
+  cursor: pointer; font-weight: 600; font-size: .95rem; background: #fff; color: #1F2937;
+}
+.choice input { width: 18px; height: 18px; accent-color: var(--amber-dark); margin: 0; flex-shrink: 0; }
+.choice:has(input:checked) { border-color: var(--amber-dark); background: #FEF6E7; color: var(--navy); }
+.choice:has(input:focus-visible) { outline: 2px solid var(--amber); outline-offset: 2px; }
+.doc-q { margin-bottom: 16px; }
+.doc-q:last-child { margin-bottom: 0; }
+.doc-q-label { display: block; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
+.req { color: #B42318; }
+button.btn { cursor: pointer; font-family: inherit; }
+.btn-lg { font-size: 1.1rem; padding: 16px 34px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.text-center { text-align: center; }
+.cta-row.center { justify-content: center; }
+
+/* Results dashboard */
+.result-banner { display: flex; gap: 16px; align-items: flex-start; border-radius: 12px; padding: 22px 24px; margin: 24px 0; border: 2px solid; }
+.result-banner[data-status="green"] { background: #E6F4EA; border-color: #1E7E34; }
+.result-banner[data-status="yellow"] { background: #FEF6E7; border-color: var(--amber-dark); }
+.result-banner[data-status="red"] { background: #FDECEA; border-color: #B42318; }
+.result-icon { font-size: 2rem; line-height: 1.2; }
+.result-status { font-weight: 800; font-size: 1.1rem; letter-spacing: .5px; margin-bottom: 4px; }
+.result-banner[data-status="green"] .result-status { color: #1E7E34; }
+.result-banner[data-status="yellow"] .result-status { color: #92610A; }
+.result-banner[data-status="red"] .result-status { color: #B42318; }
+.result-summary { color: #1F2937; margin: 0; }
+.result-meta { color: var(--slate); font-size: .95rem; margin-bottom: 8px; }
+.progress-wrap { margin: 20px 0 28px; }
+.progress-labels { display: flex; justify-content: space-between; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+.progress-track { height: 14px; background: #E9E2D4; border-radius: 7px; overflow: hidden; }
+.progress-fill { height: 100%; width: 0; background: linear-gradient(90deg, var(--amber), var(--amber-dark)); border-radius: 7px; transition: width .5s ease; }
+.result-checklist { list-style: none; margin-bottom: 8px; }
+.result-checklist li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px dotted #C9C2B4; }
+.doc-name { font-weight: 600; color: var(--navy); }
+.badge { display: inline-block; padding: 4px 12px; border-radius: 999px; font-size: .82rem; font-weight: 700; white-space: nowrap; }
+.badge-ok { background: #E6F4EA; color: #1E7E34; }
+.badge-missing { background: #FDECEA; color: #B42318; }
+.badge-review { background: #FEF6E7; color: #92610A; }
+.result-counts { color: var(--slate); font-size: .95rem; margin: 12px 0 24px; }
+.result-actions { margin: 0 0 24px 22px; }
+.result-actions li { margin-bottom: 10px; }
+.result-actions .action-note { display: block; font-size: .9rem; color: var(--slate); }
+
+/* Print: clean branded results sheet */
+.print-only { display: none; }
+@media print {
+  .site-nav, .site-footer, .no-print { display: none !important; }
+  #results-section { display: block !important; padding-top: 0; }
+  body { background: #fff; }
+  .print-only { display: block; }
+  .print-brand .brand-word { color: var(--navy); }
+  .result-banner { break-inside: avoid; }
+}
