@@ -39,7 +39,7 @@
 <main id="top">
 
   <!-- INTRO -->
-  <section class="section" id="checker-intro">
+  <section class="section no-print" id="checker-intro">
     <div class="container narrow">
       <p class="kicker">Free tool</p>
       <h1 id="checker-heading">Is Your Freight Paperwork Ready to Bill?</h1>
@@ -53,6 +53,11 @@
     <div class="container narrow">
       <h2>Shipment information</h2>
       <p class="section-lede">Answer for one load. Nothing here is stored or sent anywhere, and no account is needed.</p>
+
+      <noscript>
+        <style>#readiness-form{display:none!important}</style>
+        <p class="section-lede"><strong>JavaScript is required.</strong> The billing readiness checker runs entirely in your browser, and nothing you enter is stored or sent anywhere. Please enable JavaScript and reload this page to use it.</p>
+      </noscript>
 
       <form id="readiness-form" class="contact-form" action="#" method="get">
         <div class="form-row">
@@ -97,6 +102,16 @@
               <label class="choice"><input type="radio" name="pod" value="yes" required><span>Yes</span></label>
               <label class="choice"><input type="radio" name="pod" value="no"><span>No</span></label>
               <label class="choice"><input type="radio" name="pod" value="unsure"><span>Unsure</span></label>
+            </div>
+          </div>
+          <div id="conditional-pod" hidden>
+            <div class="doc-q">
+              <span class="doc-q-label" id="q-pod-req">Does your customer require a signed POD to pay the invoice?</span>
+              <div class="choice-row" role="radiogroup" aria-labelledby="q-pod-req">
+                <label class="choice"><input type="radio" name="pod_required" value="yes"><span>Yes</span></label>
+                <label class="choice"><input type="radio" name="pod_required" value="no"><span>No</span></label>
+                <label class="choice"><input type="radio" name="pod_required" value="unsure"><span>Unsure</span></label>
+              </div>
             </div>
           </div>
           <div class="doc-q">

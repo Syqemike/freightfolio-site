@@ -12,6 +12,7 @@
    answers shape:
      customer_type: 'broker' | 'forwarder' | 'carrier'
      rate_confirmation | bol | pod | carrier_invoice: 'yes' | 'no' | 'unsure'
+     pod_required: 'yes' | 'no' | 'unsure' | null  (asked only when pod is 'no')
      additional_charges: 'yes' | 'no' | 'unsure'
      accessorials: string[]            (e.g. ['detention','lumper'])
      receipts: 'yes' | 'no' | 'na' | 'unsure' | null
@@ -34,11 +35,12 @@ var TYPE_LABELS = {
 };
 
 /* Per-document guidance shown next to findings. missingNote is used when the
-   item lands in the red list. softNote is used for the two carrier-specific
-   downgrades: a carrier's missing POD or carrier invoice is flagged for
-   review instead of treated as a hard blocker, because a carrier can usually
-   recover a POD from delivery confirmation or ELD records and generates the
-   invoice itself. */
+   item lands in the red list. softNote is used for the one remaining
+   type-specific downgrade: a carrier's missing carrier invoice is flagged for
+   review instead of treated as a hard blocker, because a carrier generates
+   the invoice itself. A missing POD is no longer decided by company type:
+   the visitor is asked directly whether their customer requires a signed POD,
+   so the classification reflects the actual billing requirement. */
 var DOC_GUIDANCE = {
   rate_confirmation: {
     missingNote: 'The agreed rate should be on file before anything else moves. Confirm the rate with all parties.'
@@ -47,8 +49,7 @@ var DOC_GUIDANCE = {
     missingNote: 'The BOL is the contract of carriage. Get a signed copy from pickup.'
   },
   pod: {
-    missingNote: 'Most customers and factors require a signed POD before the invoice can go out or be funded.',
-    softNote: 'For carriers this is often recoverable from delivery confirmation or ELD records, but verify it before invoicing.'
+    missingNote: 'Most customers and factors require a signed POD before the invoice can go out or be funded.'
   },
   carrier_invoice: {
     missingNote: 'Needed to verify what you owe the carrier against what you bill your customer.',
@@ -80,8 +81,37 @@ function assessReadiness(a) {
 
   classify('rate_confirmation', a.rate_confirmation);
   classify('bol', a.bol);
-  classify('pod', a.pod, ['carrier']);
   classify('carrier_invoice', a.carrier_invoice, ['carrier']);
+
+  /* POD: a missing POD is red only when the visitor confirms their customer
+     requires a signed POD to pay. Otherwise it is a review item. This keeps
+     the decision tied to the actual billing requirement instead of guessing
+     from the company type. */
+  (function classifyPod() {
+    var label = DOC_LABELS.pod;
+    if (a.pod === 'yes') {
+      available.push(label);
+    } else if (a.pod === 'no') {
+      if (a.pod_required === 'yes') {
+        missing.push({
+          doc: label,
+          note: 'Your customer requires a signed POD before the invoice can go out. Get delivery confirmation on file.'
+        });
+      } else if (a.pod_required === 'no') {
+        review.push({
+          doc: label,
+          note: 'Your customer does not require a signed POD, but confirm their billing requirements before invoicing.'
+        });
+      } else {
+        review.push({
+          doc: label,
+          note: 'It is unclear whether a signed POD is required. Confirm your customer\u2019s billing requirements.'
+        });
+      }
+    } else {
+      review.push({ doc: label, note: 'Marked "unsure". Confirm this before invoicing.' });
+    }
+  })();
 
   var receiptsApplicable = (a.additional_charges === 'yes' || a.additional_charges === 'unsure');
   if (a.additional_charges === 'yes') {
@@ -185,15 +215,34 @@ function checkedValues(form, name) {
 }
 
 function updateConditional(form) {
-  var val = checkedValue(form, 'additional_charges');
+  var charges = checkedValue(form, 'additional_charges');
   var wrap = document.getElementById('conditional-charges');
   var types = document.getElementById('accessorial-types');
-  var show = (val === 'yes' || val === 'unsure');
-  wrap.hidden = !show;
-  types.hidden = (val !== 'yes');
+  /* Receipts and accessorial types are only relevant when the visitor says
+     additional charges are involved. "Unsure" hides both: the assessment
+     flags the charges themselves for review instead of demanding an answer
+     that would not affect the result. */
+  var showCharges = (charges === 'yes');
+  wrap.hidden = !showCharges;
+  types.hidden = !showCharges;
   var receipts = form.querySelectorAll('input[name="receipts"]');
   for (var i = 0; i < receipts.length; i++) {
-    receipts[i].required = show;
+    receipts[i].required = showCharges;
+    if (!showCharges && receipts[i].checked) receipts[i].checked = false;
+  }
+  if (!showCharges) {
+    var acc = form.querySelectorAll('input[name="accessorials"]');
+    for (var j = 0; j < acc.length; j++) acc[j].checked = false;
+  }
+  /* POD follow-up: only asked when the POD itself is marked missing. */
+  var pod = checkedValue(form, 'pod');
+  var podWrap = document.getElementById('conditional-pod');
+  var showPod = (pod === 'no');
+  podWrap.hidden = !showPod;
+  var podReq = form.querySelectorAll('input[name="pod_required"]');
+  for (var k = 0; k < podReq.length; k++) {
+    podReq[k].required = showPod;
+    if (!showPod && podReq[k].checked) podReq[k].checked = false;
   }
 }
 
@@ -207,6 +256,7 @@ function readAnswers(form) {
     additional_charges: checkedValue(form, 'additional_charges'),
     accessorials: checkedValues(form, 'accessorials'),
     receipts: checkedValue(form, 'receipts'),
+    pod_required: checkedValue(form, 'pod_required'),
     load_number: form.querySelector('#load_number').value.trim(),
     amount: form.querySelector('#amount').value.trim()
   };
