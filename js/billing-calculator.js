@@ -20,7 +20,7 @@ var PLANS = [
     note: 'Starting at',
     blurb: 'Up to 1,000 docs/mo (roughly 250-330 loads)' }
 ];
-var PILOT_PRICE = 500;
+var PILOT_PRICE = 9.99;
 var OVERAGE_PER_DOC = 0.40;
 var MANAGED_FROM = 750; /* managed services quoted from $750/mo */
 
