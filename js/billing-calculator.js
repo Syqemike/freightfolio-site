@@ -12,16 +12,16 @@
 /* Published Freightfolio packages - verified against
    https://freightfolio.net/ (#packages) on 2026-10-09. */
 var PLANS = [
-  { id: 'starter',  name: 'Starter',  monthly: 299, docsCap: 100,
+  { id: 'starter',  name: 'Starter',  monthly: 39,  docsCap: 100,
     blurb: 'Up to 100 docs/mo (roughly 25-35 loads)' },
-  { id: 'business', name: 'Business', monthly: 599, docsCap: 400,
+  { id: 'business', name: 'Business', monthly: 149, docsCap: 400,
     blurb: 'Up to 400 docs/mo (roughly 100-135 loads)' },
-  { id: 'premium',  name: 'Premium',  monthly: 999, docsCap: 1000,
+  { id: 'premium',  name: 'Premium',  monthly: 369, docsCap: 1000,
     note: 'Starting at',
     blurb: 'Up to 1,000 docs/mo (roughly 250-330 loads)' }
 ];
 var PILOT_PRICE = 500;
-var OVERAGE_PER_DOC = 1.50;
+var OVERAGE_PER_DOC = 0.40;
 
 var PRESET_SCENARIOS = [
   { id: 'conservative', label: 'Conservative', pct: 10 },
@@ -122,15 +122,6 @@ function scenarioModel(costs, hourlyCost, pct) {
   };
 }
 
-/* Smallest plan whose documented capacity covers the volume.
-   Returns the plan object, or null when every plan is exceeded. */
-function recommendPlan(monthlyDocs) {
-  for (var i = 0; i < PLANS.length; i++) {
-    if (monthlyDocs <= PLANS[i].docsCap) return PLANS[i];
-  }
-  return null;
-}
-
 /* Human label for the active scenario, e.g. "Conservative (10%)". */
 function scenarioLabel(pct, isCustom) {
   if (!isCustom) {
@@ -143,23 +134,26 @@ function scenarioLabel(pct, isCustom) {
   return 'Custom (' + pct + '%)';
 }
 
-/* Service option for a monthly document volume.
-   When a published plan covers the volume, returns { kind:'plan', plan }.
-   Above 1,000 docs/mo, returns an ILLUSTRATIVE overage estimate built from
-   the published policy (Premium base + $1.50 per additional document).
-   Actual eligibility and pricing always require confirmation. */
+/* Cheapest eligible total: for each plan, price + overage on docs above its
+   cap; pick the lowest total (ties go to the higher tier for headroom).
+   Published overage policy ($0.40/doc) means no price cliffs. */
 function serviceOptionFor(monthlyDocs) {
-  var plan = recommendPlan(monthlyDocs);
-  if (plan) return { kind: 'plan', plan: plan };
-  var premium = PLANS[PLANS.length - 1];
-  var overageDocs = Math.max(0, Math.ceil(monthlyDocs - premium.docsCap));
-  var overageCost = overageDocs * OVERAGE_PER_DOC;
+  var best = null;
+  for (var i = 0; i < PLANS.length; i++) {
+    var plan = PLANS[i];
+    var overDocs = Math.max(0, Math.ceil(monthlyDocs - plan.docsCap));
+    var total = plan.monthly + overDocs * OVERAGE_PER_DOC;
+    if (!best || total < best.monthlyService - 1e-9 ||
+        (Math.abs(total - best.monthlyService) <= 1e-9 && i > best.idx)) {
+      best = { idx: i, plan: plan, overageDocs: overDocs, monthlyService: total };
+    }
+  }
   return {
-    kind: 'overage',
-    plan: premium,
-    overageDocs: overageDocs,
-    overageCost: overageCost,
-    monthlyService: premium.monthly + overageCost
+    kind: best.overageDocs > 0 ? 'overage' : 'plan',
+    plan: best.plan,
+    overageDocs: best.overageDocs,
+    overageCost: best.overageDocs * OVERAGE_PER_DOC,
+    monthlyService: best.monthlyService
   };
 }
 
@@ -231,7 +225,9 @@ function buildConclusion(costs, v, wm, verdict, label) {
   var svc = wm.service;
   var svcDesc = svc.kind === 'plan'
     ? 'the ' + svc.plan.name + ' plan at ' + fmtUSD(wm.withService.monthlyService) + '/mo'
-    : 'Premium with an illustrative overage estimate of ' + fmtUSD(wm.withService.monthlyService) + '/mo';
+    : 'the ' + svc.plan.name + ' plan at ' + fmtUSD(wm.withService.monthlyService) + '/mo' +
+      ' (' + fmtUSD(svc.plan.monthly) + ' base + ' + fmtInt(svc.overageDocs) +
+      ' overage documents at ' + fmtUSD(OVERAGE_PER_DOC) + ' each, the cheapest eligible total)';
   return 'At about ' + fmtInt(costs.monthlyDocs) + ' documents per month, ' + svcDesc +
     '. Under the ' + label +
     ' scenario, the modeled total is ' + fmtUSD(wm.withService.total) + '/mo, which is ' +
@@ -283,9 +279,11 @@ function buildRecommendations(costs, v, svc) {
         OVERAGE_PER_DOC.toFixed(2) + ' each, and Freightfolio moves you to the next tier when that is cheaper.');
     }
   } else {
-    recs.push('Your estimated volume of about ' + Math.round(costs.monthlyDocs) +
-      ' documents per month is above the Premium plan\'s included 1,000 docs/mo. The comparison uses an illustrative overage estimate (' +
-      fmtUSD(svc.plan.monthly) + '/mo base + ' + fmtUSD(OVERAGE_PER_DOC) + ' per additional document). Actual eligibility and pricing require confirmation.');
+    recs.push('At about ' + Math.round(costs.monthlyDocs) +
+      ' documents per month, the cheapest eligible total is the ' + svc.plan.name +
+      ' plan with overage: ' + fmtUSD(svc.plan.monthly) + '/mo base + ' +
+      fmtInt(svc.overageDocs) + ' documents at ' + fmtUSD(OVERAGE_PER_DOC) +
+      ' each. If your volume keeps growing, ask about managed volume pricing.');
   }
   if (costs.costPerLoad >= 15) {
     recs.push('At ' + fmtUSD(costs.costPerLoad) + ' of admin cost per load, paperwork is a meaningful line item. The $' +
@@ -462,9 +460,14 @@ function renderWorthIt(costs, v, pct, label) {
       fmtUSD(plan.monthly) + ' base + ' + fmtInt(svc.overageDocs) + ' docs &times; ' +
       fmtUSD(OVERAGE_PER_DOC) + ' overage)</span>';
   }
+  var utilTxt = svc.kind === 'plan'
+    ? fmtInt(costs.monthlyDocs) + ' of ' + fmtInt(plan.docsCap) + ' included docs'
+    : fmtInt(costs.monthlyDocs) + ' docs (' + fmtInt(plan.docsCap) + ' included + ' +
+      fmtInt(svc.overageDocs) + ' overage)';
   withHtml =
     kv('Service', svcName) +
     kv('Monthly service', svcDetail) +
+    kv('Plan utilization', utilTxt) +
     kv('Remaining admin labor', fmtUSD(w.remainingLabor) + '/mo <span class="plan-note">(at the ' + label + ' scenario)</span>') +
     kv('Total modeled monthly cost', fmtUSD(w.total) + '/mo', 'kv-total');
   $('w-with').innerHTML = withHtml;
@@ -472,7 +475,8 @@ function renderWorthIt(costs, v, pct, label) {
   var note = $('w-note');
   if (svc.kind === 'overage') {
     note.hidden = false;
-    note.textContent = 'Illustrative estimate from the published overage policy ($1.50 per document over 1,000/mo). Actual eligibility and pricing require confirmation.';
+    note.textContent = 'Overage is ' + fmtUSD(OVERAGE_PER_DOC) + ' per document above the included volume. ' +
+      'This is the cheapest eligible total at your volume; if your volume keeps growing, ask about managed volume pricing.';
   } else {
     note.hidden = true;
     note.textContent = '';
@@ -487,7 +491,10 @@ function renderWorthIt(costs, v, pct, label) {
     '<p class="verdict-text">' + verdict.text + '.</p>' +
     '<p class="fine-note">Illustrative model using the ' + label +
     ' scenario. Released hours are labor capacity value (time your team could redirect), not automatic cash savings. ' +
-    'Cash savings happen only when actual expenses are reduced.</p>';
+    'Cash savings happen only when actual expenses are reduced.</p>' +
+    '<p class="fine-note">Need document chasing, manual exception resolution, or custom procedures? ' +
+    'That is our managed service, quoted separately from $' + fmtInt(MANAGED_FROM) + '/mo. ' +
+    '<a href="/#contact">Ask about managed billing</a>.</p>';
   return wm;
 }
 
@@ -524,7 +531,7 @@ function renderReport(costs, v, pct, label) {
     : fmtUSD(w.monthlyService) + '/mo* (' + fmtUSD(plan.monthly) + ' base + ' +
       fmtInt(svc.overageDocs) + ' docs x ' + fmtUSD(OVERAGE_PER_DOC) + ')';
   var overageNote = svc.kind === 'overage'
-    ? '<p class="report-note">*Illustrative estimate from the published overage policy ($1.50 per document over 1,000/mo). Actual eligibility and pricing require confirmation.</p>'
+    ? '<p class="report-note">*Overage is ' + fmtUSD(OVERAGE_PER_DOC) + ' per document above the included volume; shown is the cheapest eligible total at your volume.</p>'
     : '';
 
   /* ---------- PAGE 1: executive summary ---------- */
