@@ -12,11 +12,11 @@
 /* Published Freightfolio packages - verified against
    https://freightfolio.net/ (#packages) on 2026-10-09. */
 var PLANS = [
-  { id: 'starter',  name: 'Starter',  monthly: 299, setup: 750,  docsCap: 100,
+  { id: 'starter',  name: 'Starter',  monthly: 299, docsCap: 100,
     blurb: 'Up to 100 docs/mo (roughly 25-35 loads)' },
-  { id: 'business', name: 'Business', monthly: 599, setup: 1500, docsCap: 400,
+  { id: 'business', name: 'Business', monthly: 599, docsCap: 400,
     blurb: 'Up to 400 docs/mo (roughly 100-135 loads)' },
-  { id: 'premium',  name: 'Premium',  monthly: 999, setup: 2500, docsCap: 1000,
+  { id: 'premium',  name: 'Premium',  monthly: 999, docsCap: 1000,
     note: 'Starting at',
     blurb: 'Up to 1,000 docs/mo (roughly 250-330 loads)' }
 ];
@@ -170,16 +170,13 @@ function worthItModel(costs, hourlyCost, monthlyDocs, pct) {
   var svc = serviceOptionFor(monthlyDocs);
   var sc = scenarioModel(costs, hourlyCost, pct);
   var monthlyService = svc.kind === 'plan' ? svc.plan.monthly : svc.monthlyService;
-  var setup = svc.plan.setup;
-  var setupAmortized = setup / 12;
-  var totalModeled = monthlyService + setupAmortized + sc.remainingLaborCost;
+  var totalModeled = monthlyService + sc.remainingLaborCost;
   var difference = costs.monthlyCost - totalModeled;
   var verdict = difference > 5 ? 'benefit'
     : (difference < -5 ? 'additional' : 'breakeven');
-  /* Improvement % at which the service cost alone is covered by admin savings. */
+  /* Improvement % at which the monthly service cost alone is covered by admin savings. */
   var breakEvenPct = costs.monthlyCost > 0
-    ? ((monthlyService + setupAmortized) / costs.monthlyCost) * 100
-    : null;
+    ? (monthlyService / costs.monthlyCost) * 100 : null;
   return {
     service: svc,
     scenario: sc,
@@ -192,8 +189,6 @@ function worthItModel(costs, hourlyCost, monthlyDocs, pct) {
       monthlyService: monthlyService,
       overageDocs: svc.kind === 'overage' ? svc.overageDocs : 0,
       overageCost: svc.kind === 'overage' ? svc.overageCost : 0,
-      setup: setup,
-      setupAmortized: setupAmortized,
       remainingLabor: sc.remainingLaborCost,
       total: totalModeled
     },
@@ -238,7 +233,7 @@ function buildConclusion(costs, v, wm, verdict, label) {
     ? 'the ' + svc.plan.name + ' plan at ' + fmtUSD(wm.withService.monthlyService) + '/mo'
     : 'Premium with an illustrative overage estimate of ' + fmtUSD(wm.withService.monthlyService) + '/mo';
   return 'At about ' + fmtInt(costs.monthlyDocs) + ' documents per month, ' + svcDesc +
-    ' plus ' + fmtUSD0(wm.withService.setup) + ' setup. Under the ' + label +
+    '. Under the ' + label +
     ' scenario, the modeled total is ' + fmtUSD(wm.withService.total) + '/mo, which is ' +
     verdict.text + '. ' + fmtHours(wm.scenario.hoursReleased) +
     ' hours per month of labor capacity could be redirected to other work. ' +
@@ -247,7 +242,7 @@ function buildConclusion(costs, v, wm, verdict, label) {
 
 /* Plain-English break-even explanation. */
 function breakEvenText(wm, label) {
-  var svcCost = wm.withService.monthlyService + wm.withService.setupAmortized;
+  var svcCost = wm.withService.monthlyService;
   if (wm.breakEvenPct === null) {
     return 'Break-even cannot be calculated because your current modeled administrative cost is $0. Enter your typical volumes to see this analysis.';
   }
@@ -470,8 +465,6 @@ function renderWorthIt(costs, v, pct, label) {
   withHtml =
     kv('Service', svcName) +
     kv('Monthly service', svcDetail) +
-    kv('Setup fee', fmtUSD0(w.setup) + ' one-time' + (svc.kind === 'overage' ? ' <span class="plan-note">(starting at)</span>' : '')) +
-    kv('Setup, modeled monthly', fmtUSD(w.setupAmortized) + '/mo <span class="plan-note">(spread over 12 months)</span>') +
     kv('Remaining admin labor', fmtUSD(w.remainingLabor) + '/mo <span class="plan-note">(at the ' + label + ' scenario)</span>') +
     kv('Total modeled monthly cost', fmtUSD(w.total) + '/mo', 'kv-total');
   $('w-with').innerHTML = withHtml;
@@ -599,12 +592,10 @@ function renderReport(costs, v, pct, label) {
     '<table class="report-table"><thead><tr><th>Scenario</th><th>Hours released/mo</th><th>Labor capacity value/mo</th><th>Remaining hours/mo</th></tr></thead><tbody>' +
     scenRows + '</tbody></table>' +
     '<h2>Freightfolio pricing comparison</h2>' +
-    '<p class="report-note">Compared using the ' + label + ' scenario. Setup fee spread over 12 months for modeling.</p>' +
+    '<p class="report-note">Compared using the ' + label + ' scenario. All figures are illustrative estimates, not guaranteed savings.</p>' +
     '<table class="report-table"><tbody>' +
     row('Current monthly admin cost', fmtUSD(wm.before.monthly)) +
     row('Service', svcName + ': ' + svcCostLine) +
-    row('Setup fee', fmtUSD0(w.setup) + ' one-time' + (svc.kind === 'overage' ? ' (starting at)' : '')) +
-    row('Setup, modeled monthly', fmtUSD(w.setupAmortized) + '/mo') +
     row('Remaining admin labor', fmtUSD(w.remainingLabor) + '/mo') +
     row('Total modeled monthly cost', fmtUSD(w.total) + '/mo') +
     row('Bottom line', verdict.headline + ': ' + verdict.text) +
