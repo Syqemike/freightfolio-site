@@ -31,13 +31,13 @@ var PRESET_SCENARIOS = [
 
 /* Reasonable input limits. */
 var LIMITS = {
-  loads:         { min: 0,      max: 100000, label: 'Monthly shipment volume' },
-  docsPerLoad:   { min: 1,      max: 50,     label: 'Documents per load' },
+  loads:         { min: 0,      max: 100000, label: 'Monthly shipment volume', integer: true },
+  docsPerLoad:   { min: 1,      max: 50,     label: 'Documents per load', integer: true },
   minutesPerLoad:{ min: 0,      max: 480,    label: 'Minutes per load' },
   hourlyCost:    { min: 0,      max: 1000,   label: 'Hourly labor cost' },
   reworkPct:     { min: 0,      max: 100,    label: 'Rework percentage' },
   reworkMinutes: { min: 0,      max: 480,    label: 'Rework minutes' },
-  customPct:     { min: 1,      max: 90,     label: 'Custom improvement percentage' },
+  customPct:     { min: 1,      max: 90,     label: 'Custom improvement percentage', integer: true },
   scenarioPct:   { min: 1,      max: 90,     label: 'Improvement percentage' }
 };
 
@@ -58,6 +58,10 @@ function validateField(raw, key) {
   if (n < lim.min || n > lim.max) {
     return { ok: false, value: NaN,
       error: lim.label + ' must be between ' + lim.min + ' and ' + lim.max + '.' };
+  }
+  if (lim.integer && !Number.isInteger(n)) {
+    return { ok: false, value: NaN,
+      error: lim.label + ' must be a whole number.' };
   }
   return { ok: true, value: n, error: null };
 }
@@ -455,7 +459,10 @@ function recalc() {
   results.hidden = false;
   empty.hidden = true;
   state.lastValid = { v: v, costs: costs, pct: pct };
-  if (!state.completed) {
+  /* A completion counts only after the visitor has actually interacted
+     with the calculator. The initial default render on page load must
+     not inflate completion statistics. */
+  if (!state.completed && state.started) {
     state.completed = true;
     trackEvent('billing_calculator_completed');
   }
