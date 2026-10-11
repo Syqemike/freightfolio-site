@@ -500,7 +500,8 @@
   }
   function issueTitle(i) {
     return { missing_document: "Missing document", discrepancy: "Discrepancy found",
-      unreadable: "Unreadable document", note: "Note from our team" }[i.type] || "Issue";
+      unreadable: "Unreadable document", unsigned: "Unsigned document",
+      conflicting: "Conflicting documents", note: "Note from our team" }[i.type] || "Issue";
   }
 
   /* ---------- reports ---------- */
