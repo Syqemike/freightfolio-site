@@ -84,59 +84,14 @@ a { color: var(--navy); }
 .section-lede { font-size: 1.12rem; color: var(--slate); max-width: 720px; margin-bottom: 36px; }
 .fineprint { font-size: .82rem; color: #6e6e6e; margin-top: 10px; }
 
-/* Illustrative math visual */
-.callout-label { font-size: .75rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: #92610A; margin-bottom: 4px; }
-.chase-visual {
-  background: #F8FAFC;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 26px 28px;
-  margin: 28px 0 40px;
+/* Infographic figure */
+.chase-figure { margin: 28px 0 40px; }
+.chase-figure img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--line); border-radius: 14px;
+  background: #fff;
 }
-.chase-steps { display: flex; align-items: stretch; justify-content: center; gap: 10px; margin: 18px 0 20px; }
-.chase-step {
-  flex: 1 1 0; min-width: 0;
-  background: #fff; border: 1px solid var(--line); border-radius: 10px;
-  padding: 16px 10px; text-align: center;
-  display: flex; flex-direction: column; justify-content: center; gap: 4px;
-}
-.chase-num { font-size: 1.9rem; font-weight: 800; color: var(--navy); line-height: 1.1; }
-.chase-cap { font-size: .83rem; color: var(--slate); line-height: 1.4; }
-.chase-op { align-self: center; font-size: 1.4rem; font-weight: 800; color: #D98A0B; }
-.chase-result { background: var(--navy); border-color: var(--navy); }
-.chase-result .chase-num { color: #fff; }
-.chase-result .chase-cap { color: rgba(255,255,255,.82); }
-.chase-time {
-  display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;
-  background: #fff; border: 1px dashed var(--line); border-radius: 10px;
-  padding: 12px 16px; margin-bottom: 14px; font-size: .98rem; color: var(--slate); text-align: center;
-}
-.chase-time strong { color: var(--navy); }
-.chase-pill {
-  background: var(--amber); color: #3A2A00; font-weight: 800; font-size: .85rem;
-  border-radius: 999px; padding: 3px 12px; white-space: nowrap;
-}
-.chase-detail { color: var(--slate); font-size: .88rem; }
-.chase-month { text-align: center; font-size: 1.02rem; color: #1F2937; margin: 0 0 18px; }
-.chase-month strong { color: var(--navy); }
-.chase-cash {
-  display: flex; gap: 14px; align-items: flex-start;
-  background: #FEF6E7; border-left: 5px solid var(--amber);
-  border-radius: 0 10px 10px 0; padding: 14px 18px; margin-bottom: 14px;
-}
-.chase-cash-label {
-  flex: none; font-size: .72rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase;
-  color: #92610A; background: #fff; border: 1px solid #F0D9A8; border-radius: 6px;
-  padding: 4px 8px; margin-top: 2px; white-space: nowrap;
-}
-.chase-cash p { margin: 0; font-size: .98rem; color: #1F2937; }
-.chase-cash strong { color: var(--navy); }
-@media (max-width: 620px) {
-  .chase-visual { padding: 20px 18px; }
-  .chase-steps { flex-direction: column; }
-  .chase-op { align-self: center; }
-  .chase-num { font-size: 1.6rem; }
-}
+.chase-figure .fineprint { margin-top: 8px; }
 
 /* Cards */
 .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
