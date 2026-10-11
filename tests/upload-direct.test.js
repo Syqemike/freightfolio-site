@@ -182,8 +182,37 @@ describe("upload-direct", () => {
     assert.equal(status, 401);
   });
 
+  it("sends the required X-Bz-Content-Sha1 header to B2", async () => {
+    // B2 rejects native uploads without a valid SHA-1 checksum header.
+    const email = "sha1@example.com";
+    const orderId = await makeOrder(email);
+    const cookie = await sessionCookie(email);
+
+    let capturedHeaders = null;
+    const origFetch = globalThis.fetch;
+    globalThis.fetch = async (url, opts = {}) => {
+      if (String(url) === "https://upload.test/b2api/v3/b2_upload_file") {
+        capturedHeaders = opts.headers;
+      }
+      return origFetch(url, opts);
+    };
+    try {
+      const bytes = pdfBytes(7);
+      const { status, body } = await directCall({ orderId, cookie, fileBytes: bytes });
+      assert.equal(status, 200);
+      assert.equal(body.ok, true);
+      assert.ok(capturedHeaders, "upload PUT was issued");
+      const sha1 = capturedHeaders["X-Bz-Content-Sha1"];
+      assert.match(sha1, /^[0-9a-f]{40}$/);
+      const { createHash } = await import("node:crypto");
+      assert.equal(sha1, createHash("sha1").update(Buffer.from(bytes)).digest("hex"));
+    } finally {
+      globalThis.fetch = origFetch;
+    }
+  });
+
   it("returns 500 when B2_BUCKET_ID is not configured", async () => {
-    const envNoBucket = mockEnv({ SESSION_SECRET: "test-session-secret-32bytes-long!!" }); // no B2_BUCKET_ID
+    const envNoBucket = mockEnv({ SESSION_SECRET: "test-session-secret-32bytes-long!!" }); // no B2_BUCKET_ID = mockEnv({ SESSION_SECRET: "test-session-secret-32bytes-long!!" }); // no B2_BUCKET_ID
     const email = "nobucket@example.com";
     const r = await internalTestOrder({
       request: new Request("https://test.freightfolio.net/api/internal/test-order", {
