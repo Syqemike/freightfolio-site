@@ -2,14 +2,18 @@
  * GET /api/reports/download?order_id=<id>&file=<name>
  *
  * Authorizes a single report download: the session email must own the order,
- * and the file must be a report recorded on that order. Responds with a 302
- * redirect to a short-lived (15-minute) presigned B2 URL. The B2 credentials
- * never leave the server.
+ * and the file must be a report recorded on that order. The file bytes are
+ * PROXIED through this Function (same-origin download from freightfolio.net).
+ *
+ * We deliberately do not redirect to a B2 URL: the S3-compatible endpoint's
+ * certificate is broken on customer networks (ERR_CERT_COMMON_NAME_INVALID)
+ * and raw backblaze2.com links misbehave on some mobile networks. The B2
+ * credentials never leave the server.
  */
 
 import { json, requireSession } from "../../../lib/api-auth.js";
 import { getOrder } from "../../../lib/order-store.js";
-import { presignedGetUrl } from "../../../lib/storage.js";
+import { b2DownloadBytes } from "../../../lib/b2-native.js";
 
 export async function onRequestGet(context) {
   const { request, env } = context;
@@ -34,12 +38,19 @@ export async function onRequestGet(context) {
 
   let dl;
   try {
-    dl = await presignedGetUrl(env, { key: report.key, expiresSeconds: 900 });
+    dl = await b2DownloadBytes(env, { fileName: report.key });
   } catch (e) {
-    console.error("presign download failed", e);
+    console.error("report download failed", e);
     return json({ ok: false, error: "storage_unavailable" }, 503);
   }
-  return Response.redirect(dl, 302);
+
+  const headers = {
+    "content-type": dl.contentType,
+    "content-disposition": `attachment; filename="${encodeURIComponent(report.name)}"`,
+    "cache-control": "private, max-age=0, no-cache",
+  };
+  if (dl.contentLength) headers["content-length"] = dl.contentLength;
+  return new Response(dl.body, { status: 200, headers });
 }
 
 export async function onRequest(context) {
