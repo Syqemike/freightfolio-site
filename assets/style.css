@@ -82,7 +82,7 @@ a { color: var(--navy); }
   letter-spacing: 1.8px; text-transform: uppercase; margin-bottom: 10px;
 }
 .section-lede { font-size: 1.12rem; color: var(--slate); max-width: 720px; margin-bottom: 36px; }
-.fineprint { font-size: .82rem; color: #8a8a8a; margin-top: 10px; }
+.fineprint { font-size: .82rem; color: #6e6e6e; margin-top: 10px; }
 
 /* Callout (illustrative math) */
 .callout {
