@@ -21,6 +21,7 @@ Workers & Pages > KV before a rebuild.
 |------------------------|------------------------------------------------------|-------------------------------------------|
 | `STRIPE_WEBHOOK_SECRET`| HMAC verification of Stripe webhook signatures       | Webhook returns 400 on every event        |
 | `UPLOAD_TOKEN_SECRET`  | HMAC signing of upload tokens                        | Order creation + uploads fail (500)       |
+| `RECOVERY_UPLOAD_SECRET` | HMAC signing of recovery upload-link tokens (single-requirement scope, 7-day TTL; VM mints, site verifies) | Recovery upload endpoint returns 500; VM-side minting must use the same value (600-perm file on the VM) |
 | `SESSION_SECRET`       | Workspace magic-link session cookie signing          | Login/workspace fail                      |
 | `RESEND_API_KEY`       | Resend API key for all outbound email                | No customer or ops emails send            |
 | `INTAKE_INTERNAL_KEY`  | Shared secret for bridge → site internal endpoints   | Bridge status pushes rejected (401)       |
