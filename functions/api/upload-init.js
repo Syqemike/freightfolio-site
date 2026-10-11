@@ -65,6 +65,20 @@ export async function onRequestPost(context) {
     return json({ ok: false, error: "too_many_files", max: 50 }, 400);
   }
 
+  // Release stale reservations: a pending slot whose presigned URL has long
+  // expired (URLs live 5 minutes) can never complete, so it must not hold
+  // allowance forever. 30 minutes gives slow uploads generous headroom.
+  const PENDING_TTL_MS = 30 * 60 * 1000;
+  const now = Date.now();
+  const freshPending = (order.pending || []).filter((p) => {
+    const t = Date.parse(p.reserved_at || "");
+    return Number.isFinite(t) && now - t < PENDING_TTL_MS;
+  });
+  if (freshPending.length !== (order.pending || []).length) {
+    order.pending = freshPending;
+    await putOrder(env, order, { test });
+  }
+
   const used = order.files.length + order.pending.length;
   const remaining = order.doc_allowance - used;
   if (remaining <= 0) {

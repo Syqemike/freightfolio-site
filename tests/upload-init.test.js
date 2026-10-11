@@ -133,4 +133,42 @@ describe("upload-init", () => {
     assert.equal(r2.body.uploads.length, 2);
     assert.equal(r2.body.rejected.filter((r) => r.reason === "allowance_exceeded").length, 3);
   });
+
+  it("releases stale pending reservations instead of holding allowance forever", async () => {
+    const { getOrder, putOrder } = await import("../lib/order-store.js");
+    // Simulate 10 abandoned reservations from 2 hours ago (presigned URLs died after 5 min).
+    const stale = Array.from({ length: 10 }, (_, i) => ({
+      sha256: (100 + i).toString(16).padStart(64, "0"),
+      key: `orders/${order.order_id}/stale${i}/doc.pdf`,
+      filename: `stale${i}.pdf`,
+      reserved_at: new Date(Date.now() - 2 * 3600 * 1000).toISOString(),
+    }));
+    const o = await getOrder(env, order.order_id);
+    o.pending = stale;
+    await putOrder(env, o);
+
+    const { status, body } = await initCall([file(1)]);
+    assert.equal(status, 200);
+    assert.equal(body.ok, true);
+    assert.equal(body.uploads.length, 1, "stale slots should have been released");
+    const after = await getOrder(env, order.order_id);
+    assert.equal(after.pending.length, 1, "only the fresh reservation remains");
+  });
+
+  it("keeps fresh pending reservations (under 30 minutes old)", async () => {
+    const { getOrder, putOrder } = await import("../lib/order-store.js");
+    const o = await getOrder(env, order.order_id);
+    o.pending = [{
+      sha256: "aa".padStart(64, "0"),
+      key: `orders/${order.order_id}/fresh/doc.pdf`,
+      filename: "fresh.pdf",
+      reserved_at: new Date(Date.now() - 5 * 60 * 1000).toISOString(),
+    }];
+    await putOrder(env, o);
+
+    const { body } = await initCall([file(1, { sha256: "aa".padStart(64, "0") })]);
+    assert.equal(body.uploads.length, 0);
+    assert.equal(body.rejected[0].reason, "duplicate_content");
+  });
 });
+
