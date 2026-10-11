@@ -201,6 +201,42 @@
     });
   }
 
+  function friendlyUploadError(err) {
+    switch (err) {
+      case "duplicate_content": return "This exact file was already uploaded for this order.";
+      case "too_large": return "This file is over 25 MB.";
+      case "bad_file_type": return "This does not look like a PDF, JPG, or PNG file. Renamed files are rejected.";
+      case "allowance_exhausted": return "This order already has its full set of documents. Email us if you need to replace one.";
+      case "storage_error": return "Our storage hiccuped \u2014 please retry in a moment.";
+      default: return "The server rejected this file (" + err + ").";
+    }
+  }
+
+  // Uploads go through POST /api/upload-direct (same origin). The Function
+  // validates the file and stores it in B2 via the native API, so the
+  // browser never talks to B2 directly (no CORS / S3-endpoint issues).
+  function postFileDirect(it, onProgress) {
+    return new Promise(function (resolve, reject) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "/api/upload-direct", true);
+      xhr.upload.onprogress = function (e) {
+        if (e.lengthComputable) onProgress(Math.round((e.loaded / e.total) * 100));
+      };
+      xhr.onload = function () {
+        var body = null;
+        try { body = JSON.parse(xhr.responseText); } catch (e) { /* fall through */ }
+        if (xhr.status >= 200 && xhr.status < 300 && body && body.ok) { resolve(body); return; }
+        reject(new Error(friendlyUploadError((body && body.error) || ("http_" + xhr.status))));
+      };
+      xhr.onerror = function () { reject(new Error("Network error during upload. Please retry.")); };
+      var fd = new FormData();
+      fd.append("token", token);
+      fd.append("order_id", orderId);
+      fd.append("file", it.file, it.file.name || "file");
+      xhr.send(fd);
+    });
+  }
+
   function startUpload() {
     if (busy) return;
     busy = true;
@@ -209,95 +245,32 @@
     startBtn.innerHTML = '<span class="spinner"></span>&nbsp; Working\u2026';
 
     var items = queue.filter(function (q) { return q.state === "ready" || q.state === "error"; });
-    items.forEach(function (it) { it.state = "hashing"; it.error = ""; it.progress = 0; });
+    items.forEach(function (it) { it.state = "uploading"; it.error = ""; it.progress = 0; });
     render();
 
-    // Step 1: hash every file, then ask the server for presigned URLs.
-    var hashed = items.map(function (it) {
-      return it.file.arrayBuffer().then(function (buf) { return sha256Hex(buf); }).then(function (h) {
-        it.sha256 = h;
-        return {
-          filename: it.file.name,
-          content_type: it.detected.mime,
-          size_bytes: it.file.size,
-          sha256: h
-        };
-      });
-    });
-
-    Promise.all(hashed).then(function (payload) {
-      return fetch("/api/upload-init", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ token: token, order_id: orderId, files: payload })
-      }).then(function (r) { return r.json().then(function (j) { return { status: r.status, body: j }; }); });
-    }).then(function (res) {
-      var body = res.body || {};
-      if (!body.ok) {
-        throw new Error(body.error === "allowance_exhausted"
-          ? "This order already has its full set of documents. Email us if you need to replace one."
-          : "The server refused the upload request (" + (body.error || "unknown") + "). Please try again.");
-      }
-      var byHash = {};
-      (body.uploads || []).forEach(function (u) { byHash[u.sha256] = u; });
-      (body.rejected || []).forEach(function (r) {
-        var hit = items.filter(function (it) { return it.file.name === r.filename; })[0];
-        if (hit) {
-          hit.state = "invalid";
-          hit.error = r.reason === "duplicate_content"
-            ? "This exact file was already uploaded for this order."
-            : r.reason === "too_large"
-              ? "This file is over 25 MB."
-              : "The server rejected this file (" + r.reason + ").";
-        }
-      });
-      items.forEach(function (it) {
-        var u = byHash[it.sha256];
-        if (u) { it.putUrl = u.put_url; it.key = u.key; it.contentType = u.required_content_type; }
-        else if (it.state === "hashing") { it.state = "invalid"; it.error = "The server did not issue an upload URL for this file."; }
-      });
-      render();
-
-      // Step 2: PUT each accepted file straight to private storage.
-      var toUpload = items.filter(function (it) { return it.putUrl; });
-      var chain = Promise.resolve();
-      toUpload.forEach(function (it) {
-        chain = chain.then(function () {
-          it.state = "uploading";
+    var chain = Promise.resolve();
+    items.forEach(function (it) {
+      chain = chain.then(function () {
+        return postFileDirect(it, function (p) {
+          it.progress = p;
           render();
-          return putWithProgress(it.putUrl, it.file, it.contentType, function (p) {
-            it.progress = p;
-            render();
-          }).then(function () {
-            it.state = "done";
-            it.progress = 100;
-            render();
-          }).catch(function (e) {
-            it.state = "error";
-            it.error = e.message;
-            render();
-          });
+        }).then(function () {
+          it.state = "done";
+          it.progress = 100;
+          render();
+        }).catch(function (e) {
+          it.state = "error";
+          it.error = e.message;
+          render();
         });
       });
-      return chain.then(function () { return toUpload; });
-    }).then(function (toUpload) {
-      var done = (toUpload || []).filter(function (it) { return it.state === "done"; });
+    });
+    return chain.then(function () {
+      var done = items.filter(function (it) { return it.state === "done"; });
       if (done.length === 0) {
         throw new Error("none_uploaded");
       }
-      // Step 3: tell the server what landed so it can verify and record the batch.
-      return fetch("/api/upload-complete", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({
-          token: token,
-          order_id: orderId,
-          uploads: done.map(function (it) { return { sha256: it.sha256, key: it.key }; })
-        })
-      }).then(function (r) { return r.json(); }).then(function (body) {
-        if (!body.ok) throw new Error("finalize_failed");
-        return body;
-      });
+      return { received: done.length, order_id: orderId };
     }).then(function (body) {
       busy = false;
       el("up-confirm-order").textContent = body.order_id || orderId;

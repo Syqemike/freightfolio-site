@@ -338,104 +338,94 @@
     });
   }
 
+  // Uploads go through POST /api/upload-direct (same origin). The Function
+  // validates the file and stores it in B2 via the native API, so the
+  // browser never talks to B2 directly (no CORS / S3-endpoint issues).
+  function postFileDirect(it, onProgress) {
+    return new Promise(function (resolve, reject) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "/api/upload-direct", true);
+      xhr.upload.onprogress = function (e) {
+        if (e.lengthComputable) onProgress(Math.round((e.loaded / e.total) * 100));
+      };
+      xhr.onload = function () {
+        var body = null;
+        try { body = JSON.parse(xhr.responseText); } catch (e) { /* fall through */ }
+        if (xhr.status >= 200 && xhr.status < 300 && body && body.ok) { resolve(body); return; }
+        var err = (body && body.error) || ("http_" + xhr.status);
+        reject(new Error(err === "unauthorized" || xhr.status === 401 ? "signed_out" : friendlyUploadError(err)));
+      };
+      xhr.onerror = function () { reject(new Error("Network error during upload.")); };
+      var fd = new FormData();
+      fd.append("order_id", state.orderId);
+      fd.append("file", it.file, it.file.name || "file");
+      xhr.send(fd);
+    });
+  }
+
+  function friendlyUploadError(err) {
+    switch (err) {
+      case "duplicate_content": return "This exact file was already uploaded.";
+      case "too_large": return "Over 25 MB \u2014 shrink it or split it and try again.";
+      case "bad_file_type": return "Doesn\u2019t look like a PDF, JPG, or PNG. Renamed files are rejected.";
+      case "allowance_exhausted": return "You\u2019ve used your full document allowance for this period.";
+      case "storage_error": return "Our storage hiccuped \u2014 please retry in a moment.";
+      default: return "The server refused the upload (" + err + ").";
+    }
+  }
+
   function startUpload() {
     uploading = true;
     var items = queue.filter(function (q) { return q.state === "ready"; });
-    items.forEach(function (it) { it.state = "hashing"; it.error = ""; it.progress = 0; });
+    items.forEach(function (it) { it.state = "uploading"; it.error = ""; it.progress = 0; });
     renderQueue();
     updateAllowanceLine();
 
-    var hashed = items.map(function (it) {
-      return it.file.arrayBuffer().then(sha256Hex).then(function (h) {
-        it.sha256 = h;
-        return { filename: it.file.name, content_type: it.detected.mime, size_bytes: it.file.size, sha256: h };
+    var signedOut = false;
+    var chain = Promise.resolve();
+    items.forEach(function (it) {
+      chain = chain.then(function () {
+        if (signedOut) return;
+        return postFileDirect(it, function (p) { it.progress = p; renderQueue(); })
+          .then(function () { it.state = "done"; it.progress = 100; renderQueue(); })
+          .catch(function (e) {
+            if (e.message === "signed_out") { signedOut = true; throw e; }
+            it.state = "error";
+            it.error = e.message + " You can re-add the file to retry.";
+            renderQueue();
+          });
       });
     });
 
-    Promise.all(hashed).then(function (payload) {
-      return api("/api/upload-init", {
-        method: "POST",
-        body: JSON.stringify({ order_id: state.orderId, files: payload }), // session cookie auth
-      });
-    }).then(function (res) {
-      var body = res.body || {};
-      if (!body.ok) {
-        if (res.status === 401) throw new Error("signed_out");
-        throw new Error(body.error === "allowance_exhausted"
-          ? "You\u2019ve used your full document allowance for this period."
-          : "The server refused the upload (" + (body.error || "unknown") + ").");
-      }
-      var byHash = {};
-      (body.uploads || []).forEach(function (u) { byHash[u.sha256] = u; });
-      (body.rejected || []).forEach(function (r) {
-        var hit = items.filter(function (it) { return it.file.name === r.filename; })[0];
-        if (hit) {
-          hit.state = "invalid";
-          hit.error = r.reason === "duplicate_content" ? "This exact file was already uploaded."
-            : r.reason === "too_large" ? "Over 25 MB."
-            : "Rejected by the server (" + r.reason + ").";
-        }
-      });
-      items.forEach(function (it) {
-        var u = byHash[it.sha256];
-        if (u) { it.putUrl = u.put_url; it.key = u.key; it.contentType = u.required_content_type; }
-        else if (it.state === "hashing") { it.state = "invalid"; it.error = "No upload URL was issued for this file."; }
-      });
+    chain.then(function () {
+      uploading = false;
+      if (signedOut) { showError({ status: 401 }); return; }
+      var done = items.filter(function (it) { return it.state === "done"; });
+      queue = queue.filter(function (it) { return it.state !== "done"; });
       renderQueue();
-
-      var toUpload = items.filter(function (it) { return it.putUrl; });
-      var chain = Promise.resolve();
-      toUpload.forEach(function (it) {
-        chain = chain.then(function () {
-          it.state = "uploading"; renderQueue();
-          return putWithProgress(it.putUrl, it.file, it.contentType, function (p) {
-            it.progress = p; renderQueue();
-          }).then(function () { it.state = "done"; it.progress = 100; renderQueue(); })
-            .catch(function (e) { it.state = "error"; it.error = e.message + " You can re-add the file to retry."; renderQueue(); });
-        });
+      if (!done.length) { maybeStart(); return; }
+      // Refresh allowance + overview.
+      return api("/api/me").then(function (r2) {
+        if (r2.body && r2.body.ok) {
+          state.me = r2.body;
+          state.remaining = r2.body.current_order ? r2.body.current_order.remaining : 0;
+          renderAll();
+          updateAllowanceLine();
+        }
+        var note = document.createElement("p");
+        note.className = "form-ok";
+        note.setAttribute("role", "status");
+        note.textContent = "Received \u2014 " + done.length + " document" + (done.length > 1 ? "s" : "") +
+          " confirmed. We\u2019ll email you when processing is done.";
+        $("queue").prepend(note);
+      }).then(function () {
+        // Files that became ready while this batch was uploading go next.
+        maybeStart();
       });
-      return chain.then(function () { return toUpload; });
-    }).then(function (toUpload) {
-      var done = (toUpload || []).filter(function (it) { return it.state === "done"; });
+    }).catch(function () {
       uploading = false;
-      if (!done.length) { renderQueue(); return; }
-      return api("/api/upload-complete", {
-        method: "POST",
-        body: JSON.stringify({
-          order_id: state.orderId,
-          uploads: done.map(function (it) { return { sha256: it.sha256, key: it.key }; }),
-        }),
-      }).then(function (res) {
-        var body = res.body || {};
-        if (!body.ok) throw new Error("finalize_failed");
-        renderQueue();
-        queue = queue.filter(function (it) { return it.state !== "done"; });
-        renderQueue();
-        // Refresh allowance + overview.
-        return api("/api/me").then(function (r2) {
-          if (r2.body && r2.body.ok) {
-            state.me = r2.body;
-            state.remaining = r2.body.current_order ? r2.body.current_order.remaining : 0;
-            renderAll();
-            updateAllowanceLine();
-          }
-          var note = document.createElement("p");
-          note.className = "form-ok";
-          note.setAttribute("role", "status");
-          note.textContent = "Received \u2014 " + done.length + " document" + (done.length > 1 ? "s" : "") +
-            " confirmed. We\u2019ll email you when processing is done.";
-          $("queue").prepend(note);
-        });
-      });
-    }).catch(function (e) {
-      uploading = false;
-      if (e.message === "signed_out") { showError({ status: 401 }); throw e; }
-      renderQueueNote(e.message || "Something went wrong starting the upload.");
-    }).then(function () {
-      // Files that became ready while this batch was uploading go next.
+      if (signedOut) { showError({ status: 401 }); return; }
       maybeStart();
-    }, function () {
-      // signed_out: the error screen is already showing; do not retry.
     });
   }
 
