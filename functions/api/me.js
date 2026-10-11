@@ -48,7 +48,7 @@ export async function onRequestGet(context) {
 
   const customer = await getCustomer(env, session.email);
   if (!customer) {
-    return json({ ok: false, error: "no_customer" }, 404);
+    return json({ ok: false, error: "no_customer", role: session.role }, 404);
   }
 
   const { order: currentOrder, kind } = await currentUploadOrder(env, session.email);

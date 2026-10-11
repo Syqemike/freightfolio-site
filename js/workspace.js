@@ -67,6 +67,12 @@
     $("ws-error").hidden = false;
     if (r && r.status === 503) {
       $("ws-error-msg").textContent = "Workspace sign-in isn't configured yet. Please try again shortly.";
+    } else if (r && r.status === 404 && r.body && r.body.role === "admin") {
+      // Site administrator signed in: the admin panel is their home.
+      window.location.replace("/admin");
+      return;
+    } else if (r && (r.status === 404 || (r.body && r.body.error === "no_customer"))) {
+      $("ws-error-msg").textContent = "We couldn't find any orders for this email address. If you paid with a different email, sign out and sign in with that one — or email hello@freightfolio.net and we'll sort it out.";
     }
   }
 
