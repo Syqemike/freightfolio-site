@@ -60,6 +60,14 @@ a { color: var(--navy); }
 .nav-links a { color: rgba(255,255,255,.85); text-decoration: none; font-size: .95rem; font-weight: 600; }
 .nav-links a:hover { color: var(--amber); }
 
+
+/* Header "Customer login" link (all pages with nav-links) */
+.login-link {
+  color: rgba(255,255,255,.85); text-decoration: none; font-size: .9rem;
+  font-weight: 600; white-space: nowrap; margin-left: auto;
+}
+.login-link:hover { color: var(--amber); }
+
 /* Hero */
 .hero {
   background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 60%, #14365a 100%);

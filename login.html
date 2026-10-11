@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer login - Freightfolio</title>
+<meta name="description" content="Sign in to your Freightfolio customer workspace with a secure email link. No password to remember.">
+<link rel="canonical" href="https://freightfolio.net/login">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/style.css?v=20261009c">
+<link rel="stylesheet" href="/assets/workspace.css?v=20261010a">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFGYQ0XKBV"></script>
+<script src="/js/ga.js"></script>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="/" aria-label="Freightfolio home">
+      <span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
+      <a href="/#problem">The problem</a>
+      <a href="/#how">How it works</a>
+      <a href="/#packages">Packages</a>
+      <a href="/#pilot">Pilot</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a class="login-link" href="/login" aria-current="page">Customer login</a>
+    <a class="btn btn-amber btn-sm" href="/#contact">Talk to us</a>
+  </div>
+</header>
+
+<main class="app-shell">
+  <div class="container" style="max-width: 560px;">
+
+    <div class="app-card" id="login-card">
+      <p class="kicker">Customer workspace</p>
+      <h1 style="margin-top:0">Sign in</h1>
+      <p class="muted">Enter the email address you paid with. We&rsquo;ll send you a secure sign-in link &mdash; no password to remember. The link expires in 15 minutes and works once.</p>
+
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" required
+                 placeholder="you@yourcompany.com" aria-describedby="email-hint">
+          <p class="hint" id="email-hint">Use the same email from your pilot purchase or subscription.</p>
+        </div>
+        <button class="btn btn-amber" type="submit" id="login-submit">Email me a sign-in link</button>
+        <p class="form-error" id="login-error" role="alert" hidden></p>
+        <p class="form-ok" id="login-ok" role="status" hidden></p>
+      </form>
+
+      <div id="verify-state" hidden>
+        <p class="muted" id="verify-msg">Checking your sign-in link&hellip;</p>
+        <p class="form-error" id="verify-error" role="alert" hidden></p>
+      </div>
+    </div>
+
+    <p class="small muted" style="margin-top:16px">
+      New here? <a href="/#pilot">Start with the $9.99 mini-pilot</a> or pick a plan and
+      you&rsquo;ll get a workspace invitation by email.
+      Trouble signing in? Email <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a>.
+    </p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="fineprint">&copy; 2026 Freightfolio. Your loads, billed. Your money, sooner.</p>
+  </div>
+</footer>
+
+<script src="/js/nav.js"></script>
+<script src="/js/login.js?v=20261010a"></script>
+</body>
+</html>

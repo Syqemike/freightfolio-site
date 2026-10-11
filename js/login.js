@@ -1,0 +1,110 @@
+/**
+ * js/login.js — magic-link sign-in flow (CSP-safe external script).
+ *
+ * Two modes:
+ *   1. ?token=<magic> in the URL -> verify the token, set the session cookie,
+ *      redirect to /workspace/ (or show the error).
+ *   2. No token -> show the email form; POST /api/auth/request.
+ */
+
+(function () {
+  "use strict";
+
+  var form = document.getElementById("login-form");
+  var emailInput = document.getElementById("email");
+  var submitBtn = document.getElementById("login-submit");
+  var errEl = document.getElementById("login-error");
+  var okEl = document.getElementById("login-ok");
+  var verifyState = document.getElementById("verify-state");
+  var verifyMsg = document.getElementById("verify-msg");
+  var verifyError = document.getElementById("verify-error");
+
+  function showError(el, msg) {
+    el.textContent = msg;
+    el.hidden = false;
+  }
+  function hide(el) {
+    el.hidden = true;
+    el.textContent = "";
+  }
+
+  async function postJson(url, body) {
+    var res = await fetch(url, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(body),
+      credentials: "same-origin",
+    });
+    var data = null;
+    try { data = await res.json(); } catch (e) { /* non-JSON */ }
+    return { status: res.status, data: data };
+  }
+
+  // --- Mode 1: token in URL ---
+  var params = new URLSearchParams(window.location.search);
+  var token = params.get("token");
+  if (token) {
+    form.hidden = true;
+    verifyState.hidden = false;
+    verifyMsg.textContent = "Checking your sign-in link\u2026";
+    postJson("/api/auth/verify", { token: token }).then(function (r) {
+      if (r.status === 200 && r.data && r.data.ok) {
+        verifyMsg.textContent = "Signed in. Taking you to your workspace\u2026";
+        // Strip the single-use token from the URL, then go to the workspace.
+        window.location.replace("/workspace/");
+      } else if (r.status === 410) {
+        verifyMsg.textContent = "";
+        showError(verifyError, "That sign-in link has expired. Request a fresh one below.");
+        form.hidden = false;
+      } else if (r.status === 429) {
+        verifyMsg.textContent = "";
+        showError(verifyError, "Too many attempts. Please wait a little while and try again.");
+        form.hidden = false;
+      } else {
+        verifyMsg.textContent = "";
+        showError(verifyError, "That sign-in link isn\u2019t valid. Request a fresh one below.");
+        form.hidden = false;
+      }
+    }).catch(function () {
+      verifyMsg.textContent = "";
+      showError(verifyError, "Something went wrong checking the link. Please try again.");
+      form.hidden = false;
+    });
+    // Remove the token from the address bar so it isn't kept in history.
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState(null, "", "/login");
+    }
+    return;
+  }
+
+  // --- Mode 2: request a link ---
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    hide(errEl);
+    hide(okEl);
+    var email = (emailInput.value || "").trim();
+    if (!email || email.indexOf("@") < 0) {
+      showError(errEl, "Please enter a valid email address.");
+      emailInput.focus();
+      return;
+    }
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending\u2026";
+    postJson("/api/auth/request", { email: email }).then(function (r) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Email me a sign-in link";
+      if (r.status === 200) {
+        okEl.textContent = "If an account exists for that email, a sign-in link is on its way. Check your inbox (and spam folder).";
+        okEl.hidden = false;
+      } else if (r.status === 429) {
+        showError(errEl, "Too many requests. Please wait a little while and try again.");
+      } else {
+        showError(errEl, "Something went wrong. Please try again, or email hello@freightfolio.net.");
+      }
+    }).catch(function () {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Email me a sign-in link";
+      showError(errEl, "Couldn\u2019t reach the server. Check your connection and try again.");
+    });
+  });
+})();

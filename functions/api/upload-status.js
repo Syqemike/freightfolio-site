@@ -11,8 +11,7 @@
  *   token_expires_at, test } or 4xx { ok:false, error, reason? }.
  */
 
-import { verifyUploadToken } from "../../lib/tokens.js";
-import { getOrder } from "../../lib/order-store.js";
+import { authorizeUpload } from "../../lib/upload-auth.js";
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -29,23 +28,12 @@ export async function onRequestGet(context) {
   }
 
   const url = new URL(request.url);
-  const token = url.searchParams.get("token") || "";
-  const orderId = url.searchParams.get("order_id") || "";
-  if (!token || !orderId) return json({ ok: false, error: "missing_token" }, 400);
-
-  let order = await getOrder(env, orderId, { test: false });
-  let test = false;
-  if (!order) {
-    order = await getOrder(env, orderId, { test: true });
-    test = true;
-  }
-  if (!order) return json({ ok: false, error: "unknown_order" }, 404);
-
-  const v = await verifyUploadToken(token, orderId, env.UPLOAD_TOKEN_SECRET);
-  if (!v.ok) {
-    const status = v.reason === "expired" ? 410 : 401;
-    return json({ ok: false, error: "invalid_token", reason: v.reason }, status);
-  }
+  const auth = await authorizeUpload(env, request, {
+    token: url.searchParams.get("token") || "",
+    order_id: url.searchParams.get("order_id") || "",
+  });
+  if (auth.error) return auth.error;
+  const { order, test } = auth;
 
   return json({
     ok: true,
