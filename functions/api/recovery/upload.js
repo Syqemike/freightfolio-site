@@ -21,10 +21,24 @@
  *   Until the VM picks the file up it is inert bytes under the order prefix.
  * - Filenames are sanitized (safeFilename) and the real type comes from
  *   magic bytes; extensions are never trusted.
+ * - Request-token association: after a successful upload the endpoint
+ *   writes a JSON sidecar at
+ *     orders/<order_id>/recovery/<requirement_id>/<sha256>.json
+ *   (mirrors the recovery engine's upload_tokens.recovery_association_key;
+ *   keep the two in sync) recording {token, requirement_id, order_id,
+ *   customer_id, key, sha256, filename, uploaded_at}. The VM storage
+ *   scanner MUST (a) skip the JSON sidecars under
+ *   orders/<order_id>/recovery/ as documents (they are metadata, not
+ *   uploads) and (b) read each sidecar and resolve the upload through the
+ *   token-bound ingestion path (ingest.receive_upload_submission), which
+ *   re-verifies the token against recovery state. Until the scanner learns
+ *   (a), each sidecar may produce one review-queue entry as an
+ *   unclassifiable file.
  *
  * GET  ?t=<token>  -> minimal HTML upload form (after token verification).
  * POST ?t=<token>  -> multipart/form-data, field "file"; returns JSON
- *                     {ok:true, key, order_id, requirement_id, ...}.
+ *                     {ok:true, key, order_id, requirement_id,
+ *                      association_key, association_recorded, ...}.
  */
 import {
   parseRecoveryTokenScope,
@@ -201,6 +215,53 @@ export async function onRequestPost(context) {
     return json({ ok: false, error: "storage_error", filename }, 502);
   }
 
+  // Persist the token -> request association for the VM storage scanner
+  // (finding 7c). Layout mirrors the recovery engine's
+  // upload_tokens.recovery_association_key():
+  //   orders/<order_id>/recovery/<requirement_id>/<sha256>.json
+  // The scanner lists the orders/<order_id>/recovery/ prefix, reads each
+  // sidecar, and resolves the upload through the token-bound ingestion
+  // path instead of heuristic matching. The token is stored because the
+  // bucket is private and the scanner needs it to re-verify against
+  // recovery state; the token alone grants nothing outside its single
+  // requirement scope.
+  const associationKey =
+    `orders/${v.orderId}/recovery/${v.requirementId}/${hash}.json`;
+  const association = {
+    // Verified token (v.token): the only credential the recipient had.
+    // NOTE: an earlier patch version used a shorthand `token` here, which
+    // referenced an unbound variable and threw a ReferenceError on the
+    // success path; it must stay bound to v.token.
+    token: v.token,
+    requirement_id: v.requirementId,
+    order_id: v.orderId,
+    customer_id: v.customerId,
+    key,
+    sha256: hash,
+    filename,
+    size_bytes: bytes.byteLength,
+    detected_type: detected,
+    uploaded_at: new Date().toISOString(),
+    source: "recovery_upload_endpoint",
+  };
+  let associationRecorded = false;
+  try {
+    const assocBytes = new TextEncoder().encode(JSON.stringify(association));
+    await b2UploadBytes(env, {
+      fileName: associationKey,
+      contentType: "application/json",
+      bytes: assocBytes,
+      sha256Hex: await sha256HexOfBytes(assocBytes),
+    });
+    associationRecorded = true;
+  } catch (e) {
+    // The file itself is safely stored; report the degraded state rather
+    // than failing the upload (a retry would only create a duplicate).
+    // Without the sidecar the scanner falls back to heuristic matching.
+    console.error(
+      "recovery/upload: association write failed", e && e.message);
+  }
+
   // The file is inert bytes under the order's prefix until the VM's recovery
   // ingest picks it up (B2 prefix poll), re-validates the token against
   // recovery state, matches, validates, and reprocesses.
@@ -213,5 +274,7 @@ export async function onRequestPost(context) {
     size_bytes: bytes.byteLength,
     detected_type: detected,
     sha256: hash,
+    association_key: associationKey,
+    association_recorded: associationRecorded,
   });
 }
