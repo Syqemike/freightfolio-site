@@ -145,3 +145,16 @@
   .login-link { margin-left: 0; }
   .nav-inner { gap: 14px; flex-wrap: wrap; }
 }
+
+/* Unintrusive plan comparison */
+.linklike { background: none; border: none; padding: 0; color: #5a6b7e; font-size: .85rem; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; font-family: inherit; }
+.linklike:hover { color: var(--navy); }
+.plans-toggle-wrap { margin: 10px 0 0; }
+.plan-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-top: 1px solid #e3e8ee; font-size: .92rem; flex-wrap: wrap; }
+.plan-row:first-child { border-top: none; }
+.plan-name { font-weight: 700; color: var(--navy); }
+.plan-meta { color: #5a6b7e; font-size: .85rem; }
+.plan-row .spacer { flex: 1; }
+.plan-current { font-size: .78rem; font-weight: 700; color: #5a6b7e; background: #eef1f5; border-radius: 999px; padding: 3px 10px; }
+.plan-sub { font-size: .85rem; color: var(--navy); font-weight: 600; }
+.plans-note { font-size: .8rem; color: #5a6b7e; margin: 8px 0 0; }

@@ -61,6 +61,8 @@
           <h2>Document allowance</h2>
           <p class="muted small" id="allowance-text"></p>
           <div class="progress" role="progressbar" id="allowance-bar" aria-label="Document allowance used"><span style="width:0%"></span></div>
+          <p class="muted small plans-toggle-wrap"><button type="button" class="linklike" id="plans-toggle" aria-expanded="false" aria-controls="plans-panel">Need more room? Compare plans</button></p>
+          <div id="plans-panel" hidden></div>
         </div>
         <div class="app-card" style="margin-top:16px">
           <h2>Recent activity</h2>
@@ -77,9 +79,9 @@
           <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Drop files here or press Enter to choose files">
             <p><strong>Drag &amp; drop files here</strong></p>
             <p>or <span style="text-decoration:underline">choose files from your device</span></p>
-            <p class="small">PDF, JPG, PNG &mdash; up to 25 MB each. <span id="upload-remaining"></span></p>
+            <p class="small">PDF, JPG, PNG, or a ZIP of documents &mdash; up to 25 MB each. <span id="upload-remaining"></span></p>
           </div>
-          <input type="file" id="file-input" multiple accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" hidden>
+          <input type="file" id="file-input" multiple accept=".pdf,.jpg,.jpeg,.png,.zip,application/pdf,image/jpeg,image/png,application/zip" hidden>
           <div id="queue" aria-live="polite"></div>
         </div>
       </section>
@@ -165,6 +167,7 @@
 </footer>
 
 <script src="/js/nav.js"></script>
+<script src="/js/zip.js"></script>
 <script src="/js/workspace.js?v=20261010a"></script>
 </body>
 </html>

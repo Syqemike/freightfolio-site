@@ -86,9 +86,9 @@
         <div class="dropzone" id="up-dropzone" role="button" tabindex="0" aria-label="Choose files to upload">
           <div style="font-size:2rem" aria-hidden="true">&#8681;</div>
           <p><strong>Drag and drop files here</strong>, or click to browse</p>
-          <p class="hint">PDF, JPG, PNG only &middot; 25 MB per file &middot; max 10 files</p>
+          <p class="hint">PDF, JPG, PNG, or a ZIP of documents &middot; 25 MB per file &middot; max 10 files</p>
         </div>
-        <input type="file" id="up-input" multiple accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" hidden>
+        <input type="file" id="up-input" multiple accept=".pdf,.jpg,.jpeg,.png,.zip,application/pdf,image/jpeg,image/png,application/zip" hidden>
 
         <ul class="file-list" id="up-files"></ul>
 
@@ -135,6 +135,7 @@
   </div>
 </footer>
 
+<script src="/js/zip.js"></script>
 <script src="/js/upload.js?v=cspfix1"></script>
 </body>
 </html>

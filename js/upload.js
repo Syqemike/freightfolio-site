@@ -62,6 +62,7 @@
       li.className = "file-row";
       var statusText = "", statusClass = "working";
       if (item.state === "ready") { statusText = "Ready"; }
+      else if (item.state === "extracting") { statusText = "Extracting\u2026"; }
       else if (item.state === "hashing") { statusText = "Checking\u2026"; }
       else if (item.state === "uploading") { statusText = "Uploading"; }
       else if (item.state === "done") { statusText = "Uploaded"; statusClass = "ok"; }
@@ -98,11 +99,59 @@
 
   function addFiles(files) {
     var room = Math.min(MAX_FILES, allowance) - queue.length;
+    var canUnzip = typeof window.FFZip !== "undefined";
     Array.prototype.slice.call(files).forEach(function (f) {
+      if (canUnzip && FFZip.isZipName(f.name)) {
+        if (room <= 0) return;
+        enqueueZip(f);
+        return;
+      }
       if (room <= 0) return;
       room--;
-      var item = { file: f, state: "hashing", progress: 0, error: "", sha256: "", putUrl: "", key: "", contentType: "" };
+      enqueueFile(f);
+    });
+    render();
+  }
+
+  function removeItem(item) {
+    var i = queue.indexOf(item);
+    if (i >= 0) queue.splice(i, 1);
+  }
+
+  function enqueueZip(f) {
+    var item = { file: f, state: "extracting", progress: 0, error: "", sha256: "", putUrl: "", key: "", contentType: "" };
+    if (f.size > MAX_BYTES) {
+      item.state = "invalid";
+      item.error = "That ZIP is over 25 MB. Split it and try again.";
       queue.push(item);
+      render();
+      return;
+    }
+    queue.push(item);
+    render();
+    FFZip.unzipDocuments(f).then(function (docs) {
+      removeItem(item);
+      docs.forEach(function (d) {
+        var file;
+        try {
+          file = new File([d.blob], d.name, { type: d.blob.type });
+        } catch (e) {
+          file = d.blob;
+          try { file.name = d.name; } catch (ignored) {}
+        }
+        enqueueFile(file);
+      });
+      render();
+    }).catch(function (err) {
+      item.state = "invalid";
+      item.error = (err && err.message) || "Couldn't open that ZIP file.";
+      render();
+    });
+  }
+
+  function enqueueFile(f) {
+    var item = { file: f, state: "hashing", progress: 0, error: "", sha256: "", putUrl: "", key: "", contentType: "" };
+    queue.push(item);
       // Validate magic bytes from the first 8 bytes.
       var reader = new FileReader();
       reader.onload = function () {
@@ -125,8 +174,6 @@
         render();
       };
       reader.readAsArrayBuffer(f.slice(0, 8));
-    });
-    render();
   }
 
   function sha256Hex(buf) {

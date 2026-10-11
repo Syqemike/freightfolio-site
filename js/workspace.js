@@ -51,6 +51,7 @@
     wireUploads();
     wireHistory();
     wireAccount();
+    wirePlans();
     api("/api/me").then(function (r) {
       if (r.status === 401 || (r.body && !r.body.ok)) { showError(r); return; }
       state.me = r.body;
@@ -212,31 +213,75 @@
       renderQueueNote("No open upload batch right now. If you have an active plan, try reloading the page.");
       return;
     }
+    var canUnzip = typeof window.FFZip !== "undefined";
     Array.prototype.slice.call(files).forEach(function (f) {
-      var item = { file: f, state: "checking", progress: 0, error: "", sha256: "", putUrl: "", key: "", contentType: "" };
-      queue.push(item);
-      var reader = new FileReader();
-      reader.onload = function () {
-        var detected = detectType(reader.result);
-        if (f.size > MAX_BYTES) {
-          item.state = "invalid";
-          item.error = "Over 25 MB \u2014 shrink it or split it and try again.";
-        } else if (!detected) {
-          item.state = "invalid";
-          item.error = "Doesn\u2019t look like a PDF, JPG, or PNG. Renamed files are rejected.";
-        } else {
-          item.state = "ready";
-          item.detected = detected;
-        }
-        renderQueue();
-        maybeStart();
-      };
-      reader.onerror = function () {
-        item.state = "invalid"; item.error = "Couldn\u2019t read this file."; renderQueue(); maybeStart();
-      };
-      reader.readAsArrayBuffer(f.slice(0, 8));
+      if (canUnzip && FFZip.isZipName(f.name)) enqueueZip(f);
+      else enqueueFile(f);
     });
     renderQueue();
+  }
+
+  function removeItem(item) {
+    var i = queue.indexOf(item);
+    if (i >= 0) queue.splice(i, 1);
+  }
+
+  function enqueueZip(f) {
+    var item = { file: f, state: "extracting", progress: 0, error: "", sha256: "", putUrl: "", key: "", contentType: "" };
+    if (f.size > MAX_BYTES) {
+      item.state = "invalid";
+      item.error = "That ZIP is over 25 MB \u2014 split it and try again.";
+      queue.push(item);
+      renderQueue();
+      return;
+    }
+    queue.push(item);
+    renderQueue();
+    FFZip.unzipDocuments(f).then(function (docs) {
+      removeItem(item);
+      docs.forEach(function (d) {
+        var file;
+        try {
+          file = new File([d.blob], d.name, { type: d.blob.type });
+        } catch (e) {
+          file = d.blob; // very old browsers
+          try { file.name = d.name; } catch (ignored) {}
+        }
+        enqueueFile(file);
+      });
+      renderQueue();
+      maybeStart();
+    }).catch(function (err) {
+      item.state = "invalid";
+      item.error = (err && err.message) || "Couldn\u2019t open that ZIP file.";
+      renderQueue();
+      maybeStart();
+    });
+  }
+
+  function enqueueFile(f) {
+    var item = { file: f, state: "checking", progress: 0, error: "", sha256: "", putUrl: "", key: "", contentType: "" };
+    queue.push(item);
+    var reader = new FileReader();
+    reader.onload = function () {
+      var detected = detectType(reader.result);
+      if (f.size > MAX_BYTES) {
+        item.state = "invalid";
+        item.error = "Over 25 MB \u2014 shrink it or split it and try again.";
+      } else if (!detected) {
+        item.state = "invalid";
+        item.error = "Doesn\u2019t look like a PDF, JPG, or PNG. Renamed files are rejected.";
+      } else {
+        item.state = "ready";
+        item.detected = detected;
+      }
+      renderQueue();
+      maybeStart();
+    };
+    reader.onerror = function () {
+      item.state = "invalid"; item.error = "Couldn\u2019t read this file."; renderQueue(); maybeStart();
+    };
+    reader.readAsArrayBuffer(f.slice(0, 8));
   }
 
   function sha256Hex(buf) {
@@ -257,6 +302,7 @@
     q.innerHTML = queue.map(function (it, i) {
       var status = "";
       if (it.state === "checking") status = '<div class="qstatus">Checking file type\u2026</div>';
+      else if (it.state === "extracting") status = '<div class="qstatus">Extracting archive\u2026</div>';
       else if (it.state === "ready") status = '<div class="qstatus">Ready</div>';
       else if (it.state === "hashing") status = '<div class="qstatus">Preparing\u2026</div>';
       else if (it.state === "uploading") status = '<div class="qstatus">Uploading \u2014 ' + it.progress + '%</div>';
@@ -524,6 +570,46 @@
       $("account-details").innerHTML = html;
       $("retention-text").textContent = (a.retention && a.retention.summary) || "";
     });
+  }
+
+  function wirePlans() {
+    var t = $("plans-toggle"), panel = $("plans-panel");
+    if (!t || !panel) return;
+    t.addEventListener("click", function () {
+      var open = panel.hidden;
+      if (open) renderPlans();
+      panel.hidden = !open;
+      t.setAttribute("aria-expanded", String(open));
+      t.textContent = open ? "Hide plans" : "Need more room? Compare plans";
+    });
+  }
+
+  var UPGRADE_PLANS = [
+    { key: "starter", name: "Starter", price: "$39/mo", docs: "100 documents/mo", url: "https://buy.stripe.com/28E7sK4Rd6mq1X3cNnabK07" },
+    { key: "business", name: "Business", price: "$149/mo", docs: "400 documents/mo", url: "https://buy.stripe.com/aFa8wOabx8uy1X37t3abK08" },
+    { key: "premium", name: "Premium", price: "$369/mo", docs: "1,000 documents/mo", url: "https://buy.stripe.com/5kQ4gyabx9yC1X38x7abK09" }
+  ];
+
+  function currentPlanKey() {
+    var ent = state.me && state.me.entitlement;
+    if (ent && ent.kind === "subscription" && ent.plan) return ent.plan;
+    return null;
+  }
+
+  function renderPlans() {
+    var panel = $("plans-panel");
+    var cur = currentPlanKey();
+    var html = UPGRADE_PLANS.map(function (p) {
+      var isCur = cur === p.key;
+      var action = isCur
+        ? '<span class="plan-current">Current plan</span>'
+        : '<a class="plan-sub" href="' + p.url + '" target="_blank" rel="noopener">Subscribe</a>';
+      return '<div class="plan-row"><span class="plan-name">' + esc(p.name) + "</span>" +
+        '<span class="plan-meta">' + esc(p.price) + " \u00b7 " + esc(p.docs) + "</span>" +
+        '<span class="spacer"></span>' + action + "</div>";
+    }).join("");
+    html += '<p class="plans-note">Subscribing starts a new plan. Email <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a> and we\u2019ll cancel the old one so you\u2019re never double-billed.</p>';
+    panel.innerHTML = html;
   }
 
   document.addEventListener("DOMContentLoaded", boot);
