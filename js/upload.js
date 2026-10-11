@@ -362,5 +362,34 @@
       });
   }
 
+  // "Resend my upload link" form (bad-link state).
+  var resendBtn = el("up-resend-btn"), resendEmail = el("up-resend-email"),
+      resendStatus = el("up-resend-status");
+  if (resendBtn && resendEmail) {
+    resendBtn.addEventListener("click", function () {
+      var email = (resendEmail.value || "").trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        resendStatus.textContent = "Enter a valid email address.";
+        return;
+      }
+      resendBtn.disabled = true;
+      resendStatus.textContent = "Sending\u2026";
+      fetch("/api/upload-link/resend", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email }),
+      }).then(function () {
+        resendStatus.textContent =
+          "If that address has an order, a fresh link is on its way. Check your inbox (and spam).";
+        resendEmail.value = "";
+      }).catch(function () {
+        resendStatus.textContent =
+          "Something went wrong. Try again, or email hello@freightfolio.net.";
+      }).finally(function () {
+        resendBtn.disabled = false;
+      });
+    });
+  }
+
   init();
 })();

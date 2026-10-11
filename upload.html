@@ -69,7 +69,15 @@
       <div id="up-badlink" class="packet" hidden>
         <h3>This upload link is not valid.</h3>
         <p id="up-badlink-text">The link may have expired or already been used. Upload links are valid for 7 days after payment.</p>
-        <p>Email <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a> with your order ID and we will send you a fresh link.</p>
+        <h4 style="margin-top:1rem">Resend my upload link</h4>
+        <p class="hint">Enter the email address you used at checkout and we will send you a fresh link.</p>
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+          <input type="email" id="up-resend-email" placeholder="you@company.com"
+                 autocomplete="email" style="flex:1;min-width:200px;padding:.6rem .8rem;border:1px solid #cbd5e1;border-radius:.5rem">
+          <button class="btn btn-amber" id="up-resend-btn" type="button">Send fresh link</button>
+        </div>
+        <p class="hint" id="up-resend-status" role="status" style="margin-top:.5rem"></p>
+        <p class="fineprint">Still stuck? Email <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a> with your order ID.</p>
       </div>
 
       <!-- Already received -->
@@ -136,6 +144,6 @@
 </footer>
 
 <script src="/js/zip.js?v=1"></script>
-<script src="/js/upload.js?v=20261010d"></script>
+<script src="/js/upload.js?v=20261011a"></script>
 </body>
 </html>
