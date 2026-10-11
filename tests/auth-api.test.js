@@ -255,19 +255,50 @@ describe("cross-customer isolation", () => {
     assert.ok(body.files.every((f) => f.order_id !== orderB));
   });
 
-  it("A cannot download B's report (403); B can (302)", async () => {
+  it("A cannot download B's report (403); B can (200, proxied bytes)", async () => {
     const denied = await downloadReport({
       request: get(cookieA, `?order_id=${orderB}&file=report.xlsx`),
       env,
     });
     assert.equal(denied.status, 403);
 
-    const allowed = await downloadReport({
-      request: get(cookieB, `?order_id=${orderB}&file=report.xlsx`),
-      env,
-    });
-    assert.equal(allowed.status, 302);
-    assert.match(allowed.headers.get("location"), /X-Amz-Signature=/);
+    // Stub B2 for the proxied download (native API, not the S3 endpoint).
+    const realFetch = globalThis.fetch;
+    const envWithBucket = { ...env, B2_BUCKET_ID: "test-bucket-id-0001" };
+    globalThis.fetch = async (url, opts = {}) => {
+      const u = String(url);
+      if (u.includes("b2_authorize_account")) {
+        return Response.json({
+          authorizationToken: "t", accountId: "a",
+          apiInfo: { storageApi: { apiUrl: "https://api.test", downloadUrl: "https://f999.backblazeb2.com" } },
+          allowed: { bucketName: "test-intake-bucket" },
+        });
+      }
+      if (u.includes("b2_get_download_authorization")) {
+        return Response.json({ authorizationToken: "dl-token" });
+      }
+      if (u.startsWith("https://f999.backblazeb2.com/file/")) {
+        return new Response(new Uint8Array(Buffer.from("fake-bytes")), { status: 200 });
+      }
+      return realFetch(url, opts);
+    };
+    try {
+      const { _clearB2AuthCache } = await import("../lib/b2-native.js");
+      _clearB2AuthCache();
+      const allowed = await downloadReport({
+        request: get(cookieB, `?order_id=${orderB}&file=report.xlsx`),
+        env: envWithBucket,
+      });
+      assert.equal(allowed.status, 200);
+      assert.equal(allowed.headers.get("location"), null, "no redirect to storage");
+      const bytes = Buffer.from(await allowed.arrayBuffer()).toString();
+      assert.equal(bytes, "fake-bytes");
+      assert.match(allowed.headers.get("content-disposition"), /attachment/);
+    } finally {
+      globalThis.fetch = realFetch;
+      const { _clearB2AuthCache } = await import("../lib/b2-native.js");
+      _clearB2AuthCache();
+    }
   });
 
   it("A sees no reports; B sees his own", async () => {
