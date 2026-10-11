@@ -6,19 +6,38 @@
  * STRIPE_WEBHOOK_SECRET environment variable, logs verified events to the
  * EVENT_LOG KV namespace, and returns 200.
  *
- * INTAKE-SYSTEM BRANCH: on a verified `checkout.session.completed` whose
- * amount marks it as the $9.99 mini-pilot, this webhook also creates an order
- * record (lib/order-store.js) and sends the customer their upload link
- * (lib/notify.js). Idempotent on the Stripe event id: redeliveries return the
- * original order without duplicating it. Test-mode (livemode:false) events
- * create test orders only — no live data touched, no real emails sent.
+ * INTAKE-SYSTEM + WORKSPACE BRANCH: on verified events this webhook also:
+ *   - checkout.session.completed ($9.99 pilot) -> creates an order record,
+ *     attaches it to the customer record, and sends the upload-link emails.
+ *   - checkout.session.completed (subscription mode) -> links the Stripe
+ *     customer id to the customer record and sends the workspace invite.
+ *   - customer.subscription.created/updated/deleted, invoice.paid,
+ *     invoice.payment_failed -> maintains the subscription state on the
+ *     customer record (plan, status, billing period).
+ * Idempotent: order creation dedupes on the Stripe event id; subscription
+ * writes are natural upserts. Test-mode (livemode:false) events create test
+ * records only — no live data touched, no real emails sent.
  *
- * Notifications + pilot kickoff for other event types are still handled by the
- * hourly stripe-watch job on the ops side.
+ * Event types not handled here are still covered by the hourly stripe-watch
+ * job on the ops side.
  */
 
 import { createOrderFromPayment } from "../../lib/order-store.js";
-import { sendPaymentConfirmed, sendOpsNewOrder, uploadLinkFor } from "../../lib/notify.js";
+import {
+  sendPaymentConfirmed,
+  sendOpsNewOrder,
+  sendWorkspaceInvite,
+  uploadLinkFor,
+} from "../../lib/notify.js";
+import {
+  attachOrderToCustomer,
+  mapStripeCustomer,
+  customerForStripeCustomer,
+  upsertSubscription,
+  newCustomerRecord,
+  putCustomer,
+  getCustomer,
+} from "../../lib/customer.js";
 
 // The $9.99 mini-pilot is a one-time payment of 999 USD cents. Payment-link
 // sessions surface the amount in amount_total with currency "usd".
@@ -114,18 +133,16 @@ export async function onRequestPost(context) {
     });
   }
 
-  // INTAKE-SYSTEM BRANCH: verified pilot checkout -> order record + upload link.
+  // INTAKE-SYSTEM + WORKSPACE BRANCH: route the verified event.
   // Failures here are logged but never fail the webhook (Stripe must get its
   // 200; the EVENT_LOG record above is the durable proof the event arrived,
   // and stripe-watch can reconcile later).
   let intake = null;
-  if (event.type === "checkout.session.completed") {
-    try {
-      intake = await maybeCreatePilotOrder(env, event, request);
-    } catch (e) {
-      console.error("pilot order creation failed", e);
-      intake = { ok: false, error: "order_failed" };
-    }
+  try {
+    intake = await routeEvent(env, event, request);
+  } catch (e) {
+    console.error("event routing failed", event.type, e);
+    intake = { ok: false, error: "route_failed" };
   }
 
   return new Response(
@@ -138,10 +155,186 @@ export async function onRequestPost(context) {
 }
 
 /**
- * If the verified session is a paid $9.99 mini-pilot checkout, create the order
- * record and send the upload-link emails. Returns null for non-pilot sessions.
+ * Route a verified Stripe event to the intake/workspace handlers.
+ * Exported for unit testing. Every branch is idempotent: redeliveries of the
+ * same event id produce the same state (stripe_evt dedupe for orders, natural
+ * upsert for subscriptions).
+ *
+ * Handled types:
+ *   checkout.session.completed        — pilot payment (order) or new subscription (mapping + invite)
+ *   customer.subscription.created/updated — subscription state upsert
+ *   customer.subscription.deleted     — subscription marked canceled
+ *   invoice.paid                      — renewal: refresh period + status
+ *   invoice.payment_failed            — subscription marked past_due
+ * All other types return { handled: false } (stripe-watch reconciles).
  */
-async function maybeCreatePilotOrder(env, event, request) {
+export async function routeEvent(env, event, request) {
+  const type = event.type || "";
+  const obj = (event.data && event.data.object) || {};
+  const test = event.livemode === false; // Stripe test-mode events stay in test keys
+
+  switch (type) {
+    case "checkout.session.completed":
+      return handleCheckoutCompleted(env, event, obj, request, test);
+    case "customer.subscription.created":
+    case "customer.subscription.updated":
+      return handleSubscriptionUpsert(env, event, obj, test);
+    case "customer.subscription.deleted":
+      return handleSubscriptionDeleted(env, event, obj, test);
+    case "invoice.paid":
+      return handleInvoicePaid(env, event, obj, test);
+    case "invoice.payment_failed":
+      return handleInvoiceFailed(env, event, obj, test);
+    default:
+      return { handled: false, intake: null };
+  }
+}
+
+/** Extract the customer email from a checkout session object. */
+function sessionEmail(obj) {
+  return (
+    (obj.customer_details && obj.customer_details.email) ||
+    obj.customer_email ||
+    null
+  );
+}
+
+/**
+ * checkout.session.completed, all modes.
+ *  - $9.99 one-time pilot -> order record + upload-link emails (original flow),
+ *    now also attached to the customer record.
+ *  - subscription mode -> link stripe customer id to email, invite to workspace.
+ */
+async function handleCheckoutCompleted(env, event, session, request, test) {
+  const amount = session.amount_total ?? session.amount ?? null;
+  const currency = (session.currency || "").toLowerCase();
+  const paid = session.payment_status === "paid" || session.status === "complete";
+  const email = sessionEmail(session);
+
+  if (amount === PILOT_AMOUNT_CENTS && currency === PILOT_CURRENCY && paid) {
+    return { handled: true, intake: await maybeCreatePilotOrder(env, event, request, test) };
+  }
+
+  if (session.mode === "subscription" && paid) {
+    if (!email) {
+      console.error("subscription session has no customer email", event.id);
+      return { handled: true, intake: { ok: false, error: "no_email" } };
+    }
+    const stripeCustomerId = session.customer || null;
+    let customer = await getCustomer(env, email);
+    const isNew = !customer;
+    if (isNew) customer = newCustomerRecord(email);
+    if (test === true) customer.test = true;
+    await putCustomer(env, customer);
+    if (stripeCustomerId) await mapStripeCustomer(env, stripeCustomerId, email);
+
+    let invite = "skipped_test_mode";
+    if (!test && isNew) {
+      const r = await sendWorkspaceInvite(env, email, originOf(request, env));
+      invite = r.ok ? "sent" : "failed";
+      if (!r.ok) console.error("workspace invite failed", r.error);
+    }
+    return {
+      handled: true,
+      intake: { ok: true, kind: "subscription_checkout", is_new_customer: isNew, invite },
+    };
+  }
+
+  return { handled: false, intake: null }; // not ours — stripe-watch reconciles
+}
+
+/** customer.subscription.created / .updated -> upsert subscription state. */
+async function handleSubscriptionUpsert(env, event, obj, test) {
+  const stripeCustomerId = obj.customer || null;
+  let email = null;
+  const customer = await customerForStripeCustomer(env, stripeCustomerId);
+  if (customer) email = customer.email;
+  if (!email) {
+    console.error("subscription event has no resolvable customer", event.id, obj.id);
+    return { handled: true, intake: { ok: false, error: "no_customer" } };
+  }
+  const r = await upsertSubscription(env, { email, subscription: obj, test });
+  return { handled: true, intake: { ok: r.ok, kind: "subscription_upsert", test } };
+}
+
+/** customer.subscription.deleted -> mark canceled (history is kept). */
+async function handleSubscriptionDeleted(env, event, obj, test) {
+  const stripeCustomerId = obj.customer || null;
+  const customer = await customerForStripeCustomer(env, stripeCustomerId);
+  if (!customer) {
+    console.error("subscription.deleted has no resolvable customer", event.id, obj.id);
+    return { handled: true, intake: { ok: false, error: "no_customer" } };
+  }
+  const r = await upsertSubscription(env, {
+    email: customer.email,
+    subscription: { ...obj, status: "canceled" },
+    test,
+  });
+  return { handled: true, intake: { ok: r.ok, kind: "subscription_canceled", test } };
+}
+
+/** invoice.paid -> renewal: refresh subscription period from the invoice lines. */
+async function handleInvoicePaid(env, event, obj, test) {
+  const stripeCustomerId = obj.customer || null;
+  const subId = obj.subscription || null;
+  if (!subId) return { handled: false, intake: null }; // one-off invoice — not ours
+  let email = obj.customer_email || null;
+  if (!email) {
+    const customer = await customerForStripeCustomer(env, stripeCustomerId);
+    if (customer) email = customer.email;
+  }
+  // Repair the mapping when the invoice carries the email.
+  if (email && stripeCustomerId) await mapStripeCustomer(env, stripeCustomerId, email);
+  if (!email) {
+    console.error("invoice.paid has no resolvable customer", event.id, obj.id);
+    return { handled: true, intake: { ok: false, error: "no_customer" } };
+  }
+
+  const line = (obj.lines && obj.lines.data && obj.lines.data[0]) || {};
+  const price = line.price || {};
+  const r = await upsertSubscription(env, {
+    email,
+    subscription: {
+      id: subId,
+      customer: stripeCustomerId,
+      status: "active",
+      items: {
+        data: [
+          {
+            price,
+            current_period_start: line.period ? line.period.start : obj.period_start,
+            current_period_end: line.period ? line.period.end : obj.period_end,
+          },
+        ],
+      },
+      cancel_at_period_end: false,
+    },
+    test,
+  });
+  return { handled: true, intake: { ok: r.ok, kind: "invoice_paid", test } };
+}
+
+/** invoice.payment_failed -> mark the subscription past_due. */
+async function handleInvoiceFailed(env, event, obj, test) {
+  const stripeCustomerId = obj.customer || null;
+  const subId = obj.subscription || null;
+  if (!subId) return { handled: false, intake: null };
+  const customer = await customerForStripeCustomer(env, stripeCustomerId);
+  if (!customer || !customer.subscription) {
+    console.error("invoice.payment_failed has no resolvable subscription", event.id, obj.id);
+    return { handled: true, intake: { ok: false, error: "no_customer" } };
+  }
+  customer.subscription.status = "past_due";
+  customer.subscription.updated_at = new Date().toISOString();
+  await putCustomer(env, customer);
+  return { handled: true, intake: { ok: true, kind: "payment_failed", test } };
+}
+/**
+ * If the verified session is a paid $9.99 mini-pilot checkout, create the order
+ * record, attach it to the customer record, and send the upload-link emails.
+ * Idempotent on the Stripe event id (redeliveries return the original order).
+ */
+async function maybeCreatePilotOrder(env, event, request, test) {
   const session = (event.data && event.data.object) || {};
   const amount = session.amount_total ?? session.amount ?? null;
   const currency = (session.currency || "").toLowerCase();
@@ -161,14 +354,15 @@ async function maybeCreatePilotOrder(env, event, request) {
     return { ok: false, error: "no_email" };
   }
 
-  const test = event.livemode === false; // Stripe test-mode events stay in test keys
-
   const { order, created } = await createOrderFromPayment(env, {
     eventId: event.id || null,
     customerEmail: email,
     amountCents: PILOT_AMOUNT_CENTS,
     test,
   });
+
+  // Attach the order to the customer record (identity root for workspace login).
+  await attachOrderToCustomer(env, email, order.order_id, { test });
 
   if (!created) {
     return { ok: true, created: false, order_id: order.order_id }; // redelivery — deduped
@@ -191,7 +385,6 @@ async function maybeCreatePilotOrder(env, event, request) {
     email: emailStatus,
   };
 }
-
 function originOf(request, env) {
   if (env.PUBLIC_ORIGIN) return env.PUBLIC_ORIGIN;
   try {

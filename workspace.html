@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your workspace - Freightfolio</title>
+<meta name="description" content="Your Freightfolio customer workspace: upload documents, track processing, and download your completed billing reports.">
+<link rel="canonical" href="https://freightfolio.net/workspace/">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/style.css?v=20261009c">
+<link rel="stylesheet" href="/assets/workspace.css?v=20261010a">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFGYQ0XKBV"></script>
+<script src="/js/ga.js"></script>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="/" aria-label="Freightfolio home">
+      <span class="brand-word">Freight<span class="brand-light">folio</span><span class="brand-dot">.</span></span>
+    </a>
+    <span class="muted small" id="ws-user" style="color:rgba(255,255,255,.75)"></span>
+    <a class="login-link" href="/workspace/" aria-current="page">Workspace</a>
+    <button class="btn btn-amber btn-sm" id="signout-btn" type="button">Sign out</button>
+  </div>
+</header>
+
+<main class="app-shell">
+  <div class="container">
+
+    <div id="ws-loading" class="app-card">
+      <p class="muted">Loading your workspace&hellip;</p>
+    </div>
+
+    <div id="ws-error" class="app-card" hidden>
+      <h1>We couldn&rsquo;t load your workspace</h1>
+      <p class="muted" id="ws-error-msg">Your session may have expired.</p>
+      <p><a class="btn btn-amber" href="/login">Sign in again</a></p>
+    </div>
+
+    <div id="ws-app" hidden>
+      <h1 style="color:var(--navy)">Your workspace</h1>
+      <p class="muted" id="ws-plan-line"></p>
+
+      <div class="tabs" role="tablist" aria-label="Workspace sections">
+        <button class="tab" role="tab" id="tab-overview" aria-controls="panel-overview" aria-selected="true">Overview</button>
+        <button class="tab" role="tab" id="tab-uploads" aria-controls="panel-uploads" aria-selected="false" tabindex="-1">Uploads</button>
+        <button class="tab" role="tab" id="tab-history" aria-controls="panel-history" aria-selected="false" tabindex="-1">History</button>
+        <button class="tab" role="tab" id="tab-issues" aria-controls="panel-issues" aria-selected="false" tabindex="-1">Issues <span id="issues-count"></span></button>
+        <button class="tab" role="tab" id="tab-reports" aria-controls="panel-reports" aria-selected="false" tabindex="-1">Reports</button>
+        <button class="tab" role="tab" id="tab-account" aria-controls="panel-account" aria-selected="false" tabindex="-1">Account</button>
+      </div>
+
+      <!-- OVERVIEW -->
+      <section class="tabpanel active" id="panel-overview" role="tabpanel" aria-labelledby="tab-overview" tabindex="0">
+        <div class="stat-grid" id="overview-stats"></div>
+        <div class="app-card" style="margin-top:8px">
+          <h2>Document allowance</h2>
+          <p class="muted small" id="allowance-text"></p>
+          <div class="progress" role="progressbar" id="allowance-bar" aria-label="Document allowance used"><span style="width:0%"></span></div>
+        </div>
+        <div class="app-card" style="margin-top:16px">
+          <h2>Recent activity</h2>
+          <div id="overview-recent"></div>
+          <p style="margin-top:16px"><button class="btn btn-amber" type="button" data-goto-tab="uploads">Upload documents</button></p>
+        </div>
+      </section>
+
+      <!-- UPLOADS -->
+      <section class="tabpanel" id="panel-uploads" role="tabpanel" aria-labelledby="tab-uploads" tabindex="0" hidden>
+        <div class="app-card">
+          <h2>Upload documents</h2>
+          <p class="muted" id="upload-allowance-line"></p>
+          <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Drop files here or press Enter to choose files">
+            <p><strong>Drag &amp; drop files here</strong></p>
+            <p>or <span style="text-decoration:underline">choose files from your device</span></p>
+            <p class="small">PDF, JPG, PNG &mdash; up to 25 MB each. <span id="upload-remaining"></span></p>
+          </div>
+          <input type="file" id="file-input" multiple accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" hidden>
+          <div id="queue" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- HISTORY -->
+      <section class="tabpanel" id="panel-history" role="tabpanel" aria-labelledby="tab-history" tabindex="0" hidden>
+        <div class="app-card">
+          <h2>Upload history</h2>
+          <div class="toolbar">
+            <input type="search" id="hist-q" placeholder="Search filenames&hellip;" aria-label="Search filenames">
+            <select id="hist-status" aria-label="Filter by status">
+              <option value="all">All statuses</option>
+              <option value="received">Received</option>
+              <option value="processing">Processing</option>
+              <option value="needs_attention">Needs attention</option>
+              <option value="completed">Completed</option>
+            </select>
+            <select id="hist-order" aria-label="Filter by batch"><option value="">All batches</option></select>
+          </div>
+          <div class="table-wrap"><table class="data-table" id="hist-table">
+            <thead><tr><th>File</th><th>Batch</th><th>Received</th><th>Size</th><th>Status</th></tr></thead>
+            <tbody></tbody>
+          </table></div>
+          <p class="muted small" id="hist-empty" hidden>No documents match. Uploads you make will appear here.</p>
+        </div>
+      </section>
+
+      <!-- ISSUES -->
+      <section class="tabpanel" id="panel-issues" role="tabpanel" aria-labelledby="tab-issues" tabindex="0" hidden>
+        <div class="app-card">
+          <h2>Issues needing your attention</h2>
+          <p class="muted small">Only items our processing actually flagged &mdash; missing documents or discrepancies found in your paperwork. Nothing here is guessed.</p>
+          <div id="issues-list"></div>
+          <div class="empty" id="issues-empty" hidden>
+            <h3>No open issues</h3>
+            <p>Nothing in your paperwork needs attention right now.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- REPORTS -->
+      <section class="tabpanel" id="panel-reports" role="tabpanel" aria-labelledby="tab-reports" tabindex="0" hidden>
+        <div class="app-card">
+          <h2>Your reports</h2>
+          <p class="muted small">Completed billing-readiness reports and packets. Download links are private and expire after 15 minutes &mdash; request a fresh one any time.</p>
+          <div id="reports-list"></div>
+          <div class="empty" id="reports-empty" hidden>
+            <h3>No reports yet</h3>
+            <p>Your completed reports will appear here. Processing typically takes 3&ndash;5 business days after upload.</p>
+            <p><button class="btn btn-amber" type="button" data-goto-tab="uploads">Upload documents</button></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACCOUNT -->
+      <section class="tabpanel" id="panel-account" role="tabpanel" aria-labelledby="tab-account" tabindex="0" hidden>
+        <div class="app-card">
+          <h2>Account</h2>
+          <div id="account-details"></div>
+        </div>
+        <div class="app-card" style="margin-top:16px">
+          <h2>Data &amp; retention</h2>
+          <p class="muted small" id="retention-text"></p>
+          <div class="field" style="margin-top:12px">
+            <label for="delete-note">Request deletion of your data</label>
+            <textarea id="delete-note" rows="3" maxlength="1000" placeholder="Anything we should know (optional)"></textarea>
+            <p class="hint">We&rsquo;ll remove your files and account records by hand and confirm by email. There&rsquo;s no automated deletion &mdash; a real person handles it.</p>
+          </div>
+          <button class="btn" id="delete-request-btn" type="button">Send deletion request</button>
+          <p class="form-ok" id="delete-ok" role="status" hidden></p>
+          <p class="form-error" id="delete-error" role="alert" hidden></p>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="fineprint">&copy; 2026 Freightfolio. Your loads, billed. Your money, sooner. &middot; <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a></p>
+  </div>
+</footer>
+
+<script src="/js/nav.js"></script>
+<script src="/js/workspace.js?v=20261010a"></script>
+</body>
+</html>

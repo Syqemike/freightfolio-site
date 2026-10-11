@@ -24,8 +24,8 @@
  * Order of operations: storage verification first, KV write second, emails last.
  */
 
-import { verifyUploadToken } from "../../lib/tokens.js";
-import { getOrder, putOrder } from "../../lib/order-store.js";
+import { authorizeUpload } from "../../lib/upload-auth.js";
+import { putOrder } from "../../lib/order-store.js";
 import { headObject, verifyObjectMagicBytes } from "../../lib/storage.js";
 import { sendFilesReceived, sendOpsFilesReceived } from "../../lib/notify.js";
 
@@ -52,26 +52,12 @@ export async function onRequestPost(context) {
     return json({ ok: false, error: "bad_json" }, 400);
   }
 
-  const token = typeof body.token === "string" ? body.token : "";
-  const orderId = typeof body.order_id === "string" ? body.order_id : "";
-  if (!token || !orderId) return json({ ok: false, error: "missing_token" }, 401);
-
-  let order = await getOrder(env, orderId, { test: false });
-  let test = false;
-  if (!order) {
-    order = await getOrder(env, orderId, { test: true });
-    test = true;
-  }
-  if (!order) return json({ ok: false, error: "unknown_order" }, 404);
-
-  const v = await verifyUploadToken(token, orderId, env.UPLOAD_TOKEN_SECRET);
-  if (!v.ok) {
-    const status = v.reason === "expired" ? 410 : 401;
-    return json({ ok: false, error: "invalid_token", reason: v.reason }, status);
-  }
-  if (order.status !== "paid" && order.status !== "uploading") {
-    return json({ ok: false, error: "order_not_open", status: order.status }, 409);
-  }
+  const auth = await authorizeUpload(env, request, {
+    token: typeof body.token === "string" ? body.token : "",
+    order_id: typeof body.order_id === "string" ? body.order_id : "",
+  });
+  if (auth.error) return auth.error;
+  const { order, test } = auth;
 
   const uploads = Array.isArray(body.uploads) ? body.uploads : [];
   if (uploads.length === 0) return json({ ok: false, error: "no_uploads" }, 400);

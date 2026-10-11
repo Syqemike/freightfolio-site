@@ -22,8 +22,8 @@
  * or 4xx with { ok:false, error, ... } (per-file rejections are listed individually).
  */
 
-import { verifyUploadToken } from "../../lib/tokens.js";
-import { getOrder, putOrder } from "../../lib/order-store.js";
+import { authorizeUpload } from "../../lib/upload-auth.js";
+import { putOrder } from "../../lib/order-store.js";
 import { presignedPutUrl, objectKeyFor, MIME_BY_TYPE } from "../../lib/storage.js";
 
 export const MAX_FILE_BYTES = 25 * 1024 * 1024; // 25 MB per file
@@ -39,27 +39,6 @@ function json(data, status = 200) {
   });
 }
 
-async function loadAndAuthorize(env, body) {
-  const token = typeof body.token === "string" ? body.token : "";
-  const orderId = typeof body.order_id === "string" ? body.order_id : "";
-  if (!token || !orderId) return { error: json({ ok: false, error: "missing_token" }, 401) };
-
-  const order = await getOrder(env, orderId, { test: false });
-  const testOrder = order ? null : await getOrder(env, orderId, { test: true });
-  const resolved = order || testOrder;
-  if (!resolved) return { error: json({ ok: false, error: "unknown_order" }, 404) };
-
-  const v = await verifyUploadToken(token, orderId, env.UPLOAD_TOKEN_SECRET);
-  if (!v.ok) {
-    const status = v.reason === "expired" ? 410 : 401;
-    return { error: json({ ok: false, error: "invalid_token", reason: v.reason }, status) };
-  }
-  if (resolved.status !== "paid" && resolved.status !== "uploading") {
-    return { error: json({ ok: false, error: "order_not_open", status: resolved.status }, 409) };
-  }
-  return { order: resolved, test: !order };
-}
-
 export async function onRequestPost(context) {
   const { request, env } = context;
 
@@ -73,7 +52,7 @@ export async function onRequestPost(context) {
     return json({ ok: false, error: "bad_json" }, 400);
   }
 
-  const auth = await loadAndAuthorize(env, body);
+  const auth = await authorizeUpload(env, request, body);
   if (auth.error) return auth.error;
   const { order, test } = auth;
 
