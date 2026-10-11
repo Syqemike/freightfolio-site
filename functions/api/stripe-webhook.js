@@ -14,6 +14,10 @@
  *   - customer.subscription.created/updated/deleted, invoice.paid,
  *     invoice.payment_failed -> maintains the subscription state on the
  *     customer record (plan, status, billing period).
+ *   - charge.refunded -> marks the pilot order "refunded", revoking upload
+ *     access (refunded is not in OPEN_STATUSES).
+ *   - charge.dispute.created -> marks the order "disputed", revoking upload
+ *     access until the dispute is resolved.
  * Idempotent: order creation dedupes on the Stripe event id; subscription
  * writes are natural upserts. Test-mode (livemode:false) events create test
  * records only — no live data touched, no real emails sent.
@@ -22,7 +26,13 @@
  * job on the ops side.
  */
 
-import { createOrderFromPayment } from "../../lib/order-store.js";
+import {
+  createOrderFromPayment,
+  getOrderByStripeEvent,
+  getOrderByStripePI,
+  claimStripeEvent,
+  putOrder,
+} from "../../lib/order-store.js";
 import {
   sendPaymentConfirmed,
   sendOpsNewOrder,
@@ -166,6 +176,8 @@ export async function onRequestPost(context) {
  *   customer.subscription.deleted     — subscription marked canceled
  *   invoice.paid                      — renewal: refresh period + status
  *   invoice.payment_failed            — subscription marked past_due
+ *   charge.refunded                   — pilot order marked refunded (upload access revoked)
+ *   charge.dispute.created            — order marked disputed (upload access revoked)
  * All other types return { handled: false } (stripe-watch reconciles).
  */
 export async function routeEvent(env, event, request) {
@@ -185,6 +197,10 @@ export async function routeEvent(env, event, request) {
       return handleInvoicePaid(env, event, obj, test);
     case "invoice.payment_failed":
       return handleInvoiceFailed(env, event, obj, test);
+    case "charge.refunded":
+      return handleChargeRefunded(env, event, obj, test);
+    case "charge.dispute.created":
+      return handleDisputeCreated(env, event, obj, test);
     default:
       return { handled: false, intake: null };
   }
@@ -329,6 +345,68 @@ async function handleInvoiceFailed(env, event, obj, test) {
   await putCustomer(env, customer);
   return { handled: true, intake: { ok: true, kind: "payment_failed", test } };
 }
+
+/**
+ * charge.refunded -> revoke the order's upload access.
+ * A refunded pilot order must not retain paid upload/processing access.
+ * Sets status to "refunded" (not in OPEN_STATUSES, so upload-init rejects
+ * with 409). Idempotent: redeliveries of the same event are no-ops.
+ * Subscription-invoice refunds are flagged for manual review instead of
+ * auto-canceling, since a refund does not always mean the subscription ends.
+ */
+async function handleChargeRefunded(env, event, obj, test) {
+  const paymentIntentId = obj.payment_intent || null;
+  const chargeId = obj.id || null;
+  // Idempotency on the Stripe event id.
+  const already = await getOrderByStripeEvent(env, event.id, { test });
+  if (already && already.status === "refunded") {
+    return { handled: true, intake: { ok: true, kind: "charge_refunded", deduped: true } };
+  }
+  const order = await getOrderByStripePI(env, paymentIntentId, { test });
+  if (!order) {
+    // May be a subscription invoice refund or an order predating the
+    // payment-intent mapping; stripe-watch reconciles, ops reviews manually.
+    console.error("charge.refunded: no order for payment_intent", paymentIntentId, chargeId);
+    return { handled: true, intake: { ok: false, error: "no_order", charge: chargeId } };
+  }
+  if (order.status !== "refunded") {
+    order.status = "refunded";
+    order.refunded_at = new Date().toISOString();
+    order.refund_charge = chargeId;
+    await putOrder(env, order, { test });
+  }
+  // Record the event id so redeliveries dedupe.
+  await claimStripeEvent(env, event.id, order.order_id, { test });
+  return { handled: true, intake: { ok: true, kind: "charge_refunded", order_id: order.order_id } };
+}
+
+/**
+ * charge.dispute.created -> flag the order as disputed.
+ * Like refunds, a disputed (chargeback) order loses upload access until
+ * the dispute is resolved. Status "disputed" is not in OPEN_STATUSES.
+ */
+async function handleDisputeCreated(env, event, obj, test) {
+  const chargeId = obj.charge || null;
+  const already = await getOrderByStripeEvent(env, event.id, { test });
+  if (already && already.status === "disputed") {
+    return { handled: true, intake: { ok: true, kind: "dispute_created", deduped: true } };
+  }
+  // Best-effort: match via payment intent if the dispute carries it.
+  const paymentIntentId = obj.payment_intent || null;
+  const order = await getOrderByStripePI(env, paymentIntentId, { test });
+  if (!order) {
+    console.error("charge.dispute.created: no order for dispute", event.id, chargeId);
+    return { handled: true, intake: { ok: false, error: "no_order", charge: chargeId } };
+  }
+  if (order.status !== "disputed") {
+    order.status = "disputed";
+    order.disputed_at = new Date().toISOString();
+    order.dispute_charge = chargeId;
+    await putOrder(env, order, { test });
+  }
+  await claimStripeEvent(env, event.id, order.order_id, { test });
+  return { handled: true, intake: { ok: true, kind: "dispute_created", order_id: order.order_id } };
+}
 /**
  * If the verified session is a paid $9.99 mini-pilot checkout, create the order
  * record, attach it to the customer record, and send the upload-link emails.
@@ -358,6 +436,7 @@ async function maybeCreatePilotOrder(env, event, request, test) {
     eventId: event.id || null,
     customerEmail: email,
     amountCents: PILOT_AMOUNT_CENTS,
+    paymentIntentId: session.payment_intent || null,
     test,
   });
 

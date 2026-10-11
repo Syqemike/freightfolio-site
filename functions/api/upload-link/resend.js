@@ -56,13 +56,24 @@ export async function onRequestPost(context) {
   }
 
   // Resolve the order via the email index (test namespace first, then prod).
+  // The index is a JSON array of order IDs (newest last); older single-ID
+  // values are handled for backward compatibility.
   let order = null;
   let orderTestNs = false;
   for (const test of [true, false]) {
     const prefix = test ? "test:" : "";
     let orderId = null;
     try {
-      orderId = await kv.get(`${prefix}email:${emailHash}`);
+      const raw = await kv.get(`${prefix}email:${emailHash}`);
+      if (raw) {
+        try {
+          const parsed = JSON.parse(raw);
+          const ids = Array.isArray(parsed) ? parsed : [parsed];
+          orderId = ids[ids.length - 1] || null; // newest order
+        } catch {
+          orderId = raw; // legacy plain order ID
+        }
+      }
     } catch {
       continue;
     }
@@ -97,15 +108,16 @@ export async function onRequestPost(context) {
 
   const origin = new URL(request.url).origin;
   const link = uploadLinkFor(order, origin);
-  const sent = await sendUploadLinkResend(env, email, link);
 
-  if (sent.ok) {
-    try {
-      await kv.put(rlKey, String(hits + 1), { expirationTtl: RESEND_WINDOW_SECONDS });
-    } catch {
-      // Non-fatal: the email already went out.
-    }
+  // Increment the rate-limit counter BEFORE sending, so failed sends also
+  // count against the limit (prevents abuse via repeated failing attempts).
+  try {
+    await kv.put(rlKey, String(hits + 1), { expirationTtl: RESEND_WINDOW_SECONDS });
+  } catch {
+    // Non-fatal: continue with the send.
   }
+
+  await sendUploadLinkResend(env, email, link);
   return json({ ok: true });
 }
 

@@ -17,7 +17,7 @@
  */
 
 import { checkInternalKey } from "../../../lib/session.js";
-import { getOrder, putOrder } from "../../../lib/order-store.js";
+import { getOrder, putOrder, sha256HexAsync } from "../../../lib/order-store.js";
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -62,12 +62,63 @@ export async function onRequestPost(context) {
   const beforeReports = (order.report_files || []).length;
   order.files = (order.files || []).filter((f) => !keys.has(f.key));
   order.report_files = (order.report_files || []).filter((f) => !keys.has(f.key));
-  await putOrder(env, order, { test });
+  const removedFiles = beforeFiles - order.files.length;
+  const removedReports = beforeReports - order.report_files.length;
+
+  // Full cleanup: when the order has no files or reports left, delete the
+  // entire order record and its lookup mappings (email index, Stripe event
+  // and payment-intent mappings). Otherwise the KV accumulates orphaned
+  // metadata for orders whose B2 objects are long gone.
+  let orderDeleted = false;
+  if (order.files.length === 0 && order.report_files.length === 0) {
+    const kv = env.ORDER_KV;
+    const nsPrefix = test ? "test:" : "";
+    // Delete the order record itself.
+    await kv.delete(`${nsPrefix}order:${orderId}`);
+    // Delete the payment-intent mapping if present.
+    if (order.stripe_payment_intent) {
+      await kv.delete(`${nsPrefix}stripe_pi:${order.stripe_payment_intent}`);
+    }
+    // Delete the Stripe event mapping if present.
+    if (order.stripe_event_id) {
+      await kv.delete(`${nsPrefix}stripe_evt:${order.stripe_event_id}`);
+    }
+    // Remove this order from the email index array (keep other orders).
+    if (order.customer_email) {
+      const emailHash = await sha256HexAsync(
+        order.customer_email.trim().toLowerCase());
+      const emailKey = `${nsPrefix}email:${emailHash}`;
+      try {
+        const raw = await kv.get(emailKey);
+        if (raw) {
+          let ids;
+          try {
+            const parsed = JSON.parse(raw);
+            ids = Array.isArray(parsed) ? parsed : [parsed];
+          } catch {
+            ids = [raw];
+          }
+          ids = ids.filter((id) => id !== orderId);
+          if (ids.length === 0) {
+            await kv.delete(emailKey);
+          } else {
+            await kv.put(emailKey, JSON.stringify(ids));
+          }
+        }
+      } catch {
+        // Best effort; a stale index entry is harmless.
+      }
+    }
+    orderDeleted = true;
+  } else {
+    await putOrder(env, order, { test });
+  }
 
   return json({
     ok: true,
-    removed_files: beforeFiles - order.files.length,
-    removed_reports: beforeReports - order.report_files.length,
+    removed_files: removedFiles,
+    removed_reports: removedReports,
+    order_deleted: orderDeleted,
   });
 }
 

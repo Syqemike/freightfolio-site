@@ -42,7 +42,12 @@ export async function onRequestPost(context) {
   try {
     res = await fetch("https://api.resend.com/emails", {
       method: "POST",
-      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+        // Cloudflare bot protection 403s the default fetch User-Agent.
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+      },
       body: JSON.stringify({
         from: "Freightfolio <hello@freightfolio.net>",
         to: [opsInbox(env)],
