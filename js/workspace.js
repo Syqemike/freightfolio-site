@@ -429,8 +429,13 @@
       });
     }).catch(function (e) {
       uploading = false;
-      if (e.message === "signed_out") { showError({ status: 401 }); return; }
+      if (e.message === "signed_out") { showError({ status: 401 }); throw e; }
       renderQueueNote(e.message || "Something went wrong starting the upload.");
+    }).then(function () {
+      // Files that became ready while this batch was uploading go next.
+      maybeStart();
+    }, function () {
+      // signed_out: the error screen is already showing; do not retry.
     });
   }
 
