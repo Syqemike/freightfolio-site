@@ -19,6 +19,7 @@ import { onRequestGet as adminBatches } from "../functions/api/admin/batches.js"
 import { onRequestPost as adminAction } from "../functions/api/admin/action.js";
 import { onRequestPost as internalStatus } from "../functions/api/internal/status.js";
 import { onRequestPost as internalTestOrder } from "../functions/api/internal/test-order.js";
+import { onRequestPost as internalExpireFiles } from "../functions/api/internal/expire-files.js";
 import { onRequestPost as uploadInit } from "../functions/api/upload-init.js";
 import { routeEvent } from "../functions/api/stripe-webhook.js";
 import { createMagicToken, createSession, ADMIN_EMAIL } from "../lib/session.js";
@@ -405,6 +406,45 @@ describe("internal endpoints", () => {
     const order = await getOrder(env, body.order_id, { test: true });
     assert.equal(order.customer_email, "synth@example.com");
   });
+
+  it("expire-files removes swept keys from files and report_files", async () => {
+    const orderId = await makeCustomerWithOrder("expire@example.com");
+    let order = await getOrder(env, orderId, { test: true });
+    const oldKey = `orders/${orderId}/abc123/old.pdf`;
+    const keepKey = `orders/${orderId}/def456/keep.pdf`;
+    const oldReport = `orders/${orderId}/report/old-report.xlsx`;
+    order.files = [
+      { key: oldKey, name: "old.pdf" },
+      { key: keepKey, name: "keep.pdf" },
+    ];
+    order.report_files = [{ key: oldReport, name: "old-report.xlsx" }];
+    await putOrder(env, order, { test: true });
+
+    const { status, body } = await readJson(
+      await internalExpireFiles({
+        request: post({
+          internal_key: INTERNAL_KEY,
+          order_id: orderId,
+          keys: [oldKey, oldReport, "orders/someone-else/report/x.xlsx"],
+        }),
+        env,
+      })
+    );
+    assert.equal(status, 200);
+    assert.equal(body.ok, true);
+    assert.equal(body.removed_files, 1);
+    assert.equal(body.removed_reports, 1);
+    order = await getOrder(env, orderId, { test: true });
+    assert.deepEqual(order.files.map((f) => f.key), [keepKey]);
+    assert.deepEqual(order.report_files, []);
+  });
+
+  it("expire-files rejects a wrong internal key", async () => {
+    const r = await readJson(
+      await internalExpireFiles({ request: post({ internal_key: "wrong", order_id: "x", keys: [] }), env })
+    );
+    assert.equal(r.status, 401);
+  });
 });
 
 describe("upload-init with session auth", () => {
@@ -471,7 +511,7 @@ describe("account endpoints", () => {
     assert.equal(status, 200);
     assert.equal(body.plan.kind, "pilot");
     assert.equal(body.usage.allowance, 10);
-    assert.match(body.retention.summary, /under review|proposed/i);
+    assert.match(body.retention.summary, /30 days/i);
     assert.match(body.retention.malware_scanning, /not currently in place/);
   });
 

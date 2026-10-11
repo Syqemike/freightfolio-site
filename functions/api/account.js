@@ -63,11 +63,10 @@ export async function onRequestGet(context) {
       note: "Replies come from a real person, usually within one business day.",
     },
     retention: {
-      policy: "under_review",
+      policy: "30_day",
       summary:
-        "Your uploaded documents and reports are stored in private, encrypted storage. " +
-        "We are currently reviewing our retention schedule (a 30-day retention window is proposed but not yet final). " +
-        "Nothing is shared with third parties. Use the deletion request below and we will remove your files and account records manually.",
+        "Your uploaded documents and reports are stored in private, encrypted storage and automatically deleted 30 days after upload. " +
+        "Nothing is shared with third parties. You can also request earlier deletion below and we will remove your files and account records manually.",
       malware_scanning:
         "Files are checked for type and size on upload. Automated malware scanning is not currently in place.",
     },
