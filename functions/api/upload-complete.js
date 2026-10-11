@@ -26,7 +26,7 @@
 
 import { authorizeUpload } from "../../lib/upload-auth.js";
 import { putOrder } from "../../lib/order-store.js";
-import { headObject, verifyObjectMagicBytes } from "../../lib/storage.js";
+import { headObject, putObject, verifyObjectMagicBytes } from "../../lib/storage.js";
 import { sendFilesReceived, sendOpsFilesReceived } from "../../lib/notify.js";
 
 const MAX_FILE_BYTES = 25 * 1024 * 1024; // 25 MB per file (must match upload-init.js)
@@ -145,6 +145,20 @@ export async function onRequestPost(context) {
   for (const a of finalAccepted) order.files.push(a);
   if (finalAccepted.length > 0) order.status = "received";
   await putOrder(env, order, { test });
+
+  // Delivery addressing: the bridge's B2-fallback path has no Gmail/KV
+  // access, so persist the customer email alongside the order in B2.
+  if (finalAccepted.length > 0 && order.customer_email) {
+    const metaKey = `orders/${order.order_id}/customer.json`;
+    const metaBody = JSON.stringify({
+      order_id: order.order_id,
+      customer_email: order.customer_email,
+      test: !!test,
+      written_at: new Date().toISOString(),
+    });
+    const put = await putObject(env, metaKey, metaBody);
+    if (!put.ok) console.error("customer.json write failed", put.error);
+  }
 
   // Notifications last: storage + record are already durable.
   let emailStatus = "skipped";
