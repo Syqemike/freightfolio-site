@@ -294,6 +294,12 @@ function docStatus(result, label) {
 function renderResults(a, r) {
   var copy = STATUS_COPY[r.status];
 
+  // Hide outdated warning when new results are rendered
+  var warning = document.getElementById('result-outdated-warning');
+  if (warning) warning.style.display = 'none';
+  // Mark that results have been shown (for change detection)
+  window._checkerResultsShown = true;
+
   var banner = document.getElementById('result-banner');
   banner.setAttribute('data-status', r.status);
   document.getElementById('result-icon').textContent = copy.icon;
@@ -371,6 +377,21 @@ function initChecker() {
       trackEvent('billing_checker_started');
     }
     updateConditional(form);
+    // Mark results as outdated when answers change after results shown
+    if (window._checkerResultsShown) {
+      var banner = document.getElementById('result-banner');
+      if (banner) {
+        var warning = document.getElementById('result-outdated-warning');
+        if (!warning) {
+          warning = document.createElement('div');
+          warning.id = 'result-outdated-warning';
+          warning.style.cssText = 'background:#fef3c7;border:1px solid #f59e0b;border-radius:6px;padding:10px;margin-bottom:12px;font-weight:bold;color:#92400e;';
+          warning.textContent = '⚠ Answers changed — results below are outdated. Click "Check billing readiness" to recalculate.';
+          banner.parentNode.insertBefore(warning, banner);
+        }
+        warning.style.display = 'block';
+      }
+    }
   });
   updateConditional(form);
 
