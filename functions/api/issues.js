@@ -19,9 +19,12 @@ export async function onRequestGet(context) {
   const orders = await listCustomerOrders(env, session.email);
   const out = [];
   for (const o of orders) {
-    for (const i of o.issues || []) {
+    const issues = o.issues || [];
+    for (let idx = 0; idx < issues.length; idx++) {
+      const i = issues[idx];
       out.push({
         order_id: o.order_id,
+        issue_idx: idx,
         product: o.product,
         type: i.type,
         severity: i.severity,

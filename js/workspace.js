@@ -502,15 +502,14 @@
         btn.addEventListener("click", function () {
           var idx = parseInt(btn.getAttribute("data-dismiss-issue"), 10);
           var issue = issues[idx];
-          if (!issue) return;
+          if (!issue || issue.issue_idx === undefined) return;
           btn.disabled = true;
           btn.textContent = "Dismissing…";
           api("/api/issues/dismiss", {
             method: "POST",
             body: JSON.stringify({
               order_id: issue.order_id,
-              created_at: issue.created_at,
-              type: issue.type,
+              issue_idx: issue.issue_idx,
             }),
           }).then(function (r) {
             if (r.body && r.body.ok) {

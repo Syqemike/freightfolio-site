@@ -14,8 +14,8 @@ export async function onRequestPost(context) {
   const { session } = auth;
 
   const body = await request.json().catch(() => ({}));
-  const { order_id, created_at, type } = body;
-  if (!order_id || !created_at || !type) {
+  const { order_id, issue_idx } = body;
+  if (!order_id || issue_idx === undefined || issue_idx === null) {
     return json({ ok: false, error: "missing_fields" }, 400);
   }
 
@@ -23,16 +23,16 @@ export async function onRequestPost(context) {
   const order = orders.find((o) => o.order_id === order_id);
   if (!order) return json({ ok: false, error: "order_not_found" }, 404);
 
-  let found = false;
-  for (const i of order.issues || []) {
-    if (i.type === type && i.created_at === created_at && !i.dismissed) {
-      i.dismissed = true;
-      i.dismissed_at = new Date().toISOString();
-      found = true;
-      break;
-    }
+  const issues = order.issues || [];
+  const idx = parseInt(issue_idx, 10);
+  if (isNaN(idx) || idx < 0 || idx >= issues.length) {
+    return json({ ok: false, error: "issue_not_found" }, 404);
   }
-  if (!found) return json({ ok: false, error: "issue_not_found" }, 404);
+  const issue = issues[idx];
+  if (issue.dismissed) return json({ ok: false, error: "already_dismissed" }, 400);
+
+  issue.dismissed = true;
+  issue.dismissed_at = new Date().toISOString();
 
   // Save to the correct KV key — test orders live under the test: prefix.
   // order.test should be set, but fall back to checking both locations.
