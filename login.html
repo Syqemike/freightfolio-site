@@ -43,7 +43,27 @@
       <h1 style="margin-top:0">Sign in</h1>
       <p class="muted">Enter the email address you paid with. We&rsquo;ll send you a secure sign-in link &mdash; no password to remember. The link expires in 15 minutes and works once.</p>
 
-      <form id="login-form" novalidate>
+      <div class="login-tabs" style="display:flex;gap:8px;margin-bottom:16px">
+        <button type="button" class="btn btn-tab active" id="tab-password">Password</button>
+        <button type="button" class="btn btn-tab" id="tab-magic">Email link</button>
+      </div>
+
+      <form id="login-form-password" novalidate>
+        <div class="field">
+          <label for="pw-email">Email address</label>
+          <input type="email" id="pw-email" name="email" autocomplete="email" required
+                 placeholder="you@yourcompany.com">
+        </div>
+        <div class="field">
+          <label for="pw-password">Password</label>
+          <input type="password" id="pw-password" name="password" autocomplete="current-password" required
+                 placeholder="Your password">
+        </div>
+        <button class="btn btn-amber" type="submit" id="pw-submit">Sign in</button>
+        <p class="form-error" id="pw-error" role="alert" hidden></p>
+      </form>
+
+      <form id="login-form" novalidate hidden>
         <div class="field">
           <label for="email">Email address</label>
           <input type="email" id="email" name="email" autocomplete="email" required

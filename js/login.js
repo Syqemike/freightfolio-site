@@ -77,6 +77,67 @@
     return;
   }
 
+  // --- Tab switching ---
+  var tabPw = document.getElementById("tab-password");
+  var tabMagic = document.getElementById("tab-magic");
+  var pwForm = document.getElementById("login-form-password");
+  var pwEmail = document.getElementById("pw-email");
+  var pwPass = document.getElementById("pw-password");
+  var pwSubmit = document.getElementById("pw-submit");
+  var pwErr = document.getElementById("pw-error");
+
+  function selectTab(which) {
+    var isPw = which === "password";
+    tabPw.classList.toggle("active", isPw);
+    tabMagic.classList.toggle("active", !isPw);
+    pwForm.hidden = !isPw;
+    form.hidden = isPw;
+    verifyState.hidden = true;
+  }
+  if (tabPw && tabMagic) {
+    tabPw.addEventListener("click", function () { selectTab("password"); });
+    tabMagic.addEventListener("click", function () { selectTab("magic"); });
+  }
+
+  // --- Password login ---
+  if (pwForm) {
+    pwForm.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      hide(pwErr);
+      var email = (pwEmail.value || "").trim();
+      var password = pwPass.value || "";
+      if (!email || email.indexOf("@") < 0) {
+        showError(pwErr, "Please enter a valid email address.");
+        pwEmail.focus();
+        return;
+      }
+      if (!password) {
+        showError(pwErr, "Please enter your password.");
+        pwPass.focus();
+        return;
+      }
+      pwSubmit.disabled = true;
+      pwSubmit.textContent = "Signing in\u2026";
+      postJson("/api/auth/login", { email: email, password: password }).then(function (r) {
+        pwSubmit.disabled = false;
+        pwSubmit.textContent = "Sign in";
+        if (r.status === 200 && r.data && r.data.ok) {
+          window.location.replace("/workspace/");
+        } else if (r.status === 429) {
+          showError(pwErr, "Too many attempts. Please wait a little while and try again.");
+        } else if (r.data && r.data.error === "invalid_credentials") {
+          showError(pwErr, "Invalid email or password. If you haven't set a password yet, use the Email link tab to sign in, then set one in Account settings.");
+        } else {
+          showError(pwErr, "Something went wrong. Please try again.");
+        }
+      }).catch(function () {
+        pwSubmit.disabled = false;
+        pwSubmit.textContent = "Sign in";
+        showError(pwErr, "Couldn\u2019t reach the server. Check your connection and try again.");
+      });
+    });
+  }
+
   // --- Mode 2: request a link ---
   form.addEventListener("submit", function (ev) {
     ev.preventDefault();
