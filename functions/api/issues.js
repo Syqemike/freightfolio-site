@@ -37,7 +37,10 @@ export async function onRequestGet(context) {
   out.sort((a, b) => (rank[a.severity] ?? 3) - (rank[b.severity] ?? 3) ||
     (a.created_at < b.created_at ? 1 : -1));
 
-  return json({ ok: true, issues: out });
+  // Exclude dismissed issues — the customer has acknowledged them.
+  const visible = out.filter((i) => !i.dismissed);
+
+  return json({ ok: true, issues: visible });
 }
 
 export async function onRequest(context) {

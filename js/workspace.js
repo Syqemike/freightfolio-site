@@ -481,20 +481,50 @@
     api("/api/issues").then(function (r) {
       var issues = (r.body && r.body.issues) || [];
       $("issues-empty").hidden = issues.length > 0;
-      $("issues-list").innerHTML = issues.map(function (i) {
-        return '<div class="issue sev-' + esc(i.severity) + '">' +
+      $("issues-list").innerHTML = issues.map(function (i, idx) {
+        return '<div class="issue sev-' + esc(i.severity) + '" data-issue-idx="' + idx + '">' +
           "<h3>" + esc(issueTitle(i)) + " " + statusBadge(i.severity) + "</h3>" +
           "<p>" + esc(i.message) + "</p>" +
           (i.load ? '<p class="small muted">Affected load: ' + esc(i.load) + "</p>" : "") +
           (i.recommendation ? '<div class="rec"><strong>Recommended next step:</strong> ' + esc(i.recommendation) + "</div>" : "") +
           '<p class="small muted">Batch ' + esc(i.order_id) + " \u00b7 flagged " + esc(fmtDate(i.created_at)) + "</p>" +
-          '<p><button class="btn btn-sm" type="button" data-goto-tab="uploads">Upload more documents</button></p>' +
+          '<p><button class="btn btn-sm" type="button" data-goto-tab="uploads">Upload more documents</button> ' +
+          '<button class="btn btn-sm" type="button" data-dismiss-issue="' + idx + '">Dismiss</button></p>' +
           "</div>";
       }).join("");
       // wire the freshly rendered buttons
       $("issues-list").querySelectorAll("[data-goto-tab]").forEach(function (btn) {
         btn.addEventListener("click", function () {
           var i = tabIds.indexOf("uploads"); selectTab(i); $("tab-uploads").focus();
+        });
+      });
+      $("issues-list").querySelectorAll("[data-dismiss-issue]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var idx = parseInt(btn.getAttribute("data-dismiss-issue"), 10);
+          var issue = issues[idx];
+          if (!issue) return;
+          btn.disabled = true;
+          btn.textContent = "Dismissing…";
+          api("/api/issues/dismiss", {
+            method: "POST",
+            body: JSON.stringify({
+              order_id: issue.order_id,
+              created_at: issue.created_at,
+              type: issue.type,
+            }),
+          }).then(function (r) {
+            if (r.body && r.body.ok) {
+              loadIssues();
+              // refresh the tab badge count
+              if (typeof refreshMe === "function") refreshMe();
+            } else {
+              btn.disabled = false;
+              btn.textContent = "Dismiss";
+            }
+          }).catch(function () {
+            btn.disabled = false;
+            btn.textContent = "Dismiss";
+          });
         });
       });
     });
