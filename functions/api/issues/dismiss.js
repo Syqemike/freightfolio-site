@@ -3,9 +3,9 @@
  * Body: { order_id, created_at, type }. Marks the matching issue as dismissed
  * on the order record. Dismissed issues are hidden from the Issues tab.
  */
-import { json, requireSession } from "../../../lib/api-auth.js";
-import { listCustomerOrders } from "../../../lib/customer.js";
-import { putOrder } from "../../../lib/order-store.js";
+import { json, requireSession } from "../../../../lib/api-auth.js";
+import { listCustomerOrders } from "../../../../lib/customer.js";
+import { putOrder } from "../../../../lib/order-store.js";
 
 export async function onRequestPost(context) {
   const { request, env } = context;
