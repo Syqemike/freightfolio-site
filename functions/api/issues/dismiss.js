@@ -34,7 +34,26 @@ export async function onRequestPost(context) {
   }
   if (!found) return json({ ok: false, error: "issue_not_found" }, 404);
 
-  await putOrder(env, order, { test: order.test === true });
+  // Save to the correct KV key — test orders live under the test: prefix.
+  // order.test should be set, but fall back to checking both locations.
+  let saved = false;
+  if (order.test === true) {
+    await putOrder(env, order, { test: true });
+    saved = true;
+  } else if (order.test === false) {
+    await putOrder(env, order, { test: false });
+    saved = true;
+  } else {
+    // test flag missing — try test mode first, then production
+    const { getOrder } = await import("../../../../lib/order-store.js");
+    const testVersion = await getOrder(env, order.order_id, { test: true });
+    if (testVersion) {
+      await putOrder(env, order, { test: true });
+    } else {
+      await putOrder(env, order, { test: false });
+    }
+    saved = true;
+  }
 
   return json({ ok: true });
 }
