@@ -192,7 +192,8 @@
             <li>Email-forward intake &mdash; no new software</li>
           </ul>
           <p class="for">For 1&ndash;5 person shops where the invoice packet is the bottleneck.</p>
-          <a class="btn btn-outline" href="https://buy.stripe.com/28E7sK4Rd6mq1X3cNnabK07">Subscribe to Starter</a>
+          <label class="bundle-toggle"><input type="checkbox" data-bundle="starter"> Add Missing-Document Recovery (+$99/mo)</label>
+          <a class="btn btn-outline" data-base-href="https://buy.stripe.com/28E7sK4Rd6mq1X3cNnabK07" data-bundle-href="BUNDLE_STARTER_URL" data-base-label="Subscribe to Starter" href="https://buy.stripe.com/28E7sK4Rd6mq1X3cNnabK07">Subscribe to Starter</a>
         </div>
 
         <div class="price-card featured">
@@ -209,7 +210,8 @@
             <li>Priority support, same-day response on business days</li>
           </ul>
           <p class="for">For 5&ndash;20 person brokerages and forwarders that want the whole billing pipeline visible.</p>
-          <a class="btn btn-amber" href="https://buy.stripe.com/aFa8wOabx8uy1X37t3abK08">Subscribe to Business</a>
+          <label class="bundle-toggle"><input type="checkbox" data-bundle="business"> Add Missing-Document Recovery (+$99/mo)</label>
+          <a class="btn btn-amber" data-base-href="https://buy.stripe.com/aFa8wOabx8uy1X37t3abK08" data-bundle-href="BUNDLE_BUSINESS_URL" data-base-label="Subscribe to Business" href="https://buy.stripe.com/aFa8wOabx8uy1X37t3abK08">Subscribe to Business</a>
         </div>
 
         <div class="price-card">
@@ -226,7 +228,8 @@
             <li>Dedicated Slack/email channel</li>
           </ul>
           <p class="for">For forwarders and carriers with high volume, multiple locations, or custom document types.</p>
-          <a class="btn btn-outline" href="https://buy.stripe.com/5kQ4gyabx9yC1X38x7abK09">Subscribe to Premium</a>
+          <label class="bundle-toggle"><input type="checkbox" data-bundle="premium"> Add Missing-Document Recovery (+$99/mo)</label>
+          <a class="btn btn-outline" data-base-href="https://buy.stripe.com/5kQ4gyabx9yC1X38x7abK09" data-bundle-href="BUNDLE_PREMIUM_URL" data-base-label="Subscribe to Premium" href="https://buy.stripe.com/5kQ4gyabx9yC1X38x7abK09">Subscribe to Premium</a>
         </div>
       </div>
 
@@ -476,5 +479,31 @@
 </footer>
 
     <script src="/js/nav.js?v=mobilenav1"></script>
+    <script>
+    // Bundle toggle: "Add Missing-Document Recovery" checkbox on pricing tiers.
+    // When checked, the subscribe button switches to the bundle payment link
+    // (base plan + Recovery add-on in one checkout) and the label shows the total.
+    (function () {
+      var BUNDLE_TOTALS = { starter: "$138/mo", business: "$248/mo", premium: "$468/mo" };
+      document.querySelectorAll('input[data-bundle]').forEach(function (box) {
+        box.addEventListener("change", function () {
+          var card = box.closest(".price-card");
+          if (!card) return;
+          var btn = card.querySelector("a.btn[data-base-href]");
+          if (!btn) return;
+          if (box.checked) {
+            var bundleHref = btn.getAttribute("data-bundle-href");
+            // Placeholder until the real bundle links are created in Stripe.
+            if (!bundleHref || bundleHref.indexOf("BUNDLE_") === 0) return;
+            btn.href = bundleHref;
+            btn.textContent = btn.getAttribute("data-base-label") + " + Recovery (" + BUNDLE_TOTALS[box.getAttribute("data-bundle")] + ")";
+          } else {
+            btn.href = btn.getAttribute("data-base-href");
+            btn.textContent = btn.getAttribute("data-base-label");
+          }
+        });
+      });
+    })();
+    </script>
   </body>
 </html>

@@ -454,3 +454,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline
   .nav-links a { padding: 12px 4px; border-bottom: 1px solid rgba(255,255,255,.07); }
   .nav-links a:last-child { border-bottom: 0; }
 }
+
+/* Bundle toggle on pricing tiers */
+.bundle-toggle { display: flex; align-items: center; gap: 8px; margin: 12px 0; font-size: .9rem; cursor: pointer; color: inherit; }
+.bundle-toggle input[type="checkbox"] { width: 18px; height: 18px; accent-color: #f59e0b; cursor: pointer; flex-shrink: 0; }
