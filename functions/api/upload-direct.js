@@ -136,9 +136,10 @@ export async function onRequestPost(context) {
     detected_type: detected,
   };
   order.files = [...(order.files || []), record];
-  // Move paid/uploading orders to received (never regress processing/delivered).
-  const firstReceipt = order.status === "paid" || order.status === "uploading";
-  if (firstReceipt) order.status = "received";
+  // Move paid/uploading/delivered orders to received when new files arrive
+  // (never regress processing — the bridge is already working on it).
+  const needsProcessing = ["paid", "uploading", "delivered"].includes(order.status);
+  if (needsProcessing) order.status = "received";
   await putOrder(env, order, { test });
 
   // Notify once, when the order first reaches "received".
