@@ -67,8 +67,10 @@ export async function onRequestPost(context) {
 
   const isAdmin = email === ADMIN_EMAIL;
   const customer = await getCustomer(env, email);
+  // TEMP: allow michaelmccaryk@gmail.com while customer record is being restored
   const eligible =
     isAdmin ||
+    email === "michaelmccaryk@gmail.com" ||
     (customer &&
       (customer.orders.length > 0 || activeSubscription(customer.subscription)));
 
