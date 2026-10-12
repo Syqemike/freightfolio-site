@@ -307,6 +307,7 @@
       else if (it.state === "ready") status = '<div class="qstatus">Ready</div>';
       else if (it.state === "hashing") status = '<div class="qstatus">Preparing\u2026</div>';
       else if (it.state === "uploading") status = '<div class="qstatus">Uploading \u2014 ' + it.progress + '%</div>';
+      else if (it.state === "finalizing") status = '<div class="qstatus">Finalizing\u2026</div>';
       else if (it.state === "done") status = '<div class="qstatus ok">Uploaded \u2713</div>';
       else if (it.state === "error" || it.state === "invalid") status = '<div class="qstatus err">' + esc(it.error || "Rejected") + "</div>";
       return '<div class="queue-item"><div class="qname">' + esc(it.file.name) + '</div>' +
@@ -346,8 +347,18 @@
     return new Promise(function (resolve, reject) {
       var xhr = new XMLHttpRequest();
       xhr.open("POST", "/api/upload-direct", true);
+      xhr.timeout = 120000; // 2-minute timeout for the full request
       xhr.upload.onprogress = function (e) {
-        if (e.lengthComputable) onProgress(Math.round((e.loaded / e.total) * 100));
+        if (e.lengthComputable) {
+          var pct = Math.round((e.loaded / e.total) * 100);
+          if (pct >= 100) {
+            // Bytes sent; now waiting for server to finalize (B2 + KV).
+            it.state = "finalizing";
+            renderQueue();
+          } else {
+            onProgress(pct);
+          }
+        }
       };
       xhr.onload = function () {
         var body = null;
@@ -357,6 +368,7 @@
         reject(new Error(err === "unauthorized" || xhr.status === 401 ? "signed_out" : friendlyUploadError(err)));
       };
       xhr.onerror = function () { reject(new Error("Network error during upload.")); };
+      xhr.ontimeout = function () { reject(new Error("Upload timed out after 2 minutes. Please try again.")); };
       var fd = new FormData();
       fd.append("order_id", state.orderId);
       fd.append("file", it.file, it.file.name || "file");
@@ -366,7 +378,7 @@
 
   function friendlyUploadError(err) {
     switch (err) {
-      case "duplicate_content": return "This exact file was already uploaded.";
+      case "duplicate_content": return "This exact file was already uploaded. It's in your History tab.";
       case "too_large": return "Over 25 MB \u2014 shrink it or split it and try again.";
       case "bad_file_type": return "Doesn\u2019t look like a PDF, JPG, or PNG. Renamed files are rejected.";
       case "allowance_exhausted": return "You\u2019ve used your full document allowance for this period.";
@@ -392,7 +404,12 @@
           .catch(function (e) {
             if (e.message === "signed_out") { signedOut = true; throw e; }
             it.state = "error";
-            it.error = e.message + " You can re-add the file to retry.";
+            // Don't suggest retry for duplicates — the file is already there.
+            var msg = e.message || "";
+            if (msg.indexOf("already uploaded") === -1) {
+              msg += " You can re-add the file to retry.";
+            }
+            it.error = msg;
             renderQueue();
           });
       });
