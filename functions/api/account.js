@@ -38,10 +38,10 @@ export async function onRequestGet(context) {
           allowance_per_period: sub.allowance,
           current_period_end: sub.current_period_end,
           cancel_at_period_end: sub.cancel_at_period_end,
-          // Stripe customer portal: not offered — we do not hold a Stripe
-          // secret key server-side, so portal sessions cannot be created.
-          // Customers manage billing by emailing hello@freightfolio.net.
-          portal_url: null,
+          // Stripe customer portal: self-serve billing via /api/billing/portal.
+          // Customers manage payment methods, invoices, and cancellation
+          // themselves through Stripe's hosted portal.
+          portal_url: "/api/billing/portal",
         }
       : {
           kind: "pilot",

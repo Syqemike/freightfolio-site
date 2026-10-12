@@ -561,11 +561,33 @@
         (a.usage ? "<dt><strong>Usage</strong></dt><dd>" + esc(a.usage.used) + " of " + esc(a.usage.allowance) + " documents</dd>" : "") +
         "<dt><strong>Support</strong></dt><dd><a href='mailto:" + esc(a.support.email) + "'>" + esc(a.support.email) + "</a> \u2014 " + esc(a.support.note) + "</dd>" +
         "</dl>";
-      if (!plan.portal_url) {
+      if (plan.portal_url) {
+        html += '<p style="margin-top:16px"><button class="btn" id="manage-billing-btn" type="button">Manage billing</button> <span class="small muted">Update card, view invoices, or cancel via Stripe.</span></p><p class="form-error" id="billing-error" role="alert" hidden></p>';
+      } else {
         html += '<p class="small muted">To change or cancel billing, email <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a> and we\u2019ll take care of it.</p>';
       }
       $("account-details").innerHTML = html;
       $("retention-text").textContent = (a.retention && a.retention.summary) || "";
+      var mbBtn = $("manage-billing-btn");
+      if (mbBtn) {
+        mbBtn.addEventListener("click", function () {
+          mbBtn.disabled = true;
+          $("billing-error").hidden = true;
+          api("/api/billing/portal", { method: "POST" }).then(function (r) {
+            mbBtn.disabled = false;
+            if (r.body && r.body.ok && r.body.url) {
+              window.location.href = r.body.url;
+            } else {
+              $("billing-error").textContent = "Couldn\u2019t open the billing portal. Please email hello@freightfolio.net instead.";
+              $("billing-error").hidden = false;
+            }
+          }).catch(function () {
+            mbBtn.disabled = false;
+            $("billing-error").textContent = "Couldn\u2019t open the billing portal. Please email hello@freightfolio.net instead.";
+            $("billing-error").hidden = false;
+          });
+        });
+      }
     });
   }
 
