@@ -56,11 +56,11 @@ export async function onRequestPost(context) {
   }
 
   const ip = rateLimitId(request);
-  const rlEmail = await checkRateLimit(env, "auth-request-email", email, 5);
+  const rlEmail = await checkRateLimit(env, "auth-request-email", email, 20);
   if (!rlEmail.ok) {
     return json(GENERIC_OK, 429, { "retry-after": String(rlEmail.retryAfterSeconds) });
   }
-  const rlIp = await checkRateLimit(env, "auth-request-ip", ip, 20);
+  const rlIp = await checkRateLimit(env, "auth-request-ip", ip, 60);
   if (!rlIp.ok) {
     return json(GENERIC_OK, 429, { "retry-after": String(rlIp.retryAfterSeconds) });
   }
