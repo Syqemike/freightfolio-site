@@ -88,16 +88,23 @@
 
   function selectTab(which) {
     var isPw = which === "password";
-    tabPw.classList.toggle("active", isPw);
-    tabMagic.classList.toggle("active", !isPw);
-    pwForm.hidden = !isPw;
-    form.hidden = isPw;
-    verifyState.hidden = true;
+    if (tabPw) tabPw.classList.toggle("active", isPw);
+    if (tabMagic) tabMagic.classList.toggle("active", !isPw);
+    if (pwForm) pwForm.hidden = !isPw;
+    if (form) form.hidden = isPw;
+    if (verifyState) verifyState.hidden = true;
   }
-  if (tabPw && tabMagic) {
+  // Attach handlers - use both addEventListener and onclick for maximum compatibility
+  if (tabPw) {
     tabPw.addEventListener("click", function () { selectTab("password"); });
-    tabMagic.addEventListener("click", function () { selectTab("magic"); });
+    tabPw.onclick = function () { selectTab("password"); };
   }
+  if (tabMagic) {
+    tabMagic.addEventListener("click", function () { selectTab("magic"); });
+    tabMagic.onclick = function () { selectTab("magic"); };
+  }
+  // Expose globally for debugging
+  window.ffSelectTab = selectTab;
 
   // --- Password login ---
   if (pwForm) {
