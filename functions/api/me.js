@@ -73,7 +73,7 @@ export async function onRequestGet(context) {
   const awaiting = orders.filter((o) => ["received", "processing"].includes(o.status)).length;
   const completedReports = orders.reduce((n, o) => n + (o.report_files || []).length, 0);
   const openIssues = orders.reduce(
-    (n, o) => n + (o.issues || []).filter((i) => i.severity !== "low").length,
+    (n, o) => n + (o.issues || []).filter((i) => i.severity !== "low" && !i.dismissed).length,
     0
   );
 
