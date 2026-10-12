@@ -30,8 +30,8 @@ describe("recovery constants", () => {
     assert.equal(RA.RECOVERY.OVERAGE_CENTS_PER_REQUEST, 200);
     assert.equal(RA.RECOVERY.DEFAULT_OVERAGE_CAP_CENTS, 0);
   });
-  it("uses a placeholder payment link that must be created in the dashboard", () => {
-    assert.ok(RA.RECOVERY.PAYMENT_LINK.includes("REPLACE_ME"));
+  it("uses the live $99/mo Stripe payment link (never the pilot link)", () => {
+    assert.equal(RA.RECOVERY.PAYMENT_LINK, "https://buy.stripe.com/fZueVcerNbGKgRXcNnabK0c");
     assert.ok(!RA.RECOVERY.PAYMENT_LINK.includes("cNibJ083pbGKeJP6oZabK0b"),
       "must never reuse the one-time pilot link");
   });
