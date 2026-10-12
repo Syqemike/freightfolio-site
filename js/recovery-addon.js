@@ -23,7 +23,7 @@
     // recurring payment link in the Stripe dashboard and replace the value
     // below. NEVER invent a real-looking link and NEVER reuse the pilot link
     // (the pilot is one-time $9.99 and must never create a subscription).
-    PAYMENT_LINK: "https://buy.stripe.com/REPLACE_ME_CREATE_IN_DASHBOARD",
+    PAYMENT_LINK: "https://buy.stripe.com/fZueVcerNbGKgRXcNnabK0c",
     PRICE_CENTS: 9900,
     ALLOWANCE: 50,             // document requests included per month
     OVERAGE_CENTS_PER_REQUEST: 200, // $2.00 per request beyond allowance
