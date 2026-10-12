@@ -617,6 +617,57 @@
       }
       $("account-details").innerHTML = html;
       $("retention-text").textContent = (a.retention && a.retention.summary) || "";
+      // Password setup section
+      var pwHtml = '<div style="margin-top:24px;padding-top:16px;border-top:1px solid #e5e7eb">' +
+        '<h3 style="margin:0 0 8px">Password sign-in</h3>' +
+        '<p class="small muted" style="margin:0 0 12px">Set a password to sign in without waiting for an email link.</p>' +
+        '<div style="max-width:320px">' +
+        '<input type="password" id="new-password" placeholder="New password (8+ characters)" style="width:100%;margin-bottom:8px;padding:8px;border:1px solid #d1d5db;border-radius:6px" />' +
+        '<input type="password" id="confirm-password" placeholder="Confirm password" style="width:100%;margin-bottom:12px;padding:8px;border:1px solid #d1d5db;border-radius:6px" />' +
+        '<button class="btn" id="set-password-btn" type="button">Set password</button>' +
+        '<p class="form-error" id="password-error" role="alert" hidden style="margin-top:8px"></p>' +
+        '<p class="form-ok" id="password-ok" role="status" hidden style="margin-top:8px;color:green"></p>' +
+        '</div></div>';
+      $("account-details").insertAdjacentHTML("afterend", pwHtml);
+      var pwBtn = $("set-password-btn");
+      if (pwBtn) {
+        pwBtn.addEventListener("click", function () {
+          var pw = $("new-password").value;
+          var confirm = $("confirm-password").value;
+          $("password-error").hidden = true;
+          $("password-ok").hidden = true;
+          if (pw !== confirm) {
+            $("password-error").textContent = "Passwords don't match.";
+            $("password-error").hidden = false;
+            return;
+          }
+          if (pw.length < 8) {
+            $("password-error").textContent = "Password must be at least 8 characters.";
+            $("password-error").hidden = false;
+            return;
+          }
+          pwBtn.disabled = true;
+          api("/api/auth/set-password", {
+            method: "POST",
+            body: JSON.stringify({ password: pw }),
+          }).then(function (r) {
+            pwBtn.disabled = false;
+            if (r.body && r.body.ok) {
+              $("password-ok").textContent = "Password set! You can now sign in with email + password.";
+              $("password-ok").hidden = false;
+              $("new-password").value = "";
+              $("confirm-password").value = "";
+            } else {
+              $("password-error").textContent = (r.body && r.body.message) || "Couldn't set password. Try again.";
+              $("password-error").hidden = false;
+            }
+          }).catch(function () {
+            pwBtn.disabled = false;
+            $("password-error").textContent = "Network error. Try again.";
+            $("password-error").hidden = false;
+          });
+        });
+      }
       var mbBtn = $("manage-billing-btn");
       if (mbBtn) {
         mbBtn.addEventListener("click", function () {
