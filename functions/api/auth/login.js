@@ -8,7 +8,7 @@ import { json } from "../../../lib/api-auth.js";
 import { getCustomer } from "../../../lib/customer.js";
 import { verifyPassword } from "../../../lib/password.js";
 import { createSession, sessionCookie } from "../../../lib/session.js";
-import { checkRateLimit, rateLimitId } from "../../../lib/rate-limit.js";
+import { checkRateLimit, rateLimitId } from "../../../lib/session.js";
 
 const GENERIC_FAIL = { ok: false, error: "invalid_credentials", message: "Invalid email or password." };
 

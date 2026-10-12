@@ -3,9 +3,9 @@
  * Body: { order_id, created_at, type }. Marks the matching issue as dismissed
  * on the order record. Dismissed issues are hidden from the Issues tab.
  */
-import { json, requireSession } from "../../../../lib/api-auth.js";
-import { listCustomerOrders } from "../../../../lib/customer.js";
-import { putOrder } from "../../../../lib/order-store.js";
+import { json, requireSession } from "../../../lib/api-auth.js";
+import { listCustomerOrders } from "../../../lib/customer.js";
+import { putOrder } from "../../../lib/order-store.js";
 
 export async function onRequestPost(context) {
   const { request, env } = context;
@@ -58,7 +58,7 @@ export async function onRequestPost(context) {
     saved = true;
   } else {
     // test flag missing — try test mode first, then production
-    const { getOrder } = await import("../../../../lib/order-store.js");
+    const { getOrder } = await import("../../../lib/order-store.js");
     const testVersion = await getOrder(env, order.order_id, { test: true });
     if (testVersion) {
       await putOrder(env, order, { test: true });
