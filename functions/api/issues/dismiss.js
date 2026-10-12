@@ -14,8 +14,8 @@ export async function onRequestPost(context) {
   const { session } = auth;
 
   const body = await request.json().catch(() => ({}));
-  const { order_id, issue_idx } = body;
-  if (!order_id || issue_idx === undefined || issue_idx === null) {
+  const { order_id, issue_idx, created_at, type } = body;
+  if (!order_id) {
     return json({ ok: false, error: "missing_fields" }, 400);
   }
 
@@ -24,8 +24,21 @@ export async function onRequestPost(context) {
   if (!order) return json({ ok: false, error: "order_not_found" }, 404);
 
   const issues = order.issues || [];
-  const idx = parseInt(issue_idx, 10);
-  if (isNaN(idx) || idx < 0 || idx >= issues.length) {
+  let idx = -1;
+
+  // New format: direct index
+  if (issue_idx !== undefined && issue_idx !== null) {
+    const parsed = parseInt(issue_idx, 10);
+    if (!isNaN(parsed) && parsed >= 0 && parsed < issues.length) {
+      idx = parsed;
+    }
+  }
+  // Old format: match by type + created_at (for cached frontends)
+  if (idx === -1 && created_at && type) {
+    idx = issues.findIndex((i) => i.type === type && i.created_at === created_at && !i.dismissed);
+  }
+
+  if (idx === -1) {
     return json({ ok: false, error: "issue_not_found" }, 404);
   }
   const issue = issues[idx];
