@@ -47,7 +47,14 @@ import {
   newCustomerRecord,
   putCustomer,
   getCustomer,
+  createRecoveryEntitlement,
+  syncRecoverySubscription,
+  cancelRecoveryAddon,
+  markRecoveryPaid,
+  markRecoveryPaymentFailed,
+  addonItemFromSubscription,
 } from "../../lib/customer.js";
+import { isRecoveryAddonPrice } from "../../lib/recovery-entitlements.js";
 
 // The $9.99 mini-pilot is a one-time payment of 999 USD cents. Payment-link
 // sessions surface the amount in amount_total with currency "usd".
@@ -178,6 +185,13 @@ export async function onRequestPost(context) {
  *   invoice.payment_failed            — subscription marked past_due
  *   charge.refunded                   — pilot order marked refunded (upload access revoked)
  *   charge.dispute.created            — order marked disputed (upload access revoked)
+ *
+ * RECOVERY ADD-ON: subscription events whose price id matches the
+ * Missing-Document Recovery add-on (lib/recovery-entitlements.js) are
+ * intercepted BEFORE the amount-based base-plan mapping — a 9900-cent
+ * subscription never becomes a "starter" base plan — and routed to the
+ * customer.recovery entitlement handlers in lib/customer.js. New purchases
+ * land at status "awaiting_setup": payment alone never enables chasing.
  * All other types return { handled: false } (stripe-watch reconciles).
  */
 export async function routeEvent(env, event, request) {
@@ -216,6 +230,44 @@ function sessionEmail(obj) {
 }
 
 /**
+ * Price ids on a checkout session. Payment-link sessions do not always expand
+ * line_items in the webhook payload, so also honor an explicit metadata hint
+ * (metadata.recovery_addon = the add-on price id, set on the payment link).
+ * This detection is best-effort: customer.subscription.created is the
+ * authoritative source for the add-on entitlement.
+ */
+function sessionPriceIds(session) {
+  const ids = [];
+  const items = (session.line_items && session.line_items.data) || [];
+  for (const it of items) {
+    const pid = it && it.price && it.price.id;
+    if (pid) ids.push(pid);
+  }
+  const md = session.metadata || {};
+  if (md.price_id) ids.push(md.price_id);
+  if (md.recovery_addon) ids.push(md.recovery_addon);
+  return ids;
+}
+
+/** True when the checkout session includes the recovery add-on price. */
+function sessionHasRecoveryAddon(session) {
+  return sessionPriceIds(session).some(isRecoveryAddonPrice);
+}
+
+/** Split subscription items into [addonItems, baseItems]. */
+function partitionSubscriptionItems(sub) {
+  const items = (sub && sub.items && sub.items.data) || [];
+  const addon = [];
+  const base = [];
+  for (const it of items) {
+    const pid = it && it.price && it.price.id;
+    if (isRecoveryAddonPrice(pid)) addon.push(it);
+    else base.push(it);
+  }
+  return { addon, base };
+}
+
+/**
  * checkout.session.completed, all modes.
  *  - $9.99 one-time pilot -> order record + upload-link emails (original flow),
  *    now also attached to the customer record.
@@ -250,16 +302,43 @@ async function handleCheckoutCompleted(env, event, session, request, test) {
       invite = r.ok ? "sent" : "failed";
       if (!r.ok) console.error("workspace invite failed", r.error);
     }
+
+    // RECOVERY ADD-ON: a subscription checkout that includes the $99/mo
+    // add-on price creates the entitlement as "awaiting_setup" — payment
+    // alone NEVER enables chasing (see lib/customer.js eligibility rule).
+    // A managed_included customer is rejected as a duplicate purchase.
+    let recovery = null;
+    if (sessionHasRecoveryAddon(session)) {
+      const addonIds = sessionPriceIds(session).filter(isRecoveryAddonPrice);
+      const r = await createRecoveryEntitlement(env, email, {
+        stripeSubId: session.subscription || null,
+        priceId: addonIds[0] || null,
+        periodStart: null,
+        periodEnd: null,
+        test,
+      });
+      recovery = r.ok
+        ? { ok: true, status: r.recovery.status, deduped: r.deduped === true }
+        : { ok: false, error: r.error };
+      if (!r.ok) console.error("recovery add-on checkout rejected", event.id, r.error);
+    }
+
     return {
       handled: true,
-      intake: { ok: true, kind: "subscription_checkout", is_new_customer: isNew, invite },
+      intake: { ok: true, kind: "subscription_checkout", is_new_customer: isNew, invite, recovery },
     };
   }
 
   return { handled: false, intake: null }; // not ours — stripe-watch reconciles
 }
 
-/** customer.subscription.created / .updated -> upsert subscription state. */
+/**
+ * customer.subscription.created / .updated -> upsert subscription state.
+ * Add-on items are intercepted BEFORE the amount-based base-plan mapping: a
+ * 9900-cent subscription must never become a "starter" base plan. A
+ * subscription can carry both (bundled base plan + add-on); each side is
+ * routed independently.
+ */
 async function handleSubscriptionUpsert(env, event, obj, test) {
   const stripeCustomerId = obj.customer || null;
   let email = null;
@@ -269,8 +348,32 @@ async function handleSubscriptionUpsert(env, event, obj, test) {
     console.error("subscription event has no resolvable customer", event.id, obj.id);
     return { handled: true, intake: { ok: false, error: "no_customer" } };
   }
-  const r = await upsertSubscription(env, { email, subscription: obj, test });
-  return { handled: true, intake: { ok: r.ok, kind: "subscription_upsert", test } };
+  const { addon, base } = partitionSubscriptionItems(obj);
+  let recovery = null;
+  if (addon.length > 0) {
+    const r = await syncRecoverySubscription(env, email, obj, { test });
+    recovery = r.ok
+      ? { ok: true, status: r.recovery.status }
+      : { ok: false, error: r.error };
+    if (!r.ok) console.error("recovery subscription upsert rejected", event.id, r.error);
+  }
+  let baseUpsert = null;
+  if (base.length > 0) {
+    const baseSub = { ...obj, items: { data: base } };
+    const r = await upsertSubscription(env, { email, subscription: baseSub, test });
+    baseUpsert = { ok: r.ok, error: r.error || null };
+  }
+  if (addon.length === 0 && base.length === 0) {
+    // No items (shouldn't happen) — fall back to the legacy path so nothing
+    // is silently dropped.
+    const r = await upsertSubscription(env, { email, subscription: obj, test });
+    baseUpsert = { ok: r.ok, error: r.error || null };
+  }
+  const ok = (recovery === null || recovery.ok) && (baseUpsert === null || baseUpsert.ok);
+  return {
+    handled: true,
+    intake: { ok, kind: "subscription_upsert", test, recovery, base: baseUpsert },
+  };
 }
 
 /** customer.subscription.deleted -> mark canceled (history is kept). */
@@ -281,15 +384,42 @@ async function handleSubscriptionDeleted(env, event, obj, test) {
     console.error("subscription.deleted has no resolvable customer", event.id, obj.id);
     return { handled: true, intake: { ok: false, error: "no_customer" } };
   }
-  const r = await upsertSubscription(env, {
-    email: customer.email,
-    subscription: { ...obj, status: "canceled" },
-    test,
-  });
-  return { handled: true, intake: { ok: r.ok, kind: "subscription_canceled", test } };
+  const { addon, base } = partitionSubscriptionItems(obj);
+  // Deleted payloads sometimes omit items; also match on the stored sub id.
+  const isAddonSub =
+    addon.length > 0 ||
+    (customer.recovery &&
+      customer.recovery.stripe_addon_sub_id &&
+      customer.recovery.stripe_addon_sub_id === obj.id);
+  let recovery = null;
+  if (isAddonSub && customer.recovery && customer.recovery.entitlement === "addon") {
+    const r = await cancelRecoveryAddon(env, customer.email, obj, { test });
+    recovery = r.ok ? { ok: true, status: r.recovery.status } : { ok: false, error: r.error };
+  }
+  let baseCanceled = null;
+  if (base.length > 0 || !isAddonSub) {
+    const baseSub = { ...obj, status: "canceled", items: { data: base } };
+    const r = await upsertSubscription(env, {
+      email: customer.email,
+      subscription: baseSub,
+      test,
+    });
+    baseCanceled = { ok: r.ok, error: r.error || null };
+  }
+  const ok = (recovery === null || recovery.ok) && (baseCanceled === null || baseCanceled.ok);
+  return {
+    handled: true,
+    intake: { ok, kind: "subscription_canceled", test, recovery, base: baseCanceled },
+  };
 }
 
-/** invoice.paid -> renewal: refresh subscription period from the invoice lines. */
+/**
+ * invoice.paid -> renewal: refresh subscription period from the invoice lines.
+ * Add-on lines are routed to the recovery entitlement (allowance resets ONLY
+ * when Stripe advances current_period_start — never on plan changes or
+ * duplicate events); base-plan lines keep the legacy path. A bundled invoice
+ * updates both sides.
+ */
 async function handleInvoicePaid(env, event, obj, test) {
   const stripeCustomerId = obj.customer || null;
   const subId = obj.subscription || null;
@@ -306,37 +436,93 @@ async function handleInvoicePaid(env, event, obj, test) {
     return { handled: true, intake: { ok: false, error: "no_customer" } };
   }
 
-  const line = (obj.lines && obj.lines.data && obj.lines.data[0]) || {};
-  const price = line.price || {};
-  const r = await upsertSubscription(env, {
-    email,
-    subscription: {
-      id: subId,
-      customer: stripeCustomerId,
-      status: "active",
-      items: {
-        data: [
-          {
-            price,
-            current_period_start: line.period ? line.period.start : obj.period_start,
-            current_period_end: line.period ? line.period.end : obj.period_end,
-          },
-        ],
+  const lines = (obj.lines && obj.lines.data) || [];
+  const addonLines = lines.filter((l) => l && l.price && isRecoveryAddonPrice(l.price.id));
+  const baseLines = lines.filter((l) => !l || !l.price || !isRecoveryAddonPrice(l.price && l.price.id));
+  const prorated = lines.some((l) => l && l.proration === true);
+
+  let recovery = null;
+  if (addonLines.length > 0) {
+    const line = addonLines[0];
+    const r = await markRecoveryPaid(env, email, {
+      subId,
+      periodStart: line.period ? line.period.start : obj.period_start,
+      periodEnd: line.period ? line.period.end : obj.period_end,
+      prorated,
+      invoiceId: obj.id || null,
+      test,
+    });
+    recovery = r.ok
+      ? { ok: true, status: r.recovery.status, period_advanced: r.period_advanced }
+      : { ok: false, error: r.error };
+    if (!r.ok) console.error("recovery invoice.paid rejected", event.id, r.error);
+  }
+
+  let basePaid = null;
+  if (baseLines.length > 0) {
+    const line = baseLines[0];
+    const price = line.price || {};
+    const r = await upsertSubscription(env, {
+      email,
+      subscription: {
+        id: subId,
+        customer: stripeCustomerId,
+        status: "active",
+        items: {
+          data: [
+            {
+              price,
+              current_period_start: line.period ? line.period.start : obj.period_start,
+              current_period_end: line.period ? line.period.end : obj.period_end,
+            },
+          ],
+        },
+        cancel_at_period_end: false,
       },
-      cancel_at_period_end: false,
-    },
-    test,
-  });
-  return { handled: true, intake: { ok: r.ok, kind: "invoice_paid", test } };
+      test,
+    });
+    basePaid = { ok: r.ok, error: r.error || null };
+  }
+
+  if (addonLines.length === 0 && baseLines.length === 0) {
+    return { handled: false, intake: null }; // no usable lines — stripe-watch reconciles
+  }
+  const ok = (recovery === null || recovery.ok) && (basePaid === null || basePaid.ok);
+  return { handled: true, intake: { ok, kind: "invoice_paid", test, recovery, base: basePaid } };
 }
 
-/** invoice.payment_failed -> mark the subscription past_due. */
+/**
+ * invoice.payment_failed -> past_due (+ 7-day grace for the add-on; chasing
+ * continues during grace). Routed by subscription id: add-on sub -> recovery
+ * entitlement, base sub -> legacy base subscription. Idempotent: redeliveries
+ * do not extend the grace window.
+ */
 async function handleInvoiceFailed(env, event, obj, test) {
   const stripeCustomerId = obj.customer || null;
   const subId = obj.subscription || null;
   if (!subId) return { handled: false, intake: null };
   const customer = await customerForStripeCustomer(env, stripeCustomerId);
-  if (!customer || !customer.subscription) {
+  if (!customer) {
+    console.error("invoice.payment_failed has no resolvable subscription", event.id, obj.id);
+    return { handled: true, intake: { ok: false, error: "no_customer" } };
+  }
+  const isAddonSub =
+    customer.recovery &&
+    customer.recovery.entitlement === "addon" &&
+    customer.recovery.stripe_addon_sub_id === subId;
+  if (isAddonSub) {
+    const r = await markRecoveryPaymentFailed(env, customer.email, { subId, test });
+    return {
+      handled: true,
+      intake: {
+        ok: r.ok,
+        kind: "payment_failed",
+        test,
+        recovery: r.ok ? { ok: true, status: r.recovery.status } : { ok: false, error: r.error },
+      },
+    };
+  }
+  if (!customer.subscription) {
     console.error("invoice.payment_failed has no resolvable subscription", event.id, obj.id);
     return { handled: true, intake: { ok: false, error: "no_customer" } };
   }

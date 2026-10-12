@@ -76,12 +76,78 @@
       if (r.status === 200 && r.body && r.body.ok && r.body.role === "admin") {
         $("admin-app").hidden = false;
         loadBatches(true);
+        loadRecoveryAdmin();
       } else {
         $("admin-denied").hidden = false;
       }
     }).catch(function () {
       $("admin-loading").hidden = true;
       $("admin-denied").hidden = false;
+    });
+  }
+
+  /* ---------- recovery add-on (read-only; backend owned by billing workstream) ---------- */
+  // GET /api/admin/recovery is an assumed contract from the billing workstream.
+  // Shape: { ok, entitlements: [{email, entitlement, status, requests_used,
+  // requests_remaining, overage_cap_cents, overage_used_cents, reauth_required}],
+  // exceptions: [...], audit: [...] }. The managed_included flag control stays
+  // disabled until the admin API contract supports writes.
+  function loadRecoveryAdmin() {
+    var box = $("recovery-admin");
+    var RA = (typeof window !== "undefined" && window.RecoveryAddon) ? window.RecoveryAddon : null;
+    var path = RA ? RA.ENDPOINTS.admin : "/api/admin/recovery";
+    api(path).then(function (r) {
+      if (!r.body || !r.body.ok) {
+        box.innerHTML = "<p class='muted'>Recovery admin data is not available yet " +
+          "(the billing workstream has not wired the endpoint). No action needed.</p>";
+        return;
+      }
+      var b = r.body;
+      var html = "";
+      var ents = b.entitlements || [];
+      html += "<h2>Entitlements (" + ents.length + ")</h2>";
+      if (!ents.length) {
+        html += "<p class='muted'>No customers on the Recovery add-on.</p>";
+      } else {
+        html += '<div class="table-wrap"><table class="data-table"><thead><tr>' +
+          "<th>Customer</th><th>Entitlement</th><th>Status</th><th>Used / allowance</th>" +
+          "<th>Overage cap</th><th>Overage used</th><th>Reauth</th></tr></thead><tbody>" +
+          ents.map(function (e) {
+            var label = RA ? RA.entitlementLabel(e.entitlement) : e.entitlement;
+            var st = RA ? RA.statusLabel(e.status) : e.status;
+            var money = RA ? RA.fmtMoney : function (c) { return "$" + (Number(c || 0) / 100).toFixed(2); };
+            return "<tr><td class='small'>" + esc(e.email || "") + "</td><td>" + esc(label) + "</td>" +
+              "<td>" + statusBadge(e.status || "") + " " + esc(st) + "</td>" +
+              "<td>" + esc(e.requests_used) + " / " + esc(e.allowance != null ? e.allowance : 50) + "</td>" +
+              "<td>" + esc(money(e.overage_cap_cents)) + "</td>" +
+              "<td>" + esc(money(e.overage_used_cents)) + "</td>" +
+              "<td>" + (e.reauth_required ? "Yes" : "No") + "</td></tr>";
+          }).join("") + "</tbody></table></div>";
+      }
+      var excs = b.exceptions || [];
+      html += "<h2 style='margin-top:18px'>Exceptions and failures (" + excs.length + ")</h2>";
+      html += excs.length
+        ? excs.map(function (x) {
+            return '<div class="issue sev-' + esc(x.severity || "medium") + '"><h3>' + esc(x.title || "Exception") + "</h3>" +
+              "<p>" + esc(x.message || "") + "</p>" +
+              (x.recommendation ? '<div class="rec"><strong>Recommended next step:</strong> ' + esc(x.recommendation) + "</div>" : "") + "</div>";
+          }).join("")
+        : "<p class='muted'>None.</p>";
+      var audit = b.audit || [];
+      html += "<h2 style='margin-top:18px'>Audit history (" + audit.length + ")</h2>";
+      html += audit.length
+        ? '<ul class="audit-log">' + audit.map(function (a) {
+            return "<li class='small'>" + esc(a.at || "") + " \u2014 " + esc(a.actor || "") +
+              ": " + esc(a.action || "") + (a.detail ? " (" + esc(a.detail) + ")" : "") + "</li>";
+          }).join("") + "</ul>"
+        : "<p class='muted'>No audit entries yet.</p>";
+      html += "<h2 style='margin-top:18px'>Managed-billing inclusion</h2>" +
+        '<p class="muted small">The <em>managed_included</em> entitlement flag is controlled by the add-on backend contract, which does not expose a write path yet. The control below is disabled until it does.</p>' +
+        '<p><select id="recovery-managed-flag" disabled aria-label="Managed inclusion flag">' +
+        '<option>Managed inclusion (unavailable, read-only)</option></select></p>';
+      box.innerHTML = html;
+    }).catch(function () {
+      box.innerHTML = "<p class='muted'>Could not load recovery admin data. Refresh to retry.</p>";
     });
   }
 

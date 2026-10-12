@@ -18,6 +18,7 @@ import {
   docsUsed,
   PLANS,
 } from "../../lib/customer.js";
+import { recoverySummary } from "../../lib/recovery-api.js";
 
 function orderSummary(o) {
   return {
@@ -102,6 +103,12 @@ export async function onRequestGet(context) {
       completed_reports: completedReports,
       open_issues: openIssues,
     },
+    // Missing-Document Recovery add-on ($99/mo): null until the customer has
+    // a recovery record (entitlement "addon" or "managed_included"). Drives
+    // the workspace Recovery tab (upsell / onboarding / active management).
+    recovery: customer.recovery && customer.recovery.entitlement !== "none"
+      ? recoverySummary(customer.recovery)
+      : null,
     orders: orders.map(orderSummary),
   });
 }
