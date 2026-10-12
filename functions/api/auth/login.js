@@ -45,7 +45,7 @@ export async function onRequestPost(context) {
 
   // Success: create session
   const session = await createSession(env, email);
-  const cookie = sessionCookie(session.id, request);
+  const cookie = sessionCookie(session.cookieValue, request);
   return json({ ok: true }, 200, { "set-cookie": cookie });
 }
 

@@ -226,7 +226,7 @@ describe("subscription lifecycle", () => {
   it("unknown event types are left for stripe-watch", async () => {
     const r = await routeEvent(
       env,
-      { id: "evt_x", type: "charge.refunded", livemode: false, data: { object: {} } },
+      { id: "evt_x", type: "payout.paid", livemode: false, data: { object: {} } },
       request()
     );
     assert.equal(r.handled, false);

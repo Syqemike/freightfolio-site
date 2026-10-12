@@ -16,7 +16,9 @@
  *   - order is open for uploads and belongs to the caller
  *   - file present, 1 byte .. 25 MB
  *   - magic bytes: PDF / JPG / PNG only (extension is ignored)
- *   - SHA-256 not already in order.files (duplicate rejection)
+ *   - duplicate content is ACCEPTED (duplicate-content rejection was removed
+ *     per product decision; byte-identical files each consume one allowance
+ *     slot, and the processor flags duplicates downstream)
  *   - allowance: order.files.length must be under order.doc_allowance
  *
  * On success the file is in B2 and recorded in order.files in one step —

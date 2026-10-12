@@ -11,7 +11,7 @@
  *
  * Server-side enforcement (never trusts the browser):
  *   - token signature + expiry + order scoping (lib/tokens.js)
- *   - order exists, status is paid/uploading, token not expired
+ *   - order exists and is open for uploads (see lib/upload-auth.js CLOSED_STATUSES), token not expired
  *   - doc allowance: received + pending + requested <= doc_allowance (10 for pilot)
  *   - per-file: size <= 25 MB, content_type in the allowlist, sha256 format valid,
  *     filename sanitized, duplicate content (sha256) rejected

@@ -73,7 +73,21 @@
         <button class="btn btn-amber" type="submit" id="login-submit">Email me a sign-in link</button>
         <p class="form-error" id="login-error" role="alert" hidden></p>
         <p class="form-ok" id="login-ok" role="status" hidden></p>
+        <p class="hint" style="margin-top:12px">Never getting the sign-in email? <a href="#" id="setup-link-request">Set up a password instead</a> &mdash; we&rsquo;ll email you a one-time setup link.</p>
       </form>
+
+      <div id="setup-state" hidden>
+        <p class="muted" id="setup-msg">Choose a password for your workspace.</p>
+        <form id="setup-form" novalidate>
+          <div class="field">
+            <label for="setup-password">New password</label>
+            <input type="password" id="setup-password" name="password" autocomplete="new-password" required
+                   placeholder="At least 8 characters" minlength="8">
+          </div>
+          <button class="btn btn-amber" type="submit" id="setup-submit">Set password &amp; sign in</button>
+          <p class="form-error" id="setup-error" role="alert" hidden></p>
+        </form>
+      </div>
 
       <div id="verify-state" hidden>
         <p class="muted" id="verify-msg">Checking your sign-in link&hellip;</p>

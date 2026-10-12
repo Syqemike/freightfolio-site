@@ -127,7 +127,7 @@ describe("upload-direct", () => {
     assert.equal(body.error, "bad_file_type");
   });
 
-  it("rejects duplicate content", async () => {
+  it("accepts duplicate content (duplicate-content rejection intentionally removed)", async () => {
     const email = "dup@example.com";
     const orderId = await makeOrder(email);
     const cookie = await sessionCookie(email);
@@ -136,9 +136,13 @@ describe("upload-direct", () => {
     const first = await directCall({ orderId, cookie, fileBytes: pdfBytes(2) });
     assert.equal(first.body.ok, true);
 
+    // Duplicate content is accepted by design (per product decision 2026-10-10);
+    // the processor flags duplicates downstream. Both uploads consume allowance.
     const second = await directCall({ orderId, cookie, fileBytes: pdfBytes(2), filename: "other-name.pdf" });
-    assert.equal(second.status, 409);
-    assert.equal(second.body.error, "duplicate_content");
+    assert.equal(second.status, 200);
+    assert.equal(second.body.ok, true);
+    const order = await getOrder(env, orderId, { test: true });
+    assert.equal(order.files.length, 2);
   });
 
   it("rejects when the allowance is exhausted", async () => {

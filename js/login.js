@@ -77,6 +77,87 @@
     return;
   }
 
+  // --- Mode 1b: ?setup=<token> -> set a password with no prior session ---
+  var setupToken = params.get("setup");
+  if (setupToken && !token) {
+    form.hidden = true;
+    if (document.getElementById("login-form-password"))
+      document.getElementById("login-form-password").hidden = true;
+    var setupState = document.getElementById("setup-state");
+    var setupForm = document.getElementById("setup-form");
+    var setupPass = document.getElementById("setup-password");
+    var setupSubmit = document.getElementById("setup-submit");
+    var setupErr = document.getElementById("setup-error");
+    var setupMsg = document.getElementById("setup-msg");
+    setupState.hidden = false;
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState(null, "", "/login");
+    }
+    setupForm.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      hide(setupErr);
+      var password = setupPass.value || "";
+      if (password.length < 8) {
+        showError(setupErr, "Password must be at least 8 characters.");
+        setupPass.focus();
+        return;
+      }
+      setupSubmit.disabled = true;
+      setupSubmit.textContent = "Setting password\u2026";
+      postJson("/api/auth/set-password-token", { token: setupToken, password: password }).then(function (r) {
+        setupSubmit.disabled = false;
+        setupSubmit.textContent = "Set password & sign in";
+        if (r.status === 200 && r.data && r.data.ok) {
+          setupMsg.textContent = "Password set. Taking you to your workspace\u2026";
+          window.location.replace("/workspace/");
+        } else if (r.data && r.data.error === "invalid_token") {
+          showError(setupErr, "This setup link is invalid, expired, or already used. Request a fresh one below.");
+          setupState.hidden = true;
+          form.hidden = false;
+        } else if (r.data && r.data.error === "already_set") {
+          showError(setupErr, "A password is already set for this account. Sign in with it, or use the Email link tab.");
+          setupState.hidden = true;
+          form.hidden = false;
+        } else {
+          showError(setupErr, "Something went wrong. Please try again.");
+        }
+      }).catch(function () {
+        setupSubmit.disabled = false;
+        setupSubmit.textContent = "Set password & sign in";
+        showError(setupErr, "Couldn\u2019t reach the server. Check your connection and try again.");
+      });
+    });
+    return;
+  }
+
+  // --- "Set up a password instead" link on the magic-link tab ---
+  var setupLinkReq = document.getElementById("setup-link-request");
+  if (setupLinkReq) {
+    setupLinkReq.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      hide(errEl);
+      hide(okEl);
+      var email = (emailInput.value || "").trim();
+      if (!email || email.indexOf("@") < 0) {
+        showError(errEl, "Enter your email address above first, then click the link.");
+        emailInput.focus();
+        return;
+      }
+      postJson("/api/auth/setup-link", { email: email }).then(function (r) {
+        if (r.status === 200) {
+          okEl.textContent = "If an account exists for that email, a password-setup link is on its way. Check your inbox (and spam folder).";
+          okEl.hidden = false;
+        } else if (r.status === 429) {
+          showError(errEl, "Too many requests. Please wait a little while and try again.");
+        } else {
+          showError(errEl, "Something went wrong. Please try again, or email hello@freightfolio.net.");
+        }
+      }).catch(function () {
+        showError(errEl, "Couldn\u2019t reach the server. Check your connection and try again.");
+      });
+    });
+  }
+
   // --- Tab switching ---
   var tabPw = document.getElementById("tab-password");
   var tabMagic = document.getElementById("tab-magic");
@@ -133,7 +214,7 @@
         } else if (r.status === 429) {
           showError(pwErr, "Too many attempts. Please wait a little while and try again.");
         } else if (r.data && r.data.error === "invalid_credentials") {
-          showError(pwErr, "Invalid email or password. If you haven't set a password yet, use the Email link tab to sign in, then set one in Account settings.");
+          showError(pwErr, "Invalid email or password. If you haven't set a password yet, switch to the Email link tab and use \u201CSet up a password instead\u201D.");
         } else {
           showError(pwErr, "Something went wrong. Please try again.");
         }

@@ -127,6 +127,28 @@ export async function onRequestPost(context) {
 
   // Server-side validation (same rules as the client).
   const errors = RA.validateOnboarding(data);
+  // RC-04 (audit 2026-10-12): sender_email is the Resend envelope From and
+  // hard-fails at the provider when its domain is not verified. If the
+  // requested domain is not on the verified-sender allowlist (env
+  // VERIFIED_SENDER_DOMAINS, comma-separated; defaults to freightfolio.net),
+  // we keep the request on file but SEND from hello@freightfolio.net until
+  // the customer's domain is verified in Resend. Never silently fail at
+  // send time; the fallback is explicit in the stored config + response.
+  let senderFallback = null;
+  if (data.sender_email) {
+    const domain = (data.sender_email.split("@")[1] || "").toLowerCase();
+    const allowlist = String(
+      env.VERIFIED_SENDER_DOMAINS || "freightfolio.net"
+    ).toLowerCase().split(",").map((d) => d.trim()).filter(Boolean);
+    if (!allowlist.includes(domain)) {
+      senderFallback = {
+        requested: data.sender_email,
+        enforced: "hello@freightfolio.net",
+        reason: "@" + domain + " is not a verified sending domain yet",
+      };
+      data.sender_email = "hello@freightfolio.net";
+    }
+  }
   if (errors.length > 0) {
     return json({ ok: false, error: "invalid_setup", errors }, 400);
   }
@@ -153,6 +175,19 @@ export async function onRequestPost(context) {
     updated_at: nowIso,
   };
   delete setup.permission;
+  // RC-04: keep the unverified-domain request on file (ops can verify the
+  // domain in Resend later and flip sender_email back), but the enforced
+  // sender is always a verified domain.
+  if (senderFallback) {
+    setup.requested_sender_email = senderFallback.requested;
+    setup.sender_domain_status =
+      "unverified — sending from " + senderFallback.enforced +
+      " until @" + (senderFallback.requested.split("@")[1] || "") +
+      " is verified in Resend";
+  } else {
+    delete setup.requested_sender_email;
+    delete setup.sender_domain_status;
+  }
 
   const patch = {
     setup,
@@ -207,6 +242,7 @@ export async function onRequestPost(context) {
     reapproved,
     reauth_required: next.reauth_required === true,
     status: next.status,
+    sender_fallback: senderFallback,
     recovery: recoverySummary(next),
   });
 }

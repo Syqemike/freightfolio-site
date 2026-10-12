@@ -170,5 +170,28 @@ describe("upload-init", () => {
     assert.equal(body.uploads.length, 0);
     assert.equal(body.rejected[0].reason, "duplicate_content");
   });
+
+  it("blocks uploads on disputed (chargeback) orders (W-02)", async () => {
+    const { getOrder, putOrder } = await import("../lib/order-store.js");
+    const o = await getOrder(env, order.order_id);
+    o.status = "disputed";
+    await putOrder(env, o);
+
+    const { status, body } = await initCall([file(9)]);
+    assert.equal(status, 409);
+    assert.equal(body.ok, false);
+    assert.equal(body.error, "order_not_open");
+  });
+
+  it("still blocks uploads on refunded orders", async () => {
+    const { getOrder, putOrder } = await import("../lib/order-store.js");
+    const o = await getOrder(env, order.order_id);
+    o.status = "refunded";
+    await putOrder(env, o);
+
+    const { status, body } = await initCall([file(9)]);
+    assert.equal(status, 409);
+    assert.equal(body.error, "order_not_open");
+  });
 });
 

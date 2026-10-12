@@ -8,14 +8,18 @@
  * compare). Never linked publicly. NEVER exposes secrets — the response
  * contains only billing/eligibility state.
  *
- * ELIGIBILITY RULE (the gate the engine enforces — chasing requires ALL THREE):
+ * ELIGIBILITY RULE (the gate the engine enforces — chasing requires ALL FOUR):
  *   (a) recoveryEntitled(customer): entitlement "addon"|"managed_included"
  *       AND status "active"|"grace" (or "past_due" with the 7-day grace
  *       window still open — chasing continues during grace),
  *   (b) customer authorization complete: authorized_at set AND
  *       setup.approved === true,
  *   (c) valid operational config + approved contacts:
- *       setup.config_valid === true AND setup.contacts_approved === true.
+ *       setup.config_valid === true AND setup.contacts_approved === true,
+ *   (d) monthly allowance not exhausted (audit 2026-10-12, RC-01):
+ *       requests_used < allowance. The customer-facing contract is
+ *       hold-at-cap-only ("requests beyond the monthly allowance wait in the
+ *       queue at no extra charge") — the engine must not send #51+.
  *
  * This endpoint also runs applyRecoveryLifecycle() first, so expired grace
  * windows (-> "paused") and reached cancel dates (-> "canceled") are
@@ -89,9 +93,18 @@ export async function onRequestGet(context) {
   if (rec.reauth_required === true) {
     reasons.push("reauthorization_required: contact/identity/template/cadence changed; outreach paused until the customer re-approves");
   }
+  // (d) Allowance gate (RC-01): the 51st request waits for the next cycle.
+  const allowance = rec.allowance || 0;
+  const requestsUsed = rec.requests_used || 0;
+  if (requestsUsed >= allowance) {
+    reasons.push(
+      `allowance_exhausted: ${requestsUsed} of ${allowance} monthly requests used; ` +
+      "further requests wait in the queue for the next billing cycle at no extra charge"
+    );
+  }
 
   const eligible = reasons.length === 0;
-  const allowanceRemaining = Math.max(0, (rec.allowance || 0) - (rec.requests_used || 0));
+  const allowanceRemaining = Math.max(0, allowance - requestsUsed);
 
   return json({
     ok: true,

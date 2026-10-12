@@ -22,7 +22,8 @@
  */
 
 import { createOrderFromPayment } from "../../lib/order-store.js";
-import { sendPaymentConfirmed, sendOpsNewOrder } from "../../lib/notify.js";
+import { getCustomer, putCustomer, newCustomerRecord } from "../../lib/customer.js";
+import { sendPaymentConfirmed, sendOpsNewOrder, sendWorkspaceInvite } from "../../lib/notify.js";
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -103,6 +104,17 @@ export async function onRequestPost(context) {
   if (!order.test) {
     const a = await sendPaymentConfirmed(env, order, origin);
     const b = await sendOpsNewOrder(env, order, origin);
+    // EM-05: new customers on this path also get the workspace invite
+    // (the Stripe-checkout webhook path already does this).
+    let invite = "skipped_existing_customer";
+    const existingCustomer = await getCustomer(env, order.customer_email);
+    if (!existingCustomer) {
+      const customer = newCustomerRecord(order.customer_email);
+      await putCustomer(env, customer);
+      const r = await sendWorkspaceInvite(env, order.customer_email, origin);
+      invite = r.ok ? "sent" : "failed";
+      if (!r.ok) console.error("workspace invite failed", r.error);
+    }
     emailStatus = a.ok && b.ok ? "sent" : "partial_failure";
     if (!a.ok) console.error("payment-confirmed email failed", a.error);
     if (!b.ok) console.error("ops new-order email failed", b.error);

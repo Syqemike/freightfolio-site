@@ -121,9 +121,9 @@ describe("POST /api/auth/request", () => {
     assert.equal(found, true);
   });
 
-  it("rate-limits after 5 requests per email per hour", async () => {
+  it("rate-limits after 20 requests per email per hour", async () => {
     await makeCustomerWithOrder("rl@example.com");
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 20; i++) {
       const r = await readJson(await authRequest({ request: post({ email: "rl@example.com" }, null, "1.1.1." + i), env }));
       assert.equal(r.status, 200);
     }

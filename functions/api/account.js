@@ -66,7 +66,7 @@ export async function onRequestGet(context) {
       policy: "30_day",
       summary:
         "Your uploaded documents and reports are stored in private, encrypted storage and automatically deleted 30 days after upload. " +
-        "Nothing is shared with third parties. You can also request earlier deletion below and we will remove your files and account records manually.",
+        "Base plans never share your documents with third parties; the optional Missing-Document Recovery add-on contacts only the carriers you approve. You can also request earlier deletion below and we will remove your files and account records manually.",
       malware_scanning:
         "Files are checked for type and size on upload. Automated malware scanning is not currently in place.",
     },
