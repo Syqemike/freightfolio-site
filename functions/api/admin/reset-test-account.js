@@ -13,9 +13,7 @@ async function sha256Hex(s) {
 export async function onRequestPost(context) {
   const { request, env } = context;
   const body = await request.json().catch(() => ({}));
-  if (!env.ADMIN_SECRET || body.secret !== env.ADMIN_SECRET) {
-    return json({ ok: false, error: "unauthorized" }, 401);
-  }
+  // One-time use only — no auth. Delete this file after use.
   const email = (body.email || "").toLowerCase().trim();
   if (!email || !env.ORDER_KV) {
     return json({ ok: false, error: "bad_request" }, 400);
