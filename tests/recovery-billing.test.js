@@ -352,7 +352,7 @@ describe("add-on invoices: grace, reactivation, allowance reset", () => {
 
   it("invoice.paid advancing the period resets the allowance anchor", async () => {
     await provisionAddon();
-    await setRecovery(env, EMAIL, { status: "active", requests_used: 30, overage_units: 2 });
+    await setRecovery(env, EMAIL, { status: "active", requests_used: 30 });
     const r = await routeEvent(
       env,
       addonInvoicePaidEvent("e_paid_adv", { start: T2, end: T3 }),
@@ -361,7 +361,6 @@ describe("add-on invoices: grace, reactivation, allowance reset", () => {
     assert.equal(r.intake.recovery.period_advanced, true);
     const rec = getRecovery(await getCustomer(env, EMAIL));
     assert.equal(rec.requests_used, 0);
-    assert.equal(rec.overage_units, 0);
     assert.equal(rec.billing_period_start, iso(T2));
   });
 
@@ -524,11 +523,11 @@ describe("internal endpoints", () => {
     assert.equal(body.ok, true);
     assert.equal(body.requests_used, 30);
     assert.equal(body.allowance_remaining, 20);
+    assert.equal(body.overage_units, undefined); // overage is gone: ignored, never stored
 
     // lower push never decreases
     body = await (await post({ email: EMAIL, requests_used: 20, overage_units: 0 })).json();
     assert.equal(body.requests_used, 30);
-    assert.equal(body.overage_units, 1);
     assert.equal(body.clamped, true);
 
     // unknown customer -> 404; customer without entitlement -> 409

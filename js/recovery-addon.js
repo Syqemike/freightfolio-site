@@ -24,8 +24,8 @@
     PAYMENT_LINK: "https://buy.stripe.com/fZueVcerNbGKgRXcNnabK0c",
     PRICE_CENTS: 9900,
     ALLOWANCE: 50,             // document requests included per month
-    OVERAGE_CENTS_PER_REQUEST: 200, // $2.00 per request beyond allowance
-    DEFAULT_OVERAGE_CAP_CENTS: 0,   // default: no overage charges possible
+    // No overage: requests beyond the monthly allowance wait in the queue
+    // for the next billing cycle at no extra charge.
     TIMEZONES: ["America/Chicago", "America/New_York", "America/Denver", "America/Los_Angeles", "America/Anchorage", "Pacific/Honolulu"],
   };
 
@@ -64,7 +64,6 @@
     updateContacts: "/api/recovery/setup",  // POST contact/identity/template/cadence update (triggers reauthorization)
     pause: "/api/recovery/pause",           // POST
     resume: "/api/recovery/resume",         // POST
-    overageCap: "/api/recovery/overage-cap", // POST { overage_cap_cents }
     cancel: "/api/recovery/cancel",         // POST
     admin: "/api/admin/recovery",           // GET entitlements, exceptions, audit (admin only)
   };
@@ -94,8 +93,6 @@
       allowance: allowance,
       requests_used: used,
       requests_remaining: Math.max(0, allowance - used),
-      overage_cap_cents: num(recovery.overage_cap_cents, RECOVERY.DEFAULT_OVERAGE_CAP_CENTS),
-      overage_used_cents: num(recovery.overage_used_cents, 0),
       setup: recovery.setup || {},
       requests: Array.isArray(recovery.requests) ? recovery.requests : [],
       exceptions: Array.isArray(recovery.exceptions) ? recovery.exceptions : [],
@@ -180,7 +177,6 @@
       timezone: "America/Chicago",
       escalation_rule: "After " + DEFAULT_CADENCE.escalate_after_attempts + " unanswered attempts, escalate to the escalation contact.",
       requirements: DOCUMENT_REQUIREMENTS.map(function (d) { return d.key; }),
-      overage_cap_dollars: 0,
     };
   }
 
@@ -218,9 +214,6 @@
       out.requirements = saved.requirements.filter(function (k) {
         return DOCUMENT_REQUIREMENTS.some(function (dr) { return dr.key === k; });
       });
-    }
-    if (typeof saved.overage_cap_cents !== "undefined") {
-      out.overage_cap_dollars = num(saved.overage_cap_cents, 0) / 100;
     }
     return out;
   }
@@ -284,43 +277,7 @@
     if (!d || !Array.isArray(d.requirements) || !d.requirements.length) {
       errors.push({ field: "req-rate_con", message: "Select at least one document type we should chase." });
     }
-    var cap = parseOverageCap(d ? d.overage_cap_dollars : 0);
-    if (!cap.ok) errors.push({ field: "overage-cap", message: cap.message });
     return errors;
-  }
-
-  /**
-   * Parse a dollar input into cents. Default (blank/0) means no overage
-   * charges are possible.
-   */
-  function parseOverageCap(v) {
-    if (v === "" || v === null || typeof v === "undefined") return { ok: true, cents: RECOVERY.DEFAULT_OVERAGE_CAP_CENTS };
-    var n = Number(v);
-    if (!isFinite(n)) return { ok: false, message: "Enter a number, like 50 or 0.", cents: 0 };
-    if (n < 0) return { ok: false, message: "The overage cap cannot be negative. Use 0 to block all overage charges.", cents: 0 };
-    if (Math.round(n * 100) !== n * 100) return { ok: false, message: "Use whole cents (up to 2 decimals).", cents: 0 };
-    return { ok: true, cents: Math.round(n * 100) };
-  }
-
-  /**
-   * Overage editor rule: a customer may lower or disable the cap for future
-   * charges. It never reduces charges already incurred.
-   */
-  function overageCapChange(currentCents, proposedCents) {
-    var change = { allowed: true, note: "" };
-    if (proposedCents < 0) {
-      change.allowed = false;
-      change.note = "The cap cannot be negative.";
-      return change;
-    }
-    if (proposedCents < num(currentCents, 0)) {
-      change.note = "Lowering the cap only affects future requests. Charges already incurred are not affected.";
-    } else if (proposedCents === 0) {
-      change.note = "Overage is off. Requests beyond your 50 per month will wait in the queue instead of billing $2 each.";
-    } else {
-      change.note = "Raising the cap allows more overage requests at $2 each, up to this cap.";
-    }
-    return change;
   }
 
   return {
@@ -343,7 +300,5 @@
     defaultOnboarding: defaultOnboarding,
     prefillOnboarding: prefillOnboarding,
     validateOnboarding: validateOnboarding,
-    parseOverageCap: parseOverageCap,
-    overageCapChange: overageCapChange,
   };
 });

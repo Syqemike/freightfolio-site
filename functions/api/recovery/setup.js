@@ -23,7 +23,7 @@
  *   eligibility endpoint treats that as ineligible so affected outreach
  *   pauses until the customer re-approves (a second submit of the same
  *   form, which arrives with reauth_required already true, clears it).
- *   Requirement selections and the overage cap never trigger reauth.
+ *   Requirement selections never trigger reauth.
  *
  * Server-side validation reuses js/recovery-addon.js validateOnboarding
  * (single source of truth with the client).
@@ -83,10 +83,6 @@ function sanitizeOnboarding(body) {
           .map((k) => str(k, 60))
           .filter((k) => RA.DOCUMENT_REQUIREMENTS.some((d) => d.key === k))
       : [],
-    overage_cap_cents:
-      Number.isFinite(Number(b.overage_cap_cents)) && Number(b.overage_cap_cents) >= 0
-        ? Math.floor(Number(b.overage_cap_cents))
-        : 0,
   };
 }
 
@@ -130,11 +126,7 @@ export async function onRequestPost(context) {
   const data = sanitizeOnboarding(body);
 
   // Server-side validation (same rules as the client).
-  const validationData = {
-    ...data,
-    overage_cap_dollars: data.overage_cap_cents / 100,
-  };
-  const errors = RA.validateOnboarding(validationData);
+  const errors = RA.validateOnboarding(data);
   if (errors.length > 0) {
     return json({ ok: false, error: "invalid_setup", errors }, 400);
   }
@@ -164,7 +156,6 @@ export async function onRequestPost(context) {
 
   const patch = {
     setup,
-    overage_cap_cents: data.overage_cap_cents,
   };
 
   let activated = false;

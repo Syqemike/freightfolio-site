@@ -27,8 +27,12 @@ describe("recovery constants", () => {
   it("prices the add-on at $99/mo with the contracted terms", () => {
     assert.equal(RA.RECOVERY.PRICE_CENTS, 9900);
     assert.equal(RA.RECOVERY.ALLOWANCE, 50);
-    assert.equal(RA.RECOVERY.OVERAGE_CENTS_PER_REQUEST, 200);
-    assert.equal(RA.RECOVERY.DEFAULT_OVERAGE_CAP_CENTS, 0);
+  });
+  it("has no overage billing: extras queue free", () => {
+    assert.equal(RA.RECOVERY.OVERAGE_CENTS_PER_REQUEST, undefined);
+    assert.equal(RA.RECOVERY.DEFAULT_OVERAGE_CAP_CENTS, undefined);
+    assert.equal(RA.parseOverageCap, undefined);
+    assert.equal(RA.overageCapChange, undefined);
   });
   it("uses the live $99/mo Stripe payment link (never the pilot link)", () => {
     assert.equal(RA.RECOVERY.PAYMENT_LINK, "https://buy.stripe.com/fZueVcerNbGKgRXcNnabK0c");
@@ -36,10 +40,11 @@ describe("recovery constants", () => {
       "must never reuse the one-time pilot link");
   });
   it("exposes the assumed action endpoints", () => {
-    for (const k of ["setup", "pause", "resume", "overageCap", "cancel", "admin"]) {
+    for (const k of ["setup", "pause", "resume", "cancel", "admin"]) {
       assert.ok(RA.ENDPOINTS[k], k);
       assert.ok(RA.ENDPOINTS[k].startsWith("/api/"), k);
     }
+    assert.equal(RA.ENDPOINTS.overageCap, undefined);
   });
 });
 
@@ -56,8 +61,6 @@ describe("normalizeRecovery", () => {
     assert.equal(r.allowance, 50);
     assert.equal(r.requests_used, 0);
     assert.equal(r.requests_remaining, 50);
-    assert.equal(r.overage_cap_cents, 0);
-    assert.equal(r.overage_used_cents, 0);
     assert.equal(r.reauth_required, false);
     assert.deepEqual(r.requests, []);
   });
@@ -109,37 +112,6 @@ describe("labels and money", () => {
   });
 });
 
-describe("parseOverageCap", () => {
-  it("defaults blank to $0 (no overage possible)", () => {
-    assert.deepEqual(RA.parseOverageCap(""), { ok: true, cents: 0 });
-    assert.deepEqual(RA.parseOverageCap(0), { ok: true, cents: 0 });
-  });
-  it("converts dollars to cents", () => {
-    assert.deepEqual(RA.parseOverageCap("50"), { ok: true, cents: 5000 });
-    assert.deepEqual(RA.parseOverageCap("12.50"), { ok: true, cents: 1250 });
-  });
-  it("rejects negatives, non-numbers, and sub-cent precision", () => {
-    assert.equal(RA.parseOverageCap("-5").ok, false);
-    assert.equal(RA.parseOverageCap("abc").ok, false);
-    assert.equal(RA.parseOverageCap("10.005").ok, false);
-  });
-});
-
-describe("overageCapChange", () => {
-  it("allows lowering with the incurred-charges caveat", () => {
-    const c = RA.overageCapChange(5000, 1000);
-    assert.equal(c.allowed, true);
-    assert.ok(c.note.toLowerCase().includes("incurred"));
-  });
-  it("allows disabling to $0", () => {
-    const c = RA.overageCapChange(5000, 0);
-    assert.equal(c.allowed, true);
-  });
-  it("rejects negative caps", () => {
-    assert.equal(RA.overageCapChange(0, -100).allowed, false);
-  });
-});
-
 describe("validateOnboarding", () => {
   it("accepts a complete, valid setup", () => {
     assert.deepEqual(RA.validateOnboarding(validOnboarding()), []);
@@ -179,11 +151,6 @@ describe("validateOnboarding", () => {
     d3.requirements = [];
     assert.ok(RA.validateOnboarding(d3).length > 0);
   });
-  it("rejects a negative overage cap", () => {
-    const d = validOnboarding();
-    d.overage_cap_dollars = -5;
-    assert.ok(RA.validateOnboarding(d).some((e) => e.field === "overage-cap"));
-  });
   it("rejects bad cadence values", () => {
     const d = validOnboarding();
     d.cadence.days_between_attempts = 0;
@@ -203,12 +170,10 @@ describe("prefillOnboarding", () => {
       contacts: { carrier: { name: "Jane", email: "jane@example.com" } },
       sender_name: "Acme",
       timezone: "America/Denver",
-      overage_cap_cents: 7500,
     });
     assert.equal(p.contacts.carrier.email, "jane@example.com");
     assert.equal(p.sender_name, "Acme");
     assert.equal(p.timezone, "America/Denver");
-    assert.equal(p.overage_cap_dollars, 75);
     assert.equal(p.contacts.dispatcher.email, "");
   });
 });

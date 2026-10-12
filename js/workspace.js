@@ -655,9 +655,9 @@
       '<div class="stat-grid">' +
       '<div class="stat-card"><div class="stat-value">' + esc(RA.fmtMoney(RA.RECOVERY.PRICE_CENTS)) + '</div><div class="stat-label">per month</div></div>' +
       '<div class="stat-card"><div class="stat-value">50</div><div class="stat-label">document requests / month</div></div>' +
-      '<div class="stat-card"><div class="stat-value">$2</div><div class="stat-label">per extra request (within your cap)</div></div>' +
+      '<div class="stat-card"><div class="stat-value">Free</div><div class="stat-label">extra requests queue for next month</div></div>' +
       "</div>" +
-      '<p class="small" style="margin-top:14px">Recovered documents count toward your base plan&rsquo;s monthly document allowance. Overage beyond 50 requests costs $2 each, only within an overage cap you approve (default $0: extra requests wait in the queue instead of billing). If you add Recovery mid-cycle, your first charge may be prorated. What we promise is the process, not guaranteed recovery: cases we cannot resolve come back to you with supporting evidence and a recommended next action.</p>' +
+      '<p class="small" style="margin-top:14px">Recovered documents count toward your base plan&rsquo;s monthly document allowance. Requests beyond 50 in a month wait in the queue for the next cycle at no extra charge. If you add Recovery mid-cycle, your first charge may be prorated. What we promise is the process, not guaranteed recovery: cases we cannot resolve come back to you with supporting evidence and a recommended next action.</p>' +
       '<p class="small"><strong>Example total:</strong> ' + esc(ex.plan_name) + " (" + esc(ex.base) + "/mo) + Recovery (" + esc(ex.addon) + "/mo) = <strong>" + esc(ex.total) + "/mo</strong>.</p>" +
       '<p style="margin-top:16px"><a class="btn btn-amber" id="recovery-add-btn" href="' + esc(link) + '" target="_blank" rel="noopener">Add Recovery ($99/mo)</a></p>' +
       '<p class="form-error" id="recovery-link-note" role="alert" hidden></p>' +
@@ -768,12 +768,6 @@
       }).join("") +
       '<span class="field-error" id="rco-err-req-rate_con" role="alert" hidden></span>';
 
-    html += "<h3>Overage cap</h3>" +
-      '<div class="field"><label for="rco-overage-cap">Monthly overage cap ($)</label>' +
-      '<input type="number" id="rco-overage-cap" min="0" step="0.01" value="' + esc(pre.overage_cap_dollars) + '">' +
-      '<p class="hint">Beyond 50 requests in a month, extra requests cost $2 each, only up to this cap. Default $0 means extra requests wait in the queue instead of billing. You can change this any time; it never affects charges already incurred.</p>' +
-      '<span class="field-error" id="rco-err-overage-cap" role="alert" hidden></span></div>';
-
     if (r.reauth_required) {
       html += '<p class="hint">Submitting changes to contacts, identity, templates, or cadence pauses outreach until you re-approve here.</p>';
     }
@@ -813,7 +807,6 @@
     d.requirements = RA.DOCUMENT_REQUIREMENTS
       .filter(function (dr) { return $("rco-req-" + dr.key).checked; })
       .map(function (dr) { return dr.key; });
-    d.overage_cap_dollars = $("rco-overage-cap").value;
     return d;
   }
 
@@ -839,7 +832,6 @@
     if (errors.length) return;
     var btn = $("rco-submit");
     btn.disabled = true;
-    var cap = RA.parseOverageCap(data.overage_cap_dollars);
     api(RA.ENDPOINTS.setup, {
       method: "POST",
       body: JSON.stringify({
@@ -857,7 +849,6 @@
         timezone: data.timezone,
         escalation_rule: data.escalation_rule,
         requirements: data.requirements,
-        overage_cap_cents: cap.cents,
       }),
     }).then(function (resp) {
       btn.disabled = false;
@@ -901,9 +892,7 @@
       '<p class="muted small">' + esc(r.requests_used) + " of " + esc(r.allowance) + " requests used" +
       (r.next_period_start ? ", resets " + esc(fmtDate(r.next_period_start)) : "") + ".</p>" +
       '<div class="progress" role="progressbar" aria-label="Recovery requests used"><span style="width:' + Math.min(100, pct) + '%"></span></div>' +
-      '<p class="muted small">Overage cap: <strong>' + esc(RA.fmtMoney(r.overage_cap_cents)) + "</strong> &middot; " +
-      "overage used: <strong>" + esc(RA.fmtMoney(r.overage_used_cents)) + "</strong>.</p>" +
-      '<p class="hint">Overage is $2 per request, only within your cap. Lowering the cap never affects charges already incurred.</p>' +
+      '<p class="hint">50 requests included per month. Requests beyond that wait in the queue for the next cycle at no extra charge.</p>' +
       "</div>";
 
     html += '<div class="app-card" style="margin-top:16px"><h2>Requests</h2>';
@@ -954,11 +943,7 @@
     } else if (r.status === "paused") {
       html += '<p><button class="btn btn-sm btn-amber" type="button" id="recovery-resume">Resume outreach</button></p>';
     }
-    html += '<div class="field" style="max-width:280px;margin-top:12px"><label for="recovery-cap-input">Overage cap ($)</label>' +
-      '<input type="number" id="recovery-cap-input" min="0" step="0.01" value="' + esc(r.overage_cap_cents / 100) + '">' +
-      '<p class="hint">You may lower or disable future overage any time; incurred charges are never affected.</p></div>' +
-      '<p><button class="btn btn-sm" type="button" id="recovery-cap-save">Save cap</button></p>' +
-      '<p class="form-ok" id="recovery-ok" role="status" hidden></p>' +
+    html += '<p class="form-ok" id="recovery-ok" role="status" hidden></p>' +
       '<p class="form-error" id="recovery-error" role="alert" hidden></p>' +
       '<p style="margin-top:18px"><button class="linklike" type="button" id="recovery-cancel">Cancel the Recovery add-on</button></p>' +
       '<p class="hint">Billing questions or changes: <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a>.</p></div>';
@@ -977,17 +962,6 @@
     });
     if (resumeBtn) resumeBtn.addEventListener("click", function () {
       recoveryPost(RA.ENDPOINTS.resume, {}, "Outreach resumed.", root);
-    });
-    $("recovery-cap-save").addEventListener("click", function () {
-      var raw = $("recovery-cap-input").value;
-      var parsed = RA.parseOverageCap(raw);
-      var okEl = $("recovery-ok"), errEl = $("recovery-error");
-      okEl.hidden = true; errEl.hidden = true;
-      if (!parsed.ok) { errEl.textContent = parsed.message; errEl.hidden = false; return; }
-      var change = RA.overageCapChange(r.overage_cap_cents, parsed.cents);
-      if (!change.allowed) { errEl.textContent = change.note; errEl.hidden = false; return; }
-      recoveryPost(RA.ENDPOINTS.overageCap, { overage_cap_cents: parsed.cents },
-        "Overage cap updated. " + change.note, root);
     });
     $("recovery-cancel").addEventListener("click", function () {
       if (!confirm("Cancel the Recovery add-on? Outreach stops; your base plan is not affected.")) return;

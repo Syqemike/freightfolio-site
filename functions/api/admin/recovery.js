@@ -7,7 +7,7 @@
  *
  * Response (the contract js/admin.js renders):
  *   { ok, entitlements: [{email, entitlement, status, requests_used,
- *     requests_remaining, allowance, overage_cap_cents, overage_used_cents,
+ *     requests_remaining, allowance,
  *     reauth_required, authorized_at, grace_until, cancel_scheduled,
  *     service_end_at, billing_period_end}],
  *     exceptions: [], audit: [{at, actor, action, detail}] }
@@ -19,7 +19,6 @@
 
 import { json, requireAdmin } from "../../../lib/api-auth.js";
 import { getRecovery } from "../../../lib/customer.js";
-import { OVERAGE_CENTS_PER_UNIT } from "../../../lib/recovery-api.js";
 
 const AUDIT_LIMIT = 100;
 
@@ -56,9 +55,6 @@ export async function onRequestGet(context) {
       requests_used: used,
       requests_remaining: Math.max(0, allowance - used),
       allowance,
-      overage_units: rec.overage_units || 0,
-      overage_cap_cents: rec.overage_cap_cents || 0,
-      overage_used_cents: (rec.overage_units || 0) * OVERAGE_CENTS_PER_UNIT,
       reauth_required: rec.reauth_required === true,
       authorized_at: rec.authorized_at,
       authorized_by: rec.authorized_by,

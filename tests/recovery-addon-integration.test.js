@@ -9,12 +9,12 @@
  *   4. payment_failed -> past_due -> grace -> paused
  *   5. cancel -> canceled; re-purchase -> awaiting_setup again
  *   6. allowance resets on period advance only
- *   7. 51st request blocked at $0 cap (REAL Python ledger+gate via child_process)
+ *   7. 51st request queued, never billed (REAL Python ledger+gate via child_process)
  *   8. pause + authorization withdrawal stop eligibility
  *   9. managed_included blocks the $99 purchase
  *   10. pilot event never creates entitlement
  *   11. customer A cannot touch customer B's recovery record
- *   12. overage-cap rules (raise / lower / never below incurred)
+ *   12. no overage endpoint: overage_cap_cents in bodies is ignored, never stored
  *   13. reauth trigger on config change, re-approval clears it
  *   14. /api/me exposes recovery in the shape the workspace tab expects
  *
@@ -40,7 +40,6 @@ import { onRequestGet as getMe } from "../functions/api/me.js";
 import { onRequestPost as setupPost } from "../functions/api/recovery/setup.js";
 import { onRequestPost as pausePost } from "../functions/api/recovery/pause.js";
 import { onRequestPost as resumePost } from "../functions/api/recovery/resume.js";
-import { onRequestPost as overageCapPost } from "../functions/api/recovery/overage-cap.js";
 import { onRequestPost as cancelPost } from "../functions/api/recovery/cancel.js";
 import { onRequestGet as adminRecoveryGet } from "../functions/api/admin/recovery.js";
 import { onRequestGet as eligibilityGet } from "../functions/api/internal/recovery-eligibility.js";
@@ -200,7 +199,6 @@ function onboardingBody(overrides = {}) {
     timezone: "America/Chicago",
     escalation_rule: "Escalate after 2 unanswered attempts.",
     requirements: ["rate_con", "bol", "pod"],
-    overage_cap_cents: 0,
     ...overrides,
   };
 }
@@ -450,26 +448,24 @@ describe("6. allowance resets on period advance only", () => {
     const sub = "sub_rst";
     await provisionAddon(email, cus, sub);
     const r = webhookRequest();
-    await setRecovery(env, email, { status: "active", requests_used: 30, overage_units: 2 });
+    await setRecovery(env, email, { status: "active", requests_used: 30 });
 
     await routeEvent(env, addonInvoiceEvent(cus, sub, "p1", { start: T1, end: T2 }), r);
     let rec = getRecovery(await getCustomer(env, email));
     assert.equal(rec.requests_used, 30);
-    assert.equal(rec.overage_units, 2);
 
     await routeEvent(env, addonInvoiceEvent(cus, sub, "p2", { start: T2, end: T3 }), r);
     rec = getRecovery(await getCustomer(env, email));
     assert.equal(rec.requests_used, 0);
-    assert.equal(rec.overage_units, 0);
     assert.equal(rec.billing_period_start, iso(T2));
   });
 });
 
-describe("7. 51st request blocked at $0 cap — REAL Python ledger+gate", () => {
+describe("7. 51st request queued, never billed — REAL Python ledger+gate", () => {
   const VENV_PY = "/home/hatch/workspace/goals/build-my-ai-automation-company/product/.venv/bin/python";
   const METERING = "/home/hatch/workspace/goals/build-my-ai-automation-company/hidden_files/recovery-metering";
 
-  function gateCheck({ units, allowance = 50, capCents = 0 }) {
+  function gateCheck({ units, allowance = 50 }) {
     const dir = mkdtempSync(join(tmpdir(), "gate-"));
     try {
       const code = `
@@ -480,12 +476,12 @@ mod = importlib.util.module_from_spec(spec); sys.modules["recovery_metering"] = 
 ledger = sys.modules["recovery_metering.ledger"]; gate = sys.modules["recovery_metering.gate"]
 d = ${JSON.stringify(dir)}
 ent = {"email": "gate@example.com", "billing_period_start": "2026-10-01T00:00:00-05:00",
-       "billing_period_end": "2026-11-01T00:00:00-05:00", "allowance": ${allowance}, "overage_cap_cents": ${capCents}}
+       "billing_period_end": "2026-11-01T00:00:00-05:00", "allowance": ${allowance}}
 ledger.apply_entitlement(d, ent)
 if ${units} > 0:
     ledger.add_billed_units(d, "gate@example.com", ent["billing_period_start"], ["req_%d" % i for i in range(${units})])
 row = ledger.get_row(d, "gate@example.com", ent["billing_period_start"])
-print(json.dumps({"decision": gate.can_send(ent, row), "requests_used": row["requests_used"], "overage_units": row["overage_units"]}))
+print(json.dumps({"decision": gate.can_send(ent, row), "requests_used": row["requests_used"]}))
 `;
       const out = execFileSync(VENV_PY, ["-c", code], { encoding: "utf8" });
       return JSON.parse(out);
@@ -494,29 +490,21 @@ print(json.dumps({"decision": gate.can_send(ent, row), "requests_used": row["req
     }
   }
 
-  it("50 used -> 51st send is QUEUED at $0 cap (never sent, never billed)", () => {
-    const r = gateCheck({ units: 50, capCents: 0 });
+  it("50 used -> 51st send is QUEUED (never sent, never billed)", () => {
+    const r = gateCheck({ units: 50 });
     assert.equal(r.requests_used, 50);
     assert.equal(r.decision.allowed, false);
     assert.equal(r.decision.reason, "queued_cap");
   });
 
   it("49 used -> the 50th send is allowed within the allowance", () => {
-    const r = gateCheck({ units: 49, capCents: 0 });
+    const r = gateCheck({ units: 49 });
     assert.equal(r.decision.allowed, true);
     assert.equal(r.decision.reason, "within_allowance");
   });
 
-  it("overage allowed only inside an approved cap ($20 cap -> 51st sends as overage)", () => {
-    const r = gateCheck({ units: 50, capCents: 2000 });
-    assert.equal(r.decision.allowed, true);
-    assert.equal(r.decision.reason, "overage_within_cap");
-  });
-
-  it("cap exhausted -> queued even with a cap set ($2 cap covers exactly 1 overage unit)", () => {
-    const r = gateCheck({ units: 51, capCents: 200 });
-    assert.equal(r.requests_used, 51);
-    assert.equal(r.overage_units, 1);
+  it("beyond allowance always queues: no overage path exists", () => {
+    const r = gateCheck({ units: 60 });
     assert.equal(r.decision.allowed, false);
     assert.equal(r.decision.reason, "queued_cap");
   });
@@ -649,15 +637,7 @@ describe("11. customer isolation — A cannot touch B's recovery record", () => 
     assert.equal(getRecovery(await getCustomer(env, b)).status, "awaiting_setup");
     assert.equal(getRecovery(await getCustomer(env, a)).status, "active");
 
-    // A tries to smuggle B's email in the body of every endpoint
-    const smuggled = { email: b, overage_cap_cents: 5000 };
-    await overageCapPost({
-      request: authedPost(cookieA, smuggled, "https://test.freightfolio.net/api/recovery/overage-cap"),
-      env,
-    }).then((r) => r.json());
-    assert.equal(getRecovery(await getCustomer(env, a)).overage_cap_cents, 5000);
-    assert.equal(getRecovery(await getCustomer(env, b)).overage_cap_cents, 0);
-
+    // A tries to smuggle B's email in the body of the pause endpoint
     await pausePost({
       request: authedPost(cookieA, { email: b }, "https://test.freightfolio.net/api/recovery/pause"),
       env,
@@ -675,44 +655,35 @@ describe("11. customer isolation — A cannot touch B's recovery record", () => 
   });
 });
 
-describe("12. overage-cap rules", () => {
-  it("raise allowed; lower allowed (future-only); never below incurred", async () => {
-    const email = "cap@example.com";
+describe("12. no overage: overage fields in bodies are ignored, never stored", () => {
+  it("setup ignores overage_cap_cents; usage-sync ignores overage_units", async () => {
+    const email = "nooverage@example.com";
     await provisionAddon(email);
     const cookie = await sessionFor(email);
-    await setupPost({ request: authedPost(cookie, onboardingBody()), env });
 
-    const post = (cents) =>
-      overageCapPost({
-        request: authedPost(cookie, { overage_cap_cents: cents }, "https://test.freightfolio.net/api/recovery/overage-cap"),
-        env,
-      }).then((r) => r.json());
-
-    let r = await post(5000);
-    assert.equal(r.ok, true);
-    assert.equal(r.overage_cap_cents, 5000);
-
-    // incur one overage unit ($2.00)
-    await setRecovery(env, email, { overage_units: 1, requests_used: 51 });
-
-    r = await post(100); // below the $2.00 already incurred
-    assert.equal(r.ok, false);
-    assert.equal(r.error, "cap_below_incurred");
-    assert.equal(r.incurred_cents, 200);
-
-    r = await post(200); // exactly at incurred: allowed
-    assert.equal(r.ok, true);
-
-    r = await post(0); // disable overage: allowed only when nothing incurred... but $2 IS incurred
-    assert.equal(r.ok, false);
-
-    // negative and non-integer rejected
-    const bad = await overageCapPost({
-      request: authedPost(cookie, { overage_cap_cents: -50 }, "https://test.freightfolio.net/api/recovery/overage-cap"),
+    // smuggle overage_cap_cents into onboarding — must be ignored
+    const good = await setupPost({
+      request: authedPost(cookie, onboardingBody({ overage_cap_cents: 5000 }), "https://test.freightfolio.net/api/recovery/setup"),
       env,
-    }).then((res) => res.json());
-    assert.equal(bad.ok, false);
-    assert.equal(bad.error, "invalid_cap");
+    }).then((r) => r.json());
+    assert.equal(good.ok, true);
+    const rec = getRecovery(await getCustomer(env, email));
+    assert.equal(rec.overage_cap_cents, undefined);
+
+    // /api/me never exposes overage fields
+    const me = await getMe({
+      request: new Request("https://test.freightfolio.net/api/me", {
+        headers: { cookie: `ff_session=${cookie}` },
+      }),
+      env,
+    }).then((r) => r.json());
+    assert.equal(me.recovery.overage_cap_cents, undefined);
+    assert.equal(me.recovery.overage_used_cents, undefined);
+
+    // eligibility never exposes overage fields
+    const elig = await eligibility(email);
+    assert.equal(elig.overage_cap_cents, undefined);
+    assert.equal(elig.overage_units, undefined);
   });
 });
 
@@ -754,13 +725,13 @@ describe("13. reauthorization trigger on config change", () => {
     assert.equal(elig.eligible, true);
   });
 
-  it("requirement/cap-only changes do not trigger reauth", async () => {
+  it("requirement-only changes do not trigger reauth", async () => {
     const email = "noreauth@example.com";
     await provisionAddon(email);
     const cookie = await sessionFor(email);
     await setupPost({ request: authedPost(cookie, onboardingBody()), env });
 
-    const tweak = onboardingBody({ requirements: ["bol"], overage_cap_cents: 2000 });
+    const tweak = onboardingBody({ requirements: ["bol"] });
     const upd = await setupPost({
       request: authedPost(cookie, tweak, "https://test.freightfolio.net/api/recovery/setup"),
       env,
@@ -777,7 +748,7 @@ describe("14. /api/me + admin read surface real recovery data", () => {
     await provisionAddon(email);
     const cookie = await sessionFor(email);
     await setupPost({
-      request: authedPost(cookie, onboardingBody({ overage_cap_cents: 2000 })),
+      request: authedPost(cookie, onboardingBody(), "https://test.freightfolio.net/api/recovery/setup"),
       env,
     });
 
@@ -792,8 +763,6 @@ describe("14. /api/me + admin read surface real recovery data", () => {
     assert.equal(r.status, "active");
     assert.equal(r.allowance, 50);
     assert.equal(r.requests_used, 0);
-    assert.equal(r.overage_cap_cents, 2000);
-    assert.equal(r.overage_used_cents, 0);
     assert.equal(r.reauth_required, false);
     assert.equal(r.cancel_scheduled, false);
     assert.ok(r.setup.contacts.carrier.email === "jane@example.com");

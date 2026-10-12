@@ -4,21 +4,24 @@
  * The recovery engine (ops VM worker) pushes usage for a customer:
  *   { "email": "...", "period_start": "<ISO or unix seconds>",
  *     "period_end": "<ISO or unix seconds, optional>",
- *     "requests_used": 12, "overage_units": 0 }
+ *     "requests_used": 12 }
  *
  * Guarded by INTAKE_INTERNAL_KEY (header "x-intake-key", constant-time
  * compare). Never linked publicly.
  *
  * Semantics:
  *   - IDEMPOTENT: pushing the same values twice is a no-op.
- *   - MONOTONIC: counters never decrease. A push lower than the stored
+ *   - MONOTONIC: the counter never decreases. A push lower than the stored
  *     value is clamped to the stored value (reported as clamped:true).
  *   - PERIOD ADVANCE: when period_start is later than the stored
- *     billing_period_start, the counters reset to the pushed values (new
+ *     billing_period_start, the counter resets to the pushed value (new
  *     billing month). Stripe-driven resets via invoice.paid take precedence
  *     and use the same rule.
  *   - Runs applyRecoveryLifecycle() first so expired grace / scheduled
  *     cancels are reflected.
+ *   - No overage: requests beyond the monthly allowance wait in the queue
+ *     for the next billing cycle at no extra charge. This endpoint only
+ *     tracks the request count against the allowance.
  */
 
 import {
@@ -103,21 +106,16 @@ export async function onRequestPost(context) {
     patch.billing_period_end = periodEndIso;
   }
 
-  // Monotonic counters: within a period they only grow; a period advance
-  // resets the baseline to the pushed values.
+  // Monotonic counter: within a period it only grows; a period advance
+  // resets the baseline to the pushed value.
   const pushedUsed = toNonNegInt(body.requests_used, 0);
-  const pushedOver = toNonNegInt(body.overage_units, 0);
   const baseUsed = periodAdvanced ? 0 : current.requests_used || 0;
-  const baseOver = periodAdvanced ? 0 : current.overage_units || 0;
   const requestsUsed = Math.max(baseUsed, pushedUsed);
-  const overageUnits = Math.max(baseOver, pushedOver);
-  const clamped =
-    (!periodAdvanced && (pushedUsed < baseUsed || pushedOver < baseOver)) || false;
+  const clamped = (!periodAdvanced && pushedUsed < baseUsed) || false;
 
   const next = await setRecovery(env, email, {
     ...patch,
     requests_used: requestsUsed,
-    overage_units: overageUnits,
   });
 
   return json({
@@ -125,10 +123,8 @@ export async function onRequestPost(context) {
     email: next.email || email,
     period_advanced: periodAdvanced,
     requests_used: next.requests_used,
-    overage_units: next.overage_units,
     allowance: next.allowance,
     allowance_remaining: Math.max(0, (next.allowance || 0) - next.requests_used),
-    overage_cap_cents: next.overage_cap_cents,
     clamped,
     status: next.status,
   });

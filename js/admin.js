@@ -89,7 +89,7 @@
   /* ---------- recovery add-on (read-only; backend owned by billing workstream) ---------- */
   // GET /api/admin/recovery is an assumed contract from the billing workstream.
   // Shape: { ok, entitlements: [{email, entitlement, status, requests_used,
-  // requests_remaining, overage_cap_cents, overage_used_cents, reauth_required}],
+  // requests_remaining, allowance, reauth_required}],
   // exceptions: [...], audit: [...] }. The managed_included flag control stays
   // disabled until the admin API contract supports writes.
   function loadRecoveryAdmin() {
@@ -111,16 +111,13 @@
       } else {
         html += '<div class="table-wrap"><table class="data-table"><thead><tr>' +
           "<th>Customer</th><th>Entitlement</th><th>Status</th><th>Used / allowance</th>" +
-          "<th>Overage cap</th><th>Overage used</th><th>Reauth</th></tr></thead><tbody>" +
+          "<th>Reauth</th></tr></thead><tbody>" +
           ents.map(function (e) {
             var label = RA ? RA.entitlementLabel(e.entitlement) : e.entitlement;
             var st = RA ? RA.statusLabel(e.status) : e.status;
-            var money = RA ? RA.fmtMoney : function (c) { return "$" + (Number(c || 0) / 100).toFixed(2); };
             return "<tr><td class='small'>" + esc(e.email || "") + "</td><td>" + esc(label) + "</td>" +
               "<td>" + statusBadge(e.status || "") + " " + esc(st) + "</td>" +
               "<td>" + esc(e.requests_used) + " / " + esc(e.allowance != null ? e.allowance : 50) + "</td>" +
-              "<td>" + esc(money(e.overage_cap_cents)) + "</td>" +
-              "<td>" + esc(money(e.overage_used_cents)) + "</td>" +
               "<td>" + (e.reauth_required ? "Yes" : "No") + "</td></tr>";
           }).join("") + "</tbody></table></div>";
       }

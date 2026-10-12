@@ -17,7 +17,6 @@
  *   set_status        — { status }: explicit ops status transition
  *                       (e.g. awaiting_setup -> active once setup is verified).
  *                       Must be a valid RECOVERY_STATUSES value.
- *   set_overage_cap   — { overage_cap_cents }: 0 disables overage.
  *
  * EVERY call is audit-logged to KV (recovery_audit:* records) with timestamp,
  * action, email, and actor. Audit records are append-only; this endpoint never
@@ -143,16 +142,6 @@ export async function onRequestPost(context) {
       patch = { status };
       if (status === "canceled") patch.canceled_at = nowIso;
       detail = { from: before.status, to: status };
-      break;
-    }
-
-    case "set_overage_cap": {
-      const cap = Number(body.overage_cap_cents);
-      if (!Number.isFinite(cap) || cap < 0) {
-        return json({ ok: false, error: "invalid_cap" }, 400);
-      }
-      patch = { overage_cap_cents: Math.floor(cap) };
-      detail = { overage_cap_cents: patch.overage_cap_cents };
       break;
     }
 
