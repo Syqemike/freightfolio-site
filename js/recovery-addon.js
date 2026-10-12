@@ -19,10 +19,8 @@
   "use strict";
 
   var RECOVERY = {
-    // LOUD: the billing workstream owns this. Mike must create a $99/mo
-    // recurring payment link in the Stripe dashboard and replace the value
-    // below. NEVER invent a real-looking link and NEVER reuse the pilot link
-    // (the pilot is one-time $9.99 and must never create a subscription).
+    // Live Stripe objects (created 2026-10-11): product prod_VQOcL2Gq7iYqit,
+    // price price_1UPXpPAN6U5YE12V63eLnhco ($99/mo), payment link below.
     PAYMENT_LINK: "https://buy.stripe.com/fZueVcerNbGKgRXcNnabK0c",
     PRICE_CENTS: 9900,
     ALLOWANCE: 50,             // document requests included per month
