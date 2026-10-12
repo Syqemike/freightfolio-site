@@ -138,13 +138,15 @@ export async function onRequestPost(context) {
   order.files = [...(order.files || []), record];
   // Move paid/uploading/delivered orders to received when new files arrive
   // (never regress processing — the bridge is already working on it).
-  const needsProcessing = ["paid", "uploading", "delivered"].includes(order.status);
+  const wasPaidOrUploading = ["paid", "uploading"].includes(order.status);
+  const needsProcessing = wasPaidOrUploading || order.status === "delivered";
   if (needsProcessing) order.status = "received";
   await putOrder(env, order, { test });
 
-  // Notify once, when the order first reaches "received".
+  // Notify once, when the order first reaches "received" (from paid/uploading).
+  // New files on a delivered order don't retrigger the notification.
   let email = "skipped";
-  if (firstReceipt && !test) {
+  if (wasPaidOrUploading && !test) {
     try {
       const a = await sendFilesReceived(env, order, 1);
       const b = await sendOpsFilesReceived(env, order);
