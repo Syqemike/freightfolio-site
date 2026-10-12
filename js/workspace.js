@@ -519,10 +519,13 @@
             } else {
               btn.disabled = false;
               btn.textContent = "Dismiss";
+              var err = (r.body && r.body.error) || ("HTTP " + r.status);
+              alert("Could not dismiss: " + err);
             }
-          }).catch(function () {
+          }).catch(function (e) {
             btn.disabled = false;
             btn.textContent = "Dismiss";
+            alert("Could not dismiss: network error");
           });
         });
       });
