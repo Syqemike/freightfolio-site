@@ -41,10 +41,7 @@ import {
   recoverySummary,
   recoverySelfServeAllowed,
 } from "../../../lib/recovery-api.js";
-import { createRequire } from "node:module";
-
-const require = createRequire(import.meta.url);
-const RA = require("../../../js/recovery-addon.js");
+import RA from "../../../js/recovery-addon.js";
 
 function str(v, max = 500) {
   if (v === null || v === undefined) return "";
