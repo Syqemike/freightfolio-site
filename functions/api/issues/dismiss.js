@@ -34,7 +34,7 @@ export async function onRequestPost(context) {
   }
   if (!found) return json({ ok: false, error: "issue_not_found" }, 404);
 
-  await putOrder(env, order);
+  await putOrder(env, order, { test: order.test === true });
 
   return json({ ok: true });
 }
