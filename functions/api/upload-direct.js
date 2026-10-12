@@ -97,15 +97,13 @@ export async function onRequestPost(context) {
 
   const hash = await sha256HexOfBytes(bytes);
 
-  // Allowance + duplicate checks against the recorded files.
+  // Allowance check against the recorded files.
   const used = (order.files || []).length;
   const allowance = order.doc_allowance || 0;
   if (used >= allowance) {
     return json({ ok: false, error: "allowance_exhausted", filename, allowance }, 409);
   }
-  if ((order.files || []).some((f) => f.sha256 === hash)) {
-    return json({ ok: false, error: "duplicate_content", filename }, 409);
-  }
+  // Note: duplicate content check removed per user request - accept files regardless
 
   let key;
   try {
