@@ -33,6 +33,7 @@ export async function onRequestGet(context) {
         recommendation: i.recommendation,
         source: i.source,
         created_at: i.created_at,
+        dismissed: i.dismissed,
       });
     }
   }
