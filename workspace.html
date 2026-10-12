@@ -52,6 +52,7 @@
         <button class="tab" role="tab" id="tab-issues" aria-controls="panel-issues" aria-selected="false" tabindex="-1">Issues <span id="issues-count"></span></button>
         <button class="tab" role="tab" id="tab-reports" aria-controls="panel-reports" aria-selected="false" tabindex="-1">Reports</button>
         <button class="tab" role="tab" id="tab-account" aria-controls="panel-account" aria-selected="false" tabindex="-1">Account</button>
+        <button class="tab" role="tab" id="tab-recovery" aria-controls="panel-recovery" aria-selected="false" tabindex="-1">Recovery</button>
       </div>
 
       <!-- OVERVIEW -->
@@ -155,6 +156,11 @@
           <p class="form-error" id="delete-error" role="alert" hidden></p>
         </div>
       </section>
+
+      <!-- RECOVERY (Missing-Document Recovery add-on) -->
+      <section class="tabpanel" id="panel-recovery" role="tabpanel" aria-labelledby="tab-recovery" tabindex="0" hidden>
+        <div id="recovery-root"></div>
+      </section>
     </div>
 
   </div>
@@ -168,6 +174,7 @@
 
 <script src="/js/nav.js"></script>
 <script src="/js/zip.js?v=1"></script>
-<script src="/js/workspace.js?v=20261010d"></script>
+<script src="/js/recovery-addon.js?v=20261011a"></script>
+<script src="/js/workspace.js?v=20261011a"></script>
 </body>
 </html>
