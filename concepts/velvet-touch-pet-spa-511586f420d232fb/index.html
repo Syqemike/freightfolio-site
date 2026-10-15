@@ -4,6 +4,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Velvet Touch Pet Spa: pet grooming, boarding and doggy daycare at 704 N Range Ave, Denham Springs, LA. Call (225) 664-6800 to book.">
 <title>Velvet Touch Pet Spa | Grooming, Boarding & Daycare in Denham Springs, LA</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -12,6 +13,8 @@
     --cream:#faf8f4; --ink:#23302e; --muted:#6b7a78; --line:#dce8e6; --sand:#f1ece2;
   }
   body { background:var(--cream); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  html { scroll-behavior:smooth; }
+  section.block, header.hero { scroll-margin-top:72px; }
   .serif { font-family:Georgia,'Times New Roman',serif; }
   a { color:inherit; text-decoration:none; }
   .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
@@ -29,7 +32,8 @@
   .navlinks a:hover { color:var(--teal); }
   .btn { display:inline-block; background:var(--coral); color:#fff; padding:13px 28px; font-size:13px;
          letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:999px; cursor:pointer; }
-  .btn:hover { background:var(--coral-dark); }
+  .btn:hover { background:var(--coral-dark); transform:translateY(-1px); }
+  .btn { transition:background .2s ease, transform .2s ease; }
   .btn.ghost { background:transparent; color:var(--teal); border:2px solid var(--teal); }
   .btn.ghost:hover { background:rgba(14,124,123,.07); }
 
@@ -55,7 +59,8 @@
   p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
 
   .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
-  .card { background:#fff; border:1px solid var(--line); border-radius:20px; overflow:hidden; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:20px; overflow:hidden; transition:transform .25s ease, box-shadow .25s ease; }
+  .card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(14,124,123,.12); }
   .card img { width:100%; aspect-ratio:16/10; object-fit:cover; }
   .card .pad { padding:24px 26px 28px; }
   .card h3 { font-size:21px; margin-bottom:8px; }
@@ -79,6 +84,15 @@
   .hours td:last-child { text-align:right; color:var(--muted); }
   .contact-line { font-size:17px; margin-bottom:10px; }
   .contact-line b { color:var(--teal); }
+  .social-row { display:flex; gap:12px; margin-top:22px; align-items:center; }
+  .social-row .label { font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); font-weight:700; }
+  .social-btn { display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; border-radius:50%;
+                border:2px solid var(--teal); color:var(--teal); }
+  .social-btn:hover { background:var(--teal); color:#fff; }
+  .social-btn svg { width:20px; height:20px; fill:currentColor; }
+  footer .social-btn { border-color:#7fb8b7; color:#a9cfce; }
+  footer .social-btn:hover { background:#7fb8b7; color:var(--teal-dark); }
+  .foot-right { display:flex; align-items:center; gap:18px; }
 
   footer { background:var(--teal-dark); color:#a9cfce; }
   footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:10px; }
@@ -124,7 +138,7 @@
       <a class="btn" href="tel:+12256646800">Book a Spa Day</a>
       <a class="btn ghost" href="#services">See Services</a>
     </div>
-    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.9 from 116 Google reviews</span></div>
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span><a href="https://www.facebook.com/velvettouchpetspa" target="_blank" rel="noopener">4.7 stars from 219 Facebook reviews</a></span></div>
     <br><span class="tagline">Grooming &middot; Boarding &middot; Daycare</span>
   </div>
   <div class="hero-img">
@@ -151,7 +165,7 @@
     </div>
     <div class="card">
       <img src="img/photo-3.jpg" alt="Happy client dog on the grass">
-      <div class="pad"><h3>Boarding</h3><p>Overnight stays with real care and attention, not a kennel assembly line.</p><span class="price">About $20-25/night</span></div>
+      <div class="pad"><h3>Boarding</h3><p>Overnight stays with real care and attention, not a kennel assembly line. Call for current boarding rates.</p></div>
     </div>
     <div class="card">
       <img src="img/photo-6.jpg" alt="Velvet Touch groomer posing with a happy client dog">
@@ -175,12 +189,12 @@
 <section class="block reviews" id="reviews">
   <div class="wrap">
     <div class="kicker">Word of mouth</div>
-    <h2 class="stitle serif">4.9 stars, 116 reviews</h2>
-    <p class="ssub">Why Denham Springs keeps coming back.</p>
+    <h2 class="stitle serif">4.7 stars, 219 reviews</h2>
+    <p class="ssub">Why Denham Springs keeps coming back. Ratings on our <a href="https://www.facebook.com/velvettouchpetspa" target="_blank" rel="noopener" style="color:var(--teal); text-decoration:underline;">Facebook page</a>.</p>
     <div class="rev-grid">
       <div class="rev">
         <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p>"Service was phenomenal. Staff was very helpful. I would highly recommend them to anyone."</p>
+        <p>"Friendly staff. Great boarding and grooming services. Highly recommend. Fur babies love it."</p>
         <cite>Google review</cite>
       </div>
       <div class="rev">
@@ -190,7 +204,7 @@
       </div>
       <div class="rev">
         <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p>"Moose had a spa day and came out lookin' good."</p>
+        <p>"This place was absolutely wonderful! They did a remarkable job grooming my Maltese and are very kind and patient with the dogs. The pricing is very good here. I will be back."</p>
         <cite>Google review</cite>
       </div>
     </div>
@@ -216,6 +230,15 @@
       <p class="contact-line"><b>Address</b><br>704 N Range Ave<br>Denham Springs, LA 70726</p>
       <p class="contact-line"><b>Phone</b><br><a href="tel:+12256646800">(225) 664-6800</a></p>
       <p class="contact-line"><b>Booking</b><br>Call ahead to reserve a groom or a boarding stay, especially around holidays.</p>
+      <div class="cta-row" style="margin-top:18px;">
+        <a class="btn" href="tel:+12256646800">Call to Book</a>
+      </div>
+      <div class="social-row">
+        <span class="label">Follow us</span>
+        <a class="social-btn" href="https://www.facebook.com/velvettouchpetspa" target="_blank" rel="noopener" aria-label="Velvet Touch Pet Spa on Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.91 3.78-3.91 1.09 0 2.24.2 2.24.2v2.47H15.2c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.45 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -223,7 +246,12 @@
 <footer>
   <div class="wrap">
     <span><b>Velvet Touch Pet Spa</b> &middot; 704 N Range Ave, Denham Springs, LA 70726</span>
-    <span><a href="tel:+12256646800">(225) 664-6800</a></span>
+    <span class="foot-right">
+      <a class="social-btn" href="https://www.facebook.com/velvettouchpetspa" target="_blank" rel="noopener" aria-label="Velvet Touch Pet Spa on Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.91 3.78-3.91 1.09 0 2.24.2 2.24.2v2.47H15.2c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.45 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>
+      </a>
+      <a href="tel:+12256646800">(225) 664-6800</a>
+    </span>
   </div>
 </footer>
 

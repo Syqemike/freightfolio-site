@@ -50,7 +50,13 @@
   .strip .wrap { display:flex; justify-content:space-between; padding-top:15px; padding-bottom:15px;
                  font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; flex-wrap:wrap; gap:10px; }
 
-  section.block { padding:76px 28px; }
+  section.block { padding:76px 28px; scroll-margin-top:80px; }
+  .rating-badge { display:flex; justify-content:center; margin-bottom:34px; }
+  .rating-badge span { display:inline-flex; align-items:center; gap:10px; background:#fff; border:1px solid var(--line);
+    border-radius:999px; padding:9px 20px; font-size:14px; font-weight:600; color:var(--ink); }
+  .rating-badge .stars { color:var(--orange); letter-spacing:2px; }
+  .contact-line a { color:var(--navy); font-weight:700; }
+  .contact-line a:hover { color:var(--orange); }
   .kicker { color:var(--orange); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
   h2.stitle { font-size:38px; text-align:center; margin-bottom:10px; font-weight:800; color:var(--navy); }
   p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
@@ -89,8 +95,14 @@
   .cta-box p { color:#b9cddf; margin-bottom:20px; }
 
   footer { background:var(--navy2); color:#8fa5ba; }
-  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:10px; }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:14px; }
   footer b { color:#fff; }
+  footer .addr { display:block; margin-top:4px; }
+  footer .fine { margin-top:8px; font-size:11.5px; color:#6d8aa3; font-style:italic; }
+  .social { display:flex; gap:12px; align-items:center; }
+  .social a { width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,.08); color:#cfe0f0;
+    display:inline-flex; align-items:center; justify-content:center; }
+  .social a:hover { background:var(--orange); color:#fff; }
 
   @media (max-width:860px) {
     .hero .wrap, .visit { grid-template-columns:1fr; }
@@ -151,18 +163,18 @@
 <section class="block wrap" id="services">
   <div class="kicker">What we do</div>
   <h2 class="stitle">Heating, cooling, and everything between</h2>
-  <p class="ssub">Full-service HVAC for homes and light commercial across the Gulf Coast.</p>
+  <p class="ssub">Full-service HVAC for heating, cooling, and ventilation across the Mississippi Gulf Coast.</p>
   <div class="cards">
     <div class="card">
-      <img src="img/photo-2.jpg" alt="New Trane XR condenser unit installed beside a home">
-      <div class="pad"><h3>New System Installs</h3><p>Right-sized Trane, Mitsubishi, and Ruud systems, installed clean and permitted. We did new construction and changeouts for 30 years.</p></div>
+      <img src="img/photo-2.jpg" loading="lazy" alt="New Trane XR condenser unit installed beside a home">
+      <div class="pad"><h3>New System Installs</h3><p>Right-sized Trane, Mitsubishi, and Ruud systems, installed clean and done right. We have handled new construction and changeouts for 30 years.</p></div>
     </div>
     <div class="card">
-      <img src="img/photo-4.jpg" alt="Electrical service panels and disconnect beside a Trane condenser">
+      <img src="img/photo-4.jpg" loading="lazy" alt="Electrical service panels and disconnect beside a Trane condenser">
       <div class="pad"><h3>Repairs</h3><p>No-cool calls, strange noises, weak airflow. We diagnose it straight and fix it right the first time.</p></div>
     </div>
     <div class="card">
-      <img src="img/photo-3.jpg" alt="New air handler unit with sealed ductwork">
+      <img src="img/photo-3.jpg" loading="lazy" alt="New air handler unit with sealed ductwork">
       <div class="pad"><h3>Ductwork &amp; Ventilation</h3><p>Sealed ducts, new air handlers, and ventilation that actually moves air where it should go.</p></div>
     </div>
   </div>
@@ -197,6 +209,7 @@
   <div class="kicker">Word of mouth</div>
   <h2 class="stitle">What customers say</h2>
   <p class="ssub">Real reviews from Coast homeowners.</p>
+  <div class="rating-badge"><span>Rated <b>4.4 out of 5</b> across 7 reviews on Birdeye</span></div>
   <div class="rev-grid">
     <div class="rev">
       <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -232,6 +245,7 @@
       </table>
       <p class="contact-line"><b>Address</b><br>5192 Beatline Rd<br>Long Beach, MS 39560</p>
       <p class="contact-line"><b>Phone</b><br><a href="tel:+12288686437">(228) 868-6437</a></p>
+      <p class="contact-line"><b>License</b><br>Mississippi #10416-SC</p>
     </div>
     <div>
       <div class="cta-box">
@@ -245,8 +259,14 @@
 
 <footer>
   <div class="wrap">
-    <span><b>Southland Heating &amp; Air Conditioning</b> &middot; 5192 Beatline Rd, Long Beach, MS 39560</span>
-    <span><a href="tel:+12288686437">(228) 868-6437</a></span>
+    <div>
+      <b>Southland Heating &amp; Air Conditioning</b>
+      <span class="addr">5192 Beatline Rd, Long Beach, MS 39560 &middot; <a href="tel:+12288686437">(228) 868-6437</a></span>
+      <div class="fine">Concept preview. A free mockup, not affiliated with or endorsed by the business.</div>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/Southland-Heating-Air-Conditioning-Inc-885620174834623/" target="_blank" rel="noopener" aria-label="Southland Heating and Air Conditioning on Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.9 3.77-3.9 1.1 0 2.24.2 2.24.2v2.46H15.2c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.45 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg></a>
+    </div>
   </div>
 </footer>
 

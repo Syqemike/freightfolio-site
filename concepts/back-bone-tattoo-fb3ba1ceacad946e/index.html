@@ -11,7 +11,10 @@
     --paper:#f3ecdc; --paper2:#e9dfc8; --ink:#191512; --muted:#6e6257;
     --red:#a83226; --red-dark:#7e241b; --gold:#b98a2f; --line:#d5c8a8;
   }
+  html { scroll-behavior:smooth; }
   body { background:var(--paper); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  a:focus-visible, .btn:focus-visible { outline:3px solid var(--gold); outline-offset:2px; }
+  section[id] { scroll-margin-top:84px; }
   .serif { font-family:Georgia,'Times New Roman',serif; }
   a { color:inherit; text-decoration:none; }
   .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
@@ -21,7 +24,7 @@
   .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
 
   nav { position:sticky; top:0; background:rgba(243,236,220,.97); border-bottom:3px double var(--ink); z-index:10; }
-  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; flex-wrap:wrap; gap:12px; }
   .brand { font-size:22px; font-weight:800; letter-spacing:1px; }
   .brand em { color:var(--red); font-style:normal; }
   .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
@@ -34,8 +37,7 @@
   .btn.ghost:hover { background:rgba(25,21,18,.06); }
 
   .hero { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding:72px 28px; }
-  .hero .kicker { color:var(--red); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
-  .hero h1 { font-size:54px; line-height:1.08; font-weight:800; margin-bottom:18px; }
+  .hero .kicker { color:var(--red); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }  .hero h1 { font-size:54px; line-height:1.08; font-weight:800; margin-bottom:18px; }
   .hero h1 em { color:var(--red); font-style:normal; }
   .hero p.lead { color:var(--muted); font-size:18px; margin-bottom:30px; }
   .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
@@ -54,9 +56,11 @@
   p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
 
   .work-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .work-grid figure { position:relative; transition:transform .25s ease; }
+  .work-grid figure:hover { transform:translateY(-4px); }
+  .work-grid figure:hover figcaption { color:var(--red); }
   .work-grid img { width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:6px; border:2px solid var(--ink); }
-  .work-grid figure { position:relative; }
-  .work-grid figcaption { text-align:center; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-top:8px; }
+  .work-grid figcaption { text-align:center; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-top:8px; transition:color .25s ease; }
 
   .about { background:var(--paper2); border-top:3px double var(--ink); border-bottom:3px double var(--ink); }
   .about-grid { display:grid; grid-template-columns:1fr; gap:28px; align-items:center; }
@@ -70,7 +74,8 @@
 
   .reviews { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
   .rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
-  .rev { background:var(--paper); border:2px solid var(--ink); border-radius:6px; padding:28px; }
+  .rev { background:var(--paper); border:2px solid var(--ink); border-radius:6px; padding:28px; transition:transform .25s ease, box-shadow .25s ease; }
+  .rev:hover { transform:translateY(-4px); box-shadow:5px 5px 0 rgba(25,21,18,.14); }
   .rev .q { color:var(--gold); font-size:20px; letter-spacing:2px; margin-bottom:10px; }
   .rev p { font-size:15.5px; margin-bottom:12px; }
   .rev cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
@@ -86,6 +91,9 @@
   footer { background:var(--ink); color:#a99c82; }
   footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:10px; }
   footer b { color:#fff; }
+  footer .flinks { display:flex; gap:18px; flex-wrap:wrap; font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; }
+  footer .flinks a:hover { color:#fff; }
+  footer .fmap:hover { color:#fff; }
 
   @media (max-width:860px) {
     .hero, .visit { grid-template-columns:1fr; }
@@ -126,7 +134,7 @@
       <a class="btn" href="tel:+12282745210">Call the Shop</a>
       <a class="btn ghost" href="#work">See the Work</a>
     </div>
-    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>5.0 from 40+ Google reviews</span></div>
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>5.0 from 47 reviews</span></div>
   </div>
   <div class="hero-img">
     <img src="img/photo-4.jpg" alt="Tattoo artist at work in a moody studio">
@@ -155,7 +163,7 @@
   </div>
 </section>
 
-<section class="block about">
+<section class="block about" id="about">
   <div class="wrap about-grid">
     <img src="img/photo-2.jpg" alt="Inside Back Bone Tattoo, workstation and tattoo chair">
     <div>
@@ -171,7 +179,7 @@
 <section class="block reviews" id="reviews">
   <div class="wrap">
     <div class="kicker">Word of mouth</div>
-    <h2 class="stitle serif">5.0 stars on Google</h2>
+    <h2 class="stitle serif">5.0 stars from 47 reviews</h2>
     <p class="ssub">What Biloxi says about the shop.</p>
     <div class="rev-grid">
       <div class="rev">
@@ -212,13 +220,20 @@
       <p class="contact-line"><b>Address</b><br>271 Iberville Dr<br>Biloxi, MS 39531</p>
       <p class="contact-line"><b>Phone</b><br><a href="tel:+12282745210">(228) 274-5210</a></p>
       <p class="contact-line"><b>Booking</b><br>Call ahead for custom pieces. Walk-ins welcome when the chair is open.</p>
+      <p style="margin-top:18px;"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=271+Iberville+Dr,+Biloxi,+MS+39531" target="_blank" rel="noopener">Get Directions</a></p>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span><b>Back Bone Tattoo</b> &middot; 271 Iberville Dr, Biloxi, MS 39531</span>
+    <span><b>Back Bone Tattoo</b> &middot; <a class="fmap" href="https://www.google.com/maps/search/?api=1&amp;query=271+Iberville+Dr,+Biloxi,+MS+39531" target="_blank" rel="noopener">271 Iberville Dr, Biloxi, MS 39531</a></span>
+    <span class="flinks">
+      <a href="#work">Work</a>
+      <a href="#about">Shop</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </span>
     <span><a href="tel:+12282745210">(228) 274-5210</a></span>
   </div>
 </footer>

@@ -100,6 +100,17 @@
     .hero h1 { font-size:40px; }
     .navlinks { display:none; }
   }
+
+  .price-note { text-align:center; color:var(--muted); font-size:14px; margin-top:26px; }
+  .socials { display:flex; gap:12px; align-items:center; }
+  .socials a { display:inline-flex; width:40px; height:40px; border-radius:50%; border:1px solid #4a4234;
+               align-items:center; justify-content:center; transition:background .2s; }
+  .socials a:hover { background:rgba(194,148,58,.18); }
+  .socials svg { width:18px; height:18px; fill:var(--gold); }
+  .socials.visit-socials a { border-color:var(--line); }
+  .socials.visit-socials { margin-top:14px; }
+  section[id] { scroll-margin-top:76px; }
+  a:focus-visible, .btn:focus-visible { outline:3px solid var(--gold); outline-offset:2px; }
 </style>
 </head>
 <body>
@@ -134,7 +145,7 @@
         <a class="btn" href="https://booksy.com/en-us/36299_eastern-shore-barber-shop_barber-shop_13415_daphne" target="_blank" rel="noopener">Book on Booksy</a>
         <a class="btn ghost" href="#services">See Services</a>
       </div>
-      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>5.0 on Google &middot; 4.9 from 740+ on Booksy</span></div>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>5.0 on Facebook &middot; 4.9 from 740+ on Booksy</span></div>
     </div>
     <div class="hero-img">
       <img src="img/photo-8.jpg" alt="Barber doing detailed fade work at Eastern Shore Barber Shop">
@@ -156,14 +167,15 @@
   <p class="ssub">Straightforward pricing, no surprises. Ask your barber what fits.</p>
   <div class="services">
     <div class="svc"><h3>Adult Haircut<small>Consultation, cut, and style</small></h3><span class="price">from $30</span></div>
-    <div class="svc"><h3>Cut with Beard &amp; Shave<small>Full service with hot towel</small></h3><span class="price">$50</span></div>
-    <div class="svc"><h3>Skin Fade<small>Precision blended fade</small></h3><span class="price">from $30</span></div>
-    <div class="svc"><h3>Kids Cut<small>Patient cuts for young gentlemen</small></h3><span class="price">from $25</span></div>
-    <div class="svc"><h3>Beard Trim<small>Shape, line up, and detail</small></h3><span class="price">from $15</span></div>
-    <div class="svc"><h3>Hot Towel Shave<small>Beard and head shave</small></h3><span class="price">from $35</span></div>
-    <div class="svc"><h3>Line Up<small>Crisp edges between cuts</small></h3><span class="price">from $10</span></div>
-    <div class="svc"><h3>Shampoo Service<small>A wash and finish</small></h3><span class="price">from $10</span></div>
+    <div class="svc"><h3>Cut with Beard / Shave<small>Full service with hot towel</small></h3><span class="price">$50</span></div>
+    <div class="svc"><h3>Beard and Head Shave<small>Straight-razor detail</small></h3><span class="price">$40</span></div>
+    <div class="svc"><h3>Line Up + Shave or Beard<small>Crisp edges plus detail work</small></h3><span class="price">$30</span></div>
+    <div class="svc"><h3>Line Up (No Fade)<small>Edges between cuts</small></h3><span class="price">$15</span></div>
+    <div class="svc"><h3>Kids Cut<small>Patient cuts for young gentlemen</small></h3><span class="price">see Booksy</span></div>
+    <div class="svc"><h3>Shampoo Service<small>A wash and finish</small></h3><span class="price">$10</span></div>
+    <div class="svc"><h3>Eyebrows<small>Quick detail</small></h3><span class="price">$12</span></div>
   </div>
+  <p class="price-note">Prices as listed on the shop's Booksy page. Book there for current pricing and availability.</p>
 </section>
 
 <section class="block wrap" id="gallery">
@@ -188,7 +200,7 @@
     <h2 class="stitle serif">In the chairs</h2>
     <p class="ssub">Ask for your barber by name when you book.</p>
     <div class="barbers">
-      <div class="barber"><div class="n serif">Chris</div><div class="r">Master Barber</div></div>
+      <div class="barber"><div class="n serif">Chris</div><div class="r">Barber</div></div>
       <div class="barber"><div class="n serif">Jose</div><div class="r">Barber</div></div>
       <div class="barber"><div class="n serif">Alex</div><div class="r">Barber</div></div>
       <div class="barber"><div class="n serif">Corky Irizarry</div><div class="r">Barber</div></div>
@@ -199,23 +211,23 @@
 <section class="block reviews" id="reviews">
   <div class="wrap">
     <div class="kicker">Word of mouth</div>
-    <h2 class="stitle serif">5.0 stars on Google</h2>
-    <p class="ssub">What Daphne says about the shop.</p>
+    <h2 class="stitle serif">5.0 stars on Facebook</h2>
+    <p class="ssub">What Daphne says about the shop. Quoted from public reviews.</p>
     <div class="rev-grid">
       <div class="rev">
         <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p>"Hottest barbershop on the Gulf Coast, period."</p>
-        <cite>Google review</cite>
+        <cite>Facebook review</cite>
       </div>
       <div class="rev">
         <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p>"Just moved here. Walk in customer. Now a forever customer. Faith based business. Could not be happier about finding them!"</p>
-        <cite>Birdeye review</cite>
+        <cite>Illustrative review</cite>
       </div>
       <div class="rev">
         <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p>"Chris always does an excellent job!"</p>
-        <cite>Google review</cite>
+        <cite>Facebook review</cite>
       </div>
       <div class="rev">
         <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -245,7 +257,11 @@
       <p class="contact-line"><b>Address</b><br>28623 N Main St Unit B<br>Daphne, AL</p>
       <p class="contact-line"><b>Phone</b><br><a href="tel:+12512889748">(251) 288-9748</a></p>
       <p class="contact-line"><b>Booking</b><br>Walk-ins welcome. Appointments through Booksy, Tuesday through Saturday.</p>
-      <p class="contact-line"><b>Second location</b><br>Eastern Shore Barber Shop II<br>10179 Eastern Shore Drive, Spanish Fort, AL<br><a href="tel:+12512883280">(251) 288-3280</a></p>
+      <p class="contact-line"><b>Second location</b><br>Eastern Shore Barber Shop II<br>10179 Eastern Shore Drive #105<br>Spanish Fort, AL 36527<br><a href="tel:+12512883280">(251) 288-3280</a></p>
+      <p class="contact-line"><b>Follow us</b></p>
+      <div class="socials visit-socials">
+        <a href="https://www.facebook.com/EasternShoreBarbers" target="_blank" rel="noopener" aria-label="Eastern Shore Barber Shop on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.9 3.78-3.9 1.09 0 2.24.2 2.24.2v2.47H15.2c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.45 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg></a>
+      </div>
     </div>
   </div>
 </section>
@@ -253,6 +269,9 @@
 <footer>
   <div class="wrap">
     <span><b>Eastern Shore Barber Shop</b> &middot; 28623 N Main St Unit B, Daphne, AL</span>
+    <span class="socials">
+      <a href="https://www.facebook.com/EasternShoreBarbers" target="_blank" rel="noopener" aria-label="Eastern Shore Barber Shop on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12 2s8.5 8.5 9.94 8.5V12H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.9 3.78-3.9 1.09 0 2.24.2 2.24.2v2.47H15.2c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.45 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg></a>
+    </span>
     <span><a href="tel:+12512889748">(251) 288-9748</a></span>
   </div>
 </footer>

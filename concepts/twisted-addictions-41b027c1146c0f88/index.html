@@ -7,6 +7,7 @@
 <title>Twisted Addictions | Tattoos & Piercings in Kenner, LA</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
   :root {
     --bg:#161216; --bg2:#1f1a20; --ink:#f2ecf1; --muted:#a89aa6;
     --pink:#e0408a; --pink-dark:#b52c6c; --purple:#7a4fd0; --line:#332b34;
@@ -48,7 +49,7 @@
   .strip .wrap { display:flex; justify-content:space-between; padding-top:15px; padding-bottom:15px;
                  font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; flex-wrap:wrap; gap:10px; }
 
-  section.block { padding:76px 28px; }
+  section.block { padding:76px 28px; scroll-margin-top:70px; }
   .kicker { color:var(--pink); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
   h2.stitle { font-size:38px; text-align:center; margin-bottom:10px; font-weight:800; }
   p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
@@ -89,10 +90,17 @@
   footer { background:#0d0b0d; color:#6f606d; }
   footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:10px; }
   footer b { color:#fff; }
+  .social { display:flex; gap:12px; align-items:center; }
+  .social a { width:40px; height:40px; border:1px solid var(--line); border-radius:50%;
+              display:inline-flex; align-items:center; justify-content:center; }
+  .social a:hover { border-color:var(--pink); }
+  .social svg { width:18px; height:18px; fill:#8f7f8d; }
+  .social a:hover svg { fill:var(--pink); }
 
   @media (max-width:860px) {
     .hero, .split, .visit { grid-template-columns:1fr; }
-    .work-grid, .reviews .rev-grid, .artist-grid { grid-template-columns:1fr; }
+    .reviews .rev-grid, .artist-grid { grid-template-columns:1fr; }
+    .work-grid { grid-template-columns:repeat(2,1fr); gap:14px; }
     .hero h1 { font-size:40px; }
     .navlinks { display:none; }
     .artist { flex-direction:column; text-align:center; }
@@ -114,7 +122,7 @@
 
 <nav>
   <div class="wrap">
-    <a class="brand" href="#"><img src="img/photo-2.jpg" alt="Twisted Addictions logo">TWISTED <em>ADDICTIONS</em></a>
+    <a class="brand" href="#"><img src="img/photo-2.jpg" alt="Twisted Addictions shop">TWISTED <em>ADDICTIONS</em></a>
     <div class="navlinks">
       <a href="#work">Work</a>
       <a href="#artists">Artists</a>
@@ -154,18 +162,18 @@
   <h2 class="stitle serif">From the chairs</h2>
   <p class="ssub">Real pieces from the shop. Freehand, black and grey, color, and piercing work.</p>
   <div class="work-grid">
-    <figure><img src="img/photo-4.jpg" alt="Red rose memorial tattoo"><figcaption>Color Work</figcaption></figure>
-    <figure><img src="img/photo-5.jpg" alt="Freehand millipede skeleton tattoo in progress"><figcaption>Freehand</figcaption></figure>
-    <figure><img src="img/photo-6.jpg" alt="Bridge, nasallang and septum piercings"><figcaption>Piercings</figcaption></figure>
-    <figure><img src="img/photo-7.jpg" alt="Black and grey millipede sleeve"><figcaption>Black &amp; Grey</figcaption></figure>
-    <figure><img src="img/photo-8.jpg" alt="Butterflies and flowers color tattoo"><figcaption>Color Pieces</figcaption></figure>
-    <figure><img src="img/photo-3.jpg" alt="Artist in the shop"><figcaption>The Studio</figcaption></figure>
+    <figure><img src="img/photo-4.jpg" alt="Red rose memorial tattoo" loading="lazy"><figcaption>Color Work</figcaption></figure>
+    <figure><img src="img/photo-5.jpg" alt="Freehand millipede skeleton tattoo in progress" loading="lazy"><figcaption>Freehand</figcaption></figure>
+    <figure><img src="img/photo-6.jpg" alt="Bridge, nasallang and septum piercings" loading="lazy"><figcaption>Piercings</figcaption></figure>
+    <figure><img src="img/photo-7.jpg" alt="Black and grey millipede sleeve" loading="lazy"><figcaption>Black &amp; Grey</figcaption></figure>
+    <figure><img src="img/photo-8.jpg" alt="Butterflies and flowers color tattoo" loading="lazy"><figcaption>Color Pieces</figcaption></figure>
+    <figure><img src="img/photo-3.jpg" alt="Artist in the shop" loading="lazy"><figcaption>The Studio</figcaption></figure>
   </div>
 </section>
 
 <section class="block wrap" id="artists">
   <div class="split">
-    <img src="img/photo-1.jpg" alt="Inside Twisted Addictions tattoo shop">
+    <img src="img/photo-1.jpg" alt="Inside Twisted Addictions tattoo shop" loading="lazy">
     <div>
       <div class="kicker" style="text-align:left;">The shop</div>
       <h2 class="serif">A shop that feels like family.</h2>
@@ -188,7 +196,7 @@
     <p class="ssub">The names that come up in every review.</p>
     <div class="artist-grid">
       <div class="artist">
-        <img src="img/photo-3.jpg" alt="Sofi, tattoo artist">
+        <img src="img/photo-3.jpg" alt="Sofi, tattoo artist" loading="lazy">
         <div>
           <h3 class="serif">Sofi</h3>
           <div class="role">Tattoos</div>
@@ -196,7 +204,7 @@
         </div>
       </div>
       <div class="artist">
-        <img src="img/photo-6.jpg" alt="Piercing work by Autumn">
+        <img src="img/photo-6.jpg" alt="Piercing work by Autumn" loading="lazy">
         <div>
           <h3 class="serif">Autumn</h3>
           <div class="role">Piercings</div>
@@ -210,6 +218,7 @@
 <section class="block wrap reviews" id="reviews">
   <div class="kicker">Word of mouth</div>
   <h2 class="stitle serif">4.8 stars, 280+ reviews</h2>
+  <p class="ssub">Real reviews from clients on Birdeye and Google.</p>
   <div class="rev-grid">
     <div class="rev">
       <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -247,6 +256,7 @@
     <div>
       <p class="contact-line"><b>Address</b><br>2013 Williams Blvd<br>Kenner, LA 70062</p>
       <p class="contact-line"><b>Phone</b><br><a href="tel:+15043051885">(504) 305-1885</a></p>
+      <p class="contact-line"><b>Follow</b><br><a href="https://www.facebook.com/twistedaddictionstattoo/" target="_blank" rel="noopener">Message us on Facebook</a></p>
       <p class="contact-line"><b>Walk-ins</b><br>Walk in during shop hours or message ahead for larger custom pieces.</p>
     </div>
   </div>
@@ -255,6 +265,9 @@
 <footer>
   <div class="wrap">
     <span><b>Twisted Addictions</b> &middot; 2013 Williams Blvd, Kenner, LA 70062</span>
+    <div class="social">
+      <a href="https://www.facebook.com/twistedaddictionstattoo/" target="_blank" rel="noopener" aria-label="Twisted Addictions on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+    </div>
     <span><a href="tel:+15043051885">(504) 305-1885</a></span>
   </div>
 </footer>
