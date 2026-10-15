@@ -78,8 +78,15 @@
   .gal-note a { color:var(--gold); }
 
   .reviews { background:var(--ink2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-  .rev-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-  .rev { background:var(--ink); border:1px solid var(--line); padding:34px 32px; }
+  .rev-track { display:flex; gap:18px; overflow-x:auto; scroll-snap-type:x mandatory;
+    padding:6px 4px 18px; -webkit-overflow-scrolling:touch; }
+  .rev-track::-webkit-scrollbar { height:8px; }
+  .rev-track::-webkit-scrollbar-track { background:#0b0a09; }
+  .rev-track::-webkit-scrollbar-thumb { background:var(--gold-dim); }
+  .rev { flex:0 0 330px; scroll-snap-align:start; background:var(--ink);
+    border:1px solid var(--line); padding:30px 28px; display:flex; flex-direction:column; }
+  .rev .stars5 { color:var(--gold); letter-spacing:3px; font-size:13px; margin-bottom:14px; }
+  .scroll-hint { text-align:right; color:var(--muted); font-size:13px; letter-spacing:1px; margin-bottom:8px; }
   .rev .q { font-size:19px; font-style:italic; line-height:1.6; margin-bottom:18px; }
   .rev .who { color:var(--gold); font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
   .rev .who span { color:var(--muted); letter-spacing:0; text-transform:none; }
@@ -98,7 +105,8 @@
 
   @media (max-width:860px) {
     .hero h1 { font-size:38px; }
-    .cards, .rev-grid, .visit-grid { grid-template-columns:1fr; }
+    .cards, .visit-grid { grid-template-columns:1fr; }
+    .rev { flex:0 0 270px; }
     .artist-grid { grid-template-columns:repeat(2,1fr); }
     .gal { grid-template-columns:repeat(2,1fr); }
     .navlinks { display:none; }
@@ -188,13 +196,22 @@
 </div></section>
 
 <section id="reviews" class="reviews"><div class="wrap">
-  <div class="sec-head">
+<div class="sec-head">
     <div class="kicker sans">What people say</div>
     <h2>154 reviews, 4.9 stars</h2>
   </div>
-  <div class="rev-grid">
-    <div class="rev"><p class="q">&ldquo;Jason Block is a top tier artist with unbelievable talent. He is funny, he is one of the best you will ever meet.&rdquo;</p><div class="who sans">Philip <span>Google review</span></div></div>
-    <div class="rev"><p class="q">&ldquo;Absolutely love this shop. We went to a few other shops in the area and by far this was the best and most professional.&rdquo;</p><div class="who sans">Lauren K. <span>Google review</span></div></div>
+  <div class="scroll-hint sans">Swipe or scroll &rarr;</div>
+  <div class="rev-track">
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Jason Block is a top tier artist with unbelievable talent. He is funny, he is one of the best you will ever meet.&rdquo;</p><div class="who sans">Philip <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Absolutely love this shop. We went to a few other shops in the area and by far this was the best and most professional.&rdquo;</p><div class="who sans">Lauren K. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;I got my first two tattoos from Jason, and he definitely made me feel at home! Great service and great quality tattoos!&rdquo;</p><div class="who sans">Morgan H. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;I have worked with Jason Block for years and he is a great guy to know. If you want a phenomenal tattoo I highly suggest him. Very decent price for the work.&rdquo;</p><div class="who sans">Philip M. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Just got my second tattoo done here. Chris did an amazing job, I could not be happier with it!&rdquo;</p><div class="who sans">Bri-anna K. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Excellent detail work by Chris, great atmosphere and conversation. They aim to please. I will be back for another tattoo.&rdquo;</p><div class="who sans">Deborah Z. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Jason Block is the man! Thanks buddy, can not wait for it to be completed!&rdquo;</p><div class="who sans">Tiger E. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Great little shop to go one on one with your artist. Pushes out some very clean work! A must go to shop!&rdquo;</p><div class="who sans">Timmy V. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Got my first tattoo here. Chris did an excellent job of drawing up exactly what I wanted. I will definitely be a returning customer.&rdquo;</p><div class="who sans">Pam P. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Jason and Chris are good artists. Did some tight work for a very fair price. Will be back when in town.&rdquo;</p><div class="who sans">Joe G. <span>Google review</span></div></div>
   </div>
 </div></section>
 
