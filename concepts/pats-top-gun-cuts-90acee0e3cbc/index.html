@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pat's Top Gun Cuts | Barbershop in Biloxi, MS</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --paper:#f7f3ea; --paper2:#efe8d8; --ink:#1c1a17; --muted:#6f675c;
+    --navy:#1d2a44; --red:#b33a3a; --red-dark:#8f2c2c; --gold:#b98a2f; --line:#ddd2bd;
+  }
+  body { background:var(--paper); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.65; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+
+  .topbar { background:var(--navy); color:#d8dce8; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; }
+  .topbar a:hover { color:#fff; }
+
+  nav { position:sticky; top:0; background:rgba(247,243,234,.97); border-bottom:3px double var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:21px; font-weight:800; letter-spacing:1px; }
+  .brand em { color:var(--red); font-style:normal; }
+  .navlinks { display:flex; gap:28px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--red); }
+  .btn { display:inline-block; background:var(--red); color:#fff; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:4px; cursor:pointer; }
+  .btn:hover { background:var(--red-dark); }
+  .btn.ghost { background:transparent; color:var(--navy); border:2px solid var(--navy); }
+  .btn.ghost:hover { background:rgba(29,42,68,.06); }
+
+  .hero { padding:92px 28px 76px; text-align:center; border-bottom:3px double var(--line);
+          background:linear-gradient(180deg, #fbf8f0 0%, var(--paper) 100%); }
+  .hero .kicker { color:var(--red); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:16px; font-weight:700; }
+  .hero h1 { font-size:56px; line-height:1.1; font-weight:800; margin-bottom:16px; }
+  .hero h1 em { color:var(--red); font-style:normal; }
+  .hero p.lead { color:var(--muted); font-size:18px; max-width:620px; margin:0 auto 30px; }
+  .hero .cta-row { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+  .stars { margin-top:24px; color:var(--gold); letter-spacing:3px; font-size:15px; }
+  .stars span { color:var(--muted); letter-spacing:1px; }
+
+  .trust { background:var(--navy); color:#d8dce8; }
+  .trust .wrap { display:flex; justify-content:space-between; padding-top:17px; padding-bottom:17px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; flex-wrap:wrap; gap:10px; }
+  .trust b { color:#fff; font-weight:700; }
+
+  section { padding:72px 0; }
+  .sec-head { margin-bottom:42px; max-width:720px; }
+  .sec-head.center { text-align:center; margin-left:auto; margin-right:auto; }
+  .sec-head .kicker { color:var(--red); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:10px; font-weight:700; }
+  .sec-head h2 { font-size:38px; font-weight:800; line-height:1.15; }
+  .sec-head p { color:var(--muted); margin-top:10px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .card { background:#fffdf8; border:1px solid var(--line); border-radius:8px; padding:32px 28px; border-top:4px solid var(--navy); }
+  .card:hover { border-top-color:var(--red); }
+  .card h3 { font-size:20px; margin-bottom:8px; }
+  .card p { color:var(--muted); font-size:15px; }
+  .card .price { color:var(--red); font-weight:700; margin-top:10px; font-size:15px; }
+
+  .gal { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .tile { background:#fffdf8; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  .tile img { width:100%; aspect-ratio:1; object-fit:cover; display:block; }
+  .tile .cap { padding:13px 16px 15px; font-size:14px; color:var(--muted); font-style:italic; }
+  .gal-note { text-align:center; color:var(--muted); margin-top:22px; font-size:15px; }
+  .gal-note a { color:var(--red); font-weight:700; }
+
+  .reviews { background:var(--paper2); border-top:3px double var(--line); border-bottom:3px double var(--line); }
+  .rev-track { display:flex; gap:18px; overflow-x:auto; scroll-snap-type:x mandatory;
+               padding:6px 4px 18px; -webkit-overflow-scrolling:touch; }
+  .rev-track::-webkit-scrollbar { height:8px; }
+  .rev-track::-webkit-scrollbar-track { background:#e4dac4; }
+  .rev-track::-webkit-scrollbar-thumb { background:var(--navy); }
+  .rev { flex:0 0 330px; scroll-snap-align:start; background:#fffdf8;
+         border:1px solid var(--line); border-radius:8px; padding:30px 28px; }
+  .rev .stars5 { color:var(--gold); letter-spacing:3px; font-size:13px; margin-bottom:14px; }
+  .rev .q { font-size:17px; font-style:italic; line-height:1.6; margin-bottom:16px; }
+  .rev .who { color:var(--navy); font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; }
+  .rev .who span { color:var(--muted); letter-spacing:0; text-transform:none; font-weight:400; }
+  .scroll-hint { text-align:right; color:var(--muted); font-size:13px; letter-spacing:1px; margin-bottom:8px; }
+
+  .visit-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+  .hours { width:100%; border-collapse:collapse; font-size:16px; background:#fffdf8; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  .hours td { padding:11px 20px; border-bottom:1px solid var(--line); }
+  .hours tr:last-child td { border-bottom:none; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-block h3 { font-size:26px; margin-bottom:14px; }
+  .contact-block p { color:var(--muted); margin-bottom:8px; font-size:16px; }
+  .contact-block p b { color:var(--ink); }
+  .note-box { background:#fffdf8; border:1px dashed var(--gold); border-radius:8px; padding:16px 20px; margin-top:18px; font-size:14px; color:var(--muted); }
+  .mapbtn { margin-top:20px; }
+
+  footer { background:var(--navy); color:#aab2c8; padding:28px 0; text-align:center; font-size:13px; }
+  footer .fine { margin-top:8px; font-size:11px; opacity:.65; font-style:italic; }
+
+  @media (max-width:860px) {
+    .hero h1 { font-size:36px; }
+    .cards, .visit-grid { grid-template-columns:1fr; }
+    .gal { grid-template-columns:repeat(2,1fr); }
+    .navlinks { display:none; }
+    .rev { flex:0 0 270px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span>1670F Pass Rd, Biloxi, MS</span>
+  <span><a href="tel:+12282243114">(228) 224-3114</a> &nbsp;&middot;&nbsp; Walk-ins welcome</span>
+</div></div>
+
+<nav><div class="wrap">
+  <div class="brand serif">PAT'S <em>TOP GUN</em> CUTS</div>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#work">Cuts</a>
+    <a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+  </div>
+  <a class="btn" href="tel:+12282243114">Call the Shop</a>
+</div></nav>
+
+<header class="hero">
+  <div class="kicker">Barbershop in Biloxi, Mississippi</div>
+  <h1 class="serif">Sharp cuts. <em>Honest prices.</em></h1>
+  <p class="lead">Military fades, regular cuts, and beard trims done right. Walk out ready for anything, from drill weekend to the weekend.</p>
+  <div class="cta-row">
+    <a class="btn" href="tel:+12282243114">Call (228) 224-3114</a>
+    <a class="btn ghost" href="#work">See the Cuts</a>
+  </div>
+  <div class="stars">★★★★★ <span>4.7 from 75 Google reviews</span></div>
+</header>
+
+<div class="trust"><div class="wrap">
+  <span><b>Veteran-owned</b> shop</span>
+  <span><b>Military fades</b> our specialty</span>
+  <span><b>Walk-ins</b> welcome</span>
+  <span><b>Cash only</b>, fair prices</span>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker">What we do</div>
+    <h2 class="serif">Cuts and trims</h2>
+    <p>No appointments, no fuss. Walk in, sit down, walk out sharp.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><h3>Military Fades</h3><p>High and tight, recon, and regulation cuts. Our bread and butter, done to spec.</p></div>
+    <div class="card"><h3>Regular Cuts</h3><p>Classic scissor and clipper work. Tell us what you want or let us recommend.</p></div>
+    <div class="card"><h3>Skin Fades</h3><p>Clean blends from skin up. Sharp lines, no shortcuts.</p></div>
+    <div class="card"><h3>Children's Cuts</h3><p>Patient cuts for the young ones. They leave looking sharp too.</p></div>
+    <div class="card"><h3>Beard Trims</h3><p>Shape ups and beard sculpting to finish the job right.</p></div>
+    <div class="card"><h3>Walk-ins</h3><p>No booking needed. Come by during shop hours and we will get you in a chair.</p></div>
+  </div>
+</div></section>
+
+<section id="work" style="background:var(--paper2); border-top:3px double var(--line); border-bottom:3px double var(--line);"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker">Fresh off the chair</div>
+    <h2 class="serif">Recent cuts</h2>
+    <p>Real work from the shop floor.</p>
+  </div>
+  <div class="gal">
+    <div class="tile"><img src="img/1.jpg" alt="Haircut by Pat's Top Gun Cuts"><div class="cap">Fresh cut, ready for the weekend.</div></div>
+    <div class="tile"><img src="img/2.jpg" alt="Haircut by Pat's Top Gun Cuts"><div class="cap">The shop floor at Top Gun Cuts.</div></div>
+    <div class="tile"><img src="img/3.jpg" alt="Haircut by Pat's Top Gun Cuts"><div class="cap">Sharp lines under the lights.</div></div>
+    <div class="tile"><img src="img/4.jpg" alt="Haircut by Pat's Top Gun Cuts"><div class="cap">Clean fade, done to spec.</div></div>
+    <div class="tile"><img src="img/5.jpg" alt="Haircut by Pat's Top Gun Cuts"><div class="cap">Military fades are the house specialty.</div></div>
+  </div>
+  <p class="gal-note">More cuts on <a href="https://www.instagram.com/top_gun_cuts">our Instagram</a>.</p>
+</div></section>
+
+<section id="reviews" class="reviews"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker">What people say</div>
+    <h2 class="serif">75 reviews, 4.7 stars</h2>
+  </div>
+  <div class="scroll-hint">Swipe or scroll &rarr;</div>
+  <div class="rev-track">
+    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;When you walk out you will be ready for anything from drill weekend to your respective services ball.&rdquo;</p><div class="who">Google <span>review</span></div></div>
+    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;Great place, friendly workers. They talk a lot but they love what they do. Stop by and check out the sweetest barbers I know.&rdquo;</p><div class="who">Google <span>review</span></div></div>
+    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;Great place to get your wig cleaned up! Thanks guys, we appreciate it!&rdquo;</p><div class="who">Google <span>review</span></div></div>
+  </div>
+</div></section>
+
+<section id="visit"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker">Come see us</div>
+    <h2 class="serif">The shop</h2>
+  </div>
+  <div class="visit-grid">
+    <div class="contact-block">
+      <h3 class="serif">Pat's Top Gun Cuts</h3>
+      <p><b>1670F Pass Rd</b><br>Biloxi, MS 39531</p>
+      <p><b>(228) 224-3114</b></p>
+      <p>Walk-ins welcome. Come on by.</p>
+      <div class="note-box">Heads up: we are a cash-only shop. There is an ATM nearby if you need one.</div>
+      <div class="mapbtn"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Pat%27s+Top+Gun+Cuts+Biloxi+MS">Get Directions</a></div>
+    </div>
+    <div>
+      <table class="hours">
+        <tr><td>Monday</td><td>8:00 AM to 2:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>8:00 AM to 2:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>8:00 AM to 2:00 PM</td></tr>
+        <tr><td>Thursday</td><td>8:00 AM to 2:00 PM</td></tr>
+        <tr><td>Friday</td><td>Closed</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM to 2:00 PM</td></tr>
+        <tr><td>Sunday</td><td>10:00 AM to 2:00 PM</td></tr>
+      </table>
+    </div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <div>PAT'S <span style="color:var(--red)">TOP GUN</span> CUTS &middot; Biloxi, MS &middot; (228) 224-3114</div>
+    <div class="fine">Concept preview. Not affiliated with or endorsed by the business.</div>
+  </div>
+</footer>
+
+</body>
+</html>
