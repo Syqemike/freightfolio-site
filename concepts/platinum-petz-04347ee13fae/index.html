@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Platinum Petz | Pet Groomer in Ocean Springs, MS</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --cream:#faf6ee; --cream2:#f3ecdd; --ink:#2c2620; --muted:#7d7468;
+    --rose:#c9506b; --rose-dark:#a63d55; --gold:#c9973f; --line:#e5dcc9;
+  }
+  body { background:var(--cream); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.65; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+
+  .topbar { background:var(--ink); color:#e8e0d0; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; }
+  .topbar a:hover { color:#fff; }
+
+  nav { position:sticky; top:0; background:rgba(250,246,238,.97); border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:22px; font-weight:800; letter-spacing:1px; }
+  .brand em { color:var(--rose); font-style:normal; }
+  .navlinks { display:flex; gap:28px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--rose); }
+  .btn { display:inline-block; background:var(--rose); color:#fff; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:999px; cursor:pointer; }
+  .btn:hover { background:var(--rose-dark); }
+  .btn.ghost { background:transparent; color:var(--rose); border:2px solid var(--rose); }
+  .btn.ghost:hover { background:rgba(201,80,107,.08); }
+
+  .hero { padding:96px 28px 80px; text-align:center;
+          background:radial-gradient(ellipse 70% 60% at 50% 30%, #f7e8e4 0%, var(--cream) 70%); }
+  .hero .kicker { color:var(--rose); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:18px; font-weight:700; }
+  .hero h1 { font-size:58px; line-height:1.12; font-weight:800; margin-bottom:18px; }
+  .hero h1 em { color:var(--rose); font-style:normal; }
+  .hero p.lead { color:var(--muted); font-size:18px; max-width:620px; margin:0 auto 32px; }
+  .hero .cta-row { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+  .awards-line { margin-top:26px; color:var(--muted); font-size:14px; }
+  .awards-line b { color:var(--gold); }
+
+  .trust { border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--cream2); }
+  .trust .wrap { display:flex; justify-content:space-between; padding-top:18px; padding-bottom:18px;
+                 font-size:12.5px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); flex-wrap:wrap; gap:10px; }
+  .trust b { color:var(--rose); }
+
+  section { padding:76px 0; }
+  .sec-head { margin-bottom:44px; max-width:720px; }
+  .sec-head.center { text-align:center; margin-left:auto; margin-right:auto; }
+  .sec-head .kicker { color:var(--rose); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:10px; font-weight:700; }
+  .sec-head h2 { font-size:38px; font-weight:800; line-height:1.15; }
+  .sec-head p { color:var(--muted); margin-top:10px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:32px 28px; }
+  .card:hover { border-color:var(--rose); box-shadow:0 8px 24px rgba(201,80,107,.08); }
+  .card .ico { font-size:30px; margin-bottom:12px; }
+  .card h3 { font-size:20px; margin-bottom:8px; }
+  .card p { color:var(--muted); font-size:15px; }
+
+  .awards { background:var(--ink); color:#efe8da; }
+  .awards .sec-head .kicker { color:var(--gold); }
+  .awards .sec-head h2 { color:#fff; }
+  .awards .sec-head p { color:#b7ad9c; }
+  .award-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .award { background:#38312a; border:1px solid #4a4239; border-radius:16px; padding:36px 30px; text-align:center; }
+  .award .medal { font-size:40px; margin-bottom:12px; }
+  .award h3 { font-size:19px; color:#fff; margin-bottom:6px; }
+  .award p { color:var(--gold); font-size:14px; letter-spacing:1px; }
+
+  .gal { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .tile { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .tile:hover { border-color:var(--rose); }
+  .tile img { width:100%; aspect-ratio:1; object-fit:cover; display:block; }
+  .tile .cap { padding:14px 18px 18px; font-size:14px; color:var(--muted); font-style:italic; }
+  .gal-note { text-align:center; color:var(--muted); margin-top:22px; font-size:15px; }
+  .gal-note a { color:var(--rose); font-weight:700; }
+
+  .visit-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+  .hours { width:100%; border-collapse:collapse; font-size:16px; background:#fff; border-radius:16px; overflow:hidden; }
+  .hours td { padding:12px 20px; border-bottom:1px solid var(--line); }
+  .hours tr:last-child td { border-bottom:none; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-block h3 { font-size:26px; margin-bottom:14px; }
+  .contact-block p { color:var(--muted); margin-bottom:8px; font-size:16px; }
+  .contact-block p b { color:var(--ink); font-weight:700; }
+  .mapbtn { margin-top:20px; }
+
+  footer { background:var(--ink); color:#b7ad9c; padding:30px 0; text-align:center; font-size:13px; }
+  footer .fine { margin-top:8px; font-size:11px; opacity:.6; font-style:italic; }
+
+  @media (max-width:860px) {
+    .hero h1 { font-size:36px; }
+    .cards, .visit-grid, .award-grid { grid-template-columns:1fr; }
+    .gal { grid-template-columns:repeat(2,1fr); }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span>1205 Bienville Blvd, Ocean Springs, MS</span>
+  <span><a href="tel:+12289103494">(228) 910-3494</a> &nbsp;&middot;&nbsp; Mon to Sat</span>
+</div></div>
+
+<nav><div class="wrap">
+  <div class="brand">PLATINUM <em>PETZ</em></div>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#pups">Happy Pups</a>
+    <a href="#awards">Awards</a><a href="#visit">Visit</a>
+  </div>
+  <a class="btn" href="tel:+12289103494">Book Appointment</a>
+</div></nav>
+
+<header class="hero">
+  <div class="kicker">Pet groomer in Ocean Springs, Mississippi</div>
+  <h1>Give your pet the <em>Platinum Touch.</em></h1>
+  <p class="lead">Voted the Coast's best pet groomer two years in a row. Baths, haircuts, nails, and the full works for dogs and cats of every size.</p>
+  <div class="cta-row">
+    <a class="btn" href="tel:+12289103494">Call (228) 910-3494</a>
+    <a class="btn ghost" href="#pups">See Happy Pups</a>
+  </div>
+  <div class="awards-line">★ <b>WXXV Viewers Choice</b> Best Local Pet Groomer 2024 &amp; 2025</div>
+</header>
+
+<div class="trust"><div class="wrap">
+  <span><b>2024 &amp; 2025</b> WXXV Viewers Choice</span>
+  <span><b>2025</b> Sun Herald Best of Coastal MS</span>
+  <span><b>Top 3</b> groomers, Jackson County 2025</span>
+  <span><b>A-rated</b> by the BBB</span>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker">What we do</div>
+    <h2>Full-service grooming</h2>
+    <p>Every pet gets one-on-one attention. No rushed appointments, no stressed pups.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><div class="ico">🛁</div><h3>Full Grooming</h3><p>Bath, haircut, nail trim, and ear cleaning. The complete package, tailored to your pet's breed and coat.</p></div>
+    <div class="card"><div class="ico">🧼</div><h3>Bath &amp; Brush</h3><p>A thorough wash with quality products, blow dry, and brush out. Perfect between full grooms.</p></div>
+    <div class="card"><div class="ico">✂️</div><h3>Nail Trims</h3><p>Quick, careful nail trims. Walk-ins welcome for nails during business hours.</p></div>
+    <div class="card"><div class="ico">🐕</div><h3>De-shedding</h3><p>Specialized treatment that cuts loose undercoat and keeps the fur tumbleweeds out of your house.</p></div>
+    <div class="card"><div class="ico">🦷</div><h3>Teeth &amp; Extras</h3><p>Teeth cleaning and flea &amp; tick prevention to round out the appointment.</p></div>
+    <div class="card"><div class="ico">💆</div><h3>Spa Add-ons</h3><p>Aromatherapy and massage add-ons for pets who deserve a little extra pampering.</p></div>
+  </div>
+</div></section>
+
+<section id="pups" style="background:var(--cream2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker">Fresh from the salon</div>
+    <h2>Happy pups</h2>
+    <p>A few of our regulars looking their best.</p>
+  </div>
+  <div class="gal">
+    <div class="tile"><img src="img/1.jpg" alt="Freshly groomed dog"><div class="cap">Feeling fresh and ready for a fantastic weekend!</div></div>
+    <div class="tile"><img src="img/2.jpg" alt="Freshly groomed dog"><div class="cap">“A dog is the only thing on earth that loves you more than he loves himself.” — Josh Billings</div></div>
+    <div class="tile"><img src="img/3.jpg" alt="Freshly groomed dog"><div class="cap">Fresh cut and ready to go.</div></div>
+    <div class="tile"><img src="img/4.jpg" alt="Freshly groomed dog"><div class="cap">Thank you so much Platinum Petz family for all of your love and support!</div></div>
+    <div class="tile"><img src="img/5.jpg" alt="Freshly groomed dog"><div class="cap">Creative grooming by our Opawz certified creative color specialist. All products 100% vegan and made for pets.</div></div>
+    <div class="tile"><img src="img/6.jpg" alt="Freshly groomed dog"><div class="cap">A few of our beautiful clients we've groomed over the years!</div></div>
+  </div>
+  <p class="gal-note">New photos go up on <a href="https://www.facebook.com/240239375842202/">our Facebook page</a> all the time. Come see the daily cuties.</p>
+</div></section>
+
+<section id="awards" class="awards"><div class="wrap">
+  <div class="sec-head center">
+    <div class="kicker">The trophy shelf</div>
+    <h2>Voted the best, twice running</h2>
+    <p>Awards are nice. Happy repeat clients are nicer. We are grateful for both.</p>
+  </div>
+  <div class="award-grid">
+    <div class="award"><div class="medal">🏆</div><h3>WXXV25 Viewers Choice</h3><p>BEST LOCAL PET GROOMER<br>2024 &amp; 2025</p></div>
+    <div class="award"><div class="medal">🥇</div><h3>Sun Herald</h3><p>BEST OF COASTAL MS<br>PET GROOMER 2025</p></div>
+    <div class="award"><div class="medal">⭐</div><h3>BusinessRates</h3><p>TOP 3 GROOMERS<br>JACKSON COUNTY 2025</p></div>
+  </div>
+</div></section>
+
+<section id="visit"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker">Come see us</div>
+    <h2>Visit the salon</h2>
+  </div>
+  <div class="visit-grid">
+    <div class="contact-block">
+      <h3>Platinum Petz</h3>
+      <p><b>1205 Bienville Blvd</b><br>Ocean Springs, MS 39564</p>
+      <p><b>(228) 910-3494</b></p>
+      <p>Call to book. Your pet will thank you.</p>
+      <p style="margin-top:14px"><a href="https://www.facebook.com/240239375842202/" style="color:var(--rose); font-weight:700;">Follow us on Facebook</a></p>
+      <div class="mapbtn"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Platinum+Petz+Ocean+Springs+MS">Get Directions</a></div>
+    </div>
+    <div>
+      <table class="hours">
+        <tr><td>Monday</td><td>7:30 AM to 5:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>7:30 AM to 5:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>Closed</td></tr>
+        <tr><td>Thursday</td><td>7:30 AM to 5:00 PM</td></tr>
+        <tr><td>Friday</td><td>7:30 AM to 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td>7:30 AM to 5:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <div>PLATINUM <span style="color:var(--rose)">PETZ</span> &middot; Ocean Springs, MS &middot; (228) 910-3494</div>
+    <div class="fine">Concept preview. Not affiliated with or endorsed by the business.</div>
+  </div>
+</footer>
+
+</body>
+</html>
