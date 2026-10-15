@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Southland Heating & Air Conditioning | HVAC in Long Beach, MS</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --navy:#14304a; --navy2:#0e2336; --sky:#e8f1f8; --ink:#1d2733; --muted:#5f6f80;
+    --orange:#e0641f; --orange-dark:#b94f14; --line:#d3dee8;
+  }
+  body { background:#fff; color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:var(--navy2); color:#b9cddf; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+  .topbar b { color:#fff; }
+
+  nav { position:sticky; top:0; background:#fff; border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:20px; font-weight:800; }
+  .brand em { color:var(--orange); font-style:normal; }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--orange); }
+  .btn { display:inline-block; background:var(--orange); color:#fff; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:6px; cursor:pointer; }
+  .btn:hover { background:var(--orange-dark); }
+  .btn.ghost { background:transparent; color:var(--navy); border:2px solid var(--navy); }
+  .btn.ghost:hover { background:rgba(20,48,74,.06); }
+
+  .hero { background:var(--navy); color:#fff; }
+  .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding-top:72px; padding-bottom:72px; }
+  .hero .kicker { color:#8fb4d4; letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
+  .hero h1 { font-size:50px; line-height:1.12; font-weight:800; margin-bottom:18px; }
+  .hero h1 em { color:#f5a623; font-style:normal; }
+  .hero p.lead { color:#b9cddf; font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero .btn.ghost { color:#fff; border-color:#8fb4d4; }
+  .hero .btn.ghost:hover { background:rgba(143,180,212,.12); }
+  .hero-img img { border-radius:12px; aspect-ratio:4/3; object-fit:cover; width:100%; }
+  .hero-note { margin-top:18px; color:#8fb4d4; font-size:14px; }
+
+  .strip { background:var(--orange); color:#fff; }
+  .strip .wrap { display:flex; justify-content:space-between; padding-top:15px; padding-bottom:15px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; flex-wrap:wrap; gap:10px; }
+
+  section.block { padding:76px 28px; }
+  .kicker { color:var(--orange); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
+  h2.stitle { font-size:38px; text-align:center; margin-bottom:10px; font-weight:800; color:var(--navy); }
+  p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .card { background:var(--sky); border-radius:12px; overflow:hidden; }
+  .card img { width:100%; aspect-ratio:16/10; object-fit:cover; }
+  .card .pad { padding:24px 26px 28px; }
+  .card h3 { font-size:20px; margin-bottom:8px; color:var(--navy); }
+  .card p { color:var(--muted); font-size:15px; }
+
+  .why { background:var(--navy); color:#fff; }
+  .why h2.stitle { color:#fff; }
+  .why .kicker { color:#f5a623; }
+  .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .why-item { background:var(--navy2); border-radius:12px; padding:30px; }
+  .why-item .n { font-size:34px; font-weight:800; color:#f5a623; margin-bottom:8px; }
+  .why-item h3 { font-size:19px; margin-bottom:8px; }
+  .why-item p { color:#b9cddf; font-size:15px; }
+
+  .reviews .rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .rev { background:var(--sky); border-radius:12px; padding:28px; }
+  .rev .q { color:var(--orange); font-size:20px; letter-spacing:2px; margin-bottom:10px; }
+  .rev p { font-size:15.5px; margin-bottom:12px; }
+  .rev cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .visit h2 { font-size:36px; margin-bottom:20px; font-weight:800; color:var(--navy); }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted var(--line); font-size:16px; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-line { font-size:17px; margin-bottom:10px; }
+  .contact-line b { color:var(--orange); }
+  .cta-box { background:var(--navy); color:#fff; border-radius:12px; padding:36px; }
+  .cta-box h3 { font-size:24px; margin-bottom:12px; }
+  .cta-box p { color:#b9cddf; margin-bottom:20px; }
+
+  footer { background:var(--navy2); color:#8fa5ba; }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:10px; }
+  footer b { color:#fff; }
+
+  @media (max-width:860px) {
+    .hero .wrap, .visit { grid-template-columns:1fr; }
+    .cards, .why-grid, .reviews .rev-grid { grid-template-columns:1fr; }
+    .hero h1 { font-size:38px; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>5192 Beatline Rd, Long Beach, MS 39560</span>
+    <span>Mon to Fri 7:30am-4pm &nbsp;|&nbsp; <b><a href="tel:+12288686437">(228) 868-6437</a></b></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">SOUTHLAND <em>HEATING &amp; AIR</em></a>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Contact</a>
+    </div>
+    <a class="btn" href="tel:+12288686437">Call Now</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Long Beach, Mississippi</div>
+      <h1>Comfort done right, <em>since 1994.</em></h1>
+      <p class="lead">Family-owned heating and air conditioning on the Mississippi Gulf Coast for over 30 years. Authorized dealer of Trane, Mitsubishi, and Ruud. Mississippi State Licensed A/C Contractor.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12288686437">Request Service</a>
+        <a class="btn ghost" href="#services">Our Services</a>
+      </div>
+      <p class="hero-note">MS State Licensed A/C Contractor &middot; Family owned since 1994</p>
+    </div>
+    <div class="hero-img">
+      <img src="img/photo-1.jpg" alt="Southland Heating and Air service van with company logo">
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span>Trane dealer</span>
+    <span>Mitsubishi City Multi</span>
+    <span>Ruud dealer</span>
+  </div>
+</div>
+
+<section class="block wrap" id="services">
+  <div class="kicker">What we do</div>
+  <h2 class="stitle">Heating, cooling, and everything between</h2>
+  <p class="ssub">Full-service HVAC for homes and light commercial across the Gulf Coast.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="img/photo-2.jpg" alt="New Trane XR condenser unit installed beside a home">
+      <div class="pad"><h3>New System Installs</h3><p>Right-sized Trane, Mitsubishi, and Ruud systems, installed clean and permitted. We did new construction and changeouts for 30 years.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-4.jpg" alt="Technician servicing a condenser unit">
+      <div class="pad"><h3>Repairs</h3><p>No-cool calls, strange noises, weak airflow. We diagnose it straight and fix it right the first time.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-3.jpg" alt="New air handler unit with sealed ductwork">
+      <div class="pad"><h3>Ductwork &amp; Ventilation</h3><p>Sealed ducts, new air handlers, and ventilation that actually moves air where it should go.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block why" id="why">
+  <div class="wrap">
+    <div class="kicker">Why Southland</div>
+    <h2 class="stitle">The company neighbors recommend</h2>
+    <p class="ssub" style="color:#b9cddf;">Three decades on the Coast earns a reputation. Here is what it is built on.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="n">30+</div>
+        <h3>Years in business</h3>
+        <p>Family owned and operated since 1994. We are still here because the work holds up.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">3</div>
+        <h3>Top equipment lines</h3>
+        <p>Authorized dealer of Trane, Mitsubishi City Multi, and Ruud, matched to your home and budget.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">1</div>
+        <h3>Straight answer</h3>
+        <p>Licensed Mississippi A/C contractor. We tell you what is wrong, what it costs, and nothing more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap reviews" id="reviews">
+  <div class="kicker">Word of mouth</div>
+  <h2 class="stitle">What customers say</h2>
+  <p class="ssub">Real reviews from Coast homeowners.</p>
+  <div class="rev-grid">
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Great HVAC company, did my new construction for me and did a great job and great pricing!"</p>
+      <cite>Birdeye review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Wonderful folks, friendly, really great service, can't say enough about them."</p>
+      <cite>Birdeye review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Replaced my old system in 2020, was quick, efficient and well worth the money."</p>
+      <cite>Dean V., hvacloc.com</cite>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="kicker" style="text-align:left;">Find us</div>
+      <h2>Contact the shop.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>7:30 AM - 4:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>7:30 AM - 4:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>7:30 AM - 4:00 PM</td></tr>
+        <tr><td>Thursday</td><td>7:30 AM - 4:00 PM</td></tr>
+        <tr><td>Friday</td><td>7:30 AM - 4:00 PM</td></tr>
+        <tr><td>Saturday</td><td>Closed</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p class="contact-line"><b>Address</b><br>5192 Beatline Rd<br>Long Beach, MS 39560</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+12288686437">(228) 868-6437</a></p>
+    </div>
+    <div>
+      <div class="cta-box">
+        <h3>Need service?</h3>
+        <p>Call during business hours and talk to a real person. Tell us what your system is doing and we will tell you what comes next.</p>
+        <a class="btn" href="tel:+12288686437">(228) 868-6437</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><b>Southland Heating &amp; Air Conditioning</b> &middot; 5192 Beatline Rd, Long Beach, MS 39560</span>
+    <span><a href="tel:+12288686437">(228) 868-6437</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

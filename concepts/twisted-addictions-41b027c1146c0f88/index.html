@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twisted Addictions | Tattoos & Piercings in Kenner, LA</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --bg:#161216; --bg2:#1f1a20; --ink:#f2ecf1; --muted:#a89aa6;
+    --pink:#e0408a; --pink-dark:#b52c6c; --purple:#7a4fd0; --line:#332b34;
+  }
+  body { background:var(--bg); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:#0d0b0d; color:#8f7f8d; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+
+  nav { position:sticky; top:0; background:rgba(22,18,22,.97); border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:12px; padding-bottom:12px; }
+  .brand { display:flex; align-items:center; gap:12px; font-size:19px; font-weight:800; letter-spacing:1px; }
+  .brand img { width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid var(--pink); }
+  .brand em { color:var(--pink); font-style:normal; }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--pink); }
+  .btn { display:inline-block; background:var(--pink); color:#fff; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:999px; cursor:pointer; }
+  .btn:hover { background:var(--pink-dark); }
+  .btn.ghost { background:transparent; color:var(--ink); border:2px solid var(--pink); }
+  .btn.ghost:hover { background:rgba(224,64,138,.1); }
+
+  .hero { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding:72px 28px; }
+  .hero .kicker { color:var(--pink); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
+  .hero h1 { font-size:52px; line-height:1.1; font-weight:800; margin-bottom:18px; }
+  .hero h1 em { color:var(--pink); font-style:italic; }
+  .hero p.lead { color:var(--muted); font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-img img { border-radius:16px; aspect-ratio:4/5; object-fit:cover; width:100%; border:1px solid var(--line); }
+  .stars { margin-top:22px; color:var(--pink); letter-spacing:3px; font-size:15px; }
+  .stars span { color:var(--muted); letter-spacing:.5px; font-size:14px; }
+
+  .strip { background:var(--pink); color:#fff; }
+  .strip .wrap { display:flex; justify-content:space-between; padding-top:15px; padding-bottom:15px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; flex-wrap:wrap; gap:10px; }
+
+  section.block { padding:76px 28px; }
+  .kicker { color:var(--pink); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
+  h2.stitle { font-size:38px; text-align:center; margin-bottom:10px; font-weight:800; }
+  p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
+
+  .work-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .work-grid img { width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:12px; border:1px solid var(--line); }
+  .work-grid figure figcaption { text-align:center; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin-top:8px; }
+
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+  .split img { border-radius:16px; aspect-ratio:4/3; object-fit:cover; width:100%; border:1px solid var(--line); }
+  .split h2 { font-size:36px; margin-bottom:16px; font-weight:800; }
+  .split p { color:var(--muted); margin-bottom:16px; font-size:17px; }
+  .tag-list { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+  .tag { border:1px solid var(--pink); color:var(--pink); border-radius:999px; padding:8px 18px; font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+
+  .artists { background:var(--bg2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .artist-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:26px; max-width:860px; margin:0 auto; }
+  .artist { background:var(--bg); border:1px solid var(--line); border-radius:16px; overflow:hidden; display:flex; gap:24px; align-items:center; padding:24px; }
+  .artist img { width:130px; height:130px; border-radius:50%; object-fit:cover; border:3px solid var(--pink); flex-shrink:0; }
+  .artist h3 { font-size:22px; margin-bottom:4px; }
+  .artist .role { color:var(--pink); font-size:13px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:8px; }
+  .artist p { color:var(--muted); font-size:15px; }
+
+  .reviews .rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .rev { background:var(--bg2); border:1px solid var(--line); border-radius:16px; padding:28px; }
+  .rev .q { color:var(--pink); font-size:20px; letter-spacing:2px; margin-bottom:10px; }
+  .rev p { font-size:15.5px; margin-bottom:12px; }
+  .rev cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .visit h2 { font-size:36px; margin-bottom:20px; font-weight:800; }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted var(--line); font-size:16px; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-line { font-size:17px; margin-bottom:10px; }
+  .contact-line b { color:var(--pink); }
+
+  footer { background:#0d0b0d; color:#6f606d; }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:10px; }
+  footer b { color:#fff; }
+
+  @media (max-width:860px) {
+    .hero, .split, .visit { grid-template-columns:1fr; }
+    .work-grid, .reviews .rev-grid, .artist-grid { grid-template-columns:1fr; }
+    .hero h1 { font-size:40px; }
+    .navlinks { display:none; }
+    .artist { flex-direction:column; text-align:center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>2013 Williams Blvd, Kenner, LA 70062</span>
+    <span><a href="tel:+15043051885">(504) 305-1885</a></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#"><img src="img/photo-2.jpg" alt="Twisted Addictions logo">TWISTED <em>ADDICTIONS</em></a>
+    <div class="navlinks">
+      <a href="#work">Work</a>
+      <a href="#artists">Artists</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <a class="btn" href="tel:+15043051885">Book Now</a>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <div>
+    <div class="kicker">Kenner, Louisiana</div>
+    <h1 class="serif">Ink and piercings, <em>done with love.</em></h1>
+    <p class="lead">Custom tattoos, freehand blackwork, full color, and professional piercings in a shop where everybody is welcome. Walk in and feel the difference.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+15043051885">Call the Shop</a>
+      <a class="btn ghost" href="#work">See the Work</a>
+    </div>
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.8 from 280+ reviews</span></div>
+  </div>
+  <div class="hero-img">
+    <img src="img/photo-7.jpg" alt="Completed black and grey millipede sleeve tattoo">
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span>Custom tattoos</span>
+    <span>Professional piercings</span>
+    <span>LGBTQ+ friendly</span>
+  </div>
+</div>
+
+<section class="block wrap" id="work">
+  <div class="kicker">The work</div>
+  <h2 class="stitle serif">From the chairs</h2>
+  <p class="ssub">Real pieces from the shop. Freehand, black and grey, color, and piercing work.</p>
+  <div class="work-grid">
+    <figure><img src="img/photo-4.jpg" alt="Red rose memorial tattoo"><figcaption>Color Work</figcaption></figure>
+    <figure><img src="img/photo-5.jpg" alt="Freehand millipede skeleton tattoo in progress"><figcaption>Freehand</figcaption></figure>
+    <figure><img src="img/photo-6.jpg" alt="Bridge, nasallang and septum piercings"><figcaption>Piercings</figcaption></figure>
+    <figure><img src="img/photo-7.jpg" alt="Black and grey millipede sleeve"><figcaption>Black &amp; Grey</figcaption></figure>
+    <figure><img src="img/photo-8.jpg" alt="Butterflies and flowers color tattoo"><figcaption>Color Pieces</figcaption></figure>
+    <figure><img src="img/photo-3.jpg" alt="Artist in the shop"><figcaption>The Studio</figcaption></figure>
+  </div>
+</section>
+
+<section class="block wrap" id="artists">
+  <div class="split">
+    <img src="img/photo-1.jpg" alt="Inside Twisted Addictions tattoo shop">
+    <div>
+      <div class="kicker" style="text-align:left;">The shop</div>
+      <h2 class="serif">A shop that feels like family.</h2>
+      <p>Twisted Addictions is the kind of place people drive across the metro for. Chill artists, honest advice, and a room where everyone is welcome, whoever you are.</p>
+      <div class="tag-list">
+        <span class="tag">Cover-ups</span>
+        <span class="tag">Portraits</span>
+        <span class="tag">Flash</span>
+        <span class="tag">Freehand</span>
+        <span class="tag">Piercings</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block artists">
+  <div class="wrap">
+    <div class="kicker">The artists</div>
+    <h2 class="stitle serif">Ask for them by name</h2>
+    <p class="ssub">The names that come up in every review.</p>
+    <div class="artist-grid">
+      <div class="artist">
+        <img src="img/photo-3.jpg" alt="Sofi, tattoo artist">
+        <div>
+          <h3 class="serif">Sofi</h3>
+          <div class="role">Tattoos</div>
+          <p>Not heavy handed, patient, and fun. Custom pieces and color work clients rave about.</p>
+        </div>
+      </div>
+      <div class="artist">
+        <img src="img/photo-6.jpg" alt="Piercing work by Autumn">
+        <div>
+          <h3 class="serif">Autumn</h3>
+          <div class="role">Piercings</div>
+          <p>The piercer reviewers call chill and sweet. Clean work, calm hands, zero pressure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap reviews" id="reviews">
+  <div class="kicker">Word of mouth</div>
+  <h2 class="stitle serif">4.8 stars, 280+ reviews</h2>
+  <p class="ssub">What Kenner says about the shop.</p>
+  <div class="rev-grid">
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Love Autumn and Sofi, they're some of the most chill and sweetest people I've ever met! They make the whole process of getting a tattoo or piercing a delight."</p>
+      <cite>Birdeye review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Autum rocked my piercings, and Sofi did a great job on my tattoo. She is not heavy handed and was patient with me while being fun!"</p>
+      <cite>Birdeye review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Everytime i come here i feel so loved and cared for."</p>
+      <cite>Google review</cite>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="kicker" style="text-align:left;">Find us</div>
+      <h2 class="serif">Visit the shop.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>2:00 PM - 10:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>2:00 PM - 10:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>2:00 PM - 10:00 PM</td></tr>
+        <tr><td>Thursday</td><td>2:00 PM - 10:00 PM</td></tr>
+        <tr><td>Friday</td><td>2:00 PM - Midnight</td></tr>
+        <tr><td>Saturday</td><td>2:00 PM - Midnight</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <div>
+      <p class="contact-line"><b>Address</b><br>2013 Williams Blvd<br>Kenner, LA 70062</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+15043051885">(504) 305-1885</a></p>
+      <p class="contact-line"><b>Walk-ins</b><br>Walk in during shop hours or message ahead for larger custom pieces.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><b>Twisted Addictions</b> &middot; 2013 Williams Blvd, Kenner, LA 70062</span>
+    <span><a href="tel:+15043051885">(504) 305-1885</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

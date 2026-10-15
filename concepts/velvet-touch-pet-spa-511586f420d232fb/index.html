@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velvet Touch Pet Spa | Grooming, Boarding & Daycare in Denham Springs, LA</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --teal:#0e7c7b; --teal-dark:#0a5f5e; --coral:#f2765c; --coral-dark:#d95f43;
+    --cream:#faf8f4; --ink:#23302e; --muted:#6b7a78; --line:#dce8e6; --sand:#f1ece2;
+  }
+  body { background:var(--cream); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:var(--teal-dark); color:#cde8e7; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+
+  nav { position:sticky; top:0; background:rgba(250,248,244,.97); border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:20px; font-weight:800; }
+  .brand em { color:var(--teal); font-style:normal; }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--teal); }
+  .btn { display:inline-block; background:var(--coral); color:#fff; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:999px; cursor:pointer; }
+  .btn:hover { background:var(--coral-dark); }
+  .btn.ghost { background:transparent; color:var(--teal); border:2px solid var(--teal); }
+  .btn.ghost:hover { background:rgba(14,124,123,.07); }
+
+  .hero { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding:72px 28px; }
+  .hero .kicker { color:var(--teal); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
+  .hero h1 { font-size:52px; line-height:1.12; font-weight:800; margin-bottom:18px; }
+  .hero h1 em { color:var(--teal); font-style:italic; }
+  .hero p.lead { color:var(--muted); font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-img img { border-radius:24px; aspect-ratio:4/5; object-fit:cover; width:100%; box-shadow:0 24px 60px rgba(14,124,123,.18); }
+  .stars { margin-top:22px; color:#e8a13a; letter-spacing:3px; font-size:15px; }
+  .stars span { color:var(--muted); letter-spacing:.5px; font-size:14px; }
+  .tagline { display:inline-block; margin-top:14px; background:var(--sand); border-radius:999px; padding:8px 20px;
+             font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--teal); font-weight:700; }
+
+  .strip { background:var(--teal); color:#eaf6f5; }
+  .strip .wrap { display:flex; justify-content:space-between; padding-top:15px; padding-bottom:15px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; flex-wrap:wrap; gap:10px; }
+
+  section.block { padding:76px 28px; }
+  .kicker { color:var(--teal); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
+  h2.stitle { font-size:38px; text-align:center; margin-bottom:10px; font-weight:800; }
+  p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:20px; overflow:hidden; }
+  .card img { width:100%; aspect-ratio:16/10; object-fit:cover; }
+  .card .pad { padding:24px 26px 28px; }
+  .card h3 { font-size:21px; margin-bottom:8px; }
+  .card p { color:var(--muted); font-size:15px; }
+  .card .price { color:var(--teal); font-weight:800; margin-top:10px; display:block; }
+
+  .gallery { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .gallery img { width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:16px; }
+
+  .reviews { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .rev { background:var(--cream); border:1px solid var(--line); border-radius:20px; padding:28px; }
+  .rev .q { color:#e8a13a; font-size:20px; letter-spacing:2px; margin-bottom:10px; }
+  .rev p { font-size:15.5px; margin-bottom:12px; }
+  .rev cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .visit h2 { font-size:36px; margin-bottom:20px; font-weight:800; }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted var(--line); font-size:16px; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-line { font-size:17px; margin-bottom:10px; }
+  .contact-line b { color:var(--teal); }
+
+  footer { background:var(--teal-dark); color:#a9cfce; }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:10px; }
+  footer b { color:#fff; }
+
+  @media (max-width:860px) {
+    .hero, .visit { grid-template-columns:1fr; }
+    .cards, .rev-grid { grid-template-columns:1fr; }
+    .gallery { grid-template-columns:repeat(2,1fr); }
+    .hero h1 { font-size:40px; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>704 N Range Ave, Denham Springs, LA 70726</span>
+    <span>Mon to Fri 8am-5pm &nbsp;|&nbsp; Sat 8am-2pm &nbsp;|&nbsp; <a href="tel:+12256646800">(225) 664-6800</a></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">Velvet Touch <em>Pet Spa</em></a>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#gallery">Happy Clients</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <a class="btn" href="tel:+12256646800">Book Now</a>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <div>
+    <div class="kicker">Denham Springs, Louisiana</div>
+    <h1 class="serif">Fresh, fun, <em>fabulicious.</em></h1>
+    <p class="lead">Grooming, boarding, and doggy daycare focused on the care and well-being of your pet. Folks drive 40 minutes each way to bring their dogs here.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+12256646800">Book a Spa Day</a>
+      <a class="btn ghost" href="#services">See Services</a>
+    </div>
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.9 from 116 Google reviews</span></div>
+    <br><span class="tagline">Grooming &middot; Boarding &middot; Daycare</span>
+  </div>
+  <div class="hero-img">
+    <img src="img/photo-2.jpg" alt="Groomed Saint Bernard wearing a bandana">
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span>Pet grooming</span>
+    <span>Boarding</span>
+    <span>Doggy daycare</span>
+  </div>
+</div>
+
+<section class="block wrap" id="services">
+  <div class="kicker">Services</div>
+  <h2 class="stitle serif">Everything your dog needs</h2>
+  <p class="ssub">One stop for looking good and staying happy while you are away.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="img/photo-5.jpg" alt="Yorkie being rinsed during a groom">
+      <div class="pad"><h3>Grooming</h3><p>Full grooms, bath and brush, breed-specific cuts. Every dog leaves looking like the Saint Bernard up top.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-3.jpg" alt="Happy client dog on the grass">
+      <div class="pad"><h3>Boarding</h3><p>Overnight stays with real care and attention, not a kennel assembly line.</p><span class="price">About $20-25/night</span></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-6.jpg" alt="Dog being lathered in the grooming tub">
+      <div class="pad"><h3>Doggy Daycare</h3><p>Daytime play and socializing while you work. Tired dogs are happy dogs.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="gallery">
+  <div class="kicker">Happy clients</div>
+  <h2 class="stitle serif">Fresh out of the spa</h2>
+  <p class="ssub">Some of the good-looking pups that come through our doors.</p>
+  <div class="gallery">
+    <img src="img/photo-2.jpg" alt="Groomed Saint Bernard with bandana">
+    <img src="img/photo-3.jpg" alt="Client pit bull">
+    <img src="img/photo-4.jpg" alt="Velvet Touch Pet Spa poodle sign">
+    <img src="img/photo-1.jpg" alt="Velvet Touch Pet Spa storefront">
+  </div>
+</section>
+
+<section class="block reviews" id="reviews">
+  <div class="wrap">
+    <div class="kicker">Word of mouth</div>
+    <h2 class="stitle serif">4.9 stars, 116 reviews</h2>
+    <p class="ssub">Why Denham Springs keeps coming back.</p>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Service was phenomenal. Staff was very helpful. I would highly recommend them to anyone."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="rev">
+        <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Absolutely can't say enough great things about every single person that works at Velvet Touch. I have moved over 40 minutes away and I drive my fur baby to them and have for years."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="rev">
+        <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Moose had a spa day and came out lookin' good."</p>
+        <cite>Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="kicker" style="text-align:left;">Find us</div>
+      <h2 class="serif">Visit the spa.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Thursday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Friday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM - 2:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <div>
+      <p class="contact-line"><b>Address</b><br>704 N Range Ave<br>Denham Springs, LA 70726</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+12256646800">(225) 664-6800</a></p>
+      <p class="contact-line"><b>Booking</b><br>Call ahead to reserve a groom or a boarding stay, especially around holidays.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><b>Velvet Touch Pet Spa</b> &middot; 704 N Range Ave, Denham Springs, LA 70726</span>
+    <span><a href="tel:+12256646800">(225) 664-6800</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
