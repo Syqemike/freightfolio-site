@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K-9 Paws | Pet Groomer in Gulfport, MS</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --paper:#faf7f0; --paper2:#f1ebdd; --ink:#23201b; --muted:#6e675c;
+    --green:#2d4a3e; --green-dark:#1f362c; --gold:#b98a2f; --line:#ddd2bd;
+  }
+  body { background:var(--paper); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.65; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+
+  .topbar { background:var(--green-dark); color:#cfd8cf; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; }
+  .topbar a:hover { color:#fff; }
+
+  nav { position:sticky; top:0; background:rgba(250,247,240,.97); border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:22px; font-weight:800; letter-spacing:.5px; }
+  .brand em { color:var(--green); font-style:normal; }
+  .navlinks { display:flex; gap:28px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--green); }
+  .btn { display:inline-block; background:var(--green); color:#fff; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:999px; cursor:pointer; }
+  .btn:hover { background:var(--green-dark); }
+  .btn.ghost { background:transparent; color:var(--green); border:2px solid var(--green); }
+  .btn.ghost:hover { background:rgba(45,74,62,.07); }
+
+  .hero { padding:96px 28px 80px; text-align:center; background:var(--paper); border-bottom:1px solid var(--line); }
+  .hero .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:16px; font-weight:700; }
+  .hero h1 { font-size:56px; line-height:1.08; font-weight:800; margin-bottom:16px; }
+  .hero h1 em { color:var(--green); font-style:normal; }
+  .hero p.lead { color:var(--muted); font-size:18px; max-width:640px; margin:0 auto 30px; }
+  .hero .cta-row { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+  .stars { margin-top:24px; color:var(--gold); letter-spacing:3px; font-size:15px; }
+  .stars span { color:var(--muted); letter-spacing:1px; }
+
+  .trust { background:var(--green); color:#d9e2d5; }
+  .trust .wrap { display:flex; justify-content:space-between; padding-top:17px; padding-bottom:17px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; flex-wrap:wrap; gap:10px; }
+  .trust b { color:#fff; font-weight:700; }
+
+  section { padding:72px 0; }
+  .sec-head { margin-bottom:42px; max-width:720px; }
+  .sec-head.center { text-align:center; margin-left:auto; margin-right:auto; }
+  .sec-head .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:10px; font-weight:700; }
+  .sec-head h2 { font-size:38px; font-weight:800; line-height:1.15; }
+  .sec-head p { color:var(--muted); margin-top:10px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .card { background:#fffdf8; border:1px solid var(--line); border-radius:14px; padding:32px 28px; }
+  .card h3 { font-size:20px; margin-bottom:8px; }
+  .card p { color:var(--muted); font-size:15px; }
+  .card.cta { background:var(--green); border-color:var(--green); color:#fff; display:flex; flex-direction:column; justify-content:center; }
+  .card.cta h3 { color:#fff; }
+  .card.cta p { color:#cfd8cf; }
+  .card.cta .btn { background:#fff; color:var(--green); margin-top:14px; align-self:flex-start; }
+  .card.cta .btn:hover { background:#f0ead9; }
+
+  .gal { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .tile { background:#fffdf8; border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+  .tile img { width:100%; aspect-ratio:1; object-fit:cover; display:block; }
+  .tile .cap { padding:13px 16px 15px; font-size:14px; color:var(--muted); font-style:italic; }
+
+  .about { background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+  .about-grid h2 { font-size:34px; margin-bottom:14px; }
+  .about-grid p { color:var(--muted); margin-bottom:12px; font-size:16px; }
+  .badges { display:flex; flex-direction:column; gap:14px; }
+  .badge { background:#fffdf8; border:1px solid var(--line); border-radius:14px; padding:22px 24px; }
+  .badge b { display:block; font-size:17px; margin-bottom:4px; }
+  .badge span { color:var(--muted); font-size:14px; }
+  .badge .dot { color:var(--gold); margin-right:8px; }
+
+  .visit-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+  .hours { width:100%; border-collapse:collapse; font-size:16px; background:#fffdf8; border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+  .hours td { padding:11px 20px; border-bottom:1px solid var(--line); }
+  .hours tr:last-child td { border-bottom:none; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-block h3 { font-size:26px; margin-bottom:14px; }
+  .contact-block p { color:var(--muted); margin-bottom:8px; font-size:16px; }
+  .contact-block p b { color:var(--ink); }
+  .mapbtn { margin-top:20px; }
+
+  footer { background:var(--green-dark); color:#a9b8a4; padding:28px 0; text-align:center; font-size:13px; }
+  footer .fine { margin-top:8px; font-size:11px; opacity:.65; font-style:italic; }
+
+  @media (max-width:860px) {
+    .hero h1 { font-size:36px; }
+    .cards, .visit-grid, .about-grid { grid-template-columns:1fr; }
+    .gal { grid-template-columns:repeat(2,1fr); }
+    .navlinks { display:none; }
+  }
+
+  .rev-track { display:flex; gap:18px; overflow-x:auto; scroll-snap-type:x mandatory;
+               padding:6px 4px 18px; -webkit-overflow-scrolling:touch; }
+  .rev-track::-webkit-scrollbar { height:8px; }
+  .rev-track::-webkit-scrollbar-track { background:#e7dfcb; }
+  .rev-track::-webkit-scrollbar-thumb { background:var(--green); border-radius:4px; }
+  .rev { flex:0 0 330px; scroll-snap-align:start; background:#fffdf8;
+         border:1px solid var(--line); border-radius:14px; padding:30px 28px; }
+  .rev .stars5 { color:var(--gold); letter-spacing:3px; font-size:13px; margin-bottom:14px; }
+  .rev .q { font-size:16px; font-style:italic; line-height:1.6; margin-bottom:16px; }
+  .rev .who { color:var(--green); font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; }
+  .rev .who span { color:var(--muted); letter-spacing:0; text-transform:none; font-weight:400; }
+  .scroll-hint { text-align:right; color:var(--muted); font-size:13px; letter-spacing:1px; margin-bottom:8px; }
+  @media (max-width:860px) { .rev { flex:0 0 270px; } }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span>450 E Pass Rd #106, Gulfport, MS</span>
+  <span><a href="tel:+12288967297">(228) 896-7297</a> &nbsp;&middot;&nbsp; Mon to Fri, 8am to 3pm</span>
+</div></div>
+
+<nav><div class="wrap">
+  <div class="brand serif">K-9 <em>PAWS</em></div>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#work">Dogs</a>
+    <a href="#about">About</a><a href="#visit">Visit</a>
+  </div>
+  <a class="btn" href="tel:+12288967297">Call to Book</a>
+</div></nav>
+
+<header class="hero">
+  <div class="kicker">Pet groomer in Gulfport, Mississippi</div>
+  <h1 class="serif">A <em>master groomer</em> for your dog.</h1>
+  <p class="lead">National Certified Master Groomer. Award-winning stylist. Serving South Mississippi for over 57 years.</p>
+  <div class="cta-row">
+    <a class="btn" href="tel:+12288967297">Call (228) 896-7297</a>
+    <a class="btn ghost" href="#work">See the Dogs</a>
+  </div>
+  <div class="stars">★★★★★ <span>4.8 from 20 Google reviews</span></div>
+</header>
+
+<div class="trust"><div class="wrap">
+  <span><b>National Certified</b> Master Groomer</span>
+  <span><b>Award-winning</b> stylist</span>
+  <span><b>57+ years</b> serving South MS</span>
+  <span><b>4.8 stars</b> on Google</span>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker">What we do</div>
+    <h2 class="serif">Grooming services</h2>
+    <p>Full-service grooming from a certified master. Call to book your dog's appointment.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><h3>Full Grooming</h3><p>Bath, cut, nails, and finishing touches.</p></div>
+    <div class="card"><h3>Bath &amp; Brush</h3><p>A thorough wash and brush-out that leaves coats clean and soft.</p></div>
+    <div class="card"><h3>Haircuts &amp; Styling</h3><p>Breed cuts and pet trims from an award-winning stylist.</p></div>
+    <div class="card"><h3>Nail Trims</h3><p>Quick, careful nail care to keep paws healthy.</p></div>
+    <div class="card"><h3>Easy Hours</h3><p>Open Monday through Friday, 8am to 3pm. Closed weekends.</p></div>
+    <div class="card cta"><h3>Book an appointment</h3><p>Call the shop and ask for Mz. Sandy.</p><a class="btn" href="tel:+12288967297">(228) 896-7297</a></div>
+  </div>
+</div></section>
+
+<section id="work" style="background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker">Happy clients</div>
+    <h2 class="serif">Fresh from the table</h2>
+    <p>Real dogs, groomed at K-9 Paws.</p>
+  </div>
+  <div class="gal">
+    <div class="tile"><img src="img/1.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">Fresh groom at K-9 Paws.</div></div>
+    <div class="tile"><img src="img/2.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">Bow on and nails done.</div></div>
+    <div class="tile"><img src="img/3.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">Ready for the weekend.</div></div>
+    <div class="tile"><img src="img/4.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">Show-style groom, done by hand.</div></div>
+    <div class="tile"><img src="img/5.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">A K-9 Paws regular.</div></div>
+    <div class="tile"><img src="img/6.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">Holiday-ready pup.</div></div>
+  </div>
+</div></section>
+
+
+<section id="reviews" style="background:var(--paper);"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker">What people say</div>
+    <h2 class="serif">Loved by local dog owners</h2>
+  </div>
+  <div class="scroll-hint">Swipe or scroll &rarr;</div>
+  <div class="rev-track">
+    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;We had an amazing first experience with Sandy grooming my Cavalier King Charles Spaniel, Nola! Sandy is incredibly kind, patient, and extremely knowledgeable. You can tell she&rsquo;s a true expert in dog grooming&hellip;&rdquo;</p><div class="who">Emilie T. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;Your fur baby will leave here looking cute as a button. The owner is very patient and does a meet and greet with them before they begin any services to make sure the pup is comfortable&hellip;&rdquo;</p><div class="who">Pamela M. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;Coco spa day and she knows it. Lol&rdquo;</p><div class="who">James F. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;I&rsquo;ve known Sandy Bethea for more than 14 years and she&rsquo;s groomed our dogs and cared for them as if they were her very own show dogs! She&rsquo;s an award winning show dog groomer&hellip;&rdquo;</p><div class="who">Maria &ldquo;Romy&rdquo; H. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;Paws down, best groomer around, and I&rsquo;ve never seen my two babies come home so happy after getting their hair done. Sandy is a caring, attentive lady&hellip;&rdquo;</p><div class="who">Jamie S. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5">★★★☆☆</div><p class="q">&ldquo;I have a Pomeranian, and K-9 Paws was the first dog groomer to give my dog a perfect cut. Everywhere else I&rsquo;ve gone before has left his fur too long, or his cut unbalanced and uneven&hellip;&rdquo;</p><div class="who">Sheretta A. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;She listens to how I want my dogs groomed. She always has great recommendations for different styles and cuts. I&rsquo;ve always been pleased with the final result&hellip;&rdquo;</p><div class="who">Robin T. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;I&rsquo;ll be straight with ya. I didn&rsquo;t use their service but of no fault of theirs. They were kind, patient, and understanding to my situation&hellip;&rdquo;</p><div class="who">Jo E B. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;Her work is most professional! People ask me where they are groomed. The dogs look precious for their age. (10 &amp; 11). The pricing is excellent and the grooming is done in a timely manner.&rdquo;</p><div class="who">Carol R. <span>Google review</span></div></div>
+  </div>
+</div></section>
+
+<section id="about" class="about"><div class="wrap">
+  <div class="about-grid">
+    <div>
+      <div class="kicker" style="color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:10px; font-weight:700;">Why K-9 Paws</div>
+      <h2 class="serif">57 years of doing it right.</h2>
+      <p>K-9 Paws has been grooming South Mississippi's dogs for over five decades. Mz. Sandy is a National Certified Master Groomer and award-winning stylist, and regulars say their dogs come home happy.</p>
+      <p>One groomer, one shop, decades of experience. That is the whole pitch.</p>
+    </div>
+    <div class="badges">
+      <div class="badge"><b><span class="dot">●</span>National Certified Master Groomer</b><span>One of the highest credentials a groomer can hold.</span></div>
+      <div class="badge"><b><span class="dot">●</span>Award-winning stylist</b><span>Their own description, and the reviews back it up.</span></div>
+      <div class="badge"><b><span class="dot">●</span>4.8 stars on Google</b><span>From 20 reviews by local dog owners.</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="visit"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker">Come see us</div>
+    <h2 class="serif">The shop</h2>
+  </div>
+  <div class="visit-grid">
+    <div class="contact-block">
+      <h3 class="serif">K-9 Paws</h3>
+      <p><b>450 E Pass Rd #106</b><br>Gulfport, MS 39507</p>
+      <p><b>(228) 896-7297</b></p>
+      <p>Call to book. Ask for Mz. Sandy.</p>
+      <div class="mapbtn"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=K-9+Paws+Gulfport+MS">Get Directions</a></div>
+    </div>
+    <div>
+      <table class="hours">
+        <tr><td>Monday</td><td>8:00 AM to 3:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>8:00 AM to 3:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>8:00 AM to 3:00 PM</td></tr>
+        <tr><td>Thursday</td><td>8:00 AM to 3:00 PM</td></tr>
+        <tr><td>Friday</td><td>8:00 AM to 3:00 PM</td></tr>
+        <tr><td>Saturday</td><td>Closed</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <div>K-9 PAWS &middot; Gulfport, MS &middot; (228) 896-7297</div>
+    <div class="fine">Concept preview. Not affiliated with or endorsed by the business.</div>
+  </div>
+</footer>
+
+</body>
+</html>
