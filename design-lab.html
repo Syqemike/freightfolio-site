@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Lab - Freightfolio | Try 28 Website Styles Live</title>
+<meta name="description" content="The Freightfolio Design Lab: pick a business category and a design direction to see a live mini-website preview. 28 combinations, rendered instantly.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="index.html">Freightfolio<span class="dot">.</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="portfolio.html">Designs</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="design-lab.html">Design Lab</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a class="btn btn-primary nav-cta" href="request.html">Free Preview</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="center reveal" style="margin-bottom: 3rem;">
+        <span class="eyebrow">Interactive</span>
+        <h1>The <span class="grad-text">Design Lab</span></h1>
+        <p class="lead">Pick a business category and a design direction. The preview below rebuilds itself live, showing how differently the same business can look. Try all 28 combinations.</p>
+      </div>
+
+      <div class="lab-controls reveal">
+        <div class="lab-group">
+          <h3>1 · Business category</h3>
+          <div class="lab-options" id="labCategories" role="group" aria-label="Business category">
+            <button data-value="restaurant" class="active" aria-pressed="true">Restaurant</button>
+            <button data-value="contractor" aria-pressed="false">Contractor</button>
+            <button data-value="barber" aria-pressed="false">Barber / Salon</button>
+            <button data-value="pet" aria-pressed="false">Pet services</button>
+            <button data-value="automotive" aria-pressed="false">Automotive</button>
+            <button data-value="professional" aria-pressed="false">Professional services</button>
+            <button data-value="other" aria-pressed="false">Other</button>
+          </div>
+        </div>
+        <div class="lab-group">
+          <h3>2 · Design direction</h3>
+          <div class="lab-options" id="labDirections" role="group" aria-label="Design direction">
+            <button data-value="modern" class="active" aria-pressed="true">Modern</button>
+            <button data-value="luxury" aria-pressed="false">Luxury</button>
+            <button data-value="bold" aria-pressed="false">Bold</button>
+            <button data-value="minimal" aria-pressed="false">Minimal</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="lab-stage reveal" id="labStage">
+        <div class="lab-frame-bar">
+          <span>Live preview · <strong id="labCombo" style="color: var(--brand-cyan);">Restaurant × Modern</strong></span>
+          <span class="device-toggle" style="margin: 0;">
+            <button data-viewport="desktop" class="active">Desktop</button>
+            <button data-viewport="mobile">Mobile</button>
+          </span>
+        </div>
+        <div class="lab-viewport"></div>
+      </div>
+
+      <div class="grid grid-4 reveal" style="margin-bottom: 4rem;">
+        <div class="card"><h3>Modern</h3><p>Clean sans-serif type, confident blue, and friendly cards. The safe, sharp default.</p></div>
+        <div class="card"><h3>Luxury</h3><p>Serif headlines, gold on near-black, centered and calm. For businesses that sell on reputation.</p></div>
+        <div class="card"><h3>Bold</h3><p>Oversized type, angled sections, high contrast. For businesses with real personality.</p></div>
+        <div class="card"><h3>Minimal</h3><p>Light, quiet, and spacious. Hairlines and whitespace let the words do the work.</p></div>
+      </div>
+
+      <div class="cta-band reveal">
+        <span class="eyebrow">Your turn</span>
+        <h2>Like what you see? Let's make one that's yours.</h2>
+        <p>These are starting directions. Your free custom mockup is designed around your actual business, not a category.</p>
+        <a class="btn btn-primary btn-lg" href="request.html">Request your free custom mockup</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">Freightfolio<span class="dot">.</span></a>
+        <p>Websites for local businesses. We design it, build it, host it, and handle everything. Starting at $149/month with $0 upfront.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="portfolio.html">Designs</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="design-lab.html">Design Lab</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a></li>
+          <li>Gulfport, Mississippi</li>
+          <li><a href="request.html">Request a free preview</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Freightfolio. All rights reserved.</span>
+      <span><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/design-lab.js"></script>
+</body>
+</html>

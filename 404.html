@@ -1,17 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found — Freightfolio</title>
-<meta name="robots" content="noindex, nofollow">
-<meta name="description" content="The page you are looking for does not exist.">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:640px;margin:10vh auto;padding:0 1.5rem;color:#0f1f3d;line-height:1.6}h1{font-size:2rem}a{color:#0b5fff}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found - Freightfolio</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-<h1>That page does not exist.</h1>
-<p>The link may be mistyped or the page may have moved.</p>
-<p><a href="/">Back to the Freightfolio homepage</a> &middot; <a href="mailto:hello@freightfolio.net">Contact us</a></p>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="index.html">Freightfolio<span class="dot">.</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="portfolio.html">Designs</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="design-lab.html">Design Lab</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a class="btn btn-primary nav-cta" href="request.html">Free Preview</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="error-page reveal">
+        <div class="code">404</div>
+        <h1 style="margin-top: 1rem;">This page went missing</h1>
+        <p class="lead" style="margin: 0 auto 2.2rem;">The page you are looking for does not exist or was moved. Let's get you back on track.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a class="btn btn-primary" href="index.html">Back to home</a>
+          <a class="btn btn-ghost" href="portfolio.html">See our designs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">Freightfolio<span class="dot">.</span></a>
+        <p>Websites for local businesses. We design it, build it, host it, and handle everything. Starting at $149/month with $0 upfront.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="portfolio.html">Designs</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="design-lab.html">Design Lab</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a></li>
+          <li>Gulfport, Mississippi</li>
+          <li><a href="request.html">Request a free preview</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Freightfolio. All rights reserved.</span>
+      <span><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
 </body>
 </html>

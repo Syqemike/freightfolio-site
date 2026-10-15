@@ -1,89 +1,36 @@
 # freightfolio-site
 
-Public website for Freightfolio (https://freightfolio.net).
+Website design agency site for Freightfolio (https://freightfolio.net).
+Branch `agency-rebuild` holds the agency rebuild; `main` is untouched by this work.
 
-This repo is connected to the `freightfolio` Cloudflare Pages project — every push to `main` auto-deploys.
+## Pages
 
-- `index.html` — homepage
-- `privacy.html` — privacy & data-handling policy
-- `sample-dashboard.html` — sample billing-readiness dashboard (generated from `product/src/dashboard.py`)
-- `sample-report.xlsx` — sample Excel report (generated from the pipeline)
-- `assets/` — stylesheet and logos
+- `index.html` - homepage with animated hero
+- `portfolio.html` - six website design concepts (showroom with modal)
+- `services.html` - done-for-you service details
+- `pricing.html` - Starter $149/mo, Professional $199/mo, Business Growth $299/mo ($0 upfront)
+- `how-it-works.html` - interactive 4-step timeline
+- `design-lab.html` - live mini-website preview: 7 categories x 4 directions
+- `about.html`, `request.html` (lead form), `faq.html`, `privacy.html`, `terms.html`, `404.html`
 
+## Structure
 
-## Missing-Document Recovery add-on — billing core (staging)
+- `css/site.css` - all styles; brand tokens live in `:root` at the top
+- `js/site.js` - nav, particles, tilt, reveal-on-scroll
+- `js/portfolio.js` - concept modal data and logic
+- `js/design-lab.js` - design lab template engine
+- `js/request.js` - lead form validation and POST to /api/lead
+- `functions/api/lead.js` - Cloudflare Pages Function: validates, emails via Resend, stores in KV
+- `img/showcase/` - concept screenshots (desktop + mobile)
+- `concepts/` - the 10 sales concept sites (do not modify)
 
-$99/month paid add-on. Entitlement lives on the customer record as
-`customer.recovery` (see `lib/customer.js` header for the full field/schema
-docs). Product/price configuration lives ONLY in
-`lib/recovery-entitlements.js` — nothing else hardcodes product names,
-price ids, or allowances.
+## Backend setup
 
-### Stripe price setup (Mike, in the Stripe dashboard — test mode first)
+1. In the Cloudflare dashboard (Pages project > Settings > Environment variables):
+   - `RESEND_API_KEY` - Resend API key (secret, required for lead emails)
+   - `LEAD_TO_EMAIL` - destination for lead emails (default: hello@freightfolio.net)
+2. Create a KV namespace and paste its ID into `wrangler.toml` (`LEADS_KV`). Optional at runtime.
 
-1. Create a **$99.00/month recurring** product named "Missing-Document Recovery".
-2. Copy the real price id (`price_...`).
-3. Paste it over the placeholder in `lib/recovery-entitlements.js`
-   (`RECOVERY_ADDON.priceId`, currently `"price_TBD_CREATE_IN_STRIPE_DASHBOARD"`).
-4. Do NOT create products/prices/charges via the API — the available Stripe
-   connection is live-only and the price does not exist yet.
+## Design notes
 
-Entitlement comes ONLY from verified webhook events → KV records. A
-checkout-success page or any browser flag must NEVER enable service.
-
-### Eligibility rule (the gate the recovery engine enforces)
-
-Chasing runs ONLY when ALL THREE hold:
-
-(a) `recoveryEntitled(customer)` — entitlement is `addon` or
-    `managed_included` AND status is `active`/`grace` (or `past_due` with the
-    7-day grace window still open);
-(b) customer authorization complete — `authorized_at` set AND
-    `setup.approved === true`;
-(c) valid operational config + approved contacts —
-    `setup.config_valid === true` AND `setup.contacts_approved === true`.
-
-A fresh purchase lands at status `awaiting_setup`: **payment alone never
-enables chasing.**
-
-### Grace / cancel semantics
-
-- `invoice.payment_failed` → status `past_due`, `grace_until` = now + 7 days.
-  Chasing CONTINUES during the grace window. Redeliveries never extend it.
-- Grace expiry → `paused` (evaluated lazily by the internal endpoints via
-  `applyRecoveryLifecycle()` — the VM worker's periodic eligibility checks
-  drive the transition; no separate cron needed).
-- `cancel_at_period_end` → status stays `active` with `cancel_scheduled=true`
-  until the period ends; then `canceled`. Immediate delete → `canceled` now.
-- `invoice.paid` after `past_due`/`grace`/`paused` → status restored to the
-  pre-failure status (or `awaiting_setup`).
-- The 50-request monthly allowance resets ONLY when Stripe advances
-  `current_period_start` — never on plan changes, duplicate, or out-of-order
-  events. All webhook writes are idempotent and converge.
-- Stripe prorates the first add-on charge when it is added mid-cycle; when a
-  prorated line item is detected on the invoice, a `proration_note` is stored
-  on the entitlement record disclosing this.
-
-### Managed-service path
-
-Ops sets `entitlement: "managed_included"` (status `active`) ONLY via
-`POST /api/internal/recovery-admin` (`set_managed`). The webhook rejects any
-add-on purchase for a `managed_included` customer as a duplicate — the $99
-charge must never apply to managed customers.
-
-### Internal endpoints (all guarded by `x-intake-key` = INTAKE_INTERNAL_KEY)
-
-- `GET /api/internal/recovery-eligibility?email=` → `{ eligible, reasons[],
-  entitlement, status, allowance_remaining, overage_cap_cents, ... }` for the
-  VM worker. Never exposes secrets.
-- `POST /api/internal/recovery-usage-sync` ← VM pushes
-  `{ email, period_start, period_end?, requests_used, overage_units }`.
-  Idempotent and monotonic — counters never decrease; a later `period_start`
-  resets the baseline.
-- `POST /api/internal/recovery-admin` (ops only) →
-  `set_managed` / `clear_managed` / `set_authorization` / `clear_authorization` /
-  `set_status` / `set_overage_cap`. Every call is audit-logged to KV
-  (`recovery_audit:*`).
-
-Tests: `node --test tests/recovery-billing.test.js` (synthetic `livemode:false`
-events only — no live Stripe, no real emails).
+See `DESIGN.md` for the three visual concepts evaluated and why "Violet Aurora" was chosen.

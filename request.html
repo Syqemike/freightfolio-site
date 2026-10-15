@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Free Website Preview - Freightfolio</title>
+<meta name="description" content="Request a free website preview from Freightfolio. Tell us about your business and we will design a concept around it, at no cost and with $0 upfront.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="index.html">Freightfolio<span class="dot">.</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="portfolio.html">Designs</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="design-lab.html">Design Lab</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a class="btn btn-primary nav-cta" href="request.html">Free Preview</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="center reveal" style="margin-bottom: 2.5rem;">
+        <span class="eyebrow">Free, no commitment</span>
+        <h1>Request your <span class="grad-text">free website preview</span></h1>
+        <p class="lead">Tell us about your business. We will design a concept around it and send it over so you can see what your website could look like before you spend anything.</p>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="leadForm" novalidate>
+          <div class="field" data-field="business_name">
+            <label for="business_name">Business name <span class="req">*</span></label>
+            <input type="text" id="business_name" name="business_name" autocomplete="organization" required>
+            <p class="error"></p>
+          </div>
+
+          <div class="field" data-field="your_name">
+            <label for="your_name">Your name <span class="req">*</span></label>
+            <input type="text" id="your_name" name="your_name" autocomplete="name" required>
+            <p class="error"></p>
+          </div>
+
+          <div class="grid grid-2">
+            <div class="field" data-field="email">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <p class="error"></p>
+            </div>
+            <div class="field" data-field="phone">
+              <label for="phone">Phone <span style="color: var(--faint); font-weight: 400;">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+              <p class="error"></p>
+            </div>
+          </div>
+
+          <div class="field" data-field="current_website">
+            <label for="current_website">Current website <span style="color: var(--faint); font-weight: 400;">(optional)</span></label>
+            <input type="url" id="current_website" name="current_website" placeholder="https://">
+            <p class="hint">If you have one, we will look at what is working and what is not.</p>
+          </div>
+
+          <div class="field" data-field="business_type">
+            <label for="business_type">Business type <span class="req">*</span></label>
+            <select id="business_type" name="business_type" required>
+              <option value="">Choose one...</option>
+              <option>Restaurant / Food</option>
+              <option>Contractor / Trades</option>
+              <option>Barber / Salon</option>
+              <option>Pet services</option>
+              <option>Automotive</option>
+              <option>Professional services</option>
+              <option>Retail</option>
+              <option>Health / Wellness</option>
+              <option>Other</option>
+            </select>
+            <p class="error"></p>
+          </div>
+
+          <div class="field">
+            <label>Desired features <span style="color: var(--faint); font-weight: 400;">(check all that apply)</span></label>
+            <div class="check-grid">
+              <label class="check-item"><input type="checkbox" name="features" value="More pages"> More pages</label>
+              <label class="check-item"><input type="checkbox" name="features" value="Online booking"> Online booking</label>
+              <label class="check-item"><input type="checkbox" name="features" value="Contact form"> Contact form</label>
+              <label class="check-item"><input type="checkbox" name="features" value="Photo gallery"> Photo gallery</label>
+              <label class="check-item"><input type="checkbox" name="features" value="Reviews display"> Reviews display</label>
+              <label class="check-item"><input type="checkbox" name="features" value="Other"> Other</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="comments">Anything else we should know?</label>
+            <textarea id="comments" name="comments" placeholder="Services you offer, hours, what you want the site to do..."></textarea>
+          </div>
+
+          <div class="hp-field" aria-hidden="true">
+            <label for="website_url">Website URL (leave blank)</label>
+            <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off">
+          </div>
+
+          <p id="formError" style="display: none; color: #ff8a8a; font-size: 0.95rem;"></p>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Request my free preview</button>
+          <p class="hint center" style="margin-top: 1rem; font-size: 0.88rem; color: var(--faint);">No payment, no commitment. We reply by email.</p>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="big-check">✓</div>
+          <h2>Request received</h2>
+          <p>Thanks for reaching out. We will review your details and follow up by email with your free website preview.</p>
+          <p style="font-size: 0.9rem; color: var(--faint);">Need us sooner? Email <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">Freightfolio<span class="dot">.</span></a>
+        <p>Websites for local businesses. We design it, build it, host it, and handle everything. Starting at $149/month with $0 upfront.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="portfolio.html">Designs</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="design-lab.html">Design Lab</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a></li>
+          <li>Gulfport, Mississippi</li>
+          <li><a href="request.html">Request a free preview</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Freightfolio. All rights reserved.</span>
+      <span><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/request.js"></script>
+</body>
+</html>

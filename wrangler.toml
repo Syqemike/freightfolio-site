@@ -1,47 +1,33 @@
-# Freightfolio — Cloudflare Pages configuration
+# Freightfolio - website design agency site (Cloudflare Pages)
 #
 # This file declares the KV bindings the Functions need. Secret VALUES are
 # never stored here; they are set in the Cloudflare dashboard
 # (Pages project > Settings > Environment variables) or via
 # `wrangler pages secret put <NAME>`.
-#
-# REBUILD INSTRUCTIONS: if the Pages project must be recreated,
-#   1. Create the two KV namespaces below (or reuse existing ones) and
-#      paste their IDs into the `id` fields.
-#   2. Set every variable listed in docs/ENV.md (secrets via the dashboard,
-#      plain config via [vars] below or the dashboard).
-#   3. Deploy: `git push origin main` (Pages auto-deploys from main).
 
 name = "freightfolio-site"
 compatibility_date = "2026-10-01"
 
 # ---------------------------------------------------------------------------
 # KV namespaces
-# Replace REPLACE_WITH_KV_ID with the real namespace IDs from the dashboard
+# Replace REPLACE_WITH_KV_ID with the real namespace ID from the dashboard
 # (Workers & Pages > KV > namespace > ID). Preview IDs are optional; when
 # omitted, preview deployments share the production namespaces.
+#
+# The LEADS_KV binding is optional at runtime: functions/api/lead.js stores a
+# copy of each lead there when bound, and still works without it.
 # ---------------------------------------------------------------------------
 [[kv_namespaces]]
-binding = "ORDER_KV"
-id = "REPLACE_WITH_ORDER_KV_ID"
-preview_id = "REPLACE_WITH_ORDER_KV_PREVIEW_ID"
-
-[[kv_namespaces]]
-binding = "EVENT_LOG"
-id = "REPLACE_WITH_EVENT_LOG_ID"
-preview_id = "REPLACE_WITH_EVENT_LOG_PREVIEW_ID"
+binding = "LEADS_KV"
+id = "REPLACE_WITH_LEADS_KV_ID"
+preview_id = "REPLACE_WITH_LEADS_KV_PREVIEW_ID"
 
 # ---------------------------------------------------------------------------
 # Non-secret environment variables (safe to store in git)
-# Secrets (STRIPE_WEBHOOK_SECRET, UPLOAD_TOKEN_SECRET, SESSION_SECRET,
-# RESEND_API_KEY, INTAKE_INTERNAL_KEY, B2_KEY_ID, B2_KEY_SECRET) are set
-# in the dashboard and are intentionally absent here. See docs/ENV.md.
+# Secrets (RESEND_API_KEY) are set in the dashboard and are intentionally
+# absent here.
+#   LEAD_TO_EMAIL - where lead emails are sent (default: hello@freightfolio.net)
 # ---------------------------------------------------------------------------
 [vars]
 PUBLIC_ORIGIN = "https://freightfolio.net"
-OPS_NOTIFY_EMAIL = "freightfolio.ops@gmail.com"
-B2_BUCKET = "Freightfolio-uploads"
-B2_ENDPOINT = "s3.us-east-005.backblaze2.com"
-B2_REGION = "us-east-005"
-# B2_BUCKET_ID is the Backblaze bucket ID (not the name); set in dashboard
-# if it differs per environment. Kept as a secret-capable var on purpose.
+LEAD_TO_EMAIL = "hello@freightfolio.net"
