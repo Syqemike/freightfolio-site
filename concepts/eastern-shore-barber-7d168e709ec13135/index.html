@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eastern Shore Barber Shop | Barbershop in Daphne, AL</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --coal:#211d18; --coal2:#2b2620; --cream:#f6f1e7; --cream2:#efe7d3;
+    --ink:#2a241d; --muted:#7c6f5e; --gold:#c2943a; --gold-dark:#9c742a;
+    --line:#ddd0b4; --green:#2e4a3d;
+  }
+  body { background:var(--cream); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:var(--coal); color:#d9cdb4; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+
+  nav { position:sticky; top:0; background:rgba(246,241,231,.97); border-bottom:2px solid var(--gold); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:20px; font-weight:800; letter-spacing:.5px; }
+  .brand em { color:var(--gold-dark); font-style:normal; }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--gold-dark); }
+  .btn { display:inline-block; background:var(--gold); color:#211d18; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:800; border:none; border-radius:4px; cursor:pointer; }
+  .btn:hover { background:var(--gold-dark); color:#fff; }
+  .btn.ghost { background:transparent; color:var(--coal); border:2px solid var(--coal); }
+  .btn.ghost:hover { background:rgba(33,29,24,.06); }
+
+  .hero { background:var(--coal); color:#f2ead8; }
+  .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding-top:72px; padding-bottom:72px; }
+  .hero .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
+  .hero h1 { font-size:52px; line-height:1.12; font-weight:700; margin-bottom:18px; }
+  .hero h1 em { color:var(--gold); font-style:italic; }
+  .hero p.lead { color:#c9bda6; font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero .btn.ghost { color:#f2ead8; border-color:var(--gold); }
+  .hero .btn.ghost:hover { background:rgba(194,148,58,.12); }
+  .hero-img img { border-radius:14px; aspect-ratio:4/5; object-fit:cover; width:100%; border:1px solid #4a4234; }
+  .stars { margin-top:22px; color:var(--gold); letter-spacing:3px; font-size:15px; }
+  .stars span { color:#c9bda6; letter-spacing:.5px; font-size:14px; }
+
+  .strip { background:var(--gold); color:#211d18; }
+  .strip .wrap { display:flex; justify-content:space-between; padding-top:15px; padding-bottom:15px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; flex-wrap:wrap; gap:10px; }
+
+  section.block { padding:76px 28px; }
+  .kicker { color:var(--gold-dark); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
+  h2.stitle { font-size:38px; text-align:center; margin-bottom:10px; font-weight:700; }
+  p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
+
+  .services { display:grid; grid-template-columns:repeat(2,1fr); gap:0 48px; max-width:860px; margin:0 auto; }
+  .svc { display:flex; justify-content:space-between; align-items:baseline; gap:16px; padding:16px 4px; border-bottom:1px solid var(--line); }
+  .svc h3 { font-size:18px; font-weight:700; }
+  .svc h3 small { display:block; font-weight:400; color:var(--muted); font-size:14px; margin-top:2px; }
+  .svc .price { color:var(--gold-dark); font-weight:800; white-space:nowrap; font-size:17px; }
+
+  .gallery { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .gallery img { width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:10px; }
+
+  .team { background:var(--coal2); color:#f2ead8; }
+  .team h2.stitle { color:#f2ead8; }
+  .team p.ssub { color:#c9bda6; }
+  .team .kicker { color:var(--gold); }
+  .barbers { display:flex; justify-content:center; gap:36px; flex-wrap:wrap; }
+  .barber { text-align:center; }
+  .barber .n { font-size:22px; font-weight:700; color:var(--gold); }
+  .barber .r { color:#c9bda6; font-size:14px; letter-spacing:1px; text-transform:uppercase; }
+
+  .reviews { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .rev-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:26px; }
+  .rev { background:var(--cream); border:1px solid var(--line); border-radius:14px; padding:28px; }
+  .rev .q { color:var(--gold); font-size:20px; letter-spacing:2px; margin-bottom:10px; }
+  .rev p { font-size:16px; margin-bottom:12px; }
+  .rev cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .visit h2 { font-size:36px; margin-bottom:20px; font-weight:700; }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted var(--line); font-size:16px; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-line { font-size:17px; margin-bottom:10px; }
+  .contact-line b { color:var(--gold-dark); }
+
+  footer { background:var(--coal); color:#a99c82; }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:10px; }
+  footer b { color:#fff; }
+
+  @media (max-width:860px) {
+    .hero .wrap, .visit { grid-template-columns:1fr; }
+    .services, .rev-grid { grid-template-columns:1fr; }
+    .gallery { grid-template-columns:repeat(2,1fr); }
+    .hero h1 { font-size:40px; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>28623 N Main St Unit B, Daphne, AL</span>
+    <span>Mon to Sat 8am-5pm &nbsp;|&nbsp; Sun 8am-3pm &nbsp;|&nbsp; <a href="tel:+12512889748">(251) 288-9748</a></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand serif" href="#">Eastern Shore <em>Barber Shop</em></a>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#gallery">Shop</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <a class="btn" href="#visit">Book a Chair</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Daphne, Alabama</div>
+      <h1 class="serif">The hottest barbershop on the <em>Gulf Coast.</em></h1>
+      <p class="lead">Walk-ins welcome, appointments on Booksy. Fades, beard work, hot-towel shaves, and kids cuts from a team Daphne trusts with its hair.</p>
+      <div class="cta-row">
+        <a class="btn" href="#visit">Book on Booksy</a>
+        <a class="btn ghost" href="#services">See Services</a>
+      </div>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>5.0 on Google &middot; 4.9 from 740+ on Booksy</span></div>
+    </div>
+    <div class="hero-img">
+      <img src="img/photo-8.jpg" alt="Barber doing detailed fade work at Eastern Shore Barber Shop">
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span>Walk-ins welcome</span>
+    <span>Appointments via Booksy</span>
+    <span>Faith based business</span>
+  </div>
+</div>
+
+<section class="block wrap" id="services">
+  <div class="kicker">Services</div>
+  <h2 class="stitle serif">Cuts, fades, and shaves</h2>
+  <p class="ssub">Straightforward pricing, no surprises. Ask your barber what fits.</p>
+  <div class="services">
+    <div class="svc"><h3>Adult Haircut<small>Consultation, cut, and style</small></h3><span class="price">from $30</span></div>
+    <div class="svc"><h3>Cut with Beard &amp; Shave<small>Full service with hot towel</small></h3><span class="price">$50</span></div>
+    <div class="svc"><h3>Skin Fade<small>Precision blended fade</small></h3><span class="price">from $30</span></div>
+    <div class="svc"><h3>Kids Cut<small>Patient cuts for young gentlemen</small></h3><span class="price">from $25</span></div>
+    <div class="svc"><h3>Beard Trim<small>Shape, line up, and detail</small></h3><span class="price">from $15</span></div>
+    <div class="svc"><h3>Hot Towel Shave<small>Beard and head shave</small></h3><span class="price">from $35</span></div>
+    <div class="svc"><h3>Line Up<small>Crisp edges between cuts</small></h3><span class="price">from $10</span></div>
+    <div class="svc"><h3>Shampoo Service<small>A wash and finish</small></h3><span class="price">from $10</span></div>
+  </div>
+</section>
+
+<section class="block wrap" id="gallery">
+  <div class="kicker">The shop</div>
+  <h2 class="stitle serif">More than a job</h2>
+  <p class="ssub">Come in and enjoy the diverse culture of Eastern Shore Barbershop.</p>
+  <div class="gallery">
+    <img src="img/photo-1.jpg" alt="Eastern Shore barber team">
+    <img src="img/photo-3.jpg" alt="Inside Eastern Shore Barber Shop">
+    <img src="img/photo-6.jpg" alt="Kid getting a fresh cut">
+    <img src="img/photo-5.jpg" alt="Barber portrait">
+    <img src="img/photo-2.jpg" alt="The dream team in Daphne">
+    <img src="img/photo-4.jpg" alt="Barbershop interior">
+    <img src="img/photo-7.jpg" alt="Fresh haircut">
+    <img src="img/photo-9.jpg" alt="Full team inside the shop">
+  </div>
+</section>
+
+<section class="block team">
+  <div class="wrap">
+    <div class="kicker">The barbers</div>
+    <h2 class="stitle serif">In the chairs</h2>
+    <p class="ssub">Ask for your barber by name when you book.</p>
+    <div class="barbers">
+      <div class="barber"><div class="n serif">Chris</div><div class="r">Master Barber</div></div>
+      <div class="barber"><div class="n serif">Jose</div><div class="r">Barber</div></div>
+      <div class="barber"><div class="n serif">Alex</div><div class="r">Barber</div></div>
+      <div class="barber"><div class="n serif">Corky Irizarry</div><div class="r">Barber</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reviews" id="reviews">
+  <div class="wrap">
+    <div class="kicker">Word of mouth</div>
+    <h2 class="stitle serif">5.0 stars on Google</h2>
+    <p class="ssub">What Daphne says about the shop.</p>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Hottest barbershop on the Gulf Coast, period."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="rev">
+        <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Just moved here. Walk in customer. Now a forever customer. Faith based business. Could not be happier about finding them!"</p>
+        <cite>Birdeye review</cite>
+      </div>
+      <div class="rev">
+        <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Chris always does an excellent job!"</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="rev">
+        <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Alex always does an outstanding job with our boys' haircuts!"</p>
+        <cite>Booksy review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="kicker" style="text-align:left;">Find us</div>
+      <h2 class="serif">Visit the shop.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Thursday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Friday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Sunday</td><td>8:00 AM - 3:00 PM</td></tr>
+      </table>
+    </div>
+    <div>
+      <p class="contact-line"><b>Address</b><br>28623 N Main St Unit B<br>Daphne, AL</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+12512889748">(251) 288-9748</a></p>
+      <p class="contact-line"><b>Booking</b><br>Walk-ins welcome. Appointments through Booksy, Tuesday through Saturday.</p>
+      <p class="contact-line"><b>Second location</b><br>Eastern Shore Barber Shop II<br>10179 Eastern Shore Drive, Spanish Fort, AL<br><a href="tel:+12512883280">(251) 288-3280</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><b>Eastern Shore Barber Shop</b> &middot; 28623 N Main St Unit B, Daphne, AL</span>
+    <span><a href="tel:+12512889748">(251) 288-9748</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
