@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flour Girls Bakery | Custom Cakes & Cupcakes in Mobile, AL</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --cream:#fbf7f0; --cream2:#f4ecdf; --ink:#3a2a22; --muted:#8a7468;
+    --berry:#a63a5c; --berry-dark:#83304a; --gold:#c49a3f; --line:#e7d9c6;
+  }
+  body { background:var(--cream); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:var(--ink); color:#e9dccf; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+
+  nav { position:sticky; top:0; background:rgba(251,247,240,.97); border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:12px; padding-bottom:12px; }
+  .brand { display:flex; align-items:center; gap:12px; font-size:20px; font-weight:800; }
+  .brand img { width:52px; height:52px; border-radius:50%; object-fit:cover; border:2px solid var(--line); }
+  .brand em { color:var(--berry); font-style:normal; }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--berry); }
+  .btn { display:inline-block; background:var(--berry); color:#fff; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:999px; cursor:pointer; }
+  .btn:hover { background:var(--berry-dark); }
+  .btn.ghost { background:transparent; color:var(--berry); border:2px solid var(--berry); }
+  .btn.ghost:hover { background:rgba(166,58,92,.07); }
+
+  .hero { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding:72px 28px; }
+  .hero .kicker { color:var(--berry); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
+  .hero h1 { font-size:52px; line-height:1.12; font-weight:700; margin-bottom:18px; }
+  .hero h1 em { color:var(--berry); font-style:italic; }
+  .hero p.lead { color:var(--muted); font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-img img { border-radius:18px; box-shadow:0 24px 60px rgba(58,42,34,.18); aspect-ratio:4/5; object-fit:cover; width:100%; }
+  .stars { margin-top:22px; color:var(--gold); letter-spacing:3px; font-size:15px; }
+  .stars span { color:var(--muted); letter-spacing:.5px; font-size:14px; }
+
+  .strip { background:var(--berry); color:#ffeef3; }
+  .strip .wrap { display:flex; justify-content:space-between; padding-top:16px; padding-bottom:16px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; flex-wrap:wrap; gap:10px; }
+  .strip b { color:#fff; }
+
+  section.block { padding:76px 28px; }
+  .kicker { color:var(--berry); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
+  h2.stitle { font-size:38px; text-align:center; margin-bottom:10px; font-weight:700; }
+  p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .card img { width:100%; aspect-ratio:1/1; object-fit:cover; }
+  .card .pad { padding:22px 24px 26px; }
+  .card h3 { font-size:21px; margin-bottom:8px; }
+  .card p { color:var(--muted); font-size:15px; }
+
+  .flavors { background:var(--cream2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .flavor-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px 40px; max-width:760px; margin:0 auto; }
+  .flavor { display:flex; align-items:baseline; gap:12px; padding:12px 4px; border-bottom:1px dotted var(--line); font-size:17px; }
+  .flavor i { color:var(--berry); font-style:normal; }
+  .flavor-note { text-align:center; color:var(--muted); margin-top:28px; font-size:15px; max-width:620px; margin-left:auto; margin-right:auto; }
+
+  .about { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+  .about img { border-radius:18px; aspect-ratio:4/3; object-fit:cover; width:100%; box-shadow:0 24px 60px rgba(58,42,34,.14); }
+  .about h2 { font-size:36px; margin-bottom:16px; font-weight:700; }
+  .about p { color:var(--muted); margin-bottom:16px; font-size:17px; }
+
+  .reviews { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .rev { background:var(--cream); border:1px solid var(--line); border-radius:16px; padding:28px; }
+  .rev .q { color:var(--gold); font-size:22px; letter-spacing:2px; margin-bottom:10px; }
+  .rev p { font-size:15.5px; margin-bottom:14px; }
+  .rev cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .visit h2 { font-size:36px; margin-bottom:20px; font-weight:700; }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted var(--line); font-size:16px; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-line { font-size:17px; margin-bottom:10px; }
+  .contact-line b { color:var(--berry); }
+  .social { display:flex; gap:12px; margin-top:18px; }
+
+  footer { background:var(--ink); color:#cbbba9; }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:10px; }
+  footer b { color:#fff; }
+
+  @media (max-width:860px) {
+    .hero, .about, .visit { grid-template-columns:1fr; }
+    .cards, .rev-grid { grid-template-columns:1fr; }
+    .flavor-grid { grid-template-columns:1fr; }
+    .hero h1 { font-size:40px; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>809 Hillcrest Rd, Mobile, AL 36695</span>
+    <span>Mon to Fri 10am-4pm &nbsp;|&nbsp; Sat 9am-2pm &nbsp;|&nbsp; <a href="tel:+12516342285">(251) 634-2285</a></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand serif" href="#"><img src="img/logo.jpg" alt="Flour Girls Bakery logo">Flour Girls <em>Bakery</em></a>
+    <div class="navlinks">
+      <a href="#specialties">Specialties</a>
+      <a href="#flavors">Flavors</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <a class="btn" href="tel:+12516342285">Order Ahead</a>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <div>
+    <div class="kicker">Mobile, Alabama &middot; Since 2010</div>
+    <h1 class="serif">Custom cakes <em>worth</em> celebrating.</h1>
+    <p class="lead">Wedding cakes, birthday showstoppers, cupcakes by the dozen, and macarons, baked fresh in Mobile for over 15 years. Bring us a photo or an idea and we will make it real.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+12516342285">Call to Order</a>
+      <a class="btn ghost" href="#specialties">See What We Bake</a>
+    </div>
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>4.7 from 600+ Google reviews</span></div>
+  </div>
+  <div class="hero-img">
+    <img src="img/photo-1.jpg" alt="Two-tier pink and white birthday cake with roses and gold accents">
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span><b>4.7 stars</b> from 600+ reviews</span>
+    <span>Baking in Mobile <b>since 2010</b></span>
+    <span><b>Custom orders</b> welcome</span>
+  </div>
+</div>
+
+<section class="block wrap" id="specialties">
+  <div class="kicker">What we bake</div>
+  <h2 class="stitle serif">Made for your occasion</h2>
+  <p class="ssub">Every cake leaves our kitchen decorated to order. These are a few of the celebrations we bake for most.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="img/photo-3.jpg" alt="Two-tier white wedding cake with pale blue petals and gold leaf">
+      <div class="pad"><h3 class="serif">Wedding Cakes</h3><p>Elegant tiered designs for the big day, from classic white to full floral. Tastings and consultations available.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-4.jpg" alt="Pink drip cake topped with strawberries and macarons">
+      <div class="pad"><h3 class="serif">Birthday Showstoppers</h3><p>Drip cakes, themed designs, and photo-worthy centerpieces for kids and grown-ups alike.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-2.jpg" alt="Box of twelve assorted cupcakes">
+      <div class="pad"><h3 class="serif">Cupcakes by the Dozen</h3><p>Any everyday flavor, or a past favorite, by the dozen. Just give us a few days notice.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-5.jpg" alt="Baby shower cake with teddy bears and BABY blocks">
+      <div class="pad"><h3 class="serif">Baby Showers</h3><p>Sweet designs for welcoming little ones, matched to your theme and colors.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-6.jpg" alt="White cake covered in colorful buttercream flowers">
+      <div class="pad"><h3 class="serif">Floral Buttercream</h3><p>Hand-piped buttercream flowers that look almost too pretty to cut. Almost.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-7.jpg" alt="Chocolate cupcakes with brownie chunks">
+      <div class="pad"><h3 class="serif">Chocolate Everything</h3><p>For the serious chocolate people: brownie-chunk cupcakes, chocolate layers, and rich frostings.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block flavors" id="flavors">
+  <div class="wrap">
+    <div class="kicker">Everyday menu</div>
+    <h2 class="stitle serif">Flavors baked daily</h2>
+    <p class="ssub">Our daily lineup, plus seasonal specials that change through the year.</p>
+    <div class="flavor-grid">
+      <div class="flavor"><i>&#10022;</i> Butter</div>
+      <div class="flavor"><i>&#10022;</i> Chocolate</div>
+      <div class="flavor"><i>&#10022;</i> Red Velvet</div>
+      <div class="flavor"><i>&#10022;</i> Strawberry</div>
+      <div class="flavor"><i>&#10022;</i> Butter with Chocolate Frosting</div>
+      <div class="flavor"><i>&#10022;</i> Chocolate with Buttercream Frosting</div>
+      <div class="flavor"><i>&#10022;</i> Wedding Cake</div>
+      <div class="flavor"><i>&#10022;</i> Seasonal Specials</div>
+    </div>
+    <p class="flavor-note">Craving a past favorite? You can order any flavor by the dozen with a few days notice. Lemon squares and our biscoff cupcake keep people coming back too.</p>
+  </div>
+</section>
+
+<section class="block wrap">
+  <div class="about">
+    <img src="img/photo-8.jpg" alt="Elegant white cake with sage leaves and gold accents">
+    <div>
+      <div class="kicker" style="text-align:left;">Our story</div>
+      <h2 class="serif">A Mobile bakery since 2010.</h2>
+      <p>Flour Girls Bakery has been baking custom cakes, cupcakes, and treats on Hillcrest Road for over 15 years. What started as a neighborhood bakery is now one of the most reviewed cake shops on the Gulf Coast.</p>
+      <p>We keep it simple: real ingredients, designs matched to your celebration, and prices that stay reasonable. Order ahead for custom work or stop by for something from the case.</p>
+      <a class="btn ghost" href="#visit">Plan Your Visit</a>
+    </div>
+  </div>
+</section>
+
+<section class="block reviews" id="reviews">
+  <div class="wrap">
+    <div class="kicker">Word of mouth</div>
+    <h2 class="stitle serif">600+ reviews, 4.7 stars</h2>
+    <p class="ssub">A few of the things Mobile has said about our cakes.</p>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"The most beautiful and delicious cake you will ever taste! Highly recommend. We buy a cake from Flour Girls for our daughter's birthday each year and every year they top the one before."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="rev">
+        <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Ordered a cake for my mother-in-law's 90th birthday. They worked from several picture ideas we sent and made a beautiful cake. Everyone was amazed it traveled two hours so well."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="rev">
+        <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"You can't buy happiness, but you can buy cupcakes and that's basically the same thing."</p>
+        <cite>Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="kicker" style="text-align:left;">Come see us</div>
+      <h2 class="serif">Visit the bakery.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>10:00 AM - 4:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>10:00 AM - 4:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>10:00 AM - 4:00 PM</td></tr>
+        <tr><td>Thursday</td><td>10:00 AM - 4:00 PM</td></tr>
+        <tr><td>Friday</td><td>10:00 AM - 4:00 PM</td></tr>
+        <tr><td>Saturday</td><td>9:00 AM - 2:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <div>
+      <p class="contact-line"><b>Address</b><br>809 Hillcrest Rd<br>Mobile, AL 36695</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+12516342285">(251) 634-2285</a></p>
+      <p class="contact-line"><b>Custom orders</b><br>Call ahead with your date, servings, and idea. A few days notice is all we need for most cakes.</p>
+      <div class="social">
+        <a class="btn ghost" href="https://www.facebook.com/flourgirlsbakery">Facebook</a>
+        <a class="btn ghost" href="https://www.instagram.com/flourgirlsbakery">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><b>Flour Girls Bakery</b> &middot; 809 Hillcrest Rd, Mobile, AL 36695</span>
+    <span><a href="tel:+12516342285">(251) 634-2285</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
