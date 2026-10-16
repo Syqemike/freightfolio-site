@@ -53,7 +53,7 @@
   if (canvas && !reduceMotion) {
     var ctx = canvas.getContext("2d");
     var W, H, dots = [];
-    var COLORS = ["139,92,246", "59,130,246", "34,211,238"];
+    var COLORS = ["161,173,255", "182,194,255", "219,225,255"];
 
     function resize() {
       var r = canvas.parentElement.getBoundingClientRect();
@@ -94,7 +94,7 @@
             ctx.beginPath();
             ctx.moveTo(dots[a].x, dots[a].y);
             ctx.lineTo(dots[b].x, dots[b].y);
-            ctx.strokeStyle = "rgba(139,92,246," + (0.14 * (1 - dist / 130)).toFixed(3) + ")";
+            ctx.strokeStyle = "rgba(161,173,255," + (0.14 * (1 - dist / 130)).toFixed(3) + ")";
             ctx.lineWidth = 1;
             ctx.stroke();
           }
