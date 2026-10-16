@@ -133,4 +133,13 @@
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();
   });
+
+  /* ---------- How-it-works timeline toggles ---------- */
+  document.querySelectorAll("#timeline .tl-dot").forEach(function (dot) {
+    dot.addEventListener("click", function () {
+      var step = dot.closest(".tl-step");
+      var expanded = step.classList.toggle("expanded");
+      dot.setAttribute("aria-expanded", expanded ? "true" : "false");
+    });
+  });
 })();
