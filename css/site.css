@@ -182,6 +182,8 @@ em { font-style: normal; color: var(--accent); }
 .nav-menu a.active { color: #fff; }
 
 .nav-cta { margin-left: 0.6rem; padding: 13px 20px !important; }
+.nav-menu a.nav-cta { color: #111523; }
+.nav-menu a.nav-cta:hover { color: #111523; }
 
 .nav-toggle {
   display: none;
