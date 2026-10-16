@@ -859,7 +859,7 @@ table code, .code { font-family: ui-monospace, monospace; font-size: 0.9em; }
 
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .portfolio-grid { grid-template-columns: 1fr; }
-  .hero-visual { min-height: 340px; }
+  .hero-visual { min-height: 300px; }
   .check-grid { grid-template-columns: 1fr; }
   .modal-features { grid-template-columns: 1fr; }
   .lab-options { grid-template-columns: 1fr 1fr; }
