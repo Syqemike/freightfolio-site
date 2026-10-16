@@ -142,4 +142,24 @@
       dot.setAttribute("aria-expanded", expanded ? "true" : "false");
     });
   });
+
+  /* ---------- Mobile sticky bottom CTA ---------- */
+  (function () {
+    if (/request\.html$/.test(window.location.pathname)) return;
+    try {
+      if (sessionStorage.getItem("ff-cta-dismissed")) return;
+    } catch (e) {}
+    var bar = document.createElement("div");
+    bar.className = "mobile-cta-bar";
+    bar.innerHTML =
+      '<a href="request.html" class="btn btn-primary">Get my free preview</a>' +
+      '<button class="mobile-cta-close" aria-label="Dismiss">×</button>';
+    document.body.appendChild(bar);
+    document.body.classList.add("has-mobile-cta");
+    bar.querySelector(".mobile-cta-close").addEventListener("click", function () {
+      bar.remove();
+      document.body.classList.remove("has-mobile-cta");
+      try { sessionStorage.setItem("ff-cta-dismissed", "1"); } catch (e) {}
+    });
+  })();
 })();
