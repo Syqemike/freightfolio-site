@@ -6,6 +6,18 @@
   var form = document.getElementById("leadForm");
   if (!form) return;
 
+  /* Pre-select plan from ?plan= URL parameter (pricing page buttons). */
+  try {
+    var planParam = new URLSearchParams(window.location.search).get("plan");
+    var planSelect = document.getElementById("plan");
+    if (planParam && planSelect) {
+      var validPlans = ["starter", "professional", "business-growth"];
+      if (validPlans.indexOf(planParam) !== -1) {
+        planSelect.value = planParam;
+      }
+    }
+  } catch (e) { /* URL parsing not supported; leave default */ }
+
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
   function setInvalid(name, message) {
@@ -72,6 +84,7 @@
       phone: val("phone"),
       current_website: val("current_website"),
       business_type: val("business_type"),
+      plan: val("plan"),
       features: features,
       comments: val("comments"),
       website_url: val("website_url") /* honeypot; humans leave this empty */

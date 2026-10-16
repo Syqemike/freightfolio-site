@@ -564,7 +564,7 @@ em { font-style: normal; color: var(--accent); }
 .mini-modern .m-logo { font-family: var(--font-head); font-weight: 700; font-size: 1.15rem; color: #1d4ed8; }
 .mini-modern .m-links { display: flex; gap: 1.2rem; font-size: 0.85rem; color: #5b6b82; }
 .mini-modern .m-hero { padding: 3.4rem 1.6rem; text-align: center; background: #1d4ed8; color: #fff; }
-.mini-modern .m-hero h4 { font-family: var(--font-head); font-size: 2rem; margin: 0 0 0.6rem; letter-spacing: -0.02em; }
+.mini-modern .m-hero h4 { font-family: var(--font-head); font-size: 2rem; margin: 0 0 0.6rem; letter-spacing: -0.02em; color: #16202e; }
 .mini-modern .m-hero p { color: rgba(255,255,255,0.85); margin: 0 0 1.4rem; }
 .mini-modern .m-btn { display: inline-block; background: #fff; color: #1d4ed8; font-weight: 600; padding: 0.7rem 1.6rem; border-radius: 999px; font-size: 0.9rem; }
 .mini-modern .m-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding: 2rem 1.6rem; }
@@ -612,7 +612,7 @@ em { font-style: normal; color: var(--accent); }
 .mini-minimal .m-links { display: flex; gap: 1.6rem; font-size: 0.82rem; color: #777; }
 .mini-minimal .m-hero { padding: 5rem 2.4rem; max-width: 40rem; }
 .mini-minimal .m-kicker { font-size: 0.75rem; letter-spacing: 0.24em; text-transform: uppercase; color: #999; margin-bottom: 1.4rem; }
-.mini-minimal .m-hero h4 { font-size: 2.4rem; font-weight: 300; letter-spacing: -0.02em; margin: 0 0 1.2rem; line-height: 1.2; }
+.mini-minimal .m-hero h4 { font-size: 2.4rem; font-weight: 300; letter-spacing: -0.02em; margin: 0 0 1.2rem; line-height: 1.2; color: #1a1a1a; }
 .mini-minimal .m-hero p { color: #666; font-size: 1rem; margin: 0 0 2rem; font-weight: 300; }
 .mini-minimal .m-btn { display: inline-block; font-size: 0.85rem; color: #1a1a1a; border-bottom: 1px solid #1a1a1a; padding-bottom: 0.2rem; }
 .mini-minimal .m-cards { padding: 0 2.4rem 4rem; max-width: 40rem; }

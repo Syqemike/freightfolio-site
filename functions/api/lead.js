@@ -53,6 +53,7 @@ export async function onRequestPost(context) {
     var phone = clip(body.phone);
     var currentWebsite = clip(body.current_website);
     var businessType = clip(body.business_type);
+    var plan = clip(body.plan);
     var comments = clip(body.comments);
     var features = Array.isArray(body.features)
       ? body.features.filter(function (f) { return typeof f === "string"; }).map(function (f) { return f.trim().slice(0, 120); })
@@ -73,6 +74,7 @@ export async function onRequestPost(context) {
       "Phone: " + (phone || "(not provided)"),
       "Current website: " + (currentWebsite || "(none)"),
       "Business type: " + businessType,
+      "Plan of interest: " + (plan || "(not specified)"),
       "Desired features: " + (features.length ? features.join(", ") : "(none selected)"),
       "",
       "Comments:",
@@ -90,6 +92,7 @@ export async function onRequestPost(context) {
       phone: phone,
       current_website: currentWebsite,
       business_type: businessType,
+      plan: plan,
       features: features,
       comments: comments,
       received_at: new Date().toISOString(),
