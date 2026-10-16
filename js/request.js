@@ -7,8 +7,10 @@
   if (!form) return;
 
   /* Pre-select plan from ?plan= URL parameter (pricing page buttons). */
+  /* Pre-fill from Reimagined ?business= ?industry= ?style= params. */
   try {
-    var planParam = new URLSearchParams(window.location.search).get("plan");
+    var qs = new URLSearchParams(window.location.search);
+    var planParam = qs.get("plan");
     var planSelect = document.getElementById("plan");
     if (planParam && planSelect) {
       var validPlans = ["starter", "professional", "business-growth"];
@@ -16,7 +18,31 @@
         planSelect.value = planParam;
       }
     }
-  } catch (e) { /* URL parsing not supported; leave default */ }
+    var bizParam = qs.get("business");
+    var bizNameField = document.getElementById("business_name");
+    if (bizParam && bizNameField && !bizNameField.value) {
+      bizNameField.value = bizParam.slice(0, 60);
+    }
+    var industryParam = qs.get("industry");
+    var industrySelect = document.getElementById("business_type");
+    if (industryParam && industrySelect) {
+      var industryMap = {
+        restaurant: "Restaurant / Food",
+        contractor: "Contractor / Trades",
+        barber: "Barber / Salon",
+        pet: "Pet services",
+        automotive: "Automotive",
+        professional: "Professional services",
+        other: "Other"
+      };
+      if (industryMap[industryParam]) industrySelect.value = industryMap[industryParam];
+    }
+    var styleParam = qs.get("style");
+    var commentsField = document.getElementById("comments");
+    if (styleParam && commentsField && !commentsField.value) {
+      commentsField.value = "Liked the " + styleParam + " style in the Design Lab.";
+    }
+  } catch (e) { /* URL parsing not supported; leave defaults */ }
 
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 

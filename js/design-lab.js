@@ -240,4 +240,7 @@
   });
 
   render();
+  /* Expose for the Reimagined personalized preview. */
+  window.FF_CATEGORIES = CATEGORIES;
+  window.FF_DIRECTIONS = DIRECTIONS;
 })();

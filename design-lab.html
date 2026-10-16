@@ -35,6 +35,66 @@
 </header>
 
 <main>
+  <section class="section reimagined-intro" id="reimagined">
+    <div class="container">
+      <div class="center reveal" style="margin-bottom: 2.5rem;">
+        <span class="eyebrow">Your Business. Reimagined.</span>
+        <h1>See <span class="grad-text">your business</span> here.</h1>
+        <p class="lead">Type your business name, pick your industry, and watch a sample website build itself around you. Switch styles instantly. Then make it real.</p>
+      </div>
+      <form id="reimagined-form" class="reimagined-form reveal">
+        <div class="field">
+          <label for="biz-name">Business name</label>
+          <input type="text" id="biz-name" name="biz-name" placeholder="Mike's Barber Shop" maxlength="60" required autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="biz-industry">Industry</label>
+          <select id="biz-industry" name="biz-industry">
+            <option value="restaurant">Restaurant / Food</option>
+            <option value="contractor">Contractor / Trades</option>
+            <option value="barber">Barber / Salon</option>
+            <option value="pet">Pet services</option>
+            <option value="automotive">Automotive</option>
+            <option value="professional">Professional services</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Reimagine my business</button>
+      </form>
+      <p class="fine center" style="margin-top: 1rem;">Sample layouts with illustrative copy. No real business facts are shown or stored.</p>
+    </div>
+  </section>
+
+  <section class="section reimagined-stage" id="reimagined-stage" hidden>
+    <div class="container">
+      <div class="reimagined-browser" id="reimagined-browser">
+        <div class="reimagined-browser-bar"><span></span><span></span><span></span></div>
+        <div class="reimagined-previews">
+          <div class="reimagined-desktop">
+            <div class="reimagined-frame-label">Desktop preview · <strong id="reimagined-combo">Modern</strong></div>
+            <div class="reimagined-viewport" id="reimagined-desktop-view"></div>
+          </div>
+          <div class="reimagined-phone">
+            <div class="reimagined-frame-label">Phone preview</div>
+            <div class="reimagined-phone-frame">
+              <div class="reimagined-viewport reimagined-viewport-phone" id="reimagined-phone-view"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reimagined-controls">
+        <div class="lab-options reimagined-styles" role="group" aria-label="Design style">
+          <button data-style="modern" class="active" aria-pressed="true">Modern</button>
+          <button data-style="luxury" aria-pressed="false">Luxury</button>
+          <button data-style="bold" aria-pressed="false">Bold</button>
+          <button data-style="minimal" aria-pressed="false">Minimal</button>
+        </div>
+        <a href="request.html" class="btn btn-primary" id="reimagined-cta">Build this for me — from $149/month</a>
+        <p class="fine">Sample preview. Your info is only used to personalize this demo.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <div class="center reveal" style="margin-bottom: 3rem;">
@@ -131,6 +191,7 @@
 </footer>
 
 <script src="js/site.js?v=4"></script>
-<script src="js/design-lab.js"></script>
+<script src="js/design-lab.js?v=4"></script>
+<script src="js/reimagined.js?v=1"></script>
 </body>
 </html>
