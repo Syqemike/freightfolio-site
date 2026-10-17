@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotspot Barber and Beauty Saloon | Barber Shop in New Orleans, LA</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --black:#0d0e12; --char:#161920; --char2:#1e222b; --cream:#f4efe6; --ink:#f0ead9;
+    --muted:#a8a193; --gold:#e0a526; --gold-dark:#b07f18; --line:#2b2f3a;
+  }
+  body { background:#fff; color:#23252b; font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:var(--black); color:#8d8878; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+  .topbar b { color:#fff; }
+
+  nav { position:sticky; top:0; background:#fff; border-bottom:1px solid #e5e0d3; z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:20px; font-weight:800; letter-spacing:1px; color:var(--black); }
+  .brand em { color:var(--gold-dark); font-style:normal; }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:#6b6f7a; }
+  .navlinks a:hover { color:var(--gold-dark); }
+  .btn { display:inline-block; background:var(--gold); color:#141414; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:6px; cursor:pointer; }
+  .btn:hover { background:var(--gold-dark); color:#fff; }
+  .btn.ghost { background:transparent; color:#fff; border:2px solid var(--gold); }
+  .btn.ghost:hover { background:rgba(224,165,38,.12); color:#fff; }
+
+  .hero { background:var(--black); color:#fff; }
+  .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding-top:72px; padding-bottom:72px; }
+  .hero .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
+  .hero h1 { font-size:50px; line-height:1.12; font-weight:800; margin-bottom:18px; }
+  .hero h1 em { color:var(--gold); font-style:normal; }
+  .hero p.lead { color:#c9c2b2; font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-img img { border-radius:12px; aspect-ratio:4/3; object-fit:cover; width:100%; }
+  .hero-note { margin-top:18px; color:var(--muted); font-size:14px; }
+
+  .strip { background:var(--gold); color:#141414; }
+  .strip .wrap { display:flex; justify-content:space-between; padding-top:15px; padding-bottom:15px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; flex-wrap:wrap; gap:10px; }
+
+  section.block { padding:76px 28px; scroll-margin-top:80px; }
+  .rating-badge { display:flex; justify-content:center; margin-bottom:34px; }
+  .rating-badge span { display:inline-flex; align-items:center; gap:10px; background:#fff; border:1px solid #e5e0d3;
+    border-radius:999px; padding:9px 20px; font-size:14px; font-weight:600; color:#23252b; }
+  .contact-line a { color:var(--gold-dark); font-weight:700; }
+  .contact-line a:hover { color:var(--black); }
+  .kicker { color:var(--gold-dark); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
+  h2.stitle { font-size:38px; text-align:center; margin-bottom:10px; font-weight:800; color:var(--black); }
+  p.ssub { text-align:center; color:#6b6f7a; max-width:640px; margin:0 auto 44px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .card { background:#f7f3ea; border-radius:12px; overflow:hidden; }
+  .card img { width:100%; aspect-ratio:16/10; object-fit:cover; }
+  .card .pad { padding:24px 26px 28px; }
+  .card h3 { font-size:20px; margin-bottom:8px; color:var(--black); }
+  .card p { color:#6b6f7a; font-size:15px; }
+
+  .why { background:var(--black); color:#fff; }
+  .why h2.stitle { color:#fff; }
+  .why .kicker { color:var(--gold); }
+  .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .why-item { background:var(--char2); border-radius:12px; padding:30px; }
+  .why-item .n { font-size:34px; font-weight:800; color:var(--gold); margin-bottom:8px; }
+  .why-item h3 { font-size:19px; margin-bottom:8px; }
+  .why-item p { color:#c9c2b2; font-size:15px; }
+
+  .reviews .rev-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:26px; max-width:780px; margin:0 auto; }
+  .rev { background:#f7f3ea; border-radius:12px; padding:28px; }
+  .rev .q { color:var(--gold-dark); font-size:20px; letter-spacing:2px; margin-bottom:10px; }
+  .rev p { font-size:15.5px; margin-bottom:12px; }
+  .rev cite { font-style:normal; color:#8a8474; font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .visit h2 { font-size:36px; margin-bottom:20px; font-weight:800; color:var(--black); }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted #d8d2c2; font-size:16px; }
+  .hours td:last-child { text-align:right; color:#6b6f7a; }
+  .contact-line { font-size:17px; margin-bottom:10px; }
+  .contact-line b { color:var(--gold-dark); }
+  .cta-box { background:var(--black); color:#fff; border-radius:12px; padding:36px; }
+  .cta-box h3 { font-size:24px; margin-bottom:12px; }
+  .cta-box p { color:#c9c2b2; margin-bottom:20px; }
+
+  footer { background:var(--black); color:#8d8878; }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:14px; }
+  footer b { color:#fff; }
+  footer .addr { display:block; margin-top:4px; }
+  footer .fine { margin-top:8px; font-size:11.5px; color:#6f6a5c; font-style:italic; }
+  .social { display:flex; gap:12px; align-items:center; }
+  .social a { width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,.08); color:#e6dfcf;
+    display:inline-flex; align-items:center; justify-content:center; }
+  .social a:hover { background:var(--gold); color:#141414; }
+
+  @media (max-width:860px) {
+    .hero .wrap, .visit { grid-template-columns:1fr; }
+    .cards, .why-grid, .reviews .rev-grid { grid-template-columns:1fr; }
+    .hero h1 { font-size:38px; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>1416 Simon Bolivar Ave, New Orleans, LA 70113</span>
+    <span>Fri and Sat open til 9pm &nbsp;|&nbsp; <b><a href="tel:+15045819633">(504) 581-9633</a></b></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">HOTSPOT <em>BARBER &amp; BEAUTY</em></a>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <a class="btn" href="tel:+15045819633">Call Now</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">New Orleans, Louisiana</div>
+      <h1>Fresh cuts, late hours, <em>walk-ins welcome.</em></h1>
+      <p class="lead">Hotspot Barber and Beauty Saloon on Simon Bolivar Ave keeps the clippers running late. Open until 7:30 on weeknights and 9pm Friday and Saturday. Just walk in.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+15045819633">Call (504) 581-9633</a>
+        <a class="btn ghost" href="#services">Our Services</a>
+      </div>
+      <p class="hero-note">Open late Fri and Sat &middot; 4.6 stars from 92 reviews</p>
+    </div>
+    <div class="hero-img">
+      <img src="img/photo-4.webp" alt="Barber finishing a hot towel straight razor shave">
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span>Open til 9pm Fri and Sat</span>
+    <span>Walk-ins welcome</span>
+    <span>Simon Bolivar Ave, New Orleans</span>
+  </div>
+</div>
+
+<section class="block wrap" id="services">
+  <div class="kicker">What we do</div>
+  <h2 class="stitle">Cuts, trims, and everything sharp</h2>
+  <p class="ssub">A neighborhood barber and beauty shop built around walk-ins and late hours.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="img/photo-1.jpg" loading="lazy" alt="Barber cutting a fade with clippers">
+      <div class="pad"><h3>Precision Haircuts</h3><p>Fades, tapers, and clean lineups from barbers who take their time and get it right.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-3.webp" loading="lazy" alt="Straight razor shave with hot towel">
+      <div class="pad"><h3>Beard Trims and Shaves</h3><p>Beard sculpting, edge-ups, and straight-razor finishes that leave you looking sharp.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-5.png" loading="lazy" alt="Barber styling hair with clippers in a dark shop">
+      <div class="pad"><h3>Beauty and Styling</h3><p>Full barber and beauty shop services for the whole neighborhood. Walk in, sit down, walk out fresh.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block why" id="why">
+  <div class="wrap">
+    <div class="kicker">Why Hotspot</div>
+    <h2 class="stitle">The local spot that gets you right</h2>
+    <p class="ssub" style="color:#c9c2b2;">Late hours, walk-in friendly, and rated by the neighborhood. Here is what sets it apart.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="n">9 PM</div>
+        <h3>Open late</h3>
+        <p>Friday and Saturday we are cutting until 9pm. Tuesday through Thursday until 7:30. Real hours for real schedules.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">4.6</div>
+        <h3>Rated by the neighborhood</h3>
+        <p>4.6 stars across 92 reviews on Birdeye. Locals and out-of-towners both leave happy.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">0</div>
+        <h3>No appointment needed</h3>
+        <p>Walk-ins welcome. Come as you are, leave looking sharp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap reviews" id="reviews">
+  <div class="kicker">Word of mouth</div>
+  <h2 class="stitle">What customers say</h2>
+  <p class="ssub">Real reviews from real customers.</p>
+  <div class="rating-badge"><span>Rated <b>4.6 out of 5</b> across 92 reviews on Birdeye</span></div>
+  <div class="rev-grid">
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Very friendly awsome local spot definitely recommended"</p>
+      <cite>Google review, Feb 2025</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"I am visiting frm DC &amp; the barber got me right."</p>
+      <cite>Google review, Jul 2025</cite>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="kicker" style="text-align:left;">Find us</div>
+      <h2>Stop by the shop.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>Closed</td></tr>
+        <tr><td>Tuesday</td><td>9:00 AM - 7:30 PM</td></tr>
+        <tr><td>Wednesday</td><td>9:00 AM - 7:30 PM</td></tr>
+        <tr><td>Thursday</td><td>9:00 AM - 7:30 PM</td></tr>
+        <tr><td>Friday</td><td>9:00 AM - 9:00 PM</td></tr>
+        <tr><td>Saturday</td><td>9:00 AM - 9:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p class="contact-line"><b>Address</b><br>1416 Simon Bolivar Ave<br>New Orleans, LA 70113</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+15045819633">(504) 581-9633</a></p>
+      <p class="contact-line"><b>Facebook</b><br><a href="https://www.facebook.com/p/Hot-Spot-Barber-and-Beauty-Salon-100063795800604/" target="_blank" rel="noopener">Hot Spot Barber and Beauty Salon</a></p>
+    </div>
+    <div>
+      <div class="cta-box">
+        <h3>Need a cut tonight?</h3>
+        <p>We are open until 9pm on Fridays and Saturdays. Walk in or call ahead.</p>
+        <a class="btn" href="tel:+15045819633">(504) 581-9633</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>Hotspot Barber and Beauty Saloon</b>
+      <span class="addr">1416 Simon Bolivar Ave, New Orleans, LA 70113 &middot; <a href="tel:+15045819633">(504) 581-9633</a></span>
+      <div class="fine">Concept preview. A free mockup, not affiliated with or endorsed by the business.</div>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/p/Hot-Spot-Barber-and-Beauty-Salon-100063795800604/" target="_blank" rel="noopener" aria-label="Hot Spot Barber and Beauty Salon on Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.9 3.77-3.9 1.1 0 2.24.2 2.24.2v2.46H15.2c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.45 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

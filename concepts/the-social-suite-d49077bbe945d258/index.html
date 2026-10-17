@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Social Suite | Hair Salon in Metairie, LA</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --plum:#422b33; --plum2:#2c1d23; --blush:#faf4ee; --ink:#3a2e2a; --muted:#7a6863;
+    --rose:#b4654d; --rose-dark:#94503b; --gold:#d4a373; --line:#e8dcd4;
+  }
+  body { background:#fff; color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:var(--plum2); color:#d9c8c0; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+  .topbar b { color:#fff; }
+  .preview-tag { letter-spacing:2px; text-transform:uppercase; font-size:11px; color:var(--gold); }
+
+  nav { position:sticky; top:0; background:#fff; border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:20px; font-weight:800; letter-spacing:1px; }
+  .brand em { color:var(--rose); font-style:normal; }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--rose); }
+  .btn { display:inline-block; background:var(--rose); color:#fff; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:6px; cursor:pointer; }
+  .btn:hover { background:var(--rose-dark); }
+  .btn.ghost { background:transparent; color:var(--plum); border:2px solid var(--plum); }
+  .btn.ghost:hover { background:rgba(66,43,51,.06); }
+
+  .hero { background:var(--plum); color:#fff; }
+  .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding-top:72px; padding-bottom:72px; }
+  .hero .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
+  .hero h1 { font-family:Georgia,'Times New Roman',serif; font-size:50px; line-height:1.15; font-weight:700; margin-bottom:18px; }
+  .hero h1 em { color:var(--gold); font-style:normal; }
+  .hero p.lead { color:#d9c8c0; font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero .btn.ghost { color:#fff; border-color:var(--gold); }
+  .hero .btn.ghost:hover { background:rgba(212,163,115,.12); }
+  .hero-img img { border-radius:12px; aspect-ratio:4/3; object-fit:cover; width:100%; }
+  .hero-note { margin-top:18px; color:var(--gold); font-size:14px; }
+
+  .strip { background:var(--rose); color:#fff; }
+  .strip .wrap { display:flex; justify-content:space-between; padding-top:15px; padding-bottom:15px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; flex-wrap:wrap; gap:10px; }
+
+  section.block { padding:76px 28px; scroll-margin-top:80px; }
+  .rating-badge { display:flex; justify-content:center; margin-bottom:34px; }
+  .rating-badge span { display:inline-flex; align-items:center; gap:10px; background:#fff; border:1px solid var(--line);
+    border-radius:999px; padding:9px 20px; font-size:14px; font-weight:600; color:var(--ink); }
+  .rating-badge .stars { color:var(--rose); letter-spacing:2px; }
+  .contact-line a { color:var(--plum); font-weight:700; }
+  .contact-line a:hover { color:var(--rose); }
+  .kicker { color:var(--rose); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
+  h2.stitle { font-family:Georgia,'Times New Roman',serif; font-size:38px; text-align:center; margin-bottom:10px; font-weight:700; color:var(--plum); }
+  p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .card { background:var(--blush); border-radius:12px; overflow:hidden; }
+  .card img { width:100%; aspect-ratio:16/10; object-fit:cover; }
+  .card .pad { padding:24px 26px 28px; }
+  .card h3 { font-family:Georgia,'Times New Roman',serif; font-size:21px; margin-bottom:8px; color:var(--plum); }
+  .card p { color:var(--muted); font-size:15px; }
+
+  .why { background:var(--plum); color:#fff; }
+  .why h2.stitle { color:#fff; }
+  .why .kicker { color:var(--gold); }
+  .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .why-item { background:var(--plum2); border-radius:12px; padding:30px; }
+  .why-item .n { font-size:34px; font-weight:800; color:var(--gold); margin-bottom:8px; }
+  .why-item h3 { font-size:19px; margin-bottom:8px; }
+  .why-item p { color:#d9c8c0; font-size:15px; }
+
+  .spotlight { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+  .spotlight img { border-radius:12px; aspect-ratio:4/5; object-fit:cover; width:100%; }
+  .spotlight h2 { font-family:Georgia,'Times New Roman',serif; font-size:36px; margin-bottom:16px; font-weight:700; color:var(--plum); }
+  .spotlight .kicker { text-align:left; }
+  .spotlight p { color:var(--muted); font-size:17px; margin-bottom:16px; }
+  .spotlight blockquote { border-left:3px solid var(--rose); padding-left:20px; margin:20px 0; color:var(--ink); font-style:italic; font-size:17px; }
+  .spotlight cite { display:block; font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; margin-top:8px; }
+
+  .reviews .rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .rev { background:var(--blush); border-radius:12px; padding:28px; }
+  .rev .q { color:var(--rose); font-size:20px; letter-spacing:2px; margin-bottom:10px; }
+  .rev p { font-size:15.5px; margin-bottom:12px; }
+  .rev cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .visit h2 { font-family:Georgia,'Times New Roman',serif; font-size:36px; margin-bottom:20px; font-weight:700; color:var(--plum); }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted var(--line); font-size:16px; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-line { font-size:17px; margin-bottom:10px; }
+  .contact-line b { color:var(--rose); }
+  .cta-box { background:var(--plum); color:#fff; border-radius:12px; padding:36px; }
+  .cta-box h3 { font-family:Georgia,'Times New Roman',serif; font-size:24px; margin-bottom:12px; }
+  .cta-box p { color:#d9c8c0; margin-bottom:20px; }
+
+  footer { background:var(--plum2); color:#b9a49d; }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:14px; }
+  footer b { color:#fff; }
+  footer .addr { display:block; margin-top:4px; }
+  footer .fine { margin-top:8px; font-size:11.5px; color:#8f7c76; font-style:italic; }
+  .social { display:flex; gap:12px; align-items:center; }
+  .social a { width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,.08); color:#ecd9cf;
+    display:inline-flex; align-items:center; justify-content:center; }
+  .social a:hover { background:var(--rose); color:#fff; }
+
+  @media (max-width:860px) {
+    .hero .wrap, .visit, .spotlight { grid-template-columns:1fr; }
+    .cards, .why-grid, .reviews .rev-grid { grid-template-columns:1fr; }
+    .hero h1 { font-size:38px; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>3201 Cleary Ave Suite 2, Metairie, LA 70002</span>
+    <span><span class="preview-tag">Design preview</span> &nbsp;|&nbsp; <b><a href="tel:+15045715857">(504) 571-5857</a></b></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">THE SOCIAL <em>SUITE</em></a>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#stylist">Stylist</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <a class="btn" href="tel:+15045715857">Book Now</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Metairie, Louisiana</div>
+      <h1>Balayage and color, <em>done beautifully.</em></h1>
+      <p class="lead">A hair salon on Cleary Ave where coloring is the craft. Clients come for the balayage, and they stay because they love their stylist.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+15045715857">Call to Book</a>
+        <a class="btn ghost" href="#services">Our Services</a>
+      </div>
+      <p class="hero-note">Rated 4.9 out of 5 across 56 reviews on Birdeye</p>
+    </div>
+    <div class="hero-img">
+      <img src="img/photo-1.jpg" alt="Hair salon interior with styling chairs and mirrors">
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span>Balayage specialists</span>
+    <span>4.9 star rating</span>
+    <span>56 reviews</span>
+  </div>
+</div>
+
+<section class="block wrap" id="services">
+  <div class="kicker">What we do</div>
+  <h2 class="stitle">Color is our craft</h2>
+  <p class="ssub">Hair coloring with a focus on balayage, from a salon clients trust in Metairie.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="img/photo-3.jpg" loading="lazy" alt="Long wavy hair with balayage color">
+      <div class="pad"><h3>Balayage</h3><p>Hand-painted, sun-kissed color that grows out gracefully. The service our reviews rave about most.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-6.jpg" loading="lazy" alt="Stylist applying hair color to a client">
+      <div class="pad"><h3>Hair Coloring</h3><p>Full color, dimension, and tone work tailored to you. Consultations start with what you want and go from there.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-5.jpg" loading="lazy" alt="Salon styling station with warm lighting">
+      <div class="pad"><h3>Salon Services</h3><p>A full-service hair salon on Cleary Ave. Call ahead to book your appointment and reserve your chair.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="stylist">
+  <div class="spotlight">
+    <div>
+      <img src="img/photo-4.jpg" alt="Balayage hair styled in a salon chair">
+    </div>
+    <div>
+      <div class="kicker">Stylist spotlight</div>
+      <h2>Meet Danielle</h2>
+      <p>Danielle is the stylist clients ask for by name. Reviews call her coloring a 10 out of 10, and guests come back to her again and again.</p>
+      <blockquote>
+        "Danielle did such an amazing job with my bayalage. Definitely will be going back to her for coloring. 10/10!!"
+        <cite>Birdeye review</cite>
+      </blockquote>
+      <a class="btn" href="tel:+15045715857">Book with Danielle</a>
+    </div>
+  </div>
+</section>
+
+<section class="block why" id="why">
+  <div class="wrap">
+    <div class="kicker">Why The Social Suite</div>
+    <h2 class="stitle">The salon Metairie recommends</h2>
+    <p class="ssub" style="color:#d9c8c0;">Clients describe top professionals and coloring they love. Here is what the numbers say.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="n">4.9</div>
+        <h3>Star rating</h3>
+        <p>Across 56 reviews on Birdeye. A rating like that comes from clients who keep coming back.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">56</div>
+        <h3>Reviews and counting</h3>
+        <p>Real guests, real results. Read what clients say about their color and their stylist below.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">10/10</div>
+        <h3>Worth the revisit</h3>
+        <p>"Definitely will be going back to her for coloring." Balayage that brings clients back is the whole point.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap reviews" id="reviews">
+  <div class="kicker">Word of mouth</div>
+  <h2 class="stitle">What clients say</h2>
+  <p class="ssub">Real reviews from salon guests.</p>
+  <div class="rating-badge"><span>Rated <b>4.9 out of 5</b> across 56 reviews on Birdeye</span></div>
+  <div class="rev-grid">
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Danielle did such an amazing job with my bayalage. Definitely will be going back to her for coloring. 10/10!!"</p>
+      <cite>Birdeye review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"My wife Linda has nothing but amazing things to say about this place, top professionals!"</p>
+      <cite>Birdeye review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>4.9 out of 5 across 56 reviews. See the full wall of reviews on the salon's Birdeye profile.</p>
+      <cite>Birdeye aggregate</cite>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="kicker" style="text-align:left;">Find us</div>
+      <h2>Visit the salon.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>10:00 AM - 2:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>9:00 AM - 6:30 PM</td></tr>
+        <tr><td>Wednesday</td><td>10:00 AM - 2:00 PM</td></tr>
+        <tr><td>Thursday</td><td>9:00 AM - 6:30 PM</td></tr>
+        <tr><td>Friday</td><td>10:00 AM - 2:00 PM</td></tr>
+        <tr><td>Saturday</td><td>10:00 AM - 3:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p class="contact-line"><b>Address</b><br>3201 Cleary Ave Suite 2<br>Metairie, LA 70002</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+15045715857">(504) 571-5857</a></p>
+      <p class="contact-line"><b>Facebook</b><br><a href="https://www.facebook.com/thesocialsuitesalon" target="_blank" rel="noopener">The Social Suite Salon</a></p>
+    </div>
+    <div>
+      <div class="cta-box">
+        <h3>Ready for great color?</h3>
+        <p>Call during business hours to book your appointment. Tell us what you want for your hair and we will take it from there.</p>
+        <a class="btn" href="tel:+15045715857">(504) 571-5857</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>The Social Suite</b>
+      <span class="addr">3201 Cleary Ave Suite 2, Metairie, LA 70002 &middot; <a href="tel:+15045715857">(504) 571-5857</a></span>
+      <div class="fine">Concept preview. A free mockup, not affiliated with or endorsed by the business.</div>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/thesocialsuitesalon" target="_blank" rel="noopener" aria-label="The Social Suite on Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.9 3.77-3.9 1.1 0 2.24.2 2.24.2v2.46H15.2c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.45 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

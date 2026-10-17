@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lily Day Spa | Day Spa in Mobile, AL</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --pine:#2e4a3d; --pine2:#22382e; --cream:#f8f4ec; --ink:#2c3a33; --muted:#6b7a70;
+    --sage:#56725f; --gold:#a98c5f; --gold-dark:#8f7347; --line:#e3dccf;
+  }
+  body { background:#fff; color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:var(--pine2); color:#c8d6cc; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+  .topbar b { color:#fff; }
+
+  nav { position:sticky; top:0; background:#fff; border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:20px; font-weight:800; }
+  .brand em { color:var(--sage); font-style:normal; }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--sage); }
+  .btn { display:inline-block; background:var(--sage); color:#fff; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:6px; cursor:pointer; }
+  .btn:hover { background:var(--pine); }
+  .btn.ghost { background:transparent; color:var(--pine); border:2px solid var(--pine); }
+  .btn.ghost:hover { background:rgba(46,74,61,.06); }
+
+  .hero { background:var(--pine); color:#fff; }
+  .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding-top:72px; padding-bottom:72px; }
+  .hero .kicker { color:#b9cfc0; letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
+  .hero h1 { font-size:50px; line-height:1.12; font-weight:700; margin-bottom:18px; }
+  .hero h1 em { color:#e7c88a; font-style:normal; }
+  .hero p.lead { color:#c8d6cc; font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero .btn.ghost { color:#fff; border-color:#b9cfc0; }
+  .hero .btn.ghost:hover { background:rgba(185,207,192,.12); }
+  .hero-img img { border-radius:12px; aspect-ratio:4/3; object-fit:cover; width:100%; }
+  .hero-note { margin-top:18px; color:#b9cfc0; font-size:14px; }
+
+  .strip { background:var(--gold); color:#fff; }
+  .strip .wrap { display:flex; justify-content:space-between; padding-top:15px; padding-bottom:15px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; flex-wrap:wrap; gap:10px; }
+
+  section.block { padding:76px 28px; scroll-margin-top:80px; }
+  .rating-badge { display:flex; justify-content:center; margin-bottom:34px; }
+  .rating-badge span { display:inline-flex; align-items:center; gap:10px; background:#fff; border:1px solid var(--line);
+    border-radius:999px; padding:9px 20px; font-size:14px; font-weight:600; color:var(--ink); }
+  .rating-badge .stars { color:var(--gold); letter-spacing:2px; }
+  .contact-line a { color:var(--pine); font-weight:700; }
+  .contact-line a:hover { color:var(--sage); }
+  .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
+  h2.stitle { font-size:38px; text-align:center; margin-bottom:10px; font-weight:700; color:var(--pine); }
+  p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .card { background:var(--cream); border-radius:12px; overflow:hidden; }
+  .card img { width:100%; aspect-ratio:16/10; object-fit:cover; }
+  .card .pad { padding:24px 26px 28px; }
+  .card h3 { font-size:20px; margin-bottom:8px; color:var(--pine); }
+  .card p { color:var(--muted); font-size:15px; }
+
+  .why { background:var(--pine); color:#fff; }
+  .why h2.stitle { color:#fff; }
+  .why .kicker { color:#e7c88a; }
+  .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .why-item { background:var(--pine2); border-radius:12px; padding:30px; }
+  .why-item .n { font-size:34px; font-weight:800; color:#e7c88a; margin-bottom:8px; }
+  .why-item h3 { font-size:19px; margin-bottom:8px; }
+  .why-item p { color:#c8d6cc; font-size:15px; }
+
+  .reviews .rev-grid { display:grid; grid-template-columns:1fr; gap:26px; max-width:720px; margin:0 auto; }
+  .rev { background:var(--cream); border-radius:12px; padding:28px; }
+  .rev .q { color:var(--gold); font-size:20px; letter-spacing:2px; margin-bottom:10px; }
+  .rev p { font-size:15.5px; margin-bottom:12px; }
+  .rev cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .visit h2 { font-size:36px; margin-bottom:20px; font-weight:700; color:var(--pine); }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted var(--line); font-size:16px; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-line { font-size:17px; margin-bottom:10px; }
+  .contact-line b { color:var(--gold-dark); }
+  .cta-box { background:var(--pine); color:#fff; border-radius:12px; padding:36px; }
+  .cta-box h3 { font-size:24px; margin-bottom:12px; }
+  .cta-box p { color:#c8d6cc; margin-bottom:20px; }
+
+  footer { background:var(--pine2); color:#9db3a4; }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:14px; }
+  footer b { color:#fff; }
+  footer .addr { display:block; margin-top:4px; }
+  footer .fine { margin-top:8px; font-size:11.5px; color:#7d9684; font-style:italic; }
+  .social { display:flex; gap:12px; align-items:center; }
+  .social a { width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,.08); color:#dce8df;
+    display:inline-flex; align-items:center; justify-content:center; }
+  .social a:hover { background:var(--sage); color:#fff; }
+
+  @media (max-width:860px) {
+    .hero .wrap, .visit { grid-template-columns:1fr; }
+    .cards, .why-grid { grid-template-columns:1fr; }
+    .hero h1 { font-size:38px; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>163 N Florida St, Mobile, AL 36607</span>
+    <span>Open daily 8:00am-5:00pm &nbsp;|&nbsp; <b><a href="tel:+12517867870">(251) 786-7870</a></b></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">LILY <em>DAY SPA</em></a>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Contact</a>
+    </div>
+    <a class="btn" href="tel:+12517867870">Call Now</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Mobile, Alabama</div>
+      <h1 class="serif">Relax. Refresh. <em>Renew.</em></h1>
+      <p class="lead">Lily Day Spa is a calm, welcoming day spa in Mobile, offering massage, facials, and spa parties. Open daily, ready when you are.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12517867870">Book by Phone</a>
+        <a class="btn ghost" href="#visit">Plan a Spa Party</a>
+      </div>
+      <p class="hero-note">5.0 stars across reviews &middot; Open daily 8:00am to 5:00pm</p>
+    </div>
+    <div class="hero-img">
+      <img src="img/photo-1.jpg" alt="Peaceful massage treatment at a day spa">
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span>Massage</span>
+    <span>Facials</span>
+    <span>Spa Parties</span>
+  </div>
+</div>
+
+<section class="block wrap" id="services">
+  <div class="kicker">What we do</div>
+  <h2 class="stitle serif">A quieter kind of care</h2>
+  <p class="ssub">Three ways to slow down: soothing massage, refreshing facials, and spa parties for groups who want the whole place to themselves.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="img/photo-4.jpg" loading="lazy" alt="Warm stone massage treatment">
+      <div class="pad"><h3>Massage</h3><p>Unwind with a relaxing massage from a therapist who knows their craft. You will leave looser, calmer, and ready to take on the week.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-2.jpg" loading="lazy" alt="Relaxing facial treatment">
+      <div class="pad"><h3>Facials</h3><p>A refreshing facial that leaves your skin clean and glowing. The perfect reset, or the start of a regular self-care ritual.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-3.jpg" loading="lazy" alt="Spa setting ready for a relaxing treatment">
+      <div class="pad"><h3>Spa Parties</h3><p>Celebrate with friends the relaxing way. Gather your group for a spa party and make it an occasion everyone remembers.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block why" id="why">
+  <div class="wrap">
+    <div class="kicker">Why Lily Day Spa</div>
+    <h2 class="stitle serif">The calm people keep coming back to</h2>
+    <p class="ssub" style="color:#c8d6cc;">A 5.0-star rating does not happen by accident. Here is what it is built on.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="n">5.0</div>
+        <h3>Star rated</h3>
+        <p>Guests consistently rate their visit five stars across review sites. Calm space, skilled hands, genuine care.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">$</div>
+        <h3>Reasonable pricing</h3>
+        <p>Real value for your money. Guests say the pricing is reasonable and you get your money worth.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">1</div>
+        <h3>Call to book</h3>
+        <p>Open every day, 8:00am to 5:00pm. One quick call to (251) 786-7870 and your time is set.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap reviews" id="reviews">
+  <div class="kicker">Word of mouth</div>
+  <h2 class="stitle serif">What guests say</h2>
+  <p class="ssub">Real reviews from Lily Day Spa guests.</p>
+  <div class="rating-badge"><span><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> Rated <b>5.0 out of 5</b> across reviews</span></div>
+  <div class="rev-grid">
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"The pricing is reasonable, and you will get your money worth. Thank you again Dollie!"</p>
+      <cite>chamberofcommerce review</cite>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="kicker" style="text-align:left;">Find us</div>
+      <h2 class="serif">Come see us.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Thursday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Friday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Sunday</td><td>8:00 AM - 5:00 PM</td></tr>
+      </table>
+      <p class="contact-line"><b>Address</b><br>163 N Florida St<br>Mobile, AL 36607</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+12517867870">(251) 786-7870</a></p>
+      <p class="contact-line"><b>Facebook</b><br><a href="https://www.facebook.com/Lilydayspaa/about" target="_blank" rel="noopener">Lily Day Spa on Facebook</a></p>
+    </div>
+    <div>
+      <div class="cta-box">
+        <h3>Planning a spa party?</h3>
+        <p>Birthdays, bridal days, or just a reason to gather. Call ahead and we will help you plan a relaxing group visit.</p>
+        <a class="btn" href="tel:+12517867870">(251) 786-7870</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>Lily Day Spa</b>
+      <span class="addr">163 N Florida St, Mobile, AL 36607 &middot; <a href="tel:+12517867870">(251) 786-7870</a></span>
+      <div class="fine">Concept preview. A free mockup, not affiliated with or endorsed by the business.</div>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/Lilydayspaa/about" target="_blank" rel="noopener" aria-label="Lily Day Spa on Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.9 3.77-3.9 1.1 0 2.24.2 2.24.2v2.46H15.2c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.45 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
