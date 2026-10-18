@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jerome Johnson | Barber in Mobile, AL</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --black:#0b0b0d; --black2:#131316; --ink:#f2f0ea; --muted:#a09a8c;
+    --gold:#c9a24b; --gold-dark:#9a7830; --line:#232326;
+  }
+  body { background:var(--black); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:#000; color:#7d7768; font-size:13px; border-bottom:1px solid var(--line); }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+  .topbar b { color:#fff; }
+  .preview-tag { letter-spacing:2px; text-transform:uppercase; font-size:11px; color:var(--gold); }
+
+  nav { position:sticky; top:0; background:rgba(11,11,13,.96); border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { display:flex; align-items:center; gap:12px; font-size:19px; font-weight:800; letter-spacing:1px; }
+  .monogram { width:38px; height:38px; border:2px solid var(--gold); border-radius:50%; display:inline-flex;
+    align-items:center; justify-content:center; font-family:Georgia,'Times New Roman',serif; font-size:16px; color:var(--gold); }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--gold); }
+  .btn { display:inline-block; background:var(--gold); color:#0b0b0d; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:800; border:none; border-radius:4px; cursor:pointer; }
+  .btn:hover { background:#b3923e; }
+  .btn.ghost { background:transparent; color:var(--ink); border:2px solid var(--gold); }
+  .btn.ghost:hover { background:rgba(201,162,75,.1); }
+
+  .hero { border-bottom:1px solid var(--line); }
+  .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; padding-top:80px; padding-bottom:80px; }
+  .hero .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
+  .hero h1 { font-family:Georgia,'Times New Roman',serif; font-size:54px; line-height:1.1; font-weight:700; margin-bottom:18px; }
+  .hero h1 em { color:var(--gold); font-style:italic; }
+  .hero p.lead { color:var(--muted); font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-img img { border-radius:8px; aspect-ratio:1/1; object-fit:cover; width:100%; border:1px solid var(--line); }
+  .hero-note { margin-top:18px; color:#7d7768; font-size:14px; }
+  .rule { width:64px; height:3px; background:var(--gold); margin-bottom:20px; }
+
+  section.block { padding:80px 28px; scroll-margin-top:80px; }
+  .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
+  h2.stitle { font-family:Georgia,'Times New Roman',serif; font-size:38px; text-align:center; margin-bottom:10px; font-weight:700; }
+  p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 48px; font-size:17px; }
+
+  .work-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .work-grid img { width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:8px; border:1px solid var(--line); }
+
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; margin-top:64px; }
+  .split img { border-radius:8px; aspect-ratio:4/3; object-fit:cover; width:100%; border:1px solid var(--line); }
+  .split h2 { font-family:Georgia,'Times New Roman',serif; font-size:36px; margin-bottom:16px; font-weight:700; }
+  .split p { color:var(--muted); font-size:17px; margin-bottom:16px; }
+
+  .services { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .service { border-top:2px solid var(--gold); padding-top:24px; }
+  .service h3 { font-size:21px; margin-bottom:8px; font-family:Georgia,'Times New Roman',serif; }
+  .service p { color:var(--muted); font-size:15px; }
+
+  .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; text-align:center; }
+  .stat .n { font-size:52px; font-weight:800; color:var(--gold); font-family:Georgia,'Times New Roman',serif; margin-bottom:6px; }
+  .stat p { color:var(--muted); font-size:15px; }
+
+  .rev-note { max-width:720px; margin:0 auto; text-align:center; border:1px solid var(--line); border-radius:12px; padding:36px; background:var(--black2); }
+  .rev-note .q { color:var(--gold); font-size:22px; letter-spacing:3px; margin-bottom:14px; }
+  .rev-note p { font-size:17px; margin-bottom:10px; }
+  .rev-note cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:56px; }
+  .visit h2 { font-family:Georgia,'Times New Roman',serif; font-size:36px; margin-bottom:20px; font-weight:700; }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted var(--line); font-size:16px; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-line { font-size:17px; margin-bottom:10px; }
+  .contact-line b { color:var(--gold); }
+  .contact-line a { color:var(--ink); font-weight:700; }
+  .cta-box { background:var(--black2); border:1px solid var(--gold); border-radius:8px; padding:36px; }
+  .cta-box h3 { font-family:Georgia,'Times New Roman',serif; font-size:24px; margin-bottom:12px; }
+  .cta-box p { color:var(--muted); margin-bottom:20px; }
+
+  footer { background:#000; color:#7d7768; border-top:1px solid var(--line); }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:14px; }
+  footer b { color:#fff; }
+  footer .addr { display:block; margin-top:4px; }
+  footer .fine { margin-top:8px; font-size:11.5px; color:#5c574a; font-style:italic; }
+
+  @media (max-width:860px) {
+    .hero .wrap, .visit, .split { grid-template-columns:1fr; }
+    .work-grid { grid-template-columns:repeat(2,1fr); }
+    .services, .stats { grid-template-columns:1fr; }
+    .hero h1 { font-size:40px; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>4023 Airport Blvd, Room 24, Mobile, AL 36608</span>
+    <span><span class="preview-tag">Design preview</span> &nbsp;|&nbsp; <b><a href="tel:+12515135304">(251) 513-5304</a></b></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#"><span class="monogram">JJ</span> JEROME JOHNSON</a>
+    <div class="navlinks">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#visit">Book</a>
+    </div>
+    <a class="btn" href="tel:+12515135304">Book Now</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="rule"></div>
+      <div class="kicker">Barber &middot; Mobile, Alabama</div>
+      <h1>I'm Jerome. <em>I cut hair in Mobile.</em></h1>
+      <p class="lead">I am Jerome Johnson. I cut hair on Airport Blvd in Mobile, and I take every head personally. Fades, beard work, kids cuts. Book through Booksy and I will see you in the chair.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12515135304">Call (251) 513-5304</a>
+        <a class="btn ghost" href="#work">See the Work</a>
+      </div>
+      <p class="hero-note">5.0 stars from 198 Booksy reviews &middot; Books via Booksy</p>
+    </div>
+    <div class="hero-img">
+      <img src="img/photo-1.jpg" alt="Sharp fade with crisp razor lineup">
+    </div>
+  </div>
+</header>
+
+<section class="block wrap" id="work">
+  <div class="kicker">The work</div>
+  <h2 class="stitle">Fresh out of my chair</h2>
+  <p class="ssub">Real cuts from real appointments. This is what you are booking.</p>
+  <div class="work-grid">
+    <img src="img/photo-1.jpg" loading="lazy" alt="Fade with crisp razor lineup">
+    <img src="img/photo-2.jpg" loading="lazy" alt="Clean skin fade, seamless blend">
+    <img src="img/photo-3.jpg" loading="lazy" alt="Taper fade with clean neckline">
+    <img src="img/photo-4.jpg" loading="lazy" alt="Skin fade with crisp hard part">
+  </div>
+  <div class="split">
+    <img src="img/photo-2.jpg" loading="lazy" alt="Close-up of a clean skin fade">
+    <div>
+      <div class="rule"></div>
+      <h2>Why clients stay with me.</h2>
+      <p>Most of my clients found me once and never left. I keep the shop clean, I start on time, and I do not rush the details.</p>
+      <p>Kids are welcome in my chair. I am patient with young customers and parents trust me with their boys.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="services">
+  <div class="kicker">Services</div>
+  <h2 class="stitle">What I do</h2>
+  <p class="ssub">Book through Booksy. Pick your service, pick your time.</p>
+  <div class="services">
+    <div class="service">
+      <h3>Haircut &amp; Beard</h3>
+      <p>The full package. Cut, shape-up, and beard work in one appointment.</p>
+    </div>
+    <div class="service">
+      <h3>Haircut</h3>
+      <p>Fades, tapers, scissor cuts. Tell me what you want and I will make it happen.</p>
+    </div>
+    <div class="service">
+      <h3>Kid's Haircut</h3>
+      <p>Patient cuts for young clients. Parents, your boys are in good hands.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="reviews">
+  <div class="kicker">Reviews</div>
+  <h2 class="stitle">198 reviews, and 197 of them are five stars.</h2>
+  <p class="ssub">The numbers on Booksy, straight up.</p>
+  <div class="stats">
+    <div class="stat">
+      <div class="n">5.0</div>
+      <p>Average rating across 198 Booksy reviews</p>
+    </div>
+    <div class="stat">
+      <div class="n">197</div>
+      <p>Five-star reviews out of 198 total</p>
+    </div>
+    <div class="stat">
+      <div class="n">1</div>
+      <p>Four-star review. The only one that was not perfect.</p>
+    </div>
+  </div>
+  <div class="rev-note" style="margin-top:48px;">
+    <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <p>197 of 198 clients left five stars. The review breakdown is public on my Booksy page.</p>
+    <cite>Booksy review summary</cite>
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="rule"></div>
+      <div class="kicker" style="text-align:left;">Book</div>
+      <h2>Get in my chair.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>9:00 AM - 7:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>9:00 AM - 7:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>9:00 AM - 7:00 PM</td></tr>
+        <tr><td>Thursday</td><td>9:00 AM - 7:00 PM</td></tr>
+        <tr><td>Friday</td><td>9:00 AM - 7:00 PM</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM - 7:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p class="contact-line"><b>Address</b><br>4023 Airport Blvd, Room 24<br>Mobile, AL 36608</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+12515135304">(251) 513-5304</a></p>
+      <p class="contact-line"><b>Email</b><br><a href="mailto:JeromeJohnson722@GMAIL.COM">JeromeJohnson722@GMAIL.COM</a></p>
+      <p class="contact-line"><b>Booking</b><br><a href="https://booksy.com/en-us/1109056_jerome-johnson_barber-shop_13808_mobile" target="_blank" rel="noopener">Book on Booksy</a></p>
+    </div>
+    <div>
+      <div class="cta-box">
+        <h3>Book your chair.</h3>
+        <p>Book through Booksy to grab your slot, or call me direct.</p>
+        <a class="btn" href="https://booksy.com/en-us/1109056_jerome-johnson_barber-shop_13808_mobile" target="_blank" rel="noopener">Book on Booksy</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>Jerome Johnson</b>
+      <span class="addr">4023 Airport Blvd, Room 24, Mobile, AL 36608 &middot; <a href="tel:+12515135304">(251) 513-5304</a></span>
+      <div class="fine">Concept preview. A free mockup, not affiliated with or endorsed by the business.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

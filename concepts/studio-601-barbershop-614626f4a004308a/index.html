@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio 601 Barbershop | Barber Shop in Biloxi, MS</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --black:#0b0c10; --char:#14161c; --char2:#1c1f27; --ink:#eef1f6; --muted:#9aa1b0;
+    --blue:#2ea8ff; --blue-dark:#0f7fc9; --line:#262a35;
+  }
+  body { background:var(--black); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:#050608; color:#7d8494; font-size:13px; border-bottom:1px solid var(--line); }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+  .topbar b { color:#fff; }
+  .preview-tag { letter-spacing:2px; text-transform:uppercase; font-size:11px; color:var(--blue); }
+
+  nav { position:sticky; top:0; background:rgba(11,12,16,.96); border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:20px; font-weight:800; letter-spacing:2px; color:#fff; }
+  .brand em { color:var(--blue); font-style:normal; }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--blue); }
+  .btn { display:inline-block; background:var(--blue); color:#06121c; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:800; border:none; border-radius:8px; cursor:pointer; }
+  .btn:hover { background:var(--blue-dark); color:#fff; }
+  .btn.ghost { background:transparent; color:#fff; border:2px solid var(--blue); }
+  .btn.ghost:hover { background:rgba(46,168,255,.12); }
+
+  .hero { position:relative; overflow:hidden; }
+  .hero-bg { position:absolute; inset:0; }
+  .hero-bg img { width:100%; height:100%; object-fit:cover; }
+  .hero-bg::after { content:""; position:absolute; inset:0; background:linear-gradient(100deg, rgba(6,8,12,.94) 30%, rgba(6,8,12,.55) 65%, rgba(6,8,12,.25)); }
+  .hero .wrap { position:relative; z-index:1; padding-top:96px; padding-bottom:96px; max-width:1120px; }
+  .hero-inner { max-width:600px; }
+  .hero .kicker { color:var(--blue); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
+  .hero h1 { font-size:54px; line-height:1.08; font-weight:800; margin-bottom:18px; color:#fff; }
+  .hero h1 em { color:var(--blue); font-style:normal; }
+  .hero p.lead { color:#c3c9d6; font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-note { margin-top:20px; color:var(--muted); font-size:14px; }
+  .hero-note b { color:var(--blue); }
+
+  .strip { background:var(--blue); color:#06121c; }
+  .strip .wrap { display:flex; justify-content:space-between; padding-top:15px; padding-bottom:15px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; font-weight:800; flex-wrap:wrap; gap:10px; }
+
+  section.block { padding:76px 28px; scroll-margin-top:70px; }
+  .kicker { color:var(--blue); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
+  h2.stitle { font-size:38px; text-align:center; margin-bottom:10px; font-weight:800; color:#fff; }
+  p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .card { background:var(--char); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+  .card img { width:100%; aspect-ratio:16/10; object-fit:cover; }
+  .card .pad { padding:24px 26px 28px; }
+  .card h3 { font-size:20px; margin-bottom:8px; color:#fff; }
+  .card p { color:var(--muted); font-size:15px; }
+
+  .why { background:var(--char); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .why-item { background:var(--char2); border:1px solid var(--line); border-radius:14px; padding:30px; }
+  .why-item .n { font-size:36px; font-weight:800; color:var(--blue); margin-bottom:8px; }
+  .why-item h3 { font-size:19px; margin-bottom:8px; color:#fff; }
+  .why-item p { color:var(--muted); font-size:15px; }
+
+  .gallery { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:44px; }
+  .gallery img { border-radius:12px; aspect-ratio:16/10; object-fit:cover; width:100%; border:1px solid var(--line); }
+
+  .reviews .rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .rev { background:var(--char); border:1px solid var(--line); border-radius:14px; padding:28px; }
+  .rev .q { color:var(--blue); font-size:20px; letter-spacing:2px; margin-bottom:10px; }
+  .rev p { font-size:15.5px; margin-bottom:12px; color:#d6dbe4; }
+  .rev cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+  .rating-badge { display:flex; justify-content:center; margin-bottom:34px; }
+  .rating-badge span { display:inline-flex; align-items:center; gap:10px; background:var(--char); border:1px solid var(--line);
+    border-radius:999px; padding:9px 20px; font-size:14px; font-weight:600; color:#fff; }
+  .rating-badge b { color:var(--blue); }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .visit h2 { font-size:36px; margin-bottom:20px; font-weight:800; color:#fff; }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted var(--line); font-size:16px; color:#d6dbe4; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-line { font-size:17px; margin-bottom:10px; color:#d6dbe4; }
+  .contact-line b { color:var(--blue); }
+  .contact-line a { color:#fff; font-weight:700; }
+  .cta-box { background:var(--char2); border:1px solid var(--line); border-radius:14px; padding:36px; }
+  .cta-box h3 { font-size:24px; margin-bottom:12px; color:#fff; }
+  .cta-box p { color:var(--muted); margin-bottom:20px; }
+  .cta-box .cta-row { display:flex; gap:12px; flex-wrap:wrap; }
+
+  footer { background:#050608; color:#6f7684; border-top:1px solid var(--line); }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:14px; }
+  footer b { color:#fff; }
+  footer .addr { display:block; margin-top:4px; }
+  footer .fine { margin-top:8px; font-size:11.5px; color:#4c525f; font-style:italic; }
+
+  @media (max-width:860px) {
+    .visit { grid-template-columns:1fr; }
+    .cards, .why-grid, .reviews .rev-grid, .gallery { grid-template-columns:1fr; }
+    .hero h1 { font-size:38px; }
+    .hero .wrap { padding-top:64px; padding-bottom:64px; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>15202 Lemoyne Blvd, Biloxi, MS 39532</span>
+    <span><span class="preview-tag">Design preview</span> &nbsp;|&nbsp; <b><a href="tel:+12282350877">(228) 235-0877</a></b></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">STUDIO <em>601</em></a>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <a class="btn" href="https://getsquire.com/discover/barbershop/studio-601-barbershop-biloxi/barber/cisco-anthony-murray" target="_blank" rel="noopener">Book Now</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-bg"><img src="img/photo-1.jpg" alt="Inside Studio 601 Barbershop in Biloxi"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="kicker">Biloxi, Mississippi</div>
+      <h1>Biloxi's <em>five-star</em> barbershop.</h1>
+      <p class="lead">Studio 601 on Lemoyne Blvd does fades, tapers, beard trims, and designs. Young, energetic barbers, a clean shop, and family friendly. Book your chair on Squire.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://getsquire.com/discover/barbershop/studio-601-barbershop-biloxi/barber/cisco-anthony-murray" target="_blank" rel="noopener">Book on Squire</a>
+        <a class="btn ghost" href="tel:+12282350877">Call the Shop</a>
+      </div>
+      <p class="hero-note"><b>5.0 stars</b> from 145 reviews on Squire</p>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span>Fades &amp; designs</span>
+    <span>Family friendly</span>
+    <span>Book on Squire</span>
+  </div>
+</div>
+
+<section class="block wrap" id="services">
+  <div class="kicker">What we do</div>
+  <h2 class="stitle">Cuts that stay sharp</h2>
+  <p class="ssub">Modern barbering in Biloxi. Book ahead on Squire and walk in knowing your chair is ready.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="img/photo-2.jpg" loading="lazy" alt="Barber giving a fade lineup">
+      <div class="pad"><h3>Fades &amp; Tapers</h3><p>Clean fades, sharp tapers, crisp lineups. This is the bread and butter.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-3.jpg" loading="lazy" alt="Barber cutting a fade from behind">
+      <div class="pad"><h3>Beard Trims &amp; Designs</h3><p>Beard sculpting and hair designs. Bring a photo of what you want and they will make it happen.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-4.jpg" loading="lazy" alt="Barber styling a client in a modern shop">
+      <div class="pad"><h3>Kids Cuts</h3><p>First haircuts welcome. The barbers are good with kids, and parents keep bringing them back.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block why" id="why">
+  <div class="wrap">
+    <div class="kicker">Why Studio 601</div>
+    <h2 class="stitle">The shop Biloxi rates five stars</h2>
+    <p class="ssub">145 reviews, every one of them five stars. That is hard to do.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="n">5.0</div>
+        <h3>Star rating</h3>
+        <p>145 reviews on Squire, all five stars. Customers call it the best barbershop on the coast.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">9+</div>
+        <h3>Years of service</h3>
+        <p>Reviewers mention nine years of excellent customer service from a talented, family friendly crew.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">1</div>
+        <h3>Easy booking</h3>
+        <p>Grab your spot on Squire ahead of time. No waiting around wondering when your turn comes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap reviews" id="reviews">
+  <div class="kicker">Word of mouth</div>
+  <h2 class="stitle">What customers say</h2>
+  <p class="ssub">Reviews from customers.</p>
+  <div class="rating-badge"><span>Rated <b>5.0 out of 5</b> across 145 reviews on Squire</span></div>
+  <div class="rev-grid">
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"The best barber shop on the coast, there is nothing in this world these gentlemen can't do when it comes to hair."</p>
+      <cite>Customer review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"9 yrs of excellent customer service everyone that works in this barbershop is extremely talented and family friendly. If you're looking for a new barbershop home, this is the place to be at."</p>
+      <cite>Customer review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"A great barbershop full of young energetic barbers creating an interactive atmosphere for their customers."</p>
+      <cite>Customer review</cite>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="img/photo-2.jpg" loading="lazy" alt="Fade lineup in progress">
+    <img src="img/photo-3.jpg" loading="lazy" alt="Barber working on a fade">
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="kicker" style="text-align:left;">Find us</div>
+      <h2>Come by the shop.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>Closed</td></tr>
+        <tr><td>Tuesday</td><td>9:00 AM - 5:30 PM</td></tr>
+        <tr><td>Wednesday</td><td>9:00 AM - 5:30 PM</td></tr>
+        <tr><td>Thursday</td><td>9:00 AM - 5:30 PM</td></tr>
+        <tr><td>Friday</td><td>9:00 AM - 6:00 PM</td></tr>
+        <tr><td>Saturday</td><td>9:00 AM - 3:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p class="contact-line"><b>Address</b><br>15202 Lemoyne Blvd<br>Biloxi, MS 39532</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+12282350877">(228) 235-0877</a></p>
+      <p class="contact-line"><b>Booking</b><br><a href="https://getsquire.com/discover/barbershop/studio-601-barbershop-biloxi/barber/cisco-anthony-murray" target="_blank" rel="noopener">Book on Squire</a></p>
+    </div>
+    <div>
+      <div class="cta-box">
+        <h3>Ready for a fresh cut?</h3>
+        <p>Book your chair on Squire ahead of time, or call the shop with questions.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://getsquire.com/discover/barbershop/studio-601-barbershop-biloxi/barber/cisco-anthony-murray" target="_blank" rel="noopener">Book on Squire</a>
+          <a class="btn ghost" href="tel:+12282350877">(228) 235-0877</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>Studio 601 Barbershop</b>
+      <span class="addr">15202 Lemoyne Blvd, Biloxi, MS 39532 &middot; <a href="tel:+12282350877">(228) 235-0877</a></span>
+      <div class="fine">Concept preview. A free mockup, not affiliated with or endorsed by the business.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

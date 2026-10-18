@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guhdyvah Twenty-6 | Braids &amp; Hair Studio in Metairie, LA</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --black:#0d0b14; --black2:#171325; --ink:#f4f1ff; --muted:#b3a9d6;
+    --purple:#8b5cf6; --pink:#ec4899; --gold:#f5c044; --line:#2b2444;
+  }
+  body { background:var(--black); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:#000; color:#8f84b8; font-size:13px; border-bottom:1px solid var(--line); }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+  .topbar b { color:#fff; }
+  .preview-tag { letter-spacing:2px; text-transform:uppercase; font-size:11px; color:var(--gold); }
+
+  nav { position:sticky; top:0; background:rgba(13,11,20,.96); border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:20px; font-weight:900; letter-spacing:1px; }
+  .brand em { color:var(--pink); font-style:normal; }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--pink); }
+  .btn { display:inline-block; background:var(--pink); color:#fff; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:800; border:none; border-radius:999px; cursor:pointer; }
+  .btn:hover { background:#d6337f; }
+  .btn.ghost { background:transparent; color:var(--ink); border:2px solid var(--purple); }
+  .btn.ghost:hover { background:rgba(139,92,246,.15); }
+
+  .hero { background:var(--black2); border-bottom:1px solid var(--line); }
+  .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding-top:72px; padding-bottom:72px; }
+  .hero .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:800; }
+  .hero h1 { font-size:56px; line-height:1.05; font-weight:900; margin-bottom:18px; letter-spacing:-1px; }
+  .hero h1 em { color:var(--pink); font-style:normal; }
+  .hero p.lead { color:var(--muted); font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-img img { border-radius:16px; aspect-ratio:4/5; object-fit:cover; width:100%; border:2px solid var(--purple); }
+  .hero-note { margin-top:18px; color:var(--muted); font-size:14px; }
+
+  .ticker { background:var(--purple); color:#fff; overflow:hidden; }
+  .ticker .wrap { display:flex; justify-content:space-between; padding-top:15px; padding-bottom:15px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; font-weight:800; flex-wrap:wrap; gap:10px; }
+
+  section.block { padding:76px 28px; scroll-margin-top:80px; }
+  .kicker { color:var(--pink); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:800; text-align:center; }
+  h2.stitle { font-size:40px; text-align:center; margin-bottom:10px; font-weight:900; letter-spacing:-.5px; }
+  p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .card { background:var(--black2); border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .card img { width:100%; aspect-ratio:1/1; object-fit:cover; }
+  .card .pad { padding:24px 26px 28px; }
+  .card h3 { font-size:21px; margin-bottom:8px; font-weight:800; }
+  .card h3 span { color:var(--pink); }
+  .card p { color:var(--muted); font-size:15px; }
+
+  .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .why-item { background:var(--black2); border:1px solid var(--line); border-radius:16px; padding:30px; }
+  .why-item .n { font-size:36px; font-weight:900; color:var(--gold); margin-bottom:8px; }
+  .why-item h3 { font-size:19px; margin-bottom:8px; }
+  .why-item p { color:var(--muted); font-size:15px; }
+
+  .gallery { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:44px; }
+  .gallery img { border-radius:12px; aspect-ratio:1/1; object-fit:cover; width:100%; border:1px solid var(--line); }
+
+  .reviews .rev-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:26px; max-width:900px; margin:0 auto; }
+  .rev { background:var(--black2); border:1px solid var(--line); border-radius:16px; padding:28px; }
+  .rev .q { color:var(--gold); font-size:20px; letter-spacing:2px; margin-bottom:10px; }
+  .rev p { font-size:15.5px; margin-bottom:12px; }
+  .rev cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+  .rating-badge { display:flex; justify-content:center; margin-bottom:34px; }
+  .rating-badge span { display:inline-flex; align-items:center; gap:10px; background:var(--black2); border:1px solid var(--line);
+    border-radius:999px; padding:9px 20px; font-size:14px; font-weight:600; color:var(--ink); }
+  .rating-badge .stars { color:var(--gold); letter-spacing:2px; }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .visit h2 { font-size:36px; margin-bottom:20px; font-weight:900; letter-spacing:-.5px; }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted var(--line); font-size:16px; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-line { font-size:17px; margin-bottom:10px; }
+  .contact-line b { color:var(--pink); }
+  .contact-line a { color:var(--ink); font-weight:700; }
+  .cta-box { background:var(--purple); color:#fff; border-radius:16px; padding:36px; }
+  .cta-box h3 { font-size:24px; margin-bottom:12px; font-weight:900; }
+  .cta-box p { color:#e6defc; margin-bottom:20px; }
+  .cta-box .btn { background:#fff; color:var(--purple); }
+  .cta-box .btn:hover { background:#f4f1ff; }
+
+  footer { background:#000; color:#8f84b8; border-top:1px solid var(--line); }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:14px; }
+  footer b { color:#fff; }
+  footer .addr { display:block; margin-top:4px; }
+  footer .fine { margin-top:8px; font-size:11.5px; color:#6b6390; font-style:italic; }
+  .social { display:flex; gap:12px; align-items:center; }
+  .social a { width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,.08); color:#e6defc;
+    display:inline-flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; }
+  .social a:hover { background:var(--pink); color:#fff; }
+
+  @media (max-width:860px) {
+    .hero .wrap, .visit { grid-template-columns:1fr; }
+    .cards, .why-grid, .reviews .rev-grid { grid-template-columns:1fr; }
+    .gallery { grid-template-columns:repeat(2,1fr); }
+    .hero h1 { font-size:40px; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>701 Metairie Rd, Suite 2B-201, Salon #8, Metairie, LA 70005</span>
+    <span><span class="preview-tag">Design preview</span> &nbsp;|&nbsp; <b><a href="tel:+15049205070">(504) 920-5070</a></b></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">GUHDYVAH <em>TWENTY-6</em></a>
+    <div class="navlinks">
+      <a href="#services">Styles</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Book</a>
+    </div>
+    <a class="btn" href="tel:+15049205070">Book Now</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Metairie, Louisiana</div>
+      <h1>I do braids <em>in Metairie.</em></h1>
+      <p class="lead">Guhdyvah Twenty-6 is a braid studio in Metairie where the work speaks for itself. 237 five-star reviews. Knotless braids, boho styles, and silk presses, done neat and done fast.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+15049205070">Call to Book</a>
+        <a class="btn ghost" href="#services">See Styles</a>
+      </div>
+      <p class="hero-note">5.0 stars from 237 Setmore reviews &middot; Books via Setmore</p>
+    </div>
+    <div class="hero-img">
+      <img src="img/photo-1.jpg" alt="Client with freshly done two-strand twists at Guhdyvah Twenty-6">
+    </div>
+  </div>
+</header>
+
+<div class="ticker">
+  <div class="wrap">
+    <span>Knotless braids</span>
+    <span>Boho styles</span>
+    <span>Silk press</span>
+    <span>5.0 rating</span>
+  </div>
+</div>
+
+<section class="block wrap" id="services">
+  <div class="kicker">Styles</div>
+  <h2 class="stitle">Pick your look</h2>
+  <p class="ssub">Braids, boho styles, and silk presses. Book through Setmore to lock in your spot.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="img/photo-3.jpg" loading="lazy" alt="Box braids style example">
+      <div class="pad"><h3><span>Knotless</span> Braids</h3><p>Clean parts, neat rows, no tension on the roots. The style clients ask for by name.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-4.jpg" loading="lazy" alt="Detailed braided style">
+      <div class="pad"><h3><span>Boho</span> Styles</h3><p>Boho knotless with curly ends for that soft, full look. A client favorite.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-2.jpg" loading="lazy" alt="Guhdyvah Twenty-6 studio logo">
+      <div class="pad"><h3><span>The</span> Studio</h3><p>701 Metairie Rd, Salon #8. Book through Setmore to grab your spot.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap" id="why">
+  <div class="kicker">Why Guhdyvah Twenty-6</div>
+  <h2 class="stitle">237 reviews, all five stars.</h2>
+  <p class="ssub">Not one bad review in the bunch. See what clients are saying.</p>
+  <div class="why-grid">
+    <div class="why-item">
+      <div class="n">5.0</div>
+      <h3>Perfect rating</h3>
+      <p>237 reviews on Setmore, every one of them five stars. That does not happen unless the work is consistent.</p>
+    </div>
+    <div class="why-item">
+      <div class="n">Fast</div>
+      <h3>Quick in the chair</h3>
+      <p>Clients call her a speedy braider. You get out on time with hair that looks like it took all day.</p>
+    </div>
+    <div class="why-item">
+      <div class="n">Setmore</div>
+      <h3>Easy booking</h3>
+      <p>Book online through Setmore. Pick your style, pick your time, show up.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap reviews" id="reviews">
+  <div class="kicker">Word of mouth</div>
+  <h2 class="stitle">What clients say</h2>
+  <p class="ssub">Reviews from Setmore.</p>
+  <div class="rating-badge"><span><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> Rated <b>5.0 out of 5</b> across 237 reviews</span></div>
+  <div class="rev-grid">
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Beautiful space! It pulls you in immediately. Very professional and welcoming. I feel like I've known her for years."</p>
+      <cite>Setmore review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"I just love the entire atmosphere. My hair is always beautiful, Trice is always pleasant; very respectful and professional. Definitely 10/10 experience, EVERYTIME!"</p>
+      <cite>Setmore review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Love my boho knotless braids, neat and amazing service"</p>
+      <cite>Setmore review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Top tier service, snacks, blanket, entertainment. Such a speedy braider. I will be back."</p>
+      <cite>Setmore review</cite>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="img/photo-1.jpg" loading="lazy" alt="Two-strand twists in the studio chair">
+    <img src="img/photo-2.jpg" loading="lazy" alt="Guhdyvah Twenty-6 logo">
+    <img src="img/photo-3.jpg" loading="lazy" alt="Box braids style example">
+    <img src="img/photo-4.jpg" loading="lazy" alt="Detailed braid work">
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="kicker" style="text-align:left;">Book</div>
+      <h2>Get in the chair.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>8:00 AM - 6:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>8:00 AM - 6:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>8:00 AM - 6:00 PM</td></tr>
+        <tr><td>Thursday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Friday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td>Closed</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p class="contact-line"><b>Address</b><br>701 Metairie Rd, Suite 2B-201, Salon #8<br>Metairie, LA 70005</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+15049205070">(504) 920-5070</a></p>
+      <p class="contact-line"><b>Email</b><br><a href="mailto:guhdyvah26@gmail.com">guhdyvah26@gmail.com</a></p>
+      <p class="contact-line"><b>Booking</b><br><a href="https://guhdyvahtwenty6.setmore.com" target="_blank" rel="noopener">Book on Setmore</a></p>
+    </div>
+    <div>
+      <div class="cta-box">
+        <h3>Ready for your appointment?</h3>
+        <p>Book through Setmore to grab your spot. Spots go fast.</p>
+        <a class="btn" href="https://guhdyvahtwenty6.setmore.com" target="_blank" rel="noopener">Book on Setmore</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>Guhdyvah Twenty-6</b>
+      <span class="addr">701 Metairie Rd, Suite 2B-201, Salon #8, Metairie, LA 70005 &middot; <a href="tel:+15049205070">(504) 920-5070</a></span>
+      <div class="fine">Concept preview. A free mockup, not affiliated with or endorsed by the business.</div>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/guhdyvah_26" target="_blank" rel="noopener" aria-label="Guhdyvah Twenty-6 on Instagram">IG</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
