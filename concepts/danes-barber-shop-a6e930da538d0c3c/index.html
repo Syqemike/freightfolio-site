@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dane's Barber Shop | Barber Shop in Biloxi, MS</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --oxblood:#5a1f1f; --oxblood2:#3d1414; --cream:#f8f3e8; --cream2:#efe5cf;
+    --ink:#2e241a; --muted:#7a6a52; --gold:#c9a24b; --gold-dark:#9a7830; --line:#ddd0b4;
+  }
+  body { background:var(--cream); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; }
+
+  .topbar { background:var(--oxblood2); color:#d9c9a8; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+  .topbar b { color:#fff; }
+  .preview-tag { letter-spacing:2px; text-transform:uppercase; font-size:11px; color:var(--gold); }
+
+  nav { position:sticky; top:0; background:var(--cream); border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand { font-size:20px; font-weight:800; letter-spacing:1px; color:var(--oxblood); font-family:Georgia,'Times New Roman',serif; }
+  .brand em { color:var(--gold-dark); font-style:normal; }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--oxblood); }
+  .btn { display:inline-block; background:var(--oxblood); color:#fff; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; border-radius:6px; cursor:pointer; }
+  .btn:hover { background:var(--oxblood2); }
+  .btn.ghost { background:transparent; color:var(--oxblood); border:2px solid var(--oxblood); }
+  .btn.ghost:hover { background:rgba(90,31,31,.06); }
+
+  .hero { background:var(--oxblood); color:#fff; }
+  .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding-top:64px; padding-bottom:64px; }
+  .hero-img img { border-radius:12px; aspect-ratio:4/3; object-fit:cover; width:100%; border:1px solid rgba(255,255,255,.15); }
+  .hero .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
+  .hero h1 { font-family:Georgia,'Times New Roman',serif; font-size:52px; line-height:1.12; font-weight:700; margin-bottom:18px; }
+  .hero h1 em { color:var(--gold); font-style:normal; }
+  .hero p.lead { color:#e2d3b4; font-size:18px; margin-bottom:30px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero .btn.ghost { color:#fff; border-color:var(--gold); }
+  .hero .btn.ghost:hover { background:rgba(201,162,75,.12); }
+  .hero-note { margin-top:18px; color:#bfae85; font-size:14px; }
+
+  .pole { height:10px; background:repeating-linear-gradient(45deg, var(--oxblood) 0 18px, #fff 18px 36px, var(--gold) 36px 54px, #fff 54px 72px); }
+
+  section.block { padding:76px 28px; scroll-margin-top:80px; }
+  .kicker { color:var(--gold-dark); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; font-weight:700; text-align:center; }
+  h2.stitle { font-family:Georgia,'Times New Roman',serif; font-size:38px; text-align:center; margin-bottom:10px; font-weight:700; color:var(--oxblood); }
+  p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  .card img { width:100%; aspect-ratio:16/10; object-fit:cover; }
+  .card .pad { padding:24px 26px 28px; }
+  .card h3 { font-family:Georgia,'Times New Roman',serif; font-size:21px; margin-bottom:8px; color:var(--oxblood); }
+  .card p { color:var(--muted); font-size:15px; }
+
+  .why { background:var(--oxblood); color:#fff; }
+  .why h2.stitle { color:#fff; }
+  .why .kicker { color:var(--gold); }
+  .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .why-item { background:var(--oxblood2); border-radius:12px; padding:30px; border:1px solid rgba(201,162,75,.2); }
+  .why-item .n { font-size:34px; font-weight:800; color:var(--gold); margin-bottom:8px; font-family:Georgia,'Times New Roman',serif; }
+  .why-item h3 { font-size:19px; margin-bottom:8px; }
+  .why-item p { color:#d9c9a8; font-size:15px; }
+
+  .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:44px; }
+  .gallery img { border-radius:10px; aspect-ratio:4/3; object-fit:cover; width:100%; }
+
+  .reviews .rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .rev { background:#fff; border:1px solid var(--line); border-radius:12px; padding:28px; }
+  .rev .q { color:var(--gold-dark); font-size:20px; letter-spacing:2px; margin-bottom:10px; }
+  .rev p { font-size:15.5px; margin-bottom:12px; }
+  .rev cite { font-style:normal; color:var(--muted); font-size:13px; letter-spacing:1px; text-transform:uppercase; }
+  .rating-badge { display:flex; justify-content:center; margin-bottom:34px; }
+  .rating-badge span { display:inline-flex; align-items:center; gap:10px; background:#fff; border:1px solid var(--line);
+    border-radius:999px; padding:9px 20px; font-size:14px; font-weight:600; color:var(--ink); }
+
+  .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .visit h2 { font-family:Georgia,'Times New Roman',serif; font-size:36px; margin-bottom:20px; font-weight:700; color:var(--oxblood); }
+  .hours { width:100%; border-collapse:collapse; margin-bottom:24px; }
+  .hours td { padding:10px 4px; border-bottom:1px dotted var(--line); font-size:16px; }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-line { font-size:17px; margin-bottom:10px; }
+  .contact-line b { color:var(--gold-dark); }
+  .contact-line a { color:var(--oxblood); font-weight:700; }
+  .cta-box { background:var(--oxblood); color:#fff; border-radius:12px; padding:36px; }
+  .cta-box h3 { font-family:Georgia,'Times New Roman',serif; font-size:24px; margin-bottom:12px; }
+  .cta-box p { color:#e2d3b4; margin-bottom:20px; }
+
+  footer { background:var(--oxblood2); color:#bfae85; }
+  footer .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:26px; padding-bottom:26px; font-size:14px; flex-wrap:wrap; gap:14px; }
+  footer b { color:#fff; }
+  footer .addr { display:block; margin-top:4px; }
+  footer .fine { margin-top:8px; font-size:11.5px; color:#8f7c5c; font-style:italic; }
+
+  @media (max-width:860px) {
+    .hero .wrap, .visit { grid-template-columns:1fr; }
+    .cards, .why-grid, .reviews .rev-grid, .gallery { grid-template-columns:1fr; }
+    .hero h1 { font-size:38px; }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>1621 Pass Rd B, Biloxi, MS 39531</span>
+    <span><span class="preview-tag">Design preview</span> &nbsp;|&nbsp; <b><a href="tel:+12283749991">(228) 374-9991</a></b></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">DANE'S <em>BARBER SHOP</em></a>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <a class="btn" href="tel:+12283749991">Call Now</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-img">
+      <img src="img/photo-1.jpg" alt="Fresh high fade on a client at Dane's Barber Shop">
+    </div>
+    <div>
+      <div class="kicker">Biloxi, Mississippi</div>
+      <h1>A proper <em>old-school barbershop.</em></h1>
+      <p class="lead">Dane's on Pass Rd is the real thing. Classic cuts, straight-razor shaves, and a chair that has seen a lot of good conversation. Walk in like a stranger, walk out like a regular.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12283749991">Call (228) 374-9991</a>
+        <a class="btn ghost" href="#services">Our Services</a>
+      </div>
+      <p class="hero-note">4.8 stars from 47 Google reviews</p>
+    </div>
+  </div>
+</header>
+<div class="pole"></div>
+
+<section class="block wrap" id="services">
+  <div class="kicker">What we do</div>
+  <h2 class="stitle">Cuts done the classic way</h2>
+  <p class="ssub">Old-school barbering in Biloxi. Call ahead to book your cut.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="img/photo-2.jpg" loading="lazy" alt="Classic combover with shaped beard">
+      <div class="pad"><h3>Classic Haircuts</h3><p>Tapers, combovers, and clean traditional cuts. Tell the barber what you want and sit back.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-3.jpg" loading="lazy" alt="Clean short fade">
+      <div class="pad"><h3>Fades &amp; Lineups</h3><p>Skin fades, tapers, and sharp lineups. The cut most clients walk out with.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/photo-4.jpg" loading="lazy" alt="Textured crop with fade">
+      <div class="pad"><h3>Modern Cuts</h3><p>Textured crops and current styles, cut clean. Ask your barber what works for your hair.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block why" id="why">
+  <div class="wrap">
+    <div class="kicker">Why Dane's</div>
+    <h2 class="stitle">The shop Biloxi rates 4.8</h2>
+    <p class="ssub" style="color:#d9c9a8;">Old-school shop, honest work, easy to get to on Pass Rd.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="n">4.8</div>
+        <h3>Star rating</h3>
+        <p>Across 47 Google reviews. Customers keep mentioning the same thing: a good cut and a good conversation.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">7</div>
+        <h3>Days a week</h3>
+        <p>Open Monday through Saturday, plus Sunday 9 to 5. Easy to fit a cut into your week.</p>
+      </div>
+      <div class="why-item">
+        <div class="n">0</div>
+        <h3>Website</h3>
+        <p>No website, no booking app. Pick up the phone or walk in. That is the whole system.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap reviews" id="reviews">
+  <div class="kicker">Word of mouth</div>
+  <h2 class="stitle">What customers say</h2>
+  <p class="ssub">Reviews from customers.</p>
+  <div class="rating-badge"><span>Rated <b>4.8 out of 5</b> across 47 Google reviews</span></div>
+  <div class="rev-grid">
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Most Barbershop's are closed on Mondays. But Dane's is not closed on Mondays. In fact they're open 7 days a week! I got a most excellent haircut there. I've found my favorite Barbershop, Dane's"</p>
+      <cite>Google review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"The only barber shop we will go to out here for my husband and boys!! The best fade you're gonna find and we've never had people work with the kids better!"</p>
+      <cite>Google review</cite>
+    </div>
+    <div class="rev">
+      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>"Best barbershop on the coast. Clean and professional. Top notch service every time"</p>
+      <cite>Google review</cite>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="img/photo-2.jpg" loading="lazy" alt="Classic cut with shaped beard">
+    <img src="img/photo-3.jpg" loading="lazy" alt="Short fade in the chair">
+    <img src="img/photo-4.jpg" loading="lazy" alt="Textured crop fade">
+  </div>
+</section>
+
+<section class="block wrap" id="visit">
+  <div class="visit">
+    <div>
+      <div class="kicker" style="text-align:left;">Find us</div>
+      <h2>Come by the shop.</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>8:00 AM - 7:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>8:00 AM - 7:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>8:00 AM - 7:00 PM</td></tr>
+        <tr><td>Thursday</td><td>8:00 AM - 7:00 PM</td></tr>
+        <tr><td>Friday</td><td>8:00 AM - 7:00 PM</td></tr>
+        <tr><td>Saturday</td><td>9:00 AM - 4:00 PM</td></tr>
+        <tr><td>Sunday</td><td>9:00 AM - 5:00 PM</td></tr>
+      </table>
+      <p class="contact-line"><b>Address</b><br>1621 Pass Rd B<br>Biloxi, MS 39531</p>
+      <p class="contact-line"><b>Phone</b><br><a href="tel:+12283749991">(228) 374-9991</a></p>
+      <p class="contact-line"><b>Email</b><br><a href="mailto:barberdane@att.net">barberdane@att.net</a></p>
+    </div>
+    <div>
+      <div class="cta-box">
+        <h3>Need a cut?</h3>
+        <p>Call ahead or walk in during business hours. The shop is on Pass Rd, easy to find.</p>
+        <a class="btn" href="tel:+12283749991">(228) 374-9991</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>Dane's Barber Shop</b>
+      <span class="addr">1621 Pass Rd B, Biloxi, MS 39531 &middot; <a href="tel:+12283749991">(228) 374-9991</a></span>
+      <div class="fine">Concept preview. A free mockup, not affiliated with or endorsed by the business.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
