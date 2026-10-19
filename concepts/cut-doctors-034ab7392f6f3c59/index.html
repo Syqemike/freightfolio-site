@@ -2,263 +2,654 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>Cut Doctors | Barber Shop in Gulfport, MS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Design preview: Cut Doctors barbershop, 1303 28th St, Gulfport MS.">
+<title>Cut Doctors | Barbershop, Gulfport MS (Design Preview)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #090b10;
-    --ink: #eef0fb;
-    --muted: #9aa0b8;
-    --accent: #a1adff;
-    --line: rgba(161,173,255,.2);
-    --card: #0e1119;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
-    -webkit-text-size-adjust: 100%;
-  }
-  h1, h2, h3 {
-    font-family: 'DM Sans', 'Manrope', system-ui, sans-serif;
-    line-height: 1.15;
-  }
-  a { color: var(--accent); }
-  .preview-bar {
-    text-align: center;
-    padding: 8px 16px;
-    background: #12151f;
-    border-bottom: 1px solid var(--line);
-  }
-  .preview-pill {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    color: var(--bg);
-    background: var(--accent);
-    padding: 4px 14px;
-    border-radius: 999px;
-  }
-  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
-  header.hero {
-    padding: 88px 0 72px;
-    text-align: center;
-    border-bottom: 1px solid var(--line);
-  }
-  .eyebrow {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .22em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 18px;
-  }
-  header.hero h1 {
-    font-size: 56px;
-    font-weight: 700;
-    letter-spacing: -.01em;
-    margin-bottom: 16px;
-  }
-  .tagline {
-    color: var(--muted);
-    font-size: 18px;
-    max-width: 560px;
-    margin: 0 auto 32px;
-  }
-  .cta {
-    display: inline-block;
-    background: var(--accent);
-    color: var(--bg);
-    font-weight: 700;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 14px 34px;
-    border-radius: 10px;
-  }
-  .cta:hover { filter: brightness(1.08); }
-  .rating {
-    margin-top: 20px;
-    color: var(--muted);
-    font-size: 14px;
-  }
-  section.block {
-    padding: 64px 0;
-    border-bottom: 1px solid var(--line);
-  }
-  section.block h2 {
-    font-size: 32px;
-    margin-bottom: 24px;
-  }
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-  .service-card {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 24px;
-  }
-  .service-card h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: var(--ink);
-  }
-  .service-card p {
-    color: var(--muted);
-    font-size: 15px;
-  }
-  .about p { color: var(--muted); font-size: 17px; max-width: 640px; }
-  .gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-  }
-  .gallery figcaption {
-    color: var(--muted);
-    font-size: 13px;
-    margin-top: 10px;
-  }
-  table.hours {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 32px;
-  }
-  table.hours th, table.hours td {
-    text-align: left;
-    padding: 12px 4px;
-    border-bottom: 1px solid var(--line);
-    font-size: 16px;
-  }
-  table.hours th { font-weight: 600; color: var(--ink); }
-  table.hours td { color: var(--muted); }
-  table.hours tr:last-child th, table.hours tr:last-child td { border-bottom: none; }
-  .visit-lines p { margin-bottom: 10px; font-size: 16px; color: var(--muted); }
-  .visit-lines strong { color: var(--ink); font-weight: 600; }
-  footer {
-    padding: 40px 0 56px;
-    text-align: center;
-  }
-  footer .fine {
-    color: var(--muted);
-    font-size: 13px;
-    max-width: 560px;
-    margin: 0 auto 12px;
-  }
-  footer .copyright { color: var(--muted); font-size: 13px; }
-  @media (max-width: 640px) {
-    header.hero { padding: 56px 0 48px; }
-    header.hero h1 { font-size: 38px; }
-    .tagline { font-size: 16px; }
-    .services-grid { grid-template-columns: 1fr; }
-    section.block { padding: 44px 0; }
-    section.block h2 { font-size: 26px; }
-    .cta { width: 100%; text-align: center; padding: 16px 20px; }
-  }
+:root{
+  --ink:#141311;
+  --paper:#f3eee1;
+  --paper-dim:#e9e2d0;
+  --red:#c8362a;
+  --red-deep:#9c261d;
+  --display:'Archivo Black','Arial Black',Impact,sans-serif;
+  --cond:'Oswald','Arial Narrow','Helvetica Neue',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--cond);
+  font-size:18px;
+  line-height:1.5;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+/* ---------- utility top bar ---------- */
+.topbar{
+  background:var(--ink);
+  color:var(--paper);
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px 28px;
+  align-items:center;
+  justify-content:center;
+  padding:10px 20px;
+  font-size:13px;
+  letter-spacing:.18em;
+  font-weight:600;
+  text-transform:uppercase;
+}
+.topbar a{text-decoration:none;border-bottom:2px solid var(--red)}
+.topbar .dot{color:var(--red)}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  padding:64px 5vw 96px;
+  overflow:hidden;
+}
+.hero-grid{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:56px;
+  align-items:center;
+}
+.eyebrow{
+  display:inline-block;
+  background:var(--ink);
+  color:var(--paper);
+  font-weight:700;
+  font-size:14px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  padding:8px 14px;
+  margin-bottom:22px;
+}
+.eyebrow b{color:var(--red);font-weight:700}
+h1{
+  font-family:var(--display);
+  font-size:clamp(72px,11vw,168px);
+  line-height:.92;
+  text-transform:uppercase;
+  letter-spacing:-.01em;
+}
+h1 .red{color:var(--red)}
+h1 .rule{
+  display:block;
+  height:10px;
+  background:var(--ink);
+  margin:26px 0 0;
+  width:min(420px,80%);
+}
+.hero-sub{
+  margin-top:26px;
+  font-size:clamp(18px,2.2vw,24px);
+  font-weight:500;
+  max-width:34ch;
+}
+.hero-sub strong{font-weight:700}
+.hero-ctas{
+  margin-top:34px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+}
+.btn{
+  font-family:var(--display);
+  text-transform:uppercase;
+  text-decoration:none;
+  font-size:17px;
+  padding:16px 30px;
+  display:inline-block;
+  transform:skewX(-6deg);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.btn span{display:inline-block;transform:skewX(6deg)}
+.btn-red{background:var(--red);color:#fff;box-shadow:6px 6px 0 var(--ink)}
+.btn-red:hover{transform:skewX(-6deg) translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink);border:3px solid var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.hero-meta{
+  margin-top:30px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+.stars{font-size:22px;letter-spacing:.1em;color:var(--red)}
+.rating-note{font-size:15px;font-weight:500;max-width:30ch}
+
+/* photo treatment */
+.photo-wrap{position:relative;justify-self:center}
+.photo-frame{
+  position:relative;
+  border:8px solid var(--ink);
+  transform:rotate(2deg);
+  box-shadow:18px 18px 0 var(--red);
+  max-width:400px;
+  background:var(--ink);
+}
+.photo-frame img{
+  width:100%;
+  height:auto;
+  aspect-ratio:3/4;
+  object-fit:cover;
+  object-position:center 30%;
+  filter:contrast(1.06) saturate(1.02);
+}
+.photo-cap{
+  margin-top:34px;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  text-align:right;
+}
+.badge{
+  position:absolute;
+  bottom:-24px;
+  left:-48px;
+  width:150px;
+  height:150px;
+  z-index:3;
+}
+.badge .ring{width:100%;height:100%;animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.badge .disc{fill:var(--red)}
+.badge .ringtext{
+  font-family:var(--cond);
+  font-size:13.5px;
+  font-weight:700;
+  letter-spacing:.24em;
+  fill:#fff;
+}
+.badge .core{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--display);
+  color:#fff;
+  font-size:34px;
+}
+
+/* ---------- ticker ---------- */
+.ticker{
+  background:var(--ink);
+  color:var(--paper);
+  overflow:hidden;
+  white-space:nowrap;
+  transform:rotate(-1.2deg) scale(1.02);
+  border-top:5px solid var(--red);
+  border-bottom:5px solid var(--red);
+  position:relative;
+  z-index:2;
+}
+.ticker-inner{
+  display:inline-block;
+  padding:14px 0;
+  animation:tick 26s linear infinite;
+  font-family:var(--display);
+  font-size:22px;
+  text-transform:uppercase;
+}
+.ticker-inner .sep{color:var(--red);padding:0 18px}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- sections shared ---------- */
+section{position:relative}
+.sec-inner{max-width:1100px;margin:0 auto;padding:90px 5vw}
+.sec-head{display:flex;align-items:baseline;gap:26px;margin-bottom:44px;flex-wrap:wrap}
+.sec-index{
+  font-family:var(--display);
+  font-size:clamp(64px,8vw,120px);
+  line-height:1;
+  color:transparent;
+  -webkit-text-stroke:2.5px var(--ink);
+}
+.sec-title{
+  font-family:var(--display);
+  font-size:clamp(38px,5.4vw,72px);
+  text-transform:uppercase;
+  line-height:1;
+}
+.sec-kicker{font-size:17px;font-weight:500;margin-top:6px;max-width:52ch}
+
+/* ---------- services: price board ---------- */
+.services{
+  background:var(--ink);
+  color:var(--paper);
+  clip-path:polygon(0 0,100% 34px,100% 100%,0 calc(100% - 34px));
+  margin-top:-30px;
+  padding:30px 0;
+}
+.services .sec-index{-webkit-text-stroke-color:var(--red)}
+.board{border-top:3px solid var(--paper)}
+.board-row{
+  display:grid;
+  grid-template-columns:90px 1fr auto;
+  gap:20px;
+  align-items:baseline;
+  padding:24px 6px;
+  border-bottom:3px solid rgba(243,238,225,.16);
+  text-decoration:none;
+  transition:background .15s ease;
+}
+a.board-row:hover{background:rgba(200,54,42,.14)}
+.board-row:hover .board-name{color:var(--red)}
+.board-num{
+  font-family:var(--display);
+  font-size:26px;
+  color:var(--red);
+}
+.board-name{
+  font-family:var(--display);
+  font-size:clamp(26px,4vw,46px);
+  text-transform:uppercase;
+  line-height:1.05;
+  transition:color .15s ease;
+}
+.board-tag{
+  font-size:15px;
+  font-weight:500;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  opacity:.75;
+  text-align:right;
+}
+.board-foot{
+  margin-top:34px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px 40px;
+  align-items:center;
+  justify-content:space-between;
+}
+.board-foot p{font-size:17px;font-weight:500;max-width:46ch}
+.board-foot .btn-red{box-shadow:6px 6px 0 var(--red-deep)}
+
+/* ---------- barber pole divider ---------- */
+.pole{
+  height:26px;
+  background:repeating-linear-gradient(-48deg,
+    var(--red) 0 26px,
+    var(--paper) 26px 52px);
+  border-top:4px solid var(--ink);
+  border-bottom:4px solid var(--ink);
+}
+
+/* ---------- the shop (red poster) ---------- */
+.shop{background:var(--red);color:var(--ink)}
+.shop .sec-inner{padding-bottom:110px}
+.shop-statement{
+  font-family:var(--display);
+  font-size:clamp(40px,7vw,96px);
+  text-transform:uppercase;
+  line-height:1.02;
+  max-width:14ch;
+}
+.shop-statement .paper{color:var(--paper)}
+.shop-copy{
+  margin-top:34px;
+  max-width:62ch;
+  font-size:clamp(18px,2.2vw,23px);
+  font-weight:500;
+}
+.shop-copy strong{font-weight:700}
+.shop-stats{
+  margin-top:44px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:0;
+  border:4px solid var(--ink);
+  background:var(--paper);
+}
+.stat{padding:26px 20px;border-right:4px solid var(--ink)}
+.stat:last-child{border-right:none}
+.stat .big{font-family:var(--display);font-size:clamp(30px,4vw,52px);line-height:1}
+.stat .lbl{font-size:14px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-top:8px}
+
+/* ---------- visit ---------- */
+.visit{
+  background:var(--paper);
+  clip-path:polygon(0 0,100% 34px,100% 100%,0 100%);
+  margin-top:-34px;
+}
+.visit-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:start;
+}
+.hours-board{border:4px solid var(--ink)}
+.hours-head{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:var(--display);
+  text-transform:uppercase;
+  font-size:20px;
+  padding:14px 20px;
+  letter-spacing:.04em;
+}
+.hours-row{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:16px 20px;
+  border-bottom:3px solid var(--ink);
+  font-weight:600;
+  font-size:17px;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.hours-row:last-child{border-bottom:none}
+.hours-row.today{background:var(--red);color:#fff}
+.hours-row .day{font-weight:700}
+.open-pill{
+  display:inline-block;
+  margin-top:18px;
+  font-family:var(--display);
+  text-transform:uppercase;
+  font-size:16px;
+  padding:10px 20px;
+  background:var(--ink);
+  color:var(--paper);
+}
+.open-pill.open{background:var(--red);color:#fff}
+.visit-info h3{
+  font-family:var(--display);
+  text-transform:uppercase;
+  font-size:clamp(28px,3.6vw,44px);
+  line-height:1.05;
+}
+.visit-info address{
+  font-style:normal;
+  margin-top:18px;
+  font-size:21px;
+  font-weight:500;
+}
+.visit-info .phone-big{
+  display:inline-block;
+  margin-top:14px;
+  font-family:var(--display);
+  font-size:clamp(30px,4.4vw,54px);
+  color:var(--red);
+  text-decoration:none;
+  line-height:1;
+}
+.visit-info .phone-big:hover{color:var(--red-deep)}
+.visit-info .map-link{
+  display:inline-block;
+  margin-top:16px;
+  font-weight:700;
+  font-size:16px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  text-decoration:none;
+  border-bottom:3px solid var(--red);
+}
+.visit-info .fine{margin-top:20px;font-size:16px;max-width:40ch}
+
+/* ---------- footer ---------- */
+footer{
+  background:var(--ink);
+  color:var(--paper);
+  padding:44px 5vw 60px;
+  font-size:15px;
+}
+.foot-inner{max-width:1100px;margin:0 auto}
+.foot-word{
+  font-family:var(--display);
+  font-size:clamp(34px,6vw,64px);
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+.foot-word .red{color:var(--red)}
+.foot-lines{display:flex;flex-wrap:wrap;gap:8px 28px;font-weight:500}
+.foot-lines a{text-decoration:none;border-bottom:2px solid var(--red)}
+.disclaimer{
+  margin-top:26px;
+  padding-top:20px;
+  border-top:2px solid rgba(243,238,225,.25);
+  font-size:13.5px;
+  opacity:.8;
+  max-width:70ch;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:860px){
+  .hero{padding:44px 6vw 80px}
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .photo-wrap{justify-self:start}
+  .photo-frame{max-width:min(340px,82vw)}
+  .badge{bottom:-24px;left:-12px;top:auto;right:auto;width:118px;height:118px}
+  .photo-cap{text-align:left}
+  .visit-grid{grid-template-columns:1fr;gap:44px}
+  .board-tag{display:none}
+  .board-row{grid-template-columns:64px 1fr}
+  .shop-stats{grid-template-columns:1fr}
+  .stat{border-right:none;border-bottom:4px solid var(--ink)}
+  .stat:last-child{border-bottom:none}
+  .sec-inner{padding:70px 6vw}
+  .ticker-inner{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){
+  .ticker-inner,.badge{animation:none}
+}
 </style>
 </head>
 <body>
 
-<div class="preview-bar"><span class="preview-pill">DESIGN PREVIEW</span></div>
+<div class="topbar">
+  <span>1303 28th St, Gulfport MS</span>
+  <span class="dot">/</span>
+  <a href="tel:+12288682000">(228) 868-2000</a>
+  <span class="dot">/</span>
+  <span>Tue-Fri 8-5, Sat 8-3</span>
+</div>
 
 <header class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Barber Shop, Gulfport, MS</p>
-    <h1>Cut Doctors</h1>
-    <p class="tagline">A barber shop in Gulfport, Mississippi. Call to book your next visit.</p>
-    <a class="cta" href="tel:+12288682000">Call to book</a>
-    <p class="rating">Rated 4.8 on Google from 27 reviews</p>
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">Neighborhood Barbershop <b>/</b> Gulfport, MS</span>
+      <h1>Cut<br><span class="red">Doctors</span><span class="rule"></span></h1>
+      <p class="hero-sub">A barbershop on 28th Street. You sit down, we cut, you walk out sharp. <strong>Walk-ins welcome.</strong></p>
+      <div class="hero-ctas">
+        <a class="btn btn-red" href="tel:+12288682000"><span>Call (228) 868-2000</span></a>
+        <a class="btn btn-ghost" href="#board"><span>See the board</span></a>
+      </div>
+      <div class="hero-meta">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span class="rating-note"><strong>4.8 out of 5</strong> from 27 Google reviews. Gulfport keeps coming back.</span>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo-frame">
+        <div class="badge" aria-hidden="true">
+          <svg class="ring" viewBox="0 0 150 150">
+            <defs>
+              <path id="ring" d="M75,75 m-56,0 a56,56 0 1,1 112,0 a56,56 0 1,1 -112,0"/>
+            </defs>
+            <circle class="disc" cx="75" cy="75" r="72"/>
+            <text class="ringtext">
+              <textPath href="#ring">4.8 STARS &#8226; 27 GOOGLE REVIEWS &#8226; GULFPORT MS &#8226;</textPath>
+            </text>
+          </svg>
+          <span class="core">CD</span>
+        </div>
+        <img src="img/photo-1.jpg" alt="Outside the Cut Doctors barbershop on 28th Street in Gulfport, Mississippi">
+      </div>
+      <p class="photo-cap">Outside the shop, 28th St</p>
+    </div>
   </div>
 </header>
 
-<main>
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner" id="tickerTrack">
+    <span>Haircuts</span><span class="sep">//</span><span>Shapeups</span><span class="sep">//</span><span>Hair Designs</span><span class="sep">//</span><span>Eyebrow Grooming</span><span class="sep">//</span><span>Health Consultations</span><span class="sep">//</span>
+  </div>
+</div>
 
-<section class="block services" aria-label="Services">
-  <div class="wrap">
-    <p class="eyebrow">Services</p>
-    <h2>What we offer</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Haircuts</h3>
-        <p>Full haircut services for men and boys.</p>
+<section class="services" id="board">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <span class="sec-index">01</span>
+      <div>
+        <h2 class="sec-title">The Board</h2>
+        <p class="sec-kicker">The whole menu, chalked up. Pick one and call.</p>
       </div>
-      <div class="service-card">
-        <h3>Shapeups</h3>
-        <p>Clean lines and edge work to keep your cut looking sharp.</p>
+    </div>
+    <div class="board">
+      <a class="board-row" href="tel:+12288682000">
+        <span class="board-num">01</span>
+        <span class="board-name">Haircuts</span>
+        <span class="board-tag">Tap to call</span>
+      </a>
+      <a class="board-row" href="tel:+12288682000">
+        <span class="board-num">02</span>
+        <span class="board-name">Shapeups</span>
+        <span class="board-tag">Tap to call</span>
+      </a>
+      <a class="board-row" href="tel:+12288682000">
+        <span class="board-num">03</span>
+        <span class="board-name">Hair Designs</span>
+        <span class="board-tag">Tap to call</span>
+      </a>
+      <a class="board-row" href="tel:+12288682000">
+        <span class="board-num">04</span>
+        <span class="board-name">Eyebrow Grooming</span>
+        <span class="board-tag">Tap to call</span>
+      </a>
+      <a class="board-row" href="tel:+12288682000">
+        <span class="board-num">05</span>
+        <span class="board-name">Health Consultations</span>
+        <span class="board-tag">Tap to call</span>
+      </a>
+    </div>
+    <div class="board-foot">
+      <p>Prices are posted in the shop. One call books your chair.</p>
+      <a class="btn btn-red" href="tel:+12288682000"><span>Book your chair</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="pole" aria-hidden="true"></div>
+
+<section class="shop">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <span class="sec-index">02</span>
+      <div>
+        <h2 class="sec-title">The Shop</h2>
       </div>
-      <div class="service-card">
-        <h3>Hair designs</h3>
-        <p>Custom designs cut into the hair.</p>
+    </div>
+    <p class="shop-statement">Sit down. Get cut. <span class="paper">Leave sharp.</span></p>
+    <p class="shop-copy">Cut Doctors is a working barbershop on 28th Street in Gulfport. No appointments to fight over, no upsell script, no waiting-room coffee bar. <strong>You come in, you get a clean cut, you go back to your day.</strong> The 4.8 stars and 27 Google reviews came the same way the fades do: one chair at a time.</p>
+    <div class="shop-stats">
+      <div class="stat">
+        <div class="big">4.8</div>
+        <div class="lbl">Google rating</div>
       </div>
-      <div class="service-card">
-        <h3>Eyebrow grooming</h3>
-        <p>Shaping and cleanup for the brows.</p>
+      <div class="stat">
+        <div class="big">27</div>
+        <div class="lbl">Google reviews</div>
       </div>
-      <div class="service-card">
-        <h3>Health consultations</h3>
-        <p>Consultations focused on hair and scalp health.</p>
+      <div class="stat">
+        <div class="big">28th St</div>
+        <div class="lbl">Gulfport, MS</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="block about" aria-label="About">
-  <div class="wrap">
-    <p class="eyebrow">About</p>
-    <h2>Serving Gulfport</h2>
-    <p>Cut Doctors is a barber shop in Gulfport, Mississippi. The shop serves the Gulfport community with haircuts, shapeups, hair designs, eyebrow grooming, and health consultations.</p>
-  </div>
-</section>
-
-<section class="block gallery" aria-label="Gallery">
-  <div class="wrap">
-    <p class="eyebrow">Gallery</p>
-    <h2>The shop</h2>
-    <figure>
-      <img src="img/photo-1.jpg" alt="Photo from Cut Doctors' Google business listing" width="1024" height="640" loading="lazy">
-      <figcaption>Photo from Cut Doctors' Google business listing.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section class="block visit" aria-label="Visit us">
-  <div class="wrap">
-    <p class="eyebrow">Visit</p>
-    <h2>Find us and book</h2>
-    <table class="hours">
-      <tbody>
-        <tr><th>Tuesday - Friday</th><td>8:00 AM - 5:00 PM</td></tr>
-        <tr><th>Saturday</th><td>8:00 AM - 3:00 PM</td></tr>
-        <tr><th>Sunday - Monday</th><td>Closed</td></tr>
-      </tbody>
-    </table>
-    <div class="visit-lines">
-      <p><strong>Address:</strong> 1303 28th St, Gulfport, MS</p>
-      <p><strong>Phone:</strong> <a href="tel:+12288682000">(228) 868-2000</a></p>
-      <p><a href="tel:+12288682000">Call to book your appointment.</a></p>
+<section class="visit">
+  <div class="sec-inner">
+    <div class="sec-head">
+      <span class="sec-index">03</span>
+      <div>
+        <h2 class="sec-title">Hours + Find Us</h2>
+        <p class="sec-kicker">Early opens, closed Sundays and Mondays. Plan around it.</p>
+      </div>
+    </div>
+    <div class="visit-grid">
+      <div>
+        <div class="hours-board" id="hoursBoard">
+          <div class="hours-head">Shop Hours</div>
+          <div class="hours-row" data-day="1"><span class="day">Monday</span><span>Closed</span></div>
+          <div class="hours-row" data-day="2"><span class="day">Tuesday</span><span>8:00 AM - 5:00 PM</span></div>
+          <div class="hours-row" data-day="3"><span class="day">Wednesday</span><span>8:00 AM - 5:00 PM</span></div>
+          <div class="hours-row" data-day="4"><span class="day">Thursday</span><span>8:00 AM - 5:00 PM</span></div>
+          <div class="hours-row" data-day="5"><span class="day">Friday</span><span>8:00 AM - 5:00 PM</span></div>
+          <div class="hours-row" data-day="6"><span class="day">Saturday</span><span>8:00 AM - 3:00 PM</span></div>
+          <div class="hours-row" data-day="0"><span class="day">Sunday</span><span>Closed</span></div>
+        </div>
+        <span class="open-pill" id="openPill">Checking hours</span>
+      </div>
+      <div class="visit-info">
+        <h3>Come through.</h3>
+        <address>
+          Cut Doctors<br>
+          1303 28th St<br>
+          Gulfport, MS
+        </address>
+        <a class="phone-big" href="tel:+12288682000">(228) 868-2000</a>
+        <br>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=1303+28th+St+Gulfport+MS" target="_blank" rel="noopener">Get directions</a>
+        <p class="fine">Walk-ins welcome. Calling ahead gets you in the chair faster. No website, no online booking. This is a barbershop, not an app.</p>
+      </div>
     </div>
   </div>
 </section>
-
-</main>
 
 <footer>
-  <div class="wrap">
-    <p class="fine">Concept preview. A free mockup, not affiliated with or endorsed by the business.</p>
-    <p class="copyright">Cut Doctors, 1303 28th St, Gulfport, MS. (228) 868-2000.</p>
+  <div class="foot-inner">
+    <div class="foot-word">Cut <span class="red">Doctors</span></div>
+    <div class="foot-lines">
+      <span>1303 28th St, Gulfport, MS</span>
+      <a href="tel:+12288682000">(228) 868-2000</a>
+      <span>Tue-Fri 8-5, Sat 8-3, Sun/Mon closed</span>
+    </div>
+    <p class="disclaimer">Design preview. A free mockup, not affiliated with or endorsed by the business.</p>
   </div>
 </footer>
 
+<script>
+// Ticker: duplicate the track content so the -50% loop is seamless
+(function(){
+  var t = document.getElementById('tickerTrack');
+  t.innerHTML += t.innerHTML;
+})();
+
+// Hours: highlight today's row and show open/closed based on posted hours (America/Chicago)
+(function(){
+  try{
+    var now = new Date(new Date().toLocaleString('en-US',{timeZone:'America/Chicago'}));
+    var day = now.getDay(); // 0=Sun
+    var rows = document.querySelectorAll('#hoursBoard .hours-row');
+    rows.forEach(function(r){
+      if(parseInt(r.getAttribute('data-day'),10) === day){ r.classList.add('today'); }
+    });
+    var mins = now.getHours()*60 + now.getMinutes();
+    var open = (day >= 2 && day <= 5 && mins >= 480 && mins < 1020) ||
+               (day === 6 && mins >= 480 && mins < 900);
+    var pill = document.getElementById('openPill');
+    pill.textContent = open ? 'Open now, per posted hours' : 'Closed right now, per posted hours';
+    pill.classList.add(open ? 'open' : 'closed');
+  }catch(e){
+    document.getElementById('openPill').style.display = 'none';
+  }
+})();
+</script>
 </body>
 </html>

@@ -3,240 +3,376 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow">
-<title>Old Familiar Tattoo Company | Tattoo Studio in Mobile, AL</title>
-<meta name="description" content="Old Familiar Tattoo Company is a custom tattoo and piercing studio in downtown Mobile, Alabama.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600;9..40,700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="robots" content="noindex,nofollow">
+<title>Old Familiar Tattoo Co. | Custom Tattoo and Piercing, Mobile AL (Design Preview)</title>
+<meta name="description" content="Design preview mockup of a concept website for Old Familiar Tattoo Co., a custom tattoo and piercing studio at 6 S Conception St, Mobile, AL.">
 <style>
+  @font-face{font-family:"Archivo Black";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/archivoblack.woff2") format("woff2");}
+  @font-face{font-family:"Archivo";font-style:normal;font-weight:100 900;font-display:swap;src:url("fonts/archivo.woff2") format("woff2");}
+  @font-face{font-family:"Yellowtail";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/yellowtail.woff2") format("woff2");}
   :root{
-    --bg:#090b10;
-    --ink:#f2f3f7;
-    --muted:#b9bdd0;
-    --accent:#a1adff;
-    --line:rgba(161,173,255,.2);
-    --panel:#10131b;
+    --paper:#f3ecdc;
+    --paper-dark:#e9dfc8;
+    --ink:#111111;
+    --red:#b02a20;
+    --red-dark:#8c1f16;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
   body{
-    background:var(--bg);
+    background:var(--paper);
     color:var(--ink);
-    font-family:'Manrope',system-ui,sans-serif;
-    line-height:1.65;
+    font-family:"Archivo",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.55;
     -webkit-font-smoothing:antialiased;
   }
-  h1,h2,h3{font-family:'DM Sans',system-ui,sans-serif;line-height:1.15;letter-spacing:-.01em}
-  a{color:var(--accent)}
-
-  .preview-bar{
-    background:var(--accent);
-    color:#090b10;
-    text-align:center;
-    font-family:'DM Sans',sans-serif;
-    font-weight:700;
-    font-size:.78rem;
-    letter-spacing:.18em;
-    padding:.55rem 1rem;
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.5;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
   }
-  .wrap{max-width:1060px;margin:0 auto;padding:0 1.5rem}
-  .eyebrow{
-    font-family:'DM Sans',sans-serif;
-    font-size:.72rem;
-    font-weight:700;
-    letter-spacing:.22em;
-    text-transform:uppercase;
-    color:var(--accent);
-    margin-bottom:1rem;
+  img{display:block;max-width:100%;}
+  a{color:inherit;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+  ::selection{background:var(--red);color:var(--paper);}
+
+  /* ---- top preview strip ---- */
+  .preview-strip{background:var(--ink);color:var(--paper);text-align:center;
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:9px 14px;font-weight:600;}
+  .preview-strip b{color:#ff7a6b;}
+
+  /* ---- masthead ---- */
+  header.masthead{border-bottom:6px solid var(--ink);}
+  .masthead-inner{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;padding:26px 0 22px;}
+  .wordmark .script{font-family:"Yellowtail","Brush Script MT",cursive;font-size:clamp(46px,6vw,74px);line-height:.95;display:block;}
+  .wordmark .co{font-family:"Archivo Black",Arial Black,sans-serif;font-size:clamp(18px,2.4vw,28px);letter-spacing:.42em;text-transform:uppercase;margin-top:4px;display:block;}
+  .masthead-meta{text-align:right;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;line-height:1.9;}
+  .masthead-meta .stars{color:var(--red);letter-spacing:.2em;}
+  .masthead-meta a{font-weight:700;}
+
+  /* ---- hero ---- */
+  .hero{padding:64px 0 44px;}
+  .kicker{display:inline-block;border:3px solid var(--ink);padding:6px 14px;font-weight:700;
+    font-size:13px;letter-spacing:.22em;text-transform:uppercase;background:var(--paper);}
+  .hero h1{font-family:"Archivo Black",Arial Black,sans-serif;font-size:clamp(44px,9vw,124px);
+    line-height:.94;text-transform:uppercase;margin:26px 0 20px;letter-spacing:-.01em;}
+  .hero h1 .red{color:var(--red);}
+  .hero p.lede{font-size:clamp(17px,2.2vw,22px);max-width:640px;font-weight:600;}
+  .hero p.lede .script{font-family:"Yellowtail",cursive;font-weight:400;font-size:1.25em;}
+  .hero-rule{height:10px;background:var(--ink);margin-top:44px;position:relative;}
+  .hero-rule::after{content:"";position:absolute;left:0;right:0;top:14px;height:3px;background:var(--red);}
+
+  /* ---- flash sheet ---- */
+  .flash{padding:56px 0 72px;}
+  .section-head{display:flex;align-items:baseline;gap:18px;margin-bottom:8px;flex-wrap:wrap;}
+  .section-head h2{font-family:"Archivo Black",Arial Black,sans-serif;font-size:clamp(30px,4.6vw,54px);text-transform:uppercase;}
+  .section-head h2 .red{color:var(--red);}
+  .section-note{font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--red);}
+  .flash-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px;}
+  .flash-cell{border:5px solid var(--ink);background:#faf5e8;padding:14px;position:relative;}
+  .flash-cell:nth-child(odd){transform:rotate(-.7deg);}
+  .flash-cell:nth-child(even){transform:rotate(.6deg);}
+  .flash-cell.featured{grid-column:span 2;grid-row:span 2;}
+  .flash-cell .art{background:var(--paper-dark);border:3px solid var(--ink);overflow:hidden;}
+  .flash-cell.featured .art img{width:100%;height:100%;object-fit:cover;}
+  .flash-cell .art svg{width:100%;height:auto;display:block;}
+  .flash-cell .tag{position:absolute;top:-14px;left:12px;background:var(--red);color:var(--paper);
+    font-family:"Archivo Black",sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;}
+  .flash-cap{display:flex;justify-content:space-between;align-items:center;margin-top:12px;
+    font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+  .flash-cap .no{color:var(--red);white-space:nowrap;}
+
+  /* ---- sign artifact ---- */
+  .artifact{padding:24px 0 72px;}
+  .artifact-frame{border:8px solid var(--ink);background:#0e0d0b;position:relative;max-width:940px;margin:0 auto;}
+  .artifact-frame img{width:100%;}
+  .tape{position:absolute;width:110px;height:30px;background:rgba(176,42,32,.85);top:-20px;left:8%;transform:rotate(-8deg);}
+  .tape.t2{left:auto;right:8%;transform:rotate(7deg);}
+  .artifact figcaption{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    max-width:940px;margin:18px auto 0;font-size:15px;font-weight:600;}
+  .artifact figcaption .script{font-family:"Yellowtail",cursive;font-size:24px;font-weight:400;}
+
+  /* ---- stamp ---- */
+  .stamp-band{padding:20px 0 72px;text-align:center;}
+  .stamp{display:inline-block;border:6px double var(--red);color:var(--red);
+    font-family:"Archivo Black",Arial Black,sans-serif;text-transform:uppercase;
+    font-size:clamp(20px,3.4vw,38px);line-height:1.25;padding:18px 34px;transform:rotate(-4deg);
+    letter-spacing:.06em;box-shadow:inset 0 0 0 2px var(--paper),inset 0 0 0 5px var(--red);}
+  .stamp small{display:block;font-size:.42em;letter-spacing:.3em;margin-top:8px;}
+
+  /* ---- shop list (no cards) ---- */
+  .shoplist{padding:8px 0 72px;}
+  .shop-row{display:grid;grid-template-columns:90px 1fr;gap:8px 24px;padding:30px 0;border-top:4px solid var(--ink);align-items:start;}
+  .shop-row:last-child{border-bottom:4px solid var(--ink);}
+  .shop-row .num{font-family:"Archivo Black",Arial Black,sans-serif;font-size:clamp(34px,4.5vw,58px);color:var(--red);line-height:1;}
+  .shop-row h3{font-family:"Archivo Black",Arial Black,sans-serif;font-size:clamp(22px,3vw,34px);text-transform:uppercase;margin-bottom:8px;}
+  .shop-row p{max-width:620px;font-size:16px;}
+  .shop-row .fine{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-top:10px;display:block;}
+
+  /* ---- reviews line ---- */
+  .reviews{padding:0 0 72px;text-align:center;}
+  .reviews .big{font-family:"Archivo Black",Arial Black,sans-serif;font-size:clamp(26px,4vw,44px);text-transform:uppercase;}
+  .reviews .stars{color:var(--red);font-size:30px;letter-spacing:.25em;margin:10px 0;}
+  .reviews p{font-weight:600;}
+
+  /* ---- visit ---- */
+  .visit{background:var(--ink);color:var(--paper);padding:72px 0;}
+  .visit h2{font-family:"Archivo Black",Arial Black,sans-serif;font-size:clamp(34px,5.5vw,64px);text-transform:uppercase;margin-bottom:6px;}
+  .visit h2 .red{color:#ff7a6b;}
+  .visit .sub{font-size:17px;font-weight:600;max-width:560px;margin-bottom:38px;}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+  .hours{border:3px solid var(--paper);padding:26px 28px;}
+  .hours h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:15px;margin-bottom:14px;color:#ff7a6b;}
+  .hours table{width:100%;border-collapse:collapse;font-size:16px;}
+  .hours td{padding:8px 0;border-bottom:1px solid #3a3a3a;}
+  .hours td:last-child{text-align:right;font-weight:700;}
+  .where h3{font-family:"Archivo Black",sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:15px;margin-bottom:14px;color:#ff7a6b;}
+  .where address{font-style:normal;font-size:19px;font-weight:600;line-height:1.7;}
+  .where .phone{display:block;font-family:"Archivo Black",Arial Black,sans-serif;font-size:clamp(26px,3.6vw,40px);
+    margin:14px 0 24px;text-decoration:none;}
+  .where .phone:hover{color:#ff7a6b;}
+  .btn-call{display:inline-block;background:var(--red);color:var(--paper);text-decoration:none;
+    font-family:"Archivo Black",Arial Black,sans-serif;text-transform:uppercase;font-size:17px;letter-spacing:.08em;
+    padding:18px 34px;border:3px solid var(--paper);}
+  .btn-call:hover{background:var(--red-dark);}
+  .visit .fine-print{margin-top:30px;font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#c9c9c9;}
+
+  /* ---- footer ---- */
+  footer{border-top:6px solid var(--ink);padding:30px 0 40px;font-size:13px;}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline;}
+  footer .disc{max-width:560px;}
+  footer .script{font-family:"Yellowtail",cursive;font-size:22px;}
+
+  @media (max-width:760px){
+    .wrap{padding:0 18px;}
+    .masthead-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+    .masthead-meta{text-align:left;}
+    .flash-grid{grid-template-columns:1fr 1fr;gap:14px;}
+    .flash-cell.featured{grid-column:span 2;grid-row:auto;}
+    .visit-grid{grid-template-columns:1fr;}
+    .shop-row{grid-template-columns:64px 1fr;}
+    .tape{width:80px;}
   }
-  section{padding:4.5rem 0}
-  .divider{height:1px;background:var(--line);border:0}
-
-  /* Hero */
-  .hero{padding:5.5rem 0 4.5rem}
-  .hero h1{font-size:clamp(2.4rem,6vw,4.25rem);font-weight:700;margin:.5rem 0 1.25rem}
-  .hero p.lede{font-size:1.15rem;color:var(--muted);max-width:34rem}
-  .hero .rating{margin-top:1.5rem;font-weight:600}
-  .cta-row{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
-  .btn{
-    display:inline-block;
-    font-family:'DM Sans',sans-serif;
-    font-weight:600;
-    text-decoration:none;
-    padding:.85rem 1.7rem;
-    border-radius:999px;
-    border:1px solid var(--accent);
-    transition:background .2s,color .2s;
-  }
-  .btn.solid{background:var(--accent);color:#090b10}
-  .btn.ghost{color:var(--accent);background:transparent}
-  .btn.solid:hover{background:#c0c8ff}
-  .btn.ghost:hover{background:rgba(161,173,255,.12)}
-
-  /* Services */
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:2rem}
-  .card{background:var(--panel);padding:2rem 1.75rem}
-  .card h3{font-size:1.2rem;margin-bottom:.75rem}
-  .card p{color:var(--muted);font-size:.98rem}
-
-  /* About */
-  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
-  .about-grid p{color:var(--muted);margin-bottom:1.1rem}
-  .about-grid p strong{color:var(--ink);font-weight:600}
-
-  /* Gallery */
-  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}
-  .gallery figure{
-    border:1px solid var(--line);
-    border-radius:14px;
-    overflow:hidden;
-    background:var(--panel);
-  }
-  .gallery img{display:block;width:100%;height:340px;object-fit:cover}
-  .gallery figcaption{padding:1rem 1.25rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
-
-  /* Visit */
-  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2rem}
-  .hours{width:100%;border-collapse:collapse}
-  .hours th,.hours td{text-align:left;padding:.85rem .25rem;border-bottom:1px solid var(--line);font-size:.98rem}
-  .hours th{color:var(--muted);font-weight:500}
-  .hours td:last-child{text-align:right;color:var(--ink)}
-  .visit-info p{margin-bottom:1rem;color:var(--muted)}
-  .visit-info p strong{color:var(--ink);font-weight:600}
-  .notice{
-    margin-top:1.5rem;
-    border:1px solid var(--accent);
-    border-radius:12px;
-    padding:1.1rem 1.4rem;
-    font-family:'DM Sans',sans-serif;
-    font-weight:600;
-    color:var(--accent);
-  }
-
-  footer{padding:2.5rem 0 3rem;color:var(--muted);font-size:.88rem}
-  footer .fine{margin-top:.75rem;font-size:.8rem;color:#7c8199}
-
-  @media (max-width:640px){
-    section{padding:3.25rem 0}
-    .hero{padding:3.75rem 0 3rem}
-    .cards{grid-template-columns:1fr}
-    .about-grid{grid-template-columns:1fr;gap:1.5rem}
-    .gallery{grid-template-columns:1fr}
-    .gallery img{height:260px}
-    .visit-grid{grid-template-columns:1fr;gap:2rem}
-    .btn{width:100%;text-align:center}
+  @media (max-width:420px){
+    .preview-strip{font-size:9.5px;padding:7px 8px;line-height:1.5;}
+    .flash-grid{grid-template-columns:1fr;}
+    .flash-cell.featured{grid-column:span 1;}
+    .flash-cell:nth-child(odd),.flash-cell:nth-child(even){transform:none;}
   }
 </style>
 </head>
 <body>
 
-<div class="preview-bar">DESIGN PREVIEW</div>
+<div class="preview-strip">Design preview: a free mockup, <b>not affiliated with or endorsed by</b> the business</div>
 
-<header class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Tattoo Studio in Mobile, Alabama</div>
-    <h1>Old Familiar Tattoo Company</h1>
-    <p class="lede">A custom tattoo and piercing studio in downtown Mobile.</p>
-    <p class="rating">Rated 5.0 on Google from 103 reviews</p>
-    <div class="cta-row">
-      <a class="btn solid" href="tel:+12515868670">Call (251) 586-8670</a>
-      <a class="btn ghost" href="#visit">Plan your visit</a>
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <div class="wordmark">
+      <span class="script">Old Familiar</span>
+      <span class="co">Tattoo Co.</span>
+    </div>
+    <div class="masthead-meta">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 &middot; 103 Google reviews<br>
+      6 S Conception St, Mobile, AL<br>
+      <a href="tel:+12515868670">(251) 586-8670</a>
     </div>
   </div>
 </header>
 
-<hr class="divider">
-
-<section>
+<section class="hero">
   <div class="wrap">
-    <div class="eyebrow">Services</div>
-    <h2>What the studio offers</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Custom Tattoos</h3>
-        <p>Custom tattoos in styles from traditional to modern.</p>
+    <span class="kicker">Custom tattoo + piercing &middot; Mobile, AL</span>
+    <h1>Sit down.<br><span class="red">Get tattooed.</span></h1>
+    <p class="lede">We are a custom tattoo and piercing studio on Conception Street in downtown Mobile. You bring the idea. We draw it, we ink it, and you wear it forever. <span class="script">No shortcuts, no regrets.</span></p>
+    <div class="hero-rule"></div>
+  </div>
+</section>
+
+<section class="flash">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Fresh <span class="red">flash</span></h2>
+      <span class="section-note">Artwork first. Always.</span>
+    </div>
+    <div class="flash-grid">
+
+      <div class="flash-cell featured">
+        <span class="tag">Shop work</span>
+        <div class="art"><img src="img/photo-2.jpg" alt="Traditional-style snake and handshake tattoo reading Trust No One"></div>
+        <div class="flash-cap"><span>Traditional blackwork, healed in</span><span class="no">No. 001</span></div>
       </div>
-      <div class="card">
-        <h3>Piercings</h3>
-        <p>Body piercings use implant grade titanium and are APP-compliant.</p>
+
+      <div class="flash-cell">
+        <div class="art">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Dagger through a red heart flash design">
+            <rect width="200" height="200" fill="#e9dfc8"/>
+            <path d="M100 168 C60 138 38 116 38 86 C38 62 54 50 72 50 C86 50 96 58 100 66 C104 58 114 50 128 50 C146 50 162 62 162 86 C162 116 140 138 100 168 Z" fill="#b02a20" stroke="#111" stroke-width="7"/>
+            <rect x="94" y="18" width="12" height="120" fill="#111"/>
+            <path d="M100 138 L88 164 L100 176 L112 164 Z" fill="#111"/>
+            <rect x="70" y="30" width="60" height="14" rx="4" fill="#111"/>
+            <circle cx="100" cy="20" r="10" fill="#111"/>
+          </svg>
+        </div>
+        <div class="flash-cap"><span>Dagger heart</span><span class="no">No. 002</span></div>
       </div>
-      <div class="card">
+
+      <div class="flash-cell">
+        <div class="art">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Anchor flash design">
+            <rect width="200" height="200" fill="#e9dfc8"/>
+            <circle cx="100" cy="38" r="14" fill="none" stroke="#111" stroke-width="8"/>
+            <rect x="95" y="52" width="10" height="100" fill="#111"/>
+            <rect x="62" y="82" width="76" height="12" fill="#111"/>
+            <path d="M40 118 C52 152 76 164 100 164 C124 164 148 152 160 118" fill="none" stroke="#111" stroke-width="10"/>
+            <path d="M40 118 L28 106 M40 118 L52 104 M160 118 L172 106 M160 118 L148 104" stroke="#111" stroke-width="10"/>
+            <path d="M100 152 L92 166 L100 174 L108 166 Z" fill="#b02a20"/>
+          </svg>
+        </div>
+        <div class="flash-cap"><span>Anchor</span><span class="no">No. 003</span></div>
+      </div>
+
+      <div class="flash-cell">
+        <div class="art">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Skull flash design">
+            <rect width="200" height="200" fill="#e9dfc8"/>
+            <path d="M100 40 C62 40 46 68 46 96 C46 112 52 122 60 128 L60 152 C60 162 68 168 76 168 L124 168 C132 168 140 162 140 152 L140 128 C148 122 154 112 154 96 C154 68 138 40 100 40 Z" fill="#e9dfc8" stroke="#111" stroke-width="8"/>
+            <ellipse cx="78" cy="100" rx="16" ry="20" fill="#111"/>
+            <ellipse cx="122" cy="100" rx="16" ry="20" fill="#111"/>
+            <path d="M100 118 L92 134 L108 134 Z" fill="#b02a20"/>
+            <path d="M76 152 L76 168 M92 152 L92 168 M108 152 L108 168 M124 152 L124 168" stroke="#111" stroke-width="6"/>
+          </svg>
+        </div>
+        <div class="flash-cap"><span>Skull</span><span class="no">No. 004</span></div>
+      </div>
+
+      <div class="flash-cell">
+        <div class="art">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Rose flash design">
+            <rect width="200" height="200" fill="#e9dfc8"/>
+            <path d="M100 170 L100 128" stroke="#111" stroke-width="9"/>
+            <path d="M100 152 C80 152 68 142 62 130 C78 128 94 134 100 146 Z" fill="#111"/>
+            <path d="M100 160 C120 160 132 150 138 138 C122 136 106 142 100 154 Z" fill="#111"/>
+            <circle cx="100" cy="86" r="44" fill="#b02a20" stroke="#111" stroke-width="7"/>
+            <path d="M100 52 C86 52 78 64 78 78 C78 92 88 102 100 102 C112 102 120 92 114 82 C110 74 100 74 98 82 C96 88 102 92 106 88" fill="none" stroke="#111" stroke-width="6"/>
+            <path d="M100 130 C92 124 88 116 88 108 M100 130 C108 124 112 116 112 108" stroke="#111" stroke-width="5" fill="none"/>
+          </svg>
+        </div>
+        <div class="flash-cap"><span>Rose</span><span class="no">No. 005</span></div>
+      </div>
+
+      <div class="flash-cell">
+        <div class="art">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Heart with Mobile banner flash design">
+            <rect width="200" height="200" fill="#e9dfc8"/>
+            <path d="M100 168 C70 144 52 128 52 106 C52 90 64 80 78 80 C90 80 98 88 100 96 C102 88 110 80 122 80 C136 80 148 90 148 106 C148 128 130 144 100 168 Z" fill="#b02a20" stroke="#111" stroke-width="7"/>
+            <path d="M34 118 L18 110 L18 78 L34 70 L166 70 L182 78 L182 110 L166 118 Z" fill="#e9dfc8" stroke="#111" stroke-width="6"/>
+            <text x="100" y="105" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="22" fill="#111" letter-spacing="6">MOBILE</text>
+          </svg>
+        </div>
+        <div class="flash-cap"><span>Mobile banner</span><span class="no">No. 006</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="artifact">
+  <div class="wrap">
+    <figure class="artifact-frame">
+      <span class="tape"></span><span class="tape t2"></span>
+      <img src="img/photo-1.jpg" alt="Hand-painted Old Familiar Tattoo Co. window sign reading Cash Only">
+    </figure>
+    <figcaption>
+      <span class="script">Painted by hand, not printed.</span>
+      <span>Our window on Conception Street. The sign says what we mean: cash only, appointment required.</span>
+    </figcaption>
+  </div>
+</section>
+
+<section class="stamp-band">
+  <div class="wrap">
+    <div class="stamp">Cash only.<br>Appointment required.
+      <small>No cards &middot; No walk-ins</small>
+    </div>
+  </div>
+</section>
+
+<section class="shoplist">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>The shop <span class="red">list</span></h2>
+      <span class="section-note">What we do</span>
+    </div>
+
+    <div class="shop-row">
+      <div class="num">01</div>
+      <div>
+        <h3>Custom tattoos</h3>
+        <p>Traditional to modern styles, drawn for you and nobody else. Bring reference photos or bring nothing but an idea and we will build the design with you at the consultation.</p>
+      </div>
+    </div>
+
+    <div class="shop-row">
+      <div class="num">02</div>
+      <div>
+        <h3>Body piercings</h3>
+        <p>Implant-grade titanium jewelry in an APP-compliant studio. We walk you through placement, jewelry, and aftercare before anything happens.</p>
+        <span class="fine">Implant-grade titanium &middot; APP-compliant</span>
+      </div>
+    </div>
+
+    <div class="shop-row">
+      <div class="num">03</div>
+      <div>
         <h3>Consultations</h3>
-        <p>Consultations are available by appointment.</p>
+        <p>Talk it through first. Placement, size, style, and what it will take. Call the shop and we will set one up around your schedule.</p>
+        <span class="fine">Appointment required for all services</span>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="divider">
-
-<section>
+<section class="reviews">
   <div class="wrap">
-    <div class="eyebrow">The Studio</div>
-    <div class="about-grid">
-      <div>
-        <h2>The studio</h2>
-      </div>
-      <div>
-        <p><strong>Old Familiar Tattoo Company</strong> is a tattoo and piercing studio at 6 S Conception St in downtown Mobile, Alabama.</p>
-        <p>The studio offers custom tattoos and body piercings. Consultations are available by appointment.</p>
-        <p>The studio is cash only. An appointment is required before you come in.</p>
-      </div>
-    </div>
+    <div class="big">Rated 5.0 by the people<br>who sit in our chairs</div>
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <p>5.0 stars across 103 Google reviews.</p>
   </div>
 </section>
 
-<hr class="divider">
-
-<section>
+<section class="visit">
   <div class="wrap">
-    <div class="eyebrow">Work</div>
-    <h2>From the shop</h2>
-    <div class="gallery">
-      <figure>
-        <img src="img/photo-1.jpg" alt="Old Familiar Tattoo Co. window lettering with a Cash Only sign on the glass.">
-        <figcaption>The shop window at 6 S Conception St.</figcaption>
-      </figure>
-      <figure>
-        <img src="img/photo-2.jpg" alt="Traditional tattoo of a handshake with a snake, lettered Trust No One.">
-        <figcaption>A traditional-style tattoo from the shop.</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<section id="visit">
-  <div class="wrap">
-    <div class="eyebrow">Visit</div>
-    <h2>Hours and location</h2>
+    <h2>Come <span class="red">get work</span></h2>
+    <p class="sub">Call ahead. We take appointments, not walk-ins, and the register takes cash only.</p>
     <div class="visit-grid">
-      <div>
-        <table class="hours">
-          <tr><th>Sunday to Monday</th><td>1:00 PM to 6:00 PM</td></tr>
-          <tr><th>Tuesday to Saturday</th><td>1:00 PM to 8:00 PM</td></tr>
+      <div class="hours">
+        <h3>Shop hours</h3>
+        <table>
+          <tr><td>Sunday</td><td>1:00 PM &ndash; 6:00 PM</td></tr>
+          <tr><td>Monday</td><td>1:00 PM &ndash; 6:00 PM</td></tr>
+          <tr><td>Tuesday</td><td>1:00 PM &ndash; 8:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>1:00 PM &ndash; 8:00 PM</td></tr>
+          <tr><td>Thursday</td><td>1:00 PM &ndash; 8:00 PM</td></tr>
+          <tr><td>Friday</td><td>1:00 PM &ndash; 8:00 PM</td></tr>
+          <tr><td>Saturday</td><td>1:00 PM &ndash; 8:00 PM</td></tr>
         </table>
       </div>
-      <div class="visit-info">
-        <p><strong>Address</strong><br>
-        6 S Conception St<br>
-        Mobile, AL 36602</p>
-        <p><strong>Phone</strong><br>
-        <a href="tel:+12515868670">(251) 586-8670</a></p>
-        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=6+S+Conception+St+Mobile+AL+36602">Get directions</a></p>
-        <div class="notice">Cash only. Appointment required.</div>
+      <div class="where">
+        <h3>Find the shop</h3>
+        <address>6 S Conception St<br>Mobile, AL 36602</address>
+        <a class="phone" href="tel:+12515868670">(251) 586-8670</a>
+        <a class="btn-call" href="tel:+12515868670">Call for an appointment</a>
+        <p class="fine-print">Cash only &middot; Appointment required</p>
       </div>
     </div>
   </div>
 </section>
-
-<hr class="divider">
 
 <footer>
   <div class="wrap">
-    <div>Old Familiar Tattoo Company</div>
-    <div class="fine">Concept preview. A free mockup, not affiliated with or endorsed by the business.</div>
+    <p class="disc"><span class="script">Old Familiar Tattoo Co.</span><br>
+    Concept preview. A free mockup, not affiliated with or endorsed by the business.<br>
+    6 S Conception St, Mobile, AL 36602 &middot; (251) 586-8670</p>
+    <p>Design preview &middot; Noindex</p>
   </div>
 </footer>
 
