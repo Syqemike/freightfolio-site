@@ -244,6 +244,8 @@ section.block{padding:64px 0}
   font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;
   letter-spacing:.03em;color:var(--graphite);margin-bottom:6px;
 }
+a.proof-link{color:inherit;text-decoration:none;display:block}
+a.proof-link:hover .rating-line{color:var(--cobalt);text-decoration:underline}
 .proof .note{font-size:14px;color:var(--muted)}
 
 /* Booking section */
@@ -482,12 +484,12 @@ footer{background:var(--graphite-deep);color:#9aa1b3;padding:44px 0 30px}
 <section class="block" id="reviews">
   <div class="wrap">
     <p class="sec-label">Proof / 003</p>
-    <h2 class="sec-title">Clients keep coming back.</h2>
-    <p class="sec-lede">Ratings pulled from his live review profiles. Click through to read them yourself.</p>
+    <h2 class="sec-title">What the ratings say.</h2>
+    <p class="sec-lede">Ratings from his live review profiles.</p>
     <ul class="proof">
       <li>
-        <div class="rating-line">4.9 from 197 Booksy reviews</div>
-        <p class="note">Booked through his live Booksy profile, where availability and pricing are listed.</p>
+        <a class="proof-link" href="https://cutzbyrick2.booksy.com"><div class="rating-line">4.9 from 197 Booksy reviews</div>
+        <p class="note">Booked through his live Booksy profile, where availability and pricing are listed.</p></a>
       </li>
       <li>
         <div class="rating-line">4.7 from 19 Google reviews</div>

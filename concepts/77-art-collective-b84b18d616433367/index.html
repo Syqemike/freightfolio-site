@@ -158,10 +158,14 @@
     background:var(--ink-soft);border:2px solid var(--amber);padding:1.8rem;
   }
   @media(max-width:620px){.spot-card{grid-template-columns:1fr;padding:1.3rem}}
-  .spot-card .mono{
-    font-family:'Oswald',sans-serif;font-size:2.2rem;letter-spacing:.05em;
-    border:3px solid var(--amber);aspect-ratio:1;display:flex;align-items:center;justify-content:center;
-    color:var(--amber);text-transform:uppercase;background:var(--ink);
+  .spot-card .artist-art{
+    border:3px solid var(--amber);aspect-ratio:1;background:var(--ink);
+    display:flex;flex-direction:column;
+  }
+  .spot-card .artist-art svg{display:block;width:100%;flex:1}
+  .spot-card .artist-art figcaption{
+    font-size:.72rem;font-style:italic;color:#a89e88;text-align:center;
+    padding:.45rem .5rem;border-top:1px solid rgba(224,142,43,.4);
   }
   .spot-card h3{font-size:clamp(1.7rem,5vw,2.4rem);color:var(--paper);margin-bottom:.6rem}
   .spot-card p{color:#cfc8b8;margin-bottom:.9rem;font-size:1rem;max-width:36rem}
@@ -308,7 +312,10 @@
         <h2>Artist Spotlight</h2>
       </div>
       <div class="spot-card">
-        <div class="mono" aria-hidden="true">BW</div>
+        <figure class="artist-art">
+          <svg viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#e08e2b" stroke-width="3"><circle cx="100" cy="78" r="34"/><path d="M66 78 h-28 M134 78 h28 M100 44 v-26 M100 112 v26" stroke-linecap="round"/><path d="M40 150 q30 -26 60 0 t60 0" stroke="#d8d2c4" stroke-width="2.5"/><path d="M52 168 q24 -18 48 0 t48 0" stroke="#d8d2c4" stroke-width="2"/></g><circle cx="100" cy="78" r="10" fill="#e08e2b"/></svg>
+          <figcaption>Concept art drawn for this preview</figcaption>
+        </figure>
         <div>
           <span class="name-tag">Featured artist</span>
           <h3>Brian Winston</h3>

@@ -115,9 +115,10 @@ nav.sections a:hover{border-color:var(--red); color:var(--red)}
 /* ---------- artists ---------- */
 .artists{padding:2.8rem 0}
 .artist-strip{
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-top:1.6rem;
+  display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:1.6rem;
 }
 .artist-card{
+  flex:1 1 150px; max-width:220px;
   background:var(--card); border:2px solid var(--ink); border-radius:50% 50% 6px 6px;
   padding:1.6rem 1rem 1.1rem; text-align:center; position:relative;
 }
@@ -203,7 +204,7 @@ footer.site .concept{font-weight:700}
         <figcaption>The Star</figcaption>
       </figure>
       <figure class="flash-card">
-        <svg viewBox="0 0 100 100" aria-hidden="true"><g><path d="M50 20 C30 20 28 44 50 60 C72 44 70 20 50 20 Z" fill="#a8232a" stroke="#171310" stroke-width="3"/><path d="M50 60 L50 92 M34 74 L66 74" stroke="#1d2c52" stroke-width="4"/><rect x="14" y="66" width="72" height="16" rx="3" fill="#f7f0dd" stroke="#171310" stroke-width="3"/></g></svg>
+        <svg viewBox="0 0 100 100" aria-hidden="true"><g><path d="M50 90 C18 62 10 38 26 25 C37 16 49 21 50 33 C51 21 63 16 74 25 C90 38 82 62 50 90 Z" fill="#a8232a" stroke="#171310" stroke-width="3"/><path d="M50 90 L50 62" stroke="#171310" stroke-width="2.5"/></g></svg>
         <figcaption>The Heart</figcaption>
       </figure>
       <figure class="flash-card">
@@ -211,7 +212,7 @@ footer.site .concept{font-weight:700}
         <figcaption>The Dagger</figcaption>
       </figure>
       <figure class="flash-card">
-        <svg viewBox="0 0 100 100" aria-hidden="true"><g><circle cx="50" cy="40" r="22" fill="none" stroke="#a8232a" stroke-width="5"/><circle cx="50" cy="40" r="12" fill="none" stroke="#1d2c52" stroke-width="4"/><path d="M50 62 V92 M36 70 L64 70" stroke="#171310" stroke-width="5"/><path d="M28 84 Q50 76 72 84" fill="none" stroke="#171310" stroke-width="3"/></g></svg>
+        <svg viewBox="0 0 100 100" aria-hidden="true"><g><path d="M32 18 L32 56 A18 18 0 0 0 68 56 L68 18" fill="none" stroke="#a8232a" stroke-width="11"/><g fill="#171310"><circle cx="32" cy="36" r="2.6"/><circle cx="32" cy="52" r="2.6"/><circle cx="68" cy="36" r="2.6"/><circle cx="68" cy="52" r="2.6"/><circle cx="50" cy="70" r="2.6"/></g></g></svg>
         <figcaption>The Horseshoe</figcaption>
       </figure>
       <figure class="flash-card">
