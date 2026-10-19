@@ -1,5 +1,5 @@
 /* Freightfolio - portfolio showroom.
-   Concept data reflects the actual published concept pages. All sixteen are
+   Concept data reflects the actual published concept pages. All are
    design previews only, never presented as client work. */
 (function () {
   "use strict";
@@ -275,6 +275,227 @@
         "Booksy online booking link",
         "First-person bio section",
         "Airport Blvd location block"
+      ]
+    },
+    "cut-doctors": {
+      name: "Cut Doctors",
+      category: "Barber Shop",
+      location: "Gulfport, Mississippi",
+      url: "https://freightfolio.net/concepts/cut-doctors-034ab7392f6f3c59/",
+      desktop: "img/showcase/cut-doctors-thumb.jpg",
+      mobile: "img/showcase/cut-doctors-thumb.jpg",
+      blurb: "A high-energy barbershop site with services, reviews, and easy ways to get in touch.",
+      features: [
+        "Haircut and shave service menu",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Shop hours table",
+        "Location and directions block",
+        "Design preview disclosure"
+      ]
+    },
+    "eternal-expressions": {
+      name: "Eternal Expressions Tattoo",
+      category: "Tattoo Studio",
+      location: "Biloxi, Mississippi",
+      url: "https://freightfolio.net/concepts/eternal-expressions-tattoo-5d9f14a22e76/",
+      desktop: "img/showcase/eternal-expressions-thumb.jpg",
+      mobile: "img/showcase/eternal-expressions-thumb.jpg",
+      blurb: "A tattoo studio concept with gallery space, artist info, and clear contact options.",
+      features: [
+        "Photo gallery layout",
+        "Services and styles list",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Shop hours table",
+        "Design preview disclosure"
+      ]
+    },
+    "flour-girls": {
+      name: "Flour Girls Bakery",
+      category: "Bakery",
+      location: "Mississippi Gulf Coast",
+      url: "https://freightfolio.net/concepts/flour-girls-bakery-a86f99fa91452093/",
+      desktop: "img/showcase/flour-girls-thumb.jpg",
+      mobile: "img/showcase/flour-girls-thumb.jpg",
+      blurb: "A warm bakery site with menu highlights, ordering info, and shop details.",
+      features: [
+        "Menu and specialties list",
+        "Photo-forward layout",
+        "Ordering and contact info",
+        "Customer reviews section",
+        "Shop hours table",
+        "Design preview disclosure"
+      ]
+    },
+    "gentlemans-blade": {
+      name: "The Gentleman's Blade",
+      category: "Barber Shop",
+      location: "Biloxi, Mississippi",
+      url: "https://freightfolio.net/concepts/gentlemans-blade-biloxi-f0119f2b07413e53/",
+      desktop: "img/showcase/gentlemans-blade-thumb.jpg",
+      mobile: "img/showcase/gentlemans-blade-thumb.jpg",
+      blurb: "A classic barbershop concept with services, booking links, and shop character.",
+      features: [
+        "Haircut and grooming service menu",
+        "Online booking links",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Shop hours table",
+        "Design preview disclosure"
+      ]
+    },
+    "la-panaderia": {
+      name: "La Panader\u00eda",
+      category: "Bakery",
+      location: "Gulfport, Mississippi",
+      url: "https://freightfolio.net/concepts/la-panaderia-17985e6a6e08fe76/",
+      desktop: "img/showcase/la-panaderia-thumb.jpg",
+      mobile: "img/showcase/la-panaderia-thumb.jpg",
+      blurb: "A Latino bakery site with daily offerings, hours, and a warm neighborhood feel.",
+      features: [
+        "Daily menu and specialties",
+        "Photo-forward layout",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Daily hours table",
+        "Design preview disclosure"
+      ]
+    },
+    "pats-top-gun": {
+      name: "Pat's Top Gun Cuts",
+      category: "Barber Shop",
+      location: "Mississippi Gulf Coast",
+      url: "https://freightfolio.net/concepts/pats-top-gun-cuts-90acee0e3cbc/",
+      desktop: "img/showcase/pats-top-gun-thumb.jpg",
+      mobile: "img/showcase/pats-top-gun-thumb.jpg",
+      blurb: "A no-fuss barbershop page with services, hours, and contact info up front.",
+      features: [
+        "Haircut service menu",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Shop hours table",
+        "Location and directions block",
+        "Design preview disclosure"
+      ]
+    },
+    "platinum-petz": {
+      name: "Platinum Petz",
+      category: "Pet Grooming",
+      location: "Mississippi Gulf Coast",
+      url: "https://freightfolio.net/concepts/platinum-petz-04347ee13fae/",
+      desktop: "img/showcase/platinum-petz-thumb.jpg",
+      mobile: "img/showcase/platinum-petz-thumb.jpg",
+      blurb: "A friendly pet grooming site with services, booking info, and happy-client energy.",
+      features: [
+        "Grooming service menu",
+        "Photo-forward layout",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Shop hours table",
+        "Design preview disclosure"
+      ]
+    },
+    "hard-knox": {
+      name: "Hard Knox Tattoo",
+      category: "Tattoo Studio",
+      location: "Knoxville, Tennessee",
+      url: "https://freightfolio.net/concepts/hard-knox-tattoo-e15c05f46de0fa61/",
+      desktop: "img/showcase/hard-knox-thumb.jpg",
+      mobile: "img/showcase/hard-knox-thumb.jpg",
+      blurb: "A bold tattoo studio concept with gallery space and clear booking paths.",
+      features: [
+        "Photo gallery layout",
+        "Services and styles list",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Shop hours table",
+        "Design preview disclosure"
+      ]
+    },
+    "gilded-mermaid": {
+      name: "The Gilded Mermaid Tattoo Studio",
+      category: "Tattoo Studio",
+      location: "Ravenel, South Carolina",
+      url: "https://freightfolio.net/concepts/gilded-mermaid-tattoo-85c311528e9a333a/",
+      desktop: "img/showcase/gilded-mermaid-thumb.jpg",
+      mobile: "img/showcase/gilded-mermaid-thumb.jpg",
+      blurb: "An artistic tattoo studio site with a distinctive look and straightforward contact info.",
+      features: [
+        "Photo gallery layout",
+        "Services and styles list",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Shop hours table",
+        "Design preview disclosure"
+      ]
+    },
+    "barber-pole": {
+      name: "The Barber Pole",
+      category: "Barber Shop",
+      location: "Savannah, Georgia",
+      url: "https://freightfolio.net/concepts/barber-pole-savannah-1f4a2301f81cf112/",
+      desktop: "img/showcase/barber-pole-thumb.jpg",
+      mobile: "img/showcase/barber-pole-thumb.jpg",
+      blurb: "A heritage-style barbershop page with services, hours, and easy contact.",
+      features: [
+        "Haircut and shave service menu",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Shop hours table",
+        "Location and directions block",
+        "Design preview disclosure"
+      ]
+    },
+    "icut": {
+      name: "iCut Barber Shop & Lounge",
+      category: "Barber Shop",
+      location: "Virginia Beach, Virginia",
+      url: "https://freightfolio.net/concepts/icut-barbershop-lounge-ee5431b179fe8885/",
+      desktop: "img/showcase/icut-thumb.jpg",
+      mobile: "img/showcase/icut-thumb.jpg",
+      blurb: "A modern barbershop and lounge site with services and booking info.",
+      features: [
+        "Haircut and grooming service menu",
+        "Lounge and atmosphere highlights",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Shop hours table",
+        "Design preview disclosure"
+      ]
+    },
+    "calaveras": {
+      name: "Calaveras Tattoos",
+      category: "Tattoo Studio",
+      location: "San Antonio, Texas",
+      url: "https://freightfolio.net/concepts/calaveras-tattoos-63d689817e8a82ab/",
+      desktop: "img/showcase/calaveras-thumb.jpg",
+      mobile: "img/showcase/calaveras-thumb.jpg",
+      blurb: "A vibrant tattoo studio concept with cultural character and clear contact paths.",
+      features: [
+        "Photo gallery layout",
+        "Services and styles list",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Shop hours table",
+        "Design preview disclosure"
+      ]
+    },
+    "tailwaggers": {
+      name: "TailWaggers Salon and Boutique",
+      category: "Pet Grooming",
+      location: "D'Iberville, Mississippi",
+      url: "https://freightfolio.net/concepts/tailwaggers-salon-8e035e0e1cb623eb/",
+      desktop: "img/showcase/tailwaggers-thumb.jpg",
+      mobile: "img/showcase/tailwaggers-thumb.jpg",
+      blurb: "A pet salon and boutique site with services, retail highlights, and booking info.",
+      features: [
+        "Grooming and boutique service list",
+        "Photo-forward layout",
+        "Customer reviews section",
+        "Click-to-call phone number",
+        "Shop hours table",
+        "Design preview disclosure"
       ]
     }
   };

@@ -821,7 +821,7 @@ em { font-style: normal; color: var(--accent); }
 .legal h2 { margin-top: 2.2rem; font-size: clamp(28px, 3vw, 40px); }
 .legal ul { color: var(--muted); }
 .legal li { margin-bottom: 0.5rem; font-size: 14px; }
-.legal p { font-size: 14px; }
+.legal p { font-size: 14px; color: var(--text); }
 .legal a { color: #c7d2ff; text-decoration: underline; }
 .updated { font-size: 11px; color: #99a3bb; }
 
