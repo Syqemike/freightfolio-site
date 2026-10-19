@@ -2,263 +2,457 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>La Panaderia | Latino Bakery in Gulfport, MS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>La Panaderia | Pan Dulce Bakery in Gulfport, MS</title>
+<meta name="description" content="Design preview concept. La Panaderia is a Latino bakery at 1909 E Pass Rd, Gulfport, MS. Pan dulce, special-occasion cakes, drinks, and Latin American fare. Open daily 8:30 AM to 7:00 PM.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Caveat:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #090b10;
-    --ink: #eef0fb;
-    --muted: #9aa0b8;
-    --accent: #a1adff;
-    --line: rgba(161,173,255,.2);
-    --card: #0e1119;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
-    -webkit-text-size-adjust: 100%;
-  }
-  h1, h2, h3 {
-    font-family: 'DM Sans', 'Manrope', system-ui, sans-serif;
-    line-height: 1.15;
-  }
-  a { color: var(--accent); }
-  .preview-bar {
-    text-align: center;
-    padding: 8px 16px;
-    background: #12151f;
-    border-bottom: 1px solid var(--line);
-  }
-  .preview-pill {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    color: var(--bg);
-    background: var(--accent);
-    padding: 4px 14px;
-    border-radius: 999px;
-  }
-  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
-  header.hero {
-    padding: 88px 0 72px;
-    text-align: center;
-    border-bottom: 1px solid var(--line);
-  }
-  .eyebrow {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .22em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 18px;
-  }
-  header.hero h1 {
-    font-size: 56px;
-    font-weight: 700;
-    letter-spacing: -.01em;
-    margin-bottom: 16px;
-  }
-  .tagline {
-    color: var(--muted);
-    font-size: 18px;
-    max-width: 560px;
-    margin: 0 auto 32px;
-  }
-  .cta {
-    display: inline-block;
-    background: var(--accent);
-    color: var(--bg);
-    font-weight: 700;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 14px 34px;
-    border-radius: 10px;
-  }
-  .cta:hover { filter: brightness(1.08); }
-  .rating {
-    margin-top: 20px;
-    color: var(--muted);
-    font-size: 14px;
-  }
-  section.block {
-    padding: 64px 0;
-    border-bottom: 1px solid var(--line);
-  }
-  section.block h2 {
-    font-size: 32px;
-    margin-bottom: 24px;
-  }
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-  .service-card {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 24px;
-  }
-  .service-card h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: var(--ink);
-  }
-  .service-card p {
-    color: var(--muted);
-    font-size: 15px;
-  }
-  .about p { color: var(--muted); font-size: 17px; max-width: 640px; }
-  .gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-  }
-  .gallery figcaption {
-    color: var(--muted);
-    font-size: 13px;
-    margin-top: 10px;
-  }
-  table.hours {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 32px;
-  }
-  table.hours th, table.hours td {
-    text-align: left;
-    padding: 12px 4px;
-    border-bottom: 1px solid var(--line);
-    font-size: 16px;
-  }
-  table.hours th { font-weight: 600; color: var(--ink); }
-  table.hours td { color: var(--muted); }
-  table.hours tr:last-child th, table.hours tr:last-child td { border-bottom: none; }
-  .visit-lines p { margin-bottom: 10px; font-size: 16px; color: var(--muted); }
-  .visit-lines strong { color: var(--ink); font-weight: 600; }
-  footer {
-    padding: 40px 0 56px;
-    text-align: center;
-  }
-  footer .fine {
-    color: var(--muted);
-    font-size: 13px;
-    max-width: 560px;
-    margin: 0 auto 12px;
-  }
-  footer .copyright { color: var(--muted); font-size: 13px; }
-  @media (max-width: 640px) {
-    header.hero { padding: 56px 0 48px; }
-    header.hero h1 { font-size: 38px; }
-    .tagline { font-size: 16px; }
-    .services-grid { grid-template-columns: 1fr; }
-    section.block { padding: 44px 0; }
-    section.block h2 { font-size: 26px; }
-    .cta { width: 100%; text-align: center; padding: 16px 20px; }
-  }
+:root{
+  --cream:#fdf5e6;
+  --cream-deep:#f8ead0;
+  --cocoa:#4a2b1e;
+  --cocoa-soft:#6b4a35;
+  --terra:#c65d3b;
+  --terra-dark:#a0472a;
+  --turq:#2a9d8f;
+  --turq-dark:#1e7c71;
+  --marigold:#e9b44c;
+  --marigold-soft:#f7dd9a;
+  --blush:#f3c6a5;
+  --white:#fffdf8;
+  --shadow:0 18px 40px rgba(74,43,30,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Nunito','Trebuchet MS',system-ui,-apple-system,sans-serif;
+  background:var(--cream);
+  color:var(--cocoa);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+/* ---------- top ribbon ---------- */
+.topbar{
+  background:var(--terra);
+  color:#fff7ea;
+  font-size:.82rem;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+.topbar-inner{
+  max-width:1200px;margin:0 auto;padding:.55rem 1.25rem;
+  display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;
+  align-items:center;justify-content:center;text-align:center;
+}
+.topbar a{text-decoration:none;border-bottom:2px solid rgba(255,255,255,.45)}
+.topbar a:hover{border-bottom-color:#fff}
+.topbar .dot{opacity:.6}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  max-width:1200px;margin:0 auto;
+  padding:3.2rem 1.5rem 2.4rem;
+  display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;
+  align-items:center;
+}
+.badge{
+  display:inline-block;
+  background:var(--marigold-soft);
+  color:var(--terra-dark);
+  font-weight:800;font-size:.85rem;
+  padding:.4rem 1rem;border-radius:999px;
+  border:2px solid var(--marigold);
+  margin-bottom:1.1rem;
+}
+.hero h1{
+  font-family:'Baloo 2','Arial Rounded MT Bold','Trebuchet MS',sans-serif;
+  font-weight:800;
+  font-size:clamp(2.6rem,5.4vw,4.4rem);
+  line-height:1.04;
+  color:var(--cocoa);
+  margin-bottom:1rem;
+}
+.hero h1 .accent{color:var(--terra)}
+.hero h1 .script{
+  font-family:'Caveat',cursive;
+  font-weight:700;
+  color:var(--turq-dark);
+  font-size:1.12em;
+}
+.lede{font-size:1.12rem;color:var(--cocoa-soft);max-width:34rem;margin-bottom:1.6rem}
+.lede strong{color:var(--cocoa)}
+.cta-row{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.4rem}
+.btn{
+  display:inline-block;
+  font-weight:800;font-size:1.02rem;text-decoration:none;
+  padding:.85rem 1.7rem;border-radius:999px;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.btn-primary{background:var(--terra);color:#fff;box-shadow:0 8px 20px rgba(198,93,59,.35)}
+.btn-primary:hover{background:var(--terra-dark);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--turq-dark);border:3px solid var(--turq)}
+.btn-ghost:hover{background:var(--turq);color:#fff;transform:translateY(-2px)}
+.rating-line{display:flex;align-items:center;gap:.55rem;font-weight:700;color:var(--cocoa-soft)}
+.stars{color:var(--marigold);font-size:1.15rem;letter-spacing:.1em;text-shadow:0 1px 0 rgba(74,43,30,.25)}
+
+/* photo frame */
+.hero-photo{position:relative;justify-self:center;width:100%;max-width:460px}
+.photo-frame{
+  background:var(--white);
+  padding:16px 16px 60px;
+  border-radius:6px;
+  transform:rotate(-2.5deg);
+  box-shadow:var(--shadow);
+  position:relative;
+}
+.photo-frame::before,.photo-frame::after{
+  content:"";position:absolute;top:-14px;width:92px;height:30px;
+  background:rgba(233,180,76,.75);
+  border-left:2px dashed rgba(255,255,255,.7);
+  border-right:2px dashed rgba(255,255,255,.7);
+  box-shadow:0 2px 6px rgba(74,43,30,.15);
+}
+.photo-frame::before{left:18px;transform:rotate(-8deg)}
+.photo-frame::after{right:18px;transform:rotate(8deg)}
+.photo-frame img{border-radius:3px;aspect-ratio:1/1;object-fit:cover;width:100%}
+.photo-frame figcaption{
+  font-family:'Caveat',cursive;font-size:1.7rem;font-weight:700;
+  color:var(--cocoa-soft);text-align:center;margin-top:.7rem;
+}
+.stamp{
+  position:absolute;right:-10px;bottom:104px;
+  width:132px;height:132px;border-radius:50%;
+  background:var(--marigold);
+  color:var(--cocoa);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;
+  font-family:'Baloo 2',sans-serif;font-weight:800;
+  transform:rotate(9deg);
+  box-shadow:0 10px 24px rgba(74,43,30,.25);
+  border:3px dashed rgba(74,43,30,.55);
+  outline:5px solid var(--marigold);
+  line-height:1.15;
+  z-index:2;
+}
+.stamp .s1{font-size:.72rem;letter-spacing:.06em}
+.stamp .s2{font-size:1.02rem;color:var(--terra-dark)}
+.stamp .s3{font-size:.72rem}
+
+/* ---------- papel picado divider ---------- */
+.picado{position:relative;padding:1.6rem 0 .4rem;overflow:hidden}
+.picado .string{position:absolute;top:0;left:0;width:100%;height:34px}
+.picado .flags{
+  display:flex;justify-content:center;gap:7px;
+  padding:6px 10px 0;max-width:1200px;margin:-8px auto 0;
+}
+.flag{
+  flex:1 1 64px;max-width:84px;min-width:30px;height:62px;
+  background:
+    radial-gradient(circle at 50% 26%, rgba(255,255,255,.5) 5px, transparent 6px),
+    radial-gradient(circle at 28% 58%, rgba(255,255,255,.35) 3.5px, transparent 4.5px),
+    radial-gradient(circle at 72% 58%, rgba(255,255,255,.35) 3.5px, transparent 4.5px),
+    var(--c,#c65d3b);
+  clip-path:polygon(0 0,100% 0,100% 62%,88% 100%,74% 64%,60% 100%,46% 64%,32% 100%,18% 64%,6% 100%,0 62%);
+}
+.flag:nth-child(odd){transform:rotate(-2deg)}
+.flag:nth-child(even){transform:rotate(2deg) translateY(3px)}
+
+/* ---------- sections ---------- */
+.section{max-width:1200px;margin:0 auto;padding:2.6rem 1.5rem}
+.section-head{text-align:center;max-width:44rem;margin:0 auto 2.2rem}
+.section-head h2{
+  font-family:'Baloo 2','Arial Rounded MT Bold',sans-serif;
+  font-weight:800;font-size:clamp(2rem,4.2vw,3rem);
+  color:var(--cocoa);line-height:1.1;margin-bottom:.6rem;
+}
+.section-head h2 .hl{color:var(--terra)}
+.squiggle{display:block;margin:.4rem auto .8rem;width:150px;height:12px}
+.section-head p{color:var(--cocoa-soft);font-size:1.08rem}
+
+/* menu board */
+.board{
+  background:#4a2b1e;
+  background-image:radial-gradient(rgba(255,255,255,.045) 1px, transparent 1.5px);
+  background-size:22px 22px;
+  border-radius:22px;
+  padding:clamp(1.8rem,4vw,3rem);
+  box-shadow:var(--shadow);
+  border:10px solid var(--marigold);
+  outline:3px solid rgba(74,43,30,.35);
+  outline-offset:6px;
+  max-width:980px;margin:0 auto;
+  position:relative;
+}
+.board-title{
+  font-family:'Baloo 2',sans-serif;font-weight:800;
+  color:var(--marigold-soft);text-align:center;
+  font-size:clamp(1.7rem,3.4vw,2.4rem);
+  margin-bottom:.2rem;
+}
+.board-sub{
+  font-family:'Caveat',cursive;font-size:1.5rem;font-weight:600;
+  color:var(--blush);text-align:center;margin-bottom:1.6rem;
+}
+.menu-list{
+  list-style:none;
+  column-count:2;column-gap:3rem;
+}
+.menu-list li{
+  break-inside:avoid;
+  padding:.75rem 0;
+  border-bottom:2px dotted rgba(247,221,154,.35);
+  display:grid;grid-template-columns:1fr;gap:.1rem;
+}
+.menu-name{
+  font-family:'Caveat',cursive;font-weight:700;
+  font-size:1.85rem;line-height:1.15;color:#ffe9c4;
+}
+.menu-desc{font-size:.95rem;color:rgba(255,247,234,.78)}
+.board-note{
+  margin-top:1.8rem;text-align:center;
+  color:var(--marigold-soft);font-size:.98rem;font-style:italic;
+  max-width:36rem;margin-left:auto;margin-right:auto;
+}
+.board-note a{color:#fff;font-weight:700}
+
+/* ---------- cakes band ---------- */
+.band{background:var(--turq);color:#fffdf6;margin:1rem 0 0}
+.band-inner{
+  max-width:1200px;margin:0 auto;padding:3.4rem 1.5rem;
+  display:grid;grid-template-columns:1fr 1fr;gap:2.6rem;align-items:center;
+}
+.band h2{
+  font-family:'Baloo 2',sans-serif;font-weight:800;
+  font-size:clamp(2rem,4vw,2.9rem);line-height:1.1;margin-bottom:.8rem;
+}
+.band h2 .script{font-family:'Caveat',cursive;font-size:1.15em;color:var(--marigold-soft)}
+.band p{font-size:1.08rem;color:rgba(255,253,246,.92);margin-bottom:1rem;max-width:30rem}
+.band .btn-primary{background:var(--marigold);color:var(--cocoa);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.band .btn-primary:hover{background:var(--marigold-soft);transform:translateY(-2px)}
+.band-card{
+  background:var(--white);color:var(--cocoa);
+  border-radius:18px;padding:1.8rem;
+  box-shadow:0 16px 36px rgba(0,0,0,.18);
+  transform:rotate(1.5deg);
+}
+.band-card h3{
+  font-family:'Baloo 2',sans-serif;font-weight:800;
+  color:var(--terra-dark);font-size:1.4rem;margin-bottom:.5rem;
+}
+.band-card p{color:var(--cocoa-soft);font-size:1rem;margin-bottom:0}
+.band-card p+p{margin-top:.7rem}
+
+/* ---------- visit ---------- */
+.visit-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;
+  max-width:980px;margin:0 auto;
+}
+.visit-card{
+  background:var(--white);border-radius:18px;padding:1.9rem;
+  box-shadow:0 12px 28px rgba(74,43,30,.1);
+  border-top:8px solid var(--terra);
+}
+.visit-card.alt{border-top-color:var(--turq)}
+.visit-card h3{
+  font-family:'Baloo 2',sans-serif;font-weight:800;
+  font-size:1.45rem;color:var(--cocoa);margin-bottom:1rem;
+}
+.hours-row{
+  display:flex;justify-content:space-between;gap:1rem;
+  padding:.55rem 0;border-bottom:2px dotted rgba(198,93,59,.3);
+  font-weight:700;
+}
+.hours-row:last-of-type{border-bottom:none}
+.hours-note{margin-top:.9rem;font-size:.95rem;color:var(--cocoa-soft);font-style:italic}
+.visit-line{margin-bottom:.85rem;font-size:1.05rem}
+.visit-line strong{display:block;font-size:.82rem;letter-spacing:.05em;color:var(--terra-dark);text-transform:uppercase;margin-bottom:.15rem}
+.visit-line a{font-weight:800;color:var(--turq-dark)}
+.visit-line a:hover{color:var(--terra)}
+.fb-btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  margin-top:.4rem;background:var(--turq);color:#fff;
+  font-weight:800;text-decoration:none;
+  padding:.7rem 1.4rem;border-radius:999px;
+}
+.fb-btn:hover{background:var(--turq-dark)}
+.big-call{
+  display:block;text-align:center;margin:2.2rem auto 0;max-width:420px;
+  background:var(--terra);color:#fff;font-family:'Baloo 2',sans-serif;
+  font-weight:800;font-size:1.5rem;text-decoration:none;
+  padding:1.05rem 2rem;border-radius:999px;
+  box-shadow:0 10px 26px rgba(198,93,59,.4);
+}
+.big-call small{display:block;font-family:'Nunito',sans-serif;font-weight:700;font-size:.85rem;opacity:.9}
+.big-call:hover{background:var(--terra-dark)}
+
+/* ---------- footer ---------- */
+footer{background:var(--cocoa);color:rgba(255,247,234,.85);margin-top:3rem}
+.footer-inner{max-width:1200px;margin:0 auto;padding:2.2rem 1.5rem;text-align:center}
+.disclaimer{
+  display:inline-block;background:rgba(233,180,76,.16);
+  border:2px dashed var(--marigold);border-radius:12px;
+  padding:.8rem 1.2rem;font-size:.9rem;margin-bottom:1.2rem;
+  max-width:38rem;
+}
+.footer-inner p{font-size:.92rem;margin-bottom:.3rem}
+.footer-inner a{color:var(--marigold-soft);font-weight:700}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:2.2rem;padding-top:2.4rem}
+  .hero-photo{max-width:400px}
+  .band-inner{grid-template-columns:1fr;gap:1.8rem}
+  .band-card{transform:rotate(0)}
+  .visit-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .menu-list{column-count:1}
+  .stamp{width:112px;height:112px;right:-4px;bottom:96px}
+  .stamp .s2{font-size:.92rem}
+  .flag{height:48px}
+  .photo-frame{transform:rotate(-1.5deg)}
+  .cta-row .btn{flex:1 1 100%;text-align:center}
+}
 </style>
 </head>
 <body>
 
-<div class="preview-bar"><span class="preview-pill">DESIGN PREVIEW</span></div>
+<div class="topbar">
+  <div class="topbar-inner">
+    <span>1909 E Pass Rd, Gulfport, MS</span>
+    <span class="dot">|</span>
+    <a href="tel:+12282064511">(228) 206-4511</a>
+    <span class="dot">|</span>
+    <span>Open daily 8:30 AM - 7:00 PM</span>
+  </div>
+</div>
 
 <header class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Latino Bakery, Gulfport, MS</p>
-    <h1>La Panaderia</h1>
-    <p class="tagline">A Latino bakery in Gulfport, Mississippi. Open all seven days with pan dulce, cakes, drinks, and Latin American fare.</p>
-    <a class="cta" href="tel:+12282064511">Call to order</a>
-    <p class="rating">Rated 4.7 on Google from 49 reviews</p>
+  <div>
+    <span class="badge">Panader&iacute;a &middot; Gulfport, Mississippi</span>
+    <h1>Fresh <span class="accent">pan dulce</span>,<br>baked every <span class="script">morning.</span></h1>
+    <p class="lede">We are La Panaderia, a Latino bakery on East Pass Road in Gulfport. <strong>Conchas, hojaldras, empanadas, tres leches cake, and Latin dishes</strong>, baked fresh daily. The doors open at 8:30 every morning, seven days a week, and the case stays full until 7 at night.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+12282064511">Call (228) 206-4511</a>
+      <a class="btn btn-ghost" href="#menu">See what&rsquo;s baking</a>
+    </div>
+    <p class="rating-line"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.7 stars from 49 Google reviews</p>
+  </div>
+  <div class="hero-photo">
+    <figure class="photo-frame">
+      <img src="img/photo-1.jpg" alt="Pan dulce from the La Panaderia bakery case: conchas, churros, donuts, and decorated pastries">
+      <figcaption>straight from our bakery case</figcaption>
+    </figure>
+    <div class="stamp" aria-label="Open daily 8:30 AM to 7:00 PM">
+      <span class="s1">OPEN</span>
+      <span class="s2">DAILY</span>
+      <span class="s3">8:30 AM - 7 PM</span>
+    </div>
   </div>
 </header>
 
-<main>
+<div class="picado" aria-hidden="true">
+  <svg class="string" viewBox="0 0 1200 34" preserveAspectRatio="none">
+    <path d="M0,6 Q300,30 600,12 T1200,8" fill="none" stroke="#8a5a3b" stroke-width="3"/>
+  </svg>
+  <div class="flags">
+    <span class="flag" style="--c:#c65d3b"></span><span class="flag" style="--c:#2a9d8f"></span><span class="flag" style="--c:#e9b44c"></span><span class="flag" style="--c:#c65d3b"></span><span class="flag" style="--c:#2a9d8f"></span><span class="flag" style="--c:#e9b44c"></span><span class="flag" style="--c:#c65d3b"></span><span class="flag" style="--c:#2a9d8f"></span><span class="flag" style="--c:#e9b44c"></span><span class="flag" style="--c:#c65d3b"></span><span class="flag" style="--c:#2a9d8f"></span><span class="flag" style="--c:#e9b44c"></span>
+  </div>
+</div>
 
-<section class="block services" aria-label="What we offer">
-  <div class="wrap">
-    <p class="eyebrow">Menu</p>
-    <h2>What we offer</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Pan dulce</h3>
-        <p>Conchas, hojaldras, pan danes, bisquets, and pandesal baked fresh in store.</p>
-      </div>
-      <div class="service-card">
-        <h3>Empanadas and pastries</h3>
-        <p>Empanadas, quesadilla de arroz, and pasteles de guayaba.</p>
-      </div>
-      <div class="service-card">
-        <h3>Tres leches</h3>
-        <p>Classic tres leches cake, a bakery favorite.</p>
-      </div>
-      <div class="service-card">
-        <h3>Special occasion cakes</h3>
-        <p>Cakes made for birthdays, celebrations, and family gatherings. Call to ask about ordering one.</p>
-      </div>
-      <div class="service-card">
-        <h3>Drinks</h3>
-        <p>Drinks to pair with your pan dulce.</p>
-      </div>
-      <div class="service-card">
-        <h3>Latin American restaurant fare</h3>
-        <p>Savory Latin American dishes served alongside the bakery menu.</p>
-      </div>
+<section class="section" id="menu">
+  <div class="section-head">
+    <h2>The pan dulce <span class="hl">menu</span></h2>
+    <svg class="squiggle" viewBox="0 0 150 12" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M2,8 Q20,2 38,7 T74,7 T110,7 T148,6" fill="none" stroke="#e9b44c" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+    <p>Our case is the heart of the bakery. Here is what you will usually find in it, fresh from the morning bake.</p>
+  </div>
+  <div class="board">
+    <h3 class="board-title">Pan Dulce</h3>
+    <p class="board-sub">baked fresh every morning</p>
+    <ul class="menu-list">
+      <li><span class="menu-name">Conchas</span><span class="menu-desc">the classic shell-topped sweet bread</span></li>
+      <li><span class="menu-name">Hojaldras</span><span class="menu-desc">flaky, buttery layers</span></li>
+      <li><span class="menu-name">Pan Dan&eacute;s</span><span class="menu-desc">soft Danish-style pastry</span></li>
+      <li><span class="menu-name">Bisquets</span><span class="menu-desc">tender, crumbly, lightly sweet</span></li>
+      <li><span class="menu-name">Pandesal</span><span class="menu-desc">soft, golden bread rolls</span></li>
+      <li><span class="menu-name">Empanadas</span><span class="menu-desc">filled pastries, sweet and savory</span></li>
+      <li><span class="menu-name">Quesadilla de Arroz</span><span class="menu-desc">sweet rice-flour cake</span></li>
+      <li><span class="menu-name">Pasteles de Guayaba</span><span class="menu-desc">pastries filled with guava</span></li>
+      <li><span class="menu-name">Tres Leches</span><span class="menu-desc">sponge cake soaked in three milks</span></li>
+    </ul>
+    <p class="board-note">What is in the case changes through the day. If you need a whole tray or a large order, call <a href="tel:+12282064511">(228) 206-4511</a> ahead and we will set it aside.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="band-inner">
+    <div>
+      <h2>Cakes for the big days. <span class="script">&iexcl;Celebremos!</span></h2>
+      <p>We bake special-occasion cakes to order, tres leches included. Call a few days ahead, tell us the date and how many people you are feeding, and we will take it from there.</p>
+      <a class="btn btn-primary" href="tel:+12282064511">Call to order a cake</a>
+    </div>
+    <div class="band-card">
+      <h3>More than the bakery case</h3>
+      <p>We also pour drinks and cook Latin American dishes. Ask what is cooking when you stop by.</p>
+      <p>Everything is made for the neighborhood: sweet breads for the morning, cakes for the celebrations, and familiar flavors for the table.</p>
     </div>
   </div>
 </section>
 
-<section class="block about" aria-label="About">
-  <div class="wrap">
-    <p class="eyebrow">About</p>
-    <h2>A neighborhood bakery on East Pass Road</h2>
-    <p>La Panaderia is a Latino bakery at 1909 E Pass Rd in Gulfport, Mississippi. The bakery serves pan dulce such as conchas and hojaldras, special occasion cakes, drinks, and Latin American restaurant fare. It is open every day of the week, and customers rate it 4.7 stars on Google across 49 reviews.</p>
+<div class="picado" aria-hidden="true">
+  <svg class="string" viewBox="0 0 1200 34" preserveAspectRatio="none">
+    <path d="M0,8 Q300,30 600,12 T1200,6" fill="none" stroke="#8a5a3b" stroke-width="3"/>
+  </svg>
+  <div class="flags">
+    <span class="flag" style="--c:#2a9d8f"></span><span class="flag" style="--c:#e9b44c"></span><span class="flag" style="--c:#c65d3b"></span><span class="flag" style="--c:#2a9d8f"></span><span class="flag" style="--c:#e9b44c"></span><span class="flag" style="--c:#c65d3b"></span><span class="flag" style="--c:#2a9d8f"></span><span class="flag" style="--c:#e9b44c"></span><span class="flag" style="--c:#c65d3b"></span><span class="flag" style="--c:#2a9d8f"></span><span class="flag" style="--c:#e9b44c"></span><span class="flag" style="--c:#c65d3b"></span>
   </div>
-</section>
+</div>
 
-<section class="block gallery" aria-label="Gallery">
-  <div class="wrap">
-    <p class="eyebrow">Gallery</p>
-    <h2>The bakery</h2>
-    <figure>
-      <img src="img/photo-1.jpg" alt="La Panaderia storefront photo from the business's Facebook page" width="958" height="960" loading="lazy">
-      <figcaption>Photo from La Panaderia's Facebook page.</figcaption>
-    </figure>
+<section class="section" id="visit">
+  <div class="section-head">
+    <h2>Come by and say <span class="hl">hola</span></h2>
+    <svg class="squiggle" viewBox="0 0 150 12" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M2,8 Q20,2 38,7 T74,7 T110,7 T148,6" fill="none" stroke="#2a9d8f" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+    <p>We are on East Pass Road in Gulfport, open every day of the week with the same hours.</p>
   </div>
-</section>
-
-<section class="block visit" aria-label="Visit us">
-  <div class="wrap">
-    <p class="eyebrow">Visit</p>
-    <h2>Find us and order</h2>
-    <table class="hours">
-      <tbody>
-        <tr><th>Monday - Sunday</th><td>8:30 AM - 7:00 PM</td></tr>
-      </tbody>
-    </table>
-    <div class="visit-lines">
-      <p><strong>Address:</strong> 1909 E Pass Rd, Gulfport, MS 39507</p>
-      <p><strong>Phone:</strong> <a href="tel:+12282064511">(228) 206-4511</a></p>
-      <p><a href="tel:+12282064511">Call to place an order or ask about a cake.</a></p>
+  <div class="visit-grid">
+    <div class="visit-card">
+      <h3>Hours</h3>
+      <div class="hours-row"><span>Monday</span><span>8:30 AM - 7:00 PM</span></div>
+      <div class="hours-row"><span>Tuesday</span><span>8:30 AM - 7:00 PM</span></div>
+      <div class="hours-row"><span>Wednesday</span><span>8:30 AM - 7:00 PM</span></div>
+      <div class="hours-row"><span>Thursday</span><span>8:30 AM - 7:00 PM</span></div>
+      <div class="hours-row"><span>Friday</span><span>8:30 AM - 7:00 PM</span></div>
+      <div class="hours-row"><span>Saturday</span><span>8:30 AM - 7:00 PM</span></div>
+      <div class="hours-row"><span>Sunday</span><span>8:30 AM - 7:00 PM</span></div>
+      <p class="hours-note">Same hours all seven days. Weekends included.</p>
+    </div>
+    <div class="visit-card alt">
+      <h3>Find us</h3>
+      <div class="visit-line"><strong>Address</strong>1909 E Pass Rd, Gulfport, MS 39507</div>
+      <div class="visit-line"><strong>Phone</strong><a href="tel:+12282064511">(228) 206-4511</a></div>
+      <div class="visit-line"><strong>Rating</strong>4.7 stars on Google, from 49 reviews</div>
+      <a class="fb-btn" href="https://www.facebook.com/174572743111044/">Follow us on Facebook</a>
     </div>
   </div>
+  <a class="big-call" href="tel:+12282064511">Call (228) 206-4511<small>to order ahead or ask about a cake</small></a>
 </section>
-
-</main>
 
 <footer>
-  <div class="wrap">
-    <p class="fine">This is an unsolicited website design concept created by Freightfolio. It was not commissioned by La Panaderia and is not affiliated with or endorsed by the business.</p>
-    <p class="copyright">La Panaderia, 1909 E Pass Rd, Gulfport, MS 39507. (228) 206-4511.</p>
+  <div class="footer-inner">
+    <p class="disclaimer"><strong>Design preview.</strong> A free mockup, not affiliated with or endorsed by the business.</p>
+    <p>La Panaderia &middot; 1909 E Pass Rd, Gulfport, MS 39507 &middot; <a href="tel:+12282064511">(228) 206-4511</a></p>
+    <p>Open daily 8:30 AM - 7:00 PM</p>
   </div>
 </footer>
 

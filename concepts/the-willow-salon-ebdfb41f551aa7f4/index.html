@@ -2,298 +2,489 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>The Willow Salon | Hair Salon in Ocean Springs, MS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>The Willow Salon | Blonding, Vivids & Extensions in Ocean Springs, MS</title>
+<meta name="description" content="Design preview: The Willow Salon, a full-service hair salon on Government Street in Ocean Springs, MS. Blonding, balayage, vivid color, and hand-tied extensions in a relaxed, eclectic space.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #090b10;
-    --ink: #eef0fb;
-    --muted: #9aa0b8;
-    --accent: #a1adff;
-    --line: rgba(161,173,255,.2);
-    --card: #0e1119;
+  :root{
+    --cream:#faf5ec;
+    --cream-2:#f4ecdc;
+    --ink:#433c30;
+    --ink-soft:#6b6152;
+    --sage:#9caf88;
+    --sage-deep:#6f8563;
+    --sage-dark:#55644c;
+    --sage-pale:#e6ecda;
+    --blush:#e8b4a0;
+    --blush-deep:#cf8b70;
+    --blush-pale:#f9e3d7;
+    --gold:#c9a227;
+    --white:#fffdf9;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
-    -webkit-text-size-adjust: 100%;
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Jost',-apple-system,'Segoe UI',sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.65;
+    font-weight:300;
+    overflow-x:hidden;
   }
-  h1, h2, h3 {
-    font-family: 'DM Sans', 'Manrope', system-ui, sans-serif;
-    line-height: 1.15;
+  ::selection{background:var(--blush-pale)}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+
+  /* ---------- preview ribbon ---------- */
+  .preview-note{
+    text-align:center;
+    font-size:.72rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    background:var(--cream-2);
+    padding:.55rem 1rem;
   }
-  a { color: var(--accent); }
-  .preview-bar {
-    text-align: center;
-    padding: 8px 16px;
-    background: #12151f;
-    border-bottom: 1px solid var(--line);
+  .preview-note em{font-style:normal;color:var(--blush-deep);font-weight:500}
+
+  /* ---------- nav ---------- */
+  header{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1.1rem clamp(1.25rem,5vw,3.5rem);
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,245,236,.88);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
   }
-  .preview-pill {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    color: var(--bg);
-    background: var(--accent);
-    padding: 4px 14px;
-    border-radius: 999px;
+  .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+  .brand svg{width:34px;height:34px;color:var(--sage-deep)}
+  .brand-name{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:600;font-size:1.45rem;line-height:1}
+  nav.main{display:none;gap:2rem}
+  nav.main a{text-decoration:none;font-size:.92rem;letter-spacing:.06em;color:var(--ink-soft);font-weight:400}
+  nav.main a:hover{color:var(--blush-deep)}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:500;font-size:.95rem;letter-spacing:.04em;
+    padding:.8rem 1.7rem;border-radius:999px;transition:transform .25s ease,box-shadow .25s ease;
   }
-  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
-  header.hero {
-    padding: 88px 0 72px;
-    text-align: center;
-    border-bottom: 1px solid var(--line);
+  .btn:hover{transform:translateY(-2px)}
+  .btn-blush{background:var(--blush);color:#3d2a20;box-shadow:0 8px 22px rgba(232,180,160,.45)}
+  .btn-outline{border:1.5px solid var(--sage-deep);color:var(--sage-deep)}
+  @media(min-width:900px){nav.main{display:flex}}
+  @media(max-width:560px){
+    header .btn{font-size:.8rem;padding:.6rem 1.05rem;white-space:nowrap}
+    .brand-name{font-size:1.15rem;white-space:nowrap}
+    .kicker{letter-spacing:.1em;font-size:.72rem}
   }
-  .eyebrow {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .22em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 18px;
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    padding:clamp(2.5rem,6vw,5rem) clamp(1.25rem,5vw,3.5rem) clamp(4rem,8vw,6rem);
+    overflow:hidden;
   }
-  header.hero h1 {
-    font-size: 56px;
-    font-weight: 700;
-    letter-spacing: -.01em;
-    margin-bottom: 16px;
+  .blob{
+    position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;pointer-events:none;z-index:0;
   }
-  .tagline {
-    color: var(--muted);
-    font-size: 18px;
-    max-width: 560px;
-    margin: 0 auto 32px;
+  .blob-sage{width:44rem;height:44rem;background:var(--sage-pale);top:-14rem;right:-12rem}
+  .blob-blush{width:30rem;height:30rem;background:var(--blush-pale);bottom:-10rem;left:-8rem;opacity:.6}
+  .hero-inner{
+    position:relative;z-index:1;max-width:1200px;margin:0 auto;
+    display:flex;flex-direction:column;gap:3rem;align-items:center;
   }
-  .cta {
-    display: inline-block;
-    background: var(--accent);
-    color: var(--bg);
-    font-weight: 700;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 14px 34px;
-    border-radius: 10px;
+  @media(min-width:960px){
+    .hero-inner{flex-direction:row;align-items:center;gap:clamp(2rem,6vw,5rem);text-align:left}
+    .hero-copy{flex:1.1}
+    .hero-photo{flex:.9}
   }
-  .cta:hover { filter: brightness(1.08); }
-  .rating {
-    margin-top: 20px;
-    color: var(--muted);
-    font-size: 14px;
+  .kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage-deep);font-weight:500;
+    margin-bottom:1.4rem;
   }
-  section.block {
-    padding: 64px 0;
-    border-bottom: 1px solid var(--line);
+  .kicker svg{width:20px;height:20px}
+  h1{
+    font-family:'Cormorant Garamond',Georgia,serif;
+    font-weight:500;font-size:clamp(2.9rem,7vw,5rem);line-height:1.05;letter-spacing:.005em;
   }
-  section.block h2 {
-    font-size: 32px;
-    margin-bottom: 24px;
+  h1 .it{font-style:italic;color:var(--blush-deep)}
+  h1 .it2{font-style:italic;color:var(--sage-deep)}
+  .hero-sub{margin:1.5rem 0 2.2rem;font-size:1.08rem;color:var(--ink-soft);max-width:34rem}
+  .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+  .hero-rating{display:flex;align-items:center;gap:.7rem;margin-top:2rem;font-size:.95rem;color:var(--ink-soft)}
+  .stars{color:var(--gold);font-size:1.05rem;letter-spacing:.1em}
+  .hero-photo{position:relative;width:min(92vw,380px)}
+  .arch{
+    border-radius:999px 999px 28px 28px;
+    overflow:hidden;
+    border:6px solid var(--white);
+    box-shadow:0 30px 60px rgba(111,133,99,.25);
+    aspect-ratio:3/4;
   }
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+  .arch img{width:100%;height:100%;object-fit:cover}
+  .hero-sprig{position:absolute;width:120px;color:var(--sage-deep);opacity:.8;top:-28px;left:-44px;transform:rotate(-18deg)}
+  @media(max-width:960px){
+    .hero-sprig{left:-6px;top:-22px;width:92px}
   }
-  .service-card {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 24px;
+  .hero-leaf-dot{
+    position:absolute;width:88px;height:88px;border-radius:50%;
+    background:var(--blush);color:#3d2a20;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1rem;line-height:1.25;
+    bottom:36px;left:10px;transform:rotate(-8deg);
+    box-shadow:0 12px 26px rgba(207,139,112,.4);
+    padding:.4rem;
   }
-  .service-card h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: var(--ink);
+
+  /* ---------- willow sprig symbol sizing ---------- */
+  .sprig{color:var(--sage-deep)}
+
+  /* ---------- wave divider ---------- */
+  .divider{display:block;width:100%;height:70px;margin-bottom:-1px}
+  @media(min-width:900px){.divider{height:110px}}
+
+  /* ---------- marquee ---------- */
+  .marquee{background:var(--sage-pale);overflow:hidden;padding:1.05rem 0;border-top:1px solid rgba(111,133,99,.25);border-bottom:1px solid rgba(111,133,99,.25)}
+  .marquee-track{display:flex;gap:2.6rem;width:max-content;animation:drift 30s linear infinite}
+  .marquee-track span{
+    font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1.35rem;color:var(--sage-dark);white-space:nowrap;
   }
-  .service-card p {
-    color: var(--muted);
-    font-size: 15px;
+  .marquee-track i{font-style:normal;color:var(--blush-deep);font-size:1rem;align-self:center}
+  @keyframes drift{to{transform:translateX(-50%)}}
+
+  /* ---------- sections ---------- */
+  section{padding:clamp(3.5rem,8vw,6.5rem) clamp(1.25rem,5vw,3.5rem)}
+  .wrap{max-width:1120px;margin:0 auto;position:relative}
+  .sec-label{
+    font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;color:var(--blush-deep);font-weight:500;
+    display:flex;align-items:center;gap:.7rem;margin-bottom:1.2rem;
   }
-  .about p { color: var(--muted); font-size: 17px; max-width: 640px; }
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+  .sec-label svg{width:26px;height:26px;color:var(--sage-deep)}
+  h2{
+    font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;
+    font-size:clamp(2.1rem,4.6vw,3.2rem);line-height:1.12;margin-bottom:1.4rem;
   }
-  .gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: 1px solid var(--line);
-    border-radius: 12px;
+  h2 .it{font-style:italic;color:var(--sage-deep)}
+  .lede{font-size:1.1rem;color:var(--ink-soft);max-width:40rem}
+
+  /* ---------- about ---------- */
+  .about-grid{display:flex;flex-direction:column;gap:2.5rem;margin-top:2.5rem}
+  @media(min-width:960px){.about-grid{flex-direction:row;gap:4rem;align-items:center}.about-copy{flex:1.15}.about-photo{flex:.85}}
+  .about-copy p{margin-bottom:1.2rem;color:var(--ink-soft);font-size:1.05rem}
+  .about-copy p strong{color:var(--ink);font-weight:500}
+  .pull{
+    font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1.6rem;line-height:1.4;
+    color:var(--sage-dark);border-left:3px solid var(--blush);padding-left:1.4rem;margin:1.8rem 0;
   }
-  .gallery figcaption {
-    color: var(--muted);
-    font-size: 13px;
-    margin-top: 10px;
+  .about-photo figure{position:relative}
+  .about-photo img{border-radius:26px;box-shadow:0 24px 50px rgba(111,133,99,.22);aspect-ratio:1/1;object-fit:cover;width:100%}
+  .about-photo figcaption{
+    font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1.05rem;color:var(--ink-soft);
+    margin-top:.8rem;text-align:center;
   }
-  table.hours {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 32px;
+  .photo-sprig{position:absolute;width:90px;top:-30px;right:-14px;transform:rotate(24deg);opacity:.85}
+
+  /* ---------- services ---------- */
+  .services{background:var(--white);border-radius:clamp(1.5rem,4vw,3rem);box-shadow:0 24px 60px rgba(67,60,48,.07)}
+  .svc-list{margin-top:2.8rem}
+  .svc{
+    display:flex;gap:1.4rem;padding:1.9rem 0;border-bottom:1px dashed rgba(111,133,99,.4);align-items:flex-start;
   }
-  table.hours th, table.hours td {
-    text-align: left;
-    padding: 12px 4px;
-    border-bottom: 1px solid var(--line);
-    font-size: 16px;
+  .svc:last-child{border-bottom:none}
+  .svc svg{flex:none;width:30px;height:30px;color:var(--blush-deep);margin-top:.25rem}
+  .svc h3{
+    font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:600;font-size:1.55rem;margin-bottom:.4rem;
   }
-  table.hours th { font-weight: 600; color: var(--ink); }
-  table.hours td { color: var(--muted); }
-  table.hours tr:last-child th, table.hours tr:last-child td { border-bottom: none; }
-  .visit-lines p { margin-bottom: 10px; font-size: 16px; color: var(--muted); }
-  .visit-lines strong { color: var(--ink); font-weight: 600; }
-  footer {
-    padding: 40px 0 56px;
-    text-align: center;
+  .svc p{color:var(--ink-soft);max-width:44rem}
+  .svc-more{
+    margin-top:2.2rem;background:var(--sage-pale);border-radius:22px;padding:1.8rem 2rem;
+    font-size:1rem;color:var(--sage-dark);
   }
-  footer .fine {
-    color: var(--muted);
-    font-size: 13px;
-    max-width: 560px;
-    margin: 0 auto 12px;
+  .svc-more strong{font-weight:500}
+  @media(min-width:900px){
+    .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 3.5rem}
   }
-  footer .copyright { color: var(--muted); font-size: 13px; }
-  @media (max-width: 640px) {
-    header.hero { padding: 56px 0 48px; }
-    header.hero h1 { font-size: 38px; }
-    .tagline { font-size: 16px; }
-    .services-grid { grid-template-columns: 1fr; }
-    .gallery-grid { grid-template-columns: 1fr; }
-    section.block { padding: 44px 0; }
-    section.block h2 { font-size: 26px; }
-    .cta { width: 100%; text-align: center; padding: 16px 20px; }
+
+  /* ---------- gallery ---------- */
+  .gallery-grid{
+    display:grid;grid-template-columns:1fr;gap:1.8rem;margin-top:2.8rem;
+  }
+  @media(min-width:760px){
+    .gallery-grid{grid-template-columns:1fr 1fr 1fr;align-items:start}
+    .g-item:nth-child(2){margin-top:3.5rem}
+    .g-item:nth-child(3){margin-top:1.2rem}
+  }
+  .g-item figure{position:relative}
+  .g-arch{border-radius:999px 999px 22px 22px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 24px 50px rgba(67,60,48,.16)}
+  .g-arch img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+  .g-item:hover .g-arch img{transform:scale(1.05)}
+  .g-item figcaption{
+    text-align:center;margin-top:1rem;
+    font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1.2rem;color:var(--ink-soft);
+  }
+  .g-item figcaption small{display:block;font-family:'Jost',sans-serif;font-style:normal;font-size:.8rem;letter-spacing:.08em;color:var(--ink-soft);opacity:.75;margin-top:.15rem}
+  .fb-line{margin-top:2.6rem;text-align:center;font-size:1.05rem;color:var(--ink-soft)}
+  .fb-line a{color:var(--blush-deep);font-weight:500;text-decoration:none;border-bottom:1.5px solid var(--blush);padding-bottom:2px}
+
+  /* ---------- visit ---------- */
+  .visit-card{
+    background:linear-gradient(135deg,var(--blush-pale),#f6d3bf);
+    border-radius:clamp(1.5rem,4vw,3rem);
+    padding:clamp(2rem,5vw,3.5rem);
+    display:flex;flex-direction:column;gap:2.5rem;
+    box-shadow:0 24px 60px rgba(207,139,112,.28);
+    position:relative;overflow:hidden;
+  }
+  @media(min-width:960px){.visit-card{flex-direction:row;gap:4rem;align-items:center}.visit-copy{flex:1.2}.visit-hours{flex:.8}}
+  .visit-card h2 .it{color:var(--blush-deep)}
+  .hours{list-style:none;margin-top:1.6rem}
+  .hours li{
+    display:flex;justify-content:space-between;gap:1rem;
+    padding:.75rem 0;border-bottom:1px dashed rgba(61,42,32,.25);font-size:1.02rem;
+  }
+  .hours li:last-child{border-bottom:none}
+  .hours .day{font-weight:400}
+  .hours .closed{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;color:var(--blush-deep);font-size:1.1rem}
+  .visit-addr{margin-top:1.4rem;font-size:1rem;color:#5c4636}
+  .visit-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.8rem}
+  .btn-ink{background:var(--ink);color:var(--cream)}
+  .visit-sprig{position:absolute;width:150px;right:-30px;bottom:-24px;opacity:.35;transform:rotate(140deg);color:#8a5a44}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--sage-dark);color:#efe9da;padding:3.5rem clamp(1.25rem,5vw,3.5rem) 2.5rem;margin-top:clamp(3.5rem,8vw,6rem)}
+  .foot-wrap{max-width:1120px;margin:0 auto;text-align:center}
+  .foot-wrap .sprig{width:110px;margin:0 auto 1.2rem;display:block;color:var(--sage)}
+  .foot-brand{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:2rem;margin-bottom:.4rem}
+  .foot-contact{font-size:1rem;margin-bottom:.3rem}
+  .foot-contact a{color:#fff;text-decoration:none;font-weight:400}
+  .foot-contact a:hover{text-decoration:underline}
+  .foot-fb{margin:1rem 0 1.6rem}
+  .foot-fb a{color:var(--blush);text-decoration:none;font-weight:500;border-bottom:1.5px solid var(--blush);padding-bottom:2px}
+  .foot-disclaimer{
+    font-size:.82rem;color:#cfc8b6;max-width:44rem;margin:0 auto;line-height:1.7;
+    border-top:1px solid rgba(239,233,218,.25);padding-top:1.4rem;
   }
 </style>
 </head>
 <body>
 
-<div class="preview-bar"><span class="preview-pill">DESIGN PREVIEW</span></div>
+<!-- reusable willow sprig -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="willow-sprig" viewBox="0 0 220 130">
+      <path d="M8 22 C 60 8, 120 26, 205 112" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <g fill="currentColor">
+        <ellipse cx="34" cy="17" rx="11" ry="3.6" transform="rotate(-8 34 17)"/>
+        <ellipse cx="58" cy="14" rx="11" ry="3.6" transform="rotate(-4 58 14)"/>
+        <ellipse cx="82" cy="15" rx="11" ry="3.6" transform="rotate(2 82 15)"/>
+        <ellipse cx="106" cy="19" rx="11" ry="3.6" transform="rotate(8 106 19)"/>
+        <ellipse cx="129" cy="26" rx="11" ry="3.6" transform="rotate(16 129 26)"/>
+        <ellipse cx="150" cy="36" rx="11" ry="3.6" transform="rotate(24 150 36)"/>
+        <ellipse cx="169" cy="49" rx="11" ry="3.6" transform="rotate(33 169 49)"/>
+        <ellipse cx="185" cy="65" rx="11" ry="3.6" transform="rotate(42 185 65)"/>
+        <ellipse cx="198" cy="83" rx="10" ry="3.4" transform="rotate(52 198 83)"/>
+        <ellipse cx="46" cy="22" rx="10" ry="3.4" transform="rotate(28 46 22)"/>
+        <ellipse cx="94" cy="24" rx="10" ry="3.4" transform="rotate(38 94 24)"/>
+        <ellipse cx="140" cy="40" rx="10" ry="3.4" transform="rotate(50 140 40)"/>
+      </g>
+    </symbol>
+    <symbol id="leaf-dot" viewBox="0 0 24 24">
+      <ellipse cx="12" cy="12" rx="9" ry="4.6" transform="rotate(-30 12 12)" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
 
-<header class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Hair Salon, Ocean Springs, MS</p>
-    <h1>The Willow Salon</h1>
-    <p class="tagline">A full-service hair salon in downtown Ocean Springs, specializing in blonding, balayage, vivid colors, and extensions. Call to book your next visit.</p>
-    <a class="cta" href="tel:+12283345235">Call to book</a>
-    <p class="rating">Rated 4.5 on salondiscover from 39 reviews</p>
-  </div>
+<div class="preview-note"><em>Design preview</em> &nbsp;·&nbsp; a free mockup concept, not the business's real website</div>
+
+<header>
+  <a class="brand" href="#top">
+    <svg aria-hidden="true"><use href="#willow-sprig"/></svg>
+    <span class="brand-name">The Willow Salon</span>
+  </a>
+  <nav class="main">
+    <a href="#about">Our story</a>
+    <a href="#services">What we do</a>
+    <a href="#gallery">The work</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a class="btn btn-blush" href="tel:+12283345235">Call to book</a>
 </header>
 
-<main>
+<main id="top">
 
-<section class="block services" aria-label="Services">
-  <div class="wrap">
-    <p class="eyebrow">Services</p>
-    <h2>What we offer</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Blonding</h3>
-        <p>Specialized blonde coloring and brightening services.</p>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="blob blob-sage"></div>
+    <div class="blob blob-blush"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="kicker"><svg aria-hidden="true"><use href="#leaf-dot"/></svg> Full-service hair salon · Ocean Springs, MS</span>
+        <h1>Sit back.<br><span class="it">We've got</span> <span class="it2">the foils.</span></h1>
+        <p class="hero-sub">The Willow is a full-service salon on Government Street in Ocean Springs. We specialize in blonding, balayage, vivid color, and hand-tied extensions, all in a space that is eclectic, retro, and completely relaxed.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-blush" href="tel:+12283345235">Call (228) 334-5235</a>
+          <a class="btn btn-outline" href="#gallery">See the work</a>
+        </div>
+        <div class="hero-rating">
+          <span class="stars" aria-label="4.5 out of 5 stars">★★★★☆</span>
+          <span><strong style="font-weight:500;color:var(--ink)">4.5</strong> · 39 reviews</span>
+        </div>
       </div>
-      <div class="service-card">
-        <h3>Balayage</h3>
-        <p>Hand-painted highlights for a natural, sunlit look.</p>
-      </div>
-      <div class="service-card">
-        <h3>Vivid Colors</h3>
-        <p>Bold, bright color work for clients who want to stand out.</p>
-      </div>
-      <div class="service-card">
-        <h3>Extensions</h3>
-        <p>Hand-tied and clip-in extensions for added length and volume.</p>
-      </div>
-      <div class="service-card">
-        <h3>Cuts</h3>
-        <p>Cuts with shampoo and blowdry.</p>
-      </div>
-      <div class="service-card">
-        <h3>Color and Highlights</h3>
-        <p>All-over color, partial highlights, and full highlights.</p>
-      </div>
-      <div class="service-card">
-        <h3>Keratin Treatments</h3>
-        <p>Smoothing keratin treatments.</p>
-      </div>
-      <div class="service-card">
-        <h3>Glossing and Glazing</h3>
-        <p>Gloss and glaze services for shine and tone.</p>
-      </div>
-      <div class="service-card">
-        <h3>Deep Conditioning</h3>
-        <p>Restorative deep conditioning treatments.</p>
-      </div>
-      <div class="service-card">
-        <h3>Blowouts and Updos</h3>
-        <p>Blowouts and updos for everyday styling and special occasions.</p>
+      <div class="hero-photo">
+        <svg class="hero-sprig sprig" aria-hidden="true"><use href="#willow-sprig"/></svg>
+        <div class="arch">
+          <img src="img/photo-2.jpg" alt="Long ash-blonde balayage waves, styled at The Willow Salon">
+        </div>
+        <div class="hero-leaf-dot">blonding<br>is our<br>love language</div>
       </div>
     </div>
   </div>
-</section>
 
-<section class="block about" aria-label="About">
-  <div class="wrap">
-    <p class="eyebrow">About</p>
-    <h2>A salon in downtown Ocean Springs</h2>
-    <p>The Willow Salon is a full-service hair salon in the heart of downtown Ocean Springs. The salon specializes in blonding, balayage, vivid colors, and extensions. The atmosphere is eclectic, retro, and relaxed. The Willow Salon was formerly known as Savanah &amp; Co. Salon.</p>
-  </div>
-</section>
-
-<section class="block gallery" aria-label="Gallery">
-  <div class="wrap">
-    <p class="eyebrow">Gallery</p>
-    <h2>Inside the salon</h2>
-    <div class="gallery-grid">
-      <figure>
-        <img src="img/photo-1.jpg" alt="Photo of The Willow Salon from its bestprosintown profile" width="1024" height="640" loading="lazy">
-        <figcaption>Photo from The Willow Salon's bestprosintown profile.</figcaption>
-      </figure>
-      <figure>
-        <img src="img/photo-2.jpg" alt="Photo of The Willow Salon from its bestprosintown profile" width="1024" height="640" loading="lazy">
-        <figcaption>Photo from The Willow Salon's bestprosintown profile.</figcaption>
-      </figure>
-      <figure>
-        <img src="img/photo-3.jpg" alt="Photo of The Willow Salon from its bestprosintown profile" width="1024" height="640" loading="lazy">
-        <figcaption>Photo from The Willow Salon's bestprosintown profile.</figcaption>
-      </figure>
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>blonding</span><i>✦</i><span>balayage</span><i>✦</i><span>vivid color</span><i>✦</i><span>hand-tied extensions</span><i>✦</i><span>keratin treatments</span><i>✦</i><span>glossing</span><i>✦</i><span>blowouts</span><i>✦</i><span>updos</span><i>✦</i>
+      <span>blonding</span><i>✦</i><span>balayage</span><i>✦</i><span>vivid color</span><i>✦</i><span>hand-tied extensions</span><i>✦</i><span>keratin treatments</span><i>✦</i><span>glossing</span><i>✦</i><span>blowouts</span><i>✦</i><span>updos</span><i>✦</i>
     </div>
   </div>
-</section>
 
-<section class="block visit" aria-label="Visit us">
-  <div class="wrap">
-    <p class="eyebrow">Visit</p>
-    <h2>Find us and book</h2>
-    <table class="hours">
-      <tbody>
-        <tr><th>Tuesday - Friday</th><td>9:00 AM - 6:00 PM</td></tr>
-        <tr><th>Saturday</th><td>9:00 AM - 3:00 PM</td></tr>
-        <tr><th>Sunday - Monday</th><td>Closed</td></tr>
-      </tbody>
-    </table>
-    <div class="visit-lines">
-      <p><strong>Address:</strong> 1306 Government St #3, Ocean Springs, MS 39564</p>
-      <p><strong>Phone:</strong> <a href="tel:+12283345235">(228) 334-5235</a></p>
-      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/thewillowhairsalon/">facebook.com/thewillowhairsalon</a></p>
-      <p><a href="tel:+12283345235">Call to book your appointment.</a></p>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-label"><svg aria-hidden="true"><use href="#willow-sprig"/></svg> Our story</div>
+      <h2>A salon that feels like <span class="it">a deep breath.</span></h2>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>We started as <strong>Savanah &amp; Co.</strong> and grew into The Willow, but the feeling never changed. Eclectic, retro, and relaxed on purpose. This is the kind of chair where you settle in, not sit up straight.</p>
+          <div class="pull">Come as you are. Stay for the conversation. Leave with hair you cannot stop touching.</div>
+          <p>No rushed chairs and no stiff small talk. Bring us a screenshot, a wild idea, or just a vague feeling, and we will figure out the hair together.</p>
+        </div>
+        <div class="about-photo">
+          <figure>
+            <svg class="photo-sprig sprig" aria-hidden="true"><use href="#willow-sprig"/></svg>
+            <img src="img/photo-1.jpg" alt="The front desk at The Willow Salon">
+            <figcaption>Say hello at the front desk.</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" style="padding-top:0">
+    <div class="wrap services" style="padding:clamp(2rem,5vw,3.5rem)">
+      <div class="sec-label"><svg aria-hidden="true"><use href="#willow-sprig"/></svg> What we do</div>
+      <h2>Hair is <span class="it">our thing.</span></h2>
+      <p class="lede">Every appointment starts with a real conversation about what you want and what your hair can do. Here is where we shine.</p>
+      <div class="svc-grid">
+        <div class="svc-list">
+          <div class="svc">
+            <svg aria-hidden="true"><use href="#leaf-dot"/></svg>
+            <div>
+              <h3>Blonding &amp; balayage</h3>
+              <p>From bright, bold blonde to soft lived-in color, we build blondes that grow out gracefully instead of screaming for a touch-up in three weeks.</p>
+            </div>
+          </div>
+          <div class="svc">
+            <svg aria-hidden="true"><use href="#leaf-dot"/></svg>
+            <div>
+              <h3>Vivid color</h3>
+              <p>Pinks, purples, teals, and everything loud. We love a bold head of hair, and we know how to get you there while keeping it healthy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="svc-list">
+          <div class="svc">
+            <svg aria-hidden="true"><use href="#leaf-dot"/></svg>
+            <div>
+              <h3>Extensions</h3>
+              <p>Hand-tied and clip-in extensions for length, fullness, or both. Matched to your color so they disappear right into your own hair.</p>
+            </div>
+          </div>
+          <div class="svc">
+            <svg aria-hidden="true"><use href="#leaf-dot"/></svg>
+            <div>
+              <h3>Cuts &amp; styling</h3>
+              <p>Precision cuts, highlights, blowouts, and updos for the big days. The everyday work, done with the same care as the transformations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="svc-more">
+        <strong>Also on the menu:</strong> keratin treatments, glossing and glazing, deep conditioning treatments, and full color services.
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-label"><svg aria-hidden="true"><use href="#willow-sprig"/></svg> The work</div>
+      <h2>Fresh from <span class="it">the chair.</span></h2>
+      <p class="lede">Real hair, real results. This is the kind of blonde we do every week.</p>
+      <div class="gallery-grid">
+        <div class="g-item">
+          <figure>
+            <div class="g-arch"><img src="img/photo-2.jpg" alt="Ash-blonde balayage with soft waves"></div>
+            <figcaption>Ash-blonde balayage<small>soft, dimensional, lived-in</small></figcaption>
+          </figure>
+        </div>
+        <div class="g-item">
+          <figure>
+            <div class="g-arch"><img src="img/photo-3.jpg" alt="Bright blonde balayage waves photographed outdoors"></div>
+            <figcaption>Bright blonde waves<small>sunlight approved</small></figcaption>
+          </figure>
+        </div>
+        <div class="g-item">
+          <figure>
+            <div class="g-arch"><img src="img/photo-1.jpg" alt="Inside The Willow Salon"></div>
+            <figcaption>Our little corner<small>eclectic and relaxed, like us</small></figcaption>
+          </figure>
+        </div>
+      </div>
+      <p class="fb-line">Want more? <a href="https://www.facebook.com/thewillowhairsalon/" target="_blank" rel="noopener">Follow along on Facebook</a> for the latest work.</p>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" style="padding-top:0">
+    <div class="wrap">
+      <div class="visit-card">
+        <svg class="visit-sprig" aria-hidden="true"><use href="#willow-sprig"/></svg>
+        <div class="visit-copy">
+          <div class="sec-label"><svg aria-hidden="true"><use href="#willow-sprig"/></svg> Visit</div>
+          <h2>Come <span class="it">see us.</span></h2>
+          <p class="lede" style="color:#5c4636">We are on Government Street in Ocean Springs, and we would love to meet your hair. Call to book your chair.</p>
+          <p class="visit-addr">1306 Government St #3<br>Ocean Springs, MS 39564</p>
+          <div class="visit-ctas">
+            <a class="btn btn-ink" href="tel:+12283345235">Call (228) 334-5235</a>
+            <a class="btn btn-outline" style="border-color:#5c4636;color:#5c4636" href="https://www.facebook.com/thewillowhairsalon/" target="_blank" rel="noopener">Message on Facebook</a>
+          </div>
+        </div>
+        <div class="visit-hours">
+          <ul class="hours">
+            <li><span class="day">Tuesday – Friday</span><span>9:00 AM – 6:00 PM</span></li>
+            <li><span class="day">Saturday</span><span>9:00 AM – 3:00 PM</span></li>
+            <li><span class="day">Sunday – Monday</span><span class="closed">closed, resting our foils</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <footer>
-  <div class="wrap">
-    <p class="fine">This is an unsolicited website design concept created by Freightfolio. It was not commissioned by the business, and it is not affiliated with or endorsed by The Willow Salon.</p>
-    <p class="copyright">The Willow Salon, 1306 Government St #3, Ocean Springs, MS 39564. (228) 334-5235.</p>
+  <div class="foot-wrap">
+    <svg class="sprig" aria-hidden="true"><use href="#willow-sprig"/></svg>
+    <div class="foot-brand">The Willow Salon</div>
+    <p class="foot-contact">1306 Government St #3, Ocean Springs, MS 39564</p>
+    <p class="foot-contact"><a href="tel:+12283345235">(228) 334-5235</a></p>
+    <p class="foot-fb"><a href="https://www.facebook.com/thewillowhairsalon/" target="_blank" rel="noopener">Find us on Facebook</a></p>
+    <p class="foot-disclaimer">Concept preview. A free mockup, not affiliated with or endorsed by the business. Hours, services, and reviews shown reflect publicly listed information for The Willow Salon, Ocean Springs, MS.</p>
   </div>
 </footer>
 
