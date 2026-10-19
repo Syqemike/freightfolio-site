@@ -110,6 +110,15 @@
   .board-list .dots { flex:1; border-bottom:2px dotted #c8b98d; transform:translateY(-5px); }
   .board-list .desc { font-size:14px; color:var(--muted); font-style:italic; white-space:nowrap; }
 
+  /* ---------- gallery ---------- */
+  .pole-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:26px; }
+  .pole-grid figure {
+    background:#fbf6e9; border:3px solid var(--hunter-deep);
+    outline:1px solid var(--brass); outline-offset:4px; overflow:hidden;
+  }
+  .pole-grid img { width:100%; height:250px; object-fit:cover; display:block; }
+  .pole-grid figcaption { padding:12px 16px; font-size:14px; font-style:italic; color:var(--muted); }
+
   /* ---------- shine spotlight ---------- */
   .shine { background:var(--hunter-deep); color:var(--parchment); border-top:6px double var(--brass); border-bottom:6px double var(--brass); }
   .shine h2.section-title { color:var(--parchment); }
@@ -160,11 +169,13 @@
     .board-list li:nth-last-child(2) { border-bottom:1px dotted #b9a97f; }
     .board-list .desc { white-space:normal; }
     .shine-grid, .visit-grid { grid-template-columns:1fr; }
+    .pole-grid { grid-template-columns:1fr 1fr; }
     .tickets { grid-template-columns:1fr 1fr; }
     .shopboard { padding:32px 24px; }
   }
   @media (max-width:520px) {
     .tickets { grid-template-columns:1fr; }
+    .pole-grid { grid-template-columns:1fr; }
     .mastnav .wrap { justify-content:center; text-align:center; }
     .mastnav nav ul { justify-content:center; gap:18px; }
     section.block { padding:54px 0; }
@@ -181,6 +192,7 @@
     <nav>
       <ul>
         <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#shine">Shoe Shine</a></li>
         <li><a href="#visit">Hours &amp; Visit</a></li>
       </ul>
@@ -304,6 +316,40 @@
         <li><span class="svc">Beard Trim</span><span class="dots"></span><span class="desc">Shaped and cleaned up</span></li>
         <li><span class="svc">Neck Clean</span><span class="dots"></span><span class="desc">A tidy up between cuts</span></li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="gallery">
+  <div class="wrap">
+    <p class="kicker">The shop</p>
+    <h2 class="section-title">On Bull Street</h2>
+    <p class="lede">The Barber Pole shop and the classic barbering craft. Shop photos show the real Bull Street location. Craft photos are illustrative.</p>
+    <div class="pole-grid">
+      <figure>
+        <img src="img/1.jpg" alt="The Barber Pole storefront with striped awning and painted window signage" loading="lazy">
+        <figcaption>The Bull Street storefront</figcaption>
+      </figure>
+      <figure>
+        <img src="img/2.jpg" alt="The Barber Pole shop entrance at night with a lit barber pole" loading="lazy">
+        <figcaption>The shop entrance at night</figcaption>
+      </figure>
+      <figure>
+        <img src="img/3.jpg" alt="A classic red white and blue barber pole on a brick wall" loading="lazy">
+        <figcaption>Illustrative photo: the barber pole</figcaption>
+      </figure>
+      <figure>
+        <img src="img/4.webp" alt="Barber giving a hot towel shave with a straight razor" loading="lazy">
+        <figcaption>Illustrative photo: hot towel shave</figcaption>
+      </figure>
+      <figure>
+        <img src="img/5.jpg" alt="Barber shaving a client's beard with a straight razor" loading="lazy">
+        <figcaption>Illustrative photo: straight razor shave</figcaption>
+      </figure>
+      <figure>
+        <img src="img/6.jpg" alt="Classic red barber chairs in a vintage style barbershop" loading="lazy">
+        <figcaption>Illustrative photo: classic chairs</figcaption>
+      </figure>
     </div>
   </div>
 </section>

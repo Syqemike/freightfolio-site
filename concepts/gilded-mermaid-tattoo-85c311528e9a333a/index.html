@@ -151,6 +151,12 @@
   .studio-fan svg { width:100%; height:auto; display:block; }
   .deco-note { font-size:11px; font-style:italic; color:var(--creamdim); opacity:.55; letter-spacing:.04em; text-align:center; margin-top:12px; }
 
+  /* Gallery */
+  .gild-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:28px; max-width:1000px; margin:0 auto; }
+  .gild-grid figure { border:1px solid var(--gold); padding:10px; background:rgba(7,26,30,.55); }
+  .gild-grid img { width:100%; height:290px; object-fit:cover; display:block; }
+  .gild-grid figcaption { font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--gold); text-align:center; padding:12px 6px 4px; }
+
   /* Visit */
   .visit-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; max-width:940px; margin:0 auto; }
   .visit-cell { border:1px solid var(--line); padding:40px 36px; background:rgba(7,26,30,.45); }
@@ -168,6 +174,7 @@
 
   @media (max-width:760px) {
     .navlinks { display:none; }
+    .gild-grid { grid-template-columns:1fr 1fr; }
     .heroframe { padding:40px 24px 36px; margin:0 12px; }
     .studio-grid { grid-template-columns:1fr; gap:30px; }
     .visit-grid { grid-template-columns:1fr; }
@@ -187,6 +194,7 @@
     <a class="brand display" href="#top">The Gilded Mermaid</a>
     <div class="navlinks">
       <a href="#styles">Styles</a>
+      <a href="#gallery">Gallery</a>
       <a href="#artists">Your idea</a>
       <a href="#studio">Studio</a>
       <a href="#visit">Visit</a>
@@ -282,6 +290,42 @@
     <div style="text-align:center; margin-top:40px;">
       <p class="caps" style="color:var(--creamdim); margin-bottom:20px;">Talk through your tattoo idea</p>
       <a class="btn" href="tel:+18436080614">Call to book</a>
+    </div>
+  </div>
+</section>
+
+<section class="sect" id="gallery">
+  <div class="wrap">
+    <div class="secthead">
+      <p class="caps">Style examples</p>
+      <h2 class="display">Fine line and floral</h2>
+    </div>
+    <p style="text-align:center; color:var(--creamdim); max-width:620px; margin:0 auto 44px; font-size:16px;">Illustrative photos showing fine-line and floral tattoo styles like the ones on the menu. These are style examples, not the studio's own work.</p>
+    <div class="gild-grid">
+      <figure>
+        <img src="img/1.jpg" alt="Fine line floral tattoo with flowers and leaves on a forearm" loading="lazy">
+        <figcaption>Illustrative: fine-line floral</figcaption>
+      </figure>
+      <figure>
+        <img src="img/2.jpg" alt="Black linework peony tattoo on an arm" loading="lazy">
+        <figcaption>Illustrative: linework peony</figcaption>
+      </figure>
+      <figure>
+        <img src="img/3.jpg" alt="Fine line floral tattoo on a shoulder" loading="lazy">
+        <figcaption>Illustrative: floral shoulder piece</figcaption>
+      </figure>
+      <figure>
+        <img src="img/4.jpg" alt="Fine line floral tattoo across a shoulder and collarbone" loading="lazy">
+        <figcaption>Illustrative: shoulder florals</figcaption>
+      </figure>
+      <figure>
+        <img src="img/5.jpg" alt="Fine line botanical bouquet tattoo on a forearm" loading="lazy">
+        <figcaption>Illustrative: botanical bouquet</figcaption>
+      </figure>
+      <figure>
+        <img src="img/6.jpg" alt="Black and gray floral tattoo on an upper arm" loading="lazy">
+        <figcaption>Illustrative: black and gray floral</figcaption>
+      </figure>
     </div>
   </div>
 </section>
