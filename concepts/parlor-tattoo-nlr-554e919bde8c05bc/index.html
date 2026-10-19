@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>The Parlor Tattoo | North Little Rock | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Caveat:wght@600&family=Bitter:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f1e8d2; --paper-dark:#e6d8b8; --ink:#171310; --red:#a8232a;
+  --navy:#1d2c52; --gold:#c9962e; --card:#f7f0dd;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:'Bitter',Georgia,serif; line-height:1.6;
+  background-image:radial-gradient(rgba(23,19,16,.045) 1px, transparent 1px);
+  background-size:22px 22px;
+}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+/* ---------- disclaimer ribbon ---------- */
+.disclaimer{
+  background:var(--ink); color:var(--paper); text-align:center;
+  font-size:.8rem; letter-spacing:.06em; padding:.65rem 1rem;
+}
+.disclaimer a{color:var(--gold);text-decoration:underline}
+/* ---------- header ---------- */
+header.site{
+  border-bottom:4px double var(--ink);
+  padding:1.1rem 0 .9rem; text-align:center; position:relative;
+}
+.eyebrow{
+  font-family:'Caveat',cursive; font-size:1.35rem; color:var(--red);
+  transform:rotate(-2deg); display:inline-block; margin-bottom:.25rem;
+}
+.masthead{
+  font-family:'Rye',serif; font-weight:400; font-size:clamp(2.4rem,7vw,4.6rem);
+  letter-spacing:.04em; line-height:1; color:var(--ink);
+  text-shadow:2px 2px 0 rgba(168,35,42,.18);
+}
+.tagline{font-size:1rem; letter-spacing:.14em; text-transform:uppercase; margin-top:.5rem}
+.est-badge{
+  display:inline-block; margin-top:.6rem; border:2px solid var(--red); color:var(--red);
+  border-radius:50%; width:92px; height:92px; line-height:1.15;
+  font-family:'Rye',serif; font-size:.8rem; padding-top:16px; transform:rotate(6deg);
+  background:var(--card); box-shadow:3px 3px 0 rgba(23,19,16,.2);
+}
+nav.sections{
+  display:flex; justify-content:center; gap:.4rem; flex-wrap:wrap;
+  padding:.9rem 1rem; border-bottom:2px solid var(--ink);
+}
+nav.sections a{
+  font-family:'Bitter',serif; font-weight:700; font-size:.92rem; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--ink); text-decoration:none;
+  padding:.45rem 1rem; border:2px solid transparent; border-radius:4px;
+}
+nav.sections a:hover{border-color:var(--red); color:var(--red)}
+/* ---------- hero ---------- */
+.hero{padding:2.6rem 0 2rem; text-align:center}
+.hero h1{
+  font-family:'Rye',serif; font-weight:400; font-size:clamp(1.9rem,5vw,3rem);
+  margin-bottom:.4rem; color:var(--ink);
+}
+.hero .lede{font-size:1.08rem; max-width:640px; margin:0 auto 1.2rem}
+.cta-row{display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap; margin:1.4rem 0}
+.btn{
+  display:inline-block; font-weight:700; letter-spacing:.06em; text-decoration:none;
+  padding:.9rem 1.7rem; border-radius:6px; font-size:1.05rem;
+  border:3px solid var(--ink); box-shadow:4px 4px 0 var(--ink);
+  transition:transform .12s ease, box-shadow .12s ease; min-height:48px;
+}
+.btn:hover{transform:translate(2px,2px); box-shadow:2px 2px 0 var(--ink)}
+.btn-primary{background:var(--red); color:var(--paper); border-color:var(--ink)}
+.btn-ghost{background:var(--card); color:var(--ink)}
+.walkline{
+  font-family:'Caveat',cursive; font-size:1.5rem; color:var(--navy);
+  transform:rotate(-1.5deg); margin-top:.6rem;
+}
+/* ---------- flash sheet grid ---------- */
+.flash{padding:2.4rem 0}
+.flash h2, .artists h2, .trust h2, .visit h2{
+  font-family:'Rye',serif; font-weight:400; font-size:clamp(1.5rem,4vw,2.2rem);
+  text-align:center; margin-bottom:.4rem;
+}
+.section-sub{text-align:center; font-size:.95rem; max-width:620px; margin:0 auto 1.8rem; font-style:italic}
+.flash-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:14px;
+}
+.flash-card{
+  background:var(--card); border:3px solid var(--ink); border-radius:6px;
+  padding:1.1rem .8rem; text-align:center; box-shadow:5px 5px 0 rgba(23,19,16,.15);
+  transition:transform .15s ease;
+}
+.flash-card:hover{transform:rotate(-1deg) scale(1.03)}
+.flash-card svg{width:96px; height:96px; margin-bottom:.5rem}
+.flash-card figcaption{
+  font-family:'Caveat',cursive; font-size:1.25rem; color:var(--navy);
+}
+.note-illustration{
+  text-align:center; font-size:.8rem; color:#5b5245; margin-top:1rem; font-style:italic;
+}
+/* ---------- trust block ---------- */
+.trust{background:var(--navy); color:var(--paper); padding:2.8rem 0; margin:2.4rem 0 0}
+.trust h2{color:var(--paper)}
+.trust-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.4rem; margin-top:1.6rem}
+.trust-item{
+  border:2px dashed var(--gold); border-radius:8px; padding:1.4rem 1.2rem; text-align:center;
+}
+.trust-item .big{font-family:'Rye',serif; font-size:1.7rem; color:var(--gold); display:block; margin-bottom:.4rem}
+.trust-item p{font-size:.95rem}
+/* ---------- artists ---------- */
+.artists{padding:2.8rem 0}
+.artist-strip{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-top:1.6rem;
+}
+.artist-card{
+  background:var(--card); border:2px solid var(--ink); border-radius:50% 50% 6px 6px;
+  padding:1.6rem 1rem 1.1rem; text-align:center; position:relative;
+}
+.artist-card.owner{border-color:var(--red); box-shadow:0 0 0 3px var(--paper), 0 0 0 5px var(--red)}
+.artist-card .name{font-family:'Rye',serif; font-size:1.25rem}
+.artist-card .role{font-size:.82rem; letter-spacing:.1em; text-transform:uppercase; color:var(--red); margin-top:.2rem}
+/* ---------- ratings ---------- */
+.ratings{padding:1rem 0 2.6rem}
+.rating-row{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; max-width:820px; margin:1.4rem auto 0;
+}
+.rating-card{
+  background:var(--card); border:3px solid var(--ink); padding:1.3rem 1.2rem;
+  box-shadow:5px 5px 0 rgba(23,19,16,.15); text-align:center; border-radius:6px;
+}
+.rating-card .score{font-family:'Rye',serif; font-size:2rem; color:var(--red)}
+.rating-card .src{font-size:.9rem; margin-top:.3rem}
+/* ---------- visit ---------- */
+.visit{background:var(--ink); color:var(--paper); padding:2.8rem 0}
+.visit h2{color:var(--paper)}
+.visit-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.6rem; margin-top:1.6rem}
+.visit-block h3{font-family:'Rye',serif; font-weight:400; font-size:1.2rem; color:var(--gold); margin-bottom:.5rem}
+.visit-block a{color:var(--paper)}
+.hours-note{font-style:italic; color:var(--paper-dark)}
+.map-btn{margin-top:1rem}
+footer.site{
+  border-top:4px double var(--ink); padding:1.6rem 0; text-align:center; font-size:.85rem; color:#4d4638;
+}
+footer.site .concept{font-weight:700}
+@media (max-width:560px){
+  .masthead{font-size:2.2rem}
+  .est-badge{width:76px;height:76px;font-size:.68rem;padding-top:13px}
+  .btn{width:100%; text-align:center}
+  .cta-row{flex-direction:column}
+  nav.sections a{font-size:.8rem; padding:.5rem .7rem}
+}
+</style>
+</head>
+<body>
+
+<div class="disclaimer">This is a design preview concept created by <a href="https://freightfolio.net">Freightfolio</a>, not the business's official site.</div>
+
+<header class="site">
+  <div class="wrap">
+    <span class="eyebrow">North Little Rock, Arkansas</span>
+    <div class="masthead">THE PARLOR</div>
+    <p class="tagline">Tattoo</p>
+    <div class="est-badge">EST.<br>1997</div>
+  </div>
+</header>
+
+<nav class="sections" aria-label="Page sections">
+  <a href="#flash">Flash</a>
+  <a href="#about">About</a>
+  <a href="#artists">Artists</a>
+  <a href="#ratings">Ratings</a>
+  <a href="#visit">Visit</a>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Old-school tattoo, North Little Rock since 1997</h1>
+    <p class="lede">A classic walk-in tattoo parlor on Main Street. Custom detailed designs from artists who have been at it a long time. Appointments are made in person only, so stop by the shop.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+15017539200">Call the shop</a>
+      <a class="btn btn-ghost" href="#visit">Plan your visit</a>
+    </div>
+    <p class="walkline">Walk-ins welcome</p>
+  </div>
+</section>
+
+<section class="flash" id="flash">
+  <div class="wrap">
+    <h2>Shop Flash</h2>
+    <p class="section-sub">A taste of the classic style hanging around the shop. These are decorative illustrations, not the shop's actual flash.</p>
+    <div class="flash-grid">
+      <figure class="flash-card">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#1d2c52" stroke-width="4"><path d="M50 12 v60"/><circle cx="50" cy="10" r="6"/><path d="M22 78 Q22 62 38 62 M78 78 Q78 62 62 62"/><path d="M22 78 Q50 88 78 78" stroke="#a8232a"/></g></svg>
+        <figcaption>The Anchor</figcaption>
+      </figure>
+      <figure class="flash-card">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><g fill="#a8232a" stroke="#171310" stroke-width="3"><path d="M50 8 L58 38 L90 38 L64 56 L73 88 L50 68 L27 88 L36 56 L10 38 L42 38 Z"/></g></svg>
+        <figcaption>The Star</figcaption>
+      </figure>
+      <figure class="flash-card">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><g><path d="M50 20 C30 20 28 44 50 60 C72 44 70 20 50 20 Z" fill="#a8232a" stroke="#171310" stroke-width="3"/><path d="M50 60 L50 92 M34 74 L66 74" stroke="#1d2c52" stroke-width="4"/><rect x="14" y="66" width="72" height="16" rx="3" fill="#f7f0dd" stroke="#171310" stroke-width="3"/></g></svg>
+        <figcaption>The Heart</figcaption>
+      </figure>
+      <figure class="flash-card">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke-linecap="round"><path d="M30 20 L70 80" stroke="#c9962e" stroke-width="6"/><path d="M30 20 L42 16 L38 30 Z" fill="#c9962e" stroke="#171310" stroke-width="3"/><path d="M20 55 Q50 40 80 55 M20 55 Q50 70 80 55" stroke="#1d2c52" stroke-width="3"/><circle cx="50" cy="55" r="5" fill="#a8232a" stroke="#171310" stroke-width="3"/></g></svg>
+        <figcaption>The Dagger</figcaption>
+      </figure>
+      <figure class="flash-card">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><g><circle cx="50" cy="40" r="22" fill="none" stroke="#a8232a" stroke-width="5"/><circle cx="50" cy="40" r="12" fill="none" stroke="#1d2c52" stroke-width="4"/><path d="M50 62 V92 M36 70 L64 70" stroke="#171310" stroke-width="5"/><path d="M28 84 Q50 76 72 84" fill="none" stroke="#171310" stroke-width="3"/></g></svg>
+        <figcaption>The Horseshoe</figcaption>
+      </figure>
+      <figure class="flash-card">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><g stroke="#171310" stroke-width="3"><rect x="22" y="22" width="26" height="26" rx="6" fill="#f7f0dd" transform="rotate(12 35 35)"/><rect x="52" y="52" width="26" height="26" rx="6" fill="#1d2c52" transform="rotate(-10 65 65)"/><circle cx="32" cy="32" r="3" fill="#171310"/><circle cx="42" cy="38" r="3" fill="#171310"/><circle cx="62" cy="62" r="3" fill="#f7f0dd"/><circle cx="70" cy="68" r="3" fill="#f7f0dd"/></g></svg>
+        <figcaption>The Dice</figcaption>
+      </figure>
+    </div>
+    <p class="note-illustration">Illustrations above are decorative and were drawn for this preview. They do not depict the shop's work.</p>
+  </div>
+</section>
+
+<section class="trust" id="about">
+  <div class="wrap">
+    <h2>The Shop</h2>
+    <p class="section-sub" style="color:var(--paper-dark)">The Parlor Tattoo has been on Main Street since 1997. Here is what that means in plain terms.</p>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="big">28+ years</span>
+        <p>A walk-in tattoo studio in North Little Rock since 1997, with classic old-school parlor branding.</p>
+      </div>
+      <div class="trust-item">
+        <span class="big">Walk-ins welcome</span>
+        <p>No appointment hoops. Come into the shop and talk through your idea with an artist in person.</p>
+      </div>
+      <div class="trust-item">
+        <span class="big">In person only</span>
+        <p>Appointments are booked in person at the shop. There is no online booking. Call the shop if you want to plan ahead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="artists" id="artists">
+  <div class="wrap">
+    <h2>The Artists</h2>
+    <p class="section-sub">The crew at the shop. Custom detailed designs.</p>
+    <div class="artist-strip">
+      <div class="artist-card owner">
+        <div class="name">Josh Chambers</div>
+        <div class="role">Owner</div>
+      </div>
+      <div class="artist-card">
+        <div class="name">Scott Diffee</div>
+        <div class="role">Artist</div>
+      </div>
+      <div class="artist-card">
+        <div class="name">Laura</div>
+        <div class="role">Artist</div>
+      </div>
+      <div class="artist-card">
+        <div class="name">Mark</div>
+        <div class="role">Artist</div>
+      </div>
+      <div class="artist-card">
+        <div class="name">Jeremy</div>
+        <div class="role">Artist</div>
+      </div>
+      <div class="artist-card">
+        <div class="name">Zach</div>
+        <div class="role">Artist</div>
+      </div>
+      <div class="artist-card">
+        <div class="name">Gary</div>
+        <div class="role">Artist</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ratings" id="ratings">
+  <div class="wrap">
+    <h2>What People Say</h2>
+    <div class="rating-row">
+      <div class="rating-card">
+        <div class="score">4.8</div>
+        <p class="src">4.8 on Google (340+ reviews, per Arkansas Democrat-Gazette, May 2025)</p>
+      </div>
+      <div class="rating-card">
+        <div class="score">5.0</div>
+        <p class="src">5.0 from 19 GetInked reviews</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <h2>Visit the Shop</h2>
+    <div class="visit-grid">
+      <div class="visit-block">
+        <h3>Find us</h3>
+        <p>The Parlor Tattoo<br>112 Main St<br>North Little Rock, AR 72114</p>
+        <p class="map-btn"><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=The+Parlor+Tattoo+112+Main+St+North+Little+Rock+AR+72114" target="_blank" rel="noopener">Get directions</a></p>
+      </div>
+      <div class="visit-block">
+        <h3>Hours</h3>
+        <p class="hours-note">Hours vary between listings, so call to confirm: <a href="tel:+15017539200">(501) 753-9200</a>.</p>
+      </div>
+      <div class="visit-block">
+        <h3>Call the shop</h3>
+        <p>Appointments are made in person only. To plan ahead, call the shop and stop by.</p>
+        <p class="map-btn"><a class="btn btn-primary" href="tel:+15017539200">(501) 753-9200</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="concept">This page is a design preview concept created by Freightfolio, not the business's official site.</p>
+    <p>Concept by Freightfolio | <a href="https://freightfolio.net">freightfolio.net</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
