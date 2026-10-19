@@ -60,6 +60,30 @@
     font-weight:600;
   }
 
+  /* jump nav */
+  .jump-nav{
+    background:var(--cream-dark);
+    border-bottom:2px solid var(--navy);
+    text-align:center;
+    padding:10px 18px;
+    font-family:'Zilla Slab', Georgia, serif;
+    font-size:.92rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+  .jump-nav a{
+    color:var(--navy);
+    font-weight:600;
+    text-decoration:none;
+    padding:2px 4px;
+  }
+  .jump-nav a:hover{color:var(--red);text-decoration:underline;}
+  .jump-nav span{color:var(--red);margin:0 9px;font-weight:700;}
+  @media (max-width:680px){
+    .jump-nav{font-size:.8rem;padding:9px 12px;}
+    .jump-nav span{margin:0 5px;}
+  }
+
   .wrap{max-width:1020px;margin:0 auto;padding:0 24px;}
 
   /* ============ HERO ============ */
@@ -227,7 +251,11 @@
 
 <div class="preview-note">Design Preview. A mockup, not the business's website</div>
 
-<header class="hero">
+<nav class="jump-nav" aria-label="Page sections">
+  <a href="#top">Top</a><span aria-hidden="true">&middot;</span><a href="#prices">Price Board</a><span aria-hidden="true">&middot;</span><a href="#story">Our Story</a><span aria-hidden="true">&middot;</span><a href="#visit">Visit Us</a>
+</nav>
+
+<header class="hero" id="top">
   <div class="wrap">
     <div class="town script">Biloxi, Mississippi</div>
     <h1 class="brand slab">Pride <span class="amp">&amp;</span> Groom</h1>
@@ -255,12 +283,12 @@
 
 <div class="stripe" aria-hidden="true"></div>
 
-<section class="board-section">
+<section class="board-section" id="prices">
   <div class="wrap">
     <div class="board-head">
       <span class="script">straight off the wall</span>
       <h2 class="slab">Our Price Board</h2>
-      <p>No fine print, no surprises. These are our real prices, posted the way they have always been posted.</p>
+      <p>Here are the prices. What you see here is what you pay in the shop.</p>
     </div>
     <div class="board">
       <h3>Pride &amp; Groom &middot; Services &amp; Prices</h3>
@@ -291,7 +319,7 @@
 
 <div class="stripe thin" aria-hidden="true"></div>
 
-<section class="story">
+<section class="story" id="story">
   <div class="wrap">
     <div class="story-grid">
       <div>
@@ -313,7 +341,7 @@
 
 <div class="stripe" aria-hidden="true"></div>
 
-<section class="visit">
+<section class="visit" id="visit">
   <div class="wrap">
     <span class="script" style="display:block;text-align:center;">come see us</span>
     <h2 class="slab">Visit the Shop</h2>
