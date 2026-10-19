@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pelican Tattoo &amp; Body Piercing | Tattoo &amp; Piercing in Hartford, CT</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --paper:#ece1c6;
+    --paper-deep:#e2d5b4;
+    --ink:#16211b;
+    --ink-soft:#2b3a30;
+    --muted:#6d6452;
+    --red:#7c1f1a;
+    --red-deep:#5d150f;
+    --rule:#c9b98f;
+  }
+  html { scroll-behavior:smooth; }
+  body {
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Georgia,'Times New Roman','Nimbus Roman',serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a { color:inherit; }
+  a:focus-visible { outline:3px solid var(--red); outline-offset:3px; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 26px; }
+  section[id] { scroll-margin-top:110px; }
+
+  /* DESIGN PREVIEW disclosure bar */
+  .preview-bar {
+    background:var(--ink);
+    color:#f0e8d2;
+    text-align:center;
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    padding:11px 16px;
+  }
+  .preview-bar strong { color:#e8c86a; font-weight:700; }
+
+  /* Masthead */
+  .masthead { border-bottom:1px solid var(--ink); }
+  .masthead-inner { padding:30px 26px 22px; text-align:center; position:relative; }
+  .dateline {
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12px; letter-spacing:3.5px; text-transform:uppercase; color:var(--muted);
+    border-bottom:3px double var(--ink);
+    padding-bottom:12px; margin-bottom:20px;
+    display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+  }
+  .masthead h1 {
+    font-size:clamp(34px, 6vw, 62px);
+    line-height:1.08; font-weight:700; letter-spacing:.5px;
+  }
+  .masthead .sub {
+    font-style:italic; color:var(--ink-soft); font-size:clamp(16px,2.4vw,20px);
+    margin-top:10px;
+  }
+  .seal {
+    width:132px; height:132px; margin:22px auto 0; display:block;
+  }
+
+  /* Nav */
+  nav {
+    position:sticky; top:0; z-index:20;
+    background:rgba(236,225,198,.97);
+    border-bottom:3px double var(--ink);
+  }
+  nav .wrap {
+    display:flex; align-items:center; justify-content:center; gap:34px;
+    padding-top:13px; padding-bottom:13px; flex-wrap:wrap;
+  }
+  nav a.navlink {
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12.5px; letter-spacing:2.5px; text-transform:uppercase;
+    text-decoration:none; color:var(--ink-soft);
+  }
+  nav a.navlink:hover { color:var(--red); text-decoration:underline; text-underline-offset:4px; }
+
+  /* Front page lead */
+  .front { padding:64px 0 20px; }
+  .lead-grid { display:grid; grid-template-columns:1.55fr 1fr; gap:48px; align-items:start; }
+  .kicker {
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12px; letter-spacing:4px; text-transform:uppercase;
+    color:var(--red); font-weight:700; margin-bottom:14px;
+  }
+  .front h2 { font-size:clamp(30px,4.4vw,46px); line-height:1.15; font-weight:700; margin-bottom:18px; }
+  .lead-text { font-size:18px; color:var(--ink-soft); }
+  .lead-text p + p { margin-top:14px; }
+  .lead-text p:first-child::first-letter {
+    font-size:3.2em; float:left; line-height:.86; padding:4px 8px 0 0; color:var(--red); font-weight:700;
+  }
+  .cta-row { display:flex; gap:14px; flex-wrap:wrap; margin-top:26px; }
+  .btn {
+    display:inline-block;
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:13px; letter-spacing:2px; text-transform:uppercase; font-weight:700;
+    padding:15px 30px; text-decoration:none; min-height:48px;
+    background:var(--red); color:#fdf8ea; border:2px solid var(--red-deep);
+  }
+  .btn:hover { background:var(--red-deep); }
+  .btn.ghost { background:transparent; color:var(--ink); border:2px solid var(--ink); }
+  .btn.ghost:hover { background:rgba(22,33,27,.07); }
+
+  .facts-rail {
+    border:3px double var(--ink);
+    padding:26px 24px;
+    background:var(--paper-deep);
+  }
+  .facts-rail h3 {
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:700;
+    color:var(--red); margin-bottom:16px;
+    border-bottom:1px solid var(--rule); padding-bottom:10px;
+  }
+  .facts-rail dl { font-size:15.5px; }
+  .facts-rail dt {
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--muted);
+    margin-top:14px;
+  }
+  .facts-rail dt:first-of-type { margin-top:0; }
+  .facts-rail dd { color:var(--ink); }
+  .facts-rail a { text-decoration:underline; text-underline-offset:3px; }
+
+  /* Section framing */
+  .section-head { text-align:center; margin-bottom:40px; }
+  .section-head h2 { font-size:clamp(28px,4vw,42px); font-weight:700; line-height:1.2; }
+  .section-head .rule-line { border:none; border-top:3px double var(--ink); margin:18px auto 0; max-width:220px; }
+  .section-head p { color:var(--muted); font-style:italic; margin-top:12px; font-size:17px; }
+
+  /* Shop tickets */
+  .tickets { padding:64px 0; }
+  .ticket-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  .ticket {
+    border:2px solid var(--ink);
+    background:#f2e9d2;
+    padding:0;
+    position:relative;
+  }
+  .ticket-head {
+    background:var(--ink); color:#f0e8d2;
+    padding:16px 24px;
+    display:flex; justify-content:space-between; align-items:baseline; gap:10px; flex-wrap:wrap;
+  }
+  .ticket-head h3 { font-size:22px; font-weight:700; letter-spacing:.5px; }
+  .ticket-head .no {
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:#e8c86a;
+  }
+  .ticket-body { padding:24px 26px 26px; }
+  .ticket-body ul { list-style:none; }
+  .ticket-body li {
+    padding:9px 0;
+    border-bottom:1px dashed var(--rule);
+    font-size:17px;
+  }
+  .ticket-body li:last-child { border-bottom:none; }
+  .ticket-body li::before { content:"\2713  "; color:var(--red); font-weight:700; }
+  .ticket-note { margin-top:18px; font-size:15px; color:var(--muted); font-style:italic; }
+  .ticket-strip {
+    margin-top:28px;
+    border:2px solid var(--ink);
+    background:var(--red); color:#fdf8ea;
+    padding:20px 26px;
+    display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;
+  }
+  .ticket-strip h3 { font-size:21px; }
+  .ticket-strip p { font-size:15.5px; opacity:.94; }
+
+  /* History */
+  .history { padding:64px 0; background:var(--paper-deep); border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
+  .history-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+  .history h2 { font-size:clamp(28px,4vw,40px); line-height:1.2; margin-bottom:16px; }
+  .history p.body-copy { font-size:17.5px; color:var(--ink-soft); margin-bottom:14px; }
+  .history p.body-copy a { color:var(--red); }
+  .timeline { list-style:none; border-left:2px solid var(--red); padding-left:26px; }
+  .timeline li { margin-bottom:26px; position:relative; }
+  .timeline li::before {
+    content:""; position:absolute; left:-33px; top:6px;
+    width:10px; height:10px; background:var(--red); border-radius:50%;
+  }
+  .timeline .year {
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12px; letter-spacing:3px; color:var(--red); font-weight:700;
+  }
+  .timeline p { font-size:16.5px; margin-top:4px; }
+
+  /* Visit */
+  .visit { padding:64px 0 72px; }
+  .visit-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+  .hours-table { width:100%; border-collapse:collapse; font-size:17px; }
+  .hours-table caption {
+    text-align:left;
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:700;
+    color:var(--red); padding-bottom:12px;
+  }
+  .hours-table th, .hours-table td { padding:10px 4px; border-bottom:1px solid var(--rule); text-align:left; }
+  .hours-table th { font-weight:400; color:var(--ink-soft); }
+  .hours-table td { text-align:right; font-variant-numeric:tabular-nums; }
+  .hours-table tr.closed th, .hours-table tr.closed td { color:var(--muted); font-style:italic; }
+  .contact-card { border:3px double var(--ink); padding:28px 26px; background:#f2e9d2; }
+  .contact-card h3 {
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:700;
+    color:var(--red); margin-bottom:16px;
+  }
+  .contact-card p { font-size:17px; margin-bottom:12px; }
+  .contact-card a { color:var(--red); }
+  .contact-card .rating { font-size:16px; color:var(--ink-soft); border-top:1px solid var(--rule); padding-top:14px; margin-top:18px; }
+  .contact-card .btn-row { display:flex; gap:12px; flex-wrap:wrap; margin-top:20px; }
+
+  /* Footer */
+  footer { background:var(--ink); color:#d9cfb6; }
+  footer .wrap { padding-top:34px; padding-bottom:34px; }
+  .footer-name { font-size:20px; font-weight:700; color:#f0e8d2; margin-bottom:8px; }
+  .footer-meta { font-size:15px; margin-bottom:6px; }
+  .footer-meta a { color:#e8c86a; }
+  .disclaimer {
+    margin-top:20px; padding-top:18px; border-top:1px solid #3a4a40;
+    font-size:13.5px; color:#a89d82; line-height:1.6; max-width:760px;
+  }
+
+  /* Mobile */
+  @media (max-width:880px) {
+    .lead-grid, .ticket-grid, .history-grid, .visit-grid { grid-template-columns:1fr; gap:36px; }
+    .front { padding:44px 0 10px; }
+    .tickets, .history, .visit { padding:48px 0; }
+    .dateline { justify-content:center; text-align:center; }
+    nav .wrap { gap:22px; }
+    .seal { width:112px; height:112px; }
+  }
+  @media (max-width:520px) {
+    .wrap { padding:0 18px; }
+    .masthead-inner { padding:22px 18px 16px; }
+    .lead-text { font-size:16.5px; }
+    .btn { padding:15px 22px; width:100%; text-align:center; }
+    .cta-row .btn { width:auto; flex:1 1 200px; }
+    .ticket-body, .facts-rail, .contact-card { padding-left:20px; padding-right:20px; }
+    .hours-table { font-size:15.5px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar"><strong>Design Preview</strong> &nbsp;&middot;&nbsp; An unsolicited concept by Freightfolio</div>
+
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <div class="dateline">
+      <span>Hartford, Connecticut</span>
+      <span>Park Street</span>
+      <span>Est. 1970</span>
+    </div>
+    <h1>Pelican Tattoo &amp; Body Piercing</h1>
+    <p class="sub">Tattoo and piercing on Park Street since 1970.</p>
+    <svg class="seal" viewBox="0 0 132 132" role="img" aria-label="Seal: established 1970, Hartford Connecticut">
+      <circle cx="66" cy="66" r="62" fill="none" stroke="#7c1f1a" stroke-width="3"/>
+      <circle cx="66" cy="66" r="52" fill="none" stroke="#7c1f1a" stroke-width="1.5"/>
+      <defs>
+        <path id="sealArc" d="M66,66 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/>
+      </defs>
+      <text font-family="Georgia, 'Times New Roman', serif" font-size="12.5" letter-spacing="3.5" fill="#7c1f1a">
+        <textPath href="#sealArc" startOffset="2%">EST. 1970 &#183; HARTFORD, CONN. &#183;</textPath>
+      </text>
+      <text x="66" y="62" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="700" fill="#16211b">PELICAN</text>
+      <text x="66" y="86" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="4" fill="#7c1f1a">TATTOO &#183; PIERCING</text>
+    </svg>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a class="navlink" href="#services">Services</a>
+    <a class="navlink" href="#history">History</a>
+    <a class="navlink" href="#visit">Visit</a>
+  </div>
+</nav>
+
+<main>
+
+<section class="front" aria-label="Introduction">
+  <div class="wrap lead-grid">
+    <div>
+      <p class="kicker">The Shop</p>
+      <h2>A Park Street institution since 1970.</h2>
+      <div class="lead-text">
+        <p>Pelican Tattoo &amp; Body Piercing has served Hartford from 577 Park Street since 1970. The shop offers custom tattoos and body piercings, and walk-ins are welcomed.</p>
+        <p>The work covers a wide range of tattoo styles and piercing placements, and the shop also sells body jewelry, including 14K gold pieces.</p>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="tel:+18602461412">Call the shop</a>
+        <a class="btn ghost" href="mailto:pelicantattoos@gmail.com">Email the shop</a>
+      </div>
+    </div>
+    <aside class="facts-rail" aria-label="Shop facts">
+      <h3>At a glance</h3>
+      <dl>
+        <dt>Address</dt>
+        <dd>577 Park St, Hartford, CT 06106</dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+18602461412">(860) 246-1412</a></dd>
+        <dt>Email</dt>
+        <dd><a href="mailto:pelicantattoos@gmail.com">pelicantattoos@gmail.com</a> (the shop&rsquo;s listed email)</dd>
+        <dt>Walk-ins</dt>
+        <dd>Walk-ins welcomed</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="tickets" id="services" aria-label="Services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" style="text-align:center;">Services</p>
+      <h2>The shop ticket</h2>
+      <hr class="rule-line">
+      <p>What the shop offers, listed plainly.</p>
+    </div>
+    <div class="ticket-grid">
+      <article class="ticket">
+        <div class="ticket-head">
+          <h3>Custom Tattoos</h3>
+          <span class="no">Ticket 01</span>
+        </div>
+        <div class="ticket-body">
+          <ul>
+            <li>Tribal</li>
+            <li>Traditional</li>
+            <li>Japanese</li>
+            <li>Celtic</li>
+            <li>Portraits</li>
+            <li>Sleeves</li>
+            <li>Lettering</li>
+          </ul>
+          <p class="ticket-note">Call the shop to talk through your idea and what the artists can do with it.</p>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="ticket-head">
+          <h3>Body Piercings</h3>
+          <span class="no">Ticket 02</span>
+        </div>
+        <div class="ticket-body">
+          <ul>
+            <li>Septum</li>
+            <li>Navel</li>
+            <li>Nostril</li>
+            <li>Eyebrow</li>
+            <li>Lip</li>
+            <li>Nipple</li>
+            <li>And more</li>
+          </ul>
+          <p class="ticket-note">The shop does not publish a price list. One review mentions $65 out the door for a septum piercing, ring included.</p>
+        </div>
+      </article>
+    </div>
+    <div class="ticket-strip">
+      <h3>Body jewelry for sale</h3>
+      <p>The shop sells body jewelry, including 14K gold pieces. Ask what is in stock when you call.</p>
+    </div>
+  </div>
+</section>
+
+<section class="history" id="history" aria-label="History">
+  <div class="wrap history-grid">
+    <div>
+      <p class="kicker">History</p>
+      <h2>Connecticut&rsquo;s first licensed tattoo shop.</h2>
+      <p class="body-copy">Pelican Tattoo &amp; Body Piercing has operated on Park Street in Hartford&rsquo;s Frog Hollow neighborhood since 1970. It is described as Connecticut&rsquo;s first licensed tattoo shop.</p>
+      <p class="body-copy">Connecticut Public (WNPR) profiled the shop as a Park Street institution, a fixture of the neighborhood for more than five decades.</p>
+    </div>
+    <div>
+      <ol class="timeline">
+        <li>
+          <span class="year">1970</span>
+          <p>The shop opens on Park Street in Hartford&rsquo;s Frog Hollow neighborhood.</p>
+        </li>
+        <li>
+          <span class="year">First of its kind</span>
+          <p>Pelican is described as Connecticut&rsquo;s first licensed tattoo shop.</p>
+        </li>
+        <li>
+          <span class="year">Profiled</span>
+          <p>Connecticut Public (WNPR) profiles the shop as a Park Street institution.</p>
+        </li>
+        <li>
+          <span class="year">Today</span>
+          <p>The shop continues to offer custom tattoos, body piercings, and body jewelry from the same Park Street address.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-label="Visit the shop">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" style="text-align:center;">Visit</p>
+      <h2>Find the shop</h2>
+      <hr class="rule-line">
+      <p>Hours, directions, and how to reach Pelican.</p>
+    </div>
+    <div class="visit-grid">
+      <div>
+        <table class="hours-table">
+          <caption>Shop hours</caption>
+          <tbody>
+            <tr><th scope="row">Monday</th><td>11:00 AM to 7:00 PM</td></tr>
+            <tr><th scope="row">Tuesday</th><td>11:00 AM to 7:00 PM</td></tr>
+            <tr><th scope="row">Wednesday</th><td>11:00 AM to 7:00 PM</td></tr>
+            <tr><th scope="row">Thursday</th><td>11:00 AM to 7:00 PM</td></tr>
+            <tr><th scope="row">Friday</th><td>12:00 PM to 10:00 PM</td></tr>
+            <tr><th scope="row">Saturday</th><td>11:00 AM to 6:00 PM</td></tr>
+            <tr class="closed"><th scope="row">Sunday</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="contact-card">
+        <h3>Get in touch</h3>
+        <p><strong>Address</strong><br>577 Park St<br>Hartford, CT 06106</p>
+        <p><strong>Phone</strong><br><a href="tel:+18602461412">(860) 246-1412</a></p>
+        <p><strong>Email</strong><br><a href="mailto:pelicantattoos@gmail.com">pelicantattoos@gmail.com</a> (the shop&rsquo;s listed email)</p>
+        <p class="rating"><strong>Rating</strong><br>4.6 from 116 Google reviews</p>
+        <div class="btn-row">
+          <a class="btn" href="tel:+18602461412">Call the shop</a>
+          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=577+Park+St,+Hartford,+CT+06106" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="footer-name">Pelican Tattoo &amp; Body Piercing</p>
+    <p class="footer-meta">577 Park St, Hartford, CT 06106 &middot; <a href="tel:+18602461412">(860) 246-1412</a></p>
+    <p class="disclaimer">This is an unsolicited website design concept created by Freightfolio. It was not commissioned, reviewed, or endorsed by Pelican Tattoo &amp; Body Piercing. Business details shown here come from the shop&rsquo;s public listings.</p>
+  </div>
+</footer>
+
+</body>
+</html>
