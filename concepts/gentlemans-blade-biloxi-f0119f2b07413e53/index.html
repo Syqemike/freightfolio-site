@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>The Gentleman's Blade: Barber Shop and Grooming Lounge, Biloxi MS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f7f3ea;
+    --paper-deep:#efe8d8;
+    --ink:#22302a;
+    --ink-soft:#4a564f;
+    --ink-faint:#7c857e;
+    --hairline:#d8cfba;
+    --brass:#a5824c;
+    --brass-deep:#8a6c3d;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--brass);color:#fff;}
+  img{max-width:100%;display:block;}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  @media(max-width:480px){.wrap{padding:0 22px;}}
+
+  /* ---------- preview banner ---------- */
+  .preview-bar{
+    border-bottom:1px solid var(--hairline);
+    font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-faint);
+  }
+  .preview-bar .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:10px;padding-bottom:10px;}
+  .preview-bar a{color:var(--ink-soft);text-decoration:none;}
+  .preview-bar a:hover{color:var(--brass-deep);}
+
+  /* ---------- masthead ---------- */
+  .masthead{border-bottom:1px solid var(--ink);padding:34px 0 26px;text-align:center;}
+  .masthead .est{
+    font-size:11.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--brass-deep);
+    margin-bottom:14px;
+  }
+  .wordmark{
+    font-family:'Fraunces',Georgia,'Times New Roman',serif;
+    font-weight:500;font-size:clamp(2.5rem,6vw,4.4rem);
+    line-height:1.02;letter-spacing:-0.01em;
+  }
+  .wordmark .amp{font-style:italic;font-weight:300;color:var(--brass-deep);}
+  .masthead .sub{
+    margin-top:14px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);
+  }
+  .masthead .sub .dot{color:var(--brass);margin:0 10px;}
+
+  /* ---------- nav ---------- */
+  .index-nav{border-bottom:1px solid var(--hairline);}
+  .index-nav .wrap{
+    display:flex;justify-content:center;gap:44px;
+    padding-top:14px;padding-bottom:14px;
+    font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;
+  }
+  .index-nav a{color:var(--ink-soft);text-decoration:none;}
+  .index-nav a:hover{color:var(--brass-deep);}
+  @media(max-width:640px){.index-nav .wrap{gap:0;font-size:10.5px;letter-spacing:.12em;justify-content:space-between;padding-left:16px;padding-right:16px;}
+  .index-nav a{white-space:nowrap;}}
+
+  /* ---------- hero ---------- */
+  .hero{padding:84px 0 76px;}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center;}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:48px;}}
+  .kicker{
+    font-size:12.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--brass-deep);
+    margin-bottom:26px;display:flex;align-items:center;gap:16px;
+  }
+  .kicker::before{content:"";display:block;width:44px;height:1px;background:var(--brass);}
+  .hero h1{
+    font-family:'Fraunces',Georgia,serif;font-weight:400;
+    font-size:clamp(2.6rem,5.2vw,4.2rem);line-height:1.06;letter-spacing:-0.015em;
+    margin-bottom:28px;
+  }
+  .hero h1 em{font-style:italic;color:var(--brass-deep);}
+  .lede{font-size:19px;line-height:1.75;color:var(--ink-soft);max-width:44ch;margin-bottom:16px;}
+  .lede strong{color:var(--ink);font-weight:600;}
+  .cta-row{display:flex;gap:18px;align-items:center;margin-top:34px;flex-wrap:wrap;}
+  .btn-call{
+    display:inline-block;padding:16px 34px;border:1px solid var(--ink);
+    color:var(--ink);text-decoration:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+    transition:background .25s,color .25s;
+  }
+  .btn-call:hover{background:var(--ink);color:var(--paper);}
+  .fb-link{font-size:14px;color:var(--ink-soft);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--hairline);}
+  .fb-link:hover{color:var(--brass-deep);}
+  .rating-line{margin-top:30px;font-size:14px;color:var(--ink-faint);}
+  .rating-line .stars{color:var(--brass-deep);letter-spacing:.12em;margin-right:8px;}
+
+  .portrait{
+    border:1px solid var(--ink);
+    padding:14px;background:var(--paper);
+    position:relative;
+  }
+  .portrait img{width:100%;height:auto;filter:sepia(.12) contrast(1.02);}
+  .portrait figcaption{
+    display:flex;justify-content:space-between;align-items:baseline;
+    padding:14px 4px 2px;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);
+  }
+  .portrait figcaption .no{color:var(--brass-deep);}
+
+  /* ---------- section headers ---------- */
+  section{padding:80px 0;}
+  .sec-head{display:flex;align-items:baseline;gap:24px;border-bottom:1px solid var(--ink);padding-bottom:18px;margin-bottom:8px;}
+  .sec-num{
+    font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:20px;color:var(--brass-deep);
+    min-width:44px;
+  }
+  .sec-head h2{
+    font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:clamp(1.7rem,3vw,2.4rem);letter-spacing:-0.01em;
+  }
+  .sec-head .sec-note{margin-left:auto;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);white-space:nowrap;}
+  @media(max-width:640px){.sec-head .sec-note{display:none;}}
+
+  /* ---------- services menu ---------- */
+  .menu{display:grid;grid-template-columns:1fr 1fr;}
+  @media(max-width:760px){.menu{grid-template-columns:1fr;}}
+  .menu-item{
+    padding:34px 36px 34px 0;border-bottom:1px solid var(--hairline);
+    display:flex;gap:20px;
+  }
+  .menu-item:nth-child(odd){padding-right:44px;}
+  .menu-item:nth-child(even){padding-left:44px;border-left:1px solid var(--hairline);}
+  @media(max-width:760px){
+    .menu-item:nth-child(even){padding-left:0;border-left:none;}
+    .menu-item:nth-child(odd){padding-right:0;}
+  }
+  .menu-item .m-no{
+    font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--brass);font-size:15px;white-space:nowrap;padding-top:4px;
+  }
+  .menu-item h3{
+    font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:1.35rem;margin-bottom:8px;letter-spacing:-0.005em;
+  }
+  .menu-item p{color:var(--ink-soft);font-size:15.5px;line-height:1.7;}
+  .menu-foot{margin-top:26px;font-size:14.5px;color:var(--ink-faint);font-style:italic;font-family:'Fraunces',Georgia,serif;}
+
+  /* ---------- lounge (about) ---------- */
+  .lounge{background:var(--paper-deep);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);}
+  .lounge-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;}
+  @media(max-width:900px){.lounge-grid{grid-template-columns:1fr;gap:40px;}}
+  .dropcap::first-letter{
+    font-family:'Fraunces',Georgia,serif;font-size:3.6em;float:left;line-height:.82;
+    padding:6px 12px 0 0;color:var(--brass-deep);
+  }
+  .lounge p{margin-bottom:20px;color:var(--ink-soft);font-size:17.5px;line-height:1.8;max-width:56ch;}
+  .lounge p strong{color:var(--ink);font-weight:600;}
+  .pullquote{
+    border-left:2px solid var(--brass);padding:6px 0 6px 32px;
+  }
+  .pullquote blockquote{
+    font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:400;
+    font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.35;letter-spacing:-0.01em;margin-bottom:14px;
+  }
+  .pullquote cite{font-style:normal;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-faint);}
+
+  /* ---------- visit ---------- */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:44px;}
+  @media(max-width:760px){.visit-grid{grid-template-columns:1fr;gap:44px;}}
+  .hours{width:100%;border-collapse:collapse;}
+  .hours th{
+    text-align:left;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-faint);
+    font-weight:600;padding:0 0 14px;
+  }
+  .hours td{padding:15px 0;border-top:1px solid var(--hairline);font-size:16px;}
+  .hours td.day{font-family:'Fraunces',Georgia,serif;font-size:1.1rem;}
+  .hours td.time{text-align:right;color:var(--ink-soft);}
+  .hours tr.closed td{color:var(--ink-faint);font-style:italic;}
+  .visit-block h3{
+    font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--brass-deep);margin-bottom:18px;font-weight:600;
+  }
+  .visit-block address{font-style:normal;font-size:18px;line-height:1.7;margin-bottom:26px;}
+  .visit-block address .suite{display:block;font-size:15px;color:var(--ink-soft);}
+  .visit-block p{font-size:16px;color:var(--ink-soft);margin-bottom:14px;}
+  .visit-block a{color:var(--ink);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--brass);}
+  .visit-block a:hover{color:var(--brass-deep);}
+  .big-phone{font-family:'Fraunces',Georgia,serif;font-size:1.9rem;color:var(--ink);text-decoration:none !important;}
+  .map-link{display:inline-block;margin-top:6px;font-size:14px;}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--ink);padding:44px 0 54px;}
+  .foot-grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;}
+  .foot-wordmark{font-family:'Fraunces',Georgia,serif;font-size:1.4rem;margin-bottom:10px;}
+  .foot-wordmark .amp{font-style:italic;color:var(--brass-deep);}
+  .foot-note{font-size:13.5px;color:var(--ink-faint);max-width:52ch;line-height:1.7;}
+  .foot-contact{font-size:14.5px;color:var(--ink-soft);text-align:right;line-height:1.9;}
+  .foot-contact a{color:var(--ink);}
+  @media(max-width:640px){.foot-contact{text-align:left;}}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">
+  <div class="wrap">
+    <span>Design preview</span>
+    <a href="tel:+12285495248">(228) 549-5248</a>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="est">Veteran owned &middot; Biloxi, Mississippi</p>
+    <h1 class="wordmark">The Gentleman&rsquo;s Blade <span class="amp">&amp;</span> Grooming Lounge</h1>
+    <p class="sub">Barber Shop <span class="dot">&middot;</span> 2468 Pass Rd, Suite E <span class="dot">&middot;</span> Biloxi, MS</p>
+  </div>
+</header>
+
+<nav class="index-nav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#services">Services</a>
+    <a href="#lounge">The Lounge</a>
+    <a href="#visit">Hours &amp; Location</a>
+    <a href="tel:+12285495248">Book</a>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" style="padding-top:84px;">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Veteran-owned grooming lounge &middot; Biloxi</p>
+        <h1>Walk out <em>sharper</em> than you walked in.</h1>
+        <p class="lede">A veteran-owned shop and grooming lounge on Pass Road. Cuts, fades, and tapers. Beard work. Hot-towel shaves. Facials.</p>
+        <div class="cta-row">
+          <a class="btn-call" href="tel:+12285495248">Call to book</a>
+          <a class="fb-link" href="https://booksy.com/en-us/1567902_the-gentlemans-blade-biloxi-cam_barber-shop_25709_biloxi" target="_blank" rel="noopener">Book on Booksy</a>
+          <a class="fb-link" href="https://www.facebook.com/share/1K2Zo5UGQg/?mibextid=wwXIfr" target="_blank" rel="noopener">Find us on Facebook</a>
+        </div>
+        <p class="rating-line"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>Rated 5.0 from 24 Booksy reviews</p>
+      </div>
+      <figure class="portrait">
+        <img src="img/photo-1.jpg" alt="Fresh fade with shaped beard at The Gentleman's Blade">
+        <figcaption><span>Fig. 01 &middot; The fade</span><span class="no">Biloxi, MS</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- I. SERVICES -->
+  <section id="services" style="padding-top:0;">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num">I.</span>
+        <h2>The Service Menu</h2>
+        <span class="sec-note">Call for pricing &amp; availability</span>
+      </div>
+      <div class="menu">
+        <div class="menu-item">
+          <span class="m-no">01</span>
+          <div>
+            <h3>Haircuts</h3>
+            <p>Cuts, fades, and tapers. Clean lines and even blends.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <span class="m-no">02</span>
+          <div>
+            <h3>Beard Trims</h3>
+            <p>Shaped to your face and detailed to the line. We clean up the cheeks, define the neckline, and leave the beard looking intentional, not accidental.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <span class="m-no">03</span>
+          <div>
+            <h3>Straight-Razor Shaves</h3>
+            <p>The classic service. Hot towel to soften, straight razor for the close cut, cold towel to finish.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <span class="m-no">04</span>
+          <div>
+            <h3>Facials</h3>
+            <p>A deep clean and hydration for your skin. Especially good paired with a shave or a cut, when your face is already getting the attention.</p>
+          </div>
+        </div>
+      </div>
+      <p class="menu-foot">Call ahead to book your chair.</p>
+    </div>
+  </section>
+
+  <!-- II. LOUNGE -->
+  <section id="lounge" class="lounge">
+    <div class="wrap">
+      <div class="sec-head" style="border-bottom-color:var(--ink);">
+        <span class="sec-num">II.</span>
+        <h2>The Lounge</h2>
+        <span class="sec-note">Why we are different</span>
+      </div>
+      <div class="lounge-grid" style="margin-top:48px;">
+        <div>
+          <p class="dropcap">The Gentleman&rsquo;s Blade is a veteran-owned grooming lounge on Pass Road in Biloxi. Sharp tools, a clean station, and detailed work.</p>
+          <p>Come in for a cut or a shave, and take a breath while you are here. Call to book your chair.</p>
+        </div>
+        <div class="pullquote">
+          <blockquote>You sit down. We take care of the rest.</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- III. VISIT -->
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num">III.</span>
+        <h2>Hours &amp; Location</h2>
+        <span class="sec-note">2468 Pass Rd, Biloxi</span>
+      </div>
+      <div class="visit-grid">
+        <div>
+          <table class="hours">
+            <thead><tr><th colspan="2">Shop hours</th></tr></thead>
+            <tbody>
+              <tr><td class="day">Tuesday &ndash; Friday</td><td class="time">10:00 AM &ndash; 6:00 PM</td></tr>
+              <tr><td class="day">Saturday</td><td class="time">10:00 AM &ndash; 3:00 PM</td></tr>
+              <tr class="closed"><td class="day">Sunday &amp; Monday</td><td class="time">Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="visit-block">
+          <h3>Find us</h3>
+          <address>
+            2468 Pass Rd, Suite E
+            <span class="suite">Biloxi, MS 39531</span>
+          </address>
+          <p><a class="big-phone" href="tel:+12285495248">(228) 549-5248</a></p>
+          <p>Call to book your chair. Booking is also available through our <a href="https://booksy.com/en-us/1567902_the-gentlemans-blade-biloxi-cam_barber-shop_25709_biloxi" target="_blank" rel="noopener">Booksy listing</a>.</p>
+          <a class="map-link" href="https://www.facebook.com/share/1K2Zo5UGQg/?mibextid=wwXIfr" target="_blank" rel="noopener">Follow the shop on Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-wordmark">The Gentleman&rsquo;s Blade <span class="amp">&amp;</span> Grooming Lounge</p>
+      <p class="foot-note">Concept preview. A free mockup, not affiliated with or endorsed by the business. Design prepared for review only.</p>
+    </div>
+    <div class="foot-contact">
+      2468 Pass Rd, Suite E, Biloxi, MS 39531<br>
+      <a href="tel:+12285495248">(228) 549-5248</a><br>
+      <a href="https://www.facebook.com/share/1K2Zo5UGQg/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
