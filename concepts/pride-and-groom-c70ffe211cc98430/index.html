@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Pride &amp; Groom | Dog Grooming in Biloxi, MS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#090b10;
+    --panel:#10131b;
+    --accent:#a1adff;
+    --text:#e8eaf2;
+    --muted:#9aa1b5;
+    --hairline:rgba(161,173,255,.2);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Manrope',system-ui,-apple-system,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .topbar{
+    background:var(--accent);
+    color:#0a0c12;
+    text-align:center;
+    font-family:'DM Sans',sans-serif;
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    padding:.6rem 1rem;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 1.5rem;}
+  .eyebrow{
+    font-family:'DM Sans',sans-serif;
+    font-size:.78rem;
+    font-weight:600;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:1rem;
+  }
+  section{padding:4.5rem 0;border-top:1px solid var(--hairline);}
+  section:first-of-type{border-top:none;}
+
+  /* Hero */
+  .hero{padding:5.5rem 0 4.5rem;position:relative;overflow:hidden;}
+  .hero::before{
+    content:"";
+    position:absolute;
+    top:-120px;right:-120px;
+    width:420px;height:420px;
+    background:radial-gradient(circle,rgba(161,173,255,.14) 0%,rgba(161,173,255,0) 70%);
+    pointer-events:none;
+  }
+  .hero h1{
+    font-family:'DM Sans',sans-serif;
+    font-size:clamp(2.6rem,7vw,4.6rem);
+    font-weight:700;
+    line-height:1.08;
+    letter-spacing:-0.01em;
+    margin-bottom:1.25rem;
+  }
+  .hero h1 span{color:var(--accent);}
+  .hero p.lede{
+    font-size:1.15rem;
+    color:var(--muted);
+    max-width:34rem;
+    margin-bottom:1rem;
+  }
+  .hero .rating{
+    font-size:.95rem;
+    color:var(--muted);
+    margin-bottom:2rem;
+  }
+  .hero .rating strong{color:var(--accent);font-weight:700;}
+  .cta{
+    display:inline-block;
+    background:var(--accent);
+    color:#0a0c12;
+    font-family:'DM Sans',sans-serif;
+    font-weight:700;
+    font-size:1.05rem;
+    padding:.95rem 2.1rem;
+    border-radius:10px;
+    text-decoration:none;
+    transition:transform .15s ease,box-shadow .15s ease;
+  }
+  .cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(161,173,255,.25);}
+  .cta-outline{
+    display:inline-block;
+    background:transparent;
+    color:var(--accent);
+    border:1px solid var(--hairline);
+    font-family:'DM Sans',sans-serif;
+    font-weight:600;
+    font-size:1.05rem;
+    padding:.95rem 2.1rem;
+    border-radius:10px;
+    text-decoration:none;
+    margin-left:.75rem;
+  }
+
+  /* Section headers */
+  .section-head h2{
+    font-family:'DM Sans',sans-serif;
+    font-size:clamp(1.7rem,4vw,2.4rem);
+    font-weight:700;
+    margin-bottom:.6rem;
+  }
+  .section-head p{color:var(--muted);max-width:38rem;margin-bottom:2.5rem;}
+
+  /* Services */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
+  .card{
+    background:var(--panel);
+    border:1px solid var(--hairline);
+    border-radius:14px;
+    padding:2rem 1.6rem;
+    transition:transform .15s ease,border-color .15s ease;
+  }
+  .card:hover{transform:translateY(-4px);border-color:rgba(161,173,255,.45);}
+  .card .price{
+    font-family:'DM Sans',sans-serif;
+    font-size:2rem;
+    font-weight:700;
+    color:var(--accent);
+    margin-bottom:.5rem;
+  }
+  .card h3{
+    font-family:'DM Sans',sans-serif;
+    font-size:1.2rem;
+    font-weight:600;
+    margin-bottom:.6rem;
+  }
+  .card p{color:var(--muted);font-size:.95rem;}
+
+  /* About */
+  .about-panel{
+    background:var(--panel);
+    border:1px solid var(--hairline);
+    border-left:4px solid var(--accent);
+    border-radius:0 14px 14px 0;
+    padding:2.5rem;
+  }
+  .about-panel p{color:var(--muted);font-size:1.08rem;max-width:44rem;}
+  .about-panel p + p{margin-top:1.1rem;}
+
+  /* Visit */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
+  .visit-card{
+    background:var(--panel);
+    border:1px solid var(--hairline);
+    border-radius:14px;
+    padding:2rem;
+  }
+  .visit-card h3{
+    font-family:'DM Sans',sans-serif;
+    font-size:1.15rem;
+    font-weight:600;
+    margin-bottom:1.2rem;
+    color:var(--accent);
+  }
+  .hours-table{width:100%;border-collapse:collapse;}
+  .hours-table tr{border-top:1px solid var(--hairline);}
+  .hours-table tr:first-child{border-top:none;}
+  .hours-table td{padding:.55rem 0;font-size:.98rem;}
+  .hours-table td:first-child{color:var(--text);}
+  .hours-table td:last-child{text-align:right;color:var(--muted);}
+  .hours-table tr.closed td{color:#6b7183;}
+  .contact-line{margin-bottom:.9rem;font-size:1rem;}
+  .contact-line a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--hairline);}
+  .contact-line a:hover{color:var(--accent);border-color:var(--accent);}
+  .contact-label{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:.25rem;font-family:'DM Sans',sans-serif;font-weight:600;}
+
+  /* Footer */
+  footer{
+    border-top:1px solid var(--hairline);
+    padding:2.5rem 0;
+    color:var(--muted);
+    font-size:.9rem;
+  }
+  footer .fine-print{font-size:.82rem;color:#6b7183;margin-top:1rem;}
+
+  @media (max-width:640px){
+    section{padding:3rem 0;}
+    .hero{padding:3.5rem 0 3rem;}
+    .cards{grid-template-columns:1fr;}
+    .visit-grid{grid-template-columns:1fr;}
+    .cta-outline{margin-left:0;margin-top:.75rem;}
+    .about-panel{padding:1.75rem;border-radius:14px;border-left-width:1px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">DESIGN PREVIEW</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Dog Grooming Salon, Biloxi, MS</p>
+    <h1>Pride <span>&amp;</span> Groom</h1>
+    <p class="lede">A dog grooming salon in Biloxi, Mississippi. Serving local dogs since 1987.</p>
+    <p class="rating">Rated <strong>5.0</strong> on Google from 18 reviews</p>
+    <a class="cta" href="tel:+12282847834">Call to book</a>
+    <a class="cta-outline" href="#services">See services</a>
+  </div>
+</header>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Services</p>
+      <h2>Grooming services</h2>
+      <p>Listed starting prices. Final price depends on your dog's size, coat, and condition.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <p class="price">from $20</p>
+        <h3>Baths</h3>
+        <p>A full bath to get your dog clean and fresh.</p>
+      </div>
+      <div class="card">
+        <p class="price">from $30</p>
+        <h3>Feet, Face &amp; Fanny Trim</h3>
+        <p>A tidy up of the feet, face, and fanny areas.</p>
+      </div>
+      <div class="card">
+        <p class="price">from $50</p>
+        <h3>Full Grooms</h3>
+        <p>The complete grooming service, bath and haircut included.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">About</p>
+      <h2>A long standing Biloxi grooming salon</h2>
+    </div>
+    <div class="about-panel">
+      <p>Pride &amp; Groom has been in business since 1987. That is decades of grooming experience in one Biloxi salon.</p>
+      <p>Generations of local dogs have come through the door. Call ahead to book your appointment.</p>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Visit</p>
+      <h2>Hours and location</h2>
+      <p>Find us on Pass Road in Biloxi, or call to schedule.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Hours</h3>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>Closed</td></tr>
+          <tr><td>Tuesday</td><td>9:00 AM &ndash; 9:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>9:00 AM &ndash; 9:00 PM</td></tr>
+          <tr><td>Thursday</td><td>9:00 AM &ndash; 9:00 PM</td></tr>
+          <tr><td>Friday</td><td>9:00 AM &ndash; 9:00 PM</td></tr>
+          <tr><td>Saturday</td><td>9:00 AM &ndash; 9:00 PM</td></tr>
+          <tr class="closed"><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <div class="visit-card">
+        <h3>Contact</h3>
+        <div class="contact-line">
+          <span class="contact-label">Address</span>
+          1715 Pass Rd, Biloxi, MS 39531
+        </div>
+        <div class="contact-line">
+          <span class="contact-label">Phone</span>
+          <a href="tel:+12282847834">(228) 284-7834</a>
+        </div>
+        <div class="contact-line" style="margin-bottom:0;">
+          <span class="contact-label">To book</span>
+          <a href="tel:+12282847834">Call to book</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong style="color:var(--text);">Pride &amp; Groom</strong>, dog grooming in Biloxi, MS.</p>
+    <p class="fine-print">Concept preview. A free mockup, not affiliated with or endorsed by the business.</p>
+  </div>
+</footer>
+
+</body>
+</html>
