@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="StedFast Tattoo Parlor, East Side Las Vegas. Design preview concept.">
+<title>StedFast Tattoo Parlor | East Side Las Vegas | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --kraft:#c8a06b;
+  --kraft-dark:#b08c58;
+  --ink:#141210;
+  --paper:#f5efe2;
+  --red:#d1342c;
+  --red-dark:#a3241f;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Courier Prime',monospace;
+  color:var(--ink);
+  background-color:var(--kraft);
+  background-image:
+    radial-gradient(rgba(60,40,20,.10) 1px, transparent 1.5px),
+    radial-gradient(rgba(255,255,255,.08) 1px, transparent 1.5px),
+    linear-gradient(160deg, rgba(120,80,40,.12), transparent 55%, rgba(80,55,25,.16));
+  background-size: 7px 7px, 11px 11px, 100% 100%;
+  line-height:1.6;
+}
+/* --- preview disclosure bar --- */
+.disclosure-bar{
+  background:var(--ink);
+  color:var(--paper);
+  text-align:center;
+  font-size:.8rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  padding:.65rem 1rem;
+  position:relative;
+  z-index:50;
+}
+.disclosure-bar a{color:#ffb3ac; text-decoration:underline;}
+/* --- nav --- */
+nav{
+  position:sticky;top:0;z-index:40;
+  background:rgba(20,18,16,.96);
+  border-bottom:3px solid var(--red);
+}
+nav .wrap{
+  max-width:1100px;margin:0 auto;
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+  padding:.7rem 1.25rem;
+}
+nav .brand{
+  font-family:'Stardos Stencil',serif;font-weight:700;
+  color:var(--paper);font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;
+}
+nav .brand span{color:var(--red);}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;}
+nav a{
+  color:var(--paper);text-decoration:none;font-size:.82rem;
+  letter-spacing:.12em;text-transform:uppercase;border-bottom:2px solid transparent;
+  padding:.1rem 0;
+}
+nav a:hover{border-bottom-color:var(--red);color:#fff;}
+nav .call-pill{
+  background:var(--red);color:#fff !important;border-bottom:none !important;
+  padding:.35rem .9rem;font-weight:700;
+}
+nav .call-pill:hover{background:var(--red-dark);}
+/* --- hero --- */
+.hero{
+  position:relative;
+  max-width:1100px;margin:2.2rem auto 0;padding:0 1.25rem;
+}
+.hero-sheet{
+  background:var(--paper);
+  box-shadow:8px 8px 0 rgba(20,18,16,.85);
+  position:relative;
+  padding:clamp(1.6rem,4vw,3.2rem);
+  border:1px solid rgba(20,18,16,.25);
+}
+.hero-sheet:before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.35 0 0 0 0 0.2 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.est-badge{
+  position:absolute;top:-1.4rem;right:clamp(.8rem,5vw,3rem);
+  transform:rotate(8deg);
+  border:4px double var(--red);
+  color:var(--red);
+  font-family:'Stardos Stencil',serif;font-weight:700;
+  text-transform:uppercase;letter-spacing:.1em;
+  padding:.55rem .9rem;text-align:center;line-height:1.25;
+  background:rgba(245,239,226,.9);
+  font-size:.85rem;
+}
+.est-badge small{display:block;font-size:.62rem;letter-spacing:.28em;}
+.hero-kicker{
+  display:inline-block;background:var(--ink);color:var(--paper);
+  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+  padding:.3rem .8rem;margin-bottom:1.1rem;
+}
+.hero h1{
+  font-family:'Stardos Stencil',serif;font-weight:700;
+  font-size:clamp(2.6rem,8vw,5.4rem);
+  line-height:1.02;letter-spacing:.02em;text-transform:uppercase;
+  margin-bottom:.6rem;
+}
+.hero h1 .red{color:var(--red);}
+.hero .sub{
+  font-size:clamp(1rem,2.4vw,1.25rem);font-weight:700;
+  text-transform:uppercase;letter-spacing:.06em;
+  border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);
+  padding:.7rem 0;margin:1.1rem 0 1.4rem;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.4rem;}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:700;
+  text-transform:uppercase;letter-spacing:.1em;font-size:.92rem;
+  padding:.85rem 1.6rem;border:3px solid var(--ink);
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.btn-red{background:var(--red);color:#fff;box-shadow:4px 4px 0 var(--ink);}
+.btn-red:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:4px 4px 0 rgba(20,18,16,.35);}
+.btn-ghost:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 rgba(20,18,16,.35);}
+.hero-meta{margin-top:1.6rem;font-size:.85rem;display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;}
+.hero-meta strong{text-transform:uppercase;letter-spacing:.08em;}
+/* torn edge divider */
+.torn{
+  height:26px;margin:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='26' preserveAspectRatio='none' viewBox='0 0 60 26'%3E%3Cpath d='M0 26 L0 14 L6 18 L11 8 L17 15 L23 6 L29 14 L35 9 L41 17 L47 10 L53 16 L60 12 L60 26 Z' fill='%23141210'/%3E%3C/svg%3E");
+  background-size:60px 26px;background-repeat:repeat-x;
+}
+.torn.light{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='26' preserveAspectRatio='none' viewBox='0 0 60 26'%3E%3Cpath d='M0 26 L0 14 L6 18 L11 8 L17 15 L23 6 L29 14 L35 9 L41 17 L47 10 L53 16 L60 12 L60 26 Z' fill='%23f5efe2'/%3E%3C/svg%3E");
+}
+/* --- sections --- */
+section.block{max-width:1100px;margin:0 auto;padding:2.8rem 1.25rem;}
+.section-head{
+  display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;
+  margin-bottom:1.6rem;
+}
+.section-num{
+  font-family:'Stardos Stencil',serif;font-weight:700;font-size:1rem;
+  background:var(--red);color:#fff;padding:.25rem .7rem;transform:rotate(-3deg);
+  display:inline-block;
+}
+.section-head h2{
+  font-family:'Stardos Stencil',serif;font-weight:700;text-transform:uppercase;
+  font-size:clamp(1.7rem,4.5vw,2.6rem);letter-spacing:.03em;
+}
+.section-head h2:after{
+  content:"";display:block;height:5px;background:var(--ink);margin-top:.35rem;width:100%;
+}
+/* dark band */
+.band{background:var(--ink);color:var(--paper);}
+.band .section-head h2{color:var(--paper);}
+.band .section-head h2:after{background:var(--red);}
+/* services setlist */
+.setlist{
+  background:var(--paper);border:1px solid rgba(20,18,16,.3);
+  box-shadow:8px 8px 0 rgba(20,18,16,.85);
+}
+.setlist-head{
+  background:var(--red);color:#fff;padding:.8rem 1.4rem;
+  font-family:'Stardos Stencil',serif;font-weight:700;text-transform:uppercase;
+  letter-spacing:.14em;font-size:1rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+}
+.setlist ol{list-style:none;}
+.setlist li{
+  display:flex;gap:1.2rem;align-items:baseline;
+  padding:1.05rem 1.4rem;border-bottom:2px dashed rgba(20,18,16,.35);
+}
+.setlist li:last-child{border-bottom:none;}
+.setlist .track{
+  font-family:'Stardos Stencil',serif;font-weight:700;font-size:1.3rem;color:var(--red);min-width:2.6rem;
+}
+.setlist .track-name{font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:1.02rem;}
+.setlist .track-note{font-size:.88rem;opacity:.85;}
+.consult-callout{
+  margin-top:1.4rem;background:var(--paper);border:3px solid var(--red);
+  padding:1.2rem 1.4rem;box-shadow:6px 6px 0 rgba(20,18,16,.85);
+  display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap;
+}
+.consult-callout .stamp{
+  font-family:'Stardos Stencil',serif;font-weight:700;text-transform:uppercase;
+  border:3px double var(--red);color:var(--red);padding:.4rem .9rem;
+  transform:rotate(-4deg);font-size:.95rem;letter-spacing:.08em;white-space:nowrap;
+}
+.consult-callout p{font-weight:700;font-size:1rem;}
+.consult-callout p a{color:var(--red-dark);}
+/* artists lineup */
+.lineup-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1.3rem;
+}
+.artist-card{
+  background:var(--paper);color:var(--ink);
+  border:1px solid rgba(20,18,16,.35);
+  box-shadow:6px 6px 0 rgba(209,52,44,.9);
+  padding:1.4rem 1.2rem 1.2rem;position:relative;
+}
+.artist-card .role{
+  font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;
+  background:var(--ink);color:var(--paper);display:inline-block;
+  padding:.2rem .6rem;margin-bottom:.9rem;
+}
+.artist-card h3{
+  font-family:'Stardos Stencil',serif;font-weight:700;text-transform:uppercase;
+  font-size:1.45rem;line-height:1.15;margin-bottom:.5rem;
+}
+.artist-card p{font-size:.88rem;}
+.artist-card .mark{
+  position:absolute;top:.8rem;right:.9rem;color:var(--red);
+  font-family:'Stardos Stencil',serif;font-weight:700;font-size:1.5rem;
+  opacity:.55;transform:rotate(10deg);
+}
+/* hours + visit cards */
+.info-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  gap:1.4rem;
+}
+.info-card{
+  background:var(--paper);border:1px solid rgba(20,18,16,.3);
+  box-shadow:8px 8px 0 rgba(20,18,16,.85);
+}
+.info-card .card-head{
+  background:var(--ink);color:var(--paper);padding:.7rem 1.3rem;
+  font-family:'Stardos Stencil',serif;font-weight:700;text-transform:uppercase;
+  letter-spacing:.12em;
+}
+.info-card .card-body{padding:1.3rem;}
+.info-card ul{list-style:none;}
+.info-card li{
+  display:flex;justify-content:space-between;gap:1rem;
+  padding:.5rem 0;border-bottom:1px dashed rgba(20,18,16,.3);
+  font-size:.94rem;
+}
+.info-card li:last-child{border-bottom:none;}
+.info-card .fine{
+  margin-top:1rem;font-size:.8rem;background:rgba(209,52,44,.08);
+  border-left:4px solid var(--red);padding:.7rem .9rem;
+}
+.info-card address{font-style:normal;font-size:.94rem;}
+.info-card .flag{
+  margin-top:1rem;font-size:.8rem;background:rgba(209,52,44,.08);
+  border-left:4px solid var(--red);padding:.7rem .9rem;
+}
+.big-call{text-align:center;margin-top:2.2rem;}
+.big-call .btn{font-size:1.05rem;padding:1rem 2.4rem;}
+/* concept art frames */
+.art-frame{
+  background:var(--ink);padding:1rem;box-shadow:8px 8px 0 rgba(20,18,16,.85);
+  margin:0 0 1.6rem;
+}
+.art-frame svg{display:block;width:100%;height:auto;}
+.art-frame figcaption{
+  color:var(--paper);font-size:.75rem;letter-spacing:.06em;
+  padding-top:.6rem;text-align:center;font-style:italic;
+}
+.art-pair{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;}
+@media(max-width:640px){.art-pair{grid-template-columns:1fr;}}
+/* rating strip */
+.rating-strip{
+  background:var(--paper);border:3px solid var(--ink);
+  box-shadow:8px 8px 0 rgba(20,18,16,.85);
+  padding:1.2rem 1.5rem;display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;
+}
+.rating-strip .stars{color:var(--red);font-size:1.6rem;letter-spacing:.15em;}
+.rating-strip .big{font-family:'Stardos Stencil',serif;font-weight:700;font-size:1.6rem;}
+.rating-strip p{font-size:.9rem;}
+/* footer */
+footer{
+  background:var(--ink);color:var(--paper);
+  padding:2.4rem 1.25rem 2rem;
+}
+footer .wrap{max-width:1100px;margin:0 auto;}
+footer .foot-name{
+  font-family:'Stardos Stencil',serif;font-weight:700;text-transform:uppercase;
+  font-size:1.3rem;margin-bottom:.6rem;
+}
+footer .foot-name span{color:var(--red);}
+footer p{font-size:.82rem;opacity:.85;margin-bottom:.5rem;max-width:70ch;}
+footer a{color:#ffb3ac;}
+footer .credits{margin-top:1.2rem;border-top:1px solid rgba(245,239,226,.25);padding-top:1rem;font-size:.75rem;opacity:.7;}
+</style>
+</head>
+<body>
+
+<div class="disclosure-bar">
+  Design Preview - a concept by <a href="https://freightfolio.net">Freightfolio</a>. Not the business&rsquo;s real website.
+</div>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Sted<span>Fast</span> Tattoo Parlor</div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#artists">Artists</a></li>
+      <li><a href="#visit">Hours &amp; Visit</a></li>
+      <li><a class="call-pill" href="tel:+17025916457">Call (702) 591-6457</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-sheet">
+    <div class="est-badge"><small>Est.</small>2008<br>EastSide</div>
+    <span class="hero-kicker">Tattoo &amp; Piercing &bull; Las Vegas, NV</span>
+    <h1>Sted<span class="red">Fast</span> Tattoo Parlor</h1>
+    <p class="sub">StedFast EastSide. Custom tattoos in all styles, plus piercings.</p>
+    <p>An eastside shop putting ink on skin since 2008. Bring an idea, or start from scratch with one of the artists. Consultations are free.</p>
+    <div class="hero-actions">
+      <a class="btn btn-red" href="tel:+17025916457">Call to book</a>
+      <a class="btn btn-ghost" href="#artists">Meet the artists</a>
+    </div>
+    <div class="hero-meta">
+      <span><strong>Phone</strong> <a href="tel:+17025916457">(702) 591-6457</a></span>
+      <span><strong>Area</strong> East side, Las Vegas</span>
+    </div>
+  </div>
+</header>
+
+<div class="torn" aria-hidden="true"></div>
+
+<section class="block" id="services">
+  <div class="section-head">
+    <span class="section-num">01</span>
+    <h2>Services Setlist</h2>
+  </div>
+
+  <div class="art-pair">
+    <figure class="art-frame">
+      <svg viewBox="0 0 400 260" role="img" aria-label="Concept illustration of a tattoo machine drawn in stencil style">
+        <rect width="400" height="260" fill="#141210"/>
+        <g stroke="#f5efe2" stroke-width="6" fill="none" stroke-linecap="square">
+          <rect x="120" y="60" width="120" height="60"/>
+          <line x1="240" y1="90" x2="330" y2="90"/>
+          <line x1="330" y1="70" x2="330" y2="160"/>
+          <line x1="330" y1="160" x2="240" y2="160"/>
+          <line x1="240" y1="160" x2="240" y2="120"/>
+          <circle cx="180" cy="160" r="26"/>
+          <line x1="180" y1="186" x2="180" y2="230"/>
+        </g>
+        <g stroke="#d1342c" stroke-width="6" fill="none">
+          <line x1="120" y1="60" x2="90" y2="40"/>
+          <line x1="90" y1="40" x2="90" y2="120"/>
+        </g>
+        <g fill="#f5efe2" font-family="monospace" font-size="16" letter-spacing="4">
+          <text x="40" y="40">STEDFAST</text>
+        </g>
+        <g fill="#d1342c" font-family="monospace" font-size="14" letter-spacing="3">
+          <text x="255" y="220">EST. 2008</text>
+        </g>
+        <rect x="30" y="180" width="90" height="34" fill="none" stroke="#d1342c" stroke-width="3" stroke-dasharray="8 6"/>
+      </svg>
+      <figcaption>Concept art drawn for this preview</figcaption>
+    </figure>
+    <div>
+      <div class="setlist">
+        <div class="setlist-head"><span>Side A &bull; The Shop</span><span>Free consults</span></div>
+        <ol>
+          <li>
+            <span class="track">A1</span>
+            <div>
+              <div class="track-name">Custom tattoos</div>
+              <div class="track-note">All styles. Bring reference, flash, or a rough idea and work it out with an artist.</div>
+            </div>
+          </li>
+          <li>
+            <span class="track">A2</span>
+            <div>
+              <div class="track-name">Piercings</div>
+              <div class="track-note">Piercing services alongside the tattoo work, per the shop bio.</div>
+            </div>
+          </li>
+          <li>
+            <span class="track">A3</span>
+            <div>
+              <div class="track-name">Free consultations</div>
+              <div class="track-note">Talk through the design before anything touches skin. No charge.</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="consult-callout">
+        <span class="stamp">Free consults</span>
+        <p>Got an idea? <a href="tel:+17025916457">Call (702) 591-6457</a> and talk it through with the shop first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="torn light" aria-hidden="true"></div>
+
+<section class="band" id="artists">
+  <div class="block">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2>The Lineup</h2>
+    </div>
+    <p style="margin-bottom:1.6rem;max-width:70ch;">Four artists on the roster. Ask for whoever fits the piece you have in mind.</p>
+    <div class="lineup-grid">
+      <div class="artist-card">
+        <span class="mark">SF</span>
+        <span class="role">Tattoo Artist</span>
+        <h3>Kong</h3>
+        <p>On the roster at StedFast. Call the shop to ask about his book and current availability.</p>
+      </div>
+      <div class="artist-card">
+        <span class="mark">SF</span>
+        <span class="role">Tattoo Artist</span>
+        <h3>Irma &ldquo;Alice Sqirmz&rdquo; Carillio</h3>
+        <p>On the roster at StedFast. Call the shop to ask about her book and current availability.</p>
+      </div>
+      <div class="artist-card">
+        <span class="mark">SF</span>
+        <span class="role">Tattoo Artist</span>
+        <h3>Aaron Nieves</h3>
+        <p>On the roster at StedFast. Call the shop to ask about his book and current availability.</p>
+      </div>
+      <div class="artist-card">
+        <span class="mark">SF</span>
+        <span class="role">Tattoo Artist</span>
+        <h3>Manny Rubio</h3>
+        <p>On the roster at StedFast. Call the shop to ask about his book and current availability.</p>
+      </div>
+    </div>
+    <div class="big-call">
+      <a class="btn btn-red" href="tel:+17025916457">Call to book</a>
+    </div>
+  </div>
+</section>
+
+<div class="torn" aria-hidden="true"></div>
+
+<section class="block" id="visit">
+  <div class="section-head">
+    <span class="section-num">03</span>
+    <h2>Hours &amp; Visit</h2>
+  </div>
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="card-head">Hours</div>
+      <div class="card-body">
+        <ul>
+          <li><span>Yelp owner listing</span><strong>12 PM to 8 PM daily</strong></li>
+          <li><span>Second Yelp listing</span><strong>11 AM to 8 PM daily</strong></li>
+        </ul>
+        <p class="fine">Hours vary by listing, and a reviewer mentions shop signage reading 12 to 12. Call <a href="tel:+17025916457">(702) 591-6457</a> to confirm before heading over.</p>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="card-head">Find the shop</div>
+      <div class="card-body">
+        <address>
+          3340 E Tropicana Ave Ste 2<br>
+          Las Vegas, NV 89121
+        </address>
+        <p class="flag">GetInked (2026) reports a move to 4130 S Sandhill Rd. Call to confirm which address is current.</p>
+        <p style="margin-top:.9rem;">Phone: <a href="tel:+17025916457">(702) 591-6457</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:1.8rem;">
+    <div class="rating-strip">
+      <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="big">4.7</span>
+      <p>from 195 Yelp reviews</p>
+    </div>
+  </div>
+
+  <figure class="art-frame" style="margin-top:1.8rem;">
+    <svg viewBox="0 0 800 220" role="img" aria-label="Concept illustration of torn flyer strips and stamp marks">
+      <rect width="800" height="220" fill="#141210"/>
+      <g fill="#f5efe2" opacity="0.9">
+        <path d="M40 60 L200 40 L195 110 L45 130 Z"/>
+        <path d="M230 90 L420 70 L415 150 L235 165 Z" fill="#d1342c" opacity="0.85"/>
+        <path d="M450 55 L640 75 L635 145 L455 130 Z"/>
+      </g>
+      <g font-family="monospace" fill="#141210" font-size="22" letter-spacing="6">
+        <text x="70" y="95">INK</text>
+      </g>
+      <g font-family="monospace" fill="#f5efe2" font-size="22" letter-spacing="6">
+        <text x="265" y="125">2008</text>
+      </g>
+      <g font-family="monospace" fill="#141210" font-size="20" letter-spacing="4">
+        <text x="480" y="110">EASTSIDE</text>
+      </g>
+      <rect x="660" y="70" width="100" height="60" fill="none" stroke="#d1342c" stroke-width="4" transform="rotate(8 710 100)"/>
+      <g fill="#d1342c" font-family="monospace" font-size="15" letter-spacing="3" transform="rotate(8 710 100)">
+        <text x="668" y="105">STEDFAST</text>
+      </g>
+    </svg>
+    <figcaption>Concept art drawn for this preview</figcaption>
+  </figure>
+
+  <div class="big-call">
+    <a class="btn btn-red" href="tel:+17025916457">Call to book: (702) 591-6457</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-name">Sted<span>Fast</span> Tattoo Parlor</div>
+    <p>This page is a design preview concept created by Freightfolio. It is not the business&rsquo;s real website and is shown only to demonstrate a possible design direction.</p>
+    <p>Business details shown here come from public listings (Yelp, GetInked) and were current at the time of research. Hours and address listings conflict across sources, so call <a href="tel:+17025916457">(702) 591-6457</a> to confirm.</p>
+    <p>No booking is taken on this page. To book, call the shop directly.</p>
+    <div class="credits">Design preview concept by Freightfolio &bull; <a href="https://freightfolio.net">freightfolio.net</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

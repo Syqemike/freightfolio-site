@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lowbrow Saints Tattoo Collective | Design Preview</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Design preview concept for Lowbrow Saints Tattoo Collective, a custom tattoo shop in Minneapolis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum:#17121c;
+    --plum-deep:#100c14;
+    --plum-card:#201826;
+    --plum-panel:#241a2d;
+    --bone:#ece4d2;
+    --bone-dim:#c9bca3;
+    --gold:#c39a3f;
+    --gold-bright:#d9b45c;
+    --oxblood:#8e2f3c;
+    --sage:#7d8b6f;
+    --hairline:#3a2c22;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--plum);
+    color:var(--bone);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:"";
+    position:fixed;inset:0;
+    background:radial-gradient(1200px 600px at 50% -10%, rgba(195,154,63,.07), transparent 60%);
+    pointer-events:none;
+    z-index:0;
+  }
+  main,header.site-header,footer{position:relative;z-index:1}
+
+  .disclosure{
+    background:var(--gold);
+    color:#17121c;
+    text-align:center;
+    font-size:.78rem;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    padding:.55rem 1rem;
+  }
+
+  header.site-header{
+    position:sticky;top:0;
+    background:rgba(23,18,28,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--hairline);
+    transition:box-shadow .25s ease;
+    z-index:50;
+  }
+  header.site-header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.5)}
+  .header-inner{
+    max-width:1180px;margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:.9rem 1.5rem;gap:1rem;
+  }
+  .brandmark{font-family:'Pirata One',serif;font-size:1.35rem;color:var(--bone);text-decoration:none;line-height:1}
+  .brandmark span{color:var(--gold-bright)}
+  nav.site-nav{display:flex;gap:1.6rem;flex-wrap:wrap}
+  nav.site-nav a{
+    color:var(--bone-dim);text-decoration:none;
+    font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  }
+  nav.site-nav a:hover{color:var(--gold-bright)}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 1.5rem}
+
+  .hero{padding:4.5rem 0 3.5rem}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center}
+  .eyebrow{
+    color:var(--gold-bright);font-size:.78rem;font-weight:600;
+    letter-spacing:.34em;text-transform:uppercase;margin-bottom:1.2rem;
+  }
+  h1.shop-name{
+    font-family:'Pirata One',serif;font-weight:400;
+    font-size:clamp(3.4rem,8.5vw,6.6rem);
+    line-height:.95;color:var(--bone);margin-bottom:.4rem;
+  }
+  h1.shop-name .line2{color:var(--gold-bright)}
+  .rating-line{margin:1.1rem 0 .6rem;font-size:1rem;color:var(--bone)}
+  .rating-line strong{color:var(--gold-bright);font-weight:700}
+  .hero-intro{color:var(--bone-dim);font-size:1.06rem;max-width:34rem;margin-bottom:1.6rem}
+  .walkin-callout{
+    display:inline-block;
+    border:1px solid var(--gold);
+    color:var(--gold-bright);
+    font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;
+    padding:.7rem 1.4rem;margin-bottom:1.8rem;
+    background:rgba(195,154,63,.06);
+  }
+  .cta-row{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+  .btn{
+    display:inline-block;background:var(--gold);color:#17121c;
+    font-weight:700;font-size:1rem;letter-spacing:.02em;
+    padding:.95rem 2rem;text-decoration:none;border:none;cursor:pointer;
+  }
+  .btn:hover{background:var(--gold-bright)}
+  .ig-link{color:var(--bone-dim);font-weight:600;text-decoration:underline;text-underline-offset:4px}
+  .ig-link:hover{color:var(--gold-bright)}
+
+  .feature-frame{
+    border:2px solid var(--gold);
+    outline:1px solid var(--gold);
+    outline-offset:6px;
+    background:var(--plum-panel);
+    padding:1.4rem;
+  }
+  .feature-frame svg{display:block;width:100%;height:auto}
+  .feature-frame figcaption,
+  .tile figcaption{
+    margin-top:1rem;font-size:.8rem;color:var(--bone-dim);text-align:center;letter-spacing:.04em;
+  }
+
+  section.block{padding:4rem 0;border-top:1px solid var(--hairline)}
+  .section-head{margin-bottom:2.4rem;max-width:46rem}
+  .section-kicker{
+    color:var(--gold-bright);font-size:.75rem;font-weight:600;
+    letter-spacing:.3em;text-transform:uppercase;margin-bottom:.8rem;
+  }
+  h2.section-title{
+    font-family:'Pirata One',serif;font-weight:400;
+    font-size:clamp(2.2rem,4.5vw,3.2rem);line-height:1.05;margin-bottom:1rem;
+  }
+  .section-lede{color:var(--bone-dim);font-size:1.02rem}
+
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+  .shop-copy p{margin-bottom:1.1rem;color:var(--bone-dim)}
+  .shop-copy p strong{color:var(--bone)}
+  .style-list{list-style:none;margin-top:1.6rem}
+  .style-list li{
+    border-top:1px solid var(--hairline);
+    padding:.9rem .2rem;
+    font-family:'Pirata One',serif;font-size:1.5rem;color:var(--bone);
+    display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+  }
+  .style-list li:last-child{border-bottom:1px solid var(--hairline)}
+  .style-list .tag{font-family:'Inter',sans-serif;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-bright)}
+  .shop-aside{
+    background:var(--plum-card);border:1px solid var(--hairline);
+    padding:2rem;
+  }
+  .shop-aside h3{
+    font-family:'Pirata One',serif;font-weight:400;font-size:1.7rem;margin-bottom:.8rem;color:var(--gold-bright);
+  }
+  .shop-aside p{color:var(--bone-dim);font-size:.95rem;margin-bottom:1rem}
+
+  .flash-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+    gap:1.6rem;
+  }
+  .tile{
+    background:var(--plum-card);
+    border:1px solid var(--gold);
+    padding:1rem 1rem 1.2rem;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .tile:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.45)}
+  .tile svg{display:block;width:100%;height:auto;background:var(--plum-panel)}
+
+  .artist-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:1.4rem;
+  }
+  .placard{
+    background:var(--plum-card);
+    border:1px solid var(--hairline);
+    border-top:3px solid var(--gold);
+    padding:2rem 1.2rem 1.6rem;
+    text-align:center;
+  }
+  .placard .pname{
+    font-family:'Pirata One',serif;font-size:2rem;color:var(--bone);line-height:1.1;margin-bottom:.5rem;
+  }
+  .placard .prole{
+    font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-bright);font-weight:600;
+  }
+
+  .visit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.6rem;margin-bottom:2rem}
+  .visit-card{
+    background:var(--plum-card);border:1px solid var(--hairline);
+    border-top:3px solid var(--gold);padding:2rem;
+  }
+  .visit-card h3{
+    font-family:'Pirata One',serif;font-weight:400;font-size:1.6rem;margin-bottom:1rem;color:var(--bone);
+  }
+  .visit-card p{color:var(--bone-dim);font-size:.96rem;margin-bottom:.9rem}
+  .visit-card p strong{color:var(--bone)}
+  .visit-card .note{
+    font-size:.82rem;color:var(--bone-dim);
+    border-left:2px solid var(--gold);padding-left:.9rem;margin-top:1.1rem;
+  }
+  .contact-strip{
+    display:flex;gap:1rem;align-items:center;flex-wrap:wrap;
+    background:var(--plum-deep);border:1px solid var(--hairline);padding:1.6rem 2rem;
+  }
+  .contact-strip .label{font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-bright);font-weight:600;width:100%}
+  .phone-big{font-size:1.4rem;font-weight:700;color:var(--bone);text-decoration:none}
+  .phone-big:hover{color:var(--gold-bright)}
+
+  footer.site-footer{
+    border-top:1px solid var(--hairline);
+    padding:2.6rem 0 3rem;margin-top:2rem;
+  }
+  footer.site-footer p{color:var(--bone-dim);font-size:.85rem;max-width:60rem;margin-bottom:.6rem}
+  footer.site-footer .fine{font-size:.75rem;opacity:.8}
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:2.5rem}
+    .two-col{grid-template-columns:1fr;gap:2rem}
+    .header-inner{flex-direction:column;align-items:flex-start}
+    .hero{padding:3rem 0 2.5rem}
+    section.block{padding:3rem 0}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design Preview: a concept by Freightfolio</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brandmark" href="#top">Lowbrow Saints <span>Tattoo Collective</span></a>
+    <nav class="site-nav" aria-label="Section navigation">
+      <a href="#shop">The Shop</a>
+      <a href="#flash">Flash Wall</a>
+      <a href="#artists">Artists</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Est. 2013 / Minneapolis</p>
+        <h1 class="shop-name">Lowbrow Saints<br><span class="line2">Tattoo Collective</span></h1>
+        <p class="rating-line">Rated <strong>5.0 from 77 Google reviews</strong>.</p>
+        <p class="hero-intro">A full-service custom tattoo collective on Minnehaha Avenue in Minneapolis, founded in 2013 by Jason Del Castillo. The shop works in traditional and black and grey styles, with flash and gumball designs on the wall.</p>
+        <div><span class="walkin-callout">Walk-ins welcome</span></div>
+        <div class="cta-row">
+          <a class="btn" href="tel:+16128518757">Call to book</a>
+          <a class="ig-link" href="https://www.instagram.com/lowbrowsaints">@lowbrowsaints on Instagram</a>
+        </div>
+      </div>
+      <figure class="feature-frame">
+        <svg viewBox="0 0 220 260" role="img" aria-label="Moth concept art">
+          <rect x="8" y="8" width="204" height="244" fill="#231a2d"/>
+          <path d="M104,134 C76,88 42,84 30,118 C21,143 38,168 66,164 C84,161 97,149 104,139 Z" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+          <path d="M116,134 C144,88 178,84 190,118 C199,143 182,168 154,164 C136,161 123,149 116,139 Z" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+          <path d="M102,168 C88,182 66,190 54,182 C45,176 48,163 62,158 C76,153 92,158 102,166 Z" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+          <path d="M118,168 C132,182 154,190 166,182 C175,176 172,163 158,158 C144,153 128,158 118,166 Z" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+          <circle cx="66" cy="126" r="13" fill="#8e2f3c" stroke="#c39a3f" stroke-width="2.5"/>
+          <circle cx="66" cy="126" r="5" fill="#ece4d2"/>
+          <circle cx="154" cy="126" r="13" fill="#8e2f3c" stroke="#c39a3f" stroke-width="2.5"/>
+          <circle cx="154" cy="126" r="5" fill="#ece4d2"/>
+          <ellipse cx="110" cy="152" rx="9" ry="30" fill="#ece4d2"/>
+          <circle cx="110" cy="114" r="11" fill="#ece4d2"/>
+          <path d="M103,106 C95,92 87,88 79,86" fill="none" stroke="#ece4d2" stroke-width="3" stroke-linecap="round"/>
+          <path d="M117,106 C125,92 133,88 141,86" fill="none" stroke="#ece4d2" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="44" cy="140" r="3" fill="#c39a3f"/>
+          <circle cx="176" cy="140" r="3" fill="#c39a3f"/>
+          <circle cx="56" cy="152" r="3" fill="#c39a3f"/>
+          <circle cx="164" cy="152" r="3" fill="#c39a3f"/>
+        </svg>
+        <figcaption>Concept art drawn for this preview</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block" id="shop">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">The Shop</p>
+        <h2 class="section-title">A collective, not a franchise</h2>
+        <p class="section-lede">Lowbrow Saints opened in 2013 and runs as an artist collective, with each tattooer working in a style of their own.</p>
+      </div>
+      <div class="two-col">
+        <div class="shop-copy">
+          <p><strong>Jason Del Castillo</strong> founded Lowbrow Saints Tattoo Collective in Minneapolis in 2013. The shop has kept a lowbrow, gallery-minded identity ever since, and walk-ins are part of how it runs.</p>
+          <p>The artists take on custom work across the shop's core styles. Flash and gumball designs hang on the wall for same-day pieces.</p>
+          <ul class="style-list">
+            <li>Traditional <span class="tag">Custom</span></li>
+            <li>Black and Grey <span class="tag">Custom</span></li>
+            <li>Flash <span class="tag">Walk-in</span></li>
+            <li>Gumball <span class="tag">Walk-in</span></li>
+          </ul>
+        </div>
+        <aside class="shop-aside">
+          <h3>How booking works</h3>
+          <p>The shop books by phone. There is no verified online booking page, so the fastest route is to call and talk through your idea with the shop.</p>
+          <p>Walk-ins are welcome. Calling ahead is the reliable way to confirm an artist is in and taking same-day work.</p>
+          <a class="btn" href="tel:+16128518757">Call to book</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="flash">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Flash Wall</p>
+        <h2 class="section-title">Pinned up like a gallery</h2>
+        <p class="section-lede">Every tile below is original concept art drawn for this preview, in the lowbrow spirit of the shop's own walls.</p>
+      </div>
+      <div class="flash-grid">
+
+        <figure class="tile">
+          <svg viewBox="0 0 220 260" role="img" aria-label="Death's-head moth concept art">
+            <rect x="8" y="8" width="204" height="244" fill="#231a2d"/>
+            <path d="M104,134 C76,88 42,84 30,118 C21,143 38,168 66,164 C84,161 97,149 104,139 Z" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+            <path d="M116,134 C144,88 178,84 190,118 C199,143 182,168 154,164 C136,161 123,149 116,139 Z" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+            <path d="M102,168 C88,182 66,190 54,182 C45,176 48,163 62,158 C76,153 92,158 102,166 Z" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+            <path d="M118,168 C132,182 154,190 166,182 C175,176 172,163 158,158 C144,153 128,158 118,166 Z" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+            <circle cx="66" cy="126" r="13" fill="#8e2f3c" stroke="#c39a3f" stroke-width="2.5"/>
+            <circle cx="66" cy="126" r="5" fill="#ece4d2"/>
+            <circle cx="154" cy="126" r="13" fill="#8e2f3c" stroke="#c39a3f" stroke-width="2.5"/>
+            <circle cx="154" cy="126" r="5" fill="#ece4d2"/>
+            <ellipse cx="110" cy="152" rx="9" ry="30" fill="#ece4d2"/>
+            <circle cx="110" cy="114" r="11" fill="#ece4d2"/>
+            <path d="M103,106 C95,92 87,88 79,86" fill="none" stroke="#ece4d2" stroke-width="3" stroke-linecap="round"/>
+            <path d="M117,106 C125,92 133,88 141,86" fill="none" stroke="#ece4d2" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <figcaption>Concept art drawn for this preview</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <svg viewBox="0 0 220 260" role="img" aria-label="Dagger and heart concept art">
+            <rect x="8" y="8" width="204" height="244" fill="#231a2d"/>
+            <path d="M110,92 C94,70 62,78 60,110 C58,142 88,168 110,192 C132,168 162,142 160,110 C158,78 126,70 110,92 Z" fill="#8e2f3c" stroke="#ece4d2" stroke-width="3"/>
+            <g transform="rotate(45 110 130)">
+              <rect x="106" y="30" width="8" height="120" fill="#ece4d2"/>
+              <polygon points="110,18 101,34 119,34" fill="#ece4d2"/>
+              <rect x="88" y="148" width="44" height="10" rx="2" fill="#c39a3f"/>
+              <rect x="105" y="158" width="10" height="34" fill="#5a2330" stroke="#ece4d2" stroke-width="2"/>
+              <circle cx="110" cy="198" r="7" fill="#c39a3f"/>
+            </g>
+            <path d="M72,222 l4,8 8,1 -6,6 2,8 -8,-4 -8,4 2,-8 -6,-6 8,-1 Z" fill="#c39a3f"/>
+            <path d="M140,222 l4,8 8,1 -6,6 2,8 -8,-4 -8,4 2,-8 -6,-6 8,-1 Z" fill="#c39a3f"/>
+          </svg>
+          <figcaption>Concept art drawn for this preview</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <svg viewBox="0 0 220 260" role="img" aria-label="Serpent concept art">
+            <rect x="8" y="8" width="204" height="244" fill="#231a2d"/>
+            <path d="M78,214 C60,190 66,168 88,162 C112,155 128,142 122,120 C117,101 96,100 92,84 C89,70 100,58 114,60" fill="none" stroke="#ece4d2" stroke-width="14" stroke-linecap="round"/>
+            <path d="M78,214 C60,190 66,168 88,162 C112,155 128,142 122,120 C117,101 96,100 92,84 C89,70 100,58 114,60" fill="none" stroke="#8e2f3c" stroke-width="14" stroke-linecap="round" stroke-dasharray="2 11"/>
+            <polygon points="104,52 132,48 128,74 102,74" fill="#ece4d2"/>
+            <circle cx="118" cy="60" r="3.5" fill="#17121c"/>
+            <path d="M130,62 l14,4" stroke="#8e2f3c" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M130,61 l12,-7" stroke="#8e2f3c" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="70" cy="60" r="3" fill="#c39a3f"/>
+            <circle cx="150" cy="200" r="3" fill="#c39a3f"/>
+          </svg>
+          <figcaption>Concept art drawn for this preview</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <svg viewBox="0 0 220 260" role="img" aria-label="All-seeing eye concept art">
+            <rect x="8" y="8" width="204" height="244" fill="#231a2d"/>
+            <g stroke="#ece4d2" stroke-width="3" stroke-linecap="round">
+              <path d="M110,72 v-16"/><path d="M110,188 v16"/>
+              <path d="M52,92 l-12,-10"/><path d="M168,92 l12,-10"/>
+              <path d="M52,168 l-12,10"/><path d="M168,168 l12,10"/>
+            </g>
+            <path d="M34,130 Q110,72 186,130 Q110,188 34,130 Z" fill="none" stroke="#ece4d2" stroke-width="3.5"/>
+            <circle cx="110" cy="130" r="30" fill="#c39a3f"/>
+            <circle cx="110" cy="130" r="13" fill="#17121c"/>
+            <circle cx="119" cy="121" r="4" fill="#ece4d2"/>
+            <path d="M76,198 c-7,11 -7,18 0,23 c7,-5 7,-12 0,-23" fill="#7d8b6f"/>
+            <path d="M144,198 c-7,11 -7,18 0,23 c7,-5 7,-12 0,-23" fill="#7d8b6f"/>
+          </svg>
+          <figcaption>Concept art drawn for this preview</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <svg viewBox="0 0 220 260" role="img" aria-label="Skull and rose concept art">
+            <rect x="8" y="8" width="204" height="244" fill="#231a2d"/>
+            <circle cx="96" cy="98" r="34" fill="none" stroke="#ece4d2" stroke-width="3.5"/>
+            <path d="M68,112 h56 v18 q0,12 -12,12 h-32 q-12,0 -12,-12 Z" fill="none" stroke="#ece4d2" stroke-width="3"/>
+            <ellipse cx="84" cy="98" rx="8" ry="10" fill="#17121c" stroke="#ece4d2" stroke-width="2.5"/>
+            <ellipse cx="108" cy="98" rx="8" ry="10" fill="#17121c" stroke="#ece4d2" stroke-width="2.5"/>
+            <polygon points="96,114 90,126 102,126" fill="#ece4d2"/>
+            <path d="M84,132 v8 M92,132 v10 M100,132 v10 M108,132 v8" stroke="#ece4d2" stroke-width="2"/>
+            <circle cx="162" cy="118" r="17" fill="none" stroke="#8e2f3c" stroke-width="3.5"/>
+            <path d="M162,106 c6,4 6,12 0,16 c-8,2 -14,-2 -14,-8 c0,-6 8,-10 14,-8" fill="none" stroke="#8e2f3c" stroke-width="2.5"/>
+            <path d="M162,135 C162,158 158,178 150,196" stroke="#7d8b6f" stroke-width="3.5" fill="none"/>
+            <path d="M158,164 c-12,-2 -20,4 -22,14 c10,2 18,-4 22,-14" fill="#7d8b6f"/>
+          </svg>
+          <figcaption>Concept art drawn for this preview</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <svg viewBox="0 0 220 260" role="img" aria-label="Panther head concept art">
+            <rect x="8" y="8" width="204" height="244" fill="#231a2d"/>
+            <polygon points="66,42 92,60 74,84" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+            <polygon points="154,42 128,60 146,84" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+            <polygon points="110,54 152,70 166,114 150,160 110,180 70,160 54,114 68,70" fill="#2e2238" stroke="#ece4d2" stroke-width="3.5"/>
+            <polygon points="84,110 102,106 100,118 84,120" fill="#c39a3f"/>
+            <polygon points="136,110 118,106 120,118 136,120" fill="#c39a3f"/>
+            <polygon points="110,132 102,144 118,144" fill="#ece4d2"/>
+            <path d="M110,144 v10 M110,154 c-8,6 -18,6 -26,2 M110,154 c8,6 18,6 26,2" stroke="#ece4d2" stroke-width="2.5" fill="none"/>
+            <circle cx="72" cy="136" r="2.5" fill="#c39a3f"/>
+            <circle cx="148" cy="136" r="2.5" fill="#c39a3f"/>
+          </svg>
+          <figcaption>Concept art drawn for this preview</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <svg viewBox="0 0 220 260" role="img" aria-label="Cherry pair concept art">
+            <rect x="8" y="8" width="204" height="244" fill="#231a2d"/>
+            <path d="M86,158 C94,124 108,108 128,98" fill="none" stroke="#7d8b6f" stroke-width="4"/>
+            <path d="M138,166 C134,140 132,116 128,98" fill="none" stroke="#7d8b6f" stroke-width="4"/>
+            <ellipse cx="148" cy="92" rx="20" ry="9" fill="#7d8b6f" transform="rotate(-18 148 92)"/>
+            <circle cx="86" cy="178" r="21" fill="#8e2f3c" stroke="#ece4d2" stroke-width="3"/>
+            <circle cx="138" cy="186" r="21" fill="#8e2f3c" stroke="#ece4d2" stroke-width="3"/>
+            <path d="M78,170 a12,12 0 0 1 8,-10" stroke="#ece4d2" stroke-width="2.5" fill="none"/>
+            <path d="M130,178 a12,12 0 0 1 8,-10" stroke="#ece4d2" stroke-width="2.5" fill="none"/>
+          </svg>
+          <figcaption>Concept art drawn for this preview</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <svg viewBox="0 0 220 260" role="img" aria-label="Bat concept art">
+            <rect x="8" y="8" width="204" height="244" fill="#231a2d"/>
+            <circle cx="170" cy="58" r="16" fill="none" stroke="#c39a3f" stroke-width="3"/>
+            <path d="M102,142 C82,112 54,102 30,110 C46,114 50,122 42,132 C58,130 64,140 58,150 C74,146 90,152 102,162 Z" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+            <path d="M118,142 C138,112 166,102 190,110 C174,114 170,122 178,132 C162,130 156,140 162,150 C146,146 130,152 118,162 Z" fill="#2e2238" stroke="#ece4d2" stroke-width="3"/>
+            <ellipse cx="110" cy="152" rx="10" ry="18" fill="#ece4d2"/>
+            <circle cx="110" cy="130" r="10" fill="#ece4d2"/>
+            <polygon points="102,124 100,112 108,120" fill="#ece4d2"/>
+            <polygon points="118,124 120,112 112,120" fill="#ece4d2"/>
+            <circle cx="106" cy="130" r="2.2" fill="#17121c"/>
+            <circle cx="114" cy="130" r="2.2" fill="#17121c"/>
+          </svg>
+          <figcaption>Concept art drawn for this preview</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="artists">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">The Artists</p>
+        <h2 class="section-title">The collective</h2>
+        <p class="section-lede">The shop's resident artists, listed by first name the way the collective presents them.</p>
+      </div>
+      <div class="artist-grid">
+        <div class="placard"><p class="pname">Adam</p><p class="prole">Collective artist</p></div>
+        <div class="placard"><p class="pname">Jason</p><p class="prole">Collective artist</p></div>
+        <div class="placard"><p class="pname">Danny</p><p class="prole">Collective artist</p></div>
+        <div class="placard"><p class="pname">Jeremy</p><p class="prole">Collective artist</p></div>
+        <div class="placard"><p class="pname">Evan</p><p class="prole">Collective artist</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="visit">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Visit</p>
+        <h2 class="section-title">Find the shop</h2>
+        <p class="section-lede">Listings disagree on the address and hours, so both are shown plainly below.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="visit-card">
+          <h3>Address</h3>
+          <p><strong>3456 Minnehaha Ave, Minneapolis, MN 55406</strong></p>
+          <p>Local news reported the shop reopened one block north at this address in April 2026.</p>
+          <p class="note">An older listing still shows 3500 Minnehaha Ave. Call to confirm the current entrance before you visit.</p>
+        </div>
+        <div class="visit-card">
+          <h3>Hours</h3>
+          <p>Listings disagree on hours. Google and Instagram show Tue to Sat, 12 to 7. BirdEye shows Mon to Fri, 9 to 6. A local news article shows daily except Monday, 11 to 7.</p>
+          <p class="note">Hours vary by listing, so call to confirm before you visit.</p>
+        </div>
+        <div class="visit-card">
+          <h3>Contact</h3>
+          <p>The shop books by phone. Walk-ins are welcome.</p>
+          <p><a class="phone-big" href="tel:+16128518757">(612) 851-8757</a></p>
+          <p><a class="ig-link" href="https://www.instagram.com/lowbrowsaints">@lowbrowsaints on Instagram</a></p>
+        </div>
+      </div>
+      <div class="contact-strip">
+        <p class="label">Ready when you are</p>
+        <a class="btn" href="tel:+16128518757">Call to book</a>
+        <span style="color:var(--bone-dim)">Walk-ins welcome</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>This page is a design preview created by Freightfolio. It is not the official website of Lowbrow Saints Tattoo Collective.</p>
+    <p class="fine">All artwork shown is original concept art made for this preview. Business details reflect public listings available at the time of design. For the current address, hours, and availability, call the shop directly at (612) 851-8757.</p>
+  </div>
+</footer>
+
+<script>
+  var header = document.querySelector('.site-header');
+  function onScroll(){ header.classList.toggle('scrolled', window.scrollY > 10); }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+</script>
+
+</body>
+</html>

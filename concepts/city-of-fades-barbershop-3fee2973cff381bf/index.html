@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>City of Fades Barbershop - Design Preview | Freightfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #0a0d1c;
+    --night-2: #10142a;
+    --magenta: #ff2ea6;
+    --cyan: #25e8ff;
+    --cream: #f4f1ea;
+    --muted: #a7acc7;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--night);
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+  .disclosure {
+    background: var(--magenta);
+    color: #12040c;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 8px 12px;
+  }
+  header.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 28px;
+    border-bottom: 1px solid rgba(255,46,166,0.25);
+  }
+  .brand-mark {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 18px;
+    color: var(--cream);
+  }
+  .brand-mark span { color: var(--magenta); }
+  nav.sections { display: flex; gap: 22px; }
+  nav.sections a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  nav.sections a:hover { color: var(--cyan); }
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 64px 20px 72px;
+    background:
+      radial-gradient(ellipse 60% 45% at 50% 30%, rgba(255,46,166,0.12), transparent 70%),
+      radial-gradient(ellipse 45% 35% at 80% 70%, rgba(37,232,255,0.08), transparent 70%),
+      var(--night);
+    overflow: hidden;
+  }
+  .skyline {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 120px;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .neon-sign { max-width: 760px; margin: 0 auto 8px; width: 92%; }
+  .tube {
+    stroke: var(--magenta);
+    stroke-width: 5;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 0 6px var(--magenta)) drop-shadow(0 0 22px rgba(255,46,166,0.8));
+    animation: flickerOn 3.2s ease-in forwards;
+  }
+  .tube.cyan {
+    stroke: var(--cyan);
+    filter: drop-shadow(0 0 6px var(--cyan)) drop-shadow(0 0 22px rgba(37,232,255,0.8));
+    animation-delay: 0.5s;
+  }
+  .tube.thin { stroke-width: 3.2; }
+  @keyframes flickerOn {
+    0% { opacity: 0; }
+    6% { opacity: 1; }
+    9% { opacity: 0.15; }
+    12% { opacity: 1; }
+    16% { opacity: 0.4; }
+    20% { opacity: 1; }
+    24% { opacity: 0.7; }
+    30% { opacity: 1; }
+    100% { opacity: 1; }
+  }
+  .hero-sub {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--cyan);
+    margin-top: 6px;
+    text-shadow: 0 0 14px rgba(37,232,255,0.7);
+  }
+  .hero-address {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .hero-cta { margin-top: 26px; }
+  .btn-call {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #12040c;
+    background: linear-gradient(135deg, var(--magenta), #ff6ec7);
+    padding: 14px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 26px rgba(255,46,166,0.45);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-call:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 40px rgba(255,46,166,0.65);
+  }
+  .walkin-note { margin-top: 12px; font-size: 14px; color: var(--muted); letter-spacing: 1px; }
+  section { padding: 72px 28px; max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(30px, 4.5vw, 46px);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  .lead { color: var(--muted); max-width: 640px; font-size: 16px; margin-bottom: 36px; }
+  .fade-chart {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 44px;
+  }
+  .guard {
+    background: var(--night-2);
+    border: 1px solid rgba(37,232,255,0.28);
+    border-radius: 6px;
+    padding: 18px 6px 14px;
+    text-align: center;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+  }
+  .guard:hover { border-color: var(--magenta); transform: translateY(-3px); }
+  .guard .len {
+    height: 46px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .guard .num {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--cyan);
+  }
+  .guard.skin .num { color: var(--magenta); }
+  .guard .cap {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .service-card {
+    background: var(--night-2);
+    border: 1px solid rgba(255,46,166,0.22);
+    border-radius: 8px;
+    padding: 28px 24px;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+  }
+  .service-card:hover { border-color: var(--magenta); transform: translateY(-3px); }
+  .service-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--cream);
+  }
+  .service-card h3 .num-tag {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+    border-radius: 3px;
+    padding: 2px 8px;
+    margin-left: 10px;
+    vertical-align: middle;
+    letter-spacing: 2px;
+  }
+  .service-card p { color: var(--muted); font-size: 14.5px; }
+  .barbers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  .barber-card {
+    background: var(--night-2);
+    border: 1px solid rgba(37,232,255,0.22);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+  }
+  .barber-card:hover { border-color: var(--cyan); transform: translateY(-3px); }
+  .barber-card svg { display: block; width: 100%; height: auto; }
+  .barber-info { padding: 20px 22px 8px; }
+  .barber-info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .barber-info .role {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--magenta);
+    margin-top: 4px;
+  }
+  .art-caption {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+    padding: 10px 22px 18px;
+  }
+  .rating-strip {
+    text-align: center;
+    padding: 46px 20px;
+    background: var(--night-2);
+    border-top: 1px solid rgba(255,46,166,0.25);
+    border-bottom: 1px solid rgba(255,46,166,0.25);
+  }
+  .stars { color: var(--magenta); font-size: 22px; letter-spacing: 6px; margin-bottom: 10px; }
+  .rating-strip p { font-family: 'Oswald', sans-serif; font-size: 20px; letter-spacing: 2px; }
+  .visit-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .visit-card {
+    background: var(--night-2);
+    border: 1px solid rgba(255,46,166,0.22);
+    border-radius: 8px;
+    padding: 30px 28px;
+  }
+  .visit-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 16px;
+  }
+  .hours-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(167,172,199,0.25);
+    font-size: 15px;
+  }
+  .hours-row:last-child { border-bottom: none; }
+  .hours-row .closed { color: var(--magenta); }
+  .visit-card p { color: var(--muted); font-size: 15px; }
+  .visit-card a { color: var(--cyan); text-decoration: none; }
+  .visit-card a:hover { text-decoration: underline; }
+  .phone-big {
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: var(--cream);
+    display: block;
+    margin-top: 8px;
+  }
+  .final-cta {
+    text-align: center;
+    padding: 70px 20px 90px;
+    background: radial-gradient(ellipse 55% 60% at 50% 60%, rgba(37,232,255,0.09), transparent 70%), var(--night);
+  }
+  footer {
+    border-top: 1px solid rgba(167,172,199,0.2);
+    padding: 30px 28px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer .ff { color: var(--magenta); font-weight: 600; }
+  @media (max-width: 700px) {
+    .fade-chart { grid-template-columns: repeat(4, 1fr); }
+    header.topbar { flex-direction: column; gap: 10px; }
+    .hero { padding: 48px 16px 56px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design Preview: a concept by Freightfolio</div>
+
+<header class="topbar">
+  <div class="brand-mark">CITY OF <span>FADES</span></div>
+  <nav class="sections">
+    <a href="#services">Services</a>
+    <a href="#barbers">Barbers</a>
+    <a href="#visit">Visit</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <svg class="skyline" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,120 L0,70 L60,70 L60,40 L110,40 L110,85 L170,85 L170,30 L210,30 L210,75 L280,75 L280,50 L340,50 L340,90 L400,90 L400,35 L450,35 L450,80 L520,80 L520,55 L580,55 L580,95 L650,95 L650,45 L700,45 L700,75 L770,75 L770,25 L820,25 L820,70 L880,70 L880,50 L950,50 L950,85 L1010,85 L1010,40 L1070,40 L1070,75 L1130,75 L1130,60 L1200,60 L1200,120 Z" fill="#141838"/>
+    <g fill="#25e8ff" opacity="0.55">
+      <rect x="68" y="48" width="6" height="6"/><rect x="84" y="48" width="6" height="6"/>
+      <rect x="178" y="38" width="6" height="6"/><rect x="194" y="38" width="6" height="6"/><rect x="178" y="54" width="6" height="6"/>
+      <rect x="408" y="44" width="6" height="6"/><rect x="424" y="44" width="6" height="6"/>
+      <rect x="778" y="34" width="6" height="6"/><rect x="794" y="34" width="6" height="6"/><rect x="778" y="50" width="6" height="6"/>
+      <rect x="1018" y="48" width="6" height="6"/><rect x="1034" y="48" width="6" height="6"/>
+    </g>
+    <g fill="#ff2ea6" opacity="0.55">
+      <rect x="288" y="58" width="6" height="6"/><rect x="304" y="58" width="6" height="6"/>
+      <rect x="528" y="63" width="6" height="6"/><rect x="544" y="63" width="6" height="6"/>
+      <rect x="658" y="53" width="6" height="6"/>
+      <rect x="888" y="58" width="6" height="6"/><rect x="904" y="58" width="6" height="6"/>
+      <rect x="1138" y="66" width="6" height="6"/>
+    </g>
+  </svg>
+  <svg class="neon-sign" viewBox="0 0 760 210" role="img" aria-label="Neon sign reading City of Fades">
+    <rect x="10" y="10" width="740" height="190" rx="14" class="tube thin cyan" opacity="0.9"/>
+    <g>
+      <path class="tube" d="M60,80 C48,66 48,44 64,36 C76,31 90,32 96,42" />
+      <path class="tube" d="M110,40 L110,76 M110,40 L138,40 M110,76 L136,76 M110,58 L130,58" />
+      <path class="tube" d="M155,40 L155,76 L183,76" />
+      <path class="tube" d="M205,76 L217,40 L229,76 M209,66 L225,66" />
+      <path class="tube" d="M250,76 L250,40 M250,40 L278,40 M250,58 L272,58 M250,76 L276,76" />
+      <path class="tube" d="M300,76 L328,40 L328,76" />
+      <path class="tube" d="M352,40 C380,40 380,76 352,76 C346,76 344,74 342,72" />
+      <path class="tube" d="M400,76 L400,40 M400,40 L428,40 M400,58 L422,58" />
+      <path class="tube" d="M450,76 L450,40 M450,40 L478,40 M450,58 L472,58 M450,76 L476,76" />
+      <path class="tube" d="M500,76 L512,40 L524,76 M504,66 L520,66" />
+      <path class="tube" d="M546,76 L546,40 M546,58 L566,40 M566,40 L566,76" />
+      <path class="tube" d="M590,40 L590,76 M590,40 L618,40 M590,76 L616,76 M590,58 L610,58" />
+      <path class="tube" d="M640,76 C628,76 620,66 620,56 C620,46 628,38 640,38 C652,38 660,46 660,54 M660,54 L646,58" />
+    </g>
+    <g>
+      <path class="tube cyan thin" d="M250,140 L250,172 M250,140 L274,140 M250,172 L272,172" />
+      <path class="tube cyan thin" d="M290,172 L290,140 L314,172 L314,140" />
+      <path class="tube cyan thin" d="M330,172 L330,140 M330,140 L354,140 M330,156 L348,156 M330,172 L352,172" />
+      <path class="tube cyan thin" d="M368,172 L368,140 M368,140 L392,140 M368,156 L386,156 M368,172 L390,172" />
+      <path class="tube cyan thin" d="M406,172 C396,172 390,164 390,156 C390,148 396,142 406,142 C414,142 420,147 420,154 L406,158" />
+      <path class="tube cyan thin" d="M436,172 L436,140 M436,140 L458,156 M458,140 L458,172" />
+      <path class="tube cyan thin" d="M474,172 L474,140 M474,140 L498,140 M474,172 L496,172" />
+    </g>
+  </svg>
+  <div class="hero-sub">Barbershop</div>
+  <p class="hero-address">1735 N Nellis Blvd b, Las Vegas, NV 89115</p>
+  <div class="hero-cta">
+    <a class="btn-call" href="tel:+17029157032">Call to book</a>
+    <p class="walkin-note">Walk-ins welcome</p>
+  </div>
+</div>
+
+<section id="services">
+  <div class="section-label">Services</div>
+  <h2>The Fade Chart</h2>
+  <p class="lead">Every cut at City of Fades is built around the blend. Pick a guard, pick a finish, and the chair does the rest.</p>
+  <div class="fade-chart" aria-label="Clipper guard sizes from 0 to skin">
+    <div class="guard"><div class="len"><svg width="34" height="44" viewBox="0 0 34 44"><rect x="8" y="40" width="18" height="4" fill="#a7acc7"/><rect x="13" y="36" width="8" height="6" fill="#25e8ff"/></svg></div><div class="num">0</div><div class="cap">Zero blend</div></div>
+    <div class="guard"><div class="len"><svg width="34" height="44" viewBox="0 0 34 44"><rect x="8" y="38" width="18" height="6" fill="#a7acc7"/><rect x="13" y="32" width="8" height="8" fill="#25e8ff"/></svg></div><div class="num">1</div><div class="cap">Low blend</div></div>
+    <div class="guard"><div class="len"><svg width="34" height="44" viewBox="0 0 34 44"><rect x="8" y="34" width="18" height="10" fill="#a7acc7"/><rect x="13" y="26" width="8" height="10" fill="#25e8ff"/></svg></div><div class="num">2</div><div class="cap">Classic</div></div>
+    <div class="guard"><div class="len"><svg width="34" height="44" viewBox="0 0 34 44"><rect x="8" y="30" width="18" height="14" fill="#a7acc7"/><rect x="13" y="20" width="8" height="12" fill="#25e8ff"/></svg></div><div class="num">3</div><div class="cap">Mid fade</div></div>
+    <div class="guard"><div class="len"><svg width="34" height="44" viewBox="0 0 34 44"><rect x="8" y="26" width="18" height="18" fill="#a7acc7"/><rect x="13" y="14" width="8" height="14" fill="#25e8ff"/></svg></div><div class="num">4</div><div class="cap">Tapered</div></div>
+    <div class="guard"><div class="len"><svg width="34" height="44" viewBox="0 0 34 44"><rect x="8" y="22" width="18" height="22" fill="#a7acc7"/><rect x="13" y="8" width="8" height="16" fill="#25e8ff"/></svg></div><div class="num">5</div><div class="cap">Textured</div></div>
+    <div class="guard skin"><div class="len"><svg width="34" height="44" viewBox="0 0 34 44"><rect x="8" y="40" width="18" height="4" fill="#ff2ea6"/><rect x="13" y="34" width="8" height="6" fill="#ff2ea6" opacity="0.6"/></svg></div><div class="num">Skin</div><div class="cap">Bald fade</div></div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Taper Fades <span class="num-tag">0 to Skin</span></h3>
+      <p>Clean blends from skin up, shaped to your hairline. The shop's signature cut.</p>
+    </div>
+    <div class="service-card">
+      <h3>Men's Cuts</h3>
+      <p>Full cuts finished with clippers and shears, cleaned up at the neck and edges.</p>
+    </div>
+    <div class="service-card">
+      <h3>Lineups</h3>
+      <p>Sharp lines on the hairline and beard. Keep your shape between full cuts.</p>
+    </div>
+    <div class="service-card">
+      <h3>Kids Cuts</h3>
+      <p>Patient cuts for young clients, kept simple and finished clean.</p>
+    </div>
+  </div>
+</section>
+
+<section id="barbers">
+  <div class="section-label">Barbers</div>
+  <h2>The Chairs</h2>
+  <p class="lead">Three barbers, one standard: the cut leaves the chair sharp.</p>
+  <div class="barbers-grid">
+    <div class="barber-card">
+      <svg viewBox="0 0 300 220" role="img" aria-label="Stylized illustration of a barber pole beside a chair">
+        <rect width="300" height="220" fill="#10142a"/>
+        <rect x="60" y="40" width="44" height="140" rx="8" fill="#1a2040" stroke="#25e8ff" stroke-width="2"/>
+        <rect x="66" y="46" width="32" height="128" rx="6" fill="#0a0d1c"/>
+        <path d="M66,60 L98,74 M66,88 L98,102 M66,116 L98,130 M66,144 L98,158" stroke="#ff2ea6" stroke-width="8"/>
+        <path d="M66,60 L98,74 M66,88 L98,102 M66,116 L98,130 M66,144 L98,158" stroke="#25e8ff" stroke-width="3"/>
+        <rect x="150" y="110" width="100" height="20" rx="10" fill="#1a2040" stroke="#25e8ff" stroke-width="2"/>
+        <rect x="190" y="60" width="20" height="52" rx="10" fill="#1a2040" stroke="#25e8ff" stroke-width="2"/>
+        <rect x="170" y="130" width="12" height="60" fill="#1a2040"/>
+        <rect x="216" y="130" width="12" height="60" fill="#1a2040"/>
+      </svg>
+      <div class="barber-info"><h3>Pablo</h3><div class="role">Barber</div></div>
+      <p class="art-caption">Concept art drawn for this preview</p>
+    </div>
+    <div class="barber-card">
+      <svg viewBox="0 0 300 220" role="img" aria-label="Stylized illustration of clippers against a neon glow">
+        <rect width="300" height="220" fill="#10142a"/>
+        <circle cx="150" cy="105" r="70" fill="none" stroke="#ff2ea6" stroke-width="2" opacity="0.7"/>
+        <circle cx="150" cy="105" r="48" fill="none" stroke="#25e8ff" stroke-width="2" opacity="0.7"/>
+        <rect x="130" y="70" width="40" height="70" rx="10" fill="#1a2040" stroke="#25e8ff" stroke-width="2"/>
+        <path d="M130,80 h40 M130,92 h40" stroke="#ff2ea6" stroke-width="3"/>
+        <rect x="142" y="140" width="16" height="34" rx="8" fill="#1a2040" stroke="#ff2ea6" stroke-width="2"/>
+      </svg>
+      <div class="barber-info"><h3>Alejandro</h3><div class="role">Barber</div></div>
+      <p class="art-caption">Concept art drawn for this preview</p>
+    </div>
+    <div class="barber-card">
+      <svg viewBox="0 0 300 220" role="img" aria-label="Stylized illustration of a straight razor and comb">
+        <rect width="300" height="220" fill="#10142a"/>
+        <path d="M70,170 L190,50" stroke="#25e8ff" stroke-width="8" stroke-linecap="round"/>
+        <path d="M70,170 L190,50" stroke="#0a0d1c" stroke-width="2"/>
+        <rect x="185" y="45" width="70" height="18" rx="9" transform="rotate(45 220 54)" fill="#1a2040" stroke="#ff2ea6" stroke-width="2"/>
+        <g stroke="#25e8ff" stroke-width="3">
+          <line x1="80" y1="190" x2="220" y2="190"/>
+          <line x1="95" y1="190" x2="95" y2="205"/><line x1="115" y1="190" x2="115" y2="205"/>
+          <line x1="135" y1="190" x2="135" y2="205"/><line x1="155" y1="190" x2="155" y2="205"/>
+          <line x1="175" y1="190" x2="175" y2="205"/><line x1="195" y1="190" x2="195" y2="205"/>
+        </g>
+      </svg>
+      <div class="barber-info"><h3>Pacazzo</h3><div class="role">Barber</div></div>
+      <p class="art-caption">Concept art drawn for this preview</p>
+    </div>
+  </div>
+</section>
+
+<div class="rating-strip">
+  <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+  <p>Rated 4.8 from 258 Google reviews</p>
+</div>
+
+<section id="visit">
+  <div class="section-label">Visit</div>
+  <h2>Find the Shop</h2>
+  <p class="lead">Stop by during open hours or call ahead. Walk-ins are welcome every day the shop is open.</p>
+  <div class="visit-wrap">
+    <div class="visit-card">
+      <h3>Hours</h3>
+      <div class="hours-row"><span>Monday - Friday</span><span>9am - 6pm</span></div>
+      <div class="hours-row"><span>Saturday</span><span>9am - 4pm</span></div>
+      <div class="hours-row"><span>Sunday</span><span class="closed">Closed</span></div>
+    </div>
+    <div class="visit-card">
+      <h3>Address</h3>
+      <p>City of Fades Barbershop<br>1735 N Nellis Blvd b<br>Las Vegas, NV 89115</p>
+      <h3 style="margin-top:22px;">Phone</h3>
+      <a class="phone-big" href="tel:+17029157032">(702) 915-7032</a>
+      <p style="margin-top:8px;">Call to book your chair.</p>
+    </div>
+  </div>
+</section>
+
+<div class="final-cta">
+  <a class="btn-call" href="tel:+17029157032">Call to book</a>
+  <p class="walkin-note">Walk-ins welcome. Open Monday through Saturday.</p>
+</div>
+
+<footer>
+  <p><span class="ff">Freightfolio</span> design preview. This is a concept website created to show what a new site for City of Fades Barbershop could look like. It is not the business's official website and the business has not endorsed it.</p>
+  <p style="margin-top:10px;">1735 N Nellis Blvd b, Las Vegas, NV 89115 | (702) 915-7032</p>
+</footer>
+
+</body>
+</html>
