@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>iCut Barber Shop &amp; Lounge | Virginia Beach, VA</title>
+<meta name="description" content="Design preview concept for iCut Barber Shop & Lounge, Virginia Beach VA. Hot towel shaves, $25 cuts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0f2940;
+    --navy-deep:#0a1e31;
+    --sand:#f4e9d2;
+    --sand-deep:#e6d3ab;
+    --coral:#ef6a4d;
+    --coral-deep:#d6532f;
+    --ink:#1b2f44;
+    --seafoam:#9fd0c0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--sand);
+    color:var(--ink);
+    line-height:1.6;
+  }
+  .preview-bar{
+    background:var(--navy-deep);
+    color:#f8eeda;
+    text-align:center;
+    font-size:0.78rem;
+    font-weight:700;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    padding:0.6rem 1rem;
+  }
+  .preview-bar span{color:var(--coral);font-weight:800}
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(15,41,64,0.97);
+    border-bottom:3px solid var(--coral);
+  }
+  .nav-inner{
+    max-width:1150px;margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0.85rem 1.25rem;gap:1rem;
+  }
+  .brand{color:#fff;text-decoration:none;display:flex;align-items:center;gap:0.6rem}
+  .brand-mark{
+    width:38px;height:38px;flex:0 0 38px;
+    background:var(--coral);color:var(--navy-deep);
+    display:grid;place-items:center;
+    font-family:"Fraunces",serif;font-weight:900;font-size:1.15rem;
+    clip-path:polygon(0 0,100% 0,100% 78%,82% 100%,0 100%);
+  }
+  .brand-name{font-weight:800;letter-spacing:0.04em;font-size:1rem;line-height:1.2}
+  .brand-name small{display:block;font-weight:600;font-size:0.68rem;letter-spacing:0.22em;color:var(--sand-deep)}
+  nav.links{display:flex;gap:1.6rem;align-items:center}
+  nav.links a{
+    color:var(--sand);text-decoration:none;font-weight:700;font-size:0.9rem;
+    letter-spacing:0.03em;
+  }
+  nav.links a:hover{color:var(--coral)}
+  .nav-call{
+    background:var(--coral);color:var(--navy-deep)!important;
+    padding:0.55rem 1.1rem;font-weight:800!important;
+    clip-path:polygon(0 0,100% 0,100% 100%,8px 100%,0 calc(100% - 8px));
+  }
+  .nav-call:hover{background:#fff}
+  .hero{
+    background:var(--navy);
+    color:#f8eeda;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-inner{
+    max-width:1150px;margin:0 auto;
+    padding:4.5rem 1.25rem 5.5rem;
+    display:grid;grid-template-columns:1.15fr 0.85fr;
+    gap:3rem;align-items:center;
+    position:relative;z-index:2;
+  }
+  .eyebrow{
+    display:inline-block;
+    font-size:0.78rem;font-weight:800;letter-spacing:0.28em;text-transform:uppercase;
+    color:var(--seafoam);
+    border-left:4px solid var(--coral);
+    padding-left:0.7rem;margin-bottom:1.2rem;
+  }
+  h1{
+    font-family:"Fraunces",Georgia,serif;
+    font-weight:900;
+    font-size:clamp(2.6rem,6vw,4.6rem);
+    line-height:1.02;
+    letter-spacing:-0.01em;
+    color:#fff;
+  }
+  h1 .cut{color:var(--coral)}
+  h1 .lounge{display:block;font-weight:500;font-size:0.52em;letter-spacing:0.14em;color:var(--sand-deep);margin-top:0.35rem}
+  .hero-sub{
+    margin-top:1.3rem;
+    font-size:1.25rem;font-weight:700;color:#fff;
+  }
+  .hero-sub .price{background:var(--coral);color:var(--navy-deep);padding:0.1rem 0.6rem;font-weight:800}
+  .hero-p{margin-top:0.9rem;max-width:34rem;color:#d9cba6;font-size:1.02rem}
+  .cta-row{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:800;letter-spacing:0.02em;
+    padding:0.95rem 1.7rem;font-size:1rem;
+  }
+  .btn-coral{background:var(--coral);color:var(--navy-deep);clip-path:polygon(0 0,100% 0,100% 100%,12px 100%,0 calc(100% - 12px))}
+  .btn-coral:hover{background:#fff}
+  .btn-ghost{border:2px solid var(--sand-deep);color:var(--sand)}
+  .btn-ghost:hover{border-color:var(--coral);color:var(--coral)}
+  .hero-art{position:relative}
+  .hero-art svg{width:100%;height:auto;display:block;border:3px solid rgba(244,233,210,0.25)}
+  .art-cap{
+    position:absolute;left:0.9rem;bottom:0.7rem;
+    font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;
+    color:#f8eeda;background:rgba(10,30,49,0.75);padding:0.25rem 0.6rem;font-weight:700;
+  }
+  .wave-band{display:block;width:100%;height:26px;background:var(--coral)}
+  section.block{padding:4.5rem 1.25rem}
+  .wrap{max-width:1150px;margin:0 auto}
+  .sec-label{
+    font-size:0.78rem;font-weight:800;letter-spacing:0.28em;text-transform:uppercase;
+    color:var(--coral-deep);margin-bottom:0.6rem;
+  }
+  h2{
+    font-family:"Fraunces",Georgia,serif;font-weight:700;
+    font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.1;color:var(--navy);
+    margin-bottom:1rem;
+  }
+  .sec-intro{max-width:40rem;color:#4a5c6e;font-size:1.05rem;margin-bottom:2.5rem}
+  .svc-list{border-top:3px solid var(--navy)}
+  .svc{
+    display:grid;grid-template-columns:1fr auto;
+    gap:0.4rem 2rem;align-items:baseline;
+    padding:1.7rem 0.4rem;
+    border-bottom:1px solid #c9b98f;
+  }
+  .svc-name{font-family:"Fraunces",Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--navy)}
+  .svc-tag{
+    grid-column:1/-1;font-size:0.78rem;font-weight:800;letter-spacing:0.2em;
+    text-transform:uppercase;color:var(--coral-deep);
+  }
+  .svc-desc{color:#4a5c6e;max-width:38rem}
+  .svc-price{
+    font-family:"Fraunces",Georgia,serif;font-weight:900;font-size:1.6rem;color:var(--navy-deep);
+    white-space:nowrap;text-align:right;
+  }
+  .svc-price small{display:block;font-family:"Nunito",sans-serif;font-size:0.75rem;font-weight:700;color:#6b7a8a;letter-spacing:0.05em}
+  .price-note{
+    margin-top:1.6rem;background:#fff8;border:2px dashed #c9b98f;
+    padding:1rem 1.3rem;font-weight:600;color:#4a5c6e;max-width:44rem;
+  }
+  .hours-sec{background:var(--navy-deep);color:#f8eeda}
+  .hours-sec h2{color:#fff}
+  .hours-sec .sec-label{color:var(--seafoam)}
+  .hours-sec .sec-intro{color:#cbbd97}
+  .hours-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:1px;background:rgba(244,233,210,0.2);border:1px solid rgba(244,233,210,0.2);
+    margin-top:1rem;
+  }
+  .day{background:var(--navy);padding:1.4rem 1.2rem}
+  .day.sun{background:var(--coral)}
+  .day.sun .d-name,.day.sun .d-time{color:var(--navy-deep)}
+  .d-name{font-weight:800;letter-spacing:0.14em;text-transform:uppercase;font-size:0.78rem;color:var(--seafoam);margin-bottom:0.35rem}
+  .d-time{font-family:"Fraunces",Georgia,serif;font-size:1.35rem;font-weight:700;color:#fff}
+  .hours-src{margin-top:1.2rem;font-size:0.85rem;color:#a99a72;font-weight:600}
+  .visit-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-top:0.5rem;
+  }
+  .addr-card{
+    background:var(--navy);color:#f8eeda;padding:2.2rem;
+    clip-path:polygon(0 0,100% 0,100% calc(100% - 26px),calc(100% - 26px) 100%,0 100%);
+  }
+  .addr-card h3{font-family:"Fraunces",Georgia,serif;font-size:1.4rem;margin-bottom:1rem;color:#fff}
+  .addr-card p{margin-bottom:0.6rem;color:#d9cba6}
+  .addr-card a{color:var(--seafoam);font-weight:700;text-decoration:none;border-bottom:2px solid var(--coral)}
+  .addr-card a:hover{color:#fff}
+  .visit-copy p{margin-bottom:1.1rem;color:#4a5c6e;font-size:1.03rem}
+  .visit-copy .btn-coral{color:var(--navy-deep)}
+  .social-sec{background:var(--coral);color:var(--navy-deep)}
+  .social-inner{
+    max-width:1150px;margin:0 auto;padding:4rem 1.25rem;
+    display:grid;grid-template-columns:1.2fr 0.8fr;gap:3rem;align-items:center;
+  }
+  .social-sec h2{color:var(--navy-deep)}
+  .social-sec p{font-weight:600;max-width:32rem;margin-bottom:1.8rem}
+  .btn-navy{background:var(--navy-deep);color:#f8eeda;clip-path:polygon(0 0,100% 0,100% 100%,12px 100%,0 calc(100% - 12px))}
+  .btn-navy:hover{background:#fff;color:var(--navy-deep)}
+  .rating-card{
+    background:var(--navy-deep);color:#f8eeda;padding:2rem;text-align:center;
+  }
+  .rating-card .stars{color:var(--coral);font-size:1.6rem;letter-spacing:0.2em;margin-bottom:0.5rem}
+  .rating-card .score{font-family:"Fraunces",Georgia,serif;font-size:2.6rem;font-weight:900;color:#fff}
+  .rating-card .src{font-size:0.85rem;font-weight:700;color:#cbbd97;letter-spacing:0.04em}
+  footer{
+    background:var(--navy-deep);color:#8fa0ad;
+    padding:2.5rem 1.25rem;font-size:0.85rem;
+  }
+  footer .wrap{display:flex;flex-direction:column;gap:0.7rem}
+  footer strong{color:#d9cba6}
+  footer a{color:var(--seafoam);text-decoration:none;font-weight:700}
+  @media (max-width:860px){
+    .hero-inner{grid-template-columns:1fr;padding:3rem 1.25rem 4rem}
+    .hero-art{max-width:420px}
+    .visit-grid{grid-template-columns:1fr;gap:2rem}
+    .social-inner{grid-template-columns:1fr;gap:2rem}
+    nav.links{gap:1rem}
+    nav.links a.hide-m{display:none}
+    .svc{grid-template-columns:1fr}
+    .svc-price{text-align:left}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Design preview concept by <span>Freightfolio</span> &middot; not the business&rsquo;s official site</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="iCut Barber Shop and Lounge home">
+      <span class="brand-mark">iC</span>
+      <span class="brand-name">iCUT <small>BARBER SHOP &amp; LOUNGE</small></span>
+    </a>
+    <nav class="links" aria-label="Section navigation">
+      <a class="hide-m" href="#services">Services</a>
+      <a class="hide-m" href="#hours">Hours</a>
+      <a class="hide-m" href="#visit">Find Us</a>
+      <a href="tel:+17575984288" class="nav-call">Call the Shop</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <p class="eyebrow">Virginia Beach, VA &middot; Holland Road</p>
+        <h1><span class="cut">iCUT</span> BARBER SHOP <span class="lounge">&amp; LOUNGE</span></h1>
+        <p class="hero-sub">Hot towel shaves, <span class="price">$25 cuts</span>.</p>
+        <p class="hero-p">Haircuts, hot towel shaves, head shaves, and beard trims on Holland Road in Virginia Beach. A barbershop with a lounge feel, right in the neighborhood.</p>
+        <div class="cta-row">
+          <a class="btn btn-coral" href="tel:+17575984288">Call the Shop</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/icutbarbershopandlounge/">Facebook Page</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg viewBox="0 0 480 560" role="img" aria-label="Decorative sunset illustration">
+          <rect width="480" height="560" fill="#0a1e31"/>
+          <circle cx="240" cy="250" r="120" fill="#ef6a4d"/>
+          <circle cx="240" cy="250" r="86" fill="#f4916f"/>
+          <rect y="330" width="480" height="230" fill="#0f2940"/>
+          <path d="M0 380 Q 60 360 120 380 T 240 380 T 360 380 T 480 380 L480 560 L0 560 Z" fill="#16344f"/>
+          <path d="M0 440 Q 80 420 160 440 T 320 440 T 480 440 L480 560 L0 560 Z" fill="#1d3f5c"/>
+          <path d="M0 500 Q 100 485 200 500 T 400 500 T 480 500 L480 560 L0 560 Z" fill="#27536f"/>
+          <g fill="#0a1e31">
+            <rect x="70" y="180" width="10" height="200"/>
+            <path d="M75 180 q -60 -20 -90 -70 M75 180 q 60 -25 95 -60 M75 180 q -10 -60 20 -100 M75 180 q 25 -55 70 -75" stroke="#0a1e31" stroke-width="12" fill="none" stroke-linecap="round"/>
+            <rect x="390" y="210" width="10" height="180"/>
+            <path d="M395 210 q -50 -18 -75 -60 M395 210 q 50 -22 80 -52 M395 210 q -8 -50 18 -85 M395 210 q 22 -46 58 -64" stroke="#0a1e31" stroke-width="10" fill="none" stroke-linecap="round"/>
+          </g>
+          <g fill="#f4e9d2">
+            <rect x="150" y="120" width="180" height="26" rx="2" opacity="0.9"/>
+            <rect x="165" y="96" width="150" height="18" rx="2" opacity="0.55"/>
+          </g>
+          <text x="240" y="139" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="17" fill="#0a1e31" letter-spacing="4">LOUNGE</text>
+          <g fill="#ef6a4d" opacity="0.9">
+            <rect x="120" y="470" width="34" height="8" rx="4"/>
+            <rect x="200" y="500" width="52" height="8" rx="4"/>
+            <rect x="320" y="478" width="40" height="8" rx="4"/>
+          </g>
+        </svg>
+        <span class="art-cap">Decorative illustration</span>
+      </div>
+    </div>
+  </section>
+
+  <span class="wave-band" aria-hidden="true"></span>
+
+  <section class="block" id="services">
+    <div class="wrap">
+      <p class="sec-label">What they do</p>
+      <h2>The chair menu</h2>
+      <p class="sec-intro">Four services, done right. Cuts start at twenty-five dollars. Call the shop for shave and trim pricing.</p>
+      <div class="svc-list">
+        <div class="svc">
+          <p class="svc-tag">Most requested</p>
+          <h3 class="svc-name">Classic Cut</h3>
+          <p class="svc-price">$25</p>
+          <p class="svc-desc">Clean fades, tapers, and sharp finishes, cut to suit your head and your style.</p>
+        </div>
+        <div class="svc">
+          <h3 class="svc-name">Hot Towel Shave</h3>
+          <p class="svc-price"><small>Call for price</small></p>
+          <p class="svc-desc">A straight razor shave finished with a hot towel. The old school way.</p>
+        </div>
+        <div class="svc">
+          <h3 class="svc-name">Head Shave</h3>
+          <p class="svc-price"><small>Call for price</small></p>
+          <p class="svc-desc">Smooth and even, finished with care from crown to neckline.</p>
+        </div>
+        <div class="svc">
+          <h3 class="svc-name">Beard Trim</h3>
+          <p class="svc-price"><small>Call for price</small></p>
+          <p class="svc-desc">Shaped, lined, and cleaned up so the beard matches the cut.</p>
+        </div>
+      </div>
+      <p class="price-note">Only the $25 cut price is published. For shave and trim pricing, call the shop at (757) 598-4288.</p>
+    </div>
+  </section>
+
+  <section class="block hours-sec" id="hours">
+    <div class="wrap">
+      <p class="sec-label">When to come by</p>
+      <h2>Shop hours</h2>
+      <p class="sec-intro">Open seven days. Evenings run late Thursday through Saturday.</p>
+      <div class="hours-grid">
+        <div class="day"><p class="d-name">Mon</p><p class="d-time">10 - 8</p></div>
+        <div class="day"><p class="d-name">Tue</p><p class="d-time">10 - 8</p></div>
+        <div class="day"><p class="d-name">Wed</p><p class="d-time">10 - 8</p></div>
+        <div class="day"><p class="d-name">Thu</p><p class="d-time">10 - 9</p></div>
+        <div class="day"><p class="d-name">Fri</p><p class="d-time">10 - 9</p></div>
+        <div class="day"><p class="d-name">Sat</p><p class="d-time">10 - 9</p></div>
+        <div class="day sun"><p class="d-name">Sun</p><p class="d-time">12 - 6</p></div>
+      </div>
+      <p class="hours-src">Hours as posted on the shop&rsquo;s Facebook page.</p>
+    </div>
+  </section>
+
+  <section class="block" id="visit">
+    <div class="wrap">
+      <p class="sec-label">Where to find them</p>
+      <h2>On Holland Road</h2>
+      <div class="visit-grid">
+        <div class="addr-card">
+          <h3>iCut Barber Shop &amp; Lounge</h3>
+          <p>3300 Holland Rd #1106<br>Virginia Beach, VA 23452</p>
+          <p><a href="tel:+17575984288">(757) 598-4288</a></p>
+          <p><a href="https://www.facebook.com/icutbarbershopandlounge/">facebook.com/icutbarbershopandlounge</a></p>
+        </div>
+        <div class="visit-copy">
+          <p>The shop sits on Holland Road in Virginia Beach, an easy stop whether you are coming from the Oceanfront or the suburbs. No online booking, so the fastest way in is a phone call.</p>
+          <p>Check the Facebook page for the latest hours and updates straight from the shop.</p>
+          <div class="cta-row">
+            <a class="btn btn-coral" href="tel:+17575984288">Call the Shop</a>
+            <a class="btn btn-ghost" style="border-color:var(--navy);color:var(--navy)" href="https://www.facebook.com/icutbarbershopandlounge/">Message on Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-sec" id="social">
+    <div class="social-inner">
+      <div>
+        <h2>Follow the shop</h2>
+        <p>iCut runs its updates through Facebook. That is where you will find hour changes, announcements, and a look at the lounge.</p>
+        <a class="btn btn-navy" href="https://www.facebook.com/icutbarbershopandlounge/">Visit the Facebook Page</a>
+      </div>
+      <div class="rating-card">
+        <p class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="score">5.0</p>
+        <p class="src">5.0 from 33 Facebook reviews</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>iCut Barber Shop &amp; Lounge</strong> &middot; 3300 Holland Rd #1106, Virginia Beach, VA 23452 &middot; <a href="tel:+17575984288">(757) 598-4288</a></p>
+    <p>This page is a <strong>design preview concept</strong> created by Freightfolio to show what a website for this business could look like. It is not the business&rsquo;s official website, and Freightfolio is not affiliated with the business.</p>
+    <p>Business details shown here come from the shop&rsquo;s public Facebook page.</p>
+  </div>
+</footer>
+
+</body>
+</html>

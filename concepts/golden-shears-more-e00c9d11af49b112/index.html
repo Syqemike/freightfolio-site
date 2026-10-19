@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Golden Shears & More Downtown: the Ultimate Barber & Spa Experience at 22 Monroe St, Montgomery, AL. Call (334) 356-3792 to book.">
+<title>Golden Shears &amp; More | Montgomery, AL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --sand:#e9dcc8;
+    --sand-soft:#f4ecdf;
+    --taupe:#c9b394;
+    --espresso:#2b2119;
+    --espresso-deep:#1d1611;
+    --terra:#b45a2d;
+    --terra-soft:#d8a075;
+    --ink-on-sand:#33281e;
+    --cream-on-espresso:#f1e7d7;
+    --muted:#8a7a68;
+  }
+  html { scroll-behavior:smooth; }
+  body {
+    background:var(--sand-soft);
+    color:var(--ink-on-sand);
+    font-family:'Inter',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .serif { font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1180px; margin:0 auto; padding:0 30px; }
+  section.block, header.hero { scroll-margin-top:66px; }
+
+  /* ---- design preview disclosure bar ---- */
+  .previewbar {
+    background:var(--espresso-deep);
+    color:var(--sand);
+    font-size:11px;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+  }
+  .previewbar .wrap {
+    display:flex; align-items:center; justify-content:center;
+    padding-top:10px; padding-bottom:10px; text-align:center;
+  }
+  .previewbar .dot { color:var(--terra-soft); margin:0 12px; }
+
+  /* ---- nav ---- */
+  nav {
+    position:sticky; top:0; z-index:50;
+    background:rgba(244,236,223,.96);
+    border-bottom:1px solid var(--taupe);
+  }
+  nav .wrap {
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:14px; padding-bottom:14px;
+  }
+  .brand { font-weight:600; letter-spacing:1.5px; font-size:14px; text-transform:uppercase; }
+  .brand span { color:var(--terra); }
+  .navlinks { display:flex; gap:26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { position:relative; padding-bottom:3px; }
+  .navlinks a:hover { color:var(--terra); }
+  .navcta {
+    font-size:12px; letter-spacing:1.5px; text-transform:uppercase;
+    border:1px solid var(--espresso); padding:8px 18px; font-weight:600;
+  }
+  .navcta:hover { background:var(--espresso); color:var(--cream-on-espresso); }
+
+  /* ---- hero split ---- */
+  .hero-name {
+    background:var(--sand-soft);
+    text-align:center;
+    padding:64px 20px 46px;
+  }
+  .kicker {
+    font-size:12px; letter-spacing:4px; text-transform:uppercase;
+    color:var(--terra); margin-bottom:18px;
+  }
+  .hero-name h1 {
+    font-weight:600; font-size:clamp(44px,7vw,88px);
+    line-height:1.02; letter-spacing:.5px;
+  }
+  .hero-name .rule {
+    width:64px; height:3px; background:var(--terra); margin:24px auto 0;
+  }
+  .hero-sub {
+    text-align:center; font-size:18px; color:var(--muted);
+    padding:0 20px 8px; background:var(--sand-soft);
+    font-style:italic;
+  }
+  .split {
+    display:grid; grid-template-columns:1fr 1fr;
+  }
+  .side-barber {
+    background:var(--espresso);
+    color:var(--cream-on-espresso);
+    padding:64px 48px 72px;
+  }
+  .side-spa {
+    background:var(--sand);
+    color:var(--ink-on-sand);
+    padding:64px 48px 72px;
+  }
+  .side-tag {
+    font-size:11px; letter-spacing:3.5px; text-transform:uppercase;
+    margin-bottom:16px; display:block;
+  }
+  .side-barber .side-tag { color:var(--terra-soft); }
+  .side-spa .side-tag { color:var(--terra); }
+  .split h2 {
+    font-size:clamp(30px,3.4vw,44px); font-weight:600; line-height:1.08;
+    margin-bottom:16px;
+  }
+  .split p { font-size:15px; max-width:44ch; opacity:.88; margin-bottom:26px; }
+  .btn {
+    display:inline-block; font-size:12px; letter-spacing:2px; text-transform:uppercase;
+    font-weight:600; padding:14px 30px; border:1px solid currentColor;
+  }
+  .side-barber .btn:hover { background:var(--terra); border-color:var(--terra); color:#fff; }
+  .side-spa .btn:hover { background:var(--espresso); border-color:var(--espresso); color:var(--cream-on-espresso); }
+  .side-art { margin-top:34px; }
+  .side-art svg { display:block; width:100%; height:auto; }
+  .art-note { font-size:11px; opacity:.55; margin-top:10px; letter-spacing:1px; }
+
+  /* ---- services split ---- */
+  .services { padding:0; }
+  .services .split .side-barber, .services .split .side-spa { padding:72px 48px 80px; }
+  .services ul { list-style:none; margin-top:8px; }
+  .services li {
+    padding:18px 0; border-bottom:1px solid;
+    font-size:17px; display:flex; justify-content:space-between; align-items:baseline;
+    gap:16px;
+  }
+  .side-barber li { border-color:rgba(241,231,215,.18); }
+  .side-spa li { border-color:rgba(51,40,30,.18); }
+  .services li .n { font-size:11px; letter-spacing:2px; opacity:.55; text-transform:uppercase; }
+  .services .note { font-size:14px; margin-top:22px; opacity:.8; }
+
+  /* ---- about strip (espresso, full width) ---- */
+  .about {
+    background:var(--espresso-deep);
+    color:var(--cream-on-espresso);
+    padding:84px 0;
+    text-align:center;
+  }
+  .about h2 {
+    font-size:clamp(30px,3.6vw,46px); font-weight:600; margin-bottom:20px;
+  }
+  .about h2 em { color:var(--terra-soft); }
+  .about p { max-width:62ch; margin:0 auto; font-size:16px; opacity:.85; }
+  .about .street {
+    margin-top:26px; font-size:12px; letter-spacing:3px; text-transform:uppercase;
+    color:var(--terra-soft);
+  }
+
+  /* ---- visit split ---- */
+  .visit .side-barber, .visit .side-spa { padding:72px 48px 80px; }
+  .visit h2 { font-size:clamp(28px,3vw,40px); font-weight:600; margin-bottom:14px; }
+  .visit dl { margin-top:10px; font-size:15px; }
+  .visit dt { font-size:11px; letter-spacing:2.5px; text-transform:uppercase; opacity:.6; margin-top:22px; }
+  .visit dd { margin-top:4px; }
+  .hours-row {
+    display:flex; justify-content:space-between; padding:9px 0;
+    border-bottom:1px solid; font-size:15px;
+  }
+  .side-barber .hours-row { border-color:rgba(241,231,215,.16); }
+  .side-spa .hours-row { border-color:rgba(51,40,30,.16); }
+  .rating {
+    margin-top:30px; font-size:15px;
+    border:1px solid var(--terra); display:inline-block; padding:12px 22px;
+  }
+  .rating strong { font-weight:600; }
+
+  /* ---- footer ---- */
+  footer {
+    background:var(--espresso-deep); color:#b7a88f;
+    padding:44px 0 52px; text-align:center; font-size:13px;
+  }
+  footer .fname { font-size:14px; letter-spacing:2px; text-transform:uppercase; color:var(--sand); margin-bottom:10px; }
+  footer p { max-width:60ch; margin:6px auto; }
+
+  @media (max-width:760px) {
+    .split { grid-template-columns:1fr; }
+    .side-barber, .side-spa { padding:48px 26px 56px; }
+    .services .split .side-barber, .services .split .side-spa,
+    .visit .side-barber, .visit .side-spa { padding:52px 26px 60px; }
+    .navlinks { display:none; }
+    .hero-name { padding:44px 18px 32px; }
+    .wrap { padding:0 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="previewbar">
+  <div class="wrap">
+    <span class="dot">&#9670;</span>
+    <span>Design preview concept by Freightfolio, not the business's official site</span>
+    <span class="dot">&#9670;</span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Golden Shears <span>&amp;</span> More</a>
+    <div class="navlinks">
+      <a href="#barber">Barber</a>
+      <a href="#spa">Spa</a>
+      <a href="#about">The Shop</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <a class="navcta" href="tel:+13343563792">Call to book</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-name">
+    <div class="kicker">Montgomery, Alabama</div>
+    <h1 class="serif">Golden Shears<br>&amp; More</h1>
+    <div class="rule"></div>
+  </div>
+  <p class="hero-sub serif">The Ultimate Barber &amp; Spa Experience, Downtown Montgomery</p>
+  <div class="split">
+    <div class="side-barber">
+      <span class="side-tag">The Barber Side</span>
+      <h2 class="serif">Sharp cuts,<br>finished with care</h2>
+      <p>Men's cuts, mid-fades, and beard line-ups, shaped to how you want to look when you walk out the door.</p>
+      <a class="btn" href="tel:+13343563792">Call to book</a>
+      <div class="side-art">
+        <svg viewBox="0 0 320 120" role="img" aria-label="Decorative illustration of scissors">
+          <g stroke="#d8a075" stroke-width="3" fill="none" stroke-linecap="round">
+            <circle cx="70" cy="82" r="16"/>
+            <circle cx="70" cy="42" r="16"/>
+            <line x1="82" y1="72" x2="300" y2="28"/>
+            <line x1="82" y1="50" x2="300" y2="96"/>
+            <line x1="170" y1="62" x2="170" y2="62" stroke="#b45a2d" stroke-width="5"/>
+          </g>
+        </svg>
+        <div class="art-note">Decorative concept illustration</div>
+      </div>
+    </div>
+    <div class="side-spa">
+      <span class="side-tag">The Spa Side</span>
+      <h2 class="serif">A slower pace,<br>made for unwinding</h2>
+      <p>The salon and spa side of the shop is set up for the quieter part of your routine, in the heart of downtown.</p>
+      <a class="btn" href="tel:+13343563792">Call to book</a>
+      <div class="side-art">
+        <svg viewBox="0 0 320 120" role="img" aria-label="Decorative illustration of a spa stone and leaves">
+          <g stroke="#b45a2d" stroke-width="3" fill="none" stroke-linecap="round">
+            <ellipse cx="160" cy="66" rx="58" ry="34"/>
+            <ellipse cx="160" cy="66" rx="34" ry="18" stroke="#8a7a68"/>
+            <path d="M96 44 C 80 30, 64 30, 52 40"/>
+            <path d="M96 44 C 92 28, 80 22, 68 24"/>
+            <path d="M224 44 C 240 30, 256 30, 268 40"/>
+            <path d="M224 44 C 228 28, 240 22, 252 24"/>
+          </g>
+        </svg>
+        <div class="art-note">Decorative concept illustration</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="block services" id="barber">
+  <div class="split">
+    <div class="side-barber">
+      <span class="side-tag">Services</span>
+      <h2 class="serif" id="barber-h">Barber services</h2>
+      <ul>
+        <li>Men's cuts <span class="n">Signature</span></li>
+        <li>Mid-fades <span class="n">Precision</span></li>
+        <li>Beard line-ups <span class="n">Detail</span></li>
+      </ul>
+      <p class="note">To ask about Saturday availability or the right service for you, call the shop directly.</p>
+    </div>
+    <div class="side-spa" id="spa">
+      <span class="side-tag">Services</span>
+      <h2 class="serif">Salon &amp; spa services</h2>
+      <p style="margin-top:14px;">Golden Shears &amp; More is a barber and spa shop in one, so the salon and spa side covers the rest of your routine. Call ahead and ask what fits your day.</p>
+      <a class="btn" href="tel:+13343563792" style="margin-top:24px;">Call to book</a>
+    </div>
+  </div>
+</section>
+
+<section class="block about" id="about">
+  <div class="wrap">
+    <div class="kicker">The shop</div>
+    <h2 class="serif">Two sides, one chair on <em>Monroe Street</em></h2>
+    <p>Golden Shears &amp; More Downtown sits on 22 Monroe St in the middle of downtown Montgomery. One visit can cover a fresh cut and time on the spa side, all without leaving the block.</p>
+    <div class="street">22 Monroe St &middot; Montgomery, AL 36104</div>
+  </div>
+</section>
+
+<section class="block visit" id="visit">
+  <div class="split">
+    <div class="side-barber">
+      <h2 class="serif">Hours</h2>
+      <div class="hours-row"><span>Tuesday to Friday</span><span>8am to 6pm</span></div>
+      <div class="hours-row"><span>Saturday</span><span>8am to 2pm</span></div>
+      <div class="hours-row"><span>Sunday and Monday</span><span>Closed</span></div>
+      <p class="note" style="margin-top:22px; font-size:14px; opacity:.8;">Hours are Central Time. Call to ask about Saturday availability.</p>
+    </div>
+    <div class="side-spa">
+      <h2 class="serif">Visit</h2>
+      <dl>
+        <dt>Address</dt>
+        <dd>22 Monroe St, Montgomery, AL 36104</dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+13343563792" style="font-weight:600; font-size:18px;">(334) 356-3792</a></dd>
+      </dl>
+      <a class="btn" href="tel:+13343563792" style="margin-top:26px;">Call to book</a>
+      <div><span class="rating">5.0 from 14 Google reviews</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fname">Golden Shears &amp; More</div>
+    <p>Design preview concept by Freightfolio. This page is a sample website design, not the business's official site.</p>
+    <p>22 Monroe St, Montgomery, AL 36104 &middot; (334) 356-3792</p>
+  </div>
+</footer>
+
+</body>
+</html>

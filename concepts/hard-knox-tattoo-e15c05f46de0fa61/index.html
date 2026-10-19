@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Hard Knox Tattoo | Knoxville, TN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#141312;
+    --ink2:#1d1c1a;
+    --bone:#efe6d4;
+    --bone-dim:#cfc2a6;
+    --rust:#a63a22;
+    --oxblood:#7c2417;
+    --steel:#8a8a86;
+    --line:#2e2c29;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--bone);font-family:'Barlow Condensed',Arial,sans-serif;font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--rust);color:var(--bone)}
+  a{color:inherit}
+  img,svg{display:block;max-width:100%}
+
+  /* disclosure bar */
+  .disclosure{background:var(--rust);color:#fff;font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:.06em;text-align:center;padding:9px 16px;line-height:1.5}
+  .disclosure strong{font-weight:700}
+
+  /* nav */
+  nav.topnav{background:var(--ink);border-bottom:2px solid var(--line);position:sticky;top:0;z-index:50}
+  nav.topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1200px;margin:0 auto;padding:12px 20px}
+  .brand-mini{font-family:'Anton',sans-serif;font-size:20px;letter-spacing:.04em;color:var(--bone);text-transform:uppercase}
+  .brand-mini span{color:var(--rust)}
+  nav.topnav ul{list-style:none;display:flex;gap:22px;flex-wrap:wrap}
+  nav.topnav a{text-decoration:none;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-dim)}
+  nav.topnav a:hover{color:var(--rust)}
+  .nav-call{border:1px solid var(--rust);padding:7px 14px;color:var(--bone)!important}
+  .nav-call:hover{background:var(--rust)}
+
+  /* diagonal band edges */
+  .slash{clip-path:polygon(0 0,100% 3vw,100% 100%,0 calc(100% - 3vw));}
+  .slash-inv{clip-path:polygon(0 3vw,100% 0,100% calc(100% - 3vw),0 100%);}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;background:
+    repeating-linear-gradient(-45deg,transparent 0 46px,rgba(166,58,34,.045) 46px 48px),
+    radial-gradient(1200px 600px at 70% -10%,#221e1a 0%,var(--ink) 60%);
+    padding:78px 20px 110px;text-align:left}
+  .hero .wrap{max-width:1200px;margin:0 auto;position:relative}
+  .kicker{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.35em;text-transform:uppercase;color:var(--rust);margin-bottom:18px}
+  .wordmark{font-family:'Anton',sans-serif;font-size:clamp(64px,13.5vw,178px);line-height:.92;letter-spacing:.005em;text-transform:uppercase;color:var(--bone)}
+  .wordmark .red{color:var(--rust)}
+  .wordmark .outline{color:transparent;-webkit-text-stroke:2px var(--bone)}
+  .tagline{font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:var(--bone-dim);margin-top:16px}
+  .tagline b{color:var(--bone)}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-block;text-decoration:none;font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.12em;text-transform:uppercase;padding:15px 30px;border:2px solid var(--rust)}
+  .btn-solid{background:var(--rust);color:#fff}
+  .btn-solid:hover{background:var(--oxblood);border-color:var(--oxblood)}
+  .btn-ghost{color:var(--bone);border-color:var(--steel)}
+  .btn-ghost:hover{border-color:var(--bone)}
+  .stamp{position:absolute;right:8px;top:0;width:132px;height:132px;transform:rotate(11deg);opacity:.95;pointer-events:none}
+  .hero-flash{position:absolute;right:-10px;bottom:-30px;width:min(340px,42vw);opacity:.16;pointer-events:none}
+  .art-note{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:var(--steel);text-transform:uppercase;margin-top:8px}
+
+  /* strip divider */
+  .strip{background:var(--rust);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0}
+  .strip .row{display:inline-block;font-family:'Anton',sans-serif;font-size:22px;letter-spacing:.18em;text-transform:uppercase;padding-right:40px}
+  .strip .row span{margin:0 22px;color:var(--ink)}
+
+  /* sections */
+  section.block{padding:84px 20px;position:relative}
+  .wrap{max-width:1100px;margin:0 auto}
+  .sec-label{font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:.35em;text-transform:uppercase;color:var(--rust);margin-bottom:14px;display:flex;align-items:center;gap:14px}
+  .sec-label::after{content:"";height:2px;background:var(--rust);flex:1}
+  h2.sec{font-family:'Anton',sans-serif;font-size:clamp(36px,6vw,62px);letter-spacing:.02em;text-transform:uppercase;line-height:1;margin-bottom:10px}
+  .lede{color:var(--bone-dim);max-width:640px;margin-bottom:44px;font-size:21px}
+
+  /* split: tattoo / piercing */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--line)}
+  .split>div{padding:44px 36px;position:relative}
+  .split>div:first-child{background:var(--ink2)}
+  .split>div:last-child{background:#232019}
+  .split>div:first-child{border-right:2px solid var(--line)}
+  .split .num{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.3em;color:var(--rust);margin-bottom:10px}
+  .split h3{font-family:'Anton',sans-serif;font-size:30px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:14px}
+  .split p{color:var(--bone-dim);margin-bottom:18px}
+  .split ul{list-style:none;margin:0 0 24px}
+  .split li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:19px}
+  .split li:last-child{border-bottom:none}
+  .split li::before{content:"›";color:var(--rust);font-weight:700;margin-right:10px}
+  .mini-flash{width:84px;height:84px;margin-bottom:18px;opacity:.9}
+
+  /* artists */
+  .artists{background:var(--ink2)}
+  .roster{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);border:2px solid var(--line)}
+  .artist{background:var(--ink);padding:34px 24px;min-height:210px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+  .artist .init{font-family:'Anton',sans-serif;font-size:76px;line-height:1;color:var(--line);position:absolute;top:10px;left:16px}
+  .artist:hover .init{color:var(--rust)}
+  .artist h3{font-family:'Anton',sans-serif;font-size:27px;text-transform:uppercase;letter-spacing:.03em}
+  .artist .role{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--steel);margin-top:6px}
+  .artist .walkin{display:inline-block;margin-top:12px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.08em;color:var(--rust);border:1px solid var(--rust);padding:5px 10px;text-transform:uppercase}
+
+  /* trust block */
+  .trust{background:
+    repeating-linear-gradient(-45deg,transparent 0 60px,rgba(239,230,212,.02) 60px 62px),
+    var(--ink)}
+  .trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .stamp-card{border:3px double var(--rust);padding:40px 34px;text-align:center;transform:rotate(-3deg);background:var(--ink2)}
+  .stamp-card .big{font-family:'Anton',sans-serif;font-size:88px;line-height:1;color:var(--bone)}
+  .stamp-card .big span{color:var(--rust)}
+  .stamp-card .sub{font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--bone-dim);margin-top:10px;line-height:2}
+  .trust-copy h2{margin-bottom:14px}
+  .trust-copy p{color:var(--bone-dim);margin-bottom:16px}
+  .trust-copy .years{font-family:'Anton',sans-serif;font-size:30px;color:var(--bone);text-transform:uppercase;margin:22px 0 8px}
+  .trust-copy .years span{color:var(--rust)}
+
+  /* location */
+  .visit{background:var(--ink2)}
+  .visit-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px}
+  .addr{font-size:23px;line-height:1.7}
+  .addr strong{font-family:'Anton',sans-serif;font-size:26px;text-transform:uppercase;letter-spacing:.03em;display:block;margin-bottom:8px}
+  .addr a.tel{color:var(--rust);text-decoration:none;font-weight:700}
+  .addr a.tel:hover{text-decoration:underline}
+  .hours-box{border:2px solid var(--line);padding:28px;background:var(--ink)}
+  .hours-box h4{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--rust);margin-bottom:14px}
+  .hours-box p{color:var(--bone-dim);margin-bottom:8px}
+  .hours-box .call{font-family:'Space Mono',monospace;font-size:15px;margin-top:14px;display:inline-block}
+  .dir-btn{margin-top:26px}
+
+  footer{background:#0d0c0b;border-top:2px solid var(--line);padding:34px 20px;text-align:center}
+  footer .foot-brand{font-family:'Anton',sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+  footer p{font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.08em;color:var(--steel);line-height:2}
+  footer a{color:var(--bone-dim)}
+
+  @media (max-width:860px){
+    .split,.trust-grid,.visit-grid{grid-template-columns:1fr}
+    .split>div:first-child{border-right:none;border-bottom:2px solid var(--line)}
+    .roster{grid-template-columns:1fr 1fr}
+    .stamp{width:92px;height:92px}
+    .hero{padding:56px 20px 90px}
+    nav.topnav ul{gap:14px}
+    nav.topnav .wrap{flex-wrap:wrap}
+    .stamp-card{transform:none}
+  }
+  @media (max-width:520px){
+    .roster{grid-template-columns:1fr}
+    .hero-flash{display:none}
+    .wordmark .outline{-webkit-text-stroke:1.2px var(--bone)}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure"><strong>DESIGN PREVIEW</strong> - Concept by Freightfolio, not the business's official site. Built to show what a new website for Hard Knox Tattoo could look like.</div>
+
+<nav class="topnav" aria-label="Section navigation">
+  <div class="wrap">
+    <div class="brand-mini">HARD <span>KNOX</span> TATTOO</div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#artists">Artists</a></li>
+      <li><a href="#shop">The Shop</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a class="nav-call" href="tel:+18652475678">Call the shop</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero slash" id="top">
+  <div class="wrap">
+    <p class="kicker">South Knoxville &middot; Est. 18+ years</p>
+    <h1 class="wordmark">HARD <span class="red">KNOX</span><br><span class="outline">TATTOO</span></h1>
+    <p class="tagline">Custom tattoos &amp; body piercing &middot; <b>4.7 from 1,292 Google reviews</b></p>
+    <div class="hero-ctas">
+      <a class="btn btn-solid" href="tel:+18652475678">Call the shop &middot; (865) 247-5678</a>
+      <a class="btn btn-ghost" href="#services">See the work</a>
+    </div>
+
+    <svg class="stamp" viewBox="0 0 140 140" aria-label="Health score 100 stamp, 15 years running" role="img">
+      <circle cx="70" cy="70" r="62" fill="none" stroke="#a63a22" stroke-width="3"/>
+      <circle cx="70" cy="70" r="52" fill="none" stroke="#a63a22" stroke-width="1.5"/>
+      <text x="70" y="62" text-anchor="middle" font-family="Anton,sans-serif" font-size="34" fill="#efe6d4">100</text>
+      <text x="70" y="84" text-anchor="middle" font-family="'Space Mono',monospace" font-size="11" letter-spacing="2" fill="#a63a22">HEALTH SCORE</text>
+      <text x="70" y="100" text-anchor="middle" font-family="'Space Mono',monospace" font-size="10" letter-spacing="1.5" fill="#cfc2a6">15 YRS RUNNING</text>
+    </svg>
+
+    <svg class="hero-flash" viewBox="0 0 200 260" aria-hidden="true">
+      <g fill="none" stroke="#efe6d4" stroke-width="2.5">
+        <path d="M100 10 L112 70 L170 60 L122 96 L140 160 L100 118 L60 160 L78 96 L30 60 L88 70 Z"/>
+        <circle cx="100" cy="88" r="14"/>
+        <path d="M40 210 l18 -12 l18 12 l-8 -20 l16 -12 l-22 1 l-7 -20 l-7 20 l-22 -1 l16 12 z"/>
+        <path d="M150 210 h40 M150 222 h40 M150 234 h28" stroke-linecap="square"/>
+      </g>
+    </svg>
+    <p class="art-note">Flash-style graphics above are original illustrative artwork, not the shop's tattoo work.</p>
+  </div>
+</header>
+
+<div class="strip" aria-hidden="true">
+  <span class="row">CUSTOM TATTOOS <span>//</span> BODY PIERCING <span>//</span> WALK-INS WELCOME <span>//</span> SOUTH KNOXVILLE <span>//</span></span>
+  <span class="row">CUSTOM TATTOOS <span>//</span> BODY PIERCING <span>//</span> WALK-INS WELCOME <span>//</span> SOUTH KNOXVILLE <span>//</span></span>
+</div>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <p class="sec-label">Services</p>
+    <h2 class="sec">Two crafts. One roof.</h2>
+    <p class="lede">Hard Knox does custom tattooing and body piercing out of one South Knoxville shop. Walk-ins are welcome for consultations and piercings.</p>
+    <div class="split">
+      <div>
+        <svg class="mini-flash" viewBox="0 0 100 100" aria-hidden="true">
+          <g fill="none" stroke="#a63a22" stroke-width="3">
+            <path d="M50 8 L58 42 L92 34 L62 56 L72 92 L50 66 L28 92 L38 56 L8 34 L42 42 Z"/>
+          </g>
+        </svg>
+        <p class="num">01</p>
+        <h3>Custom Tattoos</h3>
+        <p>Bring an idea or walk in and talk it through with an artist. The shop is built around custom work, not flash off a wall you settle for.</p>
+        <ul>
+          <li>Custom designs drawn for you</li>
+          <li>Walk-in consultations</li>
+          <li>Cover-ups and rework (ask in person)</li>
+        </ul>
+        <a class="btn btn-solid" href="tel:+18652475678">Call the shop</a>
+      </div>
+      <div>
+        <svg class="mini-flash" viewBox="0 0 100 100" aria-hidden="true">
+          <g fill="none" stroke="#efe6d4" stroke-width="3">
+            <circle cx="50" cy="50" r="26"/>
+            <circle cx="50" cy="50" r="8" fill="#a63a22" stroke="#a63a22"/>
+            <path d="M50 24 v-14 M74 38 l10 -10 M26 38 l-10 -10"/>
+          </g>
+        </svg>
+        <p class="num">02</p>
+        <h3>Body Piercing</h3>
+        <p>Professional piercing done in a shop that takes cleanliness seriously. Walk-ins welcome for piercings.</p>
+        <ul>
+          <li>Professional body piercing</li>
+          <li>Walk-ins welcome</li>
+          <li>Clean, inspected studio</li>
+        </ul>
+        <a class="btn btn-ghost" href="tel:+18652475678">Call about piercing</a>
+      </div>
+    </div>
+    <p class="art-note">Flash-style graphics above are original illustrative artwork.</p>
+  </div>
+</section>
+
+<section class="block artists slash-inv" id="artists" style="background:#161514">
+  <div class="wrap">
+    <p class="sec-label">The Roster</p>
+    <h2 class="sec">Artists in the shop</h2>
+    <p class="lede">Four resident artists. Come by, look at portfolios in person, and talk your piece through before anything touches skin.</p>
+    <div class="roster">
+      <div class="artist">
+        <span class="init" aria-hidden="true">L</span>
+        <h3>Leslie</h3>
+        <p class="role">Resident artist</p>
+        <span class="walkin">Walk-in consults</span>
+      </div>
+      <div class="artist">
+        <span class="init" aria-hidden="true">J</span>
+        <h3>Jarrod</h3>
+        <p class="role">Resident artist</p>
+        <span class="walkin">Walk-in consults</span>
+      </div>
+      <div class="artist">
+        <span class="init" aria-hidden="true">R</span>
+        <h3>Rockwell</h3>
+        <p class="role">Resident artist</p>
+        <span class="walkin">Walk-in consults</span>
+      </div>
+      <div class="artist">
+        <span class="init" aria-hidden="true">M</span>
+        <h3>Maddi</h3>
+        <p class="role">Resident artist</p>
+        <span class="walkin">Walk-in consults</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block trust" id="shop">
+  <div class="wrap trust-grid">
+    <div class="stamp-card" role="img" aria-label="Knox County Health Department score of 100, 15 years running">
+      <p class="big">100<span>/100</span></p>
+      <p class="sub">Knox County Health Dept score<br>15 years running</p>
+    </div>
+    <div class="trust-copy">
+      <p class="sec-label">The Shop</p>
+      <h2 class="sec">Clean shop. Long record.</h2>
+      <p>Hard Knox holds a Knox County Health Department score of 100, 15 years running, as stated in the shop's Google business description. That is not common in this trade.</p>
+      <p class="years"><span>18+</span> years in business</p>
+      <p>South Knoxville has had the same tattoo shop on Chapman Highway for the better part of two decades.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block visit slash" id="visit">
+  <div class="wrap">
+    <p class="sec-label">Find the shop</p>
+    <h2 class="sec">South Knoxville</h2>
+    <p class="lede">On Chapman Highway. Walk in for a consultation or a piercing, or call ahead.</p>
+    <div class="visit-grid">
+      <div class="addr">
+        <strong>Hard Knox Tattoo</strong>
+        3405 Chapman Hwy<br>
+        Knoxville, TN 37920<br><br>
+        <a class="tel" href="tel:+18652475678">(865) 247-5678</a>
+        <div class="dir-btn">
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=3405+Chapman+Hwy+Knoxville+TN+37920" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div class="hours-box">
+        <h4>Hours</h4>
+        <p>Listings disagree on shop hours. Call to confirm before you head over:</p>
+        <p class="call"><a class="tel" href="tel:+18652475678" style="color:var(--rust);font-weight:700;text-decoration:none">(865) 247-5678</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="foot-brand">Hard Knox Tattoo</p>
+  <p>Design preview concept by Freightfolio. Not the business's official site.<br>
+  <a href="tel:+18652475678">Call the shop: (865) 247-5678</a> &middot; 3405 Chapman Hwy, Knoxville, TN 37920</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>The Barber Pole | Savannah, GA</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --hunter:#22402e;
+    --hunter-deep:#152a1e;
+    --hunter-ink:#0e1f15;
+    --parchment:#f4ecda;
+    --parchment-deep:#e9ddc1;
+    --brass:#b08d3e;
+    --brass-light:#d6ba72;
+    --pole-red:#b23a3a;
+    --ink:#2b2417;
+    --muted:#6e6250;
+    --display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
+    --body:Georgia,"Times New Roman",serif;
+  }
+  html { scroll-behavior:smooth; }
+  body { background:var(--parchment); color:var(--ink); font-family:var(--body); line-height:1.7; font-size:17px; }
+  a { color:inherit; }
+  .wrap { max-width:1060px; margin:0 auto; padding:0 26px; }
+
+  /* ---------- design preview disclosure (very top) ---------- */
+  .disclosure {
+    background:var(--hunter-ink); color:var(--brass-light);
+    text-align:center; font-size:12px; letter-spacing:2.5px; text-transform:uppercase;
+    padding:10px 18px; font-family:var(--display);
+  }
+  .disclosure span { color:#cfc39f; }
+
+  /* ---------- masthead nav ---------- */
+  .mastnav {
+    position:sticky; top:0; z-index:20;
+    background:var(--hunter-deep);
+    border-top:1px solid var(--brass);
+    border-bottom:1px solid var(--brass);
+  }
+  .mastnav .wrap { display:flex; align-items:center; justify-content:space-between; gap:14px; padding-top:12px; padding-bottom:12px; flex-wrap:wrap; }
+  .mastnav .brand { font-family:var(--display); font-weight:700; letter-spacing:3px; font-size:15px; color:var(--parchment); text-transform:uppercase; text-decoration:none; }
+  .mastnav .brand small { display:block; font-size:10px; letter-spacing:4px; color:var(--brass-light); font-weight:400; }
+  .mastnav nav ul { list-style:none; display:flex; gap:26px; flex-wrap:wrap; }
+  .mastnav nav a { font-family:var(--display); font-size:13px; letter-spacing:2px; text-transform:uppercase; color:#e6dcc2; text-decoration:none; padding:4px 0; border-bottom:2px solid transparent; }
+  .mastnav nav a:hover { color:var(--brass-light); border-bottom-color:var(--brass); }
+
+  /* ---------- hero ---------- */
+  .hero {
+    background:var(--hunter);
+    color:var(--parchment);
+    border-bottom:6px double var(--brass);
+    overflow:hidden;
+  }
+  .hero .wrap { display:grid; grid-template-columns:110px 1fr 110px; gap:24px; align-items:center; padding-top:58px; padding-bottom:60px; }
+  .hero-copy { text-align:center; }
+  .eyebrow { font-family:var(--display); font-size:13px; letter-spacing:5px; text-transform:uppercase; color:var(--brass-light); margin-bottom:18px; }
+  .hero h1 {
+    font-family:var(--display); font-weight:700;
+    font-size:clamp(44px, 8vw, 92px); line-height:1.02; letter-spacing:4px;
+    color:#f7efdc; text-shadow:0 2px 0 rgba(0,0,0,.45), 0 0 1px rgba(0,0,0,.6);
+    margin-bottom:10px; text-transform:uppercase;
+  }
+  .rule { display:flex; align-items:center; justify-content:center; gap:14px; margin:20px auto; max-width:420px; }
+  .rule::before, .rule::after { content:""; height:1px; background:var(--brass); flex:1; }
+  .rule i { width:9px; height:9px; background:var(--pole-red); transform:rotate(45deg); display:block; border:1px solid var(--brass-light); }
+  .hero .since { font-family:var(--display); font-size:20px; letter-spacing:2px; color:#efe3c4; margin-bottom:8px; }
+  .hero .walkins { font-size:16px; color:#d8cbab; margin-bottom:28px; font-style:italic; }
+  .cta-row { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+  .btn-call {
+    display:inline-block; font-family:var(--display); text-transform:uppercase; letter-spacing:3px; font-size:15px;
+    color:var(--hunter-ink); background:var(--brass-light); text-decoration:none;
+    padding:15px 38px; border:2px solid var(--brass-light);
+  }
+  .btn-call:hover { background:transparent; color:var(--brass-light); }
+  .btn-ghost {
+    display:inline-block; font-family:var(--display); text-transform:uppercase; letter-spacing:3px; font-size:15px;
+    color:var(--parchment); border:2px solid var(--brass); text-decoration:none; padding:15px 30px;
+  }
+  .btn-ghost:hover { border-color:var(--brass-light); color:var(--brass-light); }
+  .hero .phone-line { margin-top:20px; font-size:15px; letter-spacing:1px; color:#cbbf9e; }
+  .hero .phone-line a { color:var(--parchment); text-decoration:none; border-bottom:1px dotted var(--brass); }
+
+  /* barber pole graphic */
+  .pole { width:100%; max-width:104px; height:auto; display:block; margin:0 auto; filter:drop-shadow(0 10px 14px rgba(0,0,0,.45)); }
+  .pole-cap { margin-top:6px; text-align:center; font-size:10px; letter-spacing:3px; color:var(--brass-light); text-transform:uppercase; font-family:var(--display); }
+
+  /* ---------- sections ---------- */
+  section.block { padding:74px 0; }
+  .kicker { font-family:var(--display); font-size:13px; letter-spacing:5px; text-transform:uppercase; color:var(--brass); margin-bottom:12px; }
+  h2.section-title { font-family:var(--display); font-weight:700; font-size:clamp(30px,4.5vw,46px); letter-spacing:1px; margin-bottom:10px; color:var(--hunter-deep); }
+  .lede { max-width:640px; color:var(--muted); font-size:18px; margin-bottom:38px; }
+
+  /* ---------- services: vintage shop board ---------- */
+  .shopboard {
+    background:#fbf6e9;
+    border:3px solid var(--hunter-deep);
+    outline:1px solid var(--brass); outline-offset:6px;
+    padding:44px 48px;
+  }
+  .shopboard h3 { font-family:var(--display); text-align:center; letter-spacing:6px; text-transform:uppercase; font-size:17px; color:var(--hunter-deep); margin-bottom:6px; }
+  .shopboard .board-sub { text-align:center; font-style:italic; color:var(--muted); font-size:15px; margin-bottom:30px; }
+  .board-list { list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:0 48px; }
+  .board-list li { padding:16px 0; border-bottom:1px dotted #b9a97f; display:flex; align-items:baseline; gap:12px; }
+  .board-list li:last-child, .board-list li:nth-last-child(2) { border-bottom:none; }
+  .board-list .svc { font-family:var(--display); font-size:19px; letter-spacing:1px; color:var(--hunter-deep); white-space:nowrap; }
+  .board-list .dots { flex:1; border-bottom:2px dotted #c8b98d; transform:translateY(-5px); }
+  .board-list .desc { font-size:14px; color:var(--muted); font-style:italic; white-space:nowrap; }
+
+  /* ---------- shine spotlight ---------- */
+  .shine { background:var(--hunter-deep); color:var(--parchment); border-top:6px double var(--brass); border-bottom:6px double var(--brass); }
+  .shine h2.section-title { color:var(--parchment); }
+  .shine .lede { color:#cfc39f; }
+  .shine-grid { display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center; }
+  .shine-panel { border:2px solid var(--brass); padding:40px 36px; background:rgba(0,0,0,.22); }
+  .shine-panel h3 { font-family:var(--display); letter-spacing:4px; text-transform:uppercase; font-size:16px; color:var(--brass-light); margin-bottom:14px; }
+  .shine-panel p { color:#e3d8ba; margin-bottom:12px; }
+  .shine-panel p:last-child { margin-bottom:0; }
+  .shoe-svg { width:100%; max-width:340px; height:auto; display:block; margin:0 auto; }
+  .fig-cap { text-align:center; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#a89a76; margin-top:12px; font-family:var(--display); }
+
+  /* ---------- visit: ticket-board hours ---------- */
+  .visit { background:var(--parchment-deep); }
+  .ticketboard { background:var(--hunter); border:3px solid var(--hunter-deep); padding:40px 34px; margin-bottom:40px; }
+  .ticketboard h3 { font-family:var(--display); text-align:center; letter-spacing:8px; text-transform:uppercase; font-size:16px; color:var(--brass-light); margin-bottom:26px; }
+  .tickets { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .ticket {
+    position:relative; background:var(--parchment); text-align:center; padding:22px 10px 18px;
+  }
+  .ticket::before, .ticket::after {
+    content:""; position:absolute; top:50%; width:22px; height:22px; border-radius:50%;
+    background:var(--hunter); transform:translateY(-50%);
+  }
+  .ticket::before { left:-11px; } .ticket::after { right:-11px; }
+  .ticket .days { font-family:var(--display); font-size:14px; letter-spacing:3px; text-transform:uppercase; color:var(--hunter-deep); margin-bottom:6px; }
+  .ticket .hrs { font-family:var(--display); font-size:24px; font-weight:700; color:var(--hunter); letter-spacing:1px; }
+  .ticket .stub { margin-top:8px; padding-top:8px; border-top:1px dashed #b9a97f; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); font-family:var(--display); }
+  .visit-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; }
+  .visit-card h3 { font-family:var(--display); font-size:20px; letter-spacing:2px; color:var(--hunter-deep); margin-bottom:10px; text-transform:uppercase; }
+  .visit-card p { color:var(--ink); margin-bottom:10px; }
+  .visit-card .big-phone { font-family:var(--display); font-size:30px; font-weight:700; letter-spacing:1px; color:var(--hunter-deep); text-decoration:none; }
+  .visit-card .big-phone:hover { color:var(--brass); }
+  .rating-line { margin-top:26px; padding-top:20px; border-top:1px solid #c3b384; font-size:15px; color:var(--muted); font-style:italic; }
+  .mag-line { font-size:14px; color:var(--muted); margin-top:8px; }
+
+  /* ---------- footer ---------- */
+  footer { background:var(--hunter-ink); color:#b3a684; padding:38px 0; text-align:center; font-size:14px; }
+  footer .fname { font-family:var(--display); letter-spacing:4px; text-transform:uppercase; color:var(--parchment); font-size:15px; margin-bottom:8px; }
+  footer .fine { font-size:12px; letter-spacing:1px; margin-top:10px; color:#8a7f63; }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:860px) {
+    .hero .wrap { grid-template-columns:1fr; gap:8px; }
+    .pole-side { display:none; }
+    .pole-main { max-width:84px; }
+    .board-list { grid-template-columns:1fr; }
+    .board-list li:nth-last-child(2) { border-bottom:1px dotted #b9a97f; }
+    .board-list .desc { white-space:normal; }
+    .shine-grid, .visit-grid { grid-template-columns:1fr; }
+    .tickets { grid-template-columns:1fr 1fr; }
+    .shopboard { padding:32px 24px; }
+  }
+  @media (max-width:520px) {
+    .tickets { grid-template-columns:1fr; }
+    .mastnav .wrap { justify-content:center; text-align:center; }
+    .mastnav nav ul { justify-content:center; gap:18px; }
+    section.block { padding:54px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design preview concept by Freightfolio <span>&middot;</span> not the business&rsquo;s official site</div>
+
+<header class="mastnav">
+  <div class="wrap">
+    <a class="brand" href="#top">The Barber Pole<small>Savannah, Georgia</small></a>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#shine">Shine &amp; Repair</a></li>
+        <li><a href="#visit">Hours &amp; Visit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="pole-side">
+      <svg class="pole" viewBox="0 0 120 330" role="img" aria-label="Decorative barber pole graphic">
+        <defs>
+          <clipPath id="glassA"><rect x="32" y="52" width="56" height="216" rx="28"/></clipPath>
+          <pattern id="stripesA" width="36" height="36" patternUnits="userSpaceOnUse" patternTransform="rotate(22)">
+            <rect width="36" height="36" fill="#f5efdd"/>
+            <rect width="18" height="36" fill="#b23a3a"/>
+          </pattern>
+        </defs>
+        <circle cx="60" cy="20" r="10" fill="#b08d3e"/>
+        <rect x="26" y="28" width="68" height="26" rx="7" fill="#b08d3e"/>
+        <rect x="26" y="28" width="68" height="8" rx="4" fill="#d6ba72"/>
+        <g clip-path="url(#glassA)">
+          <g>
+            <animateTransform attributeName="transform" type="translate" from="0 0" to="0 36" dur="14s" repeatCount="indefinite"/>
+            <rect x="32" y="-36" width="56" height="300" fill="url(#stripesA)"/>
+          </g>
+          <rect x="40" y="52" width="14" height="216" fill="#ffffff" opacity="0.28"/>
+        </g>
+        <rect x="32" y="52" width="56" height="216" rx="28" fill="none" stroke="#0e1f15" stroke-width="3"/>
+        <rect x="26" y="266" width="68" height="26" rx="7" fill="#b08d3e"/>
+        <rect x="26" y="282" width="68" height="10" rx="5" fill="#8a6d2c"/>
+        <rect x="52" y="292" width="16" height="22" fill="#b08d3e"/>
+        <rect x="38" y="312" width="44" height="10" rx="4" fill="#8a6d2c"/>
+      </svg>
+      <div class="pole-cap">Est. 1998</div>
+    </div>
+
+    <div class="hero-copy">
+      <p class="eyebrow">110 Bull Street &middot; Downtown Savannah</p>
+      <h1>The Barber Pole</h1>
+      <div class="rule"><i></i></div>
+      <p class="since">Downtown Savannah since 1998</p>
+      <p class="walkins">Walk-ins welcome. First come, first served.</p>
+      <div class="cta-row">
+        <a class="btn-call" href="tel:+19122343831">Call the shop</a>
+        <a class="btn-ghost" href="#visit">Hours &amp; directions</a>
+      </div>
+      <p class="phone-line">Prefer to talk it over first? <a href="tel:+19122343831">(912) 234-3831</a></p>
+    </div>
+
+    <div class="pole-side">
+      <svg class="pole" viewBox="0 0 120 330" role="img" aria-label="Decorative barber pole graphic">
+        <defs>
+          <clipPath id="glassB"><rect x="32" y="52" width="56" height="216" rx="28"/></clipPath>
+          <pattern id="stripesB" width="36" height="36" patternUnits="userSpaceOnUse" patternTransform="rotate(22)">
+            <rect width="36" height="36" fill="#f5efdd"/>
+            <rect width="18" height="36" fill="#b23a3a"/>
+          </pattern>
+        </defs>
+        <circle cx="60" cy="20" r="10" fill="#b08d3e"/>
+        <rect x="26" y="28" width="68" height="26" rx="7" fill="#b08d3e"/>
+        <rect x="26" y="28" width="68" height="8" rx="4" fill="#d6ba72"/>
+        <g clip-path="url(#glassB)">
+          <g>
+            <animateTransform attributeName="transform" type="translate" from="0 0" to="0 36" dur="14s" repeatCount="indefinite"/>
+            <rect x="32" y="-36" width="56" height="300" fill="url(#stripesB)"/>
+          </g>
+          <rect x="40" y="52" width="14" height="216" fill="#ffffff" opacity="0.28"/>
+        </g>
+        <rect x="32" y="52" width="56" height="216" rx="28" fill="none" stroke="#0e1f15" stroke-width="3"/>
+        <rect x="26" y="266" width="68" height="26" rx="7" fill="#b08d3e"/>
+        <rect x="26" y="282" width="68" height="10" rx="5" fill="#8a6d2c"/>
+        <rect x="52" y="292" width="16" height="22" fill="#b08d3e"/>
+        <rect x="38" y="312" width="44" height="10" rx="4" fill="#8a6d2c"/>
+      </svg>
+      <div class="pole-cap">Est. 1998</div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <p class="kicker">At the chair</p>
+    <h2 class="section-title">Classic barbering, done the traditional way</h2>
+    <p class="lede">Haircuts, hot lather shaves, and beard work from a shop that has served Bull Street since 1998. Walk in, take a seat, and get the full treatment.</p>
+    <div class="shopboard">
+      <h3>The Shop Board</h3>
+      <p class="board-sub">Services offered daily, first come first served</p>
+      <ul class="board-list">
+        <li><span class="svc">Haircut</span><span class="dots"></span><span class="desc">A classic barber cut</span></li>
+        <li><span class="svc">Hot Lather Shave</span><span class="dots"></span><span class="desc">Hot lather, straight razor finish</span></li>
+        <li><span class="svc">Head Shave</span><span class="dots"></span><span class="desc">Clean and smooth</span></li>
+        <li><span class="svc">Beard Trim</span><span class="dots"></span><span class="desc">Shaped and cleaned up</span></li>
+        <li><span class="svc">Neck Clean</span><span class="dots"></span><span class="desc">A tidy up between cuts</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block shine" id="shine">
+  <div class="wrap">
+    <p class="kicker">The signature extra</p>
+    <h2 class="section-title">Shoe shine &amp; shoe repair</h2>
+    <p class="lede">The shop's signature extra: shoe shine and shoe repair are done right here, alongside the barbering.</p>
+    <div class="shine-grid">
+      <div>
+        <svg class="shoe-svg" viewBox="0 0 340 220" role="img" aria-label="Decorative illustration of a polished dress shoe">
+          <ellipse cx="170" cy="196" rx="140" ry="12" fill="#000000" opacity="0.35"/>
+          <path d="M40 170 C40 120 70 110 95 105 L120 60 C124 50 136 48 144 56 L210 120 C250 128 290 140 300 165 C306 180 296 190 280 190 L60 190 C48 190 40 182 40 170 Z" fill="#3a2c1c" stroke="#b08d3e" stroke-width="3"/>
+          <path d="M120 60 C124 50 136 48 144 56 L175 88 L150 100 L120 60 Z" fill="#4a3826" stroke="#b08d3e" stroke-width="2"/>
+          <path d="M95 105 C140 100 200 105 250 125" fill="none" stroke="#b08d3e" stroke-width="2" stroke-dasharray="8 6"/>
+          <circle cx="150" cy="118" r="5" fill="#d6ba72"/>
+          <circle cx="172" cy="122" r="5" fill="#d6ba72"/>
+          <circle cx="194" cy="126" r="5" fill="#d6ba72"/>
+          <path d="M60 150 C120 140 220 145 285 160" fill="none" stroke="#d6ba72" stroke-width="3" opacity="0.7"/>
+          <rect x="40" y="186" width="260" height="10" rx="4" fill="#1d150c"/>
+        </svg>
+        <p class="fig-cap">Decorative illustration</p>
+      </div>
+      <div class="shine-panel">
+        <h3>Shine</h3>
+        <p>Bring your shoes in with your haircut, or stop by for the shine alone. Walk-ins welcome.</p>
+        <h3 style="margin-top:22px;">Repair</h3>
+        <p>Worn soles and tired leather get a second life. Ask at the counter about shoe repair while you wait for the chair.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block visit" id="visit">
+  <div class="wrap">
+    <p class="kicker">Find the shop</p>
+    <h2 class="section-title">Hours &amp; visit</h2>
+    <p class="lede">110 Bull St in downtown Savannah, just off Broughton. Walk-ins welcome, first come first served, since 1998.</p>
+
+    <div class="ticketboard">
+      <h3>Shop Hours</h3>
+      <div class="tickets">
+        <div class="ticket">
+          <p class="days">Mon - Thu</p>
+          <p class="hrs">10 - 6</p>
+          <p class="stub">Walk-ins</p>
+        </div>
+        <div class="ticket">
+          <p class="days">Friday</p>
+          <p class="hrs">10 - 4</p>
+          <p class="stub">Walk-ins</p>
+        </div>
+        <div class="ticket">
+          <p class="days">Saturday</p>
+          <p class="hrs">10 - 4</p>
+          <p class="stub">Walk-ins</p>
+        </div>
+        <div class="ticket">
+          <p class="days">Sunday</p>
+          <p class="hrs">11 - 4</p>
+          <p class="stub">Walk-ins</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>The address</h3>
+        <p>110 Bull St<br>Savannah, GA 31401<br>Downtown, just off Broughton</p>
+        <p class="mag-line">Featured in Savannah Magazine.</p>
+      </div>
+      <div class="visit-card">
+        <h3>Call the shop</h3>
+        <a class="big-phone" href="tel:+19122343831">(912) 234-3831</a>
+        <p style="margin-top:10px;">Questions about services or hours? Call ahead and ask.</p>
+      </div>
+    </div>
+
+    <p class="rating-line">4.1 from 84 bestprosintown reviews</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="fname">The Barber Pole</p>
+    <p>110 Bull St, Savannah, GA 31401 &middot; (912) 234-3831</p>
+    <p class="fine">Design preview concept by Freightfolio. This is not the business&rsquo;s official website.</p>
+  </div>
+</footer>
+
+</body>
+</html>
