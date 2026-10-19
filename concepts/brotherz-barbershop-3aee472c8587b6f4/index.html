@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>BROTHERZ Barbershop | Tucson, AZ</title>
+<style>
+  :root{
+    --cream:#faf5ea;
+    --paper:#f3ead6;
+    --espresso:#2e2118;
+    --marigold:#e8a020;
+    --cactus:#4a7c59;
+    --cactus-deep:#356141;
+    --ink-soft:#5a4636;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background:var(--cream);
+    color:var(--espresso);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--espresso)}
+  .preview-bar{
+    background:var(--espresso);
+    color:var(--cream);
+    text-align:center;
+    font-size:.78rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    padding:.65rem 1rem;
+  }
+  .preview-bar strong{color:var(--marigold);font-weight:800}
+  header.site-head{
+    padding:1.5rem 1.25rem 2rem;
+    border-bottom:3px solid var(--espresso);
+    position:relative;
+  }
+  header.site-head .kicker{
+    font-size:.75rem;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--cactus);
+    font-weight:700;
+    margin-bottom:.4rem;
+  }
+  header.site-head h1{
+    font-size:clamp(2.6rem,10vw,4.5rem);
+    font-weight:900;
+    letter-spacing:-.03em;
+    line-height:1;
+  }
+  header.site-head h1 span{display:block;color:var(--cactus)}
+  header.site-head .tagline{
+    margin-top:.8rem;
+    font-size:1.05rem;
+    color:var(--ink-soft);
+    max-width:34rem;
+  }
+  nav.sections{
+    display:flex;
+    gap:1.25rem;
+    overflow-x:auto;
+    padding:.85rem 1.25rem;
+    border-bottom:1px solid var(--espresso);
+    background:var(--paper);
+    font-weight:700;
+    font-size:.9rem;
+  }
+  nav.sections a{
+    text-decoration:none;
+    white-space:nowrap;
+    border-bottom:3px solid transparent;
+    padding-bottom:.15rem;
+  }
+  nav.sections a:hover{border-bottom-color:var(--marigold)}
+  main{max-width:64rem;margin:0 auto}
+  section{padding:3rem 1.25rem}
+  section h2{
+    font-size:clamp(1.8rem,6vw,2.6rem);
+    font-weight:900;
+    letter-spacing:-.02em;
+    line-height:1.05;
+    margin-bottom:.6rem;
+  }
+  section h2 .accent{color:var(--marigold)}
+  .section-sub{
+    color:var(--ink-soft);
+    max-width:36rem;
+    margin-bottom:2rem;
+  }
+
+  /* HERO */
+  .hero{
+    background:var(--cream);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero .sun{
+    position:absolute;
+    top:-4rem;right:-4rem;
+    width:14rem;height:14rem;
+    background:var(--marigold);
+    border-radius:50%;
+    opacity:.28;
+  }
+  .hero-inner{position:relative}
+  .hero h2{
+    font-size:clamp(2.2rem,9vw,4rem);
+    max-width:14ch;
+  }
+  .hero p.lead{
+    margin-top:1rem;
+    font-size:1.1rem;
+    max-width:36rem;
+  }
+  .cta-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.9rem;
+    margin-top:1.75rem;
+  }
+  .btn{
+    display:inline-block;
+    text-decoration:none;
+    font-weight:800;
+    font-size:1rem;
+    padding:1rem 1.75rem;
+    border-radius:4px;
+    border:3px solid var(--espresso);
+  }
+  .btn-primary{background:var(--marigold);color:var(--espresso)}
+  .btn-primary:hover{background:#d18f18}
+  .btn-ghost{background:transparent;color:var(--espresso)}
+  .btn-ghost:hover{background:var(--paper)}
+  .kid-note{
+    margin-top:1.75rem;
+    display:inline-block;
+    background:var(--cactus);
+    color:#fff;
+    font-weight:700;
+    padding:.6rem 1.1rem;
+    border-radius:4px;
+    font-size:.95rem;
+  }
+
+  /* TICKET BOARD */
+  .tickets{display:flex;flex-direction:column;gap:1.4rem}
+  .ticket{
+    background:#fffdf7;
+    border:2px solid var(--espresso);
+    border-radius:10px;
+    display:flex;
+    align-items:stretch;
+    overflow:hidden;
+    position:relative;
+  }
+  .ticket .stub{
+    background:var(--espresso);
+    color:var(--marigold);
+    font-weight:900;
+    font-size:1.35rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:1.1rem .8rem;
+    border-right:2px dashed var(--marigold);
+    writing-mode:horizontal-tb;
+    min-width:4.2rem;
+    text-align:center;
+    letter-spacing:-.02em;
+  }
+  .ticket .body{padding:1.1rem 1.25rem;flex:1}
+  .ticket .body h3{
+    font-size:1.25rem;
+    font-weight:900;
+    letter-spacing:-.01em;
+    margin-bottom:.3rem;
+  }
+  .ticket .body p{color:var(--ink-soft);font-size:.98rem}
+  .ticket .body .call-line{font-weight:700;color:var(--espresso);margin-top:.4rem;font-size:.92rem}
+  .ticket:nth-child(even){transform:rotate(-.4deg)}
+  .ticket:nth-child(odd){transform:rotate(.4deg)}
+  @media(min-width:40rem){
+    .tickets{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+    .ticket:nth-child(3){transform:rotate(.4deg) translateY(1.2rem)}
+    .ticket:nth-child(4){transform:rotate(-.4deg) translateY(-.6rem)}
+  }
+
+  /* BARBERS */
+  #barbers{background:var(--paper);border-top:3px solid var(--espresso);border-bottom:3px solid var(--espresso)}
+  .roster{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1rem;
+  }
+  @media(min-width:44rem){.roster{grid-template-columns:repeat(3,1fr);gap:1.4rem}}
+  .barber-card{
+    background:var(--cream);
+    border:2px solid var(--espresso);
+    border-radius:8px;
+    padding:2.2rem 1rem;
+    text-align:center;
+    font-weight:900;
+    font-size:1.3rem;
+    letter-spacing:-.01em;
+  }
+  .barber-card .pin{
+    display:block;
+    width:2.6rem;height:2.6rem;
+    margin:0 auto .8rem;
+    border-radius:50%;
+    background:var(--cactus);
+    color:#fff;
+    font-size:1.3rem;
+    line-height:2.6rem;
+  }
+  .roster .barber-card:nth-child(2){background:var(--marigold)}
+  .roster .barber-card:nth-child(2) .pin{background:var(--espresso);color:var(--marigold)}
+  .roster .barber-card:nth-child(4){transform:translateY(.8rem)}
+  .roster .barber-card:nth-child(6){background:var(--espresso);color:var(--cream)}
+  .roster .barber-card:nth-child(6) .pin{background:var(--marigold);color:var(--espresso)}
+
+  /* HOURS + LOCATION */
+  .hours-grid{display:flex;flex-direction:column;gap:1.5rem}
+  @media(min-width:44rem){.hours-grid{flex-direction:row;gap:2.5rem}}
+  .hours-table{
+    border:2px solid var(--espresso);
+    border-radius:8px;
+    overflow:hidden;
+    flex:1;
+  }
+  .hours-row{
+    display:flex;
+    justify-content:space-between;
+    gap:1rem;
+    padding:.85rem 1.1rem;
+    background:#fffdf7;
+    border-bottom:1px solid #e3d6bc;
+  }
+  .hours-row:last-child{border-bottom:none}
+  .hours-row .day{font-weight:800}
+  .hours-row .time{color:var(--ink-soft);text-align:right}
+  .hours-row.closed{background:var(--paper)}
+  .hours-row.closed .day{color:var(--cactus-deep)}
+  .location{flex:1}
+  .location address{
+    font-style:normal;
+    font-size:1.1rem;
+    font-weight:700;
+    margin-bottom:1rem;
+  }
+  .amenities{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.6rem;
+    margin:1.1rem 0;
+    list-style:none;
+  }
+  .amenities li{
+    background:var(--cactus);
+    color:#fff;
+    font-size:.85rem;
+    font-weight:700;
+    padding:.4rem .9rem;
+    border-radius:999px;
+  }
+
+  /* CONTACT */
+  #contact{background:var(--espresso);color:var(--cream)}
+  #contact h2{color:var(--cream)}
+  #contact h2 .accent{color:var(--marigold)}
+  #contact .section-sub{color:#d9cdb4}
+  .big-phone{
+    display:block;
+    font-size:clamp(1.9rem,8vw,3rem);
+    font-weight:900;
+    letter-spacing:-.02em;
+    color:var(--marigold);
+    text-decoration:none;
+    margin:1.2rem 0 .4rem;
+  }
+  .rating-line{
+    margin-top:1rem;
+    font-size:1rem;
+    color:#d9cdb4;
+  }
+  .rating-line strong{color:var(--cream)}
+  .ig-link{
+    display:inline-block;
+    margin-top:1.4rem;
+    color:var(--cream);
+    font-weight:700;
+    text-decoration:none;
+    border-bottom:3px solid var(--marigold);
+    padding-bottom:.15rem;
+  }
+
+  footer{
+    background:#241a12;
+    color:#b9a98d;
+    text-align:center;
+    font-size:.82rem;
+    padding:2rem 1.25rem;
+    line-height:1.7;
+  }
+  footer .concept-tag{color:var(--marigold);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.72rem}
+</style>
+</head>
+<body>
+
+<div class="preview-bar"><strong>Design Preview</strong> &nbsp;|&nbsp; Concept website by Freightfolio, not the official site of the business</div>
+
+<header class="site-head">
+  <div class="kicker">Tucson, Arizona</div>
+  <h1>BROTHERZ<span>Barbershop</span></h1>
+  <p class="tagline">A neighborhood barbershop on the west side of Tucson. Haircuts for the whole family, six barbers behind the chairs.</p>
+</header>
+
+<nav class="sections" aria-label="Sections">
+  <a href="#services">Services</a>
+  <a href="#barbers">The Barbers</a>
+  <a href="#hours">Hours and Location</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section class="hero" id="home">
+    <div class="sun" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <h2>Sharp haircuts on <span class="accent">West Valencia.</span></h2>
+      <p class="lead">BROTHERZ Barbershop is a neighborhood shop in Tucson. Call to set up your visit for a haircut, an edge up, or the works. Kids are welcome here.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+15205783067">Call to book</a>
+        <a class="btn btn-ghost" href="#hours">See hours and location</a>
+      </div>
+      <span class="kid-note">Kids welcome &middot; Wi-Fi &middot; Parking</span>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services <span class="accent">board</span></h2>
+    <p class="section-sub">Everything is done in the shop. Call for pricing and to set up your visit.</p>
+    <div class="tickets">
+      <article class="ticket">
+        <div class="stub">01</div>
+        <div class="body">
+          <h3>Haircuts</h3>
+          <p>Classic cuts from the barbers at BROTHERZ.</p>
+          <p class="call-line">Call (520) 578-3067 for pricing</p>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="stub">02</div>
+        <div class="body">
+          <h3>Hair cut with beard</h3>
+          <p>A full cut paired with beard work in one visit.</p>
+          <p class="call-line">Call (520) 578-3067 for pricing</p>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="stub">03</div>
+        <div class="body">
+          <h3>Edge ups</h3>
+          <p>Clean lines to keep your cut looking fresh.</p>
+          <p class="call-line">Call (520) 578-3067 for pricing</p>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="stub">04</div>
+        <div class="body">
+          <h3>Kids' haircuts</h3>
+          <p>Haircuts for kids in a child-friendly shop.</p>
+          <p class="call-line">Call (520) 578-3067 for pricing</p>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="stub">05</div>
+        <div class="body">
+          <h3>Eyebrows</h3>
+          <p>Eyebrow shaping as part of your visit.</p>
+          <p class="call-line">Call (520) 578-3067 for pricing</p>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="stub">06</div>
+        <div class="body">
+          <h3>The works</h3>
+          <p>The full treatment. Ask the shop what is included.</p>
+          <p class="call-line">Call (520) 578-3067 for pricing</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="barbers">
+    <h2>The <span class="accent">barbers</span></h2>
+    <p class="section-sub">Six barbers work at BROTHERZ. Call the shop to reach them.</p>
+    <div class="roster">
+      <div class="barber-card"><span class="pin">&#9733;</span>Jay</div>
+      <div class="barber-card"><span class="pin">&#9733;</span>Hector</div>
+      <div class="barber-card"><span class="pin">&#9733;</span>Brandon</div>
+      <div class="barber-card"><span class="pin">&#9733;</span>Joby</div>
+      <div class="barber-card"><span class="pin">&#9733;</span>Jessie</div>
+      <div class="barber-card"><span class="pin">&#9733;</span>Jesus Ortiz</div>
+    </div>
+  </section>
+
+  <section id="hours">
+    <h2>Hours and <span class="accent">location</span></h2>
+    <p class="section-sub">Find BROTHERZ Barbershop on West Valencia in Tucson.</p>
+    <div class="hours-grid">
+      <div class="hours-table" role="table" aria-label="Opening hours">
+        <div class="hours-row" role="row"><span class="day">Tue-Wed</span><span class="time">10:00 AM - 6:00 PM</span></div>
+        <div class="hours-row" role="row"><span class="day">Thu-Fri</span><span class="time">10:00 AM - 7:00 PM</span></div>
+        <div class="hours-row" role="row"><span class="day">Saturday</span><span class="time">10:00 AM - 3:00 PM</span></div>
+        <div class="hours-row closed" role="row"><span class="day">Sun-Mon</span><span class="time">Closed</span></div>
+      </div>
+      <div class="location">
+        <address>3020 W Valencia Rd #270<br>Tucson, AZ 85746</address>
+        <ul class="amenities">
+          <li>Child-friendly</li>
+          <li>Wi-Fi</li>
+          <li>Parking</li>
+        </ul>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=BROTHERZ+Barbershop+3020+W+Valencia+Rd+Tucson+AZ" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in <span class="accent">touch</span></h2>
+    <p class="section-sub">The fastest way to reach the shop is by phone. Call to book your visit.</p>
+    <a class="big-phone" href="tel:+15205783067">(520) 578-3067</a>
+    <p class="rating-line"><strong>4.9 on Booksy</strong> (1365 reviews; 1313 five-star).</p>
+    <a class="ig-link" href="https://www.instagram.com/brotherz_barbershop/" target="_blank" rel="noopener">Follow on Instagram</a>
+  </section>
+</main>
+
+<footer>
+  <p class="concept-tag">Website Concept</p>
+  <p>This is an unsolicited website design concept created by Freightfolio.<br>It was not commissioned, affiliated with, or endorsed by BROTHERZ Barbershop.</p>
+</footer>
+
+</body>
+</html>

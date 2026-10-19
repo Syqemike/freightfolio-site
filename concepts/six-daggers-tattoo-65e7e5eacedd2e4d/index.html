@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Six Daggers Tattoo | Custom Tattoo Studio in Boise, ID</title>
+<style>
+  :root{
+    --ink:#101012;
+    --bone:#f2efe8;
+    --blood:#c8102e;
+    --dim:#a9a49a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink);
+    color:var(--bone);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .heavy{
+    font-family:Impact,"Arial Narrow","Helvetica Neue",Arial,sans-serif;
+    text-transform:uppercase;
+    letter-spacing:-0.02em;
+    line-height:0.92;
+  }
+  /* DESIGN PREVIEW disclosure bar */
+  .preview-bar{
+    background:var(--blood);
+    color:var(--bone);
+    text-align:center;
+    padding:10px 16px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+  }
+  /* Header */
+  header{
+    border-bottom:2px solid var(--bone);
+    padding:16px 20px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    gap:12px 28px;
+    justify-content:space-between;
+  }
+  .brand{font-size:22px;white-space:nowrap}
+  .brand .accent{color:var(--blood)}
+  nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+  nav a{
+    color:var(--dim);
+    text-decoration:none;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+  }
+  nav a:hover{color:var(--blood)}
+  /* Hero */
+  .hero{padding:56px 20px 40px;position:relative;overflow:hidden}
+  .hero-kicker{
+    font-size:12px;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;
+    color:var(--blood);margin-bottom:18px;
+  }
+  .hero h1{font-size:clamp(64px,17vw,190px)}
+  .hero h1 span{display:block}
+  .hero h1 .line2{color:transparent;-webkit-text-stroke:2px var(--bone)}
+  .hero-row{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-end;margin-top:28px}
+  .hero-sub{max-width:420px;font-size:17px;color:var(--dim)}
+  .hero-sub strong{color:var(--bone)}
+  .rating-tag{
+    display:inline-block;border:1px solid var(--dim);padding:10px 16px;
+    font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--bone);
+  }
+  .rating-tag b{color:var(--blood)}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:800;
+    letter-spacing:0.12em;text-transform:uppercase;font-size:14px;
+    padding:16px 28px;border:2px solid var(--bone);color:var(--bone);
+  }
+  .btn.solid{background:var(--blood);border-color:var(--blood)}
+  .btn:hover{background:var(--bone);color:var(--ink)}
+  .btn.solid:hover{background:var(--bone);border-color:var(--bone)}
+  /* Dagger SVG motif */
+  .dagger-deco{position:absolute;right:-24px;top:40px;opacity:0.16;transform:rotate(24deg);pointer-events:none}
+  /* Diagonal slash divider */
+  .slash{
+    height:34px;background:var(--blood);
+    transform:skewY(-3deg);margin:10px -12px;
+  }
+  .slash.thin{background:var(--bone);height:2px;transform:skewY(-2deg);opacity:0.25}
+  /* Sections */
+  section.block{padding:64px 20px}
+  .sec-num{
+    font-size:13px;font-weight:800;letter-spacing:0.3em;color:var(--blood);
+    text-transform:uppercase;margin-bottom:14px;
+  }
+  .block h2{font-size:clamp(38px,9vw,84px);margin-bottom:24px}
+  .block h2 span{color:var(--blood)}
+  .body-copy{max-width:640px;font-size:17px;color:var(--dim)}
+  .body-copy p{margin-bottom:16px}
+  .body-copy strong{color:var(--bone)}
+  /* Artist cards */
+  .artists{display:grid;gap:20px;margin-top:36px}
+  .artist{
+    border:2px solid var(--bone);padding:28px;position:relative;
+    background:var(--ink);
+  }
+  .artist:nth-child(2){border-color:var(--blood)}
+  .artist .tag{
+    position:absolute;top:-14px;left:20px;background:var(--blood);color:var(--bone);
+    font-size:11px;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;
+    padding:6px 12px;
+  }
+  .artist:nth-child(2) .tag{background:var(--bone);color:var(--ink)}
+  .artist h3{font-size:clamp(28px,6vw,44px);margin:8px 0 6px}
+  .artist .role{font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--dim)}
+  .artist p{margin-top:14px;color:var(--dim);font-size:16px;max-width:520px}
+  /* Custom work list */
+  .services{margin-top:36px;border-top:2px solid var(--bone)}
+  .service{
+    border-bottom:2px solid var(--bone);padding:28px 0;
+    display:grid;gap:8px;
+  }
+  .service h3{font-size:clamp(24px,5vw,40px)}
+  .service h3 .n{color:var(--blood);margin-right:12px}
+  .service p{color:var(--dim);max-width:560px;font-size:16px}
+  /* Hours and location */
+  .hours-grid{display:grid;gap:32px;margin-top:36px}
+  .hours{border:2px solid var(--blood);padding:28px}
+  .hours h3{font-size:22px;margin-bottom:18px;letter-spacing:0.06em;text-transform:uppercase}
+  .hours ul{list-style:none}
+  .hours li{
+    display:flex;justify-content:space-between;gap:16px;
+    padding:12px 0;border-bottom:1px solid #2a2a2e;font-size:16px;
+  }
+  .hours li:last-child{border-bottom:none}
+  .hours li .day{font-weight:700;letter-spacing:0.08em;text-transform:uppercase;font-size:14px}
+  .hours li .time{color:var(--dim);text-align:right}
+  .closed{color:var(--blood);font-weight:700}
+  .locale{border:2px solid var(--bone);padding:28px}
+  .locale h3{font-size:22px;margin-bottom:18px;letter-spacing:0.06em;text-transform:uppercase}
+  .locale p{color:var(--dim);font-size:17px;margin-bottom:14px}
+  .locale address{font-style:normal;font-size:20px;font-weight:700;color:var(--bone)}
+  .map-link{color:var(--blood);font-weight:700;text-decoration:underline;font-size:15px;letter-spacing:0.06em;text-transform:uppercase}
+  /* Contact */
+  .contact-block .ctas{margin-top:24px}
+  .contact-lines{margin-top:32px;display:grid;gap:14px}
+  .contact-lines a{color:var(--bone);font-size:20px;font-weight:700;text-decoration:none}
+  .contact-lines a:hover{color:var(--blood)}
+  .contact-lines .label{font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--dim);display:block;margin-bottom:2px}
+  /* Footer */
+  footer{border-top:2px solid var(--bone);padding:40px 20px 56px}
+  footer .fine{font-size:13px;color:var(--dim);max-width:680px}
+  footer .fine p{margin-bottom:12px}
+  footer .sign{margin-top:24px;font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:var(--blood);font-weight:800}
+  @media (min-width:760px){
+    header,section.block,footer{padding-left:48px;padding-right:48px}
+    .hero{padding-left:48px;padding-right:48px}
+    .artists{grid-template-columns:1fr 1fr}
+    .hours-grid{grid-template-columns:1fr 1fr}
+    .hero-row{gap:56px}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Design Preview, not a live business website</div>
+
+<header>
+  <div class="brand heavy">SIX <span class="accent">DAGGERS</span> TATTOO</div>
+  <nav>
+    <a href="#artists">Artists</a>
+    <a href="#custom-work">Custom Work</a>
+    <a href="#hours">Hours &amp; Location</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- 01 HERO -->
+  <div class="hero">
+    <svg class="dagger-deco" width="120" height="320" viewBox="0 0 120 320" fill="none" stroke="#f2efe8" stroke-width="3" aria-hidden="true">
+      <path d="M60 8 L78 150 L60 312 L42 150 Z"/>
+      <line x1="28" y1="150" x2="92" y2="150"/>
+      <line x1="60" y1="150" x2="60" y2="196"/>
+    </svg>
+    <p class="hero-kicker">01 / Custom tattoo studio / Boise, Idaho</p>
+    <h1 class="heavy">
+      <span>SIX</span>
+      <span class="line2">DAGGERS</span>
+    </h1>
+    <div class="hero-row">
+      <p class="hero-sub">
+        A custom tattoo shop in Boise. Every piece is <strong>drawn for one person and tattooed once</strong>.
+        Two experienced artists, a straightforward booking process, and aftercare products to keep your tattoo looking right.
+      </p>
+      <span class="rating-tag"><b>4.8</b> on Google from 318 reviews</span>
+    </div>
+    <div class="ctas">
+      <a class="btn solid" href="tel:+12088726375">Call to book</a>
+      <a class="btn" href="mailto:info@sixdaggerstattoo.com">Email the shop</a>
+    </div>
+  </div>
+
+  <div class="slash" aria-hidden="true"></div>
+
+  <!-- 02 ARTISTS -->
+  <section class="block" id="artists">
+    <p class="sec-num">02 / The Artists</p>
+    <h2 class="heavy">TWO ARTISTS.<br><span>ONE STANDARD.</span></h2>
+    <div class="artists">
+      <article class="artist">
+        <span class="tag">Owner</span>
+        <h3 class="heavy">Schuyler Hardy</h3>
+        <p class="role">Owner and artist</p>
+        <p>Schuyler owns the shop and works the chair. He has been tattooing since 2014 and builds custom designs with each client instead of pulling flash off the wall.</p>
+      </article>
+      <article class="artist">
+        <span class="tag">Resident Artist</span>
+        <h3 class="heavy">Zack Lewis</h3>
+        <p class="role">Artist</p>
+        <p>Zack has been tattooing since 2006. He brings long experience and a steady hand to custom pieces of every size, from first tattoos to full ongoing work.</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="slash thin" aria-hidden="true"></div>
+
+  <!-- 03 CUSTOM WORK -->
+  <section class="block" id="custom-work">
+    <p class="sec-num">03 / What We Do</p>
+    <h2 class="heavy">CUSTOM WORK<br><span>ONLY.</span></h2>
+    <div class="body-copy">
+      <p>This is a custom shop. You bring the idea, the reference, or the rough sketch. The artist draws something original for you and tattoos it once.</p>
+    </div>
+    <div class="services">
+      <div class="service">
+        <h3 class="heavy"><span class="n">A.</span>Custom Tattoos</h3>
+        <p>One of a kind pieces designed with you before the appointment. No price menu is published. Call or email to talk through your idea and get a quote.</p>
+      </div>
+      <div class="service">
+        <h3 class="heavy"><span class="n">B.</span>Aftercare Products</h3>
+        <p>The shop carries aftercare products so you can take care of a fresh tattoo the way your artist tells you to.</p>
+      </div>
+    </div>
+    <div class="ctas">
+      <a class="btn solid" href="tel:+12088726375">Call to book</a>
+      <a class="btn" href="mailto:info@sixdaggerstattoo.com">Email the shop</a>
+    </div>
+  </section>
+
+  <div class="slash" aria-hidden="true"></div>
+
+  <!-- 04 HOURS AND LOCATION -->
+  <section class="block" id="hours">
+    <p class="sec-num">04 / Hours and Location</p>
+    <h2 class="heavy">FIND THE<br><span>SHOP.</span></h2>
+    <div class="hours-grid">
+      <div class="hours">
+        <h3 class="heavy">Shop Hours</h3>
+        <ul>
+          <li><span class="day">Sunday</span><span class="time">11:00 AM - 7:00 PM</span></li>
+          <li><span class="day">Monday</span><span class="time closed">Closed</span></li>
+          <li><span class="day">Tuesday</span><span class="time closed">Closed</span></li>
+          <li><span class="day">Wednesday</span><span class="time">11:30 AM - 7:00 PM</span></li>
+          <li><span class="day">Thursday</span><span class="time">11:00 AM - 7:00 PM</span></li>
+          <li><span class="day">Friday</span><span class="time">11:00 AM - 7:00 PM</span></li>
+          <li><span class="day">Saturday</span><span class="time">11:00 AM - 7:00 PM</span></li>
+        </ul>
+      </div>
+      <div class="locale">
+        <h3 class="heavy">Location</h3>
+        <address>1400 S Broadway Ave<br>Boise, ID 83706</address>
+        <p>On South Broadway in Boise. Call ahead if you are coming by, since the shop is closed Monday and Tuesday.</p>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=1400+S+Broadway+Ave+Boise+ID+83706">Get directions</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="slash thin" aria-hidden="true"></div>
+
+  <!-- 05 CONTACT -->
+  <section class="block contact-block" id="contact">
+    <p class="sec-num">05 / Get In Touch</p>
+    <h2 class="heavy">START YOUR<br><span>PIECE.</span></h2>
+    <div class="body-copy">
+      <p>Bring your idea to the shop. Call to book a consultation or send an email with what you have in mind and the artist will take it from there.</p>
+    </div>
+    <div class="ctas">
+      <a class="btn solid" href="tel:+12088726375">Call to book</a>
+      <a class="btn" href="mailto:info@sixdaggerstattoo.com">Email the shop</a>
+    </div>
+    <div class="contact-lines">
+      <div><span class="label">Phone</span><a href="tel:+12088726375">(208) 872-6375</a></div>
+      <div><span class="label">Email</span><a href="mailto:info@sixdaggerstattoo.com">info@sixdaggerstattoo.com</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="fine">
+    <p>This is an unsolicited website design concept created by Freightfolio. It was not commissioned, affiliated with, or endorsed by Six Daggers Tattoo. All business details shown reflect publicly available information.</p>
+  </div>
+  <p class="sign">Freightfolio / Design Preview</p>
+</footer>
+
+</body>
+</html>
