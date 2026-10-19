@@ -22,7 +22,7 @@ Branch `agency-rebuild` holds the agency rebuild; `main` is untouched by this wo
 - `js/request.js` - lead form validation and POST to /api/lead
 - `functions/api/lead.js` - Cloudflare Pages Function: validates, emails via Resend, stores in KV
 - `img/showcase/` - concept screenshots (desktop + mobile)
-- `concepts/` - the 10 sales concept sites (do not modify)
+- `concepts/` - sales concept sites; scoped final corrections are authorized under AGENTS.md
 
 ## Backend setup
 
