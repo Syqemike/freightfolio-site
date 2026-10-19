@@ -1,5 +1,5 @@
 /* Freightfolio - portfolio showroom.
-   Concept data reflects the actual published concept pages. All six are
+   Concept data reflects the actual published concept pages. All sixteen are
    design previews only, never presented as client work. */
 (function () {
   "use strict";
@@ -105,6 +105,176 @@
         "Credential highlights (Master Groomer)",
         "Click-to-call booking line",
         "Weekly hours table"
+      ]
+    },
+    "social-suite": {
+      name: "The Social Suite",
+      category: "Hair Salon",
+      location: "Metairie, Louisiana",
+      url: "https://freightfolio.net/concepts/the-social-suite-d49077bbe945d258/",
+      desktop: "img/showcase/social-suite-thumb.jpg",
+      mobile: "img/showcase/social-suite-thumb.jpg",
+      blurb: "A salon built around what it does best: color. Stylist spotlight, real reviews, and booking front and center.",
+      features: [
+        "Color and balayage service menu",
+        "Stylist spotlight section",
+        "Google reviews display (4.9 stars)",
+        "Photo gallery of salon work",
+        "Click-to-call booking line",
+        "Hours and location block"
+      ]
+    },
+    "hotspot": {
+      name: "Hotspot Barber & Beauty",
+      category: "Barber & Beauty Salon",
+      location: "New Orleans, Louisiana",
+      url: "https://freightfolio.net/concepts/hotspot-barber-beauty-af2bb6590155198d/",
+      desktop: "img/showcase/hotspot-thumb.jpg",
+      mobile: "img/showcase/hotspot-thumb.jpg",
+      blurb: "Built for the after-work crowd: late hours and walk-ins are the first thing you see.",
+      features: [
+        "Late-night hours highlighted",
+        "Walk-ins welcome messaging",
+        "Haircut and beauty service menu",
+        "Google reviews display (4.6 stars)",
+        "Click-to-call phone number",
+        "Address with directions link"
+      ]
+    },
+    "twiztid-monkey": {
+      name: "Twiztid Monkey Ink",
+      category: "Tattoo & Piercing",
+      location: "Mobile, Alabama",
+      url: "https://freightfolio.net/concepts/twiztid-monkey-ink-400e7b898f83f2cb/",
+      desktop: "img/showcase/twiztid-monkey-thumb.jpg",
+      mobile: "img/showcase/twiztid-monkey-thumb.jpg",
+      blurb: "A shop page with real personality: the artist by name, the work up front, and a perfect review record.",
+      features: [
+        "Artist spotlight (Justin)",
+        "Tattoo and piercing service menu",
+        "Photo gallery of shop work",
+        "Google reviews display (5.0 stars)",
+        "Click-to-call phone number",
+        "Hours and location block"
+      ]
+    },
+    "lily-day-spa": {
+      name: "Lily Day Spa",
+      category: "Day Spa",
+      location: "Mobile, Alabama",
+      url: "https://freightfolio.net/concepts/lily-day-spa-ee7c2c7e9b6ca152/",
+      desktop: "img/showcase/lily-day-spa-thumb.jpg",
+      mobile: "img/showcase/lily-day-spa-thumb.jpg",
+      blurb: "A calm, unhurried design for a day spa: services, honest pricing, and booking without the phone tag.",
+      features: [
+        "Massage and facial service menu",
+        "Spa party packages",
+        "Google reviews display (5.0 stars)",
+        "Serene photo gallery",
+        "Click-to-call booking line",
+        "Open-daily hours table"
+      ]
+    },
+    "old-spanish-trail": {
+      name: "Old Spanish Trail Barber Shop",
+      category: "Barber Shop",
+      location: "Daphne, Alabama",
+      url: "https://freightfolio.net/concepts/old-spanish-trail-barber-f5fe0d54399ca3eb/",
+      desktop: "img/showcase/old-spanish-trail-thumb.jpg",
+      mobile: "img/showcase/old-spanish-trail-thumb.jpg",
+      blurb: "A heritage shop page: nearly four decades of classic cuts, with the family story told plainly.",
+      features: [
+        "Classic cut and shave menu",
+        "Shop history section (est. 1987)",
+        "Google reviews display (4.7 stars)",
+        "Barbershop photo gallery",
+        "Click-to-call phone number",
+        "Hours and location block"
+      ]
+    },
+    "coxs": {
+      name: "Cox's Barber Shop",
+      category: "Barber Shop",
+      location: "Ocean Springs, Mississippi",
+      url: "https://freightfolio.net/concepts/coxs-barber-shop-396c627653c23a10/",
+      desktop: "img/showcase/coxs-thumb.jpg",
+      mobile: "img/showcase/coxs-thumb.jpg",
+      blurb: "Old-school and proud of it: traditional cuts, fair prices, and the number-system walk-in explained.",
+      features: [
+        "Traditional cut service menu",
+        "Walk-in number system explained",
+        "Google reviews display (4.7 stars)",
+        "Shop photo gallery",
+        "Click-to-call phone number",
+        "Hours and location block"
+      ]
+    },
+    "studio-601": {
+      name: "Studio 601 Barbershop",
+      category: "Barber Shop",
+      location: "Biloxi, Mississippi",
+      url: "https://freightfolio.net/concepts/studio-601-barbershop-614626f4a004308a/",
+      desktop: "img/showcase/studio-601-thumb.jpg",
+      mobile: "img/showcase/studio-601-thumb.jpg",
+      blurb: "Modern and bookable: fades, designs, and beard work with online booking built in.",
+      features: [
+        "Fade, taper, and design menu",
+        "Squire online booking link",
+        "Google reviews display (5.0 stars)",
+        "Barbershop photo gallery",
+        "Click-to-call phone number",
+        "Hours and location block"
+      ]
+    },
+    "danes": {
+      name: "Dane's Barber Shop",
+      category: "Barber Shop",
+      location: "Biloxi, Mississippi",
+      url: "https://freightfolio.net/concepts/danes-barber-shop-a6e930da538d0c3c/",
+      desktop: "img/showcase/danes-thumb.jpg",
+      mobile: "img/showcase/danes-thumb.jpg",
+      blurb: "A proper old-school shop page: classic cuts, straight-razor shaves, and seven-day hours.",
+      features: [
+        "Classic cut and shave menu",
+        "Seven-day hours table",
+        "Google reviews display (4.8 stars)",
+        "Shop photo gallery",
+        "Click-to-call booking line",
+        "Pass Road location block"
+      ]
+    },
+    "guhdyvah": {
+      name: "Guhdyvah Twenty-6",
+      category: "Braid Studio",
+      location: "Metairie, Louisiana",
+      url: "https://freightfolio.net/concepts/guhdyvah-twenty-6-593aa0657753f61f/",
+      desktop: "img/showcase/guhdyvah-thumb.jpg",
+      mobile: "img/showcase/guhdyvah-thumb.jpg",
+      blurb: "A braid specialist page with the receipts: 237 five-star reviews and a style gallery.",
+      features: [
+        "Braid style menu (knotless, boho, silk press)",
+        "Style photo gallery",
+        "Setmore reviews display (5.0 stars)",
+        "Setmore online booking link",
+        "Click-to-call phone number",
+        "Salon suite location block"
+      ]
+    },
+    "jerome-johnson": {
+      name: "Jerome Johnson",
+      category: "Barber",
+      location: "Mobile, Alabama",
+      url: "https://freightfolio.net/concepts/jerome-johnson-06e8ec87ff6750cc/",
+      desktop: "img/showcase/jerome-johnson-thumb.jpg",
+      mobile: "img/showcase/jerome-johnson-thumb.jpg",
+      blurb: "A personal brand page for a single-chair barber: his work, his reviews, his booking link.",
+      features: [
+        "Haircut and beard service menu",
+        "Kids cuts section",
+        "Booksy reviews display (5.0 stars)",
+        "Booksy online booking link",
+        "First-person bio section",
+        "Airport Blvd location block"
       ]
     }
   };
