@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
-<meta name="description" content="Nina's Nails, a small walk-in nail shop at 113 N Eutaw St, Baltimore, MD 21201. Manicures, pedicures, and gel applications.">
+<meta name="description" content="Nina's Nails, a nail shop at 113 N Eutaw St, Baltimore, MD 21201. Manicures, pedicures, and gel applications.">
 <title>Nina's Nails | Baltimore, MD | Design Preview</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -240,6 +240,15 @@
 .photo-card img{display:block;width:100%;height:240px;object-fit:cover}
 .photo-card figcaption{padding:.9rem 1.1rem;font-size:.9rem;color:var(--ink-soft);text-align:left}
 .photo-card .src{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);margin-bottom:.35rem}
+.hero .hero-layout{position:relative;display:grid;align-items:center;gap:3rem;text-align:left}
+.hero .double-rule{margin-left:0}
+.hero .hero-sub{margin-left:0}
+.hero .eyebrow{color:#78603b}
+.hero-photo{margin:0;max-width:100%;background:#fffdf8;padding:12px;border:1px solid var(--line);transform:rotate(2deg);box-shadow:0 18px 44px -24px rgba(61,50,41,.3)}
+.hero-photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.hero-photo figcaption{padding:12px 4px 2px;color:var(--ink-soft);font-size:.85rem}
+@media(min-width:760px){.hero .hero-layout{grid-template-columns:1.1fr .9fr}.hero{padding:4.5rem 0}.hero h1{font-size:clamp(3rem,6vw,5.4rem)}}
+@media(max-width:759px){.hero-photo{max-width:420px;justify-self:center;transform:none}}
 </style>
 </head>
 <body>
@@ -288,15 +297,18 @@
         <ellipse cx="116" cy="82" rx="12" ry="6" transform="rotate(28 116 82)"/>
       </g>
     </svg>
-    <div class="wrap">
+    <div class="wrap hero-layout">
+      <div class="hero-copy">
       <p class="eyebrow">Baltimore, Maryland</p>
       <h1>Nina's <span class="italic">Nails</span></h1>
       <div class="double-rule" aria-hidden="true"><span></span></div>
-      <p class="hero-sub">A small walk-in nail shop in the heart of the city. Manicures and pedicures done with a personal touch, plus gel applications for a finish that lasts.</p>
+      <p class="hero-sub">Manicures, pedicures and gel applications at 113 N Eutaw Street in Baltimore. Call the shop about services and appointments.</p>
       <p class="rating-line"><span class="stars" aria-hidden="true">★★★★☆</span>&nbsp; Rated 4.5 from 11 Google reviews</p>
       <div class="hero-cta">
         <a class="btn" href="tel:+14106854494">Call to book</a>
       </div>
+      </div>
+      <figure class="hero-photo"><img src="img/photo-2.jpg" alt="Nina’s Nails storefront at 113 N Eutaw Street"><figcaption>Find us on Eutaw Street.</figcaption></figure>
     </div>
   </section>
 
@@ -304,8 +316,8 @@
     <div class="wrap">
       <div class="section-head">
         <p class="kicker">Our Services</p>
-        <h2>An Appointment Card, Not a Menu</h2>
-        <p>Walk in and choose what you need. Every service is done by hand in our small shop on Eutaw Street.</p>
+        <h2>Nail services</h2>
+        <p>Explore the shop's nail services. Call for current details and pricing.</p>
       </div>
       <div class="cards">
         <article class="appt-card">
@@ -321,8 +333,8 @@
           <p class="card-no">No. 01</p>
           <h3>Manicures</h3>
           <div class="card-rule" aria-hidden="true"></div>
-          <p>Careful nail shaping with cuticle care and a clean, polished finish. Simple, tidy, and done in person.</p>
-          <p class="svc-note">Walk-ins welcome</p>
+          <p>Manicure services. Ask the shop about available options.</p>
+          <p class="svc-note">Call for details</p>
         </article>
         <article class="appt-card">
           <svg class="card-sprig" width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
@@ -337,8 +349,8 @@
           <p class="card-no">No. 02</p>
           <h3>Pedicures</h3>
           <div class="card-rule" aria-hidden="true"></div>
-          <p>A service reviewers mention warmly. Soaking with shaping and polish, in a quiet corner of the shop.</p>
-          <p class="svc-note">Walk-ins welcome</p>
+          <p>Pedicure services. Call to discuss your visit.</p>
+          <p class="svc-note">Call for details</p>
         </article>
         <article class="appt-card">
           <svg class="card-sprig" width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
@@ -354,8 +366,8 @@
           <p class="card-no">No. 03</p>
           <h3>Gel Applications</h3>
           <div class="card-rule" aria-hidden="true"></div>
-          <p>Gel applied over your manicure or pedicure for color that holds up through the week and beyond.</p>
-          <p class="svc-note">Walk-ins welcome</p>
+          <p>Gel applications. Ask the shop about colors and current pricing.</p>
+          <p class="svc-note">Call for details</p>
         </article>
       </div>
       <figure class="art">
@@ -395,8 +407,8 @@
         <div class="about-copy">
           <p class="kicker serif" style="font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#b08d57;margin-bottom:.9rem">About the Shop</p>
           <h2>A Neighborhood Shop, Run by Two People</h2>
-          <p>Nina's Nails is a small walk-in shop run by Nina and her husband. It keeps things simple: come in, pick a service, and get seen the same day.</p>
-          <p>Reviewers single out the pedicures. Experiences with other services have been mixed, so we will keep it honest and say this: it is a modest shop with a personal touch, run by Nina and her husband.</p>
+          <p>Nina's Nails is run by Nina and her husband at 113 N Eutaw Street in Baltimore.</p>
+          <p>Call the shop to ask about nail services or plan a visit.</p>
           <p class="fine">Questions? Call (410) 685-4494.</p>
         </div>
         <figure class="art" style="margin:0">
@@ -440,8 +452,8 @@
 <figcaption><span class="src">Source: the salon's Yelp page</span>Nail station interior</figcaption>
 </figure>
 <figure class="photo-card">
-<img src="img/photo-2.jpg" alt="Salon interior" loading="lazy">
-<figcaption><span class="src">Source: the salon's Yelp page</span>Salon interior</figcaption>
+<img src="img/photo-2.jpg" alt="Nina’s Nails storefront with the Eutaw Street address and phone on the sign" loading="lazy">
+<figcaption><span class="src">Source: the salon's Yelp page</span>The storefront at 113 N Eutaw Street.</figcaption>
 </figure>
 <figure class="photo-card">
 <img src="img/photo-3.jpg" alt="Polish display" loading="lazy">
@@ -452,7 +464,7 @@
 <figcaption><span class="src">Source: the salon's Yelp page</span>TV area inside the salon</figcaption>
 </figure>
 <figure class="photo-card">
-<img src="img/photo-5.jpg" alt="Birthday nails, posted by a customer" loading="lazy">
+<img src="img/photo-5.jpg" alt="Customer portrait, posted on Instagram" loading="lazy">
 <figcaption><span class="src">Source: a customer photo on Instagram</span>Birthday nails, posted by a customer</figcaption>
 </figure>
 <figure class="photo-card">
@@ -468,7 +480,7 @@
       <div class="section-head">
         <p class="kicker">Visit Us</p>
         <h2>Come By or Call Ahead</h2>
-        <p>Walk-ins are welcome during shop hours. If you want to check on timing, call the shop directly.</p>
+        <p>Call the shop for current hours and appointment information.</p>
       </div>
       <div class="visit-grid">
         <table class="hours-table" aria-label="Shop hours">
