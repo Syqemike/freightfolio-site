@@ -1,0 +1,248 @@
+/* Purpose Grooming Lounge - cocktail-menu lounge concept.
+   Palette: near-black #131009, amber #d99a2b, cream #f5ecdd, walnut #5a4030.
+   Georgia italic display headlines, letterspaced small-cap sans labels.
+   Mobile-first. */
+
+:root {
+  --ink: #131009;
+  --ink-2: #1d1710;
+  --amber: #d99a2b;
+  --amber-dim: #a8741c;
+  --cream: #f5ecdd;
+  --cream-dim: #cfc2ab;
+  --walnut: #5a4030;
+  --rule: #3a2c1c;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+img, svg { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--amber); }
+
+.wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
+
+/* Disclosure bar */
+.disclosure {
+  background: var(--amber);
+  color: #131009;
+  text-align: center;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.55rem 1rem;
+  font-weight: 700;
+}
+
+/* Masthead */
+.masthead { text-align: center; padding: 2.5rem 1.25rem 1.5rem; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 0.75rem;
+}
+.masthead h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.15;
+  color: var(--cream);
+}
+.masthead .sub { color: var(--cream-dim); font-size: 0.95rem; margin-top: 0.75rem; }
+
+/* Nav */
+nav.main { border-bottom: 1px solid var(--rule); background: var(--ink-2); }
+nav.main ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav.main a {
+  display: block;
+  padding: 0.85rem 1.1rem;
+  color: var(--cream-dim);
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+nav.main a:hover, nav.main a[aria-current="page"] { color: var(--amber); }
+
+/* Hero */
+.hero { padding: 3rem 0 2.5rem; text-align: center; }
+.hero .display {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.3;
+  color: var(--cream);
+  max-width: 34rem;
+  margin: 0 auto 1.25rem;
+}
+.hero p.lede { color: var(--cream-dim); max-width: 32rem; margin: 0 auto 1.75rem; }
+
+.rating {
+  display: inline-block;
+  border: 1px solid var(--amber-dim);
+  color: var(--amber);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  margin-bottom: 1.75rem;
+}
+
+/* Buttons */
+.cta-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem; }
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.82rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.9rem 1.9rem;
+  border-radius: 2px;
+}
+.btn-solid { background: var(--amber); color: #131009; }
+.btn-solid:hover { background: #e8ab3f; }
+.btn-ghost { border: 1px solid var(--walnut); color: var(--cream); }
+.btn-ghost:hover { border-color: var(--amber); color: var(--amber); }
+.fine { font-size: 0.85rem; color: var(--cream-dim); }
+
+/* Sections */
+section.block { padding: 2.75rem 0; border-top: 1px solid var(--rule); }
+h2.section-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.9rem;
+  color: var(--cream);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.section-label {
+  text-align: center;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 1.75rem;
+}
+
+/* Menu list with dotted leaders */
+.menu { list-style: none; }
+.menu li { margin-bottom: 1.6rem; }
+.menu .row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+.menu .name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  color: var(--cream);
+  white-space: nowrap;
+}
+.menu .dots { flex: 1; border-bottom: 2px dotted var(--walnut); transform: translateY(-0.35rem); }
+.menu .price { font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; color: var(--amber); white-space: nowrap; }
+.menu .desc { color: var(--cream-dim); font-size: 0.92rem; margin-top: 0.25rem; max-width: 34rem; }
+
+/* Trainer panel */
+.trainer {
+  background: var(--ink-2);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--amber);
+  padding: 1.75rem;
+  margin-top: 1rem;
+}
+.trainer h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+}
+.trainer p { color: var(--cream-dim); margin-bottom: 0.75rem; }
+.trainer .price-line { color: var(--amber); font-family: Georgia, serif; font-size: 1.15rem; }
+
+/* Amenities */
+.amenities { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.amenity {
+  border: 1px solid var(--rule);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--cream-dim);
+}
+.amenity strong { display: block; color: var(--amber); font-size: 0.72rem; letter-spacing: 0.24em; text-transform: uppercase; margin-bottom: 0.35rem; }
+
+/* Hours table */
+.hours { list-style: none; max-width: 26rem; margin: 0 auto; }
+.hours li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--cream-dim);
+}
+.hours li span:first-child { color: var(--cream); letter-spacing: 0.1em; font-size: 0.85rem; text-transform: uppercase; }
+.note { text-align: center; color: var(--cream-dim); font-size: 0.9rem; margin-top: 1.25rem; font-style: italic; font-family: Georgia, serif; }
+
+/* Gallery */
+.shot { margin-bottom: 2.5rem; }
+.shot figure {
+  background: var(--ink-2);
+  border: 1px solid var(--rule);
+  padding: 0.75rem;
+}
+.shot figcaption { padding: 0.85rem 0.25rem 0.25rem; color: var(--cream-dim); font-size: 0.9rem; }
+.shot figcaption strong { color: var(--amber); font-weight: 400; font-family: Georgia, serif; font-style: italic; }
+
+/* Visit card */
+.visit-card {
+  background: var(--ink-2);
+  border: 1px solid var(--rule);
+  padding: 1.75rem;
+  text-align: center;
+}
+.visit-card address { font-style: normal; color: var(--cream); font-size: 1.1rem; margin-bottom: 0.75rem; }
+.visit-card a.tel { font-family: Georgia, serif; font-size: 1.25rem; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 2rem;
+  padding: 2rem 1.25rem 3rem;
+  text-align: center;
+  color: var(--cream-dim);
+  font-size: 0.82rem;
+}
+footer .fn { color: var(--amber); font-family: Georgia, serif; font-style: italic; font-size: 1.05rem; margin-bottom: 0.5rem; }
+footer nav { margin: 1rem 0; }
+footer nav a { margin: 0 0.6rem; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: var(--cream-dim); }
+footer nav a:hover { color: var(--amber); }
+
+@media (min-width: 720px) {
+  .masthead h1 { font-size: 3.4rem; }
+  .hero .display { font-size: 2.5rem; }
+  .amenities { grid-template-columns: repeat(4, 1fr); }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
+  .shot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .shot-grid .shot { margin-bottom: 0; }
+}
