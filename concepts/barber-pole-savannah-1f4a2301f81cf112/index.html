@@ -55,7 +55,7 @@
     border-bottom:6px double var(--brass);
     overflow:hidden;
   }
-  .hero .wrap { display:grid; grid-template-columns:110px 1fr 110px; gap:24px; align-items:center; padding-top:58px; padding-bottom:60px; }
+  .hero .wrap { padding-top:58px; padding-bottom:60px; }
   .hero-copy { text-align:center; }
   .eyebrow { font-family:var(--display); font-size:13px; letter-spacing:5px; text-transform:uppercase; color:var(--brass-light); margin-bottom:18px; }
   .hero h1 {
@@ -84,9 +84,6 @@
   .hero .phone-line { margin-top:20px; font-size:15px; letter-spacing:1px; color:#cbbf9e; }
   .hero .phone-line a { color:var(--parchment); text-decoration:none; border-bottom:1px dotted var(--brass); }
 
-  /* barber pole graphic */
-  .pole { width:100%; max-width:104px; height:auto; display:block; margin:0 auto; filter:drop-shadow(0 10px 14px rgba(0,0,0,.45)); }
-  .pole-cap { margin-top:6px; text-align:center; font-size:10px; letter-spacing:3px; color:var(--brass-light); text-transform:uppercase; font-family:var(--display); }
 
   /* ---------- sections ---------- */
   section.block { padding:74px 0; }
@@ -128,7 +125,6 @@
   .shine-panel h3 { font-family:var(--display); letter-spacing:4px; text-transform:uppercase; font-size:16px; color:var(--brass-light); margin-bottom:14px; }
   .shine-panel p { color:#e3d8ba; margin-bottom:12px; }
   .shine-panel p:last-child { margin-bottom:0; }
-  .shoe-svg { width:100%; max-width:340px; height:auto; display:block; margin:0 auto; }
   .fig-cap { text-align:center; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#a89a76; margin-top:12px; font-family:var(--display); }
 
   /* ---------- visit: ticket-board hours ---------- */
@@ -163,7 +159,6 @@
   /* ---------- responsive ---------- */
   @media (max-width:860px) {
     .hero .wrap { grid-template-columns:1fr; gap:8px; }
-    .pole-side { display:none; }
     .pole-main { max-width:84px; }
     .board-list { grid-template-columns:1fr; }
     .board-list li:nth-last-child(2) { border-bottom:1px dotted #b9a97f; }
@@ -202,48 +197,6 @@
 
 <section class="hero" id="top">
   <div class="wrap">
-    <div class="pole-side">
-      <svg class="pole" viewBox="0 0 120 330" role="img" aria-label="Decorative barber pole graphic">
-        <defs>
-          <clipPath id="glassA"><rect x="32" y="52" width="56" height="216" rx="28"/></clipPath>
-        </defs>
-        <circle cx="60" cy="20" r="10" fill="#b08d3e"/>
-        <rect x="26" y="28" width="68" height="26" rx="7" fill="#b08d3e"/>
-        <rect x="26" y="28" width="68" height="8" rx="4" fill="#d6ba72"/>
-        <g clip-path="url(#glassA)">
-          <rect x="32" y="52" width="56" height="216" fill="#f5efdd"/>
-          <g>
-            <animateTransform attributeName="transform" type="translate" from="0 0" to="0 36" dur="8s" repeatCount="indefinite"/>
-            <g transform="rotate(22 60 160)">
-            <rect x="51" y="-120" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="-84" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="-48" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="-12" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="24" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="60" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="96" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="132" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="168" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="204" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="240" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="276" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="312" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="348" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="384" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="420" width="18" height="560" fill="#b23a3a"/>
-            </g>
-          </g>
-          <rect x="40" y="52" width="14" height="216" fill="#ffffff" opacity="0.28"/>
-        </g>
-        <rect x="32" y="52" width="56" height="216" rx="28" fill="none" stroke="#0e1f15" stroke-width="3"/>
-        <rect x="26" y="266" width="68" height="26" rx="7" fill="#b08d3e"/>
-        <rect x="26" y="282" width="68" height="10" rx="5" fill="#8a6d2c"/>
-        <rect x="52" y="292" width="16" height="22" fill="#b08d3e"/>
-        <rect x="38" y="312" width="44" height="10" rx="4" fill="#8a6d2c"/>
-      </svg>
-      <div class="pole-cap">Bull Street</div>
-    </div>
-
     <div class="hero-copy">
       <p class="eyebrow">110 Bull Street &middot; Downtown Savannah</p>
       <h1>The Barber Pole</h1>
@@ -255,48 +208,6 @@
         <a class="btn-ghost" href="#visit">Hours &amp; directions</a>
       </div>
       <p class="phone-line">Prefer to talk it over first? <a href="tel:+19122343831">(912) 234-3831</a></p>
-    </div>
-
-    <div class="pole-side">
-      <svg class="pole" viewBox="0 0 120 330" role="img" aria-label="Decorative barber pole graphic">
-        <defs>
-          <clipPath id="glassB"><rect x="32" y="52" width="56" height="216" rx="28"/></clipPath>
-        </defs>
-        <circle cx="60" cy="20" r="10" fill="#b08d3e"/>
-        <rect x="26" y="28" width="68" height="26" rx="7" fill="#b08d3e"/>
-        <rect x="26" y="28" width="68" height="8" rx="4" fill="#d6ba72"/>
-        <g clip-path="url(#glassB)">
-          <rect x="32" y="52" width="56" height="216" fill="#f5efdd"/>
-          <g>
-            <animateTransform attributeName="transform" type="translate" from="0 0" to="0 36" dur="8s" repeatCount="indefinite"/>
-            <g transform="rotate(22 60 160)">
-            <rect x="51" y="-120" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="-84" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="-48" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="-12" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="24" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="60" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="96" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="132" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="168" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="204" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="240" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="276" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="312" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="348" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="384" width="18" height="560" fill="#b23a3a"/>
-            <rect x="51" y="420" width="18" height="560" fill="#b23a3a"/>
-            </g>
-          </g>
-          <rect x="40" y="52" width="14" height="216" fill="#ffffff" opacity="0.28"/>
-        </g>
-        <rect x="32" y="52" width="56" height="216" rx="28" fill="none" stroke="#0e1f15" stroke-width="3"/>
-        <rect x="26" y="266" width="68" height="26" rx="7" fill="#b08d3e"/>
-        <rect x="26" y="282" width="68" height="10" rx="5" fill="#8a6d2c"/>
-        <rect x="52" y="292" width="16" height="22" fill="#b08d3e"/>
-        <rect x="38" y="312" width="44" height="10" rx="4" fill="#8a6d2c"/>
-      </svg>
-      <div class="pole-cap">Bull Street</div>
     </div>
   </div>
 </section>
@@ -324,7 +235,7 @@
   <div class="wrap">
     <p class="kicker">The shop</p>
     <h2 class="section-title">On Bull Street</h2>
-    <p class="lede">The Barber Pole shop on Bull Street. The storefront and window photos show the real shop; craft photos are illustrative.</p>
+    <p class="lede">The Barber Pole shop on Bull Street. The storefront and window photos show the real shop. Other photos are stock photos.</p>
     <div class="pole-grid">
       <figure>
         <img src="img/1.jpg" alt="The Barber Pole storefront with striped awning and painted window signage" loading="lazy">
@@ -336,7 +247,7 @@
       </figure>
       <figure>
         <img src="img/3.jpg" alt="A classic red white and blue barber pole on a brick wall" loading="lazy">
-        <figcaption>Illustrative photo: the barber pole</figcaption>
+        <figcaption>Stock photo: a barber pole</figcaption>
       </figure>
       <figure>
         <img src="img/4.jpg" alt="Barbers at work seen through the window of The Barber Pole" loading="lazy">
@@ -344,11 +255,11 @@
       </figure>
       <figure>
         <img src="img/5.jpg" alt="Barber shaving a client's beard with a straight razor" loading="lazy">
-        <figcaption>Illustrative photo: straight razor shave</figcaption>
+        <figcaption>Stock photo: a straight razor shave</figcaption>
       </figure>
       <figure>
         <img src="img/6.jpg" alt="Classic red barber chairs in a vintage style barbershop" loading="lazy">
-        <figcaption>Illustrative photo: classic chairs</figcaption>
+        <figcaption>Stock photo: classic barber chairs</figcaption>
       </figure>
     </div>
   </div>
@@ -361,18 +272,7 @@
     <p class="lede">Shoe shine alongside classic barbering. Call the shop to ask about current availability.</p>
     <div class="shine-grid">
       <div>
-        <svg class="shoe-svg" viewBox="0 0 340 220" role="img" aria-label="Decorative illustration of a polished dress shoe">
-          <ellipse cx="170" cy="196" rx="140" ry="12" fill="#000000" opacity="0.35"/>
-          <path d="M40 170 C40 120 70 110 95 105 L120 60 C124 50 136 48 144 56 L210 120 C250 128 290 140 300 165 C306 180 296 190 280 190 L60 190 C48 190 40 182 40 170 Z" fill="#3a2c1c" stroke="#b08d3e" stroke-width="3"/>
-          <path d="M120 60 C124 50 136 48 144 56 L175 88 L150 100 L120 60 Z" fill="#4a3826" stroke="#b08d3e" stroke-width="2"/>
-          <path d="M95 105 C140 100 200 105 250 125" fill="none" stroke="#b08d3e" stroke-width="2" stroke-dasharray="8 6"/>
-          <circle cx="150" cy="118" r="5" fill="#d6ba72"/>
-          <circle cx="172" cy="122" r="5" fill="#d6ba72"/>
-          <circle cx="194" cy="126" r="5" fill="#d6ba72"/>
-          <path d="M60 150 C120 140 220 145 285 160" fill="none" stroke="#d6ba72" stroke-width="3" opacity="0.7"/>
-          <rect x="40" y="186" width="260" height="10" rx="4" fill="#1d150c"/>
-        </svg>
-        <p class="fig-cap">Decorative illustration</p>
+        
       </div>
       <div class="shine-panel">
         <h3>Shine</h3>

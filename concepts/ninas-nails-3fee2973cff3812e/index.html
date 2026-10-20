@@ -85,9 +85,6 @@
       radial-gradient(640px 440px at 88% 90%, rgba(242,216,210,.7), transparent 70%);
     pointer-events:none;
   }
-  .hero-sprig{position:absolute;opacity:.5;pointer-events:none}
-  .hero-sprig.left{left:-30px;top:40px;transform:rotate(18deg)}
-  .hero-sprig.right{right:-30px;bottom:20px;transform:rotate(198deg)}
   .eyebrow{
     font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);
     margin-bottom:1.2rem;position:relative;
@@ -164,7 +161,6 @@
   .appt-card .svc-note{
     font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);
   }
-  .appt-card .card-sprig{position:absolute;right:14px;top:14px;opacity:.55}
 
   /* illustration figure */
   figure.art{
@@ -174,6 +170,7 @@
     border:1px solid var(--line);background:#fffdf8;padding:1rem;
   }
   figure.art svg{display:block;width:100%;height:auto}
+  figure.art .frame img{display:block;width:100%;height:auto}
   figure.art figcaption{
     margin-top:.9rem;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;
     color:var(--ink-soft);
@@ -319,6 +316,10 @@
           <p class="svc-note">Call for details</p>
         </article>
       </div>
+      <figure class="art">
+        <div class="frame"><img src="img/photo-1.jpg" alt="Nail station interior at Nina's Nails"></div>
+        <figcaption>Photo: nail station interior, from the salon's Yelp page</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -332,6 +333,10 @@
           <p>Call the shop to ask about nail services or plan a visit.</p>
           <p class="fine">Questions? Call (410) 685-4494.</p>
         </div>
+        <figure class="art" style="margin:0">
+          <div class="frame"><img src="img/photo-2.jpg" alt="Nina's Nails storefront at 113 N Eutaw Street, Baltimore"></div>
+          <figcaption>Photo: the storefront at 113 N Eutaw Street, from the salon's Yelp page</figcaption>
+        </figure>
       </div>
     </div>
   </section>

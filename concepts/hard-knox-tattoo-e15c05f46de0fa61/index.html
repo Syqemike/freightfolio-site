@@ -64,8 +64,6 @@
   .btn-ghost{color:var(--bone);border-color:var(--steel)}
   .btn-ghost:hover{border-color:var(--bone)}
   .stamp{position:absolute;right:8px;top:0;width:132px;height:132px;transform:rotate(11deg);opacity:.95;pointer-events:none}
-  .hero-flash{position:absolute;right:-10px;bottom:-30px;width:min(340px,42vw);opacity:.16;pointer-events:none}
-  .art-note{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:var(--steel);text-transform:uppercase;margin-top:8px}
 
   /* strip divider */
   .strip{background:var(--rust);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0}
@@ -93,7 +91,6 @@
   .split li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:19px}
   .split li:last-child{border-bottom:none}
   .split li::before{content:"›";color:var(--rust);font-weight:700;margin-right:10px}
-  .mini-flash{width:84px;height:84px;margin-bottom:18px;opacity:.9}
 
   /* artists */
   .artists{background:var(--ink2)}
@@ -156,7 +153,6 @@
   }
   @media (max-width:520px){
     .roster{grid-template-columns:1fr}
-    .hero-flash{display:none}
     .wordmark .outline{-webkit-text-stroke:1.2px var(--bone)}
   }
 </style>
@@ -190,17 +186,6 @@
       <a class="btn btn-ghost" href="#services">Explore services</a>
     </div>
 
-
-
-    <svg class="hero-flash" viewBox="0 0 200 260" aria-hidden="true">
-      <g fill="none" stroke="#efe6d4" stroke-width="2.5">
-        <path d="M100 10 L112 70 L170 60 L122 96 L140 160 L100 118 L60 160 L78 96 L30 60 L88 70 Z"/>
-        <circle cx="100" cy="88" r="14"/>
-        <path d="M40 210 l18 -12 l18 12 l-8 -20 l16 -12 l-22 1 l-7 -20 l-7 20 l-22 -1 l16 12 z"/>
-        <path d="M150 210 h40 M150 222 h40 M150 234 h28" stroke-linecap="square"/>
-      </g>
-    </svg>
-    <p class="art-note">Flash-style graphics above are original illustrative artwork, not the shop's tattoo work.</p>
   </div>
 </header>
 
@@ -216,11 +201,6 @@
     <p class="lede">Hard Knox does custom tattooing and body piercing out of one South Knoxville shop. Walk-ins are welcome for consultations and piercings.</p>
     <div class="split">
       <div>
-        <svg class="mini-flash" viewBox="0 0 100 100" aria-hidden="true">
-          <g fill="none" stroke="#a63a22" stroke-width="3">
-            <path d="M50 8 L58 42 L92 34 L62 56 L72 92 L50 66 L28 92 L38 56 L8 34 L42 42 Z"/>
-          </g>
-        </svg>
         <p class="num">01</p>
         <h3>Custom Tattoos</h3>
         <p>Bring an idea or walk in and talk it through with an artist. Call the shop to discuss your idea.</p>
@@ -232,13 +212,6 @@
         <a class="btn btn-solid" href="tel:+18652475678">Call the shop</a>
       </div>
       <div>
-        <svg class="mini-flash" viewBox="0 0 100 100" aria-hidden="true">
-          <g fill="none" stroke="#efe6d4" stroke-width="3">
-            <circle cx="50" cy="50" r="26"/>
-            <circle cx="50" cy="50" r="8" fill="#a63a22" stroke="#a63a22"/>
-            <path d="M50 24 v-14 M74 38 l10 -10 M26 38 l-10 -10"/>
-          </g>
-        </svg>
         <p class="num">02</p>
         <h3>Body Piercing</h3>
         <p>Professional piercing done in a shop that takes cleanliness seriously. Walk-ins welcome for piercings.</p>
@@ -250,7 +223,6 @@
         <a class="btn btn-ghost" href="tel:+18652475678">Call about piercing</a>
       </div>
     </div>
-    <p class="art-note">Flash-style graphics above are original illustrative artwork.</p>
   </div>
 </section>
 
