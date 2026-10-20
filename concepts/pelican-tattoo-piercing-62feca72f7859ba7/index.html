@@ -120,6 +120,16 @@
     color:var(--red); margin-bottom:16px;
     border-bottom:1px solid var(--rule); padding-bottom:10px;
   }
+  .shop-photo {
+    margin:0 0 20px; border:2px solid var(--ink);
+    background:#f2e9d2; padding:8px;
+  }
+  .shop-photo img { display:block; width:100%; height:auto; }
+  .shop-photo figcaption {
+    font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12px; letter-spacing:1.5px; text-transform:uppercase;
+    color:var(--muted); padding:10px 4px 2px;
+  }
   .facts-rail dl { font-size:15.5px; }
   .facts-rail dt {
     font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
@@ -266,13 +276,13 @@
       <circle cx="66" cy="66" r="62" fill="none" stroke="#7c1f1a" stroke-width="3"/>
       <circle cx="66" cy="66" r="52" fill="none" stroke="#7c1f1a" stroke-width="1.5"/>
       <defs>
-        <path id="sealArc" d="M66,66 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/>
+        <path id="sealArc" d="M22,66 A44,44 0 0 1 110,66"/>
       </defs>
-      <text font-family="Georgia, 'Times New Roman', serif" font-size="12.5" letter-spacing="3.5" fill="#7c1f1a">
-        <textPath href="#sealArc" startOffset="2%">EST. 1970 &#183; HARTFORD, CONN. &#183;</textPath>
+      <text font-family="Georgia, 'Times New Roman', serif" font-size="12" letter-spacing="3" fill="#7c1f1a">
+        <textPath href="#sealArc" startOffset="50%" text-anchor="middle">EST. 1970 &#183; HARTFORD, CONN.</textPath>
       </text>
-      <text x="66" y="62" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="700" fill="#16211b">PELICAN</text>
-      <text x="66" y="86" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="4" fill="#7c1f1a">TATTOO &#183; PIERCING</text>
+      <text x="66" y="70" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="700" fill="#16211b">PELICAN</text>
+      <text x="66" y="90" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="4" fill="#7c1f1a">TATTOO &#183; PIERCING</text>
     </svg>
   </div>
 </header>
@@ -302,6 +312,10 @@
       </div>
     </div>
     <aside class="facts-rail" aria-label="Shop facts">
+      <figure class="shop-photo">
+        <img src="img/pelican-storefront.jpg" alt="Storefront of Pelican Tattoo and Body Piercing on Park Street, with a neon Pelican sign in the window" width="2000" height="1500">
+        <figcaption>The shop&rsquo;s Park Street storefront.</figcaption>
+      </figure>
       <h3>At a glance</h3>
       <dl>
         <dt>Address</dt>
@@ -376,7 +390,7 @@
       <p class="kicker">History</p>
       <h2>Connecticut&rsquo;s first licensed tattoo shop.</h2>
       <p class="body-copy">Pelican Tattoo &amp; Body Piercing has operated on Park Street in Hartford&rsquo;s Frog Hollow neighborhood since 1970. It is described as Connecticut&rsquo;s first licensed tattoo shop.</p>
-      <p class="body-copy">Connecticut Public (WNPR) profiled the shop as a Park Street institution, a fixture of the neighborhood for more than five decades.</p>
+      <p class="body-copy">Connecticut Public (WNPR) <a href="https://www.ctpublic.org/business/2016-02-17/hartfords-pelican-tattoo-a-park-street-institution" target="_blank" rel="noopener">profiled the shop</a> as a Park Street institution, a fixture of the neighborhood for more than five decades.</p>
     </div>
     <div>
       <ol class="timeline">
