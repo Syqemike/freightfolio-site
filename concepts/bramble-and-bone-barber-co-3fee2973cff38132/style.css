@@ -1,7 +1,7 @@
 /* Bramble and Bone Barber Co. - dark botanical gothic concept.
    Palette: bone #ece5d3, thorn black #141a14, oxblood #6e1f1f.
    Palatino Linotype old-style serif display + system sans body.
-   Editorial composition with original thorny vine dividers. Mobile-first. */
+   Editorial composition. Mobile-first. */
 
 :root {
   --bone: #ece5d3;
@@ -62,8 +62,6 @@ a { color: #d08a7a; }
 .masthead h1 em { font-style: italic; color: #d08a7a; }
 .masthead .colophon { color: var(--bone-dim); font-size: 0.9rem; margin-top: 0.9rem; font-style: italic; font-family: "Palatino Linotype", Palatino, Georgia, serif; }
 
-/* Vine divider */
-.vine { margin: 0 auto; max-width: 26rem; padding: 0.5rem 0; }
 
 /* Nav */
 nav.main { border-top: 1px solid #2c352c; border-bottom: 1px solid #2c352c; }
@@ -223,3 +221,7 @@ footer nav a:hover { color: #d08a7a; }
   .shot-grid .shot { margin-bottom: 0; }
   .split { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
 }
+
+.divider{border:0;border-top:1px solid #2c352c;margin:2rem auto;max-width:60rem}
+.split img{width:100%;height:auto;display:block}
+.shot img{width:100%;height:auto;display:block}

@@ -297,3 +297,5 @@ footer nav a:hover { color: var(--buoy-dark); }
   .shot-grid .shot { margin-bottom: 0; }
   .split { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
 }
+.shot img{width:100%;height:auto;display:block}
+.split img{width:100%;height:auto;display:block}
