@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>A Sharper Image | Hair Salon in Tulsa, OK</title>
+<style>
+  :root {
+    --paper: #f7f1e5;
+    --paper-deep: #efe6d2;
+    --ink: #251a10;
+    --copper: #a05e2a;
+    --copper-deep: #7e481e;
+    --hairline: #d9c9ab;
+    --muted: #6f5d45;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  .sans { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+
+  /* ---- disclosure bar ---- */
+  .preview-bar {
+    background: var(--ink);
+    color: var(--paper);
+    text-align: center;
+    padding: 10px 16px;
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+  .preview-bar span { color: var(--copper); font-weight: 700; }
+  .preview-sub {
+    background: var(--copper);
+    color: #fff;
+    text-align: center;
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    padding: 6px 16px;
+  }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 22px; }
+
+  /* ---- masthead ---- */
+  .masthead {
+    border-bottom: 3px double var(--ink);
+    padding: 26px 0 18px;
+    text-align: center;
+  }
+  .masthead .dateline {
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .masthead h1 {
+    font-size: clamp(2.6rem, 9vw, 4.6rem);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+  }
+  .masthead h1 em { font-style: italic; color: var(--copper-deep); }
+  .masthead .tagline {
+    margin-top: 8px;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+
+  nav.sections {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--hairline);
+    padding: 12px 16px;
+  }
+  nav.sections a {
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+  }
+  nav.sections a:hover { border-bottom-color: var(--copper); color: var(--copper-deep); }
+
+  /* ---- hero ---- */
+  .hero {
+    padding: 56px 0 40px;
+    border-bottom: 3px double var(--ink);
+  }
+  .hero .kicker {
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--copper-deep);
+    margin-bottom: 18px;
+  }
+  .hero h2 {
+    font-size: clamp(2rem, 7vw, 3.4rem);
+    font-weight: 400;
+    line-height: 1.12;
+    max-width: 20ch;
+  }
+  .hero h2 strong { font-weight: 700; }
+  .hero .deck {
+    margin-top: 20px;
+    max-width: 52ch;
+    font-size: 1.1rem;
+    color: #3d2f1f;
+  }
+  .hero .deck i { color: var(--copper-deep); }
+  .cta-row { margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    padding: 14px 28px;
+    min-height: 48px;
+    border-radius: 2px;
+  }
+  .btn-solid { background: var(--copper-deep); color: #fff; }
+  .btn-solid:hover { background: var(--ink); }
+  .btn-ghost { border: 1px solid var(--ink); color: var(--ink); }
+  .btn-ghost:hover { background: var(--ink); color: var(--paper); }
+
+  /* ---- section headings ---- */
+  section.block { padding: 52px 0; border-bottom: 1px solid var(--hairline); }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 10px;
+  }
+  .sec-num {
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    color: var(--copper-deep);
+    font-weight: 700;
+  }
+  .sec-head h3 {
+    font-size: clamp(1.5rem, 4.5vw, 2.1rem);
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  /* ---- services: editorial index ---- */
+  .service { padding: 26px 0; border-bottom: 1px solid var(--hairline); }
+  .service:last-child { border-bottom: none; }
+  .service .svc-label {
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--copper-deep);
+    margin-bottom: 8px;
+  }
+  .service h4 { font-size: 1.45rem; font-weight: 400; margin-bottom: 8px; }
+  .service p { color: #3d2f1f; max-width: 60ch; }
+
+  /* ---- color studio feature ---- */
+  .studio {
+    background: var(--ink);
+    color: var(--paper);
+    border-bottom: none;
+    padding: 56px 0;
+  }
+  .studio .sec-head { border-bottom-color: var(--paper); }
+  .studio .sec-num { color: var(--copper); }
+  .studio .sec-head h3 { color: var(--paper); }
+  .studio .feature-kicker {
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 16px;
+  }
+  .studio h4 {
+    font-size: clamp(1.7rem, 5.5vw, 2.6rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 22px;
+    max-width: 22ch;
+  }
+  .studio h4 em { color: var(--copper); }
+  .studio-cols p {
+    color: #d9cdb6;
+    margin-bottom: 18px;
+  }
+  .studio-cols p.lead::first-letter {
+    float: left;
+    font-size: 3.4em;
+    line-height: 0.85;
+    padding: 4px 10px 0 0;
+    color: var(--copper);
+  }
+  .studio .rule { border-top: 1px solid var(--copper); margin: 26px 0 0; padding-top: 18px; }
+  .studio .rule p {
+    font-style: italic;
+    color: var(--paper);
+    font-size: 1.15rem;
+    max-width: 46ch;
+  }
+
+  /* ---- visit ---- */
+  .visit-grid { display: grid; gap: 30px; }
+  .visit-block h4 {
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--copper-deep);
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--hairline);
+    padding-bottom: 8px;
+  }
+  .visit-block p, .visit-block address { font-style: normal; color: #3d2f1f; }
+  .visit-block a:not(.btn) { color: var(--copper-deep); }
+  table.hours { width: 100%; border-collapse: collapse; }
+  table.hours td {
+    padding: 10px 0;
+    border-bottom: 1px dotted var(--hairline);
+    color: #3d2f1f;
+    font-size: 0.98rem;
+  }
+  table.hours td:last-child { text-align: right; font-style: italic; }
+  .rating-note {
+    margin-top: 26px;
+    padding: 16px 18px;
+    border-left: 3px solid var(--copper);
+    background: var(--paper-deep);
+    font-style: italic;
+  }
+
+  footer {
+    background: var(--ink);
+    color: #b9a98c;
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 12.5px;
+    line-height: 1.7;
+    padding: 30px 0 40px;
+    text-align: center;
+  }
+  footer strong { color: var(--paper); letter-spacing: 0.15em; text-transform: uppercase; font-size: 11px; }
+  footer a { color: var(--copper); }
+
+  @media (min-width: 720px) {
+    .hero { padding: 72px 0 56px; }
+    .hero-inner { display: grid; grid-template-columns: 1fr 220px; gap: 40px; align-items: end; }
+    .hero .margin-note {
+      display: block;
+      border-left: 2px solid var(--copper);
+      padding-left: 16px;
+      font-style: italic;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .service { display: grid; grid-template-columns: 200px 1fr; gap: 28px; align-items: start; }
+    .studio-cols { columns: 2; column-gap: 48px; column-rule: 1px solid #4a3a26; }
+    .visit-grid { grid-template-columns: 1fr 1fr; gap: 48px; }
+  }
+  @media (max-width: 719px) {
+    .hero .margin-note { display: none; }
+    section.block { padding: 40px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar"><span>Design Preview</span> &nbsp;|&nbsp; Concept by Freightfolio</div>
+<div class="preview-sub">This is a website design concept. It is not the business&rsquo;s actual website.</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="dateline">Tulsa, Oklahoma</div>
+    <h1>A <em>Sharper</em> Image</h1>
+    <p class="tagline">hair designs</p>
+  </div>
+</header>
+
+<nav class="sections" aria-label="Sections">
+  <a href="#services">Services</a>
+  <a href="#studio">Color Studio</a>
+  <a href="#visit">Hours &amp; Visit</a>
+  <a href="tel:+19185874247">Call to book</a>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <div class="kicker">A hair salon on South Cincinnati Avenue</div>
+        <h2>Custom <strong>European color</strong>, cut and styled in Tulsa.</h2>
+        <p class="deck">A Sharper Image is a hair salon at 322 S Cincinnati Ave. We do men&rsquo;s and women&rsquo;s cuts, colors, perms, and keratin straighteners, including Brazilian blowout. Our specialty is custom European color, with creative placement for lightening and depth. Call us and tell us what you want your hair to do.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="tel:+19185874247">Call to book</a>
+          <a class="btn btn-ghost" href="#services">See services</a>
+        </div>
+      </div>
+      <aside class="margin-note">Walk through our services and our color specialty, then find our hours and location below.</aside>
+    </div>
+  </section>
+
+  <section class="block" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <h3>The Service Index</h3>
+      </div>
+
+      <div class="service">
+        <div class="svc-label">Cuts</div>
+        <div>
+          <h4>Men&rsquo;s and women&rsquo;s haircuts</h4>
+          <p>A good cut starts with a conversation. Tell us how you wear your hair day to day, what has worked, and what has not. We cut to match the person, not a chart.</p>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="svc-label">Color</div>
+        <div>
+          <h4>Full color services</h4>
+          <p>From subtle shifts to complete changes, we formulate color for your hair and your skin tone. Our specialty is custom European color with creative placement, built for lightening in some areas and depth in others.</p>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="svc-label">Smoothing</div>
+        <div>
+          <h4>Keratin straighteners and Brazilian blowout</h4>
+          <p>For hair that fights frizz or resists styling, we offer keratin straighteners and Brazilian blowout treatments. Ask us which one fits your hair and your routine.</p>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="svc-label">Texture</div>
+        <div>
+          <h4>Perms</h4>
+          <p>Perms for curl, wave, and body. We talk through the look you want before anything starts, so the result suits how you actually style your hair.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block studio" id="studio">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <h3>The Color Studio</h3>
+      </div>
+      <div class="feature-kicker">Our specialty</div>
+      <h4>Custom European color, <em>placed</em> for your hair.</h4>
+      <div class="studio-cols">
+        <p class="lead">Color is not one formula applied the same way to everyone. Our custom European color work starts with your natural base, then adds creative placement that brings lightening where it flatters and depth where it grounds.</p>
+        <p>The result is color with dimension instead of a flat, single tone. It grows out naturally and keeps looking intentional between visits. Bring a photo of what you like, or come with an open mind, and we will plan the placement together.</p>
+      </div>
+      <div class="rule">
+        <p>If you have been thinking about changing your color, call and ask what is possible for your hair.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num">03</span>
+        <h3>Hours &amp; Visit</h3>
+      </div>
+      <div class="visit-grid">
+        <div class="visit-block">
+          <h4>Find us</h4>
+          <address>
+            A Sharper Image<br>
+            322 S Cincinnati Ave<br>
+            Tulsa, OK<br>
+            <a href="tel:+19185874247">(918) 587-4247</a>
+          </address>
+          <p style="margin-top:12px;"><a href="https://www.google.com/maps/search/?api=1&amp;query=322+S+Cincinnati+Ave+Tulsa+OK" target="_blank" rel="noopener">Get directions</a></p>
+          <div class="cta-row" style="margin-top:20px;">
+            <a class="btn btn-solid" href="tel:+19185874247">Call to book</a>
+          </div>
+          <div class="rating-note">Google 5.0 (12 reviews)</div>
+        </div>
+        <div class="visit-block">
+          <h4>Hours</h4>
+          <table class="hours">
+            <tr><td>Monday</td><td>10:00 AM - 6:00 PM</td></tr>
+            <tr><td>Tuesday</td><td>10:00 AM - 6:00 PM</td></tr>
+            <tr><td>Wednesday</td><td>10:00 AM - 6:00 PM</td></tr>
+            <tr><td>Thursday</td><td>10:00 AM - 6:00 PM</td></tr>
+            <tr><td>Friday</td><td>10:00 AM - 6:00 PM</td></tr>
+            <tr><td>Saturday</td><td>10:00 AM - 12:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>A Sharper Image, design concept</strong>
+    <p style="margin-top:10px;">This page is an unsolicited website design concept created by Freightfolio. It was not commissioned, approved, or endorsed by A Sharper Image, and it is not the business&rsquo;s website. Business details shown come from the salon&rsquo;s public listings.</p>
+    <p style="margin-top:8px;">Concept prepared by <a href="https://freightfolio.net">Freightfolio</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

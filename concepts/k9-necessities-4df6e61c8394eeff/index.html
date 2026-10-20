@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>K9 Necessities | Dog Grooming in Urbandale, IA</title>
+<style>
+  :root{
+    --ink:#1b150e;
+    --ink-soft:#2b2417;
+    --parchment:#ece1c6;
+    --khaki:#c9ba93;
+    --orange:#e15a12;
+    --paper-dark:#241d12;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    background:var(--parchment);
+    color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    background-image:
+      repeating-linear-gradient(0deg, transparent 0 31px, rgba(27,21,14,.06) 31px 32px);
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:0 18px;}
+
+  /* Disclosure bar */
+  .disclosure{
+    background:var(--orange);
+    color:#fff;
+    text-align:center;
+    padding:10px 14px;
+    font-family:"Arial Black","Helvetica Neue",Arial,sans-serif;
+    font-size:12px;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+  }
+
+  /* Masthead */
+  header.masthead{
+    background:var(--ink);
+    color:var(--parchment);
+    border-bottom:6px solid var(--orange);
+    padding:34px 0 30px;
+  }
+  .masthead h1{
+    font-family:"Arial Black","Arial Bold",Arial,sans-serif;
+    font-size:clamp(2.4rem,9vw,4.6rem);
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    line-height:1.02;
+    word-break:break-word;
+  }
+  .masthead .tag{
+    margin-top:12px;
+    display:inline-block;
+    border:2px solid var(--orange);
+    color:var(--orange);
+    font-family:"Courier New",Courier,monospace;
+    font-weight:bold;
+    font-size:14px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    padding:8px 14px;
+    transform:rotate(-1.5deg);
+  }
+  .masthead p.sub{
+    margin-top:16px;
+    font-size:1.05rem;
+    max-width:34rem;
+    color:#d8cbae;
+  }
+
+  /* Nav */
+  nav.sections{
+    background:var(--paper-dark);
+    border-bottom:2px dashed rgba(236,225,198,.35);
+  }
+  nav.sections ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  nav.sections a{
+    display:block;
+    color:var(--parchment);
+    text-decoration:none;
+    font-family:"Courier New",Courier,monospace;
+    font-weight:bold;
+    font-size:13px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    padding:14px 18px;
+  }
+  nav.sections a:hover,nav.sections a:focus{background:var(--orange);color:#fff;}
+
+  /* Sections */
+  section{padding:44px 0;}
+  section.dark{background:var(--ink);color:var(--parchment);}
+  section.dark h2{color:var(--parchment);}
+  h2{
+    font-family:"Arial Black","Arial Bold",Arial,sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.14em;
+    font-size:clamp(1.3rem,4.5vw,1.9rem);
+    margin-bottom:6px;
+  }
+  .rule{
+    height:4px;
+    background:repeating-linear-gradient(90deg,var(--orange) 0 18px,transparent 18px 28px);
+    margin:10px 0 26px;
+    max-width:220px;
+  }
+
+  /* Ticket / ledger cards */
+  .ticket{
+    background:#f4ecd8;
+    border:2px solid var(--ink);
+    border-top:2px dashed var(--ink);
+    padding:24px 22px;
+    box-shadow:6px 6px 0 var(--ink);
+    position:relative;
+  }
+  .ticket .stub-label{
+    font-family:"Courier New",Courier,monospace;
+    font-weight:bold;
+    font-size:12px;
+    letter-spacing:.3em;
+    text-transform:uppercase;
+    color:var(--orange);
+    margin-bottom:12px;
+  }
+  .ledger{width:100%;border-collapse:collapse;font-family:"Courier New",Courier,monospace;}
+  .ledger tr{border-bottom:1px dashed rgba(27,21,14,.4);}
+  .ledger tr:last-child{border-bottom:none;}
+  .ledger td{padding:12px 4px;font-size:15px;vertical-align:top;}
+  .ledger td.day{text-transform:uppercase;letter-spacing:.14em;font-weight:bold;}
+  .ledger td.time{text-align:right;}
+  .closed-stamp{
+    display:inline-block;
+    border:2px solid var(--orange);
+    color:var(--orange);
+    font-weight:bold;
+    letter-spacing:.2em;
+    font-size:12px;
+    padding:3px 10px;
+    transform:rotate(-2deg);
+    text-transform:uppercase;
+  }
+
+  /* Hero rating stamp */
+  .rating-stamp{
+    margin-top:22px;
+    display:inline-block;
+    background:var(--ink);
+    color:var(--parchment);
+    font-family:"Courier New",Courier,monospace;
+    font-size:14px;
+    letter-spacing:.08em;
+    padding:10px 16px;
+    border-left:8px solid var(--orange);
+  }
+  .rating-stamp strong{color:var(--orange);}
+
+  /* CTA buttons */
+  .cta-row{display:flex;flex-direction:column;gap:14px;margin-top:26px;}
+  .cta{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    font-family:"Arial Black","Arial Bold",Arial,sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-size:1rem;
+    padding:18px 20px;
+    border:3px solid var(--ink);
+    background:var(--orange);
+    color:#fff;
+    box-shadow:5px 5px 0 var(--ink);
+    min-height:56px;
+  }
+  .cta.secondary{background:var(--parchment);color:var(--ink);}
+  .cta:active{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink);}
+  .cta .num{display:block;font-family:"Courier New",Courier,monospace;font-size:1.15rem;letter-spacing:.06em;margin-top:4px;}
+
+  /* Barcode divider */
+  .barcode{
+    height:44px;
+    background:repeating-linear-gradient(90deg,var(--ink) 0 3px,transparent 3px 6px,var(--ink) 6px 7px,transparent 7px 12px,var(--ink) 12px 16px,transparent 16px 19px);
+    opacity:.85;
+    margin:8px 0 30px;
+  }
+
+  .two-col{display:grid;gap:26px;}
+  .field-note{
+    border-left:5px solid var(--orange);
+    padding:6px 0 6px 18px;
+    font-size:1.02rem;
+  }
+  .field-note p+p{margin-top:14px;}
+  .khaki-box{
+    background:var(--khaki);
+    border:2px solid var(--ink);
+    padding:20px;
+  }
+  .khaki-box h3{
+    font-family:"Arial Black","Arial Bold",Arial,sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:1rem;
+    margin-bottom:10px;
+  }
+  address{font-style:normal;font-size:1.05rem;line-height:1.7;}
+  .dir-link{
+    display:inline-block;
+    margin-top:12px;
+    font-family:"Courier New",Courier,monospace;
+    font-weight:bold;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    font-size:13px;
+    color:var(--ink);
+    text-decoration:underline;
+    text-decoration-color:var(--orange);
+    text-decoration-thickness:3px;
+    text-underline-offset:4px;
+  }
+
+  footer{
+    background:var(--ink);
+    color:#b7a87f;
+    padding:30px 0 40px;
+    font-size:13px;
+    line-height:1.7;
+  }
+  footer .fine{border-top:1px dashed rgba(183,168,127,.4);padding-top:18px;}
+
+  @media (min-width:720px){
+    section{padding:60px 0;}
+    .cta-row{flex-direction:row;}
+    .cta{flex:1;}
+    .two-col{grid-template-columns:1.2fr 1fr;}
+    .ticket{padding:30px 32px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design Preview</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <h1>K9 Necessities</h1>
+    <span class="tag">Dog Grooming &middot; Urbandale, IA</span>
+    <p class="sub">A small grooming shop with an experienced stylist. Straightforward work for dogs that need to look and feel their best.</p>
+    <div class="rating-stamp">Google 5.0 (28 reviews)</div>
+  </div>
+</header>
+
+<nav class="sections" aria-label="Section navigation">
+  <div class="wrap">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#hours">Hours</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section id="services">
+    <div class="wrap">
+      <h2>What We Do</h2>
+      <div class="rule"></div>
+      <div class="two-col">
+        <div class="field-note">
+          <p>K9 Necessities provides professional full-service grooming for dogs. The shop is a small operation, and the work is done by a caring stylist with many years of experience in grooming and kennel management.</p>
+          <p>Owners in Urbandale and the surrounding area bring their dogs in for dependable grooming from someone who has done the job a long time.</p>
+        </div>
+        <div class="ticket">
+          <div class="stub-label">Service Record</div>
+          <table class="ledger">
+            <tr><td class="day">Full-Service Grooming</td><td class="time">Dogs</td></tr>
+            <tr><td class="day">Stylist</td><td class="time">Experienced</td></tr>
+            <tr><td class="day">Shop</td><td class="time">Small Operation</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="dark">
+    <div class="wrap">
+      <h2>Schedule an Appointment</h2>
+      <div class="rule"></div>
+      <p style="max-width:36rem;color:#d8cbae;">Call or text to set up a grooming appointment. Pick whichever is easier for you.</p>
+      <div class="cta-row">
+        <a class="cta" href="tel:+15152766557">Call to schedule<span class="num">(515) 276-6557</span></a>
+        <a class="cta secondary" href="sms:+15158098182">Text to schedule<span class="num">(515) 809-8182</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours">
+    <div class="wrap">
+      <h2>Shop Hours</h2>
+      <div class="rule"></div>
+      <div class="ticket" style="max-width:560px;">
+        <div class="stub-label">Hours of Operation</div>
+        <table class="ledger">
+          <tr><td class="day">Monday</td><td class="time"><span class="closed-stamp">Closed</span></td></tr>
+          <tr><td class="day">Tuesday</td><td class="time">9:00 AM - 3:00 PM</td></tr>
+          <tr><td class="day">Wednesday</td><td class="time">9:00 AM - 3:00 PM</td></tr>
+          <tr><td class="day">Thursday</td><td class="time">9:00 AM - 3:00 PM</td></tr>
+          <tr><td class="day">Friday</td><td class="time">9:00 AM - 3:00 PM</td></tr>
+          <tr><td class="day">Saturday</td><td class="time">9:00 AM - 3:00 PM</td></tr>
+          <tr><td class="day">Sunday</td><td class="time"><span class="closed-stamp">Closed</span></td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="dark">
+    <div class="wrap">
+      <div class="barcode" aria-hidden="true"></div>
+      <h2>Find the Shop</h2>
+      <div class="rule"></div>
+      <address>
+        7611 Douglas Ave<br>
+        Urbandale, IA
+      </address>
+      <a class="dir-link" style="color:var(--parchment);" href="https://www.google.com/maps/search/?api=1&amp;query=7611+Douglas+Ave+Urbandale+IA">Get directions</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fine">This page is an unsolicited website design concept created by Freightfolio. It was not commissioned or endorsed by K9 Necessities. The preview is meant to show what a professional website could look like for this business.</p>
+  </div>
+</footer>
+
+</body>
+</html>

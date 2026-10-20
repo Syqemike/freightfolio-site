@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Cutz By Rick | One Chair. One Barber. Virginia Beach.</title>
+<meta name="description" content="Cutz By Rick: single-chair barbershop in Virginia Beach, VA. Beard trims, hot towel shaves, military fades, bald head shaves. Book online or call (757) 339-0129.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+:root{
+  --graphite:#16181d;
+  --graphite-deep:#0e0f13;
+  --warm-white:#faf7f1;
+  --paper:#f4f0e8;
+  --cobalt:#1e46ff;
+  --cobalt-deep:#122ea8;
+  --ink:#23252b;
+  --muted:#6b6f78;
+  --line:#e3ddd2;
+  --line-dark:#2a2d35;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Archivo',Helvetica,Arial,sans-serif;
+  background:var(--warm-white);
+  color:var(--ink);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.mono{font-family:'IBM Plex Mono',monospace}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+a{text-decoration:none}
+
+/* Disclosure ribbon */
+.disclosure{
+  background:var(--cobalt);
+  color:#fff;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:.06em;
+  text-align:center;
+  padding:9px 14px;
+}
+.disclosure strong{font-weight:600;text-transform:uppercase;letter-spacing:.12em}
+
+/* Header */
+.site-head{
+  background:var(--graphite-deep);
+  color:var(--warm-white);
+  border-bottom:3px solid var(--cobalt);
+  position:sticky;top:0;z-index:50;
+}
+.head-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:14px;padding:14px 0;flex-wrap:wrap;
+}
+.brand{
+  font-family:'Archivo',sans-serif;
+  font-weight:800;font-stretch:75%;
+  font-size:clamp(20px,3.4vw,28px);
+  letter-spacing:.02em;color:#fff;text-transform:uppercase;
+  line-height:1;
+}
+.brand .dot{color:var(--cobalt);font-weight:900}
+.tagline{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:#a9adba;margin-top:5px;
+}
+nav.site-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav.site-nav a{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+  color:#c9cdd8;padding:10px 12px;border-radius:4px;
+  min-height:44px;display:inline-flex;align-items:center;
+}
+nav.site-nav a:hover,nav.site-nav a:focus{background:#23262e;color:#fff}
+.head-book{
+  font-family:'IBM Plex Mono',monospace;font-weight:600;
+  font-size:13px;letter-spacing:.06em;text-transform:uppercase;
+  background:var(--cobalt);color:#fff;border:none;border-radius:4px;
+  padding:14px 22px;min-height:48px;display:inline-flex;align-items:center;
+  cursor:pointer;
+}
+.head-book:hover{background:var(--cobalt-deep)}
+
+/* Hero */
+.hero{
+  background:var(--graphite);
+  color:var(--warm-white);
+  position:relative;overflow:hidden;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:34px;
+  align-items:center;padding:64px 0 70px;
+}
+.hero-eyebrow{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;
+  letter-spacing:.18em;text-transform:uppercase;color:#9aa1b3;
+  margin-bottom:18px;
+}
+.hero h1{
+  font-weight:900;font-stretch:70%;
+  font-size:clamp(44px,8vw,92px);
+  line-height:.94;letter-spacing:.01em;text-transform:uppercase;
+  color:#fff;
+}
+.hero h1 .accent{color:var(--cobalt);-webkit-text-stroke:0}
+.hero-sub{
+  font-weight:500;font-size:clamp(16px,2.4vw,21px);
+  color:#cfd3dc;margin:20px 0 8px;max-width:34ch;
+}
+.hero-meta{
+  font-family:'IBM Plex Mono',monospace;font-size:12.5px;
+  color:#9aa1b3;margin-bottom:26px;
+}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.btn-book{
+  background:var(--cobalt);color:#fff;
+  font-family:'IBM Plex Mono',monospace;font-weight:600;
+  font-size:15px;letter-spacing:.05em;text-transform:uppercase;
+  padding:18px 34px;border-radius:4px;min-height:56px;
+  display:inline-flex;align-items:center;
+  box-shadow:0 8px 28px rgba(30,70,255,.35);
+}
+.btn-book:hover{background:var(--cobalt-deep)}
+.btn-call{
+  border:1.5px solid #3a3e48;color:#fff;
+  font-family:'IBM Plex Mono',monospace;font-weight:500;
+  font-size:14px;letter-spacing:.05em;text-transform:uppercase;
+  padding:18px 28px;border-radius:4px;min-height:56px;
+  display:inline-flex;align-items:center;
+}
+.btn-call:hover{border-color:#fff}
+.hero-rating{
+  font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9aa1b3;
+}
+.hero-rating strong{color:#fff;font-weight:600}
+
+/* decorative barber art */
+.deco-frame{
+  background:#1c1f26;border:1px solid #2c303a;border-radius:8px;
+  padding:28px;position:relative;
+}
+.deco-frame svg{display:block;width:100%;height:auto}
+.deco-caption{
+  font-family:'IBM Plex Mono',monospace;font-size:10.5px;
+  letter-spacing:.1em;text-transform:uppercase;color:#7b8191;
+  text-align:center;margin-top:14px;
+}
+
+/* data strip */
+.data-strip{
+  background:var(--cobalt);color:#fff;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12.5px;letter-spacing:.04em;
+  padding:13px 0;
+}
+.data-strip .wrap{
+  display:flex;gap:28px;flex-wrap:wrap;justify-content:space-between;
+  align-items:center;
+}
+.data-strip strong{font-weight:600}
+.data-strip a{color:#fff;border-bottom:1px solid rgba(255,255,255,.55)}
+
+/* Sections */
+section.block{padding:64px 0}
+.sec-label{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--cobalt);
+  margin-bottom:14px;
+}
+.sec-title{
+  font-weight:850;font-stretch:72%;text-transform:uppercase;
+  font-size:clamp(28px,4.6vw,44px);line-height:1.02;
+  letter-spacing:.01em;margin-bottom:12px;color:var(--graphite);
+}
+.sec-lede{color:var(--muted);max-width:60ch;margin-bottom:34px;font-size:16.5px}
+
+/* Services: clean spec list */
+.spec-list{border-top:1.5px solid var(--graphite)}
+.spec{
+  display:grid;grid-template-columns:64px 1fr auto;gap:18px;
+  align-items:baseline;padding:22px 4px;
+  border-bottom:1px solid var(--line);
+}
+.spec-num{
+  font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);
+  letter-spacing:.1em;
+}
+.spec-name{
+  font-weight:750;font-stretch:76%;text-transform:uppercase;
+  font-size:clamp(17px,2.6vw,23px);color:var(--graphite);
+  line-height:1.2;
+}
+.spec-desc{font-size:14.5px;color:var(--muted);margin-top:6px;max-width:52ch}
+.spec-tag{
+  font-family:'IBM Plex Mono',monospace;font-size:11.5px;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--cobalt);
+  white-space:nowrap;border:1px solid var(--cobalt);
+  padding:8px 12px;border-radius:4px;
+}
+.price-anchor{
+  margin-top:26px;background:var(--paper);border:1px solid var(--line);
+  border-radius:6px;padding:22px 24px;
+  display:flex;gap:18px;align-items:center;flex-wrap:wrap;
+}
+.price-anchor .big{
+  font-weight:900;font-stretch:70%;font-size:44px;color:var(--graphite);
+  line-height:1;
+}
+.price-anchor p{font-size:14.5px;color:var(--muted);max-width:52ch}
+.price-anchor .mono{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cobalt)}
+
+/* The studio section */
+.studio{background:var(--graphite);color:var(--warm-white)}
+.studio .sec-title{color:#fff}
+.studio .sec-lede{color:#a9adba}
+.studio-facts{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  background:#2c303a;border:1px solid #2c303a;border-radius:8px;overflow:hidden;
+  margin:36px 0;
+}
+.fact{background:#1a1d23;padding:28px 24px}
+.fact .k{
+  font-family:'IBM Plex Mono',monospace;font-size:10.5px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--cobalt);
+  margin-bottom:10px;
+}
+.fact .v{font-size:16px;font-weight:600;color:#fff;line-height:1.4}
+.fact .s{font-size:13.5px;color:#9aa1b3;margin-top:8px}
+.studio-copy{color:#a9adba;max-width:62ch;font-size:16px}
+.studio-copy strong{color:#fff;font-weight:600}
+
+/* Reviews proof lines */
+.proof{list-style:none}
+.proof li{
+  border-left:3px solid var(--cobalt);padding:16px 22px;margin-bottom:14px;
+  background:var(--paper);border-radius:0 6px 6px 0;
+}
+.proof .rating-line{
+  font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;
+  letter-spacing:.03em;color:var(--graphite);margin-bottom:6px;
+}
+a.proof-link{color:inherit;text-decoration:none;display:block}
+a.proof-link:hover .rating-line{color:var(--cobalt);text-decoration:underline}
+.proof .note{font-size:14px;color:var(--muted)}
+
+/* Booking section */
+.book-panel{
+  background:var(--graphite-deep);color:#fff;border-radius:10px;
+  padding:clamp(30px,5vw,54px);position:relative;overflow:hidden;
+}
+.book-panel h2{
+  font-weight:900;font-stretch:72%;text-transform:uppercase;
+  font-size:clamp(30px,5vw,50px);line-height:1;margin-bottom:14px;
+}
+.book-panel .mono-sub{
+  font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9aa1b3;
+  letter-spacing:.1em;margin-bottom:28px;
+}
+.book-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+.book-note{font-size:14px;color:#9aa1b3;max-width:56ch}
+.book-note a{color:#fff;border-bottom:1px solid rgba(255,255,255,.4)}
+
+/* Visit section */
+.visit-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:8px;
+}
+.visit-card{
+  background:#fff;border:1px solid var(--line);border-radius:8px;
+  padding:30px 28px;
+}
+.visit-card h3{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--cobalt);
+  margin-bottom:14px;
+}
+.visit-card address{font-style:normal;font-size:17px;line-height:1.6;color:var(--graphite)}
+.visit-card p{font-size:15px;color:var(--muted);margin-top:12px}
+.map-btn{
+  display:inline-flex;align-items:center;min-height:52px;
+  font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13.5px;
+  letter-spacing:.05em;text-transform:uppercase;color:#fff;
+  background:var(--graphite);padding:16px 26px;border-radius:4px;margin-top:20px;
+}
+.map-btn:hover{background:var(--cobalt)}
+.call-big{
+  font-weight:800;font-stretch:74%;font-size:clamp(26px,4.4vw,40px);
+  color:var(--graphite);letter-spacing:.01em;
+}
+.call-big a{color:var(--cobalt)}
+.hours-note{
+  margin-top:14px;background:var(--paper);border:1px solid var(--line);
+  border-radius:6px;padding:18px 20px;font-size:14.5px;color:var(--muted);
+}
+
+/* Footer */
+footer{background:var(--graphite-deep);color:#9aa1b3;padding:44px 0 30px}
+.foot-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-bottom:26px}
+.foot-brand{color:#fff;font-weight:800;font-stretch:75%;text-transform:uppercase;font-size:18px}
+.foot-brand .dot{color:var(--cobalt)}
+.foot-disc{
+  font-family:'IBM Plex Mono',monospace;font-size:11.5px;line-height:1.7;
+  max-width:52ch;color:#7b8191;
+}
+.foot-line{
+  border-top:1px solid #23262e;padding-top:20px;
+  font-family:'IBM Plex Mono',monospace;font-size:11px;
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.foot-line a{color:#9aa1b3}
+
+/* Responsive: mobile-first adjustments */
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;padding:46px 0 54px}
+  .deco-frame{order:-1}
+  .spec{grid-template-columns:44px 1fr;gap:10px}
+  .spec-tag{grid-column:2;justify-self:start;margin-top:10px}
+  .studio-facts{grid-template-columns:1fr}
+  .visit-grid{grid-template-columns:1fr}
+  .head-inner{justify-content:center;text-align:center}
+  nav.site-nav{justify-content:center;width:100%}
+  .hero-ctas .btn-book,.hero-ctas .btn-call{width:100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="disclosure">
+  <strong>Design Preview</strong> &#183; this is a design preview concept created by Freightfolio, not the business's official site.
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <div>
+      <div class="brand">Cutz By Rick<span class="dot">.</span></div>
+      <div class="tagline">One chair, one barber</div>
+    </div>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#studio">The Studio</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Book</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="head-book" href="https://cutzbyrick2.booksy.com">Book Now</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hero-eyebrow">Single-chair barbershop in Virginia Beach, VA</p>
+      <h1>Cutz By<br><span class="accent">Rick</span></h1>
+      <p class="hero-sub">One chair. One barber. Virginia Beach.</p>
+      <p class="hero-meta mono">BOOKING OPEN ONLINE / CALL WITH QUESTIONS</p>
+      <div class="hero-ctas">
+        <a class="btn-book" href="https://cutzbyrick2.booksy.com">Book Now</a>
+        <a class="btn-call" href="tel:+17573390129">Call (757) 339-0129</a>
+      </div>
+      <p class="hero-rating">Real client reviews on his Booksy page. Scroll down to see the scores.</p>
+    </div>
+    <div>
+      <div class="deco-frame" role="img" aria-label="Decorative geometric barber-lounge illustration, not an actual photo of the shop">
+        <svg viewBox="0 0 420 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="0" y="0" width="420" height="360" rx="6" fill="#1c1f26"/>
+          <circle cx="210" cy="150" r="86" fill="none" stroke="#1e46ff" stroke-width="3"/>
+          <circle cx="210" cy="150" r="64" fill="none" stroke="#3a3e48" stroke-width="1.5"/>
+          <rect x="204" y="52" width="12" height="196" rx="6" fill="#faf7f1" transform="rotate(24 210 150)"/>
+          <rect x="204" y="52" width="12" height="196" rx="6" fill="none" stroke="#1e46ff" stroke-width="2" transform="rotate(24 210 150)"/>
+          <circle cx="210" cy="150" r="10" fill="#1e46ff"/>
+          <rect x="60" y="268" width="300" height="3" fill="#3a3e48"/>
+          <rect x="96" y="286" width="228" height="3" fill="#2a2d35"/>
+          <text x="210" y="322" text-anchor="middle" fill="#9aa1b3" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="4">EST. VIRGINIA BEACH</text>
+          <path d="M40 60 l14 0 m-10 8 l8 0 m-6 8 l5 0" stroke="#1e46ff" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M366 300 l14 0 m-10 -8 l8 0 m-6 -8 l5 0" stroke="#1e46ff" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <p class="deco-caption">Decorative illustration, not the actual shop</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="data-strip">
+  <div class="wrap">
+    <span>CUTS AROUND <strong>$40</strong></span>
+    <span><a href="https://cutzbyrick2.booksy.com">BOOK ONLINE</a> OR CALL <a href="tel:+17573390129">(757) 339-0129</a></span>
+  </div>
+</div>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <p class="sec-label">Services / 001</p>
+    <h2 class="sec-title">Sharp work, priced plainly.</h2>
+    <p class="sec-lede">Rick works one client at a time in a single chair. Every service below is done by him personally. Cuts run around $40, stated on his booking page. Book through Booksy to see the full current price list and pick your exact service before you come in.</p>
+
+    <div class="spec-list">
+      <div class="spec">
+        <span class="spec-num">01</span>
+        <div>
+          <div class="spec-name">Military Fades</div>
+          <p class="spec-desc">High and tight, regulation cuts, and clean skin fades built for a sharp uniform-ready look.</p>
+        </div>
+        <span class="spec-tag">Signature</span>
+      </div>
+      <div class="spec">
+        <span class="spec-num">02</span>
+        <div>
+          <div class="spec-name">Beard Cut &amp; Trim</div>
+          <p class="spec-desc">Shaped, lined up, and edged to match the haircut. Full beard sculpting and maintenance trims.</p>
+        </div>
+        <span class="spec-tag">Detail work</span>
+      </div>
+      <div class="spec">
+        <span class="spec-num">03</span>
+        <div>
+          <div class="spec-name">Hot Towel Facial Shave</div>
+          <p class="spec-desc">Traditional hot towel shave with a straight edge finish. Hot towel prep, razor finish.</p>
+        </div>
+        <span class="spec-tag">Classic</span>
+      </div>
+      <div class="spec">
+        <span class="spec-num">04</span>
+        <div>
+          <div class="spec-name">Bald Head Shave</div>
+          <p class="spec-desc">Full head shave with razor finish. Clean dome, smooth edges.</p>
+        </div>
+        <span class="spec-tag">Razor finish</span>
+      </div>
+      <div class="spec">
+        <span class="spec-num">05</span>
+        <div>
+          <div class="spec-name">Enhancements</div>
+          <p class="spec-desc">Hairline and beard enhancements for a crisper, more defined edge.</p>
+        </div>
+        <span class="spec-tag">Finishing</span>
+      </div>
+    </div>
+
+    <div class="price-anchor">
+      <div>
+        <div class="mono">PRICE ANCHOR</div>
+        <div class="big">$40</div>
+      </div>
+      <p>Cuts are stated around $40. Book through Booksy to see the full current price list and pick your exact service before you come in.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block studio" id="studio">
+  <div class="wrap">
+    <p class="sec-label">The Studio / 002</p>
+    <h2 class="sec-title">One chair changes the whole visit.</h2>
+    <p class="sec-lede">No waiting room full of chairs. No getting passed between barbers. When you book with Rick, the appointment is yours alone.</p>
+
+    <div class="studio-facts">
+      <div class="fact">
+        <div class="k">The setup</div>
+        <div class="v">Single chair. Rick only.</div>
+        <p class="s">One barber does every cut, trim, and shave in the shop.</p>
+      </div>
+      <div class="fact">
+        <div class="k">The address</div>
+        <div class="v">1205 Handel Dr, Ste 2B<br>Virginia Beach, VA 23454</div>
+        <p class="s">Based in Virginia Beach, VA.</p>
+      </div>
+      <div class="fact">
+        <div class="k">How to reach him</div>
+        <div class="v"><a href="tel:+17573390129" style="color:#fff">(757) 339-0129</a></div>
+        <p class="s">Booking is open online. Questions go straight to Rick.</p>
+      </div>
+    </div>
+
+    <p class="studio-copy">A one-chair shop means <strong>the same barber every visit</strong>. Booking stays online through Booksy. Pick your time and service before you arrive.</p>
+  </div>
+</section>
+
+<section class="block" id="reviews">
+  <div class="wrap">
+    <p class="sec-label">Proof / 003</p>
+    <h2 class="sec-title">What the ratings say.</h2>
+    <p class="sec-lede">Ratings from his live review profiles.</p>
+    <ul class="proof">
+      <li>
+        <a class="proof-link" href="https://cutzbyrick2.booksy.com"><div class="rating-line">4.9 from 197 Booksy reviews</div>
+        <p class="note">Booked through his live Booksy profile, where availability and pricing are listed.</p></a>
+      </li>
+      <li>
+        <div class="rating-line">4.7 from 19 Google reviews</div>
+        <p class="note">Listed under his Google Business profile for Cutz By Rick in Virginia Beach.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="book">
+  <div class="wrap">
+    <p class="sec-label">Booking / 004</p>
+    <div class="book-panel">
+      <h2>Lock in your chair.</h2>
+      <p class="mono-sub mono">LIVE BOOKING / CUTZBYRICK2.BOOKSY.COM</p>
+      <div class="book-actions">
+        <a class="btn-book" href="https://cutzbyrick2.booksy.com">Book Now</a>
+        <a class="btn-call" href="tel:+17573390129">Call (757) 339-0129</a>
+      </div>
+      <p class="book-note">Online booking is verified and live on Booksy, where current prices and open slots are listed. Hours differ between sources, so check Booksy or call <a href="tel:+17573390129">(757) 339-0129</a> for the current schedule.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit">
+  <div class="wrap">
+    <p class="sec-label">Visit / 005</p>
+    <h2 class="sec-title">Find the chair.</h2>
+    <p class="sec-lede">Virginia Beach, and a barber who answers his own phone.</p>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Address</h3>
+        <address>
+          Cutz By Rick<br>
+          1205 Handel Dr, Ste 2B<br>
+          Virginia Beach, VA 23454
+        </address>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=1205+Handel+Dr+Ste+2B+Virginia+Beach+VA+23454" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+      <div class="visit-card">
+        <h3>Hours &amp; Contact</h3>
+        <p class="call-big"><a href="tel:+17573390129">(757) 339-0129</a></p>
+        <div class="hours-note">
+          Hours conflict between sources. Check Booksy or call (757) 339-0129 for the current schedule.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">Cutz By Rick<span class="dot">.</span></div>
+        <p style="margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#7b8191">1205 Handel Dr, Ste 2B, Virginia Beach, VA 23454<br><a href="tel:+17573390129" style="color:#9aa1b3">(757) 339-0129</a></p>
+      </div>
+      <p class="foot-disc">This is a design preview concept created by Freightfolio, not the business's official site. Facts shown come from public listings; booking links go to the business's own verified Booksy page. Concept by Freightfolio.</p>
+    </div>
+    <div class="foot-line">
+      <span>Concept by Freightfolio</span>
+      <span><a href="https://cutzbyrick2.booksy.com">Book on Booksy</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

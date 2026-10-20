@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Bark N Bubbles | Dog &amp; Cat Grooming in West Des Moines, IA</title>
+<style>
+  :root {
+    --cream: #FFF9F0;
+    --cream-deep: #FBEEDC;
+    --ink: #2B3A3A;
+    --ink-soft: #5A6E6C;
+    --teal: #147D7B;
+    --teal-deep: #0E5B5A;
+    --aqua: #7FD1CB;
+    --coral: #FF7A5C;
+    --coral-deep: #E85F41;
+    --white: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Avenir Next", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- Design preview disclosure ---------- */
+  .preview-bar {
+    background: var(--teal-deep);
+    color: #fff;
+    text-align: center;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: 0.7rem 1rem;
+    font-weight: 700;
+  }
+
+  /* ---------- Header / nav ---------- */
+  header.site-head {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 249, 240, 0.96);
+    border-bottom: 1px solid #EBDCC4;
+    backdrop-filter: blur(6px);
+  }
+  .head-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0.9rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .brand .bubble-mark {
+    width: 42px; height: 42px;
+    border-radius: 50%;
+    background:
+      radial-gradient(circle at 32% 30%, rgba(255,255,255,0.9) 0 6px, rgba(255,255,255,0) 7px),
+      radial-gradient(circle at 68% 62%, rgba(255,255,255,0.55) 0 9px, rgba(255,255,255,0) 10px),
+      linear-gradient(135deg, var(--aqua), var(--teal));
+    box-shadow: inset -3px -5px 8px rgba(14,91,90,0.35);
+    flex: none;
+  }
+  .brand .name {
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+  .brand .name .bubbles { color: var(--coral-deep); }
+  .brand .tag {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  nav.main-nav { display: flex; gap: 1.1rem; align-items: center; }
+  nav.main-nav a {
+    text-decoration: none;
+    color: var(--ink-soft);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+  }
+  nav.main-nav a:hover { color: var(--teal); }
+  .cta-call {
+    display: inline-block;
+    background: var(--coral);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding: 0.65rem 1.3rem;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(232,95,65,0.35);
+    transition: transform 0.15s ease, background 0.15s ease;
+    white-space: nowrap;
+  }
+  .cta-call:hover { background: var(--coral-deep); transform: translateY(-1px); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(circle, rgba(127,209,203,0.28) 0 2.5px, transparent 3px) 0 0 / 34px 34px,
+      radial-gradient(circle, rgba(255,122,92,0.20) 0 2px, transparent 2.5px) 17px 20px / 44px 44px,
+      radial-gradient(circle, rgba(20,125,123,0.16) 0 3px, transparent 3.5px) 60px 90px / 70px 70px,
+      linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
+    padding: 4.5rem 1.25rem 4rem;
+  }
+  .hero-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .hero-eyebrow {
+    display: inline-block;
+    background: var(--white);
+    border: 1.5px solid var(--aqua);
+    color: var(--teal-deep);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 1.4rem;
+  }
+  .hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4.1rem);
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+    font-weight: 900;
+    margin-bottom: 1.2rem;
+  }
+  .hero h1 .w1 { color: var(--teal-deep); }
+  .hero h1 .w2 { color: var(--coral-deep); }
+  .hero .lede {
+    font-size: 1.12rem;
+    color: var(--ink-soft);
+    max-width: 34rem;
+    margin-bottom: 2rem;
+  }
+  .hero-actions { display: flex; gap: 0.9rem; flex-wrap: wrap; align-items: center; }
+  .cta-ghost {
+    display: inline-block;
+    color: var(--teal-deep);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.65rem 1.2rem;
+    border: 2px solid var(--teal);
+    border-radius: 999px;
+  }
+  .cta-ghost:hover { background: var(--teal); color: #fff; }
+  .hero-badges {
+    margin-top: 1.8rem;
+    display: flex;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  .hero-badges span { display: inline-flex; align-items: center; gap: 0.45rem; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  .dot.teal { background: var(--teal); }
+  .dot.coral { background: var(--coral); }
+  .dot.aqua { background: var(--aqua); }
+
+  .hero-art { position: relative; min-height: 320px; }
+  .bubble-cluster { position: absolute; border-radius: 50%; }
+  .bubble-cluster.b1 {
+    width: 220px; height: 220px;
+    right: 8%; top: 6%;
+    background:
+      radial-gradient(circle at 34% 28%, rgba(255,255,255,0.95) 0 16px, rgba(255,255,255,0) 17px),
+      radial-gradient(circle at 66% 64%, rgba(255,255,255,0.6) 0 24px, rgba(255,255,255,0) 25px),
+      linear-gradient(140deg, var(--aqua) 0%, var(--teal) 100%);
+    box-shadow: inset -8px -12px 22px rgba(14,91,90,0.35), 0 18px 40px rgba(20,125,123,0.25);
+  }
+  .bubble-cluster.b2 {
+    width: 130px; height: 130px;
+    left: 6%; bottom: 12%;
+    background:
+      radial-gradient(circle at 36% 30%, rgba(255,255,255,0.95) 0 10px, rgba(255,255,255,0) 11px),
+      linear-gradient(140deg, #FFB59F 0%, var(--coral) 100%);
+    box-shadow: inset -5px -8px 14px rgba(160,60,35,0.35), 0 14px 30px rgba(232,95,65,0.28);
+  }
+  .bubble-cluster.b3 {
+    width: 64px; height: 64px;
+    left: 44%; top: 2%;
+    background:
+      radial-gradient(circle at 36% 30%, rgba(255,255,255,0.9) 0 6px, rgba(255,255,255,0) 7px),
+      linear-gradient(140deg, #FFE1D6, var(--coral));
+    box-shadow: inset -3px -5px 9px rgba(160,60,35,0.3);
+  }
+  .bubble-cluster.b4 {
+    width: 44px; height: 44px;
+    right: 2%; bottom: 4%;
+    background:
+      radial-gradient(circle at 36% 30%, rgba(255,255,255,0.9) 0 5px, rgba(255,255,255,0) 6px),
+      linear-gradient(140deg, var(--aqua), var(--teal));
+  }
+  .paw-scrim {
+    position: absolute;
+    right: 0; top: 0; left: 0; bottom: 0;
+    background:
+      radial-gradient(circle, rgba(20,125,123,0.12) 0 3px, transparent 3.5px) 30% 70% / 26px 26px;
+    border-radius: 18px;
+  }
+
+  /* ---------- Sections ---------- */
+  section.block { padding: 4rem 1.25rem; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  .kicker {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--coral-deep);
+    margin-bottom: 0.7rem;
+  }
+  .block h2 {
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    letter-spacing: -0.02em;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    line-height: 1.15;
+  }
+  .block .standfirst {
+    color: var(--ink-soft);
+    max-width: 42rem;
+    margin-bottom: 2.2rem;
+    font-size: 1.05rem;
+  }
+
+  /* Services */
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .service-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 2.2rem;
+    border: 1px solid #F0E2CC;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, var(--teal), var(--aqua));
+  }
+  .service-card.dogs::before { background: linear-gradient(90deg, var(--teal), var(--aqua)); }
+  .service-card.cats::before { background: linear-gradient(90deg, var(--coral), #FFB59F); }
+  .service-card h3 {
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.8rem;
+  }
+  .service-card p { color: var(--ink-soft); }
+  .service-card .note {
+    margin-top: 1.1rem;
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--teal-deep);
+    background: #E4F4F3;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+  }
+  .service-card.cats .note { color: var(--coral-deep); background: #FFEBE4; }
+
+  /* Meet Chrissy */
+  .chrissy {
+    background: var(--teal-deep);
+    color: #F4FFFD;
+    border-radius: 28px;
+    padding: 3.2rem 3rem;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 2.8rem;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .chrissy::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle, rgba(127,209,203,0.25) 0 3px, transparent 3.6px) 0 0 / 42px 42px,
+      radial-gradient(circle, rgba(255,255,255,0.10) 0 2.4px, transparent 3px) 21px 24px / 52px 52px;
+    pointer-events: none;
+  }
+  .chrissy > * { position: relative; z-index: 1; }
+  .chrissy .kicker { color: var(--aqua); }
+  .chrissy h2 { color: #fff; }
+  .chrissy p { color: #DCEEEB; }
+  .chrissy .initials {
+    width: 170px; height: 170px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.4rem;
+    font-weight: 900;
+    color: #fff;
+    background:
+      radial-gradient(circle at 34% 28%, rgba(255,255,255,0.85) 0 14px, rgba(255,255,255,0) 15px),
+      radial-gradient(circle at 66% 62%, rgba(255,255,255,0.5) 0 20px, rgba(255,255,255,0) 21px),
+      linear-gradient(140deg, var(--aqua), var(--teal));
+    box-shadow: inset -6px -10px 18px rgba(8,50,49,0.4), 0 16px 34px rgba(0,0,0,0.25);
+    letter-spacing: -0.02em;
+  }
+  .fact-list { list-style: none; margin-top: 1.6rem; }
+  .fact-list li {
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255,255,255,0.16);
+    color: #EAF6F4;
+  }
+  .fact-list li strong { color: #fff; }
+
+  /* Visit */
+  .visit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .visit-card {
+    background: var(--white);
+    border: 1px solid #F0E2CC;
+    border-radius: 18px;
+    padding: 1.9rem;
+  }
+  .visit-card h3 {
+    font-size: 1.02rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--teal-deep);
+    margin-bottom: 0.8rem;
+  }
+  .visit-card p, .visit-card a { color: var(--ink-soft); }
+  .visit-card a.tel-link {
+    color: var(--coral-deep);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.15rem;
+  }
+  .visit-card a.tel-link:hover { text-decoration: underline; }
+  .visit-card .hours-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-top: 1px dashed #EBDCC4;
+    font-size: 0.95rem;
+  }
+  .visit-card .hours-row:first-of-type { border-top: none; }
+  .rating-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--white);
+    border: 1.5px solid var(--aqua);
+    border-radius: 999px;
+    padding: 0.55rem 1.2rem;
+    font-weight: 800;
+    font-size: 0.92rem;
+    color: var(--teal-deep);
+    margin-top: 1.4rem;
+  }
+  .rating-badge .stars { color: #F0A32E; letter-spacing: 0.1em; }
+
+  /* Footer */
+  footer {
+    background: var(--ink);
+    color: #B9C7C4;
+    padding: 3rem 1.25rem 2.5rem;
+    font-size: 0.88rem;
+  }
+  footer .wrap { max-width: 1080px; }
+  footer .disclaimer {
+    border: 1px solid #3E5350;
+    border-radius: 14px;
+    padding: 1.3rem 1.5rem;
+    margin-bottom: 1.8rem;
+    color: #D8E3E0;
+  }
+  footer .disclaimer strong { color: #fff; }
+  footer .fine {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  footer a { color: var(--aqua); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 860px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+    .hero-art { min-height: 250px; order: -1; }
+    .hero { padding: 2.8rem 1.25rem 3rem; }
+    .services-grid { grid-template-columns: 1fr; }
+    .chrissy { grid-template-columns: 1fr; padding: 2.4rem 1.6rem; gap: 2rem; }
+    .visit-grid { grid-template-columns: 1fr; }
+    .head-inner { flex-wrap: wrap; }
+    nav.main-nav { gap: 0.85rem; }
+    nav.main-nav a.hide-mobile { display: none; }
+    .cta-call { font-size: 1rem; padding: 0.85rem 1.6rem; }
+    section.block { padding: 2.8rem 1.25rem; }
+    .hero .lede { font-size: 1.05rem; }
+  }
+  section[id] { scroll-margin-top: 76px; }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">DESIGN PREVIEW - Website Concept</div>
+
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="#top" aria-label="Bark N Bubbles home">
+      <span class="bubble-mark" aria-hidden="true"></span>
+      <span>
+        <span class="name">Bark N <span class="bubbles">Bubbles</span></span>
+        <span class="tag">Dog &amp; Cat Grooming &middot; West Des Moines, IA</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Sections">
+      <a class="hide-mobile" href="#services">Services</a>
+      <a class="hide-mobile" href="#chrissy">Meet Chrissy</a>
+      <a href="#visit">Visit</a>
+      <a class="cta-call" href="tel:+15152056508">Call to book</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-eyebrow">Pet grooming, done with patience</span>
+        <h1><span class="w1">Bark N Bubbles</span><br><span class="w2">grooms happy pets.</span></h1>
+        <p class="lede">Dog and cat grooming in West Des Moines from Chrissy, a groomer with more than a decade of experience. Every appointment is built around a calm, low-stress visit your pet can feel good about.</p>
+        <div class="hero-actions">
+          <a class="cta-call" href="tel:+15152056508">Call to book</a>
+          <a class="cta-ghost" href="#services">See services</a>
+        </div>
+        <div class="hero-badges">
+          <span><span class="dot teal" aria-hidden="true"></span>Dogs and cats welcome</span>
+          <span><span class="dot coral" aria-hidden="true"></span>Inside Family Pet Vet Clinic</span>
+          <span><span class="dot aqua" aria-hidden="true"></span>13+ years of grooming</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="paw-scrim"></div>
+        <div class="bubble-cluster b1"></div>
+        <div class="bubble-cluster b2"></div>
+        <div class="bubble-cluster b3"></div>
+        <div class="bubble-cluster b4"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="services">
+    <div class="wrap">
+      <p class="kicker">What we do</p>
+      <h2>Grooming that keeps tails wagging</h2>
+      <p class="standfirst">Bark N Bubbles grooms both dogs and cats, with every visit shaped around a positive, low-stress experience. Call to talk through what your pet needs and set up a time.</p>
+      <div class="services-grid">
+        <div class="service-card dogs">
+          <h3>Dog grooming</h3>
+          <p>Full grooming for dogs of all breeds and sizes. Chrissy shapes each cut to your dog and keeps the whole appointment calm from bath to brush-out.</p>
+          <span class="note">Call for details and availability</span>
+        </div>
+        <div class="service-card cats">
+          <h3>Cat grooming</h3>
+          <p>Grooming for cats who need a careful, patient hand. Chrissy works at your cat's pace and keeps handling gentle throughout.</p>
+          <span class="note">Call for details and availability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="chrissy" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="chrissy">
+        <div>
+          <div class="initials" aria-hidden="true">C</div>
+        </div>
+        <div>
+          <p class="kicker">Your groomer</p>
+          <h2>Meet Chrissy</h2>
+          <p>Chrissy has been grooming for 13+ years. She previously managed the salon at the Clive Petco and now grooms inside Family Pet Vet Clinic in West Des Moines.</p>
+          <ul class="fact-list">
+            <li><strong>13+ years</strong> of professional grooming experience</li>
+            <li><strong>Former salon manager</strong> at Clive Petco</li>
+            <li><strong>Now grooming inside</strong> Family Pet Vet Clinic</li>
+            <li><strong>Focus on</strong> a positive, low-stress grooming experience</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="visit" style="padding-top: 0;">
+    <div class="wrap">
+      <p class="kicker">Find us</p>
+      <h2>Come say hello</h2>
+      <p class="standfirst">Bark N Bubbles grooms inside Family Pet Vet Clinic at 328 Grand Ave in West Des Moines. Open two days a week by phone appointment.</p>
+      <div class="visit-grid">
+        <div class="visit-card">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Monday</span><span>8:00 AM - 5:00 PM</span></div>
+          <div class="hours-row"><span>Wednesday</span><span>8:00 AM - 5:00 PM</span></div>
+        </div>
+        <div class="visit-card">
+          <h3>Location</h3>
+          <p>328 Grand Ave<br>West Des Moines, IA 50265</p>
+          <p style="margin-top: 0.6rem;">Inside Family Pet Vet Clinic</p>
+        </div>
+        <div class="visit-card">
+          <h3>Phone</h3>
+          <p><a class="tel-link" href="tel:+15152056508">(515) 205-6508</a></p>
+          <p style="margin-top: 0.6rem;">Call to book your appointment.</p>
+        </div>
+      </div>
+      <span class="rating-badge"><span class="stars" aria-hidden="true">&starf;&starf;&starf;&starf;&starf;</span>5.0 from 21 Google reviews</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="disclaimer">
+      <strong>Design preview.</strong> This is an unsolicited website design concept created by Freightfolio. It was not commissioned, reviewed, or endorsed by Bark N Bubbles, and the business has not approved any content shown here.
+    </div>
+    <div class="fine">
+      <span>Bark N Bubbles &middot; 328 Grand Ave, West Des Moines, IA 50265 &middot; (515) 205-6508</span>
+      <span>Concept by Freightfolio</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Beast with the Clippers | Barbershop in Downtown Houston, TX</title>
+<style>
+  :root{
+    --ink:#16140f;
+    --bone:#efe8d8;
+    --rust:#b34724;
+    --ink-soft:#221f18;
+    --bone-dim:#cfc7b4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{overflow-x:hidden;}
+  body{
+    background:var(--ink);
+    color:var(--bone);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .display{font-family:Impact,"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:400;letter-spacing:.01em;text-transform:uppercase;}
+
+  /* DESIGN PREVIEW bar */
+  .preview-bar{
+    background:var(--rust);
+    color:var(--ink);
+    text-align:center;
+    padding:.65rem 1rem;
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+  }
+
+  /* Header / nav */
+  header{
+    border-bottom:2px solid var(--bone);
+    padding:1rem 1.25rem;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:.75rem;
+  }
+  .brand{font-size:1.25rem;text-transform:uppercase;letter-spacing:.06em;color:var(--bone);}
+  .brand span{color:var(--rust);}
+  nav{display:flex;flex-wrap:wrap;gap:1.25rem;}
+  nav a{
+    color:var(--bone-dim);
+    text-decoration:none;
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    border-bottom:2px solid transparent;
+    padding-bottom:.15rem;
+  }
+  nav a:hover{color:var(--bone);border-bottom-color:var(--rust);}
+
+  /* Hero */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    padding:4.5rem 1.25rem 5.5rem;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    top:-18%;right:-25%;
+    width:70%;height:140%;
+    background:var(--rust);
+    transform:skewX(-14deg);
+    opacity:.16;
+    pointer-events:none;
+  }
+  .hero-eyebrow{
+    color:var(--rust);
+    font-weight:700;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    font-size:.8rem;
+    margin-bottom:1.5rem;
+  }
+  .hero h1{line-height:.86;margin-bottom:1.75rem;}
+  .hero h1 .beast{
+    display:block;
+    font-size:clamp(5rem,24vw,15rem);
+    color:transparent;
+    -webkit-text-stroke:3px var(--bone);
+    text-stroke:3px var(--bone);
+  }
+  @supports not (-webkit-text-stroke:1px black){
+    .hero h1 .beast{color:var(--bone);}
+  }
+  .hero h1 .rest{
+    display:block;
+    font-size:clamp(2.2rem,10vw,6rem);
+    color:var(--bone);
+  }
+  .hero-anchor{
+    display:inline-block;
+    background:var(--bone);
+    color:var(--ink);
+    padding:.7rem 1.4rem;
+    font-weight:700;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    font-size:.85rem;
+    transform:skewX(-8deg);
+  }
+  .hero-anchor span{display:inline-block;transform:skewX(8deg);}
+  .hero-sub{
+    margin-top:2rem;
+    max-width:34rem;
+    color:var(--bone-dim);
+    font-size:1.05rem;
+  }
+  .hero-rating{
+    margin-top:1.5rem;
+    font-size:.95rem;
+    color:var(--bone);
+  }
+  .hero-rating strong{color:var(--rust);font-size:1.2rem;}
+  .hero-cta{margin-top:2rem;}
+
+  /* Fact strip: verified business facts */
+  .facts{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border-top:2px solid var(--bone);
+    border-bottom:2px solid var(--bone);
+  }
+  .fact{
+    padding:1.4rem 1.25rem;
+    border-right:1px solid rgba(239,232,216,.25);
+  }
+  .fact:last-child{border-right:none}
+  .fact .fact-k{
+    display:block;
+    color:var(--rust);
+    font-weight:700;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    font-size:.72rem;
+    margin-bottom:.45rem;
+  }
+  .fact .fact-v{font-weight:700;font-size:1.02rem;line-height:1.35}
+  @media(max-width:640px){.facts{grid-template-columns:1fr}.fact{border-right:none;border-bottom:1px solid rgba(239,232,216,.25)}.fact:last-child{border-bottom:none}}
+
+  /* Diagonal divider */
+  .divider{
+    height:3.5rem;
+    background:repeating-linear-gradient(-55deg,var(--rust) 0 26px,#9a3e1f 26px 52px);
+    transform:skewY(-2.5deg);
+    margin:0;
+  }
+
+  /* Sections */
+  section{padding:4rem 1.25rem;}
+  #services{
+    background:repeating-linear-gradient(-45deg,transparent 0 18px,rgba(239,232,216,.022) 18px 19px);
+  }
+  .section-label{
+    color:var(--rust);
+    font-weight:700;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    font-size:.8rem;
+    margin-bottom:1rem;
+  }
+  h2{
+    font-size:clamp(2.4rem,9vw,5rem);
+    line-height:.95;
+    margin-bottom:2.5rem;
+  }
+
+  /* Services ledger */
+  .ledger{list-style:none;border-top:2px solid var(--bone);}
+  .ledger li{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:1rem 1.5rem;
+    padding:1.75rem .25rem;
+    border-bottom:2px solid var(--bone);
+    align-items:baseline;
+  }
+  .ledger .num{
+    color:var(--rust);
+    font-size:clamp(1.8rem,6vw,3rem);
+    line-height:1;
+  }
+  .ledger .svc{
+    font-size:clamp(1.6rem,6vw,3rem);
+    line-height:1;
+    text-transform:uppercase;
+  }
+  .ledger .desc{
+    grid-column:2;
+    color:var(--bone-dim);
+    max-width:36rem;
+  }
+  .ledger li:hover{background:rgba(179,71,36,.08);}
+
+  /* Hours & location */
+  .hours-loc{background:var(--ink-soft);position:relative;overflow:hidden;}
+  .hours-grid{display:grid;gap:2.5rem;}
+  .hours-table{width:100%;border-collapse:collapse;max-width:26rem;}
+  .hours-table th,.hours-table td{
+    text-align:left;
+    padding:.9rem .25rem;
+    border-bottom:1px solid rgba(239,232,216,.25);
+  }
+  .hours-table th{font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.85rem;}
+  .hours-table td:last-child{text-align:right;font-weight:700;}
+  .loc-address{font-size:1.5rem;font-weight:700;margin-bottom:.5rem;}
+  .loc-note{color:var(--bone-dim);margin-bottom:1.5rem;}
+  .btn{
+    display:inline-block;
+    background:var(--rust);
+    color:var(--ink);
+    font-weight:700;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:1rem 1.75rem;
+    font-size:.9rem;
+    margin-right:.75rem;
+    margin-bottom:.75rem;
+  }
+  .btn.ghost{
+    background:transparent;
+    color:var(--bone);
+    border:2px solid var(--bone);
+  }
+  .btn:hover{background:var(--bone);color:var(--ink);}
+  .btn.ghost:hover{border-color:var(--rust);background:var(--rust);color:var(--ink);}
+
+  /* Contact */
+  .contact{text-align:left;}
+  .contact .phone-big{
+    display:block;
+    font-size:clamp(2rem,9vw,4.5rem);
+    color:var(--bone);
+    text-decoration:none;
+    line-height:1;
+    margin:1.5rem 0;
+  }
+  .contact .phone-big:hover{color:var(--rust);}
+  .contact p{color:var(--bone-dim);max-width:36rem;}
+
+  footer{
+    border-top:2px solid var(--bone);
+    padding:2.5rem 1.25rem;
+    color:var(--bone-dim);
+    font-size:.85rem;
+  }
+  footer .disc{
+    max-width:44rem;
+    margin-bottom:1rem;
+  }
+  footer .foot-brand{color:var(--bone);font-weight:700;letter-spacing:.06em;text-transform:uppercase;}
+
+  @media(min-width:760px){
+    section,.hero{padding-left:3rem;padding-right:3rem;}
+    header{padding-left:3rem;padding-right:3rem;}
+    .hours-grid{grid-template-columns:1fr 1fr;align-items:start;}
+    .ledger .num{min-width:6rem;}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Design Preview</div>
+
+<header>
+  <div class="brand display">Beast <span>with the</span> Clippers</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#hours">Hours &amp; Location</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <p class="hero-eyebrow">Downtown Houston Barbershop</p>
+    <h1 class="display">
+      <span class="beast">Beast</span>
+      <span class="rest">With the Clippers</span>
+    </h1>
+    <div class="hero-anchor"><span>1925 Milam St, Houston, TX</span></div>
+    <p class="hero-sub">A downtown Houston barbershop. Haircuts, beard trims, hot shaves, and shoe shines at 1925 Milam St.</p>
+    <p class="hero-rating"><strong>4.6</strong> on Google, from 24 reviews</p>
+    <div class="hero-cta">
+      <a class="btn" href="tel:+18324031749">Call to book</a>
+    </div>
+  </div>
+
+  <div class="facts" aria-label="Shop facts">
+    <div class="fact"><span class="fact-k">Where</span><span class="fact-v">1925 Milam St, Downtown Houston</span></div>
+    <div class="fact"><span class="fact-k">Hours</span><span class="fact-v">Mon to Fri 9 to 6, Sat 9 to 4</span></div>
+    <div class="fact"><span class="fact-k">Services</span><span class="fact-v">Cuts, beard trims, hot shaves, shoe shines</span></div>
+  </div>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section id="services">
+    <p class="section-label">What we do</p>
+    <h2 class="display">Services</h2>
+    <ol class="ledger">
+      <li>
+        <span class="num display">01</span>
+        <span class="svc display">Haircut</span>
+        <p class="desc">A full cut shaped to the style you ask for. Tell the barber what you want and they will take it from there.</p>
+      </li>
+      <li>
+        <span class="num display">02</span>
+        <span class="svc display">Beard Trim</span>
+        <p class="desc">A clean shape and tidy edge for your beard. Keeps it sharp between full cuts.</p>
+      </li>
+      <li>
+        <span class="num display">03</span>
+        <span class="svc display">Hot Shave</span>
+        <p class="desc">The classic hot shave.</p>
+      </li>
+      <li>
+        <span class="num display">04</span>
+        <span class="svc display">Shoe Shine</span>
+        <p class="desc">A proper shine while you are in the chair. Walk out looking finished.</p>
+      </li>
+    </ol>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section id="hours" class="hours-loc">
+    <p class="section-label">Find us</p>
+    <h2 class="display">Hours &amp; Location</h2>
+    <div class="hours-grid">
+      <div>
+        <table class="hours-table">
+          <tr><th scope="row">Mon-Fri</th><td>9:00 AM - 6:00 PM</td></tr>
+          <tr><th scope="row">Sat</th><td>9:00 AM - 4:00 PM</td></tr>
+          <tr><th scope="row">Sun</th><td>Closed</td></tr>
+        </table>
+      </div>
+      <div>
+        <p class="loc-address">1925 Milam St<br>Houston, TX</p>
+        <p class="loc-note">In downtown Houston, an easy stop on your way through the city.</p>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=1925+Milam+St+Houston+TX">Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section id="contact" class="contact">
+    <p class="section-label">Get in touch</p>
+    <h2 class="display">Contact</h2>
+    <a class="phone-big display" href="tel:+18324031749">(832) 403-1749</a>
+    <a class="btn" href="tel:+18324031749">Call to book</a>
+    <p>Questions? Call (832) 403-1749. The shop is closed on Sundays.</p>
+  </section>
+</main>
+
+<footer>
+  <p class="disc">This is an unsolicited website design concept created by Freightfolio. It was not commissioned, affiliated with, or endorsed by Beast with the Clippers.</p>
+  <p class="foot-brand">Beast with the Clippers | 1925 Milam St, Houston, TX</p>
+</footer>
+
+</body>
+</html>

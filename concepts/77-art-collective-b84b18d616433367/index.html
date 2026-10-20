@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>77 Art Collective | Custom Tattoo Studio, Downtown Indianapolis</title>
+<meta name="description" content="77 Art Collective LLC. Custom tattoo studio at 745 N Illinois St, downtown Indianapolis. Call to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --concrete:#d8d2c4;
+    --concrete-deep:#b9b1a0;
+    --amber:#e08e2b;
+    --amber-deep:#b96f16;
+    --ink:#141210;
+    --ink-soft:#232020;
+    --paper:#efe9db;
+    --line:rgba(20,18,16,.16);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',-apple-system,'Segoe UI',Arial,sans-serif;
+    background:var(--concrete);
+    color:var(--ink);
+    line-height:1.6;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.condensed{font-family:'Oswald','Arial Narrow',Impact,sans-serif;font-weight:600;letter-spacing:.02em;line-height:1.05;text-transform:uppercase}
+  img,svg{max-width:100%;height:auto;display:block}
+  a{color:inherit}
+
+  /* ---- preview disclosure strip ---- */
+  .preview-strip{
+    background:var(--ink);color:var(--concrete);
+    font-size:.78rem;letter-spacing:.06em;
+    text-align:center;padding:.55rem 1rem;
+  }
+  .preview-strip strong{color:var(--amber);font-weight:600}
+
+  /* ---- nav ---- */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(216,210,196,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:2px solid var(--ink);
+  }
+  .nav-inner{
+    max-width:1100px;margin:0 auto;padding:.7rem 1.25rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  }
+  .brand{font-family:'Oswald','Arial Narrow',sans-serif;font-weight:700;font-size:1.35rem;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+  .brand .seven{color:var(--amber-deep)}
+  nav.links{display:flex;gap:1.4rem;flex-wrap:wrap}
+  nav.links a{text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border-bottom:2px solid transparent;padding:.15rem 0}
+  nav.links a:hover{border-color:var(--amber-deep)}
+  .nav-cta{
+    background:var(--ink);color:var(--paper);text-decoration:none;
+    font-family:'Oswald',sans-serif;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;
+    padding:.55rem 1.1rem;white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--amber-deep)}
+  @media(max-width:640px){
+    .nav-inner{padding:.6rem .9rem;gap:.7rem}
+    nav.links{gap:.85rem}
+    nav.links a{font-size:.74rem}
+    .brand{font-size:1.1rem}
+    .nav-cta{font-size:.8rem;padding:.45rem .8rem}
+  }
+
+  /* ---- hero: poster wall ---- */
+  .hero{
+    background:var(--ink);color:var(--paper);
+    position:relative;overflow:hidden;
+    padding:4.5rem 1.25rem 3.5rem;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      radial-gradient(ellipse 60% 45% at 85% 10%, rgba(224,142,43,.16), transparent 70%),
+      radial-gradient(ellipse 50% 40% at 8% 88%, rgba(224,142,43,.10), transparent 70%);
+  }
+  .hero-inner{max-width:1100px;margin:0 auto;position:relative}
+  .hero-kicker{
+    display:inline-block;background:var(--amber-deep);color:var(--ink);
+    font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    padding:.35rem .8rem;margin-bottom:1.4rem;
+  }
+  .hero h1{
+    font-size:clamp(3.2rem,11vw,7.5rem);color:var(--paper);font-weight:700;
+  }
+  .hero h1 .amber{color:var(--amber)}
+  .hero .tagline{
+    font-family:'Oswald','Arial Narrow',sans-serif;font-size:clamp(1.15rem,3.4vw,1.8rem);
+    letter-spacing:.05em;text-transform:uppercase;color:var(--concrete-deep);
+    margin-top:1rem;
+  }
+  .hero p.lede{max-width:34rem;color:#cfc8b8;margin-top:1.2rem;font-size:1.02rem}
+  .hero-cta-row{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.8rem}
+  .btn{
+    display:inline-block;text-decoration:none;font-family:'Oswald',sans-serif;
+    font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;
+    padding:.85rem 1.7rem;border:2px solid var(--amber);
+  }
+  .btn-solid{background:var(--amber);color:var(--ink)}
+  .btn-solid:hover{background:var(--paper);border-color:var(--paper)}
+  .btn-ghost{color:var(--paper)}
+  .btn-ghost:hover{border-color:var(--paper);background:rgba(239,233,219,.08)}
+  .hero-disclosure{
+    margin-top:2.2rem;font-size:.78rem;color:#8f887a;letter-spacing:.04em;max-width:40rem;
+  }
+  .hero-disclosure strong{color:var(--amber);font-weight:600}
+
+  /* ---- poster panels row ---- */
+  .wall{max-width:1100px;margin:0 auto;padding:3.5rem 1.25rem 1rem}
+  .wall-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  @media(max-width:760px){.wall-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}}
+  .panel{
+    background:var(--paper);border:2px solid var(--ink);
+    padding:1rem;box-shadow:8px 8px 0 var(--ink);
+    position:relative;
+  }
+  .panel:nth-child(1){transform:rotate(-1.2deg)}
+  .panel:nth-child(2){transform:rotate(1deg);margin-top:1.6rem}
+  .panel:nth-child(3){transform:rotate(-.7deg);margin-top:.6rem}
+  @media(max-width:760px){.panel:nth-child(2),.panel:nth-child(3){margin-top:0}}
+  .panel .art{border:1px solid var(--line);background:var(--ink)}
+  .panel figcaption{
+    font-size:.72rem;letter-spacing:.06em;color:#6d675c;margin-top:.7rem;text-transform:uppercase;
+  }
+  .panel figcaption em{font-style:normal;color:var(--amber-deep);font-weight:600}
+
+  /* ---- tracklist sections ---- */
+  section.block{max-width:1100px;margin:0 auto;padding:4rem 1.25rem}
+  .track-head{display:flex;align-items:baseline;gap:1rem;border-bottom:3px solid var(--ink);padding-bottom:.8rem;margin-bottom:2rem}
+  .track-no{font-family:'Oswald',sans-serif;font-size:1rem;color:var(--amber-deep);letter-spacing:.1em}
+  .track-head h2{font-size:clamp(1.8rem,5.5vw,2.9rem)}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+  @media(max-width:760px){.cols{grid-template-columns:1fr;gap:1.5rem}}
+  .cols p{margin-bottom:1.1rem;font-size:1.02rem}
+  .cols p:last-child{margin-bottom:0}
+  .pull{
+    font-family:'Oswald','Arial Narrow',sans-serif;font-size:clamp(1.5rem,4.5vw,2.2rem);
+    text-transform:uppercase;letter-spacing:.03em;line-height:1.25;color:var(--ink-soft);
+  }
+  .pull .amber{color:var(--amber-deep)}
+
+  /* ---- artist spotlight ---- */
+  .spot{background:var(--ink);color:var(--paper)}
+  .spot .track-head{border-color:var(--amber)}
+  .spot .track-no{color:var(--amber)}
+  .spot-card{
+    display:grid;grid-template-columns:200px 1fr;gap:2.2rem;align-items:start;
+    background:var(--ink-soft);border:2px solid var(--amber);padding:1.8rem;
+  }
+  @media(max-width:620px){.spot-card{grid-template-columns:1fr;padding:1.3rem}}
+  .spot-card .artist-art{
+    border:3px solid var(--amber);aspect-ratio:1;background:var(--ink);
+    display:flex;flex-direction:column;
+  }
+  .spot-card .artist-art svg{display:block;width:100%;flex:1}
+  .spot-card .artist-art figcaption{
+    font-size:.72rem;font-style:italic;color:#a89e88;text-align:center;
+    padding:.45rem .5rem;border-top:1px solid rgba(224,142,43,.4);
+  }
+  .spot-card h3{font-size:clamp(1.7rem,5vw,2.4rem);color:var(--paper);margin-bottom:.6rem}
+  .spot-card p{color:#cfc8b8;margin-bottom:.9rem;font-size:1rem;max-width:36rem}
+  .spot-card .name-tag{display:inline-block;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);background:var(--amber);padding:.3rem .7rem;margin-bottom:.9rem}
+
+  /* ---- ethos list: tracklist style ---- */
+  .ethos-list{list-style:none;margin-top:.5rem}
+  .ethos-list li{
+    display:flex;gap:1.2rem;align-items:baseline;
+    padding:1.15rem .4rem;border-bottom:1px solid var(--line);
+  }
+  .ethos-list .tno{font-family:'Oswald',sans-serif;color:var(--amber-deep);font-size:1.05rem;min-width:2.2rem}
+  .ethos-list h3{font-size:1.25rem;margin-bottom:.3rem}
+  .ethos-list p{font-size:.98rem;color:#3c3833;max-width:44rem}
+
+  /* ---- visit ---- */
+  .visit{background:var(--paper);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+  @media(max-width:760px){.visit-grid{grid-template-columns:1fr;gap:2rem}}
+  .info-block h3{font-size:1.15rem;letter-spacing:.08em;margin-bottom:.7rem;color:var(--amber-deep)}
+  .info-block p{font-size:1rem;margin-bottom:.5rem}
+  .info-block a{font-weight:600}
+  table.hours{width:100%;border-collapse:collapse;font-size:1rem;max-width:26rem}
+  table.hours td{padding:.45rem .2rem;border-bottom:1px solid var(--line)}
+  table.hours td:last-child{text-align:right;font-weight:600}
+  .hours-note{font-size:.8rem;color:#6d675c;margin-top:.6rem}
+  .rating-line{font-size:1.05rem;font-weight:600;margin-top:1.2rem}
+  .rating-line span{color:var(--amber-deep)}
+  .big-call{margin-top:1.6rem}
+  .big-call .btn{font-size:1.15rem;padding:1rem 2.2rem;background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .big-call .btn:hover{background:var(--amber-deep);border-color:var(--amber-deep);color:var(--ink)}
+
+  /* ---- footer ---- */
+  footer{background:var(--ink);color:#8f887a;padding:2.5rem 1.25rem;text-align:center;font-size:.85rem}
+  footer .fname{font-family:'Oswald',sans-serif;color:var(--paper);font-size:1.1rem;letter-spacing:.06em;margin-bottom:.8rem}
+  footer p{max-width:42rem;margin:0 auto .6rem}
+  footer .credit{color:var(--amber);font-weight:600;margin-top:1rem}
+  footer a{color:var(--concrete);font-weight:600}
+
+  .skip{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+
+<div class="preview-strip"><strong>Design Preview.</strong> This is a design preview concept created by Freightfolio, not the business's official site.</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home"><span class="seven">77</span> ART COLLECTIVE</a>
+    <nav class="links" aria-label="Section navigation">
+      <a href="#studio">Studio</a>
+      <a href="#artist">Artist</a>
+      <a href="#ethos">Ethos</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="nav-cta" href="tel:+13176722247">Call to book</a>
+  </div>
+</header>
+
+<main id="home">
+
+  <div class="hero">
+    <div class="hero-inner">
+      <span class="hero-kicker">Downtown Indianapolis</span>
+      <h1><span class="amber">77</span> ART<br>COLLECTIVE</h1>
+      <div class="tagline">Custom tattoo studio in downtown Indianapolis</div>
+      <p class="lede">A Black-owned studio on Illinois Street. Custom work, flash, and cover-ups from artists who know their craft. Call ahead to talk through your idea.</p>
+      <div class="hero-cta-row">
+        <a class="btn btn-solid" href="tel:+13176722247">Call to book &middot; (317) 672-2247</a>
+        <a class="btn btn-ghost" href="#visit">Find the shop</a>
+      </div>
+      <p class="hero-disclosure"><strong>Design Preview:</strong> This is a design preview concept created by Freightfolio, not the business's official site. Photos shown are decorative concept illustrations, not the studio's actual work.</p>
+    </div>
+  </div>
+
+  <div class="wall" aria-label="Concept art panels">
+    <div class="wall-grid">
+      <figure class="panel">
+        <div class="art" role="img" aria-label="Decorative concept illustration">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#141210"/>
+            <path d="M-20 230 Q120 150 220 200 T430 140 L430 320 L-20 320 Z" fill="#e08e2b" opacity="0.85"/>
+            <path d="M-20 250 Q140 190 260 225 T430 190" stroke="#efe9db" stroke-width="5" fill="none"/>
+            <circle cx="310" cy="70" r="46" fill="none" stroke="#efe9db" stroke-width="6"/>
+            <circle cx="310" cy="70" r="14" fill="#e08e2b"/>
+            <text x="36" y="120" font-family="Oswald, sans-serif" font-size="58" fill="#efe9db" letter-spacing="4">FLASH</text>
+            <text x="36" y="150" font-family="Oswald, sans-serif" font-size="22" fill="#b9b1a0" letter-spacing="8">WALL</text>
+            <rect x="36" y="196" width="90" height="8" fill="#e08e2b"/>
+          </svg>
+        </div>
+        <figcaption><em>Decorative illustration.</em> Concept art only, not studio work.</figcaption>
+      </figure>
+      <figure class="panel">
+        <div class="art" role="img" aria-label="Decorative concept illustration">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#d8d2c4"/>
+            <path d="M200 30 L368 270 L32 270 Z" fill="none" stroke="#141210" stroke-width="10"/>
+            <path d="M200 95 L300 240 L100 240 Z" fill="#e08e2b"/>
+            <path d="M200 140 L262 230 L138 230 Z" fill="#141210"/>
+            <text x="200" y="290" text-anchor="middle" font-family="Oswald, sans-serif" font-size="24" fill="#141210" letter-spacing="10">INDY</text>
+            <circle cx="70" cy="60" r="10" fill="#141210"/>
+            <circle cx="330" cy="60" r="10" fill="#141210"/>
+          </svg>
+        </div>
+        <figcaption><em>Decorative illustration.</em> Concept art only, not studio work.</figcaption>
+      </figure>
+      <figure class="panel">
+        <div class="art" role="img" aria-label="Decorative concept illustration">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#141210"/>
+            <rect x="30" y="30" width="340" height="240" fill="none" stroke="#e08e2b" stroke-width="4"/>
+            <path d="M60 210 q40 -90 80 -60 q30 22 60 -50 q18 -55 60 -40" stroke="#efe9db" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <path d="M60 240 q50 -70 100 -45 q40 18 100 -60" stroke="#b9b1a0" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <text x="60" y="70" font-family="Oswald, sans-serif" font-size="26" fill="#e08e2b" letter-spacing="6">LINEWORK</text>
+            <text x="60" y="98" font-family="Oswald, sans-serif" font-size="26" fill="#efe9db" letter-spacing="6">SESSION</text>
+          </svg>
+        </div>
+        <figcaption><em>Decorative illustration.</em> Concept art only, not studio work.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section class="block" id="studio">
+    <div class="track-head">
+      <span class="track-no">01</span>
+      <h2>The Studio</h2>
+    </div>
+    <div class="cols">
+      <div>
+        <p class="pull">Custom ink, <span class="amber">gallery</span> roots.</p>
+      </div>
+      <div>
+        <p>77 Art Collective LLC is a custom tattoo studio in downtown Indianapolis. Around town it is also known as Studio 77 Tattoos.</p>
+        <p>It is a Black-owned studio in downtown Indianapolis. The room has more of a gallery feel than a typical shop. Art on the walls, artists who take the work seriously.</p>
+        <p>Custom pieces, flash, and cover-ups. Bring your idea or browse the flash wall. Every session starts with a conversation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block spot" id="artist" style="max-width:none;background:var(--ink);color:var(--paper)">
+    <div style="max-width:1100px;margin:0 auto">
+      <div class="track-head">
+        <span class="track-no">02</span>
+        <h2>Artist Spotlight</h2>
+      </div>
+      <div class="spot-card">
+        <figure class="artist-art">
+          <svg viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#e08e2b" stroke-width="3"><circle cx="100" cy="78" r="34"/><path d="M66 78 h-28 M134 78 h28 M100 44 v-26 M100 112 v26" stroke-linecap="round"/><path d="M40 150 q30 -26 60 0 t60 0" stroke="#d8d2c4" stroke-width="2.5"/><path d="M52 168 q24 -18 48 0 t48 0" stroke="#d8d2c4" stroke-width="2"/></g><circle cx="100" cy="78" r="10" fill="#e08e2b"/></svg>
+          <figcaption>Concept art drawn for this preview</figcaption>
+        </figure>
+        <div>
+          <span class="name-tag">Featured artist</span>
+          <h3>Brian Winston</h3>
+          <p>Brian Winston founded Studio 77, the downtown Indianapolis shop also known as 77 Art Collective. He works out of the shop on Illinois Street.</p>
+          <p>Have a piece in mind? Call the shop and ask for Brian. Talk through the idea, placement, and sizing before you sit down.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="ethos">
+    <div class="track-head">
+      <span class="track-no">03</span>
+      <h2>Collective Ethos</h2>
+    </div>
+    <ul class="ethos-list">
+      <li>
+        <span class="tno">A1</span>
+        <div>
+          <h3>Custom first</h3>
+          <p>The shop's name is 77 Art Collective for a reason. Pieces are drawn up for the person in the chair, not pulled off a shelf.</p>
+        </div>
+      </li>
+      <li>
+        <span class="tno">A2</span>
+        <div>
+          <h3>Conversation before the needle</h3>
+          <p>Good tattoos come from good communication. You talk it through first: design, placement, size. No surprises.</p>
+        </div>
+      </li>
+      <li>
+        <span class="tno">A3</span>
+        <div>
+          <h3>A room that feels like Indy</h3>
+          <p>Downtown Indianapolis, Black-owned. That pride carries into the work.</p>
+        </div>
+      </li>
+      <li>
+        <span class="tno">A4</span>
+        <div>
+          <h3>Cover-ups welcome</h3>
+          <p>Old work you do not love anymore is fair game. Bring it in and talk through what a cover-up could look like.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="block visit" id="visit" style="max-width:none">
+    <div style="max-width:1100px;margin:0 auto">
+      <div class="track-head">
+        <span class="track-no">04</span>
+        <h2>Visit the Shop</h2>
+      </div>
+      <div class="visit-grid">
+        <div class="info-block">
+          <h3>Find us</h3>
+          <p><strong>77 Art Collective LLC</strong><br>
+          745 N Illinois St<br>
+          Indianapolis, IN 46204</p>
+          <p><a href="https://www.google.com/maps/search/?api=1&query=745+N+Illinois+St+Indianapolis+IN+46204" target="_blank" rel="noopener">Get directions on Google Maps</a></p>
+          <p class="rating-line"><span>4.8 from 112 Google reviews</span></p>
+        </div>
+        <div class="info-block">
+          <h3>Hours (per Vagaro)</h3>
+          <table class="hours">
+            <tr><td>Monday</td><td>12 PM - 10 PM</td></tr>
+            <tr><td>Tuesday</td><td>12 PM - 10 PM</td></tr>
+            <tr><td>Wednesday</td><td>12 PM - 10 PM</td></tr>
+            <tr><td>Thursday</td><td>12 PM - 10 PM</td></tr>
+            <tr><td>Friday</td><td>12 PM - 10 PM</td></tr>
+            <tr><td>Saturday</td><td>12 PM - 10 PM</td></tr>
+            <tr><td>Sunday</td><td>12 PM - 7 PM</td></tr>
+          </table>
+          <p class="hours-note">Hours shown as listed on the shop's Vagaro page. Call ahead to confirm before you come by.</p>
+          <div class="big-call">
+            <a class="btn" href="tel:+13176722247">Call to book &middot; (317) 672-2247</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="fname">77 ART COLLECTIVE</div>
+  <p><strong>Design Preview:</strong> This is a design preview concept created by Freightfolio, not the business's official site. All artwork shown is decorative concept illustration, not the studio's actual work.</p>
+  <p>745 N Illinois St, Indianapolis, IN 46204 &middot; <a href="tel:+13176722247">(317) 672-2247</a></p>
+  <p class="credit">Concept by Freightfolio</p>
+</footer>
+
+</body>
+</html>
