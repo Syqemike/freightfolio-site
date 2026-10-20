@@ -114,14 +114,13 @@
       url: "https://freightfolio.net/concepts/the-social-suite-d49077bbe945d258/",
       desktop: "img/showcase/social-suite-thumb.jpg",
       mobile: "img/showcase/social-suite-thumb.jpg",
-      blurb: "A salon built around what it does best: color. Stylist spotlight, real reviews, and booking front and center.",
+      blurb: "A color-focused salon concept with listed services, clear hours, and a direct phone contact.",
       features: [
-        "Color and balayage service menu",
-        "Stylist spotlight section",
-        "Google reviews display (4.9 stars)",
-        "Photo gallery of salon work",
-        "Click-to-call booking line",
-        "Hours and location block"
+        "Color, cut, weave, and brow service categories",
+        "Illustrative photography, labeled",
+        "Click-to-call contact",
+        "Hours and location block",
+        "Design preview disclosure"
       ]
     },
     "hotspot": {
@@ -199,14 +198,13 @@
       url: "https://freightfolio.net/concepts/coxs-barber-shop-396c627653c23a10/",
       desktop: "img/showcase/coxs-thumb.jpg",
       mobile: "img/showcase/coxs-thumb.jpg",
-      blurb: "Old-school and proud of it: traditional cuts, fair prices, and the number-system walk-in explained.",
+      blurb: "A straightforward walk-in barbershop concept with its location, hours, phone, and sourced shop photos.",
       features: [
-        "Traditional cut service menu",
-        "Walk-in number system explained",
-        "Google reviews display (4.7 stars)",
-        "Shop photo gallery",
+        "Walk-in only; no appointments",
+        "Photos from Cox's Google Business listing",
         "Click-to-call phone number",
-        "Hours and location block"
+        "Hours and location block",
+        "Design preview disclosure"
       ]
     },
     "studio-601": {
