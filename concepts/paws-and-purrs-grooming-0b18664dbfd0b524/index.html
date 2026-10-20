@@ -230,6 +230,7 @@
     border-right: 2px dashed rgba(217,110,27,0.4);
   }
   .illustration-frame svg { display: block; width: 100%; height: auto; }
+  .illustration-frame.no-tilt { transform: none; }
   .illustration-caption {
     text-align: center;
     font-size: 13px;
@@ -294,10 +295,11 @@
     width: 120px;
     height: 30px;
     background: #eecfa3;
+  }
   .hour-row {
     display: flex;
     justify-content: space-between;
-    gap: 12px;
+    gap: 28px;
     padding: 10px 4px;
     border-bottom: 1px dashed #cbbfa4;
     font-size: 17px;
@@ -532,7 +534,6 @@
         <div class="hour-row"><span class="day">Saturday</span><span>9:00 AM - 4:00 PM</span></div>
         <div class="hour-row"><span class="day">Sunday</span><span class="closed">Closed</span></div>
         <div class="hour-row"><span class="day">Monday</span><span class="closed">Closed</span></div>
-        <p class="hours-foot">Want a weekend visit? Call to ask about Saturday availability.</p>
       </div>
     </div>
   </section>
@@ -557,7 +558,7 @@
           <a class="btn btn-secondary" href="https://www.facebook.com/p/Paws-and-Purrs-Pet-Grooming-100055420518714/">Facebook page</a>
           <p class="map-note">We are easy to reach from anywhere in Hampton Roads. Parking is right by the door.</p>
         </div>
-        <figure class="illustration-frame">
+        <figure class="illustration-frame no-tilt">
           <svg viewBox="0 0 300 220" role="img" aria-label="Hand-drawn style illustration of a map pin with paw prints">
             <rect x="30" y="20" width="240" height="160" rx="14" fill="#FDF6E9" stroke="#144E56" stroke-width="5"/>
             <path d="M30 70 L 270 70 M30 120 L 270 120" stroke="#144E56" stroke-width="3" opacity="0.25"/>
