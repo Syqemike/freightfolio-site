@@ -1,3 +1,14 @@
+## Mandatory final clipart check — owner instruction October 20, 2026, 13:05 Central
+
+ChatGPT must reject a submitted website version if ANY decorative clipart or concept-art panel remains. Remove illustrated tools/chairs, fake emblems, cartoons, generated decorative drawings, raster or SVG stock illustrations, placeholder art and fabricated maps. A concept-art label does not make these acceptable. Prefer the correct business's photos; use relevant, properly licensed STOCK PHOTOGRAPHY instead of clipart when needed, honestly presented. Authentic business logos and ordinary functional navigation icons are permitted.
+
+Before final approval:
+- Inspect every rendered section/page of the exact submitted commit, including lower sections, backgrounds and footer. Check source/assets for SVG, raster, CSS/canvas and background artwork; image-based clipart also fails.
+- Record a commit-specific Clipart check PASS or FAIL and rendered review evidence in the prospect release record. Agent PASS, a source scan alone, or an inspected hero alone cannot establish visual clearance. If desktop visual access is unavailable, leave final visual review incomplete.
+- Fix routine removals/replacements directly on chatgpt-fixes after checking ownership and current heads. Review the corrected preview before release and verify production afterward. Preserve approved photographic design and unrelated code.
+- Rejected versions remain held until the corrected exact version passes final review. A draft/status update or replacing only one illustration cannot clear unresolved artwork. Preserve Mike's actual approval/rejection and contact/send history; no automatic resending.
+- Muse must acknowledge saved Website Dev/QA instruction synchronization with actual saved versions. Keep mobile NOT VERIFIED — OWNER WAIVER nonblocking and Mike's final actual-message dashboard approval requirement.
+
 # Freightfolio website release workflow
 
 Mike authorized ChatGPT to implement routine final website corrections directly on October 19, 2026. ChatGPT owns scoped patches, rendered preview review, final website approval, production verification, and exact-commit Notion records. Muse owns research/build coordination, verified recipients, tailored outreach drafts, and scheduling. Mike retains final dashboard approval of actual outreach.
