@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Off The Hook Barber Shop | Atlanta, GA | Design Preview</title>
+<meta name="description" content="Design preview for Off The Hook Barber Shop, 257-A Peters St SW, Atlanta, GA. A playful place that takes haircuts seriously.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#10243e;
+  --navy-deep:#0b1a2e;
+  --coral:#ff6f61;
+  --coral-dark:#e05244;
+  --cream:#faf3e7;
+  --cream-soft:#f4e9d4;
+  --ink:#1d2a38;
+  --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:1.05rem;
+}
+h1,h2,h3{font-family:'Baloo 2',cursive;line-height:1.15;color:var(--navy)}
+img,svg{display:block;max-width:100%}
+a{color:var(--coral-dark)}
+.wrap{width:min(1080px,92%);margin:0 auto}
+
+/* Disclosure bar */
+.disclosure{
+  background:var(--navy-deep);
+  color:var(--cream);
+  text-align:center;
+  font-size:.82rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  padding:.65rem 1rem;
+}
+.disclosure strong{color:var(--coral)}
+
+/* Header */
+header.site{
+  background:var(--navy);
+  color:var(--cream);
+  position:sticky;top:0;z-index:50;
+  border-bottom:3px solid var(--coral);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--cream)}
+.brand svg{width:44px;height:44px;flex:none}
+.brand-name{font-family:'Baloo 2',cursive;font-weight:800;font-size:1.05rem;line-height:1.2}
+.brand-name small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--coral)}
+nav.main{display:flex;gap:.4rem;flex-wrap:wrap}
+nav.main a{
+  color:var(--cream);text-decoration:none;font-weight:600;font-size:.95rem;
+  padding:.5rem .8rem;border-radius:999px;
+}
+nav.main a:hover{background:rgba(255,255,255,.12);color:var(--coral)}
+
+/* Hero */
+.hero{
+  background:
+    radial-gradient(700px 300px at 85% 10%, rgba(255,111,97,.16), transparent 60%),
+    var(--navy);
+  color:var(--cream);
+  padding:4rem 0 3rem;
+  position:relative;overflow:hidden;
+}
+.hero h1{color:var(--white);font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800;margin-bottom:.6rem}
+.hero h1 .hook{color:var(--coral)}
+.tagline{
+  font-family:'Baloo 2',cursive;font-size:clamp(1.25rem,3vw,1.7rem);
+  color:var(--coral);font-weight:700;margin-bottom:1.2rem;
+}
+.hero p.lead{max-width:36rem;color:#d9e2ec;margin-bottom:1.6rem}
+.hero-art{display:flex;gap:1.5rem;align-items:center;margin-bottom:2rem;flex-wrap:wrap}
+.hero-art figure{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:1.2rem;padding:1.2rem}
+.hero-art figcaption{font-size:.78rem;color:#9fb0c3;margin-top:.6rem;text-align:center}
+.cta-row{display:flex;gap:.8rem;flex-wrap:wrap;align-items:center}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:700;
+  padding:.95rem 1.7rem;border-radius:999px;font-size:1.02rem;
+  background:var(--coral);color:#fff;border:2px solid var(--coral);
+}
+.btn:hover{background:var(--coral-dark);border-color:var(--coral-dark)}
+.btn.ghost{background:transparent;color:var(--cream);border-color:rgba(255,255,255,.5)}
+.btn.ghost:hover{border-color:var(--coral);color:var(--coral)}
+.rating{display:inline-block;margin-top:1.4rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#f3d9a4;padding:.55rem 1.1rem;border-radius:999px;font-weight:600;font-size:.95rem}
+
+/* Wave divider */
+.wave{display:block;width:100%;height:54px;margin-bottom:-1px}
+
+/* Sections */
+section{padding:3.5rem 0}
+section.alt{background:var(--cream-soft)}
+.eyebrow{
+  font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--coral-dark);margin-bottom:.5rem;
+}
+section h2{font-size:clamp(1.8rem,4.5vw,2.6rem);margin-bottom:1rem}
+section .intro{max-width:42rem;margin-bottom:2rem}
+
+/* Services grid */
+.services-grid{display:grid;gap:1.1rem;grid-template-columns:1fr}
+.card{
+  background:var(--white);border-radius:1.1rem;padding:1.4rem 1.5rem;
+  border-top:5px solid var(--coral);
+  box-shadow:0 8px 24px rgba(16,36,62,.08);
+}
+.card:nth-child(even){border-top-color:var(--navy)}
+.card h3{font-size:1.25rem;margin-bottom:.4rem}
+.card p{font-size:.98rem;color:#41505f}
+.card .icon{width:40px;height:40px;margin-bottom:.6rem}
+
+/* Shop section */
+.shop-layout{display:grid;gap:2rem;grid-template-columns:1fr}
+.shop-layout figure{background:var(--white);border-radius:1.2rem;padding:1.4rem;box-shadow:0 8px 24px rgba(16,36,62,.08)}
+.shop-layout figcaption{font-size:.82rem;color:#68788a;margin-top:.7rem}
+.shop-copy p{margin-bottom:1rem}
+.shop-copy p:last-child{margin-bottom:0}
+.highlight{
+  background:var(--navy);color:var(--cream);border-radius:1.1rem;
+  padding:1.4rem 1.6rem;margin-top:1.6rem;border-left:6px solid var(--coral);
+}
+.highlight strong{color:var(--coral)}
+
+/* Visit */
+.visit-grid{display:grid;gap:1.6rem;grid-template-columns:1fr}
+.hours-card{background:var(--navy);color:var(--cream);border-radius:1.2rem;padding:1.8rem}
+.hours-card h3{color:var(--white);margin-bottom:1rem;font-size:1.4rem}
+.hours-card ul{list-style:none}
+.hours-card li{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:.98rem}
+.hours-card li:last-child{border-bottom:none}
+.hours-card .day{font-weight:600;color:var(--coral)}
+.contact-card{background:var(--white);border-radius:1.2rem;padding:1.8rem;box-shadow:0 8px 24px rgba(16,36,62,.08)}
+.contact-card h3{font-size:1.4rem;margin-bottom:1rem}
+.contact-card p{margin-bottom:1rem}
+.contact-card .phone{font-family:'Baloo 2',cursive;font-size:1.5rem;font-weight:800;color:var(--navy);text-decoration:none}
+.contact-card .phone:hover{color:var(--coral-dark)}
+.fineprint{font-size:.92rem;color:#5a6a7b}
+
+footer{
+  background:var(--navy-deep);color:#aeb9c6;font-size:.88rem;padding:2.2rem 0;text-align:center;
+}
+footer .hookmark{margin:0 auto 1rem}
+footer p{max-width:46rem;margin:0 auto .8rem}
+footer a{color:var(--coral)}
+
+@media (min-width:700px){
+  .services-grid{grid-template-columns:1fr 1fr}
+  .shop-layout{grid-template-columns:1.1fr .9fr;align-items:start}
+  .visit-grid{grid-template-columns:1fr 1fr;align-items:start}
+}
+@media (min-width:1000px){
+  .services-grid{grid-template-columns:1fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="disclosure"><strong>Design Preview</strong> &nbsp;|&nbsp; Website concept by Freightfolio for Off The Hook Barber Shop</div>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Off The Hook Barber Shop home">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#ff6f61" stroke-width="5"/>
+        <path d="M50 20 L50 58 C50 74 66 78 70 64 C72 56 64 52 60 56" fill="none" stroke="#faf3e7" stroke-width="6" stroke-linecap="round"/>
+        <line x1="60" y1="56" x2="68" y2="64" stroke="#ff6f61" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name">Off The Hook<small>Barber Shop</small></span>
+    </a>
+    <nav class="main" aria-label="Section navigation">
+      <a href="#services">Services</a>
+      <a href="#shop">The Shop</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Off The Hook <span class="hook">Barber Shop</span></h1>
+    <p class="tagline">A playful place that takes haircuts seriously.</p>
+    <div class="hero-art">
+      <figure>
+        <svg viewBox="0 0 120 120" width="150" height="150" aria-hidden="true">
+          <path d="M60 14 L60 66 C60 90 88 94 92 72 C94 60 84 54 78 60" fill="none" stroke="#ff6f61" stroke-width="7" stroke-linecap="round"/>
+          <line x1="78" y1="60" x2="90" y2="70" stroke="#faf3e7" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="60" cy="14" r="7" fill="none" stroke="#faf3e7" stroke-width="5"/>
+        </svg>
+        <figcaption>Concept art: fish hook line motif</figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="0 0 200 120" width="220" height="132" aria-hidden="true">
+          <rect x="6" y="6" width="188" height="108" rx="14" fill="none" stroke="#faf3e7" stroke-width="5"/>
+          <path d="M40 114 C60 70 80 70 100 114" fill="none" stroke="#ff6f61" stroke-width="6" stroke-linecap="round"/>
+          <path d="M100 114 C120 70 140 70 160 114" fill="none" stroke="#ff6f61" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="100" cy="48" r="14" fill="none" stroke="#faf3e7" stroke-width="5"/>
+        </svg>
+        <figcaption>Concept art: barber chair illustration</figcaption>
+      </figure>
+    </div>
+    <p class="lead">From skin fades to specialty mohawks, every cut gets full attention. The vibe is fun, the standards are serious, and the chair is always ready in Castleberry Hill.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+14045894625">Call to book</a>
+      <a class="btn ghost" href="mailto:info@offthehookbarbershop.com">Email the shop</a>
+    </div>
+    <span class="rating">Rated 4.9 from 15 Google reviews</span>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0 30 Q150 0 300 30 T600 30 T900 30 T1200 30 L1200 60 L0 60 Z" fill="#10243e"/>
+</svg>
+
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h2>Serious skills, playful spirit</h2>
+    <p class="intro">We cut all hair types and textures. Walk in with an idea or leave the plan to us, either way you leave sharp. Appointments are recommended since peak times can get busy.</p>
+    <div class="services-grid">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 30 Q18 18 28 12" fill="none" stroke="#10243e" stroke-width="3" stroke-linecap="round"/><path d="M12 12 L26 30" fill="none" stroke="#ff6f61" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3>Bald fades</h3>
+        <p>Skin fades blended smooth, finished with clean crisp lines.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 34 C14 20 24 14 34 10" fill="none" stroke="#10243e" stroke-width="3" stroke-linecap="round"/><circle cx="33" cy="10" r="3" fill="#ff6f61"/></svg>
+        <h3>Taper cuts</h3>
+        <p>Tapered sides that grow out clean and keep their shape.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="18" r="11" fill="none" stroke="#10243e" stroke-width="3"/><path d="M12 30 L28 30" stroke="#ff6f61" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3>Afros</h3>
+        <p>Shapes that keep natural texture looking its best.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4 L20 30" stroke="#10243e" stroke-width="3" stroke-linecap="round"/><path d="M10 12 Q20 20 30 12" fill="none" stroke="#ff6f61" stroke-width="3" stroke-linecap="round"/><path d="M12 32 L28 32" stroke="#10243e" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3>Specialty mohawks</h3>
+        <p>Bold mohawk designs with detail work that stands out.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="8" width="24" height="18" rx="3" fill="none" stroke="#10243e" stroke-width="3"/><path d="M14 32 L26 32" stroke="#ff6f61" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3>Traditional barbing styles</h3>
+        <p>Classic cuts done the old school way, sharp and timeless.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M14 8 C10 16 10 24 14 32 M26 8 C30 16 30 24 26 32" fill="none" stroke="#10243e" stroke-width="3" stroke-linecap="round"/><path d="M14 14 L26 14 M14 26 L26 26" stroke="#ff6f61" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3>Nail tech on staff</h3>
+        <p>Full nail services available right inside the shop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">The Shop</p>
+    <h2>Hooked on Castleberry Hill</h2>
+    <div class="shop-layout">
+      <div class="shop-copy">
+        <p>Off The Hook sits in Atlanta's Castleberry Hill arts district, and the room matches the neighborhood. Laid back and colorful, with an energy that keeps things fun from the first cut to the last.</p>
+        <p>The shop has built a name for itself with a celebrity clientele, and every client in the chair gets the same serious attention to detail.</p>
+        <div class="highlight">
+          <strong>All hair types and textures welcome.</strong> Come as you are. Leave hooked on a great cut.
+        </div>
+      </div>
+      <figure>
+        <svg viewBox="0 0 300 220" width="100%" aria-hidden="true">
+          <rect x="10" y="10" width="280" height="200" rx="18" fill="#10243e"/>
+          <path d="M30 190 C90 120 120 150 150 100 C180 50 210 90 270 40" fill="none" stroke="#ff6f61" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="150" cy="100" r="10" fill="#faf3e7"/>
+          <path d="M60 170 L90 170 M210 150 L240 150" stroke="#faf3e7" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="230" cy="60" r="16" fill="none" stroke="#ff6f61" stroke-width="4"/>
+        </svg>
+        <figcaption>Concept art: Castleberry Hill storefront illustration</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <p class="eyebrow">Visit</p>
+    <h2>Come get hooked</h2>
+    <p class="intro">Appointments are recommended, and peak times can get busy. Questions about a cut? Call or send an email and we will point you in the right direction.</p>
+    <div class="visit-grid">
+      <div class="hours-card">
+        <h3>Shop hours</h3>
+        <ul>
+          <li><span class="day">Tue to Thu</span><span>8:00 AM to 8:00 PM</span></li>
+          <li><span class="day">Fri to Sat</span><span>7:00 AM to 8:00 PM</span></li>
+          <li><span class="day">Sun and Mon</span><span>Closed</span></li>
+        </ul>
+      </div>
+      <div class="contact-card">
+        <h3>Get in touch</h3>
+        <p><a class="phone" href="tel:+14045894625">(404) 589-4625</a></p>
+        <div class="cta-row" style="margin-bottom:1.2rem">
+          <a class="btn" href="tel:+14045894625">Call to book</a>
+          <a class="btn ghost" style="color:var(--navy);border-color:var(--navy)" href="mailto:info@offthehookbarbershop.com">info@offthehookbarbershop.com</a>
+        </div>
+        <p class="fineprint">257-A Peters St SW, Atlanta, GA 30313. Questions? Call (404) 589-4625.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg class="hookmark" viewBox="0 0 100 100" width="52" height="52" aria-hidden="true">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#ff6f61" stroke-width="5"/>
+      <path d="M50 20 L50 58 C50 74 66 78 70 64 C72 56 64 52 60 56" fill="none" stroke="#faf3e7" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+    <p><strong style="color:#faf3e7">Off The Hook Barber Shop</strong> | 257-A Peters St SW, Atlanta, GA 30313 | <a href="tel:+14045894625">(404) 589-4625</a> | <a href="mailto:info@offthehookbarbershop.com">info@offthehookbarbershop.com</a></p>
+    <p>This is an unsolicited website design concept created by Freightfolio. It was not commissioned, affiliated with, or endorsed by Off The Hook Barber Shop. This is a design preview only.</p>
+  </div>
+</footer>
+
+</body>
+</html>

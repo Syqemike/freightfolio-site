@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Yocutz901 | Memphis Barber | Infamous Kutz Barbershop</title>
+<meta name="description" content="Design preview concept for Yocutz901, barber Mario Askew at Infamous Kutz Barbershop, 1425 N Germantown Pkwy, Memphis, TN. Book at book.thecut.co/yocutz901.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0b0d0b;
+  --volt:#c8ff1f;
+  --white:#ffffff;
+  --offwhite:#f4f5f1;
+  --gray:#1a1d1a;
+  --line:#2a2e2a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--black);
+  color:var(--white);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.display{font-family:'Anton',sans-serif;letter-spacing:.01em;line-height:.95;font-weight:400}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* disclosure bar */
+.disclosure{
+  background:var(--volt);
+  color:var(--black);
+  font-size:.72rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.12em;
+  padding:.6rem 1rem;
+  text-align:center;
+}
+
+/* nav */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(11,13,11,.96);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:1120px;margin:0 auto;padding:.8rem 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+}
+.brand{font-family:'Anton',sans-serif;font-size:1.3rem;letter-spacing:.02em}
+.brand span{color:var(--volt)}
+.nav-links{display:flex;gap:1.1rem;list-style:none}
+.nav-links a{
+  text-decoration:none;font-size:.8rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.1em;color:var(--white);
+}
+.nav-links a:hover{color:var(--volt)}
+.nav-book{
+  background:var(--volt);color:var(--black)!important;
+  padding:.5rem .9rem;border-radius:3px;
+}
+
+/* hero */
+.hero{
+  position:relative;overflow:hidden;
+  padding:4.5rem 0 4rem;
+  background:
+    linear-gradient(115deg, transparent 0%, transparent 62%, var(--volt) 62.2%, var(--volt) 64%, transparent 64.2%),
+    var(--black);
+}
+.hero-giant{
+  position:absolute;right:-2rem;top:1rem;
+  font-family:'Anton',sans-serif;
+  font-size:clamp(10rem,32vw,26rem);
+  line-height:.8;color:transparent;
+  -webkit-text-stroke:2px var(--line);
+  user-select:none;pointer-events:none;
+}
+.hero-eyebrow{
+  display:inline-block;font-size:.75rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.22em;
+  color:var(--volt);margin-bottom:1rem;
+}
+.hero h1{
+  font-size:clamp(3.4rem,11vw,8.5rem);
+  text-transform:uppercase;
+}
+.hero h1 .cut{color:var(--volt)}
+.hero-sub{
+  margin-top:1.2rem;max-width:34rem;
+  font-size:1.05rem;color:#cfd4cf;
+}
+.hero-sub strong{color:var(--white)}
+.hero-cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.9rem}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:700;
+  text-transform:uppercase;letter-spacing:.08em;font-size:.9rem;
+  padding:1rem 1.9rem;border-radius:3px;
+  transform:skewX(-8deg);transition:transform .15s ease, box-shadow .15s ease;
+}
+.btn span{display:inline-block;transform:skewX(8deg)}
+.btn:hover{transform:skewX(-8deg) translateY(-2px)}
+.btn-volt{background:var(--volt);color:var(--black);box-shadow:0 6px 0 #5f7a0d}
+.btn-ghost{border:2px solid var(--white);color:var(--white)}
+.hero-meta{
+  margin-top:2.4rem;display:flex;flex-wrap:wrap;gap:1.4rem;
+  font-size:.85rem;color:#aeb4ae;
+}
+.hero-meta b{color:var(--white)}
+
+/* marquee band */
+.band{
+  background:var(--volt);color:var(--black);
+  overflow:hidden;white-space:nowrap;
+  border-top:1px solid var(--black);border-bottom:1px solid var(--black);
+}
+.band-inner{
+  display:inline-block;padding:.85rem 0;
+  font-family:'Anton',sans-serif;font-size:1.4rem;
+  text-transform:uppercase;letter-spacing:.06em;
+  animation:slide 22s linear infinite;
+}
+.band-inner a{color:var(--black);text-decoration:none}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:4rem 0}
+.kicker{
+  font-size:.75rem;font-weight:700;text-transform:uppercase;
+  letter-spacing:.25em;color:var(--volt);margin-bottom:.8rem;
+}
+h2{font-size:clamp(2.2rem,6vw,3.6rem);text-transform:uppercase;margin-bottom:.6rem}
+h2 .volt{color:var(--volt)}
+.lede{color:#cfd4cf;max-width:38rem;margin-bottom:2.2rem}
+
+/* ticket rows */
+.ticket{
+  display:grid;grid-template-columns:1fr;gap:.4rem;
+  background:var(--offwhite);color:var(--black);
+  border-radius:6px;overflow:hidden;
+  margin-bottom:1.2rem;position:relative;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 18px),97% 100%,94% calc(100% - 10px),91% 100%,88% calc(100% - 10px),85% 100%,82% calc(100% - 10px),79% 100%,76% calc(100% - 10px),73% 100%,70% calc(100% - 10px),67% 100%,64% calc(100% - 10px),61% 100%,58% calc(100% - 10px),55% 100%,52% calc(100% - 10px),49% 100%,46% calc(100% - 10px),43% 100%,40% calc(100% - 10px),37% 100%,34% calc(100% - 10px),31% 100%,28% calc(100% - 10px),25% 100%,22% calc(100% - 10px),19% 100%,16% calc(100% - 10px),13% 100%,10% calc(100% - 10px),7% 100%,4% calc(100% - 10px),0 100%);
+}
+.ticket-top{
+  padding:1.6rem 1.6rem .4rem;
+  display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+}
+.ticket-name{font-family:'Anton',sans-serif;font-size:1.6rem;text-transform:uppercase}
+.ticket-price{
+  font-family:'Anton',sans-serif;font-size:2.2rem;color:#0b0d0b;
+  background:var(--volt);padding:.1rem .7rem;border-radius:3px;
+  white-space:nowrap;
+}
+.ticket-desc{padding:0 1.6rem;font-size:.95rem;color:#333833}
+.ticket-meta{
+  padding:.6rem 1.6rem 1.4rem;
+  display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;
+  font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;
+  color:#4c524c;
+}
+.ticket-barcode{padding:0 1.6rem 1.8rem;opacity:.85}
+.policy{
+  margin-top:1.8rem;border:1px dashed var(--line);
+  padding:1.1rem 1.4rem;font-size:.9rem;color:#aeb4ae;border-radius:4px;
+}
+.policy strong{color:var(--white)}
+
+/* about */
+.about{background:#0f120f;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:1fr;gap:2rem;align-items:start}
+.about-card{
+  background:var(--gray);border:1px solid var(--line);border-radius:6px;
+  padding:1.2rem;
+}
+.about-card figcaption{
+  margin-top:.9rem;font-size:.75rem;color:#8b918b;
+  text-transform:uppercase;letter-spacing:.1em;
+}
+.about h3{font-size:1.8rem;text-transform:uppercase;margin-bottom:.8rem}
+.about p{color:#cfd4cf;margin-bottom:1rem;max-width:34rem}
+.about p strong{color:var(--white)}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+.hours-table{width:100%;border-collapse:collapse;background:var(--gray);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.hours-table th,.hours-table td{padding:1rem 1.3rem;text-align:left}
+.hours-table th{
+  font-family:'Anton',sans-serif;font-size:1rem;text-transform:uppercase;
+  letter-spacing:.05em;background:var(--volt);color:var(--black);
+}
+.hours-table td{border-top:1px solid var(--line);font-size:.95rem}
+.hours-table td:last-child{font-weight:600;color:var(--volt)}
+.visit-card{
+  background:var(--offwhite);color:var(--black);border-radius:6px;padding:1.8rem;
+  transform:rotate(-1deg);
+}
+.visit-card h3{font-size:1.6rem;text-transform:uppercase;margin-bottom:.6rem}
+.visit-card address{font-style:normal;font-size:1rem;margin-bottom:1rem;line-height:1.5}
+.visit-card a.phone{
+  font-family:'Anton',sans-serif;font-size:1.8rem;color:var(--black);
+  text-decoration:none;display:inline-block;margin:.4rem 0 1.2rem;
+}
+.visit-card a.phone:hover{text-decoration:underline}
+.rating-line{margin-top:1rem;font-size:.85rem;color:#333833}
+
+/* footer */
+footer{background:#070907;border-top:1px solid var(--line);padding:2.5rem 0 3rem}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:1.4rem;font-size:.85rem;color:#8b918b}
+.foot-grid a{color:var(--volt)}
+.foot-brand{font-family:'Anton',sans-serif;font-size:1.4rem;color:var(--white)}
+.foot-brand span{color:var(--volt)}
+.disclaimer{font-size:.78rem;line-height:1.6;color:#6e746e;margin-top:1rem;max-width:46rem}
+
+@media(min-width:700px){
+  .visit-grid{grid-template-columns:1.2fr 1fr}
+  .about-grid{grid-template-columns:1fr 1.2fr}
+  .ticket{grid-template-columns:1fr auto}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(min-width:1000px){
+  section{padding:5.5rem 0}
+  .hero{padding:6rem 0 5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design preview concept created by Freightfolio for Yocutz901. Not affiliated with or endorsed by the business.</div>
+
+<nav>
+  <div class="nav-inner">
+    <div class="brand">YO<span>CUTZ</span>901</div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="https://book.thecut.co/yocutz901" class="nav-book">Book Now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-giant" aria-hidden="true">901</div>
+  <div class="wrap">
+    <p class="hero-eyebrow">Memphis barber concept</p>
+    <h1>YO<span class="cut">CUTZ</span>901</h1>
+    <p class="hero-sub"><strong>Mario Askew</strong>, barber at Infamous Kutz Barbershop on Germantown Parkway in Memphis. Straightforward cuts with real prices and online booking through theCut.</p>
+    <div class="hero-cta">
+      <a class="btn btn-volt" href="https://book.thecut.co/yocutz901"><span>Book Now</span></a>
+      <a class="btn btn-ghost" href="tel:+19015710022"><span>Call (901) 571-0022</span></a>
+    </div>
+    <div class="hero-meta">
+      <div><b>Booking:</b> theCut app or online at book.thecut.co/yocutz901</div>
+    </div>
+  </div>
+</header>
+
+<div class="band" aria-hidden="true">
+  <div class="band-inner">
+    <a href="https://book.thecut.co/yocutz901">Book Now at book.thecut.co/yocutz901 &nbsp;///&nbsp; Book Now at book.thecut.co/yocutz901 &nbsp;///&nbsp; Book Now at book.thecut.co/yocutz901 &nbsp;///&nbsp; Book Now at book.thecut.co/yocutz901 &nbsp;///&nbsp; </a>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <p class="kicker">Menu</p>
+    <h2>Services <span class="volt">and prices</span></h2>
+    <p class="lede">Every service is booked through theCut, so the price you see is the price you pay. Tap Book Now on any ticket to reserve your time.</p>
+
+    <div class="ticket">
+      <div>
+        <div class="ticket-top">
+          <div class="ticket-name">Haircut + Shave</div>
+          <div class="ticket-price">$50</div>
+        </div>
+        <p class="ticket-desc">A full hour in the chair. Includes a beard and mustache line up plus a shampoo wash and enhancements.</p>
+        <div class="ticket-meta">
+          <span>1 hour</span>
+          <span><a href="https://book.thecut.co/yocutz901">Book Now</a></span>
+        </div>
+        <div class="ticket-barcode" aria-hidden="true">
+          <svg width="180" height="40" viewBox="0 0 180 40" aria-hidden="true"><rect x="0" y="0" width="180" height="40" fill="none"/><rect x="4" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="10" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="15" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="24" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="30" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="38" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="44" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="54" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="60" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="67" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="76" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="82" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="90" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="96" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="106" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="112" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="119" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="128" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="134" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="142" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="148" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="158" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="164" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="171" y="4" width="5" height="32" fill="#0b0d0b"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticket">
+      <div>
+        <div class="ticket-top">
+          <div class="ticket-name">Haircut</div>
+          <div class="ticket-price">$45</div>
+        </div>
+        <p class="ticket-desc">The standard cut. Clean lines and a finish that holds.</p>
+        <div class="ticket-meta">
+          <span>45 minutes</span>
+          <span><a href="https://book.thecut.co/yocutz901">Book Now</a></span>
+        </div>
+        <div class="ticket-barcode" aria-hidden="true">
+          <svg width="180" height="40" viewBox="0 0 180 40" aria-hidden="true"><rect x="4" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="13" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="19" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="26" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="36" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="42" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="50" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="56" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="65" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="72" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="78" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="88" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="94" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="102" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="108" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="117" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="124" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="130" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="140" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="146" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="154" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="160" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="169" y="4" width="3" height="32" fill="#0b0d0b"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticket">
+      <div>
+        <div class="ticket-top">
+          <div class="ticket-name">Teen Cut</div>
+          <div class="ticket-price">$35</div>
+        </div>
+        <p class="ticket-desc">For ages 13 to 17.</p>
+        <div class="ticket-meta">
+          <span>Ages 13 to 17</span>
+          <span><a href="https://book.thecut.co/yocutz901">Book Now</a></span>
+        </div>
+        <div class="ticket-barcode" aria-hidden="true">
+          <svg width="180" height="40" viewBox="0 0 180 40" aria-hidden="true"><rect x="4" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="10" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="20" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="26" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="34" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="40" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="47" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="57" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="63" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="71" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="77" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="86" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="93" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="99" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="109" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="115" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="123" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="129" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="138" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="145" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="151" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="161" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="167" y="4" width="4" height="32" fill="#0b0d0b"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticket">
+      <div>
+        <div class="ticket-top">
+          <div class="ticket-name">Kids Haircut</div>
+          <div class="ticket-price">$30</div>
+        </div>
+        <p class="ticket-desc">For 12 and under.</p>
+        <div class="ticket-meta">
+          <span>Ages 12 and under</span>
+          <span><a href="https://book.thecut.co/yocutz901">Book Now</a></span>
+        </div>
+        <div class="ticket-barcode" aria-hidden="true">
+          <svg width="180" height="40" viewBox="0 0 180 40" aria-hidden="true"><rect x="4" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="14" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="20" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="28" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="34" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="43" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="50" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="56" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="66" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="72" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="80" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="86" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="95" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="102" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="108" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="118" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="124" y="4" width="4" height="32" fill="#0b0d0b"/><rect x="132" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="138" y="4" width="5" height="32" fill="#0b0d0b"/><rect x="147" y="4" width="3" height="32" fill="#0b0d0b"/><rect x="154" y="4" width="2" height="32" fill="#0b0d0b"/><rect x="160" y="4" width="6" height="32" fill="#0b0d0b"/><rect x="170" y="4" width="2" height="32" fill="#0b0d0b"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="policy"><strong>Booking policy:</strong> appointments booked through theCut are non-refundable after booking. That is the shop policy as listed on theCut.</div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <figure class="about-card">
+      <svg viewBox="0 0 400 480" role="img" aria-label="Concept art: stylized clipper blade illustration">
+        <rect width="400" height="480" fill="#141714"/>
+        <rect x="150" y="40" width="100" height="150" rx="12" fill="#0b0d0b" stroke="#c8ff1f" stroke-width="4"/>
+        <g fill="#c8ff1f">
+          <rect x="156" y="48" width="12" height="26"/>
+          <rect x="174" y="48" width="12" height="26"/>
+          <rect x="192" y="48" width="12" height="26"/>
+          <rect x="210" y="48" width="12" height="26"/>
+          <rect x="228" y="48" width="12" height="26"/>
+        </g>
+        <rect x="168" y="200" width="64" height="120" rx="10" fill="#2a2e2a"/>
+        <rect x="182" y="330" width="36" height="60" rx="8" fill="#c8ff1f"/>
+        <path d="M60 430 L340 400" stroke="#c8ff1f" stroke-width="6"/>
+        <path d="M60 450 L340 420" stroke="#2a2e2a" stroke-width="6"/>
+        <text x="200" y="120" text-anchor="middle" font-family="Anton,sans-serif" font-size="34" fill="#0b0d0b" opacity="0">clipper</text>
+      </svg>
+      <figcaption>Original concept art, not a photo of the business.</figcaption>
+    </figure>
+    <div>
+      <p class="kicker">The barber</p>
+      <h3>Mario Askew</h3>
+      <p><strong>Mario</strong>, also known as <strong>DeMario Askew</strong>, cuts hair at <strong>Infamous Kutz Barbershop</strong> in Memphis, Tennessee. He has been booking through theCut since March 2022.</p>
+      <p>His menu keeps it simple with a standard cut and a haircut and shave combo. Teen and kids cuts have their own pricing. The haircut and shave includes a beard and mustache line up plus a shampoo wash and enhancements. Prices and hours are posted on his theCut booking page.</p>
+      <p>Questions? Call <a href="tel:+19015710022" style="color:var(--volt)">(901) 571-0022</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <p class="kicker">Find the chair</p>
+    <h2>Visit <span class="volt">Yocutz901</span></h2>
+    <p class="lede">Appointments book online through theCut. Questions? Call (901) 571-0022.</p>
+    <div class="visit-grid">
+      <div>
+        <table class="hours-table">
+          <tr><th colspan="2">Shop hours</th></tr>
+          <tr><td>Monday to Friday</td><td>8:00 AM to 6:00 PM</td></tr>
+          <tr><td>Saturday</td><td>6:00 AM to 8:00 PM</td></tr>
+          <tr><td>Sunday</td><td>10:00 AM to 5:00 PM</td></tr>
+        </table>
+      </div>
+      <div class="visit-card">
+        <h3>Infamous Kutz Barbershop</h3>
+        <address>
+          1425 N Germantown Pkwy<br>
+          Memphis, TN 38018
+        </address>
+        <a class="phone" href="tel:+19015710022">(901) 571-0022</a><br>
+        <a class="btn btn-volt" href="https://book.thecut.co/yocutz901"><span>Book Now</span></a>
+        <p class="rating-line">Rated <strong>4.83 out of 5</strong> across <strong>71</strong> reviews on theCut, shown once as listed on the booking page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">YO<span>CUTZ</span>901</div>
+        <p style="margin-top:.6rem">Infamous Kutz Barbershop, 1425 N Germantown Pkwy, Memphis, TN 38018.<br>
+        <a href="tel:+19015710022">(901) 571-0022</a> &middot; <a href="https://book.thecut.co/yocutz901">Book on theCut</a> &middot; <a href="https://www.instagram.com/yocutzz901">Instagram</a></p>
+      </div>
+      <div>
+        <p>Services and hours as listed on theCut. This site is a design concept and is not the official site of Yocutz901.</p>
+      </div>
+    </div>
+    <p class="disclaimer">This is an unsolicited website design concept created by Freightfolio. It was not commissioned, affiliated with, or endorsed by Yocutz901. This is a design preview only.</p>
+  </div>
+</footer>
+
+</body>
+</html>

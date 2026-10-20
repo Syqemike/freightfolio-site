@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Design preview: Memphis Professional Barbers Inc, 2032 Sycamore View Rd, Memphis, TN. Haircuts, designs, beard shaping, and spa add-ons.">
+<title>Memphis Professional Barbers Inc | Website Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1d3329;
+  --forest-deep:#12241c;
+  --sand:#f3ede0;
+  --sand-soft:#faf6ec;
+  --copper:#b0703f;
+  --copper-soft:#d9a86f;
+  --ink:#2b2a26;
+  --muted:#6f6a5e;
+  --line:rgba(176,112,63,.35);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  color:var(--ink);
+  background:var(--sand-soft);
+  line-height:1.65;
+  font-size:16px;
+}
+h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-weight:500;line-height:1.2}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+
+/* Disclosure bar */
+.disclosure{
+  background:var(--forest-deep);
+  color:var(--sand);
+  font-size:.78rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  text-align:center;
+  padding:10px 16px;
+}
+.disclosure span{color:var(--copper-soft)}
+
+/* Header / nav */
+header.site{
+  background:var(--forest);
+  color:var(--sand);
+  position:sticky;top:0;z-index:50;
+  border-bottom:1px solid var(--line);
+}
+.navrow{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}
+.brand{font-family:'Fraunces',Georgia,serif;font-size:1.25rem;font-weight:600;color:var(--sand);text-decoration:none}
+nav.main{display:flex;gap:4px;flex-wrap:wrap}
+nav.main a{
+  color:var(--sand);text-decoration:none;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;
+  padding:8px 10px;border-radius:6px;
+}
+nav.main a:hover{background:rgba(243,237,224,.12)}
+.bookbtn{
+  display:inline-block;background:var(--copper);color:#fff;text-decoration:none;
+  padding:12px 26px;border-radius:999px;font-weight:600;font-size:.95rem;letter-spacing:.02em;
+  border:1px solid var(--copper);
+}
+.bookbtn:hover{background:#9a5f33;border-color:#9a5f33}
+.header-cta{white-space:nowrap;font-size:.85rem;padding:10px 20px}
+@media(max-width:820px){
+  nav.main{display:none}
+  .navrow{padding:10px 0}
+}
+
+/* Hero */
+.hero{
+  background:radial-gradient(1200px 500px at 70% -10%, rgba(217,168,111,.16), transparent 60%), var(--forest-deep);
+  color:var(--sand);
+  padding:84px 0 72px;
+  position:relative;overflow:hidden;
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.eyebrow{
+  display:inline-block;font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--copper-soft);margin-bottom:18px;
+}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4.1rem);font-weight:500;margin-bottom:14px}
+.hero h1 em{font-style:italic;color:var(--copper-soft)}
+.tagline{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:clamp(1.15rem,2.4vw,1.55rem);color:var(--sand);opacity:.92;margin-bottom:26px}
+.hero p.lede{max-width:34rem;opacity:.85;margin-bottom:32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.callbtn{
+  display:inline-block;border:1px solid var(--line);color:var(--sand);text-decoration:none;
+  padding:12px 26px;border-radius:999px;font-weight:500;font-size:.95rem;
+}
+.callbtn:hover{border-color:var(--copper-soft);color:#fff}
+.hero-art{border:1px solid var(--line);border-radius:14px;padding:10px;background:rgba(243,237,224,.04)}
+.caption{font-size:.78rem;color:var(--muted);margin-top:10px;text-align:center;letter-spacing:.03em}
+.hero .caption{color:rgba(243,237,224,.65)}
+@media(max-width:820px){.hero-grid{grid-template-columns:1fr;gap:32px}.hero{padding:56px 0 52px}}
+
+/* Copper hairline divider */
+.rule{display:flex;align-items:center;gap:14px;margin:0 auto;max-width:1120px;padding:0 22px}
+.rule::before,.rule::after{content:"";height:1px;flex:1;background:var(--line)}
+.rule i{width:9px;height:9px;background:var(--copper);transform:rotate(45deg);display:block}
+
+/* Sections */
+section.block{padding:76px 0}
+section.block.alt{background:var(--sand)}
+.kicker{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--copper);margin-bottom:14px}
+section.block h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:10px;color:var(--forest-deep)}
+.intro{max-width:38rem;color:var(--muted);margin-bottom:40px}
+section.block.alt h2{color:var(--forest)}
+
+/* Split cards: The Cut / The Spa */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+.panel{
+  background:#fff;border:1px solid rgba(29,51,41,.14);border-radius:16px;
+  padding:34px 30px;position:relative;overflow:hidden;
+}
+.panel::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--copper)}
+.panel h3{font-size:1.5rem;color:var(--forest);margin-bottom:6px}
+.panel .sub{color:var(--muted);font-size:.92rem;margin-bottom:22px}
+ul.services{list-style:none}
+ul.services li{
+  display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+  padding:12px 0;border-bottom:1px dotted rgba(29,51,41,.22);
+}
+ul.services li:last-child{border-bottom:none}
+.svc-name{font-weight:500}
+.svc-price{color:var(--copper);font-weight:600;white-space:nowrap;font-size:.95rem}
+.svc-note{font-size:.82rem;color:var(--muted);display:block;margin-top:2px;font-weight:400}
+.chair{
+  margin-top:26px;background:var(--forest);color:var(--sand);border-radius:14px;
+  padding:28px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;
+}
+.chair h4{font-family:'Fraunces',Georgia,serif;font-size:1.25rem;margin-bottom:8px;color:var(--copper-soft)}
+.chair p{font-size:.94rem;opacity:.88}
+@media(max-width:560px){.chair{grid-template-columns:1fr}}
+
+/* Shop section: asymmetric editorial */
+.shop-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+@media(max-width:760px){.shop-grid{grid-template-columns:1fr}}
+.shop-card{background:var(--forest-deep);color:var(--sand);border-radius:16px;padding:34px 30px}
+.shop-card h3{font-size:1.45rem;margin-bottom:10px;color:var(--copper-soft)}
+.shop-card p{opacity:.88;font-size:.96rem;margin-bottom:14px}
+.shop-card .who{font-family:'Fraunces',Georgia,serif;font-style:italic;color:var(--sand);font-size:1.05rem}
+.art-frame{background:#fff;border:1px solid rgba(29,51,41,.14);border-radius:16px;padding:10px}
+
+/* Visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:760px){.visit-grid{grid-template-columns:1fr}}
+.hours{background:#fff;border:1px solid rgba(29,51,41,.14);border-radius:16px;padding:34px 30px}
+.hours h3{font-size:1.35rem;color:var(--forest);margin-bottom:18px}
+table.hours-tbl{width:100%;border-collapse:collapse;font-size:.95rem}
+table.hours-tbl th,table.hours-tbl td{padding:9px 4px;text-align:left;border-bottom:1px dotted rgba(29,51,41,.2)}
+table.hours-tbl th{font-weight:600;color:var(--forest)}
+.hours-conflict{
+  margin-top:18px;background:#fdf7ec;border:1px solid var(--line);border-radius:10px;
+  padding:16px 18px;font-size:.88rem;color:var(--ink);
+}
+.hours-conflict strong{color:var(--copper)}
+.contact-card{background:var(--forest);color:var(--sand);border-radius:16px;padding:34px 30px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.contact-card h3{font-size:1.35rem;color:var(--copper-soft)}
+.addr{font-size:1.02rem}
+.contact-card .bookbtn{align-self:flex-start}
+.contact-card .callbtn{align-self:flex-start}
+
+/* Footer */
+footer{background:var(--forest-deep);color:rgba(243,237,224,.75);padding:44px 0;font-size:.86rem}
+footer .wrap{display:flex;flex-direction:column;gap:12px}
+footer .fname{font-family:'Fraunces',Georgia,serif;font-size:1.15rem;color:var(--sand)}
+</style>
+</head>
+<body>
+
+<div class="disclosure">
+  <span>Design preview.</span> A website concept for Memphis Professional Barbers Inc by Freightfolio. Not commissioned or endorsed.
+</div>
+
+<header class="site">
+  <div class="wrap navrow">
+    <a class="brand" href="#top">Memphis Professional Barbers Inc</a>
+    <nav class="main" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#spa">Spa</a>
+      <a href="#shop">The Shop</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="bookbtn header-cta" href="https://www.styleseat.com/m/s/1132913">Book Now</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Website Design Preview</span>
+      <h1>Memphis <em>Professional</em> Barbers Inc</h1>
+      <p class="tagline">"We are more than a barbershop, we are an experience."</p>
+      <p class="lede">Cuts for men, women, and children, custom designs, beard shaping, and spa add-ons, all under one roof on Sycamore View Road in Memphis.</p>
+      <div class="hero-ctas">
+        <a class="bookbtn" href="https://www.styleseat.com/m/s/1132913">Book Now</a>
+        <a class="callbtn" href="tel:+19012134776">Call (901) 213-4776</a>
+      </div>
+    </div>
+    <div>
+      <div class="hero-art" role="img" aria-label="Illustration of a barber chair and clippers">
+        <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="0" y="0" width="420" height="340" rx="10" fill="#16291f"/>
+          <circle cx="320" cy="70" r="46" fill="none" stroke="#b0703f" stroke-width="1.5" opacity=".7"/>
+          <circle cx="320" cy="70" r="30" fill="none" stroke="#d9a86f" stroke-width="1" opacity=".5"/>
+          <rect x="170" y="60" width="60" height="110" rx="22" fill="#1d3329" stroke="#b0703f" stroke-width="2"/>
+          <rect x="180" y="46" width="40" height="30" rx="12" fill="#b0703f" opacity=".85"/>
+          <rect x="195" y="170" width="10" height="70" fill="#b0703f"/>
+          <rect x="160" y="240" width="80" height="12" rx="6" fill="#b0703f"/>
+          <rect x="120" y="252" width="160" height="10" rx="5" fill="#1d3329" stroke="#b0703f"/>
+          <rect x="86" y="200" width="64" height="18" rx="9" fill="#d9a86f" transform="rotate(-18 118 209)"/>
+          <rect x="78" y="206" width="26" height="8" rx="4" fill="#f3ede0" transform="rotate(-18 91 210)"/>
+          <circle cx="76" cy="120" r="3" fill="#d9a86f"/>
+          <circle cx="120" cy="96" r="2.5" fill="#b0703f"/>
+          <circle cx="52" cy="170" r="2.5" fill="#b0703f"/>
+          <path d="M40 300 q60 -14 120 0 t120 0 t100 0" stroke="#b0703f" stroke-width="1.5" fill="none" opacity=".6"/>
+        </svg>
+      </div>
+      <p class="caption">Concept art: barber chair illustration, not a photo of the shop.</p>
+    </div>
+  </div>
+</section>
+
+<div class="rule" aria-hidden="true"><i></i></div>
+
+<!-- SERVICES -->
+<section class="block" id="services">
+  <div class="wrap">
+    <p class="kicker">Services and Prices</p>
+    <h2 class="serif">The Cut</h2>
+    <p class="intro">Prices shown are the ranges listed by TrustAnalytica. Final pricing may vary, so call to confirm before you book.</p>
+    <div class="split">
+      <div class="panel">
+        <h3>The Cut</h3>
+        <p class="sub">Haircuts and grooming for the whole family</p>
+        <ul class="services">
+          <li><span class="svc-name">Men's Haircut</span><span class="svc-price">$20 to $30</span></li>
+          <li><span class="svc-name">Women's Haircut</span><span class="svc-price">$30 to $50</span></li>
+          <li><span class="svc-name">Children's Haircut</span><span class="svc-price">$15 to $25</span></li>
+          <li><span class="svc-name">Designs and Custom Hair Designs<span class="svc-note">Ask about pricing when you call</span></span><span class="svc-price">Varies</span></li>
+          <li><span class="svc-name">Beard Shaping<span class="svc-note">Ask about pricing when you call</span></span><span class="svc-price">Varies</span></li>
+        </ul>
+      </div>
+      <div class="panel" id="spa">
+        <h3>The Spa</h3>
+        <p class="sub">Add-ons that turn a haircut into an experience</p>
+        <ul class="services">
+          <li><span class="svc-name">Aromatherapy Steam Facial</span></li>
+          <li><span class="svc-name">Customized Massage</span></li>
+          <li><span class="svc-name">Skin Therapy</span></li>
+          <li><span class="svc-name">Hot Towel Shave</span></li>
+        </ul>
+        <p class="svc-note" style="margin-top:14px">Pricing for spa add-ons was not published in the sources we reviewed. Call (901) 213-4776 for details.</p>
+      </div>
+    </div>
+    <div class="chair">
+      <svg viewBox="0 0 120 120" width="96" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="38" y="18" width="44" height="52" rx="14" fill="#1d3329" stroke="#b0703f" stroke-width="2"/>
+        <rect x="46" y="10" width="28" height="16" rx="8" fill="#b0703f" opacity=".9"/>
+        <rect x="57" y="70" width="8" height="30" fill="#b0703f"/>
+        <rect x="34" y="100" width="54" height="8" rx="4" fill="#b0703f"/>
+        <path d="M20 34 q10 -10 20 0" stroke="#d9a86f" stroke-width="2" fill="none"/>
+        <path d="M20 46 q10 -10 20 0" stroke="#d9a86f" stroke-width="2" fill="none" opacity=".6"/>
+      </svg>
+      <div>
+        <h4>Zero Gravity Massage Chairs</h4>
+        <p>The shop features zero gravity massage chairs, so the relaxing part of the visit starts while you wait or while a service sets in.</p>
+        <p class="caption" style="text-align:left;color:rgba(243,237,224,.6)">Concept art: massage chair illustration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rule" aria-hidden="true"><i></i></div>
+
+<!-- SHOP -->
+<section class="block alt" id="shop">
+  <div class="wrap">
+    <p class="kicker">Inside the Shop</p>
+    <h2 class="serif">Built Around the Experience</h2>
+    <p class="intro">A barbershop that plans for the whole family, from a dedicated corner for young clients to chairs that help you unwind.</p>
+    <div class="shop-grid">
+      <div class="shop-card">
+        <h3>Children's Barber Corner</h3>
+        <p>The shop has a dedicated children's barber corner, so younger clients get haircuts in a space set up for them. Kids cuts are listed at $15 to $25.</p>
+        <h3>Barbers Named in Reviews</h3>
+        <p class="who">Jennifer and Lionel are the barbers mentioned by name in customer reviews.</p>
+        <p>Rated 4.8 from 88 Google reviews.</p>
+      </div>
+      <div class="art-frame">
+        <svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of the shop interior">
+          <rect x="0" y="0" width="420" height="300" rx="10" fill="#f3ede0"/>
+          <rect x="30" y="30" width="360" height="120" rx="8" fill="#1d3329"/>
+          <rect x="46" y="46" width="120" height="88" rx="6" fill="#12241c" stroke="#b0703f"/>
+          <rect x="178" y="46" width="120" height="88" rx="6" fill="#12241c" stroke="#b0703f"/>
+          <rect x="310" y="46" width="64" height="88" rx="6" fill="#12241c" stroke="#b0703f"/>
+          <circle cx="106" cy="90" r="20" fill="none" stroke="#d9a86f" stroke-width="2"/>
+          <circle cx="238" cy="90" r="20" fill="none" stroke="#d9a86f" stroke-width="2"/>
+          <rect x="60" y="170" width="90" height="70" rx="10" fill="#b0703f" opacity=".85"/>
+          <rect x="72" y="158" width="66" height="20" rx="8" fill="#d9a86f"/>
+          <rect x="196" y="170" width="90" height="70" rx="10" fill="#1d3329" stroke="#b0703f" stroke-width="2"/>
+          <rect x="208" y="158" width="66" height="20" rx="8" fill="#b0703f" opacity=".7"/>
+          <rect x="312" y="186" width="60" height="54" rx="10" fill="#d9a86f" opacity=".7"/>
+          <rect x="320" y="176" width="44" height="16" rx="8" fill="#b0703f" opacity=".6"/>
+          <path d="M30 268 h360" stroke="#b0703f" stroke-width="1.5"/>
+        </svg>
+        <p class="caption">Concept art: shop interior illustration, not a photo of the business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rule" aria-hidden="true"><i></i></div>
+
+<!-- VISIT -->
+<section class="block" id="visit">
+  <div class="wrap">
+    <p class="kicker">Plan Your Visit</p>
+    <h2 class="serif">Find Us in Memphis</h2>
+    <p class="intro">Questions? Call (901) 213-4776. Online booking is available through the shop's StyleSeat page.</p>
+    <div class="visit-grid">
+      <div class="hours">
+        <h3>Hours</h3>
+        <table class="hours-tbl">
+          <tr><th>Day</th><th>Hours</th></tr>
+          <tr><td>Monday</td><td>Closed</td></tr>
+          <tr><td>Tuesday</td><td>9:00 AM to 6:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>9:00 AM to 6:00 PM</td></tr>
+          <tr><td>Thursday</td><td>9:00 AM to 6:00 PM</td></tr>
+          <tr><td>Friday</td><td>9:00 AM to 6:00 PM</td></tr>
+          <tr><td>Saturday</td><td>6:00 AM to 6:00 PM</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <div class="hours-conflict">
+          <strong>Please note:</strong> hours differ across listings. The table above is from TrustAnalytica (Sep 2026), which lists Mon closed, Tue to Fri 9:00 AM to 6:00 PM, Sat 6:00 AM to 6:00 PM, Sun closed. Their StyleSeat page lists Tue to Sat 9:00 AM to 4:00 PM. Call to confirm.
+        </div>
+      </div>
+      <div class="contact-card">
+        <h3>Visit or Call</h3>
+        <p class="addr">2032 Sycamore View Rd, Suite 103<br>Memphis, TN 38134</p>
+        <p class="addr">(901) 213-4776</p>
+        <a class="bookbtn" href="https://www.styleseat.com/m/s/1132913">Book Now</a>
+        <a class="callbtn" href="tel:+19012134776">Call to Book</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fname">Memphis Professional Barbers Inc</p>
+    <p>2032 Sycamore View Rd, Suite 103, Memphis, TN 38134 | (901) 213-4776</p>
+    <p>This is an unsolicited website design concept created by Freightfolio. It was not commissioned, affiliated with, or endorsed by Memphis Professional Barbers Inc. This is a design preview only.</p>
+  </div>
+</footer>
+
+</body>
+</html>
