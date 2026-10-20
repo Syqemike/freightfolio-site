@@ -244,6 +244,32 @@
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
   }
+  /* Gallery */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
+  .photo-card {
+    background: var(--night-2);
+    border: 1px solid rgba(37,232,255,0.22);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+  }
+  .photo-card:hover { border-color: var(--cyan); transform: translateY(-3px); }
+  .photo-card img { display: block; width: 100%; height: 300px; object-fit: cover; }
+  .photo-card figcaption { padding: 18px 20px; }
+  .photo-card .src {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 8px;
+  }
+  .photo-card p { color: var(--muted); font-size: 15px; margin: 0; }
   .barber-card {
     background: var(--night-2);
     border: 1px solid rgba(37,232,255,0.22);
@@ -350,6 +376,7 @@
   <nav class="sections">
     <a href="#services">Services</a>
     <a href="#barbers">Barbers</a>
+    <a href="#photos">Photos</a>
     <a href="#visit">Visit</a>
   </nav>
 </header>
@@ -466,6 +493,34 @@
       <div class="barber-info"><h3>Pacazzo</h3><div class="role">Barber</div></div>
       <p class="art-caption">Concept art drawn for this preview</p>
     </div>
+  </div>
+</section>
+
+<section id="photos">
+  <div class="section-label">Photos</div>
+  <h2>From the Shop</h2>
+  <p class="lead">Real photos of the chairs, the fades, and the work leaving them.</p>
+  <div class="photo-grid">
+    <figure class="photo-card">
+      <img src="img/photo-1.jpg" alt="Skin fade with a crisp lineup, photographed inside City of Fades Barbershop">
+      <figcaption><span class="src">Real photos from the shop</span><p>Skin fade with a crisp lineup, inside the shop.</p></figcaption>
+    </figure>
+    <figure class="photo-card">
+      <img src="img/photo-2.jpg" alt="Taper fade viewed from behind, finished in a chair at City of Fades">
+      <figcaption><span class="src">Real photos from the shop</span><p>Tapered finish, viewed from behind.</p></figcaption>
+    </figure>
+    <figure class="photo-card">
+      <img src="img/photo-3.jpg" alt="Curly top with a clean taper, cut at City of Fades Barbershop">
+      <figcaption><span class="src">Real photos from the shop</span><p>Curly top with a clean taper.</p></figcaption>
+    </figure>
+    <figure class="photo-card">
+      <img src="img/photo-4.jpg" alt="Slick comb-over haircut with a fade, finished at City of Fades">
+      <figcaption><span class="src">Real photos from the shop</span><p>Slick comb-over, in the chair.</p></figcaption>
+    </figure>
+    <figure class="photo-card">
+      <img src="img/photo-5.jpg" alt="Classic side part fade, cut at City of Fades Barbershop">
+      <figcaption><span class="src">Real photos from the shop</span><p>Classic side part fade.</p></figcaption>
+    </figure>
   </div>
 </section>
 

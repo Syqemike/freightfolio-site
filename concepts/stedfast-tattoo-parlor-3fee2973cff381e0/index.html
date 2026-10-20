@@ -142,6 +142,12 @@ nav .call-pill:hover{background:var(--red-dark);}
 }
 /* --- sections --- */
 section.block{max-width:1100px;margin:0 auto;padding:2.8rem 1.25rem;}
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.6rem;}
+.photo-card{border:2px solid var(--ink);background:#fff;overflow:hidden;}
+.photo-card img{display:block;width:100%;height:300px;object-fit:cover;}
+.photo-card figcaption{padding:1rem 1.1rem;font-size:.95rem;}
+.photo-card .src{display:block;font-family:'Stardos Stencil',serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.35rem;}
+.photo-card p{margin:0;}
 .section-head{
   display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;
   margin-bottom:1.6rem;
@@ -305,6 +311,7 @@ footer .credits{margin-top:1.2rem;border-top:1px solid rgba(245,239,226,.25);pad
     <ul>
       <li><a href="#services">Services</a></li>
       <li><a href="#artists">Artists</a></li>
+      <li><a href="#photos">Photos</a></li>
       <li><a href="#visit">Hours &amp; Visit</a></li>
       <li><a class="call-pill" href="tel:+17025916457">Call (702) 591-6457</a></li>
     </ul>
@@ -437,9 +444,42 @@ footer .credits{margin-top:1.2rem;border-top:1px solid rgba(245,239,226,.25);pad
 
 <div class="torn" aria-hidden="true"></div>
 
-<section class="block" id="visit">
+<section class="block" id="photos">
   <div class="section-head">
     <span class="section-num">03</span>
+    <h2>From the Parlor</h2>
+  </div>
+  <div class="photo-grid">
+    <figure class="photo-card">
+      <img src="img/photo-1.jpg" alt="StedFast Tattoo Parlor sign lit up at night on the east side of Las Vegas">
+      <figcaption><span class="src">Real photos from the shop</span><p>The sign, lit up at night on the east side.</p></figcaption>
+    </figure>
+    <figure class="photo-card">
+      <img src="img/photo-2.jpg" alt="Finished cartoon character tattoo from StedFast Tattoo Parlor">
+      <figcaption><span class="src">Real photos from the shop</span><p>Finished cartoon piece, shop portfolio.</p></figcaption>
+    </figure>
+    <figure class="photo-card">
+      <img src="img/photo-3.jpg" alt="StedFast Tattoo Parlor storefront entrance on E Charleston Blvd">
+      <figcaption><span class="src">Real photos from the shop</span><p>The storefront on E Charleston Blvd.</p></figcaption>
+    </figure>
+    <figure class="photo-card">
+      <img src="img/photo-4.jpg" alt="A StedFast artist working inside the parlor, flash-covered walls">
+      <figcaption><span class="src">Real photos from the shop</span><p>An artist working inside the parlor.</p></figcaption>
+    </figure>
+    <figure class="photo-card">
+      <img src="img/photo-5.jpg" alt="Finished heart and mountain landscape tattoos from StedFast Tattoo Parlor">
+      <figcaption><span class="src">Real photos from the shop</span><p>Finished heart and mountain pieces, shop portfolio.</p></figcaption>
+    </figure>
+    <figure class="photo-card">
+      <img src="img/photo-6.jpg" alt="Finished cartoon character tattoo from StedFast Tattoo Parlor">
+      <figcaption><span class="src">Real photos from the shop</span><p>Finished cartoon piece, shop portfolio.</p></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="visit">
+  <div class="section-head">
+    <span class="section-num">04</span>
     <h2>Hours &amp; Visit</h2>
   </div>
   <div class="info-grid">

@@ -160,6 +160,24 @@
     display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
     gap:1.6rem;
   }
+  .photo-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+    gap:1.6rem;
+  }
+  .photo-tile{
+    background:var(--plum-card);
+    border:1px solid var(--gold);
+    padding:1rem 1rem 1.2rem;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .photo-tile:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.45)}
+  .photo-tile img{display:block;width:100%;height:300px;object-fit:cover;background:var(--plum-panel)}
+  .photo-tile figcaption{margin-top:.9rem}
+  .photo-tile .src{
+    display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--gold);margin-bottom:.4rem;
+  }
+  .photo-tile .cap{margin:0;color:var(--cream);font-size:.95rem}
   .tile{
     background:var(--plum-card);
     border:1px solid var(--gold);
@@ -235,6 +253,7 @@
     <nav class="site-nav" aria-label="Section navigation">
       <a href="#shop">The Shop</a>
       <a href="#flash">Flash Wall</a>
+      <a href="#photos">Photos</a>
       <a href="#artists">Artists</a>
       <a href="#visit">Visit</a>
     </nav>
@@ -450,6 +469,42 @@
           <figcaption>Concept art drawn for this preview</figcaption>
         </figure>
 
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="photos">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Photos</p>
+        <h2 class="section-title">The shop, for real</h2>
+        <p class="section-lede">Actual photos of the studio, the flash-covered walls, and finished work from the shop's own pages.</p>
+      </div>
+      <div class="photo-grid">
+        <figure class="photo-tile">
+          <img src="img/photo-1.jpg" alt="Inside Lowbrow Saints: flash wall, painted skateboards, and artist workstations">
+          <figcaption><span class="src">Real photos from the shop</span><p class="cap">The flash wall and workstations, inside the studio.</p></figcaption>
+        </figure>
+        <figure class="photo-tile">
+          <img src="img/photo-2.jpg" alt="Lowbrow Saints lobby with flash-covered walls and checkered floor">
+          <figcaption><span class="src">Real photos from the shop</span><p class="cap">The lobby, walls covered in flash.</p></figcaption>
+        </figure>
+        <figure class="photo-tile">
+          <img src="img/photo-3.jpg" alt="Finished cat snail tattoo by a Lowbrow Saints artist">
+          <figcaption><span class="src">Real photos from the shop</span><p class="cap">Finished cat snail tattoo, shop portfolio.</p></figcaption>
+        </figure>
+        <figure class="photo-tile">
+          <img src="img/photo-4.jpg" alt="Finished floral cat tattoo by a Lowbrow Saints artist">
+          <figcaption><span class="src">Real photos from the shop</span><p class="cap">Finished floral cat tattoo, shop portfolio.</p></figcaption>
+        </figure>
+        <figure class="photo-tile">
+          <img src="img/photo-5.jpg" alt="The shop's fall flash sheet of traditional tattoo designs">
+          <figcaption><span class="src">Real photos from the shop</span><p class="cap">The shop's fall flash sheet.</p></figcaption>
+        </figure>
+        <figure class="photo-tile">
+          <img src="img/photo-6.jpg" alt="Finished blackwork jellyfish tattoo by a Lowbrow Saints artist">
+          <figcaption><span class="src">Real photos from the shop</span><p class="cap">Finished jellyfish blackwork, shop portfolio.</p></figcaption>
+        </figure>
       </div>
     </div>
   </section>
