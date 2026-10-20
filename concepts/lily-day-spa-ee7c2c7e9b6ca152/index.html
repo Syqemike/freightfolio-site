@@ -34,7 +34,7 @@
   .btn.ghost { background:transparent; color:var(--pine); border:2px solid var(--pine); }
   .btn.ghost:hover { background:rgba(46,74,61,.06); }
 
-  .hero { background:var(--pine); color:#fff; }
+  .hero { background:var(--cream); color:var(--pine2); }
   .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding-top:72px; padding-bottom:72px; }
   .hero .kicker { color:#b9cfc0; letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
   .hero h1 { font-size:50px; line-height:1.12; font-weight:700; margin-bottom:18px; }
@@ -110,6 +110,14 @@
     .hero h1 { font-size:38px; }
     .navlinks { display:none; }
   }
+  .hero .kicker { color:var(--sage); text-align:left; letter-spacing:3px; }
+  .hero h1 { font-size:clamp(42px,5vw,68px); letter-spacing:-1px; }
+  .hero h1 em { color:#806536; }
+  .hero p.lead, .hero-note { color:#485d50; }
+  .hero .btn.ghost { color:var(--pine2); border-color:var(--sage); }
+  .hero-img img { border-radius:48% 48% 12px 12px; border:8px solid #fff; box-shadow:16px 18px 0 #e8dfce; aspect-ratio:1/1; }
+  .hero .wrap { padding-top:64px; padding-bottom:82px; }
+  .strip { background:var(--pine2); color:var(--cream); }
 </style>
 </head>
 <body>
@@ -140,7 +148,7 @@
   <div class="wrap">
     <div>
       <div class="kicker">Mobile, Alabama</div>
-      <h1 class="serif">Come in tense, <em>leave lighter.</em></h1>
+      <h1 class="serif">A little time <em>for yourself.</em></h1>
       <p class="lead">Lily Day Spa is a day spa in Mobile with massage, facials, and spa parties. Open every day.</p>
       <div class="cta-row">
         <a class="btn" href="tel:+12517867870">Book by Phone</a>
