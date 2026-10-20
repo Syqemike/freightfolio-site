@@ -225,6 +225,47 @@
   }
   .identity .signoff a { color: var(--navy); }
 
+  /* ---------- grooming gallery ---------- */
+  .photos { background: var(--sand); color: var(--ink); padding: 96px 0 110px; }
+  .photos .dock-label { opacity: .7; margin-bottom: 24px; display: block; }
+  .photos h2 {
+    font-size: clamp(40px, 7vw, 72px); font-weight: 700;
+    text-transform: uppercase; line-height: 1.02; margin-bottom: 20px;
+  }
+  .photos .photo-note {
+    font-family: 'Space Mono', monospace; font-size: 13px;
+    opacity: .8; max-width: 560px;
+  }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin-top: 44px;
+  }
+  .photo-grid figure {
+    background: #fff;
+    border: 2px solid var(--ink);
+    margin: 0;
+  }
+  .photo-grid img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid var(--ink);
+  }
+  .photo-grid figcaption {
+    font-family: 'Space Mono', monospace;
+    font-size: 12.5px;
+    line-height: 1.7;
+    padding: 14px 16px;
+    color: var(--ink);
+  }
+  @media (max-width: 720px) {
+    .photo-grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+    .photos { padding-top: 64px; padding-bottom: 64px; }
+  }
+
   /* ---------- visit ---------- */
   .visit { background: var(--sand); color: var(--ink); padding: 96px 0 110px; text-align: center; }
   .visit .dock-label { opacity: .7; margin-bottom: 24px; display: block; }
@@ -301,7 +342,7 @@
 </header>
 
 <nav class="jump-nav" aria-label="Page sections">
-  <a href="#top">Top</a><span class="sep" aria-hidden="true">&middot;</span><a href="#logbook">Logbook</a><span class="sep" aria-hidden="true">&middot;</span><a href="#hours">Harbor Hours</a><span class="sep" aria-hidden="true">&middot;</span><a href="#visit">Come Aboard</a>
+  <a href="#top">Top</a><span class="sep" aria-hidden="true">&middot;</span><a href="#logbook">Logbook</a><span class="sep" aria-hidden="true">&middot;</span><a href="#hours">Harbor Hours</a><span class="sep" aria-hidden="true">&middot;</span><a href="#photos">Photos</a><span class="sep" aria-hidden="true">&middot;</span><a href="#visit">Come Aboard</a>
 </nav>
 
 <!-- ============ LOGBOOK ============ -->
@@ -420,6 +461,40 @@
   <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,32 C120,58 240,6 360,32 C480,58 600,6 720,32 C840,58 960,6 1080,32 C1200,58 1320,6 1440,32 L1440,60 L0,60 Z" fill="#f4ead8"/></svg>
 </div>
 
+<!-- ============ PHOTOS ============ -->
+<section class="photos" id="photos">
+  <div class="wrap">
+    <div class="knot" aria-hidden="true">
+      <svg viewBox="0 0 210 26" fill="none" stroke="#0f2a43" stroke-width="3" stroke-linecap="round">
+        <line x1="4" y1="13" x2="95" y2="13"/>
+        <line x1="115" y1="13" x2="206" y2="13"/>
+        <circle cx="105" cy="13" r="8"/>
+      </svg>
+    </div>
+    <p class="dock-label" style="margin-top:34px">Sec. 04 &middot; Grooming Gallery</p>
+    <h2>Fresh from<br>the Tub</h2>
+    <p class="photo-note">Real photos of happy clients.</p>
+    <div class="photo-grid">
+      <figure>
+        <img src="img/photo-1.jpg" alt="White dog with purple bows after a groom">
+        <figcaption>A white dog with a fresh groom and purple bows.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-2.jpg" alt="White dog with yellow feather clips and a floral bandana">
+        <figcaption>A fluffy white dog with feather clips and a floral bandana.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-3.jpg" alt="White dog with a pink bow and a patterned bandana">
+        <figcaption>A white dog with a pink bow and a patterned bandana.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-4.jpg" alt="White dog with a unicorn bandana and a butterfly clip">
+        <figcaption>A white dog with a unicorn bandana and a butterfly clip.</figcaption>
+      </figure>
+
+  </div>
+</section>
+
 <!-- ============ VISIT ============ -->
 <section class="visit" id="visit">
   <div class="wrap">
@@ -430,7 +505,7 @@
         <circle cx="105" cy="13" r="8"/>
       </svg>
     </div>
-    <p class="dock-label" style="margin-top:34px">Sec. 04 &middot; Come Aboard</p>
+    <p class="dock-label" style="margin-top:34px">Sec. 05 &middot; Come Aboard</p>
     <h2>Book<br>Your Dog In</h2>
     <address>
       21309 AL-181, Suite B<br>
