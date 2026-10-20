@@ -36,11 +36,11 @@
   .btn.ghost:hover { background:rgba(66,43,51,.06); }
 
   .hero { background:var(--plum); color:#fff; }
-  .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding-top:72px; padding-bottom:72px; }
+  .hero .wrap { display:block; max-width:920px; padding-top:72px; padding-bottom:72px; }
   .hero .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
   .hero h1 { font-family:Georgia,'Times New Roman',serif; font-size:50px; line-height:1.15; font-weight:700; margin-bottom:18px; }
   .hero h1 em { color:var(--gold); font-style:normal; }
-  .hero p.lead { color:#d9c8c0; font-size:18px; margin-bottom:30px; }
+  .hero p.lead { color:#d9c8c0; font-size:18px; max-width:58ch; margin-bottom:30px; }
   .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
   .hero .btn.ghost { color:#fff; border-color:var(--gold); }
   .hero .btn.ghost:hover { background:rgba(212,163,115,.12); }
@@ -148,18 +148,14 @@
   <div class="wrap">
     <div>
       <div class="kicker">Metairie, Louisiana</div>
-      <h1>Balayage and color <em>you'll love.</em></h1>
-      <p class="lead">A hair salon on Cleary Ave with a focus on coloring and highlights.</p>
+      <h1>Balayage and color <em>in Metairie.</em></h1>
+      <p class="lead">The salon lists balayage, highlights, full color, cuts, styling, and more.</p>
       <div class="cta-row">
-        <a class="btn" href="tel:+15045715857">Call to Book</a>
+        <a class="btn" href="tel:+15045715857">Call (504) 571-5857</a>
         <a class="btn ghost" href="#services">Our Services</a>
       </div>
     </div>
-    <div class="hero-img">
-      <img src="img/photo-1.jpg" alt="Illustrative photo of a salon interior">
-      <p class="photo-cap">Illustrative photo</p>
-    </div>
-  </div>
+   </div>
 </header>
 
 <div class="strip">
@@ -173,47 +169,16 @@
 <section class="block wrap" id="services">
   <div class="kicker">What we do</div>
   <h2 class="stitle">Color, cuts, and more</h2>
-  <p class="ssub">Highlights, cuts, weaves, and permanent makeup, from the salon's own service listings.</p>
+  <p class="ssub">Service categories below reflect the salon's public Facebook listing.</p>
   <div class="cards">
     <div class="card">
-      <img src="img/photo-6.jpg" loading="lazy" alt="Illustrative photo of highlighted hair">
-      <p class="photo-cap">Illustrative photo</p>
-      <div class="pad"><h3>Color &amp; Highlights</h3><p>Highlights, balayage, and full color. Start with what you want and go from there.</p></div>
+      <div class="pad"><h3>Color &amp; Highlights</h3><p>Balayage, highlights, and full color are listed by the salon.</p></div>
     </div>
     <div class="card">
-      <img src="img/photo-2.jpg" loading="lazy" alt="Illustrative photo of styled hair">
-      <p class="photo-cap">Illustrative photo</p>
-      <div class="pad"><h3>Cuts &amp; Styling</h3><p>Women's haircuts and styling. Call to ask about availability.</p></div>
+      <div class="pad"><h3>Cuts &amp; Styling</h3><p>Women's haircuts and styling are listed by the salon.</p></div>
     </div>
     <div class="card">
-      <img src="img/photo-7.jpg" loading="lazy" alt="Illustrative photo of a salon styling station">
-      <p class="photo-cap">Illustrative photo</p>
-      <div class="pad"><h3>Weaves &amp; Brows</h3><p>Hair weaves, permanent makeup, and microblading. Call to book your appointment.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="block why" id="why">
-  <div class="wrap">
-    <div class="kicker">Why The Social Suite</div>
-    <h2 class="stitle">A few facts about the salon</h2>
-    <p class="ssub" style="color:#d9c8c0;">Straight from the salon's own listings.</p>
-    <div class="why-grid">
-      <div class="why-item">
-        <div class="n">6</div>
-        <h3>Days a week</h3>
-        <p>Open Monday through Saturday. Closed Sundays.</p>
-      </div>
-      <div class="why-item">
-        <div class="n">3201</div>
-        <h3>Cleary Ave</h3>
-        <p>Suite 2 in Metairie, Louisiana.</p>
-      </div>
-      <div class="why-item">
-        <div class="n">(504)</div>
-        <h3>571-5857</h3>
-        <p>Call or text to book an appointment.</p>
-      </div>
+      <div class="pad"><h3>Weaves &amp; Brows</h3><p>Hair weaves, permanent makeup, and microblading are listed by the salon.</p></div>
     </div>
   </div>
 </section>
@@ -223,15 +188,7 @@
     <div>
       <div class="kicker" style="text-align:left;">Find us</div>
       <h2>Visit the salon.</h2>
-      <table class="hours">
-        <tr><td>Monday</td><td>10:00 AM - 2:00 PM</td></tr>
-        <tr><td>Tuesday</td><td>9:00 AM - 6:30 PM</td></tr>
-        <tr><td>Wednesday</td><td>10:00 AM - 2:00 PM</td></tr>
-        <tr><td>Thursday</td><td>9:00 AM - 6:30 PM</td></tr>
-        <tr><td>Friday</td><td>10:00 AM - 2:00 PM</td></tr>
-        <tr><td>Saturday</td><td>10:00 AM - 3:00 PM</td></tr>
-        <tr><td>Sunday</td><td>Closed</td></tr>
-      </table>
+      <p class="contact-line">Check the salon's Facebook page for current hours before visiting.</p>
       <p class="contact-line"><b>Address</b><br>3201 Cleary Ave Suite 2<br>Metairie, LA 70002</p>
       <p class="contact-line"><b>Phone</b><br><a href="tel:+15045715857">(504) 571-5857</a></p>
       <p class="contact-line"><b>Facebook</b><br><a href="https://www.facebook.com/thesocialsuitesalon" target="_blank" rel="noopener">The Social Suite Salon</a></p>
@@ -239,8 +196,8 @@
     <div>
       <div class="cta-box">
         <h3>Questions about color?</h3>
-        <p>Call to ask about service availability and booking.</p>
-        <a class="btn" href="tel:+15045715857">(504) 571-5857</a>
+        <p>Call the salon or message its Facebook page with questions about services and appointments.</p>
+        <a class="btn" href="https://www.facebook.com/thesocialsuitesalon" target="_blank" rel="noopener">Visit Facebook</a>
       </div>
     </div>
   </div>
