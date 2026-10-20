@@ -249,6 +249,9 @@
 .hero-photo figcaption{padding:12px 4px 2px;color:var(--ink-soft);font-size:.85rem}
 @media(min-width:760px){.hero .hero-layout{grid-template-columns:1.1fr .9fr}.hero{padding:4.5rem 0}.hero h1{font-size:clamp(3rem,6vw,5.4rem)}}
 @media(max-width:759px){.hero-photo{max-width:420px;justify-self:center;transform:none}}
+
+/* Photo-led layout: decorative illustration panels removed. */
+.about-grid{grid-template-columns:1fr;max-width:760px;margin:0 auto}
 </style>
 </head>
 <body>
@@ -271,32 +274,6 @@
 <main id="top">
 
   <section class="hero" aria-label="Introduction">
-    <svg class="hero-sprig left" width="180" height="300" viewBox="0 0 180 300" aria-hidden="true">
-      <g stroke="#b08d57" fill="none" stroke-width="1.2">
-        <path d="M90 290 C 80 220, 100 150, 88 40"/>
-        <path d="M88 250 C 60 240, 44 220, 40 196"/>
-        <path d="M89 200 C 118 192, 132 172, 136 148"/>
-        <path d="M88 150 C 62 142, 50 124, 48 102"/>
-        <path d="M88 105 C 112 98, 122 82, 124 62"/>
-        <ellipse cx="52" cy="228" rx="14" ry="7" transform="rotate(-35 52 228)"/>
-        <ellipse cx="124" cy="172" rx="14" ry="7" transform="rotate(30 124 172)"/>
-        <ellipse cx="60" cy="124" rx="12" ry="6" transform="rotate(-30 60 124)"/>
-        <ellipse cx="116" cy="82" rx="12" ry="6" transform="rotate(28 116 82)"/>
-      </g>
-    </svg>
-    <svg class="hero-sprig right" width="180" height="300" viewBox="0 0 180 300" aria-hidden="true">
-      <g stroke="#b08d57" fill="none" stroke-width="1.2">
-        <path d="M90 290 C 80 220, 100 150, 88 40"/>
-        <path d="M88 250 C 60 240, 44 220, 40 196"/>
-        <path d="M89 200 C 118 192, 132 172, 136 148"/>
-        <path d="M88 150 C 62 142, 50 124, 48 102"/>
-        <path d="M88 105 C 112 98, 122 82, 124 62"/>
-        <ellipse cx="52" cy="228" rx="14" ry="7" transform="rotate(-35 52 228)"/>
-        <ellipse cx="124" cy="172" rx="14" ry="7" transform="rotate(30 124 172)"/>
-        <ellipse cx="60" cy="124" rx="12" ry="6" transform="rotate(-30 60 124)"/>
-        <ellipse cx="116" cy="82" rx="12" ry="6" transform="rotate(28 116 82)"/>
-      </g>
-    </svg>
     <div class="wrap hero-layout">
       <div class="hero-copy">
       <p class="eyebrow">Baltimore, Maryland</p>
@@ -321,15 +298,6 @@
       </div>
       <div class="cards">
         <article class="appt-card">
-          <svg class="card-sprig" width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
-            <g stroke="#b08d57" fill="none" stroke-width="1.1">
-              <path d="M36 64 C 34 48, 40 34, 36 10"/>
-              <path d="M36 50 C 26 47, 20 40, 19 32"/>
-              <path d="M36 34 C 46 31, 50 24, 51 17"/>
-              <ellipse cx="24" cy="42" rx="7" ry="3.5" transform="rotate(-30 24 42)"/>
-              <ellipse cx="48" cy="26" rx="7" ry="3.5" transform="rotate(28 48 26)"/>
-            </g>
-          </svg>
           <p class="card-no">No. 01</p>
           <h3>Manicures</h3>
           <div class="card-rule" aria-hidden="true"></div>
@@ -337,15 +305,6 @@
           <p class="svc-note">Call for details</p>
         </article>
         <article class="appt-card">
-          <svg class="card-sprig" width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
-            <g stroke="#b08d57" fill="none" stroke-width="1.1">
-              <path d="M36 64 C 38 48, 32 34, 36 10"/>
-              <path d="M36 52 C 46 49, 52 42, 53 34"/>
-              <path d="M36 36 C 26 33, 22 26, 21 19"/>
-              <ellipse cx="48" cy="44" rx="7" ry="3.5" transform="rotate(30 48 44)"/>
-              <ellipse cx="24" cy="28" rx="7" ry="3.5" transform="rotate(-28 24 28)"/>
-            </g>
-          </svg>
           <p class="card-no">No. 02</p>
           <h3>Pedicures</h3>
           <div class="card-rule" aria-hidden="true"></div>
@@ -353,16 +312,6 @@
           <p class="svc-note">Call for details</p>
         </article>
         <article class="appt-card">
-          <svg class="card-sprig" width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
-            <g stroke="#b08d57" fill="none" stroke-width="1.1">
-              <path d="M36 64 C 34 48, 40 34, 36 10"/>
-              <path d="M36 50 C 26 47, 20 40, 19 32"/>
-              <path d="M36 34 C 46 31, 50 24, 51 17"/>
-              <ellipse cx="24" cy="42" rx="7" ry="3.5" transform="rotate(-30 24 42)"/>
-              <ellipse cx="48" cy="26" rx="7" ry="3.5" transform="rotate(28 48 26)"/>
-              <circle cx="36" cy="12" r="2.4" fill="#c98a7d" stroke="none"/>
-            </g>
-          </svg>
           <p class="card-no">No. 03</p>
           <h3>Gel Applications</h3>
           <div class="card-rule" aria-hidden="true"></div>
@@ -370,34 +319,6 @@
           <p class="svc-note">Call for details</p>
         </article>
       </div>
-      <figure class="art">
-        <div class="frame">
-          <svg viewBox="0 0 760 300" role="img" aria-label="Gold line illustration of a manicure table arrangement">
-            <rect x="8" y="8" width="744" height="284" fill="none" stroke="#b08d57" stroke-width="1.4"/>
-            <rect x="18" y="18" width="724" height="264" fill="none" stroke="#d9c29a" stroke-width="1"/>
-            <g stroke="#b08d57" fill="none" stroke-width="1.3">
-              <ellipse cx="240" cy="170" rx="110" ry="60"/>
-              <ellipse cx="240" cy="170" rx="86" ry="44" stroke="#d9c29a"/>
-              <rect x="330" y="150" width="180" height="40" rx="20"/>
-              <rect x="540" y="120" width="52" height="90" rx="8"/>
-              <rect x="540" y="104" width="52" height="22" rx="6"/>
-              <path d="M150 210 C 170 180, 150 150, 160 110"/>
-              <path d="M160 180 C 140 175, 132 162, 130 150"/>
-              <path d="M159 150 C 176 146, 182 136, 183 126"/>
-              <ellipse cx="138" cy="164" rx="9" ry="4.5" transform="rotate(-32 138 164)"/>
-              <ellipse cx="178" cy="138" rx="9" ry="4.5" transform="rotate(30 178 138)"/>
-            </g>
-            <g fill="#c98a7d" stroke="none">
-              <ellipse cx="210" cy="162" rx="9" ry="13" transform="rotate(-18 210 162)"/>
-              <ellipse cx="232" cy="156" rx="9" ry="13" transform="rotate(-6 232 156)"/>
-              <ellipse cx="254" cy="158" rx="9" ry="13" transform="rotate(8 254 158)"/>
-              <ellipse cx="274" cy="166" rx="9" ry="13" transform="rotate(20 274 166)"/>
-            </g>
-            <text x="380" y="268" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="21" fill="#6d5f52">a quiet corner of the shop</text>
-          </svg>
-        </div>
-        <figcaption>Illustration, original concept art, not a photo of the shop</figcaption>
-      </figure>
     </div>
   </section>
 
@@ -411,30 +332,6 @@
           <p>Call the shop to ask about nail services or plan a visit.</p>
           <p class="fine">Questions? Call (410) 685-4494.</p>
         </div>
-        <figure class="art" style="margin:0">
-          <div class="frame">
-            <svg viewBox="0 0 520 420" role="img" aria-label="Gold line illustration of a nail salon storefront">
-              <rect x="10" y="10" width="500" height="400" fill="none" stroke="#b08d57" stroke-width="1.4"/>
-              <rect x="22" y="22" width="476" height="376" fill="none" stroke="#d9c29a" stroke-width="1"/>
-              <g stroke="#b08d57" fill="none" stroke-width="1.4">
-                <path d="M70 360 L70 150 L450 150 L450 360"/>
-                <path d="M50 150 L70 108 L450 108 L470 150"/>
-                <rect x="150" y="230" width="220" height="130"/>
-                <rect x="200" y="255" width="120" height="105" fill="#faf5ec"/>
-                <path d="M200 255 L260 200 L320 255"/>
-                <rect x="90" y="230" width="40" height="130"/>
-                <rect x="390" y="230" width="40" height="130"/>
-                <path d="M100 250 L130 250 M100 280 L130 280 M100 310 L130 310"/>
-                <path d="M390 250 L420 250 M390 280 L420 280 M390 310 L420 310"/>
-                <path d="M240 108 L240 60 M240 84 C 220 80, 212 68, 210 58"/>
-                <ellipse cx="222" cy="72" rx="9" ry="4.5" transform="rotate(-30 222 72)"/>
-              </g>
-              <text x="260" y="192" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="30" letter-spacing="4" fill="#3d3229">NINA'S NAILS</text>
-              <text x="260" y="392" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="20" fill="#6d5f52">113 N Eutaw St, Baltimore</text>
-            </svg>
-          </div>
-          <figcaption>Illustration, original concept art, not a photo of the shop</figcaption>
-        </figure>
       </div>
     </div>
   </section>
@@ -500,24 +397,6 @@
           <p>113 N Eutaw St<br>Baltimore, MD 21201</p>
           <a class="tel" href="tel:+14106854494">(410) 685-4494</a>
           <a class="btn" href="tel:+14106854494">Call to book</a>
-          <figure class="art" style="margin:1rem 0 0;max-width:100%">
-            <div class="frame" style="background:transparent;border-color:rgba(217,194,154,.5)">
-              <svg viewBox="0 0 420 260" role="img" aria-label="Gold line illustration of a street map">
-                <g stroke="#d9c29a" fill="none" stroke-width="1.3">
-                  <rect x="8" y="8" width="404" height="244"/>
-                  <path d="M60 40 L360 40 M60 110 L360 110 M60 180 L360 180 M60 240 L360 240"/>
-                  <path d="M100 10 L100 250 M200 10 L200 250 M300 10 L300 250"/>
-                </g>
-                <g stroke="#c98a7d" fill="none" stroke-width="1.6">
-                  <circle cx="200" cy="110" r="16"/>
-                  <path d="M200 126 L200 150"/>
-                  <circle cx="200" cy="110" r="5" fill="#c98a7d" stroke="none"/>
-                </g>
-                <text x="200" y="196" text-anchor="middle" font-family="Jost, sans-serif" font-size="15" letter-spacing="3" fill="#e6d9c4">EUTAW ST</text>
-              </svg>
-            </div>
-            <figcaption style="color:#cbbfa8">Illustration, original concept art, not a real map</figcaption>
-          </figure>
         </div>
       </div>
     </div>

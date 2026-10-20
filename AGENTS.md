@@ -18,3 +18,13 @@ Mike accepted only TailWaggers and Studio 601 from the previous designs. All oth
 - Match photo sources to business name AND location/contact details. A same-name shop in another city is not a valid source. Record source URLs per asset in the prospect release record. Stock/illustrative labels do not satisfy the business-photo requirement.
 - Compare revisions against the owner's benchmark in a rendered desktop view. Mechanical checks, a numeric QA score, HTTP 200, or adding a gallery alone do not reinstate an approval the owner rejected.
 - Keep missing mobile testing nonblocking. Preserve known-contact and sent-message history; do not duplicate outreach to previously pitched businesses, including Studio 601. Mike retains final dashboard approval of actual messages.
+
+## Superseding owner visual rule — October 20, 2026, 07:53 Central
+
+This newer rule supersedes the earlier stock/illustration sentence above. Do not add or retain unnecessary decorative concept art, generated illustrations, fake emblems, abstract tool drawings, or placeholder artwork. Remove decorative sections when they add no useful content.
+
+- Prefer photographs of the correct business and document exact source URLs and identity/location matching.
+- Relevant, properly licensed stock photography is an acceptable fallback when suitable real-business photos are unavailable. Keep license/source evidence and never present stock as the actual business premises, staff, customers, or work. Honest stock fallback alone is not a rejection reason.
+- Use TailWaggers and Studio 601 as polished, distinctive design references, not reusable templates. Existing nonbenchmark prior design acceptance remains superseded; this rule is not blanket approval of facts, any website version, or outreach.
+- Muse must synchronize saved Website Dev and QA instructions and acknowledge the actual saved versions. A written request or this repository file alone is not proof of saved-agent synchronization.
+- Missing mobile rendering remains NOT VERIFIED — OWNER WAIVER and nonblocking. Preserve historical sends, exclude previously pitched Studio 601 from new-five counts, prevent duplicate initial contact, and require Mike's final dashboard approval of actual tailored messages.
