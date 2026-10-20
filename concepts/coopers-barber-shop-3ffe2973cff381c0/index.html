@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Cooper's Barber Shop - Charleston, WV | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1a2333; --navy2:#232f45; --cream:#f7f2e7; --cream-dim:#cfc6ae;
+    --red:#c0392b; --red-bright:#e04a35; --gold:#d9a441; --line:#33405a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--navy);color:var(--cream);font-family:'Inter',system-ui,sans-serif;line-height:1.65}
+  .disclosure{background:#0d1320;color:#8b93a7;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:10px 16px;border-bottom:1px solid var(--line)}
+  .disclosure strong{color:var(--gold);font-weight:700}
+  header.site{position:sticky;top:0;z-index:50;background:rgba(26,35,51,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .navwrap{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+  .brand{font-family:'Bitter',serif;font-weight:800;font-size:20px;color:var(--cream);text-decoration:none;letter-spacing:.02em}
+  .brand span{color:var(--red-bright)}
+  nav.links{display:flex;gap:26px}
+  nav.links a{color:var(--cream-dim);text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+  nav.links a:hover{color:var(--gold)}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  .hero{position:relative;overflow:hidden}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(26,35,51,.96) 25%,rgba(26,35,51,.55) 60%,rgba(26,35,51,.35) 100%)}
+  .hero-inner{position:relative;z-index:2;padding:104px 0 96px;max-width:620px}
+  .kicker{color:var(--gold);font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-weight:700;margin-bottom:20px}
+  h1{font-family:'Bitter',serif;font-weight:800;font-size:clamp(46px,6.4vw,86px);line-height:1.04;color:var(--cream)}
+  h1 em{font-style:normal;color:var(--red-bright)}
+  .lede{margin:24px 0 32px;font-size:18px;color:var(--cream-dim);max-width:46ch}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:15px 30px;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:transform .15s ease, background .15s ease}
+  .btn-red{background:var(--red-bright);color:#fff}
+  .btn-red:hover{background:#ef5a43;transform:translateY(-1px)}
+  .btn-ghost{border:1px solid #5a6a8a;color:var(--cream)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .photo-credit{position:relative;z-index:2;padding:0 0 14px;color:#9aa3b8;font-size:12px}
+  .rating-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--navy2)}
+  .rating-strip .wrap{display:flex;align-items:center;justify-content:center;gap:14px;padding:16px 24px;font-size:15px;color:var(--cream-dim)}
+  .stars{color:var(--gold);letter-spacing:.2em;font-size:18px}
+  section{padding:72px 0}
+  .sec-head{margin-bottom:36px;border-bottom:1px solid var(--line);padding-bottom:16px;display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+  h2{font-family:'Bitter',serif;font-weight:800;font-size:clamp(28px,3.6vw,42px);color:var(--cream)}
+  .sec-note{color:#8b93a7;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+  .coop{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+  .coop figure img{width:100%;height:auto;display:block;border-radius:8px;border:1px solid var(--line)}
+  .coop figure figcaption{color:#9aa3b8;font-size:13px;margin-top:10px}
+  .coop .eyebrow{color:var(--gold);font-size:12px;letter-spacing:.26em;text-transform:uppercase;font-weight:700;margin-bottom:14px}
+  .coop h2{margin-bottom:18px}
+  .coop p{color:var(--cream-dim);font-size:17px;margin-bottom:16px;max-width:52ch}
+  .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .svc{background:var(--navy2);border:1px solid var(--line);border-radius:6px;padding:30px;border-top:3px solid var(--red-bright)}
+  .svc h3{font-family:'Bitter',serif;font-size:21px;margin-bottom:8px}
+  .svc p{color:var(--cream-dim);font-size:15px}
+  .svc .flag{display:inline-block;margin-top:12px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--gold);border:1px solid var(--gold);padding:5px 10px;border-radius:3px}
+  .shop-band{background:var(--navy2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .shop-band .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .shop-band figure{padding:48px 0}
+  .shop-band figure img{width:100%;height:420px;object-fit:cover;display:block;border-radius:8px;border:1px solid var(--line)}
+  .shop-band figure figcaption{color:#9aa3b8;font-size:13px;margin-top:10px}
+  .shop-copy{padding:64px 0}
+  .shop-copy p{color:var(--cream-dim);font-size:17px;margin-bottom:16px;max-width:50ch}
+  .shop-copy p strong{color:var(--cream)}
+  .hours-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .hours-table{width:100%;border-collapse:collapse}
+  .hours-table td{padding:14px 4px;border-bottom:1px solid var(--line);font-size:16px}
+  .hours-table td:last-child{text-align:right;color:var(--cream-dim)}
+  .walkin{background:var(--navy2);border:1px solid var(--line);border-radius:6px;padding:34px;border-left:4px solid var(--gold)}
+  .walkin .big{font-family:'Bitter',serif;font-size:34px;font-weight:800;color:var(--gold);margin-bottom:10px}
+  .walkin p{color:var(--cream-dim);font-size:16px}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .visit-card{background:var(--navy2);border:1px solid var(--line);border-radius:6px;padding:34px}
+  .visit-card h3{font-family:'Bitter',serif;font-size:22px;margin-bottom:14px;color:var(--gold)}
+  .visit-card p{color:var(--cream-dim);margin-bottom:10px;font-size:16px}
+  .visit-card a{color:var(--gold);text-decoration:none;font-weight:600}
+  .visit-card a:hover{text-decoration:underline}
+  .visit-card a.btn-red{color:#fff}
+  .visit-card a.btn-red:hover{text-decoration:none}
+  footer{border-top:1px solid var(--line);padding:36px 0 48px;color:#8b93a7;font-size:13.5px}
+  footer .wrap{display:flex;flex-direction:column;gap:10px}
+  @media (max-width:900px){
+    .coop{grid-template-columns:1fr;gap:32px}
+    .svc-grid{grid-template-columns:1fr}
+    .shop-band .wrap{grid-template-columns:1fr}
+    .shop-band figure{padding:0 0 32px}
+    .shop-copy{padding:40px 24px}
+    .hours-wrap,.visit-grid{grid-template-columns:1fr;gap:36px}
+    nav.links{display:none}
+    section{padding:52px 0}
+    .hero-inner{padding:72px 24px}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Design Preview</strong> - a website concept by Freightfolio. Not the business's official site.</div>
+<header class="site">
+  <div class="navwrap">
+    <a class="brand" href="#top">COOPER'S <span>BARBER SHOP</span></a>
+    <nav class="links">
+      <a href="#coop">Coop</a><a href="#services">Services</a><a href="#shop">The Shop</a><a href="#hours">Hours</a><a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="hero-bg"><img src="img/cbs-shop-3.jpg" alt=""></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="kicker">Charleston, West Virginia</div>
+      <h1>COOPER'S <em>BARBER SHOP</em></h1>
+      <p class="lede">An old-school, family-friendly barbershop on Indiana Avenue. Master barber Gary Cooper keeps the chairs full, the conversation going, and the kids smiling. Walk-ins welcome.</p>
+      <div class="cta-row">
+        <a class="btn btn-red" href="tel:+13043955783">Call to book</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Cooper%27s+Barber+Shop+701+Indiana+Ave+Charleston+WV">Get directions</a>
+      </div>
+    </div>
+    <div class="photo-credit">Real photo: the shop's storefront at night, from its Facebook page.</div>
+  </div>
+</div>
+
+<div class="rating-strip">
+  <div class="wrap">
+    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    <span><strong style="color:var(--cream)">5.0</strong> from 97 online business-listing reviews</span>
+  </div>
+</div>
+
+<section id="coop">
+  <div class="wrap coop">
+    <figure>
+      <img src="img/cbs-shop-2.jpg" alt="Gary Cooper, the owner, inside the barbershop">
+      <figcaption>Real photo: Coop in the shop, from its Facebook page.</figcaption>
+    </figure>
+    <div>
+      <div class="eyebrow">The man behind the chair</div>
+      <h2>Meet Coop</h2>
+      <p><strong style="color:var(--cream)">Gary Cooper is the master barber behind Cooper's.</strong> Reviewers call him the best barber in town, and not just for the cuts: they write about the conversation, the laugh on the phone, and the way he treats every kid who climbs into the chair.</p>
+      <p>One reviewer drove an hour each way and said they would be back. Another called it the most welcoming shop in the Charleston metro area.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:var(--navy2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><h2>Services</h2><span class="sec-note">Old school, done right</span></div>
+    <div class="svc-grid">
+      <div class="svc"><h3>Classic gentleman's tapers</h3><p>Traditional tapers, cut with the steady hand reviewers rave about.</p></div>
+      <div class="svc"><h3>Modern fades</h3><p>Clean, sharp fades alongside the old-school work.</p></div>
+      <div class="svc"><h3>Children's haircuts</h3><p>Kid-friendly chairs for young clients, patient with first-timers.</p><span class="flag">First-cut certificates</span></div>
+      <div class="svc"><h3>Precise beard grooming</h3><p>Beard shaping and detail work to finish the cut.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="shop-band" id="shop">
+  <div class="wrap">
+    <div class="shop-copy">
+      <div class="sec-note" style="margin-bottom:14px">The shop</div>
+      <h2 style="margin-bottom:18px">Built for the neighborhood</h2>
+      <p><strong>Cooper's describes itself as locally owned and operated, and family friendly.</strong> The Indiana Avenue shop is where regulars hang out, kids get their first cuts, and nobody is a stranger for long.</p>
+      <p>Walk-ins are welcome during shop hours. For anything else, call <a href="tel:+13043955783" style="color:var(--gold);font-weight:600;text-decoration:none">(304) 395-5783</a>.</p>
+    </div>
+    <figure>
+      <img src="img/cbs-shop-1.jpg" alt="Coop with regulars inside the barbershop">
+      <figcaption>Real photo: Coop with regulars in the shop, from its Facebook page.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section id="hours">
+  <div class="wrap">
+    <div class="sec-head"><h2>Hours</h2><span class="sec-note">Walk-ins welcome</span></div>
+    <div class="hours-wrap">
+      <table class="hours-table">
+        <tr><td>Monday</td><td>10:00 AM - 6:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>10:00 AM - 6:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>Closed</td></tr>
+        <tr><td>Thursday</td><td>10:00 AM - 6:00 PM</td></tr>
+        <tr><td>Friday</td><td>10:00 AM - 6:00 PM</td></tr>
+        <tr><td>Saturday</td><td>9:00 AM - 3:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <div class="walkin">
+        <div class="big">Walk right in.</div>
+        <p>Walk-ins are welcome during shop hours. To check the wait or ask a question first, call <a href="tel:+13043955783" style="color:var(--gold);font-weight:600;text-decoration:none">(304) 395-5783</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" style="background:var(--navy2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><h2>Visit</h2><span class="sec-note">Indiana Avenue</span></div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Find the shop</h3>
+        <p>701 Indiana Ave<br>Charleston, WV</p>
+        <p>Phone: <a href="tel:+13043955783">(304) 395-5783</a></p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Cooper%27s+Barber+Shop+701+Indiana+Ave+Charleston+WV">Get directions on Google Maps</a></p>
+      </div>
+      <div class="visit-card">
+        <h3>Get in the chair</h3>
+        <p>Walk-ins welcome during shop hours, or call ahead.</p>
+        <div class="cta-row" style="margin-top:18px">
+          <a class="btn btn-red" href="tel:+13043955783">Call to book</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:var(--cream-dim)">Design Preview</strong> - This is a website concept created by Freightfolio. It is not the official website of Cooper's Barber Shop.</div>
+    <div>All photos on this page are real photos from the business's own Facebook page. Rating shown: 5.0 from 97 online business-listing reviews.</div>
+    <div>Concept prepared October 2026. Business details: 701 Indiana Ave, Charleston, WV - (304) 395-5783.</div>
+  </div>
+</footer>
+</body>
+</html>

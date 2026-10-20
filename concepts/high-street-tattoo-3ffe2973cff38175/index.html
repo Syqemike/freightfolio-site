@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>High Street Tattoo - Morgantown, WV | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111114; --ink2:#191922; --bone:#f0e8d6; --bone-dim:#cfc4a8;
+    --amber:#e8a33d; --amber-deep:#b97a1f; --line:#2b2b34;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--bone);font-family:'Inter',system-ui,sans-serif;line-height:1.6}
+  .disclosure{background:#000;color:#9a917c;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:10px 16px;border-bottom:1px solid var(--line)}
+  .disclosure strong{color:var(--amber);font-weight:700}
+  header.site{position:sticky;top:0;z-index:50;background:rgba(17,17,20,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .navwrap{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+  .brand{font-family:'Alfa Slab One',serif;font-size:20px;letter-spacing:.04em;color:var(--bone);text-decoration:none}
+  .brand span{color:var(--amber)}
+  nav.links{display:flex;gap:26px}
+  nav.links a{color:var(--bone-dim);text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+  nav.links a:hover{color:var(--amber)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:72px 0 64px}
+  .kicker{color:var(--amber);font-size:12px;letter-spacing:.28em;text-transform:uppercase;font-weight:700;margin-bottom:18px}
+  h1{font-family:'Alfa Slab One',serif;font-weight:400;font-size:clamp(44px,6vw,84px);line-height:1.02;color:var(--bone)}
+  h1 .amp{color:var(--amber)}
+  .lede{margin:22px 0 30px;font-size:18px;color:var(--bone-dim);max-width:46ch}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:15px 30px;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:transform .15s ease, background .15s ease}
+  .btn-amber{background:var(--amber);color:#141414}
+  .btn-amber:hover{background:#f4b455;transform:translateY(-1px)}
+  .btn-ghost{border:1px solid #4a4a55;color:var(--bone)}
+  .btn-ghost:hover{border-color:var(--amber);color:var(--amber)}
+  .hero-photo{position:relative}
+  .hero-photo img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid var(--line)}
+  .hero-photo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(0,0,0,.78);color:#cfc4a8;font-size:12px;padding:8px 12px;border-radius:3px;max-width:70%}
+  .rating-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink2)}
+  .rating-strip .wrap{display:flex;align-items:center;justify-content:center;gap:14px;padding:16px 24px;font-size:15px;color:var(--bone-dim)}
+  .stars{color:var(--amber);letter-spacing:.2em;font-size:18px}
+  section{padding:72px 0}
+  .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:36px;border-bottom:1px solid var(--line);padding-bottom:16px}
+  h2{font-family:'Alfa Slab One',serif;font-weight:400;font-size:clamp(28px,3.6vw,44px);color:var(--bone)}
+  .sec-note{color:#8f8672;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+  .flashwall{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+  .flash{position:relative;background:var(--ink2);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  .flash img{width:100%;height:340px;object-fit:cover;display:block;filter:saturate(.92)}
+  .flash figcaption{padding:14px 18px;font-size:13.5px;color:var(--bone-dim);border-top:1px solid var(--line)}
+  .flash figcaption strong{color:var(--bone);display:block;font-size:14px;margin-bottom:2px}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  .fact-list{list-style:none;margin-top:8px}
+  .fact-list li{padding:16px 0;border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:flex-start}
+  .fact-list .dot{color:var(--amber);font-weight:700;flex-shrink:0}
+  .fact-list p{color:var(--bone-dim);font-size:16px}
+  .fact-list p strong{color:var(--bone)}
+  .about-copy p{margin-bottom:18px;color:var(--bone-dim);font-size:17px;max-width:56ch}
+  .about-copy p strong{color:var(--bone)}
+  .artist-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:8px}
+  .artist{background:var(--ink2);border:1px solid var(--line);border-radius:6px;padding:30px}
+  .artist .initials{width:64px;height:64px;border-radius:50%;background:var(--amber);color:#141414;font-family:'Alfa Slab One',serif;font-size:24px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .artist h3{font-size:20px;margin-bottom:6px}
+  .artist p{color:var(--bone-dim);font-size:15px}
+  .hours-table{width:100%;border-collapse:collapse;margin-top:8px}
+  .hours-table td{padding:14px 4px;border-bottom:1px solid var(--line);font-size:16px}
+  .hours-table td:last-child{text-align:right;color:var(--bone-dim)}
+  .hours-table tr.today td{color:var(--amber);font-weight:700}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .visit-card{background:var(--ink2);border:1px solid var(--line);border-radius:6px;padding:34px}
+  .visit-card h3{font-family:'Alfa Slab One',serif;font-weight:400;font-size:22px;margin-bottom:14px;color:var(--amber)}
+  .visit-card p{color:var(--bone-dim);margin-bottom:10px;font-size:16px}
+  .visit-card a{color:var(--amber);text-decoration:none;font-weight:600}
+  .visit-card a:hover{text-decoration:underline}
+  .visit-card a.btn{color:#141414}
+  .visit-card a.btn:hover{text-decoration:none}
+  footer{border-top:1px solid var(--line);padding:36px 0 48px;color:#8f8672;font-size:13.5px}
+  footer .wrap{display:flex;flex-direction:column;gap:10px}
+  @media (max-width:900px){
+    .hero{grid-template-columns:1fr;gap:36px;padding:48px 0}
+    .two-col,.visit-grid{grid-template-columns:1fr;gap:36px}
+    .flashwall{grid-template-columns:1fr}
+    .flash img{height:280px}
+    nav.links{display:none}
+    section{padding:52px 0}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Design Preview</strong> - a website concept by Freightfolio. Not the business's official site.</div>
+<header class="site">
+  <div class="navwrap">
+    <a class="brand" href="#top">HIGH STREET <span>TATTOO</span></a>
+    <nav class="links">
+      <a href="#work">The Work</a><a href="#about">About</a><a href="#artists">Artists</a><a href="#hours">Hours</a><a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap hero" id="top">
+  <div>
+    <div class="kicker">Morgantown, West Virginia</div>
+    <h1>HIGH STREET <span class="amp">TATTOO</span></h1>
+    <p class="lede">Custom tattoos, portraits, and piercings on High Street in downtown Morgantown. The shop has been tattooing since 1987, with up-to-date sterilization and walk-ins welcome.</p>
+    <div class="cta-row">
+      <a class="btn btn-amber" href="tel:+13042848188">Call to book</a>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=High+Street+Tattoo+307+High+St+Morgantown+WV+26505">Get directions</a>
+    </div>
+  </div>
+  <figure class="hero-photo">
+    <img src="img/hst-shop-1.jpg" alt="High Street Tattoo branded hoodie with the shop's traditional eagle design">
+    <figcaption>Real photo: the shop's own branded hoodie, from its Facebook page.</figcaption>
+  </figure>
+</div>
+
+<div class="rating-strip">
+  <div class="wrap">
+    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+    <span><strong style="color:var(--bone)">4.5</strong> from 118 Facebook reviews</span>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head"><h2>The Work</h2><span class="sec-note">From the shop's portfolio</span></div>
+    <div class="flashwall">
+      <figure class="flash">
+        <img src="img/hst-yelp-2.jpg" alt="Tattoo artist at work on a client's leg piece">
+        <figcaption><strong>In the chair</strong>Real photo: the artist at work, from the shop's Yelp listing page.</figcaption>
+      </figure>
+      <figure class="flash">
+        <img src="img/hst-yelp-1.jpg" alt="Black and grey tattoo sleeve with crest and lettering">
+        <figcaption><strong>Black and grey custom work</strong>Real photo: finished custom piece, from the shop's Yelp listing page.</figcaption>
+      </figure>
+      <figure class="flash">
+        <img src="img/hst-yelp-3.jpg" alt="Color portrait tattoo with bear and shamrock details">
+        <figcaption><strong>Color portrait work</strong>Real photo: color custom piece, from the shop's Yelp listing page.</figcaption>
+      </figure>
+      <figure class="flash">
+        <img src="img/hst-yelp-4.jpg" alt="Black and grey cathedral dome tattoo">
+        <figcaption><strong>Black and grey detail work</strong>Real photo: finished custom piece, from the shop's Yelp listing page.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><h2>About the Shop</h2><span class="sec-note">307 High St</span></div>
+    <div class="two-col">
+      <div class="about-copy">
+        <p><strong>High Street Tattoo has been tattooing since 1987.</strong> The downtown Morgantown shop does custom work across styles, from portraits to traditional pieces, and also offers body piercings.</p>
+        <p>Sterilization techniques are kept up to date, and walk-ins are accepted alongside booked appointments. Call the shop to talk through your idea.</p>
+      </div>
+      <ul class="fact-list">
+        <li><span class="dot">&#9679;</span><p><strong>Custom tattoos</strong> - portraits, traditional, black and grey, and more</p></li>
+        <li><span class="dot">&#9679;</span><p><strong>Body piercings</strong> - with experienced piercers on staff</p></li>
+        <li><span class="dot">&#9679;</span><p><strong>Walk-ins welcome</strong> - stop by during shop hours</p></li>
+        <li><span class="dot">&#9679;</span><p><strong>Up-to-date sterilization</strong> - stated on the shop's own page</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="artists">
+  <div class="wrap">
+    <div class="sec-head"><h2>Artists</h2><span class="sec-note">Named in client reviews</span></div>
+    <div class="artist-cards">
+      <div class="artist">
+        <div class="initials">N</div>
+        <h3>Nick</h3>
+        <p>Tattoo artist. Clients mention his work by name in reviews.</p>
+      </div>
+      <div class="artist">
+        <div class="initials">A</div>
+        <h3>Angie</h3>
+        <p>Piercer. Clients mention her piercing work by name in reviews.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hours" style="background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><h2>Shop Hours</h2><span class="sec-note">Evening hours</span></div>
+    <div class="two-col">
+      <table class="hours-table">
+        <tr><td>Wednesday</td><td>3:00 PM - 11:00 PM</td></tr>
+        <tr><td>Thursday</td><td>3:00 PM - 11:00 PM</td></tr>
+        <tr><td>Friday</td><td>3:00 PM - 11:00 PM</td></tr>
+        <tr><td>Saturday</td><td>3:00 PM - 11:00 PM</td></tr>
+        <tr><td>Sunday - Tuesday</td><td>Closed</td></tr>
+      </table>
+      <div class="about-copy">
+        <p>The shop runs evening hours, Wednesday through Saturday. To book a custom piece or ask about walk-in availability, call <a href="tel:+13042848188" style="color:var(--amber);font-weight:600;text-decoration:none">(304) 284-8188</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-head"><h2>Visit</h2><span class="sec-note">Downtown Morgantown</span></div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Find the shop</h3>
+        <p>307 High St<br>Morgantown, WV 26505</p>
+        <p>Phone: <a href="tel:+13042848188">(304) 284-8188</a></p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=High+Street+Tattoo+307+High+St+Morgantown+WV+26505">Get directions on Google Maps</a></p>
+      </div>
+      <div class="visit-card">
+        <h3>Follow along</h3>
+        <p>The shop posts work and updates on its Facebook page.</p>
+        <p><a href="http://facebook.com/papanicolas69/">High Street Tattoo on Facebook</a></p>
+        <div class="cta-row" style="margin-top:18px">
+          <a class="btn btn-amber" href="tel:+13042848188">Call to book</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:var(--bone-dim)">Design Preview</strong> - This is a website concept created by Freightfolio. It is not the official website of High Street Tattoo.</div>
+    <div>Photos are real photos from the shop's public Facebook and Yelp listing pages. Rating shown: 4.5 from 118 Facebook reviews.</div>
+    <div>Concept prepared October 2026. Business details: 307 High St, Morgantown, WV 26505 - (304) 284-8188.</div>
+  </div>
+</footer>
+</body>
+</html>

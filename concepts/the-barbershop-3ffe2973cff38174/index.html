@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>THE BARBERSHOP - Charleston, WV | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --espresso:#211712; --espresso2:#2c1f17; --cream:#f5ecdc; --cream-dim:#c9b99b;
+    --amber:#e0952f; --amber-deep:#a86a18; --line:#3d2d20;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--espresso);color:var(--cream);font-family:'Inter',system-ui,sans-serif;line-height:1.65}
+  .disclosure{background:#120c08;color:#a08b66;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:10px 16px;border-bottom:1px solid var(--line)}
+  .disclosure strong{color:var(--amber);font-weight:700}
+  header.site{position:sticky;top:0;z-index:50;background:rgba(33,23,18,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .navwrap{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+  .brand{font-family:'Bitter',serif;font-weight:800;font-size:19px;letter-spacing:.06em;color:var(--cream);text-decoration:none}
+  .brand span{color:var(--amber)}
+  nav.links{display:flex;gap:26px}
+  nav.links a{color:var(--cream-dim);text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+  nav.links a:hover{color:var(--amber)}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  .hero{position:relative;overflow:hidden}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.28;filter:grayscale(30%) sepia(20%)}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,23,18,.55) 0%,rgba(33,23,18,.92) 100%)}
+  .hero-inner{position:relative;z-index:2;padding:96px 0 88px;max-width:1160px;margin:0 auto;padding-left:24px;padding-right:24px}
+  .kicker{color:var(--amber);font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-weight:700;margin-bottom:20px}
+  h1{font-family:'Bitter',serif;font-weight:800;font-size:clamp(46px,6.4vw,88px);line-height:1.04;color:var(--cream)}
+  h1 em{font-style:normal;color:var(--amber)}
+  .lede{margin:24px 0 32px;font-size:18px;color:var(--cream-dim);max-width:48ch}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:15px 30px;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:transform .15s ease, background .15s ease}
+  .btn-amber{background:var(--amber);color:#1c1208}
+  .btn-amber:hover{background:#f0a844;transform:translateY(-1px)}
+  .btn-ghost{border:1px solid #5a4632;color:var(--cream)}
+  .btn-ghost:hover{border-color:var(--amber);color:var(--amber)}
+  .photo-credit{position:relative;z-index:2;max-width:1160px;margin:0 auto;padding:0 24px 14px;color:#8a7358;font-size:12px}
+  .rating-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--espresso2)}
+  .rating-strip .wrap{display:flex;align-items:center;justify-content:center;gap:14px;padding:16px 24px;font-size:15px;color:var(--cream-dim)}
+  .stars{color:var(--amber);letter-spacing:.2em;font-size:18px}
+  section{padding:72px 0}
+  .sec-head{margin-bottom:34px;border-bottom:1px solid var(--line);padding-bottom:16px;display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+  h2{font-family:'Bitter',serif;font-weight:800;font-size:clamp(28px,3.6vw,42px);color:var(--cream)}
+  .sec-note{color:#8a7358;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+  .board{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  .board .svc{padding:28px;border-bottom:1px solid var(--line);background:var(--espresso2)}
+  .board .svc:nth-child(odd){border-right:1px solid var(--line)}
+  .board .svc:nth-last-child(-n+2){border-bottom:none}
+  .board .svc h3{font-family:'Bitter',serif;font-size:20px;margin-bottom:8px;color:var(--cream)}
+  .board .svc h3 .n{color:var(--amber);font-size:14px;vertical-align:super;margin-right:8px}
+  .board .svc p{color:var(--cream-dim);font-size:15px}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .barber-card{background:var(--espresso2);border:1px solid var(--line);border-radius:6px;padding:34px}
+  .barber-card .tag{color:var(--amber);font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;margin-bottom:12px}
+  .barber-card h3{font-family:'Bitter',serif;font-size:30px;margin-bottom:10px}
+  .barber-card p{color:var(--cream-dim);font-size:16px}
+  .hours-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .hours-table{width:100%;border-collapse:collapse}
+  .hours-table td{padding:14px 4px;border-bottom:1px solid var(--line);font-size:16px}
+  .hours-table td:last-child{text-align:right;color:var(--cream-dim)}
+  .sunrise{border:1px solid var(--line);border-radius:6px;background:var(--espresso2);padding:34px}
+  .sunrise .big{font-family:'Bitter',serif;font-size:44px;color:var(--amber);font-weight:800;line-height:1.1;margin-bottom:10px}
+  .sunrise p{color:var(--cream-dim);font-size:16px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .gallery figure{background:var(--espresso2);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  .gallery img{width:100%;height:250px;object-fit:cover;display:block}
+  .gallery figcaption{padding:12px 16px;font-size:13px;color:var(--cream-dim);border-top:1px solid var(--line)}
+  .gallery figcaption strong{color:var(--amber)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .visit-card{background:var(--espresso2);border:1px solid var(--line);border-radius:6px;padding:34px}
+  .visit-card h3{font-family:'Bitter',serif;font-size:22px;margin-bottom:14px;color:var(--amber)}
+  .visit-card p{color:var(--cream-dim);margin-bottom:10px;font-size:16px}
+  .visit-card a{color:var(--amber);text-decoration:none;font-weight:600}
+  .visit-card a:hover{text-decoration:underline}
+  .visit-card a.btn{color:#1c1208}
+  .visit-card a.btn:hover{text-decoration:none}
+  footer{border-top:1px solid var(--line);padding:36px 0 48px;color:#8a7358;font-size:13.5px}
+  footer .wrap{display:flex;flex-direction:column;gap:10px}
+  @media (max-width:900px){
+    .two-col,.hours-wrap,.visit-grid{grid-template-columns:1fr;gap:36px}
+    .board{grid-template-columns:1fr}
+    .board .svc:nth-child(odd){border-right:none}
+    .board .svc:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+    .board .svc:last-child{border-bottom:none}
+    .gallery{grid-template-columns:1fr}
+    .gallery img{height:230px}
+    nav.links{display:none}
+    section{padding:52px 0}
+    .hero-inner{padding:64px 24px}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Design Preview</strong> - a website concept by Freightfolio. Not the business's official site.</div>
+<header class="site">
+  <div class="navwrap">
+    <a class="brand" href="#top">THE <span>BARBERSHOP</span></a>
+    <nav class="links">
+      <a href="#services">Services</a><a href="#barbers">Barbers</a><a href="#hours">Hours</a><a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="hero-bg"><img src="img/stock-chairs.jpg" alt=""></div>
+  <div class="hero-inner">
+    <div class="kicker">Charleston, West Virginia</div>
+    <h1>THE <em>BARBERSHOP</em></h1>
+    <p class="lede">A no-frills neighborhood barbershop on Greenbrier Street. Doors open at 6 AM, Monday through Friday. Haircuts, fades, beard trims, and hot lather shaves, done by barbers regulars ask for by name.</p>
+    <div class="cta-row">
+      <a class="btn btn-amber" href="tel:+13043438386">Call to book</a>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=THE+BARBERSHOP+1436+Greenbrier+St+Charleston+WV+25311">Get directions</a>
+    </div>
+  </div>
+  <div class="photo-credit"><strong style="color:var(--amber)">Stock photo.</strong> No public photos of the shop were available, so this concept uses labeled stock imagery.</div>
+</div>
+
+<div class="rating-strip">
+  <div class="wrap">
+    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    <span><strong style="color:var(--cream)">4.9</strong> from 62 Birdeye reviews</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head"><h2>Services</h2><span class="sec-note">The daily board</span></div>
+    <div class="board">
+      <div class="svc"><h3><span class="n">01</span>Men's haircuts</h3><p>Clean, precise cuts. Regulars mention the fades by name in reviews.</p></div>
+      <div class="svc"><h3><span class="n">02</span>Fades</h3><p>Sharp fades that reviewers call the best they have had on the East Coast.</p></div>
+      <div class="svc"><h3><span class="n">03</span>Beard trims</h3><p>Beard shaping and cleanups to finish the look.</p></div>
+      <div class="svc"><h3><span class="n">04</span>Hot lather shaves</h3><p>Traditional hot lather straight razor shaves, face and head.</p></div>
+      <div class="svc"><h3><span class="n">05</span>Kids' cuts</h3><p>Kid-friendly chairs. Reviewers bring their sons back again and again.</p></div>
+      <div class="svc"><h3><span class="n">06</span>Call for the rest</h3><p>Ask about anything not listed. Call <a href="tel:+13043438386" style="color:var(--amber);font-weight:600;text-decoration:none">(304) 343-8386</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="barbers" style="background:var(--espresso2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><h2>The Barbers</h2><span class="sec-note">Ask for them by name</span></div>
+    <div class="two-col">
+      <div class="barber-card">
+        <div class="tag">Barber</div>
+        <h3>Chris</h3>
+        <p>Reviewers write about Chris by name more than anyone else in the shop. Clients say they have followed him for 15 years and never found a better fade.</p>
+      </div>
+      <div class="barber-card">
+        <div class="tag">Barber</div>
+        <h3>Scott</h3>
+        <p>Scott earns his own loyal following in the reviews, with clients calling his cuts a 10 out of 10 and coming back for years.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head"><h2>The Shop</h2><span class="sec-note">Stock imagery</span></div>
+    <div class="gallery">
+      <figure>
+        <img src="img/stock-cut.jpg" alt="Barber using clippers on a client's neckline">
+        <figcaption><strong>Stock photo.</strong> A barber finishing a cut with clippers.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/stock-fade.webp" alt="Close view of a taper fade haircut">
+        <figcaption><strong>Stock photo.</strong> A clean taper fade.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/stock-chairs.jpg" alt="Classic barbershop interior with vintage chairs">
+        <figcaption><strong>Stock photo.</strong> The classic barbershop chair lineup.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="hours" style="background:var(--espresso2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><h2>Hours</h2><span class="sec-note">Early shift</span></div>
+    <div class="hours-wrap">
+      <table class="hours-table">
+        <tr><td>Monday - Friday</td><td>6:00 AM - 4:00 PM</td></tr>
+        <tr><td>Saturday</td><td>Closed</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <div class="sunrise">
+        <div class="big">6 AM sharp.</div>
+        <p>The chairs start moving before most of Charleston is awake. If you want the first cut of the day, call the evening before or first thing in the morning: <a href="tel:+13043438386" style="color:var(--amber);font-weight:600;text-decoration:none">(304) 343-8386</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-head"><h2>Visit</h2><span class="sec-note">Greenbrier Street</span></div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Find the shop</h3>
+        <p>1436 Greenbrier St<br>Charleston, WV 25311</p>
+        <p>Phone: <a href="tel:+13043438386">(304) 343-8386</a></p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=THE+BARBERSHOP+1436+Greenbrier+St+Charleston+WV+25311">Get directions on Google Maps</a></p>
+      </div>
+      <div class="visit-card">
+        <h3>Get in the chair</h3>
+        <p>The shop keeps weekday hours, 6 AM to 4 PM. Call ahead to set up your cut.</p>
+        <div class="cta-row" style="margin-top:18px">
+          <a class="btn btn-amber" href="tel:+13043438386">Call to book</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:var(--cream-dim)">Design Preview</strong> - This is a website concept created by Freightfolio. It is not the official website of THE BARBERSHOP.</div>
+    <div>All photos on this page are labeled stock photos. No public photos of the business were available at the time this concept was built. Rating shown: 4.9 from 62 Birdeye reviews.</div>
+    <div>Concept prepared October 2026. Business details: 1436 Greenbrier St, Charleston, WV 25311 - (304) 343-8386.</div>
+  </div>
+</footer>
+</body>
+</html>

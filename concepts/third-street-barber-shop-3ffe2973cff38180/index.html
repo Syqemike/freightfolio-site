@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Third Street Barber Shop - Fresno, CA | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#d42a2a; --red-deep:#8f1c1c; --black:#141414; --black2:#1d1d1d;
+    --white:#ffffff; --off:#f4f1ec; --grey:#8a8a8a; --line:#2c2c2c;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--black);color:var(--off);font-family:'Archivo',system-ui,sans-serif;line-height:1.6}
+  .disclosure{background:#000;color:#8a8a8a;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:10px 16px;border-bottom:1px solid var(--line)}
+  .disclosure strong{color:var(--red);font-weight:700}
+  header.site{position:sticky;top:0;z-index:50;background:rgba(20,20,20,.96);backdrop-filter:blur(6px);border-bottom:2px solid var(--red)}
+  .navwrap{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
+  .brand{font-family:'Lobster',cursive;font-size:26px;color:var(--white);text-decoration:none}
+  .brand span{color:var(--red)}
+  nav.links{display:flex;gap:26px}
+  nav.links a{color:#bdbdbd;text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+  nav.links a:hover{color:var(--red)}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  .hero{position:relative;overflow:hidden;border-bottom:2px solid var(--red)}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.5}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,20,20,.94) 20%,rgba(20,20,20,.55) 60%,rgba(20,20,20,.75) 100%)}
+  .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:80px 0}
+  .kicker{color:var(--red);font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-weight:800;margin-bottom:16px}
+  h1{font-family:'Lobster',cursive;font-weight:400;font-size:clamp(52px,7vw,96px);line-height:1;color:var(--white);text-shadow:3px 3px 0 var(--red-deep)}
+  .lede{margin:22px 0 30px;font-size:18px;color:#d8d4cc;max-width:46ch}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:15px 32px;font-weight:800;font-size:14px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:4px;transition:transform .15s ease, background .15s ease}
+  .btn-red{background:var(--red);color:#fff;box-shadow:0 4px 0 var(--red-deep)}
+  .btn-red:hover{background:#e83838;transform:translateY(-1px)}
+  .btn-ghost{border:1px solid #555;color:var(--off)}
+  .btn-ghost:hover{border-color:var(--red);color:var(--red)}
+  .logo-card{position:relative;z-index:2}
+  .logo-card img{width:100%;max-width:420px;height:auto;display:block;margin:0 auto;border-radius:8px;border:3px solid var(--red);box-shadow:0 20px 60px rgba(0,0,0,.6)}
+  .logo-card figcaption{text-align:center;color:#9a9a9a;font-size:12px;margin-top:12px}
+  .rating-strip{background:var(--red);color:#fff}
+  .rating-strip .wrap{display:flex;align-items:center;justify-content:center;gap:14px;padding:15px 24px;font-size:15px;font-weight:600}
+  .stars{letter-spacing:.2em;font-size:18px}
+  section{padding:72px 0}
+  .sec-head{margin-bottom:36px;display:flex;align-items:baseline;justify-content:space-between;gap:20px;border-bottom:2px solid var(--red);padding-bottom:14px}
+  h2{font-family:'Lobster',cursive;font-weight:400;font-size:clamp(34px,4.4vw,52px);color:var(--white)}
+  .sec-note{color:var(--grey);font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+  .svc-list{list-style:none}
+  .svc-list li{display:flex;align-items:center;gap:22px;padding:22px 8px;border-bottom:1px solid var(--line)}
+  .svc-list li:last-child{border-bottom:none}
+  .svc-list .tick{width:44px;height:44px;flex-shrink:0;border-radius:50%;background:var(--red);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+  .svc-list h3{font-size:20px;font-weight:800}
+  .svc-list p{color:#bdbdbd;font-size:15px}
+  .strip-photo{border-top:2px solid var(--red);border-bottom:2px solid var(--red);background:var(--black2)}
+  .strip-photo .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-top:64px;padding-bottom:64px}
+  .strip-photo img{width:100%;height:auto;display:block;border-radius:8px;border:1px solid var(--line)}
+  .strip-photo figcaption{color:#9a9a9a;font-size:13px;margin-top:10px}
+  .strip-photo figcaption strong{color:var(--red)}
+  .about-copy p{margin-bottom:16px;color:#cfccc4;font-size:17px}
+  .about-copy p strong{color:#fff}
+  .hours-table{width:100%;border-collapse:collapse}
+  .hours-table td{padding:14px 4px;border-bottom:1px solid var(--line);font-size:16px}
+  .hours-table td:last-child{text-align:right;color:#bdbdbd}
+  .hours-table tr.hl td{color:var(--red);font-weight:800}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .visit-card{background:var(--black2);border:1px solid var(--line);border-top:3px solid var(--red);border-radius:6px;padding:34px}
+  .visit-card h3{font-size:22px;font-weight:800;margin-bottom:14px;color:var(--red)}
+  .visit-card p{color:#bdbdbd;margin-bottom:10px;font-size:16px}
+  .visit-card a{color:#fff;text-decoration:none;font-weight:700}
+  .visit-card a:hover{color:var(--red)}
+  .visit-card a.btn-red{color:#fff}
+  .visit-card a.btn-red:hover{color:#fff;text-decoration:none}
+  footer{border-top:1px solid var(--line);padding:36px 0 48px;color:#8a8a8a;font-size:13.5px}
+  footer .wrap{display:flex;flex-direction:column;gap:10px}
+  @media (max-width:900px){
+    .hero-inner{grid-template-columns:1fr;gap:36px;padding:56px 0}
+    .strip-photo .wrap{grid-template-columns:1fr;gap:32px}
+    .visit-grid{grid-template-columns:1fr;gap:36px}
+    nav.links{display:none}
+    section{padding:52px 0}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Design Preview</strong> - a website concept by Freightfolio. Not the business's official site.</div>
+<header class="site">
+  <div class="navwrap">
+    <a class="brand" href="#top">Third <span>Street</span></a>
+    <nav class="links">
+      <a href="#services">Services</a><a href="#shop">The Shop</a><a href="#hours">Hours</a><a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="hero-bg"><img src="img/tsb-shop-2.jpg" alt=""></div>
+  <div class="wrap hero-inner">
+    <div>
+      <div class="kicker">Fresno, California</div>
+      <h1>Third Street Barber Shop</h1>
+      <p class="lede">Fresh trims, tapers, and head shaves on East Ventura Avenue. A neighborhood shop with a loyal local following.</p>
+      <div class="cta-row">
+        <a class="btn btn-red" href="tel:+15593205580">Call to book</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Third+Street+Barber+Shop+3263+E+Ventura+Ave+Fresno+CA">Get directions</a>
+      </div>
+    </div>
+    <figure class="logo-card">
+      <img src="img/tsb-shop-1.jpg" alt="Third Street Barber Shop logo">
+      <figcaption>The shop's own logo, from its Facebook page.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="rating-strip">
+  <div class="wrap">
+    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    <span>4.9 from 39 Facebook reviews</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head"><h2>Services</h2><span class="sec-note">What the chairs do</span></div>
+    <ul class="svc-list">
+      <li><span class="tick">&#10003;</span><div><h3>Fresh trims</h3><p>Clean cuts, shaped the way you ask for them.</p></div></li>
+      <li><span class="tick">&#10003;</span><div><h3>Tapers</h3><p>Precise tapers and fades, blended smooth.</p></div></li>
+      <li><span class="tick">&#10003;</span><div><h3>Head shaves</h3><p>Clean head shaves with a straight finish.</p></div></li>
+      <li><span class="tick">&#10003;</span><div><h3>Beard trims</h3><p>Beard shaping and lineups.</p></div></li>
+      <li><span class="tick">&#10003;</span><div><h3>Eyebrow slits</h3><p>Detail work, done sharp.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<div class="strip-photo" id="shop">
+  <div class="wrap">
+    <figure>
+      <img src="img/stock-cut.jpg" alt="Barber using clippers on a client's neckline">
+      <figcaption><strong>Stock photo.</strong> A barber finishing a cut with clippers. No public work photos of the shop were available for this section.</figcaption>
+    </figure>
+    <div class="about-copy">
+      <p><strong>Third Street is a working neighborhood barbershop.</strong> The shop sits on East Ventura Avenue in Fresno, and its Facebook reviews speak to a loyal local following.</p>
+      <p>Walk through the services above, then call to set up your cut: <a href="tel:+15593205580" style="color:var(--red);font-weight:700;text-decoration:none">(559) 320-5580</a>.</p>
+    </div>
+  </div>
+</div>
+
+<section id="hours">
+  <div class="wrap">
+    <div class="sec-head"><h2>Hours</h2><span class="sec-note">Seven days</span></div>
+    <table class="hours-table">
+      <tr><td>Sunday</td><td>9:00 AM - 3:00 PM</td></tr>
+      <tr><td>Monday - Wednesday</td><td>10:00 AM - 7:00 PM</td></tr>
+      <tr><td>Thursday - Friday</td><td>10:30 AM - 7:00 PM</td></tr>
+      <tr><td>Saturday</td><td>9:00 AM - 5:30 PM</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="visit" style="background:var(--black2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><h2>Visit</h2><span class="sec-note">East Ventura Ave</span></div>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Find the shop</h3>
+        <p>3263 E Ventura Ave<br>Fresno, CA</p>
+        <p>Phone: <a href="tel:+15593205580">(559) 320-5580</a></p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Third+Street+Barber+Shop+3263+E+Ventura+Ave+Fresno+CA">Get directions on Google Maps</a></p>
+        <p style="margin-top:14px"><a href="https://www.facebook.com/pages/Third-Street-Barber-Shop/325874927602719">Third Street Barber Shop on Facebook</a></p>
+      </div>
+      <div class="visit-card">
+        <h3>Get in the chair</h3>
+        <p>The shop is open seven days. Call to set up your cut.</p>
+        <div class="cta-row" style="margin-top:18px">
+          <a class="btn btn-red" href="tel:+15593205580">Call to book</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#bdbdbd">Design Preview</strong> - This is a website concept created by Freightfolio. It is not the official website of Third Street Barber Shop.</div>
+    <div>The logo and branded graphic are from the business's own Facebook page. The barber-at-work photo is a labeled stock photo. Rating shown: 4.9 from 39 Facebook reviews.</div>
+    <div>Concept prepared October 2026. Business details: 3263 E Ventura Ave, Fresno, CA - (559) 320-5580.</div>
+  </div>
+</footer>
+</body>
+</html>
