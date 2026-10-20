@@ -105,6 +105,7 @@ h1 .fire{color:var(--ember)}
 .btn-primary{background:var(--ember);color:var(--night)}
 .btn-ghost{border:1px solid var(--ember);color:var(--ember)}
 .flame-wrap{display:flex;justify-content:center;flex-direction:column;align-items:center;gap:1.4rem}
+.hero-photo{width:100%;max-width:320px;height:auto;border:1px solid var(--line);display:block}
 .late-badge{
   font-family:"Courier New",Courier,monospace;
   font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
@@ -255,13 +256,8 @@ footer .biz{margin-top:1.5rem;color:var(--muted);font-size:.8rem;font-family:"Co
       <a class="btn btn-ghost" href="#hours">See late hours</a>
     </div>
   </div>
-  <div class="flame-wrap" aria-hidden="true">
-    <svg width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="Decorative flame ring">
-      <circle cx="110" cy="110" r="96" fill="none" stroke="#ff5c1f" stroke-width="5"/>
-      <circle cx="110" cy="110" r="78" fill="none" stroke="#ff5c1f" stroke-width="2" opacity=".55"/>
-      <path fill="#ff5c1f" opacity=".9" d="M110 52c10 26 26 34 26 58a26 26 0 0 1-52 0c0-14 8-20 12-32 3 8 6 12 10 16-2-14-1-28 4-42z"/>
-      <path fill="#f5efe4" opacity=".85" d="M110 96c4 11 11 15 11 26a11 11 0 0 1-22 0c0-6 3-9 5-14 1 4 3 5 4 7-1-6-1-13 2-19z"/>
-    </svg>
+  <div class="flame-wrap">
+    <img class="hero-photo" src="img/photo-2.jpg" alt="The Rings of Fire Tattoo and Piercing Studio storefront at 110 Jefferson St after dark">
     <div class="late-badge">Fri + Sat &middot; open til 2 AM</div>
   </div>
 </header>
