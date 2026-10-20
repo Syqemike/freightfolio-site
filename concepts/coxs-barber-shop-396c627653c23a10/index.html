@@ -36,7 +36,7 @@
   .btn.ghost:hover { background:rgba(30,61,42,.06); }
 
   .hero { background:var(--pine); color:#fff; }
-  .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding-top:64px; padding-bottom:64px; }
+  .hero .wrap { display:grid; grid-template-columns:1fr; gap:28px; align-items:center; padding-top:64px; padding-bottom:64px; }
   .hero-img { order:-1; }
   .hero-img img { border-radius:12px; aspect-ratio:4/3; object-fit:cover; width:100%; border:1px solid rgba(255,255,255,.15); }
   .hero .kicker { color:var(--brass); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
@@ -57,7 +57,7 @@
   h2.stitle { font-family:Georgia,'Times New Roman',serif; font-size:38px; text-align:center; margin-bottom:10px; font-weight:700; color:var(--pine); }
   p.ssub { text-align:center; color:var(--muted); max-width:640px; margin:0 auto 44px; font-size:17px; }
 
-  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .cards { display:grid; grid-template-columns:1fr; max-width:760px; margin:0 auto; gap:26px; }
   .card { background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
   .card img { width:100%; aspect-ratio:16/10; object-fit:cover; }
   .card .pad { padding:24px 26px 28px; }
@@ -111,7 +111,6 @@
 
   @media (max-width:860px) {
     .hero .wrap, .visit { grid-template-columns:1fr; }
-    .hero-img { order:0; }
     .cards, .why-grid, .reviews .rev-grid, .gallery { grid-template-columns:1fr; }
     .hero h1 { font-size:38px; }
     .navlinks { display:none; }
@@ -132,7 +131,6 @@
     <a class="brand" href="#">COX'S <em>BARBER SHOP</em></a>
     <div class="navlinks">
       <a href="#services">Services</a>
-      <a href="#reviews">Reviews</a>
       <a href="#visit">Visit</a>
     </div>
     <a class="btn" href="tel:+12282187271">Call Now</a>
@@ -141,98 +139,40 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="hero-img">
-      <img src="img/photo-1.jpg" alt="Inside Cox's Barber Shop in Ocean Springs">
-    </div>
     <div>
       <div class="kicker">Ocean Springs, Mississippi</div>
-      <h1>An old-school <em>barbershop.</em></h1>
-      <p class="lead">Cox's is the kind of place where you grab a number, sit down, and catch up with your neighbors while you wait. Traditional cuts at fair prices.</p>
+      <h1>Haircuts on <em>Government Street.</em></h1>
+      <p class="lead">Cox's Barber Shop is at 2329 Government St in Ocean Springs. The shop lists walk-in service only; call to confirm current hours.</p>
       <div class="cta-row">
         <a class="btn" href="tel:+12282187271">Call (228) 218-7271</a>
         <a class="btn ghost" href="#services">Our Services</a>
       </div>
-      <p class="hero-note">Walk-ins welcome &middot; Government Street, Ocean Springs</p>
+      <p class="hero-note">Walk-in only. No appointments.</p>
     </div>
   </div>
 </header>
 
 <div class="strip">
   <div class="wrap">
-    <span>Walk-ins welcome</span>
-    <span>Number system</span>
-    <span>Family owned</span>
+    <span>Walk-in only</span>
+    <span>No appointments</span>
+    <span>Call to confirm hours</span>
   </div>
 </div>
 
 <section class="block wrap" id="services">
-  <div class="kicker">What we do</div>
-  <h2 class="stitle">Cuts the traditional way</h2>
-  <p class="ssub">Classic barbering in Ocean Springs. Sit down, say what you want, and walk out looking right.</p>
+  <div class="kicker">Services and visits</div>
+  <h2 class="stitle">Haircuts, walk-ins only</h2>
+  <p class="ssub">The business Facebook page says it does not take appointments. Call to confirm hours and ask about current service details.</p>
   <div class="cards">
     <div class="card">
-      <img src="img/photo-2.jpg" loading="lazy" alt="A Cox's barber at work">
-      <div class="pad"><h3>Traditional Haircuts</h3><p>The classic cut, done the way it has always been done. Tell the barber what you want and they will take care of it.</p></div>
-    </div>
-    <div class="card">
-      <img src="img/photo-3.jpg" loading="lazy" alt="A young customer getting a haircut at Cox's">
-      <div class="pad"><h3>Kids Cuts</h3><p>Haircuts for younger customers. Call the shop with questions.</p></div>
-    </div>
-    <div class="card">
-      <img src="img/photo-4.jpg" loading="lazy" alt="The Cox's Barber Shop storefront window on Government St">
-      <div class="pad"><h3>Walk-ins Welcome</h3><p>Grab a number when you walk in and take a seat. The shop takes walk-ins.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="block why" id="why">
-  <div class="wrap">
-    <div class="kicker">Why Cox's</div>
-    <h2 class="stitle">The shop Ocean Springs keeps coming back to</h2>
-    <p class="ssub" style="color:#c9c2ac;">Family owned and walk-in friendly on Government Street.</p>
-    <div class="why-grid">
-      <div class="why-item">
-        <div class="n">Sat</div>
-        <h3>Saturday mornings</h3>
-        <p>Open Saturday 8:00 AM to 12:00 PM. Closed Sunday and Monday.</p>
-      </div>
-      <div class="why-item">
-        <div class="n">Call</div>
-        <h3>Current pricing</h3>
-        <p>Call (228) 218-7271 to ask about current haircut prices.</p>
-      </div>
-      <div class="why-item">
-        <div class="n">#</div>
-        <h3>Take a number</h3>
-        <p>A customer review describes taking a number before waiting for a haircut.</p>
+      <div class="pad">
+        <h3>Before you stop by</h3>
+        <p>Cox's Barber Shop lists walk-in service only. Call (228) 218-7271 to confirm current hours.</p>
+        <a href="https://www.facebook.com/p/Coxs-Barber-Shop-100063792032912/" target="_blank" rel="noopener">Visit the business Facebook page</a>
       </div>
     </div>
   </div>
-</section>
-
-<section class="block wrap reviews" id="reviews">
-  <div class="kicker">Word of mouth</div>
-  <h2 class="stitle">What customers say</h2>
-  <p class="ssub">Reviews from customers.</p>
-  <div class="rating-badge"><span>Rated <b>4.7 out of 5</b> across 48 Google reviews</span></div>
-  <div class="rev-grid">
-    <div class="rev">
-      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <p>"Cox's is the best barber shop around! It is family owned, and just about everyone goes there. The guys and gals who work there are really friendly and patient with each customer."</p>
-      <cite>Customer review</cite>
-    </div>
-    <div class="rev">
-      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <p>"Old school. Grab your number slip, sit down and catch up with your neighbors. Great place."</p>
-      <cite>Customer review</cite>
-    </div>
-    <div class="rev">
-      <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <p>"Best people. From the moment you walk in the door they make you feel right at home and their cuts never disappoint."</p>
-      <cite>Customer review</cite>
-    </div>
-  </div>
-
 </section>
 
 <section class="block wrap" id="visit">
@@ -255,7 +195,7 @@
     <div>
       <div class="cta-box">
         <h3>Need a cut?</h3>
-        <p>Walk in during business hours or call ahead. Grab a number when you get there and take a seat.</p>
+        <p>Walk-in service only. Call to confirm current hours and service details.</p>
         <a class="btn" href="tel:+12282187271">(228) 218-7271</a>
       </div>
     </div>
