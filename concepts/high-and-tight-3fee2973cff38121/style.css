@@ -1,0 +1,299 @@
+/* High and Tight - maritime work-order concept. LIGHT design.
+   Palette: canvas #f4eee1, deep sea ink #17323f, buoy orange #e8641e, rope tan #b89a6a.
+   Condensed industrial sans + Georgia serif. Mobile-first. */
+
+:root {
+  --canvas: #f4eee1;
+  --canvas-2: #ece3cf;
+  --ink: #17323f;
+  --ink-soft: #3d5561;
+  --buoy: #e8641e;
+  --buoy-dark: #c2520f;
+  --rope: #b89a6a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+img, svg { max-width: 100%; height: auto; display: block; }
+a { color: var(--buoy-dark); }
+
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+
+.condensed { font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* Disclosure bar */
+.disclosure {
+  background: var(--ink);
+  color: var(--canvas);
+  text-align: center;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.55rem 1rem;
+  font-weight: 700;
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+.topbar {
+  border-bottom: 3px double var(--rope);
+  padding: 1.75rem 1.25rem 1.25rem;
+  text-align: center;
+}
+.topbar .port {
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--buoy-dark);
+  margin-bottom: 0.5rem;
+}
+.topbar h1 {
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 2.5rem;
+  line-height: 1.05;
+}
+.topbar .est {
+  display: inline-block;
+  margin-top: 0.6rem;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  width: 4.2rem; height: 4.2rem;
+  line-height: 1.15;
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding-top: 1.05rem;
+  transform: rotate(-8deg);
+  color: var(--ink);
+}
+
+/* Nav */
+nav.main { border-bottom: 1px solid var(--rope); background: var(--canvas-2); }
+nav.main ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+nav.main a {
+  display: block;
+  padding: 0.85rem 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+nav.main a:hover, nav.main a[aria-current="page"] { color: var(--buoy-dark); }
+
+/* Hero ticket */
+.hero { padding: 2.5rem 0; }
+.ticket {
+  border: 2px solid var(--ink);
+  background: #faf6ec;
+  position: relative;
+}
+.ticket .stub {
+  border-top: 2px dashed var(--rope);
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ticket-body { padding: 1.75rem 1.5rem 1.25rem; }
+.ticket .no {
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--buoy-dark);
+  margin-bottom: 0.6rem;
+}
+.ticket h2, .ticket .headline {
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.75rem;
+}
+.ticket p.body-copy { color: var(--ink-soft); max-width: 34rem; }
+.ticket p.body-copy em { font-family: Georgia, serif; color: var(--ink); }
+
+.rating {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--ink);
+  color: var(--canvas);
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.1rem;
+}
+
+/* Buttons */
+.cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem; }
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.85rem 1.8rem;
+  border: 2px solid var(--ink);
+}
+.btn-solid { background: var(--buoy); border-color: var(--buoy); color: #fff; }
+.btn-solid:hover { background: var(--buoy-dark); border-color: var(--buoy-dark); }
+.btn-line { color: var(--ink); background: transparent; }
+.btn-line:hover { background: var(--ink); color: var(--canvas); }
+.fine { font-size: 0.88rem; color: var(--ink-soft); margin-top: 0.75rem; }
+
+/* Sections */
+section.block { padding: 2.5rem 0; border-top: 1px solid var(--rope); }
+.kicker {
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--buoy-dark);
+  margin-bottom: 0.6rem;
+}
+h2.section-title {
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 1.7rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Work-order service list */
+.order { list-style: none; border: 2px solid var(--ink); background: #faf6ec; }
+.order li {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.8rem 1.1rem;
+  border-bottom: 1px dashed var(--rope);
+}
+.order li:last-child { border-bottom: none; }
+.order .box {
+  flex: 0 0 auto;
+  width: 1.05rem; height: 1.05rem;
+  border: 2px solid var(--ink);
+}
+.order .item {
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+.order .item small { display: block; font-weight: 400; color: var(--ink-soft); letter-spacing: 0.02em; text-transform: none; font-size: 0.85rem; }
+
+/* Loyalty band */
+.loyalty {
+  background: var(--ink);
+  color: var(--canvas);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-top: 4px solid var(--buoy);
+  border-bottom: 4px solid var(--buoy);
+}
+.loyalty h2 {
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+  color: var(--canvas);
+}
+.loyalty p { color: #d8cdb4; max-width: 32rem; margin: 0 auto; }
+.loyalty .quote { font-family: Georgia, serif; font-style: italic; color: var(--canvas); }
+
+/* Heritage */
+.heritage { display: grid; gap: 1rem; }
+.heritage .card { border: 1px solid var(--rope); padding: 1.25rem; background: #faf6ec; }
+.heritage .card h3 {
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: var(--buoy-dark);
+}
+.heritage .card p { color: var(--ink-soft); font-size: 0.95rem; }
+
+/* Hours */
+.hours { list-style: none; border: 2px solid var(--ink); background: #faf6ec; max-width: 26rem; }
+.hours li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.65rem 1.1rem;
+  border-bottom: 1px dashed var(--rope);
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.92rem;
+}
+.hours li:last-child { border-bottom: none; }
+.note { color: var(--ink-soft); font-size: 0.9rem; margin-top: 1rem; font-family: Georgia, serif; font-style: italic; }
+
+/* Gallery */
+.shot { margin-bottom: 2.25rem; }
+.shot figure { border: 2px solid var(--ink); background: #faf6ec; padding: 0.6rem; }
+.shot figcaption { padding: 0.8rem 0.3rem 0.2rem; color: var(--ink-soft); font-size: 0.9rem; }
+.shot figcaption strong { color: var(--ink); font-family: Georgia, serif; font-style: italic; font-weight: 400; }
+
+/* Visit */
+.visit-card { border: 2px solid var(--ink); background: #faf6ec; padding: 1.75rem; text-align: center; }
+.visit-card address { font-style: normal; font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.08em; font-size: 1.05rem; margin-bottom: 0.6rem; }
+.visit-card .tel { font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 1.3rem; font-weight: 700; letter-spacing: 0.04em; }
+
+/* Footer */
+footer {
+  border-top: 3px double var(--rope);
+  margin-top: 2rem;
+  padding: 2rem 1.25rem 3rem;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+}
+footer .fn {
+  font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+footer nav { margin: 1rem 0; }
+footer nav a { margin: 0 0.6rem; font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--ink-soft); font-weight: 700; }
+footer nav a:hover { color: var(--buoy-dark); }
+
+@media (min-width: 720px) {
+  .topbar h1 { font-size: 3.6rem; }
+  .ticket .headline { font-size: 2.4rem; }
+  .heritage { grid-template-columns: repeat(3, 1fr); }
+  .shot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .shot-grid .shot { margin-bottom: 0; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
+}

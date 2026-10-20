@@ -1,0 +1,198 @@
+/* Fresh Fits and Fades - design preview styles
+   Palette: poster black #101010, paper #f7f4ec, acid orange #ff5a1f
+   Street flyer poster: heavy display type, price-forward board, flyer energy */
+:root{
+  --ink:#101010;
+  --paper:#f7f4ec;
+  --acid:#ff5a1f;
+  --acid-dark:#c23f0c;
+  --display:"Arial Black","Archivo Black",Impact,"Haettenschweiler",sans-serif;
+  --body:Helvetica,Arial,"Segoe UI",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--body);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.55;
+  font-size:16px;
+}
+img,svg{max-width:100%;height:auto;display:block}
+a{color:var(--acid-dark);text-decoration:underline;text-underline-offset:2px}
+
+/* disclosure bar */
+.disclosure{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:var(--display);
+  font-size:11px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  text-align:center;
+  padding:10px 12px;
+  line-height:1.6;
+  border-bottom:4px solid var(--acid);
+}
+
+/* header */
+.topbar{background:var(--paper);border-bottom:3px solid var(--ink)}
+.topbar-inner{
+  max-width:1100px;margin:0 auto;padding:18px 18px;
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;
+}
+.brand{
+  font-family:var(--display);font-size:clamp(20px,3.4vw,30px);
+  text-transform:uppercase;letter-spacing:.02em;line-height:1;
+}
+.brand .amp{color:var(--acid)}
+nav.flyer-nav{display:flex;flex-wrap:wrap;gap:8px}
+nav.flyer-nav a{
+  font-family:var(--display);font-size:12px;text-transform:uppercase;letter-spacing:.06em;
+  text-decoration:none;color:var(--ink);
+  border:2px solid var(--ink);padding:9px 13px;background:var(--paper);
+}
+nav.flyer-nav a[aria-current="page"]{background:var(--ink);color:var(--paper)}
+nav.flyer-nav a:hover{background:var(--acid);border-color:var(--acid);color:#fff}
+
+/* hero poster */
+.poster{background:var(--ink);color:var(--paper)}
+.poster-inner{
+  max-width:1100px;margin:0 auto;padding:52px 18px 46px;
+  position:relative;
+}
+.sticker{
+  display:inline-block;background:var(--acid);color:#fff;
+  font-family:var(--display);font-size:12px;text-transform:uppercase;letter-spacing:.12em;
+  padding:8px 14px;transform:rotate(-3deg);margin-bottom:18px;
+}
+.poster h1{
+  font-family:var(--display);
+  font-size:clamp(56px,13vw,150px);
+  line-height:.92;text-transform:uppercase;letter-spacing:-.01em;
+}
+.poster h1 .line2{color:var(--acid);display:block}
+.poster .tagline{
+  margin-top:18px;font-size:clamp(16px,2.6vw,22px);font-weight:700;
+  text-transform:uppercase;letter-spacing:.06em;
+}
+.poster .facts{
+  margin-top:14px;font-size:15px;color:var(--paper);opacity:.9;
+}
+.poster .facts a{color:#fff}
+.hero-cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-block;text-decoration:none;font-family:var(--display);
+  font-size:14px;text-transform:uppercase;letter-spacing:.08em;
+  padding:15px 26px;border:3px solid var(--ink);
+}
+.btn-acid{background:var(--acid);border-color:var(--acid);color:#fff}
+.btn-paper{background:var(--paper);color:var(--ink)}
+.btn:hover{transform:translateY(-2px)}
+
+/* sections */
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+.section-title{
+  font-family:var(--display);font-size:clamp(28px,5vw,48px);text-transform:uppercase;
+  line-height:1;margin:52px 0 8px;
+}
+.section-title .hl{background:var(--ink);color:var(--paper);padding:0 10px}
+.section-sub{margin-bottom:26px;max-width:42em}
+
+/* price board */
+.price-board{
+  background:var(--ink);color:var(--paper);
+  border:4px solid var(--ink);margin:10px 0 50px;
+}
+.price-board-head{
+  background:var(--acid);color:#fff;font-family:var(--display);
+  font-size:13px;text-transform:uppercase;letter-spacing:.14em;
+  padding:12px 18px;
+}
+.price-row{
+  display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+  padding:16px 18px;border-bottom:2px dashed rgba(247,244,236,.25);
+}
+.price-row:last-child{border-bottom:none}
+.price-name{font-family:var(--display);font-size:clamp(17px,2.6vw,24px);text-transform:uppercase}
+.price-value{font-family:var(--display);font-size:clamp(17px,2.6vw,24px);color:var(--acid);white-space:nowrap}
+
+/* service chips */
+.chip-row{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 50px}
+.chip{
+  border:2px solid var(--ink);padding:10px 16px;
+  font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.05em;
+  background:var(--paper);
+}
+.chip.alt{background:var(--acid);border-color:var(--acid);color:#fff}
+
+/* walk-ins banner */
+.walkins{
+  background:var(--acid);color:#fff;margin:0 0 50px;
+  padding:26px 22px;transform:rotate(-.6deg);
+}
+.walkins h2{font-family:var(--display);font-size:clamp(24px,4.6vw,40px);text-transform:uppercase;line-height:1.05}
+.walkins p{margin-top:10px;font-weight:700}
+
+/* boutique strip */
+.boutique{
+  background:var(--paper);border:4px solid var(--ink);padding:30px 24px;margin:0 0 50px;
+}
+.boutique h2{font-family:var(--display);font-size:clamp(24px,4.6vw,40px);text-transform:uppercase;line-height:1}
+.boutique .brands{
+  font-family:var(--display);font-size:clamp(18px,3vw,28px);color:var(--acid-dark);
+  text-transform:uppercase;margin:14px 0;
+}
+
+/* info band */
+.info-band{
+  display:grid;grid-template-columns:1fr;gap:0;border:4px solid var(--ink);margin:0 0 50px;
+}
+.info-cell{padding:22px;border-bottom:4px solid var(--ink)}
+.info-cell:last-child{border-bottom:none}
+.info-cell h3{font-family:var(--display);font-size:18px;text-transform:uppercase;margin-bottom:8px}
+.info-cell h3 .dot{color:var(--acid)}
+
+/* gallery */
+.gallery-note{
+  border:3px solid var(--ink);padding:16px 20px;margin:26px 0 34px;
+  font-size:15px;background:#fff;font-weight:600;
+}
+.gallery-grid{display:grid;grid-template-columns:1fr;gap:26px;margin-bottom:50px}
+figure.flyer-art{border:4px solid var(--ink);background:#fff;padding:14px}
+figure.flyer-art figcaption{font-size:14px;padding-top:12px}
+figure.flyer-art figcaption strong{
+  display:block;font-family:var(--display);font-size:12px;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--acid-dark);margin-bottom:6px;
+}
+
+/* hours */
+.hours-list{list-style:none;margin:16px 0 40px;max-width:520px}
+.hours-list li{
+  display:flex;justify-content:space-between;gap:12px;
+  padding:13px 4px;border-bottom:3px solid var(--ink);font-weight:700;
+}
+.hours-list li span:last-child{font-family:var(--display);text-transform:uppercase;font-size:14px}
+.hours-footnote{font-size:14px;font-weight:700;margin-bottom:40px;color:var(--acid-dark)}
+
+/* footer */
+footer.site{background:var(--ink);color:var(--paper);margin-top:60px;border-top:6px solid var(--acid)}
+footer.site .wrap{padding-top:34px;padding-bottom:34px}
+footer.site p{font-size:14px;max-width:58em;margin-bottom:10px}
+footer.site a{color:var(--paper)}
+footer.site .foot-brand{font-family:var(--display);font-size:22px;text-transform:uppercase;margin-bottom:10px}
+
+.page-head{max-width:1100px;margin:0 auto;padding:46px 18px 6px}
+.page-head h1{
+  font-family:var(--display);font-size:clamp(42px,9vw,92px);
+  text-transform:uppercase;line-height:.95;
+}
+.page-head h1 .accent{color:var(--acid)}
+.page-head .sub{margin-top:12px;max-width:40em;font-size:17px;font-weight:600}
+
+@media(min-width:720px){
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .info-band{grid-template-columns:1fr 1fr}
+  .info-cell{border-bottom:none;border-right:4px solid var(--ink)}
+  .info-cell:last-child{border-right:none}
+}
