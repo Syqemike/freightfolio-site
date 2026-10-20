@@ -105,6 +105,15 @@ h1 .fire{color:var(--ember)}
 .btn-primary{background:var(--ember);color:var(--night)}
 .btn-ghost{border:1px solid var(--ember);color:var(--ember)}
 .flame-wrap{display:flex;justify-content:center;flex-direction:column;align-items:center;gap:1.4rem}
+.hero-photo{
+  margin:0;border:1px solid var(--line);background:var(--night2);
+  box-shadow:0 0 34px rgba(255,92,31,.22);
+}
+.hero-photo img{width:100%;height:auto;display:block}
+.hero-photo figcaption{
+  padding:.6rem .8rem;font-family:"Courier New",Courier,monospace;
+  font-size:.75rem;color:var(--muted);
+}
 .late-badge{
   font-family:"Courier New",Courier,monospace;
   font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
@@ -255,13 +264,11 @@ footer .biz{margin-top:1.5rem;color:var(--muted);font-size:.8rem;font-family:"Co
       <a class="btn btn-ghost" href="#hours">See late hours</a>
     </div>
   </div>
-  <div class="flame-wrap" aria-hidden="true">
-    <svg width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="Decorative flame ring">
-      <circle cx="110" cy="110" r="96" fill="none" stroke="#ff5c1f" stroke-width="5"/>
-      <circle cx="110" cy="110" r="78" fill="none" stroke="#ff5c1f" stroke-width="2" opacity=".55"/>
-      <path fill="#ff5c1f" opacity=".9" d="M110 52c10 26 26 34 26 58a26 26 0 0 1-52 0c0-14 8-20 12-32 3 8 6 12 10 16-2-14-1-28 4-42z"/>
-      <path fill="#f5efe4" opacity=".85" d="M110 96c4 11 11 15 11 26a11 11 0 0 1-22 0c0-6 3-9 5-14 1 4 3 5 4 7-1-6-1-13 2-19z"/>
-    </svg>
+  <div class="flame-wrap">
+    <figure class="hero-photo">
+      <img src="img/photo-2.jpg" alt="Rings of Fire storefront at night, neon TATTOO sign glowing at 110 Jefferson St">
+      <figcaption>Photo from the shop's public Facebook page.</figcaption>
+    </figure>
     <div class="late-badge">Fri + Sat &middot; open til 2 AM</div>
   </div>
 </header>
@@ -277,11 +284,11 @@ footer .biz{margin-top:1.5rem;color:var(--muted);font-size:.8rem;font-family:"Co
   </article>
   <article>
     <h2><span class="num">02</span>Body Piercings</h2>
-    <p>Piercing and body modification services in the same downtown shop. The shop takes both walk-ins and appointments.</p>
+    <p>Piercing and body modification services in the same downtown shop.</p>
     <ul>
       <li>Body piercing services</li>
-      <li>Walk-ins welcome</li>
-      <li>Appointments available</li>
+      <li>Body modification services</li>
+      <li>Evening hours, Friday and Saturday until 2:00 AM</li>
     </ul>
   </article>
 </section>
@@ -308,10 +315,6 @@ footer .biz{margin-top:1.5rem;color:var(--muted);font-size:.8rem;font-family:"Co
       <figcaption>The shop's logo, as posted by the shop on its Facebook page.</figcaption>
     </figure>
     <figure>
-      <img src="img/photo-2.jpg" alt="The Rings of Fire Tattoo and Piercing Studio storefront at night">
-      <figcaption>The storefront at 110 Jefferson St after dark. Photo via the shop's Facebook page.</figcaption>
-    </figure>
-    <figure>
       <img src="img/photo-3.jpg" alt="Rings of Fire Tattoo Studio promo graphic">
       <figcaption>The shop's promo graphic.</figcaption>
     </figure>
@@ -327,7 +330,7 @@ footer .biz{margin-top:1.5rem;color:var(--muted);font-size:.8rem;font-family:"Co
   <h2>Find Us</h2>
   <div class="grid">
     <div>
-      <p>In the shop's own words: a "Tattoo and Body Modification Studio" at 110 Jefferson in downtown San Antonio, with walk-ins and appointments available.</p>
+      <p>The shop describes itself as a "Tattoo and Body Modification Studio" at 110 Jefferson in downtown San Antonio.</p>
       <address>
         110 Jefferson St<br>
         San Antonio, TX 78205
@@ -336,6 +339,7 @@ footer .biz{margin-top:1.5rem;color:var(--muted);font-size:.8rem;font-family:"Co
     </div>
     <div>
       <p>Rated 4.6 from 125 Google reviews.</p>
+      <p>Friday and Saturday the shop stays open until 2:00 AM. Call <a href="tel:+12103543473">(210) 354-3473</a> to book.</p>
     </div>
   </div>
 </section>
