@@ -92,6 +92,20 @@
     animation-delay: 0.5s;
   }
   .tube.thin { stroke-width: 3.2; }
+  .neon-word {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    fill: #ffffff;
+    stroke: var(--magenta);
+    stroke-width: 1.5;
+    filter: drop-shadow(0 0 6px var(--magenta)) drop-shadow(0 0 22px rgba(255,46,166,0.8));
+    animation: flickerOn 3.2s ease-in forwards;
+  }
+  .neon-word.cyan {
+    stroke: var(--cyan);
+    filter: drop-shadow(0 0 6px var(--cyan)) drop-shadow(0 0 22px rgba(37,232,255,0.8));
+    animation-delay: 0.5s;
+  }
   @keyframes flickerOn {
     0% { opacity: 0; }
     6% { opacity: 1; }
@@ -360,30 +374,8 @@
   </svg>
   <svg class="neon-sign" viewBox="0 0 760 210" role="img" aria-label="Neon sign reading City of Fades">
     <rect x="10" y="10" width="740" height="190" rx="14" class="tube thin cyan" opacity="0.9"/>
-    <g>
-      <path class="tube" d="M60,80 C48,66 48,44 64,36 C76,31 90,32 96,42" />
-      <path class="tube" d="M110,40 L110,76 M110,40 L138,40 M110,76 L136,76 M110,58 L130,58" />
-      <path class="tube" d="M155,40 L155,76 L183,76" />
-      <path class="tube" d="M205,76 L217,40 L229,76 M209,66 L225,66" />
-      <path class="tube" d="M250,76 L250,40 M250,40 L278,40 M250,58 L272,58 M250,76 L276,76" />
-      <path class="tube" d="M300,76 L328,40 L328,76" />
-      <path class="tube" d="M352,40 C380,40 380,76 352,76 C346,76 344,74 342,72" />
-      <path class="tube" d="M400,76 L400,40 M400,40 L428,40 M400,58 L422,58" />
-      <path class="tube" d="M450,76 L450,40 M450,40 L478,40 M450,58 L472,58 M450,76 L476,76" />
-      <path class="tube" d="M500,76 L512,40 L524,76 M504,66 L520,66" />
-      <path class="tube" d="M546,76 L546,40 M546,58 L566,40 M566,40 L566,76" />
-      <path class="tube" d="M590,40 L590,76 M590,40 L618,40 M590,76 L616,76 M590,58 L610,58" />
-      <path class="tube" d="M640,76 C628,76 620,66 620,56 C620,46 628,38 640,38 C652,38 660,46 660,54 M660,54 L646,58" />
-    </g>
-    <g>
-      <path class="tube cyan thin" d="M250,140 L250,172 M250,140 L274,140 M250,172 L272,172" />
-      <path class="tube cyan thin" d="M290,172 L290,140 L314,172 L314,140" />
-      <path class="tube cyan thin" d="M330,172 L330,140 M330,140 L354,140 M330,156 L348,156 M330,172 L352,172" />
-      <path class="tube cyan thin" d="M368,172 L368,140 M368,140 L392,140 M368,156 L386,156 M368,172 L390,172" />
-      <path class="tube cyan thin" d="M406,172 C396,172 390,164 390,156 C390,148 396,142 406,142 C414,142 420,147 420,154 L406,158" />
-      <path class="tube cyan thin" d="M436,172 L436,140 M436,140 L458,156 M458,140 L458,172" />
-      <path class="tube cyan thin" d="M474,172 L474,140 M474,140 L498,140 M474,172 L496,172" />
-    </g>
+    <text x="380" y="112" text-anchor="middle" class="neon-word" font-size="72" letter-spacing="8">CITY OF FADES</text>
+    <text x="380" y="166" text-anchor="middle" class="neon-word cyan" font-size="30" letter-spacing="12">LAS VEGAS, NV</text>
   </svg>
   <div class="hero-sub">Barbershop</div>
   <p class="hero-address">1735 N Nellis Blvd b, Las Vegas, NV 89115</p>
