@@ -1,0 +1,232 @@
+/* City of Ink - gallery exhibition concept */
+:root{
+  --char:#1d1a16;
+  --char-soft:#262019;
+  --brick:#a34a28;
+  --turq:#2e8b8b;
+  --bone:#efe8d8;
+  --bone-dim:#cfc6ae;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--char);
+  color:var(--bone);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  line-height:1.65;
+}
+h1,h2,h3{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:400;
+  line-height:1.12;
+  color:var(--bone);
+}
+a{color:#9fd3d1}
+img,svg{max-width:100%;height:auto;display:block}
+
+/* disclosure bar */
+.preview-bar{
+  background:var(--turq);
+  color:#0f1f1e;
+  text-align:center;
+  font-size:.72rem;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  padding:.55rem .75rem;
+  font-weight:700;
+}
+
+/* header */
+.site-header{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:.5rem 1rem;
+  padding:1rem 1.25rem;
+  border-bottom:1px solid #3d352b;
+}
+.brand{
+  font-family:Georgia,serif;
+  font-size:1.25rem;
+  color:var(--bone);
+  text-decoration:none;
+  letter-spacing:.04em;
+}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:1.2rem}
+nav a{
+  color:var(--bone-dim);
+  text-decoration:none;
+  font-size:.8rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+nav a:hover{color:var(--bone)}
+
+main{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+
+/* exhibition poster hero */
+.hero{
+  padding:4rem 0 3rem;
+  border-bottom:1px solid #3d352b;
+}
+.kicker{
+  font-size:.75rem;
+  letter-spacing:.34em;
+  text-transform:uppercase;
+  color:var(--turq);
+  margin-bottom:1.4rem;
+}
+.hero h1{
+  font-size:clamp(3rem,9vw,5.8rem);
+  letter-spacing:.01em;
+  margin-bottom:1.2rem;
+}
+.hero .tagline{
+  font-family:Georgia,serif;
+  font-size:clamp(1.1rem,2.6vw,1.5rem);
+  color:var(--bone-dim);
+  max-width:44rem;
+  margin-bottom:1.8rem;
+}
+.rating-line{
+  display:inline-block;
+  border:1px solid var(--turq);
+  color:var(--bone);
+  padding:.55rem 1.1rem;
+  font-size:.88rem;
+  letter-spacing:.05em;
+  margin-bottom:1.8rem;
+}
+.cta-row{display:flex;flex-wrap:wrap;gap:1rem}
+.btn{
+  display:inline-block;
+  padding:.9rem 1.9rem;
+  text-decoration:none;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-size:.8rem;
+  font-weight:700;
+}
+.btn-solid{background:var(--brick);color:#fff7ea}
+.btn-ghost{border:1px solid var(--bone-dim);color:var(--bone)}
+
+/* gallery wall */
+.wall{padding:3rem 0}
+.section-label{
+  font-size:.75rem;
+  letter-spacing:.34em;
+  text-transform:uppercase;
+  color:var(--brick);
+  margin-bottom:.8rem;
+}
+.wall h2,.story h2,.styles h2,.visit-sec h2{font-size:clamp(1.8rem,4.5vw,2.6rem);margin-bottom:1.2rem}
+.frames{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:1.8rem}
+.frame{
+  background:#efe8d8;
+  padding:.9rem .9rem 1.1rem;
+  box-shadow:0 10px 28px rgba(0,0,0,.45);
+}
+.frame .plate{
+  color:#4a3f30;
+  font-size:.72rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  text-align:center;
+  padding-top:.7rem;
+}
+
+/* founder story */
+.story{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:2rem;
+  padding:3rem 0;
+  border-top:1px solid #3d352b;
+  border-bottom:1px solid #3d352b;
+}
+.story p{margin-bottom:1.1rem;color:var(--bone-dim)}
+.story p.lead{font-family:Georgia,serif;font-size:1.25rem;color:var(--bone)}
+.press{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.7rem;
+  margin-top:1.4rem;
+}
+.press span{
+  border:1px solid #4a4034;
+  padding:.45rem .95rem;
+  font-size:.78rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--bone-dim);
+}
+.press-note{font-size:.85rem;color:#8d8270;margin-top:.8rem}
+
+/* styles list */
+.styles{padding:3rem 0;border-bottom:1px solid #3d352b}
+.style-grid{list-style:none;display:grid;grid-template-columns:1fr;gap:0}
+.style-grid li{
+  padding:1.1rem 0;
+  border-bottom:1px solid #3d352b;
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:1rem;
+}
+.style-grid li:last-child{border-bottom:none}
+.style-grid .s-name{font-family:Georgia,serif;font-size:1.25rem}
+.style-grid .s-note{font-size:.85rem;color:#8d8270}
+
+/* hours + visit */
+.hours-visit{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:2.5rem;
+  padding:3rem 0;
+}
+.hours-table{width:100%;border-collapse:collapse}
+.hours-table th,.hours-table td{padding:.75rem 0;text-align:left;border-bottom:1px solid #3d352b}
+.hours-table th{font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;color:var(--turq)}
+.addr{font-size:1.1rem;margin:.8rem 0}
+.socials{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem}
+.call-line{margin-top:1.2rem;color:var(--bone-dim)}
+
+footer{
+  border-top:1px solid #3d352b;
+  padding:2rem 1.25rem;
+  font-size:.85rem;
+  color:#8d8270;
+}
+footer .foot-inner{max-width:1100px;margin:0 auto}
+footer a{color:#9fd3d1}
+
+/* inner pages */
+.page-head{padding:3rem 0 2rem}
+.page-head h1{font-size:clamp(2.2rem,6vw,3.6rem)}
+.page-head .lede{color:var(--bone-dim);max-width:42rem;margin-top:1rem}
+.prose{max-width:46rem;margin-bottom:3rem}
+.prose p{margin-bottom:1.1rem;color:var(--bone-dim)}
+.prose h2{font-size:1.6rem;margin:2.2rem 0 1rem}
+
+.gallery-note{
+  border:1px solid var(--turq);
+  padding:1.2rem 1.4rem;
+  margin-bottom:2rem;
+  color:var(--bone-dim);
+  font-size:.95rem;
+}
+.gallery-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-bottom:3rem}
+.g-item{background:#efe8d8;padding:.9rem .9rem 1.1rem;box-shadow:0 10px 28px rgba(0,0,0,.45)}
+.g-item figcaption{color:#4a3f30;font-size:.88rem;margin-top:.8rem}
+.g-item figcaption strong{display:block;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;margin-bottom:.25rem;color:#2c251c}
+
+@media(min-width:720px){
+  .frames{grid-template-columns:repeat(3,1fr)}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .style-grid{grid-template-columns:1fr 1fr;gap:0 3rem}
+  .hours-visit{grid-template-columns:1fr 1fr}
+  .story{grid-template-columns:1fr 1fr}
+}
+@media(min-width:1020px){
+  .gallery-grid{grid-template-columns:repeat(3,1fr)}
+}
