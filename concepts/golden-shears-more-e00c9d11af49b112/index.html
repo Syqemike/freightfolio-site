@@ -79,8 +79,9 @@
   }
   .kicker {
     font-size:12px; letter-spacing:4px; text-transform:uppercase;
-    color:var(--terra); margin-bottom:18px;
+    color:#8f441f; margin-bottom:18px;
   }
+  .about .kicker { color:var(--terra-soft); }
   .hero-name h1 {
     font-weight:600; font-size:clamp(44px,7vw,88px);
     line-height:1.02; letter-spacing:.5px;
@@ -89,12 +90,16 @@
     width:64px; height:3px; background:var(--terra); margin:24px auto 0;
   }
   .hero-sub {
-    text-align:center; font-size:18px; color:var(--muted);
+    text-align:center; font-size:18px; color:#6b5c4c;
     padding:0 20px 8px; background:var(--sand-soft);
     font-style:italic;
   }
   .split {
     display:grid; grid-template-columns:1fr 1fr;
+  }
+  header.hero .split .side-barber,
+  header.hero .split .side-spa {
+    padding:52px 48px 56px;
   }
   .side-barber {
     background:var(--espresso);
@@ -111,7 +116,7 @@
     margin-bottom:16px; display:block;
   }
   .side-barber .side-tag { color:var(--terra-soft); }
-  .side-spa .side-tag { color:var(--terra); }
+  .side-spa .side-tag { color:#8f441f; }
   .split h2 {
     font-size:clamp(30px,3.4vw,44px); font-weight:600; line-height:1.08;
     margin-bottom:16px;
@@ -125,7 +130,8 @@
   .side-spa .btn:hover { background:var(--espresso); border-color:var(--espresso); color:var(--cream-on-espresso); }
   .side-art { margin-top:22px; }
   .side-art svg { display:block; width:100%; height:auto; }
-  .art-note { font-size:11px; opacity:.55; margin-top:10px; letter-spacing:1px; }
+  .art-note { font-size:11px; color:#6b5c4c; margin-top:10px; letter-spacing:1px; }
+  .side-barber .art-note { color:var(--terra-soft); }
 
   /* ---- services split ---- */
   .services { padding:0; }
@@ -140,6 +146,17 @@
   .side-spa li { border-color:rgba(51,40,30,.18); }
   .services li .n { font-size:11px; letter-spacing:2px; opacity:.55; text-transform:uppercase; }
   .services .note { font-size:14px; margin-top:22px; opacity:.8; }
+  .spa-card {
+    border:1px solid rgba(51,40,30,.4);
+    background:rgba(255,255,255,.28);
+    padding:22px 24px;
+    margin:26px 0 4px;
+  }
+  .spa-card .spa-k {
+    font-size:11px; letter-spacing:2.5px; text-transform:uppercase;
+    color:#8f441f; font-weight:600; margin-bottom:10px;
+  }
+  .spa-card p { font-size:15px; margin-bottom:0; }
 
   /* ---- about strip (espresso, full width) ---- */
   .about {
