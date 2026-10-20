@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--
+DESIGN BRIEF: Downtown Vintage Barbershop (downtown-vintage-barbershop)
+1. Aesthetic: Retro storefront ticket. Mid-century Fremont storefront with striped awning, barber pole, price board, and ticket stubs.
+2. Typography: Oswald (condensed retro sans) for display and headlines; Inter (clean sans) for body. Stamped tagline accent.
+3. Palette: Cream paper #faf4e6, barber red #b3372e, deep navy ink #1e2a38, muted gold #c2953a, barber-pole stripe motif.
+4. Imagery: 4 real shop photos (storefront x2, interior x2) in ticket frames with dashed perforation edges, with provenance.
+5. Layout: Storefront masthead with awning band, price board services, shop gallery, barber roster as ticket stubs, visit card.
+6. Customer journey: Tagline promise first, then price board, then shop gallery, then barbers, then call to book, then visit card with hours and directions.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Downtown Vintage Barbershop | Fremont Street, Las Vegas (Design Preview)</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Design preview concept for Downtown Vintage Barbershop on Fremont Street in downtown Las Vegas.">
+<style>
+@font-face{font-family:'Oswald';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/Oswald-normal-500.woff2') format('woff2');}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/Oswald-normal-600.woff2') format('woff2');}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/Oswald-normal-700.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/Inter-normal-400.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/Inter-normal-500.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/Inter-normal-600.woff2') format('woff2');}
+:root{
+  --cream:#faf4e6; --cream-deep:#f1e8d2; --red:#b3372e; --red-deep:#8f2a23;
+  --navy:#1e2a38; --navy-deep:#141d27; --gold:#c2953a; --ink:#211a13; --muted:#6b6257;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,'Segoe UI',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:17px}
+img{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* disclosure + awning */
+.disclosure{background:var(--navy-deep);color:#e8ddc2;text-align:center;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;padding:10px 16px;line-height:1.5}
+.disclosure strong{color:var(--gold)}
+.awning{height:30px;background:repeating-linear-gradient(-45deg,var(--red) 0 26px,var(--cream) 26px 52px);border-bottom:4px solid var(--navy-deep)}
+
+/* masthead */
+.masthead{background:var(--navy);color:var(--cream);text-align:center;padding:56px 24px 44px;position:relative;overflow:hidden}
+.masthead .eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px}
+.masthead h1{font-family:'Oswald','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;line-height:1;font-size:clamp(46px,9vw,92px);letter-spacing:.02em}
+.masthead h1 .thin{display:block;font-weight:500;font-size:.52em;letter-spacing:.34em;color:#e8ddc2;margin-top:8px}
+.pole-divider{width:180px;height:10px;margin:22px auto;background:repeating-linear-gradient(-45deg,var(--red) 0 14px,#f3ead6 14px 28px,var(--navy) 28px 42px,#f3ead6 42px 56px);border:2px solid var(--navy-deep)}
+.tagline-stamp{display:inline-block;font-family:'Oswald','Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:clamp(15px,2.4vw,20px);color:var(--cream);border:3px double var(--gold);padding:12px 26px;margin-top:6px;transform:rotate(-2deg)}
+.masthead .intro{max-width:640px;margin:22px auto 0;color:#c9c0a8;font-size:17px}
+
+/* nav */
+nav.mainnav{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:2px solid var(--navy)}
+nav.mainnav .wrap{display:flex;overflow-x:auto;padding:0 12px}
+nav.mainnav a{color:var(--navy);text-decoration:none;font-family:'Oswald','Arial Narrow',sans-serif;font-size:14px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;padding:14px 20px;white-space:nowrap;border-right:2px dashed #d8cdb2}
+nav.mainnav a:first-child{border-left:2px dashed #d8cdb2}
+nav.mainnav a:hover,nav.mainnav a.active{color:var(--red)}
+
+/* hero */
+.hero{position:relative}
+.hero img{width:100%;max-height:600px;object-fit:cover}
+.hero .caption{background:var(--navy-deep);color:#c9c0a8;font-size:13.5px;padding:12px 24px;text-align:center;font-style:italic}
+
+/* sections */
+section.block{padding:72px 0}
+.sec-eyebrow{font-family:'Oswald','Arial Narrow',sans-serif;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:10px}
+.sec-title{font-family:'Oswald','Arial Narrow',sans-serif;font-weight:600;text-transform:uppercase;font-size:clamp(30px,5vw,46px);line-height:1.05}
+.sec-sub{color:var(--muted);margin-top:12px;max-width:640px;font-size:17px}
+.sec-head{margin-bottom:38px}
+
+/* price board */
+.board{background:var(--navy);border:6px solid var(--navy-deep);box-shadow:0 10px 30px rgba(20,29,39,.25);padding:8px 0}
+.board-head{text-align:center;padding:26px 20px 18px;border-bottom:3px dashed rgba(250,244,230,.3)}
+.board-head h3{font-family:'Oswald','Arial Narrow',sans-serif;color:var(--gold);text-transform:uppercase;letter-spacing:.3em;font-size:20px}
+.board-row{display:grid;grid-template-columns:1fr auto;gap:8px 20px;padding:20px 32px;border-bottom:2px dashed rgba(250,244,230,.18);align-items:baseline}
+.board-row:last-child{border-bottom:none}
+.board-row h4{font-family:'Oswald','Arial Narrow',sans-serif;color:var(--cream);text-transform:uppercase;letter-spacing:.08em;font-size:21px;font-weight:500;grid-column:1;grid-row:1}
+.board-row p{color:#b7ad94;font-size:15px;grid-column:1}
+.board-row .price{font-family:'Oswald','Arial Narrow',sans-serif;color:var(--gold);font-size:26px;font-weight:600;grid-column:2;grid-row:1 / span 2;white-space:nowrap;justify-self:end}
+.board-row .noprice{font-family:'Oswald','Arial Narrow',sans-serif;color:#8d8471;font-size:15px;letter-spacing:.14em;text-transform:uppercase;grid-column:2;grid-row:1 / span 2;white-space:nowrap;align-self:center;justify-self:end}
+
+/* shop section */
+.shop{background:var(--navy);color:var(--cream)}
+.shop .sec-title{color:var(--cream)}
+.shop .sec-sub{color:#b7ad94}
+.shop .sec-eyebrow{color:var(--gold)}
+.shop-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;align-items:stretch}
+.ticket{background:var(--cream);padding:12px;border:2px dashed var(--red);color:var(--ink)}
+.ticket img{width:100%;aspect-ratio:4/3;object-fit:cover;cursor:zoom-in}
+.ticket figcaption{padding:12px 4px 4px;font-size:13.5px;color:var(--muted);font-style:italic}
+.ticket figcaption .tag{display:block;font-style:normal;font-family:'Oswald','Arial Narrow',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:4px}
+.shop-line{font-family:'Oswald','Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);font-size:18px;margin-top:32px;text-align:center}
+
+/* barbers */
+.stubs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.stub{background:#fff;border:2px dashed var(--navy);padding:34px 20px;text-align:center;position:relative;transition:transform .15s}
+.stub:hover{transform:translateY(-4px)}
+.stub:before,.stub:after{content:"";position:absolute;top:50%;width:26px;height:26px;background:var(--cream);border:2px dashed var(--navy);border-radius:50%;transform:translateY(-50%)}
+.stub:before{left:-15px}
+.stub:after{right:-15px}
+.stub .role{font-family:'Oswald','Arial Narrow',sans-serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--red);font-weight:600}
+.stub h3{font-family:'Oswald','Arial Narrow',sans-serif;font-size:38px;text-transform:uppercase;letter-spacing:.04em;margin:8px 0 4px}
+.stub p{color:var(--muted);font-size:14.5px}
+
+/* visit */
+.visit-card{display:grid;grid-template-columns:1fr 1fr;border:3px solid var(--navy);background:#fff}
+.visit-info{padding:40px 36px;border-right:3px solid var(--navy)}
+.visit-info h3{font-family:'Oswald','Arial Narrow',sans-serif;font-size:14px;letter-spacing:.26em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.visit-info p{margin-bottom:10px;font-size:16.5px}
+.visit-info a{color:var(--navy)}
+.hours{width:100%;border-collapse:collapse;margin-top:6px;font-size:16px}
+.hours td{padding:9px 0;border-bottom:1px dashed #d8cdb2}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.visit-cta{padding:40px 36px;display:flex;flex-direction:column;justify-content:center;gap:16px;background:var(--cream-deep)}
+.visit-cta .note{font-size:16px;color:var(--muted)}
+.visit-cta .note b{color:var(--ink)}
+.btn{display:inline-block;text-align:center;text-decoration:none;font-family:'Oswald','Arial Narrow',sans-serif;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:16px;padding:16px 28px;transition:transform .15s, box-shadow .15s}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:var(--red-deep);transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.22)}
+.btn-ghost{border:3px solid var(--navy);color:var(--navy)}
+.btn-ghost:hover{background:var(--navy);color:var(--cream)}
+
+/* footer */
+footer{background:var(--navy-deep);color:#9d9480;padding:44px 0;font-size:14px;line-height:1.7}
+footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+footer h4{color:var(--cream);font-family:'Oswald','Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:16px;margin-bottom:10px}
+
+/* lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(20,29,39,.94);display:none;align-items:center;justify-content:center;z-index:200;padding:24px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(1000px,94vw);max-height:86vh;object-fit:contain;border:10px solid var(--cream)}
+.lightbox .close{position:absolute;top:18px;right:26px;color:#fff;font-size:40px;cursor:pointer;background:none;border:none;line-height:1}
+
+@media (max-width:820px){
+  .shop-grid{grid-template-columns:1fr}
+  .stubs{grid-template-columns:1fr;max-width:440px;margin:0 auto}
+  .visit-card{grid-template-columns:1fr}
+  .visit-info{border-right:none;border-bottom:3px solid var(--navy)}
+  footer .wrap{grid-template-columns:1fr}
+  section.block{padding:52px 0}
+}
+@media (max-width:560px){
+  .board-row{padding:16px 20px}
+  .board-row .price{font-size:22px}
+  .masthead{padding:40px 16px 32px}
+}
+</style>
+</head>
+<body>
+
+<div class="disclosure"><strong>Design preview.</strong> This is a concept website showing what a site for Downtown Vintage Barbershop could look like. It is not the official website of the business.</div>
+<div class="awning" aria-hidden="true"></div>
+
+<header class="masthead">
+  <p class="eyebrow">Fremont Street &middot; Downtown Las Vegas</p>
+  <h1>Downtown Vintage<span class="thin">Barbershop</span></h1>
+  <div class="pole-divider" aria-hidden="true"></div>
+  <p class="tagline-stamp">Classic services, no gimmicks.</p>
+  <p class="intro">A vintage barbershop with tattoo flash on the walls and barber poles by the door. Kids are welcome, and English and Spanish are spoken here.</p>
+</header>
+
+<nav class="mainnav" aria-label="Section navigation">
+  <div class="wrap">
+    <a href="#prices">Price Board</a>
+    <a href="#shop">The Shop</a>
+    <a href="#barbers">Barbers</a>
+    <a href="#visit">Visit Us</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <img src="photo-1.jpg" alt="Downtown Vintage Barbershop storefront with painted windows, 1112 address, striped awning and barber poles">
+  <p class="caption">Real photo from the shop's Google Maps listing (1112 E Fremont St).</p>
+</div>
+
+<section class="block" id="prices">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-eyebrow">Services</p>
+      <h2 class="sec-title">The price board</h2>
+      <p class="sec-sub">Straightforward services at straightforward prices. What you see is what you pay.</p>
+    </div>
+    <div class="board">
+      <div class="board-head"><h3>Downtown Vintage &middot; Price Board</h3></div>
+      <div class="board-row"><h4>Haircut</h4><span class="price">$35</span><p>Cut by Charlie, Rox, or John.</p></div>
+      <div class="board-row"><h4>Haircut and Shave</h4><span class="price">$70</span><p>A full cut finished with a razor shave.</p></div>
+      <div class="board-row"><h4>Hot Towel Shave</h4><span class="price">$40</span><p>The traditional hot towel service with a straight razor.</p></div>
+      <div class="board-row"><h4>Beard Trim</h4><span class="price">$20</span><p>Shaped and cleaned up.</p></div>
+      <div class="board-row"><h4>Straight Razor Shave</h4><span class="noprice">Ask in shop</span><p>Ask the shop about this service.</p></div>
+      <div class="board-row"><h4>Kids' Haircuts</h4><span class="noprice">Ask in shop</span><p>Young customers are welcome.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block shop" id="shop">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-eyebrow">The Shop</p>
+      <h2 class="sec-title">Step back in time</h2>
+      <p class="sec-sub">Tattoo flash covers the walls. Barber poles mark the door. The striped awning out front is hard to miss.</p>
+    </div>
+    <div class="shop-grid">
+      <figure class="ticket" data-full="photo-3.jpg">
+        <img src="photo-3.jpg" alt="A barber cutting a customer's hair inside Downtown Vintage">
+        <figcaption><span class="tag">Real photo</span>Inside the Fremont St shop. Photo from the Google Maps listing.</figcaption>
+      </figure>
+      <figure class="ticket" data-full="photo-4.jpg">
+        <img src="photo-4.jpg" alt="Barber chairs and vintage decor inside Downtown Vintage">
+        <figcaption><span class="tag">Real photo</span>Inside the Fremont St shop. Photo from the Google Maps listing.</figcaption>
+      </figure>
+    </div>
+    <p class="shop-line">Sharp cuts and straight razors, done the classic way.</p>
+  </div>
+</section>
+
+<section class="block" id="barbers">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-eyebrow">The Barbers</p>
+      <h2 class="sec-title">Take your pick</h2>
+      <p class="sec-sub">Haircuts are $35 with any of the shop's barbers.</p>
+    </div>
+    <div class="stubs">
+      <div class="stub"><p class="role">Barber</p><h3>Charlie</h3><p>Ask for Charlie at the shop.</p></div>
+      <div class="stub"><p class="role">Barber</p><h3>Rox</h3><p>Ask for Rox at the shop.</p></div>
+      <div class="stub"><p class="role">Barber</p><h3>John</h3><p>Ask for John at the shop.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-eyebrow">Visit Us</p>
+      <h2 class="sec-title">Find the pole</h2>
+    </div>
+    <div class="visit-card">
+      <div class="visit-info">
+        <h3>Find us</h3>
+        <p>1112 E Fremont St<br>Las Vegas, NV 89101</p>
+        <p>On Fremont Street in downtown Las Vegas.</p>
+        <h3 style="margin-top:26px">Hours</h3>
+        <table class="hours">
+          <tr><td>Tuesday to Saturday</td><td>9:00 AM to 5:00 PM</td></tr>
+          <tr><td>Sunday and Monday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <div class="visit-cta">
+        <p class="note">Rated <b>4.8 from 46 Google reviews</b>. Kids are welcome, and English and Spanish are spoken here.</p>
+        <a class="btn btn-primary" href="tel:+17025642433">Call to book</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Downtown+Vintage+Barbershop+1112+E+Fremont+St+Las+Vegas+NV+89101" target="_blank" rel="noopener">Get directions</a>
+        <p class="note">Prefer to talk it through first? Call <a href="tel:+17025642433">(702) 564-2433</a> and the shop will take care of you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Downtown Vintage Barbershop</h4>
+      <p>1112 E Fremont St, Las Vegas, NV 89101<br>(702) 564-2433</p>
+    </div>
+    <div>
+      <h4>About this page</h4>
+      <p>This page is an unlisted design concept created by Freightfolio. It is not the official website of Downtown Vintage Barbershop. Business details shown here come from public listings, and photos are from the shop's public Google Maps listing (1112 E Fremont St).</p>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer">
+  <button class="close" aria-label="Close">&times;</button>
+  <img src="" alt="">
+</div>
+
+<script>
+(function(){
+  var navLinks = document.querySelectorAll('nav.mainnav a');
+  var sections = Array.prototype.map.call(navLinks, function(a){ return document.querySelector(a.getAttribute('href')); });
+  function spy(){
+    var pos = window.scrollY + 120, current = 0;
+    sections.forEach(function(s, i){ if(s && s.offsetTop <= pos) current = i; });
+    navLinks.forEach(function(a, i){ a.classList.toggle('active', i === current); });
+  }
+  window.addEventListener('scroll', spy, {passive:true}); spy();
+
+  var lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img');
+  document.querySelectorAll('.ticket img').forEach(function(img){
+    img.addEventListener('click', function(){
+      lbImg.src = img.closest('.ticket').getAttribute('data-full');
+      lbImg.alt = img.alt;
+      lb.classList.add('open');
+    });
+  });
+  lb.addEventListener('click', function(){ lb.classList.remove('open'); lbImg.src=''; });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ lb.classList.remove('open'); lbImg.src=''; } });
+})();
+</script>
+</body>
+</html>
