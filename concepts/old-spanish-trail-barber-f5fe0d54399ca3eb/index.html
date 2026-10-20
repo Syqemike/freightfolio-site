@@ -36,7 +36,7 @@
   .btn.ghost { background:transparent; color:var(--brown); border:2px solid var(--brown); }
   .btn.ghost:hover { background:rgba(46,32,24,.06); }
 
-  .hero { background:var(--brown); color:#fff; }
+  .hero { background:linear-gradient(90deg,rgba(30,18,12,.94),rgba(30,18,12,.76) 45%,rgba(30,18,12,.25)),url("img/photo-2.jpg") center/cover; color:#fff; }
   .hero .wrap { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding-top:72px; padding-bottom:72px; }
   .hero .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
   .hero h1 { font-family:Georgia,'Times New Roman',serif; font-size:50px; line-height:1.12; font-weight:800; margin-bottom:18px; }
@@ -108,6 +108,10 @@
     .hero h1 { font-size:38px; }
     .navlinks { display:none; }
   }
+  .hero .wrap { display:block; min-height:620px; padding-top:110px; padding-bottom:110px; }
+  .hero .wrap > div { max-width:550px; }
+  .hero h1 { font-family:Georgia,serif; font-size:clamp(42px,5.5vw,72px); }
+  @media(max-width:760px) { .hero .wrap { min-height:0; padding-top:64px; padding-bottom:64px; } }
 </style>
 </head>
 <body>
@@ -142,9 +146,6 @@
         <a class="btn ghost" href="#services">Our Services</a>
       </div>
       <p class="hero-note">Family owned since 1987 &middot; 6845 US-90 #106, Daphne, AL</p>
-    </div>
-    <div class="hero-img">
-      <img src="img/photo-2.jpg" alt="The waiting area at Old Spanish Trail Barber Shop">
     </div>
   </div>
 </header>
@@ -182,12 +183,12 @@
   <div class="wrap">
     <div class="kicker">Why Old Spanish Trail</div>
     <h2 class="stitle">A Daphne institution</h2>
-    <p class="ssub" style="color:#cdbfa8;">Nearly forty years on the same stretch of US-90. That says something.</p>
+    <p class="ssub" style="color:#cdbfa8;">A family-owned barbershop on US-90 in Daphne.</p>
     <div class="why-grid">
       <div class="why-item">
         <div class="n">1987</div>
         <h3>In business since 1987</h3>
-        <p>Family owned from the start. We are still here because the work holds up and the customers come back.</p>
+        <p>Family owned from the start. Call or visit the shop on US-90 in Daphne.</p>
       </div>
       <div class="why-item">
         <div class="n">90</div>
@@ -229,7 +230,7 @@
       <img src="img/photo-8.jpg" loading="lazy" alt="Two young customers with fresh cuts" style="border-radius:12px; aspect-ratio:4/5; object-fit:cover; width:100%; margin-bottom:26px;">
       <div class="cta-box">
         <h3>Need a cut?</h3>
-        <p>Call during business hours and we will get you in the chair. Walk-ins and regulars welcome at the shop on US-90.</p>
+        <p>Call the shop with questions about haircuts, current hours, and visiting the US-90 location.</p>
         <a class="btn" href="tel:+12516262115">(251) 626-2115</a>
       </div>
     </div>

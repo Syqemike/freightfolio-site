@@ -473,9 +473,7 @@
       mobile: "img/showcase/calaveras-thumb.jpg",
       blurb: "A vibrant tattoo studio concept with cultural character and clear contact paths.",
       features: [
-        "Photo gallery layout",
         "Services and styles list",
-        "Customer reviews section",
         "Click-to-call phone number",
         "Shop hours table",
         "Design preview disclosure"
