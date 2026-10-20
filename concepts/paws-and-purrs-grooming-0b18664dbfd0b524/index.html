@@ -230,7 +230,6 @@
     border-right: 2px dashed rgba(217,110,27,0.4);
   }
   .illustration-frame svg { display: block; width: 100%; height: auto; }
-  .illustration-frame.no-tilt { transform: none; }
   .visit-grid .illustration-frame { transform: none; box-shadow: 6px 6px 0 rgba(20,78,86,0.12); margin-top: 8px; }
   .illustration-caption {
     text-align: center;
@@ -272,6 +271,24 @@
     margin-right: auto;
   }
 
+  /* gallery */
+  .pets-grid{display:grid;gap:22px}
+  .pet-card{
+    background:#fff;
+    border:2px solid var(--cream-deep);
+    border-radius:20px;
+    overflow:hidden;
+  }
+  .pet-card img{display:block;width:100%;height:280px;object-fit:cover}
+  .pet-card.small img{height:220px}
+  .pet-card figcaption{padding:16px 20px;font-size:16px}
+  .pet-card .src{
+    display:block;
+    font-family:'Fredoka',sans-serif;
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--tangerine-deep);margin-bottom:6px;
+  }
+
   /* hours */
   .hours { background: var(--teal-deep); color: #FFF6E3; }
   .hours .section-head h2 { color: #FFF6E3; }
@@ -300,7 +317,7 @@
   .hour-row {
     display: flex;
     justify-content: space-between;
-    gap: 28px;
+    gap: 12px;
     padding: 10px 4px;
     border-bottom: 1px dashed #cbbfa4;
     font-size: 17px;
@@ -389,6 +406,7 @@
     <nav class="main-nav" aria-label="Sections">
       <a href="#story">Our story</a>
       <a href="#grooming">Grooming</a>
+      <a href="#photos">Photos</a>
       <a href="#hours">Hours</a>
       <a href="#visit">Find us</a>
       <a href="#contact">Contact</a>
@@ -517,6 +535,44 @@
     </div>
   </section>
 
+  <section id="photos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Happy clients</h2>
+        <svg class="squiggle" width="120" height="12" viewBox="0 0 120 12" aria-hidden="true">
+          <path d="M2 8 Q 16 2, 30 8 T 58 8 T 86 8 T 118 8" stroke="#F0862F" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <p style="max-width:640px; margin:12px auto 0; font-size:18px;">Real photos from the salon's Google listing.</p>
+      </div>
+      <div class="pets-grid">
+        <figure class="pet-card small">
+          <img src="img/photo-1.jpg" alt="Reception desk with the Paws and Purrs sign, treat display, and a wall of leashes">
+          <figcaption><span class="src">Google listing photo</span>The reception desk with the Paws and Purrs sign and treat display.</figcaption>
+        </figure>
+        <figure class="pet-card">
+          <img src="img/photo-2.jpg" alt="Calico cat with a lion-cut trim lying on a wood floor">
+          <figcaption><span class="src">Google listing photo</span>A calico cat showing off a lion cut.</figcaption>
+        </figure>
+        <figure class="pet-card small">
+          <img src="img/photo-3.jpg" alt="Apricot poodle puppy with a fresh fluffy trim and a green bandana">
+          <figcaption><span class="src">Google listing photo</span>A poodle puppy with a fresh fluffy trim and a green bandana.</figcaption>
+        </figure>
+        <figure class="pet-card small">
+          <img src="img/photo-4.jpg" alt="German shepherd with a red bandana sitting in the grass">
+          <figcaption><span class="src">Google listing photo</span>A German shepherd with a fresh groom and a red bandana.</figcaption>
+        </figure>
+        <figure class="pet-card">
+          <img src="img/photo-5.jpg" alt="Schnauzer mix with a fresh trim and a green bandana">
+          <figcaption><span class="src">Google listing photo</span>A schnauzer mix with a fresh trim and a green bandana.</figcaption>
+        </figure>
+        <figure class="pet-card">
+          <img src="img/photo-6.jpg" alt="Yorkie with a fresh groom wearing a red star-patterned bandana">
+          <figcaption><span class="src">Google listing photo</span>A Yorkie with a fresh groom and a red bandana.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <section class="hours" id="hours">
     <div class="wrap">
       <div class="section-head">
@@ -559,7 +615,7 @@
           <a class="btn btn-secondary" href="https://www.facebook.com/p/Paws-and-Purrs-Pet-Grooming-100055420518714/">Facebook page</a>
           <p class="map-note">Off Kemps River Drive in Virginia Beach.</p>
         </div>
-        <figure class="illustration-frame no-tilt">
+        <figure class="illustration-frame">
           <svg viewBox="0 0 300 220" role="img" aria-label="Hand-drawn style illustration of a map pin with paw prints">
             <rect x="30" y="20" width="240" height="160" rx="14" fill="#FDF6E9" stroke="#144E56" stroke-width="5"/>
             <path d="M30 70 L 270 70 M30 120 L 270 120" stroke="#144E56" stroke-width="3" opacity="0.25"/>

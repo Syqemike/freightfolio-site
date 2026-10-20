@@ -248,6 +248,17 @@ a.proof-link{color:inherit;text-decoration:none;display:block}
 a.proof-link:hover .rating-line{color:var(--cobalt);text-decoration:underline}
 .proof .note{font-size:14px;color:var(--muted)}
 
+/* Gallery */
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(min-width:860px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.photo-card img{width:100%;height:300px;object-fit:cover;display:block}
+.photo-card figcaption{padding:16px 18px;font-size:14.5px;color:var(--muted)}
+.photo-card .src{
+  display:block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--cobalt);margin-bottom:6px;
+}
+
 /* Booking section */
 .book-panel{
   background:var(--graphite-deep);color:#fff;border-radius:10px;
@@ -346,6 +357,7 @@ footer{background:var(--graphite-deep);color:#9aa1b3;padding:44px 0 30px}
       <a href="#services">Services</a>
       <a href="#studio">The Studio</a>
       <a href="#reviews">Reviews</a>
+      <a href="#photos">Photos</a>
       <a href="#book">Book</a>
       <a href="#visit">Visit</a>
     </nav>
@@ -496,6 +508,40 @@ footer{background:var(--graphite-deep);color:#9aa1b3;padding:44px 0 30px}
         <p class="note">Listed under his Google Business profile for Cutz By Rick in Virginia Beach.</p>
       </li>
     </ul>
+  </div>
+</section>
+
+<section class="block" id="photos">
+  <div class="wrap">
+    <p class="sec-label">Gallery / 006</p>
+    <h2 class="sec-title">Photos from the shop.</h2>
+    <p class="sec-lede">Real photos from the business's Google listing.</p>
+    <div class="photo-grid">
+      <figure class="photo-card">
+        <img src="img/photo-1.jpg" alt="Barber chair with a branded cape and a tool workstation in the shop">
+        <figcaption><span class="src">Google listing photo</span>The barber chair with a branded cape and the tool workstation.</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="img/photo-2.jpg" alt="Shop interior with a barber chair, checkered floor, and product shelves">
+        <figcaption><span class="src">Google listing photo</span>Inside the shop: barber chair, checkered floor, and product shelves.</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="img/photo-3.jpg" alt="Barber chair and mirror station inside the shop">
+        <figcaption><span class="src">Google listing photo</span>The chair and mirror station in Rick's shop.</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="img/photo-4.jpg" alt="Side profile of a sharp skin fade">
+        <figcaption><span class="src">Google listing photo</span>A sharp skin fade, side profile.</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="img/photo-5.jpg" alt="Side profile of a tapered haircut with a side part">
+        <figcaption><span class="src">Google listing photo</span>A taper with a side part, finished in the shop.</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="img/photo-6.jpg" alt="Young customer in a barber cape with a fade and a shaved line design">
+        <figcaption><span class="src">Google listing photo</span>A young customer in the cape with a fade and shaved line design.</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
