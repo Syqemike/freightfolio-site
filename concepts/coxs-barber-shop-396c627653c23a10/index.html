@@ -36,9 +36,10 @@
   .btn.ghost:hover { background:rgba(30,61,42,.06); }
 
   .hero { background:var(--pine); color:#fff; }
-  .hero .wrap { display:grid; grid-template-columns:1fr; gap:28px; align-items:center; padding-top:64px; padding-bottom:64px; }
-  .hero-img { order:-1; }
+  .hero .wrap { display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center; padding-top:64px; padding-bottom:64px; }
+  .hero-img { margin:0; }
   .hero-img img { border-radius:12px; aspect-ratio:4/3; object-fit:cover; width:100%; border:1px solid rgba(255,255,255,.15); }
+  .photo-cap { margin-top:8px; color:#d9d2bd; font-size:12px; letter-spacing:.6px; }
   .hero .kicker { color:var(--brass); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:14px; font-weight:700; }
   .hero h1 { font-family:Georgia,'Times New Roman',serif; font-size:52px; line-height:1.12; font-weight:700; margin-bottom:18px; }
   .hero h1 em { color:#e3c878; font-style:normal; }
@@ -75,8 +76,11 @@
   .why-item h3 { font-size:19px; margin-bottom:8px; }
   .why-item p { color:#c9c2ac; font-size:15px; }
 
-  .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:44px; }
+  .gallery { display:grid; grid-template-columns:repeat(2,1fr); max-width:820px; margin:32px auto 0; gap:18px; }
   .gallery img { border-radius:10px; aspect-ratio:4/3; object-fit:cover; width:100%; }
+  .gallery .photo-cap { color:var(--muted); text-align:left; }
+  #services { padding-bottom:40px; }
+  #visit { padding-top:40px; }
 
   .reviews .rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
   .rev { background:#fff; border:1px solid var(--line); border-radius:12px; padding:28px; }
@@ -111,6 +115,7 @@
 
   @media (max-width:860px) {
     .hero .wrap, .visit { grid-template-columns:1fr; }
+    .gallery { grid-template-columns:1fr; }
     .cards, .why-grid, .reviews .rev-grid, .gallery { grid-template-columns:1fr; }
     .hero h1 { font-size:38px; }
     .navlinks { display:none; }
@@ -149,6 +154,10 @@
       </div>
       <p class="hero-note">Walk-in only. No appointments.</p>
     </div>
+    <figure class="hero-img">
+      <img src="img/photo-1.jpg" alt="Interior of Cox's Barber Shop; photo from its Google Business listing">
+      <figcaption class="photo-cap">Interior photo from Cox's Google Business listing.</figcaption>
+    </figure>
   </div>
 </header>
 
@@ -172,6 +181,16 @@
         <a href="https://www.facebook.com/p/Coxs-Barber-Shop-100063792032912/" target="_blank" rel="noopener">Visit the business Facebook page</a>
       </div>
     </div>
+  </div>
+  <div class="gallery" aria-label="Photos from Cox's Barber Shop Google Business listing">
+    <figure>
+      <img src="img/photo-3.jpg" loading="lazy" alt="Barber cutting a young customer's hair at Cox's Barber Shop">
+      <figcaption class="photo-cap">Photo from Cox's Google Business listing.</figcaption>
+    </figure>
+    <figure>
+      <img src="img/photo-4.jpg" loading="lazy" alt="Cox's Barber Shop storefront sign">
+      <figcaption class="photo-cap">Storefront sign, shown in Cox's Google Business listing.</figcaption>
+    </figure>
   </div>
 </section>
 
