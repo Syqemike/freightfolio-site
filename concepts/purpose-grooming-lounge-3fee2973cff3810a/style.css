@@ -211,6 +211,7 @@ h2.section-title {
   border: 1px solid var(--rule);
   padding: 0.75rem;
 }
+.shot figure img { width: 100%; height: auto; display: block; }
 .shot figcaption { padding: 0.85rem 0.25rem 0.25rem; color: var(--cream-dim); font-size: 0.9rem; }
 .shot figcaption strong { color: var(--amber); font-weight: 400; font-family: Georgia, serif; font-style: italic; }
 

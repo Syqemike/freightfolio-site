@@ -217,6 +217,7 @@ footer a{color:#9fd3d1}
 }
 .gallery-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-bottom:3rem}
 .g-item{background:#efe8d8;padding:.9rem .9rem 1.1rem;box-shadow:0 10px 28px rgba(0,0,0,.45)}
+.g-item img{width:100%;height:auto;display:block}
 .g-item figcaption{color:#4a3f30;font-size:.88rem;margin-top:.8rem}
 .g-item figcaption strong{display:block;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;margin-bottom:.25rem;color:#2c251c}
 

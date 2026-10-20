@@ -136,6 +136,7 @@ blockquote.pull{
 }
 .gallery-grid{display:grid;grid-template-columns:1fr;gap:34px;margin-bottom:60px}
 figure.illus{border:1px solid var(--rule);background:#fff;padding:18px}
+figure.illus img{width:100%;height:auto;display:block}
 figure.illus figcaption{font-size:14px;padding-top:12px;color:var(--onyx)}
 figure.illus figcaption strong{display:block;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--scarlet-deep);margin-bottom:6px}
 
