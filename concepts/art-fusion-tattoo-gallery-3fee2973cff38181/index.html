@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Art Fusion Tattoo Gallery | Custom Tattoos and Piercings in Saraland, AL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#171114;
+    --ink-deep:#100c0e;
+    --bone:#f2ecdd;
+    --bone-dim:#e4dac4;
+    --vermilion:#cf3a2e;
+    --vermilion-deep:#a52a21;
+    --smoke:#8b8078;
+    --paper:#faf6ec;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Inter",system-ui,sans-serif;background:var(--ink);color:var(--bone);line-height:1.6;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  h1,h2,h3{font-family:"Anton",sans-serif;font-weight:400;letter-spacing:.01em;line-height:1.02;text-transform:uppercase}
+
+  .preview-bar{background:var(--vermilion);color:#fff;text-align:center;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:10px 16px}
+  .preview-bar a{color:#fff}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(16,12,14,.96);border-bottom:1px solid #2c2327}
+  nav .wrap{max-width:1180px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  nav .brand{font-family:"Anton",sans-serif;font-size:18px;letter-spacing:.06em;color:var(--bone);text-decoration:none}
+  nav .brand span{color:var(--vermilion)}
+  nav ul{list-style:none;display:flex;gap:22px;flex-wrap:wrap}
+  nav a.nl{color:var(--bone-dim);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+  nav a.nl:hover{color:var(--vermilion)}
+  nav .callbtn{background:var(--vermilion);color:#fff;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:10px 18px;border-radius:2px}
+  nav .callbtn:hover{background:var(--vermilion-deep)}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+  /* HERO: poster wall */
+  .hero{position:relative;padding:64px 0 0;overflow:hidden}
+  .hero-kicker{display:inline-block;background:var(--vermilion);color:#fff;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:8px 16px;margin-bottom:22px;transform:rotate(-1.5deg)}
+  .hero h1{font-size:clamp(52px,9.5vw,124px);color:var(--bone)}
+  .hero h1 .stroke{color:transparent;-webkit-text-stroke:2px var(--vermilion)}
+  .hero-sub{max-width:640px;color:var(--bone-dim);font-size:18px;margin-top:18px}
+  .hero-facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .fact-chip{border:1px solid #3a2d31;background:var(--ink-deep);padding:10px 16px;font-size:14px;color:var(--bone)}
+  .fact-chip strong{color:var(--vermilion);font-weight:700}
+  .hero-cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:14px;padding:15px 30px;border-radius:2px}
+  .btn-red{background:var(--vermilion);color:#fff}
+  .btn-red:hover{background:var(--vermilion-deep)}
+  .btn-ghost{border:2px solid var(--bone-dim);color:var(--bone)}
+  .btn-ghost:hover{border-color:var(--vermilion);color:var(--vermilion)}
+
+  .marquee{background:var(--vermilion);color:#fff;overflow:hidden;white-space:nowrap;margin:56px 0 0;padding:14px 0;transform:rotate(-1deg) scale(1.02)}
+  .marquee span{font-family:"Anton",sans-serif;font-size:22px;letter-spacing:.12em;text-transform:uppercase;padding:0 26px}
+
+  /* FLASH WALL: services as pinned posters */
+  .flash{background:var(--bone);color:var(--ink);padding:84px 0;margin-top:-10px}
+  .sec-kicker{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--vermilion-deep);margin-bottom:12px}
+  .flash h2{font-size:clamp(36px,5.5vw,64px);color:var(--ink)}
+  .flash-lede{max-width:640px;color:#4d443c;margin-top:12px;font-size:17px}
+  .poster-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin-top:44px}
+  .poster{background:var(--paper);border:2px solid var(--ink);padding:28px 24px;position:relative;box-shadow:8px 8px 0 var(--ink)}
+  .poster:nth-child(1){transform:rotate(-1.2deg)}
+  .poster:nth-child(2){transform:rotate(1deg) translateY(12px)}
+  .poster:nth-child(3){transform:rotate(-.6deg)}
+  .poster .num{font-family:"Anton",sans-serif;font-size:44px;color:var(--vermilion)}
+  .poster h3{font-size:24px;margin:10px 0 12px;color:var(--ink)}
+  .poster p{font-size:15px;color:#4d443c}
+  .poster .tag{display:inline-block;margin-top:16px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;background:var(--ink);color:var(--bone);padding:6px 12px}
+
+  /* WORK: dark gallery */
+  .work{padding:84px 0}
+  .work h2{font-size:clamp(36px,5.5vw,64px);color:var(--bone)}
+  .work h2 em{font-style:normal;color:var(--vermilion)}
+  .work-lede{color:var(--bone-dim);max-width:640px;margin-top:12px;font-size:17px}
+  .gallery{margin-top:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+  .g-main{position:relative}
+  .g-main img{width:100%;height:560px;object-fit:cover;border:2px solid #2c2327}
+  .g-side{display:flex;flex-direction:column;gap:24px}
+  .g-side img{width:100%;height:268px;object-fit:cover;border:2px solid #2c2327}
+  .cap{font-size:12px;color:var(--smoke);margin-top:8px;letter-spacing:.02em}
+  .cap .src{color:var(--vermilion);font-weight:600}
+  .stock-tag{display:inline-block;background:var(--vermilion);color:#fff;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:3px 8px;margin-right:8px}
+
+  /* CREW strip */
+  .crew{background:var(--ink-deep);border-top:1px solid #2c2327;border-bottom:1px solid #2c2327;padding:60px 0}
+  .crew h2{font-size:clamp(30px,4vw,48px);color:var(--bone)}
+  .crew p{color:var(--bone-dim);max-width:700px;margin-top:14px;font-size:17px}
+  .crew-names{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+  .crew-names span{font-family:"Anton",sans-serif;font-size:26px;letter-spacing:.04em;color:var(--bone);border:2px solid var(--vermilion);padding:8px 20px;transform:rotate(-1deg)}
+  .crew-names span:nth-child(2){transform:rotate(1.2deg)}
+  .crew-note{font-size:13px;color:var(--smoke);margin-top:18px;max-width:700px}
+
+  /* VISIT */
+  .visit{background:var(--bone);color:var(--ink);padding:84px 0}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:36px}
+  .visit h2{font-size:clamp(36px,5.5vw,60px);color:var(--ink)}
+  .hours{width:100%;border-collapse:collapse;margin-top:8px}
+  .hours td{padding:12px 4px;border-bottom:1px solid #cfc4ae;font-size:16px}
+  .hours td:last-child{text-align:right;font-weight:600}
+  .closed{color:var(--vermilion-deep);font-weight:700}
+  .addr{font-size:17px;color:#4d443c;margin-top:6px}
+  .addr strong{color:var(--ink)}
+  .rating{display:inline-block;margin-top:18px;background:var(--ink);color:var(--bone);padding:12px 20px;font-size:15px;font-weight:600}
+  .rating b{color:var(--vermilion);font-size:20px}
+  .visit-cta{margin-top:28px}
+  .fb-link{color:var(--vermilion-deep);font-weight:600}
+
+  footer{background:var(--ink-deep);padding:44px 0;color:var(--smoke);font-size:13px}
+  footer .wrap{display:flex;flex-direction:column;gap:12px}
+  footer a{color:var(--bone-dim)}
+  .disclaimer{border-top:1px solid #2c2327;padding-top:18px;max-width:760px}
+
+  @media(max-width:860px){
+    .gallery{grid-template-columns:1fr}
+    .g-main img{height:380px}
+    .visit-grid{grid-template-columns:1fr}
+    nav ul{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Design preview by Freightfolio. This is a concept, not the business's live website.</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">ART FUSION <span>TATTOO</span> GALLERY</a>
+    <ul>
+      <li><a class="nl" href="#services">Services</a></li>
+      <li><a class="nl" href="#work">Work</a></li>
+      <li><a class="nl" href="#crew">Crew</a></li>
+      <li><a class="nl" href="#visit">Visit</a></li>
+    </ul>
+    <a class="callbtn" href="tel:+12517251044">Call to book</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="hero-kicker">Saraland, Alabama</span>
+    <h1>Art Fusion<br><span class="stroke">Tattoo Gallery</span></h1>
+    <p class="hero-sub">Custom tattoos and body piercings from a shop that treats every piece like gallery work. Black-and-grey, realism, and flash, plus piercings including ear piercings, done in a clean, easygoing studio on Saraland Boulevard South.</p>
+    <div class="hero-facts">
+      <div class="fact-chip"><strong>Tue-Sat</strong> 11am to 8pm</div>
+      <div class="fact-chip">930 Saraland Blvd S, Saraland, AL</div>
+      <div class="fact-chip"><strong>(251) 725-1044</strong></div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-red" href="tel:+12517251044">Call to book</a>
+      <a class="btn btn-ghost" href="#work">See the work</a>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <span>Custom Tattoos</span><span>Black-and-Grey</span><span>Realism</span><span>Flash</span><span>Body Piercings</span><span>Saraland AL</span><span>Custom Tattoos</span><span>Black-and-Grey</span><span>Realism</span><span>Flash</span><span>Body Piercings</span><span>Saraland AL</span>
+  </div>
+</header>
+
+<section class="flash" id="services">
+  <div class="wrap">
+    <p class="sec-kicker">What the shop does</p>
+    <h2>Pinned to the wall</h2>
+    <p class="flash-lede">Three things the shop does every day. Bring an idea, a reference photo, or nothing at all and talk it through with an artist first.</p>
+    <div class="poster-grid">
+      <article class="poster">
+        <div class="num">01</div>
+        <h3>Custom Tattoos</h3>
+        <p>One-of-one pieces drawn for the person wearing them. The shop works in black-and-grey, realism, and flash-to-custom styles, from first tattoos to full sleeves and cover-ups.</p>
+        <span class="tag">Consult first</span>
+      </article>
+      <article class="poster">
+        <div class="num">02</div>
+        <h3>Body Piercings</h3>
+        <p>Piercing services including ear piercings, in the same clean studio as the tattoo work. Reviewers call out the staff for being patient and easy to be around, including with younger clients.</p>
+        <span class="tag">Walk-ins vary</span>
+      </article>
+      <article class="poster">
+        <div class="num">03</div>
+        <h3>Consultations</h3>
+        <p>Talk through placement, size, and style before the needle comes out. Call the shop to set one up. Walk-in availability changes day to day, so booking ahead is the safer move for larger pieces.</p>
+        <span class="tag">Call ahead</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <p class="sec-kicker" style="color:var(--vermilion)">Selected work</p>
+    <h2>The work speaks <em>first</em></h2>
+    <p class="work-lede">A sample of the shop's style. For the full portfolio, the shop posts finished pieces on its Facebook page.</p>
+    <div class="gallery">
+      <figure class="g-main">
+        <img src="img/work-realism.webp" alt="Close-up of a black-and-grey realism tattoo of a tiger eye on a forearm">
+        <figcaption class="cap">Black-and-grey realism detail. <span class="src">Photo: tattooed.co listing for Art Fusion Tattoo Gallery.</span></figcaption>
+      </figure>
+      <div class="g-side">
+        <figure>
+          <img src="img/stock-tattoo-1.jpg" alt="Tattoo artist in blue gloves working on a client's arm">
+          <figcaption class="cap"><span class="stock-tag">Stock photo</span> An artist at work in the chair.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/stock-tattoo-2.jpg" alt="Close-up of a tattoo machine lining a small design">
+          <figcaption class="cap"><span class="stock-tag">Stock photo</span> Linework in progress.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="crew" id="crew">
+  <div class="wrap">
+    <p class="sec-kicker" style="color:var(--vermilion)">The crew</p>
+    <h2>Names that come up in reviews</h2>
+    <p>Client reviews for the shop mention several artists by name and keep coming back to the same themes: skilled work, a clean studio, and a relaxed atmosphere where people feel at ease.</p>
+    <div class="crew-names"><span>Joe</span><span>Mud</span><span>Jessie</span></div>
+    <p class="crew-note">Names appear in public client reviews of the shop. Call the shop to ask who is available for the style you want.</p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <p class="sec-kicker">Visit the shop</p>
+    <h2>Find us on the Boulevard</h2>
+    <div class="visit-grid">
+      <div>
+        <table class="hours">
+          <tr><td>Tuesday</td><td>11:00 AM - 8:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>11:00 AM - 8:00 PM</td></tr>
+          <tr><td>Thursday</td><td>11:00 AM - 8:00 PM</td></tr>
+          <tr><td>Friday</td><td>11:00 AM - 8:00 PM</td></tr>
+          <tr><td>Saturday</td><td>11:00 AM - 8:00 PM</td></tr>
+          <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+          <tr><td>Monday</td><td class="closed">Closed</td></tr>
+        </table>
+      </div>
+      <div>
+        <p class="addr"><strong>Art Fusion Tattoo Gallery</strong><br>930 Saraland Blvd S<br>Saraland, AL 36571<br><strong>(251) 725-1044</strong></p>
+        <p class="rating"><b>4.7</b> from 227 Google reviews</p>
+        <div class="visit-cta">
+          <a class="btn btn-red" href="tel:+12517251044">Call to book</a>
+        </div>
+        <p style="margin-top:18px;font-size:15px">See finished work on <a class="fb-link" href="https://www.facebook.com/artfusiontattoogallery">Facebook</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:var(--bone)">Art Fusion Tattoo Gallery</strong> - 930 Saraland Blvd S, Saraland, AL 36571 - <a href="tel:+12517251044">(251) 725-1044</a></div>
+    <div class="disclaimer">This page is an unsolicited design preview created by Freightfolio to show what a website for this business could look like. It is not affiliated with or endorsed by Art Fusion Tattoo Gallery. Photos are credited beneath each image.</div>
+  </div>
+</footer>
+
+</body>
+</html>
