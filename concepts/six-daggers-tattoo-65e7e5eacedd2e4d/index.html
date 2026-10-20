@@ -61,6 +61,7 @@
   }
   nav a:hover{color:var(--blood)}
   /* Hero */
+  html,body{overflow-x:clip}
   .hero{padding:56px 20px 40px;position:relative;overflow:hidden}
   .hero-kicker{
     font-size:12px;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;
@@ -87,7 +88,7 @@
   .btn:hover{background:var(--bone);color:var(--ink)}
   .btn.solid:hover{background:var(--bone);border-color:var(--bone)}
   /* Dagger SVG motif */
-  .dagger-deco{position:absolute;right:-24px;top:40px;opacity:0.16;transform:rotate(24deg);pointer-events:none}
+  .dagger-deco{position:absolute;right:16px;top:40px;opacity:0.16;transform:rotate(24deg);pointer-events:none}
   /* Diagonal slash divider */
   .slash{
     height:34px;background:var(--blood);
@@ -147,7 +148,10 @@
   .locale h3{font-size:22px;margin-bottom:18px;letter-spacing:0.06em;text-transform:uppercase}
   .locale p{color:var(--dim);font-size:17px;margin-bottom:14px}
   .locale address{font-style:normal;font-size:20px;font-weight:700;color:var(--bone)}
-  .map-link{color:var(--blood);font-weight:700;text-decoration:underline;font-size:15px;letter-spacing:0.06em;text-transform:uppercase}
+  .locale-line{margin:10px 0 0;font-size:16px}
+  .locale-line span{display:block;font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--dim);margin-bottom:2px}
+  .locale-line a{color:var(--bone);font-weight:700;text-decoration:none}
+  .map-link{color:var(--blood);font-weight:700;text-decoration:underline;font-size:15px;letter-spacing:0.06em;text-transform:uppercase;display:inline-block;margin-top:16px}
   /* Contact */
   .contact-block .ctas{margin-top:24px}
   .contact-lines{margin-top:32px;display:grid;gap:14px}
@@ -278,6 +282,8 @@
         <h3 class="heavy">Location</h3>
         <address>1400 S Broadway Ave<br>Boise, ID 83706</address>
         <p>On South Broadway in Boise. Call ahead if you are coming by, since the shop is closed Monday and Tuesday.</p>
+        <p class="locale-line"><span>Phone</span> <a href="tel:+12088726375">(208) 872-6375</a></p>
+        <p class="locale-line"><span>Email</span> <a href="mailto:info@sixdaggerstattoo.com">info@sixdaggerstattoo.com</a></p>
         <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=1400+S+Broadway+Ave+Boise+ID+83706">Get directions</a>
       </div>
     </div>
