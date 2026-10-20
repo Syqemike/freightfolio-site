@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Wally's barber Shop | Barber in Somerville, MA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  :root {
+    --teal:#0d3a37; --teal-d:#082724; --gold:#e8a13c; --cream:#faf3e6; --brick:#c1502e; --ink:#1c2423;
+  }
+  body { background:var(--cream); color:var(--ink); font-family:'Inter',Helvetica,Arial,sans-serif; line-height:1.7; font-size:16px; }
+  img { display:block; max-width:100%; height:auto; }
+  a { color:inherit; }
+
+  .banner { background:var(--teal-d); color:var(--gold); text-align:center; font-size:11px; letter-spacing:2.5px; text-transform:uppercase; padding:8px 14px; font-weight:600; }
+  .banner em { font-style:normal; color:#fff; }
+
+  header.hero { background:var(--teal); color:#fff; position:relative; overflow:hidden; }
+  .hero-in { max-width:1180px; margin:0 auto; padding:70px 26px 0; display:grid; grid-template-columns:1.05fr .95fr; gap:44px; align-items:end; }
+  .kicker { display:inline-block; background:var(--brick); color:#fff; font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:800; padding:6px 14px; margin-bottom:18px; }
+  h1 { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:clamp(52px,8vw,96px); line-height:.95; text-transform:uppercase; letter-spacing:1px; }
+  h1 .gold { color:var(--gold); }
+  .hero p.sub { margin:20px 0 26px; font-size:18px; max-width:440px; color:#e9e2d2; }
+  .cta-row { display:flex; flex-wrap:wrap; gap:14px; padding-bottom:56px; }
+  .btn { display:inline-block; background:var(--gold); color:var(--teal-d); text-decoration:none; font-weight:800; letter-spacing:1px; text-transform:uppercase; font-size:14px; padding:16px 32px; }
+  .btn:hover { background:#f4b95e; }
+  .btn.line { background:transparent; color:#fff; border:2px solid #fff; }
+  .btn.line:hover { background:#fff; color:var(--teal-d); }
+  .hero-photo { border:6px solid var(--gold); border-bottom:none; margin-bottom:0; align-self:end; }
+  .hero-photo img { width:100%; aspect-ratio:4/3; object-fit:cover; }
+  figcaption { font-size:12px; color:#6f6a5e; padding:8px 4px 0; font-style:italic; }
+  .real { font-style:normal; background:#dfeee4; border:1px solid #3e7d5a; color:#24563a; font-size:11px; letter-spacing:.8px; text-transform:uppercase; padding:2px 8px; margin-right:8px; font-weight:700; border-radius:3px; }
+  .hero figcaption { color:#c9c2ae; }
+
+  .strip { background:var(--gold); color:var(--teal-d); overflow:hidden; white-space:nowrap; border-top:4px solid var(--teal-d); border-bottom:4px solid var(--teal-d); }
+  .strip span { display:inline-block; font-family:'Barlow Condensed',sans-serif; font-weight:700; text-transform:uppercase; font-size:20px; letter-spacing:2px; padding:10px 26px; }
+
+  nav { background:var(--cream); border-bottom:1px solid #ddd2b8; position:sticky; top:0; z-index:5; }
+  nav ul { list-style:none; display:flex; justify-content:center; flex-wrap:wrap; gap:8px 30px; padding:12px 16px; max-width:1180px; margin:0 auto; }
+  nav a { text-decoration:none; font-size:13px; letter-spacing:2px; text-transform:uppercase; font-weight:800; color:var(--teal); }
+
+  .wrap { max-width:1180px; margin:0 auto; padding:0 26px; }
+  section { padding:64px 0; }
+  h2 { font-family:'Barlow Condensed',sans-serif; font-size:clamp(36px,5vw,58px); text-transform:uppercase; letter-spacing:1px; color:var(--teal); line-height:1; margin-bottom:6px; }
+  h2 .es { display:block; color:var(--brick); font-size:.55em; letter-spacing:3px; }
+  .intro { max-width:620px; font-size:18px; margin:14px 0 34px; }
+
+  .about { display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center; }
+  .about p + p { margin-top:16px; }
+  .about .photo img { border:5px solid var(--teal); aspect-ratio:1/1; object-fit:cover; width:100%; }
+  .stars { margin-top:20px; font-size:15px; background:#fff; border-left:6px solid var(--gold); padding:14px 18px; }
+  .stars b { font-size:24px; color:var(--teal); }
+
+  .board { background:var(--teal-d); color:#fff; padding:64px 0; }
+  .board h2 { color:#fff; }
+  .board h2 .es { color:var(--gold); }
+  .board .intro { color:#d8d2bd; }
+  .svc { display:grid; grid-template-columns:repeat(2,1fr); gap:2px; background:#2b4f4b; border:2px solid #2b4f4b; }
+  .svc .card { background:var(--teal); padding:28px 30px; }
+  .svc h3 { font-family:'Barlow Condensed',sans-serif; font-size:26px; text-transform:uppercase; letter-spacing:1px; color:var(--gold); }
+  .svc .pr { font-size:30px; font-weight:800; color:#fff; margin:6px 0; }
+  .svc p { font-size:14px; color:#c9c2ae; }
+  .svc .wide { grid-column:1 / -1; display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
+  .amen { display:flex; flex-wrap:wrap; gap:10px 26px; margin-top:30px; color:#e9e2d2; font-size:14px; }
+  .amen span::before { content:"\2713  "; color:var(--gold); font-weight:800; }
+
+  .gal-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .gal-grid img { aspect-ratio:1/1; object-fit:cover; width:100%; border:3px solid #e4d9bf; }
+  .gal-grid .tall { grid-row:span 2; }
+  .gal-grid .tall img { aspect-ratio:1/2.06; }
+
+  .reviews { display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+  .rev { background:#fff; border:1px solid #e4d9bf; border-top:6px solid var(--brick); padding:26px; }
+  .rev p.q { font-size:17px; font-style:italic; }
+  .rev .who { margin-top:12px; font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:1.5px; color:var(--teal); }
+  .rev .svc-tag { font-size:12px; color:#8a8471; }
+
+  .visit { background:var(--teal); color:#fff; }
+  .visit h2 { color:#fff; }
+  .visit h2 .es { color:var(--gold); }
+  .visitgrid { display:grid; grid-template-columns:1fr 1fr; gap:54px; margin-top:26px; }
+  table.hours { width:100%; border-collapse:collapse; }
+  table.hours td { padding:11px 4px; border-bottom:1px solid #2b4f4b; }
+  table.hours td:last-child { text-align:right; font-weight:700; color:var(--gold); }
+  .vcard p { margin-bottom:12px; color:#e9e2d2; }
+  .vcard .lbl { font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); font-weight:800; }
+  .vcard a.tel { font-size:24px; font-weight:800; text-decoration:none; }
+
+  footer { background:var(--teal-d); color:#a9a394; padding:38px 24px; font-size:14px; text-align:center; }
+  footer .disc { max-width:660px; margin:0 auto 14px; border:1px solid #2b4f4b; padding:14px 18px; font-size:13px; }
+
+  @media (max-width:860px) {
+    .hero-in { grid-template-columns:1fr; padding-top:48px; }
+    .cta-row { padding-bottom:40px; }
+    .about, .visitgrid { grid-template-columns:1fr; gap:30px; }
+    .svc { grid-template-columns:1fr; }
+    .gal-grid { grid-template-columns:repeat(2,1fr); }
+    section { padding:44px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="banner">Design preview <em>&#9670;</em> a website concept made for Wally's barber Shop, not an official site</div>
+
+<header class="hero">
+  <div class="hero-in">
+    <div>
+      <span class="kicker">Somerville, MA &middot; Bienvenidos</span>
+      <h1>Wally's <span class="gold">barber</span> Shop</h1>
+      <p class="sub">Haircuts and beard trims at 140 Broadway in Somerville. Book online through Booksy or call (617) 764-0607.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://booksy.com/en-us/968249_wallys-pekeno-stylo_barber-shop_22297_somerville" target="_blank" rel="noopener">Book Now on Booksy</a>
+        <a class="btn line" href="tel:+16177640607">Call (617) 764-0607</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/wally-1.jpg" alt="Haircut work by Wally Estrella">
+      <figcaption><span class="real">Real photo</span>Work photo from Wallys Peke&ntilde;o Stylo's Booksy page.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<div class="strip"><span>Haircuts &#183; Beard Trims &#183; Lineups &#183; Eyebrows &#183; Kids Cuts &#183; Haircuts &#183; Beard Trims &#183; Lineups &#183; Eyebrows &#183; Kids Cuts &#183;</span></div>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#visit">Visit</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="about">
+    <div class="wrap">
+      <div class="about">
+        <div>
+          <h2><span class="es">El barbero</span>The barber</h2>
+          <p class="intro">Wally Estrella cuts hair at 140 Broadway in Somerville, and regulars come back to his chair week after week. Customers describe careful work in a comfortable shop.</p>
+          <p>The shop is bilingual, English and Spanish. It is open Friday and Saturday, per the Booksy listing. Parking is easy, and card payments and Wi-Fi are available.</p>
+          <div class="stars"><b>5.0</b> from 28 Booksy reviews. Every one of them five stars.</div>
+        </div>
+        <figure class="photo">
+          <img src="img/wally-2.jpg" alt="Haircut work by Wally Estrella">
+          <figcaption><span class="real">Real photo</span>Work photo from Wallys Peke&ntilde;o Stylo's Booksy page.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="board">
+    <div class="wrap">
+      <h2><span class="es">Servicios</span>Services &amp; prices</h2>
+      <p class="intro">Book any of these online through Booksy, or call the shop.</p>
+      <div class="svc">
+        <div class="card">
+          <h3>Haircut Only</h3>
+          <div class="pr">$45</div>
+          <p>A full cut in Wally's chair, finished clean.</p>
+        </div>
+        <div class="card">
+          <h3>Haircuts &amp; Beard Trim, Lineups, Eyebrows</h3>
+          <div class="pr">$55</div>
+          <p>Cut and beard trim together, shaped to match.</p>
+        </div>
+        <div class="card">
+          <h3>Lineup Only</h3>
+          <div class="pr">$35</div>
+          <p>Detail work between full cuts.</p>
+        </div>
+        <div class="card">
+          <h3>Teen Boys</h3>
+          <div class="pr">$40</div>
+          <p>Haircuts for teen boys.</p>
+        </div>
+        <div class="card">
+          <h3>Kids</h3>
+          <div class="pr">$35</div>
+          <p>For children under 10.</p>
+        </div>
+        <div class="card">
+          <h3>Haircut &amp; Paint Beard</h3>
+          <div class="pr">$70</div>
+          <p>Cut plus beard paint, per the Booksy listing.</p>
+        </div>
+        <div class="card wide">
+          <p style="font-size:15px; max-width:520px;">Prices are per the Booksy listing for Wallys Peke&ntilde;o Stylo and can change. Confirm your total when you book.</p>
+          <a class="btn" href="https://booksy.com/en-us/968249_wallys-pekeno-stylo_barber-shop_22297_somerville" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+      <div class="amen">
+        <span>Parking on site</span><span>Credit cards accepted</span><span>Wi-Fi</span><span>Pets allowed</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <h2><span class="es">La galer&iacute;a</span>Work gallery</h2>
+      <p class="intro">Real cuts from the shop's Booksy page, posted by Wally and his customers.</p>
+      <div class="gal-grid">
+        <figure class="tall">
+          <img src="img/wally-3.jpg" alt="Haircut work by Wally Estrella">
+          <figcaption><span class="real">Real photo</span>Work photo from the shop's Booksy page.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/wally-4.jpg" alt="Haircut work by Wally Estrella">
+          <figcaption><span class="real">Real photo</span>Work photo from the shop's Booksy page.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/wally-5.jpg" alt="Haircut work by Wally Estrella">
+          <figcaption><span class="real">Real photo</span>Work photo from the shop's Booksy page.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/wally-6.jpg" alt="Kids haircut photo posted by customer Gloria">
+          <figcaption><span class="real">Real photo</span>Customer photo posted by Gloria on Booksy.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/wally-7.jpg" alt="Kids haircut photo posted by customer Gloria">
+          <figcaption><span class="real">Real photo</span>Customer photo posted by Gloria on Booksy.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" style="padding-top:0;">
+    <div class="wrap">
+      <h2><span class="es">Lo que dicen</span>What customers say</h2>
+      <p class="intro">From the shop's Booksy page.</p>
+      <div class="reviews">
+        <div class="rev">
+          <p class="q">&ldquo;I've trusted Wally with my haircuts for over 17 years, and the consistency, precision, and professionalism have never wavered.&rdquo;</p>
+          <div class="who">Abdul</div>
+          <div class="svc-tag">Service: Haircuts &amp; Beard Trim, Lineups, Eyebrows</div>
+        </div>
+        <div class="rev">
+          <p class="q">&ldquo;Great Cut! Always great service.&rdquo;</p>
+          <div class="who">Matthew</div>
+          <div class="svc-tag">Service: Haircuts &amp; Beard Trim, Lineups, Eyebrows</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="visit">
+    <div class="wrap">
+      <h2><span class="es">Vis&iacute;tanos</span>Visit the shop</h2>
+      <div class="visitgrid">
+        <div>
+          <table class="hours">
+            <tr><td>Sunday</td><td>Closed</td></tr>
+            <tr><td>Monday</td><td>Closed</td></tr>
+            <tr><td>Tuesday</td><td>Closed</td></tr>
+            <tr><td>Wednesday</td><td>Closed</td></tr>
+            <tr><td>Thursday</td><td>Closed</td></tr>
+            <tr><td>Friday</td><td>10:00 AM - 1:30 PM, 2:00 PM - 8:15 PM</td></tr>
+            <tr><td>Saturday</td><td>10:00 AM - 1:30 PM, 2:00 PM - 5:15 PM</td></tr>
+          </table>
+          <p style="font-size:14px; color:#d8d2bd; margin-top:14px;">Per the shop's Booksy page: if you need a cut before hours or on another day, text or call the shop's personal phone.</p>
+        </div>
+        <div class="vcard">
+          <p><span class="lbl">Address</span><br>140 Broadway<br>Somerville, MA 02145</p>
+          <p><span class="lbl">Phone</span><br><a class="tel" href="tel:+16177640607">(617) 764-0607</a></p>
+          <p style="margin-top:22px;">
+            <a class="btn" href="https://booksy.com/en-us/968249_wallys-pekeno-stylo_barber-shop_22297_somerville" target="_blank" rel="noopener">Book Now on Booksy</a>
+          </p>
+          <p style="margin-top:12px;"><a href="https://www.google.com/maps/search/?api=1&amp;query=140+Broadway+Somerville+MA+02145" target="_blank" rel="noopener" style="color:var(--gold);">Get directions</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="disc">This is an unsolicited design preview created by Freightfolio. It is not the official website of Wally's barber Shop and does not imply endorsement. Photos are real photos from the shop's public Booksy page, used for illustration in this preview.</div>
+  <div>Wally's barber Shop &middot; 140 Broadway, Somerville, MA 02145 &middot; <a href="tel:+16177640607">(617) 764-0607</a></div>
+</footer>
+
+</body>
+</html>
