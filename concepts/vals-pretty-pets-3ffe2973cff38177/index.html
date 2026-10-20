@@ -99,7 +99,8 @@
   .card h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:700;line-height:1.02;color:var(--ink);text-shadow:0 2px 0 var(--sky);}
   .card h1 .red{color:var(--cherry);text-shadow:0 2px 0 #f3c6c9;}
   .tagline{font-size:1.15rem;font-weight:600;color:var(--ink-soft);margin:.9rem auto 0;max-width:34rem;}
-  .heroart{margin:1.6rem auto 0;max-width:420px;}
+  .heroart{margin:1.6rem auto 0;max-width:340px;}
+  .heroart img{width:100%;border-radius:12px;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--sky);}
   .caption{font-size:.78rem;color:var(--ink-soft);font-style:italic;margin-top:.5rem;}
   .cta-row{margin-top:1.6rem;display:flex;flex-direction:column;align-items:center;gap:.55rem;}
   .cta-note{font-size:.95rem;color:var(--ink-soft);}
@@ -173,6 +174,14 @@
   .why-card p{font-size:.95rem;color:var(--ink-soft);}
   .why-art{margin:2.2rem auto 0;max-width:560px;text-align:center;}
 
+  /* ---------- photo gallery ---------- */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.6rem;}
+  .polaroid{background:var(--paper);border:2px solid var(--ink);border-radius:10px;overflow:hidden;box-shadow:5px 5px 0 var(--sky);transform:rotate(-1deg);}
+  .polaroid:nth-child(2){transform:rotate(1.2deg);}
+  .polaroid:nth-child(3){transform:rotate(-.6deg);}
+  .polaroid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-bottom:2px solid var(--ink);}
+  .polaroid figcaption{font-size:.82rem;color:var(--ink-soft);padding:.7rem .9rem;font-style:italic;}
+
   /* ---------- visit ---------- */
   .visit-wrap{
     display:grid;grid-template-columns:1.1fr .9fr;gap:1.4rem;margin-top:1.6rem;
@@ -212,7 +221,7 @@
     .why-grid{grid-template-columns:1fr;}
     .visit-wrap{grid-template-columns:1fr;}
     .ticket{flex-direction:column;}
-    .stub{flex:none;border-right:none;border-bottom:3px dashed var(--ink);flex-direction:row;padding:.9rem;}
+    .gallery{grid-template-columns:1fr;}    .stub{flex:none;border-right:none;border-bottom:3px dashed var(--ink);flex-direction:row;padding:.9rem;}
     .stub svg{width:34px;height:34px;}
     .ticket::before{left:50%;top:-15px;transform:translateX(-50%);}
     .ticket::after{left:50%;right:auto;top:auto;bottom:-15px;transform:translateX(-50%);}
@@ -241,6 +250,7 @@
   <div class="navlinks">
     <a href="#services">Services</a>
     <a href="#why">Why Val's</a>
+    <a href="#photos">Photos</a>
     <a href="#visit">Visit</a>
     <a class="btn small" href="tel:+18037943647">Call to book</a>
   </div>
@@ -257,41 +267,8 @@
     <p class="tagline">All-breed dog grooming in West Columbia, South Carolina. A family business with 20+ years of experience.</p>
 
     <figure class="heroart">
-      <svg viewBox="0 0 400 260" role="img" aria-label="Concept art: line drawing of a freshly groomed dog wearing a bow">
-        <rect x="8" y="8" width="384" height="244" rx="18" fill="#b9d8ea" opacity=".35"/>
-        <g fill="none" stroke="#2b2620" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-          <!-- body -->
-          <path d="M110 205 C100 160 115 130 150 118"/>
-          <path d="M290 205 C300 160 285 130 250 118"/>
-          <path d="M150 118 C170 100 230 100 250 118"/>
-          <!-- head -->
-          <circle cx="200" cy="88" r="52" fill="#fffdf8"/>
-          <!-- floppy ears -->
-          <path d="M154 62 C132 66 126 100 142 122 C150 132 162 124 160 104 C159 88 158 74 154 62 Z" fill="#fffdf8"/>
-          <path d="M246 62 C268 66 274 100 258 122 C250 132 238 124 240 104 C241 88 242 74 246 62 Z" fill="#fffdf8"/>
-          <!-- face -->
-          <circle cx="182" cy="80" r="5" fill="#2b2620" stroke="none"/>
-          <circle cx="218" cy="80" r="5" fill="#2b2620" stroke="none"/>
-          <ellipse cx="200" cy="104" rx="16" ry="12" fill="#faf5ea"/>
-          <path d="M194 98 L206 98 L200 106 Z" fill="#2b2620" stroke="none"/>
-          <path d="M200 106 C200 112 194 114 190 110 M200 106 C200 112 206 114 210 110"/>
-          <!-- bow -->
-          <g transform="translate(252,52)">
-            <path d="M0 0 L-26 -16 L-26 16 Z" fill="#c0303a" stroke="#99242c" stroke-width="4"/>
-            <path d="M0 0 L26 -16 L26 16 Z" fill="#c0303a" stroke="#99242c" stroke-width="4"/>
-            <circle r="8" fill="#c0303a" stroke="#99242c" stroke-width="4"/>
-          </g>
-          <!-- collar -->
-          <path d="M158 128 C180 142 220 142 242 128" stroke="#c0303a" stroke-width="7"/>
-          <circle cx="200" cy="142" r="7" fill="#b9d8ea" stroke-width="4"/>
-          <!-- paws -->
-          <path d="M140 205 L140 225 M160 205 L160 225 M240 205 L240 225 M260 205 L260 225"/>
-          <!-- sparkles -->
-          <path d="M92 60 l0 -14 M85 53 l14 0" stroke="#c0303a" stroke-width="4"/>
-          <path d="M312 190 l0 -12 M306 184 l12 0" stroke="#c0303a" stroke-width="4"/>
-        </g>
-      </svg>
-      <figcaption class="caption">Concept art</figcaption>
+      <img src="img/photo-1.jpg" alt="Groomer Andy with Bella, a freshly groomed dog">
+      <figcaption class="caption">Groomer Andy and Bella, a freshly groomed dog. Photo from the business's Yelp listing.</figcaption>
     </figure>
 
     <div class="cta-row">
@@ -355,7 +332,7 @@
       </div>
       <div class="tdetail">
         <h3>Social <span class="amp">&amp;</span> Play Time</h3>
-        <p>Dogs get social and play time during their visit. Grooming day doubles as a fun day out.</p>
+        <p>Dogs get social and play time during their visit.</p>
       </div>
     </div>
   </div>
@@ -370,13 +347,13 @@
 <section id="why">
   <span class="eyebrow">Why Val's</span>
   <h2 class="sec">The neighborhood groomer</h2>
-  <p class="sec-sub">A family-run shop where the groomers know the dogs by name and the dogs know the way in.</p>
+  <p class="sec-sub">A family-run shop with more than 20 years of grooming experience.</p>
 
   <div class="why-grid">
     <div class="why-card">
       <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#c0303a" stroke-width="3" stroke-linecap="round"><path d="M24 6 L28 18 L41 18 L31 26 L34 39 L24 31 L14 39 L17 26 L7 18 L20 18 Z" fill="#b9d8ea"/></g></svg>
       <h3>Family business, 20+ years</h3>
-      <p>Two decades of hands-on grooming experience, run by a family that treats every dog like its own.</p>
+      <p>A family business with more than 20 years of hands-on grooming experience.</p>
     </div>
     <div class="why-card">
       <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#2b2620" stroke-width="3" stroke-linecap="round"><circle cx="17" cy="20" r="7" fill="#b9d8ea"/><circle cx="31" cy="20" r="7" fill="#b9d8ea"/><circle cx="24" cy="30" r="9" fill="#faf5ea"/><circle cx="24" cy="30" r="9"/></g></svg>
@@ -386,45 +363,42 @@
     <div class="why-card">
       <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#2b2620" stroke-width="3" stroke-linecap="round"><circle cx="24" cy="22" r="12" fill="#b9d8ea"/><path d="M24 10 C29 13 29 18 24 20 C19 18 19 13 24 10 Z" fill="#c0303a" stroke="#99242c"/><path d="M10 40 C14 36 20 36 24 40 C28 36 34 36 38 40"/></g></svg>
       <h3>Play time included</h3>
-      <p>Dogs enjoy social and play time during their visit, so grooming day feels like a good day.</p>
+      <p>Dogs enjoy social and play time during their visit.</p>
     </div>
   </div>
+</section>
 
-  <figure class="why-art">
-    <svg viewBox="0 0 560 220" role="img" aria-label="Concept art: a dog chasing a ball along a trail of paw prints">
-      <g fill="none" stroke="#2b2620" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M20 180 C120 170 200 150 260 120" stroke-dasharray="2 14"/>
-        <g fill="#c0303a" stroke="none" opacity=".9">
-          <g transform="translate(70,168) scale(.55)"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g>
-          <g transform="translate(130,152) scale(.55) rotate(12)"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g>
-          <g transform="translate(190,134) scale(.55) rotate(-8)"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g>
-        </g>
-        <!-- ball -->
-        <circle cx="300" cy="96" r="26" fill="#c0303a" stroke="#99242c"/>
-        <path d="M300 70 C310 80 310 92 300 100 C290 92 290 80 300 70" fill="#faf5ea" stroke="none" opacity=".9"/>
-        <!-- trotting dog, side profile -->
-        <g>
-          <path d="M392 138 C378 128 372 116 376 104"/>
-          <path d="M376 104 l-7 -8 M376 104 l8 -7" stroke-width="3"/>
-          <path d="M392 138 C400 122 430 116 460 120 C486 124 498 134 496 148 C494 162 470 168 444 166 C418 164 398 156 392 138 Z" fill="#b9d8ea"/>
-          <circle cx="508" cy="112" r="24" fill="#b9d8ea"/>
-          <path d="M526 106 C536 108 540 115 536 121 C532 127 523 127 519 123 Z" fill="#b9d8ea"/>
-          <circle cx="530" cy="115" r="3" fill="#2b2620" stroke="none"/>
-          <circle cx="512" cy="105" r="3.2" fill="#2b2620" stroke="none"/>
-          <path d="M496 92 C488 80 492 70 502 68 C510 67 513 75 509 85" fill="#b9d8ea"/>
-          <path d="M420 164 C416 176 414 186 416 196 M452 166 C454 178 458 188 462 196 M478 162 C484 172 490 180 496 186 M404 162 C396 170 390 178 386 186"/>
-          <path d="M300 96 C340 100 360 104 384 108" stroke-dasharray="2 10"/>
-        </g>
-      </g>
-    </svg>
-    <figcaption class="caption">Concept art</figcaption>
-  </figure>
+<div class="paw-divider" aria-hidden="true">
+  <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+  <svg viewBox="0 0 48 48"><g fill="#8fb8d4"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+  <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+</div>
+
+<section id="photos">
+  <span class="eyebrow">Fresh from the shop</span>
+  <h2 class="sec">Real dogs, real grooms</h2>
+  <p class="sec-sub">Photos from the business's Yelp listing: groomed dogs at Val's Pretty Pets in West Columbia.</p>
+
+  <div class="gallery">
+    <figure class="polaroid">
+      <img src="img/photo-4.jpg" alt="Bentley before his groom">
+      <figcaption>Bentley before his groom. Photo from the business's Yelp listing.</figcaption>
+    </figure>
+    <figure class="polaroid">
+      <img src="img/photo-3.jpg" alt="Bentley after his groom">
+      <figcaption>Bentley after his groom. Photo from the business's Yelp listing.</figcaption>
+    </figure>
+    <figure class="polaroid">
+      <img src="img/photo-2.jpg" alt="Max after his groom">
+      <figcaption>Max after his groom. Photo from the business's Yelp listing.</figcaption>
+    </figure>
+  </div>
 </section>
 
 <div class="paw-divider" aria-hidden="true">
   <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
   <svg viewBox="0 0 48 48"><g fill="#8fb8d4"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
-  <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+  <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
 </div>
 
 <section id="visit">
@@ -444,28 +418,6 @@
       </address>
       <p style="margin-top:.9rem;"><a class="dir-link" href="https://www.google.com/maps/search/?api=1&amp;query=2324+Platt+Springs+Rd+West+Columbia+SC+29169" target="_blank" rel="noopener">Get directions</a></p>
       <span class="rating"><span class="star">&#9733;</span> 4.8 from 46 Google reviews</span>
-      <figure style="margin-top:1.4rem;">
-        <svg viewBox="0 0 400 190" role="img" aria-label="Concept art: small shop front with a paw print sign">
-          <g fill="none" stroke="#2b2620" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="90" y="70" width="220" height="110" fill="#fffdf8"/>
-            <path d="M70 74 L200 20 L330 74 Z" fill="#c0303a" stroke="#99242c"/>
-            <rect x="170" y="120" width="60" height="60" fill="#b9d8ea"/>
-            <circle cx="200" cy="150" r="5" fill="#2b2620" stroke="none"/>
-            <rect x="110" y="100" width="44" height="40" fill="#b9d8ea"/>
-            <rect x="246" y="100" width="44" height="40" fill="#b9d8ea"/>
-            <path d="M110 100 L132 100 M246 100 L268 100" opacity="0"/>
-            <g transform="translate(200,52) scale(.8)">
-              <ellipse cx="0" cy="8" rx="11" ry="9" fill="#c0303a" stroke="none"/>
-              <circle cx="-13" cy="-4" r="5" fill="#c0303a" stroke="none"/>
-              <circle cx="-4.5" cy="-10" r="5" fill="#c0303a" stroke="none"/>
-              <circle cx="4.5" cy="-10" r="5" fill="#c0303a" stroke="none"/>
-              <circle cx="13" cy="-4" r="5" fill="#c0303a" stroke="none"/>
-            </g>
-            <rect x="60" y="180" width="280" height="8" fill="#8fb8d4" stroke="none"/>
-          </g>
-        </svg>
-        <figcaption class="caption" style="text-align:center;">Concept art</figcaption>
-      </figure>
     </div>
 
     <div class="visit-card">
