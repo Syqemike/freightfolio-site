@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Design preview concept for Tight Image Barbershop, 427 N Eutaw St #B, Baltimore, MD. Fades, razor shaves, beard trims, hair design, color, and facials.">
+<title>Tight Image Barbershop | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --stone:#8f959c;
+  --stone-light:#d7dbdf;
+  --marble:#f5f4f1;
+  --ink:#151a21;
+  --steel:#232d3a;
+  --steel-deep:#10141b;
+  --accent:#5b7a99;
+  --line:#c9ced4;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--marble);
+  color:var(--ink);
+  line-height:1.6;
+  font-size:16px;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+
+/* Disclosure bar */
+.disclosure{
+  background:var(--steel-deep);
+  color:var(--stone-light);
+  text-align:center;
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  padding:10px 16px;
+  font-weight:600;
+}
+.disclosure span{color:#fff}
+
+/* Nav */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(16,20,27,.96);
+  border-bottom:2px solid var(--stone);
+}
+.nav-inner{
+  max-width:1100px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 20px;
+}
+.brand{
+  font-family:'Anton',sans-serif;
+  font-size:20px;letter-spacing:.06em;
+  color:#fff;text-decoration:none;
+  text-transform:uppercase;
+}
+.brand em{font-style:normal;color:var(--stone-light)}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{
+  color:var(--stone-light);text-decoration:none;
+  font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+}
+.nav-links a:hover{color:#fff}
+.nav-cta{
+  font-family:'Inter',sans-serif;
+  border:1px solid var(--stone-light);
+  padding:8px 16px;text-decoration:none;
+  font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:#fff;
+}
+.nav-cta:hover{background:var(--stone-light);color:var(--steel-deep)}
+
+/* Hero */
+.hero{
+  background:var(--steel-deep);
+  color:#fff;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 46px),0 100%);
+  padding-bottom:110px;
+}
+.hero-inner{
+  max-width:1100px;margin:0 auto;
+  padding:72px 20px 40px;
+  display:grid;gap:44px;
+  grid-template-columns:1fr;
+}
+.hero-kicker{
+  font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--stone-light);
+  border-left:4px solid var(--stone);
+  padding-left:14px;
+  margin-bottom:18px;
+}
+h1{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(52px,11vw,118px);
+  line-height:.95;
+  text-transform:uppercase;
+  letter-spacing:.01em;
+}
+h1 .cut{color:var(--stone-light)}
+.hero-tag{
+  font-size:clamp(17px,2.4vw,22px);
+  color:var(--stone-light);
+  margin-top:18px;
+  max-width:34em;
+}
+.hero-tag strong{color:#fff}
+.hero-actions{margin-top:30px;display:flex;flex-wrap:wrap;gap:14px}
+.btn{
+  display:inline-block;
+  font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;
+  text-decoration:none;
+  padding:16px 30px;
+  clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);
+}
+.btn-primary{background:var(--stone-light);color:var(--steel-deep)}
+.btn-primary:hover{background:#fff}
+.btn-ghost{border:2px solid var(--stone);color:#fff}
+.btn-ghost:hover{background:var(--stone);color:var(--steel-deep)}
+.hero-meta{
+  margin-top:36px;
+  display:flex;flex-wrap:wrap;gap:28px;
+  font-size:14px;color:var(--stone-light);
+}
+.hero-meta strong{display:block;color:#fff;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
+
+/* Chisel emblem */
+.emblem{width:100%;max-width:420px;margin:0 auto}
+.emblem figcaption{
+  text-align:center;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--stone);margin-top:10px;
+}
+
+/* Angular section divider handled by clip-path on section tops */
+section{padding:80px 20px}
+.wrap{max-width:1100px;margin:0 auto}
+.section-kicker{
+  font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:12px;
+}
+h2{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(34px,5.5vw,58px);
+  text-transform:uppercase;
+  line-height:1;
+  margin-bottom:14px;
+}
+.section-lede{max-width:40em;color:#3c434c;margin-bottom:44px;font-size:17px}
+
+/* Services: stone tablet rows */
+.services{background:var(--marble)}
+.service-row{
+  display:grid;grid-template-columns:1fr;gap:18px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-left:10px solid var(--steel);
+  padding:26px 24px;
+  margin-bottom:18px;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%);
+  box-shadow:0 10px 24px rgba(16,20,27,.08);
+}
+.service-row h3{
+  font-family:'Anton',sans-serif;
+  font-size:24px;text-transform:uppercase;letter-spacing:.03em;
+}
+.service-row p{color:#3c434c;font-size:15px;max-width:46em}
+.service-row .num{
+  font-family:'Anton',sans-serif;
+  font-size:44px;color:var(--stone-light);
+  line-height:1;
+}
+
+/* Wall of art gallery */
+.gallery{background:var(--steel-deep);color:#fff;
+  clip-path:polygon(0 46px,100% 0,100% 100%,0 100%);
+  padding-top:120px;
+}
+.gallery h2{color:#fff}
+.gallery .section-lede{color:var(--stone-light)}
+.art-grid{
+  display:grid;gap:26px;
+  grid-template-columns:1fr;
+}
+.art-card{
+  background:var(--steel);
+  border:1px solid #39434f;
+  padding:18px;
+  clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,0 100%);
+}
+.art-card svg{width:100%;height:auto;background:#0d1117}
+.art-card figcaption{
+  padding-top:14px;font-size:13px;color:var(--stone-light);
+}
+.art-card figcaption strong{
+  display:block;color:#fff;font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px;
+}
+.concept-tag{
+  display:inline-block;margin-top:8px;
+  font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  border:1px solid var(--stone);color:var(--stone-light);
+  padding:4px 10px;
+}
+
+/* Barber */
+.barber{background:var(--marble)}
+.barber-grid{display:grid;gap:44px;grid-template-columns:1fr}
+.phil-card{
+  background:var(--steel-deep);color:#fff;
+  padding:34px 30px;
+  clip-path:polygon(16px 0,100% 0,100% 100%,0 100%,0 16px);
+}
+.phil-card .handle{
+  font-family:'Anton',sans-serif;font-size:30px;text-transform:uppercase;letter-spacing:.03em;
+}
+.phil-card .handle a{color:#fff;text-decoration:underline;text-decoration-color:var(--stone);text-underline-offset:6px}
+.phil-tagline{
+  margin:18px 0;
+  font-size:20px;color:var(--stone-light);
+  border-left:4px solid var(--stone);padding-left:16px;
+  font-style:italic;
+}
+.phil-card p{font-size:15px;color:var(--stone-light);margin-bottom:14px}
+.phil-card p strong{color:#fff}
+.rating{
+  margin-top:22px;padding-top:20px;border-top:1px solid #39434f;
+  font-size:15px;color:#fff;
+}
+.rating .stars{color:#e8c15a;font-size:18px;letter-spacing:.1em}
+.rating small{display:block;color:var(--stone);font-size:13px;margin-top:4px}
+
+/* Visit */
+.visit{background:#fff;border-top:1px solid var(--line)}
+.visit-grid{display:grid;gap:36px;grid-template-columns:1fr}
+.hours-table{width:100%;border-collapse:collapse;max-width:520px}
+.hours-table caption{
+  text-align:left;font-family:'Anton',sans-serif;font-size:22px;text-transform:uppercase;
+  padding-bottom:14px;letter-spacing:.03em;
+}
+.hours-table th,.hours-table td{
+  text-align:left;padding:12px 8px;border-bottom:1px solid var(--line);font-size:15px;
+}
+.hours-table th{font-weight:600;width:38%}
+.hours-table tr.today td{background:var(--marble);font-weight:700}
+.address-block{
+  background:var(--marble);border:1px solid var(--line);
+  padding:28px;
+  clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,0 100%);
+}
+.address-block h3{
+  font-family:'Anton',sans-serif;font-size:22px;text-transform:uppercase;margin-bottom:12px;letter-spacing:.03em;
+}
+.address-block p{font-size:15px;margin-bottom:10px}
+.address-block a{font-weight:700}
+.visit-cta{margin-top:26px}
+.visit-note{font-size:14px;color:#5a626c;margin-top:14px}
+
+/* Footer */
+footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 40px;font-size:14px}
+.foot-inner{max-width:1100px;margin:0 auto}
+.foot-name{font-family:'Anton',sans-serif;font-size:24px;color:#fff;text-transform:uppercase;margin-bottom:16px}
+.foot-disclaimer{
+  border-top:1px solid #39434f;padding-top:22px;margin-top:6px;
+  color:var(--stone);font-size:13px;max-width:60em;
+}
+.foot-links{margin-top:18px;display:flex;flex-wrap:wrap;gap:20px}
+.foot-links a{color:var(--stone-light);font-weight:600;text-decoration:none;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.foot-links a:hover{color:#fff}
+
+/* Chisel divider strip */
+.chisel-strip{
+  height:22px;
+  background:repeating-linear-gradient(135deg,var(--steel) 0 14px,var(--marble) 14px 28px);
+}
+.gallery .chisel-strip, .hero .chisel-strip{background:repeating-linear-gradient(135deg,#0d1117 0 14px,var(--steel-deep) 14px 28px)}
+
+@media(min-width:760px){
+  .hero-inner{grid-template-columns:1.2fr .8fr;align-items:center}
+  .service-row{grid-template-columns:70px 1fr;align-items:center}
+  .art-grid{grid-template-columns:repeat(3,1fr)}
+  .barber-grid{grid-template-columns:1fr 1fr;align-items:start}
+  .visit-grid{grid-template-columns:1fr 1fr;align-items:start}
+}
+@media(max-width:640px){
+  .nav-links{display:none}
+  section{padding:60px 16px}
+}
+
+/* Real photo gallery */
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin-top:1.75rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:#ffffff;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:230px;object-fit:cover}
+.photo-card figcaption{padding:.85rem 1rem;font-size:.87rem;color:var(--steel);text-align:left}
+.photo-card .src{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem}
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design preview concept &middot; <span>Created by Freightfolio</span> &middot; Not affiliated with Tight Image Barbershop</div>
+
+<nav aria-label="Section navigation">
+  <div class="nav-inner">
+    <a class="brand" href="#top">Tight <em>Image</em></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#art">Wall of Art</a></li>
+      <li><a href="#barber">The Barber</a></li>
+      <li><a href="#photos">Photos</a></li>
+  <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="nav-cta" href="tel:+14108377776">Call to book</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <p class="hero-kicker">Barbershop &middot; Baltimore, MD</p>
+      <h1>Tight <span class="cut">Image</span> Barbershop</h1>
+      <p class="hero-tag"><strong>"Stay Chiseled my friends."</strong> Precision fades and razor shaves carved with a steady hand at 427 N Eutaw St in Baltimore.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+14108377776">Call to book</a>
+        <a class="btn btn-ghost" href="#services">See services</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>Phone</strong><a href="tel:+14108377776">(410) 837-7776</a></div>
+        <div><strong>Address</strong>427 N Eutaw St #B, Baltimore, MD 21201</div>
+        <div><strong>Weekday hours</strong>Tue to Fri, 10:00 AM to 7:00 PM</div>
+      </div>
+    </div>
+    <figure class="emblem">
+      <svg viewBox="0 0 400 400" role="img" aria-label="Concept illustration of a chisel and straight razor crossed over a barber pole stripe motif">
+        <rect x="40" y="40" width="320" height="320" fill="none" stroke="#8f959c" stroke-width="3"/>
+        <rect x="58" y="58" width="284" height="284" fill="none" stroke="#39434f" stroke-width="1.5"/>
+        <g transform="rotate(24 200 200)">
+          <rect x="188" y="70" width="24" height="170" fill="#8f959c"/>
+          <polygon points="188,240 212,240 200,292" fill="#d7dbdf"/>
+          <rect x="182" y="60" width="36" height="26" fill="#5b7a99"/>
+        </g>
+        <g transform="rotate(-24 200 200)">
+          <rect x="193" y="80" width="14" height="160" fill="#d7dbdf"/>
+          <polygon points="193,240 207,240 200,286" fill="#8f959c"/>
+          <rect x="188" y="240" width="24" height="52" rx="4" fill="#39434f"/>
+        </g>
+        <text x="200" y="348" text-anchor="middle" fill="#8f959c" font-family="Anton, sans-serif" font-size="26" letter-spacing="6">STAY CHISELED</text>
+      </svg>
+      <figcaption>Concept art: the shop emblem. Original illustration, not a photo of the business.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+
+<section class="services" id="services" aria-labelledby="services-h">
+  <div class="wrap">
+    <p class="section-kicker">Cut like stone</p>
+    <h2 id="services-h">Services</h2>
+    <p class="section-lede">Every service is shaped with the same care Phil puts into his artwork on the shop walls. Clean lines and sharp detail in a finish that holds.</p>
+
+    <div class="service-row">
+      <div class="num" aria-hidden="true">01</div>
+      <div>
+        <h3>Fades and custom cuts</h3>
+        <p>Skin fades, tapers, and the big chop, plus custom cuts designed around your head shape and hairline. Cuts for women, children, and men.</p>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div class="num" aria-hidden="true">02</div>
+      <div>
+        <h3>Beard trims and razor shaves</h3>
+        <p>Beard sculpting and straight razor shaves with a hot lather finish. Sharp edges and clean necklines, with detail work that frames the face.</p>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div class="num" aria-hidden="true">03</div>
+      <div>
+        <h3>Hair design and color</h3>
+        <p>Hair design etched with precision and hair coloring for a bold or natural change. Bring a reference or talk it through in the chair.</p>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div class="num" aria-hidden="true">04</div>
+      <div>
+        <h3>Eyebrow arching and facials</h3>
+        <p>Eyebrow arching and facials to finish the look. Small details make a big difference and get the same steady hand as every cut.</p>
+      </div>
+    </div>
+
+    <div class="visit-cta">
+      <a class="btn btn-primary" href="tel:+14108377776" style="background:var(--steel-deep);color:#fff">Call to book</a>
+      <p class="visit-note">Questions? Call (410) 837-7776.</p>
+    </div>
+  </div>
+</section>
+
+<div class="chisel-strip" aria-hidden="true"></div>
+
+<section class="gallery" id="art" aria-labelledby="art-h">
+  <div class="wrap">
+    <p class="section-kicker">The wall of art</p>
+    <h2 id="art-h">Art on the walls, craft in the chair</h2>
+    <p class="section-lede">Reviewers mention Phil's artwork hanging on the shop walls. These original concept illustrations nod to that creative side. Each piece below is concept art created for this design preview, not a photograph of the business.</p>
+    <div class="art-grid">
+
+      <figure class="art-card">
+        <svg viewBox="0 0 360 260" role="img" aria-label="Concept illustration of a barber chair carved from gray stone blocks">
+          <rect x="20" y="20" width="320" height="220" fill="none"/>
+          <polygon points="90,220 120,120 240,120 270,220" fill="#39434f"/>
+          <polygon points="110,120 130,60 230,60 250,120" fill="#8f959c"/>
+          <rect x="130" y="76" width="100" height="34" fill="#151a21"/>
+          <polygon points="60,220 300,220 290,238 70,238" fill="#5b7a99"/>
+          <rect x="150" y="120" width="60" height="100" fill="#151a21" opacity="0.55"/>
+          <line x1="60" y1="200" x2="300" y2="200" stroke="#d7dbdf" stroke-width="2"/>
+        </svg>
+        <figcaption>
+          <strong>The stone chair</strong>
+          A barber chair carved from solid blocks, built to last like a good cut.
+          <span class="concept-tag">Concept art</span>
+        </figcaption>
+      </figure>
+
+      <figure class="art-card">
+        <svg viewBox="0 0 360 260" role="img" aria-label="Concept illustration of clippers traced with angular chisel-cut lines">
+          <rect x="20" y="20" width="320" height="220" fill="none"/>
+          <g transform="rotate(-18 180 130)">
+            <rect x="150" y="60" width="60" height="110" rx="8" fill="#8f959c"/>
+            <rect x="158" y="72" width="44" height="20" fill="#151a21"/>
+            <line x1="162" y1="100" x2="198" y2="100" stroke="#151a21" stroke-width="3"/>
+            <line x1="162" y1="112" x2="198" y2="112" stroke="#151a21" stroke-width="3"/>
+            <rect x="168" y="170" width="24" height="46" fill="#5b7a99"/>
+          </g>
+          <polygon points="40,60 120,60 100,84 40,84" fill="#39434f" opacity="0.8"/>
+          <polygon points="240,180 320,180 300,204 240,204" fill="#39434f" opacity="0.8"/>
+        </svg>
+        <figcaption>
+          <strong>Tools of the trade</strong>
+          Clippers and combs traced with the same angular lines Phil cuts into hair.
+          <span class="concept-tag">Concept art</span>
+        </figcaption>
+      </figure>
+
+      <figure class="art-card">
+        <svg viewBox="0 0 360 260" role="img" aria-label="Concept illustration of a fade haircut rendered as layered marble strata">
+          <rect x="20" y="20" width="320" height="220" fill="none"/>
+          <ellipse cx="180" cy="150" rx="80" ry="92" fill="#8f959c"/>
+          <path d="M100,150 a80,92 0 0 1 160,0 L260,150 L100,150" fill="#d7dbdf"/>
+          <path d="M100,150 a80,92 0 0 0 160,0 L260,150 L100,150" fill="#39434f"/>
+          <line x1="112" y1="128" x2="248" y2="128" stroke="#151a21" stroke-width="2.5"/>
+          <line x1="118" y1="112" x2="242" y2="112" stroke="#151a21" stroke-width="2"/>
+          <line x1="128" y1="98" x2="232" y2="98" stroke="#151a21" stroke-width="1.5"/>
+          <polygon points="100,242 140,200 180,242" fill="#5b7a99"/>
+          <polygon points="180,242 220,200 260,242" fill="#5b7a99"/>
+        </svg>
+        <figcaption>
+          <strong>Strata of a fade</strong>
+          A fade rendered as layers of marble, blended from dark to light.
+          <span class="concept-tag">Concept art</span>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<section class="barber" id="barber" aria-labelledby="barber-h">
+  <div class="wrap">
+    <p class="section-kicker">The barber</p>
+    <h2 id="barber-h">Phil in the chair</h2>
+    <div class="barber-grid">
+      <div class="phil-card">
+        <p class="handle"><a href="https://www.instagram.com/philsthatbarber" target="_blank" rel="noopener">@philsthatbarber</a></p>
+        <p class="phil-tagline">"Stay Chiseled my friends."</p>
+        <p><strong>Phil</strong> is the barber behind Tight Image. Reviewers note his artwork hangs on the shop walls, and the same eye shows up in his cuts.</p>
+        <p>Follow along on <a href="https://www.instagram.com/philsthatbarber" target="_blank" rel="noopener" style="color:#fff">Instagram</a> to see fresh work and shop updates.</p>
+        <div class="rating">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          Rated 4.7 on Google from 56 reviews
+          <small>Rating shown once, from Google Business reviews</small>
+        </div>
+      </div>
+      <figure class="art-card" style="background:#fff;border-color:var(--line)">
+        <svg viewBox="0 0 360 300" role="img" aria-label="Concept illustration of a framed artwork of scissors on a gallery wall">
+          <rect x="0" y="0" width="360" height="300" fill="#e8e6e1"/>
+          <rect x="90" y="50" width="180" height="160" fill="#151a21" stroke="#8f959c" stroke-width="6"/>
+          <g transform="translate(180 130)">
+            <circle cx="-22" cy="34" r="14" fill="none" stroke="#d7dbdf" stroke-width="6"/>
+            <circle cx="22" cy="34" r="14" fill="none" stroke="#d7dbdf" stroke-width="6"/>
+            <line x1="-16" y1="22" x2="34" y2="-48" stroke="#d7dbdf" stroke-width="6"/>
+            <line x1="16" y1="22" x2="-34" y2="-48" stroke="#d7dbdf" stroke-width="6"/>
+            <circle cx="0" cy="8" r="5" fill="#5b7a99"/>
+          </g>
+          <rect x="140" y="226" width="80" height="18" fill="#8f959c"/>
+          <line x1="60" y1="268" x2="300" y2="268" stroke="#c9ced4" stroke-width="3"/>
+        </svg>
+        <figcaption style="color:#3c434c">
+          <strong style="color:var(--ink)">Gallery wall</strong>
+          A nod to the original artwork reviewers say hangs in the shop.
+          <span class="concept-tag" style="border-color:var(--accent);color:var(--accent)">Concept art</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="chisel-strip" aria-hidden="true"></div>
+
+<section class="gallery" id="photos" aria-labelledby="photos-h">
+  <div class="wrap">
+    <p class="section-kicker">Real photos</p>
+    <h2 id="photos-h">The actual shop and the actual work</h2>
+    <p class="section-lede">Real photos from the shop's own social pages and business listing, so you see the real room and real cuts.</p>
+    <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="A red design haircut" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Facebook page</span>A red design haircut</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="Cut and design by Phil" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Facebook page</span>Cut and design by Phil</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="Barber work from the barber's own Instagram, tagged at the shop" loading="lazy">
+<figcaption><span class="src">Source: the barber's own Instagram</span>Barber work from the barber's own Instagram, tagged at the shop</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-4.jpg" alt="Barber work from the barber's own Instagram, tagged at the shop" loading="lazy">
+<figcaption><span class="src">Source: the barber's own Instagram</span>Barber work from the barber's own Instagram, tagged at the shop</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-5.jpg" alt="Shop photo from the business listing" loading="lazy">
+<figcaption><span class="src">Source: Google Business listing photo</span>Shop photo from the business listing</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-labelledby="visit-h">
+  <div class="wrap">
+    <p class="section-kicker">Plan your visit</p>
+    <h2 id="visit-h">Visit the shop</h2>
+    <div class="visit-grid">
+      <div>
+        <table class="hours-table">
+          <caption>Hours</caption>
+          <tbody>
+            <tr><th scope="row">Monday</th><td>3:30 PM to 7:00 PM</td></tr>
+            <tr><th scope="row">Tuesday</th><td>10:00 AM to 7:00 PM</td></tr>
+            <tr><th scope="row">Wednesday</th><td>10:00 AM to 7:00 PM</td></tr>
+            <tr><th scope="row">Thursday</th><td>10:00 AM to 7:00 PM</td></tr>
+            <tr><th scope="row">Friday</th><td>10:00 AM to 7:00 PM</td></tr>
+            <tr><th scope="row">Saturday</th><td>9:00 AM to 6:00 PM</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="address-block">
+          <h3>Find us</h3>
+          <p>427 N Eutaw St #B<br>Baltimore, MD 21201</p>
+          <p><a href="tel:+14108377776">(410) 837-7776</a></p>
+          <p><a href="https://www.instagram.com/philsthatbarber" target="_blank" rel="noopener">Instagram: @philsthatbarber</a></p>
+          <div class="visit-cta">
+            <a class="btn btn-primary" href="tel:+14108377776" style="background:var(--steel-deep);color:#fff">Call to book</a>
+            <p class="visit-note">Questions? Call (410) 837-7776.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <p class="foot-name">Tight Image Barbershop</p>
+    <div class="foot-links">
+      <a href="#services">Services</a>
+      <a href="#art">Wall of Art</a>
+      <a href="#barber">The Barber</a>
+      <a href="#visit">Visit</a>
+      <a href="tel:+14108377776">Call to book</a>
+      <a href="https://www.instagram.com/philsthatbarber" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="foot-disclaimer">This is an unsolicited website design concept created by Freightfolio. It was not commissioned, affiliated with, or endorsed by Tight Image Barbershop. This is a design preview only.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Nina's Nails, a small walk-in nail shop at 113 N Eutaw St, Baltimore, MD 21201. Manicures, pedicures, and gel applications.">
+<title>Nina's Nails | Baltimore, MD | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf5ec;
+    --cream-deep:#f3ead9;
+    --blush:#f2d8d2;
+    --rose:#c98a7d;
+    --rose-deep:#a96459;
+    --ink:#3d3229;
+    --ink-soft:#6d5f52;
+    --gold:#b08d57;
+    --gold-soft:#d9c29a;
+    --line:rgba(176,141,87,.45);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Jost',sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    font-weight:300;
+    line-height:1.7;
+    letter-spacing:.01em;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:500;letter-spacing:.015em}
+  a{color:var(--rose-deep)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 1.4rem}
+
+  /* disclosure bar */
+  .disclosure{
+    background:var(--ink);
+    color:#f5ecdd;
+    text-align:center;
+    font-size:.72rem;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    padding:.65rem 1rem;
+  }
+  .disclosure strong{font-weight:500;letter-spacing:.22em}
+
+  /* nav */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,245,236,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1080px;margin:0 auto;padding:.8rem 1.4rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  }
+  .brand{font-family:'Cormorant Garamond',serif;font-size:1.35rem;letter-spacing:.06em;color:var(--ink);text-decoration:none}
+  .brand em{font-style:italic;color:var(--rose-deep)}
+  nav.links{display:flex;gap:1.6rem;align-items:center}
+  nav.links a{
+    text-decoration:none;color:var(--ink-soft);
+    font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:400;
+  }
+  nav.links a:hover{color:var(--rose-deep)}
+  .call-pill{
+    border:1px solid var(--rose-deep);
+    color:var(--rose-deep)!important;
+    padding:.5rem 1.1rem;border-radius:999px;
+    transition:background .25s,color .25s;
+  }
+  .call-pill:hover{background:var(--rose-deep);color:var(--cream)!important}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;padding:4.5rem 0 3.5rem;text-align:center}
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(560px 380px at 12% 8%, rgba(242,216,210,.85), transparent 70%),
+      radial-gradient(640px 440px at 88% 90%, rgba(242,216,210,.7), transparent 70%);
+    pointer-events:none;
+  }
+  .hero-sprig{position:absolute;opacity:.5;pointer-events:none}
+  .hero-sprig.left{left:-30px;top:40px;transform:rotate(18deg)}
+  .hero-sprig.right{right:-30px;bottom:20px;transform:rotate(198deg)}
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);
+    margin-bottom:1.2rem;position:relative;
+  }
+  .hero h1{
+    font-size:clamp(3rem,9vw,5.6rem);
+    line-height:1.04;color:var(--ink);position:relative;margin-bottom:1rem;
+  }
+  .hero h1 .italic{font-style:italic;color:var(--rose-deep)}
+  .double-rule{
+    display:flex;align-items:center;justify-content:center;gap:.8rem;
+    margin:1.6rem auto;max-width:420px;position:relative;
+  }
+  .double-rule::before,.double-rule::after{
+    content:"";height:1px;flex:1;
+    background:linear-gradient(to right,transparent,var(--gold),transparent);
+  }
+  .double-rule span{
+    width:7px;height:7px;transform:rotate(45deg);
+    border:1px solid var(--gold);
+  }
+  .hero-sub{
+    max-width:560px;margin:0 auto;color:var(--ink-soft);
+    font-size:1.02rem;position:relative;
+  }
+  .rating-line{
+    margin-top:1.6rem;font-size:.95rem;color:var(--ink-soft);position:relative;
+  }
+  .rating-line .stars{color:var(--gold);letter-spacing:.2em;font-size:.9rem}
+  .hero-cta{margin-top:2rem;position:relative}
+
+  .btn{
+    display:inline-block;text-decoration:none;
+    border:1px solid var(--rose-deep);color:var(--cream);
+    background:var(--rose-deep);
+    padding:.95rem 2.4rem;border-radius:999px;
+    font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;font-weight:400;
+    transition:background .25s,color .25s,border-color .25s;
+  }
+  .btn:hover{background:transparent;color:var(--rose-deep)}
+  .btn.ghost{background:transparent;color:var(--rose-deep)}
+  .btn.ghost:hover{background:var(--rose-deep);color:var(--cream)}
+
+  /* sections */
+  section{padding:4rem 0}
+  .section-head{text-align:center;margin-bottom:2.8rem}
+  .section-head .kicker{
+    font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem;
+  }
+  .section-head h2{font-size:clamp(2rem,5vw,2.9rem);line-height:1.15;color:var(--ink)}
+  .section-head p{max-width:600px;margin:1rem auto 0;color:var(--ink-soft)}
+
+  /* appointment cards */
+  .cards{display:grid;gap:1.8rem;grid-template-columns:1fr}
+  .appt-card{
+    background:#fffdf8;
+    border:1px solid var(--line);
+    border-radius:2px;
+    padding:2.6rem 2.2rem;
+    position:relative;
+    box-shadow:0 18px 44px -28px rgba(61,50,41,.28);
+  }
+  .appt-card::before{
+    content:"";position:absolute;inset:8px;
+    border:1px solid var(--line);border-radius:1px;pointer-events:none;
+  }
+  .appt-card .card-no{
+    font-family:'Cormorant Garamond',serif;font-style:italic;
+    color:var(--gold);font-size:1rem;letter-spacing:.28em;margin-bottom:1rem;
+  }
+  .appt-card h3{font-size:1.9rem;margin-bottom:.6rem;color:var(--ink)}
+  .appt-card .card-rule{width:56px;height:1px;background:var(--gold);margin:1rem 0 1.2rem}
+  .appt-card p{color:var(--ink-soft);font-size:.98rem;margin-bottom:1.2rem}
+  .appt-card .svc-note{
+    font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);
+  }
+  .appt-card .card-sprig{position:absolute;right:14px;top:14px;opacity:.55}
+
+  /* illustration figure */
+  figure.art{
+    margin:3rem auto 0;max-width:760px;text-align:center;
+  }
+  figure.art .frame{
+    border:1px solid var(--line);background:#fffdf8;padding:1rem;
+  }
+  figure.art svg{display:block;width:100%;height:auto}
+  figure.art figcaption{
+    margin-top:.9rem;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+
+  /* about */
+  .about{background:var(--cream-deep)}
+  .about-grid{display:grid;gap:2.5rem;grid-template-columns:1fr;align-items:center}
+  .about-copy h2{font-size:clamp(1.9rem,4.5vw,2.6rem);margin-bottom:1.2rem}
+  .about-copy p{color:var(--ink-soft);margin-bottom:1.1rem}
+  .about-copy .fine{font-size:.88rem;font-style:italic;color:var(--gold)}
+
+  /* visit */
+  .visit-grid{display:grid;gap:2rem;grid-template-columns:1fr;margin-top:.5rem}
+  .hours-table{
+    width:100%;border-collapse:collapse;background:#fffdf8;
+    border:1px solid var(--line);
+  }
+  .hours-table th{
+    text-align:left;font-family:'Cormorant Garamond',serif;font-weight:600;
+    font-size:1.25rem;padding:1.1rem 1.4rem;border-bottom:1px solid var(--line);
+  }
+  .hours-table td{
+    padding:.85rem 1.4rem;border-bottom:1px solid rgba(176,141,87,.22);
+    font-size:.95rem;color:var(--ink-soft);
+  }
+  .hours-table tr:last-child td{border-bottom:none}
+  .hours-table td:last-child{text-align:right;font-weight:400;color:var(--ink)}
+  .visit-card{
+    background:var(--ink);color:#f5ecdd;padding:2.4rem 2.2rem;
+    display:flex;flex-direction:column;gap:1rem;justify-content:center;
+  }
+  .visit-card h3{font-size:1.7rem;color:#f5ecdd}
+  .visit-card p{font-size:.95rem;color:#e6d9c4}
+  .visit-card a.tel{color:#f5ecdd;font-size:1.25rem;text-decoration:none;letter-spacing:.04em}
+  .visit-card a.tel:hover{color:var(--gold-soft)}
+  .visit-card .btn{border-color:#f5ecdd;background:transparent;color:#f5ecdd;align-self:flex-start}
+  .visit-card .btn:hover{background:#f5ecdd;color:var(--ink)}
+
+  footer{
+    background:var(--ink);color:#cbbfa8;padding:2.6rem 0;
+    font-size:.82rem;line-height:1.8;text-align:center;
+  }
+  footer .foot-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#f5ecdd;margin-bottom:.6rem}
+  footer p{max-width:680px;margin:0 auto}
+
+  @media (min-width:700px){
+    .cards{grid-template-columns:repeat(3,1fr)}
+    .about-grid{grid-template-columns:1.1fr .9fr}
+    .visit-grid{grid-template-columns:1fr 1fr}
+    .hero{padding:6rem 0 4.5rem}
+  }
+  @media (max-width:520px){
+    nav.links{gap:.9rem}
+    nav.links a:not(.call-pill){display:none}
+    .appt-card{padding:2rem 1.6rem}
+  }
+
+/* Real photo gallery */
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:#fffdf8;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:240px;object-fit:cover}
+.photo-card figcaption{padding:.9rem 1.1rem;font-size:.9rem;color:var(--ink-soft);text-align:left}
+.photo-card .src{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);margin-bottom:.35rem}
+</style>
+</head>
+<body>
+
+<div class="disclosure"><strong>Design Preview</strong> &nbsp;|&nbsp; A website concept by Freightfolio, not the official site</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><em>Nina's</em> Nails</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#photos">Photos</a>
+<a href="#visit">Visit</a>
+      <a class="call-pill" href="tel:+14106854494">Call to book</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-label="Introduction">
+    <svg class="hero-sprig left" width="180" height="300" viewBox="0 0 180 300" aria-hidden="true">
+      <g stroke="#b08d57" fill="none" stroke-width="1.2">
+        <path d="M90 290 C 80 220, 100 150, 88 40"/>
+        <path d="M88 250 C 60 240, 44 220, 40 196"/>
+        <path d="M89 200 C 118 192, 132 172, 136 148"/>
+        <path d="M88 150 C 62 142, 50 124, 48 102"/>
+        <path d="M88 105 C 112 98, 122 82, 124 62"/>
+        <ellipse cx="52" cy="228" rx="14" ry="7" transform="rotate(-35 52 228)"/>
+        <ellipse cx="124" cy="172" rx="14" ry="7" transform="rotate(30 124 172)"/>
+        <ellipse cx="60" cy="124" rx="12" ry="6" transform="rotate(-30 60 124)"/>
+        <ellipse cx="116" cy="82" rx="12" ry="6" transform="rotate(28 116 82)"/>
+      </g>
+    </svg>
+    <svg class="hero-sprig right" width="180" height="300" viewBox="0 0 180 300" aria-hidden="true">
+      <g stroke="#b08d57" fill="none" stroke-width="1.2">
+        <path d="M90 290 C 80 220, 100 150, 88 40"/>
+        <path d="M88 250 C 60 240, 44 220, 40 196"/>
+        <path d="M89 200 C 118 192, 132 172, 136 148"/>
+        <path d="M88 150 C 62 142, 50 124, 48 102"/>
+        <path d="M88 105 C 112 98, 122 82, 124 62"/>
+        <ellipse cx="52" cy="228" rx="14" ry="7" transform="rotate(-35 52 228)"/>
+        <ellipse cx="124" cy="172" rx="14" ry="7" transform="rotate(30 124 172)"/>
+        <ellipse cx="60" cy="124" rx="12" ry="6" transform="rotate(-30 60 124)"/>
+        <ellipse cx="116" cy="82" rx="12" ry="6" transform="rotate(28 116 82)"/>
+      </g>
+    </svg>
+    <div class="wrap">
+      <p class="eyebrow">Baltimore, Maryland</p>
+      <h1>Nina's <span class="italic">Nails</span></h1>
+      <div class="double-rule" aria-hidden="true"><span></span></div>
+      <p class="hero-sub">A small walk-in nail shop in the heart of the city. Manicures and pedicures done with a personal touch, plus gel applications for a finish that lasts.</p>
+      <p class="rating-line"><span class="stars" aria-hidden="true">★★★★☆</span>&nbsp; Rated 4.5 from 11 Google reviews</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+14106854494">Call to book</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" aria-label="Services">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Our Services</p>
+        <h2>An Appointment Card, Not a Menu</h2>
+        <p>Walk in and choose what you need. Every service is done by hand in our small shop on Eutaw Street.</p>
+      </div>
+      <div class="cards">
+        <article class="appt-card">
+          <svg class="card-sprig" width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
+            <g stroke="#b08d57" fill="none" stroke-width="1.1">
+              <path d="M36 64 C 34 48, 40 34, 36 10"/>
+              <path d="M36 50 C 26 47, 20 40, 19 32"/>
+              <path d="M36 34 C 46 31, 50 24, 51 17"/>
+              <ellipse cx="24" cy="42" rx="7" ry="3.5" transform="rotate(-30 24 42)"/>
+              <ellipse cx="48" cy="26" rx="7" ry="3.5" transform="rotate(28 48 26)"/>
+            </g>
+          </svg>
+          <p class="card-no">No. 01</p>
+          <h3>Manicures</h3>
+          <div class="card-rule" aria-hidden="true"></div>
+          <p>Careful nail shaping with cuticle care and a clean, polished finish. Simple, tidy, and done in person.</p>
+          <p class="svc-note">Walk-ins welcome</p>
+        </article>
+        <article class="appt-card">
+          <svg class="card-sprig" width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
+            <g stroke="#b08d57" fill="none" stroke-width="1.1">
+              <path d="M36 64 C 38 48, 32 34, 36 10"/>
+              <path d="M36 52 C 46 49, 52 42, 53 34"/>
+              <path d="M36 36 C 26 33, 22 26, 21 19"/>
+              <ellipse cx="48" cy="44" rx="7" ry="3.5" transform="rotate(30 48 44)"/>
+              <ellipse cx="24" cy="28" rx="7" ry="3.5" transform="rotate(-28 24 28)"/>
+            </g>
+          </svg>
+          <p class="card-no">No. 02</p>
+          <h3>Pedicures</h3>
+          <div class="card-rule" aria-hidden="true"></div>
+          <p>A service reviewers mention warmly. Soaking with shaping and polish, in a quiet corner of the shop.</p>
+          <p class="svc-note">Walk-ins welcome</p>
+        </article>
+        <article class="appt-card">
+          <svg class="card-sprig" width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
+            <g stroke="#b08d57" fill="none" stroke-width="1.1">
+              <path d="M36 64 C 34 48, 40 34, 36 10"/>
+              <path d="M36 50 C 26 47, 20 40, 19 32"/>
+              <path d="M36 34 C 46 31, 50 24, 51 17"/>
+              <ellipse cx="24" cy="42" rx="7" ry="3.5" transform="rotate(-30 24 42)"/>
+              <ellipse cx="48" cy="26" rx="7" ry="3.5" transform="rotate(28 48 26)"/>
+              <circle cx="36" cy="12" r="2.4" fill="#c98a7d" stroke="none"/>
+            </g>
+          </svg>
+          <p class="card-no">No. 03</p>
+          <h3>Gel Applications</h3>
+          <div class="card-rule" aria-hidden="true"></div>
+          <p>Gel applied over your manicure or pedicure for color that holds up through the week and beyond.</p>
+          <p class="svc-note">Walk-ins welcome</p>
+        </article>
+      </div>
+      <figure class="art">
+        <div class="frame">
+          <svg viewBox="0 0 760 300" role="img" aria-label="Gold line illustration of a manicure table arrangement">
+            <rect x="8" y="8" width="744" height="284" fill="none" stroke="#b08d57" stroke-width="1.4"/>
+            <rect x="18" y="18" width="724" height="264" fill="none" stroke="#d9c29a" stroke-width="1"/>
+            <g stroke="#b08d57" fill="none" stroke-width="1.3">
+              <ellipse cx="240" cy="170" rx="110" ry="60"/>
+              <ellipse cx="240" cy="170" rx="86" ry="44" stroke="#d9c29a"/>
+              <rect x="330" y="150" width="180" height="40" rx="20"/>
+              <rect x="540" y="120" width="52" height="90" rx="8"/>
+              <rect x="540" y="104" width="52" height="22" rx="6"/>
+              <path d="M150 210 C 170 180, 150 150, 160 110"/>
+              <path d="M160 180 C 140 175, 132 162, 130 150"/>
+              <path d="M159 150 C 176 146, 182 136, 183 126"/>
+              <ellipse cx="138" cy="164" rx="9" ry="4.5" transform="rotate(-32 138 164)"/>
+              <ellipse cx="178" cy="138" rx="9" ry="4.5" transform="rotate(30 178 138)"/>
+            </g>
+            <g fill="#c98a7d" stroke="none">
+              <ellipse cx="210" cy="162" rx="9" ry="13" transform="rotate(-18 210 162)"/>
+              <ellipse cx="232" cy="156" rx="9" ry="13" transform="rotate(-6 232 156)"/>
+              <ellipse cx="254" cy="158" rx="9" ry="13" transform="rotate(8 254 158)"/>
+              <ellipse cx="274" cy="166" rx="9" ry="13" transform="rotate(20 274 166)"/>
+            </g>
+            <text x="380" y="268" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="21" fill="#6d5f52">a quiet corner of the shop</text>
+          </svg>
+        </div>
+        <figcaption>Illustration, original concept art, not a photo of the shop</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="about" class="about" aria-label="About the shop">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="kicker serif" style="font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#b08d57;margin-bottom:.9rem">About the Shop</p>
+          <h2>A Neighborhood Shop, Run by Two People</h2>
+          <p>Nina's Nails is a small walk-in shop run by Nina and her husband. It keeps things simple: come in, pick a service, and get seen the same day.</p>
+          <p>Reviewers single out the pedicures. Experiences with other services have been mixed, so we will keep it honest and say this: it is a modest shop with a personal touch, run by Nina and her husband.</p>
+          <p class="fine">Questions? Call (410) 685-4494.</p>
+        </div>
+        <figure class="art" style="margin:0">
+          <div class="frame">
+            <svg viewBox="0 0 520 420" role="img" aria-label="Gold line illustration of a nail salon storefront">
+              <rect x="10" y="10" width="500" height="400" fill="none" stroke="#b08d57" stroke-width="1.4"/>
+              <rect x="22" y="22" width="476" height="376" fill="none" stroke="#d9c29a" stroke-width="1"/>
+              <g stroke="#b08d57" fill="none" stroke-width="1.4">
+                <path d="M70 360 L70 150 L450 150 L450 360"/>
+                <path d="M50 150 L70 108 L450 108 L470 150"/>
+                <rect x="150" y="230" width="220" height="130"/>
+                <rect x="200" y="255" width="120" height="105" fill="#faf5ec"/>
+                <path d="M200 255 L260 200 L320 255"/>
+                <rect x="90" y="230" width="40" height="130"/>
+                <rect x="390" y="230" width="40" height="130"/>
+                <path d="M100 250 L130 250 M100 280 L130 280 M100 310 L130 310"/>
+                <path d="M390 250 L420 250 M390 280 L420 280 M390 310 L420 310"/>
+                <path d="M240 108 L240 60 M240 84 C 220 80, 212 68, 210 58"/>
+                <ellipse cx="222" cy="72" rx="9" ry="4.5" transform="rotate(-30 222 72)"/>
+              </g>
+              <text x="260" y="192" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="30" letter-spacing="4" fill="#3d3229">NINA'S NAILS</text>
+              <text x="260" y="392" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="20" fill="#6d5f52">113 N Eutaw St, Baltimore</text>
+            </svg>
+          </div>
+          <figcaption>Illustration, original concept art, not a photo of the shop</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="photos" aria-label="Photos">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Our Photos</p>
+        <h2>The Real Shop, In Real Photos</h2>
+        <p>Photos of the actual salon, from its own business listings and customers, so you see the real space.</p>
+      </div>
+      <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="Nail station interior" loading="lazy">
+<figcaption><span class="src">Source: the salon's Yelp page</span>Nail station interior</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="Salon interior" loading="lazy">
+<figcaption><span class="src">Source: the salon's Yelp page</span>Salon interior</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="Polish display" loading="lazy">
+<figcaption><span class="src">Source: the salon's Yelp page</span>Polish display</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-4.jpg" alt="TV area inside the salon" loading="lazy">
+<figcaption><span class="src">Source: the salon's Yelp page</span>TV area inside the salon</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-5.jpg" alt="Birthday nails, posted by a customer" loading="lazy">
+<figcaption><span class="src">Source: a customer photo on Instagram</span>Birthday nails, posted by a customer</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-6.jpg" alt="Pedicure, posted by a customer" loading="lazy">
+<figcaption><span class="src">Source: a customer photo on Instagram</span>Pedicure, posted by a customer</figcaption>
+</figure>
+      </div>
+    </div>
+</section>
+
+<section id="visit" aria-label="Visit us">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Visit Us</p>
+        <h2>Come By or Call Ahead</h2>
+        <p>Walk-ins are welcome during shop hours. If you want to check on timing, call the shop directly.</p>
+      </div>
+      <div class="visit-grid">
+        <table class="hours-table" aria-label="Shop hours">
+          <thead><tr><th colspan="2">Hours</th></tr></thead>
+          <tbody>
+            <tr><td>Monday</td><td>8:00 AM to 6:00 PM</td></tr>
+            <tr><td>Tuesday</td><td>8:00 AM to 6:00 PM</td></tr>
+            <tr><td>Wednesday</td><td>8:00 AM to 6:00 PM</td></tr>
+            <tr><td>Thursday</td><td>8:00 AM to 6:00 PM</td></tr>
+            <tr><td>Friday</td><td>8:00 AM to 6:00 PM</td></tr>
+            <tr><td>Saturday</td><td>8:00 AM to 6:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <div class="visit-card">
+          <h3>Find the Shop</h3>
+          <p>113 N Eutaw St<br>Baltimore, MD 21201</p>
+          <a class="tel" href="tel:+14106854494">(410) 685-4494</a>
+          <a class="btn" href="tel:+14106854494">Call to book</a>
+          <figure class="art" style="margin:1rem 0 0;max-width:100%">
+            <div class="frame" style="background:transparent;border-color:rgba(217,194,154,.5)">
+              <svg viewBox="0 0 420 260" role="img" aria-label="Gold line illustration of a street map">
+                <g stroke="#d9c29a" fill="none" stroke-width="1.3">
+                  <rect x="8" y="8" width="404" height="244"/>
+                  <path d="M60 40 L360 40 M60 110 L360 110 M60 180 L360 180 M60 240 L360 240"/>
+                  <path d="M100 10 L100 250 M200 10 L200 250 M300 10 L300 250"/>
+                </g>
+                <g stroke="#c98a7d" fill="none" stroke-width="1.6">
+                  <circle cx="200" cy="110" r="16"/>
+                  <path d="M200 126 L200 150"/>
+                  <circle cx="200" cy="110" r="5" fill="#c98a7d" stroke="none"/>
+                </g>
+                <text x="200" y="196" text-anchor="middle" font-family="Jost, sans-serif" font-size="15" letter-spacing="3" fill="#e6d9c4">EUTAW ST</text>
+              </svg>
+            </div>
+            <figcaption style="color:#cbbfa8">Illustration, original concept art, not a real map</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="foot-name">Nina's Nails</p>
+    <p>113 N Eutaw St, Baltimore, MD 21201 &nbsp;|&nbsp; (410) 685-4494</p>
+    <p style="margin-top:1rem">This is an unsolicited website design concept created by Freightfolio. It was not commissioned, affiliated with, or endorsed by Nina's Nails. This is a design preview only.</p>
+  </div>
+</footer>
+
+</body>
+</html>
