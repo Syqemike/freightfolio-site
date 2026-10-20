@@ -126,9 +126,6 @@
     color:var(--bone);
   }
   .hero-rating strong{color:var(--rust);font-size:1.2rem;}
-  .hero-art{margin:2.4rem auto 0;max-width:150px;color:var(--rust);}
-  .hero-art svg{display:block;width:100%;height:auto;}
-  .hero-art figcaption{text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;opacity:.55;margin-top:.6rem;}
   .hero-cta{margin-top:2rem;}
 
   /* Fact strip: verified business facts */
@@ -155,7 +152,6 @@
   .fact .fact-v{font-weight:700;font-size:1.02rem;line-height:1.35}
   @media(max-width:640px){.facts{grid-template-columns:1fr}.fact{border-right:none;border-bottom:1px solid rgba(239,232,216,.25)}.fact:last-child{border-bottom:none}}
 
-  html,body{overflow-x:clip}
   /* Diagonal divider */
   .divider{
     height:3.5rem;
@@ -209,6 +205,21 @@
     max-width:36rem;
   }
   .ledger li:hover{background:rgba(179,71,36,.08);}
+
+  /* Gallery */
+  .gallery{background:var(--ink-soft);border-top:2px solid var(--bone);border-bottom:2px solid var(--bone);}
+  .gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
+  .gallery figure{background:var(--ink);border:2px solid var(--bone);padding:.6rem;}
+  .gallery img{width:100%;height:280px;object-fit:cover;display:block;}
+  .gallery figcaption{padding:.9rem .4rem .3rem;color:var(--bone-dim);font-size:.88rem;line-height:1.5;}
+  .gallery .tag{
+    display:inline-block;
+    background:var(--rust);color:var(--ink);
+    font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+    padding:.28rem .65rem;margin-bottom:.5rem;
+  }
+  .gallery-note{color:var(--bone-dim);font-size:.9rem;max-width:40rem;margin-top:1.75rem;}
+  @media(max-width:640px){.gallery-grid{grid-template-columns:1fr;}}
 
   /* Hours & location */
   .hours-loc{background:var(--ink-soft);position:relative;overflow:hidden;}
@@ -285,6 +296,7 @@
   <div class="brand display">Beast <span>with the</span> Clippers</div>
   <nav>
     <a href="#services">Services</a>
+    <a href="#gallery">Photos</a>
     <a href="#hours">Hours &amp; Location</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -300,19 +312,6 @@
     <div class="hero-anchor"><span>1925 Milam St, Houston, TX</span></div>
     <p class="hero-sub">A downtown Houston barbershop. Haircuts, beard trims, hot shaves, and shoe shines at 1925 Milam St.</p>
     <p class="hero-rating"><strong>4.6</strong> on Google, from 24 reviews</p>
-    <figure class="hero-art">
-      <svg viewBox="0 0 200 220" role="img" aria-label="Illustration of electric hair clippers drawn for this preview">
-        <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round">
-          <line x1="70" y1="58" x2="70" y2="40"/><line x1="85" y1="58" x2="85" y2="36"/><line x1="100" y1="58" x2="100" y2="34"/><line x1="115" y1="58" x2="115" y2="36"/><line x1="130" y1="58" x2="130" y2="40"/>
-          <line x1="66" y1="46" x2="134" y2="46"/>
-          <rect x="70" y="58" width="60" height="102" rx="14"/>
-          <circle cx="100" cy="104" r="10"/>
-          <line x1="100" y1="122" x2="100" y2="138"/>
-          <path d="M100 160 C 100 186, 68 190, 58 212"/>
-        </g>
-      </svg>
-      <figcaption>Illustration drawn for this preview</figcaption>
-    </figure>
     <div class="hero-cta">
       <a class="btn" href="tel:+18324031749">Call to book</a>
     </div>
@@ -333,7 +332,7 @@
       <li>
         <span class="num display">01</span>
         <span class="svc display">Haircut</span>
-        <p class="desc">A full cut shaped to the style you ask for. Tell the barber what you want.</p>
+        <p class="desc">A full cut shaped to the style you ask for. Tell the barber what you want and they will take it from there.</p>
       </li>
       <li>
         <span class="num display">02</span>
@@ -343,7 +342,7 @@
       <li>
         <span class="num display">03</span>
         <span class="svc display">Hot Shave</span>
-        <p class="desc">The classic straight razor shave.</p>
+        <p class="desc">The classic hot shave.</p>
       </li>
       <li>
         <span class="num display">04</span>
@@ -351,6 +350,36 @@
         <p class="desc">A proper shine while you are in the chair. Walk out looking finished.</p>
       </li>
     </ol>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section id="gallery" class="gallery">
+    <p class="section-label">Photos</p>
+    <h2 class="display">In the chair</h2>
+    <div class="gallery-grid">
+      <figure>
+        <img src="img/photo-1.jpg" alt="A barber working clippers and a comb through a client's hair">
+        <figcaption><span class="tag">Illustrative photo</span><br>A fresh fade taking shape with clippers and a comb.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-2.jpg" alt="A row of barber chairs inside a traditional barbershop">
+        <figcaption><span class="tag">Illustrative photo</span><br>Barber chairs lined up and ready in a classic shop interior.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-3.jpg" alt="A barber cutting a client's hair in the chair">
+        <figcaption><span class="tag">Illustrative photo</span><br>Mid-cut in a neighborhood barbershop.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-4.jpg" alt="Barber chairs and mirrors along the wall of a shop">
+        <figcaption><span class="tag">Illustrative photo</span><br>Chairs, mirrors, and tools along the shop wall.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-5.jpg" alt="A barber at work with a client sitting in the chair">
+        <figcaption><span class="tag">Illustrative photo</span><br>A barber working closely with a client in the chair.</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-note">No publicly available photos of this shop could be found, so the photos above are illustrative barbershop photos, not photos of Beast with the Clippers.</p>
   </section>
 
   <div class="divider" aria-hidden="true"></div>

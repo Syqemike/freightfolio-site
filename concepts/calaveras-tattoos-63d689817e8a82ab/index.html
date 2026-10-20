@@ -182,6 +182,16 @@
   .style-card h3{font-family:Georgia,serif;font-size:24px;color:var(--plum);margin-bottom:10px}
   .style-card p{font-size:16px;color:#4a3448}
 
+  /* ---- gallery ---- */
+  .gallery-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+  }
+  .gallery-grid figure{
+    background:#fffdf6;border:1px solid #e3d5b4;border-radius:14px;overflow:hidden;
+  }
+  .gallery-grid img{width:100%;height:250px;object-fit:cover;display:block}
+  .gallery-grid figcaption{padding:12px 16px;font-size:14px;color:#4a3448}
+
   /* ---- studio ---- */
   .studio{background:var(--cream-deep)}
   .studio-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
@@ -226,7 +236,7 @@
   footer .disclaimer{border-top:1px solid #3d253c;padding-top:18px;margin-top:18px;font-size:13px}
 
   @media (max-width:760px){
-    .styles-grid,.studio-cols,.visit-grid{grid-template-columns:1fr}
+    .styles-grid,.studio-cols,.visit-grid,.gallery-grid{grid-template-columns:1fr}
     section.block{padding:52px 18px}
     .header-inner{justify-content:center;text-align:center}
     nav{justify-content:center}
@@ -256,6 +266,7 @@
     </a>
     <nav aria-label="Section navigation">
       <a href="#styles">Styles</a>
+      <a href="#gallery">Gallery</a>
       <a href="#studio">Studio</a>
       <a href="#visit">Visit</a>
       <a class="header-cta" href="tel:+12102277673">Call to book</a>
@@ -274,8 +285,9 @@
   <section class="hero">
     <span class="hero-eyebrow">Custom tattoo studio</span>
     <h1>Calaveras <span class="accent">Tattoos</span></h1>
-    <p class="lede">Custom tattoo work in San Antonio&rsquo;s Southtown Art District, in a shop with Dia de los Muertos branding.</p>
-    <p class="rating"><span class="stars">★★★★★</span>&nbsp; 4.8 from 373 Google reviews</p>
+    <p class="lede">Custom tattoo work in San Antonio&rsquo;s Southtown Art District.</p>
+    <p class="lede" style="font-size:17px;color:#e9dcc3;">&#9733; 4.8 from 373 Google reviews</p>
+
     <div class="hero-cta-row">
       <a class="btn btn-primary" href="tel:+12102277673">Call to book</a>
       <a class="btn btn-ghost" href="#visit">Hours and location</a>
@@ -286,7 +298,7 @@
     <div class="wrap">
       <p class="kicker">Styles</p>
       <h2 class="section-title">Work that starts with your idea</h2>
-      <p class="intro">The shop takes on custom work across all styles. Client reviews mention portraits and sleeves. Fine-line lettering comes up often as well. Every piece is drawn for the person wearing it.</p>
+      <p class="intro">The shop takes on custom work across all styles. Client reviews mention portraits and sleeves. Fine-line lettering comes up often as well. Call to discuss your idea with the shop.</p>
       <div class="styles-grid">
         <article class="style-card c1">
           <svg class="skull" viewBox="0 0 48 48" aria-hidden="true">
@@ -297,7 +309,7 @@
             <rect x="16" y="28" width="16" height="9" rx="2" fill="none" stroke="#e8a020" stroke-width="2.5"/>
           </svg>
           <h3>Portraits</h3>
-          <p>Detailed portrait work drawn from your reference photos. Bring a clear image and the artist will talk through size, placement, and how it will age.</p>
+          <p>Portrait tattoo ideas based on reference images. Call to ask about your piece.</p>
         </article>
         <article class="style-card c2">
           <svg class="skull" viewBox="0 0 48 48" aria-hidden="true">
@@ -308,7 +320,7 @@
             <rect x="16" y="28" width="16" height="9" rx="2" fill="none" stroke="#2a9d8f" stroke-width="2.5"/>
           </svg>
           <h3>Sleeves</h3>
-          <p>Full and half sleeves planned as a single composition. The artists help you map the piece across sessions so it reads as one design.</p>
+          <p>Full and half sleeve tattoo ideas. Contact the shop to discuss the design.</p>
         </article>
         <article class="style-card c3">
           <svg class="skull" viewBox="0 0 48 48" aria-hidden="true">
@@ -319,7 +331,7 @@
             <rect x="16" y="28" width="16" height="9" rx="2" fill="none" stroke="#b6452f" stroke-width="2.5"/>
           </svg>
           <h3>Fine-line lettering</h3>
-          <p>Script and lettering kept clean and legible. If you have a phrase in mind, the shop will help you choose a style that fits the spot.</p>
+          <p>Script and lettering tattoo ideas. Ask about size, style, and placement.</p>
         </article>
       </div>
     </div>
@@ -331,28 +343,53 @@
       <h2 class="section-title">A shop rooted in Southtown</h2>
       <div class="studio-cols">
         <div>
-          <div class="stat-row">
-            <div class="stat">
-              <div class="num">7</div>
-              <div class="lbl">Artists on staff</div>
-            </div>
-            <div class="stat">
-              <div class="num">65+</div>
-              <div class="lbl">Years combined experience</div>
-            </div>
-          </div>
-          <p>Calaveras Tattoos sits in the Southtown Art District, a block from Hemisfair Park and near the River Walk. The studio has an open environment with lots of flash art on the walls.</p>
-          <p>Visitors describe the shop as clean and friendly. Reviews also call it professional. Walk-ins are welcome and appointments are available. Consults are offered for custom pieces.</p>
-          <p>The shop has been mentioned in SA Current for its flash tattoos at community events.</p>
+          <div class="stat-row"><div class="stat"><div class="lbl">Custom tattoo ideas</div><p>Portraits, sleeves, and lettering</p></div></div>
+          <p>Calaveras Tattoos is on South St. Mary's Street in San Antonio's Southtown Art District.</p>
+          <p>Call the studio to ask about its current artists, tattoo services, and appointments.</p>
+
         </div>
         <div class="panel">
           <h3>Planning a visit</h3>
           <p>Bring your reference images and an idea of size and placement. If you are not sure yet, a consult is a good first step.</p>
-          <p>Walk-ins and appointments both work. The best way to reach the shop is to call.</p>
+          <p>Call with questions about visiting the studio.</p>
           <div class="cta">
             <a class="btn btn-primary" href="tel:+12102277673">Call to book</a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="gallery">
+    <div class="wrap">
+      <p class="kicker">Gallery</p>
+      <h2 class="section-title">Work from the shop</h2>
+      <p class="intro">Tattoo work and photos from Calaveras Tattoos on South St. Mary's Street.</p>
+      <div class="gallery-grid">
+        <figure>
+          <img src="img/2.jpg" alt="Compass tattoo with red and blue color on an inner arm" loading="lazy">
+          <figcaption>Color tattoo work from the shop</figcaption>
+        </figure>
+        <figure>
+          <img src="img/3.jpg" alt="Black and gray Our Lady of Guadalupe portrait tattoo" loading="lazy">
+          <figcaption>Black and gray portrait work</figcaption>
+        </figure>
+        <figure>
+          <img src="img/1.jpg" alt="Tattoo workstation inside the Calaveras Tattoos shop" loading="lazy">
+          <figcaption>A workstation in the shop</figcaption>
+        </figure>
+        <figure>
+          <img src="img/8.jpg" alt="Tattoo machines and bottles of ink on a shelf in the shop" loading="lazy">
+          <figcaption>Machines and ink in the shop</figcaption>
+        </figure>
+        <figure>
+          <img src="img/6.png" alt="Calaveras Tattoos storefront at night" loading="lazy">
+          <figcaption>The storefront on South St. Mary's Street</figcaption>
+        </figure>
+        <figure>
+          <img src="img/7.jpg" alt="Sugar skull Calaveras wall art inside the shop" loading="lazy">
+          <figcaption>Sugar skull wall art in the shop</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -367,11 +404,8 @@
           <h3>Hours</h3>
           <div class="hours-row"><span class="day">Sunday</span><span>1:00 PM - 5:00 PM</span></div>
           <div class="hours-row"><span class="day">Monday</span><span>Closed</span></div>
-          <div class="hours-row"><span class="day">Tuesday</span><span>1:00 PM - 9:00 PM</span></div>
-          <div class="hours-row"><span class="day">Wednesday</span><span>1:00 PM - 9:00 PM</span></div>
-          <div class="hours-row"><span class="day">Thursday</span><span>1:00 PM - 9:00 PM</span></div>
-          <div class="hours-row"><span class="day">Friday</span><span>1:00 PM - 9:00 PM</span></div>
-          <div class="hours-row"><span class="day">Saturday</span><span>1:00 PM - 9:00 PM</span></div>
+          <div class="hours-row"><span class="day">Tuesday - Saturday</span><span>1:00 PM - 9:00 PM</span></div>
+          <p style="margin-top:14px;">Call to confirm current opening hours before your visit.</p>
         </div>
         <div class="panel">
           <h3>Location</h3>
@@ -379,7 +413,7 @@
             628 S St Mary&rsquo;s St<br>
             San Antonio, TX 78205
           </address>
-          <p>A block from Hemisfair Park, near the River Walk.</p>
+          <p>South St. Mary's Street, San Antonio.</p>
           <div class="cta">
             <a class="btn btn-primary" href="tel:+12102277673">Call to book</a>
           </div>
