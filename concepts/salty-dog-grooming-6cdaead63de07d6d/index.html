@@ -88,6 +88,13 @@
     overflow: hidden;
   }
   .masthead .dock-label { color: var(--seafoam); margin-bottom: 26px; }
+  .compass { display: flex; justify-content: center; margin-bottom: 28px; }
+  .compass svg { width: 92px; height: 92px; opacity: .9; }
+  .coords {
+    font-family: 'Space Mono', monospace; font-size: 11px;
+    letter-spacing: .28em; text-transform: uppercase;
+    color: var(--seafoam); opacity: .65; margin-top: 26px;
+  }
   .masthead h1 {
     font-size: clamp(58px, 13vw, 150px);
     font-weight: 700;
@@ -216,6 +223,7 @@
     font-family: 'Space Mono', monospace; font-size: 13px;
     letter-spacing: .14em; text-transform: uppercase;
   }
+  .identity .signoff a { color: var(--navy); }
 
   /* ---------- visit ---------- */
   .visit { background: var(--sand); color: var(--ink); padding: 96px 0 110px; text-align: center; }
@@ -230,6 +238,7 @@
     margin-bottom: 40px;
   }
   .visit address a { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+  .visit .coords { color: var(--ink); opacity: .6; margin-top: 22px; margin-bottom: 40px; }
   .visit .btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
   .visit .btn-solid { background: var(--navy); border-color: var(--navy); color: var(--sand); }
   .visit .btn-solid:hover { background: var(--navy-deep); border-color: var(--navy-deep); }
@@ -268,6 +277,15 @@
 <header class="masthead" id="top">
   <div class="wrap">
     <p class="dock-label">Fairhope, Alabama &middot; Dog Grooming</p>
+    <div class="compass" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="none" stroke="#9fd8cb" stroke-width="2">
+        <circle cx="50" cy="50" r="44"/>
+        <circle cx="50" cy="50" r="34" opacity=".45"/>
+        <path d="M50 6 L56 44 L94 50 L56 56 L50 94 L44 56 L6 50 L44 44 Z" fill="#9fd8cb" opacity=".85" stroke="none"/>
+        <circle cx="50" cy="50" r="4" fill="#0f2a43" stroke="#9fd8cb"/>
+        <text x="50" y="20" text-anchor="middle" fill="#f4ead8" stroke="none" font-family="monospace" font-size="11" font-weight="bold">N</text>
+      </svg>
+    </div>
     <h1>Salty <span class="thin">Dog</span></h1>
     <div class="sub-rule" aria-hidden="true">
       <span class="line"></span>
@@ -292,15 +310,15 @@
     <div class="logbook-inner">
       <div class="entry">
         <div class="big">5.0 <span class="star">&#9733;</span></div>
-        <div class="cap">64 Google reviews</div>
-      </div>
-      <div class="entry">
-        <div class="big">1,242</div>
-        <div class="cap">Facebook followers</div>
+        <div class="cap">64 Facebook reviews</div>
       </div>
       <div class="entry">
         <div class="big">Tue-Sat</div>
         <div class="cap">Open five days a week</div>
+      </div>
+      <div class="entry">
+        <div class="big">Suite B</div>
+        <div class="cap">Next door to Animal Wellness Center</div>
       </div>
     </div>
   </div>
@@ -391,9 +409,10 @@
   <div class="wrap">
     <p class="dock-label">Sec. 03 &middot; Fairhope, Alabama</p>
     <blockquote>
-      We groom dogs on the Eastern Shore of Mobile Bay. You will find us on <strong>AL-181, Suite B</strong>, right next door to the <strong>Animal Wellness Center of Fairhope</strong>. Drop your dog off, run your errands, and come back to a clean one.
+      "We provide professional dog grooming services and pride ourselves on service that goes above and beyond the average groom."
     </blockquote>
-    <p class="signoff">Questions? Call <a href="tel:+12512421701">(251) 242-1701</a></p>
+    <p class="signoff">From the shop&rsquo;s own Facebook page &middot; 21309 AL-181, Suite B, next door to the Animal Wellness Center of Fairhope</p>
+    <p class="signoff" style="margin-top:10px">Questions? Call <a href="tel:+12512421701">(251) 242-1701</a></p>
   </div>
 </section>
 
@@ -418,6 +437,7 @@
       Fairhope, AL 36532<br>
       <a href="tel:+12512421701">(251) 242-1701</a>
     </address>
+    <p class="coords">30.53&deg; N &middot; 87.85&deg; W &middot; Eastern Shore of Mobile Bay</p>
     <div class="btn-row">
       <a class="btn btn-solid" href="tel:+12512421701">Call to Book</a>
       <a class="btn btn-ghost" href="https://www.facebook.com/saltydoggrooming" target="_blank" rel="noopener">Find Us on Facebook</a>
