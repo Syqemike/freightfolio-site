@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>The Last Tangle Hair Salon and Fabulouz Findz Accessoriez | Detroit, MI | Design Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#12382a;
+  --green-deep:#0d2b20;
+  --gold:#c8a24b;
+  --gold-soft:#e4c87f;
+  --cream:#f7f1e3;
+  --cream-dark:#efe5cf;
+  --ink:#2b241a;
+  --ink-soft:#5c5344;
+  --line:rgba(200,162,75,.35);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Karla',system-ui,-apple-system,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:1.02rem;
+}
+img,svg{max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+
+/* Disclosure bar */
+.disclosure{
+  background:var(--green-deep);
+  color:var(--gold-soft);
+  text-align:center;
+  font-size:.82rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  padding:.65rem 1rem;
+}
+
+/* Header / nav */
+header.site{
+  background:var(--green);
+  border-bottom:3px solid var(--gold);
+  position:sticky;top:0;z-index:50;
+}
+.header-inner{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+  gap:.5rem 1rem;padding:.8rem 0;
+}
+.brand{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:700;color:var(--cream);
+  font-size:1.2rem;letter-spacing:.01em;
+  text-decoration:none;
+}
+.brand small{
+  display:block;font-family:'Karla',sans-serif;font-weight:500;
+  font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-soft);
+}
+nav.sections{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem}
+nav.sections a{
+  color:var(--cream);text-decoration:none;font-size:.92rem;font-weight:600;
+  letter-spacing:.04em;padding:.3rem 0;border-bottom:2px solid transparent;
+}
+nav.sections a:hover{color:var(--gold-soft);border-bottom-color:var(--gold-soft)}
+
+/* Hero */
+.hero{
+  background:radial-gradient(1200px 500px at 50% -10%, #1c4c3a 0%, var(--green) 55%, var(--green-deep) 100%);
+  color:var(--cream);
+  text-align:center;
+  padding:4.5rem 0 3.75rem;
+  position:relative;overflow:hidden;
+}
+.hero .est{
+  display:inline-block;
+  border:1px solid var(--line);
+  color:var(--gold-soft);
+  font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;
+  padding:.5rem 1.2rem;border-radius:999px;margin-bottom:1.4rem;
+}
+.hero h1{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:600;
+  font-size:clamp(2.1rem,6vw,3.9rem);
+  line-height:1.12;
+  max-width:16ch;margin:0 auto 1rem;
+}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero .sub{
+  max-width:52ch;margin:0 auto 2rem;color:#e9dfc7;font-size:1.08rem;
+}
+.hero .record-badge{
+  display:inline-flex;align-items:center;gap:.7rem;
+  background:rgba(247,241,227,.06);
+  border:1px solid var(--line);
+  border-radius:1rem;padding:.9rem 1.3rem;
+  margin-bottom:2rem;
+  font-size:.95rem;color:var(--cream);
+  text-align:left;
+}
+.hero .record-badge .seal-mini{flex:0 0 auto}
+.btn{
+  display:inline-block;background:var(--gold);color:var(--green-deep);
+  font-weight:700;font-size:1.02rem;letter-spacing:.03em;
+  padding:.95rem 2.1rem;border-radius:.35rem;text-decoration:none;
+  border:2px solid var(--gold);
+}
+.btn:hover{background:transparent;color:var(--gold-soft)}
+.btn.ghost{background:transparent;color:var(--gold-soft);border-color:var(--line);margin-left:.6rem}
+.hero .ratingline{margin-top:1.6rem;color:#cfc3a3;font-size:.95rem}
+.hero .ratingline strong{color:var(--gold-soft)}
+.hero-vinyl{
+  position:absolute;opacity:.14;pointer-events:none;
+}
+.hero-vinyl.left{left:-90px;top:-60px;width:340px;transform:rotate(-12deg)}
+.hero-vinyl.right{right:-110px;bottom:-80px;width:380px;transform:rotate(10deg)}
+
+/* Sections */
+section.block{padding:4.25rem 0}
+section.block.alt{background:var(--green)}
+section.block.alt .sec-head h2,section.block.alt .sec-head .kicker{color:var(--cream)}
+section.block.alt p.body{color:#ddd3ba}
+.sec-head{text-align:center;margin-bottom:2.6rem}
+.sec-head .kicker{
+  font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;
+  color:#8a6d2f;margin-bottom:.7rem;
+}
+.sec-head h2{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;
+  font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.2;color:var(--green-deep);
+}
+.sec-head h2 em{font-style:italic;color:#8a6d2f}
+p.body{max-width:62ch;margin:0 auto 1.2rem;color:var(--ink-soft)}
+
+/* Timeline */
+.timeline{
+  position:relative;max-width:760px;margin:0 auto;
+  padding-left:2.2rem;border-left:2px solid var(--line);
+  display:flex;flex-direction:column;gap:2.4rem;
+}
+.t-event{position:relative}
+.t-event::before{
+  content:"";position:absolute;left:-2.95rem;top:.35rem;
+  width:1.1rem;height:1.1rem;border-radius:50%;
+  background:var(--gold);border:3px solid var(--green);
+  box-shadow:0 0 0 2px var(--gold);
+}
+.t-year{
+  font-family:'Fraunces',Georgia,serif;font-weight:700;
+  font-size:1.35rem;color:var(--green-deep);
+}
+.t-event h3{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;
+  font-size:1.25rem;margin:.15rem 0 .4rem;color:var(--ink);
+}
+.t-event p{color:var(--ink-soft);max-width:56ch}
+.gold-seal{
+  display:flex;align-items:center;gap:1.1rem;
+  background:#fff;border:1px solid var(--line);border-radius:.75rem;
+  padding:1.2rem 1.4rem;margin:2.8rem auto 0;max-width:640px;
+  box-shadow:0 10px 30px rgba(18,56,42,.12);
+}
+.gold-seal p{color:var(--ink-soft);font-size:.98rem}
+.gold-seal strong{color:var(--green-deep)}
+
+/* Services */
+.svc-grid{
+  display:grid;grid-template-columns:1fr;gap:1.2rem;
+  max-width:980px;margin:0 auto;
+}
+.svc{
+  background:#fff;border:1px solid var(--line);border-radius:.75rem;
+  padding:1.5rem 1.6rem;display:flex;gap:1.1rem;align-items:flex-start;
+}
+.svc .mark{flex:0 0 auto}
+.svc h3{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.25rem;
+  color:var(--green-deep);margin-bottom:.3rem;
+}
+.svc p{color:var(--ink-soft);font-size:.97rem}
+.svc .price{
+  display:inline-block;margin-top:.55rem;
+  font-weight:700;color:#8a6d2f;letter-spacing:.03em;
+}
+.svc-note{
+  text-align:center;max-width:60ch;margin:1.8rem auto 0;
+  color:var(--ink-soft);font-size:.95rem;
+}
+
+/* Team */
+.team-grid{
+  display:grid;grid-template-columns:1fr;gap:1.2rem;max-width:980px;margin:0 auto;
+}
+.member{
+  background:#fff;border:1px solid var(--line);border-radius:.75rem;
+  padding:1.6rem;text-align:center;
+}
+.member .disc{margin:0 auto .9rem;width:120px;height:120px}
+.member h3{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.4rem;color:var(--green-deep);
+}
+.member .role{
+  font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:#8a6d2f;margin-top:.3rem;
+}
+.member p{color:var(--ink-soft);font-size:.95rem;margin-top:.6rem}
+
+/* Boutique */
+.boutique{background:var(--green)}
+.shelf{
+  background:rgba(247,241,227,.05);
+  border:1px solid var(--line);border-radius:1rem;
+  padding:2rem;max-width:980px;margin:0 auto;
+}
+.shelf-row{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.6rem 0;
+}
+.shelf-item{
+  background:rgba(247,241,227,.06);border:1px solid rgba(200,162,75,.25);
+  border-radius:.6rem;padding:1rem;text-align:center;
+}
+.shelf-item h4{
+  font-family:'Fraunces',Georgia,serif;color:var(--cream);
+  font-weight:600;font-size:1.05rem;margin-top:.6rem;
+}
+.shelf-item p{color:#cfc3a3;font-size:.88rem}
+.shelf-rail{
+  height:8px;border-radius:4px;margin:0 auto;
+  background:linear-gradient(90deg,#8a6d2f,var(--gold-soft),#8a6d2f);
+}
+
+/* Illustrations */
+.fig{
+  margin:2.2rem auto 0;max-width:560px;text-align:center;
+}
+.fig svg{display:block;margin:0 auto}
+.fig figcaption{
+  font-size:.82rem;color:var(--ink-soft);letter-spacing:.04em;margin-top:.7rem;
+}
+section.block.alt .fig figcaption{color:#b7ab8d}
+
+/* Visit */
+.visit-grid{
+  display:grid;grid-template-columns:1fr;gap:1.4rem;max-width:980px;margin:0 auto;
+}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:.75rem;padding:1.8rem;
+}
+.card h3{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.3rem;
+  color:var(--green-deep);margin-bottom:1rem;
+}
+.hours{width:100%;border-collapse:collapse}
+.hours th,.hours td{
+  text-align:left;padding:.55rem .25rem;border-bottom:1px solid var(--cream-dark);
+  font-size:.98rem;
+}
+.hours th{font-weight:600;color:var(--green-deep);width:38%}
+.hours td{color:var(--ink-soft)}
+.hours tr:last-child th,.hours tr:last-child td{border-bottom:none}
+.addr{font-size:1.1rem;font-weight:600;color:var(--ink)}
+.phone-big{
+  font-family:'Fraunces',Georgia,serif;font-size:1.5rem;font-weight:700;
+  color:var(--green-deep);text-decoration:none;
+}
+.phone-big:hover{text-decoration:underline}
+.card p{color:var(--ink-soft)}
+.visit-cta{text-align:center;margin-top:2.2rem}
+.visit-cta .btn.ghost{color:var(--green-deep);border-color:var(--green);margin-left:.6rem}
+.visit-cta .btn.ghost:hover{background:var(--green);color:var(--cream)}
+
+/* Footer */
+footer{
+  background:var(--green-deep);color:#cfc3a3;
+  padding:2.8rem 0 2rem;text-align:center;
+}
+footer .fname{
+  font-family:'Fraunces',Georgia,serif;color:var(--cream);
+  font-size:1.25rem;font-weight:600;margin-bottom:.5rem;
+}
+footer nav{margin:1rem 0;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;justify-content:center}
+footer nav a{color:var(--gold-soft);text-decoration:none;font-size:.9rem}
+footer .legal{font-size:.82rem;max-width:70ch;margin:1.2rem auto 0;color:#a99f86}
+footer .copy{font-size:.8rem;margin-top:1rem;color:#8f866f}
+
+@media (min-width:640px){
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .team-grid{grid-template-columns:repeat(3,1fr)}
+  .shelf-row{grid-template-columns:repeat(4,1fr)}
+}
+@media (min-width:900px){
+  .visit-grid{grid-template-columns:1fr 1fr}
+  .hero{padding:6rem 0 5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design preview: this page is a website concept, not the salon&rsquo;s official website</div>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">The Last Tangle<small>Hair Salon and Fabulouz Findz Accessoriez</small></a>
+    <nav class="sections" aria-label="Section navigation">
+      <a href="#legacy">Legacy</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#boutique">Boutique</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <svg class="hero-vinyl left" viewBox="0 0 200 200" aria-hidden="true">
+    <circle cx="100" cy="100" r="96" fill="none" stroke="#c8a24b" stroke-width="2"/>
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#c8a24b" stroke-width="1"/>
+    <circle cx="100" cy="100" r="64" fill="none" stroke="#c8a24b" stroke-width="1"/>
+    <circle cx="100" cy="100" r="48" fill="none" stroke="#c8a24b" stroke-width="1"/>
+    <circle cx="100" cy="100" r="22" fill="#c8a24b"/>
+    <circle cx="100" cy="100" r="7" fill="#0d2b20"/>
+  </svg>
+  <svg class="hero-vinyl right" viewBox="0 0 200 200" aria-hidden="true">
+    <circle cx="100" cy="100" r="96" fill="none" stroke="#c8a24b" stroke-width="2"/>
+    <circle cx="100" cy="100" r="78" fill="none" stroke="#c8a24b" stroke-width="1"/>
+    <circle cx="100" cy="100" r="60" fill="none" stroke="#c8a24b" stroke-width="1"/>
+    <circle cx="100" cy="100" r="42" fill="none" stroke="#c8a24b" stroke-width="1"/>
+    <circle cx="100" cy="100" r="22" fill="#c8a24b"/>
+    <circle cx="100" cy="100" r="7" fill="#0d2b20"/>
+  </svg>
+
+  <div class="wrap">
+    <span class="est">Est. 1990 &middot; Detroit, Michigan</span>
+    <h1>The Last Tangle <em>Hair Salon</em> and Fabulouz Findz <em>Accessoriez</em></h1>
+    <p class="sub">A Black-owned Detroit institution on Clifford Street. Natural styling, silk and ceramic press work, relaxers, color, weaves, and a barber on staff, next door to a boutique full of fashion accessories.</p>
+    <div class="record-badge">
+      <svg class="seal-mini" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="29" fill="none" stroke="#c8a24b" stroke-width="2.5"/>
+        <circle cx="32" cy="32" r="23" fill="none" stroke="#c8a24b" stroke-width="1" stroke-dasharray="4 3"/>
+        <path d="M20 32l8 8 16-17" fill="none" stroke="#e4c87f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span><strong style="color:#e4c87f">Detroit Legacy Business microgrant recipient, 2026.</strong><br>Recognized with a $2,500 Detroit Legacy Business microgrant (DEGC, September 2026).</span>
+    </div>
+    <div>
+      <a class="btn" href="tel:+13139635959">Call to book</a>
+      <a class="btn ghost" href="#services">See services</a>
+    </div>
+    <p class="ratingline">Rated <strong>Google 5.0 from 20 reviews</strong></p>
+  </div>
+</section>
+
+<section class="block" id="legacy">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Our story</div>
+      <h2>Three decades of <em>Detroit hair</em></h2>
+    </div>
+    <div class="timeline">
+      <div class="t-event">
+        <div class="t-year">1990</div>
+        <h3>The salon opens its doors</h3>
+        <p>The Last Tangle Hair Salon is established in Detroit, building a name for healthy hair, careful hands, and clients who come back for decades.</p>
+      </div>
+      <div class="t-event">
+        <div class="t-year">2008</div>
+        <h3>Fabulouz Findz Accessoriez joins the family</h3>
+        <p>The boutique opens alongside the salon, giving clients a curated shelf of fashion accessories to finish the look before they leave.</p>
+      </div>
+      <div class="t-event">
+        <div class="t-year">2026</div>
+        <h3>Named a Detroit Legacy Business</h3>
+        <p>The salon receives a $2,500 Detroit Legacy Business microgrant (DEGC, September 2026), recognizing its place in the city&rsquo;s story.</p>
+      </div>
+    </div>
+    <figure class="fig">
+      <svg width="300" height="120" viewBox="0 0 300 120" role="img" aria-label="Concept art: gold line tracing a timeline with three markers">
+        <line x1="20" y1="60" x2="280" y2="60" stroke="#c8a24b" stroke-width="3"/>
+        <circle cx="50" cy="60" r="12" fill="#12382a" stroke="#c8a24b" stroke-width="3"/>
+        <circle cx="150" cy="60" r="12" fill="#12382a" stroke="#c8a24b" stroke-width="3"/>
+        <circle cx="250" cy="60" r="12" fill="#12382a" stroke="#c8a24b" stroke-width="3"/>
+        <text x="50" y="95" text-anchor="middle" fill="#5c5344" font-size="13" font-family="Karla,sans-serif">1990</text>
+        <text x="150" y="95" text-anchor="middle" fill="#5c5344" font-size="13" font-family="Karla,sans-serif">2008</text>
+        <text x="250" y="95" text-anchor="middle" fill="#5c5344" font-size="13" font-family="Karla,sans-serif">2026</text>
+      </svg>
+      <figcaption>Concept art: timeline illustration</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block alt" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">What we do</div>
+      <h2>Services built on <em>healthy hair</em></h2>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <svg class="mark" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" fill="none" stroke="#c8a24b" stroke-width="2"/>
+          <path d="M20 8c-5 5-5 19 0 24M20 8c5 5 5 19 0 24" fill="none" stroke="#12382a" stroke-width="2"/>
+        </svg>
+        <div>
+          <h3>Natural Styling</h3>
+          <p>Styling that works with your texture, shaped and finished by hands that have been doing it since 1990.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <svg class="mark" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" fill="none" stroke="#c8a24b" stroke-width="2"/>
+          <path d="M10 28c4-8 6-12 10-18M20 10c-2 8-4 12-8 18" fill="none" stroke="#12382a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h3>Silk and Ceramic Press</h3>
+          <p>Smooth, polished press work with real movement. <span class="price">$55 to $60</span></p>
+        </div>
+      </div>
+      <div class="svc">
+        <svg class="mark" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" fill="none" stroke="#c8a24b" stroke-width="2"/>
+          <path d="M12 24q8 6 16 0" fill="none" stroke="#12382a" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="20" cy="14" r="4" fill="none" stroke="#12382a" stroke-width="2"/>
+        </svg>
+        <div>
+          <h3>Relaxers</h3>
+          <p>Relaxer services applied with care for the health of the hair underneath.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <svg class="mark" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" fill="none" stroke="#c8a24b" stroke-width="2"/>
+          <path d="M20 9v22M13 14l14 12M27 14L13 26" stroke="#12382a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h3>Cuts</h3>
+          <p>Shape, trim, and finish, for the chair and for the barber&rsquo;s side too. <span class="price">$20 to $25</span></p>
+        </div>
+      </div>
+      <div class="svc">
+        <svg class="mark" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" fill="none" stroke="#c8a24b" stroke-width="2"/>
+          <path d="M20 8a12 12 0 010 24" fill="none" stroke="#12382a" stroke-width="2"/>
+          <circle cx="20" cy="14" r="2.5" fill="#c8a24b"/><circle cx="20" cy="26" r="2.5" fill="#c8a24b"/>
+        </svg>
+        <div>
+          <h3>Color</h3>
+          <p>Rich, even color chosen for your tone and your texture.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <svg class="mark" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" fill="none" stroke="#c8a24b" stroke-width="2"/>
+          <path d="M14 30c0-10 4-14 6-20M20 30c0-8 4-12 6-18" fill="none" stroke="#12382a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h3>Weaves and Extensions</h3>
+          <p>Full, natural-looking installs and the haircare products to keep them fresh.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <svg class="mark" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" fill="none" stroke="#c8a24b" stroke-width="2"/>
+          <rect x="13" y="17" width="14" height="10" rx="2" fill="none" stroke="#12382a" stroke-width="2"/>
+          <path d="M17 17v-4M23 17v-4" stroke="#12382a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h3>Barber Services</h3>
+          <p>Clean cuts and sharp lines from Marcus, our barber.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <svg class="mark" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" fill="none" stroke="#c8a24b" stroke-width="2"/>
+          <path d="M14 24c2-6 10-6 12 0" fill="none" stroke="#12382a" stroke-width="2" stroke-linecap="round"/>
+          <path d="M14 24c4 4 8 4 12 0" fill="none" stroke="#c8a24b" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h3>Haircare Products</h3>
+          <p>Products for daily care at home, recommended by people who know your hair.</p>
+        </div>
+      </div>
+    </div>
+    <p class="svc-note">Listed prices are cuts $20 to $25 and ceramic press $55 to $60. Questions? Call (313) 963-5959.</p>
+  </div>
+</section>
+
+<section class="block" id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">The people</div>
+      <h2>Stylists clients <em>ask for by name</em></h2>
+    </div>
+    <p class="body" style="text-align:center">Reviewers name the hands behind the chair. Come meet them.</p>
+    <div class="team-grid">
+      <div class="member">
+        <svg class="disc" viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="56" fill="#12382a"/>
+          <circle cx="60" cy="60" r="48" fill="none" stroke="#c8a24b" stroke-width="1.5"/>
+          <circle cx="60" cy="60" r="38" fill="none" stroke="#c8a24b" stroke-width="1"/>
+          <circle cx="60" cy="60" r="14" fill="#c8a24b"/>
+          <circle cx="60" cy="60" r="4.5" fill="#f7f1e3"/>
+        </svg>
+        <h3>Veronica</h3>
+        <div class="role">Stylist</div>
+        <p>Named in client reviews for careful, consistent work.</p>
+      </div>
+      <div class="member">
+        <svg class="disc" viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="56" fill="#12382a"/>
+          <circle cx="60" cy="60" r="48" fill="none" stroke="#c8a24b" stroke-width="1.5"/>
+          <circle cx="60" cy="60" r="38" fill="none" stroke="#c8a24b" stroke-width="1"/>
+          <circle cx="60" cy="60" r="14" fill="#c8a24b"/>
+          <circle cx="60" cy="60" r="4.5" fill="#f7f1e3"/>
+        </svg>
+        <h3>Ms. Dee</h3>
+        <div class="role">Stylist</div>
+        <p>Named in client reviews for skill with natural hair.</p>
+      </div>
+      <div class="member">
+        <svg class="disc" viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="56" fill="#12382a"/>
+          <circle cx="60" cy="60" r="48" fill="none" stroke="#c8a24b" stroke-width="1.5"/>
+          <circle cx="60" cy="60" r="38" fill="none" stroke="#c8a24b" stroke-width="1"/>
+          <circle cx="60" cy="60" r="14" fill="#c8a24b"/>
+          <circle cx="60" cy="60" r="4.5" fill="#f7f1e3"/>
+        </svg>
+        <h3>Marcus</h3>
+        <div class="role">Barber</div>
+        <p>Named in client reviews for clean, sharp cuts.</p>
+      </div>
+    </div>
+    <figure class="fig">
+      <figcaption>Concept art: vinyl-inspired medallions represent each stylist</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block boutique" id="boutique">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker" style="color:#e4c87f">Next door</div>
+      <h2 style="color:#f7f1e3">Fabulouz Findz <em style="color:#e4c87f">Accessoriez</em></h2>
+    </div>
+    <p class="body" style="text-align:center;max-width:58ch">The boutique sits beside the salon, so your visit ends with the finishing touches. Browse a curated shelf of fashion accessories chosen to pair with a fresh style.</p>
+    <div class="shelf">
+      <div class="shelf-row">
+        <div class="shelf-item">
+          <svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
+            <circle cx="36" cy="30" r="14" fill="none" stroke="#e4c87f" stroke-width="2.5"/>
+            <circle cx="36" cy="30" r="14" fill="none" stroke="#c8a24b" stroke-width="1" stroke-dasharray="3 3"/>
+            <path d="M28 52l8-8 8 8" fill="none" stroke="#e4c87f" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <h4>Statement Jewelry</h4>
+          <p>Earrings and necklaces that frame the new look.</p>
+        </div>
+        <div class="shelf-item">
+          <svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
+            <path d="M20 26q16-14 32 0q-16 10-32 0z" fill="none" stroke="#e4c87f" stroke-width="2.5"/>
+            <path d="M36 22v26M28 34h16" stroke="#e4c87f" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <h4>Hair Accessories</h4>
+          <p>Pins, wraps, and pieces to keep the style set.</p>
+        </div>
+        <div class="shelf-item">
+          <svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
+            <rect x="22" y="28" width="28" height="18" rx="8" fill="none" stroke="#e4c87f" stroke-width="2.5"/>
+            <path d="M30 20h12v10H30z" fill="none" stroke="#e4c87f" stroke-width="2.5"/>
+          </svg>
+          <h4>Handbags and Clutches</h4>
+          <p>Everyday bags and evening pieces.</p>
+        </div>
+        <div class="shelf-item">
+          <svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
+            <circle cx="36" cy="34" r="12" fill="none" stroke="#e4c87f" stroke-width="2.5"/>
+            <path d="M36 22v-6M36 52v-6M24 34h-6M54 34h-6" stroke="#e4c87f" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <h4>Finishing Touches</h4>
+          <p>Small details that complete the outfit.</p>
+        </div>
+      </div>
+      <div class="shelf-rail"></div>
+      <figure class="fig">
+        <figcaption>Concept art: a boutique shelf rendered as display icons</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Plan your visit</div>
+      <h2>Come see us on <em>Clifford Street</em></h2>
+    </div>
+    <div class="visit-grid">
+      <div class="card">
+        <h3>Hours</h3>
+        <table class="hours">
+          <tr><th>Tuesday</th><td>10:00 AM to 5:00 PM</td></tr>
+          <tr><th>Wednesday</th><td>10:00 AM to 6:00 PM</td></tr>
+          <tr><th>Thursday</th><td>10:00 AM to 6:00 PM</td></tr>
+          <tr><th>Friday</th><td>10:00 AM to 6:00 PM</td></tr>
+          <tr><th>Saturday</th><td>9:00 AM to 5:00 PM</td></tr>
+          <tr><th>Sunday</th><td>Closed</td></tr>
+          <tr><th>Monday</th><td>Closed</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <h3>Find us</h3>
+        <p class="addr">114 Clifford St<br>Detroit, MI 48226</p>
+        <p style="margin:1.1rem 0"><a class="phone-big" href="tel:+13139635959">(313) 963-5959</a></p>
+        <p>Questions? Call (313) 963-5959. We look forward to seeing you.</p>
+      </div>
+    </div>
+    <div class="visit-cta">
+      <a class="btn" href="tel:+13139635959">Call to book</a>
+      <a class="btn ghost" href="tel:+13139635959">Call (313) 963-5959</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fname">The Last Tangle Hair Salon and Fabulouz Findz Accessoriez</div>
+    <div>114 Clifford St, Detroit, MI 48226 &middot; <a href="tel:+13139635959" style="color:#e4c87f">(313) 963-5959</a></div>
+    <nav aria-label="Footer navigation">
+      <a href="#legacy">Legacy</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#boutique">Boutique</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <p class="legal">This is an unsolicited website design concept created by Freightfolio. It was not commissioned, affiliated with, or endorsed by The Last Tangle Hair Salon and Fabulouz Findz Accessoriez. This is a design preview only.</p>
+    <p class="copy">Design concept, October 2026.</p>
+  </div>
+</footer>
+
+</body>
+</html>
