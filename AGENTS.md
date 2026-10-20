@@ -1,3 +1,9 @@
+## ChatGPT final QA and owner handoff — October 20, 2026
+
+ChatGPT is the final website editor and QA before owner review. Do not issue a Denied/Rejected disposition as ChatGPT's terminal outcome. Fix routine content, factual, visual, image, and usability issues directly on `chatgpt-fixes`, re-render and verify the exact version, then hand Mike the corrected website preview and clean, version-matched outreach draft for his final dashboard approval. Do not send or schedule outreach.
+
+If a correction depends on unavailable source evidence or a decision reserved for Mike, keep the item open as Awaiting evidence or Awaiting owner decision, state the specific gap, and hand it to Mike. Preserve earlier owner decisions as history; a prior rejection means the earlier version needs rework, not that ChatGPT should deny the prospect or stop editing.
+
 ## Mandatory final clipart check — owner instruction October 20, 2026, 13:05 Central
 
 ChatGPT must reject a submitted website version if ANY decorative clipart or concept-art panel remains. Remove illustrated tools/chairs, fake emblems, cartoons, generated decorative drawings, raster or SVG stock illustrations, placeholder art and fabricated maps. A concept-art label does not make these acceptable. Prefer the correct business's photos; use relevant, properly licensed STOCK PHOTOGRAPHY instead of clipart when needed, honestly presented. Authentic business logos and ordinary functional navigation icons are permitted.
