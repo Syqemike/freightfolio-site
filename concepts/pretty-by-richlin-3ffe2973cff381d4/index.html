@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Pretty By Richlin | Relaxer and Iron Work, New Haven, CT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --porcelain:#faf7f2;
+    --graphite:#26221c;
+    --graphite-soft:#6d655a;
+    --rosegold:#c9a186;
+    --rosegold-soft:#e8d5c2;
+    --hairline:#ddd2c4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Work Sans',system-ui,sans-serif;
+    font-weight:300;
+    background:var(--porcelain);
+    color:var(--graphite);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:'Bodoni Moda',serif;font-weight:500;}
+  a{color:var(--graphite);}
+  img,svg{display:block;max-width:100%;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 2rem;}
+
+  /* ---------- disclosure ---------- */
+  .disclosure{
+    background:var(--graphite);color:var(--porcelain);
+    text-align:center;padding:.65rem 1.5rem;
+    font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;font-weight:400;
+  }
+  .disclosure small{display:block;letter-spacing:.06em;text-transform:none;font-size:.76rem;color:#cbbfae;margin-top:.2rem;font-weight:300;}
+
+  /* ---------- nav ---------- */
+  nav{border-bottom:1px solid var(--hairline);background:var(--porcelain);}
+  .nav-inner{
+    max-width:1140px;margin:0 auto;padding:1.1rem 2rem;
+    display:flex;align-items:baseline;justify-content:space-between;gap:1.5rem;
+  }
+  .brand{font-family:'Bodoni Moda',serif;font-size:1.35rem;font-weight:600;text-decoration:none;letter-spacing:.02em;}
+  .brand em{font-style:italic;font-weight:400;}
+  .navlinks{display:flex;gap:2rem;align-items:baseline;}
+  .navlinks a{
+    text-decoration:none;font-size:.82rem;font-weight:400;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--graphite-soft);
+    padding-bottom:.25rem;border-bottom:1px solid transparent;
+  }
+  .navlinks a:hover{color:var(--graphite);border-bottom-color:var(--rosegold);}
+  .navlinks a.cta{color:var(--graphite);border-bottom:1px solid var(--rosegold);font-weight:500;}
+
+  /* ---------- hero ---------- */
+  .hero{border-bottom:1px solid var(--hairline);}
+  .hero-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;
+    padding:5rem 0 4.5rem;
+  }
+  .kicker{
+    font-size:.74rem;letter-spacing:.34em;text-transform:uppercase;
+    color:var(--graphite-soft);margin-bottom:1.6rem;
+    display:flex;align-items:center;gap:1rem;
+  }
+  .kicker::after{content:"";height:1px;width:64px;background:var(--rosegold);}
+  .hero h1{font-size:clamp(3rem,7.5vw,5.6rem);line-height:1.02;font-weight:500;}
+  .hero h1 em{font-style:italic;color:var(--graphite);}
+  .hero .lede{
+    margin-top:1.6rem;font-size:1.12rem;max-width:30rem;color:var(--graphite-soft);font-weight:300;
+  }
+  .hero .lede strong{font-weight:500;color:var(--graphite);}
+  .cta-line{margin-top:2.4rem;display:flex;flex-direction:column;gap:.6rem;}
+  .btn-line{
+    display:inline-block;width:fit-content;
+    font-size:.85rem;letter-spacing:.24em;text-transform:uppercase;font-weight:500;
+    text-decoration:none;color:var(--graphite);
+    border:1px solid var(--graphite);padding:1rem 2.4rem;
+    transition:background .18s ease,color .18s ease;
+  }
+  .btn-line:hover{background:var(--graphite);color:var(--porcelain);}
+  .cta-note{font-size:.88rem;color:var(--graphite-soft);}
+  .hero-art{border:1px solid var(--hairline);padding:1.4rem;background:#fff;}
+  .caption{font-size:.78rem;color:var(--graphite-soft);font-style:italic;margin-top:.7rem;letter-spacing:.02em;}
+
+  /* ---------- sections ---------- */
+  section.block{padding:4.5rem 0;border-bottom:1px solid var(--hairline);}
+  .sec-head{display:grid;grid-template-columns:120px 1fr;gap:2rem;margin-bottom:2.6rem;align-items:baseline;}
+  .sec-no{font-family:'Bodoni Moda',serif;font-style:italic;font-size:1.1rem;color:var(--rosegold);}
+  .sec-head h2{font-size:clamp(2rem,4.5vw,3.1rem);font-weight:500;line-height:1.1;}
+  .sec-head .sub{grid-column:2;color:var(--graphite-soft);max-width:36rem;margin-top:.8rem;font-size:1.02rem;}
+
+  /* ---------- treatment spec rows ---------- */
+  .spec{border-top:1px solid var(--graphite);}
+  .spec-row{
+    display:grid;grid-template-columns:90px 1fr auto;gap:2rem;align-items:baseline;
+    padding:1.7rem .5rem;border-bottom:1px solid var(--hairline);
+    transition:background .15s ease;
+  }
+  .spec-row:hover{background:#fff;}
+  .spec-row .idx{font-family:'Bodoni Moda',serif;font-style:italic;color:var(--rosegold);font-size:1.15rem;}
+  .spec-row h3{font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:500;line-height:1.2;}
+  .spec-row .tag{
+    font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--graphite-soft);
+    border:1px solid var(--hairline);padding:.35rem .9rem;white-space:nowrap;
+  }
+  .spec-note{margin-top:1.6rem;color:var(--graphite-soft);font-size:.95rem;max-width:38rem;}
+
+  /* ---------- specialty ---------- */
+  .special-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
+  .special-grid .big{
+    font-family:'Bodoni Moda',serif;font-size:clamp(1.5rem,2.8vw,2rem);
+    line-height:1.45;font-weight:400;
+  }
+  .special-grid .big em{font-style:italic;}
+  .special-grid .rule{width:56px;height:1px;background:var(--rosegold);margin:1.4rem 0;}
+  .special-grid p{color:var(--graphite-soft);margin-bottom:1.1rem;max-width:32rem;}
+  .special-art{border:1px solid var(--hairline);padding:1.4rem;background:#fff;}
+
+  /* ---------- visit ---------- */
+  .visit-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--graphite);}
+  .visit-cell{padding:2.2rem;border-right:1px solid var(--hairline);}
+  .visit-cell:last-child{border-right:none;}
+  .visit-cell h3{
+    font-size:.78rem;font-family:'Work Sans',sans-serif;font-weight:500;
+    letter-spacing:.3em;text-transform:uppercase;color:var(--graphite-soft);
+    margin-bottom:1.2rem;display:flex;align-items:center;gap:.8rem;
+  }
+  .visit-cell h3::after{content:"";flex:1;height:1px;background:var(--rosegold);}
+  .visit-cell address{font-style:normal;font-size:1.25rem;font-family:'Bodoni Moda',serif;line-height:1.6;}
+  .visit-cell .hours-big{font-family:'Bodoni Moda',serif;font-size:1.5rem;line-height:1.5;}
+  .visit-cell .fine{font-size:.85rem;color:var(--graphite-soft);margin-top:.9rem;}
+  .visit-cell .phone-big{font-family:'Bodoni Moda',serif;font-size:1.7rem;text-decoration:none;border-bottom:1px solid var(--rosegold);}
+  .rating-line{
+    margin-top:2rem;padding-top:1.6rem;border-top:1px solid var(--hairline);
+    display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:1rem;
+  }
+  .rating-line .stars{font-family:'Bodoni Moda',serif;font-size:1.4rem;}
+  .rating-line .stars span{color:var(--rosegold);letter-spacing:.1em;}
+  .rating-line p{color:var(--graphite-soft);font-size:.92rem;}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--graphite);color:#b9ae9c;padding:3rem 2rem;text-align:center;}
+  footer .fname{font-family:'Bodoni Moda',serif;font-size:1.6rem;color:var(--porcelain);margin-bottom:.8rem;}
+  footer p{font-size:.85rem;max-width:42rem;margin:0 auto;font-weight:300;}
+  footer a{color:var(--rosegold-soft);}
+
+  @media (max-width:820px){
+    .navlinks a:not(.cta){display:none;}
+    .hero-grid{grid-template-columns:1fr;gap:2.5rem;padding:3rem 0;}
+    .sec-head{grid-template-columns:1fr;gap:.4rem;}
+    .sec-head .sub{grid-column:1;}
+    .spec-row{grid-template-columns:52px 1fr;gap:1rem;}
+    .spec-row .tag{display:none;}
+    .special-grid{grid-template-columns:1fr;gap:2rem;}
+    .visit-grid{grid-template-columns:1fr;}
+    .visit-cell{border-right:none;border-bottom:1px solid var(--hairline);}
+    .visit-cell:last-child{border-bottom:none;}
+    .wrap{padding:0 1.25rem;}
+    .nav-inner{padding:1rem 1.25rem;}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">
+  Design Preview
+  <small>An unlisted concept mockup created by Freightfolio. This is not the business's official website.</small>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="#top">Pretty <em>By</em> Richlin</a>
+    <div class="navlinks">
+      <a href="#treatments">Treatments</a>
+      <a href="#specialty">The Specialty</a>
+      <a href="#visit">Visit</a>
+      <a class="cta" href="tel:+12036242400">Call to book</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="kicker">New Haven, Connecticut</p>
+        <h1>Pretty <em>By</em> Richlin</h1>
+        <p class="lede">An <strong>upscale salon</strong> specializing in <strong>relaxer and iron work</strong>. Precision hair care, presented plainly.</p>
+        <div class="cta-line">
+          <a class="btn-line" href="tel:+12036242400">Call to book</a>
+          <p class="cta-note">Questions? Call (203) 624-2400. Please call to confirm this number before visiting.</p>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <svg viewBox="0 0 480 520" role="img" aria-label="Concept art: macro study of flowing hair strands in rose gold and graphite">
+          <rect x="0" y="0" width="480" height="520" fill="#faf7f2"/>
+          <g fill="none" stroke-linecap="round">
+            <path d="M60 -20 C 90 120, 40 260, 110 420 C 140 490, 120 520, 118 540" stroke="#26221c" stroke-width="7"/>
+            <path d="M150 -20 C 170 130, 120 270, 200 430 C 230 495, 215 525, 214 545" stroke="#c9a186" stroke-width="5"/>
+            <path d="M240 -20 C 250 120, 210 260, 290 420 C 320 488, 305 520, 304 542" stroke="#26221c" stroke-width="9"/>
+            <path d="M330 -20 C 330 130, 300 270, 375 430 C 400 495, 390 525, 389 545" stroke="#c9a186" stroke-width="4"/>
+            <path d="M410 -20 C 405 120, 385 260, 440 420 C 458 480, 452 515, 451 538" stroke="#26221c" stroke-width="5"/>
+            <path d="M105 60 C 130 150, 95 280, 150 400" stroke="#c9a186" stroke-width="1.6" opacity=".8"/>
+            <path d="M195 40 C 215 140, 180 270, 245 410" stroke="#c9a186" stroke-width="1.6" opacity=".8"/>
+            <path d="M285 55 C 300 150, 270 280, 330 415" stroke="#c9a186" stroke-width="1.6" opacity=".8"/>
+            <path d="M375 70 C 380 160, 360 280, 415 405" stroke="#c9a186" stroke-width="1.6" opacity=".8"/>
+            <path d="M30 300 C 160 285, 330 300, 455 280" stroke="#26221c" stroke-width="1" opacity=".25"/>
+            <path d="M30 330 C 160 315, 330 330, 455 310" stroke="#26221c" stroke-width="1" opacity=".18"/>
+          </g>
+          <text x="24" y="496" font-family="Bodoni Moda, serif" font-style="italic" font-size="20" fill="#6d655a">Study I. Silk, under light.</text>
+        </svg>
+        <figcaption class="caption">Concept art</figcaption>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<section class="block" id="treatments">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">01</span>
+      <div>
+        <h2>The Treatment Menu</h2>
+        <p class="sub">Five services, listed as published. Each one reflects the salon's focus on relaxer and iron work.</p>
+      </div>
+    </div>
+
+    <div class="spec">
+      <div class="spec-row">
+        <span class="idx">No. 1</span>
+        <h3>Protective Relaxer Retouch</h3>
+        <span class="tag">Relaxer</span>
+      </div>
+      <div class="spec-row">
+        <span class="idx">No. 2</span>
+        <h3>Basic Relaxer Retouch</h3>
+        <span class="tag">Relaxer</span>
+      </div>
+      <div class="spec-row">
+        <span class="idx">No. 3</span>
+        <h3>Natural Hair Iron Work</h3>
+        <span class="tag">Iron Work</span>
+      </div>
+      <div class="spec-row">
+        <span class="idx">No. 4</span>
+        <h3>Relaxed Hair Iron Work</h3>
+        <span class="tag">Iron Work</span>
+      </div>
+      <div class="spec-row">
+        <span class="idx">No. 5</span>
+        <h3>Sonic Mist Hydration</h3>
+        <span class="tag">Hydration</span>
+      </div>
+    </div>
+    <p class="spec-note">Services are shown as published by the salon. Pricing is not published. Call the salon for details and to book.</p>
+  </div>
+</section>
+
+<section class="block" id="specialty">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">02</span>
+      <div>
+        <h2>The Specialty</h2>
+        <p class="sub">What the menu is built around.</p>
+      </div>
+    </div>
+    <div class="special-grid">
+      <div>
+        <p class="big">Pretty By Richlin is an <em>upscale salon</em> specializing in <em>relaxer and iron work</em>.</p>
+        <div class="rule"></div>
+        <p>The published menu centers on two relaxer retouch services, iron work for natural and relaxed hair, and sonic mist hydration.</p>
+        <p>That focus is the whole story. The work is specific, the menu is short, and every service on it points back to the specialty.</p>
+        <div class="cta-line">
+          <a class="btn-line" href="tel:+12036242400">Call to book</a>
+          <p class="cta-note">Questions? Call (203) 624-2400.</p>
+        </div>
+      </div>
+      <figure class="special-art">
+        <svg viewBox="0 0 480 380" role="img" aria-label="Concept art: silk ribbon study in graphite and rose gold">
+          <rect x="0" y="0" width="480" height="380" fill="#faf7f2"/>
+          <g fill="none" stroke-linecap="round">
+            <path d="M-20 90 C 120 60, 200 150, 340 110 C 420 88, 460 110, 500 95" stroke="#26221c" stroke-width="26" opacity=".92"/>
+            <path d="M-20 90 C 120 60, 200 150, 340 110 C 420 88, 460 110, 500 95" stroke="#c9a186" stroke-width="2" opacity=".9"/>
+            <path d="M-20 190 C 100 170, 190 240, 320 200 C 410 172, 450 200, 500 190" stroke="#c9a186" stroke-width="18" opacity=".55"/>
+            <path d="M-20 290 C 120 270, 210 330, 340 295 C 420 275, 455 295, 500 288" stroke="#26221c" stroke-width="10" opacity=".85"/>
+            <path d="M40 40 C 200 30, 300 60, 440 45" stroke="#26221c" stroke-width="1.2" opacity=".3"/>
+            <path d="M40 345 C 200 335, 300 360, 440 348" stroke="#26221c" stroke-width="1.2" opacity=".3"/>
+          </g>
+          <text x="24" y="356" font-family="Bodoni Moda, serif" font-style="italic" font-size="20" fill="#6d655a">Study II. Silk, in motion.</text>
+        </svg>
+        <figcaption class="caption">Concept art</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">03</span>
+      <div>
+        <h2>Visit</h2>
+        <p class="sub">The salon's published details, stated plainly.</p>
+      </div>
+    </div>
+
+    <div class="visit-grid">
+      <div class="visit-cell">
+        <h3>Address</h3>
+        <address>214 State St<br>New Haven, CT</address>
+        <p class="fine"><a href="https://www.google.com/maps/search/?api=1&amp;query=214+State+St+New+Haven+CT" target="_blank" rel="noopener">Get directions</a></p>
+      </div>
+      <div class="visit-cell">
+        <h3>Hours</h3>
+        <p class="hours-big">Saturdays<br>8:00 AM - 2:00 PM</p>
+        <p class="fine">As listed; call to confirm.</p>
+      </div>
+      <div class="visit-cell">
+        <h3>Phone</h3>
+        <a class="phone-big" href="tel:+12036242400">(203) 624-2400</a>
+        <p class="fine">From a single public source. Please call to confirm this number before visiting.</p>
+      </div>
+    </div>
+
+    <div class="rating-line">
+      <p class="stars"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>&nbsp; 5.0 from 15 Google reviews</p>
+      <a class="btn-line" href="tel:+12036242400">Call to book</a>
+    </div>
+
+    <figure style="margin-top:2.5rem;max-width:640px;">
+      <div style="border:1px solid var(--hairline);padding:1.4rem;background:#fff;">
+        <svg viewBox="0 0 600 240" role="img" aria-label="Concept art: fine mist field suggesting sonic mist hydration">
+          <rect x="0" y="0" width="600" height="240" fill="#faf7f2"/>
+          <g fill="#c9a186" opacity=".7">
+            <circle cx="60" cy="60" r="2.5"/><circle cx="110" cy="90" r="2"/><circle cx="160" cy="55" r="3"/>
+            <circle cx="210" cy="95" r="2.5"/><circle cx="260" cy="60" r="2"/><circle cx="310" cy="90" r="3"/>
+            <circle cx="360" cy="55" r="2.5"/><circle cx="410" cy="95" r="2"/><circle cx="460" cy="60" r="3"/>
+            <circle cx="510" cy="90" r="2.5"/><circle cx="85" cy="140" r="2"/><circle cx="140" cy="165" r="3"/>
+            <circle cx="195" cy="140" r="2.5"/><circle cx="250" cy="170" r="2"/><circle cx="305" cy="140" r="3"/>
+            <circle cx="360" cy="165" r="2.5"/><circle cx="415" cy="140" r="2"/><circle cx="470" cy="170" r="3"/>
+            <circle cx="525" cy="145" r="2.5"/>
+          </g>
+          <g fill="none" stroke="#26221c" stroke-width="1.4" opacity=".55">
+            <path d="M40 200 C 150 180, 250 215, 360 195 C 440 182, 520 200, 565 192"/>
+            <path d="M40 215 C 150 198, 250 228, 360 210 C 440 199, 520 214, 565 208" opacity=".6"/>
+          </g>
+          <text x="24" y="34" font-family="Bodoni Moda, serif" font-style="italic" font-size="20" fill="#6d655a">Study III. Mist.</text>
+        </svg>
+      </div>
+      <figcaption class="caption">Concept art</figcaption>
+    </figure>
+  </div>
+</section>
+
+<footer>
+  <div class="fname">Pretty By Richlin</div>
+  <p>This page is an unlisted design concept made by <a href="https://freightfolio.net">Freightfolio</a>. It is not the business's official website and the business has not endorsed it. Business details shown are from public listings.</p>
+</footer>
+
+<script>
+  // no entrance animations: treatment rows must be visible with or without JS
+</script>
+</body>
+</html>

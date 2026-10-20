@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Razorline Barbershop | Macon, GA | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Karla:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pine:#1f3d2b;
+  --paper:#f6f1e3;
+  --yellow:#f2b134;
+  --brick:#a63d2f;
+  --ink:#22301f;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:"Karla",system-ui,sans-serif;line-height:1.6;}
+a{color:inherit;}
+.notice{background:var(--pine);color:var(--paper);text-align:center;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:11px 16px;}
+.notice strong{color:var(--yellow);}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+.topbar{background:var(--paper);border-bottom:3px solid var(--pine);}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;flex-wrap:wrap;}
+.wordmark{font-family:"Zilla Slab",serif;font-weight:700;font-size:clamp(24px,3.2vw,34px);color:var(--pine);line-height:1.05;}
+.wordmark em{font-style:normal;color:var(--brick);}
+.navline{display:flex;gap:10px;flex-wrap:wrap;}
+.navline a{text-decoration:none;font-weight:800;font-size:14px;letter-spacing:.05em;padding:9px 16px;border:2px solid var(--pine);border-radius:999px;background:#fffdf6;}
+.navline a:hover{background:var(--yellow);border-color:var(--pine);}
+.hero{background:var(--pine);color:var(--paper);position:relative;overflow:hidden;}
+.hero .wrap{padding:72px 24px 64px;position:relative;}
+.hero-eyebrow{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:800;font-size:13px;letter-spacing:.2em;text-transform:uppercase;padding:8px 16px;border-radius:999px;margin-bottom:22px;}
+.hero h1{font-family:"Zilla Slab",serif;font-weight:700;font-size:clamp(44px,7.6vw,96px);line-height:1.02;max-width:800px;}
+.hero h1 .y{color:var(--yellow);}
+.hero p.dek{max-width:560px;margin-top:20px;font-size:18px;color:#e8e2cf;}
+.hero-cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap;}
+.btn{display:inline-block;text-decoration:none;font-weight:800;padding:15px 30px;border-radius:999px;font-size:16px;letter-spacing:.02em;}
+.btn.y{background:var(--yellow);color:var(--ink);border:3px solid var(--ink);}
+.btn.out{background:transparent;color:var(--paper);border:3px solid var(--paper);}
+.btn.y:hover{background:var(--brick);color:var(--paper);}
+.btn.out:hover{background:var(--paper);color:var(--ink);}
+.hero-rating{margin-top:26px;font-size:16px;color:#e8e2cf;}
+.hero-rating strong{color:var(--yellow);font-weight:800;}
+.hero-badge{position:absolute;right:6%;top:64px;width:170px;height:170px;background:var(--brick);border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--paper);font-family:"Zilla Slab",serif;font-weight:700;font-size:16px;line-height:1.35;padding:18px;transform:rotate(8deg);border:4px dashed var(--paper);}
+@media(max-width:900px){.hero-badge{display:none;}}
+section{padding:66px 0;}
+.sec-label{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--brick);margin-bottom:12px;}
+.sec-title{font-family:"Zilla Slab",serif;font-weight:700;font-size:clamp(32px,4.8vw,56px);color:var(--pine);line-height:1.05;margin-bottom:14px;}
+.sec-intro{max-width:640px;font-size:17px;margin-bottom:38px;}
+.services-board{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media(max-width:900px){.services-board{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:580px){.services-board{grid-template-columns:1fr;}}
+.card{background:#fffdf6;border:3px solid var(--pine);border-radius:18px;padding:26px;position:relative;transition:transform .15s ease;}
+.card:hover{transform:translateY(-4px) rotate(-.4deg);}
+.card::before{content:"";position:absolute;top:-12px;left:50%;transform:translateX(-50%) rotate(-3deg);width:70px;height:22px;background:var(--yellow);border:2px solid var(--pine);border-radius:2px;}
+.card h3{font-family:"Zilla Slab",serif;font-weight:700;font-size:21px;color:var(--pine);margin-bottom:8px;}
+.card p{font-size:15px;}
+.card .tag{display:inline-block;margin-top:12px;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brick);}
+.card.feature{background:var(--yellow);grid-column:span 2;}
+@media(max-width:580px){.card.feature{grid-column:span 1;}}
+.dashed-div{border:none;border-top:4px dashed var(--pine);margin:0;}
+.community{background:#efe6cf;}
+.board{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:start;}
+@media(max-width:860px){.board{grid-template-columns:1fr;}}
+.pin-card{background:#fffdf6;border:3px solid var(--pine);border-radius:6px;padding:30px;position:relative;box-shadow:6px 6px 0 rgba(31,61,43,.18);}
+.pin-card::before{content:"";position:absolute;top:-14px;left:32px;width:26px;height:26px;background:var(--brick);border:3px solid #fffdf6;border-radius:50%;}
+.pin-card h3{font-family:"Zilla Slab",serif;font-size:24px;color:var(--pine);margin-bottom:10px;}
+.pin-card p{font-size:16px;margin-bottom:12px;}
+.pin-card ul{list-style:none;margin:14px 0 0;display:grid;gap:10px;}
+.pin-card ul li{font-size:15px;padding-left:30px;position:relative;}
+.pin-card ul li::before{content:"";position:absolute;left:0;top:6px;width:14px;height:14px;background:var(--yellow);border:2px solid var(--pine);border-radius:50%;}
+.side-stack{display:grid;gap:22px;}
+.mini{border:3px dashed var(--pine);border-radius:14px;padding:24px;background:var(--paper);}
+.mini h4{font-family:"Zilla Slab",serif;font-size:19px;color:var(--pine);margin-bottom:8px;}
+.mini p{font-size:15px;}
+.art-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;}
+@media(max-width:760px){.art-strip{grid-template-columns:1fr;}}
+.art-frame{background:#fffdf6;border:3px solid var(--pine);border-radius:14px;padding:14px;}
+.art-frame svg{display:block;width:100%;height:auto;border-radius:8px;}
+.art-frame figcaption{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;padding:12px 4px 4px;color:var(--pine);}
+.visit-wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:8px;}
+@media(max-width:760px){.visit-wrap{grid-template-columns:1fr;}}
+.visit-card{background:var(--pine);color:var(--paper);border-radius:18px;padding:34px;border:3px solid var(--pine);}
+.visit-card h3{font-family:"Zilla Slab",serif;font-size:24px;color:var(--yellow);margin-bottom:14px;}
+.visit-card address{font-style:normal;font-size:17px;line-height:1.7;}
+.visit-card .phone{font-family:"Zilla Slab",serif;font-size:clamp(24px,3vw,32px);font-weight:700;margin:16px 0;}
+.visit-card .phone a{text-decoration:none;color:var(--yellow);}
+.visit-card .phone a:hover{color:var(--paper);}
+.visit-card .btn{margin-top:6px;}
+.visit-card.light{background:#fffdf6;color:var(--ink);border:3px solid var(--pine);}
+.visit-card.light h3{color:var(--pine);}
+.hours{list-style:none;display:grid;gap:12px;font-size:16px;font-weight:500;}
+.hours li{display:flex;justify-content:space-between;gap:12px;border-bottom:2px dashed rgba(31,61,43,.25);padding-bottom:10px;}
+.hours li:last-child{border-bottom:none;}
+.hours .sun-call{color:var(--brick);font-weight:800;}
+footer{background:var(--pine);color:var(--paper);padding:44px 0 36px;}
+footer .wordmark{color:var(--paper);font-size:22px;margin-bottom:12px;}
+footer .wordmark em{color:var(--yellow);}
+footer p{font-size:14px;color:#d9d2ba;max-width:720px;}
+footer .credit{margin-top:18px;font-size:13px;}
+footer a{color:var(--yellow);}
+</style>
+</head>
+<body>
+<div class="notice"><strong>Design preview</strong> &nbsp;|&nbsp; Concept mockup created by Freightfolio. This is not the business's website.</div>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="wordmark">Razorline <em>Barbershop</em></div>
+    <nav class="navline" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#community">Community</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:0;">
+  <div class="wrap">
+    <span class="hero-eyebrow">Macon, Georgia &middot; Family Barbershop</span>
+    <h1>Pull up a chair.<br><span class="y">Everyone is welcome.</span></h1>
+    <p class="dek">Razorline Barbershop, led by owner Wade White, is a neighborhood shop in Macon where kids, parents, and grandparents all sit in the same chair. Fades, lineups, braids, and retwists, plus haircuts at your door with mobile service around town.</p>
+    <div class="hero-cta">
+      <a class="btn y" href="tel:+14788128422">Call to book</a>
+      <a class="btn out" href="#services">See services</a>
+    </div>
+    <p class="hero-rating">Rated <strong>5.0 from 42 Google reviews</strong>.</p>
+    <div class="hero-badge">Kids &amp;<br>seniors<br>welcome</div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <span class="sec-label">Pinned to the board</span>
+    <h2 class="sec-title">Services</h2>
+    <p class="sec-intro">Cuts for every age and every style. No prices are published, so call and ask what fits.</p>
+    <div class="services-board">
+      <div class="card">
+        <h3>Adult Cuts</h3>
+        <p>Classic cuts for grown folks, shaped to how you wear your hair every day.</p>
+        <span class="tag">Call to book</span>
+      </div>
+      <div class="card">
+        <h3>Precision Fades</h3>
+        <p>Clean, detailed fades with smooth blending from skin to length.</p>
+        <span class="tag">Call to book</span>
+      </div>
+      <div class="card">
+        <h3>Low Fades</h3>
+        <p>A subtle fade that starts low and keeps things neat around the ears and neckline.</p>
+        <span class="tag">Call to book</span>
+      </div>
+      <div class="card">
+        <h3>Lineup, Beard &amp; Shave</h3>
+        <p>Adult lineup work paired with beard shaping and a clean shave finish.</p>
+        <span class="tag">Call to book</span>
+      </div>
+      <div class="card">
+        <h3>Razorline Styles</h3>
+        <p>Signature razorline detailing and designs cut with a steady hand.</p>
+        <span class="tag">Call to book</span>
+      </div>
+      <div class="card">
+        <h3>Braid-Back</h3>
+        <p>Braid-back styles with clean parts and even rows.</p>
+        <span class="tag">Call to book</span>
+      </div>
+      <div class="card">
+        <h3>Retwists</h3>
+        <p>Retwists that keep locs tidy from root to end.</p>
+        <span class="tag">Call to book</span>
+      </div>
+      <div class="card feature">
+        <h3>Mobile Haircuts in Macon</h3>
+        <p>Haircuts at your home. If getting to the shop is hard, the chair comes to you, anywhere in Macon. Call (478) 812-8422 to ask about availability.</p>
+        <span class="tag">At-home service</span>
+      </div>
+    </div>
+    <div style="margin-top:28px;"><a class="btn y" href="tel:+14788128422">Call to book</a></div>
+  </div>
+</section>
+
+<hr class="dashed-div">
+
+<section id="community" class="community" style="padding-top:66px;">
+  <div class="wrap">
+    <span class="sec-label">Around the shop</span>
+    <h2 class="sec-title">A Shop the Neighborhood Reads In</h2>
+    <p class="sec-intro">Razorline is built around family. The chair fits a first-timer and a grandfather the same way, and the shop opens its doors to the community beyond haircuts.</p>
+    <div class="board">
+      <div class="pin-card">
+        <h3>Books with Barbers</h3>
+        <p>Razorline is the first Books with Barbers literacy pilot site in Macon, run with EveryLibrary. Kids can pick up a book while they wait and read in the chair.</p>
+        <ul>
+          <li>Family-friendly shop: kids and seniors are welcome</li>
+          <li>Books available for young readers during visits</li>
+          <li>Community space, not just a waiting area</li>
+        </ul>
+      </div>
+      <div class="side-stack">
+        <div class="mini">
+          <h4>For the whole family</h4>
+          <p>Bring the kids, bring grandpa. The shop welcomes all ages, and first haircuts get patient hands.</p>
+        </div>
+        <div class="mini">
+          <h4>Mobile cuts, Macon-wide</h4>
+          <p>At-home haircuts across Macon for anyone who cannot make it to Pio Nono Ave. Questions? Call (478) 812-8422.</p>
+        </div>
+      </div>
+    </div>
+    <div class="art-strip">
+      <figure class="art-frame">
+        <svg viewBox="0 0 400 280" role="img" aria-label="Concept art: barber chair in warm colors">
+          <rect width="400" height="280" rx="8" fill="#1f3d2b"/>
+          <rect x="120" y="60" width="160" height="110" rx="16" fill="#f2b134"/>
+          <rect x="120" y="60" width="160" height="34" rx="14" fill="#a63d2f"/>
+          <rect x="185" y="170" width="30" height="70" fill="#f6f1e3"/>
+          <rect x="150" y="232" width="100" height="16" rx="8" fill="#f6f1e3"/>
+          <circle cx="120" cy="115" r="14" fill="#f2b134" stroke="#f6f1e3" stroke-width="4"/>
+          <text x="200" y="40" fill="#f6f1e3" font-family="Zilla Slab, serif" font-weight="700" font-size="19" text-anchor="middle">THE FAMILY CHAIR</text>
+        </svg>
+        <figcaption>Concept art</figcaption>
+      </figure>
+      <figure class="art-frame">
+        <svg viewBox="0 0 400 280" role="img" aria-label="Concept art: open book with barber pole stripes">
+          <rect width="400" height="280" rx="8" fill="#1f3d2b"/>
+          <g transform="translate(200,150)">
+            <path d="M-90 0 Q-45 -22 0 0 Q45 -22 90 0 L90 60 Q45 38 0 60 Q-45 38 -90 60 Z" fill="#f6f1e3"/>
+            <line x1="0" y1="0" x2="0" y2="60" stroke="#1f3d2b" stroke-width="5"/>
+            <g stroke="#a63d2f" stroke-width="7">
+              <line x1="-108" y1="-52" x2="-92" y2="-32"/><line x1="-92" y1="-52" x2="-76" y2="-32"/>
+              <line x1="76" y1="-52" x2="92" y2="-32"/><line x1="92" y1="-52" x2="108" y2="-32"/>
+            </g>
+          </g>
+          <text x="200" y="40" fill="#f6f1e3" font-family="Zilla Slab, serif" font-weight="700" font-size="19" text-anchor="middle">BOOKS WITH BARBERS</text>
+        </svg>
+        <figcaption>Concept art</figcaption>
+      </figure>
+      <figure class="art-frame">
+        <svg viewBox="0 0 400 280" role="img" aria-label="Concept art: straight razor illustration">
+          <rect width="400" height="280" rx="8" fill="#1f3d2b"/>
+          <g transform="rotate(-24 200 150)">
+            <rect x="90" y="138" width="150" height="30" rx="6" fill="#f6f1e3"/>
+            <line x1="90" y1="162" x2="240" y2="162" stroke="#a63d2f" stroke-width="6"/>
+            <rect x="238" y="132" width="86" height="42" rx="18" fill="#f2b134"/>
+            <circle cx="318" cy="153" r="10" fill="none" stroke="#1f3d2b" stroke-width="5"/>
+          </g>
+          <line x1="70" y1="220" x2="330" y2="220" stroke="#f6f1e3" stroke-width="5" stroke-dasharray="14 10"/>
+          <text x="200" y="40" fill="#f6f1e3" font-family="Zilla Slab, serif" font-weight="700" font-size="19" text-anchor="middle">THE RAZORLINE</text>
+        </svg>
+        <figcaption>Concept art</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<hr class="dashed-div">
+
+<section id="visit">
+  <div class="wrap">
+    <span class="sec-label">Come by</span>
+    <h2 class="sec-title">Visit the Shop</h2>
+    <p class="sec-intro">On Pio Nono Ave in Macon. Call ahead and ask for Wade White's team.</p>
+    <div class="visit-wrap">
+      <div class="visit-card">
+        <h3>Find Us</h3>
+        <address>
+          1381 Pio Nono Ave<br>
+          Macon, GA 31204
+        </address>
+        <div class="phone"><a href="tel:+14788128422">(478) 812-8422</a></div>
+        <a class="btn y" href="tel:+14788128422">Call to book</a>
+      </div>
+      <div class="visit-card light">
+        <h3>Hours</h3>
+        <ul class="hours">
+          <li><span>Monday to Saturday</span><span>8:00 AM to 8:00 PM</span></li>
+          <li><span>Sunday</span><span class="sun-call">Hours may vary, call to confirm</span></li>
+        </ul>
+        <p style="margin-top:16px;font-size:15px;">Questions? Call (478) 812-8422.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="wordmark">Razorline <em>Barbershop</em></div>
+    <p>This is an unlisted design concept created by Freightfolio as a preview. It is not the business's website, and no content here should be taken as the business's own statements.</p>
+    <p class="credit">Concept mockup by <a href="https://freightfolio.net">Freightfolio</a> &middot; Design preview, do not index.</p>
+  </div>
+</footer>
+</body>
+</html>

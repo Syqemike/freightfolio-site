@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Vjs Cutz &amp; Styles | Macon, GA | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141210;
+  --paper:#f4efe4;
+  --orange:#e8622c;
+  --paper-dark:#e9e1cf;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.55;}
+a{color:inherit;}
+.disclosure{background:var(--ink);color:var(--paper);text-align:center;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:10px 16px;}
+.disclosure strong{color:var(--orange);}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+header.site-head{border-bottom:4px solid var(--ink);padding:26px 0 18px;}
+.head-row{display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+.brand{font-family:"Archivo Black",sans-serif;font-size:clamp(26px,3.4vw,40px);letter-spacing:-.01em;line-height:1;}
+.brand .amp{color:var(--orange);}
+.tagline{font-size:13px;letter-spacing:.28em;text-transform:uppercase;margin-top:8px;}
+nav.sections{display:flex;gap:4px;flex-wrap:wrap;margin-top:18px;}
+nav.sections a{text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;border:2px solid var(--ink);background:transparent;transition:background .15s,color .15s;}
+nav.sections a:hover{background:var(--ink);color:var(--paper);}
+.hero{padding:64px 0 52px;border-bottom:4px solid var(--ink);position:relative;overflow:hidden;}
+.masthead-kicker{font-size:14px;letter-spacing:.32em;text-transform:uppercase;font-weight:700;margin-bottom:18px;}
+.masthead-kicker .chip{display:inline-block;background:var(--orange);color:var(--ink);padding:4px 12px;letter-spacing:.22em;}
+.hero h1{font-family:"Archivo Black",sans-serif;font-size:clamp(52px,10vw,138px);line-height:.94;letter-spacing:-.02em;text-transform:uppercase;}
+.hero h1 .stroke{color:transparent;-webkit-text-stroke:3px var(--ink);}
+.hero h1 .fill-orange{color:var(--orange);}
+.hero-sub{max-width:560px;margin-top:26px;font-size:18px;font-weight:500;}
+.hero-meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:28px;font-size:15px;font-weight:700;}
+.hero-meta span{display:flex;align-items:center;gap:8px;}
+.dot{width:10px;height:10px;background:var(--orange);border-radius:50%;display:inline-block;}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.btn{display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.06em;padding:16px 30px;border:3px solid var(--ink);text-transform:uppercase;font-size:15px;}
+.btn.solid{background:var(--orange);color:var(--ink);}
+.btn.ghost{background:transparent;}
+.btn.solid:hover,.btn.ghost:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+.hero-rating{margin-top:26px;font-size:15px;font-weight:500;}
+.hero-rating strong{font-weight:700;}
+.hero-stamp{position:absolute;right:5%;top:60px;transform:rotate(9deg);border:4px solid var(--orange);color:var(--orange);font-family:"Archivo Black",sans-serif;font-size:15px;letter-spacing:.18em;padding:12px 18px;text-transform:uppercase;background:rgba(244,239,228,.75);}
+@media(max-width:760px){.hero-stamp{position:static;transform:rotate(-2deg);display:inline-block;margin-top:24px;}}
+section{padding:64px 0;border-bottom:4px solid var(--ink);}
+.sec-kicker{font-size:13px;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:var(--orange);margin-bottom:12px;}
+.sec-title{font-family:"Archivo Black",sans-serif;font-size:clamp(30px,4.6vw,54px);text-transform:uppercase;line-height:1;margin-bottom:14px;}
+.sec-lede{max-width:640px;font-size:17px;margin-bottom:36px;}
+.stubs{display:grid;gap:0;border:3px solid var(--ink);background:var(--paper);}
+.stub{display:grid;grid-template-columns:64px 1fr auto;gap:22px;align-items:center;padding:26px 26px;background:var(--paper);}
+.stub + .stub{border-top:3px dashed var(--ink);}
+.stub-num{font-family:"Archivo Black",sans-serif;font-size:24px;color:var(--orange);width:64px;height:64px;display:flex;align-items:center;justify-content:center;border:3px dashed var(--ink);border-radius:50%;flex-shrink:0;}
+.stub h3{font-family:"Archivo Black",sans-serif;font-size:clamp(19px,2.4vw,26px);text-transform:uppercase;line-height:1.15;margin-bottom:6px;}
+.stub p{font-size:15px;max-width:520px;}
+.stub .cta{display:inline-block;margin-top:12px;font-weight:700;text-decoration:none;border:2px solid var(--ink);padding:8px 16px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;}
+.stub .cta:hover{background:var(--ink);color:var(--paper);}
+@media(max-width:680px){.stub{grid-template-columns:72px 1fr;gap:16px;}.stub .cta{grid-column:2;justify-self:start;}}
+.two-col{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:start;}
+@media(max-width:860px){.two-col{grid-template-columns:1fr;}}
+.craft-list{list-style:none;display:grid;gap:18px;margin-top:6px;}
+.craft-list li{border-left:6px solid var(--orange);padding:6px 0 6px 18px;}
+.craft-list strong{display:block;font-size:17px;text-transform:uppercase;letter-spacing:.04em;}
+.craft-list span{font-size:15px;}
+.polaroids{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+@media(max-width:560px){.polaroids{grid-template-columns:1fr;}}
+.polaroid{background:#fff;padding:12px 12px 0;border:2px solid var(--ink);box-shadow:7px 7px 0 var(--ink);transform:rotate(-1.4deg);}
+.polaroid:nth-child(even){transform:rotate(1.6deg);}
+.polaroid svg{display:block;width:100%;height:auto;background:var(--ink);}
+.polaroid figcaption{font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:12px 6px 14px;font-weight:700;}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:10px;}
+@media(max-width:760px){.visit-grid{grid-template-columns:1fr;}}
+.visit-card{border:3px solid var(--ink);padding:30px;background:var(--paper);}
+.visit-card.orange{background:var(--orange);}
+.visit-card h3{font-family:"Archivo Black",sans-serif;font-size:20px;text-transform:uppercase;margin-bottom:16px;}
+.stamp-box{border:3px dashed var(--ink);padding:16px 18px;font-weight:700;font-size:16px;line-height:2;}
+.stamp-box .closed{color:var(--ink);background:var(--paper);display:inline-block;padding:0 10px;}
+.hours-row{display:flex;justify-content:space-between;gap:10px;}
+.visit-card address{font-style:normal;font-size:17px;line-height:1.7;}
+.visit-card .phone{font-family:"Archivo Black",sans-serif;font-size:clamp(22px,3vw,30px);margin:14px 0;}
+.visit-card .phone a{text-decoration:none;}
+.visit-card .phone a:hover{color:var(--paper);}
+.small-note{font-size:14px;margin-top:10px;}
+footer{background:var(--ink);color:var(--paper);padding:44px 0 34px;}
+.foot-brand{font-family:"Archivo Black",sans-serif;font-size:22px;text-transform:uppercase;margin-bottom:10px;}
+.foot-brand .amp{color:var(--orange);}
+footer p{font-size:14px;max-width:720px;color:#cfc8b6;}
+footer .credit{margin-top:18px;font-size:13px;letter-spacing:.06em;}
+footer a{color:var(--orange);}
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Design preview</strong> &nbsp;|&nbsp; Concept mockup created by Freightfolio. This is not the business's website.</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <div class="brand">VJS CUTZ <span class="amp">&amp;</span> STYLES</div>
+        <div class="tagline">Macon, Georgia &middot; Barbershop</div>
+      </div>
+    </div>
+    <nav class="sections" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#craft">The Craft</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="masthead-kicker"><span class="chip">Macon Block Paper</span> &nbsp; Issue No. 01</div>
+    <h1>Vjs Cutz<br><span class="stroke">&amp;</span> <span class="fill-orange">Styles</span></h1>
+    <p class="hero-sub">Sharp fades, clean tapers, and careful beard work on 2nd Street in Macon. Every cut finished with a crisp lineup.</p>
+    <div class="hero-meta">
+      <span><i class="dot"></i> 318 2nd St, Macon, GA 31201</span>
+      <span><i class="dot"></i> Tue to Sat, 9 AM to 7 PM</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn solid" href="tel:+14782386781">Call to book</a>
+      <a class="btn ghost" href="#services">See services</a>
+    </div>
+    <p class="hero-rating">Rated <strong>4.8 from 41 Google reviews</strong>.</p>
+    <div class="hero-stamp">Call to book</div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-kicker">Admit one</div>
+    <h2 class="sec-title">Services</h2>
+    <p class="sec-lede">Five ways to leave the chair looking right. Pick your lane and call to set up your appointment.</p>
+    <div class="stubs">
+      <div class="stub">
+        <div class="stub-num">01</div>
+        <div>
+          <h3>Fade Haircuts</h3>
+          <p>Blended fades cut to match your hair and your head shape. Clean on the sides, sharp at the neck.</p>
+          <a class="cta" href="tel:+14782386781">Call to book</a>
+        </div>
+        <div></div>
+      </div>
+      <div class="stub">
+        <div class="stub-num">02</div>
+        <div>
+          <h3>Tapers</h3>
+          <p>A natural taper that keeps the top intact and tightens up the edges. Good for work and weekends.</p>
+          <a class="cta" href="tel:+14782386781">Call to book</a>
+        </div>
+        <div></div>
+      </div>
+      <div class="stub">
+        <div class="stub-num">03</div>
+        <div>
+          <h3>Beard Service</h3>
+          <p>Shape, line, and detail work for the beard. Cheeks and neckline edged clean.</p>
+          <a class="cta" href="tel:+14782386781">Call to book</a>
+        </div>
+        <div></div>
+      </div>
+      <div class="stub">
+        <div class="stub-num">04</div>
+        <div>
+          <h3>Retwists</h3>
+          <p>Retwists that keep your locs neat and rooted. Tidy from root to end.</p>
+          <a class="cta" href="tel:+14782386781">Call to book</a>
+        </div>
+        <div></div>
+      </div>
+      <div class="stub">
+        <div class="stub-num">05</div>
+        <div>
+          <h3>2-Strand Twists</h3>
+          <p>Two-strand twists styled with even parts and consistent tension. A clean, protective look.</p>
+          <a class="cta" href="tel:+14782386781">Call to book</a>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="craft">
+  <div class="wrap">
+    <div class="sec-kicker">From the chair</div>
+    <h2 class="sec-title">About the Craft</h2>
+    <p class="sec-lede">The work centers on five things done well: fades, tapers, beard service, retwists, and 2-strand twists. The goal is simple. You walk out with edges you can see from across the room.</p>
+    <div class="two-col">
+      <div>
+        <ul class="craft-list">
+          <li><strong>Precision first</strong><span>Fades and tapers are blended by hand so the transition stays smooth in daylight and in photos.</span></li>
+          <li><strong>Lineups that last</strong><span>Foreheads, temples, and beards edged with a steady hand. The details make the cut.</span></li>
+          <li><strong>Loc and twist care</strong><span>Retwists and 2-strand twists done with attention to parting, tension, and finish.</span></li>
+        </ul>
+      </div>
+      <div class="polaroids">
+        <figure class="polaroid">
+          <svg viewBox="0 0 400 300" role="img" aria-label="Concept art: barber clipper with motion lines">
+            <rect width="400" height="300" fill="#141210"/>
+            <g stroke="#e8622c" stroke-width="5" fill="none">
+              <rect x="150" y="60" width="100" height="150" rx="14"/>
+              <rect x="150" y="60" width="100" height="34" rx="10" fill="#e8622c" stroke="none"/>
+              <line x1="150" y1="210" x2="150" y2="258"/><line x1="250" y1="210" x2="250" y2="258"/>
+              <rect x="138" y="252" width="124" height="20" rx="8"/>
+            </g>
+            <g stroke="#f4efe4" stroke-width="3">
+              <line x1="168" y1="66" x2="232" y2="66"/><line x1="168" y1="78" x2="232" y2="78"/>
+            </g>
+            <g stroke="#e8622c" stroke-width="3">
+              <line x1="80" y1="120" x2="120" y2="120"/><line x1="80" y1="150" x2="120" y2="150"/>
+              <line x1="80" y1="180" x2="120" y2="180"/>
+              <line x1="280" y1="120" x2="320" y2="120"/><line x1="280" y1="150" x2="320" y2="150"/>
+              <line x1="280" y1="180" x2="320" y2="180"/>
+            </g>
+            <text x="200" y="40" fill="#f4efe4" font-family="Archivo Black, sans-serif" font-size="20" text-anchor="middle" letter-spacing="4">THE CLIPPER</text>
+          </svg>
+          <figcaption>Concept art</figcaption>
+        </figure>
+        <figure class="polaroid">
+          <svg viewBox="0 0 400 300" role="img" aria-label="Concept art: sharp lineup on a profile silhouette">
+            <rect width="400" height="300" fill="#141210"/>
+            <path d="M168 84 C 132 84, 116 116, 118 150 L 114 168 C 112 178, 118 184, 128 184 L 132 196 C 128 214, 138 226, 152 228 L 148 292 L 252 292 L 248 228 C 268 222, 276 206, 272 188 C 270 172, 262 168, 256 160 C 268 140, 266 100, 240 84 Z" fill="none" stroke="#f4efe4" stroke-width="5"/>
+            <line x1="120" y1="112" x2="252" y2="112" stroke="#e8622c" stroke-width="6"/>
+            <line x1="120" y1="124" x2="244" y2="124" stroke="#f4efe4" stroke-width="3"/>
+            <line x1="252" y1="196" x2="252" y2="292" stroke="#e8622c" stroke-width="4"/>
+            <text x="200" y="42" fill="#f4efe4" font-family="Archivo Black, sans-serif" font-size="20" text-anchor="middle" letter-spacing="4">THE LINEUP</text>
+          </svg>
+          <figcaption>Concept art</figcaption>
+        </figure>
+        <figure class="polaroid">
+          <svg viewBox="0 0 400 300" role="img" aria-label="Concept art: two strand twist pattern">
+            <rect width="400" height="300" fill="#141210"/>
+            <g stroke="#e8622c" stroke-width="6" fill="none">
+              <path d="M90 40 C 130 90, 50 140, 90 190 C 130 240, 50 280, 90 300"/>
+              <path d="M200 40 C 240 90, 160 140, 200 190 C 240 240, 160 280, 200 300"/>
+              <path d="M310 40 C 350 90, 270 140, 310 190 C 350 240, 270 280, 310 300"/>
+            </g>
+            <g stroke="#f4efe4" stroke-width="3" fill="none">
+              <path d="M120 40 C 160 90, 80 140, 120 190 C 160 240, 80 280, 120 300"/>
+              <path d="M230 40 C 270 90, 190 140, 230 190 C 270 240, 190 280, 230 300"/>
+              <path d="M340 40 C 380 90, 300 140, 340 190 C 380 240, 300 280, 340 300"/>
+            </g>
+            <text x="200" y="34" fill="#f4efe4" font-family="Archivo Black, sans-serif" font-size="20" text-anchor="middle" letter-spacing="4">THE TWIST</text>
+          </svg>
+          <figcaption>Concept art</figcaption>
+        </figure>
+        <figure class="polaroid">
+          <svg viewBox="0 0 400 300" role="img" aria-label="Concept art: barber tools flat lay">
+            <rect width="400" height="300" fill="#141210"/>
+            <g transform="rotate(-18 200 150)">
+              <rect x="120" y="120" width="160" height="26" rx="12" fill="none" stroke="#f4efe4" stroke-width="6"/>
+              <circle cx="130" cy="133" r="22" fill="none" stroke="#e8622c" stroke-width="6"/>
+            </g>
+            <g transform="rotate(14 200 200)">
+              <rect x="140" y="190" width="120" height="20" rx="10" fill="#e8622c"/>
+              <rect x="140" y="210" width="120" height="8" fill="#f4efe4"/>
+            </g>
+            <text x="200" y="50" fill="#f4efe4" font-family="Archivo Black, sans-serif" font-size="20" text-anchor="middle" letter-spacing="4">THE TOOLS</text>
+          </svg>
+          <figcaption>Concept art</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-kicker">Find the shop</div>
+    <h2 class="sec-title">Visit</h2>
+    <p class="sec-lede">On 2nd Street in Macon. Call ahead and the chair will be ready.</p>
+    <div class="visit-grid">
+      <div class="visit-card orange">
+        <h3>Hours</h3>
+        <div class="stamp-box">
+          <div class="hours-row"><span>Tue to Sat</span><span>9:00 AM to 7:00 PM</span></div>
+          <div class="hours-row"><span>Sunday</span><span class="closed">CLOSED</span></div>
+          <div class="hours-row"><span>Monday</span><span class="closed">CLOSED</span></div>
+        </div>
+        <p class="small-note">Stamped and posted: open five days, resting Sunday and Monday.</p>
+      </div>
+      <div class="visit-card">
+        <h3>Address &amp; Phone</h3>
+        <address>
+          318 2nd St<br>
+          Macon, GA 31201
+        </address>
+        <div class="phone"><a href="tel:+14782386781">(478) 238-6781</a></div>
+        <a class="btn solid" href="tel:+14782386781">Call to book</a>
+        <p class="small-note">Questions? Call (478) 238-6781.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand">VJS CUTZ <span class="amp">&amp;</span> STYLES</div>
+    <p>This is an unlisted design concept created by Freightfolio as a preview. It is not the business's website, and no content here should be taken as the business's own statements.</p>
+    <p class="credit">Concept mockup by <a href="https://freightfolio.net">Freightfolio</a> &middot; Design preview, do not index.</p>
+  </div>
+</footer>
+</body>
+</html>

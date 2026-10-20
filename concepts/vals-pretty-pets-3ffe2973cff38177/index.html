@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Val's Pretty Pets | All-Breed Dog Grooming, West Columbia, SC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf5ea;
+    --paper:#fffdf8;
+    --sky:#b9d8ea;
+    --sky-deep:#8fb8d4;
+    --cherry:#c0303a;
+    --cherry-dark:#99242c;
+    --ink:#2b2620;
+    --ink-soft:#5c554a;
+    --hairline:#e4d9c3;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Public Sans',system-ui,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{font-family:'Fredoka',sans-serif;letter-spacing:.01em;}
+  a{color:var(--cherry);}
+  img,svg{display:block;max-width:100%;}
+
+  /* ---------- disclosure bar ---------- */
+  .disclosure{
+    background:var(--cherry);
+    color:#fff;
+    text-align:center;
+    font-size:.8rem;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    padding:.7rem 1rem;
+  }
+  .disclosure small{display:block;font-weight:500;letter-spacing:.04em;text-transform:none;font-size:.78rem;opacity:.95;margin-top:.15rem;}
+
+  /* ---------- nav ---------- */
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,245,234,.96);
+    border-bottom:2px solid var(--ink);
+    display:flex;align-items:center;justify-content:space-between;
+    padding:.65rem 1.25rem;gap:1rem;
+  }
+  .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);}
+  .brand .pawmark{width:34px;height:34px;flex:none;}
+  .brand span{font-family:'Fredoka',sans-serif;font-weight:700;font-size:1.05rem;line-height:1.1;}
+  .brand small{display:block;font-family:'Public Sans',sans-serif;font-weight:600;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cherry);}
+  .navlinks{display:flex;gap:1.4rem;align-items:center;}
+  .navlinks a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.92rem;}
+  .navlinks a:hover{color:var(--cherry);}
+  .btn{
+    display:inline-block;background:var(--cherry);color:#fff;
+    font-family:'Fredoka',sans-serif;font-weight:600;font-size:1rem;
+    padding:.75rem 1.7rem;border-radius:999px;text-decoration:none;
+    border:2px solid var(--cherry-dark);
+    box-shadow:0 3px 0 var(--cherry-dark);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 5px 0 var(--cherry-dark);}
+  .btn:active{transform:translateY(1px);box-shadow:0 1px 0 var(--cherry-dark);}
+  .btn.small{font-size:.85rem;padding:.5rem 1.15rem;}
+  .btn.sky{background:var(--sky);border-color:var(--sky-deep);color:var(--ink);box-shadow:0 3px 0 var(--sky-deep);}
+  .btn.sky:hover{box-shadow:0 5px 0 var(--sky-deep);}
+
+  /* ---------- hero appointment card ---------- */
+  .hero{padding:3rem 1.25rem 2.5rem;position:relative;overflow:hidden;}
+  .hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:radial-gradient(var(--hairline) 1.2px, transparent 1.3px);
+    background-size:26px 26px;opacity:.5;
+  }
+  .card{
+    position:relative;max-width:860px;margin:0 auto;
+    background:var(--paper);
+    border:2px solid var(--ink);border-radius:18px;
+    box-shadow:8px 8px 0 var(--sky);
+    padding:2.6rem 2.6rem 2.2rem;
+    text-align:center;
+  }
+  .card .punched{display:flex;justify-content:center;gap:14px;margin:0 0 1.4rem;}
+  .card .punched i{width:14px;height:14px;border-radius:50%;background:var(--cream);border:2px solid var(--ink);display:block;}
+  .cardno{
+    font-size:.75rem;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-soft);
+    margin-bottom:.9rem;
+  }
+  .card h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:700;line-height:1.02;color:var(--ink);text-shadow:0 2px 0 var(--sky);}
+  .card h1 .red{color:var(--cherry);text-shadow:0 2px 0 #f3c6c9;}
+  .tagline{font-size:1.15rem;font-weight:600;color:var(--ink-soft);margin:.9rem auto 0;max-width:34rem;}
+  .heroart{margin:1.6rem auto 0;max-width:420px;}
+  .caption{font-size:.78rem;color:var(--ink-soft);font-style:italic;margin-top:.5rem;}
+  .cta-row{margin-top:1.6rem;display:flex;flex-direction:column;align-items:center;gap:.55rem;}
+  .cta-note{font-size:.95rem;color:var(--ink-soft);}
+  .cta-note strong{color:var(--ink);}
+
+  /* seal badge */
+  .seal{
+    position:absolute;top:-38px;right:-24px;width:132px;height:132px;
+    transform:rotate(10deg);
+  }
+  .seal .disc{
+    width:100%;height:100%;border-radius:50%;
+    background:var(--cherry);color:#fff;
+    border:3px dashed #fff;outline:3px solid var(--cherry);
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,.18);
+  }
+  .seal .disc div{font-family:'Fredoka',sans-serif;font-weight:600;font-size:.68rem;line-height:1.35;letter-spacing:.06em;padding:.6rem;}
+  .seal .disc .big{font-size:1.5rem;font-weight:700;display:block;}
+
+  /* ---------- section scaffolding ---------- */
+  section{padding:3.2rem 1.25rem;max-width:1000px;margin:0 auto;}
+  .eyebrow{
+    display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;
+    color:var(--cherry);border:2px solid var(--cherry);border-radius:999px;
+    padding:.3rem 1rem;margin-bottom:1rem;background:var(--paper);
+  }
+  h2.sec{font-size:clamp(1.9rem,4.5vw,2.7rem);font-weight:700;margin-bottom:.4rem;}
+  .sec-sub{color:var(--ink-soft);max-width:38rem;margin-bottom:2rem;font-size:1.05rem;}
+
+  .paw-divider{display:flex;justify-content:center;gap:10px;margin:0 auto;padding:0 1rem;}
+  .paw-divider svg{width:30px;height:30px;opacity:.85;}
+  .paw-divider svg:nth-child(2){transform:translateY(-8px);}
+  .paw-divider svg:nth-child(4){transform:translateY(-8px);}
+
+  /* ---------- ticket rows ---------- */
+  .tickets{display:flex;flex-direction:column;gap:1.3rem;}
+  .ticket{
+    display:flex;align-items:stretch;
+    background:var(--paper);
+    border:2px solid var(--ink);border-radius:14px;
+    overflow:hidden;position:relative;
+    box-shadow:5px 5px 0 var(--sky);
+  }
+  .ticket::before,.ticket::after{
+    content:"";position:absolute;top:50%;width:26px;height:26px;border-radius:50%;
+    background:var(--cream);border:2px solid var(--ink);transform:translateY(-50%);z-index:2;
+  }
+  .ticket::before{left:-15px;}
+  .ticket::after{right:-15px;}
+  .stub{
+    flex:0 0 150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;
+    background:var(--sky);border-right:3px dashed var(--ink);
+    padding:1.3rem .8rem;text-align:center;
+  }
+  .stub .tno{font-family:'Fredoka',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.22em;color:var(--ink);}
+  .stub svg{width:44px;height:44px;}
+  .tdetail{padding:1.3rem 1.5rem;flex:1;}
+  .tdetail h3{font-size:1.35rem;font-weight:600;margin-bottom:.25rem;}
+  .tdetail h3 .amp{color:var(--cherry);}
+  .tdetail p{color:var(--ink-soft);font-size:1rem;max-width:40rem;}
+
+  /* ---------- why vals ---------- */
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.6rem;}
+  .why-card{
+    background:var(--paper);border:2px solid var(--ink);border-radius:14px;
+    padding:1.6rem 1.3rem;text-align:center;box-shadow:5px 5px 0 var(--sky);
+  }
+  .why-card svg{width:52px;height:52px;margin:0 auto .8rem;}
+  .why-card h3{font-size:1.15rem;font-weight:600;margin-bottom:.4rem;}
+  .why-card p{font-size:.95rem;color:var(--ink-soft);}
+  .why-art{margin:2.2rem auto 0;max-width:560px;text-align:center;}
+
+  /* ---------- visit ---------- */
+  .visit-wrap{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:1.4rem;margin-top:1.6rem;
+  }
+  .visit-card{
+    background:var(--paper);border:2px solid var(--ink);border-radius:14px;
+    padding:1.8rem;box-shadow:5px 5px 0 var(--sky);
+  }
+  .visit-card h3{font-size:1.25rem;font-weight:600;margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem;}
+  .visit-card h3 svg{width:26px;height:26px;}
+  .hours{width:100%;border-collapse:collapse;font-size:1rem;margin-top:.4rem;}
+  .hours td{padding:.45rem .2rem;border-bottom:1px dashed var(--hairline);}
+  .hours tr:last-child td{border-bottom:none;}
+  .hours td:last-child{text-align:right;font-weight:600;}
+  .closed{color:var(--cherry);font-weight:700;}
+  address{font-style:normal;font-size:1.05rem;line-height:1.7;}
+  .rating{
+    display:inline-block;margin-top:1rem;background:var(--sky);
+    border:2px solid var(--ink);border-radius:999px;
+    padding:.45rem 1.2rem;font-weight:700;font-size:.95rem;
+  }
+  .rating .star{color:var(--cherry);}
+  .visit-cta{margin-top:1.4rem;display:flex;flex-direction:column;gap:.5rem;align-items:flex-start;}
+  .dir-link{font-weight:600;font-size:.95rem;}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--ink);color:#efe8d8;padding:2.2rem 1.25rem;text-align:center;margin-top:2rem;}
+  footer .fname{font-family:'Fredoka',sans-serif;font-weight:700;font-size:1.3rem;color:#fff;}
+  footer p{font-size:.88rem;max-width:44rem;margin:.6rem auto 0;color:#cfc6b2;}
+  footer a{color:var(--sky);}
+
+  @media (max-width:760px){
+    .navlinks a:not(.btn){display:none;}
+    .card{padding:2rem 1.2rem 1.8rem;}
+    .seal{width:104px;height:104px;top:-30px;right:-8px;}
+    .cardno{letter-spacing:.2em;padding-right:96px;}
+    .why-grid{grid-template-columns:1fr;}
+    .visit-wrap{grid-template-columns:1fr;}
+    .ticket{flex-direction:column;}
+    .stub{flex:none;border-right:none;border-bottom:3px dashed var(--ink);flex-direction:row;padding:.9rem;}
+    .stub svg{width:34px;height:34px;}
+    .ticket::before{left:50%;top:-15px;transform:translateX(-50%);}
+    .ticket::after{left:50%;right:auto;top:auto;bottom:-15px;transform:translateX(-50%);}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">
+  Design Preview
+  <small>An unlisted concept mockup created by Freightfolio. This is not the business's official website.</small>
+</div>
+
+<nav>
+  <a class="brand" href="#top" aria-label="Val's Pretty Pets home">
+    <svg class="pawmark" viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="24" cy="24" r="22" fill="#c0303a"/>
+      <g fill="#faf5ea">
+        <ellipse cx="24" cy="29" rx="8" ry="6.5"/>
+        <circle cx="14.5" cy="19" r="4"/><circle cx="21" cy="14.5" r="4"/>
+        <circle cx="27" cy="14.5" r="4"/><circle cx="33.5" cy="19" r="4"/>
+      </g>
+    </svg>
+    <span>Val's Pretty Pets<small>West Columbia, SC</small></span>
+  </a>
+  <div class="navlinks">
+    <a href="#services">Services</a>
+    <a href="#why">Why Val's</a>
+    <a href="#visit">Visit</a>
+    <a class="btn small" href="tel:+18037943647">Call to book</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="card">
+    <div class="seal" aria-label="Family business, 20 plus years">
+      <div class="disc"><div><span class="big">20+</span>years of<br>family grooming</div></div>
+    </div>
+    <div class="punched" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="cardno">Appointment Card &middot; Admit One Good Dog</div>
+    <h1>Val's <span class="red">Pretty</span> Pets</h1>
+    <p class="tagline">All-breed dog grooming in West Columbia, South Carolina. A family business with 20+ years of experience.</p>
+
+    <figure class="heroart">
+      <svg viewBox="0 0 400 260" role="img" aria-label="Concept art: line drawing of a freshly groomed dog wearing a bow">
+        <rect x="8" y="8" width="384" height="244" rx="18" fill="#b9d8ea" opacity=".35"/>
+        <g fill="none" stroke="#2b2620" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+          <!-- body -->
+          <path d="M110 205 C100 160 115 130 150 118"/>
+          <path d="M290 205 C300 160 285 130 250 118"/>
+          <path d="M150 118 C170 100 230 100 250 118"/>
+          <!-- head -->
+          <circle cx="200" cy="88" r="52" fill="#fffdf8"/>
+          <!-- floppy ears -->
+          <path d="M154 62 C132 66 126 100 142 122 C150 132 162 124 160 104 C159 88 158 74 154 62 Z" fill="#fffdf8"/>
+          <path d="M246 62 C268 66 274 100 258 122 C250 132 238 124 240 104 C241 88 242 74 246 62 Z" fill="#fffdf8"/>
+          <!-- face -->
+          <circle cx="182" cy="80" r="5" fill="#2b2620" stroke="none"/>
+          <circle cx="218" cy="80" r="5" fill="#2b2620" stroke="none"/>
+          <ellipse cx="200" cy="104" rx="16" ry="12" fill="#faf5ea"/>
+          <path d="M194 98 L206 98 L200 106 Z" fill="#2b2620" stroke="none"/>
+          <path d="M200 106 C200 112 194 114 190 110 M200 106 C200 112 206 114 210 110"/>
+          <!-- bow -->
+          <g transform="translate(252,52)">
+            <path d="M0 0 L-26 -16 L-26 16 Z" fill="#c0303a" stroke="#99242c" stroke-width="4"/>
+            <path d="M0 0 L26 -16 L26 16 Z" fill="#c0303a" stroke="#99242c" stroke-width="4"/>
+            <circle r="8" fill="#c0303a" stroke="#99242c" stroke-width="4"/>
+          </g>
+          <!-- collar -->
+          <path d="M158 128 C180 142 220 142 242 128" stroke="#c0303a" stroke-width="7"/>
+          <circle cx="200" cy="142" r="7" fill="#b9d8ea" stroke-width="4"/>
+          <!-- paws -->
+          <path d="M140 205 L140 225 M160 205 L160 225 M240 205 L240 225 M260 205 L260 225"/>
+          <!-- sparkles -->
+          <path d="M92 60 l0 -14 M85 53 l14 0" stroke="#c0303a" stroke-width="4"/>
+          <path d="M312 190 l0 -12 M306 184 l12 0" stroke="#c0303a" stroke-width="4"/>
+        </g>
+      </svg>
+      <figcaption class="caption">Concept art</figcaption>
+    </figure>
+
+    <div class="cta-row">
+      <a class="btn" href="tel:+18037943647">Call to book</a>
+      <p class="cta-note">Questions? Call <strong>(803) 794-3647</strong>. That spells 794-DOGS.</p>
+    </div>
+  </div>
+</header>
+
+<div class="paw-divider" aria-hidden="true">
+  <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+  <svg viewBox="0 0 48 48"><g fill="#8fb8d4"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+  <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+  <svg viewBox="0 0 48 48"><g fill="#8fb8d4"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+  <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+</div>
+
+<section id="services">
+  <span class="eyebrow">The service menu</span>
+  <h2 class="sec">Tear off a ticket, bring a dog</h2>
+  <p class="sec-sub">Every visit is booked by phone. Pick the service your dog needs and give the shop a call.</p>
+
+  <div class="tickets">
+    <div class="ticket">
+      <div class="stub">
+        <span class="tno">TICKET 01</span>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#2b2620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22 L10 34 C10 37 13 39 16 39 L32 39 C35 39 38 37 38 34 L40 22 Z" fill="#faf5ea"/><path d="M6 22 L42 22" stroke-width="4"/><path d="M14 39 L12 44 M34 39 L36 44"/><circle cx="20" cy="12" r="3" fill="#faf5ea"/><circle cx="29" cy="9" r="2.4" fill="#faf5ea"/><circle cx="35" cy="14" r="2" fill="#faf5ea"/></g></svg>
+      </div>
+      <div class="tdetail">
+        <h3>Dog Baths</h3>
+        <p>Baths for dogs of every breed and size. A clean coat and a happy pup, ready for the ride home.</p>
+      </div>
+    </div>
+
+    <div class="ticket">
+      <div class="stub">
+        <span class="tno">TICKET 02</span>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#2b2620" stroke-width="3" stroke-linecap="round"><circle cx="16" cy="16" r="6"/><circle cx="32" cy="16" r="6"/><path d="M20 21 L10 40 M28 21 L38 40"/><path d="M8 40 L14 40 M34 40 L40 40"/></g></svg>
+      </div>
+      <div class="tdetail">
+        <h3>Haircuts <span class="amp">&amp;</span> Grooming</h3>
+        <p>Full grooming appointments and haircuts, shaped to your dog and your preference. Call to talk through what your dog needs.</p>
+      </div>
+    </div>
+
+    <div class="ticket">
+      <div class="stub">
+        <span class="tno">TICKET 03</span>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#2b2620" stroke-width="3" stroke-linecap="round"><path d="M14 8 L34 8 M14 8 L14 40 M34 8 L34 16"/><path d="M14 16 L24 16 M14 24 L24 24 M14 32 L24 32" stroke-width="2.5"/></g></svg>
+      </div>
+      <div class="tdetail">
+        <h3>Brushing <span class="amp">&amp;</span> Brush-Outs</h3>
+        <p>Brushing and brush-out services to keep coats smooth and tangle-free between grooming visits.</p>
+      </div>
+    </div>
+
+    <div class="ticket">
+      <div class="stub">
+        <span class="tno">TICKET 04</span>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#2b2620" stroke-width="3" stroke-linecap="round"><circle cx="24" cy="24" r="13" fill="#faf5ea"/><path d="M24 11 C30 15 30 21 24 24 C18 21 18 15 24 11 Z" fill="#c0303a" stroke="#99242c"/><path d="M8 34 C12 30 16 30 18 34 M30 34 C32 30 36 30 40 34"/></g></svg>
+      </div>
+      <div class="tdetail">
+        <h3>Social <span class="amp">&amp;</span> Play Time</h3>
+        <p>Dogs get social and play time during their visit. Grooming day doubles as a fun day out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="paw-divider" aria-hidden="true">
+  <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+  <svg viewBox="0 0 48 48"><g fill="#8fb8d4"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+  <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+</div>
+
+<section id="why">
+  <span class="eyebrow">Why Val's</span>
+  <h2 class="sec">The neighborhood groomer</h2>
+  <p class="sec-sub">A family-run shop where the groomers know the dogs by name and the dogs know the way in.</p>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#c0303a" stroke-width="3" stroke-linecap="round"><path d="M24 6 L28 18 L41 18 L31 26 L34 39 L24 31 L14 39 L17 26 L7 18 L20 18 Z" fill="#b9d8ea"/></g></svg>
+      <h3>Family business, 20+ years</h3>
+      <p>Two decades of hands-on grooming experience, run by a family that treats every dog like its own.</p>
+    </div>
+    <div class="why-card">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#2b2620" stroke-width="3" stroke-linecap="round"><circle cx="17" cy="20" r="7" fill="#b9d8ea"/><circle cx="31" cy="20" r="7" fill="#b9d8ea"/><circle cx="24" cy="30" r="9" fill="#faf5ea"/><circle cx="24" cy="30" r="9"/></g></svg>
+      <h3>All breeds welcome</h3>
+      <p>From a quick bath to a full groom, every breed gets the same careful attention.</p>
+    </div>
+    <div class="why-card">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#2b2620" stroke-width="3" stroke-linecap="round"><circle cx="24" cy="22" r="12" fill="#b9d8ea"/><path d="M24 10 C29 13 29 18 24 20 C19 18 19 13 24 10 Z" fill="#c0303a" stroke="#99242c"/><path d="M10 40 C14 36 20 36 24 40 C28 36 34 36 38 40"/></g></svg>
+      <h3>Play time included</h3>
+      <p>Dogs enjoy social and play time during their visit, so grooming day feels like a good day.</p>
+    </div>
+  </div>
+
+  <figure class="why-art">
+    <svg viewBox="0 0 560 220" role="img" aria-label="Concept art: a dog chasing a ball along a trail of paw prints">
+      <g fill="none" stroke="#2b2620" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 180 C120 170 200 150 260 120" stroke-dasharray="2 14"/>
+        <g fill="#c0303a" stroke="none" opacity=".9">
+          <g transform="translate(70,168) scale(.55)"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g>
+          <g transform="translate(130,152) scale(.55) rotate(12)"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g>
+          <g transform="translate(190,134) scale(.55) rotate(-8)"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g>
+        </g>
+        <!-- ball -->
+        <circle cx="300" cy="96" r="26" fill="#c0303a" stroke="#99242c"/>
+        <path d="M300 70 C310 80 310 92 300 100 C290 92 290 80 300 70" fill="#faf5ea" stroke="none" opacity=".9"/>
+        <!-- trotting dog, side profile -->
+        <g>
+          <path d="M392 138 C378 128 372 116 376 104"/>
+          <path d="M376 104 l-7 -8 M376 104 l8 -7" stroke-width="3"/>
+          <path d="M392 138 C400 122 430 116 460 120 C486 124 498 134 496 148 C494 162 470 168 444 166 C418 164 398 156 392 138 Z" fill="#b9d8ea"/>
+          <circle cx="508" cy="112" r="24" fill="#b9d8ea"/>
+          <path d="M526 106 C536 108 540 115 536 121 C532 127 523 127 519 123 Z" fill="#b9d8ea"/>
+          <circle cx="530" cy="115" r="3" fill="#2b2620" stroke="none"/>
+          <circle cx="512" cy="105" r="3.2" fill="#2b2620" stroke="none"/>
+          <path d="M496 92 C488 80 492 70 502 68 C510 67 513 75 509 85" fill="#b9d8ea"/>
+          <path d="M420 164 C416 176 414 186 416 196 M452 166 C454 178 458 188 462 196 M478 162 C484 172 490 180 496 186 M404 162 C396 170 390 178 386 186"/>
+          <path d="M300 96 C340 100 360 104 384 108" stroke-dasharray="2 10"/>
+        </g>
+      </g>
+    </svg>
+    <figcaption class="caption">Concept art</figcaption>
+  </figure>
+</section>
+
+<div class="paw-divider" aria-hidden="true">
+  <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+  <svg viewBox="0 0 48 48"><g fill="#8fb8d4"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+  <svg viewBox="0 0 48 48"><g fill="#c0303a"><ellipse cx="24" cy="29" rx="9" ry="7.5"/><circle cx="13.5" cy="18" r="4.5"/><circle cx="20.5" cy="13" r="4.5"/><circle cx="27.5" cy="13" r="4.5"/><circle cx="34.5" cy="18" r="4.5"/></g></svg>
+</div>
+
+<section id="visit">
+  <span class="eyebrow">Plan your visit</span>
+  <h2 class="sec">Come by the shop</h2>
+  <p class="sec-sub">Appointments are booked by phone. Call ahead and the shop will set a time for your dog.</p>
+
+  <div class="visit-wrap">
+    <div class="visit-card">
+      <h3>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#c0303a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 44 C24 44 10 28 10 18 C10 10 16 4 24 4 C32 4 38 10 38 18 C38 28 24 44 24 44 Z" fill="#b9d8ea"/><circle cx="24" cy="18" r="6" fill="#faf5ea"/></g></svg>
+        Find us
+      </h3>
+      <address>
+        2324 Platt Springs Rd<br>
+        West Columbia, SC 29169
+      </address>
+      <p style="margin-top:.9rem;"><a class="dir-link" href="https://www.google.com/maps/search/?api=1&amp;query=2324+Platt+Springs+Rd+West+Columbia+SC+29169" target="_blank" rel="noopener">Get directions</a></p>
+      <span class="rating"><span class="star">&#9733;</span> 4.8 from 46 Google reviews</span>
+      <figure style="margin-top:1.4rem;">
+        <svg viewBox="0 0 400 190" role="img" aria-label="Concept art: small shop front with a paw print sign">
+          <g fill="none" stroke="#2b2620" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="90" y="70" width="220" height="110" fill="#fffdf8"/>
+            <path d="M70 74 L200 20 L330 74 Z" fill="#c0303a" stroke="#99242c"/>
+            <rect x="170" y="120" width="60" height="60" fill="#b9d8ea"/>
+            <circle cx="200" cy="150" r="5" fill="#2b2620" stroke="none"/>
+            <rect x="110" y="100" width="44" height="40" fill="#b9d8ea"/>
+            <rect x="246" y="100" width="44" height="40" fill="#b9d8ea"/>
+            <path d="M110 100 L132 100 M246 100 L268 100" opacity="0"/>
+            <g transform="translate(200,52) scale(.8)">
+              <ellipse cx="0" cy="8" rx="11" ry="9" fill="#c0303a" stroke="none"/>
+              <circle cx="-13" cy="-4" r="5" fill="#c0303a" stroke="none"/>
+              <circle cx="-4.5" cy="-10" r="5" fill="#c0303a" stroke="none"/>
+              <circle cx="4.5" cy="-10" r="5" fill="#c0303a" stroke="none"/>
+              <circle cx="13" cy="-4" r="5" fill="#c0303a" stroke="none"/>
+            </g>
+            <rect x="60" y="180" width="280" height="8" fill="#8fb8d4" stroke="none"/>
+          </g>
+        </svg>
+        <figcaption class="caption" style="text-align:center;">Concept art</figcaption>
+      </figure>
+    </div>
+
+    <div class="visit-card">
+      <h3>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#c0303a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#b9d8ea"/><path d="M24 14 L24 24 L32 28"/></g></svg>
+        Hours
+      </h3>
+      <table class="hours">
+        <tr><td>Monday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Tuesday</td><td class="closed">Closed</td></tr>
+        <tr><td>Wednesday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Thursday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Friday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+      </table>
+      <div class="visit-cta">
+        <a class="btn" href="tel:+18037943647">Call to book</a>
+        <p class="cta-note">Questions? Call <strong>(803) 794-3647</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fname">Val's Pretty Pets</div>
+  <p>This page is an unlisted design concept made by <a href="https://freightfolio.net">Freightfolio</a>. It is not the business's official website and the business has not endorsed it. Business details shown are from public listings.</p>
+</footer>
+
+<script>
+  // gentle stamp press on the seal when it scrolls into view
+  (function(){
+    var seal = document.querySelector('.seal');
+    if(!seal || !('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          seal.style.transition = 'transform .35s cubic-bezier(.2,1.6,.4,1)';
+          seal.style.transform = 'rotate(10deg) scale(1.12)';
+          setTimeout(function(){ seal.style.transform = 'rotate(10deg) scale(1)'; }, 380);
+          io.disconnect();
+        }
+      });
+    },{threshold:.6});
+    io.observe(seal);
+  })();
+</script>
+</body>
+</html>
