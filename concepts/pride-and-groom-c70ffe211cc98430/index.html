@@ -150,7 +150,7 @@
   .board{
     background:var(--navy);
     color:var(--cream);
-    max-width:760px;margin:0 auto;
+    max-width:760px;margin:64px auto 0;
     padding:46px 44px 40px;
     border:5px solid var(--navy-deep);
     outline:2px solid var(--cream);
@@ -158,6 +158,12 @@
     box-shadow:8px 8px 0 rgba(26,37,55,.25);
     position:relative;
   }
+  .board::before,.board::after{
+    content:"";position:absolute;top:-64px;width:5px;height:64px;
+    background:repeating-linear-gradient(to bottom, var(--navy-deep) 0 7px, rgba(26,37,55,.25) 7px 13px);
+  }
+  .board::before{left:16%;}
+  .board::after{right:16%;}
   .board h3{
     text-align:center;font-size:1rem;letter-spacing:5px;text-transform:uppercase;
     color:#f2dfb8;font-weight:600;margin-bottom:26px;
@@ -186,6 +192,15 @@
 
   /* ============ STORY ============ */
   section.story{padding:20px 0 70px;}
+  .story .est-line{
+    display:flex;align-items:center;justify-content:center;gap:14px;
+    margin:26px auto 0;max-width:420px;
+    font-family:'Zilla Slab',Georgia,serif;font-weight:700;letter-spacing:4px;
+    text-transform:uppercase;font-size:.85rem;color:var(--red);
+  }
+  .story .est-line::before,.story .est-line::after{
+    content:"";flex:1;border-top:2px dashed rgba(36,52,77,.4);
+  }
   .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;max-width:920px;margin:0 auto;}
   .story h2{font-size:clamp(1.6rem,4vw,2.05rem);color:var(--navy);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;max-width:16ch;}
   .story p{margin-bottom:14px;}
@@ -274,7 +289,7 @@
         </div>
       </div>
       <div style="text-align:left;max-width:330px;">
-        <p style="font-weight:600;color:var(--navy);font-size:1.12rem;">We have been washing, clipping, and primping Biloxi's dogs since 1987. Bring us your scruffy pup. We will hand you back a handsome one.</p>
+        <p style="font-weight:600;color:var(--navy);font-size:1.12rem;">We have been washing, clipping, and primping Biloxi's dogs since 1987.</p>
       </div>
     </div>
     <hr class="hero-rule">
@@ -288,7 +303,7 @@
     <div class="board-head">
       <span class="script">straight off the wall</span>
       <h2 class="slab">Our Price Board</h2>
-      <p>Here are the prices. What you see here is what you pay in the shop.</p>
+      <p>Here are the prices, in the shop's own words.</p>
     </div>
     <div class="board">
       <h3>Pride &amp; Groom &middot; Services &amp; Prices</h3>
@@ -312,7 +327,7 @@
         <svg viewBox="0 0 24 24" fill="#f2dfb8"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7L5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
         <svg viewBox="0 0 24 24" fill="#f2dfb8"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7L5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
       </div>
-      <p class="board-foot">Prices vary a little by breed and coat. Call and tell us about your dog, and we will quote you straight.</p>
+      <p class="board-foot">In the shop's own words: "Grooming since 1987. Baths start @ $20, Feet, Face &amp; Fanny start at $30, and Grooms start at $50."</p>
     </div>
   </div>
 </section>
@@ -321,14 +336,15 @@
 
 <section class="story" id="story">
   <div class="wrap">
-    <div class="story-grid">
+    <div class="est-line" aria-hidden="true"><span>&#9733;</span> Est. 1987 <span>&#9733;</span></div>
+    <div class="story-grid" style="margin-top:34px;">
       <div>
         <span class="script" style="font-size:1.7rem;color:var(--red);">a Biloxi original</span>
         <h2 class="slab">Nearly Four Decades of Good Dogs</h2>
         <p class="lead">Pride &amp; Groom has been a Biloxi dog grooming salon since 1987.</p>
-        <p>We are groomers, not a franchise and not a fad. Coast families have been bringing their dogs through our door for a long time, and plenty of those dogs came back year after year.</p>
-        <p>You get groomers who know your dog, honest prices on the board, and a shop that treats your pet like our own.</p>
-        <p class="review-line"><span class="stars-inline">★★★★★</span> 5.0 stars across 18 Google reviews.</p>
+        <p>The shop posts its prices on the board: baths from $20, feet-face-and-fanny trims from $30, and full grooms from $50.</p>
+        <p>It is open Tuesday through Saturday, 9:00 AM to 9:00 PM, and closed Sunday and Monday.</p>
+        <p class="review-line"><span class="stars-inline">★★★★★</span> 5.0 stars from 18 Facebook reviews.</p>
       </div>
       <div class="seal-card">
         <div class="big-num slab">39</div>
@@ -363,7 +379,7 @@
     </div>
     <div class="cta-row">
       <a class="call-btn" href="tel:+12282847834">Call to Book</a>
-      <p class="call-sub">Call first to plan your visit.</p>
+      <p class="call-sub">Questions? Call (228) 284-7834.</p>
     </div>
   </div>
 </section>
