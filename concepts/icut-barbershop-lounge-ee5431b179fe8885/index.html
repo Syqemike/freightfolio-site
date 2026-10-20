@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title>iCut Barber Shop &amp; Lounge | Virginia Beach, VA</title>
-<meta name="description" content="Design preview concept for iCut Barber Shop & Lounge, Virginia Beach VA. Hot towel shaves, $25 cuts.">
+<meta name="description" content="Design preview concept for iCut Barber Shop &amp; Lounge in Virginia Beach, Virginia. Call to ask about current services and pricing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -118,7 +118,7 @@
   .btn-ghost{border:2px solid var(--sand-deep);color:var(--sand)}
   .btn-ghost:hover{border-color:var(--coral);color:var(--coral)}
   .hero-art{position:relative}
-  .hero-art svg{width:100%;height:auto;display:block;border:3px solid rgba(244,233,210,0.25)}
+  .hero-art img{width:100%;height:auto;display:block;border:3px solid rgba(244,233,210,0.25);object-fit:cover;aspect-ratio:6/7}
   .art-cap{
     position:absolute;left:0.9rem;bottom:0.7rem;
     font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;
@@ -159,6 +159,10 @@
     margin-top:1.6rem;background:#fff8;border:2px dashed #c9b98f;
     padding:1rem 1.3rem;font-weight:600;color:#4a5c6e;max-width:44rem;
   }
+  .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  .gal-grid figure{background:#fffdf4;border:2px solid var(--navy);overflow:hidden}
+  .gal-grid img{width:100%;height:230px;object-fit:cover;display:block}
+  .gal-grid figcaption{padding:0.7rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5c6e}
   .hours-sec{background:var(--navy-deep);color:#f8eeda}
   .hours-sec h2{color:#fff}
   .hours-sec .sec-label{color:var(--seafoam)}
@@ -218,6 +222,7 @@
     nav.links a.hide-m{display:none}
     .svc{grid-template-columns:1fr}
     .svc-price{text-align:left}
+    .gal-grid{grid-template-columns:1fr 1fr}
   }
 </style>
 </head>
@@ -233,6 +238,7 @@
     </a>
     <nav class="links" aria-label="Section navigation">
       <a class="hide-m" href="#services">Services</a>
+      <a class="hide-m" href="#gallery">Gallery</a>
       <a class="hide-m" href="#hours">Hours</a>
       <a class="hide-m" href="#visit">Find Us</a>
       <a href="tel:+17575984288" class="nav-call">Call the Shop</a>
@@ -247,7 +253,7 @@
       <div>
         <p class="eyebrow">Virginia Beach, VA &middot; Holland Road</p>
         <h1><span class="cut">iCUT</span> BARBER SHOP <span class="lounge">&amp; LOUNGE</span></h1>
-        <p class="hero-sub">Hot towel shaves, <span class="price">$25 cuts</span>.</p>
+        <p class="hero-sub">Haircuts, <span class="price">hot towel shaves</span>.</p>
         <p class="hero-p">Haircuts, hot towel shaves, head shaves, and beard trims on Holland Road in Virginia Beach. A barbershop with a lounge feel, right in the neighborhood.</p>
         <div class="cta-row">
           <a class="btn btn-coral" href="tel:+17575984288">Call the Shop</a>
@@ -255,32 +261,8 @@
         </div>
       </div>
       <div class="hero-art">
-        <svg viewBox="0 0 480 560" role="img" aria-label="Decorative sunset illustration">
-          <rect width="480" height="560" fill="#0a1e31"/>
-          <circle cx="240" cy="250" r="120" fill="#ef6a4d"/>
-          <circle cx="240" cy="250" r="86" fill="#f4916f"/>
-          <rect y="330" width="480" height="230" fill="#0f2940"/>
-          <path d="M0 380 Q 60 360 120 380 T 240 380 T 360 380 T 480 380 L480 560 L0 560 Z" fill="#16344f"/>
-          <path d="M0 440 Q 80 420 160 440 T 320 440 T 480 440 L480 560 L0 560 Z" fill="#1d3f5c"/>
-          <path d="M0 500 Q 100 485 200 500 T 400 500 T 480 500 L480 560 L0 560 Z" fill="#27536f"/>
-          <g fill="#0a1e31">
-            <rect x="70" y="180" width="10" height="200"/>
-            <path d="M75 180 q -60 -20 -90 -70 M75 180 q 60 -25 95 -60 M75 180 q -10 -60 20 -100 M75 180 q 25 -55 70 -75" stroke="#0a1e31" stroke-width="12" fill="none" stroke-linecap="round"/>
-            <rect x="390" y="210" width="10" height="180"/>
-            <path d="M395 210 q -50 -18 -75 -60 M395 210 q 50 -22 80 -52 M395 210 q -8 -50 18 -85 M395 210 q 22 -46 58 -64" stroke="#0a1e31" stroke-width="10" fill="none" stroke-linecap="round"/>
-          </g>
-          <g fill="#f4e9d2">
-            <rect x="150" y="120" width="180" height="26" rx="2" opacity="0.9"/>
-            <rect x="165" y="96" width="150" height="18" rx="2" opacity="0.55"/>
-          </g>
-          <text x="240" y="139" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="17" fill="#0a1e31" letter-spacing="4">LOUNGE</text>
-          <g fill="#ef6a4d" opacity="0.9">
-            <rect x="120" y="470" width="34" height="8" rx="4"/>
-            <rect x="200" y="500" width="52" height="8" rx="4"/>
-            <rect x="320" y="478" width="40" height="8" rx="4"/>
-          </g>
-        </svg>
-        <span class="art-cap">Decorative illustration</span>
+        <img src="img/real-2.jpg" alt="Customer with red dyed curly top and a lightning-bolt shave design inside iCut">
+        <span class="art-cap">Photo from the shop's Google listing</span>
       </div>
     </div>
   </section>
@@ -291,31 +273,76 @@
     <div class="wrap">
       <p class="sec-label">What they do</p>
       <h2>The chair menu</h2>
-      <p class="sec-intro">Four services, done right. Cuts start at twenty-five dollars. Call the shop for shave and trim pricing.</p>
+      <p class="sec-intro">Haircuts, shaves, and beard trims. Call the shop for current pricing.</p>
       <div class="svc-list">
         <div class="svc">
-          <p class="svc-tag">Most requested</p>
+          <p class="svc-tag">Haircuts</p>
           <h3 class="svc-name">Classic Cut</h3>
-          <p class="svc-price">$25</p>
+          <p class="svc-price"><small>Call for price</small></p>
           <p class="svc-desc">Clean fades, tapers, and sharp finishes, cut to suit your head and your style.</p>
         </div>
         <div class="svc">
+          <p class="svc-tag">Shaves</p>
           <h3 class="svc-name">Hot Towel Shave</h3>
           <p class="svc-price"><small>Call for price</small></p>
-          <p class="svc-desc">A straight razor shave finished with a hot towel. The old school way.</p>
+          <p class="svc-desc">Hot towel shave service. Call the shop for details.</p>
         </div>
         <div class="svc">
+          <p class="svc-tag">Shaves</p>
           <h3 class="svc-name">Head Shave</h3>
           <p class="svc-price"><small>Call for price</small></p>
           <p class="svc-desc">Smooth and even, finished with care from crown to neckline.</p>
         </div>
         <div class="svc">
+          <p class="svc-tag">Beard</p>
           <h3 class="svc-name">Beard Trim</h3>
           <p class="svc-price"><small>Call for price</small></p>
           <p class="svc-desc">Shaped, lined, and cleaned up so the beard matches the cut.</p>
         </div>
       </div>
-      <p class="price-note">Only the $25 cut price is published. For shave and trim pricing, call the shop at (757) 598-4288.</p>
+      <p class="price-note">For current service pricing, call the shop at (757) 598-4288.</p>
+    </div>
+  </section>
+
+  <section class="block" id="gallery">
+    <div class="wrap">
+      <p class="sec-label">The craft</p>
+      <h2>Barbershop work</h2>
+      <p class="sec-intro">Haircuts, fades, and braids. The photos below are from the shop's own Google listing.</p>
+      <div class="gal-grid">
+        <figure>
+          <img src="img/real-1.jpg" alt="Customer with long two-tone braided faux locs" loading="lazy">
+          <figcaption>Two-tone braided faux locs</figcaption>
+        </figure>
+        <figure>
+          <img src="img/real-2.jpg" alt="Customer with red dyed curly top and a lightning-bolt shave design" loading="lazy">
+          <figcaption>Red-dyed curls with a lightning-bolt shave design</figcaption>
+        </figure>
+        <figure>
+          <img src="img/real-3.jpg" alt="Child's circular cornrow braids with beads" loading="lazy">
+          <figcaption>Child's circular cornrows with beads</figcaption>
+        </figure>
+        <figure>
+          <img src="img/real-4.jpg" alt="Twisted-braid updo on a customer in a red barber chair" loading="lazy">
+          <figcaption>Twisted-braid updo</figcaption>
+        </figure>
+        <figure>
+          <img src="img/real-5.jpg" alt="Customer showing off a fresh fade haircut" loading="lazy">
+          <figcaption>Fresh fade</figcaption>
+        </figure>
+        <figure>
+          <img src="img/real-6.jpg" alt="Star-pattern cornrow braids on a customer" loading="lazy">
+          <figcaption>Star-pattern cornrow braids</figcaption>
+        </figure>
+        <figure>
+          <img src="img/real-7.jpg" alt="Customer mirror selfie with a fresh short haircut" loading="lazy">
+          <figcaption>Fresh short cut, customer mirror selfie</figcaption>
+        </figure>
+        <figure>
+          <img src="img/real-8.jpg" alt="Customer close-up at the shop's butterfly-etched mirror" loading="lazy">
+          <figcaption>Fresh short cut at the shop's butterfly mirror</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -323,17 +350,16 @@
     <div class="wrap">
       <p class="sec-label">When to come by</p>
       <h2>Shop hours</h2>
-      <p class="sec-intro">Open seven days. Evenings run late Thursday through Saturday.</p>
+      <p class="sec-intro">Call or check the shop's Facebook page for current hours.</p>
       <div class="hours-grid">
-        <div class="day"><p class="d-name">Mon</p><p class="d-time">10 - 8</p></div>
-        <div class="day"><p class="d-name">Tue</p><p class="d-time">10 - 8</p></div>
-        <div class="day"><p class="d-name">Wed</p><p class="d-time">10 - 8</p></div>
-        <div class="day"><p class="d-name">Thu</p><p class="d-time">10 - 9</p></div>
-        <div class="day"><p class="d-name">Fri</p><p class="d-time">10 - 9</p></div>
-        <div class="day"><p class="d-name">Sat</p><p class="d-time">10 - 9</p></div>
-        <div class="day sun"><p class="d-name">Sun</p><p class="d-time">12 - 6</p></div>
-      </div>
-      <p class="hours-src">Hours as posted on the shop&rsquo;s Facebook page.</p>
+        <div class="day"><p class="d-name">Monday</p><p class="d-time">10 AM - 8 PM</p></div>
+        <div class="day"><p class="d-name">Tuesday</p><p class="d-time">10 AM - 8 PM</p></div>
+        <div class="day"><p class="d-name">Wednesday</p><p class="d-time">10 AM - 8 PM</p></div>
+        <div class="day"><p class="d-name">Thursday</p><p class="d-time">10 AM - 9 PM</p></div>
+        <div class="day"><p class="d-name">Friday</p><p class="d-time">10 AM - 9 PM</p></div>
+        <div class="day"><p class="d-name">Saturday</p><p class="d-time">10 AM - 9 PM</p></div>
+        <div class="day"><p class="d-name">Sunday</p><p class="d-time">12 PM - 6 PM</p></div>
+      </div><p class="hours-src">Hours per the shop's public listing. <a href="tel:+17575984288">Call to confirm before visiting</a>.</p>
     </div>
   </section>
 
@@ -349,7 +375,7 @@
           <p><a href="https://www.facebook.com/icutbarbershopandlounge/">facebook.com/icutbarbershopandlounge</a></p>
         </div>
         <div class="visit-copy">
-          <p>The shop sits on Holland Road in Virginia Beach, an easy stop whether you are coming from the Oceanfront or the suburbs. No online booking, so the fastest way in is a phone call.</p>
+          <p>The shop is on Holland Road in Virginia Beach. Call with questions about services or appointments.</p>
           <p>Check the Facebook page for the latest hours and updates straight from the shop.</p>
           <div class="cta-row">
             <a class="btn btn-coral" href="tel:+17575984288">Call the Shop</a>
@@ -364,13 +390,13 @@
     <div class="social-inner">
       <div>
         <h2>Follow the shop</h2>
-        <p>iCut runs its updates through Facebook. That is where you will find hour changes, announcements, and a look at the lounge.</p>
+        <p>Visit the shop's Facebook page for business information and updates.</p>
         <a class="btn btn-navy" href="https://www.facebook.com/icutbarbershopandlounge/">Visit the Facebook Page</a>
       </div>
       <div class="rating-card">
-        <p class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
         <p class="score">5.0</p>
-        <p class="src">5.0 from 33 Facebook reviews</p>
+        <p class="src">from 33 Google reviews</p>
       </div>
     </div>
   </section>
@@ -381,7 +407,7 @@
   <div class="wrap">
     <p><strong>iCut Barber Shop &amp; Lounge</strong> &middot; 3300 Holland Rd #1106, Virginia Beach, VA 23452 &middot; <a href="tel:+17575984288">(757) 598-4288</a></p>
     <p>This page is a <strong>design preview concept</strong> created by Freightfolio to show what a website for this business could look like. It is not the business&rsquo;s official website, and Freightfolio is not affiliated with the business.</p>
-    <p>Business details shown here come from the shop&rsquo;s public Facebook page.</p>
+    <p>Business details shown here are drawn from public listings and the shop&rsquo;s Facebook page.</p>
   </div>
 </footer>
 

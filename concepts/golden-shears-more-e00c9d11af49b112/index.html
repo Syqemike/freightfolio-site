@@ -104,12 +104,12 @@
   .side-barber {
     background:var(--espresso);
     color:var(--cream-on-espresso);
-    padding:46px 48px 54px;
+    padding:64px 48px 72px;
   }
   .side-spa {
     background:var(--sand);
     color:var(--ink-on-sand);
-    padding:46px 48px 54px;
+    padding:64px 48px 72px;
   }
   .side-tag {
     font-size:11px; letter-spacing:3.5px; text-transform:uppercase;
@@ -128,7 +128,7 @@
   }
   .side-barber .btn:hover { background:var(--terra); border-color:var(--terra); color:#fff; }
   .side-spa .btn:hover { background:var(--espresso); border-color:var(--espresso); color:var(--cream-on-espresso); }
-  .side-art { margin-top:22px; }
+  .side-art { margin-top:26px; }
   .side-art svg { display:block; width:100%; height:auto; }
   .art-note { font-size:11px; color:#6b5c4c; margin-top:10px; letter-spacing:1px; }
   .side-barber .art-note { color:var(--terra-soft); }
@@ -201,9 +201,37 @@
   footer .fname { font-size:14px; letter-spacing:2px; text-transform:uppercase; color:var(--sand); margin-bottom:10px; }
   footer p { max-width:60ch; margin:6px auto; }
 
+  /* ---- gallery ---- */
+  .gallery {
+    background:var(--sand-soft);
+    padding:84px 0;
+    border-top:1px solid var(--taupe);
+  }
+  .gallery .kicker { text-align:center; }
+  .gallery h2 {
+    font-size:clamp(30px,3.6vw,46px); font-weight:600; margin-bottom:20px;
+    text-align:center;
+  }
+  .gallery .sub {
+    text-align:center; color:#6b5c4c; max-width:44rem; margin:0 auto 40px;
+  }
+  .shots { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .shot { background:#fffdf8; border:1px solid var(--taupe); }
+  .shot img { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; }
+  .shot figcaption { padding:14px 18px; font-size:15px; color:#6b5c4c; }
+  .shot .tag {
+    display:block; font-size:11px; letter-spacing:3px; text-transform:uppercase;
+    color:var(--terra); font-weight:700; margin-bottom:6px;
+  }
+  .shots-note {
+    margin-top:28px; font-size:14px; color:#6b5c4c; text-align:center;
+    max-width:44rem; margin-left:auto; margin-right:auto;
+  }
+
   @media (max-width:760px) {
     .split { grid-template-columns:1fr; }
     .side-barber, .side-spa { padding:48px 26px 56px; }
+    .shots { grid-template-columns:1fr; }
     .services .split .side-barber, .services .split .side-spa,
     .visit .side-barber, .visit .side-spa { padding:52px 26px 60px; }
     .navlinks { display:none; }
@@ -229,6 +257,7 @@
       <a href="#barber">Barber</a>
       <a href="#spa">Spa</a>
       <a href="#about">The Shop</a>
+      <a href="#gallery">Photos</a>
       <a href="#visit">Visit</a>
     </div>
     <a class="navcta" href="tel:+13343563792">Call to book</a>
@@ -293,18 +322,17 @@
         <li>Mid-fades <span class="n">Precision</span></li>
         <li>Beard line-ups <span class="n">Detail</span></li>
       </ul>
-      <p class="note">Questions about hours or services? Call the shop at (334) 356-3792.</p>
+      <p class="note">For questions about hours or services, call the shop at (334) 356-3792.</p>
       <a class="btn" href="tel:+13343563792" style="margin-top:24px;">Call to book</a>
     </div>
     <div class="side-spa" id="spa">
       <span class="side-tag">Services</span>
       <h2 class="serif">Salon &amp; spa services</h2>
-      <ul>
-        <li>Salon services <span class="n">Beyond the chair</span></li>
-        <li>Spa-side time <span class="n">Slow down</span></li>
-        <li>Cut plus spa, one visit <span class="n">Downtown</span></li>
-      </ul>
-      <p style="margin-top:14px;">Golden Shears &amp; More is a barber and spa shop in one, so the salon and spa side covers the rest of your routine. Call ahead and ask what fits your day.</p>
+      <p style="margin-top:14px;">The salon and spa side of the shop is set up for the quieter part of your routine, in the heart of downtown.</p>
+      <div class="spa-card">
+        <p class="spa-k">One shop, two sides</p>
+        <p>Golden Shears &amp; More is a barber and spa shop in one. Call the shop to ask what the spa side covers and what fits your day.</p>
+      </div>
       <a class="btn" href="tel:+13343563792" style="margin-top:24px;">Call to book</a>
     </div>
   </div>
@@ -319,6 +347,33 @@
   </div>
 </section>
 
+<section class="block gallery" id="gallery">
+  <div class="wrap">
+    <div class="kicker">Photos</div>
+    <h2 class="serif">In the shop</h2>
+    <p class="sub">Barber cuts on one side, the salon and spa on the other. A look at the barbershop life.</p>
+    <div class="shots">
+      <figure class="shot">
+        <img src="img/photo-1.jpg" alt="Barber blending a haircut with clippers and a comb">
+        <figcaption><span class="tag">Illustrative photo</span>Clipper work, up close.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/photo-2.jpg" alt="Classic barber chairs lined up in a shop">
+        <figcaption><span class="tag">Illustrative photo</span>Classic barber chairs on the floor.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/photo-3.jpg" alt="Salon shampoo sinks">
+        <figcaption><span class="tag">Illustrative photo</span>Shampoo stations for the spa side.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/photo-4.jpg" alt="A lit barber pole">
+        <figcaption><span class="tag">Illustrative photo</span>The classic sign of a barbershop.</figcaption>
+      </figure>
+    </div>
+    <p class="shots-note">No public photos of the shop could be found, so the shots above are illustrative images of barbershops, shared under Creative Commons licenses. They show the kind of space, not this shop.</p>
+  </div>
+</section>
+
 <section class="block visit" id="visit">
   <div class="split">
     <div class="side-barber">
@@ -326,7 +381,7 @@
       <div class="hours-row"><span>Tuesday to Friday</span><span>8am to 6pm</span></div>
       <div class="hours-row"><span>Saturday</span><span>8am to 2pm</span></div>
       <div class="hours-row"><span>Sunday and Monday</span><span>Closed</span></div>
-      <p class="note" style="margin-top:22px; font-size:14px; opacity:.8;">Hours are Central Time. Questions? Call (334) 356-3792.</p>
+      <p class="note" style="margin-top:22px; font-size:14px; opacity:.8;">Hours are Central Time. Questions about hours or services? Call the shop at (334) 356-3792.</p>
     </div>
     <div class="side-spa">
       <h2 class="serif">Visit</h2>

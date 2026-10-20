@@ -105,6 +105,12 @@
   .artist .role{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--steel);margin-top:6px}
   .artist .walkin{display:inline-block;margin-top:12px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.08em;color:var(--rust);border:1px solid var(--rust);padding:5px 10px;text-transform:uppercase}
 
+  /* gallery */
+  .work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .work-grid figure{border:2px solid var(--line);background:var(--ink2);overflow:hidden}
+  .work-grid img{width:100%;height:230px;object-fit:cover;display:block}
+  .work-grid figcaption{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--bone-dim);padding:10px 12px;text-transform:uppercase}
+
   /* trust block */
   .trust{background:
     repeating-linear-gradient(-45deg,transparent 0 60px,rgba(239,230,212,.02) 60px 62px),
@@ -139,6 +145,7 @@
 
   @media (max-width:860px){
     .split,.trust-grid,.visit-grid{grid-template-columns:1fr}
+    .work-grid{grid-template-columns:1fr 1fr}
     .split>div:first-child{border-right:none;border-bottom:2px solid var(--line)}
     .roster{grid-template-columns:1fr 1fr}
     .stamp{width:92px;height:92px}
@@ -163,6 +170,7 @@
     <div class="brand-mini">HARD <span>KNOX</span> TATTOO</div>
     <ul>
       <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#artists">Artists</a></li>
       <li><a href="#shop">The Shop</a></li>
       <li><a href="#visit">Visit</a></li>
@@ -173,21 +181,16 @@
 
 <header class="hero slash" id="top">
   <div class="wrap">
-    <p class="kicker">South Knoxville &middot; Est. 18+ years</p>
+    <p class="kicker">South Knoxville &middot; Chapman Highway</p>
     <h1 class="wordmark">HARD <span class="red">KNOX</span><br><span class="outline">TATTOO</span></h1>
-    <p class="tagline">Custom tattoos &amp; body piercing &middot; <b>4.7 from 1,292 Google reviews</b></p>
+    <p class="tagline">Custom tattoos &amp; body piercing</p>
+    <p class="tagline" style="margin-top:6px;"><b>4.7</b> from 1,292 Google reviews</p>
     <div class="hero-ctas">
       <a class="btn btn-solid" href="tel:+18652475678">Call the shop &middot; (865) 247-5678</a>
-      <a class="btn btn-ghost" href="#services">See the work</a>
+      <a class="btn btn-ghost" href="#services">Explore services</a>
     </div>
 
-    <svg class="stamp" viewBox="0 0 140 140" aria-label="Health score 100 stamp, 15 years running" role="img">
-      <circle cx="70" cy="70" r="62" fill="none" stroke="#a63a22" stroke-width="3"/>
-      <circle cx="70" cy="70" r="52" fill="none" stroke="#a63a22" stroke-width="1.5"/>
-      <text x="70" y="62" text-anchor="middle" font-family="Anton,sans-serif" font-size="34" fill="#efe6d4">100</text>
-      <text x="70" y="84" text-anchor="middle" font-family="'Space Mono',monospace" font-size="11" letter-spacing="2" fill="#a63a22">HEALTH SCORE</text>
-      <text x="70" y="100" text-anchor="middle" font-family="'Space Mono',monospace" font-size="10" letter-spacing="1.5" fill="#cfc2a6">15 YRS RUNNING</text>
-    </svg>
+
 
     <svg class="hero-flash" viewBox="0 0 200 260" aria-hidden="true">
       <g fill="none" stroke="#efe6d4" stroke-width="2.5">
@@ -220,7 +223,7 @@
         </svg>
         <p class="num">01</p>
         <h3>Custom Tattoos</h3>
-        <p>Bring an idea or walk in and talk it through with an artist. The shop is built around custom work, not flash off a wall you settle for.</p>
+        <p>Bring an idea or walk in and talk it through with an artist. Call the shop to discuss your idea.</p>
         <ul>
           <li>Custom designs drawn for you</li>
           <li>Walk-in consultations</li>
@@ -242,7 +245,7 @@
         <ul>
           <li>Professional body piercing</li>
           <li>Walk-ins welcome</li>
-          <li>Clean, inspected studio</li>
+          <li>Ask about piercing services</li>
         </ul>
         <a class="btn btn-ghost" href="tel:+18652475678">Call about piercing</a>
       </div>
@@ -253,50 +256,64 @@
 
 <section class="block artists slash-inv" id="artists" style="background:#161514">
   <div class="wrap">
-    <p class="sec-label">The Roster</p>
-    <h2 class="sec">Artists in the shop</h2>
-    <p class="lede">Four resident artists. Come by, look at portfolios in person, and talk your piece through before anything touches skin.</p>
-    <div class="roster">
-      <div class="artist">
-        <span class="init" aria-hidden="true">L</span>
-        <h3>Leslie</h3>
-        <p class="role">Resident artist</p>
-        <span class="walkin">Walk-in consults</span>
-      </div>
-      <div class="artist">
-        <span class="init" aria-hidden="true">J</span>
-        <h3>Jarrod</h3>
-        <p class="role">Resident artist</p>
-        <span class="walkin">Walk-in consults</span>
-      </div>
-      <div class="artist">
-        <span class="init" aria-hidden="true">R</span>
-        <h3>Rockwell</h3>
-        <p class="role">Resident artist</p>
-        <span class="walkin">Walk-in consults</span>
-      </div>
-      <div class="artist">
-        <span class="init" aria-hidden="true">M</span>
-        <h3>Maddi</h3>
-        <p class="role">Resident artist</p>
-        <span class="walkin">Walk-in consults</span>
-      </div>
+    <p class="sec-label">Your next piece</p>
+    <h2 class="sec">Talk with an artist</h2>
+    <p class="lede">Call to ask about the current artists, their portfolios, and consultations.</p>
+    <div class="roster"><div class="artist" style="grid-column:1/-1"><h3>Bring your idea</h3><p>Ask about custom designs, cover-ups, and rework when you contact the shop.</p><a class="btn btn-ghost" href="tel:+18652475678">Call about your tattoo</a></div></div>
+  </div>
+</section>
+
+<section class="block" id="work">
+  <div class="wrap">
+    <p class="sec-label">Shop work</p>
+    <h2 class="sec">From the portfolio</h2>
+    <p class="lede">Tattoo work and photos from the Hard Knox shop on Chapman Highway.</p>
+    <div class="work-grid">
+      <figure>
+        <img src="img/1.jpg" alt="Heart-shaped locket tattoo on an arm" loading="lazy">
+        <figcaption>Heart locket work from the shop</figcaption>
+      </figure>
+      <figure>
+        <img src="img/2.jpg" alt="Color alien creature tattoo with lettering" loading="lazy">
+        <figcaption>Color work from the shop</figcaption>
+      </figure>
+      <figure>
+        <img src="img/3.jpg" alt="Color toucan tattoo" loading="lazy">
+        <figcaption>Color tattoo from the shop</figcaption>
+      </figure>
+      <figure>
+        <img src="img/4.jpg" alt="Character tattoo on an arm" loading="lazy">
+        <figcaption>Character work from the shop</figcaption>
+      </figure>
+      <figure>
+        <img src="img/5.jpg" alt="Ornamental blackwork tattoo on a torso" loading="lazy">
+        <figcaption>Ornamental work from the shop</figcaption>
+      </figure>
+      <figure>
+        <img src="img/6.jpg" alt="Healed ear piercings with jewelry" loading="lazy">
+        <figcaption>Piercing work from the shop</figcaption>
+      </figure>
+      <figure>
+        <img src="img/7.png" alt="Hard Knox Tattoo storefront on Chapman Highway" loading="lazy">
+        <figcaption>The Chapman Highway storefront</figcaption>
+      </figure>
+      <figure>
+        <img src="img/8.png" alt="Inside the Hard Knox Tattoo shop" loading="lazy">
+        <figcaption>Inside the shop</figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
 <section class="block trust" id="shop">
   <div class="wrap trust-grid">
-    <div class="stamp-card" role="img" aria-label="Knox County Health Department score of 100, 15 years running">
-      <p class="big">100<span>/100</span></p>
-      <p class="sub">Knox County Health Dept score<br>15 years running</p>
-    </div>
+    <div class="stamp-card"><p class="big">SOUTH<br>KNOX</p><p class="sub">Tattooing &amp; piercing<br>Chapman Highway</p></div>
     <div class="trust-copy">
       <p class="sec-label">The Shop</p>
-      <h2 class="sec">Clean shop. Long record.</h2>
-      <p>Hard Knox holds a Knox County Health Department score of 100, 15 years running, as stated in the shop's Google business description. That is not common in this trade.</p>
-      <p class="years"><span>18+</span> years in business</p>
-      <p>South Knoxville has had the same tattoo shop on Chapman Highway for the better part of two decades.</p>
+      <h2 class="sec">On Chapman Highway.</h2>
+      <p>Find Hard Knox Tattoo at 3405 Chapman Highway in South Knoxville. The shop has been in South Knoxville since 2002. Call with questions about tattooing, piercing, or visiting the shop.</p>
+      <p class="years"><span>Health</span> score 100, 15 years running</p>
+      <p>Check the location below and call to confirm current hours before your visit.</p>
     </div>
   </div>
 </section>

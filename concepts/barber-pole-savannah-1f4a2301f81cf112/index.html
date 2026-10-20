@@ -110,6 +110,15 @@
   .board-list .dots { flex:1; border-bottom:2px dotted #c8b98d; transform:translateY(-5px); }
   .board-list .desc { font-size:14px; color:var(--muted); font-style:italic; white-space:nowrap; }
 
+  /* ---------- gallery ---------- */
+  .pole-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:26px; }
+  .pole-grid figure {
+    background:#fbf6e9; border:3px solid var(--hunter-deep);
+    outline:1px solid var(--brass); outline-offset:4px; overflow:hidden;
+  }
+  .pole-grid img { width:100%; height:250px; object-fit:cover; display:block; }
+  .pole-grid figcaption { padding:12px 16px; font-size:14px; font-style:italic; color:var(--muted); }
+
   /* ---------- shine spotlight ---------- */
   .shine { background:var(--hunter-deep); color:var(--parchment); border-top:6px double var(--brass); border-bottom:6px double var(--brass); }
   .shine h2.section-title { color:var(--parchment); }
@@ -160,11 +169,13 @@
     .board-list li:nth-last-child(2) { border-bottom:1px dotted #b9a97f; }
     .board-list .desc { white-space:normal; }
     .shine-grid, .visit-grid { grid-template-columns:1fr; }
+    .pole-grid { grid-template-columns:1fr 1fr; }
     .tickets { grid-template-columns:1fr 1fr; }
     .shopboard { padding:32px 24px; }
   }
   @media (max-width:520px) {
     .tickets { grid-template-columns:1fr; }
+    .pole-grid { grid-template-columns:1fr; }
     .mastnav .wrap { justify-content:center; text-align:center; }
     .mastnav nav ul { justify-content:center; gap:18px; }
     section.block { padding:54px 0; }
@@ -181,7 +192,8 @@
     <nav>
       <ul>
         <li><a href="#services">Services</a></li>
-        <li><a href="#shine">Shine &amp; Repair</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#shine">Shoe Shine</a></li>
         <li><a href="#visit">Hours &amp; Visit</a></li>
       </ul>
     </nav>
@@ -229,14 +241,14 @@
         <rect x="52" y="292" width="16" height="22" fill="#b08d3e"/>
         <rect x="38" y="312" width="44" height="10" rx="4" fill="#8a6d2c"/>
       </svg>
-      <div class="pole-cap">Est. 1998</div>
+      <div class="pole-cap">Bull Street</div>
     </div>
 
     <div class="hero-copy">
       <p class="eyebrow">110 Bull Street &middot; Downtown Savannah</p>
       <h1>The Barber Pole</h1>
       <div class="rule"><i></i></div>
-      <p class="since">Downtown Savannah since 1998</p>
+      <p class="since">Classic barbering in downtown Savannah</p>
       <p class="walkins">Walk-ins welcome. First come, first served.</p>
       <div class="cta-row">
         <a class="btn-call" href="tel:+19122343831">Call the shop</a>
@@ -284,7 +296,7 @@
         <rect x="52" y="292" width="16" height="22" fill="#b08d3e"/>
         <rect x="38" y="312" width="44" height="10" rx="4" fill="#8a6d2c"/>
       </svg>
-      <div class="pole-cap">Est. 1998</div>
+      <div class="pole-cap">Bull Street</div>
     </div>
   </div>
 </section>
@@ -293,7 +305,7 @@
   <div class="wrap">
     <p class="kicker">At the chair</p>
     <h2 class="section-title">Classic barbering, done the traditional way</h2>
-    <p class="lede">Haircuts, hot lather shaves, and beard work from a shop that has served Bull Street since 1998. Walk in, take a seat, and get the full treatment.</p>
+    <p class="lede">Haircuts, hot lather shaves, and beard work on Bull Street. Walk-ins welcome.</p>
     <div class="shopboard">
       <h3>The Shop Board</h3>
       <p class="board-sub">Services offered daily, first come first served</p>
@@ -308,11 +320,45 @@
   </div>
 </section>
 
+<section class="block" id="gallery">
+  <div class="wrap">
+    <p class="kicker">The shop</p>
+    <h2 class="section-title">On Bull Street</h2>
+    <p class="lede">The Barber Pole shop on Bull Street. The storefront and window photos show the real shop; craft photos are illustrative.</p>
+    <div class="pole-grid">
+      <figure>
+        <img src="img/1.jpg" alt="The Barber Pole storefront with striped awning and painted window signage" loading="lazy">
+        <figcaption>The Bull Street storefront</figcaption>
+      </figure>
+      <figure>
+        <img src="img/2.jpg" alt="The Barber Pole shop entrance at night with a lit barber pole" loading="lazy">
+        <figcaption>The shop entrance at night</figcaption>
+      </figure>
+      <figure>
+        <img src="img/3.jpg" alt="A classic red white and blue barber pole on a brick wall" loading="lazy">
+        <figcaption>Illustrative photo: the barber pole</figcaption>
+      </figure>
+      <figure>
+        <img src="img/4.jpg" alt="Barbers at work seen through the window of The Barber Pole" loading="lazy">
+        <figcaption>Through the window: a cut in progress at The Barber Pole</figcaption>
+      </figure>
+      <figure>
+        <img src="img/5.jpg" alt="Barber shaving a client's beard with a straight razor" loading="lazy">
+        <figcaption>Illustrative photo: straight razor shave</figcaption>
+      </figure>
+      <figure>
+        <img src="img/6.jpg" alt="Classic red barber chairs in a vintage style barbershop" loading="lazy">
+        <figcaption>Illustrative photo: classic chairs</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <section class="block shine" id="shine">
   <div class="wrap">
     <p class="kicker">The signature extra</p>
-    <h2 class="section-title">Shoe shine &amp; shoe repair</h2>
-    <p class="lede">The shop's signature extra: shoe shine and shoe repair are done right here, alongside the barbering.</p>
+    <h2 class="section-title">Shoe shine on Bull Street</h2>
+    <p class="lede">Shoe shine alongside classic barbering. Call the shop to ask about current availability.</p>
     <div class="shine-grid">
       <div>
         <svg class="shoe-svg" viewBox="0 0 340 220" role="img" aria-label="Decorative illustration of a polished dress shoe">
@@ -330,9 +376,9 @@
       </div>
       <div class="shine-panel">
         <h3>Shine</h3>
-        <p>Bring your shoes in with your haircut, or stop by for the shine alone. Walk-ins welcome.</p>
-        <h3 style="margin-top:22px;">Repair</h3>
-        <p>Worn soles and tired leather get a second life. Ask at the counter about shoe repair while you wait for the chair.</p>
+        <p>Ask about a shoe shine when you visit for a haircut.</p>
+        <h3 style="margin-top:22px;">Before you visit</h3>
+        <p>The shop takes walk-ins. Call with questions about services or hours.</p>
       </div>
     </div>
   </div>
@@ -342,7 +388,7 @@
   <div class="wrap">
     <p class="kicker">Find the shop</p>
     <h2 class="section-title">Hours &amp; visit</h2>
-    <p class="lede">110 Bull St in downtown Savannah, just off Broughton. Walk-ins welcome, first come first served, since 1998.</p>
+    <p class="lede">110 Bull St in downtown Savannah, just off Broughton. Walk-ins welcome, first come first served.</p>
 
     <div class="ticketboard">
       <h3>Shop Hours</h3>
@@ -374,7 +420,7 @@
       <div class="visit-card">
         <h3>The address</h3>
         <p>110 Bull St<br>Savannah, GA 31401<br>Downtown, just off Broughton</p>
-        <p class="mag-line">Featured in Savannah Magazine.</p>
+        <p class="mag-line"><a href="https://savannahmagazine.com/best-of-savannah/best-savannah-services/" target="_blank" rel="noopener">Featured in Savannah Magazine</a>.</p>
       </div>
       <div class="visit-card">
         <h3>Call the shop</h3>
@@ -383,7 +429,7 @@
       </div>
     </div>
 
-    <p class="rating-line">4.1 from 84 bestprosintown reviews</p>
+    <p class="rating-line"><a href="https://www.bestprosintown.com/ga/savannah/the-barber-pole-/" target="_blank" rel="noopener">4.1 from 84 BestProsInTown reviews</a></p>
   </div>
 </section>
 
