@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Revamped Beauty Salon | ReVamp Yourself | Philadelphia, PA</title>
+<meta name="description" content="Design concept for Revamped Beauty Salon, 1233 Vine St, Philadelphia, PA. Hair styling, updos, braids, extensions, and coloring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,300;1,9..144,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --berry:#4d0e2c;
+  --berry-deep:#33081e;
+  --berry-soft:#6e1a41;
+  --champagne:#e7cf9f;
+  --champagne-deep:#c9a86a;
+  --champagne-pale:#f6ecd6;
+  --charcoal:#171318;
+  --charcoal-soft:#241c22;
+  --ink:#f4ede1;
+  --muted:#c9bcae;
+  --hairline:rgba(231,207,159,.28);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--charcoal);
+  color:var(--ink);
+  font-family:'Manrope',system-ui,-apple-system,sans-serif;
+  font-size:1rem;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%;}
+a{color:var(--champagne);}
+::selection{background:var(--berry-soft);color:#fff;}
+
+/* Disclosure bar */
+.disclosure{
+  background:var(--champagne);
+  color:var(--charcoal);
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  text-align:center;
+  padding:.65rem 1rem;
+  font-weight:700;
+}
+
+/* Nav */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(23,19,24,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--hairline);
+}
+.nav-inner{
+  max-width:68rem;margin:0 auto;padding:.85rem 1.25rem;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  flex-wrap:wrap;
+}
+.nav-brand{
+  font-family:'Fraunces',serif;font-weight:900;font-size:1.05rem;letter-spacing:.02em;
+  color:var(--ink);text-decoration:none;white-space:nowrap;
+}
+.nav-brand em{font-style:italic;color:var(--champagne);}
+.nav-links{display:flex;gap:1.35rem;list-style:none;flex-wrap:wrap;}
+.nav-links a{
+  color:var(--muted);text-decoration:none;font-size:.8rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;
+}
+.nav-links a:hover{color:var(--champagne);}
+
+/* Layout helpers */
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem;}
+section{padding:4.5rem 0;}
+.eyebrow{
+  font-size:.72rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--champagne-deep);margin-bottom:1.1rem;
+}
+h2.display{
+  font-family:'Fraunces',serif;font-weight:600;font-size:clamp(2rem,6vw,3.25rem);
+  line-height:1.08;letter-spacing:-.01em;margin-bottom:1.25rem;
+}
+h2.display em{font-style:italic;color:var(--champagne);font-weight:300;}
+.rule{height:1px;background:var(--hairline);border:0;margin:0;}
+.lede{font-size:1.08rem;color:var(--muted);max-width:38rem;}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:5.5rem 0 4rem;
+  background:
+    radial-gradient(60rem 30rem at 85% -10%, rgba(110,26,65,.55), transparent 60%),
+    linear-gradient(180deg, var(--berry-deep) 0%, var(--charcoal) 78%);
+}
+.hero-wordmark{
+  font-family:'Fraunces',serif;font-weight:900;font-style:italic;
+  font-size:clamp(3.4rem,14vw,9rem);line-height:.95;letter-spacing:-.02em;
+  color:transparent;-webkit-text-stroke:1.5px var(--champagne);
+  opacity:.9;margin-bottom:1.5rem;user-select:none;
+}
+.hero h1{
+  font-family:'Fraunces',serif;font-weight:600;
+  font-size:clamp(2.1rem,6.5vw,3.6rem);line-height:1.05;letter-spacing:-.01em;
+}
+.hero h1 .revamp{color:var(--champagne);font-style:italic;font-weight:300;}
+.hero-theme{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:clamp(1.4rem,4.5vw,2.1rem);color:var(--champagne);
+  margin-top:1.2rem;
+}
+.hero-sub{color:var(--muted);max-width:34rem;margin-top:1.1rem;}
+.hero-cta{margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center;}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:700;font-size:.85rem;
+  letter-spacing:.14em;text-transform:uppercase;padding:1rem 2rem;border-radius:999px;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.btn-primary{background:var(--champagne);color:var(--charcoal);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(231,207,159,.25);}
+.btn-ghost{border:1px solid var(--hairline);color:var(--ink);}
+.btn-ghost:hover{border-color:var(--champagne);color:var(--champagne);}
+.hero-address{margin-top:1.6rem;color:var(--muted);font-size:.95rem;}
+.hero-address strong{color:var(--ink);font-weight:600;}
+
+/* Curtain divider */
+.curtain{display:flex;align-items:center;gap:1rem;padding:0;}
+.curtain::before,.curtain::after{content:"";height:1px;flex:1;background:var(--hairline);}
+.curtain svg{width:64px;height:26px;flex:none;}
+
+/* Services: split panel editorial features */
+.feature{
+  display:grid;grid-template-columns:1fr;gap:1.75rem;
+  padding:3rem 0;border-top:1px solid var(--hairline);align-items:center;
+}
+.feature:first-of-type{border-top:0;}
+.feature-media{background:var(--charcoal-soft);border:1px solid var(--hairline);border-radius:.6rem;overflow:hidden;}
+.feature-media svg{width:100%;height:auto;}
+.feature figcaption{
+  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+  padding:.8rem 1rem;border-top:1px solid var(--hairline);
+}
+.feature-kicker{
+  font-family:'Fraunces',serif;font-style:italic;font-size:1.05rem;color:var(--champagne-deep);
+  margin-bottom:.5rem;
+}
+.feature h3{
+  font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.7rem,5vw,2.5rem);
+  line-height:1.1;margin-bottom:.9rem;
+}
+.feature p{color:var(--muted);max-width:32rem;}
+.feature .ask{margin-top:1.1rem;font-size:.95rem;color:var(--ink);}
+.feature .ask a{color:var(--champagne);font-weight:700;text-decoration:none;border-bottom:1px solid var(--champagne-deep);}
+
+/* Revamp manifesto */
+.manifesto{
+  background:linear-gradient(180deg, var(--berry) 0%, var(--berry-deep) 100%);
+  border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+  position:relative;overflow:hidden;
+}
+.manifesto .wrap{position:relative;z-index:2;}
+.manifesto p{color:#e9d8c3;max-width:36rem;font-size:1.06rem;}
+.manifesto p + p{margin-top:1rem;}
+.manifesto-ghost{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  font-family:'Fraunces',serif;font-weight:900;font-size:clamp(8rem,30vw,22rem);
+  color:transparent;-webkit-text-stroke:1px rgba(231,207,159,.14);white-space:nowrap;
+  pointer-events:none;user-select:none;
+}
+
+/* Visit */
+.visit-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;margin-top:2rem;}
+.hours{width:100%;border-collapse:collapse;font-size:.98rem;}
+.hours th{
+  text-align:left;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--champagne-deep);padding:.7rem .5rem;border-bottom:1px solid var(--hairline);
+}
+.hours td{padding:.8rem .5rem;border-bottom:1px solid rgba(231,207,159,.12);color:var(--ink);}
+.hours td:last-child{text-align:right;color:var(--muted);white-space:nowrap;}
+.hours tr:last-child td{border-bottom:0;}
+.closed{color:var(--berry-soft);font-style:italic;}
+.visit-card{
+  background:var(--charcoal-soft);border:1px solid var(--hairline);border-radius:.6rem;
+  padding:2rem;
+}
+.visit-card h3{
+  font-family:'Fraunces',serif;font-size:1.5rem;font-weight:600;margin-bottom:1rem;
+}
+.visit-card p{color:var(--muted);margin-bottom:1.25rem;}
+.visit-card address{font-style:normal;color:var(--ink);margin-bottom:1.25rem;font-size:1.05rem;}
+.phone-big{
+  font-family:'Fraunces',serif;font-size:1.9rem;font-weight:600;color:var(--champagne);
+  text-decoration:none;display:inline-block;margin-bottom:1.25rem;
+}
+.phone-big:hover{text-decoration:underline;}
+.rating-line{color:var(--muted);font-size:.95rem;margin-bottom:1.5rem;}
+.rating-line .stars{color:var(--champagne);letter-spacing:.15em;}
+
+/* Footer */
+footer{border-top:1px solid var(--hairline);padding:3rem 0 2.5rem;background:var(--berry-deep);}
+.foot-wordmark{
+  font-family:'Fraunces',serif;font-weight:900;font-style:italic;
+  font-size:clamp(2.4rem,9vw,4.5rem);color:transparent;-webkit-text-stroke:1px var(--champagne-deep);
+  opacity:.7;margin-bottom:1.5rem;
+}
+footer .fine{color:var(--muted);font-size:.85rem;max-width:44rem;}
+footer .fine + .fine{margin-top:.8rem;}
+.foot-nav{list-style:none;display:flex;gap:1.25rem;flex-wrap:wrap;margin:1.5rem 0;}
+.foot-nav a{color:var(--muted);text-decoration:none;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;}
+.foot-nav a:hover{color:var(--champagne);}
+
+/* Desktop */
+@media (min-width:760px){
+  section{padding:6rem 0;}
+  .feature{grid-template-columns:1.05fr 1fr;gap:3.5rem;}
+  .feature.flip .feature-media{order:2;}
+  .feature.flip .feature-text{order:1;}
+  .visit-grid{grid-template-columns:1.2fr 1fr;gap:3rem;align-items:start;}
+  .hero{padding:7rem 0 5.5rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design preview concept. Not affiliated with Revamped Beauty Salon.</div>
+
+<nav class="nav" aria-label="Section navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">Revamped <em>Beauty</em> Salon</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#revamp">The ReVamp</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-wordmark" aria-hidden="true">ReVamp</div>
+    <h1>Revamped <span class="revamp">Beauty</span> Salon</h1>
+    <p class="hero-theme">ReVamp Yourself.</p>
+    <p class="hero-sub">Downtown Philly's Hottest New Hair Salon, at 1233 Vine St in Philadelphia. Change is good, and the chair is waiting.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="tel:+12153095476">Call to book</a>
+      <a class="btn btn-ghost" href="#services">See services</a>
+    </div>
+    <p class="hero-address"><strong>1233 Vine St, Philadelphia, PA 19107</strong> &middot; <a href="tel:+12153095476">(215) 309-5476</a></p>
+  </div>
+</header>
+
+<div class="curtain wrap" aria-hidden="true">
+  <svg viewBox="0 0 64 26" fill="none" stroke="#c9a86a" stroke-width="1.2">
+    <path d="M2 13 Q 17 2, 32 13 T 62 13"/>
+    <path d="M2 19 Q 17 8, 32 19 T 62 19" opacity=".5"/>
+  </svg>
+</div>
+
+<section id="services" aria-labelledby="services-heading">
+  <div class="wrap">
+    <p class="eyebrow">The Menu</p>
+    <h2 class="display" id="services-heading">Five ways to <em>walk out different</em> than you walked in.</h2>
+    <p class="lede">Every appointment starts with a conversation about the look you want, and ends with the reveal. Questions? Call (215) 309-5476.</p>
+
+    <article class="feature">
+      <figure class="feature-media">
+        <svg viewBox="0 0 600 420" role="img" aria-label="Abstract concept art of flowing hair curves for updos">
+          <rect width="600" height="420" fill="#241c22"/>
+          <g fill="none" stroke="#c9a86a" stroke-width="2.5" opacity=".9">
+            <path d="M80 360 C 140 260, 120 180, 220 150 C 320 120, 340 200, 430 170 C 500 148, 520 220, 480 300"/>
+            <path d="M140 372 C 190 290, 170 220, 260 196 C 340 174, 360 240, 440 218" opacity=".55"/>
+            <path d="M200 380 C 240 320, 230 260, 300 244 C 360 230, 380 280, 440 268" opacity=".35"/>
+          </g>
+          <circle cx="430" cy="170" r="7" fill="#e7cf9f"/>
+          <circle cx="220" cy="150" r="4.5" fill="#e7cf9f" opacity=".7"/>
+          <circle cx="480" cy="300" r="4.5" fill="#e7cf9f" opacity=".7"/>
+          <g fill="#4d0e2c">
+            <ellipse cx="300" cy="90" rx="90" ry="34"/>
+          </g>
+          <text x="300" y="102" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="26" fill="#e7cf9f">updos</text>
+        </svg>
+        <figcaption>Concept art: sculptural hair curves. Decorative only.</figcaption>
+      </figure>
+      <div class="feature-text">
+        <p class="feature-kicker">Signature</p>
+        <h3>Updos built for the event on your calendar.</h3>
+        <p>Weddings, nights out, and every occasion that calls for hair that holds its shape. The style is designed around your outfit, your neckline, and how long the night runs.</p>
+        <p class="ask">Questions? <a href="tel:+12153095476">Call (215) 309-5476</a> to talk through your date.</p>
+      </div>
+    </article>
+
+    <article class="feature flip">
+      <figure class="feature-media">
+        <svg viewBox="0 0 600 420" role="img" aria-label="Abstract concept art of woven braid bands">
+          <rect width="600" height="420" fill="#33081e"/>
+          <g fill="none" stroke="#e7cf9f" stroke-width="3">
+            <path d="M60 120 L540 120"/>
+            <path d="M60 180 L540 180" opacity=".7"/>
+            <path d="M60 240 L540 240" opacity=".5"/>
+            <path d="M60 300 L540 300" opacity=".3"/>
+          </g>
+          <g fill="none" stroke="#c9a86a" stroke-width="2.5">
+            <path d="M150 60 C 190 120, 110 150, 150 210 C 190 270, 110 300, 150 360"/>
+            <path d="M300 60 C 340 120, 260 150, 300 210 C 340 270, 260 300, 300 360"/>
+            <path d="M450 60 C 490 120, 410 150, 450 210 C 490 270, 410 300, 450 360"/>
+          </g>
+        </svg>
+        <figcaption>Concept art: woven braid study. Decorative only.</figcaption>
+      </figure>
+      <div class="feature-text">
+        <p class="feature-kicker">Protective styles</p>
+        <h3>Braids with intention and finish.</h3>
+        <p>Clean parts, even tension, and a finished look that carries you through the season. Bring a reference photo and the style gets built around it.</p>
+        <p class="ask">Questions? <a href="tel:+12153095476">Call (215) 309-5476</a> to talk through your style.</p>
+      </div>
+    </article>
+
+    <article class="feature">
+      <figure class="feature-media">
+        <svg viewBox="0 0 600 420" role="img" aria-label="Abstract concept art of hair in motion for styling">
+          <rect width="600" height="420" fill="#241c22"/>
+          <g fill="none" stroke="#c9a86a">
+            <path d="M60 340 C 200 340, 200 200, 340 200 C 480 200, 480 340, 600 330" stroke-width="3"/>
+            <path d="M20 300 C 160 300, 160 170, 300 170 C 440 170, 440 300, 580 292" stroke-width="2" opacity=".6"/>
+            <path d="M100 260 C 220 260, 220 150, 340 150" stroke-width="1.5" opacity=".35"/>
+          </g>
+          <g fill="#e7cf9f">
+            <circle cx="340" cy="200" r="9"/>
+            <circle cx="480" cy="245" r="5" opacity=".7"/>
+            <circle cx="220" cy="245" r="5" opacity=".7"/>
+          </g>
+        </svg>
+        <figcaption>Concept art: hair in motion. Decorative only.</figcaption>
+      </figure>
+      <div class="feature-text">
+        <p class="feature-kicker">Everyday polish</p>
+        <h3>Styling that fits your real week.</h3>
+        <p>Blowouts, silk press finishes, and cuts shaped for how you actually wear your hair day to day. Walk in, sit down, and talk about what your mornings look like.</p>
+        <p class="ask">Questions? <a href="tel:+12153095476">Call (215) 309-5476</a> to talk through your routine.</p>
+      </div>
+    </article>
+
+    <article class="feature flip">
+      <figure class="feature-media">
+        <svg viewBox="0 0 600 420" role="img" aria-label="Abstract concept art of layered lengths for extensions">
+          <rect width="600" height="420" fill="#33081e"/>
+          <g fill="none" stroke-width="4">
+            <path d="M200 60 L200 360" stroke="#e7cf9f"/>
+            <path d="M280 60 L280 380" stroke="#c9a86a" opacity=".85"/>
+            <path d="M360 60 L360 340" stroke="#e7cf9f" opacity=".7"/>
+            <path d="M440 60 L440 400" stroke="#c9a86a" opacity=".55"/>
+          </g>
+          <g fill="none" stroke="#e7cf9f" stroke-width="1.2" opacity=".5">
+            <path d="M200 130 L440 130"/>
+            <path d="M200 210 L440 210"/>
+            <path d="M200 290 L440 290"/>
+          </g>
+        </svg>
+        <figcaption>Concept art: layered lengths. Decorative only.</figcaption>
+      </figure>
+      <div class="feature-text">
+        <p class="feature-kicker">Length and volume</p>
+        <h3>Extensions matched to your hair and your plan.</h3>
+        <p>Color matching, length goals, and upkeep expectations get sorted out in the chair before anything is installed. The result blends, and it stays blended.</p>
+        <p class="ask">Questions? <a href="tel:+12153095476">Call (215) 309-5476</a> to talk through your goals.</p>
+      </div>
+    </article>
+
+    <article class="feature">
+      <figure class="feature-media">
+        <svg viewBox="0 0 600 420" role="img" aria-label="Abstract concept art of color gradients for hair coloring">
+          <rect width="600" height="420" fill="#241c22"/>
+          <defs>
+            <linearGradient id="colorwash" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#4d0e2c"/>
+              <stop offset=".5" stop-color="#6e1a41"/>
+              <stop offset="1" stop-color="#c9a86a"/>
+            </linearGradient>
+          </defs>
+          <rect x="60" y="80" width="480" height="260" rx="14" fill="url(#colorwash)"/>
+          <g fill="none" stroke="#f6ecd6" stroke-width="2" opacity=".6">
+            <path d="M120 340 C 200 260, 240 340, 320 260 C 400 180, 440 260, 520 200"/>
+          </g>
+        </svg>
+        <figcaption>Concept art: color wash study. Decorative only.</figcaption>
+      </figure>
+      <div class="feature-text">
+        <p class="feature-kicker">Color</p>
+        <h3>Color chosen with the chair, not the shelf.</h3>
+        <p>Full color, highlights, and dimensional work start with your skin tone, your maintenance budget, and how bold you want to go this season.</p>
+        <p class="ask">Questions? <a href="tel:+12153095476">Call (215) 309-5476</a> to talk through your shade.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="curtain wrap" aria-hidden="true">
+  <svg viewBox="0 0 64 26" fill="none" stroke="#c9a86a" stroke-width="1.2">
+    <path d="M2 13 Q 17 2, 32 13 T 62 13"/>
+    <path d="M2 19 Q 17 8, 32 19 T 62 19" opacity=".5"/>
+  </svg>
+</div>
+
+<section class="manifesto" id="revamp" aria-labelledby="revamp-heading">
+  <div class="manifesto-ghost" aria-hidden="true">REVAMP</div>
+  <div class="wrap">
+    <p class="eyebrow">The ReVamp Idea</p>
+    <h2 class="display" id="revamp-heading">Change is good. <em>ReVamp Yourself.</em></h2>
+    <p>The salon's own words say it plainly: change is good. A new cut, a new color, or a style you have never tried is a small change with an outsized effect on how you carry the week.</p>
+    <p>The ReVamp is that moment in the chair when the cape comes off and you see the difference. No gimmicks, just the work done well in downtown Philadelphia.</p>
+    <figure>
+      <svg viewBox="0 0 600 300" role="img" aria-label="Abstract concept art of a curtain reveal" style="width:100%;height:auto;margin-top:2rem;border:1px solid rgba(231,207,159,.25);border-radius:.6rem;">
+        <rect width="600" height="300" fill="#1d1220"/>
+        <rect x="60" y="30" width="220" height="240" fill="#4d0e2c"/>
+        <rect x="320" y="30" width="220" height="240" fill="#4d0e2c"/>
+        <rect x="270" y="30" width="60" height="240" fill="#e7cf9f" opacity=".85"/>
+        <g stroke="#c9a86a" stroke-width="1.5" fill="none" opacity=".8">
+          <path d="M270 30 L330 30 L300 270 L270 270 Z" stroke-width="2"/>
+        </g>
+        <text x="300" y="292" text-anchor="middle" font-family="Manrope, sans-serif" font-size="13" letter-spacing="4" fill="#c9a86a">THE REVEAL</text>
+      </svg>
+      <figcaption style="font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#c9bcae;margin-top:.8rem;">Concept art: curtain reveal study. Decorative only.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="curtain wrap" aria-hidden="true">
+  <svg viewBox="0 0 64 26" fill="none" stroke="#c9a86a" stroke-width="1.2">
+    <path d="M2 13 Q 17 2, 32 13 T 62 13"/>
+    <path d="M2 19 Q 17 8, 32 19 T 62 19" opacity=".5"/>
+  </svg>
+</div>
+
+<section id="visit" aria-labelledby="visit-heading">
+  <div class="wrap">
+    <p class="eyebrow">Plan Your Visit</p>
+    <h2 class="display" id="visit-heading">Find us on <em>Vine Street.</em></h2>
+    <div class="visit-grid">
+      <div>
+        <table class="hours">
+          <thead>
+            <tr><th scope="col">Day</th><th scope="col" style="text-align:right;">Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tue to Wed</td><td>10:00 AM to 8:00 PM</td></tr>
+            <tr><td>Thu</td><td>9:00 AM to 8:00 PM</td></tr>
+            <tr><td>Fri to Sat</td><td>8:00 AM to 8:00 PM</td></tr>
+            <tr><td>Sun and Mon</td><td><span class="closed">Closed</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="visit-card">
+        <h3>Revamped Beauty Salon</h3>
+        <address>1233 Vine St<br>Philadelphia, PA 19107</address>
+        <a class="phone-big" href="tel:+12153095476">(215) 309-5476</a>
+        <p class="rating-line"><span class="stars" aria-hidden="true">*****</span> 4.7 from 21 Google reviews</p>
+        <p>Questions? Call (215) 309-5476.</p>
+        <a class="btn btn-primary" href="tel:+12153095476">Call to book</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-wordmark" aria-hidden="true">ReVamp Yourself</div>
+    <ul class="foot-nav">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#revamp">The ReVamp</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="tel:+12153095476">Call to book</a></li>
+    </ul>
+    <p class="fine">This is an unsolicited website design concept created by Freightfolio. It was not commissioned, affiliated with, or endorsed by Revamped Beauty Salon. This is a design preview only.</p>
+    <p class="fine">Revamped Beauty Salon &middot; 1233 Vine St, Philadelphia, PA 19107 &middot; <a href="tel:+12153095476">(215) 309-5476</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
