@@ -1,0 +1,1421 @@
+{
+  "1097519147521686": {
+    "details": {
+      "address": {
+        "city": "Baltimore",
+        "country": "US",
+        "postalcode": "21201",
+        "stateprovince": "MD",
+        "streetaddress": "427 N Eutaw St"
+      },
+      "categories": [
+        {
+          "category_id": "169758603141095",
+          "display_name": "Barber Shop",
+          "top_level_category_name": "NotAvailable"
+        },
+        {
+          "category_id": "1485912725142092",
+          "display_name": "Barber",
+          "top_level_category_name": "NotAvailable"
+        },
+        {
+          "category_id": "174177802634376",
+          "display_name": "Hair Salon",
+          "top_level_category_name": "NotAvailable"
+        },
+        {
+          "category_id": "199236533423806",
+          "display_name": "Beauty Salon",
+          "top_level_category_name": "NotAvailable"
+        }
+      ],
+      "description": "We specialize in women, children and mens haircuts.Hair design, hair coloring, eyebrow arching, faci",
+      "entrance_pins": [
+        {
+          "latitude": 39.29456458,
+          "longitude": -76.62111002
+        }
+      ],
+      "is_permanently_closed": false,
+      "links": [
+        {
+          "id": "152707298074856",
+          "type": "fb_page",
+          "url": "https://www.facebook.com/152707298074856"
+        },
+        {
+          "id": "152707298074856",
+          "type": "ig_explore_place",
+          "url": "https://www.instagram.com/explore/locations/152707298074856"
+        },
+        {
+          "id": "philsthatbarber",
+          "type": "ig_account",
+          "url": "https://www.instagram.com/philsthatbarber"
+        },
+        {
+          "id": "instagram.com",
+          "type": "website",
+          "url": "https://www.instagram.com/philsthatbarber"
+        }
+      ],
+      "location": {
+        "latitude": 39.294570311825,
+        "longitude": -76.621001958847
+      },
+      "name": "Tight Image Barbershop",
+      "opening_hours": [
+        {
+          "close_time": "1900",
+          "day_of_week": "MONDAY",
+          "open_time": "1530"
+        },
+        {
+          "close_time": "1900",
+          "day_of_week": "TUESDAY",
+          "open_time": "1000"
+        },
+        {
+          "close_time": "1900",
+          "day_of_week": "WEDNESDAY",
+          "open_time": "1000"
+        },
+        {
+          "close_time": "1900",
+          "day_of_week": "THURSDAY",
+          "open_time": "1000"
+        },
+        {
+          "close_time": "1900",
+          "day_of_week": "FRIDAY",
+          "open_time": "1000"
+        },
+        {
+          "close_time": "1800",
+          "day_of_week": "SATURDAY",
+          "open_time": "0900"
+        }
+      ],
+      "opening_status": "CLOSED",
+      "opening_status_facts": {
+        "next_status": "OPEN"
+      },
+      "phone_numbers": {
+        "display_number": "+1 410-837-7776",
+        "e164_number": "+14108377776"
+      },
+      "price_level": 2,
+      "rating": {
+        "avg_local_rating": 0,
+        "avg_rating": 4.6964285714286,
+        "num_local_rating": 85,
+        "num_rating": 56
+      },
+      "rich_attributes": [],
+      "rich_offerings": [
+        {
+          "data": {
+            "confidence": 0.8,
+            "knownfor": 316.50352550973
+          },
+          "name": "Fades"
+        },
+        {
+          "data": {
+            "confidence": 0.3,
+            "knownfor": 41.657247501937
+          },
+          "name": "Big chop"
+        },
+        {
+          "data": {
+            "confidence": 0.109,
+            "knownfor": 0.16149202073259
+          },
+          "name": "Beard trim"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.01082576221063
+          },
+          "name": "Razor shaves"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0086088325622149
+          },
+          "name": "Custom cut"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0082443023727986
+          },
+          "name": "Hair shape up"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0082400764191929
+          },
+          "name": "Fade cut"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0078872322500363
+          },
+          "name": "Shampoo & conditioning"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0038734189032161
+          },
+          "name": "Hair coloring"
+        },
+        {
+          "data": {
+            "confidence": 0.01,
+            "knownfor": 0.14543987494056
+          },
+          "name": "Fadehaircut"
+        }
+      ],
+      "summaries": {
+        "full": null
+      },
+      "time_zone": "-0400:TZ",
+      "time_zone_id": "America/New_York"
+    },
+    "error": null,
+    "events": [],
+    "gallery": [
+      {
+        "inline_text": "Gen'es  sais Coif is the creation of that something special in Hair Artistry and atmosphere.\nBook your appointment \ntoday!\nNear Tight Image Barber Shop\nPrivate Hair Studio",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQMpLDJRQt8oHH2H-sz1ZX_g8ASiYv0SF3o8CxVf1GD8XK2uSXvNI80qc0-4mWLD_SPoVh5_3qzuA4z5vfAFfg1h.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=lHNXX14NK_MQ7kNvwF4i7vr&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTc4OTQxNTM1ODk0MjMxMDcsImFzc2V0X2FnZV9kYXlzIjoyMjEsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjozOCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=ce2e2299b9054e3c&_nc_vs=HBksFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMTc3NDE3NTM3NjM0MzUyXzYzMDY5MjY5Nzk0MTIyOTI5MjcubXA0FQACyAESABUCGFFpZ194cHZfcGxhY2VtZW50X3Blcm1hbmVudF92Mi8yNzRBNDE4QjBCNzU5OUQ2ODE2NENFRkNDQjY5NDE4Nl9hdWRpb19kYXNoaW5pdC5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmhvCHxOmoyT8VAigCQzMsF0BC6p--dsi0GBJkYXNoX2Jhc2VsaW5lXzNfdjERAHX-B2XmnQEA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQMfKA2UtyytR9TkNLx1Sku74fvYJmpMFz4Fiv2I861IyA&oe=6AD8C9E8",
+        "permalink_url": "https://www.instagram.com/reel/DVzcsSpjsjM/",
+        "post_id": "18394891993198504",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/844686241_17959262724240370_581982866174816818_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=100&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=AcKpYHb-KggQ7kNvwHTOfcd&_nc_oc=AdqoxxG9bBdoROZTZWK8Ny0sZxs3OydwY2MXr-Z0SUzOhKypi7X1brpQFSrDb56BWaAVPkDMxqWJ2SCHni7eM33R&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQOwIgSRAdipyBDAN4MLv7iyQSqLteJWwDLlm-Q3MJsiFw&oe=6ADCA698",
+          "reaction_count": 4,
+          "username": "genessaiscoif"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/651194498_17926162593240370_8810043383526133935_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=8TxenVyd5twQ7kNvwEhp1QZ&_nc_oc=AdpOo5CKHoS5EF14MK14CvtKsA4_YjTxEuqmh4tusLIbezeJZrzTPtpiAxYABYZY6Jnpl2Nfd1TGNQVV68cwH3ZW&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQO05382g7SnK_N8mwpkjcKrUJ-201-3kiBUKr4ZqtZrxg&oe=6ADCAF0C"
+      },
+      {
+        "inline_text": "",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/742129702_18606356236059500_2682657786955519403_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=FWf5BzD7avIQ7kNvwGprjcq&_nc_oc=AdoHpsrn36gvFQwyxS6mOb_wbLl-VyeEgFoTRRIKAqkhagFjlumDTILU4IMWo08G64JnKJhlhTedimP8EZFa_Uiu&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQM4ocfcNks_HYuAgTMHYPXPLOK2lPrucF0KCn8N5nT7Lw&oe=6ADC9E70",
+        "permalink_url": "https://www.instagram.com/p/DafzhFYOqCl/?preserve_img_index=1",
+        "post_id": "18178300078412985",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/831354534_18636620215059500_3460045510089386587_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=102&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=NsSvjxtYjGsQ7kNvwExnNQw&_nc_oc=AdqDjYsFb0P7AQpN48ObV6FiGaPtxF-E2qqG8GHm5iu0Eyh-efOV_jNG8Bz3eC27q41rUh2dg5dVhgRDbc-IjRJf&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQMX7Y7ffonPSU7ttCjQ39j-kv3WHIyeNH93MOUFsyZIPw&oe=6ADCB65C",
+          "reaction_count": 0,
+          "username": "dionte_wilkens"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/741636333_18606356092059500_2075100976410573294_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=xdK7iAhkepQQ7kNvwFzFGTe&_nc_oc=Adosjp1s7kSQSycbAUkW1Q2dapQyENYyy7qzW7CH2y0IhD5FEF1sUgL3iekXLCJaRtNGp84RE-GOGYyyQjD7BQ2i&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQMaet8b0pqDUb18MxFccsy58YK0V1ejhPI9PcMp96Wplw&oe=6ADCCF2E",
+        "permalink_url": "https://www.instagram.com/p/Dafzg5MR4Db/?preserve_img_index=1",
+        "post_id": "18121506844839399",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/831354534_18636620215059500_3460045510089386587_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=102&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=NsSvjxtYjGsQ7kNvwExnNQw&_nc_oc=AdqDjYsFb0P7AQpN48ObV6FiGaPtxF-E2qqG8GHm5iu0Eyh-efOV_jNG8Bz3eC27q41rUh2dg5dVhgRDbc-IjRJf&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQMX7Y7ffonPSU7ttCjQ39j-kv3WHIyeNH93MOUFsyZIPw&oe=6ADCB65C",
+          "reaction_count": 0,
+          "username": "dionte_wilkens"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "💈⭐ FIRST TIME IN THE CHAIR? PERFECT 😤🔥 TUESDAY AND WEDNESDAY — NEW CLIENTS GET HALF OFF. COME RELAX AND LET’S GET IT IN 👌🏽 LOCK IN YOUR BOOKING, LIKE AND FOLLOW. STAY FOREAL.\n#haircut #fades #tempfades #fyp #tcuttsforeal",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m367/AQMxkWte9pVCQ22ouu4tH2WSYgSvM7NoRt1TEWFN9uJxLi5cCxhQl99Mfp098Kk9faz6AS3sbnQGevIGvbaumOazTwB0IZR-n-0Ljj8.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=CsQGOUmtQTUQ7kNvwGsMLH4&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNDgwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTUxODMwMDA5NTk1MzkxOSwiYXNzZXRfYWdlX2RheXMiOjMxNCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=8fa205484f2f7252&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC80MzRBOURCNjUxQkZBNUM0Mjg4NDc4Q0Y2RTZGMjhBOF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yNTc2OTA3MDQ5MzU2ODgwXzI0NjQ0MDI2MzQ4ODg1MDExMDQubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJv7vjZ7ZuLIFFQIoAkMzLBdAIEKPXCj1wxgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQNt0UnJ1oIJsr3kk0EMGYZLMGuITgLHhJgoBOsSSmyXMQ&oe=6ADCC6C2",
+        "permalink_url": "https://www.instagram.com/reel/DSDR5xBkXmb/",
+        "post_id": "17904584982320050",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 5,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/597919514_837492185809166_4711233861780267198_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=D0VtCUNzqwcQ7kNvwGwpWPv&_nc_oc=Adqaza7_8KM5iwXUlquwrqRsTL1ajYxoxl_jgFWm6Ccr9v2wJxtMGp4cU627YNeGiXMKtO2xXW894xOa0cTDlMRr&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNUF_H6EuT9TFHzAy0Cv6VuKHFGpe7ImxI4HhwRJWjwVw&oe=6ADCB64B"
+      },
+      {
+        "inline_text": "💈✂️YOU ONLY LIVE ONCE, BUT IF YOU DO IT RIGHT ONCE IT’S ENOUGH!!! \nGET A HAIRCUT!!! ✂️💈",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQOsp-qjPW99DqDZX_comkpmxPbkY-Uoc_21uRCTfknFKV_rGEGxOXcEqc8QfSE_TTGWFjKczlCLtUPcWCZ321GPhVQJsnPDPSIRGxI.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=b4-FxLk6iFcQ7kNvwH7mP9t&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTg4NzkxMTE2MTkyOTM4OSwiYXNzZXRfYWdlX2RheXMiOjM3NSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjIzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=1188c3d722466a59&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DODRBOEUxOUI3N0ZCMzI0RTg0RjVGMEM5RTJCMENCM192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xNzU0MzE3ODgxOTU0MjAwXzg1NTMyMTQwNDgwODY2ODk1MjUubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJtr65KLywtoGFQIoAkMzLBdAN0zMzMzMzRgSZGFzaF9iYXNlbGluZV8zX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQPkvYndhy7OaM9UwLPQuaTlgQcSqpItzvuLn8K3Dyg4pA&oe=6AD8B765",
+        "permalink_url": "https://www.instagram.com/reel/DPm_Gx6DGGe/",
+        "post_id": "18121573534507483",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 3,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/561885984_749300624812942_314619235832916882_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=0WihaORxxloQ7kNvwE06yIA&_nc_oc=AdrnDIiw9_4qtSIHxk8jNQTrGwNKm1ycGhPtjs4ysx0GFEeBr0hXWOmdp_ykTwCMkTtM515j-ARwbfNoFbcp1d1S&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNkTgiHlqBKlT0X-_UkSDa-wraeSA-AD2mUKF2bzOSZTw&oe=6ADCA8EF"
+      },
+      {
+        "inline_text": "Book \"The Basic\" for your pixie maintenance,includes relaxing shampoo,condition mold and style. My Hair Studio is not open to the public, you have to call and make an appointment. Women only! Booking link in my bio and contact number.\nLocated near Tight Image Barber shop.\nHair by Ayah Sanaa",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQOtGMCezCl0B_yMi_qxXBCdeuoOkuSHGaAcIe-IW0SradBdCEq5vEWVK1H1cYxbKNnAvVk-UckTFDXEB3w33c_vXpJQ9UZEOCwNhk0.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=amAb4Z6r2lEQ7kNvwGzDEOc&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc4OTkyMzMwNTE0MjMxMDcsImFzc2V0X2FnZV9kYXlzIjoxOTQsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyOSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=f29d10be1fe9630e&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9GNDRGRTY1RjA1MUI3MDQ0MzRFOEZBRUU2NEYwODc4RF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzkyNEZEMkJEQjUyODlENzA5RkZGRThEQUFDMTVERkE5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaGxsG8vtDLPxUCKAJDMywXQD0AAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQPB5mLeqDGoYfjd9uVKgafTRQDfVXzXTyEhHsBfAtW7Wg&oe=6AD8D302",
+        "permalink_url": "https://www.instagram.com/reel/DW4LK3LDlrC/",
+        "post_id": "17987810462794730",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/844686241_17959262724240370_581982866174816818_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=100&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=AcKpYHb-KggQ7kNvwHTOfcd&_nc_oc=AdqoxxG9bBdoROZTZWK8Ny0sZxs3OydwY2MXr-Z0SUzOhKypi7X1brpQFSrDb56BWaAVPkDMxqWJ2SCHni7eM33R&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQOwIgSRAdipyBDAN4MLv7iyQSqLteJWwDLlm-Q3MJsiFw&oe=6ADCA698",
+          "reaction_count": 16,
+          "username": "genessaiscoif"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/657273861_17930415165240370_164786436881278220_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=APxFYFb2LfAQ7kNvwH0Mers&_nc_oc=AdoBLoZDmn7pG4oScUkUa3smy5y_hsFeJfpCbEU5CtBWRcJ4gZPTSqE82Ycu54LGYc6-Xc9r0f51Bhg43sxTT3TW&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQPOAv5-y8-HFMBC4cNf8DaSPpHp7KZFrHwcY5Dnlr599g&oe=6ADCADC2"
+      },
+      {
+        "inline_text": null,
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQNFI_VvWhme1gFr0GqsSxG2VEQp4ez-rADB22CrJ71h1_eN0fn-_vIcisCPGJ9yEGcAbBQuSQdoHQUZnoUyPSeosq7zrqL1szIoFEA.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=27mAil2PmoEQ7kNvwF_S95E&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTU4NTE5MjEzNTgwODExMywiYXNzZXRfYWdlX2RheXMiOjM2MywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjExLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=cd9022c11f5c9fd7&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yMjQ4MDkwNDVFQkJGQjdEQUJDRkE0NkJERURCNkU5RV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yMTc4MDE1ODQ5Mzg4OTgwXzg3MjkxMjgzOTA0MzQ3ODUwMjIubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJuLRvuKp7tAFFQIoAkMzLBdAJhDlYEGJNxgSZGFzaF9iYXNlbGluZV8zX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQOrPL0sX34o_rgAUztwODGTfaegExXNeOEdTuAfVIRuqQ&oe=6AD8DBBB",
+        "permalink_url": "https://www.instagram.com/reel/DQE4_sYDbfp/",
+        "post_id": "18058729007207081",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 4,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/568085940_1369461891552129_8940476320090600479_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=qCZae9SFZ6YQ7kNvwG9UDqN&_nc_oc=Ado08NjWm4CJjwxmug5StBwRu0ZSnaWFsXEvvVmZHSc2J-689qHeau-_MPWJVEOOenD9B7s7S5uZiYzo1v6t8Aje&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQML_eNpUb1As5AYcDfyXpMb0lhzbKYuicuPu8jJotRC7A&oe=6ADCA20D"
+      },
+      {
+        "inline_text": "✂️TURN THE NORMAL INTO ELEGANCE!✨💋\n#tcuttsforeal #haircut #fyp #fade #tempfade",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQN21ejsAydHFsC6sWzzLlXGDdoTgYpkvEyMOaQpbwSvYNcUTuVE3xrXCsiZ1eX6o7CjYTwxx17i7NK0_U1yyj6Azu6rn4ZingYAq9E.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=Q-XWEb-8lOQQ7kNvwGpBvKd&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTM1MTk1Njg2NjMyNDk0OCwiYXNzZXRfYWdlX2RheXMiOjM2MSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=27c7602fd1e75325&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9CMDQyRDlFMjdDMUM1RUM3QjAzOTJBQTNGODhFMEFBNV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMzYwMTM2OTE1NzIzOTY5XzY0MDM2MzE4NDgwNTgyNDYyMTEubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJqjnpsyf5uYEFQIoAkMzLBdAIDAgxJul4xgSZGFzaF9iYXNlbGluZV8zX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQMczVKIL_hbc4xruL9qHhrPhCCKILpRC4WElLvXCH-wAg&oe=6AD8AF1D",
+        "permalink_url": "https://www.instagram.com/reel/DQK8hftjESs/",
+        "post_id": "18113743324494729",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 1,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/568728954_1265106675419163_5888405387572247400_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=0LtDZ_eWevQQ7kNvwFsfd15&_nc_oc=AdqF-d_fTHS2Zfr8KSrJdG-unEleWiGbq73-dC_DECQB8HPjbBsXl26QGV75Pu48kLqVpqAPAdXMEUhW_WTjbRH1&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNFCbo7RSrdem5jRGkvffUR1YLrCf0x4LW_wcl3YZ5EsQ&oe=6ADCC904"
+      },
+      {
+        "inline_text": "READY TO REFRESH YOUR LOOK? 💈 LET’S GET IT — PROFESSIONAL✨ CUTS, REAL RESULTS. LOCK IN YOUR APPOINTMENT !LIKE AND FOLLOW. STAY FOREAL.✨\n#haircut #fades #tempfades #fyp #tcuttsforeal",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m367/AQPmrPueJJLMfoM5-Q7ggVyFHYm4_ayzT68bwhxBS8ukbWUnj-vKEIOpkwCxJk5Cx1jpf1BfeRdkE_JUHZYrs1BxaJLJExuXRSpJLUA.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=3bZ25dJwfWYQ7kNvwEXbXY_&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjY1NjA2MDIxODA3NTQ1NSwiYXNzZXRfYWdlX2RheXMiOjM0NywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=e40f5f06fbe27761&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC81QTQzNzZCNTYwQkUwRjgwNTY1MTNBM0IyMzdDRTFCRV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMzYwMDE2ODM2MTQwMjU5XzYyOTU4NjcwMjA5MzU2NzIyNTUubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJv6k59yG67cJFQIoAkMzLBdAJKp--dsi0RgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQMtbxRoOcYRKBX9SO6HKdT3Ae5llPNa3LVO9xsZLCXBrQ&oe=6ADCCFED",
+        "permalink_url": "https://www.instagram.com/reel/DQvEn5njOEN/",
+        "post_id": "18026797166759993",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 2,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/573962393_18533758057025040_8568632201300162156_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Qk7q-GEW258Q7kNvwFPffKA&_nc_oc=Adqf5uIQrdMLCNVSGt70Ak-09yIyFIxc2QQ6q9jBVJSIdHabaXtPvJsFIZnCuscqhi5od5ihOWsPVoCYXSgHr6yN&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQP4L-DOGXZyyUMoB-JIcc34t-xQsnS4v7J83gvfgbMa2A&oe=6ADCAB12"
+      },
+      {
+        "inline_text": "My repost \nA private Hair Studio Located near Tight Image Barbershop",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQMuRTCuGOEXeO7gq43I8EFBzIs7NiG7COfjLgA0nfFVXUpBmFpNDIISP3V4BaGyWRRxUS6EOH7tEIm_7keNjyL_-5I4dytfz7m35G0.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=Mktv25HrrBkQ7kNvwFJ5Oaz&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc4OTg5NTQ5OTY0MjMxMDcsImFzc2V0X2FnZV9kYXlzIjoxOTYsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjozNSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=d30d1eccc9de2986&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC80NzQ1NjE1ODk4NTgyNUY4MzBFMzYwNEFERjAwNTI5Q192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzQwNDNDNjVBQzk4M0ZFRkNFNENDNkY0REZCNkI4MEI5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaG58zmpsDLPxUCKAJDMywXQEGd0vGp--cYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQO4L6swNVfh00WwMhrxt0eaIyigWRLOgFEywUof0XIacw&oe=6AD8BB9A",
+        "permalink_url": "https://www.instagram.com/reel/DWzgU5BEUq3/",
+        "post_id": "18517927666073492",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/844686241_17959262724240370_581982866174816818_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=100&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=AcKpYHb-KggQ7kNvwHTOfcd&_nc_oc=AdqoxxG9bBdoROZTZWK8Ny0sZxs3OydwY2MXr-Z0SUzOhKypi7X1brpQFSrDb56BWaAVPkDMxqWJ2SCHni7eM33R&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQOwIgSRAdipyBDAN4MLv7iyQSqLteJWwDLlm-Q3MJsiFw&oe=6ADCA698",
+          "reaction_count": 13,
+          "username": "genessaiscoif"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/659539206_17930152647240370_399014937291357632_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=TbvMICbiVyAQ7kNvwEutmA8&_nc_oc=AdqHADajpRRlOzHIL1WwMUFcuQsv_VfbJLQej6F666hTqQZ4ABeklClVR0TB6tpc_EFCVH8jM4YNygKOQhAq-IuK&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQOLusFfCTUTRz-PAoHl5Qcys_Iac_rkna65YN8baZZHGA&oe=6ADCCF1E"
+      },
+      {
+        "inline_text": null,
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m367/AQPJu_7zC_v0UjWnFooDFKYpypEYx8PTcA6hZUFXSE1x6q-0eO0GdKrtVgCmhH-DmTiz5unDX4gCrcfjSBFfSTLjlWirmUrB4L1qP1Y.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=a6nGGDNW0v0Q7kNvwHuEaBq&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNTc2LmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjUzOTUxMjc5MzM0MjU2MTUsImFzc2V0X2FnZV9kYXlzIjozNTQsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=e18e6d6974698d09&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC83NjQyQzgzNkE0NzVEMDlGM0IzNkRGNEQ1REFEREE5MV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zMDE3ODYwNTE1MDY3MDA1XzU3MzI0MzIyMzQyNDUwMTk5OTIubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJp7f-rf_rpxaFQIoAkMzLBdAJJmZmZmZmhgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQOvB0aTKAXJnbyureU2rlaIyRfLCLRc7sn1F66YOy0aHA&oe=6ADCD28F",
+        "permalink_url": "https://www.instagram.com/reel/DQblzcZkaDc/",
+        "post_id": "17956072481878329",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 2,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/573675929_2604555126585172_4449288531103512563_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=BmR-Yy_GePwQ7kNvwEGBgt1&_nc_oc=AdqrRlHnhXaiiny-bl58OphNYOZHfiVnwUAJ9D9fAfGDyuTtOlEK1oUCY2vSqslOMZNhaCiSN7Z_UT_jKb1KBb1b&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQMmpZ71_6B_qtyNXDjq4u9-y9LUa6cLQGkGIJqldCnRnQ&oe=6ADCA4C0"
+      },
+      {
+        "inline_text": "#tcuttsforea LOOK AT HIM!  #baltimorebarbershops #tcuttsforeal",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQPK0xG-UrNc2A1iCjjRyqLQoopSRxhPaCxfTL0f9SAdcpFIMfH6tIMcUTnvjfCpNLgipcP0NtewRb7t29IJAVqDNaas9Z1wHQwXZRc.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=3e_dO6taMHwQ7kNvwGyfX20&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTI2NTEzMzMzNDk5NzAxOCwiYXNzZXRfYWdlX2RheXMiOjQ1MiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=4c8602ef04e65760&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9BQTRDODJCOEI1MzA3NDQwQkE5NjM1RjdGMjMyOEJCOF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81ODk3NzkyNTM5OTY2OTFfNjEzOTYyMTI1MTQ0OTY0ODY1NC5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmtKC18LmovwQVAigCQzMsF0AVMzMzMzMzGBJkYXNoX2Jhc2VsaW5lXzNfdjERAHX-B2XmnQEA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQNRaY-y6ST80Pl3fOjYHR8Vw9Frhrflrb6Vu4mKtYfrDA&oe=6AD8DF81",
+        "permalink_url": "https://www.instagram.com/reel/DMg2ZTtMIWB/",
+        "post_id": "17966673494927435",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 6,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/523317495_24003713505957929_1753504493051968334_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=xIwch2mAKDcQ7kNvwESwTXI&_nc_oc=Adp-J7PzeeIf5mWi7EAkKkChk0_iCpz2r-cL9DVpJwbVCqqxMcVDWm-B5nAiwDztCvBgmvKTjyyZ4oje-jhDx9eR&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQMnHe4iNvB9Y7dxBl5cfH7sdxk3an418PE9paIxVRi7NA&oe=6ADCA907"
+      },
+      {
+        "inline_text": "💈✨🔥 THE WEEKEND IS NEAR — TIME TO GET SHARP 😤⭐ COME SEE ME AND LET’S GET IN IT WITH A CLEAN, CONFIDENT LOOK 👌🏽 LOCK IN YOUR BOOK, LIKE AND FOLLOW. STAY FOREAL.\n#haircut #fades #tempfades #fyp #tcuttsforeal",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m367/AQM5Jgq-jB5LBtRDd_YG80h4iTmnyOVACHBLT9yBw3aSzJ_iGfXniqSUfsycYt2eHaxgBNK5Jaygsx4TXwhnwGLfhDU2UygAVpJkLqI.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=maGASveEy0kQ7kNvwEPzJvN&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6ODE4NDk4MzE3NjUwNzQ0LCJhc3NldF9hZ2VfZGF5cyI6MzMzLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6OCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=8a133d5d4cd09f61&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC9BNTQzREU0MEJBM0I4N0ZGRDY0QzcwRUM5NzhDMkM5QV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMTU2MzMzNDg2NjM3MTI3XzY3ODI1MDQ0Mjc5MDQyNjg0OS5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm8KzI1--a9AIVAigCQzMsF0AgAAAAAAAAGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQObhQNuqrVpUNHrT3y-8NmHanF-CqeIzACtpchPlFUmgg&oe=6ADCBF7B",
+        "permalink_url": "https://www.instagram.com/reel/DRSfqt4kaYy/",
+        "post_id": "18038041007721007",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 1,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/584396464_1376985873869719_6099777569045169939_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Z3PXRr8an1MQ7kNvwEHTMtQ&_nc_oc=AdpVOjTxQRtmfrV2SswZQZiqMC8gCBWkVD08-u23rD26Q4pCeuMNO7GIjkjOUUm0rQnCQAzCkipbC8pg52j_EDXv&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNmrQcWeS216SAJX-lunGbzTV_52l_SEmKHI9HjFM3X-Q&oe=6ADC9D62"
+      },
+      {
+        "inline_text": "My repost\nLocated nearnTight Image Barber shop\nPrivate Hair Studio.",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m367/AQNphKEETW0QP4WzHHpLPCYiMTux5uyLZ-Yb6ar-_59Fyur06EfHL1SDKOrLJhoZVymg19dHciOFmfzanX42ix1M5rExDyLtYmJdINQ.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=oqvlQBiGEO4Q7kNvwEZMFBB&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc4OTQ2MDI3NDY0MjMxMDcsImFzc2V0X2FnZV9kYXlzIjoyMTgsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo0MSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=35d3430fb19379e8&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC84NzRFQTIxMDRBNDgwMDA1QTEzNTQwQzdENzYzOUZBRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzc1NEY1M0VGOTZDM0EzNUYzMEJBRjMwNTBGQ0U1RjgyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaGnceB_MLJPxUCKAJDMywXQER3bItDlYEYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQNJySObpxGgInnKZeBHdm6Hey8jy6FcYx2AXEfCd7tVag&oe=6ADC9D8B",
+        "permalink_url": "https://www.instagram.com/reel/DV6xYqJEQEk/",
+        "post_id": "18018301715822127",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/844686241_17959262724240370_581982866174816818_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=100&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=AcKpYHb-KggQ7kNvwHTOfcd&_nc_oc=AdqoxxG9bBdoROZTZWK8Ny0sZxs3OydwY2MXr-Z0SUzOhKypi7X1brpQFSrDb56BWaAVPkDMxqWJ2SCHni7eM33R&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQOwIgSRAdipyBDAN4MLv7iyQSqLteJWwDLlm-Q3MJsiFw&oe=6ADCA698",
+          "reaction_count": 9,
+          "username": "genessaiscoif"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/652780968_17926588110240370_6008799018032001916_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=KB44P6ExvhwQ7kNvwGDRdz8&_nc_oc=AdrLw-m1Nln2ERdBIpZItlnrFbIr3Zx78mxS6C70CXXXmAzUf5Stre52YbtXGatrBpMwMFDJ_dx_i5WSyuoa1V4K&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQMGep-_ZPuuxZKUcpF7E_SFVv9rCPjuXHa7AQzHpRaJUA&oe=6ADCB817"
+      },
+      {
+        "inline_text": null,
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQMoJMnQX10ExQZlCGuDbG_CAOpAkTMXcf0bFDtkrYnkdGgGxf0XBp7L8FkWz_-kEkWkn5LAYIagrycFZz9mMAXZIiRTLvA7hPDHrZc.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=k_MM9ZT3UtcQ7kNvwGTBWqT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTU5Mjg1ODgzMTY5ODMwNywiYXNzZXRfYWdlX2RheXMiOjM2NywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=f5ee82ee6781c659&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82RTQ1QTk1NkNCNUU0RDYwNDBGRjEwRUY4ODQ5QTVBOV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMTQ2MTM5NjkwMjk4NjIzXzM3OTAwMjU5OTM2OTMyNjE3MjcubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJobmuY3LrNQFFQIoAkMzLBdAIBDlYEGJNxgSZGFzaF9iYXNlbGluZV8zX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQPhAIRvJWseyo5M-b-i04Vlec10zs7y2PrDThpqlRg4Rg&oe=6AD8CFAD",
+        "permalink_url": "https://www.instagram.com/reel/DP6cfONDdoG/",
+        "post_id": "18186676078330465",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 2,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/566757290_1701387000541905_9030465460877695952_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=bKkQ8Gyy13UQ7kNvwH3mZH5&_nc_oc=AdpPIKWCHmYdEwMerRooazTsP3Ue6VdMMG_pqqQO4sC9wMTfYPlMfNjscDKYLKBTMTF0xXVIDo8WaiWbsfYki7Eq&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNwP6DFmPYHtk76YdnOaIdASrMGWjSHIbyLJfDcMGiPbg&oe=6ADC9F03"
+      },
+      {
+        "inline_text": "Little man fresh! #tcuttsforeal #baltimorebarbershops BOOK ME!",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQPWdp7UaC6-gAm44zsXOVvdZo4H9QMAaYUn8hVSgFPmKGpQSo5_ORGXlXpVhEeW4P_teBLyBqJXyS1mu9llvcNOe-7cxd9FRio7NUc.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=cnGt23wDE1sQ7kNvwFlLxZl&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6NzQyNjM3NzA1Mjg4NzU0LCJhc3NldF9hZ2VfZGF5cyI6NDUyLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6OSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=ec909e03760840ba&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9BNDQ5OTc1NDg5NURFRjlEMTg4N0MzNkY0NDEyMDM5Q192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82MTUwNzc0NDQ5ODY1NDRfNzg0NzUzNjc5Nzg4NTg1MDAzMy5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm5PD2iZrb0QIVAigCQzMsF0Aj3bItDlYEGBJkYXNoX2Jhc2VsaW5lXzNfdjERAHX-B2XmnQEA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQPNwzYf8V73lC2Z9lvm4a7zCSWod6FNMwzEqz6BRwpl8g&oe=6AD8C899",
+        "permalink_url": "https://www.instagram.com/reel/DMgzO5LM_WZ/",
+        "post_id": "17868952686334283",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 5,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/523330582_18512601778025040_4016937531220623982_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=l01V7iRhcPEQ7kNvwECv7lg&_nc_oc=Adok31L6rzhckeHuhdCRibKNr6uZaVfFI4GNkpSj1WiQnHnEtwGbkyFv0H-szUzw01IMnmkBUDPJ0QcpMjlXtrRo&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNzOPAsUIvrHPYSYH0ktw775kDNzjk-J7X9DLtoKgFGWA&oe=6ADCB92B"
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/343325416_1355618738622174_8991180818197748987_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=eed8e3&_nc_ohc=jWEVtB_NmT4Q7kNvwEBV4uj&_nc_oc=Adq-GqWtKrAoSSvam9rA1rwwD1dqnGc7Bw5eklBHFFQbpFi5-w0eoFJgwmkM4VjLvaMQ_oPyIGY0OrRZqIwO2PaO&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQPsvUDO0Zm9h-XG3l8SVoUSHpiJCtGoCpZ7bGRFAnL9DA&oe=6ADCB962",
+        "permalink_url": "https://fb.com/photo.php?fbid=711397910988737&set=a.468988678562996&type=3",
+        "post_id": "711397910988737",
+        "product_source": "FB",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/343325416_1355618738622174_8991180818197748987_n.jpg?stp=c0.0.897.897a_cp0_dst-jpg_s32x32_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=jWEVtB_NmT4Q7kNvwEBV4uj&_nc_oc=Adq-GqWtKrAoSSvam9rA1rwwD1dqnGc7Bw5eklBHFFQbpFi5-w0eoFJgwmkM4VjLvaMQ_oPyIGY0OrRZqIwO2PaO&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQMF1gIfObheBu58jE3JqkFQTcN2nBMpwledm2HDpe3JsQ&oe=6ADC9DE4",
+          "reaction_count": 3,
+          "username": "Tight Image Barber Shop"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/481986426_1216775307117659_196381079967570190_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=957871&_nc_ohc=Zi2Ee9ibpdgQ7kNvwFW9Ox8&_nc_oc=AdqutWL4CKPWjZO_uu16ef0nSTcJQyWEqgRz4PF86HusClC4RnZut988_mIdbunuAZ2bbvbJh3thUhcmLSkk8BwI&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQMq5oAQ_NTt-AooB0inTjpJC_1yQ8K9gVtEv05jP2BfBw&oe=6ADCB256",
+        "permalink_url": "https://fb.com/photo.php?fbid=564107142384482&set=a.468988688562995&type=3",
+        "post_id": "564107142384482",
+        "product_source": "FB",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/343325416_1355618738622174_8991180818197748987_n.jpg?stp=c0.0.897.897a_cp0_dst-jpg_s32x32_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=jWEVtB_NmT4Q7kNvwEBV4uj&_nc_oc=Adq-GqWtKrAoSSvam9rA1rwwD1dqnGc7Bw5eklBHFFQbpFi5-w0eoFJgwmkM4VjLvaMQ_oPyIGY0OrRZqIwO2PaO&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQMF1gIfObheBu58jE3JqkFQTcN2nBMpwledm2HDpe3JsQ&oe=6ADC9DE4",
+          "reaction_count": 4,
+          "username": "Tight Image Barber Shop"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": null,
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQPGsBfVbJ8qlTjlq49-zwCo7bvhDdLVblxQN9e6hW7D3gOJL2JVD7bc16JjnJ-mQU64sJL84fkuwvYHMs6PL1dPYY5eM4mKy4lrw0M.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=oDr76k5HhxYQ7kNvwGmBXKe&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MjA4NTQwODIwMjE5ODg2OSwiYXNzZXRfYWdlX2RheXMiOjM5MCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=66e9a9c52cdbee23&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC84RDRGMjc5OUNGQkJCRjZFNTFDQjVGNDJENjNFNjE4N192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMjgxOTc1NzU5ODg3ODkxXzUzMjI4MTYyNzExNTI0ODA0NzUubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJqq91PHdqrQHFQIoAkMzLBdAIBDlYEGJNxgSZGFzaF9iYXNlbGluZV8zX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQNvGmvAxRBsNA2Edv9t63ATPuzvhJJzS3ENovtX-vJ75A&oe=6AD8DC55",
+        "permalink_url": "https://www.instagram.com/reel/DPAINHOjUtJ/",
+        "post_id": "18083147665738547",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 1,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/554839465_784845440927420_4701241139336062986_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=rnZYo4No1_sQ7kNvwFeBSLr&_nc_oc=Adr9KTDAQ6WahcziF23zG8blUtTDfP53PJ0BhBF4QhnY0yXfyRXRxxuxzmNiF2FK8HfFod_1cFMceTGMeDVC4V_p&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQOab8uW1hdA-0OyuQZ_T5RyZx9yUIOEiVFjx4RYxx3mEw&oe=6ADCC0BF"
+      },
+      {
+        "inline_text": "✨YOUR LOOK SHOULD SPEAK BEFORE YOU DO! PRECISION. PRESENCE. ✨POWER. EXPERIENCE THE BLEND! \n#fyp #tcuttsforeal #haircut #tempfade #fade",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m367/AQOYqToQUOLH9KvU-rDTIgFjWC7oM3JMEpaT5OwkSkUj1G5iDIqD7Ukn_8CkRtRGS8RtxYvXOmlI4DfU9tOOW1r9MV853YaUAPqB81U.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=Hqs218Brv7wQ7kNvwEhk55s&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNDgwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTM2NTc5NTMxNTEzMjYxNywiYXNzZXRfYWdlX2RheXMiOjM1NSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=27aaa86baa198208&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC8xODQ1NUFENDhCRTNFOTkyNzY3M0E5NzkzNDhFRDE5NF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMTgxODIxMDU3MjAyMTM4XzgzNjIyNDgxOTk4MTUxODI4NjkubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJpKjwYngi-0EFQIoAkMzLBdAIEKPXCj1wxgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQPkFSxK48ckx1lqShX3h33b7DxXJLsJYWJJDbzX55GWHA&oe=6ADCD0A5",
+        "permalink_url": "https://www.instagram.com/reel/DQZc0Bukfqd/",
+        "post_id": "18510573199068144",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 8,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/574210562_1804053623644693_6989444898295436373_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=E3jlBLvdchEQ7kNvwH65xhE&_nc_oc=AdrBx3TL7_1xE8_2vuq73NfMkc3BOTjsG-K65y1rxu-WkmsSgcOkrsszUt4cFEMg4hWAz2OKlvvbt3eIeeVOWjWX&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQMtVDi4uJp1GKGSJ5Sy6x6vLFlkcH_AN2pEyWX-ZI_JPQ&oe=6ADCB9E9"
+      },
+      {
+        "inline_text": "THE SAGA CONTINUES! #tcuttsforeal #baltimorebarbershops",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m367/AQM1-W1t9QOAEySTXRUGD96fry_9GX-QfDQT21CueKrt0caunxBZ_F7fdfMz26cMVUmVUVWopoQTGhxn0llGu5gpIyuPDQJg5xupsVQ.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=1gUSo_OK4QEQ7kNvwHfDZ8Z&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNTA0LmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTI0NTAzMDQ1MzUwODMyNywiYXNzZXRfYWdlX2RheXMiOjQ1MywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjEyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=2b85d27c6db0be7e&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC80QTQ1RTY4NDZDMDM2QzQ2M0IxNzRGREZENkZGNDY4NF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83MzYxNTkxNTU4MDI4OTJfNTc4NzM5NzY3NTE5MDY1ODYyNi5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmzuPT3qeWtgQVAigCQzMsF0Apu2RaHKwIGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQMc6qL8AjLhlKmXDv0Fo856jF1naPq4NnoB-_LrSKugag&oe=6ADCAFAF",
+        "permalink_url": "https://www.instagram.com/reel/DMeEqCKseQr/",
+        "post_id": "18306128557175117",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 9,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/523959027_2154498975035661_4966693933453457610_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=DzSLhPCldRYQ7kNvwEqOq1q&_nc_oc=AdqQHhjCZueW1Rd4kDnWplnoEHN2qba6-DcJXgb5Fm7ehcSBYuqiToikjV6wNdPRg7WGHuYjcV6glf4uKXRFGVO6&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQPVQXTq-f3fPXI9CPtm-GZTDmZQR-s818wUCs-omHCk2Q&oe=6ADC9D59"
+      },
+      {
+        "inline_text": "💈✂️START YOUR WEEKEND TIGHT, GET A HAIRCUT!!! 💈✂️",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQPWkpQk0xVT5G3In6DnewGry80ZF-VhnfObXIphTlt3Dis-iLewGgv9XdrJOKwLbb-H69dbiiaBRvQV_O60lnhjTgNPo7aOhdDQFdU.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=CwUQMvcZgc4Q7kNvwFIZ90o&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MjI0MDE2NTY0NjM5NjYxMSwiYXNzZXRfYWdlX2RheXMiOjM3MywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjI3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=469b2682aa7205f0&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9BMzQwQzdEMjJDNEFCRTdGNDFGQ0U4ODdGMTk3NjdCMF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMzYxMjMyOTM4ODk5NDMxXzI0MTMzMTg1NjQ0NTMwMDY2MTAubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJoazu9nm2voHFQIoAkMzLBdAO-7ZFocrAhgSZGFzaF9iYXNlbGluZV8zX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQP-wkCRj_5E2v1T5cCLVgQsruClIeM8abXYOQuvBiP-_w&oe=6AD8DE59",
+        "permalink_url": "https://www.instagram.com/reel/DPqtdT7kavA/",
+        "post_id": "17876123358328214",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 3,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/561710960_2201099283745390_4746760203163277951_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=DMcLNqLpJgsQ7kNvwGSp7AP&_nc_oc=Adqf7ywYF_LX9K7RBxXtUyYxsN26NzoCvHSo-medy_YpCvfZB94JqlWOYlKXh5XY4veEUwSjsYoKm5oeb4dOs4yo&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQOmogx8EIQMxxLNkqxLzH_BkiYrEjLHc6wg_JyVUUvXZQ&oe=6ADCA73E"
+      },
+      {
+        "inline_text": "A FRESH CUT✂️DOESNT JUST CHANGE YOUR LOOK IT RECHARGES 🪫YOUR ENERGY!! \nPULL UP, BOOK A 🔌CHARGE UP TODAY!!!\nDONT FORGET TO LIKE, SHARE AND FOLLOW💈\n#tcuttsforeal #haircut #fyp #fade #tempfade",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQPgfi057M-aDELrx82ZuGZlZlEcwKOVj9Vhzi8ZCaswd-YuAdijoLtLei1zfPiM55IL1URNcYADZTHkV_Tr0EnAl0XjZ_WyCEtKtZw.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=ogiW2xhQ-Q4Q7kNvwFMK_uT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MzY0NDI4NjQzNTcxMzE1NCwiYXNzZXRfYWdlX2RheXMiOjM1NywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjI3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=1b55c9362b99ae18&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yQjQyNDlGOUU1MzZDOEMyRTNCMTY4NTYxRUM1NTA4MV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xNjA1NTY3NTQ0MTQ3NjgwXzgwMDQ1Mjk1OTY4MTA3MjA5MzMubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJoSCr-exnfkMFQIoAkMzLBdAO0QYk3S8ahgSZGFzaF9iYXNlbGluZV8zX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQO3OSOGRkPBoMPPAnzCj25bxfCmiRn1v8LMKhaRDak6mw&oe=6AD8B952",
+        "permalink_url": "https://www.instagram.com/reel/DQVJ4BjEQSQ/",
+        "post_id": "17897875779319676",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 2,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/573077808_18531923986025040_4376105779036299412_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=FpV8o92WK4UQ7kNvwEi_vLW&_nc_oc=Adpndbxi1p8c1tSoNhvzBg6_tLQ4RpfiTGfLzB8iXskR57xryJHiIK7ThQZepNRkovLUnzrj92-gav1NFxUoGB5W&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQO1jaR8wNrEB5WJG2wZnkom2_KltqxQM7bDRGNBV_lR-Q&oe=6ADCC5A2"
+      },
+      {
+        "inline_text": "LETS START A NEW VIBE, GET SHARP ENOUGH TO CUT THROUGH YOUR WEEKEND!!! \nBOOK NOW, DONT WAIT!!!",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQMh2T6y_3N3JLq3ppeRaH95xgG9OCYZfYczVrz2XX04VTJaC3LaYsgTGJou7xinlm7MhydTJrpu9grGAGS7Hoseic2xNwOmbpDyFxo.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=MOrX5HMGdgcQ7kNvwEwgd7_&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6ODMwNzg5MDM5NjM3NzEyLCJhc3NldF9hZ2VfZGF5cyI6Mzc5LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=7970969c5d33b47c&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85RjRCOTdBNDNDRTdFNTkyQTAxMzg1QTU0RjVFN0U4Q192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRWlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC84MTc3NTg0OTczMzMzMDNfNDIzNTg2NDI3NzM5MDUwNDYzLm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACagk7rZpOb5AhUCKAJDMywXQAkQYk3S8aoYEmRhc2hfYmFzZWxpbmVfM192MREAdf4HZeadAQA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQNS2xv83gMUIVuRqaj14rGXVQ7Akrd9ikAxtE5zoJsUmA&oe=6AD8B16E",
+        "permalink_url": "https://www.instagram.com/reel/DPc3usUjG79/",
+        "post_id": "18100185598730742",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 6,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/559867647_32047438061513840_2189531723947521809_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=y7VN3rMkozQQ7kNvwHLjKdW&_nc_oc=AdrdzrMSZhJn27vv0FJvUpEyOupoUNOBhk1rkjwpUSdCIMOERTwdzxwI7evsduE4PFtMO4t1lEjx3m8Y-yUZYGv-&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQOI5ssXEzJWA4vU9UkAPsZ273GXPO5xJ7w5-0k6ubF_KA&oe=6ADCB8F2"
+      },
+      {
+        "inline_text": "NO DYE OR ENHANCEMENTS! \n#tcuttsforeal #baltimorebarbershops \n“DM FOR APPOINTMENTS”\n#tcuttsforeal #tcuttsforeal #",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQPAyRZ39C_yYuFI2ciurVFLXgmADahMOj2rlmQlmAyAYVeat0J7bm-s_FkZkZ4Ey5uYSl6vbx9A60kkhUPEoATOR2encYv5U9SNu78.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=bwHCpfp7aIEQ7kNvwEUkQ_H&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6NzYwOTI2NzQ2ODc3NzIwLCJhc3NldF9hZ2VfZGF5cyI6NDQ1LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=973a708e84647dec&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9BRDREMTdEQTg2RjZGREJBREJCNDk3RUVFOUVERTFBMl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMzAwODQ2NDQxNTQ5ODAxXzg2NTc1OTI4MjkyODk3OTYwMjkubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJrD8lIfig9oCFQIoAkMzLBdALXdLxqfvnhgSZGFzaF9iYXNlbGluZV8zX3YxEQB1_gdl5p0BAA&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&_nc_zt=28&oh=00_AQNIVtxkzdcrEv51bFNo0Kwx-RFADkF1-woW88M97vm3dw&oe=6AD8C54D",
+        "permalink_url": "https://www.instagram.com/reel/DMyPbCGpcGu/",
+        "post_id": "17907629562075969",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/568517202_18530487847025040_1419312243104833165_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=9tXsnkwOtYAQ7kNvwGPSXNU&_nc_oc=Adrpf8P9qc_NZF3pc1jQ2LMHD6qPZ9qh5wKfLKGFHzcXJvNIVayobsh42VMVKusZbHhZyEycY00ntZcve47XYFnz&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNgIvdT6Cu_6Hp_hW-3j7WnvbdzJBneaG2MU0TG3pvYYA&oe=6ADCBE1E",
+          "reaction_count": 5,
+          "username": "tcuttsforeal"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/527473919_1688551375194500_8773708615981591370_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Nusf664louwQ7kNvwE7V-YY&_nc_oc=Adqshm6cXDqw8JC7gYCTX7itpDYQIRyuNpH747_T7WWwqTWk6pT7visWtNoNWagLW6JIMxygnuvvBsz_MZI_X6VR&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQNbKC6zsgU9x29gEwq3JH6qpzAS_qPxb-i91DafXYsUlw&oe=6ADCC8FE"
+      }
+    ],
+    "place_id": 1097519147521686,
+    "quotes": [],
+    "special_photos": {
+      "hero_banner": {
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/481986426_1216775307117659_196381079967570190_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=957871&_nc_ohc=Zi2Ee9ibpdgQ7kNvwFW9Ox8&_nc_oc=AdqutWL4CKPWjZO_uu16ef0nSTcJQyWEqgRz4PF86HusClC4RnZut988_mIdbunuAZ2bbvbJh3thUhcmLSkk8BwI&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQMq5oAQ_NTt-AooB0inTjpJC_1yQ8K9gVtEv05jP2BfBw&oe=6ADCB256"
+      },
+      "thumbnail": {
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/742129702_18606356236059500_2682657786955519403_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=FWf5BzD7avIQ7kNvwGprjcq&_nc_oc=AdoHpsrn36gvFQwyxS6mOb_wbLl-VyeEgFoTRRIKAqkhagFjlumDTILU4IMWo08G64JnKJhlhTedimP8EZFa_Uiu&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=uNDfE7pEzNT5fC2WOtL6HA&oh=00_AQM4ocfcNks_HYuAgTMHYPXPLOK2lPrucF0KCn8N5nT7Lw&oe=6ADC9E70"
+      }
+    }
+  },
+  "358062459850793": {
+    "details": {
+      "address": {
+        "city": "Philadelphia",
+        "country": "US",
+        "postalcode": "19102",
+        "stateprovince": "PA",
+        "streetaddress": "1500 John F Kennedy Blvd"
+      },
+      "categories": [
+        {
+          "category_id": "169758603141095",
+          "display_name": "Barber Shop",
+          "top_level_category_name": "NotAvailable"
+        },
+        {
+          "category_id": "174177802634376",
+          "display_name": "Hair Salon",
+          "top_level_category_name": "NotAvailable"
+        },
+        {
+          "category_id": "199236533423806",
+          "display_name": "Beauty Salon",
+          "top_level_category_name": "NotAvailable"
+        }
+      ],
+      "description": "D.Tails N D.Signs at 1500 JFK BLVD SUBURBAN STATION CONCOURSE.  We are a full service multicultural Beauty & Barber salon located in the heart of center city. We cater to all hair types & textures.. Now hiring licensed barbers, stylist & nail technicians...\"Just give us the DTails & we'll take care of the DSigns\" call for appointments or just walk in 215-735-2950",
+      "entrance_pins": [
+        {
+          "latitude": 39.953572144351,
+          "longitude": -75.165871635642
+        }
+      ],
+      "is_permanently_closed": false,
+      "links": [
+        {
+          "id": "314854188621753",
+          "type": "fb_page",
+          "url": "https://www.facebook.com/314854188621753"
+        },
+        {
+          "id": "314854188621753",
+          "type": "ig_explore_place",
+          "url": "https://www.instagram.com/explore/locations/314854188621753"
+        },
+        {
+          "id": "aPYhixMCewshWJcn55bZpA",
+          "type": "yelp",
+          "url": "https://www.yelp.com/biz/aPYhixMCewshWJcn55bZpA"
+        },
+        {
+          "id": "monicahadley66",
+          "type": "ig_account",
+          "url": "https://www.instagram.com/monicahadley66"
+        }
+      ],
+      "location": {
+        "latitude": 39.95349027,
+        "longitude": -75.16588164
+      },
+      "name": "D.Tails & D.Signs",
+      "opening_hours": [
+        {
+          "close_time": "1800",
+          "day_of_week": "TUESDAY",
+          "open_time": "1000"
+        },
+        {
+          "close_time": "1800",
+          "day_of_week": "WEDNESDAY",
+          "open_time": "1000"
+        },
+        {
+          "close_time": "1800",
+          "day_of_week": "THURSDAY",
+          "open_time": "1000"
+        },
+        {
+          "close_time": "0000",
+          "day_of_week": "FRIDAY",
+          "open_time": "0000"
+        },
+        {
+          "close_time": "1500",
+          "day_of_week": "SATURDAY",
+          "open_time": "1000"
+        }
+      ],
+      "opening_status": "CLOSED",
+      "opening_status_facts": {
+        "next_status": "OPEN"
+      },
+      "phone_numbers": {
+        "display_number": "+1 215-735-2950",
+        "e164_number": "+12157352950"
+      },
+      "price_level": 1,
+      "rating": {
+        "avg_local_rating": 0,
+        "avg_rating": 4.65,
+        "num_local_rating": 5,
+        "num_rating": 20
+      },
+      "rich_attributes": [],
+      "rich_offerings": [
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0083609567401636
+          },
+          "name": "Barber services"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0056892835835396
+          },
+          "name": "Hair styling"
+        },
+        {
+          "data": {
+            "confidence": 0.01,
+            "knownfor": 0.14118078524339
+          },
+          "name": "Crochet style"
+        },
+        {
+          "data": {
+            "confidence": 0.01,
+            "knownfor": 0.13328532990808
+          },
+          "name": "Womenscut"
+        },
+        {
+          "data": {
+            "confidence": 0.01,
+            "knownfor": 0.045077524098774
+          },
+          "name": "Bible study"
+        },
+        {
+          "data": {
+            "confidence": 0.01,
+            "knownfor": 0.022180860480762
+          },
+          "name": "Cut and color"
+        }
+      ],
+      "summaries": {
+        "full": null
+      },
+      "time_zone": "-0400:TZ",
+      "time_zone_id": "America/New_York"
+    },
+    "error": null,
+    "events": [],
+    "gallery": [
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t39.30808-6/784215492_37965345963109761_1382087349246800745_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ySlaEIy8IT4Q7kNvwEU6TSo&_nc_oc=AdpVTUg3FhjF9D1FCpXJOpQIPXoyAau-PAs6pjh_6sdyXOcqq7Mw1qbio-CTHMEx2tABhZiOoV7PVXpsc10h_v2R&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQMC_-3fMv-8ypXRj2P98fmWP-yIGVZcxktxxOcqFO5NFQ&oe=6ADCB51A",
+        "permalink_url": "https://www.instagram.com/p/DchB3VFkn5_/",
+        "post_id": "18120185017905417",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.2885-19/209048070_502878970942855_7826781532019235755_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=8rViROMv-h8Q7kNvwEMAjHL&_nc_oc=AdpLZO-yHB73Cd4m8D0qfcaxZGbAsw6nDebDPLMP3EEjgVDmJ8vB0MOORLhv4W1FSDhCbNUMUigA5YDVsSG9F7iV&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&oh=00_AQNcQNdoUWwrC7kkFHet6BrHqlKrS4UMxSLwz0BDuXCzfA&oe=6ADCCE97",
+          "reaction_count": 1,
+          "username": "monicahadley66"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/295229910_418907653608941_6372323958569572588_n.jpg?stp=cp1_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=eed8e3&_nc_ohc=yRzI9bmB4bgQ7kNvwFCZ5aZ&_nc_oc=AdrRxh5Bl8flIHo5fOPlmr9DN6HzN0rwghlcoKqhKk4aXyjU4FAfn3_6ve7dIOr7rqwrja-JF5kbXYQaG8TKFS3Q&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQMf8USP0ljjvQahASUMUhnRZi4E6sBXz0Lz8IHXZLyyIQ&oe=6ADCB083",
+        "permalink_url": "https://fb.com/photo.php?fbid=418907656942274&set=a.348790470620660&type=3",
+        "post_id": "418907656942274",
+        "product_source": "FB",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/295229910_418907653608941_6372323958569572588_n.jpg?stp=cp1_dst-jpg_s32x32_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=yRzI9bmB4bgQ7kNvwFCZ5aZ&_nc_oc=AdrRxh5Bl8flIHo5fOPlmr9DN6HzN0rwghlcoKqhKk4aXyjU4FAfn3_6ve7dIOr7rqwrja-JF5kbXYQaG8TKFS3Q&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQNYurs5yWOG5-m3q7c4o904JhoUGRpER8gCbXPTtbMJDQ&oe=6ADCD4C5",
+          "reaction_count": 5,
+          "username": "D.Tails N D.Signs"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/475838899_9187586888015061_4133427987494787378_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=957871&_nc_ohc=XrJ6mUh7ShwQ7kNvwHPb5eX&_nc_oc=Adpc-hrHN0cxqNwbePQHqBC7jQJdaPL-ESKeR2VzvAMgI4iftYrFRd9PU9G9XxwF7ci792772W-qtvHpE6UOx237&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQO_Mp4fZV7-L4HxZpaHmk_XkAamNfoMoWW98pQwcHUYDw&oe=6ADCC047",
+        "permalink_url": "https://fb.com/photo.php?fbid=348790467287327&set=a.348790487287325&type=3",
+        "post_id": "348790467287327",
+        "product_source": "FB",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/295229910_418907653608941_6372323958569572588_n.jpg?stp=cp1_dst-jpg_s32x32_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=yRzI9bmB4bgQ7kNvwFCZ5aZ&_nc_oc=AdrRxh5Bl8flIHo5fOPlmr9DN6HzN0rwghlcoKqhKk4aXyjU4FAfn3_6ve7dIOr7rqwrja-JF5kbXYQaG8TKFS3Q&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQNYurs5yWOG5-m3q7c4o904JhoUGRpER8gCbXPTtbMJDQ&oe=6ADCD4C5",
+          "reaction_count": 0,
+          "username": "D.Tails N D.Signs"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "Hi lil Roth",
+        "media_type": "IMAGE",
+        "media_url": "https://s3-media0.fl.yelpcdn.com/bphoto/NO8NlqJ1nGLM3TFkg5Eq_g/o.jpg",
+        "permalink_url": "https://www.yelp.com/biz_photos/aPYhixMCewshWJcn55bZpA?select=NO8NlqJ1nGLM3TFkg5Eq_g&utm_source=tJRDll5yqpZwehenzE2cSg&utm_medium=api_v3_business_lookup&utm_campaign=yelp_api_v3",
+        "post_id": "yelp_aPYhixMCewshWJcn55bZpA_0",
+        "product_source": "YELP",
+        "social_metadata": null,
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "DeMonte",
+        "media_type": "IMAGE",
+        "media_url": "https://s3-media0.fl.yelpcdn.com/bphoto/24Nlw5Nnu6PzOxbAYIOWyw/o.jpg",
+        "permalink_url": "https://www.yelp.com/biz_photos/aPYhixMCewshWJcn55bZpA?select=24Nlw5Nnu6PzOxbAYIOWyw&utm_source=tJRDll5yqpZwehenzE2cSg&utm_medium=api_v3_business_lookup&utm_campaign=yelp_api_v3",
+        "post_id": "yelp_aPYhixMCewshWJcn55bZpA_1",
+        "product_source": "YELP",
+        "social_metadata": null,
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/482988963_1067188235447543_7615096010389149260_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=89be11&_nc_ohc=qQYqWBH11E4Q7kNvwFpVKVE&_nc_oc=AdokRVAOgSUtMyyHky0nx2PUjebjXkwllSWBi9fSvPDTQxkqLNn-CQBR-Dc3jtajnADZvCWnzp8zhNENqkMSc5Zu&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQPydqlP7ebKcbWV3IoapZORTR3IdacVygJVHOutL1w0YA&oe=6ADCC5D2",
+        "permalink_url": "https://fb.com/photo.php?fbid=778904957609207&set=a.348790477287326&type=3",
+        "post_id": "778904957609207",
+        "product_source": "FB",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/295229910_418907653608941_6372323958569572588_n.jpg?stp=cp1_dst-jpg_s32x32_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=yRzI9bmB4bgQ7kNvwFCZ5aZ&_nc_oc=AdrRxh5Bl8flIHo5fOPlmr9DN6HzN0rwghlcoKqhKk4aXyjU4FAfn3_6ve7dIOr7rqwrja-JF5kbXYQaG8TKFS3Q&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQNYurs5yWOG5-m3q7c4o904JhoUGRpER8gCbXPTtbMJDQ&oe=6ADCD4C5",
+          "reaction_count": 5,
+          "username": "D.Tails N D.Signs"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "this love is a sure thing\n💈@layedbylish 💈Monte at D.Tails & D.Signs\n\n#dtailsndsigns #dtailsanddsigns #reel #melanin #blackking #menwithbeards #beardgang #flannelshirt #turban #locstyles #black #model #philly #freshcut #feelingmyself",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m82/AQPBvx95qyFKguQIIl4AxA4PCANzDpjWk8tiwBZGm1k1_PEmIMysVrFDHRnm9Kv4TLPh6AT-ntMxx92eyoUZ7icsXePeSuYr5BUExdA.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=rDGhxCWaWMgQ7kNvwHsOUBh&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NzMxODA1OTE1MjczMzc4LCJhc3NldF9hZ2VfZGF5cyI6MTM0MiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=86605be9fcfb64c7&_nc_vs=HBksFQIYT2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfcHJvZC9CNzQyNENENDc2MDc4MzA3MkFFMTlFOTUxQkEwRjNBNF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HTmFXeFJOWENZMUFYMWdFQUpLdEFmdGJyTEJtYnFfRUFBQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmxOL--drkzAIVAigCQzMsF0AfVP3ztkWiGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&_nc_zt=28&oh=00_AQMUDkNdQoYI0OeIRFOx3EieqRvv7iRe-H07AiqzfYZqfQ&oe=6AD8CAB8",
+        "permalink_url": "https://www.instagram.com/reel/CotBjJrs2Bl/",
+        "post_id": "17981652490820224",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/683804605_18583509304000537_2430543222033842522_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=102&ccb=7-5&_nc_sid=bf7eb4&_nc_aid=0&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy45NjUuQzMifQ%3D%3D&_nc_ohc=nRZ6Af1nNJkQ7kNvwFbkDv-&_nc_oc=Adqv7L1w0MQWjeqnTmOv4vTvI3OdQtdK4GMjkySHOV_Cz-YBPz9zNiGGDBAwN3JQtCqYtK1wJbmZVUtM9LVUXitD&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQOFOMt0LEmj2bINn7m4Zdv4DA_iAaZm9J0pZWEmMKRUZQ&oe=6ADCCE3C",
+          "reaction_count": 74,
+          "username": "life.of.a.speedster"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/500764210_1235522328235065_2135051581480502724_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=oJilNKWXtIMQ7kNvwESqZnK&_nc_oc=AdpNc99v7ChX3k__ZS0Hv1iN__mxB1xx6ag0Rwu1loytVXkU6Z_i68_AVvqUucTpSOqV7KNC-_xZ0Rf9UKPFGv36&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQMFQOTCFf_Ugq7BIoDzgdHJdC9ORBp6SF0QoWkwRxsXjQ&oe=6ADCC484"
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/773492604_18044060966805526_8553254744083517586_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=AKCcqOvu6X0Q7kNvwFI9HFD&_nc_oc=AdpS4W0xKO-8sm_xqtGwSHqZhStN3NlRRNTK41LM5Ade6BU-pxXVxEG7yEZKs5QEefr0VhsxmVt830_cZS2lRotD&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQMHt5S4zom1V7dKb-2NfNk1kkf21krao_mNF0OiKOvjLg&oe=6ADCA76A",
+        "permalink_url": "https://www.instagram.com/p/DcDxT1TFSz2/",
+        "post_id": "18040167203815321",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/560217960_18005045813805526_159460845881706066_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=103&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=3a-lCtefZe0Q7kNvwED6Ynd&_nc_oc=AdpNfMhFgSVfbVHf3KcGkxftWsKRHE95MhBWlhmeE3H3L1WKQHpehM0UEVq8Mr4oL2QvPEEPwL6FVIpxnijEktuc&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQOTht9poOt-WNcIfMuoXSQYw33MOnNSJ3orGfdMzmm-XA&oe=6ADCCA17",
+          "reaction_count": 15,
+          "username": "_.hairbydej.2"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://s3-media0.fl.yelpcdn.com/bphoto/B7VkRNmEh322M2zqYQBKNg/o.jpg",
+        "permalink_url": "https://www.yelp.com/biz_photos/aPYhixMCewshWJcn55bZpA?select=B7VkRNmEh322M2zqYQBKNg&utm_source=tJRDll5yqpZwehenzE2cSg&utm_medium=api_v3_business_lookup&utm_campaign=yelp_api_v3",
+        "post_id": "yelp_aPYhixMCewshWJcn55bZpA_2",
+        "product_source": "YELP",
+        "social_metadata": null,
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "Happy customer",
+        "media_type": "IMAGE",
+        "media_url": "https://s3-media0.fl.yelpcdn.com/bphoto/oL8qh6Jf9esZtmPXp3zorg/o.jpg",
+        "permalink_url": "https://www.yelp.com/biz_photos/aPYhixMCewshWJcn55bZpA?select=oL8qh6Jf9esZtmPXp3zorg&utm_source=tJRDll5yqpZwehenzE2cSg&utm_medium=api_v3_business_lookup&utm_campaign=yelp_api_v3",
+        "post_id": "yelp_aPYhixMCewshWJcn55bZpA_3",
+        "product_source": "YELP",
+        "social_metadata": null,
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/482248366_1067579395408427_924224125338448821_n.jpg?stp=cp1_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=89be11&_nc_ohc=NXR8bsBod9AQ7kNvwHMo2Uu&_nc_oc=AdpRw2pKWqlqNeOqRANjY6tYIqrelgYELu5BWdDS204dkidCJbxa8VOkA1Z0KS6-TWP1nxVGrW2ITRF4Vmwv1qw4&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQO4SAvRrx8P2Hvt9UIIiG3zHvMUTemNZN0fuQPVby0MOw&oe=6ADCAA15",
+        "permalink_url": "https://fb.com/photo.php?fbid=793293489503687&set=a.348790477287326&type=3",
+        "post_id": "793293489503687",
+        "product_source": "FB",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/295229910_418907653608941_6372323958569572588_n.jpg?stp=cp1_dst-jpg_s32x32_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=yRzI9bmB4bgQ7kNvwFCZ5aZ&_nc_oc=AdrRxh5Bl8flIHo5fOPlmr9DN6HzN0rwghlcoKqhKk4aXyjU4FAfn3_6ve7dIOr7rqwrja-JF5kbXYQaG8TKFS3Q&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQNYurs5yWOG5-m3q7c4o904JhoUGRpER8gCbXPTtbMJDQ&oe=6ADCD4C5",
+          "reaction_count": 1,
+          "username": "D.Tails N D.Signs"
+        },
+        "thumbnail_url": null
+      }
+    ],
+    "place_id": 358062459850793,
+    "quotes": [],
+    "special_photos": {
+      "hero_banner": {
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/475838899_9187586888015061_4133427987494787378_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=957871&_nc_ohc=XrJ6mUh7ShwQ7kNvwHPb5eX&_nc_oc=Adpc-hrHN0cxqNwbePQHqBC7jQJdaPL-ESKeR2VzvAMgI4iftYrFRd9PU9G9XxwF7ci792772W-qtvHpE6UOx237&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQO_Mp4fZV7-L4HxZpaHmk_XkAamNfoMoWW98pQwcHUYDw&oe=6ADCC047"
+      },
+      "thumbnail": {
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t39.30808-6/784215492_37965345963109761_1382087349246800745_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ySlaEIy8IT4Q7kNvwEU6TSo&_nc_oc=AdpVTUg3FhjF9D1FCpXJOpQIPXoyAau-PAs6pjh_6sdyXOcqq7Mw1qbio-CTHMEx2tABhZiOoV7PVXpsc10h_v2R&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=cmFj0ni3NZTMjJW3EeaLcg&oh=00_AQMC_-3fMv-8ypXRj2P98fmWP-yIGVZcxktxxOcqFO5NFQ&oe=6ADCB51A"
+      }
+    }
+  },
+  "621219206186467": {
+    "details": {
+      "address": {
+        "city": "Philadelphia",
+        "country": "US",
+        "postalcode": "19107",
+        "stateprovince": "PA",
+        "streetaddress": "1233 Vine St"
+      },
+      "categories": [
+        {
+          "category_id": "199236533423806",
+          "display_name": "Beauty Salon",
+          "top_level_category_name": "NotAvailable"
+        },
+        {
+          "category_id": "174177802634376",
+          "display_name": "Hair Salon",
+          "top_level_category_name": "NotAvailable"
+        },
+        {
+          "category_id": "2214",
+          "display_name": "Health/Beauty",
+          "top_level_category_name": "NotAvailable"
+        }
+      ],
+      "description": "Downtown Philly's Hottest New Hair Salon... \"Change is Good... ReVamp Yourself!\"",
+      "entrance_pins": [
+        {
+          "latitude": 39.95780743,
+          "longitude": -75.15973412
+        }
+      ],
+      "is_permanently_closed": false,
+      "links": [
+        {
+          "id": "908265949263110",
+          "type": "fb_page",
+          "url": "https://www.facebook.com/908265949263110"
+        },
+        {
+          "id": "908265949263110",
+          "type": "ig_explore_place",
+          "url": "https://www.instagram.com/explore/locations/908265949263110"
+        },
+        {
+          "id": "placenearme.org",
+          "type": "website",
+          "url": "https://placenearme.org/hairstyles?q=revamped+beauty+salon"
+        }
+      ],
+      "location": {
+        "latitude": 39.957842070661,
+        "longitude": -75.159713029861
+      },
+      "name": "Revamped Beauty Salon",
+      "opening_hours": [
+        {
+          "close_time": "2000",
+          "day_of_week": "TUESDAY",
+          "open_time": "1000"
+        },
+        {
+          "close_time": "2000",
+          "day_of_week": "WEDNESDAY",
+          "open_time": "1000"
+        },
+        {
+          "close_time": "2000",
+          "day_of_week": "THURSDAY",
+          "open_time": "0900"
+        },
+        {
+          "close_time": "2000",
+          "day_of_week": "FRIDAY",
+          "open_time": "0800"
+        },
+        {
+          "close_time": "2000",
+          "day_of_week": "SATURDAY",
+          "open_time": "0800"
+        }
+      ],
+      "opening_status": "CLOSED",
+      "opening_status_facts": {
+        "next_status": "OPEN"
+      },
+      "phone_numbers": {
+        "display_number": "+1 215-309-5476",
+        "e164_number": "+12153095476"
+      },
+      "price_level": 2,
+      "rating": {
+        "avg_local_rating": 0,
+        "avg_rating": 4.6666666666667,
+        "num_local_rating": 55,
+        "num_rating": 21
+      },
+      "rich_attributes": [],
+      "rich_offerings": [
+        {
+          "data": {
+            "confidence": 0.9604,
+            "knownfor": 432.37554304801
+          },
+          "name": "Updo"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0071609575562612
+          },
+          "name": "Braids"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0056892835835396
+          },
+          "name": "Hair styling"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0047158680707601
+          },
+          "name": "Hair extensions"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0038734189032161
+          },
+          "name": "Hair coloring"
+        }
+      ],
+      "summaries": {
+        "full": null
+      },
+      "time_zone": "-0400:TZ",
+      "time_zone_id": "America/New_York"
+    },
+    "error": null,
+    "events": [],
+    "gallery": [
+      {
+        "inline_text": null,
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQMWr13a5Ipc7l0WgUaj5W9ra17Y--fGDj0I_FzP4eBjcogiCGxac7GE5beMRbuREjdxj1zSFCvcEpJ0sR3pZ9Mjoz3q7vojpkN3PX4.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=oUovOkS846YQ7kNvwG4oXvB&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjA5MDI5ODU5NTExNzQxNiwiYXNzZXRfYWdlX2RheXMiOjI4NywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjE5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=9a3bf9f065b97ad8&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8wRTQ1M0JFQjZEMkY2REExRUMzQ0JENUI1RjNENzk5Rl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC84OTYxMjUwNjYzMTUyNDhfNjE1ODQwOTk1NDYxNjYzNTQ2Ni5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm0KXkk7LHtgcVAigCQzMsF0Azu6XjU_fPGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=ifkT7IKuQXeq15XapB3BGg&_nc_zt=28&oh=00_AQO8zwlm7pg_818ij7Po2F-XBnUGwBPO4HwTRblRsCqC6w&oe=6AD8C88E",
+        "permalink_url": "https://www.instagram.com/reel/DTI_fktieZL/",
+        "post_id": "17869913667530502",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.2885-19/178753272_814856609149969_6009903932373680357_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=105&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy44NDQuQzMifQ%3D%3D&_nc_ohc=Z87hp6F2AUYQ7kNvwG1R4HK&_nc_oc=AdpIbEYhYFFpRZYjcY0i1s6k-j7-moaAC3jyTZuXlWpe4ImgvOqFaHQTDuU4ZawaLzEP4rVEa6_MKWGmK55zJr4r&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&oh=00_AQMjgNb9XMvUsvxUj7NhRYJZrChL0smYZa6Iv4Tjj6wEDw&oe=6ADCA0E8",
+          "reaction_count": 79,
+          "username": "sabrina_cp"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/610695420_842409875448368_2647787183693902228_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=XLlXCQBc0KYQ7kNvwGDHKbn&_nc_oc=AdoRgED2m1TH0eK0IOQ3WlRumJw7aaiqG-e5XAmwkQli48FI5gCNQSFTcZ1i1Zo4WqZqwfZg55Jg2Q6pOoYb51Mr&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQNc-NJupuMrrp8N6zX_LmlzzoAcUEadEd7EP1hdiAwcDw&oe=6ADCB18D"
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/301843388_943317859948820_9155828979575673551_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=eed8e3&_nc_ohc=GpqGNWXDjL4Q7kNvwF931hv&_nc_oc=AdqBAdKc7YqE-1RxToXXl1Vi795sNEV5P87aVPo0zCnu5wwyN0aAtOSNQ5T4_oGGqYNH7hA_z45RIZ_2lUVvOQdE&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQOZjP410QaNkGY8YwwnDZjHIoo2izwRC0CcsXFznTr42w&oe=6ADCC3B3",
+        "permalink_url": "https://fb.com/photo.php?fbid=943317873282152&set=a.943317836615489&type=3",
+        "post_id": "943317873282152",
+        "product_source": "FB",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/301843388_943317859948820_9155828979575673551_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=GpqGNWXDjL4Q7kNvwF931hv&_nc_oc=AdqBAdKc7YqE-1RxToXXl1Vi795sNEV5P87aVPo0zCnu5wwyN0aAtOSNQ5T4_oGGqYNH7hA_z45RIZ_2lUVvOQdE&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQPSu-05DXZyjcKXXUnKFN1FH87fD42hbVXyVzF8E3Ft2w&oe=6ADCAC35",
+          "reaction_count": 0,
+          "username": "ReVamped Beauty Salon"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/476209144_1533381094275824_1336785686939929320_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=957871&_nc_ohc=6GOpg5WLPYYQ7kNvwFkxW75&_nc_oc=AdqeZipzMScaKlnkcZFi5htDesttNQE6su8XQsx7AKOzG3pRgOPbQTrkg2vfzGDKeDRiOgGJO_QofqRlS27tOElm&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQPaeuZEnryrpWCQnyZx_6xqs5IthUegUL2wVev2XR__Aw&oe=6ADCBD2A",
+        "permalink_url": "https://fb.com/photo.php?fbid=943317869948819&set=a.943317849948821&type=3",
+        "post_id": "943317869948819",
+        "product_source": "FB",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/301843388_943317859948820_9155828979575673551_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=GpqGNWXDjL4Q7kNvwF931hv&_nc_oc=AdqBAdKc7YqE-1RxToXXl1Vi795sNEV5P87aVPo0zCnu5wwyN0aAtOSNQ5T4_oGGqYNH7hA_z45RIZ_2lUVvOQdE&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQPSu-05DXZyjcKXXUnKFN1FH87fD42hbVXyVzF8E3Ft2w&oe=6ADCAC35",
+          "reaction_count": 0,
+          "username": "ReVamped Beauty Salon"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/509600207_23999934749669570_7423093528337627019_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=74e017&_nc_ohc=q-cUQhV_4vwQ7kNvwFOy_Uf&_nc_oc=Adq6pJ2oXqrctBukH8WA4MO-d73q3QZNILadfAqiuHd_iNcFGZmkPl6IouaFTBVZxYFdLGmDOgDo3fXvapcL199s&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQM7I0glAxnSZzl5RmU4hYiB1UCqElhEbtQoIYE19dL1pA&oe=6ADCA3CA",
+        "permalink_url": "https://fb.com/photo.php?fbid=908272169262488&set=a.943317849948821&type=3",
+        "post_id": "908272169262488",
+        "product_source": "FB",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-1/301843388_943317859948820_9155828979575673551_n.jpg?stp=cp0_dst-jpg_s32x32_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=GpqGNWXDjL4Q7kNvwF931hv&_nc_oc=AdqBAdKc7YqE-1RxToXXl1Vi795sNEV5P87aVPo0zCnu5wwyN0aAtOSNQ5T4_oGGqYNH7hA_z45RIZ_2lUVvOQdE&_nc_zt=24&_nc_ht=scontent-sea5-1.xx&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQPSu-05DXZyjcKXXUnKFN1FH87fD42hbVXyVzF8E3Ft2w&oe=6ADCAC35",
+          "reaction_count": 16,
+          "username": "ReVamped Beauty Salon"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "pre-press out selfies, bc why not?! #naturalbradshaw 🤎✨",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/659277646_18384108844088467_7810223164467998130_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-vSeFUSneX8Q7kNvwHzUO7G&_nc_oc=AdocgHNF4-5Jwxuz_FN2Zr53vDXreQCwsk5Iu5UJD_Ef6ruQrnz8duXQlKfKcf3JbAW3vVLuToS1OVWuH4BL5mzD&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQPXlo60T4fPeCPLA1DvOCadQLloO-Cl6GE9V6P4_Og3Sg&oe=6ADCB687",
+        "permalink_url": "https://www.instagram.com/p/CTmk8APr9zw/",
+        "post_id": "17915087212943695",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/792911871_18635606851036839_5397948919789641589_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=107&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=vEx25SldR8YQ7kNvwFNZy5a&_nc_oc=AdqDHs1h-HahX4bwNTiivHQ4MCWHi8D33JocRD5tE8Gs6sYBZ77bdB7PknTYef0Hsa4BLp5eDEKot1CI8S9UnK2S&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQM64iMrsAJbwuOzOipYi0VedyHTwUmDTsa92Z7pAVyIaw&oe=6ADCC99B",
+          "reaction_count": 311,
+          "username": "ohbradshaw"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "Femme’s 30th epic A-List event ✨",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/628014016_18442368313108867_8803182522054850736_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oH3G1-iYdlMQ7kNvwHK90ft&_nc_oc=AdpOuerWCbl96jNg23O3zw88APx7Xklgf-RjNhr619MnLg0amJWiPrlNAoBX-1V4Gmqc2RQwsw_WaxsU8B8p4f0q&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQPSe7ugK7H1X01BHR9GZEy0sAeQudSr0-TL1WyO2-Un1A&oe=6ADCAEAD",
+        "permalink_url": "https://www.instagram.com/p/Bef_P7wB8bV/",
+        "post_id": "17908150363108867",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.2885-19/434078854_947677970090926_6797364950481541898_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=102&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=8kOnITiO3k0Q7kNvwF3bjCy&_nc_oc=AdpkqzJo6KHizikAcsxeGv0VQufcTIKDj8SJ-3TeMSxqjNE-6VeCuz6d8K-Mv-rK47xiZgBjFw5rUQmlkXqzmTtV&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&oh=00_AQO-_c1_RSEo3EZ7rX3KIeP6dE0gTD_ltC0_JlsEF18fFQ&oe=6ADCC433",
+          "reaction_count": 285,
+          "username": "90210_mo"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "My dark brown hair was so cuteeeee I miss it 😩 #barbie #wcw #SwipeLeftToSeeTheRealMe 😹",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/658213796_18439136632118825_8094987956780487657_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=4JDavKUX-GwQ7kNvwHa-ao1&_nc_oc=AdqkmFUoLR4xddcRzIj8unRtrD9S7CTcx2FKN_HAbfdgjjn0qc1bBRox9JW4aPJgebcwFP3SLqoMs9kSX9cWFZdn&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQMoQsa-q5DqmMOb2Nkn2mqWFZpV1nbC8Rd_tM740JSsvA&oe=6ADCB146",
+        "permalink_url": "https://www.instagram.com/p/BjIT-MIA-Jq/",
+        "post_id": "17949403933032621",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.2885-19/475411523_485731984573409_6053163998171156995_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=109&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=BOVPSR4ZlgEQ7kNvwEt1BxG&_nc_oc=AdqCmMZuIT4Ay_mDQx4fcMS6r7Ldie7bRZ_VSMn0vN9Ym-n3GBQD_kiVSoa3dWVjzfl49NKGr29itbXhhE2_oC3I&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&oh=00_AQNvxh5RwvIvbMOqeTE04Xm2xXZ10UwwZ5_oDfvcFP7_0A&oe=6ADCB255",
+          "reaction_count": 228,
+          "username": "dollbabyari"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "Sleeping every night next to Mona Lisa... The modern day version, with better features...",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/626442623_18339022018210625_7843910867222987350_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=P0XVsNLSvvcQ7kNvwEdMKDL&_nc_oc=AdoIPggqjFMGRSHzz4TMDT9bi5rVkXJskFxtmSACWoe7VKiHzJzZevQRhTv3wr2NYaHJG73yF36q9cOjvTmtaI7D&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQNYPArKrY6KzoKPuDpLwZer-62qJly6_BEPQjdJ9A3hQg&oe=6ADC9ED7",
+        "permalink_url": "https://www.instagram.com/p/Bvmwa_FBYuI/",
+        "post_id": "17984751220210625",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.2885-19/431745329_3776543075899126_8417766437517630380_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=5SikCn9Ru78Q7kNvwFKc5WY&_nc_oc=Adp_kSyZMHMxFEnPVwOG7JSJThVIPRgTg-NEWBaFCoGLgKzE1sJ4P1CpI0Y5w6PYyu_WWEq45gZXMqaPPUwvRWkQ&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&oh=00_AQNoJ1U_JT18YOZmn-eMEBFVUWoIcd0BQDT5LCRKDIoUYg&oe=6ADCB91E",
+          "reaction_count": 164,
+          "username": "lashayjanel"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "Bad Hair Day: Ain't nobody got time for that 💁🏽",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/639857021_18559591465037433_2740359571326370741_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZApkw7xJgP0Q7kNvwHJ8QzU&_nc_oc=AdpfRTM5pL7T5YThlLKTJNv8UUHDHJqo-lmWLC3z8PeAnN7Fxr6M314TZSswtKTbtW--OTVceGtopknc53GKs0Ge&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQNVftv7GwZtv8e3TfKV0kwm4WhjT2cPPzSBoVEim1J1dQ&oe=6ADCBFB3",
+        "permalink_url": "https://www.instagram.com/p/BHEDJupBRnO/",
+        "post_id": "17857628761037433",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/834318033_18629586019023114_3431720999975971579_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=109&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy45NzYuQzMifQ%3D%3D&_nc_ohc=du8G7nM3si8Q7kNvwEosWhR&_nc_oc=AdrjcaZlpSgYIbajZVrG68wwAO3RRoReuyx-2Jn2tc7rRIC0xmYJuZSokmFJeevHiy3qFaKLqTqG1sxfXpEFHryc&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQMKTrGpJ26DiH8OEwWY-VD6BZfanIdnxCkR7mSIUi3J1w&oe=6ADCA19B",
+          "reaction_count": 119,
+          "username": "kira_doll"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "I never post my weaves anymore 😩 but this one I couldn't resist hella heart eyes 😍😍😍😍😍😍😍😍😍😍😍😍",
+        "media_type": "VIDEO",
+        "media_url": "https://scontent.cdninstagram.com/o1/v/t16/f2/m84/AQM7xyUZ2YQbB1lzgDVaPQVf6Qs7fPeHBlX6SD0VGaFYzJFAKTqtqJrtEeUJto4E7vslEg4StLknaHGGmdQyk1WwUsGuwZQeOEIhwoo.mp4?_nc_sid=5e9851&_nc_ht=scontent.cdninstagram.com&_nc_ohc=y-vHRfaZOhQQ7kNvwGcvJvG&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uRkVFRC5DMy42NDAuZGFzaF9iYXNlbGluZV8xX3YxIiwieHB2X2Fzc2V0X2lkIjoxNDcxMDE5MTc3MDc3OTk3LCJhc3NldF9hZ2VfZGF5cyI6Mjg3NiwidmlfdXNlY2FzZV9pZCI6MTAxNDYsImR1cmF0aW9uX3MiOjE1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=7aa90340219cdaaf&_nc_vs=HBksFQIYTGlnX2JhY2tmaWxsX3RpbWVsaW5lX3ZvZC8yMjQwODZBNjQ4MzNCMDVERENDQzYyOEQxQTExMEVCM192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HTEg5bFJiVkFGY1dXT1FFQUQtd3dRX1hScXBXYnBrd0FBQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm2rOP-Mr4nAUVAigCQzMsF0Aud0vGp--eGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXqB2XEngEA&_nc_gid=ifkT7IKuQXeq15XapB3BGg&_nc_zt=28&oh=00_AQO_eEBPi59Y3y_hl5xD904l0RnkZfVk1mEkmZ_XUfu70Q&oe=6AD8DD0C",
+        "permalink_url": "https://www.instagram.com/p/BauRQt5nGCf/",
+        "post_id": "17878750249153999",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.2885-19/326439132_3492114204350384_3938863793813547471_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=104&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=kyu1n8NV4YoQ7kNvwFrL_Kr&_nc_oc=AdoCTz6nHYLvZOV_TjM6bW4bgVF6Y_XXTBTbJwYEkceYdeHpcIPGdbKAi5lv0cnKc9MQV8WZyf4Wg850d-eW3tQ2&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&oh=00_AQNM_OzSbC11pRxjbwEPKVHpNyaIN9R9roQf75cH0dpFRQ&oe=6ADCC4A6",
+          "reaction_count": 126,
+          "username": "slimkeish"
+        },
+        "thumbnail_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/529971200_1940283776818199_6131738977198547237_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=28VerMcvUoIQ7kNvwEFE9NB&_nc_oc=Adp8zzTuro2Y4TUqx4Qos4k9fZiP4P3sqRgHHt9IhON9XEcRR_E4bkoUdN67nv5rVcOcaVBKumkqvurQVEBGovQn&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQPEriW1oSWoFLWk3JvFMq0khML8gNm4TCbsOVL6124RUQ&oe=6ADCD3B0"
+      }
+    ],
+    "place_id": 621219206186467,
+    "quotes": [],
+    "special_photos": {
+      "hero_banner": {
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/476209144_1533381094275824_1336785686939929320_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=957871&_nc_ohc=6GOpg5WLPYYQ7kNvwFkxW75&_nc_oc=AdqeZipzMScaKlnkcZFi5htDesttNQE6su8XQsx7AKOzG3pRgOPbQTrkg2vfzGDKeDRiOgGJO_QofqRlS27tOElm&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQPaeuZEnryrpWCQnyZx_6xqs5IthUegUL2wVev2XR__Aw&oe=6ADCBD2A"
+      },
+      "thumbnail": {
+        "media_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/301843388_943317859948820_9155828979575673551_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=eed8e3&_nc_ohc=GpqGNWXDjL4Q7kNvwF931hv&_nc_oc=AdqBAdKc7YqE-1RxToXXl1Vi795sNEV5P87aVPo0zCnu5wwyN0aAtOSNQ5T4_oGGqYNH7hA_z45RIZ_2lUVvOQdE&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=ifkT7IKuQXeq15XapB3BGg&oh=00_AQOZjP410QaNkGY8YwwnDZjHIoo2izwRC0CcsXFznTr42w&oe=6ADCC3B3"
+      }
+    }
+  },
+  "741821813736232": {
+    "details": {
+      "address": {
+        "city": "Baltimore",
+        "country": "US",
+        "postalcode": "21201-2176",
+        "stateprovince": "MD",
+        "streetaddress": "113 N Eutaw St"
+      },
+      "categories": [
+        {
+          "category_id": "198516863494646",
+          "display_name": "Nail Salon",
+          "top_level_category_name": "NotAvailable"
+        },
+        {
+          "category_id": "199236533423806",
+          "display_name": "Beauty Salon",
+          "top_level_category_name": "NotAvailable"
+        }
+      ],
+      "description": "",
+      "entrance_pins": [
+        {
+          "latitude": 39.291021010428,
+          "longitude": -76.62087779862
+        }
+      ],
+      "is_permanently_closed": false,
+      "links": [
+        {
+          "id": "210380732310902",
+          "type": "fb_page",
+          "url": "https://www.facebook.com/210380732310902"
+        },
+        {
+          "id": "210380732310902",
+          "type": "ig_explore_place",
+          "url": "https://www.instagram.com/explore/locations/210380732310902"
+        },
+        {
+          "id": "znPAuKr_MxeLO8juBFuayw",
+          "type": "yelp",
+          "url": "https://www.yelp.com/biz/znPAuKr_MxeLO8juBFuayw"
+        },
+        {
+          "id": "marketcenterbaltimore.org",
+          "type": "website",
+          "url": "http://www.marketcenterbaltimore.org"
+        }
+      ],
+      "location": {
+        "latitude": 39.29102125,
+        "longitude": -76.62087508
+      },
+      "name": "Nina's Nails",
+      "opening_hours": [
+        {
+          "close_time": "1800",
+          "day_of_week": "MONDAY",
+          "open_time": "0800"
+        },
+        {
+          "close_time": "1800",
+          "day_of_week": "TUESDAY",
+          "open_time": "0800"
+        },
+        {
+          "close_time": "1800",
+          "day_of_week": "WEDNESDAY",
+          "open_time": "0800"
+        },
+        {
+          "close_time": "1800",
+          "day_of_week": "THURSDAY",
+          "open_time": "0800"
+        },
+        {
+          "close_time": "1800",
+          "day_of_week": "FRIDAY",
+          "open_time": "0800"
+        },
+        {
+          "close_time": "1800",
+          "day_of_week": "SATURDAY",
+          "open_time": "0800"
+        }
+      ],
+      "opening_status": "CLOSED",
+      "opening_status_facts": {
+        "next_status": "OPEN"
+      },
+      "phone_numbers": {
+        "display_number": "+1 410-685-4494",
+        "e164_number": "+14106854494"
+      },
+      "price_level": 2,
+      "rating": {
+        "avg_local_rating": 0,
+        "avg_rating": 4.4545454545455,
+        "num_local_rating": 41,
+        "num_rating": 11
+      },
+      "rich_attributes": [],
+      "rich_offerings": [
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.012126289749993
+          },
+          "name": "Gel applications"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0044277758999411
+          },
+          "name": "Pedicure"
+        },
+        {
+          "data": {
+            "confidence": 0.1,
+            "knownfor": 0.0041794443869302
+          },
+          "name": "Manicure"
+        }
+      ],
+      "summaries": {
+        "full": null
+      },
+      "time_zone": "-0400:TZ",
+      "time_zone_id": "America/New_York"
+    },
+    "error": null,
+    "events": [],
+    "gallery": [
+      {
+        "inline_text": "Nail station",
+        "media_type": "IMAGE",
+        "media_url": "https://s3-media0.fl.yelpcdn.com/bphoto/LbXNxtI2SQE5a_JAuf0aCg/o.jpg",
+        "permalink_url": "https://www.yelp.com/biz_photos/znPAuKr_MxeLO8juBFuayw?select=LbXNxtI2SQE5a_JAuf0aCg&utm_source=tJRDll5yqpZwehenzE2cSg&utm_medium=api_v3_business_lookup&utm_campaign=yelp_api_v3",
+        "post_id": "yelp_znPAuKr_MxeLO8juBFuayw_0",
+        "product_source": "YELP",
+        "social_metadata": null,
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": null,
+        "media_type": "IMAGE",
+        "media_url": "https://s3-media0.fl.yelpcdn.com/bphoto/iNYT3-SHRs-fPtuHkTDJKg/o.jpg",
+        "permalink_url": "https://www.yelp.com/biz_photos/znPAuKr_MxeLO8juBFuayw?select=iNYT3-SHRs-fPtuHkTDJKg&utm_source=tJRDll5yqpZwehenzE2cSg&utm_medium=api_v3_business_lookup&utm_campaign=yelp_api_v3",
+        "post_id": "yelp_znPAuKr_MxeLO8juBFuayw_1",
+        "product_source": "YELP",
+        "social_metadata": null,
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "Doing US on my best friend Birthday Enjoying our day.",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t39.30808-6/855557406_29079982664947028_2521052184640113035_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=BAk8pHl0pQgQ7kNvwFxheut&_nc_oc=AdrItyW7dac23gPm6jfc4DNo6mWJJ3l10gLptNI9i3RTAPCYwmIjNwMy_Q5kRTrG_kEPvZ20h6x7xKh2MZxS-njD&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=d-N9LNLkuMJabf-xfDGb7w&oh=00_AQNNiULg9O1J268IWd_lF1Xf3_DLuZHUbN93H9_c2kpK0Q&oe=6ADCD3B2",
+        "permalink_url": "https://www.instagram.com/p/DercZZClylR/",
+        "post_id": "18375025054246370",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/618048671_18353610487204244_5059301589835945452_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=107&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=q5-C40qmQrwQ7kNvwEjVWXY&_nc_oc=AdojvhyEmkvl-QJ0lp2TSsThcLb2PMWhuNeR0azT9qY7LepLcWY3kcKCVy2HU2RB34DlAvIuM72477RsdOgSYWf5&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=d-N9LNLkuMJabf-xfDGb7w&oh=00_AQN4-aMqLSdNcJOVo33V3j4FYZ8Gt3ye5UKk9GMouGZUlQ&oe=6ADCBF7E",
+          "reaction_count": 1,
+          "username": "play_know_games"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "Cute polish",
+        "media_type": "IMAGE",
+        "media_url": "https://s3-media0.fl.yelpcdn.com/bphoto/gfmrrIco7Du2cIyAnFcgUA/o.jpg",
+        "permalink_url": "https://www.yelp.com/biz_photos/znPAuKr_MxeLO8juBFuayw?select=gfmrrIco7Du2cIyAnFcgUA&utm_source=tJRDll5yqpZwehenzE2cSg&utm_medium=api_v3_business_lookup&utm_campaign=yelp_api_v3",
+        "post_id": "yelp_znPAuKr_MxeLO8juBFuayw_2",
+        "product_source": "YELP",
+        "social_metadata": null,
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "TV",
+        "media_type": "IMAGE",
+        "media_url": "https://s3-media0.fl.yelpcdn.com/bphoto/x6E7ANPo1sTsrMubExj7vg/o.jpg",
+        "permalink_url": "https://www.yelp.com/biz_photos/znPAuKr_MxeLO8juBFuayw?select=x6E7ANPo1sTsrMubExj7vg&utm_source=tJRDll5yqpZwehenzE2cSg&utm_medium=api_v3_business_lookup&utm_campaign=yelp_api_v3",
+        "post_id": "yelp_znPAuKr_MxeLO8juBFuayw_3",
+        "product_source": "YELP",
+        "social_metadata": null,
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "extra.",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/619297875_18092122894795872_7373352412229825612_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=C8hqJtzqV1cQ7kNvwHvZTk4&_nc_oc=AdpdM6Bfed1g-uplUOYZzsNj6VEk7BTYxgvkUxOpG887cNq8OyJyr73MVZzh5-kWm6wVtp7Izu-TV58nFmR4X0D2&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=d-N9LNLkuMJabf-xfDGb7w&oh=00_AQMwIDsXdfJZXVeQazsht1SSyOFn386_W_8QaduOmM4K5g&oe=6ADCB88F",
+        "permalink_url": "https://www.instagram.com/p/B58d-1xJ-nl/",
+        "post_id": "17846592871795872",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.2885-19/448642308_767617071997460_8519096017716135549_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=104&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=mdMGujXleVwQ7kNvwH9c6FM&_nc_oc=AdqQa_VOFewf7e-MzaOsle7IFDqWICC2MNxP1grGnfiPanE0gaNYypl5zrUpTX3jzIzc96mXfsnPyaGGYvHoyDrJ&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&oh=00_AQP1jTVh4aJQ6FFJmccjBKjNmwbyzAzj6CvEzQgQB3pO9w&oe=6ADCC851",
+          "reaction_count": 265,
+          "username": "aminaaaa.ali"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "Treating myself to dome long overdue and well needed #Pedi 💅💅💅 I deserve it 💯💯💯❣",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/629229594_18552668332000469_7503072429310964529_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=BRenBrLQM1EQ7kNvwHUmzyS&_nc_oc=AdryRSVXqyVCv3NNvNqeibJl0CG0y_omqVoP0DhDPRXC6viqTcCFWLiw53XilJFLUxGpdR94na6mqpuHZGyqyM28&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=d-N9LNLkuMJabf-xfDGb7w&oh=00_AQOl7VWIHGIGTxuuntMxTmF1OT-EQZguHp3UevpMbjsT4w&oe=6ADCA479",
+        "permalink_url": "https://www.instagram.com/p/BXV23E1l2Xi/",
+        "post_id": "17890902373000469",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/762566281_18609081469048003_3754708639591715599_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy42NDAuQzMifQ%3D%3D&_nc_ohc=u_VXxc921fkQ7kNvwFFas5K&_nc_oc=Adro5LAXChhbettsElCoViGQQSx7vAbi7VOJmTqbXZiD9T94QvqbjxRKIONR3dzphWkjaRVdiCW4z2_OUmrDJ_bN&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=d-N9LNLkuMJabf-xfDGb7w&oh=00_AQOq3MdAn9-cm_ZCwVVvNW5AAkpJqSmwjH4ZqrSPIOKBgQ&oe=6ADCAC30",
+          "reaction_count": 7,
+          "username": "queenz_gemini87"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "#Newnailalert 💅 #Somethingdifferent",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/628524671_18451815592100434_4591115188999963176_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=YJGtad17WIUQ7kNvwEgIHvK&_nc_oc=AdrOFfjke3-SMNJhaDz1BVu_A-0Tun67L8AFRs6ix-TSJP22m3bSBwxiN3ObPTT0yvdfBeYjKIkftBlC-3XVT5E8&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=d-N9LNLkuMJabf-xfDGb7w&oh=00_AQPdJTvfAVbtDDmVM-_WjuIdy6W6pDqeZB81Jsrpj2yhJw&oe=6ADCD23F",
+        "permalink_url": "https://www.instagram.com/p/BZAG30KHh1_/",
+        "post_id": "17886726031100434",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/762566281_18609081469048003_3754708639591715599_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=110&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy42NDAuQzMifQ%3D%3D&_nc_ohc=u_VXxc921fkQ7kNvwFFas5K&_nc_oc=Adro5LAXChhbettsElCoViGQQSx7vAbi7VOJmTqbXZiD9T94QvqbjxRKIONR3dzphWkjaRVdiCW4z2_OUmrDJ_bN&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=d-N9LNLkuMJabf-xfDGb7w&oh=00_AQOq3MdAn9-cm_ZCwVVvNW5AAkpJqSmwjH4ZqrSPIOKBgQ&oe=6ADCAC30",
+          "reaction_count": 4,
+          "username": "queenz_gemini87"
+        },
+        "thumbnail_url": null
+      },
+      {
+        "inline_text": "Yezzzzzzz💅🏾💅🏾",
+        "media_type": "IMAGE",
+        "media_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/627686361_18385005550152411_8224874552062795691_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=hAJfzVIAzFsQ7kNvwHoXfBx&_nc_oc=Adrj5ihdLkkWRZPevy-YXYuZJKGz19_R2no66VrCo5h8vGywPimeQzLJmitKi-5msqkzfeURdDKFQRxEtHH-JY93&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=d-N9LNLkuMJabf-xfDGb7w&oh=00_AQOduXv4-TqiMjyu8BlOLYB3k5k8QuwyOCnDadk_0Dc82Q&oe=6ADCC060",
+        "permalink_url": "https://www.instagram.com/p/BldrYIgB65C/",
+        "post_id": "17933187724152411",
+        "product_source": "IG",
+        "social_metadata": {
+          "profile_pic_url": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/548863080_18524060404034557_6453792944655243978_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=105&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=AlUVuufqMRAQ7kNvwGigAgG&_nc_oc=AdpNplWtyCqkEL2wIvXRW_MNDxl-GcGRtnN-Wo__OENvQEyS7y0BTz3L2mahHwN2ktq7INY_x_65LWnSyrG_tG9i&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=d-N9LNLkuMJabf-xfDGb7w&oh=00_AQPzMP5Cwi1gGoYQ4pJK_xB_1f-86RiXjoCJATLOzHwg-g&oe=6ADC9D62",
+          "reaction_count": 2,
+          "username": "mz_highly_favor3d_"
+        },
+        "thumbnail_url": null
+      }
+    ],
+    "place_id": 741821813736232,
+    "quotes": [],
+    "special_photos": {
+      "hero_banner": {
+        "media_url": "https://s3-media0.fl.yelpcdn.com/bphoto/LbXNxtI2SQE5a_JAuf0aCg/o.jpg"
+      },
+      "thumbnail": {
+        "media_url": "https://s3-media0.fl.yelpcdn.com/bphoto/LbXNxtI2SQE5a_JAuf0aCg/o.jpg"
+      }
+    }
+  }
+}
