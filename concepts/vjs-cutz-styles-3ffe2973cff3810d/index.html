@@ -71,7 +71,7 @@ section{padding:64px 0;border-bottom:4px solid var(--ink);}
 @media(max-width:560px){.polaroids{grid-template-columns:1fr;}}
 .polaroid{background:#fff;padding:12px 12px 0;border:2px solid var(--ink);box-shadow:7px 7px 0 var(--ink);transform:rotate(-1.4deg);}
 .polaroid:nth-child(even){transform:rotate(1.6deg);}
-.polaroid svg{display:block;width:100%;height:auto;background:var(--ink);}
+.polaroid img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:var(--ink);}
 .polaroid figcaption{font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:12px 6px 14px;font-weight:700;}
 .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:10px;}
 @media(max-width:760px){.visit-grid{grid-template-columns:1fr;}}
@@ -117,7 +117,7 @@ footer a{color:var(--orange);}
   <div class="wrap">
     <div class="masthead-kicker"><span class="chip">Macon Block Paper</span> &nbsp; Issue No. 01</div>
     <h1>Vjs Cutz<br><span class="stroke">&amp;</span> <span class="fill-orange">Styles</span></h1>
-    <p class="hero-sub">Sharp fades, clean tapers, and careful beard work on 2nd Street in Macon. Every cut finished with a crisp lineup.</p>
+    <p class="hero-sub">Fade haircuts, tapers, beard service, retwists, and 2-strand twists on 2nd Street in Macon.</p>
     <div class="hero-meta">
       <span><i class="dot"></i> 318 2nd St, Macon, GA 31201</span>
       <span><i class="dot"></i> Tue to Sat, 9 AM to 7 PM</span>
@@ -135,13 +135,13 @@ footer a{color:var(--orange);}
   <div class="wrap">
     <div class="sec-kicker">Admit one</div>
     <h2 class="sec-title">Services</h2>
-    <p class="sec-lede">Five ways to leave the chair looking right. Pick your lane and call to set up your appointment.</p>
+    <p class="sec-lede">Five services on the menu. Pick yours and call.</p>
     <div class="stubs">
       <div class="stub">
         <div class="stub-num">01</div>
         <div>
           <h3>Fade Haircuts</h3>
-          <p>Blended fades cut to match your hair and your head shape. Clean on the sides, sharp at the neck.</p>
+          <p>Fade haircuts. Call and describe the fade you want.</p>
           <a class="cta" href="tel:+14782386781">Call to book</a>
         </div>
         <div></div>
@@ -150,7 +150,7 @@ footer a{color:var(--orange);}
         <div class="stub-num">02</div>
         <div>
           <h3>Tapers</h3>
-          <p>A natural taper that keeps the top intact and tightens up the edges. Good for work and weekends.</p>
+          <p>Tapers. Call to book a taper.</p>
           <a class="cta" href="tel:+14782386781">Call to book</a>
         </div>
         <div></div>
@@ -159,7 +159,7 @@ footer a{color:var(--orange);}
         <div class="stub-num">03</div>
         <div>
           <h3>Beard Service</h3>
-          <p>Shape, line, and detail work for the beard. Cheeks and neckline edged clean.</p>
+          <p>Beard service. Call to ask what is included.</p>
           <a class="cta" href="tel:+14782386781">Call to book</a>
         </div>
         <div></div>
@@ -168,7 +168,7 @@ footer a{color:var(--orange);}
         <div class="stub-num">04</div>
         <div>
           <h3>Retwists</h3>
-          <p>Retwists that keep your locs neat and rooted. Tidy from root to end.</p>
+          <p>Retwists. Call to book a retwist.</p>
           <a class="cta" href="tel:+14782386781">Call to book</a>
         </div>
         <div></div>
@@ -177,7 +177,7 @@ footer a{color:var(--orange);}
         <div class="stub-num">05</div>
         <div>
           <h3>2-Strand Twists</h3>
-          <p>Two-strand twists styled with even parts and consistent tension. A clean, protective look.</p>
+          <p>2-strand twists. Call to book.</p>
           <a class="cta" href="tel:+14782386781">Call to book</a>
         </div>
         <div></div>
@@ -190,80 +190,27 @@ footer a{color:var(--orange);}
   <div class="wrap">
     <div class="sec-kicker">From the chair</div>
     <h2 class="sec-title">About the Craft</h2>
-    <p class="sec-lede">The work centers on five things done well: fades, tapers, beard service, retwists, and 2-strand twists. The goal is simple. You walk out with edges you can see from across the room.</p>
+    <p class="sec-lede">The shop offers five services: fade haircuts, tapers, beard service, retwists, and 2-strand twists.</p>
     <div class="two-col">
       <div>
         <ul class="craft-list">
-          <li><strong>Precision first</strong><span>Fades and tapers are blended by hand so the transition stays smooth in daylight and in photos.</span></li>
-          <li><strong>Lineups that last</strong><span>Foreheads, temples, and beards edged with a steady hand. The details make the cut.</span></li>
-          <li><strong>Loc and twist care</strong><span>Retwists and 2-strand twists done with attention to parting, tension, and finish.</span></li>
+          <li><strong>Five services</strong><span>Fade haircuts, tapers, beard service, retwists, and 2-strand twists.</span></li>
+          <li><strong>Open five days</strong><span>Tuesday through Saturday, 9 AM to 7 PM. Closed Sunday and Monday.</span></li>
+          <li><strong>Call to book</strong><span>Call (478) 238-6781. Questions? Call (478) 238-6781.</span></li>
         </ul>
       </div>
       <div class="polaroids">
         <figure class="polaroid">
-          <svg viewBox="0 0 400 300" role="img" aria-label="Concept art: barber clipper with motion lines">
-            <rect width="400" height="300" fill="#141210"/>
-            <g stroke="#e8622c" stroke-width="5" fill="none">
-              <rect x="150" y="60" width="100" height="150" rx="14"/>
-              <rect x="150" y="60" width="100" height="34" rx="10" fill="#e8622c" stroke="none"/>
-              <line x1="150" y1="210" x2="150" y2="258"/><line x1="250" y1="210" x2="250" y2="258"/>
-              <rect x="138" y="252" width="124" height="20" rx="8"/>
-            </g>
-            <g stroke="#f4efe4" stroke-width="3">
-              <line x1="168" y1="66" x2="232" y2="66"/><line x1="168" y1="78" x2="232" y2="78"/>
-            </g>
-            <g stroke="#e8622c" stroke-width="3">
-              <line x1="80" y1="120" x2="120" y2="120"/><line x1="80" y1="150" x2="120" y2="150"/>
-              <line x1="80" y1="180" x2="120" y2="180"/>
-              <line x1="280" y1="120" x2="320" y2="120"/><line x1="280" y1="150" x2="320" y2="150"/>
-              <line x1="280" y1="180" x2="320" y2="180"/>
-            </g>
-            <text x="200" y="40" fill="#f4efe4" font-family="Archivo Black, sans-serif" font-size="20" text-anchor="middle" letter-spacing="4">THE CLIPPER</text>
-          </svg>
-          <figcaption>Concept art</figcaption>
+          <img src="img/photo-1.jpg" alt="VJ's Cutz and Styles storefront at 318 2nd Street" loading="lazy">
+          <figcaption>The storefront at 318 2nd St. Photo from the shop's Facebook page.</figcaption>
         </figure>
         <figure class="polaroid">
-          <svg viewBox="0 0 400 300" role="img" aria-label="Concept art: sharp lineup on a profile silhouette">
-            <rect width="400" height="300" fill="#141210"/>
-            <path d="M168 84 C 132 84, 116 116, 118 150 L 114 168 C 112 178, 118 184, 128 184 L 132 196 C 128 214, 138 226, 152 228 L 148 292 L 252 292 L 248 228 C 268 222, 276 206, 272 188 C 270 172, 262 168, 256 160 C 268 140, 266 100, 240 84 Z" fill="none" stroke="#f4efe4" stroke-width="5"/>
-            <line x1="120" y1="112" x2="252" y2="112" stroke="#e8622c" stroke-width="6"/>
-            <line x1="120" y1="124" x2="244" y2="124" stroke="#f4efe4" stroke-width="3"/>
-            <line x1="252" y1="196" x2="252" y2="292" stroke="#e8622c" stroke-width="4"/>
-            <text x="200" y="42" fill="#f4efe4" font-family="Archivo Black, sans-serif" font-size="20" text-anchor="middle" letter-spacing="4">THE LINEUP</text>
-          </svg>
-          <figcaption>Concept art</figcaption>
+          <img src="img/photo-2.jpg" alt="VJ's Cutz and Styles storefront sign and OPEN sign" loading="lazy">
+          <figcaption>Storefront sign and OPEN sign. Photo from the shop's Facebook page.</figcaption>
         </figure>
         <figure class="polaroid">
-          <svg viewBox="0 0 400 300" role="img" aria-label="Concept art: two strand twist pattern">
-            <rect width="400" height="300" fill="#141210"/>
-            <g stroke="#e8622c" stroke-width="6" fill="none">
-              <path d="M90 40 C 130 90, 50 140, 90 190 C 130 240, 50 280, 90 300"/>
-              <path d="M200 40 C 240 90, 160 140, 200 190 C 240 240, 160 280, 200 300"/>
-              <path d="M310 40 C 350 90, 270 140, 310 190 C 350 240, 270 280, 310 300"/>
-            </g>
-            <g stroke="#f4efe4" stroke-width="3" fill="none">
-              <path d="M120 40 C 160 90, 80 140, 120 190 C 160 240, 80 280, 120 300"/>
-              <path d="M230 40 C 270 90, 190 140, 230 190 C 270 240, 190 280, 230 300"/>
-              <path d="M340 40 C 380 90, 300 140, 340 190 C 380 240, 300 280, 340 300"/>
-            </g>
-            <text x="200" y="34" fill="#f4efe4" font-family="Archivo Black, sans-serif" font-size="20" text-anchor="middle" letter-spacing="4">THE TWIST</text>
-          </svg>
-          <figcaption>Concept art</figcaption>
-        </figure>
-        <figure class="polaroid">
-          <svg viewBox="0 0 400 300" role="img" aria-label="Concept art: barber tools flat lay">
-            <rect width="400" height="300" fill="#141210"/>
-            <g transform="rotate(-18 200 150)">
-              <rect x="120" y="120" width="160" height="26" rx="12" fill="none" stroke="#f4efe4" stroke-width="6"/>
-              <circle cx="130" cy="133" r="22" fill="none" stroke="#e8622c" stroke-width="6"/>
-            </g>
-            <g transform="rotate(14 200 200)">
-              <rect x="140" y="190" width="120" height="20" rx="10" fill="#e8622c"/>
-              <rect x="140" y="210" width="120" height="8" fill="#f4efe4"/>
-            </g>
-            <text x="200" y="50" fill="#f4efe4" font-family="Archivo Black, sans-serif" font-size="20" text-anchor="middle" letter-spacing="4">THE TOOLS</text>
-          </svg>
-          <figcaption>Concept art</figcaption>
+          <img src="img/photo-3.jpg" alt="Inside VJ's Cutz and Styles with branded wall sign" loading="lazy">
+          <figcaption>Inside the shop. Photo from the shop's Instagram account.</figcaption>
         </figure>
       </div>
     </div>
@@ -274,7 +221,7 @@ footer a{color:var(--orange);}
   <div class="wrap">
     <div class="sec-kicker">Find the shop</div>
     <h2 class="sec-title">Visit</h2>
-    <p class="sec-lede">On 2nd Street in Macon. Call ahead and the chair will be ready.</p>
+    <p class="sec-lede">On 2nd Street in Macon. Call (478) 238-6781 to book.</p>
     <div class="visit-grid">
       <div class="visit-card orange">
         <h3>Hours</h3>
