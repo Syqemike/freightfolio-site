@@ -1,0 +1,218 @@
+<!-- DESIGN BRIEF
+1. Aesthetic: classic Southern barbershop rendered as a modern shopfront poster. Warm, grounded, masculine without cliches.
+2. Typography: Playfair Display for headlines (confident editorial serif), Work Sans for body, labels, and navigation.
+3. Palette: deep forest green #14342b, cream #f6f1e7, oxblood red #8a2f27, brass #c9a227.
+4. Imagery: 1 real shop photo (its mural, from the public listing gallery) plus 3 honestly labeled concept illustrations, since the shop's other public gallery photos were unsuitable. Barber pole stripe motif used as section dividers.
+5. Layout: asymmetric offset hero, menu style services list, full width service marquee, staggered photo cards, visit panel with hours and map link.
+6. Customer journey: name and call CTA above the fold, service menu, real photos, visit info with hours, call or get directions to act.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Hill Top Barber Shop and Beauty | Baton Rouge Barbershop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#14342b; --forest-deep:#0e2620; --cream:#f6f1e7; --cream-dim:#ece4d2;
+    --oxblood:#8a2f27; --brass:#c9a227; --ink:#1c2420;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Work Sans',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+  .disclosure{background:var(--oxblood);color:#fff;text-align:center;font-size:.8rem;font-weight:600;letter-spacing:.06em;padding:.55rem 1rem;text-transform:uppercase}
+  header.nav{background:var(--forest-deep);color:var(--cream);position:sticky;top:0;z-index:50;border-bottom:3px solid var(--brass)}
+  .nav-inner{max-width:1180px;margin:0 auto;padding:.9rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+  .brand{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:1.35rem;letter-spacing:.01em;color:var(--cream);text-decoration:none}
+  .brand span{color:var(--brass)}
+  nav.links{display:flex;gap:1.4rem;flex-wrap:wrap}
+  nav.links a{color:var(--cream);text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+  nav.links a:hover{color:var(--brass)}
+  .btn{display:inline-block;background:var(--oxblood);color:#fff;text-decoration:none;font-weight:700;letter-spacing:.05em;padding:.85rem 1.7rem;border-radius:2px;text-transform:uppercase;font-size:.88rem;border:2px solid var(--oxblood)}
+  .btn:hover{background:transparent;color:var(--oxblood)}
+  .btn.gold{background:var(--brass);border-color:var(--brass);color:var(--forest-deep)}
+  .btn.gold:hover{background:transparent;color:var(--brass)}
+  .btn.ghost{background:transparent;border-color:var(--cream);color:var(--cream)}
+  .btn.ghost:hover{border-color:var(--brass);color:var(--brass)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 1.25rem}
+  .hero{background:var(--forest-deep);color:var(--cream);padding:4.5rem 0 3.5rem;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+  .eyebrow{display:inline-block;color:var(--brass);font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-bottom:1rem;border-bottom:2px solid var(--brass);padding-bottom:.3rem}
+  .hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.4rem,5.2vw,4.2rem);line-height:1.05;font-weight:800;margin-bottom:1.1rem}
+  .hero h1 em{font-style:italic;color:var(--brass)}
+  .hero p.lede{font-size:1.08rem;max-width:34rem;color:#e9e2d0;margin-bottom:1.8rem}
+  .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+  .hero-photo img{width:100%;height:420px;object-fit:cover;border:6px solid var(--brass);border-radius:3px;transform:rotate(1.5deg);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+  .hero-photo figcaption{color:#cbbfa5;font-size:.8rem;margin-top:.7rem;text-align:right;font-style:italic}
+  .marquee{background:var(--oxblood);color:var(--cream);overflow:hidden;white-space:nowrap;padding:.8rem 0;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem}
+  .marquee span{padding:0 1.6rem}
+  section{padding:4rem 0}
+  .kicker{color:var(--oxblood);font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-bottom:.6rem}
+  h2.sec{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800;margin-bottom:1rem;color:var(--forest-deep)}
+  .sec-intro{max-width:44rem;color:#3c4a43;margin-bottom:2.4rem;font-size:1.02rem}
+  .menu{background:#fffdf8;border:2px solid var(--forest-deep);border-radius:4px;overflow:hidden}
+  .menu-row{display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:center;padding:1.35rem 1.6rem;border-bottom:1px dashed #c9bfa8}
+  .menu-row:last-child{border-bottom:none}
+  .menu-row h3{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;color:var(--forest-deep)}
+  .menu-row p{color:#55625a;font-size:.95rem}
+  .menu-tag{background:var(--forest);color:var(--cream);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.45rem .9rem;border-radius:2px;white-space:nowrap}
+  .walkin{background:var(--forest);color:var(--cream);border-radius:4px;padding:2.2rem 2rem;margin-top:2rem;display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;justify-content:space-between}
+  .walkin h3{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;margin-bottom:.4rem}
+  .walkin p{color:#d9d2bd;max-width:34rem}
+  .photos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .photos-grid figure:nth-child(2){transform:translateY(1.6rem)}
+  .photos-grid figure{background:#fffdf8;border:1px solid #d8cdb2;border-radius:3px;overflow:hidden}
+  .photos-grid img{width:100%;height:280px;object-fit:cover;display:block}
+  .photos-grid figcaption{padding:.85rem 1rem;font-size:.82rem;color:#55625a;font-style:italic}
+  .visit{background:var(--forest-deep);color:var(--cream)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+  .hours{list-style:none;margin:1.2rem 0 1.8rem}
+  .hours li{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #2c443c;font-size:.98rem}
+  .hours li strong{color:var(--brass)}
+  .visit a{color:var(--brass)}
+  .visit p{color:#d9d2bd;margin-bottom:.8rem}
+  .map-card{background:#fffdf8;color:var(--ink);border-radius:4px;padding:2rem;border-top:6px solid var(--oxblood)}
+  .map-card h3{font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;color:var(--forest-deep);margin-bottom:.6rem}
+  .map-card p{color:#55625a;margin-bottom:1.4rem}
+  .rating-line{text-align:center;padding:2.2rem 0 0;font-size:1rem;color:#3c4a43}
+  .rating-line strong{color:var(--oxblood);font-size:1.25rem}
+  footer{background:#0b1f1a;color:#a99f86;font-size:.85rem;padding:2.4rem 0;text-align:center}
+  footer .disclaimer{max-width:46rem;margin:0 auto 1rem;font-style:italic}
+  @media(max-width:860px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-photo img{height:300px;transform:none}
+    .photos-grid{grid-template-columns:1fr}
+    .photos-grid figure:nth-child(2){transform:none}
+    .visit-grid{grid-template-columns:1fr}
+    nav.links{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design preview. This is an unlisted website concept for Hill Top Barber Shop and Beauty, created by Freightfolio.</div>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">Hill Top <span>Barber Shop</span> and Beauty</a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#photos">Photos</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Baton Rouge, Louisiana</span>
+      <h1>Sharp cuts for the whole <em>neighborhood</em>.</h1>
+      <p class="lede">Hill Top Barber Shop and Beauty keeps it simple: solid cuts, friendly chairs, and walk ins are welcome. Men, kids, and women all leave looking sharp from 643 Lorri Burgess Ave.</p>
+      <div class="hero-ctas">
+        <a class="btn gold" href="tel:+12253896003">Call to book</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Hill+Top+Barber+Shop+and+Beauty+643+Lorri+Burgess+Ave+Baton+Rouge+LA" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/photo1.jpg" alt="Inside Hill Top Barber Shop and Beauty">
+      <figcaption>Real photo from the shop's public listing page.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true">
+  <span>Men's cuts</span><span>Kid's cuts</span><span>Women's tapers</span><span>Eyebrow arches</span><span>Walk ins welcome</span><span>Men's cuts</span><span>Kid's cuts</span><span>Women's tapers</span><span>Eyebrow arches</span><span>Walk ins welcome</span>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <p class="kicker">What they do</p>
+    <h2 class="sec">The service menu</h2>
+    <p class="sec-intro">Four services, done well. Hill Top keeps the board short so every chair stays sharp. Call ahead or just walk in during shop hours.</p>
+    <div class="menu">
+      <div class="menu-row">
+        <div><h3>Men's cuts</h3><p>Cuts for men, styled the way you like them.</p></div>
+        <span class="menu-tag">Walk ins welcome</span>
+      </div>
+      <div class="menu-row">
+        <div><h3>Kid's cuts</h3><p>Cuts for kids, done with patience.</p></div>
+        <span class="menu-tag">Walk ins welcome</span>
+      </div>
+      <div class="menu-row">
+        <div><h3>Women's tapers</h3><p>Taper work and clean edges for women.</p></div>
+        <span class="menu-tag">Walk ins welcome</span>
+      </div>
+      <div class="menu-row">
+        <div><h3>Eyebrow arches</h3><p>Shaped arches that finish the look.</p></div>
+        <span class="menu-tag">Walk ins welcome</span>
+      </div>
+    </div>
+    <div class="walkin">
+      <div>
+        <h3>Walk ins are welcome.</h3>
+        <p>No appointment needed during shop hours. Come by when it suits you.</p>
+      </div>
+      <a class="btn gold" href="tel:+12253896003">Call (225) 389-6003</a>
+    </div>
+  </div>
+</section>
+
+<section id="photos" style="background:var(--cream-dim)">
+  <div class="wrap">
+    <p class="kicker">Inside the shop</p>
+    <h2 class="sec">The shop, at a glance</h2>
+    <p class="sec-intro">One real photo of the shop's mural, plus illustrations that set the scene.</p>
+    <div class="photos-grid">
+      <figure>
+        <img src="img/illust-chair.jpg" alt="Illustration of a classic barber chair">
+        <figcaption>Concept illustration, not a photo of the business.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/illust-tools.jpg" alt="Illustration of barber tools">
+        <figcaption>Concept illustration, not a photo of the business.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/illust-interior.jpg" alt="Illustration of a barbershop interior">
+        <figcaption>Concept illustration, not a photo of the business.</figcaption>
+      </figure>
+    </div>
+    <p class="rating-line"><strong>4.8</strong> on Google, from 15 reviews.</p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <p class="kicker" style="color:var(--brass)">Find the shop</p>
+      <h2 class="sec" style="color:var(--cream)">Visit Hill Top</h2>
+      <p>643 Lorri Burgess Ave<br>Baton Rouge, LA 70802</p>
+      <p>Phone: <a href="tel:+12253896003">(225) 389-6003</a></p>
+      <ul class="hours">
+        <li><span>Tuesday</span><strong>9:00 AM to 6:00 PM</strong></li>
+        <li><span>Wednesday</span><strong>9:00 AM to 6:00 PM</strong></li>
+        <li><span>Thursday</span><strong>9:00 AM to 6:00 PM</strong></li>
+        <li><span>Friday</span><strong>9:00 AM to 6:00 PM</strong></li>
+        <li><span>Saturday</span><strong>9:00 AM to 6:00 PM</strong></li>
+      </ul>
+      <p>Sunday and Monday hours are not listed. Call to confirm before heading over on those days.</p>
+    </div>
+    <div class="map-card" id="contact">
+      <h3>Ready for a cut?</h3>
+      <p>Walk in during shop hours, or call ahead and the shop will look after you. The shop sits on Lorri Burgess Ave in Baton Rouge, easy to reach from downtown.</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap">
+        <a class="btn" href="tel:+12253896003">Call to book</a>
+        <a class="btn" style="background:transparent;color:var(--oxblood)" href="https://www.google.com/maps/search/?api=1&amp;query=Hill+Top+Barber+Shop+and+Beauty+643+Lorri+Burgess+Ave+Baton+Rouge+LA" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="disclaimer">This page is an unlisted design concept created by Freightfolio. It is not the business's website and is not affiliated with or endorsed by Hill Top Barber Shop and Beauty.</p>
+  <p>Hill Top Barber Shop and Beauty &middot; 643 Lorri Burgess Ave, Baton Rouge, LA 70802 &middot; (225) 389-6003</p>
+</footer>
+</body>
+</html>

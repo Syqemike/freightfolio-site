@@ -1,0 +1,225 @@
+<!-- DESIGN BRIEF
+1. Aesthetic: soft modern salon editorial. Calm, bright, personal, and inviting, built around warmth rather than gloss.
+2. Typography: Cormorant Garamond with italic accents for headlines, Jost for body, labels, and navigation.
+3. Palette: blush #f7e8e4, warm charcoal #2b2320, champagne gold #c8a96a, clean white.
+4. Imagery: 3 real salon photos with provenance captions in rounded frames, generous whitespace, gentle curves.
+5. Layout: centered hero with italic serif, two column service cards with soft shadows, wide photo band, booking panel with hours table.
+6. Customer journey: inviting intro, services and stylist community, photo proof, hours and Foxfire Center location, Book Now via Vagaro.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Heather's Hair Design | Hair Salon in Virginia Beach, VA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blush:#f7e8e4; --blush-deep:#f0d5cc; --char:#2b2320; --char-soft:#57483f;
+    --gold:#c8a96a; --gold-deep:#a9874d; --white:#fffdfb;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Jost',system-ui,sans-serif;background:var(--white);color:var(--char);line-height:1.65}
+  .disclosure{background:var(--char);color:var(--blush);text-align:center;font-size:.78rem;font-weight:500;letter-spacing:.1em;padding:.6rem 1rem;text-transform:uppercase}
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,253,251,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--blush-deep)}
+  .nav-inner{max-width:1140px;margin:0 auto;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+  .brand{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:600;color:var(--char);text-decoration:none}
+  .brand em{font-style:italic;color:var(--gold-deep)}
+  nav.links{display:flex;gap:1.6rem}
+  nav.links a{color:var(--char-soft);text-decoration:none;font-size:.82rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+  nav.links a:hover{color:var(--gold-deep)}
+  .btn{display:inline-block;background:var(--char);color:#fff;text-decoration:none;font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem;padding:.95rem 2.1rem;border-radius:999px}
+  .btn:hover{background:var(--gold-deep)}
+  .btn.outline{background:transparent;color:var(--char);border:1.5px solid var(--char)}
+  .btn.outline:hover{background:var(--char);color:#fff}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 1.25rem}
+  .hero{background:linear-gradient(180deg,var(--blush) 0%,#fbf3ef 100%);padding:5rem 0 4rem;text-align:center}
+  .hero .script{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1.3rem;color:var(--gold-deep);letter-spacing:.04em;margin-bottom:1rem}
+  .hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.6rem,5.6vw,4.4rem);font-weight:600;line-height:1.08;margin-bottom:1.2rem}
+  .hero h1 em{font-style:italic;color:var(--gold-deep)}
+  .hero p.lede{max-width:36rem;margin:0 auto 2rem;font-size:1.05rem;color:var(--char-soft)}
+  .hero .ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+  .hero .note{margin-top:1.2rem;font-size:.85rem;color:var(--char-soft)}
+  section{padding:4.5rem 0}
+  .center{text-align:center}
+  .label{font-size:.78rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:.8rem}
+  h2.sec{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,3.8vw,3rem);font-weight:600;margin-bottom:1rem}
+  h2.sec em{font-style:italic;color:var(--gold-deep)}
+  .sec-intro{max-width:42rem;margin:0 auto 3rem;color:var(--char-soft);font-size:1.03rem}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .service{background:#fff;border:1px solid var(--blush-deep);border-radius:18px;padding:2rem 1.7rem;box-shadow:0 10px 30px rgba(200,169,106,.12)}
+  .service h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.45rem;font-weight:600;margin-bottom:.5rem}
+  .service p{color:var(--char-soft);font-size:.96rem}
+  .service .tag{display:inline-block;margin-top:1rem;font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);border-top:1px solid var(--blush-deep);padding-top:.8rem}
+  .band{background:var(--char);color:#f5ece4}
+  .band .split{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  .band h2.sec{color:#fff}
+  .band p{color:#d9cbbd;margin-bottom:1.1rem;font-size:1.02rem}
+  .band img{width:100%;height:440px;object-fit:cover;border-radius:22px}
+  .band figcaption{font-size:.82rem;color:#a8978a;font-style:italic;margin-top:.7rem}
+  .photos{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+  .photos figure{overflow:hidden;border-radius:22px;border:1px solid var(--blush-deep);background:#fff}
+  .photos img{width:100%;height:340px;object-fit:cover;display:block}
+  .photos figcaption{padding:1rem 1.3rem;font-size:.85rem;color:var(--char-soft);font-style:italic}
+  .book-panel{background:var(--blush);border-radius:26px;padding:3.2rem 2.6rem;display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:start}
+  .hours-table{width:100%;border-collapse:collapse;font-size:.96rem}
+  .hours-table td{padding:.65rem 0;border-bottom:1px solid #e3c4b8}
+  .hours-table td:last-child{text-align:right;font-weight:500}
+  .book-panel .fine{font-size:.86rem;color:var(--char-soft);margin:1.1rem 0 1.8rem}
+  .rating{text-align:center;margin-top:3rem;font-size:1.02rem;color:var(--char-soft)}
+  .rating strong{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.6rem;color:var(--char);font-weight:600}
+  footer{background:var(--char);color:#b7a496;font-size:.85rem;padding:2.6rem 0;text-align:center}
+  footer .disclaimer{max-width:46rem;margin:0 auto 1.2rem;font-style:italic}
+  footer a{color:var(--gold)}
+  @media(max-width:900px){
+    .services{grid-template-columns:1fr}
+    .band .split{grid-template-columns:1fr}
+    .band img{height:300px}
+    .photos{grid-template-columns:1fr}
+    .book-panel{grid-template-columns:1fr;padding:2.2rem 1.6rem}
+    nav.links{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design preview. This is an unlisted website concept for Heather's Hair Design, created by Freightfolio.</div>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">Heather's <em>Hair Design</em></a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#salon">The Salon</a>
+      <a href="#photos">Photos</a>
+      <a href="#book">Book</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <p class="script">Virginia Beach's neighborhood salon</p>
+    <h1>Hair that feels like <em>you</em>, only refreshed.</h1>
+    <p class="lede">Heather's Hair Design is a community of experienced stylists in the Foxfire Center. The room is inviting and relaxing, and the focus stays on current trends and techniques so you leave feeling beautifully refreshed.</p>
+    <div class="ctas">
+      <a class="btn" href="https://www.vagaro.com/heathershairdesign" target="_blank" rel="noopener">Book now</a>
+      <a class="btn outline" href="tel:+17573019323">Call (757) 301-9323</a>
+    </div>
+    <p class="note">Online booking is handled through the salon's Vagaro page.</p>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="center">
+      <p class="label">Services</p>
+      <h2 class="sec">Color, cuts, and <em>easy confidence</em></h2>
+      <p class="sec-intro">The stylists stay current on trends and techniques, and they build real relationships with clients. These are the services the salon is known for.</p>
+    </div>
+    <div class="services">
+      <div class="service">
+        <h3>Babylights</h3>
+        <p>Soft, fine highlights that add natural looking dimension through the hair.</p>
+        <div class="tag">Color specialty</div>
+      </div>
+      <div class="service">
+        <h3>Blonde balayage</h3>
+        <p>Hand painted blonde that grows out gracefully, from subtle to bright.</p>
+        <div class="tag">Color specialty</div>
+      </div>
+      <div class="service">
+        <h3>Money piece</h3>
+        <p>Face framing brightness that lifts the whole look in one appointment.</p>
+        <div class="tag">Color specialty</div>
+      </div>
+      <div class="service">
+        <h3>Cut and color</h3>
+        <p>The full refresh. A precision cut paired with color planned around your hair.</p>
+        <div class="tag">Salon favorite</div>
+      </div>
+      <div class="service">
+        <h3>Curtain bangs</h3>
+        <p>Soft, parted fringe shaped to your face and easy to grow out.</p>
+        <div class="tag">Styling</div>
+      </div>
+      <div class="service">
+        <h3>Experienced stylists</h3>
+        <p>A community of experienced stylists who build real relationships with their clients.</p>
+        <div class="tag">The team</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band" id="salon">
+  <div class="wrap split" style="padding:4.5rem 1.25rem">
+    <div>
+      <p class="label">The salon</p>
+      <h2 class="sec">A community of <em>experienced stylists</em></h2>
+      <p>At Heather's Hair Design, doing hair is about feeling great inside and out. The team builds relationships with clients and shares what they learn about trends and techniques.</p>
+      <p>The atmosphere is inviting and relaxing. You walk in comfortable and walk out refreshed.</p>
+      <p>The salon sits inside the Foxfire Center at 2401 Seaboard Road in Virginia Beach.</p>
+    </div>
+    <figure>
+      <img src="img/photo1.jpg" alt="Heather's Hair Design salon photo">
+      <figcaption>Real photo from the salon's public listing page.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section id="photos">
+  <div class="wrap">
+    <div class="center">
+      <p class="label">Photos</p>
+      <h2 class="sec">From the <em>salon</em></h2>
+      <p class="sec-intro">Real photos from the salon's public listing pages.</p>
+    </div>
+    <div class="photos">
+      <figure>
+        <img src="img/photo2.jpg" alt="Heather's Hair Design salon photo">
+        <figcaption>Real photo from the salon's Vagaro listing page.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo3.jpg" alt="Heather's Hair Design salon photo">
+        <figcaption>Real photo from the salon's public listing page.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="book" style="padding-top:0">
+  <div class="wrap">
+    <div class="book-panel">
+      <div>
+        <p class="label">Book your visit</p>
+        <h2 class="sec">Ready when <em>you are</em></h2>
+        <p class="fine">Appointments are booked online through the salon's Vagaro page. Prefer to talk first. Call (757) 301-9323.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <a class="btn" href="https://www.vagaro.com/heathershairdesign" target="_blank" rel="noopener">Book now</a>
+          <a class="btn outline" href="https://www.google.com/maps/search/?api=1&amp;query=Heather%27s+Hair+Design+2401+Seaboard+Rd+Virginia+Beach+VA+23456" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div>
+        <table class="hours-table">
+          <tr><td>Tuesday</td><td>10:00 AM to 8:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>9:00 AM to 7:00 PM</td></tr>
+          <tr><td>Thursday</td><td>10:00 AM to 8:00 PM</td></tr>
+          <tr><td>Friday</td><td>9:00 AM to 5:00 PM</td></tr>
+          <tr><td>Saturday</td><td>9:00 AM to 5:00 PM</td></tr>
+          <tr><td>Sunday and Monday</td><td>Closed</td></tr>
+        </table>
+        <p class="fine">Hours vary slightly midweek. Confirm your time when you book.</p>
+      </div>
+    </div>
+    <p class="rating"><strong>4.9</strong> on Google, from 94 reviews.</p>
+  </div>
+</section>
+
+<footer>
+  <p class="disclaimer">This page is an unlisted design concept created by Freightfolio. It is not the business's website and is not affiliated with or endorsed by Heather's Hair Design.</p>
+  <p>Heather's Hair Design &middot; 2401 Seaboard Rd, Virginia Beach, VA 23456 &middot; (757) 301-9323 &middot; <a href="https://www.vagaro.com/heathershairdesign" target="_blank" rel="noopener">Book on Vagaro</a></p>
+</footer>
+</body>
+</html>
