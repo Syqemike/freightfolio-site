@@ -132,15 +132,6 @@ h2 {
   color: var(--ink);
   max-width: 62ch;
 }
-.lede::first-letter {
-  font-family: 'Fraunces', Georgia, serif;
-  font-weight: 700;
-  font-size: 1.9em;
-  float: left;
-  line-height: 0.9;
-  padding-right: 8px;
-  color: var(--plum);
-}
 p.body { max-width: 66ch; margin-top: 16px; color: #3d2c35; }
 
 .rating {
