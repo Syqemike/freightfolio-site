@@ -14,6 +14,7 @@
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
+  body{overflow-x:clip;}
   body{
     background:var(--ink);
     color:var(--bone);
@@ -92,7 +93,7 @@
   /* Diagonal slash divider */
   .slash{
     height:34px;background:var(--blood);
-    transform:skewY(-3deg);margin:10px -12px;
+    transform:skewY(-3deg);margin:10px 0;
   }
   .slash.thin{background:var(--bone);height:2px;transform:skewY(-2deg);opacity:0.25}
   /* Sections */
@@ -167,7 +168,7 @@
     header,section.block,footer{padding-left:48px;padding-right:48px}
     .hero{padding-left:48px;padding-right:48px}
     .artists{grid-template-columns:1fr 1fr}
-    .hours-grid{grid-template-columns:1fr 1fr}
+    .hours-grid{grid-template-columns:1fr 1fr;align-items:start}
     .hero-row{gap:56px}
   }
 </style>
@@ -202,7 +203,7 @@
     <div class="hero-row">
       <p class="hero-sub">
         A custom tattoo shop in Boise. Every piece is a <strong>one-of-a-kind custom tattoo</strong>.
-        Two experienced artists, and aftercare products to keep your tattoo looking right.
+        Two experienced artists, and aftercare products for fresh tattoos.
       </p>
       <span class="rating-tag"><b>4.8</b> on Google from 318 reviews</span>
     </div>
@@ -217,13 +218,13 @@
   <!-- 02 ARTISTS -->
   <section class="block" id="artists">
     <p class="sec-num">02 / The Artists</p>
-    <h2 class="heavy">TWO ARTISTS.<br><span>ONE STANDARD.</span></h2>
+    <h2 class="heavy">Two artists<br><span>one standard</span></h2>
     <div class="artists">
       <article class="artist">
         <span class="tag">Owner</span>
         <h3 class="heavy">Schuyler Hardy</h3>
         <p class="role">Owner and artist</p>
-        <p>Schuyler owns the shop and works the chair. He has been tattooing since 2014 and builds custom designs with each client instead of pulling flash off the wall.</p>
+        <p>Schuyler owns the shop and works the chair. He has been tattooing since 2014 and builds a custom design with each client.</p>
       </article>
       <article class="artist">
         <span class="tag">Resident Artist</span>
@@ -239,7 +240,7 @@
   <!-- 03 CUSTOM WORK -->
   <section class="block" id="custom-work">
     <p class="sec-num">03 / What We Do</p>
-    <h2 class="heavy">CUSTOM WORK<br><span>ONLY.</span></h2>
+    <h2 class="heavy">Custom tattoos<br><span>made to order</span></h2>
     <div class="body-copy">
       <p>This is a custom shop. You bring the idea, the reference, or the rough sketch. The artist draws something original for you and tattoos it once.</p>
     </div>
@@ -264,7 +265,7 @@
   <!-- 04 HOURS AND LOCATION -->
   <section class="block" id="hours">
     <p class="sec-num">04 / Hours and Location</p>
-    <h2 class="heavy">FIND THE<br><span>SHOP.</span></h2>
+    <h2 class="heavy">Find the<br><span>shop</span></h2>
     <div class="hours-grid">
       <div class="hours">
         <h3 class="heavy">Shop Hours</h3>
@@ -294,7 +295,7 @@
   <!-- 05 CONTACT -->
   <section class="block contact-block" id="contact">
     <p class="sec-num">05 / Get In Touch</p>
-    <h2 class="heavy">START YOUR<br><span>PIECE.</span></h2>
+    <h2 class="heavy">Start your<br><span>piece</span></h2>
     <div class="body-copy">
       <p>Bring your idea to the shop. Call to book a consultation or send an email with what you have in mind and the artist will take it from there.</p>
     </div>

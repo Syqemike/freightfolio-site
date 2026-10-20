@@ -129,18 +129,46 @@
   .hero-art{margin:2.4rem auto 0;max-width:150px;color:var(--rust);}
   .hero-art svg{display:block;width:100%;height:auto;}
   .hero-art figcaption{text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;opacity:.55;margin-top:.6rem;}
+  .hero-cta{margin-top:2rem;}
+
+  /* Fact strip: verified business facts */
+  .facts{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border-top:2px solid var(--bone);
+    border-bottom:2px solid var(--bone);
+  }
+  .fact{
+    padding:1.4rem 1.25rem;
+    border-right:1px solid rgba(239,232,216,.25);
+  }
+  .fact:last-child{border-right:none}
+  .fact .fact-k{
+    display:block;
+    color:var(--rust);
+    font-weight:700;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    font-size:.72rem;
+    margin-bottom:.45rem;
+  }
+  .fact .fact-v{font-weight:700;font-size:1.02rem;line-height:1.35}
+  @media(max-width:640px){.facts{grid-template-columns:1fr}.fact{border-right:none;border-bottom:1px solid rgba(239,232,216,.25)}.fact:last-child{border-bottom:none}}
 
   html,body{overflow-x:clip}
   /* Diagonal divider */
   .divider{
     height:3.5rem;
-    background:var(--rust);
+    background:repeating-linear-gradient(-55deg,var(--rust) 0 26px,#9a3e1f 26px 52px);
     transform:skewY(-2.5deg);
-    margin:0 -2rem;
+    margin:0;
   }
 
   /* Sections */
   section{padding:4rem 1.25rem;}
+  #services{
+    background:repeating-linear-gradient(-45deg,transparent 0 18px,rgba(239,232,216,.022) 18px 19px);
+  }
   .section-label{
     color:var(--rust);
     font-weight:700;
@@ -285,6 +313,15 @@
       </svg>
       <figcaption>Illustration drawn for this preview</figcaption>
     </figure>
+    <div class="hero-cta">
+      <a class="btn" href="tel:+18324031749">Call to book</a>
+    </div>
+  </div>
+
+  <div class="facts" aria-label="Shop facts">
+    <div class="fact"><span class="fact-k">Where</span><span class="fact-v">1925 Milam St, Downtown Houston</span></div>
+    <div class="fact"><span class="fact-k">Hours</span><span class="fact-v">Mon to Fri 9 to 6, Sat 9 to 4</span></div>
+    <div class="fact"><span class="fact-k">Services</span><span class="fact-v">Cuts, beard trims, hot shaves, shoe shines</span></div>
   </div>
 
   <div class="divider" aria-hidden="true"></div>
@@ -344,7 +381,7 @@
     <h2 class="display">Contact</h2>
     <a class="phone-big display" href="tel:+18324031749">(832) 403-1749</a>
     <a class="btn" href="tel:+18324031749">Call to book</a>
-    <p>Call the shop to set up your visit. The shop is closed on Sundays.</p>
+    <p>Questions? Call (832) 403-1749. The shop is closed on Sundays.</p>
   </section>
 </main>
 
