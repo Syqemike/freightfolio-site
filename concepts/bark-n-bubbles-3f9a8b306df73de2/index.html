@@ -400,6 +400,30 @@
   }
   .rating-badge .stars { color: #F0A32E; letter-spacing: 0.1em; }
 
+  /* Gallery */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+  }
+  .gallery-grid figure {
+    background: var(--white);
+    border: 1px solid #F0E2CC;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  .gallery-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+  }
+  .gallery-grid figcaption {
+    padding: 1rem 1.2rem;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+  }
+
   /* Footer */
   footer {
     background: var(--ink);
@@ -430,6 +454,7 @@
     .hero-art { min-height: 250px; order: -1; }
     .hero { padding: 2.8rem 1.25rem 3rem; }
     .services-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
     .chrissy { grid-template-columns: 1fr; padding: 2.4rem 1.6rem; gap: 2rem; }
     .visit-grid { grid-template-columns: 1fr; }
     .head-inner { flex-wrap: wrap; }
@@ -458,6 +483,7 @@
     <nav class="main-nav" aria-label="Sections">
       <a class="hide-mobile" href="#services">Services</a>
       <a class="hide-mobile" href="#chrissy">Meet Chrissy</a>
+      <a class="hide-mobile" href="#gallery">Photos</a>
       <a href="#visit">Visit</a>
       <a class="cta-call" href="tel:+15152056508">Call to book</a>
     </nav>
@@ -528,6 +554,32 @@
             <li><strong>Focus on</strong> a positive, low-stress grooming experience</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="gallery" style="padding-top: 0;">
+    <div class="wrap">
+      <p class="kicker">Photo gallery</p>
+      <h2>Happy clients</h2>
+      <p class="standfirst">Real photos of freshly groomed dogs.</p>
+      <div class="gallery-grid">
+        <figure>
+          <img src="img/photo-1.jpg" alt="White dog shown before and after a groom">
+          <figcaption>Before and after: a white dog, shaggy and then neatly groomed.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-2.jpg" alt="Black dog shown before and after a groom">
+          <figcaption>Before and after: a black shih tzu mix, scruffy and then neatly trimmed.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-3.jpg" alt="Pomeranian with a red bow after a fresh groom">
+          <figcaption>A Pomeranian with a fresh cut and a red bow.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-4.jpg" alt="Small black dog right after a groom">
+          <figcaption>A small black dog fresh off the grooming table.</figcaption>
+        </figure>
       </div>
     </div>
   </section>

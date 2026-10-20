@@ -265,6 +265,16 @@
   footer strong { color: var(--paper); letter-spacing: 0.15em; text-transform: uppercase; font-size: 11px; }
   footer a { color: var(--copper); }
 
+  /* ---- gallery ---- */
+  .shots { display: grid; gap: 22px; }
+  .shot { border: 1px solid var(--hairline); background: #fbf6ea; }
+  .shot img { display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+  .shot figcaption { padding: 14px 18px; font-size: 0.95rem; color: var(--muted); }
+  .shot .tag { display: block; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--copper-deep); font-weight: 700; margin-bottom: 6px; }
+  .shots-note { margin-top: 24px; font-size: 0.95rem; color: var(--muted); max-width: 44rem; }
+
   @media (min-width: 720px) {
     .hero { padding: 72px 0 56px; }
     .hero-inner { display: grid; grid-template-columns: 1fr 220px; gap: 40px; align-items: end; }
@@ -279,6 +289,7 @@
     .service { display: grid; grid-template-columns: 200px 1fr; gap: 28px; align-items: start; }
     .studio-cols { columns: 2; column-gap: 48px; column-rule: 1px solid #4a3a26; }
     .visit-grid { grid-template-columns: 1fr 1fr; gap: 48px; }
+    .shots { grid-template-columns: 1fr 1fr 1fr; }
   }
   @media (max-width: 719px) {
     .hero .margin-note { display: none; }
@@ -302,6 +313,7 @@
 <nav class="sections" aria-label="Sections">
   <a href="#services">Services</a>
   <a href="#studio">Color Studio</a>
+  <a href="#gallery">Gallery</a>
   <a href="#visit">Hours &amp; Visit</a>
   <a href="tel:+19185874247">Call to book</a>
 </nav>
@@ -381,10 +393,46 @@
     </div>
   </section>
 
-  <section class="block" id="visit">
+  <section class="block" id="gallery">
     <div class="wrap">
       <div class="sec-head">
         <span class="sec-num">03</span>
+        <h3>The Gallery</h3>
+      </div>
+      <div class="shots">
+        <figure class="shot">
+          <img src="img/photo-1.jpg" alt="Hair salon interior with styling stations">
+          <figcaption><span class="tag">Illustrative photo</span>Styling stations lined up and ready.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/photo-2.jpg" alt="Modern salon floor with leather styling chairs">
+          <figcaption><span class="tag">Illustrative photo</span>A modern salon floor with styling chairs.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/photo-3.jpg" alt="Stylists working with clients in a salon">
+          <figcaption><span class="tag">Illustrative photo</span>Stylists at work across the salon.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/photo-4.jpg" alt="Sleek salon interior with styling chairs and shampoo stations">
+          <figcaption><span class="tag">Illustrative photo</span>Styling chairs and shampoo stations.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/photo-5.jpg" alt="Stylist at a product counter in a salon">
+          <figcaption><span class="tag">Illustrative photo</span>Products on the counter, styled and ready.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/photo-6.jpg" alt="Row of styling stations with chairs and mirrors">
+          <figcaption><span class="tag">Illustrative photo</span>A row of styling stations.</figcaption>
+        </figure>
+      </div>
+      <p class="shots-note">No public photos of the salon could be found, so the shots above are illustrative images of salons, shared under Creative Commons licenses. They show the kind of space, not this shop.</p>
+    </div>
+  </section>
+
+  <section class="block" id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num">04</span>
         <h3>Hours &amp; Visit</h3>
       </div>
       <div class="visit-grid">
