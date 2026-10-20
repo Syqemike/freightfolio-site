@@ -201,9 +201,37 @@
   footer .fname { font-size:14px; letter-spacing:2px; text-transform:uppercase; color:var(--sand); margin-bottom:10px; }
   footer p { max-width:60ch; margin:6px auto; }
 
+  /* ---- gallery ---- */
+  .gallery {
+    background:var(--sand-soft);
+    padding:84px 0;
+    border-top:1px solid var(--taupe);
+  }
+  .gallery .kicker { text-align:center; }
+  .gallery h2 {
+    font-size:clamp(30px,3.6vw,46px); font-weight:600; margin-bottom:20px;
+    text-align:center;
+  }
+  .gallery .sub {
+    text-align:center; color:#6b5c4c; max-width:44rem; margin:0 auto 40px;
+  }
+  .shots { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .shot { background:#fffdf8; border:1px solid var(--taupe); }
+  .shot img { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; }
+  .shot figcaption { padding:14px 18px; font-size:15px; color:#6b5c4c; }
+  .shot .tag {
+    display:block; font-size:11px; letter-spacing:3px; text-transform:uppercase;
+    color:var(--terra); font-weight:700; margin-bottom:6px;
+  }
+  .shots-note {
+    margin-top:28px; font-size:14px; color:#6b5c4c; text-align:center;
+    max-width:44rem; margin-left:auto; margin-right:auto;
+  }
+
   @media (max-width:760px) {
     .split { grid-template-columns:1fr; }
     .side-barber, .side-spa { padding:48px 26px 56px; }
+    .shots { grid-template-columns:1fr; }
     .services .split .side-barber, .services .split .side-spa,
     .visit .side-barber, .visit .side-spa { padding:52px 26px 60px; }
     .navlinks { display:none; }
@@ -229,6 +257,7 @@
       <a href="#barber">Barber</a>
       <a href="#spa">Spa</a>
       <a href="#about">The Shop</a>
+      <a href="#gallery">Photos</a>
       <a href="#visit">Visit</a>
     </div>
     <a class="navcta" href="tel:+13343563792">Call to book</a>
@@ -315,6 +344,33 @@
     <h2 class="serif">Two sides, one chair on <em>Monroe Street</em></h2>
     <p>Golden Shears &amp; More Downtown sits on 22 Monroe St in the middle of downtown Montgomery. One visit can cover a fresh cut and time on the spa side, all without leaving the block.</p>
     <div class="street">22 Monroe St &middot; Montgomery, AL 36104</div>
+  </div>
+</section>
+
+<section class="block gallery" id="gallery">
+  <div class="wrap">
+    <div class="kicker">Photos</div>
+    <h2 class="serif">In the shop</h2>
+    <p class="sub">Barber cuts on one side, the salon and spa on the other. A look at the barbershop life.</p>
+    <div class="shots">
+      <figure class="shot">
+        <img src="img/photo-1.jpg" alt="Barber blending a haircut with clippers and a comb">
+        <figcaption><span class="tag">Illustrative photo</span>Clipper work, up close.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/photo-2.jpg" alt="Classic barber chairs lined up in a shop">
+        <figcaption><span class="tag">Illustrative photo</span>Classic barber chairs on the floor.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/photo-3.jpg" alt="Salon shampoo sinks">
+        <figcaption><span class="tag">Illustrative photo</span>Shampoo stations for the spa side.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/photo-4.jpg" alt="A lit barber pole">
+        <figcaption><span class="tag">Illustrative photo</span>The classic sign of a barbershop.</figcaption>
+      </figure>
+    </div>
+    <p class="shots-note">No public photos of the shop could be found, so the shots above are illustrative images of barbershops, shared under Creative Commons licenses. They show the kind of space, not this shop.</p>
   </div>
 </section>
 

@@ -229,6 +229,33 @@
     text-underline-offset:4px;
   }
 
+  /* Gallery */
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px;}
+  .gallery-grid figure{
+    background:#f4ecd8;
+    border:2px solid var(--ink);
+    box-shadow:6px 6px 0 var(--ink);
+    padding:12px;
+    margin:0;
+  }
+  .gallery-grid img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    display:block;
+    border:2px solid var(--ink);
+  }
+  .gallery-grid figcaption{
+    font-family:"Courier New",Courier,monospace;
+    font-size:13px;
+    line-height:1.6;
+    padding:12px 4px 4px;
+  }
+  .gallery-note{margin-bottom:26px;max-width:36rem;}
+  @media (max-width:719px){
+    .gallery-grid{grid-template-columns:1fr 1fr;gap:16px;}
+  }
+
   footer{
     background:var(--ink);
     color:#b7a87f;
@@ -266,6 +293,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#schedule">Schedule</a></li>
       <li><a href="#hours">Hours</a></li>
+      <li><a href="#gallery">Photos</a></li>
       <li><a href="#visit">Visit</a></li>
     </ul>
   </div>
@@ -320,6 +348,40 @@
           <tr><td class="day">Saturday</td><td class="time">9:00 AM - 3:00 PM</td></tr>
           <tr><td class="day">Sunday</td><td class="time"><span class="closed-stamp">Closed</span></td></tr>
         </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <h2>Happy Clients</h2>
+      <div class="rule"></div>
+      <p class="gallery-note">Real photos of happy clients.</p>
+      <div class="gallery-grid">
+        <figure>
+          <img src="img/photo-1.jpg" alt="Small dog with a pink bow, looking fresh after a groom">
+          <figcaption>A fresh groom and a pink bow.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-2.jpg" alt="Small terrier with a red collar">
+          <figcaption>A little terrier with a red collar.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-3.jpg" alt="Two dogs looking out of a car window">
+          <figcaption>Two dogs peeking out of a car window.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-4.jpg" alt="Smiling Yorkie with a polka-dot bow and a pink harness">
+          <figcaption>A smiling Yorkie with a polka-dot bow and a pink harness.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-5.jpg" alt="Small dog with a fresh trim and a colorful bandana">
+          <figcaption>A neat trim and a colorful bandana.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-6.jpg" alt="Two small dogs in harnesses">
+          <figcaption>Two small dogs in harnesses.</figcaption>
+        </figure>
       </div>
     </div>
   </section>

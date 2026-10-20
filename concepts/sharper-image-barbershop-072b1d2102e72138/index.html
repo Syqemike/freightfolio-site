@@ -114,6 +114,15 @@
   .barber h3{font-size:1.25rem;color:var(--brick-deep);margin-bottom:6px}
   .barber p{font-size:.95rem;color:#4a4437}
 
+  /* ---------- gallery ---------- */
+  .shots{display:grid;gap:18px;margin-top:26px}
+  .shot{background:#fffdf6;border:1px solid var(--paper-line);border-radius:8px;overflow:hidden}
+  .shot img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .shot figcaption{padding:12px 16px;font-size:.92rem;color:#4a4437}
+  .shot .tag{display:block;font-family:Verdana,Geneva,Tahoma,sans-serif;font-size:.66rem;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--forest);margin-bottom:4px}
+  .shots-note{margin-top:20px;font-size:.9rem;color:#4a4437;max-width:42rem}
+
   /* ---------- hours ---------- */
   .hours-table{width:100%;max-width:520px;border-collapse:collapse;margin-top:24px;
     font-family:Verdana,Geneva,Tahoma,sans-serif;font-size:.98rem;background:#fffdf6;
@@ -151,6 +160,7 @@
     .family-strip{grid-template-columns:1fr 1fr 1fr}
     .barber-grid{grid-template-columns:1fr 1fr}
     .visit-grid{grid-template-columns:1fr 1fr;align-items:stretch}
+    .shots{grid-template-columns:1fr 1fr}
   }
   @media (min-width:1020px){
     .svc-grid{grid-template-columns:1fr 1fr 1fr}
@@ -181,6 +191,7 @@
   <div class="wrap">
     <a href="#home">Home</a>
     <a href="#services">Services</a>
+    <a href="#gallery">Photos</a>
     <a href="#hours">Hours</a>
     <a href="#visit">Visit</a>
   </div>
@@ -292,6 +303,38 @@
           <p>Beauty salon services in the same building. No second trip across town.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="wash wash-b" aria-label="Photo gallery">
+    <div class="wrap">
+      <div class="section-label sans">Photos</div>
+      <h2>In the shop</h2>
+      <p class="body-copy">A look at the storefront on Bellaire Rd, plus a few shots that show the barbershop life.</p>
+      <div class="shots">
+        <figure class="shot">
+          <img src="img/photo-1.png" alt="Storefront of Sharper Image Barbershop with the phone number on the sign">
+          <figcaption><span class="tag">Shop photo</span>The storefront on Bellaire Rd, from the shop&rsquo;s public listing.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/photo-2.jpg" alt="Barbershop interior with classic chairs and a checkered floor">
+          <figcaption><span class="tag">Illustrative photo</span>Classic chairs and a checkered floor, the old school shop look.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/photo-3.jpg" alt="Barber blending a haircut with clippers and a comb">
+          <figcaption><span class="tag">Illustrative photo</span>Detail work with clippers and comb.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/photo-4.jpg" alt="Barber trimming a client&rsquo;s hair in front of a mirror">
+          <figcaption><span class="tag">Illustrative photo</span>A barber lining up a client at the station.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/photo-5.jpg" alt="Cozy barbershop interior with a barber chair and a dog">
+          <figcaption><span class="tag">Illustrative photo</span>The neighborhood shop feel.</figcaption>
+        </figure>
+      </div>
+      <p class="shots-note">The storefront photo comes from the shop&rsquo;s public business listing. The other photos are illustrative images of barbershops, shared under Creative Commons licenses.</p>
     </div>
   </section>
 

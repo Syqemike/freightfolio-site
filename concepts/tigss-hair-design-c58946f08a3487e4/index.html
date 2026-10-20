@@ -125,6 +125,13 @@
   .map-cta .btn { background:var(--char); }
   .map-cta .btn:hover { background:var(--char2); }
 
+  /* gallery */
+  .shots { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .shots figure { background:#fbf7ec; border:1px solid var(--line); }
+  .shots img { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; }
+  .shots figcaption { padding:14px 16px; font-size:14px; color:var(--muted); }
+  .shots-note { margin-top:24px; font-size:14px; color:var(--muted); }
+
   footer { background:var(--char2); color:#a89c86; font-size:13px; padding:40px 0; }
   footer .wrap { display:grid; gap:14px; }
   footer .fname { color:var(--cream); font-weight:800; font-size:15px; }
@@ -133,7 +140,7 @@
   @media (max-width:760px) {
     .navlinks { display:none; }
     .hero { padding:56px 0 52px; }
-    .two, .visit-grid { grid-template-columns:1fr; }
+    .two, .visit-grid, .shots { grid-template-columns:1fr; }
     .ticket { grid-template-columns:1fr; }
     .ticket .rip { border-left:none; border-top:2px dashed var(--line); padding:18px 28px; }
     .ticket .rip::before { left:-9px; top:auto; bottom:auto; }
@@ -160,6 +167,7 @@
     <div class="navlinks">
       <a href="#services">Services</a>
       <a href="#downtown">Downtown</a>
+      <a href="#gallery">Gallery</a>
       <a href="#visit">Visit</a>
     </div>
     <a class="btn" href="tel:+16059518213">Call to book</a>
@@ -238,6 +246,43 @@
         </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<div class="band-dark"><div class="deco"><i></i></div></div>
+
+<section class="band-cream" id="gallery">
+  <div class="wrap">
+    <div class="sec-title">Gallery</div>
+    <h2>In the shop</h2>
+    <p class="sec-sub">Real photos customers shared from Tigg&rsquo;s on the shop&rsquo;s public listing.</p>
+    <div class="shots">
+      <figure>
+        <img src="img/photo-1.jpg" alt="Young customer with a fresh high top fade in the barber chair">
+        <figcaption>A tall high top fade, fresh out of the chair.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-2.jpg" alt="Young customer in the chair in front of the Tigg's Hair Design wall sign">
+        <figcaption>A young customer under the Tigg&rsquo;s wall sign.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-3.jpg" alt="Back of a haircut showing an undercut with line work and a tied up top">
+        <figcaption>Line work in the fade, with the top tied up.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-4.jpg" alt="Customer with a slicked back hard part cut in front of the Tigg's Hair Design sign">
+        <figcaption>A slicked back hard part under the shop sign.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-5.jpg" alt="Close buzz cut with star designs shaved into the hair">
+        <figcaption>Star designs cut into a close buzz.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-6.jpg" alt="Spiky haircut with a bolt design shaved into the fade">
+        <figcaption>A spiky top with a bolt design in the fade.</figcaption>
+      </figure>
+    </div>
+    <p class="shots-note">Photos shared by customers on the shop&rsquo;s public business listing.</p>
   </div>
 </section>
 

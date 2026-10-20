@@ -271,6 +271,24 @@
     margin-right: auto;
   }
 
+  /* gallery */
+  .pets-grid{display:grid;gap:22px}
+  .pet-card{
+    background:#fff;
+    border:2px solid var(--cream-deep);
+    border-radius:20px;
+    overflow:hidden;
+  }
+  .pet-card img{display:block;width:100%;height:280px;object-fit:cover}
+  .pet-card.small img{height:220px}
+  .pet-card figcaption{padding:16px 20px;font-size:16px}
+  .pet-card .src{
+    display:block;
+    font-family:'Fredoka',sans-serif;
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--tangerine-deep);margin-bottom:6px;
+  }
+
   /* hours */
   .hours { background: var(--teal-deep); color: #FFF6E3; }
   .hours .section-head h2 { color: #FFF6E3; }
@@ -388,6 +406,7 @@
     <nav class="main-nav" aria-label="Sections">
       <a href="#story">Our story</a>
       <a href="#grooming">Grooming</a>
+      <a href="#photos">Photos</a>
       <a href="#hours">Hours</a>
       <a href="#visit">Find us</a>
       <a href="#contact">Contact</a>
@@ -512,6 +531,44 @@
       </div>
       <div class="grooming-note">
         Every pet is different, so we keep it simple: call us, tell us about your pet, and we will plan the visit together. <a href="tel:+17574242252" style="color:var(--tangerine-deep); font-weight:600;">Call to book</a>.
+      </div>
+    </div>
+  </section>
+
+  <section id="photos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Happy clients</h2>
+        <svg class="squiggle" width="120" height="12" viewBox="0 0 120 12" aria-hidden="true">
+          <path d="M2 8 Q 16 2, 30 8 T 58 8 T 86 8 T 118 8" stroke="#F0862F" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <p style="max-width:640px; margin:12px auto 0; font-size:18px;">Real photos from the salon's Google listing.</p>
+      </div>
+      <div class="pets-grid">
+        <figure class="pet-card small">
+          <img src="img/photo-1.jpg" alt="Reception desk with the Paws and Purrs sign, treat display, and a wall of leashes">
+          <figcaption><span class="src">Google listing photo</span>The reception desk with the Paws and Purrs sign and treat display.</figcaption>
+        </figure>
+        <figure class="pet-card">
+          <img src="img/photo-2.jpg" alt="Calico cat with a lion-cut trim lying on a wood floor">
+          <figcaption><span class="src">Google listing photo</span>A calico cat showing off a lion cut.</figcaption>
+        </figure>
+        <figure class="pet-card small">
+          <img src="img/photo-3.jpg" alt="Apricot poodle puppy with a fresh fluffy trim and a green bandana">
+          <figcaption><span class="src">Google listing photo</span>A poodle puppy with a fresh fluffy trim and a green bandana.</figcaption>
+        </figure>
+        <figure class="pet-card small">
+          <img src="img/photo-4.jpg" alt="German shepherd with a red bandana sitting in the grass">
+          <figcaption><span class="src">Google listing photo</span>A German shepherd with a fresh groom and a red bandana.</figcaption>
+        </figure>
+        <figure class="pet-card">
+          <img src="img/photo-5.jpg" alt="Schnauzer mix with a fresh trim and a green bandana">
+          <figcaption><span class="src">Google listing photo</span>A schnauzer mix with a fresh trim and a green bandana.</figcaption>
+        </figure>
+        <figure class="pet-card">
+          <img src="img/photo-6.jpg" alt="Yorkie with a fresh groom wearing a red star-patterned bandana">
+          <figcaption><span class="src">Google listing photo</span>A Yorkie with a fresh groom and a red bandana.</figcaption>
+        </figure>
       </div>
     </div>
   </section>

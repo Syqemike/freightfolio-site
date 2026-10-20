@@ -206,6 +206,21 @@
   }
   .ledger li:hover{background:rgba(179,71,36,.08);}
 
+  /* Gallery */
+  .gallery{background:var(--ink-soft);border-top:2px solid var(--bone);border-bottom:2px solid var(--bone);}
+  .gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
+  .gallery figure{background:var(--ink);border:2px solid var(--bone);padding:.6rem;}
+  .gallery img{width:100%;height:280px;object-fit:cover;display:block;}
+  .gallery figcaption{padding:.9rem .4rem .3rem;color:var(--bone-dim);font-size:.88rem;line-height:1.5;}
+  .gallery .tag{
+    display:inline-block;
+    background:var(--rust);color:var(--ink);
+    font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+    padding:.28rem .65rem;margin-bottom:.5rem;
+  }
+  .gallery-note{color:var(--bone-dim);font-size:.9rem;max-width:40rem;margin-top:1.75rem;}
+  @media(max-width:640px){.gallery-grid{grid-template-columns:1fr;}}
+
   /* Hours & location */
   .hours-loc{background:var(--ink-soft);position:relative;overflow:hidden;}
   .hours-grid{display:grid;gap:2.5rem;}
@@ -281,6 +296,7 @@
   <div class="brand display">Beast <span>with the</span> Clippers</div>
   <nav>
     <a href="#services">Services</a>
+    <a href="#gallery">Photos</a>
     <a href="#hours">Hours &amp; Location</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -334,6 +350,36 @@
         <p class="desc">A proper shine while you are in the chair. Walk out looking finished.</p>
       </li>
     </ol>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section id="gallery" class="gallery">
+    <p class="section-label">Photos</p>
+    <h2 class="display">In the chair</h2>
+    <div class="gallery-grid">
+      <figure>
+        <img src="img/photo-1.jpg" alt="A barber working clippers and a comb through a client's hair">
+        <figcaption><span class="tag">Illustrative photo</span><br>A fresh fade taking shape with clippers and a comb.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-2.jpg" alt="A row of barber chairs inside a traditional barbershop">
+        <figcaption><span class="tag">Illustrative photo</span><br>Barber chairs lined up and ready in a classic shop interior.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-3.jpg" alt="A barber cutting a client's hair in the chair">
+        <figcaption><span class="tag">Illustrative photo</span><br>Mid-cut in a neighborhood barbershop.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-4.jpg" alt="Barber chairs and mirrors along the wall of a shop">
+        <figcaption><span class="tag">Illustrative photo</span><br>Chairs, mirrors, and tools along the shop wall.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-5.jpg" alt="A barber at work with a client sitting in the chair">
+        <figcaption><span class="tag">Illustrative photo</span><br>A barber working closely with a client in the chair.</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-note">No publicly available photos of this shop could be found, so the photos above are illustrative barbershop photos, not photos of Beast with the Clippers.</p>
   </section>
 
   <div class="divider" aria-hidden="true"></div>

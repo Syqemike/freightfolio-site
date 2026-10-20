@@ -216,6 +216,18 @@
   .review-line{margin-top:18px;font-weight:600;color:var(--navy);}
   .stars-inline{color:var(--red);letter-spacing:3px;font-size:1.15rem;}
 
+  /* ============ PHOTOS ============ */
+  section.photos{padding:64px 0 72px;}
+  section.photos .script{display:block;text-align:center;font-size:1.7rem;color:var(--red);}
+  section.photos h2.slab{text-align:center;font-size:clamp(1.7rem,4.5vw,2.4rem);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;}
+  .photos-note{text-align:center;color:var(--ink);opacity:.85;max-width:36rem;margin:0 auto;}
+  .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:38px;}
+  .photo-grid figure{background:var(--cream-dark);border:3px solid var(--navy);box-shadow:5px 5px 0 rgba(26,37,55,.2);padding:10px;}
+  .photo-grid figure:nth-child(odd){transform:rotate(1deg);}
+  .photo-grid figure:nth-child(even){transform:rotate(-1deg);}
+  .photo-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border:2px solid var(--navy);}
+  .photo-grid figcaption{padding:12px 6px 4px;font-size:.85rem;line-height:1.55;color:var(--ink);}
+
   /* ============ VISIT ============ */
   section.visit{background:var(--navy);color:var(--cream);padding:64px 0 72px;}
   section.visit h2{font-size:clamp(1.7rem,4.5vw,2.4rem);text-transform:uppercase;letter-spacing:1px;text-align:center;margin-bottom:8px;color:#fff;}
@@ -250,6 +262,8 @@
   @media (max-width:680px){
     body{font-size:16.5px;}
     .story-grid,.visit-grid{grid-template-columns:1fr;}
+    .photo-grid{grid-template-columns:1fr 1fr;gap:18px;}
+    section.photos{padding:52px 0 60px;}
     .board{padding:38px 22px 32px;outline-offset:-10px;}
     .heritage-row{gap:14px;}
     .burst{width:122px;height:122px;}
@@ -267,7 +281,7 @@
 <div class="preview-note">Design Preview. A mockup, not the business's website</div>
 
 <nav class="jump-nav" aria-label="Page sections">
-  <a href="#top">Top</a><span aria-hidden="true">&middot;</span><a href="#prices">Price Board</a><span aria-hidden="true">&middot;</span><a href="#story">Our Story</a><span aria-hidden="true">&middot;</span><a href="#visit">Visit Us</a>
+  <a href="#top">Top</a><span aria-hidden="true">&middot;</span><a href="#prices">Price Board</a><span aria-hidden="true">&middot;</span><a href="#story">Our Story</a><span aria-hidden="true">&middot;</span><a href="#photos">Photos</a><span aria-hidden="true">&middot;</span><a href="#visit">Visit Us</a>
 </nav>
 
 <header class="hero" id="top">
@@ -352,6 +366,38 @@
         <p>Open Tuesday through Saturday, 9 in the morning to 9 at night. Long hours, because dogs do not keep office hours.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<div class="stripe thin" aria-hidden="true"></div>
+
+<section class="photos" id="photos">
+  <div class="wrap">
+    <span class="script">fresh off the table</span>
+    <h2 class="slab">Happy Clients</h2>
+    <p class="photos-note">Real photos of happy clients.</p>
+    <div class="photo-grid">
+      <figure>
+        <img src="img/photo-1.jpg" alt="Apricot poodle with a fresh trim on the grooming table">
+        <figcaption>A fresh trim on the grooming table.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-2.jpg" alt="Black dog posing with Christmas decorations">
+        <figcaption>A black dog posing with holiday decorations.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-3.jpg" alt="Small white and tan dog posing with Christmas decorations">
+        <figcaption>A small dog posing with holiday decorations.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-4.jpg" alt="Yorkie with a bandana in a playful magazine cover frame">
+        <figcaption>A Yorkie with an Easter bandana in a playful magazine-cover frame.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-5.jpg" alt="Small dog in a sports jersey playing with an orange ball">
+        <figcaption>A small dog in a sports jersey playing with an orange ball.</figcaption>
+      </figure>
+
   </div>
 </section>
 
