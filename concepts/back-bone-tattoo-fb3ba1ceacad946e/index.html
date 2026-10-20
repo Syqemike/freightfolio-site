@@ -22,6 +22,7 @@
 
   .topbar { background:var(--ink); color:#d8cdb4; font-size:13px; }
   .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
+  .preview-tag { letter-spacing:2px; text-transform:uppercase; font-size:11px; color:var(--gold); }
 
   nav { position:sticky; top:0; background:rgba(243,236,220,.97); border-bottom:3px double var(--ink); z-index:10; }
   nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; flex-wrap:wrap; gap:12px; }
@@ -108,7 +109,7 @@
 <div class="topbar">
   <div class="wrap">
     <span>271 Iberville Dr, Biloxi, MS 39531</span>
-    <span><a href="tel:+12282745210">(228) 274-5210</a></span>
+    <span><span class="preview-tag">Design preview</span> &nbsp;|&nbsp; <a href="tel:+12282745210">(228) 274-5210</a></span>
   </div>
 </div>
 

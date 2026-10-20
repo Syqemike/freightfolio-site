@@ -17,6 +17,7 @@
   img { display:block; max-width:100%; }
 
   .topbar { background:var(--black); color:#8d8878; font-size:13px; }
+  .concept-banner { background:#0a0a0a; color:#8d8878; font-size:11px; letter-spacing:3px; text-transform:uppercase; text-align:center; padding:7px 12px; }
   .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; flex-wrap:wrap; gap:6px; }
   .topbar b { color:#fff; }
 
@@ -49,7 +50,7 @@
 
   section.block { padding:76px 28px; scroll-margin-top:80px; }
   .rating-badge { display:flex; justify-content:center; margin-bottom:34px; }
-  .rating-badge span { display:inline-flex; align-items:center; gap:10px; background:#fff; border:1px solid #e5e0d3;
+  .rating-badge span { display:inline-block; text-align:center; line-height:1.6; background:#fff; border:1px solid #e5e0d3;
     border-radius:999px; padding:9px 20px; font-size:14px; font-weight:600; color:#23252b; }
   .contact-line a { color:var(--gold-dark); font-weight:700; }
   .contact-line a:hover { color:var(--black); }
@@ -110,6 +111,8 @@
 </head>
 <body>
 
+<div class="concept-banner">Website Concept, Design Preview Only</div>
+
 <div class="topbar">
   <div class="wrap">
     <span>1416 Simon Bolivar Ave, New Orleans, LA 70113</span>
@@ -140,10 +143,10 @@
         <a class="btn" href="tel:+15045819633">Call (504) 581-9633</a>
         <a class="btn ghost" href="#services">Our Services</a>
       </div>
-      <p class="hero-note">Open late Fri and Sat &middot; 4.6 stars from 92 reviews</p>
+      <p class="hero-note">Open late Fri and Sat &middot; Walk-ins welcome</p>
     </div>
     <div class="hero-img">
-      <img src="img/photo-4.webp" alt="Barber finishing a hot towel straight razor shave">
+      <img src="img/photo-hero.jpg" alt="A young customer in the barber chair at Hotspot, in front of the shop's wall mural">
     </div>
   </div>
 </header>
@@ -162,16 +165,16 @@
   <p class="ssub">A neighborhood barber and beauty shop built around walk-ins and late hours.</p>
   <div class="cards">
     <div class="card">
-      <img src="img/photo-1.jpg" loading="lazy" alt="Barber cutting a fade with clippers">
+      <img src="img/photo-cut.jpg" loading="lazy" alt="A barber cutting a customer's hair at Hotspot">
       <div class="pad"><h3>Precision Haircuts</h3><p>Fades, tapers, and clean lineups from barbers who take their time and get it right.</p></div>
     </div>
     <div class="card">
-      <img src="img/photo-3.webp" loading="lazy" alt="Straight razor shave with hot towel">
-      <div class="pad"><h3>Beard Trims and Shaves</h3><p>Beard sculpting, edge-ups, and straight-razor finishes that leave you looking sharp.</p></div>
+      <img src="img/photo-shop.jpg" loading="lazy" alt="A Hotspot barber outside the shop on Simon Bolivar Ave">
+      <div class="pad"><h3>The Shop</h3><p>1416 Simon Bolivar Ave in New Orleans. Open late Friday and Saturday. Walk-ins welcome.</p></div>
     </div>
     <div class="card">
-      <img src="img/photo-5.png" loading="lazy" alt="Barber styling hair with clippers in a dark shop">
-      <div class="pad"><h3>Beauty and Styling</h3><p>Full barber and beauty shop services for the whole neighborhood. Walk in, sit down, walk out fresh.</p></div>
+      <img src="img/photo-team.jpg" loading="lazy" alt="Larry, Hotspot's CEO, inside the shop">
+      <div class="pad"><h3>The Team</h3><p>Barbers and stylists at the shop on Simon Bolivar Ave. Walk in, sit down, walk out fresh.</p></div>
     </div>
   </div>
 </section>
@@ -180,7 +183,7 @@
   <div class="wrap">
     <div class="kicker">Why Hotspot</div>
     <h2 class="stitle">The local spot that gets you right</h2>
-    <p class="ssub" style="color:#c9c2b2;">Late hours, walk-ins welcome, and a 4.6 from the neighborhood.</p>
+    <p class="ssub" style="color:#c9c2b2;">Late hours and walk-ins welcome on Simon Bolivar Ave.</p>
     <div class="why-grid">
       <div class="why-item">
         <div class="n">9 PM</div>
@@ -188,14 +191,14 @@
         <p>Friday and Saturday we are cutting until 9pm. Tuesday through Thursday until 7:30. Hours for people who work during the day.</p>
       </div>
       <div class="why-item">
-        <div class="n">4.6</div>
-        <h3>Rated by the neighborhood</h3>
-        <p>4.6 stars across 92 reviews on Birdeye. Locals and out-of-towners both leave happy.</p>
+        <div class="n">5</div>
+        <h3>Days a week</h3>
+        <p>Open Tuesday through Saturday. Closed Sunday and Monday.</p>
       </div>
       <div class="why-item">
-        <div class="n">0</div>
-        <h3>No appointment needed</h3>
-        <p>Walk-ins welcome. Come as you are, leave looking sharp.</p>
+        <div class="n">2</div>
+        <h3>Barber and beauty</h3>
+        <p>One shop for cuts and styling. Barbering and beauty services on Simon Bolivar.</p>
       </div>
     </div>
   </div>
@@ -205,7 +208,7 @@
   <div class="kicker">Word of mouth</div>
   <h2 class="stitle">What customers say</h2>
   <p class="ssub">Reviews from customers.</p>
-  <div class="rating-badge"><span>Rated <b>4.6 out of 5</b> across 92 reviews on Birdeye</span></div>
+  <div class="rating-badge"><span>Rated <b>4.6 out of 5</b> across 92 Google reviews (Birdeye aggregate)</span></div>
   <div class="rev-grid">
     <div class="rev">
       <div class="q">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
