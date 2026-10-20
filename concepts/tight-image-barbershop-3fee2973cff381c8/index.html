@@ -301,6 +301,10 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
 .photo-card img{display:block;width:100%;height:230px;object-fit:cover}
 .photo-card figcaption{padding:.85rem 1rem;font-size:.87rem;color:var(--steel);text-align:left}
 .photo-card .src{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem}
+.hero-photo{align-self:center;max-width:430px;background:#232d3a;padding:10px;transform:rotate(2deg);border:1px solid #8f959c}
+.hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.hero-photo figcaption{color:#d7dbdf;padding:6px 8px;font-size:11px;line-height:1.7}
+@media(max-width:700px){.hero-photo{transform:none}}
 </style>
 </head>
 <body>
@@ -312,7 +316,7 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
     <a class="brand" href="#top">Tight <em>Image</em></a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#art">Wall of Art</a></li>
+      <li><a href="#art">Concept Art</a></li>
       <li><a href="#barber">The Barber</a></li>
       <li><a href="#photos">Photos</a></li>
   <li><a href="#visit">Visit</a></li>
@@ -326,7 +330,7 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
     <div>
       <p class="hero-kicker">Barbershop &middot; Baltimore, MD</p>
       <h1>Tight <span class="cut">Image</span> Barbershop</h1>
-      <p class="hero-tag"><strong>"Stay Chiseled my friends."</strong> Precision fades and razor shaves carved with a steady hand at 427 N Eutaw St in Baltimore.</p>
+      <p class="hero-tag"><strong>"Stay Chiseled my friends."</strong> Fades, hair design and razor shaves at 427 N Eutaw St in Baltimore.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="tel:+14108377776">Call to book</a>
         <a class="btn btn-ghost" href="#services">See services</a>
@@ -337,24 +341,7 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
         <div><strong>Weekday hours</strong>Tue to Fri, 10:00 AM to 7:00 PM</div>
       </div>
     </div>
-    <figure class="emblem">
-      <svg viewBox="0 0 400 400" role="img" aria-label="Concept illustration of a chisel and straight razor crossed over a barber pole stripe motif">
-        <rect x="40" y="40" width="320" height="320" fill="none" stroke="#8f959c" stroke-width="3"/>
-        <rect x="58" y="58" width="284" height="284" fill="none" stroke="#39434f" stroke-width="1.5"/>
-        <g transform="rotate(24 200 200)">
-          <rect x="188" y="70" width="24" height="170" fill="#8f959c"/>
-          <polygon points="188,240 212,240 200,292" fill="#d7dbdf"/>
-          <rect x="182" y="60" width="36" height="26" fill="#5b7a99"/>
-        </g>
-        <g transform="rotate(-24 200 200)">
-          <rect x="193" y="80" width="14" height="160" fill="#d7dbdf"/>
-          <polygon points="193,240 207,240 200,286" fill="#8f959c"/>
-          <rect x="188" y="240" width="24" height="52" rx="4" fill="#39434f"/>
-        </g>
-        <text x="200" y="348" text-anchor="middle" fill="#8f959c" font-family="Anton, sans-serif" font-size="26" letter-spacing="6">STAY CHISELED</text>
-      </svg>
-      <figcaption>Concept art: the shop emblem. Original illustration, not a photo of the business.</figcaption>
-    </figure>
+    <figure class="emblem hero-photo"><img src="img/photo-2.jpg" alt="Red hair with a carved design, credited to Phil on the shop’s Facebook page"><figcaption>Cut and design by Phil.</figcaption></figure>
   </div>
 </header>
 
@@ -364,13 +351,13 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
   <div class="wrap">
     <p class="section-kicker">Cut like stone</p>
     <h2 id="services-h">Services</h2>
-    <p class="section-lede">Every service is shaped with the same care Phil puts into his artwork on the shop walls. Clean lines and sharp detail in a finish that holds.</p>
+    <p class="section-lede">Explore haircut and grooming services. Call the shop for current pricing and appointments.</p>
 
     <div class="service-row">
       <div class="num" aria-hidden="true">01</div>
       <div>
         <h3>Fades and custom cuts</h3>
-        <p>Skin fades, tapers, and the big chop, plus custom cuts designed around your head shape and hairline. Cuts for women, children, and men.</p>
+        <p>Fades and tapers, with custom cuts for adults and children.</p>
       </div>
     </div>
 
@@ -378,7 +365,7 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
       <div class="num" aria-hidden="true">02</div>
       <div>
         <h3>Beard trims and razor shaves</h3>
-        <p>Beard sculpting and straight razor shaves with a hot lather finish. Sharp edges and clean necklines, with detail work that frames the face.</p>
+        <p>Beard trims and razor shaves. Call the shop for service details.</p>
       </div>
     </div>
 
@@ -386,7 +373,7 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
       <div class="num" aria-hidden="true">03</div>
       <div>
         <h3>Hair design and color</h3>
-        <p>Hair design etched with precision and hair coloring for a bold or natural change. Bring a reference or talk it through in the chair.</p>
+        <p>Hair design and color services. Contact the shop to discuss your idea.</p>
       </div>
     </div>
 
@@ -394,7 +381,7 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
       <div class="num" aria-hidden="true">04</div>
       <div>
         <h3>Eyebrow arching and facials</h3>
-        <p>Eyebrow arching and facials to finish the look. Small details make a big difference and get the same steady hand as every cut.</p>
+        <p>Eyebrow arching and facial services. Ask the shop about available options.</p>
       </div>
     </div>
 
@@ -409,9 +396,9 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
 
 <section class="gallery" id="art" aria-labelledby="art-h">
   <div class="wrap">
-    <p class="section-kicker">The wall of art</p>
-    <h2 id="art-h">Art on the walls, craft in the chair</h2>
-    <p class="section-lede">Reviewers mention Phil's artwork hanging on the shop walls. These original concept illustrations nod to that creative side. Each piece below is concept art created for this design preview, not a photograph of the business.</p>
+    <p class="section-kicker">Design details</p>
+    <h2 id="art-h">Decorative concept artwork</h2>
+    <p class="section-lede">Original illustrations created for this design preview. These are decorative concepts, not photographs of the shop or its artwork.</p>
     <div class="art-grid">
 
       <figure class="art-card">
@@ -426,7 +413,7 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
         </svg>
         <figcaption>
           <strong>The stone chair</strong>
-          A barber chair carved from solid blocks, built to last like a good cut.
+          A barber chair illustrated as stone blocks.
           <span class="concept-tag">Concept art</span>
         </figcaption>
       </figure>
@@ -446,7 +433,7 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
         </svg>
         <figcaption>
           <strong>Tools of the trade</strong>
-          Clippers and combs traced with the same angular lines Phil cuts into hair.
+          An angular illustration of barbering tools.
           <span class="concept-tag">Concept art</span>
         </figcaption>
       </figure>
@@ -482,7 +469,7 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
       <div class="phil-card">
         <p class="handle"><a href="https://www.instagram.com/philsthatbarber" target="_blank" rel="noopener">@philsthatbarber</a></p>
         <p class="phil-tagline">"Stay Chiseled my friends."</p>
-        <p><strong>Phil</strong> is the barber behind Tight Image. Reviewers note his artwork hangs on the shop walls, and the same eye shows up in his cuts.</p>
+        <p><strong>Phil</strong> is the barber behind Tight Image. Call the shop to ask about services and appointments.</p>
         <p>Follow along on <a href="https://www.instagram.com/philsthatbarber" target="_blank" rel="noopener" style="color:#fff">Instagram</a> to see fresh work and shop updates.</p>
         <div class="rating">
           <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
@@ -506,7 +493,7 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
         </svg>
         <figcaption style="color:#3c434c">
           <strong style="color:var(--ink)">Gallery wall</strong>
-          A nod to the original artwork reviewers say hangs in the shop.
+          A decorative scissors illustration made for this concept.
           <span class="concept-tag" style="border-color:var(--accent);color:var(--accent)">Concept art</span>
         </figcaption>
       </figure>
@@ -587,7 +574,7 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
     <p class="foot-name">Tight Image Barbershop</p>
     <div class="foot-links">
       <a href="#services">Services</a>
-      <a href="#art">Wall of Art</a>
+      <a href="#art">Concept Art</a>
       <a href="#barber">The Barber</a>
       <a href="#visit">Visit</a>
       <a href="tel:+14108377776">Call to book</a>
