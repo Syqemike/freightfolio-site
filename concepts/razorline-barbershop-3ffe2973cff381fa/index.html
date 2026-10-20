@@ -80,6 +80,16 @@ section{padding:66px 0;}
 .art-frame{background:#fffdf6;border:3px solid var(--pine);border-radius:14px;padding:14px;}
 .art-frame svg{display:block;width:100%;height:auto;border-radius:8px;}
 .art-frame figcaption{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;padding:12px 4px 4px;color:var(--pine);}
+.photo-sec{background:#efe6cf;border-top:3px solid var(--pine);}
+.ph-frame{background:#f6f1e3;border:3px solid var(--pine);border-radius:6px;padding:14px;position:relative;box-shadow:6px 6px 0 rgba(31,61,43,.18);}
+.ph-frame::before{content:"";position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:26px;height:26px;background:var(--brick);border:3px solid #fffdf6;border-radius:50%;}
+.ph-frame img{display:block;width:100%;height:auto;border-radius:4px;}
+.ph-lead{margin-bottom:22px;}
+.ph-lead img{max-height:400px;object-fit:cover;}
+.ph-frame figcaption{font-size:13px;padding:12px 4px 4px;color:var(--pine);}
+.ph-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+@media(max-width:900px){.ph-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:520px){.ph-grid{grid-template-columns:1fr;}}
 .visit-wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:8px;}
 @media(max-width:760px){.visit-wrap{grid-template-columns:1fr;}}
 .visit-card{background:var(--pine);color:var(--paper);border-radius:18px;padding:34px;border:3px solid var(--pine);}
@@ -110,6 +120,7 @@ footer a{color:var(--yellow);}
   <div class="wrap">
     <div class="wordmark">Razorline <em>Barbershop</em></div>
     <nav class="navline" aria-label="Sections">
+      <a href="#photos">Photos</a>
       <a href="#services">Services</a>
       <a href="#community">Community</a>
       <a href="#visit">Visit</a>
@@ -128,6 +139,36 @@ footer a{color:var(--yellow);}
     </div>
     <p class="hero-rating">Rated <strong>5.0 from 42 Google reviews</strong>.</p>
     <div class="hero-badge">Kids &amp;<br>seniors<br>welcome</div>
+  </div>
+</section>
+
+<section id="photos" class="photo-sec">
+  <div class="wrap">
+    <span class="sec-label">Straight from the shop</span>
+    <h2 class="sec-title">Photos</h2>
+    <p class="sec-intro">Real photos of Razorline Barbershop and the shop's work, taken from the shop's Booksy booking page.</p>
+    <figure class="ph-frame ph-lead">
+      <img src="img/photo-1.jpg" alt="Razorline Barbershop logo" loading="lazy">
+      <figcaption>The shop. Photo from Razorline's Booksy booking page.</figcaption>
+    </figure>
+    <div class="ph-grid">
+      <figure class="ph-frame">
+        <img src="img/photo-2.jpg" alt="Curly fade haircut photographed inside Razorline Barbershop" loading="lazy">
+        <figcaption>Work example from the shop's Booksy booking page.</figcaption>
+      </figure>
+      <figure class="ph-frame">
+        <img src="img/photo-3.jpg" alt="Low fade haircut photographed inside Razorline Barbershop" loading="lazy">
+        <figcaption>Work example from the shop's Booksy booking page.</figcaption>
+      </figure>
+      <figure class="ph-frame">
+        <img src="img/photo-4.jpg" alt="Fade with beard photographed inside Razorline Barbershop" loading="lazy">
+        <figcaption>Work example from the shop's Booksy booking page.</figcaption>
+      </figure>
+      <figure class="ph-frame">
+        <img src="img/photo-5.jpg" alt="Textured fade haircut photographed inside Razorline Barbershop" loading="lazy">
+        <figcaption>Work example from the shop's Booksy booking page.</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
