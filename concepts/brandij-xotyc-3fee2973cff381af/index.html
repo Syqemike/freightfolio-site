@@ -243,6 +243,16 @@
     .service-grid{grid-template-columns:1fr 1fr 1fr}
     .hero h1{font-size:7.5rem}
   }
+
+/* Real photo gallery */
+.photos{background:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin-top:2rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:#141418;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:230px;object-fit:cover}
+.photo-card figcaption{padding:.8rem 1rem;font-size:.86rem;color:var(--silver);text-align:left}
+.photo-card .src{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);margin-bottom:.3rem}
 </style>
 </head>
 <body>
@@ -254,6 +264,7 @@
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#photos">Photos</a></li>
     <li><a href="#visit">Visit</a></li>
     <li><a class="nav-book" href="https://brandijthafemalebarber.booksy.com">Book Now</a></li>
   </ul>
@@ -381,7 +392,41 @@
     </div>
   </section>
 
-  <section class="visit" id="visit" aria-labelledby="visit-title">
+  <section class="photos" id="photos" aria-labelledby="photos-title">
+  <div class="wrap">
+    <p class="section-tag" id="photos-title">Photos</p>
+    <h2 class="section-title">Real photos from the <span class="pinkword">chair.</span></h2>
+    <p class="section-lede">Work photos from her own public booking page, so you see exactly what she does.</p>
+    <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="Brandi J cutting a client's hair" loading="lazy">
+<figcaption><span class="src">Source: her official Booksy page</span>Brandi J cutting a client's hair</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="A kid with a haircut design" loading="lazy">
+<figcaption><span class="src">Source: her official Booksy page</span>A kid with a haircut design</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="A client with a sharp lineup and beard" loading="lazy">
+<figcaption><span class="src">Source: her official Booksy page</span>A client with a sharp lineup and beard</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-4.jpg" alt="A client with a wave cut" loading="lazy">
+<figcaption><span class="src">Source: her official Booksy page</span>A client with a wave cut</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-5.jpg" alt="A client with locs and a sharp lineup" loading="lazy">
+<figcaption><span class="src">Source: her official Booksy page</span>A client with locs and a sharp lineup</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-6.jpg" alt="A client with a fresh lineup" loading="lazy">
+<figcaption><span class="src">Source: her official Booksy page</span>A client with a fresh lineup</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-labelledby="visit-title">
     <div class="wrap">
       <p class="section-tag">Visit</p>
       <h2 class="section-title" id="visit-title">Find the <span class="pinkword">chair.</span></h2>

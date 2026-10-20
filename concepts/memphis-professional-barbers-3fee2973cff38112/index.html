@@ -173,6 +173,15 @@ table.hours-tbl th{font-weight:600;color:var(--forest)}
 footer{background:var(--forest-deep);color:rgba(243,237,224,.75);padding:44px 0;font-size:.86rem}
 footer .wrap{display:flex;flex-direction:column;gap:12px}
 footer .fname{font-family:'Fraunces',Georgia,serif;font-size:1.15rem;color:var(--sand)}
+
+/* Real photo gallery */
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:#fffdf8;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:240px;object-fit:cover}
+.photo-card figcaption{padding:.9rem 1.1rem;font-size:.9rem;color:var(--muted);text-align:left}
+.photo-card .src{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);margin-bottom:.35rem}
 </style>
 </head>
 <body>
@@ -188,6 +197,7 @@ footer .fname{font-family:'Fraunces',Georgia,serif;font-size:1.15rem;color:var(-
       <a href="#services">Services</a>
       <a href="#spa">Spa</a>
       <a href="#shop">The Shop</a>
+      <a href="#photos">Photos</a>
       <a href="#visit">Visit</a>
     </nav>
     <a class="bookbtn header-cta" href="https://www.styleseat.com/m/s/1132913">Book Now</a>
@@ -325,6 +335,36 @@ footer .fname{font-family:'Fraunces',Georgia,serif;font-size:1.15rem;color:var(-
 <div class="rule" aria-hidden="true"><i></i></div>
 
 <!-- VISIT -->
+<section class="block" id="photos">
+  <div class="wrap">
+    <p class="kicker">Photos</p>
+    <h2 class="serif">Real photos from the shop</h2>
+    <p class="intro">Photos from the shop's own Instagram, as shown on its Google listing.</p>
+    <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="Shop photo from the business's own Instagram" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Instagram, via its Google listing</span>Shop photo from the business's own Instagram</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="Shop photo from the business's own Instagram" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Instagram, via its Google listing</span>Shop photo from the business's own Instagram</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="Shop photo from the business's own Instagram" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Instagram, via its Google listing</span>Shop photo from the business's own Instagram</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-4.jpg" alt="Shop photo from the business's own Instagram" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Instagram, via its Google listing</span>Shop photo from the business's own Instagram</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-5.jpg" alt="Shop photo from the business's own Instagram" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Instagram, via its Google listing</span>Shop photo from the business's own Instagram</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
 <section class="block" id="visit">
   <div class="wrap">
     <p class="kicker">Plan Your Visit</p>

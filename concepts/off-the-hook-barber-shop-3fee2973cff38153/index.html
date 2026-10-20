@@ -162,6 +162,15 @@ footer a{color:var(--coral)}
 @media (min-width:1000px){
   .services-grid{grid-template-columns:1fr 1fr 1fr}
 }
+
+/* Real photo gallery */
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin-top:1.75rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:#fff;border:1px solid #e8dcc4;border-radius:10px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:230px;object-fit:cover}
+.photo-card figcaption{padding:.8rem 1rem;font-size:.86rem;color:var(--ink);text-align:left}
+.photo-card .src{display:block;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--coral-dark);margin-bottom:.3rem}
 </style>
 </head>
 <body>
@@ -181,6 +190,7 @@ footer a{color:var(--coral)}
     <nav class="main" aria-label="Section navigation">
       <a href="#services">Services</a>
       <a href="#shop">The Shop</a>
+      <a href="#photos">Photos</a>
       <a href="#visit">Visit</a>
     </nav>
   </div>
@@ -286,6 +296,36 @@ footer a{color:var(--coral)}
         </svg>
         <figcaption>Concept art: Castleberry Hill storefront illustration</figcaption>
       </figure>
+    </div>
+  </div>
+</section>
+
+<section id="photos" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Photos</p>
+    <h2>Real photos from the shop</h2>
+    <p class="intro">Photos posted with the shop's own Google listing, so you see the actual work and the actual room.</p>
+    <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="A customer in the chair with a fresh cut" loading="lazy">
+<figcaption><span class="src">Source: Google Business listing photos</span>A customer in the chair with a fresh cut</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="A barber cutting hair at an outdoor playoff semifinal event" loading="lazy">
+<figcaption><span class="src">Source: Google Business listing photos</span>A barber cutting hair at an outdoor playoff semifinal event</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="A customer with a fresh lineup outside the shop" loading="lazy">
+<figcaption><span class="src">Source: Google Business listing photos</span>A customer with a fresh lineup outside the shop</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-4.jpg" alt="A barber working on a client inside the shop" loading="lazy">
+<figcaption><span class="src">Source: Google Business listing photos</span>A barber working on a client inside the shop</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-5.jpg" alt="Inside the shop, with Morehouse College posters on the wall" loading="lazy">
+<figcaption><span class="src">Source: Google Business listing photos</span>Inside the shop, with Morehouse College posters on the wall</figcaption>
+</figure>
     </div>
   </div>
 </section>

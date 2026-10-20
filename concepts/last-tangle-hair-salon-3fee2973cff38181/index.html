@@ -298,6 +298,15 @@ footer .copy{font-size:.8rem;margin-top:1rem;color:#8f866f}
   .visit-grid{grid-template-columns:1fr 1fr}
   .hero{padding:6rem 0 5rem}
 }
+
+/* Real photo gallery */
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:#fffdf7;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:240px;object-fit:cover}
+.photo-card figcaption{padding:.9rem 1.1rem;font-size:.9rem;color:var(--ink-soft);text-align:left}
+.photo-card .src{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem}
 </style>
 </head>
 <body>
@@ -312,6 +321,7 @@ footer .copy{font-size:.8rem;margin-top:1rem;color:#8f866f}
       <a href="#services">Services</a>
       <a href="#team">Team</a>
       <a href="#boutique">Boutique</a>
+      <a href="#photos">Photos</a>
       <a href="#visit">Visit</a>
     </nav>
   </div>
@@ -587,6 +597,38 @@ footer .copy{font-size:.8rem;margin-top:1rem;color:#8f866f}
       <figure class="fig">
         <figcaption>Concept art: a boutique shelf rendered as display icons</figcaption>
       </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="photos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Photos</div>
+      <h2>Real photos from <em>the salon</em></h2>
+    </div>
+    <p class="intro">Styles from the salon's own Instagram, so you see real work on real clients.</p>
+    <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="A ponytail style" loading="lazy">
+<figcaption><span class="src">Source: the salon's own Instagram</span>A ponytail style</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="A long wavy ponytail" loading="lazy">
+<figcaption><span class="src">Source: the salon's own Instagram</span>A long wavy ponytail</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="Curls with an undercut" loading="lazy">
+<figcaption><span class="src">Source: the salon's own Instagram</span>Curls with an undercut</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-4.jpg" alt="A crochet latch hook style" loading="lazy">
+<figcaption><span class="src">Source: the salon's own Instagram</span>A crochet latch hook style</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-5.jpg" alt="A twist style, natural hair" loading="lazy">
+<figcaption><span class="src">Source: the salon's own Instagram</span>A twist style, natural hair</figcaption>
+</figure>
     </div>
   </div>
 </section>

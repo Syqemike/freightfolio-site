@@ -226,6 +226,17 @@ footer{background:#070907;border-top:1px solid var(--line);padding:2.5rem 0 3rem
   section{padding:5.5rem 0}
   .hero{padding:6rem 0 5rem}
 }
+
+/* Real photo gallery */
+#photos .eyebrow{color:var(--volt);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.6rem}
+#photos .intro{color:#c9cdc9;max-width:34rem}
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin-top:2rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:#101210;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:240px;object-fit:cover}
+.photo-card figcaption{padding:.85rem 1rem;font-size:.9rem;color:#c9cdc9;text-align:left}
+.photo-card .src{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--volt);margin-bottom:.3rem}
 </style>
 </head>
 <body>
@@ -238,6 +249,7 @@ footer{background:#070907;border-top:1px solid var(--line);padding:2.5rem 0 3rem
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#photos">Photos</a></li>
       <li><a href="#visit">Visit</a></li>
       <li><a href="https://book.thecut.co/yocutz901" class="nav-book">Book Now</a></li>
     </ul>
@@ -371,6 +383,36 @@ footer{background:#070907;border-top:1px solid var(--line);padding:2.5rem 0 3rem
       <p><strong>Mario</strong>, also known as <strong>DeMario Askew</strong>, cuts hair at <strong>Infamous Kutz Barbershop</strong> in Memphis, Tennessee. He has been booking through theCut since March 2022.</p>
       <p>His menu keeps it simple with a standard cut and a haircut and shave combo. Teen and kids cuts have their own pricing. The haircut and shave includes a beard and mustache line up plus a shampoo wash and enhancements. Prices and hours are posted on his theCut booking page.</p>
       <p>Questions? Call <a href="tel:+19015710022" style="color:var(--volt)">(901) 571-0022</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="photos">
+  <div class="wrap">
+    <p class="eyebrow">Photos</p>
+    <h2>Real photos from the chair</h2>
+    <p class="intro">Cut photos from his own Instagram, so you see the actual work.</p>
+    <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="Barber work, posted by Yocutz901 on Instagram" loading="lazy">
+<figcaption><span class="src">Source: his own Instagram</span>Barber work, posted by Yocutz901 on Instagram</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="Barber work, posted by Yocutz901 on Instagram" loading="lazy">
+<figcaption><span class="src">Source: his own Instagram</span>Barber work, posted by Yocutz901 on Instagram</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="Barber work, posted by Yocutz901 on Instagram" loading="lazy">
+<figcaption><span class="src">Source: his own Instagram</span>Barber work, posted by Yocutz901 on Instagram</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-4.jpg" alt="Barber work, posted by Yocutz901 on Instagram" loading="lazy">
+<figcaption><span class="src">Source: his own Instagram</span>Barber work, posted by Yocutz901 on Instagram</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-5.jpg" alt="Barber work, posted by Yocutz901 on Instagram" loading="lazy">
+<figcaption><span class="src">Source: his own Instagram</span>Barber work, posted by Yocutz901 on Instagram</figcaption>
+</figure>
     </div>
   </div>
 </section>

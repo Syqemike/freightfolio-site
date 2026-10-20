@@ -292,6 +292,15 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
   .nav-links{display:none}
   section{padding:60px 16px}
 }
+
+/* Real photo gallery */
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin-top:1.75rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:#ffffff;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:230px;object-fit:cover}
+.photo-card figcaption{padding:.85rem 1rem;font-size:.87rem;color:var(--steel);text-align:left}
+.photo-card .src{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem}
 </style>
 </head>
 <body>
@@ -305,7 +314,8 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
       <li><a href="#services">Services</a></li>
       <li><a href="#art">Wall of Art</a></li>
       <li><a href="#barber">The Barber</a></li>
-      <li><a href="#visit">Visit</a></li>
+      <li><a href="#photos">Photos</a></li>
+  <li><a href="#visit">Visit</a></li>
     </ul>
     <a class="nav-cta" href="tel:+14108377776">Call to book</a>
   </div>
@@ -505,6 +515,36 @@ footer{background:var(--steel-deep);color:var(--stone-light);padding:56px 20px 4
 </section>
 
 <div class="chisel-strip" aria-hidden="true"></div>
+
+<section class="gallery" id="photos" aria-labelledby="photos-h">
+  <div class="wrap">
+    <p class="section-kicker">Real photos</p>
+    <h2 id="photos-h">The actual shop and the actual work</h2>
+    <p class="section-lede">Real photos from the shop's own social pages and business listing, so you see the real room and real cuts.</p>
+    <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="A red design haircut" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Facebook page</span>A red design haircut</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="Cut and design by Phil" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Facebook page</span>Cut and design by Phil</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="Barber work from the barber's own Instagram, tagged at the shop" loading="lazy">
+<figcaption><span class="src">Source: the barber's own Instagram</span>Barber work from the barber's own Instagram, tagged at the shop</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-4.jpg" alt="Barber work from the barber's own Instagram, tagged at the shop" loading="lazy">
+<figcaption><span class="src">Source: the barber's own Instagram</span>Barber work from the barber's own Instagram, tagged at the shop</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-5.jpg" alt="Shop photo from the business listing" loading="lazy">
+<figcaption><span class="src">Source: Google Business listing photo</span>Shop photo from the business listing</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
 
 <section class="visit" id="visit" aria-labelledby="visit-h">
   <div class="wrap">

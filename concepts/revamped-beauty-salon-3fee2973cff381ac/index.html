@@ -219,6 +219,15 @@ footer .fine + .fine{margin-top:.8rem;}
   .visit-grid{grid-template-columns:1.2fr 1fr;gap:3rem;align-items:start;}
   .hero{padding:7rem 0 5.5rem;}
 }
+
+/* Real photo gallery */
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:var(--charcoal-soft);border:1px solid var(--berry-soft);border-radius:10px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:240px;object-fit:cover}
+.photo-card figcaption{padding:.9rem 1.1rem;font-size:.9rem;color:var(--muted);text-align:left}
+.photo-card .src{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--champagne);margin-bottom:.35rem}
 </style>
 </head>
 <body>
@@ -231,7 +240,8 @@ footer .fine + .fine{margin-top:.8rem;}
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#revamp">The ReVamp</a></li>
-      <li><a href="#visit">Visit</a></li>
+      <li><a href="#photos">Photos</a></li>
+    <li><a href="#visit">Visit</a></li>
     </ul>
   </div>
 </nav>
@@ -431,6 +441,32 @@ footer .fine + .fine{margin-top:.8rem;}
     <path d="M2 19 Q 17 8, 32 19 T 62 19" opacity=".5"/>
   </svg>
 </div>
+
+<section id="photos" aria-labelledby="photos-heading">
+  <div class="wrap">
+    <p class="eyebrow">The Proof</p>
+    <h2 class="display" id="photos-heading">Real photos, <em>real work.</em></h2>
+    <p class="lede">Photos from the salon's own social pages and its customers, so you see the actual space and the actual results.</p>
+    <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="The REVAMPED salon logo" loading="lazy">
+<figcaption><span class="src">Source: the salon's own Facebook page</span>The REVAMPED salon logo</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="Salon interior collage" loading="lazy">
+<figcaption><span class="src">Source: the salon's own Facebook page</span>Salon interior collage</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="Finished hair work, posted by a customer" loading="lazy">
+<figcaption><span class="src">Source: a customer photo on Instagram</span>Finished hair work, posted by a customer</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-4.jpg" alt="Mirror selfie inside the salon, showing the interior" loading="lazy">
+<figcaption><span class="src">Source: a customer photo on Instagram</span>Mirror selfie inside the salon, showing the interior</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
 
 <section id="visit" aria-labelledby="visit-heading">
   <div class="wrap">

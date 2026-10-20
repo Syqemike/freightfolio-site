@@ -231,6 +231,15 @@
     nav.links a:not(.call-pill){display:none}
     .appt-card{padding:2rem 1.6rem}
   }
+
+/* Real photo gallery */
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:#fffdf8;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:240px;object-fit:cover}
+.photo-card figcaption{padding:.9rem 1.1rem;font-size:.9rem;color:var(--ink-soft);text-align:left}
+.photo-card .src{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);margin-bottom:.35rem}
 </style>
 </head>
 <body>
@@ -243,7 +252,8 @@
     <nav class="links" aria-label="Sections">
       <a href="#services">Services</a>
       <a href="#about">About</a>
-      <a href="#visit">Visit</a>
+      <a href="#photos">Photos</a>
+<a href="#visit">Visit</a>
       <a class="call-pill" href="tel:+14106854494">Call to book</a>
     </nav>
   </div>
@@ -417,7 +427,43 @@
     </div>
   </section>
 
-  <section id="visit" aria-label="Visit us">
+  <section id="photos" aria-label="Photos">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Our Photos</p>
+        <h2>The Real Shop, In Real Photos</h2>
+        <p>Photos of the actual salon, from its own business listings and customers, so you see the real space.</p>
+      </div>
+      <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="Nail station interior" loading="lazy">
+<figcaption><span class="src">Source: the salon's Yelp page</span>Nail station interior</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="Salon interior" loading="lazy">
+<figcaption><span class="src">Source: the salon's Yelp page</span>Salon interior</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="Polish display" loading="lazy">
+<figcaption><span class="src">Source: the salon's Yelp page</span>Polish display</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-4.jpg" alt="TV area inside the salon" loading="lazy">
+<figcaption><span class="src">Source: the salon's Yelp page</span>TV area inside the salon</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-5.jpg" alt="Birthday nails, posted by a customer" loading="lazy">
+<figcaption><span class="src">Source: a customer photo on Instagram</span>Birthday nails, posted by a customer</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-6.jpg" alt="Pedicure, posted by a customer" loading="lazy">
+<figcaption><span class="src">Source: a customer photo on Instagram</span>Pedicure, posted by a customer</figcaption>
+</figure>
+      </div>
+    </div>
+</section>
+
+<section id="visit" aria-label="Visit us">
     <div class="wrap">
       <div class="section-head">
         <p class="kicker">Visit Us</p>

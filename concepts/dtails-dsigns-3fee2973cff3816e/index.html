@@ -139,6 +139,16 @@ footer.site .fine a{color:inherit}
   nav.main a{font-size:.82rem}
   .brand{font-size:1.05rem}
 }
+
+/* Real photo gallery */
+.ph-kicker{color:var(--gold);font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:.7rem}
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:#2c1420;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:240px;object-fit:cover}
+.photo-card figcaption{padding:.9rem 1.1rem;font-size:.9rem;color:var(--cream-dim);text-align:left}
+.photo-card .src{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:.35rem}
 </style>
 </head>
 <body>
@@ -152,7 +162,8 @@ footer.site .fine a{color:inherit}
       <a href="#top">Home</a>
       <a href="#services">Services</a>
       <a href="#about">About</a>
-      <a href="#visit">Visit</a>
+      <a href="#photos">Photos</a>
+<a href="#visit">Visit</a>
     </nav>
   </div>
 </header>
@@ -319,7 +330,41 @@ footer.site .fine a{color:inherit}
     </div>
   </section>
 
-  <section id="visit" class="visit" aria-label="Visit the salon">
+  <section id="photos" aria-label="Photos">
+    <div class="wrap">
+      <p class="ph-kicker">Photos</p>
+      <h2 class="reveal">Real photos of <span class="amp">&amp;</span> from the shop</h2>
+      <p class="section-sub reveal">Photos from the shop's own social pages and business listings, so you see the real space and the real team.</p>
+      <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="Shop flyer showing the name, address, and phone" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Facebook page</span>Shop flyer showing the name, address, and phone</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="Photo from the shop's own Facebook page" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Facebook page</span>Photo from the shop's own Facebook page</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="Photo from the shop's own Facebook page" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Facebook page</span>Photo from the shop's own Facebook page</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-4.jpg" alt="Photo from the shop's own Facebook page" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Facebook page</span>Photo from the shop's own Facebook page</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-5.jpg" alt="Photo from the business's Yelp page" loading="lazy">
+<figcaption><span class="src">Source: the shop's Yelp page</span>Photo from the business's Yelp page</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-6.jpg" alt="Photo from the business's Yelp page" loading="lazy">
+<figcaption><span class="src">Source: the shop's Yelp page</span>Photo from the business's Yelp page</figcaption>
+</figure>
+      </div>
+    </div>
+</section>
+
+<section id="visit" class="visit" aria-label="Visit the salon">
     <div class="wrap">
       <div class="tick-row reveal">
         <div class="ticks" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>

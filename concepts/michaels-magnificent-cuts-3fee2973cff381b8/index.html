@@ -248,6 +248,15 @@ footer .legal{max-width:720px;margin:14px auto 0;font-size:.8rem;line-height:1.7
   .visit-grid{grid-template-columns:1fr 1fr}
   .marquee-frame{padding:60px 56px 56px}
 }
+
+/* Real photo gallery */
+.photo-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2rem}
+@media(min-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo-card{background:var(--cream);border:1px solid var(--gold);border-radius:10px;overflow:hidden;margin:0}
+.photo-card img{display:block;width:100%;height:240px;object-fit:cover}
+.photo-card figcaption{padding:.9rem 1.1rem;font-size:.9rem;color:var(--ink);text-align:left}
+.photo-card .src{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--burgundy);margin-bottom:.35rem}
 </style>
 </head>
 <body>
@@ -260,6 +269,7 @@ footer .legal{max-width:720px;margin:14px auto 0;font-size:.8rem;line-height:1.7
     <nav class="sections" aria-label="Sections">
       <a href="#services">Services</a>
       <a href="#about">About</a>
+      <a href="#photos">Photos</a>
       <a href="#visit">Visit</a>
     </nav>
     <a class="cta" href="tel:+19012720034">Call to book</a>
@@ -417,7 +427,30 @@ footer .legal{max-width:720px;margin:14px auto 0;font-size:.8rem;line-height:1.7
   </section>
 
   <!-- VISIT -->
-  <section class="block alt" id="visit" aria-label="Hours and location">
+  <section class="block alt" id="photos" aria-label="Photos">
+    <div class="wrap">
+      <p class="kicker">Photos</p>
+      <h2 class="title">Real photos from the shop</h2>
+      <div class="rule" aria-hidden="true"><span>&#9733;</span></div>
+      <p class="intro">Photos from the shop's own Facebook page, as shown on its Google listing.</p>
+      <div class="photo-grid">
+<figure class="photo-card">
+<img src="img/photo-1.jpg" alt="Photo from the shop's own Facebook page" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Facebook photos, via its Google listing</span>Photo from the shop's own Facebook page</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-2.jpg" alt="Photo from the shop's own Facebook page" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Facebook photos, via its Google listing</span>Photo from the shop's own Facebook page</figcaption>
+</figure>
+<figure class="photo-card">
+<img src="img/photo-3.jpg" alt="Photo from the shop's own Facebook page" loading="lazy">
+<figcaption><span class="src">Source: the shop's own Facebook photos, via its Google listing</span>Photo from the shop's own Facebook page</figcaption>
+</figure>
+      </div>
+    </div>
+</section>
+
+<section class="block alt" id="visit" aria-label="Hours and location">
     <div class="wrap">
       <p class="kicker">Take Your Seat</p>
       <h2 class="title">Visit the Studio</h2>
