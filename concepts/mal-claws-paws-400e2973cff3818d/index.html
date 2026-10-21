@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Mal's Claws And Paws | Mobile Pet Grooming and Pet Care, Tampa FL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#0c1a12;
+    --forest-deep:#071009;
+    --forest-card:#10231a;
+    --gold:#d2a94f;
+    --gold-soft:#e8c87a;
+    --cream:#f4eddb;
+    --cream-dim:#cfc6ab;
+    --hairline:rgba(210,169,79,.28);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--forest);
+    color:var(--cream);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:'Cinzel',Georgia,serif;font-weight:600;letter-spacing:.02em;}
+  img{display:block;max-width:100%;height:auto;}
+  a{color:var(--gold-soft);}
+
+  .disclosure{
+    background:var(--gold);
+    color:#14100a;
+    text-align:center;
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    padding:.7rem 1rem;
+  }
+  .disclosure small{display:block;font-weight:600;letter-spacing:.03em;text-transform:none;font-size:.75rem;margin-top:.15rem;}
+
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(7,16,9,.96);
+    border-bottom:1px solid var(--hairline);
+    display:flex;align-items:center;justify-content:space-between;
+    padding:.65rem 1.1rem;gap:.9rem;
+  }
+  .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--cream);}
+  .brand .paw{font-size:1.35rem;line-height:1;}
+  .brand b{font-family:'Cinzel',serif;font-weight:700;font-size:1rem;line-height:1.15;display:block;color:var(--gold-soft);}
+  .brand small{display:block;font-family:'Inter',sans-serif;font-weight:600;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-dim);}
+  .navlinks{display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap;}
+  .navlinks a{text-decoration:none;color:var(--cream-dim);font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;}
+  .navlinks a:hover{color:var(--gold-soft);}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.06em;
+    padding:.8rem 1.6rem;border-radius:2px;transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn-gold{background:var(--gold);color:#14100a;}
+  .btn-gold:hover{background:var(--gold-soft);transform:translateY(-1px);box-shadow:0 6px 18px rgba(210,169,79,.25);}
+  .btn-outline{border:1px solid var(--gold);color:var(--gold-soft);}
+  .btn-outline:hover{background:rgba(210,169,79,.12);}
+  .btn-nav{padding:.55rem 1.1rem;font-size:.8rem;}
+
+  .wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem;}
+  .kicker{font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
+  .secnum{font-family:'Cinzel',serif;color:var(--gold);font-size:.85rem;letter-spacing:.3em;margin-bottom:.4rem;}
+  section{padding:4.5rem 0;}
+  section.alt{background:var(--forest-deep);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);}
+  h2.section-title{font-size:clamp(1.7rem,4vw,2.5rem);color:var(--cream);margin-bottom:.6rem;}
+  .lede{color:var(--cream-dim);max-width:38rem;margin-bottom:2.2rem;font-size:1.02rem;}
+
+  .hero{padding:3.5rem 0 4.5rem;}
+  .hero-grid{display:grid;gap:2.5rem;align-items:center;}
+  .hero h1{font-size:clamp(2.2rem,7vw,3.6rem);line-height:1.12;color:var(--cream);margin-bottom:1.1rem;}
+  .hero h1 em{font-style:normal;color:var(--gold-soft);}
+  .hero-sub{color:var(--cream-dim);font-size:1.06rem;max-width:30rem;margin-bottom:1.8rem;}
+  .hero-cta{display:flex;gap:.9rem;flex-wrap:wrap;}
+  .hero-hours{margin-top:1.6rem;font-size:.9rem;color:var(--cream-dim);}
+  .hero-hours strong{color:var(--gold-soft);font-weight:600;}
+  .hero-photo{
+    border:1px solid var(--hairline);
+    padding:.6rem;
+    background:var(--forest-deep);
+    transform:rotate(1.2deg);
+    box-shadow:0 24px 60px rgba(0,0,0,.45);
+  }
+  .hero-photo img{width:100%;}
+  .hero-photo figcaption{
+    font-size:.78rem;color:var(--cream-dim);padding:.7rem .3rem .2rem;font-style:italic;
+  }
+
+  .rule{border:none;border-top:1px solid var(--hairline);margin:0;}
+
+  .menu{display:grid;gap:0;border:1px solid var(--hairline);background:var(--forest-card);}
+  .menu-row{
+    display:grid;grid-template-columns:1fr auto;gap:.5rem 1rem;align-items:baseline;
+    padding:1.15rem 1.25rem;border-bottom:1px solid var(--hairline);
+  }
+  .menu-row:last-child{border-bottom:none;}
+  .menu-row h3{font-size:1.05rem;color:var(--cream);font-family:'Inter',sans-serif;font-weight:600;}
+  .menu-row h3 .dur{font-weight:400;color:var(--cream-dim);font-size:.85rem;}
+  .menu-row p{grid-column:1/-1;color:var(--cream-dim);font-size:.9rem;margin-top:-.2rem;}
+  .price{font-family:'Cinzel',serif;color:var(--gold-soft);font-size:1.25rem;font-weight:700;white-space:nowrap;}
+  .price small{font-family:'Inter',sans-serif;font-size:.75rem;color:var(--cream-dim);font-weight:500;}
+
+  .club-card{
+    border:1px solid var(--gold);
+    background:linear-gradient(160deg,var(--forest-card),var(--forest-deep));
+    padding:2.2rem;display:grid;gap:2rem;
+  }
+  .club-tiers{display:grid;gap:1.2rem;}
+  .tier{border:1px solid var(--hairline);padding:1.5rem;background:rgba(7,16,9,.5);}
+  .tier.annual{border-color:var(--gold);}
+  .tier .t-name{font-family:'Cinzel',serif;color:var(--gold-soft);font-size:1.15rem;margin-bottom:.3rem;}
+  .tier .t-price{font-size:2rem;font-family:'Cinzel',serif;color:var(--cream);}
+  .tier .t-note{font-size:.85rem;color:var(--cream-dim);margin-top:.4rem;}
+  .benefits{list-style:none;display:grid;gap:.7rem;margin-top:1.4rem;}
+  .benefits li{padding-left:1.7rem;position:relative;color:var(--cream-dim);font-size:.95rem;}
+  .benefits li::before{content:"\2713";position:absolute;left:0;color:var(--gold);font-weight:700;}
+  .club-art img{width:100%;border:1px solid var(--hairline);}
+  .club-art figcaption{font-size:.78rem;color:var(--cream-dim);font-style:italic;padding:.6rem .1rem 0;}
+  .club-cta{margin-top:1.6rem;}
+
+  .care-grid{display:grid;gap:2rem;align-items:start;}
+  .care-card{border:1px solid var(--hairline);background:var(--forest-card);padding:1.8rem;}
+  .care-card h3{font-size:1.25rem;color:var(--gold-soft);margin-bottom:.5rem;}
+  .care-card p{color:var(--cream-dim);font-size:.95rem;margin-bottom:1.1rem;}
+  .care-card .care-price{font-family:'Cinzel',serif;font-size:1.6rem;color:var(--cream);}
+  .care-card .care-price small{font-family:'Inter',sans-serif;font-size:.8rem;color:var(--cream-dim);}
+  .care-art img{width:100%;border:1px solid var(--hairline);}
+  .care-art figcaption{font-size:.78rem;color:var(--cream-dim);font-style:italic;padding:.6rem .1rem 0;}
+
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;}
+  .gallery figure{border:1px solid var(--hairline);background:var(--forest-deep);padding:.5rem;}
+  .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+  .gallery figcaption{font-size:.75rem;color:var(--cream-dim);font-style:italic;padding:.55rem .25rem .15rem;}
+
+  .hours-table{width:100%;border-collapse:collapse;max-width:34rem;}
+  .hours-table th,.hours-table td{padding:.7rem .9rem;text-align:left;border-bottom:1px solid var(--hairline);font-size:.95rem;}
+  .hours-table th{color:var(--cream-dim);font-weight:500;}
+  .hours-table td{color:var(--cream);}
+  .hours-table tr.today td{color:var(--gold-soft);font-weight:700;}
+  .area-note{margin-top:1.4rem;color:var(--cream-dim);font-size:.95rem;max-width:34rem;}
+  .area-note strong{color:var(--gold-soft);}
+
+  .contact-panel{border:1px solid var(--gold);background:var(--forest-card);padding:2.5rem;text-align:center;}
+  .contact-panel h2{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:.7rem;}
+  .contact-panel p{color:var(--cream-dim);margin-bottom:1.6rem;max-width:30rem;margin-left:auto;margin-right:auto;}
+  .contact-row{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.2rem;}
+  .contact-alt{font-size:.92rem;color:var(--cream-dim);}
+
+  footer{background:var(--forest-deep);border-top:1px solid var(--hairline);padding:2.5rem 0 2rem;font-size:.82rem;color:var(--cream-dim);}
+  footer .fbrand{font-family:'Cinzel',serif;color:var(--gold-soft);font-size:1.05rem;margin-bottom:.8rem;}
+  footer p{margin-bottom:.6rem;max-width:44rem;}
+  .fnav{display:flex;gap:1.2rem;flex-wrap:wrap;margin:1rem 0;}
+  .fnav a{color:var(--cream-dim);text-decoration:none;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;}
+  .fnav a:hover{color:var(--gold-soft);}
+
+  @media(min-width:760px){
+    .hero-grid{grid-template-columns:1.05fr .85fr;}
+    .club-card{grid-template-columns:1fr 1fr;}
+    .care-grid{grid-template-columns:1fr 1fr;}
+    .club-tiers{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:560px){
+    .navlinks a:not(.btn-nav){display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">
+  Design preview &middot; prepared by Freightfolio
+  <small>This concept shows what a new website for Mal's Claws And Paws could look like. It is not their current website.</small>
+</div>
+
+<nav aria-label="Sections">
+  <a class="brand" href="#top">
+    <span class="paw" aria-hidden="true">&#128062;</span>
+    <span><b>Mal's Claws And Paws</b><small>Mobile pet grooming</small></span>
+  </a>
+  <div class="navlinks">
+    <a href="#services">Services</a>
+    <a href="#club">Mal's Club</a>
+    <a href="#pet-care">Pet Care</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn-gold btn-nav" href="https://mcp-104522.square.site/">Book Now</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Mobile pet grooming and pet care &middot; Tampa, FL</p>
+      <h1>The groomer comes <em>to your driveway.</em></h1>
+      <p class="hero-sub">Mal's Claws And Paws brings full grooming, boarding, and pet care to your home across the Tampa Bay Area. Your dog stays home for the whole appointment.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="https://mcp-104522.square.site/">Book Now</a>
+        <a class="btn btn-outline" href="tel:+18135931766">Call (813) 593-1766</a>
+      </div>
+      <p class="hero-hours"><strong>Open:</strong> Tue, Thu, Fri, Sat 12pm-8pm &middot; Wed 4pm-8pm. Closed Mon and Sun.</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/hero-french-bulldog.jpg" alt="A French bulldog wrapped in a pink paw-print towel after a bath">
+      <figcaption>A fresh bath and towel dry, done right at home.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<hr class="rule">
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <p class="secnum">01</p>
+    <h2 class="section-title">Services and Pricing</h2>
+    <p class="lede">Every appointment happens at your home in our mobile grooming setup. Prices below are from our live booking page, so what you see is what you pay.</p>
+    <div class="menu">
+      <div class="menu-row">
+        <h3>Mobile Full Grooming <span class="dur">&middot; 90 min</span></h3>
+        <span class="price">$90</span>
+        <p>A complete groom at your door: bath, blow dry, brush out, nail trim, and ear cleaning.</p>
+      </div>
+      <div class="menu-row">
+        <h3>Mobile Full Grooming + Haircut <span class="dur">&middot; 90 min</span></h3>
+        <span class="price">$120</span>
+        <p>Everything in a full groom, plus a haircut shaped to your dog's coat and your preference.</p>
+      </div>
+      <div class="menu-row">
+        <h3>Mobile Full Grooming + Matted Haircut <span class="dur">&middot; 2 hr</span></h3>
+        <span class="price">$200</span>
+        <p>A careful, patient groom for matted coats, with extra time built in for comfort.</p>
+      </div>
+      <div class="menu-row">
+        <h3>Mobile Full Grooming + Flea Bath <span class="dur">&middot; 90 min</span></h3>
+        <span class="price">$150</span>
+        <p>A full groom with a flea treatment bath for dogs dealing with fleas.</p>
+      </div>
+      <div class="menu-row">
+        <h3>Home Check In <span class="dur">&middot; 30 min</span></h3>
+        <span class="price">$80</span>
+        <p>Walks, feeding, potty breaks, quick clean-ups, and play time while you are away.</p>
+      </div>
+      <div class="menu-row">
+        <h3>Pet Boarding</h3>
+        <span class="price"><small>price varies</small></span>
+        <p>Overnight care for your dog. Call or book to talk through dates and rates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="club">
+  <div class="wrap">
+    <p class="secnum">02</p>
+    <h2 class="section-title">Mal's Club</h2>
+    <p class="lede">A membership for dogs who get groomed on a regular schedule. Members also get access to a members-only booking slot.</p>
+    <div class="club-card">
+      <div>
+        <div class="club-tiers">
+          <div class="tier">
+            <div class="t-name">Monthly</div>
+            <div class="t-price">$100</div>
+            <p class="t-note">Billed monthly. Renews each month.</p>
+          </div>
+          <div class="tier annual">
+            <div class="t-name">Annual</div>
+            <div class="t-price">$900</div>
+            <p class="t-note">Best value. Includes 3-day boarding or home check-in.</p>
+          </div>
+        </div>
+        <ul class="benefits">
+          <li>One full groom included every month</li>
+          <li>10% off services and add-ons</li>
+          <li>A free pup cup every visit</li>
+          <li>Free self wash between appointments</li>
+          <li>Member-only specials throughout the year</li>
+          <li>A birthday gift for your pet</li>
+          <li>Daily access and mix-and-match services</li>
+        </ul>
+        <div class="club-cta">
+          <a class="btn btn-gold" href="https://mcp-104522.square.site/">Join and Book</a>
+        </div>
+      </div>
+      <figure class="club-art">
+        <img src="img/flyer-services.jpg" alt="Mal's Claws And Paws services and prices flyer in green and gold">
+        <figcaption>The business's own services flyer, in its signature green and gold.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="pet-care" class="alt">
+  <div class="wrap">
+    <p class="secnum">03</p>
+    <h2 class="section-title">Boarding and Home Care</h2>
+    <p class="lede">Grooming is what we are known for, but we also watch dogs at home and in ours. Multi-dog households get bundle pricing.</p>
+    <div class="care-grid">
+      <div>
+        <div class="care-card" style="margin-bottom:1.2rem;">
+          <h3>Pet Boarding</h3>
+          <p>Overnight boarding with pickup and drop off included. Tell us about your dog's routine and we will keep it steady while you are gone.</p>
+          <div class="care-price"><small>price varies by stay</small></div>
+        </div>
+        <div class="care-card">
+          <h3>Home Check In</h3>
+          <p>Thirty-minute visits for feeding, potty breaks, play time, and quick clean-ups, plus a photo update so you know how it went.</p>
+          <div class="care-price">$80 <small>&middot; 30 min</small></div>
+        </div>
+        <div style="margin-top:1.4rem;">
+          <a class="btn btn-gold" href="https://mcp-104522.square.site/">Book Now</a>
+        </div>
+      </div>
+      <figure class="care-art">
+        <img src="img/bundle-deals.jpg" alt="Bundle deals graphic showing a groomed dog in a branded bandana">
+        <figcaption>Multi-dog bundle deals, straight from the business: 3 dogs $150, 4 dogs $200, 6 dogs $300.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <p class="secnum">04</p>
+    <h2 class="section-title">Recent Work</h2>
+    <p class="lede">Real dogs, real appointments, real results from Mal's Claws And Paws.</p>
+    <div class="gallery">
+      <figure>
+        <img src="img/french-bulldogs-pair.jpg" alt="Two groomed French bulldogs, one wrapped in a pink towel">
+        <figcaption>Two happy regulars after their grooming appointments.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/hero-french-bulldog.jpg" alt="French bulldog in a pink paw-print towel after a bath">
+        <figcaption>Post-bath towel time, done at the client's home.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="visit" class="alt">
+  <div class="wrap">
+    <p class="secnum">05</p>
+    <h2 class="section-title">Hours and Service Area</h2>
+    <p class="lede">We are a mobile business. We come to you.</p>
+    <table class="hours-table">
+      <tr><th>Tuesday</th><td>12pm-8pm</td></tr>
+      <tr><th>Wednesday</th><td>4pm-8pm</td></tr>
+      <tr><th>Thursday</th><td>12pm-8pm</td></tr>
+      <tr><th>Friday</th><td>12pm-8pm</td></tr>
+      <tr><th>Saturday</th><td>12pm-8pm</td></tr>
+      <tr><th>Sunday</th><td>Closed</td></tr>
+      <tr><th>Monday</th><td>Closed</td></tr>
+    </table>
+    <p class="area-note"><strong>Service area:</strong> Tampa and surrounding cities in the Tampa Bay Area. Hours above are from our live booking page, which is the most current source.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-panel">
+      <p class="kicker">Get started</p>
+      <h2 class="serif">Book your dog's next groom.</h2>
+      <p>Online booking shows our real availability. Prefer to talk first? Call or email and we will help you pick the right service.</p>
+      <div class="contact-row">
+        <a class="btn btn-gold" href="https://mcp-104522.square.site/">Book Now</a>
+        <a class="btn btn-outline" href="tel:+18135931766">Call (813) 593-1766</a>
+      </div>
+      <p class="contact-alt">Email: <a href="mailto:malsclawsnpaws@gmail.com">malsclawsnpaws@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="fbrand">Mal's Claws And Paws</p>
+    <div class="fnav">
+      <a href="#services">Services</a>
+      <a href="#club">Mal's Club</a>
+      <a href="#pet-care">Pet Care</a>
+      <a href="#visit">Hours</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p>This page is a design preview prepared by Freightfolio to show what a new website for Mal's Claws And Paws could look like. It is not the business's current website and is not affiliated with the business.</p>
+    <p>Rated 4.8 from 30 Booksy reviews.</p>
+    <p>Photos courtesy of Mal's Claws And Paws' public Facebook and Instagram pages.</p>
+    <p>&copy; 2026 Freightfolio design preview.</p>
+  </div>
+</footer>
+
+</body>
+</html>
