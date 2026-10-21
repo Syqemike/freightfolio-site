@@ -35,9 +35,9 @@ nav.main a:hover,nav.main a.active{color:var(--ink);border-bottom-color:var(--go
 .btn-solid:hover{background:var(--ink);border-color:var(--ink)}
 .hero-collage{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:44px auto 0;max-width:900px}
 .hero-collage img{height:340px;width:100%;object-fit:cover}
-.hero-collage figure:first-child img{margin-top:34px}
+.hero-collage figure:first-child img{margin-top:34px;outline:1px solid rgba(176,141,87,.55);outline-offset:12px}
 
-.rating-line{text-align:center;margin:44px 0 0;padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rating-line{text-align:center;margin:44px 0 0;padding:28px 0 30px;border-top:1px solid var(--gold);border-bottom:1px solid var(--line);background:var(--paper)}
 .rating-line .stars{color:var(--gold);letter-spacing:4px;font-size:18px}
 .rating-line p{font-size:15px;color:var(--soft);letter-spacing:.06em;margin-top:6px}
 
@@ -54,9 +54,11 @@ section.block{padding:60px 0}
 .check li{padding:10px 0;border-bottom:1px solid var(--line);font-size:16px}
 .check li::before{content:"· ";color:var(--gold)}
 
-.svc-list{max-width:760px;margin:0 auto}
-.svc-row{display:grid;grid-template-columns:1fr auto;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.svc-list{max-width:760px;margin:0 auto;counter-reset:svc}
+.svc-row{display:grid;grid-template-columns:1fr auto;gap:20px;padding:22px 10px;border-bottom:1px solid var(--line);align-items:baseline;counter-increment:svc;transition:background .2s ease}
+.svc-row:hover{background:rgba(176,141,87,.07)}
 .svc-row h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:600}
+.svc-row h3::before{content:"0" counter(svc) "  ";font-style:italic;font-weight:500;color:var(--gold);letter-spacing:.03em}
 .svc-row p{color:var(--soft);font-size:15.5px;margin-top:4px}
 .svc-row .price{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage-deep);white-space:nowrap}
 
@@ -70,6 +72,7 @@ figcaption{font-size:13.5px;color:var(--soft);padding:10px 2px 0;line-height:1.5
 .tag{display:inline-block;border:1px solid var(--line);color:var(--soft);font-size:10.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:2px 9px;margin-right:6px}
 
 .hours-cta{background:var(--sage-deep);color:#EFEAE0;padding:56px 0;text-align:center}
+.hours-cta .eyebrow{display:inline-block;margin-bottom:16px}
 .hours-cta h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(30px,3.6vw,42px);font-weight:500;margin-bottom:12px}
 .hours-cta p{max-width:52ch;margin:0 auto 26px;color:#D8D2C4}
 .hours-cta .btn{border-color:#EFEAE0;color:#fff}
