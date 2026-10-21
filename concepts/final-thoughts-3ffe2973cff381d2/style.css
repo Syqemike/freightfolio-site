@@ -1,0 +1,81 @@
+/* Final Thoughts - stark Swiss minimal */
+:root{
+  --white:#fafafa; --ink:#0d0d0d; --cobalt:#2438ff; --gray:#6f6f6f; --line:#e2e2e2;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+.preview-bar{background:var(--ink);color:var(--white);font-size:.78rem;padding:.55rem 1rem;text-align:center;letter-spacing:.03em}
+.wrap{max-width:1240px;margin:0 auto;padding:0 1.5rem}
+header.site{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(250,250,250,.95);backdrop-filter:blur(8px);z-index:20}
+.site-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1rem 0}
+.brand{font-family:'Anton',sans-serif;font-size:1.5rem;letter-spacing:.04em;text-decoration:none;text-transform:uppercase}
+.brand .dot{color:var(--cobalt)}
+nav.main{display:flex;gap:1.6rem;flex-wrap:wrap}
+nav.main a{text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#3a3a3a}
+nav.main a:hover{color:var(--cobalt)}
+.hero{display:grid;grid-template-columns:repeat(12,1fr);gap:0;margin:0}
+.hero-text{grid-column:1/7;padding:4rem 3rem 4rem max(1.5rem,calc((100vw - 1240px)/2 + 1.5rem));display:flex;flex-direction:column;justify-content:center}
+.micro{font-size:.72rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--cobalt);margin-bottom:1.4rem}
+.hero h1{font-family:'Anton',sans-serif;font-size:clamp(3.4rem,8vw,7rem);line-height:.95;text-transform:uppercase;letter-spacing:.01em;margin-bottom:1.4rem}
+.hero h1 .out{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.hero p.lede{font-size:1.08rem;color:#3a3a3a;max-width:28rem;margin-bottom:2rem}
+.hero-img{grid-column:7/13;min-height:560px}
+.hero-img img{width:100%;height:100%;min-height:560px;object-fit:cover}
+.btn-row{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--ink);color:var(--white);text-decoration:none;font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:1rem 2.2rem}
+.btn:hover{background:var(--cobalt)}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn.ghost:hover{border-color:var(--cobalt);color:var(--cobalt)}
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.9rem 0;overflow:hidden;white-space:nowrap}
+.marquee span{font-family:'Anton',sans-serif;font-size:1.1rem;letter-spacing:.14em;text-transform:uppercase;margin-right:2.5rem;color:#3a3a3a}
+.marquee span b{color:var(--cobalt);font-weight:400}
+section.block{padding:4rem 0}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:1rem;margin-bottom:0}
+.sec-head h2{font-family:'Anton',sans-serif;font-size:clamp(2rem,4.5vw,3.2rem);text-transform:uppercase;letter-spacing:.02em}
+.sec-head a{font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cobalt)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);border:1px solid var(--line)}
+.cell{background:var(--white);padding:2.4rem}
+.cell .idx{font-family:'Anton',sans-serif;color:var(--cobalt);font-size:1rem;letter-spacing:.2em}
+.cell h3{font-family:'Anton',sans-serif;font-size:1.8rem;text-transform:uppercase;letter-spacing:.02em;margin:.6rem 0}
+.cell p{color:#3a3a3a}
+.cell .pr{display:inline-block;margin-top:1.2rem;font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;border-bottom:2px solid var(--cobalt)}
+.gal-full{display:grid;grid-template-columns:repeat(12,1fr);gap:1.2rem;margin-top:2rem}
+.gal-full figure{position:relative;overflow:hidden;background:#eee}
+.gal-full .g1{grid-column:1/8}.gal-full .g2{grid-column:8/13}.gal-full .g3{grid-column:1/6}.gal-full .g4{grid-column:6/13}
+.gal-full img{width:100%;height:420px;object-fit:cover;transition:transform .4s ease}
+.gal-full figure:hover img{transform:scale(1.03)}
+.gal-full figcaption{position:absolute;left:0;bottom:0;background:rgba(13,13,13,.85);color:#fff;font-size:.75rem;padding:.5rem .9rem;letter-spacing:.06em}
+.tag{background:var(--cobalt);color:#fff;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:.15rem .45rem;margin-right:.45rem;font-weight:700}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.split img{width:100%;height:520px;object-fit:cover}
+.fact{border-top:2px solid var(--ink);padding:1.2rem 0;display:flex;justify-content:space-between;gap:1rem}
+.fact .k{font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gray)}
+.fact .v{font-weight:600;text-align:right}
+.hours-t{width:100%;border-collapse:collapse}
+.hours-t td{padding:.7rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.hours-t td:last-child{text-align:right;font-weight:600}
+.cta-band{background:var(--ink);color:var(--white);padding:4.5rem 0;text-align:center}
+.cta-band h2{font-family:'Anton',sans-serif;font-size:clamp(2.4rem,6vw,4.6rem);text-transform:uppercase;margin-bottom:1rem}
+.cta-band h2 .out{color:transparent;-webkit-text-stroke:2px var(--white)}
+.cta-band p{color:#bdbdbd;margin-bottom:2rem}
+.cta-band .btn{background:var(--cobalt)}
+.page-hero{padding:3.5rem 0;border-bottom:2px solid var(--ink)}
+.page-hero h1{font-family:'Anton',sans-serif;font-size:clamp(2.8rem,7vw,5rem);text-transform:uppercase}
+.page-hero p{color:#3a3a3a;max-width:40rem;margin-top:.6rem}
+footer.site{border-top:2px solid var(--ink);padding:2.5rem 0;font-size:.85rem;color:var(--gray)}
+footer.site .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2rem}
+footer.site strong{color:var(--ink)}
+footer.site a{color:var(--ink)}
+@media(max-width:900px){
+  .hero-text{grid-column:1/13;padding:2.5rem 0}
+  .hero-img{grid-column:1/13;min-height:340px}
+  .hero-img img{min-height:340px}
+  .grid-2{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr;gap:2rem}
+  .split img{height:360px}
+  .gal-full .g1,.gal-full .g2,.gal-full .g3,.gal-full .g4{grid-column:1/13}
+  .gal-full img{height:320px}
+  footer.site .cols{grid-template-columns:1fr}
+}

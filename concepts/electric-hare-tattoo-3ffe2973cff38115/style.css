@@ -1,0 +1,71 @@
+/* Electric Hare Tattoo - show-poster punk aesthetic */
+:root{
+  --paper:#f2ecdf; --ink:#16130e; --red:#c1341f; --red-dark:#8f2415; --cream:#faf6ec;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+.preview-bar{background:var(--ink);color:var(--paper);font-size:.8rem;padding:.55rem 1rem;text-align:center;letter-spacing:.02em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.25rem}
+header.site{background:var(--ink);color:var(--paper)}
+.site-head{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;gap:1rem;flex-wrap:wrap}
+.brand{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:.06em;line-height:1;text-decoration:none}
+.brand em{font-style:normal;color:var(--red)}
+nav.main{display:flex;gap:1.4rem;flex-wrap:wrap}
+nav.main a{text-decoration:none;text-transform:uppercase;font-size:.82rem;letter-spacing:.14em;padding:.3rem 0;border-bottom:2px solid transparent}
+nav.main a:hover{border-color:var(--red)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:2.5rem;align-items:center;padding:3.5rem 0 3rem}
+.kicker{color:var(--red);text-transform:uppercase;letter-spacing:.28em;font-size:.8rem;font-weight:700;margin-bottom:1rem}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,11vw,8.5rem);line-height:.88;letter-spacing:.01em}
+.stamp{display:inline-block;margin-top:1.4rem;font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.3em;color:var(--red);border:3px solid var(--red);padding:.35rem 1rem .25rem;transform:rotate(-3deg)}
+.hero p.lede{margin-top:1.4rem;font-size:1.1rem;max-width:34rem}
+.hero figure{border:5px solid var(--ink);box-shadow:12px 12px 0 var(--red)}
+.hero figure img{width:100%;height:520px;object-fit:cover}
+.strip{background:var(--red);color:var(--paper);text-transform:uppercase;letter-spacing:.24em;font-weight:700;font-size:.85rem;padding:.8rem 0;text-align:center}
+.strip span{margin:0 1.2rem;white-space:nowrap}
+section.block{padding:3.5rem 0}
+h2.sec{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,5vw,3.6rem);letter-spacing:.03em;line-height:1;margin-bottom:.6rem}
+.sec-sub{max-width:40rem;margin-bottom:2rem;color:#3d382c}
+.svc-row{display:grid;grid-template-columns:5.5rem 1fr auto;gap:1.5rem;align-items:baseline;padding:1.6rem 0;border-top:3px solid var(--ink)}
+.svc-row:last-child{border-bottom:3px solid var(--ink)}
+.svc-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--red);line-height:1}
+.svc-row h3{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:.04em}
+.svc-row p{color:#3d382c;max-width:44rem}
+.price-tag{font-weight:700;text-transform:uppercase;font-size:.8rem;letter-spacing:.12em;border:2px solid var(--ink);padding:.4rem .8rem;white-space:nowrap}
+.rating{text-align:center;background:var(--ink);color:var(--paper);padding:3rem 1rem}
+.rating .big{font-family:'Bebas Neue',sans-serif;font-size:4.5rem;line-height:1;color:var(--red)}
+.rating p{letter-spacing:.06em}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.gal-grid figure{border:4px solid var(--ink);background:var(--cream)}
+.gal-grid img{width:100%;height:300px;object-fit:cover}
+figcaption{font-size:.82rem;padding:.6rem .8rem;color:#3d382c}
+.tag{display:inline-block;background:var(--ink);color:var(--paper);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;padding:.1rem .45rem;margin-right:.4rem}
+.cta-band{background:var(--red);color:var(--paper);text-align:center;padding:3.5rem 1rem}
+.cta-band h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,6vw,4.2rem);letter-spacing:.03em}
+.btn{display:inline-block;margin-top:1.2rem;background:var(--paper);color:var(--ink);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.9rem;text-decoration:none;padding:1rem 2.2rem;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.btn:hover{transform:translate(2px,2px);box-shadow:4px 4px 0 var(--ink)}
+.btn-dark{background:var(--ink);color:var(--paper);box-shadow:6px 6px 0 var(--red)}
+.hours-table{width:100%;border-collapse:collapse;max-width:34rem;margin-top:1rem}
+.hours-table td{padding:.7rem 0;border-bottom:2px solid var(--ink);font-size:1rem}
+.hours-table td:last-child{text-align:right;font-weight:700}
+.page-hero{background:var(--ink);color:var(--paper);padding:3rem 0}
+.page-hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,8vw,5.5rem);letter-spacing:.03em;line-height:1}
+.page-hero p{color:#cfc7b4;max-width:40rem;margin-top:.6rem}
+.contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2rem}
+.card{background:var(--cream);border:3px solid var(--ink);padding:1.6rem}
+.card h3{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.04em;margin-bottom:.5rem}
+.card a.big-link{font-size:1.25rem;font-weight:700;color:var(--red-dark)}
+footer.site{background:var(--ink);color:#b7ad97;font-size:.85rem;padding:2.5rem 0;margin-top:0}
+footer.site .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2rem}
+footer.site strong{color:var(--paper)}
+footer.site a{color:var(--paper)}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr}
+  .hero figure img{height:380px}
+  .gal-grid{grid-template-columns:1fr}
+  .contact-cards{grid-template-columns:1fr}
+  .svc-row{grid-template-columns:3.5rem 1fr}
+  .price-tag{grid-column:2}
+  footer.site .cols{grid-template-columns:1fr}
+}

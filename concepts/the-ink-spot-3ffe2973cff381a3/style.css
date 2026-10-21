@@ -1,0 +1,80 @@
+/* The Ink Spot - heritage editorial */
+:root{
+  --bone:#efe9dc; --ink:#1a1712; --copper:#b06a2f; --cream:#f7f2e6; --stone:#6e6555;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bone);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;line-height:1.7}
+img{max-width:100%;display:block}
+a{color:inherit}
+.preview-bar{background:var(--ink);color:var(--bone);font-size:.8rem;padding:.55rem 1rem;text-align:center;letter-spacing:.04em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.5rem}
+header.site{border-bottom:1px solid var(--ink)}
+.site-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.6rem 0 1.2rem}
+.brand{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:2.2rem;text-decoration:none;letter-spacing:.01em}
+.brand small{display:block;font-family:'Archivo',sans-serif;font-size:.68rem;letter-spacing:.42em;text-transform:uppercase;color:var(--copper);font-weight:600}
+nav.main{display:flex;gap:1.8rem;flex-wrap:wrap}
+nav.main a{text-decoration:none;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+nav.main a:hover{color:var(--copper)}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding:3.5rem 0 3rem}
+.hero .issue{font-size:.75rem;letter-spacing:.34em;text-transform:uppercase;color:var(--copper);font-weight:700;margin-bottom:1.2rem}
+.hero h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(3rem,7vw,5.2rem);line-height:1.02;margin-bottom:1.2rem}
+.hero h1 i{color:var(--copper)}
+.hero .standfirst{font-size:1.15rem;color:#3d362a;max-width:30rem;margin-bottom:1.8rem}
+.hero figure{border:1px solid var(--ink);padding:.7rem;background:var(--cream)}
+.hero figure img{width:100%;height:480px;object-fit:cover}
+.hero figcaption{font-size:.78rem;color:var(--stone);padding-top:.5rem;font-style:italic}
+.btn{display:inline-block;background:var(--ink);color:var(--bone);text-decoration:none;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;padding:1rem 2.1rem}
+.btn:hover{background:var(--copper)}
+.btn-line{display:inline-block;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;padding:1rem 2.1rem;margin-left:.8rem}
+.btn-line:hover{border-color:var(--copper);color:var(--copper)}
+.pullstat{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);display:grid;grid-template-columns:repeat(3,1fr);margin:1rem 0 0}
+.pullstat div{padding:1.6rem 1rem;text-align:center;border-left:1px solid var(--ink)}
+.pullstat div:first-child{border-left:none}
+.pullstat .v{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:700;color:var(--copper);line-height:1}
+.pullstat .l{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--stone);margin-top:.4rem}
+section.block{padding:3.2rem 0}
+h2.sec{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2.2rem,4.5vw,3.2rem);line-height:1.1;margin-bottom:.5rem}
+.sec-kicker{font-size:.75rem;letter-spacing:.34em;text-transform:uppercase;color:var(--copper);font-weight:700;margin-bottom:.8rem}
+.lede-cols{column-count:2;column-gap:3rem;margin-top:1.5rem}
+.lede-cols p{margin-bottom:1.1rem;color:#3d362a}
+.lede-cols p:first-child::first-letter{font-family:'Cormorant Garamond',serif;font-size:3.4rem;float:left;line-height:.85;padding-right:.5rem;color:var(--copper);font-weight:700}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--ink);border:1px solid var(--ink);margin-top:1.8rem}
+.svc{background:var(--cream);padding:2rem}
+.svc .n{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--copper);letter-spacing:.2em}
+.svc h3{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;margin:.4rem 0 .6rem}
+.svc p{color:#3d362a;font-size:.97rem}
+.svc .pr{display:inline-block;margin-top:1rem;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;border-bottom:2px solid var(--copper)}
+.ed-note{background:var(--ink);color:var(--bone);padding:3rem 0;margin-top:3rem}
+.ed-note .wrap{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:center}
+.ed-note .big{font-family:'Cormorant Garamond',serif;font-size:4rem;color:var(--copper);line-height:1}
+.ed-note p{font-size:1.05rem;color:#cfc6b2;max-width:46rem}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.8rem}
+.gal figure{border:1px solid var(--ink);padding:.6rem;background:var(--cream)}
+.gal img{width:100%;height:280px;object-fit:cover}
+.gal figcaption{font-size:.78rem;color:var(--stone);font-style:italic;padding-top:.5rem}
+.tag{display:inline-block;background:var(--ink);color:var(--bone);font-style:normal;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;padding:.15rem .45rem;margin-right:.4rem}
+.hours{width:100%;border-collapse:collapse;max-width:34rem;margin-top:1rem}
+.hours td{padding:.65rem 0;border-bottom:1px solid var(--ink)}
+.hours td:last-child{text-align:right;font-weight:600}
+.footnote{font-size:.85rem;color:var(--stone);font-style:italic;margin-top:.8rem}
+.page-hero{padding:3rem 0 1rem;border-bottom:1px solid var(--ink)}
+.page-hero h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(2.8rem,6vw,4.4rem)}
+.page-hero p{color:#3d362a;max-width:44rem}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:1.5rem}
+.contact-big{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--copper);text-decoration:none}
+footer.site{border-top:1px solid var(--ink);margin-top:3rem;padding:2.2rem 0;font-size:.85rem;color:var(--stone)}
+footer.site .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2rem}
+footer.site strong{color:var(--ink)}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr}
+  .hero figure img{height:360px}
+  .lede-cols{column-count:1}
+  .svc-grid{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr}
+  .pullstat{grid-template-columns:1fr}
+  .pullstat div{border-left:none;border-top:1px solid var(--ink)}
+  .pullstat div:first-child{border-top:none}
+  .ed-note .wrap{grid-template-columns:1fr}
+  .visit-grid{grid-template-columns:1fr}
+  footer.site .cols{grid-template-columns:1fr}
+}
