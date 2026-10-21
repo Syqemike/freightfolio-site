@@ -62,3 +62,5 @@ footer.site a{color:#EFE6D3}
 .contact-card{border:1px solid var(--line);background:var(--paper);padding:38px;max-width:640px;margin:0 auto;text-align:center}
 .contact-card .big{font-family:'Cormorant Garamond',serif;font-size:34px;margin:14px 0}
 @media(max-width:860px){.hero .grid,.duo,.gallery-grid,.foot-grid{grid-template-columns:1fr}nav.main{display:none}.hero-img::after{display:none}}
+
+.hero-cap{font-size:14px;color:#6b5b45;padding:12px 2px;font-style:italic}
