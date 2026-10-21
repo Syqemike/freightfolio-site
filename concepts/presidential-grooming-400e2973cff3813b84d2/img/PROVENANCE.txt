@@ -1,0 +1,14 @@
+PHOTO PROVENANCE — Presidential Grooming concept site
+Real-photo attempt: image-search for the business returned only same-name shops in
+other cities (ByPresidential, Columbia MO; PresidentialKutzKelly, Huntsville AL).
+A text fetch of https://www.vagaro.com/presidentialgrooming1 confirmed the
+Farmers Branch listing but exposed no photos (JS-rendered page). Quick attempts
+done per instructions; no real business photos used. All photos below are stock
+from Pexels (free to use, https://www.pexels.com/license/), captioned "Stock photo"
+on the page.
+
+photo-1.jpg | https://www.pexels.com/photo/12201170 | stock
+photo-2.jpg | https://www.pexels.com/photo/2076931 | stock
+photo-3.jpg | https://www.pexels.com/photo/4625629 | stock
+photo-4.jpg | https://www.pexels.com/photo/8867488 | stock
+photo-5.jpg | https://www.pexels.com/photo/7518740 | stock

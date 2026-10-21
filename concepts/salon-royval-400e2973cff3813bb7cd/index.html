@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Salon Royval | Chattanooga, TN | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#0f3b3a;
+  --teal2:#0a2b2a;
+  --teal3:#14504e;
+  --brass:#c19a5b;
+  --brass2:#a8854a;
+  --ivory:#faf6ec;
+  --ivory2:#f2ecdd;
+  --ink:#1e2422;
+  --mut:#5d645f;
+  --line:#d8cfb8;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--ivory);color:var(--ink);font-family:"Work Sans",system-ui,sans-serif;line-height:1.65;font-size:17px;}
+a{color:inherit;}
+.wrap{max-width:1140px;margin:0 auto;padding:0 26px;}
+.notice{background:var(--teal2);color:var(--ivory);text-align:center;font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:12px 18px;}
+.notice strong{color:var(--brass);}
+header.site{background:var(--ivory);border-bottom:1px solid var(--line);padding:26px 0;position:sticky;top:0;z-index:20;}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+.wordmark{font-family:"Marcellus",serif;font-size:clamp(30px,4vw,42px);line-height:1;letter-spacing:.06em;color:var(--teal);}
+.wordmark small{display:block;font-family:"Work Sans",sans-serif;font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--brass2);font-weight:600;margin-top:8px;}
+nav.sections{display:flex;gap:4px;flex-wrap:wrap;align-items:center;}
+nav.sections a{text-decoration:none;font-size:13.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:11px 16px;color:var(--teal);}
+nav.sections a:hover{color:var(--brass2);}
+nav.sections a.booknow{background:var(--teal);color:var(--ivory);padding:13px 24px;letter-spacing:.08em;}
+nav.sections a.booknow:hover{background:var(--brass2);color:#fff;}
+.hero{background:var(--teal);color:var(--ivory);position:relative;overflow:hidden;}
+.hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding-top:78px;padding-bottom:78px;position:relative;z-index:1;}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;}}
+.hero::before{content:"";position:absolute;top:0;left:0;width:100%;height:6px;background:linear-gradient(90deg,var(--brass) 0 33%,var(--teal3) 33% 100%);}
+.hero::after{content:"";position:absolute;bottom:-140px;right:-140px;width:420px;height:420px;border:1px solid rgba(193,154,91,.35);border-radius:50%;}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);border-bottom:2px solid var(--brass);padding-bottom:10px;margin-bottom:24px;}
+.hero h1{font-family:"Marcellus",serif;font-weight:400;font-size:clamp(46px,7vw,82px);line-height:1.06;margin-bottom:20px;}
+.hero h1 em{font-style:normal;color:var(--brass);}
+.hero p.dek{font-size:19px;color:#d9d3c2;max-width:500px;margin-bottom:32px;}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;padding:16px 32px;}
+.btn.brass{background:var(--brass);color:var(--teal2);}
+.btn.brass:hover{background:var(--ivory);}
+.btn.ghost{border:2px solid rgba(250,246,236,.5);color:var(--ivory);}
+.btn.ghost:hover{border-color:var(--brass);color:var(--brass);}
+.ratingline{margin-top:22px;font-size:15px;color:#b9b2a0;}
+.ratingline strong{color:var(--ivory);}
+.hero-photo{position:relative;border:1px solid rgba(193,154,91,.5);padding:12px;background:var(--teal2);}
+.hero-photo img{width:100%;height:480px;object-fit:cover;display:block;}
+.hero-photo figcaption{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#b9b2a0;padding:12px 4px 2px;}
+section.block{padding:80px 0;border-bottom:1px solid var(--line);}
+section.block.plain{border-bottom:none;}
+.sec-kicker{font-size:12.5px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--brass2);margin-bottom:12px;}
+.sec-title{font-family:"Marcellus",serif;font-weight:400;font-size:clamp(34px,5vw,56px);line-height:1.1;color:var(--teal);margin-bottom:14px;}
+.sec-intro{max-width:680px;font-size:18px;color:var(--mut);margin-bottom:10px;}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);margin-top:38px;}
+@media(max-width:880px){.serv-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.serv-grid{grid-template-columns:1fr;}}
+.svc{background:var(--ivory);padding:34px 30px;}
+.svc h3{font-family:"Marcellus",serif;font-weight:400;font-size:23px;color:var(--teal);margin-bottom:10px;}
+.svc .ruleline{width:44px;height:2px;background:var(--brass);margin-bottom:14px;}
+.svc p{font-size:15.5px;color:var(--mut);}
+.strip{background:var(--teal2);color:var(--ivory);}
+.strip .sec-title{color:var(--ivory);}
+.strip .sec-intro{color:#c9c2b2;}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px;}
+@media(max-width:900px){.gallery{grid-template-columns:1fr 1fr;}}
+.gitem{border:1px solid rgba(193,154,91,.35);background:var(--teal);}
+.gitem img{width:100%;height:240px;object-fit:cover;display:block;}
+.gitem figcaption{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#b9b2a0;padding:10px 12px;}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;}
+@media(max-width:880px){.two{grid-template-columns:1fr;}}
+.hours-card{border:1px solid var(--line);background:#fff;padding:38px 40px;}
+.hours-card h3{font-family:"Marcellus",serif;font-size:26px;color:var(--teal);margin-bottom:8px;}
+.hours-card .sub{font-size:14px;color:var(--mut);margin-bottom:16px;}
+.hrow{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:16px;}
+.hrow:last-child{border-bottom:none;}
+.hrow .closed{color:var(--brass2);}
+.hrow span:last-child{white-space:nowrap;}
+.book-card{background:var(--teal);color:var(--ivory);padding:44px 42px;position:relative;overflow:hidden;}
+.book-card::after{content:"";position:absolute;bottom:-90px;left:-90px;width:280px;height:280px;border:1px solid rgba(193,154,91,.4);border-radius:50%;}
+.book-card h3{font-family:"Marcellus",serif;font-size:30px;font-weight:400;margin-bottom:12px;position:relative;z-index:1;}
+.book-card p{color:#d9d3c2;margin-bottom:10px;position:relative;z-index:1;}
+.book-card a.phone{color:var(--brass);font-weight:700;font-size:22px;text-decoration:none;position:relative;z-index:1;white-space:nowrap;}
+.book-card .hero-ctas{margin-top:26px;position:relative;z-index:1;}
+footer{background:var(--teal2);color:#c9c2b2;padding:48px 0 36px;font-size:14.5px;}
+footer .wrap{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;}
+footer .disc{max-width:660px;}
+footer .disc strong{color:var(--ivory);}
+footer nav a{color:var(--ivory);text-decoration:none;border-bottom:1px solid var(--brass);margin-right:14px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;}
+img{max-width:100%;}
+</style>
+</head>
+<body>
+<div class="notice"><strong>Design preview.</strong> This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+
+<header class="site">
+  <div class="wrap">
+    <div class="wordmark">Salon Royval<small>Chattanooga, Tennessee</small></div>
+    <nav class="sections" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+      <a class="booknow" href="https://salonroyval.mysalononline.com" target="_blank" rel="noopener">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Luxury salon and barbershop</span>
+      <h1>Polished on the <em>riverfront.</em></h1>
+      <p class="dek">Salon Royval on Riverfront Parkway in Chattanooga. Custom hair color, precision cuts, blowouts and formal styling, hair extensions, plus HydraFacial and microdermabrasion.</p>
+      <div class="hero-ctas">
+        <a class="btn brass" href="https://salonroyval.mysalononline.com" target="_blank" rel="noopener">Book Now</a>
+        <a class="btn ghost" href="#services">Explore services</a>
+      </div>
+      <p class="ratingline"><strong>4.7</strong> from 118 Google reviews</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/photo-1.jpg" alt="Modern salon interior with styling chairs">
+      <figcaption>Stock photo</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="block plain" id="services">
+  <div class="wrap">
+    <div class="sec-kicker">Services</div>
+    <h2 class="sec-title">Hair and skin, one address</h2>
+    <p class="sec-intro">The services offered at Salon Royval. Book through the online portal or call with questions.</p>
+    <div class="serv-grid">
+      <div class="svc"><h3>Custom hair color</h3><div class="ruleline"></div><p>Color designed around you, from subtle dimension to a full transformation.</p></div>
+      <div class="svc"><h3>Precision haircuts</h3><div class="ruleline"></div><p>Tailored cuts for all hair types, including the barbershop side of the salon.</p></div>
+      <div class="svc"><h3>Blowouts and formal styling</h3><div class="ruleline"></div><p>Event-ready blowouts and formal styles for weddings and occasions.</p></div>
+      <div class="svc"><h3>Hair extensions</h3><div class="ruleline"></div><p>Length and volume added by stylists trained in extension work.</p></div>
+      <div class="svc"><h3>Color removal</h3><div class="ruleline"></div><p>Color correction and removal services to reset your base.</p></div>
+      <div class="svc"><h3>HydraFacial and microdermabrasion</h3><div class="ruleline"></div><p>Skin treatments to cleanse, exfoliate, and refresh your complexion.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block strip" id="gallery" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="sec-kicker">Gallery</div>
+    <h2 class="sec-title">The kind of work</h2>
+    <p class="sec-intro">Representative salon photos. These are stock photos, not photos of Salon Royval.</p>
+    <div class="gallery">
+      <figure class="gitem"><img src="img/photo-2.jpg" alt="Stylist working on a client's hair in a salon"><figcaption>Stock photo</figcaption></figure>
+      <figure class="gitem"><img src="img/photo-3.jpg" alt="Client with vivid red custom hair color"><figcaption>Stock photo</figcaption></figure>
+      <figure class="gitem"><img src="img/photo-4.jpg" alt="Barber trimming hair with scissors during a precision cut"><figcaption>Stock photo</figcaption></figure>
+      <figure class="gitem"><img src="img/photo-5.jpg" alt="Client receiving a facial device skin treatment"><figcaption>Stock photo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block plain" id="hours">
+  <div class="wrap">
+    <div class="two">
+      <div class="hours-card">
+        <h3>Salon hours</h3>
+        <p class="sub">Book online through the salon portal, or call ahead.</p>
+        <div class="hrow"><span>Tuesday to Friday</span><span>10:00 AM to 6:00 PM</span></div>
+        <div class="hrow"><span>Saturday</span><span>10:00 AM to 4:00 PM</span></div>
+        <div class="hrow"><span>Sunday</span><span class="closed">Closed</span></div>
+        <div class="hrow"><span>Monday</span><span class="closed">Closed</span></div>
+      </div>
+      <div class="book-card" id="visit">
+        <h3>Book your visit</h3>
+        <p>804 Riverfront Pkwy, Suite 120<br>Chattanooga, TN 37402</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Salon+Royval+804+Riverfront+Pkwy+Suite+120+Chattanooga+TN+37402" target="_blank" rel="noopener" style="color:var(--brass);">Get directions</a></p>
+        <p style="margin-top:14px;">Questions? Call <a class="phone" href="tel:+14237712839">(423) 771-2839</a>.</p>
+        <div class="hero-ctas">
+          <a class="btn brass" href="https://salonroyval.mysalononline.com" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="disc">
+      <strong>Design preview by Freightfolio.</strong> This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Salon Royval. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net" style="color:var(--brass);">freightfolio.net</a>.
+    </div>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

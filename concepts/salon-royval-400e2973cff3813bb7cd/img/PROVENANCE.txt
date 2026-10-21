@@ -1,0 +1,8 @@
+Salon Royval concept site photos. All stock photography from Pexels (licensed for reuse on Pexels).
+Real business photos were attempted via the salonroyval.mysalononline.com booking portal (no extractable image assets), so labeled stock was used per the fallback rule.
+
+photo-1.jpg | https://www.pexels.com/photo/7195805 | stock
+photo-2.jpg | https://www.pexels.com/photo/3993320 | stock
+photo-3.jpg | https://www.pexels.com/photo/6270123 | stock
+photo-4.jpg | https://www.pexels.com/photo/3356170 | stock
+photo-5.jpg | https://www.pexels.com/photo/3865548 | stock

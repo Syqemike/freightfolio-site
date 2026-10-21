@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Don's Barber Shop | Independence, MO | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4ecdc;
+  --paper2:#efe3cb;
+  --ink:#1d1812;
+  --oxblood:#7c2d22;
+  --brass:#b3892f;
+  --line:#1d1812;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.65;font-size:17px;}
+a{color:inherit;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 26px;}
+.notice{background:var(--ink);color:var(--paper);text-align:center;font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;padding:12px 18px;}
+.notice strong{color:var(--brass);}
+.pole{height:12px;background:repeating-linear-gradient(-45deg,var(--oxblood) 0 18px,var(--paper) 18px 36px,var(--ink) 36px 54px,var(--paper) 54px 72px);}
+header.site{border-bottom:3px double var(--ink);padding:26px 0 22px;background:var(--paper);}
+header.site .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+.wordmark{font-family:"Bitter",serif;font-weight:800;font-size:clamp(30px,4.4vw,44px);line-height:1;letter-spacing:.01em;}
+.wordmark .poss{color:var(--oxblood);}
+.tagline{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--oxblood);margin-top:8px;}
+nav.sections{display:flex;gap:10px;flex-wrap:wrap;}
+nav.sections a{text-decoration:none;font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:2px solid var(--ink);padding:9px 16px;background:var(--paper2);border-radius:2px;}
+nav.sections a:hover{background:var(--ink);color:var(--paper);}
+.hero{border-bottom:3px solid var(--ink);background:var(--paper2);}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:0;padding:0;max-width:1180px;}
+.hero-copy{padding:64px 40px 56px 26px;}
+.eyebrow{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--paper);background:var(--oxblood);padding:8px 16px;margin-bottom:24px;}
+.hero h1{font-family:"Bitter",serif;font-weight:800;font-size:clamp(42px,6.4vw,76px);line-height:1.04;margin-bottom:18px;}
+.hero h1 .red{color:var(--oxblood);}
+.hero p.dek{font-size:19px;max-width:480px;margin-bottom:30px;}
+.ticket{display:inline-block;border:3px dashed var(--ink);background:var(--paper);padding:18px 24px;font-family:"IBM Plex Mono",monospace;margin-bottom:30px;transform:rotate(-1.2deg);}
+.ticket .t-label{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--oxblood);font-weight:700;}
+.ticket .t-price{font-size:34px;font-weight:700;margin:4px 0;}
+.ticket .t-sub{font-size:13px;color:#5a4f3f;}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+.btn{display:inline-block;text-decoration:none;font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:15px;letter-spacing:.06em;padding:15px 28px;border:3px solid var(--ink);}
+.btn.solid{background:var(--ink);color:var(--paper);}
+.btn.solid:hover{background:var(--oxblood);border-color:var(--oxblood);}
+.btn.ghost{background:transparent;}
+.btn.ghost:hover{background:var(--paper);}
+.hero-rating{margin-top:22px;font-size:15.5px;}
+.hero-rating strong{font-weight:800;}
+.hero-photo{position:relative;min-height:520px;}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:sepia(.28) contrast(1.04);}
+.hero-photo figcaption{position:absolute;left:0;bottom:0;background:rgba(29,24,18,.86);color:var(--paper);font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;}
+@media(max-width:880px){.hero .wrap{grid-template-columns:1fr;}.hero-copy{padding:48px 26px 40px;}.hero-photo{min-height:340px;position:relative;}.hero-photo img{position:absolute;}}
+section.block{padding:70px 0;border-bottom:2px solid var(--ink);}
+.sec-kicker{font-family:"IBM Plex Mono",monospace;font-size:12.5px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--oxblood);margin-bottom:12px;}
+.sec-title{font-family:"Bitter",serif;font-weight:800;font-size:clamp(30px,4.4vw,50px);line-height:1.08;margin-bottom:16px;}
+.sec-intro{max-width:660px;font-size:18px;margin-bottom:10px;}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;}
+@media(max-width:880px){.two{grid-template-columns:1fr;}}
+.frame{border:3px solid var(--ink);background:var(--paper2);padding:10px;transform:rotate(.8deg);}
+.frame img{width:100%;display:block;filter:sepia(.28) contrast(1.04);}
+.frame figcaption{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:10px 6px 4px;color:#5a4f3f;}
+.frame.alt{transform:rotate(-.8deg);}
+.pricelist{border:3px solid var(--ink);background:var(--paper);}
+.pricelist .pl-head{background:var(--ink);color:var(--paper);font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.22em;text-transform:uppercase;padding:14px 24px;text-align:center;font-weight:700;}
+.pl-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 24px;border-bottom:1px dashed #a89572;font-family:"IBM Plex Mono",monospace;}
+.pl-row:last-child{border-bottom:none;}
+.pl-row .svc{font-weight:700;font-size:17px;}
+.pl-row .dots{flex:1;border-bottom:2px dotted #a89572;transform:translateY(-5px);}
+.pl-row .price{font-weight:700;font-size:19px;color:var(--oxblood);white-space:nowrap;}
+.pl-note{padding:14px 24px;font-family:"IBM Plex Mono",monospace;font-size:13px;color:#5a4f3f;background:var(--paper2);border-top:3px solid var(--ink);}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px;}
+@media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;}}
+.gitem{border:2px solid var(--ink);background:var(--paper2);padding:8px;}
+.gitem img{width:100%;height:220px;object-fit:cover;display:block;filter:sepia(.28) contrast(1.04);}
+.gitem figcaption{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:8px 4px 2px;color:#5a4f3f;}
+.hours{border:3px solid var(--ink);background:var(--ink);color:var(--paper);padding:34px 36px;font-family:"IBM Plex Mono",monospace;}
+.hours h3{font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin-bottom:18px;}
+.hrow{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #453c2e;font-size:15px;}
+.hrow:last-child{border-bottom:none;}
+.hrow .closed{color:#c9a06a;}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;}
+@media(max-width:880px){.visit-grid{grid-template-columns:1fr;}}
+.visit-card{border:3px solid var(--ink);padding:30px;background:var(--paper2);}
+.visit-card h3{font-family:"Bitter",serif;font-size:23px;font-weight:700;margin-bottom:10px;}
+.visit-card p{margin-bottom:8px;}
+.visit-card .phone{font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:20px;color:var(--oxblood);text-decoration:none;}
+.reviewline{border-left:6px solid var(--brass);padding:6px 0 6px 22px;margin-top:26px;font-size:18px;}
+.reviewline strong{font-family:"Bitter",serif;}
+footer{background:var(--ink);color:var(--paper);padding:44px 0 34px;font-size:14.5px;}
+footer .wrap{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;}
+footer .disc{max-width:640px;color:#cfc4ab;}
+footer .disc strong{color:var(--brass);}
+footer nav a{color:var(--paper);text-decoration:none;border-bottom:1px solid var(--brass);margin-right:14px;font-family:"IBM Plex Mono",monospace;font-size:13px;}
+</style>
+</head>
+<body>
+<div class="notice"><strong>Design preview.</strong> This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+<div class="pole" aria-hidden="true"></div>
+
+<header class="site">
+  <div class="wrap">
+    <div>
+      <div class="wordmark">Don<span class="poss">'</span>s Barber Shop</div>
+      <div class="tagline">Independence, Missouri</div>
+    </div>
+    <nav class="sections" aria-label="Sections">
+      <a href="#shop">The Shop</a>
+      <a href="#prices">Prices</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">One chair. One barber. No appointments needed.</span>
+      <h1>Old school cuts at <span class="red">old school prices.</span></h1>
+      <p class="dek">Don's is a one man barbershop on 23rd Street run by Corey, grandson of founder Don. Walk in, take a seat, and get a straight razor finish the way it has always been done.</p>
+      <div class="ticket">
+        <div class="t-label">Haircut</div>
+        <div class="t-price">$12</div>
+        <div class="t-sub">Straight razor shave $10. Cash only.</div>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn solid" href="tel:+18164610712">Call to book</a>
+        <a class="btn ghost" href="#prices">See the price list</a>
+      </div>
+      <p class="hero-rating"><strong>4.9</strong> from 32 Google reviews. Rated 4.8 from 18 reviews on Yelp.</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/photo-1.jpg" alt="Barber trimming a client's hair in the chair">
+      <figcaption>Stock photo</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="block" id="shop">
+  <div class="wrap">
+    <div class="sec-kicker">The shop</div>
+    <h2 class="sec-title">A barbershop the way they used to make them</h2>
+    <div class="two" style="margin-top:30px;">
+      <div>
+        <p class="sec-intro">Corey runs the shop solo, the way his grandfather Don started it. It is a small room, a single chair, and a steady line of regulars who have been coming for years. The reviews mention the vintage interior, the easy conversation, and cuts that hold their shape.</p>
+        <p class="sec-intro" style="margin-top:16px;">There is no online booking and no waiting room crowd. You call, you walk in, and Corey takes care of you.</p>
+      </div>
+      <figure class="frame">
+        <img src="img/photo-3.jpg" alt="Barber at work with a client in the chair">
+        <figcaption>Stock photo</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="prices">
+  <div class="wrap">
+    <div class="sec-kicker">Price list</div>
+    <h2 class="sec-title">Twelve dollars gets you a haircut</h2>
+    <p class="sec-intro">Prices are posted the way they have always been posted. Cash only.</p>
+    <div class="pricelist" style="margin-top:30px;max-width:720px;">
+      <div class="pl-head">Price List</div>
+      <div class="pl-row"><span class="svc">Men's haircut</span><span class="dots"></span><span class="price">$12</span></div>
+      <div class="pl-row"><span class="svc">Straight razor shave</span><span class="dots"></span><span class="price">$10</span></div>
+      <div class="pl-row"><span class="svc">Beard trim</span><span class="dots"></span><span class="price">Ask in shop</span></div>
+      <div class="pl-row"><span class="svc">Neck shave</span><span class="dots"></span><span class="price">Ask in shop</span></div>
+      <div class="pl-note">Cash only. Walk-ins welcome Tuesday through Saturday.</div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="gallery">
+  <div class="wrap">
+    <div class="sec-kicker">In the chair</div>
+    <h2 class="sec-title">The work speaks first</h2>
+    <p class="sec-intro">Representative photos of barbershop work. These are stock photos, not photos of Don's actual shop.</p>
+    <div class="gallery">
+      <figure class="gitem"><img src="img/photo-2.jpg" alt="Barber fading a client's hair"><figcaption>Stock photo</figcaption></figure>
+      <figure class="gitem"><img src="img/photo-4.jpg" alt="Straight razor shave in progress"><figcaption>Stock photo</figcaption></figure>
+      <figure class="gitem"><img src="img/photo-5.jpg" alt="Barber finishing a haircut"><figcaption>Stock photo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="hours">
+  <div class="wrap">
+    <div class="sec-kicker">Hours</div>
+    <h2 class="sec-title">When the chair is open</h2>
+    <div class="two" style="margin-top:30px;">
+      <div class="hours">
+        <h3>Shop hours</h3>
+        <div class="hrow"><span>Tuesday to Friday</span><span>7:30 AM to 5:00 PM</span></div>
+        <div class="hrow"><span>Saturday</span><span>7:30 AM to 2:00 PM</span></div>
+        <div class="hrow"><span>Sunday</span><span class="closed">Closed</span></div>
+        <div class="hrow"><span>Monday</span><span class="closed">Closed</span></div>
+      </div>
+      <figure class="frame alt">
+        <img src="img/photo-1.jpg" alt="Barber trimming hair in the shop">
+        <figcaption>Stock photo</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit">
+  <div class="wrap">
+    <div class="sec-kicker">Visit</div>
+    <h2 class="sec-title">Find the shop</h2>
+    <div class="visit-grid" style="margin-top:30px;">
+      <div class="visit-card">
+        <h3>Address</h3>
+        <p>11511 East 23rd St S<br>Independence, MO</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Don%27s+Barber+Shop+11511+East+23rd+St+S+Independence+MO" target="_blank" rel="noopener">Get directions</a></p>
+      </div>
+      <div class="visit-card">
+        <h3>Call the shop</h3>
+        <p>One man, one phone. Call ahead or just walk in.</p>
+        <p><a class="phone" href="tel:+18164610712">(816) 461-0712</a></p>
+        <p style="margin-top:14px;"><a class="btn solid" href="tel:+18164610712">Call to book</a></p>
+      </div>
+    </div>
+    <div class="reviewline">
+      <strong>What regulars say:</strong> the vintage interior, the easy conversation in the chair, and cuts that hold their shape.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="disc">
+      <strong>Design preview by Freightfolio.</strong> This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Don's Barber Shop. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net" style="color:var(--brass);">freightfolio.net</a>.
+    </div>
+    <nav aria-label="Sections">
+      <a href="#shop">The Shop</a>
+      <a href="#prices">Prices</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+Soothing Rose Massage Therapy — photo provenance
+Business: Soothing Rose Massage Therapy, 2092 Woodruff Rd, Suite B, Greenville, SC 29607
+Real-photo attempt: one quick text fetch of https://www.facebook.com/soothingrosemassage/ on 2026-10-21
+  returned only profile metadata (professional account, 535 followers) and no usable photos.
+  Facebook photo access requires a logged-in browser session (not available to this builder).
+  Fell back to labeled stock.
+All photos below are STOCK (Pexels, free license), honestly captioned on the page as "Stock photo."
+
+photo-1.jpg — Massage therapy session.
+  Source: https://images.pexels.com/photos/3865797/pexels-photo-3865797.jpeg (Pexels photo 3865797)
+  Stock. Caption on page: "A massage session. Stock photo."
+
+photo-2.jpg — Massage therapy in progress.
+  Source: https://images.pexels.com/photos/6628601/pexels-photo-6628601.jpeg (Pexels photo 6628601)
+  Stock. Caption on page: "A session in progress. Stock photo."
+
+photo-3.jpg — Warm stones used in massage.
+  Source: https://images.pexels.com/photos/6629521/pexels-photo-6629521.jpeg (Pexels photo 6629521)
+  Stock. Caption on page: "Warm stone detail. Stock photo."
+
+photo-4.jpg — Candles glowing in a spa setting.
+  Source: https://images.pexels.com/photos/3188/love-romantic-bath-candlelight.jpg (Pexels photo 3188)
+  Stock. Caption on page: "Candles in a spa setting. Stock photo."
+
+photo-5.jpg — Relaxing massage session.
+  Source: https://images.pexels.com/photos/3865799/pexels-photo-3865799.jpeg (Pexels photo 3865799)
+  Stock. Caption on page: "A relaxing session. Stock photo."
