@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Above Average Barber Cave | Fort Wayne Barbershop | Website Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#14181f;
+    --panel:#1d232c;
+    --line:#2e3642;
+    --amber:#f5a524;
+    --amber-dark:#d98a12;
+    --ink:#f2f4f7;
+    --muted:#aeb6c2;
+    --display:'Oswald',sans-serif;
+    --body:'Archivo',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  section[id],header[id]{scroll-margin-top:76px}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+  /* Disclosure bar */
+  .disclosure{background:#0d1016;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+  .disclosure .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:10px;padding-bottom:10px;gap:12px;flex-wrap:wrap}
+  .disclosure strong{color:var(--amber);font-family:var(--display);font-weight:600;letter-spacing:.22em}
+  .disclosure span:last-child{font-family:var(--body);letter-spacing:.14em}
+
+  /* Nav */
+  nav{position:sticky;top:0;z-index:50;background:rgba(20,24,31,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px;gap:16px}
+  .wordmark{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+  .wordmark em{font-style:normal;color:var(--amber)}
+  .navlinks{display:flex;align-items:center;gap:28px;list-style:none}
+  .navlinks a{text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .navlinks a:hover{color:var(--ink)}
+  .btn{display:inline-block;font-family:var(--display);font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;background:var(--amber);color:#14181f;padding:14px 30px;border:none;cursor:pointer;font-size:16px;transition:background .2s}
+  .btn:hover{background:var(--amber-dark)}
+  .btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--line)}
+  .btn.ghost:hover{border-color:var(--amber);color:var(--amber)}
+  .btn.small{padding:10px 20px;font-size:14px}
+
+  /* Hero */
+  .hero{display:grid;grid-template-columns:1fr 1fr;min-height:640px;border-bottom:1px solid var(--line)}
+  .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:72px 48px 72px 0;max-width:640px;justify-self:end;width:100%}
+  .eyebrow{font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:var(--amber);margin-bottom:20px}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(52px,6vw,88px);line-height:1.02;text-transform:uppercase;letter-spacing:.01em;margin-bottom:24px}
+  h1 .hl{color:var(--amber)}
+  .hero-sub{font-size:18px;color:var(--muted);max-width:46ch;margin-bottom:36px}
+  .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+  .hero-hours{font-size:14px;color:var(--muted);letter-spacing:.06em;border-top:1px solid var(--line);padding-top:20px;max-width:46ch}
+  .hero-hours strong{color:var(--ink);font-weight:600}
+  .hero-photo{position:relative;overflow:hidden;min-height:420px}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+  .hero-photo .tag{position:absolute;left:24px;bottom:24px;background:rgba(13,16,22,.85);border:1px solid var(--line);padding:10px 16px;font-size:13px;letter-spacing:.04em;color:var(--muted)}
+  .hero-photo .tag strong{color:var(--ink);font-weight:600}
+
+  /* Rating band */
+  .rating-band{background:var(--amber);color:#14181f;text-align:center;padding:20px 24px}
+  .rating-band p{font-family:var(--display);font-weight:600;font-size:20px;letter-spacing:.1em;text-transform:uppercase}
+
+  /* Sections */
+  section{padding:96px 0}
+  .sec-head{margin-bottom:52px}
+  .sec-head h2{font-family:var(--display);font-weight:700;font-size:clamp(36px,4vw,56px);text-transform:uppercase;letter-spacing:.01em;margin-bottom:12px}
+  .sec-head p{color:var(--muted);max-width:62ch;font-size:17px}
+
+  /* Ticket stub cards */
+  .tickets{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+  .ticket{background:var(--panel);border:1px solid var(--line);display:flex;min-height:300px;position:relative}
+  .ticket .stub{flex:0 0 64px;display:flex;align-items:center;justify-content:center;position:relative}
+  .ticket .stub span{font-family:var(--display);font-weight:700;font-size:26px;color:var(--amber);transform:rotate(-90deg);letter-spacing:.15em}
+  .ticket .perf{flex:0 0 0;border-left:2px dashed var(--line);position:relative}
+  .ticket .notch{position:absolute;left:-9px;width:18px;height:18px;border-radius:50%;background:var(--bg);border:1px solid var(--line)}
+  .ticket .notch.top{top:-10px}
+  .ticket .notch.bottom{bottom:-10px}
+  .ticket .main{padding:26px 22px;display:flex;flex-direction:column;flex:1}
+  .ticket h3{font-family:var(--display);font-weight:600;font-size:22px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px}
+  .ticket p{font-size:14px;color:var(--muted);margin-bottom:18px}
+  .ticket .foot{margin-top:auto;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);font-weight:600}
+  .services-note{margin-top:28px;color:var(--muted);font-size:15px;border-left:3px solid var(--amber);padding-left:18px;max-width:70ch}
+
+  /* Gallery */
+  .gallery-band{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .shot{border:1px solid var(--line);background:var(--bg)}
+  .shot img{width:100%;aspect-ratio:1/1;object-fit:cover}
+  .shot figcaption{padding:14px 16px;font-size:13px;color:var(--muted);line-height:1.5}
+  .shot figcaption strong{display:block;color:var(--ink);font-weight:600;font-size:14px;margin-bottom:4px}
+
+  /* Family block */
+  .family{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);background:var(--panel)}
+  .family-copy{padding:64px;display:flex;flex-direction:column;justify-content:center}
+  .family-copy blockquote{font-family:var(--display);font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1.25;text-transform:uppercase;margin-bottom:20px}
+  .family-copy blockquote .hl{color:var(--amber)}
+  .family-copy p{color:var(--muted);font-size:17px}
+  .family-photo img{width:100%;height:100%;object-fit:cover;min-height:380px}
+
+  /* Barbers */
+  .barbers{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .barber{background:var(--panel);border:1px solid var(--line);padding:44px}
+  .barber .initial{font-family:var(--display);font-weight:700;font-size:64px;color:var(--amber);line-height:1;margin-bottom:16px}
+  .barber h3{font-family:var(--display);font-weight:600;font-size:30px;text-transform:uppercase;margin-bottom:12px}
+  .barber p{color:var(--muted);font-size:16px;margin-bottom:24px;max-width:40ch}
+
+  /* Hours & location */
+  .hl-block{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);background:var(--panel)}
+  .hours{padding:56px}
+  .hours h3,.visit h3{font-family:var(--display);font-weight:600;font-size:24px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:24px}
+  .hour-row{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .hour-row:last-child{border-bottom:none}
+  .hour-row .day{font-weight:600}
+  .hour-row .time{color:var(--muted);font-family:var(--display);letter-spacing:.06em}
+  .hour-row.closed .day{color:var(--muted)}
+  .hour-row.today{background:rgba(245,165,36,.06)}
+  .visit{padding:56px;border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+  .visit address{font-style:normal;font-size:20px;font-weight:600;margin-bottom:8px}
+  .visit .phone{font-family:var(--display);font-size:28px;font-weight:600;letter-spacing:.04em;color:var(--amber);text-decoration:none;margin-bottom:28px;display:inline-block}
+  .visit .dir{display:inline-block;font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;border-bottom:2px solid var(--amber);padding-bottom:4px;width:fit-content}
+
+  /* Contact band */
+  .contact-band{text-align:center;background:#0d1016;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .contact-band h2{font-family:var(--display);font-weight:700;font-size:clamp(40px,5vw,72px);text-transform:uppercase;margin-bottom:16px}
+  .contact-band p{color:var(--muted);font-size:18px;margin-bottom:36px}
+  .contact-band .hero-ctas{justify-content:center;margin-bottom:0}
+
+  /* Footer */
+  footer{background:#0d1016;padding:56px 0 40px;font-size:14px;color:var(--muted)}
+  footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  footer h4{font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+  footer p{margin-bottom:10px;max-width:52ch}
+  footer a{color:var(--amber);text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  .fine{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px}
+
+  /* Responsive */
+  @media(max-width:1080px){
+    .tickets{grid-template-columns:repeat(2,1fr)}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:860px){
+    .hero{grid-template-columns:1fr;min-height:0}
+    .hero-copy{padding:56px 24px;justify-self:stretch;max-width:none}
+    .hero-photo{min-height:380px;position:relative}
+    .hero-photo img{position:relative;height:380px}
+    .family{grid-template-columns:1fr}
+    .barbers{grid-template-columns:1fr}
+    .hl-block{grid-template-columns:1fr}
+    .visit{border-left:none;border-top:1px solid var(--line)}
+    .navlinks li:not(:last-child){display:none}
+    .hours,.visit,.family-copy,.barber{padding:36px 24px}
+    .wordmark{font-size:15px}
+    section{padding:64px 0}
+    footer .cols{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">
+  <div class="wrap">
+    <strong>Website Concept</strong>
+    <span>Design preview prepared by Freightfolio</span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="wordmark" href="#top">Above Average <em>Barber Cave</em></a>
+    <ul class="navlinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#barbers">Barbers</a></li>
+      <li><a href="#hours">Hours &amp; Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn small" href="https://book.thecut.co/DavidTurner" target="_blank" rel="noopener">Book Now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-copy">
+    <p class="eyebrow">Barber Shop, Fort Wayne, IN</p>
+    <h1>Average <span class="hl">ain&rsquo;t</span> acceptable.</h1>
+    <p class="hero-sub">Above Average Barber Cave is a family friendly barber shop at 1017 E Pontiac St in Fort Wayne. Walk-ins are welcome. Appointments are recommended.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="https://book.thecut.co/DavidTurner" target="_blank" rel="noopener">Book Now</a>
+      <a class="btn ghost" href="tel:+12604427937">Call to book</a>
+    </div>
+    <p class="hero-hours"><strong>Open Tuesday through Saturday.</strong> Closed Sunday and Monday. Call (260) 442-7937 with questions.</p>
+  </div>
+  <div class="hero-photo">
+    <img src="img/cut4.jpg" alt="Client haircut with waves and a sharp lineup by David Turner, via his theCut profile">
+    <div class="tag"><strong>Cut by Dave.</strong> Photo from David Turner&rsquo;s public theCut profile.</div>
+  </div>
+</header>
+
+<div class="rating-band">
+  <div class="wrap">
+    <p>Rated 4.9 from 19 Google reviews</p>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Services</p>
+      <h2>Pick your cut</h2>
+      <p>Haircuts, fades, lineups, beard work, and kids&rsquo; cuts, done in the shop by Dave or Abdul. Walk-ins are welcome. Appointments are recommended.</p>
+    </div>
+    <div class="tickets">
+      <div class="ticket">
+        <div class="stub"><span>01</span></div>
+        <div class="perf"><span class="notch top"></span><span class="notch bottom"></span></div>
+        <div class="main">
+          <h3>Haircuts</h3>
+          <p>A full cut, finished clean and sharp.</p>
+          <div class="foot">Prices not listed online</div>
+        </div>
+      </div>
+      <div class="ticket">
+        <div class="stub"><span>02</span></div>
+        <div class="perf"><span class="notch top"></span><span class="notch bottom"></span></div>
+        <div class="main">
+          <h3>Fades</h3>
+          <p>Skin fades and tapers, blended smooth.</p>
+          <div class="foot">Prices not listed online</div>
+        </div>
+      </div>
+      <div class="ticket">
+        <div class="stub"><span>03</span></div>
+        <div class="perf"><span class="notch top"></span><span class="notch bottom"></span></div>
+        <div class="main">
+          <h3>Lineups / Edge-ups</h3>
+          <p>Crisp lines on the hairline and around the beard.</p>
+          <div class="foot">Prices not listed online</div>
+        </div>
+      </div>
+      <div class="ticket">
+        <div class="stub"><span>04</span></div>
+        <div class="perf"><span class="notch top"></span><span class="notch bottom"></span></div>
+        <div class="main">
+          <h3>Beard Shaping</h3>
+          <p>Shape, line, and detail work for the beard.</p>
+          <div class="foot">Prices not listed online</div>
+        </div>
+      </div>
+      <div class="ticket">
+        <div class="stub"><span>05</span></div>
+        <div class="perf"><span class="notch top"></span><span class="notch bottom"></span></div>
+        <div class="main">
+          <h3>Kids&rsquo; Cuts</h3>
+          <p>Cuts for young clients. The shop is family friendly.</p>
+          <div class="foot">Prices not listed online</div>
+        </div>
+      </div>
+    </div>
+    <p class="services-note">Prices are not published online. Call (260) 442-7937 or book through theCut to ask about pricing for your service.</p>
+  </div>
+</section>
+
+<section class="gallery-band" id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Client work</p>
+      <h2>Fresh off the chair</h2>
+      <p>Real cuts on real clients, posted by David Turner on his public theCut profile.</p>
+    </div>
+    <div class="gallery">
+      <figure class="shot">
+        <img src="img/cut1.jpg" alt="Client with a short crop cut and shaped beard by David Turner, via his theCut profile">
+        <figcaption><strong>Short crop, shaped beard</strong>Client cut by David Turner, via his theCut profile.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/cut2.jpg" alt="Client with a curly afro and full beard by David Turner, via his theCut profile">
+        <figcaption><strong>Afro, full beard</strong>Client cut by David Turner, via his theCut profile.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/cut5.jpg" alt="Client with a low cut and beard line up by David Turner, via his theCut profile">
+        <figcaption><strong>Low cut, beard line up</strong>Client cut by David Turner, via his theCut profile.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/cut7.jpg" alt="Young client with a curly top cut by David Turner, via his theCut profile">
+        <figcaption><strong>Curly top</strong>Client cut by David Turner, via his theCut profile.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="family">
+      <div class="family-copy">
+        <p class="eyebrow">The shop</p>
+        <blockquote>&ldquo;Above average beauty and barbershop is a family friendly establishment where <span class="hl">average ain&rsquo;t acceptable!</span>&rdquo;</blockquote>
+        <p>Bring the kids. The Cave keeps a family friendly shop, and every chair holds the same standard.</p>
+      </div>
+      <div class="family-photo">
+        <img src="img/cut3.jpg" alt="A client of David Turner with his child, photo via David Turner's theCut profile">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="barbers">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">The barbers</p>
+      <h2>Two chairs, one standard.</h2>
+    </div>
+    <div class="barbers">
+      <div class="barber">
+        <div class="initial">D</div>
+        <h3>David Turner (Dave)</h3>
+        <p>Book online with Dave through his verified theCut booking page.</p>
+        <a class="btn" href="https://book.thecut.co/DavidTurner" target="_blank" rel="noopener">Book with Dave</a>
+      </div>
+      <div class="barber">
+        <div class="initial">A</div>
+        <h3>Abdul</h3>
+        <p>Call the shop to reach Abdul or ask about walk-in availability.</p>
+        <a class="btn ghost" href="tel:+12604427937">Call the shop</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Find us</p>
+      <h2>Hours &amp; location</h2>
+    </div>
+    <div class="hl-block">
+      <div class="hours">
+        <h3>Shop hours</h3>
+        <div class="hour-row closed"><span class="day">Monday</span><span class="time">Closed</span></div>
+        <div class="hour-row"><span class="day">Tuesday</span><span class="time">9:00 AM to 7:00 PM</span></div>
+        <div class="hour-row"><span class="day">Wednesday</span><span class="time">9:00 AM to 5:00 PM</span></div>
+        <div class="hour-row"><span class="day">Thursday</span><span class="time">9:00 AM to 7:00 PM</span></div>
+        <div class="hour-row"><span class="day">Friday</span><span class="time">9:00 AM to 7:00 PM</span></div>
+        <div class="hour-row"><span class="day">Saturday</span><span class="time">9:00 AM to 7:00 PM</span></div>
+        <div class="hour-row closed"><span class="day">Sunday</span><span class="time">Closed</span></div>
+      </div>
+      <div class="visit">
+        <h3>Visit the Cave</h3>
+        <address>1017 E Pontiac St<br>Fort Wayne, IN 46806</address>
+        <a class="phone" href="tel:+12604427937">(260) 442-7937</a>
+        <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=1017+E+Pontiac+St+Fort+Wayne+IN+46806" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-band" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Ready when you are</p>
+    <h2>Get in the chair</h2>
+    <p>Book online with Dave or call the shop. Walk-ins are welcome. Appointments are recommended.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="https://book.thecut.co/DavidTurner" target="_blank" rel="noopener">Book Now</a>
+      <a class="btn ghost" href="tel:+12604427937">Call to book</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Above Average Barber Cave</h4>
+        <p>This is a design preview prepared by Freightfolio. It is not the official website of Above Average Barber Cave.</p>
+        <p>Real client photos are from David Turner&rsquo;s public theCut booking profile (book.thecut.co/DavidTurner).</p>
+        <p>Review source: Google reviews.</p>
+        <p>Concept prepared October 2026.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>1017 E Pontiac St<br>Fort Wayne, IN 46806</p>
+        <p><a href="tel:+12604427937">(260) 442-7937</a></p>
+      </div>
+      <div>
+        <h4>Book</h4>
+        <p><a href="https://book.thecut.co/DavidTurner" target="_blank" rel="noopener">book.thecut.co/DavidTurner</a></p>
+        <p><a href="#top">Back to top</a></p>
+      </div>
+    </div>
+    <div class="fine">
+      <span>Design preview only. Not the official site.</span>
+      <span>Concept prepared October 2026.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

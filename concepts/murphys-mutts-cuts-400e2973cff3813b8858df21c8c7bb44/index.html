@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Murphy's Mutts and Cuts | Pet Grooming on Cherokee Street, St. Louis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brick:#b0492f; --green:#2e5b3e; --cream:#f8f1e3; --cream2:#f0e4cd; --ink:#2b2018; --white:#fffdf7;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+.disclosure{background:var(--ink);color:var(--cream);text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:.65rem 1rem}
+.disclosure strong{color:#e8b64c}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.5rem}
+/* sign header */
+.signhead{background:var(--brick);padding:2rem 1rem 1.8rem;text-align:center;border-bottom:6px solid var(--green)}
+.signhead .sign{display:inline-block;background:var(--white);border:3px solid var(--ink);border-radius:10px;padding:1rem 2.6rem;box-shadow:0 6px 0 rgba(0,0,0,.18)}
+.signhead h1{font-family:'Zilla Slab',serif;font-weight:700;font-size:2.5rem;color:var(--ink);line-height:1.1}
+.signhead h1 .amp{color:var(--brick)}
+.signhead p{font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:.78rem;color:var(--green);margin-top:.4rem}
+/* nav */
+nav.sections{position:sticky;top:0;z-index:50;background:var(--green)}
+nav.sections .row{max-width:1120px;margin:0 auto;display:flex;justify-content:center;overflow-x:auto}
+nav.sections a{color:var(--cream);text-decoration:none;font-weight:700;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;padding:.95rem 1.4rem;white-space:nowrap}
+nav.sections a:hover{background:rgba(248,241,227,.15)}
+/* hero */
+.hero{background:var(--white);padding:3.5rem 0;border-bottom:1px solid #e3d4b6}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.hero img{width:100%;height:440px;object-fit:cover;border-radius:10px;display:block;border:3px solid var(--ink)}
+figcaption{font-size:.78rem;color:#7a6f5c;font-style:italic;margin-top:.55rem}
+.kicker{font-weight:700;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--brick);margin-bottom:.9rem}
+.hero h2{font-family:'Zilla Slab',serif;font-size:2.7rem;line-height:1.12;color:var(--ink);margin-bottom:1rem;font-weight:600}
+.hero p.lede{font-size:1.1rem;color:#4c4237;margin-bottom:1.6rem;max-width:28rem}
+.cta-row{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:1.2rem}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:.95rem 1.7rem;border-radius:999px;transition:transform .15s ease}
+.btn-solid{background:var(--green);color:var(--cream)}
+.btn-solid:hover{transform:translateY(-2px);background:#25492f}
+.btn-line{border:2px solid var(--brick);color:var(--brick)}
+.btn-line:hover{background:var(--brick);color:var(--cream)}
+.rating-line{font-size:.95rem;color:#6b5f4e}
+.rating-line strong{color:var(--brick);font-size:1.05rem}
+/* welcome band */
+.band{background:var(--green);color:var(--cream);padding:0}
+.band-grid{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.band img{width:100%;height:100%;min-height:340px;object-fit:cover;display:block}
+.band .txt{padding:3.5rem 3rem;align-self:center}
+.band h2{font-family:'Zilla Slab',serif;font-size:2.1rem;margin-bottom:1rem;font-weight:600}
+.band p{color:#e6ddc6;margin-bottom:1rem;max-width:26rem}
+/* sections */
+section.block{padding:4rem 0}
+.section-title{font-family:'Zilla Slab',serif;font-size:2.1rem;color:var(--ink);font-weight:600;margin-bottom:.4rem}
+.section-sub{color:#6b5f4e;margin-bottom:2.4rem;max-width:40rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.card{background:var(--white);border-radius:10px;padding:1.8rem;border:2px solid #e3d4b6;border-top:6px solid var(--brick)}
+.card h3{font-family:'Zilla Slab',serif;font-size:1.35rem;margin-bottom:.5rem;color:var(--ink)}
+.card p{font-size:.98rem;color:#5c5245}
+/* missy */
+.missy{background:var(--cream2);border-top:1px solid #e3d4b6;border-bottom:1px solid #e3d4b6}
+.missy-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:3rem;align-items:center}
+.missy img{width:100%;height:400px;object-fit:cover;border-radius:10px;display:block;border:3px solid var(--ink)}
+.badge-line{display:inline-block;background:var(--brick);color:var(--cream);font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:.45rem 1rem;border-radius:999px;margin-bottom:1rem}
+/* essentials */
+.ess-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+.ess-grid img{width:100%;height:380px;object-fit:cover;border-radius:10px;display:block;border:3px solid var(--ink)}
+.ess-list{list-style:none;margin-top:1.2rem}
+.ess-list li{padding:.7rem 0;border-bottom:1px dashed #d3c2a0;font-weight:600;color:var(--ink)}
+/* visit the block */
+.visit{background:var(--ink);color:var(--cream)}
+.visit .section-title{color:var(--cream)}
+.visit .section-sub{color:#c9bda4}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.visit img{width:100%;height:320px;object-fit:cover;border-radius:10px;display:block;border:3px solid var(--brick)}
+.hours{width:100%;border-collapse:collapse;background:rgba(248,241,227,.06);border-radius:10px;overflow:hidden;margin-bottom:1.6rem}
+.hours td{padding:.8rem 1.2rem;border-bottom:1px solid rgba(248,241,227,.12);font-size:1rem}
+.hours tr:last-child td{border-bottom:none}
+.hours td:first-child{font-weight:700;color:#e8b64c}
+.hours td:last-child{text-align:right}
+.addr{font-size:1.1rem;margin-bottom:1.2rem}
+.addr strong{font-family:'Zilla Slab',serif;font-size:1.3rem}
+.visit .phone{font-family:'Zilla Slab',serif;font-size:1.6rem;color:#e8b64c;text-decoration:none;font-weight:700}
+.visit .phone:hover{text-decoration:underline}
+footer{background:#1d150e;color:#a89a80;padding:3rem 0 2.5rem;font-size:.88rem}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+footer h5{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:#e8b64c;margin-bottom:.8rem}
+footer p{margin-bottom:.5rem}
+footer a{color:var(--cream)}
+.fine{border-top:1px solid rgba(248,241,227,.12);padding-top:1.4rem;font-size:.78rem}
+@media(max-width:820px){
+  .hero-grid,.band-grid,.missy-grid,.ess-grid,.visit-grid{grid-template-columns:1fr}
+  .hero h2{font-size:2.1rem}
+  .hero img,.missy img,.ess-grid img{height:300px}
+  .band img{min-height:240px}
+  .band .txt{padding:2.2rem 1.5rem}
+  .cards{grid-template-columns:1fr}
+  .signhead h1{font-size:1.8rem}
+  footer .cols{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Website Concept</strong> &nbsp;·&nbsp; a design preview prepared by Freightfolio. This is not the official website of Murphy's Mutts and Cuts.</div>
+
+<div class="signhead">
+  <div class="sign">
+    <h1>Murphy's Mutts <span class="amp">&amp;</span> Cuts</h1>
+    <p>Pet grooming · Cherokee Street</p>
+  </div>
+</div>
+
+<nav class="sections" aria-label="Sections">
+  <div class="row">
+    <a href="#grooming">Grooming</a>
+    <a href="#missy">Missy</a>
+    <a href="#essentials">Essentials</a>
+    <a href="#visit">Visit the Block</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <figure style="margin:0">
+      <img src="img/murphys-storefront.jpg" alt="The Murphy's Mutts and Cuts storefront with blue doors and windows on Cherokee Street">
+      <figcaption>The shop at 2307 Cherokee Street. Photo by R.J. Hartbeck, via the Cherokee Street neighbor guide.</figcaption>
+    </figure>
+    <div>
+      <p class="kicker">The corner shop for clean dogs</p>
+      <h2>Baths, trims, and everything your mutt needs.</h2>
+      <p class="lede">Murphy's Mutts and Cuts is a women-owned grooming shop on Cherokee Street in St. Louis. Full-service grooming plus pet essentials like treats and leashes, all on one friendly block.</p>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="tel:+13147713338">Call to book</a>
+        <a class="btn btn-line" href="#visit">Visit the block</a>
+      </div>
+      <p class="rating-line"><strong>4.9</strong> from 46 Google reviews</p>
+    </div>
+  </div>
+</section>
+
+<div class="band" id="grooming">
+  <div class="band-grid">
+    <img src="img/murphy-hero.jpg" alt="Two happy dogs running together at sunset">
+    <div class="txt">
+      <h2>Full-service grooming</h2>
+      <p>Baths, trims, and more. Bring your dog in, and take them home clean and trimmed.</p>
+      <p>One shop, one block, one phone call. That is the whole process.</p>
+      <div class="cta-row" style="margin:1.4rem 0 0">
+        <a class="btn btn-solid" style="background:var(--cream);color:var(--green)" href="tel:+13147713338">Call to book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    <h2 class="section-title">What the shop does</h2>
+    <p class="section-sub">Grooming first, with the everyday supplies to match.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Baths</h3>
+        <p>A proper wash and dry that leaves coats soft and clean.</p>
+      </div>
+      <div class="card">
+        <h3>Trims</h3>
+        <p>Trimming and shaping for your dog.</p>
+      </div>
+      <div class="card">
+        <h3>And more</h3>
+        <p>Ask about the rest of the grooming menu when you call.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block missy" id="missy">
+  <div class="wrap missy-grid">
+    <div>
+      <span class="badge-line">Women-owned</span>
+      <h2 class="section-title">Meet Missy</h2>
+      <p class="section-sub" style="margin-bottom:1.2rem">Reviews name Missy, one of the groomers at Murphy's Mutts and Cuts. Customers describe her as the best, and say their dogs come home looking excellent.</p>
+      <p style="color:#5c5245">Murphy's Mutts and Cuts is a women-owned business on Cherokee Street. The shop treats neighborhood dogs like family, and the reviews show it.</p>
+    </div>
+    <figure style="margin:0">
+      <img src="img/murphy-puppy.jpg" alt="A golden retriever puppy holding a tulip">
+      <figcaption>Stock photo.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="essentials">
+  <div class="wrap ess-grid">
+    <figure style="margin:0">
+      <img src="img/murphy-happy.jpg" alt="A happy dog at the beach">
+      <figcaption>Stock photo.</figcaption>
+    </figure>
+    <div>
+      <p class="kicker">In the shop</p>
+      <h2 class="section-title">Pet essentials</h2>
+      <p class="section-sub" style="margin-bottom:0">Beyond grooming, the shop stocks everyday needs for your dog:</p>
+      <ul class="ess-list">
+        <li>Treats</li>
+        <li>Leashes</li>
+        <li>More pet supplies in store</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block visit" id="visit">
+  <div class="wrap">
+    <h2 class="section-title">Visit the block</h2>
+    <p class="section-sub">Find the blue storefront on Cherokee Street.</p>
+    <div class="visit-grid">
+      <figure style="margin:0">
+        <img src="img/murphy-corgi.jpg" alt="A corgi puppy sitting against an orange background">
+        <figcaption style="color:#a89a80">Stock photo.</figcaption>
+      </figure>
+      <div>
+        <p class="addr"><strong>Murphy's Mutts and Cuts</strong><br>2307 Cherokee St<br>St Louis, MO</p>
+        <p style="margin-bottom:1.2rem"><a class="phone" href="tel:+13147713338">(314) 771-3338</a></p>
+        <table class="hours">
+          <tr><td>Tuesday</td><td>9:00 AM to 5:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>9:00 AM to 5:00 PM</td></tr>
+          <tr><td>Thursday</td><td>9:00 AM to 5:00 PM</td></tr>
+          <tr><td>Friday</td><td>9:00 AM to 5:00 PM</td></tr>
+          <tr><td>Saturday</td><td>9:00 AM to 5:00 PM</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+          <tr><td>Monday</td><td>Closed</td></tr>
+        </table>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="tel:+13147713338">Call to book</a>
+          <a class="btn btn-line" style="border-color:#e8b64c;color:#e8b64c" href="https://www.google.com/maps/search/?api=1&amp;query=2307+Cherokee+St+St+Louis+MO">Get directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h5>Murphy's Mutts and Cuts</h5>
+        <p>2307 Cherokee St, St Louis, MO</p>
+        <p><a href="tel:+13147713338">(314) 771-3338</a></p>
+      </div>
+      <div>
+        <h5>About this page</h5>
+        <p>This is a website concept prepared by Freightfolio in October 2026. It is a design preview, not the official website of Murphy's Mutts and Cuts.</p>
+      </div>
+      <div>
+        <h5>Photos and reviews</h5>
+        <p>Storefront photo: the actual shop, by R.J. Hartbeck via the Cherokee Street neighbor guide. All other photos on this page are stock photos.</p>
+        <p>Review rating cited on this page: Google.</p>
+      </div>
+    </div>
+    <p class="fine">Concept prepared October 2026. Hours and services shown as researched from public listings.</p>
+  </div>
+</footer>
+</body>
+</html>

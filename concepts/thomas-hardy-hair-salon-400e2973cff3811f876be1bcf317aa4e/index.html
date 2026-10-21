@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Thomas Hardy Hair Salon | Ogden, UT | Website Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#f7f3ea;
+    --ink:#14120e;
+    --brass:#a8832f;
+    --warm:#5c564a;
+    --line:#d9cfbb;
+    --card:#fffdf7;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:'Playfair Display',serif;font-weight:600;line-height:1.15;letter-spacing:.01em;}
+  img{display:block;max-width:100%;}
+  a{color:inherit;}
+
+  .disclosure{background:var(--ink);color:#e9e2d2;text-align:center;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;padding:.6rem 1rem;}
+  .disclosure strong{color:var(--brass);font-weight:600;}
+
+  .masthead{text-align:center;padding:2.6rem 1.2rem 1.4rem;}
+  .masthead .eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--brass);margin-bottom:.9rem;}
+  .masthead h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:700;}
+  .masthead .addr{margin-top:.8rem;color:var(--warm);font-size:.95rem;letter-spacing:.06em;}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(247,243,234,.96);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  nav ul{list-style:none;display:flex;justify-content:center;gap:2.2rem;flex-wrap:wrap;padding:.9rem 1rem;}
+  nav a{text-decoration:none;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);font-weight:500;}
+  nav a:hover{color:var(--brass);}
+
+  .rule{width:72px;height:2px;background:var(--brass);margin:1.4rem auto;}
+
+  .hero{max-width:1200px;margin:0 auto;padding:1rem 1.2rem 4rem;}
+  .hero-photo{position:relative;overflow:hidden;}
+  .hero-photo img{width:100%;height:clamp(320px,52vw,560px);object-fit:cover;}
+  .caption{font-size:.75rem;color:var(--warm);margin-top:.5rem;letter-spacing:.04em;}
+  .hero-text{text-align:center;padding:2.6rem 1rem 0;max-width:640px;margin:0 auto;}
+  .hero-text h2{font-size:clamp(1.7rem,3.6vw,2.6rem);margin-bottom:1rem;}
+  .hero-text p{color:var(--warm);font-size:1.02rem;}
+  .btn{display:inline-block;margin-top:1.6rem;background:var(--ink);color:var(--ivory);text-decoration:none;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;padding:1rem 2.4rem;font-weight:500;}
+  .btn:hover{background:var(--brass);}
+  .btn-outline{background:transparent;color:var(--ink);border:1px solid var(--ink);}
+  .btn-outline:hover{border-color:var(--brass);color:var(--brass);background:transparent;}
+
+  section.block{max-width:1200px;margin:0 auto;padding:4rem 1.2rem;}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 2.8rem;}
+  .sec-head .eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--brass);margin-bottom:.9rem;}
+  .sec-head h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:1rem;}
+  .sec-head p{color:var(--warm);}
+
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.6rem;}
+  .service{background:var(--card);border:1px solid var(--line);padding:2rem 1.8rem;}
+  .service h3{font-size:1.35rem;margin-bottom:.7rem;}
+  .service p{color:var(--warm);font-size:.95rem;}
+  .service .sub{margin-top:.9rem;padding-top:.9rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--warm);}
+  .note{font-size:.85rem;color:var(--warm);font-style:italic;}
+  .photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem;margin-top:2.4rem;}
+  .photo-grid figure img,.strip figure img{height:300px;width:100%;object-fit:cover;}
+
+  .street{background:var(--ink);color:#e9e2d2;}
+  .street .sec-head h2{color:#f2ecdd;}
+  .street .sec-head p{color:#bdb49d;}
+  .street .eyebrow{color:var(--brass);}
+  .street-body{max-width:760px;margin:0 auto;text-align:center;}
+  .street-body p{color:#d8d0b8;margin-bottom:1.1rem;font-size:1.02rem;}
+  .street .rule{background:var(--brass);}
+
+  .stylists{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);max-width:960px;margin:0 auto;}
+  @media(max-width:760px){.stylists{grid-template-columns:repeat(2,1fr);}}
+  .stylist{background:var(--card);padding:2.2rem 1.6rem;text-align:center;}
+  .stylist h3{font-size:1.3rem;margin-bottom:.4rem;}
+  .stylist .title{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-weight:600;}
+  .strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem;margin:2.6rem auto 0;max-width:1200px;}
+
+  .hours-wrap{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;max-width:960px;margin:0 auto;align-items:start;}
+  @media(max-width:760px){.hours-wrap{grid-template-columns:1fr;}}
+  .hours-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);}
+  .hours-table th,.hours-table td{padding:.9rem 1.2rem;text-align:left;font-size:.95rem;border-bottom:1px solid var(--line);}
+  .hours-table th{font-family:'Playfair Display',serif;font-size:1.1rem;}
+  .hours-table tr:last-child th,.hours-table tr:last-child td{border-bottom:none;}
+  .hours-table td:last-child{text-align:right;}
+  .map-note{color:var(--warm);font-size:.95rem;}
+  .map-note p{margin-bottom:1rem;}
+
+  .contact{text-align:center;background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .contact-inner{max-width:640px;margin:0 auto;}
+  .contact h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1rem;}
+  .contact .phone-big{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.4rem);margin:1.2rem 0;display:inline-block;text-decoration:none;border-bottom:2px solid var(--brass);}
+  .contact p{color:var(--warm);}
+
+  footer{background:var(--ink);color:#bdb49d;font-size:.85rem;padding:2.6rem 1.2rem;text-align:center;}
+  footer p{margin-bottom:.7rem;max-width:760px;margin-left:auto;margin-right:auto;}
+  footer strong{color:#e9e2d2;}
+  footer .fine{font-size:.75rem;color:#8a8371;margin-top:1.2rem;}
+</style>
+</head>
+<body>
+
+<div class="disclosure"><strong>Website Concept</strong> &nbsp;|&nbsp; Design Preview prepared for Thomas Hardy Hair Salon</div>
+
+<header class="masthead">
+  <div class="eyebrow">Ogden, Utah</div>
+  <h1>Thomas Hardy Hair Salon</h1>
+  <div class="addr">248 25th St, Ogden, UT 84401</div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#stylists">Stylists</a></li>
+    <li><a href="#hours">Hours &amp; Location</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-photo">
+    <img src="img/1560066984-138dadb4c035.jpg" alt="Salon interior with styling chairs">
+    <p class="caption">Stock photo.</p>
+  </div>
+  <div class="hero-text">
+    <h2>Cut, color, and brows on historic 25th Street</h2>
+    <p>Thomas Hardy Hair Salon sits on historic 25th Street in downtown Ogden. To book, call the salon directly and talk to the team.</p>
+    <a class="btn" href="tel:+18013939561">Call to book</a>
+  </div>
+</div>
+
+<section class="block" id="services">
+  <div class="sec-head">
+    <div class="eyebrow">Services</div>
+    <h2>What the salon offers</h2>
+    <p>Prices are not published. Call the salon for current pricing.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service">
+      <h3>Haircuts</h3>
+      <p>Precision cuts for women and men, shaped to fit the individual.</p>
+    </div>
+    <div class="service">
+      <h3>Hair Color</h3>
+      <p>Full color work with a strong focus on specialty techniques.</p>
+      <div class="sub">Balayage &middot; Blonde &middot; Color correction &middot; Creative and vivid color</div>
+    </div>
+    <div class="service">
+      <h3>Brow Services</h3>
+      <p>Professional brow shaping and finishing.</p>
+    </div>
+  </div>
+  <div class="photo-grid">
+    <figure><img src="img/1562322140-8baeececf3df.jpg" alt="Stylist cutting hair"><figcaption class="caption">Stock photo.</figcaption></figure>
+    <figure><img src="img/1521590832167-7bcbfaa6381f.jpg" alt="Stylist working on client's hair"><figcaption class="caption">Stock photo.</figcaption></figure>
+    <figure><img src="img/1522337660859-02fbefca4702.jpg" alt="Hair wash at the shampoo station"><figcaption class="caption">Stock photo.</figcaption></figure>
+  </div>
+</section>
+
+<section class="block street">
+  <div class="sec-head">
+    <div class="eyebrow">The Street</div>
+    <h2>Historic 25th Street</h2>
+  </div>
+  <div class="street-body">
+    <div class="rule"></div>
+    <p>The salon is located on historic 25th Street in downtown Ogden, a block known for its preserved storefronts and walkable downtown character.</p>
+    <p>Inside, the space is a working salon with chairs, wash stations, and the day to day rhythm of appointments.</p>
+  </div>
+</section>
+
+<section class="block" id="stylists">
+  <div class="sec-head">
+    <div class="eyebrow">The Team</div>
+    <h2>Stylists</h2>
+    <p>Ask for a stylist by name when you call, or let the salon match you with someone.</p>
+  </div>
+  <div class="stylists">
+    <div class="stylist"><h3>Tom Hardy</h3><div class="title">Owner</div></div>
+    <div class="stylist"><h3>Ashlee Knutson Graves</h3><div class="title">Color Specialist</div></div>
+    <div class="stylist"><h3>Weston</h3></div>
+    <div class="stylist"><h3>Parker</h3></div>
+    <div class="stylist"><h3>Mason Hardy</h3></div>
+    <div class="stylist"><h3>Penny</h3></div>
+    <div class="stylist"><h3>Sydney Hawkes</h3></div>
+    <div class="stylist"><h3>Cassie</h3></div>
+    <div class="stylist"><h3>Ali</h3></div>
+  </div>
+  <div class="strip">
+    <figure><img src="img/1605497788044-5a32c7078486.jpg" alt="Fresh women's haircut"><figcaption class="caption">Stock photo.</figcaption></figure>
+    <figure><img src="img/1580618672591-eb180b1a973f.jpg" alt="Empty salon chair"><figcaption class="caption">Stock photo.</figcaption></figure>
+  </div>
+</section>
+
+<section class="block" id="hours">
+  <div class="sec-head">
+    <div class="eyebrow">Visit</div>
+    <h2>Hours &amp; Location</h2>
+  </div>
+  <div class="hours-wrap">
+    <table class="hours-table">
+      <tr><th colspan="2">Hours</th></tr>
+      <tr><td>Monday</td><td>9:00 AM &ndash; 6:00 PM</td></tr>
+      <tr><td>Tuesday</td><td>9:00 AM &ndash; 6:00 PM</td></tr>
+      <tr><td>Wednesday</td><td>9:00 AM &ndash; 6:00 PM</td></tr>
+      <tr><td>Thursday</td><td>9:00 AM &ndash; 6:00 PM</td></tr>
+      <tr><td>Friday</td><td>9:00 AM &ndash; 6:00 PM</td></tr>
+      <tr><td>Saturday</td><td>Closed</td></tr>
+      <tr><td>Sunday</td><td>Closed</td></tr>
+    </table>
+    <div class="map-note">
+      <p>These hours are per Birdeye. One local magazine lists Tuesday to Saturday instead. Call to confirm current hours.</p>
+      <p><strong>Thomas Hardy Hair Salon</strong><br>248 25th St<br>Ogden, UT 84401</p>
+      <a class="btn btn-outline" href="tel:+18013939561">Call +1 801-393-9561</a>
+    </div>
+  </div>
+</section>
+
+<section class="block contact" id="contact">
+  <div class="contact-inner">
+    <div class="sec-head">
+      <div class="eyebrow">Contact</div>
+      <h2>Ready when you are</h2>
+    </div>
+    <p>There is no online booking. Call the salon and the team will set up your appointment.</p>
+    <a class="phone-big" href="tel:+18013939561">+1 801-393-9561</a>
+    <p>248 25th St, Ogden, UT 84401</p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Thomas Hardy Hair Salon</strong>, 248 25th St, Ogden, UT 84401, +1 801-393-9561</p>
+  <p>This is a design preview prepared by Freightfolio. It is not the official site of Thomas Hardy Hair Salon.</p>
+  <p>All photos on this page are stock photos; no public photos of the business were available.</p>
+  <p>Rated 4.7 from 221 Birdeye reviews.</p>
+  <p class="fine">Concept prepared October 2026.</p>
+</footer>
+
+</body>
+</html>

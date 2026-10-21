@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Shave Barbershop: Downtown St. Louis | Website Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f7f1e5; --ink:#17233d; --ink-soft:#3a4763;
+    --rule:#b8b1a1; --navy:#101a30; --wash:#ece4d2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);
+       font-family:"Source Serif 4",Georgia,serif;font-size:18px;line-height:1.7;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--ink)}
+  /* disclosure bar */
+  .disclosure{background:var(--navy);color:#e9e2cf;text-align:center;
+    font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+    padding:10px 16px;font-family:"Source Serif 4",serif}
+  /* masthead */
+  .masthead{border-bottom:3px double var(--ink);padding:34px 24px 22px;text-align:center}
+  .masthead .dateline{font-size:12px;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--ink-soft);margin-bottom:14px}
+  .masthead h1{font-family:"Old Standard TT",Georgia,serif;font-size:clamp(44px,7vw,84px);
+    font-weight:700;letter-spacing:.02em;line-height:1.05}
+  .masthead .rule-row{display:flex;align-items:center;gap:18px;max-width:760px;margin:16px auto}
+  .masthead .rule-row::before,.masthead .rule-row::after{content:"";flex:1;height:1px;background:var(--rule)}
+  .masthead .sub{font-style:italic;font-size:17px;color:var(--ink-soft)}
+  .masthead .sub a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+  /* nav */
+  nav.sticky{position:sticky;top:0;z-index:50;background:var(--paper);
+    border-bottom:1px solid var(--rule);display:flex;justify-content:center;
+    flex-wrap:wrap;gap:4px 34px;padding:13px 16px;
+    font-size:13px;letter-spacing:.22em;text-transform:uppercase}
+  nav.sticky a{text-decoration:none;color:var(--ink-soft);padding:4px 2px}
+  nav.sticky a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:6px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 28px}
+  section{padding:64px 0;border-bottom:1px solid var(--rule)}
+  .eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--ink-soft);margin-bottom:18px}
+  h2.sec{font-family:"Old Standard TT",Georgia,serif;font-size:clamp(30px,4vw,44px);
+    font-weight:700;margin-bottom:10px;line-height:1.15}
+  .lede{font-size:20px;font-style:italic;color:var(--ink-soft);max-width:640px;margin-bottom:36px}
+  /* hero */
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:70px 0}
+  .hero h2{font-family:"Old Standard TT",Georgia,serif;font-size:clamp(38px,5vw,60px);
+    line-height:1.1;font-weight:700;margin-bottom:22px}
+  .hero p{margin-bottom:18px;color:var(--ink-soft)}
+  .hero p strong{color:var(--ink)}
+  .cta-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px}
+  .btn{display:inline-block;text-decoration:none;font-size:14px;letter-spacing:.2em;
+    text-transform:uppercase;padding:15px 32px;border:2px solid var(--ink);
+    font-family:"Source Serif 4",serif;font-weight:600}
+  .btn.solid{background:var(--ink);color:var(--paper)}
+  .btn.ghost{background:transparent;color:var(--ink)}
+  figure{margin:0}
+  figure img{width:100%;height:auto;display:block;border:1px solid var(--rule);
+    filter:sepia(.18) contrast(1.02)}
+  figcaption{font-size:13px;font-style:italic;color:var(--ink-soft);margin-top:10px}
+  /* services ledger */
+  .ledger{max-width:760px}
+  .ledger-row{display:flex;align-items:baseline;gap:14px;padding:20px 0;
+    border-bottom:1px dotted var(--rule)}
+  .ledger-row .svc{font-family:"Old Standard TT",Georgia,serif;font-size:24px;font-weight:700}
+  .ledger-row .dots{flex:1;border-bottom:2px dotted var(--rule);transform:translateY(-6px)}
+  .ledger-row .note{font-style:italic;color:var(--ink-soft);font-size:16px;white-space:nowrap}
+  .price-note{margin-top:26px;font-style:italic;color:var(--ink-soft)}
+  /* barbers */
+  .barbers{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);
+    border:1px solid var(--rule);margin-top:10px}
+  .barber{background:var(--paper);padding:48px 42px}
+  .mono{font-family:"Old Standard TT",Georgia,serif;font-size:15px;letter-spacing:.1em;
+    border:2px solid var(--ink);display:inline-block;padding:14px 18px;margin-bottom:24px}
+  .barber h3{font-family:"Old Standard TT",Georgia,serif;font-size:30px;margin-bottom:6px}
+  .barber .aka{font-style:italic;color:var(--ink-soft);margin-bottom:16px}
+  .barber p{color:var(--ink-soft)}
+  /* shop photos */
+  .photos{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:10px}
+  /* visit */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  table.hours{width:100%;border-collapse:collapse;margin-top:6px}
+  table.hours td{padding:13px 4px;border-bottom:1px dotted var(--rule);font-size:17px}
+  table.hours td:last-child{text-align:right;font-style:italic;color:var(--ink-soft)}
+  .visit h3{font-family:"Old Standard TT",Georgia,serif;font-size:22px;margin:26px 0 10px}
+  .visit p{color:var(--ink-soft);margin-bottom:10px}
+  .caveat{border:1px solid var(--rule);background:var(--wash);padding:18px 22px;
+    font-style:italic;font-size:16px;color:var(--ink-soft);margin-top:26px}
+  .rating-line{margin-top:34px;font-size:15px;letter-spacing:.06em}
+  .rating-line strong{font-family:"Old Standard TT",Georgia,serif;font-size:19px}
+  /* footer */
+  footer{background:var(--navy);color:#cfc8b4;padding:54px 0 40px;font-size:15px}
+  footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:36px}
+  footer h4{font-size:12px;letter-spacing:.26em;text-transform:uppercase;
+    color:#8f96a8;margin-bottom:14px}
+  footer p,footer li{color:#b9b09a;line-height:1.8}
+  footer ul{list-style:none}
+  footer a{color:#e9e2cf}
+  footer .fine{border-top:1px solid #2c3a58;margin-top:40px;padding-top:24px;
+    font-size:13px;color:#8f96a8;font-style:italic}
+  @media(max-width:760px){
+    .hero{grid-template-columns:1fr;gap:34px;padding:48px 0}
+    .barbers{grid-template-columns:1fr}
+    .photos{grid-template-columns:1fr}
+    .visit-grid{grid-template-columns:1fr;gap:30px}
+    section{padding:48px 0}
+    .ledger-row .note{white-space:normal}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design Preview: a website concept by Freightfolio. This is not the official site of Shave Barbershop.</div>
+
+<header class="masthead">
+  <div class="dateline">Downtown St. Louis, Missouri</div>
+  <h1>Shave Barbershop</h1>
+  <div class="rule-row"><span></span></div>
+  <div class="sub">1912 Washington Ave, St. Louis, MO 63103 &nbsp;&middot;&nbsp; <a href="tel:+13143674283">(314) 367-4283</a></div>
+</header>
+
+<nav class="sticky" aria-label="Section navigation">
+  <a href="#services">Services</a>
+  <a href="#barbers">Barbers</a>
+  <a href="#shop">The Shop</a>
+  <a href="#visit">Visit</a>
+</nav>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Downtown &middot; Classic Cuts</div>
+        <h2>Downtown&rsquo;s classic barbershop.</h2>
+        <p>Straightforward cuts, careful fades, and the hot towel shave done right,
+        in the heart of downtown St. Louis. Walk-ins are welcome, and appointments
+        are recommended.</p>
+        <p>The shop is <strong>wheelchair-accessible</strong>, <strong>parking is
+        available</strong>, and <strong>everyone is welcome</strong> in the chair.</p>
+        <div class="cta-row">
+          <a class="btn solid" href="tel:+13143674283">Call to book</a>
+          <a class="btn ghost" href="mailto:shave-stl@gmail.com">Email the shop</a>
+        </div>
+      </div>
+      <figure>
+        <img src="img/shave_shop.jpg" alt="Classic barbershop interior with row of barber chairs">
+        <figcaption>Stock photo. The shop floor, classic chairs in a row.</figcaption>
+      </figure>
+    </div>
+
+    <section id="services">
+      <div class="eyebrow">The Menu</div>
+      <h2 class="sec">Services</h2>
+      <p class="lede">Five services, done well. That is the whole list, and it has
+      always been enough.</p>
+      <div class="ledger">
+        <div class="ledger-row"><span class="svc">Haircut</span><span class="dots"></span><span class="note">the standard</span></div>
+        <div class="ledger-row"><span class="svc">Fade</span><span class="dots"></span><span class="note">blended clean</span></div>
+        <div class="ledger-row"><span class="svc">Lining</span><span class="dots"></span><span class="note">sharp edges</span></div>
+        <div class="ledger-row"><span class="svc">Hot Towel Shave</span><span class="dots"></span><span class="note">the full treatment</span></div>
+        <div class="ledger-row"><span class="svc">Beard Trim</span><span class="dots"></span><span class="note">shaped and detailed</span></div>
+      </div>
+      <p class="price-note">Haircuts run about $40, according to customer reviews.
+      For exact pricing on other services, call the shop.</p>
+      <figure style="margin-top:40px;max-width:640px">
+        <img src="img/shave_shave.jpg" alt="Barber giving a straight-razor shave">
+        <figcaption>Stock photo. The hot towel shave, straight razor finish.</figcaption>
+      </figure>
+    </section>
+
+    <section id="barbers">
+      <div class="eyebrow">In the Chairs</div>
+      <h2 class="sec">The Barbers</h2>
+      <p class="lede">Two barbers, both known by first name to the regulars who
+      keep coming back.</p>
+      <div class="barbers">
+        <div class="barber">
+          <div class="mono">E.R.</div>
+          <h3>Erik R.</h3>
+          <div class="aka">Known as &ldquo;Big E&rdquo;</div>
+          <p>Erik holds down the chair with the easy confidence of someone who has
+          done this a long time. Ask for Big E by name.</p>
+        </div>
+        <div class="barber">
+          <div class="mono">H.</div>
+          <h3>Hank</h3>
+          <div class="aka">Barber</div>
+          <p>Hank keeps the line moving and the cuts consistent. A steady hand for
+          fades, linings, and the regular trim.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop">
+      <div class="eyebrow">The Shop</div>
+      <h2 class="sec">Tools of the Trade</h2>
+      <p class="lede">Good work starts with good tools, kept sharp and ready.</p>
+      <div class="photos">
+        <figure>
+          <img src="img/shave_tools.jpg" alt="Barber tools laid out: clippers, scissors, comb">
+          <figcaption>Stock photo. Clippers, shears, and combs, ready for the day.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/shave_shop.jpg" alt="Classic barbershop interior">
+          <figcaption>Stock photo. The downtown shop floor.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="visit" class="visit">
+      <div class="eyebrow">Find Us</div>
+      <h2 class="sec">Visit</h2>
+      <p class="lede">On Washington Ave in downtown St. Louis. Call ahead and the
+      chair is yours.</p>
+      <div class="visit-grid">
+        <div>
+          <h3>Hours</h3>
+          <table class="hours">
+            <tr><td>Tuesday</td><td>8:00 AM  to  6:00 PM</td></tr>
+            <tr><td>Wednesday</td><td>8:00 AM  to  6:00 PM</td></tr>
+            <tr><td>Thursday</td><td>8:00 AM  to  6:00 PM</td></tr>
+            <tr><td>Friday</td><td>8:00 AM  to  6:00 PM</td></tr>
+            <tr><td>Saturday</td><td>8:00 AM  to  6:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+            <tr><td>Monday</td><td>Closed</td></tr>
+          </table>
+          <div class="caveat">One customer reported the shop was not open at the
+          listed time on a visit, so hours can shift. Call ahead to confirm before
+          you head over.</div>
+        </div>
+        <div>
+          <h3>Address</h3>
+          <p>1912 Washington Ave<br>St. Louis, MO 63103</p>
+          <h3>Contact</h3>
+          <p><a href="tel:+13143674283">(314) 367-4283</a><br>
+          <a href="mailto:shave-stl@gmail.com">shave-stl@gmail.com</a></p>
+          <h3>Good to know</h3>
+          <p>Wheelchair-accessible. Parking available. LGBTQ+ friendly.</p>
+          <div class="cta-row">
+            <a class="btn solid" href="tel:+13143674283">Call to book</a>
+          </div>
+          <p class="rating-line"><strong>4.8</strong> from 36 Google reviews.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Shave Barbershop</h4>
+        <p>1912 Washington Ave<br>St. Louis, MO 63103<br>
+        <a href="tel:+13143674283">(314) 367-4283</a></p>
+      </div>
+      <div>
+        <h4>About this page</h4>
+        <p>This is a design preview prepared by Freightfolio. It is not the
+        official website of Shave Barbershop. Concept prepared October 2026.</p>
+      </div>
+      <div>
+        <h4>Photos</h4>
+        <p>All photos on this page are stock photos. No public photos of the
+        business were available.</p>
+      </div>
+      <div>
+        <h4>Rating</h4>
+        <p>4.8 from 36 Google reviews.</p>
+      </div>
+    </div>
+    <div class="fine">Design concept only. Business details reflect public listings
+    as researched in October 2026; hours and services should be confirmed with
+    the shop directly.</div>
+  </div>
+</footer>
+
+</body>
+</html>
