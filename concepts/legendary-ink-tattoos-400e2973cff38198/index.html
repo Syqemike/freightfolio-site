@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Legendary Ink Tattoos | Jackson, TN | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0d0c0a; --black2:#161411; --bone:#ece7dd; --bone-dim:#b9b2a4; --red:#c8102e; --line:#2b2822;}
+*{box-sizing:border-box; margin:0; padding:0;}
+body{font-family:"Inter",system-ui,sans-serif; background:var(--black); color:var(--bone); line-height:1.6;}
+img{max-width:100%; display:block;}
+a{color:inherit;}
+.mono{font-family:"Space Mono",monospace;}
+.disclosure{background:var(--red); color:#fff; text-align:center; font-size:13px; padding:10px 16px; letter-spacing:.03em;}
+.disclosure strong{font-weight:700;}
+header.site{display:flex; align-items:center; justify-content:space-between; padding:20px 5vw; border-bottom:1px solid var(--line); background:var(--black); position:sticky; top:0; z-index:50;}
+.brand{font-family:"Anton",sans-serif; font-size:24px; letter-spacing:.06em; text-decoration:none;}
+.brand span{color:var(--red);}
+nav.main{display:flex; gap:28px; font-family:"Space Mono",monospace; font-size:13px; text-transform:uppercase; letter-spacing:.12em;}
+nav.main a{text-decoration:none; color:var(--bone-dim);}
+nav.main a:hover{color:var(--red);}
+.btn{display:inline-block; text-decoration:none; font-weight:800; padding:15px 34px; font-size:15px; letter-spacing:.04em;}
+.btn-red{background:var(--red); color:#fff;}
+.btn-red:hover{background:#a30d26;}
+.btn-ghost{border:2px solid var(--bone-dim); color:var(--bone);}
+.btn-ghost:hover{border-color:var(--red); color:var(--red);}
+.hero{padding:80px 5vw 70px; display:grid; grid-template-columns:1.2fr .8fr; gap:5vw; align-items:center;}
+.hero-meta{font-family:"Space Mono",monospace; font-size:12.5px; letter-spacing:.22em; text-transform:uppercase; color:var(--red); margin-bottom:20px; display:flex; gap:14px; align-items:center;}
+.hero-meta::before{content:""; width:44px; height:3px; background:var(--red); display:inline-block;}
+h1{font-family:"Anton",sans-serif; font-size:clamp(58px,8.5vw,124px); line-height:.95; letter-spacing:.01em; text-transform:uppercase; margin-bottom:22px;}
+h1 .stroke{color:transparent; -webkit-text-stroke:2px var(--bone);}
+.lede{font-size:18px; color:var(--bone-dim); max-width:36rem; margin-bottom:16px;}
+.rating-line{display:flex; align-items:center; gap:12px; margin:6px 0 30px; font-family:"Space Mono",monospace; font-size:14px;}
+.rating-line .stars{color:var(--red); font-size:18px; letter-spacing:3px;}
+.cta-row{display:flex; gap:16px; flex-wrap:wrap;}
+.hero-photo{position:relative;}
+.hero-photo img{width:100%; aspect-ratio:4/5; object-fit:cover; filter:grayscale(20%) contrast(1.05);}
+.hero-photo::after{content:""; position:absolute; inset:0; border:1px solid var(--line); pointer-events:none;}
+.photo-tag{position:absolute; bottom:0; left:0; right:0; background:rgba(13,12,10,.85); padding:10px 16px; font-family:"Space Mono",monospace; font-size:12px; letter-spacing:.1em; color:var(--bone-dim);}
+.marquee{border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:16px 0; overflow:hidden; white-space:nowrap;}
+.marquee span{font-family:"Anton",sans-serif; font-size:22px; letter-spacing:.1em; text-transform:uppercase; color:var(--bone-dim); margin:0 26px;}
+.marquee span b{color:var(--red); font-weight:400;}
+section{padding:76px 5vw;}
+.sec-no{font-family:"Space Mono",monospace; font-size:13px; letter-spacing:.22em; color:var(--red); text-transform:uppercase; margin-bottom:14px;}
+h2{font-family:"Anton",sans-serif; font-size:clamp(36px,4.6vw,60px); text-transform:uppercase; letter-spacing:.02em; margin-bottom:18px;}
+.shop-grid{display:grid; grid-template-columns:1fr 1fr; gap:5vw; align-items:start;}
+.shop-copy p{color:var(--bone-dim); font-size:17px; margin-bottom:16px;}
+.fact-list{border-top:1px solid var(--line);}
+.fact{display:grid; grid-template-columns:170px 1fr; gap:16px; padding:16px 0; border-bottom:1px solid var(--line); font-size:16px;}
+.fact .k{font-family:"Space Mono",monospace; font-size:12.5px; text-transform:uppercase; letter-spacing:.14em; color:var(--red); padding-top:3px;}
+.fact .v{color:var(--bone);}
+.svc-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line);}
+.svc{padding:38px 32px; border-right:1px solid var(--line);}
+.svc:last-child{border-right:none;}
+.svc .idx{font-family:"Space Mono",monospace; color:var(--red); font-size:14px; letter-spacing:.18em; display:block; margin-bottom:16px;}
+.svc h3{font-family:"Anton",sans-serif; font-size:28px; text-transform:uppercase; letter-spacing:.02em; margin-bottom:12px;}
+.svc p{color:var(--bone-dim); font-size:15.5px;}
+.gallery-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
+figure.gal{position:relative;}
+figure.gal img{aspect-ratio:1/1.15; object-fit:cover; width:100%; filter:grayscale(12%);}
+figcaption{font-family:"Space Mono",monospace; font-size:11.5px; color:var(--bone-dim); padding:10px 2px; letter-spacing:.06em;}
+.hours-call{background:var(--black2); border:1px solid var(--line); text-align:center; padding:60px 6vw;}
+.hours-call p.big{font-family:"Anton",sans-serif; font-size:clamp(28px,3.6vw,44px); text-transform:uppercase; margin-bottom:14px;}
+.hours-call p.sub{color:var(--bone-dim); font-size:16.5px; max-width:36rem; margin:0 auto 28px;}
+.visit-grid{display:grid; grid-template-columns:1fr 1fr; gap:5vw; align-items:center; max-width:64rem; margin:0 auto;}
+.visit-grid .addr{font-size:17px; color:var(--bone-dim); margin-bottom:8px;}
+.visit-grid .addr strong{color:var(--bone); font-size:19px; display:block; margin-bottom:6px;}
+.big-tel{display:inline-block; font-family:"Anton",sans-serif; font-size:clamp(30px,4vw,48px); color:var(--red); text-decoration:none; letter-spacing:.03em; margin:10px 0 26px;}
+.big-tel:hover{color:#e02a48;}
+footer{border-top:1px solid var(--line); padding:44px 5vw; font-size:13.5px; color:var(--bone-dim); line-height:1.7;}
+footer a{color:var(--bone); font-weight:700;}
+footer .inner{max-width:62rem; margin:0 auto;}
+@media (max-width:900px){
+  header.site{flex-wrap:wrap; gap:12px; padding:16px 5vw;}
+  .brand{font-size:20px;}
+  header.site .btn{padding:12px 22px; font-size:13px;}
+  .hero{grid-template-columns:1fr; padding-top:52px;}
+  .shop-grid{grid-template-columns:1fr;}
+  .svc-grid{grid-template-columns:1fr;}
+  .svc{border-right:none; border-bottom:1px solid var(--line);}
+  .svc:last-child{border-bottom:none;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .visit-grid{grid-template-columns:1fr;}
+  nav.main{display:none;}
+  .fact{grid-template-columns:1fr; gap:4px;}
+}
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Design preview.</strong> This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+<header class="site">
+  <a class="brand" href="#">LEGENDARY<span>INK</span></a>
+  <nav class="main">
+    <a href="#shop">The Shop</a>
+    <a href="#work">Work</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a class="btn btn-red" href="tel:+17319280111">Call to book</a>
+</header>
+
+<section class="hero" style="padding-top:80px;">
+  <div>
+    <div class="hero-meta">Jackson, TN &middot; Est. 2007</div>
+    <h1>Legendary<br><span class="stroke">Ink</span> Tattoos</h1>
+    <p class="lede">An artist-owned tattoo and piercing shop in downtown Jackson. Walk-ins are welcome, the artists are veterans, and the work speaks for itself.</p>
+    <div class="rating-line"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>4.8 from 364 Google reviews</span></div>
+    <div class="cta-row">
+      <a class="btn btn-red" href="tel:+17319280111">Call to book</a>
+      <a class="btn btn-ghost" href="#work">See the work</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="img/photo-1.jpg" alt="Tattoo artist working on a client's arm">
+    <div class="photo-tag">STOCK PHOTO</div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <span>Custom Tattoos <b>/</b> Piercings <b>/</b> Walk-ins Welcome <b>/</b> Est. 2007 <b>/</b> Jackson TN <b>/</b>&nbsp;</span>
+  <span>Custom Tattoos <b>/</b> Piercings <b>/</b> Walk-ins Welcome <b>/</b> Est. 2007 <b>/</b> Jackson TN <b>/</b>&nbsp;</span>
+</div>
+
+<section id="shop">
+  <div class="sec-no">01 &middot; The Shop</div>
+  <h2>Built by artists</h2>
+  <div class="shop-grid">
+    <div class="shop-copy">
+      <p>Legendary Ink has been tattooing Jackson since 2007. The shop is artist owned and run, which means the people behind the counter are the people behind the needle.</p>
+      <p>Pricing is moderate, walk-ins are welcome, and every piece starts with a conversation about what you want on your skin.</p>
+    </div>
+    <div class="fact-list">
+      <div class="fact"><div class="k">Opened</div><div class="v">2007</div></div>
+      <div class="fact"><div class="k">Ownership</div><div class="v">Artist owned: Tjay (TjayRed) and Christopher Burgess</div></div>
+      <div class="fact"><div class="k">Services</div><div class="v">Tattoos and piercings</div></div>
+      <div class="fact"><div class="k">Walk-ins</div><div class="v">Welcome</div></div>
+      <div class="fact"><div class="k">Pricing</div><div class="v">Moderate</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="padding-top:0;">
+  <div class="sec-no">02 &middot; Work</div>
+  <h2>What the shop does</h2>
+  <div class="svc-grid" style="margin-top:34px;">
+    <div class="svc"><span class="idx">A.</span><h3>Custom tattoos</h3><p>Original pieces drawn for the person wearing them, from first ideas to finished ink.</p></div>
+    <div class="svc"><span class="idx">B.</span><h3>Piercings</h3><p>Professional piercing work done in the shop by experienced hands.</p></div>
+    <div class="svc"><span class="idx">C.</span><h3>Walk-ins</h3><p>Call ahead or stop in to talk through your idea.</p></div>
+  </div>
+</section>
+
+<section id="gallery" style="padding-top:0;">
+  <div class="sec-no">03 &middot; Gallery</div>
+  <h2>In the chair</h2>
+  <div class="gallery-grid" style="margin-top:34px;">
+    <figure class="gal"><img src="img/photo-2.jpg" alt="Close-up of a tattoo machine in a gloved hand"><figcaption>Stock photo</figcaption></figure>
+    <figure class="gal"><img src="img/photo-3.jpg" alt="Tattoo artist crafting a detailed arm design"><figcaption>Stock photo</figcaption></figure>
+    <figure class="gal"><img src="img/photo-4.jpg" alt="Tattoo artist working on a client in the studio"><figcaption>Stock photo</figcaption></figure>
+    <figure class="gal"><img src="img/photo-5.jpg" alt="Tattoo artist focused on detailed line work"><figcaption>Stock photo</figcaption></figure>
+    <figure class="gal"><img src="img/photo-1.jpg" alt="Tattoo artist tattooing a client's arm"><figcaption>Stock photo</figcaption></figure>
+    <figure class="gal"><img src="img/photo-2.jpg" alt="Tattoo machine close-up in studio"><figcaption>Stock photo</figcaption></figure>
+  </div>
+</section>
+
+<section class="hours-call" style="padding-top:60px; padding-bottom:60px;">
+  <div class="sec-no" style="text-align:center;">04 &middot; Hours</div>
+  <p class="big">Call for today's hours</p>
+  <p class="sub">Public listings disagree on the shop's daily hours, so the fastest way to know is to call. Walk-ins are welcome whenever the doors are open.</p>
+  <a class="btn btn-red" href="tel:+17319280111">Call (731) 928-0111</a>
+</section>
+
+<section id="visit">
+  <div class="sec-no">05 &middot; Visit</div>
+  <h2>Find the shop</h2>
+  <div class="visit-grid" style="margin-top:20px;">
+    <div>
+      <p class="addr"><strong>Legendary Ink Tattoos</strong>111 S Church St<br>Jackson, TN 38301</p>
+      <a class="big-tel" href="tel:+17319280111">(731) 928-0111</a>
+      <p class="addr">Call to book or ask about walk-in availability.</p>
+      <a class="btn btn-red" href="tel:+17319280111">Call to book</a>
+    </div>
+    <div class="hero-photo">
+      <img src="img/photo-3.jpg" alt="Tattoo artist at work in the studio" style="aspect-ratio:1/1;">
+      <div class="photo-tag">STOCK PHOTO</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="inner">
+    <p><strong style="color:var(--bone);">LEGENDARY INK TATTOOS</strong> &middot; 111 S Church St, Jackson, TN 38301 &middot; <a href="tel:+17319280111">(731) 928-0111</a></p>
+    <p style="margin-top:12px;">Design preview by Freightfolio. This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Legendary Ink Tattoos. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net">https://freightfolio.net</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

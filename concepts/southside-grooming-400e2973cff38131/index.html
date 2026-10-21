@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Southside Grooming | Augusta, GA | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fdf7ec; --cream2:#f7eeda; --green:#2f5233; --green-deep:#234027;
+  --coral:#e8734a; --coral-deep:#c95a34; --ink:#33302b; --muted:#6f675c; --tan:#e7d9bd;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+body{font-family:"Nunito",system-ui,sans-serif; color:var(--ink); background:var(--cream); line-height:1.65;}
+img{max-width:100%; display:block;}
+a{color:inherit;}
+.disclosure{background:var(--green-deep); color:#f4eeda; text-align:center; font-size:13px; padding:10px 16px; letter-spacing:.02em;}
+.disclosure strong{font-weight:800;}
+header.site{display:flex; align-items:center; justify-content:space-between; padding:18px 6vw; background:var(--cream); border-bottom:2px solid var(--tan); position:sticky; top:0; z-index:50;}
+.brand{font-family:"Fredoka",sans-serif; font-weight:700; font-size:26px; color:var(--green-deep); letter-spacing:.01em;}
+.brand .paw{color:var(--coral);}
+nav.main{display:flex; gap:26px; font-weight:700; font-size:15px;}
+nav.main a{text-decoration:none; color:var(--ink);}
+nav.main a:hover{color:var(--coral-deep);}
+.btn{display:inline-block; text-decoration:none; font-weight:800; border-radius:999px; padding:13px 30px; font-size:16px;}
+.btn-solid{background:var(--coral); color:#fff; box-shadow:0 6px 18px rgba(232,115,74,.35);}
+.btn-solid:hover{background:var(--coral-deep);}
+.btn-outline{border:2.5px solid var(--green); color:var(--green-deep);}
+.btn-outline:hover{background:var(--green); color:#fff;}
+.hero{display:grid; grid-template-columns:1.05fr .95fr; gap:5vw; align-items:center; padding:64px 6vw 70px;}
+.eyebrow{display:inline-block; background:#fff; border:2px solid var(--tan); color:var(--green-deep); font-weight:800; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:7px 16px; border-radius:999px; margin-bottom:22px;}
+h1{font-family:"Fredoka",sans-serif; font-weight:700; font-size:clamp(40px,5vw,64px); line-height:1.08; color:var(--green-deep); margin-bottom:18px;}
+h1 .hl{color:var(--coral-deep);}
+.lede{font-size:18px; color:var(--muted); max-width:34rem; margin-bottom:14px;}
+.rating-pill{display:inline-flex; align-items:center; gap:10px; background:#fff; border:2px solid var(--tan); border-radius:16px; padding:12px 20px; margin:10px 0 26px;}
+.rating-pill .stars{color:var(--coral-deep); font-size:20px; letter-spacing:2px;}
+.rating-pill .rtext{font-weight:800; font-size:15px; color:var(--ink);}
+.cta-row{display:flex; gap:16px; flex-wrap:wrap;}
+.hero-photo{position:relative;}
+.hero-photo img{border-radius:36px; border:6px solid #fff; box-shadow:0 24px 60px rgba(47,82,51,.18); aspect-ratio:4/4.4; object-fit:cover; width:100%;}
+.badge{position:absolute; left:-18px; bottom:34px; background:var(--green); color:#fff; border-radius:18px; padding:14px 20px; font-weight:800; font-size:15px; box-shadow:0 12px 30px rgba(47,82,51,.35);}
+.badge small{display:block; font-weight:600; font-size:12.5px; opacity:.85;}
+section{padding:64px 6vw;}
+.sec-head{text-align:center; max-width:42rem; margin:0 auto 40px;}
+.kicker{font-weight:800; font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:var(--coral-deep); margin-bottom:10px;}
+h2{font-family:"Fredoka",sans-serif; font-weight:600; font-size:clamp(28px,3.4vw,40px); color:var(--green-deep); margin-bottom:12px;}
+.sec-head p{color:var(--muted); font-size:17px;}
+.tiles{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+.tile{background:#fff; border:2px solid var(--tan); border-radius:22px; padding:30px 26px;}
+.tile .n{display:inline-block; background:var(--cream2); color:var(--coral-deep); font-family:"Fredoka",sans-serif; font-weight:700; font-size:15px; border-radius:12px; padding:6px 14px; margin-bottom:14px;}
+.tile h3{font-family:"Fredoka",sans-serif; font-weight:600; font-size:21px; color:var(--green-deep); margin-bottom:8px;}
+.tile p{color:var(--muted); font-size:15.5px;}
+.services{background:var(--cream2);}
+.svc-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px; max-width:60rem; margin:0 auto;}
+.svc{background:#fff; border-radius:18px; padding:24px 28px; border:2px solid var(--tan); display:flex; gap:18px; align-items:flex-start;}
+.svc .dot{flex:0 0 14px; height:14px; border-radius:50%; background:var(--coral); margin-top:7px;}
+.svc h3{font-family:"Fredoka",sans-serif; font-weight:600; font-size:20px; color:var(--green-deep); margin-bottom:6px;}
+.svc p{color:var(--muted); font-size:15.5px;}
+.note-line{text-align:center; margin-top:22px; color:var(--muted); font-size:15px; font-weight:600;}
+.gallery-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+figure.gal{background:#fff; border-radius:20px; overflow:hidden; border:2px solid var(--tan);}
+figure.gal img{aspect-ratio:1/1; object-fit:cover; width:100%;}
+figcaption{font-size:12.5px; color:var(--muted); padding:10px 16px; font-weight:600;}
+.hours-visit{display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:64rem; margin:0 auto;}
+.card{background:#fff; border:2px solid var(--tan); border-radius:24px; padding:36px;}
+.card h3{font-family:"Fredoka",sans-serif; font-weight:600; font-size:24px; color:var(--green-deep); margin-bottom:16px;}
+.hours-table{width:100%; border-collapse:collapse; font-size:16px;}
+.hours-table td{padding:10px 4px; border-bottom:1px dashed var(--tan);}
+.hours-table tr:last-child td{border-bottom:none;}
+.hours-table td:last-child{text-align:right; font-weight:700; color:var(--green-deep);}
+.visit p{font-size:16.5px; margin-bottom:10px; color:var(--muted);}
+.visit p strong{color:var(--ink);}
+.visit .big-tel{display:inline-block; font-family:"Fredoka",sans-serif; font-size:26px; font-weight:600; color:var(--green-deep); text-decoration:none; margin:6px 0 18px;}
+.visit .big-tel:hover{color:var(--coral-deep);}
+footer{background:var(--green-deep); color:#e9e2cf; padding:44px 6vw; font-size:14px; line-height:1.7;}
+footer .inner{max-width:62rem; margin:0 auto;}
+footer a{color:#fff; font-weight:700;}
+footer .fine{margin-top:14px; opacity:.85;}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr; padding-top:44px;}
+  .badge{left:8px;}
+  .tiles{grid-template-columns:1fr;}
+  .svc-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .hours-visit{grid-template-columns:1fr;}
+  nav.main{display:none;}
+}
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Design preview.</strong> This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+<header class="site">
+  <div class="brand">Southside <span class="paw">Grooming</span></div>
+  <nav class="main">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#hours">Hours</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a class="btn btn-solid" href="tel:+17067962575">Call to book</a>
+</header>
+
+<section class="hero" style="padding-top:64px;">
+  <div>
+    <span class="eyebrow">Dog grooming &middot; Augusta, GA</span>
+    <h1>Gentle grooming for dogs <span class="hl">under 50 lbs.</span></h1>
+    <p class="lede">Southside Grooming is an appointment-only dog grooming shop on Peach Orchard Road. Every visit is booked one on one with Tiffany, so smaller dogs get calm, unhurried attention from start to finish.</p>
+    <div class="rating-pill"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rtext">5.0 from 11 Google reviews</span></div>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="tel:+17067962575">Call to book</a>
+      <a class="btn btn-outline" href="#services">See services</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="img/photo-1.jpg" alt="A small dog during a grooming appointment">
+    <div class="badge">Appointment only<small>Book directly with Tiffany</small></div>
+  </div>
+</section>
+
+<section id="about" style="padding-top:20px;">
+  <div class="sec-head">
+    <div class="kicker">Why Southside</div>
+    <h2>A calmer kind of grooming shop</h2>
+    <p>One groomer, one dog at a time. Small dogs do their best work in a quiet setting, and that is exactly what Southside Grooming is built around.</p>
+  </div>
+  <div class="tiles">
+    <div class="tile"><span class="n">01</span><h3>By appointment only</h3><p>Your dog is booked for a set time and gets the full attention of the table, instead of waiting around a busy lobby.</p></div>
+    <div class="tile"><span class="n">02</span><h3>Dogs under 50 lbs.</h3><p>Southside Grooming specializes in smaller breeds, with tools, tables, and handling suited to little dogs.</p></div>
+    <div class="tile"><span class="n">03</span><h3>One groomer: Tiffany</h3><p>You deal with the same person every visit. Tiffany learns your dog's coat, temperament, and favorite tricks.</p></div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="sec-head">
+    <div class="kicker">Services</div>
+    <h2>What a visit looks like</h2>
+    <p>Full grooming for small breeds, tailored to your dog's coat and personality.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc"><span class="dot"></span><div><h3>Full groom</h3><p>Bath, blowout, haircut, and finishing touches for dogs under 50 lbs.</p></div></div>
+    <div class="svc"><span class="dot"></span><div><h3>Bath and tidy</h3><p>A thorough wash, dry, and brush out to keep coats soft between cuts.</p></div></div>
+    <div class="svc"><span class="dot"></span><div><h3>Face, feet, and tail touch up</h3><p>Neat trims in the spots that grow out fastest.</p></div></div>
+    <div class="svc"><span class="dot"></span><div><h3>Nail trim and ear care</h3><p>Nails clipped smooth and ears checked and cleaned.</p></div></div>
+  </div>
+  <p class="note-line">No price list is published. Call for details and current pricing.</p>
+</section>
+
+<section id="gallery">
+  <div class="sec-head">
+    <div class="kicker">Gallery</div>
+    <h2>Fresh from the table</h2>
+    <p>A look at the kind of happy, well-groomed pups Southside Grooming sends home.</p>
+  </div>
+  <div class="gallery-grid">
+    <figure class="gal"><img src="img/photo-2.jpg" alt="Small dog after a grooming session"><figcaption>Stock photo</figcaption></figure>
+    <figure class="gal"><img src="img/photo-3.jpg" alt="Small dog getting a bath during grooming"><figcaption>Stock photo</figcaption></figure>
+    <figure class="gal"><img src="img/photo-4.jpg" alt="Groomer at work with a small dog"><figcaption>Stock photo</figcaption></figure>
+    <figure class="gal"><img src="img/photo-5.jpg" alt="Small dog getting a professional haircut"><figcaption>Stock photo</figcaption></figure>
+    <figure class="gal"><img src="img/photo-6.jpg" alt="Yorkshire Terrier portrait with topknot"><figcaption>Stock photo</figcaption></figure>
+    <figure class="gal"><img src="img/photo-1.jpg" alt="Small dog during a grooming appointment"><figcaption>Stock photo</figcaption></figure>
+  </div>
+</section>
+
+<section id="hours" style="padding-top:20px;">
+  <div class="hours-visit">
+    <div class="card">
+      <h3>Hours</h3>
+      <table class="hours-table">
+        <tr><td>Monday - Friday</td><td>8 AM - 3 PM</td></tr>
+        <tr><td>Saturday</td><td>8:30 AM - 2 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <div class="card visit" id="visit">
+      <h3>Book with Tiffany</h3>
+      <p><strong>Southside Grooming</strong><br>3458 Peach Orchard Rd<br>Augusta, GA</p>
+      <a class="big-tel" href="tel:+17067962575">(706) 796-2575</a>
+      <p>Call to book an appointment for your dog.</p>
+      <a class="btn btn-solid" href="tel:+17067962575">Call to book</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="inner">
+    <p><strong>Southside Grooming</strong> &middot; 3458 Peach Orchard Rd, Augusta, GA &middot; <a href="tel:+17067962575">(706) 796-2575</a></p>
+    <p class="fine">Design preview by Freightfolio. This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Southside Grooming. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net">https://freightfolio.net</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
