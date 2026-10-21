@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Melissa's Pretty Paws | New Albany, IN | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#faf4ea;
+  --cream2:#f3e9d5;
+  --cocoa:#4b3226;
+  --coral:#e2703a;
+  --sage:#87a08b;
+  --sage-deep:#5f7563;
+  --softline:rgba(75,50,38,.18);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--cream);color:var(--cocoa);font-family:"Nunito Sans",sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+a{color:inherit;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+.notice{background:var(--cocoa);color:var(--cream);text-align:center;font-size:13px;letter-spacing:.1em;padding:12px 18px;font-weight:600;}
+.topbar{padding:22px 0;}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+.brand{font-family:"Bree Serif",serif;font-size:clamp(28px,3.6vw,38px);color:var(--cocoa);}
+.brand .paw{color:var(--coral);}
+nav.sections{display:flex;gap:10px;flex-wrap:wrap;}
+nav.sections a{text-decoration:none;font-size:13.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:11px 20px;border-radius:999px;border:2px solid transparent;color:var(--cocoa);}
+nav.sections a:hover{border-color:var(--cocoa);}
+nav.sections a.book{background:var(--coral);color:#fff;}
+nav.sections a.book:hover{background:var(--cocoa);border-color:var(--cocoa);}
+.hero{padding:52px 0 72px;}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+.badge{display:inline-block;background:var(--sage);color:#fff;font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:9px 20px;border-radius:999px;margin-bottom:22px;}
+h1{font-family:"Bree Serif",serif;font-size:clamp(44px,6vw,76px);line-height:1.05;margin-bottom:20px;font-weight:400;}
+h1 em{color:var(--coral);font-style:normal;}
+.dek{font-size:19px;max-width:480px;margin-bottom:16px;}
+.rating{font-weight:800;color:var(--sage-deep);margin-bottom:30px;}
+.ctarow{display:flex;gap:14px;flex-wrap:wrap;}
+.btnbig{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;font-weight:800;font-size:15px;padding:16px 34px;border-radius:999px;}
+.btnbig:hover{background:var(--cocoa);}
+.btnghost{display:inline-block;border:2px solid var(--cocoa);text-decoration:none;font-weight:800;font-size:15px;padding:14px 32px;border-radius:999px;color:var(--cocoa);}
+.btnghost:hover{background:var(--cocoa);color:var(--cream);}
+.heropic{margin:0;}
+.heropic img{width:100%;height:480px;object-fit:cover;display:block;border-radius:32px;}
+figcaption{font-size:12.5px;color:#8a7a68;margin-top:10px;font-style:italic;}
+section.block{padding:72px 0;border-top:2px solid var(--softline);}
+.blockhead{text-align:center;max-width:680px;margin:0 auto 48px;}
+.blockhead h2{font-family:"Bree Serif",serif;font-size:clamp(34px,4.4vw,52px);margin-bottom:12px;font-weight:400;}
+.blockhead p{font-size:17px;color:#6f5f4f;}
+.svcgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+.svc{background:#fff;border-radius:22px;padding:34px 36px;border:2px solid var(--softline);}
+.svc h3{font-family:"Bree Serif",serif;font-size:24px;margin-bottom:8px;color:var(--cocoa);}
+.svc h3 .dot{color:var(--coral);}
+.svc p{font-size:16px;color:#6f5f4f;}
+.team{background:var(--cream2);}
+.teamgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
+.teammate{background:#fff;border-radius:18px;padding:26px 18px;text-align:center;border:2px solid var(--softline);}
+.teammate .name{font-family:"Bree Serif",serif;font-size:21px;color:var(--cocoa);}
+.teammate .tag{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--coral);}
+.ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.ggrid figure{margin:0;}
+.ggrid img{width:100%;height:250px;object-fit:cover;display:block;border-radius:20px;}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.hourcard{background:var(--cocoa);color:var(--cream);border-radius:24px;padding:40px;}
+.hourcard h3{font-family:"Bree Serif",serif;font-size:26px;margin-bottom:18px;}
+.hourcard table{width:100%;border-collapse:collapse;font-size:16.5px;}
+.hourcard td{padding:9px 0;border-bottom:1px solid rgba(250,244,234,.18);}
+.hourcard td:last-child{text-align:right;font-weight:700;}
+.hourcard .flag{font-size:13px;color:#d8c9b4;margin-top:16px;}
+.visitcard{background:#fff;border-radius:24px;padding:40px;border:2px solid var(--softline);}
+.visitcard h3{font-family:"Bree Serif",serif;font-size:26px;margin-bottom:16px;}
+.visitcard p{margin-bottom:12px;font-size:17px;}
+.visitcard a{color:var(--coral);font-weight:800;overflow-wrap:anywhere;}
+.visitcard a.btnbig{color:#fff;}
+footer{padding:44px 0 60px;font-size:13.5px;color:#8a7a68;line-height:1.8;}
+footer a{color:var(--cocoa);font-weight:700;}
+@media(max-width:920px){
+  .hero .wrap{grid-template-columns:1fr;gap:40px;}
+  .heropic img{height:340px;}
+  .teamgrid{grid-template-columns:repeat(3,1fr);}
+  .twocol{grid-template-columns:1fr;gap:32px;}
+  section.block{padding:54px 0;}
+}
+@media(max-width:620px){
+  .svcgrid{grid-template-columns:1fr;}
+  .ggrid{grid-template-columns:1fr 1fr;}
+  .teamgrid{grid-template-columns:repeat(2,1fr);}
+}
+</style>
+</head>
+<body>
+<div class="notice">Design preview. This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">Melissa's <span class="paw">Pretty Paws</span></div>
+    <nav class="sections" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#team">Our team</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+      <a class="book" href="tel:+18129446367">Call to book</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="badge">Dog grooming, New Albany IN</span>
+      <h1>Loving quality grooming for <em>pretty paws</em>.</h1>
+      <p class="dek">Melissa's Pretty Paws is a small-team grooming salon where every dog gets personal attention. Bathing, drying, brushing, and styling to your specs, for dogs of all breeds and sizes.</p>
+      <p class="rating">Rated 5.0 from 89 Facebook reviews.</p>
+      <div class="ctarow">
+        <a class="btnbig" href="tel:+18129446367">Call to book: (812) 944-6367</a>
+        <a class="btnghost" href="https://facebook.com/melissasprettypawsgrooming">Find us on Facebook</a>
+      </div>
+    </div>
+    <figure class="heropic">
+      <img src="img/photo-1.jpg" alt="Groomer styling a Yorkshire Terrier. Stock photo.">
+      <figcaption>Stock photo. A groomer at work with a happy client.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="blockhead">
+      <h2>Grooming services</h2>
+      <p>Full-service grooming, tailored to each dog. Call to talk through what your dog needs.</p>
+    </div>
+    <div class="svcgrid">
+      <div class="svc"><h3>Bathing</h3><p>A thorough wash to get your dog clean and comfortable.</p></div>
+      <div class="svc"><h3>Drying</h3><p>Gentle drying so coats finish soft and fluffy.</p></div>
+      <div class="svc"><h3>Brushing</h3><p>Careful brushing to work out tangles and keep coats healthy.</p></div>
+      <div class="svc"><h3>Styling and coat cuts</h3><p>Breed cuts and styling done to your specs, for dogs of all breeds and sizes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block team" id="team">
+  <div class="wrap">
+    <div class="blockhead">
+      <h2>The team</h2>
+      <p>A small crew that knows your dog by name.</p>
+    </div>
+    <div class="teamgrid">
+      <div class="teammate"><div class="name">Melissa</div><div class="tag">Owner</div></div>
+      <div class="teammate"><div class="name">Sydney</div></div>
+      <div class="teammate"><div class="name">James</div></div>
+      <div class="teammate"><div class="name">Ricki</div></div>
+      <div class="teammate"><div class="name">Megan</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="gallery">
+  <div class="wrap">
+    <div class="blockhead">
+      <h2>Happy clients</h2>
+      <p>A few freshly groomed faces. All photos below are stock photos.</p>
+    </div>
+    <div class="ggrid">
+      <figure><img src="img/photo-2.jpg" alt="Groomer blow-drying a Yorkshire Terrier. Stock photo."><figcaption>Stock photo. The finishing blow-dry.</figcaption></figure>
+      <figure><img src="img/photo-3.jpg" alt="Wet puppy in a bathtub during bath time. Stock photo."><figcaption>Stock photo. Bath time.</figcaption></figure>
+      <figure><img src="img/photo-4.jpg" alt="Groomed white poodle walking on grass. Stock photo."><figcaption>Stock photo. Fresh from the salon.</figcaption></figure>
+      <figure><img src="img/photo-5.jpg" alt="Groomer giving a Yorkshire Terrier a haircut. Stock photo."><figcaption>Stock photo. A trim in progress.</figcaption></figure>
+      <figure><img src="img/photo-6.jpg" alt="Groomer trimming a large dog's fur. Stock photo."><figcaption>Stock photo. Big dogs welcome too.</figcaption></figure>
+      <figure><img src="img/photo-1.jpg" alt="Groomer styling a dog's coat. Stock photo."><figcaption>Stock photo. Styled and brushed.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit">
+  <div class="wrap">
+    <div class="blockhead">
+      <h2>Visit us</h2>
+      <p>Call ahead to book your dog's appointment.</p>
+    </div>
+    <div class="twocol">
+      <div class="hourcard">
+        <h3>Grooming hours</h3>
+        <table>
+          <tr><td>Tuesday to Saturday</td><td>8:30 AM to 5:00 PM</td></tr>
+          <tr><td>Sunday and Monday</td><td>Closed</td></tr>
+        </table>
+        <p class="flag">Hours from the shop's Facebook listing. Call to confirm before you come by.</p>
+      </div>
+      <div class="visitcard">
+        <h3>Find us</h3>
+        <p><strong>Melissa's Pretty Paws</strong><br>1615 E Market St, New Albany, IN</p>
+        <p>Phone: <a href="tel:+18129446367">(812) 944-6367</a></p>
+        <p>Facebook: <a href="https://facebook.com/melissasprettypawsgrooming">facebook.com/melissasprettypawsgrooming</a></p>
+        <a class="btnbig" href="tel:+18129446367" style="margin-top:10px;">Call to book</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Design preview by Freightfolio. This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Melissa's Pretty Paws. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net">https://freightfolio.net</a>.</p>
+    <p style="margin-top:12px;"><a href="https://freightfolio.net">freightfolio.net</a></p>
+  </div>
+</footer>
+</body>
+</html>

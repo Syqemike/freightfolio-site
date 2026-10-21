@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Charleston Bread | Charleston, WV | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#faf5ea;
+  --cream2:#f1e8d2;
+  --ink:#22251d;
+  --forest:#33502e;
+  --forest-deep:#22391f;
+  --terra:#c4622d;
+  --line:rgba(51,80,46,.25);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--cream);color:var(--ink);font-family:"Work Sans",sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+a{color:inherit;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+.notice{background:var(--forest-deep);color:var(--cream);text-align:center;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;padding:11px 18px;line-height:1.6;}
+.notice strong{color:#f4c78b;font-weight:700;}
+.mast{border-bottom:2px solid var(--forest);}
+.mast .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:26px;padding-bottom:24px;}
+.wordmark{font-family:"Fraunces",serif;font-weight:700;font-size:clamp(30px,4vw,42px);line-height:1;letter-spacing:.01em;color:var(--forest-deep);}
+.wordmark em{font-style:italic;color:var(--terra);}
+.cityline{font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--forest);margin-top:8px;font-weight:600;}
+nav.sections{display:flex;gap:26px;flex-wrap:wrap;align-items:center;}
+nav.sections a{text-decoration:none;font-size:13.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--forest-deep);border-bottom:2px solid transparent;padding-bottom:3px;}
+nav.sections a:hover{border-bottom-color:var(--terra);}
+.callbtn{display:inline-block;background:var(--terra);color:#fff !important;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;padding:13px 26px;border-radius:999px;border-bottom:none !important;}
+.callbtn:hover{background:var(--forest-deep);}
+.hero{padding:64px 0 72px;border-bottom:2px solid var(--forest);}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--terra);margin-bottom:18px;}
+h1{font-family:"Fraunces",serif;font-weight:700;font-size:clamp(44px,6.4vw,80px);line-height:1.02;color:var(--forest-deep);margin-bottom:22px;}
+h1 em{font-style:italic;color:var(--terra);}
+.dek{font-size:19px;max-width:480px;margin-bottom:14px;}
+.rating{font-size:14.5px;font-weight:600;color:var(--forest);margin-bottom:28px;}
+.heropic{margin:0;}
+.heropic img{width:100%;height:auto;display:block;border-radius:4px 60px 4px 60px;border:2px solid var(--forest);}
+figcaption{font-size:12.5px;color:#6b6f63;margin-top:10px;font-style:italic;}
+.ctarow{display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
+.ghostbtn{display:inline-block;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;padding:13px 26px;border:2px solid var(--forest-deep);border-radius:999px;color:var(--forest-deep);}
+.ghostbtn:hover{background:var(--forest-deep);color:var(--cream);}
+section.block{padding:72px 0;}
+.block h2{font-family:"Fraunces",serif;font-weight:700;font-size:clamp(32px,4vw,48px);color:var(--forest-deep);margin-bottom:10px;}
+.block .sub{font-size:16px;color:#5a5e52;max-width:640px;margin-bottom:40px;}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:44px 64px;}
+.menucat h3{font-family:"Fraunces",serif;font-size:24px;font-weight:600;color:var(--terra);border-bottom:2px solid var(--line);padding-bottom:10px;margin-bottom:18px;font-style:italic;}
+.menucat ul{list-style:none;}
+.menucat li{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px dotted var(--line);font-size:16.5px;}
+.menucat li .note{font-size:13px;color:#6b6f63;font-style:italic;display:block;}
+.menunote{margin-top:36px;background:var(--cream2);border-left:5px solid var(--terra);padding:20px 26px;font-size:15.5px;}
+.menunote strong{color:var(--forest-deep);}
+.gallery{background:var(--forest-deep);color:var(--cream);}
+.gallery h2{color:var(--cream);}
+.gallery .sub{color:#cfd6c4;}
+.ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.ggrid figure{margin:0;}
+.ggrid img{width:100%;height:240px;object-fit:cover;display:block;border-radius:4px;}
+.ggrid figcaption{color:#b9c2ab;}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+.hourcard{background:var(--cream2);border:2px solid var(--forest);border-radius:6px;padding:36px 40px;}
+.hourcard h3{font-family:"Fraunces",serif;font-size:26px;color:var(--forest-deep);margin-bottom:18px;}
+.hourcard table{width:100%;border-collapse:collapse;font-size:16.5px;}
+.hourcard td{padding:8px 0;border-bottom:1px dotted var(--line);}
+.hourcard td:last-child{text-align:right;font-weight:600;}
+.visitlist{list-style:none;font-size:17px;}
+.visitlist li{margin-bottom:14px;padding-left:28px;position:relative;}
+.visitlist li::before{content:"";position:absolute;left:0;top:11px;width:12px;height:12px;background:var(--terra);border-radius:50%;}
+.visitlist a{font-weight:600;color:var(--forest-deep);}
+.visitlist strong{color:var(--forest-deep);}
+footer{border-top:2px solid var(--forest);padding:40px 0 56px;font-size:13.5px;color:#5a5e52;line-height:1.8;}
+footer a{color:var(--forest-deep);font-weight:600;}
+footer .flink{margin-top:14px;}
+@media(max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:36px;}
+  .menu{grid-template-columns:1fr;}
+  .ggrid{grid-template-columns:1fr 1fr;}
+  .twocol{grid-template-columns:1fr;gap:36px;}
+  section.block{padding:52px 0;}
+}
+@media(max-width:560px){.ggrid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="notice"><strong>Design preview.</strong> This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+
+<header class="mast">
+  <div class="wrap">
+    <div>
+      <div class="wordmark">Charleston <em>Bread</em></div>
+      <div class="cityline">Artisan Bakery, Charleston, West Virginia</div>
+    </div>
+    <nav class="sections" aria-label="Sections">
+      <a href="#menu">Menu</a>
+      <a href="#photos">Photos</a>
+      <a href="#visit">Hours &amp; Visit</a>
+      <a href="tel:+13047203022" class="callbtn">Call ahead to order</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Downtown Charleston artisan bakery</div>
+      <h1>Baked fresh in the <em>morning.</em> Gone by the afternoon.</h1>
+      <p class="dek">Charleston Bread is an artisan bakery on Capitol Street specializing in artisan bread, laminated pastries, and cookies, all made from scratch. Call ahead to reserve your loaves, or stop by the counter for whatever is warm out of the oven.</p>
+      <p class="rating">Rated 5.0 from 11 places reviews.</p>
+      <div class="ctarow">
+        <a class="callbtn" href="tel:+13047203022">Call ahead to order: (304) 720-3022</a>
+        <a class="ghostbtn" href="#menu">See the menu</a>
+      </div>
+    </div>
+    <figure class="heropic">
+      <img src="img/photo-1.jpg" alt="Rustic sourdough loaves on a bakery shelf. Stock photo.">
+      <figcaption>Stock photo. Charleston sourdough, fresh from the oven.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="menu">
+  <div class="wrap">
+    <h2>The menu</h2>
+    <p class="sub">The selection rotates daily, so what you find in the case depends on the bake. These are the standbys you can expect to see.</p>
+    <div class="menu">
+      <div class="menucat">
+        <h3>From the oven</h3>
+        <ul>
+          <li>Charleston sourdough</li>
+          <li>Brioche</li>
+          <li>Baguette</li>
+          <li>Challah</li>
+          <li>Ciabatta</li>
+          <li>Bagels</li>
+          <li>Cinnamon raisin swirl</li>
+          <li>Multigrain</li>
+          <li>Olive bread</li>
+        </ul>
+        <p style="font-size:14px;color:#6b6f63;margin-top:12px;">Most loaves are vegan.</p>
+      </div>
+      <div class="menucat">
+        <h3>Laminated &amp; sweet</h3>
+        <ul>
+          <li>Croissants</li>
+          <li>Raspberry cheese Danish</li>
+          <li>Almond Danish</li>
+          <li>Scones</li>
+          <li>Cookies</li>
+          <li>Brownies</li>
+          <li>Almond torte</li>
+          <li>Fresh coffee</li>
+        </ul>
+      </div>
+    </div>
+    <div class="menunote">
+      <strong>Ordering:</strong> call ahead and your order will be ready for pickup. Large pastry orders and cake orders need two weeks notice.
+    </div>
+  </div>
+</section>
+
+<section class="block gallery" id="photos">
+  <div class="wrap">
+    <h2>Fresh out of the oven</h2>
+    <p class="sub">A look at what a daily bake looks like. All photos below are stock photos.</p>
+    <div class="ggrid">
+      <figure><img src="img/photo-2.jpg" alt="Baguettes in a wicker basket. Stock photo."><figcaption>Stock photo. Baguettes, baked the same morning.</figcaption></figure>
+      <figure><img src="img/photo-3.jpg" alt="Bakery display with assorted breads on wooden shelves. Stock photo."><figcaption>Stock photo. The bread case, stocked and ready.</figcaption></figure>
+      <figure><img src="img/photo-4.jpg" alt="Hands kneading bread dough on a wooden table. Stock photo."><figcaption>Stock photo. Dough worked by hand every day.</figcaption></figure>
+      <figure><img src="img/photo-5.jpg" alt="Freshly baked croissants. Stock photo."><figcaption>Stock photo. Laminated pastries for the morning crowd.</figcaption></figure>
+      <figure><img src="img/photo-6.jpg" alt="Bakery display case with pastries and breads. Stock photo."><figcaption>Stock photo. Pastries and breads side by side.</figcaption></figure>
+      <figure><img src="img/photo-1.jpg" alt="Sourdough loaves close up. Stock photo."><figcaption>Stock photo. The Charleston sourdough.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit">
+  <div class="wrap">
+    <h2>Hours &amp; visit</h2>
+    <p class="sub">Takeout and pickup. The shop has its own small free parking lot and is wheelchair accessible.</p>
+    <div class="twocol">
+      <div class="hourcard">
+        <h3>Bakery hours</h3>
+        <table>
+          <tr><td>Tuesday to Friday</td><td>7:00 AM to 6:00 PM</td></tr>
+          <tr><td>Saturday</td><td>7:00 AM to 3:00 PM</td></tr>
+          <tr><td>Sunday and Monday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <ul class="visitlist">
+        <li><strong>Address:</strong> 601 Capitol St, Charleston, WV 25301</li>
+        <li><strong>Phone:</strong> <a href="tel:+13047203022">(304) 720-3022</a></li>
+        <li>Free parking in the shop's own small lot</li>
+        <li>Wheelchair accessible entrance and service</li>
+        <li>Call ahead to order, then pick up at the counter</li>
+        <li><a href="tel:+13047203022">Call ahead to order: (304) 720-3022</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Design preview by Freightfolio. This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Charleston Bread. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net">https://freightfolio.net</a>.</p>
+    <p class="flink"><a href="https://freightfolio.net">freightfolio.net</a></p>
+  </div>
+</footer>
+</body>
+</html>
