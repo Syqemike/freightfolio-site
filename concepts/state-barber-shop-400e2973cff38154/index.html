@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>State Barber Shop | Trenton, NJ | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#171310; --paper:#f2e9d5; --paper-dark:#e8dcc2; --red:#8c2f2f;
+  --bronze:#a97c50; --muted:#5b5348;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Libre Baskerville",serif;background:var(--paper);color:var(--ink);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.disclosure{background:var(--ink);color:#e4d9bf;font-family:"Barlow Condensed",sans-serif;font-size:14px;letter-spacing:.06em;text-align:center;padding:10px 18px;font-weight:500}
+.disclosure strong{color:#e0b46a;font-weight:600}
+.rule{border:none;border-top:3px double var(--ink);margin:0}
+.masthead{max-width:1080px;margin:0 auto;padding:44px 28px 28px;text-align:center}
+.masthead .dateline{font-family:"Barlow Condensed",sans-serif;font-size:14px;letter-spacing:.34em;color:var(--muted);text-transform:uppercase;margin-bottom:14px}
+.masthead h1{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:clamp(58px,9vw,118px);line-height:.95;letter-spacing:.02em;text-transform:uppercase;margin-bottom:10px}
+.masthead .tagline{font-style:italic;color:var(--muted);font-size:17px;margin-bottom:14px}
+.masthead .rating{font-family:"Barlow Condensed",sans-serif;font-size:15px;letter-spacing:.12em;color:var(--red);text-transform:uppercase;font-weight:600}
+.mastnav{max-width:1080px;margin:0 auto;padding:14px 28px}
+.mastnav nav{display:flex;justify-content:center;gap:34px;font-family:"Barlow Condensed",sans-serif;font-size:16px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.mastnav nav a{text-decoration:none;color:var(--ink);padding-bottom:3px;border-bottom:2px solid transparent}
+.mastnav nav a:hover{border-color:var(--red);color:var(--red)}
+section{padding:64px 28px}
+.wrap{max-width:1080px;margin:0 auto}
+.section-head{text-align:center;margin-bottom:40px}
+.section-head .kicker{font-family:"Barlow Condensed",sans-serif;font-size:14px;letter-spacing:.32em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:8px}
+.section-head h2{font-family:"Barlow Condensed",sans-serif;font-size:clamp(34px,4.4vw,52px);text-transform:uppercase;letter-spacing:.03em;font-weight:700}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.story-text{column-count:1}
+.story-text p{margin-bottom:16px;text-align:justify}
+.story-text p:first-of-type::first-letter{font-family:"Barlow Condensed",sans-serif;font-size:56px;line-height:1;float:left;margin:6px 10px 0 0;color:var(--red);font-weight:700}
+.story-text strong{color:var(--red)}
+.story figure img{border:8px solid #fff;box-shadow:0 14px 36px rgba(23,19,16,.22)}
+.story figcaption{font-size:13px;color:var(--muted);margin-top:10px;font-style:italic;text-align:center}
+.menu-frame{border:3px double var(--ink);background:#fbf6e9;padding:52px 56px;max-width:860px;margin:0 auto}
+.menu-frame .price-note{text-align:center;font-style:italic;color:var(--muted);margin-bottom:28px}
+.menu-item{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:15px 0;border-bottom:1px dotted var(--bronze)}
+.menu-item h3{font-family:"Barlow Condensed",sans-serif;font-size:26px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.menu-item p{font-size:14px;color:var(--muted);font-style:italic}
+.cash{margin-top:28px;text-align:center;font-family:"Barlow Condensed",sans-serif;font-size:17px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:600}
+.gallery-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gallery-row figure img{aspect-ratio:3/4;object-fit:cover;width:100%;border:6px solid #fff;box-shadow:0 10px 28px rgba(23,19,16,.18)}
+.gallery-row figcaption{font-size:12.5px;color:var(--muted);margin-top:8px;font-style:italic;text-align:center}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.fact{background:var(--paper-dark);border-top:4px solid var(--red);padding:28px 26px}
+.fact .n{font-family:"Barlow Condensed",sans-serif;font-size:44px;font-weight:700;color:var(--red);line-height:1}
+.fact p{font-size:14.5px;color:var(--muted);margin-top:8px}
+.hours-visit{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.hours-table{width:100%;border-collapse:collapse;margin-top:20px}
+.hours-table th,.hours-table td{padding:12px 4px;border-bottom:1px solid var(--bronze);font-size:16px;text-align:left}
+.hours-table th{font-weight:400;color:var(--muted)}
+.hours-table td{font-weight:700;text-align:right}
+.visit-card{background:var(--ink);color:#e8dfc8;padding:48px;border-radius:2px}
+.visit-card h2{font-family:"Barlow Condensed",sans-serif;font-size:40px;text-transform:uppercase;letter-spacing:.04em;color:#fff;margin-bottom:16px}
+.visit-card p{margin-bottom:12px;color:#c9bfa5}
+.visit-card a.tel{font-family:"Barlow Condensed",sans-serif;font-size:32px;font-weight:700;color:#fff;text-decoration:none;border-bottom:3px solid var(--red)}
+.btn{display:inline-block;margin-top:22px;background:var(--red);color:#fff;font-family:"Barlow Condensed",sans-serif;font-size:18px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:15px 38px}
+.btn:hover{background:#752525}
+footer{background:var(--ink);color:#8d8471;padding:44px 28px;font-size:13px;line-height:1.8;font-family:"Barlow Condensed",sans-serif;letter-spacing:.05em}
+.foot-inner{max-width:1080px;margin:0 auto}
+footer a{color:#d8c08a}
+@media(max-width:900px){
+  .story{grid-template-columns:1fr}
+  .gallery-row{grid-template-columns:repeat(2,1fr)}
+  .facts{grid-template-columns:1fr}
+  .hours-visit{grid-template-columns:1fr}
+  .menu-frame{padding:34px 24px}
+  .mastnav nav{flex-wrap:wrap;gap:18px}
+}
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Design preview.</strong> This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+<header class="masthead">
+  <p class="dateline">Trenton, New Jersey &middot; Since the 1950s</p>
+  <h1>State Barber Shop</h1>
+  <p class="tagline">An old-school barbershop on South Warren Street, run the same honest way for generations.</p>
+  <p class="rating">5.0 from 46 reviews, per the shop's business listing</p>
+</header>
+<hr class="rule">
+<div class="mastnav">
+  <nav aria-label="Section navigation">
+    <a href="#story">The Story</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">The Shop</a>
+    <a href="#visit">Hours &amp; Visit</a>
+  </nav>
+</div>
+<hr class="rule">
+
+<section id="story">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Our Story</p>
+      <h2>Seventy years in the chair</h2>
+    </div>
+    <div class="story">
+      <div class="story-text">
+        <p>State Barber Shop has stood on South Warren Street since the 1950s, and celebrated its 60th anniversary in January 2021. The man behind the chair is owner <strong>Joe Festa</strong>, now 85, known up and down the street as the <strong>"Mayor of South Warren Street."</strong></p>
+        <p>The walls carry the proof of a life well cut: rows of photographs, a portrait of Lincoln, and a Christmas tree that stays up all year. Governors, legislators, and Trenton mayors have all sat in these chairs. In 2016, even Reggie Jackson walked in off the street for a cut.</p>
+        <p>This is a cash-only shop with early morning hours and no appointment apps. You walk in, you get a proper cut or shave, and you leave looking the part. It has worked since the fifties, and it still does.</p>
+      </div>
+      <figure>
+        <img src="img/photo-1.jpg" alt="Black and white photo of a barber shaving a client">
+        <figcaption>A straight-razor shave, done the classic way. Stock photo.</figcaption>
+      </figure>
+    </div>
+    <div class="facts">
+      <div class="fact"><p class="n">1950s</p><p>Cutting hair on South Warren Street since the fifties.</p></div>
+      <div class="fact"><p class="n">60th</p><p>Anniversary celebrated in January 2021.</p></div>
+      <div class="fact"><p class="n">6 AM</p><p>Doors open before sunrise, Wednesday through Saturday.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:var(--paper-dark)">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Services</p>
+      <h2>The menu</h2>
+    </div>
+    <div class="menu-frame">
+      <p class="price-note">Ask in the shop for today's pricing. Cash only.</p>
+      <div class="menu-item"><div><h3>Haircuts</h3><p>A proper cut, finished the way you ask for it.</p></div></div>
+      <div class="menu-item"><div><h3>Shaves</h3><p>Straight-razor work, hot lather, steady hand.</p></div></div>
+      <div class="menu-item"><div><h3>Facials</h3><p>Old-school grooming service in the chair.</p></div></div>
+      <div class="menu-item"><div><h3>Massage</h3><p>Offered in the shop alongside the cut.</p></div></div>
+      <p class="cash">Cash only, please</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">The Shop</p>
+      <h2>Tools of the trade</h2>
+    </div>
+    <div class="gallery-row">
+      <figure><img src="img/photo-2.jpg" alt="Elderly man getting his hair trimmed"><figcaption>A trim, done with care. Stock photo.</figcaption></figure>
+      <figure><img src="img/photo-3.jpg" alt="Straight razor resting on a towel"><figcaption>The straight razor, always ready. Stock photo.</figcaption></figure>
+      <figure><img src="img/photo-4.jpg" alt="Close-up of clippers cutting hair"><figcaption>Clipper work up close. Stock photo.</figcaption></figure>
+      <figure><img src="img/photo-5.jpg" alt="Electric clippers mid-cut"><figcaption>Detail in every pass. Stock photo.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="visit" style="background:var(--paper-dark)">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Hours &amp; Visit</p>
+      <h2>Come on down</h2>
+    </div>
+    <div class="hours-visit">
+      <div>
+        <table class="hours-table">
+          <tr><th>Wednesday - Friday</th><td>6:00 AM - 6:00 PM</td></tr>
+          <tr><th>Saturday</th><td>6:00 AM - 5:00 PM</td></tr>
+          <tr><th>Sunday - Tuesday</th><td>Closed</td></tr>
+        </table>
+        <p style="margin-top:20px;color:var(--muted);font-style:italic;font-size:15px">Doors open at 6:00 AM. Walk-ins welcome.</p>
+      </div>
+      <div class="visit-card">
+        <h2>Find the shop</h2>
+        <p>116 South Warren St<br>Trenton, NJ</p>
+        <p><a class="tel" href="tel:+16093922211">(609) 392-2211</a></p>
+        <p style="margin-top:16px">No online booking here. Call Joe to book your chair.</p>
+        <a class="btn" href="tel:+16093922211">Call to book</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <p><strong style="color:#d8c08a">STATE BARBER SHOP</strong> | 116 South Warren St, Trenton, NJ | (609) 392-2211</p>
+    <p>Design preview by Freightfolio. This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of State Barber Shop. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net">https://freightfolio.net</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

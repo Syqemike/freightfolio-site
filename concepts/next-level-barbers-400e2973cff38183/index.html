@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Next Level Barbers | Burlington, VT | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141414; --ink-soft:#1e1e1e; --paper:#f7f5f1; --red:#e5383b;
+  --gray:#8a8a8a; --line:#2b2b2b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",sans-serif;background:var(--ink);color:var(--paper);line-height:1.7;font-size:16.5px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.disclosure{background:var(--red);color:#fff;font-size:12.5px;font-weight:500;letter-spacing:.05em;text-align:center;padding:9px 18px}
+.disclosure strong{font-weight:700}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(20,20,20,.95);border-bottom:1px solid var(--line)}
+.topbar-inner{max-width:1200px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:"Archivo Black",sans-serif;font-size:18px;letter-spacing:.04em}
+.brand span{color:var(--red)}
+nav.main{display:flex;gap:26px;font-size:13.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+nav.main a{text-decoration:none;color:var(--paper);padding:4px 0;border-bottom:2px solid transparent}
+nav.main a:hover{border-color:var(--red)}
+.hero{max-width:1200px;margin:0 auto;padding:64px 28px 72px}
+.hero-tag{font-size:13px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+h1{font-family:"Archivo Black",sans-serif;font-size:clamp(52px,8vw,110px);line-height:.98;letter-spacing:.005em;text-transform:uppercase;margin-bottom:28px}
+h1 span{color:var(--red)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:end}
+.hero-grid p.lede{font-size:18px;color:#c9c4bb;max-width:44ch}
+.hero-grid p.lede strong{color:#fff}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.collage figure:first-child{grid-column:1/-1}
+.collage img{width:100%;object-fit:cover;filter:saturate(.92)}
+.collage figure:first-child img{aspect-ratio:16/9}
+.collage img{aspect-ratio:4/3.4}
+.collage figcaption{font-size:12px;color:var(--gray);margin-top:8px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;padding:16px 36px;transition:transform .15s ease,box-shadow .15s ease}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(229,56,59,.45)}
+.btn-line{border:2px solid var(--paper);color:var(--paper)}
+.btn-line:hover{background:var(--paper);color:var(--ink)}
+section{padding:80px 28px}
+.wrap{max-width:1200px;margin:0 auto}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+h2{font-family:"Archivo Black",sans-serif;font-size:clamp(34px,4.6vw,58px);text-transform:uppercase;line-height:1.02;margin-bottom:14px}
+.section-sub{color:#b6b0a4;max-width:58ch;margin-bottom:44px;font-size:17px}
+.service-rows{border-top:1px solid var(--line)}
+.service-row{display:grid;grid-template-columns:90px 1fr auto;gap:24px;align-items:center;padding:26px 10px;border-bottom:1px solid var(--line);transition:background .15s ease}
+.service-row:hover{background:var(--ink-soft)}
+.service-row .n{font-family:"Archivo Black",sans-serif;font-size:30px;color:var(--red)}
+.service-row h3{font-family:"Archivo Black",sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:.02em;margin-bottom:4px}
+.service-row p{color:#a8a29a;font-size:15px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.duo figure img{aspect-ratio:4/4.4;object-fit:cover;width:100%}
+.duo figcaption{font-size:12.5px;color:var(--gray);margin-top:10px}
+.duo p{color:#c9c4bb;margin-bottom:16px;font-size:17px}
+.duo strong{color:#fff}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery-grid figure img{aspect-ratio:1/1.15;object-fit:cover;width:100%}
+.gallery-grid figcaption{font-size:12.5px;color:var(--gray);margin-top:8px}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.info-card{background:var(--ink-soft);border:1px solid var(--line);padding:46px}
+.hours-table{width:100%;border-collapse:collapse;margin-top:16px}
+.hours-table th,.hours-table td{padding:12px 4px;border-bottom:1px solid var(--line);font-size:15.5px;text-align:left}
+.hours-table th{font-weight:500;color:var(--gray)}
+.hours-table td{font-weight:700;text-align:right;color:var(--paper)}
+.info-card a.tel{font-family:"Archivo Black",sans-serif;font-size:30px;color:#fff;text-decoration:none;border-bottom:4px solid var(--red)}
+.rating-once{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:14px;letter-spacing:.06em;padding:8px 18px;margin:18px 0 6px}
+footer{background:#0c0c0c;color:#7d766b;padding:44px 28px;font-size:13.5px;line-height:1.8}
+.foot-inner{max-width:1200px;margin:0 auto}
+footer a{color:#e07f81}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .duo{grid-template-columns:1fr}
+  .info-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .service-row{grid-template-columns:60px 1fr}
+  .service-row .cta{display:none}
+  .topbar-inner{flex-direction:column;align-items:flex-start;gap:10px}
+  nav.main{flex-wrap:wrap;gap:14px}
+}
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Design preview.</strong> This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">NEXT LEVEL <span>BARBERS</span></div>
+    <nav class="main" aria-label="Section navigation">
+      <a href="#services">Services</a>
+      <a href="#barbers">The Barbers</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Hours &amp; Visit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-top:64px;padding-bottom:72px">
+  <p class="hero-tag">163 Pearl St, Burlington VT</p>
+  <h1>Walk in. <span>Level up.</span> Walk out sharp.</h1>
+  <div class="hero-grid">
+    <div>
+      <p class="lede">Next Level Barbers is an urban Burlington shop built around the cut. Owner <strong>Dani Diallo</strong> brings 24 years behind the chair, and barbers <strong>Dani</strong> and <strong>King</strong> keep the clippers moving. Walk-ins welcome.</p>
+      <div class="cta-row">
+        <a class="btn btn-red" href="tel:+18023245483">Call to book</a>
+        <a class="btn btn-line" href="#services">See services</a>
+      </div>
+    </div>
+    <div class="collage">
+      <figure>
+        <img src="img/photo-2.jpg" alt="Barber doing precision grooming on a bearded client">
+        <figcaption>Precision grooming, close up. Stock photo.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-1.jpg" alt="Close-up of scissors and comb cutting hair">
+        <figcaption>Scissors and comb. Stock photo.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-3.jpg" alt="Barber applying a hot towel to a customer">
+        <figcaption>Hot towel, ready. Stock photo.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:var(--ink-soft)">
+  <div class="wrap">
+    <p class="kicker">Services</p>
+    <h2>Pick your service</h2>
+    <p class="section-sub">Cuts, shaves, and detail work. Every service is done in the shop by Dani or King.</p>
+    <div class="service-rows">
+      <div class="service-row"><span class="n">01</span><div><h3>Haircut</h3><p>A full cut, consultation to finish.</p></div><span class="cta"></span></div>
+      <div class="service-row"><span class="n">02</span><div><h3>Hot Towel Shave</h3><p>Classic shave with a hot towel prep.</p></div><span class="cta"></span></div>
+      <div class="service-row"><span class="n">03</span><div><h3>Beard Trim</h3><p>Shaped and detailed to match the cut.</p></div><span class="cta"></span></div>
+      <div class="service-row"><span class="n">04</span><div><h3>Scalp Treatment</h3><p>Care for the scalp between cuts.</p></div><span class="cta"></span></div>
+      <div class="service-row"><span class="n">05</span><div><h3>Massage Therapy</h3><p>Offered in the shop. Ask when you book.</p></div><span class="cta"></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="barbers">
+  <div class="wrap duo">
+    <figure>
+      <img src="img/photo-4.jpg" alt="Barber giving a precise haircut">
+      <figcaption>Precision in every pass. Stock photo.</figcaption>
+    </figure>
+    <div>
+      <p class="kicker">The barbers</p>
+      <h2>Two chairs. Zero filler.</h2>
+      <p><strong>Dani Diallo</strong> owns the shop and has spent 24 years as a hairstylist, a depth of experience that shows in the chair. He was featured by Seven Days VT in October 2025.</p>
+      <p>Alongside him, <strong>King</strong> keeps the second chair moving. Walk-ins are accepted, and appointments run through the shop's Booksy page.</p>
+      <div class="cta-row">
+        <a class="btn btn-red" href="tel:+18023245483">Call to book</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="padding-top:20px">
+  <div class="wrap">
+    <p class="kicker">Gallery</p>
+    <h2>The work</h2>
+    <p class="section-sub">Cuts, shaves, and finishes from the Pearl Street chairs.</p>
+    <div class="gallery-grid">
+      <figure><img src="img/photo-5.jpg" alt="Beard trim with a warm towel treatment"><figcaption>Beard trim, warm towel finish. Stock photo.</figcaption></figure>
+      <figure><img src="img/photo-2.jpg" alt="Barber doing precision grooming"><figcaption>Precision grooming. Stock photo.</figcaption></figure>
+      <figure><img src="img/photo-4.jpg" alt="Barber giving a precise haircut"><figcaption>A cut in progress. Stock photo.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="visit" style="padding-top:20px">
+  <div class="wrap">
+    <p class="kicker">Hours and visit</p>
+    <h2>Get in the chair</h2>
+    <p class="section-sub">Walk-ins are accepted. Call ahead if you want a set time.</p>
+    <div class="info-grid">
+      <div class="info-card">
+        <h2 style="font-size:28px">Shop hours</h2>
+        <table class="hours-table">
+          <tr><th>Tuesday - Thursday</th><td>10:00 AM - 5:00 PM</td></tr>
+          <tr><th>Friday</th><td>11:00 AM - 7:00 PM</td></tr>
+          <tr><th>Saturday</th><td>11:00 AM - 5:00 PM</td></tr>
+          <tr><th>Sunday - Monday</th><td>Call to confirm</td></tr>
+        </table>
+      </div>
+      <div class="info-card">
+        <h2 style="font-size:28px">Find the shop</h2>
+        <p style="color:#b6b0a4;margin:14px 0">163 Pearl St<br>Burlington, VT 05401</p>
+        <p><a class="tel" href="tel:+18023245483">(802) 324-5483</a></p>
+        <div><span class="rating-once">4.7 from 14 place-listing reviews</span></div>
+        <div class="cta-row">
+          <a class="btn btn-red" href="tel:+18023245483">Call to book</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <p><strong style="color:#e07f81">NEXT LEVEL BARBERS</strong> | 163 Pearl St, Burlington, VT 05401 | (802) 324-5483</p>
+    <p>Design preview by Freightfolio. This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Next Level Barbers. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net">https://freightfolio.net</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

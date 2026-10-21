@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Virtue Barber Company | Portland, ME | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#faf8f3; --denim:#245c7a; --denim-dark:#18425a; --terra:#c96f4a;
+  --sand:#eee5d3; --ink:#232a2e; --muted:#6a7377; --line:#e2d9c6;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;font-size:16.5px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.disclosure{background:var(--denim-dark);color:#e8eef2;font-size:12.5px;letter-spacing:.04em;text-align:center;padding:9px 18px}
+.disclosure strong{color:#f0b48a;font-weight:600}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(250,248,243,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar-inner{max-width:1160px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:21px;color:var(--denim-dark);letter-spacing:.02em}
+.brand em{font-style:normal;color:var(--terra)}
+nav.main{display:flex;gap:24px;font-size:14px;font-weight:500}
+nav.main a{text-decoration:none;color:var(--denim-dark);padding:4px 2px;border-bottom:2px solid transparent}
+nav.main a:hover{border-color:var(--terra)}
+.hero-photo{position:relative;height:min(68vh,620px);min-height:420px;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-card{max-width:1160px;margin:-120px auto 0;position:relative;z-index:5;padding:0 28px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:48px 52px;box-shadow:0 30px 70px rgba(24,66,90,.14)}
+.card .tag{display:inline-block;background:var(--denim);color:#fff;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:7px 16px;border-radius:30px;margin-bottom:20px}
+h1{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:clamp(40px,4.8vw,62px);line-height:1.06;color:var(--denim-dark);margin-bottom:16px}
+.card p.lede{color:var(--muted);font-size:18px;max-width:58ch;margin-bottom:14px}
+.rating-line{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--denim-dark);margin-bottom:24px;font-size:15px}
+.stars{color:var(--terra);font-size:19px;letter-spacing:.12em}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15.5px;padding:14px 30px;border-radius:30px;transition:transform .15s ease,box-shadow .15s ease}
+.btn-solid{background:var(--terra);color:#fff}
+.btn-solid:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,111,74,.4)}
+.btn-ghost{border:2px solid var(--denim);color:var(--denim)}
+.btn-ghost:hover{background:var(--denim);color:#fff}
+section{padding:76px 28px}
+.wrap{max-width:1160px;margin:0 auto}
+h2{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:clamp(30px,3.4vw,42px);color:var(--denim-dark);margin-bottom:12px}
+.section-sub{color:var(--muted);max-width:60ch;margin-bottom:44px;font-size:17px}
+.team{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;background:var(--sand);border-radius:18px;padding:52px}
+.team figure img{border-radius:12px;aspect-ratio:4/4.6;object-fit:cover;width:100%}
+.team figcaption{font-size:12.5px;color:var(--muted);margin-top:10px}
+.team h2{margin-bottom:16px}
+.team p{color:#4c5559;margin-bottom:14px}
+.team-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}
+.team-list div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px}
+.team-list strong{font-family:"Space Grotesk",sans-serif;color:var(--denim-dark);display:block;font-size:16px}
+.team-list span{font-size:13.5px;color:var(--muted)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px 30px;transition:transform .18s ease,box-shadow .18s ease}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(24,66,90,.12)}
+.service-card h3{font-family:"Space Grotesk",sans-serif;font-size:21px;color:var(--denim-dark);margin-bottom:10px}
+.service-card p{font-size:15px;color:var(--muted)}
+.service-card .num{font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--terra);font-size:14px;letter-spacing:.18em;margin-bottom:12px;display:block}
+.masonry{columns:3;column-gap:18px}
+.masonry figure{break-inside:avoid;margin-bottom:18px}
+.masonry img{border-radius:12px;width:100%}
+.masonry figcaption{font-size:12.5px;color:var(--muted);margin-top:8px}
+.info-panels{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:44px}
+.hours-table{width:100%;border-collapse:collapse;margin-top:8px}
+.hours-table th,.hours-table td{padding:11px 4px;border-bottom:1px solid var(--line);font-size:15.5px;text-align:left}
+.hours-table th{font-weight:500;color:var(--muted)}
+.hours-table td{font-weight:600;color:var(--denim-dark);text-align:right}
+.panel.visit{background:var(--denim-dark);color:#dfe9ef;border:none}
+.panel.visit h2{color:#fff}
+.panel.visit p{color:#b9cbd6;margin-bottom:10px}
+.panel.visit a.tel{font-family:"Space Grotesk",sans-serif;font-size:27px;font-weight:700;color:#fff;text-decoration:none;border-bottom:3px solid var(--terra)}
+.addr{margin:16px 0 24px;font-size:16.5px}
+footer{background:var(--denim-dark);color:#8fa6b3;padding:44px 28px;font-size:13.5px;line-height:1.8}
+.foot-inner{max-width:1160px;margin:0 auto}
+footer a{color:#e6c9a8}
+@media(max-width:900px){
+  .card{padding:34px 26px}
+  .team{grid-template-columns:1fr;padding:30px}
+  .service-grid{grid-template-columns:1fr}
+  .masonry{columns:2}
+  .info-panels{grid-template-columns:1fr}
+  .topbar-inner{flex-direction:column;align-items:flex-start;gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Design preview.</strong> This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">VIRTUE <em>BARBER</em> COMPANY</div>
+    <nav class="main" aria-label="Section navigation">
+      <a href="#team">The Team</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Hours &amp; Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-photo">
+  <img src="img/photo-1.jpg" alt="Man receiving a haircut at a bright modern barbershop">
+</div>
+<div class="hero-card">
+  <div class="card">
+    <span class="tag">Portland, Maine</span>
+    <h1>Bright shop. Steady hands. Great cuts.</h1>
+    <p class="lede">Virtue Barber Company is a bright, clean, and spacious shop in Portland where the whole crew takes grooming seriously. Bring the kids, bring the dog, and settle into a chair that is all about you.</p>
+    <div class="rating-line"><span class="stars">***** </span> 5.0 from 352 Google reviews</div>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="https://www.vagaro.com/virtuebarberco" target="_blank" rel="noopener">Book Now</a>
+      <a class="btn btn-ghost" href="tel:+12076928144">Call (207) 692-8144</a>
+    </div>
+  </div>
+</div>
+
+<section id="team">
+  <div class="wrap">
+    <div class="team">
+      <div>
+        <h2>The team behind the chairs</h2>
+        <p>Owner Dillon leads a crew of four barbers who cover everything from classic fades to modern styling. The shop runs on real conversation and real attention to detail.</p>
+        <p>Free Wi-Fi and free parking make the visit easy. The shop is kid friendly and pet friendly, and shop dog Waylon, a wire-haired dachshund, often holds down the floor.</p>
+        <div class="team-list">
+          <div><strong>Dillon</strong><span>Owner</span></div>
+          <div><strong>Aidan</strong><span>Barber</span></div>
+          <div><strong>Hannah</strong><span>Barber</span></div>
+          <div><strong>Lance</strong><span>Barber</span></div>
+        </div>
+      </div>
+      <figure>
+        <img src="img/photo-4.jpg" alt="Barber cutting a young boy's hair in a bright shop">
+        <figcaption>Kid friendly chairs for the next generation of clients. Stock photo.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding-top:20px">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="section-sub">Every service below is done in the shop by one of the Virtue barbers.</p>
+    <div class="service-grid">
+      <div class="service-card"><span class="num">01</span><h3>Men's Cuts</h3><p>A full consultation and cut, finished with styling that suits how you actually wear your hair.</p></div>
+      <div class="service-card"><span class="num">02</span><h3>Classic Fades</h3><p>Clean, blended fades with crisp lines, from low to high.</p></div>
+      <div class="service-card"><span class="num">03</span><h3>Beard Trim and Styling</h3><p>Shaped, lined, and detailed so the beard matches the haircut.</p></div>
+      <div class="service-card"><span class="num">04</span><h3>Modern Styling</h3><p>Current cuts and finishes for clients who want something fresh.</p></div>
+      <div class="service-card"><span class="num">05</span><h3>Mullets</h3><p>Yes, really. Done right, on purpose.</p></div>
+      <div class="service-card"><span class="num">06</span><h3>Precision Grooming</h3><p>Detail work and cleanup for a sharp finish between full cuts.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="padding-top:20px">
+  <div class="wrap">
+    <h2>From the chairs</h2>
+    <p class="section-sub">Cuts, trims, and detail work from the Virtue floor.</p>
+    <div class="masonry">
+      <figure><img src="img/photo-2.jpg" alt="Barber using clippers, side view"><figcaption>Clipper work, side view. Stock photo.</figcaption></figure>
+      <figure><img src="img/photo-5.jpg" alt="Close-up of beard styling"><figcaption>Beard styling up close. Stock photo.</figcaption></figure>
+      <figure><img src="img/photo-3.jpg" alt="Man receiving a haircut in a barbershop"><figcaption>A cut in progress. Stock photo.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="visit" style="padding-top:20px">
+  <div class="wrap">
+    <h2>Hours and visit</h2>
+    <p class="section-sub">Walk-ins and appointments, right on Brighton Avenue.</p>
+    <div class="info-panels">
+      <div class="panel">
+        <h2 style="font-size:26px">Shop hours</h2>
+        <table class="hours-table">
+          <tr><th>Monday - Tuesday</th><td>8:00 AM - 5:00 PM</td></tr>
+          <tr><th>Wednesday</th><td>9:00 AM - 5:00 PM</td></tr>
+          <tr><th>Thursday - Friday</th><td>8:00 AM - 5:00 PM</td></tr>
+          <tr><th>Saturday</th><td>7:00 AM - 5:00 PM</td></tr>
+          <tr><th>Sunday</th><td>8:30 AM - 5:00 PM</td></tr>
+        </table>
+      </div>
+      <div class="panel visit">
+        <h2 style="font-size:26px">Find us</h2>
+        <p class="addr">548 Brighton Ave<br>Portland, ME 04102</p>
+        <p><a class="tel" href="tel:+12076928144">(207) 692-8144</a></p>
+        <p style="margin-top:20px">Book online through the shop's Vagaro page, or call the shop directly.</p>
+        <div class="cta-row" style="margin-top:12px">
+          <a class="btn btn-solid" href="https://www.vagaro.com/virtuebarberco" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <p><strong style="color:#e6c9a8">Virtue Barber Company</strong> | 548 Brighton Ave, Portland, ME 04102 | (207) 692-8144</p>
+    <p>Design preview by Freightfolio. This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Virtue Barber Company. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net">https://freightfolio.net</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Next Level Barber Co. | Portland, ME | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pine:#23402f; --pine-deep:#172c20; --cream:#f6f1e4; --cream-dim:#efe7d2;
+  --brass:#b0894f; --ink:#171c18; --muted:#5c625b; --line:#d9cdb4;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;font-size:16.5px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.disclosure{background:var(--pine-deep);color:#e9e2cf;font-size:12.5px;letter-spacing:.04em;text-align:center;padding:9px 18px}
+.disclosure strong{color:var(--brass);font-weight:600}
+.site-head{background:var(--cream);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.head-inner{max-width:1180px;margin:0 auto;padding:16px 28px;display:flex;align-items:baseline;justify-content:space-between;gap:24px}
+.brand{font-family:"Fraunces",serif;font-weight:700;font-size:23px;color:var(--pine);letter-spacing:.01em}
+.brand small{display:block;font-family:"Inter",sans-serif;font-size:11px;letter-spacing:.28em;color:var(--brass);font-weight:600;margin-top:2px}
+nav.main{display:flex;gap:26px;font-size:14px;font-weight:500}
+nav.main a{text-decoration:none;color:var(--pine);border-bottom:2px solid transparent;padding-bottom:3px}
+nav.main a:hover{border-color:var(--brass)}
+.hero{max-width:1180px;margin:0 auto;padding:72px 28px 64px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.eyebrow{font-size:12.5px;letter-spacing:.26em;font-weight:600;color:var(--brass);text-transform:uppercase;margin-bottom:18px}
+h1{font-family:"Fraunces",serif;font-weight:700;font-size:clamp(44px,5.4vw,74px);line-height:1.04;color:var(--pine);margin-bottom:22px}
+h1 em{font-style:italic;font-weight:600}
+.hero p.lede{font-size:18px;color:var(--muted);max-width:46ch;margin-bottom:14px}
+.rating-line{font-size:14px;font-weight:600;color:var(--pine);margin-bottom:26px}
+.rating-line span{background:var(--pine);color:var(--cream);border-radius:20px;padding:2px 12px;margin-right:8px;font-size:13px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15.5px;padding:14px 30px;border-radius:3px;transition:transform .15s ease,box-shadow .15s ease}
+.btn-solid{background:var(--pine);color:var(--cream)}
+.btn-solid:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(35,64,47,.28)}
+.btn-ghost{border:2px solid var(--pine);color:var(--pine)}
+.btn-ghost:hover{background:var(--pine);color:var(--cream)}
+.hero-figure{position:relative}
+.hero-figure img{border-radius:6px;box-shadow:0 24px 60px rgba(23,44,32,.22)}
+.hero-figure figcaption{font-size:12.5px;color:var(--muted);margin-top:10px}
+.hero-stamp{position:absolute;left:-30px;bottom:36px;background:var(--brass);color:#fff;font-family:"Fraunces",serif;font-weight:600;font-size:15px;padding:12px 22px;border-radius:3px;box-shadow:0 10px 26px rgba(0,0,0,.2);letter-spacing:.02em}
+section{padding:72px 28px}
+.wrap{max-width:1180px;margin:0 auto}
+.kicker{font-size:12.5px;letter-spacing:.26em;font-weight:600;color:var(--brass);text-transform:uppercase;margin-bottom:12px}
+h2{font-family:"Fraunces",serif;font-weight:700;font-size:clamp(32px,3.6vw,46px);color:var(--pine);margin-bottom:10px}
+.section-sub{color:var(--muted);max-width:62ch;margin-bottom:40px}
+.services{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.service-list{column-count:2;column-gap:64px}
+.service-item{break-inside:avoid;border-bottom:1px solid var(--line);padding:18px 0;display:flex;justify-content:space-between;align-items:baseline;gap:20px}
+.service-item:first-child{border-top:1px solid var(--line)}
+.service-item h3{font-family:"Fraunces",serif;font-size:21px;font-weight:600;color:var(--pine)}
+.service-item p{font-size:14px;color:var(--muted);margin-top:4px}
+.price{font-weight:600;color:var(--brass);white-space:nowrap;font-size:15px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-copy p{color:var(--muted);margin-bottom:16px;font-size:17px}
+.about-copy strong{color:var(--pine)}
+.about figure img{border-radius:6px}
+.about figcaption{font-size:12.5px;color:var(--muted);margin-top:10px}
+.gallery-band{background:var(--pine-deep);color:var(--cream)}
+.gallery-band h2{color:var(--cream)}
+.gallery-band .section-sub{color:#b9bfae}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.strip figure img{border-radius:5px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.strip figcaption{font-size:12px;color:#b9bfae;margin-top:8px}
+.hours-visit{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.hours-table{width:100%;border-collapse:collapse;margin-top:24px}
+.hours-table th,.hours-table td{text-align:left;padding:13px 6px;border-bottom:1px solid var(--line);font-size:15.5px}
+.hours-table th{font-weight:500;color:var(--muted)}
+.hours-table td{font-weight:600;color:var(--pine);text-align:right}
+.visit-card{background:var(--pine);color:var(--cream);border-radius:8px;padding:44px}
+.visit-card h2{color:var(--cream);font-size:34px}
+.visit-card p{color:#cdd3bd;margin-bottom:12px}
+.visit-card a.tel{font-family:"Fraunces",serif;font-size:26px;font-weight:600;color:#fff;text-decoration:none;border-bottom:2px solid var(--brass)}
+.visit-card .addr{margin:18px 0 26px;font-size:16px}
+footer{background:var(--pine-deep);color:#9aa18f;padding:44px 28px;font-size:13.5px;line-height:1.8}
+.foot-inner{max-width:1180px;margin:0 auto}
+footer a{color:#d8cfae}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding-top:48px}
+  .hero-stamp{left:12px}
+  .about,.hours-visit{grid-template-columns:1fr}
+  .strip{grid-template-columns:repeat(2,1fr)}
+  .service-list{column-count:1}
+  .head-inner{flex-direction:column;gap:10px;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>Design preview.</strong> This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+<header class="site-head">
+  <div class="head-inner">
+    <div class="brand">Next Level Barber Co.<small>PORTLAND, MAINE</small></div>
+    <nav class="main" aria-label="Section navigation">
+      <a href="#services">Services</a>
+      <a href="#about">The Shop</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-top:72px;padding-bottom:64px">
+  <div>
+    <p class="eyebrow">Old Port, Portland, Maine</p>
+    <h1>Sharp fades. <em>Classic craft.</em> Cut your way.</h1>
+    <p class="lede">Next Level Barber Co. is a modern-traditional men's shop in Portland's Old Port, run by Greg and barber Joe. Skin fades are the specialty, and the shop is set up to welcome the whole family.</p>
+    <p class="rating-line"><span>5.0</span> from 94 Google reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="https://www.vagaro.com/nextlevelbarberco" target="_blank" rel="noopener">Book Now</a>
+      <a class="btn btn-ghost" href="tel:+12078088542">Call (207) 808-8542</a>
+    </div>
+  </div>
+  <figure class="hero-figure">
+    <img src="img/photo-1.jpg" alt="Barber finishing a haircut in a modern barbershop">
+    <figcaption>A fresh cut, finished right in the chair. Stock photo.</figcaption>
+    <div class="hero-stamp">Skin-fade specialists</div>
+  </figure>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <p class="kicker">Services</p>
+    <h2>What the chair offers</h2>
+    <p class="section-sub">Clean lines, hot towels, and straight razors. Here is the full menu at Next Level Barber Co.</p>
+    <div class="service-list">
+      <div class="service-item"><div><h3>Haircuts</h3><p>Consultation, cut, and styled finish.</p></div></div>
+      <div class="service-item"><div><h3>Skin Fades</h3><p>The house specialty. Crisp lines, blended to nothing.</p></div></div>
+      <div class="service-item"><div><h3>Scissor Cuts</h3><p>Precision scissor work for longer styles.</p></div><span class="price">from $50</span></div>
+      <div class="service-item"><div><h3>Beard Trims</h3><p>Shaped, lined up, and detailed.</p></div></div>
+      <div class="service-item"><div><h3>Hot-Towel Shaves</h3><p>Classic service with a hot towel prep.</p></div></div>
+      <div class="service-item"><div><h3>Straight-Razor Shaves</h3><p>Close, clean, old-school.</p></div></div>
+      <div class="service-item"><div><h3>Head Shaves</h3><p>Smooth finish with care for the scalp.</p></div></div>
+      <div class="service-item"><div><h3>Kids' Cuts</h3><p>Patient, family-friendly appointments.</p></div></div>
+      <div class="service-item"><div><h3>Hair Coloring</h3><p>Color services done in the shop.</p></div></div>
+      <div class="service-item"><div><h3>Eyebrow Trims</h3><p>Quick detail to finish the look.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="about-copy">
+      <p class="kicker">The shop</p>
+      <h2>Old Port grooming, done right</h2>
+      <p>Next Level Barber Co. sits on Congress Street in Portland's Old Port, pairing modern style with the traditional barbershop playbook. Greg runs the shop alongside barber Joe, and the work speaks for itself in the reviews.</p>
+      <p>Whether you want a razor-sharp skin fade, a classic scissor cut, or a full hot-towel shave, you will leave the chair looking like yourself on your best day.</p>
+      <p><strong>Kids are welcome.</strong> Bring the whole crew; there is a cut for everyone.</p>
+    </div>
+    <figure>
+      <img src="img/photo-4.jpg" alt="Young boy getting a haircut at a barbershop">
+      <figcaption>Kids are welcome in the chair too. Stock photo.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="gallery-band" id="gallery">
+  <div class="wrap">
+    <p class="kicker">Gallery</p>
+    <h2>The work in frame</h2>
+    <p class="section-sub">Fades, details, and finishes from the chair.</p>
+    <div class="strip">
+      <figure><img src="img/photo-2.jpg" alt="Clipper cutting a fade close-up"><figcaption>Clipper work on a clean fade. Stock photo.</figcaption></figure>
+      <figure><img src="img/photo-3.jpg" alt="Barber close-up finishing a haircut"><figcaption>Detail in every finish. Stock photo.</figcaption></figure>
+      <figure><img src="img/photo-5.jpg" alt="Razor and comb during a haircut"><figcaption>Razor and comb, steady hands. Stock photo.</figcaption></figure>
+      <figure><img src="img/photo-1.jpg" alt="Barber finishing a haircut in a modern barbershop"><figcaption>A fresh cut, finished right in the chair. Stock photo.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="wrap hours-visit">
+    <div>
+      <p class="kicker">Hours</p>
+      <h2>Open seven days</h2>
+      <table class="hours-table">
+        <tr><th>Monday through Friday</th><td>9:00 AM - 6:30 PM</td></tr>
+        <tr><th>Saturday</th><td>9:00 AM - 5:00 PM</td></tr>
+        <tr><th>Sunday</th><td>10:00 AM - 2:00 PM</td></tr>
+      </table>
+    </div>
+    <div class="visit-card" id="visit">
+      <p class="kicker" style="color:var(--brass)">Visit</p>
+      <h2>Find the shop</h2>
+      <p class="addr">437 Congress St<br>Portland, ME 04101</p>
+      <p><a class="tel" href="tel:+12078088542">(207) 808-8542</a></p>
+      <p style="margin-top:24px">Booking is easiest online through the shop's Vagaro page.</p>
+      <div class="cta-row" style="margin-top:8px">
+        <a class="btn" style="background:var(--brass);color:#fff" href="https://www.vagaro.com/nextlevelbarberco" target="_blank" rel="noopener">Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <p><strong style="color:#d8cfae">Next Level Barber Co.</strong> | 437 Congress St, Portland, ME 04101 | (207) 808-8542</p>
+    <p>Design preview by Freightfolio. This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Next Level Barber Co. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net">https://freightfolio.net</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
