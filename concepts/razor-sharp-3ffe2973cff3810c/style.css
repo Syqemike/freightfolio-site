@@ -61,3 +61,5 @@ table.hours td{text-align:right}
 .foot-disc{color:#fff;font-weight:600;margin-bottom:10px}
 .foot-in{max-width:1200px;margin:0 auto;text-align:center}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-copy{padding:52px 32px}.split{grid-template-columns:1fr}.gal-grid{grid-template-columns:1fr 1fr}.num-row{grid-template-columns:60px 1fr}.num-row p{grid-column:2}.stat-row{grid-template-columns:1fr}.stat{border-right:none;border-bottom:1px solid #3a4653}.site-nav a{display:none}}
+
+.img-cap{font-size:.88rem;color:var(--muted);padding:8px 4px 0}
