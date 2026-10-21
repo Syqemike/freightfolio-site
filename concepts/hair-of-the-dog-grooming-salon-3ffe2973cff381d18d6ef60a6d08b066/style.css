@@ -1,0 +1,208 @@
+/* Hair of the Dog Grooming Salon - warm, friendly, personal */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --cream: #faf6ec;
+  --forest: #1e4d43;
+  --forest-deep: #14352e;
+  --honey: #d9a441;
+  --honey-soft: #f7e8c8;
+  --ink: #232620;
+  --line: #e3d9c2;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Karla', system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+img { display: block; max-width: 100%; height: auto; border-radius: 18px; }
+
+.disclosure {
+  background: var(--forest-deep);
+  color: #f2e9d4;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 10px 16px;
+}
+
+.site-head {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.brand {
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--forest);
+  text-decoration: none;
+}
+.brand .dog { color: var(--honey); }
+
+nav.mainnav a {
+  margin-left: 8px;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+nav.mainnav a:hover, nav.mainnav a.active { background: var(--honey-soft); color: var(--forest-deep); }
+
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 30px; }
+
+/* Hero: headline + staggered photo collage */
+.hero { padding: 48px 0 72px; }
+.hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; }
+.hero-type .kicker {
+  display: inline-block;
+  background: var(--forest);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 7px 16px;
+  border-radius: 999px;
+}
+.hero-type h1 {
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  font-weight: 750;
+  font-size: clamp(44px, 6vw, 78px);
+  line-height: 1.02;
+  color: var(--forest-deep);
+  margin: 20px 0 16px;
+}
+.hero-type h1 em { font-style: normal; color: var(--honey); }
+.hero-type p.lede { font-size: 19px; color: #4a5044; max-width: 44ch; }
+
+.collage { position: relative; }
+.collage img.main { width: 78%; aspect-ratio: 4/4.6; object-fit: cover; }
+.collage img.small {
+  position: absolute; right: 0; bottom: -34px;
+  width: 52%; aspect-ratio: 1/1; object-fit: cover;
+  border: 8px solid var(--cream);
+}
+.collage figcaption { font-size: 12.5px; color: #8a8474; margin-top: 46px; }
+
+.btn {
+  display: inline-block;
+  background: var(--forest);
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 26px;
+}
+.btn:hover { background: var(--forest-deep); }
+.btn.honey { background: var(--honey); color: var(--forest-deep); }
+.btn.honey:hover { background: #c6952f; }
+
+.section { padding: 76px 0; }
+.section h2 {
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  font-weight: 750;
+  font-size: clamp(30px, 4vw, 50px);
+  line-height: 1.05;
+  color: var(--forest-deep);
+  margin-bottom: 14px;
+}
+.section .sub { color: #4a5044; max-width: 60ch; margin-bottom: 36px; }
+
+.band {
+  background: var(--forest);
+  color: #f2ecdb;
+  padding: 64px 0;
+  border-radius: 28px;
+  margin: 0 20px;
+}
+.band h2 { color: #fff; }
+.band p { color: #d8cfb8; max-width: 56ch; }
+.band .stars { color: var(--honey); font-size: 24px; letter-spacing: 5px; }
+
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.split .photo img { width: 100%; aspect-ratio: 4/4.4; object-fit: cover; }
+.split figcaption { font-size: 12.5px; color: #8a8474; margin-top: 8px; }
+
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 36px 32px;
+}
+.card h3 {
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  font-size: 24px;
+  color: var(--forest-deep);
+  margin-bottom: 10px;
+}
+.card p { color: #4a5044; }
+.card .tag {
+  display: inline-block;
+  background: var(--honey-soft);
+  color: var(--forest-deep);
+  font-size: 13px; font-weight: 700;
+  padding: 5px 14px; border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.hours-note {
+  background: var(--honey-soft);
+  border-radius: 20px;
+  padding: 32px;
+  margin-top: 40px;
+}
+.hours-note h3 {
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  color: var(--forest-deep);
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.gallery-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+.gallery-grid figure:nth-child(1) { grid-column: span 7; }
+.gallery-grid figure:nth-child(2) { grid-column: span 5; }
+.gallery-grid figure:nth-child(3) { grid-column: span 5; }
+.gallery-grid figure:nth-child(4) { grid-column: span 7; }
+.gallery-grid img { width: 100%; height: 100%; aspect-ratio: 16/11; object-fit: cover; }
+.gallery-grid figcaption { font-size: 12.5px; color: #8a8474; margin-top: 8px; }
+
+.cta-band { text-align: center; padding: 80px 0; }
+.cta-band h2 { margin-bottom: 8px; }
+
+footer.site-foot {
+  background: var(--forest-deep);
+  color: #cfc4a8;
+  padding: 40px 30px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 28px 28px 0 0;
+}
+footer.site-foot a { color: #fff; }
+footer.site-foot .fine { margin-top: 10px; font-size: 12.5px; color: #9a9077; }
+
+@media (max-width: 820px) {
+  .hero-grid, .split, .cards { grid-template-columns: 1fr; }
+  .band { margin: 0 10px; }
+  .collage img.small { bottom: -24px; }
+  .gallery-grid figure { grid-column: span 12 !important; }
+  .wrap { padding: 0 20px; }
+}

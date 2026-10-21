@@ -1,0 +1,67 @@
+/* Holidays Barber Shop concept. Retro Americana ticket-stub direction. */
+:root{
+  --paper:#f6f1e3; --paper2:#efe7d2; --ink:#26211b; --soft:#6f6353;
+  --red:#a83a2c; --red-deep:#7e2a20; --green:#2f4a3a; --line:#d8cdb4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:'Karla',system-ui,sans-serif;line-height:1.65;font-size:17px}
+img{max-width:100%;display:block}
+a{color:var(--red-deep)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+.preview-bar{background:var(--green);color:#f3ecdc;font-size:13px;letter-spacing:.05em;text-align:center;padding:9px 16px}
+.preview-bar strong{letter-spacing:.14em;text-transform:uppercase;font-size:11px}
+.masthead{text-align:center;padding:34px 0 22px;border-bottom:3px double var(--line)}
+.brand{font-family:'Rokkitt',serif;font-weight:700;font-size:clamp(38px,5.4vw,58px);color:var(--ink);text-decoration:none;letter-spacing:.01em}
+.brand .amp{color:var(--red)}
+.tagline{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--soft);margin-top:6px}
+nav.main{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--line)}
+nav.main a{text-decoration:none;color:var(--ink);font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:8px 18px;border:1px solid transparent;border-radius:3px}
+nav.main a:hover{color:var(--red-deep)}
+nav.main a.active{border-color:var(--red);color:var(--red-deep);background:#fffdf6}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:64px 0 56px}
+h1{font-family:'Rokkitt',serif;font-weight:700;font-size:clamp(38px,4.6vw,56px);line-height:1.08;margin:14px 0 18px}
+.eyebrow{font-size:12px;letter-spacing:.36em;text-transform:uppercase;color:var(--red);font-weight:700}
+.lede{color:var(--soft);font-size:18px;max-width:44ch;margin-bottom:28px}
+.stamp{display:inline-block;border:2px solid var(--red);color:var(--red);font-family:'Rokkitt',serif;font-weight:700;font-size:15px;letter-spacing:.18em;text-transform:uppercase;padding:8px 18px;transform:rotate(-4deg);border-radius:4px;margin-bottom:18px}
+.hero figure img{border:8px solid #fffdf6;box-shadow:0 18px 40px -18px rgba(38,33,27,.4);outline:1px solid var(--line)}
+figcaption.cap{font-size:14px;color:var(--soft);margin-top:10px;font-style:italic}
+.tag{display:inline-block;font-style:normal;font-size:10px;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--line);border-radius:20px;padding:2px 10px;margin-left:8px}
+.btn{display:inline-block;background:var(--red);color:#fdf8ec;text-decoration:none;padding:14px 36px;font-size:14px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;border-radius:3px}
+.btn:hover{background:var(--red-deep)}
+.btn.plain{background:transparent;color:var(--red-deep);border:2px solid var(--red);margin-left:12px}
+section.block{padding:60px 0}
+h2{font-family:'Rokkitt',serif;font-weight:700;font-size:38px;margin-bottom:8px}
+.sub{color:var(--soft);margin-bottom:36px;max-width:60ch}
+.tickets{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.ticket{background:#fffdf6;border:1px solid var(--line);border-radius:8px;padding:30px 32px;position:relative}
+.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:26px;height:26px;background:var(--paper);border:1px solid var(--line);border-radius:50%;transform:translateY(-50%)}
+.ticket::before{left:-14px}
+.ticket::after{right:-14px}
+.ticket .num{font-family:'Rokkitt',serif;color:var(--red);font-size:15px;letter-spacing:.24em;font-weight:700}
+.ticket h3{font-family:'Rokkitt',serif;font-size:26px;margin:6px 0 8px}
+.ticket p{color:var(--soft);font-size:15.5px}
+.ticket .rule{border-top:2px dashed var(--line);margin-top:18px;padding-top:14px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.split img{border:8px solid #fffdf6;outline:1px solid var(--line);box-shadow:0 18px 40px -18px rgba(38,33,27,.35)}
+.hours-card{background:var(--green);color:#f3ecdc;border-radius:8px;padding:40px}
+.hours-card h2{color:#f3ecdc}
+.hours-card table{width:100%;border-collapse:collapse;margin-top:16px}
+.hours-card td{padding:10px 0;border-bottom:1px dashed rgba(243,236,220,.3)}
+.hours-card td:last-child{text-align:right}
+.hours-card .note{color:#cfc6ae;font-style:italic;font-size:14px;margin-top:14px}
+.cta-band{background:var(--red);color:#fdf8ec;padding:64px 0;text-align:center;margin-top:64px}
+.cta-band h2{color:#fdf8ec}
+.cta-band p{max-width:54ch;margin:0 auto 28px;color:#f6e3d4}
+.cta-band .btn{background:#fdf8ec;color:var(--red-deep)}
+footer.site{border-top:3px double var(--line);padding:40px 0 48px;font-size:14px;color:var(--soft)}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;margin-bottom:26px}
+footer.site h4{font-size:12px;letter-spacing:.26em;text-transform:uppercase;margin-bottom:10px;color:var(--ink)}
+.disclaimer{border-top:1px solid var(--line);padding-top:20px;font-size:13px}
+.big-tel{font-family:'Rokkitt',serif;font-size:44px;color:var(--red-deep);text-decoration:none;font-weight:700}
+@media(max-width:840px){
+  .hero{grid-template-columns:1fr}
+  .tickets{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .btn.plain{margin-left:0;margin-top:12px}
+}
