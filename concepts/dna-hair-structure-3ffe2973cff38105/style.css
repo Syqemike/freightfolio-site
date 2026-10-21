@@ -23,14 +23,16 @@ h1,h2,h3{font-family:"Fraunces",serif;font-weight:600;color:var(--plum);line-hei
 .btn.light{background:#fff;color:var(--plum);box-shadow:0 8px 20px rgba(70,40,60,.12)}
 .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px}
 .hero-proof{font-size:.95rem;color:#5c4c55;font-weight:600}
-.arch{position:relative;border-radius:220px 220px 28px 28px;overflow:hidden;border:6px solid #fff;box-shadow:0 24px 60px rgba(70,40,60,.18)}
+.arch{position:relative;border-radius:220px 220px 28px 28px;overflow:hidden;border:6px solid #fff;box-shadow:0 24px 60px rgba(70,40,60,.18);outline:1px solid var(--rose-soft);outline-offset:12px}
 .arch img{width:100%;aspect-ratio:4/5;object-fit:cover}
 section.block{padding:76px 0}
 .sec-head{max-width:640px;margin-bottom:40px}
 .sec-head h2{font-size:clamp(2rem,4vw,2.9rem);margin-bottom:12px}
 .sec-head p{color:#5c4c55;font-size:1.08rem}
-.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.svc{background:#fff;border-radius:26px;padding:32px 30px;box-shadow:0 10px 30px rgba(70,40,60,.07);border:1px solid #f0e4d8}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;counter-reset:svc}
+.svc{background:#fff;border-radius:26px;padding:32px 30px;box-shadow:0 10px 30px rgba(70,40,60,.07);border:1px solid #f0e4d8;counter-increment:svc;transition:transform .22s ease,box-shadow .22s ease}
+.svc::before{content:"0" counter(svc);font-family:"Fraunces",serif;font-style:italic;font-size:1.05rem;color:var(--rose);display:block;margin-bottom:12px;letter-spacing:.04em}
+.svc:hover{transform:translateY(-5px);box-shadow:0 20px 46px rgba(70,40,60,.13)}
 .svc h3{font-size:1.4rem;margin-bottom:10px}
 .svc p{color:#5c4c55}
 .band{background:var(--plum);color:#f3e9ec;border-radius:36px;padding:64px 56px;margin:0 24px}
