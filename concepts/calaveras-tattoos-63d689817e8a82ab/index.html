@@ -50,9 +50,7 @@
     padding:14px 20px;
     display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
   }
-  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--plum)}
-  .brand svg{width:40px;height:40px;flex:none}
-  .brand-name{font-family:Georgia,serif;font-size:26px;font-weight:700;line-height:1.1}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--plum)}  .brand-name{font-family:Georgia,serif;font-size:26px;font-weight:700;line-height:1.1}
   .brand-sub{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--turquoise)}
   nav{display:flex;gap:4px;flex-wrap:wrap}
   nav a{
@@ -66,44 +64,6 @@
     padding:10px 20px;border-radius:8px;
   }
   .header-cta:hover{background:var(--plum) !important}
-
-  /* ---- papel picado ---- */
-  .picado{
-    background:var(--plum);
-    padding:0 0 8px;
-    overflow:hidden;
-  }
-  .picado-string{
-    height:4px;background:var(--marigold);opacity:.85;
-  }
-  .picado-row{
-    display:flex;justify-content:center;gap:6px;
-    padding-top:2px;
-  }
-  .flag{
-    width:54px;height:64px;flex:none;
-    position:relative;
-    -webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2054%2064'%3E%3Cpath%20d%3D'M0,0%20H54%20Q46,10%2054,21%20Q46,31%2054,42%20Q48,53%2054,64%20L27,44%20L0,64%20Q6,53%200,42%20Q8,31%200,21%20Q8,10%200,0%20Z'%20fill%3D'white'%2F%3E%3Ccircle%20cx%3D'27'%20cy%3D'16'%20r%3D'5'%20fill%3D'black'%2F%3E%3Ccircle%20cx%3D'15'%20cy%3D'32'%20r%3D'4'%20fill%3D'black'%2F%3E%3Ccircle%20cx%3D'39'%20cy%3D'32'%20r%3D'4'%20fill%3D'black'%2F%3E%3C%2Fsvg%3E");
-    -webkit-mask-size:100% 100%;
-    -webkit-mask-repeat:no-repeat;
-    mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2054%2064'%3E%3Cpath%20d%3D'M0,0%20H54%20Q46,10%2054,21%20Q46,31%2054,42%20Q48,53%2054,64%20L27,44%20L0,64%20Q6,53%200,42%20Q8,31%200,21%20Q8,10%200,0%20Z'%20fill%3D'white'%2F%3E%3Ccircle%20cx%3D'27'%20cy%3D'16'%20r%3D'5'%20fill%3D'black'%2F%3E%3Ccircle%20cx%3D'15'%20cy%3D'32'%20r%3D'4'%20fill%3D'black'%2F%3E%3Ccircle%20cx%3D'39'%20cy%3D'32'%20r%3D'4'%20fill%3D'black'%2F%3E%3C%2Fsvg%3E");
-    mask-size:100% 100%;
-    mask-repeat:no-repeat;
-  }
-  .flag::after{
-    content:"";position:absolute;inset:10px;
-    border:2px solid rgba(255,255,255,.35);border-radius:50%;
-  }
-  .f1{background:var(--marigold)} .f2{background:var(--turquoise)}
-  .f3{background:#b6452f} .f4{background:var(--cream)}
-  .f5{background:var(--marigold)} .f6{background:var(--turquoise)}
-  .f7{background:#b6452f} .f8{background:var(--cream)}
-  .f9{background:var(--marigold)} .f10{background:var(--turquoise)}
-  .f11{background:#b6452f} .f12{background:var(--cream)}
-  @media (max-width:640px){
-    .flag{width:34px;height:42px}
-    .flag::after{inset:6px}
-  }
 
   /* ---- hero ---- */
   .hero{
@@ -178,8 +138,7 @@
   .style-card.c1::before{background:var(--marigold)}
   .style-card.c2::before{background:var(--turquoise)}
   .style-card.c3::before{background:#b6452f}
-  .style-card svg.skull{width:44px;height:44px;margin-bottom:14px}
-  .style-card h3{font-family:Georgia,serif;font-size:24px;color:var(--plum);margin-bottom:10px}
+  .style-card svg  .style-card h3{font-family:Georgia,serif;font-size:24px;color:var(--plum);margin-bottom:10px}
   .style-card p{font-size:16px;color:#4a3448}
 
   /* ---- gallery ---- */
@@ -252,15 +211,7 @@
 <header>
   <div class="header-inner">
     <a class="brand" href="#top" aria-label="Calaveras Tattoos home">
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <circle cx="24" cy="20" r="13" fill="none" stroke="#2e1a2e" stroke-width="2.5"/>
-        <circle cx="19" cy="18" r="3" fill="#2e1a2e"/>
-        <circle cx="29" cy="18" r="3" fill="#2e1a2e"/>
-        <path d="M24 24 l-2.5 5 h5 z" fill="#2e1a2e"/>
-        <rect x="16" y="28" width="16" height="9" rx="2" fill="none" stroke="#2e1a2e" stroke-width="2.5"/>
-        <path d="M20 28v9M24 28v9M28 28v9" stroke="#2e1a2e" stroke-width="2"/>
-        <path d="M12 12c2-2 5-2 7 0M29 12c2-2 5-2 7 0" stroke="#e8a020" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-      </svg>
+      
       <span>
         <span class="brand-name">Calaveras Tattoos</span><br>
         <span class="brand-sub">San Antonio, TX</span>
@@ -275,13 +226,6 @@
     </nav>
   </div>
 </header>
-
-<div class="picado" aria-hidden="true">
-  <div class="picado-string"></div>
-  <div class="picado-row">
-    <span class="flag f1"></span><span class="flag f2"></span><span class="flag f3"></span><span class="flag f4"></span><span class="flag f5"></span><span class="flag f6"></span><span class="flag f7"></span><span class="flag f8"></span><span class="flag f9"></span><span class="flag f10"></span><span class="flag f11"></span><span class="flag f12"></span>
-  </div>
-</div>
 
 <main id="top">
   <section class="hero">
@@ -303,35 +247,14 @@
       <p class="intro">The shop takes on custom work across all styles. Client reviews mention portraits and sleeves. Fine-line lettering comes up often as well. Call to discuss your idea with the shop.</p>
       <div class="styles-grid">
         <article class="style-card c1">
-          <svg class="skull" viewBox="0 0 48 48" aria-hidden="true">
-            <circle cx="24" cy="20" r="13" fill="none" stroke="#e8a020" stroke-width="2.5"/>
-            <circle cx="19" cy="18" r="3" fill="#e8a020"/>
-            <circle cx="29" cy="18" r="3" fill="#e8a020"/>
-            <path d="M24 24 l-2.5 5 h5 z" fill="#e8a020"/>
-            <rect x="16" y="28" width="16" height="9" rx="2" fill="none" stroke="#e8a020" stroke-width="2.5"/>
-          </svg>
           <h3>Portraits</h3>
           <p>Portrait tattoo ideas based on reference images. Questions? Call (210) 227-7673.</p>
         </article>
         <article class="style-card c2">
-          <svg class="skull" viewBox="0 0 48 48" aria-hidden="true">
-            <circle cx="24" cy="20" r="13" fill="none" stroke="#2a9d8f" stroke-width="2.5"/>
-            <circle cx="19" cy="18" r="3" fill="#2a9d8f"/>
-            <circle cx="29" cy="18" r="3" fill="#2a9d8f"/>
-            <path d="M24 24 l-2.5 5 h5 z" fill="#2a9d8f"/>
-            <rect x="16" y="28" width="16" height="9" rx="2" fill="none" stroke="#2a9d8f" stroke-width="2.5"/>
-          </svg>
           <h3>Sleeves</h3>
           <p>Full and half sleeve tattoo ideas. Contact the shop to discuss the design.</p>
         </article>
         <article class="style-card c3">
-          <svg class="skull" viewBox="0 0 48 48" aria-hidden="true">
-            <circle cx="24" cy="20" r="13" fill="none" stroke="#b6452f" stroke-width="2.5"/>
-            <circle cx="19" cy="18" r="3" fill="#b6452f"/>
-            <circle cx="29" cy="18" r="3" fill="#b6452f"/>
-            <path d="M24 24 l-2.5 5 h5 z" fill="#b6452f"/>
-            <rect x="16" y="28" width="16" height="9" rx="2" fill="none" stroke="#b6452f" stroke-width="2.5"/>
-          </svg>
           <h3>Fine-line lettering</h3>
           <p>Script and lettering tattoo ideas. Ask about size, style, and placement.</p>
         </article>
