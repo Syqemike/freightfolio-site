@@ -48,6 +48,9 @@
   .masthead-meta{text-align:right;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;line-height:1.9;}
   .masthead-meta .stars{color:var(--red);letter-spacing:.2em;}
   .masthead-meta a{font-weight:700;}
+  nav.sections{display:flex;gap:22px;flex-wrap:wrap;padding:0 0 18px;}
+  nav.sections a{font-family:"Archivo Black",Arial Black,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--ink);border-bottom:3px solid transparent;padding-bottom:4px;}
+  nav.sections a:hover{color:var(--red);border-bottom-color:var(--red);}
 
   /* ---- hero ---- */
   .hero{padding:64px 0 44px;}
@@ -74,6 +77,7 @@
   .flash-cell.featured{grid-column:span 2;grid-row:span 2;}
   .flash-cell .art{background:var(--paper-dark);border:3px solid var(--ink);overflow:hidden;}
   .flash-cell.featured .art img{width:100%;height:100%;object-fit:cover;}
+  .flash-cell .art img{width:100%;height:240px;object-fit:cover;display:block;}
   .flash-cell .art svg{width:100%;height:auto;display:block;}
   .flash-cell .tag{position:absolute;top:-14px;left:12px;background:var(--red);color:var(--paper);
     font-family:"Archivo Black",sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;}
@@ -175,6 +179,14 @@
       <a href="tel:+12515868670">(251) 586-8670</a>
     </div>
   </div>
+  <div class="wrap">
+    <nav class="sections" aria-label="Section navigation">
+      <a href="#flash">Flash</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
 </header>
 
 <section class="hero">
@@ -186,7 +198,7 @@
   </div>
 </section>
 
-<section class="flash">
+<section class="flash" id="flash">
   <div class="wrap">
     <div class="section-head">
       <h2>Fresh <span class="red">flash</span></h2>
@@ -201,73 +213,28 @@
       </div>
 
       <div class="flash-cell">
-        <div class="art">
-          <svg viewBox="0 0 200 200" role="img" aria-label="Dagger through a red heart flash design">
-            <rect width="200" height="200" fill="#e9dfc8"/>
-            <path d="M100 168 C60 138 38 116 38 86 C38 62 54 50 72 50 C86 50 96 58 100 66 C104 58 114 50 128 50 C146 50 162 62 162 86 C162 116 140 138 100 168 Z" fill="#b02a20" stroke="#111" stroke-width="7"/>
-            <rect x="94" y="18" width="12" height="120" fill="#111"/>
-            <path d="M100 138 L88 164 L100 176 L112 164 Z" fill="#111"/>
-            <rect x="70" y="30" width="60" height="14" rx="4" fill="#111"/>
-            <circle cx="100" cy="20" r="10" fill="#111"/>
-          </svg>
-        </div>
-        <div class="flash-cap"><span>Dagger heart</span><span class="no">No. 002</span></div>
+        <div class="art"><img src="img/flash-sheet.jpg" alt="Hand-painted Old Familiar Tattoo flash sheet"></div>
+        <div class="flash-cap"><span>Hand-painted shop flash</span><span class="no">No. 002</span></div>
       </div>
 
       <div class="flash-cell">
-        <div class="art">
-          <svg viewBox="0 0 200 200" role="img" aria-label="Anchor flash design">
-            <rect width="200" height="200" fill="#e9dfc8"/>
-            <circle cx="100" cy="38" r="14" fill="none" stroke="#111" stroke-width="8"/>
-            <rect x="95" y="52" width="10" height="100" fill="#111"/>
-            <rect x="62" y="82" width="76" height="12" fill="#111"/>
-            <path d="M40 118 C52 152 76 164 100 164 C124 164 148 152 160 118" fill="none" stroke="#111" stroke-width="10"/>
-            <path d="M40 118 L28 106 M40 118 L52 104 M160 118 L172 106 M160 118 L148 104" stroke="#111" stroke-width="10"/>
-            <path d="M100 152 L92 166 L100 174 L108 166 Z" fill="#b02a20"/>
-          </svg>
-        </div>
-        <div class="flash-cap"><span>Anchor</span><span class="no">No. 003</span></div>
+        <div class="art"><img src="img/work-lion.jpg" alt="Blackwork lion chest tattoo"></div>
+        <div class="flash-cap"><span>Blackwork lion</span><span class="no">No. 003</span></div>
       </div>
 
       <div class="flash-cell">
-        <div class="art">
-          <svg viewBox="0 0 200 200" role="img" aria-label="Skull flash design">
-            <rect width="200" height="200" fill="#e9dfc8"/>
-            <path d="M100 40 C62 40 46 68 46 96 C46 112 52 122 60 128 L60 152 C60 162 68 168 76 168 L124 168 C132 168 140 162 140 152 L140 128 C148 122 154 112 154 96 C154 68 138 40 100 40 Z" fill="#e9dfc8" stroke="#111" stroke-width="8"/>
-            <ellipse cx="78" cy="100" rx="16" ry="20" fill="#111"/>
-            <ellipse cx="122" cy="100" rx="16" ry="20" fill="#111"/>
-            <path d="M100 118 L92 134 L108 134 Z" fill="#b02a20"/>
-            <path d="M76 152 L76 168 M92 152 L92 168 M108 152 L108 168 M124 152 L124 168" stroke="#111" stroke-width="6"/>
-          </svg>
-        </div>
-        <div class="flash-cap"><span>Skull</span><span class="no">No. 004</span></div>
+        <div class="art"><img src="img/work-lobster.jpg" alt="Traditional lobster forearm tattoo"></div>
+        <div class="flash-cap"><span>Traditional lobster</span><span class="no">No. 004</span></div>
       </div>
 
       <div class="flash-cell">
-        <div class="art">
-          <svg viewBox="0 0 200 200" role="img" aria-label="Rose flash design">
-            <rect width="200" height="200" fill="#e9dfc8"/>
-            <path d="M100 170 L100 128" stroke="#111" stroke-width="9"/>
-            <path d="M100 152 C80 152 68 142 62 130 C78 128 94 134 100 146 Z" fill="#111"/>
-            <path d="M100 160 C120 160 132 150 138 138 C122 136 106 142 100 154 Z" fill="#111"/>
-            <circle cx="100" cy="86" r="44" fill="#b02a20" stroke="#111" stroke-width="7"/>
-            <path d="M100 52 C86 52 78 64 78 78 C78 92 88 102 100 102 C112 102 120 92 114 82 C110 74 100 74 98 82 C96 88 102 92 106 88" fill="none" stroke="#111" stroke-width="6"/>
-            <path d="M100 130 C92 124 88 116 88 108 M100 130 C108 124 112 116 112 108" stroke="#111" stroke-width="5" fill="none"/>
-          </svg>
-        </div>
-        <div class="flash-cap"><span>Rose</span><span class="no">No. 005</span></div>
+        <div class="art"><img src="img/work-shoulder.jpg" alt="Large color shoulder tattoo"></div>
+        <div class="flash-cap"><span>Color shoulder piece</span><span class="no">No. 005</span></div>
       </div>
 
       <div class="flash-cell">
-        <div class="art">
-          <svg viewBox="0 0 200 200" role="img" aria-label="Heart with Mobile banner flash design">
-            <rect width="200" height="200" fill="#e9dfc8"/>
-            <path d="M100 168 C70 144 52 128 52 106 C52 90 64 80 78 80 C90 80 98 88 100 96 C102 88 110 80 122 80 C136 80 148 90 148 106 C148 128 130 144 100 168 Z" fill="#b02a20" stroke="#111" stroke-width="7"/>
-            <path d="M34 118 L18 110 L18 78 L34 70 L166 70 L182 78 L182 110 L166 118 Z" fill="#e9dfc8" stroke="#111" stroke-width="6"/>
-            <text x="100" y="105" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="22" fill="#111" letter-spacing="6">MOBILE</text>
-          </svg>
-        </div>
-        <div class="flash-cap"><span>Mobile banner</span><span class="no">No. 006</span></div>
+        <div class="art"><img src="img/work-piercings.jpg" alt="Curated ear piercings with bee jewelry"></div>
+        <div class="flash-cap"><span>Curated ear piercings</span><span class="no">No. 006</span></div>
       </div>
 
     </div>
@@ -293,7 +260,7 @@
   </div>
 </section>
 
-<section class="shoplist">
+<section class="shoplist" id="services">
   <div class="wrap">
     <div class="section-head">
       <h2>The shop <span class="red">list</span></h2>
@@ -320,21 +287,21 @@
       <div class="num">03</div>
       <div>
         <h3>Consultations</h3>
-        <p>Talk it through first. Placement, size, and style. Call the shop to set up a consultation.</p>
+        <p>Talk it through first: placement, size, and style. Call the shop to set up a consultation.</p>
         <span class="fine">Appointment required for all services</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="reviews">
+<section class="reviews" id="reviews">
   <div class="wrap">
     <div class="big">5.0 from 103 Google reviews</div>
     <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
   </div>
 </section>
 
-<section class="visit">
+<section class="visit" id="visit">
   <div class="wrap">
     <h2>Come <span class="red">get work</span></h2>
     <p class="sub">Call ahead. We take appointments, not walk-ins, and the register takes cash only.</p>
