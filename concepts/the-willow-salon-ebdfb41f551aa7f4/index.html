@@ -124,25 +124,7 @@
     box-shadow:0 30px 60px rgba(111,133,99,.25);
     aspect-ratio:3/4;
   }
-  .arch img{width:100%;height:100%;object-fit:cover}
-  .hero-sprig{position:absolute;width:120px;color:var(--sage-deep);opacity:.8;top:-28px;left:-44px;transform:rotate(-18deg)}
-  @media(max-width:960px){
-    .hero-sprig{left:-6px;top:-22px;width:92px}
-  }
-  .hero-leaf-dot{
-    position:absolute;width:88px;height:88px;border-radius:50%;
-    background:var(--blush);color:#3d2a20;
-    display:flex;align-items:center;justify-content:center;text-align:center;
-    font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1rem;line-height:1.25;
-    bottom:36px;left:10px;transform:rotate(-8deg);
-    box-shadow:0 12px 26px rgba(207,139,112,.4);
-    padding:.4rem;
-  }
-
-  /* ---------- willow sprig symbol sizing ---------- */
-  .sprig{color:var(--sage-deep)}
-
-  /* ---------- wave divider ---------- */
+  .arch img{width:100%;height:100%;object-fit:cover}}/* ---------- wave divider ---------- */
   .divider{display:block;width:100%;height:70px;margin-bottom:-1px}
   @media(min-width:900px){.divider{height:110px}}
 
@@ -184,10 +166,7 @@
   .about-photo figcaption{
     font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1.05rem;color:var(--ink-soft);
     margin-top:.8rem;text-align:center;
-  }
-  .photo-sprig{position:absolute;width:90px;top:-30px;right:-14px;transform:rotate(24deg);opacity:.85}
-
-  /* ---------- services ---------- */
+  }/* ---------- services ---------- */
   .services{background:var(--white);border-radius:clamp(1.5rem,4vw,3rem);box-shadow:0 24px 60px rgba(67,60,48,.07)}
   .svc-list{margin-top:2.8rem}
   .svc{
@@ -250,14 +229,9 @@
   .hours .closed{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;color:var(--blush-deep);font-size:1.1rem}
   .visit-addr{margin-top:1.4rem;font-size:1rem;color:#5c4636}
   .visit-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.8rem}
-  .btn-ink{background:var(--ink);color:var(--cream)}
-  .visit-sprig{position:absolute;width:150px;right:-30px;bottom:-24px;opacity:.35;transform:rotate(140deg);color:#8a5a44}
-
-  /* ---------- footer ---------- */
+  .btn-ink{background:var(--ink);color:var(--cream)}/* ---------- footer ---------- */
   footer{background:var(--sage-dark);color:#efe9da;padding:3.5rem clamp(1.25rem,5vw,3.5rem) 2.5rem;margin-top:clamp(3.5rem,8vw,6rem)}
-  .foot-wrap{max-width:1120px;margin:0 auto;text-align:center}
-  .foot-wrap .sprig{width:110px;margin:0 auto 1.2rem;display:block;color:var(--sage)}
-  .foot-brand{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:2rem;margin-bottom:.4rem}
+  .foot-wrap{max-width:1120px;margin:0 auto;text-align:center}.foot-brand{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:2rem;margin-bottom:.4rem}
   .foot-contact{font-size:1rem;margin-bottom:.3rem}
   .foot-contact a{color:#fff;text-decoration:none;font-weight:400}
   .foot-contact a:hover{text-decoration:underline}
@@ -271,37 +245,12 @@
 </head>
 <body>
 
-<!-- reusable willow sprig -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <symbol id="willow-sprig" viewBox="0 0 220 130">
-      <path d="M8 22 C 60 8, 120 26, 205 112" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-      <g fill="currentColor">
-        <ellipse cx="34" cy="17" rx="11" ry="3.6" transform="rotate(-8 34 17)"/>
-        <ellipse cx="58" cy="14" rx="11" ry="3.6" transform="rotate(-4 58 14)"/>
-        <ellipse cx="82" cy="15" rx="11" ry="3.6" transform="rotate(2 82 15)"/>
-        <ellipse cx="106" cy="19" rx="11" ry="3.6" transform="rotate(8 106 19)"/>
-        <ellipse cx="129" cy="26" rx="11" ry="3.6" transform="rotate(16 129 26)"/>
-        <ellipse cx="150" cy="36" rx="11" ry="3.6" transform="rotate(24 150 36)"/>
-        <ellipse cx="169" cy="49" rx="11" ry="3.6" transform="rotate(33 169 49)"/>
-        <ellipse cx="185" cy="65" rx="11" ry="3.6" transform="rotate(42 185 65)"/>
-        <ellipse cx="198" cy="83" rx="10" ry="3.4" transform="rotate(52 198 83)"/>
-        <ellipse cx="46" cy="22" rx="10" ry="3.4" transform="rotate(28 46 22)"/>
-        <ellipse cx="94" cy="24" rx="10" ry="3.4" transform="rotate(38 94 24)"/>
-        <ellipse cx="140" cy="40" rx="10" ry="3.4" transform="rotate(50 140 40)"/>
-      </g>
-    </symbol>
-    <symbol id="leaf-dot" viewBox="0 0 24 24">
-      <ellipse cx="12" cy="12" rx="9" ry="4.6" transform="rotate(-30 12 12)" fill="currentColor"/>
-    </symbol>
-  </defs>
-</svg>
+<!-- Original decorative SVG ornaments removed per owner visual rule. -->
 
 <div class="preview-note"><em>Design preview</em> &nbsp;·&nbsp; a free mockup concept, not the business's real website</div>
 
 <header>
   <a class="brand" href="#top">
-    <svg aria-hidden="true"><use href="#willow-sprig"/></svg>
     <span class="brand-name">The Willow Salon</span>
   </a>
   <nav class="main">
@@ -321,7 +270,7 @@
     <div class="blob blob-blush"></div>
     <div class="hero-inner">
       <div class="hero-copy">
-        <span class="kicker"><svg aria-hidden="true"><use href="#leaf-dot"/></svg> Full-service hair salon · Ocean Springs, MS</span>
+        <span class="kicker"> Full-service hair salon · Ocean Springs, MS</span>
         <h1>Blonding, vivid color, <span class="it">and extensions</span> in Ocean Springs.</h1>
         <p class="hero-sub">The Willow is a full-service salon on Government Street in Ocean Springs. We specialize in blonding, balayage, vivid color, and hand-tied extensions, all in a space that is eclectic, retro, and completely relaxed.</p>
         <div class="hero-ctas">
@@ -334,11 +283,9 @@
         </div>
       </div>
       <div class="hero-photo">
-        <svg class="hero-sprig sprig" aria-hidden="true"><use href="#willow-sprig"/></svg>
         <div class="arch">
           <img src="img/photo-2.jpg" alt="Long ash-blonde balayage waves, styled at The Willow Salon">
         </div>
-        <div class="hero-leaf-dot">blonding is our love language</div>
       </div>
     </div>
   </div>
@@ -354,7 +301,7 @@
   <!-- ABOUT -->
   <section id="about">
     <div class="wrap">
-      <div class="sec-label"><svg aria-hidden="true"><use href="#willow-sprig"/></svg> Our story</div>
+      <div class="sec-label"> Our story</div>
       <h2>A salon that feels like <span class="it">a deep breath.</span></h2>
       <div class="about-grid">
         <div class="about-copy">
@@ -364,7 +311,6 @@
         </div>
         <div class="about-photo">
           <figure>
-            <svg class="photo-sprig sprig" aria-hidden="true"><use href="#willow-sprig"/></svg>
             <img src="img/work-2.jpg" alt="Fresh cut outside The Willow Salon on Government Street">
             <figcaption>Outside the salon on Government Street</figcaption>
           </figure>
@@ -376,20 +322,18 @@
   <!-- SERVICES -->
   <section id="services" style="padding-top:0">
     <div class="wrap services" style="padding:clamp(2rem,5vw,3.5rem)">
-      <div class="sec-label"><svg aria-hidden="true"><use href="#willow-sprig"/></svg> What we do</div>
+      <div class="sec-label"> What we do</div>
       <h2>Our <span class="it">services.</span></h2>
       <p class="lede">Tell us what you want and what your hair can do. Here is where we shine.</p>
       <div class="svc-grid">
         <div class="svc-list">
           <div class="svc">
-            <svg aria-hidden="true"><use href="#leaf-dot"/></svg>
             <div>
               <h3>Blonding &amp; balayage</h3>
               <p>From bright, bold blonde to soft lived-in color, we build blondes that grow out gracefully instead of screaming for a touch-up in three weeks.</p>
             </div>
           </div>
           <div class="svc">
-            <svg aria-hidden="true"><use href="#leaf-dot"/></svg>
             <div>
               <h3>Vivid color</h3>
               <p>Pinks, purples, teals, and custom blends. We love a bold head of hair, and we know how to get you there while keeping it healthy.</p>
@@ -398,14 +342,12 @@
         </div>
         <div class="svc-list">
           <div class="svc">
-            <svg aria-hidden="true"><use href="#leaf-dot"/></svg>
             <div>
               <h3>Extensions</h3>
               <p>Hand-tied and clip-in extensions for length, fullness, or both. Matched to your color so they disappear right into your own hair.</p>
             </div>
           </div>
           <div class="svc">
-            <svg aria-hidden="true"><use href="#leaf-dot"/></svg>
             <div>
               <h3>Cuts &amp; styling</h3>
               <p>Precision cuts, highlights, blowouts, and updos for the big days. The everyday work, done with the same care as the transformations.</p>
@@ -422,7 +364,7 @@
   <!-- GALLERY -->
   <section id="gallery">
     <div class="wrap">
-      <div class="sec-label"><svg aria-hidden="true"><use href="#willow-sprig"/></svg> The work</div>
+      <div class="sec-label"> The work</div>
       <h2>Recent work <span class="it">from the chair.</span></h2>
       <p class="lede">Real hair, real results.</p>
       <div class="gallery-grid">
@@ -465,9 +407,8 @@
   <section id="visit" style="padding-top:0">
     <div class="wrap">
       <div class="visit-card">
-        <svg class="visit-sprig" aria-hidden="true"><use href="#willow-sprig"/></svg>
         <div class="visit-copy">
-          <div class="sec-label"><svg aria-hidden="true"><use href="#willow-sprig"/></svg> Visit</div>
+          <div class="sec-label"> Visit</div>
           <h2>Visit <span class="it">the salon.</span></h2>
           <p class="lede" style="color:#5c4636">We are on Government Street in Ocean Springs, and we would love to meet your hair. Call to book your chair.</p>
           <p class="visit-addr">1306 Government St #3<br>Ocean Springs, MS 39564</p>
@@ -491,7 +432,6 @@
 
 <footer>
   <div class="foot-wrap">
-    <svg class="sprig" aria-hidden="true"><use href="#willow-sprig"/></svg>
     <div class="foot-brand">The Willow Salon</div>
     <p class="foot-contact">1306 Government St #3, Ocean Springs, MS 39564</p>
     <p class="foot-contact"><a href="tel:+12283345235">(228) 334-5235</a></p>
