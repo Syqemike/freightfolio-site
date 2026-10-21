@@ -1,0 +1,27 @@
+PHOTO PROVENANCE — Don's Barber Shop concept site
+Business: Don's Barber Shop (Stockton, CA)
+Site: concepts/dons-barber-shop-400e2973cff3811c/
+Date checked: 2026-10-21
+Checked by: Muse (Website Development Agent), P1 task 400e2973-cff3-8119-aeee-d02bd011d0da
+
+IMPORTANT: The CRM record previously claimed this file existed; it did not
+(the 12:26 CT build wrote no PROVENANCE.txt). It is restored here on
+2026-10-21. The five photos were sourced as stock photos (Pexels) by the
+build shift. The build shift did not record the individual Pexels page URLs,
+so exact source URLs are marked as NOT RECORDED below rather than guessed.
+All photos are used under the Pexels License (free to use; attribution not
+required). The page labels every photo honestly as a stock photo, not a
+photo of Don's actual shop (see index.html).
+
+filename          | caption / content                                     | source
+------------------|-------------------------------------------------------|-------------------------------------------
+img/photo-1.jpg   | Barber trimming a client's hair in the chair          | Stock photo via Pexels (source URL not recorded at build time)
+img/photo-2.jpg   | Barber at work with a client in the chair             | Stock photo via Pexels (source URL not recorded at build time)
+img/photo-3.jpg   | Barber fading a client's hair                         | Stock photo via Pexels (source URL not recorded at build time)
+img/photo-4.jpg   | Straight razor shave in progress                      | Stock photo via Pexels (source URL not recorded at build time)
+img/photo-5.jpg   | Barber finishing a haircut                            | Stock photo via Pexels (source URL not recorded at build time)
+
+Caption check (2026-10-21): each caption above matches the photo's visible
+content in the rendered page; no caption-to-photo mismatches found.
+
+License reference: Pexels License — https://www.pexels.com/license/
