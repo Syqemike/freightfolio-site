@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Barkery on Broad | Augusta, GA | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital@0;1&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f6f1e7;--paper-deep:#ece3d1;--esp:#3b2f2a;--must:#d9a441;--must-soft:#f0d9a8;--sage:#7a8b6f}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Work Sans",system-ui,sans-serif;background:var(--paper);color:var(--esp);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+.disclosure{background:var(--esp);color:#efe6d3;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;text-align:center;padding:.7rem 1rem}
+.topbar{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.5rem;gap:1rem;flex-wrap:wrap}
+.wordmark{font-family:"Libre Caslon Text",serif;font-size:1.65rem;letter-spacing:.01em}
+.wordmark em{font-style:italic;color:#8a6d2f}
+nav.sections{display:flex;gap:1.6rem;flex-wrap:wrap}
+nav.sections a{font-size:.8rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--esp);text-decoration:none}
+nav.sections a:hover{color:#8a6d2f}
+.hero{position:relative;height:82vh;min-height:560px;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(100deg, rgba(35,27,23,.78) 0%, rgba(35,27,23,.35) 52%, rgba(35,27,23,.05) 100%)}
+.hero .copy{position:absolute;left:6vw;bottom:9vh;max-width:620px;color:#fdf8ec;z-index:2}
+.hero .copy .tag{display:inline-block;background:var(--must);color:#3b2f2a;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:.45rem 1rem;margin-bottom:1.2rem}
+.hero h1{font-family:"Libre Caslon Text",serif;font-weight:400;font-size:clamp(2.6rem,5.6vw,4.4rem);line-height:1.08;margin-bottom:1.1rem}
+.hero .copy p{font-size:1.06rem;color:#efe6d3;max-width:48ch;margin-bottom:1.8rem}
+.hero .caption{position:absolute;right:2vw;bottom:2.5vh;z-index:2;background:rgba(35,27,23,.8);color:#efe6d3;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;padding:.4rem .9rem}
+.btnrow{display:flex;gap:.9rem;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--must);color:#3b2f2a;font-weight:700;text-decoration:none;padding:.95rem 2.1rem;font-size:1rem}
+.btn:hover{background:#c78f2e}
+.btn.dark{background:transparent;border:2px solid #fdf8ec;color:#fdf8ec}
+.btn.dark:hover{background:#fdf8ec;color:#3b2f2a}
+main .wrap{max-width:1280px;margin:0 auto;padding:0 1.5rem}
+.intro{display:grid;grid-template-columns:1fr 1.6fr;gap:4rem;padding:5rem 0 5rem;align-items:start}
+.intro .no{font-family:"Libre Caslon Text",serif;font-size:5rem;color:var(--must-soft);line-height:1}
+.intro h2{font-family:"Libre Caslon Text",serif;font-weight:400;font-size:clamp(1.9rem,3.4vw,2.7rem);line-height:1.2;margin:1rem 0 1.2rem}
+.intro p{color:#5c5145;margin-bottom:1.1rem}
+.intro .fb{display:inline-block;margin-top:.8rem;font-weight:600;color:#8a6d2f}
+.svc-band{background:var(--esp);color:#efe6d3;padding:5rem 0}
+.svc-band h2{font-family:"Libre Caslon Text",serif;font-weight:400;font-size:clamp(1.9rem,3.4vw,2.7rem);margin-bottom:.8rem}
+.svc-band .sub{color:#cfc2a8;max-width:62ch;margin-bottom:2.6rem}
+.svc-list{border-top:1px solid rgba(240,217,168,.3)}
+.svc-row{display:grid;grid-template-columns:80px 1fr 1.4fr;gap:1.5rem;align-items:baseline;padding:1.6rem 0;border-bottom:1px solid rgba(240,217,168,.3)}
+.svc-row .n{font-family:"Libre Caslon Text",serif;color:var(--must);font-size:1.3rem}
+.svc-row h3{font-size:1.15rem;font-weight:600}
+.svc-row p{color:#cfc2a8;font-size:.95rem}
+.rate-note{margin-top:2.4rem;color:var(--must-soft);font-size:1.05rem}
+.rate-note strong{color:var(--must);font-size:1.4rem;font-family:"Libre Caslon Text",serif}
+.gal-sec{padding:5rem 0}
+.gal-sec h2{font-family:"Libre Caslon Text",serif;font-weight:400;font-size:clamp(1.9rem,3.4vw,2.7rem);margin-bottom:.6rem}
+.gal-sec .sub{color:#5c5145;margin-bottom:2.2rem}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.strip figure{background:#fff;padding:.7rem;box-shadow:0 10px 26px rgba(59,47,42,.1)}
+.strip img{width:100%;height:250px;object-fit:cover}
+.strip figcaption{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#8a7a63;padding:.7rem .2rem .2rem}
+.hours-visit{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--paper-deep)}
+.hours-visit .cell{padding:4.5rem 3.5rem}
+.hours-visit h2{font-family:"Libre Caslon Text",serif;font-weight:400;font-size:2rem;margin-bottom:1.4rem}
+table.hours{width:100%;border-collapse:collapse}
+table.hours td{padding:.9rem 0;border-bottom:1px solid #d5c8ab;font-size:1.02rem}
+table.hours td:last-child{text-align:right;font-weight:600}
+table.hours tr.closed td{color:#9a8f77}
+.cell.dark{background:var(--esp);color:#efe6d3}
+.cell.dark address{font-style:normal;line-height:1.9;font-size:1.05rem;margin-bottom:1.2rem}
+.cell.dark .tel{font-family:"Libre Caslon Text",serif;font-size:1.9rem;color:var(--must);text-decoration:none}
+footer.site{background:#241c17;color:#a89a80;padding:2.6rem 0;font-size:.84rem;line-height:1.7}
+footer.site a{color:#d9a441}
+footer.site .wrap{display:grid;grid-template-columns:2fr 1fr;gap:2rem}
+footer.site nav a{margin-right:1.2rem;text-decoration:none;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:900px){
+  .intro{grid-template-columns:1fr;gap:1.5rem}
+  .svc-row{grid-template-columns:50px 1fr}
+  .svc-row p{grid-column:2}
+  .strip{grid-template-columns:1fr 1fr}
+  .hours-visit{grid-template-columns:1fr}
+  footer.site .wrap{grid-template-columns:1fr}
+}
+@media(max-width:560px){.strip{grid-template-columns:1fr}.hero .copy{left:5vw;right:5vw}}
+</style>
+</head>
+<body>
+<div class="disclosure">Design preview. This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+<div class="topbar">
+  <div class="wordmark">Barkery <em>on Broad</em></div>
+  <nav class="sections" aria-label="Sections">
+    <a href="#styling">Styling</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#visit">Visit</a>
+  </nav>
+</div>
+
+<div class="hero">
+  <img src="img/photo-1.jpg" alt="Groomer styling a Shih Tzu at the salon">
+  <div class="veil"></div>
+  <div class="copy">
+    <span class="tag">Augusta, Georgia</span>
+    <h1>Personal styling for every dog.</h1>
+    <p>Barkery on Broad is a full service grooming salon on Broad Street, where each dog gets a look shaped around them. One on one attention and careful finishing, with styling shaped around your dog.</p>
+    <div class="btnrow">
+      <a class="btn" href="tel:+17066913242">Call to book</a>
+      <a class="btn dark" href="https://www.facebook.com/barkeryonbroad">Find us on Facebook</a>
+    </div>
+  </div>
+  <span class="caption">Stock photo</span>
+</div>
+
+<main>
+<div class="wrap intro">
+  <div><div class="no">01</div></div>
+  <div>
+    <h2>A Broad Street salon with a personal touch.</h2>
+    <p>Barkery on Broad offers full service personalized pet styling in the heart of Augusta. Every appointment is about your dog: their coat, their temperament, and the look you want.</p>
+    <p>The salon keeps an active Facebook page where you can see the latest work and announcements.</p>
+    <a class="fb" href="https://www.facebook.com/barkeryonbroad">Follow Barkery on Broad on Facebook</a>
+  </div>
+</div>
+
+<section id="styling" class="svc-band">
+  <div class="wrap">
+    <h2>Styling, start to finish.</h2>
+    <p class="sub">Full service grooming with a personal eye. Call to talk through what your dog needs.</p>
+    <div class="svc-list">
+      <div class="svc-row"><span class="n">a.</span><h3>Personalized styling</h3><p>Looks shaped around your dog's coat, breed, and personality.</p></div>
+      <div class="svc-row"><span class="n">b.</span><h3>Full service grooms</h3><p>Bath, cut, and finishing in one complete appointment.</p></div>
+      <div class="svc-row"><span class="n">c.</span><h3>Baths and blow outs</h3><p>Thorough baths with a full fluff dry for a fresh, soft coat.</p></div>
+      <div class="svc-row"><span class="n">d.</span><h3>Nail trims</h3><p>Careful nail trims as part of a groom or on their own.</p></div>
+    </div>
+    <p class="rate-note"><strong>5.0</strong> from 153 Google reviews</p>
+  </div>
+</section>
+
+<section id="gallery" class="gal-sec">
+  <div class="wrap">
+    <h2>From the styling chair.</h2>
+    <p class="sub">A look at the kind of personal styling Barkery on Broad is known for.</p>
+    <div class="strip">
+      <figure><img src="img/photo-2.jpg" alt="Freshly groomed Cocker Spaniel"><figcaption>Stock photo</figcaption></figure>
+      <figure><img src="img/photo-3.jpg" alt="Poodle waiting in the salon"><figcaption>Stock photo</figcaption></figure>
+      <figure><img src="img/photo-4.jpg" alt="Yorkshire Terrier at the groomer"><figcaption>Stock photo</figcaption></figure>
+      <figure><img src="img/photo-5.jpg" alt="Groomer working in a bright salon studio"><figcaption>Stock photo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="hours" class="hours-visit">
+  <div class="cell">
+    <h2>Hours</h2>
+    <table class="hours">
+      <tr><td>Tuesday to Saturday</td><td>9 AM to 3 PM</td></tr>
+      <tr class="closed"><td>Sunday and Monday</td><td>Closed</td></tr>
+    </table>
+  </div>
+  <div class="cell dark" id="visit">
+    <h2>Visit</h2>
+    <address>1159 Broad St<br>Augusta, GA</address>
+    <a class="tel" href="tel:+17066913242">(706) 691-3242</a>
+    <p style="margin:1.2rem 0"><a class="btn" href="tel:+17066913242">Call to book</a></p>
+    <p style="font-size:.92rem;color:#cfc2a8">The salon is active on Facebook for photos and updates: <a href="https://www.facebook.com/barkeryonbroad" style="color:#d9a441">facebook.com/barkeryonbroad</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Design preview by Freightfolio. This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Barkery on Broad. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net">https://freightfolio.net</a>.</p>
+    <nav aria-label="Footer"><a href="#styling">Styling</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
+  </div>
+</footer>
+</body>
+</html>

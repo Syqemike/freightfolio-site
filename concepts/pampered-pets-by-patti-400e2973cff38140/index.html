@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Pampered Pets by Patti | Camp Hill, PA | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#faf3e9; --cream-deep:#f3e9d7; --forest:#2f4a3e; --forest-deep:#22382e;
+  --terra:#c96f4a; --terra-soft:#e8b48f; --ink:#2b2723;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Karla",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+.disclosure{background:var(--forest);color:#f4edde;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;text-align:center;padding:.7rem 1rem;line-height:1.5}
+header.site{position:sticky;top:0;z-index:50;background:rgba(250,243,233,.94);backdrop-filter:blur(8px);border-bottom:1px solid #e3d5bc}
+.bar{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 1.5rem}
+.brand{font-family:"Fraunces",serif;font-weight:600;font-size:1.35rem;color:var(--forest);letter-spacing:.01em}
+nav.sections{display:flex;gap:1.4rem;flex-wrap:wrap}
+nav.sections a{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--forest);text-decoration:none;font-weight:600;border-bottom:2px solid transparent;padding-bottom:2px}
+nav.sections a:hover{border-color:var(--terra)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.5rem}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(to top, rgba(34,56,46,.82) 0%, rgba(34,56,46,.25) 55%, rgba(34,56,46,.15) 100%)}
+.hero .stock-tag{position:absolute;top:1rem;right:1.2rem;z-index:3;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#fdf9f0;background:rgba(34,56,46,.55);padding:.35rem .8rem;border-radius:6px}
+.hero-inner{position:relative;z-index:2;width:100%;padding:5rem 0 4rem;text-align:center;color:#fdf9f0}
+.eyebrow{font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;color:var(--terra-soft);margin-bottom:1.2rem}
+h1{font-family:"Fraunces",serif;font-weight:300;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.08;max-width:16ch;margin:0 auto 1.2rem}
+.hero-inner p.lede{max-width:52ch;margin:0 auto 2rem;font-size:1.08rem;color:#f3e9d7}
+.btn{display:inline-block;background:var(--terra);color:#fff;text-decoration:none;font-weight:600;letter-spacing:.04em;padding:.95rem 2.1rem;border-radius:999px;font-size:1rem;border:none;cursor:pointer}
+.btn:hover{background:#b55f3c}
+.btn.ghost{background:transparent;border:1.5px solid #f3e9d7;color:#fdf9f0;margin-left:.8rem}
+section{padding:4.5rem 0}
+.kicker{font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;color:var(--terra);margin-bottom:1rem;font-weight:600}
+h2{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.15;color:var(--forest);margin-bottom:1.4rem;max-width:22ch}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.about p{margin-bottom:1.1rem;font-size:1.02rem}
+.about figure{border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(47,74,62,.18)}
+.about figcaption,.gal figcaption{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#8a7a63;padding:.7rem .2rem}
+.strip{background:var(--forest);color:#f4edde}
+.strip h2{color:#fdf9f0}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.2rem}
+.svc .card{background:rgba(253,249,240,.06);border:1px solid rgba(232,180,143,.35);border-radius:12px;padding:1.8rem 1.6rem}
+.svc .card h3{font-family:"Fraunces",serif;font-weight:600;font-size:1.25rem;margin-bottom:.6rem;color:#fdf9f0}
+.svc .card p{font-size:.95rem;color:#e6dcc8}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
+.gal-grid figure{border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(47,74,62,.1)}
+.gal-grid img{width:100%;height:300px;object-fit:cover}
+.visit{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:start;background:var(--cream-deep);border-radius:18px;padding:3rem}
+.visit address{font-style:normal;font-size:1.05rem;line-height:1.8}
+.visit .phone{font-family:"Fraunces",serif;font-size:1.8rem;color:var(--forest);text-decoration:none;display:inline-block;margin:.6rem 0 1.4rem}
+.hours-note{background:#fff;border-left:4px solid var(--terra);padding:1.2rem 1.4rem;border-radius:0 10px 10px 0;font-size:1rem}
+footer.site{background:var(--forest-deep);color:#cfc3ab;padding:2.6rem 0;font-size:.85rem;line-height:1.7}
+footer.site a{color:var(--terra-soft)}
+footer.site .cols{display:grid;grid-template-columns:2fr 1fr;gap:2rem}
+footer.site nav a{margin-right:1.2rem;text-decoration:none;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:860px){
+  .about,.visit{grid-template-columns:1fr}
+  .svc{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  nav.sections{gap:.8rem}
+  .btn.ghost{margin-left:0;margin-top:.6rem}
+  footer.site .cols{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="disclosure">Design preview. This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+<header class="site">
+  <div class="bar">
+    <div class="brand">Pampered Pets by Patti</div>
+    <nav class="sections" aria-label="Sections">
+      <a href="#about">About</a><a href="#services">Grooming</a><a href="#gallery">Photos</a><a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <img class="bg" src="img/photo-1.jpg" alt="Freshly groomed dog resting after a grooming appointment">
+  <span class="stock-tag">Stock photo</span>
+  <div class="shade"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Camp Hill, Pennsylvania</p>
+    <h1>A calm chair for a happy dog.</h1>
+    <p class="lede">Pampered Pets by Patti is a one groomer salon built around a simple idea. Grooming should feel easy for the dog and the owner, every single visit.</p>
+    <a class="btn" href="tel:+17176497907">Call to book</a>
+    <a class="btn ghost" href="#services">See the grooming</a>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <p class="kicker">About Patti</p>
+      <h2>One groomer who knows your dog by name.</h2>
+      <p>Patti runs Pampered Pets herself. There is no rotating staff and no crowded waiting room. Your dog is groomed by the same calm hands each time, in a professional, clean space designed to keep nervous pets relaxed.</p>
+      <p>Owners across Camp Hill trust Patti with their dogs, and the business holds a perfect 5.0 from 14 Google reviews.</p>
+    </div>
+    <figure>
+      <img src="img/photo-2.jpg" alt="Groomer gently brushing a spaniel during a grooming session">
+      <figcaption>Stock photo</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="services" class="strip">
+  <div class="wrap">
+    <p class="kicker">Grooming</p>
+    <h2>Complete grooming, done with patience.</h2>
+    <p style="max-width:60ch;color:#e6dcc8">Every appointment is full pet grooming tailored to your dog. No menu of upsells, no rush. Call to talk through what your dog needs and Patti will take it from there.</p>
+    <div class="svc">
+      <div class="card">
+        <h3>Bath and brush out</h3>
+        <p>A thorough bath and brush out that leaves the coat clean, soft, and tangle free.</p>
+      </div>
+      <div class="card">
+        <h3>Haircut and styling</h3>
+        <p>Breed style cuts or simple tidy trims, shaped around your dog and your preference.</p>
+      </div>
+      <div class="card">
+        <h3>Nails and finishing touches</h3>
+        <p>Nail trims and a careful once over, so your dog walks out looking and feeling fresh.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gal">
+  <div class="wrap">
+    <p class="kicker">Photos</p>
+    <h2>Fresh from the grooming table.</h2>
+    <div class="gal-grid">
+      <figure><img src="img/photo-3.jpg" alt="Groomer toweling a small dog after its bath"><figcaption>Stock photo</figcaption></figure>
+      <figure><img src="img/photo-4.jpg" alt="Dog being brushed out during a grooming appointment"><figcaption>Stock photo</figcaption></figure>
+      <figure><img src="img/photo-5.jpg" alt="Poodle with bows after a grooming session"><figcaption>Stock photo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="visit">
+      <div>
+        <p class="kicker">Visit</p>
+        <h2>Come by or give Patti a call.</h2>
+        <address>
+          2005 Dartmouth St<br>
+          Camp Hill, PA
+        </address>
+        <a class="phone" href="tel:+17176497907">(717) 649-7907</a><br>
+        <a class="btn" href="tel:+17176497907">Call to book</a>
+      </div>
+      <div class="hours-note">
+        <strong>Hours</strong><br>
+        Call for current hours.
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap cols">
+    <p>Design preview by Freightfolio. This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Pampered Pets by Patti. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net">https://freightfolio.net</a>.</p>
+    <nav aria-label="Footer">
+      <a href="#about">About</a><a href="#services">Grooming</a><a href="#gallery">Photos</a><a href="#visit">Visit</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

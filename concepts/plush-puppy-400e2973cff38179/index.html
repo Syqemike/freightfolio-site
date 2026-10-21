@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Plush Puppy | Lemoyne, PA | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blush:#ffd9e3;--blush-deep:#ffb9cd;--mint:#d9f0e6;--cream:#fffaf4;--ink:#3a3238;--plum:#7b4b5e;--sun:#ffcf6e}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Nunito",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+.disclosure{background:var(--plum);color:#ffeef4;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;text-align:center;padding:.7rem 1rem}
+header.top{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 1.5rem}
+.logo{font-family:"Baloo 2",cursive;font-weight:800;font-size:1.7rem;color:var(--plum)}
+.logo .paw{color:var(--blush-deep)}
+nav.sections{display:flex;gap:1.1rem;flex-wrap:wrap}
+nav.sections a{font-weight:700;font-size:.85rem;color:var(--plum);text-decoration:none;background:var(--blush);padding:.45rem 1rem;border-radius:999px}
+nav.sections a:hover{background:var(--blush-deep)}
+.hero{max-width:1180px;margin:0 auto;padding:2rem 1.5rem 4rem;display:grid;grid-template-columns:1.05fr .95fr;gap:2.5rem;align-items:center}
+.hero-card{background:var(--blush);border-radius:32px;padding:3rem 2.8rem;position:relative;overflow:hidden}
+.hero-card::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.35);right:-70px;top:-70px}
+h1{font-family:"Baloo 2",cursive;font-weight:800;font-size:clamp(2.4rem,5.4vw,3.9rem);line-height:1.05;color:var(--plum);margin-bottom:1.1rem}
+.hero-card p.lede{font-size:1.05rem;max-width:40ch;margin-bottom:1.8rem;color:#54424c}
+.pill-btn{display:inline-block;background:var(--plum);color:#fff;text-decoration:none;font-weight:700;font-size:1.02rem;padding:.95rem 2.2rem;border-radius:999px}
+.pill-btn:hover{background:#5e3947}
+.hero-photo{position:relative}
+.hero-photo img.main{width:100%;height:520px;object-fit:cover;border-radius:32px}
+.hero-photo .sticker{position:absolute;left:-24px;bottom:52px;background:var(--sun);border-radius:20px;padding:1rem 1.4rem;font-weight:800;font-family:"Baloo 2",cursive;color:#5a3b12;box-shadow:0 12px 28px rgba(0,0,0,.12);transform:rotate(-3deg);max-width:230px;font-size:1.02rem;line-height:1.35}
+.hero-photo figcaption{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#9a8a92;padding:.6rem .4rem}
+section{padding:3.8rem 0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.5rem}
+h2{font-family:"Baloo 2",cursive;font-weight:700;font-size:clamp(1.7rem,3.2vw,2.4rem);color:var(--plum);margin-bottom:.6rem}
+.sec-sub{color:#6b5a63;margin-bottom:2rem;max-width:60ch}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.tile{border-radius:24px;padding:2rem 1.7rem;background:#fff;border:2px solid var(--blush)}
+.tile.mint{background:var(--mint);border-color:var(--mint)}
+.tile.blush{background:var(--blush);border-color:var(--blush)}
+.tile h3{font-family:"Baloo 2",cursive;font-size:1.3rem;color:var(--plum);margin-bottom:.5rem}
+.tile p{font-size:.94rem;color:#54424c}
+.addons{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:1.3rem}
+.addon{background:#fff;border:2px dashed var(--blush-deep);border-radius:24px;padding:1.6rem;text-align:center}
+.addon h3{font-family:"Baloo 2",cursive;color:var(--plum);font-size:1.15rem;margin-bottom:.3rem}
+.addon p{font-size:.9rem;color:#6b5a63}
+.loyal{background:var(--mint);border-radius:28px;padding:2.6rem;display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;margin-top:2.4rem}
+.loyal img{width:100%;height:280px;object-fit:cover;border-radius:20px}
+.loyal figcaption{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:#5c6e63;padding-top:.5rem}
+.gal-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.gal-row figure{background:#fff;border-radius:24px;overflow:hidden;border:2px solid var(--blush)}
+.gal-row img{width:100%;height:300px;object-fit:cover}
+.gal-row figcaption{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#9a8a92;padding:.8rem 1.2rem}
+.hours-box{background:var(--plum);color:#ffeef4;border-radius:28px;padding:2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.hours-box h2{color:#fff}
+.hours-box table{width:100%;border-collapse:collapse}
+.hours-box td{padding:.85rem .4rem;border-bottom:1px solid rgba(255,255,255,.25);font-size:1rem}
+.hours-box td:last-child{text-align:right;font-weight:700}
+.hours-box tr.closed td{color:#d8aebd}
+.visit-card{background:var(--blush);border-radius:28px;padding:2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+.visit-card address{font-style:normal;font-size:1.05rem;margin-bottom:1rem}
+.visit-card .tel{font-family:"Baloo 2",cursive;font-size:1.7rem;color:var(--plum);text-decoration:none}
+footer.site{margin-top:3.5rem;background:var(--plum);color:#e8c9d4;padding:2.4rem 0;font-size:.84rem;line-height:1.7}
+footer.site a{color:#ffd9e3}
+footer.site .inner{max-width:1180px;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:2fr 1fr;gap:2rem}
+footer.site nav a{margin-right:1.1rem;text-decoration:none;font-size:.78rem;font-weight:700}
+@media(max-width:880px){
+  .hero{grid-template-columns:1fr}
+  .hero-photo img.main{height:380px}
+  .tiles,.addons,.gal-row{grid-template-columns:1fr 1fr}
+  .loyal,.hours-box,.visit-card{grid-template-columns:1fr}
+}
+@media(max-width:560px){.tiles,.addons,.gal-row{grid-template-columns:1fr}footer.site .inner{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="disclosure">Design preview. This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+<header class="top">
+  <div class="logo"><span class="paw">Plush</span> Puppy</div>
+  <nav class="sections" aria-label="Sections">
+    <a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#visit">Visit</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-card">
+    <h1>Luxury baths for very good pups.</h1>
+    <p class="lede">Plush Puppy is Lemoyne's pastel boutique salon for dogs. Hypoallergenic shampoos, breed specific cuts, and a mornings only schedule by appointment.</p>
+    <a class="pill-btn" href="tel:+17179755531">Call to book</a>
+  </div>
+  <figure class="hero-photo">
+    <img class="main" src="img/photo-1.jpg" alt="Fluffy poodle after a grooming session">
+    <div class="sticker">4.6 from 13 Google reviews</div>
+    <figcaption>Stock photo</figcaption>
+  </figure>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Spa day, every day.</h2>
+    <p class="sec-sub">Every service is by appointment only, mornings only. Ask about prices when you call.</p>
+    <div class="tiles">
+      <div class="tile"><h3>Luxury baths</h3><p>Gentle luxury baths with hypoallergenic shampoos, kind to sensitive skin.</p></div>
+      <div class="tile mint"><h3>Breed specific cuts</h3><p>Breed standard styling or custom cuts, shaped around your dog.</p></div>
+      <div class="tile"><h3>De-matting</h3><p>Patient, careful de-matting that keeps your dog comfortable.</p></div>
+      <div class="tile blush"><h3>Nail trims</h3><p>Quick, careful nail trims to keep paws happy.</p></div>
+      <div class="tile"><h3>Ear cleaning</h3><p>Gentle ear cleaning as part of a full groom or on its own.</p></div>
+      <div class="tile mint"><h3>Teeth brushing</h3><p>Teeth brushing for fresh breath and a healthy smile.</p></div>
+    </div>
+    <h2 style="margin-top:2.6rem">Little extras.</h2>
+    <p class="sec-sub">Add ons to make the appointment extra special.</p>
+    <div class="addons">
+      <div class="addon"><h3>Flea treatment</h3><p>Seasonal flea treatment add on.</p></div>
+      <div class="addon"><h3>Pawdicures</h3><p>Pampering paw treatments.</p></div>
+      <div class="addon"><h3>Spritzes</h3><p>A finishing spritz so they smell as good as they look.</p></div>
+    </div>
+    <div class="loyal">
+      <div>
+        <h2>Loyalty program</h2>
+        <p>Regulars are rewarded. Ask about the Plush Puppy loyalty program when you book and start earning toward future grooms.</p>
+        <p style="margin-top:1.2rem"><a class="pill-btn" href="tel:+17179755531">Call to book</a></p>
+      </div>
+      <figure>
+        <img src="img/photo-2.jpg" alt="Small dog wearing a bow tie after grooming">
+        <figcaption>Stock photo</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2>Fresh, fluffy, and fabulous.</h2>
+    <p class="sec-sub">A peek at the kind of pampering Plush Puppy pups enjoy.</p>
+    <div class="gal-row">
+      <figure><img src="img/photo-3.jpg" alt="Puppy enjoying a bath during its grooming appointment"><figcaption>Stock photo</figcaption></figure>
+      <figure><img src="img/photo-4.jpg" alt="Pomeranian being groomed at the salon"><figcaption>Stock photo</figcaption></figure>
+      <figure><img src="img/photo-5.jpg" alt="Yorkshire Terrier being showered during grooming"><figcaption>Stock photo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="wrap">
+    <div class="hours-box">
+      <div>
+        <h2>Mornings only.</h2>
+        <p>Plush Puppy grooms by appointment only, Tuesday through Saturday mornings. Call to reserve your pup's spot.</p>
+        <p style="margin-top:1.4rem"><a class="pill-btn" href="tel:+17179755531" style="background:var(--sun);color:#5a3b12">Call to book</a></p>
+      </div>
+      <table>
+        <tr><td>Tuesday to Saturday</td><td>8 AM to 1 PM</td></tr>
+        <tr class="closed"><td>Sunday and Monday</td><td>Closed</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="visit-card">
+      <div>
+        <h2>Come see us.</h2>
+        <address>702 State St<br>Lemoyne, PA 17043</address>
+        <a class="tel" href="tel:+17179755531">(717) 975-5531</a>
+      </div>
+      <div>
+        <p style="font-weight:700;margin-bottom:1rem">Appointments are mornings only, so it is best to call ahead.</p>
+        <a class="pill-btn" href="tel:+17179755531">Call to book</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="inner">
+    <p>Design preview by Freightfolio. This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Plush Puppy. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net">https://freightfolio.net</a>.</p>
+    <nav aria-label="Footer"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
+  </div>
+</footer>
+</body>
+</html>
