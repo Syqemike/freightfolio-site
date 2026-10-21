@@ -59,3 +59,5 @@ table.hours td{text-align:right}
 @media(max-width:880px){.hero .wrap,.split{grid-template-columns:1fr}.svc-grid,.gal-grid{grid-template-columns:1fr}.band{margin:0 12px;padding:48px 28px}.site-nav a:not(:last-child){display:none}}
 
 .stockflag{position:absolute;left:14px;bottom:14px;background:rgba(8,8,8,.7);color:#fff;font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:4px;z-index:6;font-family:system-ui,sans-serif}
+
+.img-cap{font-size:.92rem;color:var(--plum);padding:10px 4px 0}
