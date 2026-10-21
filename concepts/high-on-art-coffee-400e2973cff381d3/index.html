@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>High on Art &amp; Coffee | Lexington, KY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#faf4e8; --ink:#26221c; --terra:#c4562c; --teal:#1f7a72; --gold:#d9a441;
+    --rose:#b64f6e; --card:#fffdf7; --line:#e4d9c2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Karla',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  .disclosure{background:var(--ink);color:#f5efe0;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px}
+  .disclosure a{color:var(--gold);text-decoration:none}
+  header.site{position:sticky;top:0;z-index:50;background:rgba(250,244,232,.96);backdrop-filter:blur(6px);
+    border-bottom:2px solid var(--ink)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
+    padding:14px 22px;gap:16px}
+  .brand{font-family:'Fraunces',serif;font-weight:700;font-size:22px;color:var(--ink);text-decoration:none}
+  .brand em{font-style:italic;color:var(--terra)}
+  .navlinks{display:flex;gap:22px;list-style:none}
+  .navlinks a{color:var(--ink);text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--terra)}
+  .btn{display:inline-block;background:var(--terra);color:#fff;font-weight:700;text-decoration:none;
+    padding:12px 26px;border-radius:999px;letter-spacing:.04em;border:2px solid var(--ink);
+    box-shadow:3px 3px 0 var(--ink);transition:transform .15s ease, box-shadow .15s ease}
+  .btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+  .btn.teal{background:var(--teal)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{padding:64px 0 40px;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+  .kicker{display:inline-block;background:var(--gold);border:2px solid var(--ink);border-radius:999px;
+    padding:6px 16px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+  h1{font-family:'Fraunces',serif;font-size:clamp(42px,6vw,74px);line-height:1.02;font-weight:700;margin-bottom:18px}
+  h1 .a{color:var(--terra)} h1 .b{color:var(--teal)} h1 .c{color:var(--rose)}
+  .lede{font-size:19px;max-width:34em;margin-bottom:14px}
+  .rating{display:inline-flex;align-items:center;gap:10px;background:var(--card);border:2px solid var(--ink);
+    border-radius:12px;padding:10px 18px;margin:14px 0 22px;box-shadow:3px 3px 0 var(--ink);font-weight:700}
+  .stars{color:var(--gold);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-photo{border:3px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:8px 8px 0 var(--teal);transform:rotate(1.5deg)}
+  .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+  .cap{font-size:12px;color:#6b6257;padding:8px 4px 0;letter-spacing:.04em}
+  .marquee{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);background:var(--ink);color:var(--paper);
+    overflow:hidden;white-space:nowrap;padding:12px 0;margin-top:56px}
+  .marquee span{font-family:'Fraunces',serif;font-style:italic;font-size:20px;margin:0 26px}
+  section{padding:64px 0}
+  .sec-head{margin-bottom:34px}
+  .sec-head h2{font-family:'Fraunces',serif;font-size:clamp(30px,4vw,44px);margin-bottom:8px}
+  .sec-head p{font-size:17px;max-width:44em}
+  .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .menu-card{background:var(--card);border:2px solid var(--ink);border-radius:16px;padding:24px;box-shadow:4px 4px 0 var(--line)}
+  .menu-card h3{font-family:'Fraunces',serif;font-size:22px;margin-bottom:6px}
+  .menu-card .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+    padding:3px 10px;border-radius:999px;border:2px solid var(--ink);margin-bottom:12px}
+  .menu-card ul{list-style:none}
+  .menu-card li{padding:7px 0;border-bottom:1px dashed var(--line);font-size:15px}
+  .menu-card li:last-child{border-bottom:none}
+  .tag.coffee{background:#f6e3c8}.tag.food{background:#d8efe9}.tag.sweet{background:#f6d3de}
+  .artists{background:var(--ink);color:var(--paper);border-top:2px solid var(--ink)}
+  .artists .sec-head h2{color:var(--gold)}
+  .art-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+  .art-grid img{border:3px solid var(--gold);border-radius:16px;width:100%;display:block;transform:rotate(-1.2deg);max-height:480px;object-fit:cover}
+  .art-grid .cap{color:#b9ae97}
+  .give{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
+  .give-card{background:#2e2a24;border:2px solid var(--gold);border-radius:14px;padding:22px}
+  .give-card h3{font-family:'Fraunces',serif;color:var(--gold);font-size:20px;margin-bottom:8px}
+  .give-card p{font-size:15px;color:#e9e0cd}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gallery figure{border:2px solid var(--ink);border-radius:12px;overflow:hidden;background:var(--card)}
+  .gallery img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+  .gallery .cap{padding:8px 10px}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+  .hours-card{background:var(--card);border:2px solid var(--ink);border-radius:16px;padding:28px;box-shadow:5px 5px 0 var(--terra)}
+  .hours-card h3{font-family:'Fraunces',serif;font-size:24px;margin-bottom:12px}
+  .hours-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed var(--line);font-size:16px}
+  .hours-row:last-child{border:none}
+  .fine{font-size:13px;color:#6b6257;margin-top:10px}
+  .contact-card{background:var(--teal);color:#fff;border:2px solid var(--ink);border-radius:16px;padding:28px;box-shadow:5px 5px 0 var(--ink)}
+  .contact-card h3{font-family:'Fraunces',serif;font-size:24px;margin-bottom:10px}
+  .contact-card p{margin-bottom:8px}
+  .contact-card a{color:#fff;font-weight:700}
+  footer{background:var(--ink);color:#b9ae97;padding:36px 0;font-size:14px}
+  footer a{color:var(--gold)}
+  @media(max-width:900px){
+    .hero-grid,.art-grid,.visit{grid-template-columns:1fr}
+    .menu-grid,.give{grid-template-columns:1fr}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the business's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">High on <em>Art</em> &amp; Coffee</a>
+    <ul class="navlinks">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#art">Art &amp; Community</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn" href="tel:+18595763981">Call (859) 576-3981</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker">Lexington, Kentucky</span>
+        <h1>Coffee with <span class="a">color,</span><br>art with <span class="b">heart,</span><br>community <span class="c">first.</span></h1>
+        <p class="lede">High on Art &amp; Coffee is a cafe and local-art gallery on East High Street. Fair-trade organic coffee, a full cafe menu, and walls covered with work from more than 100 local artists. Tips are split with local charities.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 5.0 from 125 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+18595763981">Call to Order Takeout</a>
+          <a class="btn teal" href="#menu">See the Menu</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/photo-1.jpg" alt="Stock photo: cozy cafe interior">
+        <figcaption class="cap">Stock photo: cafe interior</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <span>fair-trade organic coffee</span>·<span>100+ local artists</span>·<span>pet-friendly patio</span>·<span>takeout available</span>·<span>tips support local charities</span>·<span>fair-trade organic coffee</span>·<span>100+ local artists</span>·<span>pet-friendly patio</span>
+  </div>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The menu</h2>
+        <p>Coffee drinks, milkshakes, and cafe food made to order. Call ahead and your takeout will be ready when you arrive.</p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <span class="tag coffee">Coffee &amp; Drinks</span>
+          <h3>Sips</h3>
+          <ul>
+            <li>Mocha</li>
+            <li>Chailine chai latte</li>
+            <li>Matcha lattes</li>
+            <li>Milkshakes</li>
+            <li>Fair-trade organic coffee</li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <span class="tag food">Cafe Food</span>
+          <h3>Eats</h3>
+          <ul>
+            <li>Crangarine Turkey Club</li>
+            <li>LGBT Sandwich</li>
+            <li>Avocado toast</li>
+            <li>Bagels</li>
+            <li>Salads and seasonal soups</li>
+            <li>Chicken salad</li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <span class="tag sweet">Mornings</span>
+          <h3>Brunch plates</h3>
+          <ul>
+            <li>Blueberry waffles</li>
+            <li>Bagel plates</li>
+            <li>Seasonal specials</li>
+          </ul>
+          <p class="fine">Full menu details change with the seasons. Call to ask what is cooking today.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="art" class="artists">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>An art gallery that serves coffee</h2>
+        <p>More than 100 local artists show their work inside the cafe. Browse the walls while your drink is made, and take a piece home with you.</p>
+      </div>
+      <div class="art-grid">
+        <figure>
+          <img src="img/photo-2.jpg" alt="Stock photo: creative paper-cup wall decor in a cafe">
+          <figcaption class="cap">Stock photo: cafe wall decor</figcaption>
+        </figure>
+        <div class="give">
+          <div class="give-card">
+            <h3>100+ local artists</h3>
+            <p>Paintings, prints, and handmade goods from Lexington-area makers, all available to buy in store.</p>
+          </div>
+          <div class="give-card">
+            <h3>Tips that give back</h3>
+            <p>Tips collected at the counter are split with local charities chosen by the community.</p>
+          </div>
+          <div class="give-card">
+            <h3>Pet-friendly patio</h3>
+            <p>Dogs are welcome on the patio, so the whole family can come along for coffee.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Around the cafe</h2>
+        <p>A look at the space, the counter, and the craft behind the bar.</p>
+      </div>
+      <div class="gallery">
+        <figure><img src="img/photo-3.jpg" alt="Stock photo: cafe seating with plants by a window"><figcaption class="cap">Stock photo: cafe seating</figcaption></figure>
+        <figure><img src="img/photo-4.jpg" alt="Stock photo: espresso machine at a coffee bar"><figcaption class="cap">Stock photo: espresso bar</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: coffee counter with cups"><figcaption class="cap">Stock photo: coffee counter</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Visit</h2>
+        <p>Walk in for coffee, browse the gallery, or call ahead for takeout.</p>
+      </div>
+      <div class="visit">
+        <div class="hours-card">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Monday to Friday</span><strong>8:00 AM - 4:00 PM</strong></div>
+          <div class="hours-row"><span>Saturday</span><strong>10:00 AM - 4:00 PM</strong></div>
+          <div class="hours-row"><span>Sunday</span><strong>Closed</strong></div>
+          <p class="fine">Hours as listed publicly. Holiday hours may differ, so call to confirm before a special trip.</p>
+        </div>
+        <div class="contact-card">
+          <h3>Find us</h3>
+          <p><strong>High on Art &amp; Coffee</strong><br>523 E High St<br>Lexington, KY 40502</p>
+          <p>Phone: <a href="tel:+18595763981">(859) 576-3981</a></p>
+          <p>Takeout is available. Questions? Call and we will help.</p>
+          <a class="btn" href="tel:+18595763981" style="margin-top:10px">Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for High on Art &amp; Coffee. It is not affiliated with or endorsed by the business. Photos are stock photos, not photos of the business.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 19159249: Free A serene ocean scene featuring numerous fishing boats under a vast blue sky captured from above. Stock Photo
+  page: https://www.pexels.com/photo/boats-on-blue-sea-19159249/
+  file: https://images.pexels.com/photos/19159249/pexels-photo-19159249.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 7949249: Free A serene view of a fishing boat on the open ocean under a clear blue sky. Stock Photo
+  page: https://www.pexels.com/photo/white-boat-on-sea-under-the-blue-sky-7949249/
+  file: https://images.pexels.com/photos/7949249/pexels-photo-7949249.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 29403161: Free A vibrant red fishing boat cruises in the azure waters of Türkiye, against a vast seascape. Stock Photo
+  page: https://www.pexels.com/photo/red-fishing-boat-sailing-in-turkiye-s-azure-seas-29403161/
+  file: https://images.pexels.com/photos/29403161/pexels-photo-29403161.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 29647241: Free A tranquil scene featuring a boat on the ocean near the coast of Taiwan, under a clear blue sky. Stock Photo
+  page: https://www.pexels.com/photo/scenic-view-of-boat-on-taiwanese-oceanic-horizon-29647241/
+  file: https://images.pexels.com/photos/29647241/pexels-photo-29647241.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 36752486: Free A fishing boat manned by a fisherman navigates through the cloudy sea, surrounded by other boats. Stock Photo
+  page: https://www.pexels.com/photo/fishing-boat-on-a-cloudy-sea-day-36752486/
+  file: https://images.pexels.com/photos/36752486/pexels-photo-36752486.jpeg?auto=compress&cs=tinysrgb&w=1260

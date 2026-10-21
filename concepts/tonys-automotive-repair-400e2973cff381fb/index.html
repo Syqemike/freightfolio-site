@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Tony's Automotive Repair | Lexington, KY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--char:#22252a;--char2:#17191d;--orange:#f26a1b;--orange2:#d9530f;--bone:#f4f1ea;--steel:#8b939e;--line:#d8d2c4}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--bone);color:var(--char);line-height:1.6}
+  .disclosure{background:var(--char2);color:#b9bec7;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px}
+  .disclosure a{color:var(--orange)}
+  header.site{background:var(--char);color:#fff;position:sticky;top:0;z-index:50;border-bottom:4px solid var(--orange)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'Archivo',sans-serif;font-weight:900;font-size:21px;color:#fff;text-decoration:none;letter-spacing:.02em;text-transform:uppercase}
+  .brand span{color:var(--orange)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:#d7dbe1;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--orange)}
+  .btn{display:inline-block;background:var(--orange);color:#fff;font-family:'Archivo',sans-serif;font-weight:800;
+    text-decoration:none;padding:14px 30px;letter-spacing:.05em;text-transform:uppercase;font-size:15px;
+    clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);transition:background .15s ease}
+  .btn:hover{background:var(--orange2)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{background:var(--char);color:#fff;padding:70px 0;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background:repeating-linear-gradient(-45deg,transparent 0 26px,rgba(242,106,27,.06) 26px 52px)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;position:relative;z-index:1}
+  .kicker{display:inline-block;background:var(--orange);color:#fff;font-family:'Archivo',sans-serif;font-weight:800;
+    font-size:13px;letter-spacing:.18em;text-transform:uppercase;padding:7px 16px;margin-bottom:18px;
+    clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+  h1{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(40px,5.6vw,68px);line-height:1.02;
+    text-transform:uppercase;margin-bottom:16px}
+  h1 .o{color:var(--orange)}
+  .lede{font-size:18px;color:#cfd4db;max-width:32em;margin-bottom:14px}
+  .rating{display:inline-flex;align-items:center;gap:10px;border:2px solid var(--orange);padding:10px 18px;
+    margin:12px 0 22px;font-weight:600}
+  .rating .stars{color:var(--orange);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-photo{border:4px solid var(--orange);background:#000}
+  .hero-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .cap{font-size:12px;color:#7d8590;padding:8px 2px 0;letter-spacing:.04em}
+  .facts{background:var(--orange);color:#fff}
+  .facts .wrap{display:flex;gap:30px;justify-content:space-between;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}
+  .fact{font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:15px}
+  .fact small{display:block;font-family:'Inter',sans-serif;font-weight:500;text-transform:none;letter-spacing:0;font-size:13px;opacity:.9}
+  section{padding:66px 0}
+  .sec-head{margin-bottom:32px}
+  .sec-head h2{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(28px,4vw,42px);
+    text-transform:uppercase;margin-bottom:8px}
+  .sec-head h2 .o{color:var(--orange2)}
+  .sec-head p{font-size:17px;max-width:44em}
+  .workorder{background:#fff;border:2px solid var(--char)}
+  .wo-head{background:var(--char);color:#fff;padding:14px 22px;font-family:'Archivo',sans-serif;font-weight:800;
+    letter-spacing:.1em;text-transform:uppercase;font-size:14px;display:flex;justify-content:space-between}
+  .svc{display:grid;grid-template-columns:repeat(2,1fr);}
+  .svc-item{padding:26px;border-bottom:1px solid var(--line);display:flex;gap:18px;align-items:flex-start}
+  .svc-item:nth-child(odd){border-right:1px solid var(--line)}
+  .svc-item:nth-last-child(-n+2){border-bottom:none}
+  .num{font-family:'Archivo',sans-serif;font-weight:900;font-size:28px;color:var(--orange);line-height:1}
+  .svc-item h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase;margin-bottom:6px}
+  .svc-item p{font-size:15px;color:#4a4f57}
+  .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
+  .trust-card{background:var(--char);color:#fff;padding:26px;border-left:5px solid var(--orange)}
+  .trust-card h3{font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;font-size:17px;margin-bottom:8px;color:var(--orange)}
+  .trust-card p{font-size:15px;color:#cfd4db}
+  .shop{background:var(--char2);color:#fff}
+  .shop-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .shop h2{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(28px,4vw,42px);text-transform:uppercase;margin-bottom:14px}
+  .shop h2 .o{color:var(--orange)}
+  .shop p{color:#cfd4db;font-size:17px;margin-bottom:12px}
+  .shop .cap{color:#7d8590}
+  .shop figure img{width:100%;display:block;border:3px solid var(--orange);aspect-ratio:4/3;object-fit:cover}
+  .hours{background:#fff;border:2px solid var(--char);padding:28px;color:var(--char)}
+  .hours p{color:var(--char)}
+  .hours .fine{color:#7d8590}
+  .hours h3{font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;margin-bottom:12px}
+  .hours-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .hours-row:last-of-type{border:none}
+  .fine{font-size:13px;color:#7d8590;margin-top:10px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+  .gallery figure{border:2px solid var(--char);background:#fff}
+  .gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .gallery .cap{color:#5c626b;padding:8px 10px}
+  .cta-band{background:var(--orange);padding:56px 0;text-align:center;color:#fff}
+  .cta-band h2{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(28px,4.4vw,48px);text-transform:uppercase;margin-bottom:10px}
+  .cta-band p{font-size:18px;margin-bottom:22px}
+  .cta-band .btn{background:#fff;color:var(--orange2)}
+  .cta-band .btn:hover{background:var(--char);color:#fff}
+  footer{background:var(--char2);color:#7d8590;padding:36px 0;font-size:14px}
+  footer a{color:var(--orange)}
+  @media(max-width:900px){
+    .hero-grid,.shop-grid{grid-template-columns:1fr}
+    .svc{grid-template-columns:1fr}
+    .svc-item:nth-child(odd){border-right:none}
+    .svc-item{border-bottom:1px solid var(--line)}
+    .trust{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the shop's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Tony's <span>Automotive</span> Repair</a>
+    <ul class="navlinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#shop">The Shop</a></li>
+      <li><a href="#visit">Hours &amp; Location</a></li>
+    </ul>
+    <a class="btn" href="tel:+18592542300">Call (859) 254-2300</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">Lexington, KY · 21 Years in Business</span>
+        <h1>Straight talk.<br>Honest <span class="o">repairs.</span></h1>
+        <p class="lede">Tony's Automotive Repair has kept Lexington cars running for about 21 years. Fuel systems, transmissions, brakes, and general mechanical work, done by people who tell you what your car actually needs.</p>
+        <div class="rating"><span class="stars">★★★★☆</span> 4.6 from 11 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+18592542300">Call the Shop</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/photo-1.jpg" alt="Stock photo: interior of an auto repair shop">
+        <figcaption class="cap">Stock photo: repair shop interior</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="facts">
+    <div class="wrap">
+      <div class="fact">About 21 years<small>serving Lexington drivers</small></div>
+      <div class="fact">Cards accepted<small>credit and debit welcome</small></div>
+      <div class="fact">Near UK campus<small>convenient for students and neighbors</small></div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>What we <span class="o">work on</span></h2>
+        <p>Bring the car in, describe the symptom, and get a straight answer. These are the jobs the shop handles every week.</p>
+      </div>
+      <div class="workorder">
+        <div class="wo-head"><span>Work order · Services</span><span>Tony's Automotive Repair</span></div>
+        <div class="svc">
+          <div class="svc-item"><span class="num">01</span><div><h3>Brakes</h3><p>Pads, rotors, and brake system diagnosis to keep stopping distances short.</p></div></div>
+          <div class="svc-item"><span class="num">02</span><div><h3>Transmission work</h3><p>Transmission service and repair for shifting problems and slipping gears.</p></div></div>
+          <div class="svc-item"><span class="num">03</span><div><h3>Fuel systems</h3><p>Fuel system diagnosis and repair, from pumps to injectors.</p></div></div>
+          <div class="svc-item"><span class="num">04</span><div><h3>Gaskets &amp; manifolds</h3><p>Gasket and manifold work that stops leaks and restores performance.</p></div></div>
+          <div class="svc-item"><span class="num">05</span><div><h3>General mechanical repair</h3><p>The everyday fixes that keep a daily driver dependable.</p></div></div>
+          <div class="svc-item"><span class="num">06</span><div><h3>Inspections &amp; diagnosis</h3><p>Not sure what is wrong? Get it checked and hear it plain.</p></div></div>
+        </div>
+      </div>
+      <div class="trust">
+        <div class="trust-card"><h3>No runaround</h3><p>You get told what the car needs, what it costs, and what can wait. That is the whole sales pitch.</p></div>
+        <div class="trust-card"><h3>One shop, one standard</h3><p>An independent neighborhood shop, not a chain. The same people answer the phone and turn the wrenches.</p></div>
+        <div class="trust-card"><h3>Easy to pay</h3><p>Credit and debit cards are accepted, so a surprise repair does not have to wait for payday.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop" class="shop">
+    <div class="wrap">
+      <div class="shop-grid">
+        <div>
+          <h2>In the <span class="o">bay</span></h2>
+          <p>A working shop, not a showroom. Cars go up on the lift, problems get found, and fixes get done.</p>
+          <figure>
+            <img src="img/photo-5.jpg" alt="Stock photo: car raised on a lift in a repair shop">
+            <figcaption class="cap">Stock photo: car on a lift</figcaption>
+          </figure>
+        </div>
+        <div class="hours">
+          <h3>Hours &amp; location</h3>
+          <div class="hours-row"><span>Monday to Thursday</span><strong>8:00 AM - 6:30 PM</strong></div>
+          <div class="hours-row"><span>Friday to Sunday</span><strong>Not listed</strong></div>
+          <p class="fine">Hours as listed publicly; sources vary, so call to confirm before you drive over.</p>
+          <p style="margin-top:14px"><strong>Tony's Automotive Repair</strong><br>857 Angliana Ave<br>Lexington, KY 40508</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+18592542300" style="color:var(--orange2);font-weight:700">(859) 254-2300</a></p>
+        </div>
+      </div>
+      <div class="gallery" id="visit">
+        <figure><img src="img/photo-2.jpg" alt="Stock photo: mechanic inspecting a car engine"><figcaption class="cap">Stock photo: engine inspection</figcaption></figure>
+        <figure><img src="img/photo-3.jpg" alt="Stock photo: mechanic at work in a garage"><figcaption class="cap">Stock photo: mechanic at work</figcaption></figure>
+        <figure><img src="img/photo-4.jpg" alt="Stock photo: engine being lifted in a repair shop"><figcaption class="cap">Stock photo: engine work</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Car acting up? Call Tony's.</h2>
+      <p>Describe the symptom over the phone and get a straight answer about next steps.</p>
+      <a class="btn" href="tel:+18592542300">Call (859) 254-2300</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Tony's Automotive Repair. It is not affiliated with or endorsed by the shop. Photos are stock photos, not photos of the shop.</p>
+  </div>
+</footer>
+</body>
+</html>

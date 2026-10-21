@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Babbar &amp; Associates P.C. | Levittown, NY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#16263f;--navy2:#0f1c31;--gold:#c9a24b;--goldlt:#e8d9ae;--ivory:#faf8f2;--ink:#23272f;--line:#d9d2bd}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Source Sans 3',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.65}
+  .disclosure{background:var(--navy2);color:#cfd6e4;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px}
+  .disclosure a{color:var(--goldlt)}
+  header.site{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid var(--gold)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 22px;gap:16px}
+  .brand{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.02em}
+  .brand span{color:var(--gold)}
+  .navlinks{display:flex;gap:26px;list-style:none}
+  .navlinks a{color:#e6e0d2;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--gold)}
+  .btn{display:inline-block;background:var(--gold);color:var(--navy2);font-weight:700;text-decoration:none;
+    padding:13px 28px;letter-spacing:.03em;transition:background .15s ease}
+  .btn:hover{background:var(--goldlt)}
+  .btn.ghost{background:transparent;color:#fff;border:2px solid var(--gold)}
+  .btn.ghost:hover{background:rgba(201,162,75,.15)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{background:linear-gradient(160deg,var(--navy) 55%,var(--navy2));color:#fff;padding:72px 0 0;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-bottom:72px}
+  .rule{width:72px;height:3px;background:var(--gold);margin-bottom:20px}
+  .kicker{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--goldlt);margin-bottom:14px;font-weight:600}
+  h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.4vw,64px);line-height:1.08;font-weight:600;margin-bottom:18px}
+  .lede{font-size:18px;color:#d8d2c2;max-width:32em;margin-bottom:16px}
+  .rating{display:inline-block;border:1px solid var(--gold);color:var(--goldlt);padding:9px 18px;
+    font-size:15px;letter-spacing:.04em;margin:10px 0 24px}
+  .rating strong{color:#fff}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-photo{border:1px solid var(--gold);padding:10px;background:rgba(255,255,255,.03)}
+  .hero-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .cap{font-size:12px;color:#8d94a6;padding:8px 2px 0;letter-spacing:.05em}
+  .strip{background:var(--gold);color:var(--navy2);padding:14px 0}
+  .strip .wrap{display:flex;gap:36px;justify-content:space-between;flex-wrap:wrap;font-weight:700;font-size:15px;letter-spacing:.03em}
+  section{padding:70px 0}
+  .sec-head{max-width:640px;margin-bottom:38px}
+  .sec-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4vw,44px);color:var(--navy);margin-bottom:10px;font-weight:600}
+  .sec-head p{font-size:17px}
+  .practice{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .pcard{border:1px solid var(--line);border-top:4px solid var(--navy);background:#fff;padding:30px}
+  .pcard.alt{border-top-color:var(--gold)}
+  .pcard h3{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--navy);margin-bottom:10px}
+  .pcard ul{list-style:none;margin-top:8px}
+  .pcard li{padding:6px 0 6px 22px;position:relative;font-size:16px}
+  .pcard li::before{content:"";position:absolute;left:2px;top:14px;width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+  .consult{background:var(--navy);color:#fff;border-top:3px solid var(--gold);border-bottom:3px solid var(--gold)}
+  .consult-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+  .consult h2{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4vw,44px);margin-bottom:12px;font-weight:600}
+  .consult p{color:#d8d2c2;font-size:17px;margin-bottom:14px}
+  .consult img{width:100%;display:block;border:1px solid var(--gold);aspect-ratio:4/3;object-fit:cover}
+  .consult .cap{color:#8d94a6}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .gallery figure{border:1px solid var(--line);background:#fff;padding:8px}
+  .gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .gallery .cap{color:#6f7688}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .vcard{background:#fff;border:1px solid var(--line);padding:30px}
+  .vcard h3{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--navy);margin-bottom:12px}
+  .hours-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:var(--navy);font-weight:700}
+  .fine{font-size:13px;color:#6f7688;margin-top:10px}
+  footer{background:var(--navy2);color:#8d94a6;padding:36px 0;font-size:14px}
+  footer a{color:var(--goldlt)}
+  @media(max-width:900px){
+    .hero-grid,.consult-grid,.visit{grid-template-columns:1fr}
+    .practice{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the firm's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Babbar <span>&amp;</span> Associates <span>P.C.</span></a>
+    <ul class="navlinks">
+      <li><a href="#practice">Practice Areas</a></li>
+      <li><a href="#consult">Consultation</a></li>
+      <li><a href="#visit">Contact</a></li>
+    </ul>
+    <a class="btn" href="tel:+15162280111">Call (516) 228-0111</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="rule"></div>
+        <p class="kicker">Immigration &amp; Family Law · Levittown, NY</p>
+        <h1>Legal counsel for the matters that shape your life.</h1>
+        <p class="lede">Babbar &amp; Associates P.C. handles immigration and family law from its Levittown office. The firm offers telephone consultations and a free initial phone consultation.</p>
+        <div class="rating"><strong>5.0</strong> from 12 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+15162280111">Request a Free Phone Consultation</a>
+          <a class="btn ghost" href="#practice">Practice Areas</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/photo-1.jpg" alt="Stock photo: law library with books and gavel">
+        <figcaption class="cap">Stock photo: law library</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="wrap">
+      <span>Free initial phone consultation</span>
+      <span>Telephone consultations available</span>
+      <span>Immigration and family law</span>
+    </div>
+  </div>
+
+  <section id="practice">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="rule"></div>
+        <h2>Practice areas</h2>
+        <p>Two areas of focus, handled with direct attention from the firm.</p>
+      </div>
+      <div class="practice">
+        <div class="pcard">
+          <h3>Immigration</h3>
+          <ul>
+            <li>Naturalization and citizenship</li>
+            <li>Deportation defense</li>
+            <li>Habeas corpus and federal detention litigation</li>
+            <li>Telephone consultations available</li>
+          </ul>
+        </div>
+        <div class="pcard alt">
+          <h3>Divorce &amp; Family Law</h3>
+          <ul>
+            <li>Divorce matters</li>
+            <li>Family law counsel</li>
+            <li>Free initial phone consultation</li>
+            <li>Telephone consultations available</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="consult" class="consult">
+    <div class="wrap consult-grid">
+      <div>
+        <div class="rule"></div>
+        <h2>Start with a phone call.</h2>
+        <p>Your first phone consultation is free. Describe your situation, ask your questions, and learn what options the law gives you before you commit to anything.</p>
+        <p>To reach the firm, call <a href="tel:+15162280111" style="color:#fff;font-weight:700">(516) 228-0111</a> during office hours.</p>
+        <a class="btn" href="tel:+15162280111">Call (516) 228-0111</a>
+      </div>
+      <figure>
+        <img src="img/photo-4.jpg" alt="Stock photo: professional reviewing legal documents">
+        <figcaption class="cap">Stock photo: reviewing legal documents</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="rule"></div>
+        <h2>The practice</h2>
+        <p>A look at the setting and materials of a working law office.</p>
+      </div>
+      <div class="gallery">
+        <figure><img src="img/photo-2.jpg" alt="Stock photo: law office building exterior"><figcaption class="cap">Stock photo: law office exterior</figcaption></figure>
+        <figure><img src="img/photo-3.jpg" alt="Stock photo: law office interior"><figcaption class="cap">Stock photo: office interior</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: Lady Justice statue"><figcaption class="cap">Stock photo: Lady Justice statue</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="rule"></div>
+        <h2>Contact</h2>
+        <p>Reach the office by phone during business hours.</p>
+      </div>
+      <div class="visit">
+        <div class="vcard">
+          <h3>Office hours</h3>
+          <div class="hours-row"><span>Monday to Friday</span><strong>10:00 AM - 5:00 PM</strong></div>
+          <div class="hours-row"><span>Saturday and Sunday</span><strong>Closed</strong></div>
+          <p class="fine">Hours as listed publicly. Call to confirm before visiting.</p>
+        </div>
+        <div class="vcard">
+          <h3>Find the office</h3>
+          <p><strong>Babbar &amp; Associates P.C.</strong><br>3601 Hempstead Tpke, Suite 502<br>Levittown, NY 11756</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+15162280111">(516) 228-0111</a></p>
+          <p style="margin-top:10px"><a class="btn" href="tel:+15162280111">Call the Office</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Babbar &amp; Associates P.C. It is not affiliated with or endorsed by the firm. Photos are stock photos, not photos of the firm.</p>
+  </div>
+</footer>
+</body>
+</html>

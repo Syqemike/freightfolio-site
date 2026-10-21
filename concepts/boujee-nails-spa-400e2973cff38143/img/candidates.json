@@ -1,0 +1,58 @@
+[
+  {
+    "file": "cand-1.jpg",
+    "pexels_id": "16041439",
+    "alt": "Free Close-up of a professional manicure session with a nail file used by a beautician. Stock Photo",
+    "query": "nail salon manicure",
+    "image_url": "https://images.pexels.com/photos/16041439/pexels-photo-16041439.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/nail-file-in-women-16041439/"
+  },
+  {
+    "file": "cand-2.jpg",
+    "pexels_id": "6135675",
+    "alt": "Free Close-up of a manicure procedure in a salon, showcasing detailed nail care techniques. Stock Photo",
+    "query": "nail salon manicure",
+    "image_url": "https://images.pexels.com/photos/6135675/pexels-photo-6135675.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/photo-of-a-person-s-hand-getting-a-manicure-6135675/"
+  },
+  {
+    "file": "cand-3.jpg",
+    "pexels_id": "6135685",
+    "alt": "Free Nail technician performing manicure in a salon using a file on client's hand. Stock Photo",
+    "query": "nail salon manicure",
+    "image_url": "https://images.pexels.com/photos/6135685/pexels-photo-6135685.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/photo-of-a-person-getting-a-manicure-6135685/"
+  },
+  {
+    "file": "cand-4.jpg",
+    "pexels_id": "3997384",
+    "alt": "Free Professional hand treatment features a stylish red manicure at a modern nail salon. Stock Photo",
+    "query": "nail salon manicure",
+    "image_url": "https://images.pexels.com/photos/3997384/pexels-photo-3997384.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/person-with-red-nail-polish-3997384/"
+  },
+  {
+    "file": "cand-5.jpg",
+    "pexels_id": "22668317",
+    "alt": "Free Close-up of a manicure in progress, showcasing hand and nail care techniques. Stock Photo",
+    "query": "nail salon manicure",
+    "image_url": "https://images.pexels.com/photos/22668317/pexels-photo-22668317.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/woman-making-nails-at-beautician-22668317/"
+  },
+  {
+    "file": "cand-6.jpg",
+    "pexels_id": "3738377",
+    "alt": "Free Close-up of a manicure session with black gloves applying hand treatment in a salon setting. Stock Photo",
+    "query": "nail salon manicure",
+    "image_url": "https://images.pexels.com/photos/3738377/pexels-photo-3738377.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/person-wearing-black-gloves-3738377/"
+  },
+  {
+    "file": "cand-8.jpg",
+    "pexels_id": "3997381",
+    "alt": "Free Close-up of red manicured nails during a salon session with nail tools. Stock Photo",
+    "query": "nail salon manicure",
+    "image_url": "https://images.pexels.com/photos/3997381/pexels-photo-3997381.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/person-with-red-nail-polish-3997381/"
+  }
+]

@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 5373256: Free Cozy café interior with a vintage design reflected in a round mirror. Stock Photo
+  page: https://www.pexels.com/photo/mirror-reflection-of-cafe-5373256/
+  file: https://images.pexels.com/photos/5373256/pexels-photo-5373256.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 14517408: Free Creative wall decor using paper cups in a modern cafe interior. Stock Photo
+  page: https://www.pexels.com/photo/cups-hanging-on-the-wall-14517408/
+  file: https://images.pexels.com/photos/14517408/pexels-photo-14517408.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 34353697: Free Inviting café interior featuring plants and a street view through a large window. Stock Photo
+  page: https://www.pexels.com/photo/cozy-cafe-interior-with-urban-view-34353697/
+  file: https://images.pexels.com/photos/34353697/pexels-photo-34353697.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 6612572: Free A cozy coffee shop interior featuring a modern espresso machine and various coffee accessories. Stock Photo
+  page: https://www.pexels.com/photo/an-espresso-machine-6612572/
+  file: https://images.pexels.com/photos/6612572/pexels-photo-6612572.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 32617176: Free Aesthetic view of a café countertop in Hanoi, Vietnam, featuring coffee grinders and cups. Stock Photo
+  page: https://www.pexels.com/photo/cozy-hanoi-cafe-countertop-with-coffee-equipment-32617176/
+  file: https://images.pexels.com/photos/32617176/pexels-photo-32617176.jpeg?auto=compress&cs=tinysrgb&w=1260

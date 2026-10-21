@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Elliott &amp; Bradley Plumbing Inc. | West Chester, OH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#16305b;--navy2:#0e2040;--copper:#c06a2c;--copper2:#a3551f;--cream:#faf6ec;--ink:#23272e;--line:#ddd3ba}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Public Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+  .disclosure{background:var(--navy2);color:#b9c6de;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px}
+  .disclosure a{color:var(--copper)}
+  header.site{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;border-bottom:4px solid var(--copper)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'Zilla Slab',serif;font-weight:700;font-size:21px;color:#fff;text-decoration:none}
+  .brand span{color:var(--copper)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:#d5deef;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--copper)}
+  .btn{display:inline-block;background:var(--copper);color:#fff;font-weight:700;text-decoration:none;
+    padding:14px 30px;letter-spacing:.04em;border-radius:4px;transition:background .15s ease}
+  .btn:hover{background:var(--copper2)}
+  .btn.navy{background:var(--navy)}
+  .btn.navy:hover{background:var(--navy2)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{background:var(--navy);color:#fff;padding:70px 0;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .est{display:inline-flex;align-items:center;gap:12px;margin-bottom:18px}
+  .est .badge{background:var(--copper);font-family:'Zilla Slab',serif;font-weight:700;font-size:15px;
+    padding:8px 18px;border-radius:4px;letter-spacing:.06em}
+  .est .since{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#c9d4e8;font-weight:600}
+  h1{font-family:'Zilla Slab',serif;font-size:clamp(38px,5.2vw,64px);line-height:1.06;font-weight:700;margin-bottom:16px}
+  .lede{font-size:18px;color:#cfd8e9;max-width:32em;margin-bottom:14px}
+  .rating{display:inline-block;border:1px solid var(--copper);padding:10px 20px;margin:12px 0 22px;font-weight:600;background:rgba(255,255,255,.05)}
+  .rating .stars{color:var(--copper);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-photo{border:3px solid var(--copper);background:#000}
+  .hero-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .cap{font-size:12px;color:#8b98b3;padding:8px 2px 0;letter-spacing:.04em}
+  .emerg{background:var(--copper);color:#fff}
+  .emerg .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    padding-top:20px;padding-bottom:20px}
+  .emerg strong{font-family:'Zilla Slab',serif;font-size:22px}
+  .emerg p{font-size:15px}
+  .emerg .btn{background:#fff;color:var(--copper2)}
+  .emerg .btn:hover{background:var(--navy);color:#fff}
+  section{padding:66px 0}
+  .sec-head{margin-bottom:32px;max-width:660px}
+  .sec-head h2{font-family:'Zilla Slab',serif;font-size:clamp(30px,4vw,44px);color:var(--navy);margin-bottom:10px}
+  .sec-head p{font-size:17px}
+  .services{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .svc{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy);padding:26px}
+  .svc.hot{border-left-color:var(--copper)}
+  .svc h3{font-family:'Zilla Slab',serif;font-size:22px;color:var(--navy);margin-bottom:8px}
+  .svc p{font-size:16px;color:#4a4f57}
+  .legacy{background:var(--navy2);color:#e6ecf6}
+  .legacy-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .legacy h2{font-family:'Zilla Slab',serif;font-size:clamp(30px,4vw,44px);color:#fff;margin-bottom:14px}
+  .legacy h2 span{color:var(--copper)}
+  .legacy p{font-size:17px;color:#c9d4e8;margin-bottom:12px}
+  .legacy figure img{width:100%;display:block;border:2px solid var(--copper);aspect-ratio:4/3;object-fit:cover}
+  .legacy .cap{color:#8b98b3}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+  .stat{background:rgba(255,255,255,.05);border:1px solid rgba(192,106,44,.5);padding:20px;text-align:center}
+  .stat strong{font-family:'Zilla Slab',serif;font-size:30px;color:var(--copper);display:block}
+  .stat span{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#c9d4e8}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+  .gallery figure{background:#fff;border:1px solid var(--line);padding:8px}
+  .gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .gallery .cap{color:#6b7280}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .vcard{background:#fff;border:1px solid var(--line);padding:30px}
+  .vcard h3{font-family:'Zilla Slab',serif;font-size:24px;color:var(--navy);margin-bottom:12px}
+  .hours-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:var(--copper2);font-weight:700}
+  .vcard .btn{color:#fff}
+  .fine{font-size:13px;color:#6b7280;margin-top:10px}
+  footer{background:var(--navy2);color:#8b98b3;padding:36px 0;font-size:14px}
+  footer a{color:var(--copper)}
+  @media(max-width:900px){
+    .hero-grid,.legacy-grid,.visit{grid-template-columns:1fr}
+    .services{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the company's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Elliott <span>&amp;</span> Bradley Plumbing</a>
+    <ul class="navlinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#legacy">Our Story</a></li>
+      <li><a href="#visit">Contact</a></li>
+    </ul>
+    <a class="btn" href="tel:+15137720050">Call (513) 772-0050</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="est">
+          <span class="badge">Family owned</span>
+          <span class="since">Since 1959</span>
+        </div>
+        <h1>Plumbing done right, for over 65 years.</h1>
+        <p class="lede">Elliott &amp; Bradley Plumbing Inc. has served West Chester homes and businesses since 1959. Boilers, water heaters, drains, and emergency calls, handled by a family shop.</p>
+        <div class="rating"><span class="stars">★★★★☆</span> 4.8 from 25 BestProsInTown reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+15137720050">Call (513) 772-0050</a>
+          <a class="btn navy" href="#services">Our Services</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/photo-1.jpg" alt="Stock photo: plumber installing a pipe">
+        <figcaption class="cap">Stock photo: pipe installation</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="emerg">
+    <div class="wrap">
+      <div>
+        <strong>Plumbing emergency?</strong>
+        <p>Emergency plumbing services are offered. Call and talk to someone who can help.</p>
+      </div>
+      <a class="btn" href="tel:+15137720050">Call Now</a>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>What we do</h2>
+        <p>Residential and commercial plumbing, from planned installs to the call you make at the worst possible time.</p>
+      </div>
+      <div class="services">
+        <div class="svc hot">
+          <h3>Emergency Plumbing</h3>
+          <p>Burst pipes, major leaks, and backups. Call and get a real person on the line.</p>
+        </div>
+        <div class="svc">
+          <h3>Boiler Installation</h3>
+          <p>Boiler installs and service for homes that heat with hot water or steam.</p>
+        </div>
+        <div class="svc">
+          <h3>Water Heaters</h3>
+          <p>Water heater service and replacement when the hot water runs out.</p>
+        </div>
+        <div class="svc">
+          <h3>Drain Cleaning</h3>
+          <p>Slow drains and clogs cleared properly, not just pushed along.</p>
+        </div>
+        <div class="svc">
+          <h3>Sewer Tapping</h3>
+          <p>Sewer tap work for new connections and repairs.</p>
+        </div>
+        <div class="svc">
+          <h3>General Plumbing</h3>
+          <p>The everyday residential and commercial work a family shop does best.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="legacy" class="legacy">
+    <div class="wrap">
+      <div class="legacy-grid">
+        <div>
+          <h2>Around since <span>1959.</span></h2>
+          <p>Elliott &amp; Bradley is a family owned plumbing company in West Chester, Ohio, in business since 1959. Decades of local work means the shop has seen just about every plumbing problem a house or business can produce.</p>
+          <p>The office email is public, and the name on the truck is the family that owns it.</p>
+          <div class="stats">
+            <div class="stat"><strong>1959</strong><span>Founded</span></div>
+            <div class="stat"><strong>Family</strong><span>Owned &amp; run</span></div>
+            <div class="stat"><strong>Res + Com</strong><span>Both served</span></div>
+          </div>
+        </div>
+        <figure>
+          <img src="img/photo-2.jpg" alt="Stock photo: hands adjusting a boiler system">
+          <figcaption class="cap">Stock photo: boiler service</figcaption>
+        </figure>
+      </div>
+      <div class="gallery">
+        <figure><img src="img/photo-3.jpg" alt="Stock photo: plumber's wrench"><figcaption class="cap">Stock photo: plumber's wrench</figcaption></figure>
+        <figure><img src="img/photo-4.jpg" alt="Stock photo: plumbing hand tools"><figcaption class="cap">Stock photo: hand tools</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: plumber tools"><figcaption class="cap">Stock photo: trade tools</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Get in touch</h2>
+        <p>Call during business hours, or email the office any time.</p>
+      </div>
+      <div class="visit">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Monday to Friday</span><strong>6:30 AM - 4:00 PM</strong></div>
+          <div class="hours-row"><span>Saturday and Sunday</span><strong>Not listed</strong></div>
+          <p class="fine">Hours as listed publicly. Emergencies do not keep office hours, so call any time.</p>
+        </div>
+        <div class="vcard">
+          <h3>Contact</h3>
+          <p><strong>Elliott &amp; Bradley Plumbing Inc.</strong><br>10030 Windisch Rd<br>West Chester, OH</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+15137720050">(513) 772-0050</a><br>Email: <a href="mailto:deniseelliott@elliottandbradley.com">deniseelliott@elliottandbradley.com</a></p>
+          <p style="margin-top:14px"><a class="btn" href="tel:+15137720050">Call the Shop</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Elliott &amp; Bradley Plumbing Inc. It is not affiliated with or endorsed by the company. Photos are stock photos, not photos of the company.</p>
+  </div>
+</footer>
+</body>
+</html>

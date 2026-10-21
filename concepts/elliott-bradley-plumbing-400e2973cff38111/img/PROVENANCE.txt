@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 29226620: Free Close-up of a plumber installing a radiator pipe using specialized tools. Stock Photo
+  page: https://www.pexels.com/photo/professional-plumber-installing-a-radiator-pipe-29226620/
+  file: https://images.pexels.com/photos/29226620/pexels-photo-29226620.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 7859953: Free Close-up of hands adjusting a boiler system with precise instrumentation, showing maintenance work. Stock Photo
+  page: https://www.pexels.com/photo/plumber-repairing-power-source-7859953/
+  file: https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 8488058: Free Close-up of a metal plumber's wrench against a wooden surface, showcasing tool detail. Stock Photo
+  page: https://www.pexels.com/photo/close-up-photo-of-plumbers-wrench-on-wooden-surface-8488058/
+  file: https://images.pexels.com/photos/8488058/pexels-photo-8488058.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 8488061: Free Close-up of hammer, wrench, and measuring tape on wooden surface for construction use. Stock Photo
+  page: https://www.pexels.com/photo/close-up-photo-of-handyman-tools-8488061/
+  file: https://images.pexels.com/photos/8488061/pexels-photo-8488061.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 33699773: plumber tools
+  page: https://www.pexels.com/photo/labor-day-tools-on-white-tile-background-33699773/
+  file: https://images.pexels.com/photos/33699773/pexels-photo-33699773.jpeg?auto=compress&cs=tinysrgb&w=1260

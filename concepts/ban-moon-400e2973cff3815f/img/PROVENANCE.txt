@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 12188535: Free A vibrant close-up of authentic Thai seafood Pad Thai with shrimp, sprouts, lime, and cashews. Stock Photo
+  page: https://www.pexels.com/photo/gourmet-thai-meal-on-a-plate-12188535/
+  file: https://images.pexels.com/photos/12188535/pexels-photo-12188535.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 19062750: Free Appetizing Pad Thai with shrimp, peanuts, and fresh herbs on a white plate. Stock Photo
+  page: https://www.pexels.com/photo/tagliatelle-with-prawns-and-salad-19062750/
+  file: https://images.pexels.com/photos/19062750/pexels-photo-19062750.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 34723314: Free Authentic Pad Thai with beef, peanuts, and vegetables on a wooden table, ready to eat. Stock Photo
+  page: https://www.pexels.com/photo/delicious-pad-thai-with-tender-beef-on-rustic-table-34723314/
+  file: https://images.pexels.com/photos/34723314/pexels-photo-34723314.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 34723307: Free Close-up of shrimp pad thai with lime and peanuts on a white plate, perfect for food lovers. Stock Photo
+  page: https://www.pexels.com/photo/delicious-shrimp-pad-thai-on-white-plate-34723307/
+  file: https://images.pexels.com/photos/34723307/pexels-photo-34723307.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 12561889: Free Close-up of a colorful Thai Pad Thai dish garnished with an orchid, captured indoors. Stock Photo
+  page: https://www.pexels.com/photo/flowers-on-plate-with-meal-12561889/
+  file: https://images.pexels.com/photos/12561889/pexels-photo-12561889.jpeg?auto=compress&cs=tinysrgb&w=1260

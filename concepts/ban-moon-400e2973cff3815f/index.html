@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Ban Moon | Lao &amp; Thai Cuisine · San Angelo, TX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--chili:#a31621;--chili2:#7c1019;--gold:#d9a441;--cream:#faf3e6;--ink:#2b2118;--line:#e2d5b8;--leaf:#3f6b4f}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Public Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+  .disclosure{background:var(--chili2);color:#f3e3c8;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px}
+  .disclosure a{color:var(--gold)}
+  header.site{background:var(--cream);position:sticky;top:0;z-index:50;border-bottom:3px double var(--chili)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'Fraunces',serif;font-weight:900;font-size:30px;color:var(--chili);text-decoration:none;letter-spacing:.01em}
+  .brand small{display:block;font-family:'Public Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:.3em;
+    text-transform:uppercase;color:var(--ink)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--chili)}
+  .btn{display:inline-block;background:var(--chili);color:#fff;font-weight:700;text-decoration:none;
+    padding:13px 30px;border-radius:4px;letter-spacing:.03em;transition:background .15s ease}
+  .btn:hover{background:var(--chili2)}
+  .btn.gold{background:var(--gold);color:var(--ink)}
+  .btn.gold:hover{background:#c78f2e}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{padding:0}
+  .hero-split{display:grid;grid-template-columns:1fr 1fr;min-height:520px}
+  .hero-copy{background:var(--chili);color:#fff;padding:64px 48px;display:flex;flex-direction:column;justify-content:center}
+  .hero-copy .tag{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:14px}
+  .hero-copy h1{font-family:'Fraunces',serif;font-size:clamp(40px,5.4vw,66px);line-height:1.04;font-weight:900;margin-bottom:16px}
+  .hero-copy p{font-size:18px;color:#f3e3c8;max-width:28em;margin-bottom:14px}
+  .rating{display:inline-block;background:rgba(255,255,255,.12);border:1px solid var(--gold);padding:9px 18px;
+    margin:10px 0 22px;font-weight:600}
+  .rating .stars{color:var(--gold);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-img{position:relative;min-height:420px}
+  .hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .hero-img .cap{position:absolute;bottom:0;left:0;right:0;background:rgba(20,12,8,.65);color:#e8dcc4;
+    font-size:12px;padding:8px 16px;letter-spacing:.04em}
+  section{padding:70px 0}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 40px}
+  .sec-head h2{font-family:'Fraunces',serif;font-size:clamp(30px,4.4vw,48px);color:var(--chili);margin-bottom:10px;font-weight:900}
+  .sec-head p{font-size:17px}
+  .orn{display:flex;align-items:center;gap:14px;justify-content:center;margin-bottom:18px}
+  .orn::before,.orn::after{content:"";height:1px;width:90px;background:var(--gold)}
+  .orn span{color:var(--gold);font-size:20px}
+  .menu-cats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .mcat{background:#fffdf8;border:1px solid var(--line);border-top:5px solid var(--chili);padding:28px}
+  .mcat h3{font-family:'Fraunces',serif;font-size:24px;color:var(--chili);margin-bottom:4px}
+  .mcat .sub{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8a7a5c;font-weight:700;margin-bottom:14px}
+  .mcat ul{list-style:none}
+  .mcat li{padding:8px 0;border-bottom:1px dotted var(--line);font-size:16px}
+  .mcat li:last-child{border-bottom:none}
+  .mcat li b{font-weight:700}
+  .mnote{text-align:center;margin-top:26px;font-size:15px;color:#6f6250}
+  .story{background:var(--ink);color:#f3e9d6}
+  .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .story h2{font-family:'Fraunces',serif;font-size:clamp(30px,4vw,44px);color:var(--gold);margin-bottom:14px;font-weight:900}
+  .story p{font-size:17px;margin-bottom:12px;color:#e6d9c0}
+  .story figure img{width:100%;display:block;border:1px solid var(--gold);aspect-ratio:4/3;object-fit:cover}
+  .story .cap{color:#9a8a6d}
+  .cap{font-size:12px;padding:8px 2px 0;letter-spacing:.04em}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+  .gallery figure{border:1px solid var(--gold);background:#1c150e}
+  .gallery img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+  .gallery .cap{color:#9a8a6d;padding:8px 10px}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .vcard{background:#fffdf8;border:1px solid var(--line);padding:30px}
+  .vcard h3{font-family:'Fraunces',serif;font-size:26px;color:var(--chili);margin-bottom:12px}
+  .hours-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dotted var(--line);font-size:16px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:var(--chili);font-weight:700}
+  .vcard .btn{color:#fff}
+  .fine{font-size:13px;color:#8a7a5c;margin-top:10px}
+  .takeout{background:var(--leaf);color:#fff;text-align:center;padding:60px 0}
+  .takeout h2{font-family:'Fraunces',serif;font-size:clamp(28px,4.4vw,46px);margin-bottom:10px;font-weight:900}
+  .takeout p{font-size:18px;margin-bottom:22px;color:#e4efdf}
+  footer{background:var(--chili2);color:#d9c39a;padding:36px 0;font-size:14px}
+  footer a{color:var(--gold)}
+  @media(max-width:900px){
+    .hero-split{grid-template-columns:1fr}
+    .hero-img{min-height:320px}
+    .menu-cats{grid-template-columns:1fr}
+    .story-grid,.visit-grid{grid-template-columns:1fr}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the restaurant's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Ban Moon<small>Lao &amp; Thai Cuisine</small></a>
+    <ul class="navlinks">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#story">Our Kitchen</a></li>
+      <li><a href="#visit">Hours &amp; Location</a></li>
+    </ul>
+    <a class="btn" href="tel:+13257036156">Call (325) 703-6156</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="hero-split">
+      <div class="hero-copy">
+        <p class="tag">San Angelo, Texas</p>
+        <h1>Authentic Lao &amp; Thai cuisine, made to order.</h1>
+        <p>Ban Moon serves the dishes of Laos and Thailand from its downtown San Angelo kitchen: pad thai, curries, pho, and Lao sausage, with takeout and delivery available.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 4.7 from 151 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn gold" href="tel:+13257036156">Call for Takeout</a>
+          <a class="btn" href="#menu" style="background:transparent;border:2px solid #fff">See the Menu</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="img/photo-1.jpg" alt="Stock photo: seafood pad thai with shrimp">
+        <div class="cap">Stock photo: pad thai</div>
+      </div>
+    </div>
+  </div>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="orn"><span>✦</span></div>
+        <h2>The menu</h2>
+        <p>Laos meets Thailand on one menu. Moderate prices, generous portions, and takeout ready when you call ahead.</p>
+      </div>
+      <div class="menu-cats">
+        <div class="mcat">
+          <h3>Noodles &amp; Rice</h3>
+          <p class="sub">Wok-fired</p>
+          <ul>
+            <li><b>Pad Thai</b></li>
+            <li><b>Drunken Noodles</b></li>
+            <li><b>Pad Kra Pao</b></li>
+            <li><b>Beef Pho</b> · meatball, brisket, or combination</li>
+            <li><b>Sweet and Sour Chicken</b></li>
+          </ul>
+        </div>
+        <div class="mcat">
+          <h3>Curries &amp; Soups</h3>
+          <p class="sub">Slow-simmered</p>
+          <ul>
+            <li><b>Red Curry</b></li>
+            <li><b>Tom Yum</b> and <b>Tom Kha</b> soups</li>
+          </ul>
+          <h3 style="margin-top:18px">From the Lao Kitchen</h3>
+          <p class="sub">Lao specialties</p>
+          <ul>
+            <li><b>Lao Sausage</b></li>
+          </ul>
+        </div>
+        <div class="mcat">
+          <h3>To Start</h3>
+          <p class="sub">Appetizers</p>
+          <ul>
+            <li><b>Crab Rangoon</b></li>
+            <li><b>Chicken Satay</b></li>
+            <li><b>Fried Egg Rolls</b></li>
+          </ul>
+          <p class="mnote" style="text-align:left;margin-top:16px">Takeout and delivery are offered. Call to place your order.</p>
+        </div>
+      </div>
+      <p class="mnote">Menu items as listed publicly. Ask about the day's specials when you call.</p>
+    </div>
+  </section>
+
+  <section id="story" class="story">
+    <div class="wrap">
+      <div class="story-grid">
+        <div>
+          <h2>A downtown kitchen with Lao roots.</h2>
+          <p>Ban Moon brings authentic Lao and Thai cooking to West Avenue N in San Angelo. It is a casual spot where the food does the talking: bold chilies, fresh herbs, and recipes from two cuisines.</p>
+          <p>The restaurant is wheelchair accessible, and the dining room keeps things simple so the kitchen can focus on the plate in front of you.</p>
+        </div>
+        <figure>
+          <img src="img/photo-3.jpg" alt="Stock photo: pad thai with beef on a wooden table">
+          <figcaption class="cap">Stock photo: pad thai</figcaption>
+        </figure>
+      </div>
+      <div class="gallery">
+        <figure><img src="img/photo-2.jpg" alt="Stock photo: pad thai with shrimp and peanuts"><figcaption class="cap">Stock photo: pad thai</figcaption></figure>
+        <figure><img src="img/photo-4.jpg" alt="Stock photo: shrimp pad thai with lime"><figcaption class="cap">Stock photo: pad thai</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: pad thai garnished with orchid" style="object-position:center 85%"><figcaption class="cap">Stock photo: pad thai</figcaption></figure>
+        <figure><img src="img/photo-1.jpg" alt="Stock photo: seafood pad thai"><figcaption class="cap">Stock photo: pad thai</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="orn"><span>✦</span></div>
+        <h2>Hours &amp; location</h2>
+        <p>Walk in for lunch or dinner, or call ahead for takeout.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Monday to Friday</span><strong>11:00 AM - 9:00 PM</strong></div>
+          <div class="hours-row"><span>Saturday and Sunday</span><strong>Closed</strong></div>
+          <p class="fine">Hours as listed publicly. One source differs, so call to confirm before a special trip.</p>
+        </div>
+        <div class="vcard">
+          <h3>Find us</h3>
+          <p><strong>Ban Moon</strong><br>405 W Ave N<br>San Angelo, TX 76903</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+13257036156">(325) 703-6156</a></p>
+          <p style="margin-top:10px">Takeout and delivery offered. Wheelchair accessible.</p>
+          <p style="margin-top:14px"><a class="btn" href="tel:+13257036156">Call for Takeout</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="takeout">
+    <div class="wrap">
+      <h2>Hungry now? Call it in.</h2>
+      <p>Takeout and delivery are available. Your order will be hot when you arrive.</p>
+      <a class="btn gold" href="tel:+13257036156">Call (325) 703-6156</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Ban Moon. It is not affiliated with or endorsed by the restaurant. Photos are stock photos, not photos of the restaurant.</p>
+  </div>
+</footer>
+</body>
+</html>

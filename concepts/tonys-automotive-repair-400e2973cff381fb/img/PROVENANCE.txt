@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 33814734: Free Interior of an automotive repair shop with cars undergoing maintenance and servicing. Stock Photo
+  page: https://www.pexels.com/photo/car-repair-and-maintenance-workshop-interior-33814734/
+  file: https://images.pexels.com/photos/33814734/pexels-photo-33814734.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 8478228: Free Mechanic inspecting car engine bay and battery during routine maintenance. Stock Photo
+  page: https://www.pexels.com/photo/open-hood-of-a-car-8478228/
+  file: https://images.pexels.com/photos/8478228/pexels-photo-8478228.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 8985457: Free A smiling mechanic in a blue overall inspecting a car engine in a garage. Stock Photo
+  page: https://www.pexels.com/photo/man-in-blue-overall-standing-beside-white-car-s-hood-8985457/
+  file: https://images.pexels.com/photos/8985457/pexels-photo-8985457.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 8985517: Free Mechanic lifting a car engine in a well-lit auto repair shop with vehicle in background. Stock Photo
+  page: https://www.pexels.com/photo/mechanic-in-a-garage-8985517/
+  file: https://images.pexels.com/photos/8985517/pexels-photo-8985517.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 8986033: Free A white car suspended on a lift in an automotive repair shop, showcasing maintenance work. Stock Photo
+  page: https://www.pexels.com/photo/white-car-hanging-on-a-car-lift-8986033/
+  file: https://images.pexels.com/photos/8986033/pexels-photo-8986033.jpeg?auto=compress&cs=tinysrgb&w=1260

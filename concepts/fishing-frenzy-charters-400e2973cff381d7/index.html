@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Fishing Frenzy Charters | Gulfport, MS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{--sea:#0d2b45;--sea2:#081d30;--sand:#e8dcc3;--foam:#f7f3ea;--rust:#c0562f;--ink:#1d2733;--line:#d3c8ab}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Source Serif 4',serif;background:var(--foam);color:var(--ink);line-height:1.65}
+  .disclosure{background:var(--sea2);color:#a9bdd4;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px}
+  .disclosure a{color:var(--sand)}
+  header.site{background:var(--sea);color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid var(--rust)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'Oswald',sans-serif;font-weight:700;font-size:22px;color:#fff;text-decoration:none;
+    letter-spacing:.06em;text-transform:uppercase}
+  .brand span{color:var(--rust)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:#d5e0ee;text-decoration:none;font-family:'Oswald',sans-serif;font-size:14px;font-weight:500;
+    letter-spacing:.1em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--sand)}
+  .btn{display:inline-block;background:var(--rust);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;
+    text-decoration:none;padding:14px 32px;letter-spacing:.08em;text-transform:uppercase;font-size:16px;
+    border-radius:3px;transition:background .15s ease}
+  .btn:hover{background:#a3441f}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{position:relative;color:#fff;min-height:560px;display:flex;align-items:flex-end}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,29,48,.25) 0%,rgba(8,29,48,.88) 78%)}
+  .hero-inner{position:relative;z-index:1;padding:70px 0 54px;width:100%}
+  .kicker{display:inline-block;background:var(--rust);font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;
+    letter-spacing:.2em;text-transform:uppercase;padding:7px 16px;margin-bottom:16px}
+  h1{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(42px,6vw,76px);line-height:1;
+    text-transform:uppercase;margin-bottom:14px}
+  .lede{font-size:19px;max-width:34em;color:#e8eef6;margin-bottom:14px}
+  .rating{display:inline-block;border:1px solid var(--sand);padding:9px 18px;margin:10px 0 22px;font-weight:600;background:rgba(8,29,48,.5)}
+  .rating .stars{color:var(--sand);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero .cap{position:absolute;bottom:10px;right:18px;z-index:2;font-size:12px;color:#c8d4e4;letter-spacing:.04em}
+  .tide{background:var(--sea);color:#fff;border-top:3px solid var(--rust)}
+  .tide .wrap{display:flex;gap:34px;justify-content:space-between;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
+  .tide-item{font-family:'Oswald',sans-serif;font-size:15px;letter-spacing:.08em;text-transform:uppercase}
+  .tide-item strong{color:var(--sand);font-size:20px;display:block;letter-spacing:.02em}
+  section{padding:68px 0}
+  .sec-head{margin-bottom:34px;max-width:660px}
+  .sec-head h2{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(30px,4.4vw,46px);
+    text-transform:uppercase;color:var(--sea);margin-bottom:10px}
+  .sec-head p{font-size:18px}
+  .trips{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .trip{background:#fff;border:1px solid var(--line);border-top:4px solid var(--sea);padding:22px 16px;text-align:center}
+  .trip h3{font-family:'Oswald',sans-serif;font-size:17px;font-weight:600;text-transform:uppercase;color:var(--sea);margin-bottom:6px}
+  .trip p{font-size:14px;color:#4a5563}
+  .species{background:var(--sea);color:#fff}
+  .species-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+  .species h2{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(30px,4vw,44px);text-transform:uppercase;
+    color:var(--sand);margin-bottom:12px}
+  .species p{color:#cfdae8;font-size:17px;margin-bottom:16px}
+  .fish{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+  .fish span{border:1px solid var(--sand);color:var(--sand);font-family:'Oswald',sans-serif;font-size:14px;
+    letter-spacing:.06em;text-transform:uppercase;padding:7px 14px}
+  .species figure img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;border:2px solid var(--sand)}
+  .cap{font-size:12px;color:#8fa3bd;padding:8px 2px 0;letter-spacing:.04em}
+  .boat{background:#fff;border:2px solid var(--sea)}
+  .boat-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  .boat-copy{padding:44px}
+  .boat-copy h2{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,40px);
+    text-transform:uppercase;color:var(--sea);margin-bottom:12px}
+  .boat-copy ul{list-style:none;margin:16px 0}
+  .boat-copy li{padding:8px 0 8px 26px;position:relative;font-size:16px;border-bottom:1px solid var(--line)}
+  .boat-copy li:last-child{border:none}
+  .boat-copy li::before{content:"◆";position:absolute;left:2px;color:var(--rust);font-size:12px;top:13px}
+  .boat figure img{width:100%;height:100%;object-fit:cover;display:block;min-height:380px}
+  .boat .cap{color:#5c6b7d}
+  .price-band{background:var(--sand);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .price-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+    padding-top:30px;padding-bottom:30px}
+  .price-band h3{font-family:'Oswald',sans-serif;font-size:24px;text-transform:uppercase;color:var(--sea)}
+  .price-band p{font-size:16px;max-width:40em}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+  .gallery figure{border:1px solid var(--line);background:#fff;padding:8px}
+  .gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .gallery .cap{color:#5c6b7d}
+  .book{background:var(--rust);color:#fff;text-align:center;padding:62px 0}
+  .book h2{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(30px,4.6vw,50px);text-transform:uppercase;margin-bottom:10px}
+  .book p{font-size:18px;margin-bottom:24px;color:#ffe9dc}
+  .book .btn{background:#fff;color:var(--rust)}
+  .book .btn:hover{background:var(--sea);color:#fff}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+  .vcard{background:#fff;border:1px solid var(--line);padding:28px}
+  .vcard h3{font-family:'Oswald',sans-serif;font-size:20px;text-transform:uppercase;color:var(--sea);margin-bottom:10px}
+  .hours-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:var(--rust);font-weight:700}
+  .vcard .btn{color:#fff}
+  .fine{font-size:13px;color:#6b7686;margin-top:10px}
+  footer{background:var(--sea2);color:#8fa3bd;padding:36px 0;font-size:14px}
+  footer a{color:var(--sand)}
+  @media(max-width:900px){
+    .trips{grid-template-columns:repeat(2,1fr)}
+    .species-grid,.boat-grid,.visit{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the charter's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Fishing <span>Frenzy</span> Charters</a>
+    <ul class="navlinks">
+      <li><a href="#trips">Trips</a></li>
+      <li><a href="#species">Species</a></li>
+      <li><a href="#boat">The Boat</a></li>
+      <li><a href="#visit">Book</a></li>
+    </ul>
+    <a class="btn" href="tel:+12282367121">Call (228) 236-7121</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="hero-bg"><img src="img/photo-1.jpg" alt="Stock photo: fishing boats on the ocean"></div>
+    <span class="cap">Stock photo: fishing boats</span>
+    <div class="hero-inner">
+      <div class="wrap">
+        <span class="kicker">Gulfport, Mississippi · Since 1979</span>
+        <h1>Fish the Gulf<br>with a local captain.</h1>
+        <p class="lede">Fishing Frenzy Charters has run saltwater trips off the Mississippi Gulf Coast since 1979. Inshore, wrecks, reef, flats, and offshore, with gear, bait, and licenses included.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 5.0 from 24 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+12282367121">Call to Book a Trip</a>
+          <a class="btn" href="#trips" style="background:transparent;border:2px solid #fff">See the Trips</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tide">
+    <div class="wrap">
+      <div class="tide-item"><strong>Since 1979</strong>On the Gulf Coast</div>
+      <div class="tide-item"><strong>5 guests</strong>Up to 5 per trip</div>
+      <div class="tide-item"><strong>Gear included</strong>Bait, tackle, licenses</div>
+      <div class="tide-item"><strong>$450 - $850</strong>Trip pricing</div>
+    </div>
+  </div>
+
+  <section id="trips">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Choose your water</h2>
+        <p>Five kinds of trips, one boat. Call to talk through the season, the weather window, and what is biting.</p>
+      </div>
+      <div class="trips">
+        <div class="trip"><h3>Inshore</h3><p>Calm-water trips close to shore.</p></div>
+        <div class="trip"><h3>Wrecks</h3><p>Structure fishing over Gulf wrecks.</p></div>
+        <div class="trip"><h3>Reef</h3><p>Reef trips for snapper and more.</p></div>
+        <div class="trip"><h3>Flats</h3><p>Shallow-water sight fishing.</p></div>
+        <div class="trip"><h3>Offshore</h3><p>Deep-water runs for the big ones.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="species" class="species">
+    <div class="wrap species-grid">
+      <div>
+        <h2>What you can catch</h2>
+        <p>The Mississippi Gulf Coast holds a long list of game fish through the seasons. These are the species this charter targets.</p>
+        <div class="fish">
+          <span>Cobia</span><span>Redfish</span><span>Speckled Trout</span><span>Jack Crevalle</span>
+          <span>King Mackerel</span><span>Flounder</span><span>Tripletail</span><span>Snapper</span>
+        </div>
+        <p style="margin-top:18px">Techniques include drift fishing, popping, jigging, spinning, trolling, and bottom fishing. Your catch is cleaned and filleted.</p>
+      </div>
+      <figure>
+        <img src="img/photo-5.jpg" alt="Stock photo: fishing boat with a fisherman on the sea">
+        <figcaption class="cap">Stock photo: fishing boat at sea</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="boat" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="boat">
+        <div class="boat-grid">
+          <div class="boat-copy">
+            <h2>The boat: Cobia</h2>
+            <p>A 27-foot center console built for Gulf fishing, with room for up to 5 guests.</p>
+            <ul>
+              <li>27-ft center console, twin 140 HP Suzuki outboards</li>
+              <li>Up to 5 guests per trip</li>
+              <li>Wheelchair accessible</li>
+              <li>Gear, live bait, lures, and licenses included</li>
+              <li>Catch cleaned and filleted</li>
+            </ul>
+          </div>
+          <figure>
+            <img src="img/photo-3.jpg" alt="Stock photo: red fishing boat on blue water">
+            <figcaption class="cap">Stock photo: fishing boat</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="price-band" style="margin-top:24px">
+        <div class="wrap">
+          <div>
+            <h3>Trips from $450 to $850</h3>
+            <p>Pricing varies by trip type and length, as listed publicly. Call for the current rate on the trip you want.</p>
+          </div>
+          <a class="btn" href="tel:+12282367121">Call for Pricing</a>
+        </div>
+      </div>
+      <div class="gallery">
+        <figure><img src="img/photo-2.jpg" alt="Stock photo: fishing boat on the open ocean"><figcaption class="cap">Stock photo: boat on open water</figcaption></figure>
+        <figure><img src="img/photo-4.jpg" alt="Stock photo: boat on the ocean near the coast"><figcaption class="cap">Stock photo: coastal waters</figcaption></figure>
+        <figure><img src="img/photo-1.jpg" alt="Stock photo: fishing boats under a blue sky"><figcaption class="cap">Stock photo: fishing boats</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Book your trip</h2>
+        <p>Trips are booked by phone. Call to pick your date and talk through the plan.</p>
+      </div>
+      <div class="visit">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Tuesday</span><strong>12:00 AM - 5:00 PM</strong></div>
+          <div class="hours-row"><span>Wednesday to Saturday</span><strong>9:00 AM - 5:00 PM</strong></div>
+          <div class="hours-row"><span>Sunday and Monday</span><strong>Not listed</strong></div>
+          <p class="fine">Hours as listed publicly. Charter availability depends on weather and season, so always call to confirm.</p>
+        </div>
+        <div class="vcard">
+          <h3>Find the dock</h3>
+          <p><strong>Fishing Frenzy Charters</strong><br>1133 20th Ave<br>Gulfport, MS</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+12282367121">(228) 236-7121</a></p>
+          <p style="margin-top:10px"><a class="btn" href="tel:+12282367121">Call to Book</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="book">
+    <div class="wrap">
+      <h2>Ready to get on the water?</h2>
+      <p>Call Captain Joseph Dewberry's crew and lock in your date.</p>
+      <a class="btn" href="tel:+12282367121">Call (228) 236-7121</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Fishing Frenzy Charters. It is not affiliated with or endorsed by the charter. Photos are stock photos, not photos of the charter.</p>
+  </div>
+</footer>
+</body>
+</html>

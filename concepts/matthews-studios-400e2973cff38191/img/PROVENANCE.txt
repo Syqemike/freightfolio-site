@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 39714847: Free Behind-the-scenes view of a professional portrait photoshoot in an Accra studio. Stock Photo
+  page: https://www.pexels.com/photo/professional-portrait-photoshoot-in-accra-studio-39714847/
+  file: https://images.pexels.com/photos/39714847/pexels-photo-39714847.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 39714849: Free Behind-the-scenes view of a photo shoot session in a modern photography studio. Stock Photo
+  page: https://www.pexels.com/photo/professional-photography-studio-in-accra-39714849/
+  file: https://images.pexels.com/photos/39714849/pexels-photo-39714849.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 18880006: Free A detailed view of a professional camera setup with lenses and lighting in a studio environment. Stock Photo
+  page: https://www.pexels.com/photo/cameras-and-lenses-on-table-18880006/
+  file: https://images.pexels.com/photos/18880006/pexels-photo-18880006.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 19685615: Free A simple photo studio scene with a camera resting on a wooden stool. Stock Photo
+  page: https://www.pexels.com/photo/professional-camera-on-stool-in-studio-19685615/
+  file: https://images.pexels.com/photos/19685615/pexels-photo-19685615.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 9396404: Free Bright studio with large window, featuring a rattan stool and professional lighting equipment. Stock Photo
+  page: https://www.pexels.com/photo/rattan-stool-and-light-box-in-studio-9396404/
+  file: https://images.pexels.com/photos/9396404/pexels-photo-9396404.jpeg?auto=compress&cs=tinysrgb&w=1260

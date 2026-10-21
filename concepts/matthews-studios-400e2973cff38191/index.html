@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Matthews Studios | Photography Studio · North Little Rock, AR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--dark:#131313;--dark2:#1d1d1d;--bone:#efe9dd;--amber:#d9a441;--ink:#222;--line:#3a3a3a;--mut:#9a958a}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--dark);color:var(--bone);line-height:1.65}
+  .disclosure{background:#0a0a0a;color:#8f8a7d;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px;border-bottom:1px solid var(--line)}
+  .disclosure a{color:var(--amber)}
+  header.site{background:rgba(19,19,19,.94);backdrop-filter:blur(8px);position:sticky;top:0;z-index:50;
+    border-bottom:1px solid var(--line)}
+  .nav{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 22px;gap:16px}
+  .brand{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;color:var(--bone);text-decoration:none;
+    letter-spacing:.14em;text-transform:uppercase}
+  .brand span{color:var(--amber)}
+  .navlinks{display:flex;gap:26px;list-style:none}
+  .navlinks a{color:#c9c2b4;text-decoration:none;font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:500;
+    letter-spacing:.16em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--amber)}
+  .btn{display:inline-block;background:var(--amber);color:#131313;font-family:'Space Grotesk',sans-serif;font-weight:700;
+    text-decoration:none;padding:14px 32px;letter-spacing:.1em;text-transform:uppercase;font-size:14px;
+    transition:background .15s ease}
+  .btn:hover{background:#c08f2e}
+  .btn.ghost{background:transparent;color:var(--bone);border:1px solid var(--bone)}
+  .btn.ghost:hover{border-color:var(--amber);color:var(--amber)}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 22px}
+  .hero{padding:84px 0 0}
+  .hero-top{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;margin-bottom:44px}
+  .kicker{font-family:'Space Grotesk',sans-serif;font-size:13px;letter-spacing:.26em;text-transform:uppercase;
+    color:var(--amber);font-weight:500;margin-bottom:16px}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,6.4vw,84px);line-height:.98;font-weight:700;
+    letter-spacing:-.01em;margin-bottom:18px}
+  h1 .thin{font-weight:400;color:var(--amber)}
+  .lede{font-size:18px;color:#c9c2b4;max-width:30em;margin-bottom:14px}
+  .rating{display:inline-block;border:1px solid var(--line);padding:10px 20px;margin:12px 0 24px;
+    font-family:'Space Grotesk',sans-serif;letter-spacing:.06em;background:var(--dark2)}
+  .rating .stars{color:var(--amber);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-meta{font-family:'Space Grotesk',sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--mut);border-left:2px solid var(--amber);padding-left:18px}
+  .hero-meta p{margin-bottom:10px}
+  .hero-strip{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-bottom:0}
+  .hero-strip figure{overflow:hidden;position:relative}
+  .hero-strip img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:16/10;transition:transform .4s ease}
+  .hero-strip figure:hover img{transform:scale(1.03)}
+  .cap{font-size:12px;color:#7d786c;padding:8px 2px 0;letter-spacing:.05em}
+  section{padding:72px 0}
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:36px;flex-wrap:wrap}
+  .sec-head h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(30px,4vw,48px);font-weight:700;
+    letter-spacing:-.01em}
+  .sec-head h2 .thin{font-weight:400;color:var(--amber)}
+  .sec-head p{color:#c9c2b4;max-width:32em}
+  .frames{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .frames figure{position:relative;overflow:hidden;background:var(--dark2)}
+  .frames img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .4s ease}
+  .frames figure:hover img{transform:scale(1.04)}
+  .frames figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 12px;
+    background:linear-gradient(180deg,transparent,rgba(0,0,0,.75));font-size:13px;color:#d8d2c4;letter-spacing:.04em}
+  .about{background:var(--dark2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .about h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(30px,4vw,46px);margin-bottom:14px;font-weight:700}
+  .about h2 .thin{font-weight:400;color:var(--amber)}
+  .about p{color:#c9c2b4;font-size:17px;margin-bottom:12px}
+  .about-list{list-style:none;margin-top:18px}
+  .about-list li{padding:12px 0;border-top:1px solid var(--line);font-family:'Space Grotesk',sans-serif;
+    letter-spacing:.06em;text-transform:uppercase;font-size:14px;color:var(--bone)}
+  .about-list li small{display:block;font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;
+    color:var(--mut);font-size:14px;margin-top:2px}
+  .about figure img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover}
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+  .contact-grid h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4.4vw,54px);margin-bottom:14px;font-weight:700}
+  .contact-grid h2 .thin{font-weight:400;color:var(--amber)}
+  .contact-grid p{color:#c9c2b4;font-size:17px;margin-bottom:14px}
+  .contact-card{background:var(--dark2);border:1px solid var(--line);padding:32px}
+  .contact-card h3{font-family:'Space Grotesk',sans-serif;font-size:18px;letter-spacing:.1em;text-transform:uppercase;
+    margin-bottom:14px;color:var(--amber)}
+  .contact-card p{margin-bottom:8px}
+  .contact-card a{color:var(--bone);font-weight:600}
+  .fine{font-size:13px;color:var(--mut);margin-top:10px}
+  .big-cta{border-top:1px solid var(--line);text-align:center;padding:80px 0}
+  .big-cta h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(34px,5vw,64px);margin-bottom:12px;font-weight:700}
+  .big-cta p{color:#c9c2b4;font-size:18px;margin-bottom:26px}
+  footer{border-top:1px solid var(--line);padding:36px 0;font-size:14px;color:#7d786c;background:#0a0a0a}
+  footer a{color:var(--amber)}
+  @media(max-width:900px){
+    .hero-top,.about-grid,.contact-grid{grid-template-columns:1fr}
+    .hero-strip{grid-template-columns:1fr}
+    .frames{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the studio's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Matthews <span>Studios</span></a>
+    <ul class="navlinks">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#studio">Studio</a></li>
+      <li><a href="#contact">Inquire</a></li>
+    </ul>
+    <a class="btn" href="tel:+15016582255">Call (501) 658-2255</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <div>
+          <p class="kicker">Photography Studio · North Little Rock, AR</p>
+          <h1>Portraits with <span class="thin">presence.</span></h1>
+          <p class="lede">Matthews Studios is a photography studio on John F. Kennedy Boulevard. Call to discuss your project and arrange a session.</p>
+          <div class="rating"><span class="stars">★★★★★</span> 4.8 from 64 Google reviews</div>
+          <div class="hero-cta">
+            <a class="btn" href="tel:+15016582255">Inquire by Phone</a>
+            <a class="btn ghost" href="#work">See the Work</a>
+          </div>
+        </div>
+        <div class="hero-meta">
+          <p>4004 John F Kennedy Blvd<br>North Little Rock, AR</p>
+          <p>(501) 658-2255</p>
+          <p>Call for hours</p>
+        </div>
+      </div>
+      <div class="hero-strip">
+        <figure><img src="img/photo-1.jpg" alt="Stock photo: portrait photoshoot in a studio"></figure>
+        <figure><img src="img/photo-2.jpg" alt="Stock photo: photo session in a modern studio"></figure>
+        <figure><img src="img/photo-3.jpg" alt="Stock photo: professional camera and lenses"></figure>
+      </div>
+      <p class="cap" style="margin-bottom:0">Stock photos: studio work</p>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>Selected <span class="thin">frames.</span></h2>
+        </div>
+        <p>Every studio has a look. These frames show the range of controlled studio work.</p>
+      </div>
+      <div class="frames">
+        <figure>
+          <img src="img/photo-1.jpg" alt="Stock photo: portrait photoshoot">
+          <figcaption>Stock photo: portrait session</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-4.jpg" alt="Stock photo: camera on a stool in a studio">
+          <figcaption>Stock photo: in the studio</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-5.jpg" alt="Stock photo: bright studio with a window">
+          <figcaption>Stock photo: studio space</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="studio" class="about">
+    <div class="wrap about-grid">
+      <div>
+        <h2>The <span class="thin">studio.</span></h2>
+        <p>Matthews Studios works from a dedicated studio space in North Little Rock. It is listed publicly as a photography studio, art studio, and visual arts space.</p>
+        <ul class="about-list">
+          <li>Photography studio<small>Portraits and visual arts work, per the studio's public listing.</small></li>
+          <li>In-studio sessions<small>A dedicated space in North Little Rock for planned shoots.</small></li>
+          <li>By phone<small>Sessions are arranged directly. Call to discuss your project.</small></li>
+        </ul>
+      </div>
+      <figure>
+        <img src="img/photo-5.jpg" alt="Stock photo: bright photography studio">
+        <figcaption class="cap">Stock photo: studio space</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Book a <span class="thin">session.</span></h2>
+        <p>Sessions are arranged by phone. Call to talk through what you need, check availability, and set a date.</p>
+        <a class="btn" href="tel:+15016582255">Call (501) 658-2255</a>
+      </div>
+      <div class="contact-card">
+        <h3>Contact</h3>
+        <p><strong>Matthews Studios</strong><br>4004 John F Kennedy Blvd<br>North Little Rock, AR</p>
+        <p>Phone: <a href="tel:+15016582255">(501) 658-2255</a></p>
+        <p class="fine">Studio hours are not published. Call to ask about availability.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="big-cta">
+    <div class="wrap">
+      <h2>Let's make the portrait.</h2>
+      <p>One call sets it in motion.</p>
+      <a class="btn" href="tel:+15016582255">Call (501) 658-2255</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Matthews Studios. It is not affiliated with or endorsed by the studio. Photos are stock photos, not photos of the studio.</p>
+  </div>
+</footer>
+</body>
+</html>

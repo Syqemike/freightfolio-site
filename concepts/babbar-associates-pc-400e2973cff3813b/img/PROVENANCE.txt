@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 6077091: Free A classic study room with shelves of books, a gavel, and Lady Justice figurine on a green table. Stock Photo
+  page: https://www.pexels.com/photo/justice-figurine-on-table-6077091/
+  file: https://images.pexels.com/photos/6077091/pexels-photo-6077091.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 9367109: Free Low angle view of a modern law office exterior with elegant facade and arched entrance. Stock Photo
+  page: https://www.pexels.com/photo/signage-outside-a-building-9367109/
+  file: https://images.pexels.com/photos/9367109/pexels-photo-9367109.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 7841812: law office
+  page: https://www.pexels.com/photo/close-up-shot-of-scrabble-tiles-on-a-table-7841812/
+  file: https://images.pexels.com/photos/7841812/pexels-photo-7841812.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 8111888: Free A professional woman in a business suit reviews legal documents at her office desk. Stock Photo
+  page: https://www.pexels.com/photo/female-lawyer-looking-at-documents-8111888/
+  file: https://images.pexels.com/photos/8111888/pexels-photo-8111888.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 8112197: Free Bronze Lady Justice statue with scales and sword, symbolizing fairness and law. Stock Photo
+  page: https://www.pexels.com/photo/a-figurine-of-lady-justice-8112197/
+  file: https://images.pexels.com/photos/8112197/pexels-photo-8112197.jpeg?auto=compress&cs=tinysrgb&w=1260
