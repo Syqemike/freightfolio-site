@@ -1,0 +1,106 @@
+/* Distinguished Gentlemen II Barbers concept: classic downtown barbershop.
+   Palette: deep green, cream, brass. Type: Playfair Display + Libre Franklin.
+   Layout: split editorial hero, ticket-style service list, dark CTA band. */
+:root{
+  --green:#1E3A2F; --green-deep:#142820; --cream:#F5EFE3; --paper:#FBF8F0;
+  --ink:#17140F; --soft:#5F574A; --brass:#C29A3B; --line:#DCD2BC;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Libre Franklin',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:16.5px}
+img{max-width:100%;display:block}
+a{color:#8A6D2B}
+
+.preview-bar{background:#0f0d09;color:#efe6d2;font-size:13px;padding:9px 18px;text-align:center;letter-spacing:.02em}
+.preview-bar strong{color:var(--brass);letter-spacing:.08em;text-transform:uppercase;margin-right:8px}
+
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+header.site{background:var(--green-deep);position:sticky;top:0;z-index:50}
+.top-strip{background:var(--brass);color:#17140F;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:7px 12px}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 0;flex-wrap:wrap}
+.brand{font-family:'Playfair Display',Georgia,serif;font-size:27px;color:#F5EFE3;text-decoration:none;line-height:1.15}
+.brand small{display:block;font-family:'Libre Franklin',sans-serif;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--brass);margin-top:4px}
+nav.main{display:flex;gap:6px;flex-wrap:wrap}
+nav.main a{color:#D9CFB8;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:9px 15px;border:1px solid transparent}
+nav.main a:hover,nav.main a.active{color:#fff;border-color:var(--brass)}
+
+.hero{background:var(--green);color:#F5EFE3}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:0;align-items:stretch}
+.hero-copy{padding:70px 48px 70px 0}
+.hero-copy .eyebrow{color:var(--brass);font-size:13px;letter-spacing:.32em;text-transform:uppercase;font-weight:700}
+.hero-copy h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(40px,4.8vw,60px);line-height:1.06;font-weight:700;margin:18px 0 20px}
+.hero-copy h1 span{color:var(--brass);font-style:italic}
+.hero-copy p.lede{color:#D9CFB8;font-size:18px;max-width:48ch;margin-bottom:30px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.06em;padding:15px 32px;transition:all .18s ease}
+.btn-gold{background:var(--brass);color:#17140F}
+.btn-gold:hover{background:#d4ac52}
+.btn-line{border:1px solid #D9CFB8;color:#F5EFE3;margin-left:12px}
+.btn-line:hover{border-color:var(--brass);color:var(--brass)}
+.hero-photo img{height:100%;min-height:480px;width:100%;object-fit:cover}
+.rate{display:flex;align-items:center;gap:12px;margin-top:32px;padding-top:24px;border-top:1px solid rgba(217,207,184,.3)}
+.rate .stars{color:var(--brass);letter-spacing:3px;font-size:18px}
+.rate p{color:#D9CFB8;font-size:15px}
+
+section.block{padding:64px 0}
+.sec-kicker{font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:#8A6D2B;font-weight:700}
+h2.sec{font-family:'Playfair Display',Georgia,serif;font-size:clamp(30px,3.6vw,44px);margin:12px 0 10px;font-weight:700}
+.sec-sub{color:var(--soft);max-width:62ch;font-size:17px;margin-bottom:34px}
+
+.ticket{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--brass);margin-bottom:18px;padding:26px 30px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+.ticket h3{font-family:'Playfair Display',Georgia,serif;font-size:23px}
+.ticket p{color:var(--soft);font-size:15.5px;margin-top:6px;max-width:56ch}
+.ticket .price{font-family:'Playfair Display',Georgia,serif;font-size:20px;color:var(--green);white-space:nowrap}
+.ticket .note{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);display:block;text-align:right}
+
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.trio figure{background:var(--paper);border:1px solid var(--line);padding:14px}
+.trio img{height:240px;width:100%;object-fit:cover}
+.trio figcaption{font-size:14px;color:var(--soft);padding:12px 4px 4px;line-height:1.55}
+.tag{display:inline-block;background:var(--green);color:#F5EFE3;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;margin-right:6px}
+
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.about img{height:440px;width:100%;object-fit:cover;border:8px solid var(--paper);box-shadow:0 18px 40px rgba(23,20,15,.16)}
+.about h2{margin-bottom:16px}
+.about p{color:var(--soft);margin-bottom:14px}
+.about .names{margin-top:18px;font-size:15px;color:var(--ink)}
+.about .names strong{color:var(--green)}
+
+.band{background:var(--green-deep);color:#F5EFE3;padding:60px 0;text-align:center}
+.band h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(30px,3.6vw,44px);margin-bottom:12px}
+.band p{color:#D9CFB8;max-width:52ch;margin:0 auto 28px}
+.hours-mini{margin-top:28px;color:#D9CFB8;font-size:15px}
+
+footer.site{background:#0f0d09;color:#8f8471;padding:42px 0 30px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:26px}
+footer.site h4{font-family:'Playfair Display',Georgia,serif;color:#F5EFE3;font-size:19px;margin-bottom:10px}
+footer.site a{color:var(--brass)}
+.fine{margin-top:26px;padding-top:18px;border-top:1px solid rgba(245,239,227,.12);font-size:13px}
+
+.page-head{background:var(--green);color:#F5EFE3;padding:54px 0}
+.page-head h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(36px,4.4vw,54px);margin:14px 0 12px}
+.page-head p{color:#D9CFB8;max-width:60ch;font-size:17px}
+.page-head .sec-kicker{color:var(--brass)}
+
+.gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin:36px 0}
+.gal-grid figure{background:var(--paper);border:1px solid var(--line);padding:14px}
+.gal-grid img{height:320px;width:100%;object-fit:cover}
+.gal-grid figcaption{font-size:14px;color:var(--soft);padding:12px 4px 4px}
+
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:36px 0}
+.info-card{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--brass);padding:32px}
+.info-card h3{font-family:'Playfair Display',Georgia,serif;font-size:23px;margin-bottom:12px}
+.info-card p,.info-card li{color:var(--soft)}
+.info-card ul{list-style:none}
+.info-card li{padding:8px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-copy{padding:48px 0}
+  .hero-photo img{min-height:320px}
+  .trio{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr}
+  .info-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .ticket{grid-template-columns:1fr}
+  .ticket .note{text-align:left}
+}

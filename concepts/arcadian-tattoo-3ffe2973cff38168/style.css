@@ -1,0 +1,115 @@
+/* Arcadian Tattoo concept: dark studio aesthetic.
+   Palette: near-black, bone, rust red. Type: Oswald (condensed) + Inter.
+   Layout: full-bleed hero, dark gallery grid, stark service rows. */
+:root{
+  --black:#121110; --coal:#1C1A18; --bone:#EDE6D6; --muted:#A79E8D;
+  --rust:#B34724; --rust-bright:#D05A2E; --line:#2C2825;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--black);color:var(--bone);line-height:1.65;font-size:16.5px}
+img{max-width:100%;display:block}
+a{color:var(--rust-bright)}
+
+.preview-bar{background:#000;color:#d8cdb8;font-size:13px;padding:9px 18px;text-align:center;letter-spacing:.02em}
+.preview-bar strong{color:var(--rust-bright);letter-spacing:.08em;text-transform:uppercase;margin-right:8px}
+
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+header.site{background:var(--black);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 0;flex-wrap:wrap}
+.brand{font-family:'Oswald',sans-serif;font-weight:600;font-size:28px;letter-spacing:.06em;color:var(--bone);text-decoration:none;text-transform:uppercase}
+.brand small{display:block;font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:.4em;color:var(--rust-bright);font-weight:600;margin-top:2px}
+nav.main{display:flex;gap:2px;flex-wrap:wrap}
+nav.main a{color:var(--muted);text-decoration:none;font-size:13.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:10px 16px}
+nav.main a:hover,nav.main a.active{color:var(--bone);background:var(--coal)}
+
+.hero{position:relative;min-height:82vh;display:flex;align-items:flex-end;background:#0b0a09}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42}
+.hero-inner{position:relative;padding:80px 0 90px;max-width:1160px;margin:0 auto;width:100%}
+.kicker{font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--rust-bright);font-weight:600}
+.hero h1{font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(52px,8vw,110px);line-height:.95;letter-spacing:.01em;text-transform:uppercase;margin:16px 0 20px;max-width:12ch}
+.hero h1 .thin{color:var(--muted);font-weight:400}
+.hero p.lede{color:var(--muted);font-size:18px;max-width:52ch;margin-bottom:32px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.04em;padding:16px 36px;transition:all .18s ease}
+.btn-rust{background:var(--rust);color:#fff}
+.btn-rust:hover{background:var(--rust-bright)}
+.btn-ghost{border:1px solid var(--muted);color:var(--bone);margin-left:12px}
+.btn-ghost:hover{border-color:var(--bone)}
+.rate-row{display:flex;align-items:center;gap:12px;margin-top:34px;color:var(--muted);font-size:15px}
+.rate-row .stars{color:var(--rust-bright);letter-spacing:3px;font-size:17px}
+
+section.block{padding:70px 0}
+.sec-kicker{font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--rust-bright);font-weight:600}
+h2.sec{font-family:'Oswald',sans-serif;font-size:clamp(34px,4.4vw,56px);font-weight:600;text-transform:uppercase;letter-spacing:.02em;margin:14px 0 12px}
+.sec-sub{color:var(--muted);max-width:60ch;font-size:17px;margin-bottom:36px}
+
+.style-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+.style-cell{padding:36px 32px;border-right:1px solid var(--line)}
+.style-cell:last-child{border-right:none}
+.style-cell h3{font-family:'Oswald',sans-serif;font-size:24px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px;color:var(--bone)}
+.style-cell h3 span{color:var(--rust-bright)}
+.style-cell p{color:var(--muted);font-size:15.5px}
+
+.gal-full{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gal-full figure{position:relative;overflow:hidden;background:var(--coal)}
+.gal-full img{height:300px;width:100%;object-fit:cover;opacity:.92;transition:opacity .2s ease}
+.gal-full figure:hover img{opacity:1}
+.gal-full figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 12px;font-size:13px;color:var(--bone);background:linear-gradient(transparent,rgba(0,0,0,.85));line-height:1.5}
+.tag{display:inline-block;background:var(--rust);color:#fff;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:2px 9px;margin-right:6px}
+
+.artist-row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.artist{background:var(--coal);border:1px solid var(--line);padding:34px 30px}
+.artist h3{font-family:'Oswald',sans-serif;font-size:26px;text-transform:uppercase;letter-spacing:.04em}
+.artist p.role{color:var(--rust-bright);font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin:6px 0 12px}
+.artist p{color:var(--muted);font-size:15.5px}
+
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
+.step{border-top:3px solid var(--rust);padding-top:20px}
+.step h3{font-family:'Oswald',sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+.step p{color:var(--muted);font-size:15.5px}
+
+.cta-band{background:var(--rust);color:#fff;padding:64px 0;text-align:center}
+.cta-band h2{font-family:'Oswald',sans-serif;font-size:clamp(34px,4.4vw,56px);text-transform:uppercase;margin-bottom:12px}
+.cta-band p{max-width:54ch;margin:0 auto 28px;color:#F5D9C9}
+.cta-band .btn{background:#fff;color:var(--rust)}
+.cta-band .btn:hover{background:var(--black);color:#fff}
+.cta-band .hours-mini{margin-top:26px;color:#F5D9C9;font-size:15px}
+
+footer.site{background:#0b0a09;color:#7A7264;padding:44px 0 32px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:26px}
+footer.site h4{font-family:'Oswald',sans-serif;color:var(--bone);font-size:19px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+footer.site a{color:var(--rust-bright)}
+.fine{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:13px}
+
+.page-head{padding:64px 0 10px}
+.page-head h1{font-family:'Oswald',sans-serif;font-size:clamp(44px,6vw,76px);text-transform:uppercase;margin:14px 0 12px}
+.page-head p{color:var(--muted);max-width:60ch;font-size:17px}
+
+.svc-rows{margin:30px 0}
+.svc-row{display:grid;grid-template-columns:1fr auto;gap:20px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.svc-row h3{font-family:'Oswald',sans-serif;font-size:26px;text-transform:uppercase;letter-spacing:.03em}
+.svc-row p{color:var(--muted);font-size:15.5px;margin-top:6px;max-width:56ch}
+.svc-row .price{color:var(--bone);font-weight:600;font-size:14px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+
+.gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:30px 0}
+.gal-grid figure{background:var(--coal);border:1px solid var(--line)}
+.gal-grid img{height:340px;width:100%;object-fit:cover}
+.gal-grid figcaption{padding:16px 20px;font-size:14px;color:var(--muted)}
+
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:30px 0}
+.info-card{background:var(--coal);border:1px solid var(--line);padding:34px}
+.info-card h3{font-family:'Oswald',sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:12px;color:var(--rust-bright)}
+.info-card p,.info-card li{color:var(--muted)}
+.info-card ul{list-style:none}
+.info-card li{padding:9px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+
+@media(max-width:900px){
+  .style-grid{grid-template-columns:1fr}
+  .style-cell{border-right:none;border-bottom:1px solid var(--line)}
+  .gal-full{grid-template-columns:repeat(2,1fr)}
+  .artist-row{grid-template-columns:1fr}
+  .how{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr}
+  .info-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .svc-row{grid-template-columns:1fr}
+}
