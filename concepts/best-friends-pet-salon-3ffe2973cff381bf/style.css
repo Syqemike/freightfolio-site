@@ -1,0 +1,62 @@
+/* Best Friends Pet Salon - friendly modern concept */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap');
+:root{--sky:#5E9BC4;--sky-d:#3E7CA8;--navy:#1D3A52;--sun:#F2B705;--sun-d:#D19604;--mist:#F4F8FB;--paper:#FFFFFF;--ink:#22303C;--line:#DCE8F1}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito',system-ui,sans-serif;background:var(--mist);color:var(--ink);line-height:1.66;font-size:17px}
+img{max-width:100%;display:block}
+a{color:var(--sky-d)}
+h1,h2,h3,.round{font-family:'Baloo 2',cursive}
+.preview-bar{background:var(--navy);color:#DCE9F2;font-size:13px;padding:9px 18px;text-align:center}
+.preview-bar strong{background:var(--sun);color:var(--navy);padding:2px 10px;border-radius:12px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-right:10px}
+header.site{background:var(--paper);border-bottom:3px solid var(--line)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 26px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{font-family:'Baloo 2',cursive;font-size:28px;font-weight:800;color:var(--navy);text-decoration:none}
+.brand span{color:var(--sky-d)}
+nav.main{display:flex;gap:6px}
+nav.main a{text-decoration:none;color:var(--ink);font-weight:700;font-size:15px;padding:10px 16px;border-radius:24px}
+nav.main a:hover{background:var(--line)}
+nav.main a.active{background:var(--navy);color:#fff}
+.btn{display:inline-block;background:var(--sun);color:var(--navy);text-decoration:none;font-weight:800;padding:15px 32px;border-radius:40px;font-size:16.5px;box-shadow:0 5px 0 var(--sun-d);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.blue{background:var(--sky);color:#fff;box-shadow:0 5px 0 var(--sky-d)}
+.hero{padding:66px 0 60px;background:linear-gradient(180deg,#E8F1F8 0%,var(--mist) 100%)}
+.hero .grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.pill{display:inline-block;background:#fff;border:2px solid var(--sky);color:var(--sky-d);font-size:13.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:8px 20px;border-radius:30px;margin-bottom:20px}
+.hero h1{font-size:clamp(42px,5.4vw,64px);font-weight:800;line-height:1.06;color:var(--navy);margin-bottom:18px}
+.hero h1 span{color:var(--sky-d)}
+.lede{font-size:19px;color:#4c5c6a;max-width:33em;margin-bottom:30px}
+.hero-img img{border-radius:32px;aspect-ratio:4/4.4;object-fit:cover;box-shadow:0 18px 40px rgba(29,58,82,.18);border:6px solid #fff}
+section.band{padding:60px 0}
+h2{font-size:clamp(30px,3.8vw,44px);font-weight:800;color:var(--navy);margin-bottom:12px}
+.sub{color:#5b6c78;max-width:44em;margin-bottom:36px;font-size:17.5px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--paper);border-radius:24px;padding:30px;border:2px solid var(--line)}
+.card .ic{font-size:34px;margin-bottom:10px}
+.card h3{font-size:21px;margin-bottom:8px;color:var(--navy)}
+.card p{font-size:15.5px;color:#5b6c78}
+.phototrio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.phototrio img{border-radius:24px;aspect-ratio:1/1;object-fit:cover;width:100%;border:5px solid #fff;box-shadow:0 10px 24px rgba(29,58,82,.12)}
+figcaption{font-size:13.5px;color:#5b6c78;padding:8px 4px}
+.tag{display:inline-block;background:#E3EDF5;color:#5b7a94;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:8px;margin-left:8px}
+.ratingband{background:var(--navy);border-radius:28px;padding:44px;color:#DCE9F2;display:flex;align-items:center;gap:30px;flex-wrap:wrap}
+.ratingband .big{font-family:'Baloo 2',cursive;font-size:64px;color:var(--sun);line-height:1}
+.ratingband h2{color:#fff}
+.hours{background:var(--paper);border:2px solid var(--line);border-radius:24px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.hours ul{list-style:none}
+.hours li{padding:10px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+.hours li:last-child{border:none}
+footer.site{background:var(--navy);color:#9DB4C6;padding:46px 0 34px;margin-top:70px;font-size:14.5px}
+footer.site a{color:#DCE9F2}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:34px;margin-bottom:26px}
+.foot-grid h4{font-family:'Baloo 2',cursive;color:#fff;font-size:20px;margin-bottom:10px}
+.disclaimer{border-top:1px solid #2c4a63;padding-top:18px;font-size:13px}
+.page-head{padding:54px 0 6px}
+.price-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:900px;margin:0 auto}
+.price-cards .pc{background:var(--paper);border:2px solid var(--line);border-radius:20px;padding:26px}
+.price-cards h3{font-size:20px;color:var(--navy);margin-bottom:6px}
+.price-cards p{font-size:15px;color:#5b6c78}
+.price-cards .pr{display:inline-block;margin-top:10px;background:var(--line);color:var(--navy);font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:14px}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery-grid img{border-radius:24px;aspect-ratio:1/1;object-fit:cover;width:100%;border:5px solid #fff;box-shadow:0 10px 24px rgba(29,58,82,.12)}
+@media(max-width:860px){.hero .grid,.cards,.phototrio,.hours,.price-cards,.gallery-grid,.foot-grid{grid-template-columns:1fr}nav.main{display:none}}

@@ -1,0 +1,68 @@
+/* Endless Ink - gritty industrial tattoo concept */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap');
+:root{--char:#15120E;--char2:#1E1A15;--bone:#EFE6D4;--bone-d:#CBBFA6;--ember:#D8441C;--ember-d:#A93212;--line:#3A332A}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--char);color:var(--bone);line-height:1.65;font-size:16.5px}
+img{max-width:100%;display:block}
+a{color:var(--ember)}
+h1,h2,h3,.disp{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.02em;text-transform:uppercase}
+.preview-bar{background:var(--ember);color:#fff;font-size:13px;padding:9px 18px;text-align:center;letter-spacing:.04em}
+.preview-bar strong{background:#15120E;color:#fff;padding:2px 10px;font-size:12px;letter-spacing:.1em;margin-right:10px;text-transform:uppercase}
+header.site{background:var(--char);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{font-family:'Anton',sans-serif;font-size:30px;color:var(--bone);text-decoration:none;letter-spacing:.04em}
+.brand span{color:var(--ember)}
+nav.main{display:flex;gap:6px}
+nav.main a{color:var(--bone-d);text-decoration:none;font-size:13.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:10px 14px}
+nav.main a:hover,nav.main a.active{color:var(--ember)}
+.btn{display:inline-block;background:var(--ember);color:#fff;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;padding:15px 30px;transition:background .2s}
+.btn:hover{background:var(--ember-d)}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,var(--char) 4%,transparent 60%)}
+.hero-inner{position:relative;z-index:2;padding:90px 0 70px;width:100%}
+.kicker{display:inline-block;background:var(--ember);color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:7px 16px;margin-bottom:22px}
+.hero h1{font-size:clamp(52px,8vw,110px);line-height:.95;margin-bottom:18px}
+.hero p.lede{font-size:19px;max-width:36em;color:var(--bone-d);margin-bottom:30px}
+section.band{padding:70px 0}
+h2{font-size:clamp(34px,4.6vw,56px);margin-bottom:14px}
+h2 span{color:var(--ember)}
+.sub{color:var(--bone-d);max-width:44em;margin-bottom:38px;font-size:17.5px}
+.stylegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:2px solid var(--line)}
+.stylegrid .cell{background:var(--char2);padding:30px 26px}
+.stylegrid h3{font-size:21px;margin-bottom:8px;color:var(--bone)}
+.stylegrid p{font-size:15px;color:var(--bone-d)}
+.roster{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.artist{border:1px solid var(--line);background:var(--char2);padding:26px 22px}
+.artist .init{font-family:'Anton',sans-serif;font-size:40px;color:var(--ember);margin-bottom:8px}
+.artist h3{font-size:19px;margin-bottom:4px}
+.artist p{font-size:14px;color:var(--bone-d)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.duo figure{border:1px solid var(--line)}
+.duo img{aspect-ratio:4/3;object-fit:cover;width:100%}
+figcaption{font-size:13.5px;color:var(--bone-d);padding:10px 14px;background:var(--char2)}
+.tag{display:inline-block;background:#3A332A;color:var(--bone-d);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;margin-left:8px}
+.hours{background:var(--char2);border:1px solid var(--line);padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.hours ul{list-style:none}
+.hours li{padding:10px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-size:16px}
+.hours li:last-child{border:none}
+.rating{display:inline-block;border:1px solid var(--ember);color:var(--bone);padding:12px 22px;font-weight:600;font-size:16px}
+footer.site{background:#0D0B09;border-top:1px solid var(--line);padding:48px 0 36px;margin-top:70px;font-size:14.5px;color:#8d8271}
+footer.site a{color:var(--bone-d)}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:34px;margin-bottom:26px}
+.foot-grid h4{font-family:'Anton',sans-serif;color:var(--bone);font-size:19px;margin-bottom:10px;letter-spacing:.03em}
+.disclaimer{border-top:1px solid var(--line);padding-top:18px;font-size:13px}
+.page-head{padding:56px 0 6px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{border:1px solid var(--line);background:var(--char2);padding:28px}
+.step .n{font-family:'Anton',sans-serif;font-size:34px;color:var(--ember)}
+.step h3{font-size:19px;margin:8px 0}
+.step p{font-size:15px;color:var(--bone-d)}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.gallery-grid figure{border:1px solid var(--line)}
+.gallery-grid img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.bigcta{background:var(--ember);padding:60px 0;text-align:center}
+.bigcta h2{color:#fff}
+.bigcta .btn{background:#15120E}
+@media(max-width:860px){.roster,.stylegrid,.steps,.duo,.gallery-grid,.hours,.foot-grid{grid-template-columns:1fr}nav.main{display:none}}
