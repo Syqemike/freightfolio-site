@@ -40,3 +40,9 @@ All photos below are stock, downloaded locally into img/, and every one was visu
 
 ## Copy-rule compliance
 No em dashes. No banned AI phrases. No invented reviews, testimonials, hours, or prices. Rating shown once with exact source wording. Every photo caption matches what the photo shows. No concept-art illustrations anywhere; photographs only. The business is not a law firm (exclusion check passed).
+
+## Central-gate fixes 2026-10-22 ~10:40 CT (Website Dev Agent)
+- Sticky header changed from rgba(23,17,10,.96) to fully opaque #17110a (page text showed through while scrolling).
+- Added scroll-margin-top:84px to section[id] so the sticky nav no longer overlaps section headings.
+- "African Meat Patties" card had no image and dead space: added stock photo img/meat-patties.webp (golden meat hand pies from yerecipes.com meat-hand-pies recipe page, visually verified, no other business's branding) with caption "Stock photo: golden meat hand pies."
+- Dish-card menu photos (jollof rice, jerk chicken, coconut rice, hibiscus drink) had no stock labels: added "Stock photo:" captions to all four dish cards + .dish .cap CSS.

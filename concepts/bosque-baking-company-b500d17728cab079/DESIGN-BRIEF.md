@@ -42,3 +42,6 @@ Every photo is captioned "Stock photo:" and the caption matches the actual image
 - [x] Visually distinct from the Deep South Cake Company site (dark editorial split hero + ticker vs. blush centered celebration layout; Fraunces/Inter vs. Playfair/Pinyon/Jost; terracotta vs. chocolate/blush/gold).
 - [x] noindex meta present; footer disclaims design concept by Freightfolio linking https://freightfolio.net.
 - [x] Responsive CSS with mobile breakpoints (mobile inspection not rendered; recorded per mobile waiver).
+
+## Central-gate fix 2026-10-22 ~10:40 CT (Website Dev Agent)
+- The "Empanadas, Pies, and Burritos" card originally used a stock photo of stacked baguettes (caption was honest, but the photo did not match the card's content). Replaced with a stock photo of freshly baked empanadas on a tray (img/empanadas.jpg, from themodernproper.com beef empanadas recipe page, visually verified, no other business's branding). Caption updated to "Stock photo: freshly baked empanadas." Unused baguettes.jpg removed from img/.

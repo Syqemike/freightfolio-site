@@ -40,7 +40,7 @@
   .preview-ribbon span{font-weight:400;letter-spacing:.04em;text-transform:none}
 
   header{
-    position:sticky;top:0;z-index:50;background:rgba(23,17,10,.96);
+    position:sticky;top:0;z-index:50;background:#17110a;
     border-bottom:3px solid var(--gold);
   }
   .header-inner{
@@ -106,6 +106,7 @@
 
   /* MENU */
   .menu-section{background:var(--coal-2);border-top:1px solid #332917}
+  section[id]{scroll-margin-top:84px}
   .wrap{max-width:1220px;margin:0 auto;padding:5rem 1.5rem}
   .kicker{
     font-size:.78rem;font-weight:700;letter-spacing:.32em;text-transform:uppercase;
@@ -123,6 +124,7 @@
   .dish.featured{border-color:var(--gold)}
   .dish img{width:100%;aspect-ratio:4/3;object-fit:cover}
   .dish-body{padding:1.6rem 1.5rem 1.8rem;display:flex;flex-direction:column;flex:1}
+  .dish .cap{font-size:.78rem;color:#a89a86;font-style:italic;margin-top:.6rem}
   .dish-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.6rem}
   .dish h3{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:.03em;color:var(--cream)}
   .price{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--gold);white-space:nowrap}
@@ -247,6 +249,7 @@
           <div class="dish-top"><h3>Jollof Rice with Suya Chicken</h3><span class="price">$14.99</span></div>
           <p>The most ordered plate on the truck. Smoky jollof rice with seasoned suya chicken.</p>
           <span class="tag hot">Most ordered</span>
+          <p class="cap">Stock photo: jollof rice with chicken drumsticks.</p>
         </div>
       </div>
       <div class="dish">
@@ -255,6 +258,7 @@
           <div class="dish-top"><h3>Yellow Saffron Rice with Jerk Chicken</h3></div>
           <p>Fragrant saffron rice with jerk-seasoned chicken, curried cabbage, and plantains.</p>
           <span class="tag">Ask at the truck</span>
+          <p class="cap">Stock photo: grilled jerk chicken thighs.</p>
         </div>
       </div>
       <div class="dish">
@@ -263,14 +267,17 @@
           <div class="dish-top"><h3>Coconut Rice with Curry Chicken</h3></div>
           <p>Coconut rice with curry chicken. Add a side of caramelized plantains.</p>
           <span class="tag">Ask at the truck</span>
+          <p class="cap">Stock photo: curry chicken over rice.</p>
         </div>
       </div>
     </div>
     <div class="menu-grid" style="margin-top:1.8rem;grid-template-columns:1fr 1fr">
       <div class="dish">
+        <img src="img/meat-patties.webp" alt="Golden meat hand pies, one cut open to show the filling">
         <div class="dish-body">
           <div class="dish-top"><h3>African Meat Patties</h3><span class="price">$4.99</span></div>
           <p>Handheld patties, easy to eat on the go.</p>
+          <p class="cap">Stock photo: golden meat hand pies.</p>
         </div>
       </div>
       <div class="dish">
@@ -278,6 +285,7 @@
         <div class="dish-body">
           <div class="dish-top"><h3>Drinks</h3><span class="price">$2.99</span></div>
           <p>Ginger pineapple, bissap, and mango lemonade. Bissap is a hibiscus tea.</p>
+          <p class="cap">Stock photo: hibiscus iced drink with lime.</p>
         </div>
       </div>
     </div>
