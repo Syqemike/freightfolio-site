@@ -1,23 +1,19 @@
-Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
-no attribution required). They are NOT photos of the actual business. Every caption
-on the site is labeled as a stock photo.
+Photo provenance: REAL BUSINESS PHOTOS (upgrade 2026-10-21, rebuild run12).
+All photos in use are real photographs posted by Cafe 7-10's own public Facebook page
+(https://www.facebook.com/cafe710/ - Cafe 7-10, cafe/bakery, 7 W 10th St, Erie, PA).
+Verified visually 2026-10-21: real bakery-product photos, many bearing Cafe 7-10 branded
+stickers/packaging - clearly of this business (posted by the page).
+Old Pexels stock photos (photo-1..5.jpg) are superseded and no longer used on the page.
+real-4.jpg (chocolate-chip cupcake close-up, https://www.facebook.com/photo/?fbid=1599142728891208)
+was downloaded as a spare and is not currently used on the page.
 
-photo-1.jpg = Pexels photo 30948318: Free Bright interior of a cozy coffee shop with pastries and coffee display. Stock Photo
-  page: https://www.pexels.com/photo/cozy-indoor-coffee-shop-interior-with-display-30948318/
-  file: https://images.pexels.com/photos/30948318/pexels-photo-30948318.jpeg?auto=compress&cs=tinysrgb&w=1260
-
-photo-2.jpg = Pexels photo 38583473: Free Delicious assortment of croissants, muffins, and pastries in a bakery display case. Stock Photo
-  page: https://www.pexels.com/photo/assorted-bakery-pastries-on-display-38583473/
-  file: https://images.pexels.com/photos/38583473/pexels-photo-38583473.jpeg?auto=compress&cs=tinysrgb&w=1260
-
-photo-3.jpg = Pexels photo 1995010: Free Inviting indoor scene of a bakery cafe with pastries and seating. Stock Photo
-  page: https://www.pexels.com/photo/coffee-bar-1995010/
-  file: https://images.pexels.com/photos/1995010/pexels-photo-1995010.jpeg?auto=compress&cs=tinysrgb&w=1260
-
-photo-4.jpg = Pexels photo 29517897: Free Delicious assortment of cakes and desserts displayed in a bakery case for customers. Stock Photo
-  page: https://www.pexels.com/photo/variety-of-desserts-displayed-in-bakery-case-29517897/
-  file: https://images.pexels.com/photos/29517897/pexels-photo-29517897.jpeg?auto=compress&cs=tinysrgb&w=1260
-
-photo-5.jpg = Pexels photo 35228372: Free Inviting cake shop display with various pastries and an open sign, perfect for dessert lovers. Stock Photo
-  page: https://www.pexels.com/photo/charming-cake-shop-display-with-open-sign-35228372/
-  file: https://images.pexels.com/photos/35228372/pexels-photo-35228372.jpeg?auto=compress&cs=tinysrgb&w=1260
+real-1.jpg = cupcakes with cookie crumble and caramel drizzle, Halloween spiderweb wrappers (posted Oct 12)
+  https://www.facebook.com/photo.php?fbid=1599142865557861
+real-2.jpg = individual cupcakes in clear plastic dome containers (posted Oct 12)
+  https://www.facebook.com/photo/?fbid=1599142842224530
+real-3.jpg = cookies-and-cream cupcake topped with an Oreo cookie, Halloween ghost wrapper (posted Oct 12)
+  https://www.facebook.com/photo/?fbid=1599142778891203
+real-5.jpg = drink in a Cafe 7-10 branded cup with babka slice (posted Oct 7)
+  https://www.facebook.com/photo.php?fbid=1593553179450163
+real-6.jpg = individually wrapped cupcakes bearing the round Cafe 7-10 branded sticker, with banana bread slices (posted Oct 7)
+  https://www.facebook.com/photo/?fbid=1593553186116829

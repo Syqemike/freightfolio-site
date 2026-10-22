@@ -1,23 +1,18 @@
-Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
-no attribution required). They are NOT photos of the actual business. Every caption
-on the site is labeled as a stock photo.
+Photo provenance: REAL BUSINESS PHOTOS (upgrade 2026-10-21, rebuild run12).
+All 6 photos are real photographs posted by Ban Moon's own public Facebook page
+(https://www.facebook.com/Banmoon325/ - Ban Moon, Lao-Thai restaurant, 405 W Ave N, San Angelo, TX).
+Verified visually 2026-10-21: real food/staff photos, clearly of this business (posted by the page).
+Old Pexels stock photos (photo-1..5.jpg) are superseded and no longer used on the page.
 
-photo-1.jpg = Pexels photo 12188535: Free A vibrant close-up of authentic Thai seafood Pad Thai with shrimp, sprouts, lime, and cashews. Stock Photo
-  page: https://www.pexels.com/photo/gourmet-thai-meal-on-a-plate-12188535/
-  file: https://images.pexels.com/photos/12188535/pexels-photo-12188535.jpeg?auto=compress&cs=tinysrgb&w=1260
-
-photo-2.jpg = Pexels photo 19062750: Free Appetizing Pad Thai with shrimp, peanuts, and fresh herbs on a white plate. Stock Photo
-  page: https://www.pexels.com/photo/tagliatelle-with-prawns-and-salad-19062750/
-  file: https://images.pexels.com/photos/19062750/pexels-photo-19062750.jpeg?auto=compress&cs=tinysrgb&w=1260
-
-photo-3.jpg = Pexels photo 34723314: Free Authentic Pad Thai with beef, peanuts, and vegetables on a wooden table, ready to eat. Stock Photo
-  page: https://www.pexels.com/photo/delicious-pad-thai-with-tender-beef-on-rustic-table-34723314/
-  file: https://images.pexels.com/photos/34723314/pexels-photo-34723314.jpeg?auto=compress&cs=tinysrgb&w=1260
-
-photo-4.jpg = Pexels photo 34723307: Free Close-up of shrimp pad thai with lime and peanuts on a white plate, perfect for food lovers. Stock Photo
-  page: https://www.pexels.com/photo/delicious-shrimp-pad-thai-on-white-plate-34723307/
-  file: https://images.pexels.com/photos/34723307/pexels-photo-34723307.jpeg?auto=compress&cs=tinysrgb&w=1260
-
-photo-5.jpg = Pexels photo 12561889: Free Close-up of a colorful Thai Pad Thai dish garnished with an orchid, captured indoors. Stock Photo
-  page: https://www.pexels.com/photo/flowers-on-plate-with-meal-12561889/
-  file: https://images.pexels.com/photos/12561889/pexels-photo-12561889.jpeg?auto=compress&cs=tinysrgb&w=1260
+real-1.jpg = pho-style soup bowl, fried rice plate, beef stir-fry with peppers (posted Sept 18)
+  https://www.facebook.com/photo.php?fbid=1704405325026677
+real-2.jpg = "Edamame & Pad Prik Khing" - beef stir-fry with peppers, steamed rice, edamame (posted Sept 10)
+  https://www.facebook.com/photo/?fbid=1696260612507815
+real-3.jpg = "Lunch" - fried rice plate and beef stir-fry plate with white rice (posted Sept 9)
+  https://www.facebook.com/photo/?fbid=1695148149285728
+real-4.jpg = chicken stir-fry with broccoli and carrots, steamed rice (posted Aug 26)
+  https://www.facebook.com/photo/?fbid=1680767154057161
+real-5.jpg = beef stir-fry with peppers and onions, steamed rice (posted Aug 26)
+  https://www.facebook.com/photo/?fbid=1680767144057162
+real-6.jpg = "Soup for dinner" - bowls of tom yum soup, tom kha, red curry (posted May 14)
+  https://www.facebook.com/photo/?fbid=1577677904366087
