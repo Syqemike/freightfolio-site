@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 9702356: Free Red sports car with an open hood in a modern garage, showcasing engine details. Stock Photo
+  page: https://www.pexels.com/photo/red-sports-car-with-an-open-hood-9702356/
+  file: https://images.pexels.com/photos/9702356/pexels-photo-9702356.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 17776621: Free Red and blue Honda cars with hoods open, showcasing custom engines in a parking lot. Stock Photo
+  page: https://www.pexels.com/photo/engine-of-sports-car-17776621/
+  file: https://images.pexels.com/photos/17776621/pexels-photo-17776621.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 9702354: Free Detailed close-up of a high-performance car engine with red accents under the hood. Stock Photo
+  page: https://www.pexels.com/photo/car-with-an-open-hood-9702354/
+  file: https://images.pexels.com/photos/9702354/pexels-photo-9702354.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 17575953: Free Detailed view of a car engine featuring a Turbosystems air filter and chrome components. Stock Photo
+  page: https://www.pexels.com/photo/close-up-of-car-engine-17575953/
+  file: https://images.pexels.com/photos/17575953/pexels-photo-17575953.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 16350186: Free Detailed view of a blue sports car with its hood open, showcasing the engine. Stock Photo
+  page: https://www.pexels.com/photo/under-hood-of-modern-car-16350186/
+  file: https://images.pexels.com/photos/16350186/pexels-photo-16350186.jpeg?auto=compress&cs=tinysrgb&w=1260
