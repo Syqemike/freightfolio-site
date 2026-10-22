@@ -112,6 +112,7 @@
   .rev .who span { color:var(--muted); letter-spacing:0; text-transform:none; font-weight:400; }
   .scroll-hint { text-align:right; color:var(--muted); font-size:13px; letter-spacing:1px; margin-bottom:8px; }
   @media (max-width:860px) { .rev { flex:0 0 270px; } }
+.hero-photo{max-width:420px;margin:32px auto 0}.hero-photo img{width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:18px}.hero-photo figcaption{font-size:12px;color:var(--muted);margin-top:8px}.cards{grid-template-columns:repeat(2,1fr)}@media(max-width:600px){.cards{grid-template-columns:1fr}.hero-photo img{height:auto;max-height:380px}}
 </style>
 </head>
 <body>
@@ -132,86 +133,60 @@
 
 <header class="hero">
   <div class="kicker">Pet groomer in Gulfport, Mississippi</div>
-  <h1 class="serif">A <em>master groomer</em> for your dog.</h1>
-  <p class="lead">National Certified Master Groomer. Award-winning stylist. Serving South Mississippi for over 57 years.</p>
+  <h1 class="serif">Dog grooming on <em>Pass Road.</em></h1>
+  <p class="lead">K-9 Paws is a dog grooming shop in Gulfport. Call Sandy to discuss your dog&rsquo;s coat and arrange an appointment.</p>
   <div class="cta-row">
     <a class="btn" href="tel:+12288967297">Call (228) 896-7297</a>
     <a class="btn ghost" href="#work">See the Dogs</a>
   </div>
-  <div class="stars">★★★★☆ <span>4.5 from 26 Google reviews</span></div>
+
+  <figure class="hero-photo"><img src="img/1.jpg" alt="Dog with a styled coat"><figcaption>Grooming detail.</figcaption></figure>
 </header>
 
-<div class="trust"><div class="wrap">
-  <span><b>National Certified</b> Master Groomer</span>
-  <span><b>Award-winning</b> stylist</span>
-  <span><b>57+ years</b> serving South MS</span>
-  <span><b>Weekdays</b> 8am to 3pm</span>
-</div></div>
+
 
 <section id="services"><div class="wrap">
   <div class="sec-head">
     <div class="kicker">What we do</div>
     <h2 class="serif">Grooming services</h2>
-    <p>Full-service grooming from a certified master. Call to book your dog's appointment.</p>
+    <p>Call the shop to discuss grooming options and current prices.</p>
   </div>
   <div class="cards">
     <div class="card"><h3>Full Grooming</h3><p>Bath, cut, nails, and finishing touches.</p></div>
     <div class="card"><h3>Bath &amp; Brush</h3><p>A thorough wash and brush-out that leaves coats clean and soft.</p></div>
-    <div class="card"><h3>Haircuts &amp; Styling</h3><p>Breed cuts and pet trims from an award-winning stylist.</p></div>
-    <div class="card"><h3>Nail Trims</h3><p>Quick, careful nail care to keep paws healthy.</p></div>
-    <div class="card"><h3>Easy Hours</h3><p>Open Monday through Friday, 8am to 3pm. Closed weekends.</p></div>
-    <div class="card cta"><h3>Book an appointment</h3><p>Call the shop and ask for Mz. Sandy.</p><a class="btn" href="tel:+12288967297">(228) 896-7297</a></div>
+    <div class="card"><h3>Haircuts &amp; Styling</h3><p>Ask about a trim suited to your dog&rsquo;s coat.</p></div>
+    <div class="card"><h3>Nail Trims</h3><p>Ask about nail trimming when you call.</p></div>
   </div>
 </div></section>
 
 <section id="work" style="background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);"><div class="wrap">
   <div class="sec-head">
-    <div class="kicker">Happy clients</div>
-    <h2 class="serif">Fresh from the table</h2>
-    <p>Real dogs, groomed at K-9 Paws.</p>
+    <div class="kicker">Photo gallery</div>
+    <h2 class="serif">Coat and styling details</h2>
+    <p>A closer look at coat shapes and finishing touches.</p>
   </div>
   <div class="gal">
-    <div class="tile"><img src="img/1.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">Fresh groom at K-9 Paws.</div></div>
-    <div class="tile"><img src="img/2.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">Bow on and nails done.</div></div>
-    <div class="tile"><img src="img/3.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">Ready for the weekend.</div></div>
-    <div class="tile"><img src="img/4.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">Show-style groom, done by hand.</div></div>
-    <div class="tile"><img src="img/5.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">Groomed at K-9 Paws.</div></div>
-    <div class="tile"><img src="img/6.jpg" alt="Dog groomed at K-9 Paws"><div class="cap">Holiday-ready pup.</div></div>
+    <div class="tile"><img src="img/1.jpg" alt="Dog with a styled coat"><div class="cap">Grooming detail.</div></div>
+    <div class="tile"><img src="img/2.jpg" alt="Dog with a styled coat"><div class="cap">A bow finishes the look.</div></div>
+    <div class="tile"><img src="img/3.jpg" alt="Dog with a styled coat"><div class="cap">Long-coat styling.</div></div>
+    <div class="tile"><img src="img/4.jpg" alt="Dog with a styled coat"><div class="cap">Coat and shape detail.</div></div>
+    <div class="tile"><img src="img/5.jpg" alt="Dog with a styled coat"><div class="cap">A closer look.</div></div>
+    <div class="tile"><img src="img/6.jpg" alt="Dog with a styled coat"><div class="cap">Seasonal styling.</div></div>
   </div>
 </div></section>
 
 
-<section id="reviews" style="background:var(--paper);"><div class="wrap">
-  <div class="sec-head">
-    <div class="kicker">What people say</div>
-    <h2 class="serif">Loved by local dog owners</h2>
-  </div>
-  <div class="scroll-hint">Swipe or scroll &rarr;</div>
-  <div class="rev-track">
-    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;We had an amazing first experience with Sandy grooming my Cavalier King Charles Spaniel, Nola! Sandy is incredibly kind, patient, and extremely knowledgeable. You can tell she&rsquo;s a true expert in dog grooming&hellip;&rdquo;</p><div class="who">Emilie T. <span>Google review</span></div></div>
-    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;Your fur baby will leave here looking cute as a button. The owner is very patient and does a meet and greet with them before they begin any services to make sure the pup is comfortable&hellip;&rdquo;</p><div class="who">Pamela M. <span>Google review</span></div></div>
-    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;Coco spa day and she knows it. Lol&rdquo;</p><div class="who">James F. <span>Google review</span></div></div>
-    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;I&rsquo;ve known Sandy Bethea for more than 14 years and she&rsquo;s groomed our dogs and cared for them as if they were her very own show dogs! She&rsquo;s an award winning show dog groomer&hellip;&rdquo;</p><div class="who">Maria &ldquo;Romy&rdquo; H. <span>Google review</span></div></div>
-    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;Paws down, best groomer around, and I&rsquo;ve never seen my two babies come home so happy after getting their hair done. Sandy is a caring, attentive lady&hellip;&rdquo;</p><div class="who">Jamie S. <span>Google review</span></div></div>
-    <div class="rev"><div class="stars5">★★★☆☆</div><p class="q">&ldquo;I have a Pomeranian, and K-9 Paws was the first dog groomer to give my dog a perfect cut. Everywhere else I&rsquo;ve gone before has left his fur too long, or his cut unbalanced and uneven&hellip;&rdquo;</p><div class="who">Sheretta A. <span>Google review</span></div></div>
-    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;She listens to how I want my dogs groomed. She always has great recommendations for different styles and cuts. I&rsquo;ve always been pleased with the final result&hellip;&rdquo;</p><div class="who">Robin T. <span>Google review</span></div></div>
-    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;I&rsquo;ll be straight with ya. I didn&rsquo;t use their service but of no fault of theirs. They were kind, patient, and understanding to my situation&hellip;&rdquo;</p><div class="who">Jo E B. <span>Google review</span></div></div>
-    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;Her work is most professional! People ask me where they are groomed. The dogs look precious for their age. (10 &amp; 11). The pricing is excellent and the grooming is done in a timely manner.&rdquo;</p><div class="who">Carol R. <span>Google review</span></div></div>
-    <div class="rev"><div class="stars5">★★★★★</div><p class="q">&ldquo;I called and got a next day appointment for my 9 year young Shih Tzu. It took approximately 90 minutes from start to finish. They did an awesome groom on her! I will definitely recommend and return!&rdquo;</p><div class="who">Loc8NearMe review <span>October 2023</span></div></div>
-  </div>
-</div></section>
+
 
 <section id="about" class="about"><div class="wrap">
   <div class="about-grid">
     <div>
       <div class="kicker" style="color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:10px; font-weight:700;">Why K-9 Paws</div>
-      <h2 class="serif">57 years of doing it right.</h2>
-      <p>K-9 Paws has been grooming South Mississippi's dogs for over five decades. Mz. Sandy is a National Certified Master Groomer and award-winning stylist, and reviews mention dogs coming home happy.</p>
-      <p>One groomer, one shop, decades of experience. That is the whole pitch.</p>
+      <h2 class="serif">Meet Sandy.</h2>
+      <p>Sandra Bethea, known locally as Sandy, owns K-9 Paws in Gulfport. WLOX featured her and her show dog Rion in its 2014 Westminster coverage.</p>
+      <p><a href="https://www.wlox.com/story/24695474/coast-dog-wins-best-of-breed-at-westminster/" target="_blank" rel="noopener">Read the WLOX feature</a>.</p>
     </div>
     <div class="badges">
-      <div class="badge"><b><span class="dot">●</span>National Certified Master Groomer</b><span>One of the highest credentials a groomer can hold.</span></div>
-      <div class="badge"><b><span class="dot">●</span>Award-winning stylist</b><span>Their own description, and the reviews back it up.</span></div>
       <div class="badge"><b><span class="dot">●</span>Book by phone</b><span>Call (228) 896-7297 to set up your dog's appointment.</span></div>
     </div>
   </div>
@@ -247,7 +222,7 @@
 <footer>
   <div class="wrap">
     <div>K-9 PAWS &middot; Gulfport, MS &middot; (228) 896-7297</div>
-    <div class="fine">Concept preview. Not affiliated with or endorsed by the business.</div>
+    <div class="fine">Design preview created by Freightfolio. Not affiliated with or endorsed by the business.</div>
   </div>
 </footer>
 
