@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Rachel Nails | By-Appointment Nail Care in Foley, AL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#f6f1e8; --cream-deep:#efe8d8; --rose:#b0826f; --rose-soft:#d9bda9;
+    --sage:#8b9a83; --ink:#3d3833; --gray:#7a7268; --line:#ddd2bf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);font-weight:300;line-height:1.75;font-size:17px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 28px}
+  .preview-bar{background:var(--ink);color:var(--cream);font-size:12px;letter-spacing:2.5px;text-transform:uppercase;text-align:center;padding:10px 16px}
+  header.nav{display:flex;align-items:center;justify-content:space-between;padding:26px 0;border-bottom:1px solid var(--line)}
+  header.nav .wordmark{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;letter-spacing:1px}
+  nav.links{display:flex;gap:34px;flex-wrap:wrap}
+  nav.links a{color:var(--ink);text-decoration:none;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;position:relative}
+  nav.links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--rose);transition:width .3s}
+  nav.links a:hover::after{width:100%}
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:90px 0 80px}
+  .hero .eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--sage);margin-bottom:22px}
+  .hero h1{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(56px,7vw,88px);line-height:1.04;letter-spacing:.5px;margin-bottom:26px}
+  .hero h1 em{font-style:italic;color:var(--rose)}
+  .hero p.lede{font-size:19px;color:var(--gray);max-width:44ch;margin-bottom:36px}
+  .hero img{width:100%;height:560px;object-fit:cover;border-radius:2px}
+  .btn{display:inline-block;background:var(--ink);color:var(--cream);text-decoration:none;padding:16px 38px;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;border-radius:2px;transition:background .3s}
+  .btn:hover{background:var(--rose)}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink);margin-left:14px}
+  .btn.ghost:hover{background:var(--ink);color:var(--cream)}
+  figure.cap{margin-top:14px}
+  figcaption{font-size:12.5px;letter-spacing:1px;color:var(--gray);text-transform:uppercase}
+  section{padding:78px 0;border-top:1px solid var(--line)}
+  .sec-label{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--sage);margin-bottom:18px}
+  h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(34px,4vw,50px);margin-bottom:14px}
+  .sec-intro{color:var(--gray);max-width:62ch;margin-bottom:44px}
+  .services{list-style:none}
+  .services li{display:grid;grid-template-columns:200px 1fr;gap:30px;padding:30px 0;border-bottom:1px solid var(--line);align-items:baseline}
+  .services li:first-child{border-top:1px solid var(--line)}
+  .services h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:27px;letter-spacing:.5px}
+  .services p{color:var(--gray);max-width:60ch}
+  .gallery3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+  .gallery3 img{width:100%;height:340px;object-fit:cover;border-radius:2px}
+  .appt-box{background:var(--cream-deep);border:1px solid var(--line);border-radius:2px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-top:10px}
+  .appt-box .phone{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:500;color:var(--ink);text-decoration:none;display:block;margin:18px 0}
+  .appt-box .phone:hover{color:var(--rose)}
+  .hours{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+  .hours table{width:100%;border-collapse:collapse;font-size:16px}
+  .hours td{padding:14px 0;border-bottom:1px solid var(--line)}
+  .hours td:last-child{text-align:right;color:var(--gray)}
+  .note-card{background:#fff;border:1px solid var(--line);border-radius:2px;padding:36px;font-size:16px;color:var(--gray)}
+  .note-card strong{display:block;font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--ink);font-weight:500;margin-bottom:10px}
+  .rating{font-family:'Cormorant Garamond',serif;font-size:24px;margin-top:34px;color:var(--ink)}
+  .rating span{color:var(--rose)}
+  footer{border-top:1px solid var(--line);padding:44px 0 60px;font-size:14px;color:var(--gray)}
+  footer a{color:var(--rose)}
+  @media(max-width:820px){
+    header.nav{flex-direction:column;align-items:flex-start;gap:18px}
+    header.nav .wordmark{font-size:34px}
+    nav.links{gap:10px 22px}
+    nav.links a{font-size:12px}
+    .appt-box .phone{white-space:nowrap;font-size:32px}
+    .hero{grid-template-columns:1fr;padding:56px 0}
+    .hero img{height:380px}
+    .services li{grid-template-columns:1fr;gap:8px}
+    .gallery3{grid-template-columns:1fr}
+    .gallery3 img{height:300px}
+    .appt-box{grid-template-columns:1fr;padding:36px}
+    .hours{grid-template-columns:1fr}
+    .btn.ghost{margin-left:0;margin-top:12px}
+  }
+</style>
+</head>
+<body>
+<div class="preview-bar">Design preview, a concept by Freightfolio</div>
+<div class="wrap">
+  <header class="nav">
+    <div class="wordmark">Rachel Nails</div>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#appointments">Appointments</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Foley, Alabama</div>
+      <h1>Quiet, one-on-one <em>nail care</em></h1>
+      <p class="lede">Rachel Nails is a solo salon in Foley. Every visit is a private appointment, just you and your nail tech, at your own pace.</p>
+      <a class="btn" href="tel:+12512298493">Call or text to book</a>
+    </div>
+    <div>
+      <img src="img/nails-1.jpg" alt="Hands with a neutral beige manicure">
+      <figcaption>Stock photo: neutral beige manicure</figcaption>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="sec-label">What Rachel offers</div>
+    <h2>Services</h2>
+    <p class="sec-intro">Simple, careful nail work. Prices are shared when you book, since every set is quoted for your nails.</p>
+    <ul class="services">
+      <li><h3>Dip Nails</h3><p>Powder-dipped color with a smooth, even finish.</p></li>
+      <li><h3>Acrylic Nails</h3><p>Sculpted length and shape, built to last.</p></li>
+      <li><h3>Manicure</h3><p>Shaping, cuticle care, and polish for natural nails.</p></li>
+      <li><h3>Pedicure</h3><p>Soak, shaping, and polish, finished at an unhurried pace.</p></li>
+      <li><h3>Nail Refills</h3><p>Maintenance fills to keep your set looking fresh.</p></li>
+    </ul>
+    <div class="gallery3">
+      <figure class="cap"><img src="img/nails-5.jpg" alt="Hands with a soft sheer pink manicure"><figcaption>Stock photo: soft pink manicure</figcaption></figure>
+      <figure class="cap"><img src="img/pedicure-3.jpg" alt="Feet in a pedicure foot soak"><figcaption>Stock photo: pedicure foot soak</figcaption></figure>
+      <figure class="cap"><img src="img/hands-6.jpg" alt="Spa pedicure setting with candles and towels"><figcaption>Stock photo: pedicure spa setting</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="appointments">
+    <div class="sec-label">Booking</div>
+    <h2>Appointments</h2>
+    <div class="appt-box">
+      <div>
+        <p>Rachel Nails is appointment-only. Right now the salon is temporarily open by appointment from 7:00 AM to 3:00 PM. Text or call to set a time that works for you.</p>
+        <a class="phone" href="tel:+12512298493">(251) 229-8493</a>
+        <a class="btn" href="tel:+12512298493">Call or text to book</a>
+      </div>
+      <div class="note-card">
+        <strong>A quieter kind of appointment</strong>
+        No crowded waiting room and no rushed chair. Your appointment time is yours alone, so the work gets full attention from start to finish.
+      </div>
+    </div>
+  </section>
+
+  <section id="hours">
+    <div class="sec-label">When to come</div>
+    <h2>Hours</h2>
+    <div class="hours">
+      <table>
+        <tr><td>Monday to Friday</td><td>9:00 AM to 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td>9:00 AM to 12:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Hours not listed</td></tr>
+      </table>
+      <div class="note-card">
+        <strong>Currently by appointment</strong>
+        The salon is temporarily taking appointments from 7:00 AM to 3:00 PM. Please text or call before coming in.
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="sec-label">Find the salon</div>
+    <h2>Visit</h2>
+    <p class="sec-intro">Rachel Nails is located at 918 N McKenzie St, Foley, AL. <a href="https://www.google.com/maps/search/?api=1&query=918+N+McKenzie+St+Foley+AL" style="color:var(--rose)">Get directions</a>.</p>
+    <p class="rating">Rated <span>4.8 out of 5</span> from 13 Google reviews (October 2026).</p>
+  </section>
+
+  <footer>
+    <p>This page is a design concept created by Freightfolio to show what Rachel Nails' website could look like. It is not the business's real website. <a href="https://freightfolio.net">freightfolio.net</a></p>
+  </footer>
+</div>
+</body>
+</html>

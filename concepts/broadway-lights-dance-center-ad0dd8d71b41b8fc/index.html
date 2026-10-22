@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Broadway Lights Dance Center | Dance for Ages 3 to Adult in Gulf Breeze, FL</title>
+<meta name="description" content="Broadway Lights Dance Center is a family-owned dance studio in Gulf Breeze, Florida. Ballet, hip hop, contemporary, and musical theater for ages 3 to adult. Call (850) 932-5555.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum:#14070F;
+    --plum-2:#1E0B17;
+    --magenta:#FF2E88;
+    --magenta-soft:#FF6FAE;
+    --gold:#F5B301;
+    --gold-pale:#FFE9A8;
+    --cream:#FFF7EC;
+    --muted:#C9B7C0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Archivo',sans-serif;background:var(--plum);color:var(--cream);line-height:1.6;font-size:17px}
+  h1,h2,h3{font-family:'Anton',sans-serif;font-weight:400;line-height:1.02;letter-spacing:.01em;text-transform:uppercase}
+  img{display:block;max-width:100%}
+  a{color:var(--gold)}
+
+  .preview-tag{background:var(--gold);color:#2B1D00;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:9px 16px}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(20,7,15,.92);backdrop-filter:blur(8px);border-bottom:1px solid #3A1526}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:14px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--cream)}
+  .brand .mark{font-family:'Anton',sans-serif;font-size:15px;background:var(--magenta);color:#fff;width:52px;height:52px;display:flex;align-items:center;justify-content:center;transform:skewX(-8deg);letter-spacing:.05em}
+  .brand strong{font-family:'Anton',sans-serif;font-weight:400;font-size:19px;display:block;letter-spacing:.04em;text-transform:uppercase}
+  .brand small{font-size:12.5px;color:var(--muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+  nav.links{display:flex;gap:2px;flex-wrap:wrap}
+  nav.links a{text-decoration:none;color:var(--cream);font-weight:700;font-size:14.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 14px}
+  nav.links a:hover{color:var(--magenta-soft)}
+  .btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:4px;padding:14px 30px;font-size:16px;letter-spacing:.04em;text-transform:uppercase}
+  .btn-mag{background:var(--magenta);color:#fff}
+  .btn-mag:hover{background:#E02677}
+  .btn-gold{background:var(--gold);color:#2B1D00}
+  .btn-gold:hover{background:#DBA100}
+
+  .hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;overflow:hidden}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,7,15,.25) 0%,rgba(20,7,15,.55) 45%,var(--plum) 100%)}
+  .hero-content{position:relative;z-index:2;padding:90px 0 70px;width:100%}
+  .kicker{display:inline-block;background:var(--gold);color:#2B1D00;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:8px 18px;margin-bottom:22px;transform:skewX(-8deg)}
+  .hero h1{font-size:clamp(48px,8.4vw,110px);margin-bottom:20px;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+  .hero h1 .hot{color:var(--magenta-soft)}
+  .hero .sub{font-size:19px;color:var(--gold-pale);max-width:52ch;margin-bottom:10px}
+  .hero .ratingline{font-size:15px;color:var(--muted);margin-bottom:30px}
+  .hero .ratingline strong{color:var(--gold)}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+
+  .marquee{background:var(--magenta);color:#fff;overflow:hidden;white-space:nowrap;border-top:3px solid var(--gold);border-bottom:3px solid var(--gold)}
+  .marquee-inner{display:inline-block;padding:13px 0;font-family:'Anton',sans-serif;font-size:20px;letter-spacing:.1em;text-transform:uppercase;animation:scroll 28s linear infinite}
+  .marquee-inner span{margin:0 26px}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.marquee-inner{animation:none}}
+
+  section.block{padding:84px 0}
+  .sec-head{margin-bottom:44px}
+  .sec-num{display:inline-block;font-family:'Anton',sans-serif;color:var(--magenta);font-size:16px;letter-spacing:.2em;margin-bottom:12px}
+  .sec-head h2{font-size:clamp(34px,4.6vw,58px);margin-bottom:12px}
+  .sec-head h2 .gold{color:var(--gold)}
+  .sec-head p{color:var(--muted);font-size:18px;max-width:60ch}
+
+  .class-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .class-card{position:relative;background:var(--plum-2);border:1px solid #3A1526;border-radius:8px;overflow:hidden}
+  .class-card img{height:280px;width:100%;object-fit:cover}
+  .class-card .tag{position:absolute;top:16px;left:16px;background:var(--gold);color:#2B1D00;font-weight:800;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;transform:skewX(-8deg)}
+  .class-card .body{padding:24px 26px 28px}
+  .class-card h3{font-size:26px;margin-bottom:8px}
+  .class-card p{color:var(--muted);font-size:16px}
+  .class-card.photo-less{border-top:4px solid var(--magenta)}
+  .class-card .photocap{padding:10px 26px 0;font-size:13px;color:#8A7484;font-style:italic}
+
+  .prog{background:var(--plum-2);border-top:1px solid #3A1526;border-bottom:1px solid #3A1526}
+  .prog-list{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:34px}
+  .prog-item{background:var(--plum);border:1px solid #3A1526;border-radius:8px;padding:26px 20px}
+  .prog-item h3{font-size:19px;color:var(--gold);margin-bottom:8px}
+  .prog-item p{font-size:15px;color:var(--muted)}
+
+  .recital{background:#000}
+  .recital-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  .recital img{border-radius:8px;border:1px solid #3A1526}
+  .caption{font-size:13.5px;color:#8A7484;margin-top:10px;font-style:italic}
+  .recital h2{font-size:clamp(32px,4vw,52px);margin-bottom:16px}
+  .recital h2 .gold{color:var(--gold)}
+  .recital p{color:var(--muted);font-size:18px;margin-bottom:26px}
+
+  .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .gal-grid figure{background:var(--plum-2);border:1px solid #3A1526;border-radius:8px;overflow:hidden}
+  .gal-grid img{height:240px;width:100%;object-fit:cover}
+  .gal-grid figcaption{padding:12px 18px;font-size:13.5px;color:#8A7484;font-style:italic}
+
+  .sched-visit{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .panel{background:var(--plum-2);border:1px solid #3A1526;border-radius:8px;padding:36px 32px}
+  .panel h3{font-size:26px;color:var(--gold);margin-bottom:16px}
+  .sched-row{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid #3A1526;font-size:16.5px}
+  .sched-row:last-child{border-bottom:none}
+  .sched-row strong{color:var(--cream)}
+  .visit-panel{border-top:4px solid var(--gold)}
+  .visit-panel p{color:var(--muted);margin-bottom:24px}
+  .visit-panel address{font-style:normal;color:var(--cream);font-weight:600;margin-bottom:22px}
+
+  footer{background:#0B0408;border-top:3px solid var(--gold);padding:44px 0;font-size:14.5px;color:#8A7484}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  footer a{color:var(--gold)}
+  footer .fnote{max-width:58ch}
+
+  @media (max-width:900px){
+    .class-grid,.recital-grid,.sched-visit,.gal-grid{grid-template-columns:1fr}
+    .prog-list{grid-template-columns:1fr 1fr}
+    .hero{min-height:60vh}
+    section.block{padding:60px 0}
+  }
+  @media (max-width:560px){.prog-list{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="preview-tag">Design preview &nbsp;&middot;&nbsp; A website concept for Broadway Lights Dance Center</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <span class="mark">BL</span>
+      <span><strong>Broadway Lights Dance Center</strong><small>Family-owned &middot; Gulf Breeze, FL</small></span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#classes">Classes</a>
+      <a href="#programs">Programs</a>
+      <a href="#recital">Recital</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-mag" href="tel:+18509325555">Call (850) 932-5555</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-bg"><img src="img/dance-stage.jpg" alt="Young dancers in red tutus performing on a dark stage under blue spotlights"></div>
+    <div class="wrap hero-content">
+      <span class="kicker">Dance for ages 3 to adult &middot; Gulf Breeze, Florida</span>
+      <h1>Ballet, hip hop, contemporary, <span class="hot">musical theater</span></h1>
+      <p class="sub">Broadway Lights Dance Center is a family-owned dance studio in Gulf Breeze, Florida, with classes for dancers from age 3 all the way to adult.</p>
+      <p class="ratingline"><strong>5.0 stars</strong> from 63 Google reviews</p>
+      <div class="hero-cta">
+        <a class="btn btn-mag" href="tel:+18509325555">Call to ask about classes</a>
+        <a class="btn btn-gold" href="#classes">Explore classes</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-inner">
+      <span>Ballet</span><span>&#9733;</span><span>Hip Hop</span><span>&#9733;</span><span>Contemporary</span><span>&#9733;</span><span>Musical Theater</span><span>&#9733;</span><span>Ballet</span><span>&#9733;</span><span>Hip Hop</span><span>&#9733;</span><span>Contemporary</span><span>&#9733;</span><span>Musical Theater</span><span>&#9733;</span>
+    </div>
+  </div>
+
+  <section class="block" id="classes">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num">01 &middot; Classes</span>
+        <h2>Four styles <span class="gold">to train in</span></h2>
+        <p>Training for young beginners through adults, in ballet, hip hop, contemporary, and musical theater.</p>
+      </div>
+      <div class="class-grid">
+        <article class="class-card">
+          <span class="tag">Ages 3 and up</span>
+          <img src="img/dance-ballet.jpg" alt="Four young girls practicing ballet positions in a bright dance studio">
+          <p class="photocap">Stock photo: young girls in a ballet class.</p>
+          <div class="body">
+            <h3>Ballet</h3>
+            <p>The foundation of it all. Technique, balance, and grace taught step by step, starting with our youngest dancers.</p>
+          </div>
+        </article>
+        <article class="class-card">
+          <span class="tag">High energy</span>
+          <img src="img/dance-hiphop.jpg" alt="Teenagers rehearsing hip hop moves in a mirrored dance studio">
+          <p class="photocap">Stock photo: teens in a hip hop rehearsal.</p>
+          <div class="body">
+            <h3>Hip Hop</h3>
+            <p>Big beats, sharp moves, and real confidence. A fast favorite with dancers who want to move with power.</p>
+          </div>
+        </article>
+        <article class="class-card photo-less">
+          <div class="body">
+            <h3>Contemporary</h3>
+            <p>Fluid, expressive movement that blends ballet technique with modern style. A place to dance what you feel.</p>
+          </div>
+        </article>
+        <article class="class-card photo-less">
+          <div class="body">
+            <h3>Musical Theater</h3>
+            <p>Dance built for the stage. Performance style, character, and showmanship for dancers who love the spotlight.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block prog" id="programs">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num">02 &middot; Programs</span>
+        <h2>How you can train</h2>
+        <p>From first class to competition floor, there is a way to dance here that fits your goals.</p>
+      </div>
+      <div class="prog-list">
+        <div class="prog-item"><h3>Group classes</h3><p>Train alongside other dancers at your level, from age 3 to adult.</p></div>
+        <div class="prog-item"><h3>Private lessons</h3><p>One-on-one coaching focused entirely on your dancing.</p></div>
+        <div class="prog-item"><h3>Workshops</h3><p>Short, focused sessions to sharpen skills and try new styles.</p></div>
+        <div class="prog-item"><h3>Summer camps</h3><p>Keep dancing through the summer with camp programs.</p></div>
+        <div class="prog-item"><h3>Competition team</h3><p>For dancers ready to take their training to the competition stage.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block recital" id="recital">
+    <div class="wrap recital-grid">
+      <div>
+        <img src="img/dance-stage.jpg" alt="Young dancers in red tutus performing on a dark stage under blue spotlights">
+        <p class="caption">Stock photo: young dancers performing in a stage recital.</p>
+      </div>
+      <div>
+        <span class="sec-num">03 &middot; Recital</span>
+        <h2>Your moment in the <span class="gold">spotlight</span></h2>
+        <p>Every year, Broadway Lights dancers take the stage for an annual recital at the Saenger Theatre in Pensacola. It is the night the whole year builds toward.</p>
+        <a class="btn btn-gold" href="tel:+18509325555">Call about this year's recital</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num">04 &middot; In the studio</span>
+        <h2>Life at <span class="gold">Broadway Lights</span></h2>
+        <p>Class time, rehearsal time, and stage time.</p>
+      </div>
+      <div class="gal-grid">
+        <figure>
+          <img src="img/dance-ballet2.jpg" alt="Four small girls in tutus practicing at a ballet barre">
+          <figcaption>Stock photo: young dancers at the barre.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/dance-trio.jpg" alt="Four young dancers performing on a dark stage under purple lighting">
+          <figcaption>Stock photo: young dancers performing under stage lights.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/dance-hiphop.jpg" alt="Teenagers rehearsing hip hop moves in a mirrored dance studio">
+          <figcaption>Stock photo: teens in a hip hop rehearsal.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="schedule" style="padding-top:0">
+    <div class="wrap sched-visit">
+      <div class="panel">
+        <h3>Studio schedule</h3>
+        <div class="sched-row"><span>Monday - Thursday</span><strong>3:00 PM - 8:00 PM</strong></div>
+        <div class="sched-row"><span>Friday</span><strong>9:00 AM - 11:00 AM</strong></div>
+        <div class="sched-row"><span>Saturday</span><strong>9:00 AM - 12:00 PM</strong></div>
+        <div class="sched-row"><span>Sunday</span><strong>No hours published</strong></div>
+      </div>
+      <div class="panel visit-panel" id="visit">
+        <h3>Come see the studio</h3>
+        <address>5668 Gulf Breeze Pkwy Suite B11<br>Gulf Breeze, FL 32563</address>
+        <p>Questions about classes? Call (850) 932-5555 and we will help you find the right fit.</p>
+        <a class="btn btn-mag" href="tel:+18509325555">Call (850) 932-5555</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fnote">This page is a website design concept created by <a href="https://freightfolio.net">Freightfolio</a>. It is a preview only and is not affiliated with or endorsed by the business. All photos shown are labeled stock photos.</div>
+    <div>Broadway Lights Dance Center &middot; Gulf Breeze, FL</div>
+  </div>
+</footer>
+
+</body>
+</html>

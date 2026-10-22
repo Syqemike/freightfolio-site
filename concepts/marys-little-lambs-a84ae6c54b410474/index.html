@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Mary's Little Lambs | Daycare and Preschool in Moss Point, MS</title>
+<meta name="description" content="Mary's Little Lambs is a daycare and preschool in Moss Point, Mississippi. Licensed Mississippi childcare provider. Call (228) 475-7608.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FFFAF1;
+    --cream-deep:#FFF1DC;
+    --sky:#7FB6D9;
+    --sky-deep:#3E7CA6;
+    --sky-pale:#E3F1FA;
+    --sun:#F5B93F;
+    --sun-soft:#FCE9BC;
+    --ink:#3B3A36;
+    --ink-soft:#6E6A61;
+    --white:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:17px}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;line-height:1.18;color:var(--ink)}
+  img{display:block;max-width:100%}
+  a{color:var(--sky-deep)}
+
+  .preview-tag{background:var(--sun-soft);color:#7A5A12;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-align:center;padding:9px 16px}
+  .preview-tag span{border-bottom:2px dotted #7A5A12}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,250,241,.96);backdrop-filter:blur(6px);border-bottom:1px solid #F0E4CE}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+  .brand .lamb{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--sky-pale);font-size:24px}
+  .brand strong{font-family:'Fraunces',serif;font-size:20px;display:block;line-height:1.1}
+  .brand small{font-size:12.5px;color:var(--ink-soft);font-weight:600;letter-spacing:.04em}
+  nav.links{display:flex;gap:4px;flex-wrap:wrap}
+  nav.links a{text-decoration:none;color:var(--ink);font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px}
+  nav.links a:hover{background:var(--sky-pale)}
+  .btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:999px;padding:13px 28px;font-size:16px;border:none;cursor:pointer}
+  .btn-sun{background:var(--sun);color:#4A3200;box-shadow:0 6px 18px rgba(245,185,63,.35)}
+  .btn-sun:hover{background:#EDAC26}
+  .btn-sky{background:var(--sky-deep);color:#fff}
+  .btn-sky:hover{background:#356B8F}
+
+  .hero{padding:64px 0 56px;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .eyebrow{display:inline-block;background:var(--sky-pale);color:var(--sky-deep);font-weight:800;font-size:13.5px;letter-spacing:.08em;text-transform:uppercase;padding:8px 18px;border-radius:999px;margin-bottom:20px}
+  .hero h1{font-size:clamp(40px,5.2vw,60px);margin-bottom:18px}
+  .hero h1 em{font-style:normal;color:var(--sky-deep)}
+  .hero p.lede{font-size:19px;color:var(--ink-soft);margin-bottom:28px;max-width:46ch}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero-photo{position:relative}
+  .hero-photo img{border-radius:48% 52% 55% 45% / 46% 48% 52% 54%;border:10px solid var(--white);box-shadow:0 24px 60px rgba(62,124,166,.18);aspect-ratio:1/1;object-fit:cover;width:100%}
+  .badge-dot{position:absolute;background:var(--white);border-radius:20px;box-shadow:0 12px 30px rgba(59,58,54,.12);padding:12px 18px;font-weight:800;font-size:15px}
+  .badge-dot small{display:block;font-weight:600;color:var(--ink-soft);font-size:12.5px}
+  .badge-1{left:-14px;bottom:60px;transform:rotate(-4deg)}
+  .badge-2{right:-8px;top:44px;transform:rotate(3deg)}
+
+  .strip{background:var(--white);border-top:1px solid #F0E4CE;border-bottom:1px solid #F0E4CE}
+  .strip-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:26px 0}
+  .fact{display:flex;gap:14px;align-items:flex-start}
+  .fact .ic{flex:0 0 46px;width:46px;height:46px;border-radius:16px;background:var(--sky-pale);display:flex;align-items:center;justify-content:center;font-size:22px}
+  .fact strong{display:block;font-size:16px}
+  .fact span{font-size:14.5px;color:var(--ink-soft)}
+
+  section.block{padding:72px 0}
+  .sec-head{max-width:640px;margin-bottom:40px}
+  .sec-head h2{font-size:clamp(30px,3.6vw,42px);margin-bottom:12px}
+  .sec-head p{color:var(--ink-soft);font-size:18px}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:var(--white);border-radius:26px;padding:32px 28px;border:1px solid #F3E8D2;box-shadow:0 10px 30px rgba(59,58,54,.05)}
+  .card .pill{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--sky-deep);background:var(--sky-pale);border-radius:999px;padding:6px 14px;margin-bottom:16px}
+  .card h3{font-size:24px;margin-bottom:10px}
+  .card p{font-size:16px;color:var(--ink-soft)}
+
+  .trust{background:var(--sky-pale)}
+  .trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .trust img{border-radius:28px;box-shadow:0 20px 50px rgba(62,124,166,.16)}
+  .checklist{list-style:none;margin-top:22px;display:grid;gap:16px}
+  .checklist li{display:flex;gap:14px;align-items:flex-start;font-size:17px}
+  .checklist .tick{flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:var(--sun);color:#4A3200;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .caption{font-size:13.5px;color:var(--ink-soft);margin-top:10px;font-style:italic}
+
+  .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .gallery-grid figure{background:var(--white);border-radius:22px;overflow:hidden;border:1px solid #F3E8D2}
+  .gallery-grid img{aspect-ratio:4/3;object-fit:cover;width:100%}
+  .gallery-grid figcaption{padding:14px 20px;font-size:14.5px;color:var(--ink-soft);font-style:italic}
+
+  .hours-visit{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .panel{background:var(--white);border-radius:26px;padding:36px 32px;border:1px solid #F3E8D2}
+  .panel h3{font-size:26px;margin-bottom:14px}
+  .hours-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed #EADFC6;font-size:16.5px}
+  .hours-row:last-of-type{border-bottom:none}
+  .hours-row strong{font-weight:800}
+  .visit-panel{background:var(--sky-deep);color:#fff;border:none}
+  .visit-panel h3{color:#fff}
+  .visit-panel p{color:#DCEAF4;margin-bottom:22px}
+  .visit-panel .btn-sun{margin-bottom:10px}
+
+  footer{background:#2F2E2A;color:#CFC6B4;padding:44px 0;font-size:14.5px}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  footer a{color:#F5B93F}
+  footer .fnote{max-width:56ch;color:#A79D86}
+
+  @media (max-width:860px){
+    .hero-grid,.trust-grid{grid-template-columns:1fr;gap:36px}
+    .cards,.strip-inner,.hours-visit,.gallery-grid{grid-template-columns:1fr}
+    .hero{padding:44px 0}
+    section.block{padding:52px 0}
+    .badge-1{left:6px}.badge-2{right:6px}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-tag"><span>Design preview</span> &nbsp;A website concept for Mary's Little Lambs</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <span class="lamb">&#128017;</span>
+      <span><strong>Mary's Little Lambs</strong><small>Daycare and Preschool &middot; Moss Point, MS</small></span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#programs">Programs</a>
+      <a href="#trust">Why families trust us</a>
+      <a href="#gallery">Photos</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-sun" href="tel:+12284757608">Call (228) 475-7608</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Daycare and preschool in Moss Point, Mississippi</span>
+        <h1>A gentle place for little ones to <em>learn and grow</em></h1>
+        <p class="lede">Mary's Little Lambs cares for children in a warm, friendly setting. We offer full day care, preschool and pre-k, and we accept subsidized child care.</p>
+        <div class="hero-cta">
+          <a class="btn btn-sun" href="tel:+12284757608">Call to ask about enrollment</a>
+          <a class="btn btn-sky" href="#programs">See our programs</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="img/daycare-story.jpg" alt="A caregiver reading a book to three toddlers sitting on a classroom rug">
+        <div class="badge-dot badge-1">4.8 &#9733;<small>26 Google reviews</small></div>
+        <div class="badge-dot badge-2">Licensed<small>Mississippi childcare provider</small></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap strip-inner">
+      <div class="fact">
+        <span class="ic">&#10024;</span>
+        <div><strong>Licensed Mississippi childcare provider</strong><span>Listed by the MS Department of Human Services as a Moss Point licensed subsidy provider.</span></div>
+      </div>
+      <div class="fact">
+        <span class="ic">&#128106;</span>
+        <div><strong>Subsidized child care accepted</strong><span>Ask us about payment options when you call.</span></div>
+      </div>
+      <div class="fact">
+        <span class="ic">&#9200;</span>
+        <div><strong>Weekday hours that fit work schedules</strong><span>Open Monday through Friday, 6:00 AM to 4:30 PM.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="block" id="programs">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Programs for your family</h2>
+        <p>Three simple options, one caring team. Call us and we will help you figure out which fits.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <span class="pill">Full day care</span>
+          <h3>Care through the workday</h3>
+          <p>Supervised care for young children during the day, with play, rest, and learning built into the routine.</p>
+        </div>
+        <div class="card">
+          <span class="pill">Preschool and pre-k</span>
+          <h3>Getting ready for school</h3>
+          <p>Early learning activities that help children build language, numbers, and social skills before kindergarten.</p>
+        </div>
+        <div class="card">
+          <span class="pill">Subsidized child care</span>
+          <h3>Help with the cost</h3>
+          <p>We are a licensed Mississippi subsidy provider, so qualifying families can use state assistance for care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block trust" id="trust">
+    <div class="wrap trust-grid">
+      <div>
+        <img src="img/daycare-toddlers.jpg" alt="Four toddlers sitting together and playing with colorful blocks">
+        <p class="caption">Stock photo: toddlers playing with blocks in a classroom.</p>
+      </div>
+      <div>
+        <span class="eyebrow">Why families trust us</span>
+        <h2 style="font-size:clamp(30px,3.6vw,40px);margin-bottom:14px">Care you can feel good about</h2>
+        <p style="color:var(--ink-soft);font-size:18px">Choosing child care is a big decision. Here is what families in Moss Point can count on from us.</p>
+        <ul class="checklist">
+          <li><span class="tick">&#10003;</span><span><strong>Licensed Mississippi childcare provider.</strong> We are listed by the MS Department of Human Services as a licensed Moss Point subsidy provider.</span></li>
+          <li><span class="tick">&#10003;</span><span><strong>Subsidized child care accepted.</strong> Qualifying families can use state assistance for their child's care.</span></li>
+          <li><span class="tick">&#10003;</span><span><strong>Full day care plus preschool and pre-k.</strong> Care and early learning under one roof.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>A peek inside our days</h2>
+        <p>Art time, story time, and plenty of play. Here is a glimpse of what a day looks like.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure>
+          <img src="img/daycare-art.jpg" alt="Two young girls painting with bright colors at a classroom table">
+          <figcaption>Stock photo: children painting at a classroom art table.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/daycare-classroom.jpg" alt="Three young children laughing together while sitting on a classroom rug">
+          <figcaption>Stock photo: children laughing together during classroom play.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="hours" style="padding-top:0">
+    <div class="wrap hours-visit">
+      <div class="panel">
+        <h3>Hours</h3>
+        <div class="hours-row"><span>Monday</span><strong>6:00 AM - 4:30 PM</strong></div>
+        <div class="hours-row"><span>Tuesday</span><strong>6:00 AM - 4:30 PM</strong></div>
+        <div class="hours-row"><span>Wednesday</span><strong>6:00 AM - 4:30 PM</strong></div>
+        <div class="hours-row"><span>Thursday</span><strong>6:00 AM - 4:30 PM</strong></div>
+        <div class="hours-row"><span>Friday</span><strong>6:00 AM - 4:30 PM</strong></div>
+        <div class="hours-row"><span>Saturday - Sunday</span><strong>No hours published</strong></div>
+      </div>
+      <div class="panel visit-panel" id="visit">
+        <h3>Come meet us</h3>
+        <p>We are at 4612 Short Railroad St in Moss Point. Questions about enrollment? Call (228) 475-7608 and we will be glad to help.</p>
+        <a class="btn btn-sun" href="tel:+12284757608">Call (228) 475-7608</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fnote">This page is a website design concept created by <a href="https://freightfolio.net">Freightfolio</a>. It is a preview only and is not affiliated with or endorsed by the business. All photos shown are labeled stock photos.</div>
+    <div>Mary's Little Lambs &middot; Moss Point, MS</div>
+  </div>
+</footer>
+
+</body>
+</html>
