@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="CC's TAX Service in Slidell, LA: tax preparation for personal and business returns since 1996. Design preview concept.">
+<title>CC's TAX Service | Tax Preparation in Slidell, LA Since 1996</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#1e4d3f; --forest-deep:#143528; --gold:#c9a227; --gold-soft:#e8d189;
+    --cream:#faf7ef; --card:#ffffff; --line:#e3dccb; --ink:#2b2a26; --muted:#6f6a5e;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+  h1,h2,h3{font-family:'Libre Baskerville',serif;color:var(--forest-deep);line-height:1.2}
+  img{max-width:100%;display:block}
+  a{color:var(--forest)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+  .topbar{background:var(--forest-deep);color:#efe9d8;padding:12px 0}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .brand{font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700}
+  .chip{font-size:.76rem;border:1px solid rgba(239,233,216,.45);padding:4px 12px;border-radius:999px;letter-spacing:.08em;text-transform:uppercase;color:#d8d0b8}
+  .btn{display:inline-block;background:var(--gold);color:#241d05;font-weight:700;text-decoration:none;padding:14px 30px;border-radius:4px;letter-spacing:.02em;border:none;cursor:pointer}
+  .btn:hover{background:var(--gold-soft)}
+  .btn.small{padding:9px 20px;font-size:.92rem}
+  .btn.ghost{background:transparent;color:var(--forest-deep);border:2px solid var(--forest-deep)}
+
+  nav.mainnav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+  nav.mainnav .wrap{display:flex;gap:28px;overflow-x:auto;padding:13px 22px}
+  nav.mainnav a{text-decoration:none;color:var(--forest);font-weight:600;font-size:.95rem;white-space:nowrap}
+  nav.mainnav a:hover{color:var(--gold)}
+
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:64px 22px 58px}
+  .since{display:inline-block;background:var(--forest);color:var(--gold-soft);font-weight:700;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;padding:8px 18px;border-radius:4px;margin-bottom:18px}
+  .hero h1{font-size:clamp(2.2rem,4.6vw,3.4rem);margin-bottom:6px}
+  .hero .tagline{font-family:'Libre Baskerville',serif;font-style:italic;font-size:1.25rem;color:var(--forest);margin-bottom:16px}
+  .hero p.lede{font-size:1.08rem;color:var(--muted);margin-bottom:10px;max-width:32rem}
+  .rating-line{font-size:1rem;margin:14px 0 24px}
+  .rating-line strong{color:var(--forest)}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  figure{margin:0}
+  figcaption{font-size:.82rem;color:var(--muted);margin-top:8px;font-style:italic}
+  .hero figure img{border-radius:8px;box-shadow:0 16px 40px rgba(20,53,40,.16)}
+
+  .services{background:var(--forest);color:#e9e2cf;padding:72px 0}
+  .services h2{color:#fff;font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:10px}
+  .services .sub{color:#c9c0a6;max-width:42rem;margin-bottom:36px}
+  .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .svc{background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.4);border-radius:8px;padding:28px}
+  .svc h3{color:var(--gold-soft);font-size:1.35rem;margin-bottom:10px}
+  .svc p{color:#e9e2cf}
+
+  .trust{padding:72px 0}
+  .trust .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+  .trust h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:18px}
+  .trust p{margin-bottom:14px}
+  .trust .years{font-family:'Libre Baskerville',serif;font-size:3.4rem;color:var(--gold);line-height:1;margin:20px 0 6px}
+  .trust .years-cap{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.85rem;color:var(--forest)}
+  .trust figure img{border-radius:8px}
+
+  .hours-visit{padding:0 0 72px}
+  .hours-visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+  .hours-visit h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:18px}
+  .hours{width:100%;border-collapse:collapse;margin-bottom:22px}
+  .hours td{padding:11px 4px;border-bottom:1px solid var(--line)}
+  .hours td:last-child{text-align:right;font-weight:700;color:var(--forest-deep)}
+  .hours-visit address{font-style:normal;font-size:1.08rem;margin-bottom:18px;line-height:1.8}
+  .contact-card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:32px;box-shadow:0 8px 24px rgba(20,53,40,.08)}
+  .contact-card h3{font-size:1.45rem;margin-bottom:10px}
+  .contact-card p{color:var(--muted);margin-bottom:20px}
+  .contact-card figure img{border-radius:8px;margin-top:22px}
+
+  footer{background:var(--forest-deep);color:#b9b09a;padding:36px 0;font-size:.92rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  footer a{color:var(--gold-soft)}
+  .disclosure-note{font-style:italic;max-width:44rem}
+
+  @media(max-width:840px){
+    .hero .wrap,.trust .wrap,.hours-visit .wrap{grid-template-columns:1fr;gap:32px}
+    .hero .wrap{padding:46px 22px 42px}
+    .svc-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="brand">CC's TAX Service</span>
+    <span class="chip">Design preview</span>
+    <a class="btn small" href="tel:+19856430909">Call (985) 643-0909</a>
+  </div>
+</div>
+
+<nav class="mainnav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#services">Services</a>
+    <a href="#trust">Why us</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="since">Serving Slidell since 1996</span>
+      <h1>Tax preparation you can trust.</h1>
+      <p class="tagline">Tax Refund Specialist since 1996</p>
+      <p class="lede">CC's TAX Service prepares personal and business tax returns at 3735 Pontchartrain Dr in Slidell, Louisiana, with electronic filing and traditional mail-in options.</p>
+      <p class="rating-line"><strong>5.0</strong> stars from 14 reviews on its business listing</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+19856430909">Call to book</a>
+        <a class="btn ghost" href="#services">See services</a>
+      </div>
+    </div>
+    <figure>
+      <img src="img/photo-1.jpg" alt="Office desk with tax documents, coins, and folders labeled taxes">
+      <figcaption>Stock photo: tax documents and folders on a desk.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>What we prepare</h2>
+    <p class="sub">Straightforward tax help for individuals and businesses, from a shop that has done this for 30 years.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <h3>Personal returns</h3>
+        <p>Individual income tax preparation with electronic filing or traditional mail-in, whichever you prefer.</p>
+      </div>
+      <div class="svc">
+        <h3>Business returns</h3>
+        <p>Tax preparation for business clients, handled by people who do this every day of tax season.</p>
+      </div>
+      <div class="svc">
+        <h3>Multiple years</h3>
+        <p>Behind on filing? CC's prepares returns for multiple years to help you get caught up.</p>
+      </div>
+      <div class="svc">
+        <h3>Amended returns</h3>
+        <p>Need to correct a return that was already filed? Amended returns are part of the service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust" id="trust">
+  <div class="wrap">
+    <div>
+      <h2>Three decades of tax seasons</h2>
+      <p>CC's TAX Service has been preparing returns in Slidell since 1996. That kind of longevity comes from doing the work right, year after year.</p>
+      <p>Bring your documents in during office hours, or call ahead with questions about what to bring.</p>
+      <p class="years">30</p>
+      <p class="years-cap">Tax seasons in Slidell</p>
+    </div>
+    <figure>
+      <img src="img/photo-4.jpg" alt="Tax professional reviewing a 1040 tax form at a wooden desk">
+      <figcaption>Stock photo: reviewing a tax return.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="hours-visit">
+  <div class="wrap">
+    <div id="visit">
+      <h2>Visit the office</h2>
+      <address>
+        CC's TAX Service<br>
+        3735 Pontchartrain Dr<br>
+        Slidell, LA
+      </address>
+      <table class="hours">
+        <tr><td>Monday - Friday</td><td>9:00 AM - 6:00 PM</td></tr>
+        <tr><td>Saturday</td><td>10:00 AM - 3:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=3735+Pontchartrain+Dr+Slidell+LA" target="_blank" rel="noopener">Get directions on Google Maps</a>
+    </div>
+    <div class="contact-card" id="contact">
+      <h3>Talk to a tax preparer</h3>
+      <p>Questions about your return or what to bring? Call the office.</p>
+      <a class="btn" href="tel:+19856430909">Call (985) 643-0909</a>
+      <figure>
+        <img src="img/photo-2.jpg" alt="Calculator, envelope, and stationery for tax preparation on a white background">
+        <figcaption>Stock photo: tax preparation essentials.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="disclosure-note">This is a website design preview created by Freightfolio, not the business's live website. Photos are labeled stock images, not photos of this business.</p>
+    <p>Concept by <a href="https://freightfolio.net">Freightfolio</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

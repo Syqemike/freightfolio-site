@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Dr. A Peter Pingalore Jr., DC — chiropractic care at 30 Park Ave, Worcester, MA. Design preview concept.">
+<title>Dr. A Peter Pingalore Jr., DC | Chiropractor in Worcester, MA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --slate:#31424f; --slate-deep:#22303b; --teal:#3e7c74; --teal-deep:#2c5d57;
+    --paper:#f7f9f8; --card:#ffffff; --line:#dde5e2; --ink:#26333d; --muted:#5c6e78;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+  h1,h2,h3{font-family:'Newsreader',serif;color:var(--slate-deep);line-height:1.15;font-weight:600}
+  img{max-width:100%;display:block}
+  a{color:var(--teal-deep)}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+
+  .topbar{background:var(--slate-deep);color:#eef3f2;padding:12px 0}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .brand{font-family:'Newsreader',serif;font-size:1.25rem;font-weight:600;letter-spacing:.01em}
+  .brand small{font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;color:#bcd0cb;display:block;letter-spacing:.04em}
+  .chip{font-size:.76rem;border:1px solid rgba(238,243,242,.45);padding:4px 12px;border-radius:999px;letter-spacing:.08em;text-transform:uppercase;color:#dbe7e4}
+  .btn{display:inline-block;background:var(--teal);color:#fff;font-weight:600;text-decoration:none;padding:13px 30px;border-radius:8px;letter-spacing:.01em;border:none;cursor:pointer}
+  .btn:hover{background:var(--teal-deep)}
+  .btn.small{padding:9px 20px;font-size:.92rem}
+  .btn.ghost{background:transparent;color:var(--slate-deep);border:2px solid var(--slate-deep)}
+
+  nav.mainnav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+  nav.mainnav .wrap{display:flex;gap:28px;overflow-x:auto;padding:13px 22px}
+  nav.mainnav a{text-decoration:none;color:var(--slate);font-weight:600;font-size:.95rem;white-space:nowrap}
+  nav.mainnav a:hover{color:var(--teal-deep)}
+
+  .hero{background:linear-gradient(180deg,#ffffff 0%,var(--paper) 100%);border-bottom:1px solid var(--line)}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;padding:66px 22px 60px}
+  .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:16px}
+  .hero h1{font-size:clamp(2.3rem,4.8vw,3.6rem)}
+  .hero p.lede{font-size:1.1rem;margin:18px 0 10px;max-width:32rem;color:var(--muted)}
+  .rating-line{font-size:1rem;margin:14px 0 24px;color:var(--slate)}
+  .rating-line strong{color:var(--teal-deep)}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  figure{margin:0}
+  figcaption{font-size:.82rem;color:var(--muted);margin-top:8px;font-style:italic}
+  .hero figure img{border-radius:12px;box-shadow:0 16px 40px rgba(34,48,59,.14)}
+
+  .about{padding:72px 0}
+  .about .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:start}
+  .about h2{font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:18px}
+  .about p{margin-bottom:14px;color:var(--ink)}
+  .about figure img{border-radius:12px}
+  .quote{background:var(--card);border-left:4px solid var(--teal);padding:22px 26px;border-radius:0 10px 10px 0;margin-top:24px;box-shadow:0 6px 20px rgba(34,48,59,.06)}
+  .quote p{font-family:'Newsreader',serif;font-size:1.25rem;color:var(--slate-deep);margin-bottom:8px}
+  .quote cite{font-style:normal;font-size:.88rem;color:var(--muted)}
+
+  .hours{background:var(--slate);color:#e8efed;padding:72px 0}
+  .hours .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+  .hours h2{color:#fff;font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:16px}
+  .hours p{color:#c3d2cd;margin-bottom:6px}
+  .hours table{width:100%;border-collapse:collapse;background:rgba(255,255,255,.05);border-radius:12px;overflow:hidden}
+  .hours td{padding:12px 20px;border-bottom:1px solid rgba(255,255,255,.1);font-size:1rem}
+  .hours tr:last-child td{border-bottom:none}
+  .hours td:last-child{text-align:right;font-weight:600;color:#fff}
+  .hours figure img{border-radius:12px}
+
+  .visit{padding:72px 0}
+  .visit h2{font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:18px}
+  .visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+  .visit address{font-style:normal;font-size:1.08rem;margin-bottom:18px;line-height:1.8}
+  .visit .maplink{display:inline-block;margin:8px 0 24px}
+  .contact-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px;box-shadow:0 8px 24px rgba(34,48,59,.06)}
+  .contact-card h3{font-size:1.4rem;margin-bottom:10px}
+  .contact-card p{color:var(--muted);margin-bottom:20px}
+  .visit figure img{border-radius:12px;margin-top:26px}
+
+  footer{background:var(--slate-deep);color:#aebfc0;padding:38px 0;font-size:.92rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  footer a{color:#8fd0c4}
+  .disclosure-note{font-style:italic;max-width:44rem}
+
+  @media(max-width:840px){
+    .hero .wrap,.about .wrap,.hours .wrap,.visit .wrap{grid-template-columns:1fr;gap:32px}
+    .hero .wrap{padding:46px 22px 42px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="brand">Dr. A Peter Pingalore Jr., DC<small>Chiropractic care &middot; Worcester, MA</small></span>
+    <span class="chip">Design preview</span>
+    <a class="btn small" href="tel:+15087990768">Call (508) 799-0768</a>
+  </div>
+</div>
+
+<nav class="mainnav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#hours">Hours</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Chiropractor in Worcester, MA</p>
+      <h1>Personal chiropractic care on Park Ave.</h1>
+      <p class="lede">Dr. A Peter Pingalore Jr., DC, sees patients at 30 Park Ave, Suite 4 in Worcester, Massachusetts.</p>
+      <p class="rating-line"><strong>4.9</strong> from 19 Google reviews</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+15087990768">Call to book</a>
+        <a class="btn ghost" href="#visit">Find the office</a>
+      </div>
+    </div>
+    <figure>
+      <img src="img/photo-2.jpg" alt="Chiropractor providing treatment to a patient lying on a treatment table">
+      <figcaption>Stock photo: chiropractic treatment session.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <h2>About Dr. Pingalore</h2>
+      <p>Dr. A Peter Pingalore Jr., DC, is a chiropractor practicing in Worcester, Massachusetts, at 30 Park Ave, Suite 4.</p>
+      <p>His practice is listed in chiropractic and medical directories serving the Worcester area.</p>
+      <div class="quote" id="reviews">
+        <p>&ldquo;Very possibly the best chiropractor of all of Massachusetts!&rdquo;</p>
+        <cite>A WebMD reviewer, on Dr. Pingalore</cite>
+      </div>
+    </div>
+    <figure>
+      <img src="img/photo-3.jpg" alt="Chiropractor consulting with a patient seated on an examination table">
+      <figcaption>Stock photo: chiropractic consultation.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="hours" id="hours">
+  <div class="wrap">
+    <div>
+      <h2>Office hours</h2>
+      <p>Call ahead to confirm appointment availability.</p>
+      <table>
+        <tr><td>Monday</td><td>9:00 AM - 5:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>1:00 PM - 7:30 PM</td></tr>
+        <tr><td>Wednesday</td><td>Closed</td></tr>
+        <tr><td>Thursday</td><td>1:00 PM - 7:30 PM</td></tr>
+        <tr><td>Friday</td><td>9:00 AM - 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td>Closed</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <figure>
+      <img src="img/photo-1.jpg" alt="Therapist providing a relaxing treatment in a calm clinical setting">
+      <figcaption>Stock photo: treatment room session.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div>
+      <h2>Visit the office</h2>
+      <address>
+        Dr. A Peter Pingalore Jr., DC<br>
+        30 Park Ave, Suite 4<br>
+        Worcester, MA 01605
+      </address>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=30+Park+Ave+Suite+4+Worcester+MA+01605" target="_blank" rel="noopener">Get directions on Google Maps</a>
+      <figure>
+        <img src="img/photo-4.jpg" alt="Hands providing therapeutic treatment to a patient's shoulder">
+        <figcaption>Stock photo: hands-on therapeutic treatment.</figcaption>
+      </figure>
+    </div>
+    <div class="contact-card" id="contact">
+      <h3>Book an appointment</h3>
+      <p>Call the office to schedule a visit. Online booking is not available.</p>
+      <a class="btn" href="tel:+15087990768">Call (508) 799-0768</a>
+      <p style="margin-top:18px;margin-bottom:0">Questions? Call (508) 799-0768.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="disclosure-note">This is a website design preview created by Freightfolio, not the business's live website. Photos are labeled stock images, not photos of this practice.</p>
+    <p>Concept by <a href="https://freightfolio.net">Freightfolio</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

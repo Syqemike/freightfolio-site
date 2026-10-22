@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Mid South Veterinary Group in Biloxi, MS: veterinary care on Pass Road. Design preview concept.">
+<title>Mid South Veterinary Group | Veterinarian in Biloxi, MS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sage:#5f7a63; --sage-deep:#42584a; --brown:#4a3826; --cream:#faf6ee;
+    --card:#ffffff; --line:#e6ddcc; --ink:#2f2b24; --muted:#71695a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+  h1,h2,h3{font-family:'Fraunces',serif;color:var(--brown);line-height:1.15}
+  img{max-width:100%;display:block}
+  a{color:var(--sage-deep)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+  .topbar{background:var(--sage-deep);color:#f2eee2;padding:12px 0}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .brand{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700}
+  .chip{font-size:.76rem;border:1px solid rgba(242,238,226,.45);padding:4px 12px;border-radius:999px;letter-spacing:.08em;text-transform:uppercase;color:#d9d2bd}
+  .btn{display:inline-block;background:var(--sage);color:#fff;font-weight:700;text-decoration:none;padding:14px 30px;border-radius:999px;letter-spacing:.02em;border:none;cursor:pointer}
+  .btn:hover{background:var(--sage-deep)}
+  .btn.small{padding:9px 20px;font-size:.92rem}
+  .btn.ghost{background:transparent;color:var(--brown);border:2px solid var(--brown)}
+
+  nav.mainnav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+  nav.mainnav .wrap{display:flex;gap:28px;overflow-x:auto;padding:13px 22px}
+  nav.mainnav a{text-decoration:none;color:var(--brown);font-weight:700;font-size:.95rem;white-space:nowrap}
+  nav.mainnav a:hover{color:var(--sage-deep)}
+
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding:64px 22px 58px}
+  .eyebrow{font-size:.82rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--sage-deep);margin-bottom:16px}
+  .hero h1{font-size:clamp(2.3rem,4.8vw,3.6rem)}
+  .hero p.lede{font-size:1.1rem;margin:18px 0 10px;color:var(--muted);max-width:32rem}
+  .rating-line{font-size:1rem;margin:14px 0 24px}
+  .rating-line strong{color:var(--sage-deep)}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  figure{margin:0}
+  figcaption{font-size:.82rem;color:var(--muted);margin-top:8px;font-style:italic}
+  .hero figure img{border-radius:50% 50% 12px 12px;box-shadow:0 16px 40px rgba(74,56,38,.18);aspect-ratio:1/1.05;object-fit:cover}
+
+  .services{padding:72px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .services h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:10px;text-align:center}
+  .services .sub{color:var(--muted);max-width:40rem;margin:0 auto 40px;text-align:center}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .svc{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:28px;text-align:center}
+  .svc h3{font-size:1.3rem;margin-bottom:8px}
+  .svc p{color:var(--muted);font-size:.98rem}
+
+  .care{padding:72px 0}
+  .care .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+  .care h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:18px}
+  .care p{margin-bottom:14px}
+  .care figure img{border-radius:14px}
+
+  .hours-band{background:var(--sage-deep);color:#f2eee2;padding:72px 0}
+  .hours-band .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+  .hours-band h2{color:#fff;font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:16px}
+  .hours-band p{color:#d9d2bd;margin-bottom:6px}
+  .hours{width:100%;border-collapse:collapse;margin-top:14px}
+  .hours td{padding:11px 4px;border-bottom:1px solid rgba(242,238,226,.18);color:#f2eee2}
+  .hours tr:last-child td{border-bottom:none}
+  .hours td:last-child{text-align:right;font-weight:700;color:#fff}
+  .hours-band figure img{border-radius:14px}
+  .hours-band figcaption{color:#b9b09a}
+
+  .visit{padding:72px 0}
+  .visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+  .visit h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:18px}
+  .visit address{font-style:normal;font-size:1.08rem;margin-bottom:18px;line-height:1.8}
+  .contact-card{background:var(--sage);color:#fff;border-radius:14px;padding:34px}
+  .contact-card h3{color:#fff;font-size:1.55rem;margin-bottom:10px}
+  .contact-card p{color:#e6e0cf;margin-bottom:22px}
+  .contact-card .btn{background:#fff;color:var(--sage-deep)}
+  .contact-card .btn:hover{background:var(--cream)}
+  .visit figure img{border-radius:14px;margin-top:24px}
+
+  footer{background:var(--brown);color:#c9bfa9;padding:36px 0;font-size:.92rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  footer a{color:#a8c4ab}
+  .disclosure-note{font-style:italic;max-width:44rem}
+
+  @media(max-width:840px){
+    .hero .wrap,.care .wrap,.hours-band .wrap,.visit .wrap{grid-template-columns:1fr;gap:32px}
+    .hero .wrap{padding:46px 22px 42px}
+    .svc-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="brand">Mid South Veterinary Group</span>
+    <span class="chip">Design preview</span>
+    <a class="btn small" href="tel:+12283851008">Call (228) 385-1008</a>
+  </div>
+</div>
+
+<nav class="mainnav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#services">Services</a>
+    <a href="#care">Our care</a>
+    <a href="#hours">Hours</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Veterinarian in Biloxi, MS</p>
+      <h1>Good care for the pets you love.</h1>
+      <p class="lede">Mid South Veterinary Group is a veterinary clinic at 2709 Pass Rd in Biloxi, Mississippi, offering everyday pet care for dogs and cats.</p>
+      <p class="rating-line"><strong>5.0</strong> from 25 Google reviews</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+12283851008">Call to book</a>
+        <a class="btn ghost" href="#services">See services</a>
+      </div>
+    </div>
+    <figure>
+      <img src="img/photo-1.jpg" alt="Veterinarian gently embracing a happy dog during a checkup">
+      <figcaption>Stock photo: a vet comforting a dog patient.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="sub">Everyday veterinary care for dogs and cats, all in one neighborhood clinic.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <h3>Vaccinations</h3>
+        <p>Routine vaccinations to keep pets protected year-round.</p>
+      </div>
+      <div class="svc">
+        <h3>Spay and neuter</h3>
+        <p>Spay and neuter procedures performed at the clinic.</p>
+      </div>
+      <div class="svc">
+        <h3>Flea and tick treatment</h3>
+        <p>Flea and tick prevention and treatment for dogs and cats.</p>
+      </div>
+      <div class="svc">
+        <h3>Grooming</h3>
+        <p>Grooming services alongside medical care.</p>
+      </div>
+      <div class="svc">
+        <h3>Emergency services</h3>
+        <p>Emergency care when your pet needs help urgently. Call first: (228) 385-1008.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="care" id="care">
+  <div class="wrap">
+    <div>
+      <h2>A calm visit for your pet</h2>
+      <p>Visits at Mid South Veterinary Group are straightforward: a careful exam, clear answers, and treatment plans that make sense for your pet.</p>
+      <p>The clinic also offers grooming, so routine care and a tidy-up can happen in one trip.</p>
+    </div>
+    <figure>
+      <img src="img/photo-2.jpg" alt="Veterinarians smiling as they examine a small dog in a medical office">
+      <figcaption>Stock photo: vets examining a small dog.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="hours-band" id="hours">
+  <div class="wrap">
+    <div>
+      <h2>Clinic hours</h2>
+      <p>Open six days a week on Pass Road in Biloxi.</p>
+      <table class="hours">
+        <tr><td>Monday - Thursday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Friday</td><td>9:00 AM - 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM - 12:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <figure>
+      <img src="img/photo-3.jpg" alt="Veterinarian examining a dog during a checkup">
+      <figcaption>Stock photo: vet checkup in progress.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div>
+      <h2>Visit the clinic</h2>
+      <address>
+        Mid South Veterinary Group<br>
+        2709 Pass Rd<br>
+        Biloxi, MS 39531
+      </address>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=2709+Pass+Rd+Biloxi+MS+39531" target="_blank" rel="noopener">Get directions on Google Maps</a>
+      <figure>
+        <img src="img/photo-4.jpg" alt="The clinic building at 2709 Pass Rd in Biloxi">
+        <figcaption>Real photo: the clinic building at 2709 Pass Rd, from the business's public listing.</figcaption>
+      </figure>
+    </div>
+    <div class="contact-card" id="contact">
+      <h3>Book a visit</h3>
+      <p>Call the clinic to schedule an appointment for your pet.</p>
+      <a class="btn" href="tel:+12283851008">Call (228) 385-1008</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="disclosure-note">This is a website design preview created by Freightfolio, not the business's live website. Photos are labeled stock images, not photos of this clinic.</p>
+    <p>Concept by <a href="https://freightfolio.net">Freightfolio</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

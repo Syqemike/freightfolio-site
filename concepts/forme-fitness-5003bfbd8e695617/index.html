@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Formé Fitness in Pascagoula, MS: barre, yoga, HIIT, and pilates group classes. Design preview concept.">
+<title>Formé Fitness | Barre, Yoga, HIIT &amp; Pilates in Pascagoula, MS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#141316; --ink-soft:#232227; --paper:#faf8f4; --card:#ffffff;
+    --coral:#ff5a48; --coral-deep:#d63f30; --line:#e8e2d8; --muted:#6b6560;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  h1,h2,h3{font-family:'Oswald',sans-serif;line-height:1.08;text-transform:uppercase;letter-spacing:.02em}
+  img{max-width:100%;display:block}
+  a{color:var(--coral-deep)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+
+  .topbar{background:var(--ink);color:#f4f1ea;padding:14px 0}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .brand{font-family:'Oswald',sans-serif;font-size:1.6rem;font-weight:700;letter-spacing:.04em}
+  .brand span{color:var(--coral)}
+  .chip{font-size:.76rem;border:1px solid rgba(244,241,234,.4);padding:4px 12px;border-radius:999px;letter-spacing:.08em;text-transform:uppercase;color:#cfc9bd}
+  .btn{display:inline-block;background:var(--coral);color:#fff;font-weight:700;text-decoration:none;padding:14px 32px;border-radius:4px;letter-spacing:.04em;text-transform:uppercase;font-size:.95rem;border:none;cursor:pointer}
+  .btn:hover{background:var(--coral-deep)}
+  .btn.small{padding:10px 20px;font-size:.85rem}
+  .btn.dark{background:var(--ink)}
+  .btn.dark:hover{background:var(--ink-soft)}
+
+  nav.mainnav{background:var(--ink-soft);position:sticky;top:0;z-index:50}
+  nav.mainnav .wrap{display:flex;gap:30px;overflow-x:auto;padding:13px 22px}
+  nav.mainnav a{text-decoration:none;color:#e8e2d8;font-weight:600;font-size:.92rem;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+  nav.mainnav a:hover{color:var(--coral)}
+
+  .hero{background:var(--ink);color:#f4f1ea}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;padding:0 22px}
+  .hero-copy{padding:70px 40px 70px 0;display:flex;flex-direction:column;justify-content:center}
+  .eyebrow{font-size:.82rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--coral);margin-bottom:18px}
+  .hero h1{font-size:clamp(2.6rem,5.6vw,4.4rem);color:#fff}
+  .hero h1 span{color:var(--coral)}
+  .hero p.lede{font-size:1.12rem;margin:20px 0 8px;color:#cfc9bd;max-width:32rem}
+  .rating-line{font-size:1rem;margin:12px 0 26px;color:#e8e2d8}
+  .rating-line strong{color:var(--coral)}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero figure{margin:0;min-height:100%}
+  .hero figure img{height:100%;width:100%;object-fit:cover}
+  .hero figcaption{color:#8f887c}
+  figure{margin:0}
+  figcaption{font-size:.82rem;color:var(--muted);margin-top:8px;font-style:italic}
+
+  .classes{padding:76px 0}
+  .classes h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:10px}
+  .classes .sub{color:var(--muted);max-width:40rem;margin-bottom:40px}
+  .class-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+  .class-card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .class-card img{height:230px;width:100%;object-fit:cover}
+  .class-card .body{padding:26px}
+  .class-card h3{font-size:1.5rem;margin-bottom:10px}
+  .class-card h3 .tag{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-deep);display:block;margin-bottom:6px}
+  .class-card p{color:var(--muted)}
+  .class-card .photo-cap{padding:0 26px 22px;font-size:.82rem;color:var(--muted);font-style:italic;margin-top:0}
+
+  .schedule{background:var(--ink);color:#f4f1ea;padding:76px 0}
+  .schedule .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+  .schedule h2{font-size:clamp(2rem,4vw,3rem);color:#fff;margin-bottom:14px}
+  .schedule h2 span{color:var(--coral)}
+  .schedule p{color:#cfc9bd;margin-bottom:22px}
+  .sched-table{width:100%;border-collapse:collapse}
+  .sched-table td{padding:13px 6px;border-bottom:1px solid rgba(244,241,234,.16);font-size:1.02rem}
+  .sched-table tr:last-child td{border-bottom:none}
+  .sched-table td:last-child{text-align:right;font-weight:700;color:#fff}
+  .schedule figure img{border-radius:8px}
+  .schedule figcaption{color:#8f887c}
+
+  .visit{padding:76px 0}
+  .visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+  .visit h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:18px}
+  .visit address{font-style:normal;font-size:1.08rem;margin-bottom:18px;line-height:1.8}
+  .visit figure img{border-radius:8px;margin-top:24px}
+  .contact-card{background:var(--ink);color:#f4f1ea;border-radius:8px;padding:34px}
+  .contact-card h3{font-size:1.6rem;color:#fff;margin-bottom:10px}
+  .contact-card h3 span{color:var(--coral)}
+  .contact-card p{color:#cfc9bd;margin-bottom:22px}
+
+  footer{background:var(--ink);color:#8f887c;padding:36px 0;font-size:.92rem;border-top:1px solid rgba(244,241,234,.12)}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  footer a{color:var(--coral)}
+  .disclosure-note{font-style:italic;max-width:44rem}
+
+  @media(max-width:840px){
+    .hero .wrap,.schedule .wrap,.visit .wrap{grid-template-columns:1fr}
+    .hero-copy{padding:48px 0 40px}
+    .class-grid{grid-template-columns:1fr}
+    .hero figure img{height:300px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="brand">form<span>é</span></span>
+    <span class="chip">Design preview</span>
+    <a class="btn small" href="tel:+12282185569">Call (228) 218-5569</a>
+  </div>
+</div>
+
+<nav class="mainnav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#classes">Classes</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Barre &middot; Yoga &middot; HIIT &middot; Pilates</p>
+      <h1>Train <span>your way</span> in Pascagoula.</h1>
+      <p class="lede">Form&eacute; Fitness is a boutique group-fitness studio at 714 Delmas Ave in Pascagoula, Mississippi, offering barre, yoga, HIIT, and pilates classes for all fitness levels.</p>
+      <p class="rating-line"><strong>4.88</strong> stars from 34 Mindbody ratings</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+12282185569">Call to book</a>
+        <a class="btn dark" href="#classes">See classes</a>
+      </div>
+    </div>
+    <figure>
+      <img src="img/photo-1.jpg" alt="Women practicing at the barre in a bright fitness studio">
+      <figcaption>Stock photo: barre class in session.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="classes" id="classes">
+  <div class="wrap">
+    <h2>Four ways to move</h2>
+    <p class="sub">Group classes for every fitness level, built around strength, flexibility, and overall wellness.</p>
+    <div class="class-grid">
+      <div class="class-card">
+        <img src="img/photo-6.jpg" alt="Two women practicing barre exercises in a bright studio">
+        <div class="body">
+          <h3><span class="tag">Low impact, high burn</span>Barre</h3>
+          <p>Small, controlled movements at the barre that build strength and stability through the legs, glutes, and core.</p>
+        </div>
+        <p class="photo-cap">Stock photo: barre class.</p>
+      </div>
+      <div class="class-card">
+        <img src="img/photo-7.jpg" alt="Group yoga class practicing poses on mats in a bright studio">
+        <div class="body">
+          <h3><span class="tag">Strength and stillness</span>Yoga</h3>
+          <p>Guided yoga sessions focused on flexibility, balance, and breath, open to beginners and experienced students alike.</p>
+        </div>
+        <p class="photo-cap">Stock photo: yoga class.</p>
+      </div>
+      <div class="class-card">
+        <img src="img/photo-4.jpg" alt="Athlete doing a plyometric box jump during a HIIT workout">
+        <div class="body">
+          <h3><span class="tag">Sweat it out</span>HIIT</h3>
+          <p>High-intensity interval training that pushes cardio and power in short, focused bursts.</p>
+        </div>
+        <p class="photo-cap">Stock photo: HIIT training.</p>
+      </div>
+      <div class="class-card">
+        <img src="img/photo-2.jpg" alt="Woman exercising on a pilates reformer machine">
+        <div class="body">
+          <h3><span class="tag">Controlled power</span>Pilates</h3>
+          <p>Reformer-based pilates work that targets deep core strength, posture, and full-body control.</p>
+        </div>
+        <p class="photo-cap">Stock photo: pilates reformer session.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="schedule" id="schedule">
+  <div class="wrap">
+    <div>
+      <h2>Studio <span>hours</span></h2>
+      <p>Classes run during studio hours, Monday through Friday. Call for the current class schedule.</p>
+      <table class="sched-table">
+        <tr><td>Monday</td><td>7:00 AM - 7:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>7:00 AM - 7:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>7:00 AM - 7:00 PM</td></tr>
+        <tr><td>Thursday</td><td>7:00 AM - 7:00 PM</td></tr>
+        <tr><td>Friday</td><td>7:00 AM - 7:00 PM</td></tr>
+      </table>
+      <p style="margin-top:16px;font-size:.92rem">Weekend hours are not published. Call (228) 218-5569 for class times.</p>
+    </div>
+    <figure>
+      <img src="img/photo-5.jpg" alt="Bright pilates studio interior with reformer machines">
+      <figcaption>Stock photo: pilates studio interior.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div>
+      <h2>Find the studio</h2>
+      <address>
+        Form&eacute; Fitness<br>
+        714 Delmas Ave<br>
+        Pascagoula, MS 39567
+      </address>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=714+Delmas+Ave+Pascagoula+MS+39567" target="_blank" rel="noopener">Get directions on Google Maps</a>
+      <figure>
+        <img src="img/photo-3.jpg" alt="Woman stretching at the barre in a bright studio">
+        <figcaption>Stock photo: flexibility training at the barre.</figcaption>
+      </figure>
+    </div>
+    <div class="contact-card" id="contact">
+      <h3>Ready to <span>start?</span></h3>
+      <p>Questions about class times or getting started? Call the studio.</p>
+      <a class="btn" href="tel:+12282185569">Call (228) 218-5569</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="disclosure-note">This is a website design preview created by Freightfolio, not the business's live website. Photos are labeled stock images, not photos of this studio.</p>
+    <p>Concept by <a href="https://freightfolio.net">Freightfolio</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

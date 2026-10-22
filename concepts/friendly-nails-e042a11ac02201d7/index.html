@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Friendly Nails in Worcester, MA: dip powder, acrylic, gel nails, and pedicures. Design preview concept.">
+<title>Friendly Nails | Nail Salon in Worcester, MA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#e2558a; --pink-deep:#c23e70; --plum:#3d2531; --cream:#fff7f3;
+    --peach:#ffe9df; --line:#f3d9d2; --ink:#403038; --muted:#8a7079;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--ink);line-height:1.7}
+  h1,h2,h3{font-family:'Baloo 2',sans-serif;line-height:1.12;color:var(--plum)}
+  img{max-width:100%;display:block}
+  a{color:var(--pink-deep)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  .topbar{background:var(--plum);color:#ffeef4;padding:14px 0}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .brand{font-family:'Baloo 2',sans-serif;font-size:1.5rem;font-weight:800}
+  .brand span{color:var(--pink)}
+  .chip{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid rgba(255,238,244,.4);padding:4px 14px;border-radius:999px;color:#f5b8cd}
+  .btn{display:inline-block;background:var(--pink);color:#fff;font-weight:700;text-decoration:none;padding:15px 34px;border-radius:999px;font-size:1rem}
+  .btn:hover{background:var(--pink-deep)}
+  .btn.small{padding:10px 24px;font-size:.92rem}
+  .btn.ghost{background:transparent;color:var(--plum);border:2px solid var(--plum)}
+
+  nav.mainnav{background:var(--cream);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+  nav.mainnav .wrap{display:flex;gap:30px;overflow-x:auto;padding:14px 24px;justify-content:center}
+  nav.mainnav a{text-decoration:none;color:var(--plum);font-weight:700;font-size:.95rem;white-space:nowrap}
+  nav.mainnav a:hover{color:var(--pink-deep)}
+
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;padding:66px 24px 60px}
+  .eyebrow{font-size:.82rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--pink-deep);margin-bottom:16px}
+  .hero h1{font-size:clamp(2.5rem,5.4vw,4rem);font-weight:800}
+  .hero h1 span{color:var(--pink)}
+  .hero p.lede{font-size:1.12rem;color:var(--muted);margin:18px 0 10px;max-width:32rem}
+  .rating-line{margin:14px 0 26px}
+  .rating-line strong{color:var(--pink-deep)}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  figure{margin:0}
+  figcaption{font-size:.8rem;color:var(--muted);margin-top:8px;font-style:italic}
+  .hero figure img{border-radius:24px;box-shadow:0 16px 40px rgba(226,85,138,.18)}
+
+  .services{background:var(--peach);padding:70px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .services h2{font-size:clamp(1.9rem,3.8vw,2.7rem);text-align:center;margin-bottom:10px}
+  .services .sub{text-align:center;color:var(--muted);max-width:38rem;margin:0 auto 38px}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .svc{background:#fff;border:2px solid var(--line);border-radius:22px;padding:30px;text-align:center}
+  .svc h3{font-size:1.35rem;margin-bottom:8px}
+  .svc p{color:var(--muted);font-size:.97rem}
+
+  .visit-us{padding:70px 0}
+  .visit-us .wrap{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+  .visit-us h2{font-size:clamp(1.9rem,3.8vw,2.7rem);margin-bottom:16px}
+  .visit-us p{color:var(--muted);margin-bottom:14px}
+  .visit-us figure img{border-radius:24px}
+
+  .hours-band{background:var(--plum);color:#ffeef4;padding:70px 0}
+  .hours-band .wrap{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+  .hours-band h2{color:#fff;font-size:clamp(1.9rem,3.8vw,2.7rem);margin-bottom:14px}
+  .hours-band p{color:#d9a3ba;margin-bottom:8px}
+  table{width:100%;border-collapse:collapse;margin-top:12px}
+  td{padding:10px 2px;border-bottom:1px solid rgba(255,238,244,.16);color:#ffeef4}
+  tr:last-child td{border-bottom:none}
+  td:last-child{text-align:right;font-weight:700;color:#fff}
+  .hours-band figure img{border-radius:24px}
+  .hours-band figcaption{color:#d9a3ba}
+
+  .book{padding:70px 0}
+  .book .wrap{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:start}
+  .book h2{font-size:clamp(1.9rem,3.8vw,2.7rem);margin-bottom:14px}
+  address{font-style:normal;line-height:1.9;font-size:1.05rem;margin-bottom:18px}
+  .contact-card{background:var(--pink);color:#fff;border-radius:26px;padding:36px}
+  .contact-card h3{color:#fff;font-size:1.6rem;margin-bottom:10px}
+  .contact-card p{color:#ffe3ed;margin-bottom:24px}
+  .contact-card .btn{background:#fff;color:var(--pink-deep)}
+  .contact-card .btn:hover{background:var(--cream)}
+  .book figure img{border-radius:24px;margin-top:24px}
+
+  footer{background:var(--plum);color:#d9a3ba;padding:36px 0;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  footer a{color:var(--pink)}
+  .disclosure-note{font-style:italic;max-width:44rem}
+
+  @media(max-width:840px){
+    .hero .wrap,.visit-us .wrap,.hours-band .wrap,.book .wrap{grid-template-columns:1fr;gap:34px}
+    .svc-grid{grid-template-columns:1fr}
+    nav.mainnav .wrap{justify-content:flex-start}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="brand"><span>Friendly</span> Nails</span>
+    <span class="chip">Design preview</span>
+    <a class="btn small" href="tel:+15087550200">Call (508) 755-0200</a>
+  </div>
+</div>
+
+<nav class="mainnav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#services">Services</a>
+    <a href="#visit">The shop</a>
+    <a href="#hours">Hours</a>
+    <a href="#book">Book</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Nail salon, Worcester MA</p>
+      <h1>Great nails, <span>zero fuss.</span></h1>
+      <p class="lede">Friendly Nails is a nail salon at 289 Main St in Worcester, Massachusetts, doing dip powder, acrylic, and gel nails plus pedicures. Clean shop, quick service, friendly by name.</p>
+      <p class="rating-line"><strong>4.5</strong> from 23 Google reviews</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+15087550200">Call to book</a>
+        <a class="btn ghost" href="#services">See services</a>
+      </div>
+    </div>
+    <figure>
+      <img src="img/photo-1.jpg" alt="Manicurist filing a client's nails in a salon">
+      <figcaption>Stock photo: nail filing in progress.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="sub">Dip, acrylic, gel, and pedicures, done right.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <h3>Dip powder nails</h3>
+        <p>Dip powder manicures, a popular pick for long-lasting color.</p>
+      </div>
+      <div class="svc">
+        <h3>Acrylic nails</h3>
+        <p>Acrylic nails and enhancements for length and shape.</p>
+      </div>
+      <div class="svc">
+        <h3>Gel nails</h3>
+        <p>Gel manicures and gel nail extensions with a glossy finish.</p>
+      </div>
+      <div class="svc">
+        <h3>Pedicures</h3>
+        <p>Full pedicure service to keep feet looking their best.</p>
+      </div>
+      <div class="svc">
+        <h3>Call for pricing</h3>
+        <p>Prices vary by service. Call (508) 755-0200 for a quote.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit-us" id="visit">
+  <div class="wrap">
+    <figure>
+      <img src="img/photo-2.jpg" alt="Nail technician sculpting acrylic on a client's nail">
+      <figcaption>Stock photo: acrylic application.</figcaption>
+    </figure>
+    <div>
+      <h2>Settle in and relax</h2>
+      <p>Friendly Nails keeps things simple: a clean shop, skilled technicians, and a relaxed visit from the moment you sit down.</p>
+      <p>Reviews mention fast, clean service, so booking ahead is never a chore.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hours-band" id="hours">
+  <div class="wrap">
+    <div>
+      <h2>Hours</h2>
+      <p>Open six days a week in downtown Worcester.</p>
+      <table>
+        <tr><td>Monday</td><td>10:00 AM - 7:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>10:00 AM - 6:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>10:00 AM - 7:00 PM</td></tr>
+        <tr><td>Thursday</td><td>10:00 AM - 7:00 PM</td></tr>
+        <tr><td>Friday</td><td>10:00 AM - 7:00 PM</td></tr>
+        <tr><td>Saturday</td><td>9:00 AM - 6:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <figure>
+      <img src="img/photo-3.jpg" alt="Manicure session with red nail polish in progress">
+      <figcaption>Stock photo: red polish manicure.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Visit us</h2>
+      <address>
+        Friendly Nails<br>
+        289 Main St<br>
+        Worcester, MA 01608
+      </address>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=289+Main+St+Worcester+MA" target="_blank" rel="noopener">Get directions on Google Maps</a>
+      <figure>
+        <img src="img/photo-4.jpg" alt="Manicurist applying nail polish during a salon treatment">
+        <figcaption>Stock photo: polish application.</figcaption>
+      </figure>
+    </div>
+    <div class="contact-card">
+      <h3>Book your nails</h3>
+      <p>Call the salon to book your appointment.</p>
+      <a class="btn" href="tel:+15087550200">Call (508) 755-0200</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="disclosure-note">This is a website design preview created by Freightfolio, not the business's live website. Photos are labeled stock images, not photos of this salon.</p>
+    <p>Concept by <a href="https://freightfolio.net">Freightfolio</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
