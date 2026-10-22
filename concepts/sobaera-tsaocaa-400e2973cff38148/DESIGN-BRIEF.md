@@ -1,0 +1,4 @@
+# DESIGN BRIEF — SobaEra x Tsaocaa (Erie, PA Asian fusion)
+Concept: NEON NOODLE BAR — near-black + lime + red, Archivo Black condensed uppercase + Inter body. High-energy, brand line "Redefining Asian Cool."
+Sections: hero (4.7/209 Google rating, "Erie, PA · Asian fusion" pill) with ramen bowl photo; marquee strip (ramen, bubble tea, pho, dim sum, Korean bowls); menu grid (ramen bar: tonkotsu/seafood/spicy miso/tofu/pho; plates: dim sum, Korean chicken, galbi, dessert; bubble tea; good to know: dine-in/takeout, rewards program, robot cat servers); light "Redefining Asian Cool" band (Erie's Choice 2026 Top-5 finalist, 4 categories) + ramen photo; gallery of 4; hours (Mon 11-8:30, Tue closed, Wed-Thu 11-8:30, Fri-Sat 11-9:30, Sun 12-8:30)/location cards. "Call for takeout" tel:+18143151768.
+All photos labeled stock (Pexels). No invented dishes beyond research list.

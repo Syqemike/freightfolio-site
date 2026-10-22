@@ -1,0 +1,4 @@
+# DESIGN BRIEF — J R Diner (Syracuse, NY vintage diner)
+Concept: VINTAGE DINER — cherry red + cream + chrome teal, Bree Serif retro type, checkerboard strip, hard-shadow retro buttons, menu-board panel with dashed dividers.
+Sections: hero (4.9/33 Google rating, retro buttons) with diner-chair photo; daily specials band; two-column menu board (breakfast: Western/ham & cheese/Greek omelets, Italian toast; Greek: gyros/specialties; lunch: burgers, fried haddock; takeout); teal story band ("1930s classic," Syracuse.com Diners of CNY 2026) with gallery of 3 (facade, hotdog+fries+milkshake, neon sign — deliberately no other-business signage); hours (Tue-Fri 7:30-1:30, Sat 6:30-12, Sun-Mon closed)/location cards. CTA "Call for Takeout." tel:+13154722267.
+All photos labeled stock (Pexels). Fixed: jukebox/cash line removed (not verified).

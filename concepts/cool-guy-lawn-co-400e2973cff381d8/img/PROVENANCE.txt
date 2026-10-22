@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 3999647: Free Red lawn mower cutting grass in a green garden with visible cut path. Ideal for gardening themes. Stock Photo
+  page: https://www.pexels.com/photo/red-lawn-mower-on-grass-3999647/
+  file: https://images.pexels.com/photos/3999647/pexels-photo-3999647.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 6728925: Free Close-up of a person mowing the lawn with a gas lawn mower on a sunny summer day. Stock Photo
+  page: https://www.pexels.com/photo/a-person-cutting-grass-with-a-lawn-mower-6728925/
+  file: https://images.pexels.com/photos/6728925/pexels-photo-6728925.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 4162011: Free A person operating a lawn mower on green grass, featuring gardening tools and lush foliage. Stock Photo
+  page: https://www.pexels.com/photo/lawn-mower-on-grass-4162011/
+  file: https://images.pexels.com/photos/4162011/pexels-photo-4162011.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 16550662: Free Man using a riding mower to cut grass in a lush, green lawn during a sunny summer day. Stock Photo
+  page: https://www.pexels.com/photo/man-driving-a-riding-mower-16550662/
+  file: https://images.pexels.com/photos/16550662/pexels-photo-16550662.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 11364122: Free A person using a lawn mower to trim grass in a sunny garden. Stock Photo
+  page: https://www.pexels.com/photo/person-using-lawn-mower-11364122/
+  file: https://images.pexels.com/photos/11364122/pexels-photo-11364122.jpeg?auto=compress&cs=tinysrgb&w=1260

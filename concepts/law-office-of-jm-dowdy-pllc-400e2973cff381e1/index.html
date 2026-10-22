@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Law Office of JM Dowdy PLLC | Memphis, TN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--char:#23262b;--char2:#16181c;--bronze:#a07c3e;--bronze2:#8a6a32;--ivory:#faf7ef;--ink:#2c2b27;--mut:#6b655a;--line:#d9d0b8;--card:#fffdf6}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.65}
+  .disclosure{background:var(--char2);color:#8f8b80;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px}
+  .disclosure a{color:var(--bronze)}
+  header.site{background:rgba(250,247,239,.96);backdrop-filter:blur(6px);position:sticky;top:0;z-index:50;
+    border-bottom:2px solid var(--bronze)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:24px;color:var(--char);text-decoration:none}
+  .brand span{color:var(--bronze2)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--bronze2)}
+  .btn{display:inline-block;background:var(--bronze);color:#fff;font-weight:600;text-decoration:none;
+    padding:13px 30px;letter-spacing:.06em;border-radius:2px;transition:background .15s ease}
+  .btn:hover{background:var(--bronze2)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{background:var(--char);color:#f2ecdd;position:relative;overflow:hidden}
+  .hero-inner{max-width:1140px;margin:0 auto;padding:72px 22px;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+  .rule{width:64px;height:3px;background:var(--bronze);margin-bottom:18px}
+  .kicker{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze);font-weight:600;margin-bottom:14px}
+  h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.4vw,66px);line-height:1.05;font-weight:600;margin-bottom:14px}
+  .lede{font-size:18px;color:#c9c2b0;max-width:32em;margin-bottom:12px}
+  .rating{display:inline-block;border:1px solid var(--bronze);padding:10px 20px;margin:12px 0 22px;font-weight:500;color:#f2ecdd}
+  .rating .stars{color:var(--bronze);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-photo{border:1px solid var(--bronze);padding:10px;background:#1c1f24}
+  .hero-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .cap{font-size:12px;color:#8f8b80;padding:8px 4px 0;letter-spacing:.04em}
+  section{padding:66px 0}
+  .sec-head{max-width:660px;margin-bottom:34px}
+  .sec-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4.4vw,50px);color:var(--char);margin-bottom:10px}
+  .sec-head p{font-size:17px;color:var(--mut)}
+  .practice{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--bronze);padding:32px}
+  .pcard h3{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--char);margin-bottom:8px}
+  .pcard p{font-size:16px;color:var(--mut)}
+  .pcard ul{list-style:none;margin-top:14px}
+  .pcard li{padding:7px 0 7px 24px;position:relative;font-size:15px;color:var(--ink)}
+  .pcard li::before{content:"\25AA";position:absolute;left:0;color:var(--bronze);font-size:11px;top:13px}
+  .approach{background:var(--char);color:#ece5d3}
+  .approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .approach h2{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4vw,46px);margin-bottom:12px}
+  .approach h2 span{color:var(--bronze)}
+  .approach p{font-size:17px;color:#c9c2b0;margin-bottom:12px}
+  .approach figure img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--bronze)}
+  .approach .cap{color:#8f8b80}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+  .gallery figure{background:var(--card);border:1px solid var(--line)}
+  .gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .gallery .cap{padding:8px 12px;color:#a1937f}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .vcard{background:var(--card);border:1px solid var(--line);padding:30px}
+  .vcard h3{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--char);margin-bottom:12px}
+  .hours-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dotted var(--line);font-size:16px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:var(--bronze2);font-weight:600}
+  .vcard .btn{color:#fff}
+  .fine{font-size:13px;color:#a1937f;margin-top:10px}
+  .cta-band{background:var(--bronze);text-align:center;padding:60px 0;color:#fff}
+  .cta-band h2{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4.6vw,50px);margin-bottom:10px}
+  .cta-band p{font-size:18px;color:#fdf6e4;margin-bottom:24px}
+  .cta-band .btn{background:#fff;color:var(--bronze2)}
+  footer{background:var(--char2);color:#8f8b80;padding:36px 0;font-size:14px}
+  footer a{color:var(--bronze)}
+  @media(max-width:900px){
+    .hero-inner,.practice,.approach-grid,.visit{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the law office's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Law Office of <span>JM Dowdy</span> PLLC</a>
+    <ul class="navlinks">
+      <li><a href="#practice">Practice</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#visit">Contact</a></li>
+    </ul>
+    <a class="btn" href="tel:+19015239577">Call (901) 523-9577</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="rule"></div>
+        <p class="kicker">Criminal &amp; Civil Law · Memphis, TN</p>
+        <h1>Counsel you can stand beside.</h1>
+        <p class="lede">The Law Office of JM Dowdy is a Memphis practice handling criminal and civil matters, steps from the downtown courts.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 4.8 from 11 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+19015239577">Call the Office</a>
+          <a class="btn" href="#practice" style="background:transparent;border:1px solid var(--bronze);color:#f2ecdd">Practice Areas</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/photo-1.jpg" alt="Stock photo: courthouse columns">
+        <figcaption class="cap">Stock photo: courthouse columns</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section id="practice">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="rule"></div>
+        <h2>Practice areas</h2>
+        <p>A focused practice covering the two areas where clients need representation most.</p>
+      </div>
+      <div class="practice">
+        <div class="pcard">
+          <h3>Criminal law</h3>
+          <p>Defense for criminal charges in the Memphis courts. Direct representation from your first call through resolution.</p>
+          <ul>
+            <li>Criminal defense</li>
+            <li>Court representation downtown</li>
+          </ul>
+        </div>
+        <div class="pcard">
+          <h3>Civil law</h3>
+          <p>Representation in civil disputes and litigation. Straightforward counsel on where you stand and what comes next.</p>
+          <ul>
+            <li>Civil litigation</li>
+            <li>Dispute counsel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" class="approach">
+    <div class="wrap approach-grid">
+      <div>
+        <div class="rule"></div>
+        <h2>A downtown office, <span>a personal practice.</span></h2>
+        <p>Located at 200 Poplar Avenue in downtown Memphis, near the courts where your matter will be heard. A solo and small-firm practice means you work directly with the attorney on your case.</p>
+        <p>Every matter starts with a conversation. Call during office hours to discuss yours.</p>
+        <p style="margin-top:16px"><a class="btn" href="tel:+19015239577">Call (901) 523-9577</a></p>
+      </div>
+      <figure>
+        <img src="img/photo-2.jpg" alt="Stock photo: law office study with books and gavel">
+        <figcaption class="cap">Stock photo: law office study</figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <div class="gallery">
+        <figure><img src="img/photo-3.jpg" alt="Stock photo: courthouse columns in golden light"><figcaption class="cap">Stock photo: courthouse columns</figcaption></figure>
+        <figure><img src="img/photo-4.jpg" alt="Stock photo: Lady Justice statue"><figcaption class="cap">Stock photo: Lady Justice statue</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: federal courthouse in the snow"><figcaption class="cap">Stock photo: federal courthouse</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="rule"></div>
+        <h2>Contact the office</h2>
+        <p>Call during office hours to discuss your matter.</p>
+      </div>
+      <div class="visit">
+        <div class="vcard">
+          <h3>Office hours</h3>
+          <div class="hours-row"><span>Monday - Friday</span><strong>9:00 AM - 5:00 PM</strong></div>
+          <div class="hours-row"><span>Saturday - Sunday</span><strong>Closed</strong></div>
+          <p class="fine">Hours as listed publicly.</p>
+        </div>
+        <div class="vcard">
+          <h3>Office</h3>
+          <p><strong>Law Office of JM Dowdy PLLC</strong><br>200 Poplar Ave<br>Memphis, TN</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+19015239577">(901) 523-9577</a></p>
+          <p style="margin-top:14px"><a class="btn" href="tel:+19015239577">Call the Office</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Your case deserves a conversation.</h2>
+      <p>Call the office during business hours.</p>
+      <a class="btn" href="tel:+19015239577">Call (901) 523-9577</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for the Law Office of JM Dowdy PLLC. It is not affiliated with or endorsed by the office. Photos are stock photos, not photos of the office. This page is not legal advice.</p>
+  </div>
+</footer>
+</body>
+</html>

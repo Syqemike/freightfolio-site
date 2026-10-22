@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 30948318: Free Bright interior of a cozy coffee shop with pastries and coffee display. Stock Photo
+  page: https://www.pexels.com/photo/cozy-indoor-coffee-shop-interior-with-display-30948318/
+  file: https://images.pexels.com/photos/30948318/pexels-photo-30948318.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 38583473: Free Delicious assortment of croissants, muffins, and pastries in a bakery display case. Stock Photo
+  page: https://www.pexels.com/photo/assorted-bakery-pastries-on-display-38583473/
+  file: https://images.pexels.com/photos/38583473/pexels-photo-38583473.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 1995010: Free Inviting indoor scene of a bakery cafe with pastries and seating. Stock Photo
+  page: https://www.pexels.com/photo/coffee-bar-1995010/
+  file: https://images.pexels.com/photos/1995010/pexels-photo-1995010.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 29517897: Free Delicious assortment of cakes and desserts displayed in a bakery case for customers. Stock Photo
+  page: https://www.pexels.com/photo/variety-of-desserts-displayed-in-bakery-case-29517897/
+  file: https://images.pexels.com/photos/29517897/pexels-photo-29517897.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 35228372: Free Inviting cake shop display with various pastries and an open sign, perfect for dessert lovers. Stock Photo
+  page: https://www.pexels.com/photo/charming-cake-shop-display-with-open-sign-35228372/
+  file: https://images.pexels.com/photos/35228372/pexels-photo-35228372.jpeg?auto=compress&cs=tinysrgb&w=1260

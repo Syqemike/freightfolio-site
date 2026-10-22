@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Exact Taxes Inc | Tax Preparation · Memphis, TN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--green:#1e4636;--green2:#122b21;--gold:#b98f3e;--paper:#fbf9f3;--ink:#2b2a24;--mut:#6f675a;--line:#ddd2b8;--card:#fffdf7}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Public Sans',sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+  .disclosure{background:var(--green2);color:#9ab3a4;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px}
+  .disclosure a{color:var(--gold)}
+  header.site{background:rgba(251,249,243,.96);backdrop-filter:blur(6px);position:sticky;top:0;z-index:50;
+    border-bottom:3px double var(--gold)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'Libre Caslon Text',serif;font-weight:700;font-size:26px;color:var(--green);text-decoration:none}
+  .brand span{color:var(--gold)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--green)}
+  .btn{display:inline-block;background:var(--green);color:#fff;font-weight:700;text-decoration:none;
+    padding:13px 30px;letter-spacing:.04em;border-radius:4px;transition:background .15s ease}
+  .btn:hover{background:var(--green2)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{padding:66px 0 0}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .ledger-label{font-family:'Libre Caslon Text',serif;font-style:italic;color:var(--gold);font-size:17px;margin-bottom:8px}
+  h1{font-family:'Libre Caslon Text',serif;font-size:clamp(38px,5.2vw,62px);line-height:1.08;color:var(--green);margin-bottom:14px}
+  .lede{font-size:18px;color:var(--mut);max-width:32em;margin-bottom:12px}
+  .rating{display:inline-flex;align-items:center;gap:10px;background:var(--card);border:2px solid var(--gold);
+    padding:10px 20px;margin:12px 0 20px;font-weight:700}
+  .rating .stars{color:var(--gold);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-photo{border:1px solid var(--line);padding:12px;background:var(--card);box-shadow:0 14px 34px rgba(30,70,54,.12)}
+  .hero-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .cap{font-size:12px;color:#a1937f;padding:8px 4px 0;letter-spacing:.04em}
+  section{padding:64px 0}
+  .sec-head{max-width:660px;margin-bottom:34px}
+  .sec-head h2{font-family:'Libre Caslon Text',serif;font-size:clamp(30px,4.4vw,48px);color:var(--green);margin-bottom:10px}
+  .sec-head p{font-size:17px;color:var(--mut)}
+  .ledger{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:2px solid var(--green)}
+  .lrow{border-bottom:1px solid var(--line);padding:26px 30px;background:var(--card)}
+  .lrow:nth-child(odd){border-right:1px solid var(--line)}
+  .lrow h3{font-family:'Libre Caslon Text',serif;font-size:24px;color:var(--green);margin-bottom:6px}
+  .lrow p{font-size:15px;color:var(--mut)}
+  .lrow .num{font-family:'Libre Caslon Text',serif;font-style:italic;color:var(--gold);font-size:15px;display:block;margin-bottom:6px}
+  .why{background:var(--green);color:#efe9d8}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .why h2{font-family:'Libre Caslon Text',serif;font-size:clamp(30px,4vw,46px);margin-bottom:12px}
+  .why h2 span{color:var(--gold)}
+  .why p{font-size:17px;color:#c8d4c5;margin-bottom:12px}
+  .why figure img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;border:2px solid var(--gold)}
+  .why .cap{color:#8aa393}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+  .gallery figure{background:var(--card);border:1px solid var(--line);padding:10px}
+  .gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .gallery .cap{padding:8px 4px;color:#a1937f}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .vcard{background:var(--card);border:1px solid var(--line);padding:30px;border-top:4px solid var(--gold)}
+  .vcard h3{font-family:'Libre Caslon Text',serif;font-size:26px;color:var(--green);margin-bottom:12px}
+  .vcard p{font-size:16px}
+  .vcard a{color:var(--green);font-weight:700}
+  .vcard .btn{color:#fff}
+  .fine{font-size:13px;color:#a1937f;margin-top:10px}
+  .cta-band{background:var(--green);text-align:center;padding:60px 0;color:#fff}
+  .cta-band h2{font-family:'Libre Caslon Text',serif;font-size:clamp(30px,4.6vw,50px);margin-bottom:10px}
+  .cta-band h2 span{color:var(--gold)}
+  .cta-band p{font-size:18px;color:#dfe8dc;margin-bottom:24px}
+  .cta-band .btn{background:var(--gold);color:#fff}
+  footer{background:var(--green2);color:#8aa393;padding:36px 0;font-size:14px}
+  footer a{color:var(--gold)}
+  @media(max-width:900px){
+    .hero-grid,.why-grid,.visit{grid-template-columns:1fr}
+    .ledger{grid-template-columns:1fr}
+    .lrow:nth-child(odd){border-right:none}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the firm's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Exact <span>Taxes</span> Inc</a>
+    <ul class="navlinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Exact</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn" href="tel:+19019492160">Call (901) 949-2160</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="ledger-label">Tax preparation · Memphis, TN</p>
+        <h1>Every dollar accounted for.</h1>
+        <p class="lede">Exact Taxes Inc is a Memphis tax preparation firm. W-2 filings, self-employment returns, education credits, and credit consultation, handled with care.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 5.0 from 13 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+19019492160">Call for Hours</a>
+          <a class="btn" href="#services" style="background:transparent;border:2px solid var(--green);color:var(--green)">Services</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/photo-1.jpg" alt="Stock photo: Form 1040 with calculator">
+        <figcaption class="cap">Stock photo: tax forms and calculator</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>What we prepare</h2>
+        <p>Individual tax work, done right the first time.</p>
+      </div>
+      <div class="ledger">
+        <div class="lrow"><span class="num">01</span><h3>W-2 tax preparation</h3><p>Full preparation and filing for employees with wage income.</p></div>
+        <div class="lrow"><span class="num">02</span><h3>Self-employment returns</h3><p>Returns for freelancers and the self-employed, with deductible expenses handled.</p></div>
+        <div class="lrow"><span class="num">03</span><h3>Education credits</h3><p>Student and education-related credits claimed correctly.</p></div>
+        <div class="lrow"><span class="num">04</span><h3>Credit consultation</h3><p>Guidance on your credit picture alongside your tax work.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="why">
+    <div class="wrap why-grid">
+      <div>
+        <h2>Accuracy is <span>the whole point.</span></h2>
+        <p>A 5.0 rating across 13 Google reviews. Clients come back because the numbers are right and the process is painless.</p>
+        <p>Located downtown on North 2nd Street. Call for current hours and seasonal availability.</p>
+        <p style="margin-top:16px"><a class="btn" href="tel:+19019492160" style="background:var(--gold)">Call (901) 949-2160</a></p>
+      </div>
+      <figure>
+        <img src="img/photo-2.jpg" alt="Stock photo: calculator on tax forms with note">
+        <figcaption class="cap">Stock photo: tax forms with calculator</figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <div class="gallery">
+        <figure><img src="img/photo-3.jpg" alt="Stock photo: tax forms with percent sign"><figcaption class="cap">Stock photo: tax forms</figcaption></figure>
+        <figure><img src="img/photo-4.jpg" alt="Stock photo: magnifier on tax forms"><figcaption class="cap">Stock photo: reviewing tax forms</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: tax preparation flat lay"><figcaption class="cap">Stock photo: tax preparation</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Visit the office</h2>
+        <p>Downtown Memphis. Call ahead for hours.</p>
+      </div>
+      <div class="visit">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <p>Hours are not published online. <a href="tel:+19019492160">Call for current hours</a> and seasonal availability.</p>
+          <p class="fine">Tax season hours may extend beyond the regular schedule.</p>
+        </div>
+        <div class="vcard">
+          <h3>Office</h3>
+          <p><strong>Exact Taxes Inc</strong><br>10 N 2nd St, Suite 103<br>Memphis, TN</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+19019492160">(901) 949-2160</a></p>
+          <p style="margin-top:14px"><a class="btn" href="tel:+19019492160">Call the Office</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Tax season is <span>closer</span> than you think.</h2>
+      <p>Call and get your return in the right hands early.</p>
+      <a class="btn" href="tel:+19019492160">Call (901) 949-2160</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Exact Taxes Inc. It is not affiliated with or endorsed by the firm. Photos are stock photos, not photos of the firm. This page is not tax advice.</p>
+  </div>
+</footer>
+</body>
+</html>

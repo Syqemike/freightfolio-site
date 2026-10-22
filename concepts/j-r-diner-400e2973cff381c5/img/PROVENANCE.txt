@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 26977194: Free Red and chrome diner chairs and table capturing classic retro style in an indoor setting. Stock Photo
+  page: https://www.pexels.com/photo/a-red-and-white-striped-bar-stool-with-a-table-26977194/
+  file: https://images.pexels.com/photos/26977194/pexels-photo-26977194.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 6088381: Free Vintage diner with neon signs and reflections on a sunny day in an urban setting. Stock Photo
+  page: https://www.pexels.com/photo/black-signage-on-top-of-stainless-roof-6088381/
+  file: https://images.pexels.com/photos/6088381/pexels-photo-6088381.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 1601775: Free A lively retro diner bustling with people, neon lights, and classic car decor, set at night. Stock Photo
+  page: https://www.pexels.com/photo/people-sitting-near-tables-1601775/
+  file: https://images.pexels.com/photos/1601775/pexels-photo-1601775.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 5093841: Free Hotdog with fries and milkshake adorned with an American flag in a vintage diner setting. Stock Photo
+  page: https://www.pexels.com/photo/a-set-of-hotdog-sandwich-with-frias-and-shake-5093841/
+  file: https://images.pexels.com/photos/5093841/pexels-photo-5093841.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 15205255: Free Bright neon diner sign glowing against dark tiled wall, evoking a vintage retro vibe. Stock Photo
+  page: https://www.pexels.com/photo/a-diner-neon-signage-15205255/
+  file: https://images.pexels.com/photos/15205255/pexels-photo-15205255.jpeg?auto=compress&cs=tinysrgb&w=1260

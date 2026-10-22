@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Fancy Nails | Nail Salon · Knoxville, TN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--teal:#0f5f5c;--teal2:#0a4543;--coral:#f08a6d;--sand:#f6efe2;--ink:#2a2723;--mut:#6b6357;--line:#ddd2bd;--card:#fffdf7}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'DM Sans',sans-serif;background:var(--sand);color:var(--ink);line-height:1.65}
+  .disclosure{background:var(--teal2);color:#b7d4d1;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px}
+  .disclosure a{color:var(--coral)}
+  header.site{background:rgba(246,239,226,.95);backdrop-filter:blur(6px);position:sticky;top:0;z-index:50;
+    border-bottom:1px solid var(--line)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'DM Serif Display',serif;font-size:28px;color:var(--teal);text-decoration:none}
+  .brand span{color:var(--coral)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--teal)}
+  .btn{display:inline-block;background:var(--coral);color:#fff;font-weight:700;text-decoration:none;
+    padding:13px 30px;letter-spacing:.04em;border-radius:6px;transition:background .15s ease}
+  .btn:hover{background:#d97555}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{padding:60px 0 0}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .kicker{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:14px}
+  h1{font-family:'DM Serif Display',serif;font-size:clamp(40px,5.6vw,68px);line-height:1.05;color:var(--teal);margin-bottom:14px}
+  .lede{font-size:18px;color:var(--mut);max-width:32em;margin-bottom:12px}
+  .rating{display:inline-flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);
+    border-radius:8px;padding:10px 20px;margin:12px 0 20px;font-weight:700}
+  .rating .stars{color:var(--coral);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-photo{border-radius:0 80px 0 80px;overflow:hidden;border:6px solid #fff;box-shadow:0 18px 40px rgba(15,95,92,.15)}
+  .hero-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+  .cap{font-size:12px;color:#a1937f;padding:8px 4px 0;letter-spacing:.04em}
+  .note-band{background:var(--teal);color:#fff;text-align:center;padding:20px 16px}
+  .note-band p{font-size:16px}
+  .note-band strong{color:var(--coral)}
+  section{padding:64px 0}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 36px}
+  .sec-head h2{font-family:'DM Serif Display',serif;font-size:clamp(30px,4.4vw,48px);color:var(--teal);margin-bottom:10px}
+  .sec-head p{font-size:17px;color:var(--mut)}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .svc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px}
+  .svc h3{font-family:'DM Serif Display',serif;font-size:21px;color:var(--teal);margin-bottom:6px}
+  .svc p{font-size:15px;color:var(--mut)}
+  .team{background:var(--teal);color:#f2ece0}
+  .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .team h2{font-family:'DM Serif Display',serif;font-size:clamp(30px,4vw,46px);margin-bottom:12px}
+  .team h2 span{color:var(--coral)}
+  .team p{font-size:17px;color:#d8cabb;margin-bottom:12px}
+  .team .names{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+  .team .names span{border:1px solid var(--coral);color:var(--coral);padding:8px 18px;border-radius:999px;
+    font-weight:700;font-size:15px}
+  .team figure img{width:100%;display:block;border-radius:12px;aspect-ratio:4/3;object-fit:cover}
+  .team .cap{color:#9db8b5}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+  .gallery figure{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .gallery img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+  .gallery .cap{padding:8px 12px;color:#a1937f}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .vcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:30px}
+  .vcard h3{font-family:'DM Serif Display',serif;font-size:24px;color:var(--teal);margin-bottom:12px}
+  .hours-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dotted var(--line);font-size:16px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:var(--teal);font-weight:700}
+  .vcard .btn{color:#fff}
+  .fine{font-size:13px;color:#a1937f;margin-top:10px}
+  .cta-band{background:var(--coral);text-align:center;padding:60px 0;color:#fff}
+  .cta-band h2{font-family:'DM Serif Display',serif;font-size:clamp(30px,4.6vw,50px);margin-bottom:10px}
+  .cta-band p{font-size:18px;color:#fff1ea;margin-bottom:24px}
+  .cta-band .btn{background:#fff;color:#c05f40}
+  footer{background:var(--teal2);color:#9db8b5;padding:36px 0;font-size:14px}
+  footer a{color:var(--coral)}
+  @media(max-width:900px){
+    .hero-grid,.team-grid,.visit{grid-template-columns:1fr}
+    .services{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the salon's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Fancy <span>Nails</span></a>
+    <ul class="navlinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn" href="tel:+18655731278">Call (865) 573-1278</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Nail Salon · Knoxville, TN</p>
+        <h1>Your neighborhood nail salon.</h1>
+        <p class="lede">Fancy Nails is a friendly full-service nail salon on Chapman Highway. Nail art, SNS dip, acrylics, gel, and pedicures, with a team clients ask for by name.</p>
+        <div class="rating"><span class="stars">★★★★☆</span> 4.5 from 36 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+18655731278">Call to Book</a>
+          <a class="btn" href="#services" style="background:transparent;border:2px solid var(--teal);color:var(--teal)">Services</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/photo-1.jpg" alt="Stock photo: red polish manicure">
+        <figcaption class="cap">Stock photo: red manicure</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="note-band">
+    <p>Plan ahead: the <strong>last appointment is 30 minutes before closing.</strong></p>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Services</h2>
+        <p>Full menu of nail care, from everyday manicures to detailed nail art.</p>
+      </div>
+      <div class="services">
+        <div class="svc"><h3>Nail art</h3><p>Custom designs, hand-painted detail, and seasonal looks.</p></div>
+        <div class="svc"><h3>SNS dip</h3><p>Dipping powder sets for durable, lightweight color.</p></div>
+        <div class="svc"><h3>Acrylics</h3><p>Full sets and fills, shaped and finished to your preference.</p></div>
+        <div class="svc"><h3>Gel</h3><p>Gel polish sets with a long-lasting glossy finish.</p></div>
+        <div class="svc"><h3>Manicures</h3><p>Classic manicures with cuticle care and polish.</p></div>
+        <div class="svc"><h3>Pedicures</h3><p>Relaxing pedicures, a client favorite on Chapman Highway.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="team">
+    <div class="wrap team-grid">
+      <div>
+        <h2>Ask for them <span>by name.</span></h2>
+        <p>Clients review Fancy Nails by technician, not just by salon. Regulars come back for the people as much as the polish.</p>
+        <div class="names"><span>Joe</span><span>Tee</span><span>Sara</span><span>Bien</span></div>
+        <p>Names mentioned in customer reviews. Call ahead to book with your preferred technician.</p>
+      </div>
+      <figure>
+        <img src="img/photo-4.jpg" alt="Stock photo: dark red manicure with black gloves">
+        <figcaption class="cap">Stock photo: dark red manicure</figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <div class="gallery">
+        <figure><img src="img/photo-2.jpg" alt="Stock photo: nail filing close-up"><figcaption class="cap">Stock photo: nail filing</figcaption></figure>
+        <figure><img src="img/photo-3.jpg" alt="Stock photo: manicure in progress"><figcaption class="cap">Stock photo: manicure in progress</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: fresh red manicure"><figcaption class="cap">Stock photo: red manicure</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Visit the salon</h2>
+        <p>On Chapman Highway in Knoxville. Call ahead to book.</p>
+      </div>
+      <div class="visit">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Monday - Saturday</span><strong>9:30 AM - 7:00 PM</strong></div>
+          <div class="hours-row"><span>Sunday</span><strong>Not listed</strong></div>
+          <p class="fine">Hours as listed publicly. Last appointment is 30 minutes before closing.</p>
+        </div>
+        <div class="vcard">
+          <h3>Find us</h3>
+          <p><strong>Fancy Nails</strong><br>4409 Chapman Hwy P<br>Knoxville, TN</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+18655731278">(865) 573-1278</a></p>
+          <p style="margin-top:14px"><a class="btn" href="tel:+18655731278">Call to Book</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Time for a fresh set?</h2>
+      <p>Call ahead and your chair will be waiting.</p>
+      <a class="btn" href="tel:+18655731278">Call (865) 573-1278</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Fancy Nails. It is not affiliated with or endorsed by the salon. Photos are stock photos, not photos of the salon. Staff names are those mentioned in public customer reviews.</p>
+  </div>
+</footer>
+</body>
+</html>

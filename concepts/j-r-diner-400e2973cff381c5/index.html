@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>J R Diner | Classic Diner · Syracuse, NY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cherry:#c1272d;--cherry2:#9c1e23;--cream:#faf5ea;--ink:#2b2620;--teal:#1f7a72;--chrome:#c9ced4;--line:#e0d3b8}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Public Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+  .disclosure{background:var(--cherry2);color:#f3d9c8;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px}
+  .disclosure a{color:#fff}
+  .checker{height:14px;background:repeating-conic-gradient(var(--cherry) 0 25%, var(--cream) 0 50%) 0 0/28px 28px;
+    border-bottom:3px solid var(--cherry)}
+  header.site{background:var(--cream);position:sticky;top:0;z-index:50;border-bottom:3px solid var(--cherry)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'Bree Serif',serif;font-size:32px;color:var(--cherry);text-decoration:none}
+  .brand small{display:block;font-family:'Public Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.4em;
+    text-transform:uppercase;color:var(--ink)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--cherry)}
+  .btn{display:inline-block;background:var(--cherry);color:#fff;font-weight:700;text-decoration:none;
+    padding:13px 30px;letter-spacing:.04em;border-radius:999px;border:3px solid var(--ink);
+    box-shadow:3px 3px 0 var(--ink);transition:transform .15s ease, box-shadow .15s ease}
+  .btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{padding:56px 0}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .kicker{display:inline-block;background:var(--teal);color:#fff;font-size:12px;font-weight:700;letter-spacing:.22em;
+    text-transform:uppercase;padding:7px 18px;border-radius:999px;margin-bottom:16px}
+  h1{font-family:'Bree Serif',serif;font-size:clamp(42px,6vw,74px);line-height:1.02;color:var(--cherry);margin-bottom:14px}
+  .lede{font-size:18px;max-width:32em;margin-bottom:12px}
+  .rating{display:inline-flex;align-items:center;gap:10px;background:#fff;border:3px solid var(--ink);
+    border-radius:12px;padding:10px 20px;margin:12px 0 20px;font-weight:700;box-shadow:3px 3px 0 var(--ink)}
+  .rating .stars{color:var(--cherry);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-photo{border:4px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:8px 8px 0 var(--cherry)}
+  .hero-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .cap{font-size:12px;color:#8a7a5c;padding:8px 4px 0;letter-spacing:.04em}
+  .specials{background:var(--ink);color:var(--cream)}
+  .specials .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    padding-top:22px;padding-bottom:22px}
+  .specials strong{font-family:'Bree Serif',serif;font-size:22px;color:var(--cherry);-webkit-text-stroke:0}
+  .specials strong{color:#f0b429}
+  .specials p{font-size:15px;color:#d8cdb4}
+  section{padding:64px 0}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 36px}
+  .sec-head h2{font-family:'Bree Serif',serif;font-size:clamp(32px,4.6vw,52px);color:var(--cherry);margin-bottom:10px}
+  .sec-head p{font-size:17px}
+  .menu-board{background:#fff;border:4px solid var(--ink);border-radius:8px;overflow:hidden;box-shadow:8px 8px 0 var(--teal)}
+  .board-head{background:var(--cherry);color:#fff;text-align:center;padding:16px;font-family:'Bree Serif',serif;
+    font-size:26px;letter-spacing:.04em}
+  .board-grid{display:grid;grid-template-columns:repeat(2,1fr)}
+  .board-col{padding:30px 34px}
+  .board-col:first-child{border-right:2px dashed var(--line)}
+  .board-col h3{font-family:'Bree Serif',serif;font-size:24px;color:var(--teal);margin-bottom:6px}
+  .board-col .sub{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8a7a5c;font-weight:700;margin-bottom:12px}
+  .board-col ul{list-style:none}
+  .board-col li{padding:8px 0;border-bottom:1px dotted var(--line);font-size:16px}
+  .board-col li:last-child{border:none}
+  .board-col li b{font-weight:700}
+  .vintage{background:var(--teal);color:#fff}
+  .vint-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .vint-grid h2{font-family:'Bree Serif',serif;font-size:clamp(30px,4vw,46px);margin-bottom:12px}
+  .vint-grid p{font-size:17px;color:#e2f0ee;margin-bottom:12px}
+  .vint-grid figure img{width:100%;display:block;border:4px solid #fff;border-radius:12px;aspect-ratio:4/3;object-fit:cover}
+  .vint-grid .cap{color:#bcd8d4}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+  .gallery figure{border:3px solid var(--ink);border-radius:12px;overflow:hidden;background:#fff}
+  .gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .gallery .cap{padding:8px 12px;color:#8a7a5c}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .vcard{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:30px;box-shadow:5px 5px 0 var(--line)}
+  .vcard h3{font-family:'Bree Serif',serif;font-size:26px;color:var(--cherry);margin-bottom:12px}
+  .hours-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dotted var(--line);font-size:16px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:var(--cherry);font-weight:700}
+  .vcard .btn{color:#fff}
+  .fine{font-size:13px;color:#8a7a5c;margin-top:10px}
+  .cta-band{background:var(--cherry);text-align:center;padding:60px 0;color:#fff}
+  .cta-band h2{font-family:'Bree Serif',serif;font-size:clamp(30px,4.6vw,50px);margin-bottom:10px}
+  .cta-band p{font-size:18px;color:#f6dfe0;margin-bottom:24px}
+  .cta-band .btn{background:#fff;color:var(--cherry);border-color:var(--ink)}
+  footer{background:var(--ink);color:#8a7a5c;padding:36px 0;font-size:14px}
+  footer a{color:#f0b429}
+  @media(max-width:900px){
+    .hero-grid,.vint-grid,.visit{grid-template-columns:1fr}
+    .board-grid{grid-template-columns:1fr}
+    .board-col:first-child{border-right:none;border-bottom:2px dashed var(--line)}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the diner's website.</div>
+<div class="checker" aria-hidden="true"></div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">J R Diner<small>Syracuse, NY</small></a>
+    <ul class="navlinks">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#visit">Hours &amp; Location</a></li>
+    </ul>
+    <a class="btn" href="tel:+13154722267">Call (315) 472-2267</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">Family-run · 1930s vintage charm</span>
+        <h1>Breakfast like it used to be.</h1>
+        <p class="lede">J R Diner is a nostalgic family-run diner on Wolf Street. Classic breakfast, Greek specialties, and burgers, served fast and priced fair.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 4.9 from 33 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+13154722267">Call for Takeout</a>
+          <a class="btn" href="#menu" style="background:#fff;color:var(--cherry)">See the Menu</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/photo-1.jpg" alt="Stock photo: red and chrome diner chairs">
+        <figcaption class="cap">Stock photo: classic diner seating</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="specials">
+    <div class="wrap">
+      <div>
+        <strong>Daily specials board</strong>
+        <p>Ask about today's specials when you call or stop in. Breakfast and lunch, Tuesday through Saturday.</p>
+      </div>
+      <a class="btn" href="tel:+13154722267" style="background:#f0b429;color:var(--ink);border-color:#f0b429">Call the Diner</a>
+    </div>
+  </div>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The menu board</h2>
+        <p>Traditional diner breakfast and lunch. Kid-friendly, inexpensive, and made to order.</p>
+      </div>
+      <div class="menu-board">
+        <div class="board-head">J R Diner · Menu</div>
+        <div class="board-grid">
+          <div class="board-col">
+            <h3>Breakfast</h3>
+            <p class="sub">Served mornings</p>
+            <ul>
+              <li><b>Western</b> omelet</li>
+              <li><b>Ham &amp; cheese</b> omelet</li>
+              <li><b>Greek</b> omelet</li>
+              <li><b>Italian toast</b></li>
+            </ul>
+            <h3 style="margin-top:20px">Greek specialties</h3>
+            <p class="sub">House favorites</p>
+            <ul>
+              <li><b>Greek gyros</b></li>
+              <li>Greek specialties</li>
+            </ul>
+          </div>
+          <div class="board-col">
+            <h3>Lunch</h3>
+            <p class="sub">Midday plates</p>
+            <ul>
+              <li><b>Burgers</b></li>
+              <li><b>Fried haddock</b> fish dinner</li>
+              <li>Lunch menu plates</li>
+              <li><b>Daily specials</b> board</li>
+            </ul>
+            <h3 style="margin-top:20px">To go</h3>
+            <p class="sub">Takeout available</p>
+            <ul>
+              <li>Call ahead for <b>takeout</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="vintage">
+    <div class="wrap vint-grid">
+      <div>
+        <h2>A 1930s classic, still cooking.</h2>
+        <p>J R Diner keeps the vintage diner spirit alive: chrome, neon, and a griddle that never seems to cool. Featured in Syracuse.com's 2026 tour of Central New York diners.</p>
+        <p>Bring the kids and bring an appetite. Inexpensive plates, generous servings, and a dining room with real vintage character.</p>
+      </div>
+      <figure>
+        <img src="img/photo-3.jpg" alt="Stock photo: lively retro diner interior">
+        <figcaption class="cap">Stock photo: retro diner interior</figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <div class="gallery">
+        <figure><img src="img/photo-2.jpg" alt="Stock photo: vintage diner facade with neon sign"><figcaption class="cap">Stock photo: diner facade</figcaption></figure>
+        <figure><img src="img/photo-4.jpg" alt="Stock photo: hot dog with fries and milkshake"><figcaption class="cap">Stock photo: diner fare</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: neon diner sign"><figcaption class="cap">Stock photo: neon sign</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Hours &amp; location</h2>
+        <p>Breakfast and lunch hours. Closed Sundays and Mondays.</p>
+      </div>
+      <div class="visit">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Tuesday - Friday</span><strong>7:30 AM - 1:30 PM</strong></div>
+          <div class="hours-row"><span>Saturday</span><strong>6:30 AM - 12:00 PM</strong></div>
+          <div class="hours-row"><span>Sunday - Monday</span><strong>Closed</strong></div>
+          <p class="fine">Hours as listed publicly. The diner keeps breakfast and lunch hours only.</p>
+        </div>
+        <div class="vcard">
+          <h3>Find the diner</h3>
+          <p><strong>J R Diner</strong><br>1208 Wolf St<br>Syracuse, NY 13208</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+13154722267">(315) 472-2267</a></p>
+          <p style="margin-top:6px">Kid-friendly. Takeout available.</p>
+          <p style="margin-top:14px"><a class="btn" href="tel:+13154722267">Call for Takeout</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Hungry? Come sit at the counter.</h2>
+      <p>Breakfast and lunch, Tuesday through Saturday. Call ahead for takeout.</p>
+      <a class="btn" href="tel:+13154722267">Call (315) 472-2267</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for J R Diner. It is not affiliated with or endorsed by the diner. Photos are stock photos, not photos of the diner.</p>
+  </div>
+</footer>
+</body>
+</html>

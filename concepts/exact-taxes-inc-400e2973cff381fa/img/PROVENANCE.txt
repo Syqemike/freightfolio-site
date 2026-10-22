@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 6863178: Free 1040 tax forms with calculator, pencils, and markers on green surface. Stock Photo
+  page: https://www.pexels.com/photo/tax-documents-on-the-table-6863178/
+  file: https://images.pexels.com/photos/6863178/pexels-photo-6863178.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 6863260: tax forms calculator
+  page: https://www.pexels.com/photo/black-smartphone-on-top-of-documents-6863260/
+  file: https://images.pexels.com/photos/6863260/pexels-photo-6863260.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 6863175: Free Flat lay of tax documents, calculator, and pencils on green surface. Stock Photo
+  page: https://www.pexels.com/photo/tax-documents-on-the-table-6863175/
+  file: https://images.pexels.com/photos/6863175/pexels-photo-6863175.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 7821688: tax forms calculator
+  page: https://www.pexels.com/photo/a-calculator-and-a-magnifying-glass-beside-documents-7821688/
+  file: https://images.pexels.com/photos/7821688/pexels-photo-7821688.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 6928994: Free Flat lay of financial tools for tax preparation including forms, calculator, and calendar. Stock Photo
+  page: https://www.pexels.com/photo/close-up-shot-of-documents-6928994/
+  file: https://images.pexels.com/photos/6928994/pexels-photo-6928994.jpeg?auto=compress&cs=tinysrgb&w=1260

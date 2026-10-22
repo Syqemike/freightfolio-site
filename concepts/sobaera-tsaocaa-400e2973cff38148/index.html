@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>SobaEra x Tsaocaa | Asian Fusion · Erie, PA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#131313;--bg2:#1c1c1c;--lime:#a8e10c;--red:#e63946;--cream:#f4f1e8;--ink:#1a1a1a;--line:#2e2e2e;--mut:#a8a294}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--cream);line-height:1.6}
+  .disclosure{background:#0c0c0c;color:#8f8a7d;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px;border-bottom:1px solid var(--line)}
+  .disclosure a{color:var(--lime)}
+  header.site{background:rgba(19,19,19,.94);backdrop-filter:blur(8px);position:sticky;top:0;z-index:50;
+    border-bottom:2px solid var(--lime)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'Archivo',sans-serif;font-weight:900;font-size:22px;color:#fff;text-decoration:none;letter-spacing:.02em}
+  .brand span{color:var(--lime)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:#d8d2c2;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--lime)}
+  .btn{display:inline-block;background:var(--lime);color:#131313;font-family:'Archivo',sans-serif;font-weight:800;
+    text-decoration:none;padding:14px 30px;letter-spacing:.06em;text-transform:uppercase;font-size:15px;
+    border-radius:6px;transition:transform .15s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.red{background:var(--red);color:#fff}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{padding:70px 0 0}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-bottom:60px}
+  .kicker{display:inline-block;background:var(--red);color:#fff;font-family:'Archivo',sans-serif;font-weight:800;
+    font-size:13px;letter-spacing:.18em;text-transform:uppercase;padding:8px 18px;border-radius:999px;margin-bottom:18px}
+  h1{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(44px,6.4vw,80px);line-height:.98;
+    text-transform:uppercase;margin-bottom:16px}
+  h1 .l{color:var(--lime)}
+  .lede{font-size:18px;color:#cfc9b8;max-width:32em;margin-bottom:14px}
+  .rating{display:inline-block;border:1px solid var(--lime);padding:10px 20px;margin:12px 0 22px;font-weight:600;background:var(--bg2)}
+  .rating .stars{color:var(--lime);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-photo{border-radius:20px;overflow:hidden;border:2px solid var(--line);transform:rotate(1deg)}
+  .hero-photo img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+  .cap{font-size:12px;color:#7d786c;padding:8px 4px 0;letter-spacing:.04em}
+  .marquee{border-top:2px solid var(--lime);border-bottom:2px solid var(--lime);overflow:hidden;white-space:nowrap;padding:12px 0}
+  .marquee span{font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase;margin:0 24px;color:var(--lime)}
+  .marquee span.r{color:var(--red)}
+  section{padding:66px 0}
+  .sec-head{margin-bottom:34px;max-width:660px}
+  .sec-head h2{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(30px,4.4vw,48px);
+    text-transform:uppercase;margin-bottom:10px}
+  .sec-head h2 .l{color:var(--lime)}
+  .sec-head p{font-size:17px;color:#cfc9b8}
+  .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .mcat{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:30px}
+  .mcat h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase;margin-bottom:4px}
+  .mcat h3 .l{color:var(--lime)}
+  .mcat .sub{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:14px}
+  .mcat ul{list-style:none}
+  .mcat li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:16px}
+  .mcat li:last-child{border:none}
+  .mcat li b{color:#fff}
+  .fun{background:var(--cream);color:var(--ink);border-radius:0}
+  .fun-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .fun h2{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(30px,4vw,46px);text-transform:uppercase;margin-bottom:12px}
+  .fun h2 .r{color:var(--red)}
+  .fun p{font-size:17px;margin-bottom:12px;color:#3d3a32}
+  .fun-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+  .fcard{background:#fff;border:2px solid var(--ink);border-radius:12px;padding:20px}
+  .fcard h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;text-transform:uppercase;margin-bottom:6px}
+  .fcard p{font-size:14px}
+  .fun figure img{width:100%;display:block;border-radius:16px;aspect-ratio:4/3;object-fit:cover;border:2px solid var(--ink)}
+  .fun .cap{color:#8a8474}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+  .gallery figure{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--bg2)}
+  .gallery img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+  .gallery .cap{padding:8px 10px}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .vcard{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:30px}
+  .vcard h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;text-transform:uppercase;margin-bottom:12px;color:var(--lime)}
+  .hours-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:15px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:var(--lime);font-weight:600}
+  .vcard .btn{color:#131313}
+  .fine{font-size:13px;color:var(--mut);margin-top:10px}
+  .cta-band{background:var(--red);text-align:center;padding:62px 0}
+  .cta-band h2{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(30px,4.6vw,52px);text-transform:uppercase;margin-bottom:10px}
+  .cta-band p{font-size:18px;color:#ffe3e6;margin-bottom:24px}
+  footer{background:#0c0c0c;color:#7d786c;padding:36px 0;font-size:14px;border-top:1px solid var(--line)}
+  footer a{color:var(--lime)}
+  @media(max-width:900px){
+    .hero-grid,.fun-grid,.visit{grid-template-columns:1fr}
+    .menu-grid{grid-template-columns:1fr}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the restaurant's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">SobaEra <span>x</span> Tsaocaa</a>
+    <ul class="navlinks">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#fun">The Vibe</a></li>
+      <li><a href="#visit">Hours &amp; Location</a></li>
+    </ul>
+    <a class="btn" href="tel:+18143151768">Call (814) 315-1768</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">Erie, PA · Asian Fusion</span>
+        <h1>Ramen, boba &amp; <span class="l">big flavor.</span></h1>
+        <p class="lede">SobaEra x Tsaocaa brings ramen, pho, dim sum, Korean rice bowls, and bubble tea to State Street. Modern, bright, and built for takeout nights.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 4.7 from 209 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+18143151768">Call for Takeout</a>
+          <a class="btn red" href="#menu">See the Menu</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/photo-1.jpg" alt="Stock photo: ramen bowl with egg and vegetables">
+        <figcaption class="cap">Stock photo: ramen bowl</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <span>ramen</span><span class="r">bubble tea</span><span>pho</span><span class="r">dim sum</span><span>korean bowls</span><span class="r">ramen</span><span>bubble tea</span><span class="r">pho</span>
+  </div>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The <span class="l">menu</span></h2>
+        <p>Four noodle soups, Korean bowls, dim sum, and a full bubble tea bar. Dine in or take it to go.</p>
+      </div>
+      <div class="menu-grid">
+        <div class="mcat">
+          <h3>Ramen <span class="l">bar</span></h3>
+          <p class="sub">Slurp-worthy bowls</p>
+          <ul>
+            <li><b>Tonkotsu</b> ramen</li>
+            <li><b>Seafood</b> ramen</li>
+            <li><b>Spicy miso</b> ramen</li>
+            <li><b>Tofu</b> ramen</li>
+            <li><b>Pho</b></li>
+          </ul>
+        </div>
+        <div class="mcat">
+          <h3>Plates <span class="l">&amp; more</span></h3>
+          <p class="sub">Beyond the bowl</p>
+          <ul>
+            <li><b>Dim sum</b></li>
+            <li><b>Korean chicken</b> rice bowls</li>
+            <li><b>Galbi</b> rice bowls</li>
+            <li><b>Dessert</b></li>
+          </ul>
+        </div>
+        <div class="mcat">
+          <h3>Bubble <span class="l">tea</span></h3>
+          <p class="sub">The Tsaocaa side</p>
+          <ul>
+            <li><b>Bubble tea</b></li>
+            <li><b>Milk tea</b></li>
+            <li><b>Fruit teas</b></li>
+          </ul>
+        </div>
+        <div class="mcat">
+          <h3>Good to <span class="l">know</span></h3>
+          <p class="sub">The details</p>
+          <ul>
+            <li><b>Dine-in</b> and <b>takeout</b></li>
+            <li><b>Rewards program</b> for regulars</li>
+            <li><b>Robot cat servers</b> on the floor</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fun" class="fun">
+    <div class="wrap fun-grid">
+      <div>
+        <h2>Redefining <span class="r">Asian cool.</span></h2>
+        <p>Erie's Choice 2026 Top-5 finalist in four categories. Bright, modern, and a little playful, from the robot cat servers to the bubble tea wall.</p>
+        <div class="fun-cards">
+          <div class="fcard"><h3>Dine in</h3><p>Bright modern dining room on State Street.</p></div>
+          <div class="fcard"><h3>Takeout</h3><p>Call ahead and skip the wait.</p></div>
+          <div class="fcard"><h3>Rewards</h3><p>A rewards program for regulars.</p></div>
+          <div class="fcard"><h3>Dessert</h3><p>Save room for something sweet.</p></div>
+        </div>
+      </div>
+      <figure>
+        <img src="img/photo-4.jpg" alt="Stock photo: ramen bowl with egg and chicken">
+        <figcaption class="cap">Stock photo: ramen bowl</figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <div class="gallery">
+        <figure><img src="img/photo-2.jpg" alt="Stock photo: close-up of ramen noodles"><figcaption class="cap">Stock photo: ramen noodles</figcaption></figure>
+        <figure><img src="img/photo-3.jpg" alt="Stock photo: asian noodle bowl"><figcaption class="cap">Stock photo: noodle bowl</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: ramen bowl"><figcaption class="cap">Stock photo: ramen bowl</figcaption></figure>
+        <figure><img src="img/photo-1.jpg" alt="Stock photo: ramen with vegetables"><figcaption class="cap">Stock photo: ramen bowl</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Hours <span class="l">&amp; location</span></h2>
+        <p>Closed Tuesdays. Walk in or call ahead for takeout.</p>
+      </div>
+      <div class="visit">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Monday</span><strong>11:00 AM - 8:30 PM</strong></div>
+          <div class="hours-row"><span>Tuesday</span><strong>Closed</strong></div>
+          <div class="hours-row"><span>Wednesday - Thursday</span><strong>11:00 AM - 8:30 PM</strong></div>
+          <div class="hours-row"><span>Friday - Saturday</span><strong>11:00 AM - 9:30 PM</strong></div>
+          <div class="hours-row"><span>Sunday</span><strong>12:00 PM - 8:30 PM</strong></div>
+        </div>
+        <div class="vcard">
+          <h3>Find us</h3>
+          <p><strong>SobaEra x Tsaocaa</strong><br>506 State St<br>Erie, PA 16501</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+18143151768">(814) 315-1768</a></p>
+          <p style="margin-top:14px"><a class="btn" href="tel:+18143151768">Call for Takeout</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Craving noodles?</h2>
+      <p>Call it in. Your bowl will be ready when you arrive.</p>
+      <a class="btn" href="tel:+18143151768" style="background:#fff;color:var(--red)">Call (814) 315-1768</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for SobaEra x Tsaocaa. It is not affiliated with or endorsed by the restaurant. Photos are stock photos, not photos of the restaurant.</p>
+  </div>
+</footer>
+</body>
+</html>

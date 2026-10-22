@@ -1,0 +1,66 @@
+[
+  {
+    "file": "cand-1.jpg",
+    "pexels_id": "17776621",
+    "alt": "Free Red and blue Honda cars with hoods open, showcasing custom engines in a parking lot. Stock Photo",
+    "query": "car tuning",
+    "image_url": "https://images.pexels.com/photos/17776621/pexels-photo-17776621.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/engine-of-sports-car-17776621/"
+  },
+  {
+    "file": "cand-2.jpg",
+    "pexels_id": "29236908",
+    "alt": "Free Close-up of modified cars at an outdoor gathering under an evening sky. Stock Photo",
+    "query": "car tuning",
+    "image_url": "https://images.pexels.com/photos/29236908/pexels-photo-29236908.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/sleek-cars-at-sunset-gathering-event-29236908/"
+  },
+  {
+    "file": "cand-3.jpg",
+    "pexels_id": "16350186",
+    "alt": "Free Detailed view of a blue sports car with its hood open, showcasing the engine. Stock Photo",
+    "query": "car tuning",
+    "image_url": "https://images.pexels.com/photos/16350186/pexels-photo-16350186.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/under-hood-of-modern-car-16350186/"
+  },
+  {
+    "file": "cand-4.jpg",
+    "pexels_id": "9702354",
+    "alt": "Free Detailed close-up of a high-performance car engine with red accents under the hood. Stock Photo",
+    "query": "car tuning",
+    "image_url": "https://images.pexels.com/photos/9702354/pexels-photo-9702354.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/car-with-an-open-hood-9702354/"
+  },
+  {
+    "file": "cand-5.jpg",
+    "pexels_id": "18461718",
+    "alt": "Free A tuned Volkswagen sports car in vibrant purple color parked in an urban cityscape. Stock Photo",
+    "query": "car tuning",
+    "image_url": "https://images.pexels.com/photos/18461718/pexels-photo-18461718.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/purple-tuned-volkswagen-golf-18461718/"
+  },
+  {
+    "file": "cand-6.jpg",
+    "pexels_id": "17575953",
+    "alt": "Free Detailed view of a car engine featuring a Turbosystems air filter and chrome components. Stock Photo",
+    "query": "car tuning",
+    "image_url": "https://images.pexels.com/photos/17575953/pexels-photo-17575953.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/close-up-of-car-engine-17575953/"
+  },
+  {
+    "file": "cand-7.jpg",
+    "pexels_id": "12582129",
+    "alt": "car tuning",
+    "query": "car tuning",
+    "image_url": "https://images.pexels.com/photos/12582129/pexels-photo-12582129.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/orange-car-with-chrome-wheels-12582129/"
+  },
+  {
+    "file": "cand-8.jpg",
+    "pexels_id": "9702356",
+    "alt": "Free Red sports car with an open hood in a modern garage, showcasing engine details. Stock Photo",
+    "query": "car tuning",
+    "image_url": "https://images.pexels.com/photos/9702356/pexels-photo-9702356.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/red-sports-car-with-an-open-hood-9702356/"
+  }
+]

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Floral Essence | Florist · Syracuse, NY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--sage:#5f7a5e;--sage2:#48604a;--cream:#faf7ef;--ink:#2c2a24;--blush:#e8b4b8;--line:#ddd5bd;--gold:#a8893f}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+  .disclosure{background:var(--sage2);color:#e8ecdf;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px}
+  .disclosure a{color:#fff}
+  header.site{background:rgba(250,247,239,.96);backdrop-filter:blur(6px);position:sticky;top:0;z-index:50;
+    border-bottom:1px solid var(--line)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:28px;color:var(--ink);text-decoration:none}
+  .brand em{font-style:italic;color:var(--sage)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--sage)}
+  .btn{display:inline-block;background:var(--sage);color:#fff;font-weight:600;text-decoration:none;
+    padding:13px 30px;letter-spacing:.08em;text-transform:uppercase;font-size:14px;border-radius:999px;transition:background .15s ease}
+  .btn:hover{background:var(--sage2)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{padding:64px 0 56px;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+  .kicker{font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:16px}
+  h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,6vw,76px);line-height:1.02;font-weight:600;margin-bottom:16px}
+  h1 em{font-style:italic;color:var(--sage)}
+  .lede{font-size:18px;max-width:30em;margin-bottom:8px;color:#4a463c}
+  .rating{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);
+    border-radius:999px;padding:10px 20px;margin:14px 0 22px;font-weight:600}
+  .rating .stars{color:var(--gold);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-frame{position:relative}
+  .hero-frame .main{border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+  .hero-frame .main img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+  .hero-frame .badge{position:absolute;right:-16px;top:32px;background:var(--sage);color:#fff;border-radius:14px;
+    padding:16px 20px;text-align:center;box-shadow:0 10px 26px rgba(72,96,74,.3)}
+  .hero-frame .badge strong{font-family:'Cormorant Garamond',serif;font-size:26px;display:block;font-style:italic}
+  .hero-frame .badge span{font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+  .cap{font-size:12px;color:#8a8474;padding:8px 4px 0;letter-spacing:.04em}
+  section{padding:66px 0}
+  .sec-head{text-align:center;max-width:620px;margin:0 auto 38px}
+  .sec-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4.4vw,50px);margin-bottom:10px;font-weight:600}
+  .sec-head h2 em{font-style:italic;color:var(--sage)}
+  .sec-head p{font-size:17px;color:#4a463c}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .svc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;text-align:center}
+  .svc .icon{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:34px;color:var(--sage)}
+  .svc h3{font-family:'Cormorant Garamond',serif;font-size:24px;margin:8px 0 6px}
+  .svc p{font-size:15px;color:#4a463c}
+  .occasions{background:var(--sage);color:#f2f4ea}
+  .occ-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .occ-grid h2{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4vw,46px);margin-bottom:12px;font-weight:600}
+  .occ-grid h2 em{font-style:italic;color:var(--blush)}
+  .occ-grid p{font-size:17px;color:#e4e8d8;margin-bottom:12px}
+  .occ-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+  .occ-list span{border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:8px 18px;font-size:14px;letter-spacing:.04em}
+  .occ-grid figure img{width:100%;display:block;border-radius:16px;aspect-ratio:4/3;object-fit:cover}
+  .occ-grid .cap{color:#b9c2ab}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .gallery figure{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .gallery img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+  .gallery .cap{padding:8px 12px;color:#8a8474}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .vcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px}
+  .vcard h3{font-family:'Cormorant Garamond',serif;font-size:26px;margin-bottom:12px}
+  .hours-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dotted var(--line);font-size:16px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:var(--sage2);font-weight:600}
+  .vcard .btn{color:#fff}
+  .fine{font-size:13px;color:#8a8474;margin-top:10px}
+  .cta-band{background:var(--sage2);color:#fff;text-align:center;padding:62px 0}
+  .cta-band h2{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4.6vw,52px);margin-bottom:10px;font-weight:600}
+  .cta-band h2 em{font-style:italic;color:var(--blush)}
+  .cta-band p{font-size:18px;color:#dfe4d2;margin-bottom:24px}
+  footer{background:#2c2a24;color:#8a8474;padding:36px 0;font-size:14px}
+  footer a{color:var(--blush)}
+  @media(max-width:900px){
+    .hero-grid,.occ-grid,.visit{grid-template-columns:1fr}
+    .services{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+    .hero-frame .badge{right:8px}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the shop's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Floral <em>Essence</em></a>
+    <ul class="navlinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#occasions">Occasions</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn" href="tel:+13157085569">Call (315) 708-5569</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Family Florist · Syracuse, NY</p>
+        <h1>Flowers that say it <em>beautifully.</em></h1>
+        <p class="lede">Floral Essence is a family-run florist and gift shop on South Salina Street. Custom arrangements for every occasion, made by hand and delivered locally.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 5.0 from 11 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+13157085569">Call to Order</a>
+          <a class="btn" href="#services" style="background:transparent;border:2px solid var(--sage);color:var(--sage2)">Services</a>
+        </div>
+      </div>
+      <div class="hero-frame">
+        <div class="main"><img src="img/photo-1.jpg" alt="Stock photo: colorful bouquets at a flower shop"></div>
+        <div class="badge"><strong>Family</strong><span>run shop</span></div>
+        <p class="cap">Stock photo: flower shop bouquets</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>What we <em>arrange</em></h2>
+        <p>Every bouquet is built to order. Tell us the occasion and the feeling, and we will handle the flowers.</p>
+      </div>
+      <div class="services">
+        <div class="svc"><div class="icon">❧</div><h3>Custom Bouquets</h3><p>Hand-tied arrangements for birthdays, anniversaries, and just because.</p></div>
+        <div class="svc"><div class="icon">❧</div><h3>Event Florals</h3><p>Weddings, parties, and gatherings, from centerpieces to full decor.</p></div>
+        <div class="svc"><div class="icon">❧</div><h3>Local Delivery</h3><p>Fresh flowers delivered around Syracuse. Call to arrange a delivery.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="occasions" class="occasions">
+    <div class="wrap occ-grid">
+      <div>
+        <h2>For every <em>occasion.</em></h2>
+        <p>A family shop means personal attention. The team helps you pick the right flowers, the right colors, and the right size for the moment.</p>
+        <div class="occ-list">
+          <span>Birthdays</span><span>Anniversaries</span><span>Weddings</span><span>Sympathy</span><span>Get well</span><span>Just because</span>
+        </div>
+        <p style="margin-top:18px"><a class="btn" href="tel:+13157085569" style="background:#fff;color:var(--sage2)">Call the Shop</a></p>
+      </div>
+      <figure>
+        <img src="img/photo-2.jpg" alt="Stock photo: florist handing a bouquet to a customer">
+        <figcaption class="cap">Stock photo: florist with bouquet</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Fresh from <em>the shop</em></h2>
+        <p>A look at the kind of work that leaves the counter every day.</p>
+      </div>
+      <div class="gallery">
+        <figure><img src="img/photo-3.jpg" alt="Stock photo: florist helping a customer in a flower shop"><figcaption class="cap">Stock photo: in the flower shop</figcaption></figure>
+        <figure><img src="img/photo-4.jpg" alt="Stock photo: colorful flowers in vases"><figcaption class="cap">Stock photo: fresh flowers</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: buckets of fresh flowers"><figcaption class="cap">Stock photo: fresh flower buckets</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Visit <em>us</em></h2>
+        <p>Walk in to browse, or call ahead and your arrangement will be ready.</p>
+      </div>
+      <div class="visit">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Monday to Friday</span><strong>10:30 AM - 6:00 PM</strong></div>
+          <div class="hours-row"><span>Saturday</span><strong>11:00 AM - 5:00 PM</strong></div>
+          <div class="hours-row"><span>Sunday</span><strong>Closed</strong></div>
+          <p class="fine">Hours as listed publicly. Holiday hours may differ, so call to confirm.</p>
+        </div>
+        <div class="vcard">
+          <h3>Find the shop</h3>
+          <p><strong>Floral Essence</strong><br>401 S Salina St<br>Syracuse, NY</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+13157085569">(315) 708-5569</a></p>
+          <p style="margin-top:6px">Handicap-accessible ramp available.</p>
+          <p style="margin-top:14px"><a class="btn" href="tel:+13157085569">Call to Order</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Need flowers <em>today?</em></h2>
+      <p>Call and tell us the occasion. We will put something beautiful together.</p>
+      <a class="btn" href="tel:+13157085569" style="background:#fff;color:var(--sage2)">Call (315) 708-5569</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Floral Essence. It is not affiliated with or endorsed by the shop. Photos are stock photos, not photos of the shop.</p>
+  </div>
+</footer>
+</body>
+</html>

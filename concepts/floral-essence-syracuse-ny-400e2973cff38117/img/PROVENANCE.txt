@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 38392600: Free Vibrant bouquets of flowers on display outside a florist shop, showcasing various blooms. Stock Photo
+  page: https://www.pexels.com/photo/colorful-flower-display-at-florist-shop-38392600/
+  file: https://images.pexels.com/photos/38392600/pexels-photo-38392600.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 6720578: Free A florist with braided hair hands a bouquet to a happy customer in a flower shop. Stock Photo
+  page: https://www.pexels.com/photo/a-man-in-stripes-long-sleeves-button-up-shirt-6720578/
+  file: https://images.pexels.com/photos/6720578/pexels-photo-6720578.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 15979836: Free A florist assists a customer in a cozy, brightly lit flower shop at night, showcasing vibrant blooms. Stock Photo
+  page: https://www.pexels.com/photo/store-with-flowers-15979836/
+  file: https://images.pexels.com/photos/15979836/pexels-photo-15979836.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 947914: Free A colorful array of flowers in various vases inside a modern florist shop. Stock Photo
+  page: https://www.pexels.com/photo/assorted-flower-arrangements-947914/
+  file: https://images.pexels.com/photos/947914/pexels-photo-947914.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 25945747: Free Beautiful assortment of colorful flowers in buckets at a retail store entrance. Stock Photo
+  page: https://www.pexels.com/photo/flowers-in-a-store-25945747/
+  file: https://images.pexels.com/photos/25945747/pexels-photo-25945747.jpeg?auto=compress&cs=tinysrgb&w=1260

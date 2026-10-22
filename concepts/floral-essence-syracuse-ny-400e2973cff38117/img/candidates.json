@@ -1,0 +1,66 @@
+[
+  {
+    "file": "cand-1.jpg",
+    "pexels_id": "10621020",
+    "alt": "Free Potted plants outside a Vienna shop with window reflections showcasing European architecture. Stock Photo",
+    "query": "flower shop",
+    "image_url": "https://images.pexels.com/photos/10621020/pexels-photo-10621020.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/a-potted-plants-on-the-street-10621020/"
+  },
+  {
+    "file": "cand-2.jpg",
+    "pexels_id": "38392600",
+    "alt": "Free Vibrant bouquets of flowers on display outside a florist shop, showcasing various blooms. Stock Photo",
+    "query": "flower shop",
+    "image_url": "https://images.pexels.com/photos/38392600/pexels-photo-38392600.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/colorful-flower-display-at-florist-shop-38392600/"
+  },
+  {
+    "file": "cand-3.jpg",
+    "pexels_id": "17403112",
+    "alt": "Free Colorful flower bouquets on display at an outdoor market, showcasing a variety of blooms. Stock Photo",
+    "query": "flower shop",
+    "image_url": "https://images.pexels.com/photos/17403112/pexels-photo-17403112.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/bouquets-in-a-flower-shop-17403112/"
+  },
+  {
+    "file": "cand-4.jpg",
+    "pexels_id": "6720578",
+    "alt": "Free A florist with braided hair hands a bouquet to a happy customer in a flower shop. Stock Photo",
+    "query": "flower shop",
+    "image_url": "https://images.pexels.com/photos/6720578/pexels-photo-6720578.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/a-man-in-stripes-long-sleeves-button-up-shirt-6720578/"
+  },
+  {
+    "file": "cand-5.jpg",
+    "pexels_id": "15979836",
+    "alt": "Free A florist assists a customer in a cozy, brightly lit flower shop at night, showcasing vibrant blooms. Stock Photo",
+    "query": "flower shop",
+    "image_url": "https://images.pexels.com/photos/15979836/pexels-photo-15979836.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/store-with-flowers-15979836/"
+  },
+  {
+    "file": "cand-6.jpg",
+    "pexels_id": "10386447",
+    "alt": "Free Colorful flowers in pots at an outdoor market stall, displaying vibrant blooms. Stock Photo",
+    "query": "flower shop",
+    "image_url": "https://images.pexels.com/photos/10386447/pexels-photo-10386447.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/red-and-white-flowers-on-brown-clay-pots-10386447/"
+  },
+  {
+    "file": "cand-7.jpg",
+    "pexels_id": "947914",
+    "alt": "Free A colorful array of flowers in various vases inside a modern florist shop. Stock Photo",
+    "query": "flower shop",
+    "image_url": "https://images.pexels.com/photos/947914/pexels-photo-947914.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/assorted-flower-arrangements-947914/"
+  },
+  {
+    "file": "cand-8.jpg",
+    "pexels_id": "25945747",
+    "alt": "Free Beautiful assortment of colorful flowers in buckets at a retail store entrance. Stock Photo",
+    "query": "flower shop",
+    "image_url": "https://images.pexels.com/photos/25945747/pexels-photo-25945747.jpeg?auto=compress&cs=tinysrgb&w=1260",
+    "page_url": "https://www.pexels.com/photo/flowers-in-a-store-25945747/"
+  }
+]

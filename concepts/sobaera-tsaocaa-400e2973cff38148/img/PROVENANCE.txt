@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 23964123: Free Colorful ramen bowl with eggs, vegetables, and chopsticks in a close-up view. Stock Photo
+  page: https://www.pexels.com/photo/meal-with-vegetables-and-eggs-23964123/
+  file: https://images.pexels.com/photos/23964123/pexels-photo-23964123.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 16671603: Free Close-up of authentic ramen noodles with boiled egg and chopsticks. Perfect for food enthusiasts. Stock Photo
+  page: https://www.pexels.com/photo/fingers-holding-food-in-chopsticks-16671603/
+  file: https://images.pexels.com/photos/16671603/pexels-photo-16671603.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 12015218: Free Asian noodles with fresh ingredients in a bowl, featuring chopsticks and vibrant vegetables. Stock Photo
+  page: https://www.pexels.com/photo/bowl-of-ramen-with-chopsticks-12015218/
+  file: https://images.pexels.com/photos/12015218/pexels-photo-12015218.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 37105478: Free A visually appealing Japanese ramen bowl with eggs, chicken, and vegetables on a wooden table. Stock Photo
+  page: https://www.pexels.com/photo/delicious-japanese-ramen-bowl-with-toppings-37105478/
+  file: https://images.pexels.com/photos/37105478/pexels-photo-37105478.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 15085069: ramen bowl
+  page: https://www.pexels.com/photo/two-bowls-of-ramen-15085069/
+  file: https://images.pexels.com/photos/15085069/pexels-photo-15085069.jpeg?auto=compress&cs=tinysrgb&w=1260

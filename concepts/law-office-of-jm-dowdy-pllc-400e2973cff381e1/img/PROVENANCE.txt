@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 6610670: law office building columns
+  page: https://www.pexels.com/photo/supreme-court-of-the-united-states-facade-6610670/
+  file: https://images.pexels.com/photos/6610670/pexels-photo-6610670.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 6077091: Free A classic study room with shelves of books, a gavel, and Lady Justice figurine on a green table. Stock Photo
+  page: https://www.pexels.com/photo/justice-figurine-on-table-6077091/
+  file: https://images.pexels.com/photos/6077091/pexels-photo-6077091.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 8993772: Free Golden light illuminating neoclassical columns, showcasing timeless architecture. Stock Photo
+  page: https://www.pexels.com/photo/brown-photo-of-columns-of-neoclassical-architecture-8993772/
+  file: https://images.pexels.com/photos/8993772/pexels-photo-8993772.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 30483132: Free Detailed image of Lady Justice statue, symbolizing fairness and impartiality. Stock Photo
+  page: https://www.pexels.com/photo/close-up-of-lady-justice-statue-with-scales-30483132/
+  file: https://images.pexels.com/photos/30483132/pexels-photo-30483132.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 3751006: law office building columns
+  page: https://www.pexels.com/photo/the-denver-post-office-and-federal-court-house-3751006/
+  file: https://images.pexels.com/photos/3751006/pexels-photo-3751006.jpeg?auto=compress&cs=tinysrgb&w=1260

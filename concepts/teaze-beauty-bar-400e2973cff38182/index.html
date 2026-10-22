@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Teaze Beauty Bar | Nails &amp; Lashes · Wichita, KS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--plum:#241a24;--plum2:#171217;--rose:#d98a9e;--gold:#c9a24b;--cream:#faf6f4;--ink:#2a2228;--line:#3a2e36;--mut:#9a8a94}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--plum);color:var(--cream);line-height:1.65}
+  .disclosure{background:#100c10;color:#8f7f88;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px;border-bottom:1px solid var(--line)}
+  .disclosure a{color:var(--rose)}
+  header.site{background:rgba(36,26,36,.94);backdrop-filter:blur(8px);position:sticky;top:0;z-index:50;
+    border-bottom:1px solid var(--rose)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;color:#fff;text-decoration:none;
+    letter-spacing:.1em;text-transform:uppercase}
+  .brand span{color:var(--rose)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:#d8cbd2;text-decoration:none;font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:500;
+    letter-spacing:.14em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--rose)}
+  .btn{display:inline-block;background:var(--rose);color:#241a24;font-family:'Space Grotesk',sans-serif;font-weight:700;
+    text-decoration:none;padding:14px 32px;letter-spacing:.1em;text-transform:uppercase;font-size:14px;
+    border-radius:999px;transition:transform .15s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.ghost{background:transparent;color:var(--cream);border:1px solid var(--rose)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{padding:72px 0 60px;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .kicker{font-family:'Space Grotesk',sans-serif;font-size:13px;letter-spacing:.26em;text-transform:uppercase;
+    color:var(--rose);font-weight:500;margin-bottom:16px}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,6vw,78px);line-height:1;font-weight:700;
+    letter-spacing:-.01em;margin-bottom:16px}
+  h1 .r{color:var(--rose)}
+  .lede{font-size:18px;color:#cbb9c2;max-width:32em;margin-bottom:12px}
+  .rating{display:inline-block;border:1px solid var(--line);padding:10px 20px;margin:12px 0 22px;
+    font-family:'Space Grotesk',sans-serif;letter-spacing:.04em;background:var(--plum2)}
+  .rating .stars{color:var(--rose);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-photo{border-radius:24px;overflow:hidden;border:1px solid var(--rose)}
+  .hero-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+  .cap{font-size:12px;color:#7d6f78;padding:8px 4px 0;letter-spacing:.04em}
+  section{padding:66px 0}
+  .sec-head{margin-bottom:34px;max-width:640px}
+  .sec-head h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(30px,4.4vw,48px);font-weight:700;letter-spacing:-.01em;margin-bottom:10px}
+  .sec-head h2 .r{color:var(--rose)}
+  .sec-head p{color:#cbb9c2;font-size:17px}
+  .services{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .svc{background:var(--plum2);border:1px solid var(--line);border-radius:16px;padding:28px}
+  .svc h3{font-family:'Space Grotesk',sans-serif;font-size:20px;margin-bottom:6px}
+  .svc h3 .r{color:var(--rose)}
+  .svc p{font-size:15px;color:#cbb9c2}
+  .deposit{margin-top:20px;background:rgba(217,138,158,.1);border:1px solid var(--rose);border-radius:14px;
+    padding:22px 26px;font-size:16px}
+  .deposit strong{color:var(--rose)}
+  .lash{background:var(--cream);color:var(--ink)}
+  .lash-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .lash h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(30px,4vw,46px);margin-bottom:12px;font-weight:700}
+  .lash h2 .r{color:#b0526b}
+  .lash p{font-size:17px;color:#4a3f45;margin-bottom:12px}
+  .lash figure img{width:100%;display:block;border-radius:16px;aspect-ratio:4/3;object-fit:cover}
+  .lash .cap{color:#9a8a94}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+  .gallery figure{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--plum2)}
+  .gallery img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+  .gallery .cap{padding:8px 12px}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .vcard{background:var(--plum2);border:1px solid var(--line);border-radius:16px;padding:30px}
+  .vcard h3{font-family:'Space Grotesk',sans-serif;font-size:18px;letter-spacing:.1em;text-transform:uppercase;
+    margin-bottom:12px;color:var(--rose)}
+  .hours-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:var(--rose);font-weight:600}
+  .vcard .btn{color:#241a24}
+  .fine{font-size:13px;color:var(--mut);margin-top:10px}
+  .book-band{background:var(--rose);text-align:center;padding:62px 0;color:#241a24}
+  .book-band h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(30px,4.6vw,52px);margin-bottom:10px;font-weight:700}
+  .book-band p{font-size:18px;margin-bottom:24px;color:#4a2e38}
+  .book-band .btn{background:#241a24;color:#fff}
+  footer{background:#100c10;color:#7d6f78;padding:36px 0;font-size:14px;border-top:1px solid var(--line)}
+  footer a{color:var(--rose)}
+  @media(max-width:900px){
+    .hero-grid,.lash-grid,.visit{grid-template-columns:1fr}
+    .services{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the salon's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Teaze <span>Beauty Bar</span></a>
+    <ul class="navlinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#lashes">Lashes</a></li>
+      <li><a href="#visit">Book</a></li>
+    </ul>
+    <a class="btn" href="https://www.vagaro.com/teazebeautybar">Book Now</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Nails &amp; Lashes · Wichita, KS</p>
+        <h1>Come for the <span class="r">vibe.</span> Stay for the detail.</h1>
+        <p class="lede">Teaze Beauty Bar is a chic nail and lash studio on West Douglas. Acrylics, soft gel, airbrush nails, and lash extensions, with coffee and music while you sit.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 4.7 from 20 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="https://www.vagaro.com/teazebeautybar">Book Now</a>
+          <a class="btn ghost" href="#services">Services</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/photo-1.jpg" alt="Stock photo: nail artist applying polish">
+        <figcaption class="cap">Stock photo: nail artistry</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Nails, <span class="r">your way.</span></h2>
+        <p>Licensed cosmetologist Ashton and the team. Book online through Vagaro.</p>
+      </div>
+      <div class="services">
+        <div class="svc"><h3>Acrylic <span class="r">nails</span></h3><p>Full sets and fills, shaped to your preference.</p></div>
+        <div class="svc"><h3>Soft gel <span class="r">nails</span></h3><p>Flexible, natural-looking gel sets.</p></div>
+        <div class="svc"><h3>Airbrush <span class="r">nails</span></h3><p>Smooth gradients and detailed airbrush art.</p></div>
+        <div class="svc"><h3>Lash <span class="r">extensions</span></h3><p>Wispy lashes and full extension sets. See the lash section below.</p></div>
+      </div>
+      <div class="deposit"><strong>Booking deposit:</strong> a 25% non-refundable deposit is required to book your appointment. It comes off your service total.</div>
+    </div>
+  </section>
+
+  <section id="lashes" class="lash">
+    <div class="wrap lash-grid">
+      <div>
+        <h2>Lashes that <span class="r">last.</span></h2>
+        <p>Wispy lash sets and lash extensions, applied with the same attention to detail as the nail work. Wake up ready, no mascara required.</p>
+        <p>Book your lash appointment online. The 25% deposit applies to lash bookings too.</p>
+        <p style="margin-top:16px"><a class="btn" href="https://www.vagaro.com/teazebeautybar" style="background:#241a24;color:#fff">Book Lashes</a></p>
+      </div>
+      <figure>
+        <img src="img/photo-6.jpg" alt="Stock photo: eyelash extension application in a salon">
+        <figcaption class="cap">Stock photo: lash extensions</figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <div class="gallery">
+        <figure><img src="img/photo-2.jpg" alt="Stock photo: manicure with red nail polish"><figcaption class="cap">Stock photo: manicure detail</figcaption></figure>
+        <figure><img src="img/photo-3.jpg" alt="Stock photo: manicurist filing nails"><figcaption class="cap">Stock photo: nail filing</figcaption></figure>
+        <figure><img src="img/photo-4.jpg" alt="Stock photo: manicure in soft light"><figcaption class="cap">Stock photo: manicure session</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: professional manicure session"><figcaption class="cap">Stock photo: salon manicure</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Book <span class="r">your chair.</span></h2>
+        <p>Online booking through Vagaro. Prefer to talk first? Call the bar.</p>
+      </div>
+      <div class="visit">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Tuesday - Saturday</span><strong>9:00 AM - 7:00 PM</strong></div>
+          <div class="hours-row"><span>Sunday - Monday</span><strong>Not listed</strong></div>
+          <p class="fine">Hours as listed publicly. Book online any time through Vagaro.</p>
+        </div>
+        <div class="vcard">
+          <h3>Find the bar</h3>
+          <p><strong>Teaze Beauty Bar</strong><br>620 W Douglas Ave<br>Wichita, KS</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+13168891734">(316) 889-1734</a></p>
+          <p style="margin-top:14px"><a class="btn" href="https://www.vagaro.com/teazebeautybar">Book Now</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="book-band">
+    <div class="wrap">
+      <h2>Ready for your set?</h2>
+      <p>Book online in under a minute. The 25% deposit holds your spot.</p>
+      <a class="btn" href="https://www.vagaro.com/teazebeautybar">Book Now on Vagaro</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Teaze Beauty Bar. It is not affiliated with or endorsed by the bar. Photos are stock photos, not photos of the bar. Booking links go to the business's own Vagaro page.</p>
+  </div>
+</footer>
+</body>
+</html>
