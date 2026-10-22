@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Thai Lotus | Thai and Vietnamese Family Restaurant in Gulfport, MS</title>
+<meta name="description" content="Thai Lotus is a small family-owned Thai and Vietnamese restaurant in Gulfport, MS. Takeout and delivery, open weekdays for lunch and dinner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --jade:#14504a;
+    --jade-deep:#0e3a36;
+    --gold:#b98a2e;
+    --gold-soft:#d9b96a;
+    --cream:#faf7ef;
+    --cream-warm:#f3eddd;
+    --ink:#2b2620;
+    --ink-soft:#5c554a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--cream);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 28px;}
+  .serif{font-family:'Cormorant Garamond',Georgia,serif;}
+  /* disclosure */
+  .preview-strip{background:var(--jade-deep);color:var(--gold-soft);text-align:center;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;padding:9px 16px;font-weight:600;}
+  /* header */
+  header.site{position:sticky;top:0;z-index:50;background:rgba(250,247,239,.97);border-bottom:1px solid #e3d9c2;}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;}
+  .brand{font-family:'Cormorant Garamond',Georgia,serif;font-size:32px;font-weight:700;color:var(--jade-deep);text-decoration:none;letter-spacing:1px;}
+  nav.links{display:flex;gap:26px;}
+  nav.links a{color:var(--ink-soft);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;}
+  nav.links a:hover{color:var(--gold);}
+  .call-btn{display:inline-block;background:var(--jade);color:#fff;font-weight:600;text-decoration:none;padding:12px 26px;border-radius:999px;font-size:14px;letter-spacing:1px;border:0;}
+  .call-btn:hover{background:var(--gold);}
+  /* hero */
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:88px 0 72px;}
+  .hero-copy{text-align:left;}
+  .hero-copy .script{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;color:var(--gold);font-size:22px;margin-bottom:10px;}
+  h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(58px,7vw,92px);font-weight:600;color:var(--jade-deep);line-height:1.02;margin-bottom:14px;}
+  .hero-sub{color:var(--ink-soft);font-size:17px;max-width:42ch;margin-bottom:8px;}
+  .divider{width:72px;height:2px;background:var(--gold);margin:26px 0;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;}
+  .ghost-btn{display:inline-block;border:1px solid var(--jade);color:var(--jade);font-weight:600;text-decoration:none;padding:12px 26px;border-radius:999px;font-size:14px;letter-spacing:1px;}
+  .ghost-btn:hover{border-color:var(--gold);color:var(--gold);}
+  .rating-line{margin-top:24px;font-size:14px;color:var(--ink-soft);}
+  .rating-line strong{color:var(--jade-deep);}
+  .hero-img figure{border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(14,58,54,.16);}
+  .hero-img img{height:480px;width:100%;object-fit:cover;}
+  .hero-img figcaption{font-size:12px;color:var(--ink-soft);padding:10px 6px 0;background:transparent;}
+  /* sections */
+  section{padding:76px 0;}
+  .center{text-align:center;}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 46px;}
+  .sec-eyebrow{color:var(--gold);font-weight:700;font-size:12px;letter-spacing:3.5px;text-transform:uppercase;margin-bottom:12px;}
+  h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(40px,5vw,58px);font-weight:600;color:var(--jade-deep);line-height:1.05;}
+  .sec-head p{color:var(--ink-soft);margin-top:12px;}
+  .rule{width:72px;height:2px;background:var(--gold);margin:22px auto 0;}
+  /* story */
+  .story{background:var(--cream-warm);border-top:1px solid #e3d9c2;border-bottom:1px solid #e3d9c2;}
+  .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+  .story-copy p{color:var(--ink-soft);font-size:17px;margin-bottom:16px;}
+  .story-copy p strong{color:var(--ink);}
+  figure.framed{border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 18px 44px rgba(14,58,54,.12);}
+  figure.framed img{height:380px;width:100%;object-fit:cover;}
+  figure.framed figcaption{font-size:12px;color:var(--ink-soft);padding:12px 16px;}
+  /* menu */
+  .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .menu-card{background:#fff;border:1px solid #e8dfc9;border-radius:12px;padding:34px 30px;box-shadow:0 10px 30px rgba(14,58,54,.06);}
+  .menu-card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:30px;font-weight:600;color:var(--jade-deep);margin-bottom:4px;}
+  .menu-card .card-sub{font-size:13px;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;font-weight:600;margin-bottom:18px;}
+  .menu-card ul{list-style:none;}
+  .menu-card li{padding:11px 0;border-bottom:1px solid #f0e9d8;font-size:15.5px;color:var(--ink);}
+  .menu-card li:last-child{border-bottom:0;}
+  .menu-card .desc{display:block;font-size:13px;color:var(--ink-soft);font-weight:400;}
+  .menu-note{text-align:center;color:var(--ink-soft);font-size:14px;font-style:italic;margin-top:26px;}
+  /* gallery */
+  .gallery{background:var(--jade-deep);}
+  .gallery .sec-head h2{color:var(--cream);}
+  .gallery .sec-head p{color:#b9c4b6;}
+  .gallery .sec-eyebrow{color:var(--gold-soft);}
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  figure.g-item{border-radius:10px;overflow:hidden;background:rgba(255,255,255,.04);}
+  figure.g-item img{height:250px;width:100%;object-fit:cover;}
+  figure.g-item figcaption{font-size:12px;color:#b9c4b6;padding:10px 4px 2px;}
+  /* hours + takeout */
+  .hours-wrap{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;margin-top:8px;}
+  .hours-card{background:#fff;border:1px solid #e8dfc9;border-radius:12px;padding:36px;}
+  .hours-card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:30px;font-weight:600;color:var(--jade-deep);margin-bottom:18px;}
+  .hours-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f0e9d8;font-size:15.5px;}
+  .hours-row:last-child{border-bottom:0;font-weight:700;color:var(--gold);}
+  .takeout-card{background:var(--jade);color:#eef4f2;border-radius:12px;padding:36px;}
+  .takeout-card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:30px;font-weight:600;margin-bottom:14px;color:#fff;}
+  .takeout-card p{margin-bottom:14px;color:#d7e3de;}
+  .takeout-card .big-phone{font-family:'Cormorant Garamond',Georgia,serif;font-size:34px;color:#fff;text-decoration:none;}
+  .takeout-card .big-phone:hover{color:var(--gold-soft);}
+  .takeout-card .call-btn{background:#fff;color:var(--jade-deep);margin-top:8px;}
+  .takeout-card .call-btn:hover{background:var(--gold);}
+  /* visit */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+  .visit-info p{margin-bottom:14px;color:var(--ink-soft);}
+  .visit-info strong{color:var(--ink);}
+  .visit-info .actions{margin-top:22px;display:flex;gap:14px;flex-wrap:wrap;}
+  footer{background:var(--jade-deep);padding:52px 0;color:#b9c4b6;}
+  footer p{font-size:13px;margin-bottom:10px;}
+  footer a{color:var(--gold-soft);}
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr;padding:56px 0 48px;gap:36px;}
+    .hero-img img{height:340px;}
+    .menu-grid,.gallery-grid,.hours-wrap,.story-grid,.visit-grid{grid-template-columns:1fr;}
+    nav.links{display:none;}
+  }
+</style>
+</head>
+<body>
+<div class="preview-strip">Website design preview, not the official site</div>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top">Thai Lotus</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#story">Our Kitchen</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="call-btn" href="tel:+12288229248">Call to order</a>
+  </div>
+</header>
+
+<section class="hero wrap" id="top">
+  <div class="hero-copy">
+    <p class="script">A small family kitchen in Gulfport</p>
+    <h1>Thai Lotus</h1>
+    <p class="hero-sub">Thai and Vietnamese cooking made the way family meals are made. It is warm and budget-friendly, with takeout and delivery for lunch or dinner.</p>
+    <div class="divider"></div>
+    <div class="hero-actions">
+      <a class="call-btn" href="tel:+12288229248">Call (228) 822-9248</a>
+      <a class="ghost-btn" href="#menu">Browse the menu</a>
+    </div>
+    <p class="rating-line"><strong>4.6 stars</strong> from 187 Google reviews (Oct 2026)</p>
+  </div>
+  <div class="hero-img">
+    <figure>
+      <img src="img/pho.jpg" alt="Bowl of beef pho with herbs, lime, and chili">
+      <figcaption>Stock photo: beef pho with herbs, lime, and chili.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="story" class="story">
+  <div class="wrap">
+    <div class="story-grid">
+      <div class="story-copy">
+        <p class="sec-eyebrow">Our kitchen</p>
+        <h2 class="serif" style="font-size:clamp(36px,4.5vw,52px);color:var(--jade-deep);margin-bottom:18px;">Family recipes, served with care</h2>
+        <p>Thai Lotus is a <strong>small family-owned</strong> restaurant in Gulfport, serving Thai and Vietnamese food. The menu draws from both traditions, from noodle soups and curries to fresh spring rolls.</p>
+        <p>It is a <strong>budget-friendly</strong> spot for a weeknight takeout or a quiet lunch, and the kitchen handles both takeout and delivery.</p>
+      </div>
+      <figure class="framed">
+        <img src="img/real-dish.jpg" alt="Thai salad with shrimp chips">
+        <figcaption>Thai salad with shrimp chips, from the Thai Lotus Facebook page.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-eyebrow">The menu</p>
+      <h2>Dishes from two traditions</h2>
+      <p>Thai classics and Vietnamese favorites, made fresh each day. Call with any questions about the menu.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <h3>Thai Classics</h3>
+        <p class="card-sub">Noodle soups and curries</p>
+        <ul>
+          <li>Pad Thai</li>
+          <li>Green Curry Seafood Noodle Soup</li>
+          <li>Lemongrass Chicken Stir Fry</li>
+          <li>Massaman Curry</li>
+          <li>Tom Yum</li>
+          <li>Pineapple Fried Rice</li>
+          <li>Shrimp Fried Rice</li>
+        </ul>
+      </div>
+      <div class="menu-card">
+        <h3>Vietnamese Favorites</h3>
+        <p class="card-sub">Pho and rice plates</p>
+        <ul>
+          <li>Pho <span class="desc">beef</span></li>
+          <li>Pho Dac Biet</li>
+          <li>Bo Luc Lac <span class="desc">shaking beef</span></li>
+          <li>Fresh Spring Rolls</li>
+        </ul>
+      </div>
+      <div class="menu-card">
+        <h3>Desserts &amp; Drinks</h3>
+        <p class="card-sub">A sweet finish</p>
+        <ul>
+          <li>Mango Sticky Rice</li>
+          <li>Thai Tea Latte</li>
+        </ul>
+      </div>
+    </div>
+    <p class="menu-note">Prices change, so call ahead and we will tell you the current menu.</p>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-eyebrow">From the kitchen</p>
+      <h2>A look at the menu</h2>
+      <p>Every dish below is on the Thai Lotus menu.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="g-item">
+        <img src="img/pad-thai.jpg" alt="Shrimp pad thai with peanuts and lime">
+        <figcaption>Stock photo: shrimp pad thai with peanuts and lime.</figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="img/spring-rolls.jpg" alt="Fresh Vietnamese spring rolls with peanut sauce">
+        <figcaption>Stock photo: fresh Vietnamese spring rolls with peanut sauce.</figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="img/mango-sticky-rice.jpg" alt="Mango sticky rice with coconut">
+        <figcaption>Stock photo: mango sticky rice with coconut.</figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="img/thai-tea.webp" alt="Glasses of Thai iced tea">
+        <figcaption>Stock photo: Thai iced tea.</figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="img/real-dish.jpg" alt="Thai salad with shrimp chips">
+        <figcaption>Thai salad with shrimp chips, from the Thai Lotus Facebook page.</figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="img/pho.jpg" alt="Bowl of beef pho with herbs, lime, and chili">
+        <figcaption>Stock photo: beef pho with herbs, lime, and chili.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-eyebrow">When to come</p>
+      <h2>Hours</h2>
+    </div>
+    <div class="hours-wrap">
+      <div class="hours-card">
+        <h3>Open weekdays</h3>
+        <div class="hours-row"><span>Monday - Friday</span><span>11am - 8pm</span></div>
+        <div class="hours-row"><span>Saturday</span><span>Closed</span></div>
+        <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+      </div>
+      <div class="takeout-card">
+        <h3>Takeout and delivery</h3>
+        <p>Thai Lotus serves lunch and dinner on weekdays, and the kitchen prepares takeout and delivery orders. Call ahead and your food will be ready when you arrive.</p>
+        <p><a class="big-phone" href="tel:+12288229248">(228) 822-9248</a></p>
+        <a class="call-btn" href="tel:+12288229248">Call to order</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-eyebrow">Find us</p>
+      <h2>Visit Thai Lotus</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-info">
+        <p><strong>Address</strong><br>2327 25th Ave<br>Gulfport, MS 39501</p>
+        <p><strong>Phone</strong><br><a href="tel:+12288229248">(228) 822-9248</a></p>
+        <p><strong>Facebook</strong><br><a href="https://facebook.com/Thai.Lotus.Gulfport" target="_blank" rel="noopener">Thai Lotus on Facebook</a></p>
+        <div class="actions">
+          <a class="call-btn" href="tel:+12288229248">Call to order</a>
+          <a class="ghost-btn" href="https://www.google.com/maps/search/?api=1&amp;query=2327+25th+Ave+Gulfport+MS+39501" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <figure class="framed">
+        <img src="img/pad-thai.jpg" alt="Shrimp pad thai with peanuts and lime">
+        <figcaption>Stock photo: shrimp pad thai with peanuts and lime.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>This is a website design concept created by <a href="https://freightfolio.net">Freightfolio</a>. It is not the official website of Thai Lotus.</p>
+    <p>Menu items and hours reflect publicly listed information as of Oct 2026 and may change. Call (228) 822-9248 to confirm before ordering.</p>
+  </div>
+</footer>
+</body>
+</html>

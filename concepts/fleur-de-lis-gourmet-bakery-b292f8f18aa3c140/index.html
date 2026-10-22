@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Fleur de Lis Gourmet Bakery | European Bakery and Cafe in Gulfport, MS</title>
+<meta name="description" content="Fleur de Lis Gourmet Bakery: a European-inspired bakery and cafe in Gulfport, Mississippi. Handcrafted pastries, custom cakes, king cakes, cheesecakes, and espresso.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#1c3329;
+    --forest-deep:#12241c;
+    --cream:#f8f3e7;
+    --cream-soft:#f2ebda;
+    --gold:#b78e3e;
+    --gold-soft:#d9bd7d;
+    --ink:#2b2b28;
+    --muted:#6f6a5e;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Jost',sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    font-weight:300;
+    letter-spacing:.01em;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+
+  /* Design preview ribbon */
+  .preview-ribbon{
+    background:var(--forest-deep);
+    color:var(--gold-soft);
+    text-align:center;
+    font-size:.72rem;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    padding:.55rem 1rem;
+  }
+  .preview-ribbon span{color:#e9dcc0;letter-spacing:.08em;text-transform:none;font-size:.75rem}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(248,243,231,.96);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid rgba(183,142,62,.35);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1rem 1.5rem;
+  }
+  .brand{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.5rem;font-weight:600;letter-spacing:.04em;
+    color:var(--forest);text-decoration:none;
+  }
+  .brand small{
+    display:block;font-family:'Jost',sans-serif;font-weight:400;
+    font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;
+    color:var(--gold);margin-top:-.25rem;
+  }
+  nav ul{display:flex;gap:2rem;list-style:none;align-items:center}
+  nav a{
+    text-decoration:none;font-size:.82rem;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--forest);font-weight:400;
+  }
+  nav a:hover{color:var(--gold)}
+  .btn-call{
+    border:1px solid var(--gold);color:var(--forest)!important;
+    padding:.6rem 1.4rem;letter-spacing:.2em;
+    transition:background .25s,color .25s;
+  }
+  .btn-call:hover{background:var(--gold);color:#fff!important}
+  .menu-toggle{display:none}
+  .menu-btn{display:none;cursor:pointer;font-size:1.6rem;color:var(--forest);background:none;border:none}
+
+  /* Hero */
+  .hero{
+    position:relative;min-height:86vh;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    color:#fff;overflow:hidden;
+  }
+  .hero-bg{
+    position:absolute;inset:0;
+    background:url('img/hero-pastries.jpg') center/cover no-repeat;
+  }
+  .hero::after{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(rgba(18,36,28,.72),rgba(18,36,28,.55) 45%,rgba(18,36,28,.8));
+  }
+  .hero-content{position:relative;z-index:2;max-width:840px;padding:4rem 1.5rem}
+  .hero-eyebrow{
+    font-size:.75rem;letter-spacing:.4em;text-transform:uppercase;
+    color:var(--gold-soft);margin-bottom:1.4rem;
+  }
+  .hero h1{
+    font-family:'Cormorant Garamond',serif;font-weight:500;
+    font-size:clamp(2.8rem,7vw,5.2rem);line-height:1.08;letter-spacing:.02em;
+  }
+  .hero-motto{
+    font-family:'Cormorant Garamond',serif;font-style:italic;
+    font-size:clamp(1.3rem,3vw,1.9rem);color:#efe4c8;margin:1.6rem 0 2.4rem;
+    letter-spacing:.06em;
+  }
+  .hero-rule{width:72px;height:1px;background:var(--gold);margin:0 auto 2.2rem}
+  .btn-gold{
+    display:inline-block;background:var(--gold);color:#fff!important;
+    text-decoration:none;letter-spacing:.24em;text-transform:uppercase;
+    font-size:.82rem;padding:1rem 2.6rem;font-weight:400;
+    transition:background .25s;
+  }
+  .btn-gold:hover{background:#a07c33}
+  .hero-note{margin-top:1.4rem;font-size:.85rem;letter-spacing:.08em;color:#e6d9bd}
+
+  /* Editorial sections */
+  .section{max-width:1180px;margin:0 auto;padding:5.5rem 1.5rem}
+  .section-head{text-align:center;margin-bottom:3.5rem}
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.4em;text-transform:uppercase;
+    color:var(--gold);margin-bottom:1rem;
+  }
+  .section-head h2{
+    font-family:'Cormorant Garamond',serif;font-weight:500;
+    font-size:clamp(2rem,4.5vw,3rem);color:var(--forest);line-height:1.2;
+  }
+  .section-head p{max-width:640px;margin:1.2rem auto 0;color:var(--muted)}
+  .rule{width:56px;height:2px;background:var(--gold);margin:1.6rem auto 0}
+
+  .intro-band{background:var(--forest);color:#e9dfc6}
+  .intro-band .section{padding:4rem 1.5rem;text-align:center}
+  .intro-band p{max-width:760px;margin:0 auto;font-size:1.12rem;line-height:1.9}
+  .rating-line{
+    margin-top:1.8rem;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--gold-soft);
+  }
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+  .split.reverse .split-text{order:2}
+  .split.reverse .split-media{order:1}
+  .split h3{
+    font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:600;
+    color:var(--forest);margin-bottom:1.2rem;line-height:1.3;
+  }
+  .split p{color:var(--muted);margin-bottom:1.1rem}
+  .menu-list{list-style:none;margin:1.6rem 0}
+  .menu-list li{
+    padding:.85rem 0;border-bottom:1px solid rgba(183,142,62,.3);
+    display:flex;justify-content:space-between;gap:1rem;align-items:baseline;
+  }
+  .menu-list .item{font-weight:400;color:var(--forest);letter-spacing:.03em}
+  .menu-list .desc{font-size:.88rem;color:var(--muted)}
+  figure{margin:0}
+  .frame{border:1px solid rgba(183,142,62,.45);padding:.7rem;background:#fff}
+  .frame img{width:100%}
+  figcaption{
+    font-size:.78rem;color:var(--muted);letter-spacing:.04em;
+    padding:.8rem .4rem .3rem;font-style:italic;
+  }
+
+  .cakes{background:var(--cream-soft)}
+  .cake-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem}
+  .cake-card .frame{margin-bottom:1.2rem}
+  .cake-card h3{
+    font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;
+    color:var(--forest);margin-bottom:.6rem;
+  }
+  .cake-card p{color:var(--muted);font-size:.98rem}
+
+  .story{background:var(--forest-deep);color:#e9dfc6;text-align:center}
+  .story h2{color:#f4ecd9}
+  .story .fleur{font-size:2.4rem;color:var(--gold);margin-bottom:1rem}
+  .story p{max-width:700px;margin:0 auto 1.2rem;line-height:1.9}
+  .story .founders{
+    font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.35rem;
+    color:var(--gold-soft);margin-top:1.8rem;
+  }
+
+  .visit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;margin-top:1rem}
+  .visit-card{
+    border:1px solid rgba(183,142,62,.4);padding:2.2rem 1.8rem;text-align:center;
+    background:#fffdf7;
+  }
+  .visit-card h3{
+    font-size:.75rem;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--gold);margin-bottom:1.1rem;font-weight:500;
+  }
+  .visit-card p{color:var(--ink);font-size:1rem;line-height:1.8}
+  .visit-card a{color:var(--forest);font-weight:500;text-decoration:none;border-bottom:1px solid var(--gold)}
+  .visit-cta{text-align:center;margin-top:3rem}
+
+  footer{background:var(--forest-deep);color:#bfae87;padding:3rem 1.5rem;text-align:center;font-size:.85rem}
+  footer .fname{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#e9dfc6;margin-bottom:.6rem}
+  footer a{color:var(--gold-soft)}
+  .disclaimer{max-width:640px;margin:1.4rem auto 0;font-size:.75rem;line-height:1.7;color:#8f8468}
+
+  @media (max-width:900px){
+    .split{grid-template-columns:1fr;gap:2.5rem}
+    .split.reverse .split-text{order:1}
+    .split.reverse .split-media{order:2}
+    .cake-grid{grid-template-columns:1fr}
+    .visit-grid{grid-template-columns:1fr}
+    .menu-btn{display:block}
+    nav ul{
+      display:none;position:absolute;top:100%;left:0;right:0;
+      background:var(--cream);flex-direction:column;gap:0;
+      border-bottom:1px solid rgba(183,142,62,.35);
+    }
+    nav ul li{width:100%;text-align:center;border-top:1px solid rgba(183,142,62,.2)}
+    nav ul li a{display:block;padding:1rem}
+    .menu-toggle:checked + .menu-btn + ul{display:flex}
+    .header-inner{position:relative}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-ribbon">Design preview &nbsp;<span>A website concept prepared by Freightfolio for Fleur de Lis Gourmet Bakery</span></div>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="#top">Fleur de Lis<small>Gourmet Bakery</small></a>
+    <nav>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-btn" aria-label="Menu">&#9776;</label>
+      <ul>
+        <li><a href="#pastries">Pastries</a></li>
+        <li><a href="#cakes">Cakes</a></li>
+        <li><a href="#cafe">Cafe</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a class="btn-call" href="tel:+12288960005">Call to Order</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Gulfport, Mississippi</div>
+    <h1>Fleur de Lis Gourmet Bakery</h1>
+    <div class="hero-motto">Experience. Indulge. Celebrate.</div>
+    <div class="hero-rule"></div>
+    <a class="btn-gold" href="tel:+12288960005">Call to Order</a>
+    <div class="hero-note">(228) 896-0005 &nbsp;&middot;&nbsp; Tuesday through Saturday, 10am to 5pm</div>
+  </div>
+</section>
+
+<div class="intro-band">
+  <div class="section">
+    <p>A European-inspired bakery and cafe on Courthouse Road in Gulfport. Handcrafted pastries, custom cakes, and espresso, made with care since the fall of 2010.</p>
+    <div class="rating-line">Rated 4.6 stars from 530 Google reviews &middot; October 2026</div>
+  </div>
+</div>
+
+<section class="section" id="pastries">
+  <div class="section-head">
+    <div class="eyebrow">01 &middot; From the Case</div>
+    <h2>Morning Pastries, Baked by Hand</h2>
+    <div class="rule"></div>
+    <p>The case is filled each morning with European-style pastries: flaky, buttery, and gone quickly. Arrive early for the widest selection.</p>
+  </div>
+  <div class="split">
+    <div class="split-media">
+      <figure class="frame">
+        <img src="img/croissants.webp" alt="Fresh baked golden croissants" loading="lazy">
+        <figcaption>Stock photo: fresh baked croissants.</figcaption>
+      </figure>
+    </div>
+    <div class="split-text">
+      <h3>What you will find</h3>
+      <ul class="menu-list">
+        <li><span class="item">Croissants</span><span class="desc">Butter, almond, and chocolate</span></li>
+        <li><span class="item">Danishes</span><span class="desc">Baked fresh each morning</span></li>
+        <li><span class="item">Cookies</span><span class="desc">Including giant cookies</span></li>
+        <li><span class="item">Maple Pecan Sticky Buns</span><span class="desc">A house favorite</span></li>
+        <li><span class="item">Carrot Cake</span><span class="desc">By the slice</span></li>
+      </ul>
+      <p>Questions about what is in the case today? <a href="tel:+12288960005" style="color:var(--forest);font-weight:500">Call (228) 896-0005</a> and ask.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cakes" id="cakes">
+  <div class="section">
+    <div class="section-head">
+      <div class="eyebrow">02 &middot; Cakes</div>
+      <h2>Cakes for Every Occasion</h2>
+      <div class="rule"></div>
+      <p>Custom cakes, wedding cakes, and special-event cakes, designed and baked to order. Call ahead so the bakery can plan your date.</p>
+    </div>
+    <div class="cake-grid">
+      <div class="cake-card">
+        <figure class="frame">
+          <img src="img/wedding-cake.jpg" alt="Tiered white wedding cake with sugar flowers" loading="lazy">
+          <figcaption>Stock photo: tiered white wedding cake with sugar flowers.</figcaption>
+        </figure>
+        <h3>Custom and Wedding Cakes</h3>
+        <p>Made-to-order cakes for weddings, anniversaries, and celebrations. Bring your ideas and the bakers will shape the design around them. To start an order, call (228) 896-0005.</p>
+      </div>
+      <div class="cake-card">
+        <figure class="frame">
+          <img src="img/king-cake.jpg" alt="King cake with purple, green, and gold sugar" loading="lazy">
+          <figcaption>Stock photo: king cake with purple, green, and gold sugar.</figcaption>
+        </figure>
+        <h3>King Cakes and Cheesecakes</h3>
+        <p>King cakes in praline pecan and strawberry cream cheese, plus cheesecakes in Chantilly, cookie butter, peach cobbler, and black and white. Seasonal favorites sell out, so ordering early is smart.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="cafe">
+  <div class="section-head">
+    <div class="eyebrow">03 &middot; The Cafe</div>
+    <h2>Stay for Coffee</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="split reverse">
+    <div class="split-text">
+      <h3>A quiet table, a proper espresso</h3>
+      <p>The bakery doubles as a dine-in cafe with tables for lingering. Order a coffee or espresso drink and enjoy a pastry on the spot.</p>
+      <p>It is an easy stop on Courthouse Road, and a calm place to start the morning or take an afternoon break.</p>
+      <a class="btn-gold" href="tel:+12288960005" style="margin-top:1rem">Call to Order</a>
+    </div>
+    <div class="split-media">
+      <figure class="frame">
+        <img src="img/cafe-interior.jpg" alt="Cafe seating with a pastry case and coffee menu" loading="lazy">
+        <figcaption>Stock photo: cafe seating with a pastry case and coffee menu.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="section">
+    <div class="fleur">&#9873;</div>
+    <div class="section-head">
+      <div class="eyebrow">04 &middot; Our Story</div>
+      <h2>A Gulf Coast Patisserie</h2>
+      <div class="rule"></div>
+    </div>
+    <p>Fleur de Lis Gourmet Bakery opened in the fall of 2010, founded by Jason Brewer and Allen Weger. The fleur-de-lis emblem reflects both the French baking tradition and Gulf Coast pride.</p>
+    <p>More than a decade later, the bakery still bakes everything by hand, from morning croissants to wedding cakes, for the community that made it a local favorite.</p>
+    <div class="founders">Jason Brewer and Allen Weger, founders</div>
+  </div>
+</section>
+
+<section class="section" id="visit">
+  <div class="section-head">
+    <div class="eyebrow">05 &middot; Visit</div>
+    <h2>Come See Us</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="visit-grid">
+    <div class="visit-card">
+      <h3>Hours</h3>
+      <p>Tuesday through Saturday<br>10:00am to 5:00pm<br>Closed Sunday and Monday</p>
+    </div>
+    <div class="visit-card">
+      <h3>Address</h3>
+      <p>500 B Courthouse Rd<br>Gulfport, MS 39507</p>
+    </div>
+    <div class="visit-card">
+      <h3>Contact</h3>
+      <p><a href="tel:+12288960005">(228) 896-0005</a><br>Call to order or ask<br>about custom cakes</p>
+    </div>
+  </div>
+  <div class="visit-cta">
+    <a class="btn-gold" href="tel:+12288960005">Call (228) 896-0005</a>
+  </div>
+</section>
+
+<footer>
+  <div class="fname">Fleur de Lis Gourmet Bakery</div>
+  <div>500 B Courthouse Rd, Gulfport, MS 39507 &middot; <a href="tel:+12288960005">(228) 896-0005</a></div>
+  <p class="disclaimer">This page is a design concept prepared by <a href="https://freightfolio.net">Freightfolio</a> for Fleur de Lis Gourmet Bakery. It is a design preview only and is not affiliated with or endorsed by the business. Photos are stock images, not photos of the actual business.</p>
+</footer>
+
+</body>
+</html>

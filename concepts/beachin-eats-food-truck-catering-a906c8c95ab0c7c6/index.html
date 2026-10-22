@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Beachin' Eats Food Truck &amp; Catering | Gulf Shores, AL</title>
+<meta name="description" content="Beachin' Eats Food Truck & Catering serves tacos, seafood, and totchos on the Gulf Coast. Food truck and wedding catering in Gulf Shores, Alabama. Call (251) 979-8238 to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#0f7a78;
+    --teal-deep:#0a4f4d;
+    --seafoam:#8fd8c9;
+    --sand:#f7efdd;
+    --sand-deep:#efe0c2;
+    --coral:#ff6f61;
+    --coral-deep:#e05a4d;
+    --ink:#10282b;
+    --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--sand);line-height:1.6}
+  h1,h2,h3,.display{font-family:'Bebas Neue',Impact,sans-serif;letter-spacing:.03em;line-height:1.05;color:var(--teal-deep)}
+  img{max-width:100%;display:block}
+  a{color:var(--teal)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+  /* header */
+  header.top{position:sticky;top:0;z-index:50;background:var(--teal-deep);color:var(--white)}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
+  .brand{font-family:'Bebas Neue',Impact,sans-serif;font-size:1.9rem;letter-spacing:.06em;color:var(--white);text-decoration:none}
+  .brand span{color:var(--seafoam)}
+  nav.main{display:flex;gap:22px;flex-wrap:wrap}
+  nav.main a{color:var(--sand);text-decoration:none;font-weight:600;font-size:.95rem}
+  nav.main a:hover{color:var(--seafoam)}
+  .btn{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;font-weight:700;padding:13px 28px;border-radius:999px;border:none;cursor:pointer;font-size:1rem;transition:transform .15s ease, background .15s ease}
+  .btn:hover{background:var(--coral-deep);transform:translateY(-2px)}
+  .btn.small{padding:10px 22px;font-size:.9rem}
+
+  /* design preview disclosure */
+  .preview-note{background:var(--seafoam);color:var(--teal-deep);text-align:center;font-size:.8rem;font-weight:600;padding:8px 16px;letter-spacing:.05em}
+
+  /* hero */
+  .hero{background:var(--teal-deep);color:#fff;overflow:hidden;position:relative}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:70px 24px 80px}
+  .hero h1{font-size:clamp(3.2rem,7vw,5.5rem);color:#fff}
+  .hero h1 .accent{color:var(--seafoam)}
+  .hero p.lede{font-size:1.2rem;margin:18px 0 28px;color:#dcefe9;max-width:34rem}
+  .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .rating-badge{display:inline-block;background:var(--coral);color:#fff;font-weight:700;font-size:.85rem;padding:8px 18px;border-radius:999px;margin-bottom:18px;letter-spacing:.03em}
+  .hero-photo{position:relative}
+  .hero-photo img{border-radius:22px;transform:rotate(2deg);box-shadow:0 24px 60px rgba(0,0,0,.35);border:6px solid var(--sand)}
+  .hero-photo .caption{font-size:.8rem;color:#cfe7df;margin-top:12px;text-align:right;font-style:italic}
+
+  /* section transition band */
+  .band{display:block;width:100%;height:26px;background:var(--teal-deep);border-top:6px solid var(--coral)}
+
+  /* sections */
+  section{padding:70px 0}
+  .eyebrow{display:inline-block;font-family:'Bebas Neue',Impact,sans-serif;letter-spacing:.25em;font-size:.95rem;color:var(--coral-deep);text-transform:uppercase;margin-bottom:10px}
+  h2.sec{font-size:clamp(2.2rem,4.5vw,3.2rem);margin-bottom:14px}
+  .sec-intro{max-width:44rem;margin-bottom:40px;font-size:1.08rem}
+
+  /* menu: editorial two column */
+  .menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .menu-cat{margin-bottom:34px}
+  .menu-cat h3{font-size:1.8rem;color:var(--teal);border-bottom:3px solid var(--seafoam);padding-bottom:8px;margin-bottom:14px}
+  .menu-cat ul{list-style:none}
+  .menu-cat li{padding:12px 0;border-bottom:1px dashed #d8c9a6;display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+  .menu-cat li .item{font-weight:700;font-size:1.08rem}
+  .menu-cat li .desc{font-size:.92rem;color:#5a6b6b;display:block;font-weight:400}
+  .menu-cat li .tag{font-family:'Bebas Neue',Impact,sans-serif;letter-spacing:.12em;font-size:.85rem;color:var(--coral-deep);white-space:nowrap}
+  .photo-stack{display:grid;gap:26px}
+  .photo-stack figure:nth-child(odd){transform:rotate(-1.5deg)}
+  .photo-stack figure:nth-child(even){transform:rotate(1.5deg);justify-self:end;width:88%}
+  .photo-stack figure{background:#fff;padding:10px 10px 6px;border-radius:14px;box-shadow:0 14px 34px rgba(16,40,43,.14)}
+  .photo-stack img{border-radius:8px;aspect-ratio:4/3;object-fit:cover;width:100%}
+  figcaption{font-size:.82rem;color:#5a6b6b;padding:10px 4px 6px;font-style:italic}
+
+  /* catering band */
+  .catering{background:var(--teal);color:#fff}
+  .catering h2.sec{color:#fff}
+  .catering .eyebrow{color:var(--seafoam)}
+  .cater-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+  .cater-card{background:rgba(255,255,255,.08);border:2px solid rgba(143,216,201,.35);border-radius:16px;padding:26px}
+  .cater-card h3{color:var(--seafoam);font-size:1.6rem;margin-bottom:8px}
+  .cater-card p{font-size:.97rem;color:#e3f2ec}
+  .cater-cta{margin-top:32px;text-align:center}
+  .cater-cta p{margin-bottom:16px;color:#e3f2ec}
+
+  /* find the truck */
+  .find{background:var(--sand-deep)}
+  .find-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .find-grid img{border-radius:18px;box-shadow:0 18px 44px rgba(16,40,43,.18);transform:rotate(-2deg);border:6px solid #fff}
+  .find-list{list-style:none;margin:20px 0}
+  .find-list li{padding:12px 0;border-bottom:1px solid #dccda9;font-weight:600}
+  .fb-link{display:inline-flex;align-items:center;gap:10px;background:var(--teal-deep);color:#fff;text-decoration:none;font-weight:700;padding:13px 26px;border-radius:999px;margin-top:8px}
+  .fb-link:hover{background:var(--teal)}
+
+  /* visit */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .visit-card{background:#fff;border-radius:18px;padding:34px;box-shadow:0 14px 34px rgba(16,40,43,.1)}
+  .visit-card h3{font-size:1.7rem;color:var(--teal);margin-bottom:14px}
+  .visit-card p{margin-bottom:10px}
+  .phone-big{font-family:'Bebas Neue',Impact,sans-serif;font-size:2.2rem;letter-spacing:.05em;color:var(--coral-deep);text-decoration:none;display:block;margin:6px 0 18px}
+  .phone-big:hover{color:var(--coral)}
+
+  footer{background:var(--teal-deep);color:#cfe7df;padding:44px 0 34px;font-size:.92rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start}
+  footer a{color:var(--seafoam)}
+  footer .disclaimer{max-width:40rem;font-size:.85rem;color:#a9c9bf}
+
+  @media (max-width:860px){
+    .hero .wrap{grid-template-columns:1fr;padding:52px 24px 60px}
+    .hero-photo img{transform:rotate(0)}
+    .menu-grid,.find-grid,.visit-grid{grid-template-columns:1fr}
+    .cater-grid{grid-template-columns:1fr}
+    nav.main{order:3;width:100%}
+    .photo-stack figure:nth-child(even){justify-self:stretch;width:100%}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="preview-note">Design preview: a concept website draft for Beachin' Eats Food Truck &amp; Catering</div>
+  <div class="wrap bar">
+    <a class="brand" href="#top">Beachin' <span>Eats</span></a>
+    <nav class="main" aria-label="Sections">
+      <a href="#menu">Menu</a>
+      <a href="#catering">Wedding Catering</a>
+      <a href="#find">Find the Truck</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn small" href="tel:+12519798238">Call to book</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="rating-badge">5.0 stars from 22 Google reviews</span>
+        <h1>Tacos, seafood,<br>and <span class="accent">totchos</span><br>on the Gulf Coast</h1>
+        <p class="lede">Beachin' Eats Food Truck &amp; Catering is a beach-themed food truck in Gulf Shores, Alabama, serving triggerfish tacos, shrimp tacos, pork totchos, cheese curds, and more, plus wedding catering with chicken, pork, and brisket.</p>
+        <div class="cta-row">
+          <a class="btn" href="tel:+12519798238">Call to book</a>
+          <a class="fb-link" href="https://www.facebook.com/BeachinEatsOBA">Beachin' Eats on Facebook</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="img/truck.jpg" alt="A food truck serving customers outdoors">
+        <p class="caption">Stock photo: food truck serving customers outdoors.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-hidden="true"></div>
+
+  <section id="menu">
+    <div class="wrap">
+      <span class="eyebrow">The Menu</span>
+      <h2 class="sec">Beach plates, straight off the truck</h2>
+      <p class="sec-intro">A short menu built for beach days and roadside stops. The truck posts its weekly schedule on Facebook, so check there before you head out.</p>
+      <div class="menu-grid">
+        <div>
+          <div class="menu-cat">
+            <h3>Tacos &amp; Seafood</h3>
+            <ul>
+              <li><div><span class="item">Triggerfish Tacos</span><span class="desc">Local favorite from the Gulf Coast menu</span></div><span class="tag">Truck</span></li>
+              <li><div><span class="item">Shrimp Tacos</span><span class="desc">Gulf shrimp served taco style</span></div><span class="tag">Truck</span></li>
+              <li><div><span class="item">Shrimp Fried Rice</span><span class="desc">A hearty plate off the seafood lineup</span></div><span class="tag">Truck</span></li>
+            </ul>
+          </div>
+          <div class="menu-cat">
+            <h3>Truck Favorites</h3>
+            <ul>
+              <li><div><span class="item">Pork Totchos</span><span class="desc">Tater tot nachos loaded with pork</span></div><span class="tag">Truck</span></li>
+              <li><div><span class="item">Cheese Curds</span><span class="desc">Golden, crispy, and made for sharing</span></div><span class="tag">Truck</span></li>
+              <li><div><span class="item">Pork Barbecue Sandwiches</span><span class="desc">Slow-cooked pork on a soft bun</span></div><span class="tag">Truck</span></li>
+            </ul>
+          </div>
+          <p style="font-size:.9rem;color:#5a6b6b;margin-top:8px">Questions about the menu? Call <a href="tel:+12519798238">(251) 979-8238</a>.</p>
+        </div>
+        <div class="photo-stack">
+          <figure>
+            <img src="img/tacos.jpg" alt="Crispy fish tacos with cabbage, jalapeno, and sauce">
+            <figcaption>Stock photo: crispy fish tacos with cabbage, jalapeno, and sauce.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/curds.jpg" alt="A plate of golden fried cheese curds">
+            <figcaption>Stock photo: golden fried cheese curds on a plate.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/rice.jpg" alt="A bowl of shrimp fried rice with vegetables">
+            <figcaption>Stock photo: shrimp fried rice with vegetables in a bowl.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catering" class="catering">
+    <div class="wrap">
+      <span class="eyebrow">Catering</span>
+      <h2 class="sec">Wedding catering, Gulf Coast style</h2>
+      <p class="sec-intro" style="color:#e3f2ec">Bringing the food truck spirit to the big day. Beachin' Eats caters weddings with a menu built around what they do best.</p>
+      <div class="cater-grid">
+        <div class="cater-card">
+          <h3>Chicken</h3>
+          <p>Wedding catering with chicken from the Beachin' Eats menu. One call starts the conversation about your event.</p>
+        </div>
+        <div class="cater-card">
+          <h3>Pork</h3>
+          <p>Wedding catering with pork from the Beachin' Eats menu. Call to talk through the plan for your event.</p>
+        </div>
+        <div class="cater-card">
+          <h3>Brisket</h3>
+          <p>Wedding catering with brisket from the Beachin' Eats menu. Tell them your date and guest count and they will take it from there.</p>
+        </div>
+      </div>
+      <div class="cater-cta">
+        <p>Planning a wedding in Gulf Shores or along the coast? One call starts the conversation.</p>
+        <a class="btn" href="tel:+12519798238">Call to book</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="find" class="find">
+    <div class="wrap">
+      <span class="eyebrow">Find the Truck</span>
+      <h2 class="sec">Follow the schedule</h2>
+      <div class="find-grid">
+        <div>
+          <img src="img/pork.jpg" alt="A pulled pork barbecue sandwich with slaw">
+          <p style="font-size:.8rem;color:#5a6b6b;font-style:italic;margin-top:10px">Stock photo: pulled pork barbecue sandwich with slaw.</p>
+        </div>
+        <div>
+          <p>The truck moves, so the schedule moves with it. The weekly schedule is posted on the Beachin' Eats Facebook page, which is the place to check before you go.</p>
+          <ul class="find-list">
+            <li>Truck location: Gulf Shores, Alabama</li>
+            <li>Weekly schedule posted on Facebook</li>
+            <li>Catering available for weddings and events</li>
+          </ul>
+          <a class="fb-link" href="https://www.facebook.com/BeachinEatsOBA">Beachin' Eats on Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <span class="eyebrow">Visit</span>
+      <h2 class="sec">Get in touch</h2>
+      <div class="visit-grid">
+        <div class="visit-card">
+          <h3>Call the truck</h3>
+          <a class="phone-big" href="tel:+12519798238">(251) 979-8238</a>
+          <p>Truck hours vary by week. Follow the Facebook page for the week's schedule.</p>
+          <a class="btn" href="tel:+12519798238">Call to book</a>
+        </div>
+        <div class="visit-card">
+          <h3>Find them</h3>
+          <p><strong>Beachin' Eats Food Truck &amp; Catering</strong><br>
+          2104 E 2nd St<br>
+          Gulf Shores, AL</p>
+          <p style="margin-top:14px"><a href="https://www.facebook.com/BeachinEatsOBA">Beachin' Eats on Facebook</a> for the weekly truck schedule.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p style="font-family:'Bebas Neue',Impact,sans-serif;font-size:1.4rem;letter-spacing:.06em;color:#fff">Beachin' Eats Food Truck &amp; Catering</p>
+      <p style="margin-top:8px">Gulf Shores, Alabama | <a href="tel:+12519798238">(251) 979-8238</a></p>
+    </div>
+    <p class="disclaimer">This is a design concept by <a href="https://freightfolio.net">Freightfolio</a>, prepared for Beachin' Eats Food Truck &amp; Catering. Photos are stock photography shown for layout purposes. Menu items and business details are based on publicly listed information.</p>
+  </div>
+</footer>
+
+</body>
+</html>

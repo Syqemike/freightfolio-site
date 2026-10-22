@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Afrobites | Pan-African Food Truck, Little Rock AR</title>
+<meta name="description" content="Afrobites is a pan-African food truck in Little Rock, Arkansas. Jollof rice, suya chicken, jerk chicken, plantains, and vegan plates. Open Friday through Sunday.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --coal:#17110a;
+    --coal-2:#211a10;
+    --green:#1e5c3f;
+    --green-deep:#143d2a;
+    --gold:#e8a93d;
+    --gold-soft:#f4c76a;
+    --red:#c14a2e;
+    --cream:#faf3e3;
+    --muted:#c9bfa8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--coal);color:var(--cream);
+    line-height:1.7;-webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  .display{font-family:'Bebas Neue',sans-serif;letter-spacing:.03em;font-weight:400}
+
+  .preview-ribbon{
+    background:var(--gold);color:#1a1206;text-align:center;
+    font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+    padding:.55rem 1rem;
+  }
+  .preview-ribbon span{font-weight:400;letter-spacing:.04em;text-transform:none}
+
+  header{
+    position:sticky;top:0;z-index:50;background:rgba(23,17,10,.96);
+    border-bottom:3px solid var(--gold);
+  }
+  .header-inner{
+    max-width:1220px;margin:0 auto;padding:.9rem 1.5rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  }
+  .brand{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);text-decoration:none;letter-spacing:.06em}
+  .brand em{font-style:normal;color:var(--cream)}
+  nav ul{display:flex;gap:1.8rem;list-style:none;align-items:center}
+  nav a{text-decoration:none;font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--cream)}
+  nav a:hover{color:var(--gold)}
+  .cta-row{display:flex;gap:.8rem}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:700;font-size:.8rem;
+    letter-spacing:.12em;text-transform:uppercase;padding:.85rem 1.6rem;
+    transition:transform .15s, background .2s;
+  }
+  .btn-gold{background:var(--gold);color:#1a1206}
+  .btn-gold:hover{background:var(--gold-soft)}
+  .btn-outline{border:2px solid var(--cream);color:var(--cream)}
+  .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:#a83e26}
+  .menu-toggle{display:none}
+  .menu-btn{display:none;cursor:pointer;font-size:1.8rem;color:var(--gold);background:none;border:none}
+
+  /* HERO */
+  .hero{
+    max-width:1220px;margin:0 auto;padding:4.5rem 1.5rem 3.5rem;
+    display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center;
+  }
+  .honor{
+    display:inline-block;background:var(--green);color:#fff;
+    font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    padding:.6rem 1.1rem;margin-bottom:1.6rem;
+  }
+  .hero h1{
+    font-size:clamp(3.4rem,8.5vw,6.4rem);line-height:.94;color:var(--cream);
+  }
+  .hero h1 .hl{color:var(--gold)}
+  .hero h1 .rd{color:var(--red)}
+  .hero p.lead{color:var(--muted);font-size:1.08rem;max-width:520px;margin:1.6rem 0 2rem}
+  .hero .cta-row{flex-wrap:wrap}
+  .rating-line{margin-top:1.8rem;font-size:.82rem;letter-spacing:.06em;color:var(--gold-soft)}
+  .hero-media{position:relative}
+  .hero-media img{
+    width:100%;border:4px solid var(--gold);
+    box-shadow:14px 14px 0 var(--green-deep);
+  }
+  .hero-media figcaption{
+    font-size:.78rem;color:var(--muted);font-style:italic;margin-top:.9rem;
+  }
+
+  /* TICKER */
+  .ticker{
+    background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;
+    padding:.85rem 0;border-top:3px solid var(--gold);border-bottom:3px solid var(--gold);
+  }
+  .ticker span{
+    font-family:'Bebas Neue',sans-serif;font-size:1.35rem;letter-spacing:.14em;
+    padding:0 1.4rem;
+  }
+
+  /* MENU */
+  .menu-section{background:var(--coal-2);border-top:1px solid #332917}
+  .wrap{max-width:1220px;margin:0 auto;padding:5rem 1.5rem}
+  .kicker{
+    font-size:.78rem;font-weight:700;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--gold);margin-bottom:1rem;
+  }
+  h2.section-title{
+    font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,6vw,4.4rem);
+    line-height:1;color:var(--cream);margin-bottom:1rem;
+  }
+  .section-sub{color:var(--muted);max-width:640px;margin-bottom:3rem}
+  .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem}  .dish{
+    background:var(--coal);border:2px solid #3a2f1c;padding:0;
+    display:flex;flex-direction:column;
+  }
+  .dish.featured{border-color:var(--gold)}
+  .dish img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .dish-body{padding:1.6rem 1.5rem 1.8rem;display:flex;flex-direction:column;flex:1}
+  .dish-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.6rem}
+  .dish h3{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:.03em;color:var(--cream)}
+  .price{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--gold);white-space:nowrap}
+  .dish p{font-size:.92rem;color:var(--muted);flex:1}
+  .tag{
+    align-self:flex-start;margin-top:1.1rem;font-size:.7rem;font-weight:700;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--green);
+    background:#dcefe2;padding:.35rem .8rem;
+  }
+  .tag.hot{color:#fff;background:var(--red)}
+  /* VEGAN */
+  .vegan{background:var(--green-deep)}
+  .vegan-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  .vegan h2{color:#fff}
+  .vegan p{color:#e4ecdf;margin-bottom:1.1rem}
+  .vegan ul{list-style:none;margin:1.6rem 0}
+  .vegan li{
+    padding:.9rem 0;border-bottom:1px solid rgba(255,255,255,.25);
+    display:flex;justify-content:space-between;gap:1rem;align-items:baseline;
+  }
+  .vegan li strong{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.03em;color:#fff;font-weight:400}
+  .vegan li span{font-size:.88rem;color:#d9e6d2}
+  .vegan img{width:100%;border:4px solid var(--gold)}
+  .vegan figcaption{font-size:.78rem;color:#cfe0c6;font-style:italic;margin-top:.9rem}
+
+  /* CATERING + INFO */
+  .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem}
+  .info-card{background:var(--coal-2);border:2px solid #3a2f1c;padding:2.2rem 1.8rem}
+  .info-card h3{
+    font-family:'Bebas Neue',sans-serif;font-size:1.9rem;color:var(--gold);
+    margin-bottom:.9rem;letter-spacing:.03em;
+  }
+  .info-card p{color:var(--muted);font-size:.95rem;margin-bottom:.5rem}
+  .info-card p strong{color:var(--cream);font-weight:600}
+  .info-card a.tel{color:var(--gold-soft);font-weight:600;text-decoration:none;font-size:1.05rem}
+  .order-strip{
+    margin-top:2.5rem;background:var(--red);padding:2.4rem;
+    display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between;
+  }
+  .order-strip h3{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:#fff}
+  .order-strip p{color:#ffe3d6;font-size:.95rem}
+
+  footer{background:#0f0b06;padding:3rem 1.5rem;text-align:center}
+  footer .fname{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);letter-spacing:.06em;margin-bottom:.5rem}
+  footer p{color:var(--muted);font-size:.85rem}
+  footer a{color:var(--gold-soft)}
+  .disclaimer{max-width:660px;margin:1.4rem auto 0;font-size:.75rem;line-height:1.7;color:#7d745f}
+
+  @media (max-width:960px){
+    .hero{grid-template-columns:1fr;gap:2.5rem;padding-top:3rem}
+    .menu-grid{grid-template-columns:1fr}
+    .vegan-grid{grid-template-columns:1fr}
+    .info-grid{grid-template-columns:1fr}
+    .menu-btn{display:block}
+    nav ul{
+      display:none;position:absolute;top:100%;left:0;right:0;
+      background:var(--coal);flex-direction:column;gap:0;align-items:stretch;
+      border-bottom:3px solid var(--gold);
+    }
+    nav ul li{border-top:1px solid #332917}
+    nav ul li a{display:block;padding:1rem 1.5rem}
+    .menu-toggle:checked + .menu-btn + ul{display:flex}
+    .header-inner{position:relative;flex-wrap:wrap}
+    .cta-row .btn{padding:.75rem 1.2rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-ribbon">Design preview &nbsp;<span>A website concept prepared by Freightfolio for Afrobites</span></div>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="#top">AFRO<em>BITES</em></a>
+    <nav>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-btn" aria-label="Menu">&#9776;</label>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#vegan">Vegan</a></li>
+        <li><a href="#catering">Catering</a></li>
+        <li><a href="#visit">Find Us</a></li>
+      </ul>
+    </nav>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="https://page-service.doordash.com/store/afrobites-24730779/">Order on DoorDash</a>
+      <a class="btn btn-outline" href="tel:+15014838721">Call to Order</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div>
+    <div class="honor">Named best food truck in Arkansas by Tasting Table</div>
+    <h1 class="display">PAN-AFRICAN<br><span class="hl">STREET FOOD</span><br><span class="rd">MADE TO ORDER</span></h1>
+    <p class="lead">Afrobites is a food truck in Little Rock serving bold plates from across Africa: jollof rice, suya chicken, jerk chicken, and plantains. Plates are made to order, with outdoor seating at the truck.</p>
+    <div class="cta-row">
+      <a class="btn btn-red" href="https://page-service.doordash.com/store/afrobites-24730779/">Order on DoorDash</a>
+      <a class="btn btn-outline" href="tel:+15014838721">Call (501) 483-8721</a>
+    </div>
+    <div class="rating-line">4.9 stars from 151 reviews (Restaurantji aggregate of Google/Facebook reviews)</div>
+  </div>
+  <figure class="hero-media">
+    <img src="img/jollof-rice-2.jpg" alt="Jollof rice with roasted chicken on a dark plate">
+    <figcaption>Stock photo: jollof rice with roasted chicken.</figcaption>
+  </figure>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <span>JOLLOF RICE</span><span>&#9733;</span><span>SUYA CHICKEN</span><span>&#9733;</span><span>JERK CHICKEN</span><span>&#9733;</span><span>PLANTAINS</span><span>&#9733;</span><span>BISSAP</span><span>&#9733;</span><span>VEGAN PLATES</span><span>&#9733;</span><span>CATERING</span><span>&#9733;</span>
+</div>
+
+<section class="menu-section" id="menu">
+  <div class="wrap">
+    <div class="kicker">The Menu</div>
+    <h2 class="section-title display">PLATES WITH REAL FLAVOR</h2>
+    <p class="section-sub">Choose a plate, pick it up at the truck, or get it delivered. Everything is made to order.</p>
+    <div class="menu-grid">
+      <div class="dish featured">
+        <img src="img/jollof-rice.jpg" alt="Jollof rice with chicken drumsticks">
+        <div class="dish-body">
+          <div class="dish-top"><h3>Jollof Rice with Suya Chicken</h3><span class="price">$14.99</span></div>
+          <p>The most ordered plate on the truck. Smoky jollof rice with seasoned suya chicken.</p>
+          <span class="tag hot">Most ordered</span>
+        </div>
+      </div>
+      <div class="dish">
+        <img src="img/jerk-chicken.jpg" alt="Grilled jerk chicken thighs with charred lemon and scallions">
+        <div class="dish-body">
+          <div class="dish-top"><h3>Yellow Saffron Rice with Jerk Chicken</h3></div>
+          <p>Fragrant saffron rice with jerk-seasoned chicken, curried cabbage, and plantains.</p>
+          <span class="tag">Ask at the truck</span>
+        </div>
+      </div>
+      <div class="dish">
+        <img src="img/coconut-rice.webp" alt="Curry chicken over rice with cilantro">
+        <div class="dish-body">
+          <div class="dish-top"><h3>Coconut Rice with Curry Chicken</h3></div>
+          <p>Coconut rice with curry chicken. Add a side of caramelized plantains.</p>
+          <span class="tag">Ask at the truck</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-grid" style="margin-top:1.8rem;grid-template-columns:1fr 1fr">
+      <div class="dish">
+        <div class="dish-body">
+          <div class="dish-top"><h3>African Meat Patties</h3><span class="price">$4.99</span></div>
+          <p>Handheld patties, easy to eat on the go.</p>
+        </div>
+      </div>
+      <div class="dish">
+        <img src="img/hibiscus.jpg" alt="Hibiscus iced drink with lime and a straw" style="aspect-ratio:16/9">
+        <div class="dish-body">
+          <div class="dish-top"><h3>Drinks</h3><span class="price">$2.99</span></div>
+          <p>Ginger pineapple, bissap, and mango lemonade. Bissap is a hibiscus tea.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vegan" id="vegan">
+  <div class="wrap">
+    <div class="vegan-grid">
+      <div>
+        <div class="kicker" style="color:var(--gold-soft)">Vegan Options</div>
+        <h2 class="section-title display">PLANTS, DONE RIGHT</h2>
+        <p>Afrobites cooks vegan plates with the same care as everything else on the truck. Options are clearly marked, and the crew will walk you through them.</p>
+        <ul>
+          <li><strong>Jollof Rice with Jackfruit</strong><span>Vegan</span></li>
+          <li><strong>Coconut Rice with Banana Blossom</strong><span>Vegan</span></li>
+        </ul>
+        <p style="font-size:.9rem">Menus rotate, so ask what is vegan when you order.</p>
+        <a class="btn btn-gold" href="tel:+15014838721" style="margin-top:1.2rem">Call to Ask</a>
+      </div>
+      <figure>
+        <img src="img/plantains.jpg" alt="Caramelized fried sweet plantain rounds on a plate">
+        <figcaption>Stock photo: caramelized fried sweet plantains, a favorite side on the truck.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="catering">
+  <div class="wrap">
+    <div class="kicker">Catering</div>
+    <h2 class="section-title display">FEED THE WHOLE CREW</h2>
+    <p class="section-sub">Afrobites caters events. Call to talk through the menu, the headcount, and the date.</p>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3 class="display">Catering</h3>
+        <p>Events, offices, and gatherings. Tell the truck what you need and they will build the menu with you.</p>
+        <p><a class="tel" href="tel:+15014838721">(501) 483-8721</a></p>
+      </div>
+      <div class="info-card" id="visit">
+        <h3 class="display">Find the Truck</h3>
+        <p><strong>Little Rock</strong><br>1702 Wright Ave<br>Little Rock, AR 72202</p>
+        <p><strong>Conway</strong><br>811 Walnut St<br>Conway, AR</p>
+      </div>
+      <div class="info-card">
+        <h3 class="display">Hours</h3>
+        <p><strong>Friday through Sunday</strong><br>11:00am to 6:00pm</p>
+        <p>Closed Monday through Thursday.</p>
+        <p><a class="tel" href="tel:+15014838721">(501) 483-8721</a></p>
+      </div>
+    </div>
+    <div class="order-strip">
+      <div>
+        <h3 class="display">HUNGRY NOW?</h3>
+        <p>Order delivery or pickup on DoorDash, or call the truck directly.</p>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://page-service.doordash.com/store/afrobites-24730779/">Order on DoorDash</a>
+        <a class="btn btn-outline" href="tel:+15014838721" style="border-color:#fff;color:#fff">Call to Order</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fname">AFROBITES</div>
+  <p>1702 Wright Ave, Little Rock, AR 72202 &middot; <a href="tel:+15014838721">(501) 483-8721</a></p>
+  <p class="disclaimer">This page is a design concept prepared by <a href="https://freightfolio.net">Freightfolio</a> for Afrobites. It is a design preview only and is not affiliated with or endorsed by the business. Photos are stock images, not photos of the actual business.</p>
+</footer>
+
+</body>
+</html>

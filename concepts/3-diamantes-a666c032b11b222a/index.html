@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>3 Diamantes | 14k Gold Jewelry in Lexington, KY</title>
+<meta name="description" content="3 Diamantes, a 14k gold jewelry store at 340 E New Circle Rd, Lexington, KY. Medallions, engagement rings, wedding bands, graduation rings, and gold bracelets. Open 11am to 8pm daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0c0b09;
+    --ink:#161310;
+    --gold:#c9a24b;
+    --gold-soft:#e6c877;
+    --ivory:#f7f2e7;
+    --ivory-dim:#cfc6b2;
+    --muted:#8f8674;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Manrope',system-ui,sans-serif;
+    background:var(--black);
+    color:var(--ivory);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+  /* Top disclosure + header */
+  .topbar{
+    border-bottom:1px solid rgba(201,162,75,.28);
+    padding:10px 0;
+    font-size:12px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--gold-soft);
+    text-align:center;
+  }
+  header.site{
+    padding:34px 0 10px;
+    text-align:center;
+  }
+  .brand{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(2.6rem,6vw,4.2rem);
+    font-weight:500;
+    letter-spacing:.06em;
+    color:var(--ivory);
+  }
+  .brand span{color:var(--gold)}
+  .tagline{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:1.25rem;
+    color:var(--gold-soft);
+    margin-top:6px;
+  }
+  nav{margin:26px 0 8px}
+  nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:34px;
+    flex-wrap:wrap;
+  }
+  nav a{
+    color:var(--ivory-dim);
+    text-decoration:none;
+    font-size:13px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    padding:6px 2px;
+    border-bottom:1px solid transparent;
+    transition:border-color .25s,color .25s;
+  }
+  nav a:hover{color:var(--gold-soft);border-color:var(--gold)}
+  .call-cta{
+    display:inline-block;
+    margin:18px 8px 0;
+    padding:14px 42px;
+    border:1px solid var(--gold);
+    color:var(--gold-soft);
+    text-decoration:none;
+    font-size:13px;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    transition:background .25s,color .25s;
+  }
+  .call-cta:hover{background:var(--gold);color:#141109}
+  .call-cta.solid{background:var(--gold);color:#141109}
+  .call-cta.solid:hover{background:var(--gold-soft)}
+
+  /* Hero */
+  .hero{padding:34px 0 10px;text-align:center}
+  .hero figure{margin:0 auto;max-width:960px}
+  .hero img{
+    width:100%;
+    height:clamp(280px,52vw,520px);
+    object-fit:cover;
+    border:1px solid rgba(201,162,75,.35);
+    display:block;
+  }
+  figcaption{
+    font-size:12px;
+    color:var(--muted);
+    letter-spacing:.06em;
+    margin-top:10px;
+  }
+  .hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+    font-size:clamp(1.8rem,4vw,2.6rem);
+    margin:34px auto 10px;
+    max-width:760px;
+    line-height:1.3;
+  }
+  .hero p.lede{
+    color:var(--ivory-dim);
+    max-width:640px;
+    margin:0 auto 8px;
+    font-size:1.02rem;
+  }
+  .rule{
+    width:64px;height:1px;background:var(--gold);
+    margin:26px auto;
+  }
+
+  /* Sections */
+  section{padding:64px 0}
+  .kicker{
+    text-align:center;
+    font-size:12px;
+    letter-spacing:.3em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:12px;
+  }
+  h2{
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+    font-size:clamp(1.7rem,3.4vw,2.4rem);
+    text-align:center;
+    margin-bottom:14px;
+    letter-spacing:.04em;
+  }
+  .section-intro{
+    text-align:center;
+    color:var(--ivory-dim);
+    max-width:640px;
+    margin:0 auto 40px;
+  }
+
+  /* Collections grid */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+  }
+  .card{
+    background:var(--ink);
+    border:1px solid rgba(201,162,75,.25);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:transform .25s,border-color .25s;
+  }
+  .card:hover{transform:translateY(-4px);border-color:var(--gold)}
+  .card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    display:block;
+  }
+  .card-body{padding:22px 22px 24px;flex:1;display:flex;flex-direction:column}
+  .card-body h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.45rem;
+    font-weight:500;
+    color:var(--ivory);
+    margin-bottom:6px;
+  }
+  .card-body p{color:var(--ivory-dim);font-size:.94rem;flex:1}
+  .card-body .cap{
+    font-size:11.5px;
+    color:var(--muted);
+    letter-spacing:.04em;
+    margin-top:14px;
+    border-top:1px solid rgba(201,162,75,.2);
+    padding-top:10px;
+  }
+  .custom-banner{
+    margin-top:26px;
+    border:1px solid var(--gold);
+    padding:34px 30px;
+    text-align:center;
+    background:var(--ink);
+  }
+  .custom-banner h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.6rem;
+    font-weight:500;
+    margin-bottom:8px;
+  }
+  .custom-banner p{color:var(--ivory-dim);max-width:560px;margin:0 auto 18px}
+
+  /* Hours + visit */
+  .two-col{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:26px;
+    align-items:stretch;
+  }
+  .panel{
+    border:1px solid rgba(201,162,75,.25);
+    background:var(--ink);
+    padding:36px 32px;
+  }
+  .panel h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.5rem;
+    font-weight:500;
+    margin-bottom:16px;
+    color:var(--gold-soft);
+  }
+  .hours-list{list-style:none}
+  .hours-list li{
+    display:flex;
+    justify-content:space-between;
+    padding:9px 0;
+    border-bottom:1px solid rgba(201,162,75,.15);
+    color:var(--ivory-dim);
+    font-size:.96rem;
+  }
+  .hours-list li span:last-child{color:var(--ivory)}
+  .panel p{color:var(--ivory-dim);margin-bottom:10px}
+  .panel p strong{color:var(--ivory);font-weight:600}
+  .fineprint{font-size:12.5px;color:var(--muted);margin-top:16px}
+  .rating{
+    text-align:center;
+    color:var(--gold-soft);
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.25rem;
+    margin-bottom:34px;
+  }
+  .rating small{display:block;font-family:'Manrope',sans-serif;font-size:12.5px;color:var(--muted);margin-top:4px;letter-spacing:.04em}
+
+  footer{
+    border-top:1px solid rgba(201,162,75,.28);
+    padding:36px 0 46px;
+    text-align:center;
+  }
+  footer p{color:var(--muted);font-size:13px;max-width:620px;margin:0 auto 8px}
+  footer a{color:var(--gold-soft);text-decoration:none}
+  footer a:hover{text-decoration:underline}
+
+  @media (max-width:860px){
+    .grid{grid-template-columns:1fr 1fr}
+    .two-col{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    .grid{grid-template-columns:1fr}
+    nav ul{gap:20px}
+    .call-cta{padding:13px 30px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">Design Preview · Website Concept</div>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">3 <span>Diamantes</span></div>
+    <div class="tagline">Oro de 14 kilates en Lexington, Kentucky</div>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="call-cta solid" href="tel:+18593675102">Call (859) 367-5102</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" aria-label="Introduction">
+    <div class="wrap">
+      <figure>
+        <img src="img/hero.jpg" alt="Gold necklaces and chains arranged on a display stand">
+        <figcaption>Stock photo: gold necklaces and chains on a display stand.</figcaption>
+      </figure>
+      <h1>14k gold jewelry for life's occasions</h1>
+      <p class="lede">3 Diamantes is a jewelry store at 340 E New Circle Rd in Lexington, Kentucky, specializing in 14k gold jewelry and serving Lexington's Spanish-speaking community.</p>
+      <div class="rule" aria-hidden="true"></div>
+      <a class="call-cta" href="tel:+18593675102">Call</a>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS -->
+  <section id="collections" aria-label="Collections">
+    <div class="wrap">
+      <div class="kicker">Our Pieces</div>
+      <h2>Collections</h2>
+      <p class="section-intro">Medallions, rings, and gold pieces, with styles for engagements, graduations, weddings, and everyday wear. Questions? Call (859) 367-5102.</p>
+      <div class="grid">
+        <article class="card">
+          <img src="img/medallion.jpg" alt="Gold medallion pendant on a chain" loading="lazy">
+          <div class="card-body">
+            <h3>Medallions</h3>
+            <p>14k gold medallions for all occasions.</p>
+            <div class="cap">Stock photo: gold medallion pendant on a chain.</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/engagement.jpg" alt="Diamond engagement ring in gold" loading="lazy">
+          <div class="card-body">
+            <h3>Engagement Rings</h3>
+            <p>Diamond engagement rings in gold settings.</p>
+            <div class="cap">Stock photo: diamond engagement ring in gold.</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/bands.webp" alt="Gold wedding bands" loading="lazy">
+          <div class="card-body">
+            <h3>Wedding Bands</h3>
+            <p>Gold wedding bands in classic styles.</p>
+            <div class="cap">Stock photo: gold wedding bands.</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/grad.jpg" alt="Gold graduation class ring" loading="lazy">
+          <div class="card-body">
+            <h3>Graduation Rings</h3>
+            <p>Gold class rings to mark the milestone.</p>
+            <div class="cap">Stock photo: gold graduation class ring.</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/bangles.jpg" alt="Gold bangles stacked on a wrist" loading="lazy">
+          <div class="card-body">
+            <h3>Bracelets and Bangles</h3>
+            <p>Gold bangles and bracelets, worn stacked or solo.</p>
+            <div class="cap">Stock photo: gold bangles stacked on a wrist.</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/diamonds.jpg" alt="Loose cut diamonds" loading="lazy">
+          <div class="card-body">
+            <h3>Loose Diamonds</h3>
+            <p>Loose diamonds for custom settings and designs.</p>
+            <div class="cap">Stock photo: loose cut diamonds.</div>
+          </div>
+        </article>
+      </div>
+      <div class="custom-banner">
+        <h3>Custom Jewelry Design</h3>
+        <p>Have a piece in mind? Custom jewelry design is available in store. Questions? Call (859) 367-5102.</p>
+        <a class="call-cta" href="tel:+18593675102">Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS -->
+  <section id="hours" aria-label="Hours">
+    <div class="wrap">
+      <div class="kicker">When to Stop By</div>
+      <h2>Hours</h2>
+      <p class="section-intro">Open every day of the week.</p>
+      <div class="two-col">
+        <div class="panel">
+          <h3>Store Hours</h3>
+          <ul class="hours-list">
+            <li><span>Monday</span><span>11:00 AM - 8:00 PM</span></li>
+            <li><span>Tuesday</span><span>11:00 AM - 8:00 PM</span></li>
+            <li><span>Wednesday</span><span>11:00 AM - 8:00 PM</span></li>
+            <li><span>Thursday</span><span>11:00 AM - 8:00 PM</span></li>
+            <li><span>Friday</span><span>11:00 AM - 8:00 PM</span></li>
+            <li><span>Saturday</span><span>11:00 AM - 8:00 PM</span></li>
+            <li><span>Sunday</span><span>11:00 AM - 8:00 PM</span></li>
+          </ul>
+          <p class="fineprint">Hours as listed on the business's public listing.</p>
+        </div>
+        <div class="panel">
+          <h3>Before You Visit</h3>
+          <p><strong>Address:</strong> 340 E New Circle Rd, Lexington, KY</p>
+          <p><strong>Phone:</strong> (859) 367-5102</p>
+          <p>Number as listed on the business's public listing.</p>
+          <a class="call-cta" href="tel:+18593675102">Call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" aria-label="Visit">
+    <div class="wrap">
+      <div class="kicker">Find Us</div>
+      <h2>Visit 3 Diamantes</h2>
+      <p class="rating">4.6 stars from 31 reviews<small>(local listing aggregation)</small></p>
+      <div class="two-col">
+        <div class="panel">
+          <h3>Location</h3>
+          <p><strong>3 Diamantes</strong></p>
+          <p>340 E New Circle Rd<br>Lexington, KY</p>
+          <p>A 14k gold jewelry store serving Lexington's Spanish-speaking community.</p>
+        </div>
+        <div class="panel">
+          <h3>Get in Touch</h3>
+          <p>Questions about a piece, a repair, or a custom design? Call the store.</p>
+          <p><strong>(859) 367-5102</strong></p>
+          <a class="call-cta solid" href="tel:+18593675102">Call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>This is a design concept by <a href="https://freightfolio.net">Freightfolio</a>. It is not the business's website and does not represent the business.</p>
+    <p>Photographs on this page are labeled stock photos and do not show the actual store or its inventory.</p>
+  </div>
+</footer>
+
+</body>
+</html>

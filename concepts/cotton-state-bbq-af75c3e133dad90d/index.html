@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Cotton State BBQ is a downtown Mobile, AL lunch spot serving smoked barbecue, loaded potatoes, sandwiches, and Moon Drop banana pudding.">
+<title>Cotton State BBQ | Smoked BBQ Lunch in Downtown Mobile, AL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --charcoal: #161210;
+    --charcoal-2: #1f1a15;
+    --orange: #c9662a;
+    --orange-soft: #e08a4c;
+    --cream: #f6f0e3;
+    --cream-dim: #ded3bd;
+    --ink: #241c14;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 1.65;
+  }
+  h1, h2, h3, .serif { font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; }
+
+  /* ---------- top strip ---------- */
+  .preview-strip {
+    background: var(--charcoal);
+    color: var(--cream-dim);
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 9px 16px;
+  }
+  .preview-strip strong { color: var(--orange-soft); }
+
+  /* ---------- header / nav ---------- */
+  header {
+    background: var(--charcoal);
+    color: var(--cream);
+    border-bottom: 3px solid var(--orange);
+  }
+  .masthead {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 26px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .brand { font-size: 34px; letter-spacing: 1px; }
+  .brand .cs { color: var(--orange-soft); }
+  nav ul { list-style: none; display: flex; gap: 26px; flex-wrap: wrap; }
+  nav a {
+    color: var(--cream-dim);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+  nav a:hover { color: var(--orange-soft); }
+  .call-btn {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  .call-btn:hover { background: var(--orange-soft); }
+
+  /* ---------- hero ---------- */
+  .hero {
+    background: var(--charcoal);
+    color: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 28px 70px;
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .eyebrow {
+    color: var(--orange-soft);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-size: clamp(46px, 6.5vw, 84px);
+    line-height: 1.02;
+    margin-bottom: 20px;
+  }
+  .tagline {
+    font-family: 'Zilla Slab', Georgia, serif;
+    font-style: italic;
+    font-size: 24px;
+    color: var(--cream-dim);
+    margin-bottom: 22px;
+  }
+  .hero p.lede { color: var(--cream-dim); max-width: 44ch; margin-bottom: 14px; }
+  .rating-line {
+    font-size: 15px;
+    color: var(--cream-dim);
+    margin-bottom: 30px;
+  }
+  .rating-line strong { color: var(--orange-soft); }
+  .hero figure { margin: 0; }
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #3a322a;
+  }
+  figcaption {
+    font-size: 13px;
+    color: #8d8474;
+    padding: 10px 2px 0;
+    font-style: italic;
+  }
+  .hero figcaption { color: #7d7466; }
+  .caption-tag { font-style: normal; font-weight: 700; letter-spacing: .5px; }
+
+  /* ---------- sections ---------- */
+  section.page { max-width: 1100px; margin: 0 auto; padding: 70px 28px; }
+  .section-kicker {
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .section-title { font-size: clamp(34px, 4.5vw, 52px); line-height: 1.1; margin-bottom: 16px; }
+  .rule { width: 64px; height: 4px; background: var(--orange); margin: 0 0 34px; }
+
+  /* story: editorial two-column with drop cap */
+  .story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 52px;
+    align-items: start;
+  }
+  .story img { width: 100%; height: auto; display: block; border: 1px solid #c9bca4; }
+  .story-text p { margin-bottom: 18px; }
+  .story-text p:first-of-type::first-letter {
+    font-family: 'Zilla Slab', Georgia, serif;
+    font-size: 64px;
+    line-height: .85;
+    float: left;
+    padding: 4px 10px 0 0;
+    color: var(--orange);
+    font-weight: 700;
+  }
+  .names { font-family: 'Zilla Slab', Georgia, serif; font-size: 22px; color: var(--ink); }
+
+  /* ---------- menu ---------- */
+  .menu-wrap { background: var(--charcoal-2); color: var(--cream); }
+  .menu-wrap .section-title { color: var(--cream); }
+  .menu-intro { color: var(--cream-dim); max-width: 62ch; margin-bottom: 8px; }
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px 64px;
+    margin-top: 36px;
+  }
+  .menu-group h3 {
+    font-size: 24px;
+    color: var(--orange-soft);
+    border-bottom: 2px solid var(--orange);
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+  }
+  .menu-item { margin-bottom: 20px; }
+  .item-head { display: flex; align-items: baseline; gap: 8px; }
+  .item-name { font-family: 'Zilla Slab', Georgia, serif; font-size: 19px; font-weight: 600; white-space: nowrap; }
+  .leader { flex: 1; border-bottom: 2px dotted #6b5f4d; transform: translateY(-5px); }
+  .item-desc { color: var(--cream-dim); font-size: 16px; margin-top: 4px; }
+  .menu-photo-band {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 52px;
+  }
+  .menu-photo-band img { width: 100%; height: auto; display: block; }
+  .menu-note { margin-top: 30px; color: var(--cream-dim); font-size: 15px; font-style: italic; }
+
+  /* ---------- visit ---------- */
+  .visit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 52px;
+    align-items: start;
+  }
+  .visit img { width: 100%; height: auto; display: block; border: 1px solid #c9bca4; }
+  .visit-facts dt {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: var(--orange);
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  .visit-facts dt:first-child { margin-top: 0; }
+  .visit-facts dd { font-size: 20px; margin-left: 0; }
+  .visit-facts dd a { color: var(--ink); }
+
+  /* ---------- contact strip ---------- */
+  .contact-strip {
+    background: var(--orange);
+    color: #fff;
+    text-align: center;
+    padding: 56px 28px;
+  }
+  .contact-strip h2 { font-size: clamp(32px, 4vw, 46px); margin-bottom: 12px; color: #fff; }
+  .contact-strip p { max-width: 60ch; margin: 0 auto 26px; font-size: 19px; }
+  .contact-strip .call-btn { background: var(--charcoal); font-size: 17px; padding: 16px 40px; }
+  .contact-strip .call-btn:hover { background: #000; }
+
+  /* ---------- footer ---------- */
+  footer {
+    background: var(--charcoal);
+    color: var(--cream-dim);
+    padding: 48px 28px 40px;
+    font-size: 15px;
+  }
+  .footer-inner { max-width: 1100px; margin: 0 auto; }
+  footer h2 { color: var(--cream); font-size: 26px; margin-bottom: 10px; }
+  footer a { color: var(--orange-soft); }
+  .footer-disclaimer {
+    border-top: 1px solid #3a322a;
+    margin-top: 28px;
+    padding-top: 22px;
+    font-size: 14px;
+    color: #8d8474;
+  }
+
+  @media (max-width: 860px) {
+    .hero-inner, .story, .menu-grid, .visit, .menu-photo-band { grid-template-columns: 1fr; }
+    .masthead { flex-direction: column; align-items: flex-start; }
+    section.page { padding: 52px 22px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-strip"><strong>Design preview</strong> &nbsp;·&nbsp; Concept website created by Freightfolio</div>
+
+<header>
+  <div class="masthead">
+    <div class="brand"><span class="serif"><span class="cs">COTTON STATE</span> BBQ</span></div>
+    <nav aria-label="Section navigation">
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#brothers">The Brothers</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" aria-label="Introduction">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Downtown Mobile, Alabama</div>
+      <h1>Barbecue with a new spin on a Southern tradition.</h1>
+      <p class="tagline">"A new spin to a Southern tradition!"</p>
+      <p class="lede">Cotton State BBQ is a weekday lunch spot in downtown Mobile serving smoked barbecue sandwiches, loaded potatoes, sides, and desserts with a New Orleans accent.</p>
+      <p class="rating-line"><strong>4.9 stars from 69 Google reviews</strong></p>
+      <a class="call-btn" href="tel:+12514773289">Call to order</a>
+    </div>
+    <figure>
+      <img src="img/smoker.jpg" alt="Smoke rising from a barbecue smoker">
+      <figcaption><span class="caption-tag">Stock photo:</span> Smoke rolling off a barbecue smoker during a cook.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="page" id="brothers">
+  <div class="section-kicker">Our story</div>
+  <h2 class="section-title">Two brothers, one smoker, downtown Mobile.</h2>
+  <div class="rule"></div>
+  <div class="story">
+    <figure>
+      <img src="img/brisket.jpg" alt="Slices of smoked brisket with a dark bark crust">
+      <figcaption><span class="caption-tag">Stock photo:</span> Freshly sliced smoked brisket with a bark crust.</figcaption>
+    </figure>
+    <div class="story-text">
+      <p>Cotton State BBQ was founded by brothers <span class="names">Ryan and David Tillman</span>, who set out to put their own spin on the Southern barbecue tradition in the heart of downtown Mobile.</p>
+      <p>The menu reads like a lunch plan built for regulars: brisket and pulled pork sandwiches, dry-rub chicken wings, red beans and rice, and loaded potatoes built on giant Idaho potatoes. Sweet finishes include the Moon Drop banana pudding and New Orleans sno balls.</p>
+      <p>It is a weekday lunch spot, closed on weekends, which makes every visit a downtown midday ritual. Questions about the day's menu or hours are welcome by phone.</p>
+    </div>
+  </div>
+</section>
+
+<section class="menu-wrap" id="menu">
+  <div class="page" style="padding-top:70px; padding-bottom:70px;">
+    <div class="section-kicker">The menu</div>
+    <h2 class="section-title">Lunch, the Southern way.</h2>
+    <div class="rule"></div>
+    <p class="menu-intro">Smoked meats, loaded potatoes, and sides with a New Orleans accent. Menu items and availability can change, so call ahead if you have your heart set on something.</p>
+
+    <div class="menu-grid">
+      <div class="menu-group">
+        <h3>Loaded Potatoes</h3>
+        <div class="menu-item">
+          <div class="item-head"><span class="item-name">Loaded Potato</span><span class="leader"></span></div>
+          <p class="item-desc">A giant Idaho potato loaded with your choice of brisket or pulled pork.</p>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <h3>Sandwiches</h3>
+        <div class="menu-item">
+          <div class="item-head"><span class="item-name">Brisket Sandwich</span><span class="leader"></span></div>
+          <p class="item-desc">Smoked brisket piled on a sandwich bun.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-head"><span class="item-name">Pulled Pork Sandwich</span><span class="leader"></span></div>
+          <p class="item-desc">Pulled pork on a sandwich bun.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-head"><span class="item-name">Chili Cheese Dog</span><span class="leader"></span></div>
+          <p class="item-desc">A hot dog topped with chili and cheese.</p>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <h3>From the Smoker</h3>
+        <div class="menu-item">
+          <div class="item-head"><span class="item-name">Dry-Rub Chicken Wings</span><span class="leader"></span></div>
+          <p class="item-desc">Chicken wings seasoned with a dry rub.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-head"><span class="item-name">Red Beans and Rice</span><span class="leader"></span></div>
+          <p class="item-desc">Red beans and rice, a New Orleans staple.</p>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <h3>Loaded Fries &amp; Nachos</h3>
+        <div class="menu-item">
+          <div class="item-head"><span class="item-name">Loaded Fries</span><span class="leader"></span></div>
+          <p class="item-desc">Fries loaded with smoked meat and toppings.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-head"><span class="item-name">Loaded Nachos</span><span class="leader"></span></div>
+          <p class="item-desc">Nachos loaded with smoked meat and toppings.</p>
+        </div>
+      </div>
+
+      <div class="menu-group">
+        <h3>Desserts</h3>
+        <div class="menu-item">
+          <div class="item-head"><span class="item-name">Moon Drop Banana Pudding</span><span class="leader"></span></div>
+          <p class="item-desc">The house banana pudding.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-head"><span class="item-name">New Orleans Sno Balls</span><span class="leader"></span></div>
+          <p class="item-desc">New Orleans style shaved ice.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-photo-band">
+      <figure>
+        <img src="img/potato.jpg" alt="Loaded baked potato topped with brisket and sour cream">
+        <figcaption><span class="caption-tag">Stock photo:</span> A loaded baked potato topped with brisket and sour cream.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/pudding.jpg" alt="Banana pudding cups with wafers and banana slices">
+        <figcaption><span class="caption-tag">Stock photo:</span> Banana pudding cups with wafers and banana slices.</figcaption>
+      </figure>
+    </div>
+    <p class="menu-note">Items change with the day. Call ahead for what is coming off the smoker.</p>
+  </div>
+</section>
+
+<section class="page" id="visit">
+  <div class="section-kicker">Visit</div>
+  <h2 class="section-title">Find us downtown.</h2>
+  <div class="rule"></div>
+  <div class="visit">
+    <dl class="visit-facts">
+      <dt>Address</dt>
+      <dd>107 St Francis St<br>Mobile, AL 36602</dd>
+      <dt>Phone</dt>
+      <dd><a href="tel:+12514773289">(251) 477-3289</a></dd>
+      <dt>Hours</dt>
+      <dd>Weekday lunch, closed weekends.<br>Call for today's hours.</dd>
+    </dl>
+    <div>
+      <p style="margin-bottom:18px;">Cotton State BBQ keeps weekday lunch hours and is closed on weekends. Opening time varies by day, so a quick call confirms the plan.</p>
+      <a class="call-btn" href="tel:+12514773289">Call to order</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact-strip" id="contact">
+  <h2 class="serif">Hungry at lunchtime?</h2>
+  <p>Questions about the menu, hours, or catering? Call (251) 477-3289 and talk to the folks behind the counter.</p>
+  <a class="call-btn" href="tel:+12514773289">Call to order</a>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <h2 class="serif">Cotton State BBQ</h2>
+    <p>107 St Francis St, Mobile, AL 36602 &nbsp;·&nbsp; <a href="tel:+12514773289">(251) 477-3289</a></p>
+    <p class="footer-disclaimer">This is a design concept created by <a href="https://freightfolio.net">Freightfolio</a>. It is not the official website of Cotton State BBQ. Photos on this page are stock photos used as placeholders.</p>
+  </div>
+</footer>
+
+</body>
+</html>
