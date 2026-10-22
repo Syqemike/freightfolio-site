@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Bay Strength and Fitness | Family-Owned Gym in Bay St. Louis, MS</title>
+<meta name="description" content="Bay Strength and Fitness, a family-owned gym at 546 St John St, Bay St. Louis, MS. Memberships from $40/month, personal training, and Team Carver Karate. 5.0 from 46 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --graphite:#17181c;
+    --graphite-2:#202228;
+    --chalk:#f4f2ec;
+    --chalk-dim:#c9c6bc;
+    --crimson:#d8362f;
+    --crimson-deep:#a8251f;
+    --steel:#8b8f98;
+    --line:rgba(244,242,236,.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--graphite);color:var(--chalk);line-height:1.65;-webkit-font-smoothing:antialiased}
+  .cond{font-family:'Barlow Condensed',sans-serif}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+
+  .disclosure{background:var(--crimson);color:#fff;text-align:center;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;padding:10px 16px;font-weight:600}
+
+  header.site{border-bottom:1px solid var(--line);padding:20px 0;position:sticky;top:0;background:rgba(23,24,28,.96);z-index:50;backdrop-filter:blur(6px)}
+  .masthead{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+  .brand{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.9rem;letter-spacing:.04em;text-transform:uppercase}
+  .brand span{color:var(--crimson)}
+  nav.main{display:flex;gap:24px;flex-wrap:wrap}
+  nav.main a{color:var(--chalk-dim);text-decoration:none;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+  nav.main a:hover{color:var(--crimson)}
+
+  .hero{position:relative;overflow:hidden}
+  .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:0;align-items:stretch;min-height:560px}
+  .hero-copy{padding:84px 48px 84px 0;display:flex;flex-direction:column;justify-content:center}
+  .kicker{display:inline-flex;align-items:center;gap:12px;margin-bottom:22px}
+  .kicker .bar{width:44px;height:4px;background:var(--crimson)}
+  .kicker span{font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--chalk-dim);font-weight:600}
+  .hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(3.4rem,7.5vw,6rem);line-height:.95;text-transform:uppercase;letter-spacing:.01em}
+  .hero h1 .red{color:var(--crimson)}
+  .hero p.lede{color:var(--chalk-dim);font-size:1.08rem;max-width:44ch;margin:24px 0 30px;font-weight:300}
+  .rating{display:flex;align-items:center;gap:12px;margin-bottom:30px}
+  .stars{color:var(--crimson);font-size:1.15rem;letter-spacing:.1em}
+  .rating span{font-size:.92rem;color:var(--chalk-dim)}
+  .rating strong{color:var(--chalk)}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;padding:16px 34px;transition:transform .16s ease, background .16s ease}
+  .btn-red{background:var(--crimson);color:#fff}
+  .btn-red:hover{background:var(--crimson-deep);transform:translateY(-2px)}
+  .btn-line{border:2px solid var(--chalk-dim);color:var(--chalk)}
+  .btn-line:hover{border-color:var(--chalk);background:rgba(244,242,236,.08)}
+  .hero-photo{position:relative;min-height:420px}
+  .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--graphite) 0%,transparent 28%)}
+  .hero-photo figcaption{position:absolute;left:18px;bottom:14px;z-index:2;font-size:.8rem;color:rgba(244,242,236,.75);font-style:italic;background:rgba(23,24,28,.55);padding:4px 10px}
+
+  .strip{background:var(--crimson);padding:18px 0;overflow:hidden}
+  .strip p{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:1.35rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;text-align:center;white-space:nowrap}
+  .strip p span{margin:0 26px;opacity:.55}
+
+  section.block{padding:84px 0}
+  .eyebrow{font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--crimson);font-weight:700;margin-bottom:12px}
+  h2.sec{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(2.4rem,4.6vw,3.6rem);text-transform:uppercase;letter-spacing:.02em;margin-bottom:14px}
+  .sec-sub{color:var(--chalk-dim);max-width:64ch;font-weight:300;margin-bottom:44px}
+
+  .price-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .plan{background:var(--graphite-2);border:1px solid var(--line);border-top:5px solid var(--steel);padding:30px 22px;transition:transform .18s ease}
+  .plan:hover{transform:translateY(-4px)}
+  .plan.hot{border-top-color:var(--crimson);background:#26272e}
+  .plan h3{font-family:'Barlow Condensed',sans-serif;font-size:1.35rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+  .plan .amt{font-family:'Barlow Condensed',sans-serif;font-size:2.6rem;font-weight:700;color:var(--crimson);line-height:1}
+  .plan .amt small{font-size:1rem;color:var(--chalk-dim);font-weight:500}
+  .plan p{font-size:.86rem;color:var(--chalk-dim);margin-top:10px}
+  .plan .tag{display:inline-block;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;background:var(--crimson);color:#fff;padding:4px 10px;margin-bottom:12px;font-weight:700}
+
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .coach-card{background:var(--graphite-2);border:1px solid var(--line);padding:36px}
+  .coach-card h3{font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;font-weight:600;text-transform:uppercase;margin-bottom:4px}
+  .coach-card .role{color:var(--crimson);font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-bottom:14px}
+  .coach-card p{color:var(--chalk-dim);font-size:.96rem;font-weight:300}
+  .coach-card ul{list-style:none;margin-top:16px}
+  .coach-card li{padding:9px 0;border-top:1px solid var(--line);font-size:.94rem;color:var(--chalk)}
+  .coach-card li b{color:var(--crimson)}
+  .fam-photo img{width:100%;height:100%;min-height:380px;object-fit:cover;display:block}
+  .fam-photo figcaption{font-size:.82rem;color:var(--steel);font-style:italic;padding-top:10px}
+
+  .story{background:var(--graphite-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .story-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:60px;align-items:center}
+  .story-grid img{width:100%;height:480px;object-fit:cover;display:block}
+  .story-grid figcaption{font-size:.82rem;color:var(--steel);font-style:italic;padding-top:10px}
+  .story-grid p{color:var(--chalk-dim);font-weight:300;margin-bottom:16px;font-size:1.02rem}
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+  .fact{border:1px solid var(--line);padding:18px;text-align:center}
+  .fact .n{font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:700;color:var(--crimson)}
+  .fact .l{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--chalk-dim)}
+
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  table.hours{width:100%;border-collapse:collapse}
+  table.hours td{padding:14px 4px;border-bottom:1px solid var(--line)}
+  table.hours td:last-child{text-align:right;color:var(--chalk-dim)}
+  .addr{font-size:1.05rem;margin-bottom:8px}
+  .addr a{color:var(--chalk)}
+  .big-cta{margin-top:30px}
+
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gallery figure{margin:0;position:relative}
+  .gallery img{width:100%;height:250px;object-fit:cover;display:block}
+  .gallery figcaption{font-size:.78rem;color:var(--steel);font-style:italic;padding-top:8px}
+
+  footer.site{border-top:1px solid var(--line);padding:46px 0;font-size:.88rem;color:var(--steel)}
+  footer.site .wrap{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:center}
+  footer.site a{color:var(--chalk-dim)}
+  .fine{font-size:.76rem;color:#5c6068;margin-top:16px;max-width:72ch}
+
+  @media(max-width:960px){
+    .strip p{font-size:1rem;white-space:normal}
+    .hero-inner{grid-template-columns:1fr}
+    .hero-copy{padding:56px 0}
+    .hero-photo{min-height:320px;position:relative;height:320px}
+    .price-grid{grid-template-columns:repeat(2,1fr)}
+    .two-col,.story-grid,.visit-grid{grid-template-columns:1fr;gap:36px}
+    .gallery{grid-template-columns:1fr}
+    .facts{grid-template-columns:repeat(3,1fr)}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview &middot; Website Concept</div>
+
+<header class="site">
+  <div class="wrap masthead">
+    <div class="brand">Bay Strength <span>&amp;</span> Fitness</div>
+    <nav class="main">
+      <a href="#membership">Membership</a>
+      <a href="#training">Training</a>
+      <a href="#story">Our Story</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="kicker"><span class="bar"></span><span>Family owned &middot; Bay St. Louis, MS</span></div>
+      <h1>The gym<br>for <span class="red">everyone.</span></h1>
+      <p class="lede">100% owned and operated by the Carver family. Real equipment, real coaching, and a sign-up that takes about five minutes, with no extra yearly fees tacked on.</p>
+      <div class="rating">
+        <span class="stars">★★★★★</span>
+        <span><strong>5.0</strong> from 46 Google reviews</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-red" href="tel:+12284670064">Call (228) 467-0064</a>
+        <a class="btn btn-line" href="#membership">See Memberships</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/hero.jpg" alt="Bay Strength and Fitness gym interior" loading="eager">
+      <figcaption>Stock photo: a modern, well-equipped gym interior.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="strip"><p>Real coaching <span>///</span> No yearly fees <span>///</span> Family owned <span>///</span> All fitness levels <span>///</span></p></div>
+
+<section class="block" id="membership">
+  <div class="wrap">
+    <div class="eyebrow">Membership</div>
+    <h2 class="sec">Straightforward pricing</h2>
+    <p class="sec-sub">One simple sign-up, about five minutes, and no extra yearly fees. Pick the plan that fits your household.</p>
+    <div class="price-grid">
+      <div class="plan">
+        <h3>Individual</h3>
+        <div class="amt">$40<small>/mo</small></div>
+        <p>Full gym access for one member.</p>
+      </div>
+      <div class="plan">
+        <h3>Plus One</h3>
+        <div class="amt">$70<small>/mo</small></div>
+        <p>Two members on one plan.</p>
+      </div>
+      <div class="plan hot">
+        <div class="tag">Popular</div>
+        <h3>Family</h3>
+        <div class="amt">$130<small>/mo</small></div>
+        <p>The whole household under one roof.</p>
+      </div>
+      <div class="plan">
+        <h3>Plus Two</h3>
+        <div class="amt">$100<small>/mo</small></div>
+        <p>Three members, one simple bill.</p>
+      </div>
+      <div class="plan">
+        <h3>Hero Rate</h3>
+        <div class="amt">$30<small>/mo</small></div>
+        <p>Military, first responders, teachers, and students.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block story" id="training">
+  <div class="wrap">
+    <div class="eyebrow">Coaching</div>
+    <h2 class="sec">Train with people who know your name</h2>
+    <p class="sec-sub">Personal training and martial arts instruction, right inside your neighborhood gym.</p>
+    <div class="two-col">
+      <div class="coach-card">
+        <h3>Zach Carver</h3>
+        <div class="role">Personal Trainer</div>
+        <p>One-on-one coaching built around your goals, your schedule, and where you are starting from.</p>
+        <ul>
+          <li><b>Education:</b> BS in Kinesiotherapy</li>
+          <li><b>Certified</b> personal trainer, CF-L1</li>
+          <li><b>Programs</b> tailored to all fitness levels</li>
+        </ul>
+      </div>
+      <div class="coach-card">
+        <h3>Team Carver Karate</h3>
+        <div class="role">Karate Instruction</div>
+        <p>Traditional karate instruction for kids, teens, and adults, taught in the same family-run gym.</p>
+        <ul>
+          <li><b>All ages</b> welcome, beginners to advanced</li>
+          <li><b>Discipline,</b> fitness, and self-defense</li>
+          <li><b>Call</b> for class days and times</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="story">
+  <div class="wrap">
+    <div class="story-grid">
+      <figure>
+        <img src="img/community.jpg" alt="Members training at Bay Strength and Fitness" loading="lazy">
+        <figcaption>Stock photo: a group fitness class training together.</figcaption>
+      </figure>
+      <div>
+        <div class="eyebrow">Our Story</div>
+        <h2 class="sec">Run by the Carvers, built for the Coast</h2>
+        <p>Bay Strength and Fitness is owned and operated by the Carver family: Zach, Jackie, and Jordan. It is an independent gym, which means decisions are made by the people behind the front desk, not a corporate office three states away.</p>
+        <p>The idea is simple. A clean, well-equipped place to train where beginners are welcome, experienced lifters are at home, and nobody is trying to upsell you on things you do not need.</p>
+        <div class="facts">
+          <div class="fact"><div class="n">100%</div><div class="l">Family owned</div></div>
+          <div class="fact"><div class="n">5 min</div><div class="l">Sign-up</div></div>
+          <div class="fact"><div class="n">$0</div><div class="l">Yearly fees</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Inside the Gym</div>
+    <h2 class="sec">Come see it in person</h2>
+    <div class="gallery">
+      <figure><img src="img/weights.jpg" alt="Free weights area" loading="lazy"><figcaption>Stock photo: a row of dumbbells on a rack.</figcaption></figure>
+      <figure><img src="img/training.jpg" alt="Personal training session" loading="lazy"><figcaption>Stock photo: a personal trainer assisting a client.</figcaption></figure>
+      <figure><img src="img/karate.jpg" alt="Karate class" loading="lazy"><figcaption>Stock photo: martial arts training in gis.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block story" id="visit" style="padding-bottom:84px">
+  <div class="wrap">
+    <div class="eyebrow">Visit</div>
+    <h2 class="sec">Stop by or call</h2>
+    <div class="visit-grid" style="margin-top:36px">
+      <div>
+        <table class="hours">
+          <tr><td>Monday - Friday</td><td>Staffed 8:15am - 5:45pm</td></tr>
+        </table>
+        <p style="color:var(--chalk-dim);font-size:.92rem;margin-top:14px;font-weight:300">Staffed hours are when the Carver family is on site to show you around and get you signed up.</p>
+      </div>
+      <div>
+        <p class="addr">546 St John St<br>Bay St. Louis, MS 39520</p>
+        <p class="addr"><a href="tel:+12284670064">(228) 467-0064</a></p>
+        <p style="margin-top:12px"><a href="https://www.facebook.com/BSF2022/" style="color:var(--crimson)">Follow on Facebook</a></p>
+        <div class="big-cta"><a class="btn btn-red" href="tel:+12284670064">Call to Join</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div><strong style="color:var(--chalk)">Bay Strength and Fitness</strong><br>546 St John St, Bay St. Louis, MS 39520 &middot; <a href="tel:+12284670064">(228) 467-0064</a></div>
+    <div><a href="https://www.facebook.com/BSF2022/">Facebook</a></div>
+  </div>
+  <div class="wrap"><p class="fine">This is a design concept by <a href="https://freightfolio.net">Freightfolio</a>. It is not the business's website and does not represent the business.</p></div>
+</footer>
+</body>
+</html>

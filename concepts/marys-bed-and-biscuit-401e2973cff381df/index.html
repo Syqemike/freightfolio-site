@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Marys Bed and Biscuit | Dog &amp; Cat Grooming, Boarding &amp; Daycare in Slidell, LA</title>
+<meta name="description" content="Marys Bed and Biscuit in Olde Towne Slidell, LA. Family-owned dog and cat grooming, boarding, and daycare since 2006. An alternative to leaving your pet in a caged environment. 4.8 from 98 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --honey:#d99a3d;
+    --honey-deep:#b57724;
+    --amber:#f4c95d;
+    --bark:#3a2a1c;
+    --bark-soft:#5a4530;
+    --cream:#faf5ea;
+    --cream-deep:#f1e7d2;
+    --sage:#7d8b6a;
+    --muted:#8a7a63;
+    --line:#e4d7bd;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'DM Sans',system-ui,sans-serif;background:var(--cream);color:var(--bark);line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+  .display{font-family:'DM Serif Display',serif;font-weight:400}
+
+  .disclosure{background:var(--bark);color:var(--amber);text-align:center;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;padding:11px 16px;font-weight:500}
+
+  header.site{background:var(--cream);border-bottom:2px solid var(--bark);position:sticky;top:0;z-index:50}
+  .masthead{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:18px 0}
+  .brand{font-family:'DM Serif Display',serif;font-size:1.9rem;color:var(--bark)}
+  .brand em{font-style:italic;color:var(--honey-deep)}
+  nav.main{display:flex;gap:26px;flex-wrap:wrap;align-items:center}
+  nav.main a{color:var(--bark-soft);text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em}
+  nav.main a:hover{color:var(--honey-deep)}
+  nav.main a.call{background:var(--bark);color:var(--cream);padding:11px 24px;border-radius:8px}
+  nav.main a.call:hover{background:var(--honey-deep);color:#fff}
+
+  .hero{display:grid;grid-template-columns:.92fr 1.08fr;min-height:600px}
+  .hero-copy{background:var(--bark);color:#f3ead6;display:flex;flex-direction:column;justify-content:center;padding:80px 60px;position:relative}
+  .hero-copy::after{content:"";position:absolute;top:28px;left:28px;right:28px;bottom:28px;border:1.5px solid rgba(244,201,93,.35);border-radius:6px;pointer-events:none}
+  .hero-copy>*{position:relative;z-index:1}
+  .hero-copy .est{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--amber);font-weight:600;margin-bottom:18px}
+  .hero-copy h1{font-family:'DM Serif Display',serif;font-size:clamp(2.5rem,5vw,4rem);line-height:1.1;font-weight:400}
+  .hero-copy h1 em{font-style:italic;color:var(--amber)}
+  .hero-copy p.lede{color:#d9cba8;margin:24px 0 28px;max-width:42ch}
+  .rating{display:flex;align-items:center;gap:12px;margin-bottom:30px;font-size:.92rem;color:#d9cba8}
+  .rating .stars{color:var(--amber);letter-spacing:.1em;font-size:1.1rem}
+  .rating strong{color:#fff}
+  .btn{display:inline-block;text-decoration:none;font-weight:600;font-size:.95rem;padding:16px 34px;border-radius:8px;transition:transform .16s ease}
+  .btn-honey{background:var(--honey);color:var(--bark)}
+  .btn-honey:hover{background:var(--amber);transform:translateY(-2px)}
+  .btn-outline{border:2px solid rgba(243,234,214,.5);color:#f3ead6;margin-left:12px}
+  .btn-outline:hover{border-color:var(--amber);color:var(--amber)}
+  .hero-photo{position:relative;min-height:440px}
+  .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .hero-photo figcaption{position:absolute;left:18px;bottom:14px;font-size:.8rem;color:rgba(250,245,234,.9);font-style:italic;background:rgba(58,42,28,.55);padding:5px 12px;border-radius:6px}
+
+  .promise{background:var(--honey);padding:26px 0}
+  .promise .wrap{display:flex;align-items:center;gap:22px;justify-content:center;flex-wrap:wrap}
+  .promise p{font-family:'DM Serif Display',serif;font-style:italic;font-size:clamp(1.2rem,2.6vw,1.7rem);color:var(--bark);text-align:center}
+
+  section.block{padding:84px 0}
+  .eyebrow{font-size:.76rem;letter-spacing:.3em;text-transform:uppercase;color:var(--honey-deep);font-weight:600;margin-bottom:12px}
+  h2.sec{font-family:'DM Serif Display',serif;font-size:clamp(2.1rem,4.2vw,3.2rem);margin-bottom:12px;line-height:1.15}
+  .sec-sub{color:var(--muted);max-width:62ch;margin-bottom:44px}
+
+  .svc-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .svc{background:#fffdf7;border:2px solid var(--bark);border-radius:14px;overflow:hidden;box-shadow:6px 6px 0 var(--cream-deep);transition:transform .18s ease, box-shadow .18s ease}
+  .svc:hover{transform:translate(-2px,-2px);box-shadow:10px 10px 0 var(--honey)}
+  .svc img{width:100%;height:230px;object-fit:cover;display:block;border-bottom:2px solid var(--bark)}
+  .svc .body{padding:30px}
+  .svc .paw{font-size:1.6rem;margin-bottom:10px}
+  .svc h3{font-family:'DM Serif Display',serif;font-size:1.6rem;margin-bottom:10px}
+  .svc p{font-size:.94rem;color:var(--muted)}
+  .svc figcaption{font-size:.76rem;color:var(--muted);font-style:italic;padding:0 30px 24px}
+
+  .heritage{background:var(--bark);color:#f3ead6;border-radius:20px;padding:70px 64px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .heritage h2{color:#fff}
+  .heritage .eyebrow{color:var(--amber)}
+  .heritage p{color:#d9cba8;margin-bottom:16px}
+  .award{margin-top:26px;background:rgba(244,201,93,.12);border:1.5px dashed var(--honey);border-radius:12px;padding:22px 26px}
+  .award strong{color:var(--amber);font-size:1.05rem}
+  .award p{margin:6px 0 0;font-size:.92rem}
+  .heritage img{width:100%;height:420px;object-fit:cover;border-radius:12px;display:block}
+  .heritage figcaption{font-size:.8rem;color:#a08c6a;font-style:italic;padding-top:10px}
+
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+  .hours-card{background:#fffdf7;border:2px solid var(--bark);border-radius:14px;padding:36px;box-shadow:6px 6px 0 var(--cream-deep)}
+  table.hours{width:100%;border-collapse:collapse;margin-top:8px}
+  table.hours td{padding:12px 2px;border-bottom:1px dashed var(--line);font-weight:500}
+  table.hours td:last-child{text-align:right;color:var(--muted)}
+  .hours-note{font-size:.84rem;color:var(--muted);font-style:italic;margin-top:14px}
+  .addr{font-size:1.05rem;margin-bottom:6px}
+  .addr a{color:var(--bark)}
+  .fb-link{margin-top:16px}
+  .fb-link a{color:var(--honey-deep);font-weight:600}
+
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .gallery figure{margin:0}
+  .gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px;display:block;border:2px solid var(--line)}
+  .gallery figcaption{font-size:.76rem;color:var(--muted);font-style:italic;padding-top:8px}
+
+  footer.site{background:var(--bark);color:#a08c6a;padding:48px 0;font-size:.88rem}
+  footer.site .wrap{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:center}
+  footer.site a{color:var(--amber)}
+  .fine{font-size:.76rem;color:#7a6a52;margin-top:16px;max-width:72ch}
+
+  @media(max-width:960px){
+    .hero{grid-template-columns:1fr}
+    .hero-copy{padding:60px 34px}
+    .hero-photo{min-height:320px;position:relative;height:320px}
+    .svc-cards{grid-template-columns:1fr}
+    .heritage{grid-template-columns:1fr;padding:44px 28px}
+    .visit-grid{grid-template-columns:1fr;gap:40px}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview &middot; Website Concept</div>
+
+<header class="site">
+  <div class="wrap masthead">
+    <div class="brand">Marys <em>Bed and Biscuit</em></div>
+    <nav class="main">
+      <a href="#services">Services</a>
+      <a href="#story">Our Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+      <a class="call" href="tel:+19856462345">(985) 646-2345</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="est">Family owned &middot; Since 2006 &middot; Olde Towne Slidell</div>
+    <h1>A home away from <em>home</em> for your pets.</h1>
+    <p class="lede">Dog and cat grooming, boarding, and daycare from a family-owned shop that has cared for Northshore pets for nearly twenty years.</p>
+    <div class="rating"><span class="stars">★★★★★</span><span><strong>4.8</strong> from 98 Google reviews</span></div>
+    <div>
+      <a class="btn btn-honey" href="tel:+19856462345">Call to Book</a>
+      <a class="btn btn-outline" href="#services">Our Services</a>
+    </div>
+  </div>
+  <figure class="hero-photo">
+    <img src="img/hero.jpg" alt="Happy dogs playing at Marys Bed and Biscuit" loading="eager">
+    <figcaption>Stock photo: Labrador retrievers playing outdoors.</figcaption>
+  </figure>
+</section>
+
+<div class="promise">
+  <div class="wrap">
+    <p>"An alternative to leaving your pet in a caged environment while you're away."</p>
+  </div>
+</div>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="eyebrow">Services</div>
+    <h2 class="sec">For dogs and cats alike</h2>
+    <p class="sec-sub">Grooming, boarding, and daycare, all under one roof in Olde Towne Slidell.</p>
+    <div class="svc-cards">
+      <div class="svc">
+        <img src="img/grooming.jpg" alt="Dog grooming session" loading="lazy">
+        <div class="body">
+          <div class="paw">✂</div>
+          <h3>Grooming</h3>
+          <p>Full grooming for dogs and cats, from baths and haircuts to the finishing touches that keep them looking their best.</p>
+        </div>
+        <figcaption>Stock photo: a groomer brushing a dog.</figcaption>
+      </div>
+      <div class="svc">
+        <img src="img/daycare.jpg" alt="Dogs playing at daycare" loading="lazy">
+        <div class="body">
+          <div class="paw">☀</div>
+          <h3>Daycare</h3>
+          <p>Daytime care with room to play and friends to make, so your pet comes home happy and tired.</p>
+        </div>
+        <figcaption>Stock photo: dogs playing together outdoors.</figcaption>
+      </div>
+      <div class="svc">
+        <img src="img/suite.jpg" alt="Cozy pet boarding area" loading="lazy">
+        <div class="body">
+          <div class="paw">⌂</div>
+          <h3>Boarding</h3>
+          <p>Overnight stays in a comfortable, cage-free-feeling environment. Like a sleepover, not a kennel.</p>
+        </div>
+        <figcaption>Stock photo: a dog resting in a cozy spot.</figcaption>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0" id="story">
+  <div class="wrap">
+    <div class="heritage">
+      <div>
+        <div class="eyebrow">Our Story</div>
+        <h2 class="sec">Serving the Northshore since 2006</h2>
+        <p>Marys Bed and Biscuit is a family-owned, independent business in the heart of Olde Towne Slidell. For nearly twenty years, local pet owners have trusted Marys with the members of the family who happen to have four legs.</p>
+        <p>The philosophy is right there in the name: bed and biscuit. A comfortable place to rest, good care, and maybe a treat, like home.</p>
+        <div class="award">
+          <strong>★ Northshore's Best</strong>
+          <p>Voted a Northshore favorite for pet grooming and boarding by Sophisticated Woman Magazine.</p>
+        </div>
+      </div>
+      <figure>
+        <img src="img/cat.jpg" alt="Cat being groomed" loading="lazy">
+        <figcaption>Stock photo: a cat being groomed.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="gallery" style="padding-top:20px">
+  <div class="wrap">
+    <div class="eyebrow">Gallery</div>
+    <h2 class="sec">Life at Marys</h2>
+    <p class="sec-sub">Playtime, pampering, and plenty of naps.</p>
+    <div class="gallery">
+      <figure><img src="img/hero.jpg" alt="Dogs playing" loading="lazy"><figcaption>Stock photo: Labrador retrievers playing outdoors.</figcaption></figure>
+      <figure><img src="img/grooming.jpg" alt="Grooming" loading="lazy"><figcaption>Stock photo: a groomer brushing a dog.</figcaption></figure>
+      <figure><img src="img/daycare.jpg" alt="Daycare play" loading="lazy"><figcaption>Stock photo: dogs playing together outdoors.</figcaption></figure>
+      <figure><img src="img/suite.jpg" alt="Boarding area" loading="lazy"><figcaption>Stock photo: a dog resting in a cozy spot.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit" style="padding-top:20px">
+  <div class="wrap">
+    <div class="eyebrow">Visit</div>
+    <h2 class="sec">Come meet us</h2>
+    <div class="visit-grid" style="margin-top:36px">
+      <div class="hours-card">
+        <div class="eyebrow">Hours</div>
+        <table class="hours">
+          <tr><td>Monday</td><td>8:00am - 10:00am</td></tr>
+          <tr><td>Tuesday - Saturday</td><td>8:00am - 4:00pm</td></tr>
+          <tr><td>Sunday</td><td>8:00am - 10:00am</td></tr>
+        </table>
+        <p class="hours-note">Hours as listed. Call ahead to arrange boarding drop-off and pickup.</p>
+      </div>
+      <div>
+        <p class="addr">2320 Carey St<br>Slidell, LA</p>
+        <p class="addr"><a href="tel:+19856462345">(985) 646-2345</a></p>
+        <p class="fb-link"><a href="https://www.facebook.com/profile.php?id=100063881602118">Follow Marys on Facebook</a></p>
+        <div style="margin-top:26px"><a class="btn btn-honey" href="tel:+19856462345">Call to Book</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div><strong style="color:#f3ead6">Marys Bed and Biscuit</strong><br>2320 Carey St, Slidell, LA &middot; <a href="tel:+19856462345">(985) 646-2345</a></div>
+    <div><a href="https://www.facebook.com/profile.php?id=100063881602118">Facebook</a></div>
+  </div>
+  <div class="wrap"><p class="fine">This is a design concept by <a href="https://freightfolio.net">Freightfolio</a>. It is not the business's website and does not represent the business.</p></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Paradise for Pets | Cage-Free Grooming &amp; Boarding in Navarre, FL</title>
+<meta name="description" content="Paradise for Pets Grooming and Boarding in Navarre, FL. The area's only cage-free grooming and boarding facility since 2015. Grooming with natural products, boarding, and daycare. 4.6 from 29 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0e3a52;
+    --navy-deep:#082433;
+    --aqua:#2fbfae;
+    --aqua-soft:#bfe9e2;
+    --coral:#ff7a59;
+    --coral-deep:#e05f3d;
+    --cream:#fff9f0;
+    --sand:#f3e8d3;
+    --ink:#17394e;
+    --muted:#5d7a8c;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Nunito',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+  .round{font-family:'Baloo 2',cursive}
+
+  .disclosure{background:var(--navy-deep);color:var(--aqua-soft);text-align:center;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;padding:11px 16px;font-weight:600}
+
+  header.site{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50}
+  .masthead{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 0}
+  .brand{font-family:'Baloo 2',cursive;font-weight:800;font-size:1.75rem;letter-spacing:.01em}
+  .brand .paw{color:var(--coral)}
+  nav.main{display:flex;gap:26px;flex-wrap:wrap;align-items:center}
+  nav.main a{color:#dceef5;text-decoration:none;font-size:.85rem;font-weight:700;letter-spacing:.06em}
+  nav.main a:hover{color:var(--coral)}
+  nav.main a.call{background:var(--coral);color:#fff;padding:10px 22px;border-radius:999px}
+  nav.main a.call:hover{background:var(--coral-deep);color:#fff}
+
+  .hero{background:var(--navy);color:#fff;overflow:hidden;position:relative}
+  .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
+  .hero-copy{padding:90px 56px 90px 0;display:flex;flex-direction:column;justify-content:center}
+  .badge{display:inline-flex;align-items:center;gap:10px;background:rgba(47,191,174,.16);border:1.5px dashed var(--aqua);color:var(--aqua-soft);border-radius:999px;padding:9px 20px;font-size:.85rem;font-weight:700;margin-bottom:24px;width:fit-content}
+  .hero h1{font-family:'Baloo 2',cursive;font-weight:800;font-size:clamp(2.7rem,5.6vw,4.4rem);line-height:1.04}
+  .hero h1 .wave{color:var(--aqua)}
+  .hero h1 .sun{color:var(--coral)}
+  .hero p.lede{color:#c3d9e4;font-size:1.08rem;margin:24px 0 30px;max-width:44ch}
+  .rating{display:flex;align-items:center;gap:12px;margin-bottom:30px;font-size:.94rem;color:#c3d9e4}
+  .rating .stars{color:#ffc94d;letter-spacing:.1em;font-size:1.1rem}
+  .rating strong{color:#fff}
+  .btn{display:inline-block;text-decoration:none;font-family:'Baloo 2',cursive;font-weight:700;font-size:1.05rem;padding:15px 36px;border-radius:999px;transition:transform .16s ease}
+  .btn-coral{background:var(--coral);color:#fff}
+  .btn-coral:hover{background:var(--coral-deep);transform:translateY(-2px) rotate(-1deg)}
+  .btn-outline{border:2px solid var(--aqua);color:var(--aqua-soft);margin-left:12px}
+  .btn-outline:hover{background:var(--aqua);color:var(--navy-deep)}
+  .hero-photo{position:relative;min-height:480px}
+  .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;border-radius:0 0 0 48px}
+  .hero-photo figcaption{position:absolute;left:18px;bottom:16px;font-size:.8rem;color:rgba(255,249,240,.9);font-style:italic;background:rgba(8,36,51,.55);padding:5px 12px;border-radius:999px}
+  .wave-band{height:40px;background:var(--navy);border-radius:0 0 50% 50%/0 0 100% 100%;margin-bottom:-1px}
+
+  section.block{padding:84px 0}
+  .eyebrow{font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--coral-deep);font-weight:800;margin-bottom:12px}
+  h2.sec{font-family:'Baloo 2',cursive;font-weight:800;font-size:clamp(2.1rem,4.2vw,3.2rem);line-height:1.1;margin-bottom:12px}
+  .sec-sub{color:var(--muted);max-width:62ch;margin-bottom:44px;font-size:1.02rem}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 10px 30px rgba(14,58,82,.08);transition:transform .18s ease}
+  .card:hover{transform:translateY(-6px) rotate(-.4deg)}
+  .card img{width:100%;height:220px;object-fit:cover;display:block}
+  .card .body{padding:28px}
+  .card .tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);background:var(--aqua-soft);padding:6px 14px;border-radius:999px;margin-bottom:12px}
+  .card h3{font-family:'Baloo 2',cursive;font-size:1.5rem;font-weight:700;margin-bottom:10px}
+  .card p{font-size:.95rem;color:var(--muted)}
+  .card figcaption{font-size:.76rem;color:var(--muted);font-style:italic;padding:0 28px 20px}
+
+  .cagefree{background:var(--navy);color:#fff;border-radius:36px;padding:70px 64px;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;position:relative;overflow:hidden}
+  .cagefree::before{content:"";position:absolute;top:-70px;right:-70px;width:260px;height:260px;border-radius:50%;background:rgba(47,191,174,.14)}
+  .cagefree::after{content:"";position:absolute;bottom:-90px;left:30%;width:200px;height:200px;border-radius:50%;background:rgba(255,122,89,.12)}
+  .cagefree h2{color:#fff}
+  .cagefree p{color:#c3d9e4;margin-bottom:16px}
+  .cagefree img{width:100%;height:400px;object-fit:cover;border-radius:24px;display:block;position:relative;z-index:1}
+  .cagefree figcaption{font-size:.8rem;color:#9db9c7;font-style:italic;padding-top:10px;position:relative;z-index:1}
+  .check-list{list-style:none;margin:22px 0 30px;position:relative;z-index:1}
+  .check-list li{padding:10px 0;font-size:1rem;color:#e6f2f7}
+  .check-list li::before{content:"✓ ";color:var(--aqua);font-weight:800}
+
+  .visit{background:var(--sand);border-radius:36px;padding:64px;display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  table.hours{width:100%;border-collapse:collapse;margin-top:6px}
+  table.hours td{padding:13px 2px;border-bottom:2px dotted rgba(23,57,78,.18);font-weight:600}
+  table.hours td:last-child{text-align:right;color:var(--muted)}
+  .addr{font-size:1.05rem;margin-bottom:6px;font-weight:600}
+  .addr a{color:var(--ink)}
+  .hours-note{font-size:.86rem;color:var(--muted);font-style:italic;margin-top:14px}
+
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .gallery figure{margin:0}
+  .gallery img{width:100%;height:250px;object-fit:cover;border-radius:22px;display:block}
+  .gallery figcaption{font-size:.78rem;color:var(--muted);font-style:italic;padding-top:8px}
+
+  footer.site{background:var(--navy-deep);color:#9db9c7;padding:48px 0;font-size:.88rem}
+  footer.site .wrap{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:center}
+  footer.site a{color:var(--aqua-soft)}
+  .fine{font-size:.76rem;color:#5f7d8f;margin-top:16px;max-width:72ch}
+
+  @media(max-width:960px){
+    .hero-inner{grid-template-columns:1fr}
+    .hero-copy{padding:60px 0}
+    .hero-photo{min-height:320px;position:relative;height:320px}
+    .hero-photo img{border-radius:0 0 24px 24px}
+    .cards{grid-template-columns:1fr}
+    .cagefree{grid-template-columns:1fr;padding:44px 28px}
+    .visit{grid-template-columns:1fr;padding:40px 28px}
+    .gallery{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview &middot; Website Concept</div>
+
+<header class="site">
+  <div class="wrap masthead">
+    <div class="brand"><span class="paw">🐾</span> Paradise for Pets</div>
+    <nav class="main">
+      <a href="#services">Services</a>
+      <a href="#cagefree">Cage-Free</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+      <a class="call" href="tel:+18502183816">(850) 218-3816</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="badge">Cage-free since 2015</div>
+      <h1>A <span class="wave">paradise</span> for pets, <span class="sun">peace of mind</span> for you.</h1>
+      <p class="lede">Grooming and boarding in Navarre where dogs play, rest, and get pampered without ever sitting in a cage. Natural and organic products, always.</p>
+      <div class="rating"><span class="stars">★★★★☆</span><span><strong>4.6</strong> from 29 Google reviews</span></div>
+      <div>
+        <a class="btn btn-coral" href="tel:+18502183816">Call to Book</a>
+        <a class="btn btn-outline" href="#services">See Services</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/hero.jpg" alt="Happy dog at Paradise for Pets" loading="eager">
+      <figcaption>Stock photo: a happy dog being groomed.</figcaption>
+    </figure>
+  </div>
+  <div class="wave-band" aria-hidden="true"></div>
+</section>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="eyebrow">Services</div>
+    <h2 class="sec">Grooming, boarding, and daycare</h2>
+    <p class="sec-sub">Everything your dog needs to look great and have a great day, in one cage-free facility.</p>
+    <div class="cards">
+      <div class="card">
+        <img src="img/bath.jpg" alt="Dog bath at Paradise for Pets" loading="lazy">
+        <div class="body">
+          <div class="tag">Grooming</div>
+          <h3>Baths &amp; Full Grooming</h3>
+          <p>Bathing, haircuts, ear cleaning, and nail trimming with natural and organic products that are gentle on skin and coat.</p>
+        </div>
+        <figcaption>Stock photo: a dog getting a bath.</figcaption>
+      </div>
+      <div class="card">
+        <img src="img/haircut.jpg" alt="Dog haircut" loading="lazy">
+        <div class="body">
+          <div class="tag">Add-ons</div>
+          <h3>Spa Extras</h3>
+          <p>Paw treatments and teeth cleaning add-ons for the full spa day treatment.</p>
+        </div>
+        <figcaption>Stock photo: a groomer trimming a Yorkshire Terrier.</figcaption>
+      </div>
+      <div class="card">
+        <img src="img/play.jpg" alt="Dogs playing in cage-free area" loading="lazy">
+        <div class="body">
+          <div class="tag">Boarding &amp; Daycare</div>
+          <h3>Cage-Free Boarding</h3>
+          <p>Overnight boarding and daycare in open play spaces. Dogs socialize, play, and rest like they would at home.</p>
+        </div>
+        <figcaption>Stock photo: puppies playing together on grass.</figcaption>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0" id="cagefree">
+  <div class="wrap">
+    <div class="cagefree">
+      <div>
+        <div class="eyebrow" style="color:var(--aqua)">The Paradise Difference</div>
+        <h2 class="sec">The area's only cage-free facility</h2>
+        <p>Since 2015, Paradise for Pets has done things differently: dogs stay in open play spaces instead of cages or kennels, so there are no stressed-out pups. Dogs spend their stay playing and lounging in open spaces with plenty of human attention.</p>
+        <ul class="check-list">
+          <li>Cage-free grooming and boarding</li>
+          <li>Natural and organic grooming products</li>
+          <li>Social playtime, not solitary kennels</li>
+          <li>Serving Navarre since 2015</li>
+        </ul>
+        <a class="btn btn-coral" href="tel:+18502183816">Call (850) 218-3816</a>
+      </div>
+      <figure>
+        <img src="img/pups.jpg" alt="Happy dogs playing together" loading="lazy">
+        <figcaption>Stock photo: puppies playing outdoors.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="gallery" style="padding-top:20px">
+  <div class="wrap">
+    <div class="eyebrow">Gallery</div>
+    <h2 class="sec">Happy campers</h2>
+    <p class="sec-sub">A peek at life at Paradise.</p>
+    <div class="gallery">
+      <figure><img src="img/hero.jpg" alt="Happy dog" loading="lazy"><figcaption>Stock photo: a happy dog being groomed.</figcaption></figure>
+      <figure><img src="img/play.jpg" alt="Dogs playing" loading="lazy"><figcaption>Stock photo: puppies playing together on grass.</figcaption></figure>
+      <figure><img src="img/bath.jpg" alt="Bath time" loading="lazy"><figcaption>Stock photo: a dog getting a bath.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit" style="padding-top:20px">
+  <div class="wrap">
+    <div class="visit">
+      <div>
+        <div class="eyebrow">Hours</div>
+        <h2 class="sec">When we're open</h2>
+        <table class="hours">
+          <tr><td>Monday - Friday</td><td>8:00am - 3:00pm</td></tr>
+          <tr><td>Saturday</td><td>8:00am - 12:00pm</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <p class="hours-note">Hours as listed. Call ahead for boarding drop-off and pickup times.</p>
+      </div>
+      <div>
+        <div class="eyebrow">Visit</div>
+        <h2 class="sec">Come say hi</h2>
+        <p class="addr">7281 Navarre Pkwy<br>Navarre, FL 32566</p>
+        <p class="addr"><a href="tel:+18502183816">(850) 218-3816</a></p>
+        <div style="margin-top:26px"><a class="btn btn-coral" href="tel:+18502183816">Call to Book</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div><strong style="color:#fff">Paradise for Pets Grooming and Boarding</strong><br>7281 Navarre Pkwy, Navarre, FL 32566 &middot; <a href="tel:+18502183816">(850) 218-3816</a></div>
+  </div>
+  <div class="wrap"><p class="fine">This is a design concept by <a href="https://freightfolio.net">Freightfolio</a>. It is not the business's website and does not represent the business.</p></div>
+</footer>
+</body>
+</html>

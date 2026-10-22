@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Elysian Salon Spa | High-End Beauty in Pass Christian, MS</title>
+<meta name="description" content="Elysian Salon Spa in Pass Christian, MS. Hair, nails, lashes, massage, and aesthetic wellness services. High-end beauty with small-town service and charm. 5.0 from 72 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#faf7f1;
+    --ivory-deep:#f1ece1;
+    --champagne:#d9b98c;
+    --bronze:#a67c52;
+    --bronze-deep:#7d5a38;
+    --espresso:#2e2620;
+    --espresso-soft:#4a4038;
+    --muted:#8a7d6d;
+    --line:#e3dac8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Jost',system-ui,sans-serif;background:var(--ivory);color:var(--espresso);line-height:1.75;font-weight:300;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+  .serif{font-family:'Cormorant Garamond',serif}
+
+  .disclosure{background:var(--espresso);color:var(--champagne);text-align:center;font-size:11px;letter-spacing:.3em;text-transform:uppercase;padding:11px 16px}
+
+  header.site{padding:26px 0;border-bottom:1px solid var(--line)}
+  .masthead{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .brand{font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+  .brand small{display:block;font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.5em;color:var(--bronze);margin-top:2px}
+  nav.main{display:flex;gap:28px;flex-wrap:wrap}
+  nav.main a{color:var(--espresso-soft);text-decoration:none;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;font-weight:400;position:relative;padding-bottom:4px}
+  nav.main a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--bronze);transition:width .25s ease}
+  nav.main a:hover::after{width:100%}
+
+  .hero{border-bottom:1px solid var(--line)}
+  .hero-inner{display:grid;grid-template-columns:1fr 1fr;min-height:620px;max-width:1200px;margin:0 auto}
+  .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:80px 64px 80px 30px}
+  .motto{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--bronze-deep);margin-bottom:18px}
+  .hero h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.8rem,5.6vw,4.6rem);line-height:1.06}
+  .hero h1 em{font-style:italic;color:var(--bronze-deep)}
+  .hero p.lede{color:var(--muted);font-size:1.06rem;margin:26px 0 32px;max-width:44ch}
+  .rating{display:flex;align-items:center;gap:12px;margin-bottom:30px;font-size:.92rem;color:var(--muted)}
+  .rating .stars{color:var(--bronze);letter-spacing:.12em;font-size:1.05rem}
+  .rating strong{color:var(--espresso);font-weight:500}
+  .btn{display:inline-block;text-decoration:none;font-size:.82rem;letter-spacing:.24em;text-transform:uppercase;font-weight:500;padding:17px 40px;transition:all .22s ease}
+  .btn-bronze{background:var(--espresso);color:var(--ivory)}
+  .btn-bronze:hover{background:var(--bronze-deep);transform:translateY(-2px)}
+  .btn-line{border:1px solid var(--bronze);color:var(--espresso);margin-left:12px}
+  .btn-line:hover{background:var(--espresso);color:var(--ivory);border-color:var(--espresso)}
+  .hero-photo{position:relative}
+  .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .hero-photo figcaption{position:absolute;left:20px;bottom:16px;font-size:.8rem;color:rgba(250,247,241,.85);font-style:italic;background:rgba(46,38,32,.5);padding:5px 12px}
+
+  .intro{padding:90px 0 30px;text-align:center}
+  .intro .rule{width:64px;height:1px;background:var(--bronze);margin:0 auto 28px}
+  .intro p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,2.8vw,2.1rem);font-style:italic;color:var(--espresso-soft);max-width:34ch;margin:0 auto;line-height:1.5}
+
+  section.block{padding:80px 0}
+  .eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--bronze);font-weight:500;margin-bottom:14px}
+  h2.sec{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(2.2rem,4.2vw,3.3rem);margin-bottom:10px}
+  .sec-sub{color:var(--muted);max-width:60ch;margin-bottom:46px}
+
+  .svc-layout{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+  .svc-photo{position:sticky;top:110px}
+  .svc-photo img{width:100%;height:560px;object-fit:cover;display:block}
+  .svc-photo figcaption{font-size:.82rem;color:var(--muted);font-style:italic;padding-top:10px}
+  .svc-group{margin-bottom:44px}
+  .svc-group h3{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:500;color:var(--espresso);padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:6px}
+  .svc-group h3 span{font-family:'Jost',sans-serif;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--bronze);display:block;margin-bottom:6px;font-weight:500}
+  .svc-group ul{list-style:none}
+  .svc-group li{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px dotted var(--line);font-size:1rem}
+  .svc-group li span:last-child{color:var(--muted);font-size:.9rem;text-align:right;flex-shrink:0}
+  .wellness-note{background:var(--ivory-deep);border-left:3px solid var(--bronze);padding:22px 26px;margin-top:8px;font-size:.94rem;color:var(--espresso-soft)}
+  .wellness-note strong{font-weight:500;color:var(--espresso)}
+
+  .owners{background:var(--espresso);color:#e9e2d4}
+  .owners-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+  .owners-grid img{width:100%;height:440px;object-fit:cover;display:block}
+  .owners-grid figcaption{font-size:.82rem;color:#9a917f;font-style:italic;padding-top:10px}
+  .owners h2{color:var(--ivory)}
+  .owners p{color:#c9c0ae;margin-bottom:16px}
+  .owners .sig{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.25rem;color:var(--champagne);margin-top:22px}
+
+  .visit-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px}
+  table.hours{width:100%;border-collapse:collapse;margin-top:6px}
+  table.hours td{padding:14px 2px;border-bottom:1px solid var(--line)}
+  table.hours td:last-child{text-align:right;color:var(--muted)}
+  .addr{font-size:1.02rem;margin-bottom:6px}
+  .addr a{color:var(--espresso)}
+  .cta-band{margin-top:34px;background:var(--ivory-deep);border:1px solid var(--line);padding:34px;text-align:center}
+  .cta-band p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;margin-bottom:20px;color:var(--espresso-soft)}
+
+  .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px}
+  .gallery figure{margin:0}
+  .gallery img{width:100%;height:300px;object-fit:cover;display:block}
+  .gallery figure:first-child img{height:618px}
+  .gallery figcaption{font-size:.78rem;color:var(--muted);font-style:italic;padding-top:8px}
+
+  footer.site{background:var(--espresso);color:#9a917f;padding:48px 0;font-size:.88rem}
+  footer.site .wrap{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:center}
+  footer.site a{color:#d9cfae}
+  .fine{font-size:.76rem;color:#6f675a;margin-top:16px;max-width:72ch}
+
+  @media(max-width:960px){
+    .hero-inner{grid-template-columns:1fr;min-height:0}
+    .hero-copy{padding:56px 30px}
+    .hero-photo{height:380px;position:relative}
+    .svc-layout,.owners-grid,.visit-grid{grid-template-columns:1fr;gap:40px}
+    .svc-photo{position:static}
+    .svc-photo img{height:380px}
+    .gallery{grid-template-columns:1fr}
+    .gallery figure:first-child img{height:300px}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview &middot; Website Concept</div>
+
+<header class="site">
+  <div class="wrap masthead">
+    <div class="brand">Elysian<small>Salon &middot; Spa</small></div>
+    <nav class="main">
+      <a href="#services">Services</a>
+      <a href="#story">Our Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="motto">High-end beauty with small-town service and charm.</p>
+      <h1>Look radiant.<br><em>Feel restored.</em></h1>
+      <p class="lede">A full-service salon and day spa on West Scenic Drive in Pass Christian. Hair, nails, lashes, massage, and aesthetic wellness, all under one roof.</p>
+      <div class="rating"><span class="stars">★★★★★</span><span><strong>5.0</strong> from 72 Google reviews</span></div>
+      <div>
+        <a class="btn btn-bronze" href="https://elysiansalonspa.mysalononline.com">Book Now</a>
+        <a class="btn btn-line" href="tel:+12282222130">Call Us</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/hero.jpg" alt="Elysian Salon Spa lounge" loading="eager">
+      <figcaption>Stock photo: a chic salon interior with styling chairs.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="intro">
+  <div class="wrap">
+    <div class="rule"></div>
+    <p>One address for the haircut, the massage, and everything in between.</p>
+  </div>
+</div>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="eyebrow">Services</div>
+    <h2 class="sec">The full menu</h2>
+    <p class="sec-sub">From a quick polish change to a full day of restoration. Book online or call the front desk.</p>
+    <div class="svc-layout">
+      <div>
+        <div class="svc-group">
+          <h3><span>Hair</span>Cut, Color &amp; Style</h3>
+          <ul>
+            <li><span>Haircuts &amp; styling</span><span>all hair types</span></li>
+            <li><span>Special occasion hair</span><span>weddings &amp; events</span></li>
+          </ul>
+        </div>
+        <div class="svc-group">
+          <h3><span>Nails</span>Manicure &amp; Pedicure</h3>
+          <ul>
+            <li><span>Manicures &amp; pedicures</span><span>classic &amp; spa</span></li>
+            <li><span>Nail art</span><span>custom designs</span></li>
+            <li><span>Eyelash extensions</span><span>full &amp; fills</span></li>
+          </ul>
+        </div>
+        <div class="svc-group">
+          <h3><span>Spa</span>Massage &amp; Body</h3>
+          <ul>
+            <li><span>Full-service spa massage</span><span>relaxation &amp; therapeutic</span></li>
+            <li><span>Contouring massage</span><span>body sculpting focus</span></li>
+          </ul>
+        </div>
+        <div class="svc-group">
+          <h3><span>Wellness</span>Aesthetics &amp; Wellness</h3>
+          <ul>
+            <li><span>Botox &amp; dermal fillers</span><span>by consultation</span></li>
+            <li><span>Weight loss management</span><span>guided programs</span></li>
+            <li><span>Hormone replacement therapy</span><span>by consultation</span></li>
+            <li><span>Wellness shots &amp; hydration</span><span>walk in</span></li>
+          </ul>
+          <div class="wellness-note"><strong>A note on wellness services:</strong> aesthetic and wellness treatments begin with a consultation so the plan fits you. Call <a href="tel:+12282222130" style="color:var(--espresso)">(228) 222-2130</a> to discuss what you have in mind.</div>
+        </div>
+      </div>
+      <figure class="svc-photo">
+        <img src="img/hair.jpg" alt="Hair styling at Elysian Salon Spa" loading="lazy">
+        <figcaption>Stock photo: a hairdresser coloring a client&#39;s hair.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block owners" id="story">
+  <div class="wrap">
+    <div class="owners-grid">
+      <div>
+        <div class="eyebrow" style="color:var(--champagne)">Our Story</div>
+        <h2 class="sec">Small-town roots, high-end craft</h2>
+        <p>Elysian Salon Spa was founded in 2017 by co-owners Bach Kimball and Lindsey Fowler, and expanded in early 2025 to bring the salon and spa experience together in one space.</p>
+        <p>The idea has never changed: bring the polish of a high-end beauty destination to the Mississippi Gulf Coast, delivered with the warmth of neighbors who know your name.</p>
+        <p class="sig">Bach Kimball &amp; Lindsey Fowler, co-owners</p>
+      </div>
+      <figure>
+        <img src="img/massage.jpg" alt="Spa massage treatment" loading="lazy">
+        <figcaption>Stock photo: a spa massage treatment.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="gallery">
+  <div class="wrap">
+    <div class="eyebrow">Gallery</div>
+    <h2 class="sec">Inside Elysian</h2>
+    <p class="sec-sub">A look at the space and the work.</p>
+    <div class="gallery">
+      <figure><img src="img/nails.jpg" alt="Manicure and nail art" loading="lazy"><figcaption>Stock photo: a manicure in progress.</figcaption></figure>
+      <figure><img src="img/facial.jpg" alt="Facial treatment" loading="lazy"><figcaption>Stock photo: a relaxing facial treatment.</figcaption></figure>
+      <figure><img src="img/hero.jpg" alt="Salon interior" loading="lazy"><figcaption>Stock photo: a chic salon interior with styling chairs.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit" style="padding-top:20px">
+  <div class="wrap">
+    <div class="eyebrow">Visit</div>
+    <h2 class="sec">Come see us on Scenic Drive</h2>
+    <div class="visit-grid" style="margin-top:36px">
+      <div>
+        <table class="hours">
+          <tr><td>Tuesday - Friday</td><td>9:00am - 6:00pm</td></tr>
+          <tr><td>Saturday</td><td>9:00am - 4:00pm</td></tr>
+          <tr><td>Sunday - Monday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <div>
+        <p class="addr">116 W Scenic Dr, Suite A/B<br>Pass Christian, MS 39571</p>
+        <p class="addr"><a href="tel:+12282222130">(228) 222-2130</a></p>
+        <div class="cta-band">
+          <p>Ready when you are.</p>
+          <a class="btn btn-bronze" href="https://elysiansalonspa.mysalononline.com">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div><strong style="color:#e9e2d4">Elysian Salon Spa</strong><br>116 W Scenic Dr, Pass Christian, MS 39571 &middot; <a href="tel:+12282222130">(228) 222-2130</a></div>
+    <div><a href="https://elysiansalonspa.mysalononline.com">Book online</a></div>
+  </div>
+  <div class="wrap"><p class="fine">This is a design concept by <a href="https://freightfolio.net">Freightfolio</a>. It is not the business's website and does not represent the business.</p></div>
+</footer>
+</body>
+</html>

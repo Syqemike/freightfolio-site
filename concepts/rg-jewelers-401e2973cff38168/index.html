@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>RG Jewelers | Independent Jeweler in Slidell, LA: Sales, Repair and Custom Design</title>
+<meta name="description" content="RG Jewelers, an independent jeweler at 1414 Gause Blvd, Slidell, LA. Jewelry sales and repair, custom design, bridal sets, appraisals, Seiko and Pulsar watches, and top dollar paid for gold and silver. 4.8 from 32 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --oxblood:#5c1f1f;
+    --oxblood-deep:#3d1414;
+    --brass:#c19a4b;
+    --brass-soft:#e0c078;
+    --parchment:#f6f0e2;
+    --parchment-deep:#ece3cc;
+    --ink:#2a2118;
+    --muted:#7a6c58;
+    --line:#ddd0b4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--parchment);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+  .display{font-family:'Marcellus',serif;font-weight:400}
+
+  .disclosure{background:var(--oxblood-deep);color:var(--brass-soft);text-align:center;font-size:11px;letter-spacing:.28em;text-transform:uppercase;padding:11px 16px}
+
+  header.site{background:var(--oxblood);color:#f3ecdc}
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:16px 0;font-size:.82rem;letter-spacing:.1em}
+  .topbar a{color:var(--brass-soft);text-decoration:none}
+  .brandrow{text-align:center;padding:34px 0 30px;border-top:1px solid rgba(224,192,120,.25)}
+  .brand{font-family:'Marcellus',serif;font-size:clamp(2.6rem,6vw,4.4rem);letter-spacing:.1em;color:#f7f1e0}
+  .brand-sub{font-size:.78rem;letter-spacing:.42em;text-transform:uppercase;color:var(--brass-soft);margin-top:10px}
+  nav.main{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;padding:0 0 26px}
+  nav.main a{color:#efe6d0;text-decoration:none;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+  nav.main a:hover{color:var(--brass-soft)}
+
+  .hero{display:grid;grid-template-columns:1fr 1fr;min-height:600px;background:var(--oxblood-deep)}
+  .hero-photo{position:relative;min-height:420px}
+  .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .hero-photo figcaption{position:absolute;left:18px;bottom:14px;font-size:.8rem;color:rgba(246,240,226,.85);font-style:italic;background:rgba(61,20,20,.55);padding:5px 12px}
+  .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:70px 60px;color:#f3ecdc}
+  .hero-copy .eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--brass-soft);font-weight:600;margin-bottom:16px}
+  .hero-copy h1{font-family:'Marcellus',serif;font-size:clamp(2.4rem,4.6vw,3.8rem);line-height:1.14;font-weight:400}
+  .hero-copy h1 em{font-style:normal;color:var(--brass-soft)}
+  .hero-copy p{color:#d8cdb4;margin:22px 0 28px;max-width:44ch;font-weight:300}
+  .rating{display:flex;align-items:center;gap:12px;margin-bottom:28px;font-size:.92rem;color:#d8cdb4}
+  .rating .stars{color:var(--brass-soft);letter-spacing:.12em}
+  .rating strong{color:#fff}
+  .btn{display:inline-block;text-decoration:none;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;padding:16px 36px;transition:all .2s ease}
+  .btn-brass{background:var(--brass);color:var(--oxblood-deep)}
+  .btn-brass:hover{background:var(--brass-soft);transform:translateY(-2px)}
+  .btn-ghost{border:1.5px solid rgba(246,240,226,.5);color:#f3ecdc;margin-left:12px}
+  .btn-ghost:hover{border-color:var(--brass-soft);color:var(--brass-soft)}
+
+  .ticker{background:var(--brass);color:var(--oxblood-deep);padding:14px 0;text-align:center;font-size:.82rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700}
+  .ticker span{margin:0 20px}
+
+  section.block{padding:84px 0}
+  .eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:#8a6a2e;font-weight:700;margin-bottom:14px}
+  h2.sec{font-family:'Marcellus',serif;font-size:clamp(2.1rem,4vw,3.1rem);margin-bottom:12px;color:var(--ink)}
+  .sec-sub{color:var(--muted);max-width:62ch;margin-bottom:44px}
+
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .svc{background:#fffdf6;border:1px solid var(--line);padding:0;overflow:hidden;transition:transform .18s ease, box-shadow .18s ease}
+  .svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(61,20,20,.12)}
+  .svc img{width:100%;height:210px;object-fit:cover;display:block}
+  .svc .body{padding:28px}
+  .svc .num{font-family:'Marcellus',serif;color:var(--brass);font-size:1rem;letter-spacing:.2em;margin-bottom:8px}
+  .svc h3{font-family:'Marcellus',serif;font-size:1.5rem;margin-bottom:10px;color:var(--oxblood-deep)}
+  .svc p{font-size:.94rem;color:var(--muted)}
+  .svc figcaption{font-size:.76rem;color:var(--muted);font-style:italic;padding:0 28px 22px}
+
+  .gold-band{background:var(--oxblood);color:#f3ecdc}
+  .gold-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .gold-grid img{width:100%;height:440px;object-fit:cover;display:block;border:1px solid rgba(224,192,120,.35)}
+  .gold-grid figcaption{font-size:.8rem;color:#b9a87f;font-style:italic;padding-top:10px}
+  .gold-grid h2{color:#f7f1e0}
+  .gold-grid p{color:#d8cdb4;margin-bottom:16px}
+  .gold-grid ul{list-style:none;margin:20px 0 28px}
+  .gold-grid li{padding:10px 0;border-bottom:1px solid rgba(224,192,120,.22);font-size:.96rem}
+  .gold-grid li::before{content:"◆ ";color:var(--brass-soft);font-size:.7rem}
+
+  .brands{padding:64px 0;border-bottom:1px solid var(--line);text-align:center}
+  .brands .eyebrow{margin-bottom:20px}
+  .brand-list{display:flex;justify-content:center;gap:44px;flex-wrap:wrap;font-family:'Marcellus',serif;font-size:1.6rem;color:var(--oxblood-deep);letter-spacing:.06em}
+  .brand-list small{display:block;font-family:'Inter',sans-serif;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+  table.hours{width:100%;border-collapse:collapse;margin-top:6px}
+  table.hours td{padding:14px 2px;border-bottom:1px solid var(--line)}
+  table.hours td:last-child{text-align:right;color:var(--muted)}
+  .addr{font-size:1.04rem;margin-bottom:6px}
+  .addr a{color:var(--ink)}
+  .social{margin-top:18px}
+  .social a{color:var(--oxblood);font-weight:600}
+
+  footer.site{background:var(--oxblood-deep);color:#b9a87f;padding:48px 0;font-size:.88rem}
+  footer.site .wrap{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:center}
+  footer.site a{color:var(--brass-soft)}
+  .fine{font-size:.76rem;color:#8a7a5c;margin-top:16px;max-width:72ch}
+
+  @media(max-width:960px){
+    .hero{grid-template-columns:1fr}
+    .hero-copy{padding:52px 28px}
+    .hero-photo{min-height:320px;position:relative;height:320px}
+    .svc-grid{grid-template-columns:1fr}
+    .gold-grid,.visit-grid{grid-template-columns:1fr;gap:40px}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview &middot; Website Concept</div>
+
+<header class="site">
+  <div class="wrap">
+    <div class="topbar">
+      <span>1414 Gause Blvd, Slidell, LA</span>
+      <a href="tel:+19856438408">(985) 643-8408</a>
+    </div>
+    <div class="brandrow">
+      <div class="brand">RG Jewelers</div>
+      <div class="brand-sub">Sales &middot; Repair &middot; Custom Design</div>
+    </div>
+    <nav class="main">
+      <a href="#services">Services</a>
+      <a href="#gold">We Buy Gold</a>
+      <a href="#brands">Brands</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <figure class="hero-photo">
+    <img src="img/hero.jpg" alt="Jewelry display case at RG Jewelers" loading="eager">
+    <figcaption>Stock photo: gold jewelry in a display case.</figcaption>
+  </figure>
+  <div class="hero-copy">
+    <div class="eyebrow">Independent Jeweler &middot; Slidell, Louisiana</div>
+    <h1>Fine jewelry, <em>honest craft,</em> real people.</h1>
+    <p>An independent jewelry store where repairs are done with care, custom pieces are designed around you, and every question gets a straight answer.</p>
+    <div class="rating"><span class="stars">★★★★★</span><span><strong>4.8</strong> from 32 Google reviews</span></div>
+    <div>
+      <a class="btn btn-brass" href="tel:+19856438408">Call (985) 643-8408</a>
+      <a class="btn btn-ghost" href="#services">Our Services</a>
+    </div>
+  </div>
+</section>
+
+<div class="ticker"><span>Expert Repair</span>·<span>Custom Design</span>·<span>Bridal Sets</span>·<span>Appraisals</span>·<span>We Buy Gold &amp; Silver</span></div>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="eyebrow">What We Do</div>
+    <h2 class="sec">A jeweler that does the work</h2>
+    <p class="sec-sub">Sales, service, and craftsmanship in one shop on Gause Boulevard.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <img src="img/bench.jpg" alt="Jeweler workbench with repair tools" loading="lazy">
+        <div class="body">
+          <div class="num">01</div>
+          <h3>Expert Repair</h3>
+          <p>Ring sizing, stone setting, chain repair, and restoration, handled in-house by people who do this every day.</p>
+        </div>
+        <figcaption>Stock photo: an artisan crafting jewelry at a workbench.</figcaption>
+      </div>
+      <div class="svc">
+        <img src="img/bridal.jpg" alt="Bridal ring sets" loading="lazy">
+        <div class="body">
+          <div class="num">02</div>
+          <h3>Custom Design &amp; Bridal</h3>
+          <p>Custom jewelry designed around your ideas, plus bridal sets for engagements and anniversaries.</p>
+        </div>
+        <figcaption>Stock photo: gold wedding and engagement rings.</figcaption>
+      </div>
+      <div class="svc">
+        <img src="img/watches.jpg" alt="Wristwatches" loading="lazy">
+        <div class="body">
+          <div class="num">03</div>
+          <h3>Watches</h3>
+          <p>Seiko and Pulsar watches, plus preowned Rolex pieces for collectors and first-time buyers alike.</p>
+        </div>
+        <figcaption>Stock photo: luxury wristwatches in a display case.</figcaption>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block gold-band" id="gold">
+  <div class="wrap">
+    <div class="gold-grid">
+      <div>
+        <div class="eyebrow" style="color:var(--brass-soft)">We Buy Gold &amp; Silver</div>
+        <h2 class="sec">Top dollar for your gold and silver</h2>
+        <p>Bring in unwanted jewelry, coins, or scrap gold and silver. You get a fair, transparent offer on the spot.</p>
+        <ul>
+          <li>Gold jewelry, any karat</li>
+          <li>Silver pieces and flatware</li>
+          <li>Free, no-pressure appraisals</li>
+        </ul>
+        <a class="btn btn-brass" href="tel:+19856438408">Call for Today's Prices</a>
+      </div>
+      <figure>
+        <img src="img/gold.jpg" alt="Gold jewelry pieces" loading="lazy">
+        <figcaption>Stock photo: a gold necklace on display.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="brands" id="brands">
+  <div class="wrap">
+    <div class="eyebrow">Carried In Store</div>
+    <div class="brand-list">
+      <div>Seiko<small>Watches</small></div>
+      <div>Pulsar<small>Watches</small></div>
+      <div>Rolex<small>Preowned</small></div>
+    </div>
+  </div>
+</div>
+
+<section class="block" id="visit">
+  <div class="wrap">
+    <div class="eyebrow">Visit</div>
+    <h2 class="sec">Stop by the shop</h2>
+    <div class="visit-grid" style="margin-top:36px">
+      <div>
+        <table class="hours">
+          <tr><td>Monday - Friday</td><td>9:00am - 5:00pm</td></tr>
+          <tr><td>Saturday</td><td>9:00am - 2:00pm</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <div>
+        <p class="addr">1414 Gause Blvd<br>Slidell, LA</p>
+        <p class="addr"><a href="tel:+19856438408">(985) 643-8408</a></p>
+        <p class="social"><a href="http://www.facebook.com/rgjewelers">Find us on Facebook</a></p>
+        <div style="margin-top:26px"><a class="btn btn-brass" href="tel:+19856438408">Call the Store</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div><strong style="color:#f3ecdc">RG Jewelers</strong><br>1414 Gause Blvd, Slidell, LA &middot; <a href="tel:+19856438408">(985) 643-8408</a></div>
+    <div><a href="http://www.facebook.com/rgjewelers">Facebook</a></div>
+  </div>
+  <div class="wrap"><p class="fine">This is a design concept by <a href="https://freightfolio.net">Freightfolio</a>. It is not the business's website and does not represent the business.</p></div>
+</footer>
+</body>
+</html>

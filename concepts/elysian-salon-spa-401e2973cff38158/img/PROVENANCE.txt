@@ -1,0 +1,30 @@
+PROVENANCE — Elysian Salon Spa (day spa + salon, Pass Christian MS)
+Sourced 2026-10-22 by Freightfolio Photo Coordinator (website-dev shift, batch 24).
+
+REAL-PHOTO ATTEMPTS (none retrievable; all slots filled with honestly labeled stock):
+- Glossgenius portal (Essentially Therapeutic Massage) fetched via text fetch: page exposed no downloadable image URLs.
+- mysalononline (Elysian Salon Spa) fetch failed at the source.
+- Facebook business pages (Bay Strength BSF2022, RG Jewelers, Marys Bed and Biscuit): require login; Facebook CDN image URLs return 403 to unauthenticated requests (standing finding). No real photos publicly retrievable.
+- dogdog.org / Instagram location tag (Paradise for Pets): no publicly downloadable originals found.
+CONCLUSION: 0 real photos, 5 stock photos. All stock below are Pexels free-license photos; none show another business's signage, logo, or identifiable branding. Visually spot-checked before delivery.
+
+
+- hero.jpg: source=stock
+  source_url: https://www.pexels.com/photo/13068377/
+  depicts: Chic modern beauty salon interior with styling chairs and mirrors
+
+- hair.jpg: source=stock
+  source_url: https://www.pexels.com/photo/3993310/
+  depicts: Hairdresser applying hair color to a client seated in a salon chair
+
+- nails.jpg: source=stock
+  source_url: https://www.pexels.com/photo/22668317/
+  depicts: Woman having her nails done by a beautician; manicure in progress
+
+- massage.jpg: source=stock
+  source_url: https://www.pexels.com/photo/19641816/
+  depicts: Massage therapist performing a spa massage on a client's back
+
+- facial.jpg: source=stock
+  source_url: https://www.pexels.com/photo/37229301/
+  depicts: Woman receiving a relaxing spa facial treatment with a face mask

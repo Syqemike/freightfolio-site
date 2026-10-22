@@ -1,0 +1,30 @@
+PROVENANCE — RG Jewelers (independent jeweler, Slidell LA)
+Sourced 2026-10-22 by Freightfolio Photo Coordinator (website-dev shift, batch 24).
+
+REAL-PHOTO ATTEMPTS (none retrievable; all slots filled with honestly labeled stock):
+- Glossgenius portal (Essentially Therapeutic Massage) fetched via text fetch: page exposed no downloadable image URLs.
+- mysalononline (Elysian Salon Spa) fetch failed at the source.
+- Facebook business pages (Bay Strength BSF2022, RG Jewelers, Marys Bed and Biscuit): require login; Facebook CDN image URLs return 403 to unauthenticated requests (standing finding). No real photos publicly retrievable.
+- dogdog.org / Instagram location tag (Paradise for Pets): no publicly downloadable originals found.
+CONCLUSION: 0 real photos, 5 stock photos. All stock below are Pexels free-license photos; none show another business's signage, logo, or identifiable branding. Visually spot-checked before delivery.
+
+
+- hero.jpg: source=stock
+  source_url: https://www.pexels.com/photo/29043373/
+  depicts: Elegant gold jewelry displayed in a jewelry store case
+
+- bridal.jpg: source=stock
+  source_url: https://www.pexels.com/photo/28933799/
+  depicts: Elegant gold wedding and engagement rings on display
+
+- bench.jpg: source=stock
+  source_url: https://www.pexels.com/photo/31128289/
+  depicts: Artisan crafting gold jewelry at a workbench in a workshop
+
+- watches.jpg: source=stock
+  source_url: https://www.pexels.com/photo/31642726/
+  depicts: Elegant collection of luxury wristwatches in a display case
+
+- gold.jpg: source=stock
+  source_url: https://www.pexels.com/photo/29013500/
+  depicts: Elegant gold necklace on display in a jewelry store

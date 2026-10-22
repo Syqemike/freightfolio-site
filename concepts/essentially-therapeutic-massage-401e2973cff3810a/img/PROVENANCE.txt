@@ -1,0 +1,30 @@
+PROVENANCE — Essentially Therapeutic Massage (massage therapy, Milton FL)
+Sourced 2026-10-22 by Freightfolio Photo Coordinator (website-dev shift, batch 24).
+
+REAL-PHOTO ATTEMPTS (none retrievable; all slots filled with honestly labeled stock):
+- Glossgenius portal (Essentially Therapeutic Massage) fetched via text fetch: page exposed no downloadable image URLs.
+- mysalononline (Elysian Salon Spa) fetch failed at the source.
+- Facebook business pages (Bay Strength BSF2022, RG Jewelers, Marys Bed and Biscuit): require login; Facebook CDN image URLs return 403 to unauthenticated requests (standing finding). No real photos publicly retrievable.
+- dogdog.org / Instagram location tag (Paradise for Pets): no publicly downloadable originals found.
+CONCLUSION: 0 real photos, 5 stock photos. All stock below are Pexels free-license photos; none show another business's signage, logo, or identifiable branding. Visually spot-checked before delivery.
+
+
+- hero.jpg: source=stock
+  source_url: https://www.pexels.com/photo/6628649/
+  depicts: Calming massage treatment room; client receiving a full-body massage in a serene spa setting
+
+- massage.jpg: source=stock
+  source_url: https://www.pexels.com/photo/19641817/
+  depicts: Massage therapist giving a massage to a client on a treatment table
+
+- energy.jpg: source=stock
+  source_url: https://www.pexels.com/photo/36593691/
+  depicts: Hot stone massage therapy in warm spa light; heated stones along a client's back
+
+- reflexology.jpg: source=stock
+  source_url: https://www.pexels.com/photo/20421584/
+  depicts: Foot reflexology: therapist massaging a woman's feet on a treatment table
+
+- detail.jpg: source=stock
+  source_url: https://www.pexels.com/photo/19167421/
+  depicts: Spa still life: folded towels and a lit candle beside a vase

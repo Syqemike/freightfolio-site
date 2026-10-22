@@ -1,0 +1,30 @@
+PROVENANCE — Marys Bed and Biscuit (pet boarding, Slidell LA)
+Sourced 2026-10-22 by Freightfolio Photo Coordinator (website-dev shift, batch 24).
+
+REAL-PHOTO ATTEMPTS (none retrievable; all slots filled with honestly labeled stock):
+- Glossgenius portal (Essentially Therapeutic Massage) fetched via text fetch: page exposed no downloadable image URLs.
+- mysalononline (Elysian Salon Spa) fetch failed at the source.
+- Facebook business pages (Bay Strength BSF2022, RG Jewelers, Marys Bed and Biscuit): require login; Facebook CDN image URLs return 403 to unauthenticated requests (standing finding). No real photos publicly retrievable.
+- dogdog.org / Instagram location tag (Paradise for Pets): no publicly downloadable originals found.
+CONCLUSION: 0 real photos, 5 stock photos. All stock below are Pexels free-license photos; none show another business's signage, logo, or identifiable branding. Visually spot-checked before delivery.
+
+
+- hero.jpg: source=stock
+  source_url: https://www.pexels.com/photo/33749204/
+  depicts: Labrador retrievers playfully running outdoors together
+
+- grooming.jpg: source=stock
+  source_url: https://www.pexels.com/photo/19145879/
+  depicts: Groomer brushing a dog during a grooming session
+
+- daycare.jpg: source=stock
+  source_url: https://www.pexels.com/photo/32417767/
+  depicts: Dogs playing together in an outdoor play area
+
+- cat.jpg: source=stock
+  source_url: https://www.pexels.com/photo/39044897/
+  depicts: Cat being gently groomed outdoors, relaxed
+
+- suite.jpg: source=stock
+  source_url: https://www.pexels.com/photo/37722584/
+  depicts: Relaxed dog sleeping on a fluffy white rug in a cozy spot

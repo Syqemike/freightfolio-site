@@ -1,0 +1,30 @@
+PROVENANCE — Salles (jeweler, bridal/engraving focus, Slidell LA)
+Sourced 2026-10-22 by Freightfolio Photo Coordinator (website-dev shift, batch 24).
+
+REAL-PHOTO ATTEMPTS (none retrievable; all slots filled with honestly labeled stock):
+- Glossgenius portal (Essentially Therapeutic Massage) fetched via text fetch: page exposed no downloadable image URLs.
+- mysalononline (Elysian Salon Spa) fetch failed at the source.
+- Facebook business pages (Bay Strength BSF2022, RG Jewelers, Marys Bed and Biscuit): require login; Facebook CDN image URLs return 403 to unauthenticated requests (standing finding). No real photos publicly retrievable.
+- dogdog.org / Instagram location tag (Paradise for Pets): no publicly downloadable originals found.
+CONCLUSION: 0 real photos, 5 stock photos. All stock below are Pexels free-license photos; none show another business's signage, logo, or identifiable branding. Visually spot-checked before delivery.
+
+
+- hero.jpg: source=stock
+  source_url: https://www.pexels.com/photo/31728281/
+  depicts: Elegant diamond wedding rings on display, luxury close-up
+
+- engagement.jpg: source=stock
+  source_url: https://www.pexels.com/photo/39281722/
+  depicts: Close-up of a hand wearing a diamond engagement ring
+
+- bands.jpg: source=stock
+  source_url: https://www.pexels.com/photo/35218299/
+  depicts: Couple holding hands showing wedding bands
+
+- engraving.jpg: source=stock
+  source_url: https://www.pexels.com/photo/29300542/
+  depicts: Close-up of a silver signet ring with an intricately engraved knight design
+
+- gifts.jpg: source=stock
+  source_url: https://www.pexels.com/photo/34399153/
+  depicts: Elegant gold bracelet presented in a gift box
