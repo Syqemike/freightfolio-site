@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Gourmet Goodies in Daphne, AL: bakery, cake shop, and caterer known for award-winning king cakes. Design preview concept.">
+<title>Gourmet Goodies | Bakery and Caterer in Daphne, AL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fbf6ec; --cream-deep:#f4ead6; --cocoa:#4a2c17; --cocoa-soft:#6b4223;
+    --gold:#c98a2d; --berry:#a63a4a; --ink:#2c2018;
+    --purple:#6b3fa0; --mgold:#d4a017; --green:#2e7d46;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Karla',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+  h1,h2,h3{font-family:'Fraunces',serif;color:var(--cocoa);line-height:1.12}
+  img{max-width:100%;display:block}
+  a{color:var(--cocoa-soft)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+
+  .topbar{background:var(--cocoa);color:var(--cream);padding:12px 0}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .brand{font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;letter-spacing:.02em}
+  .chip{font-size:.78rem;background:rgba(251,246,236,.14);border:1px solid rgba(251,246,236,.4);
+    padding:4px 12px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
+  .btn{display:inline-block;background:var(--gold);color:#241507;font-weight:700;text-decoration:none;
+    padding:13px 28px;border-radius:6px;letter-spacing:.02em;border:none;cursor:pointer}
+  .btn:hover{background:#b67a24}
+  .btn.small{padding:9px 18px;font-size:.92rem}
+  .btn.ghost{background:transparent;color:var(--cocoa);border:2px solid var(--cocoa)}
+
+  nav.mainnav{background:var(--cream-deep);border-bottom:2px solid #e5d3ae;position:sticky;top:0;z-index:50}
+  nav.mainnav .wrap{display:flex;gap:26px;overflow-x:auto;padding:12px 22px}
+  nav.mainnav a{text-decoration:none;color:var(--cocoa);font-weight:700;font-size:.95rem;white-space:nowrap}
+  nav.mainnav a:hover{color:var(--berry)}
+
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:64px 22px 54px}
+  .eyebrow{font-size:.82rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--berry);margin-bottom:14px}
+  .hero h1{font-size:clamp(2.4rem,5.2vw,4rem);font-weight:700}
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero p.lede{font-size:1.12rem;margin:18px 0 26px;max-width:34rem}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  figure{margin:0}
+  figcaption{font-size:.82rem;color:#7a6248;margin-top:8px;font-style:italic}
+  .hero figure img{border-radius:10px;box-shadow:0 18px 44px rgba(74,44,23,.22)}
+  .tricolor{display:flex;height:8px}
+  .tricolor span{flex:1}
+  .tricolor span:nth-child(1){background:var(--purple)}
+  .tricolor span:nth-child(2){background:var(--mgold)}
+  .tricolor span:nth-child(3){background:var(--green)}
+
+  .kingband{background:var(--cocoa);color:var(--cream);padding:70px 0}
+  .kingband .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+  .kingband h2{color:var(--cream);font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:14px}
+  .kingband p{color:#e9dcc3}
+  .award{display:flex;gap:16px;margin:22px 0;flex-wrap:wrap}
+  .award span{background:rgba(212,160,23,.16);border:1px solid var(--mgold);color:var(--mgold);
+    padding:8px 16px;border-radius:6px;font-weight:700;font-size:.9rem}
+  .flavors{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+  .flavors span{background:rgba(251,246,236,.1);border:1px solid rgba(251,246,236,.35);
+    padding:8px 16px;border-radius:999px;font-size:.92rem}
+  .kingband figure img{border-radius:10px}
+
+  .menu{padding:70px 0}
+  .menu h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:10px}
+  .menu .sub{max-width:40rem;margin-bottom:36px;color:#6d5638}
+  .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+  .menucard{background:#fffdf7;border:1px solid #e8d7b6;border-radius:12px;overflow:hidden}
+  .menucard img{height:200px;width:100%;object-fit:cover}
+  .menucard .body{padding:24px}
+  .menucard h3{font-size:1.45rem;margin-bottom:12px}
+  .menucard ul{list-style:none}
+  .menucard li{padding:9px 0;border-bottom:1px dotted #d9c49a;font-size:1.02rem;display:flex;justify-content:space-between;gap:12px}
+  .menucard li:last-child{border-bottom:none}
+  .menucard li small{color:#8a6f4d;font-size:.85rem}
+  .menucard .photo-cap{padding:0 24px 18px;font-size:.82rem;color:#7a6248;font-style:italic;margin-top:0}
+
+  .about{background:var(--cream-deep);padding:70px 0}
+  .about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .about h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:16px}
+  .about figure img{border-radius:10px}
+
+  .visit{padding:70px 0}
+  .visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  .visit h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:18px}
+  .hours{width:100%;border-collapse:collapse;margin:14px 0 22px}
+  .hours td{padding:10px 4px;border-bottom:1px solid #e0cda4}
+  .hours td:last-child{text-align:right;font-weight:700;color:var(--cocoa)}
+  .rating{font-size:1.05rem;margin:16px 0}
+  .rating strong{color:var(--berry)}
+  .visit address{font-style:normal;margin-bottom:20px;font-size:1.05rem}
+  .visit figure img{border-radius:10px}
+
+  footer{background:var(--cocoa);color:#d9c8a8;padding:36px 0;font-size:.92rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  footer a{color:var(--gold)}
+  .disclosure-note{font-style:italic;max-width:44rem}
+
+  @media(max-width:820px){
+    .hero .wrap,.kingband .wrap,.about .wrap,.visit .wrap{grid-template-columns:1fr;gap:32px}
+    .hero .wrap{padding:44px 22px 40px}
+    .menu-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="brand">Gourmet Goodies</span>
+    <span class="chip">Design preview</span>
+    <a class="btn small" href="tel:+12518881152">Call (251) 888-1152</a>
+  </div>
+</div>
+
+<nav class="mainnav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#kingcake">King Cakes</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#visit">Visit</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Bakery and Caterer in Daphne, Alabama</p>
+      <h1>King cakes worth the <em>drive down 98</em>.</h1>
+      <p class="lede">Gourmet Goodies bakes cakes, cookies, and pastries for Daphne and the Eastern Shore, and their king cakes have earned "Top New Contender" and "#1 in Alabama" recognition. Five flavors, including the Crawfish King Cake.</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+12518881152">Call (251) 888-1152</a>
+        <a class="btn ghost" href="#menu">See the menu</a>
+      </div>
+    </div>
+    <figure>
+      <img src="img/photo-1.jpg" alt="Slice of Mardi Gras style cake with macaron topping">
+      <figcaption>Stock photo: slice of Mardi Gras style cake with a macaron topping.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<div class="tricolor" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<section class="kingband" id="kingcake">
+  <div class="wrap">
+    <figure>
+      <img src="img/photo-2.png" alt="Festive ring cake topped with candied fruit, cherries, and nuts">
+      <figcaption style="color:#cbb894">Stock photo: festive ring cake with candied fruit and nuts, in the style of a king cake.</figcaption>
+    </figure>
+    <div>
+      <h2>The king cake lineup</h2>
+      <p>Five house flavors, baked for Mardi Gras season. The Crawfish King Cake is the one people talk about.</p>
+      <div class="award">
+        <span>"Top New Contender"</span>
+        <span>"#1 in Alabama"</span>
+      </div>
+      <div class="flavors">
+        <span>Crawfish King Cake</span>
+        <span>Plus four more house flavors</span>
+      </div>
+      <p style="margin-top:18px">Questions about custom orders? Call (251) 888-1152.</p>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <p class="eyebrow">The menu</p>
+    <h2>Baked and made in Daphne</h2>
+    <p class="sub">Everything below is made by the Gourmet Goodies kitchen. Call for what is available today.</p>
+    <div class="menu-grid">
+      <article class="menucard">
+        <img src="img/photo-3.jpg" alt="Assorted decorated cakes with berries in a bakery display">
+        <div class="body">
+          <h3>Bakery and cakes</h3>
+          <ul>
+            <li>King cakes <small>5 flavors</small></li>
+            <li>Cookies</li>
+            <li>Chocolate cake</li>
+            <li>Cake pops</li>
+            <li>Custom cakes <small>call to discuss</small></li>
+            <li>Pastries</li>
+          </ul>
+        </div>
+        <p class="photo-cap">Stock photo: assorted decorated cakes with berries in a bakery display.</p>
+      </article>
+      <article class="menucard">
+        <img src="img/photo-5.jpg" alt="Charcuterie board with cheese, meats, grapes, and crackers">
+        <div class="body">
+          <h3>Catering and to-go</h3>
+          <ul>
+            <li>Prepared and takeout meals</li>
+            <li>Charcuterie boards</li>
+          </ul>
+          <h3 style="margin-top:22px">Gifts and decor</h3>
+          <ul>
+            <li>Flowers</li>
+            <li>Home decor</li>
+          </ul>
+        </div>
+        <p class="photo-cap">Stock photo: charcuterie board with cheese, meats, grapes, and crackers.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">About</p>
+      <h2>Hospitality is the whole business</h2>
+      <p>Gourmet Goodies is run by Laura Stafford, whose roots are in hospitality and ministry. The shop bakes for birthdays, Mardi Gras, and ordinary Tuesdays, and caters events across the Daphne area.</p>
+      <p style="margin-top:14px">One kitchen, many tables: a bakery case up front, custom cakes for celebrations, and takeout meals and charcuterie for nights you do not want to cook.</p>
+    </div>
+    <figure>
+      <img src="img/photo-6.jpg" alt="Cookies and pastries arranged in glass jars in a cozy bakery">
+      <figcaption>Stock photo: cookies and pastries arranged in glass jars in a cozy bakery.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Visit</p>
+      <h2>Find the bakery</h2>
+      <address>
+        1539 US-98<br>
+        Daphne, AL 36526<br>
+        <a href="tel:+12518881152">(251) 888-1152</a>
+      </address>
+      <table class="hours">
+        <tr><td>Monday to Friday</td><td>10:00 AM - 5:30 PM</td></tr>
+        <tr><td>Saturday</td><td>10:00 AM - 2:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p class="rating"><strong>3.8 from 52 Google reviews</strong></p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+12518881152">Call (251) 888-1152</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=1539+US-98+Daphne+AL+36526" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+    <figure>
+      <img src="img/photo-4.jpg" alt="Chocolate cake with sprinkles on a pedestal">
+      <figcaption>Stock photo: chocolate cake with sprinkles on a pedestal.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="disclosure-note">This is a design preview concept created to show what a website for Gourmet Goodies could look like. It is not the business's official website. Photos shown are stock photos, not photos of the actual business.</p>
+    <p>Concept by <a href="https://freightfolio.net">Freightfolio</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

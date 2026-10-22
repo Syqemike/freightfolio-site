@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Southern Accents Boutique in Bay St. Louis, MS. Women's and plus-size clothing, southern fashion, monogrammed goods, home decor, soy candles, jewelry, baby clothes, hats, and gifts. Design preview concept.">
+<title>Southern Accents Boutique, Bay St. Louis, MS (Design Preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Great+Vibes&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FAF5EA;
+    --cream-deep:#F1E8D4;
+    --blush:#F0D9CE;
+    --sage:#8A9B7C;
+    --sage-deep:#5F7052;
+    --brass:#B08D57;
+    --ink:#3D3831;
+    --ink-soft:#6B6357;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Nunito Sans",-apple-system,"Segoe UI",sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.65;
+    font-size:1rem;
+  }
+  img{display:block;max-width:100%;height:auto}
+  a{color:var(--sage-deep)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+
+  /* Disclosure strip */
+  .disclosure{
+    background:var(--ink);color:var(--cream);
+    text-align:center;font-size:.8rem;letter-spacing:.04em;
+    padding:.55rem 1rem;
+  }
+
+  /* Header */
+  .site-header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,245,234,.97);
+    border-bottom:1px solid var(--brass);
+  }
+  .header-inner{
+    max-width:1100px;margin:0 auto;padding:.7rem 1.25rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  }
+  .brand{
+    font-family:"Great Vibes",cursive;font-size:1.9rem;
+    color:var(--ink);text-decoration:none;line-height:1.1;white-space:nowrap;
+  }
+  .brand small{
+    display:block;font-family:"Nunito Sans",sans-serif;font-size:.62rem;
+    letter-spacing:.32em;text-transform:uppercase;color:var(--ink-soft);
+  }
+  .nav-links{display:none;gap:1.5rem;list-style:none}
+  .nav-links a{
+    text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem;
+    letter-spacing:.03em;
+  }
+  .nav-links a:hover{color:var(--sage-deep)}
+  .call-btn{
+    background:var(--sage-deep);color:#fff;text-decoration:none;
+    font-weight:700;padding:.6rem 1.4rem;border-radius:999px;
+    letter-spacing:.03em;white-space:nowrap;
+  }
+  .call-btn:hover{background:#4c5c43}
+  .menu-toggle{
+    display:flex;flex-direction:column;gap:5px;background:none;border:none;
+    cursor:pointer;padding:.5rem;
+  }
+  .menu-toggle span{display:block;width:26px;height:2px;background:var(--ink);border-radius:2px}
+  .mobile-nav{
+    display:none;border-top:1px solid var(--cream-deep);
+    background:var(--cream);padding:.5rem 1.25rem 1rem;
+  }
+  .mobile-nav.open{display:block}
+  .mobile-nav a{
+    display:block;padding:.7rem 0;color:var(--ink);text-decoration:none;
+    font-weight:600;border-bottom:1px solid var(--cream-deep);
+  }
+
+  /* Hero */
+  .hero{position:relative}
+  .hero figure{position:relative}
+  .hero img{width:100%;height:58vh;min-height:340px;object-fit:cover;object-position:center}
+  .hero figcaption{
+    position:absolute;left:0;right:0;top:0;
+    background:rgba(61,56,49,.62);color:#fff;
+    font-size:.78rem;padding:.4rem 1.25rem;letter-spacing:.02em;
+  }
+  .hero-panel{
+    background:var(--cream);
+    border:1px solid var(--brass);outline:1px solid var(--brass);outline-offset:6px;
+    max-width:640px;margin:-4.5rem auto 0;position:relative;z-index:2;
+    padding:2.5rem 2rem;text-align:center;border-radius:2px;
+    width:calc(100% - 2.5rem);
+  }
+  .eyebrow{
+    font-family:"Great Vibes",cursive;font-size:1.6rem;color:var(--brass);
+    margin-bottom:.25rem;
+  }
+  .hero-panel h1{
+    font-family:"Cormorant Garamond",serif;font-weight:600;
+    font-size:2.3rem;line-height:1.15;margin-bottom:.5rem;
+  }
+  .hero-panel h1 .script{font-family:"Great Vibes",cursive;font-weight:400;font-size:2.9rem;display:block}
+  .tagline{
+    font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:1.25rem;color:var(--ink-soft);margin-bottom:1rem;
+  }
+  .hero-panel p.intro{margin-bottom:1.5rem}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+  .btn{
+    display:inline-block;background:var(--sage-deep);color:#fff;text-decoration:none;
+    font-weight:700;padding:.8rem 1.8rem;border-radius:999px;letter-spacing:.02em;
+  }
+  .btn:hover{background:#4c5c43}
+  .btn-outline{
+    background:transparent;color:var(--sage-deep);
+    border:2px solid var(--sage-deep);
+  }
+  .btn-outline:hover{background:var(--sage-deep);color:#fff}
+  .hero-address{margin-top:1.25rem;font-size:.9rem;color:var(--ink-soft)}
+
+  /* Sections */
+  section{padding:4rem 0}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 2.5rem}
+  .section-head h2{
+    font-family:"Cormorant Garamond",serif;font-weight:600;
+    font-size:2rem;line-height:1.2;margin-bottom:.5rem;
+  }
+  .section-head p{color:var(--ink-soft)}
+  .band{background:var(--cream-deep)}
+
+  /* Collections grid */
+  .grid{display:grid;gap:2rem;grid-template-columns:1fr}
+  .card{
+    background:#fff;border:1px solid var(--brass);
+    outline:1px solid var(--brass);outline-offset:5px;border-radius:2px;
+    overflow:hidden;
+  }
+  .card figure{position:relative}
+  .card img{width:100%;height:240px;object-fit:cover}
+  .card figcaption{
+    font-size:.75rem;color:var(--ink-soft);background:var(--cream);
+    padding:.45rem .9rem;border-top:1px solid var(--cream-deep);
+    letter-spacing:.02em;
+  }
+  .card-body{padding:1.25rem 1.25rem 1.5rem}
+  .card-body h3{
+    font-family:"Cormorant Garamond",serif;font-size:1.4rem;font-weight:600;
+    margin-bottom:.35rem;
+  }
+  .card-body p{color:var(--ink-soft);font-size:.95rem}
+
+  /* More to love panel */
+  .frame-panel{
+    border:1px solid var(--brass);outline:1px solid var(--brass);outline-offset:7px;
+    background:#fff;border-radius:2px;padding:2.5rem 2rem;max-width:720px;margin:0 auto;
+    text-align:center;
+  }
+  .frame-panel h2{
+    font-family:"Cormorant Garamond",serif;font-size:1.9rem;font-weight:600;
+    margin-bottom:.5rem;
+  }
+  .frame-panel > p{color:var(--ink-soft);margin-bottom:1.5rem}
+  .love-list{
+    list-style:none;display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;
+  }
+  .love-list li{
+    border:1px solid var(--sage);border-radius:999px;
+    padding:.5rem 1.2rem;font-weight:600;font-size:.92rem;color:var(--sage-deep);
+    background:var(--cream);
+  }
+
+  /* Visit */
+  .visit-grid{display:grid;gap:2rem;grid-template-columns:1fr}
+  .visit-card{
+    background:#fff;border:1px solid var(--brass);border-radius:2px;
+    padding:1.75rem;
+  }
+  .visit-card h3{
+    font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:600;
+    margin-bottom:.75rem;color:var(--sage-deep);
+  }
+  .visit-card p{margin-bottom:.5rem}
+  .hours{list-style:none}
+  .hours li{
+    display:flex;justify-content:space-between;gap:1rem;
+    padding:.45rem 0;border-bottom:1px dashed var(--cream-deep);
+  }
+  .hours li:last-child{border-bottom:none}
+  .rating-line{font-weight:700;color:var(--ink)}
+  .visit-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+
+  /* Footer */
+  footer{background:var(--sage-deep);color:#fff;padding:2.5rem 0;text-align:center}
+  footer p{font-size:.88rem;margin-bottom:.5rem;color:#F2EFE6}
+  footer a{color:#fff;font-weight:700}
+  .footer-brand{font-family:"Great Vibes",cursive;font-size:1.8rem;margin-bottom:.25rem}
+
+  @media (min-width:640px){
+    .grid{grid-template-columns:1fr 1fr}
+    .visit-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (min-width:900px){
+    .grid{grid-template-columns:1fr 1fr 1fr}
+    .nav-links{display:flex}
+    .menu-toggle{display:none}
+    .mobile-nav{display:none}
+    .hero-panel h1{font-size:2.8rem}
+    .hero-panel h1 .script{font-size:3.4rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design preview: this page is a concept mockup, not the business&rsquo;s official website.</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top">Southern Accents<small>Boutique</small></a>
+    <nav aria-label="Sections">
+      <ul class="nav-links">
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="call-btn" href="tel:+12283633651">Call</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile sections">
+    <a href="#collections">Collections</a>
+    <a href="#about">About</a>
+    <a href="#visit">Visit</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-label="Welcome">
+    <figure>
+      <img src="img/photo-2.jpg" alt="Clothing racks in a bright boutique with indoor plants">
+      <figcaption>Stock photo: clothing racks in a bright boutique</figcaption>
+    </figure>
+    <div class="hero-panel">
+      <p class="eyebrow">Bay St. Louis, Mississippi</p>
+      <h1><span class="script">Southern Accents</span> Boutique</h1>
+      <p class="tagline">It&rsquo;s a boutique and more</p>
+      <p class="intro">Women&rsquo;s and plus-size clothing, southern fashion, monogrammed goods, home decor, soy candles, and gifts, all in one shop on Main Street.</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+12283633651">Call (228) 363-3651</a>
+        <a class="btn btn-outline" href="#visit">Plan your visit</a>
+      </div>
+      <p class="hero-address">125 Main St B, Bay St. Louis, MS 39520</p>
+    </div>
+  </section>
+
+  <section id="collections" aria-label="Collections">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What you will find</p>
+        <h2>Collections</h2>
+        <p>A look at some of the lines on the racks and shelves.</p>
+      </div>
+      <div class="grid">
+
+        <article class="card">
+          <figure>
+            <img src="img/photo-1.jpg" alt="Pastel pink, green, and white women's tops on a gold clothing rack in a boutique">
+            <figcaption>Stock photo: pastel women&rsquo;s tops on a boutique clothing rack</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Women&rsquo;s Clothing</h3>
+            <p>Everyday and occasion pieces, including plus sizes.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="img/photo-3.jpg" alt="A young woman shopping for clothing in a vintage-style store">
+            <figcaption>Stock photo: shopper browsing clothing in a boutique</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Southern Fashion</h3>
+            <p>Classic southern style for the Coast.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="img/photo-8.jpg" alt="Cozy vintage-style room with a sofa and a wall of framed pictures">
+            <figcaption>Stock photo: cozy room with a gallery wall of framed pictures</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Home Decor</h3>
+            <p>Decor with a warm, collected feel for every room.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="img/photo-4.jpg" alt="Lit scented candles arranged with rose petals">
+            <figcaption>Stock photo: lit scented candles with rose petals</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Soy Candles</h3>
+            <p>Soy candles to make the house smell like home.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="img/photo-7.jpg" alt="Flat lay of delicate jewelry arranged with dried flowers">
+            <figcaption>Stock photo: jewelry flat lay with dried flowers</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Jewelry</h3>
+            <p>Jewelry to finish any outfit.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="img/photo-5.jpg" alt="A woman arranging a collection of baby clothes on a table">
+            <figcaption>Stock photo: hands arranging baby clothes</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Baby Clothes</h3>
+            <p>Sweet styles for the littlest ones.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="img/photo-6.jpg" alt="Two shoppers looking at hats hanging on a store wall display">
+            <figcaption>Stock photo: shoppers at a hat wall display</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Hats</h3>
+            <p>Hats for sunny days on the Coast.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-label="More to love">
+    <div class="wrap">
+      <div class="frame-panel">
+        <p class="eyebrow">And then some</p>
+        <h2>More to Love</h2>
+        <p>The shelves hold plenty beyond the racks. Stop in to see what is new.</p>
+        <ul class="love-list">
+          <li>Monogrammed Goods</li>
+          <li>Frames</li>
+          <li>Local Pepper Jelly</li>
+          <li>Gifts and Art</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" aria-label="About the shop">
+    <div class="wrap">
+      <div class="frame-panel" style="text-align:left">
+        <p class="eyebrow" style="text-align:center">Our story</p>
+        <h2 style="text-align:center">About the Shop</h2>
+        <p>Southern Accents Boutique is owned by Becky (Jenny) Shubert and sits on Main Street in Old Town Bay St. Louis.</p>
+        <p>The shop carries women&rsquo;s and plus-size clothing, southern fashion, and monogrammed goods, along with home decor, soy candles, frames, jewelry, baby clothes, hats, local pepper jelly, gifts, and art.</p>
+        <p style="margin-bottom:0">It&rsquo;s a boutique and more, just like the sign says.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="band" aria-label="Visit the shop">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Come see us</p>
+        <h2>Visit</h2>
+        <p>We would love to see you in the shop.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="visit-card">
+          <h3>Find Us</h3>
+          <p>125 Main St B<br>Bay St. Louis, MS 39520</p>
+          <p>Questions? Call <a href="tel:+12283633651">(228) 363-3651</a>.</p>
+          <p class="rating-line">Rated 4.8 from 17 Google reviews.</p>
+          <div class="visit-actions">
+            <a class="btn" href="tel:+12283633651">Call (228) 363-3651</a>
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=125+Main+St+B%2C+Bay+St.+Louis%2C+MS+39520" target="_blank" rel="noopener">Get Directions</a>
+          </div>
+        </div>
+        <div class="visit-card">
+          <h3>Hours</h3>
+          <ul class="hours">
+            <li><span>Tue - Sat</span><span>10:00 AM - 5:00 PM</span></li>
+            <li><span>Monday</span><span>Closed</span></li>
+            <li><span>Sunday</span><span>Closed</span></li>
+          </ul>
+          <div class="visit-actions">
+            <a class="btn btn-outline" href="https://www.facebook.com/SOUTHERN.ACCENTS.BSL" target="_blank" rel="noopener">Follow on Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="footer-brand">Southern Accents Boutique</p>
+    <p>This is a design preview created to show what a website could look like for Southern Accents Boutique. It is a concept mockup, not the business&rsquo;s official website.</p>
+    <p>Concept by Freightfolio. <a href="https://freightfolio.net">freightfolio.net</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('mobileNav');
+  toggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.setAttribute('aria-label','Open menu');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

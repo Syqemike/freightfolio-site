@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Social Chair | Gift Shop in Old Town Bay St. Louis, MS</title>
+<meta name="description" content="Social Chair is a colorful gift shop at 201 Main St in Old Town Bay St. Louis, MS. Statement jewelry, home decor, local art, and free gift wrapping.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --coral:#f4655a;
+    --coral-dark:#d94e44;
+    --teal:#12836f;
+    --teal-deep:#0d4f4a;
+    --sun:#ffc93f;
+    --cream:#fff6e8;
+    --blush:#ffe3dd;
+    --mint:#d8f0e4;
+    --butter:#fff0c2;
+    --sky:#d9eef5;
+    --lav:#e7e2f7;
+    --peach:#ffe7c7;
+    --ink:#233a3a;
+    --ink-soft:#4a5f5f;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Nunito',system-ui,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.65;
+    font-size:17px;
+  }
+  img{max-width:100%;display:block}
+  figure{margin:0}
+  a{color:inherit}
+
+  .disclosure{
+    background:var(--teal-deep);
+    color:#fff;
+    text-align:center;
+    font-size:13px;
+    padding:9px 16px;
+    letter-spacing:.02em;
+  }
+  .disclosure strong{font-weight:800}
+
+  header.site{
+    background:var(--cream);
+    border-bottom:4px solid var(--sun);
+    position:sticky;top:0;z-index:50;
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 20px;gap:12px;flex-wrap:wrap;
+  }
+  .wordmark{
+    font-family:'Baloo 2',cursive;
+    font-weight:800;font-size:30px;line-height:1;
+    text-decoration:none;
+  }
+  .wordmark .w1{color:var(--coral)}
+  .wordmark .w2{color:var(--teal)}
+  .wordmark small{
+    display:block;font-family:'Nunito',sans-serif;font-weight:700;
+    font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-soft);
+  }
+  nav.main{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+  nav.main a{
+    text-decoration:none;font-weight:700;font-size:15px;color:var(--ink);
+    border-bottom:3px solid transparent;padding-bottom:2px;
+  }
+  nav.main a:hover{border-bottom-color:var(--coral)}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:800;
+    border-radius:999px;padding:13px 28px;font-size:16px;
+    transition:transform .15s ease, box-shadow .15s ease;
+    border:3px solid var(--ink);
+  }
+  .btn:hover{transform:translateY(-2px) rotate(-1deg)}
+  .btn-coral{background:var(--coral);color:#fff;box-shadow:4px 4px 0 var(--ink)}
+  .btn-teal{background:var(--teal);color:#fff;box-shadow:4px 4px 0 var(--ink)}
+  .btn-sun{background:var(--sun);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .btn-outline{background:#fff;color:var(--ink)}
+
+  .hero{position:relative;overflow:hidden;background:var(--teal-deep)}
+  .hero img.bg{
+    width:100%;height:100%;object-fit:cover;position:absolute;inset:0;
+    opacity:.42;
+  }
+  .hero-inner{
+    position:relative;max-width:1180px;margin:0 auto;
+    padding:96px 20px 84px;color:#fff;
+  }
+  .eyebrow{
+    display:inline-block;background:var(--sun);color:var(--ink);
+    font-weight:800;font-size:13px;letter-spacing:.22em;text-transform:uppercase;
+    padding:8px 16px;border-radius:999px;border:3px solid var(--ink);
+    transform:rotate(-2deg);margin-bottom:22px;
+  }
+  .hero h1{
+    font-family:'Baloo 2',cursive;font-weight:800;
+    font-size:clamp(40px,6.4vw,76px);line-height:1.02;
+    max-width:16ch;margin-bottom:18px;text-wrap:balance;
+  }
+  .hero h1 .hl-coral{color:#ffb3ab}
+  .hero h1 .hl-sun{color:var(--sun)}
+  .hero p.lede{font-size:20px;max-width:44ch;margin-bottom:14px;font-weight:600}
+  .hero .award{
+    display:inline-block;background:#fff;color:var(--ink);
+    font-weight:800;padding:10px 18px;border-radius:14px;margin:10px 12px 0 0;
+    border:3px solid var(--ink);box-shadow:4px 4px 0 rgba(0,0,0,.35);
+  }
+  .hero .award .stars{color:#e8a100;letter-spacing:.1em}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+  .hero .caption{position:absolute;bottom:10px;right:16px;font-size:12px;color:#fff;opacity:.85;background:rgba(0,0,0,.45);padding:3px 10px;border-radius:8px}
+
+  .marquee{background:var(--sun);border-top:4px solid var(--ink);border-bottom:4px solid var(--ink);overflow:hidden;white-space:nowrap}
+  .marquee-track{display:inline-block;padding:12px 0;animation:scroll 28s linear infinite;font-family:'Baloo 2',cursive;font-weight:700;font-size:20px;color:var(--ink)}
+  .marquee-track span{margin:0 18px}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  section{padding:76px 20px}
+  .wrap{max-width:1180px;margin:0 auto}
+  .section-eyebrow{
+    font-weight:800;font-size:13px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--coral-dark);margin-bottom:12px;
+  }
+  h2{
+    font-family:'Baloo 2',cursive;font-weight:800;
+    font-size:clamp(30px,4.4vw,48px);line-height:1.08;margin-bottom:16px;
+  }
+  .section-intro{font-size:19px;max-width:60ch;color:var(--ink-soft);margin-bottom:40px}
+
+  .treasure-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+    gap:26px;
+  }
+  .card{
+    border:3px solid var(--ink);border-radius:22px;padding:26px;
+    box-shadow:6px 6px 0 var(--ink);background:#fff;
+    transition:transform .18s ease;
+  }
+  .card:hover{transform:translateY(-4px) rotate(0deg)!important}
+  .card:nth-child(1){background:var(--blush);transform:rotate(-1.2deg)}
+  .card:nth-child(2){background:var(--mint);transform:rotate(1deg)}
+  .card:nth-child(3){background:var(--butter);transform:rotate(-.8deg)}
+  .card:nth-child(4){background:var(--sky);transform:rotate(1.1deg)}
+  .card:nth-child(5){background:var(--lav);transform:rotate(-1deg)}
+  .card:nth-child(6){background:var(--peach);transform:rotate(.9deg)}
+  .card h3{font-family:'Baloo 2',cursive;font-size:24px;margin-bottom:8px}
+  .card p{font-size:16px;color:var(--ink-soft)}
+  .card figure{margin:0 0 16px;border:3px solid var(--ink);border-radius:14px;overflow:hidden;background:#fff}
+  .card figure img{width:100%;height:190px;object-fit:cover}
+  figcaption{
+    font-size:12.5px;color:var(--ink-soft);padding:8px 12px;
+    background:#fff;font-style:italic;
+  }
+
+  .signatures{background:var(--teal-deep);color:#fff}
+  .signatures .section-eyebrow{color:var(--sun)}
+  .signatures h2{color:#fff}
+  .signatures .section-intro{color:#cfe3dd}
+  .sig-main{
+    display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;
+    margin-bottom:52px;
+  }
+  .sig-main figure{
+    border:4px solid var(--sun);border-radius:24px;overflow:hidden;
+    transform:rotate(-1.5deg);box-shadow:8px 8px 0 rgba(0,0,0,.3);background:#fff;
+  }
+  .sig-main figure img{width:100%;height:420px;object-fit:cover}
+  .sig-main h3{font-family:'Baloo 2',cursive;font-size:30px;color:var(--sun);margin-bottom:12px}
+  .sig-main p{font-size:18px;color:#eef5f2;margin-bottom:14px}
+  .sig-rows{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
+  .sig-row{
+    background:#fff;color:var(--ink);border-radius:20px;overflow:hidden;
+    border:3px solid var(--sun);
+  }
+  .sig-row img{width:100%;height:200px;object-fit:cover}
+  .sig-row .body{padding:22px 24px}
+  .sig-row h3{font-family:'Baloo 2',cursive;font-size:22px;margin-bottom:6px;color:var(--teal-deep)}
+  .sig-row p{font-size:16px;color:var(--ink-soft)}
+  .sig-row .tag{
+    display:inline-block;background:var(--coral);color:#fff;font-weight:800;font-size:12px;
+    letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:10px;
+  }
+
+  .owner{background:var(--blush)}
+  .owner-card{
+    background:#fff;border:3px solid var(--ink);border-radius:24px;
+    padding:44px;box-shadow:8px 8px 0 var(--ink);
+    display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;
+  }
+  .owner-badge{
+    width:150px;height:150px;border-radius:50%;background:var(--teal);
+    color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    font-family:'Baloo 2',cursive;font-weight:800;text-align:center;line-height:1.2;
+    border:4px solid var(--ink);transform:rotate(-6deg);font-size:19px;padding:12px;
+    flex-shrink:0;
+  }
+  .owner-card h2{margin-bottom:10px}
+  .owner-card p{font-size:18px;color:var(--ink-soft);max-width:62ch}
+
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-bottom:40px}
+  .visit-card{
+    border:3px solid var(--ink);border-radius:22px;padding:34px;box-shadow:6px 6px 0 var(--ink);
+  }
+  .visit-card.hours{background:var(--sun)}
+  .visit-card.find{background:var(--mint)}
+  .visit-card h3{font-family:'Baloo 2',cursive;font-size:26px;margin-bottom:14px}
+  .hours-list{list-style:none}
+  .hours-list li{
+    display:flex;justify-content:space-between;gap:12px;
+    padding:10px 0;border-bottom:2px dashed rgba(35,58,58,.25);font-weight:700;
+  }
+  .hours-list li:last-child{border-bottom:none}
+  .visit-card p{margin-bottom:10px;font-weight:600}
+  .visit-card a.addr{font-weight:800}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}
+  .social-line{margin-top:34px;font-size:17px}
+  .social-line a{font-weight:800;color:var(--teal-deep);text-decoration-thickness:3px}
+
+  footer{
+    background:var(--ink);color:#d8e4e2;padding:44px 20px;font-size:14.5px;
+  }
+  footer .wrap{display:flex;flex-direction:column;gap:14px}
+  footer a{color:var(--sun);font-weight:700}
+  footer .fine{font-size:13px;color:#9db3b0;max-width:80ch}
+
+  @media (max-width:860px){
+    .sig-main{grid-template-columns:1fr}
+    .sig-main figure img{height:280px}
+    .visit-grid{grid-template-columns:1fr}
+    .owner-card{grid-template-columns:1fr;padding:30px}
+    .owner-badge{margin:0 auto}
+    nav.main{gap:14px}
+    .hero-inner{padding:72px 20px 64px}
+    section{padding:56px 18px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .marquee-track{animation:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">
+  <strong>Design preview:</strong> This concept website was created by Freightfolio as a design idea for Social Chair. It is not the business's official site.
+</div>
+
+<header class="site">
+  <div class="header-inner">
+    <a class="wordmark" href="#top"><span class="w1">Social</span> <span class="w2">Chair</span><small>Old Town Bay St. Louis</small></a>
+    <nav class="main" aria-label="Section navigation">
+      <a href="#treasures">Treasures</a>
+      <a href="#signatures">Signatures</a>
+      <a href="#owner">Our Story</a>
+      <a href="#visit">Visit</a>
+      <a class="btn btn-coral" href="tel:+12284665853">Call the Shop</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" style="padding:0">
+    <img class="bg" src="img/photo-1.jpg" alt="Stock photo of a charming outdoor gift shop with colorful decor">
+    <div class="hero-inner">
+      <span class="eyebrow">201 Main St, Old Town Bay St. Louis</span>
+      <h1>The <span class="hl-coral">happiest</span> little gift shop on <span class="hl-sun">Main Street</span></h1>
+      <p class="lede">Statement jewelry, coastal home decor, local art, and gifts worth the hunt. Voted Best Gift Shop in Mississippi by Mississippi Magazine.</p>
+      <div>
+        <span class="award">4.9 from 76 Google reviews</span>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-coral" href="tel:+12284665853">Call the Shop</a>
+        <a class="btn btn-outline" href="#visit">Plan Your Visit</a>
+      </div>
+    </div>
+    <span class="caption">Stock photo: charming outdoor gift shop with colorful decor</span>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Statement Jewelry</span><span>•</span><span>Headwear</span><span>•</span><span>Greeting Cards</span><span>•</span><span>Local Art</span><span>•</span><span>Home Decor</span><span>•</span><span>Furniture</span><span>•</span><span>Lighting</span><span>•</span><span>Free Gift Wrapping</span><span>•</span>
+      <span>Statement Jewelry</span><span>•</span><span>Headwear</span><span>•</span><span>Greeting Cards</span><span>•</span><span>Local Art</span><span>•</span><span>Home Decor</span><span>•</span><span>Furniture</span><span>•</span><span>Lighting</span><span>•</span><span>Free Gift Wrapping</span><span>•</span>
+    </div>
+  </div>
+
+  <section id="treasures">
+    <div class="wrap">
+      <p class="section-eyebrow">The Treasure Map</p>
+      <h2>Every corner holds something fun</h2>
+      <p class="section-intro">Social Chair is packed wall to wall with color. Wander the departments, dig through the displays, and leave with the thing you did not know you were looking for.</p>
+      <div class="treasure-grid">
+        <article class="card">
+          <figure>
+            <img src="img/photo-2.jpg" alt="Stock photo of bracelets and jewelry on display in a retail shop">
+            <figcaption>Stock photo: bracelets and jewelry on display in a retail shop</figcaption>
+          </figure>
+          <h3>Statement Jewelry</h3>
+          <p>Bold necklaces, bracelets, and earrings that finish an outfit. Try a few on and find your new favorite.</p>
+        </article>
+        <article class="card">
+          <h3>Headwear</h3>
+          <p>Hats for sunny coast days, from casual to dressy. A quick way to top off any look.</p>
+        </article>
+        <article class="card">
+          <h3>Cards &amp; Napkins</h3>
+          <p>Greeting cards and patterned napkins for every occasion. Small details that make gatherings feel special.</p>
+        </article>
+        <article class="card">
+          <h3>Local Art</h3>
+          <p>Work from area artists with real Gulf Coast personality. Take home a piece of the coast.</p>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="img/photo-6.jpg" alt="Stock photo of colorful ceramic pots and vases on wooden store shelves">
+            <figcaption>Stock photo: colorful ceramic pots and vases on wooden store shelves</figcaption>
+          </figure>
+          <h3>Home Decor &amp; Furniture</h3>
+          <p>Eclectic, colorful pieces for every room, plus furniture and lighting that make a house feel alive.</p>
+        </article>
+        <article class="card">
+          <h3>Lighting</h3>
+          <p>Lamps and fixtures with character. The right light changes everything about a room.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="signatures" id="signatures">
+    <div class="wrap">
+      <p class="section-eyebrow">Only at Social Chair</p>
+      <h2>Signatures worth the trip</h2>
+      <p class="section-intro">A few things make this shop different from every other gift store on the coast.</p>
+      <div class="sig-main">
+        <figure>
+          <img src="img/photo-3.jpg" alt="Stock photo of colorful chairs on a seaside terrace overlooking the ocean">
+          <figcaption>Stock photo: colorful chairs on a seaside terrace overlooking the ocean</figcaption>
+        </figure>
+        <div>
+          <h3>The hand-painted chairs</h3>
+          <p>Social Chair is known for its signature hand-painted chairs. Each one is a one-of-a-kind piece of functional art, painted with the same joyful, coastal spirit you see all through the shop.</p>
+          <p>Collectors and first-time visitors alike stop to admire them. Come see the current chairs in person.</p>
+        </div>
+      </div>
+      <div class="sig-rows">
+        <article class="sig-row">
+          <figure style="margin:0">
+            <img src="img/photo-4.jpg" alt="Stock photo of a floral-wrapped gift box tied with a green ribbon">
+            <figcaption style="border-top:2px dashed #e5e0d5">Stock photo: floral-wrapped gift box tied with a green ribbon</figcaption>
+          </figure>
+          <div class="body">
+            <span class="tag">Always free</span>
+            <h3>Free gift wrapping</h3>
+            <p>Every purchase leaves the shop wrapped and ready to give. Pick the perfect gift, and the wrapping is on the house.</p>
+          </div>
+        </article>
+        <article class="sig-row">
+          <figure style="margin:0">
+            <img src="img/photo-5.jpg" alt="Stock photo of a colorful home decor and handicraft shop interior">
+            <figcaption style="border-top:2px dashed #e5e0d5">Stock photo: colorful home decor and handicraft shop interior</figcaption>
+          </figure>
+          <div class="body">
+            <span class="tag">Design help</span>
+            <h3>Interior design services</h3>
+            <p>Love the shop's look? Social Chair offers interior design services to bring that eclectic coastal style into your own home.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="owner" id="owner">
+    <div class="wrap">
+      <div class="owner-card">
+        <div class="owner-badge"><span>Yuki<br>Northington</span></div>
+        <div>
+          <p class="section-eyebrow">Our Story</p>
+          <h2>Designed with personality</h2>
+          <p>Social Chair is owned by Yuki Northington, an HGTV Design Star alum. Her eye for bold color and eclectic coastal style shapes everything in the shop, from the displays to the signature hand-painted chairs. Stop by 201 Main St in Old Town Bay St. Louis and see what she has put together lately.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <p class="section-eyebrow">Visit</p>
+      <h2>Come say hello</h2>
+      <p class="section-intro">Right in the heart of Old Town. Questions? Call <a href="tel:+12284665853" style="font-weight:800">(228) 466-5853</a>.</p>
+      <div class="visit-grid">
+        <div class="visit-card hours">
+          <h3>Hours</h3>
+          <ul class="hours-list">
+            <li><span>Monday to Saturday</span><span>10:00 AM - 5:00 PM</span></li>
+            <li><span>Sunday</span><span>11:00 AM - 4:00 PM</span></li>
+          </ul>
+        </div>
+        <div class="visit-card find">
+          <h3>Find us</h3>
+          <p><a class="addr" href="https://www.google.com/maps/search/?api=1&amp;query=201+Main+St%2C+Bay+St.+Louis%2C+MS+39520" target="_blank" rel="noopener">201 Main St<br>Bay St. Louis, MS 39520</a></p>
+          <p>Phone: <a href="tel:+12284665853" style="font-weight:800">(228) 466-5853</a></p>
+          <div class="cta-row">
+            <a class="btn btn-teal" href="tel:+12284665853">Call the Shop</a>
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=201+Main+St%2C+Bay+St.+Louis%2C+MS+39520" target="_blank" rel="noopener">Get Directions</a>
+          </div>
+        </div>
+      </div>
+      <p class="social-line">Follow along for new arrivals and shop updates: <a href="https://www.facebook.com/SocialChairBSL" target="_blank" rel="noopener">Social Chair on Facebook</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This is a website design concept created by Freightfolio for Social Chair. It is not affiliated with or endorsed by the business. Business details shown come from public listings.</p>
+    <p>Concept by <a href="https://freightfolio.net">Freightfolio</a></p>
+    <p class="fine">Stock photos from Pexels are used as stand-ins and are labeled as such; they do not depict the actual shop. Photos: charming outdoor gift shop with colorful decor; bracelets and jewelry on display in a retail shop; colorful chairs on a seaside terrace overlooking the ocean; floral-wrapped gift box tied with a green ribbon; colorful home decor and handicraft shop interior; colorful ceramic pots and vases on wooden store shelves.</p>
+  </div>
+</footer>
+
+</body>
+</html>

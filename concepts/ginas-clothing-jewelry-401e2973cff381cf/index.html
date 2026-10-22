@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Gina's Clothing &amp; Jewelry Boutique | Ocean Springs MS (Design Preview)</title>
+<meta name="description" content="Design preview concept for Gina's Clothing and Jewelry Boutique, an upscale women's fashion boutique on Washington Avenue in Ocean Springs, Mississippi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum:#2E1424; --plum-deep:#1D0C17; --plum-rich:#4A2138;
+    --ivory:#F6F0E4; --ivory-dim:#E9DFCB;
+    --champagne:#D3A96B; --champagne-soft:#EBD3A6;
+    --ink:#241019;
+    --serif:"Playfair Display", Georgia, serif;
+    --sans:"Inter", "Helvetica Neue", Arial, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--plum-deep);color:var(--ivory);font-family:var(--sans);font-weight:300;line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+
+  .disclosure{background:#12070D;color:var(--champagne-soft);text-align:center;font-size:12px;letter-spacing:.22em;text-transform:uppercase;padding:11px 18px;font-weight:500}
+  .disclosure span{color:var(--champagne)}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(29,12,23,.93);backdrop-filter:blur(10px);border-bottom:1px solid rgba(211,169,107,.28)}
+  .bar{max-width:1280px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .wordmark{font-family:var(--serif);font-weight:700;font-size:27px;letter-spacing:.12em;text-decoration:none;white-space:nowrap;color:var(--ivory)}
+  .wordmark small{display:block;font-family:var(--sans);font-weight:500;font-size:9.5px;letter-spacing:.5em;color:var(--champagne);margin-top:2px}
+  nav.sections{display:none;gap:30px}
+  nav.sections a{text-decoration:none;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ivory-dim);font-weight:500}
+  nav.sections a:hover{color:var(--champagne)}
+  .call-btn{text-decoration:none;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--champagne);color:var(--champagne);padding:12px 24px;font-weight:600;white-space:nowrap;transition:background .25s,color .25s}
+  .call-btn:hover{background:var(--champagne);color:var(--plum-deep)}
+  .mobile-nav{border-top:1px solid rgba(211,169,107,.18);overflow-x:auto;white-space:nowrap;padding:10px 24px;display:flex;gap:26px}
+  .mobile-nav a{text-decoration:none;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ivory-dim);font-weight:500}
+
+  .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden}
+  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%}
+  .hero .shade{position:absolute;inset:0;background:linear-gradient(to top, rgba(29,12,23,.92) 8%, rgba(29,12,23,.28) 46%, rgba(29,12,23,.12) 70%, rgba(29,12,23,.34))}
+  .hero-copy{position:relative;max-width:1280px;margin:0 auto;padding:0 24px 84px;width:100%}
+  .eyebrow{font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--champagne);margin-bottom:20px;font-weight:600}
+  .hero h1{font-family:var(--serif);font-weight:800;font-size:clamp(46px,8.4vw,104px);line-height:1;letter-spacing:-.01em;max-width:11ch}
+  .hero h1 i{font-style:italic;font-weight:500;color:var(--champagne-soft)}
+  .hero p.sub{margin-top:22px;max-width:52ch;font-size:18.5px;color:var(--ivory-dim)}
+  .hero .cta-row{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+  .hero-credit{position:absolute;right:20px;bottom:16px;z-index:2;font-size:11.5px;letter-spacing:.06em;color:rgba(246,240,228,.9);text-shadow:0 1px 8px rgba(18,7,13,.7)}
+  .btn-solid{background:var(--champagne);color:var(--plum-deep);text-decoration:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase;padding:16px 36px;font-weight:600;display:inline-block}
+  .btn-ghost{border:1px solid rgba(246,240,228,.55);color:var(--ivory);text-decoration:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase;padding:16px 36px;font-weight:500;display:inline-block}
+
+  .spread{background:var(--ivory);color:var(--ink)}
+  .spread .inner{max-width:1180px;margin:0 auto;padding:96px 24px}
+  .sec-no{font-family:var(--serif);font-size:15px;color:var(--champagne);letter-spacing:.34em;margin-bottom:14px;font-weight:700}
+  .spread .sec-no{color:#A67C3F}
+  h2.headline{font-family:var(--serif);font-weight:700;font-size:clamp(34px,5vw,60px);line-height:1.06;letter-spacing:-.01em;max-width:18ch}
+  h2.headline i{font-style:italic;font-weight:500}
+  .dropcap::first-letter{font-family:var(--serif);font-weight:800;font-size:4.6em;float:left;line-height:.82;padding:6px 14px 0 0;color:var(--plum-rich)}
+  .lead{margin-top:26px;font-size:19.5px;line-height:1.85;max-width:64ch;color:#3A2430}
+  .pull{margin:44px 0 0;padding:30px 0 30px 28px;border-left:3px solid var(--champagne);font-family:var(--serif);font-style:italic;font-size:clamp(22px,3vw,30px);line-height:1.4;color:var(--plum);max-width:26ch}
+
+  .labels{background:var(--plum);position:relative;overflow:hidden}
+  .labels .inner{max-width:1180px;margin:0 auto;padding:96px 24px}
+  .labels h2.headline{color:var(--ivory)}
+  .labels .standfirst{margin-top:22px;color:var(--ivory-dim);max-width:60ch;font-size:18px}
+  .brand-grid{margin-top:56px;display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid rgba(211,169,107,.35)}
+  .brand{display:flex;align-items:baseline;justify-content:space-between;gap:18px;padding:22px 6px;border-bottom:1px solid rgba(211,169,107,.35)}
+  .brand .name{font-family:var(--serif);font-size:clamp(24px,3.4vw,36px);font-weight:500;color:var(--ivory)}
+  .brand .tag{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--champagne);font-weight:600;white-space:nowrap}
+  .labels .fine{margin-top:34px;color:var(--ivory-dim);font-size:14.5px;max-width:64ch}
+
+  .feature{background:var(--ivory);color:var(--ink)}
+  .feature .inner{max-width:1280px;margin:0 auto;padding:96px 24px;display:grid;gap:48px;align-items:center}
+  figure.frame{margin:0}
+  figure.frame img{width:100%;object-fit:cover;box-shadow:24px 24px 0 var(--plum)}
+  figcaption.cap{margin-top:34px;font-size:13.5px;color:#7A6E5E;letter-spacing:.03em}
+  figcaption.cap strong{display:block;font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;color:#A67C3F;margin-bottom:6px;font-weight:600}
+  .cat-list{list-style:none;margin-top:34px;display:grid;gap:0;border-top:2px solid var(--plum)}
+  .cat-list li{padding:20px 4px;border-bottom:1px solid #D8CDB4;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:baseline}
+  .cat-list .n{font-family:var(--serif);color:#A67C3F;font-weight:700}
+  .cat-list h3{font-family:var(--serif);font-size:23px;font-weight:600}
+  .cat-list p{color:#5A4A52;font-size:16px;margin-top:4px}
+
+  .gallery-sec{background:var(--plum-deep)}
+  .gallery-sec .inner{max-width:1280px;margin:0 auto;padding:96px 24px}
+  .gallery-sec h2.headline{color:var(--ivory)}
+  .stag{display:grid;grid-template-columns:1fr;gap:26px;margin-top:56px}
+  figure.tile{margin:0;position:relative;overflow:hidden;background:var(--plum)}
+  figure.tile img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+  figure.tile.wide img{aspect-ratio:16/10}
+  figure.tile .capbar{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(to top, rgba(18,7,13,.88), rgba(18,7,13,0));padding:44px 20px 16px;font-size:13px;color:var(--ivory-dim);letter-spacing:.03em}
+  figure.tile .capbar strong{display:block;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--champagne);margin-bottom:5px;font-weight:600}
+
+  .rating-strip{background:var(--champagne);color:var(--plum-deep);text-align:center;padding:64px 24px}
+  .rating-strip .stars{font-size:20px;letter-spacing:.3em;margin-bottom:12px}
+  .rating-strip p{font-family:var(--serif);font-size:27px;font-style:italic;font-weight:600}
+
+  .visit{background:var(--plum)}
+  .visit .inner{max-width:1180px;margin:0 auto;padding:96px 24px;display:grid;gap:56px}
+  .visit h2.headline{color:var(--ivory)}
+  .visit-list{list-style:none;margin-top:36px;display:grid;gap:24px}
+  .visit-list li{display:grid;grid-template-columns:110px 1fr;gap:16px;font-size:16.5px;color:var(--ivory-dim)}
+  .visit-list .k{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--champagne);padding-top:6px;font-weight:600}
+  .visit-list a{color:var(--ivory);text-decoration:none;border-bottom:1px solid var(--champagne)}
+  .hours-table{margin-top:4px;display:grid;gap:10px}
+  .hours-table div{display:flex;justify-content:space-between;max-width:340px;border-bottom:1px solid rgba(211,169,107,.3);padding-bottom:10px}
+  .visit .cta-row{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap}
+  .visit .note{margin-top:24px;color:var(--ivory-dim);font-size:15px;max-width:54ch}
+
+  footer{background:#12070D;color:#A89880;padding:60px 24px 42px}
+  footer .inner{max-width:1180px;margin:0 auto}
+  footer .fine{font-size:14px;line-height:1.9;max-width:72ch}
+  footer .fine a{color:var(--champagne)}
+  footer .sign{margin-top:30px;padding-top:26px;border-top:1px solid rgba(211,169,107,.22);font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-weight:500}
+  footer .sign a{color:var(--ivory);text-decoration:none}
+
+  @media(min-width:760px){
+    nav.sections{display:flex}
+    .mobile-nav{display:none}
+    .brand-grid{grid-template-columns:1fr 1fr;column-gap:56px}
+    .stag{grid-template-columns:repeat(2,1fr)}
+    .stag figure.tile.wide{grid-column:1/-1}
+    .stag figure.tile.wide img{aspect-ratio:21/9}
+    .feature .inner{grid-template-columns:1fr 1fr}
+    .feature .copy{padding-left:12px}
+    .visit .inner{grid-template-columns:1.05fr .95fr;align-items:start}
+  }
+  @media(min-width:1100px){
+    .stag{grid-template-columns:repeat(12,1fr)}
+    .stag figure.tile:nth-child(1){grid-column:1/6}
+    .stag figure.tile:nth-child(2){grid-column:6/10;margin-top:64px}
+    .stag figure.tile:nth-child(3){grid-column:10/13;margin-top:128px}
+    .stag figure.tile:nth-child(4){grid-column:2/12}
+    .stag figure.tile:nth-child(4) img{aspect-ratio:21/9}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure"><span>Design preview</span> &nbsp;·&nbsp; Concept website by Freightfolio, not the business's official site</div>
+
+<header class="site">
+  <div class="bar">
+    <a class="wordmark" href="#top">GINA'S<small>Clothing &amp; Jewelry Boutique</small></a>
+    <nav class="sections" aria-label="Sections">
+      <a href="#labels">The Labels</a>
+      <a href="#treasures">Jewelry &amp; Gifts</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="call-btn" href="tel:+12288183333">Call</a>
+  </div>
+  <nav class="mobile-nav" aria-label="Sections">
+    <a href="#labels">The Labels</a>
+    <a href="#treasures">Jewelry &amp; Gifts</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-label="Introduction">
+    <img class="bg" src="img/photo-1.jpg" alt="Woman in a burgundy evening gown posing in a studio">
+    <div class="shade" aria-hidden="true"></div>
+    <p class="hero-credit">Stock photo: woman in a burgundy evening gown.</p>
+    <div class="hero-copy">
+      <p class="eyebrow">Ocean Springs, Mississippi</p>
+      <h1>The designer boutique of <i>Washington Avenue.</i></h1>
+      <p class="sub">Gina's Clothing &amp; Jewelry Boutique carries designer labels including Joseph Ribkoff, Johnny Was, and Brighton, alongside handcrafted jewelry, antiques, accessories, and gifts.</p>
+      <div class="cta-row">
+        <a class="btn-solid" href="tel:+12288183333">Call (228) 818-3333</a>
+        <a class="btn-ghost" href="#labels">See the labels</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="spread">
+    <div class="inner">
+      <p class="sec-no">01 &nbsp;·&nbsp; The boutique</p>
+      <h2 class="headline">Upscale fashion, <i>chosen</i> for the Coast</h2>
+      <p class="lead dropcap">Gina's is an upscale women's boutique in the heart of Ocean Springs, built around designer clothing with a polished, put-together feel. The racks hold recognized designer labels, and the cases hold handcrafted jewelry and one-of-a-kind antiques. It is the kind of shop where an afternoon of browsing turns into the outfit for the season.</p>
+      <p class="pull">Designer labels, handcrafted jewelry, and antiques under one roof on Washington Avenue.</p>
+    </div>
+  </section>
+
+  <section class="labels" id="labels">
+    <div class="inner">
+      <p class="sec-no">02 &nbsp;·&nbsp; The labels</p>
+      <h2 class="headline">The <i>designers</i> on the racks</h2>
+      <p class="standfirst">The boutique stocks these designer lines. Ask in the shop about current arrivals in each collection.</p>
+      <div class="brand-grid">
+        <div class="brand"><span class="name">Joseph Ribkoff</span><span class="tag">Designer</span></div>
+        <div class="brand"><span class="name">Habitat</span><span class="tag">Designer</span></div>
+        <div class="brand"><span class="name">Johnny Was</span><span class="tag">Designer</span></div>
+        <div class="brand"><span class="name">Nic + Zoe</span><span class="tag">Designer</span></div>
+        <div class="brand"><span class="name">Betty Carre</span><span class="tag">Designer</span></div>
+        <div class="brand"><span class="name">Michele Busch</span><span class="tag">Designer</span></div>
+        <div class="brand"><span class="name">Brighton</span><span class="tag">Designer</span></div>
+      </div>
+      <p class="fine">Brand names are shown as text. This concept site is not affiliated with these designers.</p>
+    </div>
+  </section>
+
+  <section class="feature" id="treasures">
+    <div class="inner">
+      <figure class="frame">
+        <img src="img/photo-4.jpg" alt="Vintage pearl and gold jewelry set with necklace, earrings, ring, and bracelet">
+        <figcaption class="cap"><strong>Jewelry case</strong>Stock photo: vintage pearl and gold jewelry set with necklace, earrings, ring, and bracelet.</figcaption>
+      </figure>
+      <div class="copy">
+        <p class="sec-no">03 &nbsp;·&nbsp; Beyond the racks</p>
+        <h2 class="headline">Jewelry, antiques <i>&amp;</i> gifts</h2>
+        <ul class="cat-list">
+          <li><span class="n">a.</span><div><h3>Handcrafted jewelry</h3><p>One-of-a-kind pieces made by hand, from everyday accents to statement pieces.</p></div></li>
+          <li><span class="n">b.</span><div><h3>Antiques</h3><p>Curated vintage finds with character, mixed in among the new arrivals.</p></div></li>
+          <li><span class="n">c.</span><div><h3>Accessories &amp; gifts</h3><p>The finishing touches: accessories for the outfit and gifts worth giving.</p></div></li>
+          <li><span class="n">d.</span><div><h3>Tees</h3><p>Easy, wearable tees alongside the designer collections.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-sec" id="gallery">
+    <div class="inner">
+      <p class="sec-no">04 &nbsp;·&nbsp; Gallery</p>
+      <h2 class="headline">Worn <i>well</i></h2>
+      <div class="stag">
+        <figure class="tile">
+          <img src="img/photo-2.jpg" alt="Elegant woman with red hair wearing black velvet">
+          <div class="capbar"><strong>Evening polish</strong>Stock photo: elegant woman with red hair wearing black velvet.</div>
+        </figure>
+        <figure class="tile">
+          <img src="img/photo-3.jpg" alt="Elegant woman in an evening dress wearing pearls">
+          <div class="capbar"><strong>Timeless pairings</strong>Stock photo: elegant woman in an evening dress wearing pearls.</div>
+        </figure>
+        <figure class="tile">
+          <img src="img/photo-6.jpg" alt="Woman in a black sequined dress holding a red rose">
+          <div class="capbar"><strong>After dark</strong>Stock photo: woman in a black sequined dress holding a red rose.</div>
+        </figure>
+        <figure class="tile wide">
+          <img src="img/photo-5.jpg" alt="Elegant dresses hanging in a boutique">
+          <div class="capbar"><strong>On the racks</strong>Stock photo: elegant dresses hanging in a boutique.</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="rating-strip">
+    <p>Rated 4.7 from 17 Google reviews.</p>
+  </div>
+
+  <section class="visit" id="visit">
+    <div class="inner">
+      <div>
+        <p class="sec-no">05 &nbsp;·&nbsp; Visit</p>
+        <h2 class="headline">Come <i>browse</i> the boutique</h2>
+        <ul class="visit-list">
+          <li><span class="k">Address</span><span><a href="https://www.google.com/maps/search/?api=1&amp;query=902+Washington+Ave+Ocean+Springs+MS+39564" target="_blank" rel="noopener">902 Washington Ave, Ocean Springs, MS 39564</a></span></li>
+          <li><span class="k">Phone</span><span><a href="tel:+12288183333">(228) 818-3333</a></span></li>
+          <li><span class="k">Hours</span><span class="hours-table">
+            <div><span>Monday - Saturday</span><span>11:00 AM - 4:00 PM</span></div>
+            <div><span>Sunday</span><span>Closed</span></div>
+          </span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="standfirst" style="margin-top:0">The boutique keeps its newest arrivals and updates on its Facebook page, followed by 1,661 people. For questions about sizes or current stock, call the shop during business hours.</p>
+        <div class="cta-row">
+          <a class="btn-solid" href="tel:+12288183333">Call the boutique</a>
+          <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=902+Washington+Ave+Ocean+Springs+MS+39564" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <p class="note">This is a design preview concept, not the boutique's official website. Photos shown are stock photography used as placeholders.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <p class="fine">Design preview: this concept website was created by Freightfolio as a design proposal for Gina's Clothing &amp; Jewelry Boutique. It is not affiliated with or endorsed by the business or by any designer brand named here. Business details shown (address, phone, hours, rating) reflect publicly listed information. All photography on this page is stock photography.</p>
+    <div class="sign">
+      <span>Concept by Freightfolio</span>
+      <a href="https://freightfolio.net">freightfolio.net</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

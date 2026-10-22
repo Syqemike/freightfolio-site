@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Inn Zone Bar and Grill in Ocean Springs, MS: neighborhood bar and grill with wings, pool, darts, and karaoke. Design preview concept.">
+<title>Inn Zone Bar and Grill | Ocean Springs, MS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#14100c; --walnut:#241a12; --walnut-soft:#33261a;
+    --amber:#e09a2b; --amber-deep:#b97c1a; --felt:#1f5c3d; --felt-bright:#2e7d46;
+    --chalk:#f3ead8; --chalk-dim:#c9b998;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--black);color:var(--chalk);line-height:1.6}
+  h1,h2,h3{font-family:'Oswald',sans-serif;line-height:1.08;text-transform:uppercase;letter-spacing:.02em}
+  img{max-width:100%;display:block}
+  a{color:var(--amber)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+
+  .topbar{background:#0d0a07;padding:14px 0;border-bottom:1px solid #3a2d1e}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .brand{font-family:'Oswald',sans-serif;font-size:1.5rem;font-weight:700;letter-spacing:.04em}
+  .brand span{color:var(--amber)}
+  .chip{font-size:.78rem;background:transparent;border:1px solid var(--chalk-dim);color:var(--chalk-dim);
+    padding:4px 12px;border-radius:999px;letter-spacing:.08em;text-transform:uppercase}
+  .btn{display:inline-block;background:var(--amber);color:#1c1005;font-weight:700;text-decoration:none;
+    padding:14px 30px;border-radius:4px;letter-spacing:.03em;text-transform:uppercase;font-size:.95rem;border:none;cursor:pointer}
+  .btn:hover{background:var(--amber-deep)}
+  .btn.small{padding:10px 20px;font-size:.85rem}
+  .btn.ghost{background:transparent;color:var(--chalk);border:2px solid var(--chalk-dim)}
+
+  nav.mainnav{background:var(--walnut);position:sticky;top:0;z-index:50;border-bottom:2px solid var(--felt)}
+  nav.mainnav .wrap{display:flex;gap:28px;overflow-x:auto;padding:13px 22px}
+  nav.mainnav a{text-decoration:none;color:var(--chalk);font-weight:600;font-size:.92rem;white-space:nowrap;text-transform:uppercase;letter-spacing:.05em}
+  nav.mainnav a:hover{color:var(--amber)}
+
+  .hero{position:relative;overflow:hidden}
+  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.38}
+  .hero .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,16,12,.92) 30%,rgba(20,16,12,.35) 70%,rgba(20,16,12,.55))}
+  .hero .wrap{position:relative;padding:110px 22px}
+  .eyebrow{font-size:.85rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--amber);margin-bottom:16px}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.4rem);color:#fff;max-width:12ch}
+  .hero p.lede{font-size:1.12rem;color:var(--chalk-dim);margin:18px 0 28px;max-width:32rem}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+
+  .hero-cap{position:relative;font-size:.8rem;color:#8a7554;font-style:italic;margin-top:18px}
+  .board{background:var(--walnut);padding:70px 0}
+  .boardcard{background:#171008;border:3px solid var(--walnut-soft);border-radius:8px;padding:44px 40px;position:relative}
+  .boardcard::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:var(--felt)}
+  .boardcard h2{color:var(--amber);font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:6px}
+  .boardcard .tag{color:var(--chalk-dim);margin-bottom:26px}
+  .chalklist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:4px 44px}
+  .chalklist li{padding:14px 0;border-bottom:2px dashed #4a3a26;font-size:1.15rem;font-family:'Oswald',sans-serif;letter-spacing:.02em}
+  .chalklist li strong{color:#fff;font-weight:600}
+  .chalklist li small{display:block;font-family:'Inter',sans-serif;font-size:.85rem;color:var(--chalk-dim);margin-top:4px;letter-spacing:0;text-transform:none}
+  .boardnote{margin-top:26px;color:var(--chalk-dim);font-size:.95rem}
+
+  .hangout{padding:70px 0}
+  .hangout h2{font-size:clamp(1.9rem,3.6vw,2.7rem);color:#fff;margin-bottom:10px}
+  .hangout .sub{color:var(--chalk-dim);max-width:40rem;margin-bottom:36px}
+  .felt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .feltcard{background:var(--walnut);border-radius:8px;overflow:hidden;border-top:5px solid var(--felt-bright)}
+  .feltcard img{height:190px;width:100%;object-fit:cover}
+  .feltcard .body{padding:22px}
+  .feltcard h3{color:var(--amber);font-size:1.3rem;margin-bottom:8px}
+  .feltcard p{color:var(--chalk-dim);font-size:.97rem}
+  .feltcard .photo-cap{padding:0 22px 18px;font-size:.8rem;color:#8a7554;font-style:italic}
+  .feltcard.textonly .body{padding:30px 22px}
+
+  .visit{background:var(--walnut);padding:70px 0;border-top:2px solid var(--felt)}
+  .visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .visit h2{font-size:clamp(1.9rem,3.6vw,2.7rem);color:#fff;margin-bottom:18px}
+  .visit address{font-style:normal;margin-bottom:18px;font-size:1.05rem;color:var(--chalk-dim)}
+  .visit address strong{color:#fff}
+  .hours{font-size:1.05rem;margin-bottom:18px;color:var(--chalk-dim)}
+  .hours strong{color:var(--amber)}
+  .rating{font-size:1.05rem;margin:16px 0;color:var(--chalk-dim)}
+  .rating strong{color:var(--amber)}
+  .visit figure img{border-radius:8px}
+  .visit figcaption{font-size:.82rem;color:#8a7554;font-style:italic;margin-top:8px}
+
+  footer{background:#0d0a07;padding:36px 0;font-size:.92rem;color:#8a7554;border-top:1px solid #3a2d1e}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  .disclosure-note{font-style:italic;max-width:44rem}
+  .gallery-pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .gallery-pair img{border-radius:8px}
+  .gallery-pair figcaption{font-size:.82rem;color:#8a7554;font-style:italic;margin-top:8px}
+
+  @media(max-width:820px){
+    .chalklist{grid-template-columns:1fr}
+    .felt-grid{grid-template-columns:1fr}
+    .visit .wrap{grid-template-columns:1fr}
+    .hero .wrap{padding:80px 22px}
+    .boardcard{padding:32px 24px}
+  }
+  @media(max-width:560px){
+    .gallery-pair{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="brand">INN ZONE <span>BAR AND GRILL</span></span>
+    <span class="chip">Design preview</span>
+    <a class="btn small" href="tel:+12288759908">Call (228) 875-9908</a>
+  </div>
+</div>
+
+<nav class="mainnav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#menu">Specials Board</a>
+    <a href="#hangout">The Hangout</a>
+    <a href="#visit">Visit</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="bg" src="img/photo-1.jpg" alt="Man lining up a pool shot in a bar">
+  <div class="shade" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">Ocean Springs, Mississippi</p>
+    <h1>Your neighborhood bar on Bienville.</h1>
+    <p class="lede">Inn Zone Bar and Grill is a bar and grill where the food is hot and the drinks are cold. Open every day, 11 AM to midnight.</p>
+    <div class="hero-cta">
+      <a class="btn" href="tel:+12288759908">Call (228) 875-9908</a>
+      <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=1815+Bienville+Blvd+Ocean+Springs+MS+39564" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <p class="hero-cap">Stock photo: a game of pool in a bar.</p>
+  </div>
+</header>
+
+<section class="board" id="menu">
+  <div class="wrap">
+    <div class="boardcard">
+      <h2>The specials board</h2>
+      <p class="tag">Bar food done right. Ask what is on today.</p>
+      <ul class="chalklist">
+        <li><strong>Mrs Mae's wings</strong></li>
+        <li><strong>Chili cheese fries</strong></li>
+        <li><strong>Steak sandwich</strong></li>
+        <li><strong>Hot dogs</strong></li>
+        <li><strong>Game-night spaghetti</strong></li>
+        <li><strong>Cold drinks</strong></li>
+      </ul>
+      <p class="boardnote">Hungry? Call (228) 875-9908.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hangout" id="hangout">
+  <div class="wrap">
+    <p class="eyebrow">The hangout</p>
+    <h2>More than the food</h2>
+    <p class="sub">Pool, darts, and karaoke round out the night.</p>
+    <div class="felt-grid">
+      <article class="feltcard">
+        <img src="img/photo-4.jpg" alt="Pool balls racked on a green felt table in a dim room">
+        <div class="body">
+          <h3>Pool</h3>
+          <p>Rack them up and call your shot.</p>
+        </div>
+        <p class="photo-cap">Stock photo: pool balls racked on a green felt table in a dim room.</p>
+      </article>
+      <article class="feltcard textonly">
+        <div class="body">
+          <h3>Darts</h3>
+          <p>Darts are part of the lineup. Step up and throw.</p>
+        </div>
+      </article>
+      <article class="feltcard">
+        <img src="img/photo-5.jpg" alt="Couple singing karaoke in a dimly lit bar with neon lights">
+        <div class="body">
+          <h3>Karaoke</h3>
+          <p>Grab the mic and sing your song.</p>
+        </div>
+        <p class="photo-cap">Stock photo: a karaoke night in a dimly lit bar with neon lights.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Visit</p>
+      <h2>Come through</h2>
+      <address>
+        <strong>Inn Zone Bar and Grill</strong><br>
+        1815 Bienville Blvd<br>
+        Ocean Springs, MS 39564<br>
+        <a href="tel:+12288759908">(228) 875-9908</a>
+      </address>
+      <p class="hours">Open daily: <strong>11:00 AM - 12:00 AM</strong></p>
+      <p class="rating"><strong>4.8 from 63 Google reviews</strong></p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+12288759908">Call (228) 875-9908</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=1815+Bienville+Blvd+Ocean+Springs+MS+39564" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+    <figure>
+      <img src="img/photo-3.jpg" alt="Two people clinking beer mugs in a bar">
+      <figcaption>Stock photo: two people clinking beer mugs in a bar.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="board" id="gallery" style="padding-top:0">
+  <div class="wrap">
+    <div class="gallery-pair">
+      <figure>
+        <img src="img/photo-2.jpg" alt="Chicken wings in red sauce with parsley on a plate">
+        <figcaption>Stock photo: chicken wings in red sauce with parsley on a plate.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-6.jpg" alt="Basket of crispy fries and saucy wings">
+        <figcaption>Stock photo: a basket of crispy fries and saucy wings.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="disclosure-note">This is a design preview concept created to show what a website for Inn Zone Bar and Grill could look like. It is not the business's official website. Photos shown are stock photos, not photos of the actual business.</p>
+    <p>Concept by <a href="https://freightfolio.net">Freightfolio</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

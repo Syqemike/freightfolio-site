@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Leather &amp; Pearls | Women's Boutique, Ocean Springs MS (Design Preview)</title>
+<meta name="description" content="Design preview concept for Leather & Pearls, a women's clothing boutique on Washington Avenue in Ocean Springs, Mississippi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FAF7F1; --white:#FFFFFF; --stone:#EDE8DC;
+    --charcoal:#2A2A28; --ink:#4A4A46; --muted:#8A8578;
+    --gold:#C6A15B; --gold-soft:#E4D3AC;
+    --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --sans:"Jost", "Helvetica Neue", Arial, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--ivory);color:var(--charcoal);font-family:var(--sans);font-weight:300;line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+
+  .disclosure{background:var(--charcoal);color:var(--ivory);text-align:center;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;padding:10px 18px;font-weight:400}
+  .disclosure span{color:var(--gold-soft)}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(250,247,241,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--stone)}
+  .bar{max-width:1180px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .wordmark{font-family:var(--serif);font-size:26px;letter-spacing:.28em;font-weight:500;text-decoration:none;white-space:nowrap}
+  .wordmark em{font-style:normal;color:var(--gold)}
+  nav.sections{display:none}
+  nav.sections a{text-decoration:none;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);padding:6px 2px;border-bottom:1px solid transparent}
+  nav.sections a:hover{color:var(--charcoal);border-bottom-color:var(--gold)}
+  .call-btn{text-decoration:none;font-size:13px;letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--gold);color:var(--charcoal);padding:11px 22px;transition:background .25s,color .25s;white-space:nowrap;font-weight:400}
+  .call-btn:hover{background:var(--gold);color:#fff}
+  .mobile-nav{border-top:1px solid var(--stone);overflow-x:auto;white-space:nowrap;padding:10px 22px;display:flex;gap:26px}
+  .mobile-nav a{text-decoration:none;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+
+  .hero{position:relative}
+  .hero figure{position:relative}
+  .hero img{width:100%;height:72vh;min-height:480px;object-fit:cover}
+  .hero .veil{position:absolute;inset:0;background:linear-gradient(to bottom, rgba(250,247,241,.10), rgba(250,247,241,.04) 35%, rgba(42,42,40,.60))}
+  .hero .eyebrow{color:#fff}
+  .hero-copy{text-shadow:0 2px 26px rgba(42,42,40,.55)}
+  .hero-copy .btn-solid,.hero-copy .btn-ghost{text-shadow:none}
+  .hero-credit{position:absolute;right:18px;bottom:14px;font-size:11.5px;letter-spacing:.06em;color:rgba(255,255,255,.85);text-shadow:0 1px 8px rgba(42,42,40,.6)}
+  .hero-copy{position:absolute;left:0;right:0;bottom:0;max-width:1180px;margin:0 auto;padding:0 22px 56px;color:#fff}
+  .eyebrow{font-size:12.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:18px;font-weight:400}
+  .hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(44px,8vw,92px);line-height:1.02;letter-spacing:.01em;max-width:12ch}
+  .hero h1 i{font-style:italic;color:var(--gold-soft)}
+  .hero p{margin-top:18px;max-width:46ch;font-size:18px;color:#F4EFE3}
+  .hero .cta-row{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn-solid{background:var(--gold);color:#fff;text-decoration:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase;padding:15px 34px;font-weight:400;display:inline-block}
+  .btn-ghost{border:1px solid rgba(255,255,255,.7);color:#fff;text-decoration:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase;padding:15px 34px;font-weight:400;display:inline-block}
+
+  section.block{max-width:1180px;margin:0 auto;padding:88px 22px}
+  .kicker{font-size:12.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:500}
+  h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.6vw,54px);line-height:1.1;letter-spacing:.01em}
+  h2 i{font-style:italic}
+  .lede{margin-top:20px;max-width:62ch;font-size:19px;color:var(--ink)}
+  .rule{width:64px;height:1px;background:var(--gold);margin:26px 0 0}
+
+  .cols{display:grid;gap:1px;background:var(--stone);border:1px solid var(--stone);margin-top:52px}
+  .col{background:var(--white);padding:44px 34px}
+  .col .num{font-family:var(--serif);font-size:15px;color:var(--gold);letter-spacing:.3em;margin-bottom:14px}
+  .col h3{font-family:var(--serif);font-size:27px;font-weight:500;margin-bottom:12px;letter-spacing:.02em}
+  .col p{color:var(--ink);font-size:16.5px}
+
+  .gallery-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .grid{display:grid;grid-template-columns:1fr;gap:28px;margin-top:52px}
+  figure.shot{background:var(--white);border:1px solid var(--stone)}
+  figure.shot img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  figure.shot.tall img{aspect-ratio:3/4}
+  figcaption{padding:14px 18px;font-size:13.5px;color:var(--muted);letter-spacing:.04em;border-top:1px solid var(--stone)}
+  figcaption strong{font-weight:500;color:var(--ink);letter-spacing:.1em;text-transform:uppercase;font-size:12px;display:block;margin-bottom:4px}
+
+  .rating-strip{background:var(--stone);text-align:center;padding:60px 22px}
+  .rating-strip .stars{color:var(--gold);font-size:20px;letter-spacing:.3em;margin-bottom:12px}
+  .rating-strip p{font-family:var(--serif);font-size:26px;font-style:italic}
+
+  .visit{background:var(--charcoal);color:var(--ivory)}
+  .visit .inner{max-width:1180px;margin:0 auto;padding:88px 22px;display:grid;gap:56px}
+  .visit .kicker{color:var(--gold-soft)}
+  .visit h2{color:#fff}
+  .visit-list{list-style:none;margin-top:34px;display:grid;gap:22px}
+  .visit-list li{display:grid;grid-template-columns:110px 1fr;gap:16px;font-size:16.5px}
+  .visit-list .k{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-soft);padding-top:5px;font-weight:400}
+  .visit-list a{color:#fff;text-decoration:none;border-bottom:1px solid var(--gold)}
+  .hours-table{margin-top:6px;display:grid;gap:8px}
+  .hours-table div{display:flex;justify-content:space-between;max-width:340px;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:8px}
+  .visit .cta-row{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+  .visit .note{margin-top:22px;color:#CFC8B8;font-size:15.5px;max-width:52ch}
+
+  footer{background:#211F1D;color:#B9B2A2;padding:56px 22px 40px}
+  footer .inner{max-width:1180px;margin:0 auto}
+  footer .fine{font-size:14px;line-height:1.8;max-width:70ch}
+  footer .fine a{color:var(--gold-soft)}
+  footer .sign{margin-top:28px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;letter-spacing:.2em;text-transform:uppercase;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  footer .sign a{color:#fff;text-decoration:none}
+
+  @media(min-width:760px){
+    nav.sections{display:flex;gap:34px}
+    .mobile-nav{display:none}
+    .cols{grid-template-columns:repeat(3,1fr)}
+    .grid{grid-template-columns:repeat(2,1fr)}
+    .grid figure.shot:first-child{grid-column:1/-1}
+    .grid figure.shot:first-child img{aspect-ratio:21/9}
+    .visit .inner{grid-template-columns:1.1fr .9fr;align-items:start}
+  }
+  @media(min-width:1080px){
+    .grid{grid-template-columns:repeat(3,1fr)}
+    .grid figure.shot:first-child{grid-column:span 2}
+    .grid figure.shot:first-child img{aspect-ratio:16/10}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure"><span>Design preview</span> &nbsp;·&nbsp; Concept website by Freightfolio, not the business's official site</div>
+
+<header class="site">
+  <div class="bar">
+    <a class="wordmark" href="#top">LEATHER <em>&amp;</em> PEARLS</a>
+    <nav class="sections" aria-label="Sections">
+      <a href="#collection">Collection</a>
+      <a href="#jewelry">Jewelry</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="call-btn" href="tel:+12282153596">Call</a>
+  </div>
+  <nav class="mobile-nav" aria-label="Sections">
+    <a href="#collection">Collection</a>
+    <a href="#jewelry">Jewelry</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-label="Introduction">
+    <figure>
+      <img src="img/photo-1.jpg" alt="Dresses on hangers in a bright boutique">
+      <div class="veil" aria-hidden="true"></div>
+      <figcaption class="hero-credit">Stock photo: dresses on hangers in a bright boutique.</figcaption>
+    </figure>
+    <div class="hero-copy">
+      <p class="eyebrow">Ocean Springs, Mississippi</p>
+      <h1>Simple, casual, <i>beautiful.</i></h1>
+      <p>Leather &amp; Pearls is a women's clothing boutique on Washington Avenue. Owner Alma fills the racks with easy everyday pieces, fashion accessories, and jewelry for girls of all ages.</p>
+      <div class="cta-row">
+        <a class="btn-solid" href="tel:+12282153596">Call (228) 215-3596</a>
+        <a class="btn-ghost" href="#visit">Plan a visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="collection">
+    <p class="kicker">The boutique</p>
+    <h2>Everyday pieces, <i>chosen</i> for real life</h2>
+    <p class="lede">The shop's line is simple on purpose: comfortable, casual clothing you can wear anywhere, plus the accessories and jewelry that finish the outfit. Walk in, browse the racks, and find something that feels like you.</p>
+    <div class="rule" aria-hidden="true"></div>
+    <div class="cols">
+      <div class="col">
+        <p class="num">01</p>
+        <h3>Women's clothing</h3>
+        <p>Casual dresses, tops, and everyday pieces in easy fits and soft fabrics, made for the Gulf Coast pace of life.</p>
+      </div>
+      <div class="col">
+        <p class="num">02</p>
+        <h3>Fashion accessories</h3>
+        <p>Scarves, bags, and finishing touches that pull an outfit together without any fuss.</p>
+      </div>
+      <div class="col" id="jewelry">
+        <p class="num">03</p>
+        <h3>Jewelry</h3>
+        <p>Necklaces, earrings, and bracelets for everyday wear, with pearls as the shop's signature accent.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="gallery" style="padding-top:0">
+    <div class="gallery-head">
+      <div>
+        <p class="kicker">A look inside</p>
+        <h2>The <i>racks</i> and the details</h2>
+      </div>
+    </div>
+    <div class="grid">
+      <figure class="shot">
+        <img src="img/photo-2.jpg" alt="Bright boutique interior with pastel garments and a green plant">
+        <figcaption><strong>The shop floor</strong>Stock photo: bright boutique interior with pastel garments and a green plant.</figcaption>
+      </figure>
+      <figure class="shot tall">
+        <img src="img/photo-3.jpg" alt="Hands selecting sweaters on a clothing rack">
+        <figcaption><strong>Browse the racks</strong>Stock photo: hands selecting sweaters on a clothing rack in a boutique.</figcaption>
+      </figure>
+      <figure class="shot tall">
+        <img src="img/photo-4.jpg" alt="Pearl jewelry arranged on satin fabric">
+        <figcaption><strong>Pearls, of course</strong>Stock photo: pearl jewelry arranged on satin fabric.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/photo-5.jpg" alt="Pearl jewelry on soft white fabric with dried flowers">
+        <figcaption><strong>Delicate details</strong>Stock photo: pearl jewelry on soft white fabric with dried flowers.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/photo-6.jpg" alt="Boutique interior with clothes displayed on racks and shelves">
+        <figcaption><strong>Easy to explore</strong>Stock photo: boutique interior with clothes displayed on racks and shelves.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="rating-strip">
+    <p>Rated 4.9 from 47 Google reviews.</p>
+  </div>
+
+  <section class="visit" id="visit">
+    <div class="inner">
+      <div>
+        <p class="kicker">Visit</p>
+        <h2>On Washington Avenue, <i>in the heart of town</i></h2>
+        <ul class="visit-list">
+          <li><span class="k">Address</span><span><a href="https://www.google.com/maps/search/?api=1&amp;query=630-B+Washington+Avenue+Ocean+Springs+MS+39564" target="_blank" rel="noopener">630-B Washington Avenue, Ocean Springs, MS 39564</a></span></li>
+          <li><span class="k">Phone</span><span><a href="tel:+12282153596">(228) 215-3596</a></span></li>
+          <li><span class="k">Hours</span><span class="hours-table">
+            <div><span>Monday</span><span>11:00 AM - 5:00 PM</span></div>
+            <div><span>Tuesday - Saturday</span><span>10:00 AM - 6:00 PM</span></div>
+            <div><span>Sunday</span><span>Closed</span></div>
+          </span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="lede" style="color:#EDE8DC">Stop in during shop hours to browse the current collection, or call ahead with questions. The boutique keeps its latest arrivals and hours posted on its Facebook page.</p>
+        <div class="cta-row">
+          <a class="btn-solid" href="tel:+12282153596">Call the boutique</a>
+          <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=630-B+Washington+Avenue+Ocean+Springs+MS+39564" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <p class="note">This is a design preview concept, not the boutique's official website. Photos shown are stock photography used as placeholders.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <p class="fine">Design preview: this concept website was created by Freightfolio as a design proposal for Leather &amp; Pearls. It is not affiliated with or endorsed by the business. Business details shown (address, phone, hours, rating) reflect publicly listed information. All photography on this page is stock photography.</p>
+    <div class="sign">
+      <span>Concept by Freightfolio</span>
+      <a href="https://freightfolio.net">freightfolio.net</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
