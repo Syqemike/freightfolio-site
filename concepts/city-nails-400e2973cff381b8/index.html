@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>City Nails | South Pittsburg, TN | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --warm:#fdfaf4;
+  --cream:#f6f1e6;
+  --ink:#2b2925;
+  --mut:#6f6a5f;
+  --sage:#7d8c6f;
+  --sage-d:#5f6f54;
+  --terra:#c96f4a;
+  --terra-d:#a85536;
+  --line:#e4dccb;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--warm);color:var(--ink);font-family:"Inter",system-ui,sans-serif;line-height:1.65;font-size:17px;}
+a{color:inherit;}
+.wrap{max-width:1140px;margin:0 auto;padding:0 26px;}
+.notice{background:var(--sage-d);color:var(--warm);text-align:center;font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:12px 18px;}
+.notice strong{color:#fff;}
+header.site{padding:24px 0;background:var(--warm);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+.wordmark{font-family:"Fraunces",serif;font-weight:700;font-size:clamp(28px,3.8vw,38px);line-height:1;}
+.wordmark .dot{color:var(--terra);}
+.subloc{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--sage-d);margin-top:6px;font-weight:600;}
+nav.sections{display:flex;gap:6px;flex-wrap:wrap;}
+nav.sections a{text-decoration:none;font-size:13.5px;font-weight:600;letter-spacing:.04em;padding:10px 15px;border-radius:999px;}
+nav.sections a:hover{background:var(--cream);}
+.hero{background:linear-gradient(180deg,var(--cream) 0%,var(--warm) 100%);}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;padding-top:64px;padding-bottom:72px;}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;}}
+.pill{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 18px;font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--terra-d);margin-bottom:22px;}
+.hero h1{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(44px,6.4vw,74px);line-height:1.05;margin-bottom:18px;letter-spacing:-.01em;}
+.hero h1 em{font-style:italic;color:var(--sage-d);}
+.hero p.dek{font-size:19px;color:var(--mut);max-width:480px;margin-bottom:30px;}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15.5px;padding:15px 30px;border-radius:999px;}
+.btn.terra{background:var(--terra);color:#fff;}
+.btn.terra:hover{background:var(--terra-d);}
+.btn.line{border:2px solid var(--sage);color:var(--sage-d);}
+.btn.line:hover{background:var(--sage);color:#fff;}
+.ratingline{margin-top:22px;font-size:15px;color:var(--mut);}
+.ratingline strong{color:var(--ink);}
+.hero-photo{border-radius:26px;overflow:hidden;position:relative;box-shadow:0 24px 60px -24px rgba(43,41,37,.28);}
+.hero-photo img{width:100%;height:520px;object-fit:cover;display:block;}
+.hero-photo figcaption{position:absolute;left:18px;bottom:18px;background:rgba(253,250,244,.94);color:var(--ink);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:8px 14px;border-radius:999px;}
+section.block{padding:76px 0;}
+section.block.alt{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.sec-kicker{font-size:12.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--sage-d);margin-bottom:10px;}
+.sec-title{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(32px,4.6vw,52px);line-height:1.1;margin-bottom:14px;letter-spacing:-.01em;}
+.sec-intro{max-width:660px;font-size:18px;color:var(--mut);margin-bottom:10px;}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px;}
+@media(max-width:880px){.serv-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.serv-grid{grid-template-columns:1fr;}}
+.svc{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 26px;}
+.svc .num{font-family:"Fraunces",serif;font-size:15px;color:var(--terra);font-weight:700;letter-spacing:.1em;margin-bottom:10px;}
+.svc h3{font-family:"Fraunces",serif;font-size:23px;font-weight:600;margin-bottom:8px;}
+.svc p{font-size:15.5px;color:var(--mut);}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;}
+@media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;}}
+.gitem{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;}
+.gitem img{width:100%;height:230px;object-fit:cover;display:block;}
+.gitem figcaption{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--mut);padding:12px 16px;}
+.gitem.featured{grid-column:span 2;}
+@media(max-width:760px){.gitem.featured{grid-column:span 1;}}
+.gitem.featured img{height:280px;}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;}
+@media(max-width:880px){.two{grid-template-columns:1fr;}}
+.hours-card{background:var(--sage-d);color:var(--warm);border-radius:24px;padding:38px 40px;}
+.hours-card h3{font-family:"Fraunces",serif;font-size:26px;font-weight:600;margin-bottom:18px;}
+.hrow{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid rgba(253,250,244,.25);font-size:16px;}
+.hrow:last-child{border-bottom:none;}
+.hrow .note{opacity:.85;font-size:14px;}
+.visit-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:36px;}
+.visit-card h3{font-family:"Fraunces",serif;font-size:25px;font-weight:600;margin-bottom:10px;}
+.visit-card p{margin-bottom:8px;color:var(--mut);}
+.visit-card a.phone{color:var(--terra-d);font-weight:700;font-size:22px;text-decoration:none;white-space:nowrap;}
+.hours-card .hrow span:last-child{white-space:nowrap;}
+.cta-band{background:var(--terra);color:#fff;border-radius:26px;padding:48px 44px;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;margin-top:0;}
+.cta-band h2{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(28px,4vw,42px);line-height:1.15;}
+.cta-band p{margin-top:10px;font-size:16.5px;opacity:.92;max-width:520px;}
+.btn.white{background:#fff;color:var(--terra-d);}
+.btn.white:hover{background:var(--ink);color:#fff;}
+footer{padding:48px 0 36px;font-size:14.5px;color:var(--mut);}
+footer .wrap{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:36px;}
+footer .disc{max-width:660px;}
+footer .disc strong{color:var(--ink);}
+footer nav a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--terra);margin-right:14px;font-size:13px;font-weight:600;}
+img{max-width:100%;}
+</style>
+</head>
+<body>
+<div class="notice"><strong>Design preview.</strong> This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+
+<header class="site">
+  <div class="wrap">
+    <div>
+      <div class="wordmark">City Nails<span class="dot">.</span></div>
+      <div class="subloc">South Pittsburg, Tennessee</div>
+    </div>
+    <nav class="sections" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill">Nail salon</span>
+      <h1>Nails that look <em>finished.</em></h1>
+      <p class="dek">City Nails on Cedar Avenue in South Pittsburg. Shellac and gel, pedicures, manicures, 3D nail art, and waxing. Call to book your chair.</p>
+      <div class="hero-ctas">
+        <a class="btn terra" href="tel:+14232284122">Call to book</a>
+        <a class="btn line" href="#services">See services</a>
+      </div>
+      <p class="ratingline"><strong>4.7</strong> from 43 Google reviews</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/photo-1.jpg" alt="Nail technician caring for a client's hands during a manicure">
+      <figcaption>Stock photo</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="sec-kicker">Services</div>
+    <h2 class="sec-title">Hands, feet, and everything between</h2>
+    <p class="sec-intro">The services offered at City Nails. Call ahead so a chair is ready for you.</p>
+    <div class="serv-grid">
+      <div class="svc"><div class="num">01</div><h3>Shellac and gel nails</h3><p>Long wear polish and gel sets that keep their shine between visits.</p></div>
+      <div class="svc"><div class="num">02</div><h3>Manicures</h3><p>Shaping, cuticle care, and polish for clean, finished hands.</p></div>
+      <div class="svc"><div class="num">03</div><h3>Pedicures</h3><p>Foot care, shaping, and polish to keep feet fresh.</p></div>
+      <div class="svc"><div class="num">04</div><h3>3D nail designs and nail art</h3><p>Dimensional designs and detailed art for a one-of-a-kind set.</p></div>
+      <div class="svc"><div class="num">05</div><h3>Waxing</h3><p>Smooth, simple waxing services available in the salon.</p></div>
+      <div class="svc"><div class="num">06</div><h3>Sunday appointments</h3><p>The salon takes appointments on Sundays. Call to set one up.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="gallery">
+  <div class="wrap">
+    <div class="sec-kicker">Gallery</div>
+    <h2 class="sec-title">Recent kind of work</h2>
+    <p class="sec-intro">Representative nail salon photos. These are stock photos, not photos of City Nails.</p>
+    <div class="gallery">
+      <figure class="gitem featured"><img src="img/photo-2.jpg" alt="Nail technician filing a client's nail into shape"><figcaption>Stock photo</figcaption></figure>
+      <figure class="gitem"><img src="img/photo-3.jpg" alt="Hand with colorful polka dot nail art"><figcaption>Stock photo</figcaption></figure>
+      <figure class="gitem"><img src="img/photo-4.jpg" alt="Foot care during a pedicure treatment"><figcaption>Stock photo</figcaption></figure>
+      <figure class="gitem"><img src="img/photo-5.jpg" alt="Feet with painted toenails after a pedicure"><figcaption>Stock photo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="hours">
+  <div class="wrap">
+    <div class="two">
+      <div class="hours-card">
+        <h3>Salon hours</h3>
+        <div class="hrow"><span>Monday to Saturday</span><span>9:00 AM to 7:00 PM</span></div>
+        <div class="hrow"><span>Sunday</span><span class="note">Appointments only</span></div>
+      </div>
+      <div class="visit-card" id="visit">
+        <h3>Visit</h3>
+        <p>114 N Cedar Ave<br>South Pittsburg, TN 37380</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=City+Nails+114+N+Cedar+Ave+South+Pittsburg+TN+37380" target="_blank" rel="noopener">Get directions</a></p>
+        <p style="margin-top:16px;">Questions? Call <a class="phone" href="tel:+14232284122">(423) 228-4122</a>.</p>
+        <p style="margin-top:18px;"><a class="btn terra" href="tel:+14232284122">Call to book</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0;">
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>Ready for your next set?</h2>
+        <p>Walk-ins and appointments Monday through Saturday, appointments on Sunday. Call the salon to book.</p>
+      </div>
+      <a class="btn white" href="tel:+14232284122">Call to book</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="disc">
+      <strong>Design preview by Freightfolio.</strong> This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of City Nails. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net" style="color:var(--terra-d);">freightfolio.net</a>.
+    </div>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

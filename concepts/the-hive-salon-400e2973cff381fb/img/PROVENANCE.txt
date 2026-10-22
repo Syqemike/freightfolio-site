@@ -1,0 +1,26 @@
+The Hive Salon — photo provenance
+Business: The Hive Salon, 156 Deweese St, Lexington, KY 40507
+Real-photo attempt: one quick fetch of https://www.facebook.com/share/1DhT3E965A/ on 2026-10-21
+  returned HTTP 403 (access denied); no usable photos. Facebook photo access requires a
+  logged-in browser session (not available to this builder). Fell back to labeled stock.
+All photos below are STOCK (Pexels, free license), honestly captioned on the page as "Stock photo."
+
+photo-1.jpg — Precision haircut in progress.
+  Source: https://images.pexels.com/photos/8467967/pexels-photo-8467967.jpeg (Pexels photo 8467967)
+  Stock. Caption on page: "A precision cut. Stock photo."
+
+photo-2.jpg — Hair color service.
+  Source: https://images.pexels.com/photos/3993311/pexels-photo-3993311.jpeg (Pexels photo 3993311)
+  Stock. Caption on page: "Eco color. Stock photo."
+
+photo-3.jpg — Hair styling after a cut.
+  Source: https://images.pexels.com/photos/7755521/pexels-photo-7755521.jpeg (Pexels photo 7755521)
+  Stock. Caption on page: "Styled after a cut. Stock photo."
+
+photo-4.jpg — Handcrafted artisan wares.
+  Source: https://images.pexels.com/photos/34301759/pexels-photo-34301759.jpeg (Pexels photo 34301759)
+  Stock. Caption on page: "Artisan wares. Stock photo."
+
+photo-5.jpg — Salon interior with styling chairs.
+  Source: https://images.pexels.com/photos/7195811/pexels-photo-7195811.jpeg (Pexels photo 7195811)
+  Stock. Caption on page: "Inside the salon. Stock photo."
