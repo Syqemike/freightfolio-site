@@ -1,0 +1,27 @@
+PHOTO PROVENANCE - Arch & Column Pub concept site
+================================================
+All four photos below are panels cropped from a single user-submitted listing
+photo (a four-panel collage) published on the restaurantji business listing page
+for Arch & Column Pub, Columbia, MO.
+
+Source page: https://www.restaurantji.com/mo/columbia/arch-and-column-pub-/
+Source image (og:image, collage):
+https://cdn6.localdatacdn.com/images/3734886/d_arch_column_pub_photo.jpg?q=6acd93e9a5b4b
+Harvested 2026-10-23. Each panel was cropped out at original resolution and
+saved as its own file. No other business's photos are used anywhere on the site.
+
+1. photo-bar-drink.jpg
+   Depicts: a White Claw hard seltzer can served over ice in a tall glass,
+   sitting on the bar's wooden counter. Bar lights blurred behind it.
+
+2. photo-back-bar.jpg
+   Depicts: the bar's back shelves stocked with liquor bottles and glassware,
+   wooden shelving, seen from the bar counter.
+
+3. photo-rainbow.jpg
+   Depicts: a glass rainbow suncatcher hanging above the wooden bar, with dark
+   tap handles visible below it.
+
+4. photo-pitcher.jpg
+   Depicts: a glass pitcher of an iced drink with a lime wedge, served on the
+   bar counter.
