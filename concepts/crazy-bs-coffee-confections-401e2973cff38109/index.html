@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Crazy B's Coffee and Confections | Coffee Shop and Bakery - Pascagoula, MS</title>
+<meta name="description" content="Crazy B's Coffee and Confections is a cozy coffee shop and bakery in Pascagoula, MS, serving lattes, kolaches, and king cakes for 15+ years. Concept website preview by Freightfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --coral:#e0655a; --coral-dark:#c24f45; --coral-soft:#f9d9d4;
+    --cream:#fbf5ec; --cream-dark:#f3e9d7;
+    --cocoa:#4a2f23; --cocoa-soft:#6b4a35;
+    --ink:#3d2c22; --muted:#7a6252; --line:#e8d9c0;
+    --sun:#f2b134; --mint:#7fb069;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+  h1,h2,h3{font-family:'Bree Serif',serif;line-height:1.2;font-weight:400}
+  .disclosure{background:var(--cocoa);color:#f3e2c8;text-align:center;font-size:12px;
+    letter-spacing:.16em;text-transform:uppercase;padding:10px 16px}
+  .disclosure strong{color:var(--sun)}
+  header.site{background:rgba(251,245,236,.97);backdrop-filter:blur(6px);position:sticky;top:0;z-index:50;
+    border-bottom:3px dashed var(--coral)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
+    padding:14px 22px;gap:16px;flex-wrap:wrap}
+  .brand{font-family:'Bree Serif',serif;font-size:30px;color:var(--cocoa);text-decoration:none}
+  .brand em{font-style:normal;color:var(--coral)}
+  .navlinks{display:flex;gap:20px;list-style:none;flex-wrap:wrap}
+  .navlinks a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--coral)}
+  .btn{display:inline-block;background:var(--coral);color:#fff;font-weight:800;text-decoration:none;
+    padding:13px 30px;border-radius:999px;transition:transform .15s ease, background .15s ease;
+    box-shadow:3px 3px 0 var(--cocoa)}
+  .btn:hover{background:var(--coral-dark);transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--cocoa)}
+  .btn.cocoa{background:var(--cocoa)}
+  .btn.cocoa:hover{background:#3a241b}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{padding:60px 0 40px;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+  .kicker{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;
+    color:#fff;background:var(--coral);padding:8px 18px;border-radius:999px;margin-bottom:16px;
+    transform:rotate(-2deg);box-shadow:2px 2px 0 var(--cocoa)}
+  .hero h1{font-size:clamp(44px,6vw,72px);color:var(--cocoa);margin-bottom:14px}
+  .hero h1 .pop{color:var(--coral)}
+  .lede{font-size:18px;color:var(--muted);max-width:30em;margin-bottom:22px}
+  .badges{display:flex;gap:14px;flex-wrap:wrap;margin:6px 0 26px}
+  .badge{background:#fff;border:2px dashed var(--coral);border-radius:16px;padding:12px 18px;
+    font-weight:800;font-size:14px;color:var(--cocoa);box-shadow:3px 3px 0 rgba(74,47,35,.15)}
+  .badge:nth-child(1){transform:rotate(-2.5deg)}
+  .badge:nth-child(2){transform:rotate(1.8deg);border-color:var(--sun)}
+  .badge:nth-child(3){transform:rotate(-1.4deg);border-color:var(--mint)}
+  .badge:nth-child(4){transform:rotate(2.2deg)}
+  .badge .stars{color:var(--sun);letter-spacing:2px}
+  .badge small{display:block;font-weight:600;color:var(--muted);font-size:12px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-imgwrap{position:relative}
+  .hero-imgwrap .sticker{position:absolute;top:-18px;right:18px;background:var(--sun);color:var(--cocoa);
+    font-weight:800;font-size:14px;padding:10px 18px;border-radius:999px;transform:rotate(6deg);
+    box-shadow:2px 2px 0 var(--cocoa);z-index:2}
+  .hero-img{border-radius:22px;overflow:hidden;border:4px solid var(--cocoa);box-shadow:6px 6px 0 var(--coral-soft)}
+  .hero-img img{display:block;width:100%;height:100%;object-fit:cover;min-height:420px}
+  .cap{font-size:12px;color:#8a7a5c;padding:10px 4px 0;letter-spacing:.04em}
+  section{padding:64px 0}
+  .sec-head{text-align:center;max-width:660px;margin:0 auto 38px}
+  .sec-head .kicker{margin-bottom:12px}
+  .sec-head h2{font-size:clamp(32px,4.6vw,50px);color:var(--cocoa);margin-bottom:10px}
+  .sec-head p{font-size:17px;color:var(--muted)}
+  .drink-wall{background:var(--cocoa);border-radius:26px;padding:46px 40px;color:var(--cream)}
+  .drink-wall .sec-head h2{color:#fff}
+  .drink-wall .sec-head p{color:#e5d3b8}
+  .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:34px}
+  .menu-item{background:#fff;border-radius:14px;padding:18px 20px;color:var(--ink);
+    border:3px solid transparent;transition:transform .15s ease}
+  .menu-item:hover{transform:rotate(-.6deg) scale(1.02);border-color:var(--sun)}
+  .menu-item h3{font-size:20px;color:var(--cocoa);margin-bottom:4px}
+  .menu-item p{font-size:14px;color:var(--muted)}
+  .menu-item .dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--coral);margin-right:8px}
+  .menu-item:nth-child(3n+2) .dot{background:var(--sun)}
+  .menu-item:nth-child(3n) .dot{background:var(--mint)}
+  .drink-photo{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+  .drink-photo img{width:100%;border-radius:18px;border:4px solid #fff;box-shadow:5px 5px 0 var(--coral)}
+  .drink-photo p{color:#f0e2c9;font-size:17px}
+  .drink-photo .note{background:rgba(255,255,255,.08);border:2px dashed var(--sun);border-radius:14px;
+    padding:18px 22px;margin-top:16px;color:#fff;font-weight:700}
+  .bakery-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:center}
+  .bakery-grid img{width:100%;border-radius:22px;border:4px solid var(--cocoa);box-shadow:6px 6px 0 var(--coral-soft)}
+  .treats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+  .treat{background:#fff;border:2px solid var(--line);border-radius:14px;padding:16px 18px}
+  .treat.star{border-color:var(--coral);background:var(--coral-soft)}
+  .treat h3{font-size:19px;color:var(--cocoa);margin-bottom:4px}
+  .treat p{font-size:14px;color:var(--muted)}
+  .treat .flag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+    color:#fff;background:var(--coral);border-radius:999px;padding:3px 12px;margin-bottom:8px}
+  .king{background:linear-gradient(135deg,var(--coral-soft) 0%,#fbeedf 60%,var(--cream) 100%)}
+  .king-card{background:#fff;border:4px solid var(--cocoa);border-radius:24px;overflow:hidden;
+    display:grid;grid-template-columns:1fr 1fr;box-shadow:8px 8px 0 var(--sun)}
+  .king-card img{display:block;width:100%;height:100%;object-fit:cover;min-height:380px}
+  .king-body{padding:44px 40px}
+  .king-body .crown{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--cocoa);background:var(--sun);padding:8px 18px;border-radius:999px;margin-bottom:16px;transform:rotate(-2deg)}
+  .king-body h2{font-size:clamp(30px,4vw,44px);color:var(--cocoa);margin-bottom:14px}
+  .king-body p{font-size:16px;color:var(--muted);margin-bottom:14px}
+  .king-body .stat{display:flex;gap:14px;align-items:center;background:var(--cream);border:2px dashed var(--coral);
+    border-radius:14px;padding:16px 20px;margin-top:20px}
+  .king-body .stat strong{font-family:'Bree Serif',serif;font-size:30px;color:var(--coral)}
+  .food-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .food-list{list-style:none;display:grid;gap:16px}
+  .food-list li{background:#fff;border:3px solid var(--cocoa);border-radius:16px;padding:22px 24px;box-shadow:4px 4px 0 var(--coral-soft)}
+  .food-list li:nth-child(2){transform:rotate(.8deg)}
+  .food-list h3{font-size:22px;color:var(--cocoa);margin-bottom:6px}
+  .food-list p{font-size:15px;color:var(--muted)}
+  .food-side img{width:100%;border-radius:18px;border:4px solid var(--cocoa)}
+  .doordash{margin-top:26px;background:var(--mint);color:#fff;border-radius:16px;padding:20px 26px;
+    font-weight:800;font-size:17px;text-align:center;box-shadow:4px 4px 0 var(--cocoa);transform:rotate(-.8deg)}
+  .visit{background:var(--cocoa);color:var(--cream);border-radius:26px;padding:46px 40px}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+  .visit h2{color:#fff;font-size:clamp(30px,4vw,44px);margin-bottom:8px}
+  .visit .sub{color:#e5d3b8;margin-bottom:26px}
+  .vcard{background:rgba(255,255,255,.06);border:2px dashed rgba(255,255,255,.3);border-radius:16px;padding:28px}
+  .vcard h3{color:var(--sun);font-size:22px;margin-bottom:14px}
+  .hours{width:100%;border-collapse:collapse;font-size:15px;color:#f0e2c9}
+  .hours td{padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.2)}
+  .hours td:last-child{text-align:right;font-weight:700}
+  .contact-lines{list-style:none;display:grid;gap:12px;font-size:16px;color:#f0e2c9}
+  .contact-lines a{color:var(--sun);font-weight:800}
+  .big-call{text-align:center;margin-top:36px}
+  footer{background:var(--cream-dark);padding:40px 0 32px;font-size:14px;color:var(--muted)}
+  footer .wrap{display:grid;gap:12px}
+  footer a{color:var(--coral-dark);font-weight:700}
+  footer .fine{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--cocoa)}
+  @media(max-width:900px){
+    .hero-grid,.drink-photo,.bakery-grid,.king-card,.food-grid,.visit-grid{grid-template-columns:1fr}
+    .menu-grid{grid-template-columns:repeat(2,1fr)}
+    .treats{grid-template-columns:1fr}
+    .hero-img img{min-height:300px}
+    .king-card img{min-height:260px}
+  }
+  @media(max-width:560px){.menu-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="disclosure"><strong>DESIGN PREVIEW</strong> - Concept website created by Freightfolio. Not the official site of this business.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Crazy <em>B's</em></a>
+    <ul class="navlinks">
+      <li><a href="#drinks">Drinks</a></li>
+      <li><a href="#bakery">Bakery</a></li>
+      <li><a href="#kingcake">King Cakes</a></li>
+      <li><a href="#food">Food</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn" href="tel:+12286968775">Call to Order</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="kicker">Pascagoula, Mississippi</span>
+          <h1>Crazy <span class="pop">B's</span> Coffee <span class="pop">&amp;</span> Confections</h1>
+          <p class="lede">A cozy coffee shop and bakery on Market Street. Fun drinks, fresh-baked treats, and friendly faces for more than 15 years.</p>
+          <div class="badges">
+            <div class="badge"><span class="stars">★★★★★</span> 4.8 from 88 Google reviews</div>
+            <div class="badge">15+ years<br><small>serving Pascagoula</small></div>
+            <div class="badge">DoorDash<br><small>delivery offered</small></div>
+            <div class="badge">King cake season<br><small>a local favorite</small></div>
+          </div>
+          <div class="hero-cta">
+            <a class="btn" href="tel:+12286968775">Call to Order: (228) 696-8775</a>
+            <a class="btn cocoa" href="#drinks">Browse the Drinks</a>
+          </div>
+        </div>
+        <div class="hero-imgwrap">
+          <span class="sticker">Fresh baked daily</span>
+          <div class="hero-img"><img src="img/hero.jpg" alt="Latte with leaf latte art in a pink cup"></div>
+          <p class="cap">Stock photo: latte art in a pink cup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="drinks">
+    <div class="wrap">
+      <div class="drink-wall">
+        <div class="sec-head">
+          <h2>Drinks for Every Mood</h2>
+          <p>Hot, iced, or frozen. Classic coffeehouse drinks plus playful house creations.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item"><h3><span class="dot"></span>Lattes</h3><p>Hot, iced, or frozen, including protein lattes.</p></div>
+          <div class="menu-item"><h3><span class="dot"></span>Cold Brew</h3><p>Smooth and strong, served iced.</p></div>
+          <div class="menu-item"><h3><span class="dot"></span>Cappuccino</h3><p>Classic espresso with thick steamed-milk foam.</p></div>
+          <div class="menu-item"><h3><span class="dot"></span>Americano</h3><p>Bold espresso over hot water, simple and clean.</p></div>
+          <div class="menu-item"><h3><span class="dot"></span>Cafe au Lait</h3><p>Brewed coffee with steamed milk, mellow and warm.</p></div>
+          <div class="menu-item"><h3><span class="dot"></span>Chai</h3><p>Spiced chai tea, a cozy non-coffee pick.</p></div>
+          <div class="menu-item"><h3><span class="dot"></span>Matcha Tea Latte</h3><p>Whisked matcha with milk, hot or iced.</p></div>
+          <div class="menu-item"><h3><span class="dot"></span>Hot Chocolate</h3><p>Rich cocoa for the chocolate lovers.</p></div>
+          <div class="menu-item"><h3><span class="dot"></span>Steamers</h3><p>Steamed milk with flavor, no espresso needed.</p></div>
+          <div class="menu-item"><h3><span class="dot"></span>Fruit Smoothies</h3><p>Blended fruit, fresh and cold.</p></div>
+          <div class="menu-item"><h3><span class="dot"></span>Dirty Alani</h3><p>Energy sodas made with Alani Nu for a fun, fizzy boost.</p></div>
+        </div>
+        <div class="drink-photo">
+          <div>
+            <img src="img/drinks.jpg" alt="Two colorful fruit smoothies held in hands">
+            <p class="cap" style="color:#c9b394">Stock photo: fruit smoothies.</p>
+          </div>
+          <div>
+            <p>Fruit smoothies are a house staple alongside the coffee menu. Call ahead and your drink will be ready when you arrive.</p>
+            <p class="note">Protein lattes are a customer favorite. Ask the counter what flavors are pouring today.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bakery">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">The Bakery Case</span>
+        <h2>Baked Fresh, Every Morning</h2>
+        <p>Cookies, muffins, and pastries from the case, plus the kolaches everyone talks about.</p>
+      </div>
+      <div class="bakery-grid">
+        <div>
+          <img src="img/bakery.jpg" alt="Fresh croissants on plates in a cozy cafe">
+          <p class="cap">Stock photo: fresh croissants on plates.</p>
+        </div>
+        <div class="treats">
+          <div class="treat star">
+            <span class="flag">Standout</span>
+            <h3>Kolaches</h3>
+            <p>Soft breakfast rolls in a variety of flavors. The bacon-egg-cheese is the one to try first.</p>
+          </div>
+          <div class="treat"><h3>Chocolate Croissants</h3><p>Flaky croissants with a chocolate center.</p></div>
+          <div class="treat"><h3>Scones</h3><p>Fresh-baked scones from the case.</p></div>
+          <div class="treat"><h3>Muffins</h3><p>A steady morning companion to any latte.</p></div>
+          <div class="treat"><h3>Cinnamon Rolls</h3><p>Warm, sweet, and iced.</p></div>
+          <div class="treat"><h3>Brownies and Cookies</h3><p>Fresh baked cookies, muffins, and pastries along with specialty sweets.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="king" id="kingcake">
+    <div class="wrap">
+      <div class="king-card">
+        <div>
+          <img src="img/kingcake.jpg" alt="Slice of festive Mardi Gras cake">
+          <p class="cap" style="padding:10px 24px">Stock photo: slice of Mardi Gras cake.</p>
+        </div>
+        <div class="king-body">
+          <span class="crown">Seasonal Highlight</span>
+          <h2>King Cake Season</h2>
+          <p>When carnival season rolls around, Crazy B's is known for its king cakes. Owner Susan Kendrick bakes them fresh in season, and they have become a local favorite for parties, showers, and office gatherings.</p>
+          <p>King cake bites are a smaller way to get the same flavor. They are great for bridal and baby showers, or just for sharing at home.</p>
+          <div class="stat">
+            <strong>~1,000</strong>
+            <span>king cakes baked and sold each season by Susan Kendrick</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="food">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Something to Eat</span>
+        <h2>Light Bites and Lunch</h2>
+        <p>Pair your drink with something fresh from the kitchen.</p>
+      </div>
+      <div class="food-grid">
+        <ul class="food-list">
+          <li><h3>Chicken Salad Sandwich</h3><p>Chicken salad served on a croissant, a shop classic.</p></li>
+          <li><h3>Yogurt Parfait</h3><p>Yogurt layered with fruit and granola, a lighter start to the day.</p></li>
+        </ul>
+        <div class="food-side">
+          <img src="img/food.jpg" alt="Croissant sandwiches served with salad on wooden plates">
+          <p class="cap">Stock photo: croissant sandwiches with salad.</p>
+          <div class="doordash">Can't stop by? Crazy B's offers delivery through DoorDash.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="visit">
+        <h2>Come Say Hi</h2>
+        <p class="sub">Find Crazy B's on Market Street in Pascagoula, or call your order in ahead.</p>
+        <div class="visit-grid">
+          <div class="vcard">
+            <h3>Hours</h3>
+            <table class="hours">
+              <tr><td>Monday - Friday</td><td>6:00 AM - 2:00 PM</td></tr>
+              <tr><td>Saturday</td><td>7:00 AM - 12:00 PM</td></tr>
+              <tr><td>Sunday</td><td>Closed</td></tr>
+            </table>
+          </div>
+          <div class="vcard">
+            <h3>Find Us</h3>
+            <ul class="contact-lines">
+              <li>1759 Market St<br>Pascagoula, MS 39567</li>
+              <li><a href="tel:+12286968775">(228) 696-8775</a></li>
+              <li>Delivery available through DoorDash</li>
+            </ul>
+          </div>
+        </div>
+        <div class="big-call">
+          <a class="btn" href="tel:+12286968775">Call to Order: (228) 696-8775</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fine">DESIGN PREVIEW</p>
+    <p>This is a concept website created by Freightfolio as a design preview for Crazy B's Coffee and Confections. It is not the official website of the business. Photos shown are stock photos, labeled where they appear.</p>
+    <p>Crazy B's Coffee and Confections - 1759 Market St, Pascagoula, MS 39567 - <a href="tel:+12286968775">(228) 696-8775</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

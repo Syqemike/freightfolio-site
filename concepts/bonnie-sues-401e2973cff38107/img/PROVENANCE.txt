@@ -1,0 +1,30 @@
+Photo provenance for Bonnie Sue's concept site (batch-25, built 2026-10-22).
+
+REAL-PHOTO ATTEMPT: The business's public Facebook page (facebook.com/bonniesuescoffee)
+was text-fetched on 2026-10-22. Facebook is login-walled: the page returned only a
+profile stub with no downloadable image URLs. No standalone website exists. Real photos
+were not obtainable, so ALL photos below are free-license stock photos from Pexels.
+Each is honestly labeled "Stock photo:" in its on-page caption.
+
+hero.jpg = stock, Pexels photo 34255748
+  Source: https://www.pexels.com/photo/barista-serving-latte-in-artisan-cafe-34255748/
+  Depicts: barista in an apron serving a latte with latte art in a cozy cafe setting.
+
+drinks.jpg = stock, Pexels photo 459489
+  Source: https://www.pexels.com/photo/459489/
+  Depicts: latte with heart-shaped latte art in a blue cup on a wooden table.
+
+bakery.jpg = stock, Pexels photo 27098478
+  Source: https://www.pexels.com/photo/a-pan-filled-with-cinnamon-rolls-with-icing-27098478/
+  Depicts: a tray of hot cinnamon rolls drizzled with creamy icing.
+
+food.jpg = stock, Pexels photo 38845411
+  Source: https://www.pexels.com/photo/delicious-croissant-sandwich-in-bright-cafe-setting-38845411/
+  Depicts: a gourmet croissant sandwich in a bright cafe setting.
+
+story.jpg = stock, Pexels photo 2079452
+  Source: https://www.pexels.com/photo/2079452/
+  Depicts: warm cafe interior with wooden bookshelves and teal decor.
+
+Pexels license: free to use. No photo shows another business's signage, logos, or
+identifiable branding.

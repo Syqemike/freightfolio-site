@@ -1,0 +1,30 @@
+Photo provenance for Crazy B's Coffee & Confections concept site (batch-25, built 2026-10-22).
+
+REAL-PHOTO ATTEMPT: The business's public Facebook page
+(facebook.com/pages/Crazy-Bs-Coffee-Confections/296430740377695) was text-fetched on
+2026-10-22 and returned HTTP 403 (login wall, no image URLs). No standalone website
+exists. Real photos were not obtainable, so ALL photos below are free-license stock
+photos from Pexels. Each is honestly labeled "Stock photo:" in its on-page caption.
+
+hero.jpg = stock, Pexels photo 36094445
+  Source: https://www.pexels.com/photo/top-view-of-latte-art-in-pink-cup-36094445/
+  Depicts: aerial view of a latte with leaf latte art in a pink cup on a saucer.
+
+drinks.jpg = stock, Pexels photo 25283588
+  Source: https://www.pexels.com/photo/people-holding-cups-of-smoothie-25283588/
+  Depicts: two colorful fruit smoothies held in hands against a rustic brick wall.
+
+bakery.jpg = stock, Pexels photo 15029071
+  Source: https://www.pexels.com/photo/hands-holding-plates-with-croissants-15029071/
+  Depicts: close-up of fresh croissants on plates in a cozy indoor setting.
+
+kingcake.jpg = stock, Pexels photo 11568793
+  Source: https://www.pexels.com/photo/11568793/
+  Depicts: a vibrant slice of Mardi Gras cake held at a festive outdoor event.
+
+food.jpg = stock, Pexels photo 10998644
+  Source: https://www.pexels.com/photo/10998644/
+  Depicts: croissant sandwiches served with fresh salad on wooden plates.
+
+Pexels license: free to use. No photo shows another business's signage, logos, or
+identifiable branding.

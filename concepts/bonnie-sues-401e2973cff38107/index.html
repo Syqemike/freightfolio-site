@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Bonnie Sue's | Family Coffee Shop and Cafe - Pearl, MS</title>
+<meta name="description" content="Bonnie Sue's is a family-run coffee shop and cafe in Pearl, MS. Signature drinks, homemade cinnamon rolls, and fresh food. Concept website preview by Freightfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#0e4b4a; --teal-dark:#093736; --teal-deep:#062b2a;
+    --caramel:#c98a3d; --caramel-dark:#a56f2b;
+    --cream:#f7f1e5; --cream-dark:#eee4cf; --card:#fffdf7;
+    --ink:#2e2a23; --muted:#6b5f4d; --line:#e2d5b8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+  h1,h2,h3{font-family:'Bitter',serif;line-height:1.15}
+  .disclosure{background:var(--teal-deep);color:#e8dcc0;text-align:center;font-size:12px;
+    letter-spacing:.16em;text-transform:uppercase;padding:10px 16px}
+  .disclosure strong{color:var(--caramel)}
+  header.site{background:rgba(247,241,229,.97);backdrop-filter:blur(6px);position:sticky;top:0;z-index:50;
+    border-bottom:3px solid var(--caramel)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
+    padding:14px 22px;gap:16px;flex-wrap:wrap}
+  .brand{font-family:'Bitter',serif;font-weight:800;font-size:30px;color:var(--teal);text-decoration:none}
+  .brand span{color:var(--caramel-dark)}
+  .navlinks{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
+  .navlinks a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--caramel-dark)}
+  .btn{display:inline-block;background:var(--caramel);color:#fff;font-weight:700;text-decoration:none;
+    padding:13px 32px;letter-spacing:.03em;border-radius:8px;transition:background .15s ease;border:2px solid var(--caramel)}
+  .btn:hover{background:var(--caramel-dark);border-color:var(--caramel-dark)}
+  .btn.ghost{background:transparent;color:var(--cream);border-color:var(--caramel)}
+  .btn.ghost:hover{background:rgba(201,138,61,.18)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{background:radial-gradient(1200px 600px at 20% -10%, #155f5d 0%, var(--teal) 45%, var(--teal-dark) 100%);
+    color:var(--cream);padding:64px 0 72px;position:relative}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .kicker{font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--caramel);font-weight:700;margin-bottom:14px}
+  .hero h1{font-size:clamp(42px,5.6vw,68px);font-weight:800;color:#fff;margin-bottom:12px}
+  .tagline{font-family:'Bitter',serif;font-style:italic;font-size:20px;color:var(--cream-dark);margin-bottom:16px}
+  .lede{font-size:17px;color:#e9dfc8;max-width:30em;margin-bottom:14px}
+  .rating{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);
+    border:1px solid var(--caramel);border-radius:999px;padding:10px 20px;margin:10px 0 22px;font-weight:700;color:#fff}
+  .rating .stars{color:var(--caramel);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-img{border-radius:18px;overflow:hidden;border:3px solid var(--caramel);box-shadow:0 24px 60px rgba(0,0,0,.35)}
+  .hero-img img{display:block;width:100%;height:100%;object-fit:cover;min-height:440px}
+  .cap{font-size:12px;color:#8a7a5c;padding:10px 4px 0;letter-spacing:.04em}
+  .hero-img + .cap, .hero .cap{color:#cbbfa4}
+  .board{margin-top:56px;background:var(--teal-deep);border:2px solid var(--caramel);border-radius:18px;padding:36px 32px}
+  .board-head{text-align:center;margin-bottom:26px}
+  .board-head h2{color:#fff;font-size:clamp(26px,3.6vw,38px);margin-bottom:8px}
+  .board-head p{color:#cbbfa4;font-size:15px}
+  .board-head .rule{width:120px;height:3px;background:var(--caramel);margin:14px auto 0;border-radius:2px}
+  .drinks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .drink{background:rgba(255,255,255,.05);border:1px solid rgba(201,138,61,.45);border-radius:12px;padding:22px 20px}
+  .drink .flag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--teal-deep);background:var(--caramel);border-radius:999px;padding:4px 12px;margin-bottom:10px}
+  .drink h3{color:#fff;font-size:21px;margin-bottom:8px}
+  .drink p{color:#d8cba9;font-size:14px}
+  section{padding:72px 0}
+  .sec-head{text-align:center;max-width:660px;margin:0 auto 40px}
+  .sec-head h2{font-size:clamp(30px,4.4vw,46px);color:var(--teal);margin-bottom:10px}
+  .sec-head p{font-size:17px;color:var(--muted)}
+  .case-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .case-grid img{width:100%;border-radius:18px;border:3px solid var(--line);box-shadow:0 18px 44px rgba(14,75,74,.12)}
+  .treat-list{list-style:none;display:grid;gap:14px;margin-top:6px}
+  .treat-list li{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--caramel);
+    border-radius:10px;padding:16px 20px}
+  .treat-list h3{font-size:20px;color:var(--teal);margin-bottom:4px}
+  .treat-list p{font-size:15px;color:var(--muted)}
+  .food{background:var(--teal);color:var(--cream)}
+  .food .sec-head h2{color:#fff}
+  .food .sec-head p{color:#d8cba9}
+  .food-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .fcard{background:var(--teal-dark);border:1px solid rgba(201,138,61,.5);border-radius:14px;overflow:hidden}
+  .fcard img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .fcard .body{padding:22px}
+  .fcard h3{color:#fff;font-size:22px;margin-bottom:6px}
+  .fcard p{color:#d8cba9;font-size:15px}
+  .story-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:center}
+  .story-grid img{width:100%;border-radius:18px;border:3px solid var(--line)}
+  .story-copy h2{font-size:clamp(30px,4.4vw,44px);color:var(--teal);margin-bottom:16px}
+  .story-copy p{font-size:17px;color:var(--muted);margin-bottom:14px}
+  .perks{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+  .perk{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:9px 18px;
+    font-size:14px;font-weight:600;color:var(--teal)}
+  .visit{background:var(--cream-dark)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  .vcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:30px}
+  .vcard h3{color:var(--teal);font-size:24px;margin-bottom:16px}
+  .hours{width:100%;border-collapse:collapse;font-size:15px}
+  .hours td{padding:9px 0;border-bottom:1px dashed var(--line)}
+  .hours td:last-child{text-align:right;font-weight:600}
+  .contact-lines{list-style:none;display:grid;gap:14px;font-size:16px}
+  .contact-lines a{color:var(--caramel-dark);font-weight:700}
+  .big-call{text-align:center;margin-top:44px}
+  footer{background:var(--teal-deep);color:#cbbfa4;padding:44px 0 34px;font-size:14px}
+  footer .wrap{display:grid;gap:14px}
+  footer a{color:var(--caramel)}
+  footer .fine{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9a8f76}
+  @media(max-width:900px){
+    .hero-grid,.case-grid,.story-grid,.visit-grid{grid-template-columns:1fr}
+    .drinks{grid-template-columns:repeat(2,1fr)}
+    .food-cards{grid-template-columns:1fr}
+    .hero-img img{min-height:300px}
+  }
+  @media(max-width:560px){.drinks{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="disclosure"><strong>DESIGN PREVIEW</strong> - Concept website created by Freightfolio. Not the official site of this business.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Bonnie <span>Sue's</span></a>
+    <ul class="navlinks">
+      <li><a href="#drinks">Drinks</a></li>
+      <li><a href="#bakery">Bakery</a></li>
+      <li><a href="#food">Food</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn" href="tel:+16013981253">Call</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">Pearl, Mississippi</p>
+          <h1>Bonnie Sue's</h1>
+          <p class="tagline">"Coffee brewed as strong as our foundations."</p>
+          <p class="lede">A family-run coffee shop and cafe serving signature drinks, homemade baked goods, and fresh-made food in the heart of Pearl.</p>
+          <p class="rating"><span class="stars">★★★★★</span> 5.0 from 151 Google reviews</p>
+          <div class="hero-cta">
+            <a class="btn" href="tel:+16013981253">Call (601) 398-1253</a>
+            <a class="btn ghost" href="#drinks">See the Drink Board</a>
+          </div>
+        </div>
+        <div>
+          <div class="hero-img"><img src="img/hero.jpg" alt="Barista serving a latte with latte art in a cozy cafe"></div>
+          <p class="cap">Stock photo: barista serving a latte in a cozy cafe.</p>
+        </div>
+      </div>
+
+      <div class="board" id="drinks">
+        <div class="board-head">
+          <h2>The Drink Board</h2>
+          <p>Signature drinks, made to order. Have a flavor in mind? Ask and the team will make it on request.</p>
+          <div class="rule"></div>
+        </div>
+        <div class="drinks">
+          <div class="drink">
+            <span class="flag">Signature</span>
+            <h3>Bonnie's Caramel White Chocolate Mocha</h3>
+            <p>The house favorite. Caramel and white chocolate blended into a rich, smooth mocha, served hot or iced.</p>
+          </div>
+          <div class="drink">
+            <h3>Salted Caramel Latte</h3>
+            <p>Espresso and steamed milk with salted caramel. A steady favorite for regulars.</p>
+          </div>
+          <div class="drink">
+            <h3>White Pecan Latte</h3>
+            <p>White chocolate with a warm pecan note, finished the way you like it.</p>
+          </div>
+          <div class="drink">
+            <h3>Matcha</h3>
+            <p>Whisked matcha for a smooth, mellow lift, hot or iced.</p>
+          </div>
+          <div class="drink">
+            <h3>Frappes</h3>
+            <p>Blended and ice cold. Ask about current flavors at the counter.</p>
+          </div>
+          <div class="drink">
+            <h3>Custom Drinks</h3>
+            <p>Craving something specific? The team builds custom drinks on request, so just say what sounds good.</p>
+          </div>
+        </div>
+        <div style="margin-top:28px;border-radius:14px;overflow:hidden;border:1px solid rgba(201,138,61,.45)">
+          <img src="img/drinks.jpg" alt="Latte with heart-shaped latte art on a wooden table" style="display:block;width:100%;aspect-ratio:21/9;object-fit:cover">
+        </div>
+        <p class="cap">Stock photo: latte with heart-shaped latte art.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="bakery">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>From the Baked-Goods Case</h2>
+        <p>Homemade treats, baked fresh. The cinnamon rolls are the ones people talk about.</p>
+      </div>
+      <div class="case-grid">
+        <div>
+          <img src="img/bakery.jpg" alt="Tray of hot cinnamon rolls drizzled with icing">
+          <p class="cap">Stock photo: tray of hot cinnamon rolls with icing.</p>
+        </div>
+        <ul class="treat-list">
+          <li><h3>Homemade Cinnamon Rolls</h3><p>Soft, warm, and iced. A shop staple and a regular favorite.</p></li>
+          <li><h3>Salted Blondie</h3><p>Buttery bars with a salted finish, baked in house.</p></li>
+          <li><h3>Brownies</h3><p>Rich and fudgy, from the bakery case.</p></li>
+          <li><h3>Muffins</h3><p>Fresh muffins that pair well with any drink on the board.</p></li>
+          <li><h3>Cheese Danish</h3><p>Flaky pastry with a sweet cheese center.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="food" id="food">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Made Fresh to Eat</h2>
+        <p>More than coffee. Grab a real meal alongside your drink.</p>
+      </div>
+      <div class="food-cards">
+        <div class="fcard">
+          <img src="img/food.jpg" alt="Croissant sandwich served in a bright cafe">
+          <div class="body">
+            <h3>Chicken Salad Croissant</h3>
+            <p>Creamy chicken salad on a flaky croissant. A lunch favorite.</p>
+          </div>
+          <p class="cap">Stock photo: croissant sandwich in a cafe.</p>
+        </div>
+        <div class="fcard">
+          <div class="body">
+            <h3>Pulled Pork Sandwich</h3>
+            <p>Slow, savory pulled pork stacked on a sandwich roll.</p>
+          </div>
+        </div>
+        <div class="fcard">
+          <div class="body">
+            <h3>Panini</h3>
+            <p>Pressed and toasted to order. Ask what is on the press today.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="wrap">
+      <div class="story-grid">
+        <div>
+          <img src="img/story.jpg" alt="Warm cafe interior with wooden bookshelves">
+          <p class="cap">Stock photo: warm cafe interior with wooden bookshelves.</p>
+        </div>
+        <div class="story-copy">
+          <p class="kicker">Our Story</p>
+          <h2>A Family-Run Shop Built on Strong Foundations</h2>
+          <p>Bonnie Sue's is a family-run coffee shop and cafe in Pearl, Mississippi. The tagline says it plainly: coffee brewed as strong as our foundations.</p>
+          <p>Regulars come for the signature drinks and the homemade baked goods, and they stay because it feels like home. Bring your laptop, bring a friend, or just bring an appetite.</p>
+          <div class="perks">
+            <span class="perk">Family run</span>
+            <span class="perk">Free Wi-Fi</span>
+            <span class="perk">Patio seating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Visit Bonnie Sue's</h2>
+        <p>Stop by the shop in Pearl, or call ahead and your order will be ready.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <table class="hours">
+            <tr><td>Monday - Friday</td><td>7:00 AM - 6:00 PM</td></tr>
+            <tr><td>Saturday</td><td>8:00 AM - 6:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+        <div class="vcard">
+          <h3>Find Us</h3>
+          <ul class="contact-lines">
+            <li>422 N Bierdeman Rd<br>Pearl, MS 39208</li>
+            <li><a href="tel:+16013981253">(601) 398-1253</a></li>
+            <li><a href="https://www.facebook.com/bonniesuescoffee" target="_blank" rel="noopener">Facebook: Bonnie Sue's</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="big-call">
+        <a class="btn" href="tel:+16013981253">Call (601) 398-1253</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fine">DESIGN PREVIEW</p>
+    <p>This is a concept website created by Freightfolio as a design preview for Bonnie Sue's. It is not the official website of the business. Photos shown are stock photos, labeled where they appear.</p>
+    <p>Bonnie Sue's - 422 N Bierdeman Rd, Pearl, MS 39208 - <a href="tel:+16013981253">(601) 398-1253</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
