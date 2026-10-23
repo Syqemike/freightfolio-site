@@ -1,0 +1,141 @@
+/* Old Broadway Club - Website Concept. House broadsheet style. */
+:root{
+  --paper:#f4ead6;
+  --paper2:#ecdfc3;
+  --ink:#231a12;
+  --ink-soft:#4a3d2c;
+  --copper:#b0612a;
+  --board:#2c3a2a;
+  --board-edge:#1e281d;
+  --chalk:#f1e7cd;
+  --brick:#8f2d22;
+  --brick-dark:#71221a;
+  --rule:#c9b78e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Zilla Slab",Georgia,serif;
+  font-size:18px;line-height:1.6;
+}
+a{color:var(--brick)}
+a[href^="tel:"]{white-space:nowrap}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+
+/* printer's slug: disclosure */
+.slug{
+  background:var(--ink);color:var(--paper);
+  font-family:"Bebas Neue",sans-serif;font-size:15px;letter-spacing:3px;
+  text-align:center;padding:9px 12px;
+}
+.slug span{color:#e8c37a}
+
+/* masthead */
+.masthead{background:var(--ink);color:var(--paper);border-bottom:4px double var(--copper)}
+.masthead-inner{display:flex;gap:26px;align-items:center;padding:30px 0 24px}
+.mast-logo{flex:0 0 132px}
+.mast-logo img{width:132px;height:132px;object-fit:cover;border:2px solid var(--copper)}
+.mast-name{font-family:"Fraunces",serif;font-weight:700;font-size:clamp(38px,6vw,64px);line-height:1.02;letter-spacing:.5px}
+.mast-tag{font-family:"Bebas Neue",sans-serif;letter-spacing:4px;font-size:17px;color:#e8c37a;margin-top:8px}
+.mast-addr{font-size:16.5px;color:#d9c8a6;margin-top:4px}
+
+/* ruled nav */
+.rulednav{background:var(--ink);border-top:1px solid var(--copper)}
+.rulednav ul{list-style:none;display:flex;flex-wrap:wrap;gap:4px 26px;justify-content:center;padding:12px 8px}
+.rulednav a{font-family:"Bebas Neue",sans-serif;letter-spacing:3px;font-size:17px;color:var(--paper);text-decoration:none}
+.rulednav a:hover,.rulednav a[aria-current="page"]{color:#e8c37a;text-decoration:underline;text-underline-offset:6px}
+
+/* sections */
+.section{padding:56px 0}
+.section-tight{padding:34px 0}
+.signlabel{
+  font-family:"Bebas Neue",sans-serif;letter-spacing:5px;font-size:18px;color:var(--brick);
+  border-bottom:2px solid var(--copper);display:inline-block;padding-bottom:6px;margin-bottom:18px;
+}
+h1.board-h,h2.board-h{font-family:"Fraunces",serif;font-weight:700;line-height:1.1;margin:0 0 14px}
+h2.board-h{font-size:clamp(30px,4vw,44px)}
+p{margin:0 0 14px;max-width:62ch}
+.lede{font-size:21px}
+
+/* chalkboard panel */
+.board{
+  background:var(--board);color:var(--chalk);
+  border:6px solid var(--board-edge);outline:2px solid var(--copper);outline-offset:-11px;
+  padding:38px 40px 30px;margin:8px 0 10px;
+}
+.board .signlabel{color:#e8c37a;border-color:#8a6b3f}
+.board h3{font-family:"Fraunces",serif;font-size:26px;margin:26px 0 10px;letter-spacing:.5px}
+.board h3:first-of-type{margin-top:0}
+.board ul{list-style:none}
+.board li{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1px dotted rgba(241,231,205,.28)}
+.board li:last-child{border-bottom:none}
+.board .dish{font-weight:600;flex:0 0 auto;white-space:nowrap}
+.board .leader{flex:1;min-width:24px;border-bottom:2px dotted rgba(232,195,122,.65);transform:translateY(-5px)}
+.board .price{font-family:"Bebas Neue",sans-serif;font-size:20px;letter-spacing:1px;color:#e8c37a}
+.board .desc{flex-basis:100%;font-size:15.5px;color:#d8cba8;font-weight:400;margin-top:-2px}
+.board .note{font-size:15px;color:#d8cba8;margin-top:18px}
+
+/* plain menu list (for menu page columns) */
+.menucols{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.dishrow{padding:10px 0;border-bottom:1px dotted var(--rule)}
+.dishrow .top{display:flex;align-items:baseline;gap:10px}
+.dishrow .name{font-weight:600;font-size:19px}
+.dishrow .dots{flex:1;border-bottom:2px dotted var(--copper);transform:translateY(-5px)}
+.dishrow .pr{font-family:"Bebas Neue",sans-serif;font-size:20px;letter-spacing:1px;color:var(--brick)}
+.dishrow .d{font-size:16px;color:var(--ink-soft);margin-top:2px}
+
+/* door sign (hours) */
+.doorsign{
+  background:var(--board);color:var(--chalk);
+  border:5px solid var(--board-edge);outline:2px solid var(--copper);outline-offset:-10px;
+  padding:34px 34px 26px;max-width:520px;
+}
+.doorsign .signlabel{color:#e8c37a;border-color:#8a6b3f}
+.doorsign table{width:100%;border-collapse:collapse;font-family:"Bebas Neue",sans-serif;font-size:19px;letter-spacing:2px}
+.doorsign td{padding:7px 2px;border-bottom:1px dotted rgba(241,231,205,.3)}
+.doorsign tr:last-child td{border-bottom:none}
+.doorsign td:last-child{text-align:right;color:#e8c37a}
+
+/* ticket CTA */
+.ticket{
+  display:inline-block;background:var(--brick);color:var(--paper);
+  font-family:"Bebas Neue",sans-serif;letter-spacing:3px;font-size:20px;text-decoration:none;
+  padding:14px 30px;border:2px dashed #e8c37a;margin:6px 10px 6px 0;
+}
+.ticket:hover{background:var(--brick-dark)}
+.ticket.ghost{background:transparent;color:var(--brick);border:2px dashed var(--brick)}
+
+/* broadsheet two-col list (games) */
+.broadsheet{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.broadsheet .item{border-top:2px solid var(--ink);padding:18px 0 14px}
+.broadsheet h3{font-family:"Fraunces",serif;font-size:23px;margin-bottom:6px}
+.broadsheet p{font-size:16.5px}
+
+/* captioned print (photo figures) */
+.print{border:1px solid var(--rule);background:var(--paper2);padding:14px;margin:0 0 28px}
+.print img{width:100%}
+.print figcaption{font-size:15px;color:var(--ink-soft);padding-top:10px;font-style:italic}
+.photogrid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.photogrid .wide{grid-column:1/-1}
+
+/* rating line */
+.rating{font-size:16px;color:var(--ink-soft);margin-top:6px}
+
+/* footer */
+footer{background:var(--ink);color:#d9c8a6;margin-top:40px}
+footer .wrap{padding-top:34px;padding-bottom:34px}
+footer p{font-size:15.5px;margin:0 0 8px}
+footer a{color:#e8c37a}
+.footer-nav{font-family:"Bebas Neue",sans-serif;letter-spacing:3px;font-size:16px;margin:14px 0}
+.footer-nav a{color:var(--paper);text-decoration:none;margin-right:22px}
+.concept-note{border-top:1px solid #4a3d2c;padding-top:14px;margin-top:14px;font-size:14px;color:#a8946f}
+
+@media(max-width:760px){
+  .masthead-inner{flex-direction:column;text-align:center;gap:14px}
+  .menucols,.broadsheet,.photogrid{grid-template-columns:1fr}
+  .board{padding:26px 20px 20px}
+  body{font-size:17px}
+}
