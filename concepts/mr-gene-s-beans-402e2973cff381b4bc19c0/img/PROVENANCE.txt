@@ -1,0 +1,57 @@
+PROVENANCE — real photos of the actual business (Mr Gene's Beans, 302 De La Mare Ave, Fairhope, AL)
+All assets visually inspected 2026-10-22 by the Website Dev builder. Facebook page
+(facebook.com/Mr-Genes-Beans-149371151756498) was not readable through the available
+connector, so assets were harvested from the business's verified press/directory
+listings (the same "public listing pages in the notes" the research cites). No stock
+photos used; no other business's photos used.
+
+1. hero.jpg (1360x907, 286 KB)
+   Source URL: https://restaurants.mobilebaymag.com/wp-content/uploads/2024/12/mr-genes-beans.jpg
+   Source page: https://restaurants.mobilebaymag.com/directory/mr-genes-beans/ (Mobile Bay
+   Magazine restaurant directory entry for Mr. Gene's Beans)
+   Identity/location match: storefront at 302 De La Mare Ave showing the turquoise hanging
+   sign reading "Mr. Gene's Beans / HOME OF THE FAIRHOPE FLOAT", turquoise chairs, red
+   Coca-Cola patio umbrellas, white picket porch railing, and the "302" address number on
+   the window. Matches the research branding notes (turquoise chairs/stools, outdoor
+   umbrella tables).
+
+2. storefront.jpg (480x360, 57 KB)
+   Source URL: https://lh3.googleusercontent.com/places/ANXAkqHmvoH20fCcMfSg1JKCnoKKMEguP-5z_k4qDX194bOjZ3LCXkUmW5S5ZkoFgvdkLsIRHbrpDulxPQEKnE0xal7uEeQBV9PY4xY=s1600-w480
+   Source page: https://localitybiz.com/30970434/mr-gene-s-beans-fairhope (Google Places
+   listing for Mr Gene's Beans, 302 De La Mare Ave, Fairhope AL)
+   Identity/location match: same storefront and turquoise sign with Coca-Cola umbrellas
+   and white picket railing, taken from the street. Corroborates hero.jpg.
+
+3. float-interior.jpg (1024x576, 114 KB)
+   Source URL: https://www.thisisalabama.org/wp-content/uploads/2025/11/Mr.-Genes-Beans-1024x576.jpeg
+   Source page: https://www.thisisalabama.org/13-alabama-coffee-shops-that-serve-a-seriously-good-cup-of-joe/
+   (AL.com / This Is Alabama press article featuring Mr. Gene's Beans)
+   Identity/location match: interior counter shot — a Fairhope Float cup topped with
+   whipped cream, frozen-yogurt machines and syrup/sauce bottles visible behind the
+   counter. Matches the shop's known interior (yogurt machines, retail syrups).
+
+4. float-closeup.jpg (1200x630, 114 KB)
+   Source URL: https://gulfcoastjourneys.com/wp-content/uploads/2023/10/Mr.-Genes-Beans-in-Fairhope-Alabama.jpg
+   Source page: https://gulfcoastjourneys.com/mr-genes-beans-fairhope/ (Gulf Coast Journeys
+   article about Mr. Gene's Beans in Fairhope, Alabama)
+   Identity/location match: close-up of the Fairhope Float — whipped cream dusted with
+   cinnamon/nutmeg in the shop's foam cup, matching the menu description (frozen yogurt +
+   coffee + whipped cream + chocolate/vanilla/cinnamon/nutmeg).
+
+5. float-counter.jpg (750x1000, 142 KB)
+   Source URL: https://s3-media3.fl.yelpcdn.com/bphoto/OACnqj-oVN90UGjk4NnoWQ/o.jpg
+   Source page: https://kimlaco.com/alabama/mr-genes-beans-fairhope-1811419.biz (business
+   listing carrying the Yelp customer photo of Mr Gene's Beans)
+   Identity/location match: Fairhope Float with spiced whipped cream in the shop's
+   branded foam cup on the wooden counter inside the store; door and wall decor visible.
+
+6. life-at-beans.jpg (800x600, 102 KB)
+   Source URL: https://cdn6.localdatacdn.com/images/3637371/m_mr_gene_s_beans_photo.jpg?q=6a2d652d2b176
+   Source page: https://www.restaurantji.com/al/fairhope/cafe/ (Restaurantji listing page
+   for Mr Gene's Beans, Fairhope)
+   Identity/location match: collage of customer photos — staff holding a "FAIRHOPE POP"
+   popcorn tub, customers with ice cream cones, kids at the turquoise bar stools on the
+   porch, and the outdoor umbrella tables with the shop sign. All consistent with the
+   storefront and branding verified above.
+
+Compression: PIL, max width 1400px, JPEG quality 80, progressive. Largest file 286 KB.
