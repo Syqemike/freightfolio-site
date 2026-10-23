@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&display=swap');
+
+:root {
+  --bar: #17120d;
+  --bar-2: #221a11;
+  --cream: #f5eedb;
+  --cream-dim: #e8dcbf;
+  --amber: #f0a832;
+  --mustard: #d9b36a;
+  --pbr: #c33a2b;
+  --ink: #2a2118;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bar);
+  color: var(--cream);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--amber); }
+
+/* ---- disclosure strip ---- */
+.disclosure {
+  background: var(--amber);
+  color: #1a140b;
+  font-size: 0.78rem;
+  text-align: center;
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+/* ---- top bar ---- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(23, 18, 13, 0.97);
+  border-bottom: 3px double var(--amber);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 22px;
+  flex-wrap: wrap;
+}
+.brandmark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.brandmark img {
+  height: 44px;
+  width: auto;
+  border: 2px solid var(--amber);
+  border-radius: 4px;
+}
+.brandname {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--amber);
+}
+.brandname small {
+  display: block;
+  font-family: -apple-system, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  color: var(--cream-dim);
+}
+nav.mainnav {
+  margin-left: auto;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+nav.mainnav a {
+  color: var(--cream);
+  text-decoration: none;
+  padding: 8px 14px;
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+nav.mainnav a:hover { color: var(--amber); }
+nav.mainnav a.active { color: var(--amber); border-bottom-color: var(--pbr); }
+
+.callbtn {
+  background: var(--pbr);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 0.92rem;
+}
+.callbtn:hover { background: #a92e21; color: #fff; }
+
+/* ---- page titles ---- */
+.pagetitle {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  letter-spacing: 0.04em;
+  color: var(--amber);
+  line-height: 1.05;
+}
+.kicker {
+  color: var(--mustard);
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 22px; }
+
+/* ---- hero: full-bleed photo with chalkboard title plate ---- */
+.hero { position: relative; }
+.hero figure.photofull { margin: 0; }
+.hero figure.photofull img {
+  width: 100%;
+  height: 62vh;
+  min-height: 380px;
+  object-fit: cover;
+}
+.hero .plate {
+  position: relative;
+  margin: -130px auto 0;
+  background: var(--bar-2);
+  border: 3px solid var(--amber);
+  outline: 1px dashed rgba(240, 168, 50, 0.5);
+  outline-offset: -8px;
+  padding: 26px 44px;
+  text-align: center;
+  max-width: 720px;
+  z-index: 5;
+}
+.hero + .ticker { margin-top: -70px; padding-top: 96px; }
+.hero .plate .pagetitle { margin: 4px 0 8px; }
+.hero .plate p { color: var(--cream-dim); font-size: 1.02rem; }
+.hero figcaption {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 0.72rem;
+  background: rgba(0,0,0,0.6);
+  color: var(--cream-dim);
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+/* ---- sections ---- */
+section.band { padding: 90px 0 60px; }
+.chalk-rule {
+  border: none;
+  border-top: 2px dashed rgba(240, 168, 50, 0.35);
+  margin: 0 0 46px;
+}
+h2.sec {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 0.05em;
+  color: var(--amber);
+  margin-bottom: 6px;
+}
+.sec-sub { color: var(--cream-dim); margin-bottom: 34px; max-width: 60ch; }
+
+/* ---- menu board: cream tickets ---- */
+.tickets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+.ticket {
+  background: var(--cream);
+  color: var(--ink);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.45);
+  transform: rotate(-0.4deg);
+}
+.ticket:nth-child(even) { transform: rotate(0.5deg); }
+.ticket .pin {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--pbr);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  z-index: 2;
+}
+.ticket img { width: 100%; height: 170px; object-fit: cover; }
+.ticket .tb { padding: 18px 20px 20px; }
+.ticket .tb h3 {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+.ticket .tb p { font-size: 0.92rem; color: #57493a; margin-top: 6px; }
+.ticket figcaption, .photonote {
+  font-size: 0.72rem;
+  color: #8a7a5f;
+  padding: 8px 20px 12px;
+  font-style: italic;
+}
+
+/* ---- hours ticker strip ---- */
+.ticker {
+  background: var(--pbr);
+  color: #fff;
+  padding: 14px 0;
+  overflow: hidden;
+  border-top: 2px solid rgba(0,0,0,0.25);
+  border-bottom: 2px solid rgba(0,0,0,0.25);
+}
+.ticker .row {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ticker strong { color: #ffe9b0; }
+
+/* ---- good to know: pinned list ---- */
+.knowlist {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.knowlist li {
+  background: var(--bar-2);
+  border: 1px solid rgba(240,168,50,0.35);
+  border-left: 6px solid var(--amber);
+  padding: 16px 18px;
+  font-size: 0.95rem;
+}
+.knowlist li b { color: var(--amber); display: block; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 4px; }
+
+/* ---- rating stamp (Caveat, once per page) ---- */
+.stamp {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  color: var(--mustard);
+  border: 2px dashed var(--mustard);
+  display: inline-block;
+  padding: 8px 26px;
+  transform: rotate(-2deg);
+  margin: 10px 0;
+}
+
+/* ---- menu page: single-column ticket list ---- */
+.menulist { display: flex; flex-direction: column; gap: 26px; }
+.menurow {
+  background: var(--cream);
+  color: var(--ink);
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+.menurow img { width: 100%; height: 100%; min-height: 190px; object-fit: cover; }
+.menurow.textonly { grid-template-columns: 1fr; }
+.menurow .mb { padding: 24px 28px; }
+.menurow .mb h3 {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+  border-bottom: 2px dashed #b7a377;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+.menurow .mb p { color: #57493a; }
+.menurow .photonote { padding: 6px 28px 14px; }
+
+/* ---- about layout ---- */
+.aboutgrid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 40px; align-items: start; }
+.aboutgrid figure { margin: 0; }
+.aboutgrid figure img { border: 3px solid var(--amber); border-radius: 3px; }
+.aboutgrid figcaption { font-size: 0.78rem; color: var(--cream-dim); font-style: italic; margin-top: 8px; }
+.prose p { margin-bottom: 16px; color: var(--cream-dim); }
+.prose p.lede { color: var(--cream); font-size: 1.12rem; }
+.prose .serifq {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  color: var(--mustard);
+  font-size: 1.25rem;
+  border-left: 4px solid var(--pbr);
+  padding-left: 16px;
+  margin: 26px 0;
+}
+
+/* ---- gallery ---- */
+.gallery { columns: 3 260px; column-gap: 18px; }
+.gallery figure { break-inside: avoid; margin: 0 0 18px; background: var(--bar-2); border: 1px solid rgba(240,168,50,0.25); border-radius: 3px; overflow: hidden; }
+.gallery img { width: 100%; }
+.gallery figcaption { font-size: 0.78rem; color: var(--cream-dim); font-style: italic; padding: 10px 14px; }
+
+/* ---- visit ---- */
+.visgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.hourstable { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.hourstable th, .hourstable td { text-align: left; padding: 12px 10px; border-bottom: 1px dashed rgba(240,168,50,0.35); }
+.hourstable th { color: var(--amber); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem; }
+.hourstable td:last-child { text-align: right; color: var(--cream-dim); }
+.addresscard {
+  background: var(--bar-2);
+  border: 1px solid rgba(240,168,50,0.35);
+  border-left: 6px solid var(--pbr);
+  padding: 24px;
+}
+.addresscard p { margin-bottom: 10px; color: var(--cream-dim); }
+.addresscard b { color: var(--cream); }
+.bigcall { margin: 30px 0; }
+
+/* ---- footer CTA band ---- */
+.footband {
+  background: var(--pbr);
+  color: #fff;
+  padding: 56px 22px;
+  text-align: center;
+  margin-top: 80px;
+}
+.footband .pagetitle { color: #fff; font-size: clamp(2.2rem, 5vw, 3.4rem); }
+.footband p { margin: 12px 0 22px; color: #ffe9b0; }
+.footband .callbtn { background: #fff; color: var(--pbr); font-size: 1.05rem; padding: 14px 34px; white-space: nowrap; display: inline-block; max-width: 100%; }
+.footband .callbtn:hover { background: var(--cream); }
+
+footer.site {
+  background: #0f0c08;
+  padding: 34px 22px;
+  font-size: 0.82rem;
+  color: #9a8f78;
+  text-align: center;
+  line-height: 1.9;
+}
+footer.site a { color: var(--mustard); }
+
+@media (max-width: 760px) {
+  .topbar { padding: 10px 14px; gap: 10px; }
+  .brandname { font-size: 1.4rem; }
+  nav.mainnav { margin-left: 0; width: 100%; }
+  nav.mainnav a { padding: 6px 10px; font-size: 0.8rem; }
+  .hero .plate { margin: -90px 16px 0; padding: 18px 22px; }
+  .hero + .ticker { margin-top: -52px; padding-top: 76px; }
+  .aboutgrid, .visgrid { grid-template-columns: 1fr; }
+  .menulist .menurow { grid-template-columns: 1fr; }
+  .menulist .menurow img { height: 200px; min-height: 0; }
+  section.band { padding: 110px 0 50px; }
+}
