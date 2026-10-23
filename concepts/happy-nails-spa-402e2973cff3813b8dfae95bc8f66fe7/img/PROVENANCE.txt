@@ -1,0 +1,29 @@
+Photo provenance for Happy Nails Spa concept site (slug happy-nails-spa-402e2973cff3813b8dfae95bc8f66fe7)
+
+REAL PHOTOS OF THIS BUSINESS: none obtainable. Attempts made 2026-10-23:
+- Google-listing and Yelp-style image harvest for "Happy Nails Spa, 103 E Urquhart St, Chalmette, LA".
+- Image search returned photos of other similarly named salons (Alexandria LA, Danbury CT, Roanoke VA,
+  Topeka KS, Southgate MI, Balch Springs TX, Shreveport LA) which were rejected as unverifiable or wrong business.
+- Directory pages for the Chalmette business (kubiti.blog, kobifikirleri.com, worldlocationmap.com)
+  carried no business-owned photos; several were hijacked/spam pages. No business-owned Facebook/Instagram exists.
+Per project rules, all photos below are STOCK photos and are labelled as such in captions.
+
+STOCK PHOTOS (all labelled "stock photo" in on-page captions):
+1. salon-work.jpg -- Stock photo: a masked nail technician working on a client's hand at a salon table.
+   Source URL: https://acrylove.com/cdn/shop/articles/gabriela-v8c7G8i1nZc-unsplash.jpg?v=1685300897&width=1500
+   Found via page: https://acrylove.com/blogs/noticias/la-importancia-de-una-base-de-unas-preparando-el-lienzo-perfecto
+2. nail-art.jpg -- Stock photo: close-up of hands with colorful abstract nail art in yellow, red and blue.
+   Source URL: https://tvazteca.brightspotcdn.com/fc/91/5b4263204387913d800d18b69400/5.jpg
+   Found via page: (none returned by image search)
+3. manicure.jpg -- Stock photo: a technician applying white polish to a client's nails in a salon.
+   Source URL: https://cdn1-production-images-kly.akamaized.net/fUObMKJPFcsLXI2_hRKA7aSSwLc=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4547418/original/012229200_1692696797-giorgio-trovato-gb6gtiTZKB8-unsplash.jpg
+   Found via page: https://www.fimela.com/health/read/5377171/tips-memilih-kutek-yang-tepat-agar-kesehatan-kuku-tetap-terjaga
+4. pink-polish.jpg -- Stock photo: hands with pink nails applying pink polish, polish bottle nearby.
+   Source URL: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimtdB_PjpEu3fasMHd_7Evz4t0-zqdRfCnj9ia_CsW1u2rSMNzZqcGp5SzNaE2xfugv01ODxrcSaukh_dydKfTwpklrbnHI5Mhu1SPONhlojj6FjyruaBNMOXCOovoc1VzWt9LaH907ZSoIjL2T8NPtnCrrvSEvKFZ2gOIIGpQWChRykZ9F5g_yMgy/w400-h268/element5-digital-Xf7o2W7qgP0-unsplash.jpg
+   Found via page: https://www.jenniferslittleworld.com/2022/08/
+5. glitter-nails.jpg -- Stock photo: close-up of almond-shaped nails with sheer pink polish and glitter accents.
+   Source URL: https://dailymom.com/portal/wp-content/uploads/2026/03/mailen-aguirre-YmQszA5_GkE-unsplash-1-960x640.jpg
+   Found via page: https://dailymom.com/shine/opalescent-aesthetic-opal-jewelry-pastel/
+6. pedicure-soak.jpg -- Stock photo: feet soaking in water with floating flowers, a pedicure-style spa scene.
+   Source URL: https://cristianesiedschlag.ch/wp-content/uploads/2022/07/rune-enstad-qeuJczNo54w-unsplash-1280x855.jpg
+   Found via page: https://cristianesiedschlag.ch/reflexologie/
