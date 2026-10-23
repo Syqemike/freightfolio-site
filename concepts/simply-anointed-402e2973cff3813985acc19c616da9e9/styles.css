@@ -1,0 +1,195 @@
+/* Simply Anointed Massage Therapy, Website Concept
+   Design brief: warm paper, clay accent drawn from the business logo,
+   Fraunces serif display paired with Karla. Editorial, quiet, deliberate.
+   No gradients, no cards, no rounded blobs. */
+:root {
+  --paper: #F6F1E6;
+  --paper-deep: #EFE8D7;
+  --ink: #2A2620;
+  --clay: #B2592F;
+  --clay-deep: #8F4423;
+  --sage: #6F7666;
+  --line: #DCD2BE;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Karla", "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.65;
+}
+img { display: block; max-width: 100%; height: auto; }
+.wrap { max-width: 1140px; margin: 0 auto; padding: 0 32px; }
+
+/* Disclosure strip */
+.disclosure {
+  background: var(--ink); color: var(--paper);
+  font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase;
+  text-align: center; padding: 9px 16px;
+}
+.disclosure span { color: var(--clay); }
+
+/* Header */
+.site-header { border-bottom: 1px solid var(--line); background: var(--paper); }
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px; padding-top: 20px; padding-bottom: 20px; flex-wrap: wrap;
+}
+.brand { text-decoration: none; color: var(--ink); }
+.brand .brand-name {
+  font-family: "Fraunces", Georgia, serif; font-weight: 600;
+  font-size: 30px; letter-spacing: .01em; line-height: 1.1;
+}
+.brand .brand-sub {
+  font-size: 11.5px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--sage); margin-top: 4px;
+}
+nav.main-nav { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+nav.main-nav a.nav-link {
+  color: var(--ink); text-decoration: none; font-size: 13.5px;
+  letter-spacing: .16em; text-transform: uppercase; font-weight: 600;
+  border-bottom: 2px solid transparent; padding-bottom: 2px;
+}
+nav.main-nav a.nav-link:hover { border-bottom-color: var(--clay); }
+nav.main-nav a.nav-link.current { border-bottom-color: var(--clay); color: var(--clay-deep); }
+
+/* Buttons: rectangular, thin, no radius */
+.btn {
+  display: inline-block; text-decoration: none; cursor: pointer;
+  border: 2px solid var(--clay); color: var(--clay-deep); background: transparent;
+  font-size: 13px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
+  padding: 14px 30px; transition: background .18s ease, color .18s ease;
+}
+.btn:hover { background: var(--clay); color: #fff; }
+.btn.solid { background: var(--clay); color: #fff; }
+.btn.solid:hover { background: var(--clay-deep); border-color: var(--clay-deep); }
+.btn.light { border-color: var(--paper); color: var(--paper); }
+.btn.light:hover { background: var(--paper); color: var(--clay-deep); }
+
+/* Type */
+h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 500; line-height: 1.12; }
+.eyebrow {
+  font-size: 12px; font-weight: 700; letter-spacing: .24em; text-transform: uppercase;
+  color: var(--clay-deep); margin-bottom: 18px;
+}
+.lede { font-size: 20px; line-height: 1.7; color: var(--ink); }
+.caption {
+  font-size: 13.5px; color: var(--sage); margin-top: 12px; line-height: 1.55;
+}
+.section-num {
+  font-family: "Fraunces", Georgia, serif; font-size: 15px; color: var(--sage);
+  letter-spacing: .1em; margin-bottom: 8px;
+}
+
+/* Hero: editorial split */
+.hero { padding: 72px 0 80px; }
+.hero .wrap { display: grid; grid-template-columns: 5fr 7fr; gap: 64px; align-items: center; }
+.hero-kicker {
+  border-top: 5px solid var(--clay); padding-top: 22px;
+  font-size: 12.5px; font-weight: 700; letter-spacing: .24em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 26px;
+}
+.hero h1 { font-size: clamp(42px, 5.2vw, 66px); margin-bottom: 26px; }
+.hero h1 em { font-style: italic; color: var(--clay-deep); }
+.hero .lede { margin-bottom: 30px; }
+.hero-meta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 34px; }
+.photo-frame { position: relative; }
+.photo-frame::before {
+  content: ""; position: absolute; inset: 0;
+  background: var(--clay); transform: translate(22px, 22px); z-index: 0;
+}
+.photo-frame img { position: relative; z-index: 1; width: 100%; }
+
+/* Sections */
+.section { padding: 76px 0; }
+.section.alt { background: var(--paper-deep); }
+.section h2 { font-size: clamp(30px, 3.4vw, 44px); margin-bottom: 16px; }
+.section-intro { max-width: 640px; margin-bottom: 48px; }
+
+/* Treatment menu: spa-menu rows with dotted leaders */
+.treatments { border-top: 1px solid var(--line); }
+.treatment {
+  display: grid; grid-template-columns: 1fr auto; gap: 8px 24px;
+  align-items: baseline; padding: 26px 0; border-bottom: 1px solid var(--line);
+  text-decoration: none; color: var(--ink);
+}
+.treatment .t-name { font-family: "Fraunces", Georgia, serif; font-size: 26px; }
+.treatment-head { display: flex; align-items: baseline; gap: 18px; }
+.treatment-head .dots {
+  flex: 1; border-bottom: 2px dotted var(--line); transform: translateY(-6px); min-width: 40px;
+}
+.treatment-head .t-tag {
+  font-size: 12px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--sage); white-space: nowrap;
+}
+.treatment p { grid-column: 1 / -1; max-width: 680px; color: var(--sage); font-size: 16px; }
+a.treatment:hover .t-name { color: var(--clay-deep); }
+
+/* Clay band */
+.band { background: var(--clay); color: #FFF8EE; }
+.band .wrap { padding-top: 72px; padding-bottom: 72px; }
+.band h2 { font-size: clamp(32px, 4vw, 52px); margin-bottom: 18px; color: #fff; }
+.band p { max-width: 620px; font-size: 18px; margin-bottom: 30px; color: #F7E8D8; }
+
+/* Hours ledger */
+.hours-ledger { max-width: 560px; border-top: 1px solid var(--line); }
+.hours-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 17px;
+}
+.hours-row .day { font-weight: 700; }
+.hours-row .time { font-family: "Fraunces", Georgia, serif; font-size: 19px; }
+.hours-row.closed .time { color: var(--sage); font-family: "Karla", sans-serif; font-size: 15px; }
+
+/* Two-column info blocks */
+.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+.info-block h3 { font-size: 24px; margin-bottom: 14px; }
+.info-block p, .info-block li { font-size: 16.5px; }
+.info-block ul { list-style: none; }
+.info-block li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+.contact-line { font-family: "Fraunces", Georgia, serif; font-size: 26px; margin-bottom: 8px; }
+.contact-line a { color: var(--clay-deep); text-decoration: none; }
+.contact-line a:hover { text-decoration: underline; }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: 4fr 7fr; gap: 64px; align-items: start; }
+.about-grid img { border: 1px solid var(--line); background: #fff; padding: 18px; }
+.signature { font-family: "Fraunces", Georgia, serif; font-style: italic; font-size: 24px; color: var(--clay-deep); margin-top: 30px; }
+
+/* Gallery strip */
+.photo-row { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 48px; }
+
+/* Footer */
+footer.site-footer { background: var(--ink); color: #D9D2C2; }
+footer.site-footer .wrap { padding-top: 56px; padding-bottom: 40px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
+.footer-grid h4 {
+  font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--clay);
+  margin-bottom: 16px;
+}
+.footer-grid p, .footer-grid a { font-size: 15px; color: #D9D2C2; text-decoration: none; line-height: 1.8; }
+.footer-grid a:hover { color: #fff; text-decoration: underline; }
+.footer-name { font-family: "Fraunces", Georgia, serif; font-size: 26px; color: #fff; margin-bottom: 10px; }
+.footer-note {
+  border-top: 1px solid #4A443A; padding-top: 24px; font-size: 12.5px; color: #9A9384;
+  letter-spacing: .06em; line-height: 1.7;
+}
+
+.rating-line { margin-top: 26px; font-size: 15px; color: var(--sage); }
+.rating-line strong { color: var(--ink); }
+
+/* Responsive */
+@media (max-width: 860px) {
+  .hero .wrap { grid-template-columns: 1fr; gap: 48px; }
+  .photo-frame::before { transform: translate(12px, 12px); }
+  .info-grid, .about-grid, .photo-row { grid-template-columns: 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .section { padding: 56px 0; }
+  .wrap { padding: 0 20px; }
+  nav.main-nav { gap: 18px; }
+  .treatment-head .dots { display: none; }
+  .treatment-head { flex-wrap: wrap; gap: 6px 18px; }
+  .treatment-head .t-name { width: 100%; }
+}
