@@ -1,0 +1,218 @@
+@font-face{font-family:"Rye";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/rye-400.woff2") format("woff2");}
+@font-face{font-family:"Alfa Slab One";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/alfaslabone-400.woff2") format("woff2");}
+@font-face{font-family:"Caveat";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/caveat-500.woff2") format("woff2");}
+@font-face{font-family:"Caveat";font-weight:600;font-style:normal;font-display:swap;src:url("fonts/caveat-600.woff2") format("woff2");}
+@font-face{font-family:"Work Sans";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/worksans-400.woff2") format("woff2");}
+@font-face{font-family:"Work Sans";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/worksans-500.woff2") format("woff2");}
+@font-face{font-family:"Work Sans";font-weight:700;font-style:normal;font-display:swap;src:url("fonts/worksans-700.woff2") format("woff2");}
+@font-face{font-family:"Work Sans";font-weight:800;font-style:normal;font-display:swap;src:url("fonts/worksans-800.woff2") format("woff2");}
+:root{
+  --brick:#7b2d1e;
+  --brick-deep:#5d2115;
+  --cream:#f5ecda;
+  --paper:#fbf6ea;
+  --walnut:#2b1f16;
+  --brass:#c9a24a;
+  --chalk:#31473b;
+  --chalk-line:#e8e2cf;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:var(--cream);
+  color:var(--walnut);
+  font-family:"Work Sans",system-ui,sans-serif;
+  line-height:1.65;
+  font-size:17px;
+}
+a{color:var(--brick);}
+img{max-width:100%;height:auto;display:block;}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px;}
+
+/* disclosure strip */
+.disclosure{
+  background:var(--walnut);
+  color:#e8e0cd;
+  text-align:center;
+  font-size:12.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  padding:10px 16px;
+}
+.disclosure strong{color:var(--brass);font-weight:800;}
+
+/* tavern sign band */
+.signband{background:var(--brick);border-bottom:6px double var(--brass);}
+.signband .wrap{padding:34px 24px 30px;text-align:center;}
+.wordmark{
+  font-family:"Rye",serif;
+  font-size:clamp(44px,8vw,92px);
+  color:var(--cream);
+  line-height:1;
+  text-shadow:3px 3px 0 var(--brick-deep);
+}
+.tagline{
+  margin-top:12px;
+  font-size:14px;
+  letter-spacing:.34em;
+  text-transform:uppercase;
+  color:var(--brass);
+}
+.navline{
+  margin-top:22px;
+  display:flex;justify-content:center;flex-wrap:wrap;
+  gap:6px 4px;
+}
+.navline a{
+  color:var(--cream);
+  text-decoration:none;
+  font-size:13.5px;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;
+  padding:8px 10px;
+  white-space:nowrap;
+}
+.navline a:hover{color:var(--brass);}
+.navline .sep{color:var(--brass);padding:8px 2px;font-size:12px;}
+.navline a.active{color:var(--brass);text-decoration:underline;text-underline-offset:6px;}
+
+/* intro band */
+.intro{background:var(--paper);border-bottom:4px solid var(--walnut);}
+.intro .wrap{padding:52px 24px 46px;text-align:center;}
+.intro h1,.page-title{
+  font-family:"Alfa Slab One",serif;
+  font-weight:400;
+  font-size:clamp(30px,4.6vw,50px);
+  line-height:1.12;
+  color:var(--walnut);
+  margin-bottom:16px;
+}
+.intro p.lede,.lede{max-width:680px;margin:0 auto;font-size:19px;}
+.cta-row{margin-top:26px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:800;
+  font-size:16px;letter-spacing:.06em;
+  padding:15px 34px;
+  background:var(--brass);color:var(--walnut);
+  border:3px solid var(--walnut);
+}
+.btn:hover{background:var(--walnut);color:var(--cream);}
+.btn.ghost{background:transparent;color:var(--brick);border-color:var(--brick);}
+.btn.ghost:hover{background:var(--brick);color:var(--cream);}
+.btn.light{background:var(--cream);color:var(--walnut);border-color:var(--cream);}
+.btn.light:hover{background:var(--brass);color:var(--walnut);border-color:var(--cream);}
+
+/* diamond divider */
+.rule{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto;padding:0;}
+.rule::before,.rule::after{content:"";height:2px;width:120px;background:var(--brass);}
+.rule span{color:var(--brass);font-size:16px;line-height:1;}
+
+section{padding:64px 0;}
+.sec-head{text-align:center;margin-bottom:36px;}
+.sec-kicker{
+  display:inline-block;font-size:13px;font-weight:800;
+  letter-spacing:.28em;text-transform:uppercase;color:var(--brick);
+  margin-bottom:10px;
+}
+.sec-title{
+  font-family:"Alfa Slab One",serif;font-weight:400;
+  font-size:clamp(28px,4vw,44px);line-height:1.12;color:var(--walnut);
+}
+.sec-intro{max-width:640px;margin:14px auto 0;}
+
+/* postcard photo frames */
+.postcards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:start;}
+.postcard{
+  background:var(--paper);
+  border:3px solid var(--walnut);
+  outline:5px solid var(--brass);
+  outline-offset:-11px;
+  padding:14px 14px 12px;
+}
+.postcard img{width:100%;}
+.postcard figcaption{
+  padding:12px 6px 4px;
+  font-size:13.5px;color:#4a3a2a;line-height:1.5;
+}
+.postcard figcaption strong{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brick);margin-bottom:4px;}
+
+/* two-column feature rows */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;}
+.feature.flip .ftext{order:2;}
+.feature.flip .fmedia{order:1;}
+.ftext h2{font-family:"Alfa Slab One",serif;font-weight:400;font-size:clamp(26px,3.4vw,38px);line-height:1.15;margin-bottom:14px;}
+.ftext p+p{margin-top:12px;}
+.fmedia .postcard{transform:rotate(-1.2deg);}
+.feature.flip .fmedia .postcard{transform:rotate(1.2deg);}
+.tick-list{list-style:none;margin-top:18px;}
+.tick-list li{padding:9px 0 9px 30px;position:relative;border-bottom:1px dashed #b9a67e;}
+.tick-list li:last-child{border-bottom:none;}
+.tick-list li::before{content:"\25C6";position:absolute;left:6px;top:11px;color:var(--brick);font-size:11px;}
+
+/* chalkboard panel */
+.chalkboard{
+  background:var(--chalk);
+  color:var(--chalk-line);
+  border:10px solid var(--walnut);
+  padding:52px 20px;
+}
+.chalkboard .wrap{max-width:900px;text-align:center;}
+.chalk-title{
+  font-family:"Caveat",cursive;font-size:clamp(34px,5vw,54px);
+  color:#f3eedd;margin-bottom:6px;
+}
+.chalk-sub{color:#cdd6c2;font-size:15px;letter-spacing:.1em;}
+.hours-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
+  margin:30px 0 8px;
+}
+.hours-cell{border:1px solid #6d7f6b;padding:14px 8px;}
+.hours-cell .d{font-family:"Caveat",cursive;font-size:24px;color:#f3eedd;}
+.hours-cell .t{font-size:15px;color:#e4ddc4;font-weight:600;}
+.cash-note{
+  margin:26px auto 0;max-width:560px;
+  border:2px dashed var(--brass);
+  padding:14px 18px;font-size:16px;color:#f3eedd;
+}
+.chalkboard .cta-row{margin-top:30px;}
+
+/* rating line (shown once, home page) */
+.rating-line{
+  text-align:center;font-size:16px;color:#4a3a2a;
+  border-top:2px solid var(--brass);border-bottom:2px solid var(--brass);
+  padding:14px 20px;margin:0 auto;max-width:640px;
+}
+.rating-line strong{color:var(--brick);}
+
+/* contact blocks */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px;}
+.visit-card{
+  background:var(--paper);border:3px solid var(--walnut);padding:30px 28px;
+}
+.visit-card h3{
+  font-family:"Alfa Slab One",serif;font-weight:400;font-size:22px;margin-bottom:10px;color:var(--brick);
+}
+.visit-card p{margin-bottom:6px;}
+.visit-card .big{font-size:22px;font-weight:800;color:var(--walnut);text-decoration:none;}
+.visit-card .big:hover{color:var(--brick);}
+
+/* gallery page */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;align-items:start;}
+.gallery .postcard{padding:16px 16px 14px;}
+
+/* footer */
+footer{background:var(--walnut);color:#d9cfb8;padding:44px 0 30px;margin-top:0;}
+footer .wrap{text-align:center;}
+footer .fname{font-family:"Rye",serif;font-size:30px;color:var(--cream);}
+footer .flines{margin:14px 0;font-size:15px;line-height:1.9;}
+footer .flines a{color:var(--brass);}
+footer .fnote{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8d7f66;margin-top:18px;}
+
+@media(max-width:860px){
+  .postcards{grid-template-columns:1fr;}
+  .feature{grid-template-columns:1fr;gap:28px;}
+  .feature.flip .ftext{order:1;}
+  .feature.flip .fmedia{order:2;}
+  .hours-grid{grid-template-columns:repeat(2,1fr);}
+  .visit-grid{grid-template-columns:1fr;}
+  .gallery{grid-template-columns:1fr;}
+  section{padding:48px 0;}
+}
