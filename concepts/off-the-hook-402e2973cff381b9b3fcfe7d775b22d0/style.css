@@ -1,0 +1,325 @@
+/* OFF the Hook concept - "The Dock Board"
+   A restaurant wall-chalkboard aesthetic: dark board panels with chalk-cream
+   type on a weathered cream page. Typography: Bitter (slab) display, Karla body. */
+
+:root {
+  --board: #142c27;
+  --board-deep: #0d1f1b;
+  --chalk: #f4ecd9;
+  --chalk-dim: #d9cfb4;
+  --paper: #faf5e8;
+  --paper-edge: #e8dfc6;
+  --buoy: #c0452b;
+  --buoy-dark: #9c3520;
+  --rope: #b3905c;
+  --ink: #22302c;
+  --muted: #5f6f68;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Karla", "Segoe UI", sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+
+/* ---- disclosure strip ---- */
+.disclosure {
+  background: var(--board-deep);
+  color: var(--chalk-dim);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 9px 16px;
+  border-bottom: 3px double var(--rope);
+}
+.disclosure strong { color: var(--chalk); font-weight: 700; }
+
+/* ---- site header: the painted name board ---- */
+.site-board {
+  background: var(--board);
+  border-top: 8px solid var(--board-deep);
+  border-bottom: 8px solid var(--board-deep);
+  color: var(--chalk);
+  padding: 44px 0 30px;
+}
+.board-frame {
+  border: 3px double var(--rope);
+  padding: 34px 30px 28px;
+  text-align: center;
+  position: relative;
+}
+.board-kicker {
+  font-size: 13px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--chalk-dim);
+  margin-bottom: 14px;
+}
+.brand-name {
+  font-family: "Bitter", Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(44px, 8vw, 88px);
+  line-height: 0.98;
+  letter-spacing: 0.01em;
+  color: var(--chalk);
+  text-transform: uppercase;
+}
+.brand-name .off { color: var(--chalk); }
+.brand-name .hook { color: var(--buoy); }
+.brand-tag {
+  margin-top: 14px;
+  font-family: "Bitter", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(16px, 2.4vw, 21px);
+  color: var(--chalk-dim);
+}
+
+/* ---- nav ---- */
+.mainnav {
+  background: var(--board-deep);
+  text-align: center;
+  padding: 12px 10px;
+  border-bottom: 3px double var(--rope);
+}
+.mainnav a {
+  color: var(--chalk-dim);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 18px;
+  padding: 4px 2px;
+  border-bottom: 2px solid transparent;
+}
+.mainnav a:hover, .mainnav a.active {
+  color: var(--chalk);
+  border-bottom-color: var(--buoy);
+}
+
+/* ---- generic sections ---- */
+.section { padding: 64px 0; }
+.section.board-dark {
+  background: var(--board);
+  color: var(--chalk);
+  border-top: 8px solid var(--board-deep);
+  border-bottom: 8px solid var(--board-deep);
+}
+.kicker {
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--buoy);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.board-dark .kicker { color: var(--rope); }
+h1, h2, h3 { font-family: "Bitter", Georgia, serif; }
+h2.section-title {
+  font-size: clamp(30px, 4.6vw, 46px);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.board-dark h2.section-title { color: var(--chalk); }
+.section-sub { color: var(--muted); max-width: 640px; margin-bottom: 34px; }
+.board-dark .section-sub { color: var(--chalk-dim); }
+p + p { margin-top: 14px; }
+
+/* ---- call button (rectangular, buoy red) ---- */
+.btn {
+  display: inline-block;
+  background: var(--buoy);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 14px 30px;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 4px solid var(--buoy-dark);
+}
+.btn:hover { background: var(--buoy-dark); }
+.btn.ghost {
+  background: transparent;
+  color: var(--chalk);
+  border: 2px solid var(--chalk-dim);
+  border-bottom: 4px solid var(--chalk-dim);
+}
+.btn.ghost:hover { border-color: var(--chalk); color: #fff; }
+
+/* ---- home: asymmetric intro ---- */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 48px;
+  align-items: center;
+}
+.intro-grid .lede { font-size: 21px; line-height: 1.7; }
+.intro-grid .lede strong { color: var(--buoy); }
+.framed-photo {
+  border: 6px solid var(--board);
+  outline: 2px solid var(--rope);
+  outline-offset: 6px;
+}
+.framed-photo img { display: block; width: 100%; height: auto; }
+figcaption {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 10px;
+  letter-spacing: 0.02em;
+}
+.board-dark figcaption { color: var(--chalk-dim); }
+
+/* ---- chalk-strip: hours + call, full-bleed board ---- */
+.chalk-strip {
+  background: var(--board);
+  color: var(--chalk);
+  border-top: 3px double var(--rope);
+  border-bottom: 3px double var(--rope);
+  padding: 26px 0;
+}
+.chalk-strip .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.hours-today { font-family: "Bitter", Georgia, serif; font-size: 20px; }
+.hours-today small { display: block; font-family: "Karla", sans-serif; font-size: 13px; color: var(--chalk-dim); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+
+/* ---- three up facts ---- */
+.facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 8px; }
+.fact { border-top: 4px solid var(--buoy); padding-top: 18px; }
+.fact h3 { font-size: 22px; margin-bottom: 8px; }
+.fact p { color: var(--muted); font-size: 16px; }
+
+/* ---- stamp box: gluten-free callout ---- */
+.stamp {
+  border: 3px dashed var(--buoy);
+  padding: 30px 34px;
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+  align-items: center;
+  background: #fff;
+}
+.stamp h3 { font-size: 24px; color: var(--buoy); margin-bottom: 6px; }
+.stamp p { color: var(--muted); }
+.stamp .btn { margin-top: 0; }
+
+/* ---- menu ledger (chalkboard menu page) ---- */
+.menu-board {
+  background: var(--board);
+  color: var(--chalk);
+  border: 10px solid var(--board-deep);
+  outline: 2px solid var(--rope);
+  outline-offset: -18px;
+  padding: 56px 60px;
+  margin: 20px 0 10px;
+}
+.menu-board h2.section-title { color: var(--chalk); text-align: center; }
+.menu-board .menu-note { text-align: center; color: var(--chalk-dim); max-width: 560px; margin: 0 auto 40px; }
+.menu-group { margin-bottom: 42px; }
+.menu-group:last-child { margin-bottom: 0; }
+.menu-group > h3 {
+  font-size: 15px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--rope);
+  border-bottom: 1px dashed var(--rope);
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+.dish { margin-bottom: 20px; }
+.dish .dish-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.dish .dish-name {
+  font-family: "Bitter", Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--chalk);
+  white-space: nowrap;
+}
+.dish .dots { flex: 1; border-bottom: 2px dotted var(--chalk-dim); opacity: 0.5; transform: translateY(-5px); }
+.dish .dish-flag {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--board);
+  background: var(--rope);
+  font-weight: 800;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+.dish p { color: var(--chalk-dim); font-size: 15.5px; margin-top: 4px; max-width: 620px; }
+
+/* ---- rating line (one per page, exact source + breakdown) ---- */
+.rating-line {
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 2px solid var(--paper-edge);
+  font-size: 15px;
+  color: var(--muted);
+}
+.board-dark .rating-line { border-top-color: rgba(244, 236, 217, 0.25); color: var(--chalk-dim); }
+.rating-line .stars { color: var(--buoy); font-weight: 800; letter-spacing: 0.06em; }
+
+/* ---- hours table ---- */
+.hours-table { width: 100%; border-collapse: collapse; margin: 8px 0 30px; max-width: 560px; }
+.hours-table th, .hours-table td { text-align: left; padding: 13px 16px; border-bottom: 2px solid var(--paper-edge); }
+.hours-table th { font-family: "Bitter", Georgia, serif; font-size: 18px; }
+.hours-table td:last-child { font-weight: 700; }
+.hours-table tr.closed td { color: var(--muted); }
+
+/* ---- visit grid ---- */
+.visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 10px; }
+.visit-block h3 { font-size: 15px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--buoy); margin-bottom: 14px; }
+.visit-block address { font-style: normal; font-size: 20px; line-height: 1.6; }
+.visit-block .phone-big { font-family: "Bitter", Georgia, serif; font-size: 30px; font-weight: 900; }
+.visit-block .phone-big a { color: var(--ink); text-decoration: none; }
+.visit-block .phone-big a:hover { color: var(--buoy); }
+
+/* ---- gallery ---- */
+.gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 10px; }
+.gallery figure:nth-child(3n+1) { grid-column: span 2; }
+.gallery img { width: 100%; height: auto; display: block; }
+
+/* ---- footer ---- */
+footer {
+  background: var(--board-deep);
+  color: var(--chalk-dim);
+  padding: 40px 0;
+  font-size: 14px;
+  border-top: 3px double var(--rope);
+}
+footer .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: center; }
+footer a { color: var(--chalk); }
+footer .fine { max-width: 560px; }
+
+/* ---- mobile ---- */
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  .intro-grid, .facts, .visit-grid, .gallery { grid-template-columns: 1fr; }
+  .gallery figure:nth-child(3n+1) { grid-column: span 1; }
+  .menu-board { padding: 34px 24px; outline-offset: -10px; }
+  .dish .dish-name { white-space: normal; }
+  .stamp { grid-template-columns: 1fr; }
+  .mainnav a { margin: 0 10px; font-size: 13px; }
+  .section { padding: 44px 0; }
+}
