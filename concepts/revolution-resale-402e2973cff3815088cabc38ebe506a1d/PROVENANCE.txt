@@ -1,0 +1,51 @@
+REVOLUTION RESALE (Fairhope, AL) — PHOTO PROVENANCE
+Concept site slug: revolution-resale-402e2973cff3815088cabc38ebe506a1d
+Harvested: 2026-10-23 by website-dev shift (batch 29)
+
+ALL PHOTOS USED ARE REAL PHOTOS OF THE ACTUAL BUSINESS.
+Source: the business's own Instagram/Facebook posts, returned in the place
+gallery for "Revolution Resale" (place_id 1517908065295524, 9 N Church St,
+Fairhope, AL) via the Muse places record, downloaded 2026-10-23 from the
+Instagram CDN (cdninstagram.com / fbcdn.net). The Instagram profile
+https://www.instagram.com/revolutionresalefairhope was opened on 2026-10-23
+and verified to resolve to this business ("Revolution Resale
+(@revolutionresalefairhope)", 2,890 followers). No stock photos were needed.
+No photos from any other business were used.
+
+Captions below describe what each photo actually shows.
+
+img/rev01.jpg — REAL. Model photo from the business's Instagram feed: young
+  woman in a green floral mini dress with black heels, on a porch.
+img/rev02.jpg — REAL. Inside the boutique: formal gowns on mannequins
+  (sequin gold gown, iridescent wrap gown, black gown, purple gown), the
+  "REVOLUTION" sign and a brown leather handbag on a trunk.
+img/rev03.jpg — REAL. Outside the storefront: young woman in a patterned
+  dress and wedge sandals seated on a bench by the bright blue door marked
+  with the number 9, OPEN sign visible.
+img/rev04.jpg — REAL. Shopper in a turquoise maxi dress holding a paper
+  "REVOLUTION resale" shopping bag outside the store; clothing racks visible
+  through the window.
+img/rev05.jpg — REAL. Close-up of white leather sneakers with a star patch
+  ("GOLDEN SNEAKERS / MADE IN ITALY" on the tongue tag), styled for the
+  boutique's Instagram.
+img/rev06.jpg — REAL. Inside the boutique: red beaded evening gown and green
+  satin gown on mannequins, color-sale sign, brown leather handbag.
+img/rev07.jpg — REAL. Two styled outfits hanging on the boutique's rustic
+  wood display wall with string lights: cream wrap top with snakeskin skirt,
+  snake-print blouse with black skirt.
+img/rev08.jpg — REAL. Flat lay from the boutique's Instagram: bronze shimmer
+  tube top, black jeans, cream ankle boots.
+img/rev09.jpg — REAL. Flat lay from the boutique's Instagram: black
+  star-print tie-front top, dark flare jeans, black booties.
+
+Downloaded but NOT used:
+img/rev10.jpg — REAL but not used: the business's "REVOLUTION" logo graphic.
+img/rev11.jpg — REAL but not used: "Fairhope Looks Good On You" downtown
+  mural photo (a Fairhope landmark, not the store's premises; omitted to
+  avoid misrepresenting the business location).
+img/rev12.jpg — REAL but not used: the business's "Arts & Crafts Festival
+  Hours" promotional graphic (temporary hours, would confuse the standing
+  Mon-Sat 10-5 schedule).
+
+All image files are under 1 MB (largest: rev08.jpg at 913,563 bytes).
+No SVG, generated, or drawn illustrations appear anywhere on the site.

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Mission | Revolution Resale, Fairhope AL</title>
+<meta name="description" content="Revolution Resale's mission: quality, name-brand, gently used clothing at amazing prices, all while saving the planet. Fairhope, Alabama.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--paper:#FAF5EC;--paper2:#F2EAD9;--ink:#171310;--clay:#C2542E;--stone:#87796A;--line:#E3D7BF}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+.serif{font-family:'Fraunces',Didot,'Bodoni MT',Georgia,'Times New Roman',serif}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+.topbar{border-bottom:1px solid var(--line);font-size:11px;letter-spacing:2.4px;text-transform:uppercase;color:var(--stone)}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.topbar .disc{color:var(--clay);font-weight:600}
+.pagehead .wrap{padding-top:56px;padding-bottom:8px}
+.kicker{font-size:12px;letter-spacing:3.2px;text-transform:uppercase;color:var(--clay);font-weight:700;margin-bottom:16px}
+h1.ptitle{font-size:clamp(48px,8vw,110px);line-height:.95;font-weight:600;letter-spacing:-.015em}
+h1.ptitle em{font-style:italic;font-weight:400;color:var(--clay)}
+p.sub{font-size:17px;color:#4c4438;max-width:60ch;margin-top:20px}
+nav.sitenav{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:36px}
+nav.sitenav .wrap{display:flex;align-items:center;gap:30px;padding-top:13px;padding-bottom:13px;flex-wrap:wrap}
+nav.sitenav a.nl{font-size:12.5px;letter-spacing:2.4px;text-transform:uppercase;color:var(--stone);font-weight:600;text-decoration:none}
+nav.sitenav a.nl:hover,nav.sitenav a.nl.on{color:var(--ink)}
+nav.sitenav a.call{margin-left:auto;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;font-weight:700;color:var(--clay);text-decoration:none}
+section.block{padding:88px 0}
+.manifest .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:start}
+p.body{font-size:17px;color:#4c4438;max-width:62ch;margin-bottom:18px}
+p.body strong{color:var(--ink)}
+.bigline{font-size:clamp(28px,3.4vw,46px);line-height:1.18;font-weight:500;margin-bottom:26px}
+.bigline em{font-style:italic;color:var(--clay);font-weight:400}
+img.framed{width:100%;object-fit:cover;aspect-ratio:4/5;border:1px solid var(--line)}
+figcaption.cap{font-size:12.5px;letter-spacing:.8px;color:var(--stone);margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
+.facts{background:var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts .rows{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:48px}
+.facts .f{border-top:2px solid var(--ink);padding-top:18px}
+.facts .f .n{font-size:13px;letter-spacing:2.6px;text-transform:uppercase;color:var(--clay);font-weight:700;margin-bottom:10px}
+.facts .f p{font-size:16px;color:#4c4438}
+.facts .f p b{color:var(--ink)}
+.closing .grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:start}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:26px}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);padding:15px 30px;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;text-decoration:none;border:1px solid var(--ink)}
+.btn:hover{background:var(--clay);border-color:var(--clay)}
+.tlink{font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--clay);text-decoration-thickness:2px}
+.tlink:hover{color:var(--clay)}
+footer{border-top:1px solid var(--line);padding:56px 0 40px}
+footer .grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+footer .fname{font-size:30px;font-weight:600;letter-spacing:-.01em;margin-bottom:10px}
+footer .fname em{font-style:italic;color:var(--clay);font-weight:400}
+footer p,footer li{font-size:14.5px;color:var(--stone);list-style:none;margin-bottom:8px}
+footer a{color:var(--ink);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--clay)}
+footer .fine{border-top:1px solid var(--line);padding-top:22px;font-size:12.5px;color:var(--stone);letter-spacing:.4px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){
+  .manifest .grid,.closing .grid,.facts .rows{grid-template-columns:1fr;gap:40px}
+  footer .grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .wrap{padding:0 20px}
+  section.block{padding:60px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="disc">Website Concept &middot; A design preview for Revolution Resale</span>
+    <span>Fairhope, Alabama</span>
+  </div>
+</div>
+
+<header class="pagehead">
+  <div class="wrap">
+    <p class="kicker">Why we exist</p>
+    <h1 class="ptitle serif">The <em>Mission.</em></h1>
+    <p class="sub">In the boutique&rsquo;s own words: provide quality, name-brand, gently used clothing at amazing prices, all while saving the planet.</p>
+  </div>
+  <nav class="sitenav" aria-label="Site">
+    <div class="wrap">
+      <a class="nl" href="index.html">Home</a>
+      <a class="nl" href="shop.html">The Floor</a>
+      <a class="nl on" href="about.html">The Mission</a>
+      <a class="nl" href="visit.html">Visit</a>
+      <a class="call" href="tel:+12519904859">Call (251) 990-4859</a>
+    </div>
+  </nav>
+</header>
+
+<section class="block manifest">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <p class="bigline serif">Shopping sustainable fashion is <em>just the right thing to do.</em></p>
+        <p class="body">Revolution was started for the shopper who loves the name brands but doesn&rsquo;t love the retail prices. The racks carry a wide selection of <strong>on-trend clothing, shoes and accessories for men, women and juniors</strong>, each piece checked for quality before it earns a spot.</p>
+        <p class="body">The idea is simple. By keeping great looks in circulation, the shop reduces demand and eases stress on the environment. Every bag that walks out the door is a small win for the planet and a big one for your closet.</p>
+        <p class="body">The house tagline says it best: <strong>&ldquo;I can afford that!&rdquo;</strong> The Downtown Fairhope visitors guide puts name-brand style here at 60 to 80 percent off retail.</p>
+      </div>
+      <figure>
+        <img class="framed" src="img/rev04.jpg" alt="A shopper in a turquoise maxi dress holding a Revolution Resale paper shopping bag outside the store">
+        <figcaption class="cap">A shopper heading out with a Revolution Resale bag.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block facts">
+  <div class="wrap">
+    <p class="kicker">The short version</p>
+    <div class="rows">
+      <div class="f">
+        <p class="n">What</p>
+        <p><b>Upscale consignment.</b> Gently used name-brand clothing, shoes and accessories, curated for men, women and juniors.</p>
+      </div>
+      <div class="f">
+        <p class="n">Why</p>
+        <p><b>Sustainable fashion.</b> Keeping quality looks in circulation reduces demand and eases stress on the environment.</p>
+      </div>
+      <div class="f">
+        <p class="n">Proof</p>
+        <p><b>2019 Nappie award finalist,</b> Best Clothing Consignment Store (Baldwin).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block closing">
+  <div class="wrap">
+    <div class="grid">
+      <figure>
+        <img class="framed" src="img/rev03.jpg" alt="A shopper seated on a bench outside the boutique's bright blue door marked with the number 9">
+        <figcaption class="cap">The blue door at 9 N Church St, open Monday through Saturday.</figcaption>
+      </figure>
+      <div>
+        <p class="kicker">Come see for yourself</p>
+        <p class="bigline serif">Turn your closet <em>around today.</em></p>
+        <p class="body">The boutique is open Monday through Saturday, 10:00 AM to 5:00 PM, closed Sunday. Questions about a piece? Call (251) 990-4859.</p>
+        <div class="cta-row">
+          <a class="btn" href="tel:+12519904859">Call the boutique</a>
+          <a class="tlink" href="visit.html">Plan your visit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <p class="fname serif">Revolution <em>Resale</em></p>
+        <p>Upscale consignment boutique in downtown Fairhope, Alabama. Gently used name-brand clothing, shoes and accessories for men, women and juniors.</p>
+      </div>
+      <div>
+        <ul>
+          <li>9 N Church St, Suite D</li>
+          <li>Fairhope, AL 36532</li>
+          <li><a href="tel:+12519904859">(251) 990-4859</a></li>
+          <li><a href="https://www.instagram.com/revolutionresalefairhope" target="_blank" rel="noopener">Instagram: @revolutionresalefairhope</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Mon&ndash;Sat: 10:00 AM &ndash; 5:00 PM</li>
+          <li>Sunday: Closed</li>
+          <li><a href="index.html">Home</a> &middot; <a href="shop.html">The Floor</a></li>
+          <li><a href="about.html">The Mission</a> &middot; <a href="visit.html">Visit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>Website Concept &middot; a design preview created by Freightfolio. This is not the business&rsquo;s official site.</span>
+      <span>Photos: the boutique&rsquo;s own Instagram.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
