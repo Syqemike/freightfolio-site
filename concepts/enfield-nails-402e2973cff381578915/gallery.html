@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Gallery | Enfield Nails | Website Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#FAF2E7;--cream-deep:#F1E5D0;--terra:#B85C38;--terra-deep:#96461F;--espresso:#3A2A20;--mut:#7A6A5C;--line:#E3D4BC}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--espresso);line-height:1.75;-webkit-font-smoothing:antialiased}
+  .disclosure{background:var(--espresso);color:#F4E9D5;text-align:center;font-size:12px;letter-spacing:.12em;padding:10px 16px}
+  header{max-width:1220px;margin:0 auto;padding:26px 28px;display:flex;justify-content:space-between;align-items:baseline}
+  .brand{font-family:'Fraunces',serif;font-weight:700;font-size:32px}
+  .brand a{color:inherit;text-decoration:none}
+  nav a{color:var(--espresso);text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.06em;margin-left:26px;padding-bottom:5px}
+  nav a.active{border-bottom:3px solid var(--terra)}
+  .wrap{max-width:1100px;margin:0 auto;padding:60px 28px 90px}
+  .tag{font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin-bottom:18px}
+  h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(40px,5vw,60px);line-height:1.1;margin-bottom:16px}
+  .lede{color:var(--mut);font-size:17px;margin-bottom:50px;max-width:62ch}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+  .grid figure:first-child{grid-column:1/3}
+  .grid img{width:100%;display:block;border-radius:14px;object-fit:cover;aspect-ratio:16/10}
+  .grid figcaption{font-size:14px;color:var(--mut);margin-top:10px}
+  .center{text-align:center;margin-top:52px}
+  .btn{display:inline-block;background:var(--terra);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:15px 38px;border-radius:6px}
+  .btn:hover{background:var(--terra-deep)}
+  footer{background:var(--espresso);color:#C4AE92;padding:64px 28px 36px;font-size:14px}
+  .foot-grid{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+  footer h4{font-family:'Fraunces',serif;color:var(--cream);font-size:21px;margin-bottom:14px}
+  footer a{color:#E8D5B8;text-decoration:none}
+  .fine{max-width:1220px;margin:44px auto 0;padding-top:24px;border-top:1px solid #55432F;font-size:12px;color:#97816B}
+  @media(max-width:900px){header{flex-direction:column;gap:14px}nav a{margin:0 16px 0 0}.grid{grid-template-columns:1fr}.grid figure:first-child{grid-column:auto}.foot-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="disclosure">Website Concept &middot; Design Preview by Freightfolio, not the business's official site</div>
+<header>
+  <div class="brand"><a href="index.html">Enfield Nails</a></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="tag">From the salon</p>
+    <h1>Gallery</h1>
+    <p class="lede">Work of the kind done at Enfield Nails. All photos shown here are stock photography used to illustrate this design concept.</p>
+    <div class="grid">
+      <figure><img src="img/nail-station.jpg" alt="Nail technician with a client, stock photo" loading="lazy"><figcaption>Stock photo: nail technician with a client</figcaption></figure>
+      <figure><img src="img/manicure-hands.jpg" alt="Manicured hands, stock photo" loading="lazy"><figcaption>Stock photo: manicured hands</figcaption></figure>
+      <figure><img src="img/hero-manicure.jpg" alt="Nail color detail, stock photo" loading="lazy"><figcaption>Stock photo: nail color detail</figcaption></figure>
+      <figure><img src="img/technician-at-work.jpg" alt="Nail technician at work, stock photo" loading="lazy"><figcaption>Stock photo: nail technician at work</figcaption></figure>
+      <figure><img src="img/pedicure-service.jpg" alt="Pedicure service, stock photo" loading="lazy"><figcaption>Stock photo: pedicure service</figcaption></figure>
+    </div>
+    <div class="center"><a class="btn" href="tel:+15125513226">Call to book</a></div>
+  </div>
+</main>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <h4>Enfield Nails</h4>
+      <p>916 W 12th St<br>Austin, TX</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="tel:+15125513226">(512) 551-3226</a></p>
+      <p style="margin-top:8px">Mon&ndash;Fri: 9:00 AM&ndash;7:00 PM<br>Sat: 9:00 AM&ndash;6:00 PM<br>Sun: 11:00 AM&ndash;5:00 PM</p>
+    </div>
+    <div>
+      <h4>Website Concept</h4>
+      <p>This page is a design preview created by Freightfolio. It is not the business's official website.</p>
+    </div>
+  </div>
+  <p class="fine">Concept site for Enfield Nails, Austin TX. Photos are stock photography used for illustration.</p>
+</footer>
+</body>
+</html>
