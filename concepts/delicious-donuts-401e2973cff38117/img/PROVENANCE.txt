@@ -1,0 +1,40 @@
+PHOTO PROVENANCE - Delicious Donuts concept site
+All photos are STOCK photos from Pexels (free license), downloaded from images.pexels.com.
+No real photos of the business were retrievable (business's Facebook page is login-walled).
+Every photo is honestly captioned "Stock photo:" on the page.
+
+1. hero.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/donuts%20box/ (image 34491951)
+   Direct file: https://images.pexels.com/photos/34491951/pexels-photo-34491951/free-photo-of-assorted-donuts-in-a-box-sweet-treat-variety.jpeg
+   Depicts: assorted donuts in a box.
+
+2. case.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/donuts%20box/ (image 36536896)
+   Direct file: https://images.pexels.com/photos/36536896/pexels-photo-36536896/free-photo-of-assorted-gourmet-donuts-in-a-wooden-box.jpeg
+   Depicts: assorted gourmet donuts in a wooden box.
+
+3. glazed.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/donuts%20box/ (image 33811575)
+   Direct file: https://images.pexels.com/photos/33811575/pexels-photo-33811575/free-photo-of-box-of-freshly-glazed-donuts.jpeg
+   Depicts: box of freshly glazed donuts.
+
+4. holes.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/beignets/ (image 34158234)
+   Direct file: https://images.pexels.com/photos/34158234/pexels-photo-34158234/free-photo-of-golden-donut-holes-on-rustic-wooden-board.jpeg
+   Depicts: golden donut holes on a rustic wooden board.
+
+5. kolache.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/kolache/ (image 17345665)
+   Direct file: https://images.pexels.com/photos/17345665/pexels-photo-17345665/free-photo-of-rolls-with-sausages.jpeg
+   Depicts: freshly baked savory sausage rolls.
+
+6. coffee.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/donuts%20box/ (image 30822875)
+   Direct file: https://images.pexels.com/photos/30822875/pexels-photo-30822875/free-photo-of-delicious-donuts-and-coffee-in-bandung-cafe.jpeg
+   Depicts: donuts and coffee at a cafe table.

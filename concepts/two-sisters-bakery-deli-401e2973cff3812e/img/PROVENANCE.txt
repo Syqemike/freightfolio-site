@@ -1,0 +1,40 @@
+PHOTO PROVENANCE - Two Sisters Bakery & Deli concept site
+All photos are STOCK photos from Pexels (free license), downloaded from images.pexels.com.
+No real photos of the business were retrievable (business's Facebook page is login-walled).
+Every photo is honestly captioned "Stock photo:" on the page.
+
+1. hero.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/bakery%20display%20case/ (image 30681620)
+   Direct file: https://images.pexels.com/photos/30681620/pexels-photo-30681620/free-photo-of-delicious-pastries-in-a-bakery-display.jpeg
+   Depicts: assorted pastries including croissants and tarts in a bakery case.
+
+2. case.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/bakery%20display%20case/ (image 31132630)
+   Direct file: https://images.pexels.com/photos/31132630/pexels-photo-31132630/free-photo-of-assorted-pastries-in-bakery-display-case.jpeg
+   Depicts: lemon bars and brownies displayed in a bakery.
+
+3. kingcake.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/king%20cake/ (image 11568793)
+   Direct file: https://images.pexels.com/photos/11568793/pexels-photo-11568793.jpeg
+   Depicts: slice of festive Mardi Gras cake with macaron topping.
+
+4. beignets.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/beignets/ (image 13988842)
+   Direct file: https://images.pexels.com/photos/13988842/pexels-photo-13988842.jpeg
+   Depicts: freshly made beignets dusted with powdered sugar in a wooden bowl.
+
+5. patio.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/outdoor%20cafe%20patio%20tables/ (image 31949203)
+   Direct file: https://images.pexels.com/photos/31949203/pexels-photo-31949203/free-photo-of-cozy-outdoor-coffeeshop-with-greenery-decor.jpeg
+   Depicts: outdoor cafe seating in a lush, green setting.
+
+6. breakfast.jpg
+   Source: stock - Pexels
+   Source URL: https://www.pexels.com/search/beignets/ (image 39323254)
+   Direct file: https://images.pexels.com/photos/39323254/pexels-photo-39323254/free-photo-of-breakfast-with-coffee-and-pastries-outdoors.jpeg
+   Depicts: outdoor breakfast table with coffee and pastries.
