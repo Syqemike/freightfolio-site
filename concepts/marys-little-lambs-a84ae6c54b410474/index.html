@@ -36,7 +36,6 @@
   .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
   .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
-  .brand .lamb{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--sky-pale);font-size:24px}
   .brand strong{font-family:'Fraunces',serif;font-size:20px;display:block;line-height:1.1}
   .brand small{font-size:12.5px;color:var(--ink-soft);font-weight:600;letter-spacing:.04em}
   nav.links{display:flex;gap:4px;flex-wrap:wrap}
@@ -65,7 +64,7 @@
   .strip{background:var(--white);border-top:1px solid #F0E4CE;border-bottom:1px solid #F0E4CE}
   .strip-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:26px 0}
   .fact{display:flex;gap:14px;align-items:flex-start}
-  .fact .ic{flex:0 0 46px;width:46px;height:46px;border-radius:16px;background:var(--sky-pale);display:flex;align-items:center;justify-content:center;font-size:22px}
+  .fact .ic{flex:0 0 18px;width:18px;height:18px;border-radius:50%;background:var(--sun);margin-top:6px}
   .fact strong{display:block;font-size:16px}
   .fact span{font-size:14.5px;color:var(--ink-soft)}
 
@@ -125,7 +124,6 @@
 <header class="site">
   <div class="wrap bar">
     <a class="brand" href="#top">
-      <span class="lamb">&#128017;</span>
       <span><strong>Mary's Little Lambs</strong><small>Daycare and Preschool &middot; Moss Point, MS</small></span>
     </a>
     <nav class="links" aria-label="Sections">
@@ -152,7 +150,8 @@
         </div>
       </div>
       <div class="hero-photo">
-        <img src="img/daycare-story.jpg" alt="A caregiver reading a book to three toddlers sitting on a classroom rug">
+        <img src="img/daycare-story.jpg" alt="A caregiver reading a book to toddlers in a bright classroom">
+        <p class="caption">Stock photo: a caregiver reading to toddlers in a classroom.</p>
         <div class="badge-dot badge-1">4.8 &#9733;<small>26 Google reviews</small></div>
         <div class="badge-dot badge-2">Licensed<small>Mississippi childcare provider</small></div>
       </div>
@@ -162,15 +161,15 @@
   <div class="strip">
     <div class="wrap strip-inner">
       <div class="fact">
-        <span class="ic">&#10024;</span>
+        <span class="ic" aria-hidden="true"></span>
         <div><strong>Licensed Mississippi childcare provider</strong><span>Listed by the MS Department of Human Services as a Moss Point licensed subsidy provider.</span></div>
       </div>
       <div class="fact">
-        <span class="ic">&#128106;</span>
+        <span class="ic" aria-hidden="true"></span>
         <div><strong>Subsidized child care accepted</strong><span>Ask us about payment options when you call.</span></div>
       </div>
       <div class="fact">
-        <span class="ic">&#9200;</span>
+        <span class="ic" aria-hidden="true"></span>
         <div><strong>Weekday hours that fit work schedules</strong><span>Open Monday through Friday, 6:00 AM to 4:30 PM.</span></div>
       </div>
     </div>
@@ -205,8 +204,8 @@
   <section class="block trust" id="trust">
     <div class="wrap trust-grid">
       <div>
-        <img src="img/daycare-toddlers.jpg" alt="Four toddlers sitting together and playing with colorful blocks">
-        <p class="caption">Stock photo: toddlers playing with blocks in a classroom.</p>
+        <img src="img/daycare-toddlers.jpg" alt="Two toddlers stacking a tall tower of colorful wooden blocks">
+        <p class="caption">Stock photo: toddlers stacking colorful wooden blocks.</p>
       </div>
       <div>
         <span class="eyebrow">Why families trust us</span>
@@ -224,16 +223,16 @@
   <section class="block" id="gallery">
     <div class="wrap">
       <div class="sec-head">
-        <h2>A peek inside our days</h2>
-        <p>Art time, story time, and plenty of play. Here is a glimpse of what a day looks like.</p>
+        <h2>What our days are made of</h2>
+        <p>Art time, story time, and plenty of play. The photos below are stock images showing the kinds of moments that fill our days.</p>
       </div>
       <div class="gallery-grid">
         <figure>
-          <img src="img/daycare-art.jpg" alt="Two young girls painting with bright colors at a classroom table">
+          <img src="img/daycare-art.jpg" alt="Two young children painting with brushes and bright colors at a table">
           <figcaption>Stock photo: children painting at a classroom art table.</figcaption>
         </figure>
         <figure>
-          <img src="img/daycare-classroom.jpg" alt="Three young children laughing together while sitting on a classroom rug">
+          <img src="img/daycare-classroom.jpg" alt="Children laughing together in a circle on a classroom rug">
           <figcaption>Stock photo: children laughing together during classroom play.</figcaption>
         </figure>
       </div>
