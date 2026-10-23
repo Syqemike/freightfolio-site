@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Nail World II | Birmingham, AL | Website Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#F6F0E5;--cream-deep:#EDE4D1;--ink:#1D1A15;--terra:#C0653A;--terra-dark:#9C4E2B;--mut:#6E6459}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+  .disclosure{background:var(--ink);color:#F1E9D6;text-align:center;font-size:11px;letter-spacing:.18em;text-transform:uppercase;padding:10px 16px}
+  header{display:flex;justify-content:space-between;align-items:center;padding:22px 32px;border-bottom:2px solid var(--ink)}
+  .brand{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;letter-spacing:-.01em}
+  .brand a{color:inherit;text-decoration:none}
+  nav a{color:var(--ink);text-decoration:none;font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:500;margin-left:26px}
+  nav a.active{color:var(--terra)}
+  .hero{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;padding:64px 32px 0;max-width:1400px;margin:0 auto;align-items:end}
+  .hero-text{grid-column:1/7;grid-row:1;padding-bottom:60px;z-index:2}
+  .kick{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin-bottom:20px}
+  h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(46px,6vw,84px);line-height:1.02;letter-spacing:-.02em}
+  h1 span{color:var(--terra)}
+  .lede{margin:26px 0 34px;font-size:17px;max-width:46ch;color:#3A342B}
+  .btn{display:inline-block;background:var(--terra);color:#fff;text-decoration:none;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;letter-spacing:.08em;padding:16px 36px}
+  .btn:hover{background:var(--terra-dark)}
+  .hero-photo{grid-column:6/13;grid-row:1}
+  .hero-photo img{width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:16/10}
+  .cap{font-size:12px;color:var(--mut);margin-top:8px}
+  .stats{background:var(--ink);color:var(--cream);margin-top:0}
+  .stats-inner{max-width:1400px;margin:0 auto;padding:44px 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .stat{border-left:1px solid #4A4438;padding-left:24px}
+  .stat b{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:700;display:block}
+  .stat span{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#B9AE9A}
+  .section{max-width:1400px;margin:0 auto;padding:90px 32px 0}
+  h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(30px,3.4vw,44px);letter-spacing:-.015em;margin-bottom:12px}
+  .sub{color:var(--mut);max-width:62ch;margin-bottom:44px}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ink)}
+  .svc{background:var(--cream);padding:36px 30px}
+  .svc .num{font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--terra);font-size:14px;letter-spacing:.15em}
+  .svc h3{font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:600;margin:14px 0 10px}
+  .svc p{font-size:14px;color:var(--mut)}
+  .svc img{width:100%;height:180px;object-fit:cover;margin-top:20px;display:block}
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:90px;align-items:center;background:var(--cream-deep);padding:0}
+  .duo .pad{padding:70px 60px}
+  .duo img{width:100%;height:100%;min-height:380px;object-fit:cover;display:block}
+  .duo h2{margin-bottom:16px}
+  .hours-line{font-family:'Space Grotesk',sans-serif;font-size:15px;margin:8px 0}
+  .hours-line b{font-weight:700}
+  footer{background:var(--ink);color:#C9BDA6;padding:64px 32px 36px;margin-top:100px}
+  .foot-grid{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+  footer h4{font-family:'Space Grotesk',sans-serif;color:var(--cream);font-size:18px;margin-bottom:14px}
+  footer a{color:#E4D8BE;text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  footer p{font-size:14px;line-height:1.8}
+  .fine{max-width:1400px;margin:40px auto 0;padding-top:22px;border-top:1px solid #4A4438;font-size:12px;color:#8A7E68}
+  @media(max-width:900px){
+    header{flex-direction:column;gap:12px;padding:18px}
+    nav a{margin:0 14px 0 0}
+    .hero{grid-template-columns:1fr;padding:40px 20px 0}
+    .hero-text{grid-column:1;grid-row:2;padding-bottom:30px}
+    .hero-photo{grid-column:1;grid-row:1}
+    .stats-inner{grid-template-columns:1fr 1fr}
+    .svc-grid{grid-template-columns:1fr}
+    .duo{grid-template-columns:1fr}
+    .duo .pad{padding:40px 24px}
+    .section{padding:60px 20px 0}
+    .foot-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Website Concept &middot; Design Preview by Freightfolio, not the business's official site</div>
+<header>
+  <div class="brand"><a href="index.html">NAIL WORLD II</a></div>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="hero-text">
+      <p class="kick">Homewood &middot; Birmingham, AL</p>
+      <h1>Full-service nails, <span>done right</span> since 2007.</h1>
+      <p class="lede">Nail World II has served the Homewood area for nearly two decades: nails, dipping powder, nail art, waxing, facials, and eyelashes, all under one roof at 1919 28th Ave S.</p>
+      <a class="btn" href="tel:+12058705202">Call to book</a>
+    </div>
+    <div class="hero-photo">
+      <img src="img/hero-manicure.jpg" alt="Finished manicure, stock photo">
+      <p class="cap">Stock photo: finished manicure</p>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stats-inner">
+      <div class="stat"><b>2007</b><span>In business since</span></div>
+      <div class="stat"><b>4.6</b><span>From 612 Birdeye reviews</span></div>
+      <div class="stat"><b>9</b><span>Services on the menu</span></div>
+      <div class="stat"><b>(205) 870-5202</b><span>Call to book</span></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Everything in one visit</h2>
+    <p class="sub">Nails are the core, but Nail World II is a full-service stop. Pricing is not published online, so call ahead for current rates.</p>
+    <div class="svc-grid">
+      <div class="svc"><p class="num">01</p><h3>Manicures</h3><p>Classic manicures with careful shaping and polish.</p></div>
+      <div class="svc"><p class="num">02</p><h3>Dipping Powder</h3><p>Powder color with a strong, lasting finish.</p><img src="img/nail-art-detail.jpg" alt="Nail art detail, stock photo" loading="lazy"><p class="cap">Stock photo</p></div>
+      <div class="svc"><p class="num">03</p><h3>Pedicure</h3><p>Soak, shaping, and polish for a clean finish.</p></div>
+      <div class="svc"><p class="num">04</p><h3>Hand &amp; Feet Enhancements</h3><p>Added length and shape where the natural nail needs help.</p></div>
+      <div class="svc"><p class="num">05</p><h3>Waxing</h3><p>Quick, tidy waxing services.</p></div>
+      <div class="svc"><p class="num">06</p><h3>Facials &amp; Eyelashes</h3><p>Skin and lash services alongside your nail appointment.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="duo">
+      <div class="pad">
+        <h2>Walk in, walk out polished</h2>
+        <p class="sub" style="margin-bottom:22px">Open Monday through Friday 9 to 6 and Saturday 9 to 5:30. Sunday hours vary, so call ahead on Sundays.</p>
+        <p class="hours-line"><b>Mon&ndash;Fri:</b> 9:00 AM &ndash; 6:00 PM</p>
+        <p class="hours-line"><b>Saturday:</b> 9:00 AM &ndash; 5:30 PM</p>
+        <p class="hours-line"><b>Sunday:</b> hours vary, call ahead</p>
+        <p style="margin-top:26px"><a class="btn" href="tel:+12058705202">Call to book</a></p>
+      </div>
+      <div><img src="img/nail-station.jpg" alt="Nail service station, stock photo" loading="lazy"><p class="cap" style="padding:8px 0 0">Stock photo: nail service station</p></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <h4>Nail World II</h4>
+      <p>1919 28th Ave S Ste 133<br>Birmingham, AL 35209</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="tel:+12058705202">(205) 870-5202</a><br><a href="tel:+12055385123">(205) 538-5123</a><br><a href="mailto:nailworld231@gmail.com">nailworld231@gmail.com</a></p>
+    </div>
+    <div>
+      <h4>Website Concept</h4>
+      <p>This page is a design preview created by Freightfolio. It is not the business's official website.</p>
+    </div>
+  </div>
+  <p class="fine">Concept site for Nail World II, Birmingham AL. Photos are stock photography used for illustration.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+filename | source URL | real|stock
+---
+hero-manicure.jpg | https://images.pexels.com/photos/3997389/pexels-photo-3997389.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop | stock
+technician-at-work.jpg | https://images.pexels.com/photos/10592995/pexels-photo-10592995.jpeg?auto=compress&w=600 | stock
+pedicure-service.jpg | https://images.pexels.com/photos/7755544/pexels-photo-7755544.jpeg | stock
+nail-station.jpg | https://images.pexels.com/photos/7990094/pexels-photo-7990094.jpeg?w=600 | stock
+nail-art-detail.jpg | https://images.pexels.com/photos/5871823/pexels-photo-5871823.jpeg?auto=compress&cs=tinysrgb&w=600&loading=lazy | stock
