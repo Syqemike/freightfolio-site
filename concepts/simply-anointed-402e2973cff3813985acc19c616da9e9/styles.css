@@ -95,12 +95,14 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 500; line-hei
 .hero h1 em { font-style: italic; color: var(--clay-deep); }
 .hero .lede { margin-bottom: 30px; }
 .hero-meta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 34px; }
-.photo-frame { position: relative; }
-.photo-frame::before {
+.photo-frame figure { margin: 0; }
+.photo-frame .frame-img { position: relative; margin-bottom: 26px; }
+.photo-frame .frame-img::before {
   content: ""; position: absolute; inset: 0;
-  background: var(--clay); transform: translate(22px, 22px); z-index: 0;
+  background: var(--clay); transform: translate(22px, 22px);
 }
-.photo-frame img { position: relative; z-index: 1; width: 100%; }
+.photo-frame .frame-img img { position: relative; z-index: 1; width: 100%; }
+.photo-frame .photo-cap { position: relative; z-index: 1; margin-top: 14px; font-size: 13.5px; line-height: 1.55; color: var(--sage); }
 
 /* Sections */
 .section { padding: 76px 0; }
@@ -183,7 +185,7 @@ footer.site-footer .wrap { padding-top: 56px; padding-bottom: 40px; }
 /* Responsive */
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 48px; }
-  .photo-frame::before { transform: translate(12px, 12px); }
+  .photo-frame .frame-img::before { transform: translate(12px, 12px); }
   .info-grid, .about-grid, .photo-row { grid-template-columns: 1fr; gap: 40px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .section { padding: 56px 0; }
