@@ -1,0 +1,50 @@
+Photo provenance for everlasting-skincare-402e2973cff3815c
+All photos are stock photos from Pexels.
+============================================================
+File: img/facial.jpg
+  Description: Woman receiving a facial treatment at a spa, beautician applying mask
+  Source: https://images.pexels.com/photos/12115040/pexels-photo-12115040.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/facial%20treatment%20skincare/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/facial2.jpg
+  Description: Facial treatment at a skincare clinic
+  Source: https://images.pexels.com/photos/30809944/pexels-photo-30809944.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/facial%20treatment%20skincare/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/facial3.jpg
+  Description: Client receiving a relaxing facial treatment at a modern spa clinic
+  Source: https://images.pexels.com/photos/7581075/pexels-photo-7581075.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/facial%20treatment%20skincare/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/lashes.jpg
+  Description: Beautician applying eyelash extensions in a salon
+  Source: https://images.pexels.com/photos/8554941/pexels-photo-8554941.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/eyelash%20extensions/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/lashes-tools.jpg
+  Description: False eyelashes and tweezers flat lay on a pink surface
+  Source: https://images.pexels.com/photos/8558536/pexels-photo-8558536.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/eyelash%20extensions/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/waxing.jpg
+  Description: Professional beauty treatment waxing session in a salon
+  Source: https://images.pexels.com/photos/35103884/pexels-photo-35103884.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/waxing%20treatment/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/body.jpg
+  Description: Massage therapist using mud on a woman's back in a spa
+  Source: https://images.pexels.com/photos/19641816/pexels-photo-19641816.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/spa%20massage/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/spa-room.jpg
+  Description: Modern spa waiting room with cozy beige furniture
+  Source: https://images.pexels.com/photos/17640381/pexels-photo-17640381.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/spa%20interior/
+  License: Pexels License (https://www.pexels.com/license/)

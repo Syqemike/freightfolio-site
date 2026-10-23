@@ -1,0 +1,21 @@
+PHOTO PROVENANCE
+All images below are Pexels stock photos (Pexels License: free to use,
+no attribution required). They are NOT photos of the actual business.
+Every caption on the site labels them as stock photos.
+
+live-music.jpg = Pexels photo 6173903: Stock photo: guitarist performing on a small club stage
+  source: https://images.pexels.com/photos/6173903/pexels-photo-6173903.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+pool-tables.jpg = Pexels photo 10634430: Stock photo: players around pool tables under green lamps
+  source: https://images.pexels.com/photos/10634430/pexels-photo-10634430.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+beer-taps.jpg = Pexels photo 4779182: Stock photo: bartender pouring a beer from draft taps
+  source: https://images.pexels.com/photos/4779182/pexels-photo-4779182.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+crawfish.jpg = Pexels photo 16997930: Stock photo: crawfish in a foil pan
+  source: https://images.pexels.com/photos/16997930/pexels-photo-16997930.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+garage-door.jpg = Pexels photo 19962023: Stock photo: corrugated metal roller shutters
+  source: https://images.pexels.com/photos/19962023/pexels-photo-19962023.jpeg?auto=compress&cs=tinysrgb&w=1600
+band.jpg = Pexels photo 8040892: Stock photo: band performing on a small stage with warm lights
+  source: https://images.pexels.com/photos/8040892/pexels-photo-8040892.jpeg?auto=compress&cs=tinysrgb&w=1600

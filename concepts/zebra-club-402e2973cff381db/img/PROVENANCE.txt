@@ -1,0 +1,19 @@
+PHOTO PROVENANCE
+All images below are Pexels stock photos (Pexels License: free to use,
+no attribution required). They are NOT photos of the actual business.
+Every caption on the site labels them as stock photos.
+
+patio-hero.jpg = Pexels photo 6127275: Stock photo: tropical patio with palms and pergola seating
+  source: https://images.pexels.com/photos/6127275/pexels-photo-6127275.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+patio-rattan.jpg = Pexels photo 35155082: Stock photo: outdoor patio table with rattan chairs and tropical plants
+  source: https://images.pexels.com/photos/35155082/pexels-photo-35155082.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+patio-night.jpg = Pexels photo 18267250: Stock photo: outdoor bar at night with string lights
+  source: https://images.pexels.com/photos/18267250/pexels-photo-18267250.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+whiskey.jpg = Pexels photo 28180094: Stock photo: whiskey with ice in a cut-glass tumbler
+  source: https://images.pexels.com/photos/28180094/pexels-photo-28180094.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+dancing.jpg = Pexels photo 5192273: Stock photo: dancing crowd silhouetted under stage lights
+  source: https://images.pexels.com/photos/5192273/pexels-photo-5192273.jpeg?auto=compress&cs=tinysrgb&w=1600

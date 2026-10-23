@@ -1,0 +1,28 @@
+Photo provenance: Harry's Bar concept site (batch-32)
+All photos are STOCK photos from Pexels (Pexels License: free to use).
+They are labeled as stock photos in their captions and are NOT photos of the actual business.
+
+- images/hero.jpg
+  Source: https://images.pexels.com/photos/34676102/pexels-photo-34676102.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: bar interior with neon lighting"
+- images/nights.jpg
+  Source: https://images.pexels.com/photos/13748661/pexels-photo-13748661.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: packed late-night crowd under lights"
+- images/wings.jpg
+  Source: https://images.pexels.com/photos/30146241/pexels-photo-30146241.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: plate of chicken wings"
+- images/pizza.jpg
+  Source: https://images.pexels.com/photos/4394625/pexels-photo-4394625.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: pepperoni pizza slice"
+- images/buckets.jpg
+  Source: https://images.pexels.com/photos/28902909/pexels-photo-28902909.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: bucket of beer bottles on ice"
+
+Fonts (self-hosted woff2, SIL Open Font License):
+- Archivo Black: https://fonts.google.com/specimen/Archivo+Black
+- Barlow: https://fonts.google.com/specimen/Barlow

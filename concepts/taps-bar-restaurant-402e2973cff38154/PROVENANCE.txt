@@ -1,0 +1,29 @@
+Photo provenance: Taps Bar & Restaurant concept site (batch-32)
+All photos are STOCK photos from Pexels (Pexels License: free to use).
+They are labeled as stock photos in their captions and are NOT photos of the actual business.
+
+- images/taps.jpg
+  Source: https://images.pexels.com/photos/5530257/pexels-photo-5530257.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: row of craft beer taps"
+- images/flight.jpg
+  Source: https://images.pexels.com/photos/27623565/pexels-photo-27623565/free-photo-of-fusta-restaurant-alcohol-barra.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: beer flight on a wooden paddle"
+- images/popcorn.jpg
+  Source: https://images.pexels.com/photos/3537844/pexels-photo-3537844.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: bowl of popcorn"
+- images/cocktails.jpg
+  Source: https://images.pexels.com/photos/4694312/pexels-photo-4694312.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: cocktails at a bar"
+- images/bar.jpg
+  Source: https://images.pexels.com/photos/7518773/pexels-photo-7518773.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: warm bar counter in the evening"
+
+Fonts (self-hosted woff2, SIL Open Font License):
+- DM Serif Display: https://fonts.google.com/specimen/DM+Serif+Display
+- Caveat: https://fonts.google.com/specimen/Caveat
+- Nunito Sans: https://fonts.google.com/specimen/Nunito+Sans

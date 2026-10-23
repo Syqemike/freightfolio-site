@@ -1,0 +1,102 @@
+/* Fresh Spa Lounge concept. Chic modern retreat: sage + ivory + muted gold. */
+:root{
+  --sage:#6b7a5c; --sage-deep:#45523b; --sage-soft:#eef0e6;
+  --ivory:#faf8f2; --cream:#f3eee2;
+  --gold:#b3945e; --gold-line:#dccdaa;
+  --ink:#2c2e26; --soft:#5f6357;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.7;font-size:17px}
+img{max-width:100%;display:block}
+a{color:var(--sage-deep)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+
+.preview-bar{background:var(--sage-deep);color:#f5f2e9;font-size:13px;text-align:center;padding:9px 18px;letter-spacing:.02em}
+.preview-bar strong{letter-spacing:.14em;text-transform:uppercase;font-size:11px;font-weight:600}
+
+.site-head{background:var(--ivory);border-bottom:1px solid var(--gold-line);padding:22px 0}
+.head-row{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.brand{font-family:'Marcellus',serif;font-size:32px;color:var(--ink);text-decoration:none;line-height:1.15}
+.brand small{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:4px}
+nav.main{display:flex;gap:28px;flex-wrap:wrap}
+nav.main a{text-decoration:none;color:var(--ink);font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;padding:6px 0}
+nav.main a:hover{color:var(--gold)}
+nav.main a.active{color:var(--sage-deep);border-bottom:2px solid var(--gold)}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:76px 0 68px}
+.eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:600}
+h1{font-family:'Marcellus',serif;font-weight:400;font-size:clamp(42px,5vw,62px);line-height:1.1;margin-bottom:20px}
+.lede{font-size:19px;color:var(--soft);max-width:46ch;margin-bottom:32px}
+.hero-img img{border-radius:18px;box-shadow:24px 24px 0 0 var(--sage-soft);border:1px solid var(--gold-line)}
+.hero-img figcaption{font-size:13px;color:var(--soft);margin-top:14px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--sage-deep);color:#f7f3ea;text-decoration:none;padding:15px 36px;font-size:14px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;border-radius:4px;border:1px solid var(--sage-deep)}
+.btn:hover{background:var(--sage)}
+.btn.ghost{background:transparent;color:var(--sage-deep)}
+.btn.ghost:hover{background:var(--sage-soft)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#2c2e26}
+.btn.gold:hover{background:#a3874f}
+
+section.block{padding:64px 0}
+h2{font-family:'Marcellus',serif;font-weight:400;font-size:36px;margin-bottom:10px}
+.sub{color:var(--soft);margin-bottom:40px;max-width:62ch}
+
+.service-row{display:grid;grid-template-columns:120px 1fr;gap:28px;align-items:start;padding:30px 0;border-top:1px solid var(--gold-line)}
+.service-row:last-of-type{border-bottom:1px solid var(--gold-line)}
+.service-row img{border-radius:10px;height:110px;width:120px;object-fit:cover}
+.service-row h3{font-family:'Marcellus',serif;font-weight:400;font-size:24px;margin-bottom:6px}
+.service-row p{color:var(--soft);max-width:64ch}
+.service-row .figcap{font-size:12px;color:var(--soft);margin-top:6px}
+
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:#fff;border:1px solid var(--gold-line);border-radius:14px;overflow:hidden}
+.card img{height:200px;width:100%;object-fit:cover}
+.card-body{padding:26px}
+.card-body h3{font-family:'Marcellus',serif;font-weight:400;font-size:22px;margin-bottom:8px}
+.card-body p{color:var(--soft);font-size:15px;margin-bottom:16px}
+.card .figcap,.figcap{font-size:12px;color:var(--soft)}
+.text-link{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--sage-deep);text-decoration:none;font-weight:600}
+.text-link:hover{color:var(--gold)}
+
+.rating-line{background:var(--sage-soft);border:1px solid var(--gold-line);border-radius:10px;padding:20px 28px;margin:48px 0;font-size:16px}
+.rating-line .stars{color:var(--gold);letter-spacing:.1em;font-size:18px}
+
+.cta-band{background:var(--sage-deep);color:#f5f2e9;padding:72px 0;text-align:center}
+.cta-band h2{color:#f5f2e9}
+.cta-band p{color:#dcd6c4;max-width:54ch;margin:0 auto 30px}
+.cta-band .btn{background:#f5f2e9;color:var(--sage-deep);border-color:#f5f2e9}
+.cta-band .btn.ghost{background:transparent;color:#f5f2e9;border-color:#f5f2e9}
+
+.hours-table{width:100%;border-collapse:collapse;font-size:17px}
+.hours-table td{padding:12px 0;border-bottom:1px solid var(--gold-line)}
+.hours-table td:last-child{text-align:right;font-weight:600}
+.hours-table .closed{color:var(--gold)}
+
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.panel{background:#fff;border:1px solid var(--gold-line);border-radius:14px;padding:36px}
+.panel h3{font-family:'Marcellus',serif;font-weight:400;font-size:24px;margin-bottom:14px}
+.big-tel{font-family:'Marcellus',serif;font-size:34px;color:var(--sage-deep);text-decoration:none}
+.addr{font-size:18px}
+
+figure.season{margin:0 0 48px}
+figure.season img{border-radius:18px;width:100%;max-height:480px;object-fit:cover}
+figure.season figcaption{font-size:13px;color:var(--soft);margin-top:12px}
+.promo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.promo{background:#fff;border:1px solid var(--gold-line);border-radius:14px;padding:32px}
+.promo h3{font-family:'Marcellus',serif;font-weight:400;font-size:22px;margin-bottom:8px;color:var(--sage-deep)}
+.promo p{color:var(--soft);font-size:15px}
+.promo .tag{display:inline-block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:600}
+
+footer.site{background:var(--cream);border-top:1px solid var(--gold-line);padding:48px 0 40px;font-size:14px;color:var(--soft)}
+.foot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:28px}
+footer.site h4{font-size:12px;letter-spacing:.24em;text-transform:uppercase;margin-bottom:12px;color:var(--ink)}
+.disclaimer{border-top:1px solid var(--gold-line);padding-top:20px;font-size:13px}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:40px;padding:52px 0}
+  .card-grid,.promo-grid{grid-template-columns:1fr}
+  .visit-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-img img{box-shadow:12px 12px 0 0 var(--sage-soft)}
+}

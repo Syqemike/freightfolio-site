@@ -1,0 +1,110 @@
+/* Flight Deck - 1948 cash-only naval dive. Brass + dark olive + cream, stencil type. */
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Barlow:wght@400;500;600;700&display=swap');
+
+:root{
+  --olive:#20231a;
+  --olive-deep:#14160e;
+  --olive-soft:#2c3021;
+  --brass:#c9a227;
+  --brass-deep:#9c7d1c;
+  --cream:#f3ead8;
+  --cream-dim:#cfc4a8;
+  --ink:#171810;
+  --muted:#8d8a76;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--olive);color:var(--cream);font-family:'Barlow',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.68}
+img{max-width:100%;display:block}
+a{color:var(--brass)}
+
+/* disclosure */
+.disclosure{background:var(--brass);color:#16170f;font-size:12.5px;letter-spacing:.16em;text-align:center;padding:9px 16px;text-transform:uppercase;font-weight:700}
+
+/* cash banner */
+.cash-banner{background:#0e0f0a;border-top:3px solid var(--brass);border-bottom:3px solid var(--brass);padding:12px 20px;text-align:center;font-family:'Saira Stencil One',cursive;letter-spacing:.2em;font-size:16px;color:var(--brass);text-transform:uppercase}
+
+/* header */
+.site-header{background:rgba(20,22,14,.97);border-bottom:1px solid #33371f;position:sticky;top:0;z-index:50}
+.header-inner{max-width:1180px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.brand{font-family:'Saira Stencil One',cursive;font-size:25px;letter-spacing:.04em;color:var(--cream);text-decoration:none}
+.brand span{color:var(--brass)}
+.main-nav{display:flex;gap:22px;margin-left:auto;flex-wrap:wrap}
+.main-nav a{color:var(--cream-dim);text-decoration:none;font-family:'Saira Stencil One',cursive;font-size:13.5px;letter-spacing:.12em;text-transform:uppercase}
+.main-nav a:hover,.main-nav a.active{color:var(--brass)}
+.btn{display:inline-block;font-family:'Saira Stencil One',cursive;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;font-size:15px;padding:13px 30px;border:2px solid var(--brass);color:var(--brass);background:transparent}
+.btn:hover{background:var(--brass);color:#16170f}
+.btn.solid{background:var(--brass);color:#16170f}
+.btn.solid:hover{background:var(--brass-deep);border-color:var(--brass-deep);color:#16170f}
+
+/* masthead */
+.masthead{max-width:1180px;margin:0 auto;padding:76px 22px 30px;text-align:center}
+.masthead .since{font-family:'Saira Stencil One',cursive;letter-spacing:.34em;color:var(--brass);font-size:14px;text-transform:uppercase;margin-bottom:20px}
+.masthead h1{font-family:'Saira Stencil One',cursive;font-size:clamp(50px,9vw,110px);line-height:1;color:var(--cream);margin-bottom:20px}
+.masthead h1 .alt{color:var(--brass)}
+.masthead p.lede{max-width:640px;margin:0 auto 30px;color:var(--cream-dim);font-size:19px}
+.masthead-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+.hero-photo-wrap{max-width:1180px;margin:34px auto 0;padding:0 22px}
+.hero-photo-wrap img{width:100%;height:460px;object-fit:cover;border:1px solid #3a3e26}
+.hero-photo-wrap figcaption{font-size:13px;color:var(--muted);padding:10px 2px}
+
+.rating{max-width:1180px;margin:26px auto 0;padding:0 22px;text-align:center;font-family:'Saira Stencil One',cursive;letter-spacing:.14em;font-size:15px;color:var(--cream-dim);text-transform:uppercase}
+.rating strong{color:var(--brass)}
+
+/* sections */
+.section{max-width:1180px;margin:0 auto;padding:80px 22px}
+.section-title{font-family:'Saira Stencil One',cursive;font-size:clamp(30px,4.4vw,52px);color:var(--cream);margin-bottom:12px;text-transform:uppercase}
+.section-title span{color:var(--brass)}
+.section-sub{color:var(--muted);max-width:640px;margin-bottom:40px}
+
+/* ship's orders: rules board */
+.orders{background:var(--olive-deep);border:1px solid #3a3e26;padding:10px 34px 34px;max-width:820px;margin:0 auto}
+.orders-head{font-family:'Saira Stencil One',cursive;letter-spacing:.24em;color:var(--brass);text-transform:uppercase;font-size:15px;text-align:center;padding:26px 0 6px}
+.order{border-bottom:1px dashed #4a4e33;padding:20px 0;display:grid;grid-template-columns:56px 1fr;gap:18px;align-items:start}
+.order:last-child{border-bottom:none}
+.order .no{font-family:'Saira Stencil One',cursive;font-size:26px;color:var(--brass)}
+.order h4{font-family:'Saira Stencil One',cursive;font-size:17px;letter-spacing:.06em;color:var(--cream);text-transform:uppercase;margin-bottom:6px}
+.order p{color:var(--cream-dim);font-size:15.5px}
+
+/* two-col */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.two-col .photo img{width:100%;height:auto;border:1px solid #3a3e26}
+.two-col .photo figcaption{font-size:13px;color:var(--muted);padding:10px 2px}
+.two-col .text h3{font-family:'Saira Stencil One',cursive;font-size:26px;color:var(--cream);margin-bottom:14px;text-transform:uppercase}
+.two-col .text h3 span{color:var(--brass)}
+.two-col .text p{color:var(--cream-dim);margin-bottom:16px}
+
+/* tuesday spotlight */
+.spotlight{background:var(--olive-deep);border-top:1px solid #3a3e26;border-bottom:1px solid #3a3e26}
+.spotlight-inner{max-width:1180px;margin:0 auto;padding:70px 22px;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.spotlight-inner img{width:100%;height:420px;object-fit:cover;border:1px solid #3a3e26}
+.spotlight-inner figcaption{font-size:13px;color:var(--muted);padding:10px 2px}
+
+/* hours card */
+.hours-card{background:var(--cream);color:var(--ink);padding:36px;max-width:520px}
+.hours-card h3{font-family:'Saira Stencil One',cursive;font-size:20px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.hours-card table{width:100%;border-collapse:collapse}
+.hours-card td{padding:9px 4px;border-bottom:1px solid #ddd2b8;font-size:16px}
+.hours-card td:last-child{text-align:right;font-weight:600}
+
+.cta-band{background:var(--brass);color:#16170f;padding:52px 22px;text-align:center}
+.cta-band h2{font-family:'Saira Stencil One',cursive;font-size:clamp(28px,4.4vw,46px);margin-bottom:12px;text-transform:uppercase}
+.cta-band p{max-width:560px;margin:0 auto 24px;font-weight:600}
+.cta-band .btn{border-color:#16170f;color:#16170f}
+.cta-band .btn:hover{background:#16170f;color:var(--brass)}
+
+.site-footer{background:#0e0f0a;border-top:1px solid #2c3021;padding:52px 22px 28px}
+.footer-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+.footer-inner h5{font-family:'Saira Stencil One',cursive;font-size:13px;letter-spacing:.2em;color:var(--brass);text-transform:uppercase;margin-bottom:14px}
+.footer-inner p,.footer-inner a{color:#9a9784;font-size:15px}
+.footer-inner a{display:block;text-decoration:none;margin-bottom:8px}
+.footer-inner a:hover{color:var(--brass)}
+.fine{max-width:1180px;margin:36px auto 0;padding-top:22px;border-top:1px solid #23261a;color:#5c5a4c;font-size:13px}
+
+@media(max-width:820px){
+  .two-col,.spotlight-inner{grid-template-columns:1fr;gap:32px}
+  .footer-inner{grid-template-columns:1fr}
+  .main-nav{order:3;width:100%;gap:14px}
+  .spotlight-inner img{height:300px}
+  .hero-photo-wrap img{height:300px}
+}

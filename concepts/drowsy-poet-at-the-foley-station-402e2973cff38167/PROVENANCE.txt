@@ -1,0 +1,30 @@
+Drowsy Poet at The Foley Station - photo provenance
+All photos are stock photos from Pexels (Pexels License: free to use, no attribution required).
+All photos were compressed locally to JPG, max 1600px long edge, under 400 KB each.
+
+1. img/latte-art.jpg
+   Source: https://www.pexels.com/photo/11385490/
+   Direct: https://images.pexels.com/photos/11385490/pexels-photo-11385490.jpeg
+   Caption used: "Stock photo: latte art in a cafe cup on a wooden table"
+
+2. img/frappe.jpg
+   Source: https://www.pexels.com/photo/6767147/
+   Direct: https://images.pexels.com/photos/6767147/pexels-photo-6767147.jpeg
+   Caption used: "Stock photo: a frozen blended coffee drink, like the Poetchino"
+
+3. img/fuel-station.jpg
+   Source: https://www.pexels.com/photo/18485700/
+   Direct: https://images.pexels.com/photos/18485700/pexels-photo-18485700/free-photo-of-photo-of-a-vintage-gas-station.jpeg
+   Caption used: "Stock photo: a vintage fuel station, like the 1950s building the cafe calls home"
+
+4. img/scones.jpg
+   Source: https://www.pexels.com/photo/30512698/
+   Direct: https://images.pexels.com/photos/30512698/pexels-photo-30512698/free-photo-of-close-up-of-freshly-baked-scones-with-fruit.jpeg
+   Caption used: "Stock photo: freshly baked scones with fruit"
+
+5. img/patio-dog.jpg
+   Source: https://www.pexels.com/photo/15175097/
+   Direct: https://images.pexels.com/photos/15175097/pexels-photo-15175097/free-photo-of-golden-retriever-at-sidewalk-cafe.jpeg
+   Caption used: "Stock photo: a dog at an outdoor cafe, like the covered pet-friendly patio"
+
+No photo on this site is presented as the actual business's own photography. No other business's photos are used.

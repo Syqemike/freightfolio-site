@@ -1,0 +1,19 @@
+PHOTO PROVENANCE
+All images below are Pexels stock photos (Pexels License: free to use,
+no attribution required). They are NOT photos of the actual business.
+Every caption on the site labels them as stock photos.
+
+bumper-pool.jpg = Pexels photo 35382657: Stock photo: racked pool balls on green felt
+  source: https://images.pexels.com/photos/35382657/pexels-photo-35382657.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+rope.jpg = Pexels photo 4753620: Stock photo: coiled nautical ropes on a ship
+  source: https://images.pexels.com/photos/4753620/pexels-photo-4753620.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+cash-only.jpg = Pexels photo 14820464: Stock photo: US hundred-dollar bills
+  source: https://images.pexels.com/photos/14820464/pexels-photo-14820464.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+regulars.jpg = Pexels photo 5055248: Stock photo: two people clinking beer glasses
+  source: https://images.pexels.com/photos/5055248/pexels-photo-5055248.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+cheers.jpg = Pexels photo 1269025: Stock photo: friends raising beer glasses
+  source: https://images.pexels.com/photos/1269025/pexels-photo-1269025.jpeg?auto=compress&cs=tinysrgb&w=1600

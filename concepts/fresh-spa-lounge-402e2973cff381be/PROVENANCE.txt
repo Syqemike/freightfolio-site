@@ -1,0 +1,38 @@
+Photo provenance for fresh-spa-lounge-402e2973cff381be
+All photos are stock photos from Pexels.
+============================================================
+File: img/room.jpg
+  Description: Serene spa massage bed with minimalist decor
+  Source: https://images.pexels.com/photos/35546238/pexels-photo-35546238.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/spa%20interior/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/manicure.jpg
+  Description: Close-up of a professional manicure procedure in a salon
+  Source: https://images.pexels.com/photos/6135675/pexels-photo-6135675.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/manicure%20nail%20salon/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/nailart.jpg
+  Description: Nail technician applying nail art in a beauty salon
+  Source: https://images.pexels.com/photos/361754/pexels-photo-361754.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/manicure%20nail%20salon/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/pedicure.jpg
+  Description: Close-up of a pedicure session with polish application
+  Source: https://images.pexels.com/photos/17056222/pexels-photo-17056222.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/pedicure%20spa/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/massage.jpg
+  Description: Full body massage in a serene indoor spa environment
+  Source: https://images.pexels.com/photos/6188049/pexels-photo-6188049.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/spa%20massage/
+  License: Pexels License (https://www.pexels.com/license/)
+
+File: img/kiwi.jpg
+  Description: Cantaloupe with sliced kiwis on a green surface
+  Source: https://images.pexels.com/photos/7227393/pexels-photo-7227393.jpeg?auto=compress&cs=tinysrgb&w=1600
+  Found via: https://www.pexels.com/search/kiwi%20fruit/
+  License: Pexels License (https://www.pexels.com/license/)

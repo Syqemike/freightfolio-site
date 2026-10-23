@@ -1,0 +1,99 @@
+/* Everlasting Skincare concept. Warm feminine day spa: dusty rose + warm taupe + cream. */
+:root{
+  --cream:#fdf8f1; --paper:#faf1e7;
+  --rose:#c4908f; --rose-deep:#a96f6d; --rose-soft:#f3e2dd;
+  --taupe:#7a6a5e; --taupe-deep:#5d5148;
+  --ink:#3a322c; --soft:#8a7a6d;
+  --line:#ecdcd3;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:'Nunito Sans',system-ui,sans-serif;line-height:1.75;font-size:17px}
+img{max-width:100%;display:block}
+a{color:var(--rose-deep)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+
+.preview-bar{background:var(--taupe-deep);color:#f8f1e8;font-size:13px;text-align:center;padding:9px 18px;letter-spacing:.02em}
+.preview-bar strong{letter-spacing:.14em;text-transform:uppercase;font-size:11px;font-weight:700}
+
+.site-head{background:var(--cream);padding:26px 0 18px;text-align:center;border-bottom:1px solid var(--line)}
+.brand{font-family:'Lora',serif;font-size:36px;font-weight:600;color:var(--ink);text-decoration:none;display:inline-block;line-height:1.15}
+.brand small{display:block;font-family:'Nunito Sans',sans-serif;font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--rose-deep);margin-top:6px;font-weight:600}
+nav.main{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+nav.main a{text-decoration:none;color:var(--taupe);font-size:14px;font-weight:600;letter-spacing:.06em;padding:9px 22px;border-radius:999px;border:1px solid transparent}
+nav.main a:hover{background:var(--rose-soft);color:var(--rose-deep)}
+nav.main a.active{background:var(--rose);color:#fff}
+
+.hero{text-align:center;padding:72px 0 24px;max-width:760px;margin:0 auto}
+.eyebrow{font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--rose-deep);margin-bottom:18px;font-weight:700}
+h1{font-family:'Lora',serif;font-weight:500;font-size:clamp(40px,5vw,58px);line-height:1.15;margin-bottom:18px}
+.lede{font-size:19px;color:var(--soft);margin-bottom:32px}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--rose-deep);color:#fff;text-decoration:none;padding:15px 40px;font-size:15px;font-weight:700;letter-spacing:.04em;border-radius:999px;border:2px solid var(--rose-deep)}
+.btn:hover{background:var(--rose);border-color:var(--rose)}
+.btn.ghost{background:transparent;color:var(--rose-deep)}
+.btn.ghost:hover{background:var(--rose-soft)}
+
+.collage{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:20px;align-items:start;padding:40px 0 8px}
+.collage figure img{border-radius:28px;box-shadow:0 24px 48px -24px rgba(169,111,109,.45);width:100%;object-fit:cover}
+.collage figure:nth-child(1) img{height:420px}
+.collage figure:nth-child(2){margin-top:56px}
+.collage figure:nth-child(2) img{height:340px}
+.collage figure:nth-child(3) img{height:380px}
+.collage figcaption{font-size:12px;color:var(--soft);margin-top:10px;text-align:center}
+
+section.block{padding:64px 0;text-align:center}
+h2{font-family:'Lora',serif;font-weight:500;font-size:38px;margin-bottom:10px}
+.sub{color:var(--soft);margin:0 auto 40px;max-width:60ch}
+.dot-rule{display:flex;gap:10px;justify-content:center;margin:0 auto 36px}
+.dot-rule span{width:8px;height:8px;border-radius:50%;background:var(--rose)}
+.dot-rule span:nth-child(2){background:var(--taupe)}
+.dot-rule span:nth-child(3){background:var(--line)}
+
+.rounded-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:left}
+.rounded-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:36px;box-shadow:0 18px 40px -28px rgba(169,111,109,.35)}
+.rounded-card img{border-radius:18px;height:220px;width:100%;object-fit:cover;margin-bottom:22px}
+.rounded-card h3{font-family:'Lora',serif;font-weight:600;font-size:24px;margin-bottom:8px;color:var(--taupe-deep)}
+.rounded-card p{color:var(--soft);font-size:16px}
+.rounded-card .figcap,.figcap{font-size:12px;color:var(--soft)}
+.rounded-card .figcap{margin-top:12px}
+
+.pill-list{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.pill-list span{background:var(--rose-soft);color:var(--rose-deep);font-weight:700;font-size:14px;padding:10px 22px;border-radius:999px}
+
+.about{background:var(--paper);border-radius:36px;padding:56px 48px;max-width:880px;margin:0 auto}
+.about p{color:var(--taupe);font-size:18px;max-width:56ch;margin:0 auto}
+
+.rating-pill{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:16px 34px;margin-top:8px;font-size:16px;box-shadow:0 14px 30px -22px rgba(169,111,109,.5)}
+.rating-pill .stars{color:var(--rose-deep);letter-spacing:.08em;font-size:18px}
+
+.cta-band{background:var(--rose-deep);color:#fdf3ee;border-radius:40px;padding:64px 40px;text-align:center;max-width:960px;margin:0 auto}
+.cta-band h2{color:#fff}
+.cta-band p{color:#f3ddd6;max-width:52ch;margin:0 auto 28px}
+.cta-band .btn{background:#fff;color:var(--rose-deep);border-color:#fff}
+.cta-band .btn.ghost{background:transparent;color:#fff;border-color:#fff}
+
+.hours-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:44px;max-width:640px;margin:0 auto;text-align:left}
+.hours-card h3{font-family:'Lora',serif;font-size:26px;margin-bottom:14px;text-align:center}
+.hours-table{width:100%;border-collapse:collapse;font-size:17px}
+.hours-table td{padding:12px 4px;border-bottom:1px dashed var(--line)}
+.hours-table td:last-child{text-align:right;font-weight:700}
+.hours-table .closed{color:var(--rose-deep)}
+.big-tel{font-family:'Lora',serif;font-size:32px;color:var(--rose-deep);text-decoration:none}
+.visit-wrap{text-align:center}
+.visit-wrap .addr{font-size:19px;margin:14px 0 26px}
+
+footer.site{padding:48px 0 40px;font-size:14px;color:var(--soft);text-align:center}
+.foot-cols{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;text-align:left}
+.disclaimer{border-top:1px solid var(--line);padding-top:20px;font-size:13px;max-width:760px;margin:0 auto}
+
+@media(max-width:900px){
+  .collage{grid-template-columns:1fr 1fr;gap:14px}
+  .collage figure:nth-child(2){margin-top:0}
+  .collage figure:nth-child(1) img{height:320px}
+  .collage figure:nth-child(2) img{height:260px}
+  .collage figure:nth-child(3) img{height:280px;grid-column:1/-1}
+  .rounded-grid{grid-template-columns:1fr}
+  .about{padding:40px 28px}
+  .cta-band{border-radius:28px;padding:48px 28px}
+}

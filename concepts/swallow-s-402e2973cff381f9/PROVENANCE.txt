@@ -1,0 +1,28 @@
+Photo provenance: Swallow's concept site (batch-32)
+All photos are STOCK photos from Pexels (Pexels License: free to use).
+They are labeled as stock photos in their captions and are NOT photos of the actual business.
+
+- images/wings.jpg
+  Source: https://images.pexels.com/photos/8862763/pexels-photo-8862763.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: plate of chicken wings with dip"
+- images/cheesesteak.jpg
+  Source: https://images.pexels.com/photos/37228413/pexels-photo-37228413.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: cheesesteak sandwich with fries"
+- images/onion-rings.jpg
+  Source: https://images.pexels.com/photos/17321492/pexels-photo-17321492.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: plate of onion rings with dips"
+- images/draft.jpg
+  Source: https://images.pexels.com/photos/29290425/pexels-photo-29290425.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: beer being poured from a tap"
+- images/interior.jpg
+  Source: https://images.pexels.com/photos/29844871/pexels-photo-29844871.jpeg
+  License: Pexels License
+  Caption used: "Stock photo: cozy pub dining room"
+
+Fonts (self-hosted woff2, SIL Open Font License):
+- Playfair Display: https://fonts.google.com/specimen/Playfair+Display
+- Source Sans 3: https://fonts.google.com/specimen/Source+Sans+3

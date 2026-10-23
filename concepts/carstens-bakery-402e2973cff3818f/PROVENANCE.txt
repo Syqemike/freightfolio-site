@@ -1,0 +1,30 @@
+Carstens' Bakery - photo provenance
+All photos are stock photos from Pexels (Pexels License: free to use, no attribution required).
+All photos were compressed locally to JPG, max 1600px long edge, under 400 KB each.
+
+1. img/display.jpg
+   Source: https://www.pexels.com/photo/38279077/
+   Direct: https://images.pexels.com/photos/38279077/pexels-photo-38279077/free-photo-of-assorted-croissants-in-bakery-display-case.jpeg
+   Caption used: "Stock photo: assorted pastries in a bakery display case"
+
+2. img/dough.jpg
+   Source: https://www.pexels.com/photo/33593109/
+   Direct: https://images.pexels.com/photos/33593109/pexels-photo-33593109/free-photo-of-hands-kneading-dough-for-artisan-bread-making.jpeg
+   Caption used: "Stock photo: hands kneading dough for bread"
+
+3. img/bread.jpg
+   Source: https://www.pexels.com/photo/35815220/
+   Direct: https://images.pexels.com/photos/35815220/pexels-photo-35815220/free-photo-of-rustic-artisan-bread-loaves-in-wicker-basket.jpeg
+   Caption used: "Stock photo: rustic bread loaves in a wicker basket"
+
+4. img/danish.jpg
+   Source: https://www.pexels.com/photo/38430719/
+   Direct: https://images.pexels.com/photos/38430719/pexels-photo-38430719/free-photo-of-delicious-raspberry-danish-pastries-on-tray.jpeg
+   Caption used: "Stock photo: raspberry Danish pastries on a tray"
+
+5. img/wedding-cake.jpg
+   Source: https://www.pexels.com/photo/29495748/
+   Direct: https://images.pexels.com/photos/29495748/pexels-photo-29495748/free-photo-of-elegant-two-tier-white-wedding-cake-with-flowers.jpeg
+   Caption used: "Stock photo: a two-tier white wedding cake with flowers"
+
+No photo on this site is presented as the actual business's own photography. No other business's photos are used.

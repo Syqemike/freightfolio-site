@@ -1,0 +1,30 @@
+Vazquez Taco Shop - photo provenance
+All photos are stock photos from Pexels (Pexels License: free to use, no attribution required).
+All photos were compressed locally to JPG, max 1600px long edge, under 400 KB each.
+
+1. img/tacos.jpg
+   Source: https://www.pexels.com/photo/28895975/
+   Direct: https://images.pexels.com/photos/28895975/pexels-photo-28895975/free-photo-of-delicious-variety-of-tacos-with-meat-filling.jpeg
+   Caption used: "Stock photo: tacos with meat filling, lime, and onions"
+
+2. img/tacos-plate.jpg
+   Source: https://www.pexels.com/photo/18574186/
+   Direct: https://images.pexels.com/photos/18574186/pexels-photo-18574186/free-photo-of-tacos-are-served-on-paper-plates-with-lime-and-onions.jpeg
+   Caption used: "Stock photo: tacos on paper plates with lime and onions"
+
+3. img/burrito.jpg
+   Source: https://www.pexels.com/photo/37324429/
+   Direct: https://images.pexels.com/photos/37324429/pexels-photo-37324429/free-photo-of-delicious-grilled-chicken-burrito-on-paper-wrap.jpeg
+   Caption used: "Stock photo: a grilled burrito wrapped in paper"
+
+4. img/salsa.jpg
+   Source: https://www.pexels.com/photo/31886975/
+   Direct: https://images.pexels.com/photos/31886975/pexels-photo-31886975/free-photo-of-fresh-homemade-salsa-with-tortilla-chips.jpeg
+   Caption used: "Stock photo: fresh homemade salsa with tortilla chips"
+
+5. img/kitchen.jpg
+   Source: https://www.pexels.com/photo/28992999/
+   Direct: https://images.pexels.com/photos/28992999/pexels-photo-28992999/free-photo-of-traditional-mexican-al-pastor-spit-roast-in-kitchen.jpeg
+   Caption used: "Stock photo: marinated meat roasting on a spit in a taqueria kitchen"
+
+No photo on this site is presented as the actual business's own photography. No other business's photos are used.

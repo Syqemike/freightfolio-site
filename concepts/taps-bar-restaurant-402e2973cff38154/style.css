@@ -1,0 +1,81 @@
+/* Taps Bar & Restaurant concept - artsy Westcott: deep teal + warm amber */
+:root{
+  --teal:#0e3a3c; --teal2:#125154; --amber:#e9a23b; --amber-d:#c07f22;
+  --paper:#fbf6ec; --ink:#10292b; --cream:#fdfaf2; --line:rgba(233,162,59,.35);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--teal);color:var(--cream);font-family:'Nunito Sans',system-ui,sans-serif;line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+.disclosure{background:var(--amber);color:#1d1405;text-align:center;font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:.5rem 1rem}
+
+.site-head{background:var(--teal);border-bottom:2px dashed var(--line)}
+.head-inner{max-width:1120px;margin:0 auto;padding:1.4rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.brand{font-family:'DM Serif Display',serif;font-size:clamp(1.9rem,4vw,2.7rem);color:var(--amber);text-decoration:none;line-height:1}
+.brand small{display:block;font-family:'Caveat',cursive;font-size:1.15rem;color:var(--cream);letter-spacing:.02em}
+nav.main{display:flex;gap:.3rem;flex-wrap:wrap}
+nav.main a{text-decoration:none;font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;padding:.55rem .95rem;color:var(--cream);border-radius:999px}
+nav.main a:hover{background:rgba(233,162,59,.18)}
+nav.main a.active{background:var(--amber);color:#1d1405}
+
+/* hero: offset collage */
+.hero{max-width:1120px;margin:0 auto;padding:3.2rem 1.5rem 2rem;display:grid;grid-template-columns:1.1fr .9fr;gap:2.6rem;align-items:center}
+.script{font-family:'Caveat',cursive;font-size:1.5rem;color:var(--amber);margin-bottom:.4rem}
+.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(2.5rem,5.6vw,4.2rem);line-height:1.04;color:var(--cream);margin-bottom:1rem}
+.hero h1 .it{font-style:italic;color:var(--amber)}
+.hero p{font-size:1.08rem;color:#e8e0cd;max-width:32rem}
+.btn{display:inline-block;background:var(--amber);color:#1d1405;font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.88rem;padding:.85rem 1.8rem;text-decoration:none;border-radius:999px;margin-top:1.4rem}
+.btn:hover{background:#f4b45a}
+.btn.line{background:transparent;color:var(--amber);border:2px solid var(--amber)}
+.btn.line:hover{background:rgba(233,162,59,.15)}
+.hero-cta{display:flex;gap:.8rem;flex-wrap:wrap}
+
+/* polaroids */
+.polaroid{background:var(--paper);padding:.8rem .8rem 0;box-shadow:0 14px 34px rgba(0,0,0,.35);transform:rotate(2deg);max-width:420px}
+.polaroid.alt{transform:rotate(-2.5deg)}
+.polaroid img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.polaroid figcaption{font-family:'Caveat',cursive;font-size:1.3rem;color:var(--ink);text-align:center;padding:.6rem .4rem .8rem}
+.stack{display:flex;flex-direction:column;gap:1.8rem;align-items:center}
+
+.section{max-width:1120px;margin:0 auto;padding:3rem 1.5rem}
+h2.sec{font-family:'DM Serif Display',serif;font-size:clamp(1.9rem,4vw,2.8rem);color:var(--cream);margin-bottom:.5rem}
+h2.sec .it{font-style:italic;color:var(--amber)}
+.center{text-align:center}
+.center p.lede{max-width:38rem;margin:0 auto;color:#e8e0cd}
+
+/* ticket cards */
+.tickets{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+.ticket{background:var(--paper);color:var(--ink);border-radius:14px;padding:1.7rem;position:relative}
+.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:26px;height:26px;background:var(--teal);border-radius:50%;transform:translateY(-50%)}
+.ticket::before{left:-13px}.ticket::after{right:-13px}
+.ticket .stub{font-family:'Caveat',cursive;font-size:1.35rem;color:var(--amber-d);margin-bottom:.3rem}
+.ticket h3{font-family:'DM Serif Display',serif;font-size:1.35rem;margin-bottom:.5rem}
+.ticket p{font-size:.94rem}
+
+.band{background:var(--teal2);border-top:2px dashed var(--line);border-bottom:2px dashed var(--line);margin:1rem 0}
+.band-inner{max-width:1120px;margin:0 auto;padding:2.8rem 1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:center}
+
+/* drinks list */
+.drink-list{max-width:680px;margin:2rem auto 0}
+.drink{display:flex;gap:1.2rem;align-items:baseline;padding:1rem 0;border-bottom:1px dashed var(--line)}
+.drink .n{font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--amber);min-width:2rem}
+.drink h3{font-size:1.1rem;color:var(--cream)}
+.drink p{font-size:.93rem;color:#d9d0b8}
+
+.hours{width:100%;border-collapse:collapse;max-width:480px;margin:1.4rem auto 0}
+.hours td{padding:.65rem .3rem;border-bottom:1px dashed var(--line)}
+.hours td:first-child{font-weight:700}
+.hours td:last-child{text-align:right;color:var(--amber);font-weight:700}
+.rating{color:var(--cream);font-weight:600}
+.rating .stars{color:var(--amber);letter-spacing:.12em}
+
+footer{background:#082425;border-top:2px dashed var(--line);margin-top:3rem}
+.foot-inner{max-width:1120px;margin:0 auto;padding:2.2rem 1.5rem;display:flex;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;align-items:center}
+.foot-inner .fbrand{font-family:'DM Serif Display',serif;font-size:1.6rem;color:var(--amber)}
+.foot-inner p{font-size:.86rem;color:#b9ae92}
+
+@media(max-width:860px){
+  .hero,.band-inner{grid-template-columns:1fr}
+  .tickets{grid-template-columns:1fr}
+}
