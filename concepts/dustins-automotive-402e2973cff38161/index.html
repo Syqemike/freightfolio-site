@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Dustin's Automotive | Auto Repair in Sparks, NV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1c1a17;
+    --ink-soft:#2b2721;
+    --rust:#c2671f;
+    --rust-deep:#9c4f14;
+    --bone:#f6f1e7;
+    --bone-dim:#ece4d3;
+    --paper:#fbf8f1;
+    --line:#d9cfba;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Barlow',system-ui,-apple-system,sans-serif;
+    background:var(--bone);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.condensed{font-family:'Barlow Condensed','Arial Narrow',sans-serif;letter-spacing:.01em}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+
+  /* disclosure bar */
+  .disclosure{
+    background:var(--ink);color:var(--bone);
+    font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;
+    text-align:center;padding:.55rem 1rem;
+  }
+  .disclosure strong{color:var(--rust);font-weight:600}
+
+  /* nav */
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(246,241,231,.96);
+    border-bottom:2px solid var(--ink);
+  }
+  .nav-inner{
+    max-width:1180px;margin:0 auto;padding:.8rem 1.25rem;
+    display:flex;align-items:center;gap:1.5rem;
+  }
+  .nav-brand{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.35rem;letter-spacing:.02em;text-transform:uppercase}
+  .nav-brand span{color:var(--rust-deep)}
+  .nav-links{display:flex;gap:1.4rem;margin-left:auto;font-size:.9rem;font-weight:500;text-transform:uppercase;letter-spacing:.08em}
+  .nav-links a{text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px}
+  .nav-links a:hover{border-color:var(--rust)}
+  .nav-call{
+    background:var(--rust);color:#fff;text-decoration:none;font-weight:600;
+    padding:.55rem 1.1rem;font-size:.88rem;letter-spacing:.05em;text-transform:uppercase;
+    border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);
+  }
+  .nav-call:hover{background:var(--rust-deep)}
+
+  /* hero */
+  .hero{
+    max-width:1180px;margin:0 auto;padding:3.5rem 1.25rem 2.5rem;
+    display:grid;grid-template-columns:1fr;gap:2rem;
+  }
+  .eyebrow{
+    display:inline-block;background:var(--ink);color:var(--bone);
+    font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    padding:.35rem .8rem;margin-bottom:1.1rem;
+  }
+  .hero h1{
+    font-size:clamp(3rem,8.5vw,6.2rem);line-height:.95;font-weight:700;text-transform:uppercase;
+    max-width:12ch;
+  }
+  .hero h1 em{font-style:normal;color:var(--rust-deep)}
+  .hero-sub{font-size:1.15rem;max-width:44ch;margin-top:1rem;color:var(--ink-soft)}
+  .rating-line{
+    margin-top:1.1rem;font-weight:600;font-size:1rem;
+    display:inline-flex;align-items:center;gap:.5rem;
+    border:2px solid var(--ink);background:var(--paper);padding:.5rem .9rem;box-shadow:3px 3px 0 var(--ink);
+  }
+  .rating-line .stars{color:var(--rust-deep);letter-spacing:.1em;font-size:.95rem}
+  .hero-cta{margin-top:1.6rem;display:flex;gap:1rem;flex-wrap:wrap}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+    padding:.9rem 1.6rem;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);
+  }
+  .btn-primary{background:var(--rust);color:#fff;font-size:1.02rem}
+  .btn-primary:hover{background:var(--rust-deep)}
+  .btn-ghost{background:var(--paper);font-size:1.02rem}
+  .btn-ghost:hover{background:var(--bone-dim)}
+  .hero-photos{display:grid;grid-template-columns:1.6fr 1fr;gap:.9rem;align-items:start}
+  .hero-photos figure{position:relative}
+  .hero-photos img{border:2px solid var(--ink);object-fit:cover;width:100%}
+  .hero-photos .tall img{height:100%;min-height:420px}
+  .hero-photos .side{display:grid;gap:.9rem}
+  .cap{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-top:.35rem}
+  .offset-up{transform:translateY(-1.6rem)}
+
+  /* section frame */
+  .section{max-width:1180px;margin:0 auto;padding:3rem 1.25rem}
+  .sec-head{display:flex;align-items:baseline;gap:1rem;margin-bottom:2rem;border-bottom:2px solid var(--ink);padding-bottom:.7rem}
+  .sec-num{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;color:var(--rust-deep);letter-spacing:.1em}
+  .sec-head h2{font-size:clamp(2rem,5vw,3.2rem);text-transform:uppercase;font-weight:700;line-height:1}
+  .sec-head p{margin-left:auto;max-width:30ch;font-size:.95rem;color:var(--ink-soft)}
+
+  /* services: ruled index */
+  .svc-index{list-style:none;border-top:2px solid var(--ink)}
+  .svc-index li{
+    display:grid;grid-template-columns:3.4rem 1fr;gap:1rem;align-items:baseline;
+    padding:1.05rem .4rem;border-bottom:1px solid var(--line);
+  }
+  .svc-index li:nth-child(even){background:var(--paper)}
+  .svc-index .idx{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:1rem;color:var(--rust-deep);letter-spacing:.08em}
+  .svc-index h3{font-size:1.5rem;font-weight:600;text-transform:uppercase;line-height:1.1}
+  .svc-index .detail{font-size:.98rem;color:var(--ink-soft);margin-top:.25rem;max-width:62ch}
+  .svc-note{margin-top:1.4rem;font-size:.95rem;color:var(--ink-soft);max-width:62ch}
+
+  /* services side photo */
+  .svc-wrap{display:grid;grid-template-columns:1.7fr 1fr;gap:2rem;align-items:start}
+  .svc-photo img{border:2px solid var(--ink);height:100%;min-height:380px;object-fit:cover;width:100%}
+  .svc-photo .pull{margin-top:1.1rem;background:var(--ink);color:var(--bone);padding:1.1rem 1.2rem;font-size:1.02rem;line-height:1.5}
+  .svc-photo .pull strong{color:var(--rust)}
+
+  /* why */
+  .why{background:var(--ink);color:var(--bone)}
+  .why .section{max-width:1180px}
+  .why .sec-head{border-color:var(--rust)}
+  .why .sec-head p{color:#cfc6b2}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+  .why-grid img{border:2px solid var(--rust)}
+  .why-list{list-style:none;margin-top:1.6rem;display:grid;gap:1.15rem}
+  .why-list li{display:grid;grid-template-columns:2.6rem 1fr;gap:.9rem;align-items:start}
+  .why-list .tick{font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--rust);font-size:1.5rem;line-height:1.1}
+  .why-list h3{font-size:1.3rem;text-transform:uppercase;font-weight:600;letter-spacing:.02em}
+  .why-list p{color:#cfc6b2;font-size:.98rem;margin-top:.2rem;max-width:48ch}
+
+  /* gallery strip */
+  .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.2rem}
+  .strip img{border:2px solid var(--ink);height:230px;object-fit:cover;width:100%}
+  .strip figure:nth-child(2){transform:translateY(1.2rem)}
+
+  /* hours / visit */
+  .visit-wrap{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+  .hours-card{background:var(--paper);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:1.8rem}
+  .hours-card h3{font-size:1.8rem;text-transform:uppercase;font-weight:700;margin-bottom:1rem}
+  .hours-row{display:flex;justify-content:space-between;padding:.7rem 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+  .hours-row:last-child{border-bottom:none}
+  .hours-row .day{font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem}
+  .addr-card h3{font-size:1.8rem;text-transform:uppercase;font-weight:700;margin-bottom:1rem}
+  .addr-card p{font-size:1.08rem;margin-bottom:.7rem}
+  .addr-card a{font-weight:600}
+  .big-call{margin-top:1.8rem}
+  .big-call .btn-primary{font-size:1.25rem;padding:1.1rem 2.2rem}
+  .phone-huge{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(2.2rem,6vw,3.4rem);letter-spacing:.02em;margin-top:1rem}
+  .phone-huge a{text-decoration:none;border-bottom:4px solid var(--rust)}
+
+  footer{background:var(--ink);color:#cfc6b2;margin-top:3rem}
+  .foot-inner{max-width:1180px;margin:0 auto;padding:2.2rem 1.25rem;display:grid;gap:1rem}
+  .foot-brand{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.6rem;text-transform:uppercase;color:var(--bone)}
+  .foot-brand span{color:var(--rust)}
+  footer p{font-size:.9rem;max-width:70ch}
+  footer .fine{font-size:.78rem;color:#9a917d}
+
+  @media(min-width:900px){
+    .hero{grid-template-columns:1.05fr 1fr;gap:3rem;align-items:start}
+    .hero h1{max-width:10ch}
+  }
+  @media(max-width:899px){
+    .nav-links{display:none}
+    .hero-photos .tall img{min-height:280px}
+    .offset-up{transform:none}
+    .svc-wrap,.why-grid,.visit-wrap{grid-template-columns:1fr}
+    .svc-photo img{min-height:260px}
+    .strip{grid-template-columns:1fr 1fr}
+    .strip figure:nth-child(2){transform:none}
+    .strip img{height:180px}
+    .sec-head{flex-wrap:wrap}
+    .sec-head p{margin-left:0;max-width:none}
+  }
+  @media(max-width:560px){
+    .strip{grid-template-columns:1fr}
+    .svc-index li{grid-template-columns:2.4rem 1fr}
+    .nav-inner{gap:1rem}
+    .nav-call{padding:.5rem .8rem;font-size:.8rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure"><strong>Design Preview</strong>: Website concept for Dustin's Automotive by Freightfolio. Not the official site.</div>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand">Dustin's <span>Automotive</span></div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#hours">Hours</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="nav-call" href="tel:+17753556822">Call to Book</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <span class="eyebrow">Auto Repair, Sparks NV</span>
+    <h1>Straight answers. <em>Fixed right.</em></h1>
+    <p class="hero-sub">Dustin's Automotive is a neighborhood auto repair shop on Glendale Avenue in Sparks. From oil changes to transmission work, they handle the full job list under one roof.</p>
+    <div class="rating-line"><span class="stars">★★★★★</span> 5.0 from 34 Google reviews</div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="tel:+17753556822">Call to Book</a>
+      <a class="btn btn-ghost" href="#services">See Services</a>
+    </div>
+  </div>
+  <div class="hero-photos">
+    <figure class="tall">
+      <img src="img/photo-1.jpg" alt="Mechanic checking a car engine in a garage">
+      <figcaption class="cap">Stock photo</figcaption>
+    </figure>
+    <div class="side">
+      <figure class="offset-up">
+        <img src="img/photo-3.jpg" alt="Car lifted for maintenance in an auto repair shop">
+        <figcaption class="cap">Stock photo</figcaption>
+      </figure>
+      <figure>
+        <img src="img/photo-6.jpg" alt="Close-up of mechanic repairing a car engine">
+        <figcaption class="cap">Stock photo</figcaption>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="services">
+  <div class="sec-head">
+    <span class="sec-num">01</span>
+    <h2>Services</h2>
+    <p>Every service on this list is offered at the shop. If your car needs something else, call and ask.</p>
+  </div>
+  <div class="svc-wrap">
+    <div>
+      <ul class="svc-index">
+        <li><span class="idx">/01</span><div><h3>Diagnostics &amp; Troubleshooting</h3><p class="detail">Find out what is actually wrong before any repair work is scheduled.</p></div></li>
+        <li><span class="idx">/02</span><div><h3>Check Engine Light Repair</h3><p class="detail">Fault codes read, the cause identified, and the repair made at the source.</p></div></li>
+        <li><span class="idx">/03</span><div><h3>Engine Management</h3><p class="detail">Timing belts, head gaskets, and scheduled engine maintenance.</p></div></li>
+        <li><span class="idx">/04</span><div><h3>Transmission Services &amp; Repair</h3><p class="detail">Transmission service and repair for automatic transmissions.</p></div></li>
+        <li><span class="idx">/05</span><div><h3>Clutch Replacement</h3><p class="detail">Full clutch replacement for manual transmission vehicles.</p></div></li>
+        <li><span class="idx">/06</span><div><h3>Brakes</h3><p class="detail">Pads, rotors, calipers, and full brake system service.</p></div></li>
+        <li><span class="idx">/07</span><div><h3>Electrical Repair</h3><p class="detail">Wiring, starters, alternators, and the electrical faults that hide behind them.</p></div></li>
+        <li><span class="idx">/08</span><div><h3>Front End &amp; Suspension</h3><p class="detail">Shocks, struts, and front end work for a steady ride.</p></div></li>
+        <li><span class="idx">/09</span><div><h3>Axle Services</h3><p class="detail">Axle inspection, service, and replacement.</p></div></li>
+        <li><span class="idx">/10</span><div><h3>Tune-Ups</h3><p class="detail">Spark plugs, filters, and the maintenance that keeps a car running clean.</p></div></li>
+        <li><span class="idx">/11</span><div><h3>Battery Replacement</h3><p class="detail">Battery tested, the old one swapped out, a new one installed.</p></div></li>
+        <li><span class="idx">/12</span><div><h3>Oil Changes</h3><p class="detail">Quick, done right, and on schedule.</p></div></li>
+      </ul>
+      <p class="svc-note">The fastest way to get on the schedule is a phone call: <a href="tel:+17753556822">(775) 355-6822</a>.</p>
+    </div>
+    <aside class="svc-photo">
+      <img src="img/photo-4.jpg" alt="Mechanic repairing a car brake">
+      <figcaption class="cap">Stock photo</figcaption>
+      <div class="pull">Brakes, belts, transmissions, electrics. <strong>One shop, one phone call.</strong></div>
+    </aside>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="section">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <h2>Why Come Here</h2>
+      <p>What the record shows about this shop.</p>
+    </div>
+    <div class="why-grid">
+      <div>
+        <figure>
+          <img src="img/photo-5.jpg" alt="Mechanic inspecting a car engine">
+          <figcaption class="cap" style="color:#9a917d">Stock photo</figcaption>
+        </figure>
+      </div>
+      <ul class="why-list">
+        <li><span class="tick">01</span><div><h3>A Real Neighborhood Shop</h3><p>Dustin's Automotive sits at 1530 Glendale Ave in Sparks, an auto repair shop in the neighborhood it is part of.</p></div></li>
+        <li><span class="tick">02</span><div><h3>Full-Service Under One Roof</h3><p>Twelve verified service lines, from oil changes and tune-ups to transmission repair and engine work.</p></div></li>
+        <li><span class="tick">03</span><div><h3>Weekday Hours That Work</h3><p>Open Monday through Friday, 8:00 AM to 5:00 PM. Weekday service for working schedules.</p></div></li>
+        <li><span class="tick">04</span><div><h3>Easy to Reach</h3><p>One phone number, (775) 355-6822, for every question and every appointment.</p></div></li>
+      </ul>
+    </div>
+    <div class="strip">
+      <figure><img src="img/photo-2.jpg" alt="Mechanic working under a car hood"><figcaption class="cap" style="color:#9a917d">Stock photo</figcaption></figure>
+      <figure><img src="img/photo-1.jpg" alt="Mechanic checking an engine in a garage"><figcaption class="cap" style="color:#9a917d">Stock photo</figcaption></figure>
+      <figure><img src="img/photo-3.jpg" alt="Car on a lift in a repair shop"><figcaption class="cap" style="color:#9a917d">Stock photo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="hours">
+  <div class="sec-head">
+    <span class="sec-num">03</span>
+    <h2>Hours &amp; Visit</h2>
+    <p>Find the shop, or just call.</p>
+  </div>
+  <div class="visit-wrap">
+    <div class="hours-card">
+      <h3>Shop Hours</h3>
+      <div class="hours-row"><span class="day">Monday</span><span>8:00 AM – 5:00 PM</span></div>
+      <div class="hours-row"><span class="day">Tuesday</span><span>8:00 AM – 5:00 PM</span></div>
+      <div class="hours-row"><span class="day">Wednesday</span><span>8:00 AM – 5:00 PM</span></div>
+      <div class="hours-row"><span class="day">Thursday</span><span>8:00 AM – 5:00 PM</span></div>
+      <div class="hours-row"><span class="day">Friday</span><span>8:00 AM – 5:00 PM</span></div>
+    </div>
+    <div class="addr-card" id="contact">
+      <h3>Find Us</h3>
+      <p><strong>Dustin's Automotive</strong><br>
+      1530 Glendale Ave<br>
+      Sparks, NV 89431</p>
+      <p>Phone: <a href="tel:+17753556822">(775) 355-6822</a></p>
+      <div class="big-call">
+        <a class="btn btn-primary" href="tel:+17753556822">Call to Book</a>
+        <div class="phone-huge"><a href="tel:+17753556822">(775) 355-6822</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-brand">Dustin's <span>Automotive</span></div>
+    <p>1530 Glendale Ave, Sparks, NV 89431 · <a href="tel:+17753556822">(775) 355-6822</a> · Open Mon–Fri, 8:00 AM–5:00 PM</p>
+    <p class="fine">This is a website design preview created by Freightfolio to show what a custom site for Dustin's Automotive could look like. It is not the official website of Dustin's Automotive. All photography shown is stock photography, not photos of the actual business. Services, hours, rating, and contact details reflect publicly available information.</p>
+  </div>
+</footer>
+
+</body>
+</html>

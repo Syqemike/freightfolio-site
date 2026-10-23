@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Get It Fixed, LLC - Small Engine and ATV Repair in Albuquerque, NM</title>
+<meta name="description" content="Get It Fixed, LLC in Albuquerque, NM. Small engine and ATV repair at a reasonable price, plus parts for sale. Call Gilbert at 505-934-1721. Design preview concept.">
+<style>
+  @font-face{font-family:'Saira Stencil One';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/SairaStencilOne-normal-400.woff2') format('woff2')}
+  @font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/Barlow-normal-400.woff2') format('woff2')}
+  @font-face{font-family:'Barlow';font-style:italic;font-weight:400;font-display:swap;src:url('fonts/Barlow-italic-400.woff2') format('woff2')}
+  @font-face{font-family:'Barlow';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/Barlow-normal-500.woff2') format('woff2')}
+  @font-face{font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/Barlow-normal-600.woff2') format('woff2')}
+  @font-face{font-family:'Barlow';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/Barlow-normal-700.woff2') format('woff2')}
+  :root{
+    --olive-dark:#22271d;
+    --olive:#39402f;
+    --sage:#5a6450;
+    --orange:#e05e0b;
+    --orange-deep:#b34a06;
+    --kraft:#dcc79c;
+    --kraft-light:#ece0c4;
+    --paper:#f2ead6;
+    --ink:#1d211a;
+    --muted:#55584c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Barlow',Arial,Helvetica,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.55;
+    font-size:17px;
+  }
+  img{max-width:100%;display:block}
+  a{color:var(--orange-deep)}
+  ::selection{background:var(--orange);color:#fff}
+
+  /* ---- disclosure bar ---- */
+  .disclosure-bar{
+    background:var(--ink);
+    color:#f5efdf;
+    text-align:center;
+    font-size:13px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    padding:9px 16px;
+    font-weight:600;
+  }
+  .disclosure-bar span{color:var(--kraft)}
+
+  /* ---- header / sticky nav ---- */
+  header.site{
+    background:var(--olive-dark);
+    color:#f2ead6;
+    position:sticky;
+    top:0;
+    z-index:50;
+    border-bottom:4px solid var(--orange);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding:12px 22px;
+  }
+  .brandmark{
+    font-family:'Saira Stencil One',cursive;
+    font-size:24px;letter-spacing:.04em;
+    color:#fff;text-decoration:none;line-height:1;
+    white-space:nowrap;
+  }
+  .brandmark em{font-style:normal;color:var(--orange)}
+  nav.main ul{
+    list-style:none;display:flex;gap:26px;flex-wrap:wrap;
+  }
+  nav.main a{
+    color:#e6dcc3;text-decoration:none;font-weight:600;font-size:15px;
+    letter-spacing:.06em;text-transform:uppercase;
+    padding:6px 2px;border-bottom:2px solid transparent;
+  }
+  nav.main a:hover{color:var(--orange);border-bottom-color:var(--orange)}
+  .call-pill{
+    background:var(--orange);color:#fff;text-decoration:none;
+    font-weight:700;font-size:15px;letter-spacing:.03em;
+    padding:10px 18px;border-radius:3px;white-space:nowrap;
+    box-shadow:3px 3px 0 rgba(0,0,0,.35);
+  }
+  .call-pill:hover{background:var(--orange-deep)}
+  .call-pill small{display:block;font-size:12px;font-weight:600;letter-spacing:.05em}
+
+  /* ---- hero ---- */
+  .hero{
+    background:var(--kraft);
+    border-bottom:6px solid var(--olive-dark);
+    overflow:hidden;
+  }
+  .hero-grid{
+    max-width:1180px;margin:0 auto;
+    display:grid;grid-template-columns:1.05fr .95fr;
+    gap:0;align-items:stretch;
+  }
+  .hero-copy{
+    padding:64px 40px 64px 30px;
+    position:relative;
+  }
+  .hero-kicker{
+    display:inline-block;
+    font-family:'Saira Stencil One',cursive;
+    font-size:13px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--orange-deep);
+    border:2px solid var(--orange-deep);
+    padding:7px 14px;margin-bottom:22px;
+    transform:rotate(-1.2deg);
+  }
+  .hero h1{
+    font-family:'Saira Stencil One',cursive;
+    font-size:clamp(52px,7.2vw,96px);
+    line-height:.95;letter-spacing:.01em;
+    color:var(--olive-dark);
+    margin-bottom:14px;
+  }
+  .hero h1 .fix{color:var(--orange-deep)}
+  .hero-sub{
+    font-size:21px;font-weight:600;color:var(--olive);
+    margin-bottom:16px;max-width:34ch;
+  }
+  .hero-quote{
+    border-left:5px solid var(--orange);
+    padding:10px 0 10px 18px;margin:20px 0;
+    font-style:italic;font-size:18px;color:var(--ink);
+    max-width:36ch;
+  }
+  .hero-quote cite{display:block;font-style:normal;font-size:13px;color:var(--muted);margin-top:6px;letter-spacing:.04em}
+  .hero-cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+  .btn-call{
+    background:var(--olive-dark);color:#fff;text-decoration:none;
+    font-weight:700;font-size:19px;letter-spacing:.02em;
+    padding:16px 30px;border-radius:3px;
+    box-shadow:5px 5px 0 var(--orange);
+    display:inline-block;
+  }
+  .btn-call:hover{background:#12150e}
+  .btn-call small{display:block;font-size:13px;font-weight:500;color:var(--kraft);letter-spacing:.08em}
+  .btn-fb{
+    align-self:center;color:var(--olive-dark);font-weight:600;font-size:15px;
+    text-decoration:underline;text-underline-offset:4px;
+  }
+  .btn-fb:hover{color:var(--orange-deep)}
+  .hero-art{
+    position:relative;min-height:420px;
+    background:var(--olive-dark);
+  }
+  .hero-art .ph-main{
+    position:absolute;inset:26px 26px 60px 40px;
+    object-fit:cover;width:calc(100% - 66px);height:calc(100% - 86px);
+    border:6px solid var(--paper);
+    box-shadow:10px 10px 0 rgba(0,0,0,.35);
+  }
+  .hero-art .ph-inset{
+    position:absolute;right:44px;bottom:40px;
+    width:42%;aspect-ratio:3/2;object-fit:cover;
+    border:6px solid var(--orange);
+    box-shadow:-8px -8px 0 rgba(0,0,0,.3);
+  }
+  .hero-art figcaption{
+    position:absolute;left:52px;bottom:14px;
+    color:#cfc4a6;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+  }
+
+  /* ---- section scaffolding ---- */
+  section.block{padding:72px 22px}
+  .wrap{max-width:1180px;margin:0 auto}
+  .section-tag{
+    font-family:'Saira Stencil One',cursive;
+    font-size:13px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--orange-deep);margin-bottom:10px;
+  }
+  h2.section-title{
+    font-family:'Saira Stencil One',cursive;
+    font-size:clamp(32px,4.4vw,52px);line-height:1.02;
+    color:var(--olive-dark);margin-bottom:12px;max-width:20ch;
+  }
+  .section-lede{font-size:18px;color:var(--muted);max-width:62ch;margin-bottom:36px}
+
+  /* ---- what we fix: ruled service ticket ---- */
+  #fix{background:var(--paper)}
+  .ticket{
+    background:var(--kraft-light);
+    border:2px solid var(--olive-dark);
+    box-shadow:8px 8px 0 var(--olive-dark);
+    max-width:980px;margin:0 auto;
+  }
+  .ticket-head{
+    background:var(--olive-dark);color:#fff;
+    padding:18px 30px;
+    display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;
+  }
+  .ticket-head h3{
+    font-family:'Saira Stencil One',cursive;font-size:22px;letter-spacing:.06em;
+  }
+  .ticket-head span{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--kraft)}
+  .ticket-rows{padding:6px 30px 10px}
+  .ticket-row{
+    display:grid;grid-template-columns:64px 1fr;gap:22px;
+    padding:22px 0;
+    border-bottom:2px dashed rgba(57,64,47,.45);
+    align-items:start;
+  }
+  .ticket-row:last-child{border-bottom:none}
+  .row-num{
+    font-family:'Saira Stencil One',cursive;font-size:30px;color:var(--orange-deep);
+    line-height:1;padding-top:2px;
+  }
+  .ticket-row h4{
+    font-family:'Saira Stencil One',cursive;font-size:21px;letter-spacing:.03em;
+    color:var(--olive-dark);margin-bottom:6px;
+  }
+  .ticket-row p{color:#3c4034;max-width:56ch}
+  .ticket-foot{
+    background:var(--orange);color:#fff;
+    padding:18px 30px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+  }
+  .ticket-foot strong{font-family:'Saira Stencil One',cursive;font-size:19px;letter-spacing:.05em}
+  .ticket-foot a{color:#fff;font-weight:700;font-size:17px}
+
+  /* ---- photo strip ---- */
+  .photo-strip{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+    margin-top:44px;
+  }
+  .photo-strip figure{
+    background:#fff;padding:10px 10px 8px;
+    border:1px solid #d8cfb8;
+    box-shadow:5px 5px 0 rgba(34,39,29,.18);
+  }
+  .photo-strip figure:nth-child(odd){transform:rotate(-1deg)}
+  .photo-strip figure:nth-child(even){transform:rotate(1deg)}
+  .photo-strip img{aspect-ratio:3/4;object-fit:cover;width:100%}
+  .photo-strip figcaption{
+    font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--muted);padding:8px 2px 2px;text-align:center;
+  }
+
+  /* ---- reviews ---- */
+  #reviews{background:var(--olive-dark);color:#f2ead6}
+  #reviews .section-tag{color:var(--orange)}
+  #reviews h2.section-title{color:#fff}
+  .review-card{
+    max-width:760px;margin:0 auto;text-align:center;
+    border:3px solid var(--orange);
+    padding:44px 34px;background:#2b3025;
+  }
+  .stars{font-size:30px;letter-spacing:.18em;color:var(--orange);margin-bottom:10px}
+  .review-score{
+    font-family:'Saira Stencil One',cursive;font-size:clamp(40px,5vw,60px);
+    color:#fff;line-height:1;margin-bottom:8px;
+  }
+  .review-card p{color:#d9cfb6;font-size:17px;max-width:44ch;margin:0 auto 18px}
+  .review-card a{color:var(--kraft);font-weight:600}
+
+  /* ---- hours / contact ---- */
+  #visit{background:var(--kraft)}
+  .visit-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:26px;
+    max-width:1000px;margin:0 auto;
+  }
+  .panel{
+    background:var(--paper);border:2px solid var(--olive-dark);
+    box-shadow:7px 7px 0 var(--olive-dark);padding:34px 32px;
+  }
+  .panel h3{
+    font-family:'Saira Stencil One',cursive;font-size:22px;letter-spacing:.04em;
+    color:var(--olive-dark);margin-bottom:18px;
+    border-bottom:3px solid var(--orange);padding-bottom:10px;
+  }
+  .hours-table{width:100%;border-collapse:collapse}
+  .hours-table th,.hours-table td{
+    text-align:left;padding:11px 4px;font-size:17px;
+    border-bottom:1px solid #ddd2b8;
+  }
+  .hours-table th{font-weight:600;color:var(--olive)}
+  .hours-table td{font-weight:700;color:var(--ink);text-align:right}
+  .hours-table tr.closed td{color:var(--orange-deep)}
+  .contact-lines{list-style:none}
+  .contact-lines li{margin-bottom:16px;font-size:18px}
+  .contact-lines .label{
+    display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--muted);font-weight:700;margin-bottom:3px;
+  }
+  .contact-lines a{color:var(--ink);font-weight:700;text-decoration:none}
+  .contact-lines a:hover{color:var(--orange-deep);text-decoration:underline}
+  .big-call{
+    display:block;text-align:center;margin-top:22px;
+    background:var(--orange);color:#fff;text-decoration:none;
+    font-family:'Saira Stencil One',cursive;font-size:22px;letter-spacing:.04em;
+    padding:16px;border-radius:3px;box-shadow:4px 4px 0 rgba(0,0,0,.3);
+  }
+  .big-call:hover{background:var(--orange-deep)}
+  .big-call small{display:block;font-family:'Barlow',sans-serif;font-size:14px;font-weight:600;letter-spacing:.06em}
+
+  /* ---- footer ---- */
+  footer{
+    background:var(--ink);color:#cfc6ab;padding:40px 22px;
+    font-size:14px;
+  }
+  .footer-inner{max-width:1180px;margin:0 auto;display:grid;gap:18px}
+  .footer-brand{font-family:'Saira Stencil One',cursive;font-size:20px;color:#fff;letter-spacing:.04em}
+  footer a{color:var(--kraft)}
+  .footer-note{max-width:78ch;line-height:1.6}
+
+  /* ---- responsive ---- */
+  @media (max-width:940px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-copy{padding:48px 24px}
+    .hero-art{min-height:340px}
+    .hero-art .ph-main{inset:18px 18px 52px 18px;width:calc(100% - 36px);height:calc(100% - 70px)}
+    .hero-art .ph-inset{right:14px;bottom:14px;width:52%}
+    .photo-strip{grid-template-columns:repeat(2,1fr)}
+    .visit-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:640px){
+    .header-inner{flex-wrap:wrap;padding:10px 16px}
+    nav.main ul{gap:16px}
+    nav.main a{font-size:13px}
+    .call-pill{font-size:13px;padding:8px 12px}
+    section.block{padding:52px 18px}
+    .ticket-head,.ticket-rows,.ticket-foot{padding-left:20px;padding-right:20px}
+    .ticket-row{grid-template-columns:44px 1fr;gap:14px}
+    .photo-strip{grid-template-columns:1fr 1fr;gap:12px}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure-bar">Website Concept <span>|</span> Design Preview, not the business's official site</div>
+
+<header class="site">
+  <div class="header-inner">
+    <a class="brandmark" href="#top">GET IT <em>FIXED</em></a>
+    <nav class="main" aria-label="Main navigation">
+      <ul>
+        <li><a href="#fix">What we fix</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#visit">Hours</a></li>
+        <li><a href="#visit">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="call-pill" href="tel:+15059341721">Call Gilbert<small>505-934-1721</small></a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="hero-kicker">Albuquerque, New Mexico</span>
+        <h1>GET IT <span class="fix">FIXED</span></h1>
+        <p class="hero-sub">Small engine and ATV repair in Albuquerque.</p>
+        <blockquote class="hero-quote">
+          "ATV, Small Engine Repair at a reasonable price."
+          <cite>The shop's own words, from its Facebook page</cite>
+        </blockquote>
+        <div class="hero-cta-row">
+          <a class="btn-call" href="tel:+15059341721">Call Gilbert<small>505-934-1721</small></a>
+          <a class="btn-fb" href="https://www.facebook.com/getitfixedllc">Find us on Facebook</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img class="ph-main" src="img/photo-5.jpg" alt="An ATV on a rugged desert trail with mountains in the distance">
+        <img class="ph-inset" src="img/photo-6.jpg" alt="Gloved hands adjusting a lawn mower">
+        <figcaption>Stock photos</figcaption>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE FIX -->
+  <section class="block" id="fix" aria-label="What we fix">
+    <div class="wrap">
+      <div class="section-tag">Service ticket</div>
+      <h2 class="section-title">What comes through the shop door</h2>
+      <p class="section-lede">Get It Fixed, LLC is a repair shop at 1124 4th St SW in Albuquerque. Lawn mowers, small engines, and ATVs. Parts for sale too.</p>
+
+      <div class="ticket">
+        <div class="ticket-head">
+          <h3>WORK ORDER</h3>
+          <span>Get It Fixed, LLC</span>
+        </div>
+        <div class="ticket-rows">
+          <div class="ticket-row">
+            <div class="row-num">01</div>
+            <div>
+              <h4>Lawn Mowers</h4>
+              <p>Mower repair for machines that will not start, run rough, or need attention. Call and describe the problem.</p>
+            </div>
+          </div>
+          <div class="ticket-row">
+            <div class="row-num">02</div>
+            <div>
+              <h4>Small Engines</h4>
+              <p>Small engine repair at a reasonable price. That is the shop's own description of the work.</p>
+            </div>
+          </div>
+          <div class="ticket-row">
+            <div class="row-num">03</div>
+            <div>
+              <h4>ATVs</h4>
+              <p>ATV repair for four-wheelers that need work. Ask Gilbert what your machine needs.</p>
+            </div>
+          </div>
+          <div class="ticket-row">
+            <div class="row-num">04</div>
+            <div>
+              <h4>Parts for Sale</h4>
+              <p>The shop sells parts. Call 505-934-1721 to ask about the part you need.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ticket-foot">
+          <strong>Talk to Gilbert first.</strong>
+          <a href="tel:+15059341721">505-934-1721</a>
+        </div>
+      </div>
+
+      <div class="photo-strip" aria-label="Shop photos">
+        <figure>
+          <img src="img/photo-1.jpg" alt="Man repairing a lawn mower in a garage workshop" loading="lazy">
+          <figcaption>Stock photo</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-2.jpg" alt="Person fixing a lawn mower in a workshop with a cordless drill" loading="lazy">
+          <figcaption>Stock photo</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-3.jpg" alt="Man in a garden repairing a lawn mower" loading="lazy">
+          <figcaption>Stock photo</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-4.jpg" alt="A rugged ATV parked in a green forest" loading="lazy">
+          <figcaption>Stock photo</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="block" id="reviews" aria-label="Reviews">
+    <div class="wrap">
+      <div class="section-tag">Word of mouth</div>
+      <h2 class="section-title">Rated by the neighbors</h2>
+      <div class="review-card">
+        <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-score">5.0</div>
+        <p>5.0 from 18 Facebook reviews.</p>
+        <a href="https://www.facebook.com/getitfixedllc">Read the reviews on Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS + CONTACT -->
+  <section class="block" id="visit" aria-label="Hours and contact">
+    <div class="wrap">
+      <div class="section-tag">Stop by or call</div>
+      <h2 class="section-title">Hours and contact</h2>
+      <p class="section-lede">The shop keeps regular weekday hours and a short Saturday. Sundays it is closed.</p>
+      <div class="visit-grid">
+        <div class="panel">
+          <h3>Shop hours</h3>
+          <table class="hours-table">
+            <tr><th>Monday to Friday</th><td>10:00 AM - 6:00 PM</td></tr>
+            <tr><th>Saturday</th><td>10:00 AM - 2:00 PM</td></tr>
+            <tr class="closed"><th>Sunday</th><td>Closed</td></tr>
+          </table>
+        </div>
+        <div class="panel">
+          <h3>Get in touch</h3>
+          <ul class="contact-lines">
+            <li><span class="label">Call</span><a href="tel:+15059341721">Gilbert at 505-934-1721</a></li>
+            <li><span class="label">Address</span>1124 4th St SW, Albuquerque, NM</li>
+            <li><span class="label">Facebook</span><a href="https://www.facebook.com/getitfixedllc">facebook.com/getitfixedllc</a></li>
+          </ul>
+          <a class="big-call" href="tel:+15059341721">Call Gilbert<small>505-934-1721</small></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">GET IT FIXED <span style="color:#e05e0b">|</span> Website Concept</div>
+    <p class="footer-note">This page is a <strong>design preview</strong> built by <a href="https://freightfolio.net">Freightfolio</a> to show what a website for Get It Fixed, LLC could look like. It is not the business's official website. Business details shown here come from the shop's public Facebook page. Photos on this page are stock photos, not photos of the actual shop.</p>
+    <p class="footer-note">Get It Fixed, LLC, 1124 4th St SW, Albuquerque, NM. Phone <a href="tel:+15059341721">505-934-1721</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>

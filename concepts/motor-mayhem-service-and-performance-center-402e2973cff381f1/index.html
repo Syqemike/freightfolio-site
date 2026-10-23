@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Motor Mayhem Service and Performance Center | Meridian, ID</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --asphalt:#1c1f24;
+    --asphalt2:#262a31;
+    --copper:#c97a35;
+    --copper-dk:#a55e22;
+    --concrete:#e9e6de;
+    --concrete-dk:#d4d0c4;
+    --ink:#23262c;
+    --steel:#8b9096;
+    --paper:#f4f2ec;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Barlow',sans-serif;background:var(--asphalt);color:var(--paper);line-height:1.65}
+  .disclosure{background:#101216;color:#a8a499;text-align:center;font-size:12px;letter-spacing:.16em;
+    text-transform:uppercase;padding:10px 16px;border-bottom:2px solid var(--copper)}
+  .disclosure a{color:var(--copper)}
+  header.site{background:rgba(20,22,27,.96);backdrop-filter:blur(8px);position:sticky;top:0;z-index:60;
+    border-bottom:1px solid #33383f}
+  .nav{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
+    padding:13px 24px;gap:16px}
+  .brand{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:24px;color:#fff;
+    text-decoration:none;letter-spacing:.03em;text-transform:uppercase;line-height:1}
+  .brand em{font-style:normal;color:var(--copper)}
+  .brand small{display:block;font-family:'Barlow',sans-serif;font-weight:600;font-size:10px;
+    letter-spacing:.3em;color:var(--steel);text-transform:uppercase;margin-top:3px}
+  .navlinks{display:flex;gap:26px;list-style:none}
+  .navlinks a{color:#c9c4b6;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;font-family:'Barlow Condensed',sans-serif;font-size:15px}
+  .navlinks a:hover{color:var(--copper)}
+  .btn{display:inline-block;background:var(--copper);color:#141312;font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;text-decoration:none;padding:14px 34px;letter-spacing:.12em;text-transform:uppercase;
+    font-size:17px;transition:background .15s ease}
+  .btn:hover{background:#e08d42}
+  .btn.outline{background:transparent;color:#fff;border:2px solid #fff}
+  .btn.outline:hover{border-color:var(--copper);color:var(--copper)}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+  /* HERO */
+  .hero{position:relative;min-height:640px;display:flex;align-items:center;color:#fff;overflow:hidden}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover}
+  .hero-bg::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(100deg,rgba(16,18,22,.92) 30%,rgba(16,18,22,.45) 60%,rgba(16,18,22,.15) 100%)}
+  .hero-inner{position:relative;z-index:1;width:100%;padding:80px 0 90px}
+  .kicker{display:inline-block;background:var(--copper);color:#141312;font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;font-size:15px;letter-spacing:.22em;text-transform:uppercase;padding:9px 22px;margin-bottom:20px}
+  h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(52px,7.5vw,104px);
+    line-height:.92;text-transform:uppercase;margin-bottom:6px;text-shadow:3px 3px 0 rgba(0,0,0,.55)}
+  h1 .cop{color:var(--copper)}
+  .hero-sub{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:clamp(20px,2.6vw,30px);
+    letter-spacing:.06em;text-transform:uppercase;color:#e6e1d4;margin-bottom:14px}
+  .lede{font-size:18px;color:#d6d0c1;max-width:32em;margin-bottom:10px}
+  .rating{display:inline-flex;align-items:center;gap:10px;background:rgba(16,18,22,.72);
+    border-left:5px solid var(--copper);padding:12px 20px;margin:16px 0 26px;font-size:16px;font-weight:600}
+  .rating .stars{color:var(--copper);letter-spacing:2px;font-size:18px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero .cap{position:absolute;bottom:10px;left:24px;z-index:2;font-size:12px;color:#9a968a}
+
+  /* DIAGONAL CUT DIVIDER */
+  .cut{height:44px;background:var(--concrete);clip-path:polygon(0 100%,100% 100%,100% 0,0 100%)}
+
+  /* DYNO PANEL (signature, concrete section) */
+  .dyno{background:var(--concrete);color:var(--ink);padding:70px 0 80px}
+  .dyno-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+  .plate{display:inline-block;background:var(--asphalt);color:var(--concrete);
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:.24em;
+    text-transform:uppercase;padding:8px 20px;margin-bottom:18px}
+  .dyno h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(38px,4.8vw,62px);
+    text-transform:uppercase;line-height:.95;margin-bottom:14px}
+  .dyno h2 .cop{color:var(--copper-dk)}
+  .dyno p{font-size:17px;color:#3a3e45;margin-bottom:12px}
+  .dyno-facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0}
+  .fact{background:var(--asphalt);color:var(--paper);padding:18px 20px}
+  .fact strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;
+    letter-spacing:.06em;text-transform:uppercase;color:var(--copper);margin-bottom:4px}
+  .fact span{font-size:15px;color:#c9c4b6}
+  .dyno figure img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;
+    border:6px solid var(--asphalt);box-shadow:10px 10px 0 var(--copper)}
+  .cap{font-size:12px;color:#7d7a72;padding:10px 2px 0}
+  .dyno .cap{color:#6f6a5e}
+
+  /* SERVICES */
+  .services{background:var(--asphalt);padding:80px 0}
+  .sec-tag{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--copper);margin-bottom:10px}
+  .services h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(38px,4.8vw,60px);
+    text-transform:uppercase;margin-bottom:8px;text-shadow:2px 2px 0 rgba(0,0,0,.5)}
+  .services .sec-intro{font-size:17px;color:#b9b2a2;max-width:44em;margin-bottom:36px}
+  .svc-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:18px}
+  .svc{background:var(--asphalt2);border:1px solid #33383f;border-top:6px solid var(--copper);padding:30px 26px}
+  .svc h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;text-transform:uppercase;
+    letter-spacing:.04em;margin-bottom:10px}
+  .svc p{font-size:15px;color:#b9b2a2}
+  .svc img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;margin-bottom:18px}
+
+  /* SHOP STORY */
+  .story{background:var(--asphalt2);border-top:1px solid #33383f;border-bottom:1px solid #33383f;padding:80px 0}
+  .story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center}
+  .story figure img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;border:6px solid #14161a}
+  .story h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(38px,4.6vw,58px);
+    text-transform:uppercase;margin-bottom:14px}
+  .story h2 .cop{color:var(--copper)}
+  .story p{font-size:17px;color:#c9c4b6;margin-bottom:14px}
+  .pull{border-left:6px solid var(--copper);padding:6px 0 6px 22px;margin:22px 0}
+  .pull p{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:21px;line-height:1.35;
+    color:#fff;margin-bottom:6px}
+  .pull cite{font-style:normal;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel)}
+
+  /* GALLERY */
+  .gallery-sec{padding:80px 0;background:var(--asphalt)}
+  .gallery-sec h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(38px,4.6vw,58px);
+    text-transform:uppercase;margin-bottom:8px}
+  .gallery-sec p{font-size:17px;color:#b9b2a2;margin-bottom:32px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gallery figure{background:var(--asphalt2);border:1px solid #33383f}
+  .gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+
+  /* VISIT */
+  .visit{background:var(--concrete);color:var(--ink);padding:80px 0}
+  .visit h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(38px,4.8vw,60px);
+    text-transform:uppercase;margin-bottom:6px}
+  .visit .sub{font-size:17px;color:#3a3e45;margin-bottom:34px}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+  .vcard{background:var(--paper);border-top:6px solid var(--asphalt);padding:30px 26px}
+  .vcard h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;
+    letter-spacing:.06em;margin-bottom:14px;color:var(--copper-dk)}
+  .hours-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--concrete-dk);
+    font-size:16px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:var(--ink);font-weight:600}
+  .vcard p{font-size:16px;margin-bottom:8px}
+
+  /* CTA BAND */
+  .cta-band{background:var(--asphalt);padding:80px 0;position:relative;overflow:hidden}
+  .cta-band::before{content:"";position:absolute;top:0;left:0;right:0;height:10px;background:var(--copper)}
+  .cta-band h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(40px,5.4vw,68px);
+    text-transform:uppercase;margin-bottom:12px;text-shadow:2px 2px 0 rgba(0,0,0,.5)}
+  .cta-band h2 .cop{color:var(--copper)}
+  .cta-band p{font-size:18px;color:#c9c4b6;margin-bottom:28px;max-width:38em}
+
+  footer{background:#101216;color:#8f8a7d;padding:38px 0;font-size:14px;border-top:1px solid #26292f}
+  footer a{color:var(--copper)}
+
+  @media(max-width:960px){
+    .dyno-grid,.story-grid{grid-template-columns:1fr}
+    .svc-grid{grid-template-columns:1fr}
+    .visit-grid{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+    .hero{min-height:560px}
+  }
+  @media(max-width:600px){
+    .gallery{grid-template-columns:1fr}
+    .dyno-facts{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Website Concept: a design preview by <a href="https://freightfolio.net">Freightfolio</a>. This is not the shop's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Motor <em>Mayhem</em><small>Service and Performance Center</small></a>
+    <ul class="navlinks">
+      <li><a href="#dyno">Dyno</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#hours">Hours</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn" href="tel:+12088872058">Call to Book</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="hero-bg"><img src="img/photo-1.jpg" alt="Stock photo: black sports car in front of industrial machinery at a garage"></div>
+    <div class="hero-inner">
+      <div class="wrap">
+        <span class="kicker">Meridian, ID · Diesel and Performance Shop</span>
+        <h1>Motor <span class="cop">Mayhem</span></h1>
+        <p class="hero-sub">Service and Performance Center</p>
+        <p class="lede">Performance and diesel auto repair in Meridian, ID. Full-service repair, customization, and an in-house parts store, with a Dynojet dynamometer on site.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 4.9 from 40 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+12088872058">Call to Book</a>
+          <a class="btn outline" href="#dyno">The Dyno</a>
+        </div>
+      </div>
+    </div>
+    <span class="cap">Stock photo</span>
+  </div>
+
+  <div class="cut" aria-hidden="true"></div>
+
+  <section id="dyno" class="dyno">
+    <div class="wrap dyno-grid">
+      <div>
+        <span class="plate">In-House Dyno Lab</span>
+        <h2>Measure it on the <span class="cop">Dynojet 248.</span></h2>
+        <p>The shop runs a Dynojet 248 dynamometer that handles cars and motorcycles. It also hosts dyno days for the Idaho Turbo Diesels club.</p>
+        <p>Call the shop to ask about dyno testing for your vehicle.</p>
+        <div class="dyno-facts">
+          <div class="fact"><strong>Dynojet 248</strong><span>In-house dynamometer</span></div>
+          <div class="fact"><strong>Cars and Motorcycles</strong><span>Both run on the dyno</span></div>
+          <div class="fact"><strong>Dyno Days</strong><span>Hosts the Idaho Turbo Diesels club</span></div>
+          <div class="fact"><strong>Diesel Specialty</strong><span>Performance-friendly diesel shop</span></div>
+        </div>
+        <a class="btn" href="tel:+12088872058">Call to Book</a>
+      </div>
+      <figure>
+        <img src="img/photo-3.jpg" alt="Stock photo: modified performance engine with turbocharger">
+        <figcaption class="cap">Stock photo</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="wrap">
+      <p class="sec-tag">What the shop does</p>
+      <h2>Repair, performance, parts.</h2>
+      <p class="sec-intro">Motor Mayhem is a full-service performance shop in Meridian, Idaho. These are the services the shop is known for. Call for current details.</p>
+      <div class="svc-grid">
+        <div class="svc">
+          <img src="img/photo-6.jpg" alt="Stock photo: SUV elevated on a lift inside an auto repair shop">
+          <h3>Full-Service Auto Repair</h3>
+          <p>Routine repair and maintenance work for daily drivers and work trucks, handled in the shop.</p>
+        </div>
+        <div class="svc">
+          <img src="img/photo-2.jpg" alt="Stock photo: car engine with supercharger">
+          <h3>Diesel and Performance Work</h3>
+          <p>Performance-friendly diesel and customization work. Call to talk through your project.</p>
+        </div>
+        <div class="svc">
+          <img src="img/photo-5.jpg" alt="Stock photo: custom car engine with turbocharger">
+          <h3>Parts Store</h3>
+          <p>An in-house parts store. Call the shop to ask about parts for your vehicle.</p>
+        </div>
+      </div>
+      <p class="cap" style="margin-top:10px">Photos above are stock photos, not photos of the shop.</p>
+    </div>
+  </section>
+
+  <section id="shop" class="story">
+    <div class="wrap story-grid">
+      <figure>
+        <img src="img/photo-4.jpg" alt="Stock photo: vintage car in a workshop">
+        <figcaption class="cap">Stock photo</figcaption>
+      </figure>
+      <div>
+        <p class="sec-tag">The Shop</p>
+        <h2>Built for <span class="cop">diesel people.</span></h2>
+        <p>Owners Glenn Lappin and Luke Neiwert took over the business formerly known as Meridian Motor Sports and built it into Motor Mayhem Service and Performance Center.</p>
+        <div class="pull">
+          <p>A full-service performance shop in Meridian, Idaho. A full service performance-friendly diesel shop.</p>
+          <cite>As covered in Turbo Diesel Register</cite>
+        </div>
+        <p>Find the shop on Facebook at Motor Mayhem Service and Performance Center, or call to talk about your vehicle.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-sec">
+    <div class="wrap">
+      <h2>The work.</h2>
+      <p>All photos on this concept page are stock photos, shown to suggest the look and feel of the shop's work.</p>
+      <div class="gallery">
+        <figure>
+          <img src="img/photo-1.jpg" alt="Stock photo: black sports car at an industrial garage">
+          <figcaption class="cap">Stock photo</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-6.jpg" alt="Stock photo: SUV on a lift in a repair shop">
+          <figcaption class="cap">Stock photo</figcaption>
+        </figure>
+        <figure>
+          <img src="img/photo-2.jpg" alt="Stock photo: engine with supercharger">
+          <figcaption class="cap">Stock photo</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours" class="visit">
+    <div class="wrap">
+      <h2>Visit the shop.</h2>
+      <p class="sub">Call to book service. Hours as listed publicly; call to confirm before you drive over.</p>
+      <div class="visit-grid">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Monday - Friday</span><strong>9:00 AM - 5:00 PM</strong></div>
+          <div class="hours-row"><span>Saturday</span><strong>9:00 AM - 1:00 PM</strong></div>
+          <div class="hours-row"><span>Sunday</span><strong>Closed</strong></div>
+        </div>
+        <div id="contact" class="vcard">
+          <h3>Find Us</h3>
+          <p><strong>Motor Mayhem Service and Performance Center</strong><br>521 E King St<br>Meridian, ID 83642</p>
+          <p>Phone: <a href="tel:+12088872058">(208) 887-2058</a></p>
+          <p><a href="https://www.facebook.com/Motor-Mayhem-Service-and-Performance-Center-127598560603984">Facebook page</a></p>
+        </div>
+        <div class="vcard">
+          <h3>Call to Book</h3>
+          <p>There is no online booking. Call the shop to schedule service or ask about the dyno.</p>
+          <p style="margin-top:16px"><a class="btn" href="tel:+12088872058">Call (208) 887-2058</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Your rig deserves <span class="cop">real&nbsp;numbers.</span></h2>
+      <p>Call Motor Mayhem in Meridian to schedule service, ask about the parts store, or find out when the next dyno day runs.</p>
+      <a class="btn" href="tel:+12088872058">Call (208) 887-2058</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Motor Mayhem Service and Performance Center. It is not affiliated with or endorsed by the shop. All photos on this page are stock photos, not photos of the shop.</p>
+  </div>
+</footer>
+</body>
+</html>

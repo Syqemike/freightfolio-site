@@ -1,0 +1,21 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 32208767: Man repairing lawn mower in garage workshop. Stock Photo
+  file: https://images.pexels.com/photos/32208767/pexels-photo-32208767/free-photo-of-man-repairing-lawn-mower-in-garage-workshop.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 32208764: Person fixing a lawn mower in a workshop with cordless drill. Stock Photo
+  file: https://images.pexels.com/photos/32208764/pexels-photo-32208764/free-photo-of-man-repairing-lawn-mower-in-workshop.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 5163431: Man in a garden repairing lawn mower. Stock Photo
+  file: https://images.pexels.com/photos/5163431/pexels-photo-5163431.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 12915513: Rugged ATV in lush green forest. Stock Photo
+  file: https://images.pexels.com/photos/12915513/pexels-photo-12915513.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 5976712: Person on an ATV in rugged desert with mountains. Stock Photo
+  file: https://images.pexels.com/photos/5976712/pexels-photo-5976712.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-6.jpg = Pexels photo 5163423: Hands in gloves adjusting a lawn mower. Stock Photo
+  file: https://images.pexels.com/photos/5163423/pexels-photo-5163423.jpeg?auto=compress&cs=tinysrgb&w=1260

@@ -1,0 +1,21 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 9846173: Sleek black sports car parked in front of industrial machinery and a garage. Stock Photo
+  file: https://images.pexels.com/photos/9846173/pexels-photo-9846173.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 36756643: Vintage car engine with supercharger, front view. Stock Photo
+  file: https://images.pexels.com/photos/36756643/pexels-photo-36756643/free-photo-of-vintage-car-engine-with-supercharger-front-view.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 12330652: Modified Ford Mustang engine with turbocharger. Stock Photo
+  file: https://images.pexels.com/photos/12330652/pexels-photo-12330652.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 28611513: Bright orange vintage car in workshop. Stock Photo
+  file: https://images.pexels.com/photos/28611513/pexels-photo-28611513/free-photo-of-bright-orange-vintage-car-in-workshop.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 24018799: Custom car engine with turbocharger. Stock Photo
+  file: https://images.pexels.com/photos/24018799/pexels-photo-24018799/free-photo-of-engine-of-car.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-6.jpg = Pexels photo 8986138: White SUV elevated on a lift inside an auto repair shop. Stock Photo
+  file: https://images.pexels.com/photos/8986138/pexels-photo-8986138.jpeg?auto=compress&cs=tinysrgb&w=1260

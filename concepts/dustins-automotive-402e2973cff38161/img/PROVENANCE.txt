@@ -1,0 +1,21 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 3807517: Mechanic checking a car engine in a garage. Stock Photo
+  file: https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 3807329: Man working under car hood in a garage. Stock Photo
+  file: https://images.pexels.com/photos/3807329/pexels-photo-3807329.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 4116170: White Chevrolet car lifted for maintenance in auto repair shop. Stock Photo
+  file: https://images.pexels.com/photos/4116170/pexels-photo-4116170.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 36044141: Mechanic repairing car brake at garage. Stock Photo
+  file: https://images.pexels.com/photos/36044141/pexels-photo-36044141/free-photo-of-mechanic-repairing-car-brake-at-garage.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 8985457: Smiling mechanic in blue overall inspecting a car engine. Stock Photo
+  file: https://images.pexels.com/photos/8985457/pexels-photo-8985457.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-6.jpg = Pexels photo 4116221: Close-up of mechanic repairing a car engine. Stock Photo
+  file: https://images.pexels.com/photos/4116221/pexels-photo-4116221.jpeg?auto=compress&cs=tinysrgb&w=1260
