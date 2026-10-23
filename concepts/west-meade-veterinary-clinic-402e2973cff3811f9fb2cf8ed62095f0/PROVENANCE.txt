@@ -1,0 +1,39 @@
+West Meade Veterinary Clinic concept site — photo provenance
+Slug: west-meade-veterinary-clinic-402e2973cff3811f9fb2cf8ed62095f0
+Built: 2026-10-23 (batch 29, website-dev shift)
+
+REAL BUSINESS PHOTOS: 0
+Searches performed 2026-10-23: web search ("West Meade Veterinary Clinic Nashville photos"),
+directory listings (Birdeye, TopVet, cylex, citysquares, ratfanclub, petmedicus), Muse Places
+vertical lookup (place_id 422739749828195). The clinic has no social media presence, no
+business-owned website, and no public photo gallery on any listing. No real photos of the
+business, staff, premises, or customers could be found publicly. All imagery below is
+honestly licensed stock, captioned "Stock photo" wherever shown.
+
+STOCK PHOTOS (all from Pexels, Pexels license — free to use):
+1. img/hero-vet-exam.jpg
+   source: https://images.pexels.com/photos/7470633/pexels-photo-7470633.jpeg
+   page: https://www.pexels.com/ko-kr/photo/7468980/ (Mikhail Nilov veterinary series)
+   shows: a veterinary professional in scrubs and a mask gently examining a tan dog's head and ears on an exam table; a stethoscope rests on the table
+2. img/vet-checkup.jpg
+   source: https://images.pexels.com/photos/7469233/pexels-photo-7469233.jpeg
+   page: https://www.pexels.com/zh-tw/photo/7469216/ (Mikhail Nilov veterinary series)
+   shows: a veterinary professional examining a dog during a checkup
+3. img/vet-stethoscope.jpg
+   source: https://images.pexels.com/photos/7468981/pexels-photo-7468981.jpeg
+   page: https://www.pexels.com/search/check/ (Mikhail Nilov veterinary series)
+   shows: a veterinary professional with a stethoscope examining a dog
+4. img/bird-hand.jpg
+   source: https://images.pexels.com/photos/10216959/pexels-photo-10216959.jpeg
+   page: https://www.pexels.com/photo/green-bird-on-a-person-s-hand-10216959/
+   shows: a green parrot perched on a person's fingers while being offered a piece of fruit
+5. img/tabby-cat.jpg
+   source: https://images.pexels.com/photos/6012023/pexels-photo-6012023.jpeg
+   page: https://www.pexels.com/ru-ru/photo/29207770/
+   shows: close-up portrait of a tabby cat's face looking at the camera
+6. img/dog-bath.jpg
+   source: https://images.pexels.com/photos/6131151/pexels-photo-6131151.jpeg
+   page: https://www.pexels.com/search/dog%20fur/
+   shows: a small dark-coated dog covered in soap suds being bathed by hand (black and white photograph)
+
+All files compressed at download (Pexels auto=compress, width-capped); each under 5 MB.

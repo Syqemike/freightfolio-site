@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revolution Resale | Upscale Consignment in Fairhope, AL</title>
+<meta name="description" content="Revolution Resale is an upscale consignment boutique in Fairhope, Alabama. Gently used name-brand clothing, shoes and accessories for men, women and juniors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --paper:#FAF5EC; --paper2:#F2EAD9; --ink:#171310; --clay:#C2542E;
+  --stone:#87796A; --line:#E3D7BF;
+}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);
+  font-family:'Inter',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+  line-height:1.65;-webkit-font-smoothing:antialiased}
+.serif{font-family:'Fraunces',Didot,'Bodoni MT',Georgia,'Times New Roman',serif}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+
+/* topbar + masthead */
+.topbar{border-bottom:1px solid var(--line);font-size:11px;letter-spacing:2.4px;
+  text-transform:uppercase;color:var(--stone)}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  padding-top:10px;padding-bottom:10px}
+.topbar .disc{color:var(--clay);font-weight:600}
+.masthead .wrap{padding-top:28px;padding-bottom:22px}
+.wordmark{font-size:clamp(54px,11vw,148px);line-height:.88;font-weight:600;
+  letter-spacing:-.015em}
+.wordmark .rev{display:block}
+.wordmark .res{font-style:italic;font-weight:400;color:var(--clay)}
+nav.sitenav{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+nav.sitenav .wrap{display:flex;align-items:center;gap:30px;padding-top:13px;
+  padding-bottom:13px;flex-wrap:wrap}
+nav.sitenav a.nl{font-size:12.5px;letter-spacing:2.4px;text-transform:uppercase;
+  color:var(--stone);font-weight:600;text-decoration:none}
+nav.sitenav a.nl:hover,nav.sitenav a.nl.on{color:var(--ink)}
+nav.sitenav a.call{margin-left:auto;font-size:12.5px;letter-spacing:1.6px;
+  text-transform:uppercase;font-weight:700;color:var(--clay);text-decoration:none}
+
+/* hero */
+.hero{position:relative}
+.hero img{width:100%;height:min(88vh,860px);object-fit:cover}
+.hero-title{position:absolute;left:6%;bottom:-1px;max-width:640px;background:var(--paper);
+  padding:40px 48px 44px;border:1px solid var(--line);border-bottom:none}
+.kicker{font-size:12px;letter-spacing:3.2px;text-transform:uppercase;
+  color:var(--clay);font-weight:700;margin-bottom:16px}
+.hero-title h1{font-size:clamp(40px,5.4vw,76px);line-height:1.02;font-weight:600;
+  letter-spacing:-.01em;margin-bottom:18px}
+.hero-title h1 em{font-style:italic;font-weight:400}
+.hero-title p.lede{font-size:17px;color:#4c4438;max-width:44ch;margin-bottom:26px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);padding:15px 30px;
+  font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;
+  text-decoration:none;border:1px solid var(--ink)}
+.btn:hover{background:var(--clay);border-color:var(--clay)}
+.tlink{font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;
+  color:var(--ink);text-decoration:underline;text-underline-offset:6px;
+  text-decoration-color:var(--clay);text-decoration-thickness:2px}
+.tlink:hover{color:var(--clay)}
+.hero-cap{position:absolute;right:26px;bottom:26px;writing-mode:vertical-rl;
+  font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#fff;
+  background:rgba(23,19,16,.72);padding:14px 8px}
+
+/* folio strip */
+.folio{border-bottom:1px solid var(--line);margin-top:0}
+.folio .wrap{display:flex;gap:0;padding-top:0;padding-bottom:0}
+.folio a{flex:1;padding:20px 8px;font-size:12px;letter-spacing:2.6px;
+  text-transform:uppercase;color:var(--stone);text-decoration:none;font-weight:600;
+  border-left:1px solid var(--line);text-align:center}
+.folio a:first-child{border-left:none}
+.folio a b{color:var(--clay);margin-right:8px}
+.folio a:hover{color:var(--ink)}
+
+/* sections */
+section.block{padding:96px 0}
+.kicker2{font-size:12px;letter-spacing:3.2px;text-transform:uppercase;
+  color:var(--clay);font-weight:700;margin-bottom:18px}
+h2.stitle{font-size:clamp(34px,4.4vw,62px);line-height:1.05;font-weight:600;
+  letter-spacing:-.01em;margin-bottom:22px;max-width:16ch}
+h2.stitle em{font-style:italic;font-weight:400;color:var(--clay)}
+p.body{font-size:17px;color:#4c4438;max-width:62ch;margin-bottom:16px}
+p.body strong{color:var(--ink)}
+
+/* mission spread */
+.mission{background:var(--paper)}
+.mission .grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.pull{font-size:clamp(26px,3vw,40px);line-height:1.25;font-weight:500;
+  border-left:3px solid var(--clay);padding-left:28px;margin:8px 0 28px}
+.pull .q{color:var(--clay)}
+.nappie{display:inline-block;margin-top:22px;border:1px solid var(--line);
+  background:var(--paper2);padding:18px 24px;font-size:14.5px;color:#4c4438}
+.nappie b{display:block;font-size:12px;letter-spacing:2.4px;text-transform:uppercase;
+  color:var(--clay);margin-bottom:6px}
+
+/* staggered trio */
+.look{background:var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:56px;align-items:start}
+.trio figure:nth-child(2){margin-top:72px}
+.trio img{width:100%;object-fit:cover;aspect-ratio:3/4}
+.trio .t1 img{aspect-ratio:3/4}.trio .t3 img{aspect-ratio:3/4}
+figcaption.cap{font-size:12.5px;letter-spacing:.8px;color:var(--stone);margin-top:10px;
+  border-top:1px solid var(--line);padding-top:10px}
+
+/* spotted index */
+.spot .rows{margin-top:48px;border-top:1px solid var(--ink)}
+.spot .row{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:baseline;
+  padding:22px 4px;border-bottom:1px solid var(--line)}
+.spot .row .nm{font-size:clamp(22px,2.6vw,34px);font-weight:600;letter-spacing:-.01em}
+.spot .row .nm em{font-style:italic;font-weight:400;color:var(--stone);font-size:.62em;
+  letter-spacing:0}
+.spot .row .tag{font-size:12px;letter-spacing:2.2px;text-transform:uppercase;
+  color:var(--clay);font-weight:700;white-space:nowrap}
+.spot .note{margin-top:26px;font-size:15px;color:var(--stone);max-width:60ch}
+
+/* visit band */
+.visit{background:var(--ink);color:var(--paper)}
+.visit .kicker2{color:var(--clay)}
+.visit h2.stitle{color:var(--paper)}
+.visit .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;margin-top:8px}
+.hours{width:100%;border-collapse:collapse;margin:6px 0 30px}
+.hours td{padding:13px 4px;border-bottom:1px solid rgba(250,245,236,.18);font-size:16px}
+.hours td:last-child{text-align:right;letter-spacing:1px}
+.hours tr.sun td{color:var(--clay);font-weight:600}
+.addr{font-size:17px;line-height:1.8;margin-bottom:26px}
+.addr b{color:var(--clay)}
+.rating{display:inline-block;border:1px solid rgba(250,245,236,.3);padding:14px 22px;
+  font-size:14px;letter-spacing:1px;margin-bottom:30px}
+.rating b{font-size:22px}
+.visit .btn{background:var(--clay);border-color:var(--clay);color:#fff}
+.visit .btn:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.visit .tlink{color:var(--paper);text-decoration-color:var(--clay)}
+.visit .tlink:hover{color:var(--clay)}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:56px 0 40px}
+footer .grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+footer .fname{font-size:30px;font-weight:600;letter-spacing:-.01em;margin-bottom:10px}
+footer .fname em{font-style:italic;color:var(--clay);font-weight:400}
+footer p,footer li{font-size:14.5px;color:var(--stone);list-style:none;margin-bottom:8px}
+footer a{color:var(--ink);text-decoration:underline;text-underline-offset:4px;
+  text-decoration-color:var(--clay)}
+footer .fine{border-top:1px solid var(--line);padding-top:22px;font-size:12.5px;
+  color:var(--stone);letter-spacing:.4px;display:flex;justify-content:space-between;
+  flex-wrap:wrap;gap:10px}
+
+@media (max-width:900px){
+  .mission .grid,.visit .grid{grid-template-columns:1fr;gap:40px}
+  .trio{grid-template-columns:1fr;gap:44px}
+  .trio figure:nth-child(2){margin-top:0}
+  footer .grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .wrap{padding:0 20px}
+  .hero img{height:62vh}
+  .hero-title{position:static;max-width:none;padding:28px 24px;border:none;
+    border-top:1px solid var(--line)}
+  .hero-cap{display:none}
+  section.block{padding:64px 0}
+  .wordmark{font-size:12.8vw}
+  .folio a{font-size:10.5px;letter-spacing:1.6px;padding:16px 4px}
+  .spot .row{grid-template-columns:1fr}
+  .spot .row .tag{white-space:normal}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="disc">Website Concept &middot; A design preview for Revolution Resale</span>
+    <span>Fairhope, Alabama</span>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="wordmark serif" aria-label="Revolution Resale">
+      <span class="rev">REVOLUTION</span>
+      <span class="res">Resale</span>
+    </div>
+  </div>
+  <nav class="sitenav" aria-label="Site">
+    <div class="wrap">
+      <a class="nl on" href="index.html">Home</a>
+      <a class="nl" href="shop.html">The Floor</a>
+      <a class="nl" href="about.html">The Mission</a>
+      <a class="nl" href="visit.html">Visit</a>
+      <a class="call" href="tel:+12519904859">Call (251) 990-4859</a>
+    </div>
+  </nav>
+</header>
+
+<figure class="hero">
+  <img src="img/rev02.jpg" alt="Inside Revolution Resale: evening gowns on mannequins, clothing racks, and a leather handbag on the sales floor">
+  <figcaption class="hero-cap">Inside the boutique: gowns on the floor</figcaption>
+  <div class="hero-title">
+    <p class="kicker">Upscale consignment &middot; Fairhope, Alabama</p>
+    <h1 class="serif">Name brands.<br><em>Not the price tags.</em></h1>
+    <p class="lede">Revolution Resale is for the shopper who loves the name brands but doesn&rsquo;t love the retail prices. Gently used clothing, shoes and accessories for men, women and juniors, at &ldquo;I can afford that!&rdquo; prices.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+12519904859">Call the boutique</a>
+      <a class="tlink" href="shop.html">See the floor</a>
+    </div>
+  </div>
+</figure>
+
+<div class="folio">
+  <div class="wrap">
+    <a href="about.html"><b>01</b>The mission</a>
+    <a href="shop.html"><b>02</b>The floor</a>
+    <a href="visit.html"><b>03</b>Visit us</a>
+  </div>
+</div>
+
+<section class="block mission">
+  <div class="wrap">
+    <p class="kicker2">01 &middot; The mission</p>
+    <div class="grid">
+      <div>
+        <h2 class="stitle serif">Good clothes deserve <em>a second act.</em></h2>
+        <p class="body">Revolution started with a simple mission: provide quality, name-brand, gently used clothing at amazing prices, all while <strong>saving the planet</strong>. Shopping sustainable fashion is just the right thing to do. By keeping great looks in circulation, the shop reduces demand and eases stress on the environment.</p>
+        <p class="body">The racks hold on-trend clothing, shoes and accessories for <strong>men, women and juniors</strong>. The Downtown Fairhope visitors guide puts name-brand style here at 60 to 80 percent off retail.</p>
+        <div class="nappie">
+          <b>Recognized</b>
+          2019 Nappie award finalist, Best Clothing Consignment Store (Baldwin).
+        </div>
+      </div>
+      <div>
+        <p class="pull serif"><span class="q">&ldquo;</span>Shop Revolution and turn your closet around today.<span class="q">&rdquo;</span></p>
+        <p class="body">New pieces land on the floor all the time, and the mix runs from everyday staples to formal gowns. Questions about a piece? Call <a href="tel:+12519904859">(251) 990-4859</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block look">
+  <div class="wrap">
+    <p class="kicker2">02 &middot; The floor</p>
+    <h2 class="stitle serif">A look <em>inside.</em></h2>
+    <p class="body">Real photos from the boutique&rsquo;s own feed. The styling changes with the arrivals; the standard doesn&rsquo;t.</p>
+    <div class="trio">
+      <figure class="t1">
+        <img src="img/rev01.jpg" alt="Model photo from the boutique: a green floral mini dress with black heels">
+        <figcaption class="cap">A floral mini dress, modeled for the boutique&rsquo;s Instagram.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/rev06.jpg" alt="Inside the boutique: a red beaded evening gown and green satin gown on mannequins with a leather handbag">
+        <figcaption class="cap">Evening gowns and a leather handbag on the floor.</figcaption>
+      </figure>
+      <figure class="t3">
+        <img src="img/rev03.jpg" alt="Outside the storefront: a shopper seated on a bench by the bright blue door marked 9">
+        <figcaption class="cap">Outside the blue door at 9 N Church St.</figcaption>
+      </figure>
+    </div>
+    <div class="cta-row" style="margin-top:56px">
+      <a class="tlink" href="shop.html">Browse the full lookbook</a>
+    </div>
+  </div>
+</section>
+
+<section class="block spot">
+  <div class="wrap">
+    <p class="kicker2">Spotted on the floor</p>
+    <h2 class="stitle serif">Labels that have <em>passed through.</em></h2>
+    <p class="body">A few of the names seen in-store. The racks turn over as pieces sell.</p>
+    <div class="rows">
+      <div class="row">
+        <div class="nm serif">Jimmy Choo <em>heels</em></div>
+        <div class="tag">Seen in-store</div>
+      </div>
+      <div class="row">
+        <div class="nm serif">Ray-Ban <em>polarized sunglasses</em></div>
+        <div class="tag">Seen in-store</div>
+      </div>
+      <div class="row">
+        <div class="nm serif">Leith <em>tops</em></div>
+        <div class="tag">Seen in-store</div>
+      </div>
+      <div class="row">
+        <div class="nm serif">Lulus <em>skirts</em></div>
+        <div class="tag">Seen in-store</div>
+      </div>
+      <div class="row">
+        <div class="nm serif">Italian sneakers <em>star-patch detail</em></div>
+        <div class="tag">Seen in-store</div>
+      </div>
+    </div>
+    <p class="note">Looking for something specific? Call the boutique at <a href="tel:+12519904859">(251) 990-4859</a> and ask what&rsquo;s on the floor.</p>
+  </div>
+</section>
+
+<section class="block visit">
+  <div class="wrap">
+    <p class="kicker2">03 &middot; Visit</p>
+    <h2 class="stitle serif">Come <em>see it</em> in person.</h2>
+    <div class="grid">
+      <div>
+        <table class="hours" aria-label="Store hours">
+          <tr><td>Monday</td><td>10:00 AM &ndash; 5:00 PM</td></tr>
+          <tr><td>Tuesday</td><td>10:00 AM &ndash; 5:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>10:00 AM &ndash; 5:00 PM</td></tr>
+          <tr><td>Thursday</td><td>10:00 AM &ndash; 5:00 PM</td></tr>
+          <tr><td>Friday</td><td>10:00 AM &ndash; 5:00 PM</td></tr>
+          <tr><td>Saturday</td><td>10:00 AM &ndash; 5:00 PM</td></tr>
+          <tr class="sun"><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <div class="rating"><b>5.0</b> from 25 Google reviews</div>
+      </div>
+      <div>
+        <p class="addr"><b>Revolution Resale</b><br>9 N Church St, Suite D<br>Fairhope, AL 36532<br><a href="tel:+12519904859" style="color:var(--paper)">(251) 990-4859</a></p>
+        <div class="cta-row">
+          <a class="btn" href="tel:+12519904859">Call the boutique</a>
+          <a class="tlink" href="https://www.google.com/maps/search/?api=1&amp;query=Revolution+Resale+9+N+Church+St+Fairhope+AL+36532" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <p class="fname serif">Revolution <em>Resale</em></p>
+        <p>Upscale consignment boutique in downtown Fairhope, Alabama. Gently used name-brand clothing, shoes and accessories for men, women and juniors.</p>
+      </div>
+      <div>
+        <ul>
+          <li>9 N Church St, Suite D</li>
+          <li>Fairhope, AL 36532</li>
+          <li><a href="tel:+12519904859">(251) 990-4859</a></li>
+          <li><a href="https://www.instagram.com/revolutionresalefairhope" target="_blank" rel="noopener">Instagram: @revolutionresalefairhope</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Mon&ndash;Sat: 10:00 AM &ndash; 5:00 PM</li>
+          <li>Sunday: Closed</li>
+          <li><a href="index.html">Home</a> &middot; <a href="shop.html">The Floor</a></li>
+          <li><a href="about.html">The Mission</a> &middot; <a href="visit.html">Visit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>Website Concept &middot; a design preview created by Freightfolio. This is not the business&rsquo;s official site.</span>
+      <span>Photos: the boutique&rsquo;s own Instagram.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

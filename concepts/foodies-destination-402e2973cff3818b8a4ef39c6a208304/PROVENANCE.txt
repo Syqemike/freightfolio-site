@@ -1,0 +1,45 @@
+PHOTO PROVENANCE - Foodies Destination concept site
+Slug: foodies-destination-402e2973cff3818b8a4ef39c6a208304
+Date: 2026-10-23 (website-dev shift, batch 29)
+
+All six photos are REAL business photos of Foodies Destination (the actual
+"Korean Style Kitchen" food truck in Metairie, LA), taken from the business
+gallery page on sagemenu.com (a directory that aggregates this business's
+Google Places / review photos). No stock photos used. Each photo was viewed
+by the builder and captions match what is shown.
+
+1. truck.jpg   - 1024x1024 JPEG, 131 KB
+   Source: https://assets.sagemenu.com/foodies-destination-new-orleans/gallery/gallery01-2.webp
+   Via page: https://sagemenu.com/new-orleans/foodies-destination-new-orleans/
+   Shows: the black Foodies Destination food truck, "Korean Style Kitchen"
+   lettering on the side.
+
+2. spread.jpg  - 1024x1024 JPEG, 263 KB
+   Source: https://assets.sagemenu.com/foodies-destination-new-orleans/gallery/gallery00-2.webp
+   Via page: https://sagemenu.com/new-orleans/foodies-destination-new-orleans/
+   Shows: Korean dishes (grilled ribs, breaded cutlet with sauce, fries) on
+   checkered paper on a metal table.
+
+3. window.jpg  - 1024x1024 JPEG, 122 KB
+   Source: https://assets.sagemenu.com/foodies-destination-new-orleans/gallery/gallery04-2.webp
+   Via page: https://sagemenu.com/new-orleans/foodies-destination-new-orleans/
+   Shows: the truck's pick-up and order windows with staff serving a customer.
+
+4. katsu.jpg   - 1024x1024 JPEG, 201 KB
+   Source: https://assets.sagemenu.com/foodies-destination-new-orleans/gallery/gallery03-2.webp
+   Via page: https://sagemenu.com/new-orleans/foodies-destination-new-orleans/
+   Shows: sliced breaded katsu cutlet over greens with sauce in a takeout box.
+
+5. staff.jpg   - 1024x1024 JPEG, 143 KB
+   Source: https://assets.sagemenu.com/foodies-destination-new-orleans/gallery/gallery02-2.webp
+   Via page: https://sagemenu.com/new-orleans/foodies-destination-new-orleans/
+   Shows: the truck set up for service with two staff members at the window.
+
+6. takeout.jpg - 1024x1024 JPEG, 172 KB
+   Source: https://assets.sagemenu.com/foodies-destination-new-orleans/gallery/gallery05-2.webp
+   Via page: https://sagemenu.com/new-orleans/foodies-destination-new-orleans/
+   Shows: takeout boxes with beef, dumplings, and dipping sauces.
+
+STOCK PHOTO COUNT: 0
+Facebook page verified: https://www.facebook.com/koreanfoodnola/ resolves to
+"Foodies Destination | Metairie LA" (page title checked 2026-10-23).
