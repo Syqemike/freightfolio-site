@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Taqueria las Palmas Food Truck | Tacos in Greenville, SC</title>
+<meta name="description" content="Website concept for Taqueria las Palmas Food Truck in Greenville, SC. Tacos, tortas, and antojitos, open 11 AM to 1 AM daily at 2703 Anderson Rd.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --char:#161009;
+  --char-soft:#211710;
+  --cream:#f8ecda;
+  --cream-deep:#eddcbd;
+  --chile:#c53b1f;
+  --chile-deep:#96290f;
+  --agave:#2f7a3d;
+  --agave-deep:#1f5a2a;
+  --tortilla:#e9a93c;
+  --ink:#2a1c0e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--char);
+  color:var(--cream);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Anton",sans-serif;font-weight:400;letter-spacing:.01em;line-height:1.05}
+
+/* ---------- design preview bar ---------- */
+.preview-bar{
+  background:var(--tortilla);
+  color:#1c1206;
+  text-align:center;
+  font-size:11px;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  font-weight:700;
+  padding:9px 16px;
+}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:60;
+  background:rgba(22,16,9,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:3px solid var(--chile);
+}
+.nav-inner{
+  max-width:1180px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.7rem 1.25rem;gap:1rem;
+}
+.brand{
+  font-family:"Anton",sans-serif;font-size:1.35rem;color:var(--cream);
+  text-decoration:none;line-height:1;
+}
+.brand small{
+  display:block;font-family:"Archivo",sans-serif;font-size:.6rem;
+  letter-spacing:.32em;text-transform:uppercase;color:var(--tortilla);font-weight:700;
+}
+.nav-links{display:flex;gap:1.4rem;align-items:center}
+.nav-links a{
+  text-decoration:none;font-weight:600;font-size:.9rem;color:var(--cream);
+  letter-spacing:.04em;
+}
+.nav-links a:hover{color:var(--tortilla)}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.06em;
+  padding:.85rem 1.7rem;border-radius:999px;font-size:.95rem;
+  transition:transform .15s ease, background .15s ease;
+  text-align:center;
+}
+.btn-chile{background:var(--chile);color:#fff}
+.btn-chile:hover{background:var(--chile-deep);transform:translateY(-2px)}
+.btn-outline{border:2px solid var(--cream);color:var(--cream)}
+.btn-outline:hover{border-color:var(--tortilla);color:var(--tortilla)}
+.btn-nav{padding:.6rem 1.25rem;font-size:.85rem}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;min-height:92vh;
+  display:flex;align-items:flex-end;
+  background:url("img/hero-truck.jpg") center/cover no-repeat;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(12,8,4,.96) 0%,rgba(12,8,4,.55) 42%,rgba(12,8,4,.15) 72%,rgba(12,8,4,.25) 100%);
+}
+.hero-inner{
+  position:relative;z-index:2;max-width:1180px;margin:0 auto;
+  padding:4rem 1.25rem 4.5rem;width:100%;
+}
+.hours-badge{
+  display:inline-block;background:var(--agave);color:#fff;font-weight:700;
+  font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:.5rem 1.1rem;border-radius:999px;margin-bottom:1.2rem;
+}
+.hero h1{
+  font-size:clamp(3.2rem,10vw,7rem);
+  color:#fff;
+  text-shadow:0 4px 30px rgba(0,0,0,.6);
+  margin-bottom:1rem;
+}
+.hero h1 .green{color:#7cc98a}
+.hero p.lede{
+  font-size:clamp(1.05rem,2.4vw,1.35rem);max-width:34rem;color:var(--cream);
+  margin-bottom:2rem;
+}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+
+/* ---------- marquee ---------- */
+.marquee{
+  background:var(--chile);color:#fff;overflow:hidden;white-space:nowrap;
+  border-top:4px solid var(--tortilla);border-bottom:4px solid var(--tortilla);
+  padding:.9rem 0;
+}
+.marquee-track{display:inline-block;animation:scroll 28s linear infinite;font-family:"Anton",sans-serif;font-size:1.4rem;letter-spacing:.08em}
+.marquee-track span{margin:0 1.2rem}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ---------- menu ---------- */
+.section{max-width:1180px;margin:0 auto;padding:4.5rem 1.25rem}
+.kicker{
+  font-size:.8rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--tortilla);margin-bottom:.8rem;
+}
+.section h2{font-size:clamp(2.2rem,6vw,3.6rem);color:#fff;margin-bottom:1rem}
+.section .sub{max-width:42rem;color:#d9c6a3;margin-bottom:2.5rem;font-size:1.05rem}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.menu-card{
+  background:var(--char-soft);
+  border:2px solid #3a2a18;
+  border-top:6px solid var(--chile);
+  border-radius:14px;padding:1.8rem 1.6rem;
+}
+.menu-card.green{border-top-color:var(--agave)}
+.menu-card.gold{border-top-color:var(--tortilla)}
+.menu-card h3{font-size:1.6rem;color:#fff;margin-bottom:1.1rem;letter-spacing:.02em}
+.menu-card ul{list-style:none}
+.menu-card li{
+  padding:.65rem 0;border-bottom:1px dashed #4a3823;
+  font-size:1.02rem;color:var(--cream);display:flex;justify-content:space-between;gap:1rem;align-items:baseline;
+}
+.menu-card li:last-child{border-bottom:none}
+.menu-card li em{font-style:normal;color:#a8936d;font-size:.85rem}
+.fav-note{
+  margin-top:2rem;background:#2c200f;border:2px dashed var(--tortilla);
+  border-radius:12px;padding:1.2rem 1.5rem;color:var(--cream);font-size:1rem;max-width:44rem;
+}
+.fav-note strong{color:var(--tortilla)}
+
+/* ---------- late night band ---------- */
+.night{
+  background:var(--cream);color:var(--ink);
+}
+.night-grid{
+  max-width:1180px;margin:0 auto;padding:4.5rem 1.25rem;
+  display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;
+}
+.night img{border-radius:16px;border:4px solid var(--char);width:100%;height:auto;object-fit:cover}
+.night h2{color:var(--ink);font-size:clamp(2.2rem,6vw,3.4rem);margin-bottom:1rem}
+.night p{margin-bottom:1.2rem;color:#4a3a24;font-size:1.05rem}
+.night .kicker{color:var(--chile)}
+.night-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.6rem}
+.btn-dark{background:var(--char);color:var(--cream)}
+.btn-dark:hover{background:#000;transform:translateY(-2px)}
+
+/* ---------- gallery ---------- */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.g-item{position:relative;overflow:hidden;border-radius:12px;border:2px solid #3a2a18}
+.g-item img{width:100%;height:240px;object-fit:cover;transition:transform .4s ease}
+.g-item:hover img{transform:scale(1.05)}
+.g-cap{
+  position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(to top,rgba(10,6,3,.9),transparent);
+  color:#fff;font-weight:600;font-size:.9rem;padding:2rem .9rem .8rem;
+}
+
+/* ---------- rating ---------- */
+.rating{background:var(--agave-deep);border-top:4px solid var(--agave);border-bottom:4px solid var(--agave)}
+.rating-inner{max-width:1180px;margin:0 auto;padding:2.4rem 1.25rem;text-align:center}
+.rating-inner .score{font-family:"Anton",sans-serif;font-size:2.6rem;color:#fff}
+.rating-inner p{color:#d7e8d8;max-width:36rem;margin:0 auto}
+
+/* ---------- visit ---------- */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.visit-card{
+  background:var(--char-soft);border:2px solid #3a2a18;border-radius:14px;padding:2rem;
+}
+.visit-card h3{color:var(--tortilla);font-size:1.5rem;margin-bottom:1.2rem}
+.hours-table{width:100%;border-collapse:collapse}
+.hours-table td{padding:.55rem 0;border-bottom:1px dashed #4a3823;font-size:1rem}
+.hours-table td:last-child{text-align:right;color:#fff;font-weight:600}
+.addr{font-size:1.1rem;margin-bottom:.6rem;color:var(--cream)}
+.addr strong{color:#fff}
+.contact-line{margin:.7rem 0;font-size:1.05rem}
+.contact-line a{color:var(--tortilla);font-weight:700;text-decoration:none}
+.visit-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem}
+
+/* ---------- footer ---------- */
+footer{border-top:3px solid var(--chile);background:#0f0a05}
+.footer-inner{
+  max-width:1180px;margin:0 auto;padding:2.5rem 1.25rem;
+  display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;
+  font-size:.9rem;color:#8f7a58;
+}
+.footer-inner .brand{font-size:1.2rem}
+.disclosure{max-width:34rem}
+.disclosure strong{color:var(--tortilla)}
+
+/* ---------- mobile ---------- */
+@media(max-width:820px){
+  .nav-links a:not(.btn-nav){display:none}
+  .menu-grid{grid-template-columns:1fr}
+  .night-grid{grid-template-columns:1fr;gap:2rem}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .g-item img{height:180px}
+  .visit-grid{grid-template-columns:1fr}
+  .hero{min-height:78vh}
+}
+@media(max-width:480px){
+  .gallery-grid{grid-template-columns:1fr}
+  .g-item img{height:220px}
+  .brand{font-size:1.15rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .marquee-track{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website Concept &middot; Design Preview</div>
+
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="#top">TAQUERIA LAS PALMAS<small>Food Truck &middot; Greenville SC</small></a>
+    <div class="nav-links">
+      <a href="#menu">Menu</a>
+      <a href="#late-night">Late Night</a>
+      <a href="#photos">Photos</a>
+      <a href="#visit">Visit</a>
+      <a class="btn btn-chile btn-nav" href="tel:+18644514657">Call (864) 451-4657</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <span class="hours-badge">Open daily &middot; 11 AM to 1 AM</span>
+    <h1>TAQUERIA <span class="green">LAS PALMAS</span></h1>
+    <p class="lede">A green food truck on Anderson Road serving tacos, tortas, and antojitos, with fresh tortillas, house salsas, and a screened porch to sit and eat.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-chile" href="tel:+18644514657">Call (864) 451-4657</a>
+      <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=2703+Anderson+Rd+Greenville+SC+29611" target="_blank" rel="noopener">Find the Truck</a>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>AL PASTOR</span><span>&bull;</span><span>BIRRIA</span><span>&bull;</span><span>CARNITAS</span><span>&bull;</span><span>CARNE ASADA</span><span>&bull;</span><span>TORTAS</span><span>&bull;</span><span>QUESADILLAS</span><span>&bull;</span><span>SOPES</span><span>&bull;</span><span>AGUAS FRESCAS</span><span>&bull;</span>
+    <span>AL PASTOR</span><span>&bull;</span><span>BIRRIA</span><span>&bull;</span><span>CARNITAS</span><span>&bull;</span><span>CARNE ASADA</span><span>&bull;</span><span>TORTAS</span><span>&bull;</span><span>QUESADILLAS</span><span>&bull;</span><span>SOPES</span><span>&bull;</span><span>AGUAS FRESCAS</span><span>&bull;</span>
+  </div>
+</div>
+
+<section class="section" id="menu">
+  <p class="kicker">From the truck</p>
+  <h2>THE MENU</h2>
+  <p class="sub">Everything is made to order at the window. Plates come out hot, portions come out big, and the salsa bar is house made.</p>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <h3>Tacos</h3>
+      <ul>
+        <li>Al Pastor <em>customers' favorite</em></li>
+        <li>Carnitas</li>
+        <li>Carne Asada</li>
+        <li>Birria</li>
+      </ul>
+    </div>
+    <div class="menu-card green">
+      <h3>Truck Plates</h3>
+      <ul>
+        <li>Quesadillas</li>
+        <li>Tortas</li>
+        <li>Burritos</li>
+        <li>Alambre</li>
+      </ul>
+    </div>
+    <div class="menu-card gold">
+      <h3>Antojitos</h3>
+      <ul>
+        <li>Sopes</li>
+        <li>Gorditas</li>
+        <li>Antojitos</li>
+        <li>Aguas Frescas <em>fresh fruit</em></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fav-note">
+    <strong>Ask about catering.</strong> The truck books private events and parties. Call ahead and the crew will set up the same full menu on site.
+  </div>
+</section>
+
+<section class="night" id="late-night">
+  <div class="night-grid">
+    <img src="img/night-truck.jpg" alt="Taqueria las Palmas food truck at night with the lit seating tent">
+    <div>
+      <p class="kicker">Greenville after dark</p>
+      <h2>OPEN UNTIL 1 AM, EVERY NIGHT</h2>
+      <p>Most kitchens are closed by 10. The truck is still firing the plancha at midnight. Tacos, birria, and burritos stay on the menu straight through to 1 AM, seven days a week.</p>
+      <p>There is covered seating with a fan on the screened porch, so rain or shine you can sit down and eat.</p>
+      <div class="night-ctas">
+        <a class="btn btn-dark" href="tel:+18644514657">Call (864) 451-4657</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="photos">
+  <p class="kicker">Real food, real truck</p>
+  <h2>FROM THE WINDOW</h2>
+  <p class="sub">Photos from the truck's own listing. What you see is what comes off the plancha.</p>
+  <div class="gallery-grid">
+    <div class="g-item"><img src="img/food-alpastor.jpg" alt="Al pastor street tacos"><div class="g-cap">Al pastor tacos</div></div>
+    <div class="g-item"><img src="img/food-avocado.jpg" alt="Taco platter with avocado, radishes, and lime"><div class="g-cap">Taco platter with avocado</div></div>
+    <div class="g-item"><img src="img/food-nachos.jpg" alt="Loaded carne asada nachos"><div class="g-cap">Loaded carne asada nachos</div></div>
+    <div class="g-item"><img src="img/food-torta.jpg" alt="Torta sandwich in a to-go box"><div class="g-cap">Torta</div></div>
+    <div class="g-item"><img src="img/food-combo.jpg" alt="Combo plate with tacos, beans, and rice"><div class="g-cap">Combo plate</div></div>
+    <div class="g-item"><img src="img/food-taco.jpg" alt="Street taco with cucumber and pickled onions"><div class="g-cap">Street taco</div></div>
+  </div>
+</section>
+
+<div class="rating">
+  <div class="rating-inner">
+    <div class="score">4.8 / 5</div>
+    <p>Rated 4.8 from 24 reviews on Restaurantji. Reviewers point to fresh tortillas, quality meat, and spicy house salsa.</p>
+  </div>
+</div>
+
+<section class="section" id="visit">
+  <p class="kicker">Find the truck</p>
+  <h2>VISIT</h2>
+  <p class="sub">Parked at 2703 Anderson Rd in Greenville, open late every day.</p>
+  <div class="visit-grid">
+    <div class="visit-card">
+      <h3>Hours</h3>
+      <table class="hours-table">
+        <tr><td>Monday</td><td>11:00 AM - 1:00 AM</td></tr>
+        <tr><td>Tuesday</td><td>11:00 AM - 1:00 AM</td></tr>
+        <tr><td>Wednesday</td><td>11:00 AM - 1:00 AM</td></tr>
+        <tr><td>Thursday</td><td>11:00 AM - 1:00 AM</td></tr>
+        <tr><td>Friday</td><td>11:00 AM - 1:00 AM</td></tr>
+        <tr><td>Saturday</td><td>11:00 AM - 1:00 AM</td></tr>
+        <tr><td>Sunday</td><td>11:00 AM - 1:00 AM</td></tr>
+      </table>
+    </div>
+    <div class="visit-card">
+      <h3>Location &amp; Contact</h3>
+      <p class="addr"><strong>2703 Anderson Rd</strong><br>Greenville, SC 29611</p>
+      <p class="contact-line">Phone: <a href="tel:+18644514657">(864) 451-4657</a></p>
+      <p class="contact-line">Facebook: <a href="https://www.facebook.com/Tacobrothers864" target="_blank" rel="noopener">facebook.com/Tacobrothers864</a></p>
+      <div class="visit-ctas">
+        <a class="btn btn-chile" href="tel:+18644514657">Call Now</a>
+        <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=2703+Anderson+Rd+Greenville+SC+29611" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+      <p style="margin-top:1.2rem;color:#a8936d;font-size:.95rem">Questions? Call (864) 451-4657.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <a class="brand" href="#top">TAQUERIA LAS PALMAS</a>
+      <p style="margin-top:.5rem">2703 Anderson Rd, Greenville, SC 29611<br>(864) 451-4657</p>
+    </div>
+    <div class="disclosure">
+      <strong>Design Preview.</strong> This is a website concept prepared by Freightfolio, not an official site of Taqueria las Palmas Food Truck. It does not imply the business endorsed or commissioned this work.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
