@@ -1,0 +1,26 @@
+Gyro Heaven (gyro-heaven-402e2973cff381ebb26eed) image provenance
+Captured 2026-10-22. Identity match: business name AND 232 Coming St, Charleston SC verified against Yelp business listing, places record (place_id 591443222638057), and Facebook page 940714562645108.
+
+REAL BUSINESS PHOTO (1):
+- img/hero-truck.jpg (was /tmp/gh-assets/real-truck.jpg, 750x1000, 195 KB)
+  Source: https://s3-media0.fl.yelpcdn.com/bphoto/4e4vQ9TFI5p-L9qbsdNB4w/o.jpg
+  Page: https://www.yelp.com/biz/zw06CE6aSpC4ekNDNRS7JQ (Gyro Heaven Food Truck, 232 Coming St, Charleston, SC 29403, (646) 678-1824)
+  Type: user-uploaded photo on Yelp, labeled "outside". Shows the Gyro Heaven tent at night with a menu board reading "Gyro Heaven", phone 646-678-1824, and a Facebook icon. Identity/location match: business name and phone visible on the menu board; night setting matches late-night hours (Fri-Sat 9 PM-2:30 AM); address matches the Yelp listing.
+  License: Yelp user-submitted content, used in a non-commercial design preview; presented with honest caption.
+
+STOCK PHOTOS (4, all labeled "Stock photo" in on-page captions; none presented as the business):
+- img/night-truck.jpg (1125x750, 120 KB)
+  Source: https://images.pexels.com/photos/5675783/pexels-photo-5675783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+  Page: https://www.pexels.com (food truck night search)
+  Pexels free license. Depicts a neon-lit food truck at night, generic. Not Gyro Heaven.
+- img/street-truck.jpg (500x750, 73 KB)
+  Source: https://images.pexels.com/photos/4501417/pexels-photo-4501417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+  Pexels free license. Orange food truck on a city street at night, generic. Not Gyro Heaven.
+- img/gyro-1.jpg (1200x799, 98 KB)
+  Source: https://images.pexels.com/photos/24374280/pexels-photo-24374280/free-photo-of-gyro.jpeg
+  Pexels free license. Gyro wrap with fries. Not Gyro Heaven's food.
+- img/gyro-2.jpg (1200x1800, 126 KB)
+  Source: https://images.pexels.com/photos/15350308/pexels-photo-15350308/free-photo-of-man-hand-holding-meat-in-bread.jpeg
+  Pexels free license. Gyro wrap held in a gloved hand. Not Gyro Heaven's food.
+
+Excluded candidates: pexels 1766686 (donut truck with Cyrillic signage and donut neon, wrong cuisine); primary.jwwb.nl hotlink of houstongyroheaven.com branding (another business); afrah.com image (another restaurant's menu photo).
