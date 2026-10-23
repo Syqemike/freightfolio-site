@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>The Dwarf Chicken Stand | Soul-Food Fried Chicken, Pensacola FL</title>
+<meta name="description" content="The Dwarf Chicken Stand is a historic soul-food fried chicken stand in Pensacola, Florida, frying since 1963. See the menu, hours, and location.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --lavender:#6b4d9e;
+    --lavender-deep:#4a3573;
+    --gold:#d9a441;
+    --gold-soft:#f0c977;
+    --charcoal:#1d1a16;
+    --charcoal-2:#262119;
+    --cream:#f7f1e5;
+    --muted:#cfc3ae;
+    --green:#2f7d4f;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;background:var(--charcoal);color:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  .display{font-family:'Anton',sans-serif;letter-spacing:.02em;font-weight:400}
+
+  .preview-ribbon{background:var(--gold);color:var(--charcoal);text-align:center;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:.6rem 1rem}
+  .preview-ribbon span{display:block;font-weight:500;letter-spacing:.05em;text-transform:none;font-size:.78rem;margin-top:.15rem}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(29,26,22,.97);border-bottom:3px solid var(--lavender)}
+  .header-inner{max-width:1220px;margin:0 auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+  .brand{font-family:'Anton',sans-serif;font-size:1.6rem;color:var(--gold);text-decoration:none;letter-spacing:.05em}
+  nav.main-nav{display:flex;gap:1.4rem;flex-wrap:wrap}
+  nav.main-nav a{text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  nav.main-nav a:hover{color:var(--gold)}
+  .btn{display:inline-block;background:var(--gold);color:var(--charcoal);font-weight:700;text-decoration:none;padding:.8rem 1.7rem;border-radius:6px;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem;border:none;cursor:pointer}
+  .btn:hover{background:var(--gold-soft)}
+  .btn-outline{background:transparent;color:var(--gold);border:2px solid var(--gold)}
+  .btn-outline:hover{background:var(--gold);color:var(--charcoal)}
+
+  .wrap{max-width:1220px;margin:0 auto;padding:0 1.5rem}
+  section{padding:4.5rem 0}
+  .eyebrow{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+  h2.section-title{font-family:'Anton',sans-serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:.03em;margin-bottom:1rem;color:var(--cream)}
+  .lede{color:var(--muted);max-width:640px;font-size:1.05rem}
+
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;padding:4rem 0}
+  .hero h1{font-family:'Anton',sans-serif;font-size:clamp(3rem,7vw,5.5rem);line-height:1.02;letter-spacing:.02em;color:var(--cream)}
+  .hero h1 .accent{color:var(--lavender)}
+  .hero h1 .gold{color:var(--gold)}
+  .hero p.sub{color:var(--muted);font-size:1.15rem;margin:1.4rem 0 2rem;max-width:520px}
+  .hero .rating{font-size:.95rem;color:var(--gold);font-weight:600;margin-bottom:1.6rem}
+  .hero .cta-row{display:flex;gap:1rem;flex-wrap:wrap}
+  .hero figure{position:relative}
+  .hero figure img{border-radius:12px;border:3px solid var(--lavender)}
+  figcaption{font-size:.78rem;color:var(--muted);margin-top:.5rem}
+  figcaption .stock-tag{font-weight:700;color:var(--gold-soft);text-transform:uppercase;letter-spacing:.08em;font-size:.7rem}
+
+  .mardi-band{display:flex;height:14px}
+  .mardi-band div{flex:1}
+  .mardi-band .b1{background:var(--lavender)}
+  .mardi-band .b2{background:var(--gold)}
+  .mardi-band .b3{background:var(--green)}
+
+  .story{background:var(--charcoal-2);border-top:1px solid #3a332a;border-bottom:1px solid #3a332a}
+  .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:2rem}
+  .story-grid img{border-radius:12px;border:3px solid var(--gold)}
+  .story p{color:var(--muted);margin-bottom:1.1rem}
+  .story .since{font-family:'Anton',sans-serif;font-size:4.5rem;color:var(--lavender);line-height:1}
+
+  .menu-board{background:var(--charcoal)}
+  .board{background:#14110d;border:3px solid var(--gold);border-radius:14px;padding:2.5rem;margin-top:2.5rem}
+  .board h3{font-family:'Anton',sans-serif;font-size:1.7rem;letter-spacing:.04em;color:var(--gold);margin:2rem 0 1rem;text-transform:uppercase}
+  .board h3:first-child{margin-top:0}
+  .menu-item{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.55rem 0;border-bottom:1px dashed #4a4438}
+  .menu-item .name{font-weight:600;color:var(--cream)}
+  .menu-item .price{font-family:'Anton',sans-serif;color:var(--gold-soft);font-size:1.15rem;white-space:nowrap}
+  .menu-note{color:var(--muted);font-size:.9rem;margin-top:1.5rem}
+  .menu-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.5rem}
+  .menu-photos img{border-radius:10px;border:2px solid var(--lavender);height:230px;width:100%;object-fit:cover}
+
+  .hours{background:var(--lavender-deep)}
+  .hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-top:2rem}
+  .hours-table{width:100%;border-collapse:collapse;background:rgba(0,0,0,.25);border-radius:10px;overflow:hidden}
+  .hours-table th,.hours-table td{padding:.8rem 1.2rem;text-align:left;font-size:.95rem}
+  .hours-table th{background:rgba(0,0,0,.35);color:var(--gold);text-transform:uppercase;letter-spacing:.1em;font-size:.75rem}
+  .hours-table td{border-top:1px solid rgba(255,255,255,.12)}
+  .honesty-note{background:var(--gold);color:var(--charcoal);border-radius:10px;padding:1.3rem 1.5rem;font-weight:600;margin-top:1.5rem}
+  .phone-note{color:var(--cream);margin-top:1.2rem;font-size:.95rem}
+  .phone-note a{color:var(--gold);font-weight:700}
+
+  .visit{background:var(--charcoal)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2rem}
+  .visit-card{background:var(--charcoal-2);border:1px solid #3a332a;border-radius:12px;padding:2rem}
+  .visit-card h3{font-family:'Anton',sans-serif;font-size:1.4rem;color:var(--gold);letter-spacing:.04em;margin-bottom:1rem;text-transform:uppercase}
+  .visit-card p{color:var(--muted);margin-bottom:.6rem}
+  .visit-card a{color:var(--gold)}
+  .visit-photo img{border-radius:12px;border:3px solid var(--lavender)}
+
+  footer{background:#14110d;border-top:3px solid var(--lavender);padding:2.5rem 0;text-align:center}
+  footer p{color:var(--muted);font-size:.85rem;margin:.4rem 0}
+  footer .foot-brand{font-family:'Anton',sans-serif;color:var(--gold);font-size:1.2rem;letter-spacing:.05em}
+
+  @media(max-width:900px){
+    .hero,.story-grid,.hours-grid,.visit-grid{grid-template-columns:1fr}
+    .menu-photos{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-ribbon">
+  DESIGN PREVIEW
+  <span>Concept website created by Freightfolio - a design preview, not the official site of this business.</span>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="#top">The Dwarf Chicken Stand</a>
+    <nav class="main-nav">
+      <a href="#story">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn" href="tel:+18504700652">Call to order</a>
+  </div>
+</header>
+
+<div class="wrap" id="top">
+  <section class="hero">
+    <div>
+      <span class="eyebrow">Pensacola, Florida - Since 1963</span>
+      <h1>THE DWARF <span class="accent">CHICKEN</span> <span class="gold">STAND</span></h1>
+      <p class="sub">A historic soul-food fried chicken stand in the Belmont-DeVilliers neighborhood. A tiny counter with a big reputation, frying the same way it has since 1963.</p>
+      <p class="rating">5.0 from 30 Google reviews</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+18504700652">Call to order</a>
+        <a class="btn btn-outline" href="#menu">See the menu</a>
+      </div>
+    </div>
+    <figure>
+      <img src="img/hero.jpg" alt="Crispy fried chicken pieces served on a plate">
+      <figcaption><span class="stock-tag">Stock photo:</span> crispy fried chicken pieces on a plate</figcaption>
+    </figure>
+  </section>
+</div>
+
+<div class="mardi-band"><div class="b1"></div><div class="b2"></div><div class="b3"></div></div>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <span class="eyebrow">The story</span>
+    <h2 class="section-title">A Pensacola landmark since 1963</h2>
+    <div class="story-grid">
+      <div>
+        <p class="since">1963</p>
+        <p>The Dwarf Chicken Stand was founded by Vera Rancifer in 1963 in the Belmont-DeVilliers neighborhood of Pensacola. For decades, this little stand has served soul-food fried chicken from a tiny 10-to-12-seat counter.</p>
+        <p>Regulars know the look: the lavender-purple sign and the Mardi Gras decor that have become part of the stand's identity. It is the kind of place people drive across town for.</p>
+        <p>Chicken is the star, but the sides and desserts get their own loyal following. Everything below is priced from the current menu board.</p>
+      </div>
+      <figure>
+        <img src="img/board.jpg" alt="Fried chicken served with golden fries">
+        <figcaption><span class="stock-tag">Stock photo:</span> fried chicken with golden fries</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="menu-board" id="menu">
+  <div class="wrap">
+    <span class="eyebrow">The menu board</span>
+    <h2 class="section-title">Priced like the board says</h2>
+    <p class="lede">The full menu with verified prices. Call your order in or grab it to go.</p>
+
+    <div class="board">
+      <h3>Chicken</h3>
+      <div class="menu-item"><span class="name">3 Wing Sandwich</span><span class="price">$12.50</span></div>
+      <div class="menu-item"><span class="name">10 Piece Dark</span><span class="price">$23.00</span></div>
+      <div class="menu-item"><span class="name">12 Piece Mixed</span><span class="price">$30.00</span></div>
+      <div class="menu-item"><span class="name">Chicken Strips</span><span class="price">$11.00</span></div>
+      <div class="menu-item"><span class="name">All Flats or All Drums</span><span class="price">$14.00</span></div>
+      <div class="menu-item"><span class="name">Pork Chop or Fish</span><span class="price">$11.00</span></div>
+
+      <h3>Sides</h3>
+      <div class="menu-item"><span class="name">Fried Okra</span><span class="price">$5 - $6</span></div>
+      <div class="menu-item"><span class="name">Fries</span><span class="price">$5 - $6</span></div>
+      <div class="menu-item"><span class="name">Corn Nuggets</span><span class="price">$5 - $6</span></div>
+      <div class="menu-item"><span class="name">Mac and Cheese</span><span class="price">$5 - $6</span></div>
+      <div class="menu-item"><span class="name">Collard Greens</span><span class="price">$5 - $6</span></div>
+      <div class="menu-item"><span class="name">Candied Yams</span><span class="price">$5 - $6</span></div>
+      <div class="menu-item"><span class="name">Potato Salad</span><span class="price">$5 - $6</span></div>
+
+      <h3>Desserts</h3>
+      <div class="menu-item"><span class="name">Banana Pudding</span><span class="price">$5</span></div>
+      <div class="menu-item"><span class="name">Pound Cake</span><span class="price">$5</span></div>
+      <div class="menu-item"><span class="name">Cobbler</span><span class="price">$5</span></div>
+      <div class="menu-item"><span class="name">Red Velvet Cake</span><span class="price">$5</span></div>
+      <div class="menu-item"><span class="name">Bread Pudding</span><span class="price">$5</span></div>
+
+      <h3>Drinks</h3>
+      <div class="menu-item"><span class="name">Canned Soda</span><span class="price">$3</span></div>
+      <div class="menu-item"><span class="name">Bottled Water</span><span class="price">$3</span></div>
+
+      <p class="menu-note">Prices verified from the current menu. Takeout available, and the stand also offers delivery through DoorDash.</p>
+    </div>
+
+    <div class="menu-photos">
+      <figure>
+        <img src="img/wings.jpg" alt="Basket of fried chicken wings">
+        <figcaption><span class="stock-tag">Stock photo:</span> basket of fried chicken wings</figcaption>
+      </figure>
+      <figure>
+        <img src="img/drums.jpg" alt="Golden fried chicken drumsticks">
+        <figcaption><span class="stock-tag">Stock photo:</span> golden fried chicken drumsticks</figcaption>
+      </figure>
+      <figure>
+        <img src="img/mac.jpg" alt="Baked macaroni and cheese">
+        <figcaption><span class="stock-tag">Stock photo:</span> baked macaroni and cheese</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="hours" id="hours">
+  <div class="wrap">
+    <span class="eyebrow">Hours</span>
+    <h2 class="section-title">When to come by</h2>
+    <div class="hours-grid">
+      <div>
+        <table class="hours-table">
+          <tr><th>Day</th><th>Hours</th></tr>
+          <tr><td>Monday - Thursday</td><td>12PM - 11PM</td></tr>
+          <tr><td>Friday - Saturday</td><td>12PM - 4AM</td></tr>
+          <tr><td>Sunday</td><td>4PM - 11PM</td></tr>
+        </table>
+        <div class="honesty-note">Hours can vary - call ahead.</div>
+        <p class="phone-note">A note from reviews: the phone can be hard to reach during busy stretches. If no one picks up, keep trying or order through DoorDash. Call <a href="tel:+18504700652">(850) 470-0652</a>.</p>
+      </div>
+      <div>
+        <h3 class="display" style="color:var(--gold);font-size:1.5rem;letter-spacing:.04em;margin-bottom:1rem">LATE NIGHT FAVORITE</h3>
+        <p style="color:var(--cream)">Open until 4AM on Fridays and Saturdays, the stand is a late-night stop for fried chicken and soul-food sides. During the week, the kitchen runs noon to 11PM.</p>
+        <p style="color:var(--cream);margin-top:1rem">Sunday hours start at 4PM.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <span class="eyebrow">Visit</span>
+    <h2 class="section-title">Find the stand</h2>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Location</h3>
+        <p>407 N De Villiers St<br>Pensacola, FL 32501</p>
+        <p>In the Belmont-DeVilliers neighborhood. Look for the lavender-purple sign.</p>
+      </div>
+      <div class="visit-card">
+        <h3>Order ahead</h3>
+        <p>Phone: <a href="tel:+18504700652">(850) 470-0652</a></p>
+        <p>Takeout available. Delivery through DoorDash.</p>
+        <p>Facebook: <a href="https://www.facebook.com/dwarfchickenstand" target="_blank" rel="noopener">facebook.com/dwarfchickenstand</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="foot-brand">The Dwarf Chicken Stand</p>
+    <p>DESIGN PREVIEW - Concept website created by Freightfolio. Not the official site of this business.</p>
+    <p>Photos on this page are stock photos, not photos of the actual stand. Business facts from public listings.</p>
+  </div>
+</footer>
+
+</body>
+</html>

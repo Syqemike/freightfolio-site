@@ -1,0 +1,35 @@
+Photo provenance - A Touch of Relaxation Massage concept site (batch 25, 2026-10-22)
+
+Real-photo attempt: no public Facebook/Instagram presence found for this business. The MassageBook
+portal page (https://www.massagebook.com/Daphne~Massage~a-touch-of-relaxation-massage) is
+booking-portal only with no usable business imagery. All photos below are Pexels free-license
+stock, downloaded as files (never hotlinked), magic-byte verified as JPEG. Every on-page caption
+is honestly labeled "Stock photo:". None depict another business's signage, logo, or
+identifiable branding.
+
+1. hero.jpg
+   Source: stock (Pexels)
+   URL: https://images.pexels.com/photos/6628701/pexels-photo-6628701.jpeg
+   Depicts: therapist massaging a client's back in a calm indoor treatment setting. Used as hero image.
+
+2. stones.jpg
+   Source: stock (Pexels)
+   URL: https://images.pexels.com/photos/6629530/pexels-photo-6629530.jpeg
+   Depicts: hot stone massage session, therapist placing smooth heated stones on a client's back.
+   Used in therapists/gallery section.
+
+3. session.jpg
+   Source: stock (Pexels)
+   URL: https://images.pexels.com/photos/19641818/pexels-photo-19641818/free-photo-of-woman-getting-a-massage.jpeg
+   Depicts: therapist giving a massage to a client. Used in therapists/gallery section.
+
+4. aromatherapy.jpg
+   Source: stock (Pexels)
+   URL: https://images.pexels.com/photos/19666192/pexels-photo-19666192/free-photo-of-aromatherapy-and-massage-at-the-spa.jpeg
+   Depicts: aromatherapy and massage at a spa. Used in therapists/gallery section.
+
+5. detail.jpg
+   Source: stock (Pexels)
+   URL: https://images.pexels.com/photos/5240643/pexels-photo-5240643.jpeg
+   Depicts: close-up of a therapist's hands kneading a client's back muscles in a softly lit spa.
+   Used in therapists/gallery section.

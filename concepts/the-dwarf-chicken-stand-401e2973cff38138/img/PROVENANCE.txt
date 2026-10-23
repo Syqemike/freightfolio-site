@@ -1,0 +1,32 @@
+Photo provenance - The Dwarf Chicken Stand concept site (batch 25, 2026-10-22)
+
+Real-photo attempt: the business's public Facebook page (https://www.facebook.com/dwarfchickenstand)
+is login-walled via text fetch; no public image URLs were recoverable. All photos below are
+Pexels free-license stock, downloaded as files (never hotlinked), magic-byte verified as JPEG.
+Every on-page caption is honestly labeled "Stock photo:". None depict another business's
+signage, logo, or identifiable branding.
+
+1. hero.jpg
+   Source: stock (Pexels)
+   URL: https://images.pexels.com/photos/33254639/pexels-photo-33254639/free-photo-of-close-up-of-crispy-fried-chicken-on-plate.jpeg
+   Depicts: close-up of crispy fried chicken pieces served on a black plate. Used as hero image.
+
+2. wings.jpg
+   Source: stock (Pexels)
+   URL: https://images.pexels.com/photos/27831789/pexels-photo-27831789/free-photo-of-a-basket-filled-with-fried-chicken-wings.jpeg
+   Depicts: basket filled with fried chicken wings. Used in menu gallery.
+
+3. drums.jpg
+   Source: stock (Pexels)
+   URL: https://images.pexels.com/photos/37484986/pexels-photo-37484986/free-photo-of-delicious-crispy-fried-chicken-drumsticks.jpeg
+   Depicts: plate of golden brown fried chicken drumsticks with crispy seasoning. Used in menu gallery.
+
+4. mac.jpg
+   Source: stock (Pexels)
+   URL: https://images.pexels.com/photos/25524076/pexels-photo-25524076/free-photo-of-close-up-of-baked-macaroni-and-cheese.jpeg
+   Depicts: close-up of baked macaroni and cheese. Used in menu gallery (side dish).
+
+5. board.jpg
+   Source: stock (Pexels)
+   URL: https://images.pexels.com/photos/5652257/pexels-photo-5652257.jpeg
+   Depicts: crispy fried chicken served with golden fries on a wooden board. Used in story section.
