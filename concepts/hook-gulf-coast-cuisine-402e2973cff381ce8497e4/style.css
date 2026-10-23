@@ -93,7 +93,7 @@ a { color: var(--rust-deep); }
 .rating { color: #e9dcc3; font-size: .95rem; margin: 0; border-top: 1px solid rgba(233,220,195,.35); padding-top: 1em; max-width: 420px; }
 
 /* Cards */
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
 .card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .card img { height: 220px; width: 100%; object-fit: cover; }
 .card-body { padding: 20px 22px 24px; }
