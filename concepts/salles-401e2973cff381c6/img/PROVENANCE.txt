@@ -28,3 +28,5 @@ CONCLUSION: 0 real photos, 5 stock photos. All stock below are Pexels free-licen
 - gifts.jpg: source=stock
   source_url: https://www.pexels.com/photo/34399153/
   depicts: Elegant gold bracelet presented in a gift box
+
+2026-10-22 run25 rebuild: img/atelier.jpg — Stock photo: a goldsmith shaping a ring at the workbench. Source: Wikimedia Commons File:GoldsmithWorkingOnRing.jpg (https://commons.wikimedia.org/wiki/File:GoldsmithWorkingOnRing.jpg), CC BY-SA 2.0, 1296x972 JPEG. Replaces the duplicated img/hero.jpg in The Atelier section (QA run39 defect).
