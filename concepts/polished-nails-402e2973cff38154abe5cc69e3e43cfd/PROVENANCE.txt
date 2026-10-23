@@ -1,12 +1,16 @@
 PROVENANCE: Polished Nails, 1149 Merritt Blvd, Dundalk, MD 21222
 
-REAL PHOTOS (3) - from the salon's own public photo gallery on its Yellow Pages
-listing ("Polish Nail Salon", AKA "Polished Nails Salon", lid 480729846,
-https://www.yellowpages.com/dundalk-md/mip/polish-nail-salon-480729846),
-the same address and phone as this business. Downloaded 2026-10-23.
-- img/real-nailart-purple.jpg : purple glitter and heart nail art (gallery image 1)
-- img/real-nails-redglitter.jpg : burgundy and glitter nails (gallery image 2)
-- img/real-nailart-blue.jpg : blue polish with striped and dotted nail art (gallery image 3)
+ALL PHOTOS RELABELED AS STOCK (2026-10-23 rebuild) - the three nail-art photos below
+were originally documented as "real photos from the salon's own public photo gallery
+on its Yellow Pages listing" ("Polish Nail Salon", AKA "Polished Nails Salon",
+lid 480729846, https://www.yellowpages.com/dundalk-md/mip/polish-nail-salon-480729846,
+same address and phone as this business, downloaded 2026-10-23). The QA Agent's
+2026-10-23 full rendered review determined these claims UNVERIFIABLE (CRM research:
+no social pages exist for this business) and ordered them removed and relabeled as
+stock. Every on-page caption now says "Stock photo" with photo-matching text.
+- img/real-nailart-purple.jpg : purple glitter and heart nail art (labeled stock)
+- img/real-nails-redglitter.jpg : burgundy and glitter nails (labeled stock)
+- img/real-nailart-blue.jpg : blue polish with striped and dotted nail art (labeled stock)
 
 STOCK PHOTOS (4) - Unsplash, labeled "Stock photo" in every on-page caption.
 - img/stock-tortoise.jpg : tortoiseshell and black manicured hand
