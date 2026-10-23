@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goldman Jewelry | Estate Jewelry & Custom Casting in Indianapolis, IN</title>
+<meta name="description" content="Goldman Jewelry in Indianapolis, IN. Estate jewelry, unique artist-created pieces, and custom casting done in the shop's own workshop. Call (317) 684-9435.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --ivory:#f6f1e6; --ivory2:#efe7d3;
+    --ink:#1c150e; --ink2:#2a2117;
+    --brass:#a9823f; --brass-dark:#8a682f;
+    --taupe:#8a7c64; --line:#e2d5bc; --linedark:#3a2f1e;
+  }
+  body { background:var(--ivory); color:var(--ink); font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; line-height:1.7; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+  img { display:block; max-width:100%; height:auto; }
+
+  .serif { font-family:Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .kicker { font-size:12px; letter-spacing:4px; text-transform:uppercase; color:var(--brass); font-weight:700; margin-bottom:14px; }
+
+  .preview-bar { background:var(--ink); color:#d9cba8; font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; }
+  .preview-bar .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:9px; padding-bottom:9px; gap:10px; flex-wrap:wrap; }
+  .preview-bar b { color:var(--brass); }
+  .preview-bar .addr { text-transform:none; letter-spacing:.5px; color:#a89a7c; font-size:13px; }
+
+  nav { position:sticky; top:0; background:rgba(246,241,230,.97); border-bottom:1px solid var(--line); z-index:20; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:15px; padding-bottom:15px; gap:14px; }
+  .brand { font-size:22px; font-weight:400; letter-spacing:1px; }
+  .brand .g { color:var(--brass); }
+  .navlinks { display:flex; gap:24px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; align-items:center; }
+  .navlinks a { color:var(--taupe); }
+  .navlinks a:hover { color:var(--ink); }
+  .btn { display:inline-block; background:var(--brass); color:#1c150e; padding:13px 28px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:800; border:none; border-radius:2px; cursor:pointer; }
+  .btn:hover { background:var(--brass-dark); color:#fff; }
+  .btn.ghost { background:transparent; color:var(--ivory); border:2px solid var(--brass); }
+  .btn.ghost:hover { background:rgba(169,130,63,.15); color:#fff; }
+  .btn.light { background:var(--ink); color:var(--ivory); }
+  .btn.light:hover { background:#000; }
+
+  .hero { background:var(--ink); color:var(--ivory); position:relative; overflow:hidden; }
+  .hero .wrap { display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center; padding-top:84px; padding-bottom:84px; }
+  .hero h1 { font-size:58px; line-height:1.08; font-weight:400; margin-bottom:20px; color:var(--ivory); }
+  .hero h1 .g { color:var(--brass); font-style:normal; }
+  .hero p.lead { color:#c9bc9c; font-size:18px; margin-bottom:16px; max-width:480px; }
+  .hero .rating-line { color:#e8d9b8; font-size:14px; letter-spacing:.5px; margin-bottom:30px; }
+  .hero .rating-line .stars { color:var(--brass); letter-spacing:3px; }
+  .hero .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-note { margin-top:22px; color:#8f7f5f; font-size:14px; }
+  .hero-fig { position:relative; }
+  .hero-fig img { border:1px solid var(--linedark); width:100%; }
+  .hero-fig figcaption { margin-top:10px; font-size:13px; color:#8f7f5f; letter-spacing:.5px; }
+
+  .strip { border-bottom:1px solid var(--line); background:var(--ivory2); }
+  .strip .wrap { display:grid; grid-template-columns:repeat(3,1fr); gap:0; padding-top:0; padding-bottom:0; }
+  .strip .cell { padding:30px 26px; border-left:1px solid var(--line); }
+  .strip .cell:first-child { border-left:none; }
+  .strip h3 { font-size:17px; margin-bottom:8px; font-weight:700; letter-spacing:.5px; }
+  .strip h3 .num { color:var(--brass); margin-right:8px; font-weight:400; }
+  .strip p { color:var(--taupe); font-size:14.5px; }
+
+  .section { padding:88px 0; }
+  .section h2 { font-size:40px; font-weight:400; line-height:1.15; margin-bottom:14px; }
+  .section .sub { color:var(--taupe); font-size:17px; max-width:640px; margin-bottom:44px; }
+
+  .featured { display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center; margin-bottom:56px; background:#fffdf7; border:1px solid var(--line); padding:34px; }
+  .featured img { width:100%; }
+  .featured figcaption, .tile figcaption { font-size:13.5px; color:var(--taupe); margin-top:10px; letter-spacing:.3px; }
+  .featured h3 { font-size:28px; font-weight:400; margin-bottom:12px; }
+  .featured p { color:#5c5340; margin-bottom:10px; }
+
+  .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .tile { background:#fffdf7; border:1px solid var(--line); padding:14px; }
+  .tile img { width:100%; aspect-ratio:4/5; object-fit:cover; }
+
+  .workshop { background:var(--ink); color:var(--ivory); }
+  .workshop .kicker { color:var(--brass); }
+  .workshop h2 { color:var(--ivory); }
+  .workshop .sub { color:#a89a7c; }
+  .ws-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-bottom:52px; }
+  .ws-grid figure { border:1px solid var(--linedark); padding:14px; background:var(--ink2); }
+  .ws-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; }
+  .ws-grid figcaption { font-size:13.5px; color:#a89a7c; margin-top:10px; }
+  .process { display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+  .step { border-top:2px solid var(--brass); padding-top:20px; }
+  .step .n { color:var(--brass); font-size:13px; letter-spacing:3px; margin-bottom:8px; }
+  .step h4 { font-size:17px; margin-bottom:8px; color:var(--ivory); }
+  .step p { font-size:14.5px; color:#a89a7c; }
+
+  .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .svc { border:1px solid var(--line); background:#fffdf7; padding:32px 28px; }
+  .svc h3 { font-size:21px; font-weight:400; margin-bottom:10px; }
+  .svc h3 .g { color:var(--brass); }
+  .svc p { color:var(--taupe); font-size:15px; }
+
+  .visit { background:var(--ivory2); border-top:1px solid var(--line); }
+  .visit-grid { display:grid; grid-template-columns:1fr 1fr; gap:44px; }
+  .visit-card { background:#fffdf7; border:1px solid var(--line); padding:40px 36px; }
+  .visit-card h3 { font-size:13px; letter-spacing:3px; text-transform:uppercase; color:var(--brass); margin-bottom:16px; }
+  .visit-card .big { font-size:24px; margin-bottom:6px; }
+  .visit-card p { color:var(--taupe); margin-bottom:18px; }
+  .visit-card .cta-row { display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; }
+
+  footer { background:var(--ink); color:#8f7f5f; font-size:13.5px; }
+  footer .wrap { padding-top:44px; padding-bottom:44px; }
+  footer .disc { border:1px solid var(--linedark); padding:18px 22px; margin-bottom:26px; color:#c9bc9c; letter-spacing:.5px; }
+  footer .row { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+
+  @media (max-width:900px) {
+    .hero .wrap { grid-template-columns:1fr; padding-top:56px; padding-bottom:56px; gap:36px; }
+    .hero h1 { font-size:42px; }
+    .strip .wrap { grid-template-columns:1fr; }
+    .strip .cell { border-left:none; border-top:1px solid var(--line); padding:24px 0; }
+    .strip .cell:first-child { border-top:none; }
+    .featured { grid-template-columns:1fr; padding:20px; }
+    .gallery { grid-template-columns:1fr; }
+    .ws-grid { grid-template-columns:1fr; }
+    .process { grid-template-columns:1fr 1fr; }
+    .services-grid { grid-template-columns:1fr; }
+    .visit-grid { grid-template-columns:1fr; }
+    .navlinks a { display:none; }
+    .section { padding:60px 0; }
+    .section h2 { font-size:30px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">
+  <div class="wrap">
+    <div><b>Website Concept</b> &nbsp;·&nbsp; Design Preview</div>
+    <div class="addr">944 S Meridian St, Indianapolis, IN &nbsp;·&nbsp; Mon-Fri 11 AM-4 PM</div>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand serif" href="#top">Goldman <span class="g">Jewelry</span></a>
+    <div class="navlinks">
+      <a href="#pieces">Pieces</a>
+      <a href="#workshop">Workshop</a>
+      <a href="#services">Services</a>
+      <a href="#visit">Visit</a>
+      <a class="btn" href="tel:+13176849435">Call</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Estate Jewelry &amp; Custom Casting, Indianapolis</div>
+      <h1 class="serif">Jewelry made <em class="g">by hand</em>,<br>on Meridian Street.</h1>
+      <p class="lead">Goldman Jewelry sells estate jewelry and one-of-a-kind artist-created pieces, and casts custom work in its own workshop: wax molds, flask casting, polishing, and engraving.</p>
+      <div class="rating-line"><span class="stars">★★★★★</span> Rated 5.0 from 11 Google reviews.</div>
+      <div class="cta-row">
+        <a class="btn" href="tel:+13176849435">Call (317) 684-9435</a>
+        <a class="btn ghost" href="#pieces">See the Work</a>
+      </div>
+      <p class="hero-note">Questions about a piece or a custom order? Call and talk to the shop directly.</p>
+    </div>
+    <figure class="hero-fig">
+      <img src="img/deco-pearl-pendant.jpg" alt="Deco-style pendant made by Goldman Jewelry: black jade moon, pearl, and diamond-set bars">
+      <figcaption>One of the shop's own Deco-style pendants. Photo from the business's workshop.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section class="strip">
+  <div class="wrap">
+    <div class="cell">
+      <h3 class="serif"><span class="num">01</span>Estate Jewelry</h3>
+      <p>Older pieces with character, bought and sold at the shop on Meridian Street.</p>
+    </div>
+    <div class="cell">
+      <h3 class="serif"><span class="num">02</span>Artist-Created Pieces</h3>
+      <p>One-of-a-kind designs made by the shop, including handmade 14kt gold brooch pins.</p>
+    </div>
+    <div class="cell">
+      <h3 class="serif"><span class="num">03</span>Custom Casting</h3>
+      <p>Custom pieces cast in the shop's own workshop, from wax mold to polished finish.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pieces">
+  <div class="wrap">
+    <div class="kicker">The Pieces</div>
+    <h2 class="serif">Work that comes off this bench</h2>
+    <p class="sub">Every photo on this page was taken by the business itself, in its own shop and workshop. This is the actual work Goldman Jewelry makes and sells.</p>
+
+    <figure class="featured">
+      <img src="img/finished-pieces-gold-branch-pin.jpg" alt="Handcrafted gold branch brooch pin with red beads and a silver pendant with a blue stone">
+      <div>
+        <h3 class="serif">Handmade brooch pins</h3>
+        <p>The shop makes its own brooch pins by hand, including 14kt gold pieces like the branch pin shown here, alongside pendants set with cut stones.</p>
+        <figcaption>Shop photo: a handmade gold branch brooch pin with red beads, and a silver pendant with a blue faceted stone.</figcaption>
+      </div>
+    </figure>
+
+    <div class="gallery">
+      <figure class="tile">
+        <img src="img/deco-pearl-pendant.jpg" alt="Deco-style pendant with pearl and diamond accents">
+        <figcaption>Deco-style pendant in black jade, pearl, and diamonds. Made by the shop.</figcaption>
+      </figure>
+      <figure class="tile">
+        <img src="img/jade-dragon-wax-model-a.jpg" alt="Carved white jade with a green wax dragon model">
+        <figcaption>Work in progress: a carved white jade piece with its wax dragon model, on the bench.</figcaption>
+      </figure>
+      <figure class="tile">
+        <img src="img/gemstone-in-tweezers.jpg" alt="Green gemstone held in jeweler's tweezers during setting">
+        <figcaption>Stone setting at the bench: a green gemstone held in jeweler's tweezers.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section workshop" id="workshop">
+  <div class="wrap">
+    <div class="kicker">The Workshop</div>
+    <h2 class="serif">Cast here, not ordered in</h2>
+    <p class="sub">Custom work is cast in the shop's own workshop. The photos below are from the shop's actual casting bench.</p>
+    <div class="ws-grid">
+      <figure>
+        <img src="img/workshop-wax-flask.jpg" alt="Workshop photo: holding a wax flask at the bench with casting equipment">
+        <figcaption>The casting bench: a wax flask ready at the vulcanizer.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/workshop-casting-bench.jpg" alt="Workshop photo: casting bench with vacuum casting equipment">
+        <figcaption>Flask casting equipment in the shop's workshop.</figcaption>
+      </figure>
+    </div>
+    <div class="process">
+      <div class="step">
+        <div class="n">Step 1</div>
+        <h4 class="serif">Wax mold</h4>
+        <p>Each custom design starts as a wax model, carved or built by hand.</p>
+      </div>
+      <div class="step">
+        <div class="n">Step 2</div>
+        <h4 class="serif">Flask casting</h4>
+        <p>The mold is cast in metal in the shop's own flask casting setup.</p>
+      </div>
+      <div class="step">
+        <div class="n">Step 3</div>
+        <h4 class="serif">Polishing</h4>
+        <p>The raw casting is filed, polished, and brought to a finished surface.</p>
+      </div>
+      <div class="step">
+        <div class="n">Step 4</div>
+        <h4 class="serif">Engraving</h4>
+        <p>Details and engraving finish the piece before it leaves the bench.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="kicker">Services</div>
+    <h2 class="serif">What to ask for</h2>
+    <p class="sub">Everything here is handled at the shop on Meridian Street. Call ahead: the shop keeps weekday hours.</p>
+    <div class="services-grid">
+      <div class="svc">
+        <h3 class="serif"><span class="g">Estate</span> jewelry</h3>
+        <p>Buy and sell estate pieces with the shop directly. Bring in what you have or browse what is in the case.</p>
+      </div>
+      <div class="svc">
+        <h3 class="serif"><span class="g">Artist-created</span> pieces</h3>
+        <p>One-of-a-kind pendants, pins, and designs made by the shop itself. No two are alike.</p>
+      </div>
+      <div class="svc">
+        <h3 class="serif"><span class="g">Custom</span> casting</h3>
+        <p>A design you have in mind, cast from a wax mold and finished by hand in the shop's workshop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section visit" id="visit">
+  <div class="wrap">
+    <div class="kicker">Visit</div>
+    <h2 class="serif">On South Meridian</h2>
+    <p class="sub">The shop is on the Cultural Trail corridor in Indianapolis, named in local coverage as a South Meridian Street merchant.</p>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Find the shop</h3>
+        <div class="big serif">944 S Meridian St</div>
+        <p>Indianapolis, IN</p>
+        <div class="cta-row">
+          <a class="btn light" href="tel:+13176849435">Call (317) 684-9435</a>
+        </div>
+      </div>
+      <div class="visit-card">
+        <h3>Hours</h3>
+        <div class="big serif">Mon-Fri 11 AM-4 PM</div>
+        <p>The shop keeps short weekday hours. A quick call before you come is the safest plan.</p>
+        <div class="cta-row">
+          <a class="btn light" href="tel:+13176849435">Questions? Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="disc"><strong style="color:var(--brass); letter-spacing:2px;">WEBSITE CONCEPT</strong><br>
+    This page is a design preview prepared by Freightfolio. It is not the business's current website and does not imply the business has hired Freightfolio or endorsed this design.</div>
+    <div class="row">
+      <div>Goldman Jewelry · 944 S Meridian St, Indianapolis, IN · (317) 684-9435</div>
+      <div>Design preview · Freightfolio</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
