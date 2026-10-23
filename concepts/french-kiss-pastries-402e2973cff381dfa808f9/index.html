@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>French Kiss Pastries | French Bakery and Cafe in Ocean Springs, MS</title>
+<meta name="description" content="French Kiss Pastries is an artisan French bakery and cafe in downtown Ocean Springs, MS. Pastries, custom cakes, coffee, and gelato. Call (228) 215-1160.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF4EA;
+    --cream-deep:#F4E8D3;
+    --ink:#33241A;
+    --ink-soft:#6B5645;
+    --raspberry:#B44A5E;
+    --raspberry-dark:#93394B;
+    --rose:#EBC9C9;
+    --gold:#A67C3A;
+    --green:#2E4B3F;
+    --white:#FFFDF9;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.65;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.08}
+  img{max-width:100%;display:block}
+  a{color:var(--raspberry)}
+
+  /* ---------- design preview bar ---------- */
+  .preview-bar{
+    background:var(--green);
+    color:#fff;
+    text-align:center;
+    font-size:11px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    font-weight:500;
+    padding:9px 16px;
+  }
+
+  /* ---------- nav ---------- */
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(251,244,234,.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--cream-deep);
+  }
+  .nav-inner{
+    max-width:1160px;margin:0 auto;padding:.65rem 1.25rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  }
+  .brand{font-family:"Cormorant Garamond",serif;font-size:1.45rem;font-weight:700;color:var(--ink);text-decoration:none;letter-spacing:.01em}
+  .brand em{font-style:italic;color:var(--raspberry)}
+  .nav-links{display:flex;gap:1.4rem;align-items:center}
+  .nav-links a.nav-link{color:var(--ink-soft);text-decoration:none;font-size:.92rem;letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+  .nav-links a.nav-link:hover{color:var(--raspberry)}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:600;letter-spacing:.06em;
+    background:var(--raspberry);color:#fff;padding:.7rem 1.5rem;border-radius:999px;
+    font-size:.95rem;border:2px solid var(--raspberry);transition:background .2s,transform .2s;
+  }
+  .btn:hover{background:var(--raspberry-dark);border-color:var(--raspberry-dark);transform:translateY(-1px)}
+  .btn-outline{background:transparent;color:var(--raspberry)}
+  .btn-outline:hover{background:var(--raspberry);color:#fff}
+  .btn-nav{padding:.5rem 1.1rem;font-size:.85rem;white-space:nowrap}
+  @media(max-width:640px){.nav-links a.nav-link{display:none}}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover}
+  .hero-scrim{position:absolute;inset:0;background:rgba(28,17,11,.52)}
+  .hero-inner{position:relative;max-width:1160px;margin:0 auto;padding:5rem 1.25rem 4rem;width:100%}
+  .hero-eyebrow{font-size:.82rem;letter-spacing:.3em;text-transform:uppercase;color:var(--rose);font-weight:500;margin-bottom:.9rem}
+  .hero h1{font-size:clamp(3rem,9vw,5.6rem);color:#fff;font-weight:700;max-width:12ch}
+  .hero h1 em{font-style:italic;color:#F6D8D8}
+  .hero-rule{width:72px;height:3px;background:var(--gold);margin:1.4rem 0}
+  .hero p.lede{font-size:clamp(1.05rem,2.4vw,1.3rem);max-width:34rem;color:#F3E9DE}
+  .rating-chip{display:inline-flex;align-items:center;gap:.5rem;background:var(--white);color:var(--ink);
+    border-radius:999px;padding:.45rem 1rem;margin:1.5rem 0;font-size:.9rem;font-weight:500}
+  .rating-chip .stars{color:var(--gold);letter-spacing:.1em;font-weight:600}
+  .hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:.4rem}
+
+  /* ---------- sections ---------- */
+  section.block{padding:4.5rem 0}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 1.25rem}
+  .eyebrow{font-size:.78rem;letter-spacing:.32em;text-transform:uppercase;color:var(--raspberry);font-weight:600;margin-bottom:.8rem}
+  .block h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;max-width:22ch}
+  .block h2 em{font-style:italic;color:var(--raspberry)}
+  .lede2{font-size:1.08rem;color:var(--ink-soft);max-width:42rem}
+
+  /* welcome */
+  .welcome-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  @media(max-width:820px){.welcome-grid{grid-template-columns:1fr;gap:2rem}}
+  .welcome-grid p{margin-bottom:1.1rem;color:var(--ink-soft)}
+  .quote{
+    border-left:3px solid var(--gold);padding:.4rem 0 .4rem 1.4rem;margin:1.8rem 0;
+  }
+  .quote p{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-style:italic;color:var(--ink);margin:0 0 .5rem;line-height:1.35}
+  .quote cite{font-style:normal;font-size:.9rem;letter-spacing:.06em;color:var(--ink-soft)}
+  .photo-frame{border-radius:14px;overflow:hidden;box-shadow:0 18px 44px rgba(51,36,26,.16)}
+  .photo-frame img{width:100%;height:100%;object-fit:cover}
+  .caption{font-size:.82rem;color:var(--ink-soft);margin-top:.6rem;letter-spacing:.02em}
+
+  /* case cards */
+  .case-band{background:var(--cream-deep)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:2.4rem}
+  @media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 12px 30px rgba(51,36,26,.10)}
+  .card .ph{aspect-ratio:4/3;overflow:hidden}
+  .card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .card:hover .ph img{transform:scale(1.05)}
+  .card .tx{padding:1.3rem 1.4rem 1.5rem}
+  .card h3{font-size:1.5rem;margin-bottom:.5rem}
+  .card p{font-size:.95rem;color:var(--ink-soft)}
+
+  /* menu columns */
+  .menu-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2.6rem}
+  @media(max-width:820px){.menu-cols{grid-template-columns:1fr;gap:1.6rem}}
+  .menu-col{background:var(--white);border:1px solid var(--cream-deep);border-radius:14px;padding:1.6rem}
+  .menu-col h3{font-size:1.6rem;color:var(--raspberry);margin-bottom:1rem;font-style:italic}
+  .menu-col ul{list-style:none}
+  .menu-col li{padding:.45rem 0;border-bottom:1px dotted #D9C4A5;font-size:.96rem;color:var(--ink-soft)}
+  .menu-col li:last-child{border-bottom:none}
+  .menu-col li strong{color:var(--ink);font-weight:500}
+  .menu-note{margin-top:1.6rem;font-size:.9rem;color:var(--ink-soft);font-style:italic}
+
+  /* cafe band */
+  .cafe{background:var(--green);color:#F0E7D8}
+  .cafe .eyebrow{color:var(--rose)}
+  .cafe h2{color:#fff}
+  .cafe h2 em{color:var(--rose)}
+  .cafe-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  @media(max-width:820px){.cafe-grid{grid-template-columns:1fr;gap:2rem}}
+  .cafe p{color:#E5D9C4;margin-bottom:1rem}
+  .drink-pills{display:flex;flex-wrap:wrap;gap:.55rem;margin:1.4rem 0}
+  .drink-pills span{border:1px solid rgba(235,201,201,.5);border-radius:999px;padding:.32rem .9rem;font-size:.86rem;letter-spacing:.04em}
+
+  /* visit */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+  @media(max-width:820px){.visit-grid{grid-template-columns:1fr;gap:2rem}}
+  .hours{width:100%;border-collapse:collapse;margin-top:1.4rem;background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 12px 30px rgba(51,36,26,.10)}
+  .hours th,.hours td{padding:.85rem 1.3rem;text-align:left;font-size:.96rem}
+  .hours th{font-weight:600;color:var(--ink);width:44%}
+  .hours td{color:var(--ink-soft)}
+  .hours tr:nth-child(odd){background:var(--cream)}
+  .visit-cta{background:var(--cream-deep);border-radius:14px;padding:2.2rem;text-align:center}
+  .visit-cta h3{font-size:2rem;margin-bottom:.6rem}
+  .visit-cta p{color:var(--ink-soft);margin-bottom:1.4rem}
+  .visit-cta .btn{font-size:1.05rem;padding:.85rem 2rem}
+
+  /* footer */
+  footer{background:var(--ink);color:#C9BAA8;padding:2.6rem 0;text-align:center}
+  footer .fname{font-family:"Cormorant Garamond",serif;font-size:1.6rem;color:#fff;margin-bottom:.6rem}
+  footer p{font-size:.86rem;max-width:44rem;margin:0 auto .8rem}
+  footer a{color:var(--rose)}
+  .fine{font-size:.75rem;opacity:.75}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Design Preview - Website Concept by Freightfolio</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">French Kiss <em>Pastries</em></a>
+    <div class="nav-links">
+      <a class="nav-link" href="#case">Pastries</a>
+      <a class="nav-link" href="#cafe">Cafe</a>
+      <a class="nav-link" href="#visit">Visit</a>
+      <a class="btn btn-nav" href="tel:+12282151160">Call (228) 215-1160</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg"><img src="img/hero.jpg" alt="The pastry display case inside French Kiss Pastries, filled with cakes, eclairs, quiches, and macarons"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Ocean Springs, Mississippi</div>
+    <h1>French Kiss <em>Pastries</em></h1>
+    <div class="hero-rule"></div>
+    <p class="lede">An artisan French bakery and cafe in downtown Ocean Springs. Breakfast, lunch, and dessert from a case that is worth planning your morning around.</p>
+    <div>
+      <span class="rating-chip"><span class="stars">4.7 / 5</span> from 237 reviews on TripAdvisor</span>
+    </div>
+    <div class="hero-ctas">
+      <a class="btn" href="tel:+12282151160">Call (228) 215-1160</a>
+      <a class="btn btn-outline" href="#case" style="border-color:#fff;color:#fff">See the case</a>
+    </div>
+  </div>
+</header>
+
+<section class="block" id="welcome">
+  <div class="wrap welcome-grid">
+    <div>
+      <div class="eyebrow">Bienvenue</div>
+      <h2>Baked with French craft, <em>served with Southern warmth</em></h2>
+      <p>French Kiss Pastries is an artisan bakery and cafe in downtown Ocean Springs, Mississippi. Owner and pastry chef Jacqueline Ladnier fills the case daily with butter and almond croissants, macarons, eclairs, cannoli, blueberry scones with lemon drizzle, cinnamon rolls, and custom cakes made to order.</p>
+      <div class="quote">
+        <p>Baking is the passion, and the proof is in every single bite.</p>
+        <cite>Jacqueline Ladnier, owner and pastry chef</cite>
+      </div>
+      <p>The menu rotates with the seasons, so the case changes through the year. A full line of coffee, gelato, and a gift shop in the back of the cafe round out the visit.</p>
+    </div>
+    <div>
+      <div class="photo-frame"><img src="img/interior.jpg" alt="Seating area inside French Kiss Pastries with armchairs, tables, and the pastry case"></div>
+      <p class="caption">The cafe room at French Kiss Pastries</p>
+    </div>
+  </div>
+</section>
+
+<section class="block case-band" id="case">
+  <div class="wrap">
+    <div class="eyebrow">From the case</div>
+    <h2>The pastry <em>case</em></h2>
+    <p class="lede2">Individual desserts, classic French pastries, and cakes made daily. The case is fullest in the morning, and the selection changes with the seasons.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ph"><img src="img/fruit-pastry.jpg" alt="A fresh fruit pastry cup from the case at French Kiss Pastries"></div>
+        <div class="tx">
+          <h3>3-inch cakes, made daily</h3>
+          <p>Personal cakes in flavors like carrot, red velvet, fresh fruit, strawberry cream cheese bavarian, chocolate raspberry, turtle cheesecake, and vanilla bean.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="img/macarons.jpg" alt="The in-shop macaron board at French Kiss Pastries listing the flavors"></div>
+        <div class="tx">
+          <h3>Macarons</h3>
+          <p>Lemon, raspberry, coffee, pistachio, mango, chocolate, vanilla, lychee, blood orange, lemon yuzu, coconut pineapple, and banana guava.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="img/case.jpg" alt="Close-up of the case at French Kiss Pastries with eclairs, quiches, and small cakes"></div>
+        <div class="tx">
+          <h3>Eclairs, cannoli, and quiches</h3>
+          <p>Classic French eclairs and crisp cannoli share the case with savory quiches, fruit tarts, and the cinnamon rolls regulars plan their week around.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-cols">
+      <div class="menu-col">
+        <h3>Sweet treats</h3>
+        <ul>
+          <li><strong>Eclairs</strong></li>
+          <li><strong>Cannoli</strong></li>
+          <li><strong>Fruit tarts</strong></li>
+          <li><strong>Cheesecake</strong></li>
+          <li><strong>Butter and almond croissants</strong></li>
+          <li><strong>Blueberry scones with lemon drizzle</strong></li>
+          <li><strong>Cinnamon rolls</strong></li>
+          <li><strong>Macarons</strong></li>
+          <li><strong>Gelato by the scoop</strong></li>
+        </ul>
+      </div>
+      <div class="menu-col">
+        <h3>From the cafe</h3>
+        <ul>
+          <li><strong>Latte and cappuccino</strong></li>
+          <li><strong>Cafe au lait</strong></li>
+          <li><strong>Cold brew iced coffee</strong></li>
+          <li><strong>Drip coffee</strong></li>
+          <li><strong>Chai tea latte</strong></li>
+          <li><strong>Americano</strong></li>
+          <li><strong>Frappuccino</strong></li>
+          <li><strong>Specialty drinks:</strong> The 228, Sweet Bee, Magnolia, Beach Please!!, Greyhound, The Carl, French Kiss, The Downtown</li>
+        </ul>
+      </div>
+      <div class="menu-col">
+        <h3>For lunch</h3>
+        <ul>
+          <li><strong>Croissant sandwiches:</strong> ham and swiss, turkey and swiss, bacon egg and cheese, chicken salad</li>
+          <li><strong>Chicken salad</strong> on a butter croissant</li>
+          <li><strong>Quiche</strong></li>
+          <li><strong>Cup of soup</strong></li>
+        </ul>
+      </div>
+    </div>
+    <p class="menu-note">Menu items are from the shop's own boards and listings. The case and the menu change with the seasons, so call ahead if you have your heart set on something.</p>
+  </div>
+</section>
+
+<section class="block cafe" id="cafe">
+  <div class="wrap cafe-grid">
+    <div>
+      <div class="eyebrow">The cafe</div>
+      <h2>Stay for <em>coffee</em></h2>
+      <p>Order at the espresso bar and settle in. The shop pours a full line of coffee, serves lunch on croissants, and keeps gelato in the freezer for after.</p>
+      <div class="drink-pills">
+        <span>The 228</span><span>Sweet Bee</span><span>Magnolia</span><span>Beach Please!!</span>
+        <span>The Carl</span><span>French Kiss</span><span>The Downtown</span><span>Greyhound</span>
+      </div>
+      <p>Linger over a specialty drink with free Wi-Fi, browse the gift shop in the back of the cafe, or take a box of pastries to go.</p>
+    </div>
+    <div>
+      <div class="photo-frame"><img src="img/espresso.jpg" alt="The espresso bar and menu boards at French Kiss Pastries"></div>
+      <p class="caption" style="color:#D9CFC0">The espresso bar and the shop's menu boards</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit">
+  <div class="wrap">
+    <div class="eyebrow">Visit</div>
+    <h2>Come <em>see us</em></h2>
+    <p class="lede2">Find us in downtown Ocean Springs, MS. Custom and made-to-order cakes are available by phone. Questions? Call (228) 215-1160.</p>
+    <div class="visit-grid" style="margin-top:2rem">
+      <table class="hours">
+        <tr><th>Sunday</th><td>9:00 AM - 5:00 PM</td></tr>
+        <tr><th>Monday</th><td>7:30 AM - 6:00 PM</td></tr>
+        <tr><th>Tuesday</th><td>7:30 AM - 6:00 PM</td></tr>
+        <tr><th>Wednesday</th><td>7:30 AM - 6:00 PM</td></tr>
+        <tr><th>Thursday</th><td>7:30 AM - 6:00 PM</td></tr>
+        <tr><th>Friday</th><td>7:30 AM - 10:00 PM</td></tr>
+        <tr><th>Saturday</th><td>8:00 AM - 10:00 PM</td></tr>
+      </table>
+      <div class="visit-cta">
+        <h3>Order by phone</h3>
+        <p>Custom cakes, holiday orders, and questions about the case. Call ahead and the box will be ready.</p>
+        <a class="btn" href="tel:+12282151160">Call (228) 215-1160</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fname">French Kiss Pastries</div>
+    <p>Design preview: this is a website concept created by Freightfolio. It is not the business's official website, and French Kiss Pastries has not commissioned or approved it.</p>
+    <p><a href="tel:+12282151160">(228) 215-1160</a> · downtown Ocean Springs, MS</p>
+    <p class="fine">Photos are customer photos of the actual shop from its public listing pages.</p>
+  </div>
+</footer>
+
+</body>
+</html>

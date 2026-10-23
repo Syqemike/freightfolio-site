@@ -1,0 +1,72 @@
+La Frontera concept site (batch 27) — photo provenance
+Business: La Frontera (taco truck, NOT "La Frontera #1" and NOT "Comiendo Con memo")
+Location: 3501 W Lincoln St, Phoenix, AZ 85009
+CRM page_id: 402e2973-cff3-8159-9a93-dd13a54109cf
+
+All photos were location-tagged to this exact business via the Places API record
+place_id 3239854536282914 (name "La Frontera", 3501 W Lincoln St, Phoenix AZ,
+FB page id 226199867431780). Every image was visually inspected 2026-10-22:
+it shows either this truck, its menu board, or its food. No photos from
+La Frontera #1 (209 N 16th St), Comiendo Con memo, or any other business.
+
+1. hero-truck.jpg
+   Source: Facebook CDN photo tied to the business's FB page (id 226199867431780),
+   via Places gallery index 2.
+   Source URL: https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/299847517_126244030152433_7139706859869561930_n.jpg
+   Identity match: the white truck's windshield lettering reads "LA FRONTERA #2"
+   and "TACOS Y BIRRIA"; night shot at the Lincoln St lot.
+
+2. tacos-tostada.jpg
+   Source: Instagram CDN photo location-tagged to the business, via Places
+   gallery index 0 (special_photos hero banner).
+   Source URL: https://scontent-den2-1.cdninstagram.com/v/t39.30808-6/487213432_1160935592743879_5790428200444976397_n.jpg
+   Identity match: tacos and tostada with lime on paper plates, truck-style service.
+
+3. street-tacos.jpg
+   Source: Instagram CDN photo location-tagged to the business, via Places gallery
+   index 1. Caption: "Rami wanted street tacos!! Carne asada for her and tripas for me!"
+   Source URL: https://scontent-den2-1.cdninstagram.com/v/t39.30808-6/557155017_10223451797481663_7435540501757718773_n.jpg
+   Identity match: carne asada and tripa street tacos (meats on this truck's menu).
+
+4. barbacoa-tacos.jpg
+   Source: Yelp CDN photo from this business's Yelp page (umrovy4atXODdOu-DEpkbg),
+   via Places gallery index 3. Caption: "Barbacoa tacos".
+   Source URL: https://s3-media0.fl.yelpcdn.com/bphoto/mgfwVeCXa7kLGxxA8Dlzew/o.jpg
+   Permalink: https://www.yelp.com/biz_photos/umrovy4atXODdOu-DEpkbg?select=mgfwVeCXa7kLGxxA8Dlzew
+   Identity match: barbacoa tacos on paper plate at the truck's outdoor seating.
+
+5. tacos-grill.jpg
+   Source: Facebook CDN photo tied to the business's FB page, via Places gallery
+   index 5.
+   Source URL: https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/502376380_9965390523538677_8724957816194488383_n.jpg
+   Identity match: tacos with grilled onions/peppers and lime, truck-style red table.
+
+6. menu-board.jpg
+   Source: Yelp CDN photo from this business's Yelp page (umrovy4atXODdOu-DEpkbg),
+   via Places gallery index 7. Caption: "Menu, May 2025".
+   Source URL: https://s3-media0.fl.yelpcdn.com/bphoto/Ubu_-Ucwy7tXa0nm66ifWA/o.jpg
+   Permalink: https://www.yelp.com/biz_photos/umrovy4atXODdOu-DEpkbg?select=Ubu_-Ucwy7tXa0nm66ifWA
+   Identity match: the truck's own window board reads "Bienvenidos A La FRONTERA #2"
+   listing tacos, burritos, quesadillas, tortas, tostadas, vampiros, birria, etc.
+
+7. lengua-tacos.jpg
+   Source: Yelp CDN photo from this business's Yelp page (umrovy4atXODdOu-DEpkbg),
+   via Places gallery index 8.
+   Source URL: https://s3-media0.fl.yelpcdn.com/bphoto/WdYWvd0fH8Sx29iEZgcMvQ/o.jpg
+   Permalink: https://www.yelp.com/biz_photos/umrovy4atXODdOu-DEpkbg?select=WdYWvd0fH8Sx29iEZgcMvQ
+   Identity match: lengua tacos with cabbage, grilled jalapeno, cucumber, lime.
+
+8. ceviche-tostada.jpg
+   Source: Facebook CDN photo tied to the business's FB page, via Places gallery
+   index 9.
+   Source URL: https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/508636986_9993973077347088_1863224342820140337_n.jpg
+   Identity match: ceviche tostada and carne asada tacos, truck-style red table.
+
+Excluded photos (harvested but NOT used):
+- raw-4 (Yelp menu-window photo): menu header reads "LA FRONTERA #1"; excluded to
+  avoid any conflation with the separate La Frontera #1 business.
+- raw-6 (Instagram seating photo): a child's face is prominent; excluded for privacy.
+
+Fonts (self-hosted, SIL Open Font License):
+- fonts/anton-400-latin.woff2, fonts/inter-400/600/700/800-latin.woff2,
+  downloaded from Google Fonts (fonts.gstatic.com) 2026-10-22.

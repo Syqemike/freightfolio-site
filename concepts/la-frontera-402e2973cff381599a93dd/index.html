@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="La Frontera taco truck at 3501 W Lincoln St, Phoenix AZ. Sonoran street food, open 7 days. Website concept preview.">
+<title>La Frontera | Taco Truck in Phoenix, AZ (Design Preview)</title>
+<style>
+  @font-face{font-family:"Anton";font-weight:400;font-display:swap;src:url("fonts/anton-400-latin.woff2") format("woff2")}
+  @font-face{font-family:"Inter";font-weight:400;font-display:swap;src:url("fonts/inter-400-latin.woff2") format("woff2")}
+  @font-face{font-family:"Inter";font-weight:600;font-display:swap;src:url("fonts/inter-600-latin.woff2") format("woff2")}
+  @font-face{font-family:"Inter";font-weight:700;font-display:swap;src:url("fonts/inter-700-latin.woff2") format("woff2")}
+  @font-face{font-family:"Inter";font-weight:800;font-display:swap;src:url("fonts/inter-800-latin.woff2") format("woff2")}
+  :root{
+    --night:#0d130e;
+    --night-2:#141c15;
+    --night-3:#1c251d;
+    --cream:#fdf3e3;
+    --muted:#b8b2a4;
+    --amber:#f5a623;
+    --amber-dark:#c97f0e;
+    --chili:#d64541;
+    --lime:#a3b18a;
+    --line:rgba(253,243,227,.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--night);
+    color:var(--cream);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{font-family:"Anton",sans-serif;font-weight:400;letter-spacing:.01em;line-height:1.02}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+
+  .preview-bar{
+    background:var(--amber);
+    color:#241a05;
+    text-align:center;
+    font-size:12px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    font-weight:800;
+    padding:9px 16px;
+  }
+
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(13,19,14,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1180px;margin:0 auto;padding:.75rem 1.25rem;
+    display:flex;align-items:center;gap:1rem;
+  }
+  .brand{text-decoration:none;color:var(--cream)}
+  .brand .word{font-family:"Anton",sans-serif;font-size:1.35rem;letter-spacing:.03em;color:var(--cream)}
+  .brand .word span{color:var(--amber)}
+  .brand small{display:block;font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .nav-links{margin-left:auto;display:flex;gap:1.4rem;align-items:center}
+  .nav-links a.link{color:var(--muted);text-decoration:none;font-weight:600;font-size:.95rem}
+  .nav-links a.link:hover{color:var(--amber)}
+
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:800;
+    background:var(--amber);color:#241a05;
+    padding:.85rem 1.8rem;border-radius:6px;
+    font-size:1rem;letter-spacing:.02em;
+    border:2px solid var(--amber-dark);
+    box-shadow:0 4px 0 var(--amber-dark);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--amber-dark)}
+  .btn.ghost{background:transparent;color:var(--cream);border:2px solid var(--cream);box-shadow:none}
+  .btn.ghost:hover{background:rgba(253,243,227,.08);box-shadow:none;transform:translateY(2px)}
+  .btn.sm{padding:.55rem 1.15rem;font-size:.9rem}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 1.25rem}
+
+  .hero{padding:2.6rem 0 3.2rem;border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;gap:2rem;align-items:center}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:3rem}}
+  .eyebrow{
+    display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.26em;
+    text-transform:uppercase;color:var(--amber);margin-bottom:1rem;
+  }
+  .hero h1{font-size:clamp(3rem,9vw,5.6rem);text-transform:uppercase;margin-bottom:.4rem}
+  .hero h1 .accent{color:var(--amber)}
+  .hero .sub{font-size:1.15rem;color:var(--muted);margin-bottom:1.2rem;max-width:34rem}
+  .hero .sub strong{color:var(--cream)}
+  .hours-pill{
+    display:inline-flex;align-items:center;gap:.6rem;
+    border:1px solid var(--line);border-radius:999px;
+    padding:.55rem 1.1rem;margin-bottom:1.1rem;
+    background:var(--night-2);font-weight:600;font-size:.95rem;
+  }
+  .dot{width:10px;height:10px;border-radius:50%;background:#4ade80;flex:none;box-shadow:0 0 10px #4ade80}
+  .rating{margin-bottom:1.4rem;color:var(--muted);font-size:.95rem}
+  .rating strong{color:var(--cream)}
+  .stars{color:var(--amber);letter-spacing:.15em}
+  .hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap}
+  .hero-photo{
+    border-radius:10px;overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:0 18px 50px rgba(0,0,0,.5);
+  }
+  .hero-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:5/4}
+  .caption{
+    font-size:.8rem;color:var(--muted);padding:.6rem 1rem;
+    background:var(--night-2);border-top:1px solid var(--line);
+  }
+
+  .meats{background:var(--night-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .meats-inner{max-width:1180px;margin:0 auto;padding:1.6rem 1.25rem;text-align:center}
+  .meats .label{font-size:.75rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:.8rem}
+  .meats-list{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;justify-content:center}
+  .meats-list span{font-family:"Anton",sans-serif;font-size:1.25rem;letter-spacing:.04em;color:var(--cream)}
+  .meats-list span i{font-style:normal;color:var(--chili);margin-right:.6rem}
+
+  section.block{padding:3.4rem 0}
+  section.block.alt{background:var(--night-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-head{margin-bottom:2rem;max-width:46rem}
+  .sec-head h2{font-size:clamp(2rem,5.4vw,3.2rem);text-transform:uppercase;margin-bottom:.6rem}
+  .sec-head h2 .accent{color:var(--amber)}
+  .sec-head p{color:var(--muted);font-size:1.05rem}
+
+  .menu-grid{display:grid;gap:2rem}
+  @media(min-width:900px){.menu-grid{grid-template-columns:1fr 1fr;gap:3rem;align-items:start}}
+  .menu-board-photo{border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:0 18px 50px rgba(0,0,0,.5)}
+  .menu-board-photo img{width:100%}
+  .menu-list{display:grid;gap:1.6rem}
+  .menu-cat h3{font-size:1.35rem;color:var(--amber);text-transform:uppercase;letter-spacing:.04em;margin-bottom:.5rem;border-bottom:2px solid var(--chili);padding-bottom:.35rem;display:inline-block}
+  .menu-cat ul{list-style:none;margin-top:.55rem;display:grid;gap:.42rem}
+  .menu-cat li{font-size:1.05rem;color:var(--cream);padding-left:1.1rem;position:relative}
+  .menu-cat li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--chili)}
+  .menu-cat li small{display:block;color:var(--muted);font-size:.88rem}
+  .cash-note{
+    margin-top:1.2rem;background:var(--night-3);border:1px dashed var(--amber);
+    border-radius:8px;padding:1rem 1.2rem;font-size:.95rem;color:var(--cream);
+  }
+  .cash-note strong{color:var(--amber)}
+
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem}
+  @media(min-width:900px){.gallery{grid-template-columns:repeat(3,1fr);gap:1.2rem}}
+  .g-item{border-radius:8px;overflow:hidden;border:1px solid var(--line);background:var(--night-2)}
+  .g-item img{width:100%;aspect-ratio:1/1;object-fit:cover}
+  .g-item .caption{font-size:.78rem}
+
+  .reviews{display:grid;gap:1.4rem}
+  @media(min-width:900px){.reviews{grid-template-columns:1fr 1fr;gap:1.6rem}}
+  .quote{
+    background:var(--night);border:1px solid var(--line);border-radius:10px;
+    padding:1.6rem;font-size:1.02rem;
+  }
+  .quote .qmark{font-family:"Anton",sans-serif;color:var(--amber);font-size:2.2rem;line-height:1;display:block;margin-bottom:.4rem}
+  .quote p{color:var(--cream)}
+  .quote cite{display:block;margin-top:1rem;font-style:normal;color:var(--muted);font-size:.85rem}
+
+  .visit-grid{display:grid;gap:2rem}
+  @media(min-width:900px){.visit-grid{grid-template-columns:1fr 1fr;gap:3rem}}
+  .hours-table{width:100%;border-collapse:collapse;font-size:1rem}
+  .hours-table th,.hours-table td{padding:.6rem .4rem;border-bottom:1px solid var(--line);text-align:left}
+  .hours-table th{font-family:"Anton",sans-serif;font-weight:400;letter-spacing:.05em;color:var(--amber);text-transform:uppercase;font-size:1rem}
+  .hours-table td:last-child{text-align:right;color:var(--muted)}
+  .visit-card{background:var(--night);border:1px solid var(--line);border-radius:10px;padding:1.8rem}
+  .visit-card h3{font-size:1.3rem;color:var(--amber);text-transform:uppercase;margin-bottom:.8rem;letter-spacing:.04em}
+  .visit-card p{margin-bottom:.5rem;color:var(--muted)}
+  .visit-card p strong{color:var(--cream)}
+  .visit-card .big{font-size:1.35rem;font-weight:800;color:var(--cream);text-decoration:none}
+  .visit-card .big:hover{color:var(--amber)}
+  .visit-ctas{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:1.4rem}
+
+  footer{border-top:1px solid var(--line);padding:2.4rem 0 3rem;color:var(--muted);font-size:.88rem}
+  footer .f-grid{display:grid;gap:1.4rem}
+  @media(min-width:900px){footer .f-grid{grid-template-columns:2fr 1fr}}
+  footer strong{color:var(--cream)}
+  footer a{color:var(--amber)}
+  .disclosure{
+    border:1px dashed var(--line);border-radius:8px;padding:1rem 1.2rem;margin-bottom:1.4rem;
+    font-size:.85rem;color:var(--muted);
+  }
+
+  .sticky-call{
+    display:none;
+  }
+  @media(max-width:700px){
+    .nav-links a.link{display:none}
+    .sticky-call{
+      display:block;position:fixed;bottom:0;left:0;right:0;z-index:60;
+      background:rgba(13,19,14,.96);border-top:1px solid var(--line);
+      padding:.7rem 1.25rem calc(.7rem + env(safe-area-inset-bottom));
+    }
+    .sticky-call .btn{width:100%;text-align:center}
+    footer{padding-bottom:6rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website Concept &middot; Design Preview</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="word">LA <span>FRONTERA</span></span>
+      <small>Tacos y Birria &middot; Phoenix AZ</small>
+    </a>
+    <div class="nav-links">
+      <a class="link" href="#menu">Menu</a>
+      <a class="link" href="#food">Food</a>
+      <a class="link" href="#visit">Visit</a>
+      <a class="btn sm" href="tel:+16233266808">Call</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Taco Truck &middot; 3501 W Lincoln St</span>
+      <h1>La <span class="accent">Frontera</span></h1>
+      <p class="sub">Sonoran street food from a truck that has held the same spot on Lincoln Street for years. Tacos, burritos, tortas and birria, served late. <strong>Open 7 days a week.</strong></p>
+      <div class="hours-pill"><span class="dot"></span> Open 7 days &middot; until midnight, later on weekends</div>
+      <div class="rating"><span class="stars">★★★★★</span> <strong>4.6</strong> on Google &middot; 85 reviews</div>
+      <div class="hero-ctas">
+        <a class="btn" href="tel:+16233266808">Call (623) 326-6808</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=La+Frontera+3501+W+Lincoln+St+Phoenix+AZ+85009">Get Directions</a>
+      </div>
+    </div>
+    <div>
+      <div class="hero-photo">
+        <img src="img/hero-truck.jpg" alt="The La Frontera #2 taco truck at night on Lincoln Street">
+        <div class="caption">The truck at night on W Lincoln St. Customer photo.</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="meats">
+  <div class="meats-inner">
+    <div class="label">The meats</div>
+    <div class="meats-list">
+      <span><i>&middot;</i>Asada</span>
+      <span><i>&middot;</i>Pastor</span>
+      <span><i>&middot;</i>Tripa</span>
+      <span><i>&middot;</i>Carnitas</span>
+      <span><i>&middot;</i>Chicharron</span>
+      <span><i>&middot;</i>Cabeza y Lengua</span>
+    </div>
+  </div>
+</div>
+
+<section class="block" id="menu">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The Menu</span>
+      <h2>Off the <span class="accent">truck board</span></h2>
+      <p>This is what is posted on the truck window: tacos and quesadillas on handmade flour or corn tortillas, with lime, cucumber and salsa on the side.</p>
+    </div>
+    <div class="menu-grid">
+      <div>
+        <div class="menu-board-photo">
+          <img src="img/menu-board.jpg" alt="The menu board posted on the La Frontera #2 truck window">
+          <div class="caption">The actual menu board on the truck window. Customer photo.</div>
+        </div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-cat">
+          <h3>Tacos &amp; More</h3>
+          <ul>
+            <li>Tacos <small>street style, your choice of meat</small></li>
+            <li>Burritos <small>including burritos de chile verde</small></li>
+            <li>Quesadillas mixtas &amp; sencillas <small>flour or corn tortilla</small></li>
+            <li>Tortas <small>including tortas de al pastor and tortas de jamon</small></li>
+            <li>Tostadas &amp; tostadas de ceviche</li>
+            <li>Vampiros</li>
+          </ul>
+        </div>
+        <div class="menu-cat">
+          <h3>Also on the board</h3>
+          <ul>
+            <li>Birria</li>
+            <li>Coctel de camaron</li>
+            <li>Chicharron</li>
+            <li>Horchata <small>the giant horchata gets named in reviews</small></li>
+          </ul>
+        </div>
+        <div class="cash-note"><strong>Cash only at the window.</strong> Bring cash, the truck does not take cards.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="food">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The Food</span>
+      <h2>Straight from the <span class="accent">grill</span></h2>
+      <p>Real plates from real customers: street tacos, barbacoa, lengua, and the ceviche tostada, all with the lime and cucumber the truck is known for.</p>
+    </div>
+    <div class="gallery">
+      <div class="g-item"><img src="img/street-tacos.jpg" alt="Carne asada and tripa street tacos with cabbage, lime and cucumber" loading="lazy"><div class="caption">Street tacos: carne asada and tripa. Customer photo.</div></div>
+      <div class="g-item"><img src="img/barbacoa-tacos.jpg" alt="Barbacoa tacos with onion, cucumber and lime on a paper plate" loading="lazy"><div class="caption">Barbacoa tacos. Customer photo.</div></div>
+      <div class="g-item"><img src="img/ceviche-tostada.jpg" alt="Ceviche tostada and carne asada tacos" loading="lazy"><div class="caption">Ceviche tostada and carne asada tacos. Customer photo.</div></div>
+      <div class="g-item"><img src="img/tacos-tostada.jpg" alt="Tacos and tostada with lime on paper plates" loading="lazy"><div class="caption">Tacos and tostada. Customer photo.</div></div>
+      <div class="g-item"><img src="img/lengua-tacos.jpg" alt="Lengua tacos with cabbage, grilled jalapeno, cucumber and lime" loading="lazy"><div class="caption">Lengua tacos with grilled jalapeno. Customer photo.</div></div>
+      <div class="g-item"><img src="img/tacos-grill.jpg" alt="Tacos with cabbage and cucumber next to grilled onions and peppers" loading="lazy"><div class="caption">Tacos with grilled onions and peppers. Customer photo.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Word on the Street</span>
+      <h2>What <span class="accent">Phoenix</span> says</h2>
+      <p>A few lines from public reviews of this exact truck at 3501 W Lincoln St.</p>
+    </div>
+    <div class="reviews">
+      <div class="quote">
+        <span class="qmark">&ldquo;</span>
+        <p>Bro this place was amazing! And not only that but the burrito was huge. Definitely a good spot!</p>
+        <cite>Rafael Romero, Google review, September 2025</cite>
+      </div>
+      <div class="quote">
+        <span class="qmark">&ldquo;</span>
+        <p>Quick, cheap, convenient. This is my new go to spot for tacos after work. Tripas and lengua are amazing.</p>
+        <cite>Customer review, worldlocationmap.com</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Find the Truck</span>
+      <h2>Visit <span class="accent">La Frontera</span></h2>
+      <p>Same lot, same spot, every day of the week. Outdoor seating, folding tables, takeout ready.</p>
+    </div>
+    <div class="visit-grid">
+      <div>
+        <table class="hours-table">
+          <tr><th>Day</th><th>Hours</th></tr>
+          <tr><td>Sunday</td><td>8 AM &ndash; 12 AM</td></tr>
+          <tr><td>Monday</td><td>8 AM &ndash; 12 AM</td></tr>
+          <tr><td>Tuesday</td><td>8 AM &ndash; 12 AM</td></tr>
+          <tr><td>Wednesday</td><td>8 AM &ndash; 12 AM</td></tr>
+          <tr><td>Thursday</td><td>8 AM &ndash; 12 AM</td></tr>
+          <tr><td>Friday</td><td>8 AM &ndash; 1 AM</td></tr>
+          <tr><td>Saturday</td><td>8 AM &ndash; 2 AM</td></tr>
+        </table>
+      </div>
+      <div class="visit-card">
+        <h3>The Lot</h3>
+        <p><strong>3501 W Lincoln St<br>Phoenix, AZ 85009</strong></p>
+        <p>Outdoor seating. Takeout available. Cash only.</p>
+        <p><a class="big" href="tel:+16233266808">(623) 326-6808</a></p>
+        <p>Questions? Call the truck.</p>
+        <div class="visit-ctas">
+          <a class="btn" href="tel:+16233266808">Call Now</a>
+          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=La+Frontera+3501+W+Lincoln+St+Phoenix+AZ+85009">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="disclosure">
+      <strong>Design preview.</strong> This is a website concept built by Freightfolio for La Frontera, not the business&rsquo;s official site. Photos are real customer photos from public listings of this truck. Menu items are transcribed from the truck&rsquo;s own posted menu board. Hours and rating shown as listed publicly in October 2026.
+    </div>
+    <div class="f-grid">
+      <div>
+        <strong>LA FRONTERA</strong> &middot; 3501 W Lincoln St, Phoenix, AZ 85009 &middot; <a href="tel:+16233266808">(623) 326-6808</a><br>
+        A Freightfolio website concept &middot; <a href="https://freightfolio.net">freightfolio.net</a>
+      </div>
+      <div>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-call">
+  <a class="btn" href="tel:+16233266808">Call (623) 326-6808</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+PROVENANCE — Taqueria las Palmas Food Truck concept site
+Business: Taqueria las Palmas Food Truck, 2703 Anderson Rd, Greenville, SC 29611
+CRM page_id: 402e2973-cff3-81f1-809c-c7911bc06441
+Harvested: 2026-10-22 by Website Dev (batch 27)
+
+All 8 assets are REAL photos of THIS business, harvested from the business's own
+restaurantji listing page:
+  https://www.restaurantji.com/sc/greenville/taqueria-las-palmas-food-truck-/
+Listing photos API (business id 9140502):
+  https://www.restaurantji.com/cache/business_page/sc/greenville/taqueria-las-palmas-food-truck-/business.json
+
+Identity / location match evidence:
+- The listing is "Taqueria las Palmas Food Truck, 2703 Anderson Road, Greenville, SC 29611,
+  (864) 451-4657", matching the CRM record's name, address, and phone exactly.
+- hero-truck.jpg shows the actual green food trailer with an "OPEN" sign, the attached
+  screened-in porch seating area, and the truck's own "TAQUERIA LAS PALMAS" palm-tree logo
+  watermark in the corner. The research notes describe exactly this: "food truck with
+  screened-in porch seating".
+- The remaining photos are food photos attached to the same listing (21+ photos, restaurantji
+  "Customers' Favorites: Al Pastor"). No photos of other businesses were used. The yellow
+  "Taco Brothers" truck photos on the same listing were deliberately excluded (Taco Brothers LLC
+  is the flagged related/different entity at another address).
+
+Per-asset source URLs (restaurantji CDN, mirrored via sNN host variant):
+1. img/hero-truck.jpg
+   https://s10.localdatacdn.com/sc/greenville/9140502/original/wO2ns6NjTy.jpeg
+   Content: green truck + screened porch seating, daylight. Business's own logo watermark.
+2. img/food-avocado.jpg
+   https://s10.localdatacdn.com/sc/greenville/9140502/original/VpUcm2Rr6q.jpeg
+   Content: taco platter with avocado, radishes, lime, house sauces.
+3. img/food-alpastor.jpg
+   https://s9.localdatacdn.com/sc/greenville/9140502/original/T1koDbpbKT.jpg
+   Content: plate of al pastor street tacos (restaurantji lists Al Pastor as customers'
+   favorite). Tiny photo-credit watermark in one corner, food is the business's own listing photo.
+4. img/food-combo.jpg
+   https://s10.localdatacdn.com/sc/greenville/9140502/original/BpIpYBFzsw.jpg
+   Content: combo plate (tacos, rice, beans, lime) in to-go box.
+5. img/food-torta.jpg
+   https://s10.localdatacdn.com/sc/greenville/9140502/original/1DL4aP1wVP.jpg
+   Content: torta sandwich in to-go box with lime and radishes.
+6. img/food-nachos.jpg
+   https://s10.localdatacdn.com/sc/greenville/9140502/original/FRNa5Dry73.jpg
+   Content: loaded carne asada nachos with cotija.
+7. img/food-taco.jpg
+   https://s10.localdatacdn.com/sc/greenville/9140502/original/dAH339yT8v.jpg
+   Content: single street taco with cucumber and pickled onions.
+8. img/night-truck.jpg
+   https://s8.localdatacdn.com/sc/greenville/9140502/original/C6iAf3MUE6.jpg
+   Content: green truck at night with the lit seating tent (matches 11 AM-1 AM daily hours).
+
+Compression: all JPEGs resized to max 1400px, quality 80, each well under 5 MB.
+No stock photos. No concept art. No SVG/raster illustrations.

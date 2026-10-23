@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Website concept for Mr Gene's Beans, an ice cream, frozen yogurt, coffee, and gourmet popcorn shop in downtown Fairhope, Alabama.">
+<title>Mr Gene's Beans | Ice Cream, Coffee &amp; Gourmet Popcorn in Fairhope, AL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FFF7E9; --cream-deep:#FBEED4; --paper:#FFFDF7;
+    --ink:#3B2417; --ink-soft:#6E4C35;
+    --teal:#2E968B; --teal-dark:#1F6E65; --teal-soft:#DFF0EC;
+    --cherry:#D64545; --cherry-dark:#B03535;
+    --straw:#F2B134; --straw-soft:#FCEFC9;
+    --line:#E7D3B3;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Karla",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;overflow-x:hidden}
+  h1,h2,h3{font-family:"Zilla Slab",Georgia,"Times New Roman",serif;line-height:1.15;color:var(--ink)}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .hand{font-family:"Caveat",cursive}
+
+  /* ---------- preview disclosure ---------- */
+  .preview-bar{background:var(--ink);color:#F6E9D2;text-align:center;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;padding:9px 16px}
+  .preview-bar b{color:var(--straw)}
+
+  /* ---------- nav ---------- */
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,247,233,.96);border-bottom:2px solid var(--ink)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px;gap:12px}
+  .brand{font-family:"Zilla Slab",Georgia,serif;font-weight:700;font-size:22px;letter-spacing:.5px;text-decoration:none}
+  .brand .bean{color:var(--teal-dark)}
+  .navlinks{display:flex;gap:22px;align-items:center}
+  .navlinks a.nl{text-decoration:none;font-weight:600;font-size:15px;color:var(--ink-soft)}
+  .navlinks a.nl:hover{color:var(--teal-dark)}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;padding:12px 26px;font-size:16px;border:2px solid var(--ink);transition:transform .15s ease}
+  .btn-call{background:var(--teal);border-color:var(--teal-dark);color:#fff;box-shadow:3px 3px 0 var(--ink)}
+  .btn-call:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+  .btn-outline{background:transparent;color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+  .btn-outline:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+  .nav-cta{padding:9px 20px;font-size:14px}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;color:#fff;overflow:hidden;background:var(--ink)}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover}
+  .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,16,9,.55) 0%,rgba(28,16,9,.35) 45%,rgba(28,16,9,.72) 100%)}
+  .hero-inner{position:relative;padding-top:96px;padding-bottom:110px}
+  .float-badge{display:inline-block;background:var(--teal);color:#fff;font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding:9px 20px;border-radius:999px;border:2px solid #fff;box-shadow:3px 3px 0 rgba(0,0,0,.35);margin-bottom:22px}
+  .hero h1{font-size:clamp(44px,7.5vw,84px);color:#fff;text-shadow:2px 3px 0 rgba(0,0,0,.35);margin-bottom:14px}
+  .hero .since{font-family:"Caveat",cursive;font-size:26px;color:var(--straw);margin-bottom:14px}
+  .hero p.lede{font-size:19px;max-width:620px;color:#FFF3DE;margin-bottom:30px}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .hero .btn-outline{color:#fff;border-color:#fff;box-shadow:3px 3px 0 rgba(0,0,0,.4)}
+
+  /* ---------- ticket strip ---------- */
+  .ticket{background:var(--paper);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:26px 0}
+  .ticket .wrap{display:flex;gap:28px;align-items:center;justify-content:center;flex-wrap:wrap}
+  .ticket-item{display:flex;align-items:center;gap:12px;font-weight:600;font-size:16px}
+  .ticket-item .dot{width:12px;height:12px;border-radius:50%;background:var(--cherry);flex:none}
+  .ticket-item:nth-child(2) .dot{background:var(--teal)}
+  .ticket-item:nth-child(3) .dot{background:var(--straw)}
+
+  /* ---------- sections ---------- */
+  section{padding:76px 0}
+  .kicker{font-size:13px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--teal-dark);margin-bottom:10px}
+  h2.sec{font-size:clamp(30px,4.5vw,44px);margin-bottom:12px}
+  .sec-sub{color:var(--ink-soft);font-size:18px;max-width:640px;margin-bottom:34px}
+
+  /* ---------- float feature ---------- */
+  .float{background:var(--cream-deep)}
+  .float-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+  .float-copy p{margin-bottom:16px;font-size:17px}
+  .float-copy .menu-call{font-family:"Caveat",cursive;font-size:24px;color:var(--cherry-dark);margin:6px 0 2px}
+  .comp-list{list-style:none;margin:20px 0 24px;border:2px dashed var(--ink);border-radius:14px;padding:18px 22px;background:var(--paper)}
+  .comp-list li{padding:7px 0 7px 28px;position:relative;font-weight:600;font-size:16px}
+  .comp-list li::before{content:"";position:absolute;left:4px;top:15px;width:10px;height:10px;border-radius:50%;background:var(--teal)}
+  .float-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .float-photos figure{border-radius:16px;overflow:hidden;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--line);background:var(--paper)}
+  .float-photos figure:first-child{grid-column:1/-1}
+  .float-photos img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
+  .float-photos figcaption{padding:8px 14px;font-size:13px;color:var(--ink-soft);background:var(--paper)}
+
+  /* ---------- menu ---------- */
+  .menu-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+  .menu-card{background:var(--paper);border:2px solid var(--ink);border-radius:18px;padding:26px 24px;box-shadow:5px 5px 0 var(--cream-deep);position:relative}
+  .menu-card .tab{position:absolute;top:-16px;left:22px;background:var(--cherry);color:#fff;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 14px;border-radius:999px;border:2px solid var(--ink)}
+  .menu-card.alt .tab{background:var(--teal)}
+  .menu-card h3{font-size:24px;margin:8px 0 10px}
+  .menu-card ul{list-style:none}
+  .menu-card li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:15.5px;color:var(--ink-soft)}
+  .menu-card li:last-child{border-bottom:0}
+  .menu-card li b{color:var(--ink);font-weight:700}
+  .menu-note{margin-top:26px;font-size:15px;color:var(--ink-soft);text-align:center}
+
+  /* ---------- rating strip ---------- */
+  .rating{background:var(--ink);color:#F6E9D2;text-align:center;padding:40px 0}
+  .rating .stars{color:var(--straw);font-size:30px;letter-spacing:6px;margin-bottom:8px}
+  .rating p{font-size:19px;font-weight:600}
+  .rating small{display:block;margin-top:6px;font-size:14px;color:#C9B18F;font-weight:400}
+
+  /* ---------- gallery ---------- */
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
+  .gallery-grid figure{border-radius:16px;overflow:hidden;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--line);background:var(--paper)}
+  .gallery-grid img{width:100%;height:230px;object-fit:cover}
+  .gallery-grid figcaption{padding:10px 16px;font-size:14px;color:var(--ink-soft);background:var(--paper)}
+
+  /* ---------- visit ---------- */
+  .visit{background:var(--cream-deep)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px}
+  .visit-card{background:var(--paper);border:2px solid var(--ink);border-radius:18px;padding:28px;box-shadow:5px 5px 0 var(--cream-deep)}
+  .visit-card h3{font-size:24px;margin-bottom:14px}
+  .hours{width:100%;border-collapse:collapse;font-size:16px}
+  .hours td{padding:9px 4px;border-bottom:1px dashed var(--line)}
+  .hours tr:last-child td{border-bottom:0}
+  .hours td:last-child{text-align:right;font-weight:700}
+  .hours-note{margin-top:14px;font-size:14px;color:var(--ink-soft)}
+  .visit-card p.addr{font-size:17px;margin-bottom:8px}
+  .visit-card .big-call{display:inline-block;margin:14px 0 18px}
+  .fb-btn{display:inline-block;text-decoration:none;font-weight:700;background:var(--teal-soft);border:2px solid var(--teal-dark);color:var(--teal-dark);border-radius:999px;padding:11px 24px}
+  .fb-btn:hover{background:#cde8e2}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--ink);color:#C9B18F;padding:44px 0 34px;font-size:14.5px}
+  footer .wrap{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap}
+  footer b{color:#F6E9D2}
+  footer .disc{max-width:520px}
+  footer a{color:var(--straw)}
+
+  /* ---------- mobile ---------- */
+  @media(max-width:900px){
+    .navlinks a.nl{display:none}
+    .float-grid,.visit-grid{grid-template-columns:1fr}
+    .menu-grid,.gallery-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:560px){
+    section{padding:56px 0}
+    .menu-grid,.gallery-grid{grid-template-columns:1fr}
+    .hero-inner{padding-top:72px;padding-bottom:84px}
+    .hero h1{font-size:clamp(32px,9vw,42px);line-height:1.08}
+    .nav-cta{padding:8px 14px;font-size:13px}
+    .brand{font-size:19px}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar"><b>Website Concept</b> &nbsp;-&nbsp; A design preview prepared for Mr Gene's Beans. This is not the business's website.</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Mr Gene's <span class="bean">Beans</span></a>
+    <div class="navlinks">
+      <a class="nl" href="#float">The Float</a>
+      <a class="nl" href="#menu">Menu</a>
+      <a class="nl" href="#gallery">Gallery</a>
+      <a class="nl" href="#visit">Visit</a>
+      <a class="btn btn-call nav-cta" href="tel:+12519286915">Call (251) 928-6915</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg"><img src="img/hero.jpg" alt="Mr Gene's Beans storefront in downtown Fairhope with its turquoise Home of the Fairhope Float sign"></div>
+  <div class="hero-shade"></div>
+  <div class="wrap hero-inner">
+    <span class="float-badge">Home of the Fairhope Float</span>
+    <h1>Mr Gene's Beans</h1>
+    <p class="since hand">serving smiles in downtown Fairhope since 1993</p>
+    <p class="lede">An old-school ice cream, frozen yogurt, coffee, and gourmet popcorn shop on De La Mare Ave, in the heart of Fairhope, Alabama.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-call" href="tel:+12519286915">Call (251) 928-6915</a>
+      <a class="btn btn-outline" href="#menu">See the menu</a>
+    </div>
+  </div>
+</header>
+
+<div class="ticket">
+  <div class="wrap">
+    <div class="ticket-item"><span class="dot"></span>Hand-dipped ice cream</div>
+    <div class="ticket-item"><span class="dot"></span>Frozen yogurt and floats</div>
+    <div class="ticket-item"><span class="dot"></span>Full coffee menu and gourmet popcorn</div>
+  </div>
+</div>
+
+<section class="float" id="float">
+  <div class="wrap">
+    <div class="kicker">The signature</div>
+    <h2 class="sec">The Fairhope Float</h2>
+    <p class="sec-sub">The drink that put the shop on the map. Their menu calls it the Official Dessert of Fairhope.</p>
+    <div class="float-grid">
+      <div class="float-copy">
+        <p>It starts with frozen yogurt, blended with coffee or an iced mochaccino, then crowned with whipped cream and a dusting of your pick: chocolate, vanilla, cinnamon, or nutmeg.</p>
+        <p>Prefer a classic? They also pour the Pirate Float and the old-fashioned Coke Float.</p>
+        <p class="menu-call">Get your own. No sharing.</p>
+        <ul class="comp-list">
+          <li>Frozen yogurt</li>
+          <li>Coffee or iced mochaccino</li>
+          <li>Whipped cream</li>
+          <li>Chocolate, vanilla, cinnamon, or nutmeg</li>
+        </ul>
+        <a class="btn btn-call" href="tel:+12519286915">Questions? Call (251) 928-6915</a>
+      </div>
+      <div class="float-photos">
+        <figure>
+          <img src="img/float-closeup.jpg" alt="Fairhope Float with cinnamon-dusted whipped cream">
+          <figcaption>The Fairhope Float, fresh from the counter</figcaption>
+        </figure>
+        <figure>
+          <img src="img/float-interior.jpg" alt="Fairhope Float inside Mr Gene's Beans with frozen yogurt machines behind the counter">
+          <figcaption>Inside the shop on De La Mare Ave</figcaption>
+        </figure>
+        <figure>
+          <img src="img/float-counter.jpg" alt="Fairhope Float with spiced whipped cream on the shop counter">
+          <figcaption>Whipped cream, dusted with your pick of spice</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <div>
+        <div class="kicker">What they serve</div>
+        <h2 class="sec">The Menu</h2>
+        <p class="sec-sub">Scoops, sips, and snacks from a shop that has done this since 1993.</p>
+      </div>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <span class="tab">Scoops</span>
+        <h3>Hand-Dipped Ice Cream</h3>
+        <ul>
+          <li><b>Sundaes</b> with hot fudge and toppings</li>
+          <li><b>Shakes and malts</b>, thick and classic</li>
+          <li><b>Cookie ice cream sandwiches</b></li>
+          <li><b>Homemade waffle cones</b></li>
+          <li><b>Butter pecan</b> and rotating flavors</li>
+        </ul>
+      </div>
+      <div class="menu-card alt">
+        <span class="tab">Swirls</span>
+        <h3>Frozen Yogurt</h3>
+        <ul>
+          <li><b>The Fairhope Float</b> base, made to order</li>
+          <li><b>Frozen yogurt</b> cups and cones</li>
+          <li><b>Non-dairy sorbet</b>, including pomegranate</li>
+          <li>Twist flavors at the machine</li>
+        </ul>
+      </div>
+      <div class="menu-card">
+        <span class="tab">Sips</span>
+        <h3>Coffee &amp; More</h3>
+        <ul>
+          <li><b>Cafe au lait</b>, cappuccino, and latte</li>
+          <li><b>Mocha</b> and espresso</li>
+          <li><b>Iced coffee</b>, iced tea, and lemonade</li>
+          <li><b>Hot chocolate</b></li>
+          <li>Almond and soy milk available</li>
+        </ul>
+      </div>
+      <div class="menu-card alt">
+        <span class="tab">Crunch</span>
+        <h3>Gourmet Popcorn</h3>
+        <ul>
+          <li><b>Fairhope Pop</b>, caramel and cheddar</li>
+          <li><b>Dill pickle</b></li>
+          <li><b>Jalapeno cheddar</b></li>
+          <li><b>BBQ bacon</b> and more flavors</li>
+        </ul>
+      </div>
+      <div class="menu-card">
+        <span class="tab">Take home</span>
+        <h3>Candy &amp; Goods</h3>
+        <ul>
+          <li><b>Retail candy</b> by the bag</li>
+          <li><b>Coffee beans</b> to brew at home</li>
+          <li><b>Syrups</b> for your own floats</li>
+          <li><b>T-shirts</b> and shop gear</li>
+        </ul>
+      </div>
+      <div class="menu-card alt">
+        <span class="tab">Porch life</span>
+        <h3>Stay Awhile</h3>
+        <ul>
+          <li><b>Outdoor umbrella tables</b> on the porch</li>
+          <li><b>Turquoise bar stools</b> at the window counter</li>
+          <li><b>Takeout</b> ready for the walk to the bay</li>
+          <li>Gift cards available</li>
+        </ul>
+      </div>
+    </div>
+    <p class="menu-note">Menu items come from the shop's public listings. Flavors rotate, so call ahead if you have your heart set on one.</p>
+  </div>
+</section>
+
+<div class="rating">
+  <div class="wrap">
+    <div class="stars" aria-hidden="true">★★★★★</div>
+    <p>Rated 4.8 out of 5 from 252 Google reviews</p>
+    <small>Rating shown once, with source and review count, per Freightfolio review policy.</small>
+  </div>
+</div>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="kicker">From the shop</div>
+    <h2 class="sec">A Look Inside</h2>
+    <p class="sec-sub">Real photos of Mr Gene's Beans in downtown Fairhope.</p>
+    <div class="gallery-grid">
+      <figure>
+        <img src="img/hero.jpg" alt="Mr Gene's Beans storefront with turquoise sign and porch">
+        <figcaption>The storefront at 302 De La Mare Ave</figcaption>
+      </figure>
+      <figure>
+        <img src="img/life-at-beans.jpg" alt="Customers enjoying ice cream and popcorn at Mr Gene's Beans">
+        <figcaption>Regulars, scoops, and Fairhope Pop</figcaption>
+      </figure>
+      <figure>
+        <img src="img/storefront.jpg" alt="Mr Gene's Beans from the street with patio umbrellas">
+        <figcaption>Umbrella tables on a Fairhope afternoon</figcaption>
+      </figure>
+      <figure>
+        <img src="img/float-interior.jpg" alt="Fairhope Float at the counter inside the shop">
+        <figcaption>At the counter, yogurt machines behind</figcaption>
+      </figure>
+      <figure>
+        <img src="img/float-closeup.jpg" alt="Close-up of a Fairhope Float with spiced whipped cream">
+        <figcaption>Up close: the Fairhope Float</figcaption>
+      </figure>
+      <figure>
+        <img src="img/float-counter.jpg" alt="Fairhope Float on the wooden counter">
+        <figcaption>Ready to carry out to the porch</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="kicker">Come say hi</div>
+    <h2 class="sec">Visit the Shop</h2>
+    <p class="sec-sub">Downtown Fairhope, steps from the bay. Walk in for a float, or call ahead.</p>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3>Find us</h3>
+        <p class="addr"><b>Mr Gene's Beans</b><br>302 De La Mare Ave<br>Fairhope, AL 36532</p>
+        <a class="btn btn-call big-call" href="tel:+12519286915">Call (251) 928-6915</a>
+        <p><a class="fb-btn" href="https://www.facebook.com/Mr-Genes-Beans-149371151756498/" rel="noopener">Follow on Facebook</a></p>
+      </div>
+      <div class="visit-card">
+        <h3>Hours</h3>
+        <table class="hours">
+          <tr><td>Monday – Thursday</td><td>10 AM – 9 PM</td></tr>
+          <tr><td>Friday – Saturday</td><td>10 AM – 10 PM</td></tr>
+          <tr><td>Sunday</td><td>12 – 6 PM</td></tr>
+        </table>
+        <p class="hours-note">Sunday hours vary by listing; check the shop's Facebook page before a Sunday visit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="disc">
+      <b>Website Concept: Design Preview.</b> This page is a design mockup prepared for Mr Gene's Beans by Freightfolio. It is not the business's website and does not imply client work or endorsement.
+    </div>
+    <div>
+      <b>Mr Gene's Beans</b><br>
+      302 De La Mare Ave, Fairhope, AL 36532<br>
+      <a href="tel:+12519286915">(251) 928-6915</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+PHOTO PROVENANCE — French Kiss Pastries concept site
+Batch 27, built 2026-10-22. All assets are REAL photos of the actual business,
+harvested from the business's public Restaurantji listing page
+(https://www.restaurantji.com/ms/ocean-springs/french-kiss-pastries-/menu/),
+customer-taken photos posted to that listing. No stock photos used.
+No other business's photos used.
+
+hero.jpg
+  Source: https://cdn10.localdatacdn.com/ms/ocean-springs/3689986/original/3LoJrZHjWw.jpg
+  Identity match: the shop's illuminated pastry display case, photographed inside
+  French Kiss Pastries. Matches the takingthekids.com description of the glass
+  case full of macarons, eclairs and croissants. Compressed 1800px JPG.
+
+case.jpg
+  Source: https://cdn10.localdatacdn.com/ms/ocean-springs/3689986/original/Ot1YgArOWB.jpeg
+  Identity match: close-up of the same in-shop pastry case (eclairs, quiches,
+  3-inch cakes visible). Compressed 1400px JPG.
+
+fruit-pastry.jpg
+  Source: https://cdn10.localdatacdn.com/ms/ocean-springs/3689986/original/Kt5WlswS1u.jpeg
+  Identity match: a 3-inch fresh-fruit pastry cup from the shop's case, same
+  style as the desserts on the shop's own dessert menu board. Compressed 1200px JPG.
+
+macarons.jpg
+  Source: https://cdn10.localdatacdn.com/ms/ocean-springs/3689986/original/LGQVWoyknE.jpg
+  Identity match: the shop's own chalkboard macaron sign (flavors: lemon,
+  raspberry, coffee, pistachio, mango, chocolate, vanilla, lychee, blood orange,
+  lemon yuzu, coconut pineapple, banana guava), photographed in-store.
+  Compressed 1200px JPG.
+
+espresso.jpg
+  Source: https://cdn9.localdatacdn.com/ms/ocean-springs/3689986/original/50xhd4ydNh.jpg
+  Identity match: the shop's espresso bar and menu boards (Specialty Drinks,
+  Lattes and More, Croissant Sandwiches), photographed in-store.
+  Compressed 1400px JPG.
+
+interior.jpg
+  Source: https://cdn7.localdatacdn.com/ms/ocean-springs/3689986/original/zIAN7bGlkt.jpg
+  Identity match: the cafe seating area inside French Kiss Pastries (yellow
+  armchairs, black metal chairs, green wall, pastry case edge at right).
+  Compressed 1400px JPG.
+
+CLIPART CHECK: PASS — no illustrations, no SVG art, no CSS-drawn graphics on the
+site. All visuals are the real photos above; nav icons are plain text labels.

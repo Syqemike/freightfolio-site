@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Electrik Maid Bake Shop, Biloxi MS - Website Concept</title>
+<meta name="description" content="Website concept for Electrik Maid Bake Shop, a family-owned Biloxi bakery since 1924. King cakes, donuts, petit fours, baklava. 1833 Pass Rd, Biloxi MS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#f7f1e3; --cream2:#efe5cf; --ink:#33241a; --brown:#6b4a2f;
+    --brick:#a8442f; --brick-d:#8a3524; --gold:#c99b3f; --green:#4a6b4f;
+    --card:#fffdf7; --line:#e2d5b8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,'Segoe UI',Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:var(--brick)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  .eyebrow{display:inline-block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--brick);font-weight:600;margin-bottom:12px}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.12;color:var(--ink)}
+  /* top bar */
+  header.top{position:sticky;top:0;z-index:50;background:rgba(247,241,227,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .top-inner{display:flex;align-items:center;gap:14px;padding:10px 20px;max-width:1080px;margin:0 auto}
+  .brand{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;white-space:nowrap}
+  .concept-tag{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--cream);padding:4px 9px;border-radius:99px;white-space:nowrap}
+  nav.main{margin-left:auto;display:flex;gap:18px}
+  nav.main a{font-size:14px;font-weight:500;color:var(--ink);text-decoration:none}
+  nav.main a:hover{color:var(--brick)}
+  .btn{display:inline-block;background:var(--brick);color:#fff;font-weight:600;font-size:15px;text-decoration:none;padding:13px 26px;border-radius:8px;border:1px solid var(--brick-d);transition:background .15s}
+  .btn:hover{background:var(--brick-d)}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:var(--cream)}
+  .top .btn{padding:9px 18px;font-size:14px}
+  /* hero */
+  .hero{padding:56px 0 48px;border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .hero h1{font-size:clamp(40px,6vw,64px);margin:6px 0 10px}
+  .hero .since{font-family:'Fraunces',Georgia,serif;font-size:20px;color:var(--brown);margin-bottom:14px}
+  .hero .slogan{font-size:17px;font-style:italic;color:var(--brown);border-left:3px solid var(--gold);padding-left:14px;margin:18px 0}
+  .rating{font-size:14px;color:var(--brown);margin:16px 0 24px}
+  .rating strong{color:var(--ink)}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .logo-frame{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:34px;box-shadow:0 18px 44px rgba(51,36,26,.12);text-align:center}
+  .logo-frame img{margin:0 auto}
+  .logo-frame figcaption{font-size:12.5px;color:var(--brown);margin-top:14px}
+  /* heritage strip */
+  .strip{background:var(--ink);color:var(--cream);padding:34px 0}
+  .strip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+  .strip .num{font-family:'Fraunces',Georgia,serif;font-size:34px;color:var(--gold)}
+  .strip p{font-size:14px;color:#d9cdb4;margin-top:6px}
+  /* sections */
+  section.block{padding:64px 0}
+  section.block.alt{background:var(--cream2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-head{max-width:640px;margin-bottom:36px}
+  .sec-head h2{font-size:clamp(30px,4.4vw,42px);margin-bottom:10px}
+  .sec-head p{color:var(--brown);font-size:16.5px}
+  /* treats */
+  .treats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .treat{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .treat .ph{aspect-ratio:4/3;overflow:hidden;background:#e9dfc8}
+  .treat .ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+  .treat:hover .ph img{transform:scale(1.04)}
+  .treat .tx{padding:18px 20px 20px}
+  .treat h3{font-size:21px;margin-bottom:6px}
+  .treat p{font-size:14.5px;color:var(--brown)}
+  .badge{display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;background:var(--green);color:#fff;padding:3px 9px;border-radius:99px;margin-bottom:8px}
+  .photo-cap{font-size:11.5px;color:#8a7a5f;margin-top:8px;font-style:italic}
+  .preorder{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;background:var(--ink);color:var(--cream);border-radius:12px;overflow:hidden}
+  .preorder .ph{min-height:260px}
+  .preorder .ph img{width:100%;height:100%;object-fit:cover}
+  .preorder .tx{padding:36px 34px}
+  .preorder h3{color:var(--cream);font-size:28px;margin-bottom:10px}
+  .preorder p{color:#d9cdb4;font-size:15.5px;margin-bottom:18px}
+  /* story */
+  .story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start}
+  .ad-frame{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;box-shadow:0 12px 32px rgba(51,36,26,.10)}
+  .timeline{list-style:none;margin-top:8px}
+  .timeline li{display:grid;grid-template-columns:86px 1fr;gap:16px;padding:16px 0;border-bottom:1px dashed var(--line)}
+  .timeline li:last-child{border-bottom:none}
+  .timeline .yr{font-family:'Fraunces',Georgia,serif;font-size:19px;color:var(--brick);font-weight:700}
+  .timeline p{font-size:15px;color:var(--brown)}
+  /* family */
+  .fam-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .fam-grid img{border-radius:12px;border:1px solid var(--line);box-shadow:0 12px 32px rgba(51,36,26,.10)}
+  .fam-grid p{font-size:16.5px;color:var(--brown);margin-bottom:14px}
+  /* visit */
+  .visit-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
+  .visit-card h3{font-size:22px;margin-bottom:8px}
+  .visit-card p{font-size:15.5px;color:var(--brown);margin-bottom:8px}
+  .hours{width:100%;border-collapse:collapse;margin-top:6px}
+  .hours td{padding:8px 0;border-bottom:1px dashed var(--line);font-size:15px}
+  .hours td:last-child{text-align:right;color:var(--brown)}
+  .big-phone{font-family:'Fraunces',Georgia,serif;font-size:30px;color:var(--ink);text-decoration:none}
+  .big-phone:hover{color:var(--brick)}
+  /* footer */
+  footer{background:var(--ink);color:#cbbfa4;padding:40px 0;font-size:13.5px}
+  footer .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:28px}
+  footer h4{font-family:'Fraunces',Georgia,serif;color:var(--cream);font-size:18px;margin-bottom:8px}
+  footer a{color:var(--gold)}
+  .fine{margin-top:24px;padding-top:18px;border-top:1px solid #4a3a2a;font-size:12px;color:#9a8c70}
+  @media (max-width:860px){
+    nav.main{display:none}
+    .hero-grid,.story-grid,.fam-grid,.visit-card,.preorder{grid-template-columns:1fr}
+    .treats{grid-template-columns:1fr 1fr}
+    .strip-grid{grid-template-columns:1fr;gap:18px}
+    .hero{padding:40px 0}
+    footer .wrap{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){.treats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#top">Electrik Maid Bake Shop</a>
+    <span class="concept-tag">Website Concept</span>
+    <nav class="main">
+      <a href="#story">Our Story</a>
+      <a href="#treats">Treats</a>
+      <a href="#family">Family</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn" href="tel:+12283881014" style="margin-left:auto">Call</a>
+  </div>
+</header>
+
+<div class="wrap" id="top">
+  <div class="hero">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Design Preview &middot; Not the business's official site</span>
+        <h1>Electrik Maid Bake Shop</h1>
+        <p class="since">A Biloxi bakery since 1924</p>
+        <p>A century of scratch baking on the Mississippi Gulf Coast.
+        King cakes for Mardi Gras, glazed donuts warm from the oven, petit
+        fours, eclairs, baklava, breads and rolls, all made the old way.</p>
+        <p class="slogan">&ldquo;You Taste the Difference.&rdquo;</p>
+        <p class="rating"><strong>Rated 4.8 from 31 Google reviews.</strong></p>
+        <div class="cta-row">
+          <a class="btn" href="tel:+12283881014">Call (228) 388-1014</a>
+          <a class="btn ghost" href="#treats">See the treats</a>
+        </div>
+      </div>
+      <figure class="logo-frame">
+        <img src="img/logo.png" alt="The Electrik Maid Bake Shop logo: Since 1924, 1833 Pass Rd, Biloxi MS">
+        <figcaption>The shop's own logo, in use at 1833 Pass Rd. Real business photo.</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap strip-grid">
+    <div><div class="num">1924</div><p>The year the doors opened in downtown Biloxi</p></div>
+    <div><div class="num">100</div><p>Years of baking in Biloxi, still family-owned</p></div>
+    <div><div class="num">1981</div><p>At the corner of Pass Rd and Veterans Ave ever since</p></div>
+  </div>
+</div>
+
+<section class="block" id="treats">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">From the ovens</span>
+      <h2>Treats worth the early morning</h2>
+      <p>The case changes with the season, but these are the names regulars
+      ask for by heart.</p>
+    </div>
+    <div class="treats">
+      <article class="treat">
+        <div class="ph"><img src="img/king-cake.jpg" alt="King cake with purple, green and gold sugar"></div>
+        <div class="tx"><h3>King Cakes</h3><p>The Mardi Gras tradition, iced and
+        sugared in purple, green and gold.</p><p class="photo-cap">Stock photo</p></div>
+      </article>
+      <article class="treat">
+        <div class="ph"><img src="img/donuts.jpg" alt="Rows of glazed donuts"></div>
+        <div class="tx"><h3>Glazed Donuts</h3><p>Scratch-made and glazed by hand,
+        the reason the line forms early.</p><p class="photo-cap">Stock photo</p></div>
+      </article>
+      <article class="treat">
+        <div class="ph"><img src="img/petitfours.jpg" alt="Decorated petit fours"></div>
+        <div class="tx"><h3>Petit Fours</h3><p>Bite-size cakes with specialty
+        icing, made for celebrations.</p><p class="photo-cap">Stock photo</p></div>
+      </article>
+      <article class="treat">
+        <div class="ph"><img src="img/baklava.png" alt="Flaky Electrik Maid baklava"></div>
+        <div class="tx"><span class="badge">Baked at Electrik Maid</span><h3>Baklava</h3><p>Flaky layers baked to
+        perfection, a house specialty.</p><p class="photo-cap">Real photo of Electrik Maid baklava</p></div>
+      </article>
+      <article class="treat">
+        <div class="ph"><img src="img/eclairs.jpg" alt="Chocolate and custard eclairs"></div>
+        <div class="tx"><h3>Eclairs</h3><p>Pastry cream and custard under a
+        fondant icing.</p><p class="photo-cap">Stock photo</p></div>
+      </article>
+      <article class="treat">
+        <div class="ph"><img src="img/breads.jpg" alt="Fresh loaves of bread"></div>
+        <div class="tx"><h3>Breads and Rolls</h3><p>Loaves, rolls and holiday
+        breads for the family table.</p><p class="photo-cap">Stock photo</p></div>
+      </article>
+    </div>
+    <div class="preorder">
+      <div class="ph"><img src="img/wedding-cake.jpg" alt="Wedding cake"></div>
+      <div class="tx">
+        <span class="eyebrow" style="color:var(--gold)">Made to order</span>
+        <h3>Wedding and birthday cakes</h3>
+        <p>Electrik Maid takes pre-orders for wedding and birthday cakes, plus
+        cookies, pies, cream puffs, napoleons and seasonal fruit cake. Call
+        ahead and the bakers will have it ready.</p>
+        <a class="btn" href="tel:+12283881014">Call to pre-order</a>
+        <p class="photo-cap" style="color:#9a8c70">Stock photo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="story">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">A century in Biloxi</span>
+      <h2>Our story</h2>
+      <p>One hundred years of fires, depressions and hurricanes, and the ovens
+      never really stopped.</p>
+    </div>
+    <div class="story-grid">
+      <figure class="ad-frame">
+        <img src="img/ad1924.png" alt="Electrik Maid Bake Shop opening advertisement from 1924">
+        <figcaption class="photo-cap" style="text-align:center;margin-top:12px">The shop's own 1924 opening advertisement. Real business photo.</figcaption>
+      </figure>
+      <ul class="timeline">
+        <li><span class="yr">1924</span><p>Electrik Maid Bake Shop opens its doors
+        on April 12 in downtown Biloxi, founded by Donald Entringer and A.W.
+        Bissett with electric ovens that gave the shop its name.</p></li>
+        <li><span class="yr">1950s</span><p>Paul Balius, the head baker, buys the
+        shop and keeps the family trade going from the Porter Avenue location.</p></li>
+        <li><span class="yr">1981</span><p>The bakery settles at the southwest
+        corner of Veterans Avenue and Pass Road, 1833 Pass Rd, where it still
+        stands today.</p></li>
+        <li><span class="yr">2024</span><p>The shop celebrates 100 years of
+        baking, with coverage by WLOX and a city proclamation. Grandson Harrel
+        Balius and family carry the tradition forward.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="family">
+  <div class="wrap">
+    <div class="fam-grid">
+      <div>
+        <span class="eyebrow">The family</span>
+        <h2 style="font-size:clamp(30px,4.4vw,42px);margin-bottom:16px">Still family, still Biloxi</h2>
+        <p>Electrik Maid has been family-owned since the beginning. Today the
+        Balius family runs the ovens at 1833 Pass Rd, baking the same way the
+        shop always has.</p>
+        <p>Stop in any morning and you are likely to be greeted by the people
+        who baked what is in the case.</p>
+        <p class="photo-cap">Real photo: Harrel and Nora Balius of the Electrik
+        Maid Bake Shop, in the shop.</p>
+      </div>
+      <img src="img/owners.png" alt="Harrel and Nora Balius of the Electrik Maid Bake Shop">
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Come by</span>
+      <h2>Visit the bake shop</h2>
+      <p>Mornings are when it happens. The case is fullest early.</p>
+    </div>
+    <div class="visit-card">
+      <div>
+        <h3>Find us</h3>
+        <p>1833 Pass Rd<br>Biloxi, MS 39531<br>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=1833+Pass+Rd+Biloxi+MS+39531">Get directions</a></p>
+        <h3 style="margin-top:22px">Hours</h3>
+        <table class="hours">
+          <tr><td>Monday to Saturday</td><td>5:30 AM to 1:00 PM</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <div>
+        <h3>Questions? Pre-orders?</h3>
+        <p>Call the shop and talk to the bakers directly.</p>
+        <p style="margin:14px 0 20px"><a class="big-phone" href="tel:+12283881014">(228) 388-1014</a></p>
+        <a class="btn" href="tel:+12283881014">Call the bakery</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Electrik Maid Bake Shop</h4>
+      <p>1833 Pass Rd, Biloxi, MS 39531 &middot; <a href="tel:+12283881014">(228) 388-1014</a></p>
+      <p style="margin-top:8px">This page is a <strong>Website Concept / Design
+      Preview</strong> prepared by Freightfolio. It is a design mockup, not the
+      business's official website, and does not imply the business endorsed it.</p>
+    </div>
+    <div>
+      <h4>Photo sources</h4>
+      <p>Real business photos: Electrik Maid logo, baklava, Harrel and Nora
+      Balius, and the 1924 opening ad appear courtesy of coverage of the
+      shop's centennial (Biloxi Public Library local history collection).
+      All other food photos are labeled stock photos.</p>
+    </div>
+  </div>
+  <div class="wrap fine">Concept built October 2026. The Google rating shown in the preview above is cited
+  once, from Google place data as verified in the research notes.</div>
+</footer>
+
+</body>
+</html>

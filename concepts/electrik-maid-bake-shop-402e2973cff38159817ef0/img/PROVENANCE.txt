@@ -1,0 +1,58 @@
+IMAGE PROVENANCE — Electrik Maid Bake Shop (electrik-maid-bake-shop-402e2973cff38159817ef0)
+Verified 2026-10-22. Business: Electrik Maid Bake Shop, 1833 Pass Rd, Biloxi, MS 39531.
+
+REAL BUSINESS ASSETS (photos/assets of the actual business, harvested from the
+centennial article "Celebrating a Century with Biloxi's Most Iconic Bakery",
+https://biloxishrimpco.com/blog/celebrating-a-century-with-biloxis-most-iconic-bakery/
+— all images there credited to the Local History and Genealogy Department /
+Biloxi Public Library / Harrison County Library System):
+1. logo.png — THE business's authentic logo (reads "Electrik Maid Bake Shop /
+   Since 1924 / 1833 Pass Rd. Biloxi MS 39531 / 228-388-1014").
+   Source: https://biloxishrimpco.com/product_images/uploaded_images/electrik-maid-logo.png
+   Identity match: name + address + phone all match the CRM record. Used in hero.
+2. baklava.png — Real photo of Electrik Maid's baklava ("The flaky layers of
+   Electrik Maid Baklava baked to perfection").
+   Source: https://biloxishrimpco.com/product_images/uploaded_images/elektrik-maid-baklava.png
+   Identity match: published in the article about this exact shop. Used in Treats.
+3. owners.png — Real photo of Harrel and Nora Balius of the Electrik Maid Bake
+   Shop, photographed inside the shop.
+   Source: https://biloxishrimpco.com/product_images/uploaded_images/harrel-and-nora-balius.png
+   Identity match: names match the research notes (family-owned; Harrel Balius,
+   grandson of Paul Balius). Used in Family section.
+4. ad1924.png — The business's own 1924 opening advertisement ("Electrik Maid
+   Bake Shop ... to open Saturday, April 12th ... 'TASTE THE DIFFERENCE'").
+   Source: https://biloxishrimpco.com/product_images/uploaded_images/electrik-maid-1924-opening-ad.png
+   Identity match: names the shop and matches the 1924 founding in research notes.
+   Used in Our Story.
+NOTE: the business's Facebook page (facebook.com/111637142204986) holds real
+photos but the facebook-cli timeline/profile reads are server-side gated for
+this page (HTTP 403 "Profile Not Accessible"), and the page is login-walled
+for logged-out fetch. The four assets above are used instead.
+
+STOCK PHOTOS (Wikimedia Commons, free licenses, each captioned "Stock photo"
+on the site; verified visually to match the subject before use):
+5. king-cake.jpg — "KingcakeHaydelPlain21Jan2008.jpg", real king cake with
+   purple/green/gold sugar and baby trinket (Haydel's Bakery, New Orleans).
+   Source file page: https://commons.wikimedia.org/wiki/Category:King_cake_favors
+   Direct: https://upload.wikimedia.org/wikipedia/commons/b/b3/KingcakeHaydelPlain21Jan2008.jpg
+   License: CC BY-SA 3.0. Used for King Cakes card.
+6. donuts.jpg — "Glazed Donuts (Coffee An), Westport, CT 06880 USA - Feb 2013.jpg",
+   rows of glazed donuts.
+   Direct: https://upload.wikimedia.org/wikipedia/commons/4/44/Glazed_Donuts_%28Coffee_An%29%2C_Westport%2C_CT_06880_USA_-_Feb_2013.jpg
+   License: CC BY-SA 3.0. Used for Glazed Donuts card.
+7. petitfours.jpg — "Petit fours from Dragonfly Cakes.jpg", decorated petit fours.
+   Direct: https://upload.wikimedia.org/wikipedia/commons/2/27/Petit_fours_from_Dragonfly_Cakes.jpg
+   License: CC BY-SA 2.0. Used for Petit Fours card.
+8. eclairs.jpg — "Two Safeway Chocolate Eclairs (19043880936).jpg", one chocolate
+   eclair and one custard eclair.
+   Direct: https://upload.wikimedia.org/wikipedia/commons/4/4c/Two_Safeway_Chocolate_Eclairs_%2819043880936%29.jpg
+   License: CC BY-SA 2.0. Used for Eclairs card.
+9. breads.jpg — "Loaves of Bread (Unsplash).jpg", fresh bread loaves.
+   Direct: https://upload.wikimedia.org/wikipedia/commons/2/26/Loaves_of_Bread_%28Unsplash%29.jpg
+   License: CC0. Used for Breads and Rolls card.
+10. wedding-cake.jpg — "Wedding Cake - White and Blue.jpg", white wedding cake.
+    Direct: https://upload.wikimedia.org/wikipedia/commons/1/13/Wedding_Cake_-_White_and_Blue.jpg
+    License: CC BY 2.0. Used for the wedding/birthday pre-order banner.
+
+All images compressed; no file over 5 MB. No clipart, no SVG illustrations,
+no generated imagery anywhere on the site.

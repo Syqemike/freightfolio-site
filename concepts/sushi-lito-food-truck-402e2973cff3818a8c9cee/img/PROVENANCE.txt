@@ -1,0 +1,38 @@
+PROVENANCE — Sushi-Lito Food Truck concept assets
+Business: Sushi-Lito Food Truck, 5422 S 12th Ave, Tucson, AZ 85706. Phone (520) 639-4863.
+All four assets are real photos/graphics of THIS business. Identity/location match verified
+by visual inspection 2026-10-22: each shows the "sushi ITO"/"Sushi-Lito" brand name and/or
+the 12th Ave Tucson location/phone.
+
+1. hero.jpg (compressed from original)
+   Source URL: https://worldlocationmap.com/sushi-lito-food-truck-mexican-sushi-msnlcwq
+   (hero image served from https://lh5.googleusercontent.com/p/AF1QipMXPJV98vzyJBaT-AoA0qGpkmUr5cEqKS5rhvcR)
+   Match: photo of the red Sushi-Lito food truck at night; "sushi ITO" menu board visible;
+   listed on the worldlocationmap page for Sushi-lito Food Truck Mexican Sushi, Tucson.
+   Used as: index.html hero.
+
+2. truck-dusk.jpg (converted from PNG, compressed)
+   Source URL: https://foodtrucksworld.com/wp-content/uploads/2024/01/Sushi-Lito-Food-Truck.png
+   (page: https://foodtrucksworld.com/sushi-lito-food-truck-mexican-sushi-tucson/)
+   Match: "sushi ITO" wrapped truck at dusk, Tucson; OPEN sign; diners at tables.
+   Used as: index.html About section.
+
+3. menu-graphic.jpg (compressed)
+   Source URL: https://streetfoodfinder.com/static/imgs/profiles/sushilitoo_bg.jpg
+   (business profile: sushilitoo on streetfoodfinder.com)
+   Match: the truck's own menu graphic with "sushi LITO" logo, real food photos,
+   5420 S 12 Ave Tucson AZ, Facebook Sushi-lito, Instagram @Sushiilito, prices.
+   Used as: menu.html source evidence + price source for all menu prices.
+
+4. menu-board.jpg (compressed from original)
+   Source URL: https://s6.localdatacdn.com/images/4992064/m_sushi_lito_food_truck_mexican_sushi_menu.jpg?q=6abf0b680c66b
+   (via https://www.restaurantji.com/az/tucson/sushi-lito-food-truck-mexican-sushi-/)
+   Match: photo of the truck's menu boards showing "sushi LITO" branding,
+   5422 S. 12th Ave Tucson AZ, (520) 257-7701, roll names and prices.
+   Used as: index.html menu teaser.
+
+Instagram attempt: @sushiilito is the real business account (1,442 followers); post images
+could not be downloaded (Instagram CDN 403 via scripted fetch). No Instagram assets used.
+No stock photos used. No illustrations anywhere in the build.
+
+File sizes: all images under 200 KB, JPEG/WebP family. No file over 5 MB.
