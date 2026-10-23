@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Shop | Sooner Mufflers of Edmond</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bone:#f3ead8; --bone2:#e9ddc2; --ink:#1b1410; --brick:#a33b26; --brick-d:#7e2c1d;
+  --mustard:#dfa31c; --steel:#5f646a; --line:#d6c9ab;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bone);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.oswald{font-family:'Oswald','Arial Narrow',Arial,sans-serif}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.util{background:var(--ink);color:var(--bone);font-size:12px}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.util .oswald{letter-spacing:1.6px;text-transform:uppercase;font-weight:500}
+.util a.tel{color:var(--mustard);text-decoration:none;font-weight:600}
+.disclosure{background:var(--mustard);color:var(--ink);text-align:center;font-family:'Oswald','Arial Narrow',Arial,sans-serif;
+  font-size:11.5px;letter-spacing:2.2px;text-transform:uppercase;padding:9px 16px;font-weight:600}
+nav{background:var(--bone);border-bottom:2px solid var(--ink);position:sticky;top:0;z-index:20}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.brand{font-family:'Oswald','Arial Narrow',Arial,sans-serif;font-weight:700;font-size:21px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;line-height:1.1}
+.brand small{display:block;font-size:10.5px;letter-spacing:3px;color:var(--brick);font-weight:600}
+.navlinks{display:flex;gap:24px;flex-wrap:wrap}
+.navlinks a{font-family:'Oswald','Arial Narrow',Arial,sans-serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;
+  text-decoration:none;color:var(--steel);font-weight:500}
+.navlinks a:hover,.navlinks a.on{color:var(--brick)}
+.mast{background:var(--ink);color:var(--bone);border-bottom:6px solid var(--brick)}
+.mast .wrap{padding-top:56px;padding-bottom:52px}
+.eyebrow{font-family:'Oswald','Arial Narrow',Arial,sans-serif;font-size:13px;letter-spacing:3.5px;text-transform:uppercase;color:var(--mustard);font-weight:600;margin-bottom:14px}
+.mast h1{font-size:clamp(52px,9vw,112px);font-weight:700;text-transform:uppercase;line-height:.94;letter-spacing:1px}
+.mast h1 .alt{color:var(--mustard)}
+.mast p.lede{max-width:640px;margin-top:18px;font-size:19px;color:#d9cfb8}
+.sec{padding:64px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.split figure{border:2px solid var(--ink);background:#fff}
+.split img{width:100%;height:100%;object-fit:cover;min-height:320px}
+.split figcaption{background:var(--bone2);border-top:2px solid var(--ink);padding:12px 16px;font-size:14px}
+.prose p{font-size:18px;margin-bottom:18px}
+.prose p.lead{font-size:23px;line-height:1.5}
+.drop{float:left;font-family:'Oswald','Arial Narrow',Arial,sans-serif;font-weight:700;font-size:64px;line-height:.85;
+  padding:4px 8px 0 0;color:var(--brick)}
+.rating-line{background:var(--bone2);border-left:5px solid var(--mustard);padding:12px 16px;font-size:15.5px;margin-top:26px}
+.rating-line b{font-family:'Oswald','Arial Narrow',Arial,sans-serif;letter-spacing:1px}
+a.tel-link{color:var(--brick);font-weight:bold;text-decoration:none;border-bottom:2px solid var(--mustard)}
+.callband{background:var(--brick);color:#fff;border-top:2px solid var(--ink)}
+.callband .wrap{padding-top:52px;padding-bottom:56px;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.callband h2{font-size:clamp(30px,4.6vw,50px);text-transform:uppercase;font-weight:700;line-height:1.05;letter-spacing:1px}
+.callband p{color:#f6e3d4;margin-top:8px;font-size:17px}
+.callband a.big-tel{font-family:'Oswald','Arial Narrow',Arial,sans-serif;font-size:clamp(24px,3.6vw,38px);font-weight:700;
+  letter-spacing:1.5px;color:var(--mustard);text-decoration:none;border:3px solid var(--mustard);padding:14px 30px;background:rgba(0,0,0,.25)}
+.callband a.big-tel:hover{background:var(--mustard);color:var(--ink)}
+footer{background:var(--ink);color:#c9bda3;font-size:14.5px}
+footer .wrap{padding-top:40px;padding-bottom:36px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px}
+footer h4{font-family:'Oswald','Arial Narrow',Arial,sans-serif;color:var(--bone);letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:12px}
+footer a{color:var(--mustard);text-decoration:none}
+.fine{grid-column:1/-1;border-top:1px solid #3a3128;padding-top:16px;font-size:12.5px;color:#8d8271}
+@media(max-width:840px){
+  .split{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+  .callband .wrap{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <span class="oswald">1016 S Broadway, Edmond, OK 73034</span>
+    <span class="oswald">Mon to Fri 9 AM to 5 PM &nbsp;·&nbsp; Sat 9 AM to 12 PM</span>
+    <a class="tel oswald" href="tel:+14053489996">(405) 348-9996</a>
+  </div>
+</div>
+
+<div class="disclosure">Website Concept &middot; Design Preview &middot; Not an official business website</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Sooner Mufflers<small>of Edmond</small></a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="photos.html">Photos</a>
+      <a href="visit.html">Visit</a>
+      <a class="on" href="about.html">The Shop</a>
+    </div>
+  </div>
+</nav>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="eyebrow">Sooner Mufflers of Edmond &middot; The shop</div>
+    <h1>A muffler shop <span class="alt">on South Broadway</span></h1>
+    <p class="lede">What the storefront and the listings tell you about this Edmond shop.</p>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="split">
+      <figure>
+        <img src="img/muffler-truck.jpg" alt="Sooner Mufflers box truck with an oversized muffler on its roof">
+        <figcaption>The shop truck with its oversized rooftop muffler. Real photo.</figcaption>
+      </figure>
+      <div class="prose">
+        <p class="lead"><span class="drop">S</span>ooner Mufflers of Edmond is a muffler and exhaust shop at 1016 South Broadway in Edmond, Oklahoma.</p>
+        <p>The storefront says what the shop does. The window advertises catalytic converters installed, and the shop truck parked outside carries an oversized muffler on its roof.</p>
+        <p>The business is listed as an automotive repair shop and automotive service, so general auto repair is part of the picture along with the exhaust work.</p>
+        <p>Hours are Monday to Friday 9 AM to 5 PM, Saturday 9 AM to noon, closed Sundays. There is no online booking. Call <a class="tel-link" href="tel:+14053489996">(405) 348-9996</a> to book.</p>
+        <div class="rating-line"><b>5.0 out of 5</b>, from 14 reviews, per the location listing.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callband">
+  <div class="wrap">
+    <div>
+      <h2>Call to book</h2>
+      <p>Talk to the shop directly and set up your visit.</p>
+    </div>
+    <a class="big-tel" href="tel:+14053489996">(405) 348-9996</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Sooner Mufflers of Edmond</h4>
+      <p>Muffler and exhaust shop.<br>1016 S Broadway, Edmond, OK 73034<br><a href="tel:+14053489996">(405) 348-9996</a></p>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p>Mon to Fri: 9 AM to 5 PM<br>Sat: 9 AM to 12 PM<br>Sun: closed</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="photos.html">Photos</a><br><a href="visit.html">Visit</a><br><a href="about.html">The Shop</a></p>
+    </div>
+    <div class="fine">Website Concept. Design preview prepared by Freightfolio. Not an official website of the business, and not commissioned by it.</div>
+  </div>
+</footer>
+
+</body>
+</html>
