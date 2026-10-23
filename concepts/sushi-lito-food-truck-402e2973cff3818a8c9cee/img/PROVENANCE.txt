@@ -36,3 +36,21 @@ could not be downloaded (Instagram CDN 403 via scripted fetch). No Instagram ass
 No stock photos used. No illustrations anywhere in the build.
 
 File sizes: all images under 200 KB, JPEG/WebP family. No file over 5 MB.
+
+5. food-rolls-1.jpg (Pexels free license, downloaded 2026-10-23)
+   Source URL: https://images.pexels.com/photos/17894230/pexels-photo-17894230.jpeg
+   (page: https://www.pexels.com/ro-ro/fotografie/avocado-fotografie-alimentara-sushi-fructe-de-mare)
+   Match: close-up of sesame-topped sushi rolls on a wooden board. No business branding visible.
+   Captioned honestly as "Stock photo: sushi rolls." Used as: index.html Signature Rolls section.
+   NOTE: added as the QA-accepted labeled-stock fallback (QA 2026-10-23: "real from listings, or labeled
+   stock where no real photo fits"). Real food photos exist on the business's listing pages
+   (worldlocationmap gallery, tucsonfoodie article) but two live-browser extraction attempts this shift
+   died without delivering results, the listing text fetch exposed no downloadable image URLs, and the
+   tucsonfoodie food content is an Instagram embed (Instagram CDN 403s scripted fetches per prior finding).
+
+6. food-rolls-2.jpg (Pexels free license, downloaded 2026-10-23)
+   Source URL: https://images.pexels.com/photos/11722942/pexels-photo-11722942.jpeg
+   (page: https://www.pexels.com/photo/assorted-sushi-rolls-displayed-for-sale-in-japan-32330084/)
+   Match: overhead view of a platter of assorted sushi rolls (salmon, avocado, tobiko). No business branding visible.
+   Captioned honestly as "Stock photo: a sushi roll platter." Used as: menu.html evidence section.
+   Same fallback note as asset 5.
