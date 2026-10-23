@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chris Blythe Plumbing | Plumber in Pascagoula, MS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0f2a3d;--navy2:#12344c;--copper:#c86f3c;--copper-d:#a55827;--bone:#f2ede3;--bone2:#e8dfcd;--ink:#22303c;--muted:#5c6b78}
+html{scroll-behavior:smooth}
+body{background:var(--bone);color:var(--ink);font-family:'Inter',Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.cond{font-family:'Saira Condensed','Arial Narrow',Arial,sans-serif}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.disclosure{background:var(--copper);color:#fff;text-align:center;font-family:'Saira Condensed',Arial,sans-serif;font-size:12px;letter-spacing:2.4px;text-transform:uppercase;padding:10px 16px;font-weight:600}
+.util{background:var(--navy);color:var(--bone);font-size:12.5px}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.util .cond{letter-spacing:1.8px;text-transform:uppercase;font-weight:600}
+.util a.tel{color:var(--copper);text-decoration:none;font-weight:700;font-size:14px}
+nav{background:var(--bone);border-bottom:3px solid var(--navy);position:sticky;top:0;z-index:20}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.brand{font-family:'Saira Condensed',Arial,sans-serif;font-weight:800;font-size:22px;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;color:var(--navy);line-height:1.05}
+.brand small{display:block;font-size:10.5px;letter-spacing:3.4px;color:var(--copper-d);font-weight:700}
+.navlinks{display:flex;gap:26px;flex-wrap:wrap}
+.navlinks a{font-family:'Saira Condensed',Arial,sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:var(--muted);font-weight:600}
+.navlinks a:hover,.navlinks a.on{color:var(--copper-d)}
+.hero{position:relative;background:var(--navy);color:var(--bone);overflow:hidden}
+.hero img.bg{width:100%;height:min(78vh,640px);object-fit:cover;opacity:.5}
+.hero .inner{position:absolute;inset:0;display:flex;align-items:flex-end}
+.hero .wrap{width:100%;padding-bottom:64px}
+.eyebrow{font-family:'Saira Condensed',Arial,sans-serif;font-size:13px;letter-spacing:3.6px;text-transform:uppercase;color:var(--copper);font-weight:700;margin-bottom:12px}
+.hero h1{font-size:clamp(48px,8.5vw,104px);font-weight:800;text-transform:uppercase;line-height:.95;letter-spacing:.5px;max-width:10ch}
+.hero h1 .alt{color:var(--copper)}
+.hero p.lede{max-width:620px;margin-top:16px;font-size:18px;color:#d8dee4}
+.cta-row{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
+.btn{display:inline-block;font-family:'Saira Condensed',Arial,sans-serif;font-weight:700;font-size:16px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:14px 30px;border-radius:4px}
+.btn-copper{background:var(--copper);color:#fff}
+.btn-copper:hover{background:var(--copper-d)}
+.btn-ghost{border:2px solid var(--bone);color:var(--bone)}
+.btn-ghost:hover{background:var(--bone);color:var(--navy)}
+.strip{background:var(--copper);color:#fff}
+.strip .wrap{display:flex;gap:34px;flex-wrap:wrap;justify-content:space-between;padding-top:18px;padding-bottom:18px;font-family:'Saira Condensed',Arial,sans-serif;font-size:15px;letter-spacing:1.6px;text-transform:uppercase;font-weight:600}
+section{padding:74px 0}
+.sec-head{margin-bottom:38px}
+.sec-head h2{font-size:clamp(34px,5vw,54px);font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--navy);line-height:1}
+.sec-head h2 .alt{color:var(--copper-d)}
+.rule{width:72px;height:6px;background:var(--copper);margin:14px 0 0}
+.workorder{border:2px solid var(--navy);border-radius:6px;overflow:hidden;background:#fff}
+.wo-row{display:grid;grid-template-columns:92px 1fr auto;gap:24px;align-items:center;padding:26px 28px;border-bottom:2px dashed var(--bone2);background:#fff}
+.wo-row:last-child{border-bottom:none}
+.wo-num{font-family:'Saira Condensed',Arial,sans-serif;font-size:44px;font-weight:800;color:var(--copper);line-height:1}
+.wo-row h3{font-size:24px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--navy);margin-bottom:6px}
+.wo-row p{font-size:15.5px;color:var(--muted);max-width:640px}
+.wo-link{font-family:'Saira Condensed',Arial,sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--copper-d);text-decoration:none;white-space:nowrap}
+.about{background:var(--navy);color:var(--bone)}
+.about .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about h2{font-size:clamp(34px,5vw,54px);font-weight:800;text-transform:uppercase;color:#fff;line-height:1}
+.about h2 .alt{color:var(--copper)}
+.about p{color:#cfd8e0;margin-top:16px;font-size:17px}
+.about figure{margin:0}
+.about img{border-radius:6px}
+.caption{background:rgba(255,255,255,.06);border-top:1px solid rgba(200,111,60,.5);font-size:14px;color:#cfd8e0;padding:12px 18px}
+.caption .tag{font-family:'Saira Condensed',Arial,sans-serif;letter-spacing:1.8px;text-transform:uppercase;font-size:11px;color:var(--copper);font-weight:700;display:block;margin-bottom:3px}
+.gallery .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.gallery figure{margin:0;background:#fff;border:2px solid var(--navy);border-radius:6px;overflow:hidden}
+.gallery img{height:230px;width:100%;object-fit:cover}
+.gallery .caption{background:var(--bone2);border-top:2px solid var(--navy);color:var(--ink)}
+.gallery .caption .tag{color:var(--copper-d)}
+.rating{background:var(--bone2);text-align:center}
+.rating .score{font-family:'Saira Condensed',Arial,sans-serif;font-size:64px;font-weight:800;color:var(--navy);line-height:1}
+.rating .stars{color:var(--copper-d);font-size:26px;letter-spacing:4px;margin:8px 0}
+.rating p{color:var(--muted)}
+.ctaband{background:var(--navy);color:var(--bone);text-align:center}
+.ctaband h2{font-size:clamp(36px,6vw,64px);font-weight:800;text-transform:uppercase;line-height:1}
+.ctaband h2 .alt{color:var(--copper)}
+.ctaband p{color:#cfd8e0;margin:14px auto 26px;max-width:560px;font-size:17px}
+footer{background:#0a1c2a;color:#8fa0ad;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:30px;padding-bottom:30px}
+footer strong{color:var(--bone)}
+footer .fine{font-size:12.5px;max-width:560px;margin-top:8px}
+@media(max-width:820px){.about .grid{grid-template-columns:1fr}.gallery .grid{grid-template-columns:1fr 1fr}.wo-row{grid-template-columns:1fr;gap:10px}}
+@media(max-width:560px){.gallery .grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="disclosure">Design preview concept. Not the business's official website.</div>
+<div class="util"><div class="wrap">
+<span class="cond">Owner-operated plumbing in Pascagoula, Mississippi</span>
+<a class="tel cond" href="tel:+12282182210">(228) 218-2210</a>
+</div></div>
+<nav><div class="wrap">
+<a class="brand" href="index.html">Chris Blythe<small>Plumbing</small></a>
+<div class="navlinks"><a class="on" href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+</div></nav>
+
+<header class="hero">
+<img class="bg" src="img/photo-1.jpg" alt="Plumber at work on piping">
+<div class="inner"><div class="wrap">
+<p class="eyebrow">Pascagoula, Mississippi</p>
+<h1>When you call, <span class="alt">Chris</span> answers.</h1>
+<p class="lede">Chris Blythe Plumbing is a one-man plumbing service. Drain and sewer cleaning, gas leak repair, sewer line video inspection, and general plumbing repair. No dispatch line. No call center.</p>
+<div class="cta-row">
+<a class="btn btn-copper" href="tel:+12282182210">Call to book</a>
+<a class="btn btn-ghost" href="services.html">See services</a>
+</div>
+</div></div>
+</header>
+
+<div class="strip"><div class="wrap">
+<span>Plumbing repair</span><span>Drain and sewer cleaning</span><span>Gas leak repair</span><span>Sewer line video inspection</span>
+</div></div>
+
+<section>
+<div class="wrap">
+<div class="sec-head"><h2>The <span class="alt">work order</span></h2><div class="rule"></div></div>
+<div class="workorder">
+<div class="wo-row"><div class="wo-num">01</div><div><h3>Plumbing repair</h3><p>Leaks, fixtures, and the everyday plumbing problems that show up in a house. Diagnosed and repaired by the person who owns the business.</p></div><a class="wo-link" href="tel:+12282182210">Call about this</a></div>
+<div class="wo-row"><div class="wo-num">02</div><div><h3>Drain and sewer cleaning</h3><p>Slow drains and backed-up sewer lines cleared out so the water goes where it should.</p></div><a class="wo-link" href="tel:+12282182210">Call about this</a></div>
+<div class="wo-row"><div class="wo-num">03</div><div><h3>Gas leak repair</h3><p>If you smell gas, leave the house and call your gas company first. For the repair that follows, call Chris.</p></div><a class="wo-link" href="tel:+12282182210">Call about this</a></div>
+<div class="wo-row"><div class="wo-num">04</div><div><h3>Sewer line video inspection</h3><p>A camera in the line shows exactly what is wrong underground before any digging starts.</p></div><a class="wo-link" href="tel:+12282182210">Call about this</a></div>
+</div>
+</div>
+</section>
+
+<section class="about">
+<div class="wrap"><div class="grid">
+<div>
+<p class="eyebrow">Why one man beats a fleet</p>
+<h2>Your plumber <span class="alt">is</span> the company.</h2>
+<p>Chris Blythe runs an owner-operator plumbing service out of Pascagoula, Mississippi. The person who picks up the phone is the person who shows up with the tools.</p>
+<p>That keeps things simple: one point of contact, one standard of work, and nobody to pass the buck to. It is plumbing the way it used to be done.</p>
+<div class="cta-row"><a class="btn btn-copper" href="about.html">More about Chris</a></div>
+</div>
+<figure>
+<img src="img/photo-5.jpg" alt="Socket wrench set">
+<figcaption class="caption"><span class="tag">Stock photo</span>The tools of the trade, kept ready.</figcaption>
+</figure>
+</div></div>
+</section>
+
+<section class="gallery">
+<div class="wrap">
+<div class="sec-head"><h2>On the <span class="alt">job</span></h2><div class="rule"></div></div>
+<div class="grid">
+<figure><img src="img/photo-2.jpg" alt="Exposed drain piping"><figcaption class="caption"><span class="tag">Stock photo</span>Exposed drain piping mid-repair.</figcaption></figure>
+<figure><img src="img/photo-3.jpg" alt="Leaking pipe"><figcaption class="caption"><span class="tag">Stock photo</span>A leaking pipe, the kind of call Chris takes.</figcaption></figure>
+<figure><img src="img/photo-4.jpg" alt="Drain clearing equipment"><figcaption class="caption"><span class="tag">Stock photo</span>Gear for clearing a stubborn drain.</figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="rating">
+<div class="wrap">
+<p class="eyebrow">What Pascagoula says</p>
+<div class="score">5.0</div>
+<div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<p>from 10 Google reviews</p>
+</div>
+</section>
+
+<section class="ctaband">
+<div class="wrap">
+<h2>Got a leak? <span class="alt">Call Chris.</span></h2>
+<p>One call reaches the plumber directly. Describe the problem and he will tell you straight what it takes to fix it.</p>
+<div class="cta-row" style="justify-content:center"><a class="btn btn-copper" href="tel:+12282182210">Call (228) 218-2210</a></div>
+</div>
+</section>
+
+<footer><div class="wrap">
+<div><strong>Chris Blythe Plumbing</strong><br>2111 May Ave, Pascagoula, MS<br><a href="tel:+12282182210" style="color:var(--copper)">(228) 218-2210</a></div>
+<div class="fine">This page is a design preview concept created by Freightfolio, not the business's official website. Business details shown come from public listings. Photos are stock photos, labeled as such.</div>
+</div></footer>
+</body>
+</html>
