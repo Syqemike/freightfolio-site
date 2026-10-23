@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DP Motorwerks | BMW Repair Specialist in Virginia Beach, VA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --graph:#14161a; --graph2:#0e1013; --steel:#eef1f4; --steel2:#dde3e9;
+  --blue:#2e6fb7; --blue-d:#1f5389; --amber:#f2a900; --ink:#1a1d22; --mut:#5a636e; --line:#cfd6dd;
+}
+html{scroll-behavior:smooth}
+body{background:var(--steel);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.arch{font-family:'Archivo',sans-serif}
+.mono{font-family:'IBM Plex Mono',monospace}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+
+/* disclosure */
+.disclosure{background:var(--amber);color:var(--graph2);text-align:center;font-size:11.5px;letter-spacing:2.4px;
+  text-transform:uppercase;padding:9px 16px;font-weight:700}
+
+/* util */
+.util{background:var(--graph2);color:#aeb6c0;font-size:13px}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+.util .mono{font-size:12.5px;letter-spacing:.5px}
+.util a.tel{color:var(--amber);text-decoration:none;font-weight:700}
+
+/* nav */
+nav{background:var(--steel);border-bottom:3px solid var(--graph);position:sticky;top:0;z-index:20}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:13px;padding-bottom:13px;flex-wrap:wrap}
+.brand{text-decoration:none;line-height:1.05}
+.brand .n{font-family:'Archivo',sans-serif;font-weight:800;font-size:24px;letter-spacing:1px;color:var(--graph)}
+.brand .n span{color:var(--blue)}
+.brand .s{display:block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:2.6px;color:var(--mut);margin-top:2px}
+.navlinks{display:flex;gap:26px;flex-wrap:wrap}
+.navlinks a{font-size:13px;letter-spacing:1.8px;text-transform:uppercase;text-decoration:none;color:var(--mut);font-weight:600}
+.navlinks a:hover,.navlinks a.on{color:var(--blue)}
+
+/* hero */
+.hero{background:var(--graph);color:#fff}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;padding-top:72px;padding-bottom:72px;align-items:center}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:3px;color:var(--amber);margin-bottom:18px}
+.hero h1{font-size:clamp(42px,5.6vw,74px);font-weight:800;letter-spacing:-1px;line-height:1.0;margin-bottom:20px}
+.hero h1 .bl{color:var(--blue)}
+.hero p.lede{font-size:18px;color:#c3cbd4;max-width:520px;margin-bottom:30px}
+.specstrip{border:1px solid #2b3138;background:var(--graph2);margin-bottom:30px;max-width:520px}
+.specrow{display:flex;justify-content:space-between;gap:14px;padding:11px 18px;border-bottom:1px solid #2b3138;font-size:14.5px}
+.specrow:last-child{border-bottom:none}
+.specrow .k{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:2px;color:#8b95a1;text-transform:uppercase;padding-top:3px}
+.specrow .v{font-weight:600;text-align:right;color:#fff}
+.specrow .v a{color:var(--amber);text-decoration:none}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;font-family:'Archivo',sans-serif;font-size:14px;letter-spacing:1.6px;text-transform:uppercase;font-weight:700;
+  text-decoration:none;background:var(--amber);color:var(--graph2);padding:16px 32px;border:none;cursor:pointer}
+.btn:hover{background:#fff}
+.btn.ghost{background:transparent;color:#fff;border:2px solid var(--blue)}
+.btn.ghost:hover{background:var(--blue)}
+.hero-photo figure{border:1px solid #2b3138;background:var(--graph2);padding:10px}
+.hero-photo img{width:100%;height:440px;object-fit:cover}
+figcaption{font-size:13px;color:#8b95a1;padding:10px 4px 2px}
+figcaption .sp{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--amber);font-weight:600;margin-right:8px;border:1px solid #3a4149;padding:2px 8px}
+
+/* sections */
+.sec{padding:80px 0}
+.sec-head{margin-bottom:38px;max-width:740px}
+.sec-head .kicker{color:var(--blue);margin-bottom:12px}
+.sec-head h2{font-size:clamp(32px,4.4vw,50px);font-weight:800;letter-spacing:-.5px;line-height:1.05;margin-bottom:14px}
+.sec-head p{font-size:17.5px;color:var(--mut)}
+
+/* catalog */
+.catalog{border-top:3px solid var(--graph)}
+.crow{display:grid;grid-template-columns:110px 1fr 1.5fr auto;gap:28px;align-items:center;padding:26px 8px;border-bottom:1px solid var(--line)}
+.crow .pn{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--blue);font-weight:600;letter-spacing:1px}
+.crow h3{font-size:22px;font-weight:700;letter-spacing:-.25px}
+.crow p{font-size:16px;color:var(--mut)}
+.crow .go{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);font-weight:600;text-decoration:none;white-space:nowrap}
+.crow .go:hover{color:var(--graph)}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.split figure{border:1px solid var(--line);background:#fff;padding:10px}
+.split figure img{width:100%;height:430px;object-fit:cover}
+.split figure figcaption{color:var(--mut)}
+.split h2{font-size:clamp(30px,4vw,44px);font-weight:800;letter-spacing:-.5px;line-height:1.08;margin-bottom:16px}
+.split p{font-size:17px;color:var(--mut);margin-bottom:14px}
+.datalist{margin:22px 0 28px;border:1px solid var(--line);background:#fff}
+.datalist .dr{display:flex;justify-content:space-between;gap:14px;padding:12px 18px;border-bottom:1px solid var(--line);font-size:15.5px}
+.datalist .dr:last-child{border-bottom:none}
+.datalist .dk{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--mut);padding-top:3px}
+.datalist .dv{font-weight:600;text-align:right}
+
+/* thumbs */
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.thumbs figure{border:1px solid var(--line);background:#fff;padding:10px}
+.thumbs img{width:100%;height:240px;object-fit:cover}
+.thumbs figcaption{color:var(--mut)}
+
+/* rating band */
+.rateband{background:var(--graph);color:#fff}
+.rateband .wrap{padding-top:60px;padding-bottom:60px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.rateband .big{font-family:'Archivo',sans-serif;font-size:clamp(40px,5vw,64px);font-weight:800;letter-spacing:-1px;line-height:1}
+.rateband .big .bl{color:var(--blue)}
+.rateband p{color:#aeb6c0;font-size:16.5px;margin-top:12px}
+.rateband .src{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;color:var(--amber);text-transform:uppercase;margin-bottom:10px}
+
+/* call band */
+.callband{background:var(--amber)}
+.callband .wrap{padding-top:58px;padding-bottom:62px;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.callband h2{font-size:clamp(30px,4.6vw,50px);font-weight:800;letter-spacing:-.5px;color:var(--graph2);line-height:1.05}
+.callband p{color:#3d3413;margin-top:10px;font-size:17px;max-width:560px;font-weight:500}
+.callband a.big-tel{font-family:'Archivo',sans-serif;font-size:clamp(22px,3.2vw,34px);font-weight:800;color:var(--graph2);
+  text-decoration:none;border:3px solid var(--graph2);padding:14px 30px;white-space:nowrap;background:#fff}
+.callband a.big-tel:hover{background:var(--graph2);color:var(--amber)}
+
+/* footer */
+footer{background:var(--graph2);color:#8b95a1;font-size:14.5px}
+footer .wrap{padding-top:44px;padding-bottom:36px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;letter-spacing:2px;text-transform:uppercase;font-size:12.5px;margin-bottom:12px;font-family:'Archivo',sans-serif}
+footer a{color:var(--amber);text-decoration:none}
+footer p{margin-bottom:8px}
+.fine{grid-column:1/-1;border-top:1px solid #2b3138;padding-top:16px;font-size:12.5px;color:#6b7480}
+
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .crow{grid-template-columns:1fr;gap:6px}
+  .crow .go{display:none}
+  .split{grid-template-columns:1fr}
+  .thumbs{grid-template-columns:1fr}
+  .rateband .wrap{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design preview concept. Not the business&rsquo;s live website</div>
+
+<div class="util">
+  <div class="wrap">
+    <span class="mono">2128 LONDON BRIDGE RD &middot; VIRGINIA BEACH, VA</span>
+    <span><a class="tel" href="tel:+17574272008">(757) 427-2008</a> &nbsp;&middot;&nbsp; <span class="mono">MON&ndash;FRI 9&ndash;6 &middot; SAT 9&ndash;1</span></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="n">DP <span>MOTORWERKS</span></span><span class="s">BMW SPECIALIST &middot; VA BEACH</span></a>
+    <div class="navlinks">
+      <a class="on" href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">// BMW SPECIALTY &middot; VIRGINIA BEACH, VA</div>
+      <h1>Your BMW, <span class="bl">worked on by people</span> who know BMWs.</h1>
+      <p class="lede">DP Motorwerks is an auto repair shop focused on BMW vehicles. Diagnostics, maintenance, and repair from a team that spends its days under these hoods.</p>
+      <div class="specstrip">
+        <div class="specrow"><span class="k">Specialty</span><span class="v">BMW vehicles</span></div>
+        <div class="specrow"><span class="k">Hours</span><span class="v">Mon&ndash;Fri 9&ndash;6 &middot; Sat 9&ndash;1</span></div>
+        <div class="specrow"><span class="k">Phone</span><span class="v"><a href="tel:+17574272008">(757) 427-2008</a></span></div>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="tel:+17574272008">Call to book</a>
+        <a class="btn ghost" href="services.html">Service catalog</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <figure>
+        <img src="img/dp_hero.jpg" alt="Stock photo: technician working on an engine mounted on a stand">
+        <figcaption><span class="sp">Stock photo</span>Engine work on a shop stand.</figcaption>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">// Service catalog</div>
+      <h2>BMW repair, by system.</h2>
+      <p>DP Motorwerks focuses on BMW vehicles. Call to discuss what your car needs and get it scheduled.</p>
+    </div>
+    <div class="catalog">
+      <div class="crow">
+        <div class="pn">DP-01</div>
+        <div><h3>Diagnostics</h3></div>
+        <div><p>Warning lights, strange noises, and problems other shops could not pin down. Systematic diagnosis before any wrench turns.</p></div>
+        <a class="go" href="services.html">Details</a>
+      </div>
+      <div class="crow">
+        <div class="pn">DP-02</div>
+        <div><h3>Maintenance</h3></div>
+        <div><p>Scheduled service that keeps a BMW running the way it was built to run. Call with your mileage and model year.</p></div>
+        <a class="go" href="services.html">Details</a>
+      </div>
+      <div class="crow">
+        <div class="pn">DP-03</div>
+        <div><h3>Brake service</h3></div>
+        <div><p>Pads, rotors, and the brake feel BMW drivers expect. Inspected properly, serviced completely.</p></div>
+        <a class="go" href="services.html">Details</a>
+      </div>
+      <div class="crow">
+        <div class="pn">DP-04</div>
+        <div><h3>Engine repair</h3></div>
+        <div><p>From sensors and gaskets to major engine work. BMW engines have their quirks, and this shop knows them.</p></div>
+        <a class="go" href="services.html">Details</a>
+      </div>
+      <div class="crow">
+        <div class="pn">DP-05</div>
+        <div><h3>Suspension &amp; steering</h3></div>
+        <div><p>The handling is the reason people buy these cars. Suspension and steering work that keeps it sharp.</p></div>
+        <a class="go" href="services.html">Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap split">
+    <figure>
+      <img src="img/dp_hood.jpg" alt="Stock photo: technician inspecting an engine bay">
+      <figcaption><span class="sp">Stock photo</span>Inspection under the hood.</figcaption>
+    </figure>
+    <div>
+      <div class="kicker">// Why a specialist</div>
+      <h2>One marque. Every day.</h2>
+      <p>A general shop sees a BMW once in a while. A BMW specialist sees the same platforms, the same fault patterns, and the same model-year quirks every single day.</p>
+      <div class="datalist">
+        <div class="dr"><span class="dk">Focus</span><span class="dv">BMW vehicles</span></div>
+        <div class="dr"><span class="dk">Saturday hours</span><span class="dv">9:00 AM &ndash; 1:00 PM</span></div>
+        <div class="dr"><span class="dk">Location</span><span class="dv">2128 London Bridge Rd</span></div>
+      </div>
+      <a class="btn" href="tel:+17574272008">Call (757) 427-2008</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">// In the shop</div>
+      <h2>Real work, real bays.</h2>
+      <p><a href="gallery.html" style="color:var(--blue);font-weight:600">See the shop gallery.</a></p>
+    </div>
+    <div class="thumbs">
+      <figure><img src="img/dp_engine.jpg" alt="Stock photo: technician with an engine on a stand"><figcaption><span class="sp">Stock photo</span>Engine on the stand.</figcaption></figure>
+      <figure><img src="img/dp_brake.jpg" alt="Stock photo: technician servicing a brake rotor"><figcaption><span class="sp">Stock photo</span>Brake rotor service.</figcaption></figure>
+      <figure><img src="img/dp_hero.jpg" alt="Stock photo: engine work in the shop"><figcaption><span class="sp">Stock photo</span>Major engine work.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="rateband">
+  <div class="wrap">
+    <div>
+      <div class="src">Google reviews</div>
+      <div class="big">4.8 <span class="bl">/ 5</span></div>
+      <p>From 68 Google reviews of DP Motorwerks.</p>
+    </div>
+    <div>
+      <p style="font-size:19px;color:#dde3e9">BMW owners are particular about who touches their cars. See what they said on Google.</p>
+    </div>
+  </div>
+</div>
+
+<div class="callband">
+  <div class="wrap">
+    <div>
+      <h2>Something wrong with the BMW?</h2>
+      <p>Call and describe the symptom. Mon&ndash;Fri 9:00 AM&ndash;6:00 PM, Sat 9:00 AM&ndash;1:00 PM.</p>
+    </div>
+    <a class="big-tel" href="tel:+17574272008">(757) 427-2008</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>DP Motorwerks</h4>
+      <p>BMW-specialty auto repair in Virginia Beach, Virginia.</p>
+      <p>2128 London Bridge Rd<br>Virginia Beach, VA</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="tel:+17574272008">(757) 427-2008</a></p>
+      <p>Mon&ndash;Fri: 9:00 AM &ndash; 6:00 PM<br>Sat: 9:00 AM &ndash; 1:00 PM</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="services.html">Services</a></p>
+      <p><a href="gallery.html">Shop</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+    <div class="fine">Design preview concept prepared by Freightfolio. Not the business&rsquo;s live website. Business details shown are from public listings. Photos are stock photography, labeled as such.</div>
+  </div>
+</footer>
+
+</body>
+</html>
