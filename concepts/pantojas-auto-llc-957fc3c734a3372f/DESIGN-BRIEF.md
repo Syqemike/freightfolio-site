@@ -1,5 +1,6 @@
 # Design Brief: Pantojas Auto LLC
 Slug: pantojas-auto-llc-957fc3c734a3372f
+REBUILD 2026-10-22 (design-level, rebuild-batch23-run1b): full redesign as a warm 'garage journal' editorial - Fraunces + Source Sans 3, paper/ink/brick, numbered service rows (01-03) with hairlines, staggered hero photo duo, giant 25-year heritage numeral, wide single work figure. 3 unique labeled stock photos, each once. Copy rewritten from research only; banned-construction sweep clean.
 
 ## Verified facts used (from research)
 - Family-run auto repair + body shop in Kenner, LA

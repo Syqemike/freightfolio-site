@@ -1,5 +1,6 @@
 # Design Brief: Performance Transmissions
 Slug: performance-transmissions-98baf66c3c6e02ad
+REBUILD 2026-10-22 (design-level, rebuild-batch23-run1b): full redesign as a light 'work order' editorial - Space Grotesk + IBM Plex Mono, paper with technical grid, WO-01..WO-04 numbered sections, orange stamps, framed technical figures. 3 unique labeled stock photos, each once. Nav labels match section headings (PROCESS advisory resolved). Copy rewritten from research only; banned-construction sweep clean.
 
 ## Verified facts used (from research)
 - Transmission specialty shop in D'Iberville, MS
