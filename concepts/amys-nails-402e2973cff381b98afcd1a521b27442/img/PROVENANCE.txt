@@ -1,0 +1,61 @@
+PHOTO PROVENANCE - Amys Nails, 811 Avenue D, Katy, TX 77493
+Concept site: amys-nails-402e2973cff381b98afcd1a521b27442
+All photos below are real photos of THIS business, harvested from its public
+listing pages and visually verified (each opened and inspected) on 2026-10-23.
+One candidate (an Instagram selfie with face filters, tagged at the location)
+was excluded for quality. Captions on the site match what each photo shows.
+
+1. storefront-sign.jpg
+   Source: Facebook photo associated with the business's place listing.
+   Permalink: https://fb.com/photo.php?fbid=700021628802138&set=a.700021592135475&type=3
+   Depicts: Exterior channel-letter sign reading "Amy NAILS & SPA".
+
+2. interior-pedicure-chairs.jpg
+   Source: Facebook photo associated with the business's place listing.
+   Permalink: https://fb.com/photo.php?fbid=700021625468805&set=a.700021585468809&type=3
+   Depicts: Salon interior with numbered brown-and-cream pedicure spa chairs.
+
+3. interior-polish-wall.jpg
+   Source: Yelp business listing photo, https://www.yelp.com/biz/oZjQcTNSPy2uHTC44l6WKQ
+   (captioned by the poster "Pedicure and manicure in action!")
+   Direct file: https://s3-media0.fl.yelpcdn.com/bphoto/GfcjFNyC363Z_xizgjewzg/o.jpg
+   Depicts: Salon interior: polish display wall, manicure stations, tech at work.
+
+4. nails-red-gel.jpg
+   Source: Yelp business listing photo, https://www.yelp.com/biz/oZjQcTNSPy2uHTC44l6WKQ
+   (captioned by the poster "Shellac / Gel Manicure")
+   Direct file: https://s3-media0.fl.yelpcdn.com/bphoto/sTemBR8YI4Ow1psc9awFBw/o.jpg
+   Depicts: Customer hand showing a red gel manicure (photo taken in a car).
+
+5. nails-pink-gel.jpg
+   Source: Yelp business listing photo, https://www.yelp.com/biz/oZjQcTNSPy2uHTC44l6WKQ
+   (captioned by the poster "Shellac / Gel Manicure")
+   Direct file: https://s3-media0.fl.yelpcdn.com/bphoto/moQRYSQVMFSDCzw1Dap43A/o.jpg
+   Depicts: Customer hand showing a light pink gel manicure (photo taken in a car).
+
+6. nails-pink-fullset.jpg
+   Source: Yelp business listing photo, https://www.yelp.com/biz/oZjQcTNSPy2uHTC44l6WKQ
+   (captioned by the poster "Full Set with Acrylic")
+   Direct file: https://s3-media0.fl.yelpcdn.com/bphoto/3SQ1qppcESO5WMN36qSNVQ/o.jpg
+   Depicts: Customer hand showing a pale pink square full set (photo taken in a car).
+
+7. nails-nude-rhinestone.jpg
+   Source: Yelp business listing photo, https://www.yelp.com/biz/oZjQcTNSPy2uHTC44l6WKQ
+   Direct file: https://s3-media0.fl.yelpcdn.com/bphoto/iNejsZfVUi1NrGXyWjth_g/o.jpg
+   Depicts: Customer hand showing long nude nails with a rhinestone accent (in a car).
+
+8. pedicure-red-gold.jpg
+   Source: Instagram photo tagged at this business's location page
+   (https://www.instagram.com/explore/locations/708881375980989),
+   posted by @yoginigesch with hashtags #pedicure #goldchalacedesign #pedidesign #gelnails.
+   Depicts: Customer feet showing a red pedicure with gold lattice nail art on the big toes.
+
+9. nails-ombre.jpg
+   Source: Yelp business listing photo, https://www.yelp.com/biz/oZjQcTNSPy2uHTC44l6WKQ
+   Direct file: https://s3-media0.fl.yelpcdn.com/bphoto/iE-fatS0xtM3q4tNdQ4rCQ/o.jpg
+   Depicts: Customer hand showing long pink-to-white ombre nails.
+
+Note on identity: an "Amy's Nails" Facebook page in Harlingen, TX (page id
+161039270606095) is a different business and was not used. The Facebook photos
+above come from the page linked to this Katy place record (id 708881375980989)
+and the Yelp/Instagram photos come from this address's own listings.

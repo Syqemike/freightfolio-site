@@ -1,0 +1,64 @@
+PHOTO PROVENANCE - Youmans Kajukenbo Karate Studio concept site
+==============================================================
+No public real-world photos of Youmans Kajukenbo Karate Studio
+(143 Main St Ste 210, Springfield, MA 01105) could be found. An image
+search on 2026-10-23 for the school's name returned only photos of OTHER
+martial arts schools (e.g. a Kajukenbo school in Fairfield, CA and a
+Tae Kwon Do school in Springfield, MO); using those would misattribute
+another business's photos, so they were rejected.
+
+All seven photos below are licensed STOCK photos from Pexels (Pexels
+License: free for commercial use, no attribution required). Every
+caption on the site is labeled "Stock photo" so nothing implies these
+depict the actual studio, its students, or its instructors. Each image
+was visually inspected on 2026-10-23 for relevance and appropriateness.
+
+Downloaded from images.pexels.com via the Pexels CDN on 2026-10-23.
+Canonical photo pages: https://www.pexels.com/photo/<id>/
+
+1. photo-outdoor-kick.jpg  (Pexels ID 5081175)
+   Source: https://www.pexels.com/photo/5081175/
+   Media URL: https://images.pexels.com/photos/5081175/pexels-photo-5081175.jpeg
+   Depicts: two martial artists in white gis with black belts practicing
+   kicks outdoors under trees.
+
+2. photo-student-kick.jpg  (Pexels ID 7045376)
+   Source: https://www.pexels.com/photo/7045376/
+   Media URL: https://images.pexels.com/photos/7045376/pexels-photo-7045376.jpeg
+   Depicts: a young student in a white gi with a red belt practicing a
+   kick in a bright studio.
+
+3. photo-gi-portrait.jpg  (Pexels ID 8612470)
+   Source: https://www.pexels.com/photo/8612470/
+   Media URL: https://images.pexels.com/photos/8612470/pexels-photo-8612470.jpeg
+   Depicts: a man in a white martial arts gi tying a blue belt.
+   NOTE: this is a generic training image. It is NOT Grand Master
+   Youmans. It is never captioned or placed as the instructor.
+
+4. photo-black-belt.jpg  (Pexels ID 6765102)
+   Source: https://www.pexels.com/photo/6765102/
+   Media URL: https://images.pexels.com/photos/6765102/pexels-photo-6765102.jpeg
+   Depicts: close crop of a black belt tied over a white gi.
+
+5. photo-hand-drills.jpg  (Pexels ID 7045477)
+   Source: https://www.pexels.com/photo/7045477/
+   Media URL: https://images.pexels.com/photos/7045477/pexels-photo-7045477.jpeg
+   Depicts: two students in black gis practicing hand drills with a
+   partner (self-defense training).
+
+6. photo-grappling.jpg  (Pexels ID 8611352)
+   Source: https://www.pexels.com/photo/8611352/
+   Media URL: https://images.pexels.com/photos/8611352/pexels-photo-8611352.jpeg
+   Depicts: two students grappling on mats (standing clinch work).
+
+7. photo-group-class.jpg  (Pexels ID 7045608)
+   Source: https://www.pexels.com/photo/7045608/
+   Media URL: https://images.pexels.com/photos/7045608/pexels-photo-7045608.jpeg
+   Depicts: four students in gis of mixed rank practicing kicks together
+   in a studio.
+
+Rejected candidate (not used):
+- Pexels ID 8041294: a shirtless child training. Deemed inappropriate
+  for a business concept site; not downloaded into the site.
+- Pexels ID 8612017: grappling in a pink gi. Relevant but redundant with
+  photo-grappling.jpg; not used.

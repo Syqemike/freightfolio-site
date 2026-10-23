@@ -1,0 +1,33 @@
+PROVENANCE: concept site "TNT Electric, LLC" (Baytown, TX) — Website Dev batch 31, wave 2
+Date: 2026-10-23
+No business-owned photos exist for this business. No website, Facebook, or Instagram was found for TNT Electric, LLC of Baytown, TX. No real photos of the business were obtainable. All photos below are STOCK photos (free to use, Pexels license), clearly labelled "Stock photo" in their on-page captions. None depict the actual business, its staff, or its work.
+
+1. img/panel-work.jpg
+   Source: https://www.pexels.com/search/electrician%20panel/ (Pexels photo ID 27928761)
+   Direct CDN: https://images.pexels.com/photos/27928761/pexels-photo-27928761/free-photo-of-a-man-is-working-on-an-electrical-panel.jpeg
+   Depicts: an electrician using a drill to repair an open electrical panel indoors.
+
+2. img/multimeter-diagnosis.jpg
+   Source: https://www.pexels.com/search/electrician%20panel/ (Pexels photo ID 34054464)
+   Direct CDN: https://images.pexels.com/photos/34054464/pexels-photo-34054464/free-photo-of-electrician-diagnosing-electrical-panel-with-multimeter.jpeg
+   Depicts: an electrician using a multimeter to test and diagnose connections in an open electrical panel.
+
+3. img/breaker-closeup.jpg
+   Source: https://www.pexels.com/search/electrician%20panel/ (Pexels photo ID 257736)
+   Direct CDN: https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg
+   Depicts: close-up of an electrician's hand working on a circuit breaker panel with colorful wires.
+
+4. img/fusebox-work.jpg
+   Source: https://www.pexels.com/search/electrician%20panel/ (Pexels photo ID 17924298)
+   Direct CDN: https://images.pexels.com/photos/17924298/pexels-photo-17924298/free-photo-of-electrician-with-fusebox.jpeg
+   Depicts: an electrician working on an outdoor fuse box.
+
+5. img/organized-panel.jpg
+   Source: https://www.pexels.com/search/electrician%20panel/ (Pexels photo ID 28950842)
+   Direct CDN: https://images.pexels.com/photos/28950842/pexels-photo-28950842/free-photo-of-electrical-circuit-breaker-panel-with-color-coded-wiring.jpeg
+   Depicts: close-up of an organized circuit breaker panel with color-coded electrical wiring.
+
+6. img/crew-panel.jpg
+   Source: https://www.pexels.com/search/electrician%20panel/ (Pexels photo ID 10871585)
+   Direct CDN: https://images.pexels.com/photos/10871585/pexels-photo-10871585.jpeg
+   Depicts: two electricians working on control panels in an industrial indoor setting.

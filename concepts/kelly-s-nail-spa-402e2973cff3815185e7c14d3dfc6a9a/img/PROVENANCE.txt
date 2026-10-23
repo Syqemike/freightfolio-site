@@ -1,0 +1,27 @@
+Kelly's Nail Spa concept site photos. All 9 are real photos of THIS business
+(Kelly's Nail Spa, 9212 W Judge Perez Dr, Chalmette, LA), harvested from its
+public listing galleries via the Places gallery API. Captions on the site
+describe exactly what each photo shows.
+
+storefront.jpg  | Facebook business page (Kelly's Nail Spa) | https://www.facebook.com/1426587477359090
+    Storefront sign: "Kelly's Nail Spa 504-252-4803" with an OPEN neon in the window.
+pedicure-chairs.jpg | Facebook business page (Kelly's Nail Spa) | https://www.facebook.com/1426587477359090
+    Row of pedicure spa chairs inside the salon, pale green walls.
+team.jpg | Facebook business page (Kelly's Nail Spa) | https://www.facebook.com/1426587477359090
+    Five staff members posing inside the salon; the poster added a "Merry Christmas 2021" frame.
+dip-powders.jpg | Yelp listing | https://www.yelp.com/biz/0HeUnh07owZSe-cVmukZHA
+    "Mood Changing Powder" sign above a display of dip powder jars and nail color tips.
+pedicure-stations.jpg | Yelp listing | https://www.yelp.com/biz/0HeUnh07owZSe-cVmukZHA
+    Pedicure stations from a second angle.
+waiting-area.jpg | Yelp listing | https://www.yelp.com/biz/0HeUnh07owZSe-cVmukZHA
+    Waiting area with folding chairs, a side table, and magazines.
+front-desk.jpg | Yelp listing | https://www.yelp.com/biz/0HeUnh07owZSe-cVmukZHA
+    Front desk; visible signs read "We accept Visa and Mastercard" and "We have Gift Cards available".
+customer-nails.jpg | Instagram location page (Kelly's Nail Spa) | https://www.instagram.com/explore/locations/1426587477359090
+    A visitor's fresh long nude acrylic set, shared by the customer.
+pedicure-visit.jpg | Instagram location page (Kelly's Nail Spa) | https://www.instagram.com/explore/locations/1426587477359090
+    A visitor mid-pedicure holding a coffee cup; a technician works in the background.
+
+The business has no business-owned Facebook/Instagram account, so business-page
+and listing photos from its public profiles are used instead. Nothing here is
+stock or from another business.

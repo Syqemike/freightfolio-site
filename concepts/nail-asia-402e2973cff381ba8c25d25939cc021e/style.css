@@ -1,0 +1,174 @@
+/* Nail Asia concept: "The Set List" - editorial lookbook design */
+:root{
+  --paper:#f4eee1;
+  --paper2:#ece4d2;
+  --ink:#1a1610;
+  --cobalt:#1f3ad6;
+  --mut:#6b6152;
+  --line:#d8cdb6;
+  --card:#fbf8f0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Archivo',Helvetica,Arial,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.7;
+  font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+::selection{background:var(--cobalt);color:#fff}
+
+/* disclosure */
+.disclosure{
+  background:var(--ink);color:#e9e2d2;text-align:center;
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  padding:9px 16px;
+}
+.disclosure strong{color:#fff}
+.disclosure a{color:#fff}
+
+/* masthead */
+.masthead{border-bottom:1px solid var(--ink)}
+.mast-inner{
+  max-width:1240px;margin:0 auto;padding:34px 28px 26px;
+  display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;
+}
+.wordmark{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;
+  font-size:clamp(44px,6vw,76px);line-height:.95;letter-spacing:-.01em;
+  text-decoration:none;color:var(--ink);
+}
+.wordmark small{
+  display:block;font-family:'Archivo',sans-serif;font-weight:600;
+  font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--cobalt);
+  margin-top:8px;
+}
+.mast-meta{font-size:14px;line-height:1.6;color:var(--mut);text-align:right}
+.mast-meta a{color:var(--ink);font-weight:600}
+.ruled-nav{border-top:1px solid var(--ink)}
+.ruled-nav .wrap{max-width:1240px;margin:0 auto;padding:0 28px;display:flex;flex-wrap:wrap;gap:0}
+.ruled-nav a{
+  font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  text-decoration:none;color:var(--ink);padding:15px 26px 14px 0;margin-right:26px;
+  border-right:1px solid var(--line);padding-right:26px;
+}
+.ruled-nav a:last-child{border-right:0}
+.ruled-nav a:hover{color:var(--cobalt)}
+.ruled-nav a[aria-current="page"]{color:var(--cobalt)}
+
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+section{padding:70px 0}
+.kicker{
+  font-size:12px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--cobalt);margin-bottom:18px;
+}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:clamp(38px,5.4vw,68px);max-width:16em;margin-bottom:22px}
+h2{font-size:clamp(30px,4vw,48px);margin-bottom:14px}
+.lede{font-size:19px;color:var(--mut);max-width:34em}
+.prose p{margin-bottom:16px;max-width:36em}
+.prose p strong{color:var(--ink)}
+
+/* editorial two-column */
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.pull{
+  font-family:'Fraunces',Georgia,serif;font-size:clamp(24px,3vw,34px);line-height:1.3;
+  border-left:4px solid var(--cobalt);padding-left:22px;margin:28px 0;color:var(--ink);
+}
+
+/* figures */
+figure{margin:0}
+figure img{width:100%;object-fit:cover;background:var(--paper2)}
+figcaption{
+  font-size:13px;color:var(--mut);padding:10px 2px 0;line-height:1.55;
+}
+.tag{
+  display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--cobalt);border:1px solid var(--cobalt);padding:3px 10px;margin-bottom:8px;
+}
+.featured{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:44px}
+.featured figure img{aspect-ratio:4/5}
+
+/* service index rows */
+.svc-index{border-top:2px solid var(--ink);margin-top:34px}
+.svc-row{
+  display:grid;grid-template-columns:80px 1fr auto;gap:26px;align-items:baseline;
+  padding:24px 6px;border-bottom:1px solid var(--line);text-decoration:none;
+}
+.svc-row:hover{background:var(--card)}
+.svc-num{font-family:'Fraunces',Georgia,serif;font-size:22px;color:var(--cobalt)}
+.svc-row h3{font-size:clamp(22px,2.6vw,30px);margin-bottom:4px}
+.svc-row p{font-size:15px;color:var(--mut);max-width:44em}
+.svc-go{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
+
+/* lookbook strip */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:30px}
+.strip figure img{aspect-ratio:3/4}
+
+/* lookbook grid */
+.look-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 24px;margin-top:34px}
+.look-grid figure img{aspect-ratio:3/4}
+
+/* visit panel */
+.visit-panel{background:var(--ink);color:#ece5d3;margin-top:0}
+.visit-panel .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;padding-top:70px;padding-bottom:70px}
+.visit-panel h2{color:#fff}
+.visit-panel .kicker{color:#9db1ff}
+.hours{width:100%;border-collapse:collapse;margin:18px 0 8px;font-size:16px}
+.hours td{padding:10px 4px;border-bottom:1px solid #3a352b}
+.hours td:last-child{text-align:right;color:#fff}
+.visit-panel a{color:#fff}
+.addr{font-style:normal;margin:14px 0;font-size:17px}
+.rating-line{
+  border:1px solid #4a4436;padding:14px 18px;margin-top:22px;font-size:15px;color:#d8d0bd;
+}
+.rating-line strong{color:#fff}
+
+/* buttons: rectangles, no pills */
+.btn{
+  display:inline-block;background:var(--ink);color:#fff !important;text-decoration:none;
+  font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;
+  padding:17px 34px;border:0;cursor:pointer;
+}
+.btn:hover{background:var(--cobalt)}
+.btn-light{background:#fff;color:var(--ink) !important}
+.btn-light:hover{background:var(--cobalt);color:#fff !important}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+
+/* detail service blocks */
+.svc-detail{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;
+  padding:44px 0;border-top:1px solid var(--line)}
+.svc-detail:first-of-type{border-top:0}
+.svc-detail figure img{aspect-ratio:4/3}
+.svc-detail h3{font-size:clamp(26px,3vw,36px);margin-bottom:10px}
+.svc-detail .svc-num{display:block;margin-bottom:10px}
+
+/* footer */
+footer.site{border-top:1px solid var(--ink);padding:44px 0 54px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+.foot-grid h4{font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px;color:var(--mut)}
+.foot-grid p,.foot-grid a{font-size:15px}
+.fine{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--mut);display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between}
+
+/* responsive */
+@media (max-width:900px){
+  .columns,.featured,.visit-panel .wrap,.svc-detail{grid-template-columns:1fr;gap:34px}
+  .strip{grid-template-columns:repeat(2,1fr)}
+  .look-grid{grid-template-columns:repeat(2,1fr)}
+  .mast-meta{text-align:left}
+  .svc-row{grid-template-columns:52px 1fr}
+  .svc-go{display:none}
+  .foot-grid{grid-template-columns:1fr}
+  section{padding:52px 0}
+}
+@media (max-width:520px){
+  .look-grid{grid-template-columns:1fr}
+  .wrap{padding:0 20px}
+  .ruled-nav .wrap{padding:0 20px}
+  .ruled-nav a{padding:12px 16px 12px 0;margin-right:16px}
+}

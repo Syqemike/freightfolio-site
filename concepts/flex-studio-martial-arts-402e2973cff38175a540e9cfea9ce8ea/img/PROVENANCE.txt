@@ -1,0 +1,46 @@
+Flex Studio Martial Arts concept site: image provenance
+==================================================
+No public photos of the school itself could be found. The school has no
+business-owned social media and no real website. Stock photos are used
+throughout, and every caption on the site labels them as stock photos.
+All images below are from Pexels and are free to use under the Pexels License.
+
+class-hero.jpg
+  Source: https://www.pexels.com/photo/7045599/ (Pexels photo 7045599, by RDNE Stock project)
+  Depicts: students in white uniforms practicing kicks with an instructor in a bright studio
+  Use: home page hero
+
+class-bow.jpg
+  Source: https://www.pexels.com/photo/7045578/ (Pexels photo 7045578, by RDNE Stock project)
+  Depicts: two practitioners bowing to each other while seated students watch in a studio
+  Use: visit page
+
+young-student.jpg
+  Source: https://www.pexels.com/photo/7991196/ (Pexels photo 7991196, by RDNE Stock project)
+  Depicts: a young student in a white dobok standing at attention before an instructor
+  Use: home page
+
+etiquette.jpg
+  Source: https://www.pexels.com/photo/7991206/ (Pexels photo 7991206, by RDNE Stock project)
+  Depicts: a student bowing to an instructor in a studio
+  Use: gallery only (not presented as the school's instructor)
+
+beginner.jpg
+  Source: https://www.pexels.com/photo/7990081/ (Pexels photo 7990081, by RDNE Stock project)
+  Depicts: a young beginner tying a white belt in a studio
+  Use: classes page
+
+weapons-practice.jpg
+  Source: https://www.pexels.com/photo/7045446/ (Pexels photo 7045446, by RDNE Stock project)
+  Depicts: a practitioner practicing with a bo staff in a studio
+  Use: home page
+
+staff-kick.jpg
+  Source: https://www.pexels.com/photo/7045443/ (Pexels photo 7045443, by RDNE Stock project)
+  Depicts: a practitioner performing a kick while holding a staff
+  Use: classes page
+
+staff-stance.jpg
+  Source: https://www.pexels.com/photo/7045458/ (Pexels photo 7045458, by RDNE Stock project)
+  Depicts: a practitioner in a low stance holding a staff
+  Use: instructor page (generic training context, not the instructor)

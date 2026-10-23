@@ -1,0 +1,111 @@
+/* Cosmetics by Kat - Website Concept. "The Salon Ledger" design.
+   Editorial personal-brand aesthetic: paper, ink, salon-wall red, copper.
+   Fraunces display serif + Archivo for labels/body. No gradients, no pills, no art. */
+:root{
+  --paper:#f6f1e6;
+  --paper-deep:#efe7d4;
+  --ink:#221d15;
+  --ink-soft:#5c544a;
+  --red:#8c2f2b;
+  --copper:#9a6a2c;
+  --line:#d8cbb2;
+  --card:#fffdf8;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:"Archivo",system-ui,sans-serif;font-size:17px;line-height:1.7;}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+.wrap{max-width:1140px;margin:0 auto;padding:0 30px;}
+.serif{font-family:"Fraunces",Georgia,serif;}
+
+/* top disclosure ribbon */
+.ribbon{background:var(--ink);color:var(--paper);text-align:center;font-size:12px;letter-spacing:.22em;text-transform:uppercase;padding:10px 16px;font-weight:500;}
+.ribbon strong{color:#e8b04b;}
+
+/* masthead */
+.mast{border-bottom:2px solid var(--ink);padding:26px 0 20px;}
+.mast .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+.brand{font-family:"Fraunces",Georgia,serif;font-size:clamp(30px,4vw,44px);font-weight:600;line-height:1;}
+.brand em{font-style:italic;color:var(--red);}
+.mast-sub{font-size:12.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft);margin-top:8px;font-weight:600;}
+nav.sections{display:flex;gap:26px;flex-wrap:wrap;}
+nav.sections a{text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding-bottom:3px;border-bottom:2px solid transparent;}
+nav.sections a:hover,nav.sections a[aria-current="page"]{border-bottom-color:var(--red);color:var(--red);}
+
+/* editorial hero */
+.hero{padding:70px 0 60px;border-bottom:1px solid var(--line);}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center;}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;}}
+.kicker{font-size:12.5px;letter-spacing:.32em;text-transform:uppercase;font-weight:700;color:var(--red);margin-bottom:18px;display:block;}
+.hero h1{font-family:"Fraunces",Georgia,serif;font-size:clamp(42px,5.6vw,72px);line-height:1.04;font-weight:600;margin-bottom:20px;}
+.hero h1 em{font-style:italic;color:var(--red);font-weight:500;}
+.dek{font-size:19px;color:var(--ink-soft);max-width:520px;margin-bottom:28px;line-height:1.65;}
+.rating-line{font-size:14.5px;font-weight:600;letter-spacing:.06em;margin:22px 0 0;color:var(--ink);}
+.rating-line .stars{color:var(--copper);letter-spacing:.14em;}
+.cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-top:28px;}
+.btn{display:inline-block;text-decoration:none;font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:16px 34px;background:var(--red);color:#fff;border:2px solid var(--red);}
+.btn:hover{background:var(--ink);border-color:var(--ink);}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink);}
+.btn.ghost:hover{background:var(--ink);color:var(--paper);}
+.hero-fig{border:1px solid var(--ink);background:var(--card);padding:12px 12px 0;}
+.hero-fig img{width:100%;height:480px;object-fit:cover;}
+.hero-fig figcaption{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);padding:12px 4px 14px;font-weight:500;}
+
+/* ledger sections */
+section.ledger{padding:72px 0;border-bottom:1px solid var(--line);}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:10px;}
+.sec-title{font-family:"Fraunces",Georgia,serif;font-size:clamp(30px,3.6vw,46px);font-weight:600;}
+.sec-title em{font-style:italic;color:var(--red);}
+.sec-no{font-size:13px;letter-spacing:.3em;color:var(--copper);font-weight:700;}
+.sec-intro{max-width:640px;color:var(--ink-soft);font-size:17.5px;margin-bottom:34px;}
+
+/* menu ledger rows */
+.menu-block{margin-top:36px;}
+.menu-cat{font-size:13px;letter-spacing:.34em;text-transform:uppercase;font-weight:700;color:var(--red);margin:34px 0 6px;display:flex;align-items:center;gap:14px;}
+.menu-cat::after{content:"";flex:1;height:1px;background:var(--line);}
+.svc{display:grid;grid-template-columns:52px 1fr auto;gap:16px;align-items:baseline;padding:15px 0;border-bottom:1px dotted var(--line);}
+.svc .n{font-family:"Fraunces",Georgia,serif;font-style:italic;color:var(--copper);font-size:17px;}
+.svc .t{font-weight:600;font-size:18px;}
+.svc .t small{display:block;font-weight:400;color:var(--ink-soft);font-size:14.5px;margin-top:2px;}
+.svc .p{font-family:"Fraunces",Georgia,serif;font-size:21px;font-weight:600;white-space:nowrap;}
+.svc .p::before{content:"$";}
+.svc .p.note{font-size:16px;}
+.svc .p.note::before{content:"";}
+
+/* appointment strip */
+.appt{background:var(--ink);color:var(--paper);padding:64px 0;}
+.appt .wrap{display:grid;grid-template-columns:1fr auto;gap:34px;align-items:center;}
+@media(max-width:800px){.appt .wrap{grid-template-columns:1fr;}}
+.appt h2{font-family:"Fraunces",Georgia,serif;font-size:clamp(28px,3.4vw,42px);font-weight:600;margin-bottom:10px;}
+.appt h2 em{font-style:italic;color:#e8b04b;}
+.appt p{color:#cfc6b4;max-width:520px;}
+.appt .phone-big{font-family:"Fraunces",Georgia,serif;font-size:clamp(24px,3vw,34px);color:#fff;text-decoration:none;display:inline-block;margin-top:14px;border-bottom:2px solid #e8b04b;padding-bottom:2px;}
+.appt .btn{background:#e8b04b;border-color:#e8b04b;color:var(--ink);}
+.appt .btn:hover{background:var(--paper);border-color:var(--paper);}
+
+/* work gallery */
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:36px;}
+@media(max-width:900px){.work-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.work-grid{grid-template-columns:1fr;}}
+.work-grid figure{border:1px solid var(--ink);background:var(--card);padding:10px 10px 0;}
+.work-grid img{width:100%;height:300px;object-fit:cover;}
+.work-grid figcaption{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);padding:11px 4px 13px;font-weight:500;line-height:1.6;}
+.photo-note{font-size:14px;color:var(--ink-soft);font-style:italic;margin-top:22px;}
+
+/* visit facts */
+.fact-rows{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:34px;border-top:2px solid var(--ink);}
+@media(max-width:760px){.fact-rows{grid-template-columns:1fr;}}
+.fact{padding:26px 28px 26px 0;border-bottom:1px solid var(--line);}
+.fact .k{font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:var(--red);margin-bottom:8px;}
+.fact .v{font-family:"Fraunces",Georgia,serif;font-size:22px;font-weight:600;line-height:1.4;}
+.fact .v a{text-decoration:none;border-bottom:2px solid var(--copper);}
+.fact .v a:hover{color:var(--red);border-color:var(--red);}
+.fact .d{color:var(--ink-soft);font-size:15.5px;margin-top:6px;}
+
+/* footer */
+footer.site{padding:44px 0 60px;}
+.disc{font-size:13.5px;color:var(--ink-soft);max-width:760px;line-height:1.7;border-top:1px solid var(--line);padding-top:22px;}
+.disc strong{color:var(--ink);}
+.disc a{color:var(--red);}
+.foot-brand{font-family:"Fraunces",Georgia,serif;font-size:20px;font-weight:600;margin-bottom:14px;}

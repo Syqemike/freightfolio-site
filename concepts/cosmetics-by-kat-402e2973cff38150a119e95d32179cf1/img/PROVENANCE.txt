@@ -1,0 +1,50 @@
+PHOTO PROVENANCE - Cosmetics by Kat concept site
+================================================
+Business: Cosmetics by Kat, 21 Beach Dr SE, St. Petersburg, FL
+All photos below were harvested from the business's public listing on
+Loc8NearMe (listing page: https://www.loc8nearme.com/florida/saint-petersburg/cosmetics-by-kat/3906294/),
+which carries the business's own uploaded/listing photos. Identity match: listing
+name, address (21 Beach Dr SE, St. Petersburg FL), and phone ((727) 510-4833)
+all match the research record. Each image was visually inspected 2026-10-23;
+captions on the site describe only what the photo shows.
+
+img/photo1.jpg
+  source: https://cdn.localdatacdn.com/fl/saint-petersburg/3906294/original/WhNZ8J4y6s.jpg
+  depicts: collage of three nail-art photos: pink manicure with anchor design on
+           one nail; red manicure with striped accent nail; red manicure with
+           striped heart accent nail.
+
+img/photo2.jpg
+  source: https://cdn.localdatacdn.com/fl/saint-petersburg/3906294/original/C8VnfeJbyK.jpg
+  depicts: black matte leopard-print nail art with one gold glitter accent nail.
+
+img/photo3.jpg
+  source: https://cdn.localdatacdn.com/fl/saint-petersburg/3906294/original/0zHNDRA5ax.jpg
+  depicts: gold/yellow glitter manicure.
+
+img/photo4.jpg
+  source: https://cdn.localdatacdn.com/fl/saint-petersburg/3906294/original/vHVlydMkUb.jpg
+  depicts: collage of four manicure photos in a polka-dot frame: pink, lavender
+           shimmer, blue, and french-tip manicures.
+
+img/photo5.jpg
+  source: https://cdn6.localdatacdn.com/fl/saint-petersburg/3906294/original/5sVcPbf4EB.jpg
+  depicts: french manicure with pink tips.
+
+img/photo6.jpg
+  source: https://cdn6.localdatacdn.com/fl/saint-petersburg/3906294/original/LuzVlKuo5w.jpg
+  depicts: Sanitas Skincare product display (amber bottles) at the salon.
+
+img/photo8.jpg
+  source: https://cdn6.localdatacdn.com/fl/saint-petersburg/3906294/original/WJtheRZm19.jpg
+  depicts: the salon's red-and-gold striped accent wall being painted.
+
+img/photo9.jpg
+  source: https://cdn3.localdatacdn.com/fl/saint-petersburg/3906294/original/3WfM4BVt7d.jpg
+  depicts: salon interior room (red walls, desk) during setup.
+
+EXCLUDED - not used on the site:
+img/photo7.jpg (downloaded, then excluded)
+  source: https://cdn3.localdatacdn.com/fl/saint-petersburg/3906294/original/BhVsRQOPtj.jpg
+  reason: depicts a beauty trade-show/expo hall floor, not the salon or its work;
+          excluded to keep every photo representative of the business.

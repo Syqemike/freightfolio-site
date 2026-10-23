@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Youmans Kajukenbo Karate Studio | Kajukenbo in Springfield, MA</title>
+<meta name="description" content="Youmans Kajukenbo Karate Studio in Springfield, MA teaches Kajukenbo, a hybrid of karate, judo, kenpo and kung-fu, led by Grand Master Youmans, 9th degree black belt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --paper:#f2ecdf; --paper2:#eae2d0; --ink:#171310; --ink2:#2c261e;
+    --red:#8c1f1f; --red-deep:#671414; --muted:#6f6553; --line:#d6c9ae; --sand:#e6dcc4;
+  }
+  html { scroll-behavior:smooth; }
+  body { background:var(--paper); color:var(--ink); font-family:'Spectral',Georgia,'Times New Roman',serif; line-height:1.7; }
+  a { color:inherit; }
+  img { display:block; max-width:100%; }
+  .display { font-family:'Oswald',Impact,'Arial Narrow',sans-serif; text-transform:uppercase; }
+
+  /* concept disclosure strip */
+  .topstrip { background:var(--ink); padding-left:304px; padding-right:16px; padding-top:9px; padding-bottom:9px; color:#c9bfa8; font-family:'Oswald',sans-serif; font-size:11px; letter-spacing:.28em; text-transform:uppercase; text-align:center; }
+  .topstrip b { color:var(--paper); font-weight:600; }
+
+  /* side rail */
+  .rail { position:fixed; top:0; left:0; bottom:0; width:272px; background:var(--ink); color:var(--paper); display:flex; flex-direction:column; z-index:30; }
+  .rail .brand { padding:34px 30px 26px; border-bottom:1px solid #3a3226; }
+  .rail .brand a { text-decoration:none; color:var(--paper); }
+  .rail .brand .n1 { font-family:'Oswald',sans-serif; font-size:30px; font-weight:700; line-height:1.05; letter-spacing:.02em; text-transform:uppercase; }
+  .rail .brand .n1 span { color:#d8403a; }
+  .rail .brand .loc { margin-top:10px; font-size:13px; color:#a89c82; letter-spacing:.14em; text-transform:uppercase; font-family:'Oswald',sans-serif; font-weight:500; }
+  .rail nav { flex:1; padding:22px 0; }
+  .rail nav a { display:flex; align-items:baseline; gap:14px; padding:13px 30px; text-decoration:none; font-family:'Oswald',sans-serif; font-size:14px; letter-spacing:.18em; text-transform:uppercase; color:#b3a88e; border-left:3px solid transparent; }
+  .rail nav a .num { font-size:11px; color:#6d6046; }
+  .rail nav a:hover { color:var(--paper); }
+  .rail nav a.on { color:var(--paper); border-left-color:#d8403a; background:#1f1a14; }
+  .rail nav a.on .num { color:#d8403a; }
+  .rail .callbox { margin:0 26px 30px; border:1px solid #3a3226; padding:18px 20px; }
+  .rail .callbox .lab { font-family:'Oswald',sans-serif; font-size:11px; letter-spacing:.26em; text-transform:uppercase; color:#a89c82; margin-bottom:6px; }
+  .rail .callbox a.tel { font-family:'Oswald',sans-serif; font-size:20px; font-weight:600; letter-spacing:.06em; color:var(--paper); text-decoration:none; }
+  .rail .callbox a.tel:hover { color:#d8403a; }
+
+  .main { margin-left:272px; }
+  .wrap { max-width:1060px; margin:0 auto; padding:0 48px; }
+  .eyebrow { font-family:'Oswald',sans-serif; font-size:12px; font-weight:600; letter-spacing:.32em; text-transform:uppercase; color:var(--red); margin-bottom:18px; }
+  .sec { padding:84px 0; }
+  .sec.rule { border-top:1px solid var(--line); }
+
+  /* hero */
+  .hero { position:relative; background:var(--ink); color:var(--paper); overflow:hidden; }
+  .hero img { width:100%; height:74vh; min-height:480px; object-fit:cover; opacity:.5; filter:sepia(.25) contrast(1.05); }
+  .hero .over { position:absolute; left:0; right:0; bottom:0; padding:0 48px 64px; max-width:1060px; margin:0 auto; }
+  .hero h1 { font-family:'Oswald',sans-serif; font-weight:700; text-transform:uppercase; font-size:clamp(52px,7.4vw,104px); line-height:.98; letter-spacing:.01em; }
+  .hero h1 .r { color:#d8403a; }
+  .hero .sub { margin-top:18px; max-width:640px; font-size:19px; color:#e2d8c0; }
+  .hero .cta-row { margin-top:30px; display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .hero .cap { margin-top:16px; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#8f8367; font-family:'Oswald',sans-serif; }
+
+  .btn { display:inline-block; background:var(--red); color:#fff; font-family:'Oswald',sans-serif; font-weight:600; font-size:14px; letter-spacing:.2em; text-transform:uppercase; padding:15px 30px; text-decoration:none; border:2px solid var(--red); }
+  .btn:hover { background:var(--red-deep); border-color:var(--red-deep); }
+  .btn.ghost { background:transparent; color:var(--paper); border:2px solid #5a4f3a; }
+  .btn.ghost:hover { border-color:var(--paper); color:var(--paper); }
+  .btn.dark { color:var(--paper); }
+
+  /* statement */
+  .statement { max-width:760px; }
+  .statement p.big { font-size:clamp(22px,2.6vw,30px); line-height:1.55; color:var(--ink2); }
+  .statement p.big b { color:var(--red); font-weight:600; }
+
+  /* KA JU KEN BO bands */
+  .roots { display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line); background:var(--paper2); }
+  .root { padding:40px 36px; border-bottom:1px solid var(--line); position:relative; }
+  .root:nth-child(odd) { border-right:1px solid var(--line); }
+  .root:last-child, .root:nth-last-child(2) { border-bottom:none; }
+  .root .rt { font-family:'Oswald',sans-serif; font-size:56px; font-weight:700; color:var(--red); line-height:1; }
+  .root h3 { font-family:'Oswald',sans-serif; font-size:17px; font-weight:600; letter-spacing:.2em; text-transform:uppercase; margin:14px 0 10px; }
+  .root p { font-size:16px; color:var(--ink2); }
+  .motto { margin-top:34px; border-left:4px solid var(--red); padding:6px 0 6px 26px; font-size:clamp(19px,2.2vw,25px); font-style:italic; color:var(--ink2); max-width:640px; }
+
+  /* ledger schedule */
+  .ledger { border-top:2px solid var(--ink); }
+  .ledger .row { display:flex; justify-content:space-between; align-items:baseline; gap:20px; padding:20px 4px; border-bottom:1px solid var(--line); }
+  .ledger .day { font-family:'Oswald',sans-serif; font-size:18px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; }
+  .ledger .hrs { font-size:17px; color:var(--ink2); text-align:right; }
+  .ledger .hrs em { font-style:normal; color:var(--muted); font-size:14px; }
+
+  /* photo mosaic */
+  .mosaic { display:grid; grid-template-columns:1.2fr .8fr; gap:26px; }
+  .mosaic figure { margin:0; }
+  .mosaic figure.tall img { height:520px; object-fit:cover; width:100%; }
+  .mosaic figure.short img { height:247px; object-fit:cover; width:100%; }
+  .mosaic .stack { display:grid; gap:26px; }
+  figcaption { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-family:'Oswald',sans-serif; padding-top:10px; }
+
+  /* two-up split */
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
+  .split img { width:100%; height:100%; object-fit:cover; min-height:420px; }
+  h2.stitle { font-family:'Oswald',sans-serif; font-weight:700; text-transform:uppercase; font-size:clamp(34px,4.4vw,54px); line-height:1.02; margin-bottom:20px; }
+  h2.stitle .r { color:var(--red); }
+  p.lede { font-size:19px; color:var(--ink2); margin-bottom:22px; max-width:560px; }
+  .callline { margin-top:34px; display:flex; gap:26px; align-items:center; flex-wrap:wrap; }
+  .callline .ph { font-family:'Oswald',sans-serif; font-size:26px; font-weight:600; letter-spacing:.05em; text-decoration:none; }
+  .callline .ph:hover { color:var(--red); }
+
+  /* instructor fact row */
+  .facts { display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--line); background:var(--paper2); }
+  .fact { padding:30px 28px; border-right:1px solid var(--line); }
+  .fact:last-child { border-right:none; }
+  .fact .v { font-family:'Oswald',sans-serif; font-size:44px; font-weight:700; color:var(--red); line-height:1; }
+  .fact .k { margin-top:10px; font-family:'Oswald',sans-serif; font-size:12px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--muted); }
+
+  /* footer */
+  footer { background:var(--ink); color:#a89c82; }
+  footer .wrap { padding-top:64px; padding-bottom:40px; }
+  footer .frow { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; }
+  footer .fname { font-family:'Oswald',sans-serif; font-size:24px; font-weight:700; text-transform:uppercase; color:var(--paper); margin-bottom:12px; }
+  footer p { font-size:15px; }
+  footer .flab { font-family:'Oswald',sans-serif; font-size:11px; letter-spacing:.26em; text-transform:uppercase; color:#6d6046; margin-bottom:12px; }
+  footer a { color:#d9cfae; text-decoration:none; }
+  footer a:hover { color:#fff; }
+  footer .rate { margin-top:6px; font-size:15px; color:#d9cfae; }
+  footer .legal { margin-top:44px; border-top:1px solid #3a3226; padding-top:22px; font-size:13px; color:#6d6046; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+
+  .mnav { display:none; }
+  @media (max-width:960px){
+    .rail { display:none; }
+    .main { margin-left:0; }
+    .wrap { padding:0 22px; }
+    .mnav { display:flex; gap:2px; overflow-x:auto; background:var(--ink); position:sticky; top:0; z-index:30; }
+    .mnav a { flex:1 0 auto; text-align:center; padding:14px 16px; font-family:'Oswald',sans-serif; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#b3a88e; text-decoration:none; white-space:nowrap; }
+    .mnav a.on { color:#fff; background:var(--red-deep); }
+    .hero .over { padding:0 22px 48px; }
+    .roots { grid-template-columns:1fr; }
+    .root:nth-child(odd) { border-right:none; }
+    .root:nth-last-child(2) { border-bottom:1px solid var(--line); }
+    .mosaic { grid-template-columns:1fr; }
+    .mosaic figure.tall img, .mosaic figure.short img { height:auto; max-height:420px; }
+    .split { grid-template-columns:1fr; gap:32px; }
+    .facts { grid-template-columns:1fr; }
+    .fact { border-right:none; border-bottom:1px solid var(--line); }
+    .fact:last-child { border-bottom:none; }
+    footer .frow { grid-template-columns:1fr; }
+    .sec { padding:60px 0; }
+  }
+  @media (max-width:960px){ .topstrip { padding-left:16px; } }
+</style>
+</head>
+<body>
+<div class="topstrip"><b>Website Concept</b> &nbsp;·&nbsp; Design preview prepared for Youmans Kajukenbo Karate Studio. Not an official site.</div>
+
+<aside class="rail">
+  <div class="brand">
+    <a href="index.html"><div class="n1">Youmans <span>Kajukenbo</span> Karate Studio</div></a>
+    <div class="loc">Springfield, Massachusetts</div>
+  </div>
+  <nav>
+    <a href="index.html" class="on"><span class="num">01</span>The School</a>
+    <a href="classes.html"><span class="num">02</span>Classes</a>
+    <a href="schedule.html"><span class="num">03</span>Schedule</a>
+    <a href="instructor.html"><span class="num">04</span>Instructor</a>
+    <a href="photos.html"><span class="num">05</span>Photos</a>
+    <a href="visit.html"><span class="num">06</span>Visit</a>
+  </nav>
+  <div class="callbox">
+    <div class="lab">Call to book</div>
+    <a class="tel" href="tel:+17205053676">(720) 505-3676</a>
+  </div>
+</aside>
+
+<nav class="mnav">
+  <a href="index.html" class="on">The School</a>
+  <a href="classes.html">Classes</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="instructor.html">Instructor</a>
+  <a href="photos.html">Photos</a>
+  <a href="visit.html">Visit</a>
+</nav>
+
+<div class="main">
+
+  <header class="hero">
+    <img src="img/photo-outdoor-kick.jpg" alt="Stock photo: two martial artists in white gis practicing kicks outdoors">
+    <div class="over">
+      <div class="eyebrow" style="color:#e0b3a6;">Kajukenbo · Springfield, MA</div>
+      <h1>One art<br>built <span class="r">from four.</span></h1>
+      <p class="sub">Youmans Kajukenbo Karate Studio teaches Kajukenbo, a hybrid martial art that blends karate, judo, kenpo and kung-fu into a single system.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+17205053676">Call to book</a>
+        <a class="btn ghost" href="schedule.html">See the schedule</a>
+      </div>
+      <div class="cap">Stock photo. Not the studio or its students.</div>
+    </div>
+  </header>
+
+  <section class="sec">
+    <div class="wrap statement">
+      <div class="eyebrow">The school</div>
+      <p class="big">Kajukenbo was created when five black belts from different martial arts backgrounds trained together to build <b>one practical fighting art</b>. That idea still shapes every class at the studio: take what works, discard the rest, and keep training.</p>
+    </div>
+  </section>
+
+  <section class="sec rule">
+    <div class="wrap">
+      <div class="eyebrow">What the name carries</div>
+      <h2 class="stitle">Four letters. <span class="r">Four arts.</span></h2>
+      <p class="lede">Kajukenbo is a compound word. Each syllable names one of the arts that went into it.</p>
+      <div class="roots">
+        <div class="root">
+          <div class="rt">KA</div>
+          <h3>Long life · Karate</h3>
+          <p>The karate root brings hard, powerful technique: the striking foundation of the system.</p>
+        </div>
+        <div class="root">
+          <div class="rt">JU</div>
+          <h3>Happiness · Judo and Ju-jitsu</h3>
+          <p>The judo root adds throwing, joint locks and sweeps, the grappling side of the art.</p>
+        </div>
+        <div class="root">
+          <div class="rt">KEN</div>
+          <h3>Fist · Kenpo</h3>
+          <p>The kenpo root contributes multiple, fluid hand techniques layered over the harder movements.</p>
+        </div>
+        <div class="root">
+          <div class="rt">BO</div>
+          <h3>Style · Chinese boxing</h3>
+          <p>The Chinese boxing root, kung-fu, brings flexibility, agility, parrying and evasive movement that flows together.</p>
+        </div>
+      </div>
+      <p class="motto">Put together, the school teaches the Kajukenbo motto: through this fist style one gains long life and happiness.</p>
+    </div>
+  </section>
+
+  <section class="sec rule">
+    <div class="wrap">
+      <div class="eyebrow">Training week</div>
+      <h2 class="stitle">Evenings and <span class="r">Saturday mornings.</span></h2>
+      <p class="lede">Classes run weekday evenings with a Saturday morning session. Sundays are not published.</p>
+      <div class="ledger">
+        <div class="row"><span class="day">Mon / Wed</span><span class="hrs">5:00 PM – 9:00 PM</span></div>
+        <div class="row"><span class="day">Tue / Thu / Fri</span><span class="hrs">5:00 PM – 7:00 PM</span></div>
+        <div class="row"><span class="day">Saturday</span><span class="hrs">9:30 AM – 12:00 PM</span></div>
+        <div class="row"><span class="day">Sunday</span><span class="hrs"><em>Hours not published</em></span></div>
+      </div>
+      <div class="callline">
+        <a class="btn" href="schedule.html">Full schedule</a>
+        <a class="ph" href="tel:+17205053676">(720) 505-3676</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec rule">
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow">Your instructor</div>
+        <h2 class="stitle">Led by Grand <span class="r">Master Youmans.</span></h2>
+        <p class="lede">Grand Master Youmans holds a 9th degree black belt and has trained in the martial arts for more than 35 years. He leads training at the studio.</p>
+        <div class="callline" style="margin-top:0;">
+          <a class="btn" href="instructor.html">About the instructor</a>
+        </div>
+      </div>
+      <div>
+        <img src="img/photo-black-belt.jpg" alt="Stock photo: a black belt tied over a white gi">
+        <figcaption>Stock photo. Not the instructor.</figcaption>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="frow">
+        <div>
+          <div class="fname">Youmans Kajukenbo Karate Studio</div>
+          <p>143 Main St, Suite 210<br>Springfield, MA 01105</p>
+          <p class="rate">Rated 4.8 out of 5 stars from 24 reviews on Google.</p>
+        </div>
+        <div>
+          <div class="flab">Hours</div>
+          <p>Mon / Wed: 5–9 PM<br>Tue / Thu / Fri: 5–7 PM<br>Sat: 9:30 AM – 12 PM</p>
+        </div>
+        <div>
+          <div class="flab">Contact</div>
+          <p><a href="tel:+17205053676">(720) 505-3676</a><br>Call to book.</p>
+        </div>
+      </div>
+      <div class="legal">
+        <span>Website Concept. Design preview prepared by Freightfolio. Not the school's official site.</span>
+        <span>All photos are labeled stock.</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

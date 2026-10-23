@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Thronson Body Shop Inc | Collision Repair · Saraland, AL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3edde; --paper2:#e9e1cc; --ink:#1a1d21; --ink2:#22262c;
+    --orange:#d2541e; --orange-dk:#a83f13; --steel:#6b7280; --line:#c9bfa8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Barlow',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  .disclosure{background:var(--ink2);color:#b9b2a0;text-align:center;font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;letter-spacing:.08em;padding:8px 16px}
+  .disclosure a{color:var(--orange)}
+  header.site{border-bottom:3px solid var(--ink)}
+  .ticket-bar{max-width:1180px;margin:0 auto;padding:16px 22px 0;display:flex;flex-wrap:wrap;gap:8px 34px;
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:var(--steel)}
+  .ticket-bar strong{color:var(--ink)}
+  .masthead{max-width:1180px;margin:0 auto;padding:18px 22px 22px;display:flex;align-items:center;
+    justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .brand{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(30px,4.4vw,52px);
+    line-height:1;letter-spacing:.01em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+  .brand em{font-style:normal;color:var(--orange)}
+  .nav{display:flex;gap:22px;flex-wrap:wrap;list-style:none}
+  .nav a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:3px}
+  .nav a:hover,.nav a[aria-current="page"]{border-bottom-color:var(--orange);color:var(--orange-dk)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+  .btn{display:inline-block;background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;font-size:19px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;
+    padding:13px 30px;box-shadow:5px 5px 0 var(--ink);border:2px solid var(--ink);transition:transform .12s ease, box-shadow .12s ease}
+  .btn:hover{background:var(--orange-dk);transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink)}
+  .btn.ghost{background:var(--paper);color:var(--ink)}
+  /* HERO: work-order two column */
+  .hero{border-bottom:3px solid var(--ink);background:var(--paper)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding-top:56px;padding-bottom:60px}
+  .hero .kicker{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--orange-dk);margin-bottom:14px}
+  .hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(52px,7.6vw,104px);
+    line-height:.92;text-transform:uppercase;letter-spacing:.005em;margin-bottom:16px}
+  .hero h1 .rule{background:var(--orange);color:#fff;padding:0 12px}
+  .hero p.lede{font-size:18px;color:#3c4149;max-width:34em;margin-bottom:8px}
+  .hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px}
+  .hero figure{border:3px solid var(--ink);box-shadow:10px 10px 0 var(--paper2);position:relative;background:#fff}
+  .hero figure img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .hero .cap{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--steel);padding:8px 12px;
+    border-top:3px solid var(--ink);background:#fff}
+  .stamp{position:absolute;top:-24px;right:-14px;transform:rotate(8deg);background:var(--paper);
+    border:3px double var(--orange-dk);color:var(--orange-dk);font-family:'IBM Plex Mono',monospace;
+    font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;padding:10px 16px}
+  /* ticket strip */
+  .strip{background:var(--ink2);color:#e8e2d2}
+  .strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  .strip-cell{padding:22px 26px;border-left:1px dashed #4a5058}
+  .strip-cell:first-child{border-left:none}
+  .strip-cell .f{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;color:#8f97a3;
+    text-transform:uppercase;margin-bottom:6px}
+  .strip-cell .v{font-size:17px;font-weight:600}
+  .strip-cell .v a{color:#fff}
+  .rating .stars{color:var(--orange);letter-spacing:3px}
+  /* sections */
+  section.block{padding:70px 0}
+  .sec-label{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--orange-dk);margin-bottom:10px}
+  .sec-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(36px,5vw,60px);
+    text-transform:uppercase;line-height:.95;margin-bottom:12px}
+  .sec-head p{font-size:17px;color:#3c4149;max-width:42em}
+  .caution{height:14px;background:repeating-linear-gradient(135deg,var(--orange) 0 22px,var(--ink) 22px 44px);
+    border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+  /* ledger rows */
+  .ledger{margin-top:34px;border-top:3px solid var(--ink)}
+  .ledger-row{display:grid;grid-template-columns:90px 1fr auto;gap:24px;align-items:center;
+    padding:22px 8px;border-bottom:2px dashed var(--line)}
+  .ledger-row .no{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;color:var(--orange-dk)}
+  .ledger-row h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;
+    text-transform:uppercase;letter-spacing:.02em}
+  .ledger-row p{font-size:16px;color:#3c4149}
+  .ledger-row .tag{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:var(--steel);
+    text-transform:uppercase;white-space:nowrap}
+  /* 1966 band */
+  .band1966{background:var(--ink);color:var(--paper);padding:74px 0}
+  .band1966 .wrap{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center}
+  .bigyear{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(90px,14vw,190px);
+    line-height:.85;color:var(--orange)}
+  .band1966 h2{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(30px,3.6vw,46px);
+    text-transform:uppercase;margin-bottom:10px}
+  .band1966 p{font-size:17px;color:#c9c3b4;max-width:40em;margin-bottom:8px}
+  .band1966 .fine{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#8f97a3}
+  /* photo strip */
+  .photostrip{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:22px;margin-top:34px}
+  .photostrip figure{border:3px solid var(--ink);background:#fff}
+  .photostrip img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .photostrip .cap{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--steel);padding:8px 12px;
+    border-top:3px solid var(--ink)}
+  .more-link{margin-top:26px}
+  .more-link a{font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--orange-dk)}
+  /* visit */
+  .visit{background:var(--paper2);border-top:3px solid var(--ink)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px}
+  .vcard{background:#fff;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--line);padding:30px}
+  .vcard h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:28px;text-transform:uppercase;
+    margin-bottom:14px;color:var(--orange-dk)}
+  .hours-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;
+    border-bottom:2px dashed var(--line);font-size:16px;font-family:'IBM Plex Mono',monospace}
+  .hours-row:last-child{border-bottom:none}
+  .vcard p{margin-bottom:8px;font-size:16px}
+  .vcard a{color:var(--orange-dk);font-weight:600}
+  .vcard .btn{color:#fff;margin-top:14px}
+  footer{background:var(--ink2);color:#8f97a3;padding:36px 0;font-size:14px;border-top:3px solid var(--orange)}
+  footer p{margin-bottom:8px;max-width:70em}
+  footer a{color:var(--orange)}
+  footer .fnote{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6e757f}
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero figure{margin-top:20px}
+    .strip-grid{grid-template-columns:1fr 1fr}
+    .strip-cell{border-left:none;border-top:1px dashed #4a5058}
+    .strip-cell:nth-child(-n+2){border-top:none}
+    .band1966 .wrap{grid-template-columns:1fr}
+    .photostrip{grid-template-columns:1fr}
+    .visit-grid{grid-template-columns:1fr}
+    .ledger-row{grid-template-columns:60px 1fr}
+    .ledger-row .tag{display:none}
+    .nav{gap:14px}
+    .stamp{right:8px}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview by <a href="https://freightfolio.net">Freightfolio</a>. This is a concept, not the shop's website.</div>
+
+<header class="site">
+  <div class="ticket-bar">
+    <span>SHOP <strong>THRONSON BODY SHOP INC</strong></span>
+    <span>EST <strong>1966</strong></span>
+    <span>TEL <strong><a href="tel:+12516791117" style="color:var(--ink)">(251) 679-1117</a></strong></span>
+    <span>TOWN <strong>SARALAND, AL</strong></span>
+  </div>
+  <div class="masthead">
+    <a class="brand" href="index.html">Thronson <em>Body Shop</em></a>
+    <ul class="nav">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="services.html">Repairs</a></li>
+      <li><a href="about.html">Our Shop</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="visit.html">Visit</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker">Collision repair · Saraland, Alabama</div>
+        <h1>Wrecked?<br><span class="rule">We fix it.</span></h1>
+        <p class="lede">Thronson Body Shop Inc has done collision repair in Saraland since 1966. That is the whole pitch: a local body shop, one trade, done the same careful way for decades.</p>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+12516791117">Call (251) 679-1117</a>
+          <a class="btn ghost" href="services.html">What we repair</a>
+        </div>
+      </div>
+      <figure>
+        <span class="stamp">Since 1966</span>
+        <img src="img/stock-1.jpg" alt="Stock photo: technician spray-painting a masked car panel in a paint booth">
+        <figcaption class="cap">Stock photo: paint work in a booth</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="wrap strip-grid">
+      <div class="strip-cell">
+        <div class="f">Address</div>
+        <div class="v">914 Saraland Blvd S #A<br>Saraland, AL</div>
+      </div>
+      <div class="strip-cell">
+        <div class="f">Hours</div>
+        <div class="v">Mon-Fri<br>8 AM - 5 PM</div>
+      </div>
+      <div class="strip-cell">
+        <div class="f">Phone</div>
+        <div class="v"><a href="tel:+12516791117">(251) 679-1117</a></div>
+      </div>
+      <div class="strip-cell rating">
+        <div class="f">Rating</div>
+        <div class="v"><span class="stars">★★★★★</span><br>5.0 · 13 Google reviews</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-label">01 / The repair order</div>
+        <h2>Collision work, line by line</h2>
+        <p>Everything below is part of collision repair, the shop's one trade. Call the shop to talk through the damage on your vehicle.</p>
+      </div>
+      <div class="ledger">
+        <div class="ledger-row">
+          <span class="no">01</span>
+          <div><h3>Collision repair</h3><p>Body and structural repairs after a crash, back to straight.</p></div>
+          <span class="tag">Core trade</span>
+        </div>
+        <div class="ledger-row">
+          <span class="no">02</span>
+          <div><h3>Dent removal</h3><p>Dents pulled and worked so the panel sits flat again.</p></div>
+          <span class="tag">Body work</span>
+        </div>
+        <div class="ledger-row">
+          <span class="no">03</span>
+          <div><h3>Paint and refinishing</h3><p>Repaired panels repainted to match the rest of the car.</p></div>
+          <span class="tag">Finish work</span>
+        </div>
+        <div class="ledger-row">
+          <span class="no">04</span>
+          <div><h3>Bumper repair</h3><p>Cracked or scuffed bumpers repaired or swapped out.</p></div>
+          <span class="tag">Body work</span>
+        </div>
+        <div class="ledger-row">
+          <span class="no">05</span>
+          <div><h3>Panel repair</h3><p>Fenders, doors, and quarter panels repaired or replaced.</p></div>
+          <span class="tag">Body work</span>
+        </div>
+      </div>
+      <p class="more-link"><a href="services.html">Full repair details →</a></p>
+    </div>
+  </section>
+
+  <div class="caution" aria-hidden="true"></div>
+
+  <section class="band1966">
+    <div class="wrap">
+      <div class="bigyear">1966</div>
+      <div>
+        <h2>Same town. Same trade. Sixty years.</h2>
+        <p>The shop describes itself simply: collision repair since 1966. It is owned by Scooter Thronson, who has talked publicly about doing the work right even when the numbers make it hard.</p>
+        <p class="fine">SHOP EST. 1966 · OWNER: SCOOTER THRONSON</p>
+        <p class="more-link" style="margin-top:18px"><a href="about.html">Read about the shop →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-label">02 / Proof of work</div>
+        <h2>From the shop's listing</h2>
+        <p>Real photos posted to the shop's public business listing, plus one stock photo of the kind of damage this shop handles.</p>
+      </div>
+      <div class="photostrip">
+        <figure>
+          <img src="img/real-1.jpg" alt="Google listing photo for Thronson Body Shop Inc: black Ford SUV at the shop">
+          <figcaption class="cap">Google listing photo: Ford SUV at the shop</figcaption>
+        </figure>
+        <figure>
+          <img src="img/real-2.jpg" alt="Google listing photo for Thronson Body Shop Inc: front view of a black Ford SUV">
+          <figcaption class="cap">Google listing photo: front view, Ford SUV</figcaption>
+        </figure>
+        <figure>
+          <img src="img/stock-4.jpg" alt="Stock photo: silver sedan with a dented driver door">
+          <figcaption class="cap">Stock photo: dented door, ready for repair</figcaption>
+        </figure>
+      </div>
+      <p class="more-link"><a href="photos.html">See all photos →</a></p>
+    </div>
+  </section>
+
+  <section class="block visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-label">03 / Visit</div>
+        <h2>Talk to the shop directly</h2>
+        <p>There is no online booking here. Call and describe the damage.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Monday - Friday</span><strong>8:00 AM - 5:00 PM</strong></div>
+          <div class="hours-row"><span>Saturday - Sunday</span><strong>Not listed</strong></div>
+          <p style="margin-top:12px;font-size:14px;color:var(--steel)">Hours as listed publicly. Call before you drive over.</p>
+        </div>
+        <div class="vcard">
+          <h3>Find the shop</h3>
+          <p><strong>Thronson Body Shop Inc</strong><br>914 Saraland Blvd S #A<br>Saraland, AL</p>
+          <p>Phone: <a href="tel:+12516791117">(251) 679-1117</a></p>
+          <a class="btn" href="tel:+12516791117">Call to book</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Thronson Body Shop Inc. It is not affiliated with or endorsed by the shop, and it is not the shop's website.</p>
+    <p class="fnote">Two photos are real photos posted to the shop's public business listing; all others are labeled stock photos.</p>
+  </div>
+</footer>
+</body>
+</html>
