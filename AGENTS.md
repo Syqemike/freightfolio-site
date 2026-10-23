@@ -1,29 +1,27 @@
-## ChatGPT final QA and owner handoff — October 20, 2026
+# Freightfolio website release workflow
 
-ChatGPT is the final website editor and QA before owner review. Do not issue a Denied/Rejected disposition as ChatGPT's terminal outcome. Fix routine content, factual, visual, image, and usability issues directly on `chatgpt-fixes`, re-render and verify the exact version, then hand Mike the corrected website preview and clean, version-matched outreach draft for his final dashboard approval. Do not send or schedule outreach.
+Final website QA is the QA Agent's 100-point rubric, and Mike is the final approver of outreach in his dashboard. Fix routine content, factual, visual, image, and usability issues directly in the build, re-render and verify the exact version, then hand Mike the corrected website preview and a clean, version-matched outreach draft for his final dashboard approval. Do not send or schedule outreach. Mike's dashboard approval is the only send authorization.
 
-If a correction depends on unavailable source evidence or a decision reserved for Mike, keep the item open as Awaiting evidence or Awaiting owner decision, state the specific gap, and hand it to Mike. Preserve earlier owner decisions as history; a prior rejection means the earlier version needs rework, not that ChatGPT should deny the prospect or stop editing.
+If a correction depends on unavailable source evidence or a decision reserved for Mike, keep the item open as Awaiting evidence or Awaiting owner decision, state the specific gap, and hand it to Mike. Preserve earlier owner decisions as history; a prior rejection means the earlier version needs rework, not that the prospect is denied.
 
 ## Mandatory final clipart check — owner instruction October 20, 2026, 13:05 Central
 
-ChatGPT must not hand off an uncorrected version containing ANY decorative clipart or concept-art panel. Correct it directly before final QA handoff. Remove illustrated tools/chairs, fake emblems, cartoons, generated decorative drawings, raster or SVG stock illustrations, placeholder art and fabricated maps. A concept-art label does not make these acceptable. Prefer the correct business's photos; use relevant, properly licensed STOCK PHOTOGRAPHY instead of clipart when needed, honestly presented. Authentic business logos and ordinary functional navigation icons are permitted.
+No version handed to Mike may contain ANY decorative clipart or concept-art panel. Remove illustrated tools/chairs, fake emblems, cartoons, generated decorative drawings, raster or SVG stock illustrations, placeholder art and fabricated maps. A concept-art label does not make these acceptable. Prefer the correct business's photos; use relevant, properly licensed STOCK PHOTOGRAPHY instead of clipart when needed, honestly presented. Authentic business logos and ordinary functional navigation icons are permitted.
 
 Before final approval:
 - Inspect every rendered section/page of the exact submitted commit, including lower sections, backgrounds and footer. Check source/assets for SVG, raster, CSS/canvas and background artwork; image-based clipart also fails.
-- Record a commit-specific Clipart check PASS or FAIL and rendered review evidence in the prospect release record. Agent PASS, a source scan alone, or an inspected hero alone cannot establish visual clearance. If desktop visual access is unavailable, leave final visual review incomplete.
-- Fix routine removals/replacements directly on chatgpt-fixes after checking ownership and current heads. Review the corrected preview before release and verify production afterward. Preserve approved photographic design and unrelated code.
-- Rejected versions remain held until the corrected exact version passes final review. A draft/status update or replacing only one illustration cannot clear unresolved artwork. Preserve Mike's actual approval/rejection and contact/send history; no automatic resending.
-- Muse must acknowledge saved Website Dev/QA instruction synchronization with actual saved versions. Keep mobile NOT VERIFIED — OWNER WAIVER nonblocking and Mike's final actual-message dashboard approval requirement.
+- Record a commit-specific Clipart check PASS or FAIL and rendered review evidence in the prospect release record. A source scan alone, or an inspected hero alone, cannot establish visual clearance. If desktop visual access is unavailable, leave final visual review incomplete.
+- Fix routine removals/replacements directly after checking ownership and current heads. Review the corrected preview before release and verify production afterward. Preserve approved photographic design and unrelated code.
+- Rejected versions remain held until the corrected exact version passes QA. A draft/status update or replacing only one illustration cannot clear unresolved artwork. Preserve Mike's actual approval/rejection and contact/send history; no automatic resending.
+- Keep mobile NOT VERIFIED — OWNER WAIVER nonblocking and Mike's final actual-message dashboard approval requirement.
 
-# Freightfolio website release workflow
+## Release workflow rules
 
-Mike authorized ChatGPT to implement routine final website corrections directly on October 19, 2026. ChatGPT owns scoped patches, rendered preview review, final website approval, production verification, and exact-commit Notion records. Muse owns research/build coordination, verified recipients, tailored outreach drafts, and scheduling. Mike retains final dashboard approval of actual outreach.
-
-- Read current Notion task and CRM decisions before editing. Announce ownership to avoid concurrent edits with Muse.
+- Read current Notion task and CRM decisions before editing. Announce ownership to avoid concurrent edits.
 - Work from current main and isolate reviewed concept files from staging branches. Never merge stale branches wholesale or overwrite unrelated functions, payment/webhook, intake or thank-you changes.
 - Remove unsupported factual claims, ratings, history, guarantees and image attribution rather than inventing replacements. Preserve business identity, accurate contacts, distinct accepted art direction, noindex and concept disclosure.
 - Verify corrected rendered desktop pages and links on the exact deployed version. Source inspection or HTTP 200 alone is not visual QA. Mobile NOT VERIFIED — OWNER WAIVER is nonblocking; actual usability defects still require correction.
-- Record actual approver ChatGPT, timestamp, commit, decision scope and verification limitations in Notion. Never mark Approved by Mike for a ChatGPT decision.
+- Record the actual reviewer (the QA Agent), timestamp, commit, decision scope and verification limitations in Notion. Never mark Approved by Mike for a decision Mike did not make himself in his dashboard.
 - Do not restart full design review for isolated authorized corrections. Do not send outreach or count a draft as scheduled. Avoid duplicate initial contact.
 - New spending, pricing changes, contracts, destructive actions and major business changes require Mike.
 
@@ -43,5 +41,5 @@ This newer rule supersedes the earlier stock/illustration sentence above. Do not
 - Prefer photographs of the correct business and document exact source URLs and identity/location matching.
 - Relevant, properly licensed stock photography is an acceptable fallback when suitable real-business photos are unavailable. Keep license/source evidence and never present stock as the actual business premises, staff, customers, or work. Honest stock fallback alone is not a rejection reason.
 - Use TailWaggers and Studio 601 as polished, distinctive design references, not reusable templates. Existing nonbenchmark prior design acceptance remains superseded; this rule is not blanket approval of facts, any website version, or outreach.
-- Muse must synchronize saved Website Dev and QA instructions and acknowledge the actual saved versions. A written request or this repository file alone is not proof of saved-agent synchronization.
+- Keep the saved Website Dev and QA agent instructions synchronized with this file; a written request or this repository file alone is not proof of saved-agent synchronization.
 - Missing mobile rendering remains NOT VERIFIED — OWNER WAIVER and nonblocking. Preserve historical sends, exclude previously pitched Studio 601 from new-five counts, prevent duplicate initial contact, and require Mike's final dashboard approval of actual tailored messages.
