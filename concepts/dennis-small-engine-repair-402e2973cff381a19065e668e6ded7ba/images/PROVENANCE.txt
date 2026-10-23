@@ -1,0 +1,46 @@
+PROVENANCE - Dennis' Small Engine Repair concept (batch 28)
+
+No verifiable real photos of this business exist in public sources:
+- The business's own Facebook page (facebook.com/Dennis-Small-Engine-Repair-126082960779149/)
+  is login-gated; page text and photos could not be retrieved through available channels
+  (browser fetch blocked, Facebook CLI page read unavailable for non-managed pages).
+- No Yelp listing found; no Google Business Profile found.
+- Directory listings (BBB, location.com) carry no photos.
+
+All images below are freely licensed STOCK photos from Wikimedia Commons, downloaded
+2026-10-23 at 1280px width. Every use on the site is captioned "Stock photo". None
+depict this business, its staff, or its premises.
+
+hero-mower.jpg
+  File:Lawn mower on the grass closeup.jpg
+  https://commons.wikimedia.org/wiki/File:Lawn_mower_on_the_grass_closeup.jpg
+  Used: index hero.
+
+repair-man.jpg
+  File:Man repairs lawn mower in garden.jpg
+  https://commons.wikimedia.org/wiki/File:Man_repairs_lawn_mower_in_garden.jpg
+  Used: index ethos section, gallery.
+
+walkbehind.jpg
+  File:Toro 22 Inch Recycler Walk Behind Lawn Mower.jpg
+  https://commons.wikimedia.org/wiki/File:Toro_22_Inch_Recycler_Walk_Behind_Lawn_Mower.jpg
+  Used: index visit teaser, services "what we work on", gallery.
+
+blade.jpg
+  File:Lawn mower blade.jpg
+  https://commons.wikimedia.org/wiki/File:Lawn_mower_blade.jpg
+  Used: index $40 service card, services $40 service card, gallery.
+
+sparkplugs.jpg
+  File:Engine spark plugs.jpg
+  https://commons.wikimedia.org/wiki/File:Engine_spark_plugs.jpg
+  Used: index tune-up card, services tune-up card, gallery.
+
+engine.jpg
+  File:Vintage lawn mower motor engine closeup.jpg
+  https://commons.wikimedia.org/wiki/File:Vintage_lawn_mower_motor_engine_closeup.jpg
+  Used: gallery.
+
+License: files on Wikimedia Commons carry free licenses (CC BY-SA or public domain);
+attribution is satisfied via the source URLs above and the per-photo "Stock photo"
+captions on the site.
