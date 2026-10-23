@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Gallery | Puparazzi Salon (Website Concept)</title>
+<meta name="description" content="Photo gallery for the Puparazzi Salon website concept: pet grooming in Haltom City, TX. Call (817) 887-9075.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--coral:#e8846b;--coral-deep:#d06a50;--cream:#fdf6ec;--cream-deep:#f7e9d3;--choc:#4a3226;--choc-deep:#362419;--white:#fff}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Nunito',system-ui,sans-serif;color:var(--choc);background:var(--cream);line-height:1.7}
+  h1{font-family:'Baloo 2',system-ui,sans-serif;font-weight:700;line-height:1.08;color:var(--choc-deep)}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  section{padding:64px 0}
+  .preview-bar{background:var(--choc-deep);color:var(--cream);text-align:center;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:10px 16px}
+  .preview-bar span{color:var(--coral)}
+  header.site{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:3px solid var(--coral)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{font-family:'Baloo 2',system-ui,sans-serif;font-weight:800;font-size:1.7rem;color:var(--choc-deep);text-decoration:none}
+  .brand em{font-style:normal;color:var(--coral-deep)}
+  nav.main{display:flex;gap:24px;flex-wrap:wrap}
+  nav.main a{color:var(--choc);text-decoration:none;font-weight:700;font-size:.95rem}
+  nav.main a:hover{color:var(--coral-deep)}
+  .btn{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;font-weight:800;font-family:'Baloo 2',system-ui,sans-serif;padding:14px 34px;border-radius:999px;font-size:1.05rem;box-shadow:0 6px 0 var(--coral-deep)}
+  .btn:hover{background:var(--coral-deep)}
+  .btn.small{padding:10px 24px;font-size:.95rem;box-shadow:0 4px 0 var(--coral-deep)}
+  .eyebrow{font-size:.8rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--coral-deep);margin-bottom:12px}
+  h1.page-title{font-size:clamp(2.4rem,5vw,3.6rem);margin-bottom:14px}
+  .page-sub{max-width:44rem;margin-bottom:44px;font-size:1.08rem}
+  .masonry{columns:3 280px;column-gap:24px}
+  .card{break-inside:avoid;margin-bottom:24px;background:var(--white);border-radius:22px;overflow:hidden;box-shadow:0 10px 28px rgba(74,50,38,.08)}
+  .card img{width:100%}
+  .card p{padding:14px 20px 20px;font-size:.9rem;color:#8a6f5c;font-style:italic}
+  .cta-band{background:var(--choc-deep);color:var(--cream);border-radius:28px;padding:44px;margin-top:56px;text-align:center}
+  .cta-band h2{font-family:'Baloo 2',system-ui,sans-serif;color:var(--coral);font-size:2rem;margin-bottom:10px}
+  .cta-band p{color:#d9c6b4;margin-bottom:22px}
+  footer{background:var(--choc);color:#cbb59f;padding:46px 0 30px;font-size:.94rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+  footer .fbrand{font-family:'Baloo 2',system-ui,sans-serif;font-size:1.55rem;font-weight:800;color:var(--cream)}
+  footer a{color:var(--coral)}
+  .foot-note{margin-top:24px;padding:18px 24px 0;border-top:1px solid rgba(253,246,236,.18);font-size:.8rem;color:#a68b74;max-width:1160px;margin-left:auto;margin-right:auto}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website Concept <span>&middot;</span> A design preview created for Puparazzi Salon</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Puparazzi <em>Salon</em></a>
+    <nav class="main" aria-label="Sections">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#dogs">The Dogs</a>
+      <a href="index.html#visit">Visit</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="btn small" href="tel:+18178879075">Call to Book</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Gallery</p>
+    <h1 class="page-title">At the grooming table</h1>
+    <p class="page-sub">Grooming, bathing, and finishing work in the style of a full-service pet salon. These are stock photos shown as examples; Puparazzi Salon's real groomed-pet photos are on its Facebook page.</p>
+    <div class="masonry">
+      <div class="card">
+        <img src="img/hero.jpg" alt="Freshly groomed spaniel on a grooming table">
+        <p>Stock photo: a freshly groomed spaniel at a grooming table.</p>
+      </div>
+      <div class="card">
+        <img src="img/shihtzu.jpg" alt="Freshly groomed Shih Tzu">
+        <p>Stock photo: a freshly groomed Shih Tzu.</p>
+      </div>
+      <div class="card">
+        <img src="img/trim.jpg" alt="Groomer trimming a small dog's face with scissors">
+        <p>Stock photo: a careful face trim in progress.</p>
+      </div>
+      <div class="card">
+        <img src="img/dry.jpg" alt="Groomer blow-drying a small dog">
+        <p>Stock photo: a small dog being blow-dried.</p>
+      </div>
+      <div class="card">
+        <img src="img/brush.jpg" alt="Groomer brushing a Yorkshire Terrier">
+        <p>Stock photo: a Yorkie getting a full brush-out.</p>
+      </div>
+      <div class="card">
+        <img src="img/clip.jpg" alt="Groomer trimming a Yorkshire Terrier">
+        <p>Stock photo: a Yorkie mid-trim.</p>
+      </div>
+      <div class="card">
+        <img src="img/style.jpg" alt="Groomer finishing a Shih Tzu haircut">
+        <p>Stock photo: a groomer finishing a cut.</p>
+      </div>
+    </div>
+    <div class="cta-band">
+      <h2>Your pup is next</h2>
+      <p>Open Wednesday to Saturday, 8:00 AM to 6:00 PM.</p>
+      <a class="btn" href="tel:+18178879075">Call to Book: (817) 887-9075</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="fbrand">Puparazzi Salon</div>
+      <p>4912 Broadway Ave, Haltom City, TX</p>
+      <p>Phone: <a href="tel:+18178879075">(817) 887-9075</a></p>
+    </div>
+    <div>
+      <p><a href="index.html">&larr; Back to the homepage</a></p>
+    </div>
+  </div>
+  <div class="foot-note">
+    <p>Website Concept: this is a design preview created by Freightfolio for Puparazzi Salon. It is not the business's official site. Gallery images are stock photos for illustration; the salon's real groomed-pet photos are on its Facebook page.</p>
+  </div>
+</footer>
+
+</body>
+</html>

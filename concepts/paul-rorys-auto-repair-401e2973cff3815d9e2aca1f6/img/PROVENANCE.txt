@@ -1,0 +1,8 @@
+PROVENANCE — Paul & Rory's Auto Repair concept images (batch-26)
+Retrieved 2026-10-22 via Pexels free license. Every image is STOCK (no real business photos exist: no social presence, no website). Each is captioned "Stock photo: ..." on the page. All downloads verified as image bytes and visually inspected for subject match. Photo pages opened to confirm subject and license (sample: 4489707 confirmed on pexels.com photo page).
+
+- img/garage-lift.jpg — STOCK. Pexels photo 4489707, "Mechanic performing maintenance on elevated car in dimly lit garage" by cottonbro studio. Photo page: https://www.pexels.com/photo/4489707/. Used on index.html hero and DESIGN-BRIEF.md review.
+- img/mechanic-inspect.jpg — STOCK. Pexels photo 4489717, mechanic inspecting the underside of a car raised on a lift (cottonbro studio series). Photo page: https://www.pexels.com/photo/4489717/. Used in gallery + services.html makes-note.
+- img/garage-neon.jpg — STOCK. Pexels photo 4488665, cars on lifts in a neon-lit working garage (cottonbro studio series). Photo page: https://www.pexels.com/photo/4488665/. Used in gallery.
+- img/engine-stand.jpg — STOCK. Pexels photo 8986041, mechanic with a car engine mounted on a stand. Photo page: https://www.pexels.com/photo/8986041/. Used in gallery + services.html how-it-works.
+- img/bmw-m3.jpg — STOCK. Pexels photo 19894956, black BMW M3 sedan. Photo page: https://www.pexels.com/photo/19894956/. Used in story section (supports European-specialist positioning).

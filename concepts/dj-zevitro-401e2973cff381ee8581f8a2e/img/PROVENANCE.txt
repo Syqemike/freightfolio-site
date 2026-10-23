@@ -1,0 +1,8 @@
+PROVENANCE — DJ Zevitro / Vinyl Fantasy Presents concept images (batch-26)
+Retrieved 2026-10-22. REAL-PHOTO ATTEMPT: opened https://www.djzevitro.com/ (verified live). The only image asset on the public page was the site logo (assets/logo-256.png); no gig posters or artist shots were retrievable. Facebook/Instagram pages are login-walled. Therefore every image below is Pexels free-license STOCK, each captioned "Stock photo: ..." on the page. All downloads verified as image bytes and visually inspected for subject match. Photo pages opened to confirm subject and license (sample: 26447524 confirmed on pexels.com photo page).
+
+- img/crowd-hero.jpg — STOCK. Pexels photo 26447524, "A large crowd enjoying a night concert with dramatic lighting effects" by Noland Live. Photo page: https://www.pexels.com/photo/26447524/. Used on index.html hero and events.html festivals row.
+- img/decks-closeup.jpg — STOCK. Pexels photo 1026572, close-up of DJ mixer/decks with glowing controls. Photo page: https://www.pexels.com/photo/1026572/. Used in artist section + events.html raves row.
+- img/mixer-daylight.jpg — STOCK. Pexels photo 5175867, DJ hands on a mixer during a daytime set (supports mobile-DJ positioning). Photo page: https://www.pexels.com/photo/5175867/. Used in gear gallery + events.html weddings row.
+- img/pioneer-set.jpg — STOCK. Pexels photo 16018718, DJ mixing on a Pioneer controller. Photo page: https://www.pexels.com/photo/16018718/. Used in gear gallery + events.html private-events row.
+- img/mixer-red.jpg — STOCK. Pexels photo 9005500, DJ adjusting mixer controls under red lighting. Photo page: https://www.pexels.com/photo/9005500/. Used in gear gallery + events.html clubs row.

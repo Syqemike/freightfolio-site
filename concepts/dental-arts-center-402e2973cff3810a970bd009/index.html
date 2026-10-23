@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Dental Arts Center | Dr. Michael H. Shields, DMD | Moss Point, MS</title>
+<meta name="description" content="Dental Arts Center is a family dental practice in downtown Moss Point, MS, led by Dr. Michael H. Shields, DMD. Call (855) 928-6306.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#2a7f76;
+    --teal-deep:#1d5f58;
+    --sand:#e9dcc3;
+    --sand-deep:#d9c8a5;
+    --white:#ffffff;
+    --paper:#fbf9f4;
+    --ink:#24352f;
+    --ink-soft:#4a5c56;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.7}
+  h1,h2,h3,.serif{font-family:'Source Serif 4',Georgia,serif;line-height:1.12;color:var(--teal-deep)}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  section{padding:68px 0}
+  .caption{font-size:.8rem;color:#77857f;margin-top:10px;font-style:italic}
+
+  .preview-bar{background:var(--teal-deep);color:#fff;text-align:center;font-size:.76rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:9px 16px}
+  .preview-bar span{color:var(--sand)}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.97);border-bottom:3px solid var(--teal)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;flex-wrap:wrap}
+  .brand{text-decoration:none}
+  .brand .name{font-family:'Source Serif 4',Georgia,serif;font-weight:700;font-size:1.55rem;color:var(--teal-deep)}
+  .brand .doc{display:block;font-family:'Inter',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.08em;color:var(--teal)}
+  nav.main{display:flex;gap:24px;flex-wrap:wrap}
+  nav.main a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.93rem}
+  nav.main a:hover{color:var(--teal)}
+  .btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;font-weight:700;padding:14px 32px;border-radius:4px;font-size:1rem;border:none;cursor:pointer;transition:background .15s ease}
+  .btn:hover{background:var(--teal-deep)}
+  .btn.small{padding:10px 22px;font-size:.9rem}
+
+  .hero{background:var(--white);border-bottom:1px solid var(--sand-deep)}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;padding:70px 24px 80px}
+  .kicker{font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
+  .hero h1{font-size:clamp(2.6rem,5.4vw,4.2rem);font-weight:700;margin-bottom:20px}
+  .hero h1 em{font-style:italic;color:var(--teal)}
+  .hero p.lede{font-size:1.12rem;color:var(--ink-soft);margin-bottom:26px;max-width:30rem}
+  .rating{display:inline-block;background:var(--sand);color:var(--teal-deep);font-weight:700;font-size:.88rem;padding:9px 20px;border-radius:999px;margin-bottom:24px;border:1px solid var(--sand-deep)}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .phone-note{font-size:.92rem;color:var(--ink-soft)}
+  .hero-photo img{border-radius:4px;border:4px solid var(--sand)}
+  .hero-photo{background:var(--sand);padding:14px 14px 4px;border-radius:6px}
+
+  .care-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;border:1px solid var(--sand-deep);border-radius:6px;overflow:hidden;background:#fff}
+  .care-cell{padding:38px 32px;border-right:1px solid var(--sand-deep)}
+  .care-cell:last-child{border-right:none}
+  .care-cell .num{font-family:'Source Serif 4',serif;font-size:2.2rem;color:var(--sand-deep);font-weight:700;line-height:1}
+  .care-cell h3{font-size:1.35rem;margin:14px 0 10px}
+  .care-cell p{color:var(--ink-soft);font-size:.98rem}
+  .section-head{max-width:44rem;margin-bottom:8px}
+  .section-head h2{font-size:clamp(2rem,4vw,2.9rem);font-weight:700;margin-bottom:14px}
+  .section-head p{color:var(--ink-soft);font-size:1.05rem}
+  .honest-note{background:var(--sand);border-left:4px solid var(--teal);padding:20px 24px;margin-top:34px;border-radius:0 6px 6px 0;font-size:.96rem;color:var(--ink)}
+
+  .doctor{background:var(--teal-deep);color:#eaf3f1}
+  .doctor .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+  .doctor h2{color:#fff;font-size:clamp(2rem,4vw,2.9rem);font-weight:700;margin-bottom:14px}
+  .doctor .creds{display:inline-block;border:1px solid rgba(255,255,255,.35);padding:8px 18px;border-radius:999px;font-size:.86rem;font-weight:600;letter-spacing:.06em;margin-bottom:20px;color:#fff}
+  .doctor p{margin-bottom:16px;color:#dce9e6;font-size:1.02rem}
+  .doctor .caption{color:#b9cfca}
+  .doc-photo img{border-radius:4px}
+
+  .visit{background:var(--white);border-top:1px solid var(--sand-deep)}
+  .visit-card{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--sand-deep);border-radius:6px;overflow:hidden;margin-top:40px}
+  .visit-card .info{background:var(--paper);padding:44px 40px}
+  .visit-card .info h3{font-size:1.5rem;margin-bottom:14px}
+  .visit-card .info p{margin-bottom:10px;color:var(--ink-soft)}
+  .visit-card .info strong{color:var(--ink)}
+  .visit-card .photo img{height:100%;object-fit:cover;min-height:320px;width:100%}
+
+  footer{background:var(--teal-deep);color:#c8dcd8;padding:44px 0;font-size:.9rem}
+  footer a{color:#fff}
+  footer .fine{margin-top:18px;font-size:.78rem;color:#9dbfb9;line-height:1.6}
+  .foot-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+  @media(max-width:860px){
+    .hero .wrap,.doctor .wrap{grid-template-columns:1fr;gap:36px}
+    .care-grid{grid-template-columns:1fr}
+    .care-cell{border-right:none;border-bottom:1px solid var(--sand-deep)}
+    .visit-card{grid-template-columns:1fr}
+    section{padding:52px 0}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Design Preview <span>&middot;</span> Website Concept for Dental Arts Center</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <span class="doc">Dr. Michael H. Shields, DMD</span>
+      <span class="name">Dental Arts Center</span>
+    </a>
+    <nav class="main" aria-label="Section navigation">
+      <a href="#care">Care</a>
+      <a href="#doctor">Doctor</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+    <a class="btn small" href="tel:+18559286306">Call the office</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Family Dentistry &middot; Moss Point, Mississippi</div>
+      <h1>A calm, comfortable dental practice <em>in downtown Moss Point.</em></h1>
+      <p class="lede">Dental Arts Center is a family dental practice led by Dr. Michael H. Shields, DMD. General dental care for adults and children, from a dentist with 43 years of experience (per WebMD).</p>
+      <div class="rating">Rated 5.0 from 11 Google reviews</div>
+      <div class="cta-row">
+        <a class="btn" href="tel:+18559286306">Call the office</a>
+        <span class="phone-note">(855) 928-6306</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/dental-exam.jpg" alt="Dental exam room with modern equipment">
+      <p class="caption">Stock photo: a dental exam room.</p>
+    </div>
+  </div>
+</section>
+
+<section id="care">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">What we do</div>
+      <h2>General family dentistry, kept simple.</h2>
+      <p>Dental Arts Center is a general dental practice serving families in Moss Point. The practice has not published a detailed list of procedures, so we describe its care plainly: general dental care for adults and children in one convenient location.</p>
+    </div>
+    <div class="care-grid">
+      <div class="care-cell">
+        <div class="num">01</div>
+        <h3>General dentistry</h3>
+        <p>Everyday dental care from a practice that has served the Moss Point area for decades. Dr. Shields has 43 years of experience (per WebMD).</p>
+      </div>
+      <div class="care-cell">
+        <div class="num">02</div>
+        <h3>Care for the whole family</h3>
+        <p>One dental home for adults and children. Call the office to ask how the practice can help with your family's needs.</p>
+      </div>
+      <div class="care-cell">
+        <div class="num">03</div>
+        <h3>A personal approach</h3>
+        <p>A small-town practice where you are a patient, not a number. Questions about treatment or scheduling? The office answers directly.</p>
+      </div>
+    </div>
+    <div class="honest-note"><strong>A note on our services:</strong> the practice has not published a detailed list of treatments. This page describes only what is verified: general family dentistry in downtown Moss Point. Call (855) 928-6306 to ask about specific care.</div>
+  </div>
+</section>
+
+<section class="doctor" id="doctor">
+  <div class="wrap">
+    <div class="doc-photo">
+      <img src="img/dental-tools.jpg" alt="Dental instruments arranged for treatment">
+      <p class="caption">Stock photo: dental instruments.</p>
+    </div>
+    <div>
+      <div class="creds">Meet the Doctor</div>
+      <h2>Dr. Michael H. Shields, DMD</h2>
+      <p>Dr. Shields is the dentist behind Dental Arts Center in downtown Moss Point. With 43 years of experience (per WebMD), he brings decades of steady, careful dental care to the practice.</p>
+      <p>Patients describe the practice with a perfect 5.0 rating across 11 Google reviews, a sign of long-standing trust in the community.</p>
+      <a class="btn" href="tel:+18559286306" style="background:#fff;color:var(--teal-deep)">Call the office</a>
+    </div>
+  </div>
+</section>
+
+<section class="visit">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Find us</div>
+      <h2>In downtown Moss Point.</h2>
+      <p>Dental Arts Center sits at 4218 Castenera Ave, Moss Point, MS 39563. Office hours are not published, so call ahead to schedule.</p>
+    </div>
+    <div class="visit-card">
+      <div class="info">
+        <h3>Visit the office</h3>
+        <p><strong>Address:</strong> 4218 Castenera Ave<br>Moss Point, MS 39563</p>
+        <p><strong>Phone:</strong> <a href="tel:+18559286306">(855) 928-6306</a></p>
+        <p><strong>Hours:</strong> Call for office hours</p>
+        <p style="margin-top:18px"><a class="btn small" href="visit.html">Plan your visit</a></p>
+      </div>
+      <div class="photo">
+        <img src="img/dental-operatory.jpg" alt="Modern dental operatory with chair and equipment">
+        <p class="caption" style="padding:0 16px 12px">Stock photo: a modern dental operatory.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <strong style="color:#fff;font-size:1.05rem">Dental Arts Center</strong><br>
+        Dr. Michael H. Shields, DMD<br>
+        4218 Castenera Ave, Moss Point, MS 39563<br>
+        <a href="tel:+18559286306">(855) 928-6306</a>
+      </div>
+      <div>
+        <a href="index.html">Home</a> &middot; <a href="#care">Care</a> &middot; <a href="#doctor">Doctor</a> &middot; <a href="visit.html">Visit</a>
+      </div>
+    </div>
+    <p class="fine">This page is a design preview prepared by Freightfolio (freightfolio.net) as a website concept for the business named above. It is not an official site of the business. Business facts shown are based on public listings; call the office to confirm details. Photos are stock images labeled as such.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Debzart Nails MAKEUP Design | Nails, Skin &amp; Makeup in Tulsa, OK</title>
+<meta name="description" content="Debzart Nails MAKEUP Design in Tulsa's Pearl District: manicure, pedicure, waxing, skin care, and makeup artistry. Owned by Deborah Perrin-Segura since 1995. Call (918) 520-3347.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pearl:#f6f1ea;
+    --rosegold:#b76e79;
+    --rosegold-deep:#94525c;
+    --plum:#3d2436;
+    --plum-deep:#2a1826;
+    --ink:#33232d;
+    --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--pearl);line-height:1.7;font-weight:400}
+  h1,h2,h3,.display{font-family:'Playfair Display',Georgia,serif;font-weight:600;line-height:1.1}
+  img{max-width:100%;display:block}
+  a{color:var(--rosegold-deep)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+  section{padding:84px 0}
+
+  .preview-bar{background:var(--plum-deep);color:var(--pearl);text-align:center;font-size:.76rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;padding:10px 16px}
+  .preview-bar span{color:var(--rosegold)}
+
+  header.site{background:var(--plum);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--rosegold)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0;flex-wrap:wrap}
+  .brand{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:1.6rem;color:var(--pearl);text-decoration:none;letter-spacing:.02em}
+  .brand em{font-style:italic;color:var(--rosegold)}
+  nav.main{display:flex;gap:28px;flex-wrap:wrap}
+  nav.main a{color:#e6dcd2;text-decoration:none;font-size:.92rem;letter-spacing:.08em;text-transform:uppercase}
+  nav.main a:hover{color:var(--rosegold)}
+  .btn{display:inline-block;background:var(--rosegold);color:#fff;text-decoration:none;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:15px 36px;font-size:.9rem;font-family:'Inter',sans-serif;transition:background .15s ease;border:none;cursor:pointer}
+  .btn:hover{background:var(--rosegold-deep)}
+  .btn.small{padding:11px 26px;font-size:.82rem}
+  .btn.plum{background:var(--plum);color:var(--pearl)}
+  .btn.plum:hover{background:var(--plum-deep)}
+
+  .hero{background:var(--plum);color:var(--pearl);overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;padding:0}
+  .hero-copy{padding:88px 56px 88px 26px}
+  .kicker{display:inline-block;font-size:.76rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--rosegold);margin-bottom:20px;border-bottom:1px solid var(--rosegold);padding-bottom:12px}
+  .hero h1{font-size:clamp(2.7rem,5.4vw,4.4rem);color:var(--pearl);margin-bottom:22px;font-weight:500}
+  .hero h1 em{font-style:italic;color:var(--rosegold)}
+  .hero p.lede{font-size:1.1rem;color:#ded3c6;margin-bottom:26px;max-width:30rem}
+  .rating{display:inline-block;border:1px solid var(--rosegold);color:var(--pearl);font-size:.9rem;letter-spacing:.03em;padding:9px 22px;margin-bottom:28px}
+  .rating strong{font-weight:600;color:var(--rosegold)}
+  .heritage-line{margin-top:30px;padding-top:22px;border-top:1px solid rgba(183,110,121,.4);font-size:.95rem;color:#cbbfae;letter-spacing:.04em}
+  .hero-photo{position:relative;min-height:560px}
+  .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .hero-photo .cap{position:absolute;left:0;right:0;bottom:0;background:rgba(42,24,38,.82);color:#e6dcd2;font-size:.8rem;font-style:italic;padding:10px 20px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+
+  .services{background:var(--pearl)}
+  .eyebrow{font-size:.76rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--rosegold-deep);margin-bottom:14px}
+  h2.section-title{font-size:clamp(2.2rem,4.5vw,3.4rem);color:var(--plum);margin-bottom:14px;font-weight:600}
+  .section-sub{max-width:42rem;margin-bottom:48px;font-size:1.06rem;color:#5a4a52}
+  .svc-row{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-bottom:72px}
+  .svc-row:last-child{margin-bottom:0}
+  .svc-row.flip .svc-text{order:2}
+  .svc-row.flip .svc-photo{order:1}
+  .svc-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--rosegold)}
+  .caption{font-size:.82rem;color:#8a7a82;margin-top:10px;font-style:italic}
+  .svc-text h3{font-size:2rem;color:var(--plum);margin-bottom:14px}
+  .svc-text h3 .no{font-size:.85rem;font-family:'Inter',sans-serif;color:var(--rosegold);letter-spacing:.3em;display:block;margin-bottom:8px}
+  .svc-text p{margin-bottom:14px;color:#5a4a52}
+  .svc-text ul{list-style:none;margin:18px 0}
+  .svc-text li{padding:8px 0 8px 26px;position:relative;color:var(--ink)}
+  .svc-text li::before{content:"";position:absolute;left:0;top:17px;width:10px;height:10px;border:2px solid var(--rosegold);transform:rotate(45deg)}
+
+  .heritage{background:var(--plum-deep);color:var(--pearl)}
+  .heritage .wrap{display:grid;grid-template-columns:auto 1fr;gap:60px;align-items:center}
+  .since{font-family:'Playfair Display',Georgia,serif;font-size:clamp(3.4rem,7vw,5.6rem);color:var(--rosegold);font-style:italic;white-space:nowrap;line-height:1}
+  .heritage h2{color:var(--pearl);font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:14px}
+  .heritage p{color:#d8ccbd;max-width:38rem}
+
+  .visit{background:var(--pearl)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:8px;align-items:start}
+  .hours-card{background:var(--plum);color:var(--pearl);padding:40px 38px}
+  .hours-card h3{font-family:'Playfair Display',Georgia,serif;color:var(--rosegold);font-size:1.6rem;margin-bottom:18px}
+  .hours-card table{width:100%;border-collapse:collapse}
+  .hours-card td{padding:10px 0;border-bottom:1px solid rgba(183,110,121,.35);font-size:1.02rem}
+  .hours-card td:last-child{text-align:right;color:#e6dcd2}
+  .loc h3{font-family:'Playfair Display',Georgia,serif;color:var(--plum);font-size:1.6rem;margin-bottom:12px}
+  .loc p{margin-bottom:12px;color:#5a4a52}
+  .loc a{color:var(--rosegold-deep);font-weight:600}
+  .loc img{width:100%;aspect-ratio:16/9;object-fit:cover;border:1px solid var(--rosegold);margin:16px 0 6px}
+  .gallery-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+  .gallery-strip img{aspect-ratio:4/3;object-fit:cover;width:100%;border:1px solid rgba(183,110,121,.5)}
+  .gallery-strip .caption{margin-top:8px}
+  .center{text-align:center;margin-top:40px}
+
+  footer{background:var(--plum-deep);color:#b9a9ad;padding:50px 0 30px;font-size:.94rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start}
+  footer .fbrand{font-family:'Playfair Display',Georgia,serif;font-size:1.55rem;font-weight:700;color:var(--pearl)}
+  footer .fbrand em{font-style:italic;color:var(--rosegold)}
+  footer a{color:var(--rosegold)}
+  .foot-note{margin-top:26px;padding:20px 26px 0;border-top:1px solid rgba(183,110,121,.35);font-size:.8rem;color:#8f7f84;max-width:1180px;margin-left:auto;margin-right:auto}
+
+  @media(max-width:900px){
+    .hero .wrap,.svc-row,.visit-grid,.heritage .wrap{grid-template-columns:1fr}
+    .hero-photo{min-height:380px;position:relative;height:380px}
+    .hero-copy{padding:64px 26px}
+    .since{white-space:normal}
+    .gallery-strip{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:560px){.gallery-strip{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website Concept <span>&middot;</span> A design preview created for Debzart Nails MAKEUP Design</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top">Debzart <em>Nails MAKEUP Design</em></a>
+    <nav class="main" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#visit">Visit</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn small" href="tel:+19185203347">Call to Book</a>
+  </div>
+</header>
+
+<section class="hero" id="top" style="padding:0">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="kicker">Tulsa Pearl District &middot; Nails, Skin &amp; Makeup</span>
+      <h1>An artist's touch, <em>since 1995.</em></h1>
+      <p class="lede">Debzart Nails MAKEUP Design is the Tulsa Pearl District salon of Deborah Perrin-Segura. Manicures, pedicures, skin care, and makeup artistry, including CND nail services and Senegence skincare and makeup.</p>
+      <div class="rating"><strong>4.9</strong> from 39 Google reviews</div>
+      <div class="cta-row">
+        <a class="btn" href="tel:+19185203347">Call to Book: (918) 520-3347</a>
+        <a class="btn plum" href="gallery.html">View the Gallery</a>
+      </div>
+      <p class="heritage-line">Owned and operated by Deborah Perrin-Segura since 1995.</p>
+    </div>
+    <div class="hero-photo">
+      <img src="img/hero.jpg" alt="Makeup artist applying eye makeup with an eyeshadow palette nearby">
+      <div class="cap">Stock photo: an artist applying eye makeup during a session.</div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h2 class="section-title">Nails, skin, and makeup under one roof</h2>
+    <p class="section-sub">One artist, two crafts. Book a manicure, a full makeup look, or both in one visit. Call for current pricing and availability.</p>
+
+    <div class="svc-row">
+      <div class="svc-photo">
+        <img src="img/redlip.jpg" alt="Artist applying red lip color with a lipstick palette">
+        <p class="caption">Stock photo: an artist finishing a red lip look.</p>
+      </div>
+      <div class="svc-text">
+        <h3><span class="no">01</span>Makeup artistry</h3>
+        <p>Makeup for evenings out, photos, and occasions, applied with a practiced hand. The salon also carries Senegence skincare and makeup.</p>
+        <ul>
+          <li>Full makeup application</li>
+          <li>Eye makeup and lip color</li>
+          <li>Senegence skincare and makeup</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="svc-row flip">
+      <div class="svc-photo">
+        <img src="img/nailart.jpg" alt="Red almond nails with heart and love nail art">
+        <p class="caption">Stock photo: red almond nails with hand-painted nail art.</p>
+      </div>
+      <div class="svc-text">
+        <h3><span class="no">02</span>Nails</h3>
+        <p>Manicures and pedicures with an eye for detail, from clean classics to hand-painted art. CND nail services are on the menu.</p>
+        <ul>
+          <li>Manicure</li>
+          <li>Pedicure</li>
+          <li>CND nail services</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="svc-row">
+      <div class="svc-photo">
+        <img src="img/eyeshadow.jpg" alt="Artist applying eyeshadow during a makeup session">
+        <p class="caption">Stock photo: an artist blending eyeshadow during a session.</p>
+      </div>
+      <div class="svc-text">
+        <h3><span class="no">03</span>Skin care and waxing</h3>
+        <p>Skin care treatments and waxing services alongside the nails and makeup, so one appointment can cover the whole look.</p>
+        <ul>
+          <li>Skin care</li>
+          <li>Waxing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="heritage" style="padding:72px 0">
+  <div class="wrap">
+    <div class="since">1995</div>
+    <div>
+      <h2>Three decades in the Pearl District</h2>
+      <p>Deborah Perrin-Segura has owned and run Debzart since 1995. That kind of history means regulars who have been coming for years and an artist who has seen every trend cycle through twice.</p>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <p class="eyebrow">Visit</p>
+    <h2 class="section-title">Book with Deborah</h2>
+    <div class="visit-grid">
+      <div class="hours-card">
+        <h3>Hours</h3>
+        <table>
+          <tr><td>Tuesday &ndash; Saturday</td><td>9:00 AM &ndash; 5:00 PM</td></tr>
+          <tr><td>Sunday &amp; Monday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <div class="loc">
+        <h3>The studio</h3>
+        <p>1020 S St Louis Ave<br>Tulsa, OK</p>
+        <p>In the Pearl District.</p>
+        <p>Phone: <a href="tel:+19185203347">(918) 520-3347</a></p>
+        <img src="img/eyeliner.jpg" alt="Model with graphic white eyeliner in a makeup chair">
+        <p class="caption">Stock photo: a graphic eyeliner look from a makeup session.</p>
+        <div class="cta-row" style="margin-top:20px">
+          <a class="btn" href="tel:+19185203347">Call to Book</a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-strip">
+      <div>
+        <img src="img/lips.jpg" alt="Artist applying lipstick to a client">
+        <p class="caption">Stock photo: lipstick applied during a session.</p>
+      </div>
+      <div>
+        <img src="img/hero.jpg" alt="Makeup artist applying eye makeup">
+        <p class="caption">Stock photo: eye makeup in progress.</p>
+      </div>
+      <div>
+        <img src="img/nailart.jpg" alt="Red almond nails with heart nail art">
+        <p class="caption">Stock photo: hand-painted nail art.</p>
+      </div>
+    </div>
+    <div class="center">
+      <a class="btn plum" href="gallery.html">Open the Full Gallery</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div>
+      <div class="fbrand">Debzart <em>Nails MAKEUP Design</em></div>
+      <p>1020 S St Louis Ave, Tulsa, OK</p>
+      <p>Phone: <a href="tel:+19185203347">(918) 520-3347</a></p>
+    </div>
+    <div>
+      <p><strong>Manicure, pedicure, waxing, skin care, makeup.</strong></p>
+      <p>Owned by Deborah Perrin-Segura since 1995.</p>
+    </div>
+  </div>
+  <div class="foot-note">
+    <p>Website Concept: this is a design preview created by Freightfolio for Debzart Nails MAKEUP Design. It is not the business's official site. Hours, services, and the rating shown come from public listings and may change; call the salon to confirm.</p>
+  </div>
+</footer>
+
+</body>
+</html>

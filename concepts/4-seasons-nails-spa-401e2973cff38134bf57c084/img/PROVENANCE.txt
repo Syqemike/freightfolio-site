@@ -1,0 +1,41 @@
+PROVENANCE - 4 Seasons Nails & Spa concept site photos
+Concept slug: 4-seasons-nails-spa-401e2973cff38134bf57c084
+Built: 2026-10-22 (Website Dev shift, batch-26 builder)
+
+hero.jpg - STOCK (Pexels free license). Nail technician giving a pedicure in a
+  bright salon; client reclined in a pedicure chair. Not the business's photo.
+  Source: https://www.pexels.com/photo/7755558/ (Pexels photo 7755558).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+manicure.jpg - STOCK (Pexels free license). Nail technician in black gloves
+  applying red polish during a manicure. Not the business's photo.
+  Source: https://www.pexels.com/photo/3997389/ (Pexels photo 3997389).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+polish.jpg - STOCK (Pexels free license). Finished red manicure on a white table
+  with polish bottles nearby. Not the business's photo.
+  Source: https://www.pexels.com/photo/3997386/ (Pexels photo 3997386).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+pedicure.jpg - STOCK (Pexels free license). Close-up of a pedicure in progress;
+  technician's gloved hands working on a client's foot resting on a blue towel.
+  Not the business's photo.
+  Source: https://www.pexels.com/photo/7755544/ (Pexels photo 7755544).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+gel.jpg - STOCK (Pexels free license). Finished red manicure beside a nail curing
+  lamp on a white table. Not the business's photo.
+  Source: https://www.pexels.com/photo/3997381/ (Pexels photo 3997381).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+REAL-PHOTO SHORTFALL (noted honestly): the business has real client and work
+photos on its Facebook page (facebook.com/4seasonsFoley), but the page is
+login-walled and the photos are not retrievable without a Facebook session, so
+none could be used. All five site photos are labeled stock Pexels.
+
+No images were generated, drawn, or illustrated for this site.

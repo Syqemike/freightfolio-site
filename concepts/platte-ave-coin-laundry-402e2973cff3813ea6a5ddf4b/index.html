@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Platte Ave Coin Laundry | Self-Service Laundromat in Colorado Springs, CO</title>
+<meta name="description" content="Platte Ave Coin Laundry: self-service coin-op laundromat at 843 E Platte Ave, Colorado Springs. Open daily 6 AM to 10 PM. Card and coin accepted, free Wi-Fi. Call (303) 903-4292.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#2aa5a0;
+    --teal-deep:#1d7d79;
+    --coral:#f0715c;
+    --coral-deep:#d9543e;
+    --cream:#fbf7ec;
+    --cream-deep:#f3ecda;
+    --ink:#2c2a26;
+    --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
+  h1,h2,h3,.display{font-family:'Bree Serif',Georgia,serif;line-height:1.08;color:var(--teal-deep)}
+  img{max-width:100%;display:block}
+  a{color:var(--teal-deep)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  section{padding:76px 0}
+
+  .preview-bar{background:var(--teal-deep);color:#fff;text-align:center;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px}
+  .preview-bar span{color:#ffe3d6}
+
+  header.site{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:3px dashed var(--coral)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{font-family:'Bree Serif',serif;font-size:1.55rem;color:var(--teal-deep);text-decoration:none}
+  .brand em{font-style:normal;color:var(--coral)}
+  nav.main{display:flex;gap:24px;flex-wrap:wrap}
+  nav.main a{color:var(--teal-deep);text-decoration:none;font-weight:600;font-size:.94rem}
+  nav.main a:hover{color:var(--coral)}
+  .btn{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;font-weight:700;padding:13px 32px;border-radius:999px;transition:background .15s ease}
+  .btn:hover{background:var(--coral-deep)}
+  .btn.small{padding:10px 22px;font-size:.92rem}
+  .btn.teal{background:var(--teal)}
+  .btn.teal:hover{background:var(--teal-deep)}
+
+  .hero{background:var(--teal-deep);color:#fff;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;top:-60px;right:-60px;width:260px;height:260px;border:22px solid rgba(255,255,255,.12);border-radius:50%}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:80px 24px 96px;position:relative}
+  .sticker{display:inline-block;background:var(--coral);color:#fff;font-family:'Bree Serif',serif;font-size:1rem;padding:8px 20px;border-radius:999px;transform:rotate(-3deg);margin-bottom:20px}
+  .hero h1{font-size:clamp(2.8rem,6vw,4.6rem);color:#fff;margin-bottom:18px}
+  .hero h1 .pop{color:var(--coral)}
+  .hero p.lede{font-size:1.16rem;margin-bottom:14px;max-width:32rem;color:#eef7f6}
+  .hero .hours-line{font-weight:700;font-size:1.05rem;color:#fff;margin-bottom:26px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero-photo img{border-radius:18px;border:6px solid #fff;box-shadow:0 24px 50px rgba(0,0,0,.3)}
+  .caption{font-size:.82rem;color:#7a7568;margin-top:12px;font-style:italic}
+  .hero .caption{color:#cfe8e6}
+
+  .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--coral);margin-bottom:10px}
+  h2.section-title{font-size:clamp(2.1rem,4.5vw,3.1rem);margin-bottom:14px}
+  .section-sub{max-width:42rem;margin-bottom:38px}
+
+  .board{background:var(--cream-deep)}
+  .board-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+  .price-board{background:var(--teal-deep);color:#fff;border-radius:18px;padding:42px 38px;box-shadow:0 22px 50px rgba(29,125,121,.35);position:relative}
+  .price-board::before{content:"";position:absolute;inset:12px;border:2px dashed rgba(255,255,255,.35);border-radius:10px;pointer-events:none}
+  .price-board h3{font-family:'Bree Serif',serif;color:#fff;font-size:1.8rem;margin-bottom:4px}
+  .price-board .note{font-size:.88rem;color:#cfe8e6;margin-bottom:22px}
+  .price-board ul{list-style:none}
+  .price-board li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:2px dashed rgba(255,255,255,.22);font-size:1.05rem}
+  .price-board li:last-child{border-bottom:none}
+  .price-board .price{font-family:'Bree Serif',serif;font-size:1.25rem;color:#ffd9a8;white-space:nowrap}
+  .board-side p{margin-bottom:16px}
+  .perk{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}
+  .perk .dot{flex:0 0 44px;width:44px;height:44px;border-radius:50%;background:var(--coral);color:#fff;font-family:'Bree Serif',serif;font-size:1.2rem;display:flex;align-items:center;justify-content:center}
+
+  .rating-band{background:var(--coral);color:#fff;text-align:center;padding:34px 0}
+  .rating-band .stars{font-family:'Bree Serif',serif;font-size:1.7rem;margin-bottom:6px}
+  .rating-band p{font-size:.95rem;color:#ffe8de}
+
+  .gallery .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .gal-grid figure img{border-radius:14px}
+  .gal-grid figure:nth-child(2){transform:rotate(1.5deg)}
+  .gal-grid figure:nth-child(1){transform:rotate(-1.5deg)}
+
+  .honest{background:#fff}
+  .honest-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .honest-grid img{border-radius:18px}
+  .ticket{background:var(--cream);border:2px dashed var(--coral);border-radius:14px;padding:28px;margin-top:24px}
+  .ticket h3{font-size:1.3rem;margin-bottom:8px;color:var(--coral-deep)}
+  .ticket p{font-size:.95rem}
+
+  .visit{background:var(--teal-deep);color:#fff}
+  .visit h2.section-title{color:#fff}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .hours-table{width:100%;border-collapse:collapse;margin-bottom:24px}
+  .hours-table td{padding:12px 4px;border-bottom:2px dashed rgba(255,255,255,.25);font-size:1.02rem}
+  .hours-table td:last-child{text-align:right;font-weight:700}
+  .visit .big-phone{font-family:'Bree Serif',serif;font-size:2.2rem;color:#fff;text-decoration:none;display:inline-block;margin:8px 0 20px}
+  .visit .big-phone:hover{color:#ffd9a8}
+  .visit p.addr{font-size:1.08rem;margin-bottom:16px}
+
+  footer{background:#23302f;color:#b9c6c4;padding:44px 0;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+  footer a{color:#dfe8e6}
+  @media(max-width:900px){
+    .hero .wrap,.board-wrap,.honest-grid,.visit-grid{grid-template-columns:1fr}
+    .gallery .gal-grid{grid-template-columns:1fr}
+    .gal-grid figure:nth-child(1),.gal-grid figure:nth-child(2){transform:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website Concept <span>&bull;</span> Design Preview prepared by Freightfolio</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Platte Ave <em>Coin Laundry</em></a>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="#prices">Prices</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+    <a class="btn small" href="tel:+13039034292">Call</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="sticker">Remodeled and ready</span>
+      <h1>Clean clothes.<br><span class="pop">Honest prices.</span></h1>
+      <p class="lede">Platte Ave Coin Laundry is Colorado Springs' friendly self-service laundromat. New washers, big machines for comforters, and free Wi-Fi while you wait.</p>
+      <p class="hours-line">Open every day, 6:00 AM to 10:00 PM</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+13039034292">Call (303) 903-4292</a>
+        <a class="btn teal" href="visit.html">Plan your visit</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/washers-hero.jpg" alt="Row of front-load washing machines in a bright laundromat">
+      <p class="caption">Stock photo: row of front-load washing machines in a bright laundromat.</p>
+    </div>
+  </div>
+</section>
+
+<section class="board" id="prices">
+  <div class="wrap">
+    <p class="eyebrow">The price board</p>
+    <h2 class="section-title">No surprises at the register.</h2>
+    <p class="section-sub">Every machine price is posted right here, same as on the wall. Card and coin both accepted.</p>
+    <div class="board-wrap">
+      <div class="price-board">
+        <h3>Washers</h3>
+        <p class="note">Prices as posted in the store</p>
+        <ul>
+          <li>Top Load <span class="price">$2.50</span></li>
+          <li>Front Load, 20 lb <span class="price">$2.00</span></li>
+          <li>Front Load, 30 lb <span class="price">$3.00</span></li>
+          <li>Front Load, 40 lb Super Size <span class="price">$4.00</span></li>
+        </ul>
+        <h3 style="margin-top:28px">Dryers</h3>
+        <p class="note">Prices as posted in the store</p>
+        <ul>
+          <li>Dryers, per 8 minutes <span class="price">$0.25</span></li>
+        </ul>
+        <h3 style="margin-top:28px">Supplies</h3>
+        <ul>
+          <li>Laundry soap <span class="price">$1.00+</span></li>
+        </ul>
+      </div>
+      <div class="board-side">
+        <div class="perk">
+          <div class="dot">$</div>
+          <div><strong>Card and coin accepted.</strong> Pay the way that is easiest for you at every machine.</div>
+        </div>
+        <div class="perk">
+          <div class="dot">W</div>
+          <div><strong>Free Wi-Fi.</strong> Bring a book, a laptop, or just your phone and the wait goes fast.</div>
+        </div>
+        <div class="perk">
+          <div class="dot">L</div>
+          <div><strong>Large machines.</strong> The 40 lb super-size washers handle comforters, sleeping bags, and family-sized loads.</div>
+        </div>
+        <div class="perk">
+          <div class="dot">S</div>
+          <div><strong>Soap on site.</strong> Forgot detergent? Single-use soap is available for $1.00 and up.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rating-band">
+  <div class="wrap">
+    <div class="stars">4.6 from 12 Google reviews</div>
+    <p>Rated by real customers on Google</p>
+  </div>
+</div>
+
+<section class="gallery">
+  <div class="wrap">
+    <p class="eyebrow">Inside the store</p>
+    <h2 class="section-title">Take a look around.</h2>
+    <div class="gal-grid">
+      <figure>
+        <img src="img/washers-coral.jpg" alt="Industrial washing machines against a coral wall">
+        <p class="caption">Stock photo: industrial washing machines against a coral wall.</p>
+      </figure>
+      <figure>
+        <img src="img/blue-wall.jpg" alt="Laundromat interior with washers and laundry baskets">
+        <p class="caption">Stock photo: laundromat interior with washers and laundry baskets.</p>
+      </figure>
+      <figure>
+        <img src="img/vintage-row.jpg" alt="Row of front-load washers in a laundromat">
+        <p class="caption">Stock photo: row of front-load washers in a laundromat.</p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="honest">
+  <div class="wrap honest-grid">
+    <div>
+      <img src="img/moody-row.jpg" alt="Row of washing machines in a laundromat">
+      <p class="caption">Stock photo: row of washing machines in a laundromat.</p>
+    </div>
+    <div>
+      <p class="eyebrow">Straight with you</p>
+      <h2 class="section-title">Self-service, plain and simple.</h2>
+      <p>Platte Ave Coin Laundry is a self-service coin-op laundromat. You wash, you dry, you fold. There is no wash-and-fold service, no drop-off, and no commercial accounts, so what you see is what you get.</p>
+      <div class="ticket">
+        <h3>Good to know</h3>
+        <p>Operating 40 years, under current ownership since 2012 (per the owner). Located at 843 E Platte Ave, downtown-adjacent near Colorado College.</p>
+      </div>
+      <div class="cta-row" style="margin-top:26px">
+        <a class="btn teal" href="visit.html">Visit details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <p class="eyebrow" style="color:#ffd9a8">Visit</p>
+      <h2 class="section-title">Come do a load.</h2>
+      <p class="addr"><strong>843 E Platte Ave<br>Colorado Springs, CO 80903</strong></p>
+      <table class="hours-table">
+        <tr><td>Monday - Sunday</td><td>6:00 AM - 10:00 PM</td></tr>
+      </table>
+      <a class="big-phone" href="tel:+13039034292">(303) 903-4292</a>
+      <div class="cta-row">
+        <a class="btn" href="tel:+13039034292">Call</a>
+      </div>
+    </div>
+    <div style="background:rgba(255,255,255,.08);border:2px dashed rgba(255,255,255,.4);border-radius:14px;padding:32px">
+      <h3 style="color:#fff;font-size:1.4rem;margin-bottom:14px">Before you come</h3>
+      <p style="color:#eef7f6;margin-bottom:12px">Bring your laundry, your quarters or a card, and something to pass the time. Free Wi-Fi keeps the wait easy.</p>
+      <p style="color:#eef7f6">Last wash should start with enough time to finish and dry before 10:00 PM closing.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong style="color:#fff">Platte Ave Coin Laundry</strong><br>
+      843 E Platte Ave, Colorado Springs, CO 80903 &middot; <a href="tel:+13039034292">(303) 903-4292</a>
+    </div>
+    <div>Design preview concept. Not the business's official website.</div>
+  </div>
+</footer>
+
+</body>
+</html>

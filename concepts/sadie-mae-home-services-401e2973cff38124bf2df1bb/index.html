@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="Sadie Mae Home Services: handyman and home improvement in Long Beach and Pass Christian, Mississippi. Carpentry, siding repair, painting, doors, windows, ceilings. Call for a free estimate.">
+<title>Sadie Mae Home Services | Handyman in Long Beach, MS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brown:#5a3a22;
+  --orange:#e07b2a;
+  --paper:#f7f3ea;
+  --ink:#2e2013;
+  --line:#d8cdb6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+h1,h2,h3,.slab{font-family:'Zilla Slab',Georgia,serif;color:var(--brown)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+a{color:var(--brown)}
+img{max-width:100%;height:auto;display:block}
+/* header */
+.topbar{background:var(--brown);color:#f7f3ea;padding:10px 0;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.topbar a{color:#f7f3ea;text-decoration:none;font-weight:600}
+header.site{border-bottom:3px double var(--brown);background:var(--paper)}
+.site-head{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;flex-wrap:wrap}
+.brand .slab{font-size:1.9rem;font-weight:700;line-height:1.1}
+.brand .sub{font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);font-weight:600}
+nav.main{display:flex;gap:6px;flex-wrap:wrap}
+nav.main a{border:2px solid var(--brown);padding:7px 14px;text-decoration:none;font-weight:600;font-size:.9rem;color:var(--brown);background:transparent}
+nav.main a:hover{background:var(--brown);color:#f7f3ea}
+/* disclosure */
+.disclosure{border-top:1px dashed var(--brown);border-bottom:1px dashed var(--brown);background:#efe7d2;padding:8px 0;font-size:.82rem;text-align:center;letter-spacing:.04em}
+/* hero */
+.hero{display:grid;gap:28px;padding:44px 0 36px}
+@media(min-width:860px){.hero{grid-template-columns:1fr 1fr;align-items:center}}
+.hero .kicker{display:inline-block;border:2px solid var(--orange);color:var(--orange);font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;margin-bottom:14px}
+.hero h1{font-size:2.5rem;line-height:1.15;margin-bottom:12px}
+@media(min-width:860px){.hero h1{font-size:3.1rem}}
+.hero p.lede{font-size:1.1rem;margin-bottom:20px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:14px 26px;border:2px solid var(--brown)}
+.btn.call{background:var(--orange);border-color:var(--orange);color:#fff}
+.btn.call:hover{background:#c96a1f}
+.btn.ghost{background:transparent;color:var(--brown)}
+.btn.ghost:hover{background:var(--brown);color:#f7f3ea}
+.hero figure{border:3px solid var(--brown);background:#fff;padding:10px}
+figcaption{font-size:.8rem;color:#6b5a44;padding-top:8px;font-style:italic}
+/* work order motifs */
+section.block{padding:40px 0;border-top:1px solid var(--line)}
+.wo-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px;flex-wrap:wrap}
+.wo-num{font-family:'Zilla Slab',serif;font-weight:700;font-size:1.05rem;background:var(--brown);color:#f7f3ea;padding:4px 12px;letter-spacing:.08em}
+.wo-head h2{font-size:1.8rem}
+.stamp{display:inline-block;border:2px solid var(--orange);color:var(--orange);font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;padding:5px 12px;transform:rotate(-2deg)}
+/* work order service list */
+.wo-list{list-style:none;border:3px solid var(--brown);background:#fffdf7}
+.wo-list li{padding:18px 20px;border-bottom:1px dashed var(--line)}
+.wo-list li:last-child{border-bottom:none}
+.wo-line{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.wo-code{font-family:'Zilla Slab',serif;font-weight:700;color:var(--orange);min-width:64px}
+.wo-name{font-family:'Zilla Slab',serif;font-weight:600;font-size:1.2rem;color:var(--brown)}
+.wo-desc{margin-top:6px;color:#4a3a28}
+.rule{border:none;border-top:1px solid var(--line);margin:24px 0}
+/* strips */
+.strip{background:var(--brown);color:#f7f3ea;padding:34px 0}
+.strip .slab{color:#f7f3ea}
+.strip-grid{display:grid;gap:18px}
+@media(min-width:860px){.strip-grid{grid-template-columns:repeat(4,1fr)}}
+.strip-item{border:1px solid rgba(247,243,234,.35);padding:16px}
+.strip-item .slab{font-size:1.25rem;margin-bottom:6px}
+.strip-item p{font-size:.92rem;color:#e9e0cd}
+.heritage{background:#efe7d2;text-align:center;padding:30px 20px}
+.heritage .slab{font-size:1.5rem;margin:10px 0 6px}
+/* gallery */
+.gallery{display:grid;gap:20px}
+@media(min-width:720px){.gallery{grid-template-columns:repeat(3,1fr)}}
+.gallery figure{border:2px solid var(--brown);background:#fff;padding:8px}
+.gallery figure img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+/* hours + area */
+.hours-area{display:grid;gap:20px}
+@media(min-width:720px){.hours-area{grid-template-columns:1fr 1fr}}
+.card{border:3px solid var(--brown);background:#fffdf7;padding:24px}
+.card h3{font-size:1.3rem;margin-bottom:8px}
+.card .big{font-family:'Zilla Slab',serif;font-size:1.15rem;font-weight:600;color:var(--brown)}
+/* contact */
+.contact-block{background:var(--brown);color:#f7f3ea;text-align:center;padding:48px 20px}
+.contact-block .slab{color:#f7f3ea;font-size:2rem;margin-bottom:10px}
+.contact-block .phone{font-family:'Zilla Slab',serif;font-size:2rem;font-weight:700;margin:14px 0}
+.contact-block .phone a{color:#f7f3ea;text-decoration:none;border-bottom:3px solid var(--orange)}
+.contact-block p.note{font-size:.9rem;color:#e9e0cd}
+/* footer */
+footer{background:#2e2013;color:#cfc3a8;padding:28px 0;font-size:.85rem}
+footer .wrap{display:grid;gap:14px}
+@media(min-width:720px){footer .wrap{grid-template-columns:2fr 1fr}}
+footer a{color:#e9e0cd}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Handyman and Home Improvement &middot; Long Beach, Mississippi</span>
+    <a href="tel:+12283431629">Call (228) 343-1629</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap site-head">
+    <div class="brand">
+      <div class="slab">Sadie Mae Home Services</div>
+      <div class="sub">Carpentry &middot; Repair &middot; Painting</div>
+    </div>
+    <nav class="main" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Work</a>
+      <a href="#hours">Hours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="disclosure">Website Concept / Design Preview - prepared by Freightfolio for review. This page is a draft preview and does not represent completed client work.</div>
+
+<main>
+<!-- HERO -->
+<section class="wrap hero" aria-label="Introduction">
+  <div>
+    <span class="kicker">Work Order No. 001 - Home Repair, Done Right</span>
+    <h1>Repairs and improvements that hold up, in Long Beach and Pass Christian.</h1>
+    <p class="lede">Sadie Mae Home Services handles the jobs your house has been waiting on: framing repair, trim and moldings, siding repair, painting, ceilings, doors, and windows. Ten years in business, free estimates, and warranties on the work.</p>
+    <div class="cta-row">
+      <a class="btn call" href="tel:+12283431629">Call for a free estimate</a>
+      <a class="btn ghost" href="services.html">See all services</a>
+    </div>
+  </div>
+  <figure>
+    <img src="img/carpentry-saw.jpg" alt="Hands guiding a circular saw cutting through lumber outdoors">
+    <figcaption>Stock photo: cutting framing lumber with a circular saw.</figcaption>
+  </figure>
+</section>
+
+<!-- SERVICES: work order list -->
+<section class="wrap block" id="services" aria-label="Services">
+  <div class="wo-head">
+    <span class="wo-num">WO-01</span>
+    <h2>Services</h2>
+  </div>
+  <p>One job at a time, quoted honestly. Every estimate is free.</p>
+  <hr class="rule">
+  <ul class="wo-list">
+    <li>
+      <div class="wo-line"><span class="wo-code">LINE 1</span><span class="wo-name">Carpentry framing repair</span></div>
+      <p class="wo-desc">Repair of damaged or worn framing members, done to keep the structure sound.</p>
+    </li>
+    <li>
+      <div class="wo-line"><span class="wo-code">LINE 2</span><span class="wo-name">Interior trim and decorative moldings</span></div>
+      <p class="wo-desc">Baseboards, casings, crown, and other trim, fitted and finished to match the room.</p>
+    </li>
+    <li>
+      <div class="wo-line"><span class="wo-code">LINE 3</span><span class="wo-name">Wood and fiber-cement siding repair</span></div>
+      <p class="wo-desc">Patch and replace damaged wood or fiber-cement siding sections so the exterior holds up.</p>
+    </li>
+    <li>
+      <div class="wo-line"><span class="wo-code">LINE 4</span><span class="wo-name">Painting</span></div>
+      <p class="wo-desc">Interior painting with clean lines and proper prep before the first coat goes on.</p>
+    </li>
+    <li>
+      <div class="wo-line"><span class="wo-code">LINE 5</span><span class="wo-name">Ceilings</span></div>
+      <p class="wo-desc">Ceiling repair and finishing, from small fixes to full refinishes.</p>
+    </li>
+    <li>
+      <div class="wo-line"><span class="wo-code">LINE 6</span><span class="wo-name">Doors</span></div>
+      <p class="wo-desc">Door repair, replacement, and fit so they open, close, and latch the way they should.</p>
+    </li>
+    <li>
+      <div class="wo-line"><span class="wo-code">LINE 7</span><span class="wo-name">Windows</span></div>
+      <p class="wo-desc">Window repair and replacement work, fitted and sealed.</p>
+    </li>
+  </ul>
+  <hr class="rule">
+  <a class="btn call" href="tel:+12283431629">Call for a free estimate</a>
+</section>
+
+<!-- HERITAGE -->
+<section class="heritage" id="about" aria-label="About">
+  <div class="wrap">
+    <div class="wo-head" style="justify-content:center">
+      <span class="wo-num">WO-02</span>
+      <h2>Heritage</h2>
+    </div>
+    <div class="stamp">Est. 2016</div>
+    <p class="slab">Serving Long Beach and Pass Christian since 2016.</p>
+    <p>This is a service-area business with no storefront. Bobby, the owner, is named in customer reviews. Rated 4.8 from 41 HomeAdvisor reviews (the business's own HomeAdvisor rated page).</p>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="strip" aria-label="Why choose Sadie Mae Home Services">
+  <div class="wrap">
+    <div class="wo-head">
+      <span class="wo-num" style="background:#f7f3ea;color:var(--brown)">WO-03</span>
+      <h2 class="slab">The Work Order Promise</h2>
+    </div>
+    <div class="strip-grid">
+      <div class="strip-item">
+        <div class="slab">10 Years</div>
+        <p>In business since 2016, doing handyman and home improvement work on the Mississippi Gulf Coast.</p>
+      </div>
+      <div class="strip-item">
+        <div class="slab">Free Estimates</div>
+        <p>Call or reach out and get a straight, honest estimate before any work begins. No charge for the quote.</p>
+      </div>
+      <div class="strip-item">
+        <div class="slab">Warranties</div>
+        <p>Work comes with warranties, so you are covered after the job is done.</p>
+      </div>
+      <div class="strip-item">
+        <div class="slab">Owner Named in Reviews</div>
+        <p>Customers mention owner Bobby by name in reviews. You know who is doing the work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="wrap block" id="gallery" aria-label="Work photos">
+  <div class="wo-head">
+    <span class="wo-num">WO-04</span>
+    <h2>On the Job</h2>
+  </div>
+  <p>Stock photography showing the kind of work performed.</p>
+  <hr class="rule">
+  <div class="gallery">
+    <figure>
+      <img src="img/carpentry-drill.jpg" alt="Close-up of a worker drilling wood with a power drill">
+      <figcaption>Stock photo: drilling woodwork with a power drill.</figcaption>
+    </figure>
+    <figure>
+      <img src="img/carpentry-hammer.jpg" alt="A hammer driving a nail into a wooden beam">
+      <figcaption>Stock photo: hammering a nail into a wooden beam.</figcaption>
+    </figure>
+    <figure>
+      <img src="img/painting-roller.jpg" alt="A hand rolling paint onto a wall with a yellow paint roller">
+      <figcaption>Stock photo: rolling fresh paint onto an interior wall.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- HOURS + SERVICE AREA -->
+<section class="wrap block" id="hours" aria-label="Hours and service area">
+  <div class="wo-head">
+    <span class="wo-num">WO-05</span>
+    <h2>Hours and Service Area</h2>
+  </div>
+  <hr class="rule">
+  <div class="hours-area">
+    <div class="card">
+      <h3>Hours</h3>
+      <p class="big">Monday through Saturday, 9:00 AM-3:00 PM</p>
+      <p>Hours as listed on HomeAdvisor. Call ahead to schedule your estimate.</p>
+    </div>
+    <div class="card">
+      <h3>Service Area</h3>
+      <p class="big">Long Beach and Pass Christian, Mississippi</p>
+      <p>Sadie Mae Home Services is a service-area business serving Long Beach and Pass Christian, MS. There is no storefront; work is done at your home.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-block" id="contact" aria-label="Contact">
+  <div class="wrap">
+    <div class="wo-head" style="justify-content:center">
+      <span class="wo-num" style="background:#f7f3ea;color:var(--brown)">WO-06</span>
+      <h2 class="slab">Start the Work Order</h2>
+    </div>
+    <p>Describe the job and get a free estimate.</p>
+    <div class="phone"><a href="tel:+12283431629">(228) 343-1629</a></div>
+    <p class="note">Call for a free estimate. Monday through Saturday, 9:00 AM-3:00 PM.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong class="slab" style="color:#f7f3ea">Sadie Mae Home Services</strong>
+      <p>Handyman and home improvement, Long Beach and Pass Christian, MS. Design preview prepared by Freightfolio; not completed client work.</p>
+    </div>
+    <div>
+      <p>Phone: <a href="tel:+12283431629">(228) 343-1629</a></p>
+      <p>Hours: Mon-Sat 9:00 AM-3:00 PM</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

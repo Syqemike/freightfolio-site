@@ -1,0 +1,8 @@
+PROVENANCE — Platte Ave Coin Laundry concept images (batch-26)
+Retrieved 2026-10-22 via Pexels free license. Every image is STOCK (real photos exist in the business's Yelp and Facebook galleries but are login- or JS-walled and not retrievable). Each is captioned "Stock photo: ..." on the page. All downloads verified as image bytes and visually inspected for subject match. Photo pages opened to confirm subject and license (sample: 4700420 confirmed on pexels.com photo page).
+
+- img/washers-hero.jpg — STOCK. Pexels photo 4700420, "Contemporary laundromat showcasing a row of industrial washing machines" by Ekaterina Belinskaya. Photo page: https://www.pexels.com/photo/4700420/. Used on index.html hero.
+- img/washers-coral.jpg — STOCK. Pexels photo 34653756, row of industrial Primus washing machines against a coral wall. Photo page: https://www.pexels.com/photo/34653756/. Used in gallery.
+- img/blue-wall.jpg — STOCK. Pexels photo 9669475, laundromat interior with washers and laundry baskets against a blue wall. Photo page: https://www.pexels.com/photo/9669475/. Used in gallery.
+- img/vintage-row.jpg — STOCK. Pexels photo 23230832, row of front-load washers in a laundromat. Photo page: https://www.pexels.com/photo/23230832/. Used in gallery.
+- img/moody-row.jpg — STOCK. Pexels photo 2347642, row of washing machines in a laundromat. Photo page: https://www.pexels.com/photo/2347642/. Used in honest/self-service section.

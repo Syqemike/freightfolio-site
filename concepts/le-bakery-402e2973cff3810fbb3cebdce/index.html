@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Le Bakery | Banh Mi, French Bread &amp; Vietnamese Coffee | Biloxi, MS</title>
+<meta name="description" content="Le Bakery in East Biloxi serves banh mi, Vietnamese iced coffee, French baguettes, turnovers, and occasion cakes. 280 Oak St, Biloxi, MS. Call (228) 436-0850.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --gold:#c98f2d;
+    --gold-deep:#a56f1c;
+    --jade:#2e7d5b;
+    --jade-deep:#1f5c42;
+    --cream:#fbf5e9;
+    --cream-deep:#f3e9d2;
+    --ink:#33291c;
+    --ink-soft:#5d4f3c;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
+  h1,h2,h3,.display{font-family:'Fraunces',Georgia,serif;line-height:1.1;color:var(--jade-deep)}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  section{padding:64px 0}
+  .caption{font-size:.8rem;color:#8a765c;margin-top:10px;font-style:italic}
+
+  .preview-bar{background:var(--jade-deep);color:#fff;text-align:center;font-size:.76rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:9px 16px}
+  .preview-bar span{color:var(--gold)}
+
+  header.site{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:3px double var(--gold)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{text-decoration:none;font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.8rem;color:var(--jade-deep)}
+  .brand em{font-style:italic;color:var(--gold-deep)}
+  nav.main{display:flex;gap:24px;flex-wrap:wrap}
+  nav.main a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.93rem}
+  nav.main a:hover{color:var(--gold-deep)}
+  .btn{display:inline-block;background:var(--jade);color:#fff;text-decoration:none;font-weight:700;padding:14px 32px;border-radius:999px;font-size:1rem;transition:background .15s ease}
+  .btn:hover{background:var(--jade-deep)}
+  .btn.small{padding:10px 22px;font-size:.9rem}
+
+  .hero{background:var(--jade-deep);color:#fff;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:10px;border:2px solid rgba(201,143,45,.45);border-radius:6px;pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;padding:72px 24px 84px;position:relative}
+  .kicker{font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+  .hero h1{font-size:clamp(2.7rem,5.6vw,4.4rem);font-weight:700;color:#fff;margin-bottom:18px}
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero p.lede{font-size:1.12rem;margin-bottom:26px;max-width:30rem;color:#f0e6d2}
+  .proof{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+  .proof .pill{background:rgba(255,255,255,.1);border:1px solid var(--gold);color:#fff;font-weight:600;font-size:.86rem;padding:8px 18px;border-radius:999px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero .btn{background:var(--gold);color:var(--jade-deep)}
+  .hero .btn:hover{background:#e0a843}
+  .hero-photo img{border-radius:6px;border:3px solid var(--gold);box-shadow:12px 12px 0 rgba(0,0,0,.25)}
+  .hero .caption{color:#d9c9a8}
+
+  .menu-strip{border-bottom:1px solid var(--cream-deep);background:#fff}
+  .chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:26px 0}
+  .chip{border:1.5px solid var(--gold);color:var(--jade-deep);font-weight:600;font-size:.88rem;padding:8px 18px;border-radius:999px;background:var(--cream)}
+
+  .board{background:var(--cream)}
+  .board-head{text-align:center;margin-bottom:44px}
+  .board-head h2{font-size:clamp(2rem,4vw,2.9rem);font-weight:700;margin-bottom:12px}
+  .board-head p{color:var(--ink-soft);max-width:38rem;margin:0 auto}
+  .board-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+  .board-card{background:#fff;border:1px solid var(--cream-deep);border-top:6px solid var(--gold);border-radius:6px;padding:34px 32px}
+  .board-card.jade{border-top-color:var(--jade)}
+  .board-card h3{font-size:1.55rem;margin-bottom:6px}
+  .board-card .sub{color:var(--ink-soft);font-size:.94rem;margin-bottom:16px;font-style:italic;font-family:'Fraunces',serif}
+  .board-card ul{list-style:none}
+  .board-card li{padding:9px 0;border-bottom:1px dashed var(--cream-deep);font-size:.98rem}
+  .board-card li:last-child{border-bottom:none}
+  .board-card li strong{color:var(--jade-deep)}
+  .value-note{background:var(--jade-deep);color:#fff;border-radius:6px;padding:26px 32px;margin-top:32px;text-align:center;font-family:'Fraunces',serif;font-size:1.25rem}
+  .value-note em{font-style:italic;color:var(--gold)}
+
+  .gallery{background:#fff;border-top:1px solid var(--cream-deep);border-bottom:1px solid var(--cream-deep)}
+  .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+  .gal-grid img{border-radius:6px;aspect-ratio:4/3;object-fit:cover;width:100%}
+
+  .visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .hours{width:100%;border-collapse:collapse;margin-top:8px}
+  .hours td{padding:12px 4px;border-bottom:1px solid var(--cream-deep);font-size:1rem}
+  .hours td:last-child{text-align:right;font-weight:600;color:var(--jade-deep)}
+  .hours tr.closed td:last-child{color:var(--gold-deep)}
+  .visit h2{font-size:clamp(2rem,4vw,2.8rem);font-weight:700;margin-bottom:16px}
+  .visit p.addr{font-size:1.05rem;margin:14px 0 22px;color:var(--ink-soft)}
+  .visit-photo img{border-radius:6px}
+
+  footer{background:var(--jade-deep);color:#d9e6dc;padding:44px 0;font-size:.9rem}
+  footer a{color:#fff}
+  footer .fine{margin-top:18px;font-size:.78rem;color:#a9c4b2;line-height:1.6}
+  .foot-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+  @media(max-width:860px){
+    .hero .wrap,.visit .wrap{grid-template-columns:1fr;gap:36px}
+    .board-grid{grid-template-columns:1fr}
+    .gal-grid{grid-template-columns:1fr}
+    section{padding:50px 0}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Design Preview <span>&middot;</span> Website Concept for Le Bakery</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Le <em>Bakery</em></a>
+    <nav class="main" aria-label="Section navigation">
+      <a href="#menu">Menu</a>
+      <a href="menu.html">Full menu</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn small" href="tel:+12284360850">Call to order</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Vietnamese Bakery &middot; East Biloxi, Mississippi</div>
+      <h1>Banh mi, French bread, <em>and Vietnamese coffee.</em></h1>
+      <p class="lede">Le Bakery is a Vietnamese bakery on Oak Street in East Biloxi. Sandwiches, French baguettes, pastries, and ca phe sua da, baked fresh and easy on the wallet.</p>
+      <div class="proof">
+        <span class="pill">4.8 from 420 Google reviews</span>
+        <span class="pill">18,262 Facebook followers</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12284360850">Call to order</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/banhmi.jpg" alt="Banh mi sandwich">
+      <p class="caption">Stock photo: a banh mi sandwich.</p>
+    </div>
+  </div>
+</section>
+
+<div class="menu-strip">
+  <div class="wrap">
+    <div class="chips" aria-label="Menu highlights">
+      <span class="chip">Banh mi</span>
+      <span class="chip">Ca phe sua da</span>
+      <span class="chip">French baguettes</span>
+      <span class="chip">Butter croissants</span>
+      <span class="chip">Bubble tea</span>
+      <span class="chip">Turnovers</span>
+      <span class="chip">Occasion cakes</span>
+      <span class="chip">King cakes</span>
+    </div>
+  </div>
+</div>
+
+<section class="board" id="menu">
+  <div class="wrap">
+    <div class="board-head">
+      <div class="kicker" style="color:var(--gold-deep)">From the bakery case</div>
+      <h2>What regulars come back for.</h2>
+      <p>Research-verified menu highlights from Le Bakery. See the <a href="menu.html" style="color:var(--jade-deep);font-weight:600">full menu board</a> for everything.</p>
+    </div>
+    <div class="board-grid">
+      <div class="board-card jade">
+        <h3>Banh mi</h3>
+        <p class="sub">On fresh French bread, baked in house</p>
+        <ul>
+          <li><strong>Roast pork</strong></li>
+          <li><strong>Meatball</strong></li>
+          <li><strong>Lemongrass grilled pork</strong></li>
+          <li><strong>Vietnamese sausage</strong></li>
+          <li><strong>Coconut curry</strong></li>
+          <li><strong>Tofu</strong></li>
+        </ul>
+      </div>
+      <div class="board-card">
+        <h3>Coffee and tea</h3>
+        <p class="sub">Made the Vietnamese way</p>
+        <ul>
+          <li><strong>Ca phe sua da,</strong> Vietnamese iced coffee with boba</li>
+          <li><strong>Bubble tea,</strong> assorted flavors</li>
+          <li><strong>Che,</strong> Vietnamese dessert drinks</li>
+        </ul>
+      </div>
+      <div class="board-card">
+        <h3>Breads and pastries</h3>
+        <p class="sub">From the oven daily</p>
+        <ul>
+          <li><strong>French baguettes</strong> and flavored loaves</li>
+          <li><strong>Butter croissants</strong></li>
+          <li><strong>Praline pecan rolls</strong> and <strong>cinnamon rolls</strong></li>
+          <li><strong>12+ turnover varieties</strong></li>
+        </ul>
+      </div>
+      <div class="board-card jade">
+        <h3>Sweets and occasions</h3>
+        <p class="sub">For the table and for celebrations</p>
+        <ul>
+          <li><strong>Cannoli</strong> and <strong>meat pies</strong></li>
+          <li><strong>Wedding and occasion cakes</strong></li>
+          <li><strong>Seasonal king cakes</strong></li>
+          <li><strong>Vegan options</strong> available</li>
+        </ul>
+      </div>
+    </div>
+    <div class="value-note">Most items are <em>$1 to $10.</em> Good food, honest prices.</div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <div class="board-head">
+      <div class="kicker" style="color:var(--gold-deep)">Fresh from the case</div>
+      <h2>Baked here, loved here.</h2>
+    </div>
+    <div class="gal-grid">
+      <div>
+        <img src="img/baguettes.jpg" alt="Fresh baguettes">
+        <p class="caption">Stock photo: fresh baguettes.</p>
+      </div>
+      <div>
+        <img src="img/iced-coffee.jpg" alt="Vietnamese iced coffee">
+        <p class="caption">Stock photo: iced coffee.</p>
+      </div>
+      <div>
+        <img src="img/pastries.jpg" alt="Pastries in a bakery case">
+        <p class="caption">Stock photo: fresh glazed pastries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Visit</div>
+      <h2>Find us on Oak Street.</h2>
+      <p class="addr">280 Oak St<br>Biloxi, MS 39530<br>East Biloxi</p>
+      <table class="hours" aria-label="Hours">
+        <tr><td>Tuesday through Saturday</td><td>9:00 AM to 3:00 PM</td></tr>
+        <tr><td>Sunday</td><td>9:00 AM to 1:00 PM</td></tr>
+        <tr class="closed"><td>Monday</td><td>Closed</td></tr>
+      </table>
+      <p style="margin-top:22px"><a class="btn" href="tel:+12284360850">Call to order</a></p>
+      <p style="margin-top:10px;color:var(--ink-soft)">(228) 436-0850</p>
+    </div>
+    <div class="visit-photo">
+      <img src="img/bakery-interior.jpg" alt="Inside a bakery">
+      <p class="caption">Stock photo: inside a bakery.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <strong style="color:#fff;font-size:1.1rem">Le Bakery</strong><br>
+        280 Oak St, Biloxi, MS 39530<br>
+        Tue to Sat 9 AM to 3 PM, Sun 9 AM to 1 PM, Mon closed<br>
+        <a href="tel:+12284360850">(228) 436-0850</a>
+      </div>
+      <div>
+        <a href="index.html">Home</a> &middot; <a href="#menu">Menu</a> &middot; <a href="menu.html">Full menu</a> &middot; <a href="#visit">Visit</a>
+      </div>
+    </div>
+    <p class="fine">This page is a design preview prepared by Freightfolio (freightfolio.net) as a website concept for the business named above. It is not an official site of the business. Menu and business facts shown are based on public listings; call to confirm details. Photos are stock images labeled as such.</p>
+  </div>
+</footer>
+
+</body>
+</html>

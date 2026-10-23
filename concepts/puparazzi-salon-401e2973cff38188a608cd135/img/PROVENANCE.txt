@@ -1,0 +1,55 @@
+PROVENANCE - Puparazzi Salon concept site photos
+Concept slug: puparazzi-salon-401e2973cff38188a608cd135
+Built: 2026-10-22 (Website Dev shift, batch-26 builder)
+
+hero.jpg - STOCK (Pexels free license). Freshly groomed golden spaniel sitting
+  on a grooming table while a groomer finishes its paw. Not the business's photo.
+  Source: https://www.pexels.com/photo/19145889/ (Pexels photo 19145889).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+shihtzu.jpg - STOCK (Pexels free license). Freshly groomed Shih Tzu standing on
+  a grooming table, groomer working behind it. Not the business's photo.
+  Source: https://www.pexels.com/photo/19145876/ (Pexels photo 19145876).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+trim.jpg - STOCK (Pexels free license). Groomer in an apron carefully trimming
+  a small terrier's face with scissors on a grooming table. Not the business's
+  photo.
+  Source: https://www.pexels.com/photo/6131566/ (Pexels photo 6131566).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+dry.jpg - STOCK (Pexels free license). Groomer blow-drying a Yorkshire Terrier
+  with a pet dryer on a grooming table. Not the business's photo.
+  Source: https://www.pexels.com/photo/6816846/ (Pexels photo 6816846).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+brush.jpg - STOCK (Pexels free license). Groomer brushing a Yorkshire Terrier
+  standing on a blue grooming table. Not the business's photo.
+  Source: https://www.pexels.com/photo/6816837/ (Pexels photo 6816837).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+clip.jpg - STOCK (Pexels free license). Groomer trimming a Yorkshire Terrier's
+  face with scissors on a grooming table. Not the business's photo.
+  Source: https://www.pexels.com/photo/6816866/ (Pexels photo 6816866).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+style.jpg - STOCK (Pexels free license). Groomer combing and finishing a Shih
+  Tzu haircut on a grooming table with grooming tools nearby. Not the business's
+  photo.
+  Source: https://www.pexels.com/photo/19145893/ (Pexels photo 19145893).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+REAL-PHOTO SHORTFALL (noted honestly): the salon has real groomed-pet photos on
+its Facebook page (facebook.com/puparazzisalon), but the page is login-walled
+and the photos are not retrievable without a Facebook session, so none could be
+used. All seven site photos are labeled stock Pexels.
+
+No images were generated, drawn, or illustrated for this site. No clip-art paw
+icons or decorative illustrations anywhere on the site: photos and typography only.

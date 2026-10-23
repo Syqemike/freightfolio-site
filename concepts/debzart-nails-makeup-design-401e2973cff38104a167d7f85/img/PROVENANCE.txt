@@ -1,0 +1,47 @@
+PROVENANCE - Debzart Nails MAKEUP Design concept site photos
+Concept slug: debzart-nails-makeup-design-401e2973cff38104a167d7f85
+Built: 2026-10-22 (Website Dev shift, batch-26 builder)
+
+hero.jpg - STOCK (Pexels free license). Makeup artist applying eye makeup to a
+  client, eyeshadow palette on the table. Not the business's photo.
+  Source: https://www.pexels.com/photo/35341712/ (Pexels photo 35341712).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+redlip.jpg - STOCK (Pexels free license). Artist applying red lip color to a
+  client with a lipstick shade palette in hand. Not the business's photo.
+  Source: https://www.pexels.com/photo/6960154/ (Pexels photo 6960154).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+eyeliner.jpg - STOCK (Pexels free license). Model with graphic white eyeliner
+  applied, artist's brush near her cheek; vanity lights in background.
+  Not the business's photo.
+  Source: https://www.pexels.com/photo/4287641/ (Pexels photo 4287641).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+lips.jpg - STOCK (Pexels free license). Artist applying lipstick to a client in
+  a red dress during a makeup session. Not the business's photo.
+  Source: https://www.pexels.com/photo/8091881/ (Pexels photo 8091881).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+eyeshadow.jpg - STOCK (Pexels free license). Makeup artist applying eyeshadow
+  to a smiling client holding a compact. Not the business's photo.
+  Source: https://www.pexels.com/photo/6954841/ (Pexels photo 6954841).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+nailart.jpg - STOCK (Pexels free license). Red almond-shaped nails with
+  hand-painted heart and "love" nail art. Not the business's photo.
+  Source: https://www.pexels.com/photo/887352/ (Pexels photo 887352).
+  Captioned on the page as a stock photo. Subject verified by inspecting the
+  downloaded image bytes.
+
+REAL-PHOTO SHORTFALL (noted honestly): the business has no social presence and
+no publicly retrievable photos of its own work (the listing's website link now
+resolves to a generic Senegence homepage). All six site photos are labeled
+stock Pexels.
+
+No images were generated, drawn, or illustrated for this site.

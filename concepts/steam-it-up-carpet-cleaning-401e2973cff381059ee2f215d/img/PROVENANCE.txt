@@ -1,0 +1,40 @@
+PROVENANCE - Steam It Up Carpet Cleaning concept site photos
+Concept slug: steam-it-up-carpet-cleaning-401e2973cff381059ee2f215d
+Built: 2026-10-22 (Website Dev shift, batch-26)
+
+The business has no website and no social media presence, so no real business
+photos exist. All 5 photos are STOCK under the Pexels free license, each visually
+verified to match the subject its caption claims, and each captioned "Stock photo:"
+on the page.
+
+cleaning-carpet.jpg - STOCK (Pexels free license). Overhead shot of a person
+  vacuuming a floral patterned area rug with a yellow canister vacuum. Not the
+  business's work.
+  Source: https://www.pexels.com/photo/4107278/ (Pexels photo 4107278).
+  Captioned on the page as a stock photo.
+
+cleaning-sofa.jpg - STOCK (Pexels free license). Close-up of a person vacuuming
+  an upholstered chair with a vacuum crevice tool. Not the business's work.
+  Source: https://www.pexels.com/photo/4401538/ (Pexels photo 4401538).
+  Captioned on the page as a stock photo.
+
+cleaning-closeup.jpg - STOCK (Pexels free license). Close-up of a vacuum cleaner
+  head deep-cleaning a patterned carpet in a sunlit room. Not the business's work.
+  Source: https://www.pexels.com/photo/4107284/ (Pexels photo 4107284).
+  Captioned on the page as a stock photo.
+
+cleaning-home.jpg - STOCK (Pexels free license). Red upright vacuum on a woven
+  rug in a stylish home interior. Not the business's work.
+  Source: https://www.pexels.com/photo/9462139/ (Pexels photo 9462139).
+  Captioned on the page as a stock photo.
+
+cleaning-result.jpg - STOCK (Pexels free license). A housekeeper fluffing pillows
+  on a clean sofa in a bright living room. Not the business's work.
+  Source: https://www.pexels.com/photo/9462193/ (Pexels photo 9462193).
+  Captioned on the page as a stock photo.
+
+REJECTED: Pexels photo 32155482 (worker scrubbing a blue carpet outdoors) was
+  downloaded but discarded because the worker's vest carried another company's
+  name and logo prominently; it was replaced by cleaning-result.jpg.
+
+No images were generated, drawn, or illustrated for this site.

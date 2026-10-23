@@ -1,0 +1,34 @@
+IMAGE PROVENANCE — Edward E. Petri Co. Jewelers (edward-e-petri-jewelers-402e2973cff381179d5ff50a4)
+All photos are STOCK (no real business photos exist; old domain is a parked Coming Soon page, no social presence). Each photo page was opened and title/description/camera EXIF confirmed before download; all are real photographs, not illustrations. License: Pexels free license.
+
+1. workbench.jpg
+   STOCK — Pexels photo page: https://www.pexels.com/photo/fashion-hands-art-creative-6262837/ (ID 6262837, photo by Tima Miroshnichenko)
+   Subject: close-up of a jeweler's hands using hand tools to craft a ring in an artisan workshop
+   Caption on site: "Stock photo: a jeweler at the bench."
+   Verified: JPEG 1260x1890, 109,296 bytes
+
+2. diamond-ring.jpg
+   STOCK — Pexels photo page: https://www.pexels.com/photo/close-up-shot-of-a-diamond-ring-14466164/ (ID 14466164, photo by The Glorious Studio)
+   Subject: close-up of a solitaire diamond ring with a gold band
+   Caption on site: "Stock photo: a diamond ring."
+   Verified: JPEG 1260x1260, 36,137 bytes
+
+3. estate-jewelry.jpg
+   STOCK — Pexels photo page: https://www.pexels.com/photo/gold-and-black-beaded-bracelet-4974342/ (ID 4974342, photo by cottonbro studio)
+   Subject: vintage silver tray adorned with pearls and an intricate brooch, classic estate style
+   Caption on site: "Stock photo: vintage jewelry."
+   Verified: JPEG 1260x1890, 254,386 bytes
+
+4. jewelry-tools.jpg
+   STOCK — Pexels photo page: https://www.pexels.com/photo/pliers-and-accessories-on-table-10474312/ (ID 10474312, photo by RDNE Stock project)
+   Subject: pliers, tools, and jewelry-making materials arranged on a wooden table
+   Caption on site: "Stock photo: jeweler's tools."
+   Verified: JPEG 1260x840, 160,608 bytes
+
+5. atelier.jpg
+   STOCK — Pexels photo page: https://www.pexels.com/photo/woman-in-white-long-sleeve-shirt-holding-white-and-black-hair-brush-6263063/ (ID 6263063, photo by Tima Miroshnichenko)
+   Subject: jeweler working on necklace design at a workbench in a professional studio
+   Caption on site: "Stock photo: a jeweler's atelier."
+   Verified: JPEG 1260x1890, 129,920 bytes
+
+NOTE: all 5 photos are placed (index.html: workbench hero, diamond-ring, estate-jewelry, jewelry-tools, atelier in services and proprietor sections; heritage.html: estate-jewelry, jewelry-tools), each captioned as a stock photo. No photos from the business itself exist publicly.

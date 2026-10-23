@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Paul &amp; Rory's Auto Repair | European Car Specialists in Slidell, LA</title>
+<meta name="description" content="Paul & Rory's Auto Repair is a family-owned shop in Slidell, LA specializing in BMW, Mercedes-Benz, VW, Audi, Mini, Volvo, Jaguar and domestic makes. Call (985) 326-8009.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#22262b;
+    --charcoal-deep:#16191d;
+    --red:#c62f2f;
+    --red-deep:#9e2222;
+    --silver:#c8cdd3;
+    --silver-pale:#e8ebee;
+    --paper:#f4f2ec;
+    --ink:#23272c;
+    --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+  h1,h2,h3,.display{font-family:'Oswald',Arial,sans-serif;line-height:1.05;color:var(--charcoal-deep)}
+  img{max-width:100%;display:block}
+  a{color:var(--red)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  section{padding:76px 0}
+
+  .preview-bar{background:var(--red);color:#fff;text-align:center;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px}
+  .preview-bar span{color:#ffd9d9}
+
+  header.site{position:sticky;top:0;z-index:50;background:var(--charcoal-deep);border-bottom:4px solid var(--red)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{font-family:'Oswald',sans-serif;font-weight:700;font-size:1.65rem;color:#fff;text-decoration:none;letter-spacing:.01em}
+  .brand em{font-style:normal;color:var(--red)}
+  nav.main{display:flex;gap:24px;flex-wrap:wrap}
+  nav.main a{color:var(--silver);text-decoration:none;font-weight:600;font-size:.94rem;text-transform:uppercase;letter-spacing:.06em}
+  nav.main a:hover{color:#fff}
+  .btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:700;padding:13px 30px;font-size:1rem;transition:background .15s ease;transform:skewX(-8deg)}
+  .btn span{display:inline-block;transform:skewX(8deg)}
+  .btn:hover{background:var(--red-deep)}
+  .btn.small{padding:10px 22px;font-size:.92rem}
+  .btn.ghost{background:transparent;color:var(--charcoal-deep);border:2px solid var(--charcoal-deep)}
+  .btn.ghost:hover{background:var(--charcoal-deep);color:#fff}
+
+  .hero{background:var(--charcoal-deep);color:#fff;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:0;bottom:0;left:58%;width:140px;background:var(--red);transform:skewX(-14deg)}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:80px 24px 96px;position:relative}
+  .kicker{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:var(--red);padding:7px 16px;margin-bottom:18px}
+  .hero h1{font-size:clamp(2.9rem,6vw,4.8rem);font-weight:700;color:#fff;margin-bottom:18px;text-transform:uppercase}
+  .hero h1 .accent{color:var(--red)}
+  .hero p.lede{font-size:1.16rem;margin-bottom:28px;max-width:32rem;color:var(--silver)}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero .phone-note{font-size:.9rem;color:var(--silver);margin-top:14px}
+  .hero-photo{position:relative}
+  .hero-photo img{border:4px solid var(--charcoal);box-shadow:14px 14px 0 var(--red)}
+  .caption{font-size:.82rem;color:#8b939c;margin-top:12px;font-style:italic}
+  .hero .caption{color:#9aa2ab}
+
+  .ticker{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:13px 0}
+  .ticker .track{display:inline-block;animation:slide 26s linear infinite;font-family:'Oswald',sans-serif;font-size:1.1rem;letter-spacing:.12em;text-transform:uppercase}
+  .ticker .track b{color:var(--charcoal-deep);font-weight:700}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+  h2.section-title{font-size:clamp(2.1rem,4.5vw,3.1rem);font-weight:600;margin-bottom:14px;text-transform:uppercase}
+  .section-sub{max-width:42rem;margin-bottom:38px}
+
+  .makes{background:var(--white)}
+  .makes-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+  .makes-card{border-top:6px solid var(--red);background:var(--paper);padding:30px}
+  .makes-card.domestic{border-top-color:var(--charcoal)}
+  .makes-card h3{font-size:1.5rem;margin-bottom:18px;text-transform:uppercase}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{font-family:'Oswald',sans-serif;font-size:.95rem;font-weight:500;letter-spacing:.04em;padding:8px 16px;background:var(--charcoal);color:#fff;transform:skewX(-8deg)}
+  .chip span{display:inline-block;transform:skewX(8deg)}
+  .makes-card.domestic .chip{background:var(--silver-pale);color:var(--charcoal-deep);border:1px solid var(--silver)}
+
+  .story{background:var(--charcoal-deep);color:#fff}
+  .story h2.section-title{color:#fff}
+  .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .story p{color:var(--silver);margin-bottom:16px}
+  .story img{border:4px solid var(--charcoal);box-shadow:-14px 14px 0 var(--red)}
+  .formal-note{font-size:.85rem;color:#8b939c;margin-top:18px;font-style:italic}
+
+  .services .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .svc{background:#fff;border:1px solid var(--silver);border-top:6px solid var(--charcoal);padding:30px 26px;position:relative}
+  .svc.red{border-top-color:var(--red)}
+  .svc h3{font-size:1.35rem;margin-bottom:10px;text-transform:uppercase}
+  .svc .num{font-family:'Oswald',sans-serif;font-size:2.6rem;font-weight:700;color:var(--silver);position:absolute;top:14px;right:18px}
+  .svc p{font-size:.96rem}
+
+  .gallery .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .gal-grid figure{overflow:hidden}
+  .gal-grid img{transition:transform .3s ease}
+  .gal-grid figure:hover img{transform:scale(1.04)}
+
+  .visit{background:var(--white)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .hours-table{width:100%;border-collapse:collapse;margin-bottom:24px}
+  .hours-table td{padding:12px 4px;border-bottom:2px solid var(--silver-pale);font-size:1.02rem}
+  .hours-table td:last-child{text-align:right;font-weight:700;font-family:'Oswald',sans-serif;letter-spacing:.04em}
+  .closed{color:var(--red)}
+  .addr{font-size:1.05rem;margin-bottom:8px}
+  .visit .big-phone{font-family:'Oswald',sans-serif;font-size:2.2rem;font-weight:600;color:var(--charcoal-deep);text-decoration:none;display:inline-block;margin:10px 0 22px}
+  .visit .big-phone:hover{color:var(--red)}
+
+  footer{background:var(--charcoal-deep);color:#9aa2ab;padding:44px 0;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+  footer a{color:var(--silver)}
+
+  @media(max-width:900px){
+    .hero .wrap,.makes-grid,.story-grid,.visit-grid{grid-template-columns:1fr}
+    .services .svc-grid,.gallery .gal-grid{grid-template-columns:1fr}
+    .hero::before{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website Concept <span>&bull;</span> Design Preview prepared by Freightfolio</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Paul <em>&amp;</em> Rory's</a>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="#makes">Makes</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn small" href="tel:+19853268009"><span>Call the shop</span></a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Family owned &middot; Slidell, Louisiana</span>
+      <h1>European specialists.<br><span class="accent">Honest repairs.</span></h1>
+      <p class="lede">Paul &amp; Rory's Auto Repair is the Slidell shop drivers bring their BMW, Mercedes, and VW to when they want it fixed right. We know European makes inside and out, and we service the domestics your family drives every day.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+19853268009"><span>Call the shop</span></a>
+        <a class="btn ghost" style="color:#fff;border-color:#fff" href="services.html"><span>See services</span></a>
+      </div>
+      <p class="phone-note">(985) 326-8009 &middot; Mon-Fri 8:00 AM - 5:00 PM</p>
+    </div>
+    <div class="hero-photo">
+      <img src="img/garage-lift.jpg" alt="Mechanic working under a car raised on a lift in a repair garage">
+      <p class="caption">Stock photo: mechanic working under a car raised on a lift in a repair garage.</p>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="track">BMW &nbsp;<b>//</b>&nbsp; Mercedes-Benz &nbsp;<b>//</b>&nbsp; Volkswagen &nbsp;<b>//</b>&nbsp; Audi &nbsp;<b>//</b>&nbsp; Mini &nbsp;<b>//</b>&nbsp; Volvo &nbsp;<b>//</b>&nbsp; Jaguar &nbsp;<b>//</b>&nbsp; BMW &nbsp;<b>//</b>&nbsp; Mercedes-Benz &nbsp;<b>//</b>&nbsp; Volkswagen &nbsp;<b>//</b>&nbsp; Audi &nbsp;<b>//</b>&nbsp; Mini &nbsp;<b>//</b>&nbsp; Volvo &nbsp;<b>//</b>&nbsp; Jaguar &nbsp;<b>//</b>&nbsp;</div>
+</div>
+
+<section class="makes" id="makes">
+  <div class="wrap">
+    <p class="eyebrow">What we service</p>
+    <h2 class="section-title">Built for European cars.<br>Ready for everything else.</h2>
+    <p class="section-sub">European makes are our specialty: the diagnostics, the parts, and the know-how these cars demand. We also keep the domestic brands your household depends on running strong.</p>
+    <div class="makes-grid">
+      <div class="makes-card">
+        <h3>European specialists</h3>
+        <div class="chips">
+          <span class="chip"><span>BMW</span></span>
+          <span class="chip"><span>Mercedes-Benz</span></span>
+          <span class="chip"><span>VW</span></span>
+          <span class="chip"><span>Audi</span></span>
+          <span class="chip"><span>Mini</span></span>
+          <span class="chip"><span>Volvo</span></span>
+          <span class="chip"><span>Jaguar</span></span>
+        </div>
+      </div>
+      <div class="makes-card domestic">
+        <h3>Also serviced</h3>
+        <div class="chips">
+          <span class="chip"><span>Toyota</span></span>
+          <span class="chip"><span>Lexus</span></span>
+          <span class="chip"><span>Honda</span></span>
+          <span class="chip"><span>Acura</span></span>
+          <span class="chip"><span>Infiniti</span></span>
+          <span class="chip"><span>Ford</span></span>
+          <span class="chip"><span>Chevy</span></span>
+          <span class="chip"><span>Jeep</span></span>
+          <span class="chip"><span>Mazda</span></span>
+          <span class="chip"><span>Hyundai</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap story-grid">
+    <div>
+      <img src="img/bmw-m3.jpg" alt="Black BMW sedan">
+      <p class="caption">Stock photo: black BMW sedan.</p>
+    </div>
+    <div>
+      <p class="eyebrow">The shop</p>
+      <h2 class="section-title">A family shop, not a chain.</h2>
+      <p>Paul &amp; Rory's is a family-owned repair shop in Slidell. When you call, you talk to the people who will actually work on your car. When you drop it off, it goes on the lift with techs who specialize in the make you drive.</p>
+      <p>European cars reward a shop that knows them. We keep up with the diagnostics and the service needs of German, Swedish, and British makes, and we treat every car that rolls in like it belongs to family.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+19853268009"><span>Call the shop</span></a>
+      </div>
+      <p class="formal-note">Formal listing name: Paul's Auto Repair LLC. Paul &amp; Rory's Auto Repair is the shop's Facebook-facing name.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2 class="section-title">The work, done right.</h2>
+    <p class="section-sub">Diagnostics, repairs, and maintenance for the cars on the road in Slidell. Straight talk about what your car needs, and nothing it does not.</p>
+    <div class="svc-grid">
+      <div class="svc red">
+        <div class="num">01</div>
+        <h3>Diagnostics</h3>
+        <p>Check-engine lights, warning messages, and strange noises tracked down with proper diagnostic equipment, especially on European systems.</p>
+      </div>
+      <div class="svc">
+        <div class="num">02</div>
+        <h3>Repairs</h3>
+        <p>Brakes, suspension, steering, cooling, electrical, and drivability repairs on European and domestic makes.</p>
+      </div>
+      <div class="svc">
+        <div class="num">03</div>
+        <h3>Oil changes &amp; maintenance</h3>
+        <p>Oil service with the right spec for your engine, plus the routine maintenance that keeps warranties valid and cars reliable.</p>
+      </div>
+    </div>
+    <div class="cta-row" style="margin-top:36px">
+      <a class="btn ghost" href="services.html"><span>Full services list</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <p class="eyebrow">In the shop</p>
+    <h2 class="section-title">The garage at work.</h2>
+    <div class="gal-grid">
+      <figure>
+        <img src="img/mechanic-inspect.jpg" alt="Mechanic inspecting the underside of a car on a lift">
+        <p class="caption">Stock photo: mechanic inspecting the underside of a car on a lift.</p>
+      </figure>
+      <figure>
+        <img src="img/garage-neon.jpg" alt="Cars on lifts inside a working garage at night">
+        <p class="caption">Stock photo: cars on lifts inside a working garage at night.</p>
+      </figure>
+      <figure>
+        <img src="img/engine-stand.jpg" alt="Mechanic with a car engine mounted on a stand">
+        <p class="caption">Stock photo: mechanic with a car engine mounted on a stand.</p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <p class="eyebrow">Visit the shop</p>
+      <h2 class="section-title">Stop by or call ahead.</h2>
+      <p class="addr"><strong>756 Brownswitch Rd<br>Slidell, LA 70458</strong></p>
+      <table class="hours-table">
+        <tr><td>Monday - Friday</td><td>8:00 AM - 5:00 PM</td></tr>
+        <tr><td>Saturday</td><td class="closed">Closed</td></tr>
+        <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+      </table>
+      <a class="big-phone" href="tel:+19853268009">(985) 326-8009</a>
+      <div class="cta-row">
+        <a class="btn" href="tel:+19853268009"><span>Call the shop</span></a>
+      </div>
+    </div>
+    <div style="background:var(--charcoal-deep);color:#fff;padding:40px;border-top:8px solid var(--red)">
+      <h3 style="color:#fff;font-size:1.6rem;text-transform:uppercase;margin-bottom:16px">When to call</h3>
+      <p style="color:var(--silver);margin-bottom:14px">Weekdays 8:00 AM to 5:00 PM. If the shop is closed, leave a message and we will get back to you first thing.</p>
+      <p style="color:var(--silver)">Warning light on? Strange noise? The sooner we look, the smaller the repair usually is.</p>
+      <div class="cta-row" style="margin-top:22px">
+        <a class="btn" href="tel:+19853268009"><span>Call (985) 326-8009</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong style="color:#fff">Paul &amp; Rory's Auto Repair</strong><br>
+      756 Brownswitch Rd, Slidell, LA 70458 &middot; <a href="tel:+19853268009">(985) 326-8009</a>
+    </div>
+    <div>Design preview concept. Not the business's official website.</div>
+  </div>
+</footer>
+
+</body>
+</html>

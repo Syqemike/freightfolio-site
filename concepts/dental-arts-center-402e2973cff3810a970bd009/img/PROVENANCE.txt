@@ -1,0 +1,34 @@
+IMAGE PROVENANCE — Dental Arts Center (dental-arts-center-402e2973cff3810a970bd009)
+All photos are STOCK (no real business photos exist; the practice has no website or social presence). Each photo page was opened and the title/alt text confirmed before download; all are real photographs, not illustrations. License: Pexels free license.
+
+1. dental-chair.jpg
+   STOCK — Pexels photo page: https://www.pexels.com/photo/4269265/ (ID 4269265, photo by Cedric Fauntleroy)
+   Subject: bright dental clinic room with a modern dental chair and equipment
+   Caption on site: "Stock photo: a dental treatment chair."
+   Verified: JPEG 1260x1890, 160,465 bytes
+
+2. dental-exam.jpg
+   STOCK — Pexels photo page: https://www.pexels.com/photo/focused-dentist-healing-teeth-of-female-client-in-clinic-3845747/ (ID 3845747, photo by Anna Shvets)
+   Subject: female dentist in mask and gloves treating a patient in a dental chair in a modern clinic
+   Caption on site: "Stock photo: a dental exam room."
+   Verified: JPEG 1260x840, 109,103 bytes
+
+3. dental-tools.jpg
+   STOCK — Pexels photo page: https://www.pexels.com/photo/dentaltoolset-305566/ (ID 305566, photo by Daniel Frank)
+   Subject: dental tool set arranged for treatment
+   Caption on site: "Stock photo: dental instruments."
+   Verified: JPEG 1260x840, 76,740 bytes
+
+4. dental-patient.jpg
+   STOCK — Pexels photo page: https://www.pexels.com/photo/3845744/ (ID 3845744, photo by Anna Shvets)
+   Subject: smiling woman holding a mirror during a dental check-up in a clinic
+   Caption on site: "Stock photo: a smiling dental patient."
+   Verified: JPEG 1260x840, 115,085 bytes
+
+5. dental-operatory.jpg (REPLACED dental-reception.jpg 2026-10-22: the reception photo showed another business's "Dek+" branding on the wall)
+   STOCK — Pexels photo page: https://www.pexels.com/photo/6812453/ (ID 6812453, photo by Pavel Danilyuk)
+   Subject: modern dental clinic interior, dental chair and equipment, minimalist design, no branding visible (verified by eye)
+   Caption on site: "Stock photo: a modern dental operatory."
+   Verified: JPEG 1260x841, 111,562 bytes
+
+NOTE: all 5 photos are placed (index.html: dental-exam, dental-tools, dental-operatory; visit.html: dental-chair, dental-patient), each captioned as a stock photo. No photos from the business itself exist publicly.

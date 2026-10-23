@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Vinyl Fantasy Presents DJ Zevitro | Mobile DJ Booking in San Antonio, TX</title>
+<meta name="description" content="Book DJ Zevitro for clubs, festivals, raves, and private events in San Antonio, TX. Call (210) 990-6906 or email Djzevitro@gmail.com.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0b0b10;
+    --black-2:#14141c;
+    --magenta:#e0218a;
+    --cyan:#22d3ee;
+    --white:#ffffff;
+    --grey:#a7aab8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Space Grotesk',system-ui,sans-serif;color:var(--white);background:var(--black);line-height:1.65}
+  h1,h2,h3,.display{font-family:'Archivo Black',sans-serif;line-height:1.02;font-weight:400}
+  img{max-width:100%;display:block}
+  a{color:var(--cyan)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  section{padding:84px 0}
+
+  .preview-bar{background:var(--magenta);color:#fff;text-align:center;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px}
+  .preview-bar span{color:#ffd3ea}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(11,11,16,.95);border-bottom:2px solid var(--magenta)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{font-family:'Archivo Black',sans-serif;font-size:1.25rem;color:#fff;text-decoration:none;letter-spacing:.02em}
+  .brand em{font-style:normal;color:var(--magenta)}
+  nav.main{display:flex;gap:24px;flex-wrap:wrap}
+  nav.main a{color:var(--grey);text-decoration:none;font-weight:600;font-size:.94rem;text-transform:uppercase;letter-spacing:.08em}
+  nav.main a:hover{color:#fff}
+  .btn{display:inline-block;background:var(--magenta);color:#fff;text-decoration:none;font-weight:700;padding:14px 32px;font-size:1rem;border-radius:999px;transition:transform .15s ease,background .15s ease}
+  .btn:hover{background:#b8166e;transform:translateY(-2px)}
+  .btn.small{padding:10px 22px;font-size:.92rem}
+  .btn.cyan{background:transparent;color:var(--cyan);border:2px solid var(--cyan)}
+  .btn.cyan:hover{background:var(--cyan);color:var(--black)}
+
+  .hero{position:relative;min-height:82vh;display:flex;align-items:center;overflow:hidden}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,11,16,.96) 20%,rgba(11,11,16,.55) 55%,rgba(224,33,138,.25) 100%)}
+  .hero .wrap{position:relative;padding:100px 24px 120px}
+  .brand-tag{display:inline-block;font-weight:700;letter-spacing:.28em;text-transform:uppercase;font-size:.82rem;color:var(--cyan);border:1px solid var(--cyan);padding:8px 18px;border-radius:999px;margin-bottom:24px}
+  .hero h1{font-size:clamp(3rem,8vw,6.2rem);text-transform:uppercase;margin-bottom:20px}
+  .hero h1 .m{color:var(--magenta)}
+  .hero h1 .c{color:var(--cyan)}
+  .hero p.lede{font-size:1.2rem;max-width:34rem;color:#dfe1ea;margin-bottom:26px}
+  .rating{display:inline-block;background:var(--black-2);border:1px solid var(--cyan);color:var(--cyan);font-weight:600;font-size:.92rem;padding:9px 20px;border-radius:999px;margin-bottom:28px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+
+  .stripe{background:var(--black-2);border-top:2px solid var(--magenta);border-bottom:2px solid var(--magenta);padding:20px 0;overflow:hidden;white-space:nowrap}
+  .stripe .track{display:inline-block;animation:slide 22s linear infinite;font-family:'Archivo Black',sans-serif;font-size:1.2rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)}
+  .stripe .track b{color:var(--magenta)}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--magenta);margin-bottom:12px}
+  h2.section-title{font-size:clamp(2.2rem,5vw,3.4rem);text-transform:uppercase;margin-bottom:14px}
+  h2.section-title .c{color:var(--cyan)}
+  .section-sub{max-width:42rem;color:var(--grey);margin-bottom:42px}
+
+  .events-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+  .event-card{background:var(--black-2);border:1px solid #26262f;border-radius:14px;padding:30px 20px;transition:border-color .2s ease,transform .2s ease}
+  .event-card:hover{border-color:var(--magenta);transform:translateY(-4px)}
+  .event-card:nth-child(even):hover{border-color:var(--cyan)}
+  .event-card h3{font-size:1.25rem;text-transform:uppercase;margin-bottom:10px}
+  .event-card p{font-size:.92rem;color:var(--grey)}
+  .event-card .tag{font-size:.75rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--magenta);display:block;margin-bottom:12px}
+  .event-card:nth-child(even) .tag{color:var(--cyan)}
+
+  .artist{background:var(--black-2)}
+  .artist-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .artist-grid img{border-radius:14px;border:1px solid #26262f}
+  .caption{font-size:.82rem;color:#7c7f8c;margin-top:12px;font-style:italic}
+  .artist h2.section-title{margin-bottom:18px}
+  .artist p{color:var(--grey);margin-bottom:16px}
+  .roles{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .role{font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:8px 16px;border:1px solid var(--magenta);border-radius:999px;color:#fff}
+  .role.alt{border-color:var(--cyan)}
+
+  .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .gallery-grid figure img{border-radius:10px;border:1px solid #26262f;height:100%;object-fit:cover}
+
+  .booking{background:linear-gradient(120deg,#14090f 0%,var(--black) 60%);border-top:2px solid var(--cyan)}
+  .booking-card{background:var(--black-2);border:1px solid #26262f;border-radius:18px;padding:52px;text-align:center;max-width:760px;margin:0 auto}
+  .booking-card h2{font-size:clamp(2rem,4.5vw,3rem);text-transform:uppercase;margin-bottom:16px}
+  .booking-card p{color:var(--grey);margin-bottom:8px}
+  .big-contact{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin:28px 0}
+  .big-contact a.big{font-family:'Archivo Black',sans-serif;font-size:1.3rem;text-decoration:none;padding:18px 34px;border-radius:999px}
+  .big-contact a.tel{background:var(--magenta);color:#fff}
+  .big-contact a.mail{background:transparent;border:2px solid var(--cyan);color:var(--cyan)}
+  .service-area{font-size:.9rem;color:var(--grey);margin-top:18px}
+
+  footer{background:#060608;color:#7c7f8c;padding:44px 0;font-size:.88rem;border-top:1px solid #1c1c24}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+  footer a{color:var(--grey)}
+
+  @media(max-width:1000px){.events-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:800px){.artist-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website Concept <span>&bull;</span> Design Preview prepared by Freightfolio</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Vinyl Fantasy <em>Presents</em></a>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="#booking">Booking</a>
+    </nav>
+    <a class="btn small" href="tel:+12109906906">Call to book</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg">
+    <img src="img/crowd-hero.jpg" alt="Large crowd at a night concert with dramatic lighting">
+  </div>
+  <div class="wrap">
+    <span class="brand-tag">Vinyl Fantasy Presents</span>
+    <h1>DJ <span class="m">Zevitro</span><br>on the <span class="c">decks</span></h1>
+    <p class="lede">San Antonio's mobile DJ for clubs, festivals, raves, and private events. Peak-time sets built live and read off the crowd, never played the same way twice.</p>
+    <div class="rating">5.0 from 15 reviews &middot; Facebook reviews</div>
+    <div class="cta-row">
+      <a class="btn" href="tel:+12109906906">Call to book</a>
+      <a class="btn cyan" href="mailto:Djzevitro@gmail.com">Djzevitro@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<div class="stripe" aria-hidden="true">
+  <div class="track">Clubs <b>&#9733;</b> Festivals <b>&#9733;</b> Raves <b>&#9733;</b> Private Events <b>&#9733;</b> Clubs <b>&#9733;</b> Festivals <b>&#9733;</b> Raves <b>&#9733;</b> Private Events <b>&#9733;</b> </div>
+</div>
+
+<section id="events">
+  <div class="wrap">
+    <p class="eyebrow">Where he plays</p>
+    <h2 class="section-title">One DJ. <span class="c">Every room.</span></h2>
+    <p class="section-sub">DJ Zevitro brings the full setup and the full energy to whatever night you are planning. Tell him the date, the venue, and the vibe.</p>
+    <div class="events-grid">
+      <div class="event-card">
+        <span class="tag">Nightlife</span>
+        <h3>Clubs</h3>
+        <p>Peak-hour sets for San Antonio club nights, built to keep the floor packed.</p>
+      </div>
+      <div class="event-card">
+        <span class="tag">Main stage</span>
+        <h3>Festivals</h3>
+        <p>Big-room energy for festival stages and outdoor lineups.</p>
+      </div>
+      <div class="event-card">
+        <span class="tag">Underground</span>
+        <h3>Raves</h3>
+        <p>Techno, house, bass, and DnB drops for warehouse and late-night parties.</p>
+      </div>
+      <div class="event-card">
+        <span class="tag">Private</span>
+        <h3>Private events</h3>
+        <p>Birthdays and parties that need a real DJ, not a playlist.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="artist">
+  <div class="wrap artist-grid">
+    <div>
+      <img src="img/decks-closeup.jpg" alt="Close-up of a DJ mixer with glowing controls">
+      <p class="caption">Stock photo: close-up of a DJ mixer with glowing controls.</p>
+    </div>
+    <div>
+      <p class="eyebrow">The artist</p>
+      <h2 class="section-title">Zero chill.<br>Maximum bass.</h2>
+      <p>Zevitro is an EDM DJ and producer who lives for the moment the lights drop and the room loses its mind. Expect peak-time techno, big-room house, hands-in-the-air trance, and bass drops heavy enough to rearrange furniture.</p>
+      <p>From sweaty warehouses to festival main stages, every set is mixed live and shaped by the crowd in front of him.</p>
+      <div class="roles">
+        <span class="role">Professional on-air talent</span>
+        <span class="role alt">Night club DJ</span>
+        <span class="role">Entertainer</span>
+        <span class="role alt">Gamer</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The gear</p>
+    <h2 class="section-title">Real decks. <span class="c">Real mix.</span></h2>
+    <p class="section-sub">Mobile means the rig travels: professional controllers, mixers, and sound tuned to the room.</p>
+    <div class="gallery-grid">
+      <figure>
+        <img src="img/mixer-daylight.jpg" alt="DJ hands on a mixer during a daytime set">
+        <p class="caption">Stock photo: DJ hands on a mixer during a daytime set.</p>
+      </figure>
+      <figure>
+        <img src="img/pioneer-set.jpg" alt="DJ mixing on a Pioneer controller">
+        <p class="caption">Stock photo: DJ mixing on a Pioneer controller.</p>
+      </figure>
+      <figure>
+        <img src="img/mixer-red.jpg" alt="DJ adjusting mixer controls under red lighting">
+        <p class="caption">Stock photo: DJ adjusting mixer controls under red lighting.</p>
+      </figure>
+      <figure>
+        <img src="img/crowd-hero.jpg" alt="Concert crowd with hands up under stage lights">
+        <p class="caption">Stock photo: concert crowd with hands up under stage lights.</p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="wrap">
+    <div class="booking-card">
+      <p class="eyebrow">Booking</p>
+      <h2>Bring the rave to your room.</h2>
+      <p>Clubs, festivals, raves, and private parties. Send the date, the city, and the vibe.</p>
+      <div class="big-contact">
+        <a class="big tel" href="tel:+12109906906">Call to book</a>
+        <a class="big mail" href="mailto:Djzevitro@gmail.com">Djzevitro@gmail.com</a>
+      </div>
+      <p class="service-area">Mobile DJ service &middot; based in San Antonio, TX &middot; no storefront, the party comes to you</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong style="color:#fff">Vinyl Fantasy Presents DJ Zevitro</strong><br>
+      Mobile DJ &middot; San Antonio, TX &middot; <a href="tel:+12109906906">(210) 990-6906</a>
+    </div>
+    <div>Design preview concept. Not the business's official website.</div>
+  </div>
+</footer>
+
+</body>
+</html>

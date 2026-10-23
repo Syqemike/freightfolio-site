@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Wayne Conn Plumbing | Jacksonville, FL Plumber</title>
+<meta name="description" content="Wayne Conn Plumbing: drain cleaning, re-pipes, service and repairs, new construction and remodels, and tankless water heaters in Jacksonville, FL. Serving Jacksonville since 1987. Call (904) 353-3102.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16324f;
+  --navy-dark:#0f2236;
+  --copper:#c9762e;
+  --copper-light:#f4e3d0;
+  --white:#ffffff;
+  --off:#f6f7f9;
+  --ink:#22303c;
+  --muted:#5b6a78;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);line-height:1.6;background:var(--white)}
+h1,h2,h3,.display{font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--navy)}
+a{color:var(--copper)}
+img{max-width:100%;height:auto;display:block;border-radius:6px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* header */
+.site-header{background:var(--navy-dark);color:#fff;padding:10px 0;position:sticky;top:0;z-index:50}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.brand-name{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:1.6rem;text-transform:uppercase;letter-spacing:.04em}
+.brand-tag{font-size:.75rem;color:var(--copper-light);letter-spacing:.08em}
+.nav{display:flex;gap:4px;flex-wrap:wrap}
+.nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.85rem;padding:8px 12px;border-radius:4px}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav .nav-cta{background:var(--copper);color:#fff}
+.nav .nav-cta:hover{background:#a9621f}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;padding:56px 0 48px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2.4rem,5.5vw,3.8rem);line-height:1.05;margin:14px 0 12px}
+.hero h1 .copper{color:var(--copper)}
+.disclosure{display:inline-block;background:rgba(201,118,46,.18);border:1px solid var(--copper);color:#f8e2c6;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:4px}
+.hero p.sub{color:#d7dee6;font-size:1.08rem;max-width:34rem}
+.hero .actions{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:14px 26px;border-radius:6px;font-size:1rem;transition:background .15s}
+.btn-primary{background:var(--copper);color:#fff}
+.btn-primary:hover{background:#a9621f}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5)}
+.btn-ghost:hover{border-color:#fff}
+.hero .phone-line{margin-top:16px;color:#d7dee6;font-size:.95rem}
+.hero .phone-line a{color:#fff;font-weight:700;text-decoration:none}
+.hero img{border:4px solid rgba(255,255,255,.15)}
+.caption{font-size:.78rem;color:var(--muted);margin-top:8px}
+.hero .caption{color:#9fb0c0}
+
+/* pipe rule */
+.pipe-rule{height:6px;background:linear-gradient(90deg,var(--copper) 0 62%,#8f5318 62% 100%);border-radius:3px;margin:0 0 8px}
+
+/* sections */
+.section{padding:56px 0}
+.section.alt{background:var(--off)}
+.section h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:6px}
+.section .lede{color:var(--muted);max-width:46rem;margin-bottom:28px}
+
+/* services grid */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.service-card{background:#fff;border:1px solid #e3e7ec;border-radius:8px;padding:24px;border-top:5px solid var(--copper);display:flex;flex-direction:column}
+.service-card h3{font-size:1.35rem;margin-bottom:8px}
+.service-card p{font-size:.95rem;color:var(--muted);flex:1}
+.service-card a{margin-top:14px;font-weight:700;text-decoration:none;color:var(--copper)}
+.service-card a:hover{text-decoration:underline}
+
+/* heritage */
+.heritage{background:var(--navy-dark);color:#fff;text-align:center;padding:44px 0}
+.heritage h2{color:#fff;font-size:clamp(1.8rem,4vw,2.5rem)}
+.heritage .pipe-rule{max-width:320px;margin:14px auto}
+.heritage p{color:#d7dee6;max-width:44rem;margin:0 auto}
+
+/* brands */
+.brands-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.brand-chip{background:#fff;border:1px solid #dfe4ea;border-left:4px solid var(--copper);border-radius:4px;padding:10px 16px;font-weight:600;color:var(--navy)}
+
+/* trust */
+.trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.trust-card{background:#fff;border:1px solid #e3e7ec;border-radius:8px;padding:26px}
+.trust-card h3{font-size:1.25rem;color:var(--copper);margin-bottom:8px}
+.trust-card p{font-size:.95rem;color:var(--muted)}
+
+/* info layout */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.info-card{background:#fff;border:1px solid #e3e7ec;border-radius:8px;padding:26px}
+.info-card h3{font-size:1.3rem;margin-bottom:12px}
+.hours-table{width:100%;border-collapse:collapse;font-size:.95rem}
+.hours-table td{padding:8px 0;border-bottom:1px solid #eef1f4}
+.hours-table tr:last-child td{border-bottom:none}
+.hours-table td:last-child{text-align:right;font-weight:600}
+.addr{font-style:normal;font-size:1rem;line-height:1.7}
+.addr a{color:var(--navy);text-decoration:none;font-weight:600}
+.emergency-box{background:var(--navy);color:#fff;border-radius:8px;padding:26px}
+.emergency-box h3{color:#fff;margin-bottom:12px;font-size:1.3rem}
+.emergency-box ul{list-style:none}
+.emergency-box li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+.emergency-box li:last-child{border-bottom:none}
+.emergency-box a{color:#fff;font-weight:700;text-decoration:none;font-size:1.1rem}
+.emergency-box .lbl{color:var(--copper-light);font-size:.85rem;display:block;text-transform:uppercase;letter-spacing:.06em}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:10px}
+.gallery figure{background:#fff}
+
+/* contact */
+.contact{background:var(--navy-dark);color:#fff;text-align:center;padding:60px 0}
+.contact h2{color:#fff;font-size:clamp(2rem,4.5vw,2.8rem)}
+.contact .pipe-rule{max-width:280px;margin:16px auto}
+.contact p{color:#d7dee6;max-width:40rem;margin:0 auto 8px}
+.big-phone{display:block;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-size:clamp(2.2rem,6vw,3.2rem);color:#fff;text-decoration:none;font-weight:700;margin:18px 0}
+.big-phone:hover{color:var(--copper-light)}
+.contact .btn-primary{margin-top:10px}
+
+/* footer */
+footer{background:#0b1a2a;color:#9fb0c0;padding:32px 0;font-size:.85rem}
+footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+footer h4{color:#fff;font-family:'Barlow Condensed','Arial Narrow',sans-serif;text-transform:uppercase;font-size:1rem;margin-bottom:8px}
+footer a{color:#cdd8e2;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .fine{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;margin-top:8px}
+
+@media(max-width:760px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero{padding:40px 0 36px}
+  .section{padding:40px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <div>
+        <div class="brand-name">Wayne Conn Plumbing</div>
+        <div class="brand-tag">Jacksonville, Florida</div>
+      </div>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#brands">Brands</a>
+      <a href="#visit">Hours &amp; Location</a>
+      <a class="nav-cta" href="tel:+19043533102">Call (904) 353-3102</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="disclosure">Website Concept &middot; Design Preview</span>
+      <h1>Jacksonville Plumbers You Can <span class="copper">Trust</span></h1>
+      <p class="sub">Wayne Conn Plumbing handles drain cleaning, re-pipes, service and repairs, new construction and remodels, and tankless water heaters across Jacksonville, Florida. Licensed Master Plumbers with free estimates and a meet-or-beat quote policy.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+19043533102">Call now</a>
+        <a class="btn btn-ghost" href="services.html">See our services</a>
+      </div>
+      <p class="phone-line">Main line: <a href="tel:+19043533102">(904) 353-3102</a></p>
+    </div>
+    <div>
+      <img src="img/plumbing-spanner.jpg" alt="Gloved hands tightening a pipe fitting with an adjustable wrench" width="640" height="426">
+      <p class="caption">Stock photo: tightening a pipe fitting with an adjustable wrench.</p>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="pipe-rule" aria-hidden="true"></div>
+    <h2>Our Services</h2>
+    <p class="lede">Five areas of work, done by Licensed Master Plumbers. Every job starts with a free estimate.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Drain Cleaning</h3>
+        <p>Clearing slow and clogged drains so water moves freely through sinks, tubs, and lines.</p>
+        <a href="services.html#drain-cleaning">Details</a>
+      </div>
+      <div class="service-card">
+        <h3>Re-pipes</h3>
+        <p>Replacing worn-out piping throughout a home with reliable new pipe.</p>
+        <a href="services.html#re-pipes">Details</a>
+      </div>
+      <div class="service-card">
+        <h3>Service &amp; Repairs</h3>
+        <p>Diagnosing and fixing leaks, drips, running fixtures, and worn plumbing parts.</p>
+        <a href="services.html#service-repairs">Details</a>
+      </div>
+      <div class="service-card">
+        <h3>New Construction &amp; Remodels</h3>
+        <p>Rough-in and finish plumbing for new builds, additions, and remodel projects.</p>
+        <a href="services.html#new-construction-remodels">Details</a>
+      </div>
+      <div class="service-card">
+        <h3>Tankless Water Heaters</h3>
+        <p>Installing tankless units for on-demand hot water, plus service on existing systems.</p>
+        <a href="services.html#tankless-water-heaters">Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="heritage" id="about">
+  <div class="wrap">
+    <h2>Serving Jacksonville Since 1987</h2>
+    <div class="pipe-rule" aria-hidden="true"></div>
+    <p>Wayne Conn Plumbing has been working in Jacksonville, Florida homes and job sites since 1987. That history means the team has seen nearly every plumbing problem the area can produce, from aging pipes in older neighborhoods to full plumbing systems in new construction.</p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="pipe-rule" aria-hidden="true"></div>
+    <h2>Workmanship</h2>
+    <p class="lede">Licensed Master Plumbers on every job, with pricing handled honestly.</p>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <h3>Licensed Master Plumbers</h3>
+        <p>The work is performed by Licensed Master Plumbers, so the job is done to code and done right the first time.</p>
+      </div>
+      <div class="trust-card">
+        <h3>Free Estimates</h3>
+        <p>Know the cost before any work begins. Estimates are free, with no obligation.</p>
+      </div>
+      <div class="trust-card">
+        <h3>Meet-or-Beat Quote Policy</h3>
+        <p>Got a written quote from another licensed contractor? Wayne Conn Plumbing will meet or beat it.</p>
+      </div>
+    </div>
+    <div class="gallery">
+      <figure>
+        <img src="img/plumbing-copper.jpg" alt="A length of copper pipe held in a bench vise during preparation work" width="640" height="426" loading="lazy">
+        <figcaption class="caption">Stock photo: fitting copper pipe for a re-pipe.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/plumbing-construction.jpg" alt="Exposed rough-in plumbing pipes running along a framed wall" width="640" height="426" loading="lazy">
+        <figcaption class="caption">Stock photo: rough-in plumbing on a remodel.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/plumbing-sink.jpg" alt="Hands adjusting a valve on pipe connections beneath a sink" width="640" height="426" loading="lazy">
+        <figcaption class="caption">Stock photo: working on pipe connections under a sink.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="brands">
+  <div class="wrap">
+    <div class="pipe-rule" aria-hidden="true"></div>
+    <h2>Brands We Carry</h2>
+    <p class="lede">We install and service products from these manufacturers.</p>
+    <div class="brands-list">
+      <span class="brand-chip">American Standard</span>
+      <span class="brand-chip">Kohler</span>
+      <span class="brand-chip">Moen</span>
+      <span class="brand-chip">Delta</span>
+      <span class="brand-chip">Bradford White</span>
+      <span class="brand-chip">A.O. Smith</span>
+      <span class="brand-chip">State</span>
+      <span class="brand-chip">Noritz</span>
+      <span class="brand-chip">Rinnai</span>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="visit">
+  <div class="wrap">
+    <div class="pipe-rule" aria-hidden="true"></div>
+    <h2>Hours &amp; Location</h2>
+    <p class="lede">Rated 4.7 from 15 Google reviews.</p>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Business Hours</h3>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>8:00 AM - 6:00 PM</td></tr>
+          <tr><td>Tuesday</td><td>8:00 AM - 6:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>8:00 AM - 6:00 PM</td></tr>
+          <tr><td>Thursday</td><td>8:00 AM - 6:00 PM</td></tr>
+          <tr><td>Friday</td><td>8:00 AM - 6:00 PM</td></tr>
+          <tr><td>Saturday</td><td>8:00 AM - 6:00 PM</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <div class="info-card">
+        <h3>Find Us</h3>
+        <address class="addr">
+          <strong>Wayne Conn Plumbing</strong><br>
+          6915 W Beaver St<br>
+          Jacksonville, FL 32254<br><br>
+          <a href="tel:+19043533102">(904) 353-3102</a>
+        </address>
+      </div>
+      <div class="emergency-box">
+        <h3>Emergency &amp; After-Hours</h3>
+        <ul>
+          <li><span class="lbl">Emergency</span><a href="tel:+19042375342">Emergency: (904) 237-5342</a></li>
+          <li><span class="lbl">After-hours</span><a href="tel:+19043307244">After-hours: (904) 330-7244</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Get Your Free Estimate</h2>
+    <div class="pipe-rule" aria-hidden="true"></div>
+    <p>Call Wayne Conn Plumbing for drain cleaning, re-pipes, repairs, remodels, or tankless water heaters in Jacksonville, FL.</p>
+    <a class="big-phone" href="tel:+19043533102">(904) 353-3102</a>
+    <a class="btn btn-primary" href="tel:+19043533102">Call now</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Wayne Conn Plumbing</h4>
+      <p>Plumber in Jacksonville, Florida.<br>Serving Jacksonville since 1987.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="tel:+19043533102">(904) 353-3102</a><br>
+      Emergency: <a href="tel:+19042375342">(904) 237-5342</a><br>
+      After-hours: <a href="tel:+19043307244">(904) 330-7244</a><br>
+      6915 W Beaver St, Jacksonville, FL 32254</p>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p>Monday - Saturday<br>8:00 AM - 6:00 PM</p>
+    </div>
+    <div class="fine">
+      <p>This is a website concept and design preview prepared for Wayne Conn Plumbing. It is not the business's live website and does not imply any completed client work or endorsement. Photos on this page are stock photos used for layout purposes. Business facts shown are from public listings and research.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

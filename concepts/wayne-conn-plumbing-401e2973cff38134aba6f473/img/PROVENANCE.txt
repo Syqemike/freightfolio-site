@@ -1,0 +1,36 @@
+WAYNE CONN PLUMBING — IMAGE PROVENANCE (batch-26 concept site)
+
+All images in this folder are STOCK photos under the Pexels free license.
+No real photos of the business exist: Wayne Conn Plumbing has no business
+website and no usable social photos, so stock imagery is used for layout
+only. Every on-page caption begins "Stock photo: ".
+
+1. plumbing-spanner.jpg
+   Description: gloved hands using an adjustable wrench on a pipe fitting.
+   On-page caption: "Stock photo: tightening a pipe fitting with an adjustable wrench."
+   License: Pexels free license (STOCK).
+   Photo page: https://www.pexels.com/photo/16509869/
+
+2. plumbing-sink.jpg
+   Description: hands adjusting a valve on pipe connections under a sink.
+   On-page caption: "Stock photo: working on pipe connections under a sink."
+   License: Pexels free license (STOCK).
+   Photo page: https://www.pexels.com/photo/7220892/
+
+3. plumbing-copper.jpg
+   Description: copper pipe held in a bench vise being worked on.
+   On-page caption: "Stock photo: fitting copper pipe for a re-pipe."
+   License: Pexels free license (STOCK).
+   Photo page: https://www.pexels.com/photo/39885416/
+
+4. plumbing-pipes.jpg
+   Description: hands installing steel pipes.
+   On-page caption: "Stock photo: installing steel pipe runs."
+   License: Pexels free license (STOCK).
+   Photo page: https://www.pexels.com/photo/6419128/
+
+5. plumbing-construction.jpg
+   Description: exposed rough-in plumbing pipes on a wall.
+   On-page caption: "Stock photo: rough-in plumbing on a remodel."
+   License: Pexels free license (STOCK).
+   Photo page: https://www.pexels.com/photo/8488035/
