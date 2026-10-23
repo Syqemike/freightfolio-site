@@ -5,107 +5,134 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>Bosque Baking Company | Artisan Sourdough Bakery, Albuquerque NM</title>
-<meta name="description" content="Artisan sourdough bakery in Albuquerque, New Mexico. Naturally leavened bread and small-batch pastries. Find us at the Downtown and Corrales Growers' Markets.">
+<meta name="description" content="Artisan sourdough bakery in Albuquerque, New Mexico. Naturally leavened bread and small-batch pastries. Find the bread at the Downtown and Corrales Growers' Markets.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --cream:#faf4e8; --cream-deep:#f1e6d0; --terra:#b0512c; --terra-dark:#8a3d20;
-  --brown:#2f1d12; --brown-soft:#5c4128; --gold:#c98a2d; --white:#fffdf8;
+  --paper:#faf3e3; --paper-deep:#f0e4cb; --ink:#2e1c10; --ink-soft:#6b4f33;
+  --adobe:#a8471f; --adobe-deep:#7e3415; --gold:#c08a2d; --card:#fffdf6;
+  --rule:#d9c6a1;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--brown);line-height:1.65;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Mono',monospace;background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.serif{font-family:'Fraunces',serif;font-weight:600;line-height:1.1}
 img{display:block;max-width:100%}
+a{color:var(--adobe)}
 .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
-/* top bar */
-.topbar{background:var(--brown);color:var(--cream);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:9px 16px}
-.topbar strong{color:var(--gold)}
+
+/* top strip */
+.topstrip{background:var(--ink);color:#e8d9bd;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;text-align:center;padding:10px 16px}
+.topstrip strong{color:var(--gold);font-weight:600}
+
 /* header */
-header.site{position:sticky;top:0;z-index:50;background:rgba(250,244,232,.96);backdrop-filter:blur(8px);border-bottom:1px solid #e4d5b8}
-.navrow{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1140px;margin:0 auto}
-.brand{font-family:'Fraunces',serif;font-weight:700;font-size:22px;color:var(--brown);text-decoration:none}
-.brand span{color:var(--terra)}
-nav.links{display:flex;gap:26px}
-nav.links a{color:var(--brown-soft);text-decoration:none;font-size:14.5px;font-weight:500}
-nav.links a:hover{color:var(--terra)}
-.btn{display:inline-block;background:var(--terra);color:#fff;text-decoration:none;font-weight:600;padding:13px 28px;border-radius:6px;font-size:15px;transition:background .2s}
-.btn:hover{background:var(--terra-dark)}
-.btn.ghost{background:transparent;color:var(--brown);border:2px solid var(--brown)}
-.btn.ghost:hover{background:var(--brown);color:var(--cream)}
-/* hero */
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:stretch;background:var(--brown)}
-.hero-photo{position:relative;min-height:520px}
-.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero-photo .photocap{position:absolute;left:14px;bottom:12px;background:rgba(47,29,18,.72);color:#f4e9d2;font-size:11.5px;font-style:italic;padding:5px 12px;border-radius:4px}
-.hero-copy{background:var(--brown);color:var(--cream);padding:72px 56px;display:flex;flex-direction:column;justify-content:center}
-.kicker{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-.hero-copy h1{font-family:'Fraunces',serif;font-size:clamp(40px,4.6vw,62px);line-height:1.08;font-weight:600;margin-bottom:20px}
-.hero-copy h1 em{font-style:italic;color:var(--gold)}
-.hero-copy p.lede{font-size:17.5px;color:#e8dcc4;max-width:44ch;margin-bottom:14px}
-.ratingline{font-size:14px;color:#d9c8a8;margin-bottom:26px}
-.ratingline b{color:var(--gold)}
-.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px}
-.disclose{font-size:12.5px;color:#b9a586;border-top:1px solid #4d3826;padding-top:16px;max-width:46ch}
-/* ticker */
-.ticker{background:var(--terra);color:#fff;overflow:hidden;white-space:nowrap;padding:13px 0}
-.ticker span{font-family:'Fraunces',serif;font-size:17px;font-style:italic;padding:0 26px}
-/* sections */
-section{padding:84px 0}
-.eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);font-weight:600;margin-bottom:14px}
-h2{font-family:'Fraunces',serif;font-size:clamp(30px,3.4vw,44px);line-height:1.15;font-weight:600;margin-bottom:16px}
-.sub{font-size:17px;color:var(--brown-soft);max-width:62ch;margin-bottom:44px}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.split img{border-radius:10px;box-shadow:0 24px 60px -24px rgba(47,29,18,.45)}
-.caption{font-size:12.5px;color:#8a6f4d;margin-top:10px;font-style:italic}
-.breadlist{list-style:none;margin-top:8px}
-.breadlist li{padding:14px 0;border-bottom:1px solid #e0d0b0;display:flex;justify-content:space-between;gap:16px;align-items:baseline}
-.breadlist li:last-child{border-bottom:none}
-.breadlist .name{font-family:'Fraunces',serif;font-size:20px;font-weight:600}
-.breadlist .note{font-size:14px;color:var(--brown-soft);text-align:right;max-width:26ch}
-/* market band */
-.band{background:var(--cream-deep);border-top:1px solid #e0d0b0;border-bottom:1px solid #e0d0b0}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.card{background:var(--white);border:1px solid #e6d7ba;border-radius:10px;overflow:hidden}
-.card img{height:220px;width:100%;object-fit:cover}
-.card .body{padding:22px}
-.card h3{font-family:'Fraunces',serif;font-size:21px;margin-bottom:8px}
-.card p{font-size:14.5px;color:var(--brown-soft)}
+header.site{position:sticky;top:0;z-index:50;background:rgba(250,243,227,.97);border-bottom:2px solid var(--ink)}
+.headrow{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 24px;max-width:1140px;margin:0 auto}
+.brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;color:var(--ink);text-decoration:none}
+.brand em{font-style:italic;color:var(--adobe)}
+nav.sections{display:flex;gap:26px;flex-wrap:wrap}
+nav.sections a{color:var(--ink);text-decoration:none;font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+nav.sections a:hover{color:var(--adobe)}
+.btn{display:inline-block;background:var(--adobe);color:#fff!important;text-decoration:none;font-weight:600;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;padding:13px 26px;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .15s ease, box-shadow .15s ease}
+.btn:hover{background:var(--adobe-deep);transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.btn.plain{background:var(--card);color:var(--ink)!important}
+
+/* hero: masthead */
+.hero{padding:78px 0 0;text-align:center}
+.hero .kicker{font-size:.78rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--adobe);margin-bottom:20px}
+.hero h1{font-size:clamp(2.9rem,6.5vw,5.2rem);max-width:20ch;margin:0 auto 20px}
+.hero h1 em{font-style:italic;color:var(--adobe)}
+.hero .lede{font-size:1.02rem;color:var(--ink-soft);max-width:62ch;margin:0 auto 16px}
+.ratingline{font-size:.9rem;font-weight:600;color:var(--ink);margin-bottom:30px}
+.ratingline b{color:var(--adobe)}
+.hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:52px}
+.hero-band{position:relative;margin:0}
+.hero-band img{width:100%;height:440px;object-fit:cover;display:block}
+.hero-band .photocap{position:absolute;left:18px;bottom:14px;background:rgba(46,28,16,.75);color:#f4e8cf;font-size:.74rem;font-style:italic;padding:6px 14px}
+
+/* ledger sections */
+section.block{padding:80px 0}
+.ledger-head{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:20px 0;margin-bottom:8px;display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.ledger-head h2{font-size:clamp(1.9rem,3.8vw,2.8rem)}
+.ledger-head .folio{font-size:.8rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--adobe)}
+.sec-note{font-size:1rem;color:var(--ink-soft);margin:20px 0 30px;max-width:64ch}
+.ledger{list-style:none}
+.ledger li{display:grid;grid-template-columns:72px 1fr auto;gap:20px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--rule)}
+.ledger li:last-child{border-bottom:none}
+.ledger .n{font-size:1rem;font-weight:600;color:var(--adobe)}
+.ledger .name{font-family:'Fraunces',serif;font-size:1.45rem;font-weight:600}
+.ledger .note{font-size:.85rem;color:var(--ink-soft);text-align:right;max-width:32ch}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.split figure{margin:0}
+.split img{border:2px solid var(--ink);box-shadow:8px 8px 0 rgba(46,28,16,.12)}
+.caption{font-size:.78rem;font-style:italic;color:var(--ink-soft);margin-top:10px}
+
+/* oven: asymmetric */
+.oven-band{background:var(--paper-deep);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.feature{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;margin-bottom:56px}
+.feature img{border:2px solid var(--ink);box-shadow:8px 8px 0 rgba(46,28,16,.12)}
+.feature h3{font-size:1.9rem;margin-bottom:12px}
+.feature p{color:var(--ink-soft);margin-bottom:10px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.duo .card{background:var(--card);border:2px solid var(--ink);box-shadow:6px 6px 0 rgba(46,28,16,.12);padding:0}
+.duo .card img{width:100%;height:240px;object-fit:cover;border-bottom:2px solid var(--ink)}
+.duo .card .body{padding:26px}
+.duo .card h3{font-size:1.5rem;margin-bottom:10px}
+.duo .card p{color:var(--ink-soft);font-size:.95rem}
+.duo .card .cap{font-size:.76rem;font-style:italic;color:var(--ink-soft);padding:0 26px 22px}
+
+/* markets */
+.markets{background:var(--ink);color:#f0e3c6}
+.markets .ledger-head{border-color:#f0e3c6}
+.markets .ledger-head h2{color:#fff}
+.markets .ledger-head .folio{color:var(--gold)}
+.markets .sec-note{color:#d9c8a4}
+.markets p.body{color:#e8d9bd;font-size:1.02rem;max-width:64ch;margin-bottom:14px}
+.market-note{border:2px dashed var(--gold);padding:26px 30px;margin-top:30px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.market-note .tag{font-size:.75rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.markets .btn{margin-top:8px}
+
 /* visit */
-.visit{background:var(--brown);color:var(--cream)}
-.visit h2{color:var(--cream)}
-.visit .sub{color:#d9c8a8}
-.infogrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px}
-.info{background:#3d2717;border:1px solid #5a4128;border-radius:10px;padding:28px}
-.info h3{font-family:'Fraunces',serif;font-size:20px;color:var(--gold);margin-bottom:12px}
-.info p,.info a{font-size:15.5px;color:#eadfc6}
-.info a.tel{color:#fff;font-weight:600;text-decoration:none;font-size:19px}
-.info a.tel:hover{color:var(--gold)}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border:2px solid var(--ink);background:var(--card);margin-top:34px}
+.visit-cell{padding:32px;border-right:1px solid var(--rule)}
+.visit-cell:last-child{border-right:none}
+.visit-cell h3{font-size:1.25rem;margin-bottom:14px;color:var(--adobe)}
+.visit-cell p,.visit-cell li{font-size:.92rem;color:var(--ink-soft)}
+.visit-cell .tel{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:700;color:var(--ink);text-decoration:none}
+.visit-cell .tel:hover{color:var(--adobe)}
 .hours{list-style:none}
-.hours li{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed #5a4128;font-size:15px}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--rule)}
 .hours li:last-child{border:none}
-/* footer */
-footer.site{background:#241509;color:#a98f66;padding:40px 0;font-size:13.5px}
-footer.site .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
-footer.site a{color:#d9c8a8}
-@media(max-width:900px){
-  .hero{grid-template-columns:1fr}
-  .hero-photo{min-height:340px;position:relative}
-  .hero-photo img{position:relative;height:340px}
-  .hero-copy{padding:48px 28px}
-  .split{grid-template-columns:1fr;gap:32px}
-  .cards,.infogrid{grid-template-columns:1fr}
-  nav.links{display:none}
-  section{padding:60px 0}
+
+footer.site{background:var(--ink);color:#b9a377;padding:44px 0;font-size:.85rem}
+footer.site .wrap{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:center}
+footer.site a{color:#e8d9bd}
+footer.site .fname{font-family:'Fraunces',serif;font-size:1.2rem;color:#fff;margin-bottom:6px}
+
+@media (max-width:900px){
+  .hero{padding:56px 0 0}
+  .hero-band img{height:300px}
+  .split,.feature,.duo{grid-template-columns:1fr}
+  .ledger li{grid-template-columns:48px 1fr}
+  .ledger .note{grid-column:2;text-align:left;max-width:none}
+  .visit-grid{grid-template-columns:1fr}
+  .visit-cell{border-right:none;border-bottom:1px solid var(--rule)}
+  .visit-cell:last-child{border-bottom:none}
+  nav.sections{display:none}
+  section.block{padding:58px 0}
 }
 </style>
 </head>
 <body>
-<div class="topbar"><strong>Design preview</strong> &nbsp;|&nbsp; Website concept for Bosque Baking Company, not the official site</div>
+
+<div class="topstrip"><strong>Design preview</strong> &nbsp;|&nbsp; Website concept for Bosque Baking Company</div>
+
 <header class="site">
-  <div class="navrow">
-    <a class="brand" href="#top">Bosque <span>Baking</span> Co.</a>
-    <nav class="links">
+  <div class="headrow">
+    <a class="brand" href="#top">Bosque <em>Baking</em> Co.</a>
+    <nav class="sections" aria-label="Sections">
       <a href="#breads">Breads</a>
       <a href="#oven">From the Oven</a>
       <a href="#markets">Markets</a>
@@ -116,127 +143,142 @@ footer.site a{color:#d9c8a8}
 </header>
 
 <main id="top">
-<section class="hero" style="padding:0">
-  <div class="hero-photo">
-    <img src="img/hero-sourdough.jpg" alt="Rustic sourdough loaves with a crackled, flour-dusted crust">
-    <span class="photocap">Stock photo: rustic sourdough loaves with a crackled crust.</span>
-  </div>
-  <div class="hero-copy">
-    <div class="kicker">Artisan Sourdough Bakery &middot; Albuquerque, NM</div>
-    <h1>Naturally leavened sourdough, <em>baked fresh</em> in Albuquerque.</h1>
-    <p class="lede">Naturally leavened sourdough loaves, rustic baguettes, and small-batch pastries, baked through the week in Albuquerque.</p>
-    <div class="ratingline">Rated <b>4.8 stars from 55 Google reviews</b>.</div>
-    <div class="hero-cta">
-      <a class="btn" href="tel:+15052346061">Call to order</a>
-      <a class="btn ghost" style="border-color:#c9a15c;color:#f4e9d2" href="#breads">See the breads</a>
-    </div>
-    <p class="disclose">This page is a website design preview created as a concept. It is not affiliated with or endorsed by the business.</p>
-  </div>
-</section>
 
-<div class="ticker" aria-hidden="true">
-  <span>Walnut Sourdough</span><span>&middot;</span><span>Olive Sourdough</span><span>&middot;</span><span>Green Chile Sourdough</span><span>&middot;</span><span>Old World Rye</span><span>&middot;</span><span>Sunflower Seed Multigrain</span><span>&middot;</span><span>Rustic Baguettes</span><span>&middot;</span><span>Walnut Sourdough</span><span>&middot;</span><span>Olive Sourdough</span><span>&middot;</span><span>Green Chile Sourdough</span><span>&middot;</span><span>Old World Rye</span><span>&middot;</span><span>Sunflower Seed Multigrain</span><span>&middot;</span><span>Rustic Baguettes</span>
-</div>
-
-<section id="breads">
-  <div class="wrap split">
-    <div>
-      <div class="eyebrow">The breads</div>
-      <h2>Sourdough with a deep crust and an open crumb.</h2>
-      <p class="sub">Every loaf is naturally leavened and baked fresh during the week, in small batches.</p>
-      <ul class="breadlist">
-        <li><span class="name">Walnut Sourdough</span><span class="note">Hearty crumb, toasted walnuts</span></li>
-        <li><span class="name">Olive Sourdough</span><span class="note">Briny olives in an open crumb</span></li>
-        <li><span class="name">Green Chile Sourdough</span><span class="note">New Mexico heat in every slice</span></li>
-        <li><span class="name">Old World Rye</span><span class="note">Dense and dark, old-world flavor</span></li>
-        <li><span class="name">Sunflower Seed Multigrain</span><span class="note">Seeded and satisfying</span></li>
-        <li><span class="name">Rustic Baguettes</span><span class="note">Crisp crust, chewy center</span></li>
-      </ul>
+  <section class="hero">
+    <div class="wrap">
+      <div class="kicker">Artisan Sourdough Bakery &middot; Albuquerque, New Mexico</div>
+      <h1>Naturally leavened sourdough, <em>baked fresh</em> in Albuquerque.</h1>
+      <p class="lede">Bosque Baking Company is an artisan sourdough bakery in Albuquerque. The loaves are naturally leavened and baked in small batches through the week, alongside pastries, empanadas, and pies.</p>
+      <div class="ratingline">Rated <b>4.8 stars from 55 Google reviews</b>.</div>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+15052346061">Call to order</a>
+        <a class="btn plain" href="#breads">See the breads</a>
+      </div>
     </div>
-    <div>
-      <img src="img/bakery-shelf.jpg" alt="Artisan bread loaves with wheat stalks and a flour sack">
-      <p class="caption">Stock photo: artisan bread loaves with wheat and flour.</p>
-    </div>
-  </div>
-</section>
+    <figure class="hero-band">
+      <img src="img/hero-sourdough.jpg" alt="Rustic sourdough loaves with a crackled, flour-dusted crust">
+      <span class="photocap">Stock photo: rustic sourdough loaves with a crackled crust.</span>
+    </figure>
+  </section>
 
-<section id="oven" class="band">
-  <div class="wrap">
-    <div class="eyebrow">From the oven</div>
-    <h2>More than bread.</h2>
-    <p class="sub">Pastries and morning food for the market run, the office, or the weekend table.</p>
-    <div class="cards">
-      <div class="card">
+  <section id="breads" class="block">
+    <div class="wrap">
+      <div class="ledger-head">
+        <h2>The Bread Ledger</h2>
+        <span class="folio">Breads &middot; 01</span>
+      </div>
+      <p class="sec-note">Every loaf is naturally leavened and baked fresh during the week. This is what comes out of the oven.</p>
+      <div class="split">
+        <div>
+          <ul class="ledger">
+            <li><span class="n">01</span><span class="name">Walnut Sourdough</span><span class="note">Toasted walnuts folded into a hearty loaf</span></li>
+            <li><span class="n">02</span><span class="name">Olive Sourdough</span><span class="note">Olives baked into an open crumb</span></li>
+            <li><span class="n">03</span><span class="name">Green Chile Sourdough</span><span class="note">Made with New Mexico green chile</span></li>
+            <li><span class="n">04</span><span class="name">Old World Rye</span><span class="note">A dense, dark rye loaf</span></li>
+            <li><span class="n">05</span><span class="name">Sunflower Seed Multigrain</span><span class="note">A seeded multigrain loaf</span></li>
+            <li><span class="n">06</span><span class="name">Rustic Baguettes</span><span class="note">Crisp crust with a chewy center</span></li>
+          </ul>
+        </div>
+        <figure>
+          <img src="img/bakery-shelf.jpg" alt="Artisan bread loaves with wheat stalks and a flour sack">
+          <p class="caption">Stock photo: artisan bread loaves with wheat and flour.</p>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="oven" class="oven-band block">
+    <div class="wrap">
+      <div class="ledger-head">
+        <h2>From the Oven</h2>
+        <span class="folio">Pastries &amp; More &middot; 02</span>
+      </div>
+      <p class="sec-note">Pastries and morning food for the market run, the office, or the weekend table.</p>
+      <div class="feature">
         <img src="img/pastries.jpg" alt="Fresh scones served with cream and jam">
-        <div class="body">
+        <div>
           <h3>Apricot Scones and Cookies</h3>
           <p>Apricot scones plus a rotating case of cookies, including the red chile chocolate pecan.</p>
           <p class="caption">Stock photo: fresh scones with cream and jam.</p>
         </div>
       </div>
-      <div class="card">
-        <img src="img/empanadas.jpg" alt="Freshly baked empanadas on a tray">
-        <div class="body">
-          <h3>Empanadas, Pies, and Burritos</h3>
-          <p>Handheld empanadas, triple berry pies by the slice or whole, and breakfast burritos on bake days.</p>
-          <p class="caption">Stock photo: freshly baked empanadas.</p>
+      <div class="duo">
+        <div class="card">
+          <img src="img/empanadas.jpg" alt="Freshly baked empanadas on a tray">
+          <div class="body">
+            <h3>Empanadas, Pies, and Burritos</h3>
+            <p>Handheld empanadas, triple berry pies by the slice or whole, and breakfast burritos on bake days.</p>
+          </div>
+          <p class="cap">Stock photo: freshly baked empanadas.</p>
         </div>
-      </div>
-      <div class="card">
-        <img src="img/baker-kneading.jpg" alt="A baker shaping bread dough by hand on a floured table">
-        <div class="body">
-          <h3>Baked Through the Week</h3>
-          <p>Dough is mixed and shaped by hand, then baked in small batches. Call ahead if you need a whole pie or a big bread order.</p>
-          <p class="caption">Stock photo: a baker shaping dough by hand.</p>
+        <div class="card">
+          <img src="img/baker-kneading.jpg" alt="A baker shaping bread dough by hand on a floured table">
+          <div class="body">
+            <h3>Baked Through the Week</h3>
+            <p>Dough is mixed and shaped by hand, then baked in small batches. Call ahead if you need a whole pie or a large bread order.</p>
+          </div>
+          <p class="cap">Stock photo: a baker shaping dough by hand.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="markets">
-  <div class="wrap">
-    <div class="eyebrow">Find us</div>
-    <h2>At the growers&rsquo; markets.</h2>
-    <p class="sub">Bosque Baking Company sells at the Downtown and Corrales Growers&rsquo; Markets. Look for the bread table. Questions? Call <a href="tel:+15052346061" style="color:var(--terra);font-weight:600">(505) 234-6061</a>.</p>
-    <a class="btn" href="tel:+15052346061">Call to order</a>
-  </div>
-</section>
+  <section id="markets" class="markets block">
+    <div class="wrap">
+      <div class="ledger-head">
+        <h2>At the Growers' Markets</h2>
+        <span class="folio">Find Us &middot; 03</span>
+      </div>
+      <p class="body">Bosque Baking Company sells at the Downtown and Corrales Growers' Markets. The same breads and pastries from the bakery, sold at the market table.</p>
+      <div class="market-note">
+        <span class="tag">Market days</span>
+        <span>The bakery is open Wednesday through Friday, 11am to 6pm, and Saturday, 9am to 3pm. Closed Sunday through Tuesday.</span>
+      </div>
+      <p style="margin-top:26px"><a class="btn" href="tel:+15052346061">Call to order</a></p>
+    </div>
+  </section>
 
-<section id="visit" class="visit">
-  <div class="wrap">
-    <div class="eyebrow" style="color:var(--gold)">Visit</div>
-    <h2>Come by the bakery.</h2>
-    <p class="sub">Pick up a loaf, a pie, or breakfast on your way through downtown Albuquerque.</p>
-    <div class="infogrid">
-      <div class="info">
-        <h3>Address</h3>
-        <p>922 Coal Ave SW<br>Albuquerque, NM 87102</p>
-        <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&query=922+Coal+Ave+SW+Albuquerque+NM+87102" style="color:var(--gold)">Get directions</a></p>
+  <section id="visit" class="block">
+    <div class="wrap">
+      <div class="ledger-head">
+        <h2>Visit the Bakery</h2>
+        <span class="folio">Visit &middot; 04</span>
       </div>
-      <div class="info">
-        <h3>Hours</h3>
-        <ul class="hours">
-          <li><span>Wednesday - Friday</span><span>11am - 6pm</span></li>
-          <li><span>Saturday</span><span>9am - 3pm</span></li>
-          <li><span>Sunday - Tuesday</span><span>Closed</span></li>
-        </ul>
-      </div>
-      <div class="info">
-        <h3>Order ahead</h3>
-        <p>Call to reserve loaves or whole pies for pickup.</p>
-        <p style="margin-top:12px"><a class="tel" href="tel:+15052346061">(505) 234-6061</a></p>
+      <p class="sec-note">Pick up a loaf, a pie, or breakfast on your way through downtown Albuquerque.</p>
+      <div class="visit-grid">
+        <div class="visit-cell">
+          <h3>Address</h3>
+          <p>922 Coal Ave SW<br>Albuquerque, NM 87102</p>
+          <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&query=922+Coal+Ave+SW+Albuquerque+NM+87102">Get directions</a></p>
+        </div>
+        <div class="visit-cell">
+          <h3>Hours</h3>
+          <ul class="hours">
+            <li><span>Wednesday - Friday</span><span>11am - 6pm</span></li>
+            <li><span>Saturday</span><span>9am - 3pm</span></li>
+            <li><span>Sunday - Tuesday</span><span>Closed</span></li>
+          </ul>
+        </div>
+        <div class="visit-cell">
+          <h3>Order ahead</h3>
+          <p>Call to reserve loaves or whole pies for pickup.</p>
+          <p style="margin-top:12px"><a class="tel" href="tel:+15052346061">(505) 234-6061</a></p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
 </main>
 
 <footer class="site">
   <div class="wrap">
-    <span>Bosque Baking Company &middot; 922 Coal Ave SW, Albuquerque, NM &middot; (505) 234-6061</span>
-    <span>Design concept by <a href="https://freightfolio.net">Freightfolio</a>. Not the business&rsquo;s official website.</span>
+    <div>
+      <div class="fname">Bosque Baking Company</div>
+      <div>922 Coal Ave SW, Albuquerque, NM &middot; (505) 234-6061</div>
+    </div>
+    <div>Design concept by <a href="https://freightfolio.net">Freightfolio</a>. Not the business's official website.</div>
   </div>
 </footer>
+
 </body>
 </html>

@@ -5,225 +5,289 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>Fleur De Lis Heating &amp; Air | HVAC Service in Gulfport, MS</title>
+<meta name="description" content="Fleur De Lis Heating & Air in Gulfport, Mississippi. Heating and air service on any unit, maintenance, and new equipment sales and installation. Call (228) 273-4785.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#0d2b52;
-    --navy-deep:#081c39;
-    --steel:#5b6b7f;
-    --silver:#dfe5ec;
-    --silver-light:#f2f5f8;
-    --white:#ffffff;
-    --accent:#1f6fd6;
+    --navy:#0d2440; --navy-deep:#081a30; --paper:#f4f6f9; --card:#ffffff;
+    --amber:#e8861c; --amber-deep:#c66f10; --steel:#4d5c6e; --ink:#1b2a3d;
+    --line:#d7dde6;
   }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:'Inter',system-ui,sans-serif;color:#22303f;background:var(--white);line-height:1.65;}
-  h1,h2,h3{font-family:'Archivo',system-ui,sans-serif;color:var(--navy-deep);line-height:1.2;}
-  a{color:var(--accent);}
-  .wrap{max-width:1100px;margin:0 auto;padding:0 22px;}
-  .preview-bar{background:var(--navy-deep);color:#c9d4e2;font-size:13px;text-align:center;padding:8px 14px;letter-spacing:.02em;}
-  header.site{background:var(--white);border-bottom:3px solid var(--navy);position:sticky;top:0;z-index:50;}
-  .header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap;}
-  .brand h1{font-size:clamp(1.35rem,3vw,1.9rem);letter-spacing:.01em;}
-  .brand .tag{font-size:13px;color:var(--steel);margin-top:2px;}
-  nav.sections{display:flex;gap:4px;flex-wrap:wrap;}
-  nav.sections a{text-decoration:none;color:var(--navy);font-weight:600;font-size:14px;padding:8px 12px;border-radius:6px;}
-  nav.sections a:hover{background:var(--silver-light);}
-  .btn{display:inline-block;background:var(--accent);color:#fff!important;font-weight:700;text-decoration:none;padding:14px 30px;border-radius:8px;font-size:17px;border:2px solid var(--accent);}
-  .btn:hover{background:var(--navy);border-color:var(--navy);}
-  .hero{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);color:#fff;}
-  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:56px 22px;}
-  .hero h2{color:#fff;font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:14px;}
-  .hero p{color:#d7e0eb;font-size:1.08rem;margin-bottom:12px;}
-  .rating{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);border-radius:10px;padding:14px 18px;margin:18px 0;display:inline-block;}
-  .rating .stars{color:#ffd35e;font-size:20px;letter-spacing:3px;}
-  .rating p{margin:6px 0 0;font-size:14px;color:#e8edf3;}
-  .hero-cta{margin-top:22px;display:flex;gap:14px;flex-wrap:wrap;}
-  .hero figure{margin:0;}
-  .hero img{width:100%;height:auto;border-radius:12px;display:block;border:1px solid rgba(255,255,255,.2);}
-  figcaption{font-size:12.5px;color:#9fb0c4;margin-top:8px;}
-  figure.light figcaption{color:var(--steel);}
-  section.block{padding:60px 0;}
-  section.alt{background:var(--silver-light);}
-  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
-  h2.sec{font-size:clamp(1.5rem,3.4vw,2.2rem);margin-bottom:10px;}
-  .lede{color:var(--steel);max-width:640px;margin-bottom:30px;font-size:1.05rem;}
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  .card{background:#fff;border:1px solid var(--silver);border-radius:12px;padding:28px 24px;}
-  .card h3{font-size:1.15rem;margin-bottom:10px;}
-  .card p{font-size:.98rem;color:#44535f;}
-  .card .icon-chip{display:inline-block;background:var(--navy);color:#fff;font-size:13px;font-weight:700;padding:6px 12px;border-radius:6px;margin-bottom:14px;letter-spacing:.03em;}
-  .finance{background:var(--navy);color:#fff;border-radius:14px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;}
-  .finance h2{color:#fff;margin-bottom:12px;font-size:clamp(1.4rem,3vw,1.9rem);}
-  .finance p{color:#d7e0eb;margin-bottom:16px;}
-  .finance .fine{font-size:13px;color:#aebdce;}
-  .finance img{width:100%;height:auto;border-radius:10px;display:block;}
-  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
-  .hours-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--silver);border-radius:12px;overflow:hidden;}
-  .hours-table th,.hours-table td{padding:14px 18px;text-align:left;font-size:15px;}
-  .hours-table th{background:var(--navy);color:#fff;font-family:'Archivo',sans-serif;}
-  .hours-table tr:nth-child(even) td{background:var(--silver-light);}
-  .contact-box{background:#fff;border:1px solid var(--silver);border-radius:12px;padding:32px;}
-  .contact-box .phone-big{font-family:'Archivo',sans-serif;font-size:clamp(1.6rem,4vw,2.2rem);color:var(--navy-deep);text-decoration:none;font-weight:800;}
-  .contact-box .phone-big:hover{color:var(--accent);}
-  .contact-box address{font-style:normal;margin:14px 0;color:#44535f;}
-  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:34px;}
-  .gallery figure{margin:0;}
-  .gallery img{width:100%;height:280px;object-fit:cover;border-radius:10px;display:block;border:1px solid var(--silver);}
-  footer{background:var(--navy-deep);color:#aebdce;padding:40px 0;font-size:13.5px;}
-  footer a{color:#d7e0eb;}
-  footer .fine{margin-top:14px;}
-  @media(max-width:820px){
-    .hero .wrap,.finance,.two-col{grid-template-columns:1fr;}
-    .cards{grid-template-columns:1fr;}
-    .gallery{grid-template-columns:1fr;}
-    .gallery img{height:230px;}
-    nav.sections{width:100%;}
-    section.block{padding:44px 0;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.cond{font-family:'Oswald',sans-serif;font-weight:600;line-height:1.15;letter-spacing:.01em;text-transform:uppercase}
+  img{max-width:100%;display:block}
+  a{color:#1f6fd6}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+  /* disclosure */
+  .preview-bar{background:var(--navy-deep);color:#b9c7da;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:9px 14px}
+  .preview-bar strong{color:var(--amber);font-weight:700}
+
+  /* header */
+  header.site{background:var(--card);border-bottom:4px solid var(--navy);position:sticky;top:0;z-index:50}
+  .headrow{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px 24px;max-width:1120px;margin:0 auto}
+  .brand{font-family:'Oswald',sans-serif;font-weight:700;font-size:1.5rem;color:var(--navy);text-decoration:none;text-transform:uppercase;letter-spacing:.02em;line-height:1}
+  .brand small{display:block;font-family:'Inter',sans-serif;font-weight:600;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--amber-deep);margin-top:4px}
+  nav.sections{display:flex;gap:24px;flex-wrap:wrap}
+  nav.sections a{text-decoration:none;color:var(--navy);font-weight:600;font-size:.88rem;letter-spacing:.04em}
+  nav.sections a:hover{color:var(--amber-deep)}
+  .btn{display:inline-block;background:var(--amber);color:#fff!important;font-weight:700;text-decoration:none;font-size:.95rem;letter-spacing:.05em;padding:14px 28px;border:2px solid var(--navy-deep);box-shadow:4px 4px 0 var(--navy-deep);transition:transform .15s ease, box-shadow .15s ease}
+  .btn:hover{background:var(--amber-deep);transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--navy-deep)}
+  .btn.navy{background:var(--navy)}
+
+  /* hero */
+  .hero{background:var(--navy);color:#fff;padding:72px 0 80px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+  .kicker{font-size:.76rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--amber);margin-bottom:18px}
+  .hero h1{font-size:clamp(2.4rem,5.2vw,4rem);color:#fff;margin-bottom:18px}
+  .hero p.lede{color:#cfdae8;font-size:1.08rem;margin-bottom:14px;max-width:36rem}
+  .rating{display:flex;align-items:center;gap:14px;margin:22px 0 28px}
+  .rating .stars{color:var(--amber);font-size:1.35rem;letter-spacing:3px}
+  .rating p{font-size:.9rem;color:#e4ebf4;margin:0}
+  .cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+  .hero-photo{background:var(--card);padding:10px;border:2px solid rgba(255,255,255,.25)}
+  .hero-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .hero-photo .caption{font-size:.76rem;color:var(--steel);font-style:italic;padding:10px 4px 4px}
+
+  /* sections */
+  section.block{padding:72px 0}
+  .sec-head{border-top:4px solid var(--navy);padding-top:22px;margin-bottom:12px;display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  .sec-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);color:var(--navy)}
+  .sec-head .tag{font-size:.74rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--amber-deep)}
+  .sec-note{color:var(--steel);font-size:1.02rem;max-width:44rem;margin:14px 0 34px}
+
+  /* service ledger */
+  .ledger{list-style:none;border:2px solid var(--navy);background:var(--card)}
+  .ledger li{display:grid;grid-template-columns:96px 1fr;gap:24px;padding:30px 34px;border-bottom:1px solid var(--line);align-items:start}
+  .ledger li:last-child{border-bottom:none}
+  .ledger .num{font-family:'Oswald',sans-serif;font-size:2.1rem;font-weight:700;color:var(--amber)}
+  .ledger h3{font-size:1.35rem;color:var(--navy);margin-bottom:8px}
+  .ledger p{color:var(--steel);font-size:.99rem;max-width:52rem}
+
+  /* financing band */
+  .finance{background:var(--navy-deep);color:#fff}
+  .finance-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .finance .kicker{color:var(--amber)}
+  .finance h2{color:#fff;font-size:clamp(1.7rem,3.6vw,2.5rem);margin-bottom:16px}
+  .finance p{color:#cfdae8;margin-bottom:14px;font-size:1.02rem}
+  .finance .fine{font-size:.85rem;color:#9fb0c4}
+  .finance figure{background:var(--card);padding:10px}
+  .finance img{width:100%;aspect-ratio:16/10;object-fit:cover}
+  .finance .caption{font-size:.76rem;color:var(--steel);font-style:italic;padding:10px 4px 4px}
+  .finance .cta-row{margin-top:24px}
+
+  /* seasons */
+  .seasons-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+  .seasons-grid figure{background:var(--card);border:2px solid var(--navy);padding:10px}
+  .seasons-grid img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .seasons-grid .caption{font-size:.76rem;color:var(--steel);font-style:italic;padding:10px 4px 4px}
+  .seasons-grid h2{font-size:clamp(1.7rem,3.6vw,2.5rem);color:var(--navy);margin-bottom:16px}
+  .seasons-grid p{color:var(--steel);margin-bottom:14px;font-size:1.02rem}
+
+  /* hours */
+  .hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+  .hours-table{width:100%;border-collapse:collapse;background:var(--card);border:2px solid var(--navy)}
+  .hours-table th,.hours-table td{padding:15px 20px;text-align:left;font-size:.96rem}
+  .hours-table th{background:var(--navy);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
+  .hours-table tr:nth-child(even) td{background:#eef1f5}
+  .area-card{background:var(--card);border:2px solid var(--navy);padding:32px}
+  .area-card h3{font-size:1.2rem;color:var(--navy);margin-bottom:12px}
+  .area-card p{color:var(--steel);margin-bottom:14px}
+  .area-card .cta-row{margin-top:20px}
+
+  /* contact */
+  .contact{background:var(--card);border:2px solid var(--navy);box-shadow:8px 8px 0 rgba(13,36,64,.12);padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .contact h2{font-size:clamp(1.7rem,3.4vw,2.4rem);color:var(--navy);margin-bottom:12px}
+  .contact p{color:var(--steel);margin-bottom:10px}
+  .phone-big{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,2.9rem);color:var(--amber-deep);text-decoration:none;display:block;margin:6px 0 18px;letter-spacing:.02em}
+  .phone-big:hover{color:var(--amber)}
+  address{font-style:normal;color:var(--steel)}
+
+  footer{background:var(--navy-deep);color:#9fb0c4;padding:42px 0;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+  footer .fname{font-family:'Oswald',sans-serif;font-size:1.25rem;color:#fff;text-transform:uppercase;margin-bottom:8px}
+  footer a{color:#cfdae8}
+  footer .fine{font-size:.8rem;color:#7e8fa5;max-width:36rem;margin-top:10px}
+
+  @media (max-width:880px){
+    .hero{padding:54px 0 60px}
+    .hero-grid,.finance-grid,.seasons-grid,.hours-grid,.contact{grid-template-columns:1fr}
+    .ledger li{grid-template-columns:1fr;padding:24px}
+    .ledger .num{font-size:1.5rem}
+    nav.sections{display:none}
+    section.block{padding:54px 0}
+    .contact{padding:32px 26px}
   }
 </style>
 </head>
 <body>
 
-<div class="preview-bar">Design preview: this page is a website concept, not a published business site.</div>
+<div class="preview-bar"><strong>Design preview</strong> &nbsp;&middot;&nbsp; Website concept for Fleur De Lis Heating &amp; Air</div>
 
 <header class="site">
-  <div class="wrap header-inner">
-    <div class="brand">
-      <h1>Fleur De Lis Heating &amp; Air</h1>
-      <div class="tag">HVAC contractor serving Gulfport, Mississippi</div>
-    </div>
+  <div class="headrow">
+    <a class="brand" href="#top">Fleur De Lis<small>Heating &amp; Air</small></a>
     <nav class="sections" aria-label="Sections">
       <a href="#services">Services</a>
       <a href="#financing">Financing</a>
       <a href="#hours">Hours</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a class="btn" href="tel:+12282734785">Call (228) 273-4785</a>
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap">
-    <div>
-      <h2>Heating and air service for Gulfport homes</h2>
-      <p>Service on any unit, regular maintenance, and new equipment sales and installation for existing homes and new construction.</p>
-      <div class="rating">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <p>Rated 5.0 stars from 62 Google reviews, as of October 2026</p>
-      </div>
-      <p style="font-size:1.05rem;">Questions about your system? Call (228) 273-4785.</p>
-      <div class="hero-cta">
-        <a class="btn" href="tel:+12282734785">Call (228) 273-4785</a>
-      </div>
-    </div>
-    <figure>
-      <img src="img/technician.jpg" alt="A technician servicing an outdoor heating and air unit">
-      <figcaption>Stock photo: a technician servicing an outdoor unit.</figcaption>
-    </figure>
-  </div>
-</section>
+<main id="top">
 
-<section class="block" id="services">
-  <div class="wrap">
-    <div class="eyebrow">What we do</div>
-    <h2 class="sec">Services</h2>
-    <p class="lede">Straightforward heating and air work for your home. Here is what the team handles.</p>
-    <div class="cards">
-      <div class="card">
-        <span class="icon-chip">SERVICE</span>
-        <h3>Service on Any Unit</h3>
-        <p>Repair and service work on any brand or model of heating and cooling equipment. If it heats or cools your home, we service it.</p>
-      </div>
-      <div class="card">
-        <span class="icon-chip">MAINTENANCE</span>
-        <h3>Maintenance</h3>
-        <p>Routine checkups that keep your system running well and help catch small problems before they turn into bigger ones.</p>
-      </div>
-      <div class="card">
-        <span class="icon-chip">INSTALLATION</span>
-        <h3>New Equipment Sales &amp; Installs</h3>
-        <p>New equipment sales and installation for existing homes and new construction homes.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="block alt" id="financing">
-  <div class="wrap">
-    <div class="finance">
+  <section class="hero">
+    <div class="wrap hero-grid">
       <div>
+        <div class="kicker">HVAC Contractor &middot; Gulfport, Mississippi</div>
+        <h1>Heating and air service for Gulfport homes</h1>
+        <p class="lede">Service on any unit, regular maintenance, and new equipment sales and installation for existing homes and new construction.</p>
+        <div class="rating">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <p>Rated 5.0 stars from 62 Google reviews, as of October 2026</p>
+        </div>
+        <div class="cta-row">
+          <a class="btn" href="tel:+12282734785">Call (228) 273-4785</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/technician.jpg" alt="A technician servicing an outdoor heating and air unit">
+        <p class="caption">Stock photo: a technician servicing an outdoor unit.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Services</h2>
+        <span class="tag">What we do</span>
+      </div>
+      <p class="sec-note">Straightforward heating and air work for your home. Here is what the team handles.</p>
+      <ul class="ledger">
+        <li>
+          <span class="num">01</span>
+          <div>
+            <h3>Service on Any Unit</h3>
+            <p>Repair and service work on any brand or model of heating and cooling equipment. If it heats or cools your home, the team services it.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <div>
+            <h3>Maintenance</h3>
+            <p>Routine checkups that keep your system running well and help catch small problems before they turn into bigger ones.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <div>
+            <h3>New Equipment Sales &amp; Installs</h3>
+            <p>New equipment sales and installation for existing homes and new construction homes.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block finance" id="financing" style="padding:72px 0">
+    <div class="wrap finance-grid">
+      <div>
+        <div class="kicker">Financing</div>
         <h2>0% financing on new Trane equipment</h2>
         <p>Ask about 0% financing on new Trane equipment purchases. It is available with approved credit.</p>
         <p class="fine">Call to ask whether financing fits your project.</p>
-        <a class="btn" href="tel:+12282734785">Call (228) 273-4785</a>
+        <div class="cta-row">
+          <a class="btn" href="tel:+12282734785">Call (228) 273-4785</a>
+        </div>
       </div>
-      <figure class="light" style="margin:0;">
+      <figure>
         <img src="img/outdoor-unit.webp" alt="An outdoor condenser unit installed beside a home">
-        <figcaption style="color:#aebdce;">Stock photo: an outdoor condenser unit beside a home.</figcaption>
+        <p class="caption">Stock photo: an outdoor condenser unit beside a home.</p>
       </figure>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="block">
-  <div class="wrap">
-    <div class="eyebrow">A comfortable home</div>
-    <h2 class="sec">Built for Mississippi weather</h2>
-    <p class="lede">Gulf Coast summers are long and humid. A well kept system keeps your home cool and steady through the season.</p>
-    <div class="gallery" style="grid-template-columns:1fr">
-      <figure class="light">
-        <img src="img/thermostat.jpg" alt="Close-up of a home thermostat dial on a wall">
-        <figcaption>Stock photo: close-up of a home thermostat dial.</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="block alt" id="hours">
-  <div class="wrap">
-    <div class="eyebrow">When we are open</div>
-    <h2 class="sec">Hours</h2>
-    <p class="lede">Call during office hours and we will take care of the rest.</p>
-    <div class="two-col">
-      <table class="hours-table">
-        <thead><tr><th>Day</th><th>Hours</th></tr></thead>
-        <tbody>
-          <tr><td>Monday-Friday</td><td>8:00am-5:00pm</td></tr>
-          <tr><td>Saturday</td><td>8:00am-4:00pm</td></tr>
-          <tr><td>Sunday</td><td>Closed</td></tr>
-        </tbody>
-      </table>
-      <div>
-        <h3 style="margin-bottom:10px;">Service area</h3>
-        <p>Gulfport, Mississippi.</p>
-        <p style="margin-top:12px;">Call to confirm we cover your address.</p>
-        <p style="margin-top:18px;"><a class="btn" href="tel:+12282734785">Call (228) 273-4785</a></p>
+  <section class="block">
+    <div class="wrap">
+      <div class="seasons-grid">
+        <figure>
+          <img src="img/thermostat.jpg" alt="Close-up of a home thermostat dial on a wall">
+          <p class="caption">Stock photo: close-up of a home thermostat dial.</p>
+        </figure>
+        <div>
+          <div class="tag" style="font-size:.74rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--amber-deep);margin-bottom:14px">Mississippi weather</div>
+          <h2>Ready for the long summer</h2>
+          <p>Gulf Coast summers are long. Regular maintenance keeps the system running well through the season.</p>
+          <p>Questions about your system? Call <a href="tel:+12282734785">(228) 273-4785</a>.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="block" id="contact">
-  <div class="wrap">
-    <div class="eyebrow">Get in touch</div>
-    <h2 class="sec">Contact</h2>
-    <p class="lede">Questions about your system? Call (228) 273-4785.</p>
-    <div class="contact-box">
-      <a class="phone-big" href="tel:+12282734785">(228) 273-4785</a>
-      <address>
-        2601 15th Ave<br>
-        Gulfport, MS
-      </address>
-      <p style="margin-top:10px;"><a class="btn" href="tel:+12282734785">Call</a></p>
+  <section class="block" id="hours" style="padding-top:20px">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Hours</h2>
+        <span class="tag">When we are open</span>
+      </div>
+      <p class="sec-note">Call during office hours.</p>
+      <div class="hours-grid">
+        <table class="hours-table">
+          <thead><tr><th>Day</th><th>Hours</th></tr></thead>
+          <tbody>
+            <tr><td>Monday - Friday</td><td>8:00am - 5:00pm</td></tr>
+            <tr><td>Saturday</td><td>8:00am - 4:00pm</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <div class="area-card">
+          <h3>Service area</h3>
+          <p>Gulfport, Mississippi.</p>
+          <p>Call to confirm coverage for your address.</p>
+          <div class="cta-row">
+            <a class="btn navy" href="tel:+12282734785">Call (228) 273-4785</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="block" id="contact" style="padding-top:20px">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <div class="tag" style="font-size:.74rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--amber-deep);margin-bottom:14px">Get in touch</div>
+          <h2>Contact</h2>
+          <p>Questions about your system? Call the number below.</p>
+          <a class="phone-big" href="tel:+12282734785">(228) 273-4785</a>
+          <address>2601 15th Ave<br>Gulfport, MS</address>
+        </div>
+        <div>
+          <div class="cta-row">
+            <a class="btn" href="tel:+12282734785">Call now</a>
+          </div>
+          <p style="margin-top:18px;font-size:.92rem;color:var(--steel)">Monday through Friday, 8:00am to 5:00pm.<br>Saturday, 8:00am to 4:00pm. Closed Sunday.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <footer>
   <div class="wrap">
-    <p><strong style="color:#fff;">Fleur De Lis Heating &amp; Air</strong> · Website concept</p>
+    <div>
+      <div class="fname">Fleur De Lis Heating &amp; Air</div>
+      <div>2601 15th Ave, Gulfport, MS &middot; <a href="tel:+12282734785">(228) 273-4785</a></div>
+    </div>
     <p class="fine">This page is a design concept created by <a href="https://freightfolio.net">Freightfolio</a>. It is not the business's official website and does not represent Fleur De Lis Heating &amp; Air.</p>
   </div>
 </footer>
