@@ -1,0 +1,7 @@
+filename | source URL | real|stock
+---
+hero-manicure.jpg | https://images.pexels.com/photos/3997384/pexels-photo-3997384.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop | stock
+pedicure-service.jpg | https://images.pexels.com/photos/34930127/pexels-photo-34930127/free-photo-of-close-up-of-professional-pedicure-session.jpeg?h=1000&w=1500&fit=crop | stock
+nail-art-detail.jpg | https://images.pexels.com/photos/7066298/pexels-photo-7066298.jpeg?auto=compress&cs=tinysrgb&w=1200&fit=crop&h=630 | stock
+nail-station.jpg | https://images.pexels.com/photos/7990100/pexels-photo-7990100.jpeg?auto=compress&cs=tinysrgb&w=600 | stock
+manicure-session.jpg | https://images.pexels.com/photos/30294773/pexels-photo-30294773/free-photo-of-professional-manicure-in-modern-salon-setting.png?w=600 | stock
