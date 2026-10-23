@@ -48,3 +48,23 @@ File: img/spa-room.jpg
   Source: https://images.pexels.com/photos/17640381/pexels-photo-17640381.jpeg?auto=compress&cs=tinysrgb&w=1600
   Found via: https://www.pexels.com/search/spa%20interior/
   License: Pexels License (https://www.pexels.com/license/)
+
+PHOTO ABSENCE VERIFICATION (2026-10-23, Rebuild run31):
+The QA run2 photo_provenance HIGH defect required either real photos of Everlasting
+Skincare or documented evidence that none exist. Verified with a live browser 2026-10-23:
+- everlastingskincare.com: unreachable from this environment; zero Google-indexed pages
+  for the domain; no evidence it is or was the spa's site. The spa's Google business
+  profile lists no website. A Groupon merchant listing once pointed to
+  everlastingskincare-hub.com, which no longer resolves (DNS failure).
+- Groupon deal page (groupon.com/deals/everlasting-skin-care-4): Photos tab has exactly
+  1 deal image (generic stock-style facial photo, no branding/interior/staff); Customer
+  Photos tab has 2 close-up customer lash selfies. No usable real business photos.
+- Google Maps listing ("Everlasting Skincare", 3030 N Hancock Ave, Colorado Springs,
+  4.4 stars, 75 reviews): gallery holds exactly 3 photos - (a) owner-uploaded generic
+  white-orchid stock-style image (only photo under "By owner"), (b) one Dec 2018 customer
+  review photo (close-up of lash work), (c) a Street View house exterior. No interior,
+  staff, or treatment-room photos exist.
+- Research agent (2026-10-23) found no social profiles and no real business website
+  (website field is an auto-generated ivof.com directory page).
+CONCLUSION: no usable real photos of the business exist publicly. Labeled Pexels stock
+is retained per Mike's fallback rule (honestly labeled, never presented as the business).
