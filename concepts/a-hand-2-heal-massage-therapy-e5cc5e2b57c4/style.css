@@ -1,0 +1,136 @@
+/* A Hand 2 Heal Massage Therapy: coastal wellness editorial
+   Palette: Deep Water #1F3A3D / Sea Glass #7FB5A8 / Sand #EFE6D4 / Driftwood #6B5F4F
+   Type: Fraunces (display) + Public Sans (text) */
+
+:root{
+  --deep:#1F3A3D;
+  --glass:#7FB5A8;
+  --sand:#EFE6D4;
+  --sand-deep:#E5D9C2;
+  --drift:#6B5F4F;
+  --ink:#22302f;
+  --paper:#F7F2E7;
+  --rule:rgba(31,58,61,.22);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--sand);
+  color:var(--ink);
+  font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--deep)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
+
+/* ---------- disclosure + header ---------- */
+.disclosure{
+  background:var(--deep);color:var(--sand);
+  font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;
+  text-align:center;padding:10px 16px;
+}
+.site-head{
+  display:flex;align-items:baseline;justify-content:space-between;gap:24px;
+  padding:26px 0 18px;border-bottom:1px solid var(--rule);flex-wrap:wrap;
+}
+.brand{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(24px,3vw,32px);
+  color:var(--deep);text-decoration:none;line-height:1.1;
+  font-variation-settings:"opsz" 144,"SOFT" 60,"WONK" 1;}
+.brand small{display:block;font-family:"Public Sans",sans-serif;font-size:12px;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--drift);margin-top:6px;font-weight:600}
+nav.main{display:flex;gap:clamp(12px,2.4vw,30px);flex-wrap:wrap}
+nav.main a{color:var(--deep);text-decoration:none;font-size:15px;font-weight:600;
+  letter-spacing:.02em;border-bottom:2px solid transparent;padding-bottom:4px}
+nav.main a:hover,nav.main a[aria-current="page"]{border-bottom-color:var(--glass)}
+
+/* ---------- editorial type ---------- */
+.display{font-family:"Fraunces",serif;color:var(--deep);line-height:1.04;
+  font-weight:560;font-variation-settings:"opsz" 144,"SOFT" 40,"WONK" 1;}
+.eyebrow{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--drift);font-weight:700;margin-bottom:18px}
+.lede{font-size:clamp(18px,2.2vw,22px);line-height:1.6;color:var(--deep);max-width:56ch}
+.prose p{margin:0 0 1.1em;max-width:62ch}
+.prose p:last-child{margin-bottom:0}
+.accent{color:var(--drift)}
+.rule{border:0;border-top:1px solid var(--rule);margin:34px 0}
+
+/* ---------- layout primitives ---------- */
+.spread{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);
+  align-items:start;margin:clamp(48px,7vw,96px) 0}
+.spread.flip>.text{order:1}
+.spread.flip>.media{order:2}
+.media{position:relative}
+.media.offset{margin-top:clamp(24px,4vw,64px)}
+.media img{border-radius:3px;box-shadow:0 24px 60px -28px rgba(31,58,61,.45)}
+.media .cap{font-size:13px;color:var(--drift);margin-top:10px;font-style:italic}
+.media .cap .stock{font-style:normal;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  border:1px solid var(--rule);padding:2px 8px;border-radius:20px;margin-right:8px;color:var(--drift)}
+.text .display{font-size:clamp(34px,4.6vw,58px);margin-bottom:22px}
+.page-hero{margin:clamp(44px,6vw,84px) 0 clamp(36px,5vw,64px)}
+.page-hero .display{font-size:clamp(44px,7vw,88px);max-width:12ch}
+.page-hero .lede{margin-top:20px}
+
+/* pull quote */
+.pull{border-left:4px solid var(--glass);padding:6px 0 6px 26px;margin:30px 0}
+.pull p{font-family:"Fraunces",serif;font-size:clamp(20px,2.6vw,27px);
+  line-height:1.4;color:var(--deep);font-variation-settings:"opsz" 40,"SOFT" 50}
+.pull cite{display:block;font-family:"Public Sans",sans-serif;font-size:13px;font-style:normal;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--drift);margin-top:12px}
+
+/* facts strip */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);
+  border:1px solid var(--rule);margin:clamp(40px,6vw,72px) 0}
+.facts>div{background:var(--paper);padding:28px 26px}
+.facts h3{font-family:"Fraunces",serif;font-size:21px;color:var(--deep);margin-bottom:8px;font-weight:600}
+.facts p{font-size:15.5px;color:var(--ink)}
+
+/* therapist staggered blocks */
+.therapist{position:relative;margin:clamp(40px,6vw,80px) 0;padding:clamp(28px,4vw,48px) 0;
+  border-top:1px solid var(--rule)}
+.therapist .lic{font-family:"Fraunces",serif;font-weight:700;line-height:1;
+  font-size:clamp(56px,9vw,120px);color:var(--glass);opacity:.5;
+  font-variation-settings:"opsz" 144,"SOFT" 0}
+.therapist h2{font-family:"Fraunces",serif;font-size:clamp(28px,3.6vw,44px);
+  color:var(--deep);margin:-.35em 0 10px;font-weight:600}
+.therapist p{max-width:58ch}
+.therapist.right{text-align:right}
+.therapist.right p{margin-left:auto}
+.therapist.center{max-width:760px;margin-left:auto;margin-right:auto;text-align:center}
+.staff-note{font-size:14.5px;color:var(--drift);font-style:italic;max-width:64ch}
+
+/* hours */
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:10px 40px;max-width:560px}
+.hours div{display:flex;justify-content:space-between;border-bottom:1px dotted var(--rule);padding:8px 0}
+.hours dt{font-weight:600;color:var(--deep)}
+
+/* call strip */
+.call-strip{background:var(--deep);color:var(--sand);margin:clamp(56px,8vw,110px) 0 0;
+  padding:clamp(48px,7vw,88px) 0;text-align:center}
+.call-strip .eyebrow{color:var(--glass)}
+.call-strip .display{color:var(--sand);font-size:clamp(32px,5.4vw,64px);margin-bottom:14px}
+.call-strip .phone{display:inline-block;margin-top:18px;font-family:"Fraunces",serif;
+  font-size:clamp(30px,4.6vw,52px);color:var(--sand);text-decoration:none;
+  border-bottom:3px solid var(--glass);padding-bottom:6px}
+.call-strip .phone:hover{color:#fff}
+.call-strip p.sub{color:rgba(239,230,212,.78);max-width:52ch;margin:18px auto 0;font-size:16px}
+
+footer.site{padding:36px 0 60px;font-size:14px;color:var(--drift)}
+footer.site .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer.site strong{color:var(--deep)}
+
+.band{background:var(--paper);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  padding:clamp(36px,5vw,60px) 0}
+
+@media(max-width:860px){
+  .spread{grid-template-columns:1fr}
+  .spread.flip>.text{order:0}
+  .spread.flip>.media{order:0}
+  .media.offset{margin-top:0}
+  .facts{grid-template-columns:1fr}
+  .therapist.right{text-align:left}
+  .hours{grid-template-columns:1fr}
+  .hours div{max-width:420px}
+  .site-head{flex-direction:column;align-items:flex-start;gap:14px}
+}

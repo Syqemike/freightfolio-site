@@ -1,0 +1,20 @@
+Photo provenance for Specialized Bodywork of Orlando concept site (wd-batch32).
+All images are STOCK PHOTOS from Pexels (free license). No real business photos were available.
+Real-photo attempt: image search for "Specialized Bodywork Orlando massage" returned only
+generic/other-business images (Four Seasons Orlando spa, Bodywork & Massage Therapy Art Orlando,
+Spine & Rehabilitation Centers, Hilton Orlando eforea spa, vacation concierge services), none
+verifiable as this business. Those were NOT used. All photos below are labeled "Stock photo" on the site.
+
+session.jpg        - Stock photo. Pexels photo 3865796. Close-up of a massage therapy session on a
+                     client's back, therapist's hands at work.
+                     Source: https://www.pexels.com/uk-ua/photo/161477/
+treatment-room.jpg - Stock photo. Pexels photo 3760270. Close-up of a therapist massaging a client's
+                     scalp and neck during a session.
+                     Source: https://www.pexels.com/photo/3760270/
+back-technique.jpg - Stock photo. Pexels photo 6628605. Therapist working on a client's back.
+                     Source: https://www.pexels.com/photo/6628689/
+technique-detail.jpg - Stock photo. Pexels photo 6560287. Massage technique detail.
+studio-interior.jpg  - Stock photo. Pexels photo 3673941. Woman resting in a calm spa lounge setting.
+                     Source: https://www.pexels.com/photo/3673941/
+towels-candle.jpg  - Stock photo. Pexels photo 6628599. Massage studio scene with therapist,
+                     treatment table, rolled towels near a window.

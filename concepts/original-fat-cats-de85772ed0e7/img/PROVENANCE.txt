@@ -1,0 +1,39 @@
+PHOTO PROVENANCE — Original Fat Cats concept site (build original-fat-cats-de85772ed0e7)
+Build date: 2026-10-23
+
+REAL PHOTOS: none. A targeted image search for this business ("Original Fat Cats Fort Lauderdale bar", "Original Fat Cats Himmarshee") returned only unrelated results (Chicago's Fat Cat, NYC's Fat Black Pussycat, cat photos, unverifiable Google place thumbnails). The business's only web presence is its Facebook page, which could not be scraped in this environment. Per the design brief fallback, ALL photos below are STOCK from Pexels, and every on-page caption includes the words "Stock photo".
+
+1. img/hero-bar.jpg — STOCK photo
+   Source: https://images.pexels.com/photos/1872888/pexels-photo-1872888.jpeg
+   Found via: https://www.pexels.com/search/dive-bar-interior/ (alt: "Warm and inviting pub interior featuring a wooden bar and hanging wine glasses")
+   Depicts: a warm pub interior with a wooden bar and hanging wine glasses. Not the actual business.
+
+2. img/live-band.jpg — STOCK photo
+   Source: https://images.pexels.com/photos/16118368/pexels-photo-16118368.jpeg
+   Found via: https://www.pexels.com/search/live-rock-band-concert/ (alt: "Live rock band performing on stage with vibrant red lighting")
+   Depicts: a rock band playing on stage under red lights with a crowd. Not this bar's actual stage.
+
+3. img/beer-taps.jpg — STOCK photo
+   Source: https://images.pexels.com/photos/5530263/pexels-photo-5530263.jpeg
+   Found via: https://www.pexels.com/search/beer-taps-bar/ (alt: "Artistic close-up of beer taps in a moody bar setting, capturing warm lighting and texture")
+   Depicts: a close-up of beer taps in a dim bar. Not the bar's actual taps.
+
+4. img/cheesesteak.jpg — STOCK photo
+   Source: https://images.pexels.com/photos/37624172/pexels-photo-37624172.jpeg
+   Found via: https://www.pexels.com/search/philly-cheesesteak-sandwich/ (alt: "A mouthwatering close-up of a cheese steak sub with melted cheese, onions")
+   Depicts: a cheesesteak sub with melted cheese and onions. Not the bar's actual sandwich.
+
+5. img/burger.jpg — STOCK photo
+   Source: https://images.pexels.com/photos/33858065/pexels-photo-33858065.jpeg
+   Found via: https://www.pexels.com/search/cheeseburger-grill/ (alt: "Mouthwatering cheeseburger with fresh ingredients grilling over open flames")
+   Depicts: a cheeseburger grilling over open flames. Not the bar's actual burger.
+
+6. img/wings.jpg — STOCK photo
+   Source: https://images.pexels.com/photos/16976648/pexels-photo-16976648.jpeg
+   Found via: https://www.pexels.com/search/chicken-wings-plate/ (alt: "Top view of flavorful spicy chicken wings served on a blue plate")
+   Depicts: a plate of spicy chicken wings. Not the bar's actual wings.
+
+7. img/night-exterior.jpg — STOCK photo
+   Source: https://images.pexels.com/photos/39974053/pexels-photo-39974053.jpeg
+   Found via: https://www.pexels.com/search/bar-night-exterior/ (alt: "A warm and inviting pub exterior at night, showcasing signage and illuminated storefront")
+   Depicts: a pub storefront at night. Not the actual 320 Himmarshee St building.

@@ -1,0 +1,46 @@
+PHOTO PROVENANCE - Espresso 4 U concept site
+
+REAL BUSINESS PHOTOS (verified as the Espresso 4 U stand, 1413 72nd St E, Tacoma WA):
+
+stand-night.jpg (real)
+  Source URL: https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/crm/tacoma/Heading_ED7B5B32-D7C2-0EED-25F2228ED63FB218-ed7b593fc965fde_ed7b67b7-cf63-fb8d-15bd6fe604c2eeb0.png
+  Source page: https://www.visitpiercecounty.com/listing/espresso-4u/2161/
+  Depicts: Espresso 4 U drive-through stand at night, lit awning and windows.
+
+stand-day.jpg (real)
+  Source URL: https://lh3.googleusercontent.com/p/AF1QipObnLH8XfF1SpeyY9xN_YRi9BYiiG_xuT-9ECzY=s700
+  Source page: https://eatagram.es/est-espresso-4-u-r12683092-tacoma-united-states (Google place photos for this business)
+  Depicts: Espresso 4 U stand in daylight with cars in the drive-thru lane, viewed from a car window.
+
+stand-window.jpg (real)
+  Source URL: https://pub-ba1a74be17d7442a9f2541946eb9510e.r2.dev/shops/b0e6a996-1504-4893-b9e0-e27d106d29d5/2.jpg
+  Source page: https://joe.coffee/locations/wa/tacoma/espresso-4-u-tacoma-d2f86dce/ (Joe app listing for this business)
+  Depicts: Espresso 4 U stand awning and service window with a customer at the window.
+
+stand-parking.jpg (real)
+  Source URL: https://pub-ba1a74be17d7442a9f2541946eb9510e.r2.dev/shops/b0e6a996-1504-4893-b9e0-e27d106d29d5/1.jpg
+  Source page: https://joe.coffee/locations/wa/tacoma/espresso-4-u-tacoma-d2f86dce/ (Joe app listing for this business)
+  Depicts: Espresso 4 U stand from the parking lot, cars at both service windows.
+
+REJECTED CANDIDATES:
+  A yellow/red building labeled "ESPRESSO" (Google photos) - different building, not this stand. Discarded.
+  "Espresso Avenue" photo (Yelp) - different business entirely. Discarded.
+
+STOCK PHOTOS (labeled "Stock photo" in captions on the site):
+
+stock-espresso.jpg (stock)
+  Source URL: https://images.pexels.com/photos/7487359/pexels-photo-7487359.jpeg
+  Source page: https://www.pexels.com/ja-jp/photo/7487359/
+  Depicts: espresso extracting into a small pitcher. Stock photo, not this business.
+
+stock-mocha.jpg (stock)
+  Source URL: https://images.pexels.com/photos/8444426/pexels-photo-8444426.jpeg
+  Source page: https://foodiepundit.com/news/sunshine-coffee-miami-nobe-opening (photo via Pexels)
+  Depicts: iced mocha drink in a glass. Stock photo, not this business.
+
+stock-latte.jpg (stock)
+  Source URL: https://images.pexels.com/photos/9281134/pexels-photo-9281134.jpeg
+  Source page: https://www.pexels.com/uk-ua/photo/9281135/
+  Depicts: milk poured into iced coffee. Stock photo, not this business.
+
+All images compressed with PIL (RGB, max width 1600, JPEG quality 80). Every file under 5 MB.

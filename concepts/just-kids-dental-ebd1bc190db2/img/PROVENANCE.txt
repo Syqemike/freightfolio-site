@@ -1,0 +1,32 @@
+Just Kids Dental concept site - image provenance
+All photos are STOCK photos from Pexels (not photos of the actual practice).
+Each photo is captioned "Stock photo" on the site.
+
+hero.jpg
+  Source: https://images.pexels.com/photos/7800568/pexels-photo-7800568.jpeg
+  Pexels page: https://www.pexels.com/search/ (query "child at dentist checkup pexels")
+  Depicts: young girl in a dental chair during a checkup with a dental professional. Stock photo.
+
+checkup.jpg
+  Source: https://images.pexels.com/photos/7800560/pexels-photo-7800560.jpeg
+  Depicts: pediatric dental visit scene. Stock photo.
+
+smile.jpg
+  Source: https://images.pexels.com/photos/7800558/pexels-photo-7800558.jpeg
+  Depicts: pediatric dental visit scene. Stock photo.
+
+office.jpg
+  Source: https://images.pexels.com/photos/6502555/pexels-photo-6502555.jpeg
+  Depicts: child in a dental chair receiving treatment from a dental professional (procedure scene). Stock photo.
+
+tools.jpg
+  Source: https://images.pexels.com/photos/4185330/pexels-photo-4185330.jpeg
+  Depicts: dental care theme. Stock photo.
+
+visit.jpg
+  Source: https://images.pexels.com/photos/28357241/pexels-photo-28357241.jpeg
+  Depicts: dental visit theme. Stock photo.
+
+Real-photo search (image-search "Just Kids Dental Kenner") surfaced only images of
+other similarly named practices (Just Kids Dental Alaska, Just 4 kiDDS Dentistry)
+and one clinic-listing image of uncertain provenance. Per the brief, none were used.
