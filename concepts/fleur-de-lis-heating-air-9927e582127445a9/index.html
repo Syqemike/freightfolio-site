@@ -8,119 +8,132 @@
 <meta name="description" content="Fleur De Lis Heating & Air in Gulfport, Mississippi. Heating and air service on any unit, maintenance, and new equipment sales and installation. Call (228) 273-4785.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#0d2440; --navy-deep:#081a30; --paper:#f4f6f9; --card:#ffffff;
-    --amber:#e8861c; --amber-deep:#c66f10; --steel:#4d5c6e; --ink:#1b2a3d;
-    --line:#d7dde6;
+    --deep:#0e2a3a; --deep-ink:#0a1f2c; --sand:#faf5ec; --sand-deep:#f1e8d7;
+    --card:#ffffff; --copper:#c2702d; --copper-deep:#a05a20;
+    --steel:#55606c; --ink:#22303c; --line:#e2d6bf;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
-  h1,h2,h3,.cond{font-family:'Oswald',sans-serif;font-weight:600;line-height:1.15;letter-spacing:.01em;text-transform:uppercase}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--sand);line-height:1.7;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Zilla Slab',Georgia,serif;font-weight:700;line-height:1.12;letter-spacing:0;color:var(--deep)}
   img{max-width:100%;display:block}
   a{color:#1f6fd6}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 26px}
 
   /* disclosure */
-  .preview-bar{background:var(--navy-deep);color:#b9c7da;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:9px 14px}
-  .preview-bar strong{color:var(--amber);font-weight:700}
+  .preview-bar{background:var(--deep-ink);color:#c8bda6;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:9px 14px}
+  .preview-bar strong{color:var(--copper);font-weight:700}
 
   /* header */
-  header.site{background:var(--card);border-bottom:4px solid var(--navy);position:sticky;top:0;z-index:50}
-  .headrow{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px 24px;max-width:1120px;margin:0 auto}
-  .brand{font-family:'Oswald',sans-serif;font-weight:700;font-size:1.5rem;color:var(--navy);text-decoration:none;text-transform:uppercase;letter-spacing:.02em;line-height:1}
-  .brand small{display:block;font-family:'Inter',sans-serif;font-weight:600;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--amber-deep);margin-top:4px}
-  nav.sections{display:flex;gap:24px;flex-wrap:wrap}
-  nav.sections a{text-decoration:none;color:var(--navy);font-weight:600;font-size:.88rem;letter-spacing:.04em}
-  nav.sections a:hover{color:var(--amber-deep)}
-  .btn{display:inline-block;background:var(--amber);color:#fff!important;font-weight:700;text-decoration:none;font-size:.95rem;letter-spacing:.05em;padding:14px 28px;border:2px solid var(--navy-deep);box-shadow:4px 4px 0 var(--navy-deep);transition:transform .15s ease, box-shadow .15s ease}
-  .btn:hover{background:var(--amber-deep);transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--navy-deep)}
-  .btn.navy{background:var(--navy)}
+  header.site{background:var(--sand);border-bottom:3px solid var(--deep);position:sticky;top:0;z-index:50}
+  .headrow{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 26px;max-width:1140px;margin:0 auto}
+  .brand{font-family:'Zilla Slab',Georgia,serif;font-weight:700;font-size:1.55rem;color:var(--deep);text-decoration:none;line-height:1.05}
+  .brand small{display:block;font-family:'Inter',sans-serif;font-weight:700;font-size:.64rem;letter-spacing:.3em;text-transform:uppercase;color:var(--copper);margin-top:5px}
+  nav.sections{display:flex;gap:26px;flex-wrap:wrap}
+  nav.sections a{text-decoration:none;color:var(--deep);font-weight:600;font-size:.88rem;letter-spacing:.03em;border-bottom:2px solid transparent;padding-bottom:2px}
+  nav.sections a:hover{color:var(--copper-deep);border-bottom-color:var(--copper)}
+  .btn{display:inline-block;background:var(--copper);color:#fff!important;font-weight:700;text-decoration:none;font-size:.95rem;letter-spacing:.04em;padding:14px 30px;border-radius:3px;transition:background .15s ease}
+  .btn:hover{background:var(--copper-deep)}
+  .btn.ghost{background:transparent;color:var(--deep)!important;border:2px solid var(--deep)}
+  .btn.ghost:hover{background:var(--deep);color:#fff!important}
 
   /* hero */
-  .hero{background:var(--navy);color:#fff;padding:72px 0 80px}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
-  .kicker{font-size:.76rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--amber);margin-bottom:18px}
-  .hero h1{font-size:clamp(2.4rem,5.2vw,4rem);color:#fff;margin-bottom:18px}
-  .hero p.lede{color:#cfdae8;font-size:1.08rem;margin-bottom:14px;max-width:36rem}
-  .rating{display:flex;align-items:center;gap:14px;margin:22px 0 28px}
-  .rating .stars{color:var(--amber);font-size:1.35rem;letter-spacing:3px}
-  .rating p{font-size:.9rem;color:#e4ebf4;margin:0}
+  .hero{background:var(--deep);color:#fff;padding:84px 0 90px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--copper)}
+  .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center;position:relative}
+  .kicker{font-size:.76rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--copper);margin-bottom:20px}
+  .hero h1{font-size:clamp(2.5rem,5.4vw,4.1rem);color:#fff;margin-bottom:20px}
+  .hero h1 em{font-style:normal;color:var(--copper)}
+  .hero p.lede{color:#d8cfbd;font-size:1.08rem;margin-bottom:16px;max-width:37rem}
+  .rating{display:flex;align-items:center;gap:14px;margin:24px 0 30px}
+  .rating .stars{color:var(--copper);font-size:1.4rem;letter-spacing:3px}
+  .rating p{font-size:.92rem;color:#e8e0cd;margin:0}
   .cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
-  .hero-photo{background:var(--card);padding:10px;border:2px solid rgba(255,255,255,.25)}
-  .hero-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .hero-note{margin-top:16px;font-size:.9rem;color:#b7ab90}
+  .hero-photo{background:var(--sand);padding:12px;border-radius:3px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+  .hero-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
   .hero-photo .caption{font-size:.76rem;color:var(--steel);font-style:italic;padding:10px 4px 4px}
 
   /* sections */
-  section.block{padding:72px 0}
-  .sec-head{border-top:4px solid var(--navy);padding-top:22px;margin-bottom:12px;display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap}
-  .sec-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);color:var(--navy)}
-  .sec-head .tag{font-size:.74rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--amber-deep)}
-  .sec-note{color:var(--steel);font-size:1.02rem;max-width:44rem;margin:14px 0 34px}
+  section.block{padding:78px 0}
+  .eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--copper);margin-bottom:14px}
+  .sec-head h2{font-size:clamp(1.9rem,3.8vw,2.7rem);margin-bottom:12px}
+  .sec-note{color:var(--steel);font-size:1.04rem;max-width:46rem;margin:0 0 38px}
 
-  /* service ledger */
-  .ledger{list-style:none;border:2px solid var(--navy);background:var(--card)}
-  .ledger li{display:grid;grid-template-columns:96px 1fr;gap:24px;padding:30px 34px;border-bottom:1px solid var(--line);align-items:start}
-  .ledger li:last-child{border-bottom:none}
-  .ledger .num{font-family:'Oswald',sans-serif;font-size:2.1rem;font-weight:700;color:var(--amber)}
-  .ledger h3{font-size:1.35rem;color:var(--navy);margin-bottom:8px}
-  .ledger p{color:var(--steel);font-size:.99rem;max-width:52rem}
+  /* services: work-order rows */
+  .jobs{list-style:none;display:grid;gap:22px}
+  .jobs li{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--copper);border-radius:3px;padding:30px 34px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;box-shadow:0 6px 18px rgba(14,42,58,.06)}
+  .jobs .chip{font-family:'Zilla Slab',Georgia,serif;font-weight:700;font-size:1.05rem;color:#fff;background:var(--deep);border-radius:50%;width:58px;height:58px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .jobs h3{font-size:1.45rem;margin-bottom:8px}
+  .jobs p{color:var(--steel);font-size:1rem;max-width:54rem}
 
-  /* financing band */
-  .finance{background:var(--navy-deep);color:#fff}
-  .finance-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-  .finance .kicker{color:var(--amber)}
-  .finance h2{color:#fff;font-size:clamp(1.7rem,3.6vw,2.5rem);margin-bottom:16px}
-  .finance p{color:#cfdae8;margin-bottom:14px;font-size:1.02rem}
-  .finance .fine{font-size:.85rem;color:#9fb0c4}
-  .finance figure{background:var(--card);padding:10px}
-  .finance img{width:100%;aspect-ratio:16/10;object-fit:cover}
-  .finance .caption{font-size:.76rem;color:var(--steel);font-style:italic;padding:10px 4px 4px}
-  .finance .cta-row{margin-top:24px}
+  /* summer band */
+  .summer{background:var(--deep);color:#fff}
+  .summer .eyebrow{color:var(--copper)}
+  .summer h2{color:#fff;font-size:clamp(1.9rem,3.8vw,2.7rem);margin-bottom:14px}
+  .summer .lede{color:#d8cfbd;font-size:1.06rem;max-width:48rem;margin-bottom:40px}
+  .heat-list{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .heat-list li{background:rgba(255,255,255,.05);border:1px solid rgba(194,112,45,.55);border-radius:3px;padding:28px 26px}
+  .heat-list .n{font-family:'Zilla Slab',Georgia,serif;font-weight:700;font-size:2rem;color:var(--copper);display:block;margin-bottom:10px}
+  .heat-list h3{color:#fff;font-size:1.25rem;margin-bottom:8px}
+  .heat-list p{color:#cfc4ab;font-size:.97rem}
+  .summer-cta{margin-top:38px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .summer-cta span{color:#b7ab90;font-size:.95rem}
 
-  /* seasons */
-  .seasons-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
-  .seasons-grid figure{background:var(--card);border:2px solid var(--navy);padding:10px}
-  .seasons-grid img{width:100%;aspect-ratio:4/3;object-fit:cover}
-  .seasons-grid .caption{font-size:.76rem;color:var(--steel);font-style:italic;padding:10px 4px 4px}
-  .seasons-grid h2{font-size:clamp(1.7rem,3.6vw,2.5rem);color:var(--navy);margin-bottom:16px}
-  .seasons-grid p{color:var(--steel);margin-bottom:14px;font-size:1.02rem}
+  /* financing */
+  .finance-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+  .finance-grid h2{font-size:clamp(1.9rem,3.8vw,2.6rem);margin-bottom:16px}
+  .finance-grid p{color:var(--steel);margin-bottom:14px;font-size:1.02rem}
+  .finance-grid .fine{font-size:.88rem;color:var(--steel)}
+  .finance-grid .cta-row{margin-top:24px}
+  .finance-grid figure{background:var(--card);padding:12px;border:1px solid var(--line);border-radius:3px;box-shadow:0 10px 26px rgba(14,42,58,.08)}
+  .finance-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:2px}
+  .finance-grid .caption{font-size:.76rem;color:var(--steel);font-style:italic;padding:10px 4px 4px}
+
+  /* thermostat strip */
+  .strip-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:54px;align-items:center}
+  .strip-grid figure{background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+  .strip-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
+  .strip-grid .caption{font-size:.76rem;color:var(--steel);font-style:italic;padding:10px 4px 4px}
+  .strip-grid h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:14px}
+  .strip-grid p{color:var(--steel);margin-bottom:12px;font-size:1.02rem}
 
   /* hours */
-  .hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
-  .hours-table{width:100%;border-collapse:collapse;background:var(--card);border:2px solid var(--navy)}
-  .hours-table th,.hours-table td{padding:15px 20px;text-align:left;font-size:.96rem}
-  .hours-table th{background:var(--navy);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
-  .hours-table tr:nth-child(even) td{background:#eef1f5}
-  .area-card{background:var(--card);border:2px solid var(--navy);padding:32px}
-  .area-card h3{font-size:1.2rem;color:var(--navy);margin-bottom:12px}
-  .area-card p{color:var(--steel);margin-bottom:14px}
-  .area-card .cta-row{margin-top:20px}
+  .hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+  .hours-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+  .hours-table th,.hours-table td{padding:16px 22px;text-align:left;font-size:.97rem}
+  .hours-table th{background:var(--deep);color:#fff;font-family:'Zilla Slab',Georgia,serif;font-weight:600;letter-spacing:.06em;font-size:.92rem}
+  .hours-table tr:nth-child(even) td{background:var(--sand-deep)}
+  .area-card{background:var(--deep);color:#fff;border-radius:3px;padding:36px}
+  .area-card h3{color:#fff;font-size:1.35rem;margin-bottom:12px}
+  .area-card p{color:#cfc4ab;margin-bottom:12px}
+  .area-card .cta-row{margin-top:22px}
 
   /* contact */
-  .contact{background:var(--card);border:2px solid var(--navy);box-shadow:8px 8px 0 rgba(13,36,64,.12);padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-  .contact h2{font-size:clamp(1.7rem,3.4vw,2.4rem);color:var(--navy);margin-bottom:12px}
+  .contact{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--copper);border-radius:3px;box-shadow:0 14px 34px rgba(14,42,58,.08);padding:52px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .contact h2{font-size:clamp(1.9rem,3.6vw,2.5rem);margin-bottom:12px}
   .contact p{color:var(--steel);margin-bottom:10px}
-  .phone-big{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,2.9rem);color:var(--amber-deep);text-decoration:none;display:block;margin:6px 0 18px;letter-spacing:.02em}
-  .phone-big:hover{color:var(--amber)}
+  .phone-big{font-family:'Zilla Slab',Georgia,serif;font-weight:700;font-size:clamp(2.1rem,4.6vw,3rem);color:var(--copper-deep);text-decoration:none;display:block;margin:8px 0 20px}
+  .phone-big:hover{color:var(--copper)}
   address{font-style:normal;color:var(--steel)}
 
-  footer{background:var(--navy-deep);color:#9fb0c4;padding:42px 0;font-size:.88rem}
-  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
-  footer .fname{font-family:'Oswald',sans-serif;font-size:1.25rem;color:#fff;text-transform:uppercase;margin-bottom:8px}
-  footer a{color:#cfdae8}
-  footer .fine{font-size:.8rem;color:#7e8fa5;max-width:36rem;margin-top:10px}
+  footer{background:var(--deep-ink);color:#a99c82;padding:46px 0;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;align-items:flex-start}
+  footer .fname{font-family:'Zilla Slab',Georgia,serif;font-size:1.3rem;color:#fff;margin-bottom:8px}
+  footer a{color:#d8cfbd}
+  footer .fine{font-size:.8rem;color:#7d7260;max-width:38rem;margin-top:10px}
 
-  @media (max-width:880px){
-    .hero{padding:54px 0 60px}
-    .hero-grid,.finance-grid,.seasons-grid,.hours-grid,.contact{grid-template-columns:1fr}
-    .ledger li{grid-template-columns:1fr;padding:24px}
-    .ledger .num{font-size:1.5rem}
+  @media (max-width:900px){
+    .hero{padding:60px 0 66px}
+    .hero-grid,.finance-grid,.strip-grid,.hours-grid,.contact{grid-template-columns:1fr}
+    .heat-list{grid-template-columns:1fr}
     nav.sections{display:none}
-    section.block{padding:54px 0}
-    .contact{padding:32px 26px}
+    section.block{padding:58px 0}
+    .contact{padding:34px 28px}
+    .jobs li{grid-template-columns:1fr;padding:26px}
   }
 </style>
 </head>
@@ -133,6 +146,7 @@
     <a class="brand" href="#top">Fleur De Lis<small>Heating &amp; Air</small></a>
     <nav class="sections" aria-label="Sections">
       <a href="#services">Services</a>
+      <a href="#summer">The Long Summer</a>
       <a href="#financing">Financing</a>
       <a href="#hours">Hours</a>
       <a href="#contact">Contact</a>
@@ -147,8 +161,8 @@
     <div class="wrap hero-grid">
       <div>
         <div class="kicker">HVAC Contractor &middot; Gulfport, Mississippi</div>
-        <h1>Heating and air service for Gulfport homes</h1>
-        <p class="lede">Service on any unit, regular maintenance, and new equipment sales and installation for existing homes and new construction.</p>
+        <h1>Heating and air service <em>built for Gulf Coast summers</em></h1>
+        <p class="lede">Service on any unit, regular maintenance, and new equipment sales and installation for existing homes and new construction. When the heat sets in for months at a time, you want a system you can count on.</p>
         <div class="rating">
           <span class="stars" aria-hidden="true">★★★★★</span>
           <p>Rated 5.0 stars from 62 Google reviews, as of October 2026</p>
@@ -156,6 +170,7 @@
         <div class="cta-row">
           <a class="btn" href="tel:+12282734785">Call (228) 273-4785</a>
         </div>
+        <p class="hero-note">Monday through Friday, 8:00am to 5:00pm. Saturday, 8:00am to 4:00pm.</p>
       </div>
       <figure class="hero-photo">
         <img src="img/technician.jpg" alt="A technician servicing an outdoor heating and air unit">
@@ -166,28 +181,26 @@
 
   <section class="block" id="services">
     <div class="wrap">
-      <div class="sec-head">
-        <h2>Services</h2>
-        <span class="tag">What we do</span>
-      </div>
+      <div class="eyebrow">What we do</div>
+      <div class="sec-head"><h2>Services</h2></div>
       <p class="sec-note">Straightforward heating and air work for your home. Here is what the team handles.</p>
-      <ul class="ledger">
+      <ul class="jobs">
         <li>
-          <span class="num">01</span>
+          <span class="chip">01</span>
           <div>
             <h3>Service on Any Unit</h3>
             <p>Repair and service work on any brand or model of heating and cooling equipment. If it heats or cools your home, the team services it.</p>
           </div>
         </li>
         <li>
-          <span class="num">02</span>
+          <span class="chip">02</span>
           <div>
             <h3>Maintenance</h3>
             <p>Routine checkups that keep your system running well and help catch small problems before they turn into bigger ones.</p>
           </div>
         </li>
         <li>
-          <span class="num">03</span>
+          <span class="chip">03</span>
           <div>
             <h3>New Equipment Sales &amp; Installs</h3>
             <p>New equipment sales and installation for existing homes and new construction homes.</p>
@@ -197,10 +210,39 @@
     </div>
   </section>
 
-  <section class="block finance" id="financing" style="padding:72px 0">
+  <section class="block summer" id="summer">
+    <div class="wrap">
+      <div class="eyebrow">Mississippi weather</div>
+      <h2>Built for the long summer</h2>
+      <p class="lede">On the Gulf Coast, the cooling season stretches across most of the year. Heat and humidity put long hours on every system, so the ones that get regular attention are the ones that hold up.</p>
+      <ul class="heat-list">
+        <li>
+          <span class="n">01</span>
+          <h3>Summer arrives early and stays late</h3>
+          <p>Cooling season here runs far longer than it does up north, which means local systems log far more hours every year.</p>
+        </li>
+        <li>
+          <span class="n">02</span>
+          <h3>Humidity does its own damage</h3>
+          <p>Heavy Gulf air makes cooling harder work, and it strains a system that is already struggling.</p>
+        </li>
+        <li>
+          <span class="n">03</span>
+          <h3>A checkup before the heavy season</h3>
+          <p>A maintenance visit ahead of the hottest months catches small issues while they are still small.</p>
+        </li>
+      </ul>
+      <div class="summer-cta">
+        <a class="btn" href="tel:+12282734785">Call (228) 273-4785</a>
+        <span>Questions about your system? Call the number and ask.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="financing">
     <div class="wrap finance-grid">
       <div>
-        <div class="kicker">Financing</div>
+        <div class="eyebrow">Financing</div>
         <h2>0% financing on new Trane equipment</h2>
         <p>Ask about 0% financing on new Trane equipment purchases. It is available with approved credit.</p>
         <p class="fine">Call to ask whether financing fits your project.</p>
@@ -215,29 +257,25 @@
     </div>
   </section>
 
-  <section class="block">
-    <div class="wrap">
-      <div class="seasons-grid">
-        <figure>
-          <img src="img/thermostat.jpg" alt="Close-up of a home thermostat dial on a wall">
-          <p class="caption">Stock photo: close-up of a home thermostat dial.</p>
-        </figure>
-        <div>
-          <div class="tag" style="font-size:.74rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--amber-deep);margin-bottom:14px">Mississippi weather</div>
-          <h2>Ready for the long summer</h2>
-          <p>Gulf Coast summers are long. Regular maintenance keeps the system running well through the season.</p>
-          <p>Questions about your system? Call <a href="tel:+12282734785">(228) 273-4785</a>.</p>
-        </div>
+  <section class="block" style="padding-top:0">
+    <div class="wrap strip-grid">
+      <figure>
+        <img src="img/thermostat.jpg" alt="Close-up of a home thermostat dial on a wall">
+        <p class="caption">Stock photo: close-up of a home thermostat dial.</p>
+      </figure>
+      <div>
+        <div class="eyebrow">Everyday comfort</div>
+        <h2>Steady comfort through the season</h2>
+        <p>A system that has been looked after holds its temperature without the constant adjusting. That is what regular service buys you.</p>
+        <p>Questions about your system? Call <a href="tel:+12282734785">(228) 273-4785</a>.</p>
       </div>
     </div>
   </section>
 
-  <section class="block" id="hours" style="padding-top:20px">
+  <section class="block" id="hours" style="padding-top:0">
     <div class="wrap">
-      <div class="sec-head">
-        <h2>Hours</h2>
-        <span class="tag">When we are open</span>
-      </div>
+      <div class="eyebrow">When we are open</div>
+      <div class="sec-head"><h2>Hours</h2></div>
       <p class="sec-note">Call during office hours.</p>
       <div class="hours-grid">
         <table class="hours-table">
@@ -253,18 +291,18 @@
           <p>Gulfport, Mississippi.</p>
           <p>Call to confirm coverage for your address.</p>
           <div class="cta-row">
-            <a class="btn navy" href="tel:+12282734785">Call (228) 273-4785</a>
+            <a class="btn" href="tel:+12282734785">Call (228) 273-4785</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="block" id="contact" style="padding-top:20px">
+  <section class="block" id="contact" style="padding-top:0">
     <div class="wrap">
       <div class="contact">
         <div>
-          <div class="tag" style="font-size:.74rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--amber-deep);margin-bottom:14px">Get in touch</div>
+          <div class="eyebrow">Get in touch</div>
           <h2>Contact</h2>
           <p>Questions about your system? Call the number below.</p>
           <a class="phone-big" href="tel:+12282734785">(228) 273-4785</a>
@@ -273,6 +311,7 @@
         <div>
           <div class="cta-row">
             <a class="btn" href="tel:+12282734785">Call now</a>
+            <a class="btn ghost" href="#summer">Why summer matters</a>
           </div>
           <p style="margin-top:18px;font-size:.92rem;color:var(--steel)">Monday through Friday, 8:00am to 5:00pm.<br>Saturday, 8:00am to 4:00pm. Closed Sunday.</p>
         </div>
