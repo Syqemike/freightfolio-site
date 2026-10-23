@@ -1,0 +1,164 @@
+/* Double Time Dance Studio concept — "Vintage ballroom night" */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Jost:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+:root{
+  --walnut:#221510;
+  --walnut-deep:#170d08;
+  --panel:#2c1c12;
+  --cream:#f2e4cb;
+  --cream-dim:#cbb896;
+  --amber:#e2a944;
+  --amber-soft:rgba(226,169,68,.28);
+  --burgundy:#7c2231;
+  --hairline:rgba(226,169,68,.38);
+  --max:1060px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--walnut);
+  color:var(--cream);
+  font-family:'Jost',system-ui,sans-serif;
+  font-weight:300;
+  line-height:1.65;
+  letter-spacing:.015em;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(900px 420px at 50% -60px, rgba(226,169,68,.10), transparent 60%),
+    radial-gradient(700px 500px at 100% 100%, rgba(124,34,49,.16), transparent 60%);
+}
+main,header,footer{position:relative;z-index:1}
+h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;font-weight:700;letter-spacing:.01em}
+a{color:var(--amber)}
+img{max-width:100%;display:block}
+
+/* disclosure ribbon */
+.disclosure{
+  background:var(--burgundy);
+  color:#ffe9c9;
+  font-size:.78rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  text-align:center;
+  padding:.55rem 1rem;
+  border-bottom:1px solid var(--hairline);
+}
+.disclosure strong{font-weight:500}
+
+/* header */
+.site-head{
+  max-width:var(--max);margin:0 auto;
+  padding:1.6rem 1.4rem .8rem;
+  text-align:center;
+}
+.brand{
+  font-size:clamp(2rem,5vw,3.1rem);
+  color:var(--cream);
+  line-height:1.1;
+}
+.brand small{
+  display:block;
+  font-family:'Jost',sans-serif;font-weight:300;font-size:.82rem;
+  letter-spacing:.42em;text-transform:uppercase;color:var(--amber);
+  margin-top:.45rem;
+}
+.rule{display:flex;align-items:center;gap:.9rem;max-width:var(--max);margin:1.1rem auto .2rem;padding:0 1.4rem}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--hairline),transparent)}
+.rule span{width:7px;height:7px;background:var(--amber);transform:rotate(45deg);display:block}
+nav.mainnav{display:flex;justify-content:center;flex-wrap:wrap;gap:.4rem 1.6rem;padding:.4rem 1rem 1.2rem}
+nav.mainnav a{
+  color:var(--cream-dim);text-decoration:none;font-size:.85rem;
+  letter-spacing:.22em;text-transform:uppercase;padding:.35rem .1rem;
+  border-bottom:1px solid transparent;
+}
+nav.mainnav a:hover,nav.mainnav a.active{color:var(--amber);border-bottom-color:var(--amber)}
+
+/* layout */
+.wrap{max-width:var(--max);margin:0 auto;padding:1.2rem 1.4rem 4rem}
+.hero{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:2.6rem;
+  align-items:center;padding:1.6rem 0 3rem;
+}
+.hero-kicker{font-size:.78rem;letter-spacing:.4em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4rem);line-height:1.08;margin-bottom:1.2rem}
+.hero h1 em{color:var(--amber);font-style:italic}
+.hero p{color:var(--cream-dim);font-size:1.06rem;max-width:34rem}
+.photo-frame{
+  border:1px solid var(--hairline);padding:.6rem;background:var(--walnut-deep);
+  position:relative;
+}
+.photo-frame::after{
+  content:"";position:absolute;inset:-9px;border:1px solid rgba(226,169,68,.18);pointer-events:none;
+}
+.photo-frame img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+figcaption{font-size:.78rem;color:var(--cream-dim);letter-spacing:.06em;padding-top:.6rem;text-align:center}
+
+.cta-row{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.6rem}
+.btn{
+  display:inline-block;text-decoration:none;font-size:.85rem;letter-spacing:.22em;text-transform:uppercase;
+  padding:.85rem 1.7rem;border:1px solid var(--amber);color:var(--amber);
+  transition:background .25s,color .25s;
+}
+.btn:hover{background:var(--amber);color:var(--walnut-deep)}
+.btn.solid{background:var(--amber);color:var(--walnut-deep)}
+.btn.solid:hover{background:transparent;color:var(--amber)}
+
+/* schedule board */
+.board{
+  border:1px solid var(--hairline);background:var(--panel);
+  margin:2.2rem 0;padding:clamp(1.4rem,4vw,3rem);
+}
+.board h2{text-align:center;font-size:clamp(1.6rem,3.4vw,2.3rem);margin-bottom:.4rem}
+.board .sub{text-align:center;color:var(--cream-dim);margin-bottom:1.8rem;font-size:.95rem}
+.night{
+  display:grid;grid-template-columns:92px 1fr auto;gap:1rem;align-items:center;
+  padding:1rem .4rem;border-top:1px solid rgba(226,169,68,.18);
+}
+.night:last-of-type{border-bottom:1px solid rgba(226,169,68,.18)}
+.night .day{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream)}
+.night .style{font-size:1.02rem}
+.night .style b{color:var(--amber);font-weight:500}
+.night .time{font-size:.85rem;letter-spacing:.18em;color:var(--cream-dim);text-transform:uppercase;white-space:nowrap}
+
+/* sections */
+section.block{margin:3.4rem 0}
+.block h2{font-size:clamp(1.5rem,3.2vw,2.1rem);margin-bottom:1rem}
+.block h2 .accent{color:var(--amber)}
+.lede{color:var(--cream-dim);max-width:44rem;margin-bottom:1.4rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem;margin-top:1.6rem}
+.card{border:1px solid var(--hairline);background:var(--panel);padding:1.6rem}
+.card h3{color:var(--amber);font-size:1.25rem;margin-bottom:.5rem}
+.card p{color:var(--cream-dim);font-size:.95rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:center;margin:2.4rem 0}
+.split.rev>*:first-child{order:2}
+.rating-line{
+  border:1px solid var(--hairline);background:var(--panel);
+  display:flex;flex-wrap:wrap;gap:1rem;align-items:baseline;justify-content:center;
+  padding:1.2rem;margin:2.6rem 0;
+}
+.rating-line .score{font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--amber)}
+.rating-line .src{color:var(--cream-dim);font-size:.95rem}
+.fine{font-size:.82rem;color:var(--cream-dim);letter-spacing:.05em}
+
+/* visit */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.4rem;margin:1.6rem 0}
+.info{border:1px solid var(--hairline);background:var(--panel);padding:1.5rem}
+.info h3{font-size:.82rem;letter-spacing:.3em;text-transform:uppercase;color:var(--amber);margin-bottom:.6rem;font-family:'Jost',sans-serif;font-weight:500}
+.info p{color:var(--cream)}
+.info a{color:var(--amber)}
+
+/* footer */
+footer{border-top:1px solid var(--hairline);background:var(--walnut-deep)}
+.foot-in{max-width:var(--max);margin:0 auto;padding:2.4rem 1.4rem;text-align:center;color:var(--cream-dim);font-size:.85rem}
+.foot-in .brandline{font-family:'Playfair Display',serif;color:var(--cream);font-size:1.3rem;margin-bottom:.6rem}
+.foot-in p{margin:.35rem 0}
+.foot-in .disc{font-size:.76rem;letter-spacing:.08em;opacity:.85;margin-top:1rem}
+
+@media(max-width:760px){
+  .hero{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+  .night{grid-template-columns:1fr;gap:.2rem;padding:1rem .2rem}
+  .night .time{white-space:normal}
+}
