@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Gallery | DP Motorwerks, Virginia Beach, VA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--graph:#14161a;--graph2:#0e1013;--steel:#eef1f4;--blue:#2e6fb7;--amber:#f2a900;--ink:#1a1d22;--mut:#5a636e;--line:#cfd6dd}
+html{scroll-behavior:smooth}
+body{background:var(--steel);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2{font-family:'Archivo',sans-serif}
+.mono{font-family:'IBM Plex Mono',monospace}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.disclosure{background:var(--amber);color:var(--graph2);text-align:center;font-size:11.5px;letter-spacing:2.4px;text-transform:uppercase;padding:9px 16px;font-weight:700}
+.util{background:var(--graph2);color:#aeb6c0;font-size:13px}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+.util .mono{font-size:12.5px;letter-spacing:.5px}
+.util a.tel{color:var(--amber);text-decoration:none;font-weight:700}
+nav{background:var(--steel);border-bottom:3px solid var(--graph);position:sticky;top:0;z-index:20}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:13px;padding-bottom:13px;flex-wrap:wrap}
+.brand{text-decoration:none;line-height:1.05}
+.brand .n{font-family:'Archivo',sans-serif;font-weight:800;font-size:24px;letter-spacing:1px;color:var(--graph)}
+.brand .n span{color:var(--blue)}
+.brand .s{display:block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:2.6px;color:var(--mut);margin-top:2px}
+.navlinks{display:flex;gap:26px;flex-wrap:wrap}
+.navlinks a{font-size:13px;letter-spacing:1.8px;text-transform:uppercase;text-decoration:none;color:var(--mut);font-weight:600}
+.navlinks a:hover,.navlinks a.on{color:var(--blue)}
+.pagehead{background:var(--graph);color:#fff}
+.pagehead .wrap{padding-top:64px;padding-bottom:60px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:3px;color:var(--amber);margin-bottom:16px}
+.pagehead h1{font-size:clamp(38px,5.4vw,64px);font-weight:800;letter-spacing:-1px;line-height:1.02}
+.pagehead p{color:#c3cbd4;font-size:18px;max-width:660px;margin-top:14px}
+.sec{padding:76px 0}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.gallery figure{background:#fff;border:1px solid var(--line);padding:10px}
+.gallery img{width:100%;height:340px;object-fit:cover}
+.gallery figure.tall img{height:440px}
+figcaption{font-size:14px;color:var(--mut);padding:12px 4px 4px}
+figcaption .sp{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);font-weight:600;margin-right:8px}
+.photo-note{background:#fff;border:1px solid var(--line);border-left:8px solid var(--amber);padding:22px 26px;margin-top:36px;font-size:15.5px;color:var(--mut)}
+.btn{display:inline-block;font-family:'Archivo',sans-serif;font-size:14px;letter-spacing:1.6px;text-transform:uppercase;font-weight:700;text-decoration:none;background:var(--amber);color:var(--graph2);padding:16px 32px}
+.btn:hover{background:#fff}
+.callband{background:var(--amber)}
+.callband .wrap{padding-top:58px;padding-bottom:62px;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.callband h2{font-size:clamp(30px,4.6vw,50px);font-weight:800;letter-spacing:-.5px;color:var(--graph2);line-height:1.05}
+.callband p{color:#3d3413;margin-top:10px;font-size:17px;max-width:560px;font-weight:500}
+.callband a.big-tel{font-family:'Archivo',sans-serif;font-size:clamp(22px,3.2vw,34px);font-weight:800;color:var(--graph2);text-decoration:none;border:3px solid var(--graph2);padding:14px 30px;white-space:nowrap;background:#fff}
+.callband a.big-tel:hover{background:var(--graph2);color:var(--amber)}
+footer{background:var(--graph2);color:#8b95a1;font-size:14.5px}
+footer .wrap{padding-top:44px;padding-bottom:36px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;letter-spacing:2px;text-transform:uppercase;font-size:12.5px;margin-bottom:12px;font-family:'Archivo',sans-serif}
+footer a{color:var(--amber);text-decoration:none}
+footer p{margin-bottom:8px}
+.fine{grid-column:1/-1;border-top:1px solid #2b3138;padding-top:16px;font-size:12.5px;color:#6b7480}
+@media(max-width:900px){.gallery{grid-template-columns:1fr}.gallery img,.gallery figure.tall img{height:280px}footer .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design preview concept. Not the business&rsquo;s live website</div>
+
+<div class="util">
+  <div class="wrap">
+    <span class="mono">2128 LONDON BRIDGE RD &middot; VIRGINIA BEACH, VA</span>
+    <span><a class="tel" href="tel:+17574272008">(757) 427-2008</a> &nbsp;&middot;&nbsp; <span class="mono">MON&ndash;FRI 9&ndash;6 &middot; SAT 9&ndash;1</span></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="n">DP <span>MOTORWERKS</span></span><span class="s">BMW SPECIALIST &middot; VA BEACH</span></a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a class="on" href="gallery.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pagehead">
+  <div class="wrap">
+    <div class="kicker">// SHOP GALLERY</div>
+    <h1>Where the work happens.</h1>
+    <p>Representative photos of professional auto repair work: engines, brakes, and inspection bays.</p>
+  </div>
+</div>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="gallery">
+      <figure class="tall"><img src="img/dp_hero.jpg" alt="Stock photo: technician working on an engine mounted on a stand"><figcaption><span class="sp">Stock photo</span>Engine work on a shop stand.</figcaption></figure>
+      <figure><img src="img/dp_hood.jpg" alt="Stock photo: technician inspecting an engine bay"><figcaption><span class="sp">Stock photo</span>Inspection under the hood.</figcaption></figure>
+      <figure><img src="img/dp_brake.jpg" alt="Stock photo: technician servicing a brake rotor"><figcaption><span class="sp">Stock photo</span>Brake rotor service.</figcaption></figure>
+      <figure class="tall"><img src="img/dp_engine.jpg" alt="Stock photo: technician with an engine on a stand"><figcaption><span class="sp">Stock photo</span>Engine on the stand.</figcaption></figure>
+    </div>
+    <div class="photo-note">
+      These are stock photographs showing the type of repair work DP Motorwerks performs. They are not photos of the DP Motorwerks shop. Every image on this page is labeled as a stock photo.
+    </div>
+    <p style="margin-top:28px"><a class="btn" href="tel:+17574272008">Call to book</a></p>
+  </div>
+</section>
+
+<div class="callband">
+  <div class="wrap">
+    <div>
+      <h2>Bring the BMW to the specialists.</h2>
+      <p>Mon&ndash;Fri 9:00 AM&ndash;6:00 PM, Sat 9:00 AM&ndash;1:00 PM.</p>
+    </div>
+    <a class="big-tel" href="tel:+17574272008">(757) 427-2008</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>DP Motorwerks</h4>
+      <p>BMW-specialty auto repair in Virginia Beach, Virginia.</p>
+      <p>2128 London Bridge Rd<br>Virginia Beach, VA</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="tel:+17574272008">(757) 427-2008</a></p>
+      <p>Mon&ndash;Fri: 9:00 AM &ndash; 6:00 PM<br>Sat: 9:00 AM &ndash; 1:00 PM</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="services.html">Services</a></p>
+      <p><a href="gallery.html">Shop</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+    <div class="fine">Design preview concept prepared by Freightfolio. Not the business&rsquo;s live website. Business details shown are from public listings. Photos are stock photography, labeled as such.</div>
+  </div>
+</footer>
+
+</body>
+</html>
