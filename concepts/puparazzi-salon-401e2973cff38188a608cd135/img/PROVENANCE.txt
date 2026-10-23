@@ -1,55 +1,22 @@
-PROVENANCE - Puparazzi Salon concept site photos
-Concept slug: puparazzi-salon-401e2973cff38188a608cd135
-Built: 2026-10-22 (Website Dev shift, batch-26 builder)
+PROVENANCE - real business photos (rebuild shift 2026-10-23 run1)
+Concept dir: /home/hatch/workspace/freightfolio-site/concepts/puparazzi-salon-401e2973cff38188a608cd135
+Source: the business's own public Facebook page: https://www.facebook.com/puparazzisalon
+All photos below are REAL photos of the business, retrieved 2026-10-23
+from the business's public Facebook page for use in the business's own
+design-preview concept site. Captions on the page describe what each
+photo shows; no stock-photo labels remain.
 
-hero.jpg - STOCK (Pexels free license). Freshly groomed golden spaniel sitting
-  on a grooming table while a groomer finishes its paw. Not the business's photo.
-  Source: https://www.pexels.com/photo/19145889/ (Pexels photo 19145889).
-  Captioned on the page as a stock photo. Subject verified by inspecting the
-  downloaded image bytes.
-
-shihtzu.jpg - STOCK (Pexels free license). Freshly groomed Shih Tzu standing on
-  a grooming table, groomer working behind it. Not the business's photo.
-  Source: https://www.pexels.com/photo/19145876/ (Pexels photo 19145876).
-  Captioned on the page as a stock photo. Subject verified by inspecting the
-  downloaded image bytes.
-
-trim.jpg - STOCK (Pexels free license). Groomer in an apron carefully trimming
-  a small terrier's face with scissors on a grooming table. Not the business's
-  photo.
-  Source: https://www.pexels.com/photo/6131566/ (Pexels photo 6131566).
-  Captioned on the page as a stock photo. Subject verified by inspecting the
-  downloaded image bytes.
-
-dry.jpg - STOCK (Pexels free license). Groomer blow-drying a Yorkshire Terrier
-  with a pet dryer on a grooming table. Not the business's photo.
-  Source: https://www.pexels.com/photo/6816846/ (Pexels photo 6816846).
-  Captioned on the page as a stock photo. Subject verified by inspecting the
-  downloaded image bytes.
-
-brush.jpg - STOCK (Pexels free license). Groomer brushing a Yorkshire Terrier
-  standing on a blue grooming table. Not the business's photo.
-  Source: https://www.pexels.com/photo/6816837/ (Pexels photo 6816837).
-  Captioned on the page as a stock photo. Subject verified by inspecting the
-  downloaded image bytes.
-
-clip.jpg - STOCK (Pexels free license). Groomer trimming a Yorkshire Terrier's
-  face with scissors on a grooming table. Not the business's photo.
-  Source: https://www.pexels.com/photo/6816866/ (Pexels photo 6816866).
-  Captioned on the page as a stock photo. Subject verified by inspecting the
-  downloaded image bytes.
-
-style.jpg - STOCK (Pexels free license). Groomer combing and finishing a Shih
-  Tzu haircut on a grooming table with grooming tools nearby. Not the business's
-  photo.
-  Source: https://www.pexels.com/photo/19145893/ (Pexels photo 19145893).
-  Captioned on the page as a stock photo. Subject verified by inspecting the
-  downloaded image bytes.
-
-REAL-PHOTO SHORTFALL (noted honestly): the salon has real groomed-pet photos on
-its Facebook page (facebook.com/puparazzisalon), but the page is login-walled
-and the photos are not retrievable without a Facebook session, so none could be
-used. All seven site photos are labeled stock Pexels.
-
-No images were generated, drawn, or illustrated for this site. No clip-art paw
-icons or decorative illustrations anywhere on the site: photos and typography only.
+- hero.jpg: REAL photo of the business. Shows: Groomer Ms. Lisa holding a freshly groomed schnauzer wearing a patriotic bandana (Nov 2024)
+  Source file: puparazzi-1.jpg  |  FB image URL: 
+- shihtzu.jpg: REAL photo of the business. Shows: Freshly groomed black-and-white Shih Tzu wearing a fruit-pattern bandana
+  Source file: puparazzi-4.jpg  |  FB image URL: 
+- trim.jpg: REAL photo of the business. Shows: Groomer Lanora trimming a dog on the grooming table (in progress, Jun 2023)
+  Source file: puparazzi-8.jpg  |  FB image URL: 
+- brush.jpg: REAL photo of the business. Shows: 'Suky', a freshly groomed Yorkshire Terrier with fruit bandana and purple bow
+  Source file: puparazzi-5.jpg  |  FB image URL: 
+- clip.jpg: REAL photo of the business. Shows: 'Stogie', a freshly groomed English Springer Spaniel with green polka-dot bandana
+  Source file: puparazzi-2.jpg  |  FB image URL: 
+- dry.jpg: REAL photo of the business. Shows: 'Lola', a freshly groomed white Maltese wearing a pink bow
+  Source file: puparazzi-6.jpg  |  FB image URL: 
+- style.jpg: REAL photo of the business. Shows: 'Blessing', a freshly groomed brown Collie with fruit-pattern bandana
+  Source file: puparazzi-7.jpg  |  FB image URL: 

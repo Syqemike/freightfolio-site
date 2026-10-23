@@ -1,34 +1,18 @@
-IMAGE PROVENANCE — Le Bakery (le-bakery-402e2973cff3810fbb3cebdce)
-All photos are STOCK (the bakery's real food photos exist on Facebook but the page is login-walled; no public web photos available). Each photo page was opened and title/alt text/camera EXIF confirmed before download, and each downloaded image was visually inspected to confirm a real photograph matching the subject. License: Pexels free license.
+PROVENANCE - real business photos (rebuild shift 2026-10-23 run1)
+Concept dir: /home/hatch/workspace/freightfolio-site/concepts/le-bakery-402e2973cff3810fbb3cebdce
+Source: the business's own public Facebook page: https://www.facebook.com/LeBakeryBiloxi
+All photos below are REAL photos of the business, retrieved 2026-10-23
+from the business's public Facebook page for use in the business's own
+design-preview concept site. Captions on the page describe what each
+photo shows; no stock-photo labels remain.
 
-1. banhmi.jpg
-   STOCK — Pexels photo page: https://www.pexels.com/vi-vn/anh/c-n-c-nh-banh-mi-sandwich-s-ng-d-ng-c-a-vi-t-nam-32961648/ (ID 32961648, photo by Hau Mai, Canon EOS 750D)
-   Subject: close-up of a traditional Vietnamese banh mi sandwich with fresh vegetables, cold cuts, cucumber, and chilies
-   Caption on site: "Stock photo: a banh mi sandwich."
-   Verified: JPEG 1260x840, 151,449 bytes
-
-2. iced-coffee.jpg
-   STOCK — Pexels photo page: https://www.pexels.com/da-dk/foto/forfriskende-vietnamesisk-iskaffe-med-flag-31957631/ (ID 31957631, photo by Soc Nang Dong, NIKON D810)
-   Subject: Vietnamese iced coffee with condensed milk in a tall glass with a straw
-   Caption on site: "Stock photo: iced coffee."
-   Verified: JPEG 1260x1888, 133,239 bytes
-
-3. baguettes.jpg
-   STOCK — Pexels photo page: https://www.pexels.com/photo/freshly-baked-bread-in-bakery-4451380/ (ID 4451380, photo by Rene Terp, Canon EOS 5D Mark IV)
-   Subject: crispy seeded baguettes fresh from the oven on a bakery counter
-   Caption on site: "Stock photo: fresh baguettes."
-   Verified: JPEG 1260x1039, 211,903 bytes
-
-4. pastries.jpg
-   STOCK — Pexels photo page: https://www.pexels.com/photo/delicious-sweet-rolls-19859269/ (ID 19859269, photo by Valeria Boltneva, Canon EOS R5)
-   Subject: rows of golden glazed pastries with icing (pain au chocolat style, chaussons, morning buns)
-   Caption on site: "Stock photo: fresh glazed pastries."
-   Verified: JPEG 1260x840, 118,683 bytes
-
-5. bakery-interior.jpg
-   STOCK — Pexels photo page: https://www.pexels.com/photo/traditional-bread-making-in-artisan-bakery-36445222/ (ID 36445222, photo by Yasin Onus, Sony ILCE-7M4)
-   Subject: baker shaping dough by a brick oven in a rustic bakery
-   Caption on site: "Stock photo: inside a bakery."
-   Verified: JPEG 1260x1890, 264,259 bytes
-
-NOTE: all 5 photos are placed (index.html: banhmi hero, baguettes/iced-coffee/pastries gallery, bakery-interior visit section; menu.html: baguettes), each captioned as a stock photo. Facebook holds real bakery photos but the page is login-walled; noted honestly per the brief.
+- baguettes.jpg: REAL photo of the business. Shows: Metal cooling racks loaded with freshly baked baguettes and buns (Oct 2025)
+  Source file: lebakery-1.jpg  |  FB image URL: 
+- bakery-interior.jpg: REAL photo of the business. Shows: Long curved glass display case inside the shop: turnovers, croissants, danishes (Oct 2025)
+  Source file: lebakery-3.jpg  |  FB image URL: 
+- banhmi.jpg: REAL photo of the business. Shows: Bakery display case: chocolate, raspberry and blueberry danishes, pecan rolls, jalapeno cheese bread, baguettes (Oct 2025)
+  Source file: lebakery-2.jpg  |  FB image URL: 
+- iced-coffee.jpg: REAL photo of the business. Shows: Black Forest Cake bubble tea: cherry chocolate bubble tea with whipped cream, shaved chocolate and a cherry (Jul 2025)
+  Source file: lebakery-7.jpg  |  FB image URL: 
+- pastries.jpg: REAL photo of the business. Shows: Tray of cinnamon rolls with white glaze and chocolate drizzle (Nov 2025)
+  Source file: lebakery-6.jpg  |  FB image URL: 

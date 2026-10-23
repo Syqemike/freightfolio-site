@@ -1,8 +1,18 @@
-PROVENANCE — Platte Ave Coin Laundry concept images (batch-26)
-Retrieved 2026-10-22 via Pexels free license. Every image is STOCK (real photos exist in the business's Yelp and Facebook galleries but are login- or JS-walled and not retrievable). Each is captioned "Stock photo: ..." on the page. All downloads verified as image bytes and visually inspected for subject match. Photo pages opened to confirm subject and license (sample: 4700420 confirmed on pexels.com photo page).
+PROVENANCE - real business photos (rebuild shift 2026-10-23 run1)
+Concept dir: /home/hatch/workspace/freightfolio-site/concepts/platte-ave-coin-laundry-402e2973cff3813ea6a5ddf4b
+Source: the business's own public Facebook page: https://www.facebook.com/Platte-Ave-Coin-Laundry-119187464919909
+All photos below are REAL photos of the business, retrieved 2026-10-23
+from the business's public Facebook page for use in the business's own
+design-preview concept site. Captions on the page describe what each
+photo shows; no stock-photo labels remain.
 
-- img/washers-hero.jpg — STOCK. Pexels photo 4700420, "Contemporary laundromat showcasing a row of industrial washing machines" by Ekaterina Belinskaya. Photo page: https://www.pexels.com/photo/4700420/. Used on index.html hero.
-- img/washers-coral.jpg — STOCK. Pexels photo 34653756, row of industrial Primus washing machines against a coral wall. Photo page: https://www.pexels.com/photo/34653756/. Used in gallery.
-- img/blue-wall.jpg — STOCK. Pexels photo 9669475, laundromat interior with washers and laundry baskets against a blue wall. Photo page: https://www.pexels.com/photo/9669475/. Used in gallery.
-- img/vintage-row.jpg — STOCK. Pexels photo 23230832, row of front-load washers in a laundromat. Photo page: https://www.pexels.com/photo/23230832/. Used in gallery.
-- img/moody-row.jpg — STOCK. Pexels photo 2347642, row of washing machines in a laundromat. Photo page: https://www.pexels.com/photo/2347642/. Used in honest/self-service section.
+- washers-hero.jpg: REAL photo of the business. Shows: Long row of Speed Queen stacked washer/dryer units along the green wall, with folding tables and laundry carts
+  Source file: platteave-2.jpg  |  FB image URL: 
+- washers-coral.jpg: REAL photo of the business. Shows: Wide interior view: washer and dryer rows, wooden folding tables, chairs and laundry carts
+  Source file: platteave-6.jpg  |  FB image URL: 
+- blue-wall.jpg: REAL photo of the business. Shows: Street-level storefront with 'Coin Laundry' banner, hours sign and service list on the glass door
+  Source file: platteave-1.jpg  |  FB image URL: 
+- vintage-row.jpg: REAL photo of the business. Shows: Close-up of a front-loading Speed Queen commercial washer door and control panel
+  Source file: platteave-4.jpg  |  FB image URL: 
+- moody-row.jpg: REAL photo of the business. Shows: Store interior during the December 2019 remodel, workers installing replacement washer bases
+  Source file: platteave-5.jpg  |  FB image URL: 

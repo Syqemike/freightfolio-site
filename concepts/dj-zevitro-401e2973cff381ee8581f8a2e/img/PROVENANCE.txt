@@ -1,8 +1,18 @@
-PROVENANCE — DJ Zevitro / Vinyl Fantasy Presents concept images (batch-26)
-Retrieved 2026-10-22. REAL-PHOTO ATTEMPT: opened https://www.djzevitro.com/ (verified live). The only image asset on the public page was the site logo (assets/logo-256.png); no gig posters or artist shots were retrievable. Facebook/Instagram pages are login-walled. Therefore every image below is Pexels free-license STOCK, each captioned "Stock photo: ..." on the page. All downloads verified as image bytes and visually inspected for subject match. Photo pages opened to confirm subject and license (sample: 26447524 confirmed on pexels.com photo page).
+PROVENANCE - real business photos (rebuild shift 2026-10-23 run1)
+Concept dir: /home/hatch/workspace/freightfolio-site/concepts/dj-zevitro-401e2973cff381ee8581f8a2e
+Source: the business's own public Facebook page: https://www.facebook.com/VinylFantasyPresentsZevitro
+All photos below are REAL photos of the business, retrieved 2026-10-23
+from the business's public Facebook page for use in the business's own
+design-preview concept site. Captions on the page describe what each
+photo shows; no stock-photo labels remain.
 
-- img/crowd-hero.jpg — STOCK. Pexels photo 26447524, "A large crowd enjoying a night concert with dramatic lighting effects" by Noland Live. Photo page: https://www.pexels.com/photo/26447524/. Used on index.html hero and events.html festivals row.
-- img/decks-closeup.jpg — STOCK. Pexels photo 1026572, close-up of DJ mixer/decks with glowing controls. Photo page: https://www.pexels.com/photo/1026572/. Used in artist section + events.html raves row.
-- img/mixer-daylight.jpg — STOCK. Pexels photo 5175867, DJ hands on a mixer during a daytime set (supports mobile-DJ positioning). Photo page: https://www.pexels.com/photo/5175867/. Used in gear gallery + events.html weddings row.
-- img/pioneer-set.jpg — STOCK. Pexels photo 16018718, DJ mixing on a Pioneer controller. Photo page: https://www.pexels.com/photo/16018718/. Used in gear gallery + events.html private-events row.
-- img/mixer-red.jpg — STOCK. Pexels photo 9005500, DJ adjusting mixer controls under red lighting. Photo page: https://www.pexels.com/photo/9005500/. Used in gear gallery + events.html clubs row.
+- crowd-hero.jpg: REAL photo of the business. Shows: Wide shot: fan of white laser beams erupting from the DJ stage at Woodlawn Theatre, San Antonio (Nov 2025)
+  Source file: zevitro-3.jpg  |  FB image URL: 
+- decks-closeup.jpg: REAL photo of the business. Shows: DJ Zevitro performing at the decks, arms raised, purple laser beams (Woodlawn Theatre)
+  Source file: zevitro-1.jpg  |  FB image URL: 
+- mixer-daylight.jpg: REAL photo of the business. Shows: Close-up of Zevitro leaning over a Pioneer DJ mixer mid-set under red stage lighting
+  Source file: zevitro-6.jpg  |  FB image URL: 
+- mixer-red.jpg: REAL photo of the business. Shows: Zevitro hugging a fan in front of the decks, green and red lasers behind
+  Source file: zevitro-5.jpg  |  FB image URL: 
+- pioneer-set.jpg: REAL photo of the business. Shows: Zevitro at the decks with a friend in Mario-style costume, colorful lasers
+  Source file: zevitro-4.jpg  |  FB image URL: 
