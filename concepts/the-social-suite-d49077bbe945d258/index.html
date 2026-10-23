@@ -71,6 +71,10 @@
   .card h3 { font-family:Georgia,'Times New Roman',serif; font-size:21px; margin-bottom:8px; color:var(--plum); }
   .card p { color:var(--muted); font-size:15px; }
 
+  .gallery-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:28px; }
+  .gallery-grid img { width:100%; border-radius:12px; aspect-ratio:4/3; object-fit:cover; }
+  .gallery-grid .photo-cap { text-align:left; }
+
   .why { background:var(--plum); color:#fff; }
   .why h2.stitle { color:#fff; }
   .why .kicker { color:var(--gold); }
@@ -138,6 +142,7 @@
     <a class="brand" href="#">THE SOCIAL <em>SUITE</em></a>
     <div class="navlinks">
       <a href="#services">Services</a>
+      <a href="#photos">Photos</a>
       <a href="#visit">Visit</a>
     </div>
     <a class="btn" href="tel:+15045715857">Call Now</a>
@@ -155,6 +160,10 @@
         <a class="btn ghost" href="#services">Our Services</a>
       </div>
     </div>
+    <figure class="hero-img" style="margin-top:44px;">
+      <img src="img/tss-real-1.jpg" alt="Inside The Social Suite salon in Metairie: a client with long blonde hair in the styling chair, black styling station and mirror beside, the salon name visible on the window">
+      <figcaption class="photo-cap">A finished blonde color in the salon chair. Real photo from the salon's Google Maps listing.</figcaption>
+    </figure>
    </div>
 </header>
 
@@ -172,15 +181,43 @@
   <p class="ssub">Service categories below reflect the salon's public Facebook listing.</p>
   <div class="cards">
     <div class="card">
-      <div class="pad"><h3>Color &amp; Highlights</h3><p>Balayage, highlights, and full color are listed by the salon.</p></div>
+      <img src="img/tss-real-4.jpg" alt="Back view of a client with long brown hair with caramel highlights, seated in a salon chair at The Social Suite">
+      <div class="pad"><h3>Color &amp; Highlights</h3><p>Balayage, highlights, and full color are listed by the salon.</p><p class="photo-cap" style="text-align:left;padding:12px 0 0;">Real photo from the salon's Google Maps listing.</p></div>
     </div>
     <div class="card">
-      <div class="pad"><h3>Cuts &amp; Styling</h3><p>Women's haircuts and styling are listed by the salon.</p></div>
+      <img src="img/tss-real-6.jpg" alt="A stylist brushing a client's long highlighted hair in a black salon chair at The Social Suite">
+      <div class="pad"><h3>Cuts &amp; Styling</h3><p>Women's haircuts and styling are listed by the salon.</p><p class="photo-cap" style="text-align:left;padding:12px 0 0;">Real photo from the salon's Google Maps listing.</p></div>
     </div>
     <div class="card">
-      <div class="pad"><h3>Weaves &amp; Brows</h3><p>Hair weaves, permanent makeup, and microblading are listed by the salon.</p></div>
+      <img src="img/tss-real-5.jpg" alt="Close-up of balayage highlights on brown hair, color work done at The Social Suite">
+      <div class="pad"><h3>Weaves &amp; Brows</h3><p>Hair weaves, permanent makeup, and microblading are listed by the salon.</p><p class="photo-cap" style="text-align:left;padding:12px 0 0;">Real photo from the salon's Google Maps listing.</p></div>
     </div>
   </div>
+</section>
+
+<section class="block wrap" id="photos">
+  <div class="kicker">Real photos</div>
+  <h2 class="stitle">The salon and the work</h2>
+  <p class="ssub">Customer photos from the salon's own Google Maps listing.</p>
+  <div class="gallery-grid">
+    <figure>
+      <img src="img/tss-real-1.jpg" alt="Inside The Social Suite salon in Metairie: a client with long blonde hair in the styling chair, black styling station and mirror beside, the salon name visible on the window">
+      <figcaption class="photo-cap">Blonde color, finished in the chair.</figcaption>
+    </figure>
+    <figure>
+      <img src="img/tss-real-6.jpg" alt="A stylist brushing a client's long highlighted hair in a black salon chair at The Social Suite">
+      <figcaption class="photo-cap">A stylist at work in the salon.</figcaption>
+    </figure>
+    <figure>
+      <img src="img/tss-real-4.jpg" alt="Back view of a client with long brown hair with caramel highlights, seated in a salon chair at The Social Suite">
+      <figcaption class="photo-cap">Caramel highlights on long hair.</figcaption>
+    </figure>
+    <figure>
+      <img src="img/tss-real-5.jpg" alt="Close-up of balayage highlights on brown hair, color work done at The Social Suite">
+      <figcaption class="photo-cap">Balayage detail.</figcaption>
+    </figure>
+  </div>
+  <p class="photo-cap" style="margin-top:18px;">All photos are real customer photos from The Social Suite's Google Maps listing, not stock images.</p>
 </section>
 
 <section class="block wrap" id="visit">
