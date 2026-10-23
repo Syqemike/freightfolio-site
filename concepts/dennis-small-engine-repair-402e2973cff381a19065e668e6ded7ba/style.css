@@ -1,0 +1,462 @@
+/* Dennis' Small Engine Repair - HONEST WORKSHOP theme
+   Palette: navy #1f2a44, barn red #b3392e, kraft #e8dcc8, off-white #faf7f0
+   Type: Roboto Slab (display), Open Sans (body) */
+
+:root {
+  --navy: #1f2a44;
+  --red: #b3392e;
+  --red-dark: #93301f;
+  --kraft: #e8dcc8;
+  --paper: #faf7f0;
+  --ink: #2b2b2b;
+  --muted: #5c5c5c;
+  --line: #d8cdb4;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+  font-size: 17px;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+/* Disclosure bar */
+.disclosure {
+  background: var(--kraft);
+  color: var(--navy);
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--line);
+  font-weight: 600;
+}
+
+/* Header */
+header.site {
+  background: var(--navy);
+  color: #fff;
+  padding: 18px 0 0;
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-bottom: 14px;
+}
+
+.brand h1 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 30px;
+  line-height: 1.15;
+  color: #fff;
+}
+
+.brand h1 .apos { color: var(--kraft); }
+
+.brand .tagline {
+  color: var(--kraft);
+  font-size: 14px;
+  margin-top: 4px;
+  letter-spacing: 0.02em;
+}
+
+.call-btn {
+  display: inline-block;
+  background: var(--red);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 26px;
+  border-radius: 6px;
+  font-size: 17px;
+  border: 2px solid var(--red);
+  transition: background 0.15s ease;
+}
+
+.call-btn:hover { background: var(--red-dark); border-color: var(--red-dark); }
+
+.call-btn .num { display: block; font-size: 15px; font-weight: 600; }
+
+nav.main {
+  border-top: 1px solid rgba(255,255,255,0.18);
+}
+
+nav.main ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+nav.main a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-weight: 600;
+  font-size: 15px;
+  border-bottom: 3px solid transparent;
+}
+
+nav.main a:hover { background: rgba(255,255,255,0.08); }
+nav.main a.active { border-bottom-color: var(--red); background: rgba(255,255,255,0.06); }
+
+/* Hero */
+.hero { position: relative; background: var(--navy); }
+
+.hero img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.hero-panel {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  background: rgba(31, 42, 68, 0.92);
+  color: #fff;
+  padding: 26px 0;
+}
+
+.hero-panel h2 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.hero-panel h2 em { color: var(--kraft); font-style: normal; }
+
+.hero-panel p { color: #dfe3ec; max-width: 640px; }
+
+.hero-panel .cta-row { margin-top: 14px; }
+
+/* Sections */
+section.block { padding: 52px 0; }
+section.block.kraft { background: var(--kraft); }
+section.block.navy { background: var(--navy); color: #fff; }
+
+section.block h2.section-title {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 30px;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+section.block.navy h2.section-title { color: #fff; }
+
+.section-sub { color: var(--muted); margin-bottom: 28px; max-width: 720px; }
+section.block.navy .section-sub { color: #c9cfdd; }
+
+.rule {
+  width: 64px; height: 4px; background: var(--red);
+  margin: 0 0 22px;
+}
+
+/* Price cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--red);
+  border-radius: 8px;
+  padding: 28px 26px;
+  box-shadow: 0 2px 8px rgba(31,42,68,0.08);
+}
+
+.card h3 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.card .price {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 40px;
+  color: var(--red);
+  line-height: 1;
+  margin: 10px 0 4px;
+}
+
+.card .price-note { font-size: 14px; color: var(--muted); margin-bottom: 14px; }
+
+.card ul { list-style: none; margin-top: 12px; }
+
+.card ul li {
+  padding: 7px 0 7px 26px;
+  position: relative;
+  border-top: 1px solid #eee6d3;
+  font-size: 15.5px;
+}
+
+.card ul li::before {
+  content: "";
+  position: absolute; left: 2px; top: 14px;
+  width: 10px; height: 10px;
+  background: var(--red);
+  border-radius: 2px;
+}
+
+.card figure { margin: 0 0 16px; }
+.card figure img { border-radius: 6px; }
+.card figcaption { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+
+/* Warranty band */
+.warranty {
+  background: var(--red);
+  color: #fff;
+  text-align: center;
+  padding: 34px 20px;
+}
+
+.warranty h2 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.warranty p { max-width: 640px; margin: 0 auto; color: #fbeee9; }
+
+/* Two-column fit panel */
+.fit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.fit .yes, .fit .no {
+  border-radius: 8px;
+  padding: 26px;
+  border: 1px solid var(--line);
+}
+
+.fit .yes { background: #fff; border-top: 5px solid var(--navy); }
+.fit .no { background: #f3ede0; border-top: 5px solid var(--muted); }
+
+.fit h3 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 20px;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.fit ul { list-style: disc; padding-left: 22px; }
+.fit li { margin-bottom: 8px; }
+
+/* Trust strip */
+.trust {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.trust .item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px 16px;
+}
+
+.trust .big {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 26px;
+  color: var(--navy);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.trust .small { font-size: 14px; color: var(--muted); }
+
+/* Ethos / media rows */
+.media-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.media-row figure img { border-radius: 8px; border: 1px solid var(--line); }
+.media-row figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; }
+
+.media-row h2 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 30px;
+  color: var(--navy);
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+blockquote.shop-words {
+  border-left: 5px solid var(--red);
+  background: #fff;
+  padding: 18px 22px;
+  margin: 20px 0;
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 19px;
+  color: var(--navy);
+  border-radius: 0 8px 8px 0;
+}
+
+blockquote.shop-words cite {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 8px;
+  font-style: normal;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.gallery-grid figure {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery-grid img { width: 100%; height: 240px; object-fit: cover; }
+
+.gallery-grid figcaption {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.gallery-grid figcaption strong { color: var(--ink); display: block; font-size: 15px; }
+
+/* Hours table */
+.hours-table {
+  width: 100%;
+  max-width: 520px;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hours-table th, .hours-table td {
+  text-align: left;
+  padding: 12px 18px;
+  border-bottom: 1px solid #eee6d3;
+}
+
+.hours-table th {
+  background: var(--navy);
+  color: #fff;
+  font-family: 'Roboto Slab', Georgia, serif;
+}
+
+.hours-table tr:last-child td { border-bottom: none; }
+.hours-table .closed { color: var(--red); font-weight: 700; }
+
+/* Visit info */
+.visit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.visit-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.visit-card h3 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  color: var(--navy);
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.visit-card p { margin-bottom: 10px; }
+
+.text-link { color: var(--red); font-weight: 600; }
+.text-link:hover { color: var(--red-dark); }
+
+/* CTA band */
+.cta-band {
+  background: var(--navy);
+  color: #fff;
+  text-align: center;
+  padding: 48px 20px;
+}
+
+.cta-band h2 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.cta-band p { color: #c9cfdd; margin-bottom: 20px; }
+
+/* Footer */
+footer.site {
+  background: var(--navy);
+  color: #c9cfdd;
+  padding: 40px 0 28px;
+  font-size: 14.5px;
+  border-top: 4px solid var(--red);
+}
+
+footer.site .cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+footer.site h4 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+footer.site a { color: var(--kraft); }
+
+footer.site .fine {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 18px;
+  font-size: 13px;
+  color: #9aa3bb;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .hero img { height: 300px; }
+  .hero-panel h2 { font-size: 26px; }
+  .media-row, .fit, .visit-grid { grid-template-columns: 1fr; }
+  .brand h1 { font-size: 24px; }
+  section.block { padding: 36px 0; }
+  nav.main a { padding: 10px 12px; font-size: 14px; }
+}
