@@ -1,0 +1,32 @@
+PHOTO PROVENANCE — Coastal Flowers And Design concept site
+================================================================
+REAL BUSINESS PHOTOS: none available. The image search for
+"Coastal Flowers And Design Gulf Shores" returned only unrelated
+shops (Quad Cities, Australia, Emerald Coast FL, Murrells Inlet SC).
+The business's own site (coastalflowersanddesign.com) is a bare
+static page with no usable photography. All photos below are
+Pexels stock; each was visually verified before use, and every one
+is captioned "Stock photo" on the site.
+
+wedding-bouquet.jpg     — https://www.pexels.com/photo/169193/
+                         Stock photo. Beach wedding ceremony with
+                         pink and yellow floral centerpieces.
+ceremony-florals.jpg    — https://www.pexels.com/photo/931179/
+                         Stock photo. Pastel rose bouquet.
+sympathy-bouquet.jpg    — https://www.pexels.com/photo/931180/
+                         Stock photo. Pale peach and cream bouquet,
+                         gentle tones suited to sympathy.
+tropical-arrangement.jpg — https://www.pexels.com/photo/32898860/
+                         Stock photo. Bird-of-paradise and tropical
+                         blooms arrangement.
+tropical-hand.jpg       — https://www.pexels.com/photo/5496157/
+                         Stock photo. A hand holding tropical flowers.
+everyday-bouquet.jpg    — https://www.pexels.com/photo/931177/
+                         Stock photo. Pink ranunculus bouquet.
+seasonal-arrangement.jpg — https://www.pexels.com/photo/931162/
+                         Stock photo. Mixed peony and rose arrangement.
+gift-bouquet.jpg        — https://www.pexels.com/photo/1187079/
+                         Stock photo. Red rose bouquet.
+
+All files compressed locally: RGB JPEG, max width 1600px, quality 80.
+Every image verified under 5 MB.

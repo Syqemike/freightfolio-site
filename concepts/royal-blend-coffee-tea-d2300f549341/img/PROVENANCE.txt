@@ -1,0 +1,35 @@
+PHOTO PROVENANCE — Royal Blend Coffee & Tea (Metairie, LA)
+All images are STOCK photos from Pexels. None are real photos of the business.
+A real-photo search for "Royal Blend Coffee Metairie" returned only unrelated businesses
+(royalpralinecompany.com coffee products, a generic "internet cafe in Metairie" listing photo,
+and other stock sources), so stock was used with "Stock photo" captions per Mike's rule.
+
+hero.jpg — Warm nighttime cafe interior, laptop on a wooden table.
+  Source: Pexels photo 33219214 ("cozy cafe with laptop on wooden table at night")
+  URL: https://images.pexels.com/photos/33219214/pexels-photo-33219214/free-photo-of-cozy-cafe-with-laptop-on-wooden-table-at-night.jpeg
+  STOCK photo (portrait crop used as hero with CSS cover crop).
+
+laptop.jpg — Man drinking coffee while working on a laptop in a bright cafe.
+  Source: Pexels photo 8937352
+  URL: https://images.pexels.com/photos/8937352/pexels-photo-8937352.jpeg
+  STOCK photo.
+
+latte.jpg — Cappuccino with heart latte art in a blue cup on a wooden table.
+  Source: Pexels photo 459489
+  URL: https://images.pexels.com/photos/459489/pexels-photo-459489.jpeg
+  STOCK photo.
+
+panini.jpg — Panini sandwiches on a plate, flat-lay with salad and potatoes.
+  Source: Pexels photo 25225626
+  URL: https://images.pexels.com/photos/25225626/pexels-photo-25225626.jpeg
+  STOCK photo.
+
+pastry.jpg — Cinnamon rolls on bakery racks.
+  Source: Pexels photo 5964500
+  URL: https://images.pexels.com/photos/5964500/pexels-photo-5964500.jpeg
+  STOCK photo.
+
+beans.jpg — Burlap bag filled with roasted coffee beans.
+  Source: Pexels photo 33996444 ("close-up of a burlap bag filled with coffee beans")
+  URL: https://images.pexels.com/photos/33996444/pexels-photo-33996444/free-photo-of-close-up-of-a-burlap-bag-filled-with-coffee-beans.jpeg
+  STOCK photo.

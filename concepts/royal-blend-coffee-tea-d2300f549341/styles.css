@@ -1,0 +1,214 @@
+/* Royal Blend Coffee & Tea, Website Concept
+   Corner-cafe chalk menu in a Creole cottage.
+   Parchment #F4EDDE · Brick #8E443D · Brass #B08D3E · Olive #7C7A4D */
+
+:root{
+  --parchment:#F4EDDE;
+  --parchment-deep:#EAE0C8;
+  --ink:#2E2620;
+  --brick:#8E443D;
+  --brick-deep:#5C2B26;
+  --brass:#B08D3E;
+  --olive:#7C7A4D;
+  --olive-deep:#58563A;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  font-family:"Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+  background:var(--parchment);
+  color:var(--ink);
+  font-size:17px;
+  line-height:1.65;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(142,68,61,0.025) 0 2px, transparent 2px 5px);
+}
+
+.serif{font-family:"Libre Caslon Text", Georgia, serif;}
+
+img{max-width:100%;display:block;}
+
+/* ------- disclosure strip ------- */
+.disclosure{
+  background:var(--brick-deep);
+  color:var(--parchment);
+  text-align:center;
+  font-size:12.5px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  padding:9px 16px;
+  font-weight:600;
+}
+
+/* ------- header ------- */
+.site-head{
+  background:var(--parchment);
+  border-bottom:3px double var(--brass);
+  padding:20px 0 16px;
+}
+.head-inner{
+  max-width:1180px;margin:0 auto;padding:0 28px;
+  display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+}
+.brand{font-size:30px;line-height:1.05;color:var(--brick-deep);letter-spacing:0.01em;}
+.brand small{
+  display:block;font-family:"Source Sans 3",sans-serif;font-size:12px;
+  letter-spacing:0.32em;text-transform:uppercase;color:var(--olive);margin-top:6px;font-weight:600;
+}
+nav.mainnav{display:flex;gap:26px;align-items:center;flex-wrap:wrap;}
+nav.mainnav a{
+  color:var(--ink);text-decoration:none;font-weight:600;font-size:15.5px;
+  letter-spacing:0.04em;border-bottom:2px solid transparent;padding-bottom:3px;
+}
+nav.mainnav a:hover, nav.mainnav a[aria-current="page"]{color:var(--brick);border-bottom-color:var(--brass);}
+.call-btn{
+  background:var(--brick);color:var(--parchment)!important;text-decoration:none;
+  font-weight:700;font-size:15px;letter-spacing:0.05em;
+  padding:12px 22px;border-radius:2px;border-bottom:none!important;
+  box-shadow:0 2px 0 var(--brick-deep);
+}
+.call-btn:hover{background:var(--brick-deep);color:var(--parchment)!important;}
+
+/* ------- hero ------- */
+.hero{position:relative;min-height:62vh;display:flex;align-items:flex-end;overflow:hidden;background:var(--brick-deep);}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(to top, rgba(46,22,18,0.82) 0%, rgba(46,22,18,0.35) 55%, rgba(46,22,18,0.15) 100%);}
+.hero-text{position:relative;max-width:1180px;margin:0 auto;padding:72px 28px 48px;width:100%;}
+.hero-eyebrow{
+  color:var(--parchment);font-size:13px;letter-spacing:0.38em;text-transform:uppercase;
+  font-weight:700;margin-bottom:14px;
+}
+.hero h1{
+  font-family:"Libre Caslon Text", Georgia, serif;
+  font-size:clamp(46px, 7vw, 88px);line-height:1.02;color:var(--parchment);
+  font-weight:400;max-width:12ch;
+  text-shadow:0 2px 18px rgba(0,0,0,0.45);
+}
+.hero-rule{width:110px;height:3px;background:var(--brass);margin:22px 0;}
+.hero-sub{color:var(--parchment);font-size:20px;max-width:44ch;opacity:0.96;}
+.hero-actions{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;}
+.hero-actions .ghost{
+  border:2px solid var(--parchment);color:var(--parchment);text-decoration:none;
+  padding:11px 22px;font-weight:700;font-size:15px;letter-spacing:0.04em;border-radius:2px;
+}
+.hero-actions .ghost:hover{background:rgba(244,237,222,0.15);}
+
+/* ------- split-screen sections ------- */
+.split{max-width:1180px;margin:0 auto;padding:84px 28px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.split.flip .split-media{order:2;}
+.split.flip .split-copy{order:1;}
+.split-media{position:relative;}
+.split-media img{border-radius:3px;box-shadow:10px 10px 0 var(--parchment-deep), 10px 10px 0 3px var(--brass);}
+.photo-cap{margin-top:14px;font-size:13px;color:#6d6154;letter-spacing:0.06em;font-style:italic;}
+.eyebrow{
+  font-size:12.5px;letter-spacing:0.32em;text-transform:uppercase;font-weight:700;
+  color:var(--olive-deep);margin-bottom:14px;
+}
+.split h2{
+  font-family:"Libre Caslon Text", Georgia, serif;font-weight:400;
+  font-size:clamp(30px, 3.6vw, 44px);line-height:1.12;color:var(--brick-deep);margin-bottom:16px;
+}
+.split p{margin-bottom:14px;max-width:48ch;}
+.ledger{margin-top:20px;border-top:2px solid var(--brass);}
+.ledger-item{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:11px 2px;border-bottom:1px dotted #b9a98a;}
+.ledger-item .name{font-family:"Libre Caslon Text", Georgia, serif;font-size:19px;color:var(--ink);}
+.ledger-item .tag{font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:var(--olive);font-weight:700;white-space:nowrap;}
+.text-link{color:var(--brick);font-weight:700;text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px;}
+
+/* ------- menu board (chalk ledger) ------- */
+.board{
+  background:var(--brick-deep);color:var(--parchment);
+  background-image:radial-gradient(rgba(244,237,222,0.05) 1px, transparent 1px);
+  background-size:26px 26px;
+  border-top:6px solid var(--brass);border-bottom:6px solid var(--brass);
+}
+.board-inner{max-width:1080px;margin:0 auto;padding:84px 28px;}
+.board h2{
+  font-family:"Libre Caslon Text", Georgia, serif;font-weight:400;text-align:center;
+  font-size:clamp(34px,4.5vw,52px);color:var(--parchment);margin-bottom:10px;
+}
+.board-sub{text-align:center;color:var(--parchment);opacity:0.85;margin-bottom:44px;font-size:18px;}
+.board-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px 64px;}
+.board-sec h3{
+  font-family:"Libre Caslon Text", Georgia, serif;font-size:24px;font-weight:400;
+  color:var(--brass);margin-bottom:14px;letter-spacing:0.02em;
+  border-bottom:1px solid rgba(176,141,62,0.5);padding-bottom:8px;
+}
+.board-sec ul{list-style:none;}
+.board-sec li{padding:7px 0;font-size:17.5px;border-bottom:1px dotted rgba(244,237,222,0.25);}
+.board-sec li:last-child{border-bottom:none;}
+.board-sec .sig{color:var(--brass);font-size:12.5px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;margin-left:10px;}
+.board-note{margin-top:44px;text-align:center;font-style:italic;opacity:0.85;font-size:16px;}
+
+/* ------- hours sign ------- */
+.hours-sign{
+  background:var(--olive-deep);color:var(--parchment);border-radius:4px;
+  padding:34px 30px;box-shadow:8px 8px 0 var(--parchment-deep);
+  max-width:520px;
+}
+.hours-sign h3{
+  font-family:"Libre Caslon Text", Georgia, serif;font-weight:400;font-size:26px;
+  margin-bottom:14px;color:var(--parchment);
+}
+.hours-row{display:flex;justify-content:space-between;gap:20px;padding:9px 0;border-bottom:1px dotted rgba(244,237,222,0.35);font-size:17px;}
+.hours-row:last-child{border-bottom:none;}
+
+/* ------- page intro ------- */
+.page-intro{max-width:1180px;margin:0 auto;padding:76px 28px 12px;text-align:center;}
+.page-intro h1{
+  font-family:"Libre Caslon Text", Georgia, serif;font-weight:400;
+  font-size:clamp(40px,5.5vw,64px);color:var(--brick-deep);margin-bottom:14px;line-height:1.05;
+}
+.page-intro .rule{width:90px;height:3px;background:var(--brass);margin:20px auto;}
+.page-intro p{max-width:62ch;margin:0 auto;font-size:19px;color:#4a4136;}
+
+/* ------- full menu ledger (menu page) ------- */
+.menu-page{max-width:1080px;margin:0 auto;padding:56px 28px 84px;display:grid;grid-template-columns:1fr 1fr;gap:56px 72px;}
+.menu-sec h2{
+  font-family:"Libre Caslon Text", Georgia, serif;font-weight:400;font-size:29px;
+  color:var(--brick-deep);margin-bottom:8px;
+}
+.menu-sec .lede{font-size:15.5px;color:#6d6154;margin-bottom:12px;font-style:italic;}
+.menu-sec ul{list-style:none;border-top:2px solid var(--brass);}
+.menu-sec li{
+  display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+  padding:10px 2px;border-bottom:1px dotted #b9a98a;font-size:17.5px;
+}
+.menu-sec .item-name{font-family:"Libre Caslon Text", Georgia, serif;}
+.menu-sec .item-note{font-size:14px;color:#6d6154;font-style:italic;white-space:nowrap;}
+.menu-sec.full{grid-column:1/-1;}
+
+/* ------- photo trio ------- */
+.trio{max-width:1180px;margin:0 auto;padding:20px 28px 84px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;}
+.trio figure img{border-radius:3px;height:300px;width:100%;object-fit:cover;}
+.trio figcaption{font-size:13px;font-style:italic;color:#6d6154;margin-top:10px;letter-spacing:0.04em;}
+
+/* ------- cta band ------- */
+.cta-band{background:var(--brick-deep);color:var(--parchment);text-align:center;padding:72px 28px;}
+.cta-band h2{font-family:"Libre Caslon Text", Georgia, serif;font-weight:400;font-size:clamp(30px,4vw,44px);margin-bottom:12px;}
+.cta-band p{opacity:0.9;margin-bottom:26px;font-size:18px;}
+.cta-band .call-btn{display:inline-block;background:var(--parchment);color:var(--brick-deep)!important;font-size:17px;padding:14px 30px;box-shadow:0 2px 0 var(--brass);}
+
+/* ------- footer ------- */
+footer{background:#241a14;color:var(--parchment);padding:56px 28px 30px;}
+.foot-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;}
+.foot-inner h4{font-family:"Libre Caslon Text", Georgia, serif;font-weight:400;font-size:20px;color:var(--brass);margin-bottom:12px;}
+.foot-inner p, .foot-inner a{font-size:15.5px;color:var(--parchment);opacity:0.92;line-height:1.8;}
+.foot-inner a{color:var(--parchment);text-decoration:underline;text-decoration-color:var(--brass);text-underline-offset:3px;}
+.foot-base{max-width:1180px;margin:44px auto 0;padding-top:20px;border-top:1px solid rgba(244,237,222,0.2);font-size:13px;opacity:0.7;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+
+@media (max-width:900px){
+  .split{grid-template-columns:1fr;gap:36px;padding:56px 22px;}
+  .split.flip .split-media{order:0;}
+  .split.flip .split-copy{order:0;}
+  .board-grid{grid-template-columns:1fr;gap:36px;}
+  .menu-page{grid-template-columns:1fr;gap:40px;padding:44px 22px 64px;}
+  .trio{grid-template-columns:1fr;}
+  .trio figure img{height:240px;}
+  .foot-inner{grid-template-columns:1fr;}
+  .brand{font-size:25px;}
+  .hero{min-height:52vh;}
+}
