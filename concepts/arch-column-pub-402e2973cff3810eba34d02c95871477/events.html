@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Lineup | Arch &amp; Column Pub | Columbia, MO</title>
+<meta name="description" content="The weekly lineup at Arch & Column Pub: karaoke Wednesdays and Saturdays, drag shows Thursdays, open late Fridays.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --coal:#161114; --coal2:#211619; --coal3:#2b1d20;
+    --cream:#f4ead8; --cream-dim:#cbbfa7; --faint:#9a8c76;
+    --brick:#c8502f; --brick-deep:#9c3a20;
+    --amber:#ffc531; --amber-dim:#e0a524;
+    --rule:#3a2925;
+  }
+  body { background:var(--coal); color:var(--cream); font-family:'Work Sans',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.65; }
+  a { color:inherit; }
+  img { display:block; max-width:100%; }
+  .wrap { max-width:1140px; margin:0 auto; padding:0 26px; }
+  .display { font-family:'Bebas Neue',Impact,'Arial Narrow',sans-serif; font-weight:400; letter-spacing:.04em; }
+  .kicker { color:var(--amber); text-transform:uppercase; letter-spacing:.34em; font-size:12px; font-weight:700; margin-bottom:14px; }
+  .util { background:var(--coal2); border-bottom:1px solid var(--rule); font-size:12.5px; color:var(--faint); }
+  .util .wrap { display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; padding-top:8px; padding-bottom:8px; }
+  .util .preview-tag { color:var(--amber); letter-spacing:.22em; text-transform:uppercase; font-size:11px; font-weight:700; }
+  .util a { color:var(--cream); text-decoration:none; }
+  .util a:hover { color:var(--amber); }
+  .mast { background:var(--coal); border-bottom:1px solid var(--rule); position:sticky; top:0; z-index:20; }
+  .mast .wrap { display:flex; align-items:center; justify-content:space-between; gap:18px; padding-top:13px; padding-bottom:13px; }
+  .brand { font-family:'Bebas Neue',Impact,'Arial Narrow',sans-serif; font-size:27px; letter-spacing:.08em; color:var(--cream); text-decoration:none; line-height:1; }
+  .brand .amp { color:var(--amber); }
+  .navlinks { display:flex; gap:24px; font-size:13px; letter-spacing:.16em; text-transform:uppercase; font-weight:600; }
+  .navlinks a { color:var(--cream-dim); text-decoration:none; }
+  .navlinks a:hover, .navlinks a.on { color:var(--amber); }
+  .btn { display:inline-block; background:var(--amber); color:#1a1210; font-weight:700; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:13px 26px; text-decoration:none; border-radius:3px; }
+  .btn:hover { background:#ffd25e; }
+  .btn.hollow { background:transparent; color:var(--amber); border:2px solid var(--amber); }
+  .btn.hollow:hover { background:rgba(255,197,49,.1); }
+  .mobile-nav { display:none; }
+  @media (max-width:820px){
+    .navlinks{ display:none; }
+    .mobile-nav { display:flex; gap:20px; overflow-x:auto; padding:12px 26px; background:var(--coal2); border-bottom:1px solid var(--rule); font-size:12px; letter-spacing:.14em; text-transform:uppercase; font-weight:600; }
+    .mobile-nav a { color:var(--cream-dim); text-decoration:none; white-space:nowrap; }
+    .mobile-nav a.on { color:var(--amber); }
+  }
+  section.block { padding:78px 26px; scroll-margin-top:90px; }
+  h1.ptitle { font-family:'Bebas Neue',Impact,'Arial Narrow',sans-serif; font-size:clamp(52px,8vw,92px); letter-spacing:.05em; line-height:1; margin-bottom:10px; }
+  h1.ptitle .accent { color:var(--brick); }
+  p.plead { color:var(--cream-dim); max-width:640px; font-size:18px; margin-bottom:44px; }
+  .event { display:grid; grid-template-columns:200px 1fr 220px; gap:10px 40px; border:1px solid var(--rule); background:var(--coal2); margin-bottom:22px; }
+  .event .side { background:var(--brick); color:#fff; padding:34px 30px; display:flex; flex-direction:column; justify-content:center; }
+  .event .side .day { font-family:'Bebas Neue',Impact,'Arial Narrow',sans-serif; font-size:40px; letter-spacing:.06em; line-height:1; }
+  .event .side .hrs { font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:#ffe9dc; margin-top:8px; }
+  .event .body { padding:34px 10px; }
+  .event .body h3 { font-family:'Bebas Neue',Impact,'Arial Narrow',sans-serif; font-size:32px; letter-spacing:.05em; color:var(--amber); margin-bottom:10px; }
+  .event .body p { color:var(--cream-dim); font-size:16px; }
+  .event figure { margin:0; }
+  .event figure img { width:100%; height:100%; min-height:230px; object-fit:cover; }
+  @media (max-width:860px){ .event{ grid-template-columns:1fr; } .event .body{ padding:10px 30px 30px; } }
+  .notes { border:1px dashed var(--rule); padding:30px 34px; margin-top:40px; background:var(--coal2); }
+  .notes h3 { font-family:'Bebas Neue',Impact,'Arial Narrow',sans-serif; font-size:26px; letter-spacing:.06em; color:var(--amber); margin-bottom:10px; }
+  .notes ul { list-style:none; color:var(--cream-dim); font-size:16px; }
+  .notes li { padding:6px 0 6px 26px; position:relative; }
+  .notes li::before { content:"\25B8"; color:var(--brick); position:absolute; left:6px; }
+  .photo-cap { margin-top:10px; font-size:12px; letter-spacing:.06em; color:var(--faint); }
+  .visit-strip { background:var(--brick); color:#fff; }
+  .visit-strip .wrap { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; padding-top:30px; padding-bottom:30px; }
+  .visit-strip h3 { font-family:'Bebas Neue',Impact,'Arial Narrow',sans-serif; font-size:34px; letter-spacing:.05em; }
+  .visit-strip p { color:#ffe9dc; font-size:15px; }
+  .visit-strip .btn { background:#161114; color:var(--cream); }
+  .visit-strip .btn:hover { background:#2b1d20; }
+  footer { background:#0e0b0d; border-top:1px solid var(--rule); }
+  footer .wrap { padding-top:44px; padding-bottom:44px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:30px; }
+  footer h5 { font-size:12px; letter-spacing:.24em; text-transform:uppercase; color:var(--amber); margin-bottom:12px; }
+  footer p, footer a { color:var(--faint); font-size:14px; text-decoration:none; }
+  footer a:hover { color:var(--amber); }
+  footer .fine { grid-column:1 / -1; border-top:1px solid var(--rule); padding-top:18px; font-size:12px; color:#6d5f55; }
+  @media (max-width:700px){ footer .wrap{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <span class="preview-tag">Website Concept &middot; Design Preview</span>
+    <span>Open Wed through Sat &nbsp;&middot;&nbsp; <a href="tel:+15734418088">(573) 441-8088</a></span>
+  </div>
+</div>
+
+<header class="mast">
+  <div class="wrap">
+    <a class="brand" href="index.html">ARCH <span class="amp">&amp;</span> COLUMN <span class="amp">PUB</span></a>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="events.html" class="on">Lineup</a>
+      <a href="about.html">About</a>
+      <a href="photos.html">Photos</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+    <a class="btn" href="tel:+15734418088">Call to book</a>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="events.html" class="on">Lineup</a>
+      <a href="about.html">About</a>
+      <a href="photos.html">Photos</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+
+
+<section class="block">
+  <div class="wrap">
+    <p class="kicker">Arch &amp; Column Pub</p>
+    <h1 class="ptitle">THE WEEKLY <span class="accent">LINEUP</span></h1>
+    <p class="plead">Four nights a week, the same way every week. Karaoke midweek and on Saturdays, drag on Thursdays, and long Fridays. The bar is closed Sunday through Tuesday.</p>
+
+    <div class="event">
+      <div class="side"><div class="day">WED</div><div class="hrs">5pm - 1am</div></div>
+      <div class="body">
+        <h3>KARAOKE NIGHT</h3>
+        <p>Wednesday is the first karaoke night of the week. Sign up, pick your song, and take the mic in front of a room that wants you to nail it.</p>
+      </div>
+      <figure><img src="img/photo-bar-drink.jpg" alt="A hard seltzer over ice in a tall glass on the bar at Arch and Column Pub"></figure>
+    </div>
+
+    <div class="event">
+      <div class="side"><div class="day">THU</div><div class="hrs">5pm - 12am</div></div>
+      <div class="body">
+        <h3>DRAG SHOW NIGHT</h3>
+        <p>Thursday belongs to the drag show. It is the room's regular weekly show night, hosted at the bar. Come ready for a crowd.</p>
+      </div>
+      <figure><img src="img/photo-rainbow.jpg" alt="A glass rainbow decoration hanging above the bar at Arch and Column Pub"></figure>
+    </div>
+
+    <div class="event">
+      <div class="side"><div class="day">FRI</div><div class="hrs">5pm - 1:30am</div></div>
+      <div class="body">
+        <h3>OPEN LATE</h3>
+        <p>Friday keeps the doors open until 1:30 in the morning. Cheap ice-cold drinks, the patio in season, and no reason to hurry home.</p>
+      </div>
+      <figure><img src="img/photo-back-bar.jpg" alt="Shelves of liquor bottles and glassware behind the bar at Arch and Column Pub"></figure>
+    </div>
+
+    <div class="event">
+      <div class="side"><div class="day">SAT</div><div class="hrs">6pm - 1:30am</div></div>
+      <div class="body">
+        <h3>KARAOKE NIGHT</h3>
+        <p>Saturday is the second karaoke night, with doors at 6pm and the bar open until 1:30am.</p>
+      </div>
+      <figure><img src="img/photo-pitcher.jpg" alt="A glass pitcher of an iced drink with lime served on the bar at Arch and Column Pub"></figure>
+    </div>
+
+    <div class="notes">
+      <h3>GOOD TO KNOW</h3>
+      <ul>
+        <li>The patio is open spring through fall.</li>
+        <li>Outside food is welcome. There is no kitchen, so bring dinner from anywhere.</li>
+        <li>Planning a birthday or a group night out? Call the bar to work it out.</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:30px;"><a class="btn" href="tel:+15734418088">Call to book: (573) 441-8088</a></p>
+    <p class="photo-cap">Photos are real photos of Arch &amp; Column Pub from its public listing.</p>
+  </div>
+</section>
+
+<div class="visit-strip">
+  <div class="wrap">
+    <div>
+      <h3 class="display">SEE YOU AT THE BAR</h3>
+      <p>1301 Business Loop 70 E, Columbia, MO 65201 &middot; Open Wed-Sat</p>
+    </div>
+    <a class="btn" href="tel:+15734418088">Call (573) 441-8088</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h5>Arch &amp; Column Pub</h5>
+      <p>1301 Business Loop 70 E<br>Columbia, MO 65201</p>
+    </div>
+    <div>
+      <h5>Reach out</h5>
+      <p><a href="tel:+15734418088">(573) 441-8088</a><br><a href="https://www.facebook.com/ArchandColumnPub">Facebook page</a></p>
+    </div>
+    <div>
+      <h5>Hours</h5>
+      <p>Wed 5pm - 1am<br>Thu 5pm - 12am<br>Fri 5pm - 1:30am<br>Sat 6pm - 1:30am<br>Sun - Tue closed</p>
+    </div>
+    <p style="font-size:14px; color:var(--cream-dim);">Rated 4.8 stars from 69 reviews on the Google listing.</p>
+    <p class="fine">This is a Website Concept and Design Preview prepared by Freightfolio. It is not the business's official website and does not imply any client relationship. Photos are real photos of the bar from its public listing. For the real Arch &amp; Column Pub, visit their Facebook page or call (573) 441-8088.</p>
+  </div>
+</footer>
+
+</body>
+</html>
