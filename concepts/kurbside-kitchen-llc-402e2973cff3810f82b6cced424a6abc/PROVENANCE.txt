@@ -1,0 +1,49 @@
+PHOTO PROVENANCE - Kurbside Kitchen LLC (Moss Point, MS)
+Concept site slug: kurbside-kitchen-llc-402e2973cff3810f82b6cced424a6abc
+All 5 photos below are REAL photos of this business, pulled from public listings.
+No stock photos used. No other business's photos or logos used.
+
+1. img/hero-spread.jpg
+   Real: DoorDash store header photo for this exact store
+   (fried fish, shrimp, burger, onion rings, fries)
+   Source page: https://www.doordash.com/store/Kurbside-Kitchen-LLC-Moss-Point-27562212/
+   Image URL: https://img.cdn4dd.com/p/fit=cover,format=auto,quality=50,width=700,height=400/media/store/header/de43c774-8f06-40e4-af62-c0e68ff55da8.jpg
+
+2. img/wings.jpg
+   Real: Google photo attached to this business's listing
+   (sauced wings with crinkle-cut fries in takeout box)
+   Source page: https://www.restaurantji.com/ms/moss-point/kurbside-kitchen-llc-/menu/
+   (also indexed via eatagram business page for this restaurant)
+   Image URL: https://lh3.googleusercontent.com/p/AF1QipN-3hlhNJ479NmO6FqsUoawfVxqEvrR6yfYYMGP=s700
+
+3. img/plates.jpg
+   Real: customer photo posted on the business's directory listing
+   (soul-food plates: fried chicken, mac and cheese, greens, dressing)
+   Source page: https://galaxyofstars.org/business-listing/kurbside-kitchen-llc-2/
+   Image URL: https://galaxyofstars.org/wp-content/uploads/2024/09/received_1164558504252842.jpeg
+
+4. img/turkey-wings.jpg
+   Real: customer photo posted on the business's directory listing
+   (turkey wings, lima beans, roasted red potatoes, corn on the cob)
+   Source page: https://galaxyofstars.org/business-listing/kurbside-kitchen-llc-2/
+   Image URL: https://galaxyofstars.org/wp-content/uploads/2024/09/img_4996.jpg
+
+5. img/fish-plate.jpg
+   Real: customer photo from the business's restaurantji photo gallery
+   (fried fish, fried green tomatoes, hush puppies, onion rings, potato salad)
+   Source page: https://www.restaurantji.com/ms/moss-point/kurbside-kitchen-llc-/menu/
+   Image URL: https://cdn10.localdatacdn.com/ms/moss-point/6137307/original/UETpl4G8gO.jpg
+
+Additional verification notes (not displayed on site):
+- Hours Wed-Sat 11:00 AM - 6:00 PM, closed Sun-Tue: confirmed via Facebook place
+  data and restaurantji, both for 3413 Elvira Granderson Rd, Moss Point, MS 39563.
+- Phone (228) 355-4638: confirmed across Facebook, DoorDash, restaurantji.
+- Their printed menu flyer (on restaurantji) confirms: open-face plates served with
+  potato salad, bread, 2 hush puppies, 2 onion rings, a fried green tomato and
+  Kurb Sauce; wings served with fries and 1 sauce; sauces include Garlic Parm,
+  Honey BBQ, Mild or HOT, Honey Sriracha, Honey Lemon, Lemon Pepper, Honey Gold,
+  Honey Mustard, Powder Ranch, Teriyaki; gumbo listed when available.
+- Facebook page http://www.facebook.com/kurbside.kitchenllc appears in the
+  business's Facebook place data; shown as a text link, unverified as resolving.
+- DoorDash store page (verbatim search-verified URL) used as an order link.
+  No verified Caviar store URL found; Caviar mentioned in text only.
