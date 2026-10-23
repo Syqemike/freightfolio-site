@@ -38,3 +38,9 @@ Every photo is honestly captioned "Stock photo:" on the page.
    Source URL: https://www.pexels.com/search/donuts%20box/ (image 30822875)
    Direct file: https://images.pexels.com/photos/30822875/pexels-photo-30822875/free-photo-of-delicious-donuts-and-coffee-in-bandung-cafe.jpeg
    Depicts: donuts and coffee at a cafe table.
+
+2026-10-22 run25 rebuild: replaced 3 duplicated photos with unique Pexels (free license) images:
+6. eclairs.jpg — Pexels photo 30461317 (https://www.pexels.com/photo/30461317/). Depicts: chocolate eclairs with icing on a white plate.
+7. maplebacon.jpg — Pexels photo 4109476 (https://www.pexels.com/photo/4109476/). Depicts: assorted gourmet donuts with toppings (caption is honest about content; card title is the research-grounded menu item).
+8. fritters.jpg — Pexels photo 39886104 (https://www.pexels.com/photo/39886104/). Depicts: golden fried fritters with apricot sauce.
+All downloaded from images.pexels.com at w=1260, visually verified, each under 5 MB.
