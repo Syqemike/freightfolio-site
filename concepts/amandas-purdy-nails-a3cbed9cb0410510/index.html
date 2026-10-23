@@ -5,184 +5,245 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>Amanda's Purdy Nails | Custom Nail Art in Reno, NV</title>
+<meta name="description" content="Amanda's Purdy Nails is a solo nail studio in Reno, Nevada. Custom enhancements with acrylic, gel, glitters, 3-D art and painted nail art. Call (775) 722-8616.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --black:#0c0c0e; --panel:#141417; --fuchsia:#ff2ea6; --purple:#8b3dff;
-    --silver:#c9ccd6; --gray:#8a8a94; --white:#f5f4f7; --line:#26262c;
+    --ivory:#faf6f0;
+    --paper:#f3ece2;
+    --cocoa:#2b1f1a;
+    --cocoa-soft:#5c4f47;
+    --berry:#a63a5e;
+    --berry-deep:#7f2a46;
+    --gold:#c9a15a;
+    --line:#e3d7c3;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:'Inter',sans-serif;background:var(--black);color:var(--white);font-weight:300;line-height:1.7;font-size:16px}
-  .preview-tag{position:fixed;top:14px;left:14px;z-index:50;background:rgba(12,12,14,.85);border:1px solid var(--line);color:var(--silver);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 14px;border-radius:100px}
-  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
-  header.nav{display:flex;align-items:center;justify-content:space-between;padding:26px 0;border-bottom:1px solid var(--line);margin-top:12px}
-  .wordmark{font-family:'Anton',sans-serif;font-size:26px;letter-spacing:1px}
-  .wordmark span{color:var(--fuchsia)}
-  nav.links{display:flex;gap:30px;flex-wrap:wrap}
-  nav.links a{color:var(--silver);text-decoration:none;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;transition:color .3s}
-  nav.links a:hover{color:var(--fuchsia)}
-  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;padding:70px 0 90px}
-  .hero .kick{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--fuchsia);margin-bottom:20px}
-  .hero h1{font-family:'Anton',sans-serif;font-size:clamp(58px,8.5vw,118px);line-height:.95;letter-spacing:1px;text-transform:uppercase;margin-bottom:26px}
-  .hero h1 .stroke{color:transparent;-webkit-text-stroke:2px var(--fuchsia)}
-  .hero p.lede{color:var(--gray);font-size:18px;max-width:46ch;margin-bottom:38px}
-  .hero img{width:100%;height:560px;object-fit:cover;border-radius:6px;transform:rotate(1.5deg);border:1px solid var(--line)}
-  .btn{display:inline-block;background:var(--fuchsia);color:#fff;text-decoration:none;padding:17px 44px;font-size:13px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;border-radius:4px;transition:transform .25s,box-shadow .25s}
-  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,46,166,.35)}
-  figcaption{font-size:12px;letter-spacing:1px;color:var(--gray);text-transform:uppercase;margin-top:12px}
-  .marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;white-space:nowrap}
-  .marquee span{font-family:'Anton',sans-serif;font-size:24px;letter-spacing:3px;text-transform:uppercase;color:var(--silver);margin-right:48px}
-  .marquee span b{color:var(--fuchsia);font-weight:400}
-  section{padding:84px 0;border-bottom:1px solid var(--line)}
-  .sec-kick{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--purple);margin-bottom:16px}
-  h2{font-family:'Anton',sans-serif;font-size:clamp(36px,5vw,64px);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;line-height:1.02}
-  h2 em{font-style:normal;color:var(--fuchsia)}
-  .sec-intro{color:var(--gray);max-width:64ch;margin-bottom:44px}
-  .specs{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-  .spec{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:34px;transition:border-color .3s,transform .3s}
-  .spec:hover{border-color:var(--fuchsia);transform:translateY(-3px)}
-  .spec h3{font-family:'Anton',sans-serif;font-size:24px;letter-spacing:1px;text-transform:uppercase;margin-bottom:12px}
-  .spec h3 i{font-style:normal;color:var(--fuchsia)}
-  .spec p{color:var(--gray);font-size:15px}
-  .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
-  .strip figure img{width:100%;height:300px;object-fit:cover;border-radius:6px;border:1px solid var(--line)}
-  .strip figure:nth-child(even) img{transform:translateY(24px)}
-  .reviews{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:60px;text-align:center;margin-top:10px}
-  .reviews .big{font-family:'Anton',sans-serif;font-size:clamp(50px,7vw,90px);color:var(--fuchsia);letter-spacing:2px}
-  .reviews p{color:var(--gray);max-width:60ch;margin:18px auto 0}
-  .duo{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
-  .hours table{width:100%;border-collapse:collapse}
-  .hours td{padding:16px 0;border-bottom:1px solid var(--line);font-size:17px}
-  .hours td:last-child{text-align:right;color:var(--silver)}
-  .hours .closed{color:var(--fuchsia)}
-  .visit-card{background:linear-gradient(135deg,#1a1a20,#141417);border:1px solid var(--line);border-radius:8px;padding:48px}
-  .visit-card h3{font-family:'Anton',sans-serif;font-size:30px;letter-spacing:1px;text-transform:uppercase;margin-bottom:14px}
-  .visit-card p{color:var(--gray);margin-bottom:8px}
-  .visit-card a{color:var(--fuchsia);text-decoration:none;font-weight:600}
-  .visit-card .btn{color:#fff;font-weight:700}
-  .phone-big{font-family:'Anton',sans-serif;font-size:40px;letter-spacing:1px;color:var(--white);text-decoration:none;display:block;margin:26px 0}
-  .phone-big:hover{color:var(--fuchsia)}
-  .social{margin-top:14px}
-  .social a{display:inline-block;border:1px solid var(--line);color:var(--silver);text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:10px 22px;border-radius:100px;transition:all .3s}
-  .social a:hover{border-color:var(--fuchsia);color:var(--fuchsia)}
-  footer{padding:48px 0 70px;font-size:13px;color:var(--gray)}
-  footer a{color:var(--fuchsia)}
-  @media(max-width:860px){
-    header.nav{flex-direction:column;align-items:flex-start;gap:14px}
-    .wordmark{font-size:23px;white-space:nowrap}
-    nav.links{gap:10px 20px}
-    nav.links a{font-size:11px}
-    a[href*="maps"]{white-space:nowrap}
-    .hero{grid-template-columns:1fr;padding:44px 0 60px}
-    .hero img{height:380px;transform:none}
-    .specs{grid-template-columns:1fr}
-    .strip{grid-template-columns:repeat(2,1fr)}
-    .strip figure:nth-child(even) img{transform:none}
-    .strip figure img{height:220px}
+  body{font-family:'Inter',sans-serif;background:var(--ivory);color:var(--cocoa);font-weight:400;line-height:1.7;font-size:16.5px}
+  .serif{font-family:'Playfair Display',serif}
+  img{display:block;max-width:100%}
+  a{color:var(--berry-deep)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 30px}
+
+  .preview-strip{background:var(--cocoa);color:var(--ivory);font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;text-align:center;padding:10px 18px}
+
+  .masthead{border-bottom:1px solid var(--line)}
+  .mast-inner{max-width:1180px;margin:0 auto;padding:26px 30px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  .wordmark{font-family:'Playfair Display',serif;font-size:31px;font-weight:700;color:var(--cocoa);text-decoration:none;line-height:1}
+  .wordmark em{font-style:italic;color:var(--berry-deep)}
+  .wordmark small{display:block;font-family:'Inter',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--cocoa-soft);margin-top:6px}
+  nav.sections{display:flex;gap:28px;flex-wrap:wrap}
+  nav.sections a{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--cocoa-soft);text-decoration:none;padding-bottom:4px;border-bottom:2px solid transparent}
+  nav.sections a:hover{color:var(--berry-deep);border-bottom-color:var(--berry)}
+
+  .hero{padding:70px 0 78px}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .hero .kick{font-size:12px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--berry-deep);margin-bottom:20px}
+  .hero h1{font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(48px,6.2vw,84px);line-height:1.04;letter-spacing:-.01em;margin-bottom:24px}
+  .hero h1 em{font-style:italic;color:var(--berry-deep)}
+  .hero .lede{font-size:18px;color:var(--cocoa-soft);max-width:44ch;margin-bottom:36px}
+  .cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+  .btn{display:inline-block;text-decoration:none;font-weight:600;font-size:14px;letter-spacing:.1em;text-transform:uppercase;padding:16px 36px;transition:all .25s}
+  .btn-solid{background:var(--berry);color:#fff}
+  .btn-solid:hover{background:var(--berry-deep)}
+  .btn-line{border:1px solid var(--cocoa);color:var(--cocoa)}
+  .btn-line:hover{background:var(--cocoa);color:var(--ivory)}
+  .hero figure{position:relative}
+  .hero figure img{width:100%;height:600px;object-fit:cover}
+  .hero figure::after{content:"";position:absolute;top:22px;left:22px;right:-22px;bottom:-22px;border:1px solid var(--gold);z-index:-1}
+  figcaption{font-size:12.5px;color:var(--cocoa-soft);font-style:italic;margin-top:12px}
+
+  .rule{max-width:1180px;margin:0 auto;border-top:1px solid var(--line)}
+
+  section.block{padding:76px 0}
+  .sec-kick{font-size:12px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--berry-deep);margin-bottom:14px}
+  .sec-title{font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(36px,4.4vw,56px);margin-bottom:14px;line-height:1.1}
+  .sec-intro{color:var(--cocoa-soft);font-size:17.5px;max-width:60ch;margin-bottom:44px}
+
+  .menu{border-top:1px solid var(--cocoa)}
+  .menu-row{display:grid;grid-template-columns:280px 1fr;gap:30px;padding:30px 4px;border-bottom:1px solid var(--line);align-items:baseline}
+  .menu-row h3{font-family:'Playfair Display',serif;font-size:26px;font-weight:700}
+  .menu-row p{color:var(--cocoa-soft);font-size:16px;max-width:56ch}
+
+  .gal-lede{margin-bottom:36px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .gallery figure img{height:380px;width:100%;object-fit:cover}
+  .gallery figure:nth-child(2){margin-top:44px}
+
+  .reviews{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .reviews .wrap{display:grid;grid-template-columns:220px 1fr;gap:50px;align-items:center}
+  .score{font-family:'Playfair Display',serif;font-size:88px;font-weight:600;color:var(--berry-deep);line-height:1}
+  .score small{display:block;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--cocoa-soft);margin-top:10px}
+  .reviews p{font-size:18.5px;color:var(--cocoa-soft);max-width:58ch}
+  .reviews p em{font-family:'Playfair Display',serif;font-style:italic;color:var(--cocoa)}
+
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line)}
+  .duo > div{padding:46px 44px}
+  .duo > div + div{border-left:1px solid var(--line)}
+  .duo h3{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;margin-bottom:20px}
+  .hours-row{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:16.5px}
+  .hours-row:last-child{border-bottom:none}
+  .hours-row .t{color:var(--cocoa-soft)}
+  .hours-row.closed .t{color:var(--berry-deep);font-weight:600}
+  .visit address{font-style:normal;font-size:18px;margin-bottom:10px}
+  .visit p{color:var(--cocoa-soft);margin-bottom:8px}
+  .phone-big{font-family:'Playfair Display',serif;font-size:42px;font-weight:600;color:var(--cocoa);text-decoration:none;display:block;margin:20px 0 26px}
+  .phone-big:hover{color:var(--berry-deep)}
+  .social{margin-top:26px}
+  .social a{display:inline-block;border:1px solid var(--line);color:var(--cocoa-soft);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:12px 24px;transition:all .25s}
+  .social a:hover{border-color:var(--berry);color:var(--berry-deep)}
+
+  footer{padding:44px 0 60px;border-top:1px solid var(--line)}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;color:var(--cocoa-soft)}
+  footer .fnote{max-width:64ch}
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero figure img{height:420px}
+    .menu-row{grid-template-columns:1fr;gap:8px}
+    .gallery{grid-template-columns:1fr 1fr}
+    .gallery figure:nth-child(2){margin-top:0}
+    .gallery figure img{height:280px}
+    .reviews .wrap{grid-template-columns:1fr;gap:20px}
     .duo{grid-template-columns:1fr}
-    .reviews{padding:40px 24px}
-    .visit-card{padding:32px}
-    .phone-big{font-size:30px}
+    .duo > div + div{border-left:none;border-top:1px solid var(--line)}
+    .phone-big{font-size:32px}
   }
+  @media (max-width:560px){.gallery{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class="preview-tag">Design preview</div>
-<div class="wrap">
-  <header class="nav">
-    <div class="wordmark">Amanda's <span>Purdy Nails</span></div>
-    <nav class="links">
+
+<div class="preview-strip">Design Preview &middot; A website concept for Amanda's Purdy Nails</div>
+
+<header class="masthead">
+  <div class="mast-inner">
+    <a class="wordmark" href="#top">Amanda's <em>Purdy Nails</em><small>Solo Studio &middot; Reno, NV</small></a>
+    <nav class="sections" aria-label="Sections">
       <a href="#art">Art</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
       <a href="#hours">Hours</a>
       <a href="#visit">Visit</a>
     </nav>
-  </header>
-
-  <div class="hero">
-    <div>
-      <div class="kick">Reno, Nevada</div>
-      <h1>Custom nail art in <span class="stroke">Reno</span></h1>
-      <p class="lede">Amanda's Purdy Nails is a solo nail studio in Reno. Amanda builds custom enhancements with acrylic, gel, glitters, 3-D art, and hand-painted designs.</p>
-      <a class="btn" href="tel:+17757228616">Call to book</a>
-    </div>
-    <figure>
-      <img src="img/art-pin.jpg" alt="Hands with colorful painted nail art designs">
-      <figcaption>Stock photo: colorful painted nail art</figcaption>
-    </figure>
   </div>
-</div>
+</header>
 
-<div class="marquee" aria-hidden="true">
-  <span>3-D art <b>/</b></span><span>Glitter <b>/</b></span><span>Painted designs <b>/</b></span><span>Gel extensions <b>/</b></span><span>Dip powder <b>/</b></span><span>Acrylics <b>/</b></span>
-</div>
-
-<div class="wrap">
-  <section id="art">
-    <div class="sec-kick">Specialties</div>
-    <h2>Art first, <em>always</em></h2>
-    <p class="sec-intro">Every set is one of one. Tell Amanda what you have in mind and she designs around it.</p>
-    <div class="specs">
-      <div class="spec"><h3>3-D <i>Art</i></h3><p>Raised designs, charms, and sculpted details built onto the nail.</p></div>
-      <div class="spec"><h3><i>Glitter</i> Work</h3><p>Full glitter coverage, fades, and accent nails with sparkle.</p></div>
-      <div class="spec"><h3>Painted <i>Designs</i></h3><p>Hand-painted nail art, from small details to full sets.</p></div>
-      <div class="spec"><h3>Custom <i>Enhancements</i></h3><p>Acrylic and gel extensions with dip powder options, shaped to your hands.</p></div>
-      <div class="spec"><h3><i>Manicures</i></h3><p>Care for natural nails with polish that holds up.</p></div>
-      <div class="spec"><h3>Gel <i>Toes</i></h3><p>Gel pedicure color that lasts through the season.</p></div>
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kick">Reno, Nevada</p>
+        <h1>Custom nail art, made <em>by hand</em> in Reno.</h1>
+        <p class="lede">Amanda's Purdy Nails is a solo nail studio in Reno. Amanda builds custom enhancements with acrylic, gel, glitters, 3-D art and painted nail art, designed around what you have in mind.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="tel:+17757228616">Call to book</a>
+          <a class="btn btn-line" href="#art">See the art</a>
+        </div>
+      </div>
+      <figure>
+        <img src="img/art-pin.jpg" alt="Hands with colorful painted nail art designs">
+        <figcaption>Stock photo: colorful painted nail art.</figcaption>
+      </figure>
     </div>
   </section>
 
-  <section id="gallery">
-    <div class="sec-kick">Work</div>
-    <h2>The <em>gallery</em></h2>
-    <p class="sec-intro">A look at the kind of detail that goes onto every set.</p>
-    <div class="strip" style="grid-template-columns:repeat(3,1fr)">
-      <figure><img src="img/glitter-4.jpg" alt="Pink glitter nails with 3D rhinestone art"><figcaption>Stock photo: glitter set with 3-D rhinestone art</figcaption></figure>
-      <figure><img src="img/3d-5.webp" alt="Long pink glitter French enhancements"><figcaption>Stock photo: pink glitter French enhancements</figcaption></figure>
-      <figure><img src="img/glitter-3.jpg" alt="Pink glitter acrylic nails with rhinestones"><figcaption>Stock photo: pink glitter acrylics with rhinestones</figcaption></figure>
-    </div>
-  </section>
+  <div class="rule"></div>
 
-  <section id="reviews">
-    <div class="reviews">
-      <div class="big">4.8 / 5</div>
-      <p>Rated 4.8 out of 5 from 28 Google reviews (October 2026). Reviewers mention a clean, cozy atmosphere and strong acrylic and gel work.</p>
-    </div>
-  </section>
-
-  <section id="hours">
-    <div class="sec-kick">When to come</div>
-    <h2><em>Hours</em></h2>
-    <div class="hours" style="max-width:560px">
-      <table>
-        <tr><td>Monday to Saturday</td><td>9:00 AM to 7:00 PM</td></tr>
-        <tr><td>Sunday</td><td class="closed">Closed</td></tr>
-      </table>
-    </div>
-  </section>
-
-  <section id="visit">
-    <div class="sec-kick">Find the studio</div>
-    <h2><em>Visit</em></h2>
-    <div class="visit-card" style="margin-top:30px">
-      <h3>Amanda's Purdy Nails</h3>
-      <p>905 W 4th St, Reno, NV &middot; <a href="https://www.google.com/maps/search/?api=1&query=905+W+4th+St+Reno+NV">Get directions</a></p>
-      <p>The phone number listed for the salon is (775) 722-8616.</p>
-      <a class="phone-big" href="tel:+17757228616">(775) 722-8616</a>
-      <a class="btn" href="tel:+17757228616">Call to book</a>
-      <div class="social">
-        <a href="https://www.facebook.com/Amandas.Purdy.Nails" target="_blank" rel="noopener">Facebook: Amanda's Purdy Nails</a>
+  <section class="block" id="art">
+    <div class="wrap">
+      <p class="sec-kick">The Art Menu</p>
+      <h2 class="sec-title">Nail art specialties.</h2>
+      <p class="sec-intro">Tell Amanda what you have in mind and she designs around it. These are the studio's specialties.</p>
+      <div class="menu">
+        <div class="menu-row">
+          <h3>3-D Art</h3>
+          <p>Raised designs, charms and sculpted details built onto the nail.</p>
+        </div>
+        <div class="menu-row">
+          <h3>Glitter Work</h3>
+          <p>Full glitter coverage, fades and accent nails with sparkle.</p>
+        </div>
+        <div class="menu-row">
+          <h3>Painted Designs</h3>
+          <p>Hand-painted nail art, from small details to full sets.</p>
+        </div>
+        <div class="menu-row">
+          <h3>Custom Enhancements</h3>
+          <p>Acrylic and gel extensions with dip powder options, shaped to your hands.</p>
+        </div>
+        <div class="menu-row">
+          <h3>Manicures</h3>
+          <p>Care for natural nails, with polish that holds up.</p>
+        </div>
+        <div class="menu-row">
+          <h3>Gel Toes</h3>
+          <p>Gel pedicure color that lasts through the season.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>This page is a design concept created by Freightfolio to show what Amanda's Purdy Nails' website could look like. It is not the business's real website. <a href="https://freightfolio.net">freightfolio.net</a></p>
-  </footer>
-</div>
+  <section class="block" id="gallery" style="padding-top:0">
+    <div class="wrap">
+      <p class="sec-kick">Gallery</p>
+      <h2 class="sec-title gal-lede">The kind of detail on every set.</h2>
+      <div class="gallery">
+        <figure>
+          <img src="img/glitter-4.jpg" alt="Pink glitter nails with 3D rhinestone art">
+          <figcaption>Stock photo: glitter set with 3-D rhinestone art.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/3d-5.webp" alt="Long pink glitter French enhancements">
+          <figcaption>Stock photo: pink glitter French enhancements.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/glitter-3.jpg" alt="Pink glitter acrylic nails with rhinestones">
+          <figcaption>Stock photo: pink glitter acrylics with rhinestones.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block reviews" id="reviews">
+    <div class="wrap">
+      <div class="score">4.8<small>out of 5</small></div>
+      <div>
+        <p><em>Rated 4.8 out of 5 from 28 Google reviews.</em> Reviewers mention a clean, cozy atmosphere and strong acrylic and gel work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="hours">
+    <div class="wrap duo">
+      <div>
+        <h3>Hours</h3>
+        <div class="hours-row"><span>Monday to Saturday</span><span class="t">9:00 AM to 7:00 PM</span></div>
+        <div class="hours-row closed"><span>Sunday</span><span class="t">Closed</span></div>
+      </div>
+      <div class="visit" id="visit">
+        <h3>Visit the studio</h3>
+        <address>905 W 4th St<br>Reno, NV</address>
+        <p>The phone number listed for the salon is (775) 722-8616.</p>
+        <a class="phone-big" href="tel:+17757228616">(775) 722-8616</a>
+        <a class="btn btn-solid" href="tel:+17757228616">Call to book</a>
+        <div class="social">
+          <a href="https://www.facebook.com/Amandas.Purdy.Nails" target="_blank" rel="noopener">Facebook: Amanda's Purdy Nails</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fnote">This page is a design concept created by <a href="https://freightfolio.net">Freightfolio</a> to show what Amanda's Purdy Nails' website could look like. It is not the business's real website. All photos shown are labeled stock photos.</div>
+    <div>Amanda's Purdy Nails &middot; Reno, NV</div>
+  </div>
+</footer>
+
 </body>
 </html>

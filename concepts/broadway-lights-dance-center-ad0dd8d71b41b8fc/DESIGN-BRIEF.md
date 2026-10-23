@@ -1,5 +1,6 @@
 # DESIGN BRIEF: Broadway Lights Dance Center
 Slug: broadway-lights-dance-center-ad0dd8d71b41b8fc
+REBUILD 2026-10-22 (design-level, rebuild-batch23-run1b): full redesign as a theatrical 'season program' editorial - Cormorant Garamond serif + Archivo, ink/amber on near-black, framed hero photo, numbered class cells (i.-iv.), hairline program rows, Act I/II/III structure. 5 unique labeled stock photos, each once. Copy rewritten from research only; banned-construction sweep clean.
 Built: 2026-10-22 (batch 23, website dev shift)
 
 ## Verified facts used (from research packet, ONLY these)
