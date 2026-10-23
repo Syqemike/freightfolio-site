@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Nails Sensation | Nail Salon in Mobile, AL | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#141114;
+  --black2:#1d191d;
+  --fuchsia:#c026d3;
+  --fuchsia-d:#9e1fa8;
+  --blush:#f7e3ee;
+  --white:#ffffff;
+  --grey:#b9b2ba;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--black);color:var(--white);font-family:"Manrope",system-ui,sans-serif;line-height:1.65;font-size:17px;}
+a{color:inherit;}
+img{display:block;max-width:100%;}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+.notice{background:var(--fuchsia);color:#fff;text-align:center;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:12px 18px;}
+.notice a{color:#fff;text-decoration:underline;}
+header.site{padding:20px 0;border-bottom:1px solid #2b262b;position:sticky;top:0;z-index:20;background:rgba(20,17,20,.96);}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+.wordmark{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(24px,3.4vw,34px);line-height:1;letter-spacing:.01em;text-decoration:none;}
+.wordmark span{color:var(--fuchsia);}
+.subloc{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--grey);margin-top:6px;font-weight:600;}
+nav.sections{display:flex;gap:4px;flex-wrap:wrap;align-items:center;}
+nav.sections a{text-decoration:none;font-size:13.5px;font-weight:700;letter-spacing:.05em;padding:10px 14px;border-radius:999px;text-transform:uppercase;}
+nav.sections a:hover{background:#2b262b;}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:15px 30px;border-radius:999px;letter-spacing:.04em;}
+.btn.fuchsia{background:var(--fuchsia);color:#fff;}
+.btn.fuchsia:hover{background:var(--fuchsia-d);}
+.btn.ghost{border:2px solid var(--fuchsia);color:#fff;}
+.btn.ghost:hover{background:var(--fuchsia);color:#fff;}
+.hero{position:relative;overflow:hidden;}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:80px;}
+.hero h1{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(52px,8vw,104px);line-height:.95;letter-spacing:-.01em;margin-bottom:22px;}
+.hero h1 .pink{color:var(--fuchsia);}
+.kicker{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--fuchsia);margin-bottom:18px;}
+.hero p.dek{font-size:19px;color:var(--grey);max-width:520px;margin-bottom:32px;}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+.ratingline{margin-top:22px;font-size:15px;color:var(--grey);}
+.ratingline strong{color:var(--white);}
+.hero-photo{border-radius:8px;overflow:hidden;border:1px solid #2b262b;position:relative;}
+.hero-photo img{width:100%;height:560px;object-fit:cover;}
+.hero-photo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(20,17,20,.92);color:var(--white);font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:8px 14px;border-radius:999px;border:1px solid #2b262b;}
+.band{background:var(--fuchsia);color:#fff;}
+.band .wrap{padding-top:52px;padding-bottom:52px;}
+.band h2{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(30px,4.4vw,50px);line-height:1.05;margin-bottom:16px;}
+.band p{font-size:18px;max-width:700px;}
+.band .svc-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+.band .svc-list span{border:2px solid #fff;border-radius:999px;padding:10px 20px;font-weight:700;font-size:14px;letter-spacing:.04em;}
+.band .svc-list a{color:#fff;text-decoration:none;}
+.sec-title{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(32px,4.6vw,54px);line-height:1.02;margin-bottom:14px;}
+.sec-kicker{font-size:12.5px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--fuchsia);margin-bottom:12px;}
+section.block{padding:80px 0;}
+.gallery-band{overflow:hidden;}
+.g-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;padding:0 10px;}
+.g-grid figure{position:relative;overflow:hidden;border-radius:6px;}
+.g-grid img{width:100%;height:340px;object-fit:cover;transition:transform .4s ease;}
+.g-grid figure:hover img{transform:scale(1.04);}
+.g-grid figcaption{position:absolute;left:10px;bottom:10px;background:rgba(20,17,20,.9);color:#fff;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:7px 12px;border-radius:999px;}
+.info-band{background:var(--blush);color:var(--black);}
+.info-band .wrap{padding-top:72px;padding-bottom:72px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.info-band h2{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(30px,4vw,46px);line-height:1.05;margin-bottom:16px;}
+.info-band p{font-size:17px;color:#4a434a;margin-bottom:10px;}
+.hours-table{width:100%;border-collapse:collapse;margin-top:8px;}
+.hours-table td{padding:12px 0;border-bottom:1px solid #e8c9dc;font-size:16.5px;}
+.hours-table td:last-child{text-align:right;font-weight:700;}
+.call-card{background:var(--black);color:var(--white);border-radius:8px;padding:44px 36px;text-align:center;}
+.call-card h3{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(26px,3.4vw,40px);margin-bottom:14px;}
+.call-card p{color:var(--grey);margin-bottom:24px;}
+footer.site{border-top:1px solid #2b262b;}
+footer.site .wrap{padding-top:48px;padding-bottom:48px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;}
+footer.site h4{font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--fuchsia);margin-bottom:12px;}
+footer.site p{font-size:15px;color:var(--grey);}
+footer.site a{color:var(--white);}
+.footnote{text-align:center;padding:20px;font-size:12.5px;color:#6f686f;border-top:1px solid #2b262b;}
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:52px;padding-bottom:56px;}
+  .hero-photo img{height:380px;}
+  .g-grid{grid-template-columns:repeat(2,1fr);}
+  .g-grid img{height:260px;}
+  .info-band .wrap{grid-template-columns:1fr;}
+  footer.site .wrap{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<div class="notice">Design Preview: a website concept by <a href="https://freightfolio.net">Freightfolio</a>. Not the official site of Nails Sensation.</div>
+<header class="site">
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="index.html">NAILS <span>SENSATION</span></a>
+      <div class="subloc">Mobile, Alabama</div>
+    </div>
+    <nav class="sections">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="visit.html">Visit</a>
+      <a href="tel:+12514784620" class="btn fuchsia" style="padding:12px 24px;">Call to book</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Nail salon / Mobile, AL</div>
+      <h1>BOLD NAILS.<br><span class="pink">CLEAN FINISH.</span></h1>
+      <p class="dek">Nails Sensation is a nail salon in Mobile, Alabama. Manicures, pedicures, gel nails, acrylic nails, silk wraps, fiberglass nails, and lash lifts, in Westwood Square on Airport Boulevard.</p>
+      <div class="hero-ctas">
+        <a href="tel:+12514784620" class="btn fuchsia">Call to book: (251) 478-4620</a>
+        <a href="services.html" class="btn ghost">See services</a>
+      </div>
+      <p class="ratingline">Rated <strong>4.8 from 22 Google reviews</strong>.</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/stock-01.jpg" alt="Close-up of a dark glam manicure with black and tortoiseshell nails">
+      <figcaption>Stock photo</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Seven services. One chair.</h2>
+    <p>Walk in and pick what your nails need this week. The full list lives on the services page.</p>
+    <div class="svc-list">
+      <span>Manicures</span><span>Pedicures</span><span>Gel nails</span><span>Acrylic nails</span><span>Silk wraps</span><span>Fiberglass nails</span><span>Lash lifts</span>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap" style="text-align:center;margin-bottom:36px;">
+    <div class="sec-kicker">The work</div>
+    <h2 class="sec-title">NAILS THAT GET NOTICED</h2>
+    <p style="color:var(--grey);max-width:640px;margin:0 auto;">A look at the kind of nails that leave this salon. The first photo is real work from Nails Sensation; the rest are stock photos.</p>
+  </div>
+  <div class="gallery-band">
+    <div class="g-grid">
+      <figure><img src="img/real-01.jpg" alt="Gold and red shimmer gel nails done at Nails Sensation"><figcaption>Real photo</figcaption></figure>
+      <figure><img src="img/stock-03.jpg" alt="Hot pink polish being applied during a manicure"><figcaption>Stock photo</figcaption></figure>
+      <figure><img src="img/stock-02.jpg" alt="Natural nude manicure on folded hands"><figcaption>Stock photo</figcaption></figure>
+      <figure><img src="img/stock-05.jpg" alt="Colorful bottles of nail polish"><figcaption>Stock photo</figcaption></figure>
+      <figure><img src="img/stock-01.jpg" alt="Dark glam manicure with black and tortoiseshell nails"><figcaption>Stock photo</figcaption></figure>
+    </div>
+  </div>
+  <div class="wrap" style="text-align:center;margin-top:36px;">
+    <a href="gallery.html" class="btn ghost">Open the gallery</a>
+  </div>
+</section>
+
+<section class="info-band">
+  <div class="wrap">
+    <div>
+      <div class="sec-kicker" style="color:var(--fuchsia-d);">Visit</div>
+      <h2>Westwood Square. Easy to find.</h2>
+      <p>Nails Sensation is in Westwood Square at 2206 Airport Blvd A, Mobile, AL 36606.</p>
+      <p>Monday through Saturday, 9:30 AM to 6:30 PM. Closed Sundays.</p>
+      <a href="visit.html" class="btn fuchsia" style="margin-top:18px;">Plan your visit</a>
+    </div>
+    <div class="call-card">
+      <h3>READY FOR A FRESH SET?</h3>
+      <p>Call the salon directly to book your appointment.</p>
+      <a href="tel:+12514784620" class="btn fuchsia">Call to book: (251) 478-4620</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Nails Sensation</h4>
+      <p>Nail salon in Mobile, Alabama.<br>This is a design preview, not the business's official website.</p>
+    </div>
+    <div>
+      <h4>Find us</h4>
+      <p>Westwood Square<br>2206 Airport Blvd A<br>Mobile, AL 36606</p>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p>Monday to Saturday: 9:30 AM - 6:30 PM<br>Sunday: Closed</p>
+      <p style="margin-top:10px;"><a href="tel:+12514784620">(251) 478-4620</a></p>
+    </div>
+  </div>
+</footer>
+<div class="footnote">Design Preview by Freightfolio. Concept only; not affiliated with or endorsed by Nails Sensation.</div>
+</body>
+</html>
