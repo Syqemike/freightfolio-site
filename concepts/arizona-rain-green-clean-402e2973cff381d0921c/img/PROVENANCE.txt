@@ -1,0 +1,12 @@
+PHOTO PROVENANCE  -  Arizona Rain Green Clean concept site
+Format: filename | source URL | real/stock | notes
+--------------------------------------------------------------------------------
+hero-clean.jpg | https://images.pexels.com/photos/8440062/pexels-photo-8440062.jpeg (via https://dallassinglemom.com/household-objects-that-are-dirtier-than-a-toilet-seat/) | stock | Labeled "Stock photo" on site
+wipe-table.jpg | https://images.pexels.com/photos/4108774/pexels-photo-4108774.jpeg (via https://rozie.app/cleaning-services-st-pauls-bay-6/) | stock | Labeled "Stock photo" on site
+eco-products.jpg | https://images.pexels.com/photos/10481134/pexels-photo-10481134.jpeg (via https://littletravelprague.com/post.html?slug=eco-friendly-baby-gear-cleaning-prague&lang=ru) | stock | Labeled "Stock photo" on site
+dusting.jpg | https://images.pexels.com/photos/8440091/pexels-photo-8440091.jpeg (via https://www.pexels.com/zh-tw/photo/8440062/) | stock | Labeled "Stock photo" on site
+spray-clean.jpg | https://images.pexels.com/photos/9462197/pexels-photo-9462197.jpeg (via https://www.pexels.com/th-th/search/spray/) | stock | Labeled "Stock photo" on site
+green-supplies.jpg | https://images.pexels.com/photos/16001197/pexels-photo-16001197/free-photo-of-cutting-edge-home-hygiene-products-designed-by-gogonano.jpeg (via https://www.pexels.com/@gogonano) | stock | Labeled "Stock photo" on site
+--------------------------------------------------------------------------------
+All images downloaded 2026-10-23, compressed to JPG (PIL, quality 82, max 1600px wide).
+No real business photos were available (no website, no social pages found).

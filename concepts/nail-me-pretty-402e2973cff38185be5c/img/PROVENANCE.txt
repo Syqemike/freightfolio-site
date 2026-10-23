@@ -1,0 +1,16 @@
+PHOTO PROVENANCE  -  Nail Me Pretty concept site
+Format: filename | source URL | real/stock | notes
+--------------------------------------------------------------------------------
+acrylic-1.jpg | https://www.nailmepretty.net/uploads/1/2/2/1/122157796/editor/img-1633_2.jpg?1538079905 | real | Business's own service photo from nailmepretty.net
+acrylic-2.jpg | https://www.nailmepretty.net/uploads/1/2/2/1/122157796/published/image-1-1_1.png?1538080009 | real | Business's own service photo from nailmepretty.net
+hardgel-glitter.jpg | https://www.nailmepretty.net/uploads/1/2/2/1/122157796/published/img-1241_3.jpg?1538079797 | real | Business's own service photo from nailmepretty.net
+hardgel-2.jpg | https://www.nailmepretty.net/uploads/1/2/2/1/122157796/published/img-2820.jpg?1573177726 | real | Business's own service photo from nailmepretty.net
+gelmanicure-1.jpg | https://www.nailmepretty.net/uploads/1/2/2/1/122157796/published/image-1_2.png?1538092671 | real | Business's own service photo from nailmepretty.net
+gelmanicure-2.jpg | https://www.nailmepretty.net/uploads/1/2/2/1/122157796/published/fullsizerender-3_1.jpg?1538092603 | real | Business's own service photo from nailmepretty.net
+russian-1.jpg | https://www.nailmepretty.net/uploads/1/2/2/1/122157796/published/img-2419.jpg?1779601683 | real | Business's own service photo from nailmepretty.net
+russian-2.jpg | https://www.nailmepretty.net/uploads/1/2/2/1/122157796/published/img-2418.jpeg?1779601707 | real | Business's own service photo from nailmepretty.net
+--------------------------------------------------------------------------------
+All 8 photos downloaded 2026-10-23 from the business's own website (nailmepretty.net),
+compressed to JPG (PIL, quality 82, max 1200px wide). No stock photos used.
+Booking note: the site's Schedulicity link (schedulicity.com/scheduling/NMPVNM) now
+resolves to a Vagaro page not verifiably hers, so all CTAs use "Text Bonnie" tel: links.

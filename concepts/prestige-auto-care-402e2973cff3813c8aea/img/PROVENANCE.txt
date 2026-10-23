@@ -1,0 +1,4 @@
+detail1.jpg | https://images.pexels.com/photos/6873181/pexels-photo-6873181.jpeg (Pexels search: car detailing) | stock
+detail2.jpg | https://images.pexels.com/photos/6872172/pexels-photo-6872172.jpeg (Pexels search: car detailing) | stock
+detail3.jpg | https://images.pexels.com/photos/6872155/pexels-photo-6872155.jpeg (Pexels search: car detailing) | stock
+detail4.jpg | https://images.pexels.com/photos/4870699/pexels-photo-4870699.jpeg (Pexels search: car detailing) | stock

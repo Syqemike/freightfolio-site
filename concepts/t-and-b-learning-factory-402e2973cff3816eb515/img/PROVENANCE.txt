@@ -1,0 +1,12 @@
+PHOTO PROVENANCE  -  T and B Learning Factory concept site
+Format: filename | source URL | real/stock | notes
+--------------------------------------------------------------------------------
+hero-reading.jpg | https://images.pexels.com/photos/8535177/pexels-photo-8535177.jpeg (via https://www.pexels.com/photo/children-in-the-school-reading-a-book-with-a-teacher-8535177/) | stock | Labeled "Stock photo" on site
+playtime-balls.jpg | https://images.pexels.com/photos/8422255/pexels-photo-8422255.jpeg (via https://www.pexels.com/search/involve/) | stock | Labeled "Stock photo" on site
+reading-circle.jpg | https://images.pexels.com/photos/8613082/pexels-photo-8613082.jpeg (via https://parper.info) | stock | Labeled "Stock photo" on site
+classroom-play.jpg | https://images.pexels.com/photos/8422209/pexels-photo-8422209.jpeg (via https://www.pexels.com/th-th/photo/8422111/) | stock | Labeled "Stock photo" on site
+toddlers-activity.jpg | https://images.pexels.com/photos/8422205/pexels-photo-8422205.jpeg (via https://www.pexels.com/uk-ua/photo/8441840/) | stock | Labeled "Stock photo" on site
+story-time.jpg | https://images.pexels.com/photos/8422169/pexels-photo-8422169.jpeg (via https://www.pexels.com/zh-tw/photo/8422260/) | stock | Labeled "Stock photo" on site
+--------------------------------------------------------------------------------
+All images downloaded 2026-10-23, compressed to JPG (PIL, quality 82, max 1600px wide).
+No real business photos were available (business website is offline, no social pages found).
