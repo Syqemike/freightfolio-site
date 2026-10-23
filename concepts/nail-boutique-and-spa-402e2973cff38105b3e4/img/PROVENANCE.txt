@@ -1,0 +1,7 @@
+filename | source URL | real|stock
+---
+hero-manicure.jpg | https://images.pexels.com/photos/9775263/pexels-photo-9775263.jpeg | stock
+nail-art-detail.jpg | https://images.pexels.com/photos/5870539/pexels-photo-5870539.jpeg?auto=compress&cs=tinysrgb&h=650&w=940 | stock
+pedicure-spa.jpg | https://images.pexels.com/photos/34930123/pexels-photo-34930123.jpeg?auto=compress&cs=tinysrgb&w=600 | stock
+nail-station.jpg | https://images.pexels.com/photos/13068363/pexels-photo-13068363.jpeg?auto=compress&cs=tinysrgb&w=1920 | stock
+polish-collection.jpg | https://images.pexels.com/photos/6446793/pexels-photo-6446793.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200 | stock

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Gallery | Nail Boutique and Spa | Website Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ivory:#FBF8F2;--ivory-deep:#F4EEE4;--blush:#E7BCB6;--blush-deep:#B97F78;--ink:#2C2621;--stone:#8A7F75;--hairline:#E4D9CB}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+  .disclosure{background:var(--ink);color:#F6F1E7;text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:10px 16px}
+  header{max-width:1180px;margin:0 auto;padding:26px 24px;display:flex;justify-content:space-between;align-items:baseline}
+  .brand{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600}
+  .brand a{color:inherit;text-decoration:none}
+  nav a{color:var(--ink);text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-left:28px;padding-bottom:4px}
+  nav a.active{border-bottom:2px solid var(--blush-deep)}
+  .page-head{max-width:1180px;margin:50px auto 40px;padding:0 24px}
+  .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--blush-deep);margin-bottom:18px}
+  h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,5vw,64px);line-height:1.1}
+  .lede{font-size:17px;color:#4A4239;margin:20px 0 0;max-width:60ch;font-weight:300}
+  section{max-width:1180px;margin:0 auto 90px;padding:0 24px}
+  .masonry{columns:3;column-gap:18px}
+  .masonry figure{break-inside:avoid;margin-bottom:18px;background:var(--ivory-deep);border-radius:4px;overflow:hidden}
+  .masonry img{width:100%;display:block}
+  .masonry figcaption{font-size:13px;color:var(--stone);padding:12px 16px}
+  .cta{display:inline-block;background:var(--ink);color:var(--ivory);text-decoration:none;padding:15px 34px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-radius:2px}
+  .cta:hover{background:var(--blush-deep)}
+  .center{text-align:center;margin-top:56px}
+  footer{background:#211D18;color:#A99E8F;padding:60px 24px 40px;font-size:14px}
+  .footer-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px}
+  footer h4{font-family:'Cormorant Garamond',serif;color:#F1EADC;font-size:20px;font-weight:600;margin-bottom:14px}
+  footer a{color:#D9CFC0;text-decoration:none}
+  .fine{max-width:1180px;margin:44px auto 0;padding-top:24px;border-top:1px solid #3A342C;font-size:12px;color:#7E7365}
+  @media(max-width:860px){header{flex-direction:column;gap:14px}nav a{margin:0 18px 0 0}.masonry{columns:2}.footer-inner{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="disclosure">Website Concept &middot; Design Preview by Freightfolio, not the business's official site</div>
+<header>
+  <div class="brand"><a href="index.html">Nail Boutique and Spa</a></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+</header>
+
+<main>
+  <div class="page-head">
+    <p class="eyebrow">From the studio</p>
+    <h1>Gallery</h1>
+    <p class="lede">A look at the kind of work done at Nail Boutique and Spa. All photos shown here are stock photography used to illustrate this design concept.</p>
+  </div>
+
+  <section>
+    <div class="masonry">
+      <figure><img src="img/hero-manicure.jpg" alt="Blush manicure, stock photo" loading="lazy"><figcaption>Stock photo: blush manicure</figcaption></figure>
+      <figure><img src="img/nail-art-detail.jpg" alt="Nail art detail, stock photo" loading="lazy"><figcaption>Stock photo: nail art detail</figcaption></figure>
+      <figure><img src="img/pedicure-spa.jpg" alt="Pedicure, stock photo" loading="lazy"><figcaption>Stock photo: pedicure</figcaption></figure>
+      <figure><img src="img/nail-station.jpg" alt="Manicure station, stock photo" loading="lazy"><figcaption>Stock photo: manicure station</figcaption></figure>
+      <figure><img src="img/polish-collection.jpg" alt="Polish colors, stock photo" loading="lazy"><figcaption>Stock photo: polish colors</figcaption></figure>
+    </div>
+    <div class="center"><a class="cta" href="tel:+12054074180">Call to book</a></div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>Nail Boutique and Spa</h4>
+      <p>300 Carlow Ln #102<br>Birmingham, AL 35242</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="tel:+12054074180">(205) 407-4180</a></p>
+      <p style="margin-top:8px">Mon&ndash;Sat: 9:00 AM&ndash;7:00 PM<br>Sunday: Closed</p>
+    </div>
+    <div>
+      <h4>Website Concept</h4>
+      <p>This page is a design preview created by Freightfolio. It is not the business's official website.</p>
+    </div>
+  </div>
+  <p class="fine">Concept site for Nail Boutique and Spa, Birmingham AL. Photos are stock photography used for illustration.</p>
+</footer>
+</body>
+</html>

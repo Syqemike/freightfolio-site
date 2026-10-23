@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Nail Boutique and Spa | Birmingham, AL | Website Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FBF8F2; --ivory-deep:#F4EEE4; --blush:#E7BCB6; --blush-deep:#B97F78;
+    --ink:#2C2621; --stone:#8A7F75; --hairline:#E4D9CB;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+  .disclosure{background:var(--ink);color:#F6F1E7;text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:10px 16px}
+  header{max-width:1180px;margin:0 auto;padding:26px 24px;display:flex;justify-content:space-between;align-items:baseline}
+  .brand{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;letter-spacing:.01em}
+  .brand a{color:inherit;text-decoration:none}
+  nav a{color:var(--ink);text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-left:28px;padding-bottom:4px}
+  nav a.active{border-bottom:2px solid var(--blush-deep)}
+  .hero{max-width:1180px;margin:40px auto 0;padding:0 24px;display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+  .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--blush-deep);margin-bottom:22px}
+  h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(44px,5.4vw,72px);line-height:1.08;letter-spacing:.005em}
+  h1 em{font-style:italic;color:var(--blush-deep)}
+  .lede{font-size:17px;color:#4A4239;margin:24px 0 34px;max-width:44ch;font-weight:300}
+  .cta{display:inline-block;background:var(--ink);color:var(--ivory);text-decoration:none;padding:15px 34px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-radius:2px}
+  .cta:hover{background:var(--blush-deep)}
+  .hero-photo img{width:100%;height:auto;display:block;border-radius:180px 180px 6px 6px;object-fit:cover;aspect-ratio:3/4}
+  .photo-cap{font-size:12px;color:var(--stone);margin-top:10px;letter-spacing:.04em}
+  .strip{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);margin:80px 0}
+  .strip-inner{max-width:1180px;margin:0 auto;padding:26px 24px;display:flex;gap:48px;flex-wrap:wrap}
+  .strip-item{font-size:14px}
+  .strip-item strong{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;display:block}
+  section{max-width:1180px;margin:0 auto;padding:0 24px}
+  h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.6vw,46px);margin-bottom:10px}
+  .section-sub{color:var(--stone);font-size:15px;margin-bottom:40px;max-width:60ch}
+  .services-list{display:grid;grid-template-columns:1fr 1fr;gap:0 60px}
+  .service{border-top:1px solid var(--hairline);padding:24px 0;display:flex;justify-content:space-between;align-items:baseline;gap:20px}
+  .service h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600}
+  .service p{color:var(--stone);font-size:14px}
+  .more{margin:40px 0 90px;text-align:center}
+  .more a{color:var(--blush-deep);text-decoration:none;font-size:13px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid var(--blush-deep);padding-bottom:4px}
+  .gallery-band{background:var(--ivory-deep);padding:80px 0;margin:0 0 90px}
+  .gallery-band section{padding:0 24px}
+  .masonry{columns:3;column-gap:18px}
+  .masonry figure{break-inside:avoid;margin-bottom:18px}
+  .masonry img{width:100%;display:block;border-radius:4px}
+  .masonry figcaption{font-size:12px;color:var(--stone);padding:8px 2px 0}
+  .visit-cta{background:var(--ink);color:var(--ivory);padding:90px 24px;text-align:center}
+  .visit-cta h2{color:var(--ivory)}
+  .visit-cta p{color:#CFC6B8;max-width:52ch;margin:14px auto 34px;font-weight:300}
+  .visit-cta .cta{background:var(--blush);color:var(--ink)}
+  .visit-cta .cta:hover{background:var(--ivory)}
+  footer{background:#211D18;color:#A99E8F;padding:60px 24px 40px;font-size:14px}
+  .footer-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px}
+  footer h4{font-family:'Cormorant Garamond',serif;color:#F1EADC;font-size:20px;font-weight:600;margin-bottom:14px}
+  footer a{color:#D9CFC0;text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  .fine{max-width:1180px;margin:44px auto 0;padding-top:24px;border-top:1px solid #3A342C;font-size:12px;color:#7E7365}
+  @media(max-width:860px){
+    header{flex-direction:column;gap:14px}
+    nav a{margin:0 18px 0 0}
+    .hero{grid-template-columns:1fr;gap:40px}
+    .services-list{grid-template-columns:1fr}
+    .masonry{columns:2}
+    .footer-inner{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Website Concept &middot; Design Preview by Freightfolio, not the business's official site</div>
+<header>
+  <div class="brand"><a href="index.html">Nail Boutique and Spa</a></div>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Birmingham, Alabama</p>
+      <h1>Quiet polish, <em>carefully</em> done.</h1>
+      <p class="lede">Nail Boutique and Spa is a calm, welcoming nail studio in Birmingham. Manicures, pedicures, acrylics, dip powder, gel, and nail art, with a steady focus on neat, lasting work.</p>
+      <a class="cta" href="tel:+12054074180">Call to book</a>
+    </div>
+    <div class="hero-photo">
+      <img src="img/hero-manicure.jpg" alt="Fresh blush manicure, stock photo">
+      <p class="photo-cap">Stock photo: blush manicure</p>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="strip-inner">
+      <div class="strip-item"><strong>4.7</strong>from 92 Birdeye reviews</div>
+      <div class="strip-item"><strong>Mon&ndash;Sat</strong>9:00 AM to 7:00 PM</div>
+      <div class="strip-item"><strong>Closed Sundays</strong>see you Monday</div>
+      <div class="strip-item"><strong>(205) 407-4180</strong>call for appointments</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Services</h2>
+    <p class="section-sub">Five core services, each given the same unhurried attention.</p>
+    <div class="services-list">
+      <div class="service"><div><h3>Dip Powder Nails</h3><p>Powder color cured over the natural nail.</p></div></div>
+      <div class="service"><div><h3>Acrylic Nails</h3><p>Length and shape built to your preference.</p></div></div>
+      <div class="service"><div><h3>Pedicure</h3><p>Soak, shaping, cuticle care, and polish.</p></div></div>
+      <div class="service"><div><h3>Gel Nails</h3><p>Glossy color set under light.</p></div></div>
+      <div class="service"><div><h3>Nail Art</h3><p>Hand-drawn details and accents.</p></div></div>
+    </div>
+    <div class="more"><a href="services.html">See all services</a></div>
+  </section>
+
+  <div class="gallery-band">
+    <section>
+      <h2>Recent work</h2>
+      <p class="section-sub">A few looks from the studio.</p>
+      <div class="masonry">
+        <figure><img src="img/nail-art-detail.jpg" alt="Nail art detail, stock photo" loading="lazy"><figcaption>Stock photo: nail art detail</figcaption></figure>
+        <figure><img src="img/pedicure-spa.jpg" alt="Pedicure in progress, stock photo" loading="lazy"><figcaption>Stock photo: pedicure</figcaption></figure>
+        <figure><img src="img/nail-station.jpg" alt="Manicure station, stock photo" loading="lazy"><figcaption>Stock photo: manicure station</figcaption></figure>
+      </div>
+      <div class="more" style="margin-bottom:0"><a href="gallery.html">Open the gallery</a></div>
+    </section>
+  </div>
+
+  <div class="visit-cta">
+    <h2>Ready when you are</h2>
+    <p>Call (205) 407-4180 to book a manicure, pedicure, or full set.</p>
+    <a class="cta" href="tel:+12054074180">Call to book</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>Nail Boutique and Spa</h4>
+      <p>300 Carlow Ln #102<br>Birmingham, AL 35242</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="tel:+12054074180">(205) 407-4180</a></p>
+      <p style="margin-top:8px">Mon&ndash;Sat: 9:00 AM&ndash;7:00 PM<br>Sunday: Closed</p>
+    </div>
+    <div>
+      <h4>Website Concept</h4>
+      <p>This page is a design preview created by Freightfolio. It is not the business's official website.</p>
+    </div>
+  </div>
+  <p class="fine">Concept site for Nail Boutique and Spa, Birmingham AL. Photos are stock photography used for illustration.</p>
+</footer>
+</body>
+</html>
