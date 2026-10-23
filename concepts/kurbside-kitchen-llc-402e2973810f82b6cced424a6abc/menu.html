@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Kurbside Kitchen LLC, Moss Point, MS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,700&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --cream:#FAF4E8; --cream2:#F1E7D2; --ink:#2C1B10; --muted:#6E5A49;
+    --orange:#C25E1E; --orange-deep:#A04C15; --rule:#DCC9A8;
+  }
+  body { background:var(--cream); color:var(--ink); font-family:'Karla',-apple-system,'Segoe UI',Arial,sans-serif; line-height:1.65; }
+  img { display:block; max-width:100%; height:auto; }
+  a { color:inherit; }
+  .wrap { max-width:1140px; margin:0 auto; padding:0 26px; }
+
+  .dateline { background:var(--ink); color:#EFE3CE; font-size:12px; }
+  .dateline .wrap { display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; padding-top:9px; padding-bottom:9px; }
+  .dateline .concept { letter-spacing:2.5px; text-transform:uppercase; font-size:11px; color:#E8B98A; font-weight:700; }
+  .dateline .facts { display:flex; gap:18px; flex-wrap:wrap; }
+  .dateline .facts a { text-decoration:none; }
+
+  .masthead { text-align:center; padding:30px 26px 18px; border-bottom:3px double var(--ink); }
+  .masthead .tagline { font-size:12px; letter-spacing:4px; text-transform:uppercase; color:var(--orange); font-weight:700; margin-bottom:8px; }
+  .masthead h1 { font-family:'Fraunces',Georgia,serif; font-weight:900; font-size:clamp(38px,6vw,64px); letter-spacing:-1px; }
+  .masthead .city { margin-top:8px; font-size:13px; letter-spacing:3px; text-transform:uppercase; color:var(--muted); }
+
+  nav.site-nav { border-bottom:1px solid var(--rule); }
+  nav.site-nav .wrap { display:flex; justify-content:center; gap:34px; padding-top:13px; padding-bottom:13px; flex-wrap:wrap; }
+  nav.site-nav a { text-decoration:none; font-size:13px; letter-spacing:2.5px; text-transform:uppercase; font-weight:700; color:var(--muted); }
+  nav.site-nav a:hover, nav.site-nav a.active { color:var(--orange); }
+
+  .page-intro { text-align:center; padding:44px 0 10px; }
+  .page-intro .eyebrow { font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--orange); font-weight:700; margin-bottom:10px; }
+  .page-intro h2 { font-family:'Fraunces',Georgia,serif; font-weight:900; font-size:clamp(32px,5vw,52px); letter-spacing:-0.5px; }
+  .page-intro p { color:var(--muted); max-width:640px; margin:14px auto 0; font-size:16px; }
+
+  .menu-board { background:#fff; border:1px solid var(--rule); margin:38px 0 10px; padding:46px 44px; }
+  .menu-grid { display:grid; grid-template-columns:1fr 1fr; gap:0 56px; }
+  .menu-cat { margin-bottom:38px; }
+  .menu-cat .cat-head { display:flex; align-items:center; gap:14px; border-bottom:2px solid var(--ink); padding-bottom:8px; margin-bottom:14px; }
+  .menu-cat .num { font-family:'Fraunces',Georgia,serif; font-weight:900; color:var(--orange); font-size:18px; }
+  .menu-cat h3 { font-family:'Fraunces',Georgia,serif; font-weight:700; font-size:24px; letter-spacing:-0.3px; }
+  .menu-cat .item { margin-bottom:12px; }
+  .menu-cat .item strong { display:block; font-size:15.5px; letter-spacing:0.3px; }
+  .menu-cat .item span { color:var(--muted); font-size:14px; }
+  .menu-cat .full { grid-column:1/-1; }
+  .sauce-line { font-size:14px; color:var(--muted); margin-top:4px; }
+  .sauce-line strong { color:var(--ink); font-size:14px; }
+
+  .menu-photo { margin:36px 0; border:1px solid var(--rule); padding:12px; background:#fff; }
+  .menu-photo img { width:100%; aspect-ratio:16/8; object-fit:cover; }
+  .menu-photo figcaption { padding:10px 4px 2px; font-size:13px; color:var(--muted); font-style:italic; }
+
+  .price-note { text-align:center; padding:26px 0 60px; color:var(--muted); font-size:15px; max-width:620px; margin:0 auto; }
+  .price-note p a { color:var(--orange); font-weight:700; text-decoration:none; }
+  .cta-row { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:20px; }
+  .btn { display:inline-block; background:var(--orange); color:#fff; text-decoration:none; padding:14px 30px; font-size:13px; letter-spacing:2px; text-transform:uppercase; font-weight:700; }
+  .btn:hover { background:var(--orange-deep); }
+
+  footer { padding:40px 0 50px; font-size:13.5px; color:var(--muted); }
+  footer .wrap { border-top:1px solid var(--rule); padding-top:26px; display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:28px; }
+  footer h5 { font-size:12px; letter-spacing:2.5px; text-transform:uppercase; color:var(--ink); margin-bottom:10px; }
+  footer .disclosure { font-style:italic; max-width:340px; }
+
+  @media (max-width:820px) {
+    .menu-grid { grid-template-columns:1fr; }
+    .menu-board { padding:30px 22px; }
+    footer .wrap { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="dateline">
+  <div class="wrap">
+    <span class="concept">Website Concept: A Design Preview</span>
+    <span class="facts">
+      <span>Moss Point, MS</span>
+      <span>Wed-Sat, 11 AM - 6 PM</span>
+      <a href="tel:+12283554638">(228) 355-4638</a>
+    </span>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="tagline">Food for the Soul</div>
+  <h1>Kurbside Kitchen LLC</h1>
+  <div class="city">Moss Point, Mississippi: Southern Comfort Food</div>
+</header>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="visit.html">Visit &amp; Order</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div class="page-intro">
+    <div class="eyebrow">The menu board</div>
+    <h2>What is cooking at Kurbside</h2>
+    <p>Southern comfort food, cooked to order. Wings, loaded fries, open-face plates, burgers, and the classic sides. Everything below is on the board regularly; specials rotate.</p>
+  </div>
+
+  <div class="menu-board">
+    <div class="menu-grid">
+      <div class="menu-cat">
+        <div class="cat-head"><span class="num">01</span><h3>Wings</h3></div>
+        <div class="item"><strong>Sauced wings</strong><span>Battered or naked, sauced to order, served with fries.</span></div>
+        <p class="sauce-line"><strong>Sauces:</strong> Garlic Parm (the standout), Honey BBQ, Lemon Pepper, Honey Sriracha, Honey Lemon, Honey Gold, Honey Mustard, Mild or Hot, Teriyaki, Powder Ranch.</p>
+      </div>
+      <div class="menu-cat">
+        <div class="cat-head"><span class="num">02</span><h3>Loaded Fries</h3></div>
+        <div class="item"><strong>Shrimp loaded fries</strong><span>Shrimp over golden fries with the trimmings.</span></div>
+        <div class="item"><strong>Steak loaded fries</strong><span>Steak over golden fries with the trimmings.</span></div>
+        <div class="item"><strong>Chicken loaded fries</strong><span>Chicken over golden fries with the trimmings.</span></div>
+        <div class="item"><strong>Cheese fries</strong><span>Classic cheese fries.</span></div>
+      </div>
+      <div class="menu-cat">
+        <div class="cat-head"><span class="num">03</span><h3>Open-Face Plates</h3></div>
+        <p class="sauce-line" style="margin-bottom:10px;">Every open-face plate comes with potato salad, bread, two hush puppies, two onion rings, a fried green tomato, and Kurb Sauce.</p>
+        <div class="item"><strong>Pork chop open face</strong></div>
+        <div class="item"><strong>Fish open face</strong></div>
+        <div class="item"><strong>Shrimp open face</strong></div>
+        <div class="item"><strong>Wings open face</strong></div>
+      </div>
+      <div class="menu-cat">
+        <div class="cat-head"><span class="num">04</span><h3>Burgers &amp; Philly</h3></div>
+        <div class="item"><strong>Cheeseburger</strong><span>Fully dressed. Double and bacon versions available.</span></div>
+        <div class="item"><strong>Chicken burger</strong></div>
+        <div class="item"><strong>Shrimp burger</strong></div>
+        <div class="item"><strong>Pork chop burger</strong></div>
+        <div class="item"><strong>Philly cheesesteak</strong></div>
+      </div>
+      <div class="menu-cat">
+        <div class="cat-head"><span class="num">05</span><h3>Sides</h3></div>
+        <div class="item"><strong>Fried green tomatoes</strong></div>
+        <div class="item"><strong>Hush puppies</strong></div>
+        <div class="item"><strong>Okra</strong></div>
+        <div class="item"><strong>Potato salad</strong></div>
+        <div class="item"><strong>Fries</strong></div>
+        <div class="item"><strong>Onion rings</strong></div>
+        <div class="item"><strong>Gumbo</strong><span>When available.</span></div>
+      </div>
+      <div class="menu-cat">
+        <div class="cat-head"><span class="num">06</span><h3>Sweets &amp; Sips</h3></div>
+        <div class="item"><strong>Banana pudding</strong><span>The classic finish.</span></div>
+        <div class="item"><strong>Pineapple lemonade</strong><span>Regular, large, and XL.</span></div>
+        <div class="item"><strong>Sweet tea &amp; Arnold Palmer</strong></div>
+        <div class="item"><strong>Canned sodas</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <figure class="menu-photo">
+    <img src="img/hero-spread.jpg" alt="Kurbside Kitchen fried fish, shrimp, burger, onion rings, and fries">
+    <figcaption>The spread: fried fish, shrimp, a dressed burger, onion rings, and fries. Real photo from Kurbside Kitchen&rsquo;s DoorDash listing.</figcaption>
+  </figure>
+
+  <figure class="menu-photo">
+    <img src="img/fish-plate.jpg" alt="Kurbside Kitchen fried fish open-face plate with fried green tomatoes and hush puppies">
+    <figcaption>The open-face fish plate with fried green tomatoes, hush puppies, and onion rings. Real customer photo from Kurbside Kitchen&rsquo;s listing.</figcaption>
+  </figure>
+
+  <div class="price-note">
+    <p>Menus and specials change. For today&rsquo;s board and current prices, call <a href="tel:+12283554638">(228) 355-4638</a>.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+12283554638">Call to order</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h5>Disclosure</h5>
+      <p class="disclosure">This is a website concept, a design preview made by Freightfolio. It is not the business&rsquo;s official website and does not imply any endorsement.</p>
+    </div>
+    <div>
+      <h5>Kurbside Kitchen LLC</h5>
+      <p>3413 Elvira Granderson Rd<br>Moss Point, MS 39563<br>
+      <a href="tel:+12283554638">(228) 355-4638</a></p>
+    </div>
+    <div>
+      <h5>Hours</h5>
+      <p>Wed - Sat: 11 AM - 6 PM<br>Sun - Tue: Closed</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
