@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Sushi-Lito Food Truck | Sonoran-Style Sushi in Tucson, AZ</title>
+<meta name="description" content="Sushi-Lito Food Truck serves Sonoran-style sushi from 5422 S 12th Ave in Tucson, AZ. See the menu, hours, and how to order ahead by phone. Website concept by Freightfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#100c09;
+    --panel:#1c1510;
+    --panel2:#241a12;
+    --red:#e3322b;
+    --red-deep:#a81f1a;
+    --amber:#ffb547;
+    --cream:#f6ecd9;
+    --sand:#b8a88f;
+    --line:rgba(246,236,217,.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--night);
+    color:var(--cream);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{font-family:"Archivo Black",system-ui,sans-serif;line-height:1.08;letter-spacing:.01em}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+  /* ---------- preview disclosure bar ---------- */
+  .preview-bar{
+    background:var(--amber);color:#241503;
+    font-size:11px;font-weight:700;letter-spacing:.14em;
+    text-align:center;padding:9px 16px;
+  }
+  .preview-bar span{display:block;max-width:1120px;margin:0 auto}
+
+  /* ---------- nav ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(16,12,9,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:"Archivo Black",system-ui,sans-serif;font-size:20px;letter-spacing:.02em;text-decoration:none}
+  .brand em{font-style:normal;color:var(--red)}
+  .nav-links{display:flex;gap:26px;align-items:center}
+  .nav-links a{color:var(--sand);text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.06em}
+  .nav-links a:hover{color:var(--cream)}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.05em;
+    background:var(--red);color:#fff;border:0;border-radius:10px;
+    padding:13px 26px;font-size:15px;cursor:pointer;
+    transition:background .18s ease,transform .18s ease;
+  }
+  .btn:hover{background:var(--red-deep);transform:translateY(-1px)}
+  .btn.small{padding:10px 18px;font-size:13px}
+  .btn.ghost{background:transparent;color:var(--cream);border:2px solid var(--line)}
+  .btn.ghost:hover{border-color:var(--red);background:transparent}
+  .nav-call{white-space:nowrap}
+  .burger{display:none;background:none;border:0;padding:10px;cursor:pointer}
+  .burger span{display:block;width:26px;height:3px;background:var(--cream);border-radius:2px;margin:5px 0}
+  @media(max-width:760px){
+    .burger{display:block}
+    .nav-links{
+      display:none;position:absolute;top:64px;left:0;right:0;
+      background:#161009;border-bottom:1px solid var(--line);
+      flex-direction:column;align-items:flex-start;padding:14px 20px 20px;gap:16px;
+    }
+    .nav-links.open{display:flex}
+    .nav-call{display:none}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;overflow:hidden}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover}
+  .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,12,9,.25) 0%,rgba(16,12,9,.55) 45%,rgba(16,12,9,.97) 100%)}
+  .hero-content{position:relative;padding:56px 0 64px;width:100%}
+  .eyebrow{
+    display:inline-block;font-size:12px;font-weight:700;letter-spacing:.22em;
+    color:var(--amber);margin-bottom:14px;
+  }
+  .hero h1{font-size:clamp(44px,9vw,92px);text-transform:uppercase;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+  .hero h1 .accent{color:var(--red)}
+  .hero p.lede{font-size:clamp(16px,2.6vw,21px);color:var(--cream);max-width:560px;margin:16px 0 26px;font-weight:500}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .preview-chip{
+    display:inline-flex;align-items:center;gap:8px;margin-top:22px;
+    font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--sand);
+    border:1px dashed rgba(246,236,217,.35);border-radius:999px;padding:8px 16px;
+  }
+  .preview-chip i{width:8px;height:8px;border-radius:50%;background:var(--amber);display:inline-block}
+
+  /* ---------- ticker ---------- */
+  .ticker{background:var(--red);overflow:hidden;white-space:nowrap;border-top:3px solid #7c150f;border-bottom:3px solid #7c150f}
+  .ticker-track{display:inline-block;padding:12px 0;animation:tick 28s linear infinite}
+  .ticker-track span{
+    font-family:"Archivo Black",system-ui,sans-serif;font-size:18px;color:#fff;
+    text-transform:uppercase;letter-spacing:.06em;padding:0 26px;
+  }
+  .ticker-track span::after{content:"•";color:var(--amber);padding-left:52px}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  section.block{padding:76px 0}
+  .kicker{font-size:12px;font-weight:700;letter-spacing:.24em;color:var(--red);margin-bottom:12px;text-transform:uppercase}
+  h2.sec{font-size:clamp(30px,5vw,48px);text-transform:uppercase;margin-bottom:18px;color:#fff}
+  .lead{color:var(--sand);font-size:17px;max-width:640px}
+
+  /* ---------- about ---------- */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  @media(max-width:820px){.about-grid{grid-template-columns:1fr}}
+  .about-grid p{color:var(--sand);margin-bottom:16px;font-size:16px}
+  .about-grid p strong{color:var(--cream)}
+  .photo{border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .photo figcaption{font-size:12px;color:var(--sand);padding:10px 14px;background:var(--panel);letter-spacing:.02em}
+
+  /* ---------- signatures ---------- */
+  .sig{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+  @media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.cards{grid-template-columns:1fr}}
+  .card{
+    background:var(--panel2);border:1px solid var(--line);border-radius:14px;
+    padding:24px 22px;border-top:4px solid var(--red);
+    transition:transform .18s ease;
+  }
+  .card:hover{transform:translateY(-4px)}
+  .card h3{font-size:19px;margin-bottom:8px;color:#fff;text-transform:uppercase}
+  .card .price{color:var(--amber);font-weight:700;font-size:15px;margin-bottom:10px;display:block}
+  .card p{color:var(--sand);font-size:14.5px}
+  .card .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--night);background:var(--amber);border-radius:6px;padding:4px 10px;margin-bottom:12px;text-transform:uppercase}
+
+  /* ---------- menu teaser ---------- */
+  .teaser-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  @media(max-width:820px){.teaser-grid{grid-template-columns:1fr}}
+  .mini-list{list-style:none;margin:22px 0 28px}
+  .mini-list li{
+    display:flex;justify-content:space-between;gap:12px;
+    padding:11px 0;border-bottom:1px dashed var(--line);
+    color:var(--cream);font-size:15px;
+  }
+  .mini-list li b{font-weight:600}
+  .mini-list li span{color:var(--amber);font-weight:700;white-space:nowrap}
+
+  /* ---------- reviews ---------- */
+  .reviews{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .rating-line{margin:6px 0 26px;color:var(--sand);font-size:15px}
+  .rating-line strong{color:var(--amber)}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:820px){.quotes{grid-template-columns:1fr}}
+  .quote{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .quote p{color:var(--cream);font-size:15.5px;font-style:italic;margin-bottom:14px}
+  .quote cite{color:var(--sand);font-style:normal;font-size:12.5px;letter-spacing:.04em}
+
+  /* ---------- hours / visit ---------- */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  @media(max-width:820px){.visit-grid{grid-template-columns:1fr}}
+  .hours{width:100%;border-collapse:collapse;background:var(--panel2);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .hours td{padding:13px 20px;font-size:15px;border-bottom:1px solid var(--line)}
+  .hours tr:last-child td{border-bottom:0}
+  .hours td:first-child{color:var(--sand);font-weight:600}
+  .hours td:last-child{text-align:right;color:var(--cream);font-weight:600}
+  .hours tr.closed td:last-child{color:var(--red)}
+  .addr{margin-top:26px;color:var(--sand);font-size:16px}
+  .addr strong{color:var(--cream);display:block;font-size:18px;margin-bottom:4px}
+  .visit-note{margin-top:18px;color:var(--sand);font-size:15px}
+  .visit-note strong{color:var(--amber)}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--red);text-align:center;border-top:3px solid #7c150f}
+  .contact h2{color:#fff;margin-bottom:12px}
+  .contact p{color:#ffe9d6;max-width:560px;margin:0 auto 28px;font-size:17px}
+  .contact .btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .contact .btn{background:#fff;color:var(--red-deep)}
+  .contact .btn:hover{background:#ffe9d6}
+  .contact .btn.ghost{border-color:rgba(255,255,255,.5);color:#fff;background:transparent}
+  .contact .btn.ghost:hover{border-color:#fff;background:transparent}
+
+  footer{background:#0a0806;padding:40px 0;border-top:1px solid var(--line)}
+  footer p{color:#7d6f5d;font-size:13px;margin-bottom:10px;max-width:760px}
+  footer nav{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:18px}
+  footer nav a{color:var(--sand);text-decoration:none;font-size:13px;font-weight:600}
+</style>
+</head>
+<body>
+
+<div class="preview-bar"><span>WEBSITE CONCEPT — A DESIGN PREVIEW FOR SUSHI-LITO FOOD TRUCK. NOT THE BUSINESS'S OFFICIAL SITE.</span></div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">SUSHI-<em>LITO</em></a>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#rolls">Rolls</a>
+      <a href="menu.html">Full Menu</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Hours &amp; Location</a>
+    </nav>
+    <a class="btn small nav-call" href="tel:+15206394863">Call Now</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg">
+    <img src="img/hero.jpg" alt="The red Sushi-Lito food truck glowing at night in Tucson, with its lit OPEN sign and outdoor tables" fetchpriority="high">
+  </div>
+  <div class="hero-shade"></div>
+  <div class="wrap hero-content">
+    <span class="eyebrow">SONORAN-STYLE SUSHI · TUCSON, ARIZONA</span>
+    <h1>Sushi-<span class="accent">Lito</span><br>Food Truck</h1>
+    <p class="lede">Sushi, Caborca style. Fried rolls, cream cheese, and bold Sonoran flavor, served hot from the truck on 12th Avenue.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="tel:+15206394863">Call to Order Ahead</a>
+      <a class="btn ghost" href="menu.html">See the Full Menu</a>
+    </div>
+    <span class="preview-chip"><i></i>WEBSITE CONCEPT — DESIGN PREVIEW, NOT A LIVE SITE</span>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Monster Roll</span><span>Sushi-Lito Roll</span><span>Caborca Roll</span><span>Tocino Roll</span><span>Vaquero</span><span>Boneless Roll</span><span>Alitas</span><span>Chiles Rellenos</span><span>Aguas Naturales</span>
+    <span>Monster Roll</span><span>Sushi-Lito Roll</span><span>Caborca Roll</span><span>Tocino Roll</span><span>Vaquero</span><span>Boneless Roll</span><span>Alitas</span><span>Chiles Rellenos</span><span>Aguas Naturales</span>
+  </div>
+</div>
+
+<section class="block" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <p class="kicker">About the truck</p>
+      <h2 class="sec">Sushi, the Sonoran way</h2>
+      <p>Sonoran sushi is Tucson's own take on the roll: instead of raw fish, the rolls are fried and filled with things like <strong>buffalo chicken, carne asada, and bacon</strong>, loaded with cream cheese and finished with chipotle mayo and lime-soy style sauces.</p>
+      <p>Sushi-Lito works out of a red truck at <strong>5422 S 12th Ave</strong>, and it has become a late-afternoon and evening stop for people across the south side. Regulars call ahead to skip the wait, then eat at the tables out front under the string lights.</p>
+      <p>The truck's own menu also covers <strong>boneless and traditional wings in buffalo and BBQ</strong>, chiles rellenos stuffed with shrimp or crab, California sandwiches, quesadillas, and aguas naturales.</p>
+    </div>
+    <figure class="photo">
+      <img src="img/truck-dusk.jpg" alt="The Sushi-Lito truck at dusk in Tucson, with the sushi ITO wrap, lit menu board, and diners at tables out front" loading="lazy">
+      <figcaption>Real photo of the Sushi-Lito truck, Tucson AZ.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block sig" id="rolls">
+  <div class="wrap">
+    <p class="kicker">Signature rolls</p>
+    <h2 class="sec">The rolls people drive for</h2>
+    <p class="lead">Named rolls from the truck's menu. See the full menu page for every roll, combos, charolas, and wings.</p>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">The namesake</span>
+        <h3>Sushi-Lito Roll</h3>
+        <span class="price">$14</span>
+        <p>The roll the truck is named for: cheese, breaded shrimp, imitation crab, Sriracha, eel sauce, and scallions.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Fan favorite</span>
+        <h3>Monster Roll</h3>
+        <span class="price">$20</span>
+        <p>The one regulars tell newcomers to order. Loaded with everything the truck does best.</p>
+      </div>
+      <div class="card">
+        <h3>Caborca Roll</h3>
+        <span class="price">$15</span>
+        <p>Carne, tocino, chipotle, and anguila. The Caborca, Sonora style the truck is built on.</p>
+      </div>
+      <div class="card">
+        <h3>Tocino Roll</h3>
+        <span class="price">$14</span>
+        <p>Camarón y tocino, finished the truck's way.</p>
+      </div>
+      <div class="card">
+        <h3>Vaquero</h3>
+        <span class="price">$14</span>
+        <p>Pollo, tocino, carne, and chile. A hearty one.</p>
+      </div>
+      <div class="card">
+        <h3>Boneless Roll</h3>
+        <span class="price">$14</span>
+        <p>Boneless inside and on top. Also try the boneless and alitas wings in buffalo or BBQ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="menu-teaser">
+  <div class="wrap teaser-grid">
+    <figure class="photo">
+      <img src="img/menu-board.jpg" alt="Photo of the Sushi-Lito menu board showing roll names and prices" loading="lazy">
+      <figcaption>Real photo of the truck's menu board.</figcaption>
+    </figure>
+    <div>
+      <p class="kicker">Full menu</p>
+      <h2 class="sec">Every roll, combo, and charola</h2>
+      <ul class="mini-list">
+        <li><b>Sushi Natural / Empanizado</b><span>$12</span></li>
+        <li><b>Sushi Especial rolls</b><span>$13 – $20</span></li>
+        <li><b>Combos</b><span>$15 – $20</span></li>
+        <li><b>Charolas (shareable platters)</b><span>$38 – $90</span></li>
+        <li><b>Aperitivos: yakimeshi, boneless, alitas, chiles rellenos</b><span>$10 – $15</span></li>
+      </ul>
+      <a class="btn" href="menu.html">Open the Full Menu</a>
+    </div>
+  </div>
+</section>
+
+<section class="block reviews" id="reviews">
+  <div class="wrap">
+    <p class="kicker">What people say</p>
+    <h2 class="sec">Word on the street</h2>
+    <p class="rating-line"><strong>5.0 stars / 15 reviews</strong> (Google-aggregated listing)</p>
+    <div class="quotes">
+      <div class="quote">
+        <p>"Definitely go there HUNGRY, and get the monster roll! You won't regret it!"</p>
+        <cite>— customer review on the truck's listing</cite>
+      </div>
+      <div class="quote">
+        <p>"This place is my favorite sushi in all of Tucson."</p>
+        <cite>— customer review on the truck's listing</cite>
+      </div>
+      <div class="quote">
+        <p>"Great food and very prompt service! Been eating here for over 4 years."</p>
+        <cite>— customer review on the truck's listing</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <p class="kicker">Hours &amp; location</p>
+      <h2 class="sec">Find the truck</h2>
+      <table class="hours">
+        <tr class="closed"><td>Monday</td><td>Closed</td></tr>
+        <tr><td>Tuesday</td><td>2:00 PM – 9:30 PM</td></tr>
+        <tr><td>Wednesday</td><td>2:00 PM – 9:30 PM</td></tr>
+        <tr><td>Thursday</td><td>2:00 PM – 9:30 PM</td></tr>
+        <tr><td>Friday</td><td>2:00 PM – 9:00 PM</td></tr>
+        <tr><td>Saturday</td><td>2:00 PM – 9:30 PM</td></tr>
+        <tr><td>Sunday</td><td>2:00 PM – 9:00 PM</td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="addr">
+        <strong>Sushi-Lito Food Truck</strong>
+        5422 S 12th Ave<br>Tucson, AZ 85706<br>
+        (520) 639-4863
+      </div>
+      <p class="visit-note"><strong>Call-ahead ordering is recommended.</strong> The truck gets busy in the evening, and calling in your order means it is ready when you arrive.</p>
+      <div class="hero-ctas" style="margin-top:22px">
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Sushi-lito+Food+Truck+5422+S+12th+Ave+Tucson+AZ+85706" target="_blank" rel="noopener">Get Directions</a>
+        <a class="btn" href="tel:+15206394863">Call (520) 639-4863</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap" style="padding:76px 20px">
+    <h2 class="sec">Hungry? Call it in.</h2>
+    <p>Questions about the menu or want your order ready when you roll up? Call or email the truck.</p>
+    <div class="btn-row">
+      <a class="btn" href="tel:+15206394863">Call (520) 639-4863</a>
+      <a class="btn ghost" href="mailto:sushilito20@gmail.com">Email the Truck</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#rolls">Rolls</a>
+      <a href="menu.html">Full Menu</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Hours &amp; Location</a>
+    </nav>
+    <p>This page is a website concept (design preview) created by Freightfolio to show what a website for Sushi-Lito Food Truck could look like. It is not the business's official website and is not affiliated with or endorsed by the business. Menu details reflect the truck's publicly posted menu.</p>
+    <p>Sushi-Lito Food Truck · 5422 S 12th Ave, Tucson, AZ 85706 · (520) 639-4863</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('burger').addEventListener('click',function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+</script>
+</body>
+</html>
