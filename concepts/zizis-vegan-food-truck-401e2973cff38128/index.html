@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Zizi's Vegan Food Truck | Plant-Based Comfort Food in Charlotte, NC</title>
+<meta name="description" content="Zizi's Vegan Food Truck serves plant-based comfort food, subs, sides, and desserts in Charlotte, NC, plus catering and events. Call (704) 595-9170 to order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive:#3c5233;
+    --olive-deep:#2b3d25;
+    --chili:#c1442e;
+    --chili-deep:#9c3422;
+    --cream:#faf3e3;
+    --cream-deep:#f1e6cc;
+    --ink:#26301f;
+    --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
+  h1,h2,h3,.display{font-family:'Vollkorn',Georgia,serif;line-height:1.08;color:var(--olive-deep)}
+  img{max-width:100%;display:block}
+  a{color:var(--chili)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  section{padding:72px 0}
+
+  /* design preview disclosure bar */
+  .preview-bar{background:var(--olive-deep);color:var(--cream);text-align:center;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px}
+  .preview-bar span{color:#e8d9a8}
+
+  /* header */
+  header.site{position:sticky;top:0;z-index:50;background:rgba(250,243,227,.96);border-bottom:2px solid var(--olive)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+  .brand{font-family:'Vollkorn',Georgia,serif;font-weight:800;font-size:1.7rem;color:var(--olive-deep);text-decoration:none}
+  .brand em{font-style:normal;color:var(--chili)}
+  nav.main{display:flex;gap:22px;flex-wrap:wrap}
+  nav.main a{color:var(--olive-deep);text-decoration:none;font-weight:600;font-size:.94rem}
+  nav.main a:hover{color:var(--chili)}
+  .btn{display:inline-block;background:var(--chili);color:#fff;text-decoration:none;font-weight:700;padding:13px 30px;border-radius:6px;border:none;cursor:pointer;font-size:1rem;transition:background .15s ease}
+  .btn:hover{background:var(--chili-deep)}
+  .btn.small{padding:10px 22px;font-size:.92rem}
+  .btn.ghost{background:transparent;color:var(--olive-deep);border:2px solid var(--olive-deep)}
+  .btn.ghost:hover{background:var(--olive-deep);color:var(--cream)}
+
+  /* hero split */
+  .hero{background:var(--cream);overflow:hidden;border-bottom:2px solid var(--olive)}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:64px 24px 80px}
+  .kicker{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--chili);margin-bottom:14px}
+  .hero h1{font-size:clamp(2.8rem,6vw,4.6rem);font-weight:800;margin-bottom:18px}
+  .hero h1 .it{font-style:italic;color:var(--chili)}
+  .hero p.lede{font-size:1.16rem;margin-bottom:26px;max-width:32rem;color:var(--ink)}
+  .rating{display:inline-block;background:var(--olive);color:#fff;font-weight:600;font-size:.9rem;padding:8px 18px;border-radius:999px;margin-bottom:22px;letter-spacing:.02em}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero-photo img{border-radius:4px;box-shadow:10px 10px 0 var(--olive-deep);border:3px solid var(--olive-deep)}
+  .caption{font-size:.82rem;color:#5c6653;margin-top:12px;font-style:italic}
+
+  /* marquee ticker */
+  .ticker{background:var(--olive-deep);color:var(--cream);overflow:hidden;white-space:nowrap;padding:14px 0;border-top:3px solid var(--chili);border-bottom:3px solid var(--chili)}
+  .ticker .track{display:inline-block;animation:slide 30s linear infinite;font-family:'Vollkorn',Georgia,serif;font-size:1.15rem;letter-spacing:.04em}
+  .ticker .track b{color:#f0b429;font-weight:700}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* menu board */
+  .menu{background:var(--cream-deep)}
+  .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--chili);margin-bottom:10px}
+  h2.section-title{font-size:clamp(2rem,4.5vw,3rem);font-weight:800;margin-bottom:12px}
+  .section-sub{max-width:40rem;margin-bottom:36px;color:var(--ink)}
+  .menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+  .board{background:var(--olive-deep);color:var(--cream);border-radius:8px;padding:36px 34px;box-shadow:0 18px 44px rgba(43,61,37,.28)}
+  .board h3{font-family:'Vollkorn',Georgia,serif;color:#f0b429;font-size:1.7rem;font-weight:700;margin-bottom:6px}
+  .board .note{font-size:.85rem;color:#d8cfae;margin-bottom:20px}
+  .board ul{list-style:none}
+  .board li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed rgba(250,243,227,.3);font-size:1.02rem}
+  .board li:last-child{border-bottom:none}
+  .board .price{font-weight:700;color:#f0b429;white-space:nowrap}
+  .menu-photos{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .menu-photos img{border-radius:6px;border:3px solid var(--olive-deep)}
+  .menu-photos .caption{margin-top:8px}
+
+  /* catering */
+  .catering .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+  .catering img{border-radius:6px;box-shadow:-10px 10px 0 var(--chili);border:3px solid var(--chili-deep)}
+  .catering ul{list-style:none;margin:18px 0 26px}
+  .catering li{padding:10px 0 10px 30px;position:relative;font-size:1.05rem}
+  .catering li::before{content:"";position:absolute;left:0;top:16px;width:14px;height:14px;background:var(--chili);border-radius:50%}
+
+  /* find the truck */
+  .find{background:var(--olive-deep);color:var(--cream)}
+  .find h2.section-title{color:var(--cream)}
+  .find .section-sub{color:#d8cfae}
+  .find .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .find img{border-radius:6px;border:3px solid #f0b429}
+  .find .caption{color:#d8cfae}
+  .info-card{background:rgba(250,243,227,.06);border:1px solid rgba(250,243,227,.25);border-radius:8px;padding:28px}
+  .info-card h3{font-family:'Vollkorn',Georgia,serif;color:#f0b429;font-size:1.35rem;margin-bottom:8px}
+  .info-card p{margin-bottom:14px;font-size:1.02rem}
+  .info-card a{color:#f0b429;font-weight:600}
+  .honesty{font-size:.95rem;font-style:italic;color:#d8cfae;border-top:1px dashed rgba(250,243,227,.35);padding-top:16px;margin-top:4px}
+  .find .cta-row{margin-top:22px}
+
+  /* footer */
+  footer{background:#1f2b1a;color:#cfc6a8;padding:44px 0 30px;font-size:.92rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+  footer .fbrand{font-family:'Vollkorn',Georgia,serif;font-size:1.4rem;font-weight:800;color:var(--cream)}
+  footer a{color:#f0b429}
+  .foot-note{margin-top:22px;padding-top:18px;border-top:1px solid rgba(250,243,227,.2);font-size:.8rem;color:#9aa18a}
+
+  @media(max-width:860px){
+    .hero .wrap,.menu-grid,.catering .wrap,.find .wrap{grid-template-columns:1fr}
+    .menu-photos{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:560px){.menu-photos{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">DESIGN PREVIEW - Concept website created by Freightfolio for Zizi's Vegan Food Truck</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top">Zizi's <em>Vegan</em> Food Truck</a>
+    <nav class="main" aria-label="Sections">
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#find">Find the Truck</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn small" href="tel:+17045959170">Call to Order</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Charlotte, NC - Plant-Based Comfort Food</span>
+      <h1>Real comfort food. <span class="it">All plant-based.</span></h1>
+      <p class="lede">Zizi's Vegan Food Truck has served plant-based comfort food in Charlotte since 2009. Think Philly cheesesteaks, buffalo chicken subs, oyster mushroom po' boys, and cherry cheesecake, all made without animal products.</p>
+      <div class="rating">4.7 from 250 Google reviews</div>
+      <div class="cta-row">
+        <a class="btn" href="tel:+17045959170">Call to Order: (704) 595-9170</a>
+        <a class="btn ghost" href="https://www.doordash.com/store/zizis-vegan-food-truck-charlotte-131714/">Order on DoorDash</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/sandwich.jpg" alt="Grilled vegetable sandwich with zucchini, tomato, and greens on a plate">
+      <p class="caption">Stock photo: grilled vegetable sandwich with zucchini, tomato, and greens.</p>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <span class="track">
+    Philly &quot;Cheese Steak&quot; <b>$14.99</b> &nbsp;* &nbsp;Buffalo &quot;Chicken&quot; Sub <b>$15.50</b> &nbsp;* &nbsp;Oyster Mushroom Po Boy <b>$17.99</b> &nbsp;* &nbsp;Veggie Burger <b>$14.99</b> &nbsp;* &nbsp;Cherry &quot;Cheesecake&quot; <b>$6.50</b> &nbsp;* &nbsp;Saturday Brunch 12-3pm &nbsp;* &nbsp;
+    Philly &quot;Cheese Steak&quot; <b>$14.99</b> &nbsp;* &nbsp;Buffalo &quot;Chicken&quot; Sub <b>$15.50</b> &nbsp;* &nbsp;Oyster Mushroom Po Boy <b>$17.99</b> &nbsp;* &nbsp;Veggie Burger <b>$14.99</b> &nbsp;* &nbsp;Cherry &quot;Cheesecake&quot; <b>$6.50</b> &nbsp;* &nbsp;Saturday Brunch 12-3pm &nbsp;* &nbsp;
+  </span>
+</div>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <p class="eyebrow">The Price Board</p>
+    <h2 class="section-title">What is cooking at the truck</h2>
+    <p class="section-sub">Prices shown are the truck's DoorDash menu prices. Call or order on DoorDash to get the current menu for the day.</p>
+    <div class="menu-grid">
+      <div class="board">
+        <h3>Subs, Burgers, and Sides</h3>
+        <p class="note">Everything is plant-based.</p>
+        <ul>
+          <li><span>Philly "Cheese Steak"</span><span class="price">$14.99</span></li>
+          <li><span>Buffalo "Chicken" Sub</span><span class="price">$15.50</span></li>
+          <li><span>Oyster Mushroom Po Boy</span><span class="price">$17.99</span></li>
+          <li><span>"Chicken Cheese Steak" Sub</span><span class="price">$14.99</span></li>
+          <li><span>Veggie Burger</span><span class="price">$14.99</span></li>
+          <li><span>"Crab" Cake Sandwich</span><span class="price">$13.99</span></li>
+          <li><span>Seasoned Fries</span><span class="price">$5.99</span></li>
+          <li><span>Sides: Collard Greens, Candied Yams, Mac and "Cheese"</span><span class="price">$4.99 - $5.99</span></li>
+          <li><span>Cherry "Cheesecake"</span><span class="price">$6.50</span></li>
+          <li><span>Weekend Special: Shrooms, Collards, Mac and Cheese</span><span class="price">$24.99</span></li>
+        </ul>
+      </div>
+      <div class="menu-photos">
+        <div>
+          <img src="img/salad.jpg" alt="Bowl of fresh salad greens with tomatoes">
+          <p class="caption">Fresh ingredients, photo from the truck's own site.</p>
+        </div>
+        <div>
+          <img src="img/cheesecake.jpg" alt="Slice of cheesecake topped with cherries">
+          <p class="caption">Stock photo: cherry cheesecake slice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="catering" id="catering">
+  <div class="wrap">
+    <div>
+      <img src="img/award.jpg" alt="Charlotte Vegan Chef Challenge 2022 award certificate naming Zizi's Vegan Kitchen as Best Vegan Lunch Spot">
+      <p class="caption">Photo from the truck's own site: the Charlotte Vegan Chef Challenge 2022 award.</p>
+    </div>
+    <div>
+      <p class="eyebrow">Catering and Events</p>
+      <h2 class="section-title">Bring the truck to your event</h2>
+      <p>Zizi's does catering, events, and private parties in the Charlotte area. The truck has fed Charlotte since 2009, and the full menu travels with it.</p>
+      <ul>
+        <li>Private parties and celebrations</li>
+        <li>Corporate events and office lunches</li>
+        <li>Community events and festivals</li>
+        <li>Weddings and rehearsal dinners</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn" href="tel:+17045959170">Call (704) 595-9170</a>
+        <a class="btn ghost" href="mailto:awesomevegan2go@gmail.com">Email awesomevegan2go@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="find" id="find">
+  <div class="wrap">
+    <div class="info-card">
+      <p class="eyebrow">Find the Truck</p>
+      <h3>1121 Beatties Ford Rd<br>Charlotte, NC 28216</h3>
+      <p>The truck parks at 1121 Beatties Ford Rd in Charlotte. Typical schedule: Thursday 4pm - 8pm, Friday 12pm - 8pm, Saturday 12pm - 8pm.</p>
+      <p class="honesty">Hours vary by week and events. See awesomevegan2go.com or call (704) 595-9170 to confirm the truck is out before you head over.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+17045959170">Call to Order</a>
+        <a class="btn ghost" href="https://www.doordash.com/store/zizis-vegan-food-truck-charlotte-131714/">Order on DoorDash</a>
+      </div>
+    </div>
+    <div>
+      <img src="img/truck.jpg" alt="A green food truck serving customers on a sunny day">
+      <p class="caption">Stock photo: a food truck serving customers outdoors.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div>
+      <div class="fbrand">Zizi's Vegan Food Truck</div>
+      <p>1121 Beatties Ford Rd, Charlotte, NC 28216</p>
+      <p>Phone: <a href="tel:+17045959170">(704) 595-9170</a></p>
+      <p>Email: <a href="mailto:awesomevegan2go@gmail.com">awesomevegan2go@gmail.com</a></p>
+    </div>
+    <div>
+      <p><strong>Serving plant-based comfort food since 2009.</strong></p>
+      <p>Subs, burgers, sides, desserts, catering, and events.</p>
+    </div>
+  </div>
+  <div class="wrap foot-note">
+    <p>Design Preview: this is a concept website created by Freightfolio for Zizi's Vegan Food Truck. It is not the business's official site. Menu prices and hours shown come from public listings and may change; call the truck to confirm.</p>
+  </div>
+</footer>
+
+</body>
+</html>

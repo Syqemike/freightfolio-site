@@ -1,0 +1,31 @@
+PROVENANCE - Tops Food Truck concept site photos
+Concept slug: tops-food-truck-401e2973cff3815f
+Built: 2026-10-22 (Website Dev shift)
+
+logo.jpg - REAL. The business's own logo (cartoon pig chef with "TOP'S FOOD TRUCK
+  LLC" wordmark), taken from the business's own website.
+  Source: http://topsfoodtruck.wixsite.com/topsfoodtruck
+  (Wix CDN, viewed on the public site 2026-10-22.)
+
+spread.jpg - REAL. Photo of the truck's actual food spread: a loaded burger,
+  sauced chicken wings, loaded shrimp fries, and a bowl of fried rice with shrimp,
+  taken from the business's own website.
+  Source: http://topsfoodtruck.wixsite.com/topsfoodtruck
+  (Wix CDN, viewed on the public site 2026-10-22.)
+
+cheesesteak.jpg - REAL. Photo of the truck's actual Philly-style steak sandwich
+  and loaded cheese fries, taken from the business's own website.
+  Source: http://topsfoodtruck.wixsite.com/topsfoodtruck
+  (Wix CDN, viewed on the public site 2026-10-22.)
+
+wings.jpg - STOCK (Pexels free license). Grilled chicken wings on flatbread with
+  herbs. Not the business's food.
+  Source: https://www.pexels.com/photo/106343/ (Pexels photo 106343).
+  Captioned on the page as a stock photo.
+
+dessert.jpg - STOCK (Pexels free license). Slice of white frosted layer cake on a
+  plate. Not the business's dessert.
+  Source: https://www.pexels.com/photo/4110001/ (Pexels photo 4110001).
+  Captioned on the page as a stock photo.
+
+No images were generated, drawn, or illustrated for this site.

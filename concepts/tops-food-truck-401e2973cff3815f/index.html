@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tops Food Truck | Family-Owned Comfort Food in Mobile, AL</title>
+<meta name="description" content="Tops Food Truck is a family-owned comfort-food truck in Mobile, AL serving wings, burgers, loaded fries, breakfast plates, and desserts. Call (251) 610-3729 to order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --tomato:#b3402a;
+    --tomato-deep:#8c2f1d;
+    --mustard:#e0a92e;
+    --mustard-soft:#f6dd9a;
+    --cream:#faf5e6;
+    --cream-deep:#f2e8cd;
+    --ink:#3a2a1e;
+    --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+  h1,h2,h3,.display{font-family:'Archivo Black',Impact,sans-serif;color:var(--tomato-deep);line-height:1.05;letter-spacing:.01em}
+  img{max-width:100%;display:block}
+  a{color:var(--tomato)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  section{padding:68px 0}
+
+  /* design preview disclosure bar */
+  .preview-bar{background:var(--tomato-deep);color:var(--cream);text-align:center;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px}
+
+  /* header */
+  header.site{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:3px solid var(--tomato)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;flex-wrap:wrap}
+  .brand{font-family:'Archivo Black',Impact,sans-serif;font-size:1.5rem;color:var(--tomato-deep);text-decoration:none}
+  .brand .dot{color:var(--mustard)}
+  nav.main{display:flex;gap:22px;flex-wrap:wrap}
+  nav.main a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.94rem}
+  nav.main a:hover{color:var(--tomato)}
+  .btn{display:inline-block;background:var(--tomato);color:#fff;text-decoration:none;font-weight:700;padding:13px 28px;border-radius:999px;border:none;cursor:pointer;font-size:1rem;transition:background .15s ease}
+  .btn:hover{background:var(--tomato-deep)}
+  .btn.small{padding:10px 22px;font-size:.92rem}
+  .btn.dark{background:var(--ink);color:var(--cream)}
+  .btn.dark:hover{background:#000}
+
+  /* hero */
+  .hero{background:var(--cream-deep);border-bottom:3px solid var(--tomato);overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:60px 24px 76px}
+  .kicker{display:inline-block;background:var(--mustard);color:var(--ink);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:4px;margin-bottom:16px}
+  .hero h1{font-size:clamp(2.6rem,5.5vw,4.2rem);margin-bottom:16px}
+  .hero p.lede{font-size:1.14rem;margin-bottom:24px;max-width:32rem}
+  .rating{display:inline-block;background:var(--tomato);color:#fff;font-weight:700;font-size:.92rem;padding:8px 18px;border-radius:999px;margin-bottom:22px;letter-spacing:.02em}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero-photo img{border-radius:10px;border:4px solid var(--tomato);transform:rotate(-1.5deg);box-shadow:0 20px 50px rgba(140,47,29,.28)}
+  .caption{font-size:.82rem;color:#7a6a52;margin-top:12px;font-style:italic}
+
+  /* friday special banner */
+  .special{background:var(--mustard);padding:28px 0;border-top:3px dashed var(--tomato-deep);border-bottom:3px dashed var(--tomato-deep)}
+  .special .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .special h2{font-size:clamp(1.4rem,3vw,2rem);color:var(--tomato-deep)}
+  .special p{font-weight:600;color:var(--ink);font-size:1.08rem;max-width:38rem}
+
+  /* ticket board menu */
+  .tickets .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tomato);margin-bottom:10px}
+  h2.section-title{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:12px}
+  .section-sub{max-width:42rem;margin-bottom:36px}
+  .ticket-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:40px}
+  .ticket{background:var(--white);border:2px dashed var(--tomato);border-radius:12px;padding:26px 24px;position:relative}
+  .ticket::before{content:"";position:absolute;top:-11px;left:50%;transform:translateX(-50%);width:20px;height:20px;background:var(--mustard);border-radius:50%;border:2px solid var(--tomato)}
+  .ticket h3{font-size:1.05rem;color:var(--tomato-deep);margin-bottom:14px;letter-spacing:.04em;text-transform:uppercase}
+  .ticket ul{list-style:none}
+  .ticket li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px dotted #d9cba6;font-size:.97rem}
+  .ticket li:last-child{border-bottom:none}
+  .ticket .price{font-weight:700;color:var(--tomato);white-space:nowrap}
+  .menu-note{font-size:.9rem;font-style:italic;color:#7a6a52;margin-bottom:36px}
+  .menu-photos{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .menu-photos img{border-radius:10px;border:4px solid var(--tomato)}
+
+  /* wings row */
+  .wings{background:var(--tomato-deep);color:var(--cream)}
+  .wings .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .wings h2.section-title{color:var(--cream)}
+  .flavors{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 26px}
+  .flavors span{background:var(--mustard);color:var(--ink);font-weight:700;font-size:.9rem;padding:8px 16px;border-radius:999px}
+  .wings .section-sub{color:#e8d9b8}
+  .wings img{border-radius:10px;border:4px solid var(--mustard)}
+  .wings .caption{color:#e8d9b8}
+  .wings .cta-row{margin-top:8px}
+
+  /* family story */
+  .story .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px;align-items:center}
+  .story img{border-radius:10px;box-shadow:12px 12px 0 var(--mustard);border:4px solid var(--ink)}
+  .story p{margin-bottom:16px;font-size:1.06rem}
+
+  /* find */
+  .find{background:var(--cream-deep);border-top:3px solid var(--tomato)}
+  .find .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .info{background:var(--white);border:2px solid var(--tomato);border-radius:12px;padding:32px}
+  .info h3{font-family:'Archivo Black',Impact,sans-serif;font-size:1.3rem;color:var(--tomato-deep);margin-bottom:10px}
+  .info p{margin-bottom:12px;font-size:1.03rem}
+  .info .hours{font-weight:600}
+  .find .cta-row{margin-top:20px}
+
+  /* footer */
+  footer{background:var(--ink);color:#d9cba6;padding:44px 0 30px;font-size:.92rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+  footer .fbrand{font-family:'Archivo Black',Impact,sans-serif;font-size:1.4rem;color:var(--cream)}
+  footer a{color:var(--mustard)}
+  .foot-note{margin-top:22px;padding-top:18px;border-top:1px solid rgba(250,245,230,.2);font-size:.8rem;color:#a89a7d}
+
+  @media(max-width:900px){
+    .ticket-grid{grid-template-columns:1fr 1fr}
+    .hero .wrap,.wings .wrap,.story .wrap,.find .wrap{grid-template-columns:1fr}
+  }
+  @media(max-width:600px){.ticket-grid{grid-template-columns:1fr}.menu-photos{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">DESIGN PREVIEW - Concept website created by Freightfolio for Tops Food Truck</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top">TOPS<span class="dot">.</span> FOOD TRUCK</a>
+    <nav class="main" aria-label="Sections">
+      <a href="#menu">Menu</a>
+      <a href="#wings">Wings</a>
+      <a href="#story">Our Story</a>
+      <a href="#find">Find Us</a>
+    </nav>
+    <a class="btn small" href="tel:+12516103729">Call to Order</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Family-Owned - Mobile, AL</span>
+      <h1>Comfort food, served hot from the truck.</h1>
+      <p class="lede">Tops Food Truck is a family-owned comfort-food truck in Mobile, Alabama. Wings in eight sauces, loaded burgers, Big Top fries, breakfast plates, and homemade-style desserts, all cooked to order.</p>
+      <div class="rating">4.9 from 36 Google reviews</div>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12516103729">Call to Order: (251) 610-3729</a>
+        <a class="btn dark" href="https://www.doordash.com/store/Tops-Food-Truck-Mobile-37131677/">Order on DoorDash</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/spread.jpg" alt="Tops Food Truck food: a loaded burger, sauced chicken wings, loaded shrimp fries, and a bowl of fried rice with shrimp">
+      <p class="caption">Real photo: the truck's own spread of burgers, wings, loaded fries, and fried rice.</p>
+    </div>
+  </div>
+</section>
+
+<div class="special">
+  <div class="wrap">
+    <div>
+      <h2>Friday Special</h2>
+      <p>Red beans and rice with sausage, crispy fried chicken, and cornbread. The Friday plate the regulars ask about all week.</p>
+    </div>
+    <a class="btn dark" href="tel:+12516103729">Call Ahead for Friday</a>
+  </div>
+</div>
+
+<section class="tickets" id="menu">
+  <div class="wrap">
+    <p class="eyebrow">The Ticket Board</p>
+    <h2 class="section-title">Order off the board</h2>
+    <p class="section-sub">Prices below come from the truck's current DoorDash menu. Call ahead and your order is usually ready in 10 to 15 minutes.</p>
+    <div class="ticket-grid">
+      <div class="ticket">
+        <h3>Wings</h3>
+        <ul>
+          <li><span>10pc Wing with Fries</span><span class="price">$17.00</span></li>
+          <li><span>8pc Wing with Fries</span><span class="price">$15.00</span></li>
+          <li><span>20pc Wing with Fries</span><span class="price">$28.00</span></li>
+          <li><span>6pc Wings with Big Tops Fries</span><span class="price">$20.00</span></li>
+        </ul>
+      </div>
+      <div class="ticket">
+        <h3>Burgers and More</h3>
+        <ul>
+          <li><span>Cheeseburger with Fries</span><span class="price">$12.00</span></li>
+          <li><span>Bacon Cheeseburger with Fries</span><span class="price">$13.00</span></li>
+          <li><span>Double Cheese Burger with Fries</span><span class="price">$15.00</span></li>
+          <li><span>Philly Steak and Fries</span><span class="price">$17.00</span></li>
+          <li><span>Chicken Philly with Fries</span><span class="price">$17.00</span></li>
+        </ul>
+      </div>
+      <div class="ticket">
+        <h3>Specialty Fries</h3>
+        <ul>
+          <li><span>Golden Seasoned Fries</span><span class="price">$5.00</span></li>
+          <li><span>Big Top Fries</span><span class="price">$15.00</span></li>
+          <li><span>Philly Steak and Shrimp Fries</span><span class="price">$17.00</span></li>
+          <li><span>Philly Steak with Big Top Fries</span><span class="price">$22.00</span></li>
+        </ul>
+      </div>
+      <div class="ticket">
+        <h3>Mix and Match</h3>
+        <ul>
+          <li><span>Cheeseburger, 5 Wings, Fries</span><span class="price">$18.00</span></li>
+          <li><span>Philly Steak, 5 Wings, Fries</span><span class="price">$20.00</span></li>
+          <li><span>Bacon Cheeseburger, Big Top Fries, 5 Wings</span><span class="price">$25.00</span></li>
+          <li><span>Chili Cheese Dog, 5 Wings, Fries</span><span class="price">$15.00</span></li>
+        </ul>
+      </div>
+      <div class="ticket">
+        <h3>Breakfast</h3>
+        <ul>
+          <li><span>Fish, Shrimp, and Cheese Grits</span><span class="price">$15.00</span></li>
+          <li><span>Conecuh Sausage Breakfast</span><span class="price">$13.00</span></li>
+          <li><span>Chicken and Waffles</span><span class="price">$15.00</span></li>
+          <li><span>Steak, Egg, and Cheese Sandwich</span><span class="price">$10.00</span></li>
+        </ul>
+      </div>
+      <div class="ticket">
+        <h3>Desserts</h3>
+        <ul>
+          <li><span>Slice of Pound Cake</span><span class="price">$4.00</span></li>
+          <li><span>Red Velvet Slice</span><span class="price">$6.00</span></li>
+          <li><span>Chocolate Chip Cookie</span><span class="price">$2.25</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="menu-note">The full board also covers wraps, nachos, specialty dogs, fish and tenders, and salads. Prices can change; DoorDash shows the current menu at order time.</p>
+    <div class="menu-photos">
+      <div>
+        <img src="img/cheesesteak.jpg" alt="Tops Food Truck Philly-style steak sandwich with loaded cheese fries">
+        <p class="caption">Real photo: the truck's own Philly-style steak sandwich and loaded cheese fries.</p>
+      </div>
+      <div>
+        <img src="img/dessert.jpg" alt="Slice of white frosted layer cake on a plate with a fork">
+        <p class="caption">Stock photo: slice of white frosted layer cake.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wings" id="wings">
+  <div class="wrap">
+    <div>
+      <img src="img/wings.jpg" alt="Grilled chicken wings served with fresh herbs">
+      <p class="caption">Stock photo: grilled chicken wings with fresh herbs.</p>
+    </div>
+    <div>
+      <h2 class="section-title">Pick your wing flavor</h2>
+      <p class="section-sub">Wings are the truck's signature. Every flavor comes tossed to order.</p>
+      <div class="flavors">
+        <span>Sweet Heat</span>
+        <span>Lemon Pepper</span>
+        <span>Hot</span>
+        <span>Dry Ranch</span>
+        <span>Hot Lemon Pepper</span>
+        <span>Honey Barbecue</span>
+        <span>Spicy Ranch</span>
+        <span>Country Fried</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12516103729">Call (251) 610-3729</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <div>
+      <img src="img/logo.jpg" alt="Tops Food Truck LLC logo: a cartoon pig chef holding a carving fork above the words Top's Food Truck LLC">
+      <p class="caption">The truck's own logo, from its website.</p>
+    </div>
+    <div>
+      <p class="eyebrow">Our Story</p>
+      <h2 class="section-title">Family-owned, Mobile proud</h2>
+      <p>Tops is a family-owned comfort-food truck run right out of Mobile, Alabama. The truck has built its name on big portions, hot food, and fast service, with breakfast gumbo and loaded fries among the local favorites.</p>
+      <p>Regulars know to call their order in. The crew keeps the line moving and the food coming out hot.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://www.doordash.com/store/Tops-Food-Truck-Mobile-37131677/">Order on DoorDash</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="find" id="find">
+  <div class="wrap">
+    <div class="info">
+      <p class="eyebrow">Find Us</p>
+      <h3>420 Holcombe Ave<br>Mobile, AL 36606</h3>
+      <p class="hours">Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 5:00 PM</p>
+      <p>Find the truck at 420 Holcombe Ave in Mobile. Delivery and pickup are available through DoorDash.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12516103729">Call to Order</a>
+        <a class="btn dark" href="https://www.doordash.com/store/Tops-Food-Truck-Mobile-37131677/">Order on DoorDash</a>
+      </div>
+    </div>
+    <div class="info">
+      <p class="eyebrow">Good to Know</p>
+      <h3>Order ahead, skip the wait</h3>
+      <p>Call (251) 610-3729 and your food is usually ready in 10 to 15 minutes. Outdoor seating is available at the truck, and prices stay friendly.</p>
+      <p>The truck is normally closed on holidays.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="fbrand">TOPS FOOD TRUCK</div>
+      <p>420 Holcombe Ave, Mobile, AL 36606</p>
+      <p>Phone: <a href="tel:+12516103729">(251) 610-3729</a></p>
+    </div>
+    <div>
+      <p><strong>Family-owned comfort food, served hot.</strong></p>
+      <p>Wings, burgers, loaded fries, breakfast, and desserts.</p>
+    </div>
+  </div>
+  <div class="wrap foot-note">
+    <p>Design Preview: this is a concept website created by Freightfolio for Tops Food Truck. It is not the business's official site. Menu prices and hours shown come from public listings and may change; call the truck to confirm.</p>
+  </div>
+</footer>
+
+</body>
+</html>
