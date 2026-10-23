@@ -1,0 +1,60 @@
+PHOTO PROVENANCE - Smac's Shack Food Truck concept website
+All photos below are real customer photos of Smac's Shack Food Truck
+from the business's public Yelp listing, downloaded 2026-10-23.
+Source page: https://www.yelp.com/biz/TGMpdT1MutM9Nn1hHKgYXQ
+(Smac's Shack Food Truck, Mobile, AL - Yelp business listing, claimed by owner.)
+
+serving-crowds.jpg
+  URL: https://s3-media0.fl.yelpcdn.com/bphoto/OfY1QQfcra-F2NHWy2-fSA/o.jpg
+  Depicts: the Smac's Shack food truck at night, lit "SMAC'S SHACK" sign,
+  serving a crowd on a sidewalk (Yelp caption: "Serving the Crowds at
+  The Lost Garden on Dauphin St.").
+
+smac-stacks.jpg
+  URL: https://s3-media0.fl.yelpcdn.com/bphoto/of6HBPzIK0cR4tbVSyij-Q/o.jpg
+  Depicts: Loaded Smac Stacks (loaded fries with brisket, nacho cheese,
+  jalapenos) in a to-go box next to squeeze bottles labeled
+  "ALABAMA WHITE SAUCE" and "AWESOME SAUCE".
+
+pulled-pork-quesadilla.jpg
+  URL: https://s3-media0.fl.yelpcdn.com/bphoto/NP0vyQE2zJgvixsHPrDHHg/o.jpg
+  Depicts: a pulled pork quesadilla with chips in a foil-lined to-go box.
+
+pulled-pork-sandwich.jpg
+  URL: https://s3-media0.fl.yelpcdn.com/bphoto/bqMDGtkDPktVulSE2Gji-w/o.jpg
+  Depicts: a pulled pork sandwich held in a checkered paper basket
+  outside the truck (Yelp category: "Pulled pork sandwich").
+
+food3.jpg
+  URL: https://s3-media0.fl.yelpcdn.com/bphoto/p6tAmSDsPdVf1uIfw1DN6Q/o.jpg
+  Depicts: a customer holding a pulled pork sandwich in checkered paper
+  outside the truck (Yelp category: "food").
+
+food4.jpg
+  URL: https://s3-media0.fl.yelpcdn.com/bphoto/vtHDc560JFUA8aKy-vRJ_g/o.jpg
+  Depicts: a customer eating a sandwich at the truck (Yelp category: "food").
+
+smoked-wangs.jpg
+  URL: https://s3-media0.fl.yelpcdn.com/bphoto/cJr-T0zbZ5AnODf4JlrmkA/o.jpg
+  Depicts: a tray of smoked chicken wings ("Smoked Wild Wangs", per Yelp).
+
+bagnin-baguette.jpg
+  URL: https://s3-media0.fl.yelpcdn.com/bphoto/QyPJ2-_1XrWwKHOZ1na9-Q/o.jpg
+  Depicts: chopped chicken on a baguette with Alabama white sauce,
+  per the Yelp caption "Chopped Chicken Bang'n Baguette w/ Alabama
+  White Sauce".
+
+bagnin-baguette2.jpg
+  URL: https://s3-media0.fl.yelpcdn.com/bphoto/IK0Q9qqhQ_b2s0XLh5sCJg/o.jpg
+  Depicts: chopped chicken baguette sandwich with Alabama white sauce
+  ("Chopped Chicken Bang'n Baguette w/ Alabama White Sauce", per Yelp).
+
+bagnin-baguette3.jpg
+  URL: https://s3-media0.fl.yelpcdn.com/bphoto/rwmzOd7hEHmY9N939OnXRg/o.jpg
+  Depicts: chopped chicken baguette sandwich with Alabama white sauce
+  ("Chopped Chicken Bang'n Baguette w/ Alabama White Sauce", per Yelp).
+
+Note: restaurantji.com also hosts two menu-board photos on the
+Smac's Shack @ BoxOxt page (https://www.restaurantji.com/al/mobile/smac-39-s-shack-/),
+but inspection showed they are collage photos of OTHER vendors' menus
+at BoxOxt, not Smac's Shack, so they were NOT used.
