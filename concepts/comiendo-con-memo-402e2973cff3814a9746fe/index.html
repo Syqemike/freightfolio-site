@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Comiendo Con memo | Mesquite-Grilled Tacos in Laveen, AZ | Website Concept</title>
+<meta name="description" content="Website concept for Comiendo Con memo: family-owned mesquite-grill Mexican street food truck in Laveen, AZ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --char:#14100c; --char2:#1d1510; --ember:#e8631c; --flame:#f5a623;
+    --cream:#f6ead3; --cream2:#efdfbf; --lime:#a9c83f; --ink:#241a12;
+    --line:rgba(232,99,28,.35);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--char);color:#f3e9d6;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .ribbon{background:var(--ember);color:#1a0e06;text-align:center;font-size:.72rem;font-weight:800;letter-spacing:.18em;padding:.55rem 1rem;text-transform:uppercase}
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(20,16,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;gap:1rem;padding:.8rem 1.25rem}
+  .brand{font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.7rem;letter-spacing:.06em;color:#fff;text-decoration:none;white-space:nowrap}
+  .brand span{color:var(--flame)}
+  nav.links{margin-left:auto;display:flex;gap:1.1rem;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  nav.links a{text-decoration:none;color:#e8dcc4}
+  nav.links a:hover{color:var(--flame)}
+  .call-btn{font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.15rem;letter-spacing:.08em;background:var(--ember);color:#160c05;text-decoration:none;padding:.45rem 1.1rem;border-radius:6px;transition:transform .15s,background .15s}
+  .call-btn:hover{background:var(--flame);transform:translateY(-1px)}
+  .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden}
+  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,.15) 0%,rgba(20,16,12,.35) 40%,rgba(20,16,12,.92) 100%)}
+  .hero-inner{position:relative;z-index:2;max-width:1140px;margin:0 auto;padding:0 1.25rem 4.5rem;width:100%}
+  .kicker{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--flame);border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem;margin-bottom:1.1rem;background:rgba(20,16,12,.55)}
+  h1{font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:clamp(3.2rem,9vw,6.8rem);line-height:.95;letter-spacing:.02em;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+  h1 .accent{color:var(--flame)}
+  .hero-sub{margin-top:1rem;font-size:1.12rem;font-weight:600;color:#f0e3c8;max-width:34rem}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin-top:1.1rem;font-size:.95rem;font-weight:700;color:#f6ead3}
+  .hero-meta b{color:var(--flame);font-weight:800}
+  .cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+  .btn{font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.35rem;letter-spacing:.1em;text-decoration:none;padding:.7rem 1.8rem;border-radius:8px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-fire{background:var(--ember);color:#170d05}
+  .btn-ghost{border:2px solid var(--flame);color:var(--flame)}
+  .strip{background:#0d0906;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .strip-inner{max-width:1140px;margin:0 auto;padding:.9rem 1.25rem;display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;font-size:.85rem;font-weight:700;letter-spacing:.06em}
+  .strip-inner .dot{color:var(--ember)}
+  section.block{max-width:1140px;margin:0 auto;padding:4.5rem 1.25rem}
+  .sec-label{font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.05rem;letter-spacing:.28em;color:var(--ember);text-transform:uppercase;margin-bottom:.4rem}
+  h2{font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:clamp(2.2rem,5vw,3.4rem);letter-spacing:.03em;color:#fff;margin-bottom:1rem}
+  h2 .accent{color:var(--flame)}
+  .menu-panel{background:var(--cream);color:var(--ink);border-radius:14px;padding:clamp(1.5rem,4vw,3rem);display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+  .menu-panel img.board{border-radius:10px;width:100%;box-shadow:0 18px 40px rgba(0,0,0,.25)}
+  .menu-list h3{font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.6rem;letter-spacing:.06em;color:#8a3c10;border-bottom:2px solid var(--ember);padding-bottom:.3rem;margin:1.4rem 0 .7rem}
+  .menu-list h3:first-child{margin-top:0}
+  .item{display:flex;justify-content:space-between;gap:1rem;padding:.32rem 0;font-size:.98rem}
+  .item .name{font-weight:700}
+  .item .name small{display:block;font-weight:600;color:#6b5136;font-size:.82rem}
+  .item .price{font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.25rem;color:#b34a12;white-space:nowrap}
+  .menu-note{margin-top:1.2rem;font-size:.82rem;color:#6b5136;font-weight:600}
+  .favs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:1.5rem}
+  .fav-card{background:var(--char2);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:transform .18s,border-color .18s}
+  .fav-card:hover{transform:translateY(-4px);border-color:var(--ember)}
+  .fav-card img{height:220px;width:100%;object-fit:cover}
+  .fav-card .body{padding:1.1rem 1.2rem 1.3rem}
+  .fav-card h3{font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.45rem;letter-spacing:.05em;color:var(--flame);margin-bottom:.3rem}
+  .fav-card p{font-size:.92rem;color:#e3d3b6}
+  .fav-card .price-tag{display:inline-block;margin-top:.6rem;font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.1rem;letter-spacing:.06em;color:#1a0e06;background:var(--flame);border-radius:5px;padding:.1rem .7rem}
+  .truck-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center;margin-top:1.5rem}
+  .truck-grid img{border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+  .facts{list-style:none;margin-top:1.4rem;display:grid;gap:.7rem}
+  .facts li{background:var(--char2);border-left:4px solid var(--ember);border-radius:0 8px 8px 0;padding:.75rem 1rem;font-size:.95rem;color:#ecdfc4}
+  .facts li b{color:var(--flame)}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;background:var(--cream);color:var(--ink);border-radius:14px;padding:clamp(1.5rem,4vw,3rem);margin-top:1.5rem}
+  .hours-table{width:100%;border-collapse:collapse;margin-top:1rem}
+  .hours-table th{font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.1rem;letter-spacing:.1em;text-align:left;color:#8a3c10;padding:.45rem 0;border-bottom:2px solid var(--ember)}
+  .hours-table td{padding:.45rem 0;font-weight:600;border-bottom:1px dashed #d9c193}
+  .hours-table td:last-child{text-align:right;font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.1rem;letter-spacing:.05em}
+  .visit h3{font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.7rem;letter-spacing:.05em;color:#8a3c10;margin-bottom:.4rem}
+  .visit p{font-size:.98rem;color:#4a3826}
+  .big-call{display:block;margin-top:1.2rem;background:var(--ember);color:#170d05;text-align:center;font-family:'Bebas Neue','Arial Narrow',Impact,'Oswald',sans-serif;font-size:1.6rem;letter-spacing:.08em;text-decoration:none;border-radius:10px;padding:.9rem;transition:transform .15s}
+  .big-call:hover{transform:translateY(-2px);background:var(--flame)}
+  .social-row{display:flex;gap:.8rem;margin-top:1rem;flex-wrap:wrap}
+  .social-row a{font-size:.85rem;font-weight:800;letter-spacing:.06em;color:#8a3c10;border:2px solid #c98a4b;border-radius:999px;padding:.45rem 1.1rem;text-decoration:none}
+  .social-row a:hover{background:#8a3c10;color:var(--cream)}
+  .rating-line{margin-top:1.4rem;font-size:.95rem;font-weight:700;color:#8a3c10}
+  .rating-line .stars{color:var(--ember);font-size:1.1rem;letter-spacing:.1em}
+  footer{border-top:1px solid var(--line);margin-top:2rem}
+  .foot-inner{max-width:1140px;margin:0 auto;padding:2.2rem 1.25rem;font-size:.82rem;color:#a8977c}
+  .foot-inner .disc{border:1px dashed var(--line);border-radius:8px;padding:1rem 1.2rem;margin-bottom:1.2rem}
+  .cap{font-size:.78rem;color:#b9a98c;font-style:italic;padding:.5rem 1.2rem .8rem}
+  @media (max-width:860px){
+    .menu-panel{grid-template-columns:1fr}
+    .truck-grid{grid-template-columns:1fr}
+    .visit{grid-template-columns:1fr}
+    nav.links{display:none}
+    section.block{padding:3rem 1.1rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="ribbon">Design Preview  -  Website Concept for Comiendo Con memo (not the business&rsquo;s official site)</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">Comiendo <span>Con memo</span></a>
+    <nav class="links" aria-label="Sections">
+      <a href="#menu">Menu</a>
+      <a href="#favorites">Favorites</a>
+      <a href="#truck">The Truck</a>
+      <a href="#findus">Find Us</a>
+    </nav>
+    <a class="call-btn" href="tel:+16028268652" style="margin-left:auto">Call</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img class="bg" src="img/hero-crew.jpg" alt="The Comiendo Con memo crew at night in front of the painted truck in Laveen, AZ">
+    <div class="hero-inner">
+      <span class="kicker">Family-owned food truck &middot; Laveen, AZ</span>
+      <h1>Mesquite-Grilled<br><span class="accent">Tacos</span> Under the Lights</h1>
+      <p class="hero-sub">Comiendo Con memo serves carne asada, al pastor, birria and more, cooked over a mesquite grill at 3112 W. Dobbins Rd. in Laveen.</p>
+      <div class="hero-meta">
+        <span><b>Tue-Thu</b> 5-11 PM</span>
+        <span><b>Fri-Sat</b> 5 PM-12 AM</span>
+        <span><b>Sun-Mon</b> Closed</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-fire" href="tel:+16028268652">Call (602) 826-8652</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=3112+W+Dobbins+Rd+Laveen+AZ+85339" target="_blank" rel="noopener">Find Us</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="strip-inner">
+      <span>Family owned <span class="dot">&middot;</span></span>
+      <span>Keto-friendly cheese-shell tacos <span class="dot">&middot;</span></span>
+      <span>Drive-thru on site <span class="dot">&middot;</span></span>
+      <span>Outdoor tables <span class="dot">&middot;</span></span>
+      <span>Also on DoorDash, Uber Eats &amp; Grubhub</span>
+    </div>
+  </div>
+
+  <section class="block" id="menu">
+    <div class="sec-label">The Menu</div>
+    <h2>Real Food, <span class="accent">Real Prices</span></h2>
+    <div class="menu-panel">
+      <div>
+        <div class="menu-list">
+          <h3>Tacos  -  $4.00</h3>
+          <div class="item"><span class="name">Carne asada<small>mesquite-grilled steak</small></span><span class="price">$4.00</span></div>
+          <div class="item"><span class="name">Al pastor<small>with pineapple (pi&ntilde;a)</small></span><span class="price">$4.00</span></div>
+          <div class="item"><span class="name">Cabeza</span><span class="price">$4.00</span></div>
+          <div class="item"><span class="name">Lengua</span><span class="price">$4.00</span></div>
+          <div class="item"><span class="name">Chorizo</span><span class="price">$4.00</span></div>
+          <div class="item"><span class="name">Tripa</span><span class="price">$4.00</span></div>
+          <div class="item"><span class="name">Birria</span><span class="price">$4.00</span></div>
+          <div class="item"><span class="name">Pollo</span><span class="price">$4.00</span></div>
+          <h3>Specialties</h3>
+          <div class="item"><span class="name">Vampiros<small>al pastor con pi&ntilde;a, crispy cheese crust</small></span><span class="price">$5.00</span></div>
+          <div class="item"><span class="name">Quesabirria</span><span class="price">$4.00</span></div>
+          <div class="item"><span class="name">Cheese quesadilla</span><span class="price">$4.00</span></div>
+          <div class="item"><span class="name">Quesadilla con carne</span><span class="price">$5.00</span></div>
+          <div class="item"><span class="name">Keto taco<small>cheese-shell taco</small></span><span class="price">$5.00</span></div>
+          <div class="item"><span class="name">Chile relleno</span><span class="price">$6.00</span></div>
+          <div class="item"><span class="name">Naked chile</span><span class="price">$6.00</span></div>
+          <div class="item"><span class="name">Costillas<small>grilled beef short ribs</small></span><span class="price">$16 / $29</span></div>
+          <h3>Drinks</h3>
+          <div class="item"><span class="name">Drink of the day<small>aguas frescas: strawberry lemonade, cucumber, watermelon</small></span><span class="price">Ask</span></div>
+        </div>
+        <p class="menu-note">Prices from the truck&rsquo;s posted menu. Sales tax and a processing fee apply to card payments. The truck also sells carne asada beef jerky.</p>
+      </div>
+      <div>
+        <img class="board" src="img/menu-board.jpg" alt="The printed Comiendo Con memo menu board with prices, hours, phone and address">
+        <p class="cap">The truck&rsquo;s posted menu board at the lot.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="favorites">
+    <div class="sec-label">House Favorites</div>
+    <h2>What the <span class="accent">Memo Fam</span> Orders</h2>
+    <div class="favs">
+      <article class="fav-card">
+        <img src="img/tacos-asada.jpg" alt="Loaded carne asada tacos with cabbage, cucumber and avocado salsa">
+        <div class="body"><h3>Carne Asada Tacos</h3><p>Mesquite-grilled steak tacos with the truck&rsquo;s fresh toppings and salsas.</p><span class="price-tag">$4.00</span></div>
+      </article>
+      <article class="fav-card">
+        <img src="img/tacos-pastor.jpg" alt="Tacos al pastor with grilled pineapple">
+        <div class="body"><h3>Al Pastor con Pi&ntilde;a</h3><p>Marinated pork with sweet grilled pineapple, a truck classic.</p><span class="price-tag">$4.00</span></div>
+      </article>
+      <article class="fav-card">
+        <img src="img/carne-asada-board.jpg" alt="Carne asada served on the branded Comiendo Con memo wooden board">
+        <div class="body"><h3>Off-the-Grill Asada</h3><p>Fresh carne asada sliced right off the mesquite grill.</p><span class="price-tag">From $4.00</span></div>
+      </article>
+      <article class="fav-card">
+        <img src="img/chile-relleno.jpg" alt="Chile relleno with melted cheese">
+        <div class="body"><h3>Chile Relleno</h3><p>Stuffed and melted, served hot off the flat top.</p><span class="price-tag">$6.00</span></div>
+      </article>
+      <article class="fav-card">
+        <img src="img/agua-fresca.jpg" alt="Strawberry agua fresca with lemon and strawberry at the truck lot">
+        <div class="body"><h3>Aguas Frescas</h3><p>Strawberry lemonade, cucumber, watermelon. Ask for the drink of the day.</p><span class="price-tag">Ask</span></div>
+      </article>
+      <article class="fav-card">
+        <img src="img/tacos-chorizo.jpg" alt="Chorizo tacos">
+        <div class="body"><h3>Chorizo Tacos</h3><p>Bold, smoky house chorizo in warm tortillas.</p><span class="price-tag">$4.00</span></div>
+      </article>
+    </div>
+    <p class="cap">All photos are real photos of food from the Comiendo Con memo truck.</p>
+  </section>
+
+  <section class="block" id="truck">
+    <div class="sec-label">The Truck</div>
+    <h2>A <span class="accent">Family</span> Lot in Laveen</h2>
+    <div class="truck-grid">
+      <div>
+        <p>Comiendo Con memo is a family-owned taco truck parked at 3112 W. Dobbins Rd. in Laveen. Nights here run on mesquite fire, outdoor tables, string lights and a drive-thru lane for quick pickups.</p>
+        <ul class="facts">
+          <li><b>Family owned.</b> Memo and family run the grill and the lot themselves.</li>
+          <li><b>First come, first served.</b> Walk up, drive thru, or grab a table.</li>
+          <li><b>Keto friendly.</b> Cheese-shell tacos for low-carb eaters.</li>
+          <li><b>Delivery.</b> Also listed on DoorDash, Uber Eats and Grubhub.</li>
+        </ul>
+      </div>
+      <div>
+        <img src="img/truck-banner.jpg" alt="Comiendo Con memo truck banner with flame lettering and social handles">
+        <p class="cap">The truck&rsquo;s flame-lettered banner in Laveen.</p>
+      </div>
+    </div>
+    <div class="truck-grid" style="margin-top:2.5rem">
+      <div>
+        <img src="img/toppings.jpg" alt="Fresh taco toppings at the truck: cucumber, radish, pickled onion, limes">
+        <p class="cap">Fresh toppings ready for your tacos.</p>
+      </div>
+      <div>
+        <h2 style="font-size:clamp(1.8rem,4vw,2.6rem)">Made Fresh, <span class="accent">Every Night</span></h2>
+        <p>Meats go on the mesquite grill each evening. Toppings are prepped fresh: cabbage, cucumber, radish, pickled onion, lime, and the truck&rsquo;s salsas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="findus">
+    <div class="sec-label">Hours &amp; Location</div>
+    <h2>Find <span class="accent">the Truck</span></h2>
+    <div class="visit">
+      <div>
+        <h3>Hours</h3>
+        <table class="hours-table">
+          <tr><th>Day</th><th style="text-align:right">Hours</th></tr>
+          <tr><td>Tuesday</td><td>5:00 PM - 11:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>5:00 PM - 11:00 PM</td></tr>
+          <tr><td>Thursday</td><td>5:00 PM - 11:00 PM</td></tr>
+          <tr><td>Friday</td><td>5:00 PM - 12:00 AM</td></tr>
+          <tr><td>Saturday</td><td>5:00 PM - 12:00 AM</td></tr>
+          <tr><td>Sunday - Monday</td><td>Closed</td></tr>
+        </table>
+        <p class="rating-line"><span class="stars">★★★★★</span> 4.6 from 198 Restaurantji reviews.</p>
+      </div>
+      <div>
+        <h3>Where We Are</h3>
+        <p>3112 W. Dobbins Rd.<br>Laveen, AZ 85339</p>
+        <p style="margin-top:.6rem">Drive-thru lane and outdoor tables on the lot.</p>
+        <a class="big-call" href="tel:+16028268652">Call (602) 826-8652</a>
+        <p style="margin-top:.7rem;font-size:.88rem">Questions? Call (602) 826-8652.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/comiendoconmemo_" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/ComiendoconMemoOficial" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=3112+W+Dobbins+Rd+Laveen+AZ+85339" target="_blank" rel="noopener">Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div class="disc">This is a <b>website concept / design preview</b> prepared by <a href="https://freightfolio.net">Freightfolio</a>. It is not the official website of Comiendo Con memo and does not imply the business endorsed or hired us. Menu details and hours reflect publicly posted information as of October 2026.</div>
+    <p>Comiendo Con memo &middot; 3112 W. Dobbins Rd., Laveen, AZ 85339 &middot; (602) 826-8652</p>
+  </div>
+</footer>
+
+</body>
+</html>

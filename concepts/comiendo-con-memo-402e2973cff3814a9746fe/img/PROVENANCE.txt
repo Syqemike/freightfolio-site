@@ -1,0 +1,55 @@
+PROVENANCE - Comiendo Con memo concept site
+All images are real photos of the business, taken from the business's own Instagram
+account instagram.com/comiendoconmemo_ (4,803 followers; bio: family owned taco truck,
+3112 West Dobbins, Laveen, Tue-Sat). Resolved via the Muse Places gallery API
+(place 2109431512572263 = "Comiendo Con memo", 3112 W Dobbins Rd, Laveen Village, AZ 85339).
+
+FILE: hero-crew.jpg
+  source: https://scontent-den2-1.cdninstagram.com/v/t51.82787-15/621545184_18080104220251049_161554696939451509_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-KQPHRkI-C0Q7kNvwHlPzZR&_nc_oc=Adr6TJiBgock2m9CWBbxSghJEPPKYyJS6-t7tFa3d7Pn71GZ_lae14Z98wLMq9MPGDlXBPl19Z310i7hnjgQ6-b0&_nc_zt=23&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_gid=PpAWR9Gnas-OB5CG_PJshQ&oh=00_AQMg4gW4kmKfBSnjoJSUHL912MrQM7iVsPiRvqkcVvnwsQ&oe=6AE0CADB
+  local sha256 (first 12): 885feaa15743
+  match: Crew/family at night in front of the painted "COMIENDO CON MEMO" truck. Identity: truck signage with business name; crew wears work aprons/gloves. Location match: night lot at the Laveen truck.
+
+FILE: menu-board.jpg
+  source: https://scontent-den2-1.cdninstagram.com/v/t51.82787-15/621706848_17909538513298097_1875322948033040119_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oLrKocx4QcAQ7kNvwGN2Zmi&_nc_oc=AdrzzveVRJTwobdjxscaueyvBcodRubbHZ5MGf68toF3L8odTxl5AvdCelGXZoIh3GG91MhDWEi8eTglXoCdjESp&_nc_zt=23&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_gid=PpAWR9Gnas-OB5CG_PJshQ&oh=00_AQNiZxh8axPYULbmvO1NGWe_NOvQTGzapwvKW5gBn7PXFQ&oe=6AE0C909
+  local sha256 (first 12): a69066c20291
+  match: Photo of the truck's printed menu board: business name, phone (602) 826-8652, address 3112 W. Dobbins Rd. Laveen 85339, hours Tue-Thu 5-11 PM / Fri-Sat 5-12 AM, full menu with prices. Identity+location verified from text in image.
+
+FILE: carne-asada-board.jpg
+  source: https://scontent-den2-1.cdninstagram.com/v/t51.82787-15/622023377_17909538450298097_1816260427424119494_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=pnczw0ZJ434Q7kNvwHTUie_&_nc_oc=Ado8kKgYJ8YeucdN2IfZvTyOj22Mi9scUKGYgE4Rji07V7yVCWMZzrU0T0da5u0yhR4QUFo1pweII8BWTyKagTAz&_nc_zt=23&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_gid=PpAWR9Gnas-OB5CG_PJshQ&oh=00_AQNjOqHvWN0VqiFKyRWQt_-jXGYH3m6A4cznXnMMBhUq_A&oe=6AE0D554
+  local sha256 (first 12): cf3965f4b817
+  match: Carne asada on the branded wooden board ("PANZA LLENA CORAZON CONTENTO / COMIENDO CON MEMO / Con amor y afecto"). Identity verified from branded board.
+
+FILE: tacos-asada.jpg
+  source: https://scontent-den2-1.cdninstagram.com/v/t51.82787-15/622069145_17909538471298097_2049913956280955264_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=j1vqhM3qwe8Q7kNvwH2ET4s&_nc_oc=AdoYO6xOZW2-5_OV-C3bY89Wnl0QW5_QRhFxvyPt2QxdU85Bb4vHI3tDrvb9yx1LA5o8kA0ijpyKoQY2FewCx9DA&_nc_zt=23&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_gid=PpAWR9Gnas-OB5CG_PJshQ&oh=00_AQPdBpM9tNJPtHt6A6oCUHNcjnuUjtEg-sxW_jjGFxG2KQ&oe=6AE0BE24
+  local sha256 (first 12): 5af1afc6d51c
+  match: Loaded carne asada tacos with cabbage, cucumber, avocado salsa. Posted by the business; consistent with menu (Tacos $4.00).
+
+FILE: tacos-pastor.jpg
+  source: https://scontent-den2-1.cdninstagram.com/v/t51.82787-15/621202288_17909538504298097_4240611369915794674_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Qz8fTBGFhbkQ7kNvwEEReBq&_nc_oc=AdpGnvNYF1rthosb3K5gNur7rwUPv6JDp9MhgndnQLM_QSYd10RWh0YK6mVUY5ekLbFFSUtI4TKTP7d96U-mfgAq&_nc_zt=23&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_gid=PpAWR9Gnas-OB5CG_PJshQ&oh=00_AQM2s-jhY9vb2ci8wiUdKVbGZgCrzUfPwcQgfK1muoyqJw&oe=6AE0A394
+  local sha256 (first 12): 7fc390611862
+  match: Al pastor tacos with grilled pineapple. Consistent with menu (al pastor con pina / vampiros).
+
+FILE: tacos-chorizo.jpg
+  source: https://scontent-den2-1.cdninstagram.com/v/t51.75761-15/495841189_18060896663474443_6554645383623366991_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9XEqIfRtYg8Q7kNvwG7S3LO&_nc_oc=AdoCtcsEHLiefnxpLzcAr-6ccVyXZeBTx0uBjweCQG_MbfdP2XRW6LjU4Z34ktm_RtEKZ687JTjAAMReuVJquuY9&_nc_zt=23&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_gid=PpAWR9Gnas-OB5CG_PJshQ&oh=00_AQNK9gpvKAWqJlCJQQsa4xf9si_wpHd8wH9IXewwZRJwrQ&oe=6AE0CFD8
+  local sha256 (first 12): 98f1504b70fe
+  match: Chorizo tacos in takeout box. Consistent with menu.
+
+FILE: chile-relleno.jpg
+  source: https://scontent-den2-1.cdninstagram.com/v/t51.75761-15/495144398_18060376862474443_6588140412104352987_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=zJtRfiVBGykQ7kNvwHIOuGr&_nc_oc=AdpG-xvqwbQTPhxA3rdYrDKqyTwnZSrhua-TzprRiQa1cOl9QM-i9N45iFG-aqLMjJ9aqixQPDxs-vuoZ9GNbKvQ&_nc_zt=23&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_gid=PpAWR9Gnas-OB5CG_PJshQ&oh=00_AQMEdOg01lKFaTjoM-I2hh63GpQb0zNo_M1s83RSt2Rn1g&oe=6AE0CA81
+  local sha256 (first 12): 3c2d14b68763
+  match: Chile relleno with melted cheese. Consistent with menu (Chile Relleno $6.00).
+
+FILE: agua-fresca.jpg
+  source: https://scontent-den2-1.cdninstagram.com/v/t51.75761-15/505800237_18064422551474443_249274568785592707_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Pilu8BUZ8cUQ7kNvwEb1sDG&_nc_oc=AdrXUGYxWbTZKkzkDhitCK3Qq7Q2yMuTQjo-eoavPQtErvTYBefymdSpQV_DrEZE59Bco9kh7h9LrG1EsxQVrGKw&_nc_zt=23&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_gid=PpAWR9Gnas-OB5CG_PJshQ&oh=00_AQMPCGi2Jlf5gLnxnHE73N8bc002itv9-BLHqZakkKpHwQ&oe=6AE0D213
+  local sha256 (first 12): 82e659ffcdbd
+  match: Strawberry agua fresca with lemon and strawberry; truck outdoor tables in background. Consistent with aguas frescas offering.
+
+FILE: truck-banner.jpg
+  source: https://scontent-den2-1.cdninstagram.com/v/t51.82787-15/620872231_17909538528298097_3784237016646479942_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=IfsSnlmFMkcQ7kNvwGsO7bT&_nc_oc=AdoEL3I9f6CISdtNCUyS42qL_jNCpP1WEKRiI1yuRpTWpIlEdAaE69a5K-_O81KtF4tMk6pRuWWqAuLJ4CKdRv8g&_nc_zt=23&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_gid=PpAWR9Gnas-OB5CG_PJshQ&oh=00_AQNYQpw0A5Z3O-6hlkPWbWV1Ee0sDTpZl8nCUj-QXw7F_Q&oe=6AE0BBCA
+  local sha256 (first 12): 15f4972fa2a0
+  match: Truck banner "COMIENDO CON MEMO" with flame lettering, social handles @comiendoconmemo_ / comiendoconmemo, string lights. Identity verified.
+
+FILE: toppings.jpg
+  source: https://scontent-den2-1.cdninstagram.com/v/t51.82787-15/621556146_17909538486298097_2153164384255800063_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Xd4Be5vsvhsQ7kNvwHkFeQq&_nc_oc=AdpBnSbRkqEH27sVJHGtDl02RNQ6rW7HOf2V3m1UvkDGA8mR7zY0elFYa2cLEete8IAVZTAYw7l5E1_9u_eJfM0D&_nc_zt=23&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_gid=PpAWR9Gnas-OB5CG_PJshQ&oh=00_AQM1d7LKoptbdN6PjIoVRi5FIuG0AXrjKZ1BPYj9yd9Ldg&oe=6AE0D6D6
+  local sha256 (first 12): 65ae45ec0bb4
+  match: Fresh topping tray (cucumber, radish, pickled onion, limes) at the truck.
