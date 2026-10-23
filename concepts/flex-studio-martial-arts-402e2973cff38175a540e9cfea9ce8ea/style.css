@@ -1,0 +1,187 @@
+/* Flex Studio Martial Arts - Website Concept
+   Design: "dojo ledger". Warm paper, black ink, vermillion seal.
+   Display: Bebas Neue (condensed poster caps). Body: Inter. */
+
+:root{
+  --paper:#f4efe3;
+  --paper-deep:#ece5d2;
+  --ink:#191712;
+  --ink-soft:#4c473b;
+  --line:#d8d0ba;
+  --vermilion:#a5241a;
+  --vermilion-deep:#7d1b13;
+  --band:#14120e;
+  --band-ink:#f2ecdc;
+  --max:1120px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:17px;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+
+/* Disclosure */
+.preview-bar{
+  background:var(--ink);color:var(--paper);
+  font-size:12.5px;letter-spacing:.04em;
+  padding:8px 16px;text-align:center;
+}
+.preview-bar strong{letter-spacing:.12em;text-transform:uppercase;margin-right:10px}
+
+/* Masthead */
+.masthead{border-bottom:1px solid var(--line);background:var(--paper)}
+.masthead .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding:26px 28px}
+.brand h1{
+  font-family:"Bebas Neue",Impact,sans-serif;
+  font-weight:400;font-size:clamp(40px,6vw,64px);line-height:.95;letter-spacing:.015em;
+}
+.brand .sub{margin-top:6px;font-size:13.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft)}
+.seal{
+  flex:0 0 auto;width:74px;height:74px;border:2px solid var(--vermilion);
+  color:var(--vermilion);font-family:"Bebas Neue",Impact,sans-serif;
+  display:flex;align-items:center;justify-content:center;
+  font-size:30px;letter-spacing:.05em;transform:rotate(-4deg);
+}
+
+/* Nav */
+.site-nav{border-bottom:1px solid var(--line);background:var(--paper-deep)}
+.site-nav .wrap{display:flex;flex-wrap:wrap;gap:4px 30px;padding:12px 28px}
+.site-nav a{
+  text-decoration:none;font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink-soft);padding:4px 0;border-bottom:2px solid transparent;
+}
+.site-nav a:hover{color:var(--vermilion)}
+.site-nav a.active{color:var(--ink);border-bottom-color:var(--vermilion)}
+
+/* Belt stripe divider: white to black, the order of rank */
+.belt{
+  height:10px;border:0;
+  background:linear-gradient(to right,
+    #fdfdf8 0 12.5%, #e8b92a 12.5% 25%, #d97e1f 25% 37.5%, #3f7a3a 37.5% 50%,
+    #2c4f8f 50% 62.5%, #5d3a8a 62.5% 75%, #a5241a 75% 87.5%, #14120e 87.5% 100%);
+}
+
+/* Hero band */
+.hero-band{position:relative;background:var(--band)}
+.hero-band figure{margin:0}
+.hero-band img{width:100%;max-height:520px;object-fit:cover;opacity:.92}
+.hero-copy{
+  background:var(--band);color:var(--band-ink);
+  padding:44px 0 52px;
+}
+.kicker{font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:#b9a06a;margin-bottom:14px}
+.hero-copy h2{
+  font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;
+  font-size:clamp(44px,7vw,88px);line-height:.95;letter-spacing:.01em;max-width:16ch;
+}
+.hero-copy .lede{max-width:60ch;margin-top:16px;color:#cfc6ae;font-size:18px}
+.hero-actions{margin-top:26px;display:flex;flex-wrap:wrap;gap:14px}
+.btn{
+  display:inline-block;background:var(--vermilion);color:#fff;text-decoration:none;
+  font-size:14px;letter-spacing:.14em;text-transform:uppercase;
+  padding:15px 30px;border:2px solid var(--vermilion);
+}
+.btn:hover{background:var(--vermilion-deep);border-color:var(--vermilion-deep)}
+.btn.ghost{background:transparent;color:var(--band-ink);border-color:#6b6350}
+.btn.ghost:hover{border-color:var(--band-ink);color:#fff}
+.btn.on-paper{color:var(--band-ink);border-color:#6b6350}
+.btn.on-paper:hover{border-color:var(--vermilion);background:var(--vermilion)}
+
+/* Sections */
+.section{padding:64px 0}
+.section-num{
+  font-family:"Bebas Neue",Impact,sans-serif;font-size:20px;letter-spacing:.2em;
+  color:var(--vermilion);margin-bottom:8px;
+}
+.section h3{
+  font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;
+  font-size:clamp(30px,4vw,46px);line-height:1;letter-spacing:.015em;margin-bottom:18px;
+}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.two-col p+p{margin-top:14px}
+figure.framed{border:1px solid var(--line);background:#fff;padding:10px}
+figure.framed img{width:100%}
+figcaption{font-size:12.5px;color:var(--ink-soft);padding:10px 4px 2px;letter-spacing:.02em}
+figcaption .stock{display:inline-block;background:var(--ink);color:var(--paper);
+  font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;padding:2px 8px;margin-right:8px}
+
+/* Numbered rows: what training covers */
+.focus-list{list-style:none;margin-top:8px;border-top:1px solid var(--line)}
+.focus-list li{
+  display:grid;grid-template-columns:70px 1fr;gap:18px;align-items:baseline;
+  padding:18px 0;border-bottom:1px solid var(--line);
+}
+.focus-list .n{font-family:"Bebas Neue",Impact,sans-serif;font-size:24px;color:var(--vermilion)}
+.focus-list h4{font-size:17px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.focus-list p{color:var(--ink-soft);font-size:15.5px}
+
+/* Dark band */
+.band{background:var(--band);color:var(--band-ink)}
+.band h3{color:var(--band-ink)}
+.band p{color:#cfc6ae}
+.band .kicker{color:#b9a06a}
+
+/* Schedule ledger */
+.ledger{width:100%;border-collapse:collapse;margin-top:8px}
+.ledger caption{text-align:left;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);padding-bottom:14px}
+.ledger th,.ledger td{text-align:left;padding:18px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.ledger thead th{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);border-bottom:2px solid var(--ink)}
+.ledger td.day{font-family:"Bebas Neue",Impact,sans-serif;font-size:26px;letter-spacing:.04em;width:34%}
+.ledger td.time{font-size:18px}
+.ledger td.note{font-size:15px;color:var(--ink-soft)}
+.note-line{margin-top:18px;font-size:15px;color:var(--ink-soft);border-left:3px solid var(--vermilion);padding-left:16px}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:10px}
+.gallery figure.framed img{aspect-ratio:4/3;object-fit:cover}
+.gallery figure.framed.tall img{aspect-ratio:3/4}
+
+/* Instructor card */
+.creed{border:1px solid var(--line);background:#fff;padding:36px 34px;max-width:760px}
+.creed .rank{font-family:"Bebas Neue",Impact,sans-serif;font-size:22px;letter-spacing:.08em;color:var(--vermilion);margin-bottom:6px}
+.creed h4{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;font-size:40px;letter-spacing:.02em;margin-bottom:12px}
+.creed p{color:var(--ink-soft)}
+
+/* Visit facts */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:#fff;margin-top:8px}
+.fact{padding:28px;border-right:1px solid var(--line)}
+.fact:last-child{border-right:0}
+.fact .lbl{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--vermilion);margin-bottom:10px}
+.fact p{font-size:16px}
+.fact a.big{font-size:20px;text-decoration:none;border-bottom:2px solid var(--vermilion)}
+
+/* Footer */
+.site-foot{background:var(--band);color:#a89f88;font-size:14px;margin-top:0}
+.site-foot .wrap{padding:44px 28px}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.foot-brand{font-family:"Bebas Neue",Impact,sans-serif;font-size:30px;color:var(--band-ink);letter-spacing:.03em}
+.rating-line{margin-top:14px;color:#cfc6ae;font-size:14px}
+.foot-note{font-size:12.5px;margin-top:16px;line-height:1.6}
+.foot-cta{text-align:right}
+.foot-cta .btn{margin-top:4px}
+.foot-bottom{border-top:1px solid #2c2820;margin-top:32px;padding-top:18px;font-size:12px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  .two-col{grid-template-columns:1fr;gap:32px}
+  .gallery{grid-template-columns:1fr 1fr}
+  .facts{grid-template-columns:1fr}
+  .fact{border-right:0;border-bottom:1px solid var(--line)}
+  .fact:last-child{border-bottom:0}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-cta{text-align:left}
+  .masthead .wrap{padding:20px 20px}
+  .seal{width:58px;height:58px;font-size:24px}
+  .ledger td.day{font-size:22px}
+}
+@media (max-width:560px){
+  .gallery{grid-template-columns:1fr}
+  .hero-actions .btn{width:100%;text-align:center}
+}
