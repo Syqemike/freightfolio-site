@@ -16,10 +16,8 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=4">
+<link rel="stylesheet" href="/css/site.css?v=4">
+<link rel="stylesheet" href="/css/overhaul.css?v=1">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -84,30 +82,18 @@
   ]
 }
 </script>
+<noscript><style>@media(max-width:760px){.site-header,.nav{height:auto;min-height:76px}.nav{flex-wrap:wrap;padding:20px 0}.nav-toggle{display:none}.nav-menu{display:flex;position:static;flex-wrap:wrap;width:100%;padding:10px 0;box-shadow:none;gap:18px}.nav-menu>a{font-size:13px}.nav-menu .nav-cta{margin:0}}</style></noscript>
 </head>
-<body>
+<body class="interior">
 
-<header class="site-header">
-  <nav class="nav container" aria-label="Main navigation">
-    <a class="brand" href="index.html">Freightfolio<span class="dot">.</span></a>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-menu" id="navMenu">
-      <a href="portfolio.html">Designs</a>
-      <a href="services.html">Services</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="design-lab.html">Design Lab</a>
-      <a href="about.html">About</a>
-      <a href="faq.html">FAQ</a>
-      <a href="blog/index.html">Blog</a>
-      <a class="btn btn-primary nav-cta" href="request.html">Free Preview</a>
-    </div>
-  </nav>
-</header>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav container" aria-label="Main navigation">
+<a class="brand" href="/">freightfolio<span class="brand-mark" aria-hidden="true">↗</span></a>
+<button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><span></span><span></span><span></span></button>
+<div class="nav-menu" id="navMenu"><a href="/portfolio.html">The work</a><a href="/how-it-works.html">The process</a><a href="/pricing.html">The pricing</a><a class="btn btn-primary nav-cta" href="/request.html">Get your free preview <span aria-hidden="true">↗</span></a></div>
+</nav></header>
 
-<main>
+<main id="main">
   <section class="section">
     <div class="container">
       <div class="center reveal" style="margin-bottom: 2.5rem;">
@@ -117,29 +103,29 @@
       </div>
 
       <div class="form-card reveal">
-        <form id="leadForm" novalidate>
+        <noscript><p>Please email <a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a> to request your preview. This form needs JavaScript.</p></noscript><form id="leadForm" novalidate>
           <div class="field" data-field="business_name">
             <label for="business_name">Business name <span class="req">*</span></label>
-            <input type="text" id="business_name" name="business_name" autocomplete="organization" required>
-            <p class="error"></p>
+            <input type="text" id="business_name" aria-describedby="business_name-error" name="business_name" autocomplete="organization" required>
+            <p class="error" id="business_name-error"></p>
           </div>
 
           <div class="field" data-field="your_name">
             <label for="your_name">Your name <span class="req">*</span></label>
-            <input type="text" id="your_name" name="your_name" autocomplete="name" required>
-            <p class="error"></p>
+            <input type="text" id="your_name" aria-describedby="your_name-error" name="your_name" autocomplete="name" required>
+            <p class="error" id="your_name-error"></p>
           </div>
 
           <div class="grid grid-2">
             <div class="field" data-field="email">
               <label for="email">Email <span class="req">*</span></label>
-              <input type="email" id="email" name="email" autocomplete="email" required>
-              <p class="error"></p>
+              <input type="email" id="email" aria-describedby="email-error" name="email" autocomplete="email" required>
+              <p class="error" id="email-error"></p>
             </div>
             <div class="field" data-field="phone">
               <label for="phone">Phone <span style="color: var(--faint); font-weight: 400;">(optional)</span></label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel">
-              <p class="error"></p>
+              <input type="tel" id="phone" aria-describedby="phone-error" name="phone" autocomplete="tel">
+              <p class="error" id="phone-error"></p>
             </div>
           </div>
 
@@ -151,7 +137,7 @@
 
           <div class="field" data-field="business_type">
             <label for="business_type">Business type <span class="req">*</span></label>
-            <select id="business_type" name="business_type" required>
+            <select id="business_type" aria-describedby="business_type-error" name="business_type" required>
               <option value="">Choose one...</option>
               <option>Restaurant / Food</option>
               <option>Contractor / Trades</option>
@@ -163,23 +149,23 @@
               <option>Health / Wellness</option>
               <option>Other</option>
             </select>
-            <p class="error"></p>
+            <p class="error" id="business_type-error"></p>
           </div>
 
           <div class="field" data-field="plan">
             <label for="plan">Plan of interest</label>
-            <select id="plan" name="plan">
+            <select id="plan" aria-describedby="plan-error" name="plan">
               <option value="">Not sure yet</option>
               <option value="starter">Starter — $149/month</option>
               <option value="professional">Professional — $199/month</option>
               <option value="business-growth">Business Growth — $299/month</option>
             </select>
-            <p class="error"></p>
+            <p class="error" id="plan-error"></p>
           </div>
 
           <div class="field">
-            <label>Desired features <span style="color: var(--faint); font-weight: 400;">(check all that apply)</span></label>
-            <div class="check-grid">
+            <p id="features-label">Desired features <span style="color: var(--faint); font-weight: 400;">(check all that apply)</span></p>
+            <div class="check-grid" role="group" aria-labelledby="features-label">
               <label class="check-item"><input type="checkbox" name="features" value="More pages"> More pages</label>
               <label class="check-item"><input type="checkbox" name="features" value="Online booking"> Online booking</label>
               <label class="check-item"><input type="checkbox" name="features" value="Contact form"> Contact form</label>
@@ -199,13 +185,13 @@
             <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off">
           </div>
 
-          <p id="formError" style="display: none; color: #ff8a8a; font-size: 0.95rem;"></p>
+          <p id="formError" role="alert" style="display: none; color: #a21b2d; font-size: 0.95rem;"></p>
 
           <button type="submit" class="btn btn-primary btn-lg btn-block">Request my free preview</button>
           <p class="hint center" style="margin-top: 1rem; font-size: 0.88rem; color: var(--faint);">No payment, no commitment. We reply by email.</p>
         </form>
 
-        <div class="form-success" id="formSuccess">
+        <div class="form-success" id="formSuccess" tabindex="-1" role="status">
           <div class="big-check">✓</div>
           <h2>Request received</h2>
           <p>Thanks for reaching out. We will review your details and follow up by email with your free website preview.</p>
@@ -216,44 +202,11 @@
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="index.html">Freightfolio<span class="dot">.</span></a>
-        <p>Websites for local businesses. We design it, build it, host it, and handle everything. Starting at $149/month with $0 upfront.</p>
-      </div>
-      <div>
-        <h4>Site</h4>
-        <ul>
-          <li><a href="portfolio.html">Designs</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="how-it-works.html">How It Works</a></li>
-          <li><a href="design-lab.html">Design Lab</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="blog/index.html">Blog</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:hello@freightfolio.net">hello@freightfolio.net</a></li>
-          <li>Gulfport, Mississippi</li>
-          <li><a href="request.html">Request a free preview</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span data-year>2026</span> Freightfolio. All rights reserved.</span>
-      <span><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a></span>
-    </div>
-  </div>
-</footer>
+<footer class="site-footer"><div class="container"><div class="footer-top"><a class="brand" href="/">freightfolio<span class="brand-mark" aria-hidden="true">↗</span></a><p>Good businesses deserve<br>an extraordinary first impression.</p><a href="mailto:hello@freightfolio.net">Let’s talk <span aria-hidden="true">↗</span><br><small>hello@freightfolio.net</small></a></div><div class="footer-links"><a href="/portfolio.html">The work</a><a href="/services.html">Services</a><a href="/pricing.html">Pricing</a><a href="/how-it-works.html">How it works</a><a href="/design-lab.html">Design lab</a><a href="/about.html">About</a><a href="/faq.html">FAQ</a><a href="/blog/index.html">Journal</a></div><div class="footer-bottom"><span>© <span data-year>2026</span> Freightfolio · Gulfport, Mississippi</span><span><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span></div><div class="footer-word" aria-hidden="true">Make an impression.</div></div></footer>
 
-<script src="js/site.js?v=4"></script>
+<script src="/js/site.js?v=5"></script>
 <script src="js/request.js?v=5"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5701c2d563e94ead9607d04db61609ea"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
+

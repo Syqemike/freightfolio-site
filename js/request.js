@@ -50,13 +50,15 @@
     var field = form.querySelector('[data-field="' + name + '"]');
     if (!field) return;
     field.classList.add("invalid");
+    var input = field.querySelector("input,select");
+    if (input) input.setAttribute("aria-invalid", "true");
     var err = field.querySelector(".error");
     if (err) err.textContent = message;
   }
 
   function clearInvalid(name) {
     var field = form.querySelector('[data-field="' + name + '"]');
-    if (field) field.classList.remove("invalid");
+    if (field) { field.classList.remove("invalid"); var input=field.querySelector("input,select"); if(input) input.removeAttribute("aria-invalid"); }
   }
 
   function val(name) {
@@ -66,7 +68,7 @@
 
   function validate() {
     var ok = true;
-    ["business_name", "your_name", "email", "business_type"].forEach(clearInvalid);
+    ["business_name", "your_name", "email", "business_type", "phone"].forEach(clearInvalid);
 
     if (!val("business_name")) { setInvalid("business_name", "Please enter your business name."); ok = false; }
     if (!val("your_name")) { setInvalid("your_name", "Please enter your name."); ok = false; }
@@ -95,6 +97,7 @@
     }
 
     var submitBtn = form.querySelector('button[type="submit"]');
+    document.getElementById("formError").style.display = "none";
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending...";
 
@@ -126,7 +129,8 @@
         if (data && data.ok) {
           form.style.display = "none";
           document.getElementById("formSuccess").classList.add("show");
-          window.scrollTo({ top: 0, behavior: "smooth" });
+          document.getElementById("formSuccess").focus();
+          window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
         } else {
           throw new Error((data && data.error) || "send-failed");
         }
@@ -140,3 +144,4 @@
       });
   });
 })();
+

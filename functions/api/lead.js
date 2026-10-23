@@ -97,15 +97,24 @@ export async function onRequestPost(context) {
       comments: comments,
       received_at: new Date().toISOString(),
     };
+    var stored = false;
     if (env.LEADS_KV && typeof env.LEADS_KV.put === "function") {
       var key = "lead:" + Date.now() + ":" + Math.random().toString(36).slice(2, 10);
-      await env.LEADS_KV.put(key, JSON.stringify(record));
+      try {
+        await env.LEADS_KV.put(key, JSON.stringify(record));
+        stored = true;
+      } catch (storageError) { /* Email may still deliver; never report an unsaved lead as received. */ }
     }
 
     /* Email the lead via Resend. */
     var resendKey = env.RESEND_API_KEY;
     if (!resendKey) {
-      /* Lead is safely in KV; email just needs the key configured. */
+      if (!stored) {
+        return new Response(JSON.stringify({ ok: false, error: "Requests are temporarily unavailable. Please email hello@freightfolio.net." }), {
+          status: 503, headers: { "Content-Type": "application/json" }
+        });
+      }
+      /* A real KV write succeeded; email is not configured. */
       return new Response(JSON.stringify({ ok: true }), {
         status: 200,
         headers: { "Content-Type": "application/json" },
@@ -158,3 +167,4 @@ export async function onRequest(context) {
     headers: { "Content-Type": "application/json", Allow: "POST" },
   });
 }
+

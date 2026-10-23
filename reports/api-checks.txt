@@ -1,0 +1,9 @@
+PASS missing delivery and storage returns 503, never false success
+PASS successful KV storage permits acknowledgement without email
+PASS failed KV without email returns failure
+PASS invalid fields rejected before delivery
+PASS honeypot remains silent without storing data
+PASS GET rejected with Allow POST
+PASS email can succeed when storage fails (mock provider)
+PASS provider error remains a visitor-visible failure (mock provider)
+8 API checks passed. Provider requests were mocked; no live emails were sent.

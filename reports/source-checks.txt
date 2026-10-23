@@ -1,0 +1,5 @@
+Public HTML pages checked: 17
+Source checks: PASS
+
+Partial snapshot asset warnings: 34 (existing favicon assets; upstream preserved)
+No browser, touch, visual, live HTTP or delivery verification is implied.
