@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Our Shop | Thronson Body Shop Inc · Saraland, AL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3edde; --paper2:#e9e1cc; --ink:#1a1d21; --ink2:#22262c;
+    --orange:#d2541e; --orange-dk:#a83f13; --steel:#6b7280; --line:#c9bfa8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Barlow',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  .disclosure{background:var(--ink2);color:#b9b2a0;text-align:center;font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;letter-spacing:.08em;padding:8px 16px}
+  .disclosure a{color:var(--orange)}
+  header.site{border-bottom:3px solid var(--ink)}
+  .ticket-bar{max-width:1180px;margin:0 auto;padding:16px 22px 0;display:flex;flex-wrap:wrap;gap:8px 34px;
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:var(--steel)}
+  .ticket-bar strong{color:var(--ink)}
+  .masthead{max-width:1180px;margin:0 auto;padding:18px 22px 22px;display:flex;align-items:center;
+    justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .brand{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(30px,4.4vw,52px);
+    line-height:1;letter-spacing:.01em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+  .brand em{font-style:normal;color:var(--orange)}
+  .nav{display:flex;gap:22px;flex-wrap:wrap;list-style:none}
+  .nav a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:3px}
+  .nav a:hover,.nav a[aria-current="page"]{border-bottom-color:var(--orange);color:var(--orange-dk)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+  .btn{display:inline-block;background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;font-size:19px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;
+    padding:13px 30px;box-shadow:5px 5px 0 var(--ink);border:2px solid var(--ink);transition:transform .12s ease, box-shadow .12s ease}
+  .btn:hover{background:var(--orange-dk);transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink)}
+  .pagehead{padding-top:56px;padding-bottom:8px}
+  .pagehead .kicker{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--orange-dk);margin-bottom:14px}
+  .pagehead h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(52px,7.6vw,96px);
+    line-height:.92;text-transform:uppercase;margin-bottom:14px}
+  .pagehead p.lede{font-size:18px;color:#3c4149;max-width:40em}
+  .rating-strip{margin:26px 0 0;display:inline-block;border:3px solid var(--ink);background:#fff;
+    padding:12px 22px;font-family:'IBM Plex Mono',monospace;font-size:14px}
+  .rating-strip .stars{color:var(--orange);letter-spacing:3px}
+  .timeline{margin:48px 0 0;border-top:3px solid var(--ink)}
+  .trow{display:grid;grid-template-columns:180px 1fr;gap:28px;padding:26px 8px;border-bottom:2px dashed var(--line)}
+  .trow .yr{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:44px;color:var(--orange-dk);line-height:1}
+  .trow h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;text-transform:uppercase;
+    letter-spacing:.02em;margin-bottom:6px}
+  .trow p{font-size:16px;color:#3c4149;max-width:44em}
+  .quote{margin:56px 0;background:var(--ink);color:var(--paper);padding:48px 44px;border-left:12px solid var(--orange)}
+  .quote blockquote{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:clamp(22px,3vw,32px);
+    line-height:1.25;margin-bottom:16px}
+  .quote cite{font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:13px;letter-spacing:.1em;
+    color:#8f97a3;text-transform:uppercase}
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:56px 0 70px}
+  .fact{background:#fff;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--line);padding:26px}
+  .fact .f{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--orange-dk);
+    text-transform:uppercase;margin-bottom:10px}
+  .fact .v{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;text-transform:uppercase;
+    line-height:1.1;margin-bottom:6px}
+  .fact p{font-size:15px;color:#3c4149}
+  .cta-row{background:var(--ink2);color:#e8e2d2;padding:56px 0}
+  .cta-row h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(32px,4.6vw,54px);
+    text-transform:uppercase;margin-bottom:10px}
+  .cta-row p{font-size:17px;color:#b9b2a0;margin-bottom:22px;max-width:36em}
+  .cta-row .btn{color:#fff}
+  footer{background:var(--ink2);color:#8f97a3;padding:36px 0;font-size:14px;border-top:3px solid var(--orange)}
+  footer p{margin-bottom:8px;max-width:70em}
+  footer a{color:var(--orange)}
+  footer .fnote{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6e757f}
+  @media(max-width:900px){
+    .trow{grid-template-columns:1fr;gap:8px}
+    .facts{grid-template-columns:1fr}
+    .nav{gap:14px}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview by <a href="https://freightfolio.net">Freightfolio</a>. This is a concept, not the shop's website.</div>
+
+<header class="site">
+  <div class="ticket-bar">
+    <span>SHOP <strong>THRONSON BODY SHOP INC</strong></span>
+    <span>EST <strong>1966</strong></span>
+    <span>TEL <strong><a href="tel:+12516791117" style="color:var(--ink)">(251) 679-1117</a></strong></span>
+    <span>TOWN <strong>SARALAND, AL</strong></span>
+  </div>
+  <div class="masthead">
+    <a class="brand" href="index.html">Thronson <em>Body Shop</em></a>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Repairs</a></li>
+      <li><a href="about.html" aria-current="page">Our Shop</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="visit.html">Visit</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap pagehead">
+    <div class="kicker">Our shop / The short version</div>
+    <h1>One town.<br>One trade.</h1>
+    <p class="lede">The shop's own description is eleven words long: collision repair since 1966. Everything else on this page is public record.</p>
+    <div class="rating-strip"><span class="stars">★★★★★</span> 5.0 · 13 Google reviews</div>
+  </div>
+
+  <div class="wrap">
+    <div class="timeline">
+      <div class="trow">
+        <div class="yr">1966</div>
+        <div>
+          <h3>The shop opens in Saraland</h3>
+          <p>Thronson Body Shop Inc starts doing collision repair in Saraland, Alabama. The year is the shop's own stated founding date, carried on its public listing.</p>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="yr">1996</div>
+        <div>
+          <h3>The owner speaks for the trade</h3>
+          <p>Scooter Thronson, the shop's owner, was interviewed by BodyShop Business for a roundtable on insurance and the collision industry. Thirty years in, the shop was already a fixture.</p>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="yr">2016</div>
+        <div>
+          <h3>Still at it, five decades on</h3>
+          <p>BodyShop Business published a management column in which Scooter Thronson wrote about running a shop: listening first, sticking to the facts, and doing right by the customer even when it costs you.</p>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="yr">Today</div>
+        <div>
+          <h3>Still collision repair</h3>
+          <p>Same address on Saraland Boulevard South, same trade, same phone number on the listing. Some things do not need to change.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote">
+      <blockquote>"If you're knowledgeable and always stand on the ethical high ground, you'll always triumph. What's right is right and what's wrong is wrong."</blockquote>
+      <cite>Scooter Thronson, owner · BodyShop Business, "Management: You've Got Personality" (2016)</cite>
+    </div>
+
+    <div class="facts">
+      <div class="fact">
+        <div class="f">Founded</div>
+        <div class="v">1966</div>
+        <p>Collision repair in Saraland for six decades, per the shop's own listing.</p>
+      </div>
+      <div class="fact">
+        <div class="f">Owner</div>
+        <div class="v">Scooter Thronson</div>
+        <p>Named as the shop's owner in BodyShop Business interviews and columns.</p>
+      </div>
+      <div class="fact">
+        <div class="f">Trade</div>
+        <div class="v">Collision repair</div>
+        <p>One trade, done in one shop on Saraland Boulevard South.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <div class="wrap">
+      <h2>Talk to the owner’s shop.</h2>
+      <p>Call and describe the damage. You will be talking to the same shop that has been here since 1966.</p>
+      <a class="btn" href="tel:+12516791117">Call to book · (251) 679-1117</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Thronson Body Shop Inc. It is not affiliated with or endorsed by the shop, and it is not the shop's website.</p>
+    <p class="fnote">Facts here come from the shop's public business listing and BodyShop Business.</p>
+  </div>
+</footer>
+</body>
+</html>

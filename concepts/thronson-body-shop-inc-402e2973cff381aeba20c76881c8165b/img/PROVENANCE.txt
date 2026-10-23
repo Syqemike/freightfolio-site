@@ -1,0 +1,47 @@
+PHOTO PROVENANCE
+================
+Concept site: Thronson Body Shop Inc, Saraland, AL
+(concepts/thronson-body-shop-inc-402e2973cff381aeba20c76881c8165b/)
+
+REAL PHOTOS (photos of this business from public sources)
+---------------------------------------------------------
+real-1.jpg = Photo posted to the shop's public business listing, front three-quarter view of a
+black Ford SUV.
+  source page: https://www.findbodyshops.com/shops/thronson-body-shop-inc/
+  direct file: https://www.findbodyshops.com/wp-content/uploads/2025/06/25812_image1.jpg
+  caption used on site: "Google listing photo for Thronson Body Shop Inc: Ford SUV at the shop."
+
+real-2.jpg = Google listing photo displayed on the business's public directory page, front view
+of the same black Ford SUV.
+  source page: https://guide.in.ua/business/30990038/thronson-body-shop-inc-saraland
+  direct file (Google Places CDN): https://lh3.googleusercontent.com/places/ANXAkqHADyLwLAocN8vtv7SA0mj18621Ed6boICRDCIZWMegqbOXHX9p8wjpnLobFOpXP6tZP_D6soL_UDUYTFL3rqxstUvFzsY2xG4=s1600-w480
+  caption used on site: "Google listing photo for Thronson Body Shop Inc: Ford SUV."
+
+No other real photos of the shop could be verified. The following candidates were REJECTED
+and are NOT used: a "Newman Auto Body & Glass" storefront (wrong shop), a "Thompson Auto Body"
+Yelp photo (wrong shop, no "n"), a gray metal building with a 210 area-code sign (Texas shop),
+and a "PPG Collision Repair Center" directory photo (identity unconfirmed). The BodyShop
+Business press interview with owner Scooter Thronson contained no shop photos.
+
+STOCK PHOTOS (Pexels license: free to use, no attribution required).
+Every caption on the site is labeled "Stock photo". They do NOT depict the actual business.
+---------------------------------------------------------
+stock-1.jpg = Technician in coveralls spray-painting a masked car panel in a paint booth.
+  page: https://www.pexels.com/da-dk/sog/videos/primer/
+  file: https://images.pexels.com/videos/8469684/breakdown-car-painting-car-repair-driver-8469684.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+stock-2.jpg = Painter with respirator spraying a car in a body shop garage.
+  page: https://www.themesbyprofession.com/wordpress-themes-and-website-templates-for-car-painting
+  file: https://images.pexels.com/videos/8470698/pexels-photo-8470698.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+stock-3.jpg = Close-up of a technician holding a paint spray gun in a booth.
+  page: https://www.themesbyprofession.com/wordpress-themes-and-website-templates-for-car-painting
+  file: https://images.pexels.com/videos/8469678/adult-appoint-art-artisan-8469678.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+stock-4.jpg = Silver sedan with a dented driver's door (collision damage).
+  page: https://ay-fotografi.vercel.app/ara%C3%A7-kaza-foto%C4%9Fraflar%C4%B1-net.html
+  file: https://images.pexels.com/photos/93452/pexels-photo-93452.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+COMPRESSION
+-----------
+All files are JPEG, each well under the 300 KB target and under the 5 MB cap.
