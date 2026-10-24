@@ -2,3 +2,9 @@ Gyro Master concept (2026-10-24). All photos are stock photos reused from earlie
 - hero.jpg: shrimp po boy sandwich with fries and sauces (R & O set, Pexels photo 16694957).
 - chef.jpg: pizza chef working in a pizzeria (Tower set, Pexels photo 31706371).
 - poboy.jpg: sub sandwich with fries and dips (R & O set, Pexels photo 36879220).
+
+REBUILD 2026-10-24 run38 wave2 (QA 2026-10-24 defect: no photo depicted a Mediterranean item):
+- gyro.jpg: gyro in pita with fries, tomato, and onion (Pexels photo 6941000). Stock photo.
+- shawarma.jpg: shawarma meat cooking on a vertical rotisserie (Pexels photo 36829402). Stock photo.
+- falafel.jpg: falafel balls in a bowl (Pexels photo 4722522). Stock photo.
+Old files hero.jpg (shrimp po-boy), chef.jpg (pizza chef), poboy.jpg (sub sandwich) removed from this concept. Rating (DoorDash 4.8/50+) was already sourced and was NOT changed.

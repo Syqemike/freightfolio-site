@@ -3,3 +3,9 @@ Los Alebrijes concept (2026-10-24). All photos are stock photos reused from earl
 - fish.jpg: crispy fried fish with fries and salad (Juanita set, Pexels photo 40108715).
 - poboy.jpg: sub sandwich with fries and dips (R & O set, Pexels photo 36879220).
 Other Los Alebrijes records (Commerce CA, Oaxaca MX, CDMX) and Alebrijes Mexican Kitchen (Hartford CT) are different businesses and were NOT used. A second-source phone (505-677-3301) was NOT used.
+
+REBUILD 2026-10-24 run38 wave2 (QA 2026-10-24 defect: gallery/hero photos did not depict menu items):
+- birria.jpg: birria tacos served with consommé, radishes, and lime (Pexels photo 31632714). Stock photo.
+- tacos.jpg: Mexican street tacos with onions, cilantro, and lime (Pexels photo 8448330). Stock photo.
+- burrito.jpg: burrito filled with rice, beans, and meat (Pexels photo 27365284). Stock photo.
+Old files hero.jpg (omelette), fish.jpg (fried fish), poboy.jpg (sub sandwich) removed from this concept; they remain in other concepts' stock sets where they belong. Rating (DoorDash 4.7/300+) was already sourced and was NOT changed.

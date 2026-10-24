@@ -3,3 +3,9 @@ TostiFiesta Mariscos & Tacos concept (2026-10-24). All photos are stock photos r
 - gumbo.jpg: shrimp etouffee served with rice (R & O set, Pexels photo 20157989).
 - plate.jpg: omelette served with fresh salad greens and tomatoes (Juanita set, Pexels photo 25402351).
 Rating omitted: research gave two different-source figures (DoorDash 4.6-4.7/10+ and Restaurantji 4.9/53) and warned not to merge them.
+
+REBUILD 2026-10-24 run38 wave2 (QA 2026-10-24 defect: gallery/hero photos off-cuisine for a mariscos/tacos truck):
+- ceviche.jpg: seafood ceviche with onion and herbs in small bowls (Pexels photo 14939918). Stock photo.
+- aguachile.jpg: aguachile with avocado and sesame (Pexels photo 28959316). Stock photo.
+- shrimptacos.jpg: shrimp tacos with lime and pickled onion (Pexels photo 38895472). Stock photo.
+Old files hero.jpg (fried fish), gumbo.jpg (shrimp etouffee), plate.jpg (omelette) removed from this concept. No rating displayed, unchanged (research figures conflict across sources, correctly omitted).

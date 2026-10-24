@@ -3,3 +3,9 @@ Bo's Snow Zone & Snacks concept (2026-10-24). All photos are stock photos reused
 - cake.jpg: decorated celebration cake (Arahi set).
 - pastelitos.jpg: warm pastry in a red basket (Arahi set).
 The Arahi storefront photo was NOT reused: it shows another business's signage.
+
+REBUILD 2026-10-24 run38 wave2 (QA 2026-10-24 defect: no photo showed a snowball or sno cone, the core product):
+- shaved.jpg: shaved ice cups with pink syrup being added (Pexels photo 1390666). Stock photo.
+- snowcone.jpg: rainbow snow cone in a green cup (Pexels photo 1332945). Stock photo.
+- mango.jpg: mango shaved ice in a glass bowl (Pexels photo 18237484). Stock photo.
+Old files hero.jpg (cake slice), cake.jpg (celebration cake), pastelitos.jpg (warm pastry) removed from this concept. Rating (Restaurantji Google-derived 4.6/60) was already sourced and was NOT changed.
