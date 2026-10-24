@@ -150,3 +150,4 @@ a{color:var(--sage-deep)}
   .section{padding:56px 0}
   .hero{min-height:480px}
 }
+.hero-photo-tag{position:absolute;bottom:14px;right:16px;z-index:2;font-size:.78rem;font-style:italic;color:rgba(255,255,255,.9);background:rgba(0,0,0,.4);padding:3px 10px;border-radius:6px}
