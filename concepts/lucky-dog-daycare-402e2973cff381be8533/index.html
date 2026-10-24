@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Lucky Dog Daycare | Dog Daycare &amp; Boarding, Tacoma WA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink-teal:#0e3532;
+    --ink-deep:#081f1d;
+    --paper:#f7f1e3;
+    --card:#fffdf6;
+    --amber:#e8a13a;
+    --amber-deep:#c07f22;
+    --brick:#b3402a;
+    --ink:#2c2a24;
+    --ink-soft:#615d52;
+    --hairline:#e0d5ba;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.display{font-family:'Alfa Slab One',serif;font-weight:400;line-height:1.18;letter-spacing:.01em;}
+  a{color:var(--brick);}
+  img{display:block;max-width:100%;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 1.5rem;}
+
+  .disclosure{background:var(--ink-deep);color:#fff;text-align:center;font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:.7rem 1rem;}
+  .disclosure small{display:block;font-weight:400;letter-spacing:.03em;text-transform:none;font-size:.8rem;opacity:.85;margin-top:.2rem;}
+
+  nav{position:sticky;top:0;z-index:50;background:var(--ink-teal);border-bottom:4px solid var(--amber);}
+  .nav-inner{max-width:1140px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+  .brand{display:flex;align-items:center;gap:.8rem;text-decoration:none;color:#fff;}
+  .brand .badge{width:52px;height:52px;border-radius:50%;background:var(--amber);color:var(--ink-deep);display:flex;align-items:center;justify-content:center;font-family:'Alfa Slab One',serif;font-size:1.5rem;border:3px solid #fff;box-shadow:0 4px 10px rgba(0,0,0,.25);}
+  .brand b{font-family:'Alfa Slab One',serif;font-weight:400;font-size:1.15rem;line-height:1.1;display:block;}
+  .brand small{display:block;font-family:'Inter',sans-serif;font-weight:700;font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--amber);}
+  .navlinks{display:flex;gap:1.5rem;align-items:center;}
+  .navlinks a{text-decoration:none;color:#f3eddc;font-weight:600;font-size:.92rem;}
+  .navlinks a:hover{color:var(--amber);}
+  .btn{display:inline-block;background:var(--brick);color:#fff;text-decoration:none;font-weight:800;padding:.75rem 1.7rem;border-radius:12px;font-size:.95rem;border:0;cursor:pointer;letter-spacing:.02em;}
+  .btn:hover{background:#96331f;}
+  .btn.amber{background:var(--amber);color:var(--ink-deep);}
+  .btn.amber:hover{background:var(--amber-deep);color:#fff;}
+  .btn.ghost{background:transparent;color:#fff;border:2px solid #fff;}
+  .btn.ghost:hover{background:#fff;color:var(--ink-teal);}
+
+  .hero{background:var(--ink-teal);color:#f3eddc;overflow:hidden;position:relative;}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:26px;background:repeating-linear-gradient(-45deg,var(--amber) 0 18px,transparent 18px 36px);opacity:.9;}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding:4.4rem 1.5rem 5rem;}
+  .eyebrow{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--amber);border:2px solid var(--amber);border-radius:8px;padding:.42rem 1rem;margin-bottom:1.4rem;transform:rotate(-1.5deg);}
+  .hero h1{font-size:clamp(2.5rem,5vw,4.1rem);color:#fff;margin-bottom:1.1rem;}
+  .hero h1 em{font-style:normal;color:var(--amber);}
+  .hero p.lead{font-size:1.12rem;color:#ddd5ba;max-width:29rem;margin-bottom:1.8rem;}
+  .hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:1.7rem;}
+  .hero .facts{font-size:.9rem;color:#c9c1a4;}
+  .hero .facts strong{color:#fff;}
+  .hero-photo{position:relative;}
+  .hero-photo img{border-radius:16px;box-shadow:0 30px 60px rgba(0,0,0,.45);border:8px solid var(--amber);transform:rotate(1.5deg);}
+  .photo-credit{font-size:.72rem;color:#c9c1a4;margin-top:.5rem;}
+  .hero-stamp{position:absolute;left:-1.4rem;bottom:-1.2rem;background:var(--brick);color:#fff;border-radius:12px;padding:.9rem 1.3rem;box-shadow:0 18px 40px rgba(0,0,0,.35);transform:rotate(-4deg);border:3px dashed #fff;}
+  .hero-stamp b{font-family:'Alfa Slab One',serif;font-size:1.6rem;display:block;line-height:1;font-weight:400;}
+  .hero-stamp span{font-size:.78rem;font-weight:700;}
+
+  section{padding:4.4rem 0;}
+  .sec-head{max-width:660px;margin-bottom:2.4rem;}
+  .sec-head .kicker{font-size:.72rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--brick);margin-bottom:.7rem;}
+  .sec-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);color:var(--ink-teal);margin-bottom:.8rem;}
+  .sec-head p{color:var(--ink-soft);font-size:1.05rem;}
+
+  .poster{background:var(--card);border:3px solid var(--ink-teal);border-radius:16px;display:grid;grid-template-columns:1.1fr .9fr;overflow:hidden;box-shadow:10px 10px 0 var(--amber);}
+  .poster .poster-copy{padding:2.8rem;}
+  .poster-copy h2{font-size:1.8rem;color:var(--ink-teal);margin-bottom:.9rem;}
+  .poster-copy p{color:var(--ink-soft);margin-bottom:1rem;}
+  .poster-copy .stars{color:var(--amber-deep);font-size:1.3rem;letter-spacing:.2rem;margin-bottom:.6rem;}
+  .poster img{object-fit:cover;height:100%;min-height:340px;width:100%;}
+
+  .svc-strip{background:var(--ink-teal);color:#f3eddc;}
+  .svc-strip .sec-head .kicker{color:var(--amber);}
+  .svc-strip .sec-head h2{color:#fff;}
+  .svc-strip .sec-head p{color:#ddd5ba;}
+  .svc-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem;}
+  .svc-ticket{background:var(--card);color:var(--ink);border-radius:14px;padding:1.6rem 1.4rem;border-top:8px solid var(--amber);position:relative;}
+  .svc-ticket::before{content:"";position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:26px;height:26px;border-radius:50%;background:var(--paper);border:4px solid var(--amber);}
+  .svc-ticket h3{font-size:1.15rem;color:var(--ink-teal);margin-bottom:.5rem;font-family:'Alfa Slab One',serif;font-weight:400;}
+  .svc-ticket p{font-size:.9rem;color:var(--ink-soft);}
+  .svc-ticket a{font-weight:800;font-size:.88rem;color:var(--brick);display:inline-block;margin-top:.7rem;}
+
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
+  .gallery figure{border-radius:12px;overflow:hidden;background:var(--card);border:3px solid var(--ink-teal);}
+  .gallery img{width:100%;height:250px;object-fit:cover;}
+  .gallery figcaption{font-size:.8rem;color:var(--ink-soft);padding:.6rem .9rem;}
+
+  .visit-split{display:grid;grid-template-columns:1fr 1fr;gap:2.6rem;align-items:stretch;}
+  .hours-card{background:var(--ink-deep);color:#f3eddc;border-radius:16px;padding:2.4rem;}
+  .hours-card h2{color:#fff;font-size:1.7rem;margin-bottom:1rem;}
+  .hours{list-style:none;}
+  .hours li{display:flex;justify-content:space-between;gap:1rem;padding:.65rem 0;border-bottom:1px dashed rgba(255,255,255,.25);font-size:.98rem;}
+  .hours li span:first-child{font-weight:700;color:var(--amber);}
+  .cta-card{background:var(--amber);border-radius:16px;padding:2.4rem;color:var(--ink-deep);}
+  .cta-card h2{font-size:1.7rem;margin-bottom:.8rem;}
+  .cta-card p{margin-bottom:1.4rem;font-weight:500;}
+
+  footer{background:var(--ink-deep);color:#cfc4a4;padding:3rem 0 2rem;}
+  .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2rem;margin-bottom:2rem;}
+  footer h4{font-family:'Alfa Slab One',serif;font-weight:400;color:#fff;font-size:1.1rem;margin-bottom:.8rem;}
+  footer a{color:#f3eddc;text-decoration:none;}
+  .foot-note{border-top:1px solid rgba(255,255,255,.14);padding-top:1.4rem;font-size:.8rem;color:#9a8f70;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+
+  @media(max-width:900px){
+    .hero .wrap{grid-template-columns:1fr;padding:3rem 1.5rem 4rem;gap:2rem;}
+    .poster{grid-template-columns:1fr;}
+    .svc-cards{grid-template-columns:1fr 1fr;}
+    .visit-split{grid-template-columns:1fr;}
+    .gallery{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .navlinks a:not(.btn){display:none;}
+  }
+  @media(max-width:560px){.svc-cards{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="disclosure">Website Concept &middot; Design Preview<small>A preview of what a website for this business could look like. Not the business's actual site.</small></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="badge">L</span>
+      <span><b>Lucky Dog Daycare</b><small>Tacoma, Washington</small></span>
+    </a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="visit.html">Visit</a>
+      <a class="btn" href="tel:+12532749663">Call to Book</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Dog daycare &amp; boarding &middot; Tacoma, WA</span>
+      <h1>Your dog's <em>lucky day</em>, every day</h1>
+      <p class="lead">Lucky Dog Daycare on 6th Ave in Tacoma gives dogs room to play, friends to wrestle, and people who genuinely like them. Daycare, overnight boarding, grooming, and training.</p>
+      <div class="hero-ctas">
+        <a class="btn amber" href="tel:+12532749663">Call (253) 274-9663</a>
+        <a class="btn ghost" href="services.html">See Services</a>
+      </div>
+      <div class="facts"><strong>1610 6th Ave, Tacoma, WA</strong> &middot; Weekdays 6:30 AM &ndash; 6:30 PM</div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/dogs-closeup.jpg" alt="Group of daycare dogs at Lucky Dog Daycare">
+      <div class="hero-stamp"><b>5.0</b><span>29 reviews</span></div>
+      <p class="photo-credit">Photo from Lucky Dog Daycare's Facebook page</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="poster">
+      <div class="poster-copy">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <h2>A yard built for play</h2>
+        <p>The fenced outdoor play yard is the heart of Lucky Dog: play structures, kiddie pools, tires to climb, and dogs who come back day after day.</p>
+        <p><a href="services.html" style="font-weight:800;">See what a day looks like &rarr;</a></p>
+      </div>
+      <div><img src="img/yard-pool.jpg" alt="Dogs playing in the fenced outdoor play yard"><p class="photo-credit" style="color:var(--ink-soft);padding:.4rem 1.5rem;">Photo from Lucky Dog Daycare's Facebook page</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-strip">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">What we offer</div>
+      <h2>Four ways to a tired, happy dog</h2>
+      <p>Every service runs out of the 6th Ave facility in Tacoma.</p>
+    </div>
+    <div class="svc-cards">
+      <div class="svc-ticket"><h3>Dog Daycare</h3><p>Weekday play days in the yard and playrooms while you are at work.</p><a href="services.html">Details &rarr;</a></div>
+      <div class="svc-ticket"><h3>Overnight Boarding</h3><p>Sleepovers in a place your dog already knows and likes.</p><a href="services.html">Details &rarr;</a></div>
+      <div class="svc-ticket"><h3>Grooming</h3><p>Baths and tidy-ups so your dog comes home clean.</p><a href="services.html">Details &rarr;</a></div>
+      <div class="svc-ticket"><h3>Training</h3><p>Basic training help for dogs who are still learning the rules.</p><a href="services.html">Details &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Meet the crew</div>
+      <h2>Regulars at Lucky Dog</h2>
+      <p>Photos from the business's own Facebook page.</p>
+    </div>
+    <div class="gallery">
+      <figure><img src="img/white-dog.jpg" alt="Small white daycare dog outdoors"><figcaption>A regular enjoying the yard, from the business's Facebook page</figcaption></figure>
+      <figure><img src="img/yard-pool.jpg" alt="Dogs playing in the outdoor play yard"><figcaption>Playtime in the fenced yard, from the business's Facebook page</figcaption></figure>
+      <figure><img src="img/dogs-closeup.jpg" alt="Group of daycare dogs"><figcaption>The daycare crew up close, from the business's Facebook page</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="visit-split">
+      <div class="hours-card">
+        <h2>Hours</h2>
+        <ul class="hours">
+          <li><span>Monday &ndash; Friday</span><span>6:30 AM &ndash; 6:30 PM</span></li>
+          <li><span>Saturday &amp; Sunday</span><span>Call to confirm</span></li>
+        </ul>
+      </div>
+      <div class="cta-card">
+        <h2>1610 6th Ave, Tacoma</h2>
+        <p>Call to book daycare or boarding, or to ask about training and grooming.</p>
+        <a class="btn" href="tel:+12532749663">Call (253) 274-9663</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Lucky Dog Daycare</h4>
+        <p>1610 6th Ave<br>Tacoma, WA<br><a href="tel:+12532749663">(253) 274-9663</a></p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon &ndash; Fri: 6:30 AM &ndash; 6:30 PM<br>Sat &amp; Sun: call to confirm</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="visit.html">Visit</a></p>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>Website concept created by Freightfolio. This is a design preview, not the business's actual website.</span>
+      <span>&copy; 2026 concept draft</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

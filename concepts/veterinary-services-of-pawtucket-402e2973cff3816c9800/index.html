@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Veterinary Services of Pawtucket | Veterinary Clinic in Pawtucket, RI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pine:#0f3a38;
+    --pine-deep:#0a2927;
+    --seafoam:#cfe6da;
+    --paper:#faf7ef;
+    --card:#ffffff;
+    --coral:#d9714b;
+    --coral-deep:#b5522f;
+    --ink:#23302e;
+    --ink-soft:#5b6a66;
+    --hairline:#e2dccb;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Public Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.display{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-.01em;line-height:1.12;}
+  a{color:var(--coral-deep);}
+  img{display:block;max-width:100%;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 1.4rem;}
+
+  .disclosure{background:var(--pine-deep);color:#fff;text-align:center;font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:.7rem 1rem;}
+  .disclosure small{display:block;font-weight:400;letter-spacing:.03em;text-transform:none;font-size:.8rem;opacity:.85;margin-top:.2rem;}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(250,247,239,.97);border-bottom:1px solid var(--hairline);backdrop-filter:blur(6px);}
+  .nav-inner{max-width:1120px;margin:0 auto;padding:.7rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+  .brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;color:var(--pine);}
+  .brand .mark{width:38px;height:38px;border-radius:50%;background:var(--pine);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;}
+  .brand b{font-family:'Fraunces',serif;font-size:1.02rem;line-height:1.15;display:block;}
+  .brand small{display:block;font-family:'Public Sans',sans-serif;font-weight:600;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--coral-deep);}
+  .navlinks{display:flex;gap:1.5rem;align-items:center;}
+  .navlinks a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.92rem;}
+  .navlinks a:hover{color:var(--coral-deep);}
+  .btn{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;font-weight:700;padding:.75rem 1.5rem;border-radius:999px;font-size:.95rem;border:0;cursor:pointer;}
+  .btn:hover{background:var(--coral-deep);}
+  .btn.ghost{background:transparent;color:var(--pine);border:2px solid var(--pine);}
+  .btn.ghost:hover{background:var(--pine);color:#fff;}
+
+  .hero{background:var(--pine);color:#f4f1e6;overflow:hidden;}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center;padding:4.5rem 1.4rem;}
+  .eyebrow{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--seafoam);border:1px solid rgba(207,230,218,.45);border-radius:999px;padding:.4rem .95rem;margin-bottom:1.4rem;}
+  .hero h1{font-size:clamp(2.4rem,4.6vw,3.9rem);color:#fff;margin-bottom:1.1rem;}
+  .hero h1 em{font-style:italic;color:var(--seafoam);}
+  .hero p.lead{font-size:1.12rem;color:#e6e2d2;max-width:30rem;margin-bottom:1.8rem;}
+  .hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:1.6rem;}
+  .hero .facts{font-size:.9rem;color:#cfcabb;}
+  .hero .facts strong{color:#fff;}
+  .hero-photo{position:relative;}
+  .hero-photo img{border-radius:18px;box-shadow:0 30px 60px rgba(0,0,0,.35);}
+  .photo-credit{font-size:.72rem;color:#cfcabb;margin-top:.5rem;}
+  .hero-badge{position:absolute;left:-1.2rem;bottom:-1.2rem;background:var(--coral);color:#fff;border-radius:16px;padding:1rem 1.3rem;box-shadow:0 18px 40px rgba(0,0,0,.3);}
+  .hero-badge b{font-family:'Fraunces',serif;font-size:1.5rem;display:block;line-height:1;}
+  .hero-badge span{font-size:.8rem;}
+
+  section{padding:4.2rem 0;}
+  .sec-head{max-width:640px;margin-bottom:2.4rem;}
+  .sec-head .kicker{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--coral-deep);margin-bottom:.7rem;}
+  .sec-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);color:var(--pine);margin-bottom:.8rem;}
+  .sec-head p{color:var(--ink-soft);font-size:1.05rem;}
+
+  .care-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;}
+  .care-card{background:var(--card);border:1px solid var(--hairline);border-radius:16px;padding:1.7rem 1.5rem;}
+  .care-card .tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--pine);background:var(--seafoam);border-radius:999px;padding:.3rem .8rem;margin-bottom:.9rem;}
+  .care-card h3{font-size:1.28rem;color:var(--pine);margin-bottom:.55rem;}
+  .care-card p{font-size:.95rem;color:var(--ink-soft);}
+  .care-card a{font-weight:700;font-size:.9rem;display:inline-block;margin-top:.8rem;}
+
+  .visit-strip{background:var(--seafoam);}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;}
+  .visit-grid img{border-radius:16px;box-shadow:0 20px 44px rgba(15,58,56,.18);}
+  .hours{list-style:none;margin:1.4rem 0;}
+  .hours li{display:flex;justify-content:space-between;gap:1rem;padding:.65rem 0;border-bottom:1px solid rgba(15,58,56,.15);font-size:.98rem;}
+  .hours li span:first-child{font-weight:600;color:var(--pine);}
+
+  .rating-band{background:var(--pine-deep);color:#e9e5d4;text-align:center;}
+  .rating-band .stars{font-size:1.6rem;letter-spacing:.3rem;color:#f0c36d;margin-bottom:.6rem;}
+  .rating-band p{font-size:1.05rem;max-width:34rem;margin:0 auto;}
+  .rating-band small{display:block;margin-top:.6rem;color:#b9b49e;font-size:.85rem;}
+
+  footer{background:#081f1e;color:#cfcabb;padding:3rem 0 2rem;}
+  .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2rem;margin-bottom:2rem;}
+  footer h4{font-family:'Fraunces',serif;color:#fff;font-size:1.1rem;margin-bottom:.8rem;}
+  footer a{color:#e9e5d4;text-decoration:none;}
+  footer a:hover{color:#fff;}
+  .foot-note{border-top:1px solid rgba(255,255,255,.12);padding-top:1.4rem;font-size:.8rem;color:#9aa39c;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+
+  @media(max-width:880px){
+    .hero .wrap{grid-template-columns:1fr;padding:3rem 1.4rem;gap:2rem;}
+    .care-grid{grid-template-columns:1fr;}
+    .visit-grid{grid-template-columns:1fr;gap:2rem;}
+    .foot-grid{grid-template-columns:1fr;}
+    .navlinks a:not(.btn){display:none;}
+    .hero-badge{left:.6rem;}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">Website Concept &middot; Design Preview<small>A preview of what a website for this business could look like. Not the business's actual site.</small></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="mark">V</span>
+      <span><b>Veterinary Services of Pawtucket</b><small>Pawtucket, Rhode Island</small></span>
+    </a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="visit.html">Visit Us</a>
+      <a class="btn" href="tel:+14017228767">Call to Book</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Veterinary clinic &middot; Pawtucket, RI</span>
+      <h1>Steady, gentle care for <em>the animals you love</em></h1>
+      <p class="lead">Veterinary Services of Pawtucket looks after dogs and cats with unhurried appointments and plain-spoken guidance. From first vaccines to senior checkups, your pet is treated like family here.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="tel:+14017228767">Call (401) 722-8767</a>
+        <a class="btn ghost" href="services.html" style="color:#fff;border-color:#fff;">Our Services</a>
+      </div>
+      <div class="facts"><strong>310 East Ave, Pawtucket, RI 02860</strong> &middot; Mon to Fri 9&ndash;5, Sat 9&ndash;1</div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/vet-exam.jpg" alt="Veterinarian examining a golden retriever in a bright exam room">
+      <div class="hero-badge"><b>4.7</b><span>from 15 Google reviews</span></div>
+      <p class="photo-credit">Stock photo, shown for design purposes</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">What we do</div>
+      <h2>Complete care under one roof</h2>
+      <p>Preventive visits, diagnostics, and treatment plans built around your pet, not a template.</p>
+    </div>
+    <div class="care-grid">
+      <div class="care-card">
+        <span class="tag">Preventive</span>
+        <h3>Vaccinations</h3>
+        <p>Core and lifestyle vaccines for puppies, kittens, and adults, kept on a schedule that fits your pet's age and risk.</p>
+        <a href="services.html">See services &rarr;</a>
+      </div>
+      <div class="care-card">
+        <span class="tag">Wellness</span>
+        <h3>Wellness &amp; Sick Exams</h3>
+        <p>Thorough nose-to-tail exams for healthy pets and careful workups when something seems off.</p>
+        <a href="services.html">See services &rarr;</a>
+      </div>
+      <div class="care-card">
+        <span class="tag">Dental</span>
+        <h3>Dentals</h3>
+        <p>Professional dental cleanings and oral exams to protect teeth, gums, and overall health.</p>
+        <a href="services.html">See services &rarr;</a>
+      </div>
+      <div class="care-card">
+        <span class="tag">Surgical</span>
+        <h3>Minor Surgeries</h3>
+        <p>Common soft-tissue procedures performed with careful anesthesia and close recovery monitoring.</p>
+        <a href="services.html">See services &rarr;</a>
+      </div>
+      <div class="care-card">
+        <span class="tag">Parasites</span>
+        <h3>Heartworm Treatment</h3>
+        <p>Heartworm testing, treatment plans, and prevention guidance for dogs in every season.</p>
+        <a href="services.html">See services &rarr;</a>
+      </div>
+      <div class="care-card">
+        <span class="tag">Products</span>
+        <h3>Flea &amp; Tick Products</h3>
+        <p>Vet-recommended flea and tick prevention picked for your pet's size, coat, and lifestyle.</p>
+        <a href="services.html">See services &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit-strip">
+  <div class="wrap visit-grid">
+    <div>
+      <img src="img/vet-stethoscope.jpg" alt="Veterinarian listening to a golden retriever with a stethoscope">
+      <p class="photo-credit" style="color:var(--ink-soft);">Stock photo, shown for design purposes</p>
+    </div>
+    <div>
+      <div class="sec-head" style="margin-bottom:0;">
+        <div class="kicker">Visit us</div>
+        <h2>Easy to reach, easy to park</h2>
+        <p>310 East Ave in Pawtucket. Call ahead and we will have the exam room ready when you arrive.</p>
+      </div>
+      <ul class="hours">
+        <li><span>Monday, Tuesday, Thursday, Friday</span><span>9:00 AM &ndash; 5:00 PM</span></li>
+        <li><span>Saturday</span><span>9:00 AM &ndash; 1:00 PM</span></li>
+        <li><span>Wednesday &amp; Sunday</span><span>Closed</span></li>
+      </ul>
+      <div class="hero-ctas">
+        <a class="btn" href="tel:+14017228767">Call to Book</a>
+        <a class="btn ghost" href="visit.html">Directions &amp; Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rating-band">
+  <div class="wrap">
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <p><strong style="color:#fff;">Rated 4.7</strong> based on 15 Google reviews from Pawtucket pet owners.</p>
+    <small>Source: Google reviews for Veterinary Services of Pawtucket</small>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Veterinary Services of Pawtucket</h4>
+        <p>310 East Ave<br>Pawtucket, RI 02860<br><a href="tel:+14017228767">(401) 722-8767</a></p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon, Tue, Thu, Fri: 9 AM &ndash; 5 PM<br>Sat: 9 AM &ndash; 1 PM<br>Wed &amp; Sun: Closed</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="visit.html">Visit Us</a></p>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>Website concept created by Freightfolio. This is a design preview, not the business's actual website.</span>
+      <span>&copy; 2026 concept draft</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

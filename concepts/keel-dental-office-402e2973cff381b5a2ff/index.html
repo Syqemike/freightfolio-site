@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Keel Dental Office | Family Dentistry in Bay St. Louis, MS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --seaglass:#2e7d74;
+    --seaglass-deep:#1e5a53;
+    --paper:#fbf8f1;
+    --card:#ffffff;
+    --marine:#14323a;
+    --marine-deep:#0c2229;
+    --sand:#d9a648;
+    --ink:#26383e;
+    --ink-soft:#5d6f75;
+    --hairline:#e6ddcb;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.display{font-family:'Lora',Georgia,serif;font-weight:600;line-height:1.18;}
+  a{color:var(--seaglass-deep);}
+  img{display:block;max-width:100%;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 1.5rem;}
+
+  .disclosure{background:var(--marine-deep);color:#fff;text-align:center;font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:.7rem 1rem;}
+  .disclosure small{display:block;font-weight:400;letter-spacing:.03em;text-transform:none;font-size:.8rem;opacity:.85;margin-top:.2rem;}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.96);border-bottom:1px solid var(--hairline);backdrop-filter:blur(6px);}
+  .nav-inner{max-width:1140px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--marine);}
+  .brand .mark{width:40px;height:40px;border-radius:12px;background:var(--seaglass);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-weight:700;font-size:1.2rem;}
+  .brand b{font-family:'Lora',serif;font-size:1.05rem;line-height:1.15;display:block;}
+  .brand small{display:block;font-family:'Inter',sans-serif;font-weight:600;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--seaglass-deep);}
+  .navlinks{display:flex;gap:1.5rem;align-items:center;}
+  .navlinks a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.92rem;}
+  .navlinks a:hover{color:var(--seaglass-deep);}
+  .btn{display:inline-block;background:var(--seaglass);color:#fff;text-decoration:none;font-weight:700;padding:.75rem 1.6rem;border-radius:10px;font-size:.95rem;border:0;cursor:pointer;}
+  .btn:hover{background:var(--seaglass-deep);}
+  .btn.sand{background:var(--sand);color:var(--marine-deep);}
+  .btn.sand:hover{background:#c9963a;}
+  .btn.ghost{background:transparent;color:var(--marine);border:2px solid var(--marine);}
+  .btn.ghost:hover{background:var(--marine);color:#fff;}
+
+  .hero{background:var(--marine);color:#f2efe4;position:relative;overflow:hidden;}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3.2rem;align-items:center;padding:4.6rem 1.5rem 5rem;}
+  .eyebrow{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--sand);border:1px solid rgba(217,166,72,.5);border-radius:999px;padding:.42rem 1rem;margin-bottom:1.5rem;}
+  .hero h1{font-size:clamp(2.4rem,4.8vw,3.9rem);color:#fff;margin-bottom:1.1rem;}
+  .hero h1 em{font-style:italic;color:#a9d8d0;}
+  .hero p.lead{font-size:1.12rem;color:#d9d5c2;max-width:29rem;margin-bottom:1.8rem;}
+  .hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:1.7rem;}
+  .hero .facts{font-size:.9rem;color:#c3bfa9;}
+  .hero .facts strong{color:#fff;}
+  .hero-photo img{border-radius:20px;box-shadow:0 30px 60px rgba(0,0,0,.35);}
+  .hero-wave{position:absolute;bottom:-1px;left:0;width:100%;display:block;}
+
+  .photo-credit{font-size:.72rem;color:#c3bfa9;margin-top:.5rem;}
+
+  section{padding:4.4rem 0;}
+  .sec-head{max-width:660px;margin-bottom:2.4rem;}
+  .sec-head .kicker{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--seaglass-deep);margin-bottom:.7rem;}
+  .sec-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);color:var(--marine);margin-bottom:.8rem;}
+  .sec-head p{color:var(--ink-soft);font-size:1.05rem;}
+
+  .doctors{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;}
+  .doctor-card{background:var(--card);border:1px solid var(--hairline);border-radius:18px;padding:2.2rem;}
+  .doctor-card .cred{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--seaglass-deep);background:#e4efe9;border-radius:999px;padding:.35rem .85rem;margin-bottom:1rem;}
+  .doctor-card h3{font-size:1.55rem;color:var(--marine);margin-bottom:.5rem;}
+  .doctor-card p{color:var(--ink-soft);font-size:.98rem;}
+
+  .services-strip{background:var(--seaglass-deep);color:#eef3ee;}
+  .services-strip .sec-head .kicker{color:var(--sand);}
+  .services-strip .sec-head h2{color:#fff;}
+  .services-strip .sec-head p{color:#d4ddd4;}
+  .svc-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0 3rem;}
+  .svc-item{padding:1.4rem 0;border-bottom:1px solid rgba(255,255,255,.18);}
+  .svc-item h3{font-size:1.25rem;color:#fff;margin-bottom:.35rem;}
+  .svc-item p{font-size:.95rem;color:#d4ddd4;}
+  .svc-item a{color:var(--sand);font-weight:700;font-size:.9rem;text-decoration:none;}
+
+  .visit-teaser{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;}
+  .visit-teaser img{border-radius:18px;box-shadow:0 20px 44px rgba(20,50,58,.16);}
+  .hours{list-style:none;margin:1.4rem 0;}
+  .hours li{display:flex;justify-content:space-between;gap:1rem;padding:.65rem 0;border-bottom:1px solid var(--hairline);font-size:.98rem;}
+  .hours li span:first-child{font-weight:600;color:var(--marine);}
+
+  .rating-band{background:var(--marine-deep);color:#e9e5d4;text-align:center;}
+  .rating-band .stars{font-size:1.6rem;letter-spacing:.3rem;color:#f0c36d;margin-bottom:.6rem;}
+  .rating-band p{font-size:1.05rem;max-width:34rem;margin:0 auto;}
+  .rating-band small{display:block;margin-top:.6rem;color:#b9b49e;font-size:.85rem;}
+
+  footer{background:#0a1d23;color:#cfcabb;padding:3rem 0 2rem;}
+  .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2rem;margin-bottom:2rem;}
+  footer h4{font-family:'Lora',serif;color:#fff;font-size:1.1rem;margin-bottom:.8rem;}
+  footer a{color:#e9e5d4;text-decoration:none;}
+  .foot-note{border-top:1px solid rgba(255,255,255,.12);padding-top:1.4rem;font-size:.8rem;color:#9aa39c;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+
+  @media(max-width:880px){
+    .hero .wrap{grid-template-columns:1fr;padding:3rem 1.5rem 3.4rem;gap:2rem;}
+    .doctors{grid-template-columns:1fr;}
+    .svc-list{grid-template-columns:1fr;}
+    .visit-teaser{grid-template-columns:1fr;gap:2rem;}
+    .foot-grid{grid-template-columns:1fr;}
+    .navlinks a:not(.btn){display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">Website Concept &middot; Design Preview<small>A preview of what a website for this dental office could look like. Not the office's actual site.</small></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="mark">K</span>
+      <span><b>Drs. Keel Dental Office</b><small>Bay St. Louis, Mississippi</small></span>
+    </a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">Our Doctors</a>
+      <a href="visit.html">Visit</a>
+      <a class="btn" href="tel:+12284675577">Call to Book</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Family dentistry &middot; Bay St. Louis, MS</span>
+      <h1>A father-and-son practice that treats you <em>like a neighbor</em></h1>
+      <p class="lead">Drs. M. Bert Keel and Murray Keel provide general dentistry for Bay St. Louis families in a calm, comfortable office on North Second Street.</p>
+      <div class="hero-ctas">
+        <a class="btn sand" href="tel:+12284675577">Call (228) 467-5577</a>
+        <a class="btn ghost" href="about.html" style="color:#fff;border-color:#fff;">Meet the Doctors</a>
+      </div>
+      <div class="facts"><strong>304 N 2nd St, Bay St. Louis, MS</strong> &middot; Mon&ndash;Thu 8&ndash;5, Fri 8&ndash;2</div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/dentist.jpg" alt="Dentist with a patient in a modern dental office">
+      <p class="photo-credit">Stock photo, shown for design purposes</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">The practice</div>
+      <h2>Two generations of dental care</h2>
+      <p>A family practice where the dentists know your name and your history, and treatment plans are explained in plain language.</p>
+    </div>
+    <div class="doctors">
+      <div class="doctor-card">
+        <span class="cred">D.M.D.</span>
+        <h3>Dr. M. Bert Keel Jr.</h3>
+        <p>Doctor of Dental Medicine practicing general dentistry in Bay St. Louis alongside his father.</p>
+      </div>
+      <div class="doctor-card">
+        <span class="cred">D.D.S.</span>
+        <h3>Dr. Murray Keel</h3>
+        <p>Doctor of Dental Surgery providing general dental care to Mississippi Gulf Coast families.</p>
+      </div>
+    </div>
+    <p style="margin-top:1.6rem;"><a href="about.html" style="font-weight:700;">Learn more about our doctors &rarr;</a></p>
+  </div>
+</section>
+
+<section class="services-strip">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">General dentistry</div>
+      <h2>Care for the whole family</h2>
+      <p>Routine visits, repairs, and the kind of steady guidance that keeps small problems small.</p>
+    </div>
+    <div class="svc-list">
+      <div class="svc-item"><h3>Checkups &amp; Cleanings</h3><p>Regular exams and professional cleanings that keep teeth and gums healthy.</p></div>
+      <div class="svc-item"><h3>Fillings &amp; Repairs</h3><p>Tooth-colored fillings and repairs that blend in with your natural smile.</p></div>
+      <div class="svc-item"><h3>Crowns</h3><p>Strong, natural-looking crowns to protect damaged or weakened teeth.</p></div>
+      <div class="svc-item"><h3>Extractions</h3><p>Gentle tooth removal when a tooth cannot be saved, with clear aftercare.</p></div>
+      <div class="svc-item"><h3>Dentures &amp; Partials</h3><p>Comfortable, well-fitting replacements for missing teeth.</p></div>
+      <div class="svc-item"><h3>Preventive Guidance</h3><p>Practical advice on home care so your visits stay routine.</p></div>
+    </div>
+    <p style="margin-top:1.8rem;"><a class="btn sand" href="services.html">All Services</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap visit-teaser">
+    <div>
+      <img src="img/dental-office.jpg" alt="Modern dental office treatment room">
+      <p class="photo-credit" style="color:var(--ink-soft);">Stock photo, shown for design purposes</p>
+    </div>
+    <div>
+      <div class="sec-head" style="margin-bottom:0;">
+        <div class="kicker">Visit us</div>
+        <h2>On North Second Street in Bay St. Louis</h2>
+        <p>Call the office to schedule. New patients are welcome.</p>
+      </div>
+      <ul class="hours">
+        <li><span>Monday &ndash; Thursday</span><span>8:00 AM &ndash; 5:00 PM</span></li>
+        <li><span>Friday</span><span>8:00 AM &ndash; 2:00 PM</span></li>
+        <li><span>Saturday &amp; Sunday</span><span>Closed</span></li>
+      </ul>
+      <div class="hero-ctas">
+        <a class="btn" href="tel:+12284675577">Call to Book</a>
+        <a class="btn ghost" href="visit.html">Directions &amp; Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rating-band">
+  <div class="wrap">
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <p><strong style="color:#fff;">Rated 4.8</strong> based on 25 Google reviews.</p>
+    <small>Source: Google reviews for Drs. M Bert Keel &amp; Murray Keel Dental Office</small>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Drs. Keel Dental Office</h4>
+        <p>304 N 2nd St<br>Bay St. Louis, MS 39520<br><a href="tel:+12284675577">(228) 467-5577</a></p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon &ndash; Thu: 8 AM &ndash; 5 PM<br>Fri: 8 AM &ndash; 2 PM<br>Sat &amp; Sun: Closed</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="about.html">Our Doctors</a><br><a href="visit.html">Visit</a></p>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>Website concept created by Freightfolio. This is a design preview, not the office's actual website.</span>
+      <span>&copy; 2026 concept draft</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
