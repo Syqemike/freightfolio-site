@@ -1,0 +1,37 @@
+DOMINO EFFECT AUTO DETAILING - Photo provenance
+Business: Domino Effect Auto Detailing (mobile auto detailing, Kiln, MS)
+Photo status: STOCK-FALLBACK. No real business photos were available, so all
+imagery is free-license stock photography, clearly labeled on-site.
+
+1. hero-wash.jpg
+   Source: https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=1600&q=80
+   Description: Detailer hand-washing a foam-covered black car (exterior wash)
+   License: Unsplash License (free to use, including commercial use, no permission needed)
+   Photographer credit: sourced via Unsplash CDN; photographer name not embedded in CDN URL
+
+2. pressure-wash.jpg
+   Source: https://images.unsplash.com/photo-1552930294-6b595f4c2974?w=1600&q=80
+   Description: Detailer pressure-washing a black convertible (exterior wash)
+   License: Unsplash License (free to use, including commercial use, no permission needed)
+   Photographer credit: sourced via Unsplash CDN; photographer name not embedded in CDN URL
+
+3. spray-detail.jpg
+   Source: https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=1600&q=80
+   Description: Sports car being rinsed with water spray (detail rinse)
+   License: Unsplash License (free to use, including commercial use, no permission needed)
+   Photographer credit: sourced via Unsplash CDN; photographer name not embedded in CDN URL
+
+4. yellow-car.jpg
+   Source: https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1600&q=80
+   Description: Yellow sports car on an open road (finished shine look)
+   License: Unsplash License (free to use, including commercial use, no permission needed)
+   Photographer credit: sourced via Unsplash CDN; photographer name not embedded in CDN URL
+
+5. silver-car.jpg
+   Source: https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1600&q=80
+   Description: Silver sedan parked outdoors (finished clean look)
+   License: Unsplash License (free to use, including commercial use, no permission needed)
+   Photographer credit: sourced via Unsplash CDN; photographer name not embedded in CDN URL
+
+All images compressed to JPG, max 1600px long edge, each under 400 KB.
+No images depict the actual Domino Effect Auto Detailing business or its customers.

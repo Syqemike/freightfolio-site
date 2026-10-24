@@ -1,0 +1,97 @@
+/* Richmond Hill Nails & Spa | Lowcountry coastal luxury | sea green, seafoam, sand, coral */
+:root{
+  --sea:#173f3a; --sea-d:#0f2d29; --foam:#bfe0d4; --sand:#f4ead6; --sand2:#ecdfc4;
+  --coral:#dd7a55; --coral-d:#c25f3c; --ink:#24312e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Figtree',system-ui,sans-serif;background:var(--sand);color:var(--ink);line-height:1.65;font-size:17px}
+h1,h2,h3,.serif{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.15;color:var(--sea-d)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--coral-d)}
+
+.topbar{background:var(--sea);position:sticky;top:0;z-index:50}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{color:#fff;font-family:'DM Serif Display',serif;font-size:22px;text-decoration:none}
+.logo em{color:var(--foam);font-style:normal}
+.nav{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.nav a{color:#eaf3ee;text-decoration:none;font-size:15px;font-weight:600;padding:8px 14px;border-radius:8px}
+.nav a:hover{background:rgba(255,255,255,.12)}
+.nav a.on{color:var(--foam);background:rgba(255,255,255,.08)}
+.btn-call{background:var(--coral);color:#fff;text-decoration:none;font-weight:700;padding:10px 22px;border-radius:999px;font-size:15px;margin-left:8px}
+.btn-call:hover{background:var(--coral-d)}
+
+.disclosure{background:#dcefdD;color:#3c5c53;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:7px 16px}
+
+.hero{position:relative;min-height:74vh;display:flex;align-items:flex-end;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('img/hero.jpg') center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,45,41,.25) 0%,rgba(15,45,41,.72) 100%)}
+.hero .wrap{position:relative;z-index:2;padding:120px 24px 64px}
+.hero h1{color:#fff;font-size:60px;max-width:11em;margin-bottom:14px}
+.hero .lede{color:#f2f6f3;font-size:19px;max-width:36em}
+.kicker{display:inline-block;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--foam);font-weight:700;margin-bottom:12px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;align-items:center}
+.btn{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;font-weight:700;padding:14px 30px;border-radius:999px;font-size:16px}
+.btn:hover{background:var(--coral-d)}
+.btn.sand{background:var(--sand);color:var(--sea-d)}
+.btn.sand:hover{background:#fff}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.94);color:var(--sea-d);border-radius:999px;padding:10px 20px;font-size:15px;font-weight:600}
+.pill strong{font-family:'DM Serif Display',serif;font-size:22px;color:var(--coral-d)}
+.hero-credit{position:relative;z-index:2;font-size:12px;color:#cfdcd6;padding:0 24px 14px}
+
+.award{background:var(--sand2);border-bottom:1px solid #dccfae}
+.award .wrap{display:flex;align-items:center;justify-content:center;gap:18px;padding:30px 24px;flex-wrap:wrap;text-align:center}
+.badge{background:var(--sea);color:#fff;border-radius:16px;padding:16px 26px;font-family:'DM Serif Display',serif;font-size:20px;box-shadow:0 10px 24px rgba(23,63,58,.25)}
+.badge small{display:block;font-family:'Figtree',sans-serif;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--foam);margin-top:4px}
+.award p{max-width:32em;color:#5b6052}
+
+.sect .wrap{padding:64px 24px}
+.sect h2{font-size:42px;margin-bottom:8px}
+.sect .sub{color:#6c7160;margin-bottom:30px;max-width:44em}
+
+.cardrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.scard{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 22px rgba(23,63,58,.08)}
+.scard img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.scard .b{padding:20px 22px}
+.scard h3{font-size:23px;margin-bottom:6px}
+.scard p{font-size:15.5px;color:#5b6052}
+.scard figcaption,.cap{font-size:12.5px;color:#8b8f7e;margin-top:8px}
+
+.water{background:linear-gradient(180deg,var(--foam) 0%,#a9d3c2 100%)}
+.water .wrap{padding:64px 24px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.water h2{margin-bottom:12px}
+.water img{border-radius:18px;box-shadow:0 14px 30px rgba(23,63,58,.2);aspect-ratio:4/3;object-fit:cover;width:100%}
+.perks{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.perk{background:rgba(255,255,255,.7);border-radius:12px;padding:16px}
+.perk h4{font-family:'DM Serif Display',serif;font-size:18px;color:var(--sea-d);margin-bottom:4px}
+.perk p{font-size:14.5px;color:#4c554f}
+
+.svc-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.svc{background:#fff;border-radius:14px;padding:20px 22px;border-left:5px solid var(--foam)}
+.svc h3{font-size:21px;margin-bottom:4px}
+.svc p{font-size:15px;color:#5b6052}
+
+.hours{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;font-size:16px}
+.hours th{background:var(--sea);color:#fff;text-align:left;padding:12px 18px;font-family:'DM Serif Display',serif;font-size:19px;font-weight:400}
+.hours td{padding:10px 18px;border-top:1px solid #e6ddc4}
+.hours tr td:first-child{font-weight:600}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.visitbox{background:#fff;border-radius:14px;padding:26px;border:1px solid #e6ddc4}
+.visitbox h3{margin-bottom:8px}
+
+.cta-panel{background:var(--sea);color:#eaf3ee;border-radius:24px;padding:56px 40px;text-align:center;margin:0 24px}
+.cta-panel h2{color:#fff;font-size:38px;margin-bottom:10px}
+.cta-panel p{max-width:34em;margin:0 auto 24px;color:#cfdcd6}
+
+footer{background:var(--sea-d);color:#a9c2b9;font-size:14px}
+footer .wrap{padding:28px 24px;text-align:center}
+footer a{color:#e6efea}
+footer .fine{margin-top:10px;font-size:12.5px;color:#7d9a90}
+
+@media(max-width:820px){
+  .hero h1{font-size:40px}
+  .hero .wrap{padding:90px 24px 48px}
+  .water .wrap,.twocol{grid-template-columns:1fr}
+  .cta-panel{margin:0 12px;padding:40px 24px}
+}

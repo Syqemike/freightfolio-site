@@ -1,0 +1,32 @@
+PROVENANCE.txt - Nails by Jackie concept site (stock fallback)
+======================================================
+All photos are stock photos from Pexels, used under the Pexels License
+(free to use for commercial purposes, no attribution required; photographer
+credit is given below voluntarily). Every caption on the site is labeled
+"Stock photo: ..." as required. No real photos of the business exist, so no
+business photos are used.
+
+1. img/hero-manicure.jpg
+   Source: https://www.pexels.com/photo/3997384/
+   Photographer: Cottonbro Studio (@cottonbro)
+   License: Pexels License
+
+2. img/gel-polish.jpg
+   Source: https://www.pexels.com/photo/18441299/
+   Photographer: marsianin (@marsianin)
+   License: Pexels License
+
+3. img/purple-nails.jpg
+   Source: https://www.pexels.com/photo/10944916/
+   Photographer: Mim Fathi (@mimfathi)
+   License: Pexels License
+
+4. img/pedicure-chair.jpg
+   Source: https://www.pexels.com/photo/7755554/
+   Photographer: RDNE Stock Project (@rdne)
+   License: Pexels License
+
+5. img/spa-foot.jpg
+   Source: https://www.pexels.com/photo/5793888/
+   Photographer: Yan Krukau (@yankrukov)
+   License: Pexels License

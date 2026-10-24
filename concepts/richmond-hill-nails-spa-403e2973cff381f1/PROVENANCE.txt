@@ -1,0 +1,36 @@
+Richmond Hill Nails & Spa website concept - photo provenance
+Slug: richmond-hill-nails-spa-403e2973cff381f1
+All images are labeled STOCK photos on the site and do not depict the actual business.
+Source: Pexels (https://www.pexels.com). License: Pexels License - free to use, no attribution required. Photographers credited below in good faith.
+
+1. img/hero.jpg
+   Source: https://www.pexels.com/photo/4783335/
+   Photographer: Artem Podrez
+   License: Pexels License
+
+2. img/nailart.jpg
+   Source: https://www.pexels.com/photo/18112333/
+   Photographer: Maxi Leiva
+   License: Pexels License
+
+3. img/pedi.jpg
+   Source: https://www.pexels.com/photo/7755554/
+   Photographer: RDNE Stock project (rdne)
+   License: Pexels License
+
+4. img/handspa.jpg
+   Source: https://www.pexels.com/photo/7755221/
+   Photographer: RDNE Stock project (rdne)
+   License: Pexels License
+
+5. img/white-pedi.jpg
+   Source: https://www.pexels.com/photo/4963822/
+   Photographer: karola-g
+   License: Pexels License
+
+6. img/detail.jpg
+   Source: https://www.pexels.com/photo/37816588/
+   Photographer: Juan Vichamo
+   License: Pexels License
+
+All files resized to max 1600px long edge and compressed to JPEG under 400KB.

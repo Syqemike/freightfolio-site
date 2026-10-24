@@ -1,0 +1,31 @@
+Franklin Nails website concept - photo provenance
+Slug: franklin-nails-403e2973cff381ae
+All images are labeled STOCK photos on the site and do not depict the actual business.
+Source: Pexels (https://www.pexels.com). License: Pexels License - free to use, no attribution required. Photographers credited below in good faith.
+
+1. img/hero.jpg
+   Source: https://www.pexels.com/photo/10401643/
+   Photographer: lapushkina
+   License: Pexels License
+
+2. img/salon.jpg
+   Source: https://www.pexels.com/photo/15202934/
+   Photographer: Jarib Key
+   License: Pexels License
+
+3. img/manicure.jpg
+   Source: https://www.pexels.com/photo/16041434/
+   Photographer: Andrea Mosti (andreamostiphotography)
+   License: Pexels License
+
+4. img/pedicure.jpg
+   Source: https://www.pexels.com/photo/34930127/
+   Photographer: Jose Antonio Otegui Auzmendi
+   License: Pexels License
+
+5. img/nails.jpg
+   Source: https://www.pexels.com/photo/13424007/
+   Photographer: Soana Beatriz
+   License: Pexels License
+
+All files resized to max 1600px long edge and compressed to JPEG under 400KB.

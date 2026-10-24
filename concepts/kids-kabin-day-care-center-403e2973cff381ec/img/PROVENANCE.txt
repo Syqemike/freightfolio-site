@@ -1,0 +1,23 @@
+Photo provenance — Kids Kabin Day Care Center concept site (batch-36, 2026-10-24)
+Business: Kids Kabin Day Care Center, 27730 Main Street, Daphne, AL 36526.
+
+No real photos of the business were available (Instagram inaccessible). All 5
+photos are free-license STOCK photos from Pexels (https://www.pexels.com/license/),
+clearly labeled "Stock photo" in every on-page caption. They are not presented as
+photos of the business. Resized to 1400px max edge, JPEG, each under 400 KB.
+
+- img/classroom-together.jpg — children and teachers playing together in a colorful
+  classroom setting. Photographer: Vadim Mazko. Source:
+  https://www.pexels.com/photo/8441839/
+- img/blocks-play.jpg — kids enjoying playtime with toys and blocks in a bright
+  kindergarten classroom. Photographer: krukphoto.com. Source:
+  https://www.pexels.com/photo/8612970/
+- img/painted-hands.jpg — a joyful child with painted hands in a vibrant art class.
+  Photographer: Barbara Bird. Source: https://www.pexels.com/photo/30594012/
+- img/clay-table.jpg — kids at a preschool table playing with colorful clay.
+  Photographer: Vadim Mazko. Source: https://www.pexels.com/photo/8422170/
+- img/bubbles-play.jpg — children blowing and chasing soap bubbles in an indoor
+  play area. Photographer: cottonbro. Source:
+  https://www.pexels.com/photo/15214812/
+
+No illustrations, no SVG/CSS artwork anywhere on this site.

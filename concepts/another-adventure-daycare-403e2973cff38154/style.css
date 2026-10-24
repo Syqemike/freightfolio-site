@@ -1,0 +1,164 @@
+/* Another Adventure Daycare: design preview concept
+   Palette: deep teal #0f766e · warm orange #f59e0b · cream #fffbeb · deep navy #123240
+   Type: Bree Serif (headings) · Nunito (body) */
+:root{
+  --teal:#0f766e; --teal-deep:#0b5a55; --orange:#f59e0b; --orange-soft:#fde9c8;
+  --cream:#fffbeb; --navy:#123240; --ink:#1f2937; --paper:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);
+  background:var(--cream);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+img{display:block;max-width:100%;height:auto;border-radius:14px}
+
+/* ---------- top utility bar + disclosure ---------- */
+.util{background:var(--navy);color:#e8f1f0;font-size:13.5px}
+.util .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.util a{color:#ffd88a;text-decoration:none;font-weight:700}
+.util a:hover{text-decoration:underline}
+.disclosure{background:var(--orange-soft);color:#7c4a03;font-size:12.5px;letter-spacing:.06em;
+  text-transform:uppercase;text-align:center;padding:7px 12px;font-weight:700}
+
+/* ---------- header ---------- */
+.mast{background:var(--cream);border-bottom:3px solid var(--teal)}
+.mast .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand-mark{width:54px;height:54px;border-radius:50%;background:var(--teal);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-family:'Bree Serif',Georgia,serif;
+  font-size:26px;flex:none;box-shadow:0 3px 0 var(--orange)}
+.wordmark{font-family:'Bree Serif',Georgia,serif;font-size:27px;line-height:1.1;color:var(--navy)}
+.wordmark em{font-style:normal;color:var(--teal)}
+.tagline{font-size:13px;color:#5b6b76;letter-spacing:.04em}
+.mainnav{display:flex;gap:6px;flex-wrap:wrap}
+.mainnav a{text-decoration:none;color:var(--navy);font-weight:800;font-size:15px;
+  padding:9px 16px;border-radius:999px}
+.mainnav a:hover{background:var(--orange-soft)}
+.mainnav a.on{background:var(--teal);color:#fff}
+
+/* ---------- hero (home): big photo with overlapping title panel ---------- */
+.hero{position:relative;background:var(--navy);overflow:hidden}
+.hero .photo{position:absolute;inset:0}
+.hero .photo img{width:100%;height:100%;object-fit:cover;border-radius:0;opacity:.55}
+.hero .photo::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(18,50,64,.92) 34%,rgba(18,50,64,.25) 70%,rgba(18,50,64,.05) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-top:92px;padding-bottom:92px;max-width:1140px}
+.kicker{display:inline-block;background:var(--orange);color:var(--navy);font-weight:800;font-size:13px;
+  letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-family:'Bree Serif',Georgia,serif;font-size:clamp(40px,5.6vw,68px);line-height:1.08;
+  color:#fff;max-width:620px;margin-bottom:18px}
+.hero h1 .o{color:var(--orange)}
+.hero p.lede{color:#eef6f5;font-size:19px;max-width:600px;margin-bottom:28px}
+.btn{display:inline-block;background:var(--orange);color:var(--navy);font-weight:800;text-decoration:none;
+  padding:14px 28px;border-radius:999px;font-size:17px;box-shadow:0 4px 0 rgba(0,0,0,.18)}
+.btn:hover{background:#fbbf24}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px #fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.rating-strip{margin-top:26px;color:#ffd88a;font-weight:700;font-size:15px}
+.rating-strip small{color:#cfe0de;font-weight:400}
+
+/* ---------- generic sections ---------- */
+section{padding:70px 0}
+.sec-head{max-width:760px;margin-bottom:38px}
+.step-tag{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.sec-head .step-tag{margin-bottom:10px}
+h2{font-family:'Bree Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.15;color:var(--navy);margin-bottom:14px}
+h3{font-family:'Bree Serif',Georgia,serif;font-size:23px;color:var(--navy);margin-bottom:8px}
+.sec-head p{font-size:18px;color:#44565f}
+
+/* ---------- journey trail (home) ---------- */
+.trail{list-style:none;position:relative;margin-top:8px}
+.trail::before{content:"";position:absolute;left:23px;top:8px;bottom:8px;width:4px;border-radius:4px;
+  background:repeating-linear-gradient(var(--orange) 0 12px,transparent 12px 24px)}
+.trail li{position:relative;padding:6px 0 34px 74px}
+.trail li:last-child{padding-bottom:0}
+.trail .num{position:absolute;left:0;top:0;width:50px;height:50px;border-radius:50%;background:var(--teal);
+  color:#fff;font-family:'Bree Serif',Georgia,serif;font-size:21px;display:flex;align-items:center;
+  justify-content:center;box-shadow:0 0 0 6px var(--cream),0 0 0 8px var(--teal)}
+.trail h3{margin-bottom:6px}
+.trail p{max-width:640px;color:#44565f}
+
+/* ---------- feature band (HighScope) ---------- */
+.band{background:var(--teal);color:#f2faf9;border-radius:22px;padding:54px 48px;margin:0 24px}
+.band .wrap{padding:0}
+.band h2{color:#fff}
+.band p.lead{font-size:18.5px;max-width:760px;margin-bottom:30px}
+.band-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px}
+.band-grid .cell{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);
+  border-radius:14px;padding:22px}
+.band-grid h3{color:var(--orange);font-size:20px}
+.band-grid p{font-size:15.5px;color:#e7f3f2}
+
+/* ---------- two-up photo/text rows ---------- */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.duo.flip .txt{order:-1}
+.duo img{box-shadow:0 18px 40px rgba(18,50,64,.16)}
+.duo .txt p{margin-bottom:14px;color:#44565f}
+figcaption{font-size:13.5px;color:#6b7c86;margin-top:10px;font-style:italic}
+
+/* ---------- photo strip ---------- */
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.strip figure img{height:250px;width:100%;object-fit:cover}
+
+/* ---------- callout boxes ---------- */
+.callouts{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.callout{background:#fff;border:2px solid var(--orange-soft);border-left:8px solid var(--orange);
+  border-radius:14px;padding:28px}
+.callout h3{margin-bottom:8px}
+.callout p{color:#44565f;margin-bottom:16px}
+.linklike{font-weight:800;color:var(--teal);text-decoration:none}
+.linklike:hover{text-decoration:underline}
+
+/* ---------- visit page facts ---------- */
+.factgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.fact{background:#fff;border-radius:14px;padding:26px;border-top:6px solid var(--teal);
+  box-shadow:0 10px 28px rgba(18,50,64,.08)}
+.fact h3{font-size:19px;margin-bottom:6px}
+.fact p{color:#44565f}
+.fact a{color:var(--teal);font-weight:800;text-decoration:none}
+.fact a:hover{text-decoration:underline}
+.hours-table{width:100%;max-width:520px;border-collapse:collapse;background:#fff;border-radius:14px;
+  overflow:hidden;box-shadow:0 10px 28px rgba(18,50,64,.08)}
+.hours-table th,.hours-table td{text-align:left;padding:15px 22px}
+.hours-table th{background:var(--navy);color:#fff;font-family:'Bree Serif',Georgia,serif;
+  font-weight:400;font-size:19px}
+.hours-table td{border-top:1px solid #e8e2d4}
+.hours-table tr td:first-child{font-weight:800;color:var(--navy)}
+
+/* ---------- full-bleed photo band ---------- */
+.photoband{position:relative;padding:0;margin:70px 0}
+.photoband img{width:100%;height:420px;object-fit:cover;border-radius:0}
+.photoband .cap{position:absolute;left:0;right:0;bottom:0;background:rgba(18,50,64,.78);color:#fff;
+  padding:12px 24px;font-size:14px;font-style:italic}
+
+/* ---------- CTA footer band ---------- */
+.cta-band{background:var(--navy);color:#eef6f5;text-align:center;padding:64px 24px;border-radius:22px;margin:0 24px}
+.cta-band h2{color:#fff;margin-bottom:10px}
+.cta-band p{max-width:620px;margin:0 auto 26px;color:#cfe0de}
+
+/* ---------- footer ---------- */
+footer{background:var(--navy);color:#b9cdd2;padding:44px 0 30px;margin-top:70px;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer a{color:#ffd88a;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.fine{width:100%;font-size:13px;color:#8ba3ab;border-top:1px solid rgba(255,255,255,.14);padding-top:18px;margin-top:8px}
+
+/* ---------- inner page hero ---------- */
+.pagehero{background:var(--teal-deep);color:#fff;padding:64px 0}
+.pagehero h1{font-family:'Bree Serif',Georgia,serif;font-size:clamp(34px,4.4vw,52px);margin-bottom:12px;color:#fff}
+.pagehero p{max-width:680px;color:#d9ecea;font-size:18.5px}
+
+/* ---------- responsive ---------- */
+@media (max-width:860px){
+  .duo{grid-template-columns:1fr;gap:26px}
+  .duo.flip .txt{order:0}
+  .strip{grid-template-columns:1fr}
+  .strip figure img{height:230px}
+  .callouts{grid-template-columns:1fr}
+  .band{padding:40px 28px;margin:0 12px}
+  .cta-band{margin:0 12px}
+  .hero .wrap{padding-top:64px;padding-bottom:64px}
+  .photoband img{height:280px}
+}

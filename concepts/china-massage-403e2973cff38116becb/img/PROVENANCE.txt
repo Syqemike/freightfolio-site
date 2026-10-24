@@ -1,0 +1,19 @@
+Photo provenance — China Massage concept site (batch-36, 2026-10-24)
+Business: China Massage, 1020 N Elm Pl, Broken Arrow, OK.
+
+All 4 photos are REAL photos of the actual Broken Arrow business, provided by the
+shift lead from the business's official Facebook page
+(https://www.facebook.com/ChinaMassageOK). JPEG, max edge 1164px, each under 100 KB.
+
+- img/treatment-room.jpg (720x449, 38 KB) — the treatment room: two massage tables
+  with rose petals and warm sconce lighting.
+- img/couples-room.jpg (1164x873, 97 KB) — the couples massage room.
+- img/treatment-hall.jpg (831x786, 27 KB) — the large treatment area with rows of
+  massage tables.
+- img/foot-massage.jpg (800x800, 46 KB) — the foot-massage recliner chairs.
+
+Captions on the site do not carry "Stock photo" labels because these are real
+photos of the actual business. No illustrations, no SVG/CSS artwork anywhere.
+
+Note: same-named massage businesses in Roland OK and Durant OK are different
+businesses; the photos and facts here are the Broken Arrow location only.

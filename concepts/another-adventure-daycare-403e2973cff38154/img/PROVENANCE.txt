@@ -1,0 +1,27 @@
+PHOTO PROVENANCE — Another Adventure Daycare concept site
+concept slug: another-adventure-daycare-403e2973cff38154
+
+REAL BUSINESS PHOTOS (3)
+These were provided in the concept worktree and came from the business's own
+Facebook page. They are used with their original captions; they have NOT been
+altered beyond compression/resizing.
+- img/classroom.jpg — Real photo: the center's classroom, tables and chairs set
+  up under a paper "WELCOME" sign. Source: business Facebook page (posted
+  October 2025). Resized to max 1600px long edge and recompressed.
+- img/bus.jpg — Real photo: the center's branded daycare bus parked outside the
+  building under the yellow awning. Source: business Facebook page (posted
+  February 2025). Recompressed, size unchanged.
+- img/playground.jpg — Real photo: the center's outdoor playground with slides
+  and a fenced yard. Source: business Facebook page. Recompressed, size unchanged.
+
+STOCK PHOTO (1) — clearly labeled "Stock photo" wherever it appears
+- img/stock-classroom.jpg — Photo by Artem Podrez (@artempodrez on Pexels).
+  Page URL: https://www.pexels.com/photo/8088086/
+  Direct file: https://images.pexels.com/photos/8088086/pexels-photo-8088086.jpeg
+  License: Pexels License (free to use, no attribution required). Attribution
+  given voluntarily. Resized to max 1600px long edge and recompressed.
+  Description: four young children standing in a bright classroom with toys and
+  a chalkboard behind them.
+
+NO other-business photos and NO generated/concept-art illustrations are used
+anywhere on this site.

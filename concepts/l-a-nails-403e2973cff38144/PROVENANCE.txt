@@ -1,0 +1,32 @@
+PROVENANCE.txt - L a Nails concept site (stock fallback)
+====================================================
+All photos are stock photos from Pexels, used under the Pexels License
+(free to use for commercial purposes, no attribution required; photographer
+credit is given below voluntarily). Every caption on the site is labeled
+"Stock photo: ..." as required. No real photos of the business exist, so no
+business photos are used.
+
+1. img/hero-nude.jpg
+   Source: https://www.pexels.com/photo/10182680/
+   Photographer: Ron Lach (@ron-lach)
+   License: Pexels License
+
+2. img/nail-art.jpg
+   Source: https://www.pexels.com/photo/4965824/
+   Photographer: Cottonbro Studio (@cottonbro)
+   License: Pexels License
+
+3. img/red-nails.jpg
+   Source: https://www.pexels.com/photo/9393756/
+   Photographer: Pexels contributor (@pexels-user-101154924)
+   License: Pexels License
+
+4. img/pedicure-care.jpg
+   Source: https://www.pexels.com/photo/17056222/
+   Photographer: Andrea Mosti (@andreamostiphotography)
+   License: Pexels License
+
+5. img/cozy-manicure.jpg
+   Source: https://www.pexels.com/photo/3557600/
+   Photographer: Karolina Kpaukshtite (@kpaukshtite)
+   License: Pexels License
