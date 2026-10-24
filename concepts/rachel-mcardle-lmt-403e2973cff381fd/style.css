@@ -1,0 +1,14 @@
+:root{--ink:#2c332f;--paper:#fbfaf6;--sage:#5f7a68;--line:#ddd8cc}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,sans-serif;line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}.disclosure{background:#2c332f;color:#fbfaf6;text-align:center;font-size:13px;letter-spacing:.08em;padding:8px}
+.mast{padding:28px 0 14px;border-bottom:1px solid var(--line)}.word{font-family:'EB Garamond',serif;font-size:46px}.word em{color:var(--sage);font-style:normal}
+.sub{color:#667065;letter-spacing:.06em}.mainnav{margin-top:14px;display:flex;gap:22px}.mainnav a{color:var(--ink);text-decoration:none;font-weight:600}.mainnav a.on{color:var(--sage);border-bottom:2px solid var(--sage)}
+.hero{padding:34px 0}.hero img,.gal img{width:100%;height:auto;display:block;border-radius:4px}.hero .cap{font-size:13px;color:#667065;margin-top:6px}
+.kicker{color:var(--sage);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}h1{font-family:'EB Garamond',serif;font-size:48px;line-height:1.1;margin:10px 0}
+.lede{font-size:18px;max-width:680px}.btn{display:inline-block;background:var(--sage);color:#fff;padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:700;margin-right:10px}.btn.ghost{background:transparent;color:var(--sage);border:2px solid var(--sage)}
+.rating{padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.rating .stars{color:var(--sage);letter-spacing:2px}
+.ed{padding:34px 0}.ed h2,.gal h2,.svc h2{font-family:'EB Garamond',serif;font-size:34px}.svc{padding:26px 0}.svc ul{list-style:none;padding:0}.svc li{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:230px 1fr;gap:18px}.svc li b{font-family:'EB Garamond',serif;font-size:20px}
+.gal{padding:10px 0 34px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid figure{margin:0}.grid figcaption{font-size:13px;color:#667065;margin-top:6px}
+.visitbox{border:1px solid var(--line);border-left:6px solid var(--sage);padding:20px 24px;margin:26px 0;background:#fff}
+footer{border-top:1px solid var(--line);padding:22px 0 34px}footer .fine{font-size:13px;color:#667065}
+@media(max-width:700px){.grid,.svc li{grid-template-columns:1fr}h1{font-size:36px}}

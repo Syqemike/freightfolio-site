@@ -1,0 +1,16 @@
+:root{--ink:#2b2320;--paper:#faf6f1;--terra:#b4562f;--dark:#2b2320;--line:#e0d4c6}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,sans-serif;line-height:1.6}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}.disclosure{background:#2b2320;color:#faf6f1;text-align:center;font-size:13px;letter-spacing:.08em;padding:8px}
+.mast{padding:26px 0 14px}.word{font-family:'Cormorant Garamond',serif;font-size:46px;line-height:1}.word em{color:var(--terra);font-style:normal}
+.sub{color:#7a6a5e;letter-spacing:.06em}.mainnav{margin-top:14px;display:flex;gap:22px}.mainnav a{color:var(--ink);text-decoration:none;font-weight:700}.mainnav a.on{color:var(--terra);border-bottom:2px solid var(--terra)}
+.hero{background:var(--dark);color:#faf6f1;padding:34px 0}.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}.hero img,.gal img{width:100%;height:auto;display:block;border-radius:6px}
+.kicker{color:#e8a87c;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}h1{font-family:'Cormorant Garamond',serif;font-size:50px;line-height:1.05;margin:10px 0}
+.lede{font-size:18px}.btn{display:inline-block;background:var(--terra);color:#fff;padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:700;margin-right:10px}.btn.ghost{background:transparent;color:#fff;border:2px solid #fff}
+.rating{padding:12px 0;border-bottom:1px solid var(--line)}.rating .stars{color:var(--terra);letter-spacing:2px}
+.ed{padding:34px 0}.ed h2,.gal h2,.svc h2{font-family:'Cormorant Garamond',serif;font-size:34px}.svc{padding:26px 0}.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{border:1px solid var(--line);border-radius:6px;padding:20px;background:#fff}.card h3{margin:0 0 6px;font-family:'Cormorant Garamond',serif;font-size:24px}
+.gal{padding:10px 0 34px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid figure{margin:0}.grid figcaption{font-size:13px;color:#7a6a5e;margin-top:6px}
+.visitbox{border:1px solid var(--line);border-top:6px solid var(--terra);padding:20px 24px;margin:26px 0;background:#fff}
+footer{border-top:1px solid var(--line);padding:22px 0 34px}footer .fine{font-size:13px;color:#7a6a5e}
+@media(max-width:700px){.hero .wrap{grid-template-columns:1fr}.grid,.cards{grid-template-columns:1fr}h1{font-size:38px}}
+
+.cap{font-size:13px;color:#e8d9c9;margin-top:6px}

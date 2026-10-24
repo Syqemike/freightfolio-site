@@ -1,0 +1,14 @@
+:root{--ink:#22333a;--sand:#f6efe3;--teal:#1f6f6a;--coral:#d97a5b;--line:#ddd2bd}
+*{box-sizing:border-box}body{margin:0;background:var(--sand);color:var(--ink);font-family:Karla,sans-serif;line-height:1.6}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}.disclosure{background:#22333a;color:#f6efe3;text-align:center;font-size:13px;letter-spacing:.08em;padding:8px}
+.mast{padding:26px 0 14px;border-bottom:1px solid var(--line)}.word{font-family:'Libre Caslon Text',serif;font-size:44px}.word em{color:var(--teal);font-style:normal}
+.sub{color:#5c6f72;letter-spacing:.06em}.mainnav{margin-top:14px;display:flex;gap:22px}.mainnav a{color:var(--ink);text-decoration:none;font-weight:700}.mainnav a.on{color:var(--teal);border-bottom:2px solid var(--teal)}
+.hero{padding:34px 0}.hero .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:28px;align-items:center}.hero img,.gal img{width:100%;height:auto;display:block;border-radius:10px}
+.kicker{color:var(--coral);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}h1{font-family:'Libre Caslon Text',serif;font-size:46px;line-height:1.1;margin:10px 0}
+.lede{font-size:18px}.btn{display:inline-block;background:var(--teal);color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:700;margin-right:10px}.btn.ghost{background:transparent;color:var(--teal);border:2px solid var(--teal)}
+.rating{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0}.rating .stars{color:var(--coral);letter-spacing:2px}
+.ed{padding:34px 0}.ed h2,.gal h2,.svc h2{font-family:'Libre Caslon Text',serif;font-size:32px}.svc{padding:26px 0}.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}.card h3{margin:0 0 6px;font-family:'Libre Caslon Text',serif}
+.gal{padding:10px 0 34px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid figure{margin:0}.grid figcaption{font-size:13px;color:#5c6f72;margin-top:6px}
+.visitbox{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 24px;margin:26px 0}
+footer{border-top:1px solid var(--line);padding:22px 0 34px}footer .fine{font-size:13px;color:#5c6f72}
+@media(max-width:700px){.hero .wrap{grid-template-columns:1fr}.grid,.cards{grid-template-columns:1fr}h1{font-size:34px}}
