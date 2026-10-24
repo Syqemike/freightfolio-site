@@ -1,0 +1,15 @@
+
+:root{--ink:#2e2620;--paper:#faf3e7;--terra:#a84e2a;--green:#2f5d3a;--line:#e0cdb2}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Work Sans',sans-serif;line-height:1.6}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}.disclosure{background:#2e2620;color:#faf3e7;text-align:center;font-size:13px;letter-spacing:.08em;padding:8px}
+.mast{padding:26px 0 14px;border-bottom:3px solid var(--terra)}.word{font-family:'DM Serif Display',serif;font-size:46px}.word em{color:var(--terra);font-style:normal}
+.sub{color:#6a5a48;letter-spacing:.05em}.mainnav{margin-top:14px;display:flex;gap:22px}.mainnav a{color:var(--ink);text-decoration:none;font-weight:600}.mainnav a.on{color:var(--terra);border-bottom:2px solid var(--terra)}
+.hero{padding:34px 0}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}.hero img,.gal img{width:100%;height:auto;display:block;border-radius:6px}
+.kicker{color:var(--terra);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}h1{font-family:'DM Serif Display',serif;font-size:46px;line-height:1.1;margin:10px 0}
+.lede{font-size:18px}.btn{display:inline-block;background:var(--terra);color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:700;margin-right:10px}.btn.ghost{background:transparent;color:var(--terra);border:2px solid var(--terra)}
+.rating{background:var(--terra);color:#fff;padding:12px 0}.rating .stars{color:#f2d492;letter-spacing:2px}
+.ed{padding:34px 0}.ed h2,.gal h2,.svc h2{font-family:'DM Serif Display',serif;font-size:32px}.svc{padding:26px 0}.svc ul{list-style:none;padding:0}.svc li{padding:12px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:220px 1fr;gap:18px}.svc li b{font-family:'DM Serif Display',serif;font-size:19px}
+.gal{padding:10px 0 34px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid figure{margin:0}.grid img{aspect-ratio:4/3;object-fit:cover}.grid figcaption{font-size:13px;color:#6a5a48;margin-top:6px}
+.visitbox{background:#fff;border:1px solid var(--line);border-left:6px solid var(--terra);padding:20px 24px;margin:26px 0}
+footer{border-top:3px solid var(--terra);padding:22px 0 34px}footer .fine{font-size:13px;color:#6a5a48}
+@media(max-width:700px){.hero-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.svc li{grid-template-columns:1fr}h1{font-size:34px}}
