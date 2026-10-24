@@ -1,0 +1,15 @@
+:root{--ink:#eef1f5;--paper:#101828;--gold:#d9a441;--line:#2a3a52}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,sans-serif;line-height:1.6}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}.disclosure{background:#000;color:#eef1f5;text-align:center;font-size:13px;letter-spacing:.08em;padding:8px}
+.mast{padding:26px 0 14px;border-bottom:1px solid var(--line)}.word{font-family:'Playfair Display',serif;font-size:42px}.word em{color:var(--gold);font-style:normal}
+.sub{color:#9aa8bd;letter-spacing:.06em}.mainnav{margin-top:14px;display:flex;gap:22px}.mainnav a{color:#eef1f5;text-decoration:none;font-weight:600}.mainnav a.on{color:var(--gold);border-bottom:2px solid var(--gold)}
+.hero{padding:30px 0}.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center}.hero img,.gal img{width:100%;height:auto;display:block;border-radius:8px}
+.kicker{color:var(--gold);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}h1{font-family:'Playfair Display',serif;font-size:44px;line-height:1.1;margin:10px 0}
+.lede{font-size:18px}.btn{display:inline-block;background:var(--gold);color:#101828;padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:700;margin-right:10px}.btn.ghost{background:transparent;color:#eef1f5;border:2px solid #eef1f5}
+.rating{padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.rating .stars{color:var(--gold);letter-spacing:2px}
+.ed{padding:30px 0}.ed h2,.gal h2,.svc h2{font-family:'Playfair Display',serif;font-size:32px}.svc{padding:26px 0}.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{border:1px solid var(--line);border-radius:8px;padding:20px}.card h3{margin:0 0 6px;font-family:'Playfair Display',serif}
+.gal{padding:10px 0 34px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid figure{margin:0}.grid figcaption,.cap{font-size:13px;color:#9aa8bd;margin-top:6px}
+.visitbox{border:1px solid var(--gold);border-radius:8px;padding:20px 24px;margin:26px 0}
+footer{border-top:1px solid var(--line);padding:22px 0 34px}footer .fine{font-size:13px;color:#9aa8bd}
+@media(max-width:700px){.hero .wrap,.cards,.grid{grid-template-columns:1fr}h1{font-size:34px}}
+.ed a, footer a{color:#f2c96b}

@@ -1,0 +1,28 @@
+Viet Orleans Bistro website concept - photo provenance
+Slug: viet-orleans-bistro-403e2973cff3813c
+
+Pexels stock photos (Pexels License, free to use) sourced via live-browser Pexels task 2026-10-24; per-file sources in website-dev-shift-2026-10-24-0358-images.json. All captions say Stock photo. Real business photos exist on the business Facebook page but were not retrievable in this builder session.
+
+Per-file sources (from images.json):
+sushi.jpg: viet-sushi.jpg
+pho.jpg: viet-pho.jpg
+pho-herbs.jpg: viet-pho-herbs.jpg
+sushi-salmon.jpg: viet-sushi-salmon.jpg
+sushi-sauce.jpg: viet-sushi-sauce.jpg
+pho-top.jpg: viet-pho-top.jpg
+
+Files and sizes (bytes):
+sushi.jpg: 57120
+pho.jpg: 30115
+pho-herbs.jpg: 153756
+sushi-salmon.jpg: 34018
+sushi-sauce.jpg: 29586
+pho-top.jpg: 139016
+
+Pexels sources (Pexels License, free to use; collected via live Pexels browser task 2026-10-24):
+- sushi.jpg: Assorted sushi rolls. Stock photo. Photographer: Natan Machado Fotografia Gastronômica. Page: https://www.pexels.com/photo/close-up-shot-of-hot-roll-sushis-with-icing-on-top-11064616/
+- pho.jpg: A bowl of pho. Stock photo. Photographer: RDNE Stock project. Page: https://www.pexels.com/photo/a-bowl-of-pho-on-the-table-6646351/
+- pho-herbs.jpg: Pho with fresh herbs. Stock photo. Photographer: Markus Winkler. Page: https://www.pexels.com/photo/brown-wooden-chopsticks-on-top-of-white-ceramic-bowl-3903586/
+- sushi-salmon.jpg: Sushi rolls with salmon and avocado. Stock photo. Photographer: Anhelina Vasylyk. Page: https://www.pexels.com/photo/close-up-of-fresh-sushi-rolls-on-elegant-plate-34023587/
+- sushi-sauce.jpg: Sushi rolls with salmon. Stock photo. Photographer: Anhelina Vasylyk. Page: https://www.pexels.com/photo/close-up-of-delicious-sushi-rolls-on-plate-34303216/
+- pho-top.jpg: Pho noodle soup from above. Stock photo. Photographer: RDNE Stock project. Page: https://www.pexels.com/photo/cooked-food-in-the-bowl-6646022/

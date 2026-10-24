@@ -1,0 +1,14 @@
+:root{--ink:#33291f;--paper:#fdf8ef;--terra:#b4552d;--sage:#5f7355;--line:#e2d5bd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,sans-serif;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}.disclosure{background:#33291f;color:#fdf8ef;text-align:center;font-size:13px;letter-spacing:.08em;padding:8px}
+.mast{padding:26px 0 14px}.word{font-family:Lora,serif;font-size:44px}.word em{color:var(--terra);font-style:normal}
+.sub{color:#7a6a55;letter-spacing:.06em}.mainnav{margin-top:14px;display:flex;gap:22px}.mainnav a{color:var(--ink);text-decoration:none;font-weight:600}.mainnav a.on{color:var(--terra);border-bottom:2px solid var(--terra)}
+.hero{padding:30px 0;border-bottom:1px solid var(--line)}.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center}.hero img,.gal img{width:100%;height:auto;display:block;border-radius:8px}
+.kicker{color:var(--terra);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}h1{font-family:Lora,serif;font-size:44px;line-height:1.1;margin:10px 0}
+.lede{font-size:18px}.btn{display:inline-block;background:var(--terra);color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:700;margin-right:10px}.btn.ghost{background:transparent;color:var(--terra);border:2px solid var(--terra)}
+.closed{background:var(--sage);color:#fff;padding:12px 0}.rating{padding:12px 0;border-bottom:1px solid var(--line)}.rating .stars{color:var(--terra);letter-spacing:2px}
+.ed{padding:30px 0}.ed h2,.gal h2,.svc h2{font-family:Lora,serif;font-size:32px}.svc{padding:26px 0}.menu{display:grid;grid-template-columns:1fr 1fr;gap:26px}.menu h3{font-family:Lora,serif;border-bottom:2px solid var(--sage);padding-bottom:6px}.menu ul{padding-left:20px}
+.gal{padding:10px 0 34px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid figure{margin:0}.grid figcaption,.cap{font-size:13px;color:#7a6a55;margin-top:6px}
+.visitbox{background:#fff;border:1px solid var(--line);border-radius:8px;padding:20px 24px;margin:26px 0}
+footer{border-top:1px solid var(--line);padding:22px 0 34px}footer .fine{font-size:13px;color:#7a6a55}
+@media(max-width:700px){.hero .wrap,.menu,.grid{grid-template-columns:1fr}h1{font-size:34px}}

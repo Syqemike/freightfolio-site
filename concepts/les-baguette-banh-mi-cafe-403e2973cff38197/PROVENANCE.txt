@@ -1,0 +1,19 @@
+Le's Baguette Banh Mi Cafe website concept - photo provenance
+Slug: les-baguette-banh-mi-cafe-403e2973cff38197
+
+Pexels stock photos (Pexels License, free to use) sourced via live-browser Pexels task 2026-10-24; per-file sources in website-dev-shift-2026-10-24-0358-images.json. All captions say Stock photo.
+
+Per-file sources (from images.json):
+banhmi.jpg: les-banhmi.jpg
+banhmi-veg.jpg: les-banhmi-veg.jpg
+banhmi-fresh.jpg: les-banhmi-fresh.jpg
+
+Files and sizes (bytes):
+banhmi.jpg: 69399
+banhmi-veg.jpg: 98361
+banhmi-fresh.jpg: 131258
+
+Pexels sources (Pexels License, free to use; collected via live Pexels browser task 2026-10-24):
+- banhmi.jpg: A traditional banh mi. Stock photo. Photographer: Hậu Mai. Page: https://www.pexels.com/photo/traditional-vietnamese-banh-mi-on-newspaper-32961651/
+- banhmi-veg.jpg: Banh mi sandwiches with fresh vegetables. Stock photo. Photographer: Phương Khánh. Page: https://www.pexels.com/photo/rolls-with-ham-and-vegetables-17748172/
+- banhmi-fresh.jpg: A banh mi with fresh ingredients. Stock photo. Photographer: Hậu Mai. Page: https://www.pexels.com/photo/delicious-vietnamese-banh-mi-sandwich-on-newspaper-32961654/

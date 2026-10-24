@@ -1,0 +1,14 @@
+:root{--ink:#263238;--paper:#fffaf3;--coral:#e2574c;--navy:#1f3a5f;--line:#ecd9c8}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Nunito Sans',sans-serif;line-height:1.6}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}.disclosure{background:#263238;color:#fffaf3;text-align:center;font-size:13px;letter-spacing:.08em;padding:8px}
+.mast{padding:26px 0 14px;border-bottom:4px solid var(--coral)}.word{font-family:'Baloo 2',cursive;font-size:46px;line-height:1}.word em{color:var(--coral);font-style:normal}
+.sub{color:#6a7a80;letter-spacing:.06em}.mainnav{margin-top:14px;display:flex;gap:22px}.mainnav a{color:var(--ink);text-decoration:none;font-weight:700}.mainnav a.on{color:var(--coral);border-bottom:2px solid var(--coral)}
+.hero{padding:30px 0}.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}.hero img,.gal img{width:100%;height:auto;display:block;border-radius:12px}
+.kicker{color:var(--coral);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}h1{font-family:'Baloo 2',cursive;font-size:46px;line-height:1.05;margin:10px 0}
+.lede{font-size:18px}.btn{display:inline-block;background:var(--navy);color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:700;margin-right:10px}.btn.ghost{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.rating{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0}.rating .stars{color:var(--coral);letter-spacing:2px}
+.ed{padding:30px 0}.ed h2,.gal h2,.svc h2{font-family:'Baloo 2',cursive;font-size:34px}.svc{padding:26px 0}
+.gal{padding:10px 0 34px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid figure{margin:0}.grid figcaption,.cap{font-size:13px;color:#6a7a80;margin-top:6px}
+.visitbox{background:#fff;border:2px solid var(--navy);border-radius:12px;padding:20px 24px;margin:26px 0}
+footer{border-top:4px solid var(--coral);padding:22px 0 34px}footer .fine{font-size:13px;color:#6a7a80}
+@media(max-width:700px){.hero .wrap,.grid{grid-template-columns:1fr}h1{font-size:36px}}

@@ -1,0 +1,19 @@
+Handy Rite website concept - photo provenance
+Slug: handy-rite-403e2973cff3812c
+
+Pexels stock photos (Pexels License, free to use) sourced via live-browser Pexels task 2026-10-24; per-file sources in website-dev-shift-2026-10-24-0358-images.json. All captions say Stock photo. No photo on this site shows a Handy Rite job.
+
+Per-file sources (from images.json):
+saw.jpg: handy-saw.jpg
+workshop.jpg: handy-workshop.jpg
+bench.jpg: handy-bench.jpg
+
+Files and sizes (bytes):
+saw.jpg: 156315
+workshop.jpg: 167904
+bench.jpg: 64871
+
+Pexels sources (Pexels License, free to use; collected via live Pexels browser task 2026-10-24):
+- saw.jpg: Woodworking in a workshop. Stock photo. Photographer: Quintin Gellar. Page: https://www.pexels.com/photo/man-using-table-saw-313776/
+- workshop.jpg: A carpenter at work in a workshop. Stock photo. Photographer: Quintin Gellar. Page: https://www.pexels.com/photo/full-length-of-worker-working-313773/
+- bench.jpg: Shaping wood at a workbench. Stock photo. Photographer: Burst. Page: https://www.pexels.com/photo/man-person-wooden-table-work-374049/

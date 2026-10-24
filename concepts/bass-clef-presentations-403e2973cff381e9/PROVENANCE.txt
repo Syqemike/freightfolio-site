@@ -1,0 +1,19 @@
+Bass Clef Presentations website concept - photo provenance
+Slug: bass-clef-presentations-403e2973cff381e9
+
+Pexels stock photos (Pexels License, free to use) sourced via live-browser Pexels task 2026-10-24; per-file sources in website-dev-shift-2026-10-24-0358-images.json. All captions say Stock photo. No photo on this site shows a Bass Clef event.
+
+Per-file sources (from images.json):
+dj.jpg: bass-dj.jpg
+setup.jpg: bass-dj-setup.jpg
+mixer.jpg: bass-dj-mixer.png
+
+Files and sizes (bytes):
+dj.jpg: 117245
+setup.jpg: 37376
+mixer.jpg: 37403
+
+Pexels sources (Pexels License, free to use; collected via live Pexels browser task 2026-10-24):
+- dj.jpg: A DJ at the turntables. Stock photo. Photographer: João Godoy. Page: https://www.pexels.com/photo/dj-with-his-equipment-18419350/
+- setup.jpg: A DJ setup with turntables and a mixer. Stock photo. Photographer: Tima Miroshnichenko. Page: https://www.pexels.com/photo/black-audio-mixer-on-the-table-5118431/
+- mixer.jpg: A DJ mixer and turntables. Stock photo. Photographer: Christian V. Page: https://www.pexels.com/photo/a-dj-mixer-with-a-black-and-white-photo-27875195/

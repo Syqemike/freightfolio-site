@@ -1,0 +1,19 @@
+Fabulous Feet Dance Studio website concept - photo provenance
+Slug: fabulous-feet-dance-studio-403e2973cff381a5
+
+Pexels stock photos (Pexels License, free to use) sourced via live-browser Pexels task 2026-10-24; per-file sources in website-dev-shift-2026-10-24-0358-images.json. All captions say Stock photo. No photo on this site shows this studio, its students or its teachers: the studio publishes no photos publicly.
+
+Per-file sources (from images.json):
+ballet.jpg: feet-ballet.jpg
+poses.jpg: feet-ballet-poses.jpg
+barre.jpg: feet-ballet-barre.jpg
+
+Files and sizes (bytes):
+ballet.jpg: 58699
+poses.jpg: 47362
+barre.jpg: 57273
+
+Pexels sources (Pexels License, free to use; collected via live Pexels browser task 2026-10-24):
+- ballet.jpg: Young dancers in ballet class. Stock photo. Photographer: Gustavo Fring. Page: https://www.pexels.com/photo/children-during-ballet-classes-5635577/
+- poses.jpg: Ballet dancers practicing poses. Stock photo. Photographer: Gustavo Fring. Page: https://www.pexels.com/photo/children-in-dancing-clothes-5635604/
+- barre.jpg: Young dancers at the barre. Stock photo. Photographer: Gustavo Fring. Page: https://www.pexels.com/photo/little-girls-on-a-ballet-class-5635564/
