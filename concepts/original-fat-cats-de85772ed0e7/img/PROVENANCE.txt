@@ -1,39 +1,61 @@
 PHOTO PROVENANCE — Original Fat Cats concept site (build original-fat-cats-de85772ed0e7)
-Build date: 2026-10-23
+Rebuilt: 2026-10-23 (rebuild shift run33)
 
-REAL PHOTOS: none. A targeted image search for this business ("Original Fat Cats Fort Lauderdale bar", "Original Fat Cats Himmarshee") returned only unrelated results (Chicago's Fat Cat, NYC's Fat Black Pussycat, cat photos, unverifiable Google place thumbnails). The business's only web presence is its Facebook page, which could not be scraped in this environment. Per the design brief fallback, ALL photos below are STOCK from Pexels, and every on-page caption includes the words "Stock photo".
+REAL PHOTOS (6 of 7 images swapped from stock to real, each visually verified
+against its caption by the Rebuild Agent before deploy):
 
-1. img/hero-bar.jpg — STOCK photo
-   Source: https://images.pexels.com/photos/1872888/pexels-photo-1872888.jpeg
-   Found via: https://www.pexels.com/search/dive-bar-interior/ (alt: "Warm and inviting pub interior featuring a wooden bar and hanging wine glasses")
-   Depicts: a warm pub interior with a wooden bar and hanging wine glasses. Not the actual business.
+1. img/hero-bar.jpg — REAL
+   Source: guest photo on the business's Yelp listing (yelp.com/biz/g9gU3-Y_bF_ZSEMzlDIugg,
+   Yelp listing for Original Fat Cat's, 320 SW 2nd St Fort Lauderdale, 4.2/257 reviews,
+   owner-claimed listing, verified same business by address + phone (954) 467-5867).
+   Depicts: a busy night inside the bar, skate-deck wall visible. Verified on screen.
+   Caption on site: "Real photo: the room on a busy night".
 
-2. img/live-band.jpg — STOCK photo
-   Source: https://images.pexels.com/photos/16118368/pexels-photo-16118368.jpeg
-   Found via: https://www.pexels.com/search/live-rock-band-concert/ (alt: "Live rock band performing on stage with vibrant red lighting")
-   Depicts: a rock band playing on stage under red lights with a crowd. Not this bar's actual stage.
+2. img/live-band.jpg — REAL
+   Source: guest photo on the business's Yelp listing (same as above).
+   Depicts: the bar's live stage under the skate-deck wall, "ORIGINAL FAT CATS
+   LIVE MUSIC EVERY NIGHT" banner visible. Verified on screen.
+   Caption on site: "Real photo: live on stage".
 
-3. img/beer-taps.jpg — STOCK photo
-   Source: https://images.pexels.com/photos/5530263/pexels-photo-5530263.jpeg
-   Found via: https://www.pexels.com/search/beer-taps-bar/ (alt: "Artistic close-up of beer taps in a moody bar setting, capturing warm lighting and texture")
-   Depicts: a close-up of beer taps in a dim bar. Not the bar's actual taps.
+3. img/beer-taps.jpg — REAL
+   Source: guest photo on the business's Yelp listing (same as above).
+   Depicts: a hand holding a fresh beer in front of the tap wall; "GROWLERS" and
+   "KEG BEER TO GO - 32 OZ" signs visible. Verified on screen.
+   Caption on site: "Real photo: the taps".
 
-4. img/cheesesteak.jpg — STOCK photo
-   Source: https://images.pexels.com/photos/37624172/pexels-photo-37624172.jpeg
-   Found via: https://www.pexels.com/search/philly-cheesesteak-sandwich/ (alt: "A mouthwatering close-up of a cheese steak sub with melted cheese, onions")
-   Depicts: a cheesesteak sub with melted cheese and onions. Not the bar's actual sandwich.
+4. img/night-exterior.jpg — REAL
+   Source: guest photo on the business's Yelp listing (same as above).
+   Depicts: the bar's entrance at night under the lit "ORIGINAL FAT CATS" sign.
+   Verified on screen.
+   Caption on site: "Real photo: after dark".
 
-5. img/burger.jpg — STOCK photo
+5. img/cheesesteak.jpg — REAL (business's own published food photo)
+   Source: the business's delivery-menu listing on BringMeThat
+   (bringmethat.com/t/fl/fort-lauderdale/33312/original-fat-cats), menu photo
+   for the Philly cheesesteak item.
+   Depicts: a cheesesteak sub, cut in half, matching the caption. Verified on screen.
+   Caption on site: "Real photo: the cheesesteak".
+
+6. img/wings.jpg — REAL (business's own published food photo)
+   Source: the business's company page on Eventeny
+   (eventeny.com/company/?c=199032 "Original Fat Cats - Fort Lauderdale").
+   Depicts: buffalo wings with celery and ranch, matching the caption. Verified on screen.
+   Caption on site: "Real photo: bar food".
+
+7. img/burger.jpg — STOCK (labeled on page, acceptable fallback)
    Source: https://images.pexels.com/photos/33858065/pexels-photo-33858065.jpeg
-   Found via: https://www.pexels.com/search/cheeseburger-grill/ (alt: "Mouthwatering cheeseburger with fresh ingredients grilling over open flames")
+   Found via: https://www.pexels.com/search/cheeseburger-grill/
    Depicts: a cheeseburger grilling over open flames. Not the bar's actual burger.
+   No real, verifiable photo of the bar's burger was found on the Yelp gallery
+   (12 photos reviewed), the Facebook page (not scrapeable in this environment),
+   or image search. Caption on site keeps the "Stock photo:" label.
 
-6. img/wings.jpg — STOCK photo
-   Source: https://images.pexels.com/photos/16976648/pexels-photo-16976648.jpeg
-   Found via: https://www.pexels.com/search/chicken-wings-plate/ (alt: "Top view of flavorful spicy chicken wings served on a blue plate")
-   Depicts: a plate of spicy chicken wings. Not the bar's actual wings.
-
-7. img/night-exterior.jpg — STOCK photo
-   Source: https://images.pexels.com/photos/39974053/pexels-photo-39974053.jpeg
-   Found via: https://www.pexels.com/search/bar-night-exterior/ (alt: "A warm and inviting pub exterior at night, showcasing signage and illuminated storefront")
-   Depicts: a pub storefront at night. Not the actual 320 Himmarshee St building.
+METHOD NOTE (evidence of verification attempt): the business's only standalone
+web presence is its public Facebook page (facebook.com/originalfatcats); the
+live-browser FB pull used for Couture Cakes in run31 was not available in this
+run, so real photos were sourced from the verified Yelp listing (same business
+by address + phone, owner-claimed), the Google place photo og image (storefront
+with ORIGINAL FAT CATS signage, verified but not used on the page), and the
+business's own published menu/company photos. Discarded: one Yelp bathroom
+photo (not usable), one Airbnb placeholder illustration. No other business's
+photos were used.
