@@ -1,0 +1,22 @@
+Photo provenance — Arahis Bakery concept site (batch-35, 2026-10-23)
+Business: Arahis Bakery, 745 SW 8th St, Miami, FL 33130.
+
+All 5 photos are STOCK photos (free-license web sources), each clearly labeled
+"Stock photo" in its caption. None depicts the actual Arahis Bakery business.
+Real photos of the business exist publicly (Restaurantji gallery, 51 photos;
+Roadfood captioned photos; Instagram location page), but direct image URLs could
+not be retrieved during this shift after repeated attempts (two browser photo
+tasks returned no results; the Restaurantji gallery is JS-rendered; Roadfood
+text fetch exposed no image URLs). FOLLOW-UP: swap in real business photos when
+retrievable - flagged for the Rebuild Agent or next Website Dev shift.
+
+- img/pastelitos.jpg — guava pastelito on a plate. Source: https://chowhound.com/img/gallery/cuban-foods-to-try-once/pasteles-de-guava-1769784507.jpg (Chowhound editorial photo, via image-search)
+- img/cafecito.jpg — cup of Cuban coffee with coffee beans. Source: https://savvy-planet.com/cdn/shop/articles/cuban_coffee_cubano_cafe_900x.jpg (Savvy Planet blog, via image-search)
+- img/sandwich.jpg — pressed Cuban sandwich cut in half. Source: https://boundedbybuns.s3.amazonaws.com/uploads/2021/08/IMG_1559.jpg (Bounded by Buns food blog, via image-search)
+- img/interior.jpg — fresh bread loaves on bakery shelves. Source: https://static.vecteezy.com/system/resources/thumbnails/048/255/803/small/fresh-bread-displayed-on-shelves-photo.jpeg (Vecteezy free photo, via image-search)
+- img/bakery-case.jpg — coconut pastelitos with cups of Cuban coffee. Source: https://asassyspoon.com/wp-content/uploads/2025/02/pastelitos-de-coco-Cuban-pastries-asassyspoon-7.jpg (A Sassy Spoon food blog, via image-search)
+
+All images verified as real photographs (visually inspected 2026-10-23), JPEG,
+each under 175 KB. No watermarks. No illustrations, no SVG/CSS artwork anywhere
+on this site. An AI-generated-looking Rawpixel storefront image was downloaded
+during research and REJECTED before use (not shipped).
