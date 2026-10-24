@@ -1,22 +1,21 @@
-Photo provenance — Arahis Bakery concept site (batch-35, 2026-10-23)
-Business: Arahis Bakery, 745 SW 8th St, Miami, FL 33130.
+Photo provenance — Arahis Bakery concept site (batch-35, 2026-10-23; photo update 2026-10-24)
+Business: Arahis Bakery (Arahi's Bakery), 745 SW 8th St, Miami, FL 33130.
 
-All 5 photos are STOCK photos (free-license web sources), each clearly labeled
-"Stock photo" in its caption. None depicts the actual Arahis Bakery business.
-Real photos of the business exist publicly (Restaurantji gallery, 51 photos;
-Roadfood captioned photos; Instagram location page), but direct image URLs could
-not be retrieved during this shift after repeated attempts (two browser photo
-tasks returned no results; the Restaurantji gallery is JS-rendered; Roadfood
-text fetch exposed no image URLs). FOLLOW-UP: swap in real business photos when
-retrievable - flagged for the Rebuild Agent or next Website Dev shift.
+6 of 7 photos are REAL photos of the actual business, sourced from the official
+Google Maps listing photos gallery for "Arahi's Bakery" (745 SW 8th St, Miami).
+Each was opened in the Maps photo viewer where the place, reviewer name, and
+capture date were verified (browser photo task, 2026-10-23). Resized to 1400px
+max edge, JPEG, each under 360 KB.
 
-- img/pastelitos.jpg — guava pastelito on a plate. Source: https://chowhound.com/img/gallery/cuban-foods-to-try-once/pasteles-de-guava-1769784507.jpg (Chowhound editorial photo, via image-search)
-- img/cafecito.jpg — cup of Cuban coffee with coffee beans. Source: https://savvy-planet.com/cdn/shop/articles/cuban_coffee_cubano_cafe_900x.jpg (Savvy Planet blog, via image-search)
-- img/sandwich.jpg — pressed Cuban sandwich cut in half. Source: https://boundedbybuns.s3.amazonaws.com/uploads/2021/08/IMG_1559.jpg (Bounded by Buns food blog, via image-search)
-- img/interior.jpg — fresh bread loaves on bakery shelves. Source: https://static.vecteezy.com/system/resources/thumbnails/048/255/803/small/fresh-bread-displayed-on-shelves-photo.jpeg (Vecteezy free photo, via image-search)
-- img/bakery-case.jpg — coconut pastelitos with cups of Cuban coffee. Source: https://asassyspoon.com/wp-content/uploads/2025/02/pastelitos-de-coco-Cuban-pastries-asassyspoon-7.jpg (A Sassy Spoon food blog, via image-search)
+- img/storefront.jpg — the actual Arahis Bakery building: red wall painted with "Arahis BAKERY CAFETERIA RESTAURANT" lettering, purple "Arahis BAKERY" awning, phone 305-854-8000. Photo by reviewer D K, Feb 2024. Source: https://lh3.googleusercontent.com/grass-cs/AABkmLd3EXMbcQJVpnIGWVJ_BejVKO0Ektk_xaa1zkzuplGm5Sd7OY8LnsidxT8W1xD3hHBr1dbOjewpc11WDT31vQ8cNiRJQl-1a9f9zHIRW26HS5WKQWiB5R08dKxE6lh9pSkodDhW (Google Maps listing photo)
+- img/case.jpg — the actual bakery display case packed with pastelitos, cakes, and custards. Photo by Pedro Chavez Montiel, Oct 2026. Source: https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RcWhPhrG9UJLzfBQR78fd73sTh3kPxwowIttr021IkinCMOClXkuezZWYzLDmz2JDlN1eGoQmsxK7TuuxRJzcxs1O2pQ8xgxX_3wgjWCxCC8-vmgfShMyWgXvk_VsU7PDw17cE5CWw4NBb (Google Maps listing photo)
+- img/pastelitos.jpg — a hand holding a golden-brown guava pastelito in a red basket. Dec 2024. Source: https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TvB7dC9eNgt4aqBTNZVw4Ek0jOF_JerWbOp1hoU9ABHQa_EVca1zZX-o7cJe9Jthoy2wSudg3Hb1BhWPnwuCn20vfc5RAr5AwDpO9FT6kLGvaIsCSTCSrNmHjI3KYlTFIDLETh (Google Maps listing photo)
+- img/sandwich.jpg — a pressed Cuban sandwich (ham and cheese) with a cup of frothy cafe con leche in a red basket. Photo by C Ro, Jul 2026. Source: https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtX4HjoKToCYODAE70GHDplPYp_o1GceXw3JHnAM3U_Bwr1wYmE0OrOagkHNzxMiWDj7UFM9npbOGmbkOnKGFVlMRWeq7n9s0Q6AKlPScILCePgrGpUxpAvCs2S54ruKQE-Qa-4d1abJxB (Google Maps listing photo)
+- img/cake.jpg — a two-tier Cinderella birthday cake in the glass display case. Photo by Hector Roman, Nov 2025. Source: https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RfyTt0Ofxu6LrSKkCZGGZN638BAgZn3Ee6yOLb5dwaByUq6UOAq4F2PLbPkhz9IjUoG0uF4rQXQNborz2PiTihhIq-sn-cYQk9CiiKCuhB9k5GauNKzUjpwXJNcf21uqw_rhsc3Vpix0TO=w1600 (Google Maps listing photo)
+- img/dessert.jpg — a meringue-topped dessert slice with a maraschino cherry in a red basket. Oct 2026. Source: https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SrBjpkAkumrYUOFvKjvHz-pFcBwt9QvvrSRsVgmhWw7Nnl0KuJB7ytNdvIbCkxaug7BesgJ_cwR_oGkM2ZP1zXHAIHAj_6p7QIKLWSziC05GBoELrZJvz3GneMwWMLjFftbjoYhV5JtDwV (Google Maps listing photo)
 
-All images verified as real photographs (visually inspected 2026-10-23), JPEG,
-each under 175 KB. No watermarks. No illustrations, no SVG/CSS artwork anywhere
-on this site. An AI-generated-looking Rawpixel storefront image was downloaded
-during research and REJECTED before use (not shipped).
+1 STOCK photo (free-license web source), clearly labeled "Stock photo" in its caption:
+- img/cafecito.jpg — cup of Cuban coffee with coffee beans. Source: https://savvy-planet.com/cdn/shop/articles/cuban_coffee_cubano_cafe_900x.jpg (Savvy Planet blog, via image-search). Kept because no clean real coffee-only photo was available; the real combo photo above covers the sandwich card.
+
+No illustrations, no SVG/CSS artwork anywhere on this site. An AI-generated-looking
+Rawpixel storefront image was downloaded during research and REJECTED before use.
