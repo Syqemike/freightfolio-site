@@ -1,0 +1,5 @@
+Skyline Nail and Spa concept (2026-10-24). All photos are Pexels stock photos reused from the Franklin Nails stock set; none are photos of Skyline Nail and Spa. Every caption says Stock photo.
+- hero.jpg: a manicure in progress (Franklin set, nails.jpg).
+- manicure.jpg: a manicure in progress (Franklin set).
+- pedicure.jpg: a pedicure in progress (Franklin set).
+Namesake businesses (Skyline Nail and Spa, Colorado Springs; Skyline Nails and Spa, Abilene) are different businesses and were NOT used. Only web presence is a booking-platform subdomain; it was NOT linked as a business site, and no Book Now button is used.
