@@ -2,5 +2,5 @@ PHOTOS (all stock photos from the Champion Laundry Center Pexels set; none are p
 - hero.jpg: front-load washers in a laundromat (verified by sight).
 - machines.jpg: washing machines in a laundromat.
 - folding.jpg: folding laundry.
-RATING: 4.9 from 132 reviews on a directory listing, shown once on the page; single listing source. The $1 regular wash figure from a place summary is NOT shown (a price from a summary, not verified on the business site).
+RATING REMOVED 2026-10-25 (rebuild run53): the unnamed-platform rating was removed from the page per QA Failed acceptance (research names no exact platform for the figure); no rating is shown now. Former rating was, shown once on the page; single listing source. The $1 regular wash figure from a place summary is NOT shown (a price from a summary, not verified on the business site).
 NOT USED: an older interview lists phone (918) 720-1008 and email myuofwash@gmail.com; the current place-listing phone (918) 960-2889 is the one shown. Own site universityofwash.com is a single short page (footer copyright 2022).

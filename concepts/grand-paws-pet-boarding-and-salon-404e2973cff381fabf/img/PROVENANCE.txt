@@ -2,5 +2,5 @@ PHOTOS (all stock photos from the Hair of the Dog Grooming Salon Pexels set; non
 - hero.jpg: a groomer with a black poodle on a grooming table (verified by sight).
 - bernedoodle.jpg: a bernedoodle.
 - brushed.jpg: a dog being brushed.
-RATING: 4.9 from 15 reviews on a directory listing, shown once on the page; small review base (15, above the 10 minimum) from a single listing source.
+RATING REMOVED 2026-10-25 (rebuild run53): the unnamed-platform rating was removed from the page per QA Failed acceptance (research names no exact platform for the figure); no rating is shown now. Former rating was, shown once on the page; small review base (15, above the 10 minimum) from a single listing source.
 NOT USED: Grand Paws Pet Sitter (grandpawspetsitter.com) and The Grand Paw (different businesses). Own site grandgroomers.top is a single generic text page with no booking, pricing, or gallery.

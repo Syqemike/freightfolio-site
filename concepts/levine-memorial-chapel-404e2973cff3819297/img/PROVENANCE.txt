@@ -2,5 +2,5 @@ PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of Lev
 - hero.jpg = Pexels 7317671: funeral setting with a wooden casket, white flowers, and lit candles
 - chapel2.jpg = Pexels 8963952: white lilies on a granite memorial stone
 - chapel3.jpg = Pexels 30159419: bouquet of white roses with baby's breath on a wooden table
-RATING: 4.8 from 15 reviews on a directory listing, shown once on the page; single directory source.
+RATING REMOVED 2026-10-25 (rebuild run53): the unnamed-platform rating was removed from the page per QA Failed acceptance (research names no exact platform for the figure); no rating is shown now. Former rating was, shown once on the page; single directory source.
 NOT LINKED: the own-site footer links Facebook but no URL was captured, so no social link is shown. No verified email was captured (the site says phone or email, but no verified email was entered). NOT USED: Levine Chapels and Dignity Memorial (different businesses); Pexels 34654920 chapel-with-crucifix photo and Pexels 54512 devotional-candle photo, both rejected as religiously mismatched to a Jewish funeral home. Own site levinememorialchapel.com is a dated funeral-template site with obituary pages.

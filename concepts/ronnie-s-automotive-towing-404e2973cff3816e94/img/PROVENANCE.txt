@@ -2,5 +2,5 @@ PHOTOS (all stock photos from the One Stop Auto Shop Pexels set; none are photos
 - hero.jpg = Pexels 3807517: a mechanic checking a car engine.
 - engine.jpg = Pexels 3807277: a mechanic inspecting a car engine in a garage using a flashlight.
 - hood.jpg = Pexels 3807329: a man working under a car hood.
-RATING: 5.0 from 20 reviews on a place listing, shown once on the page; single listing source.
+RATING REMOVED 2026-10-25 (rebuild run53): the unnamed-platform rating was removed from the page per QA Failed acceptance (research names no exact platform for the figure); no rating is shown now. Former rating was, shown once on the page; single listing source.
 NOT LINKED: the domain on the listing (ronniesautomotive.com) resolves to Ronnie's Total Car Care in Billerica MA, so it is NOT this Gulfport business's site and is not linked. No Gulfport-specific site was confirmed. Corridor add (West, Gulfport).

@@ -2,5 +2,5 @@ PHOTOS (all stock photos from the Limbs R Us Pexels set; none are photos of Bobc
 - hero.jpg = Pexels 4206112: a lumberjack using a chainsaw to cut logs outdoors, sawdust flying.
 - arborist.jpg = Pexels 2310483: an arborist in a tree wearing a safety harness, holding ropes and a chainsaw.
 - logs.jpg = Pexels 4205989: a person using a chainsaw to cut logs in a forest.
-RATING: 4.7 from 36 reviews on a place listing, shown once on the page; a corridor scout independently returned the same rating, count, and phone.
+RATING REMOVED 2026-10-25 (rebuild run53): the unnamed-platform rating was removed from the page per QA Failed acceptance (research names no exact platform for the figure); no rating is shown now. Former rating was, shown once on the page; a corridor scout independently returned the same rating, count, and phone.
 NOT USED: Volusia Bobcat and Tree Service FL and Bob's Tree Work (different businesses). The 30+ years experience claim on the own site is NOT shown (self-reported). Own site bobcattreework.com is a single simple page. Corridor add (West, Long Beach).

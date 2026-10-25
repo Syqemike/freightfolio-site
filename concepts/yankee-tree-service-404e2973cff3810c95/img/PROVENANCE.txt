@@ -2,5 +2,5 @@ PHOTOS (all stock photos from the Limbs R Us Pexels set; none are photos of Yank
 - hero.jpg = Pexels 2310483: an arborist in a tree wearing a safety harness, holding ropes and a chainsaw.
 - tree2.jpg = Pexels 4205989: a person using a chainsaw to cut logs in a forest.
 - tree3.jpg = Pexels 4206112: a lumberjack using a chainsaw to cut logs outdoors, sawdust flying.
-RATING: 4.8 from 21 reviews on a place listing, shown once on the page. Yankee Tree Services LLC Birdeye 4.9/66 is a different business and is NOT used.
+RATING REMOVED 2026-10-25 (rebuild run53): the unnamed-platform rating was removed from the page per QA Failed acceptance (research names no exact platform for the figure); no rating is shown now. Former rating was, shown once on the page. Yankee Tree Services LLC Birdeye 4.9/66 is a different business and is NOT used.
 NOT USED: alternate phone (401) 439-6028 and emergency phone (401) 439-7329 also appear on the site; only the main contact (401) 203-4334 is shown. Address uses the own-site footer form 16 N Crow Point Rd (place listing gives 16 Crow Point Rd). Veteran-owned, 15+ years, and fully-insured site claims are NOT shown (self-reported, not independently verified). Own site yankeetreeservice.com is a single page still carrying placeholder blocks.

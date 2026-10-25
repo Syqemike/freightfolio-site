@@ -2,5 +2,5 @@ PHOTOS (all stock photos from the Mary's Pet Grooming Pexels set; none are photo
 - hero.jpg: a dog being washed in a grooming tub (verified by sight).
 - bath.jpg: a dog in a bath.
 - trim.jpg: a dog being trimmed.
-RATING: 4.8 from 44 reviews on a directory listing, shown once on the page; single listing source.
+RATING REMOVED 2026-10-25 (rebuild run53): the unnamed-platform rating was removed from the page per QA Failed acceptance (research names no exact platform for the figure); no rating is shown now. Former rating was, shown once on the page; single listing source.
 CATEGORY NOTE: the CRM category is Pet Boarding / Daycare because the site text explicitly describes boarding facilities and stays, though the listing primary category is Pet Groomer/Kennel. Own site honeysgrooming.top is a single generic text page. No business-owned social page was found.
