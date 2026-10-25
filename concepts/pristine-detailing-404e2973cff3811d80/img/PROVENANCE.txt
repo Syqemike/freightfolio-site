@@ -1,0 +1,6 @@
+PHOTOS (all stock photos from the B-Rad Auto Detailing Pexels set; none are photos of Pristine Detailing; original Pexels IDs are not recorded in that set's provenance file):
+- hero.jpg: polishing a car finish with a machine polisher (verified by sight).
+- wash.jpg: a car being washed.
+- interior.jpg: a cleaned car interior.
+RATING NOT SHOWN: review-count conflict is unresolved (place listing 4.8/12 vs TrustAnalytica 4.7/49, different scores and counts). Sales and QA must re-confirm before any rating is published.
+NOT USED: Pristine Shine Detailing LLC (Johnstown OH) and Rigby ID Pristine Detailing (different businesses). Own site pristinedetailing.com is a single services-list page with no pricing, booking, or gallery.
