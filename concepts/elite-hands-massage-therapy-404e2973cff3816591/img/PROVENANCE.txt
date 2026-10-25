@@ -1,0 +1,7 @@
+PHOTOS (all stock photos from the Soothing Rose Massage Therapy Pexels set; none are photos of Elite Hands Massage Therapy):
+- hero.jpg = Pexels 3865797: a massage therapy session.
+- session2.jpg = Pexels 6628601: a massage therapy session in progress.
+- session3.jpg = Pexels 3865799: a relaxing massage session.
+RATING NOT SHOWN: review-count conflict is unresolved (TrustAnalytica Birmingham table lists 5.0 / 65; the place listing lists 5.0 / 6). Both sources agree on 5.0 stars, but the count is unresolved, so no rating figure appears on the page. Sales and QA must re-confirm the count before any rating is published.
+HOURS: place-listing hours used as primary (Mon-Fri 10:00 AM to 6:00 PM, Sat 10:00 AM to 5:00 PM). TrustAnalytica FAQ hours differ (Mon closed, Tue-Thu 10-6, Fri 10-4, Sat 10-5, Sun closed) and are NOT used; confirm Mon/Fri before publishing.
+BOOKING: Book online links to the verified Acuity page elitehands.as.me from the research record. Prices are from elitehands.love.
