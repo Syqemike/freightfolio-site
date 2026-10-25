@@ -1,0 +1,5 @@
+Tato-Nut Donut Shop concept (2026-10-25). All photos are Pexels stock photos from the Royal Blend Coffee and Tea stock set; none are photos of Tato-Nut Donut Shop. Every caption says Stock photo.
+- hero.jpg: freshly baked cinnamon rolls on racks (Royal Blend set, pastry.jpg).
+- latte.jpg: a latte with heart latte art in a blue cup (Royal Blend set, latte.jpg).
+- sandwich.jpg: a grilled sandwich plate with salad and potato wedges (Royal Blend set, panini.jpg).
+Photos show generic baked goods and cafe food, NOT this shop's potato-flour donuts, and the copy never claims otherwise. Rating: Restaurantji 4.7/447 shown once; places listing 4.9/729 and TripAdvisor 4.8/570 for the same address were NOT merged. Facebook page https://m.facebook.com/TheTatonutDonutShop/ was NOT linked in this build; it is recorded here for QA to verify in a browser before linking. The owned domain tatonut.com was confirmed by a live-browser check on 2026-10-25 to render as a minimal single-page sign and contact display with no menu, hours, or links; it counts as a poor and outdated website, NOT a good website, and this record is NOT pitched as having no website at all.

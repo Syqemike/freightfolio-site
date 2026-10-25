@@ -1,0 +1,5 @@
+Broadway Furniture and Mattress Outlet concept (2026-10-25). All photos are Pexels stock photos; none are photos of Broadway Furniture and Mattress Outlet. Every caption says Stock photo.
+- hero.jpg: a furniture store interior with sofas and armchairs (Pexels photo 6758237).
+- night.jpg: an illuminated furniture store seen from outside at night (Pexels photo 15161977).
+- chair.jpg: a red armchair in a furniture store setting (Pexels photo 17851733).
+Photos show generic furniture stores, NOT this outlet's floor or stock, and the copy never claims otherwise. Rating: place listing 4.8/72 shown once; the review platform is not explicitly named in the listing output and is NOT attributed to Google. Instagram https://www.instagram.com/broadway_furniture_mattress was NOT linked in this build; it is recorded here for QA to verify in a browser before linking. Broad wayfurniture.net (Tigard, OR) is a different business and was NOT used. Sunday hours are not published and were NOT shown as closed. No business-owned domain exists; Instagram only.
