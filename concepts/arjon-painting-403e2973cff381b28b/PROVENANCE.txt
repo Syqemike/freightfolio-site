@@ -1,5 +1,5 @@
-Arjon Painting concept (2026-10-24). All photos are stock photos reused from the T-M Home Improvement renovation stock set; none are photos of Arjon Painting, and no photo shows painting work. Every caption says Stock photo, and captions describe only what the photo shows.
-- hero.jpg: worker fitting a door during a renovation (T-M set, tm_hero.jpg).
-- work.jpg: worker fitting windows during a renovation (T-M set, tm_work.jpg).
-- window.jpg: worker fitting a window in a bright room (T-M set, tm_window1.jpg).
-Saturday hours are published as 12:00 AM to 12:00 AM, which is not a usable open window, so Saturday is recorded as unpublished, not open or closed. No ZIP is published on the sources used, so none is printed. Only web presence is a free Google business.site page; it was NOT linked as a business site.
+Arjon Painting concept (2026-10-24; rebuilt 2026-10-24 Rebuild shift run42). All photos are Pexels stock photos; none are photos of Arjon Painting. Every caption says Stock photo, and captions describe only what the photo shows. All three photos depict interior wall painting with a roller, a listed service (interior painting).
+- painting-wall.jpg: a man painting an interior wall with a roller (Pexels 6474471).
+- painting-gray.jpg: a man painting a wall gray with a roller (Pexels 6474480).
+- painter-uniform.jpg: a painter in a white uniform painting an indoor wall with a roller (Pexels 5493655).
+Previous T-M renovation photos (hero/work/window) were removed from this concept's directory in run42 because they depicted door/window fitting, not painting; copies used by other concepts were not touched. Rating shown on the page is the sourced HomeAdvisor figure (4.5 from 56 reviews), unchanged by run42. Saturday hours are published as 12:00 AM to 12:00 AM, which is not a usable open window, so Saturday is recorded as unpublished, not open or closed. No ZIP is published on the sources used, so none is printed. Only web presence is a free Google business.site page; it was NOT linked as a business site.
