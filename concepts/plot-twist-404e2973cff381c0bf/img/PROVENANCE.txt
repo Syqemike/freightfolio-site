@@ -1,0 +1,5 @@
+Plot Twist concept (2026-10-25). All photos are Pexels stock photos fetched for this build; none are photos of Plot Twist Yoga Studio. Every caption says Stock photo.
+- hero.jpg: a diverse group of adults doing yoga poses on mats in a bright indoor studio (Pexels photo 8436610).
+- yoga2.jpg: adults practicing yoga poses in a modern, minimalist studio (Pexels photo 39190415).
+- yoga3.jpg: a diverse group of adults practicing yoga together indoors (Pexels photo 8436627).
+Rating shown once: 4.97/75 Mindbody listing, exactly as listed. Hours are the place listing hours; Saturday and Sunday hours not published, shown as not published. A Mindbody booking page exists but no booking URL is in the CRM record, so the page uses phone only; no Book Now button. No business-owned domain. PHONE FLAG FOR SALES AND QA: the site uses the CRM and Mindbody number (251) 928-5295, which research notes is the Page and Palette store number; the place listing shows (251) 423-7535. Sales to confirm which number the studio answers before drafting.
