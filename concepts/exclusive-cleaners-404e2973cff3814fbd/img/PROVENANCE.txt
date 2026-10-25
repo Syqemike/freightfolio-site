@@ -1,0 +1,9 @@
+PHOTOS (all stock photos from Pexels; none are photos of Exclusive Cleaners):
+- hero.jpg = Pexels 4700611: interior of a modern laundromat with rows of steel washing machines.
+- laundry2.jpg = Pexels 27376258: wet clothes spinning inside a front-loading washing machine.
+- laundry3.jpg = Pexels 7282378: a hand taking clothes out of a front-loading washing machine.
+RATING: 4.6 from 24 reviews on a place listing, shown once on the page.
+HOURS: Long Beach hours shown (Mon-Fri 7am-6pm, Sat 9am-12pm); Orange Grove/Gulfport locations keep different hours.
+SERVICES: alterations, bridal heirlooming, and custom shirt finishing are offered at OTHER locations, not attributed to Long Beach.
+NOT USED: exclusivecleaners.co.uk (an unrelated UK cleaner in Southend-on-Sea).
+SOCIAL: Facebook page URL is in the CRM record; not linked on the page, for QA to verify in a browser first.

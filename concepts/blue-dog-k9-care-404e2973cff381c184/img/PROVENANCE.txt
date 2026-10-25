@@ -1,0 +1,7 @@
+PHOTOS (all stock photos from Pexels; none are photos of Blue Dog K9 Care):
+- hero.jpg = Pexels 7210355: a woman playing with a Border Collie on a meadow.
+- dog2.jpg = Pexels 9376756: a Goldendoodle chasing a colorful ball in a park.
+- dog3.jpg = Pexels 6469221: two black Staffordshire Bull Terriers playing on a grassy field.
+RATING: 4.7 from 23 reviews on a place listing, shown once on the page.
+SOCIAL: the business site lists two Instagram handles (@bluedogk9care and @cincinnatibluedogk9care); neither is linked on the page, for QA to verify first.
+NOTE: the business site is old (2015-2020-era assets) but functional, so confirm the outdated call before drafting; no online booking on the site, phone only.

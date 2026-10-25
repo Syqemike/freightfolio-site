@@ -1,0 +1,7 @@
+PHOTOS (all stock photos from Pexels; none are photos of The Vallin Shop):
+- hero.jpg = Pexels 28571825: two men using hoses to clean a black car in an indoor garage.
+- detail2.jpg = Pexels 6873088: a hand scrubbing a car window with a sponge, covered in soap and foam, at a car wash.
+- detail3.jpg = Pexels 170811: a blue BMW sedan near green lawn grass.
+RATING: 5.0 from 16 reviews on a place listing, shown once on the page.
+NOT USED: a separate Permanently Closed meta.ai entry for The Vallin Shop Complete Auto Car Care at different coordinates (different place_id, not this address).
+FLAG: social-only presence; confirm the phone is business-owned (phone is place-listing verified). Instagram location page only, not linked.
