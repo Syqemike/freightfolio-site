@@ -2,5 +2,5 @@ PHOTOS (all stock photos from Pexels; none are photos of Vilma Tax Service, LLC)
 - hero.jpg = Pexels 5900135: top view of a person organizing finances with a calculator, receipts, and notes at a desk.
 - tax2.jpg = Pexels 6694543: a desk with financial documents, currency, a laptop, and a phone calculator.
 - tax3.jpg = Pexels 6863330: a hand on a 1040 tax form with a calculator on a desk.
-RATING: 5.0 from 17 reviews on a place listing, shown once on the page.
+RATING REMOVED 2026-10-25 (rebuild run50; figure named no exact review platform in research, so removed not re-sourced): 5.0 from 17 reviews on a place listing, no longer shown on the page.
 SOCIAL: the Facebook page (fb.me link in CRM) is the business presence; not linked on the page, for QA to verify in a browser first.

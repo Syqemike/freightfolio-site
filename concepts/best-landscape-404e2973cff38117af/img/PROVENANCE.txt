@@ -2,5 +2,5 @@ PHOTOS (all stock photos from Pexels; none are photos of Best Landscape):
 - hero.jpg = Pexels 1453499: a man holding an orange electric grass cutter on a lawn.
 - land2.jpg = Pexels 4162016: a red and black push lawn mower on green grass.
 - land3.jpg = Pexels 7728877: a woman in denim overalls working soil in a garden bed beside a house.
-RATING: 5.0 from 21 reviews on a place listing, shown once on the page.
+RATING REMOVED 2026-10-25 (rebuild run50; figure named no exact review platform in research, so removed not re-sourced): 5.0 from 21 reviews on a place listing, no longer shown on the page.
 NOT USED: the listed site bestlandsacpe.com (misspelled domain as listed) returned HTTP 404 and is not a working business site; no business-owned social page found.

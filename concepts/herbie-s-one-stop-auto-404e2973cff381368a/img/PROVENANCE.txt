@@ -2,6 +2,6 @@ PHOTOS (all stock photos from Pexels; none are photos of Herbie's One Stop Auto)
 - hero.jpg = Pexels 2244746: a mechanic repairing a car undercarriage outdoors.
 - auto2.jpg = Pexels 3807277: a mechanic inspecting a car engine in a garage using a flashlight.
 - auto3.jpg = Pexels 3807329: a man working under a car hood.
-RATING: 5.0 from 11 reviews on a place listing, shown once on the page; low count, single source, re-confirm before drafting.
+RATING REMOVED 2026-10-25 (rebuild run50; figure named no exact review platform in research, so removed not re-sourced): 5.0 from 11 reviews on a place listing, no longer shown on the page; low count, single source, re-confirm before drafting.
 NOT USED: a motorcycle-maintenance photo (Pexels 3817919) was rejected because it does not show car repair.
 SOCIAL: Instagram location page only, not a confirmed business account; not linked on the page. No detailed service list is published; the page lists only automotive repair and auto body work and does not present car dealership as a service.
