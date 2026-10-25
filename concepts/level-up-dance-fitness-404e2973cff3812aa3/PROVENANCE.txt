@@ -1,0 +1,5 @@
+Level Up Dance Fitness concept (2026-10-24). All photos are stock photos reused from the Maximum Entertainment DJs stock set; none are photos of Level Up Dance Fitness. Every caption says Stock photo.
+- hero.jpg: guests dancing on an illuminated LED dance floor (Maximum set, dancefloor-lights.jpg).
+- floor.jpg: packed dance floor seen from the DJ booth (Maximum set, dancefloor-hero.jpg).
+- dancing.jpg: guests dancing under warm lights (Maximum set, wedding-dancing.jpg).
+PHOTO SWAP AFTER RENDER REVIEW: the first build used Fabulous Feet ballet-class photos, but those show young children in tutus, the wrong audience for this adult Cardio Dance Fitness studio, so they were replaced with adult dance-floor stock before commit. Photos show event dancing, NOT this studio's classes, and the copy never claims otherwise. An unattributed registration form listing other class names and prices was NOT used. The free Google business.site page was NOT linked as a business site.

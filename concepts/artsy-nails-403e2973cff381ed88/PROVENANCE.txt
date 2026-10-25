@@ -1,0 +1,5 @@
+Artsy Nails concept (2026-10-24). All photos are stock photos reused from the Divine Nail Tan stock set; none are photos of Artsy Nails. Every caption says Stock photo.
+- hero.jpg: manicure in progress (Divine set, manicure.jpg).
+- art.jpg: custom nail art (Divine set, nailart.jpg).
+- red.jpg: red manicure (Divine set, red.jpg).
+The GlossGenius booking page was NOT linked as a business site. The Instagram handle named on the studio About page was NOT linked in this build; it is recorded in the CRM notes for QA to verify in a browser. The El Dorado KS namesake is a different business and was NOT used.

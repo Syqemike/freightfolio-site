@@ -1,0 +1,5 @@
+The ugly Diner concept (2026-10-24). All photos are Pexels stock photos reused from the Juanita's Kitchen stock set; none are photos of The ugly Diner. Every caption says Stock photo.
+- hero.jpg: breakfast featuring an omelette, toast, and roasted potatoes (Juanita set, Pexels photo 14415378).
+- plate.jpg: omelette served with fresh salad greens and tomatoes (Juanita set, Pexels photo 25402351).
+- eggs.jpg: hearty breakfast with omelette, browned potatoes, and sausages (Juanita set, Pexels photo 5685176).
+Hours: business-managed TripAdvisor daily hours used; the place listing Sunday variant and missing Monday entry are noted on the Visit page, not blended. Rating: places listing 4.8/352 shown once; TripAdvisor 4.5/993 was NOT merged. The business Facebook page was NOT linked in this build; it is recorded in the CRM notes for QA to verify in a browser.
