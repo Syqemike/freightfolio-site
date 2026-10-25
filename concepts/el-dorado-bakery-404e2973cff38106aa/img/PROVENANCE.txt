@@ -1,0 +1,6 @@
+PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of El Dorado Bakery):
+- hero.jpg = Pexels 12097596: conchas and pastries on trays in a Mexican bakery case
+- eldorado2.jpg = Pexels 35152909: chocolate-topped concha, close up
+- eldorado3.jpg = Pexels 12097597: tray of vanilla conchas with the classic shell pattern
+RATING: 4.7 from 70 reviews on a place listing, shown once on the page. Restaurantji shows a separate 4-star/159-rating aggregate for the same address; note the discrepancy, do not merge counts.
+NOT USED: El Dorado Bakery Isleta location (3041 Isleta Blvd SW) and El Dorado Bakery 3 Westside (640 Coors Blvd NW #18), different locations of the same family chain; only the Broadway location is this record. No business-owned website (addmi.com/edb is a directory page, not linked).

@@ -1,0 +1,6 @@
+PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of Wellness Chiropractic Care for All):
+- hero.jpg = Pexels 5794034: therapist adjusting a woman lying on her side on a treatment table
+- wellness2.jpg = Pexels 5793804: therapist giving a seated woman a spinal and back adjustment in a clinic
+- wellness3.jpg = Pexels 14797752: chiropractor using a handheld adjustment instrument on a seated woman's neck
+RATING: 4.9 from 21 reviews on a place listing, shown once on the page.
+NOT USED: The Wellness Center of Boise, Henze Chiropractic, The Joint Chiropractic Boise, Dr. Jon Gray, Dr. Bradley Waters, and Boise Sports Chiropractic, all different businesses; no services were imported from them. Own site wellnessboise.com is a single short page with a Facebook link per scout; no Facebook URL was captured, so no social link is shown.

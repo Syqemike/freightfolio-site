@@ -1,0 +1,6 @@
+PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of Cycology Studio):
+- hero.jpg = Pexels 11870841: rider on a stationary bike in a dark spin studio with dramatic lighting
+- cycology2.jpg = Pexels 8766379: row of cyclists riding indoor bikes in a studio
+- cycology3.jpg = Pexels 8766368: group of people riding indoor bikes side by side in a cycling class
+RATING: 4.9 from 74 reviews on a place listing, shown once on the page.
+NOT USED: Cycology Cycling Studio, Dothan, AL, and Cycology Studio, Slidell, LA (permanently closed), different businesses. Own site cycologystudio.com is broken per scout (stray 123456 line, WordPress-admin-only feed error, no schedule, pricing, or booking) and is not linked.

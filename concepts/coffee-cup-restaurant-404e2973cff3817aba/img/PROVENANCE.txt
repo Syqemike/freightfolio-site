@@ -1,0 +1,6 @@
+PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of Coffee Cup Restaurant):
+- hero.jpg = Pexels 36903815: golden biscuits stacked on a wooden plate (no gravy visible; captioned as biscuits only)
+- coffeecup2.jpg = Pexels 4306479: stack of pancakes topped with raspberries and drizzled with syrup
+- coffeecup3.jpg = Pexels 31306979: breakfast plate with sausage, pastry, and sauce (not a labeled grits plate)
+RATING: 4.7 from 196 reviews on a place listing, shown once on the page. Tripadvisor 4.3/262 is a different aggregate; note the discrepancy, do not merge.
+HOURS NOTE: Tripadvisor lists Saturday closing at 1:00 PM instead of 2:00 PM; the place listing 2:00 PM close is used as primary, and the place snippet omits Tuesday, covered by Tripadvisor Monday to Friday. NO BUSINESS WEBSITE: the listed domain coffeecuprestaurant.shop returns a domain-for-sale parking page per scout and is not linked. Corridor add (East, Pensacola).

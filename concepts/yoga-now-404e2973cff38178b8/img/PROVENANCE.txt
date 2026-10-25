@@ -1,0 +1,6 @@
+PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of Yoga Now):
+- hero.jpg = Pexels 8436555: instructor sitting cross-legged while students lie in relaxation pose in a bright studio
+- yoganow2.jpg = Pexels 8436468: adults doing a supported kneeling yoga pose using wooden blocks
+- yoganow3.jpg = Pexels 8436701: a group on mats performing cat-cow pose in a studio
+RATING: 4.8 from 61 reviews on a place listing, shown once on the page.
+HOURS CONFLICT: the own site class page lists different session hours (Monday 6 to 8 PM, Tuesday 5 to 7 PM, Wednesday 5 to 7 PM, Thursday 6 to 8 PM, Saturday 9 AM to 4 PM, Sunday 9 to 11 AM), conflicting with the place listing on Thursday, Saturday, and Sunday; the place listing set is published as primary and the conflict is noted on the visit page for Sales and QA to confirm. NOT USED: Yoga Now Attendorn, Germany (different business). Own site doyoganow.com is a single welcome page per scout and is not linked.

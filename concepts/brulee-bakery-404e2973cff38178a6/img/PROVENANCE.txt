@@ -1,0 +1,6 @@
+PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of Brulee Bakery):
+- hero.jpg = Pexels 34517057: cafe table with a croissant, coffee, and a brownie
+- brulee2.jpg = Pexels 12557753: chocolate chip cookies with a French press of coffee on a wooden table
+- brulee3.jpg = Pexels 13130546: baked goods under a glass cover in a bakery
+RATING: 4.6 from 94 reviews on Restaurantji, shown once on the page; Restaurantji is the rating source for this record.
+HOURS NOTE: Restaurantji lists Tuesday to Friday closing at 2:00 PM instead of 3:00 PM; the place listing and Wanderlog 3:00 PM close is used as primary. NOT USED: Brulee bakeries in Argentina and El Salvador (different businesses). Own site bruleebake.com is a single keyword-stuffed page per scout and is not linked. Slug uses the ASCII form Brulee Bakery so the concept URL stays ASCII; the display name keeps the accent.

@@ -1,0 +1,6 @@
+PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of The Burque Bakehouse):
+- hero.jpg = Pexels 31310835: three golden, layered croissants stacked in a bakery
+- burque2.jpg = Pexels 29307618: fresh breads and croissants arranged in a bakery
+- burque3.jpg = Pexels 29380151: artisan breads and pastries displayed in a bakery
+RATING: 5.0 from 30 reviews on a place listing, shown once on the page. A Wanderlog/Google aggregate is larger (4.8 across about 600+ ratings); note, do not merge.
+NOT LINKED: the business Facebook page (facebook.com/burquebakehouse per a directory) is deliberately not linked because the business notes the page is not regularly maintained and directs questions to email; email is the contact path. Own site burquebakehouse.com is a thin menu stub per scout and is not linked.
