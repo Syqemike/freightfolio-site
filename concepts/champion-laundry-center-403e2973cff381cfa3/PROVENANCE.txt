@@ -1,5 +1,9 @@
-Champion Laundry Center concept (2026-10-24). All photos are stock photos reused from the Better Cleaning stock set; none are photos of Champion Laundry Center. Every caption says Stock photo.
-- hero.jpg: fresh bedding being made in a bedroom (Better Cleaning set, hero.jpg).
-- spray.jpg: gloved hand holding a spray bottle (Better Cleaning set, spray.jpg).
-- cloth.jpg: hands wiping a surface with a blue cloth (Better Cleaning set, cloth.jpg).
-No photo shows the laundromat itself; the Mark's Laundry laundromat photos from the Rebuild photo swap were NOT used, since their working-tree state was uncommitted during this shift. The Instagram location page was NOT linked as a business profile.
+Champion Laundry Center concept (2026-10-24; rebuilt 2026-10-24 Rebuild shift run44).
+All photos are Pexels stock photos (Pexels License: free to use, no attribution required).
+They are NOT photos of Champion Laundry Center. Every caption says Stock photo.
+- machines.jpg: a man using commercial washing machines at a laundromat (Pexels 8774371).
+- laundromat.jpg: a row of washing machines in a laundromat (Pexels 9669475).
+- folding.jpg: a woman folding clothes in a laundromat (Pexels 2927523).
+Previous Better Cleaning house-cleaning photos (hero/spray/cloth) were removed from this
+concept's directory in run44 because they depicted house cleaning, not a laundromat;
+copies used by other concepts were not touched.

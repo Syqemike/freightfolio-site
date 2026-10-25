@@ -1,5 +1,10 @@
-CC's Classic Catering concept (2026-10-24). All photos are stock photos reused from the Tower of Pizza stock set; none are photos of CC's Classic Catering. Every caption says Stock photo.
-- hero.jpg: assorted pizzas with pepperoni and sausage on a wooden table (Tower set, table.jpg).
-- display.jpg: New York style pizza slices on display (Tower set, hero.jpg).
-- slice.jpg: hand pulling a cheesy pepperoni pizza slice (Tower set, slice.jpg).
-Photos show generic event-table food, NOT CC's catering, and the copy never claims otherwise. Rating: places listing 4.8/21 shown once; Restaurantji 4.2/6 and The Knot 5.0/4 smaller samples were NOT merged. The Instagram location page was NOT linked as a business profile.
+CC's Classic Catering concept (2026-10-24; rebuilt 2026-10-24 Rebuild shift run44).
+All photos are Pexels stock photos (Pexels License: free to use, no attribution required).
+They are NOT photos of CC's Classic Catering. Every caption says Stock photo.
+- hero.jpg: elegant dessert table setup with cakes and flowers at an outdoor garden wedding reception (Pexels 19869792).
+- event-table.jpg: beautifully set outdoor wedding table with flowers and candles in warm sunset light (Pexels 19869800).
+- buffet.jpg: a beautifully arranged dessert buffet with ornate floral decorations on a wooden table (Pexels 26774580).
+Previous Tower of Pizza pizza photos (hero/display/slice) were removed from this concept's
+directory in run44 because pizza is not a CC's Classic Catering offering; copies used by
+other concepts were not touched. Rating: the unsourced places-listing rating was removed
+in run44 (no exact named source verified); smaller samples were not merged.
