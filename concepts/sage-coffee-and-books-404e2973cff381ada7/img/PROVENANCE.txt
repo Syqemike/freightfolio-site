@@ -1,0 +1,5 @@
+Sage Coffee and Books concept (2026-10-24). All photos are Pexels stock photos from the Royal Blend Coffee and Tea stock set; none are photos of Sage Coffee and Books. Every caption says Stock photo.
+- hero.jpg: latte with heart latte art in a blue cup (Royal Blend set, latte.jpg).
+- beans.jpg: roasted coffee beans with a burlap sack (Royal Blend set, beans.jpg).
+- rolls.jpg: freshly baked cinnamon rolls on racks (Royal Blend set, pastry.jpg).
+No bookstore or bookshelf photo was available in the stock set, so the photos show cafe stock only and the copy never claims they are Sage's shelves or books. The Royal Blend cafe-interior photo with a laptop screen was NOT used. Daily 11:00 AM to 7:00 PM is the standing published schedule; a 2025 social post saying OPEN 11-6 for that day only was NOT used as the hours. The free Square site was NOT linked as a business site. A Facebook page id recorded in research notes was NOT linked in this build; it is recorded here for QA to verify in a browser before linking. NOT used: Sage Biscuit Cafe (Bradenton), Sage SRQ (Sarasota), and toasttab/green-sage menus are different businesses.

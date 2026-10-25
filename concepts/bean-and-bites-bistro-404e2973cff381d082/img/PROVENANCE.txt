@@ -1,0 +1,5 @@
+Bean and Bites Bistro concept (2026-10-24). All photos are Pexels stock photos from the Royal Blend Coffee and Tea stock set; none are photos of Bean and Bites Bistro. Every caption says Stock photo.
+- hero.jpg: grilled sandwich plate with salad and potato wedges (Royal Blend set, panini.jpg).
+- latte.jpg: latte with heart latte art in a blue cup (Royal Blend set, latte.jpg).
+- rolls.jpg: freshly baked cinnamon rolls on racks (Royal Blend set, pastry.jpg).
+Photos show generic cafe food and drink, NOT this bistro's crepe cakes, dumplings, or bao buns, and the copy never claims otherwise. Rating: Restaurantji 5.0/121 shown once; DoorDash 4.8 to 4.9/100+ for the same business was NOT merged. No online ordering link is shown; no verified ordering destination was recorded in research. The Facebook page was NOT linked in this build; it is recorded here for QA to verify in a browser before linking.
