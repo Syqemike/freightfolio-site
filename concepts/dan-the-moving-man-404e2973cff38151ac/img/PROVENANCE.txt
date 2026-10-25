@@ -1,0 +1,7 @@
+PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of Dan the Moving Man):
+- hero.jpg = Pexels 7464232: two movers carrying boxes in a sunlit room
+- move2.jpg = Pexels 20706506: movers loading boxes into a truck on a sunny day
+- move3.jpg = Pexels 7464244: two movers carrying cardboard boxes in a bright room
+RATING: 4.9 from 11 reviews on a place listing, shown once on the page. BestCompany Google aggregation gives 4.9/40 for the same score with a different count and is NOT merged.
+CITY NOTE: the CRM city was Spokane Valley, but the published address is Spokane (place listing + FMCSA record agree at 104 N Madelia St, Spokane, WA 99202), so Spokane is used on the page. A directory says Spokane while the site footer says Spokane Valley for the same address.
+NOT USED: Wisconsin Dan the Moving Man businesses (different businesses). Own site danthemovingmanwa.com is a single thin page.
