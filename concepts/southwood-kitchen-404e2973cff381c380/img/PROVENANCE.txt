@@ -2,5 +2,5 @@ PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of Sou
 - hero.jpg = Pexels 3645126: seared scallops elegantly presented for fine dining
 - southwood2.jpg = Pexels 5638522: scallops plated with asparagus, garnish, and sauce
 - southwood3.jpg = Pexels 13806700: shrimp risotto with greens on a blue plate (shrimp risotto, not shrimp and grits)
-RATING: 5.0 from 141 reviews on a place listing, shown once on the page. Restaurantji 4.8/364 and Yelp about 308 reviews are different aggregates; note the discrepancies, do not merge.
+RATING: REMOVED 2026-10-25 by Rebuild Agent (run52) - the unnamed-platform rating section ('5.0 stars from 141 reviews on a place listing.') was removed from index.html per QA Failed defect (unnamed review platform); no rating is shown on the page now. Research names no exact platform for the figure, so removal (not re-sourcing) is the QA-allowed fix.
 Own site southwoodkitchen.com is a single short page per scout and is not linked. Corridor add (East, Daphne).

@@ -2,5 +2,5 @@ PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of Cyc
 - hero.jpg = Pexels 11870841: rider on a stationary bike in a dark spin studio with dramatic lighting
 - cycology2.jpg = Pexels 8766379: row of cyclists riding indoor bikes in a studio
 - cycology3.jpg = Pexels 8766368: group of people riding indoor bikes side by side in a cycling class
-RATING: 4.9 from 74 reviews on a place listing, shown once on the page.
+RATING: REMOVED 2026-10-25 by Rebuild Agent (run52) - the unnamed-platform rating section ('4.9 stars from 74 reviews on a place listing.') was removed from index.html per QA Failed defect (unnamed review platform); no rating is shown on the page now. Research names no exact platform for the figure, so removal (not re-sourcing) is the QA-allowed fix.
 NOT USED: Cycology Cycling Studio, Dothan, AL, and Cycology Studio, Slidell, LA (permanently closed), different businesses. Own site cycologystudio.com is broken per scout (stray 123456 line, WordPress-admin-only feed error, no schedule, pricing, or booking) and is not linked.

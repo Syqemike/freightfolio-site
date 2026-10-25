@@ -2,5 +2,5 @@ PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of Cat
 - hero.jpg = Pexels 37534409: latte art coffee, a pastry, and an espresso machine on a countertop
 - catisland2.jpg = Pexels 37085542: cinnamon roll with iced coffee on a marble table
 - catisland3.jpg = Pexels 20229730: coffee and pastries on a wooden table in a cafe
-RATING: 4.9 from 186 reviews on a place listing, shown once on the page. Restaurantji 4.8/321 and Tripadvisor 4.7/113 are different aggregates; note the discrepancies, do not merge.
+RATING: REMOVED 2026-10-25 by Rebuild Agent (run52) - the unnamed-platform rating section ('4.9 stars from 186 reviews on a place listing.') was removed from index.html per QA Failed defect (unnamed review platform); no rating is shown on the page now. Research names no exact platform for the figure, so removal (not re-sourcing) is the QA-allowed fix.
 NOTE: the chain has other locations (Gulfport and Ocean Springs) sharing the same phone; this record is the Pass Christian location with its own hours. Own site catislandcoffeehouse.com is a single essay-style page per scout and is not linked. Corridor add (West, Pass Christian).

@@ -2,5 +2,5 @@ PHOTOS (all stock photos from Pexels, fetched 2026-10-25; none are photos of Yog
 - hero.jpg = Pexels 8436555: instructor sitting cross-legged while students lie in relaxation pose in a bright studio
 - yoganow2.jpg = Pexels 8436468: adults doing a supported kneeling yoga pose using wooden blocks
 - yoganow3.jpg = Pexels 8436701: a group on mats performing cat-cow pose in a studio
-RATING: 4.8 from 61 reviews on a place listing, shown once on the page.
+RATING: REMOVED 2026-10-25 by Rebuild Agent (run52) - the unnamed-platform rating section ('4.8 stars from 61 reviews on a place listing.') was removed from index.html per QA Failed defect (unnamed review platform); no rating is shown on the page now. Research names no exact platform for the figure, so removal (not re-sourcing) is the QA-allowed fix.
 HOURS CONFLICT: the own site class page lists different session hours (Monday 6 to 8 PM, Tuesday 5 to 7 PM, Wednesday 5 to 7 PM, Thursday 6 to 8 PM, Saturday 9 AM to 4 PM, Sunday 9 to 11 AM), conflicting with the place listing on Thursday, Saturday, and Sunday; the place listing set is published as primary and the conflict is noted on the visit page for Sales and QA to confirm. NOT USED: Yoga Now Attendorn, Germany (different business). Own site doyoganow.com is a single welcome page per scout and is not linked.
