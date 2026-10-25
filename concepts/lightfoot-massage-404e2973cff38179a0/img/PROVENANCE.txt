@@ -1,0 +1,6 @@
+PHOTOS (all Pexels stock photos, none are photos of Lightfoot Massage):
+- hero.jpg = Pexels 3865797: a massage therapy session.
+- session.jpg = Pexels 6628601: a massage therapy session in progress.
+- stones.jpg = Pexels 6629521: warm stones used in massage.
+RATING: 4.9 from 30 reviews on Google, shown once.
+CTA: phone only. The existing site is a MassageBook booking profile only; no booking URL is in the CRM record, so no Book Now button is shown.

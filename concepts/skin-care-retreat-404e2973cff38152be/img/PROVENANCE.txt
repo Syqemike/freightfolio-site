@@ -1,0 +1,6 @@
+PHOTOS (all stock photos, none are photos of Skin Care Retreat):
+- hero.jpg = Pexels 35884502: a serene treatment room with a massage table, folded towel, and candle.
+- calm.jpg = Pexels 3865792: a massage therapy session detail.
+- interior.jpg = Pexels 3865800: a therapist giving a back massage in a bright, calm treatment room.
+RATING: 4.9 from 45 reviews on Google, shown once. A prior CRM note cited 4.9/48; the fresh figure 4.9/45 is used here.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

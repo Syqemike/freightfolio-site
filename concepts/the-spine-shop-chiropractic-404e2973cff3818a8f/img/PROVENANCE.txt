@@ -1,0 +1,7 @@
+PHOTOS (all Pexels stock photos, none are photos of The Spine Shop Chiropractic):
+- hero.jpg = Pexels 5794034: therapist adjusting a woman lying on her side on a treatment table.
+- adjustment.jpg = Pexels 5793804: therapist giving a seated woman a spinal and back adjustment in a clinic.
+- instrument.jpg = Pexels 14797752: chiropractor using a handheld adjustment instrument on a seated woman's neck.
+RATING: 5.0 from 40 reviews on Google, shown once. healthhives 4.9/50 is not merged.
+HOURS FLAG FOR QA: place listing says Tue to Fri 10 to 6, Sat 10 to 2, Sun to Mon closed; healthhives shows Tue closed. The place listing is used here; QA should re-check Tuesday.
+CTA: phone only.

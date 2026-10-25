@@ -1,0 +1,7 @@
+PHOTOS (all Pexels stock photos, none are photos of Style Downtown):
+- hero.jpg = Pexels 7195821: salon interior with styling chairs.
+- cut.jpg = Pexels 3993442: a haircut in progress.
+- color.jpg = Pexels 3993310: a hair coloring service.
+RATING: 4.8 from 127 reviews on Google, shown once.
+HOURS FLAG FOR QA: place listing says Daily 11 AM to 4 PM; a GlossGenius page shows Tue/Thu/Fri/Sat 11 to 5 with Mon/Wed/Sun closed and a different address. The place listing is used here; QA should re-check hours.
+CTA: phone only. No verified online booking URL is in the CRM record.
