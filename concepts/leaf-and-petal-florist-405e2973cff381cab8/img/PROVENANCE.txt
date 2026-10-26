@@ -1,0 +1,9 @@
+PHOTOS (all Pexels stock photos, reused from verified concept pools, none are photos of Leaf and Petal Florist or its arrangements):
+- hero.jpg (Kato Floral Designs pool) = Pexels 122734: pink garden roses.
+- bouquet.jpg (Marry Me Wedding Chapel pool, Alluring Blooms set): a bouquet of peach and pink roses and peonies (caption corrected 2026-10-26, Rebuild run60).
+- sunflowers.jpg (Kato Floral Designs pool) = Pexels 1169084: sunflowers in a field.
+FIX 2026-10-26 (render review): the Kato pool bouquet.jpg was NOT used. Kato's PROVENANCE.txt describes it as 'a wrapped bouquet of roses and eucalyptus', but the file viewed this shift is actually Pexels 1035677, a woman holding a bouquet, the same photo Pugh's Floral Shop uses this shift. Using it with the Kato caption would have been a photo/caption mismatch, so the Marry Me bouquet photo replaces it.
+RATING: Google 5.0 from 19 reviews, shown once.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.
+EXISTING SITE NOTE: leafandpetalinc.com is a single thin page whose SHOP NOW link points to google.com; that link is not reproduced here.

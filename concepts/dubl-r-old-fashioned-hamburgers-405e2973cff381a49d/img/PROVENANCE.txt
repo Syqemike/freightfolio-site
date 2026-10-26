@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from verified concept pools, none are photos of Dubl-R or its food):
+- hero.jpg (Dubs pool): a burger on a grill rack with buns behind it (caption corrected 2026-10-26, Rebuild run59; the photo shows no fries and no plate).
+- burger.jpg (Beer Bar pool, via the Original Fat Cats pool): a burger.
+- steak.jpg (Chucks Cheesesteaks pool, Pexels 37324434): a Philly cheesesteak with melted cheese and grilled vegetables.
+FIX 2026-10-26 (render review): the Dubs pool cheeseburger photo was removed because a branded ketchup bottle is legible in the frame; the cheesesteak photo replaces it. The cheesesteak is not a Dubl-R menu item; the caption describes the pictured food honestly as stock.
+RATING: Google 4.7 from 633 reviews, shown once.
+HOURS FLAG: the hours shown are the public listing and Restaurantji hours (Mon-Fri 10 AM to 4:30 PM, Sat 10 AM to 2 PM, Sun closed). Older TripAdvisor and Waco Wise pages show a 6:30 PM weekday close; that older close is not shown and is flagged for QA.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.

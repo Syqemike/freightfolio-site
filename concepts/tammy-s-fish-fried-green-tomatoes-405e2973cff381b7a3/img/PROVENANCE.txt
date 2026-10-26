@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from verified concept pools, none are photos of Tammy's truck or its food):
+- hero.jpg (Juanita's Kitchen pool, verified against the image file this shift): crispy fried fish with fries and salad on a plate.
+- truck.jpg (Chucks Cheesesteaks pool, Pexels 34261963): a food truck serving customers outdoors.
+- serving.jpg (Chucks Cheesesteaks pool, Pexels 11117849): a customer receiving food from a vendor at a food truck.
+CAPTIONS: the truck photos are generic food truck scenes, captioned as stock, and are not claimed to be Tammy's truck.
+RATING: Google 4.9 from 19 reviews, shown once.
+HOURS FLAG: the hours shown are the public listing hours (Wed 11 AM to 6 PM, Thu-Sat 11 AM to 7 PM). The truck's site footer lists Wed-Sat 12:30 PM to 5:00 PM; that conflict is noted on the Visit page and flagged for QA.
+SOCIAL: the truck's site states Facebook and Instagram are 'Coming Soon'; no live social URL is confirmed, so none is linked.
+CTA: phone only. The truck's site has limited online ordering via a form, but no verified ordering URL is in the CRM record, so no order button is shown.

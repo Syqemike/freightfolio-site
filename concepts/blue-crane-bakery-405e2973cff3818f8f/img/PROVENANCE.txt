@@ -1,0 +1,8 @@
+PHOTOS (all Pexels stock photos, reused from verified concept pools, none are photos of Blue Crane Bakery or its treats):
+- hero.jpg (Brulee Bakery pool) = Pexels 13130546: baked goods under a glass cover in a bakery.
+- cookies.jpg (Brulee Bakery pool) = Pexels 12557753: chocolate chip cookies with a French press of coffee on a wooden table.
+- rolls.jpg (Cafe Beignet pool, Royal Blend set, Pexels 5964500): cinnamon rolls on bakery racks.
+FIX 2026-10-26 (render review): the Brulee pool hero (Pexels 34517057, cafe table with a branded cafe cup) was removed because the cup carries another cafe's visible branding; it was replaced with the bakery-case photo above.
+RATING: Google 5.0 from 37 reviews, shown once.
+ORDERING: the business site directs ordering to Facebook or phone and lists no prices or online ordering, so no order button is shown. Phone only, plus the verified email in the about text.
+SOCIAL: an Instagram handle @bluecranebakery is mentioned in reviews, but no verified profile URL is in the CRM record, so none is linked.
