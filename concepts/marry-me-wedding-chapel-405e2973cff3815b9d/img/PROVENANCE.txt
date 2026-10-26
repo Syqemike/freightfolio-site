@@ -1,7 +1,7 @@
 PHOTOS (all Pexels stock photos, reused from the Alluring Blooms concept pool, none are photos of Marry Me Wedding Chapel):
 - hero.jpg = Pexels 122734: pink garden roses.
 - sunflowers.jpg = Pexels 1169084: sunflowers in a field.
-- seasonal.jpg: a pale seasonal arrangement in a vase.
+- seasonal.jpg: a bouquet of peach and pink roses and peonies. CAPTION CORRECTED 2026-10-26 (Rebuild run60): the old caption 'a pale seasonal arrangement in a vase' was false of the photo (close-up bouquet, no vase visible); caption and alt now describe the actual bouquet, per QA 2026-10-26.
 RATING: 5.0 from 11 reviews on Google, shown once. WeddingWire 5.0/107 was not merged.
 ADDRESS: 3349 E Ventura St, Fresno, CA 93702. The street was renamed from Cesar Chavez to Ventura effective May 1, 2026; same location.
 SOCIAL: social posts mirrored on evepla in 2026 show active posting, but no confirmed Facebook or Instagram profile URL was found, so none is linked.

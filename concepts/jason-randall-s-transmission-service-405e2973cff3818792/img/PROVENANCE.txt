@@ -2,7 +2,7 @@ PHOTOS (all Pexels stock photos, reused from the Arnold Automotive concept pool,
 - hero.jpg = Pexels 2244746: a mechanic repairing a car undercarriage outdoors.
 - auto3b.jpg = Pexels 3807329: a man working under a car hood.
 - auto1b.jpg = Pexels 3807517: a mechanic checking a car engine.
-RATING: 4.7 from 11 reviews on its public business listing, shown once. No separate Google profile count was found, so none is claimed.
+RATING REMOVED 2026-10-26 (Rebuild run60): 4.7 from 11 reviews on its public business listing was removed from index.html because QA 2026-10-26 failed it for naming no exact review platform; no rating is shown on the site. No separate Google profile count was found, so none is claimed.
 SOCIAL: no confirmed Facebook or Instagram profile URL for the transmission business was found, so none is linked. Social hits for a fly-fishing author named Jason Randall are a different person and were not used.
 WEBSITE: jrtransmission.com is a single 18-line page with a welcome blurb, hours, and an affiliation note, and no services, pricing, or booking, so it is not linked as a full site.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
