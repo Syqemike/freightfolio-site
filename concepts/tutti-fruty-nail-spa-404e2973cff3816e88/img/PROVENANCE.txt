@@ -2,7 +2,7 @@ PHOTOS (all Pexels stock photos, none are photos of Tutti Fruty Nail Spa):
 - hero.jpg = Pexels 3738377: a manicure in progress.
 - filing.jpg = Pexels 16041439: nails being filed during a manicure.
 - art.jpg = Pexels 7066298: colorful dotted nail art with polish bottles.
-RATING: 4.8 from 42 reviews on its public business listing, shown once.
+RATING REMOVED 2026-10-26 (Rebuild run58): 4.8 from 42 reviews on its public business listing was removed from index.html because QA 2026-10-26 failed it for naming no exact review platform; no rating is shown on the site.
 HOURS: the Tuesday to Saturday 10:00 AM to 12:00 PM listing window is incomplete per research and is NOT published as the schedule.
 INSTAGRAM: @tuttifruitti228 per research (business account); linked in the visit note only.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

@@ -2,7 +2,7 @@ PHOTOS (all Pexels stock photos, none are photos of La Maceta Tapatios):
 - hero.jpg = Pexels 34261963: a colorful food truck serving customers outdoors.
 - truck.jpg = Pexels 11117849: a customer receiving food from a vendor at a street food truck.
 - tacos.jpg = Pexels 38895472: shrimp tacos with lime and pickled onion.
-RATING: 4.9 from 407 reviews on its public business listing, shown once.
+RATING REMOVED 2026-10-26 (Rebuild run58): 4.9 from 407 reviews on its public business listing was removed from index.html because QA 2026-10-26 failed it for naming no exact review platform; no rating is shown on the site.
 HOURS: the truck schedule and location shift daily and are announced on Instagram; fragmentary evening windows from the listing are NOT published as a schedule. Instagram @lamaceta_52 per the research re-check; linked in the visit note only.
 NOT USED: La Tapatia restaurants are different businesses.
 CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.
