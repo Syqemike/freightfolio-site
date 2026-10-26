@@ -1,0 +1,8 @@
+PHOTOS (all Pexels stock photos, none are photos of Don Kazery's Furniture Co Inc):
+- hero.jpg = Pexels 6758237: a furniture store interior with sofas and armchairs.
+- armchair.jpg = Pexels 17851733: a red armchair in a furniture store setting.
+- living.jpg = Pexels 5644367: a living room with green plants and brown sofa chairs.
+DISTINCTNESS: none of these three photos is in the Wooden Haven Furniture concept gallery (1350789, 1571460, 139309). This resolves the distinct-photo hold from the 19:58 and 21:58 shifts.
+RATING: 4.5 from 14 reviews on Google, shown once.
+NOT LINKED: no standalone website found; the Facebook page is the only web presence and is linked on the visit page.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

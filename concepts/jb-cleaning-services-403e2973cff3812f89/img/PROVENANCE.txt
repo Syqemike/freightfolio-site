@@ -1,0 +1,8 @@
+PHOTOS (all Pexels stock photos, none are photos of JB Cleaning Services):
+- hero.jpg = Pexels 6197108: cleaners in red overalls cleaning a modern interior.
+- sweep.jpg = Pexels 4108715: a person sweeping a wooden floor with a broom and dustpan.
+- kitchen.jpg = Pexels 280232: a clean modern kitchen.
+NO RATING: no rating count was found for this business, so none is shown.
+NO SERVICE DETAIL: no detailed service list was found for this exact business; none is invented here.
+WEBSITE: jbhousecleaningservice.business.site returns 404 and is not linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

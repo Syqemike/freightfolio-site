@@ -1,0 +1,9 @@
+PHOTOS (all Pexels stock photos, none are photos of Big River Outfitters; all three visually inspected before use this shift):
+- hero.jpg = Pexels 39147908: a man fly fishing in a rocky river.
+- boat.jpg = Pexels 10065936: three people fishing from a boat on a river. NOTE: the phone number painted on the boat hull is part of the stock photo, not Big River's number, and is not presented as a contact.
+- trout.jpg = Pexels 14438490: a trout in a net beside a stream.
+RATING: 5.0 from 70 reviews on FishingBooker, shown once.
+EMAIL: wmcleanup@gmail.com is in the CRM record but traces to a single public source, so it is not published here.
+ADDRESS: Riverside Park Drive NW is the FishingBooker address; no street number was found, so none is shown.
+NOT USED: Idaho's Big River Outfitters is a different business.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
