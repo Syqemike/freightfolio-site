@@ -2,7 +2,7 @@ PHOTOS (all stock photos reused from verified concept pools in this repo; none a
 - session-hero.jpg: Therapist giving a back massage in a bright, calm treatment room. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/session-hero.jpg
 - session-calm.jpg: Massage therapy session detail. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/session-calm.jpg
 - spa-interior.jpg: Serene spa treatment room with a massage table, folded towel, and candle. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/spa-interior.jpg
-RATING: Rated 5.0 from 13 reviews (public listing), shown once (index page only).
+RATING REMOVED 2026-10-26 (Rebuild run60b): Rated 5.0 from 13 reviews (public listing) was removed from index.html because QA 2026-10-26 failed it for naming no exact review platform; no rating is shown on the site.
 LOCATION: 621 N 6th Ave, Tucson, AZ. Phone (928) 322-1146 from the CRM record.
 CTA: phone only (Call to book with tel:). No verified online booking URL is in the CRM record, so no Book Now button is shown.
 HOURS: only verified hours are shown. Note: Wednesday hours are not listed in verified sources.

@@ -2,7 +2,7 @@ PHOTOS (all stock photos reused from verified concept pools in this repo; none a
 - beans.jpg: Coffee beans. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/sage-coffee-and-books-404e2973cff381ada7/img/beans.jpg
 - latte.jpg: A latte. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/royal-blend-coffee-tea-d2300f549341/img/latte.jpg
 - pastry.jpg: A pastry. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/royal-blend-coffee-tea-d2300f549341/img/pastry.jpg
-RATING: Rated 4.7 from 218 reviews (public listing), shown once (index page only).
+RATING REMOVED 2026-10-26 (Rebuild run60b): Rated 4.7 from 218 reviews (public listing) was removed from index.html because QA 2026-10-26 failed it for naming no exact review platform; no rating is shown on the site.
 LOCATION: 222 N Howard St, Spokane, WA 99201. Phone (509) 747-0336 from the CRM record.
 CTA: phone only (Call to book with tel:). No verified online booking URL is in the CRM record, so no Book Now button is shown.
 HOURS: only verified hours are shown. Note: none

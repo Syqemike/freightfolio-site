@@ -2,7 +2,7 @@ PHOTOS (all stock photos reused from verified concept pools in this repo; none a
 - manicure.jpg: Manicure in progress. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/franklin-nails-403e2973cff381ae/img/manicure.jpg
 - pedicure.jpg: Pedicure service. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/franklin-nails-403e2973cff381ae/img/pedicure.jpg
 - nails.jpg: Finished nails. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/franklin-nails-403e2973cff381ae/img/nails.jpg
-RATING: Rated 4.7 from 47 reviews (directory listing), shown once (index page only).
+RATING REMOVED 2026-10-26 (Rebuild run60b): Rated 4.7 from 47 reviews (directory listing) was removed from index.html because QA 2026-10-26 failed it for naming no exact review platform; no rating is shown on the site.
 LOCATION: 295 US-90 #24, Bay St. Louis, MS 39520. Phone (228) 344-3147 from the CRM record.
 CTA: phone only (Call to book with tel:). No verified online booking URL is in the CRM record, so no Book Now button is shown.
 HOURS: only verified hours are shown. Note: Sunday hours are not listed in verified sources.

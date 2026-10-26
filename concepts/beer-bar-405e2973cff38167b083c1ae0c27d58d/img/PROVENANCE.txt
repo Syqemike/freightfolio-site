@@ -2,7 +2,7 @@ PHOTOS (all stock photos reused from verified concept pools in this repo; none a
 - beer-taps.jpg: Beer taps. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/original-fat-cats-de85772ed0e7/img/beer-taps.jpg
 - burger.jpg: A burger. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/original-fat-cats-de85772ed0e7/img/burger.jpg
 - live-band.jpg: A live band. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/original-fat-cats-de85772ed0e7/img/live-band.jpg
-RATING: Rated 4.5 from 82 reviews (public listing), shown once (index page only).
+RATING REMOVED 2026-10-26 (Rebuild run60b): Rated 4.5 from 82 reviews (public listing) was removed from index.html because QA 2026-10-26 failed it for naming no exact review platform; no rating is shown on the site.
 LOCATION: 161 E 200 S, Salt Lake City, UT. Phone (385) 259-0905 from the CRM record.
 CTA: phone only (Call to book with tel:). No verified online booking URL is in the CRM record, so no Book Now button is shown.
 HOURS: only verified hours are shown. Note: none
