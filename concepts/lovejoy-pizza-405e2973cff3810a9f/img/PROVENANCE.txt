@@ -1,0 +1,10 @@
+PHOTOS (all stock photos, reused from the Tower of Pizza concept pool, none are photos of Lovejoy Pizza or its food. Captions were verified against the image files this shift):
+- hero.jpg: pizzas in a display case.
+- slice.jpg: a hand lifting a pepperoni slice with a cheese pull.
+- chef.jpg: a pizza maker tending a deck oven with a peel.
+RATING: 4.9 from 48 reviews on Google, shown once. Restaurantji 4.6/197 for the combined Lovejoy Pizzeria listing was not merged.
+LOCATION: this concept is the Downtown location (900 Main St, (716) 883-2323). The second location at 1244 E Lovejoy St, Buffalo, NY 14206, phone (716) 891-9233, is listed on the same site but is not shown as a second location page.
+HOURS: Downtown hours from the business's own site footer are shown. Listing hours differ slightly (Tue-Thu to 7:30 PM, Fri-Sat to 8:30 PM) and were not used.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+WEBSITE: lovejoypizza.com is a bare text menu dump with prices only and no photos, branding, online ordering, or contact form, so it is not linked as a full site.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.

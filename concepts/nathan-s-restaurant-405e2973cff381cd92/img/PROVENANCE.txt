@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the Faye's Kitchen concept pool, none are photos of Nathan's Restaurant or its dishes):
+- hero.jpg: shrimp etouffee served with rice.
+- poboy.jpg: shrimp po boy sandwich with fries and sauces.
+- sub.jpg: sub sandwich with fries and dips.
+RATING: 4.6 from 190 reviews on Google, shown once. Restaurantji 254 reviews was not merged (no score given for that count in research).
+RESERVATIONS: research notes reservations are available through OpenTable, but no verified OpenTable URL is in the CRM record, so no reservation link is shown. Phone CTA only.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+WEBSITE: nathansrestaurant.net is a single thin page with pasted review excerpts plus hours and contact only, with no menu, photos, or ordering, so it is not linked as a full site.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

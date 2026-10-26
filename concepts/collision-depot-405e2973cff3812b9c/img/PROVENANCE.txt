@@ -1,0 +1,8 @@
+PHOTOS (all Pexels stock photos, reused from the Chuck's Automotive concept pool, none are photos of Collision Depot or its work):
+- hero.jpg: red car with its hood open showing the engine.
+- cars.jpg: cars lined up with a hood open.
+- engine.jpg: engine bay close-up.
+RATING: 5.0 from 21 reviews on Google, shown once.
+NOT USED: Collision Depot, 600 Atlantic Ave, Oceanside, NY, (516) 678-4444, is a different business and was not used.
+WEBSITE: c-depot.com is a thin single page with broken icon glyphs and 2023-dated images and no quote or booking path, so it is not linked as a full site.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

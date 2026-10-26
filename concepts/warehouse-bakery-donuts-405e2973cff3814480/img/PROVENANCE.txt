@@ -1,0 +1,9 @@
+PHOTOS (all Pexels stock photos, reused from the Brulee Bakery concept pool, none are photos of Warehouse Bakery and Donuts or its goods):
+- hero.jpg = Pexels 34517057: a cafe table with a croissant, coffee, and a brownie.
+- brulee2.jpg = Pexels 12557753: chocolate chip cookies with a French press of coffee on a wooden table.
+- brulee3.jpg = Pexels 13130546: baked goods under a glass cover in a bakery.
+RATING: 4.7 from 252 reviews on Google, shown once. Restaurantji 4.5/298 and Yelp 4.2/313 were not merged.
+HOURS: daily 7 AM to 2 PM from the listing and Restaurantji. An older article listing daily 6 AM to 6 PM plus Friday and Saturday evening pizza hours is stale and was not used.
+SOCIAL: a Facebook page named Warehouse Bakery and Donuts is referenced in old articles and a local guide, but no verified profile URL was confirmed, so none is linked.
+WEBSITE: warehousebakeryanddonuts.com is an embedded Instagram feed plus address and hours only, with no menu or ordering, so it is not linked as a full site.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.
