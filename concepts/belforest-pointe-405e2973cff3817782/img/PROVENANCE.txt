@@ -1,0 +1,8 @@
+PHOTOS (all Pexels stock photos, reused from the Deerfield Estates Venue concept pool; none are photos of Belforest Pointe or its grounds):
+- hero.jpg = Pexels 13788569: a DJ playing at a wedding reception in a barn venue.
+- roses.jpg = Pexels 122734: pink garden roses.
+- sunflowers.jpg = Pexels 1169084: sunflowers in a field.
+RATING: Google 5.0 from 11 reviews, shown once. A WeddingWire figure (4.4 from 7) was not merged and is not shown.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone and email only. No verified online booking URL is in the CRM record, so no Book Now button is shown. No pricing, packages, or availability calendar is published, so none are shown.
+CAPACITY FLAG: no guest capacity is published because sources conflict (place summary up to 350 guests, WeddingWire up to 500); QA and Sales should confirm before quoting a number.

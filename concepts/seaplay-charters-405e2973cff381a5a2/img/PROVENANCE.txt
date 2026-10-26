@@ -1,0 +1,10 @@
+PHOTOS (all Pexels stock photos, fetched for this shift via image search; none are photos of Seaplay Charters or its boats):
+- boat.jpg = Pexels 5844360: a fishing boat floating on calm seawater.
+- traveling.jpg = Pexels 4810608: a fishing boat traveling across the sea.
+- calm.jpg = Pexels 33361653: a serene fishing boat on a calm blue sea.
+PHOTO FIX NOTE: an earlier build of this page reused the Three Jays Charters pool, which the Dominator pool had already reused for Out Cast Charters in the same shift, so the two Galveston charters shared identical images. This set replaces all three photos with distinct Pexels stock photos.
+RATING: Google 4.9 from 75 reviews, shown once. FishingBooker figures by boat listing were not merged and are not shown.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone and email only. No verified online booking URL is in the CRM record, so no Book Now button is shown. No trip prices or dates are published, so none are shown.
+PHONE NOTE: the charter's own site also shows a second phone number; the listing phone shown here is the primary number.
+HOURS FLAG: hours come from TripAdvisor only because the place listing hours section was empty; QA should re-check.
