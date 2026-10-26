@@ -1,0 +1,9 @@
+PHOTOS (all Pexels stock photos, reused from the A Corner On The Market concept pool, none are photos of Jensen Jewelers Inc or its stock):
+- hero.jpg = Pexels 1191531: charm bracelets worn on a wrist.
+- ring.jpg = Pexels 1232931: a jeweled ring resting on a red rose.
+- necklace.jpg = Pexels 10983780: a diamond pendant necklace.
+RATING: 4.8 from 76 reviews on its public business listing, shown once.
+HOURS: the business's own site hours are shown. A listing summary with different weekday hours conflicts and is not shown; research flagged the conflict before drafting.
+NOT USED: Jensen Jewelers Hudsonville MI and Pocatello ID are different businesses.
+WEBSITE: jensenjewelers.net is a single thin page and is not linked as a full site.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
