@@ -1,0 +1,7 @@
+PHOTOS (all Pexels stock photos, none are photos of A Corner On The Market):
+- hero.jpg = Pexels 1191531: charm bracelets worn on a wrist.
+- ring.jpg = Pexels 1232931: a jeweled ring resting on a red rose.
+- necklace.jpg = Pexels 10983780: a diamond pendant necklace.
+RATING: 4.9 from 19 reviews on Google, shown once.
+NOT USED: the listed business.site page returned 404 to the scout, so no working website is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

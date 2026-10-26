@@ -1,0 +1,7 @@
+PHOTOS (all Pexels stock photos, none are photos of Downtown Car Care):
+- hero.jpg = Pexels 3807277: a mechanic inspecting a car engine with a light.
+- cars.jpg = Pexels 17776621: cars with hoods open showing engines.
+- engine.jpg = Pexels 9702354: a performance car engine with red accents.
+RATING: 5.0 from 25 reviews on Google, shown once.
+HOURS FLAG FOR QA: own site says Mon-Fri 7:30 AM to 5:30 PM; place listing says 5:00 PM close. The own site is used here.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

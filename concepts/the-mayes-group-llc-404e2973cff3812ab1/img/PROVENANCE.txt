@@ -1,0 +1,7 @@
+PHOTOS (all Pexels stock photos, none are photos of The Mayes Group LLC):
+- hero.jpg = Pexels 3184292: people reviewing charts and reports at a table.
+- talk.jpg = Pexels 155690: two men in suits talking outdoors.
+- desk.jpg = Pexels 416405: people at a desk with plans, a calculator, and a laptop.
+RATING: 5.0 from 12 reviews on Google, shown once.
+EXISTING SITE NOTE: the current Wix page is contact-only (address, phone, email, contact form), so no services content was taken from it.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

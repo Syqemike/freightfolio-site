@@ -1,0 +1,8 @@
+PHOTOS (all Pexels stock photos, none are photos of Santa Fe Bakery):
+- hero.jpg = Pexels 205961: assorted pastries in a bakery case.
+- cake.jpg = Pexels 291528: a slice of chocolate layer cake.
+- counter.jpg = Pexels 1855214: a bakery counter with a display case.
+RATING: 4.8 from 30 reviews on Google, shown once. A prior CRM note attributed the same 4.8/30 to Restaurantji; the research header source (Google) is used here and QA should confirm the source.
+FACEBOOK: https://www.facebook.com/SANTAFEBAKERYLLC/ is linked on the visit page; it is the business Facebook page per research.
+NOT USED: Santa Fe Bakery Cafe and Mercado (Palmview TX), Nothing Bundt Cakes (Santa Fe NM), and Bakery Santa Fe (Ourinhos BR) are different businesses.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.
