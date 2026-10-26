@@ -2,7 +2,7 @@ PHOTOS (all stock photos, reused from the In The Mix DJs concept pool, none are 
 - booth.jpg (source dj-booth.jpg): a white DJ controller at a reception with tables behind.
 - dance.jpg (source first-dance.jpg): a couple dancing under a disco ball at a reception.
 - deck.jpg (source dj-deck.jpg): headphones resting on a DJ controller in a dark room.
-RATING: 4.9 from 101 reviews on its public business listing, shown once. WeddingWire lists 5.0 from 304 reviews for the same business; that figure was not merged.
+RATING REMOVED 2026-10-26 (Rebuild run61): 4.9 from 101 reviews on its public business listing was removed from index.html because QA 2026-10-26 09:59 failed it for naming no exact review platform; no rating is shown on the site.
 HOURS: event-based business booked by phone; no storefront hours are published.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

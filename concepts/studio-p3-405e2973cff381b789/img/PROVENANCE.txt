@@ -2,7 +2,7 @@ PHOTOS (all Pexels stock photos, reused from the Downtown Yoga Ocean Springs con
 - hero.jpg = Pexels 8436610: a diverse group of adults doing yoga poses on mats in a bright indoor studio.
 - yoga2.jpg = Pexels 39190415: adults practicing yoga poses in a modern, minimalist studio.
 - yoga3.jpg = Pexels 8436627: a diverse group of adults practicing yoga together indoors.
-RATING: 5.0 from 18 reviews on its public business listing, shown once.
+RATING REMOVED 2026-10-26 (Rebuild run61): 5.0 from 18 reviews on its public business listing was removed from index.html because QA 2026-10-26 09:59 failed it for naming no exact review platform; no rating is shown on the site.
 HOURS CONFLICT: the listing shows Mon-Tue 8 AM to 7:30 PM and Sat 10:30 to 11:30 AM with Wed-Fri times truncated, while the business description states Mon-Fri 7 AM to 6:30 PM and Saturdays occasionally by request. No fixed hours are published on this concept; QA should confirm before drafting.
 SOCIAL: the business site references an Instagram handle, but no verified profile URL is in the CRM record, so none is linked.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

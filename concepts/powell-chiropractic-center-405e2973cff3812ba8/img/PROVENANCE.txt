@@ -2,7 +2,7 @@ PHOTOS (all Pexels stock photos, reused from the Wellness Chiropractic Care for 
 - hero.jpg = Pexels 5794034: therapist adjusting a woman lying on her side on a treatment table.
 - wellness2.jpg = Pexels 5793804: therapist giving a seated woman a spinal and back adjustment in a clinic.
 - wellness3.jpg = Pexels 14797752: chiropractor using a handheld adjustment instrument on a seated woman's neck.
-RATING: 4.9 from 25 reviews on its public business listing, shown once.
+RATING REMOVED 2026-10-26 (Rebuild run61): 4.9 from 25 reviews on its public business listing was removed from index.html because QA 2026-10-26 09:59 failed it for naming no exact review platform; no rating is shown on the site.
 SERVICES NOTE: no specific treatment list is published on the thin existing site, so no modalities are listed on this concept.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

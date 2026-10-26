@@ -2,6 +2,6 @@ PHOTOS (all Pexels stock photos, reused from the Gardner's Florist concept pool,
 - hero.jpg = Pexels 931179: a bouquet of peach roses and yellow poppies.
 - ranunculus.jpg = Pexels 931178: pale pink ranunculus flowers.
 - bouquet.jpg = Pexels 1035677: a woman holding a bouquet of flowers.
-RATING: 5.0 from 13 reviews on its public business listing, shown once.
+RATING REMOVED 2026-10-26 (Rebuild run61): 5.0 from 13 reviews on its public business listing was removed from index.html because QA 2026-10-26 09:59 failed it for naming no exact review platform; no rating is shown on the site.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.

@@ -2,7 +2,7 @@ PHOTOS (all Pexels stock photos, reused from the Relaxation Room concept pool, n
 - hero.jpg = Pexels 35884502: a serene treatment room with a massage table, folded towel, and candle.
 - calm.jpg = Pexels 3865792: a massage therapy session detail.
 - interior.jpg = Pexels 3865800: a therapist giving a back massage in a bright, calm treatment room.
-RATING: 5.0 from 28 reviews on its public business listing, shown once. No platform name is claimed for the figure.
+RATING REMOVED 2026-10-26 (Rebuild run61): 5.0 from 28 reviews on its public business listing was removed from index.html because QA 2026-10-26 09:59 failed it for naming no exact review platform; no rating is shown on the site.
 PHONE NOTE: the practice site footer also lists (804) 839-9290; the CRM and listing phone (804) 518-8450 is the only number shown, and the second number is flagged for QA.
 BOOKING: the existing attevle.com site shows a MassageBook booking button, but no MassageBook URL is in the CRM record, so no Book Now button is shown. Phone only.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.

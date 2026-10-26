@@ -2,6 +2,6 @@ PHOTOS (all Pexels stock photos, reused from the Electrical Resolutions Group co
 - hero.jpg = Pexels 34054464: an electrician diagnosing an electrical panel with a multimeter.
 - panel.jpg = Pexels 27928762: an electrician working on an indoor circuit breaker panel.
 - switchboard.jpg = Pexels 257736: an electrician working on an opened switchboard with colorful wires.
-RATING: 4.8 from 10 reviews on its public business listing, shown once.
+RATING REMOVED 2026-10-26 (Rebuild run61): 4.8 from 10 reviews on its public business listing was removed from index.html because QA 2026-10-26 09:59 failed it for naming no exact review platform; no rating is shown on the site.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

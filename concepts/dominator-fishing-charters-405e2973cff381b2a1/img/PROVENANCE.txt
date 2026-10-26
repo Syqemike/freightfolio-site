@@ -2,7 +2,7 @@ PHOTOS (all stock photos, reused from the Three Jays Charters concept pool, none
 - sunset.jpg (source photo-1.jpg): sunset over open water.
 - shoreline.jpg (source photo-2.jpg): sunset over a calm bay beside a beach and rock jetty.
 - deck.jpg (source photo-3.jpg): a fishing boat deck with crates, nets, buoys, and rope.
-RATING: 5.0 from 40 reviews on its public business listing, shown once.
+RATING REMOVED 2026-10-26 (Rebuild run61): 5.0 from 40 reviews on its public business listing was removed from index.html because QA 2026-10-26 09:59 failed it for naming no exact review platform; no rating is shown on the site.
 ADDRESS NOTE: the primary listing address 151 Beach Blvd is shown. FishingBooker lists 408 Beach Blvd for the same charter; that second address is flagged for QA and is not shown as a second location.
 HOURS: no storefront hours are published; trips are booked by phone.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.

@@ -2,6 +2,6 @@ PHOTOS (all stock photos, reused from the Jack and Jill Preschool and Daycare co
 - hero.jpg: two children playing with wooden blocks and a toy train in a bright classroom.
 - bubbles.jpg: a young child reaching for soap bubbles in a playroom, with a climbing frame behind.
 - clay.jpg: children modeling colored clay at a table in a classroom.
-RATING: 4.8 from 17 reviews on its public business listing, shown once.
+RATING REMOVED 2026-10-26 (Rebuild run61): 4.8 from 17 reviews on its public business listing was removed from index.html because QA 2026-10-26 09:59 failed it for naming no exact review platform; no rating is shown on the site.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online enrollment URL is in the CRM record, so no enrollment button is shown.
