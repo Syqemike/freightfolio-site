@@ -1,6 +1,7 @@
 PHOTOS (all stock photos, reused from verified concept pools, none are photos of Tammy's truck or its food):
 - hero.jpg (Juanita's Kitchen pool, verified against the image file this shift): crispy fried fish with fries and salad on a plate.
-- truck.jpg (Chucks Cheesesteaks pool, Pexels 34261963): a food truck serving customers outdoors.
+- fish-plate.jpg (Juanita's Kitchen pool, verified against the image file this shift): fried fish with fries and salad on a plate. Replaces truck.jpg in Rebuild run65.
+- truck.jpg REMOVED 2026-10-26 (Rebuild run65): the former gallery photo (Chucks Cheesesteaks pool, Pexels 34261963) showed a red food truck with large Japanese onigiri signage, matcha/hojicha menu boards, and a Japanese lantern, contradicting Tammy's fried-fish/soul-food menu; QA Failed the site on this single photo-context defect 2026-10-26. Do not reuse Pexels 34261963 for Tammy's.
 - serving.jpg (Chucks Cheesesteaks pool, Pexels 11117849): a customer receiving food from a vendor at a food truck.
 CAPTIONS: the truck photos are generic food truck scenes, captioned as stock, and are not claimed to be Tammy's truck.
 RATING: Google 4.9 from 19 reviews, shown once.
