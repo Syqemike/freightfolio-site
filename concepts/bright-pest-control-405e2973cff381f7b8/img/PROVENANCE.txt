@@ -1,0 +1,8 @@
+PHOTOS (all stock photos from Pexels, reused from the Blue Star Pest Control concept pool, shared with the Bay Pest Control concept this shift; none are photos of Bright Pest Control or its work):
+- hero.jpg = Pexels 4176541: professional treating a living room with fumigation equipment.
+- pest2.jpg = Pexels 5499416: worker in protective gear spraying a room interior.
+- pest3.jpg = Pexels 19789841: pest control specialist fogging outside a house.
+RATING: no star rating is shown. Research gives 4.5 from 10 reviews on an unnamed public listing; no exact platform is named, so the figure is omitted per the batch-35 QA rule. The BBB A+ grade is shown as a grade, not a rating.
+NOT USED: brightpestservices.net in Union County is a different business.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only.

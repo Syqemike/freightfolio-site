@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Nathan's Restaurant concept pool, which reused the Faye's Kitchen pool; none are photos of Sassy's Restaurant or its dishes):
+- hero.jpg: shrimp etouffee served with rice.
+- poboy.jpg: shrimp po boy sandwich with fries and sauces.
+- sub.jpg: sub sandwich with fries and dips.
+RATING: 4.6 from 211 Restaurantji ratings, shown once. A separate listing figure of 4.8 from 59 reviews names no exact platform and was not merged.
+SOCIAL: Facebook page facebook.com/sassysrestaurant was verified via page fetch in research and is linked on the Visit page. No Instagram profile was found, so none is linked.
+NOT USED: Sassy Bass Island Grill in Gulf Shores and Sassy's Barbecue in Fayetteville AR are different businesses.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.

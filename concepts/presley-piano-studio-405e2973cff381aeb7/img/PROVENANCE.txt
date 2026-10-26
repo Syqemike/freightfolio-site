@@ -1,0 +1,7 @@
+PHOTOS (all public-domain stock photos from Hippopx, none are photos of Presley Piano Studio or its students; the hero file was viewed this shift and matches its caption):
+- hero.jpg = Hippopx boy-learning-piano preview: a young student at a piano holding sheet music.
+- lesson.jpg = Hippopx woman-teaching-piano preview: a teacher guiding a young student at the piano.
+- girl.jpg = Hippopx piano-lesson-young-girl preview: a young student in a piano lesson with her teacher.
+RATING: no rating is shown. Research gives 5.0 from 15 reviews on an unnamed public listing; no exact platform is named, so the figure is omitted per the batch-35 QA rule.
+SOCIAL: only an Instagram location page is linked from listings, not a business profile, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

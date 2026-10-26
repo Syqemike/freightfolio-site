@@ -1,0 +1,9 @@
+PHOTOS (all stock photos from Pexels, reused from the Blue Star Pest Control concept pool, none are photos of Bay Pest Control or its work):
+- hero.jpg = Pexels 19789841: pest control specialist fogging outside a house.
+- pest2.jpg = Pexels 4176541: professional treating a living room with fumigation equipment.
+- pest3.jpg = Pexels 5499416: worker in protective gear spraying a room interior.
+RATING: no rating is shown. Research gives 4.8 from 112 reviews on an unnamed public listing; no exact platform is named, so the figure is omitted per the batch-35 QA rule.
+PHONE FLAG: the CRM and listing phone (833) 305-4229 is shown. The own site footer shows a different toll-free number (800) 985-0161 and an older directory number (228) 769-0555 exists; neither is shown. QA and Sales should confirm the right number before drafting.
+HOURS: no verified local office hours were found; the site footer 24/7 line refers to the toll-free line, not office hours, so no hours are claimed.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only.

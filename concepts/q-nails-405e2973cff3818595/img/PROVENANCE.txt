@@ -1,0 +1,9 @@
+PHOTOS (all Pexels stock photos, reused from the Bijou Nails and Company concept pool, none are photos of Q Nails or its work):
+- hero.jpg = Pexels 3997384: a manicure with red polish.
+- pedicure.jpg = Pexels 5793888: a pedicure in progress.
+- polish.jpg = Pexels 22668317: close-up of a manicure in progress.
+RATING: no rating is shown. Research gives 4.6 from 72 reviews on an unnamed public listing and a separate Yelp figure of 4.2 from 35 reviews; neither is shown as the primary figure, to avoid the unnamed-platform defect QA failed on batch-35 concepts.
+BOOKING: research notes a Fresha booking page exists, but no Fresha URL is in the CRM record, so no Book Now button is shown. Phone only.
+NOT USED: the Harvey LA Q Nails is a different business (different phone and address) and was not used.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only.
