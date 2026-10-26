@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from verified concept pools, none are photos of Brady's Steaks and Seafood or its dishes):
+- hero.jpg: shrimp etouffee served with rice (Nathan's Restaurant pool, via the Faye's Kitchen pool).
+- poboy.jpg: a shrimp po boy sandwich with fries and sauces (Nathan's Restaurant pool).
+- burger.jpg: a burger (Beer Bar pool, via the Original Fat Cats pool).
+NOTE: gallery captions describe the dishes actually pictured and do not claim they are Brady's dishes.
+RATING: no rating is shown. Research gives 4.9 from 333 reviews on an unnamed primary listing, and Tripadvisor shows 4.1 from 117 reviews; no exact platform is named for the primary figure, so it is omitted per the batch-35 QA rule and the two figures are not merged.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+EXISTING SITE: bradyssteaksandseafood.com is a single thin page, so it is not linked.
+CTA: phone only. No verified online reservation URL is in the CRM record, so no reservation button is shown.

@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from verified concept pools, none are photos of The Cornerstone Restaurant or its dishes):
+- hero.jpg: a burger (Beer Bar pool, via the Original Fat Cats pool).
+- etouffee.jpg: shrimp etouffee served with rice (Nathan's Restaurant pool, via the Faye's Kitchen pool).
+- poboy.jpg: a shrimp po boy sandwich with fries and sauces (Nathan's Restaurant pool).
+NOTE: gallery captions describe the dishes actually pictured and do not claim they are Cornerstone dishes. The Beer Bar live-band file was NOT used: it shows a stage set, not a performing band.
+RATING: no rating is shown. Research gives 4.6 from 305 reviews on an unnamed public listing, and Restaurantji shows 4.2 from 237 ratings; no exact platform is named for the primary figure, so it is omitted per the batch-35 QA rule and the two figures are not merged.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+EXISTING SITE: cornerstonerestaurantgautier.com is a single page, so it is not linked.
+CTA: phone only. No verified online ordering or reservation URL is in the CRM record, so no order or reservation button is shown.

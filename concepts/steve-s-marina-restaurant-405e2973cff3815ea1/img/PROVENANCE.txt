@@ -1,0 +1,10 @@
+PHOTOS (all stock photos, reused from verified concept pools, none are photos of Steve's Marina Restaurant or its dishes):
+- hero.jpg: a shrimp po boy sandwich with fries and sauces (Nathan's Restaurant pool).
+- etouffee.jpg: shrimp etouffee served with rice (Nathan's Restaurant pool, via the Faye's Kitchen pool).
+- burger.jpg: a burger (Beer Bar pool, via the Original Fat Cats pool).
+NOTE: gallery captions describe the dishes actually pictured and do not claim they are Steve's dishes.
+RATING: no rating is shown. Research gives 4.5 from 729 reviews on an unnamed primary listing, and Tripadvisor shows 4.3 from 726 reviews; no exact platform is named for the primary figure, so it is omitted per the batch-35 QA rule. The 2,287 figure on one directory page is not used.
+HOURS: no single closing time is published as certain. The listing and Tripadvisor disagree on Sunday to Thursday and Friday to Saturday closing times, so the Visit page shows the variance and asks callers to confirm.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+EXISTING SITE: no own business website; a stevesmarinarestaurant.cfd URL resolves to a directory page, so no website link is shown.
+CTA: phone only. No verified online reservation URL is in the CRM record, so no reservation button is shown.

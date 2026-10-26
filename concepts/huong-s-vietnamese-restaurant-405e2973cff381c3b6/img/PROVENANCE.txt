@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Viet Orleans Bistro concept pool, none are photos of Huong's Vietnamese Restaurant or its dishes):
+- hero.jpg: a bowl of pho (verified caption from the source concept page).
+- herbs.jpg: pho with fresh herbs (verified caption from the source concept page).
+- top.jpg: pho noodle soup from above (verified caption from the source concept page).
+RATING: 5.0 from 80 Google reviews, shown once. DoorDash 4.4 from 1,000 plus ratings is a different platform and is not merged.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+EXISTING SITE: huongsrestaurant.com is a single thin page, so it is not linked.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.

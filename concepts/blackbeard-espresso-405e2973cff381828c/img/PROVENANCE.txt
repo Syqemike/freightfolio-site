@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the Aldar Cafe concept pool, none are photos of Blackbeard Espresso or its drinks):
+- hero.jpg = Pexels 33219214: warm nighttime cafe interior, laptop on a wooden table.
+- latte.jpg = Pexels 459489: cappuccino with heart latte art in a blue cup.
+- beans.jpg = Pexels 33996444: burlap bag filled with roasted coffee beans.
+RATING: no rating is shown. Research gives 4.9 from 100 reviews on an unnamed public listing, and Restaurantji shows 4.6 from 201 ratings; no exact platform is named for the primary figure, so it is omitted per the batch-35 QA rule and the two figures are not merged.
+NOT USED: one reviewer reports card-only payment; that claim is unverified and is not mentioned anywhere on the site.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+EXISTING SITE: blackbeardespresso.com is a brand-history page, so it is not linked.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.

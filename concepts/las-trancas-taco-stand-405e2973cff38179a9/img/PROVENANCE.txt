@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the Smokin Gringos Taco Truck concept pool, none are photos of Las Trancas Taco Stand or its food; this pool is shared with the Los Reyes De La Torta concept built this same shift, with a different hero order, palette, and layout):
+- hero.jpg: seafood ceviche with onion and herbs in small bowls.
+- tacos.jpg: shrimp tacos with lime and pickled onion (verified alt text from the source concept page).
+- aguachile.jpg: aguachile with avocado and sesame.
+NOTE: gallery captions describe the dishes actually pictured and do not claim they are Las Trancas dishes.
+RATING: no rating is shown. Research gives 4.9 from 96 reviews on an unnamed primary listing, and another aggregator shows 4.6 from 467; no exact platform is named for the primary figure, so it is omitted per the batch-35 QA rule and the two figures are not merged.
+SOCIAL: the Facebook page URL from the CRM record is linked on the Visit page.
+EXISTING SITE: no standalone business website; only the Facebook page is listed, so no website link is shown.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.

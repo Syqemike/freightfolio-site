@@ -1,0 +1,9 @@
+PHOTOS (all Pexels stock photos, reused from the Brulee Bakery concept pool, none are photos of Elegant Elephant Baking Co. or its products):
+- hero.jpg = Pexels 34517057: cafe table with a croissant, coffee, and a brownie.
+- cookies.jpg = Pexels 12557753: chocolate chip cookies with a French press of coffee on a wooden table.
+- case.jpg = Pexels 13130546: baked goods under a glass cover in a bakery.
+RATING: 5.0 from 47 Google reviews, shown once. Restaurantji 4.2 from 132 ratings is a different platform and is not merged.
+HOURS: listing hours Tue-Sat 10 AM to 4 PM are shown as primary; Eugene Magazine lists Mon-Sat 9 AM to 4 PM, noted on the Visit page.
+SOCIAL: an Instagram handle is mentioned in a review but no verified profile URL was confirmed, so none is linked.
+EMAIL: socialretail.elephant@gmail.com is from the site footer and is shown on the Visit page. A second public address, eebcglutenfree@gmail.com, appears on the listing and is not shown.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.

@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Aroma 2 Pizza And Pasta concept pool, none are photos of Aldo's Pizza Pies or its pies):
+- hero.jpg: a hand pulling a cheesy pepperoni pizza slice (verified alt text from the source concept page).
+- display.jpg: New York style pizza slices on display (verified caption from the source concept page).
+- table.jpg: assorted pizzas with pepperoni and sausage on a wooden table (verified caption from the source concept page).
+RATING: no rating is shown. Research gives 4.5 from 785 reviews on an unnamed primary listing for the downtown location, and other aggregators vary by location; no exact platform is named for the primary figure, so it is omitted per the batch-35 QA rule.
+SOCIAL: an Instagram and Twitter handle is stated on the listing, but no profile URL was confirmed, so none is linked.
+EXISTING SITE: aldospizzapies.com is testimonials plus addresses and hours, so it is not linked.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.
