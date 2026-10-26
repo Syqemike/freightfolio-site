@@ -1,5 +1,6 @@
 PHOTOS (all Pexels stock photos, reused from the Tower of Pizza concept pool, none are photos of San Giorgio Pizzeria Napoletana or its pies):
-- hero.jpg = Pexels 36603262: New York style pizza slices on display.
+- neapolitan.jpg (Tower of Pizza concept pool, verified against the image file this shift): Neapolitan-style pizzas on a wooden table, including a tomato-and-basil pie. Replaces hero.jpg in Rebuild run65.
+- hero.jpg REMOVED 2026-10-26 (Rebuild run65): the former hero photo (Pexels 36603262, New York style pizza slices on display) contradicted this wood-fired Neapolitan pizzeria's positioning; QA Failed the site on this photo-subject mismatch 2026-10-26. Do not reuse Pexels 36603262 for San Giorgio.
 - slice.jpg = Pexels 31587831: a hand pulling a cheesy pepperoni pizza slice.
 - chef.jpg = Pexels 31706371: a pizza chef working in a pizzeria.
 CAPTIONS: gallery captions describe the food actually pictured and do not claim the photos are San Giorgio pies.

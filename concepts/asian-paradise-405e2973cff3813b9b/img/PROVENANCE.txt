@@ -1,8 +1,9 @@
-PHOTOS (all stock photos, reused from the Huong's Vietnamese Restaurant concept pool, which reused the Viet Orleans Bistro pool; none are photos of Asian Paradise or its dishes):
-- hero.jpg: a bowl of pho.
-- herbs.jpg: pho with fresh herbs.
-- top.jpg: pho noodle soup from above.
-CAPTIONS: gallery captions describe the food actually pictured and do not claim the photos are Asian Paradise dishes. Pho is not an Asian Paradise menu item; the photos are used as generic Asian noodle-soup imagery and are captioned as stock.
+PHOTOS (all freely licensed photos from Wikimedia Commons, verified against the image files this shift; none are photos of Asian Paradise or its dishes; captions describe the pictured dishes honestly and label them Stock photo; full sources and licenses below):
+- general-tso.jpg: General Tso's Chicken on a plate. Source: Wikimedia Commons, "General Tso's Chicken at Makai Restaurant, Gulou (20221026161929).jpg", CC BY-SA 4.0.
+- gyoza.jpg: Gyoza dumplings on a plate. Source: Wikimedia Commons, "Gyoza dumplings (53726549642).jpg", CC BY-SA 2.0.
+- kung-pao-shrimp.jpg: Kung Pao shrimp with peppers and cashews. Source: Wikimedia Commons, "Kung pao shrimp.jpg", CC BY-SA 2.0.
+- hero.jpg, herbs.jpg, top.jpg REMOVED 2026-10-26 (Rebuild run65): all three former photos showed pho, a Vietnamese dish not on Asian Paradise's Chinese/Japanese menu; QA Failed the site on this photo-cuisine mismatch 2026-10-26. The replacement photos are all dishes from Asian Paradise's researched menu (General Tso's Chicken, handmade Gyoza, Kung Pao shrimp).
+CAPTIONS: gallery captions describe the food actually pictured and do not claim the photos are Asian Paradise dishes. The replacement photos show dishes from Asian Paradise's researched menu, captioned as stock.
 RATING: Google 4.7 from 69 reviews, shown once.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown. Menu prices were not used because the business match for a third-party price page was unverified.
