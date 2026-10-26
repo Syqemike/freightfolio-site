@@ -1,0 +1,10 @@
+PHOTOS (all stock photos reused from verified concept pools in this repo; none are photos of Shakti Yoga or its work. Every caption on the page describes the image file and is labeled Stock photo.):
+- hero.jpg: A group of adults doing yoga poses on mats in a bright indoor studio. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img/hero.jpg
+- yoga2.jpg: Adults practicing yoga poses in a modern, minimalist studio. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img/yoga2.jpg
+- yoga3.jpg: A group of adults practicing yoga together indoors. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img/yoga3.jpg
+RATING: Rated 4.8 from 68 reviews (public listing), shown once (index page only).
+LOCATION: 133 Grant St, Buffalo, NY 14213. Phone (716) 884-9642 from the CRM record.
+CTA: phone only (Call to book with tel:). No verified online booking URL is in the CRM record, so no Book Now button is shown.
+HOURS: only verified hours are shown. Note: Exact weekday session times vary. Call to confirm.
+SOCIAL: no confirmed social profile is linked (when in doubt, omitted).
+DISCLOSURE: design-preview disclosure at the top of every page; noindex meta on every page.

@@ -1,0 +1,10 @@
+PHOTOS (all stock photos reused from verified concept pools in this repo; none are photos of Atticus Coffee & Gifts or its work. Every caption on the page describes the image file and is labeled Stock photo.):
+- beans.jpg: Coffee beans. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/sage-coffee-and-books-404e2973cff381ada7/img/beans.jpg
+- latte.jpg: A latte. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/royal-blend-coffee-tea-d2300f549341/img/latte.jpg
+- pastry.jpg: A pastry. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/royal-blend-coffee-tea-d2300f549341/img/pastry.jpg
+RATING: Rated 4.7 from 218 reviews (public listing), shown once (index page only).
+LOCATION: 222 N Howard St, Spokane, WA 99201. Phone (509) 747-0336 from the CRM record.
+CTA: phone only (Call to book with tel:). No verified online booking URL is in the CRM record, so no Book Now button is shown.
+HOURS: only verified hours are shown. Note: none
+SOCIAL: Facebook Atticus Coffee.
+DISCLOSURE: design-preview disclosure at the top of every page; noindex meta on every page.

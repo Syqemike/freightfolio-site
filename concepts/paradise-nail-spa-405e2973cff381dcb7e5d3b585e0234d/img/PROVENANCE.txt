@@ -1,0 +1,10 @@
+PHOTOS (all stock photos reused from verified concept pools in this repo; none are photos of Paradise Nail Spa or its work. Every caption on the page describes the image file and is labeled Stock photo.):
+- manicure.jpg: Manicure in progress. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/franklin-nails-403e2973cff381ae/img/manicure.jpg
+- pedicure.jpg: Pedicure service. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/franklin-nails-403e2973cff381ae/img/pedicure.jpg
+- nails.jpg: Finished nails. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/franklin-nails-403e2973cff381ae/img/nails.jpg
+RATING: Rated 4.7 from 47 reviews (directory listing), shown once (index page only).
+LOCATION: 295 US-90 #24, Bay St. Louis, MS 39520. Phone (228) 344-3147 from the CRM record.
+CTA: phone only (Call to book with tel:). No verified online booking URL is in the CRM record, so no Book Now button is shown.
+HOURS: only verified hours are shown. Note: Sunday hours are not listed in verified sources.
+SOCIAL: no confirmed social profile is linked (when in doubt, omitted).
+DISCLOSURE: design-preview disclosure at the top of every page; noindex meta on every page.

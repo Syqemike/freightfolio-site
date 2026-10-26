@@ -1,0 +1,10 @@
+PHOTOS (all stock photos reused from verified concept pools in this repo; none are photos of Mermaids Bakery or its work. Every caption on the page describes the image file and is labeled Stock photo.):
+- cake.jpg: A decorated cake. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/arahis-bakery-402e2973cff38140/img/cake.jpg
+- dessert.jpg: A dessert. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/arahis-bakery-402e2973cff38140/img/dessert.jpg
+- pastelitos.jpg: Pastries. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/arahis-bakery-402e2973cff38140/img/pastelitos.jpg
+RATING: Rated 4.7 from 42 reviews (public listing), shown once (index page only).
+LOCATION: 1543 Champa St, Denver, CO 80202. Phone (303) 534-0956 from the CRM record.
+CTA: phone only (Call to book with tel:). No verified online booking URL is in the CRM record, so no Book Now button is shown.
+HOURS: only verified hours are shown. Note: none
+SOCIAL: Instagram @MermaidsBakery.
+DISCLOSURE: design-preview disclosure at the top of every page; noindex meta on every page.

@@ -1,0 +1,10 @@
+PHOTOS (all stock photos reused from verified concept pools in this repo; none are photos of 50 Elm Cafe & Spirits or its work. Every caption on the page describes the image file and is labeled Stock photo.):
+- ceviche.jpg: Ceviche. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/smokin-gringos-taco-truck-catering-404e2973cff38139b6/img/ceviche.jpg
+- aguachile.jpg: Aguachile. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/smokin-gringos-taco-truck-catering-404e2973cff38139b6/img/aguachile.jpg
+- cafecito.jpg: Cafecito. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/arahis-bakery-402e2973cff38140/img/cafecito.jpg
+RATING: Rated 4.7 from 81 reviews (public listing), shown once (index page only).
+LOCATION: 50 Elm St, Hartford, CT 06106. Phone (860) 206-3322 from the CRM record.
+CTA: phone only (Call to book with tel:). No verified online booking URL is in the CRM record, so no Book Now button is shown.
+HOURS: only verified hours are shown. Note: Only Friday hours are verified in research. Other days are not listed in verified sources, so call to confirm.
+SOCIAL: no confirmed social profile is linked (when in doubt, omitted).
+DISCLOSURE: design-preview disclosure at the top of every page; noindex meta on every page.

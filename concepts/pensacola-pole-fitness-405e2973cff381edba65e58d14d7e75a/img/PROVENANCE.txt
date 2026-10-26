@@ -1,0 +1,10 @@
+PHOTOS (all stock photos reused from verified concept pools in this repo; none are photos of Pensacola Pole Fitness or its work. Every caption on the page describes the image file and is labeled Stock photo.):
+- ballet.jpg: Ballet dancers in a studio. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/fabulous-feet-dance-studio-403e2973cff381a5/img/ballet.jpg
+- barre.jpg: Barre work in a dance studio. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/fabulous-feet-dance-studio-403e2973cff381a5/img/barre.jpg
+- poses.jpg: Dance poses in a studio. Stock photo. Source pool file: /home/hatch/workspace/freightfolio-site/concepts/fabulous-feet-dance-studio-403e2973cff381a5/img/poses.jpg
+RATING: Rated 4.9 from 11 reviews (public listing), shown once (index page only).
+LOCATION: 1018 E Bobe St, Pensacola, FL. Phone (850) 503-9978 from the CRM record.
+CTA: phone only (Call to book with tel:). No verified online booking URL is in the CRM record, so no Book Now button is shown.
+HOURS: only verified hours are shown. Note: none
+SOCIAL: no confirmed social profile is linked (when in doubt, omitted).
+DISCLOSURE: design-preview disclosure at the top of every page; noindex meta on every page.
