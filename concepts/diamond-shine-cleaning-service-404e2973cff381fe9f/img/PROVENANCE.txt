@@ -1,0 +1,7 @@
+PHOTOS (all Pexels stock photos, none are photos of Diamond Shine Cleaning Service):
+- hero.jpg = Pexels 6197108: cleaners in red overalls cleaning a modern interior.
+- sweep.jpg = Pexels 4108715: a person sweeping a wooden floor with a broom and dustpan. NOTE: this photo is also used on the Dust Bunny Janitorial Services concept this shift; it is a generic stock photo, captioned identically.
+- kitchen.jpg = Pexels 373548: a kitchen island with upholstered chairs.
+RATING: 5.0 from 35 reviews on Google, shown once. FLAG: the research block found no rating count; the 5.0/35 figure comes from the scout-observed Google Business profile snippet. QA should confirm.
+NOT USED: other Diamond Shine cleaners (Dhaka, San Antonio, a Groupon deal) are different businesses. The only web presence found is a Google business.site page; it is not linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

@@ -1,0 +1,8 @@
+PHOTOS (all Pexels stock photos, none are photos of Jackson Memorial Funeral Service):
+- hero.jpg = Pexels 373527: a garden path lined with flower beds.
+- roses.jpg = Pexels 122734: pink garden roses.
+- bouquet.jpg = Pexels 931179: a bouquet of peach roses and yellow poppies. NOTE: this photo is also used on the Gardner's Florist concept this shift; it is a generic stock photo, captioned identically.
+RATING: 4.5 from 39 reviews on its public business listing, shown once.
+DISTINCT FROM: Peoples Funeral Home Inc (886 N Farish St, 601-969-3040) is a different business and was built separately this shift. Jackson Memorial Funeral Home in Jackson AL is a different business.
+EXISTING SITE: jacksonmemorialfuneralservice.com is essentially a recent-obituaries list plus one short welcome paragraph; it is not linked.
+CTA: phone only. No verified online arrangement URL is in the CRM record, so no online arrangement button is shown.

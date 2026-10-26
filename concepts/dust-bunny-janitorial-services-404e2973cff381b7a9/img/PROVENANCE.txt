@@ -1,0 +1,7 @@
+PHOTOS (all Pexels stock photos, none are photos of Dust Bunny Janitorial Services):
+- hero.jpg = Pexels 4108715: a person sweeping a wooden floor with a broom and dustpan. NOTE: this photo is also used on the Diamond Shine Cleaning Service concept this shift; it is a generic stock photo, captioned identically.
+- kitchen.jpg = Pexels 280232: a clean modern kitchen.
+- dining.jpg = Pexels 373530: a dining table set with purple hydrangeas.
+RATING: 5.0 from 10 reviews on HomeAdvisor, shown once. FLAG: the research block found no rating count; the 5.0/10 figure comes from the scout-observed HomeAdvisor listing. QA should confirm.
+NOT USED: Dust Bunny Cleaners LLC of Laurel MS (601-319-7111) is a different business. The listed site dbjsms.com was unreachable on a live browser check 2026-10-25 and is not linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

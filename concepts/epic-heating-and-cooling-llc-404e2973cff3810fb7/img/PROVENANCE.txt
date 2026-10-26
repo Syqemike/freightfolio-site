@@ -1,0 +1,8 @@
+PHOTOS (all Pexels stock photos, none are photos of Epic Heating and Cooling, LLC):
+- hero.jpg = Pexels 106399: a house at dusk with lights on.
+- house.jpg = Pexels 1029599: a white house with a picket fence in autumn.
+- home.jpg = Pexels 6267516: a brick house with a lawn and driveway.
+RATING: 5.0 from 30 reviews on Google, shown once. HomeAdvisor 4.9 from 56-57 reviews is a second profile and is not merged.
+EMAIL: an email is verified on the business site contact section, but the address is not in the CRM record, so it is not published here.
+EXISTING SITE: epichvac.net is a thin single page of service blurbs plus contact info; it is not linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
