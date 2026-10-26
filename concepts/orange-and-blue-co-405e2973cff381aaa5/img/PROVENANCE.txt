@@ -2,7 +2,7 @@ PHOTOS (all Pexels stock photos, reused from the Geez Louise Boutique concept po
 - hero.jpg = Pexels 374677: a woman browsing clothing racks in a shop.
 - jacket.jpg = Pexels 1536619: a denim jacket over a mustard top against a yellow wall.
 - folded.jpg = Pexels 581087: folded shirts in a drawer.
-RATING: 5.0 from 15 reviews on its public business listing, shown once.
+RATING: removed 2026-10-26 (Rebuild run59) - the unsourced rating figure was deleted from index.html because CRM research names no verified review platform for it; no replacement rating added.
 SOCIAL: a Facebook reference in a 2018 article gave no current handle, and @unclewolfies belongs to the restaurant, not the shop, so no social link is shown.
 WEBSITE: shoporangeandblue.com is a minimal storefront with no catalog, hours, or contact pages surfaced; it is not linked as a full site.
 CTA: phone only. No verified online checkout URL is in the CRM record, so no shop-now button is shown.

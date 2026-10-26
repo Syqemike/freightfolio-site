@@ -2,7 +2,7 @@ PHOTOS (all Pexels stock photos, reused from the Bill's Auto Repair concept pool
 - hero.jpg = Pexels 3807277: a mechanic inspecting a car engine with a light.
 - engine.jpg = Pexels 9702354: a performance car engine with red accents.
 - turbo.jpg = Pexels 17575953: a turbocharger and air filter in an engine bay.
-RATING: 4.8 from 38 reviews on a directory listing, shown once. BBB grade A+ shown once as a trust signal, not as a second star rating.
+RATING: unsourced star-rating figure removed 2026-10-26 (Rebuild run59) because CRM research names no verified review platform for it; no replacement rating added. BBB grade A+ shown once as a trust signal, not as a second star rating.
 WEBSITE NOT LINKED: the listed domain worldwidetransmissioninc.com now serves unrelated online-slot content and is not linked; the older transmissionswichita.com domain was not verified live and is not linked.
 OPERATING-STATUS FLAG CARRIED: research flagged confirming the shop is still operating before outreach; no closure report was found, but QA and Sales should confirm before drafting.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

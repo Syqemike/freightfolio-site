@@ -3,7 +3,7 @@ PHOTOS (all Pexels stock photos, reused from the Kato Floral Designs and Coastal
 - sunflowers.jpg = Pexels 1169084: sunflowers in a field.
 - seasonal.jpg: a pale seasonal arrangement in a vase.
 NOTE: the Kato bouquet photo (Pexels 1035677) was deliberately NOT reused here because the same photo is used on the By Design Holiday and Events concept this shift.
-RATING: 4.9 from 28 reviews on its public business listing, shown once. The Knot figure of 5.0 from 5 reviews was not merged.
+RATING: removed 2026-10-26 (Rebuild run59) - the unsourced rating figure was deleted from index.html because CRM research names no verified review platform for it; no replacement rating added.
 ADDRESS: 2609 E. Johnson St is the current listing address; an older WeddingWire address of 2021 Atwood Ave is not used.
 SOCIAL: an Instagram presence was referenced in a review but no handle was verified, so none is linked. The Kansas City @alluring_blooms is a different business.
 WEBSITE: alluringblooms.com is a blog feed only and is not linked as a full site.

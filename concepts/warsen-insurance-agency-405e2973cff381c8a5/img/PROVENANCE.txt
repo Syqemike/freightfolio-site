@@ -3,6 +3,6 @@ PHOTOS (all Pexels stock photos, reused from the Adrian Enzastiga concept pool, 
 - paperwork.jpg = Pexels 7731328: an agent reviewing home insurance paperwork with clients.
 - office.jpg = Pexels 8441785: a consultation in an office setting.
 NOTE: the same three photos are also used on the Pro Tax Consultants LLC concept this shift; generic stock, captioned identically.
-RATING: 5.0 from 21 reviews on its public business listing, shown once.
+RATING: removed 2026-10-26 (Rebuild run59) - the unsourced rating figure was deleted from index.html because CRM research names no verified review platform for it; no replacement rating added.
 WEBSITE: warsenins.com is a single basic text page and is not linked as a full site. Staff emails shown on that page are not published here.
 CTA: phone only. No verified online quote URL is in the CRM record, so no quote button is shown.

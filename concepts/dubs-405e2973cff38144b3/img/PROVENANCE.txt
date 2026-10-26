@@ -1,5 +1,5 @@
 PHOTOS (all stock photos, reused from the Kevin's Korner and Juanita's Kitchen concept pools, none are photos of Dubs or its dishes):
-- hero.jpg: a burger with fries on a plate.
+- hero.jpg: a burger on a grill rack with buns behind it (corrected 2026-10-26, Rebuild run59; the photo shows no fries and no plate).
 - cheeseburger.jpg: cheeseburger with cheese and bacon on a wooden plate.
 - fish.jpg: crispy fried fish with fries and salad.
 RATING: 4.8 from 87 ratings on Restaurantji, shown once. The RestaurantJump figure of 4.6 from 144 reviews was not merged.

@@ -2,7 +2,7 @@ PHOTOS (all Pexels stock photos, reused from the Blue Dog K9 Care concept pool, 
 - hero.jpg = Pexels 7210355: a woman playing with a Border Collie on a meadow.
 - dog2.jpg = Pexels 9376756: a Goldendoodle chasing a colorful ball in a park.
 - dog3.jpg = Pexels 6469221: two black Staffordshire Bull Terriers playing on a grassy field.
-RATING: 5.0 from 145 reviews on its public business listing, shown once.
+RATING: removed 2026-10-26 (Rebuild run59) - the unsourced rating figure was deleted from index.html because CRM research names no verified review platform for it; no replacement rating added.
 HOURS NOTE: listing hours are shown; the shop's own description quoted 11:00 AM to 8:00 PM daily, which conflicts with the listing and is not shown. QA should confirm before drafting.
 LOCATION NOTE: a Gulf Shores location with the same phone and site is listed permanently closed; this concept is the active Orange Beach location only.
 WEBSITE: sweetpeasposhpets.com is a thin Wix home page with no catalog or hours pages surfaced; it is not linked as a full site.
