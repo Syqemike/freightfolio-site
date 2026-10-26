@@ -1,0 +1,9 @@
+PHOTOS (all Pexels stock photos, reused from the Vilma Tax Service concept pool, none are photos of Kristel's Tax and Accounting or its office):
+- hero.jpg = Pexels 5900135: a person organizing finances with a calculator, receipts, and notes at a desk.
+- tax2.jpg = Pexels 6694543: a desk with financial documents, currency, a laptop, and a phone calculator.
+- tax3.jpg = Pexels 6863330: a hand on a 1040 tax form with a calculator on a desk.
+RATING: Google 4.5 from 36 reviews, shown once.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
+HOURS FLAG: hours conflict flagged for QA: place listing Mon-Fri 8:00 AM to 4:30 PM vs directory listing Mon-Fri 9:00 AM to 6:00 PM vs tax-season letterhead hours. The place listing hours are shown with a note.
+NOT USED: Kristels Tax and Accounting at 5018 Madison Ave is a different business and was not used.

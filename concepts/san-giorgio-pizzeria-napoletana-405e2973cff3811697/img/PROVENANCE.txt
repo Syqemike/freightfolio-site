@@ -1,0 +1,8 @@
+PHOTOS (all Pexels stock photos, reused from the Tower of Pizza concept pool, none are photos of San Giorgio Pizzeria Napoletana or its pies):
+- hero.jpg = Pexels 36603262: New York style pizza slices on display.
+- slice.jpg = Pexels 31587831: a hand pulling a cheesy pepperoni pizza slice.
+- chef.jpg = Pexels 31706371: a pizza chef working in a pizzeria.
+CAPTIONS: gallery captions describe the food actually pictured and do not claim the photos are San Giorgio pies.
+RATING: Google 4.9 from 133 reviews, shown once. A second figure (4.8 from 353 on Restaurantji) was not merged and is not shown.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked. An Instagram handle seen in review text was not linked because its URL is unverified.
+CTA: phone only. No verified online ordering or reservation URL is in the CRM record, so no order or Book Now button is shown.

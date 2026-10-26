@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Atticus Coffee and Gifts concept pool and the Cat Island Coffeehouse concept pool, none are photos of Cafe Zata or its food):
+- beans.jpg: coffee beans.
+- table.jpg = Pexels 20229730 (Cat Island Coffeehouse pool): coffee and pastries on a wooden table in a cafe.
+- pastry.jpg: a pastry.
+CAPTIONS: gallery captions describe the items actually pictured and do not claim they are Cafe Zata items.
+RATING: Google 4.7 from 122 reviews, shown once. A second aggregator figure was not merged and is not shown.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked. An Instagram handle seen in review text was not linked because its URL is unverified.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.
