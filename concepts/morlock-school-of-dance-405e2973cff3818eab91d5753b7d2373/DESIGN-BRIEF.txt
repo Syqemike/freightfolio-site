@@ -1,0 +1,20 @@
+DESIGN BRIEF: Morlock School of Dance (East Hartford, CT)
+Concept slug: morlock-school-of-dance-405e2973cff3818eab91d5753b7d2373
+
+AESTHETIC
+Warm, traditional, and welcoming, with an editorial feel: a deep plum header band and quote panel, cream page background, and an ochre accent rule. The layout is deliberately asymmetric in the hero (text left, framed photo right with an offset ochre border) so the page does not read as a generic template.
+
+TYPOGRAPHY
+Georgia serif for headings and display text, giving a classic, established feel that suits a 70 year old school. Arial/Helvetica for navigation, buttons, captions, and the hours table, keeping practical information easy to scan.
+
+PALETTE
+Deep plum (#43193d), warm cream (#faf5ee), paper white (#fffdf8), ochre gold (#c98a2e), ink (#2b232a). No black and gold default scheme: plum and ochre are chosen for a dance school with a long local history.
+
+IMAGERY
+Four stock photographs from Pexels, each captioned "Stock photo" on the page and listed in PROVENANCE.txt. No real photos of this business were obtainable: the school's own site does not render as a homepage and no verified social profile was found in research. Hero image is a children's dance class, matching the school's audience. No illustrations, no SVG art, no CSS drawn graphics anywhere.
+
+LAYOUT AND JOURNEY
+Top disclosure strip, then name, then simple section navigation (About, Classes, Hours, Visit). Hero states what the school is and offers one call action. A plum quote band carries the school's own public listing line. About covers the 70 year history, former name, and owners. Classes describes only what research verified (for children, current techniques, fun and creative environment) and directs readers to call for class types, schedules, and pricing, which are not verified. Gallery, hours, and visit/contact sections follow. Single call to action throughout: call (860) 568-0160. No Book Now button, because no online booking destination was verified.
+
+FACTS USED (all from the queue research record, 2026-10-26)
+Address 102 Pitkin St, East Hartford, CT (primary listing; a second directory source listed 90 Pitkin St, flagged in research, not used). Phone +1 860-568-0160. Hours Mon-Fri 4:30 PM to 9:00 PM, Sat 10:00 AM to 1:30 PM, Sun closed. 70 years in East Hartford, formerly Mary Morlock School of Performing Arts, owners/artistic directors Christine Sessa and Elizabeth Sanderson. Rating 4.9 stars from 18 reviews in public listings, shown once. No class types, prices, age ranges, or instructors beyond the owners were claimed, because none were verified.
