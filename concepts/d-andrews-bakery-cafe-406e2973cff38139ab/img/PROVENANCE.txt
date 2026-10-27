@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Antoinette Bakery and Cafe concept pool, which reused the Blue Crane Bakery pool; none are photos of D'Andrews Bakery and Cafe or its bakes):
+- rolls.jpg: cinnamon rolls on bakery racks.
+- hero.jpg: baked goods under a glass cover in a bakery.
+- cookies.jpg: chocolate chip cookies with a French press of coffee.
+RATING: no rating shown. Research gives conflicting figures across platforms (5.0 from 16 and 4.6 from 465), so no figure is shown.
+SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
+CTA: phone and email. Online ordering is mentioned in research, but no ordering URL is in the CRM record, so no ordering link is shown.
+NOT USED: the own site's menu section shows placeholder Latin text and is not linked as a menu page. No prices are shown because none were found in research.

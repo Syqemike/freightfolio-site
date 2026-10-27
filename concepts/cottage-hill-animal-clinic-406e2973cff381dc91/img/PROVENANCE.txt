@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Broadway Veterinary Clinic concept pool, which reused the Advanced Animal Care pool; none are photos of Cottage Hill Animal Clinic or its patients):
+- hero-dog-exam.jpg: veterinarian examining a dog on an exam table.
+- puppy-portrait.jpg: golden retriever puppy portrait.
+- cat-vet-check.jpg: cat being examined on a vet exam table.
+RATING: no rating shown. Research gives conflicting figures across sources (4.6 from 36 and 4.8 from 209), so no figure is shown.
+SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record.
+NOT USED: the own site is service names plus hours and phone and is not linked as a services page. No prices are shown because none were found in research. Thursday hours were not listed.

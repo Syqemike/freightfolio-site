@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Aldo's Pizza Pies concept pool, which reused the Aroma 2 Pizza And Pasta pool; none are photos of Bella Nashville Pizzeria or its pies):
+- hero.jpg: a hand pulling a cheesy pepperoni pizza slice.
+- display.jpg: New York style pizza slices on display.
+- table.jpg: assorted pizzas with pepperoni and sausage on a wooden table.
+RATING: no rating shown. Research gives 4.8 from 127 reviews with no exact platform named, so the figure is omitted.
+SOCIAL: the own site mentions Facebook and Twitter, but no profile URL is in the CRM record, so none is linked.
+CTA: phone and email. No verified online ordering URL is in the CRM record.
+NOT USED: the own site shows images plus short blurbs with a specials section marked as updating and is not linked as a menu page. No prices are shown because none were found in research.
