@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Carmen Studio Photography | Portrait Studio in Akron, OH</title>
+<meta name="description" content="Design preview concept for Carmen Studio Photography, a portrait studio at 72 E Mill St in Akron, Ohio. Senior portraits, publicity headshots, sports, family, and wedding photography.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#faf6ee;--ink:#1c1815;--red:#8e2f23;--line:#d8cfbc;--soft:#efe8d8}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Jost',Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  a{color:inherit}
+  .preview-bar{background:var(--ink);color:#f5efdf;text-align:center;font-size:13px;letter-spacing:.08em;padding:10px 16px}
+  .preview-bar strong{color:#f2c14e}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  header.mast{padding:34px 0 10px;border-bottom:3px double var(--ink)}
+  .mast-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+  .brand{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(40px,6vw,68px);line-height:1;font-weight:700;letter-spacing:.01em}
+  .brand span{color:var(--red)}
+  .mast-city{font-size:14px;letter-spacing:.22em;text-transform:uppercase;padding-bottom:8px;white-space:nowrap}
+  nav.site{border-bottom:1px solid var(--line);padding:12px 0;display:flex;gap:26px;flex-wrap:wrap;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+  nav.site a{text-decoration:none}
+  nav.site a:hover{color:var(--red)}
+  .hero{margin:30px 0 8px}
+  .hero img{width:100%;height:auto;display:block;border:1px solid var(--ink)}
+  .cap{font-size:13px;color:#5c554a;margin-top:8px}
+  .cap b{color:var(--red);font-weight:600}
+  .intro{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;margin:44px 0}
+  .intro h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(34px,4.5vw,52px);line-height:1.12;font-weight:600}
+  .intro h1 em{color:var(--red);font-style:italic}
+  .intro p{margin-top:14px;font-size:17px}
+  .side-note{border-left:3px solid var(--red);padding-left:20px;font-size:15px;color:#4a443b}
+  .side-note p+p{margin-top:12px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+  .btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;padding:13px 26px;font-size:15px;letter-spacing:.1em;text-transform:uppercase}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  section{margin:56px 0}
+  .sec-head{display:flex;align-items:baseline;gap:16px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:26px}
+  .sec-head .num{font-family:'Cormorant Garamond',Georgia,serif;font-size:30px;color:var(--red);font-weight:700}
+  .sec-head h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:34px;font-weight:600;line-height:1.1}
+  .services{list-style:none}
+  .services li{display:grid;grid-template-columns:64px 1fr auto;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
+  .services .n{font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;color:var(--red)}
+  .services h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:600}
+  .services p{color:#4a443b;font-size:15px;max-width:520px}
+  .services .call{font-size:13px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
+  .gallery figure:nth-child(2){margin-top:36px}
+  .gallery figure:nth-child(5){margin-top:-18px}
+  .gallery img{width:100%;height:auto;display:block;border:1px solid var(--ink)}
+  .gallery figcaption{font-size:13px;color:#5c554a;margin-top:8px}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  .visit h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;margin-bottom:10px}
+  table.hours{border-collapse:collapse;width:100%;font-size:16px}
+  table.hours td{padding:7px 0;border-bottom:1px solid var(--line)}
+  table.hours td:last-child{text-align:right}
+  .closed{color:var(--red)}
+  .rating{border:1px solid var(--ink);background:var(--soft);padding:22px 26px;margin:44px 0;display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+  .rating .score{font-family:'Cormorant Garamond',Georgia,serif;font-size:52px;font-weight:700;line-height:1}
+  .rating p{font-size:15px;color:#4a443b}
+  footer{border-top:3px double var(--ink);padding:26px 0 40px;font-size:14px;color:#4a443b}
+  footer .fgrid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  @media(max-width:700px){
+    .intro,.visit{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .gallery figure:nth-child(2),.gallery figure:nth-child(5){margin-top:0}
+    .services li{grid-template-columns:40px 1fr}
+    .services .call{grid-column:2}
+    nav.site{gap:16px}
+  }
+</style>
+</head>
+<body>
+<div class="preview-bar"><strong>Website Concept</strong> &nbsp; This is a design preview created by Freightfolio. It is not the business's official site.</div>
+
+<div class="wrap">
+  <header class="mast">
+    <div class="mast-row">
+      <div class="brand">Carmen Studio <span>Photography</span></div>
+      <div class="mast-city">Akron, Ohio</div>
+    </div>
+  </header>
+  <nav class="site" aria-label="Site">
+    <a href="#portraits">Portraits</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero" id="portraits">
+    <img src="img/hero-collage.jpg" alt="Collage of senior portraits, publicity headshots, and sports portraits from Carmen Studio Photography">
+    <p class="cap"><b>From the studio:</b> seniors, publicity headshots, and sports portraits, as shown on the studio's own site. Cropped panels from this collage appear in the gallery below.</p>
+  </div>
+
+  <div class="intro">
+    <div>
+      <h1>A portrait studio in downtown Akron, <em>built around the people in front of the camera.</em></h1>
+      <p>Carmen Studio Photography works from its studio at 72 E Mill St in Akron. The studio photographs high school seniors, working professionals, sports teams, families, and weddings, and offers online proofs so clients can review their portraits.</p>
+      <p>The studio's own site describes more than 60 years behind the camera. Sessions are by appointment, and the studio asks visitors to call before coming, since staff are often out on shoots.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+13302537781">Call (330) 253-7781</a>
+        <a class="btn ghost" href="#visit">Hours and directions</a>
+      </div>
+    </div>
+    <div class="side-note">
+      <p><b>Senior portraits</b><br>Studio and outdoor senior sessions, the studio's mainstay since its early days photographing Akron students.</p>
+      <p><b>Publicity headshots</b><br>Clean, straightforward headshots for professionals who need a current portrait for work.</p>
+      <p><b>Sports portraits</b><br>Individual players and full teams, photographed on the field and in the studio.</p>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="sec-head"><span class="num">01</span><h2>Services</h2></div>
+    <ul class="services">
+      <li><span class="n">01</span><div><h3>Senior Portraits</h3><p>Studio and location portraits for graduating seniors.</p></div><a class="call" href="tel:+13302537781">Call for details</a></li>
+      <li><span class="n">02</span><div><h3>Publicity Headshots</h3><p>Professional headshots for publicity and workplace use.</p></div><a class="call" href="tel:+13302537781">Call for details</a></li>
+      <li><span class="n">03</span><div><h3>Sports Photography</h3><p>Individual athletes and team portraits, on the field and in the studio.</p></div><a class="call" href="tel:+13302537781">Call for details</a></li>
+      <li><span class="n">04</span><div><h3>Family Portraits</h3><p>Family sessions at the studio or on location.</p></div><a class="call" href="tel:+13302537781">Call for details</a></li>
+      <li><span class="n">05</span><div><h3>Weddings</h3><p>Wedding day photography. Ask the studio about coverage and availability.</p></div><a class="call" href="tel:+13302537781">Call for details</a></li>
+      <li><span class="n">06</span><div><h3>Web Portraiture and Online Proofs</h3><p>Portraits prepared for web use, with proofs clients can review online.</p></div><a class="call" href="tel:+13302537781">Call for details</a></li>
+    </ul>
+    <p style="margin-top:16px;font-size:14px;color:#5c554a">Pricing is not listed on the studio's current site. Call the studio for session details and pricing.</p>
+  </section>
+
+  <section id="gallery">
+    <div class="sec-head"><span class="num">02</span><h2>From the Studio</h2></div>
+    <div class="gallery">
+      <figure><img src="img/senior-portrait.jpg" alt="Senior portrait of a young woman photographed by Carmen Studio Photography"><figcaption>Senior portrait. Photo from the studio's own site.</figcaption></figure>
+      <figure><img src="img/publicity-headshot.jpg" alt="Publicity headshot of a professional woman photographed by Carmen Studio Photography"><figcaption>Publicity headshot. Photo from the studio's own site.</figcaption></figure>
+      <figure><img src="img/sports-football.jpg" alt="Sports portrait of a high school football player in a Hoban uniform photographed by Carmen Studio Photography"><figcaption>Sports portrait. Photo from the studio's own site.</figcaption></figure>
+      <figure><img src="img/senior-green-jacket.jpg" alt="Senior portrait of a young man in a letterman jacket photographed by Carmen Studio Photography"><figcaption>Senior portrait. Photo from the studio's own site.</figcaption></figure>
+      <figure><img src="img/team-bleachers.jpg" alt="Full team portrait on bleachers photographed by Carmen Studio Photography"><figcaption>Team portrait. Photo from the studio's own site.</figcaption></figure>
+      <figure><img src="img/sports-softball.jpg" alt="Sports portrait of a softball player photographed by Carmen Studio Photography"><figcaption>Sports portrait. Photo from the studio's own site.</figcaption></figure>
+      <figure><img src="img/sports-falcons.jpg" alt="Sports portrait of a football player in a Falcons uniform photographed by Carmen Studio Photography"><figcaption>Sports portrait. Photo from the studio's own site.</figcaption></figure>
+    </div>
+  </section>
+
+  <div class="rating">
+    <div class="score">4.8</div>
+    <p><b>4.8 stars from 37 reviews</b> on a public listing, as observed October 25, 2026. This is the only rating shown on this page.</p>
+  </div>
+
+  <section id="visit">
+    <div class="sec-head"><span class="num">03</span><h2>Visit the Studio</h2></div>
+    <div class="visit">
+      <div>
+        <h3>Hours</h3>
+        <table class="hours">
+          <tr><td>Monday</td><td>12:00 pm to 6:00 pm</td></tr>
+          <tr><td>Tuesday</td><td>10:00 am to 5:00 pm</td></tr>
+          <tr><td>Wednesday</td><td class="closed">Closed</td></tr>
+          <tr><td>Thursday</td><td class="closed">Closed</td></tr>
+          <tr><td>Friday</td><td>10:00 am to 5:00 pm</td></tr>
+          <tr><td>Saturday</td><td>10:00 am to 1:00 pm</td></tr>
+          <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+        </table>
+        <p style="margin-top:14px;font-size:15px">Appointment only. Please call before coming, since staff are often out on shoots.</p>
+      </div>
+      <div id="contact">
+        <h3>Find Us</h3>
+        <p>72 E Mill St<br>Akron, OH 44308</p>
+        <p style="margin-top:12px">Phone: <a href="tel:+13302537781">(330) 253-7781</a><br>
+        Email: <a href="mailto:carmenstudiophotography@gmail.com">carmenstudiophotography@gmail.com</a><br>
+        Current site: <a href="https://carmenstudio.net">carmenstudio.net</a></p>
+        <p style="margin-top:12px"><a href="https://maps.google.com/?q=72+E+Mill+St,+Akron,+OH+44308">Get directions on Google Maps</a></p>
+        <div class="cta-row">
+          <a class="btn" href="tel:+13302537781">Call to book a session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fgrid">
+      <div><b>Carmen Studio Photography</b><br>72 E Mill St, Akron, OH 44308<br>(330) 253-7781</div>
+      <div>Website Concept by Freightfolio.<br>This design preview is not the business's official site.</div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
