@@ -1,7 +1,8 @@
-PHOTOS (all stock photos, reused from the Crosby's Heating and Air concept pool; none are photos of A Quick Fix Heating and Air or its work. Captions describe homes, not HVAC work):
-- hero.jpg = Pexels 106399: a house at dusk with lights on.
-- house.jpg = Pexels 1029599: a white house with a picket fence in autumn.
-- home.jpg = Pexels 6267516: a brick house with a lawn and driveway.
+PHOTOS (rebuild 2026-10-27):
+- technician.jpg: STOCK photo, Pexels 6471913 (https://www.pexels.com/photo/man-repairing-cables-in-a-car-6471913/): a technician servicing an outdoor air conditioning unit with manifold gauges. Labeled as a stock photo in the caption. Note: the Pexels page slug mentions car cables, but the image itself, verified firsthand, shows HVAC technician work.
+- thermostat.jpg: STOCK photo, Pexels 7616651 (https://www.pexels.com/photo/white-thermostat-hanging-on-the-wall-7616651/): a digital thermostat on a wall. Labeled as a stock photo in the caption.
+- van.jpg: REAL photo of A Quick Fix Heating and Air, from the business's own website homepage (https://www.aquickfixhvac.com/): close-up of the pink Quick Fix Heating and Air van wrap. Not labeled as stock; captioned as the business's van.
+PHOTO NOTE (rebuild 2026-10-27): replaced the QA-failed houses-only hero and gallery with HVAC work photos plus the business's own van photo, verified firsthand. No houses-only imagery remains on the page. The business's own Before/After condenser-cleaning photo could not be downloaded (no direct file URL exposed on its Wix homepage), so the stock HVAC photos above are the fallback per the QA acceptance criterion.
 RATING: 4.9 from 120 HomeAdvisor reviews, shown once.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
