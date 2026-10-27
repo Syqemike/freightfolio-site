@@ -1,0 +1,35 @@
+DESIGN BRIEF: Lazar Imports (Tulsa, OK) - Website Concept
+Batch 45, 2026-10-27
+
+AESTHETIC: Workshop editorial. Cream paper background, deep green-charcoal ink,
+burnt-orange accent, heavy rules and a serif headline voice. It reads like a
+printed shop broadsheet, not a generic template card grid.
+
+TYPOGRAPHY: Georgia serif for the business name and section headlines; plain
+system sans for body copy and navigation. Large, tight headlines; short
+paragraphs; no decorative type effects.
+
+PALETTE: Paper #f3efe4, ink #1e2b23, accent burnt orange #c24e1c, sage
+#dfe5d8. No black-and-gold, no purple gradient, no glowing blobs.
+
+IMAGERY: Three labeled stock photos only (engine bay, oil service, wrench on
+engine). No real photos of this business were obtainable from verified public
+pages (no verified Facebook/Instagram profile found in research), so every
+photo is captioned as a stock photo and is not presented as the shop, its
+staff, or its work. No illustrations, no SVG art, no drawn graphics anywhere.
+
+LAYOUT: Disclosure strip on top, name and nav header, asymmetric hero
+(copy left, engine photo right), numbered section rules, a bordered makes
+grid, and a dark visit panel with hours and contact. Single page, anchor nav.
+
+CUSTOMER JOURNEY: Visitor sees the import focus and since-1985 line first,
+checks whether their make is serviced, then finds hours, address, and the
+call action. No Book Now button: no online booking destination is verified
+for this shop, so the only CTA is Call (918) 587-5009.
+
+FACTS USED (all verified): 1330 E 11th St, Tulsa, OK; phone (918) 587-5009;
+Mon-Fri 8:00 AM to 5:30 PM, Sat-Sun not listed; servicing Asian imports
+since 1985; makes list from the shop's own website; rating 4.7 stars from
+12 reviews (public listing), shown once. No prices, warranties,
+certifications, service durations, or service-area claims are made because
+none are verified.

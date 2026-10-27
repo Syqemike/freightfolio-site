@@ -1,0 +1,20 @@
+DESIGN BRIEF: Carmen Studio Photography, Akron OH
+Concept slug: carmen-studio-photography-405e2973cff3814db036cf6b7bf9ef98
+
+AESTHETIC
+Editorial portrait-studio broadsheet. Warm paper background, ink-black rules and double-rule masthead, darkroom-red accents. The layout reads like a printed studio portfolio sheet, not a generic template card grid: numbered editorial service list, staggered gallery, and a single large collage hero.
+
+TYPOGRAPHY
+Cormorant Garamond (serif display, headlines, numbers) paired with Jost (clean geometric sans for body, nav, captions). Distinct from recent barber/salon concepts that lean on heavy condensed sans headlines.
+
+PALETTE
+Paper #faf6ee, ink #1c1815, darkroom red #8e2f23, hairline #d8cfbc, soft panel #efe8d8. Palette drawn from darkroom and print tones, not the studio's dated black-and-white cover.
+
+IMAGERY
+All photos are real work from the studio's own site (carmenstudio.net cover collage), cropped into individual panels. No stock photos, no illustrations, no concept art. Hero is the studio's full cover collage; gallery panels are crops of the same collage, each captioned as from the studio's own site. See PROVENANCE.txt for the source URL.
+
+LAYOUT
+Single page. Top: design-preview disclosure bar, masthead with business name and city, uppercase section nav. Then full-width collage hero, asymmetric intro (headline plus side notes on the three anchor services), numbered services list, staggered gallery, one rating strip, visit section with hours table and contact block, footer with disclosure repeated.
+
+COPY APPROACH
+Only verified facts: address 72 E Mill St Akron OH 44308, phone (330) 253-7781, hours as listed on the research record, services seniors, publicity, sports, family, weddings, web portraiture, online proofs. The studio's own "60+ years" claim is attributed to the studio's own site, not stated as verified fact. No prices (not listed), no Book Now button (no online booking destination verified), no invented urgency or operating claims. Rating shown exactly once with its source.

@@ -1,0 +1,32 @@
+DESIGN BRIEF - Chrysalis Studio of Belly Dance (Omaha, NE)
+Single-page concept, batch 45, 2026-10-27.
+
+Aesthetic: warm, stage-lit, editorial. The page leans on the studio's own performance
+photography rather than decoration: deep plum panels frame the class list and visit
+sections, warm cream carries the hero and gallery, and a slight tilt on the hero photo
+echoes a dancer mid-movement. No illustrations, no decorative graphics of any kind.
+
+Typography: Marcellus (display serif, elegant and dance-like) for headings and the brand
+mark; Karla (clean, readable sans) for body copy, navigation, and captions.
+
+Palette: deep plum #2e1a2e and darker plum #1f1120 for bands and buttons; copper
+#b97e4b and soft copper #d9ac7c for eyebrows, accents, and the call link; warm cream
+#faf3ea page background with cream-dark dividers. The palette is drawn from the
+costumes in the studio's own photos (plum, copper, warm stage tones).
+
+Imagery: three real photos from the studio's own website delladancing.com (see
+PROVENANCE.txt): veil work as the hero, finger cymbals and stage costumes in the
+gallery. Captions name each photo as from the studio's own website.
+
+Layout: asymmetric hero (text left, tilted photo right on desktop, stacked on mobile);
+a full-width plum band for the six class cards in a 3-column grid; a two-photo gallery;
+a dark visit section split between address/call and listed hours. Simple top navigation
+(Classes, Photos, Visit, Call) anchors to page sections.
+
+Copy rules honored: only verified facts from the CRM research notes and the studio's
+own site. No invented class times, prices, age ranges, instructors, or credentials.
+Schedule and pricing are explicitly marked as not listed, with a call prompt. Rating
+appears exactly once ("4.9 from 15 Google reviews"). No Book Now button (no verified
+online booking destination); all CTAs are Call links to the verified phone
+(402) 658-4978. No em dashes, no banned AI phrases, no "No X, no Y" triples, no
+invented urgency or operating claims.

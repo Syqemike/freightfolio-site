@@ -1,0 +1,36 @@
+PHOTO PROVENANCE: Lazar Imports concept site
+Batch 45, 2026-10-27
+
+REAL BUSINESS PHOTOS: None. Research found no verified Facebook or Instagram
+profile for Lazar Imports of Tulsa, OK, and no usable real photos of this
+business on its own thin website (lazarimports.com, fetched 2026-10-27: a
+headline, a BBB/Angie's List note, and a brand list only). No photos from
+any other business were used.
+
+STOCK PHOTOS (all labeled "Stock photo" in their on-page captions; none
+presented as the shop, its staff, or its work):
+- images/engine.jpg: close view of a car engine bay. Source: Unsplash
+  (images.unsplash.com/photo-1486262715619-67b85e0b08d3). Stock photo.
+- images/mechanic.jpg: technician pouring oil into a car engine.
+  Source: Unsplash (images.unsplash.com/photo-1487754180451-c456f719a1fc).
+  Stock photo.
+- images/wrench.jpg: hands working on a car engine with a wrench.
+  Source: Unsplash (images.unsplash.com/photo-1619642751034-765dfdf7c58e).
+  Stock photo.
+
+Two initially downloaded images were REJECTED before use: one showed a
+Porsche and one a Chevrolet Camaro, neither a make listed by this import
+shop, so both were deleted and do not appear on the page.
+
+ILLUSTRATIONS: None. No inline SVG illustrations, no CSS-drawn graphics,
+no digital artwork panels anywhere on the page.
+
+FACT SOURCES:
+- Queue record: website-dev-shift-2026-10-27-1359 queue, index 6
+  (Lazar Imports, Tulsa OK; phone +1 918-587-5009; address 1330 E 11th St,
+  Tulsa, OK; hours Mon-Fri 8:00 AM-5:30 PM, Sat-Sun not listed; rating
+  4.7 stars / 12 reviews, public listing).
+- Business website lazarimports.com fetched 2026-10-27: "Servicing all
+  Asian imports since 1985"; brand list Honda, Toyota, Nissan, Acura,
+  Lexus, Infiniti, Subaru, Mazda, Mitsubishi, Isuzu, Hyundai, Kia;
+  A+ Better Business Bureau accreditation note.

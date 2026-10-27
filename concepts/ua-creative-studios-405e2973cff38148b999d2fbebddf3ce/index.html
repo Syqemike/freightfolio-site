@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="description" content="UA Creative Studios: full-service photography, video, and virtual reality in Columbus, Ohio. Call (614) 593-9383.">
+<title>UA Creative Studios | Photography, Video, and Virtual Reality in Columbus, OH</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --paper:#f3ede1; --paper2:#eae2d0; --ink:#221d18; --rust:#a8431f; --rust-dark:#8a3417;
+    --muted:#6f6355; --line:#d6cbb6; --card:#faf6ec;
+  }
+  body { background:var(--paper); color:var(--ink); font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.65; }
+  a { color:inherit; }
+  img { display:block; max-width:100%; }
+  .wrap { max-width:1160px; margin:0 auto; padding:0 26px; }
+  .mono { font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; }
+  .serif { font-family:Georgia,'Times New Roman',serif; }
+
+  .disclosure { background:var(--ink); color:#e8dfcc; font-size:13px; }
+  .disclosure .wrap { padding-top:10px; padding-bottom:10px; display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .disclosure .tag { background:var(--rust); color:#fff; padding:2px 10px; letter-spacing:1.5px; text-transform:uppercase; font-size:11px; font-weight:700; }
+
+  nav { position:sticky; top:0; background:rgba(243,237,225,.97); border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; gap:18px; padding-top:16px; padding-bottom:16px; flex-wrap:wrap; }
+  .brand { font-size:22px; font-weight:800; letter-spacing:.2px; }
+  .brand span { color:var(--rust); }
+  .brand small { display:block; font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:var(--muted); font-weight:600; }
+  .navlinks { display:flex; gap:24px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; flex-wrap:wrap; }
+  .navlinks a { text-decoration:none; color:var(--muted); }
+  .navlinks a:hover { color:var(--rust); }
+  .btn { display:inline-block; background:var(--rust); color:#fff; padding:13px 26px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700; text-decoration:none; border:2px solid var(--rust); }
+  .btn:hover { background:var(--rust-dark); border-color:var(--rust-dark); }
+  .btn.ghost { background:transparent; color:var(--ink); border-color:var(--ink); }
+  .btn.ghost:hover { background:var(--ink); color:#fff; }
+
+  section { scroll-margin-top:84px; }
+  .hero { padding:54px 0 56px; }
+  .hero-grid { display:grid; grid-template-columns:1.05fr 1fr; gap:44px; align-items:start; }
+  .kicker { font-size:12px; letter-spacing:2.5px; text-transform:uppercase; color:var(--rust); font-weight:700; }
+  .hero h1 { font-size:56px; line-height:1.05; margin:16px 0 18px; font-weight:400; }
+  .hero h1 em { color:var(--rust); font-style:italic; }
+  .hero p.lede { font-size:19px; color:#3d352c; max-width:520px; }
+  .hero .cta-row { display:flex; gap:14px; margin-top:26px; flex-wrap:wrap; }
+  .hero .facts { margin-top:30px; border-top:1px solid var(--line); padding-top:18px; display:flex; gap:34px; flex-wrap:wrap; font-size:14px; color:var(--muted); }
+  .hero .facts strong { color:var(--ink); display:block; font-size:15px; }
+  .hero figure { border:1px solid var(--line); background:var(--card); padding:12px 12px 8px; }
+  .hero figure img { width:100%; aspect-ratio:4/3; object-fit:cover; }
+  figcaption { font-size:12px; color:var(--muted); padding:8px 2px 2px; }
+
+  .index-strip { border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:14px 0; font-size:13px; color:var(--muted); }
+  .index-strip .wrap { display:flex; gap:28px; flex-wrap:wrap; }
+  .index-strip b { color:var(--rust); }
+
+  .block { padding:60px 0; }
+  .block h2 { font-size:40px; line-height:1.1; font-weight:400; margin:12px 0 10px; }
+  .block .intro { font-size:18px; color:#3d352c; max-width:640px; margin-bottom:34px; }
+
+  .gallery { display:grid; grid-template-columns:repeat(12, 1fr); gap:22px; }
+  .gallery figure { background:var(--card); border:1px solid var(--line); padding:12px 12px 8px; }
+  .gallery figure img { width:100%; object-fit:cover; }
+  .g-portrait { grid-column:span 4; }
+  .g-portrait img { aspect-ratio:3/4; }
+  .g-wedding { grid-column:span 8; }
+  .g-wedding img { aspect-ratio:16/10; }
+  .g-event { grid-column:span 7; }
+  .g-event img { aspect-ratio:16/10; }
+  .g-studio { grid-column:span 5; }
+  .g-studio img { aspect-ratio:16/10; }
+
+  .services { background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .svc-list { border-top:1px solid var(--line); }
+  .svc { display:grid; grid-template-columns:90px 1fr 1.4fr; gap:24px; padding:26px 0; border-bottom:1px solid var(--line); align-items:baseline; }
+  .svc .num { font-size:28px; color:var(--rust); }
+  .svc h3 { font-size:24px; font-weight:600; }
+  .svc p { color:#3d352c; }
+
+  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:44px; }
+  .about-grid p { margin-bottom:16px; color:#3d352c; font-size:17px; }
+  .note-box { background:var(--card); border:1px solid var(--line); border-left:5px solid var(--rust); padding:22px 24px; }
+  .note-box p { margin:0; font-size:16px; }
+
+  .visit { background:var(--ink); color:#e8dfcc; }
+  .visit h2 { color:#fff; }
+  .visit-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:36px; margin-top:8px; }
+  .visit-grid h3 { font-size:12px; letter-spacing:2.5px; text-transform:uppercase; color:#c9bfa8; margin-bottom:10px; }
+  .visit-grid p { font-size:17px; }
+  .visit-grid a { color:#fff; }
+  .rating { margin-top:30px; border-top:1px solid #4a4238; padding-top:20px; font-size:15px; color:#c9bfa8; }
+  .rating strong { color:#fff; font-size:20px; }
+
+  footer { padding:28px 0 40px; font-size:13px; color:var(--muted); }
+  footer .wrap { display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; }
+
+  @media (max-width:820px) {
+    .hero-grid, .about-grid { grid-template-columns:1fr; }
+    .hero h1 { font-size:40px; }
+    .block h2 { font-size:32px; }
+    .gallery figure { grid-column:span 12 !important; }
+    .svc { grid-template-columns:56px 1fr; }
+    .svc p { grid-column:2; }
+    .visit-grid { grid-template-columns:1fr; }
+    .navlinks { gap:14px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure"><div class="wrap">
+  <span class="tag">Website Concept</span>
+  <span>This page is a design preview made to show what a new website for UA Creative Studios could look like. It is not the business's current website.</span>
+</div></div>
+
+<nav><div class="wrap">
+  <div class="brand">UA <span>Creative</span> Studios<small>Columbus, Ohio</small></div>
+  <div class="navlinks">
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#visit">Visit</a>
+  </div>
+  <a class="btn" href="tel:+16145939383">Call (614) 593-9383</a>
+</div></nav>
+
+<header class="hero"><div class="wrap"><div class="hero-grid">
+  <div>
+    <p class="kicker mono">Full-service photography studio</p>
+    <h1 class="serif">Photography, video, and virtual reality, <em>built around your project.</em></h1>
+    <p class="lede">UA Creative Studios is a full-service photography company serving the greater Columbus area. Its photographers work together on each shoot, so portraits, events, commercial work, video, and virtual reality assets come from one team.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+16145939383">Call (614) 593-9383</a>
+      <a class="btn ghost" href="#work">See the work</a>
+    </div>
+    <div class="hero facts">
+      <div><strong>421 W State St</strong>Columbus, OH</div>
+      <div><strong>Mon to Fri</strong>9:00 AM to 5:00 PM</div>
+      <div><strong>Phone</strong>(614) 593-9383</div>
+    </div>
+  </div>
+  <figure>
+    <img src="img/hero-camera.jpg" alt="Photographer at work with a camera">
+    <figcaption class="mono">Stock photo: studio lighting setup.</figcaption>
+  </figure>
+</div></div></header>
+
+<div class="index-strip"><div class="wrap">
+  <span><b>01</b> Portrait</span>
+  <span><b>02</b> Event</span>
+  <span><b>03</b> Commercial</span>
+  <span><b>04</b> Corporate video</span>
+  <span><b>05</b> Virtual reality</span>
+</div></div>
+
+<section class="block" id="work"><div class="wrap">
+  <p class="kicker mono">Selected work</p>
+  <h2 class="serif">Work shaped by the shoot, not a fixed formula.</h2>
+  <p class="intro">Every project below stands in for a type of shoot the studio handles. The photos on this concept page are stock photos used to show the layout. They are not photos taken by UA Creative Studios.</p>
+  <div class="gallery">
+    <figure class="g-portrait">
+      <img src="img/portrait.jpg" alt="Portrait session">
+      <figcaption class="mono">Stock photo: portrait session.</figcaption>
+    </figure>
+    <figure class="g-wedding">
+      <img src="img/wedding.jpg" alt="Couple at a wedding">
+      <figcaption class="mono">Stock photo: wedding photography.</figcaption>
+    </figure>
+    <figure class="g-event">
+      <img src="img/event.jpg" alt="Guests at an event">
+      <figcaption class="mono">Stock photo: event photography.</figcaption>
+    </figure>
+    <figure class="g-studio">
+      <img src="img/studio-camera.jpg" alt="Camera ready for a studio shoot">
+      <figcaption class="mono">Stock photo: camera ready for a studio shoot.</figcaption>
+    </figure>
+  </div>
+</div></section>
+
+<section class="block services" id="services"><div class="wrap">
+  <p class="kicker mono">Services</p>
+  <h2 class="serif">Five kinds of work, one studio.</h2>
+  <p class="intro">Prices are not listed on this concept page. Call the studio to talk through your project and ask about pricing.</p>
+  <div class="svc-list">
+    <div class="svc">
+      <div class="num serif">01</div>
+      <h3>Portrait photography</h3>
+      <p>Portraits made with the studio's collaborative approach, with photographers who specialize in different areas working together on your session.</p>
+    </div>
+    <div class="svc">
+      <div class="num serif">02</div>
+      <h3>Event photography</h3>
+      <p>Coverage for events of different sizes, planned with the client so the photos fit what the event is for.</p>
+    </div>
+    <div class="svc">
+      <div class="num serif">03</div>
+      <h3>Commercial photography</h3>
+      <p>High-end photography for businesses that need images for marketing, built around the product or service being shown.</p>
+    </div>
+    <div class="svc">
+      <div class="num serif">04</div>
+      <h3>Corporate video</h3>
+      <p>Video production for companies, from planning through the finished piece, handled by the same studio team.</p>
+    </div>
+    <div class="svc">
+      <div class="num serif">05</div>
+      <h3>Virtual reality</h3>
+      <p>Virtual reality marketing assets for projects that need more than still photos, made alongside the studio's photo and video work.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="block" id="about"><div class="wrap">
+  <p class="kicker mono">About the studio</p>
+  <h2 class="serif">A team that builds the shoot with you.</h2>
+  <div class="about-grid">
+    <div>
+      <p>UA Creative Studios describes itself as a full-service photography company serving the greater Columbus area. Its photographers are college graduates who specialize in different areas of photography, and they work together to support each client's project.</p>
+      <p>The studio's approach is collaborative: clients take part in the creative process, from planning the shoot to the finished images.</p>
+    </div>
+    <div class="note-box">
+      <p><strong>You own your images.</strong> The studio states that clients truly own their images. Ask the studio when you call if you want the details of how delivery and ownership work for your project.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="block visit" id="visit"><div class="wrap">
+  <p class="kicker mono">Visit or call</p>
+  <h2 class="serif">Talk to the studio about your shoot.</h2>
+  <div class="visit-grid">
+    <div>
+      <h3>Where to find us</h3>
+      <p>421 W State St<br>Columbus, OH</p>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <p>Monday to Friday<br>9:00 AM to 5:00 PM</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p><a href="tel:+16145939383">(614) 593-9383</a><br>Call to ask about a session.</p>
+    </div>
+  </div>
+  <p class="rating"><strong>5.0</strong> from 14 Google reviews. Questions? Call <a href="tel:+16145939383">(614) 593-9383</a>.</p>
+</div></section>
+
+<footer><div class="wrap">
+  <span>Website Concept: a design preview for UA Creative Studios, Columbus, Ohio. Not the business's current website.</span>
+  <span class="mono">UA Creative Studios, 421 W State St, Columbus, OH</span>
+</div></footer>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+DESIGN BRIEF - Cradle 2 Crayons, Inc. (Foley, AL) - batch 45
+
+AESTHETIC: Warm storybook classroom. Cream paper background, deep forest green header band, coral call-to-action buttons, and a single sunny yellow rule accent. The look is friendly and grown up at once: no cartoon styling, no pastel daycare cliche, no generic template hero.
+
+TYPOGRAPHY: Fraunces (serif, warm and storybook) for headlines and the business name; Public Sans for body copy and navigation. Headlines are large but ragged and editorial, not centered billboard type.
+
+PALETTE: Paper #fdf8ef, ink #22312a, forest green #2e5e4e, coral #e4572e, sunny yellow #f2b234, sage #dfe8dd. Palette is drawn from the business's own photos (green playroom mats, red shirts, warm classroom light).
+
+IMAGERY: Four real photographs from the business's own public website, used as the whole visual story: hero caregiver and child, playroom toddlers, rug circle time, outdoor day. No stock photos, no illustrations, no icons beside paragraphs.
+
+LAYOUT: Single page, asymmetric hero (text left, tall portrait photo right with a thick ink border and rounded corners), a full-width green rating strip, a three-card programs row, a two-column sage band pairing "a day built around play" with enrollment steps, a two-column photo gallery, and a two-column visit block. Section navigation anchors to Programs, A day here, Photos, Visit.
+
+CUSTOMER JOURNEY: A parent lands on the age range and year-round promise, sees real photos of real rooms, reads how a day works and how enrollment starts (pre-admission conference), then calls or emails. No booking form is faked: contact is phone and email only.
+
+DISTINCTION: Unlike the other daycare concepts in this wave, this page uses a serif storybook headline, a green band with a single-line rating strip, and a sage two-column band instead of a pastel card grid hero. Copy is specific to this center (Foley, 6 weeks to 12 years, before/after school, summer, pre-admission conference, named director).

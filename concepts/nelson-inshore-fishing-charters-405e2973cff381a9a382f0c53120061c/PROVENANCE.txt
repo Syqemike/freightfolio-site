@@ -1,0 +1,50 @@
+PHOTO PROVENANCE - Nelson Inshore Fishing Charters concept
+Business: Nelson Inshore Fishing Charters, 16800 Nelson Ln, Gulf Shores, AL 36542
+Phone on record: +1 251-589-7931
+
+All photos below are real photos of THIS business, taken from the business's own
+public website (nelsoncharterfishing.com, Services and Rates page). No stock
+photos were used. No generated or drawn illustrations appear on the site.
+Filenames on the business site did not always describe the image content, so
+each file was viewed before captioning and captions describe what the image
+actually shows.
+
+- images/hero-water.jpg
+  Source: https://www.nelsoncharterfishing.com/faq-s (business site hero image,
+  file "Waves.jpg" on the Wix media host)
+  Shows: Sunlight on water along a wooden breakwater.
+  Used as: hero image and gallery image.
+  Note: the Wix rendition served at 1572x642 was used; compressed to 156 KB.
+
+- images/catch-redfish.jpg
+  Source: https://www.nelsoncharterfishing.com/faq-s (business site image file
+  "turtle7.jpg"; the filename is misleading, the image shows anglers, not a turtle)
+  Shows: Anglers on a boat holding redfish.
+  Used as: gallery image. Caption describes the actual content.
+
+- images/catch-trout.jpg
+  Source: https://www.nelsoncharterfishing.com/faq-s (business site image file
+  "reef.jpg"; the filename is misleading, the image shows a catch on a table)
+  Shows: Speckled trout laid out on a table after a trip.
+  Used as: gallery image. Caption describes the actual content.
+
+- images/dolphin.jpg
+  Source: https://www.nelsoncharterfishing.com/faq-s (business site image file
+  "dolphin.jpg")
+  Shows: A dolphin leaping beside a boat wake.
+  Used as: gallery image. Caption describes the actual content.
+
+Identity check: business name, Gulf Shores address, and phone on the source
+site match the CRM record (16800 Nelson Ln, Gulf Shores, AL 36542;
+251-589-7931). No photos from any other business were used.
+
+Text sources (for rates, hours, services):
+- Services and Rates page, nelsoncharterfishing.com (4-hour morning, 3-hour
+  afternoon, 1.5-hour dolphin cruise; prices; group size notes; fish cleaning)
+- Business homepage, nelsoncharterfishing.com (founded 2010 by John Nelson
+  and Matt White; rustic marina and boatyard; species list; waters)
+- CRM research notes 2026-10-26 (address, phone, email, five generations,
+  morning/afternoon/night trips, primary listing rating 4.9 from 105 reviews)
+- No online booking destination was verified (the business site's "Book now"
+  link target could not be confirmed from the text fetch), so the concept
+  carries NO Book Now button. Contact is by phone and email only.

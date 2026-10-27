@@ -1,0 +1,50 @@
+DESIGN BRIEF - Duh for Garden and Home (website concept)
+Business: home and garden emporium, downtown Pensacola, FL.
+Research basis: CRM Research Complete record (research shift 2026-10-26)
+plus the store's own website, duhpensacola.com, fetched 2026-10-27.
+
+AESTHETIC
+Editorial and warm, like a magazine spread about a store you wander
+through. The design leans on the store's own look: white painted brick,
+warm wood, terracotta pots, and green planting. No generic hero template,
+no gradient panels, no decorative illustration of any kind.
+
+TYPOGRAPHY
+Georgia serif for headings (classic, bookish, fits a store that sells
+books and antiques) against a clean system sans for body copy. Large,
+quiet headlines; generous line height; small uppercase section labels
+in terracotta.
+
+PALETTE
+Warm plaster background (#faf6ee), sand (#efe7d8), deep garden green
+(#2e4a38) for the cafe band and headings, terracotta (#b85c38) for
+accents and calls to action, ink (#23281f) for body text.
+
+IMAGERY
+Four real photographs of this business only: the showroom, Jo's cafe,
+the garden courtyard with fountain, and a planted pot outside the white
+brick building. Photos are the visual argument; no stock, no artwork.
+
+LAYOUT
+Single page with anchor navigation (Inside the Store, The Garden,
+Jo's Cafe, Visit). Hero pairs the showroom photo with a short
+introduction. The shop section is a six-item category grid drawn only
+from verified services. The garden section uses an offset grid: copy
+left, tall courtyard photo right, wide planter photo below. The cafe
+section inverts to dark green. The visit section carries address,
+verified hours, phone, current-website link, and the single rating
+line. Design-preview disclosure sits at the very top and in the footer.
+
+CUSTOMER JOURNEY
+Land on the disclosure and name, see the showroom, browse what the
+store carries, step outside into the garden, learn about Jo's cafe,
+then find address, hours, and the call button. Every call to action is
+a tel: link to the verified store phone (850) 439-0640. No booking
+button: no online booking destination was verified for this business.
+No prices: the store's published prices are from 2023 and stale.
+
+WHAT WAS DELIBERATELY LEFT OUT
+Online ordering (the store's site has no catalog or shop), a booking
+button (no verified booking destination), an Instagram link (handle
+confirmed but profile link not verified as a destination), prices,
+square footage, and any claim about service speed or quality.

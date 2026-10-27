@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Morlock School of Dance | East Hartford, CT</title>
+<style>
+  :root{ --plum:#43193d; --plum2:#5c244f; --cream:#faf5ee; --paper:#fffdf8; --ochre:#c98a2e; --ink:#2b232a; --muted:#6d5f68; --line:#e6dccf; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:Georgia, "Times New Roman", serif; color:var(--ink); background:var(--cream); }
+  a{ color:inherit; }
+  .disclosure{ background:var(--plum); color:#f7ecd9; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:13px; letter-spacing:.04em; padding:10px 16px; }
+  header{ background:var(--paper); border-bottom:1px solid var(--line); }
+  .head{ max-width:1100px; margin:0 auto; padding:22px 24px 16px; display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:12px; }
+  .brand{ font-size:34px; line-height:1.05; margin:0; color:var(--plum); }
+  .brand small{ display:block; font-family:Arial, Helvetica, sans-serif; font-size:13px; letter-spacing:.18em; text-transform:uppercase; color:var(--ochre); margin-bottom:6px; }
+  nav{ font-family:Arial, Helvetica, sans-serif; font-size:15px; }
+  nav a{ text-decoration:none; margin-left:18px; padding-bottom:4px; border-bottom:2px solid transparent; }
+  nav a:hover{ border-bottom-color:var(--ochre); }
+  .callbtn{ display:inline-block; background:var(--plum); color:#fff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:16px; padding:12px 22px; border-radius:4px; }
+  .callbtn:hover{ background:var(--plum2); }
+  main{ max-width:1100px; margin:0 auto; padding:0 24px 60px; }
+  .hero{ display:grid; grid-template-columns:1.05fr .95fr; gap:40px; align-items:center; padding:44px 0 36px; }
+  .hero h1{ font-size:52px; line-height:1.08; margin:0 0 16px; color:var(--plum); }
+  .hero p{ font-size:19px; line-height:1.6; color:#42363f; margin:0 0 22px; }
+  .hero figure{ margin:0 14px 14px 0; }
+  .hero img{ width:100%; height:auto; display:block; border-radius:6px; box-shadow:12px 12px 0 var(--ochre); }
+  figcaption{ font-family:Arial, Helvetica, sans-serif; font-size:13px; color:var(--muted); margin-top:10px; }
+  .quote{ background:var(--plum); color:#f7ecd9; margin:20px -24px 0; padding:44px 24px; }
+  .quote blockquote{ max-width:760px; margin:0 auto; font-size:27px; line-height:1.4; font-style:italic; text-align:center; }
+  .quote cite{ display:block; text-align:center; font-family:Arial, Helvetica, sans-serif; font-style:normal; font-size:14px; margin-top:14px; color:#e8cfae; }
+  section{ padding:48px 0 8px; }
+  h2{ font-size:34px; color:var(--plum); margin:0 0 8px; }
+  .rule{ width:64px; height:4px; background:var(--ochre); margin:0 0 22px; }
+  .lead{ font-size:19px; line-height:1.65; max-width:720px; }
+  .cols{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  .cols p, .about p{ font-size:17px; line-height:1.65; }
+  .cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:8px; }
+  .card{ background:var(--paper); border:1px solid var(--line); border-top:5px solid var(--ochre); padding:24px; border-radius:4px; }
+  .card h3{ margin:0 0 10px; font-size:22px; color:var(--plum); }
+  .card p{ font-size:16px; line-height:1.6; margin:0; }
+  .gallery{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .gallery img{ width:100%; height:300px; object-fit:cover; display:block; border-radius:6px; }
+  .hours{ background:var(--paper); border:1px solid var(--line); border-radius:6px; padding:28px; max-width:560px; }
+  .hours table{ width:100%; border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; font-size:16px; }
+  .hours td{ padding:9px 0; border-bottom:1px solid var(--line); }
+  .hours td:last-child{ text-align:right; }
+  .visit{ display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:start; }
+  .visit p{ font-size:17px; line-height:1.65; }
+  .rating{ font-family:Arial, Helvetica, sans-serif; font-size:15px; background:#f3e9d7; border-left:5px solid var(--ochre); padding:14px 18px; margin-top:20px; }
+  footer{ border-top:1px solid var(--line); padding:28px 24px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:var(--muted); line-height:1.7; }
+  @media (max-width:700px){
+    .hero{ grid-template-columns:1fr; padding-top:28px; }
+    .hero h1{ font-size:38px; }
+    .cols, .cards, .gallery, .visit{ grid-template-columns:1fr; }
+    .gallery img{ height:220px; }
+    nav a{ margin-left:0; margin-right:14px; }
+    .brand{ font-size:28px; }
+    .quote blockquote{ font-size:21px; }
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Website Concept: this is a design preview, not the school's official website.</div>
+<header>
+  <div class="head">
+    <p class="brand"><small>East Hartford, Connecticut</small>Morlock School of Dance</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#classes">Classes</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="hero">
+    <div>
+      <h1>Dance, taught with care, in East Hartford.</h1>
+      <p>Morlock School of Dance is a dance school for children in East Hartford, teaching current dance techniques in a fun and creative environment.</p>
+      <a class="callbtn" href="tel:+18605680160">Call the studio: (860) 568-0160</a>
+    </div>
+    <figure>
+      <img src="img/kids.jpg" alt="Children in a dance class with their teacher">
+      <figcaption>Stock photo: a children's dance class.</figcaption>
+    </figure>
+  </div>
+
+  <div class="quote">
+    <blockquote>"We believe that dance is an art that should be enjoyed by everyone."</blockquote>
+    <cite>The school, in its public listing</cite>
+  </div>
+
+  <section id="about" class="about">
+    <h2>A long history on Pitkin Street</h2>
+    <div class="rule"></div>
+    <div class="cols">
+      <p>Morlock School of Dance has been in business in East Hartford for 70 years. It was formerly known as the Mary Morlock School of Performing Arts, and today its owners and artistic directors are Christine Sessa and Elizabeth Sanderson.</p>
+      <p>The school's own description of itself is simple: dance is an art that should be enjoyed by everyone. That idea shapes a school built around children learning to dance in a welcoming room, not around pressure or performance.</p>
+    </div>
+    <div class="rating">Rated 4.9 stars from 18 reviews in public listings.</div>
+  </section>
+
+  <section id="classes">
+    <h2>Classes</h2>
+    <div class="rule"></div>
+    <p class="lead">The school teaches dance to children. Class types, schedules, and pricing are not listed on this preview page, so please call the studio for current class details.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>For children</h3>
+        <p>Morlock is a dance school for children, with classes built around young dancers.</p>
+      </div>
+      <div class="card">
+        <h3>Current techniques</h3>
+        <p>Classes teach current dance techniques, so students learn the styles being taught today.</p>
+      </div>
+      <div class="card">
+        <h3>A creative room</h3>
+        <p>The school describes its environment as fun and creative, a place where children can enjoy learning to dance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>In the studio</h2>
+    <div class="rule"></div>
+    <div class="gallery">
+      <figure style="margin:0">
+        <img src="img/hero.jpg" alt="Dancers rehearsing in a studio">
+        <figcaption>Stock photo: dancers in rehearsal.</figcaption>
+      </figure>
+      <figure style="margin:0">
+        <img src="img/class.jpg" alt="Dancers working through a routine in front of studio mirrors">
+        <figcaption>Stock photo: dancers working in a mirrored studio.</figcaption>
+      </figure>
+    </div>
+    <figure style="margin:28px 0 0">
+      <img src="img/studio.jpg" alt="Dancers moving across a studio floor" style="width:100%; height:340px; object-fit:cover; display:block; border-radius:6px;">
+      <figcaption>Stock photo: dancers in motion during rehearsal.</figcaption>
+    </figure>
+  </section>
+
+  <section id="hours">
+    <h2>Hours</h2>
+    <div class="rule"></div>
+    <div class="hours">
+      <table>
+        <tr><td>Monday to Friday</td><td>4:30 PM to 9:00 PM</td></tr>
+        <tr><td>Saturday</td><td>10:00 AM to 1:30 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="visit" class="visit">
+    <div>
+      <h2>Visit</h2>
+      <div class="rule"></div>
+      <p>102 Pitkin St<br>East Hartford, CT</p>
+      <p>Questions? Call (860) 568-0160.</p>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <div class="rule"></div>
+      <p>Phone: <a href="tel:+18605680160">(860) 568-0160</a></p>
+      <p><a class="callbtn" href="tel:+18605680160">Call the studio</a></p>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>Morlock School of Dance, 102 Pitkin St, East Hartford, CT. Phone (860) 568-0160.</p>
+  <p>Website Concept: this page is a design preview made to show what a new website for the school could look like. It is not the school's official website.</p>
+</footer>
+</body>
+</html>

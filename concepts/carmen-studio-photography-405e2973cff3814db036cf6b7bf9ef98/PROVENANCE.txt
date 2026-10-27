@@ -1,0 +1,34 @@
+PHOTO PROVENANCE: Carmen Studio Photography, Akron OH
+
+All images on this concept page are real photographs of THIS business's own work,
+taken from the studio's own public website, carmenstudio.net. No stock photos are
+used. No illustrations or concept art are used. No other business's photos are used.
+
+Source file (studio's own cover collage, fetched 2026-10-27):
+https://img1.wsimg.com/isteam/ip/63ab5565-a8b9-42e9-8ce8-72ccf0f89ed5/CSP%20Web%20Page%20Cover%202023.jpg
+Published on: http://carmenstudio.net (home page cover image)
+
+Identity match verified: the collage itself is headed "Carmen Studio Photography",
+shows phone 330-253-7781 (matches the CRM record and the listing), and its panels
+are labeled Seniors, Publicity, and Sports, matching the studio's verified services.
+City match: the studio is at 72 E Mill St, Akron, OH; the sports panels show Akron
+school uniforms (Hoban, Kenmore-Garfield), consistent with an Akron studio.
+
+Files:
+- img/hero-collage.jpg : the studio's full cover collage, black letterbox bars cropped out.
+- img/senior-portrait.jpg : crop of the collage's Seniors panel (young woman portrait).
+- img/publicity-headshot.jpg : crop of the collage's Publicity panel (professional headshot).
+- img/sports-football.jpg : crop of the collage's Sports panel (Hoban football player).
+- img/sports-softball.jpg : crop of the collage's Sports panel (softball player).
+- img/senior-green-jacket.jpg : crop of the collage's Seniors panel (letterman jacket portrait).
+- img/team-bleachers.jpg : crop of the collage's Sports panel (full team on bleachers).
+- img/sports-falcons.jpg : crop of the collage's Sports panel (Falcons football player).
+
+Each gallery caption states "Photo from the studio's own site." Cropping only removed
+collage framing, labels, and neighboring panels; no photo content was altered or
+combined with other businesses' imagery.
+
+Facts on the page (all from the 2026-10-25 research record in the batch-45 queue):
+address, phone, hours, services, and the 4.8 stars / 37 reviews public-listing rating.
+The "more than 60 years" line is attributed to the studio's own site, not presented
+as independently verified.

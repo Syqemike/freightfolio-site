@@ -1,0 +1,27 @@
+PHOTO PROVENANCE - Chrysalis Studio of Belly Dance (Omaha, NE)
+All photos on this concept page are REAL photos from the business's own public website.
+No stock photos are used on this page. No generated or drawn illustrations are used.
+
+1. img/veil.jpg
+   Source: https://delladancing.com/wp-content/uploads/2018/04/dellaveil.jpg
+   The studio's own website (delladancing.com, the business's own domain per the CRM record).
+   Content: a belly dancer performing with a flowing veil.
+   Caption on page: "Veil work in performance. Photo from the studio's own website."
+
+2. img/cymbals.jpg
+   Source: https://delladancing.com/wp-content/uploads/2013/06/divine.jpg
+   The studio's own website (delladancing.com).
+   Content: belly dancers in costume holding finger cymbals overhead.
+   Caption on page: "Dancers with finger cymbals. Photo from the studio's own website."
+
+3. img/costumes.jpg
+   Source: https://delladancing.com/wp-content/uploads/2013/06/lotusdancers21.jpg
+   The studio's own website (delladancing.com).
+   Content: belly dancers in colorful layered costumes on stage.
+   Caption on page: "Costumes on stage. Photo from the studio's own website."
+
+Identity check: delladancing.com was fetched 2026-10-27 and its homepage is titled
+"Chrysalis Studio of Dance" with belly dance class copy matching the CRM record
+(beginner/mix-level classes, Tuesday/Wednesday 5:30 workout). The domain is the Website
+URL on the CRM record. No photos from any other business were used.
+All three files were recompressed locally to under 125 KB each (JPG).

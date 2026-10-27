@@ -1,0 +1,27 @@
+PHOTO PROVENANCE: Richmond City Yoga concept site
+Business: Richmond City Yoga, 212 E Clay St, Richmond, VA.
+
+REAL BUSINESS PHOTOS: None used. The studio's own site (richmondcityyoga.com,
+fetched 2026-10-27) is a text welcome letter with no usable business photos,
+and no profile photo URLs were verified for this Richmond business. No photo
+from any other business is used anywhere on this page.
+
+STOCK PHOTOS (all labeled "Stock photo" in their on-page captions, and none
+presented as the studio, its teacher, its students, or its premises):
+- hero.jpg: person practicing yoga on a mat at sunrise.
+  Source: Unsplash image photo-1544367567-0f2fcb009e0b, downloaded and compressed locally.
+- studio.jpg: person practicing yoga in a bright studio.
+  Source: Unsplash image photo-1575052814086-f385e2e2ad1b, downloaded and compressed locally.
+- seated.jpg: person seated in a calm yoga pose on a mat.
+  Source: Unsplash image photo-1552196563-55cd4e45efb3, downloaded and compressed locally.
+- practice.jpg: two people practicing yoga side by side in a studio.
+  Source: Unsplash image photo-1599447421416-3414500d18a5, downloaded and compressed locally.
+
+Each image was visually inspected before use: all four show generic yoga
+practice with no other business signage, logo, or identifiable premises.
+A fifth candidate showing another business's storefront signage was rejected
+and is not on the page.
+
+NO GENERATED OR DRAWN ARTWORK: This page contains zero inline SVG illustrations,
+zero CSS-drawn graphics, and zero digital artwork panels. The only graphics
+are the four photographs above.
