@@ -1,8 +1,8 @@
-PHOTOS (all stock photos, reused from the At The Beach Weddings concept pool; none are photos of Haiku):
-- hero.jpg: a beach wedding ceremony with pink and yellow floral centerpieces.
-- florals.jpg: a pastel rose bouquet.
-- bouquet.jpg: a pink ranunculus bouquet.
-PHOTO NOTE: the gallery photos show a beach ceremony and bouquets, not the Haiku garden; they are captioned as stock photos and are not presented as the venue.
+PHOTOS (all real photos of Haiku, from the business's own website haikuavl.com; none are stock photos):
+- garden.jpg: the garden ceremony lawn at Haiku, set with chairs facing a gold arch. Source page: https://haikuavl.com/summer-weddings
+- ceremony.jpg: a wedding ceremony at Haiku's garden arch, guests seated, magnolia tree behind. Source page: https://haikuavl.com/summer-weddings
+- entrance.jpg: the Haiku entrance sign in the garden. Source page: https://haikuavl.com/
+PHOTO NOTE (rebuild 2026-10-27): replaced the QA-failed beach ceremony hero and flower-only gallery with the venue's own garden photos, verified firsthand. No beach imagery remains on the page.
 RATING: Google 5.0 from 15 reviews, shown once.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.

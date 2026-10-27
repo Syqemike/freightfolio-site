@@ -1,8 +1,8 @@
-PHOTOS (all stock photos, reused from the Marry Me Wedding Chapel concept pool; none are photos of The Barn at Honeysuckle Hill):
-- hero.jpg: pink garden roses.
-- seasonal.jpg: a bouquet of peach and pink roses and peonies.
-- sunflowers.jpg: sunflowers in a field.
-PHOTO NOTE: the gallery photos show flowers, not the venue itself; they are captioned as stock photos.
+PHOTOS (all real photos of The Barn at Honeysuckle Hill, from the business's own website honeysucklehillevents.com; none are stock photos):
+- hayloft.jpg: a wedding ceremony in the hayloft, guests in pews, wagon-wheel chandeliers. Source page: https://honeysucklehillevents.com/gallery/
+- reception.jpg: the reception space, set for dinner, cross-back chairs and greenery chandelier. Source page: https://honeysucklehillevents.com/gallery/
+- barn.jpg: the red barn across the grounds, string lights and fence. Source page: https://honeysucklehillevents.com/gallery/
+PHOTO NOTE (rebuild 2026-10-27): replaced the QA-failed flowers-only hero and gallery with the venue's own barn, chapel, and grounds photos, verified firsthand. No flowers-only imagery remains on the page.
 RATING: Google 4.6 from 47 reviews, shown once.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
