@@ -1,0 +1,43 @@
+PHOTO PROVENANCE - Duh for Garden and Home concept site
+Business: Duh for Garden and Home, 501 N 9th Ave, Pensacola, FL 32501
+All photos below are real photographs of THIS business, verified by visual
+inspection. No stock photos, no illustrations, no other business's photos.
+
+1. images/showroom.jpg
+   Source: the business's own website, duhpensacola.com homepage hero image
+   (Squarespace CDN asset M25A0562.jpg, served on duhpensacola.com).
+   Shows: the Duh showroom interior, white brick walls, beaded chandelier,
+   pottery shelving, sofa arrangement. Verified visually 2026-10-27.
+
+2. images/jos-cafe.jpg
+   Source: the business's own website, duhpensacola.com homepage Jo's section
+   (Squarespace CDN asset M25A1917.jpg, served on duhpensacola.com).
+   Shows: Jo's cafe interior, wood tables and chairs, fern on the counter,
+   chalkboard menu reading "Welcome to Jo's". Verified visually 2026-10-27.
+
+3. images/garden-court.jpg
+   Source: the business's public listing gallery for place 628587648446210
+   (Instagram gallery item captioned "Heaven for the home and garden
+   lover. A true gem in Pensacola", attached to the Duh for Garden and Home
+   listing at 501 N 9th Ave, Pensacola).
+   Shows: the Duh garden courtyard, stone fountain, tall terracotta pots,
+   potted hydrangeas and begonias along a shaded path. Verified visually
+   2026-10-27. Matches the store's described landscaped courtyards and
+   fountain seating at Jo's.
+
+4. images/garden-planter.jpg
+   Source: the business's public listing gallery for place 628587648446210
+   (Instagram gallery item attached to the same Duh listing).
+   Shows: a large planted pot with caladiums and ferns in front of the
+   store's white brick building. Verified visually 2026-10-27.
+
+Notes:
+- Instagram handle @duhpensacola was confirmed as this business's account
+  via account search (full name "Duh for garden & home", bio "Since 2000.
+  Lifestyle Store & Design Studio"). The handle is named in text only; no
+  profile link is shown on the page because the profile URL was not
+  verified as a link destination in this pass.
+- No prices are shown on the site: the store's blog prices date from 2023
+  and are stale, so all pricing was omitted rather than repeated.
+- Rating is shown exactly once, worded as researched: "Rated 4.7 stars
+  from 159 reviews on a public listing."
