@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Arnold Automotive concept pool; none are photos of A & P Transmissions or its work):
+- hero.jpg = Pexels 2244746: a mechanic repairing a car undercarriage outdoors.
+- auto3b.jpg = Pexels 3807329: a man working under a car hood.
+- auto1b.jpg = Pexels 3807517: a mechanic checking a car engine.
+RATING: no rating is shown. Research gives 5.0 from 16 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
+NOT USED: no prices are shown because none were found in research. The own site is tagline plus short service blurbs plus a contact block only and is not linked as a full site.

@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Blue Crane Bakery concept pool; none are photos of Merritt's Bakery or its bakes. The same three photos are also used on Antoinette Bakery & Cafe this shift, in a different order, with a different layout and palette):
+- rolls.jpg = Pexels 5964500: cinnamon rolls on bakery racks.
+- hero.jpg = Pexels 13130546: baked goods under a glass cover in a bakery.
+- cookies.jpg = Pexels 12557753: chocolate chip cookies with a French press of coffee on a wooden table.
+RATING: no rating is shown. Research gives 4.5 from 198 reviews on a place listing while another directory shows 4.3 from 562; the figures conflict and the primary names no exact platform, so no figure is shown.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked; the own site lists social labels only.
+CTA: phone only. No verified online ordering URL for the main site is in the CRM record, so no order button is shown; product ordering lives on a separate bakesmart subdomain per research and is not linked.
+NOT USED: no menu prices are shown because none were found in research. The main site is a tagline plus three store locations plus social links only.

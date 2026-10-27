@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the Blue Dog K9 Care concept pool; none are photos of Dog Days of Birmingham or its dogs):
+- hero.jpg = Pexels 7210355: a woman playing with a Border Collie on a meadow.
+- dog2.jpg = Pexels 9376756: a Goldendoodle chasing a colorful ball in a park.
+- dog3.jpg = Pexels 6469221: two black Staffordshire Bull Terriers playing on a grassy field.
+RATING: no rating is shown. Research gives 4.8 from 265 reviews on a public listing with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no Facebook or Instagram profile URL was verified in research, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
+HOURS FLAG: Saturday hours differ between the listing (8:00 AM to 6:00 PM) and the business site (8:00 to 10:00 AM plus a 4:00 to 6:00 PM pickup and drop-off window); both are shown on the Visit page. Confirm before outreach.
+NOT USED: no prices or rates are shown because none were found in research. The existing site dogdaysofbirmingham.com is a single services page with no prices or online booking and is not linked as a full site. No ZIP code is shown because none was in the current sources.

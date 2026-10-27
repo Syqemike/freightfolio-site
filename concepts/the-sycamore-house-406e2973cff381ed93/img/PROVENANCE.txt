@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the Cornerstone Restaurant concept pool; none are photos of The Sycamore House or its dishes. Gallery captions name the dish pictured and do not claim it is a Sycamore House dish):
+- etouffee.jpg: shrimp etouffee served with rice.
+- poboy.jpg: a shrimp po boy sandwich with fries and sauces.
+- hero.jpg: a burger.
+RATING: no rating is shown. Research gives 4.5 from 160 reviews on a place listing with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online reservation URL is in the CRM record, so no reservation button is shown; the page says call to ask about a reservation.
+HOURS FLAG: own-site hours are shown; Tripadvisor hours differ (Sunday brunch, Friday and Saturday lunch hours) and are flagged on the Visit page. Confirm before outreach.
+NOT USED: no menu prices are shown because none were found in research. The own site is welcome and story plus opening times only, with no menu or online reservations, and is not linked as a full site.

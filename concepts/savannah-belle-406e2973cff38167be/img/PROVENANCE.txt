@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Geez Louise Boutique concept pool; none are photos of Savannah Belle or its stock. The same three photos are also used on Utopia this shift; layouts, hero choice, and palettes differ):
+- jacket.jpg = Pexels 1536619: a denim jacket over a mustard top against a yellow wall.
+- hero.jpg = Pexels 374677: a woman browsing clothing racks in a shop.
+- folded.jpg = Pexels 581087: folded shirts in a drawer.
+RATING: no rating is shown. Research gives 4.6 from 37 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online checkout URL is in the CRM record, so no shop-now button is shown.
+NOT USED: the own site shopsonbay.com is a thin history page only, with no catalog or prices, and is not linked as a shop. No prices are shown because none were found in research.
