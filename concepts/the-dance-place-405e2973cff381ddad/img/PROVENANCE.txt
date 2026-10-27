@@ -1,7 +1,8 @@
 PHOTOS (all Pexels stock photos, reused from the Emerald Coast Dance Conservatory concept pool, which reused the Dmi Dance Force pool; none are photos of The Dance Place or its students):
 - hero.jpg = Pexels 5935969: instructor leading a group dance session in a modern studio.
-- barre.jpg = Pexels 5888286: teacher helping two young dancers at a ballet barre in a mirrored studio.
-- tutus.jpg = Pexels 5635576: young dancers in pink tutus practicing ballet at a barre.
+- wedding.jpg = StaverDanceSport concept pool (Pexels stock, couple dancing at a wedding celebration; verified firsthand this shift): a couple dancing at a wedding celebration, surrounded by celebrating dancers.
+- celebration.jpg = Level Up Dance Fitness concept pool (Pexels stock, adults dancing at a celebration on a lit dance floor; verified firsthand this shift): adults dancing at a celebration.
+REBUILD 2026-10-26 run67 (QA Failed 2026-10-26 19:59 CT, photo-subject mismatch): barre.jpg (Pexels 5888286, children's ballet barre) and tutus.jpg (Pexels 5635576, children's ballet tutus) REMOVED - this adult social-dance studio does not offer children's ballet. Replaced with wedding.jpg and celebration.jpg above; hero.jpg (Pexels 5935969, adult group session) kept. Do NOT reuse 5888286 or 5635576 for this business.
 RATING: Google 4.7 from 13 reviews, shown once.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone and email only. No verified online registration URL is in the CRM record, so no registration button is shown. No class prices are published, so none are shown.
