@@ -1,0 +1,15 @@
+DESIGN BRIEF - Michael Mills Photography (Akron, OH), batch 45
+
+AESTHETIC: Darkroom editorial. Warm paper background, ink-black rules, and a single rust-red accent, styled like a printed contact sheet: numbered sessions, mono-spaced labels, large serif headlines. Distinct from the generic dark hero plus card-grid photography templates.
+
+TYPOGRAPHY: Georgia serif for headlines and body (print-editorial feel); Courier New mono for kickers, labels, captions, and CTAs (darkroom/contact-sheet reference).
+
+PALETTE: Warm paper #f6f1e7, ink #1c1a17, dark panel #26221d, rust accent #a63a24, hairline #d8cfbc.
+
+IMAGERY: No real business photos were obtainable (own site is a proofing widget only; no verified social). Five labeled stock photos, each visually verified to match its caption: wedding, studio portrait, sports, on-location shooting, camera gear. Every caption says "Stock photo" and the gallery intro states plainly that these are not the studio's own photographs.
+
+LAYOUT: Asymmetric hero (headline left, large wedding photo right) under a dark masthead bar; numbered editorial session list instead of a card grid; two-column gallery with one wide frame; visit section pairing address and rating with hours. Mobile stacks to a single column.
+
+CUSTOMER JOURNEY: Land on the studio name and disclosure, see the session range, view example imagery, then call. The only CTA is a tel: call link; no Book Now button exists because no online booking destination was verified.
+
+COPY RULES OBSERVED: No em dashes, no banned AI phrases, no "No X, no Y" triples, no invented prices, packages, hours, awards, or credentials. Rating appears exactly once with its source. Sunday hours are stated as not listed rather than invented.
