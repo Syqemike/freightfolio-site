@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nelson Inshore Fishing Charters | Gulf Shores, Alabama</title>
+<meta name="description" content="Website concept for Nelson Inshore Fishing Charters, Gulf Shores, Alabama. Inshore fishing trips and dolphin cruises on Mobile Bay, the Bon Secour River, and the Intracoastal Canal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--teal:#143c3a;--teal2:#1e524e;--sand:#f5f0e6;--paper:#fffdf7;--ink:#1e2422;--muted:#5c6a66;--rust:#b4552d;--line:#d8cfbc}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Karla,Arial,sans-serif;color:var(--ink);background:var(--sand);line-height:1.6}
+  a{color:var(--teal)}
+  .disclosure{background:var(--teal);color:#eef3ee;font-size:.86rem;text-align:center;padding:.55rem 1rem}
+  .disclosure strong{letter-spacing:.04em}
+  header{background:var(--paper);border-bottom:1px solid var(--line)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+  .mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 1.5rem;padding:1.1rem 0}
+  .brand{font-family:Fraunces,Georgia,serif;font-size:1.55rem;font-weight:700;color:var(--teal);line-height:1.15}
+  .brand small{display:block;font-family:Karla,Arial,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rust)}
+  nav{display:flex;flex-wrap:wrap;gap:1.1rem}
+  nav a{text-decoration:none;font-weight:700;color:var(--teal);font-size:.95rem}
+  nav a:hover{text-decoration:underline}
+  .hero{display:grid;grid-template-columns:1.05fr 1.35fr;gap:0;align-items:stretch;margin:2rem 0 0}
+  .hero-text{background:var(--teal);color:#f2f0e8;padding:2.4rem 2.2rem;display:flex;flex-direction:column;justify-content:center}
+  .hero-text h1{font-family:Fraunces,Georgia,serif;font-size:2.6rem;line-height:1.08;margin:.4rem 0 1rem}
+  .hero-text p{margin:0 0 1.4rem;color:#dfe8e2}
+  .kicker{font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#e8b59a}
+  .cta-row{display:flex;flex-wrap:wrap;gap:.7rem}
+  .btn{display:inline-block;padding:.7rem 1.25rem;border-radius:3px;text-decoration:none;font-weight:700}
+  .btn-call{background:var(--rust);color:#fff}
+  .btn-mail{background:transparent;color:#fff;border:1.5px solid #cfe0da}
+  .hero-img{margin:0;min-height:340px}
+  .hero-img img{width:100%;height:100%;object-fit:cover;display:block}
+  .hero-img figcaption{font-size:.82rem;color:var(--muted);padding:.4rem 0}
+  section{padding:2.6rem 0}
+  h2{font-family:Fraunces,Georgia,serif;font-size:1.9rem;color:var(--teal);margin:0 0 .4rem;line-height:1.2}
+  .lede{font-size:1.1rem;color:#33413e;max-width:640px}
+  .rule{width:64px;height:4px;background:var(--rust);margin:1rem 0}
+  .rating{display:inline-block;background:var(--paper);border:1px solid var(--line);padding:.5rem .9rem;font-weight:700;color:var(--teal);margin-top:1rem}
+  .trips{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .trip{border-top:1px solid var(--line);padding:1.4rem 0;display:grid;grid-template-columns:1.5fr 1fr;gap:1rem 2rem}
+  .trip:first-of-type{border-top:0}
+  .trip h3{font-family:Fraunces,Georgia,serif;font-size:1.35rem;color:var(--teal);margin:0 0 .35rem}
+  .trip p{margin:0;color:#33413e}
+  .price{font-weight:700;color:var(--teal)}
+  .price span{display:inline-block;margin-right:1.2rem}
+  .note{font-size:.92rem;color:var(--muted)}
+  .photos{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+  .photos figure{margin:0;background:var(--paper);border:1px solid var(--line);padding:.6rem}
+  .photos img{width:100%;height:280px;object-fit:cover;display:block}
+  .photos figcaption{font-size:.88rem;color:var(--muted);padding:.5rem .2rem 0}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+  .two h3{font-family:Fraunces,Georgia,serif;color:var(--teal);margin-top:0}
+  .waters{list-style:none;padding:0;margin:0}
+  .waters li{padding:.65rem 0;border-bottom:1px solid var(--line);font-weight:600;color:var(--teal)}
+  .waters li span{display:block;font-weight:400;color:var(--ink);font-size:.95rem}
+  .visit{background:var(--teal);color:#eef3ee}
+  .visit h2{color:#fff}
+  .visit a{color:#fff}
+  .visit .btn-call{background:var(--rust)}
+  footer{background:var(--paper);border-top:1px solid var(--line);padding:1.5rem 0;font-size:.88rem;color:var(--muted)}
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr}
+    .hero-text{padding:1.8rem 1.4rem}
+    .hero-text h1{font-size:2.1rem}
+    .hero-img{min-height:0}
+    .trip,.two,.photos{grid-template-columns:1fr}
+    .photos img{height:230px}
+    .brand{font-size:1.35rem}
+    nav{gap:.8rem}
+    nav a{font-size:.9rem}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure"><strong>WEBSITE CONCEPT</strong> &nbsp;This page is a design preview prepared for Nelson Inshore Fishing Charters. It is not the business's live website.</div>
+
+<header>
+  <div class="wrap mast">
+    <div class="brand"><small>Gulf Shores, Alabama</small>Nelson Inshore Fishing Charters</div>
+    <nav aria-label="Page sections">
+      <a href="#trips">Trips</a>
+      <a href="#photos">Photos</a>
+      <a href="#waters">Waters</a>
+      <a href="#about">About</a>
+      <a href="#visit">Visit and Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="hero-text">
+      <div class="kicker">Inshore fishing, Gulf Shores</div>
+      <h1>Fish the backwaters with locals who know them.</h1>
+      <p>Morning, afternoon, and night inshore trips plus an afternoon dolphin and nature cruise, out of Gulf Shores, Alabama.</p>
+      <div class="cta-row">
+        <a class="btn btn-call" href="tel:+12515897931">Call (251) 589-7931</a>
+        <a class="btn btn-mail" href="mailto:nelsoncharterfishing@gmail.com">Email the Charter</a>
+      </div>
+    </div>
+    <figure class="hero-img">
+      <img src="images/hero-water.jpg" alt="Sunlight on the water along a wooden breakwater on the Gulf Coast">
+      <figcaption>Photo from Nelson Inshore Charter Fishing, used on the business's own website.</figcaption>
+    </figure>
+  </div>
+
+  <section id="about">
+    <h2>A family operation, five generations in.</h2>
+    <div class="rule"></div>
+    <p class="lede">The Nelson family has fished this area for five generations. John Nelson and Matt White formed Nelson Charter Fishing in 2010, starting from a rustic fishing marina and boatyard and running trips into the secluded backwater areas around Gulf Shores.</p>
+    <p class="lede">Trips run in the mornings, afternoons, and at night. The focus is inshore water: calm, shallow, and close to shore, with scenery, sea birds, dolphins, and alligators along the way.</p>
+    <span class="rating">4.9 stars from 105 reviews, primary listing</span>
+  </section>
+
+  <section class="trips" id="trips">
+    <h2>Trips and rates</h2>
+    <div class="rule"></div>
+    <p class="lede">Rates below are from the charter's own services page. Call or email with questions about a date.</p>
+
+    <article class="trip">
+      <div>
+        <h3>4-Hour Inshore Fishing, Morning</h3>
+        <p>Target redfish and speckled trout, and fish for whatever species is biting at the time. Trips run on a center console. Fish are cleaned at the end of the trip at no additional cost, and tips are appreciated.</p>
+        <p class="note">4 people or less recommended. 6 people maximum, which would consist mainly of bottom fishing.</p>
+      </div>
+      <div class="price"><span>$475 for 2</span><span>$550 for 3</span><span>$625 for 4</span></div>
+    </article>
+
+    <article class="trip">
+      <div>
+        <h3>3-Hour Inshore Fishing, Afternoon</h3>
+        <p>Target redfish and speckled trout, and fish for whatever species is biting. Trips run on a center console. Fish are cleaned at the end of the trip at no additional cost, and tips are appreciated.</p>
+        <p class="note">4 people or less recommended. 6 people maximum, which would consist mainly of bottom fishing.</p>
+      </div>
+      <div class="price"><span>$400 for 2</span><span>$475 for 3</span><span>$550 for 4</span></div>
+    </article>
+
+    <article class="trip">
+      <div>
+        <h3>1.5-Hour Dolphin and Nature Cruise, Afternoon</h3>
+        <p>A family ride to see wildlife in the Mobile Bay area. Request more information by phone or email.</p>
+      </div>
+      <div class="price"><span>$300, 6-person trip</span></div>
+    </article>
+  </section>
+
+  <section id="photos">
+    <h2>From the water</h2>
+    <div class="rule"></div>
+    <p class="lede">Photos from Nelson Inshore Charter Fishing, used on the business's own website.</p>
+    <div class="photos">
+      <figure>
+        <img src="images/catch-redfish.jpg" alt="Anglers on a boat holding redfish">
+        <figcaption>Anglers holding redfish on the boat. Photo from Nelson Inshore Charter Fishing.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/catch-trout.jpg" alt="Speckled trout laid out on a table after a trip">
+        <figcaption>Speckled trout from a trip, laid out after the catch. Photo from Nelson Inshore Charter Fishing.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/dolphin.jpg" alt="A dolphin leaping beside a boat wake">
+        <figcaption>A dolphin in the wake. Photo from Nelson Inshore Charter Fishing.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/hero-water.jpg" alt="Sunlight on the water along a wooden breakwater">
+        <figcaption>Water along the Gulf Coast. Photo from Nelson Inshore Charter Fishing.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="waters">
+    <div class="two">
+      <div>
+        <h2>Where they fish</h2>
+        <div class="rule"></div>
+        <ul class="waters">
+          <li>Mobile Bay<span>Open bay water and its edges, fished from a center console.</span></li>
+          <li>Bon Secour River<span>Quiet river water close to Gulf Shores.</span></li>
+          <li>Intracoastal Canal<span>Sheltered canal water between the bay and the river.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>What they target</h2>
+        <div class="rule"></div>
+        <p>Redfish and speckled trout lead the list. Depending on what is biting, trips also go after white trout, sheepshead, flounder, and more.</p>
+        <p class="note">What is biting changes with conditions. The charter fishes for whatever species is biting at the time.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <h2>Visit and contact</h2>
+    <div class="rule"></div>
+    <p>16800 Nelson Ln, Gulf Shores, AL 36542</p>
+    <p>Listed hours: 6:00 AM to 9:00 PM daily. Some listings show different hours, so call to confirm before you head out.</p>
+    <div class="cta-row">
+      <a class="btn btn-call" href="tel:+12515897931">Call (251) 589-7931</a>
+      <a class="btn btn-mail" href="mailto:nelsoncharterfishing@gmail.com">nelsoncharterfishing@gmail.com</a>
+      <a class="btn btn-mail" href="https://www.google.com/maps/search/?api=1&amp;query=16800+Nelson+Ln+Gulf+Shores+AL+36542">Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Website Concept.</strong> This is a design preview prepared for Nelson Inshore Fishing Charters. It is not the business's live website, and it does not imply an endorsement. Trip details, rates, and hours shown here come from the charter's own published pages and listings.</p>
+  </div>
+</footer>
+</body>
+</html>
