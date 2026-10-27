@@ -1,8 +1,8 @@
-PHOTOS (all stock photos, reused from the Shakti Yoga concept pool; none are photos of Longevity Fitness Charleston or its classes):
-- hero.jpg: a group of adults doing yoga poses on mats in a bright indoor studio.
-- yoga2.jpg: adults practicing yoga poses in a modern, minimalist studio.
-- yoga3.jpg: a group of adults practicing yoga together indoors.
-PHOTO NOTE: the gallery photos show yoga classes; the club also offers Pilates, training, and recovery services that are not pictured. They are captioned as stock photos.
+PHOTOS (all stock photos; none are photos of Longevity Fitness Charleston or its classes):
+- reformer.jpg = Pexels 25596677 (Ahmet Kurt, verified firsthand this shift): a woman working out on a wooden Pilates reformer in a bright studio, holding the reformer straps overhead with knees bent, other reformers behind her.
+- yoga2.jpg (Shakti Yoga pool): adults practicing yoga poses in a modern, minimalist studio.
+- yoga3.jpg (Shakti Yoga pool): a group of adults practicing yoga together indoors.
+REBUILD 2026-10-27 run67 (QA NEEDS CHANGES 82/100, sole failing defect photo/service mismatch): hero.jpg REMOVED - it showed a group yoga class, and the gallery showed yoga classes only while the business leads with Reformer Pilates, personal training, small group classes, holistic care, and a recovery lounge with an infrared sauna; yoga is not a listed service. The hero now shows Reformer Pilates work, meeting QA's acceptance criterion (at least one reformer/training photo). NOTE: yoga2.jpg and yoga3.jpg remain in the gallery as labeled stock photos; they depict generic studio movement, not a listed service, and QA re-test should confirm whether the single reformer photo resolves the defect. Do NOT reuse the removed hero yoga photo for this business.
 RATING: Google 5.0 from 28 reviews, shown once.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online signup URL is in the CRM record (a tour link URL was not recorded), so no signup button is shown.

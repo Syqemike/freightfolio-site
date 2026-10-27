@@ -1,8 +1,8 @@
-PHOTOS (all stock photos, reused from the Marry Me Wedding Chapel concept pool; none are photos of Ice House):
-- hero.jpg: pink garden roses.
-- seasonal.jpg: a bouquet of peach and pink roses and peonies.
-- sunflowers.jpg: sunflowers in a field.
-PHOTO NOTE: the gallery photos show wedding flowers, not Ice House itself; they are captioned as stock photos and are not presented as the venue.
+PHOTOS (all stock photos; none are photos of Ice House):
+- banquet.jpg = Pexels 16985178 (Matheus Bertelli, verified firsthand this shift): a spacious modern banquet hall set for an event, wooden floor, round tables with white cloths, tall chairs, warm ambient lighting, large glass wall.
+- ballroom.jpg = Pexels 31552850 (Michael D Beckwith, verified firsthand this shift): a historic ballroom interior with an ornate painted and gilded ceiling, chandeliers, balconies, a stage, and a dance floor lined with red chairs.
+- sunflowers.jpg (Marry Me Wedding Chapel pool): sunflowers in a field.
+REBUILD 2026-10-27 run67 (QA NEEDS CHANGES 80/100, sole failing defect CRITICAL-CLASS photo/service mismatch): hero.jpg (pink garden roses) and seasonal.jpg (bouquet of peach and pink roses and peonies) REMOVED - no photo of the venue appeared anywhere on the site. The hero and one gallery photo now show event spaces, meeting QA's acceptance criterion (at least the hero, ideally one gallery photo). Sunflowers.jpg remains as labeled stock event-floral imagery. Do NOT reuse the removed roses/bouquet photos for this business.
 RATING: Google 5.0 from 10 reviews, shown once.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
