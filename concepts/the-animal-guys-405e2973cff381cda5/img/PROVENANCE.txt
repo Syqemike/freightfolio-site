@@ -1,8 +1,8 @@
-PHOTOS (all Pexels stock photos, reused from the Bay Pest Control concept pool, which reused the Blue Star Pest Control pool; none are photos of The Animal Guys or its work):
-- hero.jpg = Pexels 19789841: pest control specialist fogging outside a house.
-- pest2.jpg = Pexels 4176541: professional treating a living room with fumigation equipment.
-- pest3.jpg = Pexels 5499416: worker in protective gear spraying a room interior.
-CAPTION HONESTY: the gallery photos show pest-control treatment work, captioned as stock photos. They are not presented as The Animal Guys wildlife removals.
+PHOTOS (all Pexels stock photos; none are photos of The Animal Guys or its work):
+- owl.jpg = Pexels 40046838 (Anderson Alves, verified firsthand this shift): an owl inside a blue-and-white transport carrier being handled outdoors (humane wildlife handling/transport).
+- trap.jpg = Pexels 69221 (ardeshir etemad, verified firsthand this shift): a rat inside a wire live-trap cage (live trapping).
+- inspection.jpg = Pexels 8293667 (RDNE Stock project, verified firsthand this shift): a technician in a yellow hard hat and safety vest inspecting a home exterior door/siding with a clipboard (home inspection; no animal visible in this frame).
+REBUILD 2026-10-27 run67 (QA Failed 2026-10-26 19:59 CT, CRITICAL photo-subject mismatch): hero.jpg (Pexels 19789841), pest2.jpg (Pexels 4176541), and pest3.jpg (Pexels 5499416) REMOVED - all three showed pest-control spraying/fumigation, zero wildlife removal, and spraying implied chemical extermination contrary to the business's humane positioning. Do NOT reuse Pexels 19789841, 4176541, or 5499416 for this business.
 RATING: Google 5.0 from 10 reviews, shown once.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone and email only. No verified online booking or quote form URL is in the CRM record, so no booking button is shown. No service prices are published, so none are shown.

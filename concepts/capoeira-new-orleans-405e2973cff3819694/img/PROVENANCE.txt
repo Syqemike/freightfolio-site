@@ -1,8 +1,8 @@
-PHOTOS (all Pexels stock photos, reused from the Ballet Folklorico Mexico Lindo concept pool; none are photos of Capoeira New Orleans or its classes):
-- hero.jpg = Pexels 13203469: a folklorico dancer in a vibrant dress twirling her skirt in a park.
-- dance2.jpg = Pexels 13202503: a dancer in a white, yellow, and purple folkloric dress with a white hat, outdoors.
-- dance3.jpg = Pexels 26843172: a dancer in colorful traditional attire performing on a dimly lit stage.
-CAPTION HONESTY: the gallery photos show folkloric dance, not capoeira moves. They are captioned as stock photos of dancers and are not presented as Capoeira New Orleans classes. QA should confirm this reads clearly.
+PHOTOS (all Pexels stock photos; none are photos of Capoeira New Orleans or its classes):
+- roda.jpg = Pexels 37192943 (Tahir Xəlfəquliyev, verified firsthand this shift): two capoeira players in white pants playing in an outdoor roda circle with musicians and berimbau players, stone wall behind. NOTE: a federation banner is visible at the right edge of the frame; it is background context in the stock photo, not Capoeira New Orleans branding, and is not captioned as the business.
+- session.jpg = Pexels 3340318 (Matheus Natan, verified firsthand this shift): a large group in a dynamic indoor capoeira session with white pants and a berimbau.
+- footwork.jpg = Pexels 3340319 (Matheus Natan, verified firsthand this shift): close-up of capoeira footwork with white pants and belt cords on a gym floor.
+REBUILD 2026-10-27 run67 (QA Failed 2026-10-26 19:59 CT, CRITICAL photo-subject mismatch): hero.jpg (Pexels 13203469), dance2.jpg (Pexels 13202503), and dance3.jpg (Pexels 26843172) REMOVED - all three showed Mexican folklorico dance, zero capoeira. Do NOT reuse Pexels 13203469, 13202503, or 26843172 for this business.
 RATING: Google 4.8 from 104 reviews, shown once.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
 CTA: phone only. No verified online signup URL is in the CRM record, so no signup button is shown. No class prices are published, so none are shown.

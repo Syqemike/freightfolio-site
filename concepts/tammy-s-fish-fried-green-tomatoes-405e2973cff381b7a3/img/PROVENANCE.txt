@@ -1,6 +1,7 @@
 PHOTOS (all stock photos, reused from verified concept pools, none are photos of Tammy's truck or its food):
 - hero.jpg (Juanita's Kitchen pool, verified against the image file this shift): crispy fried fish with fries and salad on a plate.
-- fish-plate.jpg (Juanita's Kitchen pool, verified against the image file this shift): fried fish with fries and salad on a plate. Replaces truck.jpg in Rebuild run65.
+- fish-plate.jpg REMOVED 2026-10-27 (Rebuild run67): this file was byte-identical to hero.jpg (same fried-fish plate photo), so the gallery showed only 2 distinct subjects across 4 placements; QA Failed the site on photo_count 2026-10-26. Do not reuse fish-plate.jpg for Tammy's.
+- wings.jpg (Pexels 16976648, verified firsthand this shift; compressed to 2000px/568KB for the 5 MB limit): spicy chicken wings with peppers and shallots on a blue plate. Replaces fish-plate.jpg in Rebuild run67, giving 3 distinct subjects (fish plate, wings, truck serving).
 - truck.jpg REMOVED 2026-10-26 (Rebuild run65): the former gallery photo (Chucks Cheesesteaks pool, Pexels 34261963) showed a red food truck with large Japanese onigiri signage, matcha/hojicha menu boards, and a Japanese lantern, contradicting Tammy's fried-fish/soul-food menu; QA Failed the site on this single photo-context defect 2026-10-26. Do not reuse Pexels 34261963 for Tammy's.
 - serving.jpg (Chucks Cheesesteaks pool, Pexels 11117849): a customer receiving food from a vendor at a food truck.
 CAPTIONS: the truck photos are generic food truck scenes, captioned as stock, and are not claimed to be Tammy's truck.
