@@ -1,8 +1,10 @@
-PHOTOS (all stock photos, reused from the Crosby's Heating and Air concept pool; none are photos of Dan's Heating & Cooling or its work. Captions describe homes, not HVAC work):
-- hero.jpg = Pexels 106399: a house at dusk with lights on.
-- house.jpg = Pexels 1029599: a white house with a picket fence in autumn.
-- home.jpg = Pexels 6267516: a brick house with a lawn and driveway.
+PHOTOS (all stock photos, labeled in captions; none are photos of Dan's Heating & Cooling or its work):
+- hero.jpg = Pexels 6471911 (https://www.pexels.com/photo/man-with-tools-at-work-6471911/): a technician servicing an outdoor air conditioning unit with manifold gauges. Verified firsthand from the downloaded file: technician crouching with red manifold gauges beside an outdoor unit, tools on the ground.
+- house.jpg = Pexels 36818203 (https://www.pexels.com/photo/modern-smart-thermostat-with-user-interface-36818203/): a hand adjusting a smart thermostat on a wall. Verified firsthand: hand turning the dial of a black wall-mounted smart thermostat.
+- home.jpg = Pexels 2464420 (https://www.pexels.com/photo/gray-rod-and-pendant-lamps-on-ceiling-2464420/): exposed ductwork on a ceiling. Verified firsthand: metal ductwork across an industrial ceiling with pendant lamps.
+REMOVED 2026-10-27 (rebuild run71): the previous houses-only set (Pexels 106399 house at dusk, 1029599 white house with picket fence, 6267516 brick house) was deleted; it was the QA 2026-10-27 photo/service mismatch defect (no HVAC or plumbing imagery anywhere).
+REAL-PHOTO CHECK 2026-10-27 (live browser): real photos of this business DO exist publicly (own site danshc.com branded vans/storefront/team photo; Facebook page DansHeatingandCooling; Google Maps "By owner" gallery with 20+ van/work photos), but no direct image-file URL was exposed for a usable van/work photo (the only exposed own-site file was a small 214x300 owners portrait, not used), so the QA acceptance criterion's labeled-stock fallback was used. Facebook page danshc is not the business page; the correct page is DansHeatingandCooling. Yelp listing viewed showed no business photos and a different address (349 S Laura St), so it was not treated as the primary listing.
 RATING: 4.9 from 10 HomeAdvisor reviews, shown once.
-SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+SOCIAL: no social link is shown on the page (QA-passed element); the verified Facebook page above was not linked because no social links were part of this narrow photo rebuild.
 CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
 NOT USED: no prices are shown because none were found in research. Diamond Contractor status is mentioned on the own site homepage article but is not repeated as a standalone claim.
