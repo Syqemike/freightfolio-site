@@ -1,7 +1,7 @@
 PHOTOS (all stock photos, reused from the Brick & Mortar Venue concept pool, also used for The Pillars Mobile; none are photos of Historic Rice Mill or its events):
 - hero.jpg: a DJ playing at a wedding reception in a barn venue.
 - roses.jpg: pink garden roses.
-- sunflowers.jpg: sunflowers in a field.
+- waterfront.jpg = Pexels 169193 (reused from the At The Beach Weddings concept pool): a waterfront wedding reception table with floral arrangements. Added in Rebuild run74 to fix QA 2026-10-27 photo-relevance defect (gallery showed no venue/waterfront image); the sunflowers photo (sunflowers.jpg) was removed.
 RATING: no rating shown. Research gives 4.9 from 23 reviews with no exact platform named, and another listing shows 4.6 from 155, so no figure is shown.
 SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
 CTA: phone only. No verified online booking URL is in the CRM record.

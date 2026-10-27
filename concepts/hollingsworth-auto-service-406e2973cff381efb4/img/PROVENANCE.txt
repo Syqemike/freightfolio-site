@@ -1,7 +1,7 @@
 PHOTOS (all stock photos, reused from the Arnold Automotive concept pool, also used for Dempsey's Auto Repair; none are photos of Hollingsworth Auto Service or its shop):
 - hero.jpg = Pexels 2244746: a mechanic repairing a car undercarriage outdoors.
 - auto3b.jpg = Pexels 3807329: a man working under a car hood.
-- auto1b.jpg = Pexels 3807517: a mechanic checking a car engine.
+- polish.jpg (reused from the Great White Detailing concept pool): a worker polishing a car finish with a machine polisher. Added in Rebuild run74 to fix QA 2026-10-27 photo-relevance defect (gallery was general mechanical repair only; refinishing work now represented); the engine-check photo (auto1b.jpg) was removed.
 RATING: no rating shown. Research gives 4.6 from 35 reviews with no exact platform named, so the figure is omitted.
 SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
 CTA: phone only. No verified online booking URL is in the CRM record.

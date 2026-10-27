@@ -1,7 +1,8 @@
-PHOTOS (all stock photos, reused from the Melissa's Bakery / Blue Crane Bakery concept pool, in a different order from Dolce Bakeshop this shift; none are photos of SugarLove Snowballs or its treats):
-- rolls.jpg = Pexels 5964500: cinnamon rolls on bakery racks.
-- hero.jpg = Pexels 13130546: baked goods under a glass cover in a bakery.
-- cookies.jpg = Pexels 12557753: chocolate chip cookies with a French press of coffee on a wooden table.
+PHOTOS (all stock photos; none are photos of SugarLove Snowballs or its treats):
+- snowball.jpg: mango shaved ice in a glass bowl. Public-domain photo via hippopx (source page https://www.hippopx.com/en/free-photo-aunex, marked Public Domain; direct file verified firsthand 2026-10-27). Labeled as a stock photo in the caption because it is a generic illustrative photo, not SugarLove's product.
+- cake.jpg = Pexels 291528 (reused from the Santa Fe Bakery concept pool): a slice of chocolate layer cake.
+- cupcakes.jpg = Pexels 39704886 (reused from the O Pink's Sweets concept pool): assorted cupcakes in a display case. NOTE: price tags visible in the photo are part of the stock photo, not SugarLove prices.
+Replaced in Rebuild run74 to fix QA 2026-10-27 defects: the old set was identical to Dolce Bakeshop's set (rolls / baked goods under glass / cookies with coffee) and contained no snowball product. The new set has zero overlap with Dolce Bakeshop's set and includes a shaved-ice dessert.
 RATING: no rating shown. Research gives 4.8 from 163 reviews with no exact platform named, and other directories show 4.4 from 171 and 4.8 from 631, so no figure is shown.
 SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
 CTA: phone only. No verified online ordering URL is in the CRM record; DoorDash and shipping are described, not linked, because no URL was verified.
