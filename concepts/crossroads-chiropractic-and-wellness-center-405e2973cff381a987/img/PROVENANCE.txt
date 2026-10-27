@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the Slidell Chiropractic Clinic concept pool, which reused the Downtown Chiropractic pool; none are photos of Crossroads Chiropractic and Wellness Center or its patients):
+- hero.jpg = Pexels 5794034: therapist adjusting a woman lying on her side on a treatment table.
+- wellness2.jpg = Pexels 5793804: therapist giving a seated woman a spinal and back adjustment in a clinic.
+- wellness3.jpg = Pexels 14797752: chiropractor using a handheld adjustment instrument on a seated woman's neck.
+RATING: no rating is shown. Research gives 4.9 from 51 reviews on a public listing with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: social profiles are claimed in press releases but no profile URLs were verified, so none is linked.
+CTA: phone only. Research mentions an online scheduling page but no scheduling URL was verified in the CRM record, so no Book Now button is shown.
+HOURS FLAG: Tuesday, Thursday, and Friday hours differ between the listing and a directory FAQ; the listing hours are shown and the FAQ hours are flagged on the Visit page. Confirm before outreach.
+NOT USED: no service prices are shown because none were found in research. The existing site crossroadschiropractickc.com is not linked as a full site. Email is shown as text only, spelled as printed in the clinic press releases.

@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Brick & Mortar Venue concept pool, which reused the Deerfield Estates Venue pool; none are photos of The Pillars Mobile or its events):
+- hero.jpg = Pexels 13788569: a DJ playing at a wedding reception in a barn venue.
+- roses.jpg = Pexels 122734: pink garden roses.
+- sunflowers.jpg = Pexels 1169084: sunflowers in a field.
+RATING: Google 5.0 from 72 reviews, shown once on the home page.
+SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no booking button is shown.
+NOT USED: the own site pillarsmobile.com is a history and about narrative only, with no pricing, packages, or booking form, and is not linked as a booking page. No pricing or packages are shown because none were found in research. The place-listing phone (251) 298-3408 is noted, not used as the main CTA.

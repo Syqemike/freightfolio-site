@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Aurum Jewelers concept pool, which reused the Jensen Jewelers Inc pool; none are photos of Better Jewelers or its stock):
+- hero.jpg = Pexels 1191531: charm bracelets worn on a wrist.
+- ring.jpg = Pexels 1232931: a jeweled ring resting on a red rose.
+- necklace.jpg = Pexels 10983780: a diamond pendant necklace.
+RATING: Google 4.8 from 40 reviews, shown once on the home page.
+SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
+CTA: phone only. No verified online shop URL is in the CRM record, so no shop button is shown.
+NOT USED: the listed website betterjewelers.business.site returns a Google 404 and is not linked. No prices are shown because none were found in research. No ZIP code is shown because none was in the research notes.
