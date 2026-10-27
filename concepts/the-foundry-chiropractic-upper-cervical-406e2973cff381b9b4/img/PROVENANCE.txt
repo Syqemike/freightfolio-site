@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the Downtown Chiropractic concept pool; none are photos of The Foundry Chiropractic & Upper Cervical or its patients):
+- hero.jpg = Pexels 5794034: therapist adjusting a woman lying on her side on a treatment table.
+- wellness2.jpg = Pexels 5793804: therapist giving a seated woman a spinal and back adjustment in a clinic.
+- wellness3.jpg = Pexels 14797752: chiropractor using a handheld adjustment instrument on a seated woman's neck.
+PHOTO NOTE: the same three photos are used on Slidell Chiropractic Clinic this shift; layouts and palettes differ. All chiropractic stock pools in the repo carry these same three Pexels photos.
+RATING: no rating is shown. Research gives 5.0 from 13 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown. Research notes the own site has a schedule link, but its URL is not in the CRM record.
+NOT USED: no prices are shown because none were found in research.

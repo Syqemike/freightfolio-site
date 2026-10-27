@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Gary Houston Electric Company concept pool; none are photos of McNeer Electrical Contracting or its work):
+- hero.jpg = Pexels 30335242: close-up of industrial warning signs on an aged electrical panel.
+- elec2.jpg = Pexels 38217230: control room filled with electrical panels and equipment.
+- elec3.jpg = Pexels 9679179: technician working on a circuit breaker panel.
+RATING: no rating is shown. Research gives 4.9 from 15 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: Facebook linked from the own site is linked on the Visit page.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
+NOT USED: the own-site footer also shows (318) 383-0083 and an after-hours emergency line (318) 208-2052; neither is shown. Only the main listing number (318) 633-0370 is shown. No prices are shown because none were found in research.

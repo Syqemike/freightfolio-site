@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the Ashiatsu Massage concept pool; none are photos of Basic Kneads Massage Therapy. Captions were verified by viewing the image files this shift):
+- hero.jpg: therapist giving a back massage in a calm treatment room with candles and a macrame wall hanging.
+- hands.jpg: close detail of a therapist's hands during a back massage.
+- interior.jpg: treatment room with a massage table, rolled towel, oils, and a candle.
+RATING: no rating is shown. Research gives 4.8 from 24 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. Research notes the own site has therapist bios and online booking, but no booking URL is in the CRM record, so no booking link is shown.
+HOURS NOTE: place-listing hours are shown; another directory lists slightly different hours and was not used.
+NOT USED: no prices are shown because no service price list was found in research.

@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Elite Hands Massage Therapy concept pool; none are photos of Lotus Therapy):
+- hero.jpg = Pexels 3865797: a massage therapy session.
+- session2.jpg = Pexels 6628601: a massage therapy session in progress.
+- session3.jpg = Pexels 3865799: a relaxing massage session.
+RATING: no rating is shown. Research gives 5.0 from 73 reviews with no exact platform named in the rating sentence, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. Lotus Therapy has no own website; research found only a MassageBook profile and a HeyGoldie booking page, but neither URL is in the CRM record, so no booking link is shown.
+NOT USED: no other prices are shown because only the three prices above were found in research.

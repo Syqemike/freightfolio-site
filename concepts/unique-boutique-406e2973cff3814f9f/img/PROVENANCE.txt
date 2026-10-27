@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Geez Louise Boutique concept pool; none are photos of Unique Boutique or its stock):
+- hero.jpg = Pexels 374677: a woman browsing clothing racks in a shop.
+- jacket.jpg = Pexels 1536619: a denim jacket over a mustard top against a yellow wall.
+- folded.jpg = Pexels 581087: folded shirts in a drawer.
+RATING: no rating is shown. Research gives 4.7 from 115 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online checkout URL is in the CRM record, so no shop-now button is shown. The boutique domain uniqueboutiquems.com was confirmed parked on a GoDaddy lander page in live-browser checks on 2026-10-26, so it is not linked.
+NOT USED: no ZIP code is shown because none was in the research notes. No prices are shown because none were found in research.

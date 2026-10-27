@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the A Hand 2 Heal Massage Therapy concept pool; none are photos of Grace Spa & Massage):
+- session-hero.jpg = Pexels 3865800: therapist giving a back massage in a bright, calm treatment room.
+- session-calm.jpg = Pexels 3865792: massage therapy session detail.
+- spa-interior.jpg = Pexels 35884502: serene spa treatment room with a massage table, folded towel, and candle.
+RATING: no rating is shown. Research gives 4.5 from 50 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: Facebook profile linked from the own site is linked on the Visit page.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
+PHONE FLAG: the CRM and place listing phone (931) 802-8181 is shown; the business own site shows (931) 561-0602. The second number is NOT shown. Sales and QA must confirm the correct number before outreach.
+NOT USED: no prices are shown because no service price list was found in research.

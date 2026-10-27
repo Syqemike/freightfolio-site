@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Mancini Electric concept pool; none are photos of Hope Contractors of Shreveport or its work):
+- hero.jpg = Pexels 34054464: electrician diagnosing an electrical panel with a multimeter.
+- panel.jpg = Pexels 27928762: electrician working on an indoor circuit breaker panel.
+- switchboard.jpg = Pexels 257736: electrician working on an opened switchboard with colorful wires.
+RATING: no rating is shown. Research gives 4.6 from 10 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
+NOT USED: no prices are shown because none were found in research. The physical address is shown; the mailing PO Box is in the visit note.
