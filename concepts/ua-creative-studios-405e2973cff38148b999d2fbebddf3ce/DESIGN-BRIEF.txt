@@ -1,0 +1,34 @@
+DESIGN BRIEF: UA Creative Studios (Columbus, OH)
+Photography studio concept, batch 45, 2026-10-27.
+
+AESTHETIC: Editorial darkroom / contact-sheet look. Warm paper background,
+ink-dark text, rust-orange accent, numbered index entries like frames on a
+contact sheet. Asymmetric hero (copy left, framed photo right) and a varied
+12-column gallery grid so the page does not read as a generic photographer
+template.
+
+TYPOGRAPHY: Georgia serif for display headlines (warm, print-like); system
+sans for body copy; monospace for captions, index numbers, and labels.
+
+PALETTE: warm paper #f3ede1, darker paper #eae2d0, ink #221d18,
+rust #a8431f, muted warm gray #6f6355, hairline #d6cbb6.
+
+IMAGERY: No real photos of this business could be obtained. Its own site
+returns only a hosting placeholder and no verified social profile surfaced.
+All 5 photos are labeled stock photos, each captioned "Stock photo" on the
+page and listed in PROVENANCE.txt. No drawn or generated illustrations
+anywhere; no SVG art; only photographs and plain CSS.
+
+LAYOUT: Disclosure bar, sticky nav (Work, Services, About, Visit), hero
+with address/hours/phone facts, numbered service index strip, editorial
+gallery, numbered services list, about/process, dark visit block with the
+single rating mention, footer disclosure.
+
+CONTENT BOUNDARIES: Services only as verified (portrait, event,
+commercial, corporate video, virtual reality). Hours Mon-Fri 9am-5pm and
+address 421 W State St, Columbus, OH from research. Phone (614) 593-9383.
+No prices shown (directory price ranges were not verified on the
+business's own materials, so they were omitted). No Book Now button (no
+online booking destination verified). No link to uacreativestudios.com
+(it currently returns a hosting placeholder, not business content).
+Rating shown exactly once: 5.0 from 14 Google reviews.

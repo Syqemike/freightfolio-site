@@ -1,0 +1,24 @@
+PHOTO PROVENANCE: UA Creative Studios concept page
+Date: 2026-10-27. Business: UA Creative Studios, 421 W State St, Columbus, OH.
+
+REAL BUSINESS PHOTOS: None used. No real photos of this business could be
+obtained. The business's own domain (uacreativestudios.com) currently returns
+only a hosting placeholder page with no business content, and no verified
+Facebook or Instagram profile URL for this studio surfaced in research.
+No other business's photos or portfolio images were used.
+
+STOCK PHOTOS (all from Unsplash, used as layout placeholders, each captioned
+"Stock photo" on the page; none presented as the studio's own work):
+- img/hero-camera.jpg: Unsplash photo 1471341971476-ae15ff5dd4ea.
+  Caption: "Stock photo: studio lighting setup."
+- img/portrait.jpg: Unsplash photo 1529626455594-4ff0802cfb7e.
+  Caption: "Stock photo: portrait session."
+- img/wedding.jpg: Unsplash photo 1519741497674-611481863552.
+  Caption: "Stock photo: wedding photography."
+- img/event.jpg: Unsplash photo 1511795409834-ef04bbd61622.
+  Caption: "Stock photo: event photography."
+- img/studio-camera.jpg: Unsplash photo 1516035069371-29a1b244cc32.
+  Caption: "Stock photo: camera ready for a studio shoot."
+
+ILLUSTRATIONS: None. No inline SVG illustrations, CSS-drawn graphics,
+digital artwork panels, clipart, or decorative drawings anywhere on the page.
