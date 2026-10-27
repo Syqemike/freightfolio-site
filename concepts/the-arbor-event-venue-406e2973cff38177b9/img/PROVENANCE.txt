@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Brick and Mortar Venue concept pool, which reused the Deerfield Estates Venue pool; none are photos of The Arbor Event Venue or its events):
+- hero.jpg: a DJ playing at a wedding reception in a barn venue.
+- roses.jpg: pink garden roses.
+- sunflowers.jpg: sunflowers in a field.
+RATING: no rating shown. Research gives 4.8 from 100 reviews with no exact platform named, so the figure is omitted.
+SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
+CTA: phone only. No verified online tour-booking URL is in the CRM record, so no booking button is shown.
+NOT USED: the own site is a single page of venue blurbs and is not linked as a packages page. No packages or prices are shown because none were found in research. Events are by booking; the place listing hours are shown with a note.

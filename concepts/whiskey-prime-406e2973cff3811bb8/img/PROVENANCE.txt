@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Brady's Steaks and Seafood concept pool; none are photos of Whiskey Prime or its dishes; captions describe the dishes actually pictured):
+- hero.jpg: shrimp etouffee served with rice.
+- poboy.jpg: a shrimp po boy sandwich with fries and sauces.
+- burger.jpg: a burger.
+RATING: no rating shown. Research gives 4.6 from 47 reviews with no exact platform named, and OpenTable shows 4.4 from 29, so no figure is shown.
+SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
+CTA: phone only. Reservations are by phone per research; no online reservation URL is in the CRM record, so no booking link is shown.
+NOT USED: the own site shows menus only as images and is not linked as a menu page. No prices are shown because none were found in research.
