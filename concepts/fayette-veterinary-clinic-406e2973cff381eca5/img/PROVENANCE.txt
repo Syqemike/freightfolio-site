@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Advanced Animal Care concept pool; none are photos of Fayette Veterinary Clinic or its patients. Two photos are also used on Village Animal Hospital this shift; layouts and palettes differ):
+- puppy-portrait.jpg = Pexels 33757043: golden retriever puppy portrait, soft focus.
+- cat-exam-table.jpg = Pexels 7468981: veterinarian in scrubs gently holding a dog's head near a bright clinic window.
+- cat-vet-check.jpg = Pexels 6816836: tabby-and-white cat being gently examined on a blue vet exam table.
+RATING: no rating is shown. Research gives 5.0 from 12 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
+NOT USED: no prices are shown because none were found in research.

@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the Bay Pest Control concept pool; none are photos of Lien Termite and Pest Control or its work):
+- hero.jpg = Pexels 19789841: pest control specialist fogging outside a house.
+- pest2.jpg = Pexels 4176541: professional treating a living room with fumigation equipment.
+- pest3.jpg = Pexels 5499416: worker in protective gear spraying a room interior.
+RATING: no rating is shown. Research gives 4.6 from 10 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
+PHONE FLAG: the CRM and own-site number (402) 397-8884 is shown; the place listing shows (402) 205-7868, which is NOT shown. Sales and QA must confirm the correct number before outreach.
+NOT USED: no prices are shown because none were found in research.

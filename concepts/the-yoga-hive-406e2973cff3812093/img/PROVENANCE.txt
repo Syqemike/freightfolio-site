@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the Downtown Yoga Ocean Springs concept pool; none are photos of The Yoga Hive or its classes):
+- hero.jpg = Pexels 8436610: a diverse group of adults doing yoga poses on mats in a bright indoor studio.
+- yoga2.jpg = Pexels 39190415: adults practicing yoga poses in a modern, minimalist studio.
+- yoga3.jpg = Pexels 8436627: a diverse group of adults practicing yoga together indoors.
+RATING: no rating is shown. Research gives 5.0 from 18 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
+PHONE FLAG: the CRM and own-site footer number (251) 621-9326 is shown; the place listing shows (251) 200-1688, which is NOT shown. Sales and QA must confirm the correct number before outreach.
+NOT USED: a June 2026 monthly-unlimited promo seen in a directory is dated and is not quoted as current. No class prices are shown because none were found in research.

@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Accent Nails and Spa concept pool; none are photos of Glamour Nails or its work):
+- hero.jpg: a manicure in progress.
+- art.jpg: colorful dotted nail art with polish bottles.
+- filing.jpg: nails being filed during a manicure.
+RATING: no rating is shown. Research gives 4.7 from 36 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
+NOT USED: no prices are shown because none were found in research. No ZIP code is shown because none was in the research notes. No own website was found, only directory listings.

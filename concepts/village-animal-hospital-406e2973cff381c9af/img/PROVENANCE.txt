@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Advanced Animal Care concept pool; none are photos of Village Animal Hospital or its patients):
+- hero-dog-exam.jpg = Pexels 7469233: veterinarian with stethoscope examining a dog on an exam table, assistant holding the dog.
+- cat-vet-check.jpg = Pexels 6816836: tabby-and-white cat being gently examined on a blue vet exam table.
+- cat-exam-table.jpg = Pexels 7468981: veterinarian in scrubs gently holding a dog's head near a bright clinic window (depicts a dog, captioned as such).
+RATING: no rating is shown. Research gives 4.9 from 61 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record, so no Book Now button is shown.
+NOT USED: no prices are shown because none were found in research. Older directories show different hours; the place-listing hours above are shown.

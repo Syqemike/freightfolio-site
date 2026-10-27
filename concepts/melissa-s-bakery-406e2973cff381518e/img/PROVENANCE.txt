@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Blue Crane Bakery concept pool; none are photos of Melissa's Bakery or its treats):
+- hero.jpg = Pexels 13130546: baked goods under a glass cover in a bakery.
+- cookies.jpg = Pexels 12557753: chocolate chip cookies with a French press of coffee on a wooden table.
+- rolls.jpg = Pexels 5964500: cinnamon rolls on bakery racks.
+RATING: no rating is shown. Research gives 4.6 from 525 reviews with no exact platform named, so the figure is omitted per the QA rule for unnamed platforms.
+SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
+CTA: phone only. No verified online ordering URL is in the CRM record, so no order button is shown.
+NOT USED: no prices are shown because none were found in research. No Sunday hours are shown because none were listed.
