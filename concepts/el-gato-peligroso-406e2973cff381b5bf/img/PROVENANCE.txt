@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Dubl-R Old Fashioned Hamburgers concept pool; none are photos of El Gato Peligroso or its food. Gallery captions describe the dishes actually pictured and do not claim they are El Gato dishes):
+- burger.jpg: a burger on a grill rack with buns behind it.
+- hero.jpg: a burger.
+- steak.jpg: a Philly cheesesteak with melted cheese and grilled vegetables.
+RATING: no rating shown. Research gives 5.0 from 36 ratings with no exact platform named, so the figure is omitted.
+SOCIAL: weekly specials are announced on Facebook per reviews, but no verified Facebook profile URL is in the CRM record, so none is linked.
+CTA: phone only. No verified online ordering URL is in the CRM record.
+NOT USED: no own website was found, so none is linked. No prices are shown because none were found in research.

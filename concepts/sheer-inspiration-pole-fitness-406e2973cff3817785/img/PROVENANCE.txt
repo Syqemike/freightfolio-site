@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Pensacola Pole Fitness concept pool; none are photos of Sheer Inspiration Pole Fitness or its classes. LIMITATION: no verified adult pole-fitness photo was available in the in-repo stock pools, so the set is adult dance-fitness and yoga photos captioned honestly as such, claiming no pole work):
+- dance.jpg: an instructor leading an adult group dance session in a studio. All subjects adults.
+- yoga2.jpg: adults practicing yoga poses in a modern, minimalist studio.
+- yoga3.jpg: a diverse group of adults practicing yoga together indoors.
+RATING: no rating shown. Research gives 4.7 from 140 reviews with no exact platform named, so the figure is omitted.
+SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
+CTA: phone only. Booking is via a third-party system on the thin own site, but no booking URL is in the CRM record, so no booking link is shown.
+NOT USED: the thin own site is not linked as a class page. No prices are shown because none were found in research.
