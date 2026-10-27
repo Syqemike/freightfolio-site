@@ -14,7 +14,7 @@ a { color: #2f6f8f; }
 .hero .kicker { text-transform: uppercase; letter-spacing: .08em; font-size: 13px; color: #2f6f8f; font-weight: 700; }
 .hero h1, .pageh { font-family: 'Archivo', serif; font-size: 46px; line-height: 1.1; margin: 12px 0 14px; }
 .hero .lede { font-size: 19px; max-width: 640px; }
-.hero img { width: 100%; height: auto; display: block; border-radius: 10px; margin-top: 22px; }
+.hero img { width: 100%; height: auto; min-height: 240px; object-fit: cover; display: block; border-radius: 10px; margin-top: 22px; }
 .hero.split .wrap, .hero.feature .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 30px; align-items: center; }
 .hero.split .wrap > *, .hero.feature .wrap > * { min-width: 0; }
 .hero.feature .wrap { direction: rtl; }
