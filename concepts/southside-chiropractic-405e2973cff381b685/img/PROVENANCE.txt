@@ -1,8 +1,8 @@
-PHOTOS (all Pexels stock photos, reused from the Dynamic Therapeutics concept pool, which reused the A Hand 2 Heal Massage Therapy pool; none are photos of Southside Chiropractic or its clinic):
-- hero.jpg = Pexels 3865800: a therapist giving a back massage in a bright, calm treatment room.
-- calm.jpg = Pexels 3865792: a massage therapy session detail.
-- hands.jpg = Pexels 3865802: close detail of massage therapy hands.
-CAPTION HONESTY: the gallery photos show massage therapy treatment rooms, not chiropractic adjustments. They are captioned as stock photos of treatment-room work and are not presented as Southside Chiropractic treatments. This pool was chosen so the two Omaha chiropractic concepts in this shift do not share identical photos.
+PHOTOS (all Pexels stock photos, reused from the Wellness Chiropractic Care for All / Downtown Chiropractic concept pool; none are photos of Southside Chiropractic or its clinic):
+- adjust-side.jpg = Pexels 5794034: a therapist adjusting a woman lying on her side on a treatment table (verified firsthand this shift).
+- adjust-seated.jpg = Pexels 5793804: a therapist giving a seated woman a spinal and back adjustment in a clinic (verified firsthand this shift).
+- adjust-instrument.jpg = Pexels 14797752: a chiropractor using a handheld adjustment instrument on a seated woman's neck (verified firsthand this shift).
+REBUILD 2026-10-26 run67 (QA Failed 2026-10-26 19:59 CT, CRITICAL photo-subject mismatch): hero.jpg (Pexels 3865800, back massage), calm.jpg (Pexels 3865792, massage detail), and hands.jpg (Pexels 3865802, massage hands) REMOVED - all three showed massage therapy, zero chiropractic adjustment, on a chiropractor site. Replaced with the three chiropractic adjustment photos above. NOTE: this Wellness pool is also used by Downtown Chiropractic (also Omaha); the original builder chose the massage pool to avoid sharing photos, but QA's acceptance criterion requires chiropractic adjustment photos, and this pool is the verified chiropractic pool already QA-passed on Downtown Chiropractic, Powell Chiropractic Center, and The Spine Shop Chiropractic. Do NOT reuse Pexels 3865800, 3865792, or 3865802 for this business.
 SERVICE NOTE: research found no itemized service list for this Omaha clinic, so the concept uses category-level copy only and lists no specific treatments.
 RATING: Google 4.9 from 21 reviews, shown once.
 SOCIAL: no confirmed Facebook or Instagram profile URL was found, so none is linked.
