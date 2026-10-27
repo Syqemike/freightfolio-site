@@ -14,13 +14,13 @@ a { color: #a83c22; }
 .hero .kicker { text-transform: uppercase; letter-spacing: .08em; font-size: 13px; color: #a83c22; font-weight: 700; }
 .hero h1, .pageh { font-family: 'Playfair Display', serif; font-size: 46px; line-height: 1.1; margin: 12px 0 14px; }
 .hero .lede { font-size: 19px; max-width: 640px; }
-.hero img { width: 100%; height: auto; display: block; border-radius: 10px; margin-top: 22px; }
+.hero img { width: 100%; height: auto; min-height: 240px; object-fit: cover; display: block; border-radius: 10px; margin-top: 22px; }
 .hero.split .wrap, .hero.feature .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 30px; align-items: center; }
 .hero.split .wrap > *, .hero.feature .wrap > * { min-width: 0; }
 .hero.feature .wrap { direction: rtl; }
 .hero.feature .wrap > * { direction: ltr; }
-.hero.banner img { margin-top: 0; max-height: 520px; object-fit: cover; }
-.hero.banner .wrap { margin-top: -90px; position: relative; }
+.hero.banner img { margin-top: 0; min-height: 320px; max-height: 520px; object-fit: cover; }
+.hero.banner .wrap { margin-top: 0; position: relative; }
 .hero.banner .band { background: #fdf5ec; border: 1px solid #e6c9b0; border-radius: 12px; padding: 26px 28px; }
 .hero.editorial .ed-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start; margin-top: 8px; }
 .hero.editorial .ed-grid > * { min-width: 0; }
