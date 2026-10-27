@@ -1,0 +1,33 @@
+DESIGN BRIEF: Richmond City Yoga (Website Concept)
+Business: Richmond City Yoga, Ashtanga yoga studio, 212 E Clay St, Richmond, VA.
+Phone 804-928-6677. Email Robbie@RichmondCityYoga.com. Studio site richmondcityyoga.com.
+
+AESTHETIC: Quiet, traditional, editorial. A calm morning-practice feel that matches
+Mysore teaching: individual attention inside a shared room. No loud gym energy,
+no decorative illustration, no icons, no gradients.
+
+TYPOGRAPHY: Fraunces serif for headlines (warm, bookish, traditional) with Inter
+for body text. Large headline, generous line spacing, short paragraphs.
+
+PALETTE: Warm paper background (#f6f1e7), deep pine ink (#1f2e26), terracotta
+accent (#a84e2b), muted sage for secondary labels. Terracotta is used only for
+the headline accent, the call button, and the card top rules.
+
+IMAGERY: Four stock yoga photographs, each captioned "Stock photo" and none
+presented as the studio, its teacher, or its students. No real photos of this
+business were obtainable from its public pages (its site is a text welcome
+letter with no usable photos), so stock is the labeled fallback. See PROVENANCE.txt.
+
+LAYOUT: Disclosure bar first, masthead with business name and text navigation,
+split hero (headline left, tall photo right), a dark class-window band,
+editorial practice section, three class cards, teacher section, single-photo
+gallery strip, and a visit/contact panel. Mobile stacks every section to one
+column. Distinct from recent Freightfolio concepts by its editorial split hero,
+dark band, and restrained serif system rather than a card-grid hero.
+
+CONTENT RULES APPLIED: Only verified classes are listed (Mysore, Led Primary
+Series, private instruction). Class windows are labeled as class windows, not
+full open hours. No prices (none verified), no online booking (none verified),
+no Book Now button. Contact CTA is Call with the verified phone plus email.
+Rating appears once only: 4.7 from 33 reviews on a public listing. No health
+claims, no invented credentials, no urgency copy.
