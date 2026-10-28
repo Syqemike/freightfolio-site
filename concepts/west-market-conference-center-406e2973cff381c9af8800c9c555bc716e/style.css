@@ -1,0 +1,130 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #fdf8f0;
+  color: #2b1a26;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+}
+a { color: #4a1d3a; }
+.disclosure {
+  background: #4a1d3a;
+  color: #fdf8f0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  padding: 0.6rem 1rem;
+  margin: 0;
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem; }
+.mast { text-align: center; padding: 2.5rem 1rem 1.5rem; border-bottom: 3px double #4a1d3a; }
+.mast .eyebrow {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.75rem;
+  color: #7a4a68;
+  margin: 0 0 0.75rem;
+}
+.mast h1, .mast .word {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 7vw, 4.2rem);
+  line-height: 1.05;
+  color: #4a1d3a;
+  margin: 0;
+}
+.mast .place {
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #5c3a4e;
+  margin: 0.6rem 0 1.4rem;
+}
+nav.mainnav { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+nav.mainnav a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+nav.mainnav a.on { border-bottom-color: #4a1d3a; font-weight: bold; }
+.hero figure { margin: 0; }
+.hero img { width: 100%; height: auto; display: block; max-height: 560px; object-fit: cover; }
+.hero figcaption, figure figcaption {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: #6b5560;
+  padding: 0.5rem 0 0;
+}
+.hero-text { text-align: center; padding: 2.5rem 1.25rem 1rem; max-width: 760px; margin: 0 auto; }
+.hero-text h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.15;
+  color: #4a1d3a;
+  margin: 0 0 1rem;
+}
+.hero-text p { font-size: 1.1rem; }
+.btn {
+  display: inline-block;
+  background: #4a1d3a;
+  color: #fdf8f0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 0.85rem 1.6rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  letter-spacing: 0.04em;
+}
+.btn.ghost { background: transparent; color: #4a1d3a; border: 2px solid #4a1d3a; }
+.capacity {
+  text-align: center;
+  padding: 3rem 1.25rem;
+  border-top: 1px solid #d8c7cd;
+  border-bottom: 1px solid #d8c7cd;
+  margin: 2.5rem auto;
+  max-width: 900px;
+}
+.capacity .number {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(5rem, 18vw, 10rem);
+  line-height: 1;
+  color: #4a1d3a;
+  margin: 0;
+}
+.capacity .cap-label {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.85rem;
+  margin: 0.25rem 0 1rem;
+}
+section.body { padding: 1rem 0 2.5rem; }
+section.body h2, section.body h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: #4a1d3a;
+  line-height: 1.2;
+}
+section.body h2 { font-size: 2rem; margin-top: 2rem; }
+section.body h3 { font-size: 1.5rem; }
+.rule { border: none; border-top: 1px solid #d8c7cd; margin: 2rem 0; }
+.gathering-list { list-style: none; padding: 0; margin: 0; }
+.gathering-list li { padding: 1.4rem 0; border-bottom: 1px solid #e6d9d5; }
+.gathering-list li h3 { margin: 0 0 0.3rem; }
+.gathering-list li p { margin: 0; }
+.gallery { display: grid; grid-template-columns: 1fr; gap: 1.5rem; padding: 1rem 0 2.5rem; }
+.gallery img { width: 100%; height: auto; display: block; }
+.gallery figure { margin: 0; }
+.hours { width: 100%; border-collapse: collapse; margin: 1rem 0 2rem; font-family: Arial, Helvetica, sans-serif; }
+.hours th, .hours td { text-align: left; padding: 0.7rem 0.5rem; border-bottom: 1px solid #e6d9d5; }
+.hours th { color: #4a1d3a; }
+.visitbox { background: #f3e9e4; padding: 2rem 1.25rem; margin: 2rem 0; }
+footer { border-top: 3px double #4a1d3a; padding: 2rem 0; font-family: Arial, Helvetica, sans-serif; font-size: 0.9rem; }
+footer .fine { color: #6b5560; font-size: 0.85rem; }
+@media (min-width: 700px) {
+  .gallery { grid-template-columns: 1fr 1fr; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; }
+}

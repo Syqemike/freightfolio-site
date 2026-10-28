@@ -1,0 +1,9 @@
+Photo provenance for Darrings Detail concept site
+None of these photos are photos of Darrings Detail, its premises, its staff, its customers, or its work. All are stock photos reused from the existing Freightfolio concept photo pool, presented as stock photos only.
+
+- wash.jpg: source concept pool path ~/workspace/freightfolio-site/concepts/b-rads-auto-detailing-402e297381fe88f6/img/wash.jpg
+- interior.jpg: source concept pool path ~/workspace/freightfolio-site/concepts/b-rads-auto-detailing-402e297381fe88f6/img/interior-clean.jpg
+- polish.jpg: source concept pool path ~/workspace/freightfolio-site/concepts/surfs-up-auto-detailing-402e29738193a93e/img/su_polish1.jpg
+- tint.jpg: source concept pool path ~/workspace/freightfolio-site/concepts/a1-tinting-detailing-404e2973cff381f996/img/hero.jpg
+
+Every photo caption on this site says "Stock photo." No photo is presented as a photo of this business.

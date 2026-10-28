@@ -1,0 +1,19 @@
+PHOTO PROVENANCE FOR WASABI JAPANESE CUISINE CONCEPT SITE
+
+None of the photos in this directory are photos of Wasabi Japanese Cuisine, its premises, its staff, or its food. All photos are stock photos reused from the existing Freightfolio concept photo pool, shown only as topical illustrations of Japanese food. Every photo caption on the site says "Stock photo."
+
+- sushi-platter.jpg
+  Source concept pool path: ~/workspace/freightfolio-site/concepts/viet-orleans-bistro-403e2973cff3813c/img/sushi.jpg
+  Subject: sushi on a plate. Stock photo. Not a photo of this business.
+
+- salmon-sushi.jpg
+  Source concept pool path: ~/workspace/freightfolio-site/concepts/viet-orleans-bistro-403e2973cff3813c/img/sushi-salmon.jpg
+  Subject: salmon sushi. Stock photo. Not a photo of this business.
+
+- sushi-rolls.jpg
+  Source concept pool path: ~/workspace/freightfolio-site/concepts/poke-paradise-404e2973cff38154bf/img/rolls.jpg
+  Subject: assorted sushi rolls on a plate. Stock photo. Not a photo of this business.
+
+- sushi-sauce.jpg
+  Source concept pool path: ~/workspace/freightfolio-site/concepts/viet-orleans-bistro-403e2973cff3813c/img/sushi-sauce.jpg
+  Subject: sushi with sauce. Stock photo. Not a photo of this business.

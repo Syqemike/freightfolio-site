@@ -1,0 +1,29 @@
+Photo provenance for Christine Hall Photography (Website Concept)
+================================================================
+
+None of the photos on this site are photos of Christine Hall Photography,
+its studio, its staff, or its work. Every photo below is a stock photo
+reused from the Freightfolio concept photo pool, and every caption on the
+site says "Stock photo."
+
+1. img/event-reception.jpg
+   Source concept pool path: concepts/maximum-entertainment-djs-402e297381d38694/img/reception.jpg
+   Description: Guests gathered at a reception under warm event lighting.
+   Status: Stock photo. Not a photo of this business.
+
+2. img/event-gathering.jpg
+   Source concept pool path: concepts/maximum-entertainment-djs-402e297381d38694/img/wedding-dancing.jpg
+   Description: Guests dancing together at an event.
+   Status: Stock photo. Not a photo of this business.
+
+3. img/event-photobooth.jpg
+   Source concept pool path: concepts/maximum-entertainment-djs-402e297381d38694/img/photobooth.jpg
+   Description: Guests posing together at an event photo area.
+   Status: Stock photo. Not a photo of this business.
+
+4. img/event-dancefloor.jpg
+   Source concept pool path: concepts/maximum-entertainment-djs-402e297381d38694/img/dancefloor-lights.jpg
+   Description: Guests dancing on a lit dance floor at an event.
+   Status: Stock photo. Not a photo of this business.
+
+No photo on this site is presented as a photo of this business.

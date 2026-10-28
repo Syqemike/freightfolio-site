@@ -1,0 +1,23 @@
+Photo provenance for the Innamorata Photography website concept.
+
+None of the photos in this directory are photos of Innamorata Photography, its studio, its staff, or its clients. All are stock photos reused from the Freightfolio concept photo pool, shown only as illustrative photography. Every caption on the site says "Stock photo."
+
+- bride-groom.jpg
+  Source concept pool path: ~/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/bride-groom.jpg
+  Subject: a couple on their wedding day. Not a photo of this business.
+
+- first-dance.jpg
+  Source concept pool path: ~/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/first-dance.jpg
+  Subject: a couple sharing a first dance. Not a photo of this business.
+
+- wedding-moment.jpg
+  Source concept pool path: ~/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/wedding-moment.jpg
+  Subject: a wedding moment between a couple. Not a photo of this business.
+
+- wedding-bouquet.jpg
+  Source concept pool path: ~/workspace/freightfolio-site/concepts/coastal-flowers-and-design-d5d530cd5164/img/wedding-bouquet.jpg
+  Subject: a wedding bouquet. Not a photo of this business.
+
+- couple.jpg
+  Source concept pool path: ~/workspace/freightfolio-site/concepts/absolute-ballroom-405e2973cff3810c85/img/couple.jpg
+  Subject: a couple posing together. Not a photo of this business.
