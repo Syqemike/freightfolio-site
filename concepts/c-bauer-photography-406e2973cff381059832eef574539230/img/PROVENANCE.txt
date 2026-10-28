@@ -1,28 +1,11 @@
-PHOTO PROVENANCE - C Bauer Photography concept site
-=====================================================
+PHOTO PROVENANCE - C Bauer Photography concept site (updated 2026-10-28, Rebuild shift run89)
 
-None of the photos in this directory are photos of C Bauer Photography,
-its studio, its staff, or its clients. Every photo below is a stock photo
-reused from the Freightfolio concept photo pool. They are shown only as
-samples of the kind of work the business offers, and each caption on the
-site says "Stock photo."
+None of the photos in this directory are photos of C Bauer Photography, its studio, its staff, or its clients. Every photo below is a stock photo. They are shown only as samples of the kind of work the business offers, and each caption on the site says "Stock photo."
 
-- portrait.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/abc-braid-louisville-3ffe2973cff38186b605e784e8bcbf8f/img/braid-style.jpg
-  Subject: studio portrait of a person. Used for the portraits/headshots theme.
-  Not a photo of this business.
+- portrait.jpg: REPLACED in run89 (old file byte-identical to ABC Braid Louisville). New file: Pexels 36720012, a black-and-white studio portrait of a woman. Viewed before use; JPEG quality 88 at width 1260; hash-checked against all concept images in the main, batch-55 and batch-56 worktrees plus all run89 staged files, zero collisions. Subject: studio portrait of a person. Used for the portraits/headshots theme. Not a photo of this business.
 
-- wedding.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/at-the-beach-weddings-405e2973cff381e3be/img/hero.jpg
-  Subject: wedding table setup with flowers. Used for the weddings theme.
-  Not a photo of this business.
+- wedding.jpg: REPLACED in run89 (old file byte-identical to T&J Studios in this batch as beach-ceremony.jpg). New file: Pexels 5595144, a bride and groom posing outdoors at night under lights. Viewed before use; same conversion and hash check, zero collisions. Subject: wedding couple. Used for the weddings theme. Not a photo of this business.
 
-- musician.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/presley-piano-studio-405e2973cff381aeb7/img/hero.jpg
-  Subject: musician seated at a piano. Used for the bands and musicians theme.
-  Not a photo of this business.
+- musician.jpg: unchanged in run89; stock photo reused from the Freightfolio concept pool (presley-piano-studio pool). Subject: musician seated at a piano. Used for the bands and musicians theme. Hash-clean.
 
-- product.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/a-corner-on-the-market-404e2973cff3810295/img/ring.jpg
-  Subject: close-up product shot of a ring on fabric. Used for the
-  small-business product work theme. Not a photo of this business.
+- product.jpg: unchanged in run89; stock photo reused from the Freightfolio concept pool (a-corner-on-the-market pool). Subject: close-up product shot of a ring on fabric. Used for the small-business product work theme. Hash-clean.
