@@ -1,6 +1,5 @@
-PHOTOS (all stock photos; none are photos of this business or its work):
-- photo-1.jpg: Baked goods under a glass cover in a bakery (stock photo)
-- photo-2.jpg: Chocolate chip cookies with a French press of coffee on a wooden table (stock photo)
-- photo-3.jpg: Cinnamon rolls on bakery racks (stock photo)
-RATING: no rating shown. See the release record flags for why the figure was omitted.
-CTA: phone. No verified online booking URL is in the record, so no Book Now button is shown.
+Photo provenance (rebuilt 2026-10-28, run85): all photos are labeled stock photos from Pexels (free license). Previous trio was a complete-gallery clone of the Brezel bakery concept pool (also used by Happy Little Treats and Missouri Baking Co.) and was replaced in full.
+- photo-1.jpg: A three-tier wedding cake with red roses at a reception. Pexels 30445121, photographer Nishess Shakya, https://www.pexels.com/photo/30445121/. SHA-256: 892dd0436dafb272b56c2be6af861f5b6916105fa6bdd69ab2e4958e2436bb0e
+- photo-2.jpg: Sandwiches with meat and cheese beside a bowl of green soup. Pexels 15305397, photographer IslandHopper X, https://www.pexels.com/photo/15305397/. SHA-256: 63b1de14c1f8c94d7fbcae567748fd24ea4e1823d6755c8316a89f52ea83d6fe
+- photo-3.jpg: A variety of decorated cakes on a table. Pexels 19651268, photographer Yulia Oliinychenko, https://www.pexels.com/photo/19651268/. SHA-256: cf5cb7c44327a636f5aa954104beadafb7f5a63d2ddd13a57e1d0df0300b6ef2
+Hash-checked against all 1,152 batch-54 concept image files plus this shift's staged hashes: no byte-identical match to any other concept file.
