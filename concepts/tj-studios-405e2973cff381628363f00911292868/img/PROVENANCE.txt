@@ -1,20 +1,9 @@
-PHOTO PROVENANCE - T&J Studios concept site
+PHOTO PROVENANCE - T&J Studios concept site (updated 2026-10-28, Rebuild shift run89)
 
-All photos below are stock photos reused from existing concept pools in this repository. None are photos of T&J Studios, its staff, its studio, or its work. Every photo caption on the site says "Stock photo."
+All photos below are stock photos. None are photos of T&J Studios, its staff, its studio, or its work. Every photo caption on the site says "Stock photo."
 
-- wedding-reception.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/brick-mortar-venue-406e2973cff381d39e/img/hero.jpg
-  Depiction: guests at tables during a wedding reception in a large room.
-  Note: that source pool describes it as Pexels 13788569, a DJ playing at a wedding reception in a barn venue.
+- wedding-reception.jpg: stock photo reused from the Freightfolio concept pool (brick-mortar-venue pool, described as Pexels 13788569, a DJ playing at a wedding reception in a barn venue). Depiction: guests at tables during a wedding reception in a large room. Unchanged in run89; hash-clean in QA 2026-10-28 15:59 CT.
 
-- portrait-bouquet.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/by-design-holiday-and-events-405e2973cff38151af/img/bouquet.jpg
-  Depiction: a person holding a bouquet outdoors.
-  Note: that source pool describes it as Pexels 1035677, a woman holding a bouquet of flowers.
+- portrait-bouquet.jpg: stock photo reused from the Freightfolio concept pool (by-design-holiday-and-events pool, described as Pexels 1035677, a woman holding a bouquet of flowers). Depiction: a person holding a bouquet outdoors. Unchanged in run89; hash-clean.
 
-- beach-ceremony.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/at-the-beach-weddings-405e2973cff381e3be/img/hero.jpg
-  Depiction: a decorated outdoor wedding ceremony setting by the water, with floral table arrangements.
-  Note: that source pool describes it as Pexels 169193, a beach wedding ceremony with floral centerpieces.
-
-Limitation: no dedicated photography-studio or camera-equipment stock pool was found in the repository. The three photos above were chosen because they show wedding subjects, which match the studio's wedding photojournalism service. They are not presented as the studio's own work.
+- beach-ceremony.jpg: REPLACED in run89 (QA 2026-10-28 15:59 CT found the old file byte-identical to C Bauer Photography wedding.jpg). New file: Pexels 17206082, an outdoor wedding ceremony setting with a floral arch and rows of chairs. Viewed before use 2026-10-28; converted to JPEG quality 88 at width 1260; hash-checked against all concept images in the main, batch-55 and batch-56 worktrees plus all run89 staged files, zero collisions. Stock photo, labeled on the site.
