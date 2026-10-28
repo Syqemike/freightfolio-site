@@ -1,20 +1,13 @@
-Photo provenance for the Cansler Photography Website Concept.
-None of these photos are photos of Cansler Photography, its studio, its staff, or its clients. All are stock photos reused from the existing Freightfolio concept photo pool, labeled "Stock photo." wherever they appear on this site.
+Photo provenance for the Cansler Photography Website Concept (updated 2026-10-28, Rebuild shift run89)
 
-- img/children-group.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/another-adventure-daycare-403e2973cff38154/img/stock-classroom.jpg
-  Content: four children standing together in a bright room. That pool file is a Pexels stock photo (Artem Podrez, Pexels 8088086), per its own provenance file.
+None of these photos are photos of Cansler Photography, its studio, its staff, or its clients. All are stock photos, labeled "Stock photo." wherever they appear on this site.
 
-- img/young-dancers.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/dancers-studio-405e2973cff381f192/img/tutus.jpg
-  Content: young children in light pink tutus at a barre. Stock photo from the Dancers Studio concept pool, which states none of its photos are of that business or its students.
+- img/children-group.jpg: unchanged in run89; stock photo reused from the Freightfolio concept pool (another-adventure-daycare pool, Pexels 8088086). Content: four children standing together in a bright room. Hash-clean.
 
-- img/studio-children.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/dancers-studio-405e2973cff381f192/img/barre.jpg
-  Content: a teacher helping two young children in white dresses at a barre. Stock photo from the Dancers Studio concept pool.
+- img/young-dancers.jpg: REPLACED in run89 (old file byte-identical to Rosie's Dance Academy). New file: Pexels 36697540, a photographer photographing a seated woman in a studio with lighting equipment. Viewed before use; JPEG quality 88 at width 1260; hash-checked against all concept images in the main, batch-55 and batch-56 worktrees plus all run89 staged files, zero collisions. Replacing the dance-class shot with a portrait-session photo also fixes the subject fit QA noted.
 
-- img/couple-celebration.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/staverdancesport-405e2973cff38158b5/img/couple.jpg
-  Content: a couple dancing at a celebration surrounded by guests. Stock photo from the StaverDanceSport concept pool, which states none of its photos are of that business or its students.
+- img/studio-children.jpg: unchanged in run89; stock photo reused from the Freightfolio concept pool (dancers-studio pool). Content: a teacher helping two young children in white dresses at a barre. Hash-clean.
+
+- img/couple-celebration.jpg: unchanged in run89; stock photo reused from the Freightfolio concept pool (staverdancesport pool). Content: a couple dancing at a celebration surrounded by guests. Hash-clean.
 
 No photo on this site is presented as a photo of Cansler Photography or its work.
