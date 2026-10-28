@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Edgewood Chiropractic Center concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- adjust-side.jpg
+  Caption: A therapist adjusting a woman lying on her side on a treatment table. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/5794034/ . Stock photo, not a photo of this business.
+
+- adjust-seated.jpg
+  Caption: A therapist giving a seated woman a spinal and back adjustment in a clinic. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/5793804/ . Stock photo, not a photo of this business.
+
+- adjust-instrument.jpg
+  Caption: A chiropractor using a handheld adjustment instrument on a seated woman's neck. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/14797752/ . Stock photo, not a photo of this business.
+
+- chiro-patient.jpg
+  Caption: A chiropractor treating a patient. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/20669197/ . Stock photo, not a photo of this business.
+

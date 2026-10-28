@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Foot Palace Spa concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- massage-session.jpg
+  Caption: A woman getting a massage. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/19641818/ . Stock photo, not a photo of this business.
+
+- feet-massage.jpg
+  Caption: People during a feet massage. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/19695971/ . Stock photo, not a photo of this business.
+
+- hot-stone.jpg
+  Caption: A relaxing hot stone massage therapy session. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/36593691/ . Stock photo, not a photo of this business.
+
+- deep-tissue.jpg
+  Caption: A relaxing deep tissue massage in a spa setting. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/38407786/ . Stock photo, not a photo of this business.
+

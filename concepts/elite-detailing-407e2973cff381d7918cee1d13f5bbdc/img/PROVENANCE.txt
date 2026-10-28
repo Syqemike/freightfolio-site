@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Elite Detailing concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- foam-wash.jpg
+  Caption: A classic car covered in soap foam during a wash at an indoor car wash facility. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/30564616/ . Stock photo, not a photo of this business.
+
+- wheel-clean.jpg
+  Caption: A man cleaning a car wheel with a cloth outdoors. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/17623850/ . Stock photo, not a photo of this business.
+
+- polish-car.jpg
+  Caption: A man polishing a red car with a buffer in a garage. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/37809565/ . Stock photo, not a photo of this business.
+
+- headlight-scrub.jpg
+  Caption: A hand scrubbing a car headlight with a sponge and soap suds. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/4870702/ . Stock photo, not a photo of this business.
+
