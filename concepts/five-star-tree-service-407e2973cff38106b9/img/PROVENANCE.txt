@@ -1,6 +1,7 @@
 PHOTOS (all stock photos; none are photos of this business or its work):
-- photo-1.jpg: An arborist in a tree wearing a safety harness, holding ropes and a chainsaw (stock photo)
-- photo-2.jpg: Tall trees lining a neighborhood street in autumn (stock photo)
-- photo-3.jpg: A person using a chainsaw to cut logs in a forest (stock photo)
+- photo-1.jpg: An arborist in safety gear cutting a section from a tree trunk against a clear blue sky (stock photo) -- Pexels 6218318, photo by Jacky, https://www.pexels.com/photo/6218318/
+- photo-2.jpg: A large tree stump in a residential garden (stock photo) -- Pexels 37038506, photo by Marcin Manka, https://www.pexels.com/photo/37038506/
+- photo-3.jpg: Cut logs stacked on grass beside a freshly cut stump (stock photo) -- Pexels 6835310, photo by Mathias Reding, https://www.pexels.com/photo/6835310/
+Replaced 2026-10-28 (Rebuild shift run85): the previous trio was byte-identical to the JLM Tree Servicing & Roofing concept gallery (QA Failed 2026-10-28, complete-gallery clone) and has been fully replaced. The new trio was hash-checked against all 1,122 concept image files in the batch-53 tree with no byte-identical match to any other concept file.
 RATING: no rating shown. See the release record flags for why the figure was omitted.
 CTA: phone and email. No verified online booking URL is in the record, so no Book Now button is shown.
