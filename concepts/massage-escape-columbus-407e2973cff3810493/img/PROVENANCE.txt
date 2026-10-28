@@ -1,6 +1,6 @@
 PHOTOS (all stock photos; none are photos of this business or its work):
-- photo-1.jpg: Therapist giving a back massage (stock photo)
-- photo-2.jpg: Massage therapy session detail (stock photo)
-- photo-3.jpg: Spa treatment room (stock photo)
+- photo-1.jpg: Therapist massaging a client's head and neck during a session (stock photo; Pexels 3760270 via the Specialized Bodywork of Orlando pool; replaced 2026-10-28 by Rebuild run82 to fix QA 2026-10-28 shared-photography defect)
+- photo-2.jpg: Massage therapy session detail (stock photo; unchanged from the 2026-10-28 build)
+- photo-3.jpg: Woman resting in a calm spa lounge (stock photo; Pexels 3673941 via the Specialized Bodywork of Orlando pool; replaced 2026-10-28 by Rebuild run82 to fix QA 2026-10-28 shared-photography defect)
 RATING: no rating shown. See the release record flags for why the figure was omitted.
 CTA: phone and email. No verified online booking URL is in the record, so no Book Now button is shown.

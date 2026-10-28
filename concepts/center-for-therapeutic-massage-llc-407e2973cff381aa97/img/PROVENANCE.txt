@@ -1,6 +1,6 @@
 PHOTOS (all stock photos; none are photos of this business or its work):
-- photo-1.jpg: Therapist giving a back massage (stock photo)
-- photo-2.jpg: Therapist hands during a back massage (stock photo)
-- photo-3.jpg: Treatment room with a massage table (stock photo)
+- photo-1.jpg: Therapist giving a back massage in a bright room (stock photo; Pexels video still via the A Hand 2 Heal Massage Therapy pool, https://images.pexels.com/videos/9335888/adult-body-body-massage-comfort-9335888.jpeg; replaced 2026-10-28 by Rebuild run82 to fix QA 2026-10-28 shared-photography defect)
+- photo-2.jpg: Therapist hands during a back massage (stock photo; unchanged from the 2026-10-28 build)
+- photo-3.jpg: Therapist giving a back massage near a window, rolled towels nearby (stock photo; Pexels 6628599 via the Specialized Bodywork of Orlando pool; replaced 2026-10-28 by Rebuild run82 to fix QA 2026-10-28 shared-photography defect)
 RATING: no rating shown. See the release record flags for why the figure was omitted.
 CTA: phone. No verified online booking URL is in the record, so no Book Now button is shown.
