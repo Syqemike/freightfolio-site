@@ -1,6 +1,5 @@
-PHOTOS (all stock photos; none are photos of this business or its work):
-- photo-1.jpg: An instructor leading adult dancers in a group session in a mirrored studio (stock photo)
-- photo-2.jpg: Adults dancing on a brightly lit dance floor (stock photo)
-- photo-3.jpg: A couple dancing at a celebration (stock photo)
-RATING: no rating shown. See the release record flags for why the figure was omitted.
-CTA: phone. No verified online booking URL is in the record, so no Book Now button is shown.
+Photo provenance (rebuilt 2026-10-28, run85): all photos are labeled stock photos from Pexels (free license). Previous trio was a complete-gallery clone of the Dance Fit Flow concept pool and was replaced in full.
+- photo-1.jpg: A couple dancing tango in a sunlit arched corridor. Pexels 18812923, photographer Gaby Lopez, https://www.pexels.com/photo/18812923/ (landscape crop of the portrait original for the split hero layout). SHA-256: 87639aa60829ca3dede56c7d71996e09eb30f583cfc706f90fac7188ac9876e4
+- photo-2.jpg: A couple performing a tango pose in a studio. Pexels 3894267, photographer Аркадий Головань, https://www.pexels.com/photo/3894267/. SHA-256: 95cfa8e4034b2d4f614eec43abbc7be2ec6b6db9f073844a4ecb5f72713278c1
+- photo-3.jpg: Dancers' feet in dance shoes on a polished wooden floor. Pexels 13517051, photographer Yusuf Çelik, https://www.pexels.com/photo/13517051/. SHA-256: ebd040905c7a9ce74dfd875aa40cefbd8685b467c5e5c1daba67f1678466df1d
+Hash-checked against all 1,152 batch-54 concept image files plus this shift's staged hashes: no byte-identical match to any other concept file.
