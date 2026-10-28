@@ -1,6 +1,5 @@
-PHOTOS (all stock photos; none are photos of this business or its work):
-- photo-1.jpg: Two adults grappling in gis on mats during a training session (stock photo)
-- photo-2.jpg: Two students in gis practicing grips in a training session (stock photo)
-- photo-3.jpg: Two women grappling in gis on mats during a training session (stock photo)
-RATING: no rating shown. See the release record flags for why the figure was omitted.
-CTA: phone. No verified online booking URL is in the record, so no Book Now button is shown.
+Photo provenance (rebuilt 2026-10-28, run85): all photos are labeled stock photos from Pexels (free license). Previous trio was a complete-gallery clone of the Rogue Jiu Jitsu concept and was replaced in full.
+- photo-1.jpg: An instructor guiding a young student in a dojo. Pexels 8041310, photographer cottonbro studio, https://www.pexels.com/photo/8041310/. SHA-256: 924f418fe7a673ee7dc09ce51985f6a7e1a0152b97e5ba7bdd9ebb553144fde4
+- photo-2.jpg: A martial artist kneeling in a dojo, focused and poised. Pexels 8038507, photographer cottonbro studio, https://www.pexels.com/photo/8038507/. SHA-256: b811ad79f133bef86ebf360a803b59c1df2178e42b6fc4e20490a8057ad1a035
+- photo-3.jpg: Two teenage students practicing martial arts in white uniforms. Pexels 6005462, photographer olia danilevich, https://www.pexels.com/photo/6005462/. SHA-256: 0ca3d550034f2ca5d7b8be95fec50239c74b9f4eb5c24f88ef53dd416f7811f8
+Hash-checked against all 1,152 batch-54 concept image files plus this shift's staged hashes: no byte-identical match to any other concept file. Note: an earlier candidate for photo-3 (Pexels 9651851, a young student in a gi) was rejected after viewing because the gi carried another school's name patch.
