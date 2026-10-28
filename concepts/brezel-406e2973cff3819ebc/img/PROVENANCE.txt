@@ -1,7 +1,14 @@
-PHOTOS (all stock photos, reused from the Antoinette Bakery / Blue Crane Bakery concept pool; none are photos of Brezel or its pretzels; captions describe the baked goods actually pictured):
-- rolls.jpg: cinnamon rolls on bakery racks.
-- cookies.jpg: chocolate chip cookies with a French press of coffee on a wooden table.
-- hero.jpg: baked goods under a glass cover in a bakery.
+PHOTOS (all stock photos from Pexels, licensed for free use; none are photos of Brezel or its pretzels; every caption on the page reads "Stock photo" and describes the pictured pretzels):
+- pretzels.jpg: several golden-brown, twisted, salted soft pretzels on a white background. Photographer: Stephen Leonardi.
+  Source URL: https://images.pexels.com/photos/18354020/pexels-photo-18354020/free-photo-of-pretzels-on-white-background.jpeg?auto=compress&w=1260&h=750&dpr=1
+  Page: https://www.pexels.com/photo/pretzels-on-white-background-18354020/
+- pretzel-dips.jpg: a large golden-brown salted soft pretzel on a white plate with small cups of dip behind it. Photographer: tom davis.
+  Source URL: https://images.pexels.com/photos/30224587/pexels-photo-30224587/free-photo-of-warm-pretzel-with-assorted-dips-in-austin.jpeg?auto=compress&w=1260&h=750&dpr=1
+  Page: https://www.pexels.com/photo/warm-pretzel-with-assorted-dips-in-austin-30224587/
+- pretzel-stack.jpg: salted twisted soft pretzels stacked at a food stall, one upright on top. Photographer: Martii Tolentino.
+  Source URL: https://images.pexels.com/photos/18529797/pexels-photo-18529797/free-photo-of-close-up-of-a-pretzel.jpeg?auto=compress&w=1260&h=750&dpr=1
+  Page: https://www.pexels.com/photo/close-up-of-a-pretzel-18529797/
+REPLACED 2026-10-27 (rebuild run80): the prior set (cinnamon rolls, chocolate chip cookies, generic baked goods under glass) showed no pretzel and failed QA on product mismatch; all three prior files were removed from img/.
 RATING: no rating shown. Research gives 4.7 from 35 reviews with no exact platform named, so the figure is omitted.
 SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
 CTA: phone only. EMAIL FLAG: the CRM record holds info@brezelpower.com, but the place listing's self-description gives columbus@brezelpower.com, so no email is shown until the correct address is confirmed.
