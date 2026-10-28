@@ -1,29 +1,13 @@
-Photo provenance for Christine Hall Photography (Website Concept)
-================================================================
+Photo provenance for Christine Hall Photography (Website Concept) (updated 2026-10-28, Rebuild shift run89)
 
-None of the photos on this site are photos of Christine Hall Photography,
-its studio, its staff, or its work. Every photo below is a stock photo
-reused from the Freightfolio concept photo pool, and every caption on the
-site says "Stock photo."
+None of the photos on this site are photos of Christine Hall Photography, its studio, its staff, or its work. Every photo below is a stock photo, and every caption on the site says "Stock photo."
 
-1. img/event-reception.jpg
-   Source concept pool path: concepts/maximum-entertainment-djs-402e297381d38694/img/reception.jpg
-   Description: Guests gathered at a reception under warm event lighting.
-   Status: Stock photo. Not a photo of this business.
+1. img/event-reception.jpg: REPLACED in run89 (old file byte-identical to Maximum Entertainment DJs and West Market Conference Center). New file: Pexels 34921744, a woman posing for a studio portrait in a black dress. Viewed before use; JPEG quality 88 at width 1260; hash-checked against all concept images in the main, batch-55 and batch-56 worktrees plus all run89 staged files, zero collisions. Status: Stock photo. Not a photo of this business.
 
-2. img/event-gathering.jpg
-   Source concept pool path: concepts/maximum-entertainment-djs-402e297381d38694/img/wedding-dancing.jpg
-   Description: Guests dancing together at an event.
-   Status: Stock photo. Not a photo of this business.
+2. img/event-gathering.jpg: REPLACED in run89 (old file byte-identical to Maximum Entertainment DJs). New file: Pexels 20029576, a couple posing in a photography studio between softbox lights. Viewed before use; same conversion and hash check, zero collisions. Status: Stock photo. Not a photo of this business.
 
-3. img/event-photobooth.jpg
-   Source concept pool path: concepts/maximum-entertainment-djs-402e297381d38694/img/photobooth.jpg
-   Description: Guests posing together at an event photo area.
-   Status: Stock photo. Not a photo of this business.
+3. img/event-photobooth.jpg: REPLACED in run89 (old file byte-identical to Maximum Entertainment DJs). New file: Pexels 19816937, a bride and groom posing for a portrait outdoors in the countryside. Viewed before use; same conversion and hash check, zero collisions. Status: Stock photo. Not a photo of this business.
 
-4. img/event-dancefloor.jpg
-   Source concept pool path: concepts/maximum-entertainment-djs-402e297381d38694/img/dancefloor-lights.jpg
-   Description: Guests dancing on a lit dance floor at an event.
-   Status: Stock photo. Not a photo of this business.
+4. img/event-dancefloor.jpg: REPLACED in run89 (old file byte-identical to Maximum Entertainment DJs). New file: Pexels 30697991, a photographer at work with a model in a studio. Viewed before use; same conversion and hash check, zero collisions. Status: Stock photo. Not a photo of this business.
 
 No photo on this site is presented as a photo of this business.
