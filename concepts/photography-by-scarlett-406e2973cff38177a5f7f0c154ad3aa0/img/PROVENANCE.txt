@@ -1,33 +1,13 @@
-PHOTO PROVENANCE - Photography By Scarlett concept site (built 2026-10-28)
+PHOTO PROVENANCE - Photography By Scarlett concept site (updated 2026-10-28, Rebuild shift run89)
 
-IMPORTANT: None of the photographs in this directory are photographs of
-Photography By Scarlett, its studio, its staff, or its clients. Every photograph
-is a stock photograph reused from the Freightfolio concept photo pool, and every
-caption on the site says "Stock photo." The photographs are used only to show
-the look and feel of studio light and portrait sittings. They are not presented
-as this business's work.
+IMPORTANT: None of the photographs in this directory are photographs of Photography By Scarlett, its studio, its staff, or its clients. Every photograph is a stock photograph, and every caption on the site says "Stock photo." The photographs are used only to show the look and feel of studio light and portrait sittings. They are not presented as this business's work.
 
-- portrait-profile.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/salon-bella-406e2973cff381e1a4/img/photo-3.jpg
-  Original pool note: Pexels 3993310, hair coloring service. Depiction on this
-  site: a woman seated in profile in a bright studio. Stock photo.
+- portrait-profile.jpg: REPLACED in run89. The old file was a hair-salon photo (a woman in a salon cape, Pexels 3993310) that did not depict portrait work. New file: Pexels 23991042, a woman posing in a photography studio with softbox lighting. Viewed before use; JPEG quality 88 at width 1260; hash-checked against all concept images in the main, batch-55 and batch-56 worktrees plus all run89 staged files, zero collisions.
 
-- studio-interior.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/salon-bella-406e2973cff381e1a4/img/photo-1.jpg
-  Original pool note: Pexels 7195821, salon interior with styling chairs.
-  Depiction on this site: a bright studio room with large windows. Stock photo.
+- studio-interior.jpg: REPLACED in run89. The old file was a salon interior (Pexels 7195821, salon interior with styling chairs). New file: Pexels 10811922, a woman seated in a photography studio between softbox lights. Viewed before use; same conversion and hash check, zero collisions.
 
-- studio-session.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/dancers-studio-405e2973cff381f192/img/hero.jpg
-  Original pool note: an instructor leading a group session in a modern studio
-  (The Dance Place concept pool). Depiction on this site: young adults in a
-  bright studio room. Stock photo.
+- studio-session.jpg: REPLACED in run89 (old file byte-identical to A Step Ahead Dance Studio and Dance Fit Flow). New file: Pexels 36182206, a photographer adjusting studio lighting for a seated portrait subject. Viewed before use; same conversion and hash check, zero collisions. An earlier candidate for this slot (Pexels 36697251) was discarded before staging because it came from the same shoot as the Cansler replacement photo.
 
-- soft-light.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/coastal-light.jpg
-  Original pool note: Pexels 17887560, soft coastal scene at golden light.
-  Depiction on this site: soft golden light over a coastal scene. Stock photo.
+- soft-light.jpg: REPLACED in run89 (old file byte-identical to A Hand 2 Heal Massage Therapy). New file: Pexels 36181540, a studio portrait in profile against a dark background. Viewed before use; same conversion and hash check, zero collisions.
 
-No photographs of another business are presented as this business's photographs.
-No real-business photographs of Photography By Scarlett were available in the
-pool, so no portfolio of its own work is shown.
+No photographs of another business are presented as this business's photographs. No real-business photographs of Photography By Scarlett were available, so no portfolio of its own work is shown.
