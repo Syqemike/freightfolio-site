@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Flowers by Will concept pool; none are photos of Schaffitzel's Flowers or its arrangements):
+- hero.jpg: a bouquet of peach roses and yellow poppies.
+- ranunculus.jpg: pale pink ranunculus flowers.
+- bouquet.jpg: a woman holding a bouquet of flowers.
+RATING: no rating shown. The official-site footer shows 4.8 from 893 reviews while a search-listing aggregator shows 4.9 from 61; the figures conflict, so no figure is shown.
+SOCIAL: Facebook https://www.facebook.com/Schaffitzels and Instagram https://www.instagram.com/schaffitzelsflowers/ are linked on the Visit page, both from the official site footer.
+CTA: phone only. No verified online ordering URL is in the CRM record.
+NOT USED: the own site schaffitzelsflowers.com carries a short intro plus address, hours, and phone, with no product catalog, prices, or ordering in the fetched text, and is not linked as a shop page. No prices are shown because none were found in research. Sunday hours are not listed and are not printed as closed.

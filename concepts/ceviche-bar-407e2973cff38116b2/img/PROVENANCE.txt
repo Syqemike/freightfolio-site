@@ -1,0 +1,9 @@
+PHOTOS (all stock photos, reused from the Brady's Steaks and Seafood concept pool; none are photos of Ceviche Bar or its dishes; captions describe the seafood plates actually pictured, not Ceviche DSM dishes):
+- hero.jpg: shrimp etouffee served with rice.
+- poboy.jpg: a shrimp po boy sandwich with fries and sauces.
+- burger.jpg: a burger.
+RATING: no rating shown. A listing aggregator gives 4.8 from 299 reviews while Restaurantji (Google-sourced) gives 4.3 from 262; the figures conflict, so no figure is shown.
+SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
+CTA: phone and email. Reservations are accepted per listings, but no reservation URL is in the CRM record, so the call action is used, not a Book Now button.
+PHONE FLAG: the page uses (515) 528-2065 from the business's own site. A directory listing and the menu PDF show (515) 770-9795, and the menu PDF lists both numbers together; the second number is NOT printed on the page, and Sales must confirm before any outreach use.
+NOT USED: the own site cevichedsm.com carries story and vibe copy with no menu or hours in the fetched text, and is not linked as a menu page. No prices are shown because none were found in research.

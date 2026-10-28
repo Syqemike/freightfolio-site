@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Great White Detailing concept pool; none are photos of Orange Beach Marine Clean or its work; captions describe the car detailing images actually pictured, and no boat-specific pool exists in the repo):
+- su_hero.jpg: a car covered in foam during a wash.
+- su_polish1.jpg: a machine polisher on a car hood.
+- su_polish2.jpg: a detailer polishing a black car.
+RATING: no rating shown. Research gives 4.7 from 43 reviews with no exact platform named, so the figure is omitted.
+SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
+CTA: phone only. No verified online booking URL is in the CRM record.
+NOT USED: the listed website orangebeachmarineclean.com does not load (DNS failure confirmed by live-browser check) and is not linked. A directory listing gives 24825 Canal Rd instead of Commercial Ave; the page uses Commercial Ave and the variant is noted here only. Saturday and Sunday hours are not listed and are not printed as closed. Real photos of another business (Alabama Auto Clean) were NOT reused. Gulfport-Pensacola corridor.

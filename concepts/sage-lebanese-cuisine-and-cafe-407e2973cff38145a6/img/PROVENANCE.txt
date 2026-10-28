@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Cottage Cafe and Cafe Beignet concept pools; no Lebanese-specific photo pool exists in the repo, so the gallery uses fresh-plate stock and captions describe the food actually pictured, not Sage dishes; render-review fixes: the first gallery third image (Cottage Cafe sandwich with a branded cafe cup) was replaced, and the first replacement (the Mockingbird quiche plate) duplicated the hero photo, so it was replaced again with the cinnamon rolls plate, and both stale files were removed):
+- hero.jpg: a fresh salad served with quiche on a ceramic plate.
+- cottage3.jpg: a fresh arugula and tomato salad served with quiche.
+- pastry.jpg: cinnamon rolls on bakery racks.
+RATING: no rating shown. Research gives a listing aggregate 4.9 from 144 reviews with no exact platform named, plus OpenTable 4.8 from 88 and Yelp 4.7 from 232; the figures come from different platforms, so no single figure is shown.
+SOCIAL: no confirmed Facebook or Instagram profile URL is in the CRM record, so none is linked.
+CTA: phone only. Takeout and reservations are offered, but no verified online ordering or reservation URL is in the CRM record, so no ordering link is shown.
+NOT USED: the own site sagelebanesecuisine.com is prose about the food only, with no menu items, prices, or ordering in the fetched text, and is not linked as a menu page. No prices are shown because none were found in research. Hours variance is noted on the Visit page. Gulfport-Pensacola corridor.
