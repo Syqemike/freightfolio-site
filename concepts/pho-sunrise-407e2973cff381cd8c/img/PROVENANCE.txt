@@ -1,6 +1,7 @@
 PHOTOS (all stock photos; none are photos of this business or its work):
-- photo-1.jpg: A bowl of pho (stock photo)
-- photo-2.jpg: Pho with fresh herbs (stock photo)
-- photo-3.jpg: Pho noodle soup from above (stock photo)
+- photo-1.jpg: A hand using chopsticks to lift shrimp from a steaming bowl of noodle soup (stock photo) -- Pexels 6646069, photo by RDNE Stock project, https://www.pexels.com/photo/6646069/
+- photo-2.jpg: Fresh spring rolls with shrimp and greens beside dipping sauce (stock photo) -- Pexels 6646031, photo by RDNE Stock project, https://www.pexels.com/photo/6646031/
+- photo-3.jpg: A glass of iced bubble tea with tapioca pearls (stock photo) -- Pexels 34511977, photo by Sóc Năng Động, https://www.pexels.com/photo/34511977/
+Replaced 2026-10-28 (Rebuild shift run85): the previous trio was byte-identical to the VK Noodle House concept gallery (QA Failed 2026-10-28, complete-gallery clone) and has been fully replaced. The new trio was hash-checked against all 1,152 concept image files in the batch-54 tree with no byte-identical match to any other concept file.
 RATING: no rating shown. See the release record flags for why the figure was omitted.
 CTA: phone. No verified online booking URL is in the record, so no Book Now button is shown.
