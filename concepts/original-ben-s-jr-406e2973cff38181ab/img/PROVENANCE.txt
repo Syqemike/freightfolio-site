@@ -1,0 +1,8 @@
+PHOTOS (all stock photos; none are photos of Original Ben’s Jr. or its dishes; no true barbecue pool exists in the repo, so the gallery uses grill and sandwich stock and captions describe the food actually pictured. Render-review fix: the first gallery pair (Dubs grill-rack burger) was a near-duplicate of the grill hero, and the Dubs cheeseburger frame showed a legible branded ketchup bottle, so both were replaced before staging):
+- grill.jpg (Original Fat Cats pool, the pool's one stock image): a cheeseburger grilling over open flames. The pool's other images are real photos of that bar and were NOT used.
+- sandwich-plate.jpg (Bean and Bites Bistro pool): a grilled sandwich plate with salad and potato wedges.
+- poboy.jpg (Brady’s Steaks and Seafood pool): a shrimp po boy sandwich with fries and sauces.
+RATING: no rating shown. Research gives 4.7 from 99 reviews with no exact platform named, so the figure is omitted.
+SOCIAL: a Facebook page exists (Bens-Bar-B-Q) per research, but no profile URL is in the CRM record, so none is linked.
+CTA: phone only. Toast online ordering exists per research, but no ordering URL is in the CRM record, so no ordering link is shown.
+NOT USED: the own site bensjrbbq.com is a stub page whose Menu section carries only placeholder text and is not linked as a menu page. No prices are shown because none were found in research. Hours variance is noted on the Visit page. Gulfport-Pensacola corridor.

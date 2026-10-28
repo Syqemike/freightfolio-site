@@ -1,0 +1,8 @@
+PHOTOS (all stock photos, reused from the Brulee Bakery concept pool; none are photos of Pistacia Vera or its pastries):
+- hero.jpg: a cafe table with a croissant, coffee, and a brownie.
+- brulee2.jpg: chocolate chip cookies with a French press of coffee on a wooden table.
+- brulee3.jpg: baked goods under a glass cover in a bakery.
+RATING: no rating shown. Research gives Google 4.8 from 675 reviews, Yelp 4.6 from 960, and TripAdvisor 4.8 from 615, which conflict, so no figure is shown.
+SOCIAL: an Instagram handle @pistaciavera is mentioned in reviews, but no verified profile URL is in the CRM record, so none is linked.
+CTA: phone only. The own site carries Square ordering links, but no ordering URL is in the CRM record, so no ordering link is shown.
+NOT USED: the older 59 Spruce St listing shows Permanently Closed with a different phone number and is not used. No prices are shown because none were found in research.
