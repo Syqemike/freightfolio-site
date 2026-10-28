@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Chatt Smoke House concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- ribs-smoking.jpg
+  Caption: Grilled ribs smoking on a barbecue grill. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/8250702/ . Stock photo, not a photo of this business.
+
+- ribs-grill.jpg
+  Caption: Ribs cooking on an outdoor grill. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/18824024/ . Stock photo, not a photo of this business.
+
+- ribs-sizzling.jpg
+  Caption: Seasoned ribs sizzling on a grill. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/8250342/ . Stock photo, not a photo of this business.
+
+- ribs-tongs.jpg
+  Caption: Pork ribs grilling outdoors, turned with tongs. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/5635340/ . Stock photo, not a photo of this business.
+

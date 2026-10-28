@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Always in Bloom concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- everyday-bouquet.jpg
+  Caption: A pink ranunculus bouquet. Stock photo.
+  Source: Pool copy: concepts/coastal-flowers-and-design-d5d530cd5164/img/everyday-bouquet.jpg. Stock photo, not a photo of this business.
+
+- sympathy-bouquet.jpg
+  Caption: A pale peach and cream bouquet. Stock photo.
+  Source: Pool copy: concepts/coastal-flowers-and-design-d5d530cd5164/img/sympathy-bouquet.jpg. Stock photo, not a photo of this business.
+
+- ceremony-florals.jpg
+  Caption: A pastel rose bouquet. Stock photo.
+  Source: Pool copy: concepts/coastal-flowers-and-design-d5d530cd5164/img/ceremony-florals.jpg. Stock photo, not a photo of this business.
+
+- wedding-bouquet.jpg
+  Caption: A bouquet of fresh flowers. Stock photo.
+  Source: Pool copy: concepts/coastal-flowers-and-design-d5d530cd5164/img/wedding-bouquet.jpg. Stock photo, not a photo of this business.
+

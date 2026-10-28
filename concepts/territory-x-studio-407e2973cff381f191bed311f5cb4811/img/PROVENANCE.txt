@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Territory X Studio concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- portrait.jpg
+  Caption: A studio portrait. Stock photo.
+  Source: Pool copy: concepts/c-bauer-photography-406e2973cff381059832eef574539230/img/portrait.jpg. Stock photo, not a photo of this business.
+
+- studio-photographer.jpg
+  Caption: A photographer working with a model in a well-lit studio. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/30697991/ . Stock photo, not a photo of this business.
+
+- studio-session.jpg
+  Caption: A studio photography session with a model on a stool and a photographer in action. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/33406877/ . Stock photo, not a photo of this business.
+
+- studio-posing.jpg
+  Caption: A woman posing in a professional photography studio surrounded by lighting. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/10811922/ . Stock photo, not a photo of this business.
+

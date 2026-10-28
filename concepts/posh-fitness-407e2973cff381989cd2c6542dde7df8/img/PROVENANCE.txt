@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Posh Fitness concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- class-dumbbells.jpg
+  Caption: Women exercising with dumbbells in a spacious gym. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/903171/ . Stock photo, not a photo of this business.
+
+- class-planks.jpg
+  Caption: Women practicing planks in a well-lit gym. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/13896768/ . Stock photo, not a photo of this business.
+
+- class-stretch.jpg
+  Caption: Four women stretching in a gym. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/3768712/ . Stock photo, not a photo of this business.
+
+- class-group.jpg
+  Caption: Women in a group fitness class indoors. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/864091/ . Stock photo, not a photo of this business.
+

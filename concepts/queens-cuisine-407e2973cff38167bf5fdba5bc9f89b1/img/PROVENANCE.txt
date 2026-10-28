@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Queens Cuisine concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- fried-chicken-board.jpg
+  Caption: Golden brown fried chicken wings on a rustic wooden board. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/5652266/ . Stock photo, not a photo of this business.
+
+- chicken-mac-cheese.jpg
+  Caption: Chicken atop creamy mac and cheese. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/23021490/ . Stock photo, not a photo of this business.
+
+- fried-chicken-plate.jpg
+  Caption: Fried chicken served with fries and coleslaw. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/37228289/ . Stock photo, not a photo of this business.
+
+- chicken-waffles.jpg
+  Caption: Fried chicken with waffles and coleslaw on a rustic table. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/37794977/ . Stock photo, not a photo of this business.
+
