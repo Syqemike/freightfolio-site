@@ -1,23 +1,13 @@
-Photo provenance for the Innamorata Photography website concept.
+Photo provenance for the Innamorata Photography website concept (updated 2026-10-28, Rebuild shift run89)
 
-None of the photos in this directory are photos of Innamorata Photography, its studio, its staff, or its clients. All are stock photos reused from the Freightfolio concept photo pool, shown only as illustrative photography. Every caption on the site says "Stock photo."
+None of the photos in this directory are photos of Innamorata Photography, its studio, its staff, or its clients. All are stock photos, shown only as illustrative photography. Every caption on the site says "Stock photo."
 
-- bride-groom.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/bride-groom.jpg
-  Subject: a couple on their wedding day. Not a photo of this business.
+- bride-groom.jpg: REPLACED in run89 (old file byte-identical to In The Mix DJs). New file: Pexels 9787716, a bride and groom sharing a kiss indoors, the bride holding a bouquet. Viewed before use; JPEG quality 88 at width 1260; hash-checked against all concept images in the main, batch-55 and batch-56 worktrees plus all run89 staged files, zero collisions.
 
-- first-dance.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/first-dance.jpg
-  Subject: a couple sharing a first dance. Not a photo of this business.
+- first-dance.jpg: REPLACED in run89 (old file byte-identical to In The Mix DJs). New file: Pexels 39447648, a bride and groom sharing a dance under night lights. Viewed before use; same conversion and hash check, zero collisions.
 
-- wedding-moment.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/wedding-moment.jpg
-  Subject: a wedding moment between a couple. Not a photo of this business.
+- wedding-moment.jpg: REPLACED in run89 (old file byte-identical to In The Mix DJs). New file: Pexels 19027172, a newlywed couple sharing a tender moment outdoors. Viewed before use; same conversion and hash check, zero collisions.
 
-- wedding-bouquet.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/coastal-flowers-and-design-d5d530cd5164/img/wedding-bouquet.jpg
-  Subject: a wedding bouquet. Not a photo of this business.
+- wedding-bouquet.jpg: REPLACED in run89 (old file byte-identical to Coastal Flowers and Design). New file: Pexels 10838755, a bride holding a bouquet of pink and cream roses. Viewed before use; same conversion and hash check, zero collisions.
 
-- couple.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/absolute-ballroom-405e2973cff3810c85/img/couple.jpg
-  Subject: a couple posing together. Not a photo of this business.
+- couple.jpg: unchanged in run89; stock photo reused from the Freightfolio concept pool (absolute-ballroom pool). Depiction: a couple posing together. Hash-clean in QA 2026-10-28 15:59 CT.
