@@ -1,20 +1,13 @@
-PHOTOS ON THIS CONCEPT SITE
-All photos below are stock photos reused from the existing Freightfolio concept photo pool. None are photos of West Market Conference Center, its staff, its guests, or its premises. Every photo caption on this site says "Stock photo."
+PHOTOS ON THIS CONCEPT SITE (updated 2026-10-28, Rebuild shift run89)
 
-- ballroom.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/absolute-ballroom-405e2973cff3810c85/img/hero.jpg
-  Description: A large event room set for a celebration.
+All photos below are stock photos. None are photos of West Market Conference Center, its staff, its guests, or its premises. Every photo caption on this site says "Stock photo."
 
-- dance-floor.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/absolute-ballroom-405e2973cff3810c85/img/floor.jpg
-  Description: Guests dancing at a celebration.
+- ballroom.jpg: REPLACED in run89. The old file, captioned as an event room, actually showed people in a dance class in a studio (QA 2026-10-28 15:59 CT photo/caption mismatch). New file: Pexels 15621210, a banquet hall set with round tables and chairs for a formal event. Viewed before use; JPEG quality 88 at width 1260; hash-checked against all concept images in the main, batch-55 and batch-56 worktrees plus all run89 staged files, zero collisions. Description: A large event room set for a celebration.
 
-- set-table.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/cc-s-classic-catering-404e2973cff381c2ac/img/event-table.jpg
-  Description: A table set for an event.
+- dance-floor.jpg: unchanged in run89; stock photo reused from the Freightfolio concept pool (absolute-ballroom pool). Description: Guests dancing at a celebration. Hash-clean.
 
-- reception.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/maximum-entertainment-djs-402e297381d38694/img/reception.jpg
-  Description: A reception room with guests seated at tables.
+- set-table.jpg: unchanged in run89; stock photo reused from the Freightfolio concept pool (cc-s-classic-catering pool). Description: A table set for an event. Hash-clean.
+
+- reception.jpg: REPLACED in run89 (old file byte-identical to Christine Hall Photography and Maximum Entertainment DJs). New file: Pexels 14636319, a large event room set with round tables. Viewed before use; same conversion and hash check, zero collisions. Description: A large event room set with round tables.
 
 No drawn or generated concept-art illustrations are used on this site. No photo on this site is presented as a photo of this business.
