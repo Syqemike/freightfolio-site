@@ -1,6 +1,5 @@
-PHOTOS (all stock photos; none are photos of this business or its work):
-- photo-1.jpg: A woman posing during a studio photoshoot, with the camera and preview screen in view (stock photo)
-- photo-2.jpg: An elegant studio portrait of a woman in a black top (stock photo)
-- photo-3.jpg: A stylist preparing a woman for a studio photoshoot (stock photo)
-RATING: no rating shown. See the release record flags for why the figure was omitted.
-CTA: phone. No verified online booking URL is in the record, so no Book Now button is shown.
+Photo provenance (rebuilt 2026-10-28, run85): all photos are labeled stock photos from Pexels (free license). Previous trio was a complete-gallery clone of the Voulez Vous Boudoir concept and was replaced in full.
+- photo-1.jpg: A photographer directing a session in a studio. Pexels 36697247, photographer Vitaly Gariev, https://www.pexels.com/photo/36697247/. SHA-256: 3cdebfedb7c000801586f220d936899bb39697b40a2def6367df5d5dbd714573
+- photo-2.jpg: A camera and lens on a studio desk. Pexels 11234295, photographer Amar Preciado, https://www.pexels.com/photo/11234295/. SHA-256: 569791a1141fbf50623857117b4b99ac0a871cf38bbaa3e35f57a7a403eb333d
+- photo-3.jpg: A photographer shooting between two studio softboxes. Pexels 17094508, photographer Amar Preciado, https://www.pexels.com/photo/17094508/. SHA-256: facf4170f0e3a7f39524316ddb34f06b123654f87c240b7159eb1ac4fea68521
+Hash-checked against all 1,152 batch-54 concept image files plus this shift's staged hashes: no byte-identical match to any other concept file. Note: an earlier candidate for photo-2 (Pexels 6605554, a camera on a stabilizer rig in a dark studio) was rejected after viewing because the rig reads as video-production gear, a poor fit for a stills photography studio.
