@@ -1,9 +1,13 @@
-Photo provenance for Darrings Detail concept site
-None of these photos are photos of Darrings Detail, its premises, its staff, its customers, or its work. All are stock photos reused from the existing Freightfolio concept photo pool, presented as stock photos only.
+Photo provenance for Darrings Detail concept site (updated 2026-10-28, Rebuild shift run89)
 
-- wash.jpg: source concept pool path ~/workspace/freightfolio-site/concepts/b-rads-auto-detailing-402e297381fe88f6/img/wash.jpg
-- interior.jpg: source concept pool path ~/workspace/freightfolio-site/concepts/b-rads-auto-detailing-402e297381fe88f6/img/interior-clean.jpg
-- polish.jpg: source concept pool path ~/workspace/freightfolio-site/concepts/surfs-up-auto-detailing-402e29738193a93e/img/su_polish1.jpg
-- tint.jpg: source concept pool path ~/workspace/freightfolio-site/concepts/a1-tinting-detailing-404e2973cff381f996/img/hero.jpg
+None of these photos are photos of Darrings Detail, its premises, its staff, its customers, or its work. All are stock photos, presented as stock photos only.
+
+- wash.jpg: REPLACED in run89 (old file byte-identical to B-Rads Auto Detailing). New file: Pexels 6872176, a worker washing a foam-covered car with a sponge in a car wash. Viewed before use; JPEG quality 88 at width 1260; hash-checked against all concept images in the main, batch-55 and batch-56 worktrees plus all run89 staged files, zero collisions.
+
+- interior.jpg: REPLACED in run89 (old file byte-identical to B-Rads Auto Detailing). New file: Pexels 31389821, a worker wiping a car's leather interior with a cloth. Viewed before use; same conversion and hash check, zero collisions. An earlier candidate for this slot (Pexels 29504462) was rejected after viewing because the worker's shirt carried another business's brand name.
+
+- polish.jpg: REPLACED in run89 (old file byte-identical to Surfs Up Auto Detailing). New file: Pexels 11139244, hands using a buffing machine to polish a car. Viewed before use; same conversion and hash check, zero collisions.
+
+- tint.jpg: unchanged in run89; stock photo reused from the Freightfolio concept pool (a1-tinting-detailing pool). Depiction: a car with tinted windows. Hash-clean.
 
 Every photo caption on this site says "Stock photo." No photo is presented as a photo of this business.
