@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Wright Brothers Electric Co., Inc. concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- install-sockets.jpg
+  Caption: An electrician installing sockets and switches in a room. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/5691588/ . Stock photo, not a photo of this business.
+
+- panel-multimeter.jpg
+  Caption: An electrician using a multimeter to test connections in an open electrical panel. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/34054464/ . Stock photo, not a photo of this business.
+
+- wires-pliers.jpg
+  Caption: A technician cutting and organizing colorful wires using pliers. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/7285965/ . Stock photo, not a photo of this business.
+
+- panel-drill.jpg
+  Caption: A professional electrician using a drill on an indoor circuit breaker panel. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/27928762/ . Stock photo, not a photo of this business.
+

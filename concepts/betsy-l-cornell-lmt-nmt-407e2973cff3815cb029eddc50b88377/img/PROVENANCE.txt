@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Betsy L Cornell, LMT, NMT concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- session-hero.jpg
+  Caption: A massage session in a bright, calm treatment room. Stock photo.
+  Source: Pool copy: concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/session-hero.jpg. Stock photo, not a photo of this business.
+
+- session-hands.jpg
+  Caption: Massage therapy session detail. Stock photo.
+  Source: Pool copy: concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/session-hands.jpg. Stock photo, not a photo of this business.
+
+- session-calm.jpg
+  Caption: A calm treatment room with a massage table. Stock photo.
+  Source: Pool copy: concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/session-calm.jpg. Stock photo, not a photo of this business.
+
+- spa-interior.jpg
+  Caption: A serene spa treatment room. Stock photo.
+  Source: Pool copy: concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/spa-interior.jpg. Stock photo, not a photo of this business.
+

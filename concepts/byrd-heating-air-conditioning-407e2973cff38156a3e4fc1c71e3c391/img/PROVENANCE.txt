@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Byrd Heating & Air Conditioning concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- ac-repair.jpg
+  Caption: An air conditioner repair technician in a workshop. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/33671149/ . Stock photo, not a photo of this business.
+
+- ac-unit-sky.jpg
+  Caption: A minimalist outdoor air conditioner unit against a blue sky. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/39318564/ . Stock photo, not a photo of this business.
+
+- cooling-system.jpg
+  Caption: An industrial cooling system outdoors. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/37913513/ . Stock photo, not a photo of this business.
+
+- ac-units-night.jpg
+  Caption: Air conditioning units on a building at night. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/30962631/ . Stock photo, not a photo of this business.
+

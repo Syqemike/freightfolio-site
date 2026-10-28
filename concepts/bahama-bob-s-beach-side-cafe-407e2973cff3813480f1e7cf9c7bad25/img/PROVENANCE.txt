@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Bahama Bob's Beach Side Cafe concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- grilled-shrimp.jpg
+  Caption: A gourmet grilled shrimp and chicken dish. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/38958592/ . Stock photo, not a photo of this business.
+
+- fried-shrimp.jpg
+  Caption: Fried shrimps in a basket. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/17628580/ . Stock photo, not a photo of this business.
+
+- seafood-ice.jpg
+  Caption: A seafood platter with shrimps on ice, lime, and dipping sauces. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/16741146/ . Stock photo, not a photo of this business.
+
+- shrimp-platter.jpg
+  Caption: A fresh shrimp platter with lemon and dipping sauces, served on ice. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/12173351/ . Stock photo, not a photo of this business.
+

@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - The Grind Coffee and Nosh concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- cafe-barista.jpg
+  Caption: A bustling cafe with a barista making coffee and patrons enjoying drinks. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/2159065/ . Stock photo, not a photo of this business.
+
+- coffee-chat.jpg
+  Caption: Two adults enjoying coffee and conversation in a relaxed cafe. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/36765287/ . Stock photo, not a photo of this business.
+
+- cafe-patrons.jpg
+  Caption: A lively coffee shop with patrons and baristas. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/2159074/ . Stock photo, not a photo of this business.
+
+- cafe-counter.jpg
+  Caption: Three young adults at a cafe counter. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/36729751/ . Stock photo, not a photo of this business.
+
