@@ -1,24 +1,11 @@
-Photo provenance for the Bakers by the Bay Cakery website concept.
-None of the photos in this directory are photos of Bakers by the Bay Cakery.
-All photos below are stock photos reused from the Freightfolio concept photo pool.
-They are used only as illustrative images and are labeled "Stock photo." wherever they appear.
+Photo provenance for the Bakers by the Bay Cakery website concept (updated 2026-10-28, Rebuild shift run89)
 
-- celebration-cake.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/southern-sweets-bakery-403e2973cff381b9a5/img/cake.jpg
-  Description: A two tier celebration cake with piped buttercream in pink, yellow, and blue.
-  This is NOT a photo of Bakers by the Bay Cakery or its work.
+None of the photos in this directory are photos of Bakers by the Bay Cakery. All photos below are stock photos. They are used only as illustrative images and are labeled "Stock photo." wherever they appear.
 
-- custom-cookies.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/antoinette-bakery-cafe-406e2973cff381619b/img/cookies.jpg
-  Description: Assorted cookies on a wooden board beside a mug.
-  This is NOT a photo of Bakers by the Bay Cakery or its work.
+- celebration-cake.jpg: unchanged in run89; stock photo reused from the Freightfolio concept pool (southern-sweets-bakery pool). Description: A two tier celebration cake with piped buttercream in pink, yellow, and blue. This is NOT a photo of Bakers by the Bay Cakery or its work. Hash-clean.
 
-- bakery-case.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/antoinette-bakery-cafe-406e2973cff381619b/img/hero.jpg
-  Description: Baked goods under a glass cover in a bakery.
-  This is NOT a photo of Bakers by the Bay Cakery or its work.
+- custom-cookies.jpg: REPLACED in run89 (old file byte-identical to Mer-Mer's Bakery, batch-56). New file: Pexels 28495593, assorted gourmet cookies on display in a tray. Viewed before use; JPEG quality 88 at width 1260; hash-checked against all concept images in the main, batch-55 and batch-56 worktrees plus all run89 staged files, zero collisions. This is NOT a photo of Bakers by the Bay Cakery or its work.
 
-- baked-goods.jpg
-  Source concept pool path: ~/workspace/freightfolio-site/concepts/antoinette-bakery-cafe-406e2973cff381619b/img/rolls.jpg
-  Description: Cinnamon rolls on bakery racks.
-  This is NOT a photo of Bakers by the Bay Cakery or its work.
+- bakery-case.jpg: REPLACED in run89 (old file byte-identical to Mer-Mer's Bakery, batch-56). New file: Pexels 30427450, baked goods in a bakery display case. Viewed before use; same conversion and hash check, zero collisions. Description: Baked goods under a glass cover in a bakery. This is NOT a photo of Bakers by the Bay Cakery or its work.
+
+- baked-goods.jpg: unchanged in run89; stock photo reused from the Freightfolio concept pool (antoinette-bakery-cafe pool). Description: Cinnamon rolls on bakery racks. This is NOT a photo of Bakers by the Bay Cakery or its work. Hash-clean.
