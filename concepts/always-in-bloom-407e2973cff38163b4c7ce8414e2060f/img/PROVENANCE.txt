@@ -1,20 +1,11 @@
-PHOTO PROVENANCE - Always in Bloom concept site (Website Dev shift 2026-10-28)
+PHOTO PROVENANCE - Always in Bloom concept site (updated 2026-10-28, Rebuild shift run89b)
 
 None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
 
-- everyday-bouquet.jpg
-  Caption: A pink ranunculus bouquet. Stock photo.
-  Source: Pool copy: concepts/coastal-flowers-and-design-d5d530cd5164/img/everyday-bouquet.jpg. Stock photo, not a photo of this business.
+- everyday-bouquet.jpg: REPLACED in run89b (old file byte-identical to Coastal Flowers and Design). New file: Pexels 11671664, a pink and white rose bouquet with baby's breath. Viewed before use; JPEG quality 88; hash-checked against all 896 concept images in the current main tree plus all run89b staged files, zero collisions.
 
-- sympathy-bouquet.jpg
-  Caption: A pale peach and cream bouquet. Stock photo.
-  Source: Pool copy: concepts/coastal-flowers-and-design-d5d530cd5164/img/sympathy-bouquet.jpg. Stock photo, not a photo of this business.
+- sympathy-bouquet.jpg: REPLACED in run89b (old file byte-identical to Coastal Flowers and Design). New file: Pexels 7413283, a white and pink rose bouquet on soft fabric. Viewed before use; same conversion and hash check, zero collisions.
 
-- ceremony-florals.jpg
-  Caption: A pastel rose bouquet. Stock photo.
-  Source: Pool copy: concepts/coastal-flowers-and-design-d5d530cd5164/img/ceremony-florals.jpg. Stock photo, not a photo of this business.
+- ceremony-florals.jpg: REPLACED in run89b (old file byte-identical to Coastal Flowers and Design). New file: Pexels 4691829, a bridal bouquet of peach and cream roses with eucalyptus held by a bride. Viewed before use; same conversion and hash check, zero collisions.
 
-- wedding-bouquet.jpg
-  Caption: A bouquet of fresh flowers. Stock photo.
-  Source: Pool copy: concepts/coastal-flowers-and-design-d5d530cd5164/img/wedding-bouquet.jpg. Stock photo, not a photo of this business.
-
+- wedding-bouquet.jpg: REPLACED in run89b (old file byte-identical to Coastal Flowers and Design and to Innamorata Photography's old file). New file: Pexels 29198707, a wedding bouquet of pink roses with baby's breath and greenery held by a bride. Viewed before use; same conversion and hash check, zero collisions.
