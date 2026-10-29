@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Nail Tek concept (Website Dev shift 2026-10-29 11:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A manicure with red polish. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/5-star-nails-406e2973cff381aa8d/img
+
+- img/pedicure.jpg: A pedicure in progress. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/5-star-nails-406e2973cff381aa8d/img
+
+- img/polish.jpg: Close-up of a manicure in progress. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/5-star-nails-406e2973cff381aa8d/img

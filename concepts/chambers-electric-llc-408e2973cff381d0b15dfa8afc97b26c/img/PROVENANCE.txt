@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Chambers Electric LLC concept (Website Dev shift 2026-10-29 11:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: An electrician diagnosing an electrical panel with a multimeter. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/electrical-resolutions-group-404e2973cff381df89/img
+
+- img/panel.jpg: An electrician working on an indoor circuit breaker panel. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/electrical-resolutions-group-404e2973cff381df89/img
+
+- img/switchboard.jpg: An electrician working on an opened switchboard with colorful wires. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/electrical-resolutions-group-404e2973cff381df89/img

@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - T & K Nails concept (Website Dev shift 2026-10-29 11:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A manicure in progress. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/accent-nails-spa-405e2973cff38151a8/img
+
+- img/art.jpg: Colorful dotted nail art with polish bottles. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/accent-nails-spa-405e2973cff38151a8/img
+
+- img/filing.jpg: Nails being filed during a manicure. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/accent-nails-spa-405e2973cff38151a8/img

@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Kevin's Auto Repair concept (Website Dev shift 2026-10-29 11:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A mechanic inspecting a car engine with a light. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/bill-s-auto-repair-404e2973cff3814eb2/img
+
+- img/engine.jpg: A performance car engine with red accents. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/bill-s-auto-repair-404e2973cff3814eb2/img
+
+- img/turbo.jpg: A turbocharger and air filter in an engine bay. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/bill-s-auto-repair-404e2973cff3814eb2/img

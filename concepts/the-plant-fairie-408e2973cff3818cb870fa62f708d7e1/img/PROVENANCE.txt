@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - The Plant Fairie concept (Website Dev shift 2026-10-29 11:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: Pink garden roses. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/kato-floral-designs-404e2973cff381359b/img
+
+- img/sunflowers.jpg: Sunflowers in a field. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/kato-floral-designs-404e2973cff381359b/img
+
+- img/p2-hero.jpg: A bouquet of peach roses and yellow poppies. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/gardner-s-florist-404e2973cff3810cac/img
