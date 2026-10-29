@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - D'Iberville Veterinary Hospital concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- exam.jpg
+  Caption: A veterinarian in scrubs gently holding a dog's head near a bright clinic window. Stock photo.
+  Source: Pool copy: advanced-animal-care-f63bdc7cb30f/img/cat-exam-table.jpg. Stock photo, not a photo of this business.
+
+- grooming.jpg
+  Caption: A groomer with a black poodle on a grooming table. Stock photo.
+  Source: Pool copy: grand-paws-pet-boarding-and-salon-404e2973cff381fabf/img/hero.jpg. Stock photo, not a photo of this business.
+
+- brushed.jpg
+  Caption: A dog being groomed on a table. Stock photo.
+  Source: Pool copy: grand-paws-pet-boarding-and-salon-404e2973cff381fabf/img/brushed.jpg. Stock photo, not a photo of this business.
+

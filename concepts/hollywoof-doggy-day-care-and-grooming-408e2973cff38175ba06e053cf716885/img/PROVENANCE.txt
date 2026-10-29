@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Hollywoof Doggy Day Care and Grooming concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A woman playing with a Border Collie on a meadow. Stock photo.
+  Source: Pool copy: blue-dog-k9-care-404e2973cff381c184/img/hero.jpg. Stock photo, not a photo of this business.
+
+- dog2.jpg
+  Caption: A Goldendoodle chasing a colorful ball in a park. Stock photo.
+  Source: Pool copy: blue-dog-k9-care-404e2973cff381c184/img/dog2.jpg. Stock photo, not a photo of this business.
+
+- dog3.jpg
+  Caption: Two black Staffordshire Bull Terriers playing on a grassy field. Stock photo.
+  Source: Pool copy: blue-dog-k9-care-404e2973cff381c184/img/dog3.jpg. Stock photo, not a photo of this business.
+

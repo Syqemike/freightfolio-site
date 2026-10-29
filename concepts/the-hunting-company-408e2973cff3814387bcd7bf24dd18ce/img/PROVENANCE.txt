@@ -1,0 +1,17 @@
+PHOTO PROVENANCE - The Hunting Company concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A man fly fishing in a rocky river. Stock photo.
+  Source: Pool copy: big-river-outfitters-404e2973cff3813da9/img/hero.jpg. Stock photo, not a photo of this business.
+
+- boat.jpg
+  Caption: Three people fishing from a boat on a river. Stock photo.
+  Source: Pool copy: big-river-outfitters-404e2973cff3813da9/img/boat.jpg. Stock photo, not a photo of this business.
+
+- trout.jpg
+  Caption: A trout in a net beside a stream. Stock photo.
+  Source: Pool copy: big-river-outfitters-404e2973cff3813da9/img/trout.jpg. Stock photo, not a photo of this business.
+
+NOTE: the text painted on the boat hull in boat.jpg is part of the stock photo, not this business's contact information, and is not presented as a contact.

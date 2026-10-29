@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Around the Clock Plumbing concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A plumber working on a pump. Stock photo.
+  Source: Pool copy: a-e-plumbing-403e2973cff381e989/img/hero.jpg. Stock photo, not a photo of this business.
+
+- photo2.jpg
+  Caption: Pipe and fitting work on a wall. Stock photo.
+  Source: Pool copy: a-e-plumbing-403e2973cff381e989/img/photo2.jpg. Stock photo, not a photo of this business.
+
+- photo3.jpg
+  Caption: A leaking pipe joint, the kind of problem this company repairs. Stock photo.
+  Source: Pool copy: a-e-plumbing-403e2973cff381e989/img/photo3.jpg. Stock photo, not a photo of this business.
+

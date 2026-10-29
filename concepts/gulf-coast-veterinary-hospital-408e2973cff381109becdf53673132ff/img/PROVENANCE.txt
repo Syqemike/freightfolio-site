@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Gulf Coast Veterinary Hospital concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A veterinarian with a stethoscope examining a dog on an exam table. Stock photo.
+  Source: Pool copy: central-veterinary-hospital-406e2973cff3812b9a/img/hero-dog-exam.jpg. Stock photo, not a photo of this business.
+
+- puppy.jpg
+  Caption: A golden retriever puppy portrait. Stock photo.
+  Source: Pool copy: central-veterinary-hospital-406e2973cff3812b9a/img/puppy-portrait.jpg. Stock photo, not a photo of this business.
+
+- cat.jpg
+  Caption: A tabby-and-white cat being gently examined on a vet exam table. Stock photo.
+  Source: Pool copy: central-veterinary-hospital-406e2973cff3812b9a/img/cat-vet-check.jpg. Stock photo, not a photo of this business.
+

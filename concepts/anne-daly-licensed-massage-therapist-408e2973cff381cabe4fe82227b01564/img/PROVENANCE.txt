@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Anne Daly Licensed Massage Therapist concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A massage session. Stock photo.
+  Source: Pool copy: stolaspa-406e2973cff3819c87/img/hero.jpg. Stock photo, not a photo of this business.
+
+- stones.jpg
+  Caption: Warm stone detail in a spa setting. Stock photo.
+  Source: Pool copy: stolaspa-406e2973cff3819c87/img/stones.jpg. Stock photo, not a photo of this business.
+
+- candles.jpg
+  Caption: Candles in a spa setting. Stock photo.
+  Source: Pool copy: stolaspa-406e2973cff3819c87/img/candles.jpg. Stock photo, not a photo of this business.
+

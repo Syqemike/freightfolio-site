@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Best Massage concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A serene treatment room with a massage table, folded towel, and candle. Stock photo.
+  Source: Pool copy: attevle-massage-therapy-405e2973cff3810cae/img/hero.jpg. Stock photo, not a photo of this business.
+
+- calm.jpg
+  Caption: A massage therapy session detail. Stock photo.
+  Source: Pool copy: attevle-massage-therapy-405e2973cff3810cae/img/calm.jpg. Stock photo, not a photo of this business.
+
+- interior.jpg
+  Caption: A therapist giving a back massage in a bright, calm treatment room. Stock photo.
+  Source: Pool copy: attevle-massage-therapy-405e2973cff3810cae/img/interior.jpg. Stock photo, not a photo of this business.
+
