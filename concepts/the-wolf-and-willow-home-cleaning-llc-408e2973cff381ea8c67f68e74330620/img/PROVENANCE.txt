@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - The Wolf and Willow Home Cleaning LLC concept (Website Dev shift 2026-10-29 15:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: Cleaners in red overalls cleaning a modern interior. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/jb-cleaning-services-403e2973cff3812f89/img
+
+- img/sweep.jpg: A person sweeping a wooden floor with a broom and dustpan. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/jb-cleaning-services-403e2973cff3812f89/img
+
+- img/kitchen.jpg: A clean modern kitchen. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/jb-cleaning-services-403e2973cff3812f89/img

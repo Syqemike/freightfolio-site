@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Skin Solutions concept (Website Dev shift 2026-10-29 15:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A massage session in a treatment room. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/basalt-day-spa-405e2973cff381b6b1/img
+
+- img/stones.jpg: Warm stones in a spa setting. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/basalt-day-spa-405e2973cff381b6b1/img
+
+- img/candles.jpg: Candles in a spa setting. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/basalt-day-spa-405e2973cff381b6b1/img

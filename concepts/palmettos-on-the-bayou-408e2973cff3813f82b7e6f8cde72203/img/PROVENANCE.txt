@@ -1,0 +1,10 @@
+PHOTO PROVENANCE - Palmettos On The Bayou concept (Website Dev shift 2026-10-29 15:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: Shrimp etouffee served with rice. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/nathan-s-restaurant-405e2973cff381cd92/img
+
+- img/poboy.jpg: A shrimp po boy sandwich with fries and sauces. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/nathan-s-restaurant-405e2973cff381cd92/img
+
+- img/shrimptacos.jpg: Shrimp tacos. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/3-margaritas-kitchen-405e2973cff38133ae92f8a2c6a3b4e3/img
+FIX (visual review): the R-O gumbo.jpg file shows the same stock scene as Nathan's hero.jpg (skillet shrimp stew with rice bowl) under a different dish name, so it was dropped and replaced with a distinct shrimp-taco photo; the gallery no longer repeats one scene twice.

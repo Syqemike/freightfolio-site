@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Red Square Flowers concept (Website Dev shift 2026-10-29 15:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: Pale pink garden roses. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/alluring-blooms-405e2973cff381ca96/img
+
+- img/seasonal.jpg: A mixed bouquet of peonies, roses, and magnolia. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/alluring-blooms-405e2973cff381ca96/img
+
+- img/sunflowers.jpg: Sunflowers in a field. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/alluring-blooms-405e2973cff381ca96/img

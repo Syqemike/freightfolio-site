@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Dots Diner concept (Website Dev shift 2026-10-29 15:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A cheese omelette with home fries and toast. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/the-ugly-diner-404e2973cff3819583/img
+
+- img/eggs.jpg: An omelette with sausage links and home fries. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/the-ugly-diner-404e2973cff3819583/img
+
+- img/plate.jpg: An omelette served with a green salad. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/the-ugly-diner-404e2973cff3819583/img

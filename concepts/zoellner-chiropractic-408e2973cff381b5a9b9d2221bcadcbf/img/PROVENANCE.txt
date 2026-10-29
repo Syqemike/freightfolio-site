@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Zoellner Chiropractic concept (Website Dev shift 2026-10-29 15:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A therapist giving a back massage in a bright, calm treatment room. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/southside-chiropractic-405e2973cff381b685/img
+
+- img/calm.jpg: A massage therapy session detail. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/southside-chiropractic-405e2973cff381b685/img
+
+- img/hands.jpg: Close detail of massage therapy hands. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/southside-chiropractic-405e2973cff381b685/img
