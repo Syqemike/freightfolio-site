@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - No Limit Charter And Guide concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/photo-1.jpg: Sunrise over the Gulf. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/three-jays-charters-402e29738183/img
+
+- img/photo-2.jpg: Dawn over the water. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/three-jays-charters-402e29738183/img
+
+- img/photo-3.jpg: A working boat deck with gear. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/three-jays-charters-402e29738183/img

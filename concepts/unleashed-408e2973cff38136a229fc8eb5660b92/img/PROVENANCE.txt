@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Unleashed concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero-pups.jpg: Two happy golden retriever puppies sitting in a meadow. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/all-pets-boarding-resort-fd56eb5b774f/img
+
+- img/happy-dog.jpg: A smiling golden retriever looking at the camera indoors. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/all-pets-boarding-resort-fd56eb5b774f/img
+
+- img/gate-dogs.jpg: Two golden retrievers with paws up over a stable gate. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/all-pets-boarding-resort-fd56eb5b774f/img

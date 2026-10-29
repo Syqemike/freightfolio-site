@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Carol Graham Dance Center concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/photo-1.jpg: An instructor leading adult dancers in a group session in a mirrored studio. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd1159-batch56/concepts/a-step-ahead-dance-studio-407e2973cff381efba/img
+
+- img/photo-2.jpg: Adults dancing on a brightly lit dance floor. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd1159-batch56/concepts/a-step-ahead-dance-studio-407e2973cff381efba/img
+
+- img/photo-3.jpg: A couple dancing at a celebration. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd1159-batch56/concepts/a-step-ahead-dance-studio-407e2973cff381efba/img

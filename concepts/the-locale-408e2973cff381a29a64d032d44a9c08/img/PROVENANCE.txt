@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - The Locale concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/wedding-bouquet.jpg: A dressed reception table with floral centerpieces under a flower canopy. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/coastal-flowers-and-design-d5d530cd5164/img
+
+- img/ceremony-florals.jpg: Peach garden roses and yellow poppies in a bouquet. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/coastal-flowers-and-design-d5d530cd5164/img
+
+- img/tropical-arrangement.jpg: Bird-of-paradise and tropical blooms in an arrangement. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/coastal-flowers-and-design-d5d530cd5164/img

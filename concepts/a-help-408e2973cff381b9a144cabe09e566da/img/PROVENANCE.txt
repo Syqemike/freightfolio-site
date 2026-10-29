@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - A+ Help concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/photo-1.jpg: People working together at a table with plans. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd1159-batch56/concepts/academic-center-for-testing-407e2973cff3814484/img
+
+- img/photo-2.jpg: People reviewing documents at a table. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd1159-batch56/concepts/academic-center-for-testing-407e2973cff3814484/img
+
+- img/photo-3.jpg: Two people talking outdoors. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd1159-batch56/concepts/academic-center-for-testing-407e2973cff3814484/img

@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Precision Dance Academy and Company concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/kids.jpg: A children's dance class with a teacher. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd-batch45-morlock-school-of-dance-405e2973cff3818eab91d5753b7d2373/concepts/morlock-school-of-dance-405e2973cff3818eab91d5753b7d2373/img
+
+- img/hero.jpg: Adult dancers rehearsing in a studio. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd-batch45-morlock-school-of-dance-405e2973cff3818eab91d5753b7d2373/concepts/morlock-school-of-dance-405e2973cff3818eab91d5753b7d2373/img
+
+- img/class.jpg: Dancers working in a mirrored studio. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd-batch45-morlock-school-of-dance-405e2973cff3818eab91d5753b7d2373/concepts/morlock-school-of-dance-405e2973cff3818eab91d5753b7d2373/img

@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Eastlawn Child Development Center concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/photo-1.jpg: Children and teachers playing together in a colorful classroom. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd1159-batch56/concepts/oak-street-child-development-center-405e2973cff381bfb5/img
+
+- img/photo-2.jpg: Kids enjoying playtime with toys and blocks in a bright classroom. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd1159-batch56/concepts/oak-street-child-development-center-405e2973cff381bfb5/img
+
+- img/photo-3.jpg: A joyful child with painted hands in a vibrant art class. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd1159-batch56/concepts/oak-street-child-development-center-405e2973cff381bfb5/img

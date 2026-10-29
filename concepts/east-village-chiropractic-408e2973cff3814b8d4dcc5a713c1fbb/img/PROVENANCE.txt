@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - East Village Chiropractic concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/adjust-side.jpg: A therapist adjusting a woman lying on her side on a treatment table. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/edgewood-chiropractic-center-407e2973cff381fead5ada8e7d81c27c/img
+
+- img/adjust-seated.jpg: A therapist giving a seated woman a spinal and back adjustment in a clinic. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/edgewood-chiropractic-center-407e2973cff381fead5ada8e7d81c27c/img
+
+- img/adjust-instrument.jpg: A chiropractor using a handheld adjustment instrument on a seated woman's neck. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd0759-batch57/concepts/edgewood-chiropractic-center-407e2973cff381fead5ada8e7d81c27c/img
