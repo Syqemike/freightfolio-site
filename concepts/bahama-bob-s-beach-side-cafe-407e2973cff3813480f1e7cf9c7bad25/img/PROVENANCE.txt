@@ -11,10 +11,10 @@ None of these photos are photos of this business, its staff, its premises, or it
   Source: Pexels stock photo https://www.pexels.com/photo/17628580/ . Stock photo, not a photo of this business.
 
 - seafood-ice.jpg
-  Caption: A seafood platter with shrimps on ice, lime, and dipping sauces. Stock photo.
-  Source: Pexels stock photo https://www.pexels.com/photo/16741146/ . Stock photo, not a photo of this business.
+  Caption: Grilled octopus served on a white plate. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/37068830/ . Stock photo, not a photo of this business. Replaced 2026-10-28 (Rebuild run90): prior file was byte-identical to De Soto's Seafood Kitchen concept.
 
 - shrimp-platter.jpg
-  Caption: A fresh shrimp platter with lemon and dipping sauces, served on ice. Stock photo.
-  Source: Pexels stock photo https://www.pexels.com/photo/12173351/ . Stock photo, not a photo of this business.
+  Caption: Mussels in a creamy sauce served with grilled bread. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/6213753/ . Stock photo, not a photo of this business. Replaced 2026-10-28 (Rebuild run90): prior file was byte-identical to De Soto's Seafood Kitchen concept.
 

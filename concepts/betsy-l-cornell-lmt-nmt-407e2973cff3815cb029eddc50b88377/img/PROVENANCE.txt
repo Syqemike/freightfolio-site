@@ -4,17 +4,17 @@ None of these photos are photos of this business, its staff, its premises, or it
 
 - session-hero.jpg
   Caption: A massage session in a bright, calm treatment room. Stock photo.
-  Source: Pool copy: concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/session-hero.jpg. Stock photo, not a photo of this business.
+  Source: Pexels stock photo https://www.pexels.com/photo/4599377/ . Stock photo, not a photo of this business. Replaced 2026-10-28 (Rebuild run90): prior file was byte-identical to A Hand 2 Heal Massage Therapy concept.
 
 - session-hands.jpg
   Caption: Massage therapy session detail. Stock photo.
-  Source: Pool copy: concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/session-hands.jpg. Stock photo, not a photo of this business.
+  Source: Pexels stock photo https://www.pexels.com/photo/6628701/ . Stock photo, not a photo of this business. Replaced 2026-10-28 (Rebuild run90): prior file was byte-identical to A Hand 2 Heal Massage Therapy concept.
 
 - session-calm.jpg
   Caption: A calm treatment room with a massage table. Stock photo.
-  Source: Pool copy: concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/session-calm.jpg. Stock photo, not a photo of this business.
+  Source: Pexels stock photo https://www.pexels.com/photo/35546238/ . Stock photo, not a photo of this business. Replaced 2026-10-28 (Rebuild run90): prior file was byte-identical to A Hand 2 Heal Massage Therapy concept.
 
 - spa-interior.jpg
   Caption: A serene spa treatment room. Stock photo.
-  Source: Pool copy: concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/spa-interior.jpg. Stock photo, not a photo of this business.
+  Source: Pexels stock photo https://www.pexels.com/photo/35495081/ . Stock photo, not a photo of this business. Replaced 2026-10-28 (Rebuild run90): prior file was byte-identical to A Hand 2 Heal Massage Therapy concept.
 
