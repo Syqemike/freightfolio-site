@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Middle Bay Fishing Charters concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero-water.jpg
+  Caption: Water along a seawall. Stock photo.
+  Source: Pool copy: /home/hatch/workspace/ff-worktrees/wd-batch45-merge/concepts/nelson-inshore-fishing-charters-405e2973cff381a9a382f0c53120061c/images/hero-water.jpg. Stock photo, not a photo of this business.
+
+- catch-trout.jpg
+  Caption: A trout catch. Stock photo.
+  Source: Pool copy: /home/hatch/workspace/ff-worktrees/wd-batch45-merge/concepts/nelson-inshore-fishing-charters-405e2973cff381a9a382f0c53120061c/images/catch-trout.jpg. Stock photo, not a photo of this business.
+
+- dolphin.jpg
+  Caption: A dolphin. Stock photo.
+  Source: Pool copy: /home/hatch/workspace/ff-worktrees/wd-batch45-merge/concepts/nelson-inshore-fishing-charters-405e2973cff381a9a382f0c53120061c/images/dolphin.jpg. Stock photo, not a photo of this business.
+

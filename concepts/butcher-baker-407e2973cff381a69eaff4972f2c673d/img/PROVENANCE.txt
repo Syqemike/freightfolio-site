@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Butcher Baker concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- steak.jpg
+  Caption: A steak sandwich. Stock photo.
+  Source: Pool copy: el-gato-peligroso-406e2973cff381b5bf/img/steak.jpg. Stock photo, not a photo of this business.
+
+- burger.jpg
+  Caption: A burger. Stock photo.
+  Source: Pool copy: el-gato-peligroso-406e2973cff381b5bf/img/burger.jpg. Stock photo, not a photo of this business.
+
+- poboy.jpg
+  Caption: A shrimp po boy sandwich with fries and sauces. Stock photo.
+  Source: Pool copy: brady-s-steaks-and-seafood-405e2973cff38118a8/img/poboy.jpg. Stock photo, not a photo of this business.
+

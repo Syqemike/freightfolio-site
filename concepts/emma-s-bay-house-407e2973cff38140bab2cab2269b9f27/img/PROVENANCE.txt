@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Emma's Bay House concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A DJ playing at a wedding reception in a barn venue. Stock photo.
+  Source: Pool copy: belforest-pointe-405e2973cff3817782/img/hero.jpg. Stock photo, not a photo of this business.
+
+- roses.jpg
+  Caption: Pink garden roses. Stock photo.
+  Source: Pool copy: belforest-pointe-405e2973cff3817782/img/roses.jpg. Stock photo, not a photo of this business.
+
+- sunflowers.jpg
+  Caption: Sunflowers in a field. Stock photo.
+  Source: Pool copy: belforest-pointe-405e2973cff3817782/img/sunflowers.jpg. Stock photo, not a photo of this business.
+

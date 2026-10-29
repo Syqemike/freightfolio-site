@@ -1,0 +1,27 @@
+body{margin:0;font-family:'Segoe UI', Arial, sans-serif;background:#f5f8f7;color:#22302a;line-height:1.65}
+.disclosure{background:#2e6b5e;color:#fff;text-align:center;font-size:.85rem;padding:10px 14px}
+header{padding:28px 20px 10px;text-align:center}
+.brand{font-family:Georgia, 'Times New Roman', serif;font-size:2.5rem;line-height:1.1;margin:0;color:#2e6b5e}
+.kicker{letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;margin:8px 0 0}
+nav.mainnav{text-align:center;padding:10px 0 20px}
+nav.mainnav a{display:inline-block;margin:4px;padding:9px 18px;border:1px solid #2e6b5e;border-radius:999px;text-decoration:none;color:#22302a;font-weight:700}
+nav.mainnav a.active{background:#2e6b5e;color:#fff}
+main{max-width:1020px;margin:0 auto;padding:10px 20px 40px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.hero img,.gallery img{width:100%;height:auto;border-radius:10px}
+h1{font-family:Georgia, 'Times New Roman', serif;font-size:2.1rem;line-height:1.2;margin:0 0 12px;color:#2e6b5e}
+h2{font-family:Georgia, 'Times New Roman', serif;font-size:1.6rem;color:#2e6b5e;margin:30px 0 10px}
+h3{margin:0 0 6px}
+.cta{display:inline-block;background:#2e6b5e;color:#fff;text-decoration:none;font-weight:700;padding:13px 26px;border-radius:999px;margin:10px 6px 0 0}
+.cta.alt{background:transparent;color:#2e6b5e;border:2px solid #2e6b5e}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid #b7cec6;border-radius:10px;padding:18px;background:rgba(255,255,255,.55)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:10px}
+figure{margin:0}
+figcaption{font-size:.85rem;margin-top:6px}
+.rule{border-top:2px solid #b7cec6;margin:30px 0 0}
+ul.plain{padding-left:20px}
+.visit{border:1px solid #b7cec6;border-radius:10px;padding:20px}
+footer{text-align:center;padding:24px 16px;font-size:.85rem;border-top:1px solid #b7cec6}
+main a{color:inherit} footer a{color:inherit}
+@media(max-width:700px){.hero,.grid,.gallery{grid-template-columns:1fr}.brand{font-size:2rem}}

@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Mellow Mood concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A woman browsing clothing racks in a shop. Stock photo.
+  Source: Pool copy: geez-louise-boutique-404e2973cff38124a0/img/hero.jpg. Stock photo, not a photo of this business.
+
+- jacket.jpg
+  Caption: A denim jacket over a mustard top. Stock photo.
+  Source: Pool copy: geez-louise-boutique-404e2973cff38124a0/img/jacket.jpg. Stock photo, not a photo of this business.
+
+- folded.jpg
+  Caption: Folded shirts in a drawer. Stock photo.
+  Source: Pool copy: geez-louise-boutique-404e2973cff38124a0/img/folded.jpg. Stock photo, not a photo of this business.
+

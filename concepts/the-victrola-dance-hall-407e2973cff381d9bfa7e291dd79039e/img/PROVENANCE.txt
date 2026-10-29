@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - The Victrola Dance Hall concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: Dancers in a studio. Stock photo.
+  Source: Pool copy: /home/hatch/workspace/ff-worktrees/wd-batch45-merge/concepts/morlock-school-of-dance-405e2973cff3818eab91d5753b7d2373/img/hero.jpg. Stock photo, not a photo of this business.
+
+- class.jpg
+  Caption: A dance class. Stock photo.
+  Source: Pool copy: /home/hatch/workspace/ff-worktrees/wd-batch45-merge/concepts/morlock-school-of-dance-405e2973cff3818eab91d5753b7d2373/img/class.jpg. Stock photo, not a photo of this business.
+
+- studio.jpg
+  Caption: A dance studio interior. Stock photo.
+  Source: Pool copy: /home/hatch/workspace/ff-worktrees/wd-batch45-merge/concepts/morlock-school-of-dance-405e2973cff3818eab91d5753b7d2373/img/studio.jpg. Stock photo, not a photo of this business.
+

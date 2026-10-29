@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Madame Chrysanthemum concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A flower arrangement. Stock photo.
+  Source: Pool copy: alluring-blooms-405e2973cff381ca96/img/hero.jpg. Stock photo, not a photo of this business.
+
+- seasonal.jpg
+  Caption: A seasonal flower arrangement. Stock photo.
+  Source: Pool copy: alluring-blooms-405e2973cff381ca96/img/seasonal.jpg. Stock photo, not a photo of this business.
+
+- sunflowers.jpg
+  Caption: Sunflowers. Stock photo.
+  Source: Pool copy: alluring-blooms-405e2973cff381ca96/img/sunflowers.jpg. Stock photo, not a photo of this business.
+

@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - First Dance Ballroom Studio concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A dance class in a studio. Stock photo.
+  Source: Pool copy: absolute-ballroom-405e2973cff3810c85/img/hero.jpg. Stock photo, not a photo of this business.
+
+- couple.jpg
+  Caption: A dancing couple. Stock photo.
+  Source: Pool copy: absolute-ballroom-405e2973cff3810c85/img/couple.jpg. Stock photo, not a photo of this business.
+
+- floor.jpg
+  Caption: A dance floor. Stock photo.
+  Source: Pool copy: absolute-ballroom-405e2973cff3810c85/img/floor.jpg. Stock photo, not a photo of this business.
+

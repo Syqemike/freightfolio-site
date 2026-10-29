@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - B & J Pit Stop concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: An auto repair shop. Stock photo.
+  Source: Pool copy: bill-s-auto-repair-404e2973cff3814eb2/img/hero.jpg. Stock photo, not a photo of this business.
+
+- engine.jpg
+  Caption: A car engine. Stock photo.
+  Source: Pool copy: bill-s-auto-repair-404e2973cff3814eb2/img/engine.jpg. Stock photo, not a photo of this business.
+
+- turbo.jpg
+  Caption: A turbocharger. Stock photo.
+  Source: Pool copy: bill-s-auto-repair-404e2973cff3814eb2/img/turbo.jpg. Stock photo, not a photo of this business.
+

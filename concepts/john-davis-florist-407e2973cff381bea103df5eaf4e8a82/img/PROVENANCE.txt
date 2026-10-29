@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - John Davis Florist concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- wedding-bouquet.jpg
+  Caption: A wedding reception table with floral centerpieces. Stock photo.
+  Source: Pool copy: milestone-floral-406e2973cff381fc9e/img/wedding-bouquet.jpg. Stock photo, not a photo of this business.
+
+- everyday-bouquet.jpg
+  Caption: An everyday bouquet. Stock photo.
+  Source: Pool copy: milestone-floral-406e2973cff381fc9e/img/everyday-bouquet.jpg. Stock photo, not a photo of this business.
+
+- sympathy-bouquet.jpg
+  Caption: A sympathy bouquet. Stock photo.
+  Source: Pool copy: milestone-floral-406e2973cff381fc9e/img/sympathy-bouquet.jpg. Stock photo, not a photo of this business.
+
