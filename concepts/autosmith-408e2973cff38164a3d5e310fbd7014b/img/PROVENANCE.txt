@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Autosmith concept (Website Dev shift 2026-10-29 13:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A mechanic repairing a car undercarriage outdoors. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/arnold-automotive-404e2973cff3819c81/img
+
+- img/auto3b.jpg: A mechanic working under a car hood. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/arnold-automotive-404e2973cff3819c81/img
+
+- img/auto1b.jpg: A mechanic checking a car engine. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/arnold-automotive-404e2973cff3819c81/img

@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Metairie Daycare & Learning Center concept (Website Dev shift 2026-10-29 13:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/classroom-together.jpg: Children and teachers playing together in a colorful classroom. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/kids-kabin-day-care-center-403e2973cff381ec/img
+
+- img/blocks-play.jpg: Children playing with toys and blocks in a bright kindergarten classroom. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/kids-kabin-day-care-center-403e2973cff381ec/img
+
+- img/painted-hands.jpg: A child with painted hands in an art class. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/kids-kabin-day-care-center-403e2973cff381ec/img

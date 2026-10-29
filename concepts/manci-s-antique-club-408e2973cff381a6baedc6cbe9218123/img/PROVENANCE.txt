@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Manci's Antique Club concept (Website Dev shift 2026-10-29 13:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/beer-taps.jpg: Beer taps. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/beer-bar-405e2973cff38167b083c1ae0c27d58d/img
+
+- img/burger.jpg: A burger. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/beer-bar-405e2973cff38167b083c1ae0c27d58d/img
+
+- img/live-band.jpg: A bar stage with skateboards mounted on the wall. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/beer-bar-405e2973cff38167b083c1ae0c27d58d/img

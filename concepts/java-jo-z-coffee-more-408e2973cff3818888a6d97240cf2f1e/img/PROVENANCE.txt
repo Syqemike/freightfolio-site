@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Java Jo'z Coffee & More concept (Website Dev shift 2026-10-29 13:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: Latte art coffee, a pastry, and an espresso machine on a countertop. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/anchored-coffee-house-406e2973cff38102bc/img
+
+- img/catisland2.jpg: Iced coffee with a cinnamon roll on a marble table. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/anchored-coffee-house-406e2973cff38102bc/img
+
+- img/catisland3.jpg: Coffee and pastries on a wooden table in a cafe. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/anchored-coffee-house-406e2973cff38102bc/img

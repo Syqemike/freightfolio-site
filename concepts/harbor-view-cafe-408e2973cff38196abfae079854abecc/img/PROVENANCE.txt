@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Harbor View Cafe concept (Website Dev shift 2026-10-29 13:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A warm cafe interior with a laptop on a wooden table. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/cafe-beignet-404e2973cff3811986/img
+
+- img/latte.jpg: A cappuccino with heart latte art in a blue cup. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/cafe-beignet-404e2973cff3811986/img
+
+- img/pastry.jpg: Cinnamon rolls on bakery racks. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/cafe-beignet-404e2973cff3811986/img

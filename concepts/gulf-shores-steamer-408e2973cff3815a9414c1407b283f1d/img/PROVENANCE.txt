@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Gulf Shores Steamer concept (Website Dev shift 2026-10-29 13:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/shrimptacos.jpg: Shrimp tacos. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/3-margaritas-kitchen-405e2973cff38133ae92f8a2c6a3b4e3/img
+
+- img/ceviche.jpg: Ceviche. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/3-margaritas-kitchen-405e2973cff38133ae92f8a2c6a3b4e3/img
+
+- img/aguachile.jpg: Aguachile. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/3-margaritas-kitchen-405e2973cff38133ae92f8a2c6a3b4e3/img
