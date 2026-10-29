@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - House of Eight Limbs, LLC concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- boxing-speedbag.jpg
+  Caption: A boxer training with a speed bag in a gym. Stock photo.
+  Source: Pool copy: concepts/southeast-des-moines-boxing-club-403e2973cff3815d93/img/hero.jpg. Stock photo, not a photo of this business.
+
+- boxing-heavybag.jpg
+  Caption: A boxer punching a heavy bag in a gym. Stock photo.
+  Source: Pool copy: concepts/southeast-des-moines-boxing-club-403e2973cff3815d93/img/bag.jpg. Stock photo, not a photo of this business.
+
+- boxing-gloves.jpg
+  Caption: A woman wearing boxing gloves in a gym. Stock photo.
+  Source: Pool copy: concepts/southeast-des-moines-boxing-club-403e2973cff3815d93/img/female.jpg. Stock photo, not a photo of this business.
+

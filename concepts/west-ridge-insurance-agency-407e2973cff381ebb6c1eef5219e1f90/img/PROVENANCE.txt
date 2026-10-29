@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - West Ridge Insurance Agency concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- agency-hero.jpg
+  Caption: A consultant discussing plans with clients in an office. Stock photo.
+  Source: Pool copy: concepts/warsen-insurance-agency-405e2973cff381c8a5/img/hero.jpg. Stock photo, not a photo of this business.
+
+- agency-office.jpg
+  Caption: A consultation in an office setting. Stock photo.
+  Source: Pool copy: concepts/warsen-insurance-agency-405e2973cff381c8a5/img/office.jpg. Stock photo, not a photo of this business.
+
+- agency-paperwork.jpg
+  Caption: An agent reviewing home insurance paperwork with clients. Stock photo.
+  Source: Pool copy: concepts/warsen-insurance-agency-405e2973cff381c8a5/img/paperwork.jpg. Stock photo, not a photo of this business.
+

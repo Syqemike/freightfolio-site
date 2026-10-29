@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Serenity Nails & Spa concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- serenity-manicure.jpg
+  Caption: A manicure in a cozy salon setting. Stock photo.
+  Source: Pool copy: concepts/l-a-nails-403e2973cff38144/img/cozy-manicure.jpg. Stock photo, not a photo of this business.
+
+- serenity-nude.jpg
+  Caption: Manicured nails in a neutral shade. Stock photo.
+  Source: Pool copy: concepts/l-a-nails-403e2973cff38144/img/hero-nude.jpg. Stock photo, not a photo of this business.
+
+- serenity-art.jpg
+  Caption: Nail art on manicured nails. Stock photo.
+  Source: Pool copy: concepts/l-a-nails-403e2973cff38144/img/nail-art.jpg. Stock photo, not a photo of this business.
+
+- serenity-pedicure.jpg
+  Caption: Pedicure care at a salon. Stock photo.
+  Source: Pool copy: concepts/l-a-nails-403e2973cff38144/img/pedicure-care.jpg. Stock photo, not a photo of this business.
+

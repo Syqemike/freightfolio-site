@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Savvy Bride Boutique concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- bride-dresses.jpg
+  Caption: A collection of dresses on hangers in a bright boutique. Stock photo.
+  Source: Pool copy: concepts/belle-rive-boutique-407e2973cff381999ec9fd60a0c1b85f/img/dresses-hangers.jpg. Stock photo, not a photo of this business.
+
+- bride-boutique.jpg
+  Caption: A bright boutique with garments on display. Stock photo.
+  Source: Pool copy: concepts/belle-rive-boutique-407e2973cff381999ec9fd60a0c1b85f/img/pastel-boutique.jpg. Stock photo, not a photo of this business.
+
+- bride-bouquet.jpg
+  Caption: A bridal bouquet. Stock photo.
+  Source: Pool copy: concepts/at-the-beach-weddings-405e2973cff381e3be/img/bouquet.jpg. Stock photo, not a photo of this business.
+
+- bride-mannequin.jpg
+  Caption: A dress on a mannequin in a boutique. Stock photo.
+  Source: Pool copy: concepts/belle-rive-boutique-407e2973cff381999ec9fd60a0c1b85f/img/mannequin-dress.jpg. Stock photo, not a photo of this business.
+

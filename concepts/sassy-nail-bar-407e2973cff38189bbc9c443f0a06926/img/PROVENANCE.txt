@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Sassy Nail Bar concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- sassy-hero.jpg
+  Caption: Hands with a red manicure. Stock photo.
+  Source: Pool copy: concepts/nails-by-jackie-403e2973cff3812d/img/hero-manicure.jpg. Stock photo, not a photo of this business.
+
+- sassy-gel.jpg
+  Caption: Gel polish being applied. Stock photo.
+  Source: Pool copy: concepts/nails-by-jackie-403e2973cff3812d/img/gel-polish.jpg. Stock photo, not a photo of this business.
+
+- sassy-pedicure.jpg
+  Caption: A pedicure in progress. Stock photo.
+  Source: Pool copy: concepts/nails-by-jackie-403e2973cff3812d/img/pedicure-chair.jpg. Stock photo, not a photo of this business.
+
+- sassy-purple.jpg
+  Caption: Purple manicured nails. Stock photo.
+  Source: Pool copy: concepts/nails-by-jackie-403e2973cff3812d/img/purple-nails.jpg. Stock photo, not a photo of this business.
+

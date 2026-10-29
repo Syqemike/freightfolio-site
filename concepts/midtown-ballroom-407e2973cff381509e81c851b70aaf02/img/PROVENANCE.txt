@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Midtown Ballroom concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- ballroom-class.jpg
+  Caption: An instructor leading adult dancers in a group session in a mirrored studio. Stock photo.
+  Source: Pool copy: concepts/staverdancesport-405e2973cff38158b5/img/hero.jpg. Stock photo, not a photo of this business.
+
+- ballroom-floor.jpg
+  Caption: Adults dancing on a brightly lit dance floor. Stock photo.
+  Source: Pool copy: concepts/staverdancesport-405e2973cff38158b5/img/floor.jpg. Stock photo, not a photo of this business.
+
+- ballroom-couple.jpg
+  Caption: A couple dancing at a celebration. Stock photo.
+  Source: Pool copy: concepts/staverdancesport-405e2973cff38158b5/img/couple.jpg. Stock photo, not a photo of this business.
+

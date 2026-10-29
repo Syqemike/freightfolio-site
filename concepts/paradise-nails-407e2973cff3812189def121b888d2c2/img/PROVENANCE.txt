@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Paradise Nails concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- paradise-hero.jpg
+  Caption: A manicure in progress at a nail salon. Stock photo.
+  Source: Pool copy: concepts/accent-nails-spa-405e2973cff38151a8/img/hero.jpg. Stock photo, not a photo of this business.
+
+- paradise-art.jpg
+  Caption: Nail art on manicured nails. Stock photo.
+  Source: Pool copy: concepts/accent-nails-spa-405e2973cff38151a8/img/art.jpg. Stock photo, not a photo of this business.
+
+- paradise-filing.jpg
+  Caption: Nails being filed at a salon. Stock photo.
+  Source: Pool copy: concepts/accent-nails-spa-405e2973cff38151a8/img/filing.jpg. Stock photo, not a photo of this business.
+
+- paradise-pedicure.jpg
+  Caption: A pedicure in progress. Stock photo.
+  Source: Pool copy: concepts/divine-nail-tan-403e2973cff38144/img/pedicure.jpg. Stock photo, not a photo of this business.
+

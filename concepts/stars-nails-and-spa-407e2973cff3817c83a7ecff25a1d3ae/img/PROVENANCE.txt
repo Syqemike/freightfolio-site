@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Stars Nails and Spa concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- stars-hero.jpg
+  Caption: A manicure in progress at a nail salon. Stock photo.
+  Source: Pool copy: concepts/lee-nails-403e2973cff38178/img/hero.jpg. Stock photo, not a photo of this business.
+
+- stars-detail.jpg
+  Caption: Detail of manicured nails. Stock photo.
+  Source: Pool copy: concepts/lee-nails-403e2973cff38178/img/detail.jpg. Stock photo, not a photo of this business.
+
+- stars-handspa.jpg
+  Caption: A nail technician working on a client's hand. Stock photo.
+  Source: Pool copy: concepts/lee-nails-403e2973cff38178/img/handspa.jpg. Stock photo, not a photo of this business.
+
+- stars-nailart.jpg
+  Caption: Nail art on manicured nails. Stock photo.
+  Source: Pool copy: concepts/lee-nails-403e2973cff38178/img/nailart.jpg. Stock photo, not a photo of this business.
+
