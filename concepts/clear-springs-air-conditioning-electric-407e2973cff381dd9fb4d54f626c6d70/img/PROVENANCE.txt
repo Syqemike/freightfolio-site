@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Clear Springs Air Conditioning & Electric concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: An electrician diagnosing an electrical panel with a multimeter. Stock photo.
+  Source: Pool copy: mancini-electric-405e2973cff381158d/img/hero.jpg. Stock photo, not a photo of this business.
+
+- panel.jpg
+  Caption: An electrician working on an indoor circuit breaker panel. Stock photo.
+  Source: Pool copy: mancini-electric-405e2973cff381158d/img/panel.jpg. Stock photo, not a photo of this business.
+
+- switchboard.jpg
+  Caption: An electrician working on an opened switchboard with colorful wires. Stock photo.
+  Source: Pool copy: mancini-electric-405e2973cff381158d/img/switchboard.jpg. Stock photo, not a photo of this business.
+

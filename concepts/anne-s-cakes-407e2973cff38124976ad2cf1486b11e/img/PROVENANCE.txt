@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Anne's Cakes concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: Assorted pastries in a bakery case. Stock photo.
+  Source: Pool copy: santa-fe-bakery-404e2973cff381e080/img/hero.jpg. Stock photo, not a photo of this business.
+
+- cake.jpg
+  Caption: A slice of chocolate layer cake. Stock photo.
+  Source: Pool copy: santa-fe-bakery-404e2973cff381e080/img/cake.jpg. Stock photo, not a photo of this business.
+
+- counter.jpg
+  Caption: A bakery counter with a display case. Stock photo.
+  Source: Pool copy: santa-fe-bakery-404e2973cff381e080/img/counter.jpg. Stock photo, not a photo of this business.
+

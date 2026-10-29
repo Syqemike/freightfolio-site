@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Rebecca Lassiter Photography concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- on-location.jpg
+  Caption: A photographer holding a camera at dusk in a city. Stock photo.
+  Source: Pool copy: /home/hatch/workspace/ff-worktrees/wd-batch45-michael-mills-photography-405e2973cff38199ba71e2101b764f7e/concepts/michael-mills-photography-405e2973cff38199ba71e2101b764f7e/images/on-location.jpg. Stock photo, not a photo of this business.
+
+- sports.jpg
+  Caption: A runner crouched at the start line on a track. Stock photo.
+  Source: Pool copy: /home/hatch/workspace/ff-worktrees/wd-batch45-michael-mills-photography-405e2973cff38199ba71e2101b764f7e/concepts/michael-mills-photography-405e2973cff38199ba71e2101b764f7e/images/sports.jpg. Stock photo, not a photo of this business.
+
+- wedding.jpg
+  Caption: A beach wedding ceremony with pink and yellow floral centerpieces. Stock photo.
+  Source: Pool copy: at-the-beach-weddings-405e2973cff381e3be/img/hero.jpg. Stock photo, not a photo of this business.
+

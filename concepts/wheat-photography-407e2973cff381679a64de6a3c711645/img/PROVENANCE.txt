@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Wheat Photography concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- wedding.jpg
+  Caption: A wedding couple holding a bouquet in warm sunlight. Stock photo.
+  Source: Pool copy: /home/hatch/workspace/ff-worktrees/wd-batch45-michael-mills-photography-405e2973cff38199ba71e2101b764f7e/concepts/michael-mills-photography-405e2973cff38199ba71e2101b764f7e/images/wedding.jpg. Stock photo, not a photo of this business.
+
+- camera.jpg
+  Caption: A camera body and lenses on a dark table. Stock photo.
+  Source: Pool copy: /home/hatch/workspace/ff-worktrees/wd-batch45-michael-mills-photography-405e2973cff38199ba71e2101b764f7e/concepts/michael-mills-photography-405e2973cff38199ba71e2101b764f7e/images/camera.jpg. Stock photo, not a photo of this business.
+
+- portrait.jpg
+  Caption: A studio portrait of a man against a plain background. Stock photo.
+  Source: Pool copy: /home/hatch/workspace/ff-worktrees/wd-batch45-michael-mills-photography-405e2973cff38199ba71e2101b764f7e/concepts/michael-mills-photography-405e2973cff38199ba71e2101b764f7e/images/portrait.jpg. Stock photo, not a photo of this business.
+

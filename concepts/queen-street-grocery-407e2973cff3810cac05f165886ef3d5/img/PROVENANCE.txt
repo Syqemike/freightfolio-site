@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Queen Street Grocery concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- beans.jpg
+  Caption: Coffee beans. Stock photo.
+  Source: Pool copy: atticus-coffee-gifts-405e2973cff3812895dbc52b6d62d4fd/img/beans.jpg. Stock photo, not a photo of this business.
+
+- latte.jpg
+  Caption: A latte. Stock photo.
+  Source: Pool copy: atticus-coffee-gifts-405e2973cff3812895dbc52b6d62d4fd/img/latte.jpg. Stock photo, not a photo of this business.
+
+- pastries.jpg
+  Caption: Coffee and pastries on a wooden table in a cafe. Stock photo.
+  Source: Pool copy: cat-island-coffeehouse-404e2973cff3816296/img/catisland3.jpg. Stock photo, not a photo of this business.
+

@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Impeccable Cleaning concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: Cleaners in red overalls cleaning a modern interior. Stock photo.
+  Source: Pool copy: diamond-shine-cleaning-service-404e2973cff381fe9f/img/hero.jpg. Stock photo, not a photo of this business.
+
+- sweep.jpg
+  Caption: A person sweeping a wooden floor with a broom and dustpan. Stock photo.
+  Source: Pool copy: diamond-shine-cleaning-service-404e2973cff381fe9f/img/sweep.jpg. Stock photo, not a photo of this business.
+
+- kitchen.jpg
+  Caption: A kitchen island with upholstered chairs. Stock photo.
+  Source: Pool copy: diamond-shine-cleaning-service-404e2973cff381fe9f/img/kitchen.jpg. Stock photo, not a photo of this business.
+

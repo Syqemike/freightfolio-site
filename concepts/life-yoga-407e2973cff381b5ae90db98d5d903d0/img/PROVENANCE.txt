@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Life Yoga concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: An instructor sitting cross-legged while students lie in relaxation pose in a bright studio. Stock photo.
+  Source: Pool copy: yoga-now-404e2973cff38178b8/img/hero.jpg. Stock photo, not a photo of this business.
+
+- yoganow2.jpg
+  Caption: Adults doing a supported kneeling yoga pose using wooden blocks. Stock photo.
+  Source: Pool copy: yoga-now-404e2973cff38178b8/img/yoganow2.jpg. Stock photo, not a photo of this business.
+
+- yoganow3.jpg
+  Caption: A group on mats performing cat-cow pose in a studio. Stock photo.
+  Source: Pool copy: yoga-now-404e2973cff38178b8/img/yoganow3.jpg. Stock photo, not a photo of this business.
+

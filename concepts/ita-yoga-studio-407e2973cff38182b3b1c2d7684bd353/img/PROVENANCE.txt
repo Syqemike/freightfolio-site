@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Ita Yoga Studio concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A group of adults doing yoga poses on mats in a bright indoor studio. Stock photo.
+  Source: Pool copy: downtown-yoga-ocean-springs-404e2973cff3813bbf/img/hero.jpg. Stock photo, not a photo of this business.
+
+- yoga2.jpg
+  Caption: Adults practicing yoga poses in a modern, minimalist studio. Stock photo.
+  Source: Pool copy: downtown-yoga-ocean-springs-404e2973cff3813bbf/img/yoga2.jpg. Stock photo, not a photo of this business.
+
+- yoga3.jpg
+  Caption: A group of adults practicing yoga together indoors. Stock photo.
+  Source: Pool copy: downtown-yoga-ocean-springs-404e2973cff3813bbf/img/yoga3.jpg. Stock photo, not a photo of this business.
+

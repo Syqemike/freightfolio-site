@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Urban Contessa Florals concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: A bouquet of peach roses and yellow poppies. Stock photo.
+  Source: Pool copy: gardner-s-florist-404e2973cff3810cac/img/hero.jpg. Stock photo, not a photo of this business.
+
+- ranunculus.jpg
+  Caption: Pale pink ranunculus flowers. Stock photo.
+  Source: Pool copy: gardner-s-florist-404e2973cff3810cac/img/ranunculus.jpg. Stock photo, not a photo of this business.
+
+- bouquet.jpg
+  Caption: A woman holding a bouquet of flowers. Stock photo.
+  Source: Pool copy: gardner-s-florist-404e2973cff3810cac/img/bouquet.jpg. Stock photo, not a photo of this business.
+
