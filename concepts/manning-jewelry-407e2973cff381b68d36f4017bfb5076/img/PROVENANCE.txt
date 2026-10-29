@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Manning Jewelry concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- bracelets.jpg
+  Caption: Charm bracelets worn on a wrist. Stock photo.
+  Source: Pool copy: aurum-jewelers-405e2973cff381e284/img/hero.jpg. Stock photo, not a photo of this business.
+
+- ring-rose.jpg
+  Caption: A jeweled ring resting on a red rose. Stock photo.
+  Source: Pool copy: aurum-jewelers-405e2973cff381e284/img/ring.jpg. Stock photo, not a photo of this business.
+
+- necklace.jpg
+  Caption: A diamond pendant necklace. Stock photo.
+  Source: Pool copy: aurum-jewelers-405e2973cff381e284/img/necklace.jpg. Stock photo, not a photo of this business.
+

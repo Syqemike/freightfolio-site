@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Apothika Day Spa concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- spa-facial.jpg
+  Caption: A facial treatment in a calm spa setting. Stock photo.
+  Source: Pool copy: a-petite-spa-3ffe2973cff3815e923ec4404c759bee/img/spa-facial.jpg. Stock photo, not a photo of this business.
+
+- spa-products.jpg
+  Caption: Spa products with towels and flowers. Stock photo.
+  Source: Pool copy: a-petite-spa-3ffe2973cff3815e923ec4404c759bee/img/spa-massage.jpg. Stock photo, not a photo of this business.
+
+- spa-nails.jpg
+  Caption: A manicure with black and tortoiseshell polish. Stock photo.
+  Source: Pool copy: a-petite-spa-3ffe2973cff3815e923ec4404c759bee/img/spa-nails.jpg. Stock photo, not a photo of this business.
+

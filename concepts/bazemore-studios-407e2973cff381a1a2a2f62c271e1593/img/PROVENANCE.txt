@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Bazemore Studios concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- studio-shooting.jpg
+  Caption: A photographer at work in a studio. Stock photo.
+  Source: Pool copy: /tmp/wd2359-candidates/photo-3917727.jpg. Stock photo, not a photo of this business.
+
+- studio-camera.jpg
+  Caption: A photographer holding a camera in a studio setting. Stock photo.
+  Source: Pool copy: /tmp/wd2359-candidates/photo-36118825.jpg. Stock photo, not a photo of this business.
+
+- studio-portrait.jpg
+  Caption: A photographer holding a camera against a dark backdrop. Stock photo.
+  Source: Pool copy: /tmp/wd2359-candidates/photo-37763474.jpg. Stock photo, not a photo of this business.
+

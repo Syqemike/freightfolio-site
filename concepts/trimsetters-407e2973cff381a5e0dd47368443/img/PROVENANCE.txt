@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Trimsetters concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- fade.jpg
+  Caption: A fresh fade and edge-up on a client in a barber chair. Stock photo.
+  Source: Pool copy: brotherz-barbershop-3aee472c8587b6f4/img/photo-1.jpg. Stock photo, not a photo of this business.
+
+- beard.jpg
+  Caption: A haircut with a lined-up beard. Stock photo.
+  Source: Pool copy: brotherz-barbershop-3aee472c8587b6f4/img/photo-3.jpg. Stock photo, not a photo of this business.
+
+- design.jpg
+  Caption: A floral design shaved into an undercut. Stock photo.
+  Source: Pool copy: brotherz-barbershop-3aee472c8587b6f4/img/photo-2.jpg. Stock photo, not a photo of this business.
+

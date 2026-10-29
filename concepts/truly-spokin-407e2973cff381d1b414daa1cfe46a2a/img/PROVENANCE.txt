@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Truly Spokin concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- road-bike.jpg
+  Caption: Close-up of a road bike's handlebars. Stock photo.
+  Source: Pool copy: /tmp/wd2359-candidates/bike-34756140.jpg. Stock photo, not a photo of this business.
+
+- bike-mechanic.jpg
+  Caption: A bike mechanic working among wheels and tires in a workshop. Stock photo.
+  Source: Pool copy: /tmp/wd2359-candidates/bike-37210494.jpg. Stock photo, not a photo of this business.
+
+- road-rider.jpg
+  Caption: A cyclist riding a road bike. Stock photo.
+  Source: Pool copy: /tmp/wd2359-candidates/bike-19431221.jpg. Stock photo, not a photo of this business.
+

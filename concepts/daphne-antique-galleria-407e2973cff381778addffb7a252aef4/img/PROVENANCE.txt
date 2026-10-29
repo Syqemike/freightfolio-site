@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Daphne Antique Galleria concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- store-interior.jpg
+  Caption: A furniture store interior with sofas and armchairs. Stock photo.
+  Source: Pool copy: don-kazery-s-furniture-co-inc-404e2973cff381aca9/img/hero.jpg. Stock photo, not a photo of this business.
+
+- armchair.jpg
+  Caption: A red armchair in a furniture store setting. Stock photo.
+  Source: Pool copy: don-kazery-s-furniture-co-inc-404e2973cff381aca9/img/armchair.jpg. Stock photo, not a photo of this business.
+
+- living-room.jpg
+  Caption: A living room with green plants and brown sofa chairs. Stock photo.
+  Source: Pool copy: don-kazery-s-furniture-co-inc-404e2973cff381aca9/img/living.jpg. Stock photo, not a photo of this business.
+
