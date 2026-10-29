@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Lifeworks Massage PLLC concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A therapist giving a back massage in a bright, calm treatment room. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/ashiatsu-massage-403e2973cff38188b3/img
+
+- img/hands.jpg: Hands during a massage session. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/ashiatsu-massage-403e2973cff38188b3/img
+
+- img/interior.jpg: A serene spa treatment room with a massage table and candle. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/ashiatsu-massage-403e2973cff38188b3/img

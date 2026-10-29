@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - A1 Electrician Services concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/panel-work.jpg: An electrician using a drill to repair an open electrical panel indoors. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd-batch31b-tnt-electric-llc-402e2973cff3816eb28cdf26975f9619/concepts/tnt-electric-llc-402e2973cff3816eb28cdf26975f9619/img
+
+- img/multimeter-diagnosis.jpg: An electrician using a multimeter to test connections in an open electrical panel. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd-batch31b-tnt-electric-llc-402e2973cff3816eb28cdf26975f9619/concepts/tnt-electric-llc-402e2973cff3816eb28cdf26975f9619/img
+
+- img/breaker-closeup.jpg: Close-up of an electrician's hand working on a circuit breaker panel with colorful wires. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd-batch31b-tnt-electric-llc-402e2973cff3816eb28cdf26975f9619/concepts/tnt-electric-llc-402e2973cff3816eb28cdf26975f9619/img

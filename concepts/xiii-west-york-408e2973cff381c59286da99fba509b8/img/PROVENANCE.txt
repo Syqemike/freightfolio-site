@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - XIII West York concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A woman browsing clothing racks in a shop. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/unique-boutique-406e2973cff3814f9f/img
+
+- img/jacket.jpg: A denim jacket over a mustard top against a yellow wall. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/unique-boutique-406e2973cff3814f9f/img
+
+- img/folded.jpg: Folded shirts in a drawer. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/unique-boutique-406e2973cff3814f9f/img

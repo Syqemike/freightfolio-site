@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Kings Row Pet Hospital concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero-dog-exam.jpg: A veterinarian examining a dog on an exam table. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/advanced-animal-care-f63bdc7cb30f/img
+
+- img/cat-vet-check.jpg: A cat being gently examined on a veterinary exam table. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/advanced-animal-care-f63bdc7cb30f/img
+
+- img/puppy-portrait.jpg: A golden retriever puppy looking at the camera. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/advanced-animal-care-f63bdc7cb30f/img

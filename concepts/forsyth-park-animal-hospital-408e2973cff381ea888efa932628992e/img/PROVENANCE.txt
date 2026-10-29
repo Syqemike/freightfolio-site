@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Forsyth Park Animal Hospital concept (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero-dog-exam.jpg: A veterinarian with a stethoscope examining a dog on an exam table, with an assistant holding the dog. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/village-animal-hospital-406e2973cff381c9af/img
+
+- img/cat-exam-table.jpg: A veterinarian in scrubs gently holding a dog's head near a bright clinic window. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/village-animal-hospital-406e2973cff381c9af/img
+
+- img/cat-vet-check.jpg: A tabby-and-white cat being gently examined on a blue vet exam table. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/village-animal-hospital-406e2973cff381c9af/img
