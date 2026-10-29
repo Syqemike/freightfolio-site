@@ -1,20 +1,11 @@
-PHOTO PROVENANCE - Territory X Studio concept site (Website Dev shift 2026-10-28)
+PHOTO PROVENANCE - Territory X Studio concept site (updated 2026-10-28, Rebuild shift run89b)
 
 None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
 
-- portrait.jpg
-  Caption: A studio portrait. Stock photo.
-  Source: Pool copy: concepts/c-bauer-photography-406e2973cff381059832eef574539230/img/portrait.jpg. Stock photo, not a photo of this business.
+- portrait.jpg: REPLACED in run89b (old file byte-identical to ABC Braid Louisville and C Bauer Photography). New file: Pexels 3823495, a close-up studio portrait of an elderly man in a suit. Viewed before use; JPEG quality 88 at width 1260; hash-checked against all 896 concept images in the current main tree plus all run89b staged files, zero collisions. Caption: A studio portrait. Stock photo.
 
-- studio-photographer.jpg
-  Caption: A photographer working with a model in a well-lit studio. Stock photo.
-  Source: Pexels stock photo https://www.pexels.com/photo/30697991/ . Stock photo, not a photo of this business.
+- studio-photographer.jpg: unchanged in run89b; Pexels 30697991, a photographer working with a model in a well-lit studio. Distinct file per QA 2026-10-28 17:59 CT cross-concept hash check.
 
-- studio-session.jpg
-  Caption: A studio photography session with a model on a stool and a photographer in action. Stock photo.
-  Source: Pexels stock photo https://www.pexels.com/photo/33406877/ . Stock photo, not a photo of this business.
+- studio-session.jpg: unchanged in run89b; Pexels 33406877, a studio photography session with a model on a stool and a photographer in action. Distinct file per QA hash check.
 
-- studio-posing.jpg
-  Caption: A woman posing in a professional photography studio surrounded by lighting. Stock photo.
-  Source: Pexels stock photo https://www.pexels.com/photo/10811922/ . Stock photo, not a photo of this business.
-
+- studio-posing.jpg: unchanged in run89b; Pexels 10811922, a woman posing in a professional photography studio surrounded by lighting. Distinct file per QA hash check.
