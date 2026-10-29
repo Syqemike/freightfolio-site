@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Big Mike's Steakhouse concept (Website Dev shift 2026-10-29 13:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/steak.jpg: A Philly cheesesteak with melted cheese and grilled vegetables. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/el-gato-peligroso-406e2973cff381b5bf/img
+
+- img/p2-burger.jpg: A burger. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/brady-s-steaks-and-seafood-405e2973cff38118a8/img
+
+- img/p2-hero.jpg: Shrimp etouffee served with rice. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/brady-s-steaks-and-seafood-405e2973cff38118a8/img
