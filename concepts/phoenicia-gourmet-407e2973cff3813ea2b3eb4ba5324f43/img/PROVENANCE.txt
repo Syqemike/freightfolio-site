@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Phoenicia Gourmet concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- phoenicia-gyro.jpg
+  Caption: A gyro in pita with fries, tomato, and onion. Stock photo.
+  Source: Pool copy: concepts/gyro-master-403e2973cff3813895/img/gyro.jpg. Stock photo, not a photo of this business.
+
+- phoenicia-shawarma.jpg
+  Caption: Shawarma meat cooking on a vertical rotisserie. Stock photo.
+  Source: Pool copy: concepts/gyro-master-403e2973cff3813895/img/shawarma.jpg. Stock photo, not a photo of this business.
+
+- phoenicia-falafel.jpg
+  Caption: Falafel balls in a bowl. Stock photo.
+  Source: Pool copy: concepts/gyro-master-403e2973cff3813895/img/falafel.jpg. Stock photo, not a photo of this business.
+

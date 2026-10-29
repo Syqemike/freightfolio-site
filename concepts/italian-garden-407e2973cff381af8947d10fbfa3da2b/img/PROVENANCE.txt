@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Italian Garden concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- italian-slice.jpg
+  Caption: A hand pulling a cheesy pepperoni pizza slice. Stock photo.
+  Source: Pool copy: concepts/aldo-s-pizza-pies-405e2973cff3816583/img/hero.jpg. Stock photo, not a photo of this business.
+
+- italian-display.jpg
+  Caption: New York style pizza slices on display. Stock photo.
+  Source: Pool copy: concepts/aldo-s-pizza-pies-405e2973cff3816583/img/display.jpg. Stock photo, not a photo of this business.
+
+- italian-table.jpg
+  Caption: Assorted pizzas with pepperoni and sausage on a wooden table. Stock photo.
+  Source: Pool copy: concepts/aldo-s-pizza-pies-405e2973cff3816583/img/table.jpg. Stock photo, not a photo of this business.
+

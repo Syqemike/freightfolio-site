@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Sam's Auto Repair concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- repair-inspection.jpg
+  Caption: A mechanic inspecting a car engine with a light. Stock photo.
+  Source: Pool copy: concepts/bill-s-auto-repair-404e2973cff3814eb2/img/hero.jpg. Stock photo, not a photo of this business.
+
+- repair-engine.jpg
+  Caption: A performance car engine with red accents. Stock photo.
+  Source: Pool copy: concepts/bill-s-auto-repair-404e2973cff3814eb2/img/engine.jpg. Stock photo, not a photo of this business.
+
+- repair-turbo.jpg
+  Caption: A turbocharger and air filter in an engine bay. Stock photo.
+  Source: Pool copy: concepts/bill-s-auto-repair-404e2973cff3814eb2/img/turbo.jpg. Stock photo, not a photo of this business.
+

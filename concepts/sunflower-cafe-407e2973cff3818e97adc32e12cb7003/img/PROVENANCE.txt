@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Sunflower Cafe concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- sunflower-latte.jpg
+  Caption: A latte. Stock photo.
+  Source: Pool copy: concepts/foam-coffee-406e2973cff3819cb1/img/latte.jpg. Stock photo, not a photo of this business.
+
+- sunflower-beans.jpg
+  Caption: Coffee beans. Stock photo.
+  Source: Pool copy: concepts/foam-coffee-406e2973cff3819cb1/img/beans.jpg. Stock photo, not a photo of this business.
+
+- sunflower-sandwich.jpg
+  Caption: A ham sandwich with lettuce and tomato beside a drink. Stock photo.
+  Source: Pool copy: concepts/cottage-cafe-404e2973cff38143ba/img/cottage2.jpg. Stock photo, not a photo of this business.
+

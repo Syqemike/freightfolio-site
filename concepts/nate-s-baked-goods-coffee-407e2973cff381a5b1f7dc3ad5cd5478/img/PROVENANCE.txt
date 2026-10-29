@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Nate's Baked Goods & Coffee concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- bakery-case.jpg
+  Caption: Baked goods under a glass cover in a bakery. Stock photo.
+  Source: Pool copy: concepts/antoinette-bakery-cafe-406e2973cff381619b/img/hero.jpg. Stock photo, not a photo of this business.
+
+- bakery-cookies.jpg
+  Caption: Chocolate chip cookies with a French press of coffee on a wooden table. Stock photo.
+  Source: Pool copy: concepts/antoinette-bakery-cafe-406e2973cff381619b/img/cookies.jpg. Stock photo, not a photo of this business.
+
+- bakery-rolls.jpg
+  Caption: Cinnamon rolls on bakery racks. Stock photo.
+  Source: Pool copy: concepts/antoinette-bakery-cafe-406e2973cff381619b/img/rolls.jpg. Stock photo, not a photo of this business.
+

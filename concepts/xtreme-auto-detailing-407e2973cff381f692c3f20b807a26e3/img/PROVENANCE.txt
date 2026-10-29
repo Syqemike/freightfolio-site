@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Xtreme Auto Detailing concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- detail-wash.jpg
+  Caption: A car wheel covered in foam with a wash bucket and mitts. Stock photo.
+  Source: Pool copy: concepts/b-rads-auto-detailing-402e297381fe88f6/img/wash.jpg. Stock photo, not a photo of this business.
+
+- detail-interior.jpg
+  Caption: A car interior being deep cleaned. Stock photo.
+  Source: Pool copy: concepts/b-rads-auto-detailing-402e297381fe88f6/img/interior-clean.jpg. Stock photo, not a photo of this business.
+
+- detail-headlight.jpg
+  Caption: Headlight restoration with a polisher. Stock photo.
+  Source: Pool copy: concepts/b-rads-auto-detailing-402e297381fe88f6/img/headlight.jpg. Stock photo, not a photo of this business.
+
+- detail-seats.jpg
+  Caption: A car seat being cleaned. Stock photo.
+  Source: Pool copy: concepts/b-rads-auto-detailing-402e297381fe88f6/img/seats.jpg. Stock photo, not a photo of this business.
+

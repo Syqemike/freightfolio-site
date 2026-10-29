@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Smiley Family Chiropractic concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- chiro-adjustment.jpg
+  Caption: A therapist adjusting a woman lying on her side on a treatment table. Stock photo.
+  Source: Pool copy: concepts/aaron-chiropractic-clinic-406e2973cff381a284/img/hero.jpg. Stock photo, not a photo of this business.
+
+- chiro-seated.jpg
+  Caption: A therapist giving a seated woman a spinal and back adjustment in a clinic. Stock photo.
+  Source: Pool copy: concepts/aaron-chiropractic-clinic-406e2973cff381a284/img/wellness2.jpg. Stock photo, not a photo of this business.
+
+- chiro-instrument.jpg
+  Caption: A chiropractor using a handheld adjustment instrument on a seated woman's neck. Stock photo.
+  Source: Pool copy: concepts/aaron-chiropractic-clinic-406e2973cff381a284/img/wellness3.jpg. Stock photo, not a photo of this business.
+
