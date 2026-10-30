@@ -1,4 +1,4 @@
-PHOTOS (all stock photos reused from the bestbody-fitness-training-studio-404e2973cff38163b0 concept pool; none are photos of DTO CrossFit):
-- hero.jpg: A woman doing squats with a barbell in a gym. Stock photo, labeled as such on every page.
-- training.jpg: Athletes exercising on air bikes in a gym. Stock photo, labeled as such on every page.
-- weights.jpg: Heavy dumbbells on a gym rack. Stock photo, labeled as such on every page.
+PHOTOS (rebuild run111, 2026-10-30):
+- gym-barbell.jpg: REAL photo from DTO CrossFit's own website (dtocrossfit.com, uploads/2021/02/8G5A6037-2.jpg): an athlete lifting a barbell in the gym. Verified by viewing the image.
+- gym-kettlebells.jpg: REAL photo from DTO CrossFit's own website (dtocrossfit.com, uploads/2020/07/gym-47.jpg): kettlebells lined up on the gym floor. Verified by viewing the image.
+- weights.jpg: stock photo (heavy dumbbells on a gym rack), labeled as stock on every page.
