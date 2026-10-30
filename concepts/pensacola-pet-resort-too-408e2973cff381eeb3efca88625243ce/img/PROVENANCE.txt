@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Pensacola Pet Resort Too concept (Website Dev shift 2026-10-30 03:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero-pups.jpg: Two golden retriever puppies sitting in grass with flower petals. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img
+
+- img/cat-condo.jpg: A grey and white cat resting in a wicker basket. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img
+
+- img/happy-dog.jpg: A smiling golden retriever indoors. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img

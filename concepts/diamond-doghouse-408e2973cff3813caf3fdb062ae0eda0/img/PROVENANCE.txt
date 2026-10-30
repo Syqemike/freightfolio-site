@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Diamond Doghouse concept (Website Dev shift 2026-10-30 01:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A groomer with a black poodle on a grooming table. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/dog-culture-406e2973cff381058f/img
+
+- img/bernedoodle.jpg: A bernedoodle. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/dog-culture-406e2973cff381058f/img
+
+- img/brushed.jpg: A dog being brushed. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/dog-culture-406e2973cff381058f/img
