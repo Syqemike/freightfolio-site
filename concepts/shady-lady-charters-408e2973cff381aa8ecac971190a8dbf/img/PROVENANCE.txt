@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Shady Lady Charters concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/boat.jpg: A fishing boat traveling across the sea. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/seaplay-charters-405e2973cff381a5a2/img (Pexels 4810608; SWAPPED 2026-10-29 23:59: original Off the Hook boat photo carried a painted phone number on the hull that is not this business's number)
+
+- img/fisherman.jpg: A fisherman at sunrise. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/off-the-hook-charters-405e2973cff381ff84/img
+
+- img/lures.jpg: Fishing lures. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/off-the-hook-charters-405e2973cff381ff84/img

@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Buenos Aires Grill and Cafe concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: Empanadas served with a dipping sauce on lettuce. Stock photo. Public domain photo via Hippopx (empanadas), swapped in by Rebuild run105 wave 2 (2026-10-30) for the QA 2026-10-30 01:59 wrong-cuisine photo note; visually verified.
+
+- img/poboy.jpg: Grilled steak with onions and fries. Stock photo. Public domain photo via Hippopx (sizzling steak platter), swapped in by Rebuild run105 wave 2 (2026-10-30) for the QA 2026-10-30 01:59 wrong-cuisine photo note; visually verified.
+
+- img/burger.jpg: Grilled meat skewers with sides. Stock photo. Public domain photo via Hippopx (grilled meat skewers), swapped in by Rebuild run105 wave 2 (2026-10-30) for the QA 2026-10-30 01:59 wrong-cuisine photo note; visually verified.

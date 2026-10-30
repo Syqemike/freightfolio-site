@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Cheddar Box concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A food truck serving customers outdoors. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/chucks-cheesesteaks-404e2973cff381e68b/img
+
+- img/steak2.jpg: A sandwich with melted cheese and grilled vegetables. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/chucks-cheesesteaks-404e2973cff381e68b/img
+
+- img/truck3.jpg: A customer receiving food from a vendor at a street food truck. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/chucks-cheesesteaks-404e2973cff381e68b/img
