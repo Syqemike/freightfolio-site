@@ -1,6 +1,13 @@
-PHOTOS (all stock photos; none are photos of this business or its work):
-- photo-1.jpg: Guests dancing under warm lights (stock photo)
-- photo-2.jpg: Guests dancing on an illuminated dance floor (stock photo)
-- photo-3.jpg: A packed dance floor seen from the DJ booth (stock photo)
+PHOTOS (all real, from the photographer's own public website — Rebuild run112 supplement, 2026-10-30):
+- real-photographer.png: Patrick C holding his camera beside the Patrick C Photography logo.
+  Source: patrickcphotography.com homepage image (03714094-EBB6-47AD-8020-AD3B24735700-1024x747.png), viewed before use.
+- real-headshot-1.jpg: A studio headshot portrait with a white blazer.
+  Source: patrickcphotography.com headshots/portfolio image (DSC02670.jpg), viewed before use. Subject not named on the page.
+- real-headshot-2.jpg: A smiling studio headshot portrait.
+  Source: patrickcphotography.com headshots/portfolio image (Q3A4126.jpg), viewed before use. Subject not named on the page.
+Former stock dance-floor photos (photo-1/2/3.jpg) removed; no page references them.
+Files were obtained via the site's WordPress CDN mirror (i0.wp.com) because direct origin
+requests for /wp-content/uploads/ returned HTTP 502 through this network; the same files were
+verified on the origin portfolio/headshots pages by the 2026-10-30 live-browser sourcing check.
 RATING: no rating shown. See the release record flags for why the figure was omitted.
 CTA: phone and email. No verified online booking URL is in the record, so no Book Now button is shown.
