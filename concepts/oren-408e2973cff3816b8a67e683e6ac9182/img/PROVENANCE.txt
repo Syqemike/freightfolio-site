@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Oren concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: Seared scallops elegantly presented for fine dining. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/southwood-kitchen-404e2973cff381c380/img
+
+- img/southwood2.jpg: Scallops plated with asparagus, garnish, and sauce. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/southwood-kitchen-404e2973cff381c380/img
+
+- img/southwood3.jpg: Shrimp risotto with greens on a blue plate. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/southwood-kitchen-404e2973cff381c380/img

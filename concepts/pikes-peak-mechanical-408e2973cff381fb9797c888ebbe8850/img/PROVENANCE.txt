@@ -6,4 +6,4 @@ None of these photos are photos of this business, its staff, its premises, or it
 
 - img/pipe.jpg: Pipe and fitting work. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/true-plumb-406e2973cff381a7b2/img
 
-- img/work.jpg: Plumbing work in progress. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/true-plumb-406e2973cff381a7b2/img
+- img/work.jpg: A technician checking an air conditioning unit with gauges. Stock photo. Pexels 5463575, swapped in by Rebuild run105 (2026-10-30) for the QA 2026-10-29 23:59 HVAC photo-gap note; visually verified.
