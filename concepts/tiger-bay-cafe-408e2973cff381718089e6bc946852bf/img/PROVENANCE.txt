@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Tiger Bay Cafe or its products, services, or premises.
+- hero.jpg: Stock photo: A warm cafe interior with a laptop on a wooden table.
+- latte.jpg: Stock photo: A cappuccino with heart latte art in a blue cup.
+- beans.jpg: Stock photo: A burlap bag filled with roasted coffee beans.

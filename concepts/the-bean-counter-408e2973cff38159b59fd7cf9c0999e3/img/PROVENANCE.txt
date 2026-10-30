@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of The Bean Counter or its products, services, or premises.
+- hero.jpg: Stock photo: A consultant discussing plans with clients in an office.
+- paperwork.jpg: Stock photo: An agent reviewing paperwork with clients.
+- office.jpg: Stock photo: A consultation in an office setting.

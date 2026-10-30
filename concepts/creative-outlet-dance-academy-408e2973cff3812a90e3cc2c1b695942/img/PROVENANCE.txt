@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Creative Outlet Dance Academy or its products, services, or premises.
+- hero.jpg: Stock photo: An instructor leading a group dance session in a modern studio.
+- barre.jpg: Stock photo: A teacher helping two young dancers at a ballet barre in a mirrored studio.
+- tutus.jpg: Stock photo: Young dancers in pink tutus practicing ballet at a barre.
