@@ -1,4 +1,6 @@
-PHOTOS (all stock photos reused from the brick-mortar-venue-406e2973cff381d39e concept pool; none are photos of The Veranda):
-- hero.jpg: A DJ playing at a wedding reception in a barn venue. Stock photo, labeled as such on every page.
-- roses.jpg: Pink garden roses. Stock photo, labeled as such on every page.
-- sunflowers.jpg: Sunflowers in a field. Stock photo, labeled as such on every page.
+PHOTOS (Rebuild run113 supplement, 2026-10-30; index page real, services/visit galleries stock):
+- real-couple.jpg: a bride embracing a groom under a floral arch with a hanging chandelier. Real photo from the business's own website theverandasa.com homepage, viewed before use.
+- real-lounge.jpg: an interior lounge with teal chairs facing a fireplace. Real photo from theverandasa.com homepage, viewed before use (carries the photographer's Sun Gold Photography watermark, as published on the business's own site).
+- real-evening.jpg: the stone estate building lit in the evening, with tables on the lawn. Real photo from theverandasa.com homepage, viewed before use (carries the photographer's Caroline Studios watermark, as published on the business's own site).
+- roses.jpg / sunflowers.jpg: stock photos, used only on services.html and visit.html, labeled as stock on those pages.
+- hero.jpg (stock DJ reception) removed from the index; zero remaining references.

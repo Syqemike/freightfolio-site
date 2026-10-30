@@ -1,4 +1,7 @@
-PHOTOS (all stock photos reused from the downtown-yoga-ocean-springs-404e2973cff3813bbf concept pool; none are photos of Disko Lemonade Yoga):
-- hero.jpg: A group of adults doing yoga poses on mats in a bright indoor studio. Stock photo, labeled as such on every page.
-- yoga2.jpg: Adults practicing yoga poses in a modern, minimalist studio. Stock photo, labeled as such on every page.
-- yoga3.jpg: A group of adults practicing yoga together indoors. Stock photo, labeled as such on every page.
+PHOTOS (Rebuild run113 supplement, 2026-10-30; index page real, services/visit galleries stock):
+- real-fold.jpg: a woman in a seated forward fold on a yoga mat, holding her feet. Real photo from the business's own website diskolemonade.com homepage image data, viewed before use (WebP converted to JPEG for local hosting).
+- real-retreat-group.jpg: retreat guests seated together at a long table. Real photo from diskolemonade.com/retreats gallery, viewed before use (WebP converted to JPEG). Subjects are not named on the page.
+- real-retreat-hug.jpg: two retreat guests embracing outdoors in a grassy field. Real photo from diskolemonade.com/retreats gallery, viewed before use (WebP converted to JPEG). Subjects are not named on the page.
+- NOT used: a retreat spa-room photo from the same gallery (blue-lit hot tub with wine glasses) was viewed and set aside as off-brand for the studio page.
+- yoga2.jpg / yoga3.jpg: stock photos, used only on services.html and visit.html, labeled as stock on those pages.
+- hero.jpg (stock group yoga) removed from the index; zero remaining references.
