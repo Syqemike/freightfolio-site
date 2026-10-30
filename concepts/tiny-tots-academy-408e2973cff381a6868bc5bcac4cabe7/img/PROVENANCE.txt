@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Tiny Tots Academy concept (Website Dev shift 2026-10-30 01:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: Two children playing with wooden blocks and a toy train in a bright classroom. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/happy-times-preschool-405e2973cff381258f/img
+
+- img/bubbles.jpg: A young child reaching for soap bubbles in a playroom, with a climbing frame behind. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/happy-times-preschool-405e2973cff381258f/img
+
+- img/clay.jpg: Children modeling colored clay at a table in a classroom. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/happy-times-preschool-405e2973cff381258f/img

@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - The Old Glass Place concept (Website Dev shift 2026-10-30 01:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A DJ playing at a wedding reception in a decorated venue. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/deerfield-estates-venue-405e2973cff3819aa8/img
+
+- img/roses.jpg: Pink garden roses. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/deerfield-estates-venue-405e2973cff3819aa8/img
+
+- img/sunflowers.jpg: Sunflowers in a field. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/deerfield-estates-venue-405e2973cff3819aa8/img
