@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - The Clem Collaborative concept (Website Dev shift 2026-10-29 17:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A person organizing finances with a calculator, receipts, and notes at a desk. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/kristel-s-tax-accounting-405e2973cff3812cb7/img
+
+- img/tax2.jpg: A desk with financial documents, currency, a laptop, and a phone calculator. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/kristel-s-tax-accounting-405e2973cff3812cb7/img
+
+- img/tax3.jpg: A hand on a 1040 tax form with a calculator on a desk. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/kristel-s-tax-accounting-405e2973cff3812cb7/img

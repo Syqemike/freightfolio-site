@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Dance Center of Spokane concept (Website Dev shift 2026-10-29 17:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: An instructor leading a group dance session in a modern studio. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/dancers-studio-405e2973cff381f192/img
+
+- img/barre.jpg: A teacher helping two young dancers at a ballet barre in a mirrored studio. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/dancers-studio-405e2973cff381f192/img
+
+- img/tutus.jpg: Young dancers in pink tutus practicing ballet at a barre. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/dancers-studio-405e2973cff381f192/img

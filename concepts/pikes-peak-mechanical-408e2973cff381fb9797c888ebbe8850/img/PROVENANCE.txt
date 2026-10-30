@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Pikes Peak Mechanical concept (Website Dev shift 2026-10-29 17:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A plumber working on a pump with a wrench. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/true-plumb-406e2973cff381a7b2/img
+
+- img/pipe.jpg: Pipe and fitting work. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/true-plumb-406e2973cff381a7b2/img
+
+- img/work.jpg: Plumbing work in progress. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/true-plumb-406e2973cff381a7b2/img

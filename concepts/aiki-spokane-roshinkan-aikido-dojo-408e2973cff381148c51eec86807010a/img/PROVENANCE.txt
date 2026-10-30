@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Aiki Spokane Roshinkan Aikido Dojo concept (Website Dev shift 2026-10-29 17:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/class-hero.jpg: Students in white uniforms practicing with an instructor in a bright studio. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd-batch31b-flex-studio-martial-arts-402e2973cff38175a540e9cfea9ce8ea/concepts/flex-studio-martial-arts-402e2973cff38175a540e9cfea9ce8ea/img
+
+- img/class-bow.jpg: Two practitioners bowing to each other while seated students watch in a studio. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd-batch31b-flex-studio-martial-arts-402e2973cff38175a540e9cfea9ce8ea/concepts/flex-studio-martial-arts-402e2973cff38175a540e9cfea9ce8ea/img
+
+- img/weapons-practice.jpg: A practitioner practicing with a bo staff in a studio. Stock photo. Source pool: /home/hatch/workspace/ff-worktrees/wd-batch31b-flex-studio-martial-arts-402e2973cff38175a540e9cfea9ce8ea/concepts/flex-studio-martial-arts-402e2973cff38175a540e9cfea9ce8ea/img

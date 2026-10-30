@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Fairhope Roasting Company concept (Website Dev shift 2026-10-29 17:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/beans.jpg: Roasted coffee beans. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/atticus-coffee-gifts-405e2973cff3812895dbc52b6d62d4fd/img
+
+- img/p2-cafecito.jpg: A cup of espresso. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/50-elm-cafe-spirits-405e2973cff381baa57eedff87c6a5a4/img
+
+- img/p2-hero.jpg: A baked quiche served with fresh salad. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/cottage-cafe-404e2973cff38143ba/img
