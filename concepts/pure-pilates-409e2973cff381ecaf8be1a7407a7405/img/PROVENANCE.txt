@@ -1,4 +1,4 @@
-PHOTOS (all stock photos reused from the downtown-yoga-ocean-springs-404e2973cff3813bbf concept pool; none are photos of Pure Pilates):
-- hero.jpg: A group of adults doing yoga poses on mats in a bright indoor studio. Stock photo, labeled as such on every page.
-- yoga2.jpg: Adults practicing yoga poses in a modern, minimalist studio. Stock photo, labeled as such on every page.
-- yoga3.jpg: A group of adults practicing yoga together indoors. Stock photo, labeled as such on every page.
+PHOTOS (rebuild run111, 2026-10-30):
+- studio-session.jpg: REAL photo from Pure Pilates' own website (purepilatespensacola.com, Studio10-1920w.jpg): a Pilates session in the studio. Verified by viewing the image.
+- studio-equipment.jpg: REAL photo from Pure Pilates' own website (purepilatespensacola.com, Studio06-1920w.jpg): GYROTONIC equipment in the studio, with GYROTONIC Pensacola wall art. Verified by viewing the image.
+- yoga3.jpg: stock photo (a group of adults practicing yoga together indoors), labeled as stock on every page.

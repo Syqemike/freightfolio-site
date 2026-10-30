@@ -1,4 +1,5 @@
-PHOTOS (all stock photos reused from the at-the-beach-weddings-405e2973cff381e3be concept pool; none are photos of Ocken Photography):
-- hero.jpg: A beach wedding ceremony with pink and yellow floral centerpieces. Stock photo, labeled as such on every page.
-- florals.jpg: A pastel rose bouquet. Stock photo, labeled as such on every page.
-- bouquet.jpg: A pink ranunculus bouquet. Stock photo, labeled as such on every page.
+PHOTOS (rebuild run111, 2026-10-30; all real, from the business's own website ockenphotography.com):
+- work-wedding-bw.jpg: black and white wedding portrait (blog uploads/2024/09/003-Ocken-Wedding-Day.jpg, EXIF "Weddings by Chris Ocken"). Verified by viewing the image.
+- work-wedding-umbrella.jpg: wedding couple under an umbrella in the rain (blog uploads/2024/09/013-Ocken-Wedding-Day.jpg, EXIF "Weddings by Chris Ocken"). Verified by viewing the image.
+- work-portrait.jpg: professional portrait photograph (blog uploads/2024/09/005-2023-Cory-Wesley.jpg, EXIF "Professional Portraits"). Client name from file metadata is NOT shown on the page. Verified by viewing the image.
+Prior stock photos (hero/florals/bouquet) removed.
