@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Mulberry & Lime or its products, services, or premises.
+- hero.jpg: Stock photo: Charm bracelets worn on a wrist.
+- necklace.jpg: Stock photo: A diamond pendant necklace.
+- ring.jpg: Stock photo: A jeweled ring resting on a red rose.

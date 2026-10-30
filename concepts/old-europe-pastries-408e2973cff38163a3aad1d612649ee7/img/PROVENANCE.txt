@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Old Europe Pastries or its products, services, or premises.
+- table.jpg: Stock photo: Coffee and pastries on a wooden table in a cafe.
+- pastry.jpg: Stock photo: A pastry.
+- beans.jpg: Stock photo: Coffee beans.
