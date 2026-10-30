@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Metal Art Studio Fine Jewelry concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- bracelets.jpg
+  Caption: Charm bracelets worn on a wrist. Stock photo.
+  Source: Pool copy: better-jewelers-406e2973cff38196bb/img/hero.jpg. Stock photo, not a photo of this business.
+
+- ring.jpg
+  Caption: A jeweled ring resting on a red rose. Stock photo.
+  Source: Pool copy: better-jewelers-406e2973cff38196bb/img/ring.jpg. Stock photo, not a photo of this business.
+
+- necklace.jpg
+  Caption: A diamond pendant necklace. Stock photo.
+  Source: Pool copy: better-jewelers-406e2973cff38196bb/img/necklace.jpg. Stock photo, not a photo of this business.
+

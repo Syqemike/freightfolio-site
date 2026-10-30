@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Puppy Love Daycare concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- gate-dogs.jpg
+  Caption: Two dogs looking over a gate at a boarding facility. Stock photo.
+  Source: Pool copy: all-pets-boarding-resort-fd56eb5b774f/img/gate-dogs.jpg. Stock photo, not a photo of this business.
+
+- happy-dog.jpg
+  Caption: A happy dog looking at the camera. Stock photo.
+  Source: Pool copy: all-pets-boarding-resort-fd56eb5b774f/img/happy-dog.jpg. Stock photo, not a photo of this business.
+
+- pups.jpg
+  Caption: Two golden puppies sitting on grass with flower petals. Stock photo.
+  Source: Pool copy: all-pets-boarding-resort-fd56eb5b774f/img/hero-pups.jpg. Stock photo, not a photo of this business.
+

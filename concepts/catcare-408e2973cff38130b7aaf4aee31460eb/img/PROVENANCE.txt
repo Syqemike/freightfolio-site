@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - CatCare concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- cat-exam.jpg
+  Caption: A tabby-and-white cat being gently examined on a blue vet exam table. Stock photo.
+  Source: Pool copy: fayette-veterinary-clinic-406e2973cff381eca5/img/cat-vet-check.jpg. Stock photo, not a photo of this business.
+
+- cat-exam-2.jpg
+  Caption: A veterinarian examining a light-brown cat on an exam table. Stock photo.
+  Source: Pexels stock photo downloaded 2026-10-29 and verified by viewing before use. Stock photo, not a photo of this business.
+
+- cat-exam-3.jpg
+  Caption: A veterinarian in blue scrubs examining a fluffy white cat. Stock photo.
+  Source: Pexels stock photo downloaded 2026-10-29 and verified by viewing before use. Stock photo, not a photo of this business.
+

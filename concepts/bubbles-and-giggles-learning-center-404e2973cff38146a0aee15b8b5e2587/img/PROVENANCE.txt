@@ -1,0 +1,16 @@
+PHOTO PROVENANCE - Bubbles And Giggles Learning Center concept site (Website Dev shift 2026-10-29)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- hero.jpg
+  Caption: Two children playing with wooden blocks and a toy train in a bright classroom. Stock photo.
+  Source: Pool copy: little-learner-s-lodge-406e2973cff38180af/img/hero.jpg. Stock photo, not a photo of this business.
+
+- bubbles.jpg
+  Caption: A young child reaching for soap bubbles in a playroom, with a climbing frame behind. Stock photo.
+  Source: Pool copy: little-learner-s-lodge-406e2973cff38180af/img/bubbles.jpg. Stock photo, not a photo of this business.
+
+- clay.jpg
+  Caption: Children modeling colored clay at a table in a classroom. Stock photo.
+  Source: Pool copy: little-learner-s-lodge-406e2973cff38180af/img/clay.jpg. Stock photo, not a photo of this business.
+
