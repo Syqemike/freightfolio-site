@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Latisha Hardy Dance & Co concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A dancer performing on stage in colorful traditional attire. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/ballet-folklorico-mexico-lindo-404e2973cff38161aa/img (Pexels 26843172; REPLACED 2026-10-29 23:59: original StaverDanceSport hero was the same scene as Turning Pointe Dance hero in this batch, found by perceptual hash)
+
+- img/floor.jpg: Adults dancing on a brightly lit dance floor. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/staverdancesport-405e2973cff38158b5/img
+
+- img/couple.jpg: A couple dancing at a celebration. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/staverdancesport-405e2973cff38158b5/img
