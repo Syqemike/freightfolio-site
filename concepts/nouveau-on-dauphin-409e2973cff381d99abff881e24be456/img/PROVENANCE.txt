@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Nouveau on Dauphin or its products, services, or premises.
+- session3.jpg: Stock photo: A relaxing massage session.
+- hero.jpg: Stock photo: A massage therapy session.
+- session2.jpg: Stock photo: A massage therapy session in progress.

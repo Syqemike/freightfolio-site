@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Stewart Auto Services or its products, services, or premises.
+- hero.jpg: Stock photo: A mechanic repairing a car undercarriage outdoors.
+- auto3b.jpg: Stock photo: A man working under a car hood.
+- auto1b.jpg: Stock photo: A mechanic checking a car engine.

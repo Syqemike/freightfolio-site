@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Foxy Lady Cafe or its products, services, or premises.
+- hero.jpg: Stock photo: Golden biscuits stacked on a wooden plate.
+- coffeecup2.jpg: Stock photo: A stack of pancakes topped with raspberries and drizzled with syrup.
+- coffeecup3.jpg: Stock photo: A breakfast plate with sausage, pastry, and sauce.

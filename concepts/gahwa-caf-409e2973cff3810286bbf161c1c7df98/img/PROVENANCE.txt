@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Gahwa Café or its products, services, or premises.
+- hero.jpg: Stock photo: Latte art coffee, a pastry, and an espresso machine on a countertop.
+- catisland2.jpg: Stock photo: A cinnamon roll with iced coffee on a marble table.
+- catisland3.jpg: Stock photo: Coffee and pastries on a wooden table in a cafe.
