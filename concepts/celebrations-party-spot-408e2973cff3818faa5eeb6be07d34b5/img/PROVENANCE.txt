@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Celebrations Party Spot concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A beach wedding ceremony with pink and yellow floral centerpieces. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/at-the-beach-weddings-405e2973cff381e3be/img
+
+- img/florals.jpg: A pastel rose bouquet. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/at-the-beach-weddings-405e2973cff381e3be/img
+
+- img/bouquet.jpg: A pink ranunculus bouquet. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/at-the-beach-weddings-405e2973cff381e3be/img

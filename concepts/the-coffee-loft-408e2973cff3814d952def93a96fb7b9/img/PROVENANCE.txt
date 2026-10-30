@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - The Coffee Loft concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: Golden baked quiche served with fresh salad on a ceramic plate. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/mockingbird-cafe-406e2973cff38150bc/img
+
+- img/cottage2.jpg: A ham sandwich with lettuce and tomato beside a drink. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/mockingbird-cafe-406e2973cff38150bc/img
+
+- img/cottage3.jpg: Fresh arugula and tomato salad served with quiche. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/mockingbird-cafe-406e2973cff38150bc/img

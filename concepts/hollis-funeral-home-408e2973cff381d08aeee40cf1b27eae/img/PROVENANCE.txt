@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Hollis Funeral Home concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A garden path lined with flower beds. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/jackson-memorial-funeral-service-404e2973cff3818da9/img
+
+- img/roses.jpg: Pink garden roses. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/jackson-memorial-funeral-service-404e2973cff3818da9/img
+
+- img/sympathy-bouquet.jpg: A pale peach and cream bouquet. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/milestone-floral-406e2973cff381fc9e/img
