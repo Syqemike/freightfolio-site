@@ -1,4 +1,5 @@
-PHOTOS (all stock photos reused from the brick-mortar-venue-406e2973cff381d39e concept pool; none are photos of Windsor Manor Wedding Venue):
-- hero.jpg: A DJ playing at a wedding reception in a barn venue. Stock photo, labeled as such on every page.
-- roses.jpg: Pink garden roses. Stock photo, labeled as such on every page.
-- sunflowers.jpg: Sunflowers in a field. Stock photo, labeled as such on every page.
+PHOTOS (real photos of Windsor Manor Wedding Venue, viewed before use; from the venue's own public website wmaugusta.com, fetched 2026-10-31):
+- venue-dusk.jpg: A couple walking toward the Tudor venue building at dusk, its windows lit. Source: https://static.wixstatic.com/media/fb92f7_10e8a563615e4143a1a37f39d1904953~mv2.jpg (wmaugusta.com home page).
+- venue-gardens.jpg: A bride and groom in the venue gardens. Source: https://static.wixstatic.com/media/fb92f7_935f2684a3b14d578ca5f53b818564b2~mv2.jpg (wmaugusta.com gallery page).
+- venue-exterior.jpg: The Tudor venue building in daylight, seen across the lawn. Source: https://static.wixstatic.com/media/fb92f7_e05e684a53414eaba1e11e4308eb60f7~mv2.jpg (wmaugusta.com home page).
+No stock photos remain on this concept. Prior stock files (hero.jpg: DJ at a barn reception; roses.jpg; sunflowers.jpg) were removed after a zero-reference check across all 3 pages.
