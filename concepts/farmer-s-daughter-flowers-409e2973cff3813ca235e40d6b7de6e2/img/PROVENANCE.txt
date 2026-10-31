@@ -1,4 +1,5 @@
-PHOTOS (all stock photos reused from the a-village-of-flowers-405e2973cff3812184 concept pool; none are photos of Farmer's Daughter Flowers):
-- hero.jpg: A bouquet of peach roses and yellow poppies. Stock photo, labeled as such on every page.
-- ranunculus.jpg: Pale pink ranunculus flowers. Stock photo, labeled as such on every page.
-- bouquet.jpg: A woman holding a bouquet of flowers. Stock photo, labeled as such on every page.
+PHOTOS:
+- real-bouquet.jpg: A bouquet of red and pink roses, ranunculus, and purple flowers wrapped in red paper. REAL photo from the business's own site thefarmersdaughterflowers.com (viewed before use).
+- real-workshop.jpg: Guests making evergreen wreaths at a workshop table. REAL photo from the business's own site thefarmersdaughterflowers.com (viewed before use).
+- real-wedding.jpg: A wedding ceremony under a white-draped tent with white and green florals along the aisle. REAL photo from the business's own site thefarmersdaughterflowers.com (viewed before use).
+- ranunculus.jpg, bouquet.jpg: Stock photos, labeled as such on services/visit pages (unchanged).
