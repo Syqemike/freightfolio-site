@@ -1,0 +1,5 @@
+PHOTOS (all Pexels stock photos, fetched 2026-10-31 from a Pexels search for computer repair, viewed before use; none are photos of L.A. Computers and Cellular; Pexels License, free to use):
+- repair.jpg: Pexels 4705603: Two people working on an open desktop computer case with screwdrivers.
+- phone.jpg: Pexels 6755075: A technician repairing a phone with a small screwdriver.
+- build.jpg: Pexels 31854240: A person working inside an open custom PC case.
+All three are labeled as stock photos on every page.
