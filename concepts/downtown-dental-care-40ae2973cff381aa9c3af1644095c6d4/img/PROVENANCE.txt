@@ -1,0 +1,4 @@
+PHOTOS (all stock photos from verified stock pools; none are photos of Downtown Dental Care):
+- checkup.jpg: A dental checkup. Stock photo, labeled as such on every page.
+- exam.jpg: A dental examination. Stock photo, labeled as such on every page.
+- treatment.jpg: Dental treatment. Stock photo, labeled as such on every page.
