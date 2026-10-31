@@ -2,3 +2,9 @@ PHOTOS (all stock photos reused from the brulee-bakery-404e2973cff38178a6 concep
 - hero.jpg: A cafe table with a croissant, coffee, and a brownie. Stock photo, labeled as such on every page.
 - brulee2.jpg: Chocolate chip cookies with a French press of coffee on a wooden table. Stock photo, labeled as such on every page.
 - brulee3.jpg: Baked goods under a glass cover in a bakery. Stock photo, labeled as such on every page.
+
+REAL PHOTOS ADDED 2026-10-31 (run115 photo supplement, viewed before use; from the Restaurantji gallery for Lilah's Bakery, Shreveport — lilahsbakery.com was down during the check):
+- lilahs-exterior.jpg: The red building with the "The area's best King Cakes" banner and Lilah's logo. Source: https://www.restaurantji.com/la/shreveport/lilahs-bakery-/photos/ (CDN image v2Y93OCZyB.jpg).
+- lilahs-king-cake-making.jpg: King cake dough pieces being filled on a steel table. Same gallery (vEZNVXFR3W.jpg).
+- lilahs-fillings.jpg: Tubs of king cake fillings labeled Cream Cheese, Cinnamon 'n Sugar, Raspberry, Chocolate. Same gallery (sNe6d01bRD.jpg).
+Index page now carries these 3 real photos; services.html and visit.html still use the labeled stock files above.

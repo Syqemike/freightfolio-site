@@ -2,3 +2,9 @@ PHOTOS (all stock photos reused from the atticus-coffee-gifts-405e2973cff3812895
 - latte.jpg: A latte. Stock photo, labeled as such on every page.
 - beans.jpg: Coffee beans. Stock photo, labeled as such on every page.
 - pastry.jpg: A pastry. Stock photo, labeled as such on every page.
+
+REAL PHOTOS ADDED 2026-10-31 (run115 photo supplement, viewed before use; from the Restaurantji gallery for Coffee Culture, Bay St. Louis):
+- coffee-drink.jpg: Blended coffee drink with whipped cream in a Coffee Culture sleeve, inside the shop. Source: https://www.restaurantji.com/ms/bay-saint-louis/coffee-culture-/photos/ (CDN image WoyHFyrxlE.jpg).
+- coffee-exterior.jpg: Storefront with 1113 beside the glass doors, turquoise pendant lights, Coffee Culture Bay St. Louis wall sign. Same gallery (hSRaQfhU0p.jpeg).
+- coffee-waffle-sandwich.jpg: Coffee Culture cup and waffle breakfast sandwich with egg on a tray by the window. Same gallery (SocchEXI2b.jpg).
+Index page now carries these 3 real photos; services.html and visit.html still use labeled stock.

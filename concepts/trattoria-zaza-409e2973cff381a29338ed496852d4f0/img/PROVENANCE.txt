@@ -2,3 +2,9 @@ PHOTOS (all stock photos reused from the aroma-2-pizza-and-pasta-italian-restaur
 - hero.jpg: A hand lifting a pepperoni pizza slice with melted cheese, with a red drink in the foreground. Stock photo, labeled as such on every page.
 - display.jpg: Pizzas on trays in a glass display case. Stock photo, labeled as such on every page.
 - table.jpg: Pizzas on a wooden table with a pizza cutter. Stock photo, labeled as such on every page.
+
+REAL PHOTOS ADDED 2026-10-31 (run115 photo supplement, viewed before use; from the Restaurantji gallery for the 207A 20th St N, Birmingham listing — page title, name, address, and phone (205) 202-6207 match Trattoria Zaza; the storefront sign itself reads Trattoria ZA ZA):
+- zaza-storefront.jpg: Storefront with green hanging "Trattoria ZA ZA" sign, black awning, patio tables. Source: https://www.restaurantji.com/al/birmingham/trattoria-centrale-/photos/ (CDN image clWMuEqPMG.jpg).
+- zaza-pasta-meatballs.jpg: Thick pasta with meatballs in tomato sauce, basil, grated cheese, against a green paneled wall. Same gallery (kSepVIxyPf.jpg).
+- zaza-pasta-pesto.jpg: Pasta with red sauce, pesto, arugula, shaved cheese. Same gallery (Qpz8IdMQG5.jpg).
+Index page (hero + gallery) now carries these 3 real photos; services.html and visit.html still use labeled stock.
