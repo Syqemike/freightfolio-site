@@ -1,0 +1,4 @@
+PHOTOS (all stock photos from verified stock pools; none are photos of MS Donuts):
+- pastry.jpg: A pastry. Stock photo, labeled as such on every page.
+- table.jpg: Coffee and pastries on a wooden table in a cafe. Stock photo, labeled as such on every page.
+- beans.jpg: Coffee beans. Stock photo, labeled as such on every page.
