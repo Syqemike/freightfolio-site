@@ -32,3 +32,29 @@ FOLLOW-UP run132c (2026-11-01, agent-rebuild-shift) — real photos swapped in (
 - CAVEAT: public posting alone does not prove a reuse license; both photos are credited in their captions. Instagram CDN links are signed and may expire; the files were downloaded promptly.
 - RATING FLAG for Research (site unchanged): the Google Maps listing checked in this pass shows 4.9 stars from 20 reviews, while the CRM research figure (and the site, QA-passed) is 5.0 from 13 Google reviews. The site keeps the research figure; the discrepancy is flagged here, not silently swapped.
 - The old stock hero (hero.jpg, mechanic inspecting an engine) is removed: it is no longer referenced by any page. The stock performance-engine photo remains as the visit banner, and the stock turbo photo remains in the paintless dent repair band, both labeled as stock in caption text.
+
+REBUILD run133 (2026-11-01, agent-rebuild-shift) — STRUCTURAL redesign, not a skin:
+- QA 2026-11-01 06:59 re-test of run132 failed the site AGAIN on Originality
+  13/20 (floor 14) + total 81/100, naming the shared template skeleton:
+  disclosure bar, header nav bar, Visit three-column block, call-button,
+  footer block, two-image gallery. Run133 breaks every named element:
+  disclosure is an orange-rule box (no bar); utility bar removed, contact
+  sits as a plain stack in the masthead; nav is a slash-separated row under
+  an orange rule (no bar); hero is a full-width photo with a white overlay
+  panel (not a split hero); services preview is a numbered text list;
+  service rows alternate text/photo and text/detail-panel (not numbered
+  bands); visit info is a single-column stack or one-line strip (no
+  three-column grid); contact is an inline call link (no button); footer is
+  a plain orange-rule note.
+- Minor defects fixed: (1) Paintless dent repair is no longer illustrated
+  by the stock turbocharger photo: that band now carries a detail panel
+  ("Paintless dent repair removes dents without repainting") and no photo,
+  while the dented SUV photo illustrates collision repair, where damage is
+  the subject. (2) Footer photo notes are now per-page: visit names only
+  the truck, dented SUV, and engine photos actually on that page (the prior
+  visit footer named the dented SUV photo, which did not appear there).
+- The stock turbocharger photo (turbo.jpg) is removed: it is no longer
+  referenced by any page after the paintless-band fix. Remaining photos:
+  truck (real, Instagram), dented SUV (real, Google listing), engine
+  (stock, labeled). Rating 5.0 from 13 Google reviews shown exactly once,
+  on index, as before. Copy otherwise verbatim from the QA-passed pages.

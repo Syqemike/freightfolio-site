@@ -28,3 +28,26 @@ FOLLOW-UP run132b (2026-11-01, agent-rebuild-shift) — real photos swapped in (
 - Trout Trilby gallery photo: the photo shows a plated trout fillet with a creamy topping and microgreens. Source: the restaurant's own dinner menu page (https://trilbysoceansprings.com/dinner/), file https://trilbysoceansprings.com/wp-content/uploads/2024/08/trout-trilby-1024x683.webp, labeled "Trout Trilby" and placed with the house-specialty trout topped with signature Crabmeat au gratin. Converted from WebP to JPG for the site (trout-trilby.jpg, 1024x683). Credited to the restaurant's own website in its caption.
 - CAVEAT: public posting alone does not prove a reuse license; both listing/own-site photos are credited in their captions.
 - The old stock hero (hero.jpg, shrimp etouffee) is removed: it is no longer referenced by any page. Gallery stock photos (poboy, sub) remain, labeled as stock in caption text.
+
+REBUILD run133 (2026-11-01, agent-rebuild-shift) — STRUCTURAL redesign, not a skin:
+- QA 2026-11-01 06:59 re-test of run132 failed the site AGAIN on Originality
+  13/20 (floor 14) + total 82/100, naming the shared template skeleton:
+  disclosure bar, header nav bar, Visit three-column block, call-button,
+  footer block, two-image gallery. Run133 breaks every named element:
+  disclosure is a centered italic note (no bar); header is a centered brand
+  with a dot-separated nav row (no bar); hero is a split text/photo layout
+  (not a full-width band); menu groups stack vertically with hairline
+  separators (not a board/grid); gallery is a three-photo unequal strip;
+  visit info is a single-column stack (no three-column grid); contact is an
+  inline call link (no button); footer is a centered hairline note.
+- Minor defect fixed: footer photo notes are now per-page (index/services
+  name the storefront + Trout Trilby + stock sandwiches actually on those
+  pages; visit names only the Trout Trilby + stock sandwiches on that page).
+  The prior footers named the Trout Trilby photo on index/services and the
+  storefront on visit, where those photos do not appear.
+- Copy kept verbatim from the QA-passed pages. One caption neutralized:
+  the Trout Trilby caption no longer claims a topping (prior caption said
+  "topped with Crabmeat au gratin"); it now reads as a photo of the dish
+  from the restaurant's own website.
+- Photos unchanged (storefront real OpenTable, Trout Trilby real own site,
+  po boy + sub stock labeled). No rating shown (OpenTable counts vary).

@@ -9,65 +9,47 @@
 *{box-sizing:border-box}img{max-width:100%}
 body{margin:0;font-family:Georgia,'Times New Roman',serif;background:#fbf6ec;color:#22302b}
 a{color:#0f5a52}
-.disclosure{background:#0f5a52;color:#fff;font-size:13px;margin:0;padding:10px 4%}
-.topbar{background:#0f5a52;color:#fff;padding:16px 4% 14px;display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
-.brand{font-size:32px;font-weight:bold;letter-spacing:.01em}
-.topbar nav a{color:#fff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:15px;margin-left:20px}
-.topbar nav b{font-family:Arial,Helvetica,sans-serif;font-size:15px;margin-left:20px;text-decoration:underline}
-.hero img{width:100%;height:560px;object-fit:cover;display:block}
-.cap{font-size:13px;color:#5c665f;margin:0;padding:8px 4% 0;font-family:Arial,Helvetica,sans-serif}
-.headline{padding:36px 4% 10px}
-.kicker{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#0f5a52;margin:0 0 8px;font-weight:bold}
-.headline h1{font-size:52px;line-height:1.05;margin:0 0 14px}
-.lede{font-size:20px;line-height:1.55;max-width:760px;margin:0}
-.about{display:grid;grid-template-columns:1.5fr 1fr;gap:36px;padding:34px 4% 40px;align-items:start}
-.about img{width:100%;height:380px;object-fit:cover;display:block}
-h2{font-size:30px;margin:0 0 14px}
+.tb-wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+.tb-rule{border:0;border-top:3px solid #0f5a52;margin:0}
+.tb-brand{text-align:center;font-size:42px;font-weight:bold;letter-spacing:.01em;padding:22px 0 6px}
+.tb-nav{text-align:center;font-family:Arial,Helvetica,sans-serif;font-size:15px;padding:0 0 14px}
+.tb-nav a{color:#22302b;text-decoration:none;margin:0 10px}
+.tb-nav span{color:#22302b;margin:0 10px;text-decoration:underline;font-weight:bold}
+.tb-disc{text-align:center;font-style:italic;font-size:13px;color:#5c665f;margin:0 0 26px;font-family:Arial,Helvetica,sans-serif}
+.tb-hero{display:grid;grid-template-columns:5fr 7fr;gap:36px;align-items:center;padding:10px 0 34px}
+.tb-hero img{width:100%;height:520px;object-fit:cover;display:block}
+.tb-kicker{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#0f5a52;margin:0 0 10px;font-weight:bold}
+.tb-hero h1{font-size:50px;line-height:1.05;margin:0 0 14px}
+.tb-lede{font-size:20px;line-height:1.55;margin:0 0 16px}
+.tb-call{font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:17px}
 p,li{font-size:17px;line-height:1.6}
-.menuboard{background:#0f5a52;color:#fff;padding:44px 4%}
-.menuboard h2{color:#fff}
-.menu{display:grid;grid-template-columns:1fr 1fr;gap:8px 48px}
-.group{border-top:2px solid #7fb5ae;padding:18px 0}
-.group h3{font-size:22px;margin:0 0 6px;color:#ffe9b8}
-.group p{margin:0;color:#e8f2ef}
-.photorow{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:36px 4%}
-.photorow img{width:100%;height:340px;object-fit:cover;display:block}
-.photorow.single{grid-template-columns:1fr 1fr}
-.banner img{width:100%;height:380px;object-fit:cover;display:block}
-.visitband{background:#22302b;color:#fff;padding:44px 4%}
-.visitband h2{color:#fff}
-.visitband a{color:#ffe9b8}
-.visitgrid{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:32px}
-.visitgrid h3{color:#ffe9b8;font-size:19px;margin:0 0 8px}
-.visitgrid p{margin:0 0 10px;color:#e8f2ef}
-.contact{padding:36px 4%}
-.cta{display:inline-block;background:#0f5a52;color:#fff;padding:13px 24px;text-decoration:none;font-weight:bold;font-family:Arial,Helvetica,sans-serif;border-radius:2px}
-footer{border-top:4px solid #0f5a52;padding:20px 4%;font-size:13px;color:#5c665f;font-family:Arial,Helvetica,sans-serif}
-@media(max-width:700px){.about,.menu,.photorow,.visitgrid{grid-template-columns:1fr}.hero img{height:380px}.headline h1{font-size:34px}.topbar{display:block}.about img{height:280px}.banner img{height:260px}}
+h2{font-size:30px;margin:0 0 14px}
+.tb-sec{padding:30px 0 36px;border-top:1px solid #c9c2ae}
+.tb-strip{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:20px;padding:6px 0 36px}
+.tb-strip img{width:100%;height:300px;object-fit:cover;display:block}
+.tb-strip img.tall{height:300px}
+.cap{font-size:13px;color:#5c665f;margin:8px 0 0;font-family:Arial,Helvetica,sans-serif}
+.tb-menu p{margin:0 0 22px}
+.tb-menu h3{font-size:22px;margin:0 0 6px}
+.tb-menu .grp{padding:20px 0;border-top:1px solid #c9c2ae}
+.tb-menu .grp:first-child{border-top:0;padding-top:0}
+.tb-visit{display:grid;grid-template-columns:7fr 5fr;gap:36px;align-items:start;padding:10px 0 34px}
+.tb-visit img{width:100%;height:520px;object-fit:cover;display:block}
+.tb-info p{margin:0 0 12px}
+.tb-foot{border-top:1px solid #c9c2ae;padding:18px 0 30px;font-size:13px;color:#5c665f;font-family:Arial,Helvetica,sans-serif;text-align:center}
+.tb-foot p{font-size:13px;margin:0 0 8px}
+@media(max-width:900px){.tb-hero,.tb-visit{grid-template-columns:1fr}.tb-hero img,.tb-visit img{height:360px}.tb-strip{grid-template-columns:1fr}.tb-strip img{height:280px}}
+@media(max-width:600px){.tb-brand{font-size:32px}.tb-hero h1{font-size:34px}.tb-hero img,.tb-visit img{height:280px}}
 </style>
 </head>
 <body>
-<p class="disclosure">Design Preview: this is a concept website created by Freightfolio to show what a new website for this business could look like. It is not the business's live website.</p>
-<header class="topbar"><div class="brand">Trilby's</div><nav><b>Home</b><a href="services.html">Services</a><a href="visit.html">Visit and Contact</a></nav></header>
-<div class="hero"><img src="img/storefront.jpg" alt="Trilby's restaurant exterior at night"></div><p class="cap">Photo of Trilby's from its OpenTable listing: the restaurant exterior at night.</p>
-<section class="headline"><p class="kicker">Ocean Springs, MS</p><h1>A Coast tradition</h1><p class="lede">A Coast tradition in Ocean Springs: Creole, Cajun, and Southern seafood from executive chef Anthony Rametta.</p></section>
-<section class="about"><div><h2>About</h2><p>Trilby's is a Creole, Cajun, and Southern seafood restaurant at 1203 Bienville Blvd in Ocean Springs, led by executive chef Anthony Rametta. The restaurant describes itself as a Coast tradition in Ocean Springs, and many of the dishes on its menu are Trilby's own. Lunch runs Tuesday through Friday, dinner runs Tuesday through Friday and Saturday, and the restaurant is closed Sunday and Monday.</p></div></section>
-<section class="menuboard"><h2>Menu</h2><div class="menu">
-<div class="group"><h3>Seafood mains</h3><p>Trout Trilby, blackened Redfish Pontchartrain, shrimp and grits, and crab cakes from a Creole, Cajun, and Southern menu.</p></div>
-<div class="group"><h3>Southern plates</h3><p>Pork shank and chicken piccata among the restaurant's entrees.</p></div>
-<div class="group"><h3>Starters</h3><p>French onion soup to start the meal.</p></div>
-<div class="group"><h3>Desserts</h3><p>Creme brulee and peach cobbler to finish.</p></div>
-<div class="group"><h3>Reservations</h3><p>Reservations through OpenTable for parties of 1 to 6; larger parties call the restaurant.</p></div>
-</div></section>
-<section class="photorow"><figure style="margin:0"><img src="img/poboy.jpg" alt="A shrimp po boy sandwich with fries and sauces."><figcaption class="cap" style="padding-left:0">Stock photo: A shrimp po boy sandwich with fries and sauces. This is not a photo of Trilby's.</figcaption></figure><figure style="margin:0"><img src="img/sub.jpg" alt="A sub sandwich with fries and dips."><figcaption class="cap" style="padding-left:0">Stock photo: A sub sandwich with fries and dips. This is not a photo of Trilby's.</figcaption></figure></section>
-<p class="cap" style="padding-bottom:24px">All gallery photos are stock photos, labeled as such. They show the kind of work and setting described on this page, not this business.</p>
-<section class="visitband"><h2>Visit</h2><div class="visitgrid">
-<div><h3>Address</h3><p>1203 Bienville Blvd, Ocean Springs, MS 39564</p></div>
-<div><h3>Hours</h3><p>Tuesday through Friday, lunch 11:00 AM to 2:00 PM and dinner 5:00 PM to 9:00 PM; Saturday, 4:00 PM to 9:00 PM; closed Sunday and Monday.</p></div>
-<div><h3>Contact</h3><p>Phone: <a href="tel:+12288754279">+1 228-875-4279</a></p><p>Reservations: <a href="https://www.opentable.com/r/trilbys-ocean-springs">OpenTable</a> for parties of 1 to 6; larger parties call.</p><p><a href="https://www.google.com/maps/search/?api=1&query=1203%20Bienville%20Blvd%2C%20Ocean%20Springs%2C%20MS%2039564">Get directions on Google Maps</a></p></div>
-</div></section>
-<section class="contact"><p><a class="cta" href="tel:+12288754279">Call +1 228-875-4279</a></p>
-<p>Trilby's serves Ocean Springs, MS. Questions? Call +1 228-875-4279.</p></section>
-<footer><p>Trilby's, 1203 Bienville Blvd, Ocean Springs, MS 39564. Phone: <a href="tel:+12288754279">+1 228-875-4279</a>. Design Preview by <a href="https://freightfolio.net">Freightfolio</a>. The storefront and Trout Trilby photos are photos of this business (OpenTable listing and the restaurant's own website); other photos are stock photos, labeled as such.</p></footer>
+<div class="tb-wrap">
+<hr class="tb-rule">
+<div class="tb-brand">Trilby's</div>
+<nav class="tb-nav"><span>Home</span> &middot; <a href="services.html">Services</a> &middot; <a href="visit.html">Visit and Contact</a></nav>
+<p class="tb-disc">Design Preview: this is a concept website created by Freightfolio to show what a new website for this business could look like. It is not the business's live website.</p>
+<section class="tb-hero"><div><p class="tb-kicker">Ocean Springs, MS</p><h1>A Coast tradition</h1><p class="tb-lede">A Coast tradition in Ocean Springs: Creole, Cajun, and Southern seafood from executive chef Anthony Rametta.</p><p><a class="tb-call" href="tel:+12288754279">Call +1 228-875-4279</a></p></div><figure style="margin:0"><img src="img/storefront.jpg" alt="Trilby's restaurant exterior at night"><figcaption class="cap">Photo of Trilby's from its OpenTable listing: the restaurant exterior at night.</figcaption></figure></section><section class="tb-sec"><h2>About</h2><p>Trilby's is a Creole, Cajun, and Southern seafood restaurant at 1203 Bienville Blvd in Ocean Springs, led by executive chef Anthony Rametta. The restaurant describes itself as a Coast tradition in Ocean Springs, and many of the dishes on its menu are Trilby's own. Lunch runs Tuesday through Friday, dinner runs Tuesday through Friday and Saturday, and the restaurant is closed Sunday and Monday.</p></section><section class="tb-strip"><figure style="margin:0"><img src="img/trout-trilby.jpg" alt="A plated Trout Trilby dish"><figcaption class="cap">Photo of Trilby's Trout Trilby from the restaurant's own website.</figcaption></figure><figure style="margin:0"><img src="img/poboy.jpg" alt="A shrimp po boy sandwich with fries and sauces."><figcaption class="cap">Stock photo: A shrimp po boy sandwich with fries and sauces. This is not a photo of Trilby's.</figcaption></figure><figure style="margin:0"><img src="img/sub.jpg" alt="A sub sandwich with fries and dips."><figcaption class="cap">Stock photo: A sub sandwich with fries and dips. This is not a photo of Trilby's.</figcaption></figure></section><section class="tb-sec"><h2>Visit</h2><p>1203 Bienville Blvd, Ocean Springs, MS 39564.</p><p>Tuesday through Friday, lunch 11:00 AM to 2:00 PM and dinner 5:00 PM to 9:00 PM; Saturday, 4:00 PM to 9:00 PM; closed Sunday and Monday.</p><p>Phone: <a href="tel:+12288754279">+1 228-875-4279</a>. Reservations: <a href="https://www.opentable.com/r/trilbys-ocean-springs">OpenTable</a> for parties of 1 to 6; larger parties call. <a href="https://www.google.com/maps/search/?api=1&query=1203%20Bienville%20Blvd%2C%20Ocean%20Springs%2C%20MS%2039564">Get directions on Google Maps</a>.</p><p>Trilby's serves Ocean Springs, MS. Questions? Call <a href="tel:+12288754279">+1 228-875-4279</a>.</p></section><footer class="tb-foot"><p>Trilby's, 1203 Bienville Blvd, Ocean Springs, MS 39564. Phone: <a href="tel:+12288754279">+1 228-875-4279</a>. Design Preview by <a href="https://freightfolio.net">Freightfolio</a>.</p>
+<p>Photos on this page: the restaurant exterior is a photo of Trilby's from its OpenTable listing; the Trout Trilby photo is from the restaurant's own website; the sandwich photos are stock photos, labeled as such.</p></footer>
+</div>
 </body>
 </html>
