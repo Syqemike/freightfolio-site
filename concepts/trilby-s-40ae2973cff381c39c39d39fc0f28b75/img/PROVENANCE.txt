@@ -1,0 +1,23 @@
+PHOTOS (all stock photos reused from the nathan-s-restaurant-405e2973cff381cd92 concept pool; none are photos of Trilby's):
+- hero.jpg: Shrimp etouffee served with rice. Stock photo, labeled as such on every page.
+- poboy.jpg: A shrimp po boy sandwich with fries and sauces. Stock photo, labeled as such on every page.
+- sub.jpg: A sub sandwich with fries and dips. Stock photo, labeled as such on every page.
+
+REBUILD run132 (2026-11-01, agent-rebuild-shift) — FULL redesign:
+- QA 2026-11-01 04:59 failed the prior build ONLY on Originality below the
+  14/20 floor: the 2026-11-01 02:59 batch shares one base CSS after color/font
+  normalization and this site's editorial variant is duplicated by Twice The
+  Focus Photography. Copy, photos, captions, and CTAs all passed.
+- New design written for this run only (coastal menu-board): dark teal header
+  band, full-width hero photo, headline block, teal menu-board section, dark
+  visit band. No shared base classes, no centered cream wrap, no cards grid.
+- Copy kept verbatim from the QA-cleared pages; no new claims added.
+- Photos unchanged: the same 3 labeled stock photos (hero.jpg shrimp
+  etouffee, poboy.jpg, sub.jpg), captions verified against the images.
+- Photo sourcing: Website Dev 2026-11-01 live check (own site, OpenTable page
+  with photos and reviews, place listing) flagged a sourcing gap: a real photo
+  presence exists on OpenTable and listings, but no licensed real photo was
+  downloaded in that pass, so labeled stock stands and captions never claim
+  the photos depict Trilby's dishes. A separate live-browser sourcing check
+  was requested during this rebuild; its verdict will be appended here if it
+  establishes a verified real photo.

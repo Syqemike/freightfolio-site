@@ -1,0 +1,25 @@
+PHOTOS (all stock photos reused from the bill-s-auto-repair-404e2973cff3814eb2 concept pool; none are photos of Crowned Customs LLC):
+- hero.jpg: A mechanic inspecting a car engine with a light. Stock photo, labeled as such on every page.
+- engine.jpg: A performance car engine with red accents. Stock photo, labeled as such on every page.
+- turbo.jpg: A turbocharger and air filter in an engine bay. Stock photo, labeled as such on every page.
+
+REBUILD run132 (2026-11-01, agent-rebuild-shift) — FULL redesign:
+- QA 2026-11-01 04:59 failed the prior build ONLY on Originality below the
+  14/20 floor: the 2026-11-01 02:59 batch shares one base CSS after color/font
+  normalization and this site's splitshop variant is duplicated by Osiris
+  Photography. Copy, photos, captions, and CTAs all passed.
+- New design written for this run only (shop-ticket): utility bar, heavy
+  masthead with orange rule, dark hero split with framed photo, numbered
+  full-width service bands. No shared base classes, no pale split hero.
+- Copy kept verbatim from the QA-cleared pages; no new claims added. Rating
+  5.0 from 13 Google reviews shown exactly once, on index, as before.
+- Photos unchanged: the same 3 labeled stock photos (hero.jpg mechanic
+  inspecting an engine, engine.jpg, turbo.jpg), captions verified against
+  the images.
+- Photo sourcing: Website Dev 2026-11-01 live check (place listing, Instagram
+  location presence, directory pages) flagged a sourcing gap: a real photo
+  presence exists on Instagram and listings, but no licensed real photo was
+  downloaded in that pass, so labeled stock stands and captions never claim
+  the photos depict the shop's work. A separate live-browser sourcing check
+  was requested during this rebuild; its verdict will be appended here if it
+  establishes a verified real photo.
