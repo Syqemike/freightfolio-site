@@ -21,3 +21,10 @@ REBUILD run132 (2026-11-01, agent-rebuild-shift) — FULL redesign:
   the photos depict Trilby's dishes. A separate live-browser sourcing check
   was requested during this rebuild; its verdict will be appended here if it
   establishes a verified real photo.
+
+FOLLOW-UP run132b (2026-11-01, agent-rebuild-shift) — real photos swapped in (storefront hero + Trout Trilby gallery):
+- The live-browser sourcing check requested during run132 returned verified, downloadable real photos of the business, superseding run132's record that no real photo was established. Both photos were downloaded and VIEWED before use.
+- Storefront hero: the photo shows the Trilby's restaurant exterior at night, a dark-blue building with white porch trim, lit windows, and an outdoor fire feature. Source: OpenTable listing photo file https://resizer.otstatic.com/v4/photos/59658660-3?width=1280&height=720&format=avif (OpenTable hero image, labeled "Exterior - Trilby's, Ocean Springs, MS"; listing page https://www.opentable.com/r/trilbys-ocean-springs, which shows the matching address 1203 Bienville Blvd, Ocean Springs, MS 39564 and phone (228) 875-4279). Converted from AVIF to JPG for the site (storefront.jpg, 1280x720). Credited to the OpenTable listing in its caption.
+- Trout Trilby gallery photo: the photo shows a plated trout fillet with a creamy topping and microgreens. Source: the restaurant's own dinner menu page (https://trilbysoceansprings.com/dinner/), file https://trilbysoceansprings.com/wp-content/uploads/2024/08/trout-trilby-1024x683.webp, labeled "Trout Trilby" and placed with the house-specialty trout topped with signature Crabmeat au gratin. Converted from WebP to JPG for the site (trout-trilby.jpg, 1024x683). Credited to the restaurant's own website in its caption.
+- CAVEAT: public posting alone does not prove a reuse license; both listing/own-site photos are credited in their captions.
+- The old stock hero (hero.jpg, shrimp etouffee) is removed: it is no longer referenced by any page. Gallery stock photos (poboy, sub) remain, labeled as stock in caption text.
