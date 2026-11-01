@@ -3,3 +3,5 @@ Sourcing check 2026-10-31 (documented): business own site dsmactivecare.com fetc
 - img/back.jpg: Hands on a patient back during an adjustment. Photo published on dsmactivecare.com.
 - img/family.jpg: A family outdoors at sunset. Photo published on dsmactivecare.com.
 - img/water.jpg: A person drinking water. Photo published on dsmactivecare.com.
+
+Run126 narrow fix (2026-10-31, agent-rebuild-shift): QA 17:59 CT re-test of the run124 rebuild found the index hero blurry because img/back.jpg is a 365px-wide source displayed full width at 1280x480px. All six own-site images on dsmactivecare.com were re-checked 2026-10-31 and are 365px wide or smaller, so no higher-resolution own-site hero exists. Fix per the QA acceptance criterion: the hero is now a split hero with the same back.jpg photo displayed at 380px wide, near its native size, beside the headline panel, with its source caption underneath. Services and visit pages are unchanged; their galleries already display the photos near native size. A live-browser check of the business Facebook page for a sharper adjustment photo was dispatched 2026-10-31; any usable find will be recorded as a CRM addendum.
