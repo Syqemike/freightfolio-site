@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Sleepyhead Coffee.
+table.jpg <- /home/hatch/workspace/freightfolio-site/concepts/cafe-zata-405e2973cff3819897/img/table.jpg
+beansack.jpg <- /home/hatch/workspace/freightfolio-site/concepts/sefton-coffee-company-405e2973cff3816795/img/beans.jpg
+sandwich.jpg <- /home/hatch/workspace/freightfolio-site/concepts/java-man-coffee-403e2973cff3811c/img/panini.jpg

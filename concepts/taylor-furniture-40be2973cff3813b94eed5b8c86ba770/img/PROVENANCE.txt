@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Taylor Furniture.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/don-kazery-s-furniture-co-inc-404e2973cff381aca9/img/hero.jpg
+armchair.jpg <- /home/hatch/workspace/freightfolio-site/concepts/don-kazery-s-furniture-co-inc-404e2973cff381aca9/img/armchair.jpg
+living.jpg <- /home/hatch/workspace/freightfolio-site/concepts/don-kazery-s-furniture-co-inc-404e2973cff381aca9/img/living.jpg

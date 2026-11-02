@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Massage Therapy Works.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/ground-zen-massage-406e2973cff38194b9/img/hero.jpg
+calm.jpg <- /home/hatch/workspace/freightfolio-site/concepts/ground-zen-massage-406e2973cff38194b9/img/calm.jpg
+interior.jpg <- /home/hatch/workspace/freightfolio-site/concepts/ground-zen-massage-406e2973cff38194b9/img/interior.jpg

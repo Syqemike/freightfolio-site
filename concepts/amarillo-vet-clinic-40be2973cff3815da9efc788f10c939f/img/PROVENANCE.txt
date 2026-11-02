@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Amarillo Vet Clinic.
+hero-dog-exam.jpg <- /home/hatch/workspace/freightfolio-site/concepts/broadway-veterinary-clinic-406e2973cff381a4a5/img/hero-dog-exam.jpg
+cat-vet-check.jpg <- /home/hatch/workspace/freightfolio-site/concepts/broadway-veterinary-clinic-406e2973cff381a4a5/img/cat-vet-check.jpg
+puppy-portrait.jpg <- /home/hatch/workspace/freightfolio-site/concepts/broadway-veterinary-clinic-406e2973cff381a4a5/img/puppy-portrait.jpg

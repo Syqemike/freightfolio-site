@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Always Home Pet Care.
+hero-pups.jpg <- /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img/hero-pups.jpg
+happy-dog.jpg <- /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img/happy-dog.jpg
+cat-condo.jpg <- /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img/cat-condo.jpg
