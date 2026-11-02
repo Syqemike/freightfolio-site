@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Roofing By Martinez LLC.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/mr-and-mrs-handyman-roofing-llc-405e2973cff381a1af/img/hero.jpg
+roof2.jpg <- /home/hatch/workspace/freightfolio-site/concepts/mr-and-mrs-handyman-roofing-llc-405e2973cff381a1af/img/roof2.jpg
+roof3.jpg <- /home/hatch/workspace/freightfolio-site/concepts/mr-and-mrs-handyman-roofing-llc-405e2973cff381a1af/img/roof3.jpg

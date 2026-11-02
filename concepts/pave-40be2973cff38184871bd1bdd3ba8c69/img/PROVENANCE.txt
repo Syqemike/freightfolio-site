@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Pave.
+beer-taps.jpg <- /home/hatch/workspace/freightfolio-site/concepts/beer-bar-405e2973cff38167b083c1ae0c27d58d/img/beer-taps.jpg
+burger.jpg <- /home/hatch/workspace/freightfolio-site/concepts/beer-bar-405e2973cff38167b083c1ae0c27d58d/img/burger.jpg
+live-band.jpg <- /home/hatch/workspace/freightfolio-site/concepts/beer-bar-405e2973cff38167b083c1ae0c27d58d/img/live-band.jpg
