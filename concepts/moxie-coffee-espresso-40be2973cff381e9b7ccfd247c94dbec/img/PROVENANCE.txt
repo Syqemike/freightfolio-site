@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of MOXIE coffee & espresso.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/anchored-coffee-house-406e2973cff38102bc/img/hero.jpg
+iced.jpg <- /home/hatch/workspace/freightfolio-site/concepts/anchored-coffee-house-406e2973cff38102bc/img/catisland2.jpg
+latte.jpg <- /home/hatch/workspace/freightfolio-site/concepts/anchored-coffee-house-406e2973cff38102bc/img/catisland3.jpg

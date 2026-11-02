@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Louisiana Lagniappe.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/brady-s-steaks-and-seafood-405e2973cff38118a8/img/hero.jpg
+shrimp.jpg <- /home/hatch/workspace/freightfolio-site/concepts/brady-s-steaks-and-seafood-405e2973cff38118a8/img/poboy.jpg
+ceviche.jpg <- /home/hatch/workspace/freightfolio-site/concepts/50-elm-cafe-spirits-405e2973cff381baa57eedff87c6a5a4/img/ceviche.jpg

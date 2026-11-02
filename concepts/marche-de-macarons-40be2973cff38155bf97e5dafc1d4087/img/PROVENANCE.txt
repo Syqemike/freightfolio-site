@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Marche de Macarons.
+hero.jpg <- /tmp/wd1259/macarons.jpg
+pastry.jpg <- /home/hatch/workspace/freightfolio-site/concepts/tinker-s-cake-shop-405e2973cff381c0ae/img/pastry.jpg
+cookies.jpg <- /home/hatch/workspace/freightfolio-site/concepts/antoinette-bakery-cafe-406e2973cff381619b/img/cookies.jpg

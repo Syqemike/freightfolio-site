@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Maccaro Charleston.
+hero.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd1259-banhmi-rot.jpg (rotated 90deg copy of les-baguette-banh-mi-cafe pool banhmi.jpg)
+iced.jpg <- /home/hatch/workspace/freightfolio-site/concepts/anchored-coffee-house-406e2973cff38102bc/img/catisland2.jpg
+cookies.jpg <- /home/hatch/workspace/freightfolio-site/concepts/antoinette-bakery-cafe-406e2973cff381619b/img/cookies.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Holy City Jiu Jitsu.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/harbortown-fitness-404e2973cff381818e/img/hero.jpg
+mats.jpg <- /home/hatch/workspace/freightfolio-site/concepts/harbortown-fitness-404e2973cff381818e/img/floor.jpg
+balls.jpg <- /home/hatch/workspace/freightfolio-site/concepts/harbortown-fitness-404e2973cff381818e/img/weights.jpg
