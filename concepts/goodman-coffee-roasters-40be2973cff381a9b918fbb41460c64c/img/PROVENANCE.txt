@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Goodman Coffee Roasters.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/anchored-coffee-house-406e2973cff38102bc/img/hero.jpg
+roll.jpg <- /home/hatch/workspace/freightfolio-site/concepts/anchored-coffee-house-406e2973cff38102bc/img/catisland2.jpg
+table.jpg <- /home/hatch/workspace/freightfolio-site/concepts/anchored-coffee-house-406e2973cff38102bc/img/catisland3.jpg

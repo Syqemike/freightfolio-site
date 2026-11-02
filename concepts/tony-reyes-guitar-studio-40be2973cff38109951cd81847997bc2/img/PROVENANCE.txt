@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Tony Reyes Guitar Studio.
+lesson.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd-shift-2026-11-02-0259-pools/guitar/lesson.jpg
+playing.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd-shift-2026-11-02-0259-pools/guitar/playing.jpg
+closeup.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd-shift-2026-11-02-0259-pools/guitar/closeup.jpg

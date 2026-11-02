@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Les Amis Bake Shoppe.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/antoinette-bakery-cafe-406e2973cff381619b/img/hero.jpg
+cookies.jpg <- /home/hatch/workspace/freightfolio-site/concepts/antoinette-bakery-cafe-406e2973cff381619b/img/cookies.jpg
+rolls.jpg <- /home/hatch/workspace/freightfolio-site/concepts/antoinette-bakery-cafe-406e2973cff381619b/img/rolls.jpg

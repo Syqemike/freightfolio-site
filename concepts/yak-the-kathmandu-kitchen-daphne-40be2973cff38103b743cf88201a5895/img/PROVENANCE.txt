@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Yak The Kathmandu Kitchen-Daphne.
+chicken.jpg <- /home/hatch/workspace/freightfolio-site/concepts/asian-paradise-405e2973cff3813b9b/img/general-tso.jpg
+dumplings.jpg <- /home/hatch/workspace/freightfolio-site/concepts/asian-paradise-405e2973cff3813b9b/img/gyoza.jpg
+shrimp.jpg <- /home/hatch/workspace/freightfolio-site/concepts/asian-paradise-405e2973cff3813b9b/img/kung-pao-shrimp.jpg
