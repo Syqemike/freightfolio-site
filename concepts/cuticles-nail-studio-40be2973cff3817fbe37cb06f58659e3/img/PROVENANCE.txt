@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Cuticles Nail Studio.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/5-star-nails-406e2973cff381aa8d/img/hero.jpg
+pedicure.jpg <- /home/hatch/workspace/freightfolio-site/concepts/5-star-nails-406e2973cff381aa8d/img/pedicure.jpg
+polish.jpg <- /home/hatch/workspace/freightfolio-site/concepts/5-star-nails-406e2973cff381aa8d/img/polish.jpg

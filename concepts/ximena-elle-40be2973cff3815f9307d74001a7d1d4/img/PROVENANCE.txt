@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Ximena & Elle.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/geez-louise-boutique-404e2973cff38124a0/img/hero.jpg
+folded.jpg <- /home/hatch/workspace/freightfolio-site/concepts/geez-louise-boutique-404e2973cff38124a0/img/folded.jpg
+jacket.jpg <- /home/hatch/workspace/freightfolio-site/concepts/geez-louise-boutique-404e2973cff38124a0/img/jacket.jpg

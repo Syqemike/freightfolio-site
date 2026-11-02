@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Fairley's Wings & More.
+hero.jpg <- /tmp/wd0659/wings1.jpg
+wings.jpg <- /tmp/wd0659/wings2.jpg
+wings3.jpg <- /tmp/wd0659/wings3.jpg

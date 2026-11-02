@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Jennifer and Company Photography.
+hero.jpg <- /tmp/wd0659/maternity.jpg
+newborn.jpg <- /tmp/wd0659/newborn.jpg
+mother.jpg <- /tmp/wd0659/mother-newborn.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Wicked Cakes of Savannah.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/tinker-s-cake-shop-405e2973cff381c0ae/img/cake.jpg
+cake2.jpg <- /home/hatch/workspace/freightfolio-site/concepts/tinker-s-cake-shop-405e2973cff381c0ae/img/hero.jpg
+pastry.jpg <- /home/hatch/workspace/freightfolio-site/concepts/tinker-s-cake-shop-405e2973cff381c0ae/img/pastry.jpg

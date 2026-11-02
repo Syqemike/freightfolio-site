@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Ross-Clayton Funeral Home.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/jackson-memorial-funeral-service-404e2973cff3818da9/img/hero.jpg
+bouquet.jpg <- /home/hatch/workspace/freightfolio-site/concepts/jackson-memorial-funeral-service-404e2973cff3818da9/img/bouquet.jpg
+roses.jpg <- /home/hatch/workspace/freightfolio-site/concepts/jackson-memorial-funeral-service-404e2973cff3818da9/img/roses.jpg

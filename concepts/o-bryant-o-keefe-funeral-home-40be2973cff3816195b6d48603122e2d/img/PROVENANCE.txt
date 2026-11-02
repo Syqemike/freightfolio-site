@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of O'Bryant-O'Keefe Funeral Home.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/peoples-funeral-home-inc-404e2973cff38161ba/img/hero.jpg
+lilies.jpg <- /tmp/wd0659/lilies.jpg
+sunflowers.jpg <- /home/hatch/workspace/freightfolio-site/concepts/peoples-funeral-home-inc-404e2973cff38161ba/img/sunflowers.jpg

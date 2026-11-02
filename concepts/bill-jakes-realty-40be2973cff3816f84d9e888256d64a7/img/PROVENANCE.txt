@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Bill Jakes Realty.
+hero.jpg <- /tmp/wd0659/house1.jpg
+house2.jpg <- /tmp/wd0659/house2.jpg
+house3.jpg <- /tmp/wd0659/house4.jpg
