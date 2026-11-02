@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Grace Chapel Preschool.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/happy-times-preschool-405e2973cff381258f/img/hero.jpg
+bubbles.jpg <- /home/hatch/workspace/freightfolio-site/concepts/happy-times-preschool-405e2973cff381258f/img/bubbles.jpg
+clay.jpg <- /home/hatch/workspace/freightfolio-site/concepts/happy-times-preschool-405e2973cff381258f/img/clay.jpg

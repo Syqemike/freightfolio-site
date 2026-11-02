@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Bowie Bakery.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/el-dorado-bakery-404e2973cff38106aa/img/hero.jpg
+eldorado2.jpg <- /home/hatch/workspace/freightfolio-site/concepts/el-dorado-bakery-404e2973cff38106aa/img/eldorado2.jpg
+eldorado3.jpg <- /home/hatch/workspace/freightfolio-site/concepts/el-dorado-bakery-404e2973cff38106aa/img/eldorado3.jpg

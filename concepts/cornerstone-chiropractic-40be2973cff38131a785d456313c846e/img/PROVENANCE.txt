@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Cornerstone Chiropractic.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/crossroads-chiropractic-and-wellness-center-405e2973cff381a987/img/hero.jpg
+wellness2.jpg <- /home/hatch/workspace/freightfolio-site/concepts/crossroads-chiropractic-and-wellness-center-405e2973cff381a987/img/wellness2.jpg
+wellness3.jpg <- /home/hatch/workspace/freightfolio-site/concepts/crossroads-chiropractic-and-wellness-center-405e2973cff381a987/img/wellness3.jpg

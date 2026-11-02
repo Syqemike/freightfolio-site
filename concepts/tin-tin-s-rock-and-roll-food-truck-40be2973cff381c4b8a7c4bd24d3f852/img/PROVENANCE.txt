@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Tin-tin's Rock and Roll Food Truck.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/smokin-gringos-taco-truck-catering-404e2973cff38139b6/img/hero.jpg
+aguachile.jpg <- /home/hatch/workspace/freightfolio-site/concepts/smokin-gringos-taco-truck-catering-404e2973cff38139b6/img/aguachile.jpg
+ceviche.jpg <- /home/hatch/workspace/freightfolio-site/concepts/smokin-gringos-taco-truck-catering-404e2973cff38139b6/img/ceviche.jpg

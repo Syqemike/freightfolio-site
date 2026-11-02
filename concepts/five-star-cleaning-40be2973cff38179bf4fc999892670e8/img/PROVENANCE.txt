@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Five Star Cleaning.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/better-cleaning-llc-403e2973cff3815d87/img/hero.jpg
+cloth.jpg <- /home/hatch/workspace/freightfolio-site/concepts/better-cleaning-llc-403e2973cff3815d87/img/cloth.jpg
+spray.jpg <- /home/hatch/workspace/freightfolio-site/concepts/better-cleaning-llc-403e2973cff3815d87/img/spray.jpg

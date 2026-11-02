@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Yoga Center of Jackson.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img/hero.jpg
+yoga2.jpg <- /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img/yoga2.jpg
+yoga3.jpg <- /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img/yoga3.jpg
