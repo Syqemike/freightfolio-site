@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Restoration Chiropractic.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/southside-chiropractic-405e2973cff381b685/img/hero.jpg
+hands.jpg <- /home/hatch/workspace/freightfolio-site/concepts/southside-chiropractic-405e2973cff381b685/img/hands.jpg
+calm.jpg <- /home/hatch/workspace/freightfolio-site/concepts/southside-chiropractic-405e2973cff381b685/img/calm.jpg

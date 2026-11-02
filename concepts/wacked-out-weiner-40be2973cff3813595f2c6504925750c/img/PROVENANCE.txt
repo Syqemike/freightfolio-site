@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Wacked Out Weiner.
+hero.jpg <- /tmp/wd0459/hotdog.jpg
+nathans.jpg <- /tmp/wd0459/nathans.jpg
+fries.jpg <- /tmp/wd0459/hotdog-fries.jpg

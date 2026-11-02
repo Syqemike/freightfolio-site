@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of SoMa Animal Clinic and Housecalls.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/broadway-veterinary-clinic-406e2973cff381a4a5/img/hero-dog-exam.jpg
+cat.jpg <- /home/hatch/workspace/freightfolio-site/concepts/broadway-veterinary-clinic-406e2973cff381a4a5/img/cat-vet-check.jpg
+puppy.jpg <- /home/hatch/workspace/freightfolio-site/concepts/broadway-veterinary-clinic-406e2973cff381a4a5/img/puppy-portrait.jpg

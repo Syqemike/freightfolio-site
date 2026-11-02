@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Mencer's Tree Service.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-better-tree-service-404e2973cff381eeb0/img/hero.jpg
+logs.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-better-tree-service-404e2973cff381eeb0/img/logs.jpg
+street.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-better-tree-service-404e2973cff381eeb0/img/street.jpg

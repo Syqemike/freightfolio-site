@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Icon Autoworks.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/arnold-automotive-404e2973cff3819c81/img/hero.jpg
+auto1.jpg <- /home/hatch/workspace/freightfolio-site/concepts/arnold-automotive-404e2973cff3819c81/img/auto1b.jpg
+auto3.jpg <- /home/hatch/workspace/freightfolio-site/concepts/arnold-automotive-404e2973cff3819c81/img/auto3b.jpg

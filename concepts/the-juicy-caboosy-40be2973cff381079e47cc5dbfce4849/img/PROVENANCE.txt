@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The Juicy Caboosy.
+hero.jpg <- /tmp/wd0459/juice-glass.jpg
+bowl.jpg <- /tmp/wd0459/smoothie-bowl.jpg
+smoothies.jpg <- /tmp/wd0459/smoothies.jpg

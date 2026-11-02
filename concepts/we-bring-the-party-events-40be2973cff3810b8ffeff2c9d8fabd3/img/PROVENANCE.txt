@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of We Bring The Party Events.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/dj-booth.jpg
+dance.jpg <- /home/hatch/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/first-dance.jpg
+moment.jpg <- /home/hatch/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/wedding-moment.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Heart-N-Soul Healing Center and Massage Therapy Clinic.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/session-calm.jpg
+comfort.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/comfort-touch.jpg
+interior.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/spa-interior.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Southern Handyman Services.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/black-rock-handyman-service-405e2973cff3817ead/img/hero.jpg
+painting.jpg <- /home/hatch/workspace/freightfolio-site/concepts/black-rock-handyman-service-405e2973cff3817ead/img/painting-gray.jpg
+wall.jpg <- /home/hatch/workspace/freightfolio-site/concepts/black-rock-handyman-service-405e2973cff3817ead/img/painting-wall.jpg

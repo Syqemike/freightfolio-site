@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Go Topless Fishing Charters.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/off-the-hook-charters-405e2973cff381ff84/img/boat.jpg
+fisherman.jpg <- /home/hatch/workspace/freightfolio-site/concepts/off-the-hook-charters-405e2973cff381ff84/img/fisherman.jpg
+lures.jpg <- /home/hatch/workspace/freightfolio-site/concepts/off-the-hook-charters-405e2973cff381ff84/img/lures.jpg
