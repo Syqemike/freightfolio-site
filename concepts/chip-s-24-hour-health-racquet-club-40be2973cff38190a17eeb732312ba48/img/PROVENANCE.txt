@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Chip's 24 Hour Health & Racquet Club.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/harbortown-fitness-404e2973cff381818e/img/hero.jpg
+training.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bestbody-fitness-training-studio-404e2973cff38163b0/img/training.jpg
+weights.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bestbody-fitness-training-studio-404e2973cff38163b0/img/weights.jpg

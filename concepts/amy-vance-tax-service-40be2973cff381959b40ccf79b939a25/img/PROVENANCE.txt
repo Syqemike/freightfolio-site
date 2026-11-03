@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Amy Vance Tax Service.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/kristel-s-tax-accounting-405e2973cff3812cb7/img/hero.jpg
+tax2.jpg <- /home/hatch/workspace/freightfolio-site/concepts/kristel-s-tax-accounting-405e2973cff3812cb7/img/tax2.jpg
+tax3.jpg <- /home/hatch/workspace/freightfolio-site/concepts/kristel-s-tax-accounting-405e2973cff3812cb7/img/tax3.jpg

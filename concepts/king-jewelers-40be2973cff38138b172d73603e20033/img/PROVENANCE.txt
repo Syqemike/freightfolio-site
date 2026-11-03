@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of King Jewelers.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aurum-jewelers-405e2973cff381e284/img/hero.jpg
+ring.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aurum-jewelers-405e2973cff381e284/img/ring.jpg
+necklace.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aurum-jewelers-405e2973cff381e284/img/necklace.jpg

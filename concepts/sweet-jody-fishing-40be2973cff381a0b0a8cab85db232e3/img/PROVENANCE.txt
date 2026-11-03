@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Sweet Jody Fishing.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/seaplay-charters-405e2973cff381a5a2/img/boat.jpg
+traveling.jpg <- /home/hatch/workspace/freightfolio-site/concepts/seaplay-charters-405e2973cff381a5a2/img/traveling.jpg
+calm.jpg <- /home/hatch/workspace/freightfolio-site/concepts/seaplay-charters-405e2973cff381a5a2/img/calm.jpg

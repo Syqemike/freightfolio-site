@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Little Rock Touch.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/ashiatsu-massage-403e2973cff38188b3/img/hero.jpg
+hands.jpg <- /home/hatch/workspace/freightfolio-site/concepts/ashiatsu-massage-403e2973cff38188b3/img/hands.jpg
+interior.jpg <- /home/hatch/workspace/freightfolio-site/concepts/ashiatsu-massage-403e2973cff38188b3/img/interior.jpg
