@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Professional Electric.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/mancini-electric-405e2973cff381158d/img/hero.jpg
+panel.jpg <- /home/hatch/workspace/freightfolio-site/concepts/mancini-electric-405e2973cff381158d/img/panel.jpg
+switchboard.jpg <- /home/hatch/workspace/freightfolio-site/concepts/mancini-electric-405e2973cff381158d/img/switchboard.jpg

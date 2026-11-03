@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Blossom Shop Florist and Gifts.
+bouquet.jpg <- /home/hatch/workspace/freightfolio-site/concepts/beth-cranford-floral-designs-405e2973cff3811390/img/everyday-bouquet.jpg
+arrangement.jpg <- /home/hatch/workspace/freightfolio-site/concepts/beth-cranford-floral-designs-405e2973cff3811390/img/seasonal-arrangement.jpg
+gift.jpg <- /home/hatch/workspace/freightfolio-site/concepts/beth-cranford-floral-designs-405e2973cff3811390/img/gift-bouquet.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of John Black Photography.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/at-the-beach-weddings-405e2973cff381e3be/img/hero.jpg
+reception.jpg <- /home/hatch/workspace/freightfolio-site/concepts/deerfield-estates-venue-405e2973cff3819aa8/img/hero.jpg
+sunflowers.jpg <- /home/hatch/workspace/freightfolio-site/concepts/deerfield-estates-venue-405e2973cff3819aa8/img/sunflowers.jpg

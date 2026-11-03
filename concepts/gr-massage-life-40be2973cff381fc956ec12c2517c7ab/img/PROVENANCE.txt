@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of GR Massage Life.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/session-hero.jpg
+calm.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/session-calm.jpg
+interior.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-hand-2-heal-massage-therapy-e5cc5e2b57c4/img/spa-interior.jpg

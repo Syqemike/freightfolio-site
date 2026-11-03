@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Art In Motion Dance Center.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dancers-studio-405e2973cff381f192/img/hero.jpg
+barre.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dancers-studio-405e2973cff381f192/img/barre.jpg
+tutus.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dancers-studio-405e2973cff381f192/img/tutus.jpg
