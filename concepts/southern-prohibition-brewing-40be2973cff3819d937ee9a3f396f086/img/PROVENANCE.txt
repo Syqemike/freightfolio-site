@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Southern Prohibition Brewing.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/four-points-brewing-405e2973cff3818193/img/hero.jpg
+burger.jpg <- /home/hatch/workspace/freightfolio-site/concepts/four-points-brewing-405e2973cff3818193/img/burger.jpg
+flight.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd-shift-2026-11-03-1259-beer-flight.jpg

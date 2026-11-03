@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Remix DJs.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/maximum-entertainment-djs-402e297381d38694/img/dancefloor-hero.jpg
+uplighting.jpg <- /home/hatch/workspace/freightfolio-site/concepts/maximum-entertainment-djs-402e297381d38694/img/uplighting.jpg
+dancing.jpg <- /home/hatch/workspace/freightfolio-site/concepts/maximum-entertainment-djs-402e297381d38694/img/wedding-dancing.jpg

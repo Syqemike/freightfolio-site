@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of 4 Paws Unleashed.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img/hero-pups.jpg
+happy.jpg <- /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img/happy-dog.jpg
+cat.jpg <- /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img/cat-condo.jpg

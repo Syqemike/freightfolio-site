@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Kirk Auto Detail.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/domino-effect-auto-detailing-403e2973cff3810f/img/hero-wash.jpg
+spray.jpg <- /home/hatch/workspace/freightfolio-site/concepts/domino-effect-auto-detailing-403e2973cff3810f/img/spray-detail.jpg
+silver.jpg <- /home/hatch/workspace/freightfolio-site/concepts/domino-effect-auto-detailing-403e2973cff3810f/img/silver-car.jpg

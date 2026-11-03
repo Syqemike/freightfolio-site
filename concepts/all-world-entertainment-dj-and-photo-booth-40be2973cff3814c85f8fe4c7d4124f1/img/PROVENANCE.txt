@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of All World Entertainment DJ and Photo Booth.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/sw-dj-entertainment-404e2973cff3812d91/img/hero.jpg
+reception.jpg <- /home/hatch/workspace/freightfolio-site/concepts/sw-dj-entertainment-404e2973cff3812d91/img/reception.jpg
+photobooth.jpg <- /home/hatch/workspace/freightfolio-site/concepts/maximum-entertainment-djs-402e297381d38694/img/photobooth.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of White Oak Estate and Gardens.
+garden.jpg <- /home/hatch/workspace/freightfolio-site/concepts/earle-harrison-house-pape-gardens-405e2973cff38142bd/img/hero.jpg
+reception.jpg <- /home/hatch/workspace/freightfolio-site/concepts/deerfield-estates-venue-405e2973cff3819aa8/img/hero.jpg
+roses.jpg <- /home/hatch/workspace/freightfolio-site/concepts/deerfield-estates-venue-405e2973cff3819aa8/img/roses.jpg
