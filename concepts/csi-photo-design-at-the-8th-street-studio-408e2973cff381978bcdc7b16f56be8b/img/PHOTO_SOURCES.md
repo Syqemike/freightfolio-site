@@ -20,3 +20,8 @@ REBUILD run131 (2026-11-01, agent-rebuild-shift) — QA 2026-11-01 defects fixed
 - Real-photo shortfall unchanged and still flagged: verified Facebook page
   (facebook.com/CsiPhotoDesign) holds portraits but no clean downloadable
   file URL was established, so the 3 labeled stock photos stand.
+
+REBUILD run149 (2026-11-03, agent-rebuild-shift) - MIKE REWORK ORDER 2026-11-02 FULL REDO:
+- New contact-sheet design, no run127/run131 classes reused: ink top bar with red rule, framed hero sheet, numbered service ledger, contact-sheet photo grid, dark visit strip. Best-work-bar question answered before submitting: the framed contact-sheet hero, numbered ledger and dark strip do not read as basic or bland.
+- Live-browser sourcing check 2026-11-03: Google Maps listing for this exact business verified (521 S. 8th St, Boise, ID 83702; phone (208) 331-2287; Mon-Fri 10am-5pm, closed Sat-Sun; 5.0 from 7 reviews; 16-photo gallery, 15 by owner, watermarked portrait and studio interiors seen, no clean downloadable asset established). Facebook page facebook.com/CsiPhotoDesign verified (same address and phone; 687 followers; real portrait work seen; no clean downloadable asset established). Instagram @csiphotodesign linked from the own site but sign-in walled, not verified. Yelp DataDome-blocked, not verified. Rating withheld: research record says Google 5.0 from 14 reviews, live Maps says 5.0 from 7, so no rating is shown.
+- Same 3 labeled stock photos, each re-viewed this shift; captions match the viewed files; stock labels in caption text, never overlay badges. No concept art (0 SVG). CTAs are tel: links labeled Call to book; no online booking claimed.
