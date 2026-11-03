@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Lotus Flower.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/alluring-blooms-405e2973cff381ca96/img/hero.jpg
+seasonal.jpg <- /home/hatch/workspace/freightfolio-site/concepts/alluring-blooms-405e2973cff381ca96/img/seasonal.jpg
+sunflowers.jpg <- /home/hatch/workspace/freightfolio-site/concepts/alluring-blooms-405e2973cff381ca96/img/sunflowers.jpg

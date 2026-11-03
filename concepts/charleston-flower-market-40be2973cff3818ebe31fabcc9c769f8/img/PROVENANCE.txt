@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Charleston Flower Market.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-village-of-flowers-405e2973cff3812184/img/hero.jpg
+bouquet.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-village-of-flowers-405e2973cff3812184/img/bouquet.jpg
+ranunculus.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-village-of-flowers-405e2973cff3812184/img/ranunculus.jpg

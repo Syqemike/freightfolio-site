@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Mangonadas By MLB on the bay.
+mango.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bos-snow-zone-and-snacks-403e2973cff38190ae/img/mango.jpg
+shaved.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bos-snow-zone-and-snacks-403e2973cff38190ae/img/shaved.jpg
+snowcone.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bos-snow-zone-and-snacks-403e2973cff38190ae/img/snowcone.jpg

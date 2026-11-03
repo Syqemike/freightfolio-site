@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of D'Allesandro's Pizza.
+chef.jpg <- /home/hatch/workspace/freightfolio-site/concepts/tower-of-pizza-403e2973cff38151/img/chef.jpg
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/tower-of-pizza-403e2973cff38151/img/hero.jpg
+table.jpg <- /home/hatch/workspace/freightfolio-site/concepts/tower-of-pizza-403e2973cff38151/img/table.jpg

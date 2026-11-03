@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Huck's Automotive Service.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/affordable-mufflers-brakes-inc-405e2973cff381c5a1/img/hero.jpg
+hood.jpg <- /home/hatch/workspace/freightfolio-site/concepts/affordable-mufflers-brakes-inc-405e2973cff381c5a1/img/hood.jpg
+engine.jpg <- /home/hatch/workspace/freightfolio-site/concepts/affordable-mufflers-brakes-inc-405e2973cff381c5a1/img/engine.jpg
