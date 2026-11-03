@@ -11,3 +11,8 @@ requests for /wp-content/uploads/ returned HTTP 502 through this network; the sa
 verified on the origin portfolio/headshots pages by the 2026-10-30 live-browser sourcing check.
 RATING: no rating shown. See the release record flags for why the figure was omitted.
 CTA: phone and email. No verified online booking URL is in the record, so no Book Now button is shown.
+
+REBUILD run146 (2026-11-02, MIKE REWORK ORDER FULL REDO): same 3 real photos
+reused, each re-viewed this shift; captions unchanged and matching the viewed
+files. No stock photos on the site. No new photos added. Layout, stylesheet,
+and class names are new (pc-*); no prior design files are reused.
