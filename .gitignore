@@ -1,0 +1,10 @@
+# Freightfolio site — never commit secrets or local tooling
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+credentials*.json
+*secret*.json
+.DS_Store
+node_modules/

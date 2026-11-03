@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of The Auto Clinic or its products, services, or premises.
+- hero.jpg: Stock photo: A mechanic inspecting a car engine with a light.
+- engine.jpg: Stock photo: A performance car engine with red accents.
+- turbo.jpg: Stock photo: A turbocharger and air filter in an engine bay.

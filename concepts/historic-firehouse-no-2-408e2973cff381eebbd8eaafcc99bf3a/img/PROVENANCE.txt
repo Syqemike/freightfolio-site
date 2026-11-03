@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Historic Firehouse No.2 concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A venue hall set with round tables, floral centerpieces, and a stage. Stock photo. Public domain photo via Hippopx (banquet hall interior), swapped in by Rebuild run105 wave 2 (2026-10-30) for the QA 2026-10-30 01:59 venue-photo note; visually verified.
+
+- img/roses.jpg: Pink garden roses. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/brick-mortar-venue-406e2973cff381d39e/img
+
+- img/sunflowers.jpg: Sunflowers in a field. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/brick-mortar-venue-406e2973cff381d39e/img

@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Capitol Bistro concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A grilled sandwich plate with salad and potato wedges. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/bean-and-bites-bistro-404e2973cff381d082/img
+
+- img/latte.jpg: A latte with heart latte art in a blue cup. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/bean-and-bites-bistro-404e2973cff381d082/img
+
+- img/rolls.jpg: Freshly baked cinnamon rolls on racks. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/bean-and-bites-bistro-404e2973cff381d082/img

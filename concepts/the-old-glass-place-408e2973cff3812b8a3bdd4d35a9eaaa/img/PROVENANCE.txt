@@ -1,0 +1,8 @@
+PHOTO PROVENANCE - The Old Glass Place concept (Rebuild run107, 2026-10-30)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: An event room set with round tables for a formal event. Stock photo. Source pool: concepts/west-market-conference-center/img/ballroom.jpg (Pexels 15621210, banquet hall set with round tables; visually verified in run107).
+- img/roses.jpg: A large event room set with round tables and chairs. Stock photo. Source pool: concepts/west-market-conference-center/img/reception.jpg (Pexels 14636319; visually verified in run107).
+- img/sunflowers.jpg: A table set with desserts and flowers for a celebration. Stock photo. Source pool: concepts/west-market-conference-center/img/set-table.jpg (visually verified in run107).
+Replaces the prior DJ/roses/sunflowers set (reused from the Firehouse pool, venue-generic) per QA 2026-10-30 03:59 photo note.

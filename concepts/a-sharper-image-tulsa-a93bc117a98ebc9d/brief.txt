@@ -1,0 +1,13 @@
+DESIGN BRIEF: A Sharper Image, hair salon, Tulsa OK
+
+Aesthetic: editorial fashion magazine. The page is treated as a printed salon journal: masthead with dateline, numbered sections (01 Service Index, 02 Color Studio, 03 Hours & Visit), thin ruled lines, double rules, a margin note on the hero, and a drop cap leading the feature article.
+
+Typography: Georgia serif display throughout for headlines and body text, with a small system sans used only for labels, kickers, and buttons via letter-spaced uppercase. High-contrast hierarchy carried by size and italics, not by colored headline words.
+
+Palette: warm ivory paper (#f7f1e5), deep espresso ink (#251a10), copper accent (#a05e2a / #7e481e), warm hairline rules. The "Color Studio" feature section inverts to espresso black with copper highlights for a distinct editorial spread feel.
+
+Layout: asymmetric and print-like. Desktop hero pairs a large serif headline with an offset margin column; services read as an indexed ledger with label column; the feature section uses two newspaper columns with a copper rule; mobile collapses to a single column with the margin note hidden. No cards, no gradient blobs, no pill buttons, no icon rows.
+
+Customer journey: read the editorial (name, specialty, services) -> feature spread on custom European color -> hours and visit block with one prominent "Call to book" tel action. Every CTA is phone-only; no online booking is implied. Rating shown once, in the visit block, as "Google 5.0 (12 reviews)".
+
+Photography: none. No verifiable business-owned photos found (old domain is a GoDaddy parking page; no Facebook/Instagram presence with public photos; Google listing photos not verifiable without login). Built photo-free rather than using stock or another business's images.

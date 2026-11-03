@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>TailWaggers Salon &amp; Boutique | Dog Grooming in D'Iberville, MS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Caveat:wght@500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fff8f0;
+    --cream-deep:#fbeedf;
+    --ink:#3a2f26;
+    --ink-soft:#6b5c4e;
+    --coral:#e07856;
+    --coral-dark:#c85f3d;
+    --coral-soft:#ffe4d4;
+    --teal:#14524f;
+    --teal-deep:#0d3a37;
+    --teal-soft:#dcebe6;
+    --peach:#ffd9b8;
+    --white:#fffdf9;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.65;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{font-family:"Baloo 2","Nunito",system-ui,sans-serif;line-height:1.12;color:var(--ink)}
+  .hand{font-family:"Caveat",cursive}
+  img{max-width:100%;display:block}
+
+  /* ---------- design-preview banner ---------- */
+  .preview-bar{
+    background:var(--teal-deep);
+    color:#fff;
+    text-align:center;
+    font-size:12px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    font-weight:700;
+    padding:8px 16px;
+    font-family:"Nunito",system-ui,sans-serif;
+  }
+
+  /* ---------- nav ---------- */
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,248,240,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:2px solid var(--cream-deep);
+  }
+  .nav-inner{
+    max-width:1180px;margin:0 auto;padding:.7rem 1.25rem;
+    display:flex;align-items:center;gap:1rem;
+  }
+  .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink)}
+  .brand .paw{
+    width:42px;height:42px;background:var(--coral);border-radius:50%;
+    display:grid;place-items:center;flex:none;
+    transform:rotate(-10deg);
+  }
+  .brand .word{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:1.3rem;letter-spacing:.2px}
+  .brand .word small{display:block;font-family:"Caveat",cursive;font-weight:600;font-size:1.05rem;color:var(--coral-dark);line-height:1;margin-top:-.25rem}
+  .nav-links{margin-left:auto;display:flex;gap:1.4rem;align-items:center}
+  .nav-links a.link{color:var(--ink-soft);text-decoration:none;font-weight:700;font-size:.95rem}
+  .nav-links a.link:hover{color:var(--coral-dark)}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:800;
+    background:var(--coral);color:#fff;
+    padding:.8rem 1.7rem;border-radius:999px;
+    border:3px solid var(--ink);
+    box-shadow:4px 4px 0 var(--ink);
+    transition:transform .15s ease, box-shadow .15s ease;
+    font-size:1rem;
+  }
+  .btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+  .btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+  .btn.teal{background:var(--teal)}
+  .btn.small{padding:.55rem 1.25rem;font-size:.92rem}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;padding:3.5rem 1.25rem 5rem;overflow:hidden}
+  .hero-inner{
+    max-width:1180px;margin:0 auto;
+    display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center;
+  }
+  .hero-note{
+    font-family:"Caveat",cursive;font-size:1.7rem;color:var(--coral-dark);
+    transform:rotate(-3deg);display:inline-block;margin-bottom:.4rem;
+  }
+  .hero h1{font-size:clamp(2.6rem,5.2vw,4.4rem);font-weight:800;margin-bottom:1rem}
+  .hero h1 .hl{
+    color:var(--coral-dark);
+    background:linear-gradient(transparent 62%, var(--coral-soft) 62%);
+  }
+  .hero p.lede{font-size:1.18rem;color:var(--ink-soft);max-width:34rem;margin-bottom:1.8rem}
+  .hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:1.6rem}
+  .hero-proof{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+  .stars{color:var(--coral-dark);font-size:1.2rem;letter-spacing:2px}
+  .hero-proof p{font-weight:700;font-size:.95rem;color:var(--ink-soft)}
+
+  .hero-photo{position:relative}
+  .blob{
+    position:absolute;inset:6% -4% -2% 6%;
+    background:var(--teal-soft);
+    border-radius:58% 42% 55% 45% / 48% 55% 45% 52%;
+    transform:rotate(6deg);z-index:0;
+  }
+  .blob2{
+    position:absolute;inset:0 2% 10% 0;
+    background:var(--peach);
+    border-radius:45% 55% 48% 52% / 55% 45% 55% 45%;
+    transform:rotate(-8deg);z-index:0;
+  }
+  .arch{
+    position:relative;z-index:1;
+    width:min(430px,100%);margin:0 auto;
+    border-radius:220px 220px 36px 36px;
+    overflow:hidden;
+    border:5px solid var(--white);
+    box-shadow:0 24px 50px rgba(58,47,38,.18);
+  }
+  .arch img{width:100%;height:560px;object-fit:cover;object-position:center 30%}
+  .est-badge{
+    position:absolute;z-index:2;
+    top:6%;right:2%;
+    background:var(--white);border:3px solid var(--ink);
+    border-radius:18px;padding:.5rem 1rem;
+    font-family:"Caveat",cursive;font-size:1.6rem;font-weight:700;color:var(--teal);
+    transform:rotate(8deg);
+    box-shadow:4px 4px 0 rgba(58,47,38,.9);
+  }
+  .fresh-badge{
+    position:absolute;z-index:2;
+    bottom:8%;left:-2%;
+    background:var(--coral);color:#fff;
+    border:3px solid var(--ink);border-radius:999px;
+    padding:.7rem 1.3rem;font-weight:800;font-size:1rem;
+    transform:rotate(-6deg);
+    box-shadow:4px 4px 0 var(--ink);
+  }
+  .wiggle{position:absolute;z-index:2;left:8%;top:38%;transform:rotate(14deg)}
+
+  /* ---------- wave divider ---------- */
+  .wave{display:block;width:100%;height:70px;margin-bottom:-1px}
+  .wave path{fill:var(--teal-soft)}
+
+  /* ---------- grooming menu ---------- */
+  .groom{background:var(--teal-soft);padding:3.5rem 1.25rem 5rem}
+  .groom-inner{max-width:900px;margin:0 auto}
+  .section-kicker{
+    font-family:"Caveat",cursive;font-size:1.8rem;color:var(--coral-dark);
+    transform:rotate(-2deg);display:inline-block;
+  }
+  .groom h2{font-size:clamp(2rem,4vw,3rem);margin:.2rem 0 1rem}
+  .groom .intro{color:var(--ink-soft);font-size:1.08rem;max-width:44rem;margin-bottom:2.4rem}
+  .menu{
+    background:var(--white);
+    border:3px solid var(--ink);border-radius:28px;
+    box-shadow:8px 8px 0 rgba(20,82,79,.18);
+    padding:2.2rem 2.4rem;
+    position:relative;
+  }
+  .menu::before{
+    content:"grooming menu";
+    position:absolute;top:-1.35rem;left:2rem;
+    background:var(--coral);color:#fff;font-weight:800;
+    padding:.35rem 1.1rem;border-radius:999px;border:3px solid var(--ink);
+    font-size:.95rem;transform:rotate(-3deg);
+  }
+  .menu-item{
+    padding:1.15rem 0;border-bottom:2px dashed var(--cream-deep);
+  }
+  .menu-item:last-child{border-bottom:none}
+  .menu-item h3{font-size:1.35rem;font-weight:700;white-space:nowrap}
+  .menu-item .dots{flex:1;border-bottom:3px dotted var(--coral);opacity:.6;min-width:2rem;transform:translateY(-6px)}
+  .menu-item .paw-ic{flex:none;width:34px;height:34px}
+  .menu-item p{color:var(--ink-soft);font-size:.98rem;margin:.35rem 0 0;padding-left:3rem}
+  .menu-item .wrap{display:flex;align-items:center;gap:1rem}
+  .menu-note{
+    margin-top:1.6rem;background:var(--coral-soft);
+    border:2px dashed var(--coral-dark);border-radius:18px;
+    padding:1.1rem 1.4rem;font-size:1rem;
+  }
+  .menu-note .hand{font-size:1.5rem;color:var(--coral-dark)}
+
+  /* ---------- since 1998 band ---------- */
+  .heritage{background:var(--teal);color:#fdf7ee;padding:4.5rem 1.25rem;position:relative;overflow:hidden}
+  .heritage-inner{max-width:1000px;margin:0 auto;text-align:center;position:relative;z-index:1}
+  .heritage .big-year{
+    font-family:"Baloo 2",sans-serif;font-weight:800;
+    font-size:clamp(4rem,10vw,7.5rem);color:var(--peach);
+    line-height:1;
+  }
+  .heritage h2{color:#fff;font-size:clamp(1.6rem,3.4vw,2.4rem);margin:1rem 0}
+  .heritage p{max-width:46rem;margin:0 auto 1rem;font-size:1.1rem;color:#f3e9db}
+  .heritage .quote{
+    font-family:"Caveat",cursive;font-size:1.9rem;color:var(--peach);margin-top:1.4rem;
+  }
+  .heritage .paw-row{display:flex;justify-content:center;gap:1.2rem;margin-top:1.6rem;opacity:.85}
+  .wave2{display:block;width:100%;height:70px}
+  .wave2 path{fill:var(--cream)}
+
+  /* ---------- boutique ---------- */
+  .boutique{padding:4.5rem 1.25rem 5rem;background:var(--cream)}
+  .boutique-inner{max-width:1180px;margin:0 auto}
+  .boutique-head{text-align:center;max-width:44rem;margin:0 auto 2.6rem}
+  .boutique-head h2{font-size:clamp(2rem,4vw,3rem);margin:.2rem 0 .8rem}
+  .boutique-head p{color:var(--ink-soft);font-size:1.08rem}
+  .shelf-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:stretch;
+  }
+  .shelf-photo{
+    position:relative;
+  }
+  .shelf-photo .frame{
+    border-radius:28px;overflow:hidden;border:5px solid var(--white);
+    box-shadow:0 24px 50px rgba(58,47,38,.16);
+    transform:rotate(-1.5deg);
+  }
+  .shelf-photo img{height:480px;width:100%;object-fit:cover}
+  .shelf-photo .tag{
+    position:absolute;bottom:1.2rem;left:1.2rem;
+    background:var(--white);border:3px solid var(--ink);border-radius:14px;
+    padding:.4rem .9rem;font-family:"Caveat",cursive;font-size:1.5rem;font-weight:700;color:var(--teal);
+    transform:rotate(-4deg);box-shadow:3px 3px 0 var(--ink);
+  }
+  .shelf-list{display:flex;flex-direction:column;gap:1.1rem;justify-content:center}
+  .shelf-card{
+    background:var(--white);border:3px solid var(--ink);border-radius:22px;
+    padding:1.2rem 1.5rem;box-shadow:5px 5px 0 rgba(224,120,86,.35);
+    display:flex;gap:1.1rem;align-items:flex-start;
+  }
+  .shelf-card:nth-child(odd){transform:rotate(.6deg)}
+  .shelf-card:nth-child(even){transform:rotate(-.6deg)}
+  .shelf-card .chip{
+    flex:none;width:52px;height:52px;border-radius:16px;
+    display:grid;place-items:center;background:var(--coral-soft);
+    font-family:"Baloo 2",sans-serif;font-weight:800;font-size:1.3rem;color:var(--coral-dark);
+  }
+  .shelf-card:nth-child(even) .chip{background:var(--teal-soft);color:var(--teal)}
+  .shelf-card h3{font-size:1.2rem;margin-bottom:.25rem}
+  .shelf-card p{color:var(--ink-soft);font-size:.98rem}
+  .boutique-cta{text-align:center;margin-top:2.6rem}
+  .boutique-cta .hand{display:block;font-size:1.6rem;color:var(--coral-dark);margin-bottom:1rem;transform:rotate(-1.5deg)}
+
+  /* ---------- happy pups strip ---------- */
+  .pups{background:var(--cream-deep);padding:4.5rem 1.25rem 5.5rem}
+  .pups-inner{max-width:1100px;margin:0 auto}
+  .pups-head{text-align:center;margin-bottom:2.6rem}
+  .pups-head h2{font-size:clamp(2rem,4vw,3rem);margin:.2rem 0 .6rem}
+  .pups-head p{color:var(--ink-soft)}
+  .polaroids{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:860px;margin:0 auto}
+  .polaroid{
+    background:var(--white);padding:.9rem .9rem 1.1rem;
+    border-radius:12px;box-shadow:0 18px 40px rgba(58,47,38,.14);
+  }
+  .polaroid:nth-child(1){transform:rotate(-2.5deg)}
+  .polaroid:nth-child(2){transform:rotate(2deg)}
+  .polaroid img{border-radius:8px;height:380px;width:100%;object-fit:cover}
+  .polaroid figcaption{
+    font-family:"Caveat",cursive;font-size:1.6rem;text-align:center;
+    color:var(--ink-soft);padding-top:.7rem;
+  }
+
+  /* ---------- visit ---------- */
+  .visit{padding:4.5rem 1.25rem 5rem;background:var(--cream)}
+  .visit-inner{max-width:1000px;margin:0 auto}
+  .visit-card{
+    background:var(--white);border:3px solid var(--ink);border-radius:32px;
+    box-shadow:10px 10px 0 rgba(20,82,79,.16);
+    padding:2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;
+  }
+  .visit h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:.6rem}
+  .visit .addr{font-size:1.08rem;color:var(--ink-soft);margin-bottom:1.6rem}
+  .hours{list-style:none;margin-bottom:1.8rem}
+  .hours li{
+    display:flex;justify-content:space-between;gap:1rem;
+    padding:.55rem 0;border-bottom:2px dashed var(--cream-deep);font-weight:700;
+  }
+  .hours li span:last-child{color:var(--ink-soft);font-weight:600}
+  .hours li.today span:first-child{color:var(--coral-dark)}
+  .visit-actions{display:flex;gap:1rem;flex-wrap:wrap}
+  .fb-link{
+    display:inline-flex;align-items:center;gap:.5rem;
+    color:var(--teal);font-weight:800;text-decoration:none;
+    border-bottom:3px solid var(--teal-soft);padding-bottom:2px;
+  }
+  .fb-link:hover{border-color:var(--teal)}
+  .visit-note{
+    background:var(--teal-soft);border-radius:22px;padding:1.8rem;
+    display:flex;flex-direction:column;justify-content:center;gap:1rem;
+    transform:rotate(.8deg);
+  }
+  .visit-note .hand{font-size:1.7rem;color:var(--teal)}
+  .visit-note p{color:var(--ink-soft)}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--teal-deep);color:#d9e8e2;padding:3rem 1.25rem 2rem}
+  .foot-inner{max-width:1000px;margin:0 auto;text-align:center}
+  .foot-inner .paw{width:54px;height:54px;background:var(--coral);border-radius:50%;display:grid;place-items:center;margin:0 auto 1rem}
+  .foot-inner p{font-size:.95rem;margin-bottom:.5rem}
+  .foot-inner .disclaimer{
+    margin-top:1.4rem;padding-top:1.4rem;border-top:1px solid rgba(217,232,226,.25);
+    font-size:.85rem;color:#a9c4bb;
+  }
+  .foot-inner a{color:var(--peach)}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:900px){
+    .hero-inner{grid-template-columns:1fr;gap:2.2rem}
+    .hero{padding-top:2.2rem}
+    .arch img{height:460px}
+    .shelf-grid{grid-template-columns:1fr}
+    .shelf-photo img{height:380px}
+    .visit-card{grid-template-columns:1fr;padding:1.8rem}
+    .polaroids{grid-template-columns:1fr}
+    .polaroid img{height:340px}
+    .nav-links a.link{display:none}
+    .menu{padding:1.8rem 1.3rem}
+    .menu-item h3{font-size:1.15rem}
+  }
+  @media (max-width:420px){
+    .arch img{height:400px}
+    .hero h1{font-size:2.5rem}
+    .btn{width:100%;text-align:center}
+    .hero-cta .btn{width:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Design preview. A mockup, not the business's website</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="TailWaggers home">
+      <span class="paw" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2.3" ry="3"/><ellipse cx="10" cy="6.5" rx="2.3" ry="3"/><ellipse cx="14.5" cy="6.5" rx="2.3" ry="3"/><ellipse cx="18.8" cy="9.5" rx="2.3" ry="3"/></svg>
+      </span>
+      <span class="word">TailWaggers<small>salon &amp; boutique</small></span>
+    </a>
+    <nav class="nav-links">
+      <a class="link" href="#grooming">Grooming</a>
+      <a class="link" href="#boutique">Boutique</a>
+      <a class="link" href="#visit">Visit</a>
+      <a class="btn small" href="tel:+12283540603">Call to book</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-note">dog grooming + a boutique full of treats</span>
+        <h1>Great hair days for <span class="hl">good dogs.</span></h1>
+        <p class="lede">Full grooms, warm baths, neat nails, and a pop of color for pups who deserve to look their best. Then browse the boutique on your way out. Your dog will thank you with wags.</p>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+12283540603">Call (228) 354-0603</a>
+          <a class="btn teal" href="#boutique">See the boutique</a>
+        </div>
+        <div class="hero-proof">
+
+          <p><a href="https://www.facebook.com/tailwaggerssalonandboutique/" target="_blank" rel="noopener">Visit TailWaggers on Facebook</a></p>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="blob"></div>
+        <div class="blob2"></div>
+        <div class="arch">
+          <img src="img/photo-2.jpg" alt="Dog wearing a bandana">
+        </div>
+        <span class="est-badge">D'Iberville, MS</span>
+        <span class="fresh-badge">fresh cut, happy pup</span>
+        <svg class="wiggle" width="70" height="46" viewBox="0 0 70 46" fill="none" aria-hidden="true">
+          <path d="M4 6 C 24 2, 44 10, 62 34" stroke="#c85f3d" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M52 30 L63 36 L54 42" stroke="#c85f3d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0,35 C240,70 480,0 720,35 C960,70 1200,0 1440,35 L1440,70 L0,70 Z"/></svg>
+
+  <!-- GROOMING MENU -->
+  <section class="groom" id="grooming">
+    <div class="groom-inner">
+      <span class="section-kicker">what we do best</span>
+      <h2>The grooming menu</h2>
+      <p class="intro">Full grooms, baths, nail trims, and more. Call to ask which services suit your dog.</p>
+      <div class="menu">
+        <div class="menu-item">
+          <div class="wrap">
+            <svg class="paw-ic" viewBox="0 0 24 24" fill="#e07856" aria-hidden="true"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2.3" ry="3"/><ellipse cx="10" cy="6.5" rx="2.3" ry="3"/><ellipse cx="14.5" cy="6.5" rx="2.3" ry="3"/><ellipse cx="18.8" cy="9.5" rx="2.3" ry="3"/></svg>
+            <h3>Full grooms</h3>
+            <span class="dots"></span>
+          </div>
+          <p>The whole works: bath, haircut, nails, ears. Your dog walks out looking like the best version of themselves.</p>
+        </div>
+        <div class="menu-item">
+          <div class="wrap">
+            <svg class="paw-ic" viewBox="0 0 24 24" fill="#14524f" aria-hidden="true"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2.3" ry="3"/><ellipse cx="10" cy="6.5" rx="2.3" ry="3"/><ellipse cx="14.5" cy="6.5" rx="2.3" ry="3"/><ellipse cx="18.8" cy="9.5" rx="2.3" ry="3"/></svg>
+            <h3>Baths</h3>
+            <span class="dots"></span>
+          </div>
+          <p>A proper scrub, rinse, and blow dry. Great for muddy paws, beach days, and everything in between.</p>
+        </div>
+        <div class="menu-item">
+          <div class="wrap">
+            <svg class="paw-ic" viewBox="0 0 24 24" fill="#e07856" aria-hidden="true"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2.3" ry="3"/><ellipse cx="10" cy="6.5" rx="2.3" ry="3"/><ellipse cx="14.5" cy="6.5" rx="2.3" ry="3"/><ellipse cx="18.8" cy="9.5" rx="2.3" ry="3"/></svg>
+            <h3>Nail trims</h3>
+            <span class="dots"></span>
+          </div>
+          <p>Quick, gentle, and done right. No more click-clacking across the kitchen floor.</p>
+        </div>
+        <div class="menu-item">
+          <div class="wrap">
+            <svg class="paw-ic" viewBox="0 0 24 24" fill="#14524f" aria-hidden="true"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2.3" ry="3"/><ellipse cx="10" cy="6.5" rx="2.3" ry="3"/><ellipse cx="14.5" cy="6.5" rx="2.3" ry="3"/><ellipse cx="18.8" cy="9.5" rx="2.3" ry="3"/></svg>
+            <h3>Hair coloring</h3>
+            <span class="dots"></span>
+          </div>
+          <p>Pet-safe color for the dog with personality. Ears, tails, and a little flair.</p>
+        </div>
+        <div class="menu-item">
+          <div class="wrap">
+            <svg class="paw-ic" viewBox="0 0 24 24" fill="#e07856" aria-hidden="true"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2.3" ry="3"/><ellipse cx="10" cy="6.5" rx="2.3" ry="3"/><ellipse cx="14.5" cy="6.5" rx="2.3" ry="3"/><ellipse cx="18.8" cy="9.5" rx="2.3" ry="3"/></svg>
+            <h3>Nail painting</h3>
+            <span class="dots"></span>
+          </div>
+          <p>Because a fresh trim deserves a finishing touch. Pick a color and strut.</p>
+        </div>
+      </div>
+      <div class="menu-note">
+        <span class="hand">heads up!</span>
+        Prices depend on breed, size, and coat. Call <strong>(228) 354-0603</strong> and tell us about your dog. We will give you a straight answer.
+      </div>
+    </div>
+  </section>
+
+  <!-- HERITAGE BAND -->
+  <section class="heritage">
+    <div class="heritage-inner">
+      <div class="big-year" style="font-size:clamp(40px,8vw,80px)">GROOM + SHOP</div>
+      <h2>Grooming and a boutique in D'Iberville</h2>
+      <p>Visit TailWaggers on Mallett Road for dog grooming and a look around the boutique.</p>
+
+
+      <div class="paw-row" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="#ffd9b8"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2.3" ry="3"/><ellipse cx="10" cy="6.5" rx="2.3" ry="3"/><ellipse cx="14.5" cy="6.5" rx="2.3" ry="3"/><ellipse cx="18.8" cy="9.5" rx="2.3" ry="3"/></svg>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="#ffd9b8" style="transform:rotate(15deg)"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2.3" ry="3"/><ellipse cx="10" cy="6.5" rx="2.3" ry="3"/><ellipse cx="14.5" cy="6.5" rx="2.3" ry="3"/><ellipse cx="18.8" cy="9.5" rx="2.3" ry="3"/></svg>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="#ffd9b8" style="transform:rotate(-12deg)"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2.3" ry="3"/><ellipse cx="10" cy="6.5" rx="2.3" ry="3"/><ellipse cx="14.5" cy="6.5" rx="2.3" ry="3"/><ellipse cx="18.8" cy="9.5" rx="2.3" ry="3"/></svg>
+      </div>
+    </div>
+  </section>
+  <svg class="wave2" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true" style="background:var(--teal)"><path d="M0,35 C240,70 480,0 720,35 C960,70 1200,0 1440,35 L1440,70 L0,70 Z"/></svg>
+
+  <!-- BOUTIQUE -->
+  <section class="boutique" id="boutique">
+    <div class="boutique-inner">
+      <div class="boutique-head">
+        <span class="section-kicker">half the fun is shopping</span>
+        <h2>The boutique</h2>
+        <p>We are a grooming salon with a real dog boutique attached. Browse the shelves when you visit.</p>
+      </div>
+      <div class="shelf-grid">
+        <div class="shelf-photo">
+          <div class="frame">
+            <img src="img/photo-1.jpg" alt="Inside the TailWaggers boutique: shelves of treats, chews, and dog supplies">
+          </div>
+          <span class="tag">come browse the shelves</span>
+        </div>
+        <div class="shelf-list">
+          <div class="shelf-card">
+            <span class="chip">T</span>
+            <div>
+              <h3>Treats worth begging for</h3>
+              <p>Natural treats and chews your dog will lose their mind over. Stock up while you are here.</p>
+            </div>
+          </div>
+          <div class="shelf-card">
+            <span class="chip">S</span>
+            <div>
+              <h3>Everyday supplies</h3>
+              <p>Bowls, toys, grooming basics, and the stuff you always forget until you run out.</p>
+            </div>
+          </div>
+          <div class="shelf-card">
+            <span class="chip">G</span>
+            <div>
+              <h3>Gifts for dog people</h3>
+              <p>Fun finds for the humans who love them too. Birthdays, gotcha days, or just because.</p>
+            </div>
+          </div>
+          <div class="shelf-card">
+            <span class="chip">?</span>
+            <div>
+              <h3>Not sure what you need?</h3>
+              <p>Call or ask in the salon about the boutique selection.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boutique-cta">
+        <span class="hand">grooming appointment + shopping trip = one happy errand</span>
+        <a class="btn" href="tel:+12283540603">Call to book a groom</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HAPPY PUPS -->
+  <section class="pups">
+    <div class="pups-inner">
+      <div class="pups-head">
+        <span class="section-kicker">fresh from the table</span>
+        <h2>Happy pups, happy humans</h2>
+        <p>Dog photos included in this design preview.</p>
+      </div>
+      <div class="polaroids">
+        <figure class="polaroid">
+          <img src="img/photo-3.jpg" alt="A golden retriever and a bulldog">
+          <figcaption>a couple of canine companions</figcaption>
+        </figure>
+        <figure class="polaroid">
+          <img src="img/photo-4.jpg" alt="A small dog on a leash">
+          <figcaption>a little dog with personality</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="visit-inner">
+      <div class="visit-card">
+        <div>
+          <h2>Come see us</h2>
+          <p class="addr">3200 Mallett Road, Ste E-3<br>D'Iberville, MS 39540</p>
+          <ul class="hours">
+            <li><span>Tuesday - Friday</span><span>8:00 AM - 4:00 PM</span></li>
+            <li><span>Saturday</span><span>8:00 AM - 2:00 PM</span></li>
+            <li><span>Sunday - Monday</span><span>Closed</span></li>
+          </ul>
+          <div class="visit-actions">
+            <a class="btn" href="tel:+12283540603">Call (228) 354-0603</a>
+            <a class="fb-link" href="https://m.facebook.com/tailwaggerssalonandboutique/" target="_blank" rel="noopener">Find us on Facebook</a>
+          </div>
+        </div>
+        <div class="visit-note">
+          <span class="hand">a quick tip from us</span>
+          <p>Questions? Call (228) 354-0603.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <span class="paw" aria-hidden="true">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><ellipse cx="12" cy="15.5" rx="5" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2.3" ry="3"/><ellipse cx="10" cy="6.5" rx="2.3" ry="3"/><ellipse cx="14.5" cy="6.5" rx="2.3" ry="3"/><ellipse cx="18.8" cy="9.5" rx="2.3" ry="3"/></svg>
+    </span>
+    <p><strong style="color:#fff">TailWaggers Salon &amp; Boutique</strong></p>
+    <p>3200 Mallett Road, Ste E-3, D'Iberville, MS 39540 &nbsp;|&nbsp; <a href="tel:+12283540603">(228) 354-0603</a></p>
+    <p class="disclaimer">Design preview. A free mockup, not affiliated with or endorsed by the business.</p>
+  </div>
+</footer>
+
+</body>
+</html>

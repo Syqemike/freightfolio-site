@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Inspirations Dance Studio concept (Website Dev shift 2026-10-30 03:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/ballet.jpg: Ballet dancers practicing poses. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/fabulous-feet-dance-studio-403e2973cff381a5/img
+
+- img/barre.jpg: Young dancers at the barre. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/fabulous-feet-dance-studio-403e2973cff381a5/img
+
+- img/poses.jpg: Young dancers in ballet class. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/fabulous-feet-dance-studio-403e2973cff381a5/img

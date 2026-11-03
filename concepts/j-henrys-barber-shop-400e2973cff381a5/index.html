@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>J Henry's Barber Shop | Parramore Orlando FL Website Design Preview</title>
+<meta name="description" content="Design preview concept for J Henry's Barber Shop, 644 W Church St, Orlando FL. Historic Parramore barbershop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;0,900;1,500;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f4ecdc;
+    --paper-deep:#e9dec6;
+    --ink:#2c2116;
+    --ink-soft:#5c4c3a;
+    --green:#234034;
+    --oxblood:#7c2d26;
+    --gold:#a8894f;
+    --hairline:#c9b98f;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Source Serif 4","Liberation Serif",Georgia,"Times New Roman",serif;
+    font-size:18px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:60;
+    background:repeating-linear-gradient(0deg,rgba(120,95,60,.018) 0 2px,transparent 2px 4px);
+  }
+  .serif-display{font-family:"Playfair Display","Liberation Serif",Georgia,serif}
+  .smallcaps{font-family:"Liberation Sans",Arial,Helvetica,sans-serif;letter-spacing:.28em;text-transform:uppercase;font-size:11.5px;font-weight:700}
+
+  /* ---------- disclosure bar ---------- */
+  .disclosure{
+    background:var(--oxblood);color:#f7efdd;
+    text-align:center;padding:10px 18px;
+    font-family:"Liberation Sans",Arial,sans-serif;font-size:12.5px;line-height:1.5;
+  }
+  .disclosure strong{letter-spacing:.12em}
+
+  /* ---------- masthead ---------- */
+  .masthead{border-bottom:3px double var(--ink);padding:26px 24px 18px;text-align:center;background:var(--paper)}
+  .dateline{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin-bottom:14px;color:var(--ink-soft)}
+  .nameplate{font-weight:900;line-height:.95;font-size:clamp(52px,10vw,128px);letter-spacing:.01em}
+  .nameplate .amp{color:var(--green)}
+  .tagline{font-style:italic;color:var(--ink-soft);font-size:clamp(16px,2.2vw,21px);margin-top:10px}
+  .mast-rule{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);height:5px;margin:16px auto 0;max-width:1180px}
+
+  /* ---------- sticky nav ---------- */
+  nav.sections{
+    position:sticky;top:0;z-index:50;background:var(--ink);color:var(--paper);
+    display:flex;justify-content:center;gap:6px;flex-wrap:wrap;
+    padding:0 12px;box-shadow:0 2px 8px rgba(0,0,0,.25);
+  }
+  nav.sections a{
+    color:var(--paper);text-decoration:none;
+    font-family:"Liberation Sans",Arial,sans-serif;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;
+    padding:14px 20px;display:block;
+  }
+  nav.sections a:hover{background:var(--green);color:#fff}
+  nav.sections a.call{background:var(--green);color:#fff}
+
+  /* ---------- hero ---------- */
+  .hero{max-width:1180px;margin:0 auto;padding:34px 24px 10px}
+  .hero figure{background:#fffdf6;border:1px solid var(--hairline);padding:14px 14px 0;box-shadow:0 6px 24px rgba(60,45,25,.12)}
+  .hero img{width:100%;height:auto;display:block;filter:sepia(.14) contrast(1.02)}
+  figcaption{font-size:13.5px;color:var(--ink-soft);font-style:italic;padding:10px 4px 14px;line-height:1.5}
+  .lede{
+    max-width:1180px;margin:26px auto 0;padding:0 24px;
+    display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start;
+  }
+  .lede h2{font-size:clamp(28px,3.6vw,44px);font-weight:800;line-height:1.12;color:var(--green)}
+  .lede p{margin-bottom:14px}
+  .dropcap::first-letter{
+    font-family:"Playfair Display",Georgia,serif;font-weight:800;font-size:3.4em;
+    float:left;line-height:.85;padding:6px 10px 0 0;color:var(--oxblood);
+  }
+
+  /* ---------- sections ---------- */
+  section.block{max-width:1180px;margin:0 auto;padding:56px 24px 10px}
+  .section-head{text-align:center;margin-bottom:30px}
+  .section-head .kicker{color:var(--oxblood);margin-bottom:10px}
+  .section-head h2{font-size:clamp(30px,4vw,48px);font-weight:800;line-height:1.1}
+  .section-head .rule{width:120px;border-top:3px solid var(--green);margin:16px auto 0}
+
+  /* timeline */
+  .timeline{max-width:860px;margin:0 auto;border-top:1px solid var(--hairline)}
+  .trow{display:grid;grid-template-columns:130px 1fr;gap:24px;padding:20px 6px;border-bottom:1px solid var(--hairline)}
+  .trow .yr{font-family:"Playfair Display",Georgia,serif;font-weight:800;font-size:26px;color:var(--green);white-space:nowrap}
+  .trow p{color:var(--ink)}
+  .trow p strong{color:var(--ink)}
+
+  /* ethos pull */
+  .ethos{
+    max-width:860px;margin:38px auto 0;text-align:center;
+    border-top:3px double var(--ink);border-bottom:3px double var(--ink);padding:26px 20px;
+  }
+  .ethos blockquote{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-size:clamp(22px,3vw,32px);line-height:1.35}
+  .ethos .attr{margin-top:12px;color:var(--ink-soft);font-size:14px;font-style:italic}
+  .house-rules{max-width:860px;margin:26px auto 0;text-align:center;font-size:15px;color:var(--ink-soft)}
+  .house-rules .smallcaps{color:var(--oxblood);display:block;margin-bottom:8px}
+
+  .story-grid{max-width:1180px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .story-grid figure{background:#fffdf6;border:1px solid var(--hairline);padding:12px 12px 0}
+  .story-grid img{width:100%;height:auto;display:block}
+  .prefire-note{font-size:13px;color:var(--ink-soft);font-style:italic;padding:8px 4px 12px}
+
+  /* ---------- services price card ---------- */
+  .price-wrap{max-width:760px;margin:0 auto;background:#fffdf6;border:1px solid var(--hairline);box-shadow:0 6px 24px rgba(60,45,25,.10)}
+  .price-head{background:var(--green);color:#f4ecdc;text-align:center;padding:22px 18px}
+  .price-head h3{font-size:30px;font-weight:800;letter-spacing:.02em}
+  .price-head p{font-size:13.5px;font-style:italic;opacity:.92;margin-top:6px}
+  .price-list{padding:10px 34px 26px}
+  .price-item{display:flex;align-items:baseline;gap:10px;padding:15px 0;border-bottom:1px dotted var(--hairline)}
+  .price-item:last-child{border-bottom:none}
+  .price-item .name{font-weight:600;font-size:19px}
+  .price-item .dots{flex:1;border-bottom:2px dotted var(--hairline);transform:translateY(-4px)}
+  .price-item .cost{font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:21px;color:var(--green);white-space:nowrap}
+  .price-item .ask{font-style:italic;color:var(--ink-soft);font-size:15.5px;white-space:nowrap}
+  .price-note{padding:0 34px 30px;font-size:14.5px;color:var(--ink-soft);font-style:italic}
+
+  .service-photo{max-width:1180px;margin:36px auto 0}
+  .service-photo figure{background:#fffdf6;border:1px solid var(--hairline);padding:14px 14px 0}
+
+  /* ---------- gallery ---------- */
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1180px;margin:0 auto}
+  .gallery figure{background:#fffdf6;border:1px solid var(--hairline);padding:12px 12px 0}
+  .gallery img{width:100%;height:340px;object-fit:cover;display:block}
+  .gallery figure.wide{grid-column:1/-1}
+  .gallery figure.wide img{height:440px}
+
+  /* ---------- visit ---------- */
+  .visit-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .card{background:#fffdf6;border:1px solid var(--hairline);padding:30px 32px}
+  .card h3{font-size:24px;font-weight:800;color:var(--green);margin-bottom:14px}
+  .hours-table{width:100%;border-collapse:collapse;font-size:17px}
+  .hours-table td{padding:9px 0;border-bottom:1px dotted var(--hairline)}
+  .hours-table td:last-child{text-align:right;font-weight:600}
+  .hours-table tr.closed td{color:var(--ink-soft);font-style:italic}
+  .visit-photo{max-width:1180px;margin:36px auto 0}
+  .visit-photo figure{background:#fffdf6;border:1px solid var(--hairline);padding:14px 14px 0}
+  .btn{
+    display:inline-block;background:var(--green);color:#fff;text-decoration:none;
+    font-family:"Liberation Sans",Arial,sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13.5px;
+    padding:16px 34px;margin-top:8px;
+  }
+  .btn:hover{background:var(--oxblood)}
+  .btn.ghost{background:transparent;color:var(--green);border:2px solid var(--green)}
+  .btn.ghost:hover{background:var(--green);color:#fff}
+  .contact-panel{
+    max-width:860px;margin:0 auto;text-align:center;background:var(--ink);color:var(--paper);
+    padding:52px 30px;border-top:6px solid var(--green);
+  }
+  .contact-panel h2{font-size:clamp(30px,4vw,46px);font-weight:800;margin-bottom:12px}
+  .contact-panel p{color:#d8cdb4;margin-bottom:20px}
+  .contact-panel .phone{font-family:"Playfair Display",Georgia,serif;font-size:clamp(26px,4vw,40px);font-weight:700;color:#fff;text-decoration:none}
+  .contact-panel .phone:hover{color:var(--gold)}
+
+  footer{background:#211a11;color:#cbbb9c;padding:44px 24px 30px;margin-top:70px}
+  .foot-inner{max-width:1180px;margin:0 auto;font-size:14px;line-height:1.7}
+  .foot-inner .smallcaps{color:var(--gold);margin-bottom:10px;display:block}
+  .foot-inner p{margin-bottom:10px}
+  .foot-inner a{color:#e8dcc0}
+  .rating-line{color:#f4ecdc;font-weight:600;margin-top:16px}
+  .built-by{margin-top:22px;padding-top:16px;border-top:1px solid #4a3b28;color:#8a7757;font-size:12.5px}
+
+  @media(max-width:760px){
+    body{font-size:16.5px}
+    .lede,.story-grid,.gallery,.visit-grid{grid-template-columns:1fr}
+    .trow{grid-template-columns:1fr;gap:6px}
+    .gallery img{height:250px}
+    .gallery figure.wide img{height:300px}
+    .price-list{padding:6px 20px 20px}
+    .price-note{padding:0 20px 24px}
+    nav.sections a{padding:12px 10px;font-size:11px;letter-spacing:.16em}
+    .contact-panel{padding:40px 20px}
+    section.block{padding:44px 18px 6px}
+    .hero{padding:24px 16px 6px}
+    .lede{padding:0 18px}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure">
+  <strong>Design Preview.</strong> This concept website was created by Freightfolio to show what a website for J Henry's Barber Shop could look like. It is not the business's actual website and is not affiliated with or endorsed by the business.
+</div>
+
+<header class="masthead">
+  <div class="dateline smallcaps">
+    <span>Parramore, Orlando, Florida</span>
+    <span>West Church Street</span>
+    <span>Vol. I, The Barbershop Record</span>
+  </div>
+  <h1 class="nameplate serif-display">J&nbsp;HENRY&rsquo;S<br>BARBER SHOP</h1>
+  <p class="tagline">Thirty years of good cuts and good advice, on West Church Street.</p>
+  <div class="mast-rule"></div>
+</header>
+
+<nav class="sections" aria-label="Sections">
+  <a href="#story">Story</a>
+  <a href="#services">Services</a>
+  <a href="#visit">Visit</a>
+  <a href="#contact">Contact</a>
+  <a class="call" href="tel:+14074250465">Call to book</a>
+</nav>
+
+<div class="hero">
+  <figure>
+    <img src="img/owner-storefront.jpg" alt="J. Henry standing in front of the restored J Henry's Barber Shop storefront on West Church Street" loading="eager">
+    <figcaption>J. Henry outside the restored shop on W. Church St, spring 2024. The window lettering lists hours of Tuesday through Saturday, 9AM to 6PM. (Photo: City of Orlando via Bungalower)</figcaption>
+  </figure>
+</div>
+
+<div class="lede">
+  <div>
+    <h2 class="serif-display">A Parramore landmark, cut by cut, since he first picked up the clippers here in 1991.</h2>
+  </div>
+  <div>
+    <p class="dropcap">J. Henry started working in this barbershop in 1991 and bought it about three years later. What he built on West Church Street became a fixture of historic Parramore: a shop where the cuts are sharp, the conversation is steady, and the welcome is the same whether it is your first visit or your five hundredth.</p>
+    <p>Fire took the building in 2021. The community helped bring it back. In March 2024 the doors opened again, and in 2025 the restored shop earned a Downtown Orlando Partnership award for its redesign. The chairs are new. The standard is not.</p>
+  </div>
+</div>
+
+<section class="block" id="story">
+  <div class="section-head">
+    <p class="kicker smallcaps">Our Story</p>
+    <h2 class="serif-display">Thirty Years on Church Street</h2>
+    <div class="rule"></div>
+  </div>
+
+  <div class="timeline">
+    <div class="trow">
+      <div class="yr serif-display">1984</div>
+      <p><strong>J. Henry earns his barber license.</strong> An Orlando native and Jones High School graduate, he trains for a trade he would practice for the rest of his life.</p>
+    </div>
+    <div class="trow">
+      <div class="yr serif-display">1991</div>
+      <p><strong>He starts barbering in this shop.</strong> About three years later he buys the business and makes it his own.</p>
+    </div>
+    <div class="trow">
+      <div class="yr serif-display">2020</div>
+      <p><strong>A voice for the trade.</strong> He serves on the Orange County Economic Recovery Task Force and is appointed to the state Board of Barbers by Gov. DeSantis in December 2020.</p>
+    </div>
+    <div class="trow">
+      <div class="yr serif-display">2021</div>
+      <p><strong>Fire destroys the shop.</strong> Faulty wiring sparks an electrical fire on November 13, 2021, during EDC weekend. The building is lost.</p>
+    </div>
+    <div class="trow">
+      <div class="yr serif-display">2024</div>
+      <p><strong>The comeback.</strong> Rebuilt with City of Orlando and Community Redevelopment Agency Facade Program support plus community crowdfunding, the shop holds its ribbon-cutting in March 2024. Mayor Buddy Dyer receives the first haircut in the restored shop.</p>
+    </div>
+    <div class="trow">
+      <div class="yr serif-display">2025</div>
+      <p><strong>Recognized.</strong> J Henry's wins the 2025 Downtown Orlando Partnership Golden Brick Award in the Redesign and Renovation category.</p>
+    </div>
+  </div>
+
+  <div class="ethos">
+    <blockquote class="serif-display">&ldquo;Thirty years of good cuts and good advice.&rdquo;</blockquote>
+    <p class="attr">The shop's standing motto</p>
+  </div>
+  <p class="house-rules"><span class="smallcaps">House Rules</span>Profanity, swearing, drugs, alcohol, and smoking are not allowed in the shop. A clean, respectful shop for everybody.</p>
+
+  <div class="story-grid">
+    <figure>
+      <img src="img/owner-apron.jpg" alt="John Henry in a barber apron outside the shop's front windows" loading="eager">
+      <figcaption>John Henry outside the front windows after the 2024 reopening. The window cards advertise the weekly specials. (Photo: Oscar Peoples via Florida Sun Review)</figcaption>
+    </figure>
+    <figure>
+      <img src="img/interior-prefire.jpg" alt="The original shop interior before the 2021 fire, with classic barber chairs and checkered floor" loading="eager">
+      <figcaption>The original shop before the 2021 fire. Classic chairs, checkered floor, and thirty years of history in the walls. (Google Maps user photo, Jan 2020)</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="services">
+  <div class="section-head">
+    <p class="kicker smallcaps">Services &amp; Prices</p>
+    <h2 class="serif-display">The Price Card</h2>
+    <div class="rule"></div>
+  </div>
+
+  <div class="price-wrap">
+    <div class="price-head">
+      <h3 class="serif-display">J Henry&rsquo;s Barber Shop</h3>
+      <p>Posted prices from the shop window, effective June 1, 2025</p>
+    </div>
+    <div class="price-list">
+      <div class="price-item"><span class="name">Men&rsquo;s Cut</span><span class="dots"></span><span class="cost">$23.00</span></div>
+      <div class="price-item"><span class="name">Boys&rsquo; Cut, 15 &amp; under</span><span class="dots"></span><span class="cost">$18.00</span></div>
+      <div class="price-item"><span class="name">Senior Haircut, Wednesdays</span><span class="dots"></span><span class="cost">$9.00</span></div>
+      <div class="price-item"><span class="name">Kids&rsquo; Haircut, Tuesdays</span><span class="dots"></span><span class="cost">$10.00</span></div>
+      <div class="price-item"><span class="name">Straight Razor Shave</span><span class="dots"></span><span class="ask">Call for price</span></div>
+      <div class="price-item"><span class="name">Beard Trim</span><span class="dots"></span><span class="ask">Call for price</span></div>
+      <div class="price-item"><span class="name">Facial</span><span class="dots"></span><span class="ask">Call for price</span></div>
+    </div>
+    <p class="price-note">Haircuts, straight razor shaves, beard trims, and facials, the way the shop has done them for decades. To book, call <a href="tel:+14074250465">+1 407-425-0465</a>.</p>
+  </div>
+
+  <div class="service-photo">
+    <figure>
+      <img src="img/interior-cut.jpg" alt="J. Henry cutting a customer's hair inside the renovated shop" loading="eager" style="width:100%;height:auto;display:block;max-height:560px;object-fit:cover">
+      <figcaption>J. Henry at work inside the renovated shop, summer 2024. (Photo: Connor Barry via The Community Paper)</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="gallery" aria-label="Photo gallery">
+  <div class="section-head">
+    <p class="kicker smallcaps">From the Shop</p>
+    <h2 class="serif-display">The Shop, As It Stands</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="gallery">
+    <figure class="wide">
+      <img src="img/storefront-exterior.jpg" alt="Storefront exterior of J Henry's Barber Shop after reopening" loading="eager">
+      <figcaption>The storefront after reopening, with the weekly specials posted in the window: senior haircuts $9 on Wednesdays, kids haircuts $10 on Tuesdays. (Photo: Connor Barry via The Community Paper, Jul 2024)</figcaption>
+    </figure>
+    <figure>
+      <img src="img/interior-renovated.jpg" alt="Renovated interior with waiting chairs, mirrors, and hairstyle guide posters" loading="eager">
+      <figcaption>The renovated interior: waiting chairs, mirrors, and the posted price list. (Google Maps user photo, May 2024)</figcaption>
+    </figure>
+    <figure>
+      <img src="img/storefront-2025.jpg" alt="Storefront exterior in 2025 with the June 2025 price notice in the window" loading="eager">
+      <figcaption>The storefront in 2025, with the June 1, 2025 price notice posted: men&rsquo;s cuts $23, boys 15 and under $18. (Google Maps user photo, Apr 2025)</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="visit">
+  <div class="section-head">
+    <p class="kicker smallcaps">Visit</p>
+    <h2 class="serif-display">Find the Shop</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="visit-grid">
+    <div class="card">
+      <h3 class="serif-display">Hours</h3>
+      <table class="hours-table">
+        <tr><td>Tuesday</td><td>9AM &ndash; 6PM</td></tr>
+        <tr><td>Wednesday</td><td>9AM &ndash; 6PM</td></tr>
+        <tr><td>Thursday</td><td>9AM &ndash; 6PM</td></tr>
+        <tr><td>Friday</td><td>9AM &ndash; 6PM</td></tr>
+        <tr><td>Saturday</td><td>9AM &ndash; 6PM</td></tr>
+        <tr class="closed"><td>Sunday &amp; Monday</td><td>Closed</td></tr>
+        <tr class="closed"><td>Major holidays</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3 class="serif-display">Address</h3>
+      <p style="font-size:19px;margin-bottom:10px">J Henry&rsquo;s Barber Shop<br>644 W Church St<br>Orlando, FL 32805</p>
+      <p style="margin-bottom:18px"><a href="tel:+14074250465" style="color:var(--green);font-weight:700">+1 407-425-0465</a></p>
+      <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=J+Henry%27s+Barber+Shop+644+W+Church+St+Orlando+FL+32805" target="_blank" rel="noopener">Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contact">
+  <div class="contact-panel">
+    <p class="smallcaps" style="color:var(--gold);margin-bottom:14px">Contact</p>
+    <h2 class="serif-display">Walk in or call ahead.</h2>
+    <p>There is no online booking. To set up your cut, call the shop directly.</p>
+    <a class="phone serif-display" href="tel:+14074250465">+1 407-425-0465</a><br>
+    <a class="btn" href="tel:+14074250465" style="margin-top:26px">Call to book</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <span class="smallcaps">About this page</span>
+    <p>This is a <strong>design preview</strong> created by Freightfolio to show J Henry&rsquo;s Barber Shop what a website for the business could look like. It is not the business&rsquo;s actual website and is not affiliated with or endorsed by the business.</p>
+    <p><strong>Photo credits.</strong> Photos: City of Orlando via Bungalower; Connor Barry via The Community Paper; Oscar Peoples via Florida Sun Review; Google Maps user photos.</p>
+    <p class="rating-line">Rated 4.7 from 15 Groupon reviews.</p>
+    <p>J Henry&rsquo;s Barber Shop &middot; 644 W Church St, Orlando, FL 32805 &middot; <a href="tel:+14074250465">+1 407-425-0465</a></p>
+    <p class="built-by">Concept website by Freightfolio &middot; https://freightfolio.net &middot; This page is a noindex design preview.</p>
+  </div>
+</footer>
+
+</body>
+</html>

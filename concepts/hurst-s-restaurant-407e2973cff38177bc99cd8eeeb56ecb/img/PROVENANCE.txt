@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Hurst's Restaurant concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- drumsticks-sauce.jpg
+  Caption: Fried chicken drumsticks with a dipping sauce. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/20408459/ . Stock photo, not a photo of this business.
+
+- wings-towel.jpg
+  Caption: Golden brown fried chicken wings on a paper towel. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/9872916/ . Stock photo, not a photo of this business.
+
+- diner-plate.jpg
+  Caption: A plate of chicken fried steak with green beans, a roll, and gravy. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/40011111/ . Stock photo, not a photo of this business.
+
+- southern-fish.jpg
+  Caption: Southern fried fish with fries and dipping sauces. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/28449691/ . Stock photo, not a photo of this business.
+

@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Addie Fath Photography concept (Website Dev shift 2026-10-30 01:59 CT, Addie add-on)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo." All three are free Pexels stock photos, downloaded from Pexels and converted to JPEG.
+
+- img/hero.jpg: Parents holding a baby outdoors in warm light. Stock photo. Source: https://www.pexels.com/photo/happy-family-with-baby-enjoying-sunny-outdoors-36234792/
+
+- img/window.jpg: A woman seated by a window in soft natural light. Stock photo. Source: https://www.pexels.com/photo/a-woman-sitting-on-the-chair-while-looking-at-the-window-7438491/
+
+- img/family.jpg: A family of four on stone steps outdoors in sunlight. Stock photo. Source: https://www.pexels.com/photo/happy-family-posing-outdoors-in-nature-38866854/

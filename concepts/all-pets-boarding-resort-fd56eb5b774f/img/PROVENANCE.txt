@@ -1,0 +1,45 @@
+PHOTO PROVENANCE - All Pets Boarding Resort concept site
+Built 2026-10-23.
+
+REAL BUSINESS PHOTOS (2):
+1. img/real-team.jpg
+   Depicts: Staff team posing on the front porch of the resort building.
+   Source URL: https://img.localitybiz.com/ANXAkqEw6nY9r04P36SSFTCoWwsRy3_urdEFam7xziBYCXISmS_pGcnEGAxnRjdsE2kKDMGCvQzh3FW7rVRe1fmifAFeP67fPwCD6Q=s1600-w1600
+   Found via image search for "All Pets Boarding Resort Loomis", hosted on a localitybiz.com
+   directory page titled for All Pets Boarding Resort, Loomis CA (Google-indexed photo, likely
+   the business's own Google Business photos). Resized from 1600x1556 to 1600 width, JPEG q80.
+
+2. img/real-office.jpg
+   Depicts: Front office / check-in counter of the resort.
+   Source URL: https://img.localitybiz.com/ANXAkqGZU1NMcDeQb1GjWv6c4Vn-CpVDN7RbYVy_auLc-A4TdEvJysKnZKW4KDr1jtGntvP6Y_h3D9STZSyPyFaKcQ1TUMqm_sAmtA=s1600-w1600
+   Found via image search for "All Pets Boarding Resort Loomis", hosted on a localitybiz.com
+   directory page titled for All Pets Boarding Resort, Loomis CA (Google-indexed photo, likely
+   the business's own Google Business photos). Resized to 1600 width, JPEG q80.
+
+STOCK PHOTOS (Pexels, free license; all captioned "Stock photo" on the site):
+3. img/hero-pups.jpg
+   Depicts: Two happy golden retriever puppies sitting in a meadow.
+   Source: Pexels photo 1108099 - https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg
+   Caption on site: "Stock photo"
+
+4. img/gate-dogs.jpg
+   Depicts: Two golden retrievers with paws up over a stable gate.
+   Source: Pexels photo 7635904 - https://images.pexels.com/photos/7635904/pexels-photo-7635904.jpeg
+   (bottom portion with a paper form cropped out). Caption on site: "Stock photo"
+
+5. img/cat-condo.jpg
+   Depicts: A tabby cat with white chest sitting on a wicker basket.
+   Source: Pexels photo 1543793 - https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg
+   Caption on site: "Stock photo"
+
+6. img/groom.jpg
+   Depicts: A groomer blow-drying a Yorkshire Terrier on a grooming table.
+   Source: Pexels photo 6131580 - https://images.pexels.com/photos/6131580/pexels-photo-6131580.jpeg
+   Caption on site: "Stock photo"
+
+7. img/happy-dog.jpg
+   Depicts: A smiling golden retriever looking at the camera indoors.
+   Source: Pexels photo 2253275 - https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg
+   Caption on site: "Stock photo"
+
+All images compressed to max width 1600, JPEG quality 80, each well under 5 MB.

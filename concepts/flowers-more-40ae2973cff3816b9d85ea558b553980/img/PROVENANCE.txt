@@ -1,0 +1,8 @@
+PHOTOS (rebuild run130):
+- storefront.jpg: REAL photo of Flowers & More (beige storefront, FLOWERS & MORE lettering, brown awning, white picket fence), downloaded from the business Google listing image and viewed before use. Captioned as a photo of the business from its Google listing.
+- seasonal-arrangement.jpg: A mixed peony and rose arrangement. Stock photo, labeled as such on every page.
+- everyday-bouquet.jpg: A pink ranunculus bouquet. Stock photo, labeled as such on every page.
+- gift-bouquet.jpg: A red rose bouquet. Stock photo, labeled as such on every page.
+Source pool for stock: beth-cranford-floral-designs concept pool (verified stock pool reused by the prior build); stock photos are not photos of Flowers & More.
+SOURCING CHECK 2026-11-01 (live browser): Google Maps listing verified (1000 W Franklin St, Evansville, IN 47710; phone (812) 424-8931; flowersandmorein.com) with a real photo gallery; Facebook page verified (facebook.com/flowersandmoreevansville, Flowers & More Evansville, same address/phone/website) with real shop photos; Instagram profile found (flowersandmoreeville) but post grid not verifiable logged-out; Yelp bot-blocked (DataDome), not verified directly.
+CAVEAT: public posting alone does not prove a reuse license; the listing photo is credited to the business Google listing in its caption.

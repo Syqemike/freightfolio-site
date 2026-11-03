@@ -1,0 +1,33 @@
+# Freightfolio - website design agency site (Cloudflare Pages)
+#
+# This file declares the KV bindings the Functions need. Secret VALUES are
+# never stored here; they are set in the Cloudflare dashboard
+# (Pages project > Settings > Environment variables) or via
+# `wrangler pages secret put <NAME>`.
+
+name = "freightfolio-site"
+compatibility_date = "2026-10-01"
+
+# ---------------------------------------------------------------------------
+# KV namespaces
+# Replace REPLACE_WITH_KV_ID with the real namespace ID from the dashboard
+# (Workers & Pages > KV > namespace > ID). Preview IDs are optional; when
+# omitted, preview deployments share the production namespaces.
+#
+# The LEADS_KV binding is optional at runtime: functions/api/lead.js stores a
+# copy of each lead there when bound, and still works without it.
+# ---------------------------------------------------------------------------
+[[kv_namespaces]]
+binding = "LEADS_KV"
+id = "REPLACE_WITH_LEADS_KV_ID"
+preview_id = "REPLACE_WITH_LEADS_KV_PREVIEW_ID"
+
+# ---------------------------------------------------------------------------
+# Non-secret environment variables (safe to store in git)
+# Secrets (RESEND_API_KEY) are set in the dashboard and are intentionally
+# absent here.
+#   LEAD_TO_EMAIL - where lead emails are sent (default: hello@freightfolio.net)
+# ---------------------------------------------------------------------------
+[vars]
+PUBLIC_ORIGIN = "https://freightfolio.net"
+LEAD_TO_EMAIL = "hello@freightfolio.net"

@@ -1,0 +1,10 @@
+PHOTO PROVENANCE - PM3 Fishing Charters concept site (Rebuild run112, 2026-10-30)
+
+- real-topwater.jpg: An angler casting from the boat at sunrise on calm water.
+  REAL photo from the business's own website pm3fishingcharters.com (homepage image,
+  "early morning topwater", viewed before use). Used on index.html only.
+- shoreline.jpg: Sunset over a calm bay beside a beach and rock jetty. Stock photo.
+  Source: Pool copy: dominator-fishing-charters-405e2973cff381b2a1/img/shoreline.jpg.
+- deck.jpg: A fishing boat deck with crates, nets, buoys, and rope. Stock photo.
+  Source: Pool copy: dominator-fishing-charters-405e2973cff381b2a1/img/deck.jpg.
+The former hero sunset.jpg (stock) was removed; no page references it.

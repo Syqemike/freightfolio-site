@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surfs Up Auto Detailing | Mobile Detailing on the MS Gulf Coast</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --deep:#07333b; --deep2:#052730; --aqua:#7fe0d4; --aqua-d:#3fbfae;
+  --sand:#f6f3ea; --sand2:#ece7d6; --ink:#12282c; --line:#d8d3bf;
+}
+html{scroll-behavior:smooth}
+body{background:var(--sand);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.arch{font-family:'Archivo',sans-serif}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+
+/* disclosure */
+.disclosure{background:var(--aqua);color:var(--deep2);text-align:center;font-size:11.5px;letter-spacing:2.4px;
+  text-transform:uppercase;padding:9px 16px;font-weight:700}
+
+/* util */
+.util{background:var(--deep2);color:#cfe6e0;font-size:13px}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+.util a.tel{color:var(--aqua);text-decoration:none;font-weight:700}
+
+/* nav */
+nav{background:var(--sand);border-bottom:2px solid var(--deep);position:sticky;top:0;z-index:20}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:13px;padding-bottom:13px;flex-wrap:wrap}
+.brand{text-decoration:none;line-height:1.05}
+.brand .n{font-family:'Archivo',sans-serif;font-weight:900;font-size:24px;letter-spacing:.5px;color:var(--deep)}
+.brand .n span{color:var(--aqua-d)}
+.brand .s{display:block;font-size:10.5px;letter-spacing:3.2px;text-transform:uppercase;color:var(--aqua-d);font-weight:700;margin-top:2px}
+.navlinks{display:flex;gap:26px;flex-wrap:wrap}
+.navlinks a{font-size:13px;letter-spacing:1.8px;text-transform:uppercase;text-decoration:none;color:#55686a;font-weight:600}
+.navlinks a:hover,.navlinks a.on{color:var(--deep);border-bottom:2px solid var(--aqua-d)}
+
+/* hero */
+.hero{position:relative;background:var(--deep);color:#fff;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(100deg,rgba(7,51,59,.94) 30%,rgba(7,51,59,.45) 65%,rgba(7,51,59,.15) 100%)}
+.hero .wrap{position:relative;padding-top:110px;padding-bottom:110px}
+.eyebrow{font-size:13px;letter-spacing:3.5px;text-transform:uppercase;color:var(--aqua);font-weight:700;margin-bottom:18px}
+.hero h1{font-size:clamp(46px,7.5vw,96px);font-weight:900;line-height:.98;letter-spacing:-1px;max-width:760px;margin-bottom:20px}
+.hero h1 .aq{color:var(--aqua)}
+.hero p.lede{font-size:19px;color:#dcebe7;max-width:560px;margin-bottom:32px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;font-family:'Archivo',sans-serif;font-size:14px;letter-spacing:1.8px;text-transform:uppercase;font-weight:800;
+  text-decoration:none;background:var(--aqua);color:var(--deep2);padding:17px 34px;border:none;cursor:pointer}
+.btn:hover{background:#fff}
+.btn.ghost{background:transparent;color:#fff;border:2px solid var(--aqua)}
+.btn.ghost:hover{background:var(--aqua);color:var(--deep2)}
+.hero .open24{margin-top:26px;display:inline-block;background:rgba(5,39,48,.75);border:1px solid var(--aqua-d);
+  padding:10px 18px;font-size:13.5px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;color:var(--aqua)}
+
+/* route band */
+.route{background:var(--aqua);color:var(--deep2);overflow:hidden}
+.route .wrap{padding-top:20px;padding-bottom:20px}
+.route .label{font-family:'Archivo',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:800;margin-bottom:8px}
+.route .towns{font-family:'Archivo',sans-serif;font-size:clamp(17px,2.6vw,26px);font-weight:800;letter-spacing:.5px;line-height:1.5}
+.route .towns span{margin-right:14px}
+.route .towns span::after{content:"\00B7";margin-left:14px;opacity:.5}
+.route .towns span:last-child::after{content:""}
+
+/* sections */
+.sec{padding:80px 0}
+.sec-head{margin-bottom:38px;max-width:740px}
+.sec-head .eyebrow{color:var(--aqua-d)}
+.sec-head h2{font-size:clamp(32px,4.6vw,52px);font-weight:800;letter-spacing:-.5px;line-height:1.05;margin-bottom:14px}
+.sec-head p{font-size:17.5px;color:#4d6165}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{background:#fff;border:1px solid var(--line);border-top:6px solid var(--aqua-d);padding:32px 28px}
+.step .n{font-family:'Archivo',sans-serif;font-weight:900;font-size:44px;color:var(--aqua-d);line-height:1;margin-bottom:12px}
+.step h3{font-size:21px;font-weight:800;margin-bottom:8px}
+.step p{font-size:16px;color:#4d6165}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.split figure{border:1px solid var(--line);background:#fff;padding:10px}
+.split figure img{width:100%;height:430px;object-fit:cover}
+figcaption{font-size:13px;color:#6a7d80;padding:10px 4px 2px}
+figcaption .sp{display:inline-block;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--aqua-d);font-weight:800;margin-right:8px}
+.split h2{font-size:clamp(30px,4vw,44px);font-weight:800;letter-spacing:-.5px;line-height:1.08;margin-bottom:16px}
+.split p{font-size:17px;color:#4d6165;margin-bottom:14px}
+.ticklist{list-style:none;margin:20px 0 28px}
+.ticklist li{padding:10px 0 10px 34px;position:relative;font-size:16.5px;border-bottom:1px solid var(--line);font-weight:500}
+.ticklist li::before{content:"";position:absolute;left:4px;top:17px;width:14px;height:8px;border-left:3px solid var(--aqua-d);border-bottom:3px solid var(--aqua-d);transform:rotate(-45deg)}
+
+/* gallery strip */
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.thumbs figure{border:1px solid var(--line);background:#fff;padding:10px}
+.thumbs img{width:100%;height:240px;object-fit:cover}
+
+/* review band */
+.reviewband{background:var(--deep);color:#fff}
+.reviewband .wrap{padding-top:64px;padding-bottom:64px;text-align:center}
+.reviewband .stars{font-size:26px;letter-spacing:6px;color:var(--aqua);margin-bottom:14px}
+.reviewband p.big{font-family:'Archivo',sans-serif;font-size:clamp(24px,3.4vw,38px);font-weight:800;letter-spacing:-.5px;margin-bottom:10px}
+.reviewband p.sub{color:#bcd4cf;font-size:16.5px}
+
+/* call band */
+.callband{background:var(--aqua)}
+.callband .wrap{padding-top:58px;padding-bottom:62px;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.callband h2{font-size:clamp(30px,4.6vw,50px);font-weight:900;letter-spacing:-.5px;color:var(--deep2);line-height:1.05}
+.callband p{color:#0d4149;margin-top:10px;font-size:17px;max-width:560px;font-weight:500}
+.callband a.big-tel{font-family:'Archivo',sans-serif;font-size:clamp(22px,3.2vw,34px);font-weight:900;color:var(--deep2);
+  text-decoration:none;border:3px solid var(--deep2);padding:14px 30px;white-space:nowrap;background:#fff}
+.callband a.big-tel:hover{background:var(--deep2);color:var(--aqua)}
+
+/* footer */
+footer{background:var(--deep2);color:#9db8b3;font-size:14.5px}
+footer .wrap{padding-top:44px;padding-bottom:36px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;letter-spacing:2px;text-transform:uppercase;font-size:12.5px;margin-bottom:12px;font-family:'Archivo',sans-serif}
+footer a{color:var(--aqua);text-decoration:none}
+footer p{margin-bottom:8px}
+.fine{grid-column:1/-1;border-top:1px solid #123f47;padding-top:16px;font-size:12.5px;color:#7d9691}
+
+@media(max-width:900px){
+  .hero .wrap{padding-top:70px;padding-bottom:70px}
+  .steps{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+  .thumbs{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="disclosure">Design preview concept. Not the business&rsquo;s live website</div>
+
+<div class="util">
+  <div class="wrap">
+    <span>207 W Howard Ave, Biloxi, MS &middot; Mobile service across the MS Gulf Coast</span>
+    <span><a class="tel" href="tel:+13527893418">(352) 789-3418</a> &nbsp;&middot;&nbsp; Open 24 hours</span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="n">SURFS <span>UP</span></span><span class="s">Auto Detailing &middot; Biloxi MS</span></a>
+    <div class="navlinks">
+      <a class="on" href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Results</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="bg" src="img/su_hero.jpg" alt="Stock photo: car covered in foam during a wash">
+  <div class="shade"></div>
+  <div class="wrap">
+    <div class="eyebrow">Mobile auto detailing</div>
+    <h1>We bring the <span class="aq">detail shop</span> to your driveway.</h1>
+    <p class="lede">Interior and exterior detailing for cars, trucks, and SUVs, done wherever your vehicle sits on the Mississippi Gulf Coast. You hand over the keys, we handle the rest.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+13527893418">Call to book</a>
+      <a class="btn ghost" href="services.html">What we detail</a>
+    </div>
+    <div><span class="open24">Open 24 hours daily</span></div>
+  </div>
+</header>
+
+<div class="route">
+  <div class="wrap">
+    <div class="label">Where we roll</div>
+    <div class="towns"><span>Biloxi</span><span>Gulfport</span><span>Long Beach</span><span>Pass Christian</span><span>Bay St. Louis</span><span>Diamondhead</span><span>Waveland</span><span>Ocean Springs</span></div>
+  </div>
+</div>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">How mobile detailing works</div>
+      <h2>Three steps. Zero waiting rooms.</h2>
+      <p>No drop-off, no shuttle, no sitting around a lobby. The service comes to the car.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">01</div>
+        <h3>You call</h3>
+        <p>Tell us what you drive and what it needs. Interior, exterior, or the full treatment. We set a time that works for you, day or night.</p>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <h3>We come to you</h3>
+        <p>Home, office, or wherever the car is parked across the Gulf Coast service area. Fully mobile, so the service happens at your location.</p>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <h3>You get a clean car</h3>
+        <p>Walk out to a car that looks, feels, and smells clean inside and out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--sand2)">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">What we detail</div>
+      <h2>Inside, outside, top to bottom.</h2>
+      <p>Surfs Up details cars, trucks, and SUVs, inside and out. Salt air, sand, and daily driving take a toll on the Coast. Regular detailing keeps a vehicle looking right and holding its value.</p>
+      <ul class="ticklist">
+        <li>Exterior detailing: wash, wheels, windows, and trim</li>
+        <li>Interior detailing: seats, carpets, dashboard, and door panels</li>
+        <li>Cars, trucks, and SUVs</li>
+        <li>Fully mobile across the eight-town service area</li>
+      </ul>
+      <a class="btn" href="services.html">See detailing services</a>
+    </div>
+    <figure>
+      <img src="img/su_polish1.jpg" alt="Stock photo: machine polisher working on a car hood">
+      <figcaption><span class="sp">Stock photo</span>Machine polishing bringing back the gloss.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The work</div>
+      <h2>Gloss is the whole point.</h2>
+      <p><a href="gallery.html" style="color:var(--aqua-d);font-weight:700">See more results.</a></p>
+    </div>
+    <div class="thumbs">
+      <figure><img src="img/su_polish2.jpg" alt="Stock photo: detailer polishing a black car"><figcaption><span class="sp">Stock photo</span>Polishing a black finish.</figcaption></figure>
+      <figure><img src="img/su_polish3.jpg" alt="Stock photo: detailer machine polishing a side panel"><figcaption><span class="sp">Stock photo</span>Panel-by-panel machine work.</figcaption></figure>
+      <figure><img src="img/su_polish4.jpg" alt="Stock photo: polisher on a vehicle side"><figcaption><span class="sp">Stock photo</span>Refining the finish.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="reviewband">
+  <div class="wrap">
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <p class="big">5.0 from 11 Google reviews</p>
+    <p class="sub">Recent reviewers praise the on-site service across the Gulf Coast.</p>
+  </div>
+</div>
+
+<div class="callband">
+  <div class="wrap">
+    <div>
+      <h2>Your car is dirty. We are mobile.</h2>
+      <p>Call any time. Open 24 hours daily across Biloxi, Gulfport, Long Beach, Pass Christian, Bay St. Louis, Diamondhead, Waveland, and Ocean Springs.</p>
+    </div>
+    <a class="big-tel" href="tel:+13527893418">(352) 789-3418</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Surfs Up Auto Detailing</h4>
+      <p>Mobile interior and exterior detailing on the Mississippi Gulf Coast.</p>
+      <p>207 W Howard Ave<br>Biloxi, MS</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="tel:+13527893418">(352) 789-3418</a></p>
+      <p>Open 24 hours daily</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="services.html">Services</a></p>
+      <p><a href="gallery.html">Results</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+    <div class="fine">Design preview concept prepared by Freightfolio. Not the business&rsquo;s live website. Business details shown are from public listings. Photos are stock photography, labeled as such.</div>
+  </div>
+</footer>
+
+</body>
+</html>

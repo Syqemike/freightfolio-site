@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Blue Yoga Nyla concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A diverse group of adults doing yoga poses on mats in a bright indoor studio. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img
+
+- img/yoga2.jpg: Adults practicing yoga poses in a modern, minimalist studio. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img
+
+- img/yoga3.jpg: A diverse group of adults practicing yoga together indoors. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img

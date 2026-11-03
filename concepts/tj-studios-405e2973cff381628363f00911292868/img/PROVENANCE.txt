@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - T&J Studios concept site (updated 2026-10-28, Rebuild shift run89)
+
+All photos below are stock photos. None are photos of T&J Studios, its staff, its studio, or its work. Every photo caption on the site says "Stock photo."
+
+- wedding-reception.jpg: stock photo reused from the Freightfolio concept pool (brick-mortar-venue pool, described as Pexels 13788569, a DJ playing at a wedding reception in a barn venue). Depiction: guests at tables during a wedding reception in a large room. Unchanged in run89; hash-clean in QA 2026-10-28 15:59 CT.
+
+- portrait-bouquet.jpg: stock photo reused from the Freightfolio concept pool (by-design-holiday-and-events pool, described as Pexels 1035677, a woman holding a bouquet of flowers). Depiction: a person holding a bouquet outdoors. Unchanged in run89; hash-clean.
+
+- beach-ceremony.jpg: REPLACED in run89 (QA 2026-10-28 15:59 CT found the old file byte-identical to C Bauer Photography wedding.jpg). New file: Pexels 17206082, an outdoor wedding ceremony setting with a floral arch and rows of chairs. Viewed before use 2026-10-28; converted to JPEG quality 88 at width 1260; hash-checked against all concept images in the main, batch-55 and batch-56 worktrees plus all run89 staged files, zero collisions. Stock photo, labeled on the site.

@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Aurora Auto Repair concept (Website Dev shift 2026-10-30 01:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/cars.jpg: Cars lined up with a hood open. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/chuck-s-automotive-404e2973cff38168b3/img
+
+- img/hero.jpg: A red car with its hood open showing the engine. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/chuck-s-automotive-404e2973cff38168b3/img
+
+- img/engine.jpg: An engine bay close-up. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/chuck-s-automotive-404e2973cff38168b3/img

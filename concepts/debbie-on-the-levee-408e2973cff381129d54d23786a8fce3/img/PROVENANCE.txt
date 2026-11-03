@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Debbie on the Levee concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A slice of chocolate layer cake showing its layers. Stock photo. Pexels 291528, swapped in by Rebuild run105 wave 2 (2026-10-30) for the QA 2026-10-30 01:59 layered-cake photo-fit note; visually verified.
+
+- img/brulee2.jpg: Chocolate chip cookies with a French press of coffee on a wooden table. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/brulee-bakery-404e2973cff38178a6/img
+
+- img/brulee3.jpg: Baked goods under a glass cover in a bakery. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/brulee-bakery-404e2973cff38178a6/img

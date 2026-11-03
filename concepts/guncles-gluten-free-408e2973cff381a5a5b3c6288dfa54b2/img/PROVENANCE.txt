@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Guncles Gluten Free concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: Assorted pastries in a bakery case. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/santa-fe-bakery-404e2973cff381e080/img
+
+- img/cake.jpg: A slice of chocolate layer cake. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/santa-fe-bakery-404e2973cff381e080/img
+
+- img/counter.jpg: A bakery counter with a display case. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/santa-fe-bakery-404e2973cff381e080/img

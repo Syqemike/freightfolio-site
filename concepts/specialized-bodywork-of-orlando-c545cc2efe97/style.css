@@ -1,0 +1,132 @@
+/* Specialized Bodywork of Orlando: concept site stylesheet
+   Minimal studio session: warm charcoal bands, oat text, amber accents. */
+
+:root {
+  --charcoal: #26221E;
+  --charcoal-deep: #1D1A16;
+  --oat: #F1EAD9;
+  --riverstone: #9A9184;
+  --amber: #C98B3F;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Outfit", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  background: var(--charcoal);
+  color: var(--oat);
+  line-height: 1.7;
+  font-size: 1.06rem;
+}
+
+h1, h2, h3, .brand, .eyebrow {
+  font-family: "Tenor Sans", Georgia, serif;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+h1 { font-size: clamp(2.1rem, 4.6vw, 3.4rem); letter-spacing: 0.06em; margin-bottom: 1.4rem; }
+h2 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); letter-spacing: 0.08em; margin-bottom: 1.6rem; }
+h3 { font-size: 1.25rem; letter-spacing: 0.05em; margin-bottom: 0.6rem; }
+
+p { margin-bottom: 1.2rem; }
+
+a { color: var(--oat); }
+address { font-style: normal; }
+
+/* ---- header ---- */
+.site-header { background: var(--charcoal-deep); border-bottom: 1px solid rgba(201,139,63,0.25); }
+.disclosure {
+  font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--riverstone); text-align: center; padding: 0.7rem 1rem 0.6rem; margin: 0;
+  border-bottom: 1px solid rgba(154,145,132,0.2);
+}
+.header-row {
+  max-width: 72rem; margin: 0 auto; padding: 1.6rem 2rem;
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1.5rem; flex-wrap: wrap;
+}
+.brand { font-size: 1.3rem; letter-spacing: 0.1em; text-decoration: none; color: var(--oat); }
+.nav { display: flex; gap: 1.8rem; flex-wrap: wrap; }
+.nav a { text-decoration: none; color: var(--riverstone); font-size: 0.95rem; letter-spacing: 0.08em; }
+.nav a:hover { color: var(--amber); }
+.nav a.active { color: var(--amber); }
+
+/* ---- layout ---- */
+.narrow { max-width: 46rem; margin: 0 auto; padding: 6.5rem 2rem; }
+.band.dark { background: var(--charcoal-deep); }
+.visit-strip, .call-strip { background: var(--charcoal-deep); border-top: 1px solid rgba(201,139,63,0.2); }
+.center { text-align: center; }
+
+/* ---- hero ---- */
+.hero {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+  max-width: 72rem; margin: 0 auto; padding: 6rem 2rem 6rem;
+}
+.lede { font-size: 1.2rem; color: var(--riverstone); max-width: 34rem; }
+.rating-line { color: var(--amber); letter-spacing: 0.1em; font-size: 0.95rem; margin-top: 2rem; }
+.cta-call {
+  display: inline-block; margin-top: 1.4rem; padding: 1rem 2.2rem;
+  border: 1px solid var(--amber); color: var(--oat); text-decoration: none;
+  letter-spacing: 0.08em; font-size: 1rem; transition: background 0.25s ease, color 0.25s ease;
+}
+.cta-call:hover { background: var(--amber); color: var(--charcoal-deep); }
+
+.hero-photo img, .wide-photo img { width: 100%; height: auto; display: block; }
+.hero-photo { filter: saturate(0.85); }
+.wide-photo img { filter: saturate(0.82) brightness(0.93); }
+.spot-head .narrow { padding-bottom: 0; }
+figure figcaption {
+  font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--riverstone); margin-top: 0.7rem;
+}
+.wide-photo { max-width: 56rem; margin: 0 auto; padding: 0 2rem 6rem; }
+
+.page-hero .narrow { padding-bottom: 4rem; }
+.eyebrow { color: var(--amber); letter-spacing: 0.3em; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 1.2rem; }
+
+/* ---- content bits ---- */
+.inline-link { color: var(--amber); text-decoration: none; border-bottom: 1px solid rgba(201,139,63,0.5); padding-bottom: 2px; letter-spacing: 0.04em; }
+.inline-link:hover { border-bottom-color: var(--amber); }
+
+.type-list { list-style: none; margin-bottom: 2rem; }
+.type-list li { border-top: 1px solid rgba(154,145,132,0.3); padding: 2.2rem 0; }
+.type-list li:last-child { border-bottom: 1px solid rgba(154,145,132,0.3); }
+.fine-print { font-size: 0.95rem; color: var(--riverstone); }
+
+.spotlight {
+  max-width: 46rem; margin: 0 auto; padding: 0 2rem 6rem;
+  border-top: 1px solid rgba(201,139,63,0.4);
+}
+.spotlight-text { padding-top: 3rem; }
+.spotlight-role { color: var(--amber); letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 1.6rem; }
+
+.hours-ledger { margin-bottom: 2rem; }
+.hours-ledger > div {
+  display: flex; justify-content: space-between; gap: 2rem;
+  padding: 1.1rem 0; border-top: 1px solid rgba(154,145,132,0.3);
+}
+.hours-ledger > div:last-child { border-bottom: 1px solid rgba(154,145,132,0.3); }
+.hours-ledger dt { font-family: "Tenor Sans", serif; letter-spacing: 0.08em; }
+.hours-ledger dd { color: var(--riverstone); }
+
+.visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; max-width: 56rem; }
+.big-address, .big-phone { font-size: 1.25rem; line-height: 1.8; margin-bottom: 1.4rem; }
+.big-phone a { text-decoration: none; border-bottom: 1px solid var(--amber); }
+
+/* ---- footer ---- */
+.site-footer { background: var(--charcoal-deep); border-top: 1px solid rgba(201,139,63,0.25); padding: 3.5rem 2rem 2rem; }
+.footer-row { max-width: 72rem; margin: 0 auto 2.5rem; display: flex; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+.footer-name { font-family: "Tenor Sans", serif; letter-spacing: 0.1em; font-size: 1.1rem; margin-bottom: 0.6rem; }
+.site-footer p { color: var(--riverstone); font-size: 0.95rem; margin-bottom: 0.4rem; }
+.site-footer a { color: var(--riverstone); }
+.footer-note { text-align: center; font-size: 0.75rem; letter-spacing: 0.12em; color: var(--riverstone); margin: 0; }
+
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 4rem; }
+  .narrow { padding: 4rem 1.5rem; }
+  .visit-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .header-row { padding: 1.2rem 1.5rem; }
+  .nav { gap: 1.1rem; }
+  .wide-photo { padding: 0 1.5rem 4rem; }
+}

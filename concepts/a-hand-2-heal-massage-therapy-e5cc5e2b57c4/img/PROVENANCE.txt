@@ -1,0 +1,44 @@
+PHOTO PROVENANCE — A Hand 2 Heal Massage Therapy concept site (built 2026-10-23)
+Real-business photo search: /opt/hatch/bin/image-search "A Hand 2 Heal Massage D'Iberville"
+returned 8 results; NONE depicted this business (results were for "2 Healing Hands
+Massage", "Healing Hands NOLA", "Healing Hands" Houston/Lindenhurst, an anti-aging
+facial directory, and a D'Iberville barber). All rejected per the "never use another
+business's photos" rule. No verifiable real photos of the practice exist in the
+results. The business's own site (ahand2heal.com) is a broken placeholder with
+empty photo sections.
+Therefore every image below is STOCK (Pexels, licensed for free use) and is
+captioned "Stock photo" wherever it appears on the site. No therapist portraits
+were used for the named providers (Whitney, Skylar, Holly Gilbert, Shandy Riggins)
+to avoid inventing portraits.
+
+1. session-hero.jpg
+   Source URL: https://images.pexels.com/photos/3865800/pexels-photo-3865800.jpeg?auto=compress&cs=tinysrgb&w=1600&loading=lazy
+   Page: https://www.pexels.com/zh-cn/photo/3865582/
+   Depiction: Stock photo. Therapist giving a back massage in a bright, calm treatment room.
+
+2. session-calm.jpg
+   Source URL: https://images.pexels.com/photos/3865792/pexels-photo-3865792.jpeg?auto=compress&cs=tinysrgb&w=1600&loading=lazy
+   Page: https://www.pexels.com/zh-cn/photo/3865800/
+   Depiction: Stock photo. Massage therapy session detail.
+
+3. session-hands.jpg
+   Source URL: https://images.pexels.com/photos/3865802/pexels-photo-3865802.jpeg?w=600
+   Page: https://asifabrar.net/Pexels/CollectionMedia/bt3skq5
+   Depiction: Stock photo. Close detail of massage therapy hands.
+
+4. spa-interior.jpg
+   Source URL: https://images.pexels.com/photos/35884502/pexels-photo-35884502/free-photo-of-serene-spa-interior-with-massage-table-and-candle.jpeg?auto=compress&cs=tinysrgb&w=600
+   Page: https://www.pexels.com/search/spa/
+   Depiction: Stock photo. Serene spa treatment room with massage table, folded towel, and candle.
+
+5. coastal-light.jpg
+   Source URL: https://images.pexels.com/photos/17887560/pexels-photo-17887560.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200
+   Page: https://www.pexels.com/photo/view-of-a-beach-cliff-and-the-sea-17887560/
+   Depiction: Stock photo. Soft coastal beach at golden light; used as the Gulf Coast mood image.
+
+6. comfort-touch.jpg
+   Source URL: https://images.pexels.com/videos/9335888/adult-body-body-massage-comfort-9335888.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load
+   Page: https://www.pexels.com/ja-jp/video/8313493/
+   Depiction: Stock photo. Therapist giving a back massage in a bright room with plants.
+
+All images normalized: RGB JPEG, max width 1600, quality 80, each well under 5 MB.

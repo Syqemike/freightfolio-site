@@ -1,0 +1,13 @@
+PHOTO PROVENANCE - CatCare concept site (Rebuild run112, 2026-10-30)
+
+- real-cat-bed.jpg: A grey cat resting in a cat bed.
+  REAL photo from the business's own website catcareeugene.com
+  (wp-content/uploads/2019/08/eugene-or-cat-veterinarian.jpeg, viewed before use).
+  Used on index.html only. The clinic's own header/tabby portrait and the two
+  shutterstock_ files on its site were NOT used (generic/polished stock look).
+- cat-exam-2.jpg: A veterinarian examining a light-brown cat on an exam table. Stock photo.
+  Source: Pexels stock photo downloaded 2026-10-29 and verified by viewing before use.
+- cat-exam-3.jpg: A veterinarian in blue scrubs examining a fluffy white cat. Stock photo.
+  Source: Pexels stock photo downloaded 2026-10-29 and verified by viewing before use.
+The former index hero cat-exam.jpg (stock, pool copy from fayette-veterinary-clinic)
+was removed; no page references it.

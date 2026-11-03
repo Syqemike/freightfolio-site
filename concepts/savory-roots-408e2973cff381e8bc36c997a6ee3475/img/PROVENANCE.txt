@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Savory Roots or its products, services, or premises.
+- hero.jpg: Stock photo: Shrimp etouffee served with rice.
+- poboy.jpg: Stock photo: A shrimp po boy sandwich with fries and sauces.
+- burger.jpg: Stock photo: A burger.

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Calaveras Tattoos | Custom Tattoo Studio in San Antonio, TX</title>
+<style>
+  :root{
+    --cream:#f7f0e1;
+    --cream-deep:#efe3c9;
+    --plum:#2e1a2e;
+    --plum-soft:#43223f;
+    --marigold:#e8a020;
+    --turquoise:#2a9d8f;
+    --ink:#241423;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.65;
+    font-size:17px;
+  }
+  .serif{font-family:Georgia,"Times New Roman",serif}
+  a{color:var(--turquoise)}
+
+  /* ---- preview disclosure bar ---- */
+  .preview-bar{
+    background:var(--plum);
+    color:var(--cream);
+    text-align:center;
+    font-size:13px;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+    padding:10px 16px;
+  }
+  .preview-bar strong{color:var(--marigold);font-weight:700}
+
+  /* ---- header ---- */
+  header{
+    background:var(--cream);
+    border-bottom:3px double var(--marigold);
+    position:sticky;top:0;z-index:50;
+  }
+  .header-inner{
+    max-width:1080px;margin:0 auto;
+    padding:14px 20px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--plum)}  .brand-name{font-family:Georgia,serif;font-size:26px;font-weight:700;line-height:1.1}
+  .brand-sub{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--turquoise)}
+  nav{display:flex;gap:4px;flex-wrap:wrap}
+  nav a{
+    text-decoration:none;color:var(--plum);
+    font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;
+    padding:8px 12px;border-radius:6px;
+  }
+  nav a:hover{background:var(--cream-deep)}
+  .header-cta{
+    background:var(--turquoise);color:#fff !important;
+    padding:10px 20px;border-radius:8px;
+  }
+  .header-cta:hover{background:var(--plum) !important}
+
+  /* ---- hero ---- */
+  .hero{
+    background:var(--plum);
+    color:var(--cream);
+    padding:64px 20px 72px;
+    text-align:center;
+  }
+  .hero-eyebrow{
+    display:inline-block;
+    font-size:13px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--marigold);
+    border:1px solid var(--marigold);
+    padding:8px 18px;border-radius:999px;
+    margin-bottom:24px;
+  }
+  .hero h1{
+    font-family:Georgia,serif;
+    font-size:clamp(44px,8vw,84px);
+    font-weight:700;line-height:1.05;
+    margin-bottom:18px;
+    color:var(--cream);
+  }
+  .hero h1 .accent{color:var(--marigold);font-style:italic}
+  .hero p.lede{
+    max-width:640px;margin:0 auto 12px;
+    font-size:20px;color:#e9dcc3;
+  }
+  .hero .rating{
+    display:inline-block;margin-top:10px;
+    background:rgba(232,160,32,.14);
+    border:1px solid var(--marigold);
+    border-radius:10px;
+    padding:10px 22px;
+    font-size:16px;color:var(--cream);
+  }
+  .hero .rating .stars{color:var(--marigold);letter-spacing:2px}
+  .hero-cta-row{margin-top:30px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:700;font-size:17px;
+    padding:15px 34px;border-radius:10px;
+  }
+  .btn-primary{background:var(--marigold);color:var(--plum)}
+  .btn-primary:hover{background:#f2b43a}
+  .btn-ghost{border:2px solid var(--turquoise);color:#cfeeea}
+  .btn-ghost:hover{background:rgba(42,157,143,.15)}
+
+  /* ---- sections ---- */
+  section.block{padding:72px 20px}
+  .wrap{max-width:1080px;margin:0 auto}
+  .kicker{
+    font-size:13px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--turquoise);font-weight:700;margin-bottom:12px;
+  }
+  h2.section-title{
+    font-family:Georgia,serif;font-size:clamp(32px,5vw,48px);
+    color:var(--plum);margin-bottom:14px;line-height:1.15;
+  }
+  .intro{max-width:680px;font-size:18px;color:#4a3448;margin-bottom:36px}
+
+  /* ---- styles cards ---- */
+  .styles-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+  }
+  .style-card{
+    background:#fffdf6;border:1px solid #e3d5b4;border-radius:14px;
+    padding:34px 28px;position:relative;overflow:hidden;
+  }
+  .style-card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:6px;
+  }
+  .style-card.c1::before{background:var(--marigold)}
+  .style-card.c2::before{background:var(--turquoise)}
+  .style-card.c3::before{background:#b6452f}
+  .style-card h3{font-family:Georgia,serif;font-size:24px;color:var(--plum);margin-bottom:10px}
+  .style-card p{font-size:16px;color:#4a3448}
+
+  /* ---- gallery ---- */
+  .gallery-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+  }
+  .gallery-grid figure{
+    background:#fffdf6;border:1px solid #e3d5b4;border-radius:14px;overflow:hidden;
+  }
+  .gallery-grid img{width:100%;height:250px;object-fit:cover;display:block}
+  .gallery-grid figcaption{padding:12px 16px;font-size:14px;color:#4a3448}
+  .gallery-grid .src{display:block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--turquoise);margin-bottom:6px;font-weight:700}
+  .gallery-note{font-size:13px;color:#4a3448;max-width:62ch;margin-top:18px}
+
+  /* ---- studio ---- */
+  .studio{background:var(--cream-deep)}
+  .studio-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .stat-row{display:flex;gap:32px;margin:28px 0;flex-wrap:wrap}
+  .stat{flex:1;min-width:120px}
+  .stat .num{font-family:Georgia,serif;font-size:44px;color:var(--plum);font-weight:700;line-height:1}
+  .stat .lbl{font-size:14px;text-transform:uppercase;letter-spacing:1.5px;color:var(--turquoise);font-weight:700;margin-top:6px}
+  .studio p{margin-bottom:14px;color:#3f2c3d}
+
+  /* ---- visit ---- */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .panel{
+    background:#fffdf6;border:1px solid #e3d5b4;border-radius:14px;padding:34px 30px;
+  }
+  .panel h3{font-family:Georgia,serif;font-size:24px;color:var(--plum);margin-bottom:16px}
+  .hours-row{
+    display:flex;justify-content:space-between;gap:12px;
+    padding:10px 0;border-bottom:1px dashed #d9c9a3;font-size:16px;
+  }
+  .hours-row:last-child{border-bottom:none}
+  .hours-row .day{font-weight:700;color:var(--plum)}
+  .panel address{font-style:normal;font-size:17px;color:#3f2c3d;margin-bottom:8px}
+  .panel .cta{margin-top:22px}
+
+  /* ---- contact ---- */
+  .contact-band{
+    background:var(--plum);color:var(--cream);
+    text-align:center;padding:72px 20px;
+  }
+  .contact-band h2{font-family:Georgia,serif;font-size:clamp(32px,5vw,46px);margin-bottom:14px}
+  .contact-band p{max-width:560px;margin:0 auto 8px;color:#e9dcc3;font-size:18px}
+  .contact-band .phone{
+    display:inline-block;font-family:Georgia,serif;font-size:clamp(28px,5vw,42px);
+    color:var(--marigold);text-decoration:none;margin:16px 0;font-weight:700;
+  }
+  .contact-band .phone:hover{text-decoration:underline}
+
+  /* ---- footer ---- */
+  footer{background:#1d101d;color:#b8a893;font-size:14px;padding:40px 20px;text-align:center}
+  footer .wrap{max-width:760px}
+  footer p{margin-bottom:10px}
+  footer .disclaimer{border-top:1px solid #3d253c;padding-top:18px;margin-top:18px;font-size:13px}
+
+  @media (max-width:760px){
+    .styles-grid,.studio-cols,.visit-grid,.gallery-grid{grid-template-columns:1fr}
+    section.block{padding:52px 18px}
+    .header-inner{justify-content:center;text-align:center}
+    nav{justify-content:center}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Design Preview <strong>&bull;</strong> Website concept by Freightfolio</div>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="Calaveras Tattoos home">
+      
+      <span>
+        <span class="brand-name">Calaveras Tattoos</span><br>
+        <span class="brand-sub">San Antonio, TX</span>
+      </span>
+    </a>
+    <nav aria-label="Section navigation">
+      <a href="#styles">Styles</a>
+      <a href="#photos">Photos</a>
+      <a href="#studio">Studio</a>
+      <a href="#visit">Visit</a>
+      <a class="header-cta" href="tel:+12102277673">Call to book</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <span class="hero-eyebrow">Custom tattoo studio</span>
+    <h1>Calaveras <span class="accent">Tattoos</span></h1>
+    <p class="lede">Custom tattoo work in San Antonio&rsquo;s Southtown Art District.</p>
+    <p class="lede" style="font-size:17px;color:#e9dcc3;">&#9733; 4.8 from 373 Google reviews</p>
+
+    <div class="hero-cta-row">
+      <a class="btn btn-primary" href="tel:+12102277673">Call to book</a>
+      <a class="btn btn-ghost" href="#visit">Hours and location</a>
+    </div>
+  </section>
+
+  <section class="block" id="styles">
+    <div class="wrap">
+      <p class="kicker">Styles</p>
+      <h2 class="section-title">Work that starts with your idea</h2>
+      <p class="intro">The shop takes on custom work across all styles. Client reviews mention portraits and sleeves. Fine-line lettering comes up often as well. Call to discuss your idea with the shop.</p>
+      <div class="styles-grid">
+        <article class="style-card c1">
+          <h3>Portraits</h3>
+          <p>Portrait tattoo ideas based on reference images. Questions? Call (210) 227-7673.</p>
+        </article>
+        <article class="style-card c2">
+          <h3>Sleeves</h3>
+          <p>Full and half sleeve tattoo ideas. Contact the shop to discuss the design.</p>
+        </article>
+        <article class="style-card c3">
+          <h3>Fine-line lettering</h3>
+          <p>Script and lettering tattoo ideas. Ask about size, style, and placement.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="photos">
+    <div class="wrap">
+      <p class="kicker">Photos</p>
+      <h2 class="section-title">Inside the shop and its work</h2>
+      <p class="intro">Real photos of Calaveras Tattoos, shared publicly by the shop's artists on Instagram and shown in the shop's Google listing.</p>
+      <div class="gallery-grid">
+        <figure>
+          <img src="img/gallery-1.jpg" alt="Shop interior: flash-covered walls and a workstation">
+          <figcaption><span class="src">Photo by @rickrosastattoos</span>The flash-covered walls and workstation of Calaveras artist Rick Rosa.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/gallery-2.jpg" alt="Fine-line floral back piece by Rick Rosa">
+          <figcaption><span class="src">Photo by @rickrosastattoos</span>A fine-line floral back piece, fresh work by Rick Rosa.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/gallery-3.jpg" alt="Black-and-grey lily tattoo on a client's arm">
+          <figcaption><span class="src">Photo by @petethebruiser</span>A black-and-grey lily piece done at Calaveras Tattoos.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/gallery-4.jpg" alt="Fresh Ace of Swords tattoo by Sarah Bexar">
+          <figcaption><span class="src">Photo by @sarahbexar</span>A fresh "Ace of Swords" piece by Calaveras artist Sarah Bexar.</figcaption>
+        </figure>
+      </div>
+      <p class="gallery-note">These are real photos, not concept art. Each was posted publicly by a Calaveras artist on Instagram and appears in the shop's Google Business Profile gallery: instagram.com/p/Da_pxcTjrz7, instagram.com/p/DZy1Spyk_wR, instagram.com/p/Das9QOvMpq0, instagram.com/p/Db6cZvTpRMD.</p>
+    </div>
+  </section>
+
+  <section class="block studio" id="studio">
+    <div class="wrap">
+      <p class="kicker">The studio</p>
+      <h2 class="section-title">A shop rooted in Southtown</h2>
+      <div class="studio-cols">
+        <div>
+          <div class="stat-row"><div class="stat"><div class="lbl">Custom tattoo ideas</div><p>Portraits, sleeves, and lettering</p></div></div>
+          <p>Calaveras Tattoos is on South St. Mary's Street in San Antonio's Southtown Art District.</p>
+          <p>Call the studio to ask about its current artists, tattoo services, and appointments.</p>
+
+        </div>
+        <div class="panel">
+          <h3>Planning a visit</h3>
+          <p>Bring your reference images and an idea of size and placement. If you are not sure yet, a consult is a good first step.</p>
+          <p>Call with questions about visiting the studio.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="tel:+12102277673">Call to book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="block" id="visit">
+    <div class="wrap">
+      <p class="kicker">Visit</p>
+      <h2 class="section-title">Hours and location</h2>
+      <p class="intro">Find the shop on South St. Mary&rsquo;s Street in the Southtown Art District.</p>
+      <div class="visit-grid">
+        <div class="panel">
+          <h3>Hours</h3>
+          <div class="hours-row"><span class="day">Sunday</span><span>1:00 PM - 5:00 PM</span></div>
+          <div class="hours-row"><span class="day">Monday</span><span>Closed</span></div>
+          <div class="hours-row"><span class="day">Tuesday - Saturday</span><span>1:00 PM - 9:00 PM</span></div>
+          <p style="margin-top:14px;">Call to confirm current opening hours before your visit.</p>
+        </div>
+        <div class="panel">
+          <h3>Location</h3>
+          <address>
+            628 S St Mary&rsquo;s St<br>
+            San Antonio, TX 78205
+          </address>
+          <p>South St. Mary's Street, San Antonio.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="tel:+12102277673">Call to book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-band" id="contact">
+    <h2>Ready to start your piece?</h2>
+    <p>Call the shop to talk through your idea or set up a consult.</p>
+    <a class="phone" href="tel:+12102277673">(210) 227-7673</a>
+    <div class="hero-cta-row">
+      <a class="btn btn-primary" href="tel:+12102277673">Call to book</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="serif" style="font-size:20px;color:#e9dcc3">Calaveras Tattoos &bull; San Antonio, TX</p>
+    <p>(210) 227-7673 &bull; 628 S St Mary&rsquo;s St, San Antonio, TX 78205</p>
+    <p class="disclaimer">This is an unsolicited website design concept created by Freightfolio. It was not commissioned, affiliated with, or endorsed by Calaveras Tattoos. This is a design preview only.</p>
+  </div>
+</footer>
+
+</body>
+</html>

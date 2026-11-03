@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Fountain City Tattoo | Kansas City, MO | Design Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d0d0f;
+  --ink2:#151517;
+  --parch:#ece5d3;
+  --parch2:#e2d9c2;
+  --red:#d23c2a;
+  --grey:#8f8a80;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--ink);color:var(--parch);font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.6;font-size:17px;}
+a{color:inherit;}
+.wrap{max-width:1140px;margin:0 auto;padding:0 26px;}
+.notice{background:var(--red);color:#0d0d0f;text-align:center;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:12px 18px;}
+.notice span{border:2px solid #0d0d0f;padding:3px 10px;margin-right:10px;}
+.rule{height:10px;background:repeating-linear-gradient(90deg,var(--red) 0 40px,var(--ink) 40px 80px);}
+header.site{padding:26px 0;background:var(--ink);border-bottom:1px solid #2b2b2e;}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+.wordmark{font-family:"Anton",sans-serif;font-size:clamp(28px,4vw,40px);letter-spacing:.02em;line-height:1;text-transform:uppercase;}
+.wordmark em{font-style:normal;color:var(--red);}
+.subloc{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--grey);margin-top:6px;}
+nav.sections{display:flex;gap:8px;flex-wrap:wrap;}
+nav.sections a{text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:1px solid #3a3a3e;padding:10px 16px;}
+nav.sections a:hover{border-color:var(--red);color:var(--red);}
+.hero{background:radial-gradient(1200px 600px at 80% 20%, #1d1d21 0%, var(--ink) 60%);border-bottom:1px solid #2b2b2e;}
+.hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:center;padding-top:70px;padding-bottom:70px;}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;}}
+.kicker{display:inline-block;background:var(--red);color:#0d0d0f;font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:8px 16px;margin-bottom:26px;transform:skew(-8deg);}
+.kicker span{display:inline-block;transform:skew(8deg);}
+.hero h1{font-family:"Anton",sans-serif;font-size:clamp(52px,8.4vw,110px);line-height:.96;text-transform:uppercase;letter-spacing:.01em;margin-bottom:20px;}
+.hero h1 .stroke{color:transparent;-webkit-text-stroke:2px var(--red);}
+.hero p.dek{font-size:19px;max-width:520px;color:#cfc9b8;margin-bottom:32px;}
+.hero p.dek strong{color:var(--parch);}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.06em;padding:16px 30px;transform:skew(-8deg);}
+.btn span{display:inline-block;transform:skew(8deg);}
+.btn.red{background:var(--red);color:#0d0d0f;}
+.btn.red:hover{background:var(--parch);}
+.btn.line{border:2px solid var(--parch);color:var(--parch);}
+.btn.line:hover{border-color:var(--red);color:var(--red);}
+.ratingline{margin-top:24px;font-size:15px;color:var(--grey);}
+.ratingline strong{color:var(--parch);}
+.hero-photo{position:relative;min-height:540px;border:1px solid #3a3a3e;}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.05);}
+.hero-photo figcaption{position:absolute;left:0;bottom:0;background:rgba(13,13,15,.88);color:var(--parch);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:8px 14px;}
+.corner{position:absolute;top:0;right:0;width:70px;height:70px;border-top:6px solid var(--red);border-right:6px solid var(--red);}
+section.block{padding:78px 0;border-bottom:1px solid #2b2b2e;}
+section.block.light{background:var(--parch);color:var(--ink);border-bottom:none;}
+.sec-kicker{font-size:12.5px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--red);margin-bottom:12px;}
+.sec-title{font-family:"Anton",sans-serif;font-size:clamp(34px,5vw,58px);text-transform:uppercase;line-height:1;margin-bottom:16px;letter-spacing:.01em;}
+.sec-intro{max-width:680px;font-size:18px;margin-bottom:12px;}
+section.block.light .sec-intro{color:#3d3a33;}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px;}
+@media(max-width:860px){.serv-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.serv-grid{grid-template-columns:1fr;}}
+.card{background:var(--ink2);border:1px solid #2b2b2e;padding:30px 26px;position:relative;}
+.card::before{content:"";position:absolute;top:0;left:0;width:100%;height:5px;background:var(--red);}
+.card h3{font-family:"Anton",sans-serif;font-size:24px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:10px;}
+.card p{font-size:15.5px;color:#bdb7a7;}
+.artist-rail{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:36px;}
+@media(max-width:900px){.artist-rail{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:520px){.artist-rail{grid-template-columns:repeat(2,1fr);}}
+.artist{border:1px solid #2b2b2e;background:var(--ink2);padding:22px 12px;text-align:center;}
+.artist .init{font-family:"Anton",sans-serif;font-size:30px;color:var(--red);}
+.artist .name{font-size:13.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-top:8px;}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px;}
+@media(max-width:900px){.gallery{grid-template-columns:1fr 1fr;}}
+.gitem{border:1px solid #2b2b2e;background:#000;overflow:hidden;}
+.gitem img{width:100%;height:250px;object-fit:cover;display:block;filter:saturate(.92) contrast(1.05);}
+.gitem figcaption{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);padding:10px 12px;background:var(--ink2);}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;}
+@media(max-width:880px){.two{grid-template-columns:1fr;}}
+.hours{background:var(--ink);border:1px solid #3a3a3e;padding:36px 38px;}
+.hours h3{font-family:"Anton",sans-serif;font-size:22px;text-transform:uppercase;color:var(--red);margin-bottom:16px;letter-spacing:.04em;}
+.hrow{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #2b2b2e;font-size:16px;}
+.hrow:last-child{border-bottom:none;}
+.hrow .closed{color:var(--grey);}
+.visit-card{border:1px solid #3a3a3e;background:var(--ink2);padding:32px;}
+.visit-card h3{font-family:"Anton",sans-serif;font-size:22px;text-transform:uppercase;margin-bottom:10px;}
+.visit-card p{margin-bottom:8px;color:#bdb7a7;}
+.visit-card a.phone{color:var(--red);font-weight:700;font-size:22px;text-decoration:none;}
+footer{background:#08080a;padding:48px 0 36px;font-size:14.5px;border-top:1px solid #2b2b2e;}
+footer .wrap{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;}
+footer .disc{max-width:660px;color:#8f8a80;}
+footer .disc strong{color:var(--parch);}
+footer nav a{color:var(--parch);text-decoration:none;border-bottom:1px solid var(--red);margin-right:14px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+img{max-width:100%;}
+</style>
+</head>
+<body>
+<div class="notice"><span>Design preview</span> This concept site was made by Freightfolio to show what a new website for this business could look like.</div>
+
+<header class="site">
+  <div class="wrap">
+    <div>
+      <div class="wordmark">Fountain City <em>Tattoo</em></div>
+      <div class="subloc">Kansas City, Missouri</div>
+    </div>
+    <nav class="sections" aria-label="Sections">
+      <a href="#studio">Studio</a>
+      <a href="#artists">Artists</a>
+      <a href="#walkins">Walk-ins</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker"><span>Custom ink in KC</span></span>
+      <h1>Your idea.<br><span class="stroke">Their ink.</span></h1>
+      <p class="dek"><strong>Fountain City Tattoo</strong> on East 19th Street in Kansas City. Custom tattoos, walk-ins, and flash events from a crew of six artists. Bookings run through Instagram DM.</p>
+      <div class="hero-ctas">
+        <a class="btn red" href="https://instagram.com/fountaincitytattoo/" target="_blank" rel="noopener"><span>Message on Instagram</span></a>
+        <a class="btn line" href="#visit"><span>Find the shop</span></a>
+      </div>
+      <p class="ratingline"><strong>4.9</strong> from 88 Google reviews</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/photo-1.jpg" alt="Tattoo artist tattooing a client's arm in a dark studio">
+      <figcaption>Stock photo</figcaption>
+      <div class="corner" aria-hidden="true"></div>
+    </figure>
+  </div>
+</div>
+
+<section class="block light" id="studio">
+  <div class="wrap">
+    <div class="sec-kicker">The studio</div>
+    <h2 class="sec-title">Built for custom work</h2>
+    <p class="sec-intro">Fountain City Tattoo is a custom tattoo studio. Bring your own idea or pick from the artists' designs. Walk-ins are welcome and the shop runs flash events for ready-to-go pieces.</p>
+    <div class="serv-grid">
+      <div class="card" style="background:#fff;border-color:#c9c0ab;"><h3 style="color:var(--ink);">Custom tattoos</h3><p style="color:#4d483c;">One-of-one pieces designed with you before the needle moves. Send your idea through Instagram DM.</p></div>
+      <div class="card" style="background:#fff;border-color:#c9c0ab;"><h3 style="color:var(--ink);">Walk-ins</h3><p style="color:#4d483c;">The shop takes walk-ins. Show up, talk to whoever is free, and see what can happen that day.</p></div>
+      <div class="card" style="background:#fff;border-color:#c9c0ab;"><h3 style="color:var(--ink);">Flash events</h3><p style="color:#4d483c;">Ready-made flash designs at set prices during shop events. Follow the Instagram for event posts.</p></div>
+    </div>
+    <div class="gallery">
+      <figure class="gitem"><img src="img/photo-2.jpg" alt="Artist working on a forearm tattoo sleeve"><figcaption>Stock photo</figcaption></figure>
+      <figure class="gitem"><img src="img/photo-3.jpg" alt="Close detail of a stencil tattoo being inked"><figcaption>Stock photo</figcaption></figure>
+      <figure class="gitem"><img src="img/photo-4.jpg" alt="Flash design sketches on paper"><figcaption>Stock photo</figcaption></figure>
+      <figure class="gitem"><img src="img/photo-5.jpg" alt="Finished full-sleeve tattoo"><figcaption>Stock photo</figcaption></figure>
+    </div>
+    <p style="margin-top:20px;font-size:13.5px;color:#6b6557;">Gallery photos are stock photography, shown to represent tattoo studio work.</p>
+  </div>
+</section>
+
+<section class="block" id="artists">
+  <div class="wrap">
+    <div class="sec-kicker">The crew</div>
+    <h2 class="sec-title">Six artists</h2>
+    <p class="sec-intro">The shop's artist roster. Each artist takes bookings through Instagram DM.</p>
+    <div class="artist-rail">
+      <div class="artist"><div class="init">L</div><div class="name">Lacie</div></div>
+      <div class="artist"><div class="init">E</div><div class="name">Eric</div></div>
+      <div class="artist"><div class="init">P</div><div class="name">Paige</div></div>
+      <div class="artist"><div class="init">S</div><div class="name">Shelby</div></div>
+      <div class="artist"><div class="init">W</div><div class="name">Wes</div></div>
+      <div class="artist"><div class="init">C</div><div class="name">Caleb</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="walkins">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <div class="sec-kicker">Getting inked</div>
+        <h2 class="sec-title">How booking works</h2>
+        <p class="sec-intro">There is no online booking form. Message the shop on Instagram to start a conversation about your piece. Include your idea, rough size, and placement.</p>
+        <p class="sec-intro">Prefer to talk it through? Call the shop at <a href="tel:+18167056080" style="color:var(--red);font-weight:700;">(816) 705-6080</a>.</p>
+        <div class="hero-ctas" style="margin-top:28px;">
+          <a class="btn red" href="https://instagram.com/fountaincitytattoo/" target="_blank" rel="noopener"><span>Message on Instagram</span></a>
+        </div>
+      </div>
+      <div class="hours">
+        <h3 id="hours">Shop hours</h3>
+        <div class="hrow"><span>Tuesday to Saturday</span><span>11:00 AM to 5:00 PM</span></div>
+        <div class="hrow"><span>Sunday</span><span class="closed">Closed</span></div>
+        <div class="hrow"><span>Monday</span><span class="closed">Closed</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="visit">
+  <div class="wrap">
+    <div class="sec-kicker">Visit</div>
+    <h2 class="sec-title">Find the shop</h2>
+    <div class="visit-card" style="margin-top:28px;">
+      <h3>Address</h3>
+      <p>724 E 19th St<br>Kansas City, MO 64108</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Fountain+City+Tattoo+724+E+19th+St+Kansas+City+MO+64108" target="_blank" rel="noopener">Get directions</a></p>
+      <h3 style="margin-top:20px;">Phone</h3>
+      <p><a class="phone" href="tel:+18167056080">(816) 705-6080</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="rule" aria-hidden="true"></div>
+
+<footer>
+  <div class="wrap">
+    <div class="disc">
+      <strong>Design preview by Freightfolio.</strong> This is a website concept, not the business's actual website. Photos shown are stock photos, not photos of Fountain City Tattoo or its artists. Business details shown come from public listings. See what Freightfolio can build at <a href="https://freightfolio.net" style="color:var(--red);">freightfolio.net</a>.
+    </div>
+    <nav aria-label="Sections">
+      <a href="#studio">Studio</a>
+      <a href="#artists">Artists</a>
+      <a href="#walkins">Walk-ins</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

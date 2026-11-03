@@ -1,0 +1,5 @@
+PHOTOS:
+- real-bouquet.jpg: A bouquet of red and pink roses, ranunculus, and purple flowers wrapped in red paper. REAL photo from the business's own site thefarmersdaughterflowers.com (viewed before use).
+- real-workshop.jpg: Guests making evergreen wreaths at a workshop table. REAL photo from the business's own site thefarmersdaughterflowers.com (viewed before use).
+- real-wedding.jpg: A wedding ceremony under a white-draped tent with white and green florals along the aisle. REAL photo from the business's own site thefarmersdaughterflowers.com (viewed before use).
+- ranunculus.jpg, bouquet.jpg: Stock photos, labeled as such on services/visit pages (unchanged).

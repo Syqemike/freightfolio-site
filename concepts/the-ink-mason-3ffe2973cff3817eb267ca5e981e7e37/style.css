@@ -1,0 +1,77 @@
+/* The Ink Mason concept - dark tattoo atelier */
+:root{
+  --bg:#100f0d;
+  --bg-soft:#171512;
+  --bone:#ece3d2;
+  --bone-dim:#a89e88;
+  --rust:#c06a35;
+  --rust-bright:#e08a4e;
+  --hair:#35302a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--bone);line-height:1.7;font-size:17px;
+}
+.serif{font-family:Georgia,"Iowan Old Style","Times New Roman",serif}
+.preview-banner{
+  background:var(--rust);color:#14100c;text-align:center;
+  font-size:12px;letter-spacing:3px;text-transform:uppercase;padding:9px 12px;font-weight:700;
+}
+.preview-banner a{color:#14100c}
+.site-header{border-bottom:1px solid var(--hair)}
+.header-inner{max-width:1240px;margin:0 auto;padding:26px 28px 20px;display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between}
+.brand{font-family:Georgia,"Times New Roman",serif;font-size:32px;letter-spacing:1px}
+.brand span{color:var(--rust-bright)}
+nav.main-nav{display:flex;flex-wrap:wrap;gap:6px 26px;font-size:14px;letter-spacing:2px;text-transform:uppercase}
+nav.main-nav a{color:var(--bone-dim);text-decoration:none;padding-bottom:3px;border-bottom:1px solid transparent}
+nav.main-nav a:hover{color:var(--bone);border-bottom-color:var(--rust)}
+nav.main-nav a.current{color:var(--rust-bright);border-bottom-color:var(--rust-bright)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.hero{display:grid;grid-template-columns:1fr 1.1fr;gap:0;align-items:stretch;margin:0;border-bottom:1px solid var(--hair)}
+.hero-copy{padding:70px 56px 70px 0;display:flex;flex-direction:column;justify-content:center}
+.hero-img{position:relative;min-height:420px}
+.hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85)}
+.eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--rust-bright);margin-bottom:16px}
+h1.headline{font-family:Georgia,"Times New Roman",serif;font-size:clamp(40px,5vw,66px);line-height:1.06;margin-bottom:22px;font-weight:normal}
+h1.headline em{color:var(--rust-bright)}
+.lede{color:var(--bone-dim);font-size:18px;max-width:46ch;margin-bottom:30px}
+.btn{display:inline-block;background:var(--rust);color:#14100c;text-decoration:none;padding:14px 30px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:14px}
+.btn:hover{background:var(--rust-bright)}
+.btn.ghost{background:transparent;color:var(--bone);border:1px solid var(--hair)}
+.btn.ghost:hover{border-color:var(--rust-bright);color:var(--rust-bright)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+.section{padding:70px 0;border-bottom:1px solid var(--hair)}
+.sec-num{font-family:Georgia,serif;color:var(--rust);font-size:15px;letter-spacing:3px;margin-bottom:10px}
+h2.stitle{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,3.6vw,44px);font-weight:normal;margin-bottom:16px;line-height:1.15}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.artist-block{border-top:1px solid var(--hair);padding:26px 0}
+.artist-block h3{font-family:Georgia,serif;font-size:26px;margin-bottom:8px}
+.artist-block p{color:var(--bone-dim)}
+.work-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:28px;margin-top:34px}
+.w-item{grid-column:span 6;position:relative}
+.w-item.tall{grid-column:span 4}
+.w-item img{width:100%;height:100%;object-fit:cover;display:block;border:1px solid var(--hair)}
+.w-item figure{height:420px;overflow:hidden}
+.w-item.tall figure{height:520px}
+.photo-cap{font-size:13px;color:var(--bone-dim);margin-top:9px;font-style:italic}
+.photo-cap .stock{border:1px solid var(--hair);padding:1px 8px;font-style:normal;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--rust-bright)}
+.hours-table{width:100%;border-collapse:collapse;margin:14px 0}
+.hours-table td{padding:11px 4px;border-bottom:1px solid var(--hair)}
+.hours-table td:last-child{text-align:right;color:var(--bone-dim)}
+.big-phone{font-family:Georgia,serif;font-size:36px;color:var(--rust-bright);text-decoration:none}
+.big-phone:hover{text-decoration:underline}
+.card{background:var(--bg-soft);border:1px solid var(--hair);padding:34px}
+.disclosure{border:1px solid var(--hair);border-left:4px solid var(--rust);padding:16px 20px;font-size:15px;color:var(--bone-dim);margin:28px 0}
+.disclosure strong{color:var(--bone)}
+.site-footer{padding:38px 28px}
+.footer-inner{max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;font-size:14px;color:var(--bone-dim)}
+.site-footer a{color:var(--rust-bright)}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr}
+  .hero-copy{padding:44px 0}
+  .hero-img{min-height:300px;position:relative;height:300px}
+  .grid-2{grid-template-columns:1fr;gap:28px}
+  .w-item,.w-item.tall{grid-column:span 12}
+  .w-item figure,.w-item.tall figure{height:340px}
+}

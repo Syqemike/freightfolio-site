@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Belle's Bread or its products, services, or premises.
+- hero.jpg: Stock photo: Baked goods under a glass cover in a bakery.
+- cookies.jpg: Stock photo: Chocolate chip cookies with a French press of coffee on a wooden table.
+- rolls.jpg: Stock photo: Cinnamon rolls on bakery racks.

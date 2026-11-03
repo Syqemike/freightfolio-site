@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Frerichs Tree Service concept (Website Dev shift 2026-10-30 03:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A lumberjack using a chainsaw to cut logs outdoors, sawdust flying. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/bobcat-tree-work-404e2973cff3815388/img
+
+- img/arborist.jpg: An arborist in a tree wearing a safety harness, holding ropes and a chainsaw. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/bobcat-tree-work-404e2973cff3815388/img
+
+- img/logs.jpg: A person using a chainsaw to cut logs in a forest. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/bobcat-tree-work-404e2973cff3815388/img

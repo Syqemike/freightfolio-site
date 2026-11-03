@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - Latisha Hardy Dance & Co concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: A couple dancing together at a social dance. Stock photo. Public domain photo via Hippopx (salsa couple dance), swapped in by Rebuild run105 wave 2 (2026-10-30) for the QA 2026-10-30 01:59 folklorico-hero note; visually verified.
+
+- img/floor.jpg: Adults dancing on a brightly lit dance floor. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/staverdancesport-405e2973cff38158b5/img
+
+- img/couple.jpg: A couple dancing at a celebration. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/staverdancesport-405e2973cff38158b5/img

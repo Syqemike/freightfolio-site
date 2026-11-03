@@ -1,0 +1,8 @@
+PHOTOS (rebuild run130):
+- entrance.jpg: REAL photo of The Beach House Kitchen and Cocktails (entrance lettering in blue, BEACH HOUSE kitchen & cocktails), a landscape crop of the full entrance photo downloaded from the business Google listing image and viewed before use, both as the full portrait and as the crop. Captioned as a photo of the business from its Google listing.
+- hero.jpg: Shrimp etouffee served with rice. Stock photo, labeled as such on every page.
+- poboy.jpg: A shrimp po boy sandwich with fries and sauces. Stock photo, labeled as such on every page.
+- burger.jpg: A burger. Stock photo, labeled as such on every page.
+Source pool for stock: brady-s-steaks-and-seafood concept pool (verified stock pool reused by the prior build); stock photos are not photos of The Beach House Kitchen and Cocktails.
+SOURCING CHECK 2026-11-01 (live browser): Google Maps listing verified (1154 W Beach Blvd #6200, Gulf Shores, AL 36542; phone (251) 948-2431; beachhousegs.com) with an extensive real photo gallery; Facebook page found but UNOFFICIAL (check-in page, not linked on the site); Instagram profile found (thebeachhousekitchen.gs) but post grid not verifiable logged-out; Yelp bot-blocked (DataDome), not verified directly.
+CAVEAT: public posting alone does not prove a reuse license; the listing photo is credited to the business Google listing in its caption.

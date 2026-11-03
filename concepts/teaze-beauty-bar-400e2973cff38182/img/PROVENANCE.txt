@@ -1,0 +1,27 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-6.jpg = Pexels photo 36930354: Free Detailed close-up of an eyelash extension application in a beauty salon. Stock Photo
+  page: https://www.pexels.com/photo/close-up-of-eyelash-extension-procedure-36930354/
+  file: https://images.pexels.com/photos/36930354/pexels-photo-36930354.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-1.jpg = Pexels photo 18112333: Free Nail artist meticulously applying nail polish in a beauty salon environment. Stock Photo
+  page: https://www.pexels.com/photo/woman-doing-her-nails-at-the-beauty-salon-18112333/
+  file: https://images.pexels.com/photos/18112333/pexels-photo-18112333.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 4783335: Free Top view of a professional manicure session with red nail polish application in a modern salon. Stock Photo
+  page: https://www.pexels.com/photo/manicurist-applying-red-nail-polish-on-client-4783335/
+  file: https://images.pexels.com/photos/4783335/pexels-photo-4783335.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 14267565: Free Close-up of a manicurist performing a nail file treatment on a customer's hand in a salon. Stock Photo
+  page: https://www.pexels.com/photo/a-person-doing-a-manicure-14267565/
+  file: https://images.pexels.com/photos/14267565/pexels-photo-14267565.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 4677849: Free A detailed view of a manicurist filing a woman's nails under soft lighting. Stock Photo
+  page: https://www.pexels.com/photo/a-person-doing-manicure-4677849/
+  file: https://images.pexels.com/photos/4677849/pexels-photo-4677849.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 16041439: Free Close-up of a professional manicure session with a nail file used by a beautician. Stock Photo
+  page: https://www.pexels.com/photo/nail-file-in-women-16041439/
+  file: https://images.pexels.com/photos/16041439/pexels-photo-16041439.jpeg?auto=compress&cs=tinysrgb&w=1260

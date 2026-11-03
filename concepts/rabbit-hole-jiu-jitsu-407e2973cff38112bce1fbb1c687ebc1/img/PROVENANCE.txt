@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Rabbit Hole Jiu Jitsu concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- bjj-match.jpg
+  Caption: Two people in a Brazilian Jiu-Jitsu match, seen from above. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/15545735/ . Stock photo, not a photo of this business.
+
+- bjj-grappling.jpg
+  Caption: Two people grappling in Brazilian Jiu-Jitsu training. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/5485637/ . Stock photo, not a photo of this business.
+
+- bjj-partners.jpg
+  Caption: Two people practicing jiu-jitsu on a training mat. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/8612524/ . Stock photo, not a photo of this business.
+
+- bjj-mats.jpg
+  Caption: Martial artists in black gis practicing on gym mats. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/16833338/ . Stock photo, not a photo of this business.
+

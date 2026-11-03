@@ -1,0 +1,8 @@
+PHOTOS:
+- kitchen.jpg: REAL photo of Gimme The Dirt Ltd from its Google listing owner gallery (worker deep-cleaning a kitchen, Jan 2022). Viewed before use 2026-11-01.
+- floor.jpg: REAL photo of Gimme The Dirt Ltd from its Google listing owner gallery (worker mopping a commercial floor, Jun 2024). Viewed before use 2026-11-01.
+- spray.jpg: STOCK photo (gloved hand with spray bottle) from the verified Freightfolio concept pool, labeled as stock on every page. Not a photo of Gimme The Dirt Ltd.
+Sourcing: live-browser check 2026-11-01 (Google Maps gallery 16 photos + 4 videos; BBB no photos; HireRush thumbs 110x110 rejected). Prior 'no photo gallery' finding corrected by this check.
+Caveat: public posting alone does not prove a reuse license.
+
+Rebuild run136 (2026-11-01): spray.jpg (labeled stock) removed; dusting.jpg added: real photo from Gimme The Dirt Ltd's Google listing owner gallery, downloaded 2026-11-01 from the Maps photo page and VIEWED before use: a worker on a ladder in a high-visibility vest dusting high ceilings in a commercial store. Reuse-license caveat from run134 still stands: public posting alone does not prove a reuse license; all three photos are credited to the company's Google listing in their captions.
