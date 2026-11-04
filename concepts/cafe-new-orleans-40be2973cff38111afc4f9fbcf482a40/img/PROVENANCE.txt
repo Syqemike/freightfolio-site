@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Cafe New Orleans.
+etouffee.jpg <- /home/hatch/workspace/freightfolio-site/concepts/brady-s-steaks-and-seafood-405e2973cff38118a8/img/hero.jpg
+poboy.jpg <- /home/hatch/workspace/freightfolio-site/concepts/brady-s-steaks-and-seafood-405e2973cff38118a8/img/poboy.jpg
+fish.jpg <- /home/hatch/workspace/freightfolio-site/concepts/tammy-s-fish-fried-green-tomatoes-405e2973cff381b7a3/img/fish-plate.jpg

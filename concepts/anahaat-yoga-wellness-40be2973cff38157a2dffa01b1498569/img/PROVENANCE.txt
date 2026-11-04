@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Anahaat Yoga & Wellness.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/yoga-now-404e2973cff38178b8/img/hero.jpg
+blocks.jpg <- /home/hatch/workspace/freightfolio-site/concepts/yoga-now-404e2973cff38178b8/img/yoganow2.jpg
+catcow.jpg <- /home/hatch/workspace/freightfolio-site/concepts/yoga-now-404e2973cff38178b8/img/yoganow3.jpg

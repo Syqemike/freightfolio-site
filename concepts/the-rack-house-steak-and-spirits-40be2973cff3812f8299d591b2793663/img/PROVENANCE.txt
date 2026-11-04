@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The Rack House Steak and Spirits.
+burger.jpg <- /home/hatch/workspace/freightfolio-site/concepts/four-points-brewing-405e2973cff3818193/img/burger.jpg
+steak.jpg <- /home/hatch/workspace/freightfolio-site/concepts/el-gato-peligroso-406e2973cff381b5bf/img/steak.jpg
+taps.jpg <- /home/hatch/workspace/freightfolio-site/concepts/four-points-brewing-405e2973cff3818193/img/hero.jpg

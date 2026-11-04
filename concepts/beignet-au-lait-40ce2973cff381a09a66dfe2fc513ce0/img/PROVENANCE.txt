@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Beignet Au Lait.
+cafe.jpg <- /home/hatch/workspace/freightfolio-site/concepts/cafe-beignet-404e2973cff3811986/img/hero.jpg
+latte.jpg <- /home/hatch/workspace/freightfolio-site/concepts/cafe-beignet-404e2973cff3811986/img/latte.jpg
+pastry.jpg <- /home/hatch/workspace/freightfolio-site/concepts/cafe-beignet-404e2973cff3811986/img/pastry.jpg

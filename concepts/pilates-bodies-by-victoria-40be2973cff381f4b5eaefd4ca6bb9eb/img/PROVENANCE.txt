@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Pilates Bodies By Victoria.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/the-yoga-hive-406e2973cff3812093/img/hero.jpg
+yoga2.jpg <- /home/hatch/workspace/freightfolio-site/concepts/the-yoga-hive-406e2973cff3812093/img/yoga2.jpg
+yoga3.jpg <- /home/hatch/workspace/freightfolio-site/concepts/the-yoga-hive-406e2973cff3812093/img/yoga3.jpg
