@@ -1,10 +1,28 @@
-PHOTO PROVENANCE - PM3 Fishing Charters concept site (Rebuild run112, 2026-10-30)
+PHOTO PROVENANCE - PM3 Fishing Charters concept site (Rebuild run150, 2026-11-03)
 
 - real-topwater.jpg: An angler casting from the boat at sunrise on calm water.
   REAL photo from the business's own website pm3fishingcharters.com (homepage image,
-  "early morning topwater", viewed before use). Used on index.html only.
+  "early morning topwater", viewed before use; re-viewed run150).
+- real-skiff.jpg: The 18-foot Beavertail Vengeance skiff anchored in shallow, clear water.
+  REAL photo from the business's own website pm3fishingcharters.com (file
+  "beavertail skiff pi.jpg", downloaded and viewed run150).
+- real-captain.jpg: Capt. Shawn Mistovich standing on the poling platform holding a pole.
+  REAL photo from the business's own website pm3fishingcharters.com (file
+  "Website photo.jpg", downloaded and viewed run150; the site's alt text for this
+  image is wrong, the viewed image is the captain).
 - shoreline.jpg: Sunset over a calm bay beside a beach and rock jetty. Stock photo.
   Source: Pool copy: dominator-fishing-charters-405e2973cff381b2a1/img/shoreline.jpg.
+  Re-viewed run150.
 - deck.jpg: A fishing boat deck with crates, nets, buoys, and rope. Stock photo.
   Source: Pool copy: dominator-fishing-charters-405e2973cff381b2a1/img/deck.jpg.
-The former hero sunset.jpg (stock) was removed; no page references it.
+  Re-viewed run150.
+Live-browser sourcing check run150 (2026-11-03, read-only): own site pm3fishingcharters.com
+VERIFIED (3 real photos on the homepage); Facebook facebook.com/pm3fishingcharters
+VERIFIED (839 followers, Photos tab at least 8 real photos); Instagram
+@capt.shawn.mistovich VERIFIED in part (profile and first grid visible without sign-in,
+deeper browsing sign-in gated); Google Maps listing VERIFIED (1401 E Gregory St,
+Pensacola, FL 32502, (850) 232-7333, gallery about 5 to 6 photos, 4 by owner);
+Tripadvisor VERIFIED (traveler photos 7). No clean downloadable asset was taken from
+Facebook, Instagram, Google Maps, or Tripadvisor; the two new real photos above came
+from the business's own website, which is the clean source.
+The former hero sunset.jpg (stock) was removed in run112; no page references it.
