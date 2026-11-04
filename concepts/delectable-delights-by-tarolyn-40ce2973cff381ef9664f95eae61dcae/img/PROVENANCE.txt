@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Delectable Delights By Tarolyn.
+case.jpg <- /home/hatch/workspace/freightfolio-site/concepts/el-dorado-bakery-404e2973cff38106aa/img/hero.jpg
+concha.jpg <- /home/hatch/workspace/freightfolio-site/concepts/el-dorado-bakery-404e2973cff38106aa/img/eldorado2.jpg
+tray.jpg <- /home/hatch/workspace/freightfolio-site/concepts/el-dorado-bakery-404e2973cff38106aa/img/eldorado3.jpg

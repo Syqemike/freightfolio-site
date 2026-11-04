@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of King Tree Service.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bobcat-tree-work-404e2973cff3815388/img/hero.jpg
+arborist.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bobcat-tree-work-404e2973cff3815388/img/arborist.jpg
+street.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-better-tree-service-404e2973cff381eeb0/img/street.jpg

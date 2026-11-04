@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Forum Animal Hospital.
+exam.jpg <- /home/hatch/workspace/freightfolio-site/concepts/advanced-animal-care-f63bdc7cb30f/img/hero-dog-exam.jpg
+cat.jpg <- /home/hatch/workspace/freightfolio-site/concepts/advanced-animal-care-f63bdc7cb30f/img/cat-vet-check.jpg
+puppy.jpg <- /home/hatch/workspace/freightfolio-site/concepts/advanced-animal-care-f63bdc7cb30f/img/puppy-portrait.jpg

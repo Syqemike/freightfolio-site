@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Lucky Dog Lodge.
+pups.jpg <- /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img/hero-pups.jpg
+gate.jpg <- /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img/gate-dogs.jpg
+happy.jpg <- /home/hatch/workspace/freightfolio-site/concepts/all-pets-boarding-resort-fd56eb5b774f/img/happy-dog.jpg

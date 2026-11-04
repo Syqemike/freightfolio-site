@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Dog Gone Right.
+play.jpg <- /home/hatch/workspace/freightfolio-site/concepts/blue-dog-k9-care-404e2973cff381c184/img/hero.jpg
+ball.jpg <- /home/hatch/workspace/freightfolio-site/concepts/blue-dog-k9-care-404e2973cff381c184/img/dog2.jpg
+pair.jpg <- /home/hatch/workspace/freightfolio-site/concepts/blue-dog-k9-care-404e2973cff381c184/img/dog3.jpg

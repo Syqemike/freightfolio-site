@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Barkmore In The Country.
+groom.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dog-culture-406e2973cff381058f/img/hero.jpg
+clip.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dog-culture-406e2973cff381058f/img/bernedoodle.jpg
+coat.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dog-culture-406e2973cff381058f/img/brushed.jpg

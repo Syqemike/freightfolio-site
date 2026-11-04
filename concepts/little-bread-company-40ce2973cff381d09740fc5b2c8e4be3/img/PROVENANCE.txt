@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Little Bread Company.
+quiche.jpg <- /home/hatch/workspace/freightfolio-site/concepts/cottage-cafe-404e2973cff38143ba/img/hero.jpg
+sandwich.jpg <- /home/hatch/workspace/freightfolio-site/concepts/cottage-cafe-404e2973cff38143ba/img/cottage2.jpg
+salad.jpg <- /home/hatch/workspace/freightfolio-site/concepts/cottage-cafe-404e2973cff38143ba/img/cottage3.jpg
