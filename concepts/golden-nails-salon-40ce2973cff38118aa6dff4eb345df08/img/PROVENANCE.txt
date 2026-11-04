@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Golden Nails Salon.
+manicure.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-euphoria-nails-spa-405e2973cff3815eb3/img/manicure.jpg
+nails.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-euphoria-nails-spa-405e2973cff3815eb3/img/nails.jpg
+pedicure.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-euphoria-nails-spa-405e2973cff3815eb3/img/pedicure.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Buff Guys Mobile Detail and Customs.
+wash.jpg <- /home/hatch/workspace/freightfolio-site/concepts/b-rads-auto-detailing-402e297381fe88f6/img/wash.jpg
+polish.jpg <- /home/hatch/workspace/freightfolio-site/concepts/b-rads-auto-detailing-402e297381fe88f6/img/shine.jpg
+interior.jpg <- /home/hatch/workspace/freightfolio-site/concepts/b-rads-auto-detailing-402e297381fe88f6/img/interior-clean.jpg

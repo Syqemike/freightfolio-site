@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of A Kneaded Touch Therapy LLC.
+hero.jpg <- /home/hatch/workspace/freightfolio-site/concepts/basic-kneads-massage-therapy-406e2973cff3812585/img/hero.jpg
+hands.jpg <- /home/hatch/workspace/freightfolio-site/concepts/basic-kneads-massage-therapy-406e2973cff3812585/img/hands.jpg
+interior.jpg <- /home/hatch/workspace/freightfolio-site/concepts/basic-kneads-massage-therapy-406e2973cff3812585/img/interior.jpg

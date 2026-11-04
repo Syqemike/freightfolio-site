@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Central Child Care.
+blocks.jpg <- /home/hatch/workspace/freightfolio-site/concepts/jack-and-jill-preschool-and-daycare-403e2973cff38174b1/img/hero.jpg
+bubbles.jpg <- /home/hatch/workspace/freightfolio-site/concepts/jack-and-jill-preschool-and-daycare-403e2973cff38174b1/img/bubbles.jpg
+clay.jpg <- /home/hatch/workspace/freightfolio-site/concepts/jack-and-jill-preschool-and-daycare-403e2973cff38174b1/img/clay.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Rockin Chicken and Waffles.
+omelette.jpg <- /home/hatch/workspace/freightfolio-site/concepts/the-ugly-diner-404e2973cff3819583/img/hero.jpg
+plate.jpg <- /home/hatch/workspace/freightfolio-site/concepts/the-ugly-diner-404e2973cff3819583/img/plate.jpg
+eggs.jpg <- /home/hatch/workspace/freightfolio-site/concepts/the-ugly-diner-404e2973cff3819583/img/eggs.jpg

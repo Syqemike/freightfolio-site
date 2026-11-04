@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Kindergate.
+together.jpg <- /home/hatch/workspace/freightfolio-site/concepts/kids-kabin-day-care-center-403e2973cff381ec/img/classroom-together.jpg
+paint.jpg <- /home/hatch/workspace/freightfolio-site/concepts/kids-kabin-day-care-center-403e2973cff381ec/img/painted-hands.jpg
+classroom.jpg <- /home/hatch/workspace/freightfolio-site/concepts/another-adventure-daycare-403e2973cff38154/img/stock-classroom.jpg

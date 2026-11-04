@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Panhandle Charm Weddings & Events.
+ceremony.jpg <- /home/hatch/workspace/freightfolio-site/concepts/at-the-beach-weddings-405e2973cff381e3be/img/hero.jpg
+bouquet.jpg <- /home/hatch/workspace/freightfolio-site/concepts/at-the-beach-weddings-405e2973cff381e3be/img/bouquet.jpg
+florals.jpg <- /home/hatch/workspace/freightfolio-site/concepts/at-the-beach-weddings-405e2973cff381e3be/img/florals.jpg
