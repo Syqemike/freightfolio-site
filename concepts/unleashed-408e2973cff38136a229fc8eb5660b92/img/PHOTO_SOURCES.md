@@ -1,7 +1,16 @@
-PHOTO SOURCES - Unleashed rebuild run124 (2026-10-31)
-Real photos from the business own website unleashedindaphne.com, fetched live 2026-10-31 and viewed before use. Captions describe exactly what each photo shows.
-- img/staff.jpg: A staff member in an Unleashed cap with a dog. Photo published on unleashedindaphne.com.
-- img/golden.jpg: A golden retriever rolling in the grass with an orange ball. Photo published on unleashedindaphne.com.
-- img/lab.jpg: A Labrador sitting beside a suitcase, hat, and sunglasses. Photo published on unleashedindaphne.com.
-- img/towel.jpg: A small dog wrapped in a white towel after a bath. Photo published on unleashedindaphne.com.
-Not used: the own-site app-reminder graphic (golden retriever close-up with overlaid scheduling text and a party graphic), skipped so captions stay purely descriptive.
+# Photo sources — Unleashed, Daphne (rebuild run151, 2026-11-04)
+
+All photos below are REAL photos published on the business's own website,
+unleashedindaphne.com (fetched live again 2026-11-04 via www.unleashedindaphne.com;
+same images as run124, re-viewed this shift before reuse):
+
+- staff.jpg: a staff member in an Unleashed cap with a dog.
+- golden.jpg: a golden retriever rolling in the grass with an orange ball.
+- lab.jpg: a Labrador sitting beside a suitcase, a hat, and sunglasses.
+- towel.jpg: a small dog wrapped in a towel after a bath.
+
+Deliberately NOT used: the own-site app-reminder graphic (IMG_8822, a golden
+retriever photo with overlaid text "Don't forget to schedule your daycare on
+the app!" and "DOG party!") — captions must stay purely descriptive.
+
+No stock photos on this site. No concept art. No photos from any other business.

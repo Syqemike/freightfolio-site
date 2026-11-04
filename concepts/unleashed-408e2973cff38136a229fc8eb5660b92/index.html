@@ -4,50 +4,70 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Unleashed | Daphne</title>
+<title>Unleashed | Dog daycare and boarding in Daphne</title>
 <style>
-body{margin:0;font-family:Verdana,Geneva,sans-serif;background:#fbf7ec;color:#22301f}
-.disclosure{background:#235c3e;color:#f2ecda;font-size:13px;margin:0;padding:10px 20px}
-.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:22px 5% 10px;border-bottom:4px solid #d9822b}
-.bizname{font-size:30px;margin:0;color:#235c3e;font-weight:bold}
-nav a{margin-left:18px;color:#235c3e;text-decoration:none;font-weight:bold}
-nav a.cur{text-decoration:underline}
-.split{display:grid;grid-template-columns:58% 42%}
-.splitimg{width:100%;height:480px;object-fit:cover;display:block}
-.splittext{background:#235c3e;color:#fff;padding:44px 34px}
-.splittext h1{font-size:42px;margin:0 0 12px;line-height:1.1}
-.splittext p{font-size:18px;line-height:1.5;margin:0}
-section{padding:36px 5%}
-h2{font-size:28px;color:#235c3e;margin:0 0 14px}
-p,li{font-size:17px;line-height:1.6}
-.band{background:#e8e2cd}
-.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;background:#235c3e;color:#fff;padding:30px 5%}
-.stat b{display:block;font-size:30px}
-.stat span{font-size:15px;line-height:1.4}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.card{background:#fff;border-top:6px solid #d9822b;padding:22px}
-.card h3{margin:0 0 8px;font-size:21px;color:#235c3e}
-.card p{margin:0}
-.gallery{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
-.photo{width:100%;height:300px;object-fit:cover;display:block}
-.cap{font-size:13px;color:#5a5347;margin:8px 0 0}
-.hours{list-style:none;padding:0;max-width:520px}
-.hours li{display:flex;justify-content:space-between;border-bottom:1px solid #c9bfa8;padding:8px 0}
-.cta{display:inline-block;background:#d9822b;color:#fff;padding:13px 22px;text-decoration:none;font-weight:bold;border-radius:3px}
-footer{border-top:4px solid #235c3e;padding:20px 5%;font-size:13px;color:#5a5347}
-@media(max-width:700px){.split,.cards,.gallery,.stats{grid-template-columns:1fr}.splitimg{height:320px}.splittext h1{font-size:32px}.masthead{display:block}}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fdf6e9;color:#26332b}
+.yj-note{background:#26332b;color:#f5ecd7;font-size:13px;line-height:1.5;margin:0;padding:10px 5%}
+.yj-top{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:20px 5% 8px;border-bottom:3px solid #c4502a}
+.yj-name{font-family:Georgia,serif;font-size:34px;margin:0;color:#26332b;letter-spacing:.5px}
+.yj-nav a{margin-left:16px;color:#26332b;text-decoration:none;font-weight:bold;font-size:15px}
+.yj-nav a.yj-here{color:#c4502a;text-decoration:underline;text-underline-offset:4px}
+.yj-kicker{color:#c4502a;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;font-weight:bold;margin:0}
+.yj-heroimg{width:100%;height:520px;object-fit:cover;display:block}
+.yj-headcard{background:#fff;border:1px solid #d8cdb4;border-top:6px solid #c4502a;margin:-70px 5% 0;position:relative;padding:28px 30px;max-width:720px}
+.yj-headcard h1{font-family:Georgia,serif;font-size:46px;line-height:1.05;margin:10px 0 12px}
+.yj-headcard p{font-size:18px;line-height:1.6;margin:0}
+.yj-wrap{padding:38px 5%}
+.yj-wrap h2{font-family:Georgia,serif;font-size:30px;margin:0 0 6px}
+.yj-intro{font-size:17px;line-height:1.65;max-width:760px;margin:0 0 28px}
+.yj-row{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:24px 0;border-top:1px solid #d8cdb4}
+.yj-row:last-of-type{border-bottom:1px solid #d8cdb4}
+.yj-num{font-family:Georgia,serif;font-size:40px;color:#c4502a;line-height:1}
+.yj-row h3{font-family:Georgia,serif;font-size:22px;margin:0 0 8px}
+.yj-row p{font-size:16px;line-height:1.6;margin:0;max-width:720px}
+.yj-side{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.yj-side img{width:100%;height:340px;object-fit:cover;display:block}
+.yj-cap{font-size:13px;color:#6b6252;line-height:1.5;margin:8px 0 0}
+.yj-facts{background:#26332b;color:#f5ecd7;padding:28px}
+.yj-facts h3{font-family:Georgia,serif;font-size:22px;margin:0 0 14px}
+.yj-facts ul{margin:0;padding-left:20px}
+.yj-facts li{font-size:16px;line-height:1.6;margin-bottom:8px}
+.yj-pair{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.yj-pair img{width:100%;height:300px;object-fit:cover;display:block}
+.yj-cta{background:#c4502a;color:#fff;padding:34px 5%}
+.yj-cta p{font-family:Georgia,serif;font-size:24px;margin:0 0 14px}
+.yj-cta a{display:inline-block;background:#fff;color:#26332b;padding:13px 22px;text-decoration:none;font-weight:bold}
+.yj-hours{list-style:none;padding:0;margin:0;max-width:560px}
+.yj-hours li{display:flex;justify-content:space-between;gap:20px;border-bottom:1px dotted #b9ac8d;padding:10px 0;font-size:17px}
+.yj-foot{border-top:3px solid #c4502a;padding:20px 5%;font-size:13px;line-height:1.6;color:#6b6252}
+@media(max-width:700px){.yj-top{display:block}.yj-nav a{margin:8px 16px 0 0;display:inline-block}.yj-heroimg{height:320px}.yj-headcard{margin:-40px 5% 0;padding:22px}.yj-headcard h1{font-size:32px}.yj-side,.yj-pair{grid-template-columns:1fr}.yj-side img,.yj-pair img{height:260px}.yj-row{grid-template-columns:48px 1fr}}
 </style>
 </head>
 <body>
-<p class="disclosure">Design Preview: this is a concept website created by Freightfolio to show what a new website for this business could look like. It is not the business's live website.</p>
-<header class="masthead"><p class="bizname">Unleashed</p><nav><a href="index.html" class="cur">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav></header>
+<p class="yj-note">Design Preview: this is a concept website created by Freightfolio to show what a new website for this business could look like. It is not the business's live website.</p><header class="yj-top"><p class="yj-name">Unleashed</p><nav class="yj-nav"><a href="index.html" class="yj-here">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav></header>
 
-<div class="split"><img class="splitimg" src="img/staff.jpg" alt="A staff member in an Unleashed cap with a dog"><div class="splittext"><h1>Unleashed</h1><p>Dog daycare and boarding in Daphne, with open play during the day and restful overnight stays.</p></div></div>
-<section><h2>A day at Unleashed</h2><p>Daycare at Unleashed is open play. Dogs socialize and play with well-trained staff and burn off energy, and personalized evaluations help keep every pet safe and comfortable. Whether your dog visits for the day or for an extended stay, the setting is an open-play environment with home-style boarding.</p><p><a class="cta" href="tel:+12513751600">Call to book: (251) 375-1600</a></p></section>
-<div class="stats"><div class="stat"><b>6,000+ sq ft</b><span>Facility size</span></div><div class="stat"><b>2 outdoor areas</b><span>Play areas with turf and beach sand</span></div><div class="stat"><b>First day free</b><span>Every dog's first day of daycare is free</span></div></div>
-<section class="band"><h2>Room to play, sized by dog</h2><p>The facility has two large outdoor play areas with pet-friendly turf and beach sand, plus dog-friendly playground equipment and cots and chairs for lounging. Play areas inside and outside are set by dog size. The small-dog area is for dogs 35 lbs and under. The large-dog area is for dogs over 50 lbs.</p><p>Stop by for a tour of the facility.</p></section>
-<section><h2>Photos</h2><div class="gallery"><div><img class="photo" src="img/golden.jpg" alt="A golden retriever rolling in the grass with an orange ball"><p class="cap">A golden retriever rolling in the grass with an orange ball. Photo published on the business website, unleashedindaphne.com.</p></div><div><img class="photo" src="img/lab.jpg" alt="A Labrador sitting beside a suitcase, hat, and sunglasses"><p class="cap">A Labrador sitting beside a suitcase, hat, and sunglasses. Photo published on the business website, unleashedindaphne.com.</p></div></div></section>
+<img class="yj-heroimg" src="img/golden.jpg" alt="A golden retriever rolling in the grass with an orange ball">
+<div class="yj-headcard"><p class="yj-kicker">Dog daycare and boarding in Daphne</p>
+<h1>Unleashed</h1>
+<p>Open play during the day and restful overnight stays, in a 6,000 plus square foot facility with two outdoor play areas. Every dog's first day of daycare is free.</p></div>
+<div class="yj-wrap"><h2>A day at Unleashed</h2>
+<p class="yj-intro">Daycare at Unleashed is open play. Dogs socialize and play with well-trained staff and burn off energy, and personalized evaluations help keep every pet safe and comfortable. Whether your dog visits for the day or for an extended stay, the setting is an open-play environment with home-style boarding.</p>
+<div class="yj-row"><div class="yj-num">01</div><div><h3>Dog daycare</h3><p>Open play with staff supervision, social time with other dogs, and personalized evaluations that help keep every pet safe and comfortable. The first day of daycare is free.</p></div></div>
+<div class="yj-row"><div class="yj-num">02</div><div><h3>Boarding</h3><p>Overnight stays in a home-style boarding setting, with penthouse suites available and familiar bedding from home welcome.</p></div></div>
+<div class="yj-row"><div class="yj-num">03</div><div><h3>Bathing and nail trims</h3><p>Gentle baths and nail trims by appointment, using top-grade products suited for sensitive skin and allergies.</p></div></div>
+</div>
+<div class="yj-wrap"><div class="yj-side"><div><img src="img/staff.jpg" alt="A staff member in an Unleashed cap with a dog"><p class="yj-cap">A staff member in an Unleashed cap with a dog. Photo published on the business website, unleashedindaphne.com.</p></div>
+<div class="yj-facts"><h3>The yard, by the numbers</h3><ul>
+<li>6,000 plus square feet of facility</li>
+<li>Two outdoor play areas with pet-friendly turf and beach sand</li>
+<li>Dog-friendly playground equipment, plus cots and chairs for lounging</li>
+<li>Small-dog area for dogs 35 lbs and under</li>
+<li>Large-dog area for dogs over 50 lbs</li>
+</ul></div></div></div>
+<div class="yj-wrap"><div class="yj-pair"><div><img src="img/lab.jpg" alt="A Labrador sitting beside a suitcase, a hat, and sunglasses"><p class="yj-cap">A Labrador sitting beside a suitcase, a hat, and sunglasses. Photo published on the business website, unleashedindaphne.com.</p></div>
+<div><img src="img/towel.jpg" alt="A small dog wrapped in a towel after a bath"><p class="yj-cap">A small dog wrapped in a towel after a bath. Photo published on the business website, unleashedindaphne.com.</p></div></div></div>
 
-<footer><p>Design Preview: this is a concept website created by Freightfolio to show what a new website for this business could look like. It is not the business's live website.</p></footer>
+<div class="yj-cta"><p>Ready to book a day of play?</p><a href="tel:+12513751600">Call to book: (251) 375-1600</a></div>
+<footer class="yj-foot"><p>Design Preview: this is a concept website created by Freightfolio to show what a new website for this business could look like. It is not the business's live website.</p></footer>
 </body>
 </html>
