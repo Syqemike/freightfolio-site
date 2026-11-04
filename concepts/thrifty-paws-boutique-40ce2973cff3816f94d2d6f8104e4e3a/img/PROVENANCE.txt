@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Thrifty Paws Boutique.
+livingroom.jpg <- /home/hatch/workspace/freightfolio-site/concepts/lila-jean-s-404e2973cff381b28e/img/hero.jpg
+interior.jpg <- /home/hatch/workspace/freightfolio-site/concepts/lila-jean-s-404e2973cff381b28e/img/vintage2.jpg
+figurines.jpg <- /home/hatch/workspace/freightfolio-site/concepts/lila-jean-s-404e2973cff381b28e/img/vintage3.jpg

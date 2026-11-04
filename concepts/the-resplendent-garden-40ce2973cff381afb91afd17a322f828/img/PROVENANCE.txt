@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The Resplendent Garden.
+garden.jpg <- /home/hatch/workspace/freightfolio-site/concepts/earle-harrison-house-pape-gardens-405e2973cff38142bd/img/hero.jpg
+roses.jpg <- /home/hatch/workspace/freightfolio-site/concepts/earle-harrison-house-pape-gardens-405e2973cff38142bd/img/roses.jpg
+bouquet.jpg <- /home/hatch/workspace/freightfolio-site/concepts/earle-harrison-house-pape-gardens-405e2973cff38142bd/img/bouquet.jpg

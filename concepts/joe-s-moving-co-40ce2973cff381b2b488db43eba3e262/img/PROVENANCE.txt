@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Joe's Moving Co..
+carry.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dan-the-moving-man-404e2973cff38151ac/img/hero.jpg
+loading.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dan-the-moving-man-404e2973cff38151ac/img/move2.jpg
+boxes.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dan-the-moving-man-404e2973cff38151ac/img/move3.jpg

@@ -1,0 +1,6 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Greenville Headshots or its clients.
+woman.jpg <- Pexels photo 774909: https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg (smiling woman in green and white patterned shirt, light wall)
+man-green.jpg <- Pexels photo 1222271: https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg (smiling man in green t-shirt, white background)
+man-blue.jpg <- Pexels photo 2379004: https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg (smiling bearded man in blue t-shirt, light concrete wall)
+Fetched from Pexels CDN 2026-11-04, viewed and captioned this shift. Pexels free license.

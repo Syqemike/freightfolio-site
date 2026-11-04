@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Revente.
+bracelets.jpg <- /home/hatch/workspace/freightfolio-site/concepts/better-jewelers-406e2973cff38196bb/img/hero.jpg
+ring.jpg <- /home/hatch/workspace/freightfolio-site/concepts/better-jewelers-406e2973cff38196bb/img/ring.jpg
+necklace.jpg <- /home/hatch/workspace/freightfolio-site/concepts/better-jewelers-406e2973cff38196bb/img/necklace.jpg

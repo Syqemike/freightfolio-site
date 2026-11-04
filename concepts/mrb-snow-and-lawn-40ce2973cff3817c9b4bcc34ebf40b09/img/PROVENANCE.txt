@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of MRB Snow and Lawn.
+cutter.jpg <- /home/hatch/workspace/freightfolio-site/concepts/best-landscape-404e2973cff38117af/img/hero.jpg
+mower.jpg <- /home/hatch/workspace/freightfolio-site/concepts/best-landscape-404e2973cff38117af/img/land2.jpg
+gardenbed.jpg <- /home/hatch/workspace/freightfolio-site/concepts/best-landscape-404e2973cff38117af/img/land3.jpg

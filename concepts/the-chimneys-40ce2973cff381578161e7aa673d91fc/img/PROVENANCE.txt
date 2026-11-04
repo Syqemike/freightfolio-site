@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The Chimneys.
+tacos.jpg <- /home/hatch/workspace/freightfolio-site/concepts/3-margaritas-kitchen-405e2973cff38133ae92f8a2c6a3b4e3/img/shrimptacos.jpg
+ceviche.jpg <- /home/hatch/workspace/freightfolio-site/concepts/3-margaritas-kitchen-405e2973cff38133ae92f8a2c6a3b4e3/img/ceviche.jpg
+aguachile.jpg <- /home/hatch/workspace/freightfolio-site/concepts/3-margaritas-kitchen-405e2973cff38133ae92f8a2c6a3b4e3/img/aguachile.jpg
