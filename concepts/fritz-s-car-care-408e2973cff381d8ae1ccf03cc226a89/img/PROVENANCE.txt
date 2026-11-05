@@ -1,9 +1,30 @@
-PHOTO PROVENANCE - Fritz's Car Care concept (Website Dev shift 2026-10-30 01:59 CT)
+PHOTO PROVENANCE - Fritz's Car Care concept (Rebuild run155, 2026-11-05)
+MIKE REWORK ORDER 2026-11-02 FULL REDO. All photos are real photos of THIS
+business. No stock photos. No concept art. Old stock files (hero.jpg,
+auto1b.jpg, auto3b.jpg) removed as unreferenced.
 
-None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+Google listing photos (public Google Maps gallery, viewed and downloaded
+2026-11-05; gallery: https://www.google.com/maps/place/Fritz's+Car+Care+Inc/@37.5479393,-77.4653271,17z):
+- img/mural-exterior.jpg: full shop exterior, red hot-rod mural on the teal
+  building, 1900 W Cary St. Street View photo, Jun 2023.
+- img/classic-cars.jpg: two classic cars parked in front of the mural wall
+  with the shop sign. Owner photo.
 
-- img/hero.jpg: A mechanic repairing a car undercarriage outdoors. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/arnold-automotive-404e2973cff3819c81/img
+Own website gallery photos (fritzscarcareinc.com gallery page, fetched live
+2026-11-05; page states 'Photos property of Fritz's Car Care Inc and its
+contributors'):
+- img/shop-front.jpg: shop front, mural building and red garage building.
+  Source: http://fritzscarcareinc.com/Pictures/2.png
+- img/street-view.jpg: shop from across West Cary Street.
+  Source: http://fritzscarcareinc.com/Pictures/3.png
+- img/street-sign.jpg: hanging street sign, FRITZ'S CAR CARE 1900 W CARY
+  RICHMOND VA. Source: http://fritzscarcareinc.com/Pictures/4.png
+- img/service-bay.jpg: a car in the shop's service bay.
+  Source: http://fritzscarcareinc.com/Pictures/5.png
 
-- img/auto3b.jpg: A man working under a car hood. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/arnold-automotive-404e2973cff3819c81/img
-
-- img/auto1b.jpg: A mechanic checking a car engine. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/arnold-automotive-404e2973cff3819c81/img
+NOT used: the own site's banner.png composite (contains a drawn cartoon
+mechanic illustration; Mike's no-concept-art rule). Facebook photos page
+checked 2026-11-05 (real photos confirmed: mural cover, waiting room,
+street sign, classic cars) but no direct image URLs were obtainable, so
+none are used. Instagram: no verified account found. Yelp: listing
+confirmed via Google index (4.1 from 25) but Yelp itself bot-blocked.
