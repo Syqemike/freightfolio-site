@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The Venue at Stonebrook Meadows.
+reception.jpg <- /home/hatch/workspace/freightfolio-site/concepts/brick-mortar-venue-406e2973cff381d39e/img/hero.jpg
+roses.jpg <- /home/hatch/workspace/freightfolio-site/concepts/brick-mortar-venue-406e2973cff381d39e/img/roses.jpg
+sunflowers.jpg <- /home/hatch/workspace/freightfolio-site/concepts/brick-mortar-venue-406e2973cff381d39e/img/sunflowers.jpg

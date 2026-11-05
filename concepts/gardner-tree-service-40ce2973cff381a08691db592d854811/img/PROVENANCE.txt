@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Gardner Tree Service.
+arborist.jpg <- /home/hatch/workspace/freightfolio-site/concepts/yankee-tree-service-404e2973cff3810c95/img/hero.jpg
+logs.jpg <- /home/hatch/workspace/freightfolio-site/concepts/yankee-tree-service-404e2973cff3810c95/img/tree2.jpg
+sawdust.jpg <- /home/hatch/workspace/freightfolio-site/concepts/yankee-tree-service-404e2973cff3810c95/img/tree3.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Crescent Lotus Dance Studio.
+class.jpg <- /home/hatch/workspace/freightfolio-site/concepts/absolute-ballroom-405e2973cff3810c85/img/hero.jpg
+floor.jpg <- /home/hatch/workspace/freightfolio-site/concepts/absolute-ballroom-405e2973cff3810c85/img/floor.jpg
+couple.jpg <- /home/hatch/workspace/freightfolio-site/concepts/absolute-ballroom-405e2973cff3810c85/img/couple.jpg

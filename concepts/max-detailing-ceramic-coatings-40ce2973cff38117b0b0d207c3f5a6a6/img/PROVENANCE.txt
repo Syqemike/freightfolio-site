@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Max Detailing Ceramic Coatings.
+foam.jpg <- /home/hatch/workspace/freightfolio-site/concepts/great-white-detailing-405e2973cff3819b88/img/su_hero.jpg
+polisher.jpg <- /home/hatch/workspace/freightfolio-site/concepts/great-white-detailing-405e2973cff3819b88/img/su_polish1.jpg
+polish.jpg <- /home/hatch/workspace/freightfolio-site/concepts/great-white-detailing-405e2973cff3819b88/img/su_polish2.jpg

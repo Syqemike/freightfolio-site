@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Heavenly Hands Bakery.
+brownies.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dolce-bakeshop-406e2973cff3813787/img/hero.jpg
+cookies.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dolce-bakeshop-406e2973cff3813787/img/cookies.jpg
+rolls.jpg <- /home/hatch/workspace/freightfolio-site/concepts/dolce-bakeshop-406e2973cff3813787/img/rolls.jpg

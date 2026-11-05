@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of DSM Detailing.
+headlight.jpg <- /home/hatch/workspace/freightfolio-site/concepts/spotless-shine-auto-detail-406e2973cff381db99/img/headlight.jpg
+interior.jpg <- /home/hatch/workspace/freightfolio-site/concepts/spotless-shine-auto-detail-406e2973cff381db99/img/interior-clean.jpg
+seats.jpg <- /home/hatch/workspace/freightfolio-site/concepts/spotless-shine-auto-detail-406e2973cff381db99/img/seats.jpg
