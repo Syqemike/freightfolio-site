@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Jimmy Meeks Electric Services.
+meter.jpg <- /home/hatch/workspace/freightfolio-site/concepts/electrical-resolutions-group-404e2973cff381df89/img/hero.jpg
+panel.jpg <- /home/hatch/workspace/freightfolio-site/concepts/electrical-resolutions-group-404e2973cff381df89/img/panel.jpg
+switchboard.jpg <- /home/hatch/workspace/freightfolio-site/concepts/electrical-resolutions-group-404e2973cff381df89/img/switchboard.jpg

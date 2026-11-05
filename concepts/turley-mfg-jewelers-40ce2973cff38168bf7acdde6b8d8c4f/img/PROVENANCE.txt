@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Turley Mfg. Jewelers.
+bracelet.jpg <- /home/hatch/workspace/freightfolio-site/concepts/jensen-jewelers-inc-405e2973cff38179ab/img/hero.jpg
+necklace.jpg <- /home/hatch/workspace/freightfolio-site/concepts/jensen-jewelers-inc-405e2973cff38179ab/img/necklace.jpg
+ring.jpg <- /home/hatch/workspace/freightfolio-site/concepts/jensen-jewelers-inc-405e2973cff38179ab/img/ring.jpg

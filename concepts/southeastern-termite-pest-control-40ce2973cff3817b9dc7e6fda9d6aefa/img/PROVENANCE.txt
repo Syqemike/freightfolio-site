@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Southeastern Termite & Pest Control.
+fogging.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bay-pest-control-405e2973cff381d98d/img/hero.jpg
+indoor.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bay-pest-control-405e2973cff381d98d/img/pest2.jpg
+spray.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bay-pest-control-405e2973cff381d98d/img/pest3.jpg

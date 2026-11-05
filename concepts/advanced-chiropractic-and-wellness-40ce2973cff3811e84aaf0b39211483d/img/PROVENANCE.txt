@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Advanced Chiropractic and Wellness.
+table.jpg <- /home/hatch/workspace/freightfolio-site/concepts/crossroads-chiropractic-and-wellness-center-405e2973cff381a987/img/hero.jpg
+seated.jpg <- /home/hatch/workspace/freightfolio-site/concepts/crossroads-chiropractic-and-wellness-center-405e2973cff381a987/img/wellness2.jpg
+instrument.jpg <- /home/hatch/workspace/freightfolio-site/concepts/crossroads-chiropractic-and-wellness-center-405e2973cff381a987/img/wellness3.jpg

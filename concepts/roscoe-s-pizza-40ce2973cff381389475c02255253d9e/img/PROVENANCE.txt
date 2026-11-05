@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Roscoe's Pizza.
+oven.jpg <- /home/hatch/workspace/freightfolio-site/concepts/lovejoy-pizza-405e2973cff3810a9f/img/chef.jpg
+case.jpg <- /home/hatch/workspace/freightfolio-site/concepts/lovejoy-pizza-405e2973cff3810a9f/img/hero.jpg
+slice.jpg <- /home/hatch/workspace/freightfolio-site/concepts/lovejoy-pizza-405e2973cff3810a9f/img/slice.jpg

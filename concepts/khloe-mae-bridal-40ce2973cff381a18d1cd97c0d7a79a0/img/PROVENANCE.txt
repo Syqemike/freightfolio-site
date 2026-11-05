@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Khloe Mae Bridal.
+lights.jpg <- /home/hatch/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/bride-groom.jpg
+firstdance.jpg <- /home/hatch/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/first-dance.jpg
+gown.jpg <- /home/hatch/workspace/freightfolio-site/concepts/in-the-mix-djs-402e297381d8aaf0/img/wedding-moment.jpg

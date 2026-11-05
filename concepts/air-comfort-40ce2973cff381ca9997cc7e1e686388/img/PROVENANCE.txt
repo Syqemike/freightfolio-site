@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Air Comfort.
+dusk.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-quick-fix-heating-and-air-405e2973cff3814cb0/img/hero.jpg
+ranch.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-quick-fix-heating-and-air-405e2973cff3814cb0/img/home.jpg
+cottage.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-quick-fix-heating-and-air-405e2973cff3814cb0/img/house.jpg

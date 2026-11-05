@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of South Baldwin Dance Center.
+line.jpg <- /home/hatch/workspace/freightfolio-site/concepts/fabulous-feet-dance-studio-403e2973cff381a5/img/ballet.jpg
+barre.jpg <- /home/hatch/workspace/freightfolio-site/concepts/fabulous-feet-dance-studio-403e2973cff381a5/img/barre.jpg
+floor.jpg <- /home/hatch/workspace/freightfolio-site/concepts/fabulous-feet-dance-studio-403e2973cff381a5/img/poses.jpg
