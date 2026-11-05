@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Pittman Chiropractic.
+table.jpg <- /home/hatch/workspace/freightfolio-site/concepts/the-spine-shop-chiropractic-404e2973cff3818a8f/img/hero.jpg
+seated.jpg <- /home/hatch/workspace/freightfolio-site/concepts/the-spine-shop-chiropractic-404e2973cff3818a8f/img/adjustment.jpg
+instrument.jpg <- /home/hatch/workspace/freightfolio-site/concepts/the-spine-shop-chiropractic-404e2973cff3818a8f/img/instrument.jpg

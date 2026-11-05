@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Coastal Kitchen.
+skillet.jpg <- /home/hatch/workspace/freightfolio-site/concepts/brady-s-steaks-and-seafood-405e2973cff38118a8/img/hero.jpg
+poboy.jpg <- /home/hatch/workspace/freightfolio-site/concepts/brady-s-steaks-and-seafood-405e2973cff38118a8/img/poboy.jpg
+burger.jpg <- /home/hatch/workspace/freightfolio-site/concepts/brady-s-steaks-and-seafood-405e2973cff38118a8/img/burger.jpg

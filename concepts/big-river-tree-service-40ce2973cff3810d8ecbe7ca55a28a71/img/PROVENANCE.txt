@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Big River Tree Service.
+arborist.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bobcat-tree-work-404e2973cff3815388/img/arborist.jpg
+chainsaw.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bobcat-tree-work-404e2973cff3815388/img/hero.jpg
+logs.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bobcat-tree-work-404e2973cff3815388/img/logs.jpg

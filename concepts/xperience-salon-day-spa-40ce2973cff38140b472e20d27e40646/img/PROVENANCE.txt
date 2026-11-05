@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Xperience Salon & Day Spa.
+facial.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-petite-spa-3ffe2973cff3815e923ec4404c759bee/img/spa-facial.jpg
+nails.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-petite-spa-3ffe2973cff3815e923ec4404c759bee/img/spa-nails.jpg
+room.jpg <- /home/hatch/workspace/freightfolio-site/concepts/grace-spa-massage-406e2973cff381dd85/img/spa-interior.jpg

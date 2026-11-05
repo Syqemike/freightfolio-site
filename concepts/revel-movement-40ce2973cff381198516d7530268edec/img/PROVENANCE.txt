@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Revel Movement.
+class.jpg <- /home/hatch/workspace/freightfolio-site/concepts/pensacola-pole-fitness-405e2973cff381edba65e58d14d7e75a/img/dance.jpg
+poses.jpg <- /home/hatch/workspace/freightfolio-site/concepts/pensacola-pole-fitness-405e2973cff381edba65e58d14d7e75a/img/yoga2.jpg
+group.jpg <- /home/hatch/workspace/freightfolio-site/concepts/pensacola-pole-fitness-405e2973cff381edba65e58d14d7e75a/img/yoga3.jpg

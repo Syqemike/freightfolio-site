@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Marguerite's Cakes.
+case.jpg <- /home/hatch/workspace/freightfolio-site/concepts/santa-fe-bakery-404e2973cff381e080/img/hero.jpg
+cake.jpg <- /home/hatch/workspace/freightfolio-site/concepts/santa-fe-bakery-404e2973cff381e080/img/cake.jpg
+counter.jpg <- /home/hatch/workspace/freightfolio-site/concepts/santa-fe-bakery-404e2973cff381e080/img/counter.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of 180 Chiropractic Wellness Center.
+massage.jpg <- /home/hatch/workspace/freightfolio-site/concepts/cadence-therapeutics-404e2973cff381a7b0/img/hero.jpg
+calm.jpg <- /home/hatch/workspace/freightfolio-site/concepts/cadence-therapeutics-404e2973cff381a7b0/img/calm.jpg
+still.jpg <- /home/hatch/workspace/freightfolio-site/concepts/cadence-therapeutics-404e2973cff381a7b0/img/still.jpg
