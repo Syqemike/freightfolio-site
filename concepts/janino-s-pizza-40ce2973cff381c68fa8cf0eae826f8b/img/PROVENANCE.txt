@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Janino's Pizza.
+slice.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aldo-s-pizza-pies-405e2973cff3816583/img/hero.jpg
+display.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aldo-s-pizza-pies-405e2973cff3816583/img/display.jpg
+table.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aldo-s-pizza-pies-405e2973cff3816583/img/table.jpg

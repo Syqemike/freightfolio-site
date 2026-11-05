@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Cafe Single Fin.
+latte.jpg <- /home/hatch/workspace/freightfolio-site/concepts/atticus-coffee-gifts-405e2973cff3812895dbc52b6d62d4fd/img/latte.jpg
+beans.jpg <- /home/hatch/workspace/freightfolio-site/concepts/atticus-coffee-gifts-405e2973cff3812895dbc52b6d62d4fd/img/beans.jpg
+pastry.jpg <- /home/hatch/workspace/freightfolio-site/concepts/atticus-coffee-gifts-405e2973cff3812895dbc52b6d62d4fd/img/pastry.jpg

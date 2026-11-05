@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Happy Housekeepers.
+cleaners.jpg <- /home/hatch/workspace/freightfolio-site/concepts/diamond-shine-cleaning-service-404e2973cff381fe9f/img/hero.jpg
+kitchen.jpg <- /home/hatch/workspace/freightfolio-site/concepts/diamond-shine-cleaning-service-404e2973cff381fe9f/img/kitchen.jpg
+sweep.jpg <- /home/hatch/workspace/freightfolio-site/concepts/diamond-shine-cleaning-service-404e2973cff381fe9f/img/sweep.jpg

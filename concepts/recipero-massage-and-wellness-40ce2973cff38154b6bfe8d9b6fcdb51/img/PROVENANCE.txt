@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Recipero Massage and Wellness.
+massage.jpg <- /home/hatch/workspace/freightfolio-site/concepts/basalt-day-spa-405e2973cff381b6b1/img/hero.jpg
+stones.jpg <- /home/hatch/workspace/freightfolio-site/concepts/basalt-day-spa-405e2973cff381b6b1/img/stones.jpg
+candles.jpg <- /home/hatch/workspace/freightfolio-site/concepts/basalt-day-spa-405e2973cff381b6b1/img/candles.jpg

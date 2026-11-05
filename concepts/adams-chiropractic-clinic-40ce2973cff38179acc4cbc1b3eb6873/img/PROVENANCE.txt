@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Adams Chiropractic Clinic.
+adjustment.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aaron-chiropractic-clinic-406e2973cff381a284/img/hero.jpg
+seated.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aaron-chiropractic-clinic-406e2973cff381a284/img/wellness2.jpg
+instrument.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aaron-chiropractic-clinic-406e2973cff381a284/img/wellness3.jpg

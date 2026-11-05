@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of CBD Dental Care.
+treatment.jpg <- /home/hatch/workspace/freightfolio-site/concepts/ocean-springs-dental-405e2973cff381f9a9/img/treatment.jpg
+checkup.jpg <- /home/hatch/workspace/freightfolio-site/concepts/ocean-springs-dental-405e2973cff381f9a9/img/checkup.jpg
+exam.jpg <- /home/hatch/workspace/freightfolio-site/concepts/ocean-springs-dental-405e2973cff381f9a9/img/exam.jpg

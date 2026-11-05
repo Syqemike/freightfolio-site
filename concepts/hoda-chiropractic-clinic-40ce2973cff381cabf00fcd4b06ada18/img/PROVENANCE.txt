@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Hoda Chiropractic Clinic.
+massage.jpg <- /home/hatch/workspace/freightfolio-site/concepts/southside-chiropractic-405e2973cff381b685/img/hero.jpg
+calm.jpg <- /home/hatch/workspace/freightfolio-site/concepts/southside-chiropractic-405e2973cff381b685/img/calm.jpg
+hands.jpg <- /home/hatch/workspace/freightfolio-site/concepts/southside-chiropractic-405e2973cff381b685/img/hands.jpg

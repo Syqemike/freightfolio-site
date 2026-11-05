@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of A & W Auto Service.
+mechanic.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bill-s-auto-repair-404e2973cff3814eb2/img/hero.jpg
+engine.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bill-s-auto-repair-404e2973cff3814eb2/img/engine.jpg
+turbo.jpg <- /home/hatch/workspace/freightfolio-site/concepts/bill-s-auto-repair-404e2973cff3814eb2/img/turbo.jpg
