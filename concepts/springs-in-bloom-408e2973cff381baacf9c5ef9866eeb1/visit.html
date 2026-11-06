@@ -4,28 +4,82 @@
 <meta name="robots" content="noindex">
 <title>Visit | Springs In Bloom</title>
 <style>
-body{margin:0;font-family:'Segoe UI', sans-serif;background:#fdf6f0;color:#26211a;line-height:1.6}
-a{color:#7a3a5e}
-header{padding:28px 6vw 10px}header h1{margin:0 0 4px;font-size:2.1em;line-height:1.15}
-.disc{background:#fff8e1;border:1px solid #e0c97a;padding:10px 14px;margin:0 6vw;font-size:.95em}
-nav{padding:14px 6vw;display:flex;gap:22px;flex-wrap:wrap}nav a{font-weight:bold;text-decoration:none}
-main{padding:10px 6vw 40px;max-width:1100px}
-.hero img,.gal img{width:100%;height:auto;display:block;object-fit:cover}
-.tag{font-size:1.35em;line-height:1.35}
-.cta{display:inline-block;background:#7a3a5e;color:#fff !important;padding:12px 22px;text-decoration:none;border-radius:4px;font-weight:bold;margin:14px 0}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}figure{margin:0}figcaption{font-size:.9em;margin-top:6px}
-.tag2{display:inline-block;background:#7a3a5e;color:#fff;font-size:.75em;padding:2px 7px;border-radius:3px;margin-right:6px}
-section{margin:28px 0}h2{border-bottom:2px solid #7a3a5e;padding-bottom:6px}
-table{border-collapse:collapse}td{padding:8px 18px 8px 0;vertical-align:top;border-bottom:1px solid #ddd}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{border:1px solid #ddd;padding:14px 16px;background:#fff}.card h3{margin:0 0 6px}.card p{margin:0}
-.svclist{list-style:none;padding:0}.svclist li{padding:10px 0;border-bottom:1px solid #ddd}
-footer{padding:20px 6vw;border-top:1px solid #ccc;font-size:.9em}
-@media(max-width:700px){.hero,.gal{grid-template-columns:1fr !important}.cards{grid-template-columns:1fr}header h1{font-size:1.6em}}
-header{text-align:center}.hero{display:block;text-align:center}.hero figure{max-width:720px;margin:0 auto 18px}main{max-width:900px}.gal{grid-template-columns:repeat(2,1fr)}</style></head><body>
-<header><h1>Springs In Bloom</h1><p>Colorado Springs, CO</p></header>
-<p class="disc">Design preview: this is a website concept created by Freightfolio. It is not the business's official website. Photos shown are stock photos, labeled as such, not photos of this business.</p>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav><main><section><h2>Visit</h2><p>318 B E Colorado Ave, Colorado Springs, CO 80903</p><p>Monday through Thursday 9 AM to 3 PM. Friday 9 AM to 5:30 PM.</p><a class="cta" href="tel:+17195964806">Call to ask: +1 719-596-4806</a></section>
-<section><h2>Contact</h2><p>Phone: <a href="tel:+17195964806">+1 719-596-4806</a></p></section><section><h2>Photos</h2><div class="gal"><figure><img src="img/everyday-bouquet.jpg" alt="A pink ranunculus bouquet. Stock photo."><figcaption><span class="tag2">Stock photo</span>A pink ranunculus bouquet.</figcaption></figure><figure><img src="img/seasonal-arrangement.jpg" alt="A mixed peony and rose arrangement. Stock photo."><figcaption><span class="tag2">Stock photo</span>A mixed peony and rose arrangement.</figcaption></figure><figure><img src="img/gift-bouquet.jpg" alt="A red rose bouquet. Stock photo."><figcaption><span class="tag2">Stock photo</span>A red rose bouquet.</figcaption></figure></div><p>All photos on this page are stock photos, not photos of this business.</p></section></main>
-<footer><p>Springs In Bloom, 318 B E Colorado Ave, Colorado Springs, CO 80903. Phone: <a href="tel:+17195964806">+1 719-596-4806</a>.</p>
-<p>Design preview concept by Freightfolio. This is not the business's official website. Photos are stock photos, labeled as such.</p></footer>
+:root{--ink:#3d2436;--plum:#6b2d4f;--plumdeep:#4a1f38;--blush:#f7e9e6;--cream:#fdf8f2;--sage:#5c6b4f;--gold:#a97c2f;--line:#e5d5d0}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;background:var(--cream);color:var(--ink);line-height:1.6}
+.sans{font-family:'Segoe UI',system-ui,sans-serif}
+.topbar{background:var(--plumdeep);color:#f3e6e2;padding:8px 6vw;font-size:.9em;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar a{color:#f3e6e2}
+.disc{background:#fff3d6;border-bottom:1px solid #e0c97a;padding:10px 6vw;font-size:.92em;font-family:'Segoe UI',system-ui,sans-serif}
+header.mast{padding:26px 6vw 6px;display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap}
+header.mast h1{margin:0;font-size:2.2em;line-height:1.1;font-weight:700}
+header.mast h1 span{display:block;font-size:.42em;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-top:6px}
+nav{padding:10px 6vw 18px;display:flex;gap:26px;flex-wrap:wrap;border-bottom:3px solid var(--plum)}
+nav a{font-family:'Segoe UI',system-ui,sans-serif;font-weight:700;text-decoration:none;color:var(--plum);font-size:1.02em}
+nav a:hover{text-decoration:underline}
+.pagehero{display:grid;grid-template-columns:1fr 1.15fr;gap:0;align-items:stretch}
+.pagehero .intro{background:var(--plum);color:#f7ece8;padding:40px 34px}
+.pagehero .intro h2{margin:0 0 10px;font-size:1.9em;line-height:1.2}
+.pagehero .intro p{margin:0 0 14px;font-size:1.08em}
+.pagehero img{width:100%;height:560px;object-fit:cover;display:block}
+.cta{display:inline-block;background:#fdf8f2;color:var(--plum) !important;padding:12px 24px;text-decoration:none;font-weight:bold;font-family:'Segoe UI',system-ui,sans-serif;border-radius:3px}
+main{padding:10px 6vw 40px;max-width:1180px;margin:0 auto}
+section{margin:44px 0}
+h2.sec{font-size:1.7em;margin:0 0 4px}
+.secsub{margin:0 0 22px;color:#5c4553;font-size:1.05em}
+.hours{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);max-width:560px}
+.hours li{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid var(--line);font-size:1.08em}
+.hours li span:first-child{font-weight:700}
+.detail{background:var(--blush);padding:22px 28px;font-size:1.05em}
+.detail h2{margin:0 0 8px;font-size:1.4em}
+.detail p{margin:0 0 8px}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.strip figure{margin:0}
+.strip img{width:100%;height:300px;object-fit:cover;display:block}
+figcaption{font-size:.92em;margin-top:8px;color:#5c4553;font-family:'Segoe UI',system-ui,sans-serif}
+footer{padding:22px 6vw 30px;border-top:3px solid var(--plum);font-size:.92em;font-family:'Segoe UI',system-ui,sans-serif;color:#5c4553}
+footer a{color:var(--plum)}
+@media(max-width:760px){.pagehero{grid-template-columns:1fr}.pagehero img{height:380px;min-height:0}.strip{grid-template-columns:1fr}.strip img{height:280px}header.mast h1{font-size:1.7em}}
+</style></head><body>
+<div class="topbar sans"><span>Springs In Bloom, downtown Colorado Springs</span><span>Call <a href="tel:+17195964806">+1 719-596-4806</a></span></div>
+<p class="disc">Design preview: this is a website concept created by Freightfolio. It is not the business's official website.</p>
+<header class="mast"><h1>Springs In Bloom<span>Downtown Colorado Springs Florist</span></h1></header>
+<nav><a href="index.html">Home</a><a href="services.html">Occasions and Delivery</a><a href="visit.html">Visit</a></nav>
+<section class="pagehero">
+<div class="intro">
+<h2>Visit the shop</h2>
+<p>Springs In Bloom is a woman-owned flower shop in downtown Colorado Springs, at 318 B E Colorado Ave. Walk in to pick out flowers in person, or call to order for delivery.</p>
+<a class="cta" href="tel:+17195964806">Call: +1 719-596-4806</a>
+</div>
+<img src="img/pink-lilies-daisies-asters.jpg" alt="A bouquet with pink lilies, white daisies, and purple asters.">
+</section>
+<main>
+<section>
+<h2 class="sec">Hours</h2>
+<p class="secsub">Shop hours, as listed.</p>
+<ul class="hours">
+<li><span>Monday to Thursday</span><span>9 AM to 3 PM</span></li>
+<li><span>Friday</span><span>9 AM to 5:30 PM</span></li>
+<li><span>Saturday and Sunday</span><span>Hours are not listed</span></li>
+</ul>
+</section>
+<section class="detail">
+<h2>Ordering and delivery</h2>
+<p>Call <a href="tel:+17195964806">+1 719-596-4806</a> to order. No public email is listed for the shop. The shop's own website is <a href="https://springsinbloom.net/">springsinbloom.net</a>.</p>
+<p>Same-day delivery in Colorado Springs is usually possible for orders placed by 10 in the morning on a weekday; for weekend delivery, order by 3 on Friday afternoon. Deliveries run from 9 AM to 5 PM daily, including to area hospitals. The shop also delivers to local funeral homes and cemeteries.</p>
+<p>The shop is closed on New Year's Day, Easter, Memorial Day, Father's Day, Independence Day, Labor Day, Thanksgiving, and Christmas.</p>
+</section>
+<section>
+<h2 class="sec">From the shop</h2>
+<p class="secsub">Arrangements from the shop's public photo gallery.</p>
+<div class="strip">
+<figure><img src="img/orange-lilies-pink-roses.jpg" alt="A basket arrangement with orange lilies, pink and purple roses, and a yellow rose."><figcaption>A basket arrangement with orange lilies, pink and purple roses, and a yellow rose.</figcaption></figure>
+<figure><img src="img/red-roses-blue-delphinium.jpg" alt="A tall arrangement of red roses and blue delphinium in a vase."><figcaption>A tall arrangement of red roses and blue delphinium in a vase.</figcaption></figure>
+<figure><img src="img/hand-orange-pink-roses.jpg" alt="A hand holding a wrapped bouquet of orange and pink roses."><figcaption>A wrapped bouquet of orange and pink roses.</figcaption></figure>
+</div>
+</section>
+</main>
+<footer>
+<p>Springs In Bloom, 318 B E Colorado Ave, Colorado Springs, CO 80903. Phone: <a href="tel:+17195964806">+1 719-596-4806</a>. The shop's own website is <a href="https://springsinbloom.net/">springsinbloom.net</a>.</p>
+<p>Photos on this page are from the shop's public Google listing. Design preview concept by Freightfolio. This is not the business's official website.</p>
+</footer>
 </body></html>
