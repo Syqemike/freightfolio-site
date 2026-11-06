@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Dozen Bakery.
+bakery-case.jpg <- /home/hatch/workspace/freightfolio-site/concepts/blue-crane-bakery-405e2973cff3818f8f/img/hero.jpg
+cookies-coffee.jpg <- /home/hatch/workspace/freightfolio-site/concepts/blue-crane-bakery-405e2973cff3818f8f/img/cookies.jpg
+cinnamon-rolls.jpg <- /home/hatch/workspace/freightfolio-site/concepts/blue-crane-bakery-405e2973cff3818f8f/img/rolls.jpg

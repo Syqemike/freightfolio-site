@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Healthy Bite.
+chicken-salad.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060659-fresh/pexels-842545.jpg
+blue-bowls.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060659-fresh/pexels-13788174.jpg
+green-salads.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060659-fresh/pexels-20085552.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Juice Box Yoga.
+yoga-class.jpg <- /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img/hero.jpg
+warrior-pose.jpg <- /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img/yoga2.jpg
+group-class.jpg <- /home/hatch/workspace/freightfolio-site/concepts/downtown-yoga-ocean-springs-404e2973cff3813bbf/img/yoga3.jpg
