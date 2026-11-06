@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The Barnwood Store.
+showroom.jpg <- /home/hatch/workspace/freightfolio-site/concepts/broadway-furniture-mattress-outlet-404e2973cff38101b6/img/hero.jpg
+armchair.jpg <- /home/hatch/workspace/freightfolio-site/concepts/broadway-furniture-mattress-outlet-404e2973cff38101b6/img/chair.jpg
+storefront.jpg <- /home/hatch/workspace/freightfolio-site/concepts/broadway-furniture-mattress-outlet-404e2973cff38101b6/img/night.jpg

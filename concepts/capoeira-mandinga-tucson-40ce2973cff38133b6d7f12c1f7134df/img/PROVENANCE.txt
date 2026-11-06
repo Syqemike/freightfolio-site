@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Capoeira Mandinga Tucson.
+yoga-group.jpg <- /home/hatch/workspace/freightfolio-site/concepts/longevity-fitness-charleston-405e2973cff3818499/img/hero.jpg
+yoga-studio.jpg <- /home/hatch/workspace/freightfolio-site/concepts/longevity-fitness-charleston-405e2973cff3818499/img/yoga2.jpg
+yoga-class.jpg <- /home/hatch/workspace/freightfolio-site/concepts/longevity-fitness-charleston-405e2973cff3818499/img/yoga3.jpg

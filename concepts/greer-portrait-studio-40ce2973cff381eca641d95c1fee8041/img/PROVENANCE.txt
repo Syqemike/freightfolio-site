@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Greer Portrait Studio.
+family-four.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd1859-greer/family-four.jpg
+family-toddler.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd1859-greer/family-toddler.jpg
+family-studio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd1859-greer/family-studio.jpg

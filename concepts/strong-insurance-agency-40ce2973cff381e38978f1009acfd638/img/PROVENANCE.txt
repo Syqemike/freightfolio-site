@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Strong Insurance Agency.
+consult.jpg <- /home/hatch/workspace/freightfolio-site/concepts/warsen-insurance-agency-405e2973cff381c8a5/img/hero.jpg
+paperwork.jpg <- /home/hatch/workspace/freightfolio-site/concepts/warsen-insurance-agency-405e2973cff381c8a5/img/paperwork.jpg
+office.jpg <- /home/hatch/workspace/freightfolio-site/concepts/warsen-insurance-agency-405e2973cff381c8a5/img/office.jpg

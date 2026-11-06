@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Rocket City MMA and Fitness.
+speedbag.jpg <- /home/hatch/workspace/freightfolio-site/concepts/southeast-des-moines-boxing-club-403e2973cff3815d93/img/hero.jpg
+bag.jpg <- /home/hatch/workspace/freightfolio-site/concepts/southeast-des-moines-boxing-club-403e2973cff3815d93/img/bag.jpg
+training.jpg <- /home/hatch/workspace/freightfolio-site/concepts/southeast-des-moines-boxing-club-403e2973cff3815d93/img/female.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Nova Essence Medispa.
+facial.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-petite-spa-3ffe2973cff3815e923ec4404c759bee/img/spa-facial.jpg
+oil.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-petite-spa-3ffe2973cff3815e923ec4404c759bee/img/spa-setting.jpg
+still-life.jpg <- /home/hatch/workspace/freightfolio-site/concepts/a-petite-spa-3ffe2973cff3815e923ec4404c759bee/img/spa-massage.jpg

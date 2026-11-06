@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Maverick Training Center.
+gym.jpg <- /home/hatch/workspace/freightfolio-site/concepts/beyond-limits-training-406e2973cff381a0be/img/hero.jpg
+weights.jpg <- /home/hatch/workspace/freightfolio-site/concepts/beyond-limits-training-406e2973cff381a0be/img/weights.jpg
+floor.jpg <- /home/hatch/workspace/freightfolio-site/concepts/beyond-limits-training-406e2973cff381a0be/img/floor.jpg
