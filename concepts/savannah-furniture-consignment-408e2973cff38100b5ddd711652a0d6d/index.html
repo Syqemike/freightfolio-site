@@ -2,30 +2,107 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Savannah Furniture Consignment | Savannah Furniture Consignment</title>
+<title>Savannah Furniture Consignment | Savannah, GA</title>
 <style>
-body{margin:0;font-family:'Trebuchet MS', sans-serif;background:#f4f1ea;color:#26211a;line-height:1.6}
-a{color:#31544a}
-header{padding:28px 6vw 10px}header h1{margin:0 0 4px;font-size:2.1em;line-height:1.15}
-.disc{background:#fff8e1;border:1px solid #e0c97a;padding:10px 14px;margin:0 6vw;font-size:.95em}
-nav{padding:14px 6vw;display:flex;gap:22px;flex-wrap:wrap}nav a{font-weight:bold;text-decoration:none}
-main{padding:10px 6vw 40px;max-width:1100px}
-.hero img,.gal img{width:100%;height:auto;display:block;object-fit:cover}
-.tag{font-size:1.35em;line-height:1.35}
-.cta{display:inline-block;background:#31544a;color:#fff !important;padding:12px 22px;text-decoration:none;border-radius:4px;font-weight:bold;margin:14px 0}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}figure{margin:0}figcaption{font-size:.9em;margin-top:6px}
-.tag2{display:inline-block;background:#31544a;color:#fff;font-size:.75em;padding:2px 7px;border-radius:3px;margin-right:6px}
-section{margin:28px 0}h2{border-bottom:2px solid #31544a;padding-bottom:6px}
-table{border-collapse:collapse}td{padding:8px 18px 8px 0;vertical-align:top;border-bottom:1px solid #ddd}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{border:1px solid #ddd;padding:14px 16px;background:#fff}.card h3{margin:0 0 6px}.card p{margin:0}
-.svclist{list-style:none;padding:0}.svclist li{padding:10px 0;border-bottom:1px solid #ddd}
-footer{padding:20px 6vw;border-top:1px solid #ccc;font-size:.9em}
-@media(max-width:700px){.hero,.gal{grid-template-columns:1fr !important}.cards{grid-template-columns:1fr}header h1{font-size:1.6em}}
-header{text-align:center}.hero{display:grid;grid-template-columns:1.6fr 1fr;gap:20px;align-items:start}main{max-width:960px}.gal{grid-template-columns:repeat(2,1fr)}</style></head><body>
-<header><h1>Savannah Furniture Consignment</h1><p>Savannah, GA</p></header>
-<p class="disc">Design preview: this is a website concept created by Freightfolio. It is not the business's official website. Photos shown are stock photos, labeled as such, not photos of this business.</p>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav><main><section class="hero"><div><p class="tag">A furniture consignment store in Savannah, opened in 2010, with a showroom of over 7,000 square feet.</p><p>Savannah Furniture Consignment is a furniture consignment store in Savannah opened in 2010 by Tracy Eckard, with a showroom of over 7,000 square feet and new inventory daily. The store carries high-quality gently used furniture and home decor, including dining, bedroom, and living-room furniture, and it takes consignments for downsizing or updating a house. The store is open seven days a week.</p><a class="cta" href="tel:+19123523461">Call to ask: +1 912-352-3461</a></div>
-<figure><img src="img/hero.jpg" alt="A furniture store interior with sofas and armchairs. Stock photo."><figcaption><span class="tag2">Stock photo</span>A furniture store interior with sofas and armchairs.</figcaption></figure></section><section><h2>Photos</h2><div class="gal"><figure><img src="img/hero.jpg" alt="A furniture store interior with sofas and armchairs. Stock photo."><figcaption><span class="tag2">Stock photo</span>A furniture store interior with sofas and armchairs.</figcaption></figure><figure><img src="img/armchair.jpg" alt="A red armchair in a furniture store setting. Stock photo."><figcaption><span class="tag2">Stock photo</span>A red armchair in a furniture store setting.</figcaption></figure><figure><img src="img/living.jpg" alt="A living room with green plants and brown sofa chairs. Stock photo."><figcaption><span class="tag2">Stock photo</span>A living room with green plants and brown sofa chairs.</figcaption></figure></div><p>All photos on this page are stock photos, not photos of this business.</p></section><section><h2>Services</h2><ul class="svclist"><li><strong>Dining-room furniture</strong>: Dining-room furniture in a showroom of more than 7,000 square feet, with new inventory arriving daily.</li><li><strong>Bedroom furniture</strong>: Bedroom furniture in the Savannah showroom, with new inventory arriving daily.</li><li><strong>Living-room furniture</strong>: Living-room furniture in the Savannah showroom, with new inventory arriving daily.</li><li><strong>Home decor</strong>: Home decor in the Savannah showroom, with new inventory arriving daily.</li><li><strong>Consignment for downsizing</strong>: Consignment for downsizing a house, through the Savannah store opened in 2010.</li><li><strong>Consignment for updating a house</strong>: Consignment for updating a house, through the Savannah store opened in 2010.</li><li><strong>New inventory daily</strong>: New inventory daily in the Savannah showroom.</li></ul></section></main>
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia, 'Times New Roman', serif;background:#f6f1e7;color:#26302a;line-height:1.6}
+body,p,li,figcaption{font-family:system-ui, -apple-system, 'Segoe UI', sans-serif}
+h1,h2,h3,.serif{font-family:Georgia, 'Times New Roman', serif}
+a{color:#22483c}
+header{padding:26px 6vw 0}
+.mast{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mast h1{margin:0;font-size:1.9em;line-height:1.1;color:#22483c}
+.mast .place{font-size:1.05em;color:#6b4a2f;white-space:nowrap}
+.rule{height:4px;background:#b4552d;margin:14px 0 0}
+.disc{background:#fff8e1;border:1px solid #e0c97a;padding:10px 14px;margin:14px 6vw 0;font-size:.95em}
+nav{padding:14px 6vw;display:flex;gap:26px;flex-wrap:wrap}
+nav a{font-weight:bold;text-decoration:none;color:#22483c}
+nav a:hover{text-decoration:underline}
+main{padding:6px 6vw 40px;max-width:1180px;margin:0 auto}
+.hero{display:grid;grid-template-columns:1.9fr 1fr;gap:0;margin-top:18px;border:1px solid #d8cdb8}
+.hero img{width:100%;height:100%;min-height:340px;object-fit:cover;display:block}
+.hero .panel{background:#22483c;color:#f6f1e7;padding:30px 28px}
+.hero .panel .kicker{color:#e8b25a;letter-spacing:.14em;text-transform:uppercase;font-size:.8em;margin:0 0 12px}
+.hero .panel h2{margin:0 0 14px;font-size:1.9em;line-height:1.2;font-weight:normal}
+.hero .panel p{margin:0 0 18px;color:#e9e2d2}
+.cta{display:inline-block;background:#b4552d;color:#fff !important;padding:12px 22px;text-decoration:none;font-weight:bold}
+.cta:hover{background:#96431f}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:26px 0 8px;border-top:3px solid #22483c;border-bottom:1px solid #d8cdb8}
+.facts div{padding:16px 18px;border-left:1px solid #d8cdb8}
+.facts div:first-child{border-left:none}
+.facts b{display:block;font-family:Georgia, serif;font-size:1.5em;color:#22483c}
+.facts span{font-size:.92em;color:#5c665e}
+section{margin:34px 0}
+h2.sec{font-size:1.6em;color:#22483c;margin:0 0 6px}
+h2.sec:after{content:"";display:block;width:64px;height:3px;background:#b4552d;margin-top:8px}
+.lede{font-size:1.12em;max-width:62ch}
+.room{display:grid;grid-template-columns:1fr 1.35fr;gap:26px;align-items:start;margin:30px 0;padding-top:26px;border-top:1px solid #d8cdb8}
+.room.flip{grid-template-columns:1.35fr 1fr}
+.room .num{font-family:Georgia, serif;font-size:3.4em;line-height:1;color:#b4552d}
+.room h3{margin:2px 0 8px;font-size:1.45em;color:#22483c}
+.room p{margin:0 0 10px}
+.room img{width:100%;height:auto;display:block;object-fit:cover}
+.room .more{font-weight:bold}
+figure{margin:0}
+figcaption{font-size:.88em;color:#5c665e;margin-top:6px}
+.band{background:#b4552d;color:#fff;padding:30px 6vw;margin:34px -6vw}
+.band h2{font-size:1.6em;margin:0 0 10px}
+.band .cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.band p{margin:0 0 10px;color:#fdf3e7}
+.band .year{font-family:Georgia, serif;font-size:2em;display:block;color:#ffe1c2}
+.visitcard{display:grid;grid-template-columns:1fr 1fr;gap:26px;background:#fff;border:1px solid #d8cdb8;padding:24px 26px}
+.visitcard h3{margin:0 0 8px;font-size:1.3em;color:#22483c}
+.visitcard p{margin:0 0 8px}
+footer{padding:22px 6vw;border-top:3px solid #22483c;font-size:.9em;color:#5c665e}
+footer a{color:#22483c}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero img{min-height:220px}.facts{grid-template-columns:1fr 1fr}.facts div{border-left:none;border-top:1px solid #d8cdb8}.room,.room.flip{grid-template-columns:1fr}.band .cols{grid-template-columns:1fr}.visitcard{grid-template-columns:1fr}.mast h1{font-size:1.5em}.hero .panel h2{font-size:1.55em}}</style></head><body>
+<header><div class="mast"><h1>Savannah Furniture Consignment</h1><span class="place">Savannah, GA</span></div><div class="rule"></div></header>
+<p class="disc">Design preview: this is a website concept created by Freightfolio. It is not the business's official website.</p>
+<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav>
+<main>
+<section class="hero">
+<figure><img src="img/hero-sofa.jpg" alt="A light grey sofa and a patterned blue and green armchair in the showroom, under a large pastel painting."></figure>
+<div class="panel"><p class="kicker">Furniture consignment in Savannah</p><h2>Find the piece that finishes your room.</h2><p>Savannah Furniture Consignment is a furniture consignment store in Savannah, opened in 2010 by Tracy Eckard, with a showroom of over 7,000 square feet and new inventory daily.</p><a class="cta" href="tel:+19123523461">Call to ask: +1 912-352-3461</a></div>
+</section>
+<div class="facts">
+<div><b>2010</b><span>Opened by Tracy Eckard</span></div>
+<div><b>7,000 sq ft</b><span>Showroom, second floor</span></div>
+<div><b>Daily</b><span>New inventory arrives</span></div>
+<div><b>4.5 from 164</b><span>Google reviews</span></div>
+</div>
+<section>
+<h2 class="sec">A showroom that started as a side hustle</h2>
+<p class="lede">Tracy Eckard started Savannah Furniture Consignment in 2010 from garage sales and auction hunting. What began as a side hustle grew into one of Savannah's furniture consignment destinations, with over 7,000 square feet of showroom on the second floor of 7501 Abercorn Street. The store carries high-quality, gently used furniture and home decor, and it is open seven days a week. Its website is updated with new inventory daily.</p>
+</section>
+<section>
+<h2 class="sec">Rooms on the floor</h2>
+<div class="room">
+<div><p class="num">01</p><h3>Dining room</h3><p>Dining tables and chairs arrive through consignment and join the floor as new inventory comes in daily.</p><a class="more" href="services.html">See dining-room furniture</a></div>
+<figure><img src="img/dining-table.jpg" alt="A wooden dining table with four wooden chairs on a patterned geometric rug in the showroom."><figcaption>A wooden dining table with four wooden chairs on a patterned rug in the showroom.</figcaption></figure>
+</div>
+<div class="room flip">
+<figure><img src="img/living-sectional.jpg" alt="A large light grey sectional sofa with an ottoman, with dining chairs in the foreground."><figcaption>A large light grey sectional sofa with an ottoman in the showroom.</figcaption></figure>
+<div><p class="num">02</p><h3>Living room</h3><p>Sofas, sectionals and armchairs fill the living-room floor, with new pieces arriving daily.</p><a class="more" href="services.html">See living-room furniture</a></div>
+</div>
+<div class="room">
+<div><p class="num">03</p><h3>Bedroom</h3><p>Bedroom pieces arrive through consignment, and the bedroom floor turns over as new inventory arrives daily.</p><a class="more" href="services.html">See bedroom furniture</a></div>
+<figure><img src="img/bedroom-sideboard.jpg" alt="A wooden sideboard with a mirror and patterned fabric draped over the top, in the showroom."><figcaption>A wooden sideboard with a mirror in the showroom.</figcaption></figure>
+</div>
+</section>
+<section class="band">
+<h2>How consignment works here</h2>
+<div class="cols">
+<div><span class="year">2010</span><p>Tracy Eckard opened the store after years of garage sales and auction hunting, and the showroom has grown to over 7,000 square feet.</p></div>
+<div><span class="year">Today</span><p>If you are looking to downsize or update your house, the store will take your items on consignment. Pieces that come in reach the floor as new inventory arrives daily.</p></div>
+</div>
+</section>
+<section>
+<div class="visitcard">
+<div><h3>Visit the showroom</h3><p>7501 Abercorn St, 2nd Floor<br>Savannah, GA 31406</p><p>Monday to Saturday 10:00 AM to 6:00 PM<br>Sunday 12:00 PM to 5:00 PM</p></div>
+<div><h3>Call or email to ask</h3><p>Call to ask about current inventory and consignment.</p><p><a class="cta" href="tel:+19123523461">Call +1 912-352-3461</a></p><p>Email: <a href="mailto:info@savannahfurnitureconsignment.com">info@savannahfurnitureconsignment.com</a></p></div>
+</div>
+</section>
+</main>
 <footer><p>Savannah Furniture Consignment, 7501 Abercorn St, 2nd Floor, Savannah, GA 31406. Phone: <a href="tel:+19123523461">+1 912-352-3461</a> | Email: <a href="mailto:info@savannahfurnitureconsignment.com">info@savannahfurnitureconsignment.com</a>.</p>
-<p>Design preview concept by Freightfolio. This is not the business's official website. Photos are stock photos, labeled as such.</p></footer>
+<p>Design preview concept by Freightfolio. This is not the business's official website. Photos are the business's own photos from its public Google listing.</p></footer>
 </body></html>
