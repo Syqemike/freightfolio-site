@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Sweet Magnolias Bake Shop.
+display-case.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060059-fresh/pexels-7405059.jpg
+counter.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060059-fresh/pexels-27969779.jpg
+basket.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060059-fresh/pexels-16192282.jpg

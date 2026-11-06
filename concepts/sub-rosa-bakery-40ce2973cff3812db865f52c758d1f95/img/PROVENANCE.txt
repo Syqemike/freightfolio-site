@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Sub Rosa Bakery.
+counter.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060059-fresh/pexels-27969785.jpg
+cafe-counter.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060059-fresh/pexels-13743229.jpg
+basket.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060059-fresh/pexels-18058319.jpg

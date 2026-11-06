@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Foundry Provisions.
+espresso-cup.jpg <- /home/hatch/workspace/freightfolio-site/concepts/arahis-bakery-402e2973cff38140/img/cafecito.jpg
+croissant-sandwiches.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060059-fresh/pexels-21782521.jpg
+display-case.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060059-fresh/pexels-12660003.jpg

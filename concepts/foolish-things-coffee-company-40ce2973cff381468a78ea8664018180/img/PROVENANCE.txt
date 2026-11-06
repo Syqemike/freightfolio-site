@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Foolish Things Coffee Company.
+mocha.jpg <- /home/hatch/workspace/freightfolio-site/concepts/espresso-4-u-cd739ddf7573/img/stock-mocha.jpg
+espresso.jpg <- /home/hatch/workspace/freightfolio-site/concepts/espresso-4-u-cd739ddf7573/img/stock-espresso.jpg
+sandwich.jpg <- /home/hatch/workspace/freightfolio-site/concepts/royal-blend-coffee-tea-d2300f549341/img/panini.jpg

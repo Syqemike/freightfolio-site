@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Rally Coffee Co..
+latte.jpg <- /home/hatch/workspace/freightfolio-site/concepts/royal-blend-coffee-tea-d2300f549341/img/latte.jpg
+beans.jpg <- /home/hatch/workspace/freightfolio-site/concepts/royal-blend-coffee-tea-d2300f549341/img/beans.jpg
+laptop.jpg <- /home/hatch/workspace/freightfolio-site/concepts/royal-blend-coffee-tea-d2300f549341/img/laptop.jpg

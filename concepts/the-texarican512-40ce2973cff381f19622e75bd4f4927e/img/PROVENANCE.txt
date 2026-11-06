@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The TexaRican512.
+rice-plate.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060059-fresh/pexels-40108713.jpg
+plantain-cups.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060059-fresh/pexels-37121074.jpg
+plantain-close.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd060059-fresh/pexels-37121088.jpg

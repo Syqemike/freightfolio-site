@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Sozo Coffeehouse.
+cafe-night.jpg <- /home/hatch/workspace/freightfolio-site/concepts/royal-blend-coffee-tea-d2300f549341/img/hero.jpg
+cinnamon-rolls.jpg <- /home/hatch/workspace/freightfolio-site/concepts/royal-blend-coffee-tea-d2300f549341/img/pastry.jpg
+iced-coffee.jpg <- /home/hatch/workspace/freightfolio-site/concepts/espresso-4-u-cd739ddf7573/img/stock-latte.jpg
