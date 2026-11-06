@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Savannah Veterinary Medical Center.
+vet-stethoscope.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-6235650.jpg
+vet-shepherd.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-6235114.jpg
+vet-checkup.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-7468981.jpg

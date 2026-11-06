@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Angelo's Bakery.
+eclairs.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-5960385.jpg
+pastry-platter.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-17057406.jpg
+flaky-pastries.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-441486.jpg

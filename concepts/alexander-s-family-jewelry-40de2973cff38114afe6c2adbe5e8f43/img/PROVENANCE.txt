@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Alexander's Family Jewelry.
+rings-display.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-35187488.jpg
+luxury-rings.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-32451467.jpg
+wedding-rings.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-38728728.jpg

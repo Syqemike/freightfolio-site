@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Toes Yoga.
+women-yoga-class.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-8436684.jpg
+group-yoga.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-8436626.jpg
+balance-yoga.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-8436617.jpg

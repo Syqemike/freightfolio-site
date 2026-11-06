@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Yoga Landing.
+modern-studio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-39190418.jpg
+natural-light-yoga.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-8436623.jpg
+alignment-yoga.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-31743029.jpg

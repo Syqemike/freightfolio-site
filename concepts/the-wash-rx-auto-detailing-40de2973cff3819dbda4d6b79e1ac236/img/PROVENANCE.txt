@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The Wash Rx Auto Detailing.
+polishing.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-37809565.jpg
+foam-wash.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-6872609.jpg
+interior-clean.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061259-fresh/pexels-17029940.jpg
