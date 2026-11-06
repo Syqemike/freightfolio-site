@@ -2,30 +2,60 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Visit | The Old Glass Place</title>
+<title>Visit | The Old Glass Place, Springfield MO</title>
 <style>
-body{margin:0;font-family:'Franklin Gothic Medium', sans-serif;background:#f7f2ea;color:#26211a;line-height:1.6}
-a{color:#6b2d1f}
-header{padding:28px 6vw 10px}header h1{margin:0 0 4px;font-size:2.1em;line-height:1.15}
-.disc{background:#fff8e1;border:1px solid #e0c97a;padding:10px 14px;margin:0 6vw;font-size:.95em}
-nav{padding:14px 6vw;display:flex;gap:22px;flex-wrap:wrap}nav a{font-weight:bold;text-decoration:none}
-main{padding:10px 6vw 40px;max-width:1100px}
-.hero img,.gal img{width:100%;height:auto;display:block;object-fit:cover}
-.tag{font-size:1.35em;line-height:1.35}
-.cta{display:inline-block;background:#6b2d1f;color:#fff !important;padding:12px 22px;text-decoration:none;border-radius:4px;font-weight:bold;margin:14px 0}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}figure{margin:0}figcaption{font-size:.9em;margin-top:6px}
-.tag2{display:inline-block;background:#6b2d1f;color:#fff;font-size:.75em;padding:2px 7px;border-radius:3px;margin-right:6px}
-section{margin:28px 0}h2{border-bottom:2px solid #6b2d1f;padding-bottom:6px}
-table{border-collapse:collapse}td{padding:8px 18px 8px 0;vertical-align:top;border-bottom:1px solid #ddd}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{border:1px solid #ddd;padding:14px 16px;background:#fff}.card h3{margin:0 0 6px}.card p{margin:0}
-.svclist{list-style:none;padding:0}.svclist li{padding:10px 0;border-bottom:1px solid #ddd}
-footer{padding:20px 6vw;border-top:1px solid #ccc;font-size:.9em}
-@media(max-width:700px){.hero,.gal{grid-template-columns:1fr !important}.cards{grid-template-columns:1fr}header h1{font-size:1.6em}}
-header{text-align:left}.hero{display:grid;grid-template-columns:1fr 1.4fr;gap:32px;align-items:start}.hero>div{max-width:420px}main{max-width:1080px}.gal{grid-template-columns:repeat(3,1fr)}</style></head><body>
-<header><h1>The Old Glass Place</h1><p>Springfield, MO</p></header>
-<p class="disc">Design preview: this is a website concept created by Freightfolio. It is not the business's official website. Photos shown are stock photos, labeled as such, not photos of this business.</p>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav><main><section><h2>Visit</h2><p>521 E St Louis St, Springfield, MO 65806</p><p>Sunday through Friday 9 AM to 5 PM. Saturday 9 AM to 11 PM.</p><a class="cta" href="tel:+14175018035">Call to ask: +1 417-501-8035</a></section>
-<section><h2>Contact</h2><p>Phone: <a href="tel:+14175018035">+1 417-501-8035</a></p></section><section><h2>Photos</h2><div class="gal"><figure><img src="img/hero.jpg" alt="An event room set with round tables for a formal event. Stock photo."><figcaption><span class="tag2">Stock photo</span>An event room set with round tables for a formal event.</figcaption></figure><figure><img src="img/roses.jpg" alt="A large event room set with round tables and chairs. Stock photo."><figcaption><span class="tag2">Stock photo</span>A large event room set with round tables and chairs.</figcaption></figure><figure><img src="img/sunflowers.jpg" alt="A table set with desserts and flowers for a celebration. Stock photo."><figcaption><span class="tag2">Stock photo</span>A table set with desserts and flowers for a celebration.</figcaption></figure></div><p>All photos on this page are stock photos, not photos of this business.</p></section></main>
-<footer><p>The Old Glass Place, 521 E St Louis St, Springfield, MO 65806. Phone: <a href="tel:+14175018035">+1 417-501-8035</a>.</p>
-<p>Design preview concept by Freightfolio. This is not the business's official website. Photos are stock photos, labeled as such.</p></footer>
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;background:#f6f0e3;color:#221a15;line-height:1.6}
+a{color:#7c2f1c}
+.topbar{background:#221a15;color:#f6f0e3;padding:14px 6vw;display:flex;gap:26px;align-items:baseline;flex-wrap:wrap}
+.topbar .name{font-size:1.25em;letter-spacing:.04em;color:#f6f0e3;text-decoration:none;font-weight:bold}
+.topbar nav{display:flex;gap:22px;flex-wrap:wrap}
+.topbar nav a{color:#e8c98a;text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.92em}
+.disc{background:#fff8e1;border-bottom:1px solid #e0c97a;padding:10px 6vw;font-size:.92em;font-family:Verdana,Geneva,sans-serif}
+main{padding:0 6vw 40px;max-width:1180px;margin:0 auto}
+header.page{padding:34px 0 6px}
+header.page h1{font-size:2.4em;line-height:1.1;margin:0 0 8px}
+header.page p{font-size:1.12em;max-width:760px;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:34px 0}
+.card{background:#fff;border-top:4px solid #7c2f1c;padding:24px 26px;min-width:0;overflow-wrap:break-word}
+.card h2{font-size:1.4em;margin:0 0 8px}
+.card p{margin:0 0 8px}
+.card p:last-child{margin-bottom:0}
+.card .big{font-size:1.25em}
+figure{margin:34px 0}
+figure img{width:100%;height:auto;display:block}
+figure.tall img{max-height:560px;object-fit:cover}
+figcaption{font-size:.9em;font-family:Verdana,Geneva,sans-serif;color:#5a4a3a;margin-top:8px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:34px 0}
+.duo figure{margin:0}
+.duo img{height:340px;object-fit:cover}
+.cta-band{background:#221a15;color:#f6f0e3;padding:34px;text-align:center;margin:44px 0 0}
+.cta-band h2{color:#f6f0e3;margin:0 0 8px;font-size:1.9em}
+.cta-band p{margin:0 0 16px}
+.cta{display:inline-block;background:#a8842f;color:#221a15 !important;padding:14px 28px;text-decoration:none;font-weight:bold;font-family:Verdana,Geneva,sans-serif}
+footer{padding:22px 6vw;border-top:1px solid #ccc;font-size:.9em;font-family:Verdana,Geneva,sans-serif;color:#5a4a3a}
+footer a{color:#7c2f1c}
+@media(max-width:760px){
+.cards{grid-template-columns:1fr}
+.duo{grid-template-columns:1fr}
+.duo img{height:280px}
+header.page h1{font-size:1.9em}
+}
+</style></head><body>
+<div class="topbar"><a class="name" href="index.html">The Old Glass Place</a><nav><a href="index.html">Home</a><a href="services.html">Events</a><a href="visit.html">Visit</a></nav></div>
+<p class="disc">Design preview: this is a website concept created by Freightfolio. It is not the business's official website.</p>
+<main>
+<header class="page"><h1>Visit The Old Glass Place</h1><p>A historic wedding and event venue in downtown Springfield, in a restored 1908 and 1914 era building at 521 E St Louis St.</p></header>
+<figure><img src="img/sign.jpg" alt="The painted Old Glass Place sign on the brick wall of the building"><figcaption>The painted sign on the brick wall outside the venue.</figcaption></figure>
+<section class="cards">
+<div class="card"><h2>Find the venue</h2><p class="big">521 E St Louis St<br>Springfield, MO 65806</p><p>The venue sits in downtown Springfield, in the restored building with the painted sign on its brick wall.</p></div>
+<div class="card"><h2>Hours</h2><p class="big">Sunday through Friday<br>9:00 AM to 5:00 PM</p><p>Saturday<br>9:00 AM to 11:00 PM</p></div>
+</section>
+<section class="duo">
+<figure class="tall"><img src="img/guestbook.jpg" alt="A guestbook table with pink and white flowers and a gold vase"><figcaption>The guestbook table, set for guests as they arrive.</figcaption></figure>
+<figure class="tall"><img src="img/draped.jpg" alt="A reception room with a purple draped ceiling, string lights and round tables"><figcaption>The reception room under a draped ceiling and string lights.</figcaption></figure>
+</section>
+<section class="cta-band"><h2>Call to ask</h2><p>Questions about a date? Call (417) 501-8035.</p><a class="cta" href="tel:+14175018035">Call (417) 501-8035</a></section>
+</main>
+<footer><p>The Old Glass Place, 521 E St Louis St, Springfield, MO 65806. Phone (417) 501-8035.</p><p>Photos are the venue's own public photos from its Google listing. Website concept by Freightfolio. See more at <a href="https://freightfolio.net">freightfolio.net</a>.</p></footer>
 </body></html>
