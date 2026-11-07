@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Swiftwater Cafe.
+eggs-toast.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-34041969.jpg
+cappuccino-croissant.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-34052586.jpg
+eggs-benedict.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-29177412.jpg

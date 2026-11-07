@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Vandalia Lessons and Tutoring.
+guitar-lesson.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-7520985.jpg
+guitar-students.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-7521075.jpg
+guitar-studio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-7520927.jpg

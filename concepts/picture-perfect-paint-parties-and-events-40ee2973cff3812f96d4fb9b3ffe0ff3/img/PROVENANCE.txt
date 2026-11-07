@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Picture Perfect Paint Parties and Events.
+paint-class.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-34721291.jpg
+canvas-closeup.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-15685987.jpg
+paint-lesson.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-5756952.jpg

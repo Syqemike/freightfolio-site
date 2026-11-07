@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Zadan Jazz Studio.
+sax-stage.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-9418648.jpg
+sax-closeup.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-9399878.jpg
+sax-player.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-359995.jpg

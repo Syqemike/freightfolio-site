@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Creole Bagelry and Café.
+bagels-display.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-29445728.jpg
+salmon-bagel.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-35926363.jpg
+bagels-basket.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071259-fresh/pexels-10164451.jpg
