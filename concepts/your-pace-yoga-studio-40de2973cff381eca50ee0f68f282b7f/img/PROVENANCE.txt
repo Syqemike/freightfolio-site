@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Your Pace Yoga Studio.
+yoga-class.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-8436610.jpg
+yoga-instructor.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-8436627.jpg
+yoga-relaxation.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-8436711.jpg

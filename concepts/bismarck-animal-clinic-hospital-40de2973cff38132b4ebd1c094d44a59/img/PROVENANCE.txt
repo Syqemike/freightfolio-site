@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Bismarck Animal Clinic & Hospital.
+cat-exam.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-28644631.jpg
+cat-vaccine.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-6816857.jpg
+vet-kitten.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-39550296.jpg

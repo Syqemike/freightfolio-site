@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Santa Ana Skin Care Clinic.
+facial-mask.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-37229301.jpg
+aesthetic-treatment.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-30809947.jpg
+facial-clinic.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-7446659.jpg

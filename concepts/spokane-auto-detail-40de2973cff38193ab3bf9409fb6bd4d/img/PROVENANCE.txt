@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Spokane Auto Detail.
+cleaning-classic.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-14021836.jpg
+wheel-wipe.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-17623850.jpg
+detailing-cart.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-20042048.jpg

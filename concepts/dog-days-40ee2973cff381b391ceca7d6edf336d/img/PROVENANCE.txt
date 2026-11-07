@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Dog Days.
+daycare-group.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-37443358.jpg
+goldens-park.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-40466177.jpg
+dogs-indoors.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd061859-fresh/pexels-1618707.jpg
