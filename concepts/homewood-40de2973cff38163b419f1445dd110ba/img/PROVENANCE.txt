@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Homewood.
+outdoor-reception.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-12954015.jpg
+indoor-reception.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-39450941.jpg
+reception-dance.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-32073438.jpg

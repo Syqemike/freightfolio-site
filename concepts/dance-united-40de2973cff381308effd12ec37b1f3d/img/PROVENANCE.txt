@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Dance United.
+dancer-studio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-30826528.jpg
+dancer-pose.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-30826710.jpg
+dancer-barre.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-6719009.jpg

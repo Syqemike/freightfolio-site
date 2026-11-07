@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Tony's Brick Oven Pizzeria.
+pizzaiolo.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-5903389.jpg
+pizzas-oven.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-1566837.jpg
+pepperoni-slice.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-31587831.jpg

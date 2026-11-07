@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Fish River Grill.
+seafood-boil.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-8352795.jpg
+seafood-platter.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-4869328.jpg
+chef-grill.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-14786461.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Lock N Load Charters.
+group-boat.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-40408067.jpg
+aerial-boat.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-13668504.jpg
+rods-red-boat.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070059-fresh/pexels-9704381.jpg
