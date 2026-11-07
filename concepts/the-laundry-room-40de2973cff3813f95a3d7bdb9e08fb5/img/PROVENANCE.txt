@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The Laundry Room.
+laundromat-row.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-23230832.jpg
+washer-door.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-4700611.jpg
+washer-bank.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-4700400.jpg

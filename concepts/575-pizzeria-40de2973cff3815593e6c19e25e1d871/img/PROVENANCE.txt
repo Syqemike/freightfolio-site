@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of 575 Pizzeria.
+pizza-oven.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-905847.jpg
+pizza-closeup.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-5640022.jpg
+pizzas-table.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-16586524.jpg

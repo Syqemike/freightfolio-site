@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The Boho Boutique.
+crystal-quartz.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-4040637.jpg
+beaded-necklaces.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-994515.jpg
+gift-shop.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-5490917.jpg

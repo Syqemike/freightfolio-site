@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Lux Nails and Spa.
+black-manicure.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-851219.jpg
+love-manicure.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-887352.jpg
+foot-massage.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd070659-fresh/pexels-356053.jpg
