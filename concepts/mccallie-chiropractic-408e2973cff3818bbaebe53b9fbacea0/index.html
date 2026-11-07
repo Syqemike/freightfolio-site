@@ -4,28 +4,92 @@
 <meta name="robots" content="noindex">
 <title>McCallie Chiropractic | McCallie Chiropractic</title>
 <style>
-body{margin:0;font-family:'Georgia', serif;background:#f2f2ef;color:#26211a;line-height:1.6}
-a{color:#8a3b12}
-header{padding:28px 6vw 10px}header h1{margin:0 0 4px;font-size:2.1em;line-height:1.15}
-.disc{background:#fff8e1;border:1px solid #e0c97a;padding:10px 14px;margin:0 6vw;font-size:.95em}
-nav{padding:14px 6vw;display:flex;gap:22px;flex-wrap:wrap}nav a{font-weight:bold;text-decoration:none}
-main{padding:10px 6vw 40px;max-width:1100px}
-.hero img,.gal img{width:100%;height:auto;display:block;object-fit:cover}
-.tag{font-size:1.35em;line-height:1.35}
-.cta{display:inline-block;background:#8a3b12;color:#fff !important;padding:12px 22px;text-decoration:none;border-radius:4px;font-weight:bold;margin:14px 0}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}figure{margin:0}figcaption{font-size:.9em;margin-top:6px}
-.tag2{display:inline-block;background:#8a3b12;color:#fff;font-size:.75em;padding:2px 7px;border-radius:3px;margin-right:6px}
-section{margin:28px 0}h2{border-bottom:2px solid #8a3b12;padding-bottom:6px}
-table{border-collapse:collapse}td{padding:8px 18px 8px 0;vertical-align:top;border-bottom:1px solid #ddd}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{border:1px solid #ddd;padding:14px 16px;background:#fff}.card h3{margin:0 0 6px}.card p{margin:0}
-.svclist{list-style:none;padding:0}.svclist li{padding:10px 0;border-bottom:1px solid #ddd}
-footer{padding:20px 6vw;border-top:1px solid #ccc;font-size:.9em}
-@media(max-width:700px){.hero,.gal{grid-template-columns:1fr !important}.cards{grid-template-columns:1fr}header h1{font-size:1.6em}}
-header{text-align:center}.hero{display:block}.hero figure{margin:0 0 18px}.hero img{width:100%}main{max-width:1020px}.gal{grid-template-columns:repeat(3,1fr)}</style></head><body>
-<header><h1>McCallie Chiropractic</h1><p>Chattanooga, TN</p></header>
-<p class="disc">Design preview: this is a website concept created by Freightfolio. It is not the business's official website. Photos shown are stock photos, labeled as such, not photos of this business.</p>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav><main><section class="hero"><div><p class="tag">A chiropractic practice in Chattanooga.</p><p>McCallie Chiropractic is a chiropractic practice in Chattanooga.</p><a class="cta" href="tel:+14237527464">Call to ask: +1 423-752-7464</a></div>
-<figure><img src="img/hero.jpg" alt="A therapist giving a back massage in a bright, calm treatment room. Stock photo."><figcaption><span class="tag2">Stock photo</span>A therapist giving a back massage in a bright, calm treatment room.</figcaption></figure></section><section><h2>Services</h2><ul class="svclist"><li><strong>Chiropractic care</strong>: Chiropractic care at the Chattanooga practice.</li><li><strong>Ongoing care</strong>: Ongoing chiropractic care; call to ask about visits.</li></ul></section><section><h2>Photos</h2><div class="gal"><figure><img src="img/hero.jpg" alt="A therapist giving a back massage in a bright, calm treatment room. Stock photo."><figcaption><span class="tag2">Stock photo</span>A therapist giving a back massage in a bright, calm treatment room.</figcaption></figure><figure><img src="img/calm.jpg" alt="A massage therapy session detail. Stock photo."><figcaption><span class="tag2">Stock photo</span>A massage therapy session detail.</figcaption></figure><figure><img src="img/hands.jpg" alt="Close detail of massage therapy hands. Stock photo."><figcaption><span class="tag2">Stock photo</span>Close detail of massage therapy hands.</figcaption></figure></div><p>All photos on this page are stock photos, not photos of this business.</p></section></main>
-<footer><p>McCallie Chiropractic, 920 McCallie Ave, Chattanooga, TN. Phone: <a href="tel:+14237527464">+1 423-752-7464</a>.</p>
-<p>Design preview concept by Freightfolio. This is not the business's official website. Photos are stock photos, labeled as such.</p></footer>
+body{margin:0;font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#f7f2e8;color:#26221c;line-height:1.65}
+a{color:#8f3a28}
+.mast{padding:22px 6vw 0;display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.mast .name{font-family:'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;font-size:1.7em;font-weight:bold;color:#26221c;text-decoration:none}
+.mast .phone{font-weight:bold;white-space:nowrap}
+.disc{background:#fffdf4;border-top:3px solid #8f3a28;border-bottom:1px solid #d8cdb4;padding:10px 6vw;font-size:.92em;margin:14px 0 0}
+nav{padding:12px 6vw;display:flex;gap:26px;flex-wrap:wrap;border-bottom:1px solid #d8cdb4}
+nav a{font-weight:bold;text-decoration:none;color:#26221c}
+nav a:hover{color:#8f3a28}
+main{padding:0 6vw 48px;max-width:1080px;margin:0 auto}
+.hero{margin:0 -6vw;position:relative}
+.hero img{width:100%;height:520px;object-fit:cover;object-position:center 30%;display:block}
+.hero .panel{background:#f7f2e8;max-width:560px;padding:28px 30px 30px;margin:-110px 6vw 0;position:relative;border-top:5px solid #8f3a28}
+.hero h1{font-family:'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;font-size:2.5em;line-height:1.12;margin:0 0 12px}
+.hero p{margin:0 0 14px;font-size:1.08em}
+.cta{display:inline-block;background:#8f3a28;color:#fdf8ee !important;padding:13px 24px;text-decoration:none;font-weight:bold}
+.cta:hover{background:#7a2f20}
+.rating{margin:26px 0 0;font-size:1.02em}
+.rating strong{font-family:'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;font-size:1.15em}
+section{margin:44px 0}
+h2{font-family:'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;font-size:1.7em;line-height:1.2;margin:0 0 6px}
+.lede{font-size:1.08em;margin:0 0 24px;max-width:640px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;margin:30px 0;padding-top:30px;border-top:1px solid #d8cdb4}
+.row.flip .ph{order:2}
+.row.flip .stages{order:2}
+.stages{background:#fffdf4;border:1px solid #d8cdb4;border-top:5px solid #8f3a28;padding:18px 22px}
+.stages .stage{margin:0;padding:12px 0;border-bottom:1px solid #e8dfc9;font-family:'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;font-size:1.12em}
+.stages .stage:last-child{border-bottom:0}
+.stages .stage strong{color:#8f3a28}
+.row .num{font-family:'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;color:#8f3a28;font-size:1em;font-weight:bold;letter-spacing:.08em}
+.row h3{font-family:'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;font-size:1.45em;line-height:1.2;margin:4px 0 8px}
+.row p{margin:0 0 10px}
+.row figure{margin:0}
+.row img{width:100%;height:300px;object-fit:cover;display:block}
+figcaption{font-size:.88em;margin-top:7px;color:#5b5347}
+.more{margin-top:8px}
+.staff{background:#8f3a28;color:#fdf8ee;margin:0 -6vw;padding:40px 6vw;display:grid;grid-template-columns:1fr 1.2fr;gap:32px;align-items:start}
+.staff h2{color:#fdf8ee}
+.staff img{width:100%;height:auto;display:block}
+.staff p{margin:0 0 12px}
+.staff .who{font-family:'Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;font-size:1.15em}
+.visitband{background:#26221c;color:#f7f2e8;margin:0 -6vw;padding:40px 6vw;display:grid;grid-template-columns:1fr 1.4fr;gap:32px;align-items:center}
+.visitband h2{color:#f7f2e8}
+.visitband img{width:100%;height:260px;object-fit:cover;display:block}
+.visitband p{margin:0 0 12px}
+.visitband a{color:#f2c9a0}
+.visitband .cta{color:#fdf8ee !important}
+footer{padding:24px 6vw;border-top:1px solid #d8cdb4;font-size:.9em;color:#5b5347}
+footer p{margin:0 0 6px}
+@media(max-width:760px){.row,.staff,.visitband{grid-template-columns:1fr}.row.flip .ph{order:0}.hero img{height:340px}.hero .panel{margin:-70px 4vw 0;padding:22px}.hero h1{font-size:1.9em}.row img{height:240px}}
+</style></head><body>
+<header class="mast"><a class="name" href="index.html">McCallie Chiropractic</a><a class="phone" href="tel:+14237527464">+1 423-752-7464</a></header>
+<p class="disc">Design preview: this is a website concept created by Freightfolio. It is not the business's official website. Photos on this page are photos of this business.</p>
+<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav>
+<main>
+<section class="hero"><img src="img/hero.jpg" alt="A practitioner's hands on a patient's back.">
+<div class="panel"><h1>Chiropractic care in a brick house on McCallie Avenue.</h1>
+<p>Dr. L. Doug Adair and two licensed massage therapists work from a two-story brick house at 920 McCallie Ave in Chattanooga. Call to ask about a visit.</p>
+<a class="cta" href="tel:+14237527464">Call to ask: +1 423-752-7464</a></div></section>
+<p class="rating"><strong>4.3 from 11 Google reviews</strong></p>
+<section><h2>Care at the practice</h2>
+<p class="lede">McCallie Chiropractic and Rehabilitation Center offers chiropractic care and massage therapy. Here is what a visit can cover.</p>
+<div class="row"><figure class="ph"><img src="img/adjustment.jpg" alt="Dr. Adair adjusting a patient lying face-down on the table."><figcaption>Dr. Adair adjusting a patient lying face-down on the table.</figcaption></figure>
+<div><p class="num">01</p><h3>Chiropractic adjustments</h3>
+<p>Dr. Adair adjusts by hand, working with the joints of the body, particularly the spine, to reduce pain and restore joint function. His training covers Diversified, Gonstead, Thompson, Activator, flexion-distraction, and Webster technique, among others.</p></div></div>
+<div class="row flip"><div class="stages"><p class="stage"><strong>Stage 1.</strong> Reduction of pain</p><p class="stage"><strong>Stage 2.</strong> Recovery of function</p><p class="stage"><strong>Stage 3.</strong> Rehabilitation</p><p class="stage"><strong>Stage 4.</strong> Reinforcement</p></div>
+<div><p class="num">02</p><h3>Low back pain</h3>
+<p>Basic management of low back pain often involves a four-stage plan. The aim is a spine with healthier, stronger, and more stable nerves, discs, and muscles.</p></div></div>
+<div class="row"><figure class="ph"><img src="img/massage.jpg" alt="A massage therapist working with a patient lying face-down under a sheet."><figcaption>A massage therapist working with a patient lying face-down under a sheet.</figcaption></figure>
+<div><p class="num">03</p><h3>Massage therapy</h3>
+<p>Melody Karm and Harmony Sovia are licensed massage therapists at the practice. Sessions run from trigger point and deep tissue work to Swedish, sports, prenatal, reflexology, cranial sacral, and aromatherapy massage.</p></div></div>
+<p class="more"><a href="services.html">See all services</a></p></section>
+<section class="staff"><figure style="margin:0"><img src="img/staff.jpg" alt="The staff of McCallie Chiropractic standing together in front of a painting."><figcaption style="color:#f2d9c8">The staff of McCallie Chiropractic.</figcaption></figure>
+<div><h2>The people at the practice</h2>
+<p class="who">Dr. L. Doug Adair, Doctor of Chiropractic</p>
+<p>Dr. Adair earned his doctorate of chiropractic from Logan College of Chiropractic in St. Louis. Before that he worked as an underground mine foreman, and back pain of his own led him to chiropractic. He has worked in radiology since 1991.</p>
+<p class="who">Melody Karm, Licensed Massage and Neuromuscular Therapist</p>
+<p>Melody has over 22 years of experience as a massage therapist. She is also a certified medical assistant and chiropractic assistant.</p>
+<p class="who">Harmony Sovia, Licensed Massage Therapist</p>
+<p>Harmony has been a licensed massage therapist since 2007 and a certified medical massage practitioner since 2017.</p></div></section>
+<section class="visitband"><figure style="margin:0"><img src="img/house.jpg" alt="The two-story brick house with a white-columned porch at 920 McCallie Ave."><figcaption style="color:#cbbfa8">The brick house at 920 McCallie Ave.</figcaption></figure>
+<div><h2>Visit the brick house</h2>
+<p>The practice works from a two-story brick house with a white-columned porch at 920 McCallie Ave, Chattanooga, TN 37403.</p>
+<p>See <a href="visit.html">hours and directions</a>, or call to ask about a visit.</p>
+<a class="cta" href="tel:+14237527464">Call to ask: +1 423-752-7464</a></div></section>
+</main>
+<footer><p>McCallie Chiropractic and Rehabilitation Center, 920 McCallie Ave, Chattanooga, TN 37403. Phone: <a href="tel:+14237527464">+1 423-752-7464</a>.</p>
+<p>Design preview concept by Freightfolio. This is not the business's official website. Photos are photos of this business.</p></footer>
 </body></html>
