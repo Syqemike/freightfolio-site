@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Back on the Rack Upscale Resale.
+boutique-interior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-135620.jpg
+leather-totes.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-5243552.jpg
+handbags-pedestals.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-7953286.jpg

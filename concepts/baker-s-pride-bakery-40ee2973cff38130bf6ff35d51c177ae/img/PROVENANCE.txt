@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Baker's Pride Bakery.
+frosted-donuts.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-1191639.jpg
+donut-box.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-4686958.jpg
+cupcakes-blueberries.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-7525117.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Ponthieux's Jewelry Design Studio.
+diamond-ring.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-2735981.jpg
+ring-mandrel.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-4354561.jpg
+diamond-necklaces.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-12427695.jpg

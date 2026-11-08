@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of 15th Street Veterinary Group.
+vet-exam-shepherd.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-6235114.jpg
+vet-exam-small-dog.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-6235020.jpg
+vet-exam-dog.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080658-fresh/pexels-7468978.jpg
