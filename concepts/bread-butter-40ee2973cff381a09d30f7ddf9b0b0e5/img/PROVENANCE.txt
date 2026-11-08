@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Bread & Butter.
+bread-shelves.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080059-fresh/pexels-35993723.jpg
+sourdough-loaves.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080059-fresh/pexels-8633662.jpg
+bakery-interior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080059-fresh/pexels-29380155.jpg

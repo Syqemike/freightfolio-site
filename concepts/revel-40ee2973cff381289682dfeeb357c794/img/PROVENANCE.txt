@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Revel.
+reception-hall.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080059-fresh/pexels-17023014.jpg
+ballroom-tables.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080059-fresh/pexels-13834493.jpg
+banquet-table.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080059-fresh/pexels-20499528.jpg

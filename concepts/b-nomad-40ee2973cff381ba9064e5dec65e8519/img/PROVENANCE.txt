@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of B Nomad.
+dresses-window.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080059-fresh/pexels-10689371.jpg
+pink-dress-mannequin.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080059-fresh/pexels-8619007.jpg
+clothing-rack.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd080059-fresh/pexels-5531551.jpg
