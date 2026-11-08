@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The Warm Cookie.
+cookie-plate.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-8081573.jpg
+cookie-tray.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-20558711.jpg
+cookies-milk.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-36446733.jpg

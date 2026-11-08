@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Fred's Radiator & Auto Repair.
+mechanic-engine.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-3807517.jpg
+engine-bay.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-8478228.jpg
+mechanic-overalls.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-8985457.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of 1st Choice Heating and Cooling.
+technician-gauges.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-6471913.jpg
+technician-manifold.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-6471910.jpg
+technician-kneeling.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-6471914.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Redavfined Aesthetics.
+facial-gloves.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-12115040.jpg
+clinic-facial.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-7446659.jpg
+device-facial.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-3865548.jpg

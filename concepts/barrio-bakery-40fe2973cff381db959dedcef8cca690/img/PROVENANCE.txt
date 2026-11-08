@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Barrio Bakery.
+bread-display.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-38852250.jpg
+choosing-croissants.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-33043943.jpg
+sourdough-loaves.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081258-fresh/pexels-8633662.jpg
