@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Willa Jean.
+golden-biscuits.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-36903815.jpg
+biscuits-dome.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-38441701.jpg
+biscuits-plate.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-39852788.jpg

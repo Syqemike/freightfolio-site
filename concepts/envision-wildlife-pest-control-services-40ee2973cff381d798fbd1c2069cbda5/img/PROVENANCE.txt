@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Envision Wildlife & Pest Control Services.
+fumigation.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-32055757.jpg
+spraying-trees.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-4894608.jpg
+fogging.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-37020717.jpg

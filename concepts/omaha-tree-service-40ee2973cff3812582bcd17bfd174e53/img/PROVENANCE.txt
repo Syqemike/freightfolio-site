@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Omaha Tree Service.
+cut-logs.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-28280240.jpg
+chainsaw-log.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-6835301.jpg
+chainsaw-trunk.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-13790935.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Precision Tree Care.
+arborist-climb.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-35089307.jpg
+arborist-chainsaw.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-31127615.jpg
+arborist-ropes.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-34674271.jpg

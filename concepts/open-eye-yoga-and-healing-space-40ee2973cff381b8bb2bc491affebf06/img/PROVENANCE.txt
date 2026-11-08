@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Open Eye Yoga and Healing Space.
+yoga-class.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-39190415.jpg
+studio-interior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-35215418.jpg
+yoga-poses.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd071859-fresh/pexels-8436610.jpg
