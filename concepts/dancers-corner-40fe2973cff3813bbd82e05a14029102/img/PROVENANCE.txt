@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Dancers' Corner.
+little-dancers-barre.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-5635577.jpg
+dancers-arms-raised.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-6718442.jpg
+dancers-at-barre-closeup.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-5635564.jpg

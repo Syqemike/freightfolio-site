@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Centre For The Dansarts.
+dancer-stage-jump.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-36615761.jpg
+ballet-class-studio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-5888339.jpg
+dancers-on-pointe.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-17222506.jpg

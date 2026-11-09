@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Primo Dog.
+dogs-tugging-toy.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-31703669.jpg
+dogs-playing-grass.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-3609287.jpg
+dogs-with-ball.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-15909949.jpg

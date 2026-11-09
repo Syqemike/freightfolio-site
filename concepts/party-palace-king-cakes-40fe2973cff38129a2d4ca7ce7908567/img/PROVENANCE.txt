@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Party Palace King Cakes.
+whole-king-cake.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-36943898.jpg
+king-cake-closeup.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-35448862.jpg
+king-cake-candlelit-table.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd090059-fresh/pexels-10597608.jpg
