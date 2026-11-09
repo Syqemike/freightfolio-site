@@ -2,30 +2,145 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Inspirations Dance Studio | Inspirations Dance Studio</title>
+<title>Inspirations Dance Studio | Spokane, WA</title>
 <style>
-body{margin:0;font-family:'Lucida Sans', sans-serif;background:#f6f0f7;color:#26211a;line-height:1.6}
-a{color:#6b2d5e}
-header{padding:28px 6vw 10px}header h1{margin:0 0 4px;font-size:2.1em;line-height:1.15}
-.disc{background:#fff8e1;border:1px solid #e0c97a;padding:10px 14px;margin:0 6vw;font-size:.95em}
-nav{padding:14px 6vw;display:flex;gap:22px;flex-wrap:wrap}nav a{font-weight:bold;text-decoration:none}
-main{padding:10px 6vw 40px;max-width:1100px}
-.hero img,.gal img{width:100%;height:auto;display:block;object-fit:cover}
-.tag{font-size:1.35em;line-height:1.35}
-.cta{display:inline-block;background:#6b2d5e;color:#fff !important;padding:12px 22px;text-decoration:none;border-radius:4px;font-weight:bold;margin:14px 0}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}figure{margin:0}figcaption{font-size:.9em;margin-top:6px}
-.tag2{display:inline-block;background:#6b2d5e;color:#fff;font-size:.75em;padding:2px 7px;border-radius:3px;margin-right:6px}
-section{margin:28px 0}h2{border-bottom:2px solid #6b2d5e;padding-bottom:6px}
-table{border-collapse:collapse}td{padding:8px 18px 8px 0;vertical-align:top;border-bottom:1px solid #ddd}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{border:1px solid #ddd;padding:14px 16px;background:#fff}.card h3{margin:0 0 6px}.card p{margin:0}
-.svclist{list-style:none;padding:0}.svclist li{padding:10px 0;border-bottom:1px solid #ddd}
-footer{padding:20px 6vw;border-top:1px solid #ccc;font-size:.9em}
-@media(max-width:700px){.hero,.gal{grid-template-columns:1fr !important}.cards{grid-template-columns:1fr}header h1{font-size:1.6em}}
-header{text-align:left}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:36px}.hero .tag{font-size:1.6em}main{max-width:1060px}.gal{grid-template-columns:repeat(2,1fr)}</style></head><body>
-<header><h1>Inspirations Dance Studio</h1><p>Spokane, WA</p></header>
-<p class="disc">Design preview: this is a website concept created by Freightfolio. It is not the business's official website. Photos shown are stock photos, labeled as such, not photos of this business.</p>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav><main><section class="hero"><div><p class="tag">A nonprofit dance studio in Spokane offering nurturing dance classes for all ages and abilities.</p><p>Inspirations Dance Studio is a 501(c)(3) nonprofit dance studio in Spokane providing quality, nurturing dance classes for all ages and abilities, emphasizing creativity, community, and compassion, and meeting each student where they are. Classes on its schedule include intermediate and junior hip hop, tap 2, and advanced lyrical.</p><a class="cta" href="tel:+15095341128">Call to ask: +1 509-534-1128</a></div>
-<figure><img src="img/ballet.jpg" alt="Ballet dancers practicing poses. Stock photo."><figcaption><span class="tag2">Stock photo</span>Ballet dancers practicing poses.</figcaption></figure></section><section><h2>Photos</h2><div class="gal"><figure><img src="img/ballet.jpg" alt="Ballet dancers practicing poses. Stock photo."><figcaption><span class="tag2">Stock photo</span>Ballet dancers practicing poses.</figcaption></figure><figure><img src="img/barre.jpg" alt="Young dancers at the barre. Stock photo."><figcaption><span class="tag2">Stock photo</span>Young dancers at the barre.</figcaption></figure><figure><img src="img/poses.jpg" alt="Young dancers in ballet class. Stock photo."><figcaption><span class="tag2">Stock photo</span>Young dancers in ballet class.</figcaption></figure></div><p>All photos on this page are stock photos, not photos of this business.</p></section><section><h2>Services</h2><ul class="svclist"><li><strong>Intermediate hip hop</strong>: Intermediate hip hop classes at the Spokane studio, taught as part of a schedule that also includes junior hip hop, tap, and lyrical.</li><li><strong>Junior hip hop</strong>: Junior hip hop classes at the Spokane studio, on the same schedule as intermediate hip hop, tap 2, and advanced lyrical.</li><li><strong>Tap 2</strong>: Tap 2 classes at the Spokane studio, on the same schedule as hip hop and advanced lyrical classes.</li><li><strong>Advanced lyrical</strong>: Advanced lyrical classes at the Spokane studio, on the same schedule as hip hop and tap classes.</li><li><strong>Classes for all ages and abilities</strong>: Classes for all ages and abilities, with an emphasis on creativity, community, and compassion.</li></ul></section></main>
-<footer><p>Inspirations Dance Studio, Spokane, WA (call to confirm the street address). Phone: <a href="tel:+15095341128">+1 509-534-1128</a>.</p>
-<p>Design preview concept by Freightfolio. This is not the business's official website. Photos are stock photos, labeled as such.</p></footer>
+:root{--ink:#241a20;--paper:#faf5ef;--coral:#cf4a38;--rose:#f2e3dc;--gold:#8a6d2b}
+*{box-sizing:border-box}
+body{margin:0;font-family:Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+a{color:var(--coral)}
+header{padding:30px 6vw 8px}
+header .kicker{font-size:.8em;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+header h1{font-family:Georgia,'Times New Roman',serif;font-size:2.6em;line-height:1.05;margin:0}
+header .sub{font-family:Georgia,serif;font-style:italic;font-size:1.1em;margin:6px 0 0}
+.barre{height:0;border-top:3px solid var(--ink);border-bottom:1px solid var(--ink);padding-top:2px;margin:18px 6vw 0}
+.disc{background:var(--rose);padding:10px 6vw;font-size:.95em;margin:0}
+nav{padding:14px 6vw;display:flex;gap:26px;flex-wrap:wrap}
+nav a{font-weight:bold;text-decoration:none;color:var(--ink);border-bottom:2px solid transparent}
+nav a[aria-current]{border-bottom-color:var(--coral)}
+main{padding:8px 6vw 40px;max-width:1180px;margin:0 auto}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:560px;margin:22px 0 40px}
+.hero .panel{background:var(--ink);color:#f7efe6;padding:44px 40px;display:flex;flex-direction:column;justify-content:center}
+.hero .panel .eyebrow{font-size:.8em;letter-spacing:.18em;text-transform:uppercase;color:#e8b4a8;margin:0 0 14px}
+.hero .panel h2{font-family:Georgia,serif;font-size:2.7em;line-height:1.12;margin:0 0 16px;font-weight:normal}
+.hero .panel p{margin:0 0 14px}
+.hero .panel .rating{color:#f2d8a7;font-size:.95em}
+.hero .photo{margin:0;position:relative}
+.hero .photo img{width:100%;height:100%;min-height:560px;object-fit:cover;object-position:center 28%;display:block}
+.hero .photo figcaption{position:absolute;left:0;bottom:0;background:rgba(36,26,32,.85);color:#f7efe6;font-size:.85em;padding:8px 12px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.cta{display:inline-block;background:var(--coral);color:#fff !important;padding:12px 22px;text-decoration:none;font-weight:bold}
+.cta.ghost{background:transparent;color:#f7efe6 !important;border:2px solid #f7efe6}
+section{margin:44px 0}
+h2.sec{font-family:Georgia,serif;font-size:1.9em;margin:0 0 6px;font-weight:normal}
+.sec-sub{margin:0 0 20px;color:#5a4a52}
+.classes{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--ink)}
+.class{padding:20px 18px 22px;border-bottom:1px solid #d8c9bd}
+.class .num{font-family:Georgia,serif;font-size:2em;color:var(--coral);line-height:1}
+.class h3{font-family:Georgia,serif;font-size:1.25em;margin:8px 0 4px}
+.class p{margin:0;font-size:.95em}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+figure{margin:0}
+.trio img{width:100%;height:300px;object-fit:cover;display:block}
+figcaption{font-size:.9em;margin-top:8px;color:#5a4a52}
+.band{background:var(--ink);color:#f7efe6;padding:38px 40px;display:grid;grid-template-columns:1.2fr .8fr;gap:36px}
+.band h2{font-family:Georgia,serif;font-size:1.9em;margin:0 0 10px;font-weight:normal}
+.band p{margin:0 0 12px}
+.band .fact{border-left:3px solid var(--coral);padding-left:16px}
+.band .fact strong{font-family:Georgia,serif;font-size:1.15em}
+.visit-teaser{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.visit-teaser h3{font-family:Georgia,serif;font-size:1.3em;margin:0 0 8px}
+.visit-teaser p{margin:0 0 10px}
+.hours{list-style:none;padding:0;margin:0}
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:7px 0;border-bottom:1px solid #d8c9bd}
+footer{background:var(--ink);color:#e9ddd2;padding:26px 6vw;font-size:.92em}
+footer a{color:#f2d8a7}
+footer p{margin:0 0 8px}
+@media(max-width:760px){
+  header h1{font-size:2em}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero .panel{padding:30px 24px}
+  .hero .panel h2{font-size:2em}
+  .hero .photo img{min-height:380px}
+  .classes{grid-template-columns:1fr}
+  .trio{grid-template-columns:1fr}
+  .trio img{height:280px}
+  .band{grid-template-columns:1fr;padding:28px 24px}
+  .visit-teaser{grid-template-columns:1fr}
+}
+</style></head><body>
+<header><p class="kicker">Spokane, Washington &middot; Est. 2014</p><h1>Inspirations Dance Studio</h1><p class="sub">A nonprofit dance studio for ages 2 to adult</p></header>
+<div class="barre"></div>
+<p class="disc">Design preview: this is a website concept created by Freightfolio. It is not the business&rsquo;s official website. Photos show the actual studio and its teachers.</p>
+<nav><a href="index.html" aria-current="page">Home</a><a href="services.html">Classes</a><a href="visit.html">Visit</a></nav>
+<main>
+<section class="hero">
+  <div class="panel">
+    <p class="eyebrow">Inspirations Dance Studio &middot; Spokane</p>
+    <h2>Where movement sparks inspiration.</h2>
+    <p>Inspirations Dance Studio is a nonprofit dance studio in Spokane, founded in 2014 by Mikaela Ostrander and her mother Janet. Classes run for ages 2 to adult, from tiny stars to grown-ups, with an emphasis on creativity, community, and compassion.</p>
+    <p class="rating">5.0 from 10 Google reviews, checked November 9, 2026</p>
+    <div class="cta-row"><a class="cta" href="tel:+15095341128">Call to enroll: (509) 534-1128</a><a class="cta ghost" href="mailto:info@inspirationsdancespokane.com">Email the studio</a></div>
+  </div>
+  <figure class="photo"><img src="img/hero-barre.jpg" alt="Young dancers at the barre in the Inspirations Dance Studio studio in Spokane."><figcaption>Young dancers at the barre in the Spokane studio.</figcaption></figure>
+</section>
+
+<section>
+  <h2 class="sec">Classes for every age</h2>
+  <p class="sec-sub">Six class styles on the Fall and Winter 2026 schedule, for ages 2 to adult. New students start with one free trial class.</p>
+  <div class="classes">
+    <div class="class"><div class="num">01</div><h3>Ballet</h3><p>Ages 5 and up, levels 1 to 3.</p></div>
+    <div class="class"><div class="num">02</div><h3>Hip Hop</h3><p>Ages 5 and up, beginner to advanced.</p></div>
+    <div class="class"><div class="num">03</div><h3>Jazz</h3><p>Ages 5 and up, Jazz 1 to 3.</p></div>
+    <div class="class"><div class="num">04</div><h3>Lyrical</h3><p>Ages 8 and up, Lyrical 1 to 3, with contemporary fusion.</p></div>
+    <div class="class"><div class="num">05</div><h3>Tap</h3><p>Ages 5 and up, Tap 1 to 3.</p></div>
+    <div class="class"><div class="num">06</div><h3>Musical Theater</h3><p>Ages 8 and up, Broadway style.</p></div>
+  </div>
+  <p style="margin-top:16px"><a href="services.html">See class details and the weekly schedule &rarr;</a></p>
+</section>
+
+<section>
+  <h2 class="sec">Inside the studio</h2>
+  <p class="sec-sub">Classes in session at 3618 E Broadway Ave in Spokane.</p>
+  <div class="trio">
+    <figure><img src="img/ballet-class.jpg" alt="A ballet class in session at the barre, with the studio mirror behind the dancers."><figcaption>A ballet class in session at the barre.</figcaption></figure>
+    <figure><img src="img/tutus-heart.jpg" alt="Two young dancers in pink tutus making a heart shape with their arms, with their teacher between them at the barre."><figcaption>Two young dancers with their teacher at the barre.</figcaption></figure>
+    <figure><img src="img/side-splits.jpg" alt="A dancer in a black leotard doing side splits in the studio."><figcaption>Side splits on the studio floor.</figcaption></figure>
+  </div>
+</section>
+
+<section class="band">
+  <div>
+    <h2>A studio built on community</h2>
+    <p>Mikaela Ostrander founded Inspirations Dance Studio with her mother Janet in 2014. Janet retired in June 2022, and the studio carries on as a 501(c)(3) nonprofit, with Mikaela Ostrander and Marlina D&rsquo;Angelo as co-directors and Josie D&rsquo;Angelo as lead dance teacher.</p>
+    <p>The studio meets each student where they are. New students can try one class free before enrolling.</p>
+  </div>
+  <div class="fact">
+    <p><strong>One free trial class</strong></p>
+    <p>Call the studio to set up a first class for your dancer.</p>
+    <p><strong>Private lessons</strong></p>
+    <p>Private lessons are $40 an hour. Bungee Fitness is also offered at the studio.</p>
+  </div>
+</section>
+
+<section class="visit-teaser">
+  <div>
+    <h3>Visit the studio</h3>
+    <p>3618 E Broadway Ave, Spokane, WA 99202. The studio building also fronts Springfield Avenue at 3621 E Springfield Ave.</p>
+    <p><a href="visit.html">Hours, contact, and directions &rarr;</a></p>
+  </div>
+  <div>
+    <h3>Hours</h3>
+    <ul class="hours">
+      <li><span>Monday to Thursday</span><span>3:45 to 7:00 PM</span></li>
+      <li><span>Friday</span><span>Closed</span></li>
+      <li><span>Saturday</span><span>8:00 AM to 12:00 PM</span></li>
+      <li><span>Sunday</span><span>Closed</span></li>
+    </ul>
+  </div>
+</section>
+</main>
+<footer>
+  <p>Inspirations Dance Studio, 3618 E Broadway Ave, Spokane, WA 99202. Phone <a href="tel:+15095341128">(509) 534-1128</a>. Email <a href="mailto:info@inspirationsdancespokane.com">info@inspirationsdancespokane.com</a>.</p>
+  <p>Design preview concept by Freightfolio. This is not the business&rsquo;s official website. Photos are photos of this business.</p>
+</footer>
 </body></html>
