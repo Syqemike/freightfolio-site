@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of PSC Photography.
+photographer-studio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-12174516.jpg
+family-studio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-32842395.jpg
+bridal-veil.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-39903992.jpg

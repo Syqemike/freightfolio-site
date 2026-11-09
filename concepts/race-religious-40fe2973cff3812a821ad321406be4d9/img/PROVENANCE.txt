@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Race & Religious.
+colonial-courtyard.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-30952470.jpg
+brick-courtyard.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-36262326.jpg
+red-courtyard-fountain.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-16627387.jpg

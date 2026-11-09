@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of The Jeweler's Bench.
+jeweler-torch.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-15955333.jpg
+jeweler-apron.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-7167019.jpg
+gold-rings.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-28933799.jpg

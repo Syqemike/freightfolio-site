@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Fetch & Stay.
+dogs-playing.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-28651148.jpg
+dogs-grass.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-9455270.jpg
+dogs-lawn.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-35864648.jpg

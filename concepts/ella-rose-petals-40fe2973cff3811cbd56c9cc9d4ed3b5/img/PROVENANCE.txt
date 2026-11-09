@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Ella Rose Petals.
+pink-rose-bouquet.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-20091872.jpg
+white-peony-bouquet.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-32552675.jpg
+aisle-florals.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-31138818.jpg

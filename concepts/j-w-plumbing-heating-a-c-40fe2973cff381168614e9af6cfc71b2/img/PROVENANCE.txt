@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of J&W Plumbing Heating & A/C.
+technician-ac-unit.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-32497161.jpg
+technician-rooftop.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-5463575.jpg
+technician-drill.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd081858-fresh/pexels-5463587.jpg
