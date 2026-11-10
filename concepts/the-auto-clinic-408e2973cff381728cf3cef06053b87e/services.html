@@ -6,34 +6,127 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Services | The Auto Clinic</title>
 <style>
-body { font-family: 'Palatino Linotype', serif; background: #f2f3f5; color: #1c2430; margin: 0; line-height: 1.5; }
-.disclosure { background: #b8860b; color: #fff; padding: 10px 20px; font-size: 14px; text-align: center; }
-header { padding: 24px 20px 8px; max-width: 960px; margin: 0 auto; text-align: center; }
-header h1 { font-size: 46px; margin: 0 0 4px; }
-header p.tag { font-size: 19px; margin: 0 0 14px; }
-main { max-width: 960px; margin: 0 auto; padding: 0 20px 40px; }
-nav { max-width: 960px; margin: 0 auto; padding: 0 20px 18px; text-align: center; }
-nav a { margin: 0 14px; color: #b8860b; font-weight: bold; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; font-size: 14px; }
-.hero img { width: 100%; height: 340px; object-fit: cover; display: block; }
-figcaption, .cap { font-size: 13px; color: #555; margin: 6px 0 20px; }
-h2 { font-size: 24px; letter-spacing: 2px; text-transform: uppercase; margin-top: 24px; }
-.cta, .cta2 { display: inline-block; background: #b8860b; color: #fff; padding: 10px 18px; text-decoration: none; margin: 8px 8px 8px 0; font-weight: bold; border-radius: 18px; }
-.cta2 { background: #1c2430; }
-ul { padding-left: 20px; }
-li { margin-bottom: 8px; }
-.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.gallery figure { margin: 0; }
-.gallery img { width: 100%; height: auto; display: block; }
-footer { max-width: 960px; margin: 0 auto; padding: 20px; font-size: 13px; background: #f2f3f5; border-top: 3px solid #b8860b; }
+body { font-family: Arial, Helvetica, sans-serif; background: #f6f1e7; color: #201d1a; margin: 0; line-height: 1.55; }
+.disclosure { background: #8f1d1d; color: #fff; padding: 9px 20px; font-size: 13px; text-align: center; }
+.checker { height: 12px; background: repeating-conic-gradient(#201d1a 0% 25%, #f6f1e7 0% 50%) 0 0 / 24px 12px; }
+.wrap { max-width: 1020px; margin: 0 auto; padding: 0 22px; }
+header { padding: 30px 0 6px; }
+header .kicker { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #8f1d1d; font-weight: bold; margin: 0 0 6px; }
+header h1 { font-family: 'Arial Black', Arial, sans-serif; font-size: 58px; line-height: 1; margin: 0 0 8px; letter-spacing: -1px; }
+header h1 span { color: #8f1d1d; }
+header p.tag { font-size: 19px; margin: 0 0 4px; }
+header p.addr { font-size: 15px; color: #5a5348; margin: 0 0 18px; }
+nav { background: #201d1a; padding: 0 22px; }
+nav .wrap { display: flex; gap: 4px; padding: 0; }
+nav a { color: #f6f1e7; text-decoration: none; font-weight: bold; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; padding: 13px 18px 13px 0; margin-right: 14px; }
+nav a.on { color: #f0b429; }
+main { padding-bottom: 44px; }
+.hero { margin: 26px 0 0; }
+.hero img { width: 100%; height: 380px; object-fit: cover; display: block; border: 1px solid #d8cfbc; }
+figcaption, .cap { font-size: 13px; color: #5a5348; margin: 7px 0 0; }
+h2.sec { font-family: 'Arial Black', Arial, sans-serif; font-size: 26px; margin: 38px 0 4px; }
+p.lede { font-size: 17px; margin: 0 0 18px; max-width: 760px; }
+.group { margin-top: 30px; }
+.group h3 { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #fff; background: #8f1d1d; display: inline-block; padding: 6px 12px; margin: 0 0 4px; }
+.group h3.dark { background: #201d1a; }
+.ticket { border-top: 2px solid #201d1a; }
+.ticket .row { display: grid; grid-template-columns: 52px 1fr; gap: 14px; padding: 15px 0; border-bottom: 1px solid #d8cfbc; }
+.ticket .num { font-family: 'Arial Black', Arial, sans-serif; color: #8f1d1d; font-size: 20px; }
+.ticket .row b { font-size: 17px; }
+.ticket .row p { margin: 2px 0 0; font-size: 15px; color: #4a443c; }
+.photorow { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 26px; }
+.photorow figure { margin: 0; }
+.photorow img { width: 100%; height: 300px; object-fit: cover; display: block; border: 1px solid #d8cfbc; }
+.cta, .cta2, .cta3 { display: inline-block; padding: 11px 20px; text-decoration: none; font-weight: bold; font-size: 15px; margin: 4px 8px 4px 0; }
+.cta { background: #8f1d1d; color: #fff; }
+.cta2 { background: #f6f1e7; color: #201d1a; }
+.cta3 { background: #201d1a; color: #f6f1e7; }
+.bookband { background: #201d1a; color: #f6f1e7; padding: 24px 26px; margin-top: 38px; }
+.bookband h2 { font-family: 'Arial Black', Arial, sans-serif; font-size: 22px; margin: 0 0 8px; }
+.bookband p { margin: 0 0 14px; font-size: 16px; }
+footer { border-top: 4px solid #8f1d1d; padding: 22px 0 30px; font-size: 13px; color: #5a5348; }
+footer p { margin: 0 0 8px; }
+@media (max-width: 700px) {
+  header h1 { font-size: 40px; }
+  .hero img { height: 260px; }
+  .photorow { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
 <div class="disclosure">Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</div>
-<header><h1>The Auto Clinic</h1><p class="tag">A one stop auto repair shop in El Paso for cars, trucks, motorcycles, hot rods, and fleets.</p><p>El Paso, TX</p></header>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav>
-<main><h2>Services</h2><ul><li><strong>Oil changes</strong></li><li><strong>Texas state inspections</strong></li><li><strong>Tune ups</strong></li><li><strong>Brakes</strong></li><li><strong>Electrical</strong></li><li><strong>Transmission</strong></li><li><strong>Diesel truck and fleet service</strong></li><li><strong>Batteries</strong></li></ul><p><a class="cta" href="tel:+19155943316">Call to ask: +1 915-594-3316</a> <a class="cta2" href="mailto:manager@elpasoautoclinic.com">Email: manager@elpasoautoclinic.com</a></p>
-<h2>Gallery</h2><div class="gallery"><figure><img src="img/engine.jpg" alt="A performance car engine with red accents."><figcaption class="cap">Stock photo: A performance car engine with red accents.</figcaption></figure><figure><img src="img/turbo.jpg" alt="A turbocharger and air filter in an engine bay."><figcaption class="cap">Stock photo: A turbocharger and air filter in an engine bay.</figcaption></figure></div></main>
-<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p><p>The Auto Clinic, 1704 Myrtle Ave, El Paso, TX 79901 | +1 915-594-3316</p>
-<p><a class="cta" href="tel:+19155943316">Call to ask: +1 915-594-3316</a> <a class="cta2" href="mailto:manager@elpasoautoclinic.com">Email: manager@elpasoautoclinic.com</a></p></footer>
+<div class="checker"></div>
+<header><div class="wrap">
+<p class="kicker">El Paso, Texas &middot; Auto repair and fleet service</p>
+<h1>THE AUTO <span>CLINIC</span></h1>
+<p class="tag">Services for cars, trucks, motorcycles, hot rods, and fleets.</p>
+<p class="addr">1704 Myrtle Ave, El Paso, TX 79901 &middot; (915) 594-3316</p>
+</div></header>
+<nav><div class="wrap"><a href="index.html">Home</a><a class="on" href="services.html">Services</a><a href="visit.html">Visit</a></div></nav>
+<main><div class="wrap">
+
+<section class="hero">
+<img src="img/hotrod.jpg" alt="A dragster and a rat rod inside the shop.">
+<p class="cap">A dragster and a rat rod inside the shop.</p>
+</section>
+
+<h2 class="sec">The work order</h2>
+<p class="lede">Every service below is work the shop lists on its own site. Prices are not published, so call or email to ask about a job.</p>
+
+<div class="group">
+<h3>Routine care</h3>
+<div class="ticket">
+<div class="row"><div class="num">01</div><div><b>Oil changes</b><p>Oil changes for cars, trucks, motorcycles, hot rods, and fleet vehicles.</p></div></div>
+<div class="row"><div class="num">02</div><div><b>Tune-ups</b><p>Tune-ups for daily drivers and high performance cars alike.</p></div></div>
+<div class="row"><div class="num">03</div><div><b>Belts, hoses, and filters</b><p>Belts, hoses, and filters, checked and replaced as part of routine care.</p></div></div>
+<div class="row"><div class="num">04</div><div><b>Fuel service</b><p>Fuel system service for cars, trucks, and fleet vehicles.</p></div></div>
+<div class="row"><div class="num">05</div><div><b>Battery and electric</b><p>Battery and electric service for cars, trucks, and fleet vehicles.</p></div></div>
+</div>
+</div>
+
+<div class="photorow">
+<figure><img src="img/engine-bay.jpg" alt="An engine bay during electrical work."><figcaption>An engine bay during electrical work.</figcaption></figure>
+<figure><img src="img/engine-v8.jpg" alt="A rebuilt V8 engine in the shop."><figcaption>A rebuilt V8 engine in the shop.</figcaption></figure>
+</div>
+
+<div class="group">
+<h3 class="dark">Repairs</h3>
+<div class="ticket">
+<div class="row"><div class="num">06</div><div><b>Brakes</b><p>Brake work for cars, trucks, and fleet vehicles.</p></div></div>
+<div class="row"><div class="num">07</div><div><b>Electrical and diagnostics</b><p>Electrical work and diagnostics for engine and electrical problems.</p></div></div>
+<div class="row"><div class="num">08</div><div><b>Air conditioning and heat</b><p>Air conditioning and heat repair for cars, trucks, and fleet vehicles.</p></div></div>
+<div class="row"><div class="num">09</div><div><b>Suspension and struts</b><p>Suspension and strut work for cars and trucks.</p></div></div>
+<div class="row"><div class="num">10</div><div><b>Timing belt</b><p>Timing belt replacement for cars and trucks.</p></div></div>
+</div>
+</div>
+
+<div class="group">
+<h3>Heavy work and fleets</h3>
+<div class="ticket">
+<div class="row"><div class="num">11</div><div><b>Texas state inspections</b><p>Texas state inspections, with the inspection signs posted at the shop door.</p></div></div>
+<div class="row"><div class="num">12</div><div><b>Diesel service</b><p>Diesel service, including Duramax, Ford Power Stroke Diesel, and Cummins.</p></div></div>
+<div class="row"><div class="num">13</div><div><b>Engines and transmissions</b><p>JASPER engines and transmissions, with a 3-year, 100,000-mile warranty.</p></div></div>
+<div class="row"><div class="num">14</div><div><b>Fleet services</b><p>Fleet service for local businesses, with onsite service available.</p></div></div>
+</div>
+</div>
+
+<div class="photorow">
+<figure><img src="img/bay-corvette.jpg" alt="A flame-painted pickup in the bay, with a Corvette on the lift and a motorcycle at the side."><figcaption>A flame-painted pickup in the bay, with a Corvette on the lift and a motorcycle at the side.</figcaption></figure>
+<figure><img src="img/bay-classic.jpg" alt="A classic car with the hood open in the service bay, with a Mustang and a Camaro beside it."><figcaption>A classic car with the hood open in the service bay, with a Mustang and a Camaro beside it.</figcaption></figure>
+</div>
+
+<section class="bookband">
+<h2>Set up the work</h2>
+<p>Request an appointment on the shop's site and the shop calls back with available times. Or call or email to ask about a job first.</p>
+<p><a class="cta" href="https://elpasoautoclinic.com/schedule-an-appointment">Request an appointment</a> <a class="cta2" href="tel:+19155943316">Call (915) 594-3316</a> <a class="cta2" href="mailto:manager@elpasoautoclinic.com">Email the shop</a></p>
+</section>
+
+</div></main>
+<div class="checker"></div>
+<footer><div class="wrap">
+<p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p>
+<p>The Auto Clinic, 1704 Myrtle Ave, El Paso, TX 79901 | (915) 594-3316 | <a href="mailto:manager@elpasoautoclinic.com">manager@elpasoautoclinic.com</a></p>
+<p><a class="cta" href="https://elpasoautoclinic.com/schedule-an-appointment">Request an appointment</a> <a class="cta3" href="tel:+19155943316">Call to book: (915) 594-3316</a></p>
+</div></footer>
 </body>
 </html>
