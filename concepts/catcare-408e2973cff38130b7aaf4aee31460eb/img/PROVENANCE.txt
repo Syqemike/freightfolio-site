@@ -1,0 +1,21 @@
+PHOTO PROVENANCE - CatCare concept site (Rebuild run153, 2026-11-04, MIKE REWORK ORDER full redo)
+
+- real-cat-bed.jpg: A grey cat resting in a cat bed.
+  REAL photo from the business's own website catcareeugene.com
+  (wp-content/uploads/2019/08/eugene-or-cat-veterinarian.jpeg, viewed before use in run112,
+  still the clinic's own-site image; own site re-fetched 2026-11-04 for hours/services facts).
+  Used as the large hero photo on all 3 pages.
+- cat-exam-2.jpg: A veterinarian examining a light-brown cat on an exam table. Stock photo.
+  Source: Pexels stock photo downloaded 2026-10-29 and verified by viewing before use.
+  Used in the gallery on all 3 pages, captioned as a stock photo.
+- cat-exam-3.jpg: A veterinarian in blue scrubs examining a fluffy white cat. Stock photo.
+  Source: Pexels stock photo downloaded 2026-10-29 and verified by viewing before use.
+  Used in the gallery on all 3 pages, captioned as a stock photo.
+Live-browser sourcing check 2026-11-04: the delegated live-browser task errored (model
+output truncated) before returning results, so it is NOT counted as a completed check.
+Fallback used: browser text fetch of catcareeugene.com on 2026-11-04 confirmed the
+clinic's own-site hours, services framing, address, and phone, and confirmed no online
+booking is offered there (third-party pharmacy link only, per CRM research). The real
+photo above is the clinic's own-site photo already verified in run112, not a new claim.
+No Facebook/Google/Yelp photo check completed this shift; no new real photo is claimed
+from those sources. Mixed photo page (1 real + 2 labeled stock), not all-stock.

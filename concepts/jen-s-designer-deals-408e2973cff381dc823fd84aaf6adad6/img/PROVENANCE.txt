@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Jen's Designer Deals or its products, services, or premises.
+- hero.jpg: Stock photo: A woman browsing clothing racks in a shop.
+- jacket.jpg: Stock photo: A denim jacket over a mustard top against a yellow wall.
+- folded.jpg: Stock photo: Folded shirts in a drawer.

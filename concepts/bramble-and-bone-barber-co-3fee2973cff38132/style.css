@@ -1,0 +1,225 @@
+/* Bramble and Bone Barber Co. - dark botanical gothic concept.
+   Palette: bone #ece5d3, thorn black #141a14, oxblood #6e1f1f.
+   Palatino Linotype old-style serif display + system sans body.
+   Editorial composition with original thorny vine dividers. Mobile-first. */
+
+:root {
+  --bone: #ece5d3;
+  --bone-dim: #b9b09a;
+  --thorn: #141a14;
+  --thorn-2: #1c231c;
+  --oxblood: #6e1f1f;
+  --oxblood-bright: #8c2a2a;
+  --moss: #3d4a33;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--thorn);
+  color: var(--bone);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+img, svg { max-width: 100%; height: auto; display: block; }
+a { color: #d08a7a; }
+
+.wrap { max-width: 40rem; margin: 0 auto; padding: 0 1.5rem; }
+.wrap-wide { max-width: 52rem; margin: 0 auto; padding: 0 1.5rem; }
+
+.serif { font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif; }
+
+/* Disclosure bar */
+.disclosure {
+  background: var(--oxblood);
+  color: var(--bone);
+  text-align: center;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+}
+
+/* Masthead */
+.masthead { text-align: center; padding: 2.75rem 1.5rem 2rem; }
+.masthead .chapter {
+  font-size: 0.72rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--bone-dim);
+  margin-bottom: 1rem;
+}
+.masthead h1 {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 1.12;
+  color: var(--bone);
+}
+.masthead h1 em { font-style: italic; color: #d08a7a; }
+.masthead .colophon { color: var(--bone-dim); font-size: 0.9rem; margin-top: 0.9rem; font-style: italic; font-family: "Palatino Linotype", Palatino, Georgia, serif; }
+
+/* Vine divider */
+.vine { margin: 0 auto; max-width: 26rem; padding: 0.5rem 0; }
+
+/* Nav */
+nav.main { border-top: 1px solid #2c352c; border-bottom: 1px solid #2c352c; }
+nav.main ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+nav.main a {
+  display: block;
+  padding: 0.9rem 1.2rem;
+  color: var(--bone-dim);
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+}
+nav.main a:hover, nav.main a[aria-current="page"] { color: #d08a7a; }
+
+/* Editorial hero */
+.hero { padding: 3rem 0 2.5rem; }
+.hero .drop {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.75;
+  color: var(--bone);
+}
+.hero .drop::first-letter {
+  font-size: 3.4em;
+  float: left;
+  line-height: 0.9;
+  padding-right: 0.12em;
+  color: #d08a7a;
+}
+.hero .standfirst {
+  margin-top: 1.5rem;
+  color: var(--bone-dim);
+  font-size: 0.98rem;
+}
+.rating {
+  display: inline-block;
+  margin-top: 1.5rem;
+  border: 1px solid var(--oxblood-bright);
+  color: #d08a7a;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  padding: 0.5rem 1.2rem;
+  font-family: "Palatino Linotype", Palatino, Georgia, serif;
+  font-style: italic;
+}
+
+/* Buttons */
+.cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.9rem 1.9rem;
+}
+.btn-solid { background: var(--oxblood); color: var(--bone); }
+.btn-solid:hover { background: var(--oxblood-bright); }
+.btn-ghost { border: 1px solid #4a554a; color: var(--bone); }
+.btn-ghost:hover { border-color: #d08a7a; color: #d08a7a; }
+.fine { font-size: 0.88rem; color: var(--bone-dim); margin-top: 0.9rem; }
+
+/* Sections */
+section.block { padding: 2.75rem 0; }
+h2.chapter-title {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.9rem;
+  color: var(--bone);
+  margin-bottom: 1.25rem;
+}
+.eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--bone-dim);
+  margin-bottom: 0.6rem;
+}
+
+/* Service entries, editorial */
+.service-entry { margin-bottom: 1.75rem; padding-bottom: 1.75rem; border-bottom: 1px solid #2c352c; }
+.service-entry:last-child { border-bottom: none; }
+.service-entry h3 {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--bone);
+  margin-bottom: 0.3rem;
+}
+.service-entry p { color: var(--bone-dim); font-size: 0.96rem; }
+.service-entry .range { color: #d08a7a; font-family: "Palatino Linotype", Palatino, Georgia, serif; font-style: italic; }
+
+/* Callout panel */
+.callout {
+  border: 1px solid var(--oxblood-bright);
+  background: var(--thorn-2);
+  padding: 1.75rem;
+}
+.callout h3 {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--bone);
+  margin-bottom: 0.6rem;
+}
+.callout p { color: var(--bone-dim); }
+
+/* Landmark */
+.landmark { border-left: 3px solid var(--oxblood-bright); padding-left: 1.25rem; color: var(--bone-dim); }
+.landmark strong { color: var(--bone); font-weight: 600; }
+
+/* Hours */
+.hours { list-style: none; }
+.hours li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid #2c352c;
+  color: var(--bone-dim);
+}
+.hours li span:first-child { color: var(--bone); font-family: "Palatino Linotype", Palatino, Georgia, serif; }
+.note { color: var(--bone-dim); font-size: 0.92rem; margin-top: 1.25rem; font-style: italic; font-family: "Palatino Linotype", Palatino, Georgia, serif; }
+
+/* Gallery */
+.shot { margin-bottom: 2.5rem; }
+.shot figure { border: 1px solid #2c352c; background: var(--thorn-2); padding: 0.7rem; }
+.shot figcaption { padding: 0.85rem 0.25rem 0.25rem; color: var(--bone-dim); font-size: 0.9rem; }
+.shot figcaption strong { color: #d08a7a; font-family: "Palatino Linotype", Palatino, Georgia, serif; font-style: italic; font-weight: 400; }
+
+/* Visit */
+.visit-card { border: 1px solid #2c352c; background: var(--thorn-2); padding: 1.75rem; text-align: center; }
+.visit-card address { font-style: normal; color: var(--bone); font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 1.15rem; margin-bottom: 0.6rem; }
+.visit-card .tel { font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 1.25rem; }
+
+/* Footer */
+footer {
+  border-top: 1px solid #2c352c;
+  margin-top: 2rem;
+  padding: 2rem 1.5rem 3rem;
+  text-align: center;
+  color: var(--bone-dim);
+  font-size: 0.82rem;
+}
+footer .fn { font-family: "Palatino Linotype", Palatino, Georgia, serif; font-style: italic; font-size: 1.1rem; color: var(--bone); margin-bottom: 0.5rem; }
+footer nav { margin: 1rem 0; }
+footer nav a { margin: 0 0.6rem; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--bone-dim); }
+footer nav a:hover { color: #d08a7a; }
+
+@media (min-width: 720px) {
+  .masthead h1 { font-size: 3.6rem; }
+  .hero .drop { font-size: 1.5rem; }
+  .shot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .shot-grid .shot { margin-bottom: 0; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
+}

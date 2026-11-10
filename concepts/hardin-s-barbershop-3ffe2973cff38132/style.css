@@ -1,0 +1,243 @@
+/* Hardin's Barbershop - vintage ledger, black/cream/brass */
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --ink: #171208;
+  --ink-soft: #2b2317;
+  --paper: #f4ead3;
+  --paper-card: #efe2c6;
+  --brass: #a8813c;
+  --brass-deep: #7d5f28;
+  --line: #cfb98d;
+  --muted: #6b5c43;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: 'Spectral', Georgia, serif;
+  background: var(--ink);
+  color: var(--paper);
+  line-height: 1.65;
+  font-size: 17.5px;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: var(--brass); }
+a:hover { color: #c9a356; }
+
+.disclosure {
+  background: #000;
+  color: var(--brass);
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--brass-deep);
+}
+
+.paper {
+  background: var(--paper);
+  color: var(--ink);
+}
+.paper a { color: var(--brass-deep); }
+.paper a:hover { color: #5d471d; }
+
+.wrap { max-width: 1020px; margin: 0 auto; padding: 0 26px; }
+
+/* masthead */
+.masthead {
+  text-align: center;
+  padding: 44px 24px 30px;
+}
+.masthead .mark {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 18px;
+  border: 2px solid var(--brass);
+  border-radius: 50%;
+  overflow: hidden;
+  background: #000;
+}
+.masthead .mark img { width: 100%; height: 100%; object-fit: cover; }
+.masthead h1 {
+  font-family: 'Pirata One', 'Old English Text MT', serif;
+  font-size: clamp(46px, 7vw, 84px);
+  line-height: 1;
+  color: var(--paper);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.masthead .sub {
+  margin-top: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+/* nav */
+nav.main { border-top: 1px solid #332a1a; border-bottom: 1px solid #332a1a; }
+nav.main ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 40px;
+  padding: 13px 24px;
+}
+nav.main a {
+  text-decoration: none;
+  color: var(--paper);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+nav.main a[aria-current="page"] { color: var(--brass); }
+
+/* hero */
+.hero { padding: 58px 0 64px; }
+.hero .eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin-bottom: 16px;
+}
+.hero h2 {
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.18;
+  font-weight: 500;
+  max-width: 24ch;
+  margin-bottom: 20px;
+}
+.hero p.stand { max-width: 60ch; color: #d8c9a8; font-size: 18.5px; }
+.rating {
+  display: inline-block;
+  margin-top: 22px;
+  border: 1px solid var(--brass-deep);
+  padding: 8px 18px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13.5px;
+  letter-spacing: 0.06em;
+  color: var(--brass);
+}
+.rating strong { color: var(--paper); }
+.hero-figure { margin-top: 36px; border: 1px solid var(--brass-deep); }
+.hero-figure img { width: 100%; max-height: 520px; object-fit: cover; }
+
+.caption {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.02em;
+}
+.dark .caption, .hero .caption { color: #8f7d5c; }
+.caption .src { font-style: italic; }
+
+/* cta */
+.cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 15px 34px;
+}
+.btn-solid { background: var(--brass); color: #14100a; border: 2px solid var(--brass); }
+.btn-solid:hover { background: #c9a356; border-color: #c9a356; color: #14100a; }
+.btn-ghost { background: transparent; color: var(--paper); border: 2px solid var(--brass); }
+.btn-ghost:hover { background: var(--brass); color: #14100a; }
+.fine { margin-top: 16px; font-size: 15px; color: #8f7d5c; }
+
+/* ledger (services) */
+.ledger { padding: 64px 0; }
+.ledger h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.ledger .rule-double { border-top: 4px double var(--line); margin: 22px 0; }
+.ticket { list-style: none; }
+.ticket li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 18px;
+  padding: 20px 4px;
+  border-bottom: 1px solid var(--line);
+}
+.ticket .svc { font-size: 22px; font-weight: 600; }
+.ticket .svc small { display: block; font-weight: 400; font-size: 15.5px; color: #5c4c33; margin-top: 4px; max-width: 52ch; }
+.ticket .price {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 19px;
+  color: var(--brass-deep);
+  text-align: right;
+  white-space: nowrap;
+}
+.ticket .price small { display: block; font-size: 12.5px; color: var(--muted); letter-spacing: 0.08em; }
+
+/* craft strip */
+.craft { padding: 64px 0; }
+.craft-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+  align-items: center;
+}
+.craft-grid img { border: 1px solid var(--brass-deep); }
+.craft h2 { font-size: clamp(26px, 3.6vw, 40px); font-weight: 500; margin-bottom: 16px; }
+.craft p { color: #d8c9a8; margin-top: 14px; max-width: 56ch; }
+
+/* visit */
+.visit { padding: 64px 0; }
+.visit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin-top: 24px;
+}
+.visit-cell { background: var(--paper); padding: 32px; }
+.visit-cell h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--brass-deep);
+  margin-bottom: 14px;
+}
+.hours { list-style: none; }
+.hours li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 16px;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid #332a1a;
+  padding: 36px 24px 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #8f7d5c;
+}
+footer .fname { font-family: 'Pirata One', serif; font-size: 26px; color: var(--paper); margin-bottom: 10px; }
+footer p { max-width: 72ch; margin: 8px auto 0; }
+
+@media (max-width: 760px) {
+  .craft-grid { grid-template-columns: 1fr; gap: 28px; }
+  .visit-grid { grid-template-columns: 1fr; }
+  .ticket .price { font-size: 17px; }
+}

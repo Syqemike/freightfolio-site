@@ -1,0 +1,4 @@
+PHOTOS (all stock photos reused from the gyro-master-403e2973cff3813895 concept pool; none are photos of Austin's Habibi):
+- gyro.jpg: A gyro wrap. Stock photo, labeled as such on every page.
+- falafel.jpg: Falafel. Stock photo, labeled as such on every page.
+- shawarma.jpg: Shawarma. Stock photo, labeled as such on every page.

@@ -1,0 +1,23 @@
+Photo provenance: all images are Pexels stock photos (Pexels license: free to use,
+no attribution required). They are NOT photos of the actual business. Every caption
+on the site is labeled as a stock photo.
+
+photo-1.jpg = Pexels photo 3997384: Free Professional hand treatment features a stylish red manicure at a modern nail salon. Stock Photo
+  page: https://www.pexels.com/photo/person-with-red-nail-polish-3997384/
+  file: https://images.pexels.com/photos/3997384/pexels-photo-3997384.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-2.jpg = Pexels photo 16041439: Free Close-up of a professional manicure session with a nail file used by a beautician. Stock Photo
+  page: https://www.pexels.com/photo/nail-file-in-women-16041439/
+  file: https://images.pexels.com/photos/16041439/pexels-photo-16041439.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-3.jpg = Pexels photo 22668317: Free Close-up of a manicure in progress, showcasing hand and nail care techniques. Stock Photo
+  page: https://www.pexels.com/photo/woman-making-nails-at-beautician-22668317/
+  file: https://images.pexels.com/photos/22668317/pexels-photo-22668317.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-4.jpg = Pexels photo 3738377: Free Close-up of a manicure session with black gloves applying hand treatment in a salon setting. Stock Photo
+  page: https://www.pexels.com/photo/person-wearing-black-gloves-3738377/
+  file: https://images.pexels.com/photos/3738377/pexels-photo-3738377.jpeg?auto=compress&cs=tinysrgb&w=1260
+
+photo-5.jpg = Pexels photo 3997381: Free Close-up of red manicured nails during a salon session with nail tools. Stock Photo
+  page: https://www.pexels.com/photo/person-with-red-nail-polish-3997381/
+  file: https://images.pexels.com/photos/3997381/pexels-photo-3997381.jpeg?auto=compress&cs=tinysrgb&w=1260

@@ -1,0 +1,9 @@
+PHOTO PROVENANCE - DeVries Jewelry Store concept (Website Dev shift 2026-10-29 21:59 CT)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- img/hero.jpg: Charm bracelets worn on a wrist. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/aurum-jewelers-405e2973cff381e284/img
+
+- img/necklace.jpg: A diamond pendant necklace. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/aurum-jewelers-405e2973cff381e284/img
+
+- img/ring.jpg: A jeweled ring resting on a red rose. Stock photo. Source pool: /home/hatch/workspace/freightfolio-site/concepts/aurum-jewelers-405e2973cff381e284/img

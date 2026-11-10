@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - S2N Boutique concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- tshirts-window.jpg
+  Caption: Colorful t-shirts hanging in a store window. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/14534753/ . Stock photo, not a photo of this business.
+
+- sweaters-rack.jpg
+  Caption: Hands selecting colorful sweaters on a clothing rack in a boutique. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/8387807/ . Stock photo, not a photo of this business.
+
+- fitting-room.jpg
+  Caption: A modern clothing boutique with a fitting room mirror and hanging garments. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/7679757/ . Stock photo, not a photo of this business.
+
+- trendy-display.jpg
+  Caption: Trendy fashion displayed in an elegant boutique. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/5864245/ . Stock photo, not a photo of this business.
+

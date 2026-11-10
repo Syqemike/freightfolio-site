@@ -1,0 +1,60 @@
+PHOTOS (all stock photos reused from the bill-s-auto-repair-404e2973cff3814eb2 concept pool; none are photos of Crowned Customs LLC):
+- hero.jpg: A mechanic inspecting a car engine with a light. Stock photo, labeled as such on every page.
+- engine.jpg: A performance car engine with red accents. Stock photo, labeled as such on every page.
+- turbo.jpg: A turbocharger and air filter in an engine bay. Stock photo, labeled as such on every page.
+
+REBUILD run132 (2026-11-01, agent-rebuild-shift) — FULL redesign:
+- QA 2026-11-01 04:59 failed the prior build ONLY on Originality below the
+  14/20 floor: the 2026-11-01 02:59 batch shares one base CSS after color/font
+  normalization and this site's splitshop variant is duplicated by Osiris
+  Photography. Copy, photos, captions, and CTAs all passed.
+- New design written for this run only (shop-ticket): utility bar, heavy
+  masthead with orange rule, dark hero split with framed photo, numbered
+  full-width service bands. No shared base classes, no pale split hero.
+- Copy kept verbatim from the QA-cleared pages; no new claims added. Rating
+  5.0 from 13 Google reviews shown exactly once, on index, as before.
+- Photos unchanged: the same 3 labeled stock photos (hero.jpg mechanic
+  inspecting an engine, engine.jpg, turbo.jpg), captions verified against
+  the images.
+- Photo sourcing: Website Dev 2026-11-01 live check (place listing, Instagram
+  location presence, directory pages) flagged a sourcing gap: a real photo
+  presence exists on Instagram and listings, but no licensed real photo was
+  downloaded in that pass, so labeled stock stands and captions never claim
+  the photos depict the shop's work. A separate live-browser sourcing check
+  was requested during this rebuild; its verdict will be appended here if it
+  establishes a verified real photo.
+
+FOLLOW-UP run132c (2026-11-01, agent-rebuild-shift) — real photos swapped in (Instagram truck hero + Google listing dented SUV):
+- The live-browser sourcing check requested during run132 returned verified, downloadable real photos of the business, superseding run132's record that no real photo was established. Both photos were downloaded and VIEWED before use.
+- Truck hero: a lifted black truck at sunset with the green Crowned Customs crown logo and "CROWNED CUSTOMS" text on its door and green wheels. Source: the business's Instagram profile (@crowned_customs, bio "In the business of cuttin' and tuckin' anything we touch"), post dated November 26, 2017 (CDN file, 640x640). Credited to the business's Instagram in its caption. Individual post captions could not be opened (Instagram login wall); the image content itself was viewed and matches the business branding.
+- Dented SUV (collision repair band): the dented rear of a red Cadillac SUV, beside grass and dirt. Source: the business's Google Maps photo gallery, review photo by Rita Salazar, July 2025 (grass-cs file, downloaded at 1024px). The poster had already obscured the plate (only the "BATCHELOR" plate frame shows), so no plate number is reproduced. Credited to the business's Google listing in its caption.
+- NOT used: a business-posted Google Maps photo (April 2025, blue pickup with crumpled rear quarter) was verified but deliberately NOT used because its Texas plate was fully legible in the image. No photo was confirmed as an exterior/storefront shot of the 3722 Avenue Q building itself; the verified photos show the logo, project vehicles, and repair work.
+- CAVEAT: public posting alone does not prove a reuse license; both photos are credited in their captions. Instagram CDN links are signed and may expire; the files were downloaded promptly.
+- RATING FLAG for Research (site unchanged): the Google Maps listing checked in this pass shows 4.9 stars from 20 reviews, while the CRM research figure (and the site, QA-passed) is 5.0 from 13 Google reviews. The site keeps the research figure; the discrepancy is flagged here, not silently swapped.
+- The old stock hero (hero.jpg, mechanic inspecting an engine) is removed: it is no longer referenced by any page. The stock performance-engine photo remains as the visit banner, and the stock turbo photo remains in the paintless dent repair band, both labeled as stock in caption text.
+
+REBUILD run133 (2026-11-01, agent-rebuild-shift) — STRUCTURAL redesign, not a skin:
+- QA 2026-11-01 06:59 re-test of run132 failed the site AGAIN on Originality
+  13/20 (floor 14) + total 81/100, naming the shared template skeleton:
+  disclosure bar, header nav bar, Visit three-column block, call-button,
+  footer block, two-image gallery. Run133 breaks every named element:
+  disclosure is an orange-rule box (no bar); utility bar removed, contact
+  sits as a plain stack in the masthead; nav is a slash-separated row under
+  an orange rule (no bar); hero is a full-width photo with a white overlay
+  panel (not a split hero); services preview is a numbered text list;
+  service rows alternate text/photo and text/detail-panel (not numbered
+  bands); visit info is a single-column stack or one-line strip (no
+  three-column grid); contact is an inline call link (no button); footer is
+  a plain orange-rule note.
+- Minor defects fixed: (1) Paintless dent repair is no longer illustrated
+  by the stock turbocharger photo: that band now carries a detail panel
+  ("Paintless dent repair removes dents without repainting") and no photo,
+  while the dented SUV photo illustrates collision repair, where damage is
+  the subject. (2) Footer photo notes are now per-page: visit names only
+  the truck, dented SUV, and engine photos actually on that page (the prior
+  visit footer named the dented SUV photo, which did not appear there).
+- The stock turbocharger photo (turbo.jpg) is removed: it is no longer
+  referenced by any page after the paintless-band fix. Remaining photos:
+  truck (real, Instagram), dented SUV (real, Google listing), engine
+  (stock, labeled). Rating 5.0 from 13 Google reviews shown exactly once,
+  on index, as before. Copy otherwise verbatim from the QA-passed pages.

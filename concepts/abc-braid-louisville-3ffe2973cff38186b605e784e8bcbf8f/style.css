@@ -1,0 +1,78 @@
+/* ABC BRAID louisville concept - vibrant braiding studio editorial */
+:root{
+  --cream:#fbf2e3;
+  --cream-deep:#f3e6cd;
+  --plum:#2c1227;
+  --plum-soft:#5a3a54;
+  --amber:#e79a2f;
+  --amber-bright:#f5b545;
+  --leaf:#3f7d5d;
+  --line:#e2cfa8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--cream);color:var(--plum);line-height:1.65;font-size:17px;
+}
+.serif{font-family:Georgia,"Iowan Old Style","Times New Roman",serif}
+.preview-banner{
+  background:var(--plum);color:var(--amber-bright);text-align:center;
+  font-size:12px;letter-spacing:3px;text-transform:uppercase;padding:9px 12px;font-weight:700;
+}
+.preview-banner a{color:var(--amber-bright)}
+.site-header{background:var(--plum);color:var(--cream)}
+.header-inner{max-width:1220px;margin:0 auto;padding:24px 26px 20px;display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between}
+.brand{font-family:Georgia,"Times New Roman",serif;font-size:32px}
+.brand em{color:var(--amber-bright);font-style:normal}
+nav.main-nav{display:flex;flex-wrap:wrap;gap:6px 24px;font-size:15px;font-weight:600}
+nav.main-nav a{color:var(--cream);text-decoration:none;padding-bottom:3px;border-bottom:2px solid transparent}
+nav.main-nav a:hover{color:var(--amber-bright);border-bottom-color:var(--amber-bright)}
+nav.main-nav a.current{color:var(--amber-bright);border-bottom-color:var(--amber-bright)}
+.wrap{max-width:1220px;margin:0 auto;padding:0 26px}
+.hero{padding:66px 0 60px;display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+.eyebrow{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--leaf);font-weight:700;margin-bottom:14px}
+h1.headline{font-family:Georgia,"Times New Roman",serif;font-size:clamp(40px,5.4vw,68px);line-height:1.05;margin-bottom:20px}
+h1.headline em{color:var(--amber);font-style:italic}
+.lede{font-size:19px;color:var(--plum-soft);max-width:44ch;margin-bottom:26px}
+.hero-img{border-radius:14px;overflow:hidden;border:3px solid var(--plum);box-shadow:10px 10px 0 var(--amber)}
+.hero-img img{width:100%;display:block}
+.photo-cap{font-size:13px;color:var(--plum-soft);margin-top:9px;font-style:italic}
+.photo-cap .stock{background:var(--cream-deep);border:1px solid var(--line);border-radius:4px;padding:1px 8px;font-style:normal;font-size:12px;color:var(--plum)}
+.btn{display:inline-block;background:var(--plum);color:var(--cream);text-decoration:none;padding:14px 30px;border-radius:8px;font-weight:700;font-size:16px;border:2px solid var(--plum)}
+.btn:hover{background:var(--amber);border-color:var(--amber);color:var(--plum)}
+.btn.ghost{background:transparent;color:var(--plum);border-color:var(--plum)}
+.btn.ghost:hover{background:var(--plum);color:var(--cream)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+.plum-band{background:var(--plum);color:var(--cream);border-radius:14px;padding:52px 48px;margin:60px 0}
+.plum-band h2{font-family:Georgia,serif;font-size:clamp(28px,3.4vw,42px);margin-bottom:12px}
+.plum-band p{color:#d9c6d2}
+.style-list{list-style:none;margin-top:26px}
+.style-list li{display:flex;gap:18px;align-items:baseline;padding:15px 0;border-bottom:1px solid #4a2a44}
+.style-list .num{font-family:Georgia,serif;color:var(--amber-bright);font-size:15px;min-width:34px}
+.style-list h3{font-family:Georgia,serif;font-size:22px;font-weight:normal}
+.style-list p{font-size:15px;color:#cdb7c6}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:30px}
+.trio .card:nth-child(2){transform:translateY(26px)}
+.card{background:#fffdf6;border:2px solid var(--plum);border-radius:12px;padding:26px;box-shadow:6px 6px 0 var(--cream-deep)}
+.card h3{font-family:Georgia,serif;font-size:22px;margin-bottom:8px}
+.hours-strip{display:flex;flex-wrap:wrap;gap:10px 30px;background:var(--cream-deep);border:2px solid var(--plum);border-radius:10px;padding:18px 24px;font-weight:600;margin-top:22px}
+.big-phone{font-family:Georgia,serif;font-size:36px;color:var(--plum);text-decoration:none}
+.big-phone:hover{color:var(--amber)}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:28px}
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:26px;margin-top:30px}
+.g-item{grid-column:span 6}
+.g-item img{width:100%;border-radius:12px;border:2px solid var(--plum);display:block}
+.g-item:nth-child(3){grid-column:span 7}
+.g-item:nth-child(4){grid-column:span 5;margin-top:40px}
+.site-footer{background:var(--plum);color:#d9c6d2;margin-top:70px;padding:36px 26px}
+.footer-inner{max-width:1220px;margin:0 auto;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;font-size:14px}
+.site-footer a{color:var(--amber-bright)}
+.disclosure{background:#fffdf6;border:2px solid var(--plum);border-left:8px solid var(--amber);padding:16px 20px;border-radius:8px;font-size:15px;margin:28px 0;color:var(--plum-soft)}
+@media(max-width:840px){
+  .hero{grid-template-columns:1fr;gap:30px}
+  .trio{grid-template-columns:1fr}
+  .trio .card:nth-child(2){transform:none}
+  .visit-grid{grid-template-columns:1fr}
+  .g-item,.g-item:nth-child(3),.g-item:nth-child(4){grid-column:span 12;margin-top:0}
+  .plum-band{padding:34px 26px}
+}

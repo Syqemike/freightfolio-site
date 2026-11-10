@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Robs Speed Shop | Performance Auto · Boise, ID</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--blk:#101010;--blk2:#181818;--red:#e10600;--red2:#a80400;--steel:#9aa0a8;--cream:#f4f2ec;--ink:#1c1c1c;--line:#2c2c2c}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--blk);color:var(--cream);line-height:1.6}
+  .disclosure{background:#080808;color:#7d7a72;text-align:center;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;padding:9px 16px;border-bottom:1px solid var(--line)}
+  .disclosure a{color:var(--red)}
+  header.site{background:rgba(16,16,16,.94);backdrop-filter:blur(8px);position:sticky;top:0;z-index:50;
+    border-bottom:3px solid var(--red)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+  .brand{font-family:'Archivo',sans-serif;font-weight:900;font-size:22px;color:#fff;text-decoration:none;
+    letter-spacing:.02em;text-transform:uppercase;font-style:italic}
+  .brand span{color:var(--red)}
+  .navlinks{display:flex;gap:24px;list-style:none}
+  .navlinks a{color:#cfc9b8;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--red)}
+  .btn{display:inline-block;background:var(--red);color:#fff;font-family:'Archivo',sans-serif;font-weight:800;font-style:italic;
+    text-decoration:none;padding:14px 32px;letter-spacing:.06em;text-transform:uppercase;font-size:15px;
+    clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);transition:background .15s ease}
+  .btn:hover{background:var(--red2)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .hero{position:relative;min-height:600px;display:flex;align-items:flex-end;color:#fff}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,.35),rgba(8,8,8,.92) 80%)}
+  .hero-inner{position:relative;z-index:1;padding:70px 0 56px;width:100%}
+  .kicker{display:inline-block;background:var(--red);font-family:'Archivo',sans-serif;font-weight:800;font-style:italic;
+    font-size:13px;letter-spacing:.18em;text-transform:uppercase;padding:8px 18px;margin-bottom:16px;
+    clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+  h1{font-family:'Archivo',sans-serif;font-weight:900;font-style:italic;font-size:clamp(46px,7vw,88px);line-height:.95;
+    text-transform:uppercase;margin-bottom:14px}
+  .lede{font-size:18px;color:#d8d2c2;max-width:34em;margin-bottom:14px}
+  .rating{display:inline-block;border:1px solid var(--red);padding:10px 20px;margin:12px 0 22px;font-weight:600;background:rgba(8,8,8,.5)}
+  .rating .stars{color:var(--red);letter-spacing:2px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero .cap{position:absolute;bottom:10px;right:18px;z-index:2;font-size:12px;color:#8f8a7d}
+  .marquee{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0}
+  .marquee span{font-family:'Archivo',sans-serif;font-weight:900;font-style:italic;font-size:18px;text-transform:uppercase;margin:0 24px}
+  section{padding:66px 0}
+  .sec-head{margin-bottom:34px;max-width:660px}
+  .sec-head h2{font-family:'Archivo',sans-serif;font-weight:900;font-style:italic;font-size:clamp(32px,4.6vw,52px);
+    text-transform:uppercase;margin-bottom:10px}
+  .sec-head p{font-size:17px;color:#b9b2a2}
+  .brands{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+  .brands span{border:2px solid var(--red);color:#fff;font-family:'Archivo',sans-serif;font-weight:800;font-style:italic;
+    font-size:15px;text-transform:uppercase;padding:10px 22px;background:var(--blk2)}
+  .services{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .svc{background:var(--blk2);border:1px solid var(--line);border-left:5px solid var(--red);padding:28px}
+  .svc h3{font-family:'Archivo',sans-serif;font-weight:800;font-style:italic;font-size:20px;text-transform:uppercase;margin-bottom:8px}
+  .svc p{font-size:15px;color:#b9b2a2}
+  .dyno{background:var(--cream);color:var(--ink)}
+  .dyno-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .dyno h2{font-family:'Archivo',sans-serif;font-weight:900;font-style:italic;font-size:clamp(30px,4vw,46px);
+    text-transform:uppercase;margin-bottom:12px}
+  .dyno h2 span{color:var(--red)}
+  .dyno p{font-size:17px;color:#3d3a32;margin-bottom:12px}
+  .dyno figure img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;border:3px solid var(--ink)}
+  .dyno .cap{color:#8a8474}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+  .gallery figure{border:1px solid var(--line);background:var(--blk2)}
+  .gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .gallery .cap{color:#7d7a72;padding:8px 10px}
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .vcard{background:var(--blk2);border:1px solid var(--line);padding:30px}
+  .vcard h3{font-family:'Archivo',sans-serif;font-weight:800;font-style:italic;font-size:20px;text-transform:uppercase;
+    margin-bottom:12px;color:var(--red)}
+  .hours-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .hours-row:last-child{border:none}
+  .vcard a{color:#fff;font-weight:600}
+  .vcard .btn{color:#fff}
+  .fine{font-size:13px;color:#7d7a72;margin-top:10px}
+  .cta-band{background:var(--red);text-align:center;padding:62px 0}
+  .cta-band h2{font-family:'Archivo',sans-serif;font-weight:900;font-style:italic;font-size:clamp(30px,4.8vw,56px);
+    text-transform:uppercase;margin-bottom:10px}
+  .cta-band p{font-size:18px;color:#ffe3e1;margin-bottom:24px}
+  .cta-band .btn{background:#fff;color:var(--red)}
+  footer{background:#080808;color:#7d7a72;padding:36px 0;font-size:14px;border-top:1px solid var(--line)}
+  footer a{color:var(--red)}
+  @media(max-width:900px){
+    .dyno-grid,.visit{grid-template-columns:1fr}
+    .services{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .navlinks{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="disclosure">Design Preview: a concept by <a href="https://freightfolio.net">Freightfolio</a>. This is not the shop's website.</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Robs <span>Speed</span> Shop</a>
+    <ul class="navlinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#dyno">Tuning</a></li>
+      <li><a href="#visit">Contact</a></li>
+    </ul>
+    <a class="btn" href="tel:+18017508673">Call (801) 750-8673</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="hero-bg"><img src="img/photo-1.jpg" alt="Stock photo: red sports car with open hood in a garage"></div>
+    <span class="cap">Stock photo: sports car in garage</span>
+    <div class="hero-inner">
+      <div class="wrap">
+        <span class="kicker">Boise, ID · Performance Shop</span>
+        <h1>Performance work for your ride.</h1>
+        <p class="lede">Robs Speed Shop lists performance and repair services in Boise, including installation, maintenance, street tuning, and dyno tuning for imports and motorcycles.</p>
+        <div class="rating"><span class="stars">★★★★☆</span> 4.5 from 53 Google reviews</div>
+        <div class="hero-cta">
+          <a class="btn" href="tel:+18017508673">Call the Shop</a>
+          <a class="btn" href="#services" style="background:transparent;border:2px solid #fff;clip-path:none">Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <span>Subaru</span><span>Mitsubishi</span><span>Volkswagen</span><span>Audi</span><span>BMW</span><span>Motorcycles</span><span>Dyno Tuning</span>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>We speak your car's language</h2>
+        <p>Performance and repair services are listed for the vehicle makes shown here.</p>
+      </div>
+      <div class="brands">
+        <span>Subaru</span><span>Mitsubishi</span><span>Volkswagen</span><span>Audi</span><span>BMW</span><span>Motorcycles</span>
+      </div>
+      <div class="services">
+        <div class="svc"><h3>Performance installs</h3><p>Call the shop to ask about installation services for your vehicle.</p></div>
+        <div class="svc"><h3>Maintenance &amp; repair</h3><p>Maintenance and repair services are listed for the vehicle makes above.</p></div>
+        <div class="svc"><h3>Street tuning</h3><p>Street tuning is listed among the shop's services. Call to discuss your vehicle.</p></div>
+        <div class="svc"><h3>Dyno tuning</h3><p>Dyno tuning is listed among the shop's services. Call to discuss your vehicle.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dyno" class="dyno">
+    <div class="wrap dyno-grid">
+      <div>
+        <h2>Dyno <span>tuning.</span></h2>
+        <p>A dynamometer can measure a vehicle's output during tuning. Contact the shop to ask about dyno services for your vehicle.</p>
+        <p>Call the shop for current pricing and service details.</p>
+        <p style="margin-top:16px"><a class="btn" href="tel:+18017508673">Talk Tuning</a></p>
+      </div>
+      <figure>
+        <img src="img/photo-3.jpg" alt="Stock photo: high-performance car engine">
+        <figcaption class="cap">Stock photo: performance engine</figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <div class="gallery">
+        <figure><img src="img/photo-2.jpg" alt="Stock photo: custom cars with hoods open"><figcaption class="cap">Stock photo: custom builds</figcaption></figure>
+        <figure><img src="img/photo-4.jpg" alt="Stock photo: car engine with turbo filter"><figcaption class="cap">Stock photo: engine detail</figcaption></figure>
+        <figure><img src="img/photo-5.jpg" alt="Stock photo: sports car with hood open"><figcaption class="cap">Stock photo: sports car</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Roll <span style="color:var(--red)">through</span></h2>
+        <p>Call to talk about your build or book service.</p>
+      </div>
+      <div class="visit">
+        <div class="vcard">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Tuesday - Saturday</span><strong>9:00 AM - 8:00 PM</strong></div>
+          <div class="hours-row"><span>Sunday - Monday</span><strong>Not listed</strong></div>
+          <p class="fine">Hours as listed publicly. Call to confirm before you drive over.</p>
+        </div>
+        <div class="vcard">
+          <h3>Find the shop</h3>
+          <p><strong>Robs Speed Shop</strong><br>714 S Michael St<br>Boise, ID</p>
+          <p style="margin-top:10px">Phone: <a href="tel:+18017508673">(801) 750-8673</a></p>
+          <p style="margin-top:14px"><a class="btn" href="tel:+18017508673">Call the Shop</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Let's talk about your build.</h2>
+      <p>Call and tell us what you're driving and what you want from it.</p>
+      <a class="btn" href="tel:+18017508673">Call (801) 750-8673</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Design preview.</strong> This concept site was created by <a href="https://freightfolio.net">Freightfolio</a> as a design sample for Robs Speed Shop. It is not affiliated with or endorsed by the shop. Photos are stock photos, not photos of the shop.</p>
+  </div>
+</footer>
+</body>
+</html>

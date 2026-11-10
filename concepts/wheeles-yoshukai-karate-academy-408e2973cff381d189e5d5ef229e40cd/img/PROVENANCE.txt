@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Wheeles Yoshukai Karate Academy or its products, services, or premises.
+- hero.jpg: Stock photo: A woman doing squats with a barbell in a gym.
+- training.jpg: Stock photo: Athletes exercising on air bikes in a gym.
+- weights.jpg: Stock photo: Heavy dumbbells on a gym rack.

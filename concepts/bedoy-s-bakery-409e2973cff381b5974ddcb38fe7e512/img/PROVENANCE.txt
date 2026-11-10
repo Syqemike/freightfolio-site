@@ -1,0 +1,5 @@
+PHOTOS:
+- real-conchas.jpg: A box of pink and yellow conchas. REAL photo from the business's own site bedoysbakerysa.com (viewed before use; file compressed from the full-size original).
+- real-donuts.jpg: Chocolate-frosted donuts with sprinkles and nuts on a tray. REAL photo from the business's own site bedoysbakerysa.com (viewed before use; file compressed from the full-size original).
+- real-coffee.jpg: Glazed and chocolate-frosted donuts with coffee on a striped cloth. REAL photo from the business's own site bedoysbakerysa.com (viewed before use; file compressed from the full-size original).
+- bakery-display.jpg, panes-display.jpg: Stock photos, labeled as such on services/visit pages (unchanged).

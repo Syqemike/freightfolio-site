@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of Weatherby's Tree Service or its products, services, or premises.
+- hero.jpg: Stock photo: An arborist in a tree wearing a safety harness, holding ropes and a chainsaw.
+- street.jpg: Stock photo: Tall trees lining a neighborhood street in autumn.
+- logs.jpg: Stock photo: A person using a chainsaw to cut logs in a forest.

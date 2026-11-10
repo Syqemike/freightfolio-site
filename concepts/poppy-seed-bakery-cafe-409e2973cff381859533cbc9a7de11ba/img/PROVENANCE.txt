@@ -1,0 +1,5 @@
+PHOTOS (generic stock-style food photos, labeled as stock on every page; none are photos of Poppy Seed Bakery + Cafe):
+- croissants.jpg: A pile of butter croissants (Wikimedia Commons, Croissants au beurre). Viewed before use, rebuild run118. Replaces the Fate-Cakes-identical hero file.
+- pastry.jpg: A round glazed pastry topped with dried petals (Wikimedia Commons, Croissant supreme). Viewed before use, rebuild run118.
+- cinnamon-rolls.jpg: Cinnamon rolls baked in a round pan (Wikimedia Commons, Cinnamon rolls fully baked). Viewed before use, rebuild run118.
+Gallery is no longer byte-identical to Fate Cakes (all three files replaced).

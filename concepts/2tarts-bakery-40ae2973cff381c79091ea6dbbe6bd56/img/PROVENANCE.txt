@@ -1,0 +1,28 @@
+PHOTOS (all stock photos reused from the antoinette-bakery-cafe-406e2973cff381619b concept pool; none are photos of 2tarts Bakery):
+- hero.jpg: Baked goods under a glass cover in a bakery. Stock photo, labeled as such on every page.
+- cookies.jpg: Chocolate chip cookies with a French press of coffee on a wooden table. Stock photo, labeled as such on every page.
+- rolls.jpg: Cinnamon rolls on bakery racks. Stock photo, labeled as such on every page.
+
+REBUILD run131 (2026-11-01, agent-rebuild-shift) — QA 2026-11-01 defects fixed:
+- Full redesign: the centered cream template is replaced with a plum/cream
+  editorial design (full-width photo hero with overlaid headline panel,
+  asymmetric about split, dark plum menu band with ruled items, dark visit
+  band). Hero photo is now a full-width lead image, not a small stacked photo
+  below a centered headline.
+- Hero caption corrected to what the photo actually shows: baked squares
+  under a glass dome on a bakery counter, beside an espresso machine. The old
+  caption ("baked goods under a glass cover") was a loose match for the
+  rendered crop. Hero crop is positioned to keep the dome in frame.
+- Copy: service detail kept from the QA-cleared copy (QA: copy alone does not
+  fail this site). The sister names from the prior build were dropped: they do
+  not appear in the CRM research record, so only "sister-owned" is claimed.
+- Photos remain 3 labeled stock photos from the antoinette-bakery-cafe pool;
+  see the live-browser sourcing check recorded in the CRM rebuild entry.
+
+FOLLOW-UP run131b (2026-11-01, agent-rebuild-shift) — real storefront photo swapped in:
+- The late live-browser verdict (Google Maps listing for 2tarts Bakery, 139 N Castell Ave Ste 300, New Braunfels, TX 78130, phone (830) 387-4606, 2tarts.com) established a real, downloadable storefront photo, superseding run131's record that no real photo was established. The photo was downloaded and VIEWED before use: it shows the 2tarts Bakery storefront with the "2tarts BAKERY" sign, the door marked "sweet 300", and the building number 139.
+- Source: Google listing photo file https://lh3.googleusercontent.com/grass-cs/AABkmLftxuLUGwggrA6LMFANIXEwEBI213nEnUEAAMiP7O1_rEP910Lgk08jtvMsjqvg9jbC-P96m-put08XcFpoqayJh4bBsQBNQ4IAAD7vCr-s-YuS27mMy7YY-07CnKs_8AeNWkS9=w1024-h1365 (1024x1365, viewed 2026-11-01). Credited to the business Google listing in its caption.
+- CAVEAT: public posting alone does not prove a reuse license; the listing photo is credited in its caption.
+- The old stock hero (hero.jpg, glass dome) is removed: it is no longer referenced by any page. Gallery stock photos (cookies, rolls) remain, labeled as stock in caption text.
+- ALSO VERIFIED by the same browser check: Facebook page facebook.com/2tarts (16K followers, matching phone/website/address, photos grid of cakes, cupcakes, cookies); Instagram profile @2tartsbakery (28.3K followers, scratch bakery est. 2010, links to 2tarts.com, post grid viewable logged-out). Yelp was bot-blocked (DataDome) and remains unverified.
+- FLAG FOR RESEARCH: the live Google listing shows 4.4 from 1,627 reviews vs the research figure 4.6 from 590 kept on the site (QA did not cite rating as a defect). Research should confirm the current count before outreach.

@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - Belle Rive Boutique concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- pastel-boutique.jpg
+  Caption: A bright and airy boutique with pastel garments. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/8386651/ . Stock photo, not a photo of this business.
+
+- dresses-hangers.jpg
+  Caption: A collection of stylish dresses on hangers in a bright boutique. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/10689371/ . Stock photo, not a photo of this business.
+
+- chic-boutique.jpg
+  Caption: A chic boutique with an elegant clothing display. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/5531709/ . Stock photo, not a photo of this business.
+
+- mannequin-dress.jpg
+  Caption: A mannequin with a pink dress and a clothing rack in a boutique. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/8619007/ . Stock photo, not a photo of this business.
+

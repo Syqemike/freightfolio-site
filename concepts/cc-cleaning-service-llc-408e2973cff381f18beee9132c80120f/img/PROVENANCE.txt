@@ -1,0 +1,4 @@
+PHOTOS: all labeled stock photos reused from a verified concept pool; none are photos of CC Cleaning Service, LLC or its products, services, or premises.
+- hero.jpg: Stock photo: Cleaners in red overalls cleaning a modern interior.
+- sweep.jpg: Stock photo: A person sweeping a wooden floor with a broom and dustpan.
+- kitchen.jpg: Stock photo: A kitchen island with upholstered chairs.

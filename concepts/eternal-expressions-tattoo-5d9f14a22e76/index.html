@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Eternal Expressions Tattoo | Ocean Springs, MS</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --ink:#0e0d0c; --ink2:#151412; --bone:#efe9dc; --muted:#a39c8d;
+    --gold:#c9973f; --gold-dim:#7d5f2c; --line:#232220;
+  }
+  body { background:var(--ink); color:var(--bone); font-family:Georgia,'Times New Roman',serif; line-height:1.65; }
+  .sans { font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; }
+  a { color:inherit; text-decoration:none; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 28px; }
+
+  .topbar { background:#000; border-bottom:1px solid var(--line); font-size:13px; color:var(--muted); }
+  .topbar .wrap { display:flex; justify-content:space-between; padding-top:9px; padding-bottom:9px; }
+  .topbar a:hover { color:var(--gold); }
+
+  nav { position:sticky; top:0; background:rgba(14,13,12,.97); border-bottom:1px solid var(--line); z-index:10; }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; padding-top:15px; padding-bottom:15px; }
+  .brand { font-size:21px; letter-spacing:2px; }
+  .brand em { color:var(--gold); font-style:normal; }
+  .navlinks { display:flex; gap:28px; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .navlinks a { color:var(--muted); }
+  .navlinks a:hover { color:var(--gold); }
+  .btn { display:inline-block; background:var(--gold); color:#141310; padding:13px 28px; font-size:13px;
+         letter-spacing:1.5px; text-transform:uppercase; font-weight:700; border:none; cursor:pointer; }
+  .btn:hover { background:#dcae5c; }
+  .btn.ghost { background:transparent; color:var(--gold); border:1px solid var(--gold); }
+  .btn.ghost:hover { background:rgba(201,151,63,.12); }
+
+  .hero { padding:104px 28px 88px; text-align:center;
+          background:radial-gradient(ellipse 72% 58% at 50% 28%, #1e1a12 0%, var(--ink) 72%); }
+  .hero .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:20px; }
+  .hero h1 { font-size:62px; line-height:1.1; font-weight:400; margin-bottom:20px; }
+  .hero p.lead { color:var(--muted); font-size:18px; max-width:620px; margin:0 auto 34px; }
+  .hero .cta-row { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+  .stars { margin-top:26px; color:var(--gold); letter-spacing:3px; font-size:15px; }
+  .stars span { color:var(--muted); letter-spacing:1px; }
+
+  .trust { border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--ink2); }
+  .trust .wrap { display:flex; justify-content:space-between; padding-top:19px; padding-bottom:19px;
+                 font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); flex-wrap:wrap; gap:10px; }
+  .trust b { color:var(--gold); font-weight:400; }
+
+  section { padding:80px 0; }
+  .sec-head { margin-bottom:48px; max-width:720px; }
+  .sec-head.center { text-align:center; margin-left:auto; margin-right:auto; }
+  .sec-head .kicker { color:var(--gold); letter-spacing:4px; font-size:12px; text-transform:uppercase; margin-bottom:12px; }
+  .sec-head h2 { font-size:40px; font-weight:400; line-height:1.15; }
+  .sec-head p { color:var(--muted); margin-top:12px; font-size:17px; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .card { background:var(--ink2); border:1px solid var(--line); padding:34px 30px; }
+  .card:hover { border-color:var(--gold-dim); }
+  .card h3 { font-size:22px; font-weight:400; margin-bottom:10px; }
+  .card h3 span { color:var(--gold); margin-right:10px; font-size:16px; }
+  .card p { color:var(--muted); font-size:15px; }
+
+  .artists { background:var(--ink2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .artist-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:16px; text-align:center; }
+  .artist .face { width:104px; height:104px; border-radius:50%; margin:0 auto 14px;
+                  border:1px solid var(--gold-dim); display:flex; align-items:center; justify-content:center;
+                  font-size:30px; color:var(--gold); background:#0b0a09; }
+  .artist h4 { font-size:17px; font-weight:400; }
+  .artist p { color:var(--muted); font-size:12px; letter-spacing:1px; text-transform:uppercase; }
+
+  .gal { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .tile { background:#0b0a09; border:1px solid var(--line); overflow:hidden; }
+  .tile:hover { border-color:var(--gold-dim); }
+  .tile img { width:100%; aspect-ratio:1; object-fit:cover; display:block; }
+  .tile .cap { padding:14px 16px 16px; font-size:14px; color:var(--muted); font-style:italic; }
+  .tile .cap small { display:block; font-style:normal; color:var(--gold); font-size:11px; letter-spacing:2px; text-transform:uppercase; margin-bottom:4px; }
+  .gal-note { text-align:center; color:var(--muted); margin-top:24px; font-size:15px; }
+  .gal-note a { color:var(--gold); }
+
+  .reviews { background:var(--ink2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .rev-track { display:flex; gap:18px; overflow-x:auto; scroll-snap-type:x mandatory;
+    padding:6px 4px 18px; -webkit-overflow-scrolling:touch; }
+  .rev-track::-webkit-scrollbar { height:8px; }
+  .rev-track::-webkit-scrollbar-track { background:#0b0a09; }
+  .rev-track::-webkit-scrollbar-thumb { background:var(--gold-dim); }
+  .rev { flex:0 0 330px; scroll-snap-align:start; background:var(--ink);
+    border:1px solid var(--line); padding:30px 28px; display:flex; flex-direction:column; }
+  .rev .stars5 { color:var(--gold); letter-spacing:3px; font-size:13px; margin-bottom:14px; }
+  .scroll-hint { text-align:right; color:var(--muted); font-size:13px; letter-spacing:1px; margin-bottom:8px; }
+  .rev .q { font-size:19px; font-style:italic; line-height:1.6; margin-bottom:18px; }
+  .rev .who { color:var(--gold); font-size:13px; letter-spacing:1.5px; text-transform:uppercase; }
+  .rev .who span { color:var(--muted); letter-spacing:0; text-transform:none; }
+
+  .visit-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+  .hours { width:100%; border-collapse:collapse; font-size:16px; }
+  .hours td { padding:11px 4px; border-bottom:1px solid var(--line); }
+  .hours td:last-child { text-align:right; color:var(--muted); }
+  .contact-block h3 { font-size:26px; font-weight:400; margin-bottom:16px; }
+  .contact-block p { color:var(--muted); margin-bottom:8px; font-size:16px; }
+  .contact-block p b { color:var(--bone); font-weight:400; }
+  .mapbtn { margin-top:20px; }
+
+  footer { border-top:1px solid var(--line); padding:32px 0; text-align:center; color:var(--muted); font-size:13px; }
+  footer .fine { margin-top:10px; font-size:11px; opacity:.6; font-style:italic; }
+
+  @media (max-width:860px) {
+    .hero h1 { font-size:38px; }
+    .cards, .visit-grid { grid-template-columns:1fr; }
+    .rev { flex:0 0 270px; }
+    .artist-grid { grid-template-columns:repeat(2,1fr); }
+    .gal { grid-template-columns:repeat(2,1fr); }
+    .navlinks { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar sans"><div class="wrap">
+  <span>2752 Bienville Blvd, Ocean Springs, MS</span>
+  <span><a href="tel:+12288720706">(228) 872-0706</a> &nbsp;&middot;&nbsp; Tue to Sat</span>
+</div></div>
+
+<nav><div class="wrap">
+  <div class="brand">ETERNAL <em>EXPRESSIONS</em></div>
+  <div class="navlinks sans">
+    <a href="#services">Services</a><a href="#artists">Artists</a>
+    <a href="#work">Work</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+  </div>
+  <a class="btn sans" href="tel:+12288720706">Book a Consult</a>
+</div></nav>
+
+<header class="hero">
+  <div class="kicker sans">Tattoo shop in Ocean Springs, Mississippi</div>
+  <h1>Custom tattoos since 1991.</h1>
+  <p class="lead">Plenty of shops rush you in and out. We have never worked like that. You get an artist who takes the time to get it right.</p>
+  <div class="cta-row sans">
+    <a class="btn" href="tel:+12288720706">Call (228) 872-0706</a>
+    <a class="btn ghost" href="#work">See the Work</a>
+  </div>
+  <div class="stars sans">★★★★★ <span>4.9 from 154 Google reviews</span></div>
+</header>
+
+<div class="trust sans"><div class="wrap">
+  <span><b>Licensed</b> by the Health Dept.</span>
+  <span><b>40+ years</b> combined experience</span>
+  <span><b>Walk-ins</b> welcome Tue to Sat</span>
+  <span><b>Free</b> consultations</span>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker sans">What we do</div>
+    <h2>Tattoos and piercings</h2>
+    <p>One shop, five artists, no rush jobs.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><h3><span>01</span>Custom tattoos</h3><p>Bring your idea and we will draw it up with you. Every piece is drawn for the person wearing it. Nothing off the wall unless you ask for it.</p></div>
+    <div class="card"><h3><span>02</span>Cover-ups</h3><p>Got ink you do not love anymore? We do a lot of cover-ups. Bring it in and we will tell you straight what we can do with it.</p></div>
+    <div class="card"><h3><span>03</span>Walk-ins</h3><p>Smaller piece in mind? Walk in Tuesday through Saturday. First come, first served.</p></div>
+    <div class="card"><h3><span>04</span>Consultations</h3><p>Thinking about something bigger? Consults are free. We will talk placement, size, and price before anything touches skin.</p></div>
+    <div class="card"><h3><span>05</span>Piercings</h3><p>We do piercings too. Same clean shop, same standard of care.</p></div>
+    <div class="card"><h3><span>06</span>Aftercare</h3><p>You will leave knowing exactly how to heal it right. If something looks off while it heals, call us.</p></div>
+  </div>
+</div></section>
+
+<section id="artists" class="artists"><div class="wrap">
+  <div class="sec-head center">
+    <div class="kicker sans">Who you will meet</div>
+    <h2>The artists</h2>
+    <p>Forty years combined behind the needle.</p>
+  </div>
+  <div class="artist-grid">
+    <div class="artist"><div class="face">JB</div><h4>Jason Block</h4><p>Owner</p></div>
+    <div class="artist"><div class="face">CN</div><h4>Chris Newbaker</h4><p>Artist</p></div>
+    <div class="artist"><div class="face">TD</div><h4>Tom Donovan</h4><p>Artist</p></div>
+    <div class="artist"><div class="face">PM</div><h4>Phillip McMillian</h4><p>Artist</p></div>
+    <div class="artist"><div class="face">MS</div><h4>Matt Stebly</h4><p>Artist</p></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker sans">Fresh off the needle</div>
+    <h2>Recent work</h2>
+    <p>Straight from the shop Instagram. New pieces go up there first.</p>
+  </div>
+  <div class="gal">
+    <div class="tile"><img src="img/1.jpg" alt="Dragonfly tattoos by Jason Block"><div class="cap"><small>Jason</small>&ldquo;A couple cool little dragonflies I did several days ago.&rdquo;</div></div>
+    <div class="tile"><img src="img/2.jpg" alt="Moon phases and flower tattoo"><div class="cap"><small>Jason</small>&ldquo;Phases of the moon, and flower design I did a couple days ago&rdquo;</div></div>
+    <div class="tile"><img src="img/3.jpg" alt="Red sun tattoo"><div class="cap"><small>Jason</small>&ldquo;Red sun tattoo I did yesterday&rdquo;</div></div>
+    <div class="tile"><img src="img/4.jpg" alt="Watercolor name tattoo"><div class="cap"><small>Jason</small>&ldquo;Cool watercolor name tattoo I did couple days ago&rdquo;</div></div>
+    <div class="tile"><img src="img/5.jpg" alt="Rose cover-up tattoo"><div class="cap"><small>Jason</small>&ldquo;Rose covering up old lizard design&rdquo;</div></div>
+    <div class="tile"><a href="https://www.instagram.com/jasonblocktattoo" style="display:block; aspect-ratio:1; display:flex; align-items:center; justify-content:center; background:#0b0a09;"><span class="sans" style="color:var(--gold); letter-spacing:2px; font-size:13px; text-transform:uppercase; text-align:center; padding:20px;">See hundreds more<br>on Instagram &rarr;</span></a></div>
+  </div>
+  <p class="gal-note">Photos are the shop&rsquo;s own, pulled from <a href="https://www.instagram.com/jasonblocktattoo">@jasonblocktattoo</a>.</p>
+</div></section>
+
+<section id="reviews" class="reviews"><div class="wrap">
+<div class="sec-head">
+    <div class="kicker sans">What people say</div>
+    <h2>154 reviews, 4.9 stars</h2>
+  </div>
+  <div class="scroll-hint sans">Swipe or scroll &rarr;</div>
+  <div class="rev-track">
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Jason Block is a top tier artist with unbelievable talent. He is funny, he is one of the best you will ever meet.&rdquo;</p><div class="who sans">Philip <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Absolutely love this shop. We went to a few other shops in the area and by far this was the best and most professional.&rdquo;</p><div class="who sans">Lauren K. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;I got my first two tattoos from Jason, and he definitely made me feel at home! Great service and great quality tattoos!&rdquo;</p><div class="who sans">Morgan H. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;I have worked with Jason Block for years and he is a great guy to know. If you want a phenomenal tattoo I highly suggest him. Very decent price for the work.&rdquo;</p><div class="who sans">Philip M. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Just got my second tattoo done here. Chris did an amazing job, I could not be happier with it!&rdquo;</p><div class="who sans">Bri-anna K. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Excellent detail work by Chris, great atmosphere and conversation. They aim to please. I will be back for another tattoo.&rdquo;</p><div class="who sans">Deborah Z. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Jason Block is the man! Thanks buddy, can not wait for it to be completed!&rdquo;</p><div class="who sans">Tiger E. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Great little shop to go one on one with your artist. Pushes out some very clean work! A must go to shop!&rdquo;</p><div class="who sans">Timmy V. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Got my first tattoo here. Chris did an excellent job of drawing up exactly what I wanted. I will definitely be a returning customer.&rdquo;</p><div class="who sans">Pam P. <span>Google review</span></div></div>
+    <div class="rev"><div class="stars5 sans">★★★★★</div><p class="q">&ldquo;Jason and Chris are good artists. Did some tight work for a very fair price. Will be back when in town.&rdquo;</p><div class="who sans">Joe G. <span>Google review</span></div></div>
+  </div>
+</div></section>
+
+<section id="visit"><div class="wrap">
+  <div class="sec-head">
+    <div class="kicker sans">Come see us</div>
+    <h2>The shop</h2>
+  </div>
+  <div class="visit-grid">
+    <div class="contact-block">
+      <h3>Eternal Expressions Tattoo</h3>
+      <p><b>2752 Bienville Blvd</b><br>Ocean Springs, MS 39564</p>
+      <p><b>(228) 872-0706</b> or <b>(228) 697-1535</b></p>
+      <p>Call or DM to book. Walk-ins welcome.</p>
+      <p style="margin-top:14px"><a href="https://www.instagram.com/jasonblocktattoo" style="color:var(--gold)">Follow the shop on Instagram</a></p>
+      <div class="mapbtn sans"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Eternal+Expressions+Tattoo+Ocean+Springs+MS">Get Directions</a></div>
+    </div>
+    <div>
+      <table class="hours sans">
+        <tr><td>Tuesday</td><td>12:00 PM to 9:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>12:00 PM to 9:00 PM</td></tr>
+        <tr><td>Thursday</td><td>12:00 PM to 9:00 PM</td></tr>
+        <tr><td>Friday</td><td>12:00 PM to 9:00 PM</td></tr>
+        <tr><td>Saturday</td><td>12:00 PM to 8:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+        <tr><td>Monday</td><td>Closed</td></tr>
+      </table>
+    </div>
+  </div>
+</div></section>
+
+<footer class="sans">
+  <div class="wrap">
+    <div>ETERNAL <span style="color:var(--gold)">EXPRESSIONS</span> TATTOO &middot; Ocean Springs, MS &middot; (228) 872-0706</div>
+    <div class="fine">Concept preview. A free mockup, not affiliated with or endorsed by the business.</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Relentless Ink Tattoo | Appointment-Only Custom Tattoo Studio in Wichita, KS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --espresso:#201510;
+    --espresso-deep:#150d09;
+    --cream:#f6efe1;
+    --cream-dim:#d9cdb4;
+    --brass:#b08a3e;
+    --brass-soft:#d8b96a;
+    --smoke:#9a8c74;
+    --line:#3a2b1e;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Jost",system-ui,sans-serif;background:var(--espresso);color:var(--cream);line-height:1.7;font-weight:300;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  h1,h2,h3{font-family:"Playfair Display",serif;font-weight:600;line-height:1.1}
+  h1 em,h2 em{font-style:italic;color:var(--brass-soft)}
+
+  .preview-bar{background:var(--brass);color:#1c120a;text-align:center;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:10px 16px}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(21,13,9,.96);border-bottom:1px solid var(--line)}
+  nav .wrap{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  nav .brand{font-family:"Playfair Display",serif;font-size:19px;color:var(--cream);text-decoration:none}
+  nav .brand i{color:var(--brass-soft);font-style:italic}
+  nav ul{list-style:none;display:flex;gap:26px;flex-wrap:wrap}
+  nav a.nl{color:var(--cream-dim);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase}
+  nav a.nl:hover{color:var(--brass-soft)}
+  nav .callbtn{background:var(--brass);color:#1c120a;text-decoration:none;font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:11px 20px}
+  nav .callbtn:hover{background:var(--brass-soft)}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+  /* HERO: split editorial */
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:640px}
+  .hero-photo{position:relative;overflow:hidden}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+  .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 55%,rgba(32,21,16,.55))}
+  .hero-text{padding:72px 48px;display:flex;flex-direction:column;justify-content:center}
+  .eyebrow{font-size:12px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--brass-soft);margin-bottom:20px}
+  .hero-text h1{font-size:clamp(44px,5.5vw,72px)}
+  .hero-text p.lede{color:var(--cream-dim);font-size:19px;margin-top:20px;max-width:480px}
+  .hero-meta{margin-top:28px;display:flex;flex-direction:column;gap:8px;font-size:15px;color:var(--cream-dim)}
+  .hero-meta strong{color:var(--cream);font-weight:500}
+  .hero-cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;text-decoration:none;font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:13px;padding:16px 32px}
+  .btn-brass{background:var(--brass);color:#1c120a}
+  .btn-brass:hover{background:var(--brass-soft)}
+  .btn-line{border:1px solid var(--cream-dim);color:var(--cream)}
+  .btn-line:hover{border-color:var(--brass-soft);color:var(--brass-soft)}
+
+  .rule{height:1px;background:var(--line)}
+
+  /* 01 LOUNGE */
+  .lounge{padding:96px 0}
+  .num-label{font-family:"Playfair Display",serif;font-style:italic;font-size:20px;color:var(--brass-soft)}
+  .lounge h2{font-size:clamp(34px,4.5vw,56px);margin:14px 0 20px;max-width:760px}
+  .lounge-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:36px;align-items:start}
+  .lounge p.body{color:var(--cream-dim);font-size:18px;margin-bottom:18px}
+  .lounge img.frame{width:100%;height:480px;object-fit:cover;border:1px solid var(--line)}
+  .cap{font-size:12px;color:var(--smoke);margin-top:10px}
+  .cap .src{color:var(--brass-soft)}
+  .policy{border-left:3px solid var(--brass);padding:4px 0 4px 22px;margin-top:8px}
+  .policy h3{font-size:22px;margin-bottom:8px}
+  .policy p{color:var(--cream-dim);font-size:16px}
+
+  /* 02 WORK */
+  .work{background:var(--espresso-deep);padding:96px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .work h2{font-size:clamp(34px,4.5vw,56px);margin:14px 0 16px}
+  .work .lede{color:var(--cream-dim);max-width:640px;font-size:18px}
+  .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+  .work-grid figure.wide{grid-column:span 2}
+  .work-grid img{width:100%;height:420px;object-fit:cover;border:1px solid var(--line)}
+
+  /* 03 ARTISTS */
+  .artists{padding:96px 0}
+  .artists h2{font-size:clamp(34px,4.5vw,56px);margin:14px 0 20px}
+  .artist-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+  .artist{border:1px solid var(--line);padding:36px 32px;background:var(--espresso-deep)}
+  .artist .init{font-family:"Playfair Display",serif;font-style:italic;font-size:52px;color:var(--brass)}
+  .artist h3{font-size:26px;margin:10px 0 10px}
+  .artist p{color:var(--cream-dim);font-size:16px}
+  .artist-note{margin-top:28px;color:var(--smoke);font-size:14px;max-width:720px}
+
+  /* VISIT */
+  .visit{background:var(--cream);color:var(--espresso-deep);padding:96px 0}
+  .visit .eyebrow{color:#8a6a28}
+  .visit h2{font-size:clamp(34px,4.5vw,56px);margin:14px 0 8px;color:var(--espresso-deep)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:36px}
+  .hours{width:100%;border-collapse:collapse}
+  .hours td{padding:13px 4px;border-bottom:1px solid #d9cba8;font-size:17px;font-weight:400}
+  .hours td:last-child{text-align:right;font-weight:500}
+  .addr{font-size:18px;color:#4a3b28}
+  .addr strong{color:var(--espresso-deep);font-weight:600}
+  .rating{display:inline-block;margin-top:20px;background:var(--espresso-deep);color:var(--cream);padding:12px 22px;font-size:15px;font-weight:400}
+  .rating b{color:var(--brass-soft);font-size:20px;font-family:"Playfair Display",serif}
+  .visit-cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+  .visit .btn-brass{background:#8a6a28;color:#fff}
+  .fb-link{color:#8a6a28;font-weight:500}
+
+  footer{background:var(--espresso-deep);padding:48px 0;color:var(--smoke);font-size:13px;border-top:1px solid var(--line)}
+  footer .wrap{display:flex;flex-direction:column;gap:12px}
+  footer a{color:var(--cream-dim)}
+  .disclaimer{border-top:1px solid var(--line);padding-top:18px;max-width:760px}
+
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr}
+    .hero-photo{min-height:340px;position:relative}
+    .hero-photo img{position:relative;height:340px}
+    .hero-text{padding:48px 24px}
+    .lounge-grid,.artist-cards,.visit-grid{grid-template-columns:1fr}
+    .work-grid{grid-template-columns:1fr}
+    .work-grid figure.wide{grid-column:span 1}
+    nav ul{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Design preview by Freightfolio. This is a concept, not the business's live website.</div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Relentless <i>Ink</i> Tattoo</a>
+    <ul>
+      <li><a class="nl" href="#lounge">The Lounge</a></li>
+      <li><a class="nl" href="#work">The Work</a></li>
+      <li><a class="nl" href="#artists">Artists</a></li>
+      <li><a class="nl" href="#visit">Visit</a></li>
+    </ul>
+    <a class="callbtn" href="tel:+13162122783">Call to book</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-photo">
+    <img src="img/storefront-night.jpg" alt="Relentless Ink Tattoo storefront at night with the shop sign lit up">
+  </div>
+  <div class="hero-text">
+    <p class="eyebrow">Wichita, Kansas</p>
+    <h1>Relentless Ink <em>Tattoo Parlour &amp; Lounge</em></h1>
+    <p class="lede">Wichita's appointment-only custom tattoo studio. Private sittings and artist portfolios in a calm lounge setting at 1126 E Central Ave.</p>
+    <div class="hero-meta">
+      <div><strong>Appointment only.</strong> Call to set up a consultation.</div>
+      <div>(316) 212-2783</div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-brass" href="tel:+13162122783">Call to book</a>
+      <a class="btn btn-line" href="#work">See the work</a>
+    </div>
+  </div>
+</header>
+
+<div class="rule"></div>
+
+<section class="lounge" id="lounge">
+  <div class="wrap">
+    <p class="num-label">01</p>
+    <h2>A studio built around <em>the sitting</em>, not the walk-in line.</h2>
+    <div class="lounge-grid">
+      <div>
+        <p class="body">Relentless Ink runs as a tattoo parlour and lounge, and it is appointment-only. That means your time in the chair is planned around you: a real consultation first, then a private setting for the session itself.</p>
+        <p class="body">The studio handles custom tattoo work and piercings. Reviews say the artists listen and take time with each client. Prices are fair and the atmosphere is easy and unhurried.</p>
+        <div class="policy">
+          <h3>How booking works</h3>
+          <p>Call the shop to talk through your idea and set a consultation. Sessions are scheduled by appointment, so the artist's full attention is on your piece when you arrive.</p>
+        </div>
+      </div>
+      <div>
+        <img class="frame" src="img/shop-interior.jpg" alt="Inside the Relentless Ink studio with the tattoo chair and wall decor">
+        <p class="cap">Inside the studio. <span class="src">Photo from the shop's Google listing.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <p class="num-label">02</p>
+    <h2>Selected <em>work</em></h2>
+    <p class="lede">Custom pieces from the shop's artists. The full portfolios live on the shop's Facebook page.</p>
+    <div class="work-grid">
+      <figure class="wide">
+        <img src="img/work-dragon.jpg" alt="Black-and-grey coiled serpent tattoo with mushrooms on a leg">
+        <p class="cap">Black-and-grey serpent piece. <span class="src">Photo from the shop's Google listing.</span></p>
+      </figure>
+      <figure>
+        <img src="img/work-sleeve.jpg" alt="Detailed black-and-grey feather and flower sleeve tattoo">
+        <p class="cap">Sleeve in progress. <span class="src">Photo from the shop's Google listing.</span></p>
+      </figure>
+      <figure>
+        <img src="img/work-traditional.jpg" alt="Color traditional tattoo of a strongwoman with flowers on a thigh">
+        <p class="cap">Color traditional piece. <span class="src">Photo: the shop's Instagram page.</span></p>
+      </figure>
+      <figure class="wide">
+        <img src="img/work-dennis-portfolio.jpg" alt="Collage of nine tattoo portfolio pieces watermarked Tattoos By Dennis Allen">
+        <p class="cap">Portfolio pieces by Dennis Allen, one of the shop's artists. <span class="src">Photo from the shop's Facebook page.</span></p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="artists" id="artists">
+  <div class="wrap">
+    <p class="num-label">03</p>
+    <h2>The <em>artists</em></h2>
+    <div class="artist-cards">
+      <div class="artist">
+        <div class="init">L</div>
+        <h3>Luis</h3>
+        <p>Custom tattoo artist at the studio. Ask the shop about his current availability and portfolio when you call.</p>
+      </div>
+      <div class="artist">
+        <div class="init">D</div>
+        <h3>Dennis</h3>
+        <p>Custom tattoo artist at the studio. Reviewers single him out for adding depth to client designs and for careful, unhurried sessions.</p>
+      </div>
+    </div>
+    <p class="artist-note">Artist names come from the shop's business research and public client reviews. Call the shop to confirm who is taking appointments.</p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <p class="eyebrow">Visit</p>
+    <h2>Book your sitting</h2>
+    <div class="visit-grid">
+      <div>
+        <table class="hours">
+          <tr><td>Tuesday</td><td>10:00 AM - 2:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>10:00 AM - 8:00 PM</td></tr>
+          <tr><td>Thursday</td><td>10:00 AM - 8:00 PM</td></tr>
+          <tr><td>Friday</td><td>10:00 AM - 6:00 PM</td></tr>
+        </table>
+        <p style="margin-top:14px;font-size:14px;color:#6b5a3e">Hours from public listing data. Call to confirm before you come by.</p>
+      </div>
+      <div>
+        <p class="addr"><strong>Relentless Ink Tattoo</strong><br>1126 E Central Ave<br>Wichita, KS 67214<br><strong>(316) 212-2783</strong></p>
+        <p class="rating"><b>4.8</b> from 108 Google reviews</p>
+        <div class="visit-cta">
+          <a class="btn btn-brass" href="tel:+13162122783">Call to book</a>
+        </div>
+        <p style="margin-top:18px;font-size:15px;color:#4a3b28">Follow the shop on <a class="fb-link" href="https://www.facebook.com/relentlessinkict">Facebook</a> for portfolios and shop updates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:var(--cream)">Relentless Ink Tattoo</strong> - 1126 E Central Ave, Wichita, KS 67214 - <a href="tel:+13162122783">(316) 212-2783</a></div>
+    <div class="disclaimer">This page is an unsolicited design preview created by Freightfolio to show what a website for this business could look like. It is not affiliated with or endorsed by Relentless Ink Tattoo. Photos are credited beneath each image.</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+PHOTO PROVENANCE - The Oklahoma Swing Syndicate (TOSS) concept site (Website Dev shift 2026-10-28)
+
+None of these photos are photos of this business, its staff, its premises, or its work. Every photo caption on the site says "Stock photo."
+
+- swing-lift.jpg
+  Caption: A couple swing dancing and smiling. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/30693471/ . Stock photo, not a photo of this business.
+
+- swing-polka.jpg
+  Caption: A couple swing dancing outdoors in polka dot outfits. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/14309166/ . Stock photo, not a photo of this business.
+
+- partner-practice.jpg
+  Caption: Adults practicing partner dancing in a sunlit studio. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/15792473/ . Stock photo, not a photo of this business.
+
+- dance-band.jpg
+  Caption: A couple dancing indoors with a live band. Stock photo.
+  Source: Pexels stock photo https://www.pexels.com/photo/16763609/ . Stock photo, not a photo of this business.
+

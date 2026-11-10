@@ -1,0 +1,15 @@
+PHOTO PROVENANCE - SMASH Brazilian Jiu Jitsu concept (Rebuild shift 2026-10-29 run103)
+
+None of these photos are photos of this business, its staff, its premises, or its work.
+Every photo caption on the site says "Stock photo."
+
+- img/bjj-grapple.jpg: Two students in gis grappling on the mats. Stock photo.
+  Source: Pexels photo 8611381 (https://www.pexels.com/search/BJJ/).
+- img/bjj-roll.jpg: Two students in gis rolling on the mats. Stock photo.
+  Source: Pexels photo 8612067 (https://www.pexels.com/search/judoka/).
+- img/bjj-top.jpg: A student in a white gi working from top position on the mats. Stock photo.
+  Source: Pexels photo 8611365.
+
+The previous photos (white-dobok student at attention, white-belt beginner, kick with staff)
+were removed: they showed generic karate/staff work, not Brazilian Jiu Jitsu, per QA 2026-10-29 19:59 CT.
+No photos of any other business are used.

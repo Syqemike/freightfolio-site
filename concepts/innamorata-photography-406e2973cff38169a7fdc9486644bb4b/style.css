@@ -1,0 +1,164 @@
+/* Innamorata Photography concept: romantic, airy, blush and sage */
+:root {
+  --blush: #f7e8e4;
+  --blush-deep: #e8c9c2;
+  --sage: #8a9b84;
+  --sage-dark: #5f7059;
+  --ink: #3d3a38;
+  --soft: #6f6a67;
+  --paper: #fdfaf8;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.7;
+}
+a { color: var(--sage-dark); }
+.topbar {
+  background: var(--blush);
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--soft);
+}
+header.site {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  padding: 1.25rem 1.25rem 0.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.brand {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  margin: 0;
+  color: var(--ink);
+}
+.brand span { color: var(--sage-dark); font-style: italic; }
+.tagline { margin: 0; color: var(--soft); font-style: italic; }
+nav.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 0.75rem 1.25rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+nav.main a {
+  text-decoration: none;
+  color: var(--ink);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.15rem;
+}
+nav.main a:hover { border-bottom-color: var(--blush-deep); }
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+}
+.hero-text h1 {
+  font-size: 2.4rem;
+  line-height: 1.15;
+  font-weight: normal;
+  margin: 0.5rem 0 1rem;
+}
+.hero-text h1 em { color: var(--sage-dark); }
+.hero-text p { color: var(--soft); max-width: 34rem; }
+.hero figure { margin: 0; }
+.hero img, .gallery img, .wide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+figcaption {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: var(--soft);
+  margin-top: 0.4rem;
+}
+.cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+.btn {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+.btn-book { background: var(--sage-dark); color: var(--white); }
+.btn-call { border: 1px solid var(--sage-dark); color: var(--sage-dark); background: var(--white); }
+section.block { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.25rem; }
+section.blush-band { background: var(--blush); }
+section.sage-band { background: #eef1ec; }
+h2 {
+  font-weight: normal;
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+}
+.lede { color: var(--soft); max-width: 38rem; }
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.gallery figure { margin: 0; }
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+.service-card {
+  background: var(--white);
+  border: 1px solid #eaded9;
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+.service-card h3 { margin: 0 0 0.4rem; font-weight: normal; font-size: 1.3rem; }
+.service-card p { color: var(--soft); margin: 0; }
+.service-card img { width: 100%; height: auto; border-radius: 4px; margin-bottom: 1rem; }
+.wide figure { margin: 0; }
+.visit-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.visit-box address { font-style: normal; }
+footer.site {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+  border-top: 1px solid #eaded9;
+  color: var(--soft);
+  font-size: 0.9rem;
+}
+footer.site a { color: var(--sage-dark); }
+@media (min-width: 760px) {
+  header.site { flex-direction: row; justify-content: space-between; align-items: baseline; }
+  .hero { grid-template-columns: 1fr 1.15fr; align-items: center; padding-top: 2rem; }
+  .hero-text h1 { font-size: 3.1rem; }
+  .gallery { grid-template-columns: 1fr 1fr; }
+  .service-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .visit-box { grid-template-columns: 1fr 1fr; }
+}
+.photo-note {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: var(--soft);
+  margin: 0.4rem 0 0;
+}

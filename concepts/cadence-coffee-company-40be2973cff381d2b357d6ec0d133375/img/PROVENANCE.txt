@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Cadence Coffee Company.
+latte.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aldar-cafe-404e2973cff3812b95/img/latte.jpg
+beans.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aldar-cafe-404e2973cff3812b95/img/beans.jpg
+pastry.jpg <- /home/hatch/workspace/freightfolio-site/concepts/aldar-cafe-404e2973cff3812b95/img/pastry.jpg

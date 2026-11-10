@@ -1,0 +1,5 @@
+PHOTOS (real photos of Buckeye Donuts, from the shop's own website at buckeyedonuts.net, Squarespace menu gallery):
+- storefront.jpg: The Buckeye Donuts storefront building with signage and red awnings (site header image). Viewed before use, rebuild run119.
+- buckeye-donut.jpg: The signature Buckeye donut, chocolate glaze with peanut butter creme (menu graphic For Menu 1-01). Viewed before use, rebuild run119.
+- cronut.jpg: A cronut with chocolate drizzle (menu graphic For Menu 1-02). Viewed before use, rebuild run119.
+No stock photos remain on this concept. Gallery is no longer byte-identical to Lickin Good Donuts (all three files replaced).
