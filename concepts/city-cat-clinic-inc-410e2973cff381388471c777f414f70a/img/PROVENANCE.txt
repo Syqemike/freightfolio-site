@@ -1,0 +1,4 @@
+Photo provenance for City Cat Clinic Inc.
+cat-on-vet-scale.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-real/cc-cat-scale.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A black-and-white cat with an orange collar standing on a white veterinary scale, with spray bottles behind it.
+vet-examining-white-cat.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-fresh/pexels-6816859.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A veterinarian in blue scrubs examining a white cat in a clinic.
+vet-examining-cats-eye.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-fresh/pexels-6816861.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A veterinarian in gloves examining a white cat's eye.

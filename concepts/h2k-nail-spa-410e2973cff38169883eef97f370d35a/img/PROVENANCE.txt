@@ -1,0 +1,4 @@
+Photo provenance for H2K Nail Spa.
+blue-stiletto-nails.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-real/h2-blue-stiletto.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Two hands with long light-blue stiletto nails, with the H2K watermark.
+salon-banner.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-real/h2-banner.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The salon's banner: the H2K logo, address, and phone over a row of pedicure chairs.
+pedicure-session.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-fresh/pexels-34930135.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A professional pedicure session at a beauty salon, a technician working on a client's feet.

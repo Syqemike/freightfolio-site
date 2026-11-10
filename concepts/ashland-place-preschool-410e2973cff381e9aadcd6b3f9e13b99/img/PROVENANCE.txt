@@ -1,0 +1,4 @@
+Photo provenance for Ashland Place Preschool.
+church-building-street-view.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-real/ap-streetview.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The tan brick church and preschool building with a covered porch and parking lot.
+girl-in-classroom-chair.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-fresh/pexels-8612872.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A happy girl in a white shirt sitting on a small chair in a classroom, a boy behind her.
+children-sitting-classroom.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-fresh/pexels-8613105.jpg :: STOCK photo from Pexels, labeled as stock on every page :: Three children sitting together in a classroom, smiling.

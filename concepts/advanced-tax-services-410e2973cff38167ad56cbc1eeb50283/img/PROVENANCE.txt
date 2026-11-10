@@ -1,0 +1,4 @@
+Photo provenance for Advanced Tax Services.
+building-street-view.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-real/at-streetview.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The low brick commercial building and parking lot on Leestown Road, seen from across the street.
+tax-form-1040.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-fresh/pexels-7821551.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A 1040 tax form on a wooden surface.
+tax-documents-calculator.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-fresh/pexels-6863202.jpg :: STOCK photo from Pexels, labeled as stock on every page :: Tax documents, coins, a calculator, and a magnifier on a green surface.

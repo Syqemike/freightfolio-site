@@ -1,0 +1,4 @@
+Photo provenance for Diva Nails.
+salon-interior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-real/dv-salon-interior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The salon interior with manicure tables and chairs, a pink neon sign, and clients and staff.
+blue-ombre-nails.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-real/dv-blue-ombre.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A hand with long almond blue-ombre nails and a ring, resting on a car steering wheel.
+cartoon-nail-art.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-real/dv-cartoon-art.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A hand with cartoon-character nail art.

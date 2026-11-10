@@ -1,0 +1,4 @@
+Photo provenance for Weber Road Auto Service.
+mechanic-on-engine.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-real/wr-mechanic-engine.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A mechanic in a dark shirt and gloves working on an open car engine in a blue-walled bay.
+garage-building.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-real/wr-streetview.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The white and blue garage building with a red car in front.
+suv-in-front.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100058-real/wr-suv-garage.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A dark SUV parked in front of the white and blue garage building.
