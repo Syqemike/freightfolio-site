@@ -1,0 +1,4 @@
+Photo provenance for Paz Studios.
+storefront.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/pz-storefront.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The storefront: a pale-green two-storey brick building with a red door bearing the PAZ logo and a window reading YOGA | BARRE | PILATE.
+yoga-class.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/pz-yoga-class.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A yoga class with people on mats in the studio.
+acro-yoga-street.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/pz-acro-yoga.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Two women doing an acro-yoga partner pose in the middle of a street.

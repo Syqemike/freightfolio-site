@@ -1,0 +1,4 @@
+Photo provenance for Trifecta Fitness Studio.
+woman-flexing-gym.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/tf-woman-flexing.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A woman in black and grey workout clothes flexing in the gym in front of weight machines.
+women-dumbbells.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-fresh/pexels-903171.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A group of diverse women in athletic wear lift small pink dumbbells overhead together in a bright brick-walled gym studio.
+woman-barbell-curls.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-fresh/pexels-14524650.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A woman with her hair in a bun does barbell curls on a preacher bench in a dark gym.

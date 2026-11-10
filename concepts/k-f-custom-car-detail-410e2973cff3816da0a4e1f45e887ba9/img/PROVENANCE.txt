@@ -1,0 +1,4 @@
+Photo provenance for K & F Custom Car Detail.
+black-pickup.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/kf-black-pickup.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A shiny black pickup truck parked in a driveway in front of a house.
+silver-suv.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/kf-silver-suv.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A clean silver GMC Terrain SUV parked in a driveway.
+car-interior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/kf-car-interior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A clean car interior with brown leather seats, dashboard, and passenger seat.

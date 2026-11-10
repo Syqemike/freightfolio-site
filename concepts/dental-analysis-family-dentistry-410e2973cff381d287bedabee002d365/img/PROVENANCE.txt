@@ -1,0 +1,4 @@
+Photo provenance for Dental Analysis Family Dentistry.
+staff-group.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/da-staff-group-crop.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Six staff women in scrubs posing together.
+staff-hallway.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/da-staff-hallway-crop.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Five staff women posing in a hallway in front of a seahorse painting.
+dentist-treating-patient.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-fresh/pexels-5355705.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A masked dentist in blue gloves holds dental tools beside a smiling woman reclined in a blue dental chair wearing a light blue bib.

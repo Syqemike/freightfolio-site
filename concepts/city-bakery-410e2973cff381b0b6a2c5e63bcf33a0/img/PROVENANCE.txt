@@ -1,0 +1,4 @@
+Photo provenance for City Bakery.
+sourdough-loaf.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/cb-sourdough-loaf.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A close-up of a round crusty sourdough loaf.
+breakfast-sandwich.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/cb-breakfast-sandwich.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A biscuit breakfast sandwich with salmon, tomato, and greens.
+grilled-cheese.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd100658-real/cb-grilled-cheese.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A grilled cheese sandwich with bacon, cut in two halves.
