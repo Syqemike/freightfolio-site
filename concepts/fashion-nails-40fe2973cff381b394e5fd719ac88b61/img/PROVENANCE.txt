@@ -1,5 +1,4 @@
-All photos are stock photos, labeled as such on every page.
-They are not photos of Fashion Nails.
-technician-applying-polish.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-7446915.jpg
-hand-under-gel-lamp.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-3997392.jpg
-leopard-nail-art.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-34835304.jpg
+Photo provenance for Fashion Nails.
+pedicure-chairs.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/fn-pedicure-chairs.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A row of white pedicure chairs in the salon.
+red-manicure.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/fn-red-manicure.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Hands with red-tipped decorated manicures.
+nail-polish-wall.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/fn-polish-wall.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A wall of nail-polish bottles in the salon.

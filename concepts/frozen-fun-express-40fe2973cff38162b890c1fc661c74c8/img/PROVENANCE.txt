@@ -1,5 +1,4 @@
-All photos are stock photos, labeled as such on every page.
-They are not photos of Frozen Fun Express.
-hand-holding-ice-cream-cone.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-7761650.jpg
-server-at-truck-window.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-5920681.jpg
-vanilla-soft-serve-cone.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-38987559.jpg
+Photo provenance for Frozen Fun Express.
+green-trucks-event.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/ff-green-trucks.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Bright green ice cream trucks at an outdoor event.
+server-at-truck-window.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-5920681.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A server in an apron taking an order at a food truck window.
+vanilla-soft-serve-cone.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-38987559.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A vanilla soft-serve cone against a dark background.

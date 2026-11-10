@@ -1,5 +1,4 @@
-All photos are stock photos, labeled as such on every page.
-They are not photos of The Mustard Seed Preschool & Child Care Center.
-kids-dress-up-play.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-5275834.jpg
-kids-drawing-class.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-3992949.jpg
-kids-parachute-play.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-27788084.jpg
+Photo provenance for The Mustard Seed Preschool & Child Care Center.
+playground-canopy.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/ms-playground.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The outdoor playground with a blue shade canopy and play structures.
+classroom-tables.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/ms-classroom-blue.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A classroom with blue walls, small tables and chairs.
+reading-area-bookshelf.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/ms-reading-area.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A classroom reading area with a bookshelf of children's books.

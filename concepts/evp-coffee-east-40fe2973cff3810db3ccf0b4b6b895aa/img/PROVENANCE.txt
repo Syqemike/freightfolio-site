@@ -1,5 +1,4 @@
-All photos are stock photos, labeled as such on every page.
-They are not photos of EVP Coffee East.
-barista-pouring-coffee.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-10720384.jpg
-french-press-pour.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-2748538.jpg
-pour-over-brewing.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-8987828.jpg
+Photo provenance for EVP Coffee East.
+storefront-evp-sign.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/evp-exterior-sign.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The orange-red building exterior with the EVP COFFEE sign.
+blueberry-scones.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/evp-scones.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Blueberry scones with icing.
+interior-seating.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/evp-interior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The purple-walled interior seating area.

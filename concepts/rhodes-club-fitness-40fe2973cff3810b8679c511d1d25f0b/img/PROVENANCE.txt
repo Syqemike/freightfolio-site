@@ -1,5 +1,4 @@
-All photos are stock photos, labeled as such on every page.
-They are not photos of Rhodes Club Fitness.
-trainer-dumbbell-press.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-416754.jpg
-punching-bags-room.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-5750886.jpg
-gym-floor-treadmills.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-4716814.jpg
+Photo provenance for Rhodes Club Fitness.
+storefront-street-view.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/rh-storefront.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The Rhodes Club Fitness storefront at Hardy Court Shopping Center.
+punching-bags-room.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-5750886.jpg :: STOCK photo from Pexels, labeled as stock on every page :: Punching bags hung in a martial arts training room.
+gym-floor-treadmills.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-4716814.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A gym floor with treadmills and strength equipment.

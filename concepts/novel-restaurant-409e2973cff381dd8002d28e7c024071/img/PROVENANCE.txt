@@ -1,5 +1,0 @@
-PHOTOS (rebuild run111, 2026-10-30; all real, from the business's own website novelkc.com, Squarespace CDN, converted from WebP to JPEG for local hosting):
-- real-dishes.jpg: five plated pasta dishes (crossroads-9). Verified by viewing the image.
-- real-soup.jpg: green soup with asparagus, peas, and edible flowers (crossroads-11). Verified by viewing the image.
-- real-kitchen.jpg: kitchen team plating dishes (crossroads-4). Verified by viewing the image.
-Prior stock photos (hero/poboy/burger) removed.

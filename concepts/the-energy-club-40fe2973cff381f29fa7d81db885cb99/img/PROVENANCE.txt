@@ -1,5 +1,4 @@
-All photos are stock photos, labeled as such on every page.
-They are not photos of The Energy Club.
-group-class-stretching.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-6339401.jpg
-indoor-pool-mosaic.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-10231663.jpg
-yoga-class-windows.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-3984353.jpg
+Photo provenance for The Energy Club.
+weight-room.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/ec-weight-room.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The weight room with benches and machines.
+medicine-ball-training.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/ec-medicine-ball.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Two men training with a medicine ball.
+racquetball-court.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/ec-racquetball.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A racquetball court with players.

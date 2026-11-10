@@ -1,5 +1,4 @@
-All photos are stock photos, labeled as such on every page.
-They are not photos of Michelangelo's Coffee House.
-two-coffee-cups-table.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-4255404.jpg
-latte-art-cup.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-6747870.jpg
-coffee-shop-entrance.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-39784928.jpg
+Photo provenance for Michelangelo's Coffee House.
+exterior-capitol.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/mc-exterior-capitol.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The coffee house exterior on State Street with the Wisconsin Capitol dome behind it.
+mosaic-sign.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/mc-mosaic-sign.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The mosaic-tile Michelangelo's sign.
+espresso-shot-glasses.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/mc-interior-counter.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Espresso pouring into shot glasses at the counter.

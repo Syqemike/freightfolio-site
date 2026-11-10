@@ -1,5 +1,4 @@
-All photos are stock photos, labeled as such on every page.
-They are not photos of Rocky's Pizza & Italian Foods.
-tomato-basil-pizza.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-31596394.jpg
-hands-stretching-dough.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-27564591.jpg
-cook-at-brick-oven.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-33927682.jpg
+Photo provenance for Rocky's Pizza & Italian Foods.
+storefront-night.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/rk-storefront-night.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The storefront at night, green neon, boxer window graphic, and Italian flag.
+bar-dining-area.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/rk-bar-dining.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The bar and dining area with purple pendant lighting.
+sandwich-plate.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-real/rk-sandwich-plate.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A sandwich with tomato and lettuce plus ridged chips on a metal plate.
