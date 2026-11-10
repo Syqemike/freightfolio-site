@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of EVP Coffee East.
+barista-pouring-coffee.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-10720384.jpg
+french-press-pour.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-2748538.jpg
+pour-over-brewing.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-8987828.jpg

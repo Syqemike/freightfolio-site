@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Michelangelo's Coffee House.
+two-coffee-cups-table.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-4255404.jpg
+latte-art-cup.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-6747870.jpg
+coffee-shop-entrance.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-39784928.jpg

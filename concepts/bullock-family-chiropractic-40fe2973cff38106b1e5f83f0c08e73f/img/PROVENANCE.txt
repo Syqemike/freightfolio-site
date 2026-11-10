@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Bullock Family Chiropractic.
+practitioner-back-treatment.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-20669197.jpg
+neck-adjustment.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-4506161.jpg
+patient-on-treatment-table.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-20860610.jpg

@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Rhodes Club Fitness.
+trainer-dumbbell-press.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-416754.jpg
+punching-bags-room.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-5750886.jpg
+gym-floor-treadmills.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-4716814.jpg

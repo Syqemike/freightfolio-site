@@ -1,0 +1,5 @@
+All photos are stock photos, labeled as such on every page.
+They are not photos of Seva Yoga.
+yoga-class-mats.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-6246682.jpg
+woman-plow-pose.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-3822534.jpg
+instructor-guiding-students.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd091858-fresh/pexels-25596885.jpg
