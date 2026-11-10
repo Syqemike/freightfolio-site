@@ -6,42 +6,73 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Home | The Bean Counter</title>
 <style>
-body { font-family: 'Gill Sans', sans-serif; background: #fbfaf6; color: #1e2a24; margin: 0; line-height: 1.6; }
-.disclosure { background: #2e5e4b; color: #fff; padding: 10px 20px; font-size: 14px; text-align: center; }
-header { padding: 32px 20px 8px; max-width: 1020px; margin: 0 auto; text-align: left; }
-header h1 { font-size: 36px; margin: 0 0 4px; }
-header p.tag { font-size: 19px; margin: 0 0 14px; }
-main { max-width: 1020px; margin: 0 auto; padding: 0 20px 56px; }
-nav { max-width: 1020px; margin: 0 auto 18px; padding: 10px 20px; text-align: left; border: 2px solid #2e5e4b; }
-nav a { margin-right: 18px; color: #2e5e4b; font-weight: bold; text-decoration: none; }
-.hero { display: flex; gap: 20px; align-items: flex-start; }
-.hero img { width: 55%; height: auto; display: block; }
-.hero .cap { flex: 1; }
-figcaption, .cap { font-size: 13px; color: #555; margin: 6px 0 20px; }
-h2 { font-size: 27px; border-bottom: 6px double #2e5e4b; padding-bottom: 8px; margin-top: 30px; }
-.cta, .cta2 { display: inline-block; background: #2e5e4b; color: #fff; padding: 10px 18px; text-decoration: none; margin: 8px 8px 8px 0; font-weight: bold; }
-.cta2 { background: #1e2a24; }
-ul { padding-left: 20px; }
-li { margin-bottom: 8px; }
-.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
-.gallery figure { margin: 0; }
-.gallery img { width: 100%; height: auto; display: block; }
-table.services { border-collapse: collapse; width: 100%; }
-table.services td { padding: 10px 12px; border-bottom: 1px solid #2e5e4b; vertical-align: top; }
-table.services td:first-child { white-space: nowrap; }
-footer { max-width: 1020px; margin: 0 auto; padding: 20px; font-size: 13px; border-top: 1px solid #ccc; }
+body { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; background: #f7f2e7; color: #23201a; margin: 0; line-height: 1.6; }
+.disclosure { background: #1f4d3a; color: #f7f2e7; padding: 10px 20px; font-size: 13px; text-align: center; letter-spacing: .02em; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+.masthead { padding: 34px 0 0; }
+.kicker { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: #8a6d2b; margin: 0 0 8px; font-weight: bold; }
+.masthead h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 58px; line-height: 1.05; margin: 0 0 6px; color: #1f4d3a; }
+.masthead .tag { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; margin: 0 0 18px; color: #3a352c; }
+.rule-double { border-top: 3px solid #1f4d3a; border-bottom: 1px solid #b08d3c; height: 3px; margin: 0 0 14px; }
+nav { padding: 0 0 18px; }
+nav a { margin-right: 26px; color: #1f4d3a; font-weight: bold; text-decoration: none; font-size: 15px; }
+nav a:hover { text-decoration: underline; }
+main { padding-bottom: 56px; }
+.hero { position: relative; margin: 6px 0 34px; }
+.hero img { width: 100%; height: 460px; object-fit: cover; display: block; }
+.hero .card { position: absolute; left: 24px; bottom: -18px; background: #f7f2e7; border-top: 4px solid #b08d3c; padding: 18px 24px 20px; max-width: 560px; box-shadow: 0 6px 24px rgba(35,32,26,.18); }
+.hero .card p { font-family: Georgia, 'Times New Roman', serif; font-size: 22px; line-height: 1.35; margin: 0 0 12px; color: #23201a; }
+.cta { display: inline-block; background: #1f4d3a; color: #fff; padding: 11px 20px; text-decoration: none; font-weight: bold; font-size: 15px; }
+.cta:hover { background: #16382a; }
+h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 30px; color: #1f4d3a; margin: 38px 0 10px; }
+h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 21px; color: #23201a; margin: 0 0 6px; }
+p { margin: 0 0 14px; }
+.cap { font-size: 13px; color: #6b655a; margin: 8px 0 22px; }
+.split { display: grid; grid-template-columns: 1.15fr .85fr; gap: 32px; align-items: start; }
+.split img, .tall img { width: 100%; height: auto; display: block; }
+.band { background: #1f4d3a; color: #f7f2e7; margin: 40px 0; padding: 30px 24px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.band .num { font-family: Georgia, 'Times New Roman', serif; font-size: 40px; color: #d9b96a; line-height: 1.1; }
+.band .lab { font-size: 14px; margin-top: 6px; }
+.ledger { border-top: 2px solid #1f4d3a; margin: 18px 0 8px; }
+.ledger .row { display: grid; grid-template-columns: 64px 1fr; gap: 18px; padding: 20px 0; border-bottom: 1px solid #c9bfa8; align-items: baseline; }
+.ledger .n { font-family: Georgia, 'Times New Roman', serif; font-size: 30px; color: #b08d3c; }
+.ledger .name { font-family: Georgia, 'Times New Roman', serif; font-size: 22px; color: #23201a; }
+.ledger .group { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #8a6d2b; font-weight: bold; margin: 26px 0 0; }
+.photo-band img { width: 100%; height: 380px; object-fit: cover; object-position: 50% 25%; display: block; }
+.gallery3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.gallery3 img { width: 100%; height: 210px; object-fit: cover; display: block; }
+.tall { display: grid; grid-template-columns: 380px 1fr; gap: 32px; align-items: start; }
+.hours { width: 100%; border-collapse: collapse; margin: 10px 0 18px; }
+.hours td { padding: 10px 0; border-bottom: 1px solid #c9bfa8; }
+.hours td:last-child { text-align: right; font-weight: bold; }
+.visitcard { background: #fffdf6; border: 1px solid #c9bfa8; border-top: 4px solid #b08d3c; padding: 22px 24px; }
+footer { background: #1f4d3a; color: #f7f2e7; padding: 26px 0 34px; font-size: 14px; }
+footer a { color: #d9b96a; }
+@media (max-width: 760px) {
+  .masthead h1 { font-size: 40px; }
+  .hero img { height: 300px; }
+  .hero .card { position: static; box-shadow: none; border: 1px solid #c9bfa8; border-top: 4px solid #b08d3c; max-width: none; }
+  .split, .tall { grid-template-columns: 1fr; }
+  .band { grid-template-columns: 1fr; }
+  .gallery3 { grid-template-columns: 1fr; }
+  .photo-band img { height: 260px; }
+}
 </style>
 </head>
 <body>
 <div class="disclosure">Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</div>
-<header><h1>The Bean Counter</h1><p class="tag">A locally owned downtown Albuquerque firm for bookkeeping and tax preparation.</p><p>Albuquerque, NM</p></header>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav>
-<main>
-<section class="hero"><img src="img/hero.jpg" alt="A consultant discussing plans with clients in an office."><p class="cap">Stock photo: A consultant discussing plans with clients in an office.</p></section>
-<h2>About</h2><p>The Bean Counter is a locally owned bookkeeping and tax preparation firm in downtown Albuquerque, serving small businesses and individuals. Its principal and staff hold a combined 60 plus years of experience.</p><p><strong>Rating:</strong> Google 5.0 from 18 reviews (shown once here).</p>
-<p><a class="cta" href="tel:+15055157849">Call to ask: +1 505-515-7849</a> </p>
-<h2>Gallery</h2><div class="gallery"><figure><img src="img/paperwork.jpg" alt="An agent reviewing paperwork with clients."><figcaption class="cap">Stock photo: An agent reviewing paperwork with clients.</figcaption></figure><figure><img src="img/office.jpg" alt="A consultation in an office setting."><figcaption class="cap">Stock photo: A consultation in an office setting.</figcaption></figure></div></main>
-<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p><p>The Bean Counter, 400 Gold Ave SW Ste 860, Albuquerque, NM 87102 | +1 505-515-7849</p>
-<p><a class="cta" href="tel:+15055157849">Call to ask: +1 505-515-7849</a> </p></footer>
+<div class="wrap masthead"><p class="kicker">Bookkeeping and tax preparation &middot; Downtown Albuquerque</p><h1>The Bean Counter</h1><p class="tag">A locally owned downtown Albuquerque firm for bookkeeping and tax preparation.</p><div class="rule-double"></div><nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav></div>
+<main><div class="wrap">
+<section class="hero"><img src="img/hero.jpg" alt="Hands working a calculator over an open binder of papers on a wooden desk."><div class="card"><p>Bookkeeping and tax preparation for small businesses and individuals, from a locally owned firm in downtown Albuquerque.</p><p><a class="cta" href="tel:+15055157849">Call to ask: +1 505-515-7849</a></p></div></section>
+<p class="cap">Stock photo: Hands working a calculator over an open binder of papers on a wooden desk.</p>
+<h2>About the firm</h2>
+<div class="split"><div><p>The Bean Counter is a locally owned bookkeeping and tax preparation firm in downtown Albuquerque, serving small businesses and individuals. Its principal and staff hold a combined 60 plus years of experience.</p><p>The office is at 400 Gold Ave SW, Suite 860, in historic downtown Albuquerque. Call the office to talk through bookkeeping or tax preparation for your business or for yourself.</p><p><a class="cta" href="tel:+15055157849">Call to ask: +1 505-515-7849</a></p></div><div><img src="img/consult.jpg" alt="An advisor going over paperwork with a client across a desk."><p class="cap">Stock photo: An advisor going over paperwork with a client across a desk.</p></div></div>
+<section class="band"><div><div class="num">60 plus years</div><div class="lab">Combined experience of the principal and staff</div></div><div><div class="num">400 Gold Ave SW</div><div class="lab">The office in historic downtown Albuquerque</div></div><div><div class="num">4 services</div><div class="lab">Bookkeeping and tax preparation, for small businesses and individuals</div></div></section>
+<h2>Downtown Albuquerque</h2>
+<div class="tall"><div><img src="img/downtown.jpg" alt="The Bernalillo County Metropolitan Court building in downtown Albuquerque."><p class="cap">Stock photo: The Bernalillo County Metropolitan Court building in downtown Albuquerque.</p></div><div><p>The firm works from historic downtown Albuquerque. The office is at 400 Gold Ave SW, Suite 860.</p><p>Visit the office during business hours. Questions? Call <a href="tel:+15055157849">+1 505-515-7849</a>.</p><p><a class="cta" href="visit.html">Visit the office</a></p></div></div>
+<h2>At the desk</h2>
+<div class="gallery3"><div><img src="img/office.jpg" alt="A desk with a laptop, papers, eyeglasses, and two cups of coffee."><p class="cap">Stock photo: A desk with a laptop, papers, eyeglasses, and two cups of coffee.</p></div><div><img src="img/ledger.jpg" alt="Hands writing in a notebook beside cash and coins on a wooden table."><p class="cap">Stock photo: Hands writing in a notebook beside cash and coins on a wooden table.</p></div><div><img src="img/taxform.jpg" alt="A hand holding a pen over a 1040 tax form beside a calculator."><p class="cap">Stock photo: A hand holding a pen over a 1040 tax form beside a calculator.</p></div></div>
+</div></main>
+<footer><div class="wrap"><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p><p>The Bean Counter, 400 Gold Ave SW Ste 860, Albuquerque, NM 87102 | <a href="tel:+15055157849">+1 505-515-7849</a></p><p><a class="cta" href="tel:+15055157849">Call to ask: +1 505-515-7849</a></p></div></footer>
 </body>
 </html>
