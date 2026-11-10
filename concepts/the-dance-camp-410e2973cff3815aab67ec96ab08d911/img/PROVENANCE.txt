@@ -1,0 +1,4 @@
+Photo provenance for The Dance Camp.
+barre-pointe-feet.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101258-fresh/pexels-3901639.jpg :: STOCK photo from Pexels, labeled as stock on every page :: Dancers feet in pointe shoes at the ballet barre in a dance studio.
+pointe-shoes.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101258-fresh/pexels-8935909.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A pair of pink satin pointe shoes with ribbons.
+jazz-shoes-feet.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101258-fresh/pexels-6713391.jpg :: STOCK photo from Pexels, labeled as stock on every page :: Dancers feet in black jazz shoes lined up at the barre.

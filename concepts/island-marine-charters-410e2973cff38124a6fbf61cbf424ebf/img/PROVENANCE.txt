@@ -1,0 +1,4 @@
+Photo provenance for Island Marine Charters.
+red-snapper-beard.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101258-real/im-red-snapper-beard.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A bearded man in sunglasses holding a huge red snapper on a boat at a dock.
+red-snapper-young.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101258-real/im-red-snapper-young.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A young man holding a huge red snapper on a boat at a dock.
+king-mackerel.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101258-real/im-king-mackerel.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A man in blue holding a large king mackerel on a boat, open water behind.

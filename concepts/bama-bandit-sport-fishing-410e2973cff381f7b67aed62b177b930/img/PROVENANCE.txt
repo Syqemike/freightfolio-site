@@ -1,0 +1,4 @@
+Photo provenance for Bama Bandit Sport Fishing.
+redfish-group.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101258-real/bb-redfish-group.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Five people at a dock behind a row of redfish, with boats behind them.
+netting-fish.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101258-real/bb-netting-fish.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A man netting a fish from the bow of a boat while another angler reels in with a bent rod, marsh water behind.
+reeling-dusk.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101258-real/bb-reeling-dusk.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A woman reeling in a fish while a man nets it at dusk on a boat.
