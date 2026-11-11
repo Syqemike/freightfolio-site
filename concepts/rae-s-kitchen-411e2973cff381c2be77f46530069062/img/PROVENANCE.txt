@@ -1,0 +1,4 @@
+Photo provenance for Rae's Kitchen.
+casseroles.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/rk-casseroles.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Casseroles on a wooden table: mac and cheese, sweet potato crumble, and cranberry dishes.
+dining-room.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/rk-dining-room.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The dining room with colorful chairs, art on the walls, and chandeliers.
+turkey-sandwich.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/rk-turkey-sandwich.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A turkey sandwich on whole wheat bread with lettuce and chips.

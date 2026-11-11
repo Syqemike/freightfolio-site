@@ -1,0 +1,4 @@
+Photo provenance for Tili's Bakery.
+wedding-cake.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/tb-wedding-cake.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A four-tier white wedding cake with pressed flowers.
+blue-drip-cake.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/tb-blue-drip.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A blue drip cake with matching blue and white cupcakes.
+heart-cake.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/tb-heart-cake.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A pink heart-shaped cake reading Brittany and Emory in gold, with silver disco balls.

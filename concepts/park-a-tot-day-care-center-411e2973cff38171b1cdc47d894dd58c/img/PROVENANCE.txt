@@ -1,0 +1,4 @@
+Photo provenance for Park A Tot Day Care Center.
+daycare-classroom.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-fresh/pexels-8088235.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A bright, empty classroom with wooden tables and chairs, toy shelves, a blank chalkboard, and a green rug.
+building-exterior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/pt-exterior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The pale yellow Park A Tot building under a blue sky.
+children-playing.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-fresh/pexels-3661452.jpg :: STOCK photo from Pexels, labeled as stock on every page :: Two young children kneeling on the floor playing with a tall stack of colorful wooden blocks and toy animals in a bright indoor playroom.

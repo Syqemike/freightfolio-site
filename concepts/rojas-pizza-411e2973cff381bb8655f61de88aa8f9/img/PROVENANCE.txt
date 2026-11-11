@@ -1,0 +1,4 @@
+Photo provenance for Rojas Pizza.
+counter.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/rj-counter.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The counter with menu boards and a display case of pizza by the slice.
+cheese-pizza.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/rj-cheese-pizza.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A whole cheese pizza in an open box, one slice missing, on red-check paper.
+ny-slice.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/rj-ny-slice.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A single large NY-style slice with sausage and bacon topping on white paper.

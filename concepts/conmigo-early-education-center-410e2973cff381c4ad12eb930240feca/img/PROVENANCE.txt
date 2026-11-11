@@ -1,0 +1,4 @@
+Photo provenance for Conmigo Early Education Center.
+playground.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/cm-playground.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The outdoor playground with yellow shade sails, a water-play funnel, and blue play surfacing.
+infant-room.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/cm-infant-room.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The infant room with wooden cribs, toys, and wall decorations.
+dream-mural.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/cm-mural.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The exterior wall mural reading DREAM, with figures of children.

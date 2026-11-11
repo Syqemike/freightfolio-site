@@ -1,0 +1,4 @@
+Photo provenance for Wired Generations Electrical Contractors, LLC.
+team.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/wg-team.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Three members of the Wired Generations team in grey polo shirts.
+electrical-panel.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/wg-panel.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: An open electrical panel with breakers and red, black, and green wiring.
+work-truck.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110058-real/wg-truck.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A white Wired Generations pickup truck at night outside a house.
