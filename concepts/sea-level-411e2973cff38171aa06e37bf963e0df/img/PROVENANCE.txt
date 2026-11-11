@@ -1,0 +1,4 @@
+Photo provenance for Sea Level.
+exterior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/sl-exterior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The turquoise Sea Level beach shack on stilts, with picnic tables and string lights under a blue sky.
+cheeseburger.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/sl-burger.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A cheeseburger with fries in a paper tray on a blue wooden table.
+tacos.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/sl-tacos.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Two soft tacos topped with sauce, pico de gallo, and a lime wedge.

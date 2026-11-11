@@ -1,0 +1,4 @@
+Photo provenance for La La Nails.
+salon-interior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/ll-interior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Rows of pedicure chairs and manicure tables in the salon.
+christmas-nails.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/ll-christmasnails.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Long Christmas nails: red and white candy-cane, snowflakes, and black nails with ornaments.
+flame-nails.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/ll-flamenails.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Black almond-shaped nails with a white flame-like abstract design.

@@ -1,0 +1,4 @@
+Photo provenance for Thorny Oyster.
+dining-room.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/to-diningroom.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The dining room interior: arched windows, bubble chandeliers, tables, and the bar at the back.
+tuna-poke.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/to-tunapoke.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A pink bowl of tuna poke with tomatoes and toppings.
+chicken-sandwich.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/to-chickensandwich.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A fried chicken sandwich on a brioche bun with french fries.

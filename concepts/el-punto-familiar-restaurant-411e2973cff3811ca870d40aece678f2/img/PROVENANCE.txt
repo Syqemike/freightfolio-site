@@ -1,0 +1,4 @@
+Photo provenance for El Punto Familiar Restaurant.
+mofongo.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/ep-mofongo.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A round mound of mashed plantain (mofongo) topped with green sauce, with pink dipping sauce beside it.
+shrimp-dish.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/ep-shrimp.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Shrimp in orange sauce with peppers, served in a white bowl.
+pork-chops.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd110658-real/ep-porkchops.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Fried pork chops with tostones, rice, and beans on a white plate.
