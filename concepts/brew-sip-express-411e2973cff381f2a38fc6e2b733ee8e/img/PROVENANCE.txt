@@ -1,0 +1,4 @@
+Photo provenance for Brew & Sip Express.
+bs-interior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/bs-interior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The coffee bar counter with the espresso machine, the Brew and Sip sign, and red Santa-hat bar stools
+bs-plate.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/bs-plate.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A plate with a wrap and a Brew and Sip mug on a table
+bs-iced.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/bs-iced.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Iced coffee in a clear plastic cup with a Brew and Sip logo sticker

@@ -1,0 +1,4 @@
+Photo provenance for Astoria Pastry Shop.
+as-storefront.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/as-storefront.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The red Astoria Pastry Shop storefront
+as-macarons.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/as-macarons.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A plate of colorful macarons in red, green, orange, yellow, and brown
+as-case.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/as-case.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The large glass display case with trays of baklava, biscotti, chocolate-dipped pretzels, meringues, and cookies

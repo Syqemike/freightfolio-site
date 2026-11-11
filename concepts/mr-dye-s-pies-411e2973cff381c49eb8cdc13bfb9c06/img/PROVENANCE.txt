@@ -1,0 +1,4 @@
+Photo provenance for Mr. Dye's Pies.
+md-stall.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/md-stall.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The Mr. Dye's Pies order counter with the menu board, packaged pie slices, and a drink fridge
+md-pie.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/md-pie.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A whole pie in a foil tin
+md-front.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/md-front.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The stall front with the HOT AND SAVORY PASTRIES sign and the BY THE SLICE $7 menu

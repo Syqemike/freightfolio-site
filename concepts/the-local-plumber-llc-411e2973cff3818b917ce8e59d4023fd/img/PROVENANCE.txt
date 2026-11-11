@@ -1,0 +1,4 @@
+Photo provenance for The Local Plumber LLC.
+lp-waterheater.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/lp-waterheater.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A new State ProLine water heater installed next to a furnace
+lp-copper.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/lp-copper.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: New copper pipes and fittings under floor joists
+lp-faucet.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/lp-faucet.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A chrome bathtub and shower faucet in a white tub

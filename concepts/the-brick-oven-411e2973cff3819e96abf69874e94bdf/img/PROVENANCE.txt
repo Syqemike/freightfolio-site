@@ -1,0 +1,4 @@
+Photo provenance for The Brick Oven.
+bo-oven.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/bo-oven.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A pizza with green peppers on a peel in front of the flaming wood-fired brick oven
+bo-pizza.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/bo-pizza.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A whole New York-style pizza with pepperoni and green peppers and a charred crust
+bo-dusk.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/bo-dusk.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The storefront at dusk with an OPEN neon sign

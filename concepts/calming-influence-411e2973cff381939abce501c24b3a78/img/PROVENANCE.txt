@@ -1,0 +1,4 @@
+Photo provenance for Calming Influence.
+ci-exterior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/ci-exterior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The red house exterior with white columns and the Calming Influence sign
+ci-treatment.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/ci-treatment.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A massage room with green walls, a massage table with white linens, a shoji screen, and a stained-glass window
+ci-reception.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/ci-reception.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The reception desk with green walls, framed art, flowers, and a wood floor

@@ -1,0 +1,4 @@
+Photo provenance for Midtown Massage & Bodywork.
+mm-room.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/mm-room.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A treatment room with a white-brick fireplace, a massage table, a floor mat and Thai bolsters, and patterned curtains
+mm-massage.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/mm-massage.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A therapist's hands massaging a client's back
+mm-exterior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111258-real/mm-exterior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The beige house exterior with a columned porch and flower boxes
