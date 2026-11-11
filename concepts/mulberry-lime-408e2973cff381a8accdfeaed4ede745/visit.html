@@ -6,38 +6,69 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Visit | Mulberry &amp; Lime</title>
 <style>
-body { font-family: 'Lucida Sans', sans-serif; background: #faf6f2; color: #2a2126; margin: 0; line-height: 1.7; }
-.disclosure { background: #7a3b5e; color: #fff; padding: 10px 20px; font-size: 14px; text-align: center; }
-header { padding: 28px 20px 8px; max-width: 1080px; margin: 0 auto; text-align: center; }
-header h1 { font-size: 40px; margin: 0 0 4px; }
-header p.tag { font-size: 19px; margin: 0 0 14px; }
-main { max-width: 1080px; margin: 0 auto; padding: 0 20px 64px; }
-nav { max-width: 1080px; margin: 0 auto; padding: 0 20px 18px; text-align: center; }
-nav a { margin-right: 18px; color: #7a3b5e; font-weight: bold; text-decoration: underline; }
-.hero img { width: 100%; height: auto; display: block; }
-.hero .cap { margin-top: -46px; position: relative; background: #fff; padding: 10px 14px; max-width: 82%; }
-figcaption, .cap { font-size: 13px; color: #555; margin: 6px 0 20px; }
-h2 { font-size: 27px; border-bottom: 3px solid #7a3b5e; padding-bottom: 6px; margin-top: 36px; }
-.cta, .cta2 { display: inline-block; background: #7a3b5e; color: #fff; padding: 10px 18px; text-decoration: none; margin: 8px 8px 8px 0; font-weight: bold; border-radius: 18px; }
-.cta2 { background: #2a2126; }
-ul { padding-left: 20px; }
-li { margin-bottom: 8px; }
-.gallery { display: flex; gap: 24px; flex-wrap: wrap; }
-.gallery figure { flex: 1 1 300px; margin: 0; }
-.gallery img { width: 100%; height: auto; display: block; }
-.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-.card { border: 1px solid #7a3b5e; padding: 14px 16px; }
-.card h3 { margin: 0 0 6px; font-size: 19px; }
-.card p { margin: 0; }
-footer { max-width: 1080px; margin: 0 auto; padding: 20px; font-size: 13px; background: #faf6f2; border-top: 3px solid #7a3b5e; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #f7f1e6; color: #26221f; margin: 0; line-height: 1.65; }
+.disclosure { background: #7e2f23; color: #fff; padding: 10px 20px; font-size: 13px; text-align: center; font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif; }
+.wrap { max-width: 1060px; margin: 0 auto; padding: 0 22px; }
+header { padding: 34px 0 12px; }
+.kicker { font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif; font-size: 12px; letter-spacing: 2.5px; text-transform: uppercase; color: #7e2f23; margin: 0 0 8px; }
+header h1 { font-size: 48px; margin: 0 0 6px; line-height: 1.05; font-weight: normal; }
+header p.tag { font-size: 19px; font-style: italic; color: #4a4238; margin: 0; }
+nav { border-top: 1px solid #d8cbb8; border-bottom: 1px solid #d8cbb8; padding: 11px 0; margin: 18px 0 0; }
+nav a { font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif; margin-right: 24px; color: #7e2f23; font-weight: bold; text-decoration: none; font-size: 14px; }
+nav a:hover { text-decoration: underline; }
+main { padding: 0 0 60px; }
+figure { margin: 0 0 10px; }
+figure img { width: 100%; height: auto; display: block; }
+figcaption { font-size: 13px; color: #6b6259; margin: 8px 0 0; font-style: italic; }
+.hero { margin-top: 26px; }
+h2 { font-size: 28px; font-weight: normal; margin: 40px 0 12px; padding-top: 22px; border-top: 3px solid #7e2f23; }
+h3 { font-size: 21px; font-weight: normal; color: #33503e; margin: 26px 0 4px; }
+p { margin: 0 0 14px; font-size: 17px; }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start; margin-top: 8px; }
+.products { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 8px; }
+.product .name { font-weight: bold; font-size: 17px; margin: 10px 0 2px; }
+.product .price { color: #7e2f23; font-weight: bold; margin: 0; }
+.svc { border-top: 1px solid #d8cbb8; padding: 11px 0; font-size: 17px; }
+.svc:last-child { border-bottom: 1px solid #d8cbb8; }
+.cta { display: inline-block; background: #7e2f23; color: #fff; padding: 12px 22px; text-decoration: none; font-weight: bold; font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif; font-size: 15px; border-radius: 4px; margin: 6px 8px 6px 0; }
+.cta.green { background: #33503e; }
+.social { font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif; font-size: 15px; }
+.social a { color: #7e2f23; font-weight: bold; }
+footer { border-top: 3px solid #7e2f23; padding: 20px 0 30px; font-size: 13px; color: #6b6259; }
+footer p { font-size: 13px; }
+@media (max-width: 700px) { header h1 { font-size: 34px; } .split { grid-template-columns: 1fr; } .products { grid-template-columns: 1fr; } h2 { font-size: 24px; } }
 </style>
 </head>
 <body>
 <div class="disclosure">Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</div>
-<header><h1>Mulberry &amp; Lime</h1><p class="tag">A historic downtown Lexington gift shop and home decor boutique in an old house.</p><p>Lexington, KY</p></header>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav>
-<main><h2>Visit</h2><p>216 N Limestone, Lexington, KY</p><p><a href="https://www.google.com/maps/search/?api=1&query=216%20N%20Limestone%2C%20Lexington%2C%20KY">Get directions</a></p><h2>Contact</h2><p>Phone: <a href="tel:+18592310800">+1 859-231-0800</a></p><p>Questions? Call.</p><p><a class="cta" href="tel:+18592310800">Call to ask: +1 859-231-0800</a> </p><h2>Hours</h2><p>Monday through Saturday 10:00 AM to 6:00 PM. Sunday 12:00 PM to 5:00 PM.</p></main>
-<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p><p>Mulberry &amp; Lime, 216 N Limestone, Lexington, KY | +1 859-231-0800</p>
-<p><a class="cta" href="tel:+18592310800">Call to ask: +1 859-231-0800</a> </p></footer>
+<div class="wrap">
+<header>
+<p class="kicker">216 N Limestone &middot; Lexington, Kentucky</p>
+<h1>Mulberry &amp; Lime</h1>
+<p class="tag">Home furnishings and gifts in the Matthew Kennedy House, since 2001.</p>
+</header>
+<nav><a href="index.html">Home</a><a href="services.html">What the shop carries</a><a href="visit.html">Visit</a></nav>
+<main>
+<figure class="hero"><img src="img/door.jpg" alt="The red front door of the shop between white columns, with 216 above."><figcaption>The red front door at 216 N Limestone.</figcaption></figure>
+<p class="kicker">Visit</p>
+<h2>Find the house</h2>
+<div class="split">
+<div>
+<p>216 N Limestone, Lexington, KY</p>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=216%20N%20Limestone%2C%20Lexington%2C%20KY">Get directions</a></p>
+<h3>Hours</h3>
+<p>Monday through Saturday 10:00 AM to 6:00 PM. Sunday 12:00 PM to 5:00 PM.</p>
+<h3>Contact</h3>
+<p>Phone: <a href="tel:+18592310800">+1 859-231-0800</a></p>
+<p>Questions? Call.</p>
+<p><a class="cta" href="tel:+18592310800">Call to ask: +1 859-231-0800</a></p>
+<p class="social">Follow the shop on <a href="https://www.facebook.com/MulberryandLime">Facebook</a> and <a href="https://www.instagram.com/mulberryandlimeofficial">Instagram</a>.</p>
+</div>
+<figure><img src="img/portico.jpg" alt="The white-columned front portico of the house, with 216 over the door and a hammock."><figcaption>The front portico at 216 N Limestone.</figcaption></figure>
+</div>
+<figure><img src="img/house.jpg" alt="The brick Matthew Kennedy House, home of Mulberry &amp; Lime."><figcaption>The Matthew Kennedy House from the street.</figcaption></figure>
+</main>
+<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p><p>Mulberry &amp; Lime, 216 N Limestone, Lexington, KY | +1 859-231-0800</p></footer>
+</div>
 </body>
 </html>
