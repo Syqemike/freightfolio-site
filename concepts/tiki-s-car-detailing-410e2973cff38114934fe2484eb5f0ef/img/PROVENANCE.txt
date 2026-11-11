@@ -1,0 +1,4 @@
+Photo provenance for Tiki's Car Detailing.
+bentley.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/tk-bentley.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A silver Bentley Bentayga SUV in a garage.
+sedan-bay.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/tk-sedan-bay.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The rear of a dark gray sedan in a wet garage detailing bay.
+sports-car.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/tk-sports-car.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A black sports car in a garage bay, with a person in red in the far background.

@@ -1,0 +1,4 @@
+Photo provenance for Dazzling Beauty Nail Salon.
+pink-glitter-nails.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/dz-pink-glitter.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A hand with bright pink glitter nails and a red-heart accent nail, against snow.
+purple-glitter-nails.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/dz-purple-glitter.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A hand with long dark purple and black glitter nails on white lace.
+red-heart-nails.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/dz-red-hearts.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A hand with bright red nails and white accent nails with red hearts and dots.

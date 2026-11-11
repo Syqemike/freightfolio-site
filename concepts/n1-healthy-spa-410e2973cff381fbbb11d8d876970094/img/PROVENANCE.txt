@@ -1,0 +1,4 @@
+Photo provenance for N1 Healthy Spa.
+massage-tables.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/n1-table.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Massage tables with white sheets, teal skirts, and rolled towels in a room with a window.
+room-black-white.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/n1-room-bw.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A black-and-white massage room with two tables, face cradles, and framed art.
+room-dark.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/n1-room-dark.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A dark massage room with two tables, towels, and a bay window with plants.

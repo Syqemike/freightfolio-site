@@ -1,0 +1,4 @@
+Photo provenance for Jenny's Nails and Spa.
+purple-daisy-nails.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/jn-purple-daisy.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A hand with long purple nails with gold foil and white daisy accents.
+mickey-nails.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/jn-mickey.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Two hands with red, white, and black Mickey Mouse nail art and a diamond ring.
+storefront-sign.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/jn-storefront.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The storefront sign reading Jenny's NAILS and SPA above a brick facade.

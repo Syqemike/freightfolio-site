@@ -1,0 +1,4 @@
+Photo provenance for Shanghai Cottage.
+storefront.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/sh-storefront.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The exterior brick storefront with a green Shanghai Cottage sign, glass doors, steps, and landscaping.
+orange-chicken.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/sh-orange-chicken.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: Orange chicken with broccoli on an oval plate, with a bowl of fried rice.
+sushi-rolls.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/sh-sushi-rolls.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A plate of two rows of spicy tuna sushi rolls, with wasabi and pickled ginger.

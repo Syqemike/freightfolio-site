@@ -1,0 +1,4 @@
+Photo provenance for Jerome Smart Agency LLC.
+agent-consultation.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-fresh/pexels-8441785.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A suited consultant discusses papers with an older client across a bright office desk, seen over the client's shoulder.
+family-house.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-fresh/pexels-12700464.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A beige two-story suburban house with a garage, a concrete driveway, and a manicured green lawn under a blue sky.
+red-hatchback.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-fresh/pexels-2553410.jpg :: STOCK photo from Pexels, labeled as stock on every page :: A red hatchback drives ahead on a winding countryside road, seen from inside another car past its dashboard and rearview mirror.

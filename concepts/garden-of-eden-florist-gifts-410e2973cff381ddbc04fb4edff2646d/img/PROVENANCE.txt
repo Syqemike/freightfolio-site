@@ -1,0 +1,4 @@
+Photo provenance for Garden Of Eden Florist & Gifts.
+shop-interior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/ed-interior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The shop interior with wood beams, tables of flowers and plants, and a Christmas tree.
+bouquet.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/ed-bouquet.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A bouquet of pink, orange, yellow, and white flowers.
+gift-basket.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/ed-gift-basket.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A gift basket with fruit in cellophane and a large burlap bow, on a table in the shop.

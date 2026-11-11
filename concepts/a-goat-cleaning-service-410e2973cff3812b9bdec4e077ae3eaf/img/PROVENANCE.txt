@@ -1,0 +1,4 @@
+Photo provenance for A GOAT Cleaning Service.
+team.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/gt-team.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: The cleaning team in matching gray A GOAT shirts, above a before-and-after split of a cleaned refrigerator shelf.
+ladder-cleaning.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/gt-ladder.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A worker on a ladder cleaning the glass of a sunroom exterior.
+bedroom.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd101858-real/gt-bedroom.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing or business website) :: A cleaned bedroom with an orange wall, a pink bed, and clothes hanging in an open closet.
