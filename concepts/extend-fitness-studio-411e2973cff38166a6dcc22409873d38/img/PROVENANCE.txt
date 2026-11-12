@@ -1,0 +1,4 @@
+Photo provenance for Extend Fitness Studio.
+ef-class.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/ef-class.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A pole-fitness class in progress, several women on poles in the mirrored studio
+ef-hoops.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/ef-hoops.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Two women on aerial hoops and poles in the mirrored studio with a wooden floor
+ef-studio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/ef-studio.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The empty studio interior with poles, a brick arch wall, purple LED strip lighting, a wooden floor, and mirrors

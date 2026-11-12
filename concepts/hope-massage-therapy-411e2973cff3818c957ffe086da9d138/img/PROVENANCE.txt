@@ -1,0 +1,4 @@
+Photo provenance for Hope Massage Therapy.
+hm-room.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/hm-room.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A massage room with a massage table, a white shelf with jars and a candle, a large bird painting, and grey curtains
+hm-doors.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/hm-doors.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The entrance doors marked Suite ABC, with signs for Massage Therapy Gabriela Hart, LMT, and Skin Care by Amar
+hm-patio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/hm-patio.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A therapist giving a chair massage on a covered patio beside a pool with a rock waterfall

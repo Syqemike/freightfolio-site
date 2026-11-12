@@ -1,0 +1,4 @@
+Photo provenance for Soda City Movers.
+sc-truck.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/sc-truck.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A white Soda City Movers box truck with the soda-can logo parked on a residential street
+sc-crew.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/sc-crew.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Three movers in green Soda City Movers shirts carrying furniture toward a white box truck outside a house
+sc-wrap.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/sc-wrap.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A living room with furniture wrapped in plastic for a move, under a chandelier

@@ -1,0 +1,4 @@
+Photo provenance for Uptown Food Truck.
+uf-truck.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/uf-truck.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The purple Uptown Food Truck parked in a lot at dusk with the Atlanta skyline behind it
+uf-shrimp.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/uf-shrimp.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Two plates of shrimp and grits, the shrimp garnished with herbs
+uf-food.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/uf-food.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Takeout containers of seasoned meat with peppers, onions, and tomato slices

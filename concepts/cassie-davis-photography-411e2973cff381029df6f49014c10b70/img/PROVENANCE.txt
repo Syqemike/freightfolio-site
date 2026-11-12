@@ -1,0 +1,4 @@
+Photo provenance for Cassie Davis Photography.
+cd-family4.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/cd-family4.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A father with two young girls embracing outdoors on grass
+cd-beach.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/cd-beach.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A young boy and girl in white holding hands at the water's edge on a beach at sunset
+cd-newborn.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/cd-newborn.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Parents in white holding their newborn baby in white indoors

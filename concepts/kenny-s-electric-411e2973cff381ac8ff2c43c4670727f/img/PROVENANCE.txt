@@ -1,0 +1,4 @@
+Photo provenance for Kenny's Electric.
+ke-lights.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/ke-lights.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Five clear-glass pendant lights with Edison bulbs hanging from a black ceiling mount in a home
+ke-panel.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/ke-panel.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Two electricians in orange hard hats working on an open electrical panel with tangled wires
+ke-wiring.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/ke-wiring.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Close-up of hands using pliers to twist wires at a blue open electrical box in a wood-framed wall

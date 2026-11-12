@@ -1,0 +1,4 @@
+Photo provenance for Horvitz Plumbing & Heating.
+hv-van.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/hv-van.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A white M. Horvitz Plumbing and Heating van parked on a street in front of houses
+hv-sink.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/hv-sink.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A white bathroom sink with a dark bronze three-piece faucet
+hv-laundry.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/hv-laundry.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A white stacked washer and dryer unit installed in a small closet

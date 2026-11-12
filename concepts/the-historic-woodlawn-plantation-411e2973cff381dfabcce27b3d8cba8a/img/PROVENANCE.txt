@@ -1,0 +1,4 @@
+Photo provenance for The Historic Woodlawn Plantation.
+wp-house.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/wp-house.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The white two-storey plantation house with a wraparound porch and lit windows, surrounded by trees
+wp-bride.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/wp-bride.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A bride in a white dress holding a bouquet, standing under a large tree on the grounds
+wp-pavilion.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/wp-pavilion.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: An open-air pavilion with a metal roof, draped curtains, and tables on a concrete pad in a grassy field

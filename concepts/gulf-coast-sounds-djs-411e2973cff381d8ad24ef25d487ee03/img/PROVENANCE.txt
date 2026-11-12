@@ -1,0 +1,4 @@
+Photo provenance for Gulf Coast Sounds DJs.
+gc-hall.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/gc-hall.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A DJ setup with a laptop and controller in a wedding reception hall with purple uplighting and a monogram projected on the wall
+gc-patio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/gc-patio.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Guests dancing under purple light on an outdoor patio, seen from behind the DJ booth
+gc-rooftop.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/gc-rooftop.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A DJ booth on a rooftop terrace at dusk, with speakers, a laptop, and orange lamps, with the ocean behind

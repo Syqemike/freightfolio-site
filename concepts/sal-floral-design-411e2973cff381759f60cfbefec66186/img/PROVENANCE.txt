@@ -1,0 +1,4 @@
+Photo provenance for Sal Floral Design.
+sf-bike.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/sf-bike.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A moss-covered bicycle outside the shop, with a crate of plants
+sf-interior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/sf-interior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The shop entrance with a large crystal chandelier, a FLOWERS cooler, and a gold vase of magenta orchids
+sf-wedding.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111858-real/sf-wedding.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A bride and groom under a wedding arch decorated with greenery and white flowers
