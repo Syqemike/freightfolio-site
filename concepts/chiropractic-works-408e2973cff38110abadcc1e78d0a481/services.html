@@ -6,37 +6,92 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Services | Chiropractic Works</title>
 <style>
-body { font-family: 'Century Schoolbook', serif; background: #f7f3ec; color: #22301f; margin: 0; line-height: 1.6; }
-.disclosure { background: #3f6b4f; color: #fff; padding: 10px 20px; font-size: 14px; text-align: center; }
-header { padding: 32px 20px 8px; max-width: 1100px; margin: 0 auto; text-align: center; }
-header h1 { font-size: 40px; margin: 0 0 4px; }
-header p.tag { font-size: 19px; margin: 0 0 14px; }
-main { max-width: 1100px; margin: 0 auto; padding: 0 20px 56px; }
-nav { max-width: 1100px; margin: 0 auto 18px; padding: 10px 20px; text-align: center; border: 2px solid #3f6b4f; }
-nav a { margin-right: 18px; color: #3f6b4f; font-weight: bold; text-decoration: none; }
-.hero img { width: 100%; height: auto; display: block; border: 6px solid #3f6b4f; padding: 8px; background: #fff; box-sizing: border-box; }
-figcaption, .cap { font-size: 13px; color: #555; margin: 6px 0 20px; }
-h2 { font-size: 27px; border-bottom: 6px double #3f6b4f; padding-bottom: 8px; margin-top: 30px; }
-.cta, .cta2 { display: inline-block; background: #3f6b4f; color: #fff; padding: 10px 18px; text-decoration: none; margin: 8px 8px 8px 0; font-weight: bold; border-radius: 18px; }
-.cta2 { background: #22301f; }
-ul { padding-left: 20px; }
-li { margin-bottom: 8px; }
-.gallery { display: flex; gap: 12px; flex-wrap: wrap; }
-.gallery figure { flex: 1 1 200px; margin: 0; }
-.gallery img { width: 100%; height: auto; display: block; }
-table.services { border-collapse: collapse; width: 100%; }
-table.services td { padding: 10px 12px; border-bottom: 1px solid #3f6b4f; vertical-align: top; }
-table.services td:first-child { white-space: nowrap; }
-footer { max-width: 1100px; margin: 0 auto; padding: 20px; font-size: 13px; background: #f7f3ec; border-top: 3px solid #3f6b4f; }
+body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: #f7f2e6; color: #22302c; margin: 0; line-height: 1.65; }
+.disclosure { background: #0e4a57; color: #fff; padding: 10px 20px; font-size: 13px; text-align: center; letter-spacing: .02em; }
+.mast { max-width: 1120px; margin: 0 auto; padding: 30px 22px 0; }
+.mast .kicker { font-size: 12px; letter-spacing: .28em; text-transform: uppercase; color: #8a6a12; font-weight: bold; margin: 0 0 6px; }
+.mast h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 46px; line-height: 1.05; margin: 0 0 6px; color: #0e4a57; }
+.mast .sub { font-family: Georgia, 'Times New Roman', serif; font-size: 19px; color: #44524d; margin: 0 0 18px; }
+nav { max-width: 1120px; margin: 0 auto 26px; padding: 0 22px; }
+nav a { display: inline-block; margin-right: 8px; padding: 8px 16px; color: #0e4a57; font-weight: bold; text-decoration: none; border: 2px solid #0e4a57; border-radius: 999px; font-size: 14px; }
+nav a.on { background: #0e4a57; color: #fff; }
+main { max-width: 1120px; margin: 0 auto; padding: 0 22px 60px; }
+h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 30px; color: #0e4a57; margin: 44px 0 10px; }
+h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 23px; color: #0e4a57; margin: 0 0 8px; }
+p { margin: 0 0 14px; }
+.cap { font-size: 13px; color: #5c6a66; margin: 8px 0 0; }
+.cta { display: inline-block; background: #0e4a57; color: #fff; padding: 12px 22px; text-decoration: none; font-weight: bold; border-radius: 999px; margin: 6px 10px 6px 0; }
+.cta.gold { background: #c08a12; }
+.cta.ghost { background: transparent; color: #0e4a57; border: 2px solid #0e4a57; }
+.hero { display: grid; grid-template-columns: 1.12fr 1fr; gap: 28px; align-items: center; }
+.hero img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.hero .lede { font-family: Georgia, 'Times New Roman', serif; font-size: 26px; line-height: 1.3; color: #0e4a57; margin: 0 0 14px; }
+.ribbon { display: grid; grid-template-columns: repeat(4, 1fr); background: #0e4a57; color: #fff; margin: 34px 0 0; border-radius: 4px; overflow: hidden; }
+.ribbon div { padding: 18px 18px; border-left: 1px solid #c08a12; }
+.ribbon div:first-child { border-left: none; }
+.ribbon b { display: block; font-family: Georgia, serif; font-size: 20px; color: #f2c14e; margin-bottom: 2px; }
+.ribbon span { font-size: 13px; line-height: 1.4; }
+.split { display: grid; grid-template-columns: 1fr 1.25fr; gap: 28px; align-items: start; margin-top: 40px; }
+.split img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.portrait { max-width: 220px; border: 5px solid #fff; box-shadow: 0 2px 10px rgba(0,0,0,.18); }
+.svcrow { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: center; padding: 26px 0; border-top: 2px solid #c08a12; }
+.svcrow img { width: 100%; height: 300px; object-fit: cover; display: block; border-radius: 4px; }
+.svcrow img.tall { height: 380px; }
+.svcrow:nth-child(even) .svcphoto { order: 2; }
+.svcnote { padding: 26px 0; border-top: 2px solid #c08a12; }
+.hours { list-style: none; padding: 0; margin: 0 0 14px; }
+.hours li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid #d8cfae; }
+.hours li b { font-weight: bold; }
+.visitgrid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: start; }
+.visitgrid img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.card { background: #fffdf7; border: 2px solid #0e4a57; border-radius: 4px; padding: 22px 24px; }
+.card h3 { margin-top: 0; }
+footer { max-width: 1120px; margin: 0 auto; padding: 22px; font-size: 13px; border-top: 3px solid #c08a12; color: #44524d; }
+footer a { color: #0e4a57; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.duo img { width: 100%; height: auto; display: block; border-radius: 4px; }
+@media (max-width: 720px) {
+  .mast h1 { font-size: 34px; }
+  .hero, .split, .svcrow, .visitgrid, .duo { grid-template-columns: 1fr; }
+  .ribbon { grid-template-columns: 1fr 1fr; }
+  .svcrow img, .svcrow img.tall { height: auto; }
+  .svcrow:nth-child(even) .svcphoto { order: 0; }
+}
 </style>
 </head>
 <body>
 <div class="disclosure">Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</div>
-<header><h1>Chiropractic Works</h1><p class="tag">Chiropractic care near the UVM campus, from Dr. Francis Smith.</p><p>Burlington, VT</p></header>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav>
-<main><h2>Services</h2><div class="svc-grid"><article class="svc-card"><h3>Chiropractic care</h3></article><article class="svc-card"><h3>Class IV laser therapy</h3></article><article class="svc-card"><h3>Spinal decompression</h3></article></div><p><a class="cta" href="tel:+18028645000">Call to ask: +1 802-864-5000</a> </p>
-<h2>Gallery</h2><div class="gallery"><figure><img src="img/wellness2.jpg" alt="Therapist giving a seated woman a spinal and back adjustment in a clinic."><figcaption class="cap">Stock photo: Therapist giving a seated woman a spinal and back adjustment in a clinic.</figcaption></figure><figure><img src="img/wellness3.jpg" alt="Chiropractor using a handheld adjustment instrument on a seated woman's neck."><figcaption class="cap">Stock photo: Chiropractor using a handheld adjustment instrument on a seated woman's neck.</figcaption></figure></div></main>
-<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p><p>Chiropractic Works, 48 Colchester Ave, Burlington, VT 05401 | +1 802-864-5000</p>
-<p><a class="cta" href="tel:+18028645000">Call to ask: +1 802-864-5000</a> </p></footer>
+<div class="mast"><p class="kicker">Burlington, Vermont</p><h1>Chiropractic Works</h1><p class="sub">Chiropractic care on Colchester Avenue, from Dr. Francis J. Smith.</p></div>
+<nav><a href="index.html">Home</a><a href="services.html" class="on">Services</a><a href="visit.html">Visit</a></nav>
+<main>
+<h2 style="margin-top:0">Services</h2>
+<p>Care at Chiropractic Works covers the conditions and services below. Appointments are made by phone, or by the request form on the practice's own site.</p>
+<div class="svcrow">
+<div class="svcphoto"><img class="tall" src="img/adjustment.jpg" alt="Dr. Smith adjusting a patient lying face down on the treatment table."></div>
+<div><h3>Chiropractic care</h3>
+<p>The practice lists care for back pain, neck pain, sciatica, shoulder pain, whiplash, and headaches and migraines.</p>
+<p class="cap">Dr. Smith adjusting a patient on the treatment table.</p></div>
+</div>
+<div class="svcrow">
+<div class="svcphoto"><img src="img/treatment-room.jpg" alt="The treatment room at Chiropractic Works, with the adjustment table."></div>
+<div><h3>Spinal decompression</h3>
+<p>Spinal decompression is offered at the Colchester Avenue office, in the same treatment room as chiropractic care.</p>
+<p class="cap">The treatment room, with the adjustment table.</p></div>
+</div>
+<div class="svcrow">
+<div class="svcphoto"><img src="img/dr-xray.jpg" alt="Dr. Smith pointing at a spine X-ray on a monitor in the office."></div>
+<div><h3>X-rays</h3>
+<p>The office has its own X-ray room, and Dr. Smith reviews the images in the office.</p>
+<p class="cap">Dr. Smith pointing at a spine X-ray on the office monitor.</p></div>
+</div>
+<div class="svcnote"><h3>Class IV laser therapy</h3>
+<p>ReliefNOW Laser is the practice's Class IV laser therapy.</p></div>
+<div class="svcnote"><h3>Massage therapy</h3>
+<p>Massage therapy is listed among the practice's services.</p></div>
+<p style="margin-top:26px"><a class="cta" href="tel:+18028645000">Call to book: +1 802-864-5000</a><a class="cta gold" href="https://chiropracticworksvt.com/appointments/">Request an appointment</a></p>
+</main>
+<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p>
+<p>Chiropractic Works, 48 Colchester Ave, Burlington, VT 05401 | <a href="tel:+18028645000">+1 802-864-5000</a> | <a href="mailto:chiropracticworksvt@gmail.com">chiropracticworksvt@gmail.com</a></p>
+<p><a href="https://www.facebook.com/chiropracticworksvt/">Facebook</a> | <a href="https://www.instagram.com/chiropracticworksvt/">Instagram</a> | <a href="https://www.yelp.com/biz/chiropractic-works-burlington">Yelp</a></p></footer>
 </body>
 </html>
