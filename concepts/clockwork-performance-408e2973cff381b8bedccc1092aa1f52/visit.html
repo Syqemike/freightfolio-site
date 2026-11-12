@@ -6,33 +6,111 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Visit | Clockwork Performance</title>
 <style>
-body { font-family: 'Century Schoolbook', serif; background: #f4f4f2; color: #1d1d1d; margin: 0; line-height: 1.5; }
-.disclosure { background: #d35400; color: #fff; padding: 10px 20px; font-size: 14px; text-align: center; }
-header { padding: 32px 20px 8px; max-width: 1040px; margin: 0 auto; text-align: center; }
-header h1 { font-size: 39px; margin: 0 0 4px; }
-header p.tag { font-size: 19px; margin: 0 0 14px; }
-main { max-width: 1040px; margin: 0 auto; padding: 0 20px 40px; }
-nav { max-width: 1040px; margin: 0 auto 18px; padding: 10px 20px; text-align: center; border: 2px solid #d35400; }
-nav a { margin-right: 18px; color: #d35400; font-weight: bold; text-decoration: none; }
-.hero img { width: 100%; height: 340px; object-fit: cover; display: block; }
-figcaption, .cap { font-size: 13px; color: #555; margin: 6px 0 20px; }
-h2 { font-size: 27px; border-bottom: 6px double #d35400; padding-bottom: 8px; margin-top: 24px; }
-.cta, .cta2 { display: inline-block; background: #d35400; color: #fff; padding: 10px 18px; text-decoration: none; margin: 8px 8px 8px 0; font-weight: bold; border-radius: 18px; }
-.cta2 { background: #1d1d1d; }
-ul { padding-left: 20px; }
-li { margin-bottom: 8px; }
-.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.gallery figure { margin: 0; }
-.gallery img { width: 100%; height: auto; display: block; }
-footer { max-width: 1040px; margin: 0 auto; padding: 20px; font-size: 13px; background: #f4f4f2; border-top: 3px solid #d35400; }
+:root{--ink:#17191c;--steel:#2a2e33;--paper:#eceae6;--orange:#e8590c;--white:#fff}
+*{box-sizing:border-box}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);margin:0;line-height:1.55}
+.disclosure{background:var(--orange);color:#fff;padding:10px 20px;font-size:13px;text-align:center}
+.masthead{max-width:1120px;margin:0 auto;padding:34px 20px 10px}
+.masthead h1{font-family:'Arial Narrow','Helvetica Neue',Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.02em;font-size:56px;line-height:.95;margin:0}
+.masthead .tag{font-size:20px;margin:10px 0 14px}
+nav{background:var(--ink);padding:0 20px}
+nav .inner{max-width:1120px;margin:0 auto;display:flex;gap:0}
+nav a{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:14px;padding:14px 18px 14px 0;margin-right:18px}
+nav a:hover{color:var(--orange)}
+main{max-width:1120px;margin:0 auto;padding:0 20px 40px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px;align-items:start}
+.grid img{width:100%;height:420px;object-fit:cover;display:block}
+.cap{font-size:13px;color:#555;margin:6px 0 0}
+h2.sec{font-family:'Arial Narrow','Helvetica Neue',Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.02em;font-size:32px;line-height:1.05;margin:0 0 12px;border-bottom:4px solid var(--orange);padding-bottom:8px}
+p{font-size:17px}
+p.addr{font-size:20px;font-weight:700;margin:0 0 8px}
+a{color:var(--orange)}
+.cta{display:inline-block;background:var(--orange);color:#fff;padding:11px 20px;text-decoration:none;font-weight:700;margin:8px 10px 8px 0}
+.cta.dark{background:var(--ink)}
+.cta:hover{opacity:.9}
+table{width:100%;border-collapse:collapse;background:#fff;margin-top:14px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid #d8d4cc;font-size:16px}
+th{background:var(--ink);color:#fff;text-transform:uppercase;letter-spacing:.05em;font-size:13px}
+td.day{font-weight:700}
+section{margin-top:40px}
+.note{font-size:15px;color:#555;margin-top:12px}
+.social{list-style:none;padding:0;margin:14px 0 0}
+.social li{margin-bottom:8px;font-size:17px}
+footer{background:var(--ink);color:#cfccc6;margin-top:44px;padding:26px 20px;font-size:13px}
+footer .inner{max-width:1120px;margin:0 auto}
+footer a{color:#fff}
+footer p{margin:0 0 8px}
+@media (max-width:760px){
+.masthead h1{font-size:38px}
+.grid{grid-template-columns:1fr}
+.grid img{height:300px}
+nav .inner{flex-wrap:wrap}
+}
 </style>
 </head>
 <body>
 <div class="disclosure">Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</div>
-<header><h1>Clockwork Performance</h1><p class="tag">A functional strength training gym in Kenner, led by owner and head coach Chris Lockhart.</p><p>Kenner, LA</p></header>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav>
-<main><h2>Visit</h2><p>1332 Carroll St, Kenner, LA 70062</p><p><a href="https://www.google.com/maps/search/?api=1&query=1332%20Carroll%20St%2C%20Kenner%2C%20LA%2070062">Get directions</a></p><h2>Hours</h2><p>Monday through Wednesday 6:00 AM to 6:30 PM. Thursday 8:30 AM to 6:30 PM. Friday 6:00 AM to 1:00 PM. Saturday 8:00 AM to 11:00 AM. Call to confirm Monday hours.</p><h2>Contact</h2><p>Phone: <a href="tel:+15043850525">+1 504-385-0525</a></p><p>Email: <a href='mailto:clockwork.perform@gmail.com'>clockwork.perform@gmail.com</a></p><p>Questions? Call or email.</p><p><a class="cta" href="tel:+15043850525">Call to ask: +1 504-385-0525</a> <a class="cta2" href="mailto:clockwork.perform@gmail.com">Email: clockwork.perform@gmail.com</a></p></main>
-<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p><p>Clockwork Performance, 1332 Carroll St, Kenner, LA 70062 | +1 504-385-0525</p>
-<p><a class="cta" href="tel:+15043850525">Call to ask: +1 504-385-0525</a> <a class="cta2" href="mailto:clockwork.perform@gmail.com">Email: clockwork.perform@gmail.com</a></p></footer>
+<header class="masthead">
+<h1>Visit</h1>
+<p class="tag">Clockwork Performance, Kenner, Louisiana.</p>
+</header>
+<nav><div class="inner"><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></div></nav>
+<main>
+<div class="grid">
+<div>
+<img src="img/door.jpg" alt="The entrance door to Clockwork Performance with the gym logo and phone number.">
+<p class="cap">The entrance to Clockwork Performance, 1332 Carroll St.</p>
+</div>
+<div>
+<h2 class="sec">Find the gym</h2>
+<p class="addr">1332 Carroll St, Kenner, LA 70062</p>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Clockwork+Performance+1332+Carroll+St+Kenner+LA+70062">Get directions</a></p>
+<p>Phone: <a href="tel:+15042967369">+1 504-296-7369</a></p>
+<p>Email: <a href="mailto:clockwork.perform@gmail.com">clockwork.perform@gmail.com</a></p>
+<p><a class="cta" href="tel:+15042967369">Call to book</a><a class="cta dark" href="mailto:clockwork.perform@gmail.com">Email</a></p>
+<p>Ask about a free trial class when you call.</p>
+</div>
+</div>
+<section>
+<h2 class="sec">Hours</h2>
+<table>
+<tr><th>Day</th><th>Hours</th></tr>
+<tr><td class="day">Monday</td><td>6:00 AM to 6:30 PM</td></tr>
+<tr><td class="day">Tuesday</td><td>6:00 AM to 6:30 PM</td></tr>
+<tr><td class="day">Wednesday</td><td>6:00 AM to 6:30 PM</td></tr>
+<tr><td class="day">Thursday</td><td>8:30 AM to 6:30 PM</td></tr>
+<tr><td class="day">Friday</td><td>6:00 AM to 1:00 PM</td></tr>
+<tr><td class="day">Saturday</td><td>8:00 AM to 11:00 AM</td></tr>
+<tr><td class="day">Sunday</td><td>Closed</td></tr>
+</table>
+</section>
+<section>
+<h2 class="sec">Class times</h2>
+<table>
+<tr><th>Time</th><th>Class</th><th>Days</th></tr>
+<tr><td>7:00 AM</td><td>Conditioning</td><td>Tuesday, Thursday</td></tr>
+<tr><td>9:00 AM</td><td>Functional Strength</td><td>Monday, Wednesday, Friday, Saturday</td></tr>
+<tr><td>10:00 AM</td><td>Performance Training</td><td>Saturday</td></tr>
+<tr><td>12:00 PM</td><td>Functional Strength</td><td>Monday, Wednesday, Thursday</td></tr>
+<tr><td>4:30 PM</td><td>Youth Training</td><td>Monday to Thursday</td></tr>
+<tr><td>5:30 PM</td><td>Performance Training</td><td>Monday, Wednesday</td></tr>
+<tr><td>5:30 PM</td><td>Functional Strength</td><td>Tuesday, Thursday</td></tr>
+</table>
+<p class="note">Class times change seasonally. Call to confirm before your first visit.</p>
+</section>
+<section>
+<h2 class="sec">Find us online</h2>
+<ul class="social">
+<li>Facebook: <a href="https://www.facebook.com/clockwork.performance/">facebook.com/clockwork.performance</a></li>
+<li>Instagram: <a href="https://www.instagram.com/clockwork.performance/">@clockwork.performance</a></li>
+<li>The gym&rsquo;s website: <a href="https://www.clockworkperform.com/">clockworkperform.com</a></li>
+</ul>
+</section>
+</main>
+<footer><div class="inner">
+<p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business&rsquo;s live website.</p>
+<p>Clockwork Performance, 1332 Carroll St, Kenner, LA 70062 | <a href="tel:+15042967369">+1 504-296-7369</a> | <a href="mailto:clockwork.perform@gmail.com">clockwork.perform@gmail.com</a></p>
+<p><a href="index.html">Home</a> | <a href="services.html">Services</a> | <a href="visit.html">Visit</a></p>
+</div></footer>
 </body>
 </html>

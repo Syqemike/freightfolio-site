@@ -6,37 +6,179 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Home | Clockwork Performance</title>
 <style>
-body { font-family: 'Century Schoolbook', serif; background: #f4f4f2; color: #1d1d1d; margin: 0; line-height: 1.5; }
-.disclosure { background: #d35400; color: #fff; padding: 10px 20px; font-size: 14px; text-align: center; }
-header { padding: 32px 20px 8px; max-width: 1040px; margin: 0 auto; text-align: center; }
-header h1 { font-size: 39px; margin: 0 0 4px; }
-header p.tag { font-size: 19px; margin: 0 0 14px; }
-main { max-width: 1040px; margin: 0 auto; padding: 0 20px 40px; }
-nav { max-width: 1040px; margin: 0 auto 18px; padding: 10px 20px; text-align: center; border: 2px solid #d35400; }
-nav a { margin-right: 18px; color: #d35400; font-weight: bold; text-decoration: none; }
-.hero img { width: 100%; height: 340px; object-fit: cover; display: block; }
-figcaption, .cap { font-size: 13px; color: #555; margin: 6px 0 20px; }
-h2 { font-size: 27px; border-bottom: 6px double #d35400; padding-bottom: 8px; margin-top: 24px; }
-.cta, .cta2 { display: inline-block; background: #d35400; color: #fff; padding: 10px 18px; text-decoration: none; margin: 8px 8px 8px 0; font-weight: bold; border-radius: 18px; }
-.cta2 { background: #1d1d1d; }
-ul { padding-left: 20px; }
-li { margin-bottom: 8px; }
-.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.gallery figure { margin: 0; }
-.gallery img { width: 100%; height: auto; display: block; }
-footer { max-width: 1040px; margin: 0 auto; padding: 20px; font-size: 13px; background: #f4f4f2; border-top: 3px solid #d35400; }
+:root{--ink:#17191c;--steel:#2a2e33;--paper:#eceae6;--orange:#e8590c;--line:#d8d4cc;--white:#fff}
+*{box-sizing:border-box}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);margin:0;line-height:1.55}
+.disclosure{background:var(--orange);color:#fff;padding:10px 20px;font-size:13px;text-align:center}
+.masthead{max-width:1120px;margin:0 auto;padding:34px 20px 10px}
+.masthead h1{font-family:'Arial Narrow','Helvetica Neue',Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.02em;font-size:64px;line-height:.95;margin:0}
+.masthead .tag{font-size:20px;margin:10px 0 14px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 6px}
+.badge{border:2px solid var(--ink);padding:6px 12px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:#fff}
+.badge.orange{border-color:var(--orange);color:var(--orange)}
+nav{background:var(--ink);padding:0 20px}
+nav .inner{max-width:1120px;margin:0 auto;display:flex;gap:0}
+nav a{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:14px;padding:14px 18px 14px 0;margin-right:18px}
+nav a:hover{color:var(--orange)}
+.hero{position:relative;max-width:1120px;margin:22px auto 0;padding:0 20px}
+.hero img{width:100%;height:520px;object-fit:cover;object-position:62% 50%;display:block}
+.hero .panel{position:absolute;left:20px;bottom:0;max-width:560px;background:rgba(23,25,28,.88);color:#fff;padding:26px 28px 24px}
+.hero .panel h2{font-family:'Arial Narrow','Helvetica Neue',Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.02em;font-size:44px;line-height:1;margin:0 0 10px}
+.hero .panel p{margin:0 0 16px;font-size:17px}
+.cta{display:inline-block;background:var(--orange);color:#fff;padding:11px 20px;text-decoration:none;font-weight:700;margin:0 10px 8px 0}
+.cta.dark{background:var(--ink)}
+.cta:hover{opacity:.9}
+.trial{font-size:14px;color:#ffd9c4;margin:2px 0 0}
+main{max-width:1120px;margin:0 auto;padding:0 20px 40px}
+section{margin-top:44px}
+.kicker{color:var(--orange);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px;margin:0 0 6px}
+h2.sec{font-family:'Arial Narrow','Helvetica Neue',Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.02em;font-size:36px;line-height:1.05;margin:0 0 8px;border-bottom:4px solid var(--orange);padding-bottom:10px}
+.lede{font-size:18px;max-width:760px}
+blockquote.mission{border-left:6px solid var(--orange);margin:22px 0;padding:6px 0 6px 18px;font-size:22px;line-height:1.4;max-width:820px}
+blockquote.mission cite{display:block;font-size:14px;font-style:normal;color:#555;margin-top:8px}
+.band{width:100%;height:340px;object-fit:cover;display:block;margin-top:22px}
+.cap{font-size:13px;color:#555;margin:6px 0 0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.step{background:#fff;border-top:6px solid var(--orange);padding:18px}
+.step .num{font-family:'Arial Narrow',Arial,sans-serif;font-weight:900;font-size:34px;color:var(--orange);line-height:1}
+.step h3{font-family:'Arial Narrow',Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.03em;font-size:22px;margin:8px 0 6px}
+.step p{margin:0}
+.coaches{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+.coach{background:#fff;padding:22px;border-top:6px solid var(--ink)}
+.coach h3{font-family:'Arial Narrow',Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.03em;font-size:24px;margin:0 0 2px}
+.coach .role{font-weight:700;color:var(--orange);margin:0 0 12px}
+.coach img{width:100%;height:300px;object-fit:cover;display:block;margin-bottom:14px}
+.coach p{margin:0 0 12px}
+.coach blockquote{margin:14px 0 0;padding-left:14px;border-left:4px solid var(--orange);font-style:italic}
+.coach blockquote cite{display:block;font-style:normal;font-size:13px;color:#555;margin-top:6px}
+.creds{font-size:13px;color:#444;margin-top:14px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:22px}
+.tile{background:#fff;border-top:6px solid var(--orange)}
+.tile img{width:100%;height:190px;object-fit:cover;display:block}
+.tile .body{padding:14px 16px 16px}
+.tile h3{font-family:'Arial Narrow',Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.03em;font-size:20px;margin:0 0 6px}
+.tile h3 a{color:var(--ink);text-decoration:none}
+.tile h3 a:hover{color:var(--orange)}
+.tile p{margin:0;font-size:15px}
+.more{margin-top:16px}
+.more a{color:var(--orange);font-weight:700}
+.testimonial{background:var(--steel);color:#fff;padding:30px 30px 26px;margin-top:44px}
+.testimonial blockquote{margin:0;font-size:21px;line-height:1.5;max-width:900px}
+.testimonial cite{display:block;font-style:normal;font-size:14px;color:#ffb78f;margin-top:12px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:260px;object-fit:cover;display:block}
+.visitband{background:var(--ink);color:#fff;padding:26px 28px;margin-top:44px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.visitband h2{font-family:'Arial Narrow',Arial,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.03em;font-size:30px;margin:0 0 6px}
+.visitband p{margin:0}
+.visitband .cta{margin:0 10px 0 0}
+footer{background:var(--ink);color:#cfccc6;margin-top:44px;padding:26px 20px;font-size:13px}
+footer .inner{max-width:1120px;margin:0 auto}
+footer a{color:#fff}
+footer p{margin:0 0 8px}
+@media (max-width:760px){
+.masthead h1{font-size:40px}
+.hero img{height:380px}
+.hero .panel{left:12px;right:12px;max-width:none;padding:18px}
+.hero .panel h2{font-size:30px}
+.steps,.coaches,.gallery{grid-template-columns:1fr}
+.tiles{grid-template-columns:1fr}
+.step,.coach,.tile,.gallery figure{min-width:0}
+.gallery img{height:220px}
+.band{height:220px}
+nav .inner{flex-wrap:wrap}
+blockquote.mission{font-size:19px}
+.testimonial blockquote{font-size:18px}
+}
 </style>
 </head>
 <body>
 <div class="disclosure">Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</div>
-<header><h1>Clockwork Performance</h1><p class="tag">A functional strength training gym in Kenner, led by owner and head coach Chris Lockhart.</p><p>Kenner, LA</p></header>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav>
+<header class="masthead">
+<h1>Clockwork Performance</h1>
+<p class="tag">A functional strength training gym in Kenner, Louisiana.</p>
+<div class="badges"><span class="badge">5.0 from 49 Google reviews</span><span class="badge orange">Voted Top Gym, New Orleans Magazine, 2024</span></div>
+</header>
+<nav><div class="inner"><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></div></nav>
+<div class="hero">
+<img src="img/hero-coach.jpg" alt="Head coach Chris Lockhart working with a member holding two orange medicine balls in the gym.">
+<div class="panel">
+<h2>Train smarter, not harder.</h2>
+<p>Professional athletes, everyday 9 to 5 employees, and people recovering from major injuries all train here.</p>
+<p><a class="cta" href="tel:+15042967369">Call to book</a><a class="cta dark" href="mailto:clockwork.perform@gmail.com">Email</a></p>
+<p class="trial">Ask about a free trial class when you call.</p>
+</div>
+</div>
 <main>
-<section class="hero"><img src="img/hero.jpg" alt="A woman doing squats with a barbell in a gym."><p class="cap">Stock photo: A woman doing squats with a barbell in a gym.</p></section>
-<h2>Gallery</h2><div class="gallery"><figure><img src="img/training.jpg" alt="Athletes exercising on air bikes in a gym."><figcaption class="cap">Stock photo: Athletes exercising on air bikes in a gym.</figcaption></figure><figure><img src="img/weights.jpg" alt="Heavy dumbbells on a gym rack."><figcaption class="cap">Stock photo: Heavy dumbbells on a gym rack.</figcaption></figure></div><h2>About</h2><p>Clockwork Performance is a functional strength training gym in Kenner, led by owner, founder, and head coach Chris Lockhart. Training covers personal training, small group conditioning, and prehab, rehab, and mobility work, plus a cold plunge.</p>
-<p><a class="cta" href="tel:+15043850525">Call to ask: +1 504-385-0525</a> <a class="cta2" href="mailto:clockwork.perform@gmail.com">Email: clockwork.perform@gmail.com</a></p>
+<section>
+<p class="kicker">01 &mdash; How training works</p>
+<h2 class="sec">Training built around you</h2>
+<blockquote class="mission">&ldquo;To inspire a world where every individual unlocks their fullest potential through innovative training, building stronger, healthier, and more resilient lives.&rdquo;<cite>The gym&rsquo;s mission, in its own words</cite></blockquote>
+<p class="lede">The system here merges traditional strength training, prehab, rehab, mobility, and conditioning. Training is built for the person in front of the coach, not pulled from a shelf.</p>
+<img class="band" src="img/gym-wide.jpg" alt="Members training in the gym, with racks, plates, benches, and the green turf lane.">
+<p class="cap">Members training in the gym at Clockwork Performance.</p>
+<div class="steps">
+<div class="step"><div class="num">1</div><h3>Assessment</h3><p>Start with an initial assessment with one of the coaches.</p></div>
+<div class="step"><div class="num">2</div><h3>Custom program</h3><p>Get a program made just for you, based on that assessment.</p></div>
+<div class="step"><div class="num">3</div><h3>Tracked progress</h3><p>Track each workout and watch the progress add up brick by brick.</p></div>
+</div>
+</section>
+<section>
+<p class="kicker">02 &mdash; The coaches</p>
+<h2 class="sec">Meet the coaches</h2>
+<div class="coaches">
+<div class="coach">
+<img src="img/coach-roller.jpg" alt="A coach in a Clockwork shirt working with members on the turf.">
+<h3>Chris Lockhart</h3>
+<p class="role">Owner, Founder, and Head Coach</p>
+<p>Chris started Clockwork Performance to help as many people as he can through the training that has been his passion since he was 14. He found jiu jitsu and combat sports in 2014, and he brings a train smarter, not harder attitude to the people he works with.</p>
+<blockquote>&ldquo;I started Clockwork Performance because my main objective has always been to help as many people as I can through what has been my passion since I was 14 years old. When I found my love of jiu jitsu and combat sports in 2014, I was driven to adopt a &lsquo;train smarter, not harder&rsquo; attitude, and that&rsquo;s what I strive to bring to my clients.&rdquo;<cite>Chris Lockhart</cite></blockquote>
+<p class="creds">Certified FMS (Functional Movement Screen), Functional Strength Coach Levels 1 and 2, Daru Strong Performance Coach, Bio Force Conditioning Coach, Physical Preparedness Specialist, Functional Range Conditioning Specialist (Mobility), Westside Barbell Personal Training and Athletic Coaching, Landmine University Levels 1 and 2, Movement and Mobility Specialist, Jiu Jitsu Black Belt at Mid City MMA.</p>
+</div>
+<div class="coach">
+<h3>Jared Fryoux</h3>
+<p class="role">Assistant Coach</p>
+<p>A professional MMA fighter and BJJ Brown Belt at Mid City MMA. He has been in the fitness industry for a decade as a personal trainer, martial arts instructor, and athlete.</p>
+<p>His goal is to help members learn in a way that aids injury prevention inside and outside the gym.</p>
+<blockquote>&ldquo;At Clockwork, our members become family and we want to see our family thrive.&rdquo;<cite>Jared Fryoux</cite></blockquote>
+</div>
+</div>
+</section>
+<section>
+<p class="kicker">03 &mdash; Training</p>
+<h2 class="sec">Ways to train here</h2>
+<div class="tiles">
+<div class="tile"><img src="img/plank.jpg" alt="A member working a plank on a platform in the gym."><div class="body"><h3><a href="services.html">Functional Training</a></h3><p>Strength work built around how you move, with classes through the week.</p></div></div>
+<div class="tile"><img src="img/turf-jumps.jpg" alt="Jump and medicine ball work on the outdoor turf lane."><div class="body"><h3><a href="services.html">Sports Performance</a></h3><p>Training built around the demands of an athlete&rsquo;s sport.</p></div></div>
+<div class="tile"><img src="img/barbell.jpg" alt="A member training with a barbell on the gym floor."><div class="body"><h3><a href="services.html">Personal Training</a></h3><p>One on one training with a coach, on a program written just for you.</p></div></div>
+<div class="tile"><img src="img/turf-crawl.jpg" alt="Members working on the turf during a conditioning session."><div class="body"><h3><a href="services.html">Group Conditioning</a></h3><p>Conditioning sessions on the turf, Tuesday and Thursday at 7:00 AM.</p></div></div>
+</div>
+<p class="more"><a href="services.html">See all services</a></p>
+</section>
+<div class="testimonial">
+<blockquote>&ldquo;Clockwork has made a huge impact on my athletic career. Before working with Clockwork, I had chronic lower back pain that would hinder my athletic abilities and performance. I would wake up with a constant pain. Chris pinpointed the problem areas and through a proper plan and correctives, I am now pain-free. I am able to work my full-time job and train remotely as well as work in-house with Chris on my specific programming in and out of fight camp.&rdquo;<cite>Macy Breaux, MMA, Boxing, Law Enforcement Officer</cite></blockquote>
+</div>
+<section>
+<p class="kicker">04 &mdash; Inside the gym</p>
+<h2 class="sec">The gym floor</h2>
+<div class="gallery">
+<figure><img src="img/youth-flex.jpg" alt="Young athletes flexing under the gym's wall logo."><figcaption class="cap">Young athletes under the gym&rsquo;s wall logo.</figcaption></figure>
+<figure><img src="img/sled.jpg" alt="A young athlete pushing a weighted sled on the turf at dusk."><figcaption class="cap">A young athlete pushing a weighted sled on the turf at dusk.</figcaption></figure>
+<figure><img src="img/box-jump.jpg" alt="A young athlete landing a box jump."><figcaption class="cap">A young athlete landing a box jump.</figcaption></figure>
+<figure><img src="img/hip-thrust.jpg" alt="A member working a banded hip thrust."><figcaption class="cap">A member working a banded hip thrust.</figcaption></figure>
+<figure><img src="img/women-floor.jpg" alt="Members working on mobility on the turf."><figcaption class="cap">Members working on mobility on the turf.</figcaption></figure>
+<figure><img src="img/turf-jumps.jpg" alt="Jump and medicine ball work on the outdoor turf lane."><figcaption class="cap">Jump and medicine ball work on the outdoor turf lane.</figcaption></figure>
+</div>
+</section>
+<div class="visitband">
+<div><h2>Visit the gym</h2><p>1332 Carroll St, Kenner, LA 70062</p><p>Open Monday to Saturday. Hours and class times are on the Visit page.</p></div>
+<div><a class="cta" href="tel:+15042967369">Call to book</a><a class="cta dark" href="visit.html">Hours and directions</a></div>
+</div>
 </main>
-<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p><p>Clockwork Performance, 1332 Carroll St, Kenner, LA 70062 | +1 504-385-0525</p>
-<p><a class="cta" href="tel:+15043850525">Call to ask: +1 504-385-0525</a> <a class="cta2" href="mailto:clockwork.perform@gmail.com">Email: clockwork.perform@gmail.com</a></p></footer>
+<footer><div class="inner">
+<p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business&rsquo;s live website.</p>
+<p>Clockwork Performance, 1332 Carroll St, Kenner, LA 70062 | <a href="tel:+15042967369">+1 504-296-7369</a> | <a href="mailto:clockwork.perform@gmail.com">clockwork.perform@gmail.com</a></p>
+<p><a href="index.html">Home</a> | <a href="services.html">Services</a> | <a href="visit.html">Visit</a></p>
+</div></footer>
 </body>
 </html>
