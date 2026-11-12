@@ -1,0 +1,4 @@
+Photo provenance for Ox Kitchen.
+ox-three.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/ox-three.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Three burgers in a row on a wood counter, each with a skewer
+ox-single.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/ox-single.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A burger with pickled onions and lettuce in a paper tray
+ox-wings.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/ox-wings.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Fried chicken wings with green onions on a metal tray

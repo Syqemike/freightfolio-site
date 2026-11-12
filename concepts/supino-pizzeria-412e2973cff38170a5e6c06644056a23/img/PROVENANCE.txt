@@ -1,0 +1,4 @@
+Photo provenance for Supino Pizzeria.
+sp-pizza.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/sp-pizza.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A whole pizza topped with banana peppers and sausage on a raised stand, with a drink and a candle on the table
+sp-storefront.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/sp-storefront.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The Supino Pizzeria storefront with its red SUPINO sign over the entrance
+sp-interior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/sp-interior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The dining room and bar with black stools, a wood floor, and a wood-slat ceiling

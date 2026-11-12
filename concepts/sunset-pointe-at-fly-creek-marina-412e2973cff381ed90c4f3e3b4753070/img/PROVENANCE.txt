@@ -1,0 +1,4 @@
+Photo provenance for Sunset Pointe at Fly Creek Marina.
+su-patio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/su-patio.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Outdoor patio tables with a black umbrella, with the marina and boats behind, under a blue sky
+su-dining.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/su-dining.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The dining room with wood tables and chairs, a bar with stools, and large windows
+su-shrimp.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/su-shrimp.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Shrimp in sauce with a lemon half, surrounded by grilled bread slices, on a wooden outdoor table

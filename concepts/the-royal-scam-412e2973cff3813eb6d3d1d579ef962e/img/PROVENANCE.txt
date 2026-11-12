@@ -1,0 +1,4 @@
+Photo provenance for The Royal Scam.
+rs-dining.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/rs-dining.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A long dining table with wooden chairs against a brick wall with string lights and set tables
+rs-steak.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/rs-steak.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A grilled steak topped with compound butter, with roasted potato wedges and green beans
+rs-storefront.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/rs-storefront.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The storefront with the oval The Royal Scam sign, a menu board, and glass doors

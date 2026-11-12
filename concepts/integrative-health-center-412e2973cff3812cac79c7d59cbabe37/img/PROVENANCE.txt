@@ -1,0 +1,4 @@
+Photo provenance for Integrative Health Center.
+ihc-lounge.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/ihc-lounge.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The waiting lounge with a brick wall, floral artwork, plants, and two blue chairs on a wood floor
+ihc-reception.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/ihc-reception.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The reception desk against a brick wall with the orange ihc sign, an iMac, and plants
+ihc-treatment.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/ihc-treatment.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A treatment table with white linens and a face cradle in a sunlit room

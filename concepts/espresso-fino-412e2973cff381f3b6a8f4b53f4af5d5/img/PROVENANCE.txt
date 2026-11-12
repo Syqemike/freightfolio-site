@@ -1,0 +1,4 @@
+Photo provenance for Espresso Fino.
+ef-patio.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/ef-patio.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The storefront patio with red and green umbrellas, blue chairs, a red planter, and a yellow COFFEE sign
+ef-storefront.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/ef-storefront.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The storefront with a yellow COFFEE sign and open door, with a latte cup in the foreground on an outdoor table
+ef-latte-over.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/ef-latte-over.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A latte in a white mug with leaf latte art, seen from above

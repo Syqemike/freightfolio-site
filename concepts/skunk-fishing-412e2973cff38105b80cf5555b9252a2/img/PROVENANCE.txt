@@ -1,0 +1,4 @@
+Photo provenance for Skunk Fishing.
+sk-table.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/sk-table.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A man and woman in blue shirts behind a table of spotted seatrout and redfish on the dock, in front of a blue building
+sk-couple.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/sk-couple.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A couple seated on the bow of the boat, with six spotted seatrout laid on the deck below them
+sk-seatrout.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/sk-seatrout.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A guest in a hat and sunglasses holding a large spotted seatrout on the boat

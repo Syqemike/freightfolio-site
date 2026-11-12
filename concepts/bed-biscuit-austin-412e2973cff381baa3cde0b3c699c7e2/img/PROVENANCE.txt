@@ -1,0 +1,4 @@
+Photo provenance for Bed & Biscuit Austin.
+bb-yard.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/bb-yard.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A small black-and-tan dog on the artificial-turf yard with a red spiky ball, in front of a wooden fence
+bb-two.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/bb-two.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Two dogs on the artificial turf, a brown scruffy dog in front and a larger brown dog behind
+bb-reception.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/bb-reception.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The reception interior with green walls, a wood counter, a pegboard with dog toys, and framed dog posters

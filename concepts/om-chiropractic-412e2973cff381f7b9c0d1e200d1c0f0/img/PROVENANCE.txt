@@ -1,0 +1,4 @@
+Photo provenance for OM Chiropractic.
+om-adjustment.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/om-adjustment.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A practitioner's hands on a patient's back during a chiropractic adjustment
+om-tool.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/om-tool.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A black chiropractic activator adjusting tool on a wood surface
+om-plant.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/om-plant.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A green pothos plant in a red-and-white floral pot on a windowsill

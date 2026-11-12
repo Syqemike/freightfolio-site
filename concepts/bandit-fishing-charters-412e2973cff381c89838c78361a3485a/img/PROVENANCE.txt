@@ -1,0 +1,4 @@
+Photo provenance for Bandit Fishing Charters.
+bf-sunset.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/bf-sunset.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A guest fishing from the white Blazer Bay boat at sunset, holding a rod
+bf-catch.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/bf-catch.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Five guests on the boat and dock behind a large catch laid out on the dock at dusk
+bf-snapper.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111206-real/bf-snapper.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A guest holding a large red snapper on the dock
