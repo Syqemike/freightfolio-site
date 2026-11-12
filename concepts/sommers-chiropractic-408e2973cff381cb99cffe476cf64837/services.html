@@ -6,34 +6,131 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Services | Sommers Chiropractic</title>
 <style>
-body { font-family: 'Franklin Gothic Medium', sans-serif; background: #eef2f5; color: #1e2a33; margin: 0; line-height: 1.5; }
-.disclosure { background: #2b5f8a; color: #fff; padding: 10px 20px; font-size: 14px; text-align: center; }
-header { padding: 24px 20px 8px; max-width: 1020px; margin: 0 auto; text-align: left; }
-header h1 { font-size: 46px; margin: 0 0 4px; }
-header p.tag { font-size: 19px; margin: 0 0 14px; }
-main { max-width: 1020px; margin: 0 auto; padding: 0 20px 40px; }
-nav { max-width: 1020px; margin: 0 auto; padding: 0 20px 18px; text-align: center; }
-nav a { margin: 0 14px; color: #2b5f8a; font-weight: bold; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; font-size: 14px; }
-.hero img { width: 100%; height: auto; display: block; }
-figcaption, .cap { font-size: 13px; color: #555; margin: 6px 0 20px; }
-h2 { font-size: 24px; letter-spacing: 2px; text-transform: uppercase; margin-top: 24px; }
-.cta, .cta2 { display: inline-block; background: #2b5f8a; color: #fff; padding: 10px 18px; text-decoration: none; margin: 8px 8px 8px 0; font-weight: bold; }
-.cta2 { background: #1e2a33; }
-ul { padding-left: 20px; }
-li { margin-bottom: 8px; }
-.gallery { display: flex; gap: 16px; flex-wrap: wrap; }
-.gallery figure { flex: 1 1 260px; margin: 0; }
-.gallery img { width: 100%; height: auto; display: block; }
-footer { max-width: 1020px; margin: 0 auto; padding: 20px; font-size: 13px; border-top: 1px solid #ccc; }
+body { font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #faf6ef; color: #22303c; margin: 0; line-height: 1.6; }
+.disclosure { background: #1f2a44; color: #fff; padding: 10px 20px; font-size: 14px; text-align: center; }
+.mast { max-width: 1080px; margin: 0 auto; padding: 28px 20px 0; }
+.mast h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 52px; line-height: 1.05; margin: 0 0 6px; color: #1f2a44; }
+.mast p.tag { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; font-style: italic; margin: 0 0 18px; color: #2e5d43; }
+.rule { border: 0; border-top: 3px solid #a33b2e; width: 72px; margin: 0 0 18px; }
+nav { max-width: 1080px; margin: 0 auto; padding: 0 20px 16px; }
+nav a { margin-right: 26px; color: #1f2a44; font-weight: bold; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; font-size: 14px; border-bottom: 2px solid transparent; padding-bottom: 3px; }
+nav a.on { border-bottom-color: #a33b2e; }
+main { max-width: 1080px; margin: 0 auto; padding: 0 20px 48px; }
+.hero { display: grid; grid-template-columns: 5fr 7fr; gap: 0; margin: 8px 0 40px; }
+.hero .panel { background: #1f2a44; color: #fff; padding: 44px 36px; display: flex; flex-direction: column; justify-content: center; }
+.hero .panel h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 40px; line-height: 1.15; margin: 0 0 14px; }
+.hero .panel p { font-size: 17px; margin: 0 0 12px; }
+.hero .panel .rating { font-size: 15px; color: #d8c98a; margin-bottom: 20px; }
+.hero figure { margin: 0; }
+.hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cta, .cta2 { display: inline-block; padding: 12px 20px; text-decoration: none; font-weight: bold; margin: 6px 10px 6px 0; }
+.cta { background: #a33b2e; color: #fff; }
+.cta2 { background: #fff; color: #1f2a44; }
+.cta.dark { background: #2e5d43; color: #fff; }
+figure { margin: 0 0 8px; }
+figure img { width: 100%; height: auto; display: block; }
+figcaption { font-size: 13px; color: #5a6a75; margin: 8px 0 24px; }
+h2.sec { font-family: Georgia, 'Times New Roman', serif; font-size: 32px; color: #1f2a44; margin: 36px 0 12px; }
+h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 24px; color: #1f2a44; margin: 0 0 8px; }
+.split { display: grid; grid-template-columns: 7fr 5fr; gap: 36px; align-items: start; margin-bottom: 8px; }
+.split.rev { grid-template-columns: 5fr 7fr; }
+.split p { font-size: 17px; }
+.kicker { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #a33b2e; font-weight: bold; margin: 0 0 6px; }
+.band { background: #2e5d43; color: #fff; margin: 40px -20px 0; padding: 36px 20px; }
+.band .inner { max-width: 1080px; margin: 0 auto; }
+.band h2.sec { color: #fff; margin-top: 0; }
+.band p { font-size: 17px; }
+.band a { color: #fff; }
+.teamnames { columns: 2; column-gap: 40px; }
+.teamnames p { margin: 0 0 10px; font-size: 16px; break-inside: avoid; }
+.teamnames strong { color: #fff; }
+.visitband { background: #1f2a44; color: #fff; margin: 40px -20px 0; padding: 36px 20px; }
+.visitband .inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+.visitband h2.sec { color: #fff; margin-top: 0; }
+.visitband a { color: #fff; }
+.visitband a.cta2 { color: #1f2a44; }
+.hero .panel a.cta2 { color: #1f2a44; }
+.svc { display: grid; grid-template-columns: 5fr 7fr; gap: 36px; align-items: start; padding: 28px 0; border-top: 1px solid #d8cfc0; }
+.svc.rev { grid-template-columns: 7fr 5fr; }
+.svc p { font-size: 17px; }
+.svc.textonly { display: block; }
+.svc.textonly p { max-width: 720px; }
+ul.plain { font-size: 17px; padding-left: 20px; }
+ul.plain li { margin-bottom: 8px; }
+.card { background: #1f2a44; color: #fff; padding: 28px; }
+.card h2.sec { color: #fff; margin-top: 0; }
+.card a { color: #fff; }
+.card p { font-size: 17px; }
+.visitgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
+footer { max-width: 1080px; margin: 0 auto; padding: 24px 20px 40px; font-size: 14px; border-top: 1px solid #d8cfc0; }
+footer a { color: #1f2a44; }
+@media (max-width: 760px) {
+  .mast h1 { font-size: 38px; }
+  .hero { grid-template-columns: 1fr; }
+  .hero .panel { padding: 28px 22px; }
+  .hero .panel h2 { font-size: 30px; }
+  .split, .split.rev, .svc, .svc.rev, .visitgrid, .visitband .inner { grid-template-columns: 1fr; }
+  .teamnames { columns: 1; }
+}
 </style>
 </head>
 <body>
 <div class="disclosure">Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</div>
-<header><h1>Sommers Chiropractic</h1><p class="tag">Corrective chiropractic care for families in South Burlington, from Dr. Michael Sommers.</p><p>South Burlington, VT</p></header>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav>
-<main><h2>Services</h2><ul><li><strong>Corrective chiropractic care</strong></li><li><strong>Family health</strong></li><li><strong>Preventive care</strong></li><li><strong>Torque release technique</strong></li><li><strong>Pregnancy care</strong></li></ul><p><a class="cta" href="tel:+18024972938">Call to ask: +1 802-497-2938</a> </p>
-<h2>Gallery</h2><div class="gallery"><figure><img src="img/wellness2.jpg" alt="Therapist giving a seated woman a spinal and back adjustment in a clinic."><figcaption class="cap">Stock photo: Therapist giving a seated woman a spinal and back adjustment in a clinic.</figcaption></figure><figure><img src="img/wellness3.jpg" alt="Chiropractor using a handheld adjustment instrument on a seated woman's neck."><figcaption class="cap">Stock photo: Chiropractor using a handheld adjustment instrument on a seated woman's neck.</figcaption></figure></div></main>
-<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p><p>Sommers Chiropractic, 4 Market St, South Burlington, VT 05403 | +1 802-497-2938</p>
-<p><a class="cta" href="tel:+18024972938">Call to ask: +1 802-497-2938</a> </p></footer>
+<header class="mast"><h1>Sommers Chiropractic</h1><p class="tag">Corrective chiropractic care for families in South Burlington.</p><hr class="rule"></header>
+<nav><a href="index.html">Home</a><a href="services.html" class="on">Services</a><a href="visit.html">Visit</a></nav>
+<main>
+
+<p class="kicker">Services</p>
+<h2 class="sec">What the practice offers</h2>
+<p style="font-size:17px; max-width:720px;">The practice offers corrective chiropractic care, family health, preventive care, torque release technique, and pregnancy care. Each one is listed below with more detail.</p>
+
+<div class="svc">
+<figure><img src="img/workshop.jpg" alt="Dr. Sommers holding a spine model while speaking to a group in the office."><figcaption>Dr. Sommers holding a spine model while speaking to a group in the office.</figcaption></figure>
+<div><h3>Corrective chiropractic care</h3>
+<p>Corrective care looks for the underlying cause of a problem instead of only easing symptoms for a short time. Visits focus on the spine and the nervous system.</p></div>
+</div>
+
+<div class="svc rev">
+<div><h3>Family health</h3>
+<p>The practice cares for the whole family, from infants to grandparents. Pediatric care is one of the services the practice lists.</p></div>
+<figure><img src="img/adjusting-girl.jpg" alt="Dr. Sommers with a young patient in a treatment room at Sommers Chiropractic."><figcaption>Dr. Sommers with a young patient in a treatment room at Sommers Chiropractic.</figcaption></figure>
+</div>
+
+<div class="svc textonly">
+<h3>Preventive care</h3>
+<p>Preventive care is regular chiropractic care on a set schedule, for people who want to look after their spine before pain shows up.</p>
+</div>
+
+<div class="svc">
+<figure><img src="img/neck-adjustment.jpg" alt="An instrument-assisted adjustment in a treatment room."><figcaption>An instrument-assisted adjustment in a treatment room.</figcaption></figure>
+<div><h3>Torque Release Technique</h3>
+<p>Torque Release Technique is a gentle, minimal-force technique. It uses a handheld instrument and is safe for children. The practice uses it to address imbalances in the nervous system.</p></div>
+</div>
+
+<div class="svc textonly">
+<h3>Pregnancy care</h3>
+<p>The practice offers chiropractic care for expectant mothers, including care during pregnancy.</p>
+</div>
+
+<h2 class="sec">Also offered</h2>
+<div class="split">
+<div>
+<ul class="plain">
+<li>Upper cervical care</li>
+<li>Chiropractic Biophysics</li>
+<li>Full spine and diversified technique</li>
+<li>Spinal decompression</li>
+<li>Pediatric care</li>
+</ul>
+<p>The practice sees people for headaches and neck and back pain and stiffness.</p>
+<p><a class="cta dark" href="tel:+18024972938">Call to book: +1 802-497-2938</a><a class="cta2" href="https://sommerschiropractic.com/book-appointment/" style="background:#1f2a44;color:#fff;">Request an appointment</a></p>
+</div>
+<figure><img src="img/adjustment.jpg" alt="An adjustment in a treatment room at Sommers Chiropractic."><figcaption>An adjustment in a treatment room at Sommers Chiropractic.</figcaption></figure>
+</div>
+
+</main>
+<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p>
+<p>Sommers Chiropractic, 4 Market St, Suite 2, South Burlington, VT 05403 | <a href="tel:+18024972938">+1 802-497-2938</a> | <a href="mailto:info@sommerschiropractic.com">info@sommerschiropractic.com</a></p>
+<p><a href="https://www.facebook.com/SommersChiro/">Facebook</a> | <a href="https://www.instagram.com/sommerschiropractic">Instagram</a> | <a href="https://sommerschiropractic.com/book-appointment/">Request an appointment</a></p></footer>
 </body>
 </html>

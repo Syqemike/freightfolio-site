@@ -6,33 +6,108 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Visit | Sommers Chiropractic</title>
 <style>
-body { font-family: 'Franklin Gothic Medium', sans-serif; background: #eef2f5; color: #1e2a33; margin: 0; line-height: 1.5; }
-.disclosure { background: #2b5f8a; color: #fff; padding: 10px 20px; font-size: 14px; text-align: center; }
-header { padding: 24px 20px 8px; max-width: 1020px; margin: 0 auto; text-align: left; }
-header h1 { font-size: 46px; margin: 0 0 4px; }
-header p.tag { font-size: 19px; margin: 0 0 14px; }
-main { max-width: 1020px; margin: 0 auto; padding: 0 20px 40px; }
-nav { max-width: 1020px; margin: 0 auto; padding: 0 20px 18px; text-align: center; }
-nav a { margin: 0 14px; color: #2b5f8a; font-weight: bold; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; font-size: 14px; }
-.hero img { width: 100%; height: auto; display: block; }
-figcaption, .cap { font-size: 13px; color: #555; margin: 6px 0 20px; }
-h2 { font-size: 24px; letter-spacing: 2px; text-transform: uppercase; margin-top: 24px; }
-.cta, .cta2 { display: inline-block; background: #2b5f8a; color: #fff; padding: 10px 18px; text-decoration: none; margin: 8px 8px 8px 0; font-weight: bold; }
-.cta2 { background: #1e2a33; }
-ul { padding-left: 20px; }
-li { margin-bottom: 8px; }
-.gallery { display: flex; gap: 16px; flex-wrap: wrap; }
-.gallery figure { flex: 1 1 260px; margin: 0; }
-.gallery img { width: 100%; height: auto; display: block; }
-footer { max-width: 1020px; margin: 0 auto; padding: 20px; font-size: 13px; border-top: 1px solid #ccc; }
+body { font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #faf6ef; color: #22303c; margin: 0; line-height: 1.6; }
+.disclosure { background: #1f2a44; color: #fff; padding: 10px 20px; font-size: 14px; text-align: center; }
+.mast { max-width: 1080px; margin: 0 auto; padding: 28px 20px 0; }
+.mast h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 52px; line-height: 1.05; margin: 0 0 6px; color: #1f2a44; }
+.mast p.tag { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; font-style: italic; margin: 0 0 18px; color: #2e5d43; }
+.rule { border: 0; border-top: 3px solid #a33b2e; width: 72px; margin: 0 0 18px; }
+nav { max-width: 1080px; margin: 0 auto; padding: 0 20px 16px; }
+nav a { margin-right: 26px; color: #1f2a44; font-weight: bold; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; font-size: 14px; border-bottom: 2px solid transparent; padding-bottom: 3px; }
+nav a.on { border-bottom-color: #a33b2e; }
+main { max-width: 1080px; margin: 0 auto; padding: 0 20px 48px; }
+.hero { display: grid; grid-template-columns: 5fr 7fr; gap: 0; margin: 8px 0 40px; }
+.hero .panel { background: #1f2a44; color: #fff; padding: 44px 36px; display: flex; flex-direction: column; justify-content: center; }
+.hero .panel h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 40px; line-height: 1.15; margin: 0 0 14px; }
+.hero .panel p { font-size: 17px; margin: 0 0 12px; }
+.hero .panel .rating { font-size: 15px; color: #d8c98a; margin-bottom: 20px; }
+.hero figure { margin: 0; }
+.hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cta, .cta2 { display: inline-block; padding: 12px 20px; text-decoration: none; font-weight: bold; margin: 6px 10px 6px 0; }
+.cta { background: #a33b2e; color: #fff; }
+.cta2 { background: #fff; color: #1f2a44; }
+.cta.dark { background: #2e5d43; color: #fff; }
+figure { margin: 0 0 8px; }
+figure img { width: 100%; height: auto; display: block; }
+figcaption { font-size: 13px; color: #5a6a75; margin: 8px 0 24px; }
+h2.sec { font-family: Georgia, 'Times New Roman', serif; font-size: 32px; color: #1f2a44; margin: 36px 0 12px; }
+h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 24px; color: #1f2a44; margin: 0 0 8px; }
+.split { display: grid; grid-template-columns: 7fr 5fr; gap: 36px; align-items: start; margin-bottom: 8px; }
+.split.rev { grid-template-columns: 5fr 7fr; }
+.split p { font-size: 17px; }
+.kicker { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #a33b2e; font-weight: bold; margin: 0 0 6px; }
+.band { background: #2e5d43; color: #fff; margin: 40px -20px 0; padding: 36px 20px; }
+.band .inner { max-width: 1080px; margin: 0 auto; }
+.band h2.sec { color: #fff; margin-top: 0; }
+.band p { font-size: 17px; }
+.band a { color: #fff; }
+.teamnames { columns: 2; column-gap: 40px; }
+.teamnames p { margin: 0 0 10px; font-size: 16px; break-inside: avoid; }
+.teamnames strong { color: #fff; }
+.visitband { background: #1f2a44; color: #fff; margin: 40px -20px 0; padding: 36px 20px; }
+.visitband .inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+.visitband h2.sec { color: #fff; margin-top: 0; }
+.visitband a { color: #fff; }
+.visitband a.cta2 { color: #1f2a44; }
+.hero .panel a.cta2 { color: #1f2a44; }
+.svc { display: grid; grid-template-columns: 5fr 7fr; gap: 36px; align-items: start; padding: 28px 0; border-top: 1px solid #d8cfc0; }
+.svc.rev { grid-template-columns: 7fr 5fr; }
+.svc p { font-size: 17px; }
+.svc.textonly { display: block; }
+.svc.textonly p { max-width: 720px; }
+ul.plain { font-size: 17px; padding-left: 20px; }
+ul.plain li { margin-bottom: 8px; }
+.card { background: #1f2a44; color: #fff; padding: 28px; }
+.card h2.sec { color: #fff; margin-top: 0; }
+.card a { color: #fff; }
+.card p { font-size: 17px; }
+.visitgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
+footer { max-width: 1080px; margin: 0 auto; padding: 24px 20px 40px; font-size: 14px; border-top: 1px solid #d8cfc0; }
+footer a { color: #1f2a44; }
+@media (max-width: 760px) {
+  .mast h1 { font-size: 38px; }
+  .hero { grid-template-columns: 1fr; }
+  .hero .panel { padding: 28px 22px; }
+  .hero .panel h2 { font-size: 30px; }
+  .split, .split.rev, .svc, .svc.rev, .visitgrid, .visitband .inner { grid-template-columns: 1fr; }
+  .teamnames { columns: 1; }
+}
 </style>
 </head>
 <body>
 <div class="disclosure">Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</div>
-<header><h1>Sommers Chiropractic</h1><p class="tag">Corrective chiropractic care for families in South Burlington, from Dr. Michael Sommers.</p><p>South Burlington, VT</p></header>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html">Visit</a></nav>
-<main><h2>Visit</h2><p>4 Market St, South Burlington, VT 05403</p><p><a href="https://www.google.com/maps/search/?api=1&query=4%20Market%20St%2C%20South%20Burlington%2C%20VT%2005403">Get directions</a></p><h2>Hours</h2><p>Monday through Thursday 9:00 AM to 1:00 PM and 2:30 PM to 6:00 PM.</p><h2>Contact</h2><p>Phone: <a href="tel:+18024972938">+1 802-497-2938</a></p><p>Questions? Call.</p><p><a class="cta" href="tel:+18024972938">Call to ask: +1 802-497-2938</a> </p></main>
-<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p><p>Sommers Chiropractic, 4 Market St, South Burlington, VT 05403 | +1 802-497-2938</p>
-<p><a class="cta" href="tel:+18024972938">Call to ask: +1 802-497-2938</a> </p></footer>
+<header class="mast"><h1>Sommers Chiropractic</h1><p class="tag">Corrective chiropractic care for families in South Burlington.</p><hr class="rule"></header>
+<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="visit.html" class="on">Visit</a></nav>
+<main>
+
+<p class="kicker">Visit</p>
+<h2 class="sec">Find the practice</h2>
+<div class="visitgrid">
+<figure><img src="img/exterior.jpg" alt="The storefront at 4 Market St, with the red awning."><figcaption>The storefront at 4 Market St, with the red awning.</figcaption></figure>
+<div class="card">
+<h2 class="sec">Sommers Chiropractic</h2>
+<p>4 Market St, Suite 2<br>South Burlington, VT 05403</p>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=4%20Market%20St%2C%20South%20Burlington%2C%20VT%2005403">Get directions</a></p>
+<p>The entrance is wheelchair accessible.</p>
+</div>
+</div>
+
+<h2 class="sec">Hours</h2>
+<p style="font-size:17px;">Monday through Thursday, 9:00 AM to 1:00 PM and 2:30 PM to 6:00 PM. Friday through Sunday, closed.</p>
+
+<h2 class="sec">Contact</h2>
+<p style="font-size:17px;">Phone: <a href="tel:+18024972938">+1 802-497-2938</a><br>Email: <a href="mailto:info@sommerschiropractic.com">info@sommerschiropractic.com</a></p>
+<p style="font-size:17px;">Call or send the appointment request form to set a visit. Send the form and the practice will contact you.</p>
+<p><a class="cta dark" href="tel:+18024972938">Call to book: +1 802-497-2938</a><a class="cta" href="https://sommerschiropractic.com/book-appointment/" style="background:#1f2a44;">Request an appointment</a></p>
+<p style="font-size:17px;">Find the practice on <a href="https://www.facebook.com/SommersChiro/">Facebook</a> and <a href="https://www.instagram.com/sommerschiropractic">Instagram</a>.</p>
+<p style="font-size:17px;">Questions? Call.</p>
+
+<figure><img src="img/treatment-room.jpg" alt="A treatment room at Sommers Chiropractic."><figcaption>A treatment room at Sommers Chiropractic.</figcaption></figure>
+<figure><img src="img/waiting-room.jpg" alt="The waiting room at Sommers Chiropractic, with the wood wall behind the reception desk."><figcaption>The waiting room at Sommers Chiropractic, with the wood wall behind the reception desk.</figcaption></figure>
+
+</main>
+<footer><p>Design Preview: This is a website concept prepared by Freightfolio. It is not the business's live website.</p>
+<p>Sommers Chiropractic, 4 Market St, Suite 2, South Burlington, VT 05403 | <a href="tel:+18024972938">+1 802-497-2938</a> | <a href="mailto:info@sommerschiropractic.com">info@sommerschiropractic.com</a></p>
+<p><a href="https://www.facebook.com/SommersChiro/">Facebook</a> | <a href="https://www.instagram.com/sommerschiropractic">Instagram</a> | <a href="https://sommerschiropractic.com/book-appointment/">Request an appointment</a></p></footer>
 </body>
 </html>
