@@ -1,0 +1,4 @@
+Photo provenance for Kendall Pest Control.
+kp-truck-pano.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/kp-truck-pano.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The Kendall Pest Control truck, with services listed on the tailgate
+kp-rat.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/kp-rat.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A mouse by a gnawed hole in a baseboard
+kp-truck-rear.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/kp-truck-rear.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Kendall Pest Control's Better Business Bureau accreditation plaque

@@ -1,0 +1,4 @@
+Photo provenance for HandyPros STL.
+hp-living.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/hp-living.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A living room with a green armchair under a floral painting and a door open to the deck
+hp-ladder.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/hp-ladder.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A worker on a ladder installing tall brown curtains
+hp-hallway.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/hp-hallway.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A hallway and stairwell with a colorful autumn-forest painting

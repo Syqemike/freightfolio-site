@@ -1,0 +1,4 @@
+Photo provenance for Cradle 2 Crayons.
+cc-exterior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/cc-exterior.jpg :: REAL PHOTO of the business (Street View exterior of its building) :: The Cradle 2 Crayons building and parking lot, seen from the street
+cc-classroom.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/cc-classroom.jpg :: STOCK photo, labeled as stock on every page :: Children playing together in a bright daycare classroom
+cc-story.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/cc-story.jpg :: STOCK photo, labeled as stock on every page :: A teacher reading a story to children in a daycare classroom

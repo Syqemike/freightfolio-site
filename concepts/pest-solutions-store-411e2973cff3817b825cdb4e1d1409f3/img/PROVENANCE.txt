@@ -1,0 +1,4 @@
+Photo provenance for Pest Solutions Store.
+ps-storefront.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/ps-storefront.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The blue Pest Solutions storefront with the big yellow BUGS sign
+ps-sterifab.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/ps-sterifab.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Steri-Fab bottles and a jug on a shelf inside the store
+ps-boracare.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/ps-boracare.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A jug of Bora-Care on a store shelf

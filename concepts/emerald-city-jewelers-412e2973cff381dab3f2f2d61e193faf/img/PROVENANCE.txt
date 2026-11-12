@@ -1,0 +1,4 @@
+Photo provenance for Emerald City Jewelers.
+ec-entrance.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/ec-entrance.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The Emerald City Jewelers entrance with landscaping
+ec-cases.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/ec-cases.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Display cases of gold pendants and crosses under a Wholesale Prices neon sign
+ec-counter.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/ec-counter.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A display case of 14K charms and gold pendants, with a staff member behind the counter

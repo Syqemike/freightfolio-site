@@ -1,0 +1,4 @@
+Photo provenance for Turney Income Tax.
+tt-reception.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/tt-reception.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The reception desk with DWR Financial Services and Turney Tax branding
+tt-conference.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/tt-conference.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The conference room with a glass table and windows overlooking trees
+tt-hallway.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/tt-hallway.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: An office hallway corner with framed artwork and a wooden cabinet

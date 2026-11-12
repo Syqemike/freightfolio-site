@@ -1,0 +1,4 @@
+Photo provenance for Sweet Auburn Bread Company.
+sa-table.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/sa-table.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A market table with wicker baskets of baked goods behind the Sweet Auburn banner
+sa-loaves.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/sa-loaves.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Four baked loaves in tins on a tray, two topped with colorful sprinkles
+sa-minis.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/sa-minis.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A tray of golden mini cheesecakes in paper cups

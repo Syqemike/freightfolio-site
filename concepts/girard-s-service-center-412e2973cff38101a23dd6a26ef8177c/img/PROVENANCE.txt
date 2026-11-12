@@ -1,0 +1,4 @@
+Photo provenance for Girard's Service Center.
+gs-exterior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/gs-exterior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The blue-block Girard's building with the Oil Change No Waiting sign and a red awning
+gs-waiting.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/gs-waiting.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The waiting room: a blue counter, brick wall, tire display, and checkered floor
+gs-bays.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/gs-bays.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Service bays with blue garage doors on the stone-block building

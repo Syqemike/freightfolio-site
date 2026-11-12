@@ -1,0 +1,4 @@
+Photo provenance for Ruff N It Pet Boarding and Training.
+rn-exterior.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/rn-exterior.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The white Ruff N It building with its Boarding, Day Care and Training sign and dog statues out front
+rn-dogs.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/rn-dogs.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: Two leashed dogs sitting in the open trunk of an SUV
+rn-kennel.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/rn-kennel.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The indoor kennel hallway, with rows of cages in teal and orange

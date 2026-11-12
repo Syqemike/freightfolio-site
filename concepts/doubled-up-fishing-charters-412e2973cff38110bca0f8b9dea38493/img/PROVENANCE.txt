@@ -1,0 +1,4 @@
+Photo provenance for Doubled Up Fishing Charters.
+du-boat.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/du-boat.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The Doubled Up charter boat at the dock, with the company dock box
+du-redfish.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/du-redfish.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: A guest holding a large redfish on the boat
+du-cleaning.jpg <- /home/hatch/workspace/goals/local-business-website-sales/hidden_files/wd111212-real/du-cleaning.jpg :: REAL PHOTO of the business (from its own public photos: Google Maps listing) :: The catch being cleaned on the dock, fish laid out beside a blue basket
